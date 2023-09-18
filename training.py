@@ -60,8 +60,8 @@ transformer_name = 'bert-base-cased'
 tokenizer = AutoTokenizer.from_pretrained(transformer_name)
 
 # --- [7] ---
-# def tokenize(examples):
-#     return tokenizer(examples['text'], truncation=True)
+def tokenize(examples):
+    return tokenizer(examples['text'], truncation=True)
 train_ds = ds['train']
 eval_ds = ds['validation']
 train_ds.to_pandas()
