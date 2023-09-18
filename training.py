@@ -33,13 +33,14 @@ if seed is not None:
 
 # --- [2] ---
 def read_data(filename):
-    # read json file
     df = pd.read_json(filename)
     return df
 
+# --- [3] ---
+labels = ['sentence_tokens', 'event_indices', 'type', 'polarity', 'controller_indices', 'controlled_indices', 'trigger_indices']
 train_df = read_data('sample_training_data/PMC544947-classifictaion-out.json')
-
-print(train_df)
+test_df = read_data('test.json')
+train_df
 
 # --- [4] ---
 train_df, eval_df = train_test_split(train_df, train_size=0.9)
@@ -48,26 +49,38 @@ eval_df.reset_index(inplace=True, drop=True)
 
 print(f'train rows: {len(train_df.index):,}')
 print(f'eval rows: {len(eval_df.index):,}')
+print(f'test rows: {len(test_df.index):,}')
 
 # --- [5] ---
 ds = DatasetDict()
+ds = DatasetDict()
 ds['train'] = Dataset.from_pandas(train_df)
 ds['validation'] = Dataset.from_pandas(eval_df)
+ds['test'] = Dataset.from_pandas(test_df)
+print(ds)
+print()
 
-# do i need to do tokenizer stuff? json files are already tokenized
 # --- [6] ---
 transformer_name = 'bert-base-cased'
 tokenizer = AutoTokenizer.from_pretrained(transformer_name)
 
-# --- [7] ---
+# # --- [7] ---
 def tokenize(examples):
-    return tokenizer(examples['text'], truncation=True)
-train_ds = ds['train']
-eval_ds = ds['validation']
+    return tokenizer(examples['type'], truncation=True)
+
+train_ds = ds['train'].map(
+    tokenize, batched=True,
+    # remove_columns=['title', 'description', 'text'],
+)
+eval_ds = ds['validation'].map(
+    tokenize,
+    batched=True,
+    # remove_columns=['title', 'description', 'text'],
+)
 train_ds.to_pandas()
+print(train_ds)
 
-
-# --- [8] ---
+# # --- [8] ---
 class BertForSequenceClassification(BertPreTrainedModel):
     def __init__(self, config):
         super().__init__(config)
@@ -98,16 +111,16 @@ class BertForSequenceClassification(BertPreTrainedModel):
             attentions=outputs.attentions,
         )
 
-# --- [9] ---
+# # --- [9] ---
 config = AutoConfig.from_pretrained(
     transformer_name,
-    num_labels=7, # todo make this not hard coded
+    num_labels=len(labels)
 )
 
 model = (
-    BertForSequenceClassification.from_pretrained(transformer_name, config=config)
+    BertForSequenceClassification
+    .from_pretrained(transformer_name, config=config)
 )
-# print(model)
 
 # --- [10] ---
 num_epochs = 2
@@ -123,7 +136,6 @@ training_args = TrainingArguments(
     per_device_eval_batch_size=batch_size,
     evaluation_strategy='epoch',
     weight_decay=weight_decay,
-    remove_unused_columns=False
 )
 
 # --- [11] ---
@@ -133,8 +145,6 @@ def compute_metrics(eval_pred):
     return {'accuracy': accuracy_score(y_true, y_pred)}
 
 # --- [12] ---
-print()
-
 trainer = Trainer(
     model=model,
     args=training_args,
@@ -144,8 +154,11 @@ trainer = Trainer(
     tokenizer=tokenizer,
 )
 
-# --- [13] ---
-print()
+# # --- [13] ---
 trainer.train()
+# THROWS:
+# 'ValueError: The model did not return a loss from the inputs, only the following 
+# keys: logits. For reference, the inputs it received are input_ids,token_type_ids,attention_mask.'
 
-# --- [14] ---
+
+# # --- [14] ---
