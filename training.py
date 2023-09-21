@@ -69,12 +69,11 @@ ds['test'] = Dataset.from_pandas(test_df)
 # https://github.com/clulab/scala-transformers/blob/main/encoder/src/main/python/test_clu_tokenizer.py
 
 transformer_name = "bert-base-cased"
+tokenizer = CluTokenizer.get_pretrained(transformer_name)
 
 
 def tokenize(examples):
-    sentences = (examples['sentence_tokens'])
-    
-    tokenizer = CluTokenizer.get_pretrained(transformer_name)
+    sentences = (examples['sentence_tokens'])    
     tokenized_words = tokenizer(sentences, is_split_into_words=True)
     
     ids_from_words = tokenized_words.input_ids
@@ -83,6 +82,93 @@ def tokenize(examples):
     print(tokens_from_words)
     print(ids_from_words)
 
-train_ds = ds['train'].map(tokenize, batched=False) # changed batched=True to batched=False ->
-eval_ds = ds['validation'].map(tokenize, batched=False)
+# TODO need to figure out how to get batches working
+train_ds = ds['train'].map(tokenize, batched=False)  # changed batched=True to batched=False
+eval_ds = ds['validation'].map(tokenize, batched=False)  # changed batched=True to batched=False
 train_ds.to_pandas()
+
+# --- [8] ---
+# https://github.com/huggingface/transformers/blob/65659a29cf5a079842e61a63d57fa24474288998/src/transformers/models/bert/modeling_bert.py#L1486
+
+class BertForSequenceClassification(BertPreTrainedModel):
+    def __init__(self, config):
+        super().__init__(config)
+        self.num_labels = config.num_labels
+        self.bert = BertModel(config)
+        self.dropout = nn.Dropout(config.hidden_dropout_prob)
+        self.classifier = nn.Linear(config.hidden_size, config.num_labels)
+        self.init_weights()
+        
+    def forward(self, input_ids=None, attention_mask=None, token_type_ids=None, labels=None, **kwargs):
+        outputs = self.bert(
+            input_ids,
+            attention_mask=attention_mask,
+            token_type_ids=token_type_ids,
+            **kwargs,
+        )
+        cls_outputs = outputs.last_hidden_state[:, 0, :]
+        cls_outputs = self.dropout(cls_outputs)
+        logits = self.classifier(cls_outputs)
+        loss = None
+        if labels is not None:
+            loss_fn = nn.CrossEntropyLoss()
+            loss = loss_fn(logits, labels)
+        return SequenceClassifierOutput(
+            loss=loss,
+            logits=logits,
+            hidden_states=outputs.hidden_states,
+            attentions=outputs.attentions,
+        )
+
+# --- [9] --- 
+config = AutoConfig.from_pretrained(
+    transformer_name,
+    num_labels=len(labels),
+)
+
+print()
+model = (
+    BertForSequenceClassification
+    .from_pretrained(transformer_name, config=config)
+)
+
+# --- [10] ---
+num_epochs = 2
+batch_size = 24
+weight_decay = 0.01
+model_name = f'{transformer_name}-sequence-classification'
+
+training_args = TrainingArguments(
+    output_dir=model_name,
+    log_level='error',
+    num_train_epochs=num_epochs,
+    per_device_train_batch_size=batch_size,
+    per_device_eval_batch_size=batch_size,
+    evaluation_strategy='epoch',
+    weight_decay=weight_decay,
+)
+
+# --- [11] ---
+def compute_metrics(eval_pred):
+    y_true = eval_pred.label_ids
+    y_pred = np.argmax(eval_pred.predictions, axis=-1)
+    return {'accuracy': accuracy_score(y_true, y_pred)}
+
+
+# --- [12] ---
+trainer = Trainer(
+    model=model,
+    args=training_args,
+    compute_metrics=compute_metrics,
+    train_dataset=train_ds,
+    eval_dataset=eval_ds,
+    tokenizer=tokenizer,
+)
+
+# --- [13] ---
+trainer.train()
+# --- [10] ---
+# --- [10] ---
+# --- [10] ---
+# --- [10] ---
+# --- [10] ---
