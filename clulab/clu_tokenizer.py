@@ -1,7 +1,6 @@
 # https://github.com/clulab/scala-transformers/blob/acba0224358d9935174b607712a28fb5c85a7b74/encoder/src/main/python/clu_tokenizer.py#L4
 from clulab.parameters import Parameters
 from clulab.names import Names
-
 from transformers import AutoTokenizer
 
 class CluTokenizer:
