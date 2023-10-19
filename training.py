@@ -77,7 +77,6 @@ def main():
 
     train_ds = ds['train'].map(
         tokenize, batched=True,
-        # TODO should I keep columns?
         remove_columns=['sentence_tokens', 'event_indices', 'type', 'polarity', 'controller_indices', 'controlled_indices', 'trigger_indices']
     )   
     train_ds.to_pandas()
@@ -87,12 +86,13 @@ def main():
         batched=True,
         remove_columns=['sentence_tokens', 'event_indices', 'type', 'polarity', 'controller_indices', 'controlled_indices', 'trigger_indices']
     )
-    eval_ds.to_pandas() # maybe not yet...
+    eval_ds.to_pandas() # TODO maybe not yet...
 
     # -- [9] --
     labels = train_ds.num_columns
     print("labels = ", labels)
-
+    print(train_ds)
+    
     config = AutoConfig.from_pretrained(transformer_name, num_labels = labels)
     model = (BertForSequenceClassification.from_pretrained(transformer_name, config=config))
     
@@ -110,7 +110,7 @@ def main():
         per_device_eval_batch_size=batch_size,
         evaluation_strategy='epoch',
         weight_decay=weight_decay,
-        label_names=['input_ids', 'token_type_ids', 'attention_mask']
+        label_names=['label', 'input_ids', 'token_type_ids', 'attention_mask']
     )
     
     # -- [12] -- 
@@ -149,8 +149,17 @@ def read_data():
             break
 
     list_no_dups = remove_duplicates(json_data)
+    
     random.shuffle(list_no_dups)
+
+    label = 0
+    for e in list_no_dups:
+        e['label'] = [label] # not sure what label should be
+        label += 1
+    # pretty_print(list_no_dups)
     return list_no_dups
+
+
 
 def remove_duplicates(list):
     # concatenate all nested items into single list
