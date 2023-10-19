@@ -152,10 +152,10 @@ def read_data():
     
     random.shuffle(list_no_dups)
 
-    label = 0
-    for e in list_no_dups:
-        e['label'] = [label] # not sure what label should be
-        label += 1
+    # label = 0
+    # for e in list_no_dups:
+    #     e['label'] = [label] # not sure what label should be
+    #     label += 1
     # pretty_print(list_no_dups)
     return list_no_dups
 
