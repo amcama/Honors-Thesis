@@ -77,18 +77,19 @@ def main():
 
     train_ds = ds['train'].map(
         tokenize, batched=True,
-        remove_columns=['sentence_tokens', 'event_indices', 'type', 'polarity', 'controller_indices', 'controlled_indices', 'trigger_indices']
+        remove_columns=['sentence_tokens', 'event_indices', 'polarity', 'controller_indices', 'controlled_indices', 'trigger_indices']
     )   
     train_ds.to_pandas()
 
     eval_ds = ds['validation'].map(
         tokenize,
         batched=True,
-        remove_columns=['sentence_tokens', 'event_indices', 'type', 'polarity', 'controller_indices', 'controlled_indices', 'trigger_indices']
+        remove_columns=['sentence_tokens', 'event_indices', 'polarity', 'controller_indices', 'controlled_indices', 'trigger_indices']
     )
     eval_ds.to_pandas() # TODO maybe not yet...
 
     # -- [9] --
+    
     labels = train_ds.num_columns
     print("labels = ", labels)
     print(train_ds)
@@ -99,7 +100,7 @@ def main():
     # -- [10] --
     print("\n")
     num_epochs = 2
-    batch_size = 24
+    batch_size = 10 # changed .. maybe change back for larger datasets
     weight_decay = 0.01
     model_name = f'{transformer_name}-sequence-classification'
     training_args = TrainingArguments(
@@ -110,7 +111,7 @@ def main():
         per_device_eval_batch_size=batch_size,
         evaluation_strategy='epoch',
         weight_decay=weight_decay,
-        label_names=['label', 'input_ids', 'token_type_ids', 'attention_mask']
+        label_names=['input_ids', 'token_type_ids', 'attention_mask', 'label']
     )
     
     # -- [12] -- 
@@ -122,6 +123,9 @@ def main():
         eval_dataset=eval_ds,
         tokenizer=tokenizer,
     )    
+
+    print(train_ds)
+    print("\n\n")
     trainer.train()
 
 
@@ -152,11 +156,25 @@ def read_data():
     
     random.shuffle(list_no_dups)
 
-    # label = 0
-    # for e in list_no_dups:
-    #     e['label'] = [label] # not sure what label should be
-    #     label += 1
-    # pretty_print(list_no_dups)
+    # 0: Negative_activation 
+    # 1: Postive_activation
+    # 2: Negative_regulation
+    # 3: Positive_regulation
+    # rename type to label
+    for e in list_no_dups:
+        e['label'] = e.pop('type')
+        
+        if (e['label'] == "Negative_activation"):
+            e['label'] = 0
+        elif (e['label'] == "Positive_activation"):
+            e['label'] = 1
+        elif (e['label'] == "Negative_regulation"):
+            e['label'] = 2
+        elif (e['label'] == "Positive_regulation"):
+            e['label'] = 3
+        else:
+            raise Exception("Unknown label.")
+    pretty_print(list_no_dups)
     return list_no_dups
 
 
