@@ -6,7 +6,7 @@ import torch
 import numpy as np
 from tqdm.notebook import tqdm
 from datasets import Dataset, DatasetDict
-from clulab.clu_tokenizer import CluTokenizer
+# from clulab.clu_tokenizer import CluTokenizer
 from transformers import AutoTokenizer
 from torch import nn
 from transformers.modeling_outputs import SequenceClassifierOutput
@@ -15,65 +15,34 @@ from transformers import AutoConfig
 from transformers import TrainingArguments
 from sklearn.metrics import accuracy_score
 from transformers import Trainer
-
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import classification_report
 
 transformer_name = 'bert-base-cased'
 tokenizer = AutoTokenizer.from_pretrained(transformer_name)
 
 def main():
-    tqdm.pandas()
-    use_gpu = True
-    device = torch.device('cuda' if use_gpu and torch.cuda.is_available() else 'cpu')
-    # print(f'device: {device.type}')
-    seed = 1234
-    if seed is not None:
-        # print(f'random seed: {seed}')
-        random.seed(seed)
-        np.random.seed(seed)
-        torch.manual_seed(seed)
-        
-    data = read_data()
-    # pretty_print(data)
-
+    init()
+    data = read_data('sample_training_data')
+    
     # Take the first 60% as train, next 20% as development, last 20% as test (Don't use test for now)
-    size = len(data)
-    train_size = round(size * 0.6)
-    dev_size = round(size * 0.2)
-    test_size = round(size * 0.2)
 
-    # print("size: {}  train_size: {}  dev_size: {}  test_size: {}\n".format(size, train_size, dev_size, test_size))
-    assert(train_size + dev_size + test_size == size)
-
-    train_list = []
-    dev_list = []
-    test_list = []
-
-    for i in range(0, train_size):
-        train_list.append(data[i])
-        
-    for i in range(train_size, (train_size + dev_size)):
-        dev_list.append(data[i])
-
-    for i in range(dev_size, (dev_size + test_size)):
-        test_list.append(data[i])
+    train_list, eval_list = train_test_split(data, train_size=0.6)
+    # eval_list, test_list = train_test_split(eval_list, train_size=0.5)
 
     # create train dataset
     train_df = pd.DataFrame(train_list)
-    print(train_df)
+    eval_df = pd.DataFrame(eval_list)
+    # test_df = pd.DataFrame(test_list)
 
-    dev_df = pd.DataFrame(dev_list)
-    test_df = pd.DataFrame(test_list)
-
-    print(f'train rows: {len(train_df.index):,}')
-    print(f'eval rows: {len(dev_df.index):,}')
-    print(f'test rows: {len(test_df.index):,}')
+    # print(f'train rows: {len(train_df.index):,}')
+    # print(f'eval rows: {len(dev_df.index):,}')
+    # print(f'test rows: {len(test_df.index):,}')
 
     ds = DatasetDict()
     ds['train'] = Dataset.from_pandas(train_df)
-    ds['validation'] = Dataset.from_pandas(dev_df)
-    ds['test'] = Dataset.from_pandas(test_df)
-
-    print(ds)
+    ds['validation'] = Dataset.from_pandas(eval_df)
+    # ds['test'] = Dataset.from_pandas(test_df)
 
     train_ds = ds['train'].map(
         tokenize, batched=True,
@@ -88,19 +57,14 @@ def main():
     )
     eval_ds.to_pandas() # TODO maybe not yet...
 
-    # -- [9] --
-    
     labels = train_ds.num_columns
-    print("labels = ", labels)
-    print(train_ds)
     
     config = AutoConfig.from_pretrained(transformer_name, num_labels = labels)
     model = (BertForSequenceClassification.from_pretrained(transformer_name, config=config))
     
     # -- [10] --
-    print("\n")
     num_epochs = 2
-    batch_size = 10 # changed .. maybe change back for larger datasets
+    batch_size = 24 # change this for smaller data sets
     weight_decay = 0.01
     model_name = f'{transformer_name}-sequence-classification'
     training_args = TrainingArguments(
@@ -111,7 +75,7 @@ def main():
         per_device_eval_batch_size=batch_size,
         evaluation_strategy='epoch',
         weight_decay=weight_decay,
-        label_names=['input_ids', 'token_type_ids', 'attention_mask', 'label']
+        # label_names=['input_ids', 'token_type_ids', 'attention_mask', 'label']
     )
     
     # -- [12] -- 
@@ -123,23 +87,90 @@ def main():
         eval_dataset=eval_ds,
         tokenizer=tokenizer,
     )    
+    print("\n", train_ds, "\n")
 
-    print(train_ds)
-    print("\n\n")
-    trainer.train()
+    train_output = trainer.train()
+    print("~ Train Output:\n", train_output, "\n")
 
+    # -- [14] --
+    output = trainer.predict(eval_ds)
+    print("~ Prediction output for eval_ds:\n", output, "\n")
 
-def tokenize(examples):
-    output = tokenizer(examples['sentence_tokens'], is_split_into_words=True)
-    return output
+    y_true = output.label_ids
+    y_pred = np.argmax(output.predictions, axis=-1)
+    target_names = ['Positive_activation', 'Negative_activation']
+    print(classification_report(y_true, y_pred, target_names=target_names))
+    
+    # --- create majority baseline ---
+    majority_baseline()
 
-def read_data():
-    """ 
-    Read data from sample_training_data folder and remove duplicates.
-    """
+def majority_baseline():
+    print("MAJORITY BASELINE FUNCTION")
+    data = read_data_baseline('sample_training_data')
+    train_list, eval_list = train_test_split(data, train_size=0.6)
+
+    train_df = pd.DataFrame(train_list)
+    eval_df = pd.DataFrame(eval_list)
+
+    ds = DatasetDict()
+    ds['train'] = Dataset.from_pandas(train_df)
+    ds['validation'] = Dataset.from_pandas(eval_df)
+
+    train_ds = ds['train'].map(
+        tokenize, batched=True,
+        remove_columns=['sentence_tokens', 'event_indices', 'polarity', 'controller_indices', 'controlled_indices', 'trigger_indices']
+    )   
+    train_ds.to_pandas()
+
+    eval_ds = ds['validation'].map(
+        tokenize,
+        batched=True,
+        remove_columns=['sentence_tokens', 'event_indices', 'polarity', 'controller_indices', 'controlled_indices', 'trigger_indices']
+    )
+    eval_ds.to_pandas()
+
+    labels = train_ds.num_columns
+    config = AutoConfig.from_pretrained(transformer_name, num_labels = labels)
+    model = (BertForSequenceClassification.from_pretrained(transformer_name, config=config))
+    
+    num_epochs = 2
+    batch_size = 24
+    weight_decay = 0.01
+    model_name = f'{transformer_name}-sequence-classification'
+    training_args = TrainingArguments(
+        output_dir=model_name,
+        log_level='error',
+        num_train_epochs=num_epochs,
+        per_device_train_batch_size=batch_size,
+        per_device_eval_batch_size=batch_size,
+        evaluation_strategy='epoch',
+        weight_decay=weight_decay,
+    )
+    
+    trainer = Trainer(
+        model=model,
+        args=training_args,
+        compute_metrics=compute_metrics,
+        train_dataset=train_ds,
+        eval_dataset=eval_ds,
+        tokenizer=tokenizer,
+    )    
+    # print("\n", train_ds, "\n")
+
+    train_output = trainer.train()
+    print("~ Train Output:\n", train_output, "\n")
+
+    # -- [14] --
+    output = trainer.predict(eval_ds)
+    print("~ Prediction output for eval_ds:\n", output, "\n")
+
+    y_true = output.label_ids
+    y_pred = np.argmax(output.predictions, axis=-1)
+    target_names = ['Positive_activation']
+    print(classification_report(y_true, y_pred, target_names=target_names))
+
+def read_data_baseline(directory):
     json_data = []
-    directory = 'sample_training_data'
-    count = 0
     
     for filename in os.listdir(directory):
         if filename.endswith('.json'):
@@ -147,37 +178,62 @@ def read_data():
                 data = json.load(f)
                 if (len(data) > 0):
                     json_data.append(data)
-                    count += 1
 
-        if (count == 3): # just for testing smaller data
-            break
+                    # if (len(json_data) == 50): # for testing with smaller data
+                    #     break
 
     list_no_dups = remove_duplicates(json_data)
+    random.shuffle(list_no_dups)
+
+    for e in list_no_dups:
+        e.pop('type')
+        e['label'] = 1  # positive_activation
+        
+    return list_no_dups
+
+def tokenize(examples):
+    output = tokenizer(examples['sentence_tokens'], is_split_into_words=True)
+    return output
+
+def read_data(directory):
+    """ 
+    Read data from sample_training_data folder and remove duplicates.
+    """
+    json_data = []
     
+    for filename in os.listdir(directory):
+        if filename.endswith('.json'):
+            with open(os.path.join(directory, filename)) as f:
+                data = json.load(f)
+                if (len(data) > 0):
+                    json_data.append(data)
+
+                    if (len(json_data) == 50): # for testing with smaller data
+                        break
+
+    list_no_dups = remove_duplicates(json_data)
     random.shuffle(list_no_dups)
 
     # 0: Negative_activation 
     # 1: Postive_activation
     # 2: Negative_regulation
     # 3: Positive_regulation
-    # rename type to label
+
     for e in list_no_dups:
         e['label'] = e.pop('type')
-        
         if (e['label'] == "Negative_activation"):
             e['label'] = 0
         elif (e['label'] == "Positive_activation"):
             e['label'] = 1
         elif (e['label'] == "Negative_regulation"):
-            e['label'] = 2
+            # e['label'] = 2
+            e['label'] = 0
         elif (e['label'] == "Positive_regulation"):
-            e['label'] = 3
+            # e['label'] = 3
+            e['label'] = 1
         else:
             raise Exception("Unknown label.")
-    pretty_print(list_no_dups)
     return list_no_dups
-
-
 
 def remove_duplicates(list):
     # concatenate all nested items into single list
@@ -237,4 +293,15 @@ def compute_metrics(eval_pred):
     y_pred = np.argmax(eval_pred.predictions, axis=-1)
     return {'accuracy': accuracy_score(y_true, y_pred)}
 
+def init():
+    tqdm.pandas()
+    use_gpu = True
+    device = torch.device('cuda' if use_gpu and torch.cuda.is_available() else 'cpu')
+    # print(f'device: {device.type}')
+    seed = 1234
+    if seed is not None:
+        # print(f'random seed: {seed}')
+        random.seed(seed)
+        np.random.seed(seed)
+        torch.manual_seed(seed)
 main()
