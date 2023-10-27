@@ -1,0 +1,419 @@
+[ {
+  "sentence_tokens" : [ "Then", ",", "the", "map", "was", "corrected", "by", "discarding", "those", "points", "with", "force", "below", "threshold", ",", "which", "yielded", "more", "compact", "voltage", "maps", "allowing", "to", "better", "identify", "arrhythmia", "channels", "and", "ablation", "targets.The", "same", "set", "of", "patients", "and", "signals", "was", "used", "in", "this", "work", "." ],
+  "event_indices" : [ 19, 20, 21, 22, 23, 24, 25, 26 ],
+  "type" : "Positive_activation",
+  "polarity" : true,
+  "controller_indices" : [ 19, 20 ],
+  "controlled_indices" : [ 25, 26 ],
+  "trigger_indices" : [ 21, 22 ],
+  "rule_name" : "Positive_activation_syntax_1_verb",
+  "rule" : null
+}, {
+  "sentence_tokens" : [ "Force", "Trends", "and", "Pulsatility", "for", "Catheter", "Contact", "Identification", "in", "Intracardiac", "Electrograms", "during", "Arrhythmia", "Ablation", "." ]
+}, {
+  "sentence_tokens" : [ "The", "intracardiac", "electrical", "activation", "maps", "are", "commonly", "used", "as", "a", "guide", "in", "the", "ablation", "of", "cardiac", "arrhythmias", "." ]
+}, {
+  "sentence_tokens" : [ "The", "use", "of", "catheters", "with", "force", "sensors", "has", "been", "proposed", "in", "order", "to", "know", "if", "the", "electrode", "is", "in", "contact", "with", "the", "tissue", "during", "the", "registration", "of", "intracardiac", "electrograms", "(", "EGM", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Although", "threshold", "criteria", "on", "force", "signals", "are", "often", "used", "to", "determine", "the", "catheter", "contact", ",", "this", "may", "be", "a", "limited", "criterion", "due", "to", "the", "complexity", "of", "the", "heart", "dynamics", "and", "cardiac", "vorticity", "." ]
+}, {
+  "sentence_tokens" : [ "The", "present", "paper", "is", "devoted", "to", "determining", "the", "criteria", "and", "force", "signal", "profiles", "that", "guarantee", "the", "contact", "of", "the", "electrode", "with", "the", "tissue", "." ]
+}, {
+  "sentence_tokens" : [ "In", "this", "study", ",", "we", "analyzed", "1391", "force", "signals", "and", "their", "associated", "EGM", "recorded", "during", "2", "and", "8", "s", ",", "respectively", ",", "in", "17", "patients", "(", "82", "+/-", "60", "points", "per", "patient", ")", "." ]
+}, {
+  "sentence_tokens" : [ "We", "aimed", "to", "establish", "a", "contact", "pattern", "by", "first", "visually", "examining", "and", "classifying", "the", "signals", ",", "according", "to", "their", "likely-contact", "joint", "profile", "and", "following", "the", "suggestions", "from", "experts", "in", "the", "doubtful", "cases", "." ]
+}, {
+  "sentence_tokens" : [ "First", ",", "we", "used", "Principal", "Component", "Analysis", "to", "scrutinize", "the", "force", "signal", "dynamics", "by", "analyzing", "the", "main", "eigen-directions", ",", "first", "globally", "and", "then", "grouped", "according", "to", "the", "certainty", "of", "their", "tissue-catheter", "contact", "." ]
+}, {
+  "sentence_tokens" : [ "Second", ",", "we", "used", "two", "different", "linear", "classifiers", "(", "Fisher", "discriminant", "and", "support", "vector", "machines", ")", "to", "identify", "the", "most", "relevant", "components", "of", "the", "previous", "signal", "models", "." ]
+}, {
+  "sentence_tokens" : [ "We", "obtained", "three", "main", "types", "of", "eigenvectors", ",", "namely", ",", "pulsatile", "relevant", ",", "non", "pulsatile", "relevant", ",", "and", "irrelevant", "components", "." ]
+}, {
+  "sentence_tokens" : [ "The", "classifiers", "reached", "a", "moderate", "to", "sufficient", "discrimination", "capacity", "(", "areas", "under", "the", "curve", "between", "0.84", "and", "0.95", "depending", "on", "the", "contact", "certainty", "and", "on", "the", "classifier", ")", ",", "which", "allowed", "us", "to", "analyze", "the", "relevant", "properties", "in", "the", "force", "signals", "." ]
+}, {
+  "sentence_tokens" : [ "We", "conclude", "that", "the", "catheter-tissue", "contact", "profiles", "in", "force", "recordings", "are", "complex", "and", "do", "not", "depend", "only", "on", "the", "signal", "intensity", "being", "above", "a", "threshold", "at", "a", "single", "time", "instant", ",", "but", "also", "on", "time", "pulsatility", "and", "trends", "." ]
+}, {
+  "sentence_tokens" : [ "These", "findings", "pave", "the", "way", "towards", "a", "subsystem", "which", "can", "be", "included", "in", "current", "intracardiac", "navigation", "systems", "assisted", "by", "force", "contact", "sensors", ",", "and", "it", "can", "provide", "the", "clinician", "with", "an", "estimate", "of", "the", "reliability", "on", "the", "tissue-catheter", "contact", "in", "the", "point-by-point", "EGM", "acquisition", "procedure", "." ]
+}, {
+  "sentence_tokens" : [ "1", "." ]
+}, {
+  "sentence_tokens" : [ "Introduction", "." ]
+}, {
+  "sentence_tokens" : [ "Arrhythmias", "are", "prevalent", "in", "humans", ",", "and", "globally", "2.5", "%", "of", "the", "population", "suffers", "from", "this", "disease", "[", "1,2,3,4", "]", "." ]
+}, {
+  "sentence_tokens" : [ "This", "pathology", "produces", "a", "variation", "in", "the", "heart", "rate", ",", "and", "it", "can", "be", "mostly", "due", "to", "three", "causes", ",", "namely", ",", "automatism", "alteration", ",", "triggered", "activity", ",", "and", "reentry", "[", "5,6,7", "]", "." ]
+}, {
+  "sentence_tokens" : [ "The", "most", "widely", "used", "arrhythmia", "treatment", "is", "cardiac", "ablation", ",", "which", "consists", "of", "determining", "the", "diseased", "area", "of", "the", "heart", "that", "originates", "the", "arrhythmia", ",", "and", "then", "canceling", "the", "mechanism", "by", "using", "low", "temperatures", "or", "radio", "frequency", "[", "8,9", "]", "." ]
+}, {
+  "sentence_tokens" : [ "The", "diagnosis", "and", "treatment", "are", "made", "in", "an", "electrophysiological", "study", ",", "which", "is", "an", "intervention", "on", "the", "patient", "consisting", "of", "the", "insertion", "of", "electrocatheters", "through", "the", "neck", "or", "legs", "veins", ",", "and", "then", "recording", "the", "electrical", "activity", "of", "the", "heart", "." ]
+}, {
+  "sentence_tokens" : [ "This", "procedure", "allows", "the", "clinician", "to", "identify", "the", "arrhythmia", "mechanism", "and", "to", "supply", "an", "adequate", "therapy", "[", "10,11", "]", "." ]
+}, {
+  "sentence_tokens" : [ "Systems", "LocaLisa", "and", "Carto", "(R)", "3", "are", "widely", "used", "examples", "of", "this", "type", "of", "equipment", ",", "and", "they", "basically", "consist", "of", "a", "positioning", "subsystem", ",", "a", "set", "of", "advanced", "catheters", ",", "and", "data", "storage", "and", "processing", "equipment", "[", "12,13", "]", "." ]
+}, {
+  "sentence_tokens" : [ "These", "intracardiac", "navigation", "systems", "are", "constantly", "evolving", "today", ",", "and", "the", "use", "of", "catheters", "incorporating", "force", "sensors", "is", "one", "of", "the", "most", "recent", "developments", "." ]
+}, {
+  "sentence_tokens" : [ "This", "innovation", "improves", "the", "recording", "of", "the", "heart", "electrical", "activity", "by", "verifying", "that", "the", "catheter", "is", "in", "contact", "with", "the", "heart", "surface", "." ]
+}, {
+  "sentence_tokens" : [ "In", "[", "14", "]", ",", "a", "system", "of", "contact", "force", "measurements", "was", "presented", "using", "optical", "fiber", "detection", "technology", ",", "which", "improved", "the", "precision", "of", "force", "measurement", ",", "and", "it", "was", "benchmarked", "in", "terms", "of", "the", "catheter", "angle", "and", "catheter", "deflection", ",", "the", "fluid", "irrigation", ",", "and", "the", "use", "of", "a", "sheath", ",", "among", "other", "conditions", "." ]
+}, {
+  "sentence_tokens" : [ "Another", "recent", "study", "delivered", "a", "contact-force", "control", "system", "using", "a", "portable", "catheter", "controller", "that", "can", "be", "coupled", "to", "any", "combination", "of", "ablation", "catheters", "with", "adjustable", "sheath", "and", "force", "detection", "[", "15", "]", "." ]
+}, {
+  "sentence_tokens" : [ "Neither", "of", "the", "studies", "reported", "the", "use", "of", "those", "systems", "when", "applied", "for", "clinical", "data", "." ]
+}, {
+  "sentence_tokens" : [ "Other", "recent", "works", "use", "real", "patient", "data", ",", "for", "instance", ",", "a", "comparison", "was", "presented", "in", "[", "16", "]", "among", "contact", "force", "ablation", ",", "manual", "ablation", ",", "and", "Remote", "Magnetic", "Navigation", "(", "RMN", ")", "ablation", ",", "analyzing", "their", "safety", "and", "efficiency", "in", "acute", "and", "long-term", "outcomes", "." ]
+}, {
+  "sentence_tokens" : [ "They", "demonstrated", "that", "RMN", "was", "superior", "with", "regard", "to", "acute", "success", ",", "reduction", "of", "major", "complications", ",", "and", "recurrence", "rate", "using", "an", "intention-to-treat", "analysis", "." ]
+}, {
+  "sentence_tokens" : [ "Another", "study", "compared", "the", "procedural", "profiles", "and", "outcomes", "of", "persistent", "atrial", "fibrillation", "ablation", "with", "and", "without", "using", "contact-force", "sensing", "catheters", "." ]
+}, {
+  "sentence_tokens" : [ "The", "use", "of", "contact-force", "sensing", "catheters", "in", "this", "setting", "was", "associated", "with", "shorter", "procedures", ",", "shorter", "fluoroscopy", "time", ",", "and", "reduction", "in", "arrhythmia", "recurrences", "[", "17", "]", "." ]
+}, {
+  "sentence_tokens" : [ "Therefore", ",", "this", "has", "recently", "been", "a", "field", "in", "intense", "technological", "evolution", "with", "respect", "to", "the", "hardware", "acquisition", "system", "and", "its", "use.Studies", "to", "date", "in", "this", "setting", "are", "based", "on", "the", "use", "of", "force", "thresholds", ",", "in", "such", "a", "way", "that", "if", "force", "sensor", "registers", "a", "reading", "greater", "than", "5", "gr", ",", "then", "the", "catheter", "is", "considered", "to", "be", "well", "positioned", "and", "yielding", "correct", "voltage", "readings", "[", "13", "]", "." ]
+}, {
+  "sentence_tokens" : [ "The", "justification", "to", "use", "this", "threshold", "is", "based", "on", "the", "catheter", "being", "surrounded", "by", "blood", ",", "which", "usually", "produces", "a", "force", "lower", "than", "5", "gr", "when", "interacting", "with", "the", "sensor", "." ]
+}, {
+  "sentence_tokens" : [ "However", ",", "no", "study", "has", "clearly", "established", "that", "this", "value", "can", "be", "considered", "as", "a", "consistent", "and", "suitable", "threshold", "." ]
+}, {
+  "sentence_tokens" : [ "Moreover", ",", "the", "dynamic", "nature", "of", "the", "heart", "functioning", "presents", "several", "challenges", "when", "we", "want", "to", "ensure", "the", "application", "of", "this", "type", "of", "examinations", ",", "and", "one", "of", "them", "is", "the", "determination", "and", "identification", "of", "the", "time", "intervals", "when", "the", "catheter", "is", "in", "stable", "contact", "with", "the", "heart", "surface", "to", "be", "examined", "." ]
+}, {
+  "sentence_tokens" : [ "In", "a", "previous", "study", ",", "electroanatomical", "maps", "of", "the", "electrophysiological", "examinations", "were", "analyzed", "in", "a", "group", "of", "patients", "with", "arrythmias", "[", "13", "]", "." ]
+}, {
+  "sentence_tokens" : [ "These", "electroanatomical", "maps", "were", "performed", "with", "a", "cardiac", "navigation", "system", "that", "included", "a", "force", "sensing", "catheter", "." ]
+}, {
+  "sentence_tokens" : [ "Authors", "considered", "healthy", "tissue", "when", "a", "greater", "than", "5", "gr", "force", "signal", "was", "recorded", "at", "the", "time", "of", "the", "maximum", "EGM", "voltage", ",", "assumed", "that", "its", "peak-to-peak", "value", "was", "greater", "than", "1.5", "mV", ",", "and", "the", "area", "was", "identified", "as", "diseased", "tissue", "or", "a", "scar.The", "vorticity", "produced", "by", "the", "blood", "and", "the", "systole", "and", "diastole", "movements", "can", "produce", "disturbances", "in", "the", "electrical", "activity", "measurements", ",", "making", "it", "difficult", "to", "determine", "diseased", "areas", "on", "the", "surface", "of", "the", "heart", ",", "especially", "if", "the", "criterion", "of", "a", "static", "threshold", "is", "considered", "as", "a", "reference", "for", "decision", "making", "." ]
+}, {
+  "sentence_tokens" : [ "In", "the", "present", "work", ",", "data", "exploration", "was", "carried", "out", "with", "the", "purpose", "of", "constructing", "contact", "models", "based", "on", "the", "force", "signal", ",", "as", "a", "criterion", "to", "determine", "if", "the", "catheter", "is", "in", "contact", "with", "the", "tissue", "." ]
+}, {
+  "sentence_tokens" : [ "We", "scrutinize", "patterns", "such", "as", "pulsatility", "or", "trends", "in", "the", "force", "signals", "recorded", "during", "the", "electrophysiological", "examination", "of", "a", "patient", ",", "by", "considering", "a", "time", "window", "around", "the", "EGM", "maximum", "peak", "used", "for", "the", "static", "force", "threshold", "." ]
+}, {
+  "sentence_tokens" : [ "The", "Principal", "Component", "Analysis", "(", "PCA", ")", "techniques", "are", "used", "to", "provide", "us", "with", "a", "multivariate", "decomposition", "of", "the", "most", "characteristic", "force", "signal", "profiles", ",", "and", "linear", "classification", "is", "used", "to", "determine", "their", "relevance", "." ]
+}, {
+  "sentence_tokens" : [ "The", "patient", "database", "used", "for", "this", "purpose", "consists", "of", "1391", "force", "signals", "and", "their", "corresponding", "EGM", ",", "which", "were", "recorded", "during", "2", "and", "8", "s", ",", "respectively", ",", "from", "17", "patients", "(", "82", "+/-", "60", "points", "per", "patient", ")", "at", "electrophysiological", "study.The", "outline", "of", "the", "document", "maintains", "the", "following", "structure", "." ]
+}, {
+  "sentence_tokens" : [ "In", "Section", "2", ",", "the", "characteristics", "of", "the", "patient", "base", ",", "the", "PCA", "fundamentals", ",", "and", "the", "used", "linear", "classifiers", "are", "summarized", "." ]
+}, {
+  "sentence_tokens" : [ "Section", "3", "describes", "the", "experimental", "methods", "carried", "out", "and", "the", "obtained", "results", "." ]
+}, {
+  "sentence_tokens" : [ "Section", "4", "deals", "with", "the", "discussion", ",", "future", "work", ",", "and", "conclusions", "of", "our", "findings", "." ]
+}, {
+  "sentence_tokens" : [ "2", "." ]
+}, {
+  "sentence_tokens" : [ "Methods", "." ]
+}, {
+  "sentence_tokens" : [ "2.1", "." ]
+}, {
+  "sentence_tokens" : [ "Database", "and", "Patients", "." ]
+}, {
+  "sentence_tokens" : [ "The", "patient", "data", "used", "in", "this", "work", "comes", "from", "a", "previous", "clinical", "study", "[", "13", "]", ",", "carried", "out", "at", "the", "Arrhythmia", "Unit", "in", "University", "Hospital", "Virgen", "de", "la", "Arrixaca", "(", "Murcia", ",", "Spain", ")", "." ]
+}, {
+  "sentence_tokens" : [ "That", "study", "was", "approved", "by", "the", "Ethics", "Committee", "of", "the", "hospital", ",", "and", "recorded", "in", "the", "clinicaltrials.gov", "register", "of", "clinical", "trials", "under", "identification", "number", "NCT01639365", "." ]
+}, {
+  "sentence_tokens" : [ "It", "involved", "the", "acquisition", "in", "each", "patient", "of", "a", "left", "ventricular", "voltage", "map", ",", "during", "sinus", "rhythm", "and", "using", "the", "Carto", "(R)", "3", "navigation", "system", "and", "the", "Navistar", "Thermocool", "catheter", "(", "Biosense-Webster", ",", "Diamond", "Bar", ",", "CA", ",", "United", "States", ")", "." ]
+}, {
+  "sentence_tokens" : [ "The", "population", "consisted", "of", "17", "patients", "(", "8", "men", ",", "mean", "age", "62", ",", "range", "38", "-", "80", "years", ")", "with", "ventricular", "arrhythmias", "due", "to", "ischemic", "cardiomyopathy", "or", "dilated", "cardiomyopathy", ",", "who", "underwent", "ventricular", "tachycardia", "ablation", "by", "clinical", "indications", ",", "and", "their", "clinical", "description", "is", "included", "in", "Table", "1", "." ]
+}, {
+  "sentence_tokens" : [ "For", "each", "patient", ",", "a", "voltage", "map", "was", "first", "generated", "without", "accounting", "for", "the", "force", "signal", "." ]
+}, {
+  "sentence_tokens" : [ "The", "Carto", "(R)", "3", "System", "records", "the", "electrophysiological", "examination", "data", "in", "plain", "text", "format", "." ]
+}, {
+  "sentence_tokens" : [ "Extract", ",", "Transformation", ",", "and", "Load", "techniques", "were", "used", "on", "these", "files", "[", "18,19", "]", ",", "allowing", "the", "construction", "of", "a", "database", "in", "which", "anonymized", "patient", "identification", ",", "case", "identification", ",", "EMG", "data", ",", "and", "force", "sensor", "data", "were", "stored", "." ]
+}, {
+  "sentence_tokens" : [ "This", "database", "facilitated", "the", "processing", "of", "the", "acquired", "signals", "with", "a", "custom", "developed", "computer", "tool", ",", "as", "well", "as", "a", "subsequent", "manual", "data", "classification", ",", "called", "labeling", ",", "where", "the", "doctor", "issued", "criteria", "were", "followed", "." ]
+}, {
+  "sentence_tokens" : [ "This", "labeling", "aimed", "to", "determine", "the", "presence", "or", "absence", "of", "catheter", "contact", "with", "the", "tissue", "not", "only", "in", "terms", "of", "the", "force", "at", "a", "single", "time", "instant", "(", "EGM", "peak", ")", ",", "but", "rather", "taking", "into", "account", "the", "force", "signal", "evolution", "on", "a", "time", "window", "around", "this", "instant", ",", "as", "well", "as", "the", "simultaneously", "observed", "EGM", "signal", "." ]
+}, {
+  "sentence_tokens" : [ "It", "was", "evident", "that", "sometimes", "it", "is", "complicated", "to", "establish", "the", "contact", "with", "high", "confidence", ",", "hence", ",", "the", "labels", "allowed", "two", "possible", "levels", "for", "the", "confidence", "on", "contact", ",", "as", "considered", "by", "the", "observer", "." ]
+}, {
+  "sentence_tokens" : [ "Therefore", ",", "four", "labels", "were", "used", "for", "this", "classification", "." ]
+}, {
+  "sentence_tokens" : [ "On", "the", "one", "hand", ",", "those", "cases", "in", "which", "the", "expert", "observer", "was", "confident", "that", "there", "was", "(", "not", ")", "tissue-catheter", "contact", "were", "given", "label", "0", "(", "label", "3", ")", "." ]
+}, {
+  "sentence_tokens" : [ "On", "the", "other", "hand", ",", "those", "cases", "in", "which", "there", "was", "some", "reasonable", "doubt", "whether", "there", "was", "contact", "were", "assigned", "label", "1", "(", "label", "2", ")", "." ]
+}, {
+  "sentence_tokens" : [ "The", "developed", "computer", "tool", "consists", "of", "a", "dashboard", "with", "3", "panels", ",", "as", "shown", "in", "Figure", "1", "." ]
+}, {
+  "sentence_tokens" : [ "The", "first", "panel", "plots", "two", "signals", "on", "a", "shared", "axis", ",", "namely", ",", "the", "2", "s", "of", "EGM", "signal", "(", "in", "blue", ")", ",", "and", "the", "peak", "heartbeat", "selected", "within", "a", "window", "of", "+/-", "80", "ms", "(", "in", "red", ")", "." ]
+}, {
+  "sentence_tokens" : [ "The", "second", "panel", "represents", "the", "force", "sensor", "signal", ",", "which", "lasts", "8", "s", ",", "and", "it", "is", "synchronized", "with", "the", "EGM", "signal", "after", "6", "s", ",", "as", "seen", "in", "the", "figure", "." ]
+}, {
+  "sentence_tokens" : [ "A", "dashed", "line", "represents", "the", "5-gr", "threshold", "to", "be", "used", "as", "a", "reference", "by", "the", "observer", "." ]
+}, {
+  "sentence_tokens" : [ "The", "third", "panel", "provides", "an", "additional", "view", "of", "the", "force", "signal", "after", "filtering", "and", "rectification", ",", "aiming", "to", "better", "support", "the", "labeling", "in", "some", "doubtful", "cases", "." ]
+}, {
+  "sentence_tokens" : [ "Control", "buttons", "allowed", "the", "label", "selection", ",", "as", "well", "as", "the", "step", "forward", "(", ">", ">", ")", "and", "step", "back", "(", "<", "<", ")", "to", "review", "the", "cases", "." ]
+}, {
+  "sentence_tokens" : [ "The", "result", "of", "this", "process", "was", "stored", "in", "a", "new", "label", "field", "in", "the", "database", ",", "which", "was", "specific", "to", "each", "case", "." ]
+}, {
+  "sentence_tokens" : [ "2.2", "." ]
+}, {
+  "sentence_tokens" : [ "PCA", "Fundamentals", "." ]
+}, {
+  "sentence_tokens" : [ "The", "catheter", "used", "for", "the", "electrophysiological", "examination", "acquires", "data", "within", "a", "dynamic", "environment", ",", "which", "exhibit", "a", "variety", "of", "patterns", "due", "to", "the", "heartbeat", "movement", "and", "to", "the", "blood", "vorticity", "." ]
+}, {
+  "sentence_tokens" : [ "We", "want", "to", "group", "the", "different", "patterns", "present", "in", "a", "population", "of", "force", "measurements", "according", "to", "their", "contact", "labels", "and", "label", "confidence", "." ]
+}, {
+  "sentence_tokens" : [ "For", "this", "reason", ",", "a", "multivariate", "technique", "is", "required", "in", "order", "to", "statistically", "extract", "the", "existing", "patterns", "and", "their", "relevance", "in", "that", "population", "." ]
+}, {
+  "sentence_tokens" : [ "For", "this", "purpose", ",", "in", "this", "work", "we", "propose", "to", "use", "PCA", ",", "a", "statistical", "procedure", "that", "uses", "an", "orthogonal", "transformation", "to", "convert", "a", "set", "of", "observations", "of", "possibly", "correlated", "vector", "observations", "into", "a", "set", "of", "linearly", "uncorrelated", "vector", "components", "." ]
+}, {
+  "sentence_tokens" : [ "These", "new", "vectors", "and", "variables", "are", "characterized", "by", "their", "mutual", "uncorrelation", "." ]
+}, {
+  "sentence_tokens" : [ "The", "amount", "of", "information", "conveyed", "in", "a", "component", "is", "measured", "by", "its", "variance", ",", "which", "can", "be", "used", "as", "an", "indicator", "to", "sort", "them", "in", "terms", "of", "their", "relevance", ",", "this", "is", ",", "the", "larger", "the", "variance", "associated", "to", "a", "component", ",", "the", "larger", "the", "amount", "of", "information", "in", "that", "component.In", "statistics", ",", "PCA", "is", "often", "used", "to", "reduce", "the", "dimensionality", "of", "a", "data", "set", ",", "which", "makes", "it", "possible", "in", "our", "case", "to", "distinguish", "among", "the", "most", "relevant", "dynamic", "changes", "in", "the", "system", ",", "the", "redundant", "information", ",", "and", "the", "noise", "in", "the", "signal", "[", "20", "]", "." ]
+}, {
+  "sentence_tokens" : [ "This", "analysis", "defines", "a", "new", "coordinate", "space", "where", "the", "variance", "is", "maximized", "and", "the", "correlation", "among", "the", "variables", "is", "minimized", "." ]
+}, {
+  "sentence_tokens" : [ "In", "our", "case", ",", "we", "measure", "a", "force", "signal", "during", "8", "s", "at", "a", "given", "anatomical", "location", "of", "the", "heart", ",", "which", "is", "represented", "by", "a", "signal", "vector", "xm", "in", "RM", ",", "where", "M", "is", "the", "total", "number", "of", "signal", "samples", "in", "8", "s.", "Given", "a", "set", "of", "training", "data", "that", "contains", "N", "observation", "vectors", "(", "corresponding", "to", "the", "aggregation", "of", "all", "the", "cases", "for", "every", "patient", "in", "the", "database", ")", ",", "the", "array", "X", "in", "RN", "x", "M", "is", "constructed", "with", "the", "observed", "vectors", "by", "rows", ",", "which", "represents", "the", "original", "data", "matrix", "." ]
+}, {
+  "sentence_tokens" : [ "The", "covariance", "matrix", "CXX", "in", "RM", "x", "M", "can", "be", "calculated", "from", "X", "in", "the", "following", "way", ",", "CXX", "=", "1N", "-", "1X", "T", "X.", "By", "decomposing", "this", "matrix", "in", "its", "eigenvalues", "and", "eigenvectors", ",", "the", "correlation", "structure", "of", "the", "variables", "is", "obtained", ",", "(", "1", ")", "CXX", "=", "V", "Lambda", "V", "T", ",", "where", "Lambda", "in", "RM", "x", "M", "is", "a", "diagonal", "matrix", "which", "contains", "the", "non", "negative", "real", "eigenvalues", "of", "CXX", ",", "this", "is", ",", "lambda", "m", ",", "m", "=", "1,2", ",", "..." ]
+}, {
+  "sentence_tokens" : [ ",", "M", ",", "and", "they", "are", "sorted", "in", "decreasing", "order", ";", "and", "matrix", "V", "in", "RM", "x", "M", "conveys", "the", "sorted", "eigenvectors", "in", "columns", "." ]
+}, {
+  "sentence_tokens" : [ "By", "holding", "only", "the", "a", "eigenvectors", "(", "a", "<", "M", ")", "corresponding", "to", "the", "a", "largest", "eigenvalues", ",", "we", "can", "build", "the", "so", "called", "reduced", "principal", "component", "matrix", "P", "in", "RM", "x", "a", ",", "which", "projects", "the", "observation", "vector", "x", "in", "RM", "into", "a", "smaller", "space", "Ra", ",", "and", "it", "can", "be", "denoted", "by", "ta", "=", "xP.Note", "that", "ta", "represents", "the", "optimal", "projection", "of", "x", "onto", "the", "reduced", "dimensional", "subspace", "in", "terms", "of", "the", "variance", "." ]
+}, {
+  "sentence_tokens" : [ "By", "applying", "this", "transformation", "to", "the", "entire", "data", "matrix", ",", "we", "obtain", "Ta", "=", "XP", ",", "where", "Ta", "in", "RN", "x", "a", "represents", "the", "new", "data", "matrix", "for", "the", "dimension", "reduced", "observation", "vectors", "." ]
+}, {
+  "sentence_tokens" : [ "To", "obtain", "an", "approximation", "to", "the", "original", "data", "from", "this", "matrix", "Ta", ",", "we", "perform", "the", "following", "matrix", "product", ",", "X", "^", "a", "=", "TaP", "T", ",", "and", "then", ",", "we", "can", "calculate", "the", "residual", "matrix", "as", "the", "difference", "between", "the", "original", "and", "the", "estimated", "data", "matrices", ",", "as", "follows", ",", "E", "=X", "-", "X", "^", "a." ]
+}, {
+  "sentence_tokens" : [ "In", "many", "practical", "applications", ",", "a", "given", "observation", "vector", "is", "reconstructed", "with", "sufficient", "quality", "by", "using", "only", "a", "reduced", "number", "a", "of", "principal", "components", ",", "as", "seen", "later", "in", "our", "case", "." ]
+}, {
+  "sentence_tokens" : [ "2.3", "." ]
+}, {
+  "sentence_tokens" : [ "Fisher", "and", "SVM", "Linear", "Classifiers", "." ]
+}, {
+  "sentence_tokens" : [ "As", "shown", "in", "the", "experiments", ",", "the", "use", "of", "PCA", "provides", "us", "with", "a", "set", "of", "characteristic", "patterns", "on", "the", "force", "signals", "." ]
+}, {
+  "sentence_tokens" : [ "Nevertheless", ",", "a", "criterion", "is", "further", "needed", "to", "establish", "the", "relevance", "of", "the", "reduced", "set", "of", "directions", "obtained", "from", "PCA", "." ]
+}, {
+  "sentence_tokens" : [ "For", "this", "purpose", ",", "we", "used", "two", "linear", "classifiers", ",", "following", "a", "similar", "methodology", "to", "the", "one", "proposed", "in", "[", "21", "]", "." ]
+}, {
+  "sentence_tokens" : [ "The", "use", "of", "linear", "classifiers", "with", "the", "PCA", "projected", "signals", "allows", "us", "to", "determine", "the", "relevance", "of", "each", "projection", "direction", "by", "scrutinizing", "their", "weights", "." ]
+}, {
+  "sentence_tokens" : [ "We", "selected", "the", "two", "linear", "classifier", ",", "namely", ",", "the", "Fisher", "Linear", "Discriminant", "(", "FLD", ")", ",", "as", "it", "represents", "a", "classic", "and", "well-known", "method", ",", "and", "the", "linear", "support", "vector", "classifier", ",", "which", "has", "been", "successfully", "used", "in", "a", "number", "of", "applications", "during", "the", "last", "years", "[", "22,23", "]", "." ]
+}, {
+  "sentence_tokens" : [ "On", "the", "one", "hand", ",", "the", "FLD", "is", "able", "to", "find", "a", "linear", "combination", "of", "features", "characterizing", "two", "or", "more", "sets", "with", "classification", "purposes", "." ]
+}, {
+  "sentence_tokens" : [ "The", "method", "looks", "for", "the", "projection", "that", "maximizes", "the", "interclass", "variance", "and", "minimizes", "the", "intraclass", "variance", "[", "24,25", "]", "." ]
+}, {
+  "sentence_tokens" : [ "In", "our", "case", ",", "we", "work", "with", "a", "set", "of", "multivariate", "observations", "tna", ",", "with", "n", "=", "1", ",", "..." ]
+}, {
+  "sentence_tokens" : [ ",", "N", ",", "which", "in", "general", "can", "belong", "to", "two", "possible", "classes", ",", "with", "mean", "vectors", "m0", "and", "m1", "and", "covariance", "matrices", "Sigma", "0", "and", "Sigma", "1", "." ]
+}, {
+  "sentence_tokens" : [ "The", "between-class", "(", "within-class", ")", "dispersion", "matrix", "is", "denoted", "as", "Sb", "(", "Sw", ")", ",", "and", "they", "can", "be", "obtained", "by", "(", "2", ")", "Sb", "=(", "m1", "-", "m0", ")", "T", "(", "m1+", "m0", ")", ",", "(", "3", ")", "Sw", "=", "sum", "0+", "sum", "1.A", "linear", "combination", "of", "features", "tawT", "has", "mean", "miwT", "and", "variance", "w", "Sigma", "iwT", ",", "for", "i", "=0", ",1", "." ]
+}, {
+  "sentence_tokens" : [ "Our", "objective", "is", "to", "maximize", "the", "between-class", "dispersion", "while", "minimizing", "the", "within-class", "dispersion", ",", "and", "for", "this", "purpose", ",", "the", "discrimination", "criterion", "is", "established", "as", "(", "4", ")", "J", "(", "w", ")", "=", "wSbwTwSwwTIt", "can", "be", "shown", "that", "the", "maximum", "separation", "is", "obtained", "when", "(", "5", ")", "wT", "=", "c", "Sigma", "0+", "Sigma", "1", "-", "1m1", "-", "m0T", "where", "c", "is", "a", "constant", "." ]
+}, {
+  "sentence_tokens" : [ "In", "our", "case", ",", "the", "weights", "of", "Fisher", "projection", "vector", "w", "in", "Ra", "are", "indicators", "of", "the", "relevance", "of", "each", "of", "the", "considered", "eigenvectors.On", "the", "other", "hand", ",", "the", "SVM", "is", "a", "supervised", "learning", "method", "that", "recognizes", "patterns", "for", "data", "analysis", ",", "and", "it", "can", "perform", "both", "pattern", "classification", "and", "regression", "." ]
+}, {
+  "sentence_tokens" : [ "Vapnik", "proposed", "the", "SVM", "based", "on", "the", "Statistical", "Learning", "Theory", ",", "and", "it", "is", "considered", "one", "of", "the", "most", "effective", "classification", "algorithms", "[", "26,27", "]", "." ]
+}, {
+  "sentence_tokens" : [ "In", "brief", ",", "this", "method", "uses", "optimization", "techniques", "to", "determine", "the", "classification", "function", ",", "and", "it", "consists", "of", "minimizing", "(", "6", ")", "12w2+", "C", "sum", "n", "=", "1N", "xi", "n", "*+", "xi", "n", "subject", "to", "(", "7", ")", "yn", "-", "wT", "phi", "tna", "-", "b", "<=", "epsilon+", "xi", "n", "*", "wT", "phi", "tna+", "b", "-", "yn", "<=", "epsilon+", "xi", "n", "xi", "n", "*", ",", "xi", "n", ">=", "0", ",", "with", "n", "=", "1,2", ",", "..." ]
+}, {
+  "sentence_tokens" : [ ",", "N", ",", "and", "where", "w", "is", "now", "the", "weight", "vector", "of", "the", "SVM", ";", "12w2", "is", "called", "the", "margin", "and", "it", "also", "accounts", "for", "the", "complexity", "of", "the", "model", ";", "C", "is", "the", "trade-off", "parameter", "between", "margin", "and", "losses", ";", "xi", "n", "*", "and", "xi", "n", "are", "the", "slack", "variables", ";", "phi", "(", "ta", ")", "is", "a", "non", "linear", "transformation", "that", "maps", "the", "input", "data", "to", "a", "high", "dimensional", "space", ";", "and", "b", "is", "the", "interception", "." ]
+}, {
+  "sentence_tokens" : [ "Lagrange", "multipliers", "alpha", "n", "and", "alpha", "n", "*", "are", "introduced", ",", "and", "then", "the", "optimization", "problem", "described", "in", "the", "previous", "equations", "can", "be", "transformed", "into", "its", "dual", "optimization", "problem", ",", "which", "consists", "of", "maximizing", ":(", "8)", "-", "12", "sum", "n", ",", "l", "=", "1N", "alpha", "n", "*", "-", "alpha", "n", "alpha", "l", "*", "-", "alpha", "lynylKtna", ",", "tla+", "sum", "n", "=", "1N", "(", "alpha", "n", "*", "-", "alpha", "n", ")", "where", "Mercer", "'", "s", "Theorem", "has", "been", "used", "to", "substitute", "Ktna", ",", "tla", "=", "<", "phi", "(", "tna", ")", ",", "phi", "(", "ta", ",", "l", ")", ">", ",", "and", "it", "is", "subject", "to", "(", "9", ")", "sum", "n", "=", "1N", "(", "alpha", "n", "*", "-", "alpha", "n", ")", "yn", "=", "00", "<=", "alpha", "n", ",", "alpha", "n", "*", "<=", "C", "for", "n", "=", "1,2", ",", "..." ]
+}, {
+  "sentence_tokens" : [ ",", "N." ]
+}, {
+  "sentence_tokens" : [ "The", "classification", "function", "of", "this", "SVM", "is", "obtained", "by", "solving", "the", "previous", "problem", ",", "and", "it", "can", "be", "shown", "to", "be", "(", "10", ")", "y", "^", "=", "f", "(", "ta", ")", "=", "sum", "n", "=", "1N", "alpha", "n", "*", "-", "alpha", "nynKtna", ",", "ta+", "bIn", "our", "case", ",", "parameter", "C", "can", "be", "calculated", "by", "using", "out-of-sample", "techniques", ",", "such", "as", "cross", "validation", "." ]
+}, {
+  "sentence_tokens" : [ "In", "addition", ",", "several", "Mercer", "'", "s", "kernels", "can", "be", "used", ",", "but", "here", "we", "restrict", "ourselves", "to", "the", "linear", "kernel", ",", "as", "follows", ",", "(", "11", ")", "Kta", ",", "ua", "=", "<", "ta", ",", "ua", ">", "i.e", ".,", "it", "is", "just", "the", "dot", "product", "between", "the", "two", "vectors", "." ]
+}, {
+  "sentence_tokens" : [ "With", "this", "linear", "kernel", ",", "it", "is", "possible", "to", "calculate", "the", "weight", "vector", "of", "the", "SVM", "classifier", ",", "which", "is", "given", "by", "(", "12", ")", "w", "=", "sum", "n", "=", "1Nyn", "(", "alpha", "n", "-", "alpha", "n", "*", ")", "tna.Again", ",", "the", "weights", "of", "SVM", "classification", "vector", "w", "in", "Ra", "are", "indicators", "of", "the", "relevance", "of", "each", "of", "the", "considered", "eigenvectors", "in", "our", "problem", "." ]
+}, {
+  "sentence_tokens" : [ "3", "." ]
+}, {
+  "sentence_tokens" : [ "Experiments", "and", "Results", "." ]
+}, {
+  "sentence_tokens" : [ "As", "previously", "described", ",", "our", "database", "consisted", "of", "17", "patients", "with", "a", "total", "of", "1391", "cases", "(", "82", "+/-", "60", "points", "per", "patient", ")", "." ]
+}, {
+  "sentence_tokens" : [ "The", "points", "in", "each", "case", "were", "tagged", "by", "the", "expert", "cardiologists", "." ]
+}, {
+  "sentence_tokens" : [ "This", "database", "was", "randomly", "divided", ",", "in", "such", "a", "way", "that", "80", "%", "(", "20", "%", ")", "of", "the", "data", "were", "in", "the", "training", "(", "test", ")", "set", "." ]
+}, {
+  "sentence_tokens" : [ "The", "PCA", "was", "applied", "to", "the", "training", "group", ",", "and", "the", "projected", "vectors", "resulting", "from", "this", "analysis", "were", "used", "to", "train", "the", "Fisher", "and", "SVM", "classifiers", "." ]
+}, {
+  "sentence_tokens" : [ "The", "trained", "classifiers", "were", "subsequently", "tested", "with", "the", "test", "group", "." ]
+}, {
+  "sentence_tokens" : [ "Each", "process", "is", "specifically", "described", "below", "." ]
+}, {
+  "sentence_tokens" : [ "3.1", "." ]
+}, {
+  "sentence_tokens" : [ "Results", "with", "the", "Conventional", "Force", "Threshold", "." ]
+}, {
+  "sentence_tokens" : [ "With", "respect", "to", "the", "labels", "established", "by", "the", "experts", "on", "the", "catheter-tissue", "contact", ",", "a", "nomenclature", "was", "used", "to", "establish", "the", "vector", "groups", "according", "to", "the", "different", "confidence", "on", "the", "labels", "." ]
+}, {
+  "sentence_tokens" : [ "On", "the", "one", "hand", ",", "cases", "with", "label", "0", "were", "included", "in", "the", "high-confidence", "contact", "group", ",", "whereas", "cases", "with", "label", "3", "were", "in", "the", "high-confidence", "non", "contact", "group", "." ]
+}, {
+  "sentence_tokens" : [ "On", "the", "other", "hand", ",", "cases", "with", "label", "either", "0", "or", "1", "were", "included", "in", "the", "likely", "contact", "group", ",", "whereas", "cases", "with", "labels", "2", "or", "3", "were", "in", "the", "likely", "non", "contact", "group", "." ]
+}, {
+  "sentence_tokens" : [ "Note", "that", "the", "first", "group", "accounts", "for", "those", "cases", "that", "were", "more", "clearly", "identified", "in", "terms", "of", "contact", "or", "not", "by", "the", "expert", ",", "whereas", "the", "second", "group", "also", "includes", "those", "doubtful", "cases", "in", "the", "analysis.The", "histogram", "representation", "of", "the", "force", "signals", "as", "recorded", "at", "the", "peak", "time", "of", "each", "corresponding", "EGM", "is", "shown", "in", "Figure", "2", "." ]
+}, {
+  "sentence_tokens" : [ "When", "analyzing", "each", "of", "the", "groups", ",", "it", "can", "be", "seen", "that", "the", "high-confidence", "contact", "group", "has", "a", "range", "about", "-", "10", "gr", "to", "80", "gr", "of", "force", "applied", "to", "the", "sensor", ",", "in", "most", "cases", "above", "the", "5-gr", "threshold", "." ]
+}, {
+  "sentence_tokens" : [ "In", "the", "case", "of", "the", "likely", "contact", "group", ",", "it", "has", "a", "range", "between", "-", "25", "gr", "to", "60", "gr", ",", "with", "the", "histogram", "bin", "around", "the", "threshold", "being", "about", "the", "distribution", "mode", "." ]
+}, {
+  "sentence_tokens" : [ "In", "the", "case", "of", "the", "likely", "non", "contact", "group", ",", "the", "force", "values", "present", "a", "range", "from", "-", "25", "gr", "to", "15", "gr", ",", "and", "most", "of", "the", "signal", "samples", "are", "below", "the", "threshold", "." ]
+}, {
+  "sentence_tokens" : [ "Finally", ",", "in", "the", "case", "of", "the", "contact", "high-confidence", "non", "contact", "group", ",", "the", "force", "sample", "distributions", "are", "quite", "similar", ",", "though", "with", "a", "general", "amplitude", "decrease", "in", "the", "second", "one", "." ]
+}, {
+  "sentence_tokens" : [ "Note", "the", "presence", "of", "negative", "tails", "in", "all", "the", "groups", ",", "specially", "(", "but", "not", "only", ")", "in", "the", "non", "contact", "ones", "." ]
+}, {
+  "sentence_tokens" : [ "Note", "also", "that", "discriminating", "between", "contact", "and", "non", "contact", "by", "using", "the", "threshold", "can", "produce", "some", "number", "of", "misclassifications", ",", "as", "an", "overlap", "zone", "exists", "among", "groups", ",", "and", "the", "most", "likely", "error", "to", "happen", "is", "to", "establish", "that", "a", "point", "has", "no", "contact", "when", "it", "really", "represents", "a", "tissue-catheter", "position", "." ]
+}, {
+  "sentence_tokens" : [ "3.2", "." ]
+}, {
+  "sentence_tokens" : [ "PCA", "on", "Force", "Signals", "." ]
+}, {
+  "sentence_tokens" : [ "The", "PCA", "was", "used", "to", "scrutinize", "the", "data", "patterns", "of", "the", "force", "signals", ",", "first", "for", "each", "of", "the", "labels", "separately", ",", "and", "then", "in", "the", "two", "described", "sets", "of", "grouped", "labels", "." ]
+}, {
+  "sentence_tokens" : [ "The", "following", "three", "figures", "that", "are", "next", "presented", "are", "related", "to", "the", "PCA", "of", "the", "different", "labels", "and", "label", "groups", ",", "and", "they", "follow", "the", "same", "structure", "and", "use", "six", "panels", "for", "each", "analysis", ",", "see", "Figure", "3", "." ]
+}, {
+  "sentence_tokens" : [ "Panel", "(", "a", ")", "depicts", "the", "first", "20", "eigenvalues", ",", "hence", "yielding", "an", "idea", "of", "the", "relevance", "of", "their", "corresponding", "eigendirections", ",", "and", "Panel", "(", "b", ")", "represents", "the", "first", "six", "eigenvectors", "in", "order", "to", "be", "able", "to", "inspect", "their", "waveforms", "and", "to", "establish", "the", "characteristic", "signal", "patterns", "for", "the", "analyzed", "groups", "." ]
+}, {
+  "sentence_tokens" : [ "Panel", "(", "c", ")", "shows", "a", "representative", "force", "signal", "example", "in", "each", "group", ",", "and", "then", ",", "the", "contributions", "of", "up", "to", "10", "eigendirections", ",", "as", "weighted", "by", "the", "projection", "of", "the", "example", "signal", "on", "them", ",", "are", "represented", "separately", "(", "Panel", "(", "d", ")", ")", "and", "accumulated", "(", "Panel", "(", "e", ")", ")", ",", "in", "such", "a", "way", "that", "the", "convergence", "to", "a", "quality", "estimation", "(", "reduced", "residual", ")", "of", "the", "example", "signal", "can", "be", "readily", "scrutinized", "." ]
+}, {
+  "sentence_tokens" : [ "Finally", ",", "Panel", "(", "f", ")", "shows", "the", "weights", "of", "the", "projected", "example", "signal", "on", "the", "first", "10", "eigenvectors", ",", "to", "give", "an", "idea", "of", "the", "relevance", "of", "each", "of", "the", "projected", "weights", "in", "that", "example.Figure", "3", "shows", "the", "results", "obtained", "by", "analyzing", "the", "high-confidence", "contact", "(", "non", "contact", ")", "groups", "from", "(", "a", ")", "to", "(", "f", ")", "(", "from", "(", "g", ")", "to", "(", "l", ")", ")", "." ]
+}, {
+  "sentence_tokens" : [ "The", "high-confidence", "contact", "group", "exhibits", "the", "following", "characteristics", "." ]
+}, {
+  "sentence_tokens" : [ "On", "the", "one", "hand", ",", "the", "first", "eigenvalue", "is", "clearly", "the", "most", "relevant", "one", "and", "it", "is", "associated", "both", "to", "visible", "pulsatility", "as", "well", "as", "an", "increasing", "trend", "." ]
+}, {
+  "sentence_tokens" : [ "This", "trend", "is", "consistent", "with", "the", "observed", "increased", "force", "values", "during", "the", "last", "two", "seconds", "when", "the", "EGM", "are", "recorded", "at", "each", "point", "." ]
+}, {
+  "sentence_tokens" : [ "On", "the", "other", "hand", ",", "the", "second", "eigenvalue", "shows", "a", "decreasing", "trend", ",", "again", "consistent", "with", "those", "cases", "when", "the", "local", "average", "force", "is", "reduced", "at", "the", "end", "of", "the", "force", "recording", "period", "." ]
+}, {
+  "sentence_tokens" : [ "Note", "that", "these", "patterns", "can", "be", "present", "either", "as", "plotted", "or", "with", "negative", "sign", ",", "according", "to", "the", "sign", "given", "by", "the", "projection", "of", "each", "specific", "force", "case", "." ]
+}, {
+  "sentence_tokens" : [ "Additionally", ",", "the", "pulsatility", "is", "mostly", "related", "with", "the", "average", "cardiac", "rhythm", "cycle", ",", "but", "there", "are", "changes", "in", "the", "pulsatile", "force", "waveforms", "for", "each", "specific", "case", ",", "and", "these", "differences", "are", "provided", "by", "eigenvectors", "3", "and", "5", ",", "which", "are", "associated", "to", "a", "moderately", "large", "eigenvector", ",", "but", "this", "is", "enough", "to", "contribute", "with", "the", "relevant", "waveform", "information", "in", "this", "set", "of", "cases", "." ]
+}, {
+  "sentence_tokens" : [ "It", "can", "be", "seen", "too", "that", "eigenvector", "4", "provides", "an", "additional", "trend", "pattern", "(", "high", ",", "low", ",", "high", "again", ")", ",", "whereas", "eigenvector", "6", "is", "a", "mixed", "one", ",", "given", "by", "noisy", "activity", "followed", "by", "a", "pulsatile", "pattern", "in", "the", "end", "of", "the", "signal", ",", "i.e", ".,", "in", "the", "time", "interval", "where", "the", "EGM", "has", "been", "simultaneously", "recorded", "." ]
+}, {
+  "sentence_tokens" : [ "Later", ",", "the", "following", "eigendirections", "seem", "to", "provide", "few", "relevant", "contributions", "to", "the", "signal", "patterns", "." ]
+}, {
+  "sentence_tokens" : [ "In", "order", "to", "verify", "this", ",", "a", "signal", "example", "was", "chosen", "where", "the", "contact", "was", "clear", "and", "stable", ",", "in", "terms", "of", "pulsatility", "and", "average", "value", ",", "as", "seen", "in", "Figure", "3c", "." ]
+}, {
+  "sentence_tokens" : [ "In", "this", "case", ",", "Panel", "(", "d", ")", "shows", "the", "eigendirections", "weighted", "by", "the", "example", "projection", "weights", "in", "Panel", "(", "f", ")", "." ]
+}, {
+  "sentence_tokens" : [ "While", "weights", "7", "to", "10", "in", "the", "weight", "vector", "obtained", "for", "a", "=", "10", "seem", "to", "be", "numerically", "relevant", ",", "it", "can", "be", "seen", "in", "Panel", "(", "e", ")", "that", "the", "accumulated", "signal", "reconstruction", "is", "very", "close", "to", "the", "original", "one", "with", "the", "first", "six", "components", ";", "hence", ",", "this", "group", "exhibits", "high", "signal-to-noise", "ratio.Figure", "3", "also", "shows", "in", "Panels", "(", "g", ")", "to", "(", "l", ")", "the", "results", "for", "the", "high-confidence", "non", "contact", "group", ",", "which", "has", "the", "following", "characteristics", "." ]
+}, {
+  "sentence_tokens" : [ "The", "first", "eigenvalue", "is", "markedly", "smaller", "than", "in", "the", "case", "of", "the", "high-confidence", "contact", "group", ",", "but", "still", "it", "is", "markedly", "larger", "than", "the", "other", "eigenvalues", "in", "its", "group", "." ]
+}, {
+  "sentence_tokens" : [ "In", "this", "case", ",", "this", "first", "eigendirection", "corresponds", "to", "a", "decreasing", "trend", "." ]
+}, {
+  "sentence_tokens" : [ "It", "can", "be", "seen", "that", "the", "six", "first", "eigendirections", "have", "some", "moderate", "pattern", "of", "pulsatility", ",", "but", "there", "is", "no", "specific", "pulsatile", "direction", ",", "and", "instead", "it", "is", "at", "most", "mixed", "among", "random", "patterns", "." ]
+}, {
+  "sentence_tokens" : [ "The", "example", "scrutinized", "in", "this", "group", ",", "at", "Panel", "(", "i", ")", ",", "is", "again", "built", "with", "enough", "quality", "with", "about", "the", "first", "eight", "eigendirections", "." ]
+}, {
+  "sentence_tokens" : [ "Note", "that", "in", "this", "case", ",", "the", "contribution", "of", "the", "first", "eigendirection", "is", "markedly", "smaller", ",", "as", "this", "example", "has", "a", "small", "average", "value.Figure", "4", "shows", "the", "results", "obtained", "when", "analyzing", "the", "likely-contact", "(", "likely", "non", "contact", ")", "groups", "separately", ",", "in", "Panels", "(", "a", ")", "(", "Panel", "(", "b", ")", ")", "." ]
+}, {
+  "sentence_tokens" : [ "The", "eigenvalue", "profile", "in", "the", "contact", "group", "is", "similar", "to", "the", "high-confidence", "contact", "group", ",", "but", "now", "the", "most", "relevant", "profiles", "in", "Panel", "(", "b", ")", "often", "include", "mixed", "pulsatility", "and", "trends", "(", "eigendirections", "1", ",", "2", ",", "3", ",", "4", ",", "and", "5", ")", "." ]
+}, {
+  "sentence_tokens" : [ "In", "addition", ",", "a", "new", "type", "of", "pattern", "can", "be", "seen", ",", "which", "consists", "of", "pulsatility", "that", "is", "modulated", "with", "its", "amplitude", "increasing", "to", "the", "end", "of", "the", "time", "interval", "(", "eigendirections", "1", "and", "4", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Again", ",", "the", "signal", "is", "estimated", "with", "acceptable", "quality", "by", "using", "8", "eigenvectors", "." ]
+}, {
+  "sentence_tokens" : [ "A", "moderate", "signal-to-noise", "can", "be", "observed", "now", "in", "the", "force", "signals", "in", "this", "group", "." ]
+}, {
+  "sentence_tokens" : [ "The", "eigenvalue", "profile", "in", "the", "likely", "non", "contact", "group", "is", "also", "similar", "to", "the", "high-confidence", "non", "contact", "group", ",", "though", "the", "first", "eigenvalue", "(", "corresponding", "to", "the", "group", "average", ")", "is", "in", "this", "case", "larger", "." ]
+}, {
+  "sentence_tokens" : [ "Now", ",", "the", "first", "relevant", "eigendirections", "also", "include", "mixed", "patterns", "of", "trends", "with", "some", "presence", "of", "pulsatility", "(", "e.g", ".,", "as", "in", "eigendirections", "3", "and", "4", ")", "." ]
+}, {
+  "sentence_tokens" : [ "After", "analyzing", "the", "patterns", "of", "the", "different", "contact", "and", "non", "contact", "groups", "separately", ",", "we", "examined", "the", "patters", "of", "the", "complete", "database", ",", "as", "seen", "in", "Figure", "4", "." ]
+}, {
+  "sentence_tokens" : [ "On", "the", "one", "hand", ",", "the", "likely-contact", "group", "(", "all", "cases", "together", ")", "shows", "an", "eigenvalue", "profile", "which", "is", "similar", "to", "the", "previous", "ones", "(", "and", "more", "similar", "to", "the", "contact", "subgroups", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Current", "relevant", "patters", "in", "this", "complete", "set", "include", "a", "mixture", "of", "purely", "pulsatile", "waveforms", "(", "eigendirection", "5", ")", ",", "pulsatility", "with", "increasing", "amplitude", "(", "eigendirections", "1", "and", "4", ")", ",", "trends", "with", "some", "pulsatility", "(", "eigendirections", "3", "and", "6", ")", ",", "and", "just", "trends", "(", "eigendirection", "2", ")", "." ]
+}, {
+  "sentence_tokens" : [ "On", "the", "other", "hand", ",", "in", "the", "high-confidence", "contact", "group", "(", "cases", "with", "labels", "0", "and", "3", ")", ",", "eigendirections", "1", "and", "2", "are", "very", "similar", "to", "the", "ones", "in", "the", "complete", "dataset", ",", "and", "the", "patterns", "include", "purely", "pulsatile", "waveforms", "(", "eigendirections", "3", "and", "5", ")", ",", "pulsatility", "with", "increasing", "amplitude", "(", "eigendirection", "1", ")", ",", "trends", "with", "small", "pulsatility", "or", "pulsatility", "at", "the", "end", "of", "the", "signal", "(", "eigendirections", "2", ",", "4", ",", "and", "6", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Overall", ",", "we", "can", "check", "in", "all", "the", "examples", "that", "8", "to", "10", "components", "yield", "acceptable", "quality", "in", "the", "force", "signal", "reconstruction", "." ]
+}, {
+  "sentence_tokens" : [ "3.3", "." ]
+}, {
+  "sentence_tokens" : [ "Classification", "Using", "PCA", "Weights", "." ]
+}, {
+  "sentence_tokens" : [ "The", "weights", "from", "the", "projection", "of", "each", "force", "signal", "on", "the", "eigenvectors", "of", "different", "groups", "were", "shown", "for", "some", "examples", "in", "the", "previous", "section", "." ]
+}, {
+  "sentence_tokens" : [ "These", "weights", "can", "be", "used", "to", "analyze", "which", "are", "the", "most", "relevant", "eigendirections", "and", "also", "their", "corresponding", "patterns", ",", "when", "analyzed", "in", "the", "complete", "data", "set.This", "has", "been", "addressed", "in", "Figure", "5", "(", "upper", "panel", ")", ",", "where", "the", "projection", "weights", "tms", "are", "represented", "for", "a", "=", "10", "and", "both", "in", "the", "high-confidence", "contact", "and", "non", "contact", "(", "blue", "and", "red", ")", "data", "matrices", "." ]
+}, {
+  "sentence_tokens" : [ "It", "can", "be", "seen", "that", "the", "weight", "of", "the", "first", "eigenvector", "is", "usually", "positive", "and", "notably", "larger", "in", "the", "contact", "than", "in", "the", "non", "contact", "cases", ",", "nevertheless", ",", "the", "greatest", "amount", "of", "information", "is", "concentrated", "on", "it", "." ]
+}, {
+  "sentence_tokens" : [ "The", "other", "weights", "(", "2", "to", "10", ")", "show", "a", "similar", "structure", "among", "them", ",", "given", "in", "the", "high-confidence", "contact", "cases", "by", "usually", "small", "weights", "together", "with", "a", "few", "greater", "weights", ",", "though", "the", "feature", "number", "of", "the", "prominent", "weights", "differ", "in", "each", "case", "." ]
+}, {
+  "sentence_tokens" : [ "In", "addition", ",", "in", "general", "they", "are", "visibly", "smaller", "and", "distributed", "around", "zero", "in", "the", "high-confidence", "non", "contact", "cases", "." ]
+}, {
+  "sentence_tokens" : [ "With", "respect", "to", "the", "likely-contact", "cases", "(", "lower", "panel", ")", ",", "the", "first", "weight", "is", "again", "prominent", "in", "the", "contact", "cases", ",", "but", "it", "is", "also", "noticeably", "higher", "than", "in", "the", "non", "contact", "cases", "." ]
+}, {
+  "sentence_tokens" : [ "The", "other", "weights", "(", "2", "to", "10", ")", "consist", "both", "on", "small", "values", "together", "with", "some", "larger", "positive", "and", "negative", "weights", ",", "but", "the", "number", "of", "larger", "weights", "seems", "to", "be", "higher", "in", "the", "contact", "cases", "." ]
+}, {
+  "sentence_tokens" : [ "Accordingly", ",", "differences", "exist", "in", "the", "weights", "of", "contact", "and", "non", "contact", "cases", ",", "but", "they", "cannot", "be", "immediately", "used", "quantitatively", "in", "order", "to", "discriminate", "if", "the", "catheter", "is", "in", "contact", "or", "not", "." ]
+}, {
+  "sentence_tokens" : [ "Moreover", ",", "it", "is", "desirable", "to", "quantify", "how", "relevant", "each", "of", "the", "eigendirections", "are", "in", "the", "database.For", "this", "purpose", ",", "we", "used", "the", "projected", "vectors", "of", "the", "signal", "force", "cases", "(", "again", "with", "a", "=", "10", ")", "to", "build", "several", "linear", "classifiers", ",", "which", "were", "trained", "and", "tested", "with", "80", "%", "and", "20", "%", "of", "the", "database", "cases", ",", "respectively", "." ]
+}, {
+  "sentence_tokens" : [ "Note", "that", "only", "the", "training", "samples", "were", "used", "to", "perform", "the", "PCA", "projection", "matrices", "." ]
+}, {
+  "sentence_tokens" : [ "This", "procedure", "was", "repeated", "10", "times", ",", "which", "allowed", "us", "to", "scrutinize", "the", "distribution", "of", "the", "estimations", "for", "each", "classifier", "weight.The", "classification", "results", "for", "this", "experiment", "are", "shown", "in", "Table", "2", ",", "where", "the", "Area", "Under", "the", "Curve", "(", "AUC", ")", ",", "is", "shown", "for", "the", "two", "classifiers", "applied", "to", "the", "different", "contact", "groups", "." ]
+}, {
+  "sentence_tokens" : [ "Note", "the", "AUC", "can", "be", "seen", "as", "a", "merit", "figure", "for", "the", "classifiers", ",", "in", "such", "a", "way", "that", "the", "closer", "to", "one", ",", "the", "lower", "overlap", "between", "the", "two", "scrutinized", "classes", "." ]
+}, {
+  "sentence_tokens" : [ "The", "likely-contact", "vs.", "likely", "non", "contact", "classifiers", "exhibit", "greater", "overlap", "between", "classes", ",", "although", "0.85", "is", "a", "sufficient", "AUC", "value", "to", "indicate", "that", "the", "features", "given", "by", "the", "PCA", "projections", "in", "this", "case", "contain", "relevant", "information", "about", "the", "classification", "." ]
+}, {
+  "sentence_tokens" : [ "The", "high-confidence", "contact", "vs.", "high-confidence", "non", "contact", "classifiers", "yielded", "AUC", "average", "of", "0.95", ",", "which", "represents", "a", "very", "good", "quality", "classifier", "and", "the", "features", "used", "for", "this", "classification", "can", "also", "be", "scrutinized", "to", "identify", "the", "most", "relevant", "patterns", "." ]
+}, {
+  "sentence_tokens" : [ "As", "shown", "in", "the", "table", ",", "the", "AUC", "medians", "are", "similar", "to", "the", "means", "and", "the", "standard", "deviations", "are", "small", "in", "all", "the", "classifiers.Further", "details", "on", "the", "classification", "performance", "can", "be", "seen", "in", "Figure", "6", ",", "where", "the", "left", "panels", "show", "the", "actual", "group", "and", "the", "estimated", "group", "for", "each", "classifier", "." ]
+}, {
+  "sentence_tokens" : [ "Classification", "errors", "are", "more", "patent", "in", "the", "low-AUC", "classifiers", ",", "at", "the", "likely", "contact", "vs.", "non", "contact", "groups", ",", "and", "these", "errors", "in", "general", "are", "similarly", "distributed", "between", "classes", "." ]
+}, {
+  "sentence_tokens" : [ "However", ",", "in", "the", "high-AUC", "classifiers", ",", "the", "scarce", "errors", "only", "(", "SVM", ")", "and", "mostly", "(", "FLD", ")", "correspond", "to", "actual", "contact", "cases", "which", "have", "been", "misclassified", "as", "non", "contact", "ones.After", "checking", "that", "the", "classifiers", "provide", "enough", "performance", "in", "terms", "of", "the", "AUC", ",", "it", "is", "possible", "to", "study", "the", "relevance", "and", "significance", "of", "the", "weights", "in", "each", "classifier", "and", "to", "interpret", "the", "clinical", "meaning", "of", "the", "trained", "machines", "." ]
+}, {
+  "sentence_tokens" : [ "Recall", "that", "each", "classification", "weight", "is", "associated", "to", "a", "given", "projection", "weight", ",", "so", "that", "by", "looking", "at", "its", "corresponding", "eigenvector", "it", "is", "possible", "to", "determine", "the", "patterns", "that", "are", "actually", "relevant", "to", "the", "classification", "." ]
+}, {
+  "sentence_tokens" : [ "In", "Figure", "6", "(", "right", "panels", ")", ",", "the", "weights", "for", "the", "different", "classifiers", "are", "represented", "." ]
+}, {
+  "sentence_tokens" : [ "In", "the", "likely", "contact", "vs.", "likely", "non", "contact", "group", "classifiers", ",", "we", "can", "see", "that", "classifier", "weights", "3", "to", "10", "are", "in", "a", "rank", "which", "either", "overlaps", "zero", "or", "is", "very", "close", "to", "it", ",", "at", "least", "in", "one", "of", "the", "two", "classifiers", "." ]
+}, {
+  "sentence_tokens" : [ "Therefore", ",", "it", "can", "be", "inferred", "that", "weights", "1", "and", "2", "are", "the", "most", "relevant", "to", "distinguish", "between", "these", "clearly", "differentiated", "classes", ",", "which", "corresponds", "to", "eigenvectors", "1", "and", "2", "in", "Figure", "4a", ",", "b", ",", "and", "hence", "to", "a", "pulsatile", "with", "increasing", "amplitude", "pattern", "and", "to", "a", "biphasic", "trend", "pattern", "." ]
+}, {
+  "sentence_tokens" : [ "These", "patters", "convey", "enough", "information", "to", "distinguish", "between", "contact", "and", "non", "contact", "groups", "." ]
+}, {
+  "sentence_tokens" : [ "Note", "that", "classification", "weight", "1", "is", "always", "positive", ",", "which", "is", "consistent", "with", "the", "positive", "and", "larger", "mean", "in", "class", "y", "=", "1", "in", "the", "classifier", "(", "contact", ")", ",", "and", "also", ",", "classification", "weight", "2", "is", "negative", "and", "multiplying", "a", "decreasing", "trend", ",", "which", "is", "consistent", "with", "an", "increased", "trend", "value", "in", "the", "end", "of", "the", "contact", "cases", "." ]
+}, {
+  "sentence_tokens" : [ "In", "the", "high-confidence", "group", "classifiers", ",", "classifier", "weights", "1", "and", "2", "exhibit", "a", "similar", "trend", "to", "the", "previous", "case", ",", "and", "they", "are", "very", "similar", ",", "which", "is", "consistent", "with", "the", "similarity", "found", "in", "Figure", "4c", ",", "d", "on", "the", "two", "first", "eigendirections", "for", "both", "contact", "and", "non", "contact", "groups", "." ]
+}, {
+  "sentence_tokens" : [ "In", "this", "case", ",", "several", "other", "weights", "become", "relevant", "in", "both", "classifiers", ",", "namely", ",", "classifier", "weights", "3", ",", "4", ",", "6", ",", "and", "10", "." ]
+}, {
+  "sentence_tokens" : [ "The", "patterns", "in", "these", "eigendirections", "allow", "a", "better", "description", "of", "the", "details", "required", "in", "the", "easier", "cases", "." ]
+}, {
+  "sentence_tokens" : [ "4", "." ]
+}, {
+  "sentence_tokens" : [ "Discussion", "and", "Conclusions", "." ]
+}, {
+  "sentence_tokens" : [ "In", "this", "work", ",", "the", "determination", "of", "the", "catheter-tissue", "contact", "in", "electrophysiological", "studies", "for", "arrhythmia", "therapy", "has", "been", "analyzed", "in", "terms", "of", "the", "force", "signals", "recorded", "in", "force", "sensors", "at", "the", "EGM", "recording", "catheter", "." ]
+}, {
+  "sentence_tokens" : [ "The", "conventional", "criterion", "of", "using", "a", "single-sample", "threshold", "of", "5-gr", "as", "measured", "at", "the", "EGM", "peak", "time", "has", "been", "shown", "to", "be", "limited", "for", "the", "clinical", "practice", "." ]
+}, {
+  "sentence_tokens" : [ "A", "previous", "study", "from", "our", "group", "aimed", "to", "use", "simple", "statistical", "features", ",", "such", "as", "the", "correlation", "coefficient", ",", "in", "order", "to", "scrutinize", "the", "improvement", "of", "tissue-catheter", "contact", ",", "but", "these", "simple", "features", "were", "not", "enough", "to", "give", "an", "operative", "system", "[", "28", "]", "." ]
+}, {
+  "sentence_tokens" : [ "The", "use", "of", "PCA", "has", "allowed", "us", "to", "establish", "the", "relevant", "patterns", "that", "can", "be", "found", "in", "this", "type", "of", "signal", ",", "and", "the", "use", "of", "linear", "classifiers", "has", "further", "allowed", "the", "establishment", "of", "the", "suitability", "of", "these", "signals", "to", "identify", "the", "existence", "of", "contact", "or", "non", "contact", "in", "an", "acceptable", "number", "of", "cases.Several", "limitations", "to", "the", "presented", "study", "can", "be", "identified", "." ]
+}, {
+  "sentence_tokens" : [ "The", "labeling", "of", "contact", "vs.", "non", "contact", "was", "done", "by", "experts", ",", "but", "still", "it", "can", "sometimes", "be", "subjective", "." ]
+}, {
+  "sentence_tokens" : [ "An", "objective", "index", "would", "undoubtedly", "improve", "the", "performance", "and", "quality", "of", "the", "proposed", "system", "." ]
+}, {
+  "sentence_tokens" : [ "Nevertheless", ",", "the", "proposed", "methodology", "would", "be", "readily", "and", "similarly", "used", "in", "that", "case", "." ]
+}, {
+  "sentence_tokens" : [ "The", "use", "of", "linear", "classifiers", "could", "be", "improved", "by", "nonlinear", "classifiers", "in", "terms", "of", "system", "accuracy", ";", "nevertheless", ",", "here", "we", "restricted", "ourselves", "to", "the", "first", "ones", "because", "they", "allow", "to", "scrutinize", "the", "relevant", "patterns", "for", "the", "classification", ",", "and", "hence", "to", "provide", "clinical", "understanding", "of", "the", "problem", "at", "hand", "and", "of", "the", "proposed", "solution", "." ]
+}, {
+  "sentence_tokens" : [ "Nevertheless", ",", "both", "the", "signal", "processing", "procedures", "and", "the", "implementation", "of", "the", "tuned", "machine", "learning", "classifiers", "require", "a", "very", "moderate", "and", "acceptable", "computational", "burden.We", "can", "conclude", "that", "the", "proposed", "system", "can", "be", "used", "to", "determine", "the", "presence", "of", "tissue-catheter", "contact", "during", "arrhythmia", "procedures", ",", "which", "would", "improve", "the", "quality", "of", "the", "maps", "elaborated", "by", "current", "intracardiac", "navigation", "systems", ",", "and", "in", "general", "the", "improvement", "of", "the", "functionality", "provided", "by", "current", "force", "sensors", "at", "EGM", "catheters", "." ]
+}, {
+  "sentence_tokens" : [ "The", "proposed", "method", "could", "be", "used", "as", "a", "subsystem", "for", "current", "cardiac", "navigation", "systems", "supporting", "the", "clinical", "ablation", "procedures", "in", "two", "ways", "." ]
+}, {
+  "sentence_tokens" : [ "On", "the", "one", "hand", ",", "it", "can", "be", "used", "on-line", "while", "recording", "the", "EGM", "and", "creating", "the", "maps", ",", "so", "that", "the", "clinician", "is", "advised", "of", "the", "likely", "good", "quality", "of", "the", "tissue-catheter", "contact", ",", "hence", "only", "those", "points", "which", "are", "clearly", "in", "contact", "are", "accepted", "." ]
+}, {
+  "sentence_tokens" : [ "This", "represents", "a", "similar", "concept", "to", "the", "use", "of", "thresholds", "in", "current", "systems", ",", "but", "the", "use", "of", "signal", "processing", "profiles", "should", "improve", "this", "quality", "." ]
+}, {
+  "sentence_tokens" : [ "On", "the", "other", "hand", ",", "they", "could", "be", "used", "off-line", ",", "after", "taking", "the", "patient", "measurements", ",", "in", "order", "to", "discard", "those", "points", "which", "were", "less-likely", "high-quality", "contact", ",", "and", "hence", "improving", "the", "final", "map", "." ]
+}, {
+  "sentence_tokens" : [ "In", "both", "cases", ",", "force-signal", "profiles", "should", "be", "taken", "into", "account", "and", "would", "be", "advantageous", "to", "the", "clinical", "procedure", "." ]
+} ]

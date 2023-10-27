@@ -1,0 +1,615 @@
+[ {
+  "sentence_tokens" : [ "This", "study", "adds", "to", "previous", "numerical", "simulation", "studies", "of", "wavelet", "based", "estimators", "which", "are", "not", "comprehensive", "in", "the", "case", "of", "FBM.Results", "of", "the", "parameter", "selection", "showed", "that", "the", "increase", "of", "lower", "bound", "j1", "causes", "the", "decrease", "of", "bias", "and", "the", "increase", "of", "standard", "deviation", "for", "all", "Hs", ",", "and", "suggested", "j1", "=3", "via", "the", "minimum", "mean", "square", "error", "at", "a", "long", "data", "length", "n", "=", "218", "." ],
+  "event_indices" : [ 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47 ],
+  "type" : "Positive_activation",
+  "polarity" : true,
+  "controller_indices" : [ 32, 33 ],
+  "controlled_indices" : [ 46, 47 ],
+  "trigger_indices" : [ 33, 34 ],
+  "rule_name" : "Positive_activation_syntax_7_verb",
+  "rule" : null
+}, {
+  "sentence_tokens" : [ "In", "addition", ",", "it", "was", "also", "found", "that", "the", "empirical", "bias", "increased", "with", "the", "decrease", "of", "H", "and", "could", "be", "ignored", "for", "H", ">=", "0.4", "when", "j1", "=3", "and", "N", "=3", "." ],
+  "event_indices" : [ 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27 ],
+  "type" : "Positive_activation",
+  "polarity" : true,
+  "controller_indices" : [ 3, 4 ],
+  "controlled_indices" : [ 26, 27 ],
+  "trigger_indices" : [ 11, 12 ],
+  "rule_name" : "Positive_activation_syntax_1_verb, pronominalMatch",
+  "rule" : null
+}, {
+  "sentence_tokens" : [ "A", "Note", "on", "Wavelet", "Based", "Estimator", "of", "the", "Hurst", "Parameter", "." ]
+}, {
+  "sentence_tokens" : [ "The", "signals", "in", "numerous", "fields", "usually", "have", "scaling", "behaviors", "(", "long-range", "dependence", "and", "self-similarity", ")", "which", "is", "characterized", "by", "the", "Hurst", "parameter", "H.", "Fractal", "Brownian", "motion", "(", "FBM", ")", "plays", "an", "important", "role", "in", "modeling", "signals", "with", "self-similarity", "and", "long-range", "dependence", "." ]
+}, {
+  "sentence_tokens" : [ "Wavelet", "analysis", "is", "a", "common", "method", "for", "signal", "processing", ",", "and", "has", "been", "used", "for", "estimation", "of", "Hurst", "parameter", "." ]
+}, {
+  "sentence_tokens" : [ "This", "paper", "conducts", "a", "detailed", "numerical", "simulation", "study", "in", "the", "case", "of", "FBM", "on", "the", "selection", "of", "parameters", "and", "the", "empirical", "bias", "in", "the", "wavelet", "based", "estimator", "which", "have", "not", "been", "studied", "comprehensively", "in", "previous", "studies", ",", "especially", "for", "the", "empirical", "bias", "." ]
+}, {
+  "sentence_tokens" : [ "The", "results", "show", "that", "the", "empirical", "bias", "is", "due", "to", "the", "initialization", "errors", "caused", "by", "discrete", "sampling", ",", "and", "is", "not", "related", "to", "simulation", "methods", "." ]
+}, {
+  "sentence_tokens" : [ "When", "choosing", "an", "appropriate", "orthogonal", "compact", "supported", "wavelet", ",", "the", "empirical", "bias", "is", "almost", "not", "related", "to", "the", "inaccurate", "bias", "correction", "caused", "by", "correlations", "of", "wavelet", "coefficients", "." ]
+}, {
+  "sentence_tokens" : [ "The", "latter", "two", "causes", "are", "studied", "via", "comparison", "of", "estimators", "and", "comparison", "of", "simulation", "methods", "." ]
+}, {
+  "sentence_tokens" : [ "These", "results", "could", "be", "a", "reference", "for", "future", "studies", "and", "applications", "in", "the", "scaling", "behavior", "of", "signals", "." ]
+}, {
+  "sentence_tokens" : [ "Some", "preliminary", "results", "of", "this", "study", "have", "provided", "a", "reference", "for", "my", "previous", "studies", "." ]
+}, {
+  "sentence_tokens" : [ "1", "." ]
+}, {
+  "sentence_tokens" : [ "Introduction", "." ]
+}, {
+  "sentence_tokens" : [ "The", "signals", "in", "numerous", "fields", "usually", "have", "scaling", "behavior", "(", "long-range", "dependence", "and", "self-similarity", ")", "which", "has", "been", "recognized", "as", "a", "key", "property", "for", "data", "characterization", "and", "decision", "making", "(", "see", "e.g", ".,", "[", "1,2,3,4,5", "]", ")", "." ]
+}, {
+  "sentence_tokens" : [ "It", "is", "usually", "characterized", "by", "the", "Hurst", "parameter", "H", "[", "6", "]", "." ]
+}, {
+  "sentence_tokens" : [ "The", "key", "point", "for", "detecting", "the", "scaling", "behavior", "is", "the", "estimation", "of", "the", "Hurst", "parameter", "H." ]
+}, {
+  "sentence_tokens" : [ "The", "Hurst", "parameter", "was", "first", "computed", "via", "R/S", "statistic", "by", "Hurst", "[", "7", "]", "for", "the", "study", "of", "hydrological", "properties", "of", "Nile", "river", "." ]
+}, {
+  "sentence_tokens" : [ "Hurst", "found", "that", "R/S", "statistic", "on", "the", "Nile", "data", "grew", "approximately", "as", "nH", ",", "H", "=0", ".74", "." ]
+}, {
+  "sentence_tokens" : [ "n", "is", "the", "number", "of", "observations", "." ]
+}, {
+  "sentence_tokens" : [ "This", "phenomenon", "is", "called", "the", "Hurst", "phenomenon", "." ]
+}, {
+  "sentence_tokens" : [ "To", "study", "the", "Hurst", "phenomenon", ",", "Mandelbrot", "introduced", "the", "concept", "of", "self-similar", "and", "explained", "the", "Hurst", "phenomenon", "successfully", "using", "self-similar", "fractional", "Brownian", "motion", "(", "FBM", ")", "[", "8]", "." ]
+}, {
+  "sentence_tokens" : [ "A", "continuous", "process", "X(", "t", ")", "is", "said", "to", "be", "self-similar", ",", "if", "for", "a", ">", "0", ",", "X(", "at", ")", "=", "daHX", "(", "t", ")", ",", "H", "is", "the", "self-similar", "parameter", "." ]
+}, {
+  "sentence_tokens" : [ "When", "H", ">", "0.5", ",", "the", "increments", "of", "FBM", "are", "long-range", "dependent", ",", "i.e", ".,", "the", "summation", "of", "their", "auto-covariances", "is", "divergent", "." ]
+}, {
+  "sentence_tokens" : [ "Thus", ",", "fractal", "Brownian", "motion", "and", "its", "increments", "(", "fractional", "Gaussian", "noise", "(", "FGN", ")", ")", "play", "important", "roles", "in", "modeling", "signals", "with", "self-similarity", "and", "long-range", "dependence", "." ]
+}, {
+  "sentence_tokens" : [ "Most", "studies", "on", "this", "issue", "are", "based", "on", "FBM.Wavelet", "analysis", "is", "a", "common", "method", "for", "signal", "processing", "(", "see", "e.g", ".,", "[", "9,10", "]", ")", "and", "has", "been", "widely", "used", "for", "the", "fractal", "analysis", "of", "signals", "due", "to", "its", "multiresolution", "." ]
+}, {
+  "sentence_tokens" : [ "Nicolis", "et", "al.", "[", "11", "]", "defined", "three", "kinds", "of", "wavelet", "based", "entropy", "for", "studying", "the", "two-dimensional", "fractional", "Brownian", "field", "." ]
+}, {
+  "sentence_tokens" : [ "Li", "et", "al.", "[", "12", "]", "used", "wavelet", "fractal", "and", "twin", "support", "vector", "machine", "to", "study", "the", "classification", "of", "heart", "sound", "signals", "." ]
+}, {
+  "sentence_tokens" : [ "Ram", "i", "rez-Pacheco", "et", "al.", "[", "13", "]", "studied", "fractal", "signal", "classification", "using", "non", "extensive", "wavelet", "based", "entropy.The", "wavelet", "based", "estimator", "of", "the", "Hurst", "parameter", "was", "well", "established", "by", "Abry", "et", "al.", "(", "see", "[", "14,15,16,17,18,19,20,21", "]", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Compared", "with", "other", "estimators", ",", "such", "as", "the", "R/S", "method", ",", "the", "periodogram", ",", "the", "variogram", "(", "semi", "parametric", "or", "nonparametric", "estimator", ")", "and", "the", "parametric", "method", ",", "the", "wavelet", "based", "estimator", "performs", "well", "in", "both", "the", "statistical", "and", "computational", "sense", ",", "and", "is", "superior", "in", "robustness", "(", "see", "[", "18,19", "]", "and", "the", "references", "therein", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Besides", ",", "the", "wavelet", "based", "method", "can", "also", "eliminate", "some", "trends", "(", "linear", "trends", ",", "polynomial", "trend", ",", "or", "more", ")", "by", "the", "property", "of", "its", "vanishing", "moments", "[", "17", "]", ",", "which", "makes", "the", "estimator", "robust", "to", "some", "nonstationarities", "." ]
+}, {
+  "sentence_tokens" : [ "More", "simulation", "studies", "for", "the", "estimation", "of", "Hurst", "parameter", "can", "be", "seen", "in", "[", "22", "]", "." ]
+}, {
+  "sentence_tokens" : [ "Based", "on", "the", "standard", "wavelet", "based", "estimator", ",", "some", "robust", "estimators", "are", "proposed", "." ]
+}, {
+  "sentence_tokens" : [ "Soltani", "et", "al.", "[", "23", "]", "proposed", "an", "improved", "wavelet", "based", "estimator", "via", "the", "average", "of", "two", "wavelet", "coefficients", "of", "half", "length", "apart", "and", "taking", "the", "logarithm", "first", "." ]
+}, {
+  "sentence_tokens" : [ "Shen", "et", "al.", "[", "24", "]", "proposed", "a", "robust", "estimator", "of", "self-similar", "parameter", "using", "wavelet", "transform", ",", "which", "was", "less", "sensitive", "to", "some", "non", "stationary", "traffic", "conditions", "." ]
+}, {
+  "sentence_tokens" : [ "Park", "&", "Park", "[", "25", "]", "introduced", "a", "robust", "wavelet", "based", "estimator", "which", "took", "the", "logarithm", "of", "wavelet", "coefficients", "first", "and", "averaged", "them", "later", "." ]
+}, {
+  "sentence_tokens" : [ "Feng", "&", "Vidakovic", "[", "26", "]", "estimated", "the", "Hurst", "parameter", "via", "a", "general", "trimean", "estimator", "on", "nondecimated", "wavelet", "coefficients", "Kang", "&", "Vidakovic", "[", "27", "]", "proposed", "a", "robust", "estimator", "of", "Hurst", "parameter", "via", "medians", "of", "log", "squared", "nondecimated", "wavelet", "coefficients.Despite", "extensive", "studies", "of", "standard", "wavelet", "based", "estimator", "proposed", "by", "Abry", "et", "al", ".,", "there", "is", "still", "a", "lack", "of", "comprehensive", "and", "detailed", "numerical", "simulation", "study", "on", "fractal", "Brownian", "motion", ",", "especially", "for", "the", "selection", "of", "parameters", "and", "the", "empirical", "bias", "." ]
+}, {
+  "sentence_tokens" : [ "I", "have", "not", "seen", "studies", "on", "the", "changes", "of", "bias", "and", "variance", "with", "all", "different", "Hs", "and", "with", "different", "data", "lengths", ",", "which", "I", "think", "is", "important", "for", "the", "selection", "of", "the", "lower", "octave", "bound", "j1", ",", "especially", "at", "small", "values", "of", "H.", "j1", "is", "selected", "via", "the", "minimum", "mean", "square", "error", "." ]
+}, {
+  "sentence_tokens" : [ "Thus", ",", "this", "paper", "conducts", "a", "detailed", "numerical", "simulation", "study", "on", "the", "selection", "of", "parameters", "including", "the", "following", "contents", "." ]
+}, {
+  "sentence_tokens" : [ "The", "changes", "of", "bias", "and", "variance", "with", "all", "different", "Hs", ",", "different", "data", "lengths", ",", "different", "j1s", "and", "different", "wavelets", ";", "The", "relations", "of", "selected", "j1", "with", "data", "length", "and", "H", ";", "For", "the", "causes", "of", "the", "empirical", "bias", "which", "exist", "in", "standard", "wavelet", "based", "estimator", ",", "the", "following", "three", "causes", "in", "the", "case", "of", "FBM", "are", "concluded", "." ]
+}, {
+  "sentence_tokens" : [ "The", "initialization", "for", "initial", "approximation", "wavelet", "coefficients", "which", "introduces", "errors", "in", "used", "detailed", "wavelet", "coefficients.The", "inaccurate", "bias", "correction", "caused", "by", "correlations", "of", "wavelet", "coefficients.The", "method", "of", "simulation", "for", "FBM", "is", "not", "enough", "exact", "that", "the", "empirical", "bias", "is", "caused.There", "exist", "many", "studies", "on", "the", "reduction", "of", "empirical", "bias", "caused", "by", "the", "first", "two", "reasons", ",", "but", "lack", "of", "study", "on", "determining", "which", "is", "the", "main", "cause", "of", "empirical", "bias", "." ]
+}, {
+  "sentence_tokens" : [ "It", "is", "important", "for", "reducing", "empirical", "bias", "via", "appropriate", "techniques", "." ]
+}, {
+  "sentence_tokens" : [ "Combining", "with", "results", "of", "parameters", "selection", ",", "this", "paper", "analyzes", "the", "above", "three", "causes", "of", "empirical", "bias", "in", "the", "case", "of", "FBM", "via", "comparison", "of", "estimators", "and", "comparison", "of", "simulation", "methods", "." ]
+}, {
+  "sentence_tokens" : [ "The", "results", "obtained", "from", "above", "numerical", "simulations", "can", "be", "a", "reference", "for", "future", "studies", "and", "applications", "in", "the", "scaling", "behavior", "of", "signals", "." ]
+}, {
+  "sentence_tokens" : [ "Some", "preliminary", "results", "of", "this", "study", "have", "provided", "a", "reference", "for", "my", "previous", "studies", "on", "wavelet", "based", "estimation", "of", "Hurst", "parameters", "[", "28,29,30", "]", "." ]
+}, {
+  "sentence_tokens" : [ "This", "paper", "is", "organized", "as", "follows", "." ]
+}, {
+  "sentence_tokens" : [ "In", "Section", "2", ",", "this", "paper", "introduces", "two", "available", "estimators", "for", "the", "Hurst", "parameter", ",", "and", "the", "initialization", "methods", "for", "the", "initial", "approximation", "wavelet", "coefficients", "." ]
+}, {
+  "sentence_tokens" : [ "The", "simulation", "methods", "of", "FBM", "are", "described", "in", "Section", "3", "." ]
+}, {
+  "sentence_tokens" : [ "The", "main", "results", "are", "reported", "and", "discussed", "in", "Section", "4", "and", "my", "works", "are", "concluded", "in", "Section", "5", "." ]
+}, {
+  "sentence_tokens" : [ "2", "." ]
+}, {
+  "sentence_tokens" : [ "Wavelet", "Based", "Estimator", "." ]
+}, {
+  "sentence_tokens" : [ "2.1", "." ]
+}, {
+  "sentence_tokens" : [ "Definitions", "and", "Properties", "." ]
+}, {
+  "sentence_tokens" : [ "Fractional", "Brownian", "motion", "{", "X(", "t", ")", ",", "t", "in", "R", "}", "with", "Hurst", "parameter", "H", ">", "0", "is", "a", "real", "valued", "mean-zero", "Gaussian", "process", "with", "the", "following", "covariance", "structure", ":(", "1", ")", "EX", "(", "t", ")", "X(", "s", ")", "=", "12", "{", "|", "t", "|", "2H+", "|", "s", "|", "2H", "-", "|", "t", "-", "s", "|", "2H", "}", "." ]
+}, {
+  "sentence_tokens" : [ "It", "is", "a", "self-similar", "process", "with", "stationary", "increment", "." ]
+}, {
+  "sentence_tokens" : [ "Its", "wavelet", "coefficient", "is", "defined", "by", "(", "2", ")", "dX", "(", "j", ",", "k", ")", "=", "integral", "R", "psi", "j", ",", "k", "(", "t", ")", "X(", "t", ")", "dt", "." ]
+}, {
+  "sentence_tokens" : [ "psi", "(", "t", ")", "is", "the", "mother", "wavelet", ",", "which", "is", "defined", "through", "a", "scaling", "function", "phi", "(", "t", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Usually", "we", "choose", "psi", "(", "t", ")", "as", "a", "base", "function", ",", "and", "we", "can", "change", "it", "to", "psi", "j", ",", "k", "(", "t", ")", "=", "2", "-", "j/2", "psi", "(", "2", "-", "jt", "-", "k", ")", ",", "j", ",", "k", "in", "Z." ]
+}, {
+  "sentence_tokens" : [ "The", "factors", "2j", "and", "j", "are", "called", "the", "scale", "and", "octave", "respectively.Please", "note", "that", "FBM", "is", "usually", "denoted", "by", "BH", "." ]
+}, {
+  "sentence_tokens" : [ "this", "paper", "uses", "the", "symbol", "X", "instead", "of", "BH", "since", "the", "methods", "in", "this", "section", "for", "FBM", "can", "be", "applicable", "to", "a", "more", "general", "process", "named", "self-similar", "process", "with", "stationary", "increment", "and", "finite", "variance", "[", "20", "]", "." ]
+}, {
+  "sentence_tokens" : [ "Some", "key", "properties", "of", "the", "wavelet", "coefficient", "of", "X", "are", "given", "in", "the", "following", "lemma", "." ]
+}, {
+  "sentence_tokens" : [ "The", "proof", "of", "this", "lemma", "can", "be", "found", "in", "[", "19,20,31,32,33", "]", "." ]
+}, {
+  "sentence_tokens" : [ "Lemma", "1", "." ]
+}, {
+  "sentence_tokens" : [ "Let", "{", "X(", "t", ")", ",", "t", "in", "R", "}", "be", "a", "fractional", "Brownian", "motion", "." ]
+}, {
+  "sentence_tokens" : [ "psi", "(", "t", ")", "in", "L2", "(", "R", ")", "is", "an", "orthonormal", "wavelet", "with", "compact", "support", "and", "have", "N", ">=", "1", "vanishing", "moments", "." ]
+}, {
+  "sentence_tokens" : [ "The", "wavelet", "coefficients", "of", "X(", "t", ")", "given", "in", "(", "2", ")", "have", "these", "properties", "below", ",", "(", "1", ")", "EdX", "(", "j", ",", "k", ")", "=0", "and", "dX", "(", "j", ",", "k", ")", "is", "Gaussian", ",", "for", "any", "j", ",", "k", "in", "Z.", "(", "2", ")", "For", "fixed", "j", "in", "Z", ",", "(", "3", ")", "dX", "(", "j", ",", "k", ")", "=", "d2j", "(", "H", "+1/2", ")", "dX", "(", "0", ",", "k", ")", ",", "for-all", "k", "in", "Z.", "(", "3", ")", "For", "fixed", "j", "in", "Z", ",", "(", "4", ")", "dX", "(", "j", ",", "k+", "h", ")", "=", "ddX", "(", "j", ",", "h", ")", ",", "for-all", "k", ",", "h", "in", "Z.", "(", "4", ")", "For", "j", ",", "j", "'", ",", "k", ",", "k", "'", "in", "Z", ",", "(", "5", ")", "EdX", "(", "j", ",", "k", ")", "dX", "(", "j", "'", ",", "k", "'", ")", "=~", "|", "2jk", "-", "2j", "'", "k", "'", "|", "2H", "-", "2N", ",", "|", "2jk", "-", "2j", "'", "k", "'", "|", "-->+", "infinity", "." ]
+}, {
+  "sentence_tokens" : [ "In", "the", "above", ",", "=d", "means", "equality", "in", "distribution", "." ]
+}, {
+  "sentence_tokens" : [ "Remark", "1", "." ]
+}, {
+  "sentence_tokens" : [ "In", "view", "of", "Equation", "(", "5", ")", ",", "to", "avoid", "long-range", "dependence", "for", "dX", "(", "j", ",", "k", ")", ",", "i.e", ".,", "to", "ensure", "that", "sum", "j", ",", "k", "in", "ZE", "|", "dX", "(", "j", ",", "k", ")", "dX", "(", "0,0", ")", "|", "<", "infinity", ",", "one", "needs", "to", "choose", "(", "6", ")", "N", ">", "H", "+1/2", ",", "i.e", ".,", "(", "2H", "-", "2N", ")", "<", "-", "1", ",", "that", "is", ",", "have", "at", "least", "N", "=", "2", "." ]
+}, {
+  "sentence_tokens" : [ "Under", "this", "condition", ",", "the", "correlation", "of", "dX", "(", "j", ",", "k", ")", "tends", "rapidly", "to", "0", "at", "large", "lags", "." ]
+}, {
+  "sentence_tokens" : [ "According", "to", "Remark", "1", "and", "Equation", "(", "5", ")", ",", "let", "the", "number", "of", "vanishing", "moments", "N", ">=", "2", "." ]
+}, {
+  "sentence_tokens" : [ "It", "is", "reasonable", "to", "impose", "the", "following", "assumptions", "." ]
+}, {
+  "sentence_tokens" : [ "For", "fixed", "j", ",", "the", "dX", "(", "j", ",", "." ]
+}, {
+  "sentence_tokens" : [ ")", "are", "independent", "and", "identically", "distributed", ";", "The", "processes", "dX", "(", "j", ",", "." ]
+}, {
+  "sentence_tokens" : [ ")", "and", "dX", "(", "j", "'", ",", "." ]
+}, {
+  "sentence_tokens" : [ ")", ",", "j", "!=", "j", "'", ",", "are", "independent.Under", "these", "two", "assumptions", ",", "according", "to", "Lemma", "1", ",", "there", "exist", "two", "available", "least", "squares", "estimators", "for", "the", "Hurst", "parameter", "." ]
+}, {
+  "sentence_tokens" : [ "[", "19,20,34", "]", ",", "one", "of", "which", "is", "first", "applied", "in", "the", "case", "of", "FBM", "for", "the", "bias", "study", "of", "common", "estimator", "." ]
+}, {
+  "sentence_tokens" : [ "2.2", "." ]
+}, {
+  "sentence_tokens" : [ "Two", "Wavelet", "Based", "Estimators", "." ]
+}, {
+  "sentence_tokens" : [ "The", "First", "Estimator", "." ]
+}, {
+  "sentence_tokens" : [ "The", "first", "estimator", "is", "the", "standard", "wavelet", "based", "estimator", "of", "Hurst", "parameter", "which", "is", "proposed", "by", "Abry", "et", "al", "and", "commonly", "used", "in", "applications", "of", "various", "fields", "." ]
+}, {
+  "sentence_tokens" : [ "In", "view", "of", "Equations", "(", "3", ")", "and", "(", "4", ")", ",", "I", "can", "check", "the", "following", "formula", "." ]
+}, {
+  "sentence_tokens" : [ "(", "7", ")", "EdX2", "(", "j", ",", "k", ")", "=", "C12j", "(", "2H", "+1", ")", ",", "C1", "=", "EdX2", "(", "0,0", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Take", "the", "logarithm", ":(", "8)", "log2EdX2", "(", "j", ",", "k", ")", "=", "j", "(", "2H", "+1", ")", "+", "log2C1.So", "the", "estimation", "of", "H", "can", "be", "conducted", "by", "a", "linear", "regression", "in", "the", "left", "part", "versus", "j", "diagram", "." ]
+}, {
+  "sentence_tokens" : [ "The", "EdX2", "(", "j", ",", "k", ")", "is", "estimated", "by", "(", "9", ")", "S", "(", "j", ")", ":", "=", "1/nj", "sum", "dX2", "(", "j", ",", "k", ")", "." ]
+}, {
+  "sentence_tokens" : [ "where", "nj", "stands", "for", "the", "number", "of", "dX2", "(", "j", ",", "k", ")", "actually", "available", "at", "octave", "j.Due", "to", "different", "variances", "of", "log2S", "(", "j", ")", "at", "different", "js", ",", "the", "weighted", "least", "squares", "for", "this", "regression", "model", "is", "needed", "." ]
+}, {
+  "sentence_tokens" : [ "The", "weight", "is", "the", "reciprocal", "of", "the", "variance", "of", "log2S", "(", "j", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Please", "note", "that", "(", "10", ")", "Elog2S", "(", "j", ")", "!=", "log2ES", "(", "j", ")", "=", "log2EdX2", "(", "j", ",", "k", ")", "." ]
+}, {
+  "sentence_tokens" : [ "This", "can", "lead", "to", "the", "bias", "of", "estimator.Define", "the", "variables", "y1", "(", "j", ")", "s", "as", "y1", "(", "j", ")", ":", "=", "log2S", "(", "j", ")", "-", "g", "(", "j", ")", "." ]
+}, {
+  "sentence_tokens" : [ "where", "g", "(", "j", ")", "is", "calculated", "such", "that", "Ey1", "(", "j", ")", "=", "log2ES", "(", "j", ")", "." ]
+}, {
+  "sentence_tokens" : [ "To", "ensure", "the", "unbiasedness", "of", "the", "estimator", ",", "I", "use", "y1", "(", "j", ")", "as", "the", "response", "variable", "instead", "of", "log2S", "(", "j", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Moreover", ",", "Vary1", "(", "j", ")", "=", "Varlog2S", "(", "j", ")", "." ]
+}, {
+  "sentence_tokens" : [ "The", "calculation", "of", "g", "(", "j", ")", "and", "Vary1", "(", "j", ")", "are", "shown", "in", "[", "18,19,20", "]", "." ]
+}, {
+  "sentence_tokens" : [ "(", "11", ")", "g", "(", "j", ")", "=", "Gamma", "'", "(", "nj/2", ")/(", "Gamma", "(", "nj/2", ")", "ln2", ")", "-", "log2", "(", "nj/2", ")", ",", "(", "12", ")", "Vary1", "(", "j", ")", "=", "sigma", "(", "2", ",", "nj/2", ")/ln22", ",", "where", "sigma", "(", "2", ",", "z", ")", ":", "=", "sum", "x", "=0", "infinity", "1/(", "z+", "x)", "2", "is", "a", "generalized", "Riemann", "Zeta", "function", "." ]
+}, {
+  "sentence_tokens" : [ "Gamma", "and", "Gamma", "'", "are", "the", "gamma", "function", "and", "its", "derivative", "respectively.The", "g", "(", "j", ")", "and", "Vary1", "(", "j", ")", "can", "be", "also", "calculated", "via", "sample", "moment", "estimators", "[", "18,19,20", "]", "(", "13", ")", "g", "(", "j", ")", "=~", "-", "log2e2C", "(", "j", ")", ",", "(", "14", ")", "Vary1", "(", "j", ")", "=~", "(", "log2e", ")", "2C", "(", "j", ")", ",", "where", "C", "(", "j", ")", "=", "VardX2", "(", "j", ",", "." ]
+}, {
+  "sentence_tokens" : [ ")/[", "nj", "(", "EdX2", "(", "j", ",", "." ]
+}, {
+  "sentence_tokens" : [ ")", ")", "2", "]", "." ]
+}, {
+  "sentence_tokens" : [ "The", "C", "(", "j", ")", "term", "is", "estimated", "using", "the", "sample", "moment", "estimators", "of", "the", "fourth", "and", "second", "moments", "of", "dX", "(", "j", ",", "." ]
+}, {
+  "sentence_tokens" : [ ")", "at", "each", "octave", "." ]
+}, {
+  "sentence_tokens" : [ "The", "Second", "Estimator", "." ]
+}, {
+  "sentence_tokens" : [ "As", "mentioned", "above", ",", "since", "Elog2S", "(", "j", ")", "!=", "log2ES", "(", "j", ")", ",", "the", "first", "estimator", "needs", "to", "correct", "bias", "." ]
+}, {
+  "sentence_tokens" : [ "For", "avoiding", "this", "case", ",", "the", "second", "least", "squares", "estimator", "for", "Hurst", "parameter", "is", "proposed", "." ]
+}, {
+  "sentence_tokens" : [ "This", "estimator", "is", "also", "originally", "proposed", "by", "Abry", "et", "al.", "[", "34", "]", "and", "then", "studied", "by", "Park", "&", "Park", "[", "25", "]", "for", "the", "purpose", "of", "robustness.Based", "on", "Equations", "(", "3", ")", "and", "(", "4", ")", ",", "dX2", "(", "j", ",", "k", ")", "=", "d2j", "(", "2H", "+1", ")", "dX2", "(", "0,0", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Now", "take", "the", "logarithm", "first", "and", "then", "the", "expectation", ",", "obtain", "the", "following", "new", "equation", "." ]
+}, {
+  "sentence_tokens" : [ "(", "15", ")", "Elog2dX2", "(", "j", ",", "k", ")", "=", "j", "(", "2H", "+1", ")", "+", "C2", ",", "C2", "=", "Elog2dX2", "(", "0,0", ")", "." ]
+}, {
+  "sentence_tokens" : [ "So", "the", "estimation", "of", "H", "can", "be", "conducted", "by", "a", "weighted", "linear", "regression", "in", "the", "left", "part", "versus", "j", "diagram", "." ]
+}, {
+  "sentence_tokens" : [ "The", "Elog2dX2", "(", "j", ",", "k", ")", "is", "estimated", "by", "(", "16", ")", "LS", "(", "j", ")", ":", "=", "1/nj", "sum", "log2dX2", "(", "j", ",", "k", ")", "." ]
+}, {
+  "sentence_tokens" : [ "where", "nj", "stands", "for", "the", "number", "of", "dX2", "(", "j", ",", "k", ")", "actually", "available", "at", "octave", "j.Compared", "with", "the", "first", "estimator", ",", "the", "second", "estimator", "changes", "the", "order", "of", "expectation", "and", "logarithmic", "." ]
+}, {
+  "sentence_tokens" : [ "The", "idea", "of", "this", "estimator", "is", "first", "proposed", "for", "analyzing", "the", "alpha-stable", "self-similar", "processes", "with", "infinite", "second-order", "statistics", "and", "long-range", "dependence", "[", "34", "]", "." ]
+}, {
+  "sentence_tokens" : [ "Define", "the", "variables", "y2", "(", "j", ")", "as", "y2", "(", "j", ")", ":", "=", "LS", "(", "j", ")", "." ]
+}, {
+  "sentence_tokens" : [ "We", "can", "check", "that", "Ey2", "(", "j", ")", "=", "ELS", "(", "j", ")", "=", "Elog2dX2", "(", "j", ",", "k", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Let", "y2", "(", "j", ")", "be", "the", "response", "variable", "of", "weighted", "linear", "regression", "." ]
+}, {
+  "sentence_tokens" : [ "The", "unbiasedness", "of", "the", "estimator", "follows", "from", "the", "unbiasedness", "of", "y2", "(", "j", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Similar", "to", "the", "calculation", "shown", "in", "[", "18,19,20", "]", ",", "the", "variance", "of", "y2", "(", "j", ")", "can", "be", "calculated", "for", "the", "weight", "of", "regression", "." ]
+}, {
+  "sentence_tokens" : [ "(", "17", ")", "Vary2", "(", "j", ")", "=", "sigma", "(", "2,1/2", ")/(", "njln22", ")", ",", "And", "by", "sample", "moment", "estimators", "[", "18,19,20", "]", "(", "18", ")", "Vary2", "(", "j", ")", "=", "Varlog2dX2", "(", "j", ",", "." ]
+}, {
+  "sentence_tokens" : [ ")/nj.The", "Varlog2dX2", "(", "j", ",", "." ]
+}, {
+  "sentence_tokens" : [ ")", "is", "estimated", "using", "its", "sample", "variance", "at", "each", "octave", "." ]
+}, {
+  "sentence_tokens" : [ "Explicit", "Formula", "of", "theTwo", "Estimators", "." ]
+}, {
+  "sentence_tokens" : [ "Let", "j1", "denote", "the", "lower", "bound", "of", "j", ",", "and", "j2", "denote", "the", "upper", "bound", "of", "j", ",", "i.e", ".,", "the", "values", "of", "j", "are", "chosen", "j1", "<=", "j", "<=", "j2", "." ]
+}, {
+  "sentence_tokens" : [ "According", "to", "the", "weighted", "least", "squares", ",", "the", "explicit", "formula", "of", "estimators", "can", "be", "obtained", "as", "follows", ",", "(", "19", ")", "H", "^", "=", "sum", "j", "=", "j1j2", "omega", "(", "j", ")", "y", "(", "j", ")", "-", "12", ",", "where", "omega", "(", "j", ")", "=", "T0j", "-", "T1", "sigma", "2", "(", "j", ")", "(", "T0T2", "-", "T12", ")", ",", "T0", "=", "sum", "j", "=", "j1j21/sigma", "2", "(", "j", ")", ",", "T1", "=", "sum", "j", "=", "j1j2j/sigma", "2", "(", "j", ")", ",", "T2", "=", "sum", "j", "=", "j1j2j2/sigma", "2", "(", "j", ")", "." ]
+}, {
+  "sentence_tokens" : [ "When", "using", "the", "first", "method", ",", "y", "(", "j", ")", "=", "y1", "(", "j", ")", "and", "sigma", "2", "(", "j", ")", "=", "Vary1", "(", "j", ")", ",", "let", "H1", "^", "denote", "the", "first", "estimator", "." ]
+}, {
+  "sentence_tokens" : [ "When", "using", "the", "second", "method", ",", "y", "(", "j", ")", "=", "y2", "(", "j", ")", "and", "sigma", "2", "(", "j", ")", "=", "Vary2", "(", "j", ")", ",", "let", "H2", "^", "denote", "the", "second", "estimator", "." ]
+}, {
+  "sentence_tokens" : [ "Variance", "Comparison", "." ]
+}, {
+  "sentence_tokens" : [ "The", "variances", "of", "H1", "^", "and", "H2", "^", "can", "be", "compared", "via", "a", "simple", "theoretical", "analysis", "." ]
+}, {
+  "sentence_tokens" : [ "In", "view", "of", "Equation", "(", "19", ")", ",", "the", "variance", "of", "H", "^", "can", "be", "calculated", "by", "(", "20", ")", "VarH", "^", "=", "14", "sum", "j", "=", "j1j2", "omega", "2", "(", "j", ")", "sigma", "2", "(", "j", ")", "." ]
+}, {
+  "sentence_tokens" : [ "When", "nj", "is", "large", ",", "recall", "that", "the", "asymptotic", "form", "of", "Vary1", "(", "j", ")", "(", "see", "[", "19", "]", ")", "." ]
+}, {
+  "sentence_tokens" : [ "(", "21", ")", "Vary1", "(", "j", ")", "~", "2/(", "njln22", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Also", "recall", "Equation", "(", "17", ")", ",", "Vary2", "(", "j", ")", "=", "sigma", "(", "2,1/2", ")/(", "njln22", ")", "." ]
+}, {
+  "sentence_tokens" : [ "So", "when", "nj", "is", "large", ",", "the", "asymptotic", "form", "of", "ratio", "can", "be", "obtained", ",", "(", "22", ")", "VarH2", "^", "VarH1", "^", "~", "sigma", "(", "2,1/2", ")", "2", "=", "2.47.The", "variance", "of", "H1", "^", "is", "smaller", "than", "that", "of", "H2", "^", "." ]
+}, {
+  "sentence_tokens" : [ "Please", "note", "that", "the", "nondecimated", "wavelet", "coefficients", "have", "been", "used", "in", "wavelet", "based", "estimator", "since", "they", "can", "decrease", "the", "variance", "due", "to", "their", "redundancy", "[", "26,27", "]", "." ]
+}, {
+  "sentence_tokens" : [ "However", ",", "they", "can", "also", "increase", "the", "correlations", "in", "wavelet", "coefficients", "." ]
+}, {
+  "sentence_tokens" : [ "Then", "when", "using", "nondecimated", "wavelet", "coefficients", ",", "we", "should", "take", "logarithm", "first", "." ]
+}, {
+  "sentence_tokens" : [ "It", "is", "suitable", "to", "reduce", "the", "variance", "of", "the", "second", "estimator", "via", "nondecimated", "wavelet", "coefficients", "." ]
+}, {
+  "sentence_tokens" : [ "For", "further", "considering", "the", "possible", "outliers", "caused", "by", "logarithmic", "transform", ",", "Kang", "&", "Vidakovic", "[", "27", "]", "suggest", "using", "medians", "for", "estimation", "of", "Hurst", "parameter", "in", "this", "case", "." ]
+}, {
+  "sentence_tokens" : [ "This", "method", "is", "denoted", "by", "MEDL", "." ]
+}, {
+  "sentence_tokens" : [ "2.3", "." ]
+}, {
+  "sentence_tokens" : [ "Calculation", "of", "Wavelet", "Coefficients", "." ]
+}, {
+  "sentence_tokens" : [ "According", "to", "the", "multiresolution", "analysis", "(", "MRA", ")", ",", "the", "wavelet", "coefficients", "can", "be", "calculated", "by", "fast", "pyramidal", "algorithm", "." ]
+}, {
+  "sentence_tokens" : [ "The", "scaling", "function", "phi", "and", "the", "wavelet", "psi", "satisfy", "so", "called", "two-scale", "equation", ":(", "23", ")", "phi", "(", "t/2", ")", "=", "2", "sum", "nun", "phi", "(", "t", "-", "n", ")", ",", "(", "24", ")", "psi", "(", "t/2", ")", "=", "2", "sum", "nvn", "phi", "(", "t", "-", "n", ")", ",", "where", "{", "un", "}", "and", "{", "vn", "}", "are", "two", "existing", "sequences", "belonging", "to", "l2.Define", "the", "approximation", "coefficients", "aX", "(", "j", ",", "k", ")", ":", "aX", "(", "j", ",", "k", ")", ":", "=", "integral", "R", "phi", "j", ",", "k", "(", "t", ")", "X(", "t", ")", "dt", "where", "phi", "j", ",", "k", "(", "t", ")", "=", "2", "-", "j/2", "phi", "(", "2", "-", "jt", "-", "k", ")", "." ]
+}, {
+  "sentence_tokens" : [ "So", "dX", "(", "j", ",", "k", ")", "can", "be", "calculated", "by", "fast", "pyramidal", "algorithm", "." ]
+}, {
+  "sentence_tokens" : [ "(", "25", ")", "aX", "(", "j", ",", "k", ")", "=", "sum", "nunaX", "(", "j", "-", "1,2", "k+", "n", ")", ",", "(", "26", ")", "dX", "(", "j", ",", "k", ")", "=", "sum", "nvnaX", "(", "j", "-", "1,2", "k+", "n", ")", "." ]
+}, {
+  "sentence_tokens" : [ "In", "view", "of", "above", "formulas", ",", "the", "aX", "(", "0", ",", "." ]
+}, {
+  "sentence_tokens" : [ ")", "are", "obtained", "via", "integral", "." ]
+}, {
+  "sentence_tokens" : [ "However", ",", "in", "practice", ",", "the", "data", "we", "obtained", "are", "always", "discrete", "and", "finite", "." ]
+}, {
+  "sentence_tokens" : [ "The", "aX", "(", "0", ",", "." ]
+}, {
+  "sentence_tokens" : [ ")", "cannot", "be", "obtained", "by", "integral", "in", "continuous", "time", "." ]
+}, {
+  "sentence_tokens" : [ "When", "sampling", "frequency", "is", "high", "and", "the", "scale", "of", "wavelet", "transform", "is", "small", ",", "the", "typical", "approach", "is", "to", "set", "[", "35,36,37", "]", "(", "27", ")", "aX", "(", "0", ",", "k", ")", "=X", "(", "k", ")", "." ]
+}, {
+  "sentence_tokens" : [ "where", "{", "X(", "k", ")", ",", "k", "in", "Z", ",1", "<=", "k", "<=", "n", "}", "is", "discrete", "and", "finite", "FBM.In", "view", "of", "Equations", "(", "25", ")", "and", "(", "26", ")", ",", "the", "number", "of", "available", "wavelet", "coefficients", "nj", "decreases", "by", "half", "." ]
+}, {
+  "sentence_tokens" : [ "Then", "nj", "=~", "n2", "-", "j.Remark", "2", "." ]
+}, {
+  "sentence_tokens" : [ "For", "a", "wavelet", "which", "has", "time", "support", "(", "finite", "or", "decreases", "very", "fast", "as", "|", "t", "|", "-->", "infinity", ")", ",", "an", "increase", "in", "the", "number", "of", "vanishing", "moments", "N", "comes", "with", "an", "enlargement", "of", "the", "time", "support", "[", "20", "]", "." ]
+}, {
+  "sentence_tokens" : [ "In", "the", "case", "of", "finite", "data", ",", "because", "of", "the", "boundary", "effects", "of", "wavelet", "transform", ",", "this", "will", "lead", "to", "the", "decrease", "of", "the", "number", "of", "available", "wavelet", "coefficients", "nj", "at", "each", "octave", "." ]
+}, {
+  "sentence_tokens" : [ "2.4", "." ]
+}, {
+  "sentence_tokens" : [ "The", "Initialization", "Method", "." ]
+}, {
+  "sentence_tokens" : [ "The", "discrete", "sampling", "for", "a", "continuous", "process", "X(", "t", ")", "usually", "implies", "an", "irrevocable", "loss", "of", "information", "on", "X(", "t", ")", "[", "35", "]", "." ]
+}, {
+  "sentence_tokens" : [ "So", "the", "approach", "shown", "in", "Equation", "(", "27", ")", "introduces", "errors", "in", "dX", "(", "j", ",", "k", ")", "s." ]
+}, {
+  "sentence_tokens" : [ "It", "is", "known", "[", "14,18", "]", "that", "these", "initialization", "errors", "are", "significant", "on", "small", "octaves", "but", "quickly", "decrease", "with", "increasing", "j.", "For", "large", "j", ",", "the", "initialization", "issue", "can", "be", "ignored", "." ]
+}, {
+  "sentence_tokens" : [ "Veitch", "et", "al.", "[", "35", "]", "introduce", "an", "initialization", "method", "for", "discrete", "time", "series", ",", "which", "has", "been", "proved", "meaningful", "for", "correction", "of", "the", "initialization", "errors", "in", "the", "case", "of", "long-range", "dependent", "process.This", "initialization", "method", "is", "based", "on", "the", "stochastic", "version", "of", "the", "Shannon", "sampling", "theorem", "[", "35,38", "]", "." ]
+}, {
+  "sentence_tokens" : [ "Consider", "the", "bandlimited", "stationary", "stochastic", "process", "{", "X(", "t", ")", ",", "t", "in", "R", "}", ",", "construct", "X ", "(", "t", ")", "by", "(", "28", ")", "X ", "(", "t", ")", "=", "sum", "n", "=", "-", "infinity", "infinity", "X(", "n", ")", "sinc", "(", "t", "-", "n", ")", ",", "wheresinc", "(", "t", ")", "=", "sin", "pi", "t", "pi", "t.The", "X ", "(", "t", ")", "is", "bandlimited", ",", "and", "has", "the", "same", "spectral", "density", "as", "that", "of", "X(", "t", ")", "in", "the", "frequency", "band", "[", "-", "1/2", ",1/2", "]", "(", "otherwise", "is", "zero", ")", "." ]
+}, {
+  "sentence_tokens" : [ "It", "is", "easy", "to", "check", "{", "X ", "(", "k", ")", ",", "k", "in", "Z", "}={", "X(", "k", ")", ",", "k", "in", "Z", "}", "." ]
+}, {
+  "sentence_tokens" : [ "Furthermore", ",", "(", "29", ")", "aX", "(", "0", ",", "k", ")", "=", "integral", "R", "phi", "(", "t", "-", "k", ")", "X ", "(", "t", ")", "dt", "=", "sum", "n", "=", "-", "infinity", "infinity", "X(", "n", ")", "integral", "R", "phi", "(", "t", "-", "k", ")", "sinc", "(", "t", "-", "n", ")", "dt", "=", "sum", "n", "=", "-", "infinity", "infinity", "X(", "n", ")", "I", "(", "k", "-", "n", ")", ",", "where", "I", "(", "m", ")", "=", "integral", "R", "phi", "(", "t", ")", "sinc", "(", "t+", "m", ")", "dt", "." ]
+}, {
+  "sentence_tokens" : [ "The", "sequence", "{", "I", "(", "m", ")", "}", "is", "calculated", "in", "[", "35", "]", "." ]
+}, {
+  "sentence_tokens" : [ "Please", "note", "that", "because", "of", "the", "boundary", "effects", ",", "the", "initialization", "will", "lead", "to", "the", "decrease", "of", "the", "number", "of", "available", "wavelet", "coefficients", "nj", "." ]
+}, {
+  "sentence_tokens" : [ "3", "." ]
+}, {
+  "sentence_tokens" : [ "Simulation", "of", "FBM", "." ]
+}, {
+  "sentence_tokens" : [ "For", "studying", "the", "statistical", "performance", "of", "the", "two", "estimators", "in", "the", "case", "of", "FBM", ",", "the", "numerical", "simulation", "of", "FBM", "is", "conducted", "." ]
+}, {
+  "sentence_tokens" : [ "Here", ",", "this", "section", "briefly", "introduces", "two", "simulation", "methods", "of", "FBM", "[", "39,40,41,42", "]", "." ]
+}, {
+  "sentence_tokens" : [ "Let", "{", "X(", "t", ")", ",", "t", "in", "[", "0,1", "]", "}", "be", "a", "mean-zero", "fractional", "Brownian", "motion", "with", "Hurst", "parameter", "H", "in", "(", "0,1", ")", "." ]
+}, {
+  "sentence_tokens" : [ "The", "Cholesky", "Method", "." ]
+}, {
+  "sentence_tokens" : [ "The", "Cholesky", "method", "uses", "the", "Cholesky", "decomposition", "of", "the", "covariance", "matrix", "." ]
+}, {
+  "sentence_tokens" : [ "The", "FBM", "generated", "by", "this", "method", "is", "exact", "in", "the", "sense", "of", "covariance", "structure", ",", "but", "this", "method", "is", "slow.Let", "Sigma", "=(", "Sigma", "i", ",", "j", ")", "be", "the", "covariance", "matrix", "of", "FBM", ",", "where", "Sigma", "i", ",", "j", "=", "Cov", "(", "X(", "ti", ")", ",X(", "tj", ")", ")", ",", "ti", "=", "i/n", ",", "tj", "=", "j/n", ",", "i", ",", "j", "=", "1", ",", "..." ]
+}, {
+  "sentence_tokens" : [ ",", "n.", "Conduct", "the", "Cholesky", "decomposition", "Sigma", "=", "AA", "'", "." ]
+}, {
+  "sentence_tokens" : [ "At", "last", ",", "X", "=(", "X(", "t1", ")", ",", "..." ]
+}, {
+  "sentence_tokens" : [ ",X(", "tn", ")", ")", "'", "=", "AZ", "is", "the", "generated", "FBM", ",", "where", "Z", "=(", "Z1", ",", "..." ]
+}, {
+  "sentence_tokens" : [ ",", "Zn", ")", "'", ",", "Z1", ",", "..." ]
+}, {
+  "sentence_tokens" : [ ",", "Zn", "are", "independent", "and", "identically", "distributed", "N", "(", "0,1", ")", "." ]
+}, {
+  "sentence_tokens" : [ "The", "Circulant", "Embedding", "Method", "." ]
+}, {
+  "sentence_tokens" : [ "The", "simulation", "procedure", "is", "based", "on", "the", "method", "of", "circulant", "embedding", "." ]
+}, {
+  "sentence_tokens" : [ "The", "algorithm", "of", "circulant", "embedding", "was", "originally", "proposed", "by", "Davies", "and", "Harte", "[", "39", "]", ",", "and", "was", "later", "simultaneously", "generalized", "by", "Dietrich", "and", "Newsam", "(", "see", "[", "40,41,42", "]", "and", "the", "references", "therein", ")", "." ]
+}, {
+  "sentence_tokens" : [ "It", "has", "been", "regarded", "as", "a", "fast", "and", "exact", "simulation", "of", "stationary", "Gaussian", "processes", "[", "42", "]", "." ]
+}, {
+  "sentence_tokens" : [ "I", "use", "this", "method", "to", "generate", "a", "fractional", "Gaussian", "noise", ",", "and", "construct", "a", "fractional", "Brownian", "motion", "via", "the", "cumulative", "sum", "of", "generated", "fractional", "Gaussian", "noise", "[", "41", "]", "." ]
+}, {
+  "sentence_tokens" : [ "First", "consider", "the", "fractional", "Gaussian", "noise", ",", "which", "is", "a", "zero-mean", "stationary", "Gaussian", "process", "{", "Zk", ",", "k", "=", "1", ",", "..." ]
+}, {
+  "sentence_tokens" : [ "n", "}", "with", "covariance", "(", "30", ")", "Cov", "(", "Zk", ",", "Zk+", "Delta", "k", ")", "=|", "Delta", "k", "+1", "|", "2H+", "|", "Delta", "k", "-", "1", "|", "2H", "-", "2", "|", "Delta", "k", "|", "2H2", ",", "Delta", "k", "=0", ",", "..." ]
+}, {
+  "sentence_tokens" : [ ",", "n.Such", "a", "stationary", "Gaussian", "noise", "can", "be", "efficiently", "and", "exactly", "generated", "by", "the", "method", "of", "circulant", "embedding", "and", "fast", "Fourier", "transform", "[", "41,42", "]", "." ]
+}, {
+  "sentence_tokens" : [ "The", "fractional", "Brownian", "motion", "{", "X(", "t", ")", ",", "t", "in", "[", "0,1", "]", "}", "is", "constructed", "on", "a", "uniformly", "spaced", "grid", "via", "the", "cumulative", "sum", "[", "41", "]", "(", "31", ")", "X(", "tk", ")", "=", "n", "-", "H", "sum", "i", "=", "1kZi", ",", "k", "=", "1", ",", "..." ]
+}, {
+  "sentence_tokens" : [ ",", "n.", "4", "." ]
+}, {
+  "sentence_tokens" : [ "Simulation", "Results", "and", "Discussions", "." ]
+}, {
+  "sentence_tokens" : [ "This", "section", "focuses", "on", "the", "numerical", "study", "of", "commonly", "used", "wavelet", "based", "estimator", "(", "the", "first", "estimator", ")", "which", "still", "lacks", "of", "comprehensive", "and", "detailed", "numerical", "study", "on", "estimation", "of", "fractal", "Brownian", "motion", ",", "especially", "on", "its", "empirical", "bias", "and", "the", "selection", "of", "parameters", "." ]
+}, {
+  "sentence_tokens" : [ "The", "second", "estimator", "was", "also", "compared", "with", "the", "commonly", "used", "estimator", "in", "this", "section", "for", "the", "purpose", "of", "empirical", "bias", "analysis", "." ]
+}, {
+  "sentence_tokens" : [ "If", "not", "specified", ",", "the", "sample", "trajectory", "of", "FBM", "used", "in", "this", "section", "is", "generated", "by", "the", "circulant", "embedding", "method", "." ]
+}, {
+  "sentence_tokens" : [ "4.1", "." ]
+}, {
+  "sentence_tokens" : [ "Selection", "of", "Parameters", "." ]
+}, {
+  "sentence_tokens" : [ "It", "is", "a", "key", "step", "to", "select", "octaves", "js", "and", "the", "number", "of", "vanishing", "moments", "N", "(", "or", "wavelet", ")", "before", "estimation", "." ]
+}, {
+  "sentence_tokens" : [ "First", "this", "subsection", "studies", "the", "selection", "of", "these", "parameters", "for", "later", "estimations", "." ]
+}, {
+  "sentence_tokens" : [ "For", "octaves", "js", ",", "the", "lower", "bound", "j1", "and", "the", "upper", "bound", "j2", "need", "to", "be", "determined", "." ]
+}, {
+  "sentence_tokens" : [ "The", "j2", "is", "chosen", "as", "the", "largest", "possible", "." ]
+}, {
+  "sentence_tokens" : [ "In", "practice", ",", "it", "is", "set", "equal", "to", "j2", "=", "log2n", "-", "C", ",", "where", "n", "denotes", "the", "data", "length", "and", "C", "is", "a", "constant", "(", "with", "value", "log2", "(", "2N", "+1", ")", "corresponding", "to", "the", "length", "of", "the", "support", "of", "the", "wavelet", "[", "20", "]", ")", "." ]
+}, {
+  "sentence_tokens" : [ "As", "the", "discussion", "in", "Section", "2", ",", "the", "initialization", "for", "aX", "(", "0", ",", "k", ")", "given", "in", "(", "27", ")", "introduces", "errors", "in", "the", "dX", "(", "j", ",", "k", ")", "." ]
+}, {
+  "sentence_tokens" : [ "It", "is", "known", "[", "14,18", "]", "that", "initialization", "errors", "are", "significant", "on", "small", "octaves", "but", "decrease", "with", "increasing", "j." ]
+}, {
+  "sentence_tokens" : [ "So", "small", "octave", "cannot", "be", "chosen", "as", "j1", "." ]
+}, {
+  "sentence_tokens" : [ "Based", "on", "prior", "studies", "[", "18,20", "]", ",", "and", "this", "paper", "selects", "j1", "by", "the", "minimum", "mean", "square", "error", "(", "MSE", ")", ",", "where", "the", "MSE", "is", "defined", "as", "MSE", "(", "H", "^", ")", ":", "=", "E", "(", "H", "^", "-", "H", ")", "2", "=(", "EH", "^", "-", "H", ")", "2+", "var", "(", "H", "^", ")", "." ]
+}, {
+  "sentence_tokens" : [ "It", "allows", "the", "tradeoff", "between", "variance", "and", "bias", "." ]
+}, {
+  "sentence_tokens" : [ "The", "results", "for", "the", "selection", "of", "j1", "are", "shown", "in", "Table", "1", "and", "Figure", "1.Figure", "1", "shows", "that", "the", "increase", "of", "j1", "causes", "the", "decrease", "of", "bias", "and", "the", "increase", "of", "standard", "deviation", "for", "all", "Hs", "." ]
+}, {
+  "sentence_tokens" : [ "So", "it", "is", "suitable", "to", "choose", "the", "j1", "by", "the", "minimum", "of", "MSE", "." ]
+}, {
+  "sentence_tokens" : [ "From", "Table", "1", ",", "when", "H", ">", "0.5", ",", "j1", "is", "chosen", "j1", "=3", "by", "minimum", "MSE", "." ]
+}, {
+  "sentence_tokens" : [ "When", "0.4", "<=", "H", "<=", "0.5", ",", "the", "RMSE", "of", "j1", "=3", "is", "close", "to", "that", "of", "chosen", "j1", "=", "4", "." ]
+}, {
+  "sentence_tokens" : [ "So", "considering", "most", "Hs", ",", "j1", "=3", "should", "be", "chosen", "in", "the", "case", "of", "FBM.Please", "note", "that", "the", "results", "of", "Figure", "1", "and", "Table", "1", "are", "based", "on", "long", "series", "." ]
+}, {
+  "sentence_tokens" : [ "In", "this", "case", ",", "the", "variances", "of", "all", "Hs", "are", "small", "." ]
+}, {
+  "sentence_tokens" : [ "For", "small", "values", "of", "H", ",", "the", "bias", "is", "large", ",", "and", "the", "MSE", "is", "mainly", "determined", "by", "the", "bias", "." ]
+}, {
+  "sentence_tokens" : [ "So", "the", "estimator", "of", "small", "H", "trends", "to", "select", "large", "j1", "which", "can", "lead", "to", "small", "bias", "." ]
+}, {
+  "sentence_tokens" : [ "Now", "I", "study", "the", "effects", "of", "data", "length", "and", "the", "selection", "of", "j1", "at", "different", "data", "lengths", "." ]
+}, {
+  "sentence_tokens" : [ "The", "results", "of", "this", "issue", "are", "shown", "in", "Figure", "2", "and", "Table", "2.Figure", "2", "shows", "that", "the", "data", "length", "has", "little", "effect", "on", "the", "bias", ",", "but", "its", "decrease", "causes", "the", "increase", "of", "standard", "deviation", "for", "all", "Hs", "." ]
+}, {
+  "sentence_tokens" : [ "The", "increase", "of", "standard", "deviation", "may", "affect", "the", "selection", "of", "j1", "." ]
+}, {
+  "sentence_tokens" : [ "Thus", ",", "continue", "to", "use", "the", "minimum", "MSE", "to", "select", "j1", "at", "different", "data", "lengths", "for", "the", "tradeoff", "between", "variance", "and", "bias", "." ]
+}, {
+  "sentence_tokens" : [ "The", "results", "of", "selection", "are", "shown", "in", "Table", "2", "." ]
+}, {
+  "sentence_tokens" : [ "From", "Table", "2", ",", "it", "can", "be", "seen", "that", "the", "selected", "j1", "increases", "with", "the", "increase", "of", "data", "length", ",", "and", "the", "smaller", "the", "value", "of", "H", ",", "the", "faster", "the", "increase", "." ]
+}, {
+  "sentence_tokens" : [ "Based", "on", "simulation", "results", ",", "the", "following", "formula", "is", "given", "for", "explanation", "." ]
+}, {
+  "sentence_tokens" : [ "minj1MSE", "(", "H", "^", ")", "=", "minj1Bias2", "(", "H", ",", "j1", ")", "+", "var", "(", "j1", ",", "n", ")", ",", "where", "Bias", "(", "H", ",", "j1", ")", "denotes", "the", "bias", "of", "estimator", "which", "decreases", "with", "the", "increase", "of", "H", "and", "the", "increase", "of", "j1", "." ]
+}, {
+  "sentence_tokens" : [ "var", "(", "j1", ",", "n", ")", "denotes", "the", "variance", "which", "decreases", "with", "the", "decrease", "of", "j1", "and", "the", "increase", "of", "n." ]
+}, {
+  "sentence_tokens" : [ "When", "n", "increases", ",", "the", "variance", "becomes", "smaller", ",", "the", "selected", "j1", "trends", "to", "increase", "for", "the", "tradeoff", "between", "variance", "and", "bias", "." ]
+}, {
+  "sentence_tokens" : [ "The", "smaller", "the", "value", "of", "H", ",", "the", "larger", "the", "bias", ",", "and", "the", "more", "the", "selected", "j1", "increase.For", "the", "wavelet", ",", "this", "paper", "chooses", "the", "classical", "Daubechies", "wavelets", ",", "which", "are", "orthonormal", "and", "have", "compact", "support", "." ]
+}, {
+  "sentence_tokens" : [ "According", "to", "Remark", "1", ",", "the", "number", "of", "vanishing", "moments", "must", "be", "chosen", "N", ">=", "2", "." ]
+}, {
+  "sentence_tokens" : [ "For", "analyzing", "the", "effect", "of", "N", ",", "I", "use", "N", "=", "1", "~", "8", "to", "estimate", "the", "Hurst", "parameter", "of", "FBM", "." ]
+}, {
+  "sentence_tokens" : [ "The", "results", "are", "shown", "in", "Figure", "3.From", "Figure", "3", ",", "when", "N", ">=", "2", ",", "the", "increase", "of", "N", "makes", "no", "improvements", "to", "the", "performance", "of", "the", "estimator", "." ]
+}, {
+  "sentence_tokens" : [ "Besides", ",", "according", "to", "Remark", "2", ",", "large", "N", "will", "cause", "the", "loss", "of", "available", "wavelet", "coefficients", "." ]
+}, {
+  "sentence_tokens" : [ "So", "appropriately", "we", "should", "choose", "N", "=3", "." ]
+}, {
+  "sentence_tokens" : [ "Finally", ",", "this", "subsection", "studies", "the", "performance", "of", "this", "estimator", "using", "various", "wavelets", "for", "further", "chosen", "of", "wavelet", "." ]
+}, {
+  "sentence_tokens" : [ "The", "results", "are", "shown", "in", "Figure", "4", "." ]
+}, {
+  "sentence_tokens" : [ "db3", "stands", "for", "Daubechies", "wavelet", "with", "three", "vanishing", "moments", "." ]
+}, {
+  "sentence_tokens" : [ "sym4", "stands", "for", "Symlets", "wavelet", "with", "four", "vanishing", "moments", "." ]
+}, {
+  "sentence_tokens" : [ "dmey", "stands", "for", "discrete", "Meyer", "wavelet", "." ]
+}, {
+  "sentence_tokens" : [ "bior3.1", "stands", "for", "biorthogonal", "spline", "wavelets", "with", "orders", "Nr", "=3", "(", "vanishing", "moments", ")", "and", "Nd", "=", "1", "." ]
+}, {
+  "sentence_tokens" : [ "Since", "the", "Symlets", "wavelet", "with", "three", "vanishing", "moments", "has", "the", "same", "filters", "as", "db3", ",", "this", "part", "uses", "this", "kind", "of", "wavelet", "with", "four", "vanishing", "moments", "." ]
+}, {
+  "sentence_tokens" : [ "The", "first", "three", "wavelets", "are", "orthogonal", "and", "have", "compact", "support", "." ]
+}, {
+  "sentence_tokens" : [ "The", "last", "wavelet", "is", "biorthogonal", "." ]
+}, {
+  "sentence_tokens" : [ "It", "can", "be", "seen", "in", "Figure", "4", "that", "performance", "using", "the", "first", "three", "wavelets", "are", "almost", "the", "same", "except", "for", "the", "standard", "deviation", "of", "dmey", "at", "H", "=0", ".95", "." ]
+}, {
+  "sentence_tokens" : [ "The", "biorthogonal", "spline", "wavelet", "performs", "worse", "than", "orthogonal", "wavelets", "except", "at", "H", "<=", "0.1", "." ]
+}, {
+  "sentence_tokens" : [ "This", "is", "due", "to", "the", "large", "bias", "caused", "by", "strong", "correlations", "of", "biorthogonal", "wavelet", "coefficients", ",", "and", "is", "consistent", "with", "the", "conclusion", "of", "Lemma", "1", "." ]
+}, {
+  "sentence_tokens" : [ "We", "need", "to", "use", "orthogonal", "compact", "supported", "wavelet", "to", "control", "these", "correlations", "via", "vanishing", "moments", "." ]
+}, {
+  "sentence_tokens" : [ "4.2", "." ]
+}, {
+  "sentence_tokens" : [ "Results", "and", "Discussions", "on", "Empirical", "Bias", "." ]
+}, {
+  "sentence_tokens" : [ "This", "subsection", "conducts", "a", "detailed", "numerical", "analysis", "on", "the", "empirical", "bias", "exits", "in", "the", "commonly", "used", "wavelet", "based", "estimator", "(", "the", "first", "estimator", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Based", "on", "previous", "analysis", ",", "the", "following", "three", "possible", "causes", "of", "empirical", "bias", "are", "concluded", "." ]
+}, {
+  "sentence_tokens" : [ "The", "initialization", "for", "aX", "(", "0", ",", "k", ")", "given", "in", "(", "27", ")", "introduces", "errors", "in", "dX", "(", "j", ",", "k", ")", ",", "and", "the", "initialization", "errors", "are", "significant", "on", "small", "octaves", "but", "decrease", "with", "increasing", "j.The", "inaccurate", "bias", "correction", "for", "Elog2S", "(", "j", ")", "!=", "log2ES", "(", "j", ")", "(", "under", "independent", "assumptions", ")", "caused", "by", "correlations", "of", "wavelet", "coefficients.The", "method", "of", "simulation", "for", "FBM", "is", "not", "enough", "exact", "that", "the", "empirical", "bias", "is", "caused.From", "results", "of", "Section", "4.1", ",", "I", "have", "the", "following", "information", "on", "empirical", "bias", "The", "increase", "of", "N", "and", "change", "of", "wavelet", "made", "no", "improvements", "to", "the", "empirical", "bias", "." ]
+}, {
+  "sentence_tokens" : [ "The", "chosen", "of", "biorthogonal", "wavelet", "makes", "the", "empirical", "bias", "worse.The", "increase", "of", "j1", "leads", "to", "the", "decrease", "of", "empirical", "bias.The", "empirical", "bias", "increases", "with", "the", "decrease", "of", "H.", "when", "choosing", "j1", "=3", "and", "N", "=3", ",", "the", "empirical", "bias", "of", "estimator", "H1", "^", "can", "be", "ignored", "for", "H", ">=", "0.4", "." ]
+}, {
+  "sentence_tokens" : [ "So", "the", "estimator", "H1", "^", "is", "suitable", "to", "detect", "the", "long-range", "dependence", "(", "can", "be", "described", "by", "H", ">", "0.5", ")", "." ]
+}, {
+  "sentence_tokens" : [ "The", "fact", "that", "increase", "of", "j1", "leads", "to", "decrease", "of", "empirical", "bias", "is", "consistent", "with", "the", "first", "cause", "." ]
+}, {
+  "sentence_tokens" : [ "As", "we", "know", ",", "the", "larger", "the", "value", "of", "H", "is", ",", "the", "smoother", "the", "sample", "path", "of", "FBM", "is", ",", "and", "the", "more", "exact", "the", "initialization", "given", "in", "(", "27", ")", "is", "." ]
+}, {
+  "sentence_tokens" : [ "It", "is", "consistent", "with", "the", "fact", "that", "the", "empirical", "bias", "increases", "with", "the", "decrease", "of", "H." ]
+}, {
+  "sentence_tokens" : [ "So", "I", "conclude", "that", "the", "initialization", "errors", "caused", "by", "(", "27", ")", "contribute", "to", "the", "empirical", "bias.The", "first", "information", "indicates", "the", "empirical", "bias", "is", "related", "to", "correlations", "of", "wavelet", "coefficients", "." ]
+}, {
+  "sentence_tokens" : [ "However", ",", "this", "effects", "can", "be", "fixed", "(", "maybe", "eliminated", ")", "via", "the", "selection", "of", "orthogonal", "compact", "supported", "wavelet.Next", ",", "after", "choosing", "the", "orthogonal", "compact", "supported", "wavelet", "(", "db3", ")", "and", "fixing", "j1", "=3", ",", "this", "study", "analyzes", "the", "latter", "two", "causes", "via", "comparing", "with", "the", "second", "estimator", "and", "comparison", "of", "simulation", "methods", "respectively", "." ]
+}, {
+  "sentence_tokens" : [ "Comparison", "of", "Estimators", "." ]
+}, {
+  "sentence_tokens" : [ "Since", "the", "unbiasedness", "of", "the", "second", "estimator", "H2", "^", "is", "get", "naturally", "without", "independence", "assumptions", "of", "wavelet", "coefficients", "." ]
+}, {
+  "sentence_tokens" : [ "This", "part", "compares", "H2", "^", "with", "H1", "^", "for", "studying", "its", "empirical", "bias", "." ]
+}, {
+  "sentence_tokens" : [ "The", "length", "of", "simulation", "data", "is", "n", "=", "218", "." ]
+}, {
+  "sentence_tokens" : [ "(", "j1", ",", "j2", ")", "are", "chosen", "(", "3,15", ")", "." ]
+}, {
+  "sentence_tokens" : [ "The", "wavelet", "coefficients", "are", "computed", "using", "the", "classical", "Daubechies", "wavelet", "with", "N", "=3", "vanishing", "moments", "." ]
+}, {
+  "sentence_tokens" : [ "The", "results", "are", "shown", "in", "Figure", "5", "and", "Table", "3.Table", "3", "shows", "the", "results", "for", "the", "estimator", "of", "ratio", "given", "in", "Equation", "(", "22", ")", "." ]
+}, {
+  "sentence_tokens" : [ "It", "indicates", "that", "the", "variance", "of", "H2", "^", "is", "about", "twice", "that", "of", "H1", "^", ",", "which", "roughly", "satisfy", "the", "theoretical", "results", "given", "in", "(", "22", ")", "." ]
+}, {
+  "sentence_tokens" : [ "From", "Figure", "5", ",", "it", "can", "be", "seen", "that", "when", "H", "<", "0.4", ",", "both", "H1", "^", "and", "H2", "^", "have", "the", "same", "obvious", "bias", "despite", "the", "theoretical", "unbiasedness", "of", "the", "two", "estimators", "under", "independence", "assumptions", "of", "wavelet", "coefficients", "." ]
+}, {
+  "sentence_tokens" : [ "Besides", ",", "the", "same", "as", "the", "results", "shown", "in", "Table", "3", ",", "the", "standard", "deviation", "(", "Std", ")", "of", "H2", "^", "is", "larger", "than", "that", "of", "H1", "^", "." ]
+}, {
+  "sentence_tokens" : [ "Because", "the", "empirical", "bias", "also", "exists", "in", "H2", "^", "whose", "unbiasedness", "is", "get", "naturally", ",", "and", "is", "the", "same", "as", "that", "of", "H2", "^", "." ]
+}, {
+  "sentence_tokens" : [ "I", "conclude", "that", "the", "empirical", "bias", "of", "H1", "^", "is", "not", "due", "to", "the", "inaccurate", "bias", "correction", "for", "Elog2S", "(", "j", ")", "!=", "log2ES", "(", "j", ")", "caused", "by", "correlations", "of", "wavelet", "coefficients.Besides", ",", "considering", "the", "variances", "of", "the", "two", "estimators", ",", "we", "should", "choose", "the", "first", "estimator", "H1", "^", "for", "the", "estimation", "of", "Hurst", "parameter", "." ]
+}, {
+  "sentence_tokens" : [ "Comparison", "of", "Simulation", "Methods", "." ]
+}, {
+  "sentence_tokens" : [ "For", "the", "third", "cause", ",", "this", "part", "applies", "H1", "^", "to", "the", "FBM", "that", "is", "exactly", "generated", "by", "the", "Cholesky", "method", "for", "comparison", "." ]
+}, {
+  "sentence_tokens" : [ "The", "results", "are", "shown", "in", "Figure", "6.From", "Figure", "6", ",", "it", "can", "be", "seen", "that", "estimations", "for", "the", "FBM", "respectively", "generated", "by", "the", "Cholesky", "method", "and", "the", "circulant", "embedding", "method", "has", "almost", "the", "same", "empirical", "bias", "." ]
+}, {
+  "sentence_tokens" : [ "I", "conclude", "that", "the", "method", "of", "simulation", "is", "not", "the", "cause", "of", "empirical", "bias", "." ]
+}, {
+  "sentence_tokens" : [ "4.3", "." ]
+}, {
+  "sentence_tokens" : [ "Analysis", "of", "the", "Initialization", "Method", "." ]
+}, {
+  "sentence_tokens" : [ "It", "has", "been", "shown", "above", "that", "the", "empirical", "bias", "of", "H1", "^", "is", "due", "to", "the", "initialization", "errors", "caused", "by", "(", "27", ")", "." ]
+}, {
+  "sentence_tokens" : [ "The", "initialization", "method", "given", "in", "(", "29", ")", "has", "proved", "effective", "for", "errors", "in", "the", "case", "of", "long-range", "dependent", "process", "[", "35", "]", "." ]
+}, {
+  "sentence_tokens" : [ "Although", "FBM", "is", "not", "a", "bandlimited", "stationary", "stochastic", "process", ",", "I", "tend", "to", "check", "whether", "this", "method", "is", "suitable", "for", "FBM.This", "subsection", "applies", "the", "estimator", "H1", "^", "with", "this", "initialization", "to", "FBM", "for", "analysis", ",", "and", "compares", "it", "with", "the", "initialization", "by", "itself", "(", "or", "by", "Equation", "(", "27", ")", ")", "." ]
+}, {
+  "sentence_tokens" : [ "The", "length", "of", "simulation", "data", "is", "n", "=", "218", "." ]
+}, {
+  "sentence_tokens" : [ "(", "j1", ",", "j2", ")", "are", "chosen", "(", "3,15", ")", "." ]
+}, {
+  "sentence_tokens" : [ "The", "wavelet", "coefficients", "are", "computed", "using", "the", "classical", "Daubechies", "wavelet", "with", "N", "=3", "vanishing", "moments", "." ]
+}, {
+  "sentence_tokens" : [ "The", "results", "are", "shown", "in", "Figure", "7.Figure", "7", "shows", "that", "both", "Biases", "and", "Stds", "for", "the", "two", "initializations", "are", "almost", "the", "same", "." ]
+}, {
+  "sentence_tokens" : [ "It", "indicates", "that", "the", "initialization", "method", "given", "in", "(", "29", ")", "is", "inefficient", "in", "the", "case", "of", "FBM", "." ]
+}, {
+  "sentence_tokens" : [ "Beside", ",", "it", "is", "known", "that", "the", "method", "Init2", "will", "lead", "to", "the", "decrease", "of", "the", "number", "of", "available", "wavelet", "coefficients", "nj", "for", "the", "boundary", "effects", ",", "which", "may", "result", "in", "the", "increase", "of", "the", "variance", "of", "estimator", "." ]
+}, {
+  "sentence_tokens" : [ "So", "I", "suggest", "choosing", "the", "initialization", "for", "aX", "(", "0", ",", "k", ")", "given", "in", "(", "27", ")", "in", "the", "future", "work", "." ]
+}, {
+  "sentence_tokens" : [ "4.4", "." ]
+}, {
+  "sentence_tokens" : [ "Analysis", "of", "Noise", "Effects", "." ]
+}, {
+  "sentence_tokens" : [ "At", "last", ",", "this", "paper", "adds", "this", "subsection", "for", "analysis", "of", "noise", "effects", "on", "the", "first", "estimator", ",", "which", "possibly", "happen", "in", "the", "real", "data", "." ]
+}, {
+  "sentence_tokens" : [ "Various", "independent", "and", "identically", "distributed", "noises", "are", "added", "to", "the", "generated", "FBM", "for", "this", "issue", "." ]
+}, {
+  "sentence_tokens" : [ "The", "signal-to-noise", "ratio", "(", "SNR", ")", "is", "defined", "as", "follows", "." ]
+}, {
+  "sentence_tokens" : [ "SNR", "=", "varX", "(", "1", ")", "var", "epsilon", ",", "where", "epsilon", "means", "noise", "." ]
+}, {
+  "sentence_tokens" : [ "Set", "SNR", "=", "2", "in", "this", "subsection.The", "results", "are", "shown", "in", "Figure", "8.", "From", "Figure", "8,", "I", "found", "that", "noises", "have", "some", "effects", "on", "the", "performance", ",", "and", "can", "lead", "to", "increase", "of", "bias", "." ]
+}, {
+  "sentence_tokens" : [ "The", "effects", "of", "Gaussian", "and", "uniform", "noises", "are", "almost", "the", "same", "." ]
+}, {
+  "sentence_tokens" : [ "The", "Cauchy", "noise", "can", "cause", "more", "increase", "of", "bias", "than", "the", "other", "two", "noises", "." ]
+}, {
+  "sentence_tokens" : [ "5", "." ]
+}, {
+  "sentence_tokens" : [ "Conclusions", "." ]
+}, {
+  "sentence_tokens" : [ "This", "paper", "focuses", "on", "the", "numerical", "simulation", "study", "of", "wavelet", "based", "estimators", "in", "the", "case", "of", "FBM", "concluding", "the", "selection", "of", "parameters", "and", "the", "analysis", "of", "empirical", "bias", "which", "have", "not", "been", "studied", "comprehensively", "in", "previous", "studies", "." ]
+}, {
+  "sentence_tokens" : [ "The", "effects", "of", "n", "on", "performance", "and", "relations", "of", "selected", "j1", "with", "n", "were", "also", "concluded", "via", "simulation", "studies", "." ]
+}, {
+  "sentence_tokens" : [ "It", "was", "shown", "that", "the", "data", "length", "had", "little", "effect", "on", "the", "bias", ",", "but", "its", "decrease", "caused", "the", "increase", "of", "standard", "deviation", "for", "all", "Hs", "." ]
+}, {
+  "sentence_tokens" : [ "The", "selected", "j1", "increased", "with", "the", "increase", "of", "data", "length", ",", "and", "the", "smaller", "the", "value", "of", "H", ",", "the", "faster", "the", "increase", "." ]
+}, {
+  "sentence_tokens" : [ "For", "the", "vanishing", "moments", "N", ",", "when", "N", ">=", "2", ",", "the", "increase", "of", "N", "made", "no", "improvements", "to", "the", "performance", "of", "estimator", "." ]
+}, {
+  "sentence_tokens" : [ "The", "change", "of", "orthogonal", "wavelets", "made", "no", "improvements", "to", "the", "empirical", "bias", "." ]
+}, {
+  "sentence_tokens" : [ "The", "chosen", "of", "biorthogonal", "wavelet", "made", "empirical", "bias", "worse.The", "analysis", "of", "empirical", "bias", "was", "conducted", "first", "via", "comparison", "of", "two", "available", "estimators", "and", "comparison", "of", "simulation", "methods", "." ]
+}, {
+  "sentence_tokens" : [ "The", "results", "showed", "that", "the", "empirical", "bias", "was", "due", "to", "the", "initialization", "errors", "caused", "by", "discrete", "sampling", ",", "and", "was", "not", "related", "to", "simulation", "methods", "." ]
+}, {
+  "sentence_tokens" : [ "When", "choosing", "an", "appropriate", "orthogonal", "compact", "supported", "wavelet", ",", "the", "empirical", "bias", "was", "almost", "not", "related", "to", "the", "inaccurate", "bias", "correction", "caused", "by", "correlations", "of", "wavelet", "coefficients", "." ]
+}, {
+  "sentence_tokens" : [ "I", "regret", "to", "note", "that", "the", "initialization", "method", "given", "in", "(", "29", ")", ",", "which", "has", "proved", "effective", "in", "the", "case", "of", "long-range", "dependent", "process", ",", "made", "no", "improvements", "to", "the", "empirical", "bias", "." ]
+}, {
+  "sentence_tokens" : [ "All", "these", "results", "will", "be", "a", "guide", "for", "my", "future", "studies", "." ]
+} ]

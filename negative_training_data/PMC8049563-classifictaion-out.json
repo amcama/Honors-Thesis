@@ -1,0 +1,475 @@
+[ {
+  "sentence_tokens" : [ "This", "leads", "to", "tau", "4", "^", "*", "=", "32", "(", "tau", "3", "^", "*", ")", "2", "tau", "2", "^", "*", "to", "get", "(", "8)", "Ti", "^", "*", "=", "Bi", "^", "*", "-", "32", "(", "tau", "3", "^", "*", ")", "2", "tau", "2", "^", "*", "." ],
+  "event_indices" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 ],
+  "type" : "Positive_activation",
+  "polarity" : true,
+  "controller_indices" : [ 0, 1 ],
+  "controlled_indices" : [ 3, 4, 5, 6, 7, 8, 9 ],
+  "trigger_indices" : [ 1, 2 ],
+  "rule_name" : "Positive_activation_syntax_1_verb, pronominalMatch",
+  "rule" : null
+}, {
+  "sentence_tokens" : [ "Estimating", "divergence", "times", "from", "DNA", "sequences", "." ]
+}, {
+  "sentence_tokens" : [ "Abstract", "." ]
+}, {
+  "sentence_tokens" : [ "The", "patterns", "of", "genetic", "variation", "within", "and", "among", "individuals", "and", "populations", "can", "be", "used", "to", "make", "inferences", "about", "the", "evolutionary", "forces", "that", "generated", "those", "patterns", "." ]
+}, {
+  "sentence_tokens" : [ "Numerous", "population", "genetic", "approaches", "have", "been", "developed", "in", "order", "to", "infer", "evolutionary", "history", "." ]
+}, {
+  "sentence_tokens" : [ "Here", ",", "we", "present", "the", "``", "Two-Two", "(", "TT", ")", "''", "and", "the", "``", "Two-Two-outgroup", "(", "TTo", ")", "''", "methods", ";", "two", "closely", "related", "approaches", "for", "estimating", "divergence", "time", "based", "in", "coalescent", "theory", "." ]
+}, {
+  "sentence_tokens" : [ "They", "rely", "on", "sequence", "data", "from", "two", "haploid", "genomes", "(", "or", "a", "single", "diploid", "individual", ")", "from", "each", "of", "two", "populations", "." ]
+}, {
+  "sentence_tokens" : [ "Under", "a", "simple", "population-divergence", "model", ",", "we", "derive", "the", "probabilities", "of", "the", "possible", "sample", "configurations", "." ]
+}, {
+  "sentence_tokens" : [ "These", "probabilities", "form", "a", "set", "of", "equations", "that", "can", "be", "solved", "to", "obtain", "estimates", "of", "the", "model", "parameters", ",", "including", "population", "split", "times", ",", "directly", "from", "the", "sequence", "data", "." ]
+}, {
+  "sentence_tokens" : [ "This", "transparent", "and", "computationally", "efficient", "approach", "to", "infer", "population", "divergence", "time", "makes", "it", "possible", "to", "estimate", "time", "scaled", "in", "generations", "(", "assuming", "a", "mutation", "rate", ")", ",", "and", "not", "as", "a", "compound", "parameter", "of", "genetic", "drift", "." ]
+}, {
+  "sentence_tokens" : [ "Using", "simulations", "under", "a", "range", "of", "demographic", "scenarios", ",", "we", "show", "that", "the", "method", "is", "relatively", "robust", "to", "migration", "and", "that", "the", "TTo", "method", "can", "alleviate", "biases", "that", "can", "appear", "from", "drastic", "ancestral", "population", "size", "changes", "." ]
+}, {
+  "sentence_tokens" : [ "We", "illustrate", "the", "utility", "of", "the", "approaches", "with", "some", "examples", ",", "including", "estimating", "split", "times", "for", "pairs", "of", "human", "populations", "as", "well", "as", "providing", "further", "evidence", "for", "the", "complex", "relationship", "among", "Neandertals", "and", "Denisovans", "and", "their", "ancestors", "." ]
+}, {
+  "sentence_tokens" : [ "Background", "." ]
+}, {
+  "sentence_tokens" : [ "Many", "population", "genetic", "inference", "approaches", "compare", "levels", "of", "genetic", "variation", "within", "and", "across", "genomes", ",", "individuals", "and/or", "populations", "in", "order", "to", "uncover", "their", "evolutionary", "history", "." ]
+}, {
+  "sentence_tokens" : [ "A", "multitude", "of", "demographic", "inference", "methods", "have", "been", "developed", "in", "order", "to", "capitalize", "on", "the", "wealth", "of", "information", "that", "comes", "with", "the", "availability", "of", "full", "genomes", "from", "multiple", "individuals", "(", "see", "Schraiber", "and", "Akey", "2015", ",", "for", "a", "review", ")", "." ]
+}, {
+  "sentence_tokens" : [ "The", "sheer", "scale", "and", "complexity", "of", "whole-genome", "data", "sets", "poses", "its", "own", "challenge", "for", "making", "inference", "of", "population", "demographic", "parameters", "." ]
+}, {
+  "sentence_tokens" : [ "A", "common", "approach", "for", "inference", "has", "been", "to", "compare", "the", "observed", "data", ",", "often", "summarized", "in", "some", "statistic", ",", "to", "simulated", "data", "that", "can", "be", "generated", "under", "a", "range", "of", "population-genetic", "models", "." ]
+}, {
+  "sentence_tokens" : [ "Building", "on", "this", "idea", "and", "combined", "with", "a", "rejection", "algorithm", ",", "Approximate", "Bayesian", "computation", "(", "ABC", ";", "Tavar", "e", "et", "al.", "1997", ";", "Beaumont", "et", "al.", "2002", ";", "Cornuet", "et", "al.", "2014", ";", "Pudlo", "et", "al.", "2016", ")", "has", "proven", "to", "be", "one", "useful", "tool", "for", "both", "model", "choice", "and", "parameter", "estimation", "." ]
+}, {
+  "sentence_tokens" : [ "However", ",", "the", "problem", "of", "choosing", "which", "models", "to", "test", "is", "not", "trivial", "for", "most", "inference", "approaches", ",", "including", "ABC", ",", "as", "the", "set", "of", "models", "to", "choose", "from", "is", "very", "large.In", "parallel", ",", "there", "have", "been", "recent", "developments", "in", "methods", "that", "use", "haplotype", "information", "." ]
+}, {
+  "sentence_tokens" : [ "A", "challenge", "for", "these", "approaches", "is", "how", "to", "model", "the", "dependence", "of", "genealogies", "along", "a", "sequence", "." ]
+}, {
+  "sentence_tokens" : [ "One", "solution", "has", "been", "to", "approximate", "the", "full", "ancestral", "recombination", "graph", ",", "a", "method", "used", "in", "the", "pairwise", "sequentially", "Markovian", "coalescent", "(", "PSMC", ")", "(", "Li", "and", "Durbin", "2011", ")", "and", "similar", "approaches", "(", "Schiffels", "and", "Durbin", "2014", ";", "Terhorst", "et", "al.", "2017", ";", "Kelleher", "et", "al.", "2019", ";", "Speidel", "et", "al.", "2019", ";", "Wang", "et", "al.", "2020", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Another", "strategy", "has", "been", "to", "rely", "on", "relatively", "short", "genetic", "fragments", "located", "sufficiently", "far", "away", "from", "each", "other", "to", "be", "able", "to", "assume", "linkage", "equilibrium", "between", "loci", ",", "combined", "with", "absolute", "linkage", "(", "absence", "of", "recombination", ")", "within", "each", "locus", "(", "e.g", "." ]
+}, {
+  "sentence_tokens" : [ "Gronau", "et", "al.", "2011", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Both", "these", "approaches", "typically", "lead", "to", "set-ups", "that", "cannot", "be", "solved", "analytically", "and", "often", "rely", "on", "computationally", "heavy", ",", "advanced", "statistical", "methods", "in", "order", "to", "estimate", "parameters", "(", "but", "see", "Gattepaille", "et", "al.", "2016", ";", "Lohse", "et", "al.", "2016", ")", "." ]
+}, {
+  "sentence_tokens" : [ "A", "related", "strategy", "is", "to", "assume", "independence", "among", "sites", ",", "using", "a", "composite", "likelihood", "framework", "(", "Gutenkunst", "et", "al.", "2009", ";", "Excoffier", "et", "al.", "2013", ")", "." ]
+}, {
+  "sentence_tokens" : [ "From", "this", "assumption", ",", "the", "observed", "variables", "(", "i.e.", "frequency", "spectra", ")", "do", "not", "depend", "on", "the", "full", "distribution", "of", "genealogical", "branch", "lengths", ",", "they", "are", "functions", "only", "of", "the", "expected", "branch", "lengths", "(", "Griffiths", "and", "Tavar", "e", "1998", ";", "Chen", "2012", ")", "." ]
+}, {
+  "sentence_tokens" : [ "This", "observation", "greatly", "simplifies", "the", "probability", "computations", "." ]
+}, {
+  "sentence_tokens" : [ "To", "the", "extent", "that", "closed-form", "solutions", "can", "be", "obtained", ",", "the", "assumption", "of", "independence", "between", "sites", "also", "leads", "to", "inference", "tools", "that", "are", "easier", "to", "integrate", "with", "other", "methods", ",", "and", "can", "provide", "useful", "insights", "into", "underlying", "processes", "(", "Beichman", "et", "al.", "2017", ";", "Terhorst", "et", "al.", "2017", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Conversely", ",", "a", "disadvantage", "of", "assuming", "independence", "between", "sites", "is", "that", "only", "information", "concerning", "the", "expected", "values", "can", "be", "obtained", ",", "rather", "than", "the", "full", "distributions", "of", "stochastic", "variables.For", "small", "samples", ",", "an", "alternative", "is", "to", "derive", "closed-form", "expressions", "for", "the", "probability", "of", "observing", "particular", "configurations", "of", "variants", "in", "simple", "divergence", "models", ",", "including", "the", "isolation-with-migration", "model", "(", "Wakeley", "and", "Hey", "1997", ";", "Wilkinson-Herbots", "2008", ";", "Chen", "2012", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Lohse", "et", "al.", "(", "2011", ",", "2016", ")", "showed", "that", "more", "generally", ",", "the", "probability", "of", "observing", "a", "particular", "variant", "configuration", "can", "be", "obtained", "from", "a", "generating", "function", "of", "genealogical", "branches", "." ]
+}, {
+  "sentence_tokens" : [ "Assuming", "independence", "among", "sequence-blocks", ",", "Lohse", "et", "al.", "(", "2011", ",", "2016", ")", "outlined", "an", "approach", "for", "computing", "the", "likelihood", "under", "various", "demographic", "models", "and", "sampling", "schemes.Regardless", "of", "whether", "independence", "between", "sites", "is", "assumed", "or", "not", ",", "all", "of", "these", "methods", "can", "be", "useful", "for", "inferring", "the", "time", "of", "divergence", "between", "two", "populations", "." ]
+}, {
+  "sentence_tokens" : [ "Examples", "of", "simple", "and", "direct", "methods", "used", "to", "estimate", "population", "divergence", "times", "include", ":", "Gutenkunst", "et", "al.", "(", "2009", ")", ",", "Wakeley", "(", "2009", ")", ",", "Green", "et", "al.", "(", "2010", ")", ",", "Schlebusch", "et", "al.", "(", "2012", ")", ",", "and", "Theunert", "and", "Slatkin", "(", "2018", ")", "." ]
+}, {
+  "sentence_tokens" : [ "These", "methods", "build", "on", "the", "principle", "of", "genetic", "drift", "accumulating", "as", "a", "function", "of", "effective", "population", "size", "and", "number", "of", "generations", "." ]
+}, {
+  "sentence_tokens" : [ "Following", "a", "population", "backwards", "in", "time", ",", "and", "using", "that", "the", "accumulated", "drift", "at", "generation", "t", "is", ":", "sum", "i", "=", "1t12N", "(", "i", ")", ",", "where", "N", "(", "i", ")", "is", "the", "(", "effective", ")", "number", "of", "individuals", "at", "generation", "i", ",", "the", "divergence", "time", "is", "then", "the", "number", "of", "generations", "required", "to", "generate", "the", "estimated", "drift", "." ]
+}, {
+  "sentence_tokens" : [ "Such", "estimates", "are", "typically", "not", "dependent", "on", "knowing", "the", "mutation", "rate", "but", "some", "assumptions", "regarding", "N", "(", "i", ")", "is", "required", ",", "either", "by", "assuming", "a", "fixed", "effective", "population", "size", "or", "depending", "on", "an", "estimated", "function", "of", "N", "(", "i", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Alternatively", ",", "one", "can", "base", "the", "divergence", "time", "estimate", "on", "an", "assumed", "mutation", "rate", "(", "e.g.Wakeley", "and", "Hey", "1997", ";", "Chen", "2012", ";", "Pickrell", "et", "al.", "2012", ")", "." ]
+}, {
+  "sentence_tokens" : [ "By", "assuming", "independence", "among", "sites", ",", "in", "a", "two", "population", "divergence", "model", "(", "without", "migration", ")", ",", "the", "probability", "of", "observed", "sample", "configurations", "(", "summarized", "as", "the", "full", "site", "frequency", "spectrum", "(", "SFS", ")", ",", "including", "invariable", "sites", ")", "can", "be", "derived", "analytically", "." ]
+}, {
+  "sentence_tokens" : [ "Using", "a", "likelihood", "framework", ",", "we", "can", "then", "estimate", "parameters", "of", "interest", "in", "the", "divergence", "model", "." ]
+}, {
+  "sentence_tokens" : [ "Here", ",", "we", "present", "two", "simple", "approaches", "based", "on", "picking", "two", "gene", "copies", "from", "each", "of", "two", "populations", ":", "the", "\"", "Two-Two", "\"", "(", "TT", ")", "method", ",", "which", "was", "briefly", "introduced", "in", "Schlebusch", "et", "al.", "(", "2017", ")", "and", "the", "\"", "Two-Two-outgroup", "\"", "(", "TTo", ")", "method", "." ]
+}, {
+  "sentence_tokens" : [ "These", "are", "sufficiently", "simple", "to", "allow", "for", "analytical", "solutions", "giving", "closed", "formulas", "for", "the", "estimates", "of", "the", "model", "parameters", "based", "on", "the", "counts", "of", "different", "sample", "configurations.Specifically", ",", "assuming", "a", "mutation", "rate", "and", "generation", "time", ",", "we", "can", "estimate", "population", "divergence", "time", "separately", "from", "genetic", "drift", "since", "the", "model", "is", "parametrized", "with", "both", "a", "drift", "parameter", "and", "a", "time", "parameter", "." ]
+}, {
+  "sentence_tokens" : [ "Observed", "data", "." ]
+}, {
+  "sentence_tokens" : [ "For", "the", "purpose", "of", "investigating", "the", "demographic", "relationship", "between", "two", "populations", "denoted", "population", "1", "and", "population", "2", ",", "assume", "that", "two", "gene", "copies", "have", "been", "sampled", "from", "each", "population", "." ]
+}, {
+  "sentence_tokens" : [ "For", "bi", "allelic", "sites", ",", "assume", "that", "the", "ancestral", "(", "denoted", "\"", "0", "\"", ")", "and", "the", "derived", "variant", "(", "denoted", "\"", "1", "\"", ")", "is", "known", "." ]
+}, {
+  "sentence_tokens" : [ "The", "number", "of", "derived", "alleles", "in", "a", "sample", "from", "population", "1", "combined", "with", "the", "number", "of", "derived", "alleles", "in", "as", "sample", "from", "population", "2", "is", "referred", "to", "as", "the", "joint", "frequency", "spectra", "(", "e.g.Chen", "2012", ")", "." ]
+}, {
+  "sentence_tokens" : [ "In", "our", "set-up", ",", "the", "sample", "size", "from", "both", "populations", "is", "two", "so", "that", "the", "number", "of", "derived", "is", "either", "0", ",", "1", ",", "or", "2", ",", "and", "there", "are", "9", "possible", "sample", "configurations", ",", "which", "are", "presented", "in", "Table", "1", "." ]
+}, {
+  "sentence_tokens" : [ "The", "observed", "number", "of", "sites", "with", "sample", "configuration", "Oi", ",", "j", "will", "be", "denoted", "by", "mi", ",", "j", "and", "the", "total", "number", "of", "investigated", "sites", "by", "m", "." ]
+}, {
+  "sentence_tokens" : [ "Theory", "." ]
+}, {
+  "sentence_tokens" : [ "We", "study", "a", "general", "population", "divergence", "model", "where", "the", "population-branch", "leading", "to", "population", "1", "and", "the", "population-branch", "leading", "to", "population", "2", "merge", "(", "backwards", "in", "time", ")", "to", "become", "the", "ancestral", "population", "." ]
+}, {
+  "sentence_tokens" : [ "The", "model", "makes", "no", "assumptions", "regarding", "population", "size", "and/or", "population", "structure", "changes", "in", "the", "daughter", "populations", "." ]
+}, {
+  "sentence_tokens" : [ "The", "model", "assumes", "no", "migration", "between", "the", "two", "daughter", "populations", "and", "that", "these", "merge", "into", "a", "panmictic", "ancestral", "population.We", "use", "the", "following", "notation", ",", "with", "time", "measured", "in", "number", "of", "generations", ":", "t", ",", "time", "to", "split", "for", "population", "1", ";", "t", ",", "time", "to", "split", "for", "population", "2", ";", "a", ",", "probability", "of", "two", "lineages", "in", "population", "1", "not", "coalescing", "before", "t", ";", "a", ",", "probability", "of", "two", "lineages", "in", "population", "2", "not", "coalescing", "before", "t", ",", "n", ",", "expected", "time", "to", "coalescent", "in", "population", "1", "given", "coalescingbefore", "t", ";", "and", "n", ",", "expected", "time", "to", "coalescent", "in", "population", "2", "given", "coalescing", "before", "t", "." ]
+}, {
+  "sentence_tokens" : [ "In", "addition", "to", "the", "drift", "parameters", "alpha", "and", "alpha", ",", "the", "parameters", "nu", "and", "nu", "are", "needed", "because", "two", "branches", "with", "the", "same", "time-length", "and", "the", "same", "drift", "can", "have", "different", "distributions", "of", "coalescence", "times", "." ]
+}, {
+  "sentence_tokens" : [ "To", "illustrate", ",", "a", "linearly", "growing", "population", "that", "starts", "with", "size", "N", "and", "ends", "with", "size", "2N", "will", "have", "the", "same", "drift", "as", "a", "shrinking", "population", "that", "starts", "with", "size", "2N", "and", "ends", "with", "size", "N", "but", "they", "will", "not", "have", "the", "same", "distribution", "of", "coalescent", "times", "within", "that", "interval", "." ]
+}, {
+  "sentence_tokens" : [ "These", "parameters", "also", "cover", "cases", "when", "the", "daughter", "populations", "are", "not", "panmictic", "." ]
+}, {
+  "sentence_tokens" : [ "A", "similar", "parametrization", "can", "be", "found", ",", "for", "instance", ",", "in", "Rogers", "and", "Bohlender", "(", "2015", ")", "." ]
+}, {
+  "sentence_tokens" : [ "The", "composite", "likelihood", "assumption", "of", "independence", "between", "sites", "implies", "that", "the", "probability", "of", "a", "mutation", "on", "a", "specific", "branch", "in", "a", "genealogy", "is", "the", "expected", "length", "of", "that", "branch", "(", "given", "a", "demographic", "model", ")", "multiplied", "by", "the", "mutation", "rate", "." ]
+}, {
+  "sentence_tokens" : [ "We", "denote", "the", "mutation", "rate", "per", "site", "and", "generation", "by", "mu", ",", "assume", "independence", "between", "sites", ",", "and", "an", "infinite", "sites", "model.We", "define", "the", "following", "events", "for", "the", "two", "sampled", "lineages", "for", "each", "population", ":", "H1", ":", "a", "coalescence", "in", "population", "1", "beforet1", ";", "P", "(", "H1", ")", "=", "1", "-", "alpha", "1H2", ":", "a", "coalescence", "in", "population", "2", "beforet2", ";", "P", "(", "H2", ")", "=", "1", "-", "alpha", "2.With", "2", "<=", "k", "<=", "4", "lineages", "surviving", "to", "enter", "the", "ancestral", "population", "(", "depending", "on", "whether", "coalescence", "events", "have", "occurred", "in", "the", "daughter", "populations", ")", ",", "we", "define", "A", "to", "be", "the", "number", "of", "derived", "variants", "in", "a", "sample", "of", "size", "k", "drawn", "at", "the", "split", "time", "in", "the", "ancestral", "population", "and", "write", "aki", "=P", "(", "Ak", "=", "i", ")", "." ]
+}, {
+  "sentence_tokens" : [ "To", "illustrate", "how", "the", "probabilities", "of", "the", "sample", "configurations", "are", "derived", ",", "we", "can", "take", "an", "example", "conditional", "on", "no", "coalescent", "event", "in", "population", "1", "and", "a", "coalescent", "event", "in", "population", "2", "(", "the", "event", "not", "H1", "^", "H2", ")", "." ]
+}, {
+  "sentence_tokens" : [ "There", "are", "then", "three", "lineages", "entering", "the", "ancestral", "population", "." ]
+}, {
+  "sentence_tokens" : [ "These", "lineages", "constitute", "a", "sample", "of", "size", "3", "from", "the", "ancestral", "population", "." ]
+}, {
+  "sentence_tokens" : [ "Sample", "configuration", "O1", ",0", "will", "then", "be", "observed", "with", "probability", "(", "2/3", ")", "a31", "(", "the", "ancestral", "variant", "has", "to", "be", "assigned", "to", "the", "lineage", "entering", "population", "2", ";", "an", "event", "with", "probability", "2/3", ")", "plus", "the", "probability", "that", "a", "mutation", "occurs", "on", "either", "lineage", "entering", "population", "1", "during", "the", "time", "interval", "t", "." ]
+}, {
+  "sentence_tokens" : [ "The", "probability", "that", "a", "mutation", "hits", "a", "branch", "of", "length", "t", "is", "mu", "t1", ",", "and", "the", "probability", "that", "this", "happens", "and", "that", "the", "derived", "variant", "already", "exists", "in", "the", "ancestral", "population", "can", "be", "ignored", "as", "it", "requires", "two", "mutational", "events", "at", "the", "same", "site", "." ]
+}, {
+  "sentence_tokens" : [ "Thus", ",", "conditional", "on", "not", "H1", "^", "H2", ",", "P", "(", "O1", ",0", ")", "=(", "2/3", ")", "a31", "+2", "mu", "t1", "." ]
+}, {
+  "sentence_tokens" : [ "The", "same", "reasoning", "can", "be", "applied", "to", "derive", "the", "conditional", "probabilities", "for", "all", "seven", "(", "polymorphic", ")", "sample", "configurations", "and", "these", "are", "shown", "in", "Table", "2.Since", "a", "subsample", "of", "size", "n", "randomly", "drawn", "from", "a", "larger", "sample", "of", "size", "n", "+", "k", "has", "the", "same", "distribution", "as", "a", "sample", "of", "size", "n", "drawn", "directly", "from", "the", "population", ",", "we", "can", "reduce", "the", "number", "of", "parameters", "by", "replacing", "all", "a", "with", "i", "<", "4", "using", "a", "-terms", "with", "i", "=", "4", "as", "follows", ":", "a21", "=P", "(", "A2", "=", "1", ")", "=", "sum", "i", "=", "04P", "(", "A2", "=", "1", "|", "A4", "=", "i", ")", "a4i", "=", "12a41", "+23", "a42", "+12", "a43a31", "=P", "(", "A3", "=", "1", ")", "=", "34a41", "+12", "a42a32", "=P", "(", "A3", "=", "2", ")", "=", "12a42", "+34", "a43.These", "equations", "together", "with", "Table", "2", "allow", "us", "to", "derive", "the", "probabilities", "for", "the", "different", "sample", "configurations", "." ]
+}, {
+  "sentence_tokens" : [ "For", "instance", ":", "P", "(", "O1", ",0", ")", "=(", "1", "-", "alpha", "1", ")", "(", "1", "-", "alpha", "2", ")", "2", "mu", "nu", "1+", "(", "1", "-", "alpha", "1", ")", "alpha", "22", "mu", "nu", "1+", "alpha", "1", "(", "1", "-", "alpha", "2", ")", "(", "23a31", "+2", "mu", "t1", ")", "+", "alpha", "1", "alpha", "2", "(", "12a41", "+2", "mu", "t1", ")", "=", "2", "(", "1", "-", "alpha", "1", ")", "mu", "nu", "1", "+2", "alpha", "1", "(", "mu", "t1", "+14", "b1", ")", "+13", "alpha", "1", "(", "1", "-", "alpha", "2", ")", "b2", ",", "where", "bi", "=", "a4i", "=P", "(", "A4", "=", "i", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Using", "the", "same", "strategy", "for", "the", "derivation", "of", "the", "other", "six", "probabilities", ",", "we", "obtain", "the", "probabilities", "for", "all", "seven", "sample", "configurations", "in", "Table", "2", "." ]
+}, {
+  "sentence_tokens" : [ "Writing", "pi", ",", "j", "=P", "(", "Oi", ",", "j", ")", "for", "brevity", ",", "these", "are", ":", "(", "1", ")", "p1", ",0", "=", "2", "(", "1", "-", "alpha", "1", ")", "mu", "nu", "1", "+2", "alpha", "1", "(", "mu", "t1", "+14", "b1", ")", "+13", "alpha", "1", "(", "1", "-", "alpha", "2", ")", "b2p0", ",1", "=", "2", "(", "1", "-", "alpha", "2", ")", "mu", "nu", "2", "+2", "alpha", "2", "(", "mu", "t2", "+14", "b1", ")", "+13", "(", "1", "-", "alpha", "1", ")", "alpha", "2b2p2", ",0", "=(", "1", "-", "alpha", "1", ")", "(", "mu", "t1", "+14", "b1", ")", "-", "(", "1", "-", "alpha", "1", ")", "mu", "nu", "1", "+16", "(", "2", "-", "alpha", "1", "-", "alpha", "2+", "alpha", "1", "alpha", "2", ")", "b2", "+14", "(", "1", "-", "alpha", "2", ")", "b3p0", ",2", "=(", "1", "-", "alpha", "2", ")", "(", "mu", "t2", "+14", "b1", ")", "-", "(", "1", "-", "alpha", "2", ")", "mu", "nu", "2", "+16", "(", "2", "-", "alpha", "1", "-", "alpha", "2+", "alpha", "1", "alpha", "2", ")", "b2", "+14", "(", "1", "-", "alpha", "1", ")", "b3p1", ",1", "=", "23", "alpha", "1", "alpha", "2b2p2", ",1", "=", "13", "(", "1", "-", "alpha", "1", ")", "alpha", "2b2", "+12", "alpha", "2b3p1", ",2", "=", "13", "alpha", "1", "(", "1", "-", "alpha", "2", ")", "b2", "+12", "alpha", "1b3Furthermore", ",", "if", "we", "assume", "a", "(", "indefinitely", ")", "panmictic", "ancestral", "population", "(", "Figure", "1A", ")", ",", "we", "define", ":", "T4i", "to", "be", "the", "number", "of", "generations", "a", "coalescent", "process", "that", "starts", "with", "four", "lineages", "at", "the", "(", "most", "recent", ")", "base", "of", "the", "ancestral", "population", "spends", "with", "i", "lineages", ",", "so", "that", "the", "time", "to", "the", "most", "recent", "common", "ancestor", "(", "T", ")", "is", "Tmrca", "=", "T44+", "T43+", "T42", "." ]
+}, {
+  "sentence_tokens" : [ "Then", "(", "see", "Appendix", ")", ":", "b1", "=P", "(", "A4", "=", "1", ")", "=", "23", "mu", "E", "[", "T42", "]", "+2", "mu", "E", "[", "T43", "]", "+4", "mu", "E", "[", "T44", "]", ",", "b2", "=P", "(", "A4", "=", "2", ")", "=", "23", "mu", "E", "[", "T42", "]", "+", "mu", "E", "[", "T43", "]", ",", "b3", "=P", "(", "A4", "=3", ")", "=", "23", "mu", "E", "[", "T42", "]", "." ]
+}, {
+  "sentence_tokens" : [ "Writing", "tau", "i", "=", "mu", "E", "[", "T4i", "]", ",", "and", "replacing", "the", "b", "with", "their", "respective", "expression", "in", "terms", "of", "tau", ",", "the", "probabilities", "for", "the", "different", "sample", "configurations", "can", "be", "expressed", "as", ":", "(", "2", ")", "p1", ",0", "=", "2", "(", "1", "-", "alpha", "1", ")", "mu", "nu", "1", "+2", "alpha", "1", "(", "mu", "t1+", "tau", "4", ")", "+19", "alpha", "1", "(", "4", "-", "alpha", "2", ")", "(", "2", "tau", "2", "+3", "tau", "3", ")", "-", "13", "alpha", "1", "tau", "2p0", ",1", "=", "2", "(", "1", "-", "alpha", "2", ")", "mu", "nu", "2", "+2", "alpha", "2", "(", "mu", "t2+", "tau", "4", ")", "+19", "(", "4", "-", "alpha", "1", ")", "alpha", "2", "(", "2", "tau", "2", "+3", "tau", "3", ")", "-", "13", "alpha", "2", "tau", "2p2", ",0", "=(", "1", "-", "alpha", "1", ")", "(", "mu", "t1+", "tau", "4", "-", "mu", "nu", "1", ")", "+118", "(", "5", "-", "4", "alpha", "1", "-", "alpha", "2+", "alpha", "1", "alpha", "2", ")", "(", "2", "tau", "2", "+3", "tau", "3", ")", "+16", "(", "alpha", "1", "-", "alpha", "2", ")", "tau", "2p0", ",2", "=(", "1", "-", "alpha", "2", ")", "(", "mu", "t2+", "tau", "4", "-", "mu", "nu", "2", ")", "+118", "(", "5", "-", "alpha", "1", "-", "4", "alpha", "2+", "alpha", "1", "alpha", "2", ")", "(", "2", "tau", "2", "+3", "tau", "3", ")", "+16", "(", "alpha", "2", "-", "alpha", "1", ")", "tau", "2p1", ",1", "=", "29", "alpha", "1", "alpha", "2", "(", "2", "tau", "2", "+3", "tau", "3", ")", "p2", ",1", "=", "19", "alpha", "2", "(", "1", "-", "alpha", "1", ")", "(", "2", "tau", "2", "+3", "tau", "3", ")", "+13", "alpha", "2", "tau", "2p1", ",2", "=", "19", "alpha", "1", "(", "1", "-", "alpha", "2", ")", "(", "2", "tau", "2", "+3", "tau", "3", ")", "+13", "alpha", "1", "tau", "2p0", ",0+", "p2", ",2", "=", "1", "-", "sum", "0", "<", "i+", "j", "<", "4pi", ",", "jThese", "eight", "equations", "point", "to", "two", "challenges", ":", "(", "1", ")", "it", "is", "not", "possible", "to", "completely", "separate", "tau", "from", "divergence", "times", "due", "to", "its", "co-occurrence", "with", "mu", "t1", "and", "mu", "t2", ",", "ii", ")", "disregarding", "tau", ",", "it", "is", "still", "an", "underdetermined", "set", "of", "equations", "with", "eight", "parameters", "but", "only", "seven", "equations", "and", "degrees", "of", "freedom", "(", "p0", ",0+", "p2", ",2", "=", "1", "-", "sum", "0", "<", "i+", "j", "<", "4pi", ",", "j", ")", "." ]
+}, {
+  "sentence_tokens" : [ "It", "can", "be", "tempting", "to", "reduce", "the", "number", "of", "parameters", "by", "setting", "t", "=", "t", ",", "but", "because", "[", "from", "equations", "(", "1", ")", "above", "]", "mu", "{", "t1", "-", "t2", "}", "=", "12", "(", "p1", ",0", "-", "p0", ",1", ")", "+", "(", "p2", ",0", "-", "p0", ",2", ")", "+12", "(", "p2", ",1", "-", "p1", ",2", ")", ",", "specifying", "t", "=", "t", "would", "add", "additional", "dependence", "between", "the", "equations", "." ]
+}, {
+  "sentence_tokens" : [ "Although", "this", "will", "decrease", "the", "number", "of", "parameters", ",", "it", "also", "decreases", "the", "number", "of", "independent", "equations", "." ]
+}, {
+  "sentence_tokens" : [ "Furthermore", ",", "allowing", "for", "separate", "divergence", "times", "along", "the", "two", "branches", "is", "a", "valuable", "asset", ";", "not", "only", "does", "it", "allow", "the", "framework", "to", "be", "applicable", "for", "temporally", "structured", "samples", ",", "but", "separate", "estimates", "for", "each", "branch", "can", "be", "useful", "more", "generally", "." ]
+}, {
+  "sentence_tokens" : [ "In", "fact", ",", "it", "turns", "out", "that", "the", "divergence", "time", "estimate", "based", "on", "the", "population", "branch", "represented", "by", "a", "modern-day", "individual", "alleviates", "the", "potential", "issue", "of", "residual", "ancient", "DNA", "specific", "properties", "(", "DNA", "degradation", ",", "sequencing", "errors", ",", "and", "mapping", "errors", ")", "that", "could", "impact", "divergence", "time", "estimates", "(", "see", "below", ")", "." ]
+}, {
+  "sentence_tokens" : [ "In", "contrast", ",", "for", "contemporaneous", "samples", ",", "divergence", "time", "estimates", "should", "be", "the", "same", "along", "the", "two", "branches", "(", "assuming", "neutrality", "and", "the", "same", "mutation", "rate", "and", "generation", "time", "along", "the", "two", "branches", ")", "." ]
+}, {
+  "sentence_tokens" : [ "The", "challenges", "noted", "above", "can", "be", "dealt", "with", "either", "by", "assuming", "a", "constant", "ancestral", "population", "size", "(", "the", "\"", "TT", "\"-method", ")", "or", "by", "using", "an", "outgroup", "to", "increase", "the", "number", "of", "equations", "(", "the", "\"", "TTo", "\"-method", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Assuming", "a", "constant", "ancestral", "population", "size", "(", "``", "TT", "''", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Assuming", "a", "constant", "ancestral", "population", "size", "N", "reduces", "the", "number", "of", "parameters", "in", "the", "model", "(", "Figure", "1B", ")", ",", "so", "that", "E", "[", "T4k", "]", "=", "2NA/(", "k", "(", "k", "-", "1", ")", ")", "and", "(", "with", "theta", "=", "mu", "NA", ")", "tau", "2", "=", "theta", ",", "tau", "3", "=", "theta/3", "and", "theta", "=", "tau", "4/6", "." ]
+}, {
+  "sentence_tokens" : [ "Then", "the", "probabilities", "in", "equations", "(", "2", ")", "simplify", "as", ":", "p1", ",0", "=", "2", "alpha", "1T1", "+2", "(", "1", "-", "alpha", "1", ")", "V1", "+13", "alpha", "1", "(", "4", "-", "alpha", "2", ")", "theta", "p0", ",1", "=", "2", "alpha", "2T2", "+2", "(", "1", "-", "alpha", "2", ")", "V2", "+13", "alpha", "2", "(", "4", "-", "alpha", "1", ")", "theta", "p2", ",0", "=(", "1", "-", "alpha", "1", ")", "(", "T1", "-", "V1", ")", "+16", "(", "6", "-", "4", "alpha", "1", "-", "2", "alpha", "2+", "alpha", "1", "alpha", "2", ")", "theta", "p0", ",2", "=(", "1", "-", "alpha", "2", ")", "(", "T2", "-", "V2", ")", "+16", "(", "6", "-", "2", "alpha", "1", "-", "4", "alpha", "2+", "alpha", "1", "alpha", "2", ")", "theta", "p1", ",1", "=", "23", "alpha", "1", "alpha", "2", "theta", "p2", ",1", "=", "13", "(", "2", "-", "alpha", "1", ")", "alpha", "2", "theta", "p1", ",2", "=", "13", "(", "2", "-", "alpha", "2", ")", "alpha", "1", "theta", "with", "T1", "=", "mu", "t1T2", "=", "mu", "t2V1", "=", "mu", "nu", "1V2", "=", "mu", "nu", "2.We", "set", "mi", ",", "jmtot", "=", "pi", ",", "j", "and", "solve", "for", "the", "parameters", "(", "and", "note", "that", "this", "guarantees", "that", "they", "are", "also", "maximum", "likelihood", "estimates", "(", "MLEs", ";", "Doob", "1934", ";", "Wald", "1949", ")", "to", "obtain", ":", "(", "3", ")", "alpha", "1", "^", "=", "2m1", ",12", "m2", ",1+", "m1", ",1", "alpha", "2", "^", "=", "2m1", ",12", "m1", ",2+", "m1", ",1", "theta", "^", "=", "1mtot38", "(", "2m2", ",1+", "m1", ",1", ")", "(", "2m1", ",2+", "m1", ",1", ")", "m1", ",1", "T1", "^", "=", "1mtot", "(", "m1", ",02+", "m2", ",0", "-", "(", "2m2", ",1+", "m1", ",1", ")", "(", "6m1", ",2+", "m1", ",1", ")", "8m1", ",1", ")", "T2", "^", "=", "1mtot", "(", "m0", ",12+", "m0", ",2", "-", "(", "6m2", ",1+", "m1", ",1", ")", "(", "2m1", ",2+", "m1", ",1", ")", "8m1", ",1", ")", "V1", "^", "=", "1mtot", "(", "m1", ",0+", "m1", ",22", "-", "m1", ",12", "m2", ",0", "-", "m1", ",22", "m2", ",1", "-", "m1", ",1", ")", "V2", "^", "=", "1mtot", "(", "m0", ",1+", "m2", ",12", "-", "m1", ",12", "m0", ",2", "-", "m2", ",12", "m1", ",2", "-", "m1", ",1", ")", "." ]
+}, {
+  "sentence_tokens" : [ "These", "equations", "are", "referred", "to", "as", "the", "'", "TT", "'-method", "in", "Schlebusch", "et", "al.", "(", "2017", ")", "where", ",", "in", "order", "to", "get", "the", "divergence", "time", "in", "years", "we", "used", "G", "=", "30", "and", "mu", "=", "1.25", "x", "10", "-", "8", "in", "(", "4", ")", "ti", "^", "=", "G", "mu", "Ti", "^", "where", "G", "is", "the", "length", "of", "a", "generation.Note", "also", "that", "if", "sequencing", "errors", "or", "DNA", "degradation", "mainly", "result", "in", "additional", "singletons", ",", "then", "errors", "in", "the", "sample", "from", "population", "1", "only", "affects", "m1", ",0", "and", "thus", "only", "T1", "^", "and", "V1", "^", "(", "m1", ",0", "occurs", "exclusively", "in", "the", "equations", "for", "estimating", "T", "and", "V", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Adding", "an", "outgroup", "(", "``", "TTo", "''", ")", "." ]
+}, {
+  "sentence_tokens" : [ "The", "equations", "(", "1", ")", "are", "useful", "for", "data", "(", "including", "SNP-genotype", "data", ")", "where", "the", "derived", "variant", "at", "each", "site", "has", "been", "ascertained", "in", "a", "population", "that", "branched", "off", "prior", "to", "the", "investigated", "population", "split", "." ]
+}, {
+  "sentence_tokens" : [ "Such", "data", "will", "ensure", "that", "derived", "variants", "in", "the", "studied", "sample", "will", "be", "older", "than", "the", "split", "so", "that", "there", "are", "no", "new", "mutations", "occurring", "in", "the", "branches", "." ]
+}, {
+  "sentence_tokens" : [ "In", "such", "a", "case", ",", "mu", "t1", ",", "mu", "t2", ",", "mu", "nu", "1", ",", "and", "mu", "nu", "2", "can", "all", "be", "set", "to", "0", "in", "the", "equations", "(", "1", ")", "above", ",", "resulting", "in", "a", "new", "set", "of", "equations", "(", "see", "Appendix", ")", "that", "can", "be", "solved", "for", "the", "alpha", "'", "s", "to", "get", ":", "alpha", "1", "^", "*", "=", "2m1", ",0", "*+", "m1", ",2", "*+", "m1", ",1", "*", "2", "(", "m1", ",0", "*", "+2", "m2", ",0", "*+", "m2", ",1", "*", ")", "+", "m1", ",1", "*", "alpha", "2", "^", "*", "=", "2m0", ",1", "*+", "m2", ",1", "*+", "m1", ",1", "*", "2", "(", "m0", ",1", "*", "+2", "m0", ",2", "*+", "m1", ",2", "*", ")", "+", "m1", ",1", "*", "." ]
+}, {
+  "sentence_tokens" : [ "where", "*", "indicates", "that", "these", "are", "the", "corresponding", "parameters", "and", "sample", "configuration", "counts", "conditional", "on", "ascertainment", "in", "an", "outgroup.With", "this", "ascertainment", "procedure", "it", "is", "important", "that", "the", "population", "used", "to", "ascertain", "the", "SNPs", "represents", "a", "true", "outgroup", "to", "our", "studied", "populations", "and", "that", "the", "populations", "satisfy", "an", "assumption", "of", "bifurcating", "topology", "(", "or", "\"", "tree-ness", "\"", ")", "." ]
+}, {
+  "sentence_tokens" : [ "To", "validate", "such", "an", "assumption", "we", "can", "set", "up", "tests", "of", "tree-ness", ",", "since", "if", "mu", "t1", "=", "mu", "t2", "=", "mu", "nu", "1", "=", "mu", "nu", "2", "=0", ",", "then", "the", "test", "statistics", ":", "(", "5", ")", "Y1", "=", "2m1", ",0", "*+", "m1", ",1", "*", "2m0", ",1", "*+", "m1", ",1", "*", "-", "2m1", ",2", "*+", "m1", ",1", "*", "2m2", ",1", "*+", "m1", ",1", "*", "(", "6", ")", "Y2", "=(", "m1", ",0", "*", "-", "m0", ",1", "*", ")", "+2", "(", "m2", ",0", "*", "-", "m0", ",2", "*", ")", "+", "(", "m2", ",1", "*", "-", "m1", ",2", "*", ")", "mtot", "*", "should", "be", "0", "(", "see", "Appendix", ",", "where", "it", "is", "also", "shown", "that", "Y", "is", "closely", "related", "to", "the", "D-statistic", ",", "Green", "et", "al.", "2010", ")", "." ]
+}, {
+  "sentence_tokens" : [ "The", "estimates", "alpha", "1", "^", "*", "and", "alpha", "2", "^", "*", "of", "alpha", "and", "alpha", "together", "with", "the", "equations", "in", "(", "2", ")", "can", "furthermore", "be", "used", "to", "obtain", "estimates", "of", ":", "(", "7", ")", "tau", "2", "^", "*", "=", "1mtot32", "(", "2m2", ",1+", "m1", ",1", "alpha", "2", "^", "*", "-", "m1", ",1", "alpha", "1", "^", "*", "alpha", "2", "^", "*", ")", "=", "1mtot32", "(", "2m1", ",2+", "m1", ",1", "alpha", "1", "^", "*", "-", "m1", ",1", "alpha", "1", "^", "*", "alpha", "2", "^", "*", ")", "tau", "3", "^", "*", "=", "1mtot", "(", "52m1", ",1", "alpha", "1", "^", "*", "alpha", "2", "^", "*", "-", "2m2", ",1+", "m1", ",1", "alpha", "2", "^", "*", ")", "=", "1mtot", "(", "52m1", ",1", "alpha", "1", "^", "*", "alpha", "2", "^", "*", "-", "2m1", ",2+", "m1", ",1", "alpha", "1", "^", "*", ")", "B1", "^", "*", "=", "1mtot", "(", "m1", ",02+", "m2", ",0+", "m2", ",12", "-", "5", "-", "alpha", "1", "^", "*", "alpha", "2", "^", "*", "alpha", "1", "^", "*", "alpha", "2", "^", "*", "m1", ",14", ")", "B2", "^", "*", "=", "1mtot", "(", "m0", ",12+", "m0", ",2+", "m1", ",22", "-", "5", "-", "alpha", "1", "^", "*", "alpha", "2", "^", "*", "alpha", "1", "^", "*", "alpha", "2", "^", "*", "m1", ",14", ")", "V1", "^", "*", "=", "1mtot", "(", "m1", ",02", "-", "alpha", "1", "^", "*", "m2", ",01", "-", "alpha", "1", "^", "*+", "m1", ",22", "(", "1", "-", "alpha", "1", "^", "*", ")", ")", "V2", "^", "*", "=", "1mtot", "(", "m0", ",12", "-", "alpha", "2", "^", "*", "m0", ",21", "-", "alpha", "2", "^", "*+", "m2", ",12", "(", "1", "-", "alpha", "2", "^", "*", ")", ")", "with", "B1", "=", "mu", "t1+", "tau", "4B2", "=", "mu", "t2+", "tau", "4.Note", "the", "two", "alternative", "estimates", "(", "one", "using", "m2", ",1", "and", "one", "using", "m1", ",2", ")", "for", "tau", "and", "tau", "and", "we", "take", "the", "average", "of", "these", "in", "estimates", "below.Based", "on", "the", "obtained", "estimates", "of", "tau", "and", "tau", ",", "we", "can", "attempt", "to", "approximate", "tau", "as", "a", "combination", "of", "tau", "and", "3", "tau", "3", "." ]
+}, {
+  "sentence_tokens" : [ "In", "a", "constant", "population", ",", "E", "[", "T43", "]/E", "[", "T42", "]", "=", "1/3", "and", "E", "[", "T44", "]/E", "[", "T43", "]", "=", "1/2", "or", "tau", "4", "tau", "3", "=", "E", "[", "T44", "]", "E", "[", "T43", "]", "=", "32E", "[", "T43", "]", "E", "[", "T42", "]", "=", "32", "tau", "3", "tau", "2.For", "this", "reason", "we", "propose", "to", "approximate", "tau", "4/tau", "3", "as", "(", "3/2", ")", "x", "where", "x", "is", "the", "estimated", "ratio", "of", "tau", "3/tau", "2", "." ]
+}, {
+  "sentence_tokens" : [ "We", "refer", "to", "this", "approach", "to", "estimate", "divergence", "time", "as", ":", "TTo", "\"", "(", "as", "in", "\"", "TT", "outgroup", "\"", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Picking", "two", "gene", "copies", "from", "population", "1", "and", "one", "gene", "copy", "from", "population", "2", "." ]
+}, {
+  "sentence_tokens" : [ "The", "method", "so", "far", "described", "can", "be", "seen", "as", "an", "expansion", "of", "the", "simpler", "case", "of", "picking", "two", "gene", "copies", "from", "one", "population", ",", "and", "only", "one", "gene", "copy", "from", "the", "other", "population", "." ]
+}, {
+  "sentence_tokens" : [ "This", "simpler", "set-up", "can", "be", "useful", ",", "for", "instance", ",", "when", "dealing", "with", "low-coverage", "genome", "data", "(", "e.g", "." ]
+}, {
+  "sentence_tokens" : [ "ancient", "DNA", "sequence", "data", ")", "." ]
+}, {
+  "sentence_tokens" : [ "With", "this", "simpler", "approach", ",", "divergence", "time", "estimation", "needs", "an", "outgroup", "(", "only", "assuming", "a", "constant", "population", "size", "is", "not", "sufficient", "to", "solve", "the", "equations", "in", "this", "case", ")", "." ]
+}, {
+  "sentence_tokens" : [ "This", "2", "plus", "1", "approach", "does", ",", "however", ",", "provide", "reliable", "estimates", "of", "branch", "specific", "genetic", "drift", "(", "under", "often", "reasonable", "demographic", "assumptions", ",", "see", "Appendix", "and", "Wakeley", "2009", ";", "Schlebusch", "et", "al.", "2012", ";", "Skoglund", "et", "al.", "2011", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Simulations", "and", "comparison", "to", "GPhoCS", "." ]
+}, {
+  "sentence_tokens" : [ "The", "model", "underlying", "the", "TT", "method", "assumes", "a", "panmictic", "ancestral", "population", "of", "constant", "size", "prior", "to", "the", "split", ",", "and", "no", "gene-flow", "between", "populations", "after", "the", "split", "." ]
+}, {
+  "sentence_tokens" : [ "Although", "common", "to", "many", "coalescent", "based", "approaches", ",", "such", "assumptions", "are", "rarely", "realistic", "for", "natural", "populations", ",", "and", "it", "is", "increasingly", "evident", "that", "mis", "specification", "of", "an", "overly", "simplistic", "model", "may", "lead", "to", "substantially", "biased", "parameter", "estimates", "(", "Gronau", "et", "al.", "2011", ";", "Mazet", "et", "al.", "2016", ";", "Orozco", "2016", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Here", ",", "we", "investigate", "the", "robustness", "of", "the", "TT-method", "parameter", "estimation", "against", "violation", "of", "the", "basic", "model", "assumptions", "[", "equations", "in", "(", "3", ")", "]", "." ]
+}, {
+  "sentence_tokens" : [ "We", "compare", "its", "performance", "under", "these", "conditions", "against", "an", "alternative", "method", "for", "parameter", "inference", ",", "GPhoCS", "(", "Gronau", "et", "al.", "2011", ")", "." ]
+}, {
+  "sentence_tokens" : [ "The", "analytical", "TT", "method", "and", "the", "Bayesian", "inference", "method", "GPhoCS", "are", "located", "to", "some", "degree", "at", "opposite", "ends", "of", "the", "statistical", "inference", "spectrum", ";", "instead", "of", "relying", "on", "independent", "single", "bi", "allelic", "sites", ",", "GPhoCS", "assumes", "complete", "linkage", "between", "individual", "sites", "at", "a", "genetic", "locus", "(", "typically", "10", "kb", ")", ",", "but", "independence", "between", "these", "loci", "." ]
+}, {
+  "sentence_tokens" : [ "It", "should", "be", "noted", "that", "GPhoCS", "is", "capable", "of", "estimating", "parameters", "under", "more", "complicated", "demographic", "models", "than", "the", "simple", "split", "model", "we", "study", "here", "." ]
+}, {
+  "sentence_tokens" : [ "In", "particular", ",", "GPhoCS", "allows", "users", "to", "specify", "migration", "rates", "and", "define", "migration", "bands", "between", "populations", ",", "such", "that", "it", "does", "not", "share", "the", "TT", "method", "assumption", "of", "no", "gene-flow", "occurring", "between", "populations", "after", "the", "population", "split", "." ]
+}, {
+  "sentence_tokens" : [ "For", "this", "reason", ",", "the", "effect", "of", "migration", "on", "parameter", "estimation", "was", "investigated", "only", "for", "the", "TT", "method.The", "software", "MS", "(", "Hudson", "2002", ")", "was", "used", "to", "generate", "polymorphic", "datasets", "using", "a", "standard", "coalescent", "algorithm", "under", "a", "variety", "of", "demographic", "scenarios", "." ]
+}, {
+  "sentence_tokens" : [ "The", "effects", "of", "changes", "in", "ancestral", "population", "size", "(", "Figure", "2A", ")", "and", "migration", "between", "branches", "since", "the", "split", "(", "Figure", "2B", ")", "were", "investigated", "." ]
+}, {
+  "sentence_tokens" : [ "In", "each", "model", ",", "the", "ancestral", "population", "size", ",", "N", ",", "was", "fixed", "at", "34,000", ",", "corresponding", "to", "17,000", "diploid", "individuals", "." ]
+}, {
+  "sentence_tokens" : [ "This", "value", "is", "in", "line", "with", "recent", "estimates", "of", "African", "ancestral", "effective", "population", "size", "~", "1", "million", "years", "ago", "(", "Li", "and", "Durbin", "2011", ";", "Schiffels", "and", "Durbin", "2014", ";", "Schlebusch", "et", "al.", "2017", ")", "." ]
+}, {
+  "sentence_tokens" : [ "MS", "scales", "time", "by", "4Ne", ",", "and", "simulations", "were", "constructed", "with", "true", "split", "times", "of", "10,000", "and", "1500", "generations", "." ]
+}, {
+  "sentence_tokens" : [ "Assuming", "a", "generation", "time", "of", "30", "years", "this", "equates", "to", "split", "times", "of", "300,000", "and", "45,000", "years", ",", "respectively", "." ]
+}, {
+  "sentence_tokens" : [ "These", "were", "chosen", "to", "keep", "simulations", "relevant", "to", "the", "findings", "of", "previous", "work", "where", "the", "deepest", "split", "among", "human", "groups", "was", "estimated", "at", ">", "260,000", "years", "(", "Schlebusch", "et", "al.", "2017", ")", ",", "together", "with", "more", "recent", "divergence", "events.MS", "generates", "samples", "assuming", "theta", "=", "4N1", "mu", ",", "where", "N", "is", "the", "diploid", "population", "size", "of", "population", "1", ",", "and", "mu", "is", "the", "neutral", "mutation", "rate", "." ]
+}, {
+  "sentence_tokens" : [ "Mutation", "rates", "vary", "across", "the", "human", "genome", "and", "estimates", "vary", "depending", "on", "the", "method", "used", "(", "Scally", "and", "Durbin", "2012", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Li", "and", "Durbin", "(", "2011", ")", "calculated", "a", "human", "neutral", "mutation", "rate", "of", "2.5", "x", "10", "-", "8", "per", "generation", "(", "assuming", "25", "years", "per", "generation", ")", ",", "whilst", "recent", "consensus", "suggests", "a", "lower", "rate", "of", "1.25", "x", "10", "-", "8", "per", "base", "pair", "per", "generation", "is", "more", "accurate", "(", "Moorjani", "et", "al.", "2016", ")", "." ]
+}, {
+  "sentence_tokens" : [ "The", "latter", "is", "the", "mutation", "rate", "used", "across", "all", "simulations", "." ]
+}, {
+  "sentence_tokens" : [ "Results", "were", "filtered", "such", "that", "only", "those", "simulations", "resulting", "in", "all", "sample", "configurations", "represented", "by", ">", "10,000", "sites", "were", "used", "in", "subsequent", "analyses.The", "Bayesian", "inference", "method", "GPhoCS", "is", "based", "on", "likelihood", "estimation", "and", "in", "order", "to", "allow", "adequate", "convergence", "of", "parameter", "estimates", ",", "a", "burn-in", "period", "of", "100,000", "iterations", "was", "used", "when", "applied", "to", "MS", "simulated", "data", "." ]
+}, {
+  "sentence_tokens" : [ "The", "effect", "of", "varying", "ancestral", "population", "size", "." ]
+}, {
+  "sentence_tokens" : [ "In", "simulating", "the", "demographic", "scenario", "shown", "in", "Figure", "2A", ",", "populations", "1", "and", "2", "are", "constant", "backwards", "in", "time", ",", "but", "not", "(", "necessarily", ")", "equal", "in", "size", ";", "each", "population", "size", "is", "independently", "drawn", "from", "a", "uniform", "distribution", "between", "170", "and", "1,700,000", "diploid", "individuals", "." ]
+}, {
+  "sentence_tokens" : [ "A", "total", "of", "1000", "of", "such", "demographies", "were", "generated", "." ]
+}, {
+  "sentence_tokens" : [ "Populations", "1", "and", "2", "merge", "at", "10,000", "generations", "to", "form", "a", "single", "ancestral", "population", "of", "initial", "size", "NA", "=", "17,000", "individuals", "for", "phi", "generations", "." ]
+}, {
+  "sentence_tokens" : [ "The", "ancestral", "population", "then", "changes", "to", "lambda", "NA", ",", "[", "drawn", "uniformly", "from", "(", "1.7", "x", "10", ",", "1.7", "x", "10", ")", "]", "for", "tau", "generations", ",", "before", "returning", "to", "N", "." ]
+}, {
+  "sentence_tokens" : [ "We", "investigate", "the", "impact", "of", "that", "change", "in", "ancestral", "population", "size", "(", "lambda", "NA", "for", "tau", "generations", ")", "on", "TT", "estimates", "of", "population", "divergence", "time", "(", "t", "^", ")", "and", "ancestral", "population", "size", ",", "NA", "^", ",", "for", "tau", "=0", ",100,500,1,000", "generations", "and", "phi", "=0", ",", "100", ",", "500", ",", "2000", "generations", "(", "Supplementary", "Figure", "S1", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Supplementary", "Figure", "S1", "shows", "that", "increasing", "ancestral", "population", "size", "for", "tau", "generations", "can", "have", "the", "effect", "of", "inflating", "divergence", "time", "estimates", "for", "the", "TT", "method", "." ]
+}, {
+  "sentence_tokens" : [ "This", "behavior", "is", "expected", ";", "if", "we", "imagine", "an", "expansion", "of", "the", "ancestral", "population", "to", "infinite", "size", "for", "tau", "generations", ",", "no", "coalescence", "events", "would", "occur", "during", "that", "time", ",", "and", "divergence", "time", "estimates", "would", "be", "upwardly", "biased", "by", "tau", "generations", "." ]
+}, {
+  "sentence_tokens" : [ "This", "bias", "however", "seems", "to", "be", "relatively", "minor", "compared", "with", "that", "arising", "from", "severe", "bottlenecks", "." ]
+}, {
+  "sentence_tokens" : [ "For", "instance", ",", "when", "the", "true", "t", "=", "10,000", ",", "a", "bottleneck", "in", "the", "ancestral", "population", "of", "1500", "individuals", "lasting", "for", "100", "generations", "results", "in", "t", "^", "=~", "9000", "generations", "." ]
+}, {
+  "sentence_tokens" : [ "However", ",", "the", "same", "severity", "of", "bottleneck", "lasting", "for", "500", "generations", "will", "result", "in", "a", "greater", "underestimate", "of", "t", "^", "=~", "5000", "generations", "." ]
+}, {
+  "sentence_tokens" : [ "Similarly", ",", "N", "is", "underestimated", "when", "severe", "bottlenecks", "occur", ",", "though", "these", "estimates", "seem", "to", "be", "more", "robust", "than", "estimates", "of", "divergence", "time", "(", "Supplementary", "Figure", "S2", ")", "." ]
+}, {
+  "sentence_tokens" : [ "When", "studying", "more", "recent", "splits", ",", "(", "1500", "generations", ")", ",", "we", "observe", "that", "severe", "bottlenecks", "have", "the", "potential", "to", "result", "in", "nonsensical", "negative", "split", "time", "estimates", "(", "Supplementary", "Figure", "S3", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Figure", "3", "shows", "a", "comparison", "between", "TT", "method", "and", "GPhoCS", "estimates", "of", "population", "divergence", "time", "(", "t", ")", "and", "ancestral", "population", "size", "(", "N", ")", "in", "cases", "where", "the", "duration", "of", "the", "bottleneck", "(", "tau", ")", "is", "fixed", "at", "1000", "generations", "and", "true", "split", "time", "is", "10,000", "generations", "." ]
+}, {
+  "sentence_tokens" : [ "Results", "suggest", "that", "both", "methods", "react", "similarly", "to", "violations", "of", "the", "assumption", "of", "a", "change", "in", "ancestral", "population", "size", ";", "each", "being", "particularly", "susceptible", "to", "bias", "when", "severe", "bottlenecks", "have", "occurred", "." ]
+}, {
+  "sentence_tokens" : [ "GPhoCS", "performs", "somewhat", "better", "than", "the", "TT", "method", ",", "with", "severe", "bottlenecks", "resulting", "in", "less", "of", "an", "underestimate", "of", "population", "divergence", "time.An", "interesting", "effect", "appears", "when", "a", "bottleneck", "of", "sufficient", "severity", "occurs", ",", "whereby", "both", "methods", "'", "t", "^", "estimates", "begin", "to", "rebound", "towards", "the", "true", "split", "time", "of", "10,000", "generations", "." ]
+}, {
+  "sentence_tokens" : [ "Again", "this", "behavior", "is", "expected", "as", "all", "lineages", "will", "coalesce", "in", "a", "bottleneck", "of", "sufficient", "severity", "prior", "to", "a", "population", "divergence", "event", "." ]
+}, {
+  "sentence_tokens" : [ "In", "this", "case", "the", "bottleneck", "itself", "will", "act", "as", "the", "constant", "ancestral", "population", "size", ",", "and", "as", "long", "as", "it", "occurs", "in", "close", "proximity", "to", "the", "split", ",", "divergence", "time", "estimates", "are", "not", "affected", "much", "." ]
+}, {
+  "sentence_tokens" : [ "For", "the", "same", "reason", ",", "when", "a", "severe", "bottleneck", "occurs", "a", "long", "time", "prior", "to", "the", "split", ",", "both", "methods", "produce", "a", "(", "slight", ")", "overestimate", "of", "the", "true", "divergence", "time", "(", "Figure", "3E", ")", "." ]
+}, {
+  "sentence_tokens" : [ "The", "effect", "of", "migration", "between", "branches", "." ]
+}, {
+  "sentence_tokens" : [ "In", "simulations", "based", "on", "the", "demographic", "scenario", "shown", "in", "Figure", "2B", ",", "a", "pulse", "of", "admixture", "occurs", "delta", "generations", "ago", ",", "with", "proportion", "0", "<=", "gamma", "<=", "1", "of", "one", "daughter", "population", "made", "up", "of", "migrants", "from", "the", "other", "daughter", "population", "." ]
+}, {
+  "sentence_tokens" : [ "Thus", "we", "examine", "the", "effect", "of", "increasing", "proportion", "of", "migration", "occurring", "at", "various", "times", "between", "present", "and", "the", "split", "time", "." ]
+}, {
+  "sentence_tokens" : [ "All", "populations", "are", "kept", "fixed", "and", "constant", "at", "17,000", "diploid", "individuals", "(", "N1", "=", "N2", "=", "NA", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Figures", "4", "and", "5", "show", "the", "effect", "of", "increasing", "proportion", "of", "migrants", "on", "TT", "divergence", "time", "estimates", "when", "true", "split", "time", "is", "10,000", "generations", "." ]
+}, {
+  "sentence_tokens" : [ "Divergence", "times", "are", "reliably", "estimated", "when", "the", "proportion", "of", "migrants", "is", "below", "0.1", ",", "and", "as", "expected", ",", "even", "at", "higher", "proportions", "the", "bias", "decreases", "the", "nearer", "the", "admixture", "event", "is", "to", "split", "time", "." ]
+}, {
+  "sentence_tokens" : [ "Note", "that", "under", "this", "set-up", ",", "the", "TT", "method", "returns", "t", "^", "=~", "3000", "generations", "even", "when", "the", "proportion", "of", "migrants", "(", "gamma", ")", "is", "1", "and", "admixture", "time", "(", "delta", ")", "is", "0", "." ]
+}, {
+  "sentence_tokens" : [ "We", "would", "expect", "in", "this", "case", "a", "t", "^", "=0", ",", "but", "it", "seems", "that", "this", "scenario", "(", "where", "all", "populations", "are", "equal", "in", "size", ")", "is", "equivalent", "to", "a", "violation", "of", "the", "assumption", "of", "a", "constant", "ancestral", "population", "." ]
+}, {
+  "sentence_tokens" : [ "As", "described", "previously", ",", "this", "has", "the", "effect", "of", "biasing", "t", "^", "upwards", ",", "and", "shows", "that", "in", "cases", "of", "high", "proportion", "of", "recent", "admixture", ",", "differences", "between", "the", "size", "of", "the", "daughter", "populations", "and", "the", "ancestral", "population", "also", "has", "the", "potential", "to", "result", "in", "biased", "t", "^", "." ]
+}, {
+  "sentence_tokens" : [ "Estimates", "of", "ancestral", "population", "size", "on", "the", "other", "hand", ",", "are", "only", "very", "slightly", "affected", "(", "Supplementary", "Figures", "S4", "and", "S5", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Very", "similar", "results", "are", "observed", "when", "a", "more", "recent", "true", "split", "time", "of", "1500", "generations", "is", "studied", "(", "Supplementary", "Figures", "S6", "and", "S7", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Although", "simulations", "have", "shown", "the", "TT", "method", "to", "be", "relatively", "robust", "to", "violations", "of", "its", "assumptions", "in", "general", ",", "it", "is", "evident", "that", "extensive", ",", "recent", "gene", "flow", "between", "daughter", "populations", "or", "strong", ",", "prolonged", "bottlenecks", "in", "the", "ancestral", "population", "has", "the", "potential", "to", "introduce", "bias", "." ]
+}, {
+  "sentence_tokens" : [ "If", "however", "we", "obtain", "external", "estimates", "of", "alpha", "and", "alpha", "through", "the", "outgroup", "ascertainment", "procedure", "outlined", "above", "(", "TTo", ")", ",", "we", "can", "obtain", "estimates", "of", "divergence", "time", "that", "are", "much", "less", "dependent", "on", "assumptions", "concerning", "the", "ancestral", "population", "." ]
+}, {
+  "sentence_tokens" : [ "Figure", "6", "shows", "a", "comparison", "of", "TT", "and", "TTo", "method", "results", "in", "scenarios", "of", "increasing", "duration", "of", "ancestral", "population", "size", "change", "." ]
+}, {
+  "sentence_tokens" : [ "The", "true", "values", "of", "alpha", "and", "alpha", "have", "been", "used", "in", "equations", "in", "(", "7", ")", "to", "obtain", "estimates", "of", "B", ",", "B", ",", "tau", "and", "tau", "that", "in", "turn", "have", "been", "used", "to", "approximate", "tau", "and", "divergence", "times", "following", "equation", "(", "8)", "." ]
+}, {
+  "sentence_tokens" : [ "These", "results", "show", "that", "by", "using", "external", "estimates", "of", "drift", ",", "there", "is", "the", "potential", "to", "considerably", "reduce", "bias", "in", "divergence", "time", "estimates", "when", "severe", "bottlenecks", "have", "occurred", "in", "the", "ancestral", "population", "." ]
+}, {
+  "sentence_tokens" : [ "Furthermore", ",", "Figure", "6", "also", "compares", "estimates", "of", "N", ",", "from", "that", "of", "the", "TT", "method", "to", "one", "based", "on", "the", "TTo", "estimate", "of", "tau", "(", "6", "tau", "4", "^/mu", ")", ",", "which", "is", "found", "to", "be", "much", "more", "sensitive", "to", "ancestral", "bottlenecks", "." ]
+}, {
+  "sentence_tokens" : [ "Application", "to", "data", "." ]
+}, {
+  "sentence_tokens" : [ "The", "TT", "method", "requires", "good", "quality", "sequence", "data", ",", "typically", "high-coverage", "genome", "sequence", "data", "since", "diploid", "genotype", "calls", "are", "utilized", ",", "including", "invariable", "sites", "and", "singletons", "(", "in", "the", "sample", "of", "four", "chromosomes", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Alternatively", ",", "instead", "of", "one", "high-coverage", "diploid", "genome", ",", "several", "low-coverage", "genomes", "from", "the", "same", "population", "data", "can", "be", "combined", "to", "produce", "(", "sufficiently", "many", ")", "sites", "with", "two", "gene", "copies", "." ]
+}, {
+  "sentence_tokens" : [ "It", "is", "also", "important", "to", "be", "careful", "when", "filtering", "the", "genome", "for", "reliable", "regions", "as", "this", "can", "cause", "an", "artificial", "bias", "of", "the", "mutation", "rate.The", "formulas", "are", "sufficiently", "simple", "to", "allow", "for", "asymptotic", "confidence", "intervals", "based", "on", "MLE", "theory", ",", "and", "one", "can", "imagine", "thinning", "the", "genome", "data", "to", "make", "sites", "independent", "of", "each", "other", "(", "to", "overcome", "potential", "dependence", "via", "linkage", ")", "." ]
+}, {
+  "sentence_tokens" : [ "However", ",", "we", "chose", "a", "more", "conservative", "approach", "of", "estimating", "confidence", ";", "the", "weighted", "block", "jackknife", "procedure", "(", "Busing", "et", "al.", "1999", ")", ",", "which", "should", "be", "more", "robust", "to", "large-scale", "\"", "outlier", "\"", "regions", "driving", "the", "signal", "." ]
+}, {
+  "sentence_tokens" : [ "We", "conducted", "pairwise", "comparisons", "among", "the", "11", "HGDP", "individuals", "and", "the", "Denisovan", "genome", "and", "the", "Altai", "Neandertal", "genome", "from", "(", "Meyer", "et", "al.", "2012", ")", "and", "(", "Pr", "u", "fer", "et", "al.", "2014", ")", "and", "estimate", "population", "divergence", "times", "(", "see", "Appendix", "for", "a", "description", "of", "data", "cleaning", "and", "calling", "of", "ancestral", "states", ")", "." ]
+}, {
+  "sentence_tokens" : [ "The", "11", "individuals", "from", "the", "Human", "Genome", "Diversity", "Project", "(", "HGDP", ")", "include", "5", "individuals", "from", "Africa", ":", "one", "Khoe-San", "(", "\"", "San", "\"", ")", ",", "one", "rainforest", "hunter-gatherer", "(", "\"", "Mbuti", "\"", ")", ",", "two", "West-African", "(", "\"", "Mandenka", "\"", "and", "\"", "Yoruba", "\"", ")", "and", "one", "East-African", "(", "\"", "Dinka", "\"", ")", "." ]
+}, {
+  "sentence_tokens" : [ "The", "other", "individuals", "were", "two", "Europeans", "(", "\"", "French", "\"", "and", "\"", "Sardinian", "\"", ")", ",", "two", "East-Asians", "(", "\"", "Han", "\"", "and", "\"", "Dai", "\"", ")", ",", "one", "individual", "from", "Oceania", "(", "\"", "Papuan", "\"", ")", "and", "one", "individual", "representing", "a", "South-American", "indigenous", "population", "(", "\"", "Karitiana", "\"", ")", "." ]
+}, {
+  "sentence_tokens" : [ "In", "addition", ",", "we", "used", "the", "high-coverage", "ancient", "southern", "African", "hunter-gatherer", "genome", "(", "\"", "Balito", "Bay", "A", "\"", ";", "Schlebusch", "et", "al.", "2017", ")", "as", "an", "outgroup", "for", "some", "divergence", "estimates", "(", "see", "below", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Split", "model", "parameter", "estimates", "." ]
+}, {
+  "sentence_tokens" : [ "We", "refer", "to", "split", "time", "estimates", "in", "years", "in", "the", "TT-method", "as", "ti", "^", "and", "under", "the", "TTo", "method", "as", "ti", "^", "*", "." ]
+}, {
+  "sentence_tokens" : [ "These", "are", "obtained", "by", "setting", "G", "=", "30", "and", "mu", "=", "1.25", "x", "10", "-", "8", "in", "equation", "(", "4", ")", "and", "applying", "this", "to", "the", "estimates", "of", "T", "and", "T", "in", "equations", "(", "3", ")", "and", "(", "8)", ",", "respectively.Comparisons", "are", "grouped", "according", "to", "the", "population", "split", "they", "represent", "." ]
+}, {
+  "sentence_tokens" : [ "For", "instance", ",", "the", "comparison", "between", "French", "and", "San", "is", "referred", "to", "as", "the", "\"", "Khoe-San", "split", "." ]
+}, {
+  "sentence_tokens" : [ "\"", "Divergence", "estimates", "according", "to", "the", "TT-method", "." ]
+}, {
+  "sentence_tokens" : [ "Assuming", "a", "constant", "ancestral", "population", "size", ",", "N", ",", "it", "is", "possible", "to", "estimate", "N", ",", "alpha", ",", "alpha", ",", "nu", ",", "nu", "as", "well", "as", "t", ",", "t", "without", "relying", "on", "ascertainment", "procedures", "." ]
+}, {
+  "sentence_tokens" : [ "Estimates", "of", "alpha", ",", "N", "and", "nu", "are", "shown", "in", "Supplementary", "Figures", "S8", "-", "10", ",", "respectively", "." ]
+}, {
+  "sentence_tokens" : [ "From", "Supplementary", "Figure", "S10", "it", "is", "apparent", "that", "nu", "is", "often", "poorly", "estimated", "and", "the", "uncertainty", "of", "the", "estimate", "appears", "to", "be", "closely", "linked", "to", "the", "amount", "of", "branch", "specific", "genetic", "drift", "(", "Supplementary", "Figure", "S11", ")", "." ]
+}, {
+  "sentence_tokens" : [ "A", "closer", "look", "at", "any", "of", "the", "formulas", "for", "pi", ",", "j", "reveals", "that", "the", "impact", "of", "nu", "on", "the", "probabilities", "disappears", "as", "alpha", "approaches", "1", "(", "no", "drift", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Estimates", "of", "the", "ancestral", "population", "size", "remain", "remarkably", "constant", "at", "around", "NA", "=", "17,000", ",", "regardless", "of", "choice", "of", "individuals", "(", "Supplementary", "Figure", "S8", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Values", "of", "t", "^", "are", "shown", "in", "Figure", "7", "." ]
+}, {
+  "sentence_tokens" : [ "To", "summarize", ",", "estimates", "of", "the", "different", "split", "times", "are", "(", "in", "descending", "order", ")", ":", "the", "split", "between", "Neanderthal", "and", "Denisovans", "962", "-", "979", "kya", ";", "the", "split", "between", "archaic", "humans", "and", "modern", "humans", "510", "-", "707", "kya", ";", "the", "deepest", "split", "among", "modern", "human", "population", "(", "between", "Khoe-San", "and", "other", "human", "populations", ")", "233", "-", "266", "kya", "(", "see", "Schlebusch", "et", "al.", "2017", ")", "for", "the", "consequence", "of", "using", "the", "ancient", "southern", "African", "Balito", "Bay", "A", "genome", ")", ";", "the", "split", "between", "Mbuti", "and", "other", "modern", "humans", "(", "excluding", "Khoe-San", "populations", ")", "186", "-", "220", "kyathe", "split", "between", "West-", "and", "East-Africans", "96", "-", "117", "kya", ";", "the", "split", "between", "East-Africans", "and", "non", "African", "66", "-", "82", "kya", ";", "andsplits", "between", "non", "African", "<", "0", "ya.Here", ",", "the", "range", "for", "the", "split", "between", "archaic", "and", "modern", "humans", "takes", "into", "account", "the", "fact", "that", "the", "archaic", "genomes", "are", "older", "than", "40", "ky", "." ]
+}, {
+  "sentence_tokens" : [ "There", "are", "two", "obvious", "odd", "sets", "of", "estimates", "among", "these", ":", "the", "negative", "times", "for", "non", "Africans", ",", "and", "the", "deep", "time", "between", "Denisovans", "and", "Neandertals", "contrasted", "to", "the", "younger", "time", "between", "Denisovans", "and", "Neandertals", "and", "modern", "humans", "(", "note", "that", "we", "assume", "a", "constant", "ancestral", "population", "size", "here", ")", "." ]
+}, {
+  "sentence_tokens" : [ "We", "discuss", "each", "of", "these", "split", "time", "estimates", "below", ",", "but", "first", "we", "revisit", "the", "utility", "of", "ascertaining", "variants", "in", "an", "outgroup", "." ]
+}, {
+  "sentence_tokens" : [ "Divergence", "estimates", "according", "to", "the", "TTo", "method", "." ]
+}, {
+  "sentence_tokens" : [ "By", "comparing", "two", "individuals", "using", "only", "those", "sites", "where", "the", "derived", "variant", "was", "present", "in", "an", "outgroup", ",", "it", "is", "possible", "to", ":", "(", "1", ")", "test", "whether", "the", "outgroup", "represents", "a", "true", "outgroup", ",", "and", "(", "2", ")", "obtain", "estimates", "of", "alpha", "and", "alpha", "that", "do", "not", "rely", "on", "assumptions", "concerning", "the", "ancestral", "population", "." ]
+}, {
+  "sentence_tokens" : [ "We", "utilized", "the", "Mbuti", ",", "Balito", "Bay", "A", ",", "or", "Neandertal", "and", "Denisovan", "as", "outgroups", "." ]
+}, {
+  "sentence_tokens" : [ "The", "estimates", "of", "alpha", "conditional", "on", "the", "derived", "variant", "being", "present", "in", "an", "outgroup", "are", "shown", "in", "Supplementary", "Figure", "S15", "." ]
+}, {
+  "sentence_tokens" : [ "These", "three", "options", "were", "variably", "suitable", "as", "outgroups", "depending", "on", "the", "comparison", "being", "made", "." ]
+}, {
+  "sentence_tokens" : [ "For", "instance", ",", "when", "comparing", "an", "individual", "from", "outside", "Africa", "to", "an", "African", "individual", ",", "Neandertal", "and", "Denisovan", "would", "not", "be", "true", "outgroups", "given", "the", "archaic", "admixture", "shared", "among", "non", "African", "individuals", "(", "Green", "et", "al.", "2010", ")", "." ]
+}, {
+  "sentence_tokens" : [ "This", "was", "also", "visible", "in", "the", "tests", "based", "on", "equations", "(", "5", ")", "and", "(", "6", ")", "above", "(", "as", "well", "as", "the", "D-test", ",", "see", "Supplementary", "Figure", "S12", ")", "." ]
+}, {
+  "sentence_tokens" : [ "A", "likely", "consequence", "of", "the", "documented", "additional", "Denisovan", "ancestry", "in", "Papuan", "(", "Meyer", "et", "al.", "2012", ")", "is", "that", "no", "comparison", "involving", "Papuan", "passed", "the", "outgroup", "tests", "." ]
+}, {
+  "sentence_tokens" : [ "Perhaps", "more", "surprising", ",", "any", "comparison", "involving", "Mbuti", "failed", "the", "tests", "when", "Balito", "Bay", "A", "was", "used", "as", "the", "outgroup", "." ]
+}, {
+  "sentence_tokens" : [ "Moreover", ",", "both", "Mbuti", "and", "Balito", "Bay", "A", "were", "expected", "to", "be", "true", "outgroups", "for", "the", "comparison", "of", "Neandertal", "vs", "Denisovan", ",", "but", "the", "test", ";", "however", ",", "pointed", "to", "them", "not", "being", "true", "outgroups.Comparisons", "between", "estimates", "of", "theta", "(", "assuming", "a", "constant", "ancestral", "population", "size", ")", "to", "estimates", "of", "tau", "and", "3", "tau", "3", "using", "different", "outgroups", "for", "ascertainment", "are", "shown", "in", "Supplementary", "Figures", "S16", "-", "18", "." ]
+}, {
+  "sentence_tokens" : [ "Since", "there", "is", "presently", "no", "suitable", "outgroup", "for", "comparisons", "between", "a", "modern", "human", "and", "one", "of", "the", "two", "archaic", "humans", "--", "this", "would", "require", "a", "genome", "from", "an", "archaic", "human", "that", "split", "off", "before", "the", "Neandertal", "and", "Denisovan", "branch", "--", "it", "was", "not", "possible", "to", "estimate", "tau", "and", "3", "tau", "3", "for", "such", "comparisons.When", "reliable", "outgroup", "ascertained", "estimates", "of", "alpha", "and", "alpha", "can", "be", "obtained", ",", "we", "estimate", "tau", ",", "tau", ",", "B", "and", "B", "using", "equations", "(", "7", ")", "that", "are", "used", "in", "equation", "(", "8)", "to", "obtain", "an", "estimate", "of", "Ti", "*", "." ]
+}, {
+  "sentence_tokens" : [ "This", "in", "turn", "gives", "t", "^", "*", "that", "are", "shown", "in", "Supplementary", "Figures", "S16", "-", "21", "." ]
+}, {
+  "sentence_tokens" : [ "For", "the", "majority", "of", "comparisons", ",", "such", "an", "approach", "does", "not", "yield", "different", "estimates", "compared", "with", "assuming", "a", "constant", "ancestral", "population", "size", "." ]
+}, {
+  "sentence_tokens" : [ "The", "major", "exceptions", "to", "this", "are", "those", "comparisons", "involving", "non", "Africans", "that", "show", "positive", "and", "realistic", "divergence", "time", "estimates", "using", "the", "ascertainment", "scheme", "(", "Figure", "8)", "." ]
+}, {
+  "sentence_tokens" : [ "Divergence", "times", "outside", "Africa", "." ]
+}, {
+  "sentence_tokens" : [ "The", "divergence", "time", "estimates", "for", "non", "African", "populations", "under", "a", "constant", "model", "(", "ti", "^", ")", "are", "nonsensical", ",", "(", "negative", "values", ")", "." ]
+}, {
+  "sentence_tokens" : [ "This", "is", "likely", "a", "consequence", "of", "the", "severe", "out-of-Africa", "bottleneck", "that", "leads", "to", "tau", "4", "=", "mu", "E", "[", "T44", "]", "being", "much", "smaller", "than", "tau", "2/6", ",", "which", "then", "violates", "the", "assumption", "of", "a", "constant", "N", "(", "E", "[", "Tnk", "]", "=", "2NA/k", "(", "k", "-", "1", ")", "in", "a", "constant", "population", "with", "N", "chromosomes", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Estimates", "based", "on", "the", "three", "outgroup", "ascertainment", "schemes", "(", "ti", "^", "*", ")", "give", "more", "reasonable", "values", "as", "shown", "in", "Figure", "8.Here", ",", "the", "split", "times", "estimates", "are", ":", "50", "-", "75", "kya", "between", "Europeans", "and", "Asians", "and", "Americans", ";", "~", "40", "kya", "between", "Sardinians", "and", "French", ";", "25", "-", "30", "kya", "between", "Dai", "and", "Karitiana", ";", "25", "-", "30", "kya", "between", "Dai", "and", "Han", ";", "and", "<", "25", "kya", "between", "Han", "and", "Karitiana.These", "estimates", "are", "generally", "consistent", "with", "the", "prevailing", "view", "of", "the", "demographic", "history", "outside", "Africa", "." ]
+}, {
+  "sentence_tokens" : [ "For", "instance", ",", "the", "deep", "split", "between", "Sardinians", "and", "French", "may", "reflect", "previous", "findings", "that", "while", "Sardinians", "trace", "their", "ancestry", "mostly", "to", "the", "early", "Neolithic", "farmers", ",", "the", "French", "are", "more", "admixed", "with", "European", "hunter", "-", "gatherers", "and", "components", "of", "the", "Yamnaya", "expansion", "(", "Skoglund", "et", "al.", "2014", ";", "Allentoft", "et", "al.", "2015", ";", "G", "u", "nther", "et", "al.", "2015", ";", "Haak", "et", "al.", "2015", ")", "." ]
+}, {
+  "sentence_tokens" : [ "To", "interpret", "the", "split", "times", "between", "Han", ",", "Dai", ",", "and", "Karitiana", ",", "it", "should", "be", "noted", "that", "Karitiana", "is", "best", "modeled", "as", "a", "combination", "of", "three", "source", "populations", "(", "an", "ancient", "Siberian", "Eurasian", "source", ",", "a", "north", "East", "Asian", "source", "and", "an", "Australasian", "source", ")", ",", "where", "the", "north", "East", "Asian", "contribution", "is", "substantially", "greater", "than", "the", "other", "two", "sources", "combined", "(", "Raghavan", "et", "al.", "2015", ";", "Skoglund", "et", "al.", "2015", ")", "." ]
+}, {
+  "sentence_tokens" : [ "The", "fact", "that", "the", "Karitiana", "show", "a", "more", "recent", "divergence", "with", "Han", "than", "with", "Dai", "likely", "reflects", "north", "East", "Asians", "contributing", "substantially", "to", "Native", "Americans", ",", "and", "that", "the", "Dai", "has", "a", "south", "East", "Asian", "component", "(", "closer", "to", "an", "Australasians", ";", "Raghavan", "et", "al.", "2015", ";", "Skoglund", "et", "al.", "2015", ")", "." ]
+}, {
+  "sentence_tokens" : [ "This", "admixture", "pattern", "results", "in", "shallower", "divergence", "between", "Karitiana", "and", "Han", ",", "and", "deeper", "divergence", "between", "Karitiana", "and", "Dai", "and", "between", "Han", "and", "Dai", "(", "see", "e.g.Figure", "2", "in", "Raghavan", "et", "al.", "2015", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Western", "vs", "Eastern", "Africa", "and", "timing", "of", "the", "out-of-Africa", "event", "." ]
+}, {
+  "sentence_tokens" : [ "Assuming", "a", "constant", "ancestral", "population", "size", ",", "we", "estimate", "the", "split", "between", "non", "Africans", "and", "East-Africans", "(", "Dinka", ")", "to", "between", "66", "and", "82", "kya", "." ]
+}, {
+  "sentence_tokens" : [ "The", "split", "between", "Mandenka", "and", "Yoruba", "is", "estimated", "to", "100", "kya", "while", "the", "split", "between", "Western", "Africans", "and", "Eastern", "Africans", "(", "Dinka", "and", "non", "Africans", ")", "is", "estimated", "to", "between", "96", "and", "117", "kya.The", "estimates", "based", "on", "the", "three", "outgroup", "ascertainment", "schemes", "(", "ti", "^", "*", ")", "are", "generally", "older", "." ]
+}, {
+  "sentence_tokens" : [ "Although", "the", "demographic", "history", "of", "Western", "and", "Eastern", "Africa", "appears", "to", "be", "particularly", "complex", "(", "Pickrell", "et", "al.", "2014", ";", "Gurdasani", "et", "al.", "2015", ";", "Triska", "et", "al.", "2015", ";", "Busby", "et", "al.", "2016", ";", "Hollfelder", "et", "al.", "2017", ")", ",", "and", "the", "SD", "estimates", "suggest", "one", "should", "not", "over-interpret", "the", "ti", "^", "*", "values", ",", "there", "are", "a", "few", "interesting", "tendencies", "among", "these", "estimates", "(", "Figure", "9", ")", "." ]
+}, {
+  "sentence_tokens" : [ "First", ",", "estimated", "split", "times", "are", "consistently", "lower", "among", "Yoruba", ",", "Mandenka", ",", "and", "Dinka", "than", "between", "any", "of", "these", "populations", "and", "a", "non", "African", "population", ";", "likely", "an", "effect", "of", "gene", "flow", "among", "the", "three", "African", "populations", "(", "Gurdasani", "et", "al.", "2015", ";", "Busby", "et", "al.", "2016", ";", "Schlebusch", "and", "Jakobsson", "2018", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Second", ",", "estimates", "between", "Yoruba", "and", "Dinka", "(", "or", "non", "Africans", ")", "are", "deeper", "than", "split", "time", "estimates", "between", "Mandenka", "and", "Dinka", "(", "or", "non", "Africans", ")", "." ]
+}, {
+  "sentence_tokens" : [ "This", "is", "consistent", "with", "some", "observations", "suggesting", "that", "Mandenka", "have", "a", "greater", "east", "African", "and", "European", "ancestry", "component", "compared", "with", "Yoruba", "(", "Gurdasani", "et", "al.", "2015", ";", "Patin", "et", "al.", "2017", ";", "Schlebusch", "and", "Jakobsson", "2018", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Although", "Mandenka", "is", "more", "distant", "geographically", "from", "Dinka", "than", "Yoruba", ",", "there", "is", "evidence", "that", "historical", "trading", "routes", "along", "the", "Sahel", "belt", "may", "have", "resulted", "in", "more", "gene-flow", "between", "East", "Africans", "and", "Mandenka", "(", "than", "with", "Yoruba", ";", "Triska", "et", "al.", "2015", ";", "C", "ern", "y", "et", "al.", "2018", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Third", ",", "there", "is", "a", "tendency", "for", "split", "estimates", "between", "East", "Asians", "(", "Dai", "or", "Han", ")", "and", "West", "Africans", "(", "Yoruba", ",", "Mandenka", ",", "or", "Dinka", ")", "to", "be", "deeper", "than", "split", "estimates", "between", "Europeans", "(", "French", "or", "Sardinian", ")", "and", "West", "Africans", "." ]
+}, {
+  "sentence_tokens" : [ "This", "observation", ",", "combined", "with", "gene-flow", "between", "east", "and", "west", "Africa", ",", "is", "consistent", "with", "previous", "suggestions", "of", "migration", "into", "East", "Africa", "from", "a", "European", "or", "Middle", "Eastern", "source", "(", "Llorente", "et", "al.", "2015", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Deepest", "splits", "among", "modern", "human", "populations", "." ]
+}, {
+  "sentence_tokens" : [ "The", "split", "between", "Khoe-San", "and", "other", "modern", "human", "populations", "are", "estimated", "to", "around", "250", "kya", "using", "the", "TT-method", "(", "Schlebusch", "et", "al.", "2017", ")", "." ]
+}, {
+  "sentence_tokens" : [ "It", "was", "further", "demonstrated", "that", "all", "modern-day", "Khoe-San", "groups", "and", "individuals", ",", "including", "the", "HGDP", "San", "individuals", "investigated", "here", ",", "were", "affected", "by", "Eurasian", "and", "east", "African", "admixture", ",", "which", "in", "turn", "impacts", "estimates", "of", "the", "deepest", "divergence", "of", "modern", "humans", "(", "different", "methods", "are", "differently", "sensitive", "to", "admixture", ";", "Schlebusch", "et", "al.", "2017", ")", "." ]
+}, {
+  "sentence_tokens" : [ "This", "observation", "became", "evident", "in", "comparisons", "with", "an", "ancient", "southern", "African", "individual", "(", "the", "Balito", "Bay", "A", "boy", "who", "lived", "some", "2000", "years", "ago", ")", ",", "closely", "related", "to", "modern-day", "Khoe-San", "individuals", ",", "but", "without", "the", "Eurasian", "and", "east", "African", "admixture", "that", "post-dated", "the", "life-time", "of", "the", "Balito", "Bay", "A", "boy", "." ]
+}, {
+  "sentence_tokens" : [ "Population", "divergence", "time", "estimates", "based", "on", "the", "ancient", "Balito", "Bay", "A", "boy", "predates", "the", "estimates", "based", "on", "modern-day", "Khoe-San", "individuals", ",", "and", "give", "an", "estimate", "that", "is", "unaffected", "by", "the", "migration", "and", "admixture", "in", "the", "last", "2000", "years", "(", "Schlebusch", "et", "al.", "2017", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Above", "we", "showed", "the", "effect", "of", "assuming", "a", "constant", "ancestral", "population", "size", ",", "and", "how", "violations", "of", "this", "assumption", "by", "a", "bottleneck", "in", "the", "ancestral", "population", "can", "bias", "divergence", "time", "estimates", "." ]
+}, {
+  "sentence_tokens" : [ "However", ",", "we", "find", "no", "evidence", "for", "such", "a", "bottleneck", "in", "the", "common", "ancestral", "population", "to", "all", "modern", "humans", ",", "and", "hence.In", "general", ",", "we", "find", "very", "little", "difference", "between", "the", "TT", "and", "the", "TTo", "estimates", "(", "Supplementary", "Figure", "S19", ")", "." ]
+}, {
+  "sentence_tokens" : [ "In", "fact", ",", "there", "is", "a", "tendency", "for", "ti", "^", "*", "to", "be", "lower", "than", "ti", "^", "for", "the", "Mbuti-split", ",", "providing", "additional", "support", "that", "the", "Khoe-San", "split", "is", "the", "deepest", "split", "among", "modern", "human", "populations", "(", "Schlebusch", "et", "al.", "2012", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Archaic", "split", "times", "." ]
+}, {
+  "sentence_tokens" : [ "The", "split", "between", "modern", "humans", "and", "both", "Neandertal", "and", "Denisovan", "is", "estimated", "to", "between", "510", "amd", "707", "kya", ",", "which", "is", "in", "line", "with", "previous", "such", "estimates", "(", "e.g.Pr", "u", "fer", "et", "al.", "2014", ")", "." ]
+}, {
+  "sentence_tokens" : [ "In", "fact", ",", "restricting", "the", "analysis", "to", "split", "times", "on", "the", "non", "ancient", "branch", "(", "to", "alleviate", "issues", "with", "fossil", "dating", "and", "potential", "excess", "ancient", "DNA", "damage", ")", "and", "only", "to", "comparisons", "between", "Africans", "and", "the", "two", "archaic", "humans", ",", "gives", "a", "range", "of", "estimates", "from", "609", "to", "681", "kya", "(", "Figure", "10", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Unfortunately", ",", "there", "is", "(", "presently", ")", "no", "suitable", "outgroup", "for", "comparisons", "between", "modern", "humans", "and", "archaic", "humans", "in", "order", "to", "utilize", "the", "outgroup", "ascertainment", "approach.The", "estimated", "split", "between", "Neandertal", "and", "Denisovan", "is", "around", "970", "kya", ";", "more", "than", "250", "ky", "older", "than", "the", "split", "between", "modern", "humans", "and", "archaic", "humans", "." ]
+}, {
+  "sentence_tokens" : [ "This", "is", "likely", "an", "artifact", "of", "violating", "the", "model", "assumptions", ";", "the", "existence", "of", "a", "more", "complex", "demography", "is", "indicated", "by", "our", "finding", "that", "neither", "Mbuti", "nor", "Balito", "Bay", "A", "were", "found", "to", "be", "true", "outgroups", "to", "the", "Neandertal", "-", "Denisovan", "comparison", "according", "to", "our", "outgroup", "test", "and", "the", "D-test", "(", "Supplementary", "Figures", "S14", "and", "S13", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Some", "studies", "hypothesize", "that", "the", "demographic", "relationship", "between", "Neandertals", "and", "Denisovans", "was", "governed", "by", "meta", "population", "dynamics", "(", "Rogers", "et", "al.", "2017", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Others", "suggest", "complicating", "demographic", "factors", "such", "as", "admixture", "between", "Denisovans", "and", "Homo", "erectus", "(", "Pr", "u", "fer", "et", "al.", "2014", ")", "or", "admixture", "from", "the", "modern", "human", "branch", "into", "the", "Altai", "Neandertal", "(", "Kuhlwilm", "et", "al.", "2016", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Conclusion", "." ]
+}, {
+  "sentence_tokens" : [ "We", "present", "a", "simple", "approach", "to", "estimate", "parameters", "under", "a", "comparatively", "general", "split", "model", "." ]
+}, {
+  "sentence_tokens" : [ "In", "particular", ",", "no", "assumptions", "are", "needed", "concerning", "the", "population", "size", "processes", "and", "changes", "in", "the", "daughter", "populations", "(", "i.e.", "more", "recent", "than", "the", "split", ")", "." ]
+}, {
+  "sentence_tokens" : [ "The", "underlying", "model", "does", "not", "include", "gene-flow", "between", "daughter", "population", ";", "however", ",", "we", "can", "show", "that", "moderate", "violation", "of", "this", "assumption", "has", "little", "impact", "on", "the", "population", "divergence-time", "estimates", "." ]
+}, {
+  "sentence_tokens" : [ "Assuming", "a", "constant", "ancestral", "population", "size", ",", "this", "approach", "provides", "an", "unbiased", "estimate", "of", "divergence", "time", "." ]
+}, {
+  "sentence_tokens" : [ "However", ",", "when", "the", "ancestral", "population", "is", "not", "constant", ",", "and", "particularly", "in", "the", "case", "of", "severe", "bottlenecks", ",", "divergence", "time", "estimates", "can", "be", "biased", "." ]
+}, {
+  "sentence_tokens" : [ "Indeed", ",", "simulations", "comparing", "the", "TT-method", "to", "GPhoCS", "--", "an", "alternative", ",", "fundamentally", "different", "approach", "to", "demographic", "inference", ",", "has", "shown", "that", "the", "two", "methods", "are", "sensitive", "to", "violations", "of", "the", "same", "assumptions", "." ]
+}, {
+  "sentence_tokens" : [ "The", "reason", "for", "this", "can", "be", "intuitively", "understood", "in", "terms", "of", "the", "tMRCA", "in", "the", "ancestral", "population", ";", "most", "of", "this", "time", "is", "spent", "with", "two", "lineages", "and", "the", "duration", "of", "this", "is", "utilized", "by", "both", "methods", "to", "estimate", "the", "size", "of", "the", "ancestral", "population", "." ]
+}, {
+  "sentence_tokens" : [ "Since", ",", "by", "assumption", ",", "the", "ancestral", "size", "is", "constant", ",", "if", "the", "time", "to", "the", "first", "coalescent", "event", "in", "the", "ancestral", "population", "is", "shorter", "than", "expected", ",", "(", "for", "instance", ",", "due", "to", "a", "bottleneck", "shortly", "before", "the", "divergence", ")", ",", "then", "both", "methods", "underestimate", "the", "true", "population", "divergence", "time", "." ]
+}, {
+  "sentence_tokens" : [ "When", "such", "severe", "bottlenecks", "have", "occurred", ",", "we", "have", "shown", "that", "it", "is", "possible", "to", "reduce", "much", "of", "this", "bias", "through", "the", "outgroup", "ascertainment", "procedure", "implemented", "in", "the", "TTo", "method.Applying", "the", "TT-method", "to", "a", "sample", "of", "11", "genomes", "from", "the", "HGDP", "panel", "together", "with", "the", "Neandertal", "and", "Denisovan", "genomes", ",", "we", "provide", "further", "information", "on", "the", "details", "of", "the", "various", "splits", "within", "the", "sample", "and", "corroborate", "many", "previously", "estimated", "population", "divergence", "times.Finally", ",", "accumulating", "evidence", "suggests", "that", "human", "evolution", "is", "highly", "reticulated", ",", "and", "perhaps", "not", "well", "approximated", "by", "the", "sort", "of", "bifurcating", "tree-models", "studied", "here", "(", "Schlebusch", "and", "Jakobsson", "2018", ";", "Henn", "et", "al.", "2018", ";", "Scerri", "et", "al.", "2018", ";", "Stringer", "2016", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Nonetheless", ",", "the", "framework", "presented", "here", "is", "still", "a", "useful", "tool", ":", "different", "population", "genetic", "methods", "vary", "in", "their", "assumptions", "and", "sensitivities", "to", "model", "violations", ",", "thus", "it", "is", "important", "when", "investigating", "the", "complex", "demographies", "underlying", "the", "evolution", "of", "humans", "to", "have", "access", "to", "a", "variety", "of", "different", "methods", "." ]
+}, {
+  "sentence_tokens" : [ "The", "TT-method", "is", "relatively", "robust", "to", "model", "violations", "and", "provides", "a", "simple", "and", "transparent", "analytic", "framework", "that", "can", "be", "compared", "with", ",", "and", "potentially", "even", "integrated", "with", ",", "other", ",", "more", "computationally", "demanding", "methods", "(", "Beichman", "et", "al.", "2017", ";", "Terhorst", "et", "al.", "2017", ";", "Wang", "et", "al.", "2020", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Data", "availability", "." ]
+}, {
+  "sentence_tokens" : [ "Genome", "sequence", "data", "from", "the", "following", "publications", "was", "extracted", "and", "reprocessed", "in", "order", "to", "avoid", "mapping", "and", "filtering", "biases", ":", "Pr", "u", "fer", "et", "al.", "(", "2014", ")", "and", "Schlebusch", "et", "al.", "(", "2017", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Scripts", "used", "in", "simulations", "and", "plotting", "of", "results", ",", "together", "with", "open", "source", "code", "for", "running", "the", "TT", "method", "is", "freely", "available", "in", "Python", "at", "github.com/jammc313/TT-method.Supplementary", "material", "is", "available", "at", "figshare", ":", "https://doi.org/10.25386/genetics.13415774", "." ]
+} ]

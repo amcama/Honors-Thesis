@@ -1,0 +1,735 @@
+[ {
+  "sentence_tokens" : [ "Therefore", ",", "cells", "harboring", "the", "E203K", "mutation", "survived", "over", "wild-type", "cells", "in", "the", "presence", "of", "vemurafenib", ",", "whereas", "DMSO", "treatment", "did", "not", "promote", "enrichment", "of", "the", "mutant", "clones", "as", "much", "as", "vemurafenib", "." ],
+  "event_indices" : [ 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32 ],
+  "type" : "Positive_activation",
+  "polarity" : true,
+  "controller_indices" : [ 18, 19 ],
+  "controlled_indices" : [ 31, 32 ],
+  "trigger_indices" : [ 22, 23 ],
+  "rule_name" : "Positive_activation_syntax_1_verb",
+  "rule" : null
+}, {
+  "sentence_tokens" : [ "Activated", "Ras", "is", "known", "to", "positively", "regulate", "the", "expression", "of", "various", "chemokines", "and", "ultimately", "promote", "tumorigenesis", ",", "which", "is", "consistent", "with", "the", "present", "result", "demonstrating", "that", "chemokine", "signaling", "pathways", "and", "CXCR", "binding", "genes", "were", "enriched", "in", "clusters", "composed", "primarily", "of", "the", "#", "56", "sgRNA", "." ],
+  "event_indices" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 ],
+  "type" : "Positive_activation",
+  "polarity" : true,
+  "controller_indices" : [ 15, 16 ],
+  "controlled_indices" : [ 1, 2 ],
+  "trigger_indices" : [ 0, 1 ],
+  "rule_name" : "Positive_activation_syntax_1_verb",
+  "rule" : null
+}, {
+  "sentence_tokens" : [ "Single-cell", "analysis", "of", "a", "mutant", "library", "generated", "using", "CRISPR", "guided", "deaminase", "in", "human", "melanoma", "cells", "." ]
+}, {
+  "sentence_tokens" : [ "CRISPR", "based", "screening", "methods", "using", "single-cell", "RNA", "sequencing", "(", "scRNA-seq", ")", "technology", "enable", "comprehensive", "profiling", "of", "gene", "perturbations", "from", "knock", "out", "mutations", "." ]
+}, {
+  "sentence_tokens" : [ "However", ",", "evaluating", "substitution", "mutations", "using", "scRNA-seq", "is", "currently", "limited", "." ]
+}, {
+  "sentence_tokens" : [ "We", "combined", "CRISPR", "RNA", "guided", "deaminase", "and", "scRNA-seq", "technology", "to", "develop", "a", "platform", "for", "introducing", "mutations", "in", "multiple", "genes", "and", "assessing", "the", "mutation", "associated", "signatures", "." ]
+}, {
+  "sentence_tokens" : [ "Using", "this", "platform", ",", "we", "generated", "a", "library", "consisting", "of", "420", "sgRNAs", ",", "performed", "sgRNA", "tracking", "analysis", ",", "and", "assessed", "the", "effect", "size", "of", "the", "response", "to", "vemurafenib", "in", "the", "human", "melanoma", "cell", "line", ",", "which", "has", "been", "well", "studied", "via", "knockout", "based", "drop-out", "screens", "." ]
+}, {
+  "sentence_tokens" : [ "However", ",", "a", "substitution", "mutation", "library", "screen", "has", "not", "been", "applied", "and", "transcriptional", "information", "for", "mechanisms", "of", "action", "was", "not", "assessed", "." ]
+}, {
+  "sentence_tokens" : [ "Our", "platform", "permits", "discrimination", "of", "several", "candidate", "mutations", "that", "function", "differently", "from", "other", "mutations", "by", "integrating", "sgRNA", "candidates", "and", "gene", "expression", "readout", "." ]
+}, {
+  "sentence_tokens" : [ "We", "anticipate", "that", "our", "platform", "will", "enable", "high-throughput", "analyses", "of", "the", "mechanisms", "related", "to", "a", "variety", "of", "biological", "events", "." ]
+}, {
+  "sentence_tokens" : [ "Introduction", "." ]
+}, {
+  "sentence_tokens" : [ "Innovative", "biological", "research", "approaches", "based", "on", "the", "CRISPR", "and", "Cas9", "system", "have", "been", "developed", "to", "facilitate", "investigations", "of", "the", "functional", "effects", "of", "genetic", "mutations", "." ]
+}, {
+  "sentence_tokens" : [ "Although", "the", "functions", "of", "thousands", "of", "variants", "have", "been", "determined", "using", "functional", "screening", "approaches", "based", "on", "gene", "knock-out", "and", "activation", ",", "screening", "other", "genetic", "features", ",", "such", "as", "single", "nucleotide", "variants", "(", "SNVs", ")", "and", "structural", "variations", ",", "to", "examine", "related", "phenotypes", "remains", "challenging", "because", "it", "is", "difficult", "to", "introduce", "and", "analyze", "these", "genetic", "features", "for", "pooled", "screens", "." ]
+}, {
+  "sentence_tokens" : [ "Among", "these", "genetic", "features", ",", "SNVs", "are", "the", "most", "frequently", "observed", ",", "and", "they", "are", "associated", "with", "many", "diseases", "in", "humans", "." ]
+}, {
+  "sentence_tokens" : [ "For", "example", ",", "mutations", "related", "to", "drug", "resistance", "and", "cancer", "susceptibility", "impact", "both", "the", "prognosis", "of", "therapy", "and", "disease", "progression", "." ]
+}, {
+  "sentence_tokens" : [ "In", "interrogating", "the", "function", "of", "SNVs", ",", "oligo", "mediated", "saturation", "editing", "based", "on", "homology", "directed", "repair", "enables", "base-resolution", "mutagenesis", ",", "but", "this", "approach", "is", "limited", "to", "a", "single", "locus", "due", "to", "the", "difficulty", "of", "the", "preparation", "and", "size", "restriction", "of", "the", "oligos", "composed", "of", "various", "types", "of", "SNVs", "." ]
+}, {
+  "sentence_tokens" : [ "An", "alternative", "approach", "based", "on", "a", "CRISPR", "RNA", "guided", "deaminase", "permits", "the", "specific", "and", "efficient", "mutagenesis", "of", "multiple", "C", "to", "T", "conversions", "in", "the", "guide", "RNA", "binding", "region", "without", "the", "need", "for", "a", "DNA", "template", "." ]
+}, {
+  "sentence_tokens" : [ "Even", "though", "a", "small", "number", "of", "unintended", "mutations", ",", "such", "as", "indels", "and", "multiple", "nucleotide", "variants", ",", "could", "be", "introduced", "simultaneously", ",", "disease", "related", "missense", "mutations", "could", "be", "generated", "and", "analyzed", "using", "this", "technology", "." ]
+}, {
+  "sentence_tokens" : [ "However", ",", "to", "date", ",", "this", "approach", "has", "only", "been", "used", "for", "multigene", "knock-out", "and", "multiple", "point", "mutations", "within", "a", "single", "gene", "." ]
+}, {
+  "sentence_tokens" : [ "Introducing", "and", "screening", "multiple", "point", "mutations", "in", "multiple", "genes", "remains", "challenging", "due", "to", "the", "difficulty", "of", "analyzing", "multiple", "introduced", "mutations", ",", "because", "all", "mutations", "should", "be", "analyzed", "individually", "by", "amplification", "and", "deep", "sequencing", "for", "each", "locus.As", "the", "methods", "described", "above", "are", "based", "on", "population", "analyses", "and", "thus", "dependent", "on", "the", "number", "of", "clones", ",", "data", "regarding", "only", "dominant", "clones", "are", "obtained", "when", "using", "RIGER", "and", "other", "similar", "statistical", "algorithms", "." ]
+}, {
+  "sentence_tokens" : [ "However", ",", "recently", "developed", "techniques", "such", "as", "CRISP-seq", ",", "Perturb-seq", "and", "CROP-seq", ",", "which", "leverage", "single-cell", "RNA-seq", ",", "enable", "analysis", "of", "the", "various", "phenotypes", "and", "perturbations", "within", "each", "cell", "by", "integrating", "both", "the", "gene", "expression", "readout", "and", "CRISPR", "based", "perturbations", "." ]
+}, {
+  "sentence_tokens" : [ "For", "the", "perturbation", "read", "out", ",", "CROP-seq", "utilizes", "a", "vector", "that", "adds", "a", "poly", "(", "A", ")", "tail", "to", "the", "sgRNA", "transcript", ",", "whereas", "Perturb-seq", "and", "CRISP-seq", "generate", "a", "\"", "perturbation", "barcode", "\"", "linked", "to", "the", "sgRNA", "." ]
+}, {
+  "sentence_tokens" : [ "To", "our", "knowledge", ",", "the", "use", "of", "these", "methods", "has", "thus", "far", "been", "limited", "to", "investigations", "of", "perturbations", "associated", "with", "knock", "out", "mutations", "and", "transcriptional", "regulations", "generated", "using", "a", "CRISPR", "library", "at", "the", "single-cell", "level", ",", "as", "it", "remains", "challenging", "to", "investigate", "perturbations", "for", "point", "mutations", "." ]
+}, {
+  "sentence_tokens" : [ "However", ",", "a", "recent", "report", "demonstrated", "a", "spectrum", "of", "subclonal", "point", "mutations", "in", "the", "same", "tumor", "has", "implications", "for", "precision", "medicine", "and", "immune", "therapies", "." ]
+}, {
+  "sentence_tokens" : [ "This", "report", "emphasizes", "the", "need", "for", "an", "atlas", "of", "transcription", "profiles", "associated", "with", "SNVs.To", "investigate", "the", "myriad", "of", "SNVs", "that", "affect", "biological", "function", ",", "a", "high-throughput", ",", "pooled", "screening", "method", "for", "substitution", "mutations", "which", "enables", "the", "analysis", "of", "generated", "mutations", "by", "tracking", "sgRNAs", "is", "required", "." ]
+}, {
+  "sentence_tokens" : [ "Here", ",", "we", "demonstrate", "a", "previously", "unreported", "method", "combining", "CRISPR", "RNA", "guided", "deaminase", "and", "CROP-Seq", "technology", "that", "enables", "the", "introduction", "of", "SNVs", "in", "multiple", "genes", "and", "screening", "of", "the", "impact", "on", "function", "in", "addition", "to", "analyses", "of", "perturbations", "in", "single", "cells", "." ]
+}, {
+  "sentence_tokens" : [ "To", "highlight", "the", "utility", "of", "our", "platform", ",", "we", "generated", "substitution", "mutations", "in", "each", "exon", "of", "three", "human", "genes", "(", "MAP2K1", ",", "KRAS", ",", "NRAS", ")", "associated", "with", "resistance", "to", "vemurafenib", ",", "which", "is", "a", "cancer", "drug", "targeting", "the", "BRAF", "V600E", "mutation", "in", "melanoma", "patients", "." ]
+}, {
+  "sentence_tokens" : [ "We", "then", "screened", "for", "point", "mutations", "that", "conferred", "resistance", "to", "vemurafenib", ",", "analyzed", "the", "perturbations", "in", "individual", "resistant", "clones", ",", "and", "assessed", "gene", "expression", "signatures", "for", "individual", "clones", "." ]
+}, {
+  "sentence_tokens" : [ "Finally", ",", "we", "selected", "final", "candidate", "sgRNAs", ",", "and", "confirmed", "mutation", "sequence", "by", "amplifying", "candidate", "regions", "of", "genome", ",", "which", "were", "extracted", "from", "edited", "pool", "of", "cells", "." ]
+}, {
+  "sentence_tokens" : [ "Results", "." ]
+}, {
+  "sentence_tokens" : [ "Overview", "of", "the", "system", "." ]
+}, {
+  "sentence_tokens" : [ "To", "facilitate", "the", "generation", "and", "tracking", "of", "point", "mutations", ",", "lentivirus-", "and", "piggyBac", "based", "delivery", "systems", "are", "needed", "for", "integration", "of", "single-copy", "sgRNAs", "in", "each", "cell", "and", "stable", "expression", "of", "the", "CRISPR", "RNA", "guided", "deaminase", ",", "respectively", "." ]
+}, {
+  "sentence_tokens" : [ "Because", "complete", "genes", "are", "too", "long", "for", "delivery", "by", "lentivirus", "or", "transposase", "in", "our", "system", ",", "we", "designed", "the", "system", "to", "utilize", "two", "vectors", "(", "Fig.", "1a", ")", ":", "lentiviral", "and", "piggyBac", "vectors", "encoding", "the", "sgRNA", "and", "CRISPR", "RNA", "guided", "deaminase", ",", "respectively", "." ]
+}, {
+  "sentence_tokens" : [ "For", "sgRNAs", ",", "we", "adopted", "the", "CROPseq-Guide-Puro", "plasmid", "to", "enable", "simultaneous", "capture", "of", "the", "sgRNA", "with", "other", "mRNAs", "during", "the", "scRNA-seq", "preparation", "procedure", "and", "puromycin", "selection", "of", "sgRNA", "bearing", "cells", "." ]
+}, {
+  "sentence_tokens" : [ "For", "the", "CRISPR", "RNA", "guided", "deaminase", ",", "we", "adopted", "the", "BE3", "sequence", "-", "encoding", "Cas9", "nickase", "fused", "with", "APOBEC", "and", "UGI", "." ]
+}, {
+  "sentence_tokens" : [ "BE3", "introduces", "~", "15", "-", "75", "%", "of", "C", "to", "T", "conversions", "with", "less", "than", "1", "%", "indel", "formation", "." ]
+}, {
+  "sentence_tokens" : [ "Although", "the", "editing", "efficiency", "of", "BE3", "is", "lower", "than", "Cas9", "(", ">", "90", "%", ")", ",", "we", "believe", "this", "efficiency", "is", "high", "enough", "compared", "to", "homologous", "recombination", "based", "substitution", "mutation", "generating", "methods", "." ]
+}, {
+  "sentence_tokens" : [ "We", "also", "constructed", "a", "cassette", "containing", "BE3", "and", "a", "GFP", "reporter", "and", "blasticidine", "resistance", "marker", ",", "which", "was", "cloned", "into", "the", "piggyBac", "vector", "to", "provide", "high", "\"", "cargo", "carrying", "\"", "capacity.As", "BE3", "can", "be", "used", "to", "introduce", "C", "to", "T", "mutations", "in", "the", "4", "to", "8", "positions", "from", "the", "PAM-distal", "end", "of", "the", "protospacer", ",", "only", "a", "limited", "variety", "of", "mutations", "can", "be", "introduced", "using", "the", "CRISPR", "RNA", "guided", "deaminase", "(", "Fig.", "1b", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Thirteen", "of", "the", "20", "canonical", "amino", "acids", "can", "be", "converted", "to", "another", "amino", "acid", "by", "targeted", "deamination", "." ]
+}, {
+  "sentence_tokens" : [ "The", "remaining", "seven", "amino", "acids", "can", "be", "converted", "only", "by", "either", "silent", "or", "nonsense", "mutations.To", "simulate", "the", "extensibility", "and", "coverage", "of", "the", "BE", "system", ",", "we", "picked", "out", "all", "possible", "sgRNAs", "from", "all", "gene", "isoforms", "within", "the", "human", "genome", "(", "Methods", ",", "Supplementary", "Data", "2", ")", "." ]
+}, {
+  "sentence_tokens" : [ "We", "observed", "41", "%", "of", "residues", "per", "gene", "isoform", "could", "be", "targeted", ",", "if", "\"", "AG", "\"", "PAM", "is", "allowed", "(", "Supplementary", "Fig.", "1a", ",", "b", ")", "." ]
+}, {
+  "sentence_tokens" : [ "And", "we", "observed", "that", "45", "%", "of", "the", "sgRNAs", "designed", "from", "20", "randomly", "chosen", "genes", "(", "TAL1", ",", "POU5F1", ",", "MSH6", ",", "CRTC3", ",", "WWTR1", ",", "CARS", ",", "MAP2K2", ",", "CDH1", ",", "CDKN2C", ",", "H3F3B", ",", "PTEN", ",", "FBXW7", ",", "NUP98", ",", "ELL", ",", "ITK", ",", "SETD2", ",", "TP63", ",", "RB1", ",", "CASP8", ",", "HMGA2", ")", "were", "specific", "(", "specificity", "score", "was", "equal", "to", "1", ",", "Methods", ")", ",", "and", "the", "coverage", "of", "residue", "was", "26", "%", "when", "sgRNAs", "with", "specificity", "score", "1", "were", "considered", "(", "Supplementary", "Fig.", "1c", ",", "d", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Our", "simulation", "results", "indicated", "that", "one", "sgRNA", "could", "induce", "multiple", "types", "of", "mutations", "depending", "on", "the", "number", "and", "position", "of", "the", "cytosine", "residues", "in", "the", "activity", "window", "." ]
+}, {
+  "sentence_tokens" : [ "In", "most", "cases", ",", "silent", "and", "missense", "mutations", "could", "be", "produced", "alone", "or", "in", "combination", "with", "sgRNA", "(", "Fig.", "1c", ")", "." ]
+}, {
+  "sentence_tokens" : [ "We", "also", "observed", "50.8", "%", "of", "loci", "were", "covered", "by", "more", "than", "one", "sgRNA", ";", "therefore", ",", "more", "than", "one", "sgRNA", "could", "be", "selected", "from", "the", "candidates", "for", "a", "more", "robust", "statistical", "analysis", "(", "Supplementary", "Fig.", "1e", ")", "." ]
+}, {
+  "sentence_tokens" : [ "We", "utilized", "the", "above", "described", "system", "to", "screen", "for", "mutations", "conferring", "resistance", "to", "vemurafenib", "to", "demonstrate", "that", "the", "system", "is", "suitable", "for", "large-scale", "screening", "of", "SNVs", "." ]
+}, {
+  "sentence_tokens" : [ "Although", "mutations", "conferring", "resistance", "to", "vemurafenib", "have", "been", "thoroughly", "studied", "using", "approaches", "such", "as", "drop-out", "knock-out", "screening", ",", "to", "date", ",", "there", "are", "no", "reports", "of", "systematic", "analyses", "of", "transcriptional", "changes", "induced", "by", "various", "SNVs", "." ]
+}, {
+  "sentence_tokens" : [ "We", "therefore", "explored", "how", "such", "mutations", "affect", "the", "drug", "response", "mechanism", "using", "our", "CRISPR", "RNA", "guided", "deaminase", "system", "." ]
+}, {
+  "sentence_tokens" : [ "Introduction", "and", "enrichment", "of", "resistant", "mutation", "." ]
+}, {
+  "sentence_tokens" : [ "To", "assess", "the", "efficiency", "of", "our", "system", ",", "we", "investigated", "the", "rate", "of", "conversion", "of", "the", "C", "base", "targeted", "in", "a", "single", "locus", "." ]
+}, {
+  "sentence_tokens" : [ "First", ",", "we", "introduced", "the", "MAP2K1", "p.E203K", "mutation", "(", "c.G607A", ")", "into", "human", "A375", "melanoma", "cells", "carrying", "a", "homozygous", "BRAF", "V600E", "mutation", "(", "c.T1799A", ")", "." ]
+}, {
+  "sentence_tokens" : [ "The", "E203K", "point", "mutation", "results", "in", "the", "substitution", "of", "glutamic", "acid", "with", "lysine", "at", "codon", "203", "in", "exon", "6", "of", "MAP2K1", ",", "resulting", "in", "resistance", "to", "vemurafenib", "." ]
+}, {
+  "sentence_tokens" : [ "The", "piggyBac", "vector", "expressing", "BE3", "was", "transfected", "into", "A375", "cells", "to", "create", "a", "cell", "line", "that", "stably", "expresses", "BE3", "." ]
+}, {
+  "sentence_tokens" : [ "Cells", "expressing", "the", "base", "editor", "were", "infected", "with", "a", "lentivirus", "expressing", "sgRNA", ",", "targeting", "codon", "203", "of", "MAP2K1", "to", "induce", "the", "E203K", "mutation", "." ]
+}, {
+  "sentence_tokens" : [ "The", "cells", "were", "cultured", "for", "10", "days", "to", "ensure", "selection", "of", "cells", "harboring", "the", "sgRNA", "and", "to", "promote", "base", "editing", "." ]
+}, {
+  "sentence_tokens" : [ "Then", ",", "frequency", "of", "base", "editing", "in", "terms", "of", "base", "and", "amino", "acid", "resolution", "was", "investigated", "by", "deep", "sequencing", "after", "25", "days", "of", "treatment", "with", "either", "vemurafenib", "or", "vehicle", "(", "dimethyl", "sulfoxide", "[", "DMSO", "]", ")", "." ]
+}, {
+  "sentence_tokens" : [ "At", "10", "days", "after", "puromycin", "selection", ",", "the", "substitution", "efficiency", "ranged", "from", "4.24", "-", "5.65", "%", "in", "the", "\"", "activity", "window", "\"", "with", "a", "small", "indel", "frequency", "of", "1.4", "%", "(", "Fig.", "1d", ")", "." ]
+}, {
+  "sentence_tokens" : [ "After", "treatment", "with", "vemurafenib", "for", "25", "days", ",", "the", "substitution", "efficiency", "increased", "to", "41.11", "-", "77.17", "%", ",", "whereas", "DMSO", "vehicle", "treatment", "yielded", "an", "efficiency", "of", "only", "9.67", "-", "12.08", "%", "." ]
+}, {
+  "sentence_tokens" : [ "These", "data", "suggest", "that", "continuous", "engineering", "occurred", "during", "culture", "and", "that", "the", "mutation", "confers", "resistance", "to", "vemurafenib", "." ]
+}, {
+  "sentence_tokens" : [ "Consistent", "with", "the", "base", "resolution", "analysis", ",", "codon", "based", "analysis", "indicated", "that", "77.19", "%", "of", "the", "viable", "cells", "were", "E203K", "clones", "(", "Fig.", "1e", ")", "." ]
+}, {
+  "sentence_tokens" : [ "The", "same", "analysis", "of", "DMSO", "treated", "cells", "revealed", "that", "12.06", "%", "of", "the", "viable", "cells", "were", "E203K", "clones", "." ]
+}, {
+  "sentence_tokens" : [ "These", "results", "confirmed", "that", "enrichment", "of", "the", "mutation", "occurred", "with", "vemurafenib", "treatment", "." ]
+}, {
+  "sentence_tokens" : [ "As", "shown", "in", "a", "previous", "study", ",", "conversion", "of", "C", "residues", "can", "occur", "at", "a", "variety", "of", "positions", ",", "although", "conversion", "occurs", "most", "frequently", "within", "the", "activity", "window", "(", "Fig.", "1f", ",", "Supplementary", "Fig.", "2a", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Furthermore", ",", "processive", "deamination", "tends", "to", "occur", "in", "same", "DNA", "strand", "(", "Supplementary", "Fig.", "2b", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Collectively", ",", "the", "results", "of", "our", "singleplex", "experiments", "suggest", "that", "the", "mutations", "artificially", "introduced", "via", "base", "editing", "functioned", "well", "and", "that", "mutants", "can", "be", "specifically", "enriched", "using", "drugs", "in", "a", "manner", "similar", "to", "naturally", "acquired", "mutations", "in", "patients", "." ]
+}, {
+  "sentence_tokens" : [ "These", "data", "also", "demonstrate", "the", "possibility", "of", "using", "this", "system", "to", "measure", "the", "effect", "sizes", "of", "various", "mutations", "in", "terms", "of", "drug", "resistance", "." ]
+}, {
+  "sentence_tokens" : [ "Introduction", "and", "functional", "screening", "of", "putative", "mutations", "." ]
+}, {
+  "sentence_tokens" : [ "To", "determine", "whether", "the", "use", "of", "our", "system", "can", "be", "extended", "to", "the", "analysis", "of", "multiple", "loci", ",", "we", "designed", "a", "sgRNA", "library", "for", "three", "genes", "(", "MAP2K1", ",", "KRAS", ",", "and", "NRAS", ")", "related", "to", "vemurafenib", "resistance", "in", "melanoma", "." ]
+}, {
+  "sentence_tokens" : [ "We", "selected", "possible", "targets", "based", "on", "the", "criterion", "that", "spacers", "include", "cytosine", "residues", "in", "the", "activity", "window", "." ]
+}, {
+  "sentence_tokens" : [ "A", "total", "of", "420", "sgRNAs", "were", "designed", "for", "all", "of", "the", "exons", "of", "MAP2K1", ",", "KRAS", ",", "NRAS", "(", "263", ",", "80", ",", "and", "77", "sgRNAs", ",", "respectively", ",", "Supplementary", "Data", "3", ",", "Supplementary", "Fig.", "3", ")", "." ]
+}, {
+  "sentence_tokens" : [ "We", "excluded", "the", "sgRNAs", "used", "in", "the", "previous", "singleplex", "experiments", "to", "avoid", "enrichment", "of", "the", "known", "E203K", "resistance", "clone", "in", "the", "pooled", "screen", "." ]
+}, {
+  "sentence_tokens" : [ "The", "resulting", "sgRNA", "library", "covered", "17.4", "%", "of", "the", "reported", "disease", "related", "SNVs", "in", "the", "Cancer", "Gene", "Census", "(", "CGC", ")", "(", "Fig.", "2a", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Among", "a", "library", "of", "sgRNAs", ",", "we", "independently", "tested", "three", "sgRNAs", "by", "viral", "production", "and", "transduction", "and", "compared", "with", "non", "targeting", "sgRNA", "." ]
+}, {
+  "sentence_tokens" : [ "We", "observed", "an", "editing", "efficiency", "of", "0.40", "-", "7.85", "%", "of", "editing", "efficiency", "in", "the", "'", "activity", "window", "'", "and", "very", "small", "portion", "of", "indels", "(", "<", "0.09", "%", ")", "for", "these", "three", "sgRNAs", "(", "Methods", ",", "Supplementary", "Fig.", "4a", "-", "d", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Also", ",", "it", "appears", "that", "there", "are", "no", "significant", "false", "positive", "effects", "on", "resistance", "(", "Methods", ",", "Supplementary", "Fig.", "4e", ",", "f", ")", "." ]
+}, {
+  "sentence_tokens" : [ "The", "designed", "library", "was", "then", "synthesized", "using", "a", "microarray", "and", "cloned", "into", "the", "CROP-guide-puro", "plasmid", "." ]
+}, {
+  "sentence_tokens" : [ "A375", "cells", "stably", "expressing", "BE3", "were", "transduced", "in", "two", "independent", "replicates", "with", "the", "library", "and", "selected", "for", "14", "days", "using", "puromycin", "to", "ensure", "that", "most", "of", "the", "cells", "expressed", "sgRNA", "and", "were", "base", "edited", "." ]
+}, {
+  "sentence_tokens" : [ "Before", "drug", "selection", ",", "we", "determined", "the", "C", "to", "T", "conversion", "rate", "in", "sgRNA", "library", "transduced", "cells", "." ]
+}, {
+  "sentence_tokens" : [ "The", "conversion", "rate", "was", "not", "as", "high", "as", "a", "singleplex", "experiment", "because", "total", "editing", "efficiency", "was", "divided", "by", "420", "loci", "." ]
+}, {
+  "sentence_tokens" : [ "However", ",", "the", "conversion", "rate", "was", "higher", "than", "the", "sequencing", "error", "observed", "in", "non", "targeting", "sgRNA", "transduced", "cells", "(", "Supplementary", "Fig.", "5", ",", "Methods", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Then", ",", "the", "cells", "were", "treated", "with", "either", "vehicle", "(", "DMSO", ")", "or", "vemurafenib", "for", "28", "days", "." ]
+}, {
+  "sentence_tokens" : [ "Cells", "were", "sampled", "on", "the", "day", "treatment", "was", "started", "and", "7", ",", "14", ",", "21", ",", "and", "28", "days", "after", "treatment", "(", "hereafter", "designated", "initial", ",", "D", "+", "7", ",", "D", "+", "14", ",", "D", "+", "21", ",", "and", "D", "+", "28", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Before", "examining", "the", "transcriptome", "of", "single", "cells", ",", "the", "population", "of", "sgRNAs", "integrated", "into", "the", "genome", "was", "analyzed", "to", "determine", "which", "sgRNA", "was", "responsible", "for", "conferring", "resistance.First", ",", "the", "distribution", "of", "sgRNAs", "for", "each", "condition", "was", "investigated", "." ]
+}, {
+  "sentence_tokens" : [ "The", "sgRNA", "representation", "decreased", "over", "time", ",", "meaning", "that", "some", "sgRNAs", "were", "enriched", "over", "time", "(", "Fig.", "2b", ",", "Supplementary", "Fig.", "6a", ")", "." ]
+}, {
+  "sentence_tokens" : [ "An", "analysis", "using", "MAGeCK", "indicated", "that", "sgRNA", "#", "176", ",", "which", "targets", "close", "to", "codon", "E203", "in", "the", "MAP2K1", "gene", ",", "was", "enriched", "in", "both", "independent", "screens", "(", "Fig.", "2c", ",", "d", ")", "." ]
+}, {
+  "sentence_tokens" : [ "It", "should", "be", "noted", "that", "sgRNAs", "targeting", "close", "to", "codon", "E203", "(", "#", "176", ",", "#", "182", ")", "accounted", "for", "~", "45", "%", "of", "all", "sgRNAs", ",", "and", "E203K", "mutant", "cells", "constituted", "over", "70", "%", "of", "the", "total", "cell", "population", "in", "replicate", "1", ",", "suggesting", "that", "the", "abundance", "of", "sgRNAs", "close", "to", "E203", "is", "reflective", "of", "the", "frequency", "of", "E203K", "mutant", "cells", "(", "Supplementary", "Fig.", "6b", ",", "c", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Although", "we", "excluded", "the", "highly", "active", "sgRNA", "generating", "E203K", ",", "the", "data", "suggested", "that", "other", "sgRNAs", "in", "which", "the", "protospacer", "included", "the", "E203", "residue", "in", "the", "extra", "position", "of", "the", "activity", "window", "robustly", "generated", "the", "E203K", "mutation", "." ]
+}, {
+  "sentence_tokens" : [ "In", "sgRNA", "#", "176", ",", "the", "E203", "residue", "is", "in", "the", "13", "to", "15", "position", "from", "the", "PAM-distal", "end", "of", "the", "protospacer", ",", "such", "that", "the", "E203K", "mutation", "is", "predominant", "compared", "with", "the", "mutation", "in", "the", "editing", "window", "due", "to", "the", "TC", "motif", "preferred", "by", "the", "APOBEC1", "enzyme", "in", "BE3", "." ]
+}, {
+  "sentence_tokens" : [ "The", "E203K", "mutation", "was", "also", "detected", "in", "replicate", "2", ",", "with", "an", "allele", "frequency", "of", "~", "48", "%", "(", "Supplementary", "Fig.", "6c", ",", "d", ")", "." ]
+}, {
+  "sentence_tokens" : [ "These", "results", "demonstrate", "that", "generating", "a", "library", "comprised", "of", "multiple", "mutants", "is", "possible", "with", "our", "system", "and", "that", "appropriate", "targets", "can", "be", "selected", "using", "our", "platform", "." ]
+}, {
+  "sentence_tokens" : [ "However", ",", "further", "analyses", "using", "transcriptional", "data", "are", "warranted", "in", "order", "to", "identify", "other", "putative", "sgRNAs", "and", "elucidate", "the", "mechanism", "of", "enrichment", "." ]
+}, {
+  "sentence_tokens" : [ "Identifying", "cell", "subpopulations", "using", "scRNA-seq", "." ]
+}, {
+  "sentence_tokens" : [ "The", "scRNA-seq", "approach", "was", "employed", "to", "explore", "properties", "related", "to", "drug", "responses", "in", "individual", "cells", "." ]
+}, {
+  "sentence_tokens" : [ "To", "assess", "the", "transcriptional", "changes", "occurring", "in", "each", "mutant", ",", "cells", "from", "each", "experimental", "condition", "(", "before", "treatment", ":", "initial", ";", "14", "days", "after", "DMSO", "or", "vemurafenib", "treatment", ":", "DMSO", "(", "D", "+", "14", ")", "or", "Vem", "(", "D", "+", "14", ")", ";", "28", "days", "after", "DMSO", "or", "vemurafenib", "treatment", ":", "DMSO", "(", "D", "+", "28", ")", "or", "Vem", "(", "D", "+", "28", ")", ")", "were", "individually", "harvested", "and", "subjected", "to", "Drop-seq", "." ]
+}, {
+  "sentence_tokens" : [ "The", "mRNAs", "and", "sgRNAs", "in", "each", "cell", "were", "captured", "and", "converted", "into", "a", "cDNA", "library", "for", "NGS", "." ]
+}, {
+  "sentence_tokens" : [ "On", "average", ",", "we", "sequenced", "82", "million", "reads", "per", "sample", "(", "Supplementary", "Table", "1", ")", "." ]
+}, {
+  "sentence_tokens" : [ "After", "filtering", "cells", "in", "replicates", "1", "and", "2", ",", "5707", "and", "7511", "cells", "with", "more", "than", "500", "genes", "were", "identified", ",", "respectively", ",", "and", "57.4", "and", "55.2", "%", "of", "the", "cells", "were", "assigned", "as", "sgRNAs", ",", "respectively", "." ]
+}, {
+  "sentence_tokens" : [ "These", "results", "were", "comparable", "to", "data", "from", "a", "previous", "report", "." ]
+}, {
+  "sentence_tokens" : [ "We", "first", "compared", "the", "abundance", "of", "each", "sgRNA", "to", "the", "abundance", "determined", "from", "genomic", "DNA", "obtained", "from", "bulk", "cells", "." ]
+}, {
+  "sentence_tokens" : [ "High", "correlations", "were", "observed", "between", "the", "sgRNA", "and", "genomic", "DNA", "data", "(", "Fig.", "3a", ")", "." ]
+}, {
+  "sentence_tokens" : [ "In", "particular", ",", "enrichment", "of", "sgRNAs", "introducing", "the", "E203K", "mutation", "was", "observed", "in", "drug", "treated", "samples", "from", "both", "analyses", ",", "indicating", "that", "the", "transcriptome", "data", "were", "reliable", "for", "analyzing", "the", "perturbations", "associated", "with", "the", "assigned", "sgRNAs", "." ]
+}, {
+  "sentence_tokens" : [ "To", "confirm", "transcriptome", "concordance", ",", "we", "investigated", "whether", "the", "Euclidean", "distance", "between", "cells", "with", "the", "same", "sgRNAs", "in", "a", "different", "replicate", "is", "smaller", "than", "the", "distance", "to", "other", "sgRNAs", "." ]
+}, {
+  "sentence_tokens" : [ "We", "observed", "that", "the", "distance", "to", "different", "replicate", "is", "smaller", "than", "distance", "to", "different", "sgRNAs", "(", "Supplementary", "Fig.", "7a", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Similarly", ",", "the", "distance", "between", "sgRNAs", "with", "identical", "target", "strands", "and", "overlapping", "protospacer", "regions", "was", "smaller", "than", "different", "sgRNAs", "targeting", "different", "regions", "(", "Supplementary", "Fig.", "7b", ")", "." ]
+}, {
+  "sentence_tokens" : [ "We", "also", "estimated", "multiplicity", "of", "infection", "(", "MOI", ")", "and", "detection", "rate", "using", "the", "equations", "in", "Dixit", "et", "al.", "to", "determine", "whether", "sgRNA", "detection", "was", "reliable", "(", "Methods", ")", "." ]
+}, {
+  "sentence_tokens" : [ "We", "observed", "a", "66", "%", "detection", "rate", "with", "an", "inferred", "MOI", "of", "0.83", ",", "and", "a", "41", "%", "detection", "rate", "with", "an", "inferred", "MOI", "of", "0.98", ",", "for", "initial", "cells", "of", "replicate", "1", "and", "2", ",", "respectively", "(", "Supplementary", "Fig.", "8)", "." ]
+}, {
+  "sentence_tokens" : [ "We", "expect", "that", "low", "detection", "rate", "was", "due", "to", "the", "low", "complexity", "of", "the", "cells", "'", "profiled", "(", "cells", "with", "more", "than", "500", "genes", "detected", "were", "considered", ",", "and", "the", "median", "number", "of", "detected", "genes", "for", "these", "cells", "was", "894", "and", "961.5", "for", "each", "replicate", ",", "respectively", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Despite", "the", "low", "detection", "rate", ",", "our", "observations", "were", "comparable", "with", "those", "of", "Dixit", "et", "al.Next", ",", "we", "performed", "a", "principal", "component", "analysis", "(", "PCA", ")", "and", "trajectory", "analysis", "to", "determine", "whether", "there", "is", "a", "characteristic", "cluster", "pattern", "according", "to", "period", "and", "treatment", "." ]
+}, {
+  "sentence_tokens" : [ "The", "transcriptome", "of", "resistant", "cells", "at", "D", "+", "28", "and", "D", "+", "14", "was", "distinct", "from", "that", "of", "na", "i", "ve", "cells", "in", "each", "replicate", "(", "Supplementary", "Fig.", "9a", ",", "b", ")", "." ]
+}, {
+  "sentence_tokens" : [ "However", ",", "no", "common", "pattern", "was", "observed", "between", "replicates", "(", "Supplementary", "Fig.", "9c", "-", "g", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Also", ",", "an", "attempt", "was", "made", "to", "identify", "relationships", "between", "period", "and", "condition", "by", "linear", "regression", "with", "the", "ordinary", "least", "square", "model", "(", "Supplementary", "Data", "4", "-", "5", ")", "." ]
+}, {
+  "sentence_tokens" : [ "However", ",", "we", "could", "not", "observe", "a", "significant", "relationship", "(", "Supplementary", "Fig.", "10", ")", "even", "though", "many", "genes", "were", "predicted", "to", "show", "linearity", "between", "treatments", "(", "DMSO", "vs.", "vemurafenib", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Most", "of", "genes", "varied", "depending", "on", "condition", "rather", "than", "sgRNA", "specific", "responses", "." ]
+}, {
+  "sentence_tokens" : [ "Therefore", ",", "we", "focused", "on", "D", "+", "28", "cells", "to", "assess", "the", "mutational", "effects", "of", "sgRNAs", "in", "more", "detail.D", "+", "28", "cells", "were", "visualized", "using", "t-SNE", "and", "grouped", "by", "unbiased", "clustering", "(", "Fig.", "3b", "-", "e", ")", "." ]
+}, {
+  "sentence_tokens" : [ "We", "hypothesized", "that", "the", "transcriptome", "pattern", "of", "cells", "that", "acquired", "resistance", "due", "to", "the", "E203K", "mutation", "would", "differ", "from", "that", "of", "natural", "survivors", "." ]
+}, {
+  "sentence_tokens" : [ "Thus", ",", "we", "expected", "that", "the", "cluster", "including", "the", "#", "176", "sgRNA", "introducing", "E203K", "would", "be", "separated", "from", "other", "clusters", "." ]
+}, {
+  "sentence_tokens" : [ "In", "the", "t-SNE", "visualization", ",", "we", "observed", "two", "and", "three", "visually", "distinct", "clusters", "based", "on", "a", "neighborhood", "graph", "defined", "by", "Euclidean", "distances", "in", "PC", "spaces", "from", "replicates", "1", "and", "2", ",", "respectively", "." ]
+}, {
+  "sentence_tokens" : [ "One", "cluster", "in", "both", "replicate", "screens", "(", "rep1-1", ",", "rep2-1", ")", "consisted", "primarily", "of", "#", "176", "sgRNA", ",", "which", "targets", "close", "to", "E203", "in", "MAP2K1", "(", "Fig.", "3f", ",", "Supplementary", "Fig.", "11a", ")", "." ]
+}, {
+  "sentence_tokens" : [ "In", "replicate", "2", ",", "an", "additional", "cluster", "composed", "primarily", "of", "#", "56", "sgRNA", "targeting", "close", "to", "Q61", "of", "KRAS", "(", "rep2-2", ")", "was", "identified", "(", "Fig.", "3f", ",", "Supplementary", "Fig.", "11b", ")", "." ]
+}, {
+  "sentence_tokens" : [ "We", "determined", "that", "these", "clusters", "consisted", "of", "cells", "that", "had", "acquired", "resistance", "and", "therefore", "investigated", "them", "further", "to", "elucidate", "the", "resistance", "mechanism", "in", "more", "detail", "." ]
+}, {
+  "sentence_tokens" : [ "Investigation", "of", "cluster", "of", "resistance", "acquired", "cells", "." ]
+}, {
+  "sentence_tokens" : [ "We", "investigated", "whether", "transcriptional", "changes", "in", "the", "clusters", "composed", "primarily", "of", "#", "176", "sgRNA", "targeting", "close", "to", "E203", "in", "MAP2K1", "were", "related", "to", "vemurafenib", "resistance", "by", "identifying", "marker", "genes", "." ]
+}, {
+  "sentence_tokens" : [ "Among", "candidate", "up-regulated", "marker", "genes", "identified", "using", "the", "Wilcoxon", "rank", "sum", "test", ",", "genes", "were", "not", "differentially", "expressed", "in", "DMSO", "treated", "cells", "except", "for", "four", "genes", "(", "Supplementary", "Data", "6", ",", "Supplementary", "Table", "2", "and", "Supplementary", "Fig.", "12", ")", "." ]
+}, {
+  "sentence_tokens" : [ "We", "expect", "that", "the", "marker", "gene", "expression", "was", "mostly", "sensitive", "to", "the", "treatment", "condition", "." ]
+}, {
+  "sentence_tokens" : [ "The", "top", "10", "genes", "with", "lowest", "p-values", "were", "selected", "as", "\"", "signature", "genes", "\"", "(", "Supplementary", "Table", "3", ",", "Fig.", "4a", ",", "Supplementary", "Figs", "." ]
+}, {
+  "sentence_tokens" : [ "13", "and", "14", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Gene", "ontology", "(", "GO", ")", "and", "pathway", "enrichment", "analyses", "of", "the", "signature", "genes", "showed", "that", "the", "clusters", "were", "enriched", "with", "gene", "sets", "related", "to", "immune", "responses", "such", "as", "antigen", "processing", "and", "presentation", "of", "peptides", "via", "MHC", "class", "II", "(", "Fig.", "4b", ",", "c", "Supplementary", "Figs", "." ]
+}, {
+  "sentence_tokens" : [ "15", "and", "16", ")", "." ]
+}, {
+  "sentence_tokens" : [ "This", "observation", "was", "similar", "to", "the", "results", "of", "a", "previous", "report", "." ]
+}, {
+  "sentence_tokens" : [ "CD74", ",", "HLA-DRA", ",", "SLC26A2", ",", "HLA-DRB1", ",", "FOS", ",", "and", "HLA-DPA1", "were", "commonly", "identified", "as", "signature", "genes", "in", "the", "clusters", "from", "both", "replicates", "(", "Fig.", "4d", ")", "." ]
+}, {
+  "sentence_tokens" : [ "When", "we", "extended", "the", "criterion", "for", "marker", "genes", "to", "include", "all", "listed", "genes", "with", "a", "p-value", "<", "0.05", ",", "a", "total", "of", "66", "up-regulated", "genes", "and", "163", "down-regulated", "genes", "were", "identified", "as", "common", "(", "Fig.", "4d", ",", "Supplementary", "Figs", "." ]
+}, {
+  "sentence_tokens" : [ "17", "-", "19", ",", "Supplementary", "Data", "7", ")", "." ]
+}, {
+  "sentence_tokens" : [ "This", "result", "indicates", "that", "the", "members", "of", "these", "clusters", "are", "similar", "and", "that", "their", "perturbations", "are", "reproducible", "." ]
+}, {
+  "sentence_tokens" : [ "We", "assume", "that", "most", "members", "of", "these", "clusters", "are", "perturbed", "by", "the", "E203K", "mutation", "and", "associated", "with", "immune", "responses.The", "rep2-2", "cluster", "was", "composed", "primarily", "of", "#", "56", "sgRNA", ",", "which", "targets", "close", "to", "Q61", "of", "KRAS", ",", "whereas", "representation", "of", "#", "176", "sgRNA", "was", "low", "(", "Fig.", "3c", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Up-regulated", "marker", "genes", "(", "Supplementary", "Data", "7", ")", "did", "not", "overlap", "with", "differentially", "expressed", "genes", "in", "DMSO", "treated", "cells", "(", "Supplementary", "Data", "6", ",", "Supplementary", "Table", "2", ")", "." ]
+}, {
+  "sentence_tokens" : [ "The", "top", "10", "genes", "with", "the", "lowest", "p-values", "were", "selected", "as", "signature", "genes", "." ]
+}, {
+  "sentence_tokens" : [ "Ontology", "and", "pathway", "enrichment", "analyses", "were", "then", "performed", "." ]
+}, {
+  "sentence_tokens" : [ "The", "signature", "genes", "of", "this", "cluster", "(", "i.e", ".,", "rep2-2", ")", "differed", "completely", "from", "those", "of", "the", "rep1-1", "and", "rep2-1", "clusters", "(", "Fig.", "4d", ",", "Supplementary", "Fig.", "19", ",", "Supplementary", "Table", "3", "and", "Supplementary", "Data", "7", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Although", "their", "expression", "was", "not", "significant", "compared", "with", "rep1-1", "and", "rep2-1", "(", "Supplementary", "Fig.", "20", ")", ",", "the", "signature", "genes", "were", "partially", "enriched", "in", "GO", "terms", "and", "pathways", "associated", "with", "chemokine", "signaling", "(", "Fig.", "4b", ",", "c", ")", "." ]
+}, {
+  "sentence_tokens" : [ "It", "has", "been", "reported", "that", "activated", "CXC", "chemokine", "receptor", "(", "CXCR", ")", "signaling", "in", "melanoma", "cells", "contributes", "to", "vemurafenib", "resistance", "." ]
+}, {
+  "sentence_tokens" : [ "Our", "results", "indicate", "that", "the", "transcriptional", "changes", "in", "the", "rep2-2", "cluster", "are", "distinct", "from", "those", "of", "the", "rep1-1", "and", "rep2-1", "clusters", "." ]
+}, {
+  "sentence_tokens" : [ "We", "hypothesize", "that", "the", "cells", "in", "the", "rep2-2", "cluster", "composed", "primarily", "of", "#", "56", "sgRNA", "survive", "via", "a", "mechanism", "different", "from", "that", "by", "which", "cells", "in", "the", "rep1-1", "and", "rep2-1", "clusters", "mainly", "composed", "of", "#", "176", "sgRNA", "survive.We", "next", "investigated", "whether", "other", "sgRNAs", "are", "common", "to", "rep1-1", ",", "rep2-1", ",", "and", "rep2-2", "." ]
+}, {
+  "sentence_tokens" : [ "We", "identified", "nine", ",", "eight", ",", "and", "five", "sgRNAs", "with", "more", "than", "two", "cells", "in", "rep1-1", ",", "rep2-1", ",", "and", "rep2-2", ",", "respectively", "(", "Supplementary", "Table", "4", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Of", "these", "sgRNAs", ",", "two", "(", "#", "176", ",", "#", "182", ")", "that", "could", "introduce", "E203K", "in", "MAP2K1", "were", "common", "in", "these", "clusters", ",", "and", "the", "#", "56", ",", "#", "126", ",", "and", "#", "217", "sgRNAs", "account", "partially", "or", "almost", "completely", "for", "the", "rep2-1", "and", "rep2-2", "clusters", "(", "Supplementary", "Fig.", "21", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Other", "sgRNAs", "were", "minor", "components", "(", "1.4", "%", "on", "average", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Mutations", "that", "can", "be", "introduced", "by", "these", "sgRNAs", "(", "#", "56", ",", "#", "126", ",", "and", "#", "217", ")", "are", "thus", "potential", "candidates", "for", "conferring", "resistance", "to", "vemurafenib", "." ]
+}, {
+  "sentence_tokens" : [ "We", "next", "examined", "whether", "these", "sgRNAs", "introduce", "cognate", "mutations", "(", "Supplementary", "Table", "5", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Validation", "of", "genomic", "loci", "via", "deep", "sequencing", "." ]
+}, {
+  "sentence_tokens" : [ "We", "performed", "deep", "sequencing", "of", "genomic", "loci", "targeted", "by", "the", "candidate", "sgRNAs", "to", "verify", "the", "introduced", "mutations", "." ]
+}, {
+  "sentence_tokens" : [ "Genomic", "loci", "of", "the", "#", "56", ",", "#", "126", ",", "and", "#", "217", "sgRNAs", "were", "sequenced", "." ]
+}, {
+  "sentence_tokens" : [ "An", "indel", "mutation", "(", "7.7", "%", ")", "was", "introduced", "in", "the", "target", "region", "of", "#", "56", "sgRNA", "(", "Supplementary", "Fig.", "22a", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Because", "we", "used", "BE3", ",", "which", "employs", "Cas9", "nickase", ",", "the", "indel", "mutation", "could", "be", "introduced", "into", "a", "small", "proportion", "of", "cells", "." ]
+}, {
+  "sentence_tokens" : [ "There", "were", "two", "main", "types", "of", "in-frame", "indel", "mutations", "introduced", "(", "c.171insCTGTTGGATATTCTCGAC", "and", "c.176delCAG", ")", ",", "and", "no", "substitutions", "were", "observed", "(", "Supplementary", "Fig.", "22b", ",", "c", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Enrichment", "in", "the", "indel", "mutations", "was", "observed", "compared", "to", "control", "cells", "treated", "with", "DMSO", "(", "0.03", "%", ")", "." ]
+}, {
+  "sentence_tokens" : [ "We", "also", "observed", "that", "indel", "introduction", "via", "lentiCRISPR", "system", "with", "the", "same", "#", "56", "sgRNA", "conferred", "vemurafenib", "resistance", "." ]
+}, {
+  "sentence_tokens" : [ "Although", "the", "total", "frequency", "of", "indels", "decreased", ",", "in-frame", "insertions", "were", "enriched", "(", "3.21-fold", "average", ",", "standard", "error", "of", "mean", "=", "0.895", "in", "triplicate", "experiments", ")", "during", "vemurafenib", "treatment", "compared", "to", "DMSO", "treatment", "(", "Supplementary", "Fig.", "23", ")", "." ]
+}, {
+  "sentence_tokens" : [ "These", "mutations", "were", "not", "reported", "in", "previous", "studies", ",", "but", "region", "in", "which", "the", "mutations", "were", "introduced", "is", "next", "to", "the", "sequence", "encoding", "the", "Q61", "residue", "of", "K-Ras", ",", "which", "is", "involved", "in", "constitutive", "activation", "of", "intrinsic", "GTPase", "activity", "." ]
+}, {
+  "sentence_tokens" : [ "We", "concluded", "that", "cells", "with", "the", "#", "56", "sgRNA", "that", "introduced", "indel", "mutations", "next", "to", "the", "KRAS", "Q61", "encoding", "sequence", "conferred", "resistance", "to", "vemurafenib", "." ]
+}, {
+  "sentence_tokens" : [ "In", "contrast", ",", "deep", "sequencing", "of", "the", "target", "regions", "of", "the", "#", "126", "and", "#", "217", "sgRNAs", "did", "not", "confirm", "introduction", "of", "cognate", "mutations", "(", "Supplementary", "Fig.", "24", ")", "." ]
+}, {
+  "sentence_tokens" : [ "We", "also", "observed", "weak", "editing", "ability", "for", "#", "126", "and", "#", "217", "sgRNAs", ",", "and", "edited", "cells", "were", "not", "enriched", "in", "single", "locus", "editing", "experiments", "(", "Supplementary", "Fig.", "25", ")", "." ]
+}, {
+  "sentence_tokens" : [ "We", "believed", "that", "other", "biological", "processes", "such", "as", "epigenetic", "reprogramming", "or", "RNA", "editing", "via", "rAPOBEC1", "should", "be", "investigated", "to", "explain", "inconsistent", "survival", "during", "pooled", "screening.In", "summary", ",", "we", "first", "observed", "enrichment", "of", "the", "#", "176", "sgRNA", "in", "sgRNA", "abundance", "analyses", "and", "considered", "the", "#", "56", ",", "#", "126", ",", "and", "#", "217", "sgRNAs", "as", "additional", "candidates", "as", "a", "result", "of", "transcriptome", "analyses", "." ]
+}, {
+  "sentence_tokens" : [ "Of", "these", "selected", "sgRNAs", ",", "those", "targeting", "close", "to", "the", "sequences", "encoding", "E203", "of", "the", "MAP2K1", "gene", "and", "Q61", "of", "the", "KRAS", "gene", "(", "#", "176", ",", "#", "56", ")", "generated", "cognate", "mutations", "and", "induced", "different", "transcriptional", "changes", "." ]
+}, {
+  "sentence_tokens" : [ "Discussion", "." ]
+}, {
+  "sentence_tokens" : [ "In", "the", "present", "study", ",", "we", "established", "a", "platform", "combining", "CRISPR", "RNA", "guided", "deaminase", "and", "scRNA-seq", "technologies", "that", "enables", "the", "introduction", "of", "substitution", "mutations", "into", "multiple", "genes", "and", "facilitates", "their", "functional", "screening", "and", "measurement", "of", "perturbations", "in", "single", "cells", "." ]
+}, {
+  "sentence_tokens" : [ "We", "demonstrated", "the", "introduction", "of", "substitution", "mutations", "into", "each", "exon", "of", "three", "genes", "and", "screened", "for", "substitution", "mutations", "conferring", "resistance", "to", "vemurafenib", "using", "population", "analyses.The", "results", "of", "population", "analyses", "indicated", "an", "enrichment", "of", "the", "E203K", "substitution", "mutation", "in", "MAP2K1", ",", "consistent", "with", "a", "previous", "study", "." ]
+}, {
+  "sentence_tokens" : [ "Even", "though", "the", "pattern", "of", "substitution", "mutations", "(", "c.607", "G", ">", "A", ",", "c.609", "G", ">", "A", ")", "is", "different", "with", "naturally", "occurring", "substitution", "(", "c.607", "G", ">", "A", ")", ",", "variants", "which", "generate", "the", "same", "amino", "acid", "change", "(", "E203K", ")", "were", "enriched", "under", "vemurafenib", "selection", "." ]
+}, {
+  "sentence_tokens" : [ "This", "result", "highlights", "that", "our", "platform", "could", "be", "used", "for", "screening", "clinically", "actionable", "SNVs", "." ]
+}, {
+  "sentence_tokens" : [ "Screens", "were", "also", "done", "in", "a", "simple", "and", "cost-effective", "process", "compared", "to", "arrayed", "screens", "." ]
+}, {
+  "sentence_tokens" : [ "This", "highlights", "that", "our", "platform", "has", "the", "same", "advantage", "as", "other", "pooled", "screening", "methods", "." ]
+}, {
+  "sentence_tokens" : [ "In", "addition", ",", "by", "employing", "scRNA-seq", "technology", ",", "we", "identified", "the", "perturbation", "as", "well", "as", "the", "signature", "of", "SNVs", "at", "the", "transcriptome", "level", "." ]
+}, {
+  "sentence_tokens" : [ "We", "observed", "activation", "of", "genes", "associated", "with", "immune", "response", "with", "the", "E203K", "mutation", "introduced", "into", "cells", ",", "and", "activation", "of", "chemokine", "signaling", "in", "indel", "introduced", "cells", "." ]
+}, {
+  "sentence_tokens" : [ "The", "indels", "were", "especially", "focused", "at", "the", "Q61", "locus", "of", "the", "KRAS", "gene", "and", "in-frame", "indels", "were", "dominant", "over", "than", "frame-shift", "indels.We", "believe", "that", "validation", "procedure", "is", "very", "important", "to", "avoid", "mis", "interpretation", "because", "unintended", "mutations", "could", "also", "be", "enriched", "by", "the", "selection", "such", "as", "the", "indels", "introduced", "by", "sgRNA", "#", "56", "in", "the", "KRAS", "gene", "." ]
+}, {
+  "sentence_tokens" : [ "A", "recent", "study", "using", "targeted", "AID", "reported", "the", "introduction", "of", "multiple", "SNVs", "and", "assessed", "the", "effect", "of", "the", "introduced", "SNVs", "on", "the", "mechanism", "of", "imatinib", "resistance", "." ]
+}, {
+  "sentence_tokens" : [ "The", "introduced", "SNVs", "were", "confirmed", "and", "validated", "by", "amplification", "of", "targeted", "exons", "using", "genomic", "DNA", "." ]
+}, {
+  "sentence_tokens" : [ "However", ",", "this", "technology", "was", "hard", "to", "expand", "to", "include", "multiple", "genes", "or", "multiple", "exons", ",", "because", "the", "technology", "requires", "amplification", "of", "individual", "regions", "for", "confirmation", "." ]
+}, {
+  "sentence_tokens" : [ "Multiple", "PCR", "reactions", "should", "be", "performed", "to", "confirm", "individual", "loci", "." ]
+}, {
+  "sentence_tokens" : [ "On", "the", "other", "hand", ",", "our", "platform", "utilized", "a", "lentivirus", "expressing", "sgRNA", "that", "can", "be", "tracked", "by", "single", "amplification", "of", "the", "integrated", "sgRNA", "so", "that", "we", "could", "expand", "our", "technology", "to", "include", "all", "exons", "in", "three", "genes", "." ]
+}, {
+  "sentence_tokens" : [ "Combining", "this", "sgRNA", "approach", "with", "transcriptome", "analysis", ",", "we", "could", "narrow", "the", "scope", "by", "filtering", "out", "marginal", "sgRNAs", "." ]
+}, {
+  "sentence_tokens" : [ "In", "this", "way", ",", "only", "a", "small", "number", "of", "PCR", "reactions", "which", "target", "the", "selected", "candidates", "are", "required", "to", "confirm", "which", "mutation", "was", "introduced.Improved", "engineering", "efficiency", "could", "provide", "for", "more-accurate", "assessment", "of", "the", "perturbations", "associated", "with", "individual", "sgRNAs", "." ]
+}, {
+  "sentence_tokens" : [ "A", "knock-out", "-", "based", "study", "reported", "that", "approximately", "70", "%", "of", "sgRNA", "bearing", "cells", "can", "be", "edited", "using", "sgRNA", "." ]
+}, {
+  "sentence_tokens" : [ "In", "contrast", ",", "experiments", "using", "BE3", "indicated", "that", "5", "-", "20", "%", "of", "sgRNA", "bearing", "cells", "can", "be", "edited", "using", "sgRNAs", "." ]
+}, {
+  "sentence_tokens" : [ "These", "data", "suggest", "the", "possibility", "of", "discordant", "transcriptomic", "changes", "resulting", "from", "use", "of", "the", "same", "sgRNA", ",", "which", "could", "create", "confusion", "in", "analysis", "." ]
+}, {
+  "sentence_tokens" : [ "Optimization", "of", "the", "engineering", "efficiency", "can", "be", "achieved", "using", "BE4", "or", "BE4max", "." ]
+}, {
+  "sentence_tokens" : [ "By", "achieving", "a", "higher", "efficiency", "in", "base", "editing", "(", "i.e", ".,", "increasing", "the", "likelihood", "that", "sgRNA", "bearing", "cells", "will", "be", "engineered", ")", ",", "perturbations", "in", "a", "larger", "number", "of", "cells", "can", "be", "characterized", "." ]
+}, {
+  "sentence_tokens" : [ "In", "addition", ",", "we", "expect", "that", "the", "use", "of", "a", "higher", "throughput", "device", "such", "as", "10x", "Genomics", "Chromium", "would", "help", "to", "more", "accurately", "assess", "the", "perturbations", "after", "filtering", "marginal", "cells.We", "observed", "C", "to", "T", "conversion", "outside", "the", "'", "activity", "window", "'", "for", "#", "176", "in", "the", "multiplex", "experiment", "." ]
+}, {
+  "sentence_tokens" : [ "This", "conversion", "took", "place", "to", "a", "similar", "degree", "as", "'", "C", "'", "inside", "the", "'", "activity", "window", "'", ",", "but", "the", "cells", "with", "conversions", "outside", "were", "enriched", "during", "vemurafenib", "selection", "." ]
+}, {
+  "sentence_tokens" : [ "This", "conversion", "was", "presumably", "because", "the", "'", "TC", "'", "motif", "is", "preferentially", "edited", "by", "BE3", "." ]
+}, {
+  "sentence_tokens" : [ "Therefore", ",", "we", "should", "consider", "C", "to", "T", "conversions", "outside", "of", "the", "'", "activity", "window", "'", "when", "designing", "a", "screening", "experiment.We", "envisage", "that", "our", "approach", "could", "be", "optimized", "further", "by", "employing", "an", "alternative", "to", "BE3", "protein", "." ]
+}, {
+  "sentence_tokens" : [ "Recently", "developed", "BE", "variants", "and", "other", "effector", "proteins", "provide", "a", "broader", "range", "of", "targets", ",", "thus", "increasing", "the", "analytical", "coverage", "of", "diseases", "related", "to", "SNVs", "." ]
+}, {
+  "sentence_tokens" : [ "Off-target", "editing", "due", "to", "the", "CRISPR", "or", "non", "specific", "deaminase", "activity", "would", "also", "be", "considered", "." ]
+}, {
+  "sentence_tokens" : [ "Recent", "reports", "showed", "BE3", "induces", "off-target", "SNVs", "on", "DNA", "and", "RNA", ",", "even", "if", "the", "loci", "were", "not", "potential", "off-targets", "of", "the", "guide", "sequence", "." ]
+}, {
+  "sentence_tokens" : [ "These", "off-targets", "could", "hamper", "interpretation", "of", "mutations", "related", "to", "the", "function", "of", "interest", "." ]
+}, {
+  "sentence_tokens" : [ "Replacement", "of", "BE3", "with", "a", "variant", "deaminase", "could", "reduce", "the", "off-target", "activity", "." ]
+}, {
+  "sentence_tokens" : [ "In", "addition", ",", "we", "observed", "heterogenous", "populations", "of", "edited", "cells", "through", "processive", "deamination", "(", "Supplementary", "Fig.", "2b", ",", "Supplementary", "Fig.", "26", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Although", "cells", "with", "specific", "mutations", "that", "affect", "protein", "function", "are", "expected", "to", "be", "enriched", "during", "screening", ",", "using", "another", "base", "editor", "would", "permit", "reduced", "processivity", "and", "unwanted", "C", "to", "T", "conversions", "in", "the", "target", "strand", ",", "generating", "a", "less", "heterogeneous", "population", "of", "edited", "cells", "." ]
+}, {
+  "sentence_tokens" : [ "We", "believe", "that", "more", "comprehensive", "analyses", "of", "mutations", "present", "could", "be", "achieved", "by", "optimizing", "protein", "selection.We", "used", "oligo-dT", "sequence", "-", "linked", "beads", "to", "capture", "polyadenylated", "mRNAs", "in", "the", "scRNA-seq", "experiment", "." ]
+}, {
+  "sentence_tokens" : [ "By", "synthesizing", "target", "sequence", "-", "linked", "beads", ",", "targeted", "sequences", "could", "be", "captured", "directly", "without", "laborious", "PCR", "amplification", "of", "each", "targeted", "sequence", "." ]
+}, {
+  "sentence_tokens" : [ "Alternatively", ",", "ligating", "target", "sequences", "to", "conventional", "beads", "could", "also", "be", "used", "." ]
+}, {
+  "sentence_tokens" : [ "Another", "application", "involves", "coupling", "of", "methods", "targeting", "individual", "cells", "using", "barcoding", "." ]
+}, {
+  "sentence_tokens" : [ "A", "target", "cell", "'", "s", "cDNA", "can", "be", "amplified", "using", "this", "method", "in", "order", "to", "analyze", "the", "transcriptome", ",", "and", "the", "method", "is", "applicable", "to", "the", "study", "of", "cells", "with", "known", "mutations", "and", "validation", "of", "cells", "enriched", "with", "specific", "sgRNAs", "." ]
+}, {
+  "sentence_tokens" : [ "Furthermore", ",", "although", "we", "demonstrated", "the", "effect", "of", "SNVs", "introduced", "into", "exons", "of", "three", "genes", "in", "the", "present", "study", ",", "further", "exploration", "of", "other", "exons", "in", "genes", "related", "to", "cancer", "is", "expected", "to", "accelerate", "the", "identification", "of", "cancer", "driving", "and", "drug", "resistance", "mutations", "." ]
+}, {
+  "sentence_tokens" : [ "Unlike", "the", "case", "of", "knockout", "screens", "resulting", "in", "similar", "phenotypes", "independent", "of", "the", "target", "residues", "along", "the", "coding", "sequence", ",", "phenotype", "of", "substitution", "mutation", "is", "very", "diverse", ",", "dependent", "upon", "the", "residue", "and", "mutation", "type", "even", "if", "the", "targeted", "gene", "is", "same.When", "conducting", "a", "screen", "targeting", "multiple", "loci", "for", "each", "gene", ",", "deep", "consideration", "of", "organizing", "target", "list", "and", "strategy", "for", "selecting", "phenotype", "is", "required", "to", "avoid", "unintended", "mutation", "such", "as", "indels", "and", "editing", "outside", "the", "window", "." ]
+}, {
+  "sentence_tokens" : [ "As", "the", "number", "of", "target", "increases", ",", "reproducibility", "and", "precision", "is", "critical", "to", "distinguish", "hits", "from", "the", "false", "positive", "." ]
+}, {
+  "sentence_tokens" : [ "However", ",", "unintended", "mutation", "results", "in", "heterogenous", "profile", "and", "makes", "assessment", "of", "mutation", "complicated", "." ]
+}, {
+  "sentence_tokens" : [ "We", "expect", "that", "listing", "of", "targets", "focused", "on", "clinically", "important", "mutations", "and", "strong", "selection", "conditions", "would", "aid", "to", "reduce", "ambiguous", "hits.According", "to", "our", "simulation", ",", "our", "system", "could", "cover", "36,211", "missense", "mutations", "and", "3,491", "nonsense", "mutations", "among", "the", "mutations", "listed", "in", "the", "CGC", "." ]
+}, {
+  "sentence_tokens" : [ "This", "indicates", "that", "a", "large", "proportion", "of", "known", "cancer", "related", "mutations", "could", "be", "generated", "and", "examined", "using", "our", "system", "." ]
+}, {
+  "sentence_tokens" : [ "When", "considering", "only", "the", "possible", "types", "of", "missense", "mutations", "that", "can", "result", "from", "conversion", "of", "the", "13", "canonical", "amino", "acids", ",", "our", "system", "covered", "56", "%", "of", "the", "mutations", "listed", "in", "the", "CGC", "(", "Supplementary", "Fig.", "1b", ")", "." ]
+}, {
+  "sentence_tokens" : [ "We", "expect", "our", "platform", "to", "be", "extended", "to", "the", "examination", "of", "substitution", "mutations", "related", "to", "a", "variety", "of", "biological", "responses", "." ]
+}, {
+  "sentence_tokens" : [ "Methods", "." ]
+}, {
+  "sentence_tokens" : [ "Construction", "and", "establishment", "of", "BE3", "expressing", "cells", "." ]
+}, {
+  "sentence_tokens" : [ "The", "piggyBac-BE3-GFP", "plasmid", "was", "constructed", "by", "insertion", "of", "the", "BE3-blasticidin", "fragment", "into", "plasmid", "PB-CA", "(", "Addgene", "#", "20960", ")", "." ]
+}, {
+  "sentence_tokens" : [ "The", "BE3-blasticidin", "fragment", "was", "obtained", "by", "assembly", "of", "the", "BE3", "fragment", "amplified", "from", "the", "pCMV-BE3", "vector", "(", "Addgene", "#", "73021", ")", "and", "the", "blasticidin", "fragment", "amplified", "from", "lentiCas9-Blast", "(", "Addgene", "#", "52962", ")", "." ]
+}, {
+  "sentence_tokens" : [ "To", "establish", "a", "line", "of", "BE3", "expressing", "cells", ",", "we", "co-transfected", "A375", "cells", "with", "transposase", "(", "pPbase", ",", "Sanger", "Institute", ",", "UK", ")", "and", "the", "piggyBac-BE3-GFP", "plasmid", "at", "a", "1:4", "molar", "ratio", "using", "Lipofectamine", "3000", "(", "Invitrogen", ")", "." ]
+}, {
+  "sentence_tokens" : [ "At", "48", "h", "after", "transfection", ",", "the", "cells", "were", "cultured", "in", "medium", "containing", "5", "mu", "g/mL", "of", "blasticidin", "for", "14", "days", "to", "enrich", "for", "BE3", "expressing", "cells", "." ]
+}, {
+  "sentence_tokens" : [ "Plasmid", "piggyBac-BE3-GFP", "is", "available", "upon", "request", "." ]
+}, {
+  "sentence_tokens" : [ "sgRNA", "design", "." ]
+}, {
+  "sentence_tokens" : [ "All", "sgRNAs", "were", "designed", "using", "an", "in-house", "program", "." ]
+}, {
+  "sentence_tokens" : [ "We", "searched", "for", "all", "\"", "GGs", "\"", "and", "\"", "AGs", "\"", "as", "PAM", "sequences", "and", "considered", "sgRNA", "sequences", "in", "the", "form", "5", "'-N", "-PAM-3", "'", "as", "candidates", "in", "the", "CDS", "region", "of", "every", "gene", "isoform", "." ]
+}, {
+  "sentence_tokens" : [ "The", "candidates", "were", "examined", "to", "determine", "whether", "at", "least", "one", "\"", "C", "\"", "was", "in", "the", "activity", "window", "(", "4", "to", "8", "position", "from", "the", "PAM-distal", "end", "of", "the", "protospacer", ")", "and", "that", "a", "\"", "C", "\"", "was", "in", "the", "CDS", "region", "." ]
+}, {
+  "sentence_tokens" : [ "All", "possible", "mutations", "in", "the", "activity", "window", "were", "calculated", ",", "and", "the", "associated", "amino", "acid", "changes", "were", "classified", "as", "either", "silent", ",", "nonsense", ",", "or", "missense", "by", "reference", "to", "the", "codon", "frame", "and", "strand", "of", "the", "gene", "." ]
+}, {
+  "sentence_tokens" : [ "All", "information", "regarding", "region", "and", "frame", "were", "obtained", "from", "a", "GTF", "file", "of", "hg19", "downloaded", "from", "the", "UCSC", "Table", "Browser", "." ]
+}, {
+  "sentence_tokens" : [ "Cell", "culture", "." ]
+}, {
+  "sentence_tokens" : [ "A375", "(", "ATCC", ")", "and", "HEK293T", "(", "ATCC", ")", "cells", "were", "maintained", "in", "RPMI", "medium", "(", "for", "A375", "cells", ")", "or", "DMEM", "(", "for", "HEK293T", "cells", ")", "(", "Gibco", ")", "supplemented", "with", "10", "%", "fetal", "bovine", "serum", "(", "Gibco", ")", "and", "penicillin", "and", "streptomycin", "(", "Gibco", ")", "in", "a", "humidified", "5", "%", "CO", "incubator", "at", "37", "degrees", "C.", "All", "cell", "lines", "were", "authenticated", "by", "ATCC", "and", "tested", "negative", "for", "mycoplasma", "." ]
+}, {
+  "sentence_tokens" : [ "Solutions", "of", "vemurafenib", "(", "Selleckchem", ")", "were", "prepared", "by", "dissolving", "the", "colorless", "powder", "in", "DMSO", "(", "BioReagent", "grade", ";", "Sigma-Aldrich", ")", "." ]
+}, {
+  "sentence_tokens" : [ "DMSO", "was", "used", "as", "a", "vehicle", "control", "." ]
+}, {
+  "sentence_tokens" : [ "To", "analyze", "the", "response", "to", "vemurafenib", ",", "cells", "were", "treated", "with", "either", "DMSO", "alone", "or", "2", "mu", "M", "vemurafenib", "in", "DMSO", "." ]
+}, {
+  "sentence_tokens" : [ "Testing", "of", "420", "sgRNA", "library", "and", "control", "experiments", "." ]
+}, {
+  "sentence_tokens" : [ "Two", "oligos", "were", "ordered", "in", "the", "following", "form", ":", "(", "5", "'-CACCG-[", "20nt", "spacer", "sequence", "]", "-", "3", "'", ",", "5", "'-AAAC-[", "reverse", "complementary", "sequence", "of", "20nt", "spacer", "]-C-3", "'", ")", "for", "#", "159", ",", "#", "25", ",", "#", "354", ",", "non", "targeting", ",", "and", "safe", "targeting", "sgRNAs", "." ]
+}, {
+  "sentence_tokens" : [ "Spacer", "sequences", "for", "non", "targeting", "and", "safe", "targeting", "sgRNAs", "are", "5", "'-", "GTTATGCGACGTTCCGCATA-3", "'", ",", "5", "'-GATCTTAGTGCCTTCACCAC-3", "'", ",", "respectively", "." ]
+}, {
+  "sentence_tokens" : [ "We", "selected", "one", "unassigned", "guide", "(", "0None_none_UNA1_211552.253", ")", "as", "a", "non", "targeting", "sgRNA", "." ]
+}, {
+  "sentence_tokens" : [ "For", "designing", "safe", "targeting", "sgRNA", ",", "we", "first", "defined", "a", "safe", "region", "as", "an", "intersection", "of", "regions", "classified", "in", "inactive", "chromatin", "states", "(", "Quies", ",", "ReprPC", "or", "Het", ")", "from", "the", "Roadmap", "Epigenomics", "project", "database", "." ]
+}, {
+  "sentence_tokens" : [ "From", "this", "safe", "region", ",", "we", "picked", "a", "target", "sequence", "which", "has", "a", "PAM", "sequence", "and", "is", "close", "to", "the", "MAP2K1", "gene", "." ]
+}, {
+  "sentence_tokens" : [ "Oligos", "were", "then", "annealed", "and", "cloned", "into", "BsmBI", "digested", "lenti-guide-puro", "or", "lentiCRISPR", "plasmids", "by", "ligation", "reaction", "." ]
+}, {
+  "sentence_tokens" : [ "The", "lentivirus", "was", "then", "generated", "by", "co-transfecting", "the", "plasmid", "library", ",", "psPAX2", "(", "Addgene", "#", "12260", ")", ",", "and", "pMD2.G", "(", "Addgene", "#", "12259", ")", "into", "HEK293T", "cells", "using", "Lipofectamine", "3000", "(", "Invitrogen", ")", "according", "to", "the", "manufacturer", "'", "s", "protocol", "." ]
+}, {
+  "sentence_tokens" : [ "A375", "cells", "were", "transduced", "with", "the", "lentivirus", "at", "a", "MOI", "of", "0.1", "-", "0.3", "in", "each", "of", "three", "independent", "biological", "replicates", "." ]
+}, {
+  "sentence_tokens" : [ "The", "cells", "were", "selected", "by", "culturing", "in", "medium", "containing", "either", "1", "mu", "g/mL", "puromycin", "for", "7", "days", ",", "or", "DMSO", "or", "2", "mu", "M", "vemurafenib", "for", "14", "days", "." ]
+}, {
+  "sentence_tokens" : [ "All", "of", "these", "reactions", "were", "done", "independently", "on", "five", "sgRNAs", "." ]
+}, {
+  "sentence_tokens" : [ "Dose", "response", "curve", "." ]
+}, {
+  "sentence_tokens" : [ "After", "puromycin", "selection", "of", "cells", "individually", "transduced", "by", "#", "159", ",", "non", "targeting", ",", "or", "safe", "targeting", "sgRNA", ",", "cells", "were", "plated", "into", "96-well", "plates", "(", "1", "x", "10", "cells", "and", "well", "with", "four", "biological", "replicates", ")", "." ]
+}, {
+  "sentence_tokens" : [ "After", "16", "h", ",", "media", "was", "replaced", "with", "media", "containing", "the", "indicated", "vemurafenib", "concentrations", "and", "refreshed", "every", "other", "day", "." ]
+}, {
+  "sentence_tokens" : [ "After", "3", "days", "of", "treatment", ",", "cell", "viability", "was", "measured", "using", "thiazolyl", "blue", "tetrazolium", "bromide", "(", "Sigma-Aldrich", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Cells", "were", "incubated", "with", "thiazolyl", "blue", "tetrazolium", "bromide", "solution", "at", "a", "final", "concentration", "of", "0.45", "mg/mL", "for", "3.5", "h.", "DMSO", "(", "GC", "grade", ";", "Sigma-Aldrich", ")", "was", "then", "added", "and", "the", "absorbance", "(", "570", "-", "630", "nm", ")", "was", "measured", "on", "a", "microplate", "reader", "." ]
+}, {
+  "sentence_tokens" : [ "Generation", "of", "sgRNA", "library", "plasmid", ",", "virus", ",", "and", "infection", "." ]
+}, {
+  "sentence_tokens" : [ "Designed", "sgRNA", "sequences", "were", "synthesized", "using", "programmable", "microarrays", "(", "CustomArray", ",", "USA", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Sequences", "are", "listed", "in", "Supplementary", "Data", "3", "." ]
+}, {
+  "sentence_tokens" : [ "Oligos", "were", "cleaved", "from", "the", "microarray", "and", "PCR", "amplified", "using", "chip_fwd", "and", "chip_rev", "." ]
+}, {
+  "sentence_tokens" : [ "PCR", "cycling", "was", "performed", "as", "follows", ":", "95", "degrees", "C", "for", "3", "min", ",", "25", "cycles", "of", "98", "degrees", "C", "for", "20", "s", ",", "56", "degrees", "C", "for", "15", "s", ",", "72", "degrees", "C", "for", "30", "s", ",", "and", "72", "degrees", "C", "for", "1", "min", "." ]
+}, {
+  "sentence_tokens" : [ "To", "ensure", "high-yield", "coverage", "of", "the", "PCR", "products", ",", "eight", "repeats", "of", "the", "PCR", "reaction", "were", "conducted", "." ]
+}, {
+  "sentence_tokens" : [ "The", "second", "PCR", "was", "performed", "using", "the", "chip_2nd_fwd", "and", "chip_2nd_rev", "primers", "." ]
+}, {
+  "sentence_tokens" : [ "The", "PCR", "cycling", "conditions", "were", "95", "degrees", "C", "for", "3", "min", ",", "followed", "by", "6", "cycles", "of", "98", "degrees", "C", "for", "20", "s", ",", "58", "degrees", "C", "for", "15", "s", ",", "72", "degrees", "C", "for", "30", "s", ",", "and", "1", "cycle", "of", "72", "degrees", "C", "for", "1", "min", "." ]
+}, {
+  "sentence_tokens" : [ "The", "primers", "used", "in", "these", "steps", "are", "listed", "in", "Supplementary", "Table", "6", "." ]
+}, {
+  "sentence_tokens" : [ "PCR", "products", "were", "purified", "using", "2.0", "x", "(", "by", "volume", ")", "AMPure", "XP", "beads", "(", "Beckman", "Coulter", ")", "." ]
+}, {
+  "sentence_tokens" : [ "The", "purified", "amplicons", "were", "cloned", "into", "BsmBI", "(", "NEB", ")-digested", "CROPseq-Guide-Puro", "plasmids", "(", "Addgene", "#", "86708", ")", "by", "Gibson", "assembly", ",", "as", "described", "previously", "." ]
+}, {
+  "sentence_tokens" : [ "To", "ensure", "high-yield", "coverage", ",", "four", "repeats", "of", "the", "Gibson", "reactions", "were", "performed", "." ]
+}, {
+  "sentence_tokens" : [ "The", "products", "of", "the", "Gibson", "reactions", "were", "combined", "and", "electroporated", "into", "Endura", "cells", "(", "Lucigen", ")", "following", "the", "manufacturer", "'", "s", "protocol", "." ]
+}, {
+  "sentence_tokens" : [ "A", "1000-fold", "dilution", "of", "the", "full", "transformation", "was", "spread", "on", "carbenicillin", "(", "50", "mu", "g/mL", ")", "LB", "agar", "plates", "to", "determine", "the", "library", "coverage", ",", "and", "the", "remainder", "of", "the", "culture", "was", "incubated", "overnight", "in", "200", "ml", "of", "LB", "medium", "." ]
+}, {
+  "sentence_tokens" : [ "By", "counting", "the", "number", "of", "colonies", "on", "the", "plate", ",", ">", "300", "x", "library", "coverage", "was", "ensured", "." ]
+}, {
+  "sentence_tokens" : [ "The", "plasmid", "library", "was", "then", "extracted", "using", "an", "EndoFree", "Plasmid", "Maxi", "kit", "(", "Qiagen", ")", "." ]
+}, {
+  "sentence_tokens" : [ "The", "lentivirus", "was", "then", "generated", "by", "co-transfecting", "the", "plasmid", "library", ",", "psPAX2", "(", "Addgene", "#", "12260", ")", ",", "and", "pMD2.G", "(", "Addgene", "#", "12259", ")", "into", "HEK293T", "cells", "using", "Lipofectamine", "3000", "(", "Invitrogen", ")", "according", "to", "the", "manufacturer", "'", "s", "protocol.A375", "cells", "were", "transduced", "with", "the", "lentivirus", "at", "a", "multiplicity", "of", "infection", "of", "0.1", "-", "0.3", "in", "each", "of", "two", "independent", "biological", "replicates", "." ]
+}, {
+  "sentence_tokens" : [ "The", "cells", "were", "selected", "by", "culturing", "in", "medium", "containing", "either", "1", "mu", "g/mL", "of", "puromycin", "for", "14", "days", "or", "DMSO", "or", "2", "mu", "M", "vemurafenib", "for", "28", "days", "." ]
+}, {
+  "sentence_tokens" : [ "Validation", "of", "screening", "results", "." ]
+}, {
+  "sentence_tokens" : [ "Two", "oligos", "were", "ordered", "in", "the", "following", "form", ":", "(", "5", "'-CACCG-[", "20nt", "spacer", "sequence", "]", "-", "3", "'", ",", "5", "'-AAAC-[", "reverse", "complementary", "sequence", "of", "20nt", "spacer", "]-C-3", "'", ")", "for", "#", "126", ",", "#", "56", ",", "and", "#", "217", "sgRNAs", "." ]
+}, {
+  "sentence_tokens" : [ "Oligos", "were", "then", "annealed", "and", "cloned", "into", "BsmBI", "digested", "lenti-guide-puro", "or", "lentiCRISPR", "plasmids", "by", "ligation", "reaction", "." ]
+}, {
+  "sentence_tokens" : [ "The", "lentivirus", "was", "then", "generated", "by", "co-transfecting", "the", "plasmid", "library", ",", "psPAX2", "(", "Addgene", "#", "12260", ")", ",", "and", "pMD2.G", "(", "Addgene", "#", "12259", ")", "into", "HEK293T", "cells", "using", "Lipofectamine", "3000", "(", "Invitrogen", ")", "according", "to", "the", "manufacturer", "'", "s", "protocol", "." ]
+}, {
+  "sentence_tokens" : [ "A375", "cells", "were", "transduced", "with", "the", "lentivirus", "at", "an", "MOI", "of", "0.1", "-", "0.3", "in", "each", "of", "two", "independent", "biological", "replicates", "." ]
+}, {
+  "sentence_tokens" : [ "The", "cells", "were", "selected", "by", "culturing", "in", "medium", "containing", "either", "1", "mu", "g/mL", "puromycin", "for", "7", "days", ",", "or", "DMSO", "or", "2", "mu", "M", "vemurafenib", "for", "14", "days", "." ]
+}, {
+  "sentence_tokens" : [ "All", "of", "these", "reactions", "were", "done", "independently", "on", "four", "sgRNAs", "." ]
+}, {
+  "sentence_tokens" : [ "Targeted", "sequencing", "for", "420", "sgRNA", "targeting", "loci", "." ]
+}, {
+  "sentence_tokens" : [ "Targeted", "sequencing", "for", "420", "sgRNA", "targeting", "regions", "was", "performed", "by", "Celemics", "Inc", ",", "Seoul", ",", "Korea", "." ]
+}, {
+  "sentence_tokens" : [ "Briefly", ",", "300", "ng", "of", "gDNA", "was", "sheared", "into", "300-bp", "fragments", "on", "average", "for", "adaptor", "ligated", "library", "construction", "." ]
+}, {
+  "sentence_tokens" : [ "Target", "sequences", "containing", "fragments", "were", "selected", "via", "hybrid", "capture", "using", "MAP2K1", ",", "KRAS", ",", "and", "NRAS", "targeting", "probes", "." ]
+}, {
+  "sentence_tokens" : [ "Analysis", "of", "targeted", "capture", "sequencing", "data", "." ]
+}, {
+  "sentence_tokens" : [ "From", "the", "NGS", "data", ",", "reads", "were", "aligned", "to", "hg19", "using", "bwa", "v0.7.12-r1039", "and", "then", "mapped", "reads", "were", "deduplicated", "with", "Picard", "version", "1.128", "." ]
+}, {
+  "sentence_tokens" : [ "Soft", "clipped", "and", "indel", "containing", "reads", "were", "excluded", "and", "base", "count", "for", "each", "'", "C", "'", "position", "was", "calculated", "using", "pysam", "." ]
+}, {
+  "sentence_tokens" : [ "Deep", "sequencing", "and", "analysis", "of", "sgRNA", "integrated", "regions", "." ]
+}, {
+  "sentence_tokens" : [ "To", "determine", "the", "frequency", "of", "each", "sgRNA", ",", "sgRNA", "sequences", "integrated", "into", "the", "genome", "were", "PCR", "amplified", "using", "the", "primers", "listed", "in", "Supplementary", "Table", "6", "." ]
+}, {
+  "sentence_tokens" : [ "The", "resulting", "amplicons", "were", "adaptor", "ligated", "using", "a", "SPARK", "kit", "(", "Enzymatics", ")", "and", "deep", "sequenced", "using", "NextSeq", "500", "." ]
+}, {
+  "sentence_tokens" : [ "Raw", "reads", "were", "quality", "trimmed", "via", "trimmomatic", "v0.33", "using", "the", "following", "parameters", ":", "LEADING", ":", "20", ",", "TRAILING", ":", "20", ",", "SLIDINGWINDOW", ":", "150:25", ",", "MINLEN", ":", "36.Reads", "containing", "each", "sgRNA", "spacer", "were", "counted", ",", "and", "these", "sgRNA", "read-counts", "were", "used", "as", "input", "for", "the", "MAGeCK", "software", "package", "to", "identify", "candidates", "by", "comparing", "DMSO", "treated", "and", "vemurafenib", "treated", "cells", "." ]
+}, {
+  "sentence_tokens" : [ "The", "p-value", "of", "every", "sgRNA", "was", "calculated", "based", "on", "the", "negative", "binomial", "model", "of", "read", "counts", "." ]
+}, {
+  "sentence_tokens" : [ "Log", "(", "fold-change", ")", "was", "calculated", "as", "log", "2", "ratio", "of", "the", "normalized", "sgRNA", "count", "of", "vemurafenib", "treated", "cells", "to", "that", "of", "DMSO", "treated", "cells", "." ]
+}, {
+  "sentence_tokens" : [ "Normalized", "sgRNA", "counts", "were", "calculated", "as", "reported", "previously", "." ]
+}, {
+  "sentence_tokens" : [ "Deep", "sequencing", "of", "genomic", "DNA", "samples", "." ]
+}, {
+  "sentence_tokens" : [ "To", "validate", "whether", "the", "genome", "was", "edited", "by", "specific", "sgRNAs", ",", "the", "targeted", "region", "was", "amplified", "from", "the", "genome", "and", "sequenced", "." ]
+}, {
+  "sentence_tokens" : [ "The", "primers", "used", "in", "these", "amplifications", "are", "listed", "in", "Supplementary", "Table", "6.The", "PCR", "cycle", "conditions", "were", "as", "follows", ":", "1", "cycle", "at", "95", "degrees", "C", "for", "3", "min", ",", "followed", "by", "27", "cycles", "of", "98", "degrees", "C", "for", "20", "s", ",", "56", "degrees", "C", "for", "15", "s", ",", "72", "degrees", "C", "for", "30", "s", ",", "and", "1", "cycle", "of", "72", "degrees", "C", "for", "1", "min", "." ]
+}, {
+  "sentence_tokens" : [ "The", "resulting", "amplicons", "were", "adaptor", "ligated", "and", "deep", "sequenced", "using", "NextSeq", "500", "." ]
+}, {
+  "sentence_tokens" : [ "If", "more", "than", "50", "%", "of", "the", "bases", "that", "had", "a", "quality", "score", "lower", "than", "Q30", ",", "the", "sequenced", "reads", "were", "discarded", ",", "and", "base", "calls", "with", "a", "quality", "score", "below", "Q30", "were", "converted", "to", "N.", "Ten-bp", "flanking", "sequences", "on", "both", "sides", "were", "used", "to", "identify", "the", "protospacer", "region", "for", "the", "targeted", "sgRNA", "." ]
+}, {
+  "sentence_tokens" : [ "Protospacer", "and", "PAM", "sequence", "containing", "reads", "that", "were", "not", "23", "bp", "in", "length", "were", "considered", "reads", "with", "indels", "." ]
+}, {
+  "sentence_tokens" : [ "Base", "frequencies", "for", "each", "locus", "were", "calculated", "across", "the", "reads", "without", "indels", "." ]
+}, {
+  "sentence_tokens" : [ "The", "plots", "are", "shown", "with", "the", "protein", "coding", "strand", ",", "and", "if", "the", "protein", "coding", "strand", "was", "the", "non", "target", "strand", "of", "the", "sgRNA", ",", "G", "to", "A", "conversion", "efficiency", "was", "calculated", "(", "Supplementary", "Fig.", "2a", ",", "6b", ",", "6d", ",", "24", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Substitution", "efficiencies", "were", "calculated", "using", "the", "following", "equation", ":", "ReadswithCtoTsubstitutionReadscoveringprotospacerregion", "x", "(", "1", "-", "fractionofreadswithindels", ")", "." ]
+}, {
+  "sentence_tokens" : [ "scRNA-seq", "." ]
+}, {
+  "sentence_tokens" : [ "A375", "cells", "were", "harvested", "and", "divided", "into", "two", "pools", "on", "each", "sampling", "day", "." ]
+}, {
+  "sentence_tokens" : [ "One", "pool", "was", "used", "for", "extraction", "of", "genomic", "DNA", ",", "and", "the", "other", "pool", "was", "methanol", "fixed", "for", "Drop-seq", "analysis", "." ]
+}, {
+  "sentence_tokens" : [ "Methanol", "fixation", "was", "performed", "as", "described", "previously", "." ]
+}, {
+  "sentence_tokens" : [ "Briefly", ",", "cells", "were", "centrifuged", "at", "300", "g", "for", "5", "min", "and", "resuspended", "in", "80", "%", "methanol", "(", "BioReagent", "grade", ";", "Sigma-Aldrich", ")", "and", "20", "%", "PBS", "(", "Gibco", ")", "." ]
+}, {
+  "sentence_tokens" : [ "The", "resuspended", "cells", "were", "incubated", "on", "ice", "for", "at", "least", "15", "min", "and", "then", "stored", "at", "-", "80", "degrees", "C.", "On", "the", "day", "of", "the", "Drop-seq", "experiment", ",", "cells", "were", "recovered", "by", "centrifugation", "at", "2000g", "for", "5", "min", ",", "washed", "once", "with", "PBS-0.01", "%", "BSA", ",", "and", "resuspended", "in", "PBS-0.01", "%", "BSA", "to", "a", "concentration", "of", "100", "cells/mu", "l.", "Finally", ",", "Drop-seq", "was", "performed", "as", "described", "previously", "." ]
+}, {
+  "sentence_tokens" : [ "Droplets", "were", "collected", "into", "50-ml", "conical", "tubes", "over", "a", "15", "min", "time", "period", "." ]
+}, {
+  "sentence_tokens" : [ "After", "which", ",", "the", "droplets", "were", "broken", ",", "and", "the", "RNAs", "on", "beads", "were", "subjected", "to", "reverse", "transcription.Aliquots", "of", "2,000", "beads", "were", "amplified", "in", "each", "tube", "using", "the", "following", "PCR", "steps", ":", "95", "degrees", "C", "for", "3", "min", ",", "then", "four", "cycles", "of", "98", "degrees", "C", "for", "20", "s", ",", "65", "degrees", "C", "for", "45", "s", ",", "72", "degrees", "C", "for", "3", "min", ",", "and", "11", "cycles", "of", "98", "degrees", "C", "for", "20", "s", ",", "67", "degrees", "C", "for", "20", "s", ",", "72", "degrees", "C", "for", "3", "min", ",", "and", "1", "cycle", "of", "72", "degrees", "C", "for", "5", "min", "." ]
+}, {
+  "sentence_tokens" : [ "The", "amplified", "products", "were", "purified", "with", "0.6", "x", "Ampure", "XP", "beads", "and", "fragmented", ",", "tagged", ",", "and", "amplified", "using", "a", "Nextera", "XT", "DNA", "Library", "Preparation", "kit", "(", "Illumina", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Preprocessing", "of", "single-cell", "transcriptome", "data", "." ]
+}, {
+  "sentence_tokens" : [ "The", "pipeline", "was", "designed", "based", "on", "Drop-seq", "tools", "(", "ver.1.12", ")", "and", "CROP-seq", "software", "." ]
+}, {
+  "sentence_tokens" : [ "Raw", "data", "were", "converted", "to", "bam", "files", "via", "FastqToSam", "in", "Picard", "." ]
+}, {
+  "sentence_tokens" : [ "Cell", "barcodes", "and", "UMI", "for", "each", "mRNA", "were", "obtained", "from", "Read1", "." ]
+}, {
+  "sentence_tokens" : [ "mRNA", "sequences", "obtained", "from", "Read2", "were", "modified", "by", "FilterBAM", ",", "TrimStartingSequence", ",", "and", "PolyATrimmer", "in", "Drop-seq", "tools", "." ]
+}, {
+  "sentence_tokens" : [ "The", "modified", "bam", "files", "were", "then", "converted", "to", "fastq", "files", "and", "aligned", "to", "the", "reference", "comprised", "of", "hg19", "and", "BE", "genes", "and", "guide", "RNA", "sequences", "using", "STAR", "aligner", "." ]
+}, {
+  "sentence_tokens" : [ "The", "aligned", "data", "were", "sorted", "via", "SortSam", "and", "merged", "with", "tags", "via", "MergeBamAlignment", "in", "Picard", "." ]
+}, {
+  "sentence_tokens" : [ "Exon", "information", "was", "annotated", "using", "TagReadWithGeneExon", "in", "Drop-seq", "tools", ",", "and", "bead", "synthesis", "errors", "within", "a", "hamming", "distance", "of", "<", "4", "were", "corrected", "via", "DetectBeadSynthesisErrors", "in", "Drop-seq", "tools", "." ]
+}, {
+  "sentence_tokens" : [ "For", "assignment", "of", "sgRNAs", "per", "each", "cell", ",", "UMI", "counts", "of", "each", "sgRNA", "in", "the", "same", "cell", "were", "determined", ",", "and", "the", "most", "abundant", "sgRNA", "was", "selected", "." ]
+}, {
+  "sentence_tokens" : [ "Finally", ",", "transcript", "data", "with", "more", "than", "500", "genes", "per", "cell", "were", "selected", "and", "converted", "to", "a", "digital", "gene", "expression", "matrix", ",", "and", "all", "matrices", "were", "merged", "and", "indexed", "by", "the", "cell", "barcode", ",", "condition", ",", "replicate", ",", "sgRNA", ",", "and", "gene", "." ]
+}, {
+  "sentence_tokens" : [ "All", "program", "runs", "were", "managed", "using", "CROP-seq", "software", "." ]
+}, {
+  "sentence_tokens" : [ "Estimation", "of", "MOI", "and", "detection", "rate", "." ]
+}, {
+  "sentence_tokens" : [ "The", "initial", "MOI", "and", "detection", "rate", "were", "determined", "by", "the", "fitting", "method", "described", "previously", "." ]
+}, {
+  "sentence_tokens" : [ "To", "reduce", "the", "selective", "effect", ",", "the", "data", "from", "initial", "cells", "for", "each", "replicate", "were", "only", "considered", "." ]
+}, {
+  "sentence_tokens" : [ "Transcriptome", "analysis", "." ]
+}, {
+  "sentence_tokens" : [ "Analyses", "were", "carried", "out", "based", "on", "the", "modules", "in", "Crop-seq", "software", ",", "Seurat", ",", "and", "Monocle", "2", "." ]
+}, {
+  "sentence_tokens" : [ "Matrix", "modification", "for", "PCA", "and", "trajectory", "analysis", "." ]
+}, {
+  "sentence_tokens" : [ "Merged", "matrices", "of", "digital", "gene", "expression", "were", "normalized", "per", "cell", ",", "pseudo-count", "1", "was", "added", ",", "multiplied", "by", "10,000", ",", "and", "the", "matrix", "was", "finally", "log", "transformed", "." ]
+}, {
+  "sentence_tokens" : [ "After", "normalization", ",", "ribosomal", "and", "mitochondrial", "genes", "and", "pseudo-references", "of", "sgRNAs", "and", "BE", "were", "filtered.Dimensional", "reduction", "." ]
+}, {
+  "sentence_tokens" : [ "First", ",", "PCA", "was", "performed", "using", "a", "PCA", "module", "in", "the", "sklearn", "package", "for", "global", "clustering", "." ]
+}, {
+  "sentence_tokens" : [ "For", "characterization", "of", "D", "+", "28", "samples", ",", "Seurat", "software", "was", "used", "." ]
+}, {
+  "sentence_tokens" : [ "To", "follow", "the", "pipeline", "of", "Seurat", ",", "the", "original", "matrix", "before", "normalization", "was", "used", "and", "normalized", "again", "by", "Seurat", "'", "s", "internal", "functions", "." ]
+}, {
+  "sentence_tokens" : [ "Briefly", ",", "cells", "from", "the", "D", "+", "28", "samples", "treated", "with", "vemurafenib", "or", "DMSO", "with", "the", "appropriate", "fraction", "of", "mitochondrial", "genes", "(", "<", "0.065", ")", "were", "selected", ",", "and", "gene", "expression", "counts", "were", "normalized", ",", "multiplied", "by", "10,000", ",", "and", "log", "transformed", "." ]
+}, {
+  "sentence_tokens" : [ "Highly", "variable", "genes", "were", "selected", "using", "the", "FindVariableGenes", "function", "in", "the", "Seurat", "with", "the", "following", "parameters", ":", "mean.function", "=", "ExpMean", ",", "dispersion.function", "=", "LogVMR", ",", "x.low.cutoff", "=", "0.05", ",", "x.high.cutoff", "=", "3", ",", "y.cutoff", "=", "1", "." ]
+}, {
+  "sentence_tokens" : [ "The", "number", "of", "PCs", "was", "determined", "using", "PCElbowPlot", "and", "JackStaw", "." ]
+}, {
+  "sentence_tokens" : [ "PCA", "was", "performed", "on", "selected", "variable", "genes", "using", "determined", "PCs", "." ]
+}, {
+  "sentence_tokens" : [ "t-SNE", "was", "then", "applied.Linear", "regression", "." ]
+}, {
+  "sentence_tokens" : [ "Linear", "regression", "was", "performed", "for", "every", "gene", "using", "the", "statsmodel", "module", "in", "Python", "." ]
+}, {
+  "sentence_tokens" : [ "Treatment", ",", "period", "(", "treated", "day", ")", ",", "and", "their", "intersection", "were", "used", "as", "variables", "and", "fitted", "to", "the", "ordinary", "least", "square", "model", "." ]
+}, {
+  "sentence_tokens" : [ "In", "the", "case", "of", "treatment", ",", "a", "dummy", "variable", "was", "used", "as", "follows", ";", "0", "for", "the", "DMSO", "treated", "condition", ",", "1", "for", "the", "vemurafenib", "treated", "condition", "." ]
+}, {
+  "sentence_tokens" : [ "Multiple", "testing", "corrections", "using", "the", "Benjamini", "and", "Hochberg", "method", "were", "applied", "with", "false", "discovery", "rate", "set", "to", "0.05", "." ]
+}, {
+  "sentence_tokens" : [ "Terms", "with", "corrected", "p-values", "of", "less", "than", "0.05", "were", "selected", "for", "every", "gene", "from", "the", "results", "." ]
+}, {
+  "sentence_tokens" : [ "A", "heatmap", "was", "generated", "for", "visualization", "." ]
+}, {
+  "sentence_tokens" : [ "Mean", "expression", "for", "guides", "were", "selected", "and", "plotted.Euclidean", "distance", "." ]
+}, {
+  "sentence_tokens" : [ "Euclidean", "distance", "was", "measured", "using", "the", "expression", "data", "of", "differential", "genes", "in", "the", "Vem", "(", "D", "+", "28", ")", "experiment", "." ]
+}, {
+  "sentence_tokens" : [ "For", "distance", "between", "different", "sgRNAs", "targeting", "the", "same", "genomic", "position", ",", "we", "considered", "that", "sgRNAs", "target", "the", "same", "position", "when", "the", "target", "strands", "are", "identical", "and", "the", "protospacer", "regions", "overlap", "each", "other", "(", "Supplementary", "Data", "8)", "." ]
+}, {
+  "sentence_tokens" : [ "Only", "distances", "from", "cells", "within", "the", "same", "replicate", "were", "calculated.Gene", "set", "enrichment", "analysis", "." ]
+}, {
+  "sentence_tokens" : [ "The", "Wilcoxon", "rank-sum", "test", "of", "the", "FindMarkers", "function", "in", "Seurat", "was", "used", "to", "assess", "differences", "in", "gene", "expression", "." ]
+}, {
+  "sentence_tokens" : [ "Marker", "genes", "with", "low", "p-values", "(", "Benjamini-Hochberg", "corrected", "p", "<", "0.05", ")", "for", "each", "cluster", "were", "obtained", "." ]
+}, {
+  "sentence_tokens" : [ "GO", "and", "KEGG", "pathway", "enrichment", "analyses", "were", "carried", "out", "on", "the", "signature", "genes", "via", "clusterProfiler", "and", "Enrichr", "." ]
+}, {
+  "sentence_tokens" : [ "Multiple", "testing", "corrections", "using", "the", "Benjamini", "and", "Hochberg", "method", "with", "both", "p-value", "threshold", "and", "false", "discovery", "rate", "set", "to", "0.05", "were", "carried", "out.Analysis", "of", "differentially", "expressed", "genes", "in", "DMSO", "treated", "cells", "(", "DMSO", "(", "D", "+", "14", ")", "and", "DMSO", "(", "D", "+", "28", ")", ")", "with", "#", "176", "aggregated", "from", "replicates", "1", "and", "2", ",", "and", "#", "56", "sgRNA", "from", "replicate", "2", "." ]
+}, {
+  "sentence_tokens" : [ "Two", "sided", "Wilcoxon", "rank-sum", "test", "was", "performed", "to", "identify", "differentially", "expressed", "genes", ",", "and", "genes", "with", "low", "p-values", "(", "p", "<", "0.05", ")", "were", "selected.Trajectory", "Analysis", "." ]
+}, {
+  "sentence_tokens" : [ "Trajectory", "analysis", "was", "performed", "by", "Monocle2", "." ]
+}, {
+  "sentence_tokens" : [ "Expression", "matrix", "obtained", "from", "CROP-seq", "software", "were", "used", "as", "an", "input", "." ]
+}, {
+  "sentence_tokens" : [ "Normalization", "and", "filtering", "were", "performed", "with", "parameters", "described", "in", "the", "\"", "Filtering", "low-quality", "cells", "\"", "section", "of", "Monocle2", "'", "s", "web", "document", ",", "and", "ordered", "genes", "were", "obtained", "using", "the", "differentialGeneTest", "module", "by", "setting", "the", "fullModelFormulaStr", "option", "." ]
+}, {
+  "sentence_tokens" : [ "Finally", ",", "DDRTree", "based", "dimensional", "reduction", "and", "ordering", "were", "performed", "." ]
+}, {
+  "sentence_tokens" : [ "Specificity", "score", "." ]
+}, {
+  "sentence_tokens" : [ "Specificity", "scores", "were", "defined", "based", "on", "the", "CFD", "model", "." ]
+}, {
+  "sentence_tokens" : [ "For", "each", "sgRNA", ",", "the", "sum", "of", "CFD", "scores", "for", "all", "possible", "off-targets", ",", "of", "which", "the", "number", "of", "mismatches", "are", "less", "than", "4", ",", "were", "added", "to", "1", "(", "score", "for", "the", "sgRNA", "itself", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Then", ",", "a", "reciprocal", "of", "the", "value", "was", "used", "as", "a", "score", "as", "follows", ":", "Specificityscore", "=", "11+", "sum", "i", "=", "1nCFDwhere", "n", "represents", "the", "number", "of", "possible", "off-target", "sites", "." ]
+}, {
+  "sentence_tokens" : [ "The", "score", "would", "be", "1", "if", "the", "sgRNA", "is", "unique", ",", "and", "the", "score", "would", "be", "decreased", "when", "the", "sgRNA", "has", "off-targets", "." ]
+}, {
+  "sentence_tokens" : [ "Of", "the", "possible", "off-targets", "in", "the", "coding", "region", "of", "the", "genome", ",", "protospacers", "which", "do", "not", "have", "a", "'", "C", "'", "in", "the", "'", "activity", "window", "'", "were", "excluded", "." ]
+}, {
+  "sentence_tokens" : [ "Alternative", "PAMs", "except", "for", "AG", "were", "excluded", "due", "to", "low", "editing", "efficiency", "." ]
+}, {
+  "sentence_tokens" : [ "Statistics", "and", "reproducibility", "." ]
+}, {
+  "sentence_tokens" : [ "Student", "'", "s", "t-test", "was", "used", "to", "assess", "statistical", "significance", "for", "enrichment", "of", "the", "E203K", "clones", "." ]
+}, {
+  "sentence_tokens" : [ "Wilcoxon", "rank", "sum", "test", "was", "used", "to", "assess", "the", "difference", "in", "sgRNA", "distribution", "and", "to", "find", "the", "marker", "genes", "." ]
+}, {
+  "sentence_tokens" : [ "F", "test", "was", "used", "to", "assess", "the", "difference", "of", "the", "dose", "response", "curves", "." ]
+}, {
+  "sentence_tokens" : [ "Replicates", "were", "defined", "as", "two", "or", "three", "independent", "experiments", "." ]
+}, {
+  "sentence_tokens" : [ "Reporting", "summary", "." ]
+}, {
+  "sentence_tokens" : [ "Further", "information", "on", "research", "design", "is", "available", "in", "the", "Nature", "Research", "Reporting", "Summary", "linked", "to", "this", "article", "." ]
+} ]

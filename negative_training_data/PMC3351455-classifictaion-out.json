@@ -1,0 +1,825 @@
+[ {
+  "sentence_tokens" : [ "In", "a", "novel", "analysis", ",", "Kim", "and", "O", "'", "Shea", "went", "beyond", "the", "thermodynamic", "formalism", "to", "model", "regulation", "of", "the", "PHO5", "gene", "in", "budding", "yeast", ",", "for", "which", "the", "transcription", "factor", "Pho4", "induces", "chromatin", "remodelling", ",", "[", "38", "]", "." ],
+  "event_indices" : [ 29, 30, 31, 32, 33, 34, 35 ],
+  "type" : "Positive_activation",
+  "polarity" : true,
+  "controller_indices" : [ 29, 30 ],
+  "controlled_indices" : [ 33, 34, 35 ],
+  "trigger_indices" : [ 32, 33 ],
+  "rule_name" : "Positive_activation_syntax_1_verb",
+  "rule" : null
+}, {
+  "sentence_tokens" : [ "In", "a", "novel", "analysis", ",", "Kim", "and", "O", "'", "Shea", "went", "beyond", "the", "thermodynamic", "formalism", "to", "model", "regulation", "of", "the", "PHO5", "gene", "in", "budding", "yeast", ",", "for", "which", "the", "transcription", "factor", "Pho4", "induces", "chromatin", "remodelling", ",", "[", "38", "]", "." ],
+  "event_indices" : [ 31, 32, 33, 34, 35 ],
+  "type" : "Positive_activation",
+  "polarity" : true,
+  "controller_indices" : [ 31, 32 ],
+  "controlled_indices" : [ 33, 34, 35 ],
+  "trigger_indices" : [ 32, 33 ],
+  "rule_name" : "Positive_activation_syntax_1_verb",
+  "rule" : null
+}, {
+  "sentence_tokens" : [ "A", "Linear", "Framework", "for", "Time-Scale", "Separation", "in", "Nonlinear", "Biochemical", "Systems", "." ]
+}, {
+  "sentence_tokens" : [ "Cellular", "physiology", "is", "implemented", "by", "formidably", "complex", "biochemical", "systems", "with", "highly", "nonlinear", "dynamics", ",", "presenting", "a", "challenge", "for", "both", "experiment", "and", "theory", "." ]
+}, {
+  "sentence_tokens" : [ "Time-scale", "separation", "has", "been", "one", "of", "the", "few", "theoretical", "methods", "for", "distilling", "general", "principles", "from", "such", "complexity", "." ]
+}, {
+  "sentence_tokens" : [ "It", "has", "provided", "essential", "insights", "in", "areas", "such", "as", "enzyme", "kinetics", ",", "allosteric", "enzymes", ",", "G", "protein", "coupled", "receptors", ",", "ion", "channels", ",", "gene", "regulation", "and", "post-translational", "modification", "." ]
+}, {
+  "sentence_tokens" : [ "In", "each", "case", ",", "internal", "molecular", "complexity", "has", "been", "eliminated", ",", "leading", "to", "rational", "algebraic", "expressions", "among", "the", "remaining", "components", "." ]
+}, {
+  "sentence_tokens" : [ "This", "has", "yielded", "familiar", "formulas", "such", "as", "those", "of", "Michaelis-Menten", "in", "enzyme", "kinetics", ",", "Monod-Wyman-Changeux", "in", "allostery", "and", "Ackers-Johnson-Shea", "in", "gene", "regulation", "." ]
+}, {
+  "sentence_tokens" : [ "Here", "we", "show", "that", "these", "calculations", "are", "all", "instances", "of", "a", "single", "graph-theoretic", "framework", "." ]
+}, {
+  "sentence_tokens" : [ "Despite", "the", "biochemical", "nonlinearity", "to", "which", "it", "is", "applied", ",", "this", "framework", "is", "entirely", "linear", ",", "yet", "requires", "no", "approximation", "." ]
+}, {
+  "sentence_tokens" : [ "We", "show", "that", "elimination", "of", "internal", "complexity", "is", "feasible", "when", "the", "relevant", "graph", "is", "strongly", "connected", "." ]
+}, {
+  "sentence_tokens" : [ "The", "framework", "provides", "a", "new", "methodology", "with", "the", "potential", "to", "subdue", "combinatorial", "explosion", "at", "the", "molecular", "level", "." ]
+}, {
+  "sentence_tokens" : [ "Introduction", "." ]
+}, {
+  "sentence_tokens" : [ "The", "overwhelming", "molecular", "complexity", "of", "biological", "systems", "presents", "a", "formidable", "scientific", "challenge", "." ]
+}, {
+  "sentence_tokens" : [ "The", "mere", "number", "of", "protein", "coding", "genes", "barely", "captures", "this", "complexity", ",", "[", "1", "]", "." ]
+}, {
+  "sentence_tokens" : [ "Transcription", "factor", "binding", "to", "DNA", "to", "regulate", "gene", "expression", "and", "protein", "post-translational", "modification", ",", "to", "mention", "just", "two", "well", "studied", "mechanisms", ",", "enable", "combinatorial", "construction", "of", "vast", "numbers", "of", "molecular", "states", ",", "[", "2", "]", "." ]
+}, {
+  "sentence_tokens" : [ "How", "such", "complexity", "evolves", "and", "how", "it", "gives", "rise", "to", "robust", "cellular", "physiology", "are", "among", "the", "central", "questions", "in", "biology.One", "of", "the", "few", "conceptual", "methods", "for", "rising", "above", "this", "complexity", ",", "and", "thereby", "distilling", "general", "principles", ",", "has", "been", "time-scale", "separation", "(", "Figure", "1", ")", "." ]
+}, {
+  "sentence_tokens" : [ "A", "system", "of", "interest", "(", "dashed", "box", ")", "is", "identified", ",", "which", ",", "for", "a", "particular", "behaviour", "being", "studied", ",", "is", "assumed", "to", "contain", "all", "the", "components", "relevant", "to", "that", "behaviour", "." ]
+}, {
+  "sentence_tokens" : [ "A", "sub-system", "(", "box", ")", "within", "the", "larger", "system", "is", "taken", "to", "be", "operating", "sufficiently", "fast", "that", "it", "may", "be", "assumed", "to", "have", "reached", "a", "steady", "state", "or", ",", "as", "a", "special", "case", "of", "that", ",", "a", "state", "of", "thermodynamic", "equilibrium", "." ]
+}, {
+  "sentence_tokens" : [ "The", "larger", "system", "and", "its", "environment", "adjust", "on", "slower", "time-scales", "to", "the", "steady-state", "of", "the", "sub-system", "." ]
+}, {
+  "sentence_tokens" : [ "The", "components", "within", "the", "sub-system", "may", "be", "viewed", "as", "\"", "fast", "variables", "\"", ",", "while", "those", "additional", "components", "within", "the", "larger", "system", "are", "\"", "slow", "variables", "\"", "." ]
+}, {
+  "sentence_tokens" : [ "Those", "components", "in", "the", "environment", "that", "might", "be", "influenced", "by", "the", "overall", "system", "are", "taken", "to", "be", "operating", "on", "the", "slowest", "time", "scale", "." ]
+}, {
+  "sentence_tokens" : [ "Such", "assumptions", "often", "enable", "the", "internal", "states", "of", "the", "sub-system", "to", "be", "eliminated", ",", "thereby", "simplifying", "the", "description", "of", "the", "larger", "system", "'", "s", "behaviour.Time-scale", "separation", "was", "first", "introduced", "at", "the", "molecular", "level", "in", "the", "famous", "work", "of", "Michaelis", "and", "Menten", "on", "enzyme", "kinetics", ",", "[", "3", "]", ",", "[", "4", "]", "." ]
+}, {
+  "sentence_tokens" : [ "They", "considered", "the", "following", "biochemical", "reaction", "scheme", ",", "in", "which", "an", "enzyme", ",", "E", ",", "reversibly", "binds", "to", "a", "substrate", ",", "S", ",", "to", "form", "an", "intermediate", "enzyme", "and", "substrate", "complex", ",", "ES", ",", "which", "then", "irreversibly", "breaks", "up", "to", "form", "the", "product", "of", "the", "reaction", ",", "P", ",", "and", "release", "the", "enzyme", ":(", "1", ")", "A", "time-scale", "separation", "was", "assumed", "in", "which", "the", "free", "enzyme", ",", "E", ",", "and", "the", "enzyme", "and", "substrate", "complex", ",", "ES", ",", "were", "regarded", "as", "fast", "variables", ",", "while", "S", "and", "P", "were", "regarded", "as", "slow", "variables", "." ]
+}, {
+  "sentence_tokens" : [ "(", "As", "a", "matter", "of", "historical", "accuracy", ",", "Michaelis", "and", "Menten", "made", "a", "simpler", "rapid", "equilibrium", "assumption", "." ]
+}, {
+  "sentence_tokens" : [ "The", "so", "called", "\"", "quasi", "steady-state", "\"", "assumption", "used", "here", ",", "and", "now", "universally", "employed", ",", "was", "first", "introduced", "by", "Briggs", "and", "Haldane", ",", "[", "5", "]", "." ]
+}, {
+  "sentence_tokens" : [ ")", "A", "simple", "algebraic", "calculation", "leads", "to", "the", "Michaelis-Menten", "rate", "formula", "(", "2", ")", "in", "which", "the", "aggregated", "parameters", "and", "are", "determined", "by", "the", "underlying", "rate", "constants", "for", "the", "reactions", "in", "(", "1", ")", "and", "the", "total", "amount", "of", "enzyme", "that", "is", "present", ";", "see", "equation", "(", "9", ")", "below", "." ]
+}, {
+  "sentence_tokens" : [ "Here", ",", "[", "X]", "denotes", "the", "concentration", "of", "the", "chemical", "species", "X.This", "example", "has", "two", "characteristic", "features", "." ]
+}, {
+  "sentence_tokens" : [ "First", ",", "the", "algebra", "has", "eliminated", "the", "fast", "variables", ",", "E", "and", "ES", ",", "leaving", "a", "formula", "that", "involves", "only", "the", "slow", "variable", ",", "S", ",", "on", "the", "right", "hand", "side", "." ]
+}, {
+  "sentence_tokens" : [ "In", "this", "case", ",", "P", "does", "not", "appear", "on", "the", "right", "hand", "side", "because", "of", "the", "irreversibility", "of", "(", "1", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Second", ",", "the", "expression", "on", "the", "right", "hand", "side", "is", "rational", "in", "the", "concentrations", "of", "the", "slow", "variables", ":", "it", "is", "a", "ratio", "of", "two", "polynomials", "in", "[", "S", "]", "." ]
+}, {
+  "sentence_tokens" : [ "In", "this", "simple", "case", ",", "both", "numerator", "and", "denominator", "are", "first-order", "(", "linear", ")", "in", "[", "S", "]", "." ]
+}, {
+  "sentence_tokens" : [ "Time-scale", "separations", "have", "been", "used", "in", "many", "distinct", "areas", "of", "biology", ",", "including", "enzyme", "kinetics", ",", "allosteric", "enzymes", ",", "G", "protein", "coupled", "receptors", ",", "ligand", "gated", "ion", "channels", ",", "gene", "regulation", "in", "both", "prokaryotes", "and", "eukaryotes", "and", "protein", "post-translational", "modification", "(", "see", "below", ")", "." ]
+}, {
+  "sentence_tokens" : [ "The", "characteristic", "features", "noted", "above", ",", "of", "elimination", "leading", "to", "a", "rational", "expression", ",", "are", "shared", "by", "all", "of", "them", "." ]
+}, {
+  "sentence_tokens" : [ "Among", "these", "rational", "expressions", "are", "the", "familiar", "formulas", "of", "Michaelis-Menten", "in", "enzyme", "kinetics", ",", "Monod-Wyman-Changeux", "and", "Koshland-N", "e", "methy-Filmer", "in", "allostery", "and", "Shea-Ackers-Johnson", "in", "prokaryotic", "gene", "regulation", "." ]
+}, {
+  "sentence_tokens" : [ "However", ",", "the", "corresponding", "analyses", "have", "been", "largely", "independent", "and", "ad", "hoc", "." ]
+}, {
+  "sentence_tokens" : [ "In", "this", "paper", "we", "introduce", "a", "graph-theoretic", "framework", "that", "underlies", "all", "of", "these", "analyses", "." ]
+}, {
+  "sentence_tokens" : [ "Despite", "the", "biochemical", "nonlinearity", "of", "the", "systems", "to", "which", "it", "is", "applied", ",", "the", "framework", "is", "entirely", "linear", ",", "yet", "it", "is", "not", "an", "approximation", "." ]
+}, {
+  "sentence_tokens" : [ "Moreover", ",", "it", "is", "symbolic", "in", "the", "values", "of", "all", "rate", "constants", ",", "so", "that", "it", "may", "be", "used", "without", "having", "to", "know", "these", "values", "in", "advance", "." ]
+}, {
+  "sentence_tokens" : [ "We", "show", "that", "elimination", "of", "internal", "complexity", "becomes", "feasible", "when", "the", "relevant", "graph", "is", "strongly", "connected", "and", "that", ",", "in", "this", "case", ",", "rational", "expressions", "emerge", "which", "can", "be", "explicitly", "described", "in", "terms", "of", "the", "graph", "." ]
+}, {
+  "sentence_tokens" : [ "This", "procedure", "accounts", "for", "the", "rational", "expressions", "arising", "in", "all", "the", "time-scale", "separation", "examples", "just", "mentioned.In", "these", "examples", ",", "time-scale", "assumptions", "have", "not", "always", "been", "justified", "by", "data", "." ]
+}, {
+  "sentence_tokens" : [ "Instead", ",", "time-scale", "separation", "has", "been", "used", "as", "a", "hypothesis", "to", "simplify", "complex", "behaviour", "and", "thereby", "obtain", "new", "insights", ",", "which", "have", "subsequently", "guided", "conceptual", "understanding", "and", "experimental", "design", "." ]
+}, {
+  "sentence_tokens" : [ "We", "follow", "the", "same", "practice", "here", ",", "treating", "time-scale", "separation", "as", "a", "method", "of", "mathematical", "simplification", "whose", "validity", "must", "ultimately", "be", "judged", "by", "its", "conceptual", "usefulness", "in", "guiding", "new", "experiments.The", "examples", "mentioned", "above", "are", "reviewed", "next", ",", "to", "show", "the", "scope", "of", "application", "of", "the", "results", "and", "to", "point", "out", "some", "of", "the", "experimental", "insights", "." ]
+}, {
+  "sentence_tokens" : [ "We", "then", "introduce", "the", "linear", "framework", "and", "explain", "how", "it", "underlies", "these", "different", "results", "." ]
+}, {
+  "sentence_tokens" : [ "We", "also", "show", "how", "the", "framework", "appears", "in", "the", "study", "of", "general", "biochemical", "networks", "." ]
+}, {
+  "sentence_tokens" : [ "Finally", ",", "as", "a", "demonstration", "of", "its", "power", ",", "we", "show", "how", "the", "framework", "can", "be", "readily", "adapted", "to", "deal", "with", "the", "more", "general", "situation", "in", "which", "a", "sub-system", "'", "s", "components", "are", "subject", "to", "synthesis", "and", "degradation", "." ]
+}, {
+  "sentence_tokens" : [ "Applications", "of", "the", "framework", "to", "specific", "biological", "examples", "will", "be", "reported", "elsewhere", "." ]
+}, {
+  "sentence_tokens" : [ "Results", "." ]
+}, {
+  "sentence_tokens" : [ "Examples", "of", "Time-scale", "Separation", "." ]
+}, {
+  "sentence_tokens" : [ "Enzyme", "kinetics", "." ]
+}, {
+  "sentence_tokens" : [ "Time-scale", "separation", "has", "been", "used", "to", "analyse", "enzymes", "with", "multiple", "substrates", ",", "products", "and", "effectors", "." ]
+}, {
+  "sentence_tokens" : [ "As", "with", "the", "Michaelis-Menten", "formula", "in", "(", "2", ")", ",", "the", "internal", "complexity", "arising", "from", "the", "bound", "states", "of", "the", "enzyme", "can", "be", "eliminated", ",", "leading", "to", "rational", "expressions", "involving", "only", "substrates", ",", "products", "or", "effectors", "." ]
+}, {
+  "sentence_tokens" : [ "The", "algebra", "was", "formalised", "in", "the", "King-Altman", "procedure", ",", "[", "6", "]", ",", "and", "the", "resulting", "rational", "expressions", "have", "been", "widely", "used", "in", "biochemistry", ",", "[", "7", "]", ",", "[", "8]", "." ]
+}, {
+  "sentence_tokens" : [ "For", "a", "modern", "example", ",", "see", "[", "9", "]", "." ]
+}, {
+  "sentence_tokens" : [ "Enzyme", "allostery", "." ]
+}, {
+  "sentence_tokens" : [ "Balancing", "supply", "and", "demand", "in", "metabolic", "networks", "requires", "enzymes", "to", "be", "controlled", "by", "molecules", "that", "are", "structurally", "distinct", "from", "the", "enzyme", "'", "s", "substrate", "." ]
+}, {
+  "sentence_tokens" : [ "Allosteric", "regulation", "separates", "enzyme", "activity", "from", "control", "by", "exploiting", "distinct", "enzyme", "conformations", "having", "distinct", "activities", "." ]
+}, {
+  "sentence_tokens" : [ "A", "molecule", "that", "binds", "preferentially", "to", "a", "conformation", "with", "weaker", "activity", "is", "an", "inhibitor", ",", "while", "one", "that", "binds", "preferentially", "to", "a", "conformation", "with", "stronger", "activity", "is", "an", "activator", "." ]
+}, {
+  "sentence_tokens" : [ "Many", "enzymes", "subject", "to", "such", "regulation", "are", "oligomers", "with", "an", "axis", "of", "symmetry", "." ]
+}, {
+  "sentence_tokens" : [ "A", "\"", "concerted", "\"", "model", "of", "enzyme", "allostery", ",", "in", "which", "the", "conformational", "changes", "were", "assumed", "to", "be", "limited", "to", "symmetric", "quaternary", "movements", "of", "the", "oligomer", ",", "was", "put", "forward", "in", "[", "10", "]", "." ]
+}, {
+  "sentence_tokens" : [ "An", "independent", "\"", "sequential", "\"", "model", ",", "in", "which", "tertiary", "changes", "in", "the", "individual", "monomers", "were", "also", "allowed", ",", "was", "put", "forward", "in", "[", "11", "]", "." ]
+}, {
+  "sentence_tokens" : [ "Subsequent", "formulations", "have", "allowed", "for", "additional", "complexity", ",", "[", "12", "]", ",", "[", "13", "]", "." ]
+}, {
+  "sentence_tokens" : [ "In", "each", "case", ",", "the", "enzyme", "conformations", "and", "ligand", "binding", "are", "assumed", "to", "be", "at", "thermodynamic", "equilibrium", "and", "the", "internal", "complexity", "arising", "from", "states", "with", "multiple", "bound", "ligands", "is", "eliminated", "." ]
+}, {
+  "sentence_tokens" : [ "Enzyme", "activity", "is", "usually", "taken", "to", "be", "proportional", "to", "the", "equilibrium", "fractional", "saturation", "-", "the", "proportion", "of", "sites", "that", "are", "bound", "by", "ligand", "-", "leading", "to", "rational", "expressions", "such", "as", "the", "Monod-Wyman-Changeux", "formula", ",", "[", "10", "]", "." ]
+}, {
+  "sentence_tokens" : [ "G", "protein", "coupled", "receptors", "." ]
+}, {
+  "sentence_tokens" : [ "GPCRs", "form", "the", "largest", "signalling", "superfamily", "in", "the", "human", "genome", "and", "one", "of", "the", "most", "clinically-significant", ",", "[", "14", "]", ",", "[", "15", "]", "." ]
+}, {
+  "sentence_tokens" : [ "Pioneering", "quantitative", "studies", "of", "the", "-adrenergic", "receptor", "showed", "that", "apparent", "low-", "and", "high-affinity", "states", "of", "the", "receptor", "were", "explained", "by", "a", "\"", "ternary", "complex", "model", "\"", ",", "in", "which", "the", "receptor", "could", "be", "simultaneously", "bound", "to", "both", "a", "ligand", "and", "an", "accessory", "protein", ",", "later", "shown", "to", "be", "the", "G", "protein", ",", "[", "16", "]", "." ]
+}, {
+  "sentence_tokens" : [ "This", "basic", "model", "has", "been", "developed", "further", "to", "include", "distinct", "(", "allosteric", ")", "receptor", "conformations", ",", "[", "17", "]", ",", "[", "18", "]", ",", "and", "remains", "widely", "influential", "in", "quantitative", "pharmacology", ",", "[", "19", "]", ",", "[", "20", "]", "." ]
+}, {
+  "sentence_tokens" : [ "The", "possibility", "that", "distinct", "conformations", "recruit", "distinct", "subsets", "of", "the", "downstream", "signalling", "network", ",", "has", "been", "suggested", "as", "a", "basis", "for", "the", "phenomenon", "of", "collateral", "efficacy", "(", "\"", "functional", "selectivity", "\"", ",", "\"", "protean", "agonism", "\"", ",", "\"", "stimulus", "trafficking", "\"", ")", ",", "[", "21", "]", ",", "although", "post-translational", "modification", "of", "the", "receptor", "may", "also", "play", "an", "important", "role", "(", "see", "below", ")", "." ]
+}, {
+  "sentence_tokens" : [ "In", "these", "mathematical", "models", "of", "GPCRs", ",", "the", "conformational", "changes", ",", "ligand", "binding", "and", "accessory", "protein", "binding", "are", "assumed", "to", "be", "at", "thermodynamic", "equilibrium", "and", "bound-states", "of", "the", "receptor", "are", "eliminated", ",", "leading", "to", "rational", "expressions", "for", "measures", "of", "downstream", "response", "." ]
+}, {
+  "sentence_tokens" : [ "Ligand", "gated", "ion", "channels", "." ]
+}, {
+  "sentence_tokens" : [ "Ion", "channels", "are", "oligomeric", "transmembrane", "proteins", "that", "regulate", "the", "movement", "of", "ions", "across", "the", "plasma", "membrane", ",", "[", "22", "]", ",", "[", "23", "]", "." ]
+}, {
+  "sentence_tokens" : [ "Ligand", "gated", "ion", "channels", "have", "been", "investigated", "in", "exquisite", "quantitative", "detail", "by", "patch-clamp", "recording", "." ]
+}, {
+  "sentence_tokens" : [ "The", "existence", "of", "distinct", "(", "allosteric", ")", "receptor", "conformations", "was", "suggested", "by", "an", "early", "model", "of", "the", "nicotinic", "acetylcholine", "receptor", ",", "[", "24", "]", "." ]
+}, {
+  "sentence_tokens" : [ "This", "helped", "to", "distinguish", "the", "pharmacological", "properties", "of", "affinity", "and", "efficacy", "and", "similar", "models", "have", "since", "been", "widely", "used", "to", "understand", "quantitative", "channel", "behaviour", ",", "[", "25", "]", "." ]
+}, {
+  "sentence_tokens" : [ "These", "models", ",", "like", "those", "for", "allosteric", "enzymes", "and", "GPCRs", ",", "assume", "that", "conformations", "and", "ligand", "binding", "are", "at", "thermodynamic", "equilibrium", "and", "thereby", "eliminate", "bound", "states", "of", "the", "receptor", "." ]
+}, {
+  "sentence_tokens" : [ "Such", "equilibrium", "models", "have", "been", "adapted", "to", "yield", "discrete-state", ",", "continuous-time", "stochastic", "models", "of", "single", "receptors", "[", "26", "]", ",", "from", "which", "new", "receptor", "conformations", "have", "been", "inferred", ",", "[", "27", "]", ",", "[", "28", "]", "." ]
+}, {
+  "sentence_tokens" : [ "These", "dynamic", "models", "show", "good", "agreement", "with", "experimental", "data", ",", "providing", "some", "justification", "for", "the", "assumption", "of", "thermodynamic", "equilibrium", "in", "this", "context", "." ]
+}, {
+  "sentence_tokens" : [ "Bacterial", "gene", "regulation", "." ]
+}, {
+  "sentence_tokens" : [ "Gene", "transcription", "is", "regulated", "indirectly", "by", "the", "binding", "of", "transcription", "factors", "(", "TFs", ")", "to", "DNA", "." ]
+}, {
+  "sentence_tokens" : [ "A", "model", "for", "expression", "of", "the", "lambda", "phage", "repressor", "was", "developed", "by", "Ackers", ",", "Johnson", "and", "Shea", ",", "in", "which", "TF", "binding", "was", "assumed", "to", "be", "at", "thermodynamic", "equilibrium", "and", "the", "net", "rate", "of", "gene", "transcription", "was", "treated", "as", "an", "average", "over", "the", "rates", "for", "the", "individual", "binding", "patterns", "." ]
+}, {
+  "sentence_tokens" : [ "An", "implicit", "ergodic", "assumption", "is", "made", "that", ",", "under", "stationary", "conditions", ",", "the", "temporal", "frequency", "with", "which", "a", "pattern", "appears", "on", "a", "single", "molecule", "of", "DNA", "is", "the", "same", "as", "the", "normalised", "concentration", "of", "the", "pattern", "when", "TFs", "bind", "to", "many", "molecules", "of", "DNA", "." ]
+}, {
+  "sentence_tokens" : [ "This", "\"", "thermodynamic", "formalism", "\"", "has", "been", "systematically", "developed", "for", "bacterial", "genes", ",", "[", "29", "]", ",", "[", "30", "]", ",", "and", "widely", "exploited", "in", "recent", "studies", ",", "[", "31", "]", ",", "[", "32", "]", "." ]
+}, {
+  "sentence_tokens" : [ "Eukaryotic", "gene", "regulation", "." ]
+}, {
+  "sentence_tokens" : [ "Unlike", "prokaryotes", ",", "eukaryotic", "genes", "may", "be", "regulated", "by", "multiple", "transcription", "factors", "that", "can", "bind", "to", "multiple", "sites", "in", "widely", "dispersed", "enhancer", "elements", ",", "giving", "rise", "to", "enormous", "combinatorial", "complexity", ",", "[", "1", "]", "." ]
+}, {
+  "sentence_tokens" : [ "The", "thermodynamic", "formalism", "has", "also", "been", "used", "to", "analyse", "this", "more", "complex", "gene", "regulation", ",", "[", "33", "]", "-", "[", "35", "]", "." ]
+}, {
+  "sentence_tokens" : [ "For", "instance", ",", "it", "has", "been", "used", "to", "determine", "how", "the", "Hedgehog", "morphogen", "in", "the", "Drosophila", "imaginal", "wing", "disc", "regulates", "the", "patched", "and", "decapentaplegic", "genes", ",", "[", "36", "]", "." ]
+}, {
+  "sentence_tokens" : [ "In", "this", "and", "similar", "analyses", ",", "the", "rate", "of", "gene", "transcription", "is", "taken", "as", "the", "fractional", "occupancy", "of", "an", "additional", "binding", "site", "for", "an", "aggregated", "\"", "basal", "transcriptional", "complex", "\"", "." ]
+}, {
+  "sentence_tokens" : [ "The", "thermodynamic", "formalism", "has", "also", "been", "tested", "in", "budding", "yeast", "using", "random", "promoter", "libraries", "driving", "fluorescent", "reporters", ",", "[", "37", "]", "." ]
+}, {
+  "sentence_tokens" : [ "The", "formalism", "typically", "accounted", "for", "around", "75", "%", "of", "the", "variance", "between", "different", "promoters", ",", "after", "taking", "into", "account", "inherent", "experimental", "variation", ",", "providing", "some", "justification", "in", "this", "context", "for", "the", "underlying", "time-scale", "separation", "." ]
+}, {
+  "sentence_tokens" : [ "Gene", "regulation", "away", "from", "thermodynamic", "equilibrium", "." ]
+}, {
+  "sentence_tokens" : [ "Nucleosome", "repositioning", "can", "play", "an", "important", "role", "in", "eukaryotic", "gene", "regulation", "but", "is", "a", "dissipative", "process", "that", "cannot", "be", "treated", "at", "equilibrium", "." ]
+}, {
+  "sentence_tokens" : [ "A", "steady-state", "time-scale", "separation", "and", "an", "ad", "hoc", "calculation", "yielded", "a", "rational", "expression", "for", "the", "transcription", "rate", "as", "a", "function", "of", "Pho4", "concentration", "that", "agreed", "well", "with", "experimental", "measurements", "." ]
+}, {
+  "sentence_tokens" : [ "Protein", "post-translational", "modification", "." ]
+}, {
+  "sentence_tokens" : [ "Proteins", "with", "multiple", "types", "and", "sites", "of", "post-translational", "modification", "can", "exist", "in", "exponentially", "many", "global", "patterns", "of", "modification", ",", "or", "\"", "mod-forms", "\"", "." ]
+}, {
+  "sentence_tokens" : [ "A", "protein", "with", "n", "sites", "of", "phosphorylation", ",", "for", "instance", ",", "has", "2", "potential", "phosphoryl-forms", ",", "providing", "another", "potent", "source", "of", "combinatorial", "complexity", "." ]
+}, {
+  "sentence_tokens" : [ "Evidence", "from", "many", "sources", "reveals", "that", "distinct", "mod-forms", "may", "elicit", "distinct", "downstream", "responses", "." ]
+}, {
+  "sentence_tokens" : [ "This", "was", "first", "seen", "in", "the", "PTMs", "that", "decorate", "the", "N-terminal", "tails", "of", "histone", "proteins", ",", "where", "distinct", "mod-forms", "guide", "differential", "assembly", "of", "transcriptional", "co-regulators", ",", "chromatin", "organisation", "and", "gene", "expression", ",", "giving", "rise", "to", "a", "\"", "histone", "code", "\"", ",", "[", "39", "]", ",", "[", "40", "]", "." ]
+}, {
+  "sentence_tokens" : [ "Such", "encoding", "has", "become", "a", "general", "theme", "relevant", "to", "many", "cellular", "processes", ",", "with", "the", "emergence", "of", "\"", "co-regulator", "codes", "\"", ",", "[", "2", "]", ",", "\"", "tubulin", "codes", "\"", ",", "[", "41", "]", ",", "and", "\"", "GPCR", "barcodes", "\"", ",", "[", "42", "]", ",", "as", "reviewed", "in", "[", "43", "]", "." ]
+}, {
+  "sentence_tokens" : [ "From", "a", "quantitative", "perspective", ",", "it", "is", "the", "\"", "mod-form", "distribution", "\"", "-", "the", "relative", "concentration", "of", "each", "of", "the", "mod-forms", "-", "that", "determines", "the", "functionality", "of", "a", "post-translationally", "modified", "protein", "." ]
+}, {
+  "sentence_tokens" : [ "A", "mod-form", "with", "high", "influence", "on", "some", "downstream", "process", ",", "but", "at", "low", "relative", "concentration", ",", "may", "have", "less", "impact", "than", "one", "of", "low", "influence", "but", "high", "relative", "concentration", "." ]
+}, {
+  "sentence_tokens" : [ "The", "overall", "influence", "of", "the", "protein", "is", "then", "an", "average", "over", "its", "mod-form", "distribution", "." ]
+}, {
+  "sentence_tokens" : [ "Mass-spectrometric", "methods", "are", "now", "being", "developed", "to", "measure", "such", "distributions", ",", "[", "44", "]", "." ]
+}, {
+  "sentence_tokens" : [ "The", "mod-form", "distribution", "is", "dynamically", "regulated", "by", "a", "continuous", "tug-of-war", "between", "the", "cognate", "forward", "and", "reverse", "modifying", "enzymes", "." ]
+}, {
+  "sentence_tokens" : [ "This", "strongly", "dissipative", "process", "allows", "mod-form", "concentrations", "to", "be", "maintained", "far", "from", "equilibrium", "and", "to", "thereby", "transduce", "cellular", "information", "." ]
+}, {
+  "sentence_tokens" : [ "Under", "very", "general", "conditions", ",", "the", "steady-state", "mod-form", "concentrations", "can", "be", "expressed", "as", "rational", "expressions", "in", "the", "enzyme", "concentrations", "-", "see", "equation", "(", "12", ")", "below", "-", "so", "that", "the", "effective", "complexity", "of", "the", "mod-form", "distribution", "depends", ",", "at", "steady", "state", ",", "only", "on", "the", "number", "of", "enzymes", ",", "not", "on", "the", "number", "of", "sites", "or", "on", "the", "types", "of", "modification", "or", "on", "the", "biochemical", "mechanisms", "of", "the", "enzymes", ",", "[", "45", "]", "." ]
+}, {
+  "sentence_tokens" : [ "This", "enables", "average", "responses", "to", "be", "calculated", ",", "as", "in", "equation", "(", "13", ")", "below", ",", "and", "the", "behaviour", "of", "complex", "PTM", "systems", "to", "be", "analysed", ",", "without", "prescribing", "in", "advance", "either", "the", "number", "of", "sites", "or", "the", "rate", "constant", "values", ",", "[", "46", "]", "." ]
+}, {
+  "sentence_tokens" : [ "The", "analysis", "developed", "in", "[", "45", "]", "was", "the", "starting", "point", "for", "the", "present", "paper", "." ]
+}, {
+  "sentence_tokens" : [ "Summary", "." ]
+}, {
+  "sentence_tokens" : [ "The", "examples", "above", "fall", "into", "two", "broad", "classes", ",", "those", "considered", "at", "thermodynamic", "equilibrium", ",", "some", "of", "which", "have", "been", "treated", "by", "methods", "of", "statistical", "mechanics", ",", "such", "as", "the", "thermodynamic", "formalism", "in", "gene", "regulation", ",", "and", "those", "considered", "at", "steady", "state", "far", "from", "equilibrium", ",", "to", "which", "such", "methods", "do", "not", "apply", "." ]
+}, {
+  "sentence_tokens" : [ "The", "framework", "introduced", "here", "integrates", "both", "classes", "and", "all", "the", "examples", "above", "." ]
+}, {
+  "sentence_tokens" : [ "Thermodynamic", "equilibrium", "permits", "certain", "simplifications", "that", "are", "discussed", "below", "." ]
+}, {
+  "sentence_tokens" : [ "The", "Linear", "Framework", "." ]
+}, {
+  "sentence_tokens" : [ "We", "start", "from", "a", "graph", ",", "G", ",", "consisting", "of", "vertices", ",", ",", "with", "labelled", ",", "directed", "edges", ",", ",", "and", "no", "self", "loops", ",", "(", "Figure", "2A", ")", "." ]
+}, {
+  "sentence_tokens" : [ "The", "vertices", "represent", "components", "of", "a", "system", ",", "on", "which", "a", "dynamics", "is", "defined", "by", "treating", "each", "edge", "as", "if", "it", "were", "a", "chemical", "reaction", "under", "mass-action", "kinetics", ",", "with", "the", "label", "as", "rate", "constant", "." ]
+}, {
+  "sentence_tokens" : [ "We", "can", "imagine", "that", "an", "amount", "(", "or", ",", "equivalently", ",", "a", "concentration", ")", "of", "each", "component", "is", "placed", "on", "the", "corresponding", "vertex", "and", "that", "these", "amounts", "are", "transported", "across", "the", "edges", "in", "the", "direction", "of", "the", "arrows", "at", "rates", "that", "are", "proportional", "to", "the", "amounts", "on", "the", "source", "vertices", "." ]
+}, {
+  "sentence_tokens" : [ "The", "constant", "of", "proportionality", "is", "the", "label", "on", "the", "edge", "." ]
+}, {
+  "sentence_tokens" : [ "For", "instance", ",", "if", "the", "amounts", "of", "the", "components", "are", "denoted", ",", "then", "the", "edge", "in", "Figure", "2A", "contributes", "to", "the", "amount", "of", "component", "1", "at", "a", "rate", ",", "and", "so", "on", "." ]
+}, {
+  "sentence_tokens" : [ "Since", "each", "edge", "has", "only", "one", "source", "vertex", ",", "the", "reactions", "are", "all", "first-order", "and", "the", "dynamics", "are", "therefore", "linear.For", "the", "present", ",", "labels", "can", "be", "regarded", "as", "symbolic", "positive", "numbers", "with", "dimensions", "of", "." ]
+}, {
+  "sentence_tokens" : [ "Positivity", "is", "not", "a", "restriction", "." ]
+}, {
+  "sentence_tokens" : [ "A", "negative", "label", "sends", "the", "flux", "in", "the", "opposite", "direction", "and", "so", "has", "the", "same", "effect", "as", "reversing", "the", "direction", "of", "the", "edge", "and", "the", "sign", "of", "the", "label", "." ]
+}, {
+  "sentence_tokens" : [ "It", "is", "in", "the", "interpretation", "of", "the", "labels", "that", "the", "leap", "can", "be", "made", "from", "the", "abstract", "linear", "system", "described", "here", "to", "a", "nonlinear", "biological", "system", ",", "as", "discussed", "in", "the", "next", "section.The", "prescription", "above", "gives", "a", "system", "of", "linear", ",", "ordinary", "differential", "equations", ",", "which", "can", "be", "written", "in", "matrix", "form", "as", "(", "3", ")", "where", "x", "is", "the", "column", "vector", "of", "component", "amounts", "and", "is", "called", "the", "Laplacian", "matrix", "of", "G." ]
+}, {
+  "sentence_tokens" : [ "Such", "matrices", "were", "first", "introduced", "by", "Gustav", "Kirchhoff", "in", "his", "study", "of", "electrical", "circuits", ",", "[", "47", "]", "." ]
+}, {
+  "sentence_tokens" : [ "They", "resemble", "discretisations", "of", "the", "continuous", "Laplacian", "operator", "but", "they", "are", "known", "in", "many", "different", "versions", ",", "[", "48", "]", "." ]
+}, {
+  "sentence_tokens" : [ "As", "Laplacians", "have", "been", "widely", "studied", ",", "the", "results", "outlined", "here", "may", "be", "known", "under", "different", "guises.Since", "material", "is", "neither", "created", "nor", "lost", ",", "the", "system", "has", "at", "least", "one", "conservation", "law", "given", "by", "the", "total", "amount", "of", "matter", ",", ",", "which", "remains", "constant", "at", "all", "times", "." ]
+}, {
+  "sentence_tokens" : [ "Hence", ",", ",", "where", "1", "is", "the", "all", "ones", "column", "vector", "and", "denotes", "transpose.If", "we", "imagine", "the", "system", "being", "started", "with", "arbitrary", "amounts", "of", "each", "component", ",", "we", "expect", "that", "the", "dynamics", "will", "eventually", "relax", "to", "a", "steady", "state", "." ]
+}, {
+  "sentence_tokens" : [ "This", "is", ",", "indeed", ",", "true", "for", "any", "graph", "." ]
+}, {
+  "sentence_tokens" : [ "The", "dynamical", "behaviour", "of", "(", "3", ")", "has", "several", "interesting", "features", ",", "as", "well", "as", "biological", "applications", ";", "for", "instance", ",", "to", "the", "dynamical", "behaviour", "of", "ligand", "gated", "ion", "channels", "." ]
+}, {
+  "sentence_tokens" : [ "However", ",", "our", "interest", "here", "is", "in", "the", "steady", "state", ",", "so", "we", "defer", "a", "full", "discussion", "of", "the", "dynamics", "to", "elsewhere", "(", "I.", "Mirzaev", ",", "J.", "Gunawardena", ",", "in", "preparation", ")", "." ]
+}, {
+  "sentence_tokens" : [ "At", "steady", "state", ",", ",", "or", ",", "equivalently", ",", "x", "lies", "in", "the", "kernel", "of", "the", "Laplacian", ",", "." ]
+}, {
+  "sentence_tokens" : [ "The", "kernel", "can", "be", "determined", "in", "two", "steps", ",", "first", "for", "a", "strongly", "connected", "graph", "and", "then", "for", "any", "graph.A", "strongly", "connected", "graph", "is", "one", "in", "which", "any", "two", "distinct", "vertices", "can", "be", "joined", "by", "a", "series", "of", "edges", "in", "the", "same", "direction", "." ]
+}, {
+  "sentence_tokens" : [ "The", "graph", "in", "Figure", "2A", "is", "not", "strongly", "connected", "(", "vertex", "1", "cannot", "be", "reached", "from", "vertex", "3", ")", ",", "unlike", "that", "in", "Figure", "2B", "." ]
+}, {
+  "sentence_tokens" : [ "Strong", "connectivity", "depends", "only", "on", "the", "edge", "structure", "and", "not", "on", "the", "labels", "." ]
+}, {
+  "sentence_tokens" : [ "A", "key", "observation", "is", "that", ",", "if", "the", "graph", "is", "strongly", "connected", ",", "then", "is", "one", "dimensional", ",", "[", "45", "]", "." ]
+}, {
+  "sentence_tokens" : [ "No", "matter", "how", "many", "components", "are", "present", "in", "the", "graph", "and", "whatever", "arbitrary", "amounts", "of", "each", "component", "are", "present", "initially", ",", "once", "steady", "state", "is", "reached", "only", "a", "single", "degree", "of", "freedom", "is", "left", "." ]
+}, {
+  "sentence_tokens" : [ "If", "the", "steady-state", "amount", "of", "any", "one", "component", "is", "known", ",", "then", "the", "steady-state", "amounts", "of", "all", "components", "are", "mathematically", "determined", "." ]
+}, {
+  "sentence_tokens" : [ "This", "remarkable", "rigidity", "is", "the", "basis", "for", "the", "eliminations", "in", "all", "of", "the", "examples", "discussed", "here.To", "actually", "calculate", "the", "steady", "states", ",", "it", "is", "necessary", "to", "determine", "a", "canonical", "basis", "element", "." ]
+}, {
+  "sentence_tokens" : [ "This", "is", "provided", "by", "the", "Matrix-Tree", "Theorem", "(", "MTT", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Versions", "of", "this", "go", "back", "to", "Kirchhoff", ",", "[", "49", "]", ",", "but", "the", "one", "needed", "for", "our", "purposes", "was", "first", "proved", "by", "Bill", "Tutte", ",", "one", "of", "the", "founders", "of", "modern", "graph", "theory", ",", "[", "50", "]", "." ]
+}, {
+  "sentence_tokens" : [ "To", "calculate", "rho", ",", "take", "the", "product", "of", "all", "the", "labels", "on", "a", "spanning", "tree", "of", "G", "rooted", "at", "vertex", "i", "and", "add", "the", "products", "over", "all", "such", "trees", "(", "Figure", "2B", ",", "box", ")", "." ]
+}, {
+  "sentence_tokens" : [ "A", "spanning", "tree", "is", "a", "fundamental", "concept", "in", "graph", "theory", "." ]
+}, {
+  "sentence_tokens" : [ "It", "is", "a", "subgraph", "of", "G", "that", "contains", "each", "vertex", "of", "G", "(", "spanning", ")", "which", "has", "no", "cycles", "when", "edge", "directions", "are", "ignored", "(", "tree", ")", "and", "for", "which", "i", "is", "the", "only", "vertex", "with", "no", "outgoing", "edges", "in", "the", "tree", "(", "rooted", ")", "." ]
+}, {
+  "sentence_tokens" : [ "The", "spanning", "trees", "for", "the", "strongly", "connected", "graph", "in", "Figure", "2B", "are", "shown", "there", "along", "with", "the", "calculation", "of", "." ]
+}, {
+  "sentence_tokens" : [ "More", "spanning", "tree", "are", "shown", "in", "Supporting", "Information", "S1.The", "kernel", "could", "have", "been", "calculated", "by", "standard", "linear", "algebraic", "methods", "using", "determinants", "." ]
+}, {
+  "sentence_tokens" : [ "The", "significance", "of", "the", "MTT", "is", "that", "it", "expresses", "rho", "as", "a", "polynomial", "in", "the", "labels", "with", "positive", "coefficients", "(", "Figure", "2B", ")", "." ]
+}, {
+  "sentence_tokens" : [ "The", "cancellations", "arising", "from", "the", "alternating", "signs", "in", "a", "determinant", "are", "thereby", "resolved.Results", "equivalent", "to", "the", "MTT", "have", "been", "frequently", "rediscovered", "in", "biology", ",", "for", "instance", ",", "in", "the", "King-Altman", "procedure", "in", "enzyme", "kinetics", ",", "[", "6", "]", ",", "and", "in", "Terrell", "Hill", "'", "s", "thermodynamical", "studies", ",", "[", "51", "]", ",", "but", "without", "appreciating", "the", "broad", "scope", "of", "its", "application.If", "x", "is", "any", "steady-state", ",", "then", ",", "since", ",", "we", "know", "that", ",", "where", "." ]
+}, {
+  "sentence_tokens" : [ "The", "undetermined", "reflects", "the", "single", "degree", "of", "freedom", "that", "remains", "at", "steady", "state", "." ]
+}, {
+  "sentence_tokens" : [ "It", "can", "be", "removed", "by", "normalising", "in", "different", "ways", ":(", "4", ")", "In", "1", ",", "one", "of", "the", "vertices", ",", "by", "convention", "vertex", "1", ",", "is", "chosen", "as", "a", "reference", "." ]
+}, {
+  "sentence_tokens" : [ "In", "2", ",", "plays", "a", "similar", "role", ",", "with", "." ]
+}, {
+  "sentence_tokens" : [ "It", "follows", "from", "the", "MTT", "that", "the", "terms", "in", "brackets", "in", "(", "4", ")", ",", "and", ",", "are", "rational", "expressions", "in", "the", "labels", "." ]
+}, {
+  "sentence_tokens" : [ "The", "component", "amounts", ",", "x", ",", "have", "been", "eliminated", "in", "favour", "of", "these", "rational", "expressions", ",", "along", "with", "x", "or", ",", "respectively", "." ]
+}, {
+  "sentence_tokens" : [ "The", "rational", "expressions", "in", "each", "of", "the", "examples", "discussed", "here", "arise", "in", "exactly", "this", "way.The", "situation", "when", "G", "is", "not", "strongly", "connected", "is", "also", "of", "interest", "." ]
+}, {
+  "sentence_tokens" : [ "For", "a", "general", "graph", "G", ",", "the", "dimension", "of", "is", "given", "by", "the", "number", "of", "terminal", "strongly", "connected", "components", "." ]
+}, {
+  "sentence_tokens" : [ "A", "strongly", "connected", "component", "(", "SCC", ")", "of", "a", "graph", "G", "is", "a", "maximal", "strongly", "connected", "subgraph", "(", "Figure", "2C", ")", "." ]
+}, {
+  "sentence_tokens" : [ "The", "SCCs", "themselves", "form", "a", "directed", "graph", ",", ",", "in", "which", "two", "SCCs", "are", "linked", "by", "a", "directed", "edge", "if", "some", "vertex", "of", "the", "first", "SCC", "has", "an", "edge", "to", "some", "vertex", "of", "the", "second", "SCC", "." ]
+}, {
+  "sentence_tokens" : [ "has", "no", "directed", "cycles", ",", "which", "allows", "initial", "and", "terminal", "SCCs", "to", "be", "identified", "." ]
+}, {
+  "sentence_tokens" : [ "A", "description", "of", "in", "terms", "of", "the", "terminal", "SCCs", "is", "given", "in", "the", "Appendix", "of", "[", "52", "]", "." ]
+}, {
+  "sentence_tokens" : [ "We", "go", "further", "here", "by", "using", "the", "MTT", "to", "give", "explicit", "expressions", "for", "the", "basis", "elements", "in", "terms", "of", "the", "labels", "." ]
+}, {
+  "sentence_tokens" : [ "For", "each", "terminal", "SCC", ",", "t", ",", "let", "be", "the", "vector", "which", ",", "for", "vertices", "in", "that", "SCC", ",", "agrees", "with", "the", "values", "coming", "from", "the", "MTT", "applied", "to", "that", "SCC", "in", "isolation", ",", "while", "for", "any", "other", "vertex", ",", ",", "." ]
+}, {
+  "sentence_tokens" : [ "These", "vectors", "form", "a", "basis", "for", "the", "kernel", "of", "the", "Laplacian", ":(", "5", ")", "where", "T", "is", "the", "number", "of", "terminal", "SCCs", "." ]
+}, {
+  "sentence_tokens" : [ "An", "outline", "proof", "is", "provided", "in", "Supporting", "Information", "S1.When", "G", "is", "not", "strongly", "connected", "there", "is", "more", "than", "one", "steady", "state", ",", "up", "to", "a", "scalar", "multiple", "." ]
+}, {
+  "sentence_tokens" : [ "This", "should", "not", "be", "confused", "with", "multistability", ",", "as", "there", "is", "a", "corresponding", "increase", "in", "the", "number", "of", "conservation", "laws", "." ]
+}, {
+  "sentence_tokens" : [ "Steady", "states", "may", "also", "have", "components", "with", "zero", "amounts", ",", "even", "when", "the", "initial", "conditions", "do", "not", ",", "in", "contrast", "to", "the", "strongly", "connected", "case", ",", "in", "which", "the", "MTT", "shows", "that", "each", "component", "is", "positive", "at", "steady", "state", "." ]
+}, {
+  "sentence_tokens" : [ "For", "some", "applications", ",", "it", "is", "useful", "to", "know", "which", "steady", "state", "is", "reached", "from", "a", "given", "initial", "condition", "." ]
+}, {
+  "sentence_tokens" : [ "Such", "dynamical", "issues", "will", "be", "dealt", "with", "elsewhere", "(", "I.", "Mirzaev", ",", "J.", "Gunawardena", ",", "in", "preparation", ")", "." ]
+}, {
+  "sentence_tokens" : [ "We", "discuss", "some", "additional", "general", "results", "later", "but", "turn", "next", "to", "explaining", "how", "such", "a", "linear", "framework", "can", "be", "applied", "to", "nonlinear", "biological", "systems", "." ]
+}, {
+  "sentence_tokens" : [ "The", "Uncoupling", "Condition", "." ]
+}, {
+  "sentence_tokens" : [ "The", "leap", "from", "linearity", "to", "nonlinearity", "can", "be", "made", "in", "one", "of", "two", "ways", "." ]
+}, {
+  "sentence_tokens" : [ "For", "time-scale", "separation", ",", "as", "in", "the", "examples", "discussed", "above", ",", "nonlinearity", "is", "encoded", "in", "the", "labels", "." ]
+}, {
+  "sentence_tokens" : [ "Up", "till", "now", ",", "the", "labels", "have", "been", "treated", "as", "uninterpreted", "symbols", "." ]
+}, {
+  "sentence_tokens" : [ "In", "any", "application", "the", "labels", "arise", "from", "the", "biochemical", "details", "of", "the", "system", "being", "studied", "." ]
+}, {
+  "sentence_tokens" : [ "A", "label", "may", "be", "an", "arbitrary", "rational", "expression", "involving", "rate", "constants", "of", "actual", "chemical", "reactions", "or", "concentrations", "of", "actual", "chemical", "species", "." ]
+}, {
+  "sentence_tokens" : [ "For", "instance", ",", "the", "following", "expression", "for", "a", "label", "would", "be", "legitimatewhere", "are", "rate", "constants", "and", "are", "chemical", "species", "." ]
+}, {
+  "sentence_tokens" : [ "In", "our", "experience", ",", "so", "far", ",", "labels", "have", "been", "polynomials", "in", "the", "concentrations", "with", "coefficients", "that", "are", "rational", "in", "the", "rate", "constants", "." ]
+}, {
+  "sentence_tokens" : [ "However", ",", "there", "is", "no", "mathematical", "reason", "to", "exclude", "more", "complex", "expressions", ",", "like", "the", "one", "above", "." ]
+}, {
+  "sentence_tokens" : [ "The", "crucial", "restriction", ",", "which", "we", "refer", "to", "as", "the", "uncoupling", "condition", ",", "is", "that", "if", "a", "concentration", ",", "[", "X]", ",", "appears", "in", "a", "label", ",", "then", "the", "species", "X", "must", "not", "correspond", "to", "a", "vertex", "in", "the", "graph", "." ]
+}, {
+  "sentence_tokens" : [ "It", "could", ",", "however", ",", "correspond", "to", "a", "slow", "component", "in", "a", "time-scale", "separation", ",", "which", "is", "often", "how", "such", "a", "label", "arises", "." ]
+}, {
+  "sentence_tokens" : [ "The", "uncoupling", "condition", "is", "essential", "to", "preserve", "linearity", "but", "it", "can", "be", "circumvented", "in", "some", "cases", ",", "as", "explained", "below", "." ]
+}, {
+  "sentence_tokens" : [ "The", "other", "encoding", "of", "nonlinearity", "will", "be", "discussed", "later.The", "key", "to", "applying", "the", "framework", "in", "a", "time-scale", "separation", "is", ",", "first", ",", "to", "find", "a", "directed", "graph", "whose", "components", "represent", "the", "fast", "variables", "in", "the", "sub-system", ",", "which", "has", "a", "labelling", "that", "satisfies", "the", "uncoupling", "condition", ",", "and", ",", "second", ",", "to", "show", "that", "the", "steady", "states", "of", "the", "linear", "Laplacian", "dynamics", "coincide", "with", "those", "of", "the", "full", "nonlinear", "biochemical", "dynamics", "of", "the", "sub-system", "." ]
+}, {
+  "sentence_tokens" : [ "It", "is", "crucial", "to", "note", "that", "only", "the", "steady", "states", "need", "coincide", ",", "not", "the", "transient", "dynamics", "." ]
+}, {
+  "sentence_tokens" : [ "If", "the", "latter", "were", "the", "same", ",", "then", "the", "sub-system", "would", "itself", "be", "linear", ",", "which", "is", "not", "the", "case", "in", "any", "of", "the", "applications", "." ]
+}, {
+  "sentence_tokens" : [ "In", "this", "way", ",", "dynamical", "nonlinearity", "with", "simple", "rate", "constants", "is", "traded", "for", "dynamical", "linearity", "with", "complex", "labels", "." ]
+}, {
+  "sentence_tokens" : [ "The", "trade-off", "is", "highly", "beneficial", ",", "as", "it", "allows", "the", "steady", "states", "of", "the", "nonlinear", "sub-system", "to", "be", "algorithmically", "calculated", "without", "knowing", "in", "advance", "the", "values", "of", "any", "rate", "constants", "." ]
+}, {
+  "sentence_tokens" : [ "This", "enables", "the", "internal", "complexity", "of", "the", "fast", "components", "to", "be", "eliminated", ",", "giving", "rise", "to", "rational", "expressions", "based", "on", "one", "or", "the", "other", "of", "the", "normalisations", "in", "(", "4", ")", "." ]
+}, {
+  "sentence_tokens" : [ "This", "procedure", "underlies", "all", "the", "examples", "discussed", "here", "." ]
+}, {
+  "sentence_tokens" : [ "We", "turn", "now", "to", "outlining", "how", "the", "framework", "is", "used", "in", "these", "applications", "." ]
+}, {
+  "sentence_tokens" : [ "Applications", "Far", "from", "Equilibrium", "." ]
+}, {
+  "sentence_tokens" : [ "Enzyme", "kinetics", "." ]
+}, {
+  "sentence_tokens" : [ "As", "a", "simple", "demonstration", "of", "the", "framework", ",", "we", "return", "to", "the", "Michaelis-Menten", "example", "in", "the", "Introduction", "." ]
+}, {
+  "sentence_tokens" : [ "More", "complex", "enzymes", "are", "treated", "in", "essentially", "the", "same", "way.We", "first", "rewrite", "the", "reaction", "scheme", "in", "(", "1", ")", "after", "annotating", "the", "reactions", "with", "their", "corresponding", "rate", "constants", ":(", "6", ")", "The", "labelled", ",", "directed", "graph", "is", "constructed", "following", "the", "time-scale", "separation", "described", "in", "the", "Introduction", "." ]
+}, {
+  "sentence_tokens" : [ "The", "vertices", "correspond", "to", "the", "fast", "components", ",", "which", "are", "the", "enzyme", "states", "E", "and", "ES", "." ]
+}, {
+  "sentence_tokens" : [ "The", "edges", "amalgamate", "the", "effects", "of", "the", "reactions", "in", "which", "these", "components", "are", "involved", "." ]
+}, {
+  "sentence_tokens" : [ "Edges", "outgoing", "from", "vertex", "E", "absorb", "the", "concentrations", "of", "slow", "components", "(", "in", "this", "case", "S", ")", ",", "while", "all", "other", "edges", "only", "have", "rate", "constants", "in", "their", "labels", "." ]
+}, {
+  "sentence_tokens" : [ "The", "following", "graph", "emerges", "(", "7", ")", "in", "which", "the", "vertices", "have", "been", "annotated", "for", "convenience", "with", "the", "names", "of", "the", "corresponding", "components", "." ]
+}, {
+  "sentence_tokens" : [ "[", "S", "]", "is", "the", "only", "concentration", "that", "appears", "in", "a", "label", "and", "it", "is", "not", "the", "concentration", "of", "a", "vertex", "in", "the", "graph", "." ]
+}, {
+  "sentence_tokens" : [ "The", "uncoupling", "condition", "is", "therefore", "satisfied.It", "is", "not", "difficult", "to", "check", "that", ",", "with", "this", "labelling", ",", "the", "steady", "states", "of", "the", "Laplacian", "dynamics", "given", "by", "(", "3", ")", "are", "the", "same", "as", "the", "steady", "states", "of", "the", "fast", "components", "given", "by", "the", "actual", "biochemical", "reactions", "in", "(", "6", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Graphs", "constructed", "like", "(", "7", ")", ",", "even", "for", "more", "complex", "enzymes", ",", "are", "naturally", "strongly", "connected", "because", "bound", "states", "of", "the", "enzyme", "usually", "release", "the", "enzyme", "eventually", "." ]
+}, {
+  "sentence_tokens" : [ "(", "If", "there", "are", "dead-end", "complexes", ",", "they", "must", "be", "formed", "reversibly", ",", "thereby", "also", "ensuring", "strong", "connectivity", "." ]
+}, {
+  "sentence_tokens" : [ ")", "Accordingly", ",", "the", "MTT", "can", "be", "applied", "and", "it", "follows", "from", "the", "formula", "in", "Figure", "2B", "that", "(", "8)", "If", "the", "system", "is", "assumed", "to", "be", "at", "a", "steady", "state", ",", "then", "it", "follows", "from", "the", "second", "elimination", "formula", "in", "(", "4", ")", "that", "where", "is", "the", "total", "concentration", "of", "enzyme", "and", "." ]
+}, {
+  "sentence_tokens" : [ "Note", "how", "[", "ES", "]", "has", "been", "eliminated", "in", "favour", "of", "and", "the", "expressions", "appearing", "in", "rho", ",", "which", "come", "from", "the", "MTT", "." ]
+}, {
+  "sentence_tokens" : [ "The", "enzyme", "rate", "can", "now", "be", "calculated", "as", "and", "the", "Michaelis-Menten", "formula", "in", "(", "2", ")", "emerges", "with", "the", "usual", "aggregated", "parameters", ",", "[", "8]", ",", "(", "9", ")", "King", "and", "Altman", "were", "the", "first", "to", "formalise", "this", "kind", "of", "algebra", "for", "more", "complex", "enzymes", ",", "[", "6", "]", "." ]
+}, {
+  "sentence_tokens" : [ "They", "did", "not", "use", "graph", "theory", "and", "spanning", "trees", "but", "introduced", "\"", "reaction", "patterns", "\"", ",", "a", "terminology", "that", "has", "persisted", "in", "the", "biochemical", "literature", ",", "[", "8]", "." ]
+}, {
+  "sentence_tokens" : [ "The", "King-Altman", "procedure", "is", "equivalent", "to", "the", "MTT", "." ]
+}, {
+  "sentence_tokens" : [ "Post-translational", "modification", "." ]
+}, {
+  "sentence_tokens" : [ "The", "advantage", "of", "using", "the", "framework", "introduced", "here", "becomes", "particularly", "clear", "when", "moving", "from", "the", "behaviour", "of", "a", "single", "enzyme", "to", "that", "of", "a", "network", "of", "enzymes", "in", "post-translational", "modification", "." ]
+}, {
+  "sentence_tokens" : [ "The", "identical", "mathematical", "machinery", "can", "be", "used", "in", "this", "quite", "different", "context", "." ]
+}, {
+  "sentence_tokens" : [ "This", "was", "first", "described", "in", "[", "45", "]", "but", "we", "clarify", "here", "several", "issues", "whose", "significance", "was", "only", "understood", "more", "recently.Consider", "a", "substrate", ",", "S", ",", "that", "is", "subject", "to", "different", "types", "of", "PTM", "(", "phosphorylation", ",", "methylation", ",", "acetylation", ",", "etc", ")", ",", "with", "each", "modification", "potentially", "taking", "place", "at", "many", "sites", "." ]
+}, {
+  "sentence_tokens" : [ "(", "There", "may", "be", "multiple", "such", "substrates", "but", "we", "consider", "only", "one", "for", "simplicity", "here", "." ]
+}, {
+  "sentence_tokens" : [ ")", "We", "will", "analyse", "such", "a", "substrate", "under", "the", "assumption", "that", "it", ",", "and", "the", "enzymes", "acting", "upon", "it", ",", "are", "at", "steady", "state", "." ]
+}, {
+  "sentence_tokens" : [ "The", "substrate", "S", "may", "have", "many", "mod-forms", ",", "which", "can", "be", "enumerated", ",", "." ]
+}, {
+  "sentence_tokens" : [ "The", "number", "of", "mod-forms", ",", "N", ",", "typically", "depends", "exponentially", "on", "the", "number", "of", "sites", ",", "although", ",", "with", "modifications", "like", "methylation", "or", "ubiquitination", ",", "the", "detailed", "combinatorics", "may", "be", "more", "complicated", ",", "[", "43", "]", "." ]
+}, {
+  "sentence_tokens" : [ "There", "is", "a", "natural", "directed", "graph", "on", "the", "vertices", ",", "in", "which", "there", "is", "an", "edge", "if", "some", "enzyme", "(", "and", "there", "may", "be", "several", ")", "is", "capable", "of", "converting", "S", "to", "S", "." ]
+}, {
+  "sentence_tokens" : [ "Note", "that", "enzymes", "may", "be", "processive", "and", "able", "to", "make", "several", "modifications", "in", "one", "encounter", "between", "enzyme", "and", "substrate", ",", "so", "that", "an", "individual", "enzyme", "may", "be", "implicated", "in", "many", "edges", "with", "S", "as", "the", "source", "vertex", "." ]
+}, {
+  "sentence_tokens" : [ "It", "is", "an", "empirical", "observation", "that", "each", "individual", "transformation", "from", "S", "to", "S", "can", "generally", "be", "undone", ",", "if", "not", "directly", ",", "then", "through", "intermediate", "mod-forms", "." ]
+}, {
+  "sentence_tokens" : [ "Hence", ",", "S", "can", "be", "recovered", ",", "eventually", ",", "from", "S", ",", "so", "that", "the", "directed", "graph", "is", "naturally", "strongly", "connected.This", "is", "an", "obvious", "setting", "to", "apply", "the", "linear", "framework", "." ]
+}, {
+  "sentence_tokens" : [ "A", "labelling", "of", "the", "edges", "is", "needed", "that", "captures", "the", "underlying", "biochemistry", "and", "also", "satisfies", "the", "uncoupling", "condition", "." ]
+}, {
+  "sentence_tokens" : [ "PTMs", "fall", "naturally", "into", "two", "biochemical", "classes", ":", "those", "based", "on", "small-molecule", "modifications", "(", "phosphorylation", ",", "methylation", ",", "acetylation", ",", "etc", ")", "in", "which", "the", "donor", "molecules", "are", "regenerated", "by", "core", "metabolism", "and", "modification", "is", "undertaken", "by", "a", "single", "enzyme", ";", "and", "those", "based", "on", "polypeptide", "modifications", "(", "ubiquitin", ",", "SUMO", ",", "NEDD", ",", "etc", ")", "in", "which", "the", "donor", "molecules", "are", "synthesised", "by", "gene", "transcription", "and", "modification", "requires", "a", "series", "of", "enzymes", ",", "[", "43", "]", "." ]
+}, {
+  "sentence_tokens" : [ "It", "is", "easiest", "to", "focus", "on", "the", "first", "class", "of", "small-molecule", "modifications", ";", "analysis", "of", "the", "second", "class", "is", "still", "work", "in", "progress.With", "small-molecule", "modifications", ",", "the", "biochemistry", "of", "modification", "is", "significantly", "different", "from", "that", "of", "demodification", ",", "since", "the", "former", "involves", "the", "donor", "molecule", "that", "brings", "the", "modifying", "group", ",", "while", "the", "latter", "is", "a", "hydrolysis", "." ]
+}, {
+  "sentence_tokens" : [ "Such", "details", "have", "been", "usually", "disregarded", "in", "the", "literature", ",", "where", "it", "has", "been", "the", "custom", "to", "treat", "all", "enzymes", "as", "if", "they", "followed", "the", "Michaelis-Menten", "scheme", "in", "(", "1", ")", "." ]
+}, {
+  "sentence_tokens" : [ "This", "overlooks", "much", "of", "the", "biochemical", "knowledge", "that", "has", "accumulated", "since", "1913", ",", "[", "53", "]", "." ]
+}, {
+  "sentence_tokens" : [ "Reaction", "mechanisms", "for", "kinases", "and", "phosphatases", "have", "been", "analysed", ",", "[", "54", "]", ",", "[", "55", "]", ",", "although", "less", "is", "known", "about", "the", "enzymology", "of", "other", "PTMs", "." ]
+}, {
+  "sentence_tokens" : [ "One", "of", "the", "virtues", "of", "the", "linear", "framework", "is", "that", "it", "shows", "how", "realistic", "enzyme", "mechanisms", "can", "be", "analysed", ",", "thereby", "helping", "to", "bridge", "the", "gap", "between", "enzyme", "biochemistry", "and", "systems", "biology", ",", "[", "56", "]", "." ]
+}, {
+  "sentence_tokens" : [ "By", "making", "appropriate", "assumptions", "regarding", "the", "core", "biochemical", "machinery", "that", "maintains", "the", "modifying", "groups", ",", "the", "modification", "and", "demodification", "enzymes", "may", "be", "assumed", "to", "follow", "mechanisms", "built", "up", "from", "just", "three", "basic", "reactions", ":", "creation", "of", "an", "intermediate", "complex", ";", "break-up", "of", "an", "intermediate", "complex", ";", "and", "conversion", "of", "one", "intermediate", "complex", "to", "another", "(", "10", ")", "Here", ",", "the", "intermediate", "complexes", "have", "been", "denoted", ",", "and", "the", "asterisk", "in", "or", "can", "be", "any", "index", "in", "the", "list", "of", "substrate", "forms", "or", "intermediate", "complexes", ",", "respectively", "." ]
+}, {
+  "sentence_tokens" : [ "This", "scheme", "allows", "for", "complex", "enzyme", "mechanisms", "that", "may", "have", "multiple", "intermediates", ",", "yield", "multiple", "products", ",", "exhibit", "arbitrary", "degrees", "of", "processivity", "and", "be", "fully", "reversible", "." ]
+}, {
+  "sentence_tokens" : [ "Enzymes", "may", "also", "use", "different", "mechanisms", "for", "different", "mod-forms", "." ]
+}, {
+  "sentence_tokens" : [ "While", "(", "10", ")", "is", "quite", "general", ",", "it", "does", "impose", "some", "restrictions", "on", "enzyme", "mechanisms", ",", "as", "discussed", "further", "in", "[", "56", "]", ",", "although", "these", "do", "not", "seem", "to", "be", "restrictive", "for", "most", "metabolic", "PTMs.If", "the", "enzyme", "E", "is", "able", "to", "convert", "S", "to", "S", "by", "some", "mechanism", "built", "up", "from", "(", "10", ")", ",", "then", "the", "linear", "framework", "may", "be", "applied", "to", "the", "enzyme", "intermediates", "just", "as", "described", "previously", "for", "enzyme", "kinetics", "." ]
+}, {
+  "sentence_tokens" : [ "The", "intermediate", "complexes", "can", "be", "eliminated", "at", "steady", "state", "and", "the", "rate", "of", "conversion", "from", "S", "to", "S", "can", "be", "calculated", "as", ",", "where", "is", "a", "(", "possibly", "very", "complicated", ")", "rational", "expression", "in", "the", "rate", "constants", "of", "the", "mechanism", "." ]
+}, {
+  "sentence_tokens" : [ "For", "instance", ",", "if", "the", "conversion", "from", "S", "to", "S", "takes", "place", "by", "the", "Michaelis-Menten", "scheme", "in", "(", "6", ")", ",", "then", "it", "follows", "from", "(", "8)", "by", "using", "the", "first", "elimination", "formula", "in", "(", "4", ")", "that", "the", "conversion", "rate", "is", "given", "byIn", "this", "case", ",", "." ]
+}, {
+  "sentence_tokens" : [ "What", "the", "linear", "framework", "shows", "is", "that", "a", "similar", "formula", "holds", "for", "any", "reaction", "scheme", "built", "up", "from", "(", "10", ")", ",", "no", "matter", "how", "complicated.The", "key", "point", "is", "that", "such", "formulas", "are", "linear", "in", "[", "S", "]", ",", "which", "means", "that", "can", "be", "incorporated", "into", "a", "label", "in", "the", "mod-form", "graph", "." ]
+}, {
+  "sentence_tokens" : [ "If", "several", "enzymes", "are", "able", "to", "convert", "S", "to", "S", ",", "each", "contributes", "additively", "to", "the", "rate", ",", "and", "the", "edge", "from", "S", "to", "S", "can", "be", "labelled", "(", "11", ")", "The", "concentrations", "in", "such", "labels", "are", "those", "of", "enzymes", "." ]
+}, {
+  "sentence_tokens" : [ "It", "follows", "that", "the", "uncoupling", "condition", "will", "be", "satisfied", "so", "long", "as", "enzymes", "are", "not", "also", "substrates", "." ]
+}, {
+  "sentence_tokens" : [ "We", "assume", "this", ",", "for", "the", "moment", ",", "but", "explain", "below", "how", "it", "can", "be", "circumvented", "." ]
+}, {
+  "sentence_tokens" : [ "With", "this", "labelling", ",", "it", "can", "be", "shown", "that", "the", "steady", "states", "of", "the", "Laplacian", "dynamics", "in", "(", "3", ")", "are", "identical", "with", "the", "steady", "states", "of", "the", "nonlinear", "dynamics", "coming", "from", "the", "specified", "enzyme", "mechanisms", "." ]
+}, {
+  "sentence_tokens" : [ "This", "holds", "for", "arbitrary", "numbers", "of", "sites", ",", "arbitrary", "numbers", "of", "modifying", "and", "demodifying", "enzymes", "and", "arbitrary", "reaction", "mechanisms", "built", "up", "from", "those", "in", "(", "10", ")", ",", "[", "45", "]", "." ]
+}, {
+  "sentence_tokens" : [ "The", "MTT", "can", "now", "be", "applied", "to", "show", "that", "the", "substrate", "forms", "can", "be", "eliminated", "at", "steady", "state", "." ]
+}, {
+  "sentence_tokens" : [ "The", "relative", "concentration", "of", "each", "mod-form", ",", "S", ",", "can", "be", "explicitly", "written", "down", "using", "the", "second", "normalisation", "in", "(", "4", ")", ",", "(", "12", ")", "We", "assume", "here", "that", "there", "are", "p", "forward", "and", "reverse", "enzymes", "in", "total", ",", "." ]
+}, {
+  "sentence_tokens" : [ "The", "rho", "i", "are", "given", "by", "the", "MTT", "as", "polynomials", "in", "the", "free-enzyme", "concentrations", ",", "through", "the", "labels", "described", "by", "(", "11", ")", "." ]
+}, {
+  "sentence_tokens" : [ "We", "see", "from", "(", "12", ")", "that", "the", "exponential", "complexity", "arising", "from", "combinatorial", "patterns", "of", "modification", "disappears", "at", "steady", "state", ":", "the", "effective", "(", "algebraic", ")", "complexity", "at", "steady", "state", "depends", "only", "on", "the", "number", "of", "enzymes", ",", "not", "on", "the", "number", "of", "sites", "." ]
+}, {
+  "sentence_tokens" : [ "As", "we", "have", "seen", ",", "this", "surprising", "conclusion", "is", "a", "consequence", "of", "the", "strong", "connectivity", "of", "the", "mod-form", "graph.In", "this", "example", ",", "the", "elimination", "process", "is", "hierarchical", "." ]
+}, {
+  "sentence_tokens" : [ "The", "enzyme", "bound", "intermediate", "complexes", "are", "first", "eliminated", "in", "favour", "of", "the", "mod-forms", "and", "the", "free", "enzymes", ",", "yielding", "the", "labels", "for", "the", "mod-form", "graph", ",", "and", "the", "mod-forms", "are", "then", "eliminated", "to", "leave", "only", "the", "free", "enzymes.As", "discussed", "above", ",", "different", "mod-forms", "may", "elicit", "different", "downstream", "responses", "." ]
+}, {
+  "sentence_tokens" : [ "The", "expression", "in", "(", "12", ")", "can", "be", "thought", "of", "as", "the", "steady-state", "probability", "of", "finding", "the", "substrate", "in", "mod-form", "S", "." ]
+}, {
+  "sentence_tokens" : [ "If", "S", "elicits", "a", "quantitative", "level", "of", "effect", "given", "by", ",", "then", "the", "overall", "response", "of", "the", "PTM", "substrate", "can", "be", "estimated", "as", "an", "average", "over", "this", "probability", "distribution", ",", "(", "13", ")", "It", "is", "assumed", "here", ",", "as", "part", "of", "the", "time-scale", "separation", "depicted", "in", "Figure", "1", ",", "that", "the", "downstream", "response", "is", "operating", "sufficiently", "slowly", "to", "average", "over", "the", "different", "mod-forms", "." ]
+}, {
+  "sentence_tokens" : [ "This", "is", "similar", "to", "the", "calculation", "of", "the", "rate", "of", "gene", "expression", "as", "a", "function", "of", "transcription", "factor", "concentrations", "(", "Figure", "3A", ")", "." ]
+}, {
+  "sentence_tokens" : [ "In", "the", "case", "of", "PTM", ",", "formulas", "like", "(", "13", ")", "are", "functions", "of", "free", "enzyme", "concentrations", ",", "which", "are", "set", "by", "the", "enzyme", "mechanisms", "and", "cannot", "be", "readily", "estimated", "or", "approximated", "." ]
+}, {
+  "sentence_tokens" : [ "However", ",", "since", "enzymes", "are", "assumed", "to", "be", "neither", "synthesised", "nor", "degraded", "(", "see", "below", "for", "how", "this", "restriction", "can", "be", "addressed", ")", ",", "there", "is", "a", "conservation", "law", "for", "each", "enzyme", "." ]
+}, {
+  "sentence_tokens" : [ "These", "may", "be", "explicitly", "written", "down", "in", "terms", "of", "the", "symbolic", "rate", "constants", ",", "(", "14", ")", "to", "give", "p", "nonlinear", "algebraic", "equations", "for", "the", "p", "unknown", "free-enzyme", "concentrations", "." ]
+}, {
+  "sentence_tokens" : [ "The", "essential", "nonlinearity", "in", "the", "biochemistry", "makes", "its", "appearance", "in", "these", "equations", "." ]
+}, {
+  "sentence_tokens" : [ "For", "instance", ",", "for", "given", "total", "amounts", "of", "enzymes", "and", "substrate", ",", "there", "may", "be", "multiple", "solutions", "to", "(", "14", ")", ",", "giving", "rise", "to", "multistability", ",", "[", "46", "]", ",", "[", "57", "]", "." ]
+}, {
+  "sentence_tokens" : [ "Equations", "(", "12", ")", "and", "(", "14", ")", "together", "provide", "a", "complete", "mathematical", "description", "of", "the", "substrate", "'", "s", "behaviour", "at", "steady", "state.For", "PTM", ",", "the", "uncoupling", "condition", "has", "significant", "consequences", ",", "as", "it", "appears", "to", "rule", "out", "enzyme", "cascades", ",", "such", "as", "the", "MAP", "kinase", "cascade", ",", "in", "which", "the", "substrate", "at", "one", "level", "becomes", "the", "enzyme", "for", "the", "next", "." ]
+}, {
+  "sentence_tokens" : [ "However", ",", "in", "this", "case", ",", "substrate-forms", "at", "distinct", "levels", "of", "the", "cascade", "can", "never", "be", "inter", "converted", "and", "so", "appear", "in", "distinct", "connected", "components", "of", "the", "graph", "." ]
+}, {
+  "sentence_tokens" : [ "If", "the", "concentration", "appearing", "in", "a", "label", "is", "that", "of", "a", "component", "in", "a", "different", "connected", "component", ",", "then", ",", "under", "suitable", "conditions", ",", "the", "analysis", "can", "still", "be", "undertaken", "in", "a", "recursive", "manner", "." ]
+}, {
+  "sentence_tokens" : [ "Feliu", "et", "al", "work", "out", "the", "case", "of", "a", "linear", "cascade", ",", "[", "58", "]", ",", "but", "the", "general", "conditions", "under", "which", "this", "method", "can", "be", "exploited", "have", "not", "yet", "been", "determined", "." ]
+}, {
+  "sentence_tokens" : [ "Ligand", "Binding", ",", "at", "Equilibrium", "and", "Beyond", "." ]
+}, {
+  "sentence_tokens" : [ "Several", "examples", "discussed", "above", "involve", "the", "binding", "of", "ligands", "to", "various", "kinds", "of", "\"", "scaffolds", "\"", "." ]
+}, {
+  "sentence_tokens" : [ "These", "examples", "have", "usually", "been", "treated", "by", "assuming", "that", "the", "ligands", "and", "the", "scaffolds", "are", "at", "thermodynamic", "equilibrium", "." ]
+}, {
+  "sentence_tokens" : [ "The", "case", "of", "the", "PHO5", "gene", "in", "yeast", ",", "discussed", "above", ",", "makes", "clear", "that", "a", "more", "general", "treatment", "is", "necessary", "." ]
+}, {
+  "sentence_tokens" : [ "The", "linear", "framework", "is", "not", "limited", "to", "systems", "at", "equilibrium", "." ]
+}, {
+  "sentence_tokens" : [ "We", "first", "describe", "how", "it", "can", "be", "used", "in", "sufficient", "generality", "to", "allow", "for", "dissipative", "behaviour", "and", "then", "discuss", "the", "simplifications", "that", "arise", "at", "equilibrium.Consider", "a", "scaffold", ",", "S", ",", "that", "may", "correspond", "to", "an", "allosteric", "protein", ",", "receptor", ",", "ion", "channel", ",", "DNA", "segment", ",", "chromatin", ",", "etc." ]
+}, {
+  "sentence_tokens" : [ "The", "scaffold", "can", "exist", "in", "multiple", "states", ",", ",", "corresponding", "to", "protein", "conformations", ",", "states", "of", "binding", "of", "accessory", "proteins", ",", "states", "of", "DNA", "looping", ",", "patterns", "of", "nucleosome", "organisation", ",", "etc." ]
+}, {
+  "sentence_tokens" : [ "The", "number", "of", "scaffold", "states", "need", "not", "be", "high", ";", "in", "the", "Monod-Wyman-Changeux", "model", "of", "allostery", ",", "for", "instance", ",", "m", "is", "often", "two", ",", "corresponding", "to", "a", "\"", "relaxed", "\"", "and", "a", "\"", "tense", "\"", "state", "(", "Figure", "3B", ")", "." ]
+}, {
+  "sentence_tokens" : [ "The", "corresponding", "state", "transitions", "may", "take", "place", "at", "equilibrium", ",", "as", "in", "allosteric", "transitions", ",", "or", "require", "energy", "expenditure", "and", "be", "dissipative", ",", "as", "in", "nucleosome", "reorganisation", "." ]
+}, {
+  "sentence_tokens" : [ "Ligands", "may", "bind", "to", "multiple", "sites", "on", "the", "scaffold", "in", "each", "of", "its", "states", ",", "with", "overlapping", "site", "preferences", "and", "cooperativity", "." ]
+}, {
+  "sentence_tokens" : [ "To", "avoid", "excessive", "notation", ",", "we", "discuss", "here", "the", "case", "in", "which", "distinct", "ligands", "do", "not", "compete", "for", "sites", ",", "so", "that", "each", "site", "is", "associated", "with", "a", "specified", "ligand", ",", "which", "may", "or", "may", "not", "be", "bound", "there", "." ]
+}, {
+  "sentence_tokens" : [ "In", "this", "case", ",", "the", "pattern", "of", "ligand", "binding", "can", "be", "encoded", "by", "a", "bitstring", ",", ",", "where", "n", "is", "the", "number", "of", "sites", "and", "indicates", "that", "site", "i", "is", "empty", ",", "while", "indicates", "that", "site", "i", "is", "bound", "by", "its", "cognate", "ligand", "." ]
+}, {
+  "sentence_tokens" : [ "(", "A", "more", "complicated", "encoding", "is", "needed", "when", "distinct", "ligands", "bind", "to", "the", "same", "site", "." ]
+}, {
+  "sentence_tokens" : [ ")", "The", "patterns", "of", "ligand", "binding", "in", "different", "scaffold", "states", ",", "or", "the", "\"", "microstates", "\"", "of", "the", "system", ",", "may", "then", "be", "encoded", "asThere", "are", "microstates", "in", "total", "although", "not", "all", "of", "these", "may", "be", "relevant", ",", "depending", "on", "the", "biological", "context.The", "microstates", "form", "the", "vertices", "of", "the", "labelled", ",", "directed", "graph", "." ]
+}, {
+  "sentence_tokens" : [ "The", "labelled", "edges", "arise", "from", "two", "sources", "." ]
+}, {
+  "sentence_tokens" : [ "First", ",", "there", "may", "be", "transitions", "between", "scaffold", "states", "." ]
+}, {
+  "sentence_tokens" : [ "These", "do", "not", "alter", "ligand", "binding", "and", "so", "take", "the", "formwhere", "k", "is", "the", "rate", "constant", "for", "the", "transition", "." ]
+}, {
+  "sentence_tokens" : [ "Such", "transitions", "may", "or", "may", "not", "be", "reversible", "depending", "on", "the", "context", "." ]
+}, {
+  "sentence_tokens" : [ "If", "the", "system", "can", "be", "treated", "at", "equilibrium", ",", "then", "all", "transitions", "must", "be", "reversible", "(", "see", "below", ")", "." ]
+}, {
+  "sentence_tokens" : [ "If", "not", ",", "some", "transitions", "may", "be", "irreversible", "." ]
+}, {
+  "sentence_tokens" : [ "Second", ",", "there", "may", "be", "ligand", "binding", "and", "unbinding", "events", "." ]
+}, {
+  "sentence_tokens" : [ "These", "do", "not", "alter", "scaffold", "state", "and", "so", "take", "the", "form", "where", "L", "is", "the", "ligand", "." ]
+}, {
+  "sentence_tokens" : [ "Here", ",", "only", "a", "single", "bit", "is", "changed", "." ]
+}, {
+  "sentence_tokens" : [ "[", "L", "]", "is", "the", "steady-state", ",", "or", "equilibrium", ",", "concentration", "of", "the", "ligand", "L", "and", "k", "and", "k", "are", "the", "binding", "and", "unbinding", "rate", "constants", ",", "respectively", "." ]
+}, {
+  "sentence_tokens" : [ "Examples", "of", "such", "labelled", ",", "directed", "graphs", "are", "shown", "in", "Figure", "3A", "for", "gene", "regulation", "and", "in", "Figure", "3B", "for", "allostery", ",", "using", ",", "for", "convenience", ",", "an", "abbreviated", "notation", "for", "the", "microstates.This", "formulation", "is", "quite", "general", "." ]
+}, {
+  "sentence_tokens" : [ "It", "allows", "for", "arbitrary", "degrees", "of", "cooperativity", ":", "the", "affinity", "of", "a", "ligand", "for", "a", "site", "may", "depend", "both", "on", "the", "conformation", "of", "the", "scaffold", "and", "on", "the", "occupancy", "of", "other", "sites.Since", "the", "concentrations", "appearing", "in", "the", "labels", "are", "those", "of", "ligands", ",", "the", "uncoupling", "condition", "will", "be", "satisfied", "provided", "that", "none", "of", "the", "scaffold", "states", "can", "act", "as", "a", "ligand", "." ]
+}, {
+  "sentence_tokens" : [ "This", "is", "the", "case", "in", "all", "the", "relevant", "examples", "discussed", "above", "." ]
+}, {
+  "sentence_tokens" : [ "The", "situation", "in", "which", "the", "scaffold", "can", "aggregate", "may", "also", "be", "of", "interest", ",", "[", "12", "]", "." ]
+}, {
+  "sentence_tokens" : [ "For", "the", "present", ",", "we", "assume", "that", "ligands", "and", "scaffolds", "are", "distinct", ",", "so", "that", "the", "uncoupling", "condition", "is", "satisfied", "." ]
+}, {
+  "sentence_tokens" : [ "With", "this", "labelling", ",", "it", "is", "easy", "to", "check", "that", "the", "steady", "states", "of", "the", "Laplacian", "dynamics", "in", "(", "3", ")", "are", "the", "same", "as", "the", "steady", "states", "of", "the", "nonlinear", "dynamics", "arising", "from", "binding", "and", "unbinding", "of", "ligands", "and", "scaffold", "state", "transitions", "." ]
+}, {
+  "sentence_tokens" : [ "Here", ",", "the", "nonlinearity", "arises", "only", "from", "ligand", "binding", "and", "trading", "it", "off", "into", "the", "labels", "is", "straightforward.If", "the", "system", "is", "at", "thermodynamic", "equilibrium", ",", "then", "every", "edge", "must", "be", "reversible", "(", "see", "below", ")", "." ]
+}, {
+  "sentence_tokens" : [ "As", "long", "as", "the", "graph", "is", "connected", "(", "ie", ":", "does", "not", "fall", "into", "separate", "pieces", "with", "no", "edges", "between", "them", ")", ",", "which", "is", "usually", "the", "case", ",", "it", "must", "necessarily", "be", "strongly", "connected", "." ]
+}, {
+  "sentence_tokens" : [ "If", "the", "system", "is", "at", "steady", "state", "far", "from", "equilibrium", ",", "and", "some", "edges", "are", "not", "reversible", ",", "then", "strong", "connectivity", "must", "be", "confirmed", "." ]
+}, {
+  "sentence_tokens" : [ "Strong", "connectivity", "allows", "the", "microstates", "to", "be", "eliminated", "in", "favour", "of", "the", "ligands", ",", "which", ",", "using", "the", "first", "normalisation", "in", "(", "4", ")", "and", "assuming", "there", "are", "p", "ligands", ",", ",", "yields", "expressions", "like", "." ]
+}, {
+  "sentence_tokens" : [ "(", "15", ")", "Here", ",", "the", "reference", "microstate", "is", "taken", "to", "the", "be", "one", "in", "which", "no", "ligands", "are", "bound", ",", "which", "is", "helpful", "for", "calculating", "fractional", "saturation", ",", "as", "explained", "in", "Supporting", "Information", "S1", "." ]
+}, {
+  "sentence_tokens" : [ "The", "second", "normalisation", "in", "(", "4", ")", "is", "more", "suitable", "for", "calculating", "rates", "of", "gene", "expression", ",", "following", "the", "method", "used", "previously", "for", "PTM.As", "with", "PTM", ",", "the", "free-ligand", "concentrations", "are", "determined", "by", "p", "conservation", "laws", "for", "the", "p", "ligands", ",", "similar", "to", "those", "in", "(", "14", ")", "." ]
+}, {
+  "sentence_tokens" : [ "However", ",", "it", "is", "often", "assumed", "that", "ligands", "are", "in", "substantial", "excess", "over", "scaffolds", ",", "so", "that", ",", "to", "a", "first", "approximation", ",", "." ]
+}, {
+  "sentence_tokens" : [ "If", "this", "is", "not", "the", "case", ",", "then", "the", "p", "nonlinear", "equations", "must", "be", "solved", "to", "determine", "the", "actual", "free-ligand", "concentrations.Strong", "connectivity", "is", "not", "mentioned", "in", "the", "dissipative", "analysis", "of", "PHO5", ",", "[", "38", "]", "." ]
+}, {
+  "sentence_tokens" : [ "The", "corresponding", "gene", "regulation", "function", "was", "calculated", "by", "Matlab", "from", "the", "steady-state", "equations", "." ]
+}, {
+  "sentence_tokens" : [ "In", "this", "example", ",", "the", "directed", "graph", "is", "essentially", "identical", "to", "that", "shown", "in", "Figure", "4b", "of", "[", "38", "]", ",", "which", "is", "easily", "checked", "to", "be", "strongly", "connected", "despite", "its", "irreversible", "edges", "." ]
+}, {
+  "sentence_tokens" : [ "As", "we", "have", "seen", ",", "it", "is", "the", "strong", "connectivity", "that", "is", "essential", "for", "eliminating", "the", "microstates", "and", "calculating", "the", "gene", "regulation", "function.An", "important", "special", "case", "of", "the", "framework", "arises", "when", "the", "system", "is", "at", "thermodynamic", "equilibrium", "." ]
+}, {
+  "sentence_tokens" : [ "In", "this", "case", ",", "the", "principle", "of", "detailed", "balance", "(", "DB", ")", "provides", "a", "simpler", "alternative", "to", "the", "MTT", "." ]
+}, {
+  "sentence_tokens" : [ "The", "origins", "of", "this", "principle", "are", "discussed", "further", "in", "the", "next", "section", "." ]
+}, {
+  "sentence_tokens" : [ "DB", "states", "that", "a", "chemical", "reaction", "at", "equilibrium", "is", "always", "reversible", "and", "that", "any", "pair", "of", "such", "reversible", "reactions", "is", "independently", "at", "equilibrium", ",", "irrespective", "of", "any", "other", "reactions", "in", "which", "the", "substrates", "or", "products", "participate", "." ]
+}, {
+  "sentence_tokens" : [ "To", "see", "the", "implications", "for", "the", "labelled", ",", "directed", "graph", "constructed", "above", ",", "it", "is", "convenient", "to", "enumerate", "the", "microstates", ",", "as", "we", "did", "earlier", "when", "explaining", "the", "graphical", "framework", ",", "using", "the", "numbers", "for", "the", "vertices", "and", "omitting", "the", "details", "of", "conformation", "and", "ligand", "binding", "." ]
+}, {
+  "sentence_tokens" : [ "We", "assume", "the", "graph", "is", "strongly", "connected", "." ]
+}, {
+  "sentence_tokens" : [ "DB", "implies", "that", "any", "edge", "is", "reversible", "." ]
+}, {
+  "sentence_tokens" : [ "Given", "any", "pair", "of", "reversible", "edges", ",", "(", "16", ")", "and", "an", "equilibrium", "state", "x,", "DB", "implies", "that", ",", "irrespective", "of", "any", "other", "edges", "impinging", "on", "i", "or", "j." ]
+}, {
+  "sentence_tokens" : [ "The", "quantity", "is", "an", "equilibrium", "constant.DB", "makes", "it", "easy", "to", "calculate", "the", "equilibrium", "state", ",", "x.", "Choose", "a", "reference", "vertex", ",", "1", ",", "which", "we", "assume", "to", "be", "a", "microstate", "in", "which", "no", "ligands", "are", "bound", ",", "such", "as", "." ]
+}, {
+  "sentence_tokens" : [ "Given", "any", "other", "vertex", "i", ",", "choose", "a", "path", "of", "reversible", "edges", "from", "1", "to", "i", ",", "Such", "a", "path", "must", "always", "exist", "because", "of", "strong", "connectivity", "." ]
+}, {
+  "sentence_tokens" : [ "It", "then", "follows", "that", "(", "17", ")", "This", "should", "be", "compared", "to", "(", "15", ")", "above", "." ]
+}, {
+  "sentence_tokens" : [ "The", "product", "of", "equilibrium", "constants", "along", "the", "path", "corresponds", "to", "." ]
+}, {
+  "sentence_tokens" : [ "As", "before", ",", "this", "quantity", "is", "a", "rational", "expression", "in", "the", "labels", "but", ",", "now", ",", "the", "numerator", "and", "denominator", "consist", "only", "of", "the", "single", "monomials", ",", "and", ",", "respectively", "." ]
+}, {
+  "sentence_tokens" : [ "At", "equilibrium", ",", "DB", "cuts", "down", "the", "rooted", "trees", "of", "the", "MTT", "to", "a", "single", "path", "from", "1.Of", "course", ",", "there", "may", "be", "many", "such", "paths", "." ]
+}, {
+  "sentence_tokens" : [ "However", ",", "the", "rate", "constants", "are", "not", "free", "to", "vary", "arbitrarily", "." ]
+}, {
+  "sentence_tokens" : [ "DB", "requires", "that", "formula", "(", "17", ")", "gives", "the", "same", "result", "no", "matter", "which", "path", "is", "taken", "from", "1", "to", "i." ]
+}, {
+  "sentence_tokens" : [ "This", "constraint", "may", "be", "summarised", "in", "the", "\"", "cycle", "condition", "\"", ":", "for", "any", "cycle", "of", "reversible", "edges", ",", "the", "product", "of", "the", "rate", "constants", "on", "clockwise", "edges", "equals", "the", "product", "on", "counterclockwise", "edges", "(", "Figure", "3A", ")", "." ]
+}, {
+  "sentence_tokens" : [ "This", "condition", "is", "necessary", "and", "sufficient", "for", "(", "17", ")", "to", "be", "independent", "of", "the", "path", "taken", "and", "for", "every", "equilibrium", "state", "of", "the", "graph", "to", "satisfy", "DB", ";", "the", "proof", "is", "given", "in", "Supporting", "Information", "S1.The", "so", "called", "\"", "thermodynamic", "formalism", "\"", "has", "often", "been", "used", "to", "analyse", "systems", "at", "equilibrium", ",", "[", "59", "]", ",", "[", "60", "]", ",", "particularly", "in", "the", "context", "of", "gene", "regulation", ",", "[", "30", "]", ",", "[", "35", "]", ",", "[", "61", "]", "." ]
+}, {
+  "sentence_tokens" : [ "The", "equilibrium", "state", "is", "calculated", "as", "a", "sum", "of", "interaction", "energies", "." ]
+}, {
+  "sentence_tokens" : [ "The", "relationship", "between", "this", "and", "the", "linear", "framework", "comes", "through", "van", "'", "t", "Hoff", "'", "s", "formula", "for", "the", "equilibrium", "constant", ",", "which", "may", "be", "written", ",", "for", "the", "reversible", "edge", "(", "16", ")", ",", "(", "18", ")", "Here", ",", "is", "the", "difference", "in", "Gibbs", "free", "energy", "between", "microstate", "i", "and", "microstate", "j", ",", "R", "is", "the", "gas", "constant", "(", "ie", ":", "the", "molar", "Boltzmann", "constant", ")", "and", "T", "is", "the", "absolute", "temperature", "." ]
+}, {
+  "sentence_tokens" : [ "Formula", "(", "18", ")", "allows", "the", "multiplicative", "formulation", "of", "the", "linear", "framework", "in", "(", "17", ")", "to", "be", "converted", "to", "the", "additive", "formulation", "favoured", "in", "thermodynamics", "In", "gene", "regulation", "studies", ",", "the", "interaction", "energies", "have", "usually", "been", "limited", "to", "those", "of", "transcription", "factors", "binding", "to", "DNA", "and", "of", "transcription", "factors", "binding", "to", "each", "other", "when", "they", "are", "nearest", "neighbours", "or", "otherwise", "able", "to", "interact", "physically", ",", "[", "35", "]", ",", "[", "37", "]", "." ]
+}, {
+  "sentence_tokens" : [ "However", ",", "both", "the", "thermodynamic", "formalism", "and", "the", "linear", "framework", "can", "incorporate", "higher-order", "interactions", "and", "cooperativities", "as", "needed.The", "thermodynamic", "formalism", "and", "the", "linear", "framework", "are", "equivalent", "for", "systems", "at", "thermodynamic", "equilibrium", "and", "related", "to", "each", "other", "as", "just", "explained", "." ]
+}, {
+  "sentence_tokens" : [ "The", "linear", "framework", "comes", "into", "its", "own", "for", "analysing", "systems", "far", "from", "equilibrium", "and", "is", "well", "suited", "to", "the", "modern", "programme", "of", "unravelling", "complex", "eukaryotic", "gene", "regulation", "functions", ",", "[", "62", "]", "." ]
+}, {
+  "sentence_tokens" : [ "Chemical", "Reaction", "Network", "Theory", "(", "CRNT", ")", "." ]
+}, {
+  "sentence_tokens" : [ "We", "mentioned", "previously", "that", "the", "linear", "framework", "can", "encode", "nonlinearity", "in", "two", "ways", "and", "we", "have", "discussed", "at", "length", "the", "first", "way", ",", "through", "the", "labels", "." ]
+}, {
+  "sentence_tokens" : [ "Here", ",", "we", "briefly", "discuss", "the", "second", "way", ",", "through", "the", "vertices", ",", "which", "arises", "in", "CRNT", "." ]
+}, {
+  "sentence_tokens" : [ "In", "this", "case", ",", "the", "framework", "is", "not", "associated", "with", "a", "time-scale", "separation", "but", "CRNT", "is", "often", "used", "to", "determine", "steady-state", "properties.CRNT", "originates", "in", "Horn", "and", "Jackson", "'", "s", "pioneering", "attempt", "to", "extend", "thermodynamic", "reasoning", "from", "equilibrium", "to", "far-from-equilibrium", "systems", ",", "[", "63", "]", "." ]
+}, {
+  "sentence_tokens" : [ "If", "we", "have", "a", "reversible", "chemical", "reaction", ",", "such", "asthen", "mass-action", "kinetics", "implies", "that", "the", "ratio", "of", "the", "equilibrium", "concentrations", "is", "independent", "of", "the", "starting", "conditions", "of", "the", "reaction", "and", "depends", "only", "the", "rate", "constants", ",", "(", "19", ")", "A", "similar", "relationship", "holds", "generally", "for", "any", "chemical", "reaction", "at", "equilibrium", "." ]
+}, {
+  "sentence_tokens" : [ "Such", "formulas", "can", "also", "be", "deduced", "directly", "from", "equilibrium", "thermodynamics", ",", "without", "making", "kinetic", "assumptions", "about", "the", "rates", "of", "reactions", ",", "[", "64", "]", "." ]
+}, {
+  "sentence_tokens" : [ "For", "an", "isolated", "reaction", "such", "as", "this", ",", "kinetics", "is", "consistent", "with", "thermodynamics", "." ]
+}, {
+  "sentence_tokens" : [ "However", ",", "a", "network", "of", "chemical", "reactions", "may", "have", "kinetic", "equilibria", "that", "do", "not", "satisfy", "thermodynamic", "constraints", "." ]
+}, {
+  "sentence_tokens" : [ "Gilbert", "Lewis", "sought", "to", "avoid", "such", "paradoxes", "by", "suggesting", "the", "principle", "of", "detailed", "balance", "(", "DB", ")", ",", "as", "stated", "in", "the", "previous", "section", ",", "[", "65", "]", "." ]
+}, {
+  "sentence_tokens" : [ "It", "was", "later", "realised", "that", "DB", "is", "a", "consequence", "of", "the", "fundamental", "time-reversibility", "of", "microscopic", "processes", ",", "whether", "classical", "or", "quantum", ",", "[", "66", "]", ",", "[", "67", "]", "." ]
+}, {
+  "sentence_tokens" : [ "Horn", "and", "Jackson", "sought", "to", "extend", "thermodynamic", "properties", "like", "(", "19", ")", "to", "steady", "states", "far", "from", "equilibrium", ",", "[", "63", "]", "." ]
+}, {
+  "sentence_tokens" : [ "Under", "mass-action", "kinetics", ",", "any", "network", "of", "chemical", "reactions", "gives", "rise", "to", "a", "system", "of", "nonlinear", "ordinary", "differential", "equations", ",", ",", "for", "the", "concentrations", ",", "of", "the", "various", "chemical", "species", "." ]
+}, {
+  "sentence_tokens" : [ "Here", ",", "the", "nonlinear", "function", "defines", "the", "dynamics", "on", "the", "species", "level", "." ]
+}, {
+  "sentence_tokens" : [ "To", "disentangle", "the", "nonlinearities", ",", "the", "stoichiometric", "expressions", "that", "appear", "on", "either", "side", "of", "a", "reaction", "were", "treated", "as", "new", "entities", "called", "\"", "complexes", "\"", "." ]
+}, {
+  "sentence_tokens" : [ "A", "hypothetical", "reaction", "such", "as", "gives", "rise", "to", "the", "two", "complexes", ",", "and", "." ]
+}, {
+  "sentence_tokens" : [ "Each", "reaction", "defines", "a", "directed", "edge", "between", "complexes", "and", "the", "mass-action", "rate", "constant", "provides", "the", "edge", "with", "a", "label", "." ]
+}, {
+  "sentence_tokens" : [ "Any", "network", "of", "chemical", "reactions", ",", "N", ",", "thereby", "gives", "rise", "to", "a", "labelled", ",", "directed", "graph", ",", "G", "." ]
+}, {
+  "sentence_tokens" : [ "The", "number", "of", "vertices", "in", "G", "is", "the", "number", "of", "distinct", "complexes", ",", "m", ",", "among", "all", "the", "reactions", "in", "the", "network.The", "Laplacian", "matrix", "of", "this", "graph", "defines", "a", "linear", "function", ",", ",", "at", "the", "complex", "level", "that", "is", "the", "analogue", "of", "the", "nonlinear", "at", "the", "species", "level", "." ]
+}, {
+  "sentence_tokens" : [ "The", "relationship", "between", "f", "and", "is", "expressed", "in", "the", "fundamental", "equation", "." ]
+}, {
+  "sentence_tokens" : [ "(", "20", ")", "where", "is", "a", "linear", "function", "that", "records", "the", "stoichiometry", "of", "each", "species", "in", "a", "complex", "and", "is", "a", "nonlinear", "function", "that", "records", "the", "mass-action", "monomial", "corresponding", "to", "each", "complex", ",", "[", "63", "]", "." ]
+}, {
+  "sentence_tokens" : [ "The", "\"", "dot", "\"", "signifies", "composition", "of", "functions", "." ]
+}, {
+  "sentence_tokens" : [ "Horn", "and", "Jackson", "were", "unaware", "at", "the", "time", "of", "the", "Laplacian", "interpretation", ",", "which", "was", "first", "pointed", "out", "in", "[", "68", "]", "." ]
+}, {
+  "sentence_tokens" : [ "The", "decomposition", "in", "(", "20", ")", "is", "the", "starting", "point", "of", "CRNT", ",", "which", "was", "subsequently", "developed", "by", "Feinberg", "and", "his", "students", ",", "[", "69", "]", ",", "[", "70", "]", "." ]
+}, {
+  "sentence_tokens" : [ "The", "decomposition", "leads", "to", "Horn", "and", "Jackson", "'", "s", "concept", "of", "a", "\"", "complex", "balanced", "\"", "steady", "state", ",", "x,", "for", "which", "." ]
+}, {
+  "sentence_tokens" : [ "This", "may", "be", "reached", "far", "from", "equilibrium", "but", "still", "satisfies", "properties", "to", "be", "expected", "at", "equilibrium", ",", "including", "relationships", "between", "concentrations", "and", "rate", "constants", "that", "generalise", "(", "19", ")", ",", "[", "63", "]", "." ]
+}, {
+  "sentence_tokens" : [ "Synthesis", "and", "Degradation", "." ]
+}, {
+  "sentence_tokens" : [ "A", "common", "feature", "of", "all", "the", "examples", "discussed", "previously", "is", "that", "synthesis", "and", "degradation", "were", "entirely", "ignored", ",", "although", "they", "are", "often", "significant", "in", "the", "biological", "context", "." ]
+}, {
+  "sentence_tokens" : [ "It", "is", "an", "indication", "of", "the", "power", "of", "the", "linear", "framework", "that", "it", "can", "be", "readily", "extended", "to", "accommodate", "this.Consider", ",", "as", "before", ",", "a", "labelled", ",", "directed", "graph", ",", "G", ",", "on", "vertices", "but", "now", "allow", "each", "vertex", "in", "this", "\"", "core", "graph", "\"", "to", "have", "additional", "partial", "labelled", "edges", ",", "corresponding", "to", "zero-order", "synthesis", "or", "first-order", "degradation", ",", "respectively", "(", "Figure", "4A", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Each", "vertex", "may", "have", "any", "combination", "of", "synthesis", "and", "degradation", ",", "including", "neither", "or", "both", "." ]
+}, {
+  "sentence_tokens" : [ "Call", "this", "\"", "partial", "graph", "\"", "." ]
+}, {
+  "sentence_tokens" : [ "As", "before", ",", "there", "is", "a", "linear", "dynamics", "on", ",", "which", "may", "be", "described", "by", "the", "system", "of", "differential", "equations", "(", "21", ")", "where", "L", "(", "G", ")", "is", "the", "Laplacian", "matrix", "of", "the", "core", "graph", ",", "G.", "Here", ",", "is", "a", "diagonal", "matrix", "with", "and", "S", "is", "a", "column", "vector", "with", ",", "using", "the", "convention", "that", "di", "or", "si", "is", "zero", "if", "the", "corresponding", "partial", "edge", "at", "vertex", "i", "is", "absent.The", "dynamics", "defined", "by", "(", "21", ")", "has", "several", "different", "features", "to", "that", "described", "by", "(", "3", ")", "." ]
+}, {
+  "sentence_tokens" : [ "It", "is", "easy", "to", "construct", "examples", "in", "which", "degradation", "cannot", "keep", "up", "with", "synthesis", ",", "so", "that", "a", "component", "becomes", "infinite", "and", "undefined", "." ]
+}, {
+  "sentence_tokens" : [ "This", "usually", "arises", "from", "an", "error", "in", "formulating", "the", "model", "." ]
+}, {
+  "sentence_tokens" : [ "Conversely", ",", "if", "synthesis", "cannot", "keep", "up", "with", "degradation", ",", "a", "component", "may", "become", "zero", ",", "which", "may", "not", "be", "an", "error", "." ]
+}, {
+  "sentence_tokens" : [ "What", "is", "required", ",", "is", "to", "determine", "whether", "any", "components", "become", "infinite", "at", "steady", "state", "and", ",", "if", "not", ",", "to", "determine", "the", "steady-state", "values", "of", "the", "components", "in", "terms", "of", "the", "labels.Elimination", "also", "takes", "a", "different", "form", "in", "(", "21", ")", "because", "it", "is", "non", "homogeneous", ":", "if", "x", "is", "a", "steady", "state", "of", "(", "21", ")", ",", "it", "does", "not", "follow", "that", "is", "also", "a", "steady", "state", "." ]
+}, {
+  "sentence_tokens" : [ "Indeed", ",", "the", "single", "degree", "of", "freedom", "that", "is", "found", "in", "a", "strongly", "connected", "graph", "at", "steady", "state", "is", "no", "longer", "present", "in", "the", "partial", "graph", ",", "as", "the", "total", "amount", "of", "matter", "in", "the", "system", "is", "no", "longer", "conserved", "." ]
+}, {
+  "sentence_tokens" : [ "Irrespective", "of", "how", "much", "matter", "is", "present", "initially", ",", "it", "is", "the", "rates", "at", "which", "matter", "enters", "and", "leaves", "the", "system", "that", "determine", "the", "final", "distribution", "of", "amounts", ",", "if", "a", "steady", "state", "is", "reached", "." ]
+}, {
+  "sentence_tokens" : [ "This", "requirement", "is", "expressed", "in", "a", "constraint", "on", "the", "steady", "state", "." ]
+}, {
+  "sentence_tokens" : [ "Setting", "in", "(", "21", ")", "and", "using", "the", "fact", "that", "in", "the", "core", "graph", ",", "we", "see", "that", "(", "22", ")", "This", "reflects", "the", "fact", "that", "synthesis", "and", "degradation", "must", "be", "in", "overall", "balance", "if", "is", "to", "have", "a", "steady", "state.To", "determine", "the", "values", "of", "the", "steady", "state", ",", "construct", "a", "labelled", ",", "directed", "graph", "by", "adding", "a", "new", "vertex", "to", "G", "(", "Figure", "4B", ")", "." ]
+}, {
+  "sentence_tokens" : [ "For", "each", "of", "the", "partial", "edges", "above", ",", "introduce", "into", "the", "edgesrespectively", "." ]
+}, {
+  "sentence_tokens" : [ "is", "a", "proper", "labelled", ",", "directed", "graph", ",", "whose", "Laplacian", "dynamics", "are", "governed", "by", "(", "3", ")", "." ]
+}, {
+  "sentence_tokens" : [ "This", "graph", "enables", "a", "complete", "solution", "to", "the", "problem", "raised", "above", "." ]
+}, {
+  "sentence_tokens" : [ "We", "focus", "on", "the", "case", "that", "is", "most", "relevant", "to", "the", "applications", "by", "assuming", "that", "is", "strongly", "connected", "." ]
+}, {
+  "sentence_tokens" : [ "This", "will", "be", "the", "case", "if", "the", "core", "graph", "G", "is", "strongly", "connected", "and", "there", "is", "at", "least", "one", "synthesis", "edge", "and", "one", "degradation", "edge", "." ]
+}, {
+  "sentence_tokens" : [ "However", ",", "may", "be", "strongly", "connected", "even", "when", "G", "is", "not", "(", "Figure", "4A", ",", "B", ")", ",", "so", "that", "this", "analysis", "applies", "to", "a", "wider", "class", "of", "graphs", "than", "previously.If", "is", "strongly", "connected", ",", "then", "the", "MTT", "provides", "a", "basis", "element", "for", "the", "kernel", "of", "the", "Laplacian", ",", "." ]
+}, {
+  "sentence_tokens" : [ "We", "have", "annotated", "with", "the", "superscript", "to", "emphasise", "that", "it", "is", "quite", "different", "from", "the", "corresponding", "basis", "element", ",", ",", "if", "the", "core", "graph", "also", "happens", "to", "be", "strongly", "connected", "." ]
+}, {
+  "sentence_tokens" : [ "When", "is", "strongly", "connected", ",", "no", "components", "of", "the", "partial", "graph", "become", "infinite", "and", "has", "a", "unique", "steady", "state", "x", "given", "by", "(", "23", ")", "Here", ",", "all", "the", "vertices", "of", "have", "positive", "amounts", "at", "steady", "state", "." ]
+}, {
+  "sentence_tokens" : [ "The", "single", "degree", "of", "freedom", "in", "has", "been", "used", "in", "(", "23", ")", "to", "ensure", "that", "." ]
+}, {
+  "sentence_tokens" : [ "It", "can", "easily", "be", "checked", "that", "is", "a", "steady", "state", "of", "if", ",", "and", "only", "if", ",", "is", "a", "steady", "state", "of", "." ]
+}, {
+  "sentence_tokens" : [ "The", "condition", "for", "vertex", "to", "be", "at", "steady", "state", "in", "with", "corresponds", "exactly", "to", "equation", "(", "22", ")", "for", "synthesis", "and", "degradation", "to", "be", "in", "balance", "in", "." ]
+}, {
+  "sentence_tokens" : [ "Equation", "(", "23", ")", "shows", "how", "synthesis", "and", "degradation", "can", "be", "readily", "accommodated", "within", "the", "linear", "framework", "." ]
+}, {
+  "sentence_tokens" : [ "It", "may", "be", "used", "to", "revisit", "all", "the", "examples", "discussed", "previously", "to", "understand", "the", "impact", "of", "synthesis", "and", "degradation", "." ]
+}, {
+  "sentence_tokens" : [ "It", "also", "opens", "up", "for", "analysis", "a", "range", "of", "new", "biological", "examples", "." ]
+}, {
+  "sentence_tokens" : [ "For", "instance", ",", "regulated", "degradation", "is", "a", "key", "mechanism", "in", "the", "Wnt", "and", "beta-catenin", "and", "death-receptor", "signalling", "pathways", ",", "[", "71", "]", "-", "[", "73", "]", "." ]
+}, {
+  "sentence_tokens" : [ "Analysis", "of", "these", "using", "the", "linear", "framework", "is", "work", "in", "progress", "." ]
+}, {
+  "sentence_tokens" : [ "Discussion", "." ]
+}, {
+  "sentence_tokens" : [ "We", "have", "shown", "that", "a", "simple", ",", "linear", ",", "graph-theoretic", "framework", "integrates", "time-scale", "separation", "analysis", "across", "many", "different", "biological", "areas", "." ]
+}, {
+  "sentence_tokens" : [ "An", "expert", "in", "one", "of", "these", "application", "areas", "might", "say", "that", "we", "have", "not", "added", "anything", "new", "to", "that", "particular", "area", "." ]
+}, {
+  "sentence_tokens" : [ "The", "expert", "would", "have", "a", "point", "." ]
+}, {
+  "sentence_tokens" : [ "However", ",", "the", "literature", "suggests", "that", "experts", "in", "different", "areas", "are", "apparently", "unaware", "that", "they", "are", "all", "doing", "the", "same", "thing", "." ]
+}, {
+  "sentence_tokens" : [ "The", "aim", "of", "this", "paper", "has", "been", "to", "reveal", "this", "shared", "framework", "and", "to", "clarify", "its", "essentials", "." ]
+}, {
+  "sentence_tokens" : [ "The", "neutral", "mathematical", "language", "adopted", "here", "-", "graphs", ",", "spanning", "trees", ",", "strong-connectivity", "-", "is", "spoken", "more", "widely", "than", "the", "dialect", "adopted", "in", "any", "particular", "area", ",", "allowing", "a", "broader", "community", "access", "to", "the", "ideas", "." ]
+}, {
+  "sentence_tokens" : [ "The", "key", "insight", "of", "the", "paper", "is", "that", "elimination", "of", "internal", "complexity", "is", "a", "linear", "procedure", "that", "works", "because", "the", "underlying", "graph", "is", "strongly", "connected", "." ]
+}, {
+  "sentence_tokens" : [ "To", "the", "best", "of", "our", "knowledge", ",", "this", "has", "not", "been", "articulated", "previously", "nor", "has", "it", "been", "made", "evident", "how", "broadly", "this", "idea", "can", "be", "applied.We", "believe", "significant", "advantages", "accrue", "from", "using", "such", "a", "framework", "." ]
+}, {
+  "sentence_tokens" : [ "First", ",", "as", "mentioned", ",", "it", "helps", "break", "down", "the", "barriers", "between", "areas", ":", "a", "technique", "developed", "in", "one", "area", "may", "be", "exploited", "in", "many", "others", "." ]
+}, {
+  "sentence_tokens" : [ "Second", ",", "the", "framework", "reveals", "the", "simplicity", "that", "is", "obscured", "by", "contextual", "details", "." ]
+}, {
+  "sentence_tokens" : [ "Third", ",", "the", "quantitative", "analysis", "of", "biochemical", "systems", "acquires", "a", "foundation", ",", "instead", "of", "appearing", "as", "a", "series", "of", "ad", "hoc", "calculations", "." ]
+}, {
+  "sentence_tokens" : [ "Fourth", ",", "such", "a", "foundation", "permits", "new", "kinds", "of", "analysis", ",", "such", "as", "incorporating", "synthesis", "and", "degradation", ",", "that", "can", "now", "be", "used", "wherever", "the", "framework", "can", "be", "applied.The", "framework", "not", "only", "unifies", ",", "it", "also", "suggests", "new", "problems", "to", "explore", "." ]
+}, {
+  "sentence_tokens" : [ "An", "intriguing", "question", "is", "whether", "the", "dynamical", "behaviour", "of", "a", "sub-system", "retains", "any", "vestige", "of", "the", "elimination", "that", "becomes", "feasible", "at", "steady", "state", "." ]
+}, {
+  "sentence_tokens" : [ "When", "a", "graph", "is", "strongly", "connected", ",", "the", "many", "degrees", "of", "freedom", "that", "are", "present", "at", "the", "start", "of", "the", "dynamics", "(", "equivalent", "to", "the", "number", "of", "vertices", "in", "the", "graph", ")", "collapse", "to", "a", "single-degree", "of", "freedom", "at", "steady", "state", "." ]
+}, {
+  "sentence_tokens" : [ "But", "how", "does", "this", "collapse", "come", "about", "over", "time", "?" ]
+}, {
+  "sentence_tokens" : [ "Do", "the", "degrees", "of", "freedom", "gradually", "\"", "condense", "\"", "?" ]
+}, {
+  "sentence_tokens" : [ "If", "so", ",", "what", "does", "this", "process", "of", "condensation", "reveal", "about", "the", "architecture", "of", "the", "graph", "?" ]
+}, {
+  "sentence_tokens" : [ "It", "is", "well", "known", "that", "transient", "dynamics", ",", "prior", "to", "reaching", "steady", "state", ",", "are", "informative", "about", "rate", "constants", "but", "it", "is", "conceivable", "that", "the", "way", "in", "which", "degrees", "of", "freedom", "are", "lost", "may", "also", "tell", "us", "about", "the", "structure", "of", "the", "graph", "and", ",", "thereby", ",", "about", "the", "structure", "of", "the", "underlying", "network", "of", "biochemical", "reactions.Time-scale", "separation", "is", "often", "used", "to", "simplify", "the", "dynamics", "of", "the", "slow", "components", "." ]
+}, {
+  "sentence_tokens" : [ "In", "the", "Michaelis-Menten", "example", ",", "for", "instance", ",", "the", "differential", "equation", "in", "(", "2", ")", "is", "a", "simplified", "description", "of", "the", "system", "'", "s", "behaviour", ",", "in", "terms", "of", "the", "slow", "components", "only", "." ]
+}, {
+  "sentence_tokens" : [ "The", "method", "of", "\"", "singular", "perturbation", "\"", "provides", "a", "systematic", "way", "to", "determine", "the", "quality", "of", "this", "approximation", "and", "to", "understand", "how", "it", "depends", "on", "the", "separation", "between", "the", "time", "scales", ",", "[", "74", "]", "." ]
+}, {
+  "sentence_tokens" : [ "This", "has", "been", "undertaken", "for", "the", "Michaelis-Menten", "reaction", "mechanism", ",", "[", "75", "]", ",", "[", "76", "]", ",", "but", ",", "surprisingly", ",", "it", "appears", "not", "to", "have", "been", "investigated", "further", "in", "enzyme", "kinetics", "and", "not", "at", "all", "in", "other", "biological", "areas", "." ]
+}, {
+  "sentence_tokens" : [ "The", "linear", "framework", "provides", "the", "starting", "point", "from", "which", "to", "apply", "singular", "perturbation", "." ]
+}, {
+  "sentence_tokens" : [ "The", "key", "to", "doing", "so", "is", "to", "identify", "one", "or", "more", "non", "dimensional", "parameters", ",", "which", "become", "small", "when", "the", "time-scales", "are", "separated", ",", "[", "77", "]", ",", "from", "which", "the", "accuracy", "of", "the", "simplified", "dynamics", "can", "be", "systematically", "determined", "." ]
+}, {
+  "sentence_tokens" : [ "If", "such", "an", "analysis", "can", "be", "undertaken", "in", "generality", ",", "then", "we", "would", "have", "a", "powerful", "new", "tool", "for", "simplifying", "and", "approximating", "the", "dynamical", "behaviour", "of", "complex", "biochemical", "systems.What", "emerges", "from", "this", "may", "be", "a", "new", "approach", "for", "dealing", "with", "molecular", "complexity", "." ]
+}, {
+  "sentence_tokens" : [ "The", "examples", "discussed", "here", ",", "especially", "gene", "regulation", "and", "post-translational", "modification", ",", "are", "combinatorial", "mechanisms", "with", "the", "potential", "for", "creating", "astronomical", "numbers", "of", "internal", "cellular", "states", "." ]
+}, {
+  "sentence_tokens" : [ "Making", "sense", "of", "this", "combinatorial", "explosion", "remains", "one", "of", "the", "most", "significant", "and", "intractable", "challenges", "facing", "integrative", "systems", "biology", "." ]
+}, {
+  "sentence_tokens" : [ "It", "presents", "particular", "difficulties", "for", "computational", "methods", "based", "on", "numerical", "simulation", "because", "they", "require", "prior", "specification", "of", "all", "the", "details", "of", "the", "system", ",", "including", "the", "number", "of", "sites", "of", "modification", "or", "binding", ",", "as", "well", "as", "the", "values", "of", "all", "rate", "constants", "." ]
+}, {
+  "sentence_tokens" : [ "This", "has", "made", "it", "hard", "to", "distil", "general", "principles", "-", "those", "that", "hold", "irrespective", "of", "such", "details", "." ]
+}, {
+  "sentence_tokens" : [ "The", "framework", "introduced", "here", ",", "in", "contrast", ",", "allows", "these", "details", "to", "be", "treated", "symbolically", "and", "mathematically", ",", "no", "matter", "how", "many", "components", "are", "present", "." ]
+}, {
+  "sentence_tokens" : [ "Details", ",", "such", "as", "the", "number", "of", "modification", "or", "binding", "sites", ",", "may", "be", "treated", "as", "variables", ",", "without", "having", "to", "give", "them", "numerical", "values", ",", "[", "46", "]", "." ]
+}, {
+  "sentence_tokens" : [ "A", "new", "kind", "of", "analysis", "becomes", "feasible", "which", "may", "have", "the", "potential", "to", "rise", "above", "the", "combinatorial", "explosion", "." ]
+}, {
+  "sentence_tokens" : [ "Methods", "." ]
+}, {
+  "sentence_tokens" : [ "The", "conclusions", "were", "reached", "by", "mathematical", "analysis", ",", "for", "which", "further", "details", "are", "provided", "in", "Supporting", "Information", "S1", "." ]
+} ]

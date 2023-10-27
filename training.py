@@ -21,9 +21,10 @@ from sklearn.metrics import classification_report
 transformer_name = 'bert-base-cased'
 tokenizer = AutoTokenizer.from_pretrained(transformer_name)
 
+
 def main():
     init()
-    data = read_data('sample_training_data')
+    data = read_data()
     
     # Take the first 60% as train, next 20% as development, last 20% as test (Don't use test for now)
 
@@ -98,118 +99,39 @@ def main():
 
     y_true = output.label_ids
     y_pred = np.argmax(output.predictions, axis=-1)
-    target_names = ['Positive_activation', 'Negative_activation']
+    target_names = ['Positive_activation', 'Negative_activation', 'Positive_regulation', 'Negative_regulation']
     print(classification_report(y_true, y_pred, target_names=target_names))
     
-    # --- create majority baseline ---
-    majority_baseline()
-
-def majority_baseline():
-    print("MAJORITY BASELINE FUNCTION")
-    data = read_data_baseline('sample_training_data')
-    train_list, eval_list = train_test_split(data, train_size=0.6)
-
-    train_df = pd.DataFrame(train_list)
-    eval_df = pd.DataFrame(eval_list)
-
-    ds = DatasetDict()
-    ds['train'] = Dataset.from_pandas(train_df)
-    ds['validation'] = Dataset.from_pandas(eval_df)
-
-    train_ds = ds['train'].map(
-        tokenize, batched=True,
-        remove_columns=['sentence_tokens', 'event_indices', 'polarity', 'controller_indices', 'controlled_indices', 'trigger_indices']
-    )   
-    train_ds.to_pandas()
-
-    eval_ds = ds['validation'].map(
-        tokenize,
-        batched=True,
-        remove_columns=['sentence_tokens', 'event_indices', 'polarity', 'controller_indices', 'controlled_indices', 'trigger_indices']
-    )
-    eval_ds.to_pandas()
-
-    labels = train_ds.num_columns
-    config = AutoConfig.from_pretrained(transformer_name, num_labels = labels)
-    model = (BertForSequenceClassification.from_pretrained(transformer_name, config=config))
-    
-    num_epochs = 2
-    batch_size = 24
-    weight_decay = 0.01
-    model_name = f'{transformer_name}-sequence-classification'
-    training_args = TrainingArguments(
-        output_dir=model_name,
-        log_level='error',
-        num_train_epochs=num_epochs,
-        per_device_train_batch_size=batch_size,
-        per_device_eval_batch_size=batch_size,
-        evaluation_strategy='epoch',
-        weight_decay=weight_decay,
-    )
-    
-    trainer = Trainer(
-        model=model,
-        args=training_args,
-        compute_metrics=compute_metrics,
-        train_dataset=train_ds,
-        eval_dataset=eval_ds,
-        tokenizer=tokenizer,
-    )    
-    # print("\n", train_ds, "\n")
-
-    train_output = trainer.train()
-    print("~ Train Output:\n", train_output, "\n")
-
-    # -- [14] --
-    output = trainer.predict(eval_ds)
-    print("~ Prediction output for eval_ds:\n", output, "\n")
-
-    y_true = output.label_ids
-    y_pred = np.argmax(output.predictions, axis=-1)
-    target_names = ['Positive_activation']
-    print(classification_report(y_true, y_pred, target_names=target_names))
-
-def read_data_baseline(directory):
-    json_data = []
-    
-    for filename in os.listdir(directory):
-        if filename.endswith('.json'):
-            with open(os.path.join(directory, filename)) as f:
-                data = json.load(f)
-                if (len(data) > 0):
-                    json_data.append(data)
-
-                    # if (len(json_data) == 50): # for testing with smaller data
-                    #     break
-
-    list_no_dups = remove_duplicates(json_data)
-    random.shuffle(list_no_dups)
-
-    for e in list_no_dups:
-        e.pop('type')
-        e['label'] = 1  # positive_activation
-        
-    return list_no_dups
 
 def tokenize(examples):
     output = tokenizer(examples['sentence_tokens'], is_split_into_words=True)
     return output
 
-def read_data(directory):
+def read_data():
     """ 
     Read data from sample_training_data folder and remove duplicates.
     """
     json_data = []
-    
-    for filename in os.listdir(directory):
+    # directory1 = 'sample_training_data'
+    # for filename in os.listdir(directory1):
+    #     if filename.endswith('.json'):
+    #         with open(os.path.join(directory1, filename)) as f:
+    #             data = json.load(f)
+    #             if (len(data) > 0):
+    #                 json_data.append(data)
+
+    #                 # if (len(json_data) == 50): # for testing with smaller data
+    #                 #     break
+
+    directory2 = 'negative_training_data'
+    for filename in os.listdir(directory2):
         if filename.endswith('.json'):
-            with open(os.path.join(directory, filename)) as f:
+            with open(os.path.join(directory2, filename)) as f:
                 data = json.load(f)
                 if (len(data) > 0):
+                    # print(data,"\n\n\n")
                     json_data.append(data)
-
-                    if (len(json_data) == 50): # for testing with smaller data
-                        break
+            
 
     list_no_dups = remove_duplicates(json_data)
     random.shuffle(list_no_dups)
@@ -218,21 +140,23 @@ def read_data(directory):
     # 1: Postive_activation
     # 2: Negative_regulation
     # 3: Positive_regulation
-
+    # 4: no relation
     for e in list_no_dups:
-        e['label'] = e.pop('type')
-        if (e['label'] == "Negative_activation"):
-            e['label'] = 0
-        elif (e['label'] == "Positive_activation"):
-            e['label'] = 1
-        elif (e['label'] == "Negative_regulation"):
-            # e['label'] = 2
-            e['label'] = 0
-        elif (e['label'] == "Positive_regulation"):
-            # e['label'] = 3
-            e['label'] = 1
+        if (e.get('type')):
+            e['label'] = e.pop('type')
+            if (e['label'] == "Negative_activation"):
+                e['label'] = 0
+            elif (e['label'] == "Positive_activation"):
+                e['label'] = 1
+            elif (e['label'] == "Negative_regulation"):
+                e['label'] = 2
+            elif (e['label'] == "Positive_regulation"):
+                e['label'] = 3
         else:
-            raise Exception("Unknown label.")
+            e['label'] = 4
+        
+    pretty_print(list_no_dups)
+    exit(0)
     return list_no_dups
 
 def remove_duplicates(list):

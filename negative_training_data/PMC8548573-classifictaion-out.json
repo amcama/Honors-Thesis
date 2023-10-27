@@ -1,0 +1,667 @@
+[ {
+  "sentence_tokens" : [ "Recently", ",", "direct", "activation", "of", "AthFLS1", "by", "AthMYB21", "and", "AthMYB24", "was", "shown", "in", "A.", "thaliana", "(", "Shan", "et", "al", ".,", "2020", ")", "." ],
+  "event_indices" : [ 3, 4, 5, 6, 7, 8 ],
+  "type" : "Positive_activation",
+  "polarity" : true,
+  "controller_indices" : [ 7, 8 ],
+  "controlled_indices" : [ 5, 6 ],
+  "trigger_indices" : [ 3, 4 ],
+  "rule_name" : "Positive_activation_token_2_noun",
+  "rule" : null
+}, {
+  "sentence_tokens" : [ "This", "indicates", "a", "likely", "conserved", "transcriptional", "regulation", "between", "these", "two", "closely", "related", "species", "and", "supports", "the", "importance", "of", "flavonols", "during", "reproductive", "processes", ",", "e.g", ".,", "pollen", "tube", "growth", "(", "Muhlemann", "et", "al", ".,", "2018", ")", "." ],
+  "event_indices" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19 ],
+  "type" : "Positive_activation",
+  "polarity" : true,
+  "controller_indices" : [ 0, 1 ],
+  "controlled_indices" : [ 18, 19 ],
+  "trigger_indices" : [ 14, 15 ],
+  "rule_name" : "Positive_activation_syntax_1_verb, pronominalMatch",
+  "rule" : null
+}, {
+  "sentence_tokens" : [ "Characterization", "of", "the", "Brassica", "napus", "Flavonol", "Synthase", "Gene", "Family", "Reveals", "Bifunctional", "Flavonol", "Synthases", "." ]
+}, {
+  "sentence_tokens" : [ "Flavonol", "synthase", "(", "FLS", ")", "is", "a", "key", "enzyme", "for", "the", "formation", "of", "flavonols", ",", "which", "are", "a", "subclass", "of", "the", "flavonoids", "." ]
+}, {
+  "sentence_tokens" : [ "FLS", "catalyzes", "the", "conversion", "of", "dihydroflavonols", "to", "flavonols", "." ]
+}, {
+  "sentence_tokens" : [ "The", "enzyme", "belongs", "to", "the", "2-oxoglutarate-dependent", "dioxygenases", "(", "2-ODD", ")", "superfamily", "." ]
+}, {
+  "sentence_tokens" : [ "We", "characterized", "the", "FLS", "gene", "family", "of", "Brassica", "napus", "that", "covers", "13", "genes", ",", "based", "on", "the", "genome", "sequence", "of", "the", "B.", "napus", "cultivar", "Express", "617", "." ]
+}, {
+  "sentence_tokens" : [ "The", "goal", "was", "to", "unravel", "which", "BnaFLS", "genes", "are", "relevant", "for", "seed", "flavonol", "accumulation", "in", "the", "amphidiploid", "species", "B.", "napus", "." ]
+}, {
+  "sentence_tokens" : [ "Two", "BnaFLS1", "homeologs", "were", "identified", "and", "shown", "to", "encode", "bifunctional", "enzymes", "." ]
+}, {
+  "sentence_tokens" : [ "Both", "exhibit", "FLS", "activity", "as", "well", "as", "flavanone", "3-hydroxylase", "(", "F3H", ")", "activity", ",", "which", "was", "demonstrated", "in", "vivo", "and", "in", "planta", "." ]
+}, {
+  "sentence_tokens" : [ "BnaFLS1-1", "and", "-2", "are", "capable", "of", "converting", "flavanones", "into", "dihydroflavonols", "and", "further", "into", "flavonols", "." ]
+}, {
+  "sentence_tokens" : [ "Analysis", "of", "spatio-temporal", "transcription", "patterns", "revealed", "similar", "expression", "profiles", "of", "BnaFLS1", "genes", "." ]
+}, {
+  "sentence_tokens" : [ "Both", "are", "mainly", "expressed", "in", "reproductive", "organs", "and", "co-expressed", "with", "the", "genes", "encoding", "early", "steps", "of", "flavonoid", "biosynthesis", "." ]
+}, {
+  "sentence_tokens" : [ "Our", "results", "provide", "novel", "insights", "into", "flavonol", "biosynthesis", "in", "B.", "napus", "and", "contribute", "information", "for", "breeding", "targets", "with", "the", "aim", "to", "modify", "the", "flavonol", "content", "in", "rapeseed", "." ]
+}, {
+  "sentence_tokens" : [ "Introduction", "." ]
+}, {
+  "sentence_tokens" : [ "Rapeseed", "(", "Brassica", "napus", "L.", ")", "is", "the", "second", "most", "important", "oil", "crop", "worldwide", "(", "Nesi", "et", "al", ".,", "2008", ";", "OECD-FAO", "and", "Connell", ",", "2015", ")", "." ]
+}, {
+  "sentence_tokens" : [ "The", "high", "oil", "(", "~", "50", "%", ")", "and", "protein", "(", "~", "25", "%", ")", "content", "of", "B.", "napus", "seed", "is", "the", "result", "of", "decades", "of", "extensive", "breeding", "aiming", "to", "improve", "its", "nutritional", "quality", "and", "agronomical", "yield", "(", "Nesi", "et", "al", ".,", "2008", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Still", ",", "the", "presence", "of", "anti-nutritional", "components", ",", "like", "phenolic", "compounds", "or", "glucosinolates", ",", "render", "rapeseed", "protein", "essentially", "unusable", "for", "human", "consumption", "(", "Wang", "et", "al", ".,", "2018", ";", "Hald", "et", "al", ".,", "2019", ")", "." ]
+}, {
+  "sentence_tokens" : [ "While", "glucosinolate", "break-down", "products", "cause", "metabolic", "disturbances", ",", "phenolics", "can", "impair", "digestibility", "and", "cause", "a", "strong", "bitter", "off-taste", "(", "Nesi", "et", "al", ".,", "2008", ";", "Wanasundara", "et", "al", ".,", "2016", ";", "Hald", "et", "al", ".,", "2019", ")", "." ]
+}, {
+  "sentence_tokens" : [ "The", "glucosinolates", "amount", "in", "seeds", "have", "been", "greatly", "reduced", "through", "breeding", "of", "double", "zero", "lines", "with", "improved", "nutraceutical", "properties", "(", "Nesi", "et", "al", ".,", "2008", ")", "." ]
+}, {
+  "sentence_tokens" : [ "However", ",", "breeding", "of", "low", "phenolic", "lines", "with", "optimal", "compositions", "for", "the", "use", "of", "rapeseed", "protein", "as", "edible", "vegetable", "product", "is", "difficult", "." ]
+}, {
+  "sentence_tokens" : [ "The", "reason", "is", "the", "great", "diversity", "of", "phenolic", "compounds", "and", "their", "involvement", "in", "many", "processes", "which", "impact", "plant", "fitness", "(", "Auger", "et", "al", ".,", "2010", ";", "Wang", "et", "al", ".,", "2018", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Phenolics", "can", "be", "beneficial", "for", "human", "health", "due", "to", "their", "antioxidant", "activity", ",", "thereby", "facilitating", "the", "prevention", "of", "cardiovascular", "diseases", "and", "cancer", "(", "Wang", "et", "al", ".,", "2018", ")", "." ]
+}, {
+  "sentence_tokens" : [ "On", "the", "other", "hand", ",", "phenolics", "can", "(", "i", ")", "impair", "digestibility", ",", "(", "ii", ")", "cause", "undesired", "dark", "color", ",", "and", "(", "iii", ")", "cause", "bitter", "off-taste", "derived", "from", "kaempferol-derivatives", "(", "Auger", "et", "al", ".,", "2010", ";", "Hald", "et", "al", ".,", "2019", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Therefore", ",", "breeding", "of", "low", "or", "high", "phenolic", "cultivars", "depends", "on", "their", "economic", "use", ",", "e.g", ".,", "use", "as", "seed", "oil", "and", "animal", "feed", "or", "edible", "vegetable", "(", "Wang", "et", "al", ".,", "2018", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Flavonoids", "are", "a", "major", "group", "of", "phenolics", "and", "belong", "to", "a", "diverse", "class", "of", "plant", "specialized", "metabolites", "comprising", "over", "9,000", "different", "substances", "(", "Williams", "and", "Grayer", ",", "2004", ";", "Grotewold", ",", "2006", ")", "." ]
+}, {
+  "sentence_tokens" : [ "They", "are", "derived", "from", "flavonoid", "biosynthesis", "(", "Figure", "1", ")", ",", "which", "branch", "of", "from", "the", "phenylalanine", "based", "general", "phenylpropanoid", "pathway", "(", "Hahlbrock", "and", "Scheel", ",", "1989", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Flavonoids", "are", "classified", "in", "different", "subgroups", ",", "namely", "chalcones", ",", "flavones", ",", "flavandiols", ",", "anthocyanins", ",", "proanthocyanidins", "(", "PAs", ")", ",", "aurones", ",", "and", "flavonols", "(", "Winkel-Shirley", ",", "2001", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Flavonols", "define", "the", "largest", "subgroup", "of", "flavonoids", ",", "mainly", "due", "to", "a", "plethora", "of", "glycosylation", "patterns", "(", "Zhang", "et", "al", ".,", "2013", ")", "." ]
+}, {
+  "sentence_tokens" : [ "They", "are", "classified", "in", "e.g", ".,", "kaempferols", "and", "quercetins", "depending", "on", "the", "hydroxylation", "pattern", "of", "the", "B", "ring", "(", "Winkel-Shirley", ",", "2001", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Flavonols", "are", "colorless", "for", "the", "human", "eye", "but", "absorb", "in", "the", "ultraviolet", "(", "UV", ")", "range", "." ]
+}, {
+  "sentence_tokens" : [ "After", "light", "treatment", ",", "they", "accumulate", "in", "their", "glycosylated", "form", "in", "the", "vacuole", "of", "epidermal", "and", "mesophyll", "cells", "or", "on", "occasion", "in", "epicuticular", "waxes", "(", "Weisshaar", "and", "Jenkins", ",", "1998", ";", "Winkel-Shirley", ",", "2001", ";", "Agati", "et", "al", ".,", "2009", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Their", "biosynthesis", "is", "largely", "influenced", "by", "environmental", "cues", "such", "as", "temperature", "and", "UV", "light", "(", "Winkel-Shirley", ",", "2002", ";", "Olsen", "et", "al", ".,", "2009", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Flavonols", "have", "several", "physiological", "functions", "in", "plants", "including", "antimicrobial", "properties", ",", "UV", "protection", ",", "modulation", "of", "auxin", "transport", ",", "male", "fertility", ",", "and", "flower", "pigmentation", "together", "with", "anthocyanins", "(", "Harborne", "and", "Williams", ",", "2000", ";", "Peer", "and", "Murphy", ",", "2007", ")", "." ]
+}, {
+  "sentence_tokens" : [ "The", "central", "enzyme", "of", "flavonol", "biosynthesis", "is", "flavonol", "synthase", "(", "FLS", ")", "." ]
+}, {
+  "sentence_tokens" : [ "FLS", "converts", "a", "dihydroflavonol", "into", "the", "corresponding", "flavonol", "by", "introducing", "a", "double", "bond", "between", "C-2", "and", "C-3", "of", "the", "C", "ring", "(", "Figure", "1", ";", "Forkmann", "et", "al", ".,", "1986", ";", "Holton", "et", "al", ".,", "1993", ")", "." ]
+}, {
+  "sentence_tokens" : [ "FLS", "activity", "was", "first", "identified", "in", "irradiated", "parsley", "cells", "(", "Britsch", "et", "al", ".,", "1981", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Several", "studies", "identified", "more", "than", "one", "FLS", "gene", "in", "the", "genome", "of", "a", "given", "species", ",", "including", "Zea", "mays", "(", "Falcone", "Ferreyra", "et", "al", ".,", "2012", ")", ",", "Musa", "acuminata", "(", "Busche", "et", "al", ".,", "2021", ")", ",", "Vitis", "vinifera", "(", "Downey", "et", "al", ".,", "2003", ";", "Fujita", "et", "al", ".,", "2006", ")", ",", "Fressica", "hybrida", "(", "Shan", "et", "al", ".,", "2020", ")", ",", "and", "Arabidopsis", "thaliana", "(", "Pelletier", "et", "al", ".,", "1997", ";", "Owens", "et", "al", ".,", "2008", ")", "." ]
+}, {
+  "sentence_tokens" : [ "In", "A.", "thaliana", ",", "which", "is", "evolutionary", "closely", "related", "to", "B.", "napus", ",", "most", "genes", "of", "the", "central", "enzymes", "of", "the", "flavonoid", "biosynthesis", "are", "encoded", "by", "single-copy", "genes", "." ]
+}, {
+  "sentence_tokens" : [ "However", ",", "FLS", "marks", "an", "exception", "as", "there", "are", "six", "genes", "annotated", "in", "the", "A.", "thaliana", "genome", "sequence", "(", "Pelletier", "et", "al", ".,", "1997", ";", "Owens", "et", "al", ".,", "2008", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Only", "FLS1", "encodes", "a", "functional", "FLS", ",", "thus", "being", "the", "major", "contributor", "to", "flavonol", "production", "in", "A.", "thaliana", "(", "Wisman", "et", "al", ".,", "1998", ")", "." ]
+}, {
+  "sentence_tokens" : [ "It", "has", "been", "postulated", "that", "the", "AthFLS", "gene", "family", "derived", "from", "recent", "gene", "duplication", "events", "and", "is", "currently", "undergoing", "a", "pseudogenization", "process", "to", "eliminate", "\"", "unnecessary", "\"", "gene", "copies", "(", "Preuss", "et", "al", ".,", "2009", ";", "Stracke", "et", "al", ".,", "2009", ")", "." ]
+}, {
+  "sentence_tokens" : [ "The", "Brassicaceae-lineage", "specific", "whole", "genome", "triplication", "followed", "by", "diploidization", "after", "divergence", "from", "the", "common", "ancestor", "of", "A.", "thaliana", "and", "B.", "napus", "(", "Wang", "et", "al", ".,", "2011", ";", "Chalhoub", "et", "al", ".,", "2014", ")", "suggests", "that", "the", "amphidiploid", "B.", "napus", "harbors", "an", "even", "larger", "FLS", "family", ",", "which", "formally", "may", "cover", "up", "to", "36", "members", "." ]
+}, {
+  "sentence_tokens" : [ "So", "far", ",", "six", "FLS", "genes", "have", "been", "identified", "for", "the", "A-subgenome", "donor", "B.", "rapa", "(", "Guo", "et", "al", ".,", "2014", ")", ",", "while", "the", "C-subgenome", "donor", "B.", "oleracea", "has", "not", "yet", "been", "studied", "in", "detail", "." ]
+}, {
+  "sentence_tokens" : [ "Up", "to", "now", ",", "the", "exact", "size", "of", "the", "B.", "napus", "FLS", "gene", "family", "remains", "unknown", "." ]
+}, {
+  "sentence_tokens" : [ "Previous", "studies", "on", "the", "flavonol", "biosynthesis", "in", "B.", "napus", "were", "mainly", "focused", "on", "metabolites", "(", "Auger", "et", "al", ".,", "2010", ")", "or", "covered", "transcriptomic", "and", "phylogenetic", "analysis", "of", "genes", "preceding", "the", "FLS", "reaction", "in", "the", "flavonol", "pathway", "(", "Qu", "et", "al", ".,", "2016", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Some", "FLSs", "have", "been", "characterized", "as", "bifunctional", "enzymes", ",", "exhibiting", "FLS", "and", "F3H", "activity", "(", "Figure", "1", ")", ",", "e.g", ".,", "in", "A.", "thaliana", "(", "Prescott", "et", "al", ".,", "2002", ";", "Owens", "et", "al", ".,", "2008", ")", ",", "Oriza", "sativa", "(", "Park", "et", "al", ".,", "2019", ")", ",", "Citrus", "unshiu", "(", "Lukacin", "et", "al", ".,", "2003", ")", ",", "and", "Ginkgo", "biloba", "(", "Xu", "et", "al", ".,", "2012", ")", "." ]
+}, {
+  "sentence_tokens" : [ "FLS", "has", "been", "classified", "as", "a", "2-oxoglutarate-dependent", "dioxygenase", "(", "2-ODD", ")", ",", "similar", "to", "flavanone", "3-hydroxylase", "(", "F3H", ")", "and", "anthocyanidin", "synthase", "(", "ANS", ")", "." ]
+}, {
+  "sentence_tokens" : [ "The", "three", "enzymes", "display", "partial", "amino", "acid", "(", "aa", ")", "sequence", "similarity", "and", "overlapping", "functions", "(", "Prescott", "and", "John", ",", "1996", ";", "Cheng", "et", "al", ".,", "2014", ")", "." ]
+}, {
+  "sentence_tokens" : [ "The", "non", "heme", "cytosolic", "2-ODD", "enzymes", "require", "2-oxoglutarate", "as", "co-substrate", ",", "while", "ferrous", "iron", "acts", "as", "co-factor", "(", "Cheng", "et", "al", ".,", "2014", ")", "." ]
+}, {
+  "sentence_tokens" : [ "FLS", "and", "ANS", "are", "relatively", "closely", "related", "with", "50-60", "%", "aa", "sequence", "similarity", ",", "while", "F3H", "share", "less", "than", "35", "%", "similarity", "with", "FLS", "and", "ANS", "(", "Lukacin", "et", "al", ".,", "2003", ";", "Cheng", "et", "al", ".,", "2014", ")", "." ]
+}, {
+  "sentence_tokens" : [ "ANS", ",", "an", "enzyme", "catalyzing", "a", "late", "step", "in", "the", "flavonoid", "biosynthesis", "pathway", "(", "Figure", "1", ")", ",", "can", "have", "both", "FLS", "and", "F3H", "activity", "(", "Welford", "et", "al", ".,", "2001", ";", "Cheng", "et", "al", ".,", "2014", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Therefore", ",", "ANS", "contributes", "to", "flavonol", "production", ",", "although", "(", "at", "least", "in", "A.", "thaliana", ")", "to", "a", "much", "lesser", "extent", "than", "FLS", "(", "Preuss", "et", "al", ".,", "2009", ")", "." ]
+}, {
+  "sentence_tokens" : [ "In", "addition", ",", "2-ODDs", "display", "species", "specific", "substrate", "specificities", "and", "affinities", "(", "Preuss", "et", "al", ".,", "2009", ";", "Park", "et", "al", ".,", "2017", ";", "Jiang", "et", "al", ".,", "2020", ")", "." ]
+}, {
+  "sentence_tokens" : [ "The", "transcriptional", "regulation", "of", "flavonol", "biosynthesis", "is", "mainly", "achieved", "by", "the", "combinatorial", "action", "(", "s", ")", "of", "MYB11", ",", "MYB12", ",", "and", "MYB111", ",", "which", "belong", "to", "subgroup", "7", "(", "SG7", ")", "of", "the", "R2R3-MYB", "transcription", "factor", "family", "(", "Mehrtens", "et", "al", ".,", "2005", ";", "Stracke", "et", "al", ".,", "2007", ")", "." ]
+}, {
+  "sentence_tokens" : [ "However", ",", "the", "myb11/myb12/myb111", "triple", "mutant", "of", "A.", "thaliana", "retains", "its", "pollen", "flavonol", "composition", "(", "Stracke", "et", "al", ".,", "2010", ")", "." ]
+}, {
+  "sentence_tokens" : [ "This", "led", "to", "the", "discovery", "of", "MYB99", ",", "MYB21", ",", "and", "MYB24", ",", "which", "together", "control", "flavonol", "biosynthesis", "in", "anthers", "and", "pollen", "(", "Battat", "et", "al", ".,", "2019", ";", "Shan", "et", "al", ".,", "2020", ")", "." ]
+}, {
+  "sentence_tokens" : [ "MYB21", ",", "MYB24", ",", "and", "the", "SG7", "MYBs", "function", "as", "independent", "transcriptional", "activators", "(", "Mehrtens", "et", "al", ".,", "2005", ";", "Stracke", "et", "al", ".,", "2007", ";", "Shan", "et", "al", ".,", "2020", ")", "." ]
+}, {
+  "sentence_tokens" : [ "The", "SG7", "MYBs", "can", "activate", "all", "genes", "belonging", "to", "flavonol", "biosynthesis", "including", "CHS", ",", "CHI", ",", "F3H", ",", "and", "FLS", "(", "Mehrtens", "et", "al", ".,", "2005", ";", "Stracke", "et", "al", ".,", "2007", ")", "." ]
+}, {
+  "sentence_tokens" : [ "In", "this", "study", ",", "we", "characterize", "13", "members", "of", "the", "BnaFLS", "gene", "family", ",", "which", "is", "one", "of", "the", "largest", "FLS", "enzyme", "families", "analyzed", "to", "date", "." ]
+}, {
+  "sentence_tokens" : [ "We", "separated", "the", "BnaFLS", "genes", "from", "F3H", "and", "ANS", "genes", "of", "B.", "napus", "." ]
+}, {
+  "sentence_tokens" : [ "Only", "one", "FLS", "gene", "has", "been", "characterized", "so", "far", "in", "B.", "napus", "(", "Vu", "et", "al", ".,", "2015", ")", "." ]
+}, {
+  "sentence_tokens" : [ "We", "demonstrate", "that", "both", "BnaFLS1", "homeologs", "encode", "bifunctional", "enzymes", ",", "exhibiting", "FLS", "and", "F3H", "activity", ",", "while", "two", "BnaFLS3", "homeologs", "encode", "proteins", "with", "solely", "F3H", "activity", "." ]
+}, {
+  "sentence_tokens" : [ "Moreover", ",", "we", "provide", "insights", "into", "the", "spatio-temporal", "transcription", "of", "BnaFLSs", "and", "present", "hypotheses", "about", "the", "mechanisms", "underlying", "FLS", "bifunctionality", "." ]
+}, {
+  "sentence_tokens" : [ "Thus", ",", "our", "study", "provides", "novel", "insights", "into", "the", "flavonol", "biosynthesis", "of", "B.", "napus", "and", "supports", "targeted", "engineering", "of", "flavonol", "content", ",", "e.g", ".,", "to", "enable", "the", "use", "of", "rapeseed", "protein", "in", "human", "consumption", "." ]
+}, {
+  "sentence_tokens" : [ "Materials", "and", "Methods", "." ]
+}, {
+  "sentence_tokens" : [ "Plant", "Material", "." ]
+}, {
+  "sentence_tokens" : [ "We", "used", "B.", "napus", "Express", "617", ",", "a", "dark", "seeded", "winter", "cultivar", "(", "Lee", "et", "al", ".,", "2020", ")", "." ]
+}, {
+  "sentence_tokens" : [ "B.", "napus", "was", "first", "grown", "in", "the", "greenhouse", "under", "long", "day", "conditions", "and", "then", "transferred", "outside", "for", "natural", "vernalization", ",", "followed", "by", "additional", "growth", "outside", "." ]
+}, {
+  "sentence_tokens" : [ "A.", "thaliana", "Columbia", "0", "(", "Col-0", ",", "NASC", "ID", "N1092", ")", "and", "N", "o", "ssen-0", "(", "N", "o-0,", "NASC", "ID", "N3081", ")", "were", "used", "as", "wildtype", "controls", "." ]
+}, {
+  "sentence_tokens" : [ "The", "f3h", "mutant", "(", "tt6-2", ",", "GK-292E08", ",", "NASC", "ID", "N2105575", ",", "Col-0", "background", ")", "(", "Appelhagen", "et", "al", ".,", "2014", ")", "and", "the", "ans", "and", "fls1", "double", "mutant", "(", "synonym", "ldox", "and", "fls1-2", ",", "ldox", ":", "SALK_028793", ",", "NASC", "ID", "N2105579", ",", "Col-0", "background", ";", "fls1-2", ":", "RIKEN_PST16145", ",", "N", "o", "-0", "background", ")", "(", "Stracke", "et", "al", ".,", "2009", ")", "were", "used", "for", "the", "generation", "of", "transgenic", "lines", "." ]
+}, {
+  "sentence_tokens" : [ "A.", "thaliana", "plants", "were", "grown", "in", "the", "greenhouse", "under", "a", "16-h-light/8-h-dark", "cycle", "at", "22", "degrees", "C", "before", "transformation", "." ]
+}, {
+  "sentence_tokens" : [ "Identification", "of", "BnaFLS", "Candidate", "Genes", "." ]
+}, {
+  "sentence_tokens" : [ "BnaFLS", "homologs", "were", "identified", "with", "KIPEs", "v0.255", "as", "described", "previously", "(", "Pucker", "et", "al", ".,", "2020", ")", "." ]
+}, {
+  "sentence_tokens" : [ "KIPEs", "was", "run", "with", "a", "minimal", "BLAST", "hit", "similarity", "of", "40", "%", "to", "reduce", "the", "number", "of", "fragmented", "peptides", "derived", "from", "possible", "mis-annotations", "." ]
+}, {
+  "sentence_tokens" : [ "As", "bait", ",", "peptide", "sequences", "from", "the", "sequence", "collection", "of", "functional", "F3H", ",", "FLS", ",", "and", "ANS", "sequences", "described", "in", "KIPEs", "were", "used", "." ]
+}, {
+  "sentence_tokens" : [ "As", "subject", "species", ",", "the", "peptide", "sequence", "sets", "of", "several", "Brassica", "species", "were", "used", "(", "Supplementary", "Table", "1", ")", "." ]
+}, {
+  "sentence_tokens" : [ "The", "alignment", "was", "constructed", "with", "MAFFT", "v.7", "(", "Katoh", "and", "Standley", ",", "2013", ")", "and", "trimmed", "to", "minimal", "alignment", "column", "occupancy", "of", "10", "%", "." ]
+}, {
+  "sentence_tokens" : [ "Next", ",", "a", "phylogenetic", "tree", "was", "built", "with", "FastTree", "v2.1.10", "(", "Price", "et", "al", ".,", "2009", ")", "using", "10,000", "rounds", "of", "bootstrapping", ",", "including", "the", "bait", "sequences", "and", "2-ODD-like", "sequences", "from", "A.", "thaliana", "derived", "from", "Kawai", "et", "al", ".,", "2014", "(", "Supplementary", "File", "1", ")", "." ]
+}, {
+  "sentence_tokens" : [ "The", "phylogenetic", "tree", "was", "visualized", "with", "FigTree", "v1.4.3", "(", "Supplementary", "Figure", "1", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Classification", "of", "BnaFLS", "candidates", "was", "generated", "based", "on", "the", "corresponding", "A.", "thaliana", "orthologs", "." ]
+}, {
+  "sentence_tokens" : [ "Sequence", "Specific", "Analyses", "of", "BnaFLS", "Candidates", "and", "Secondary", "Structure", "Modeling", "." ]
+}, {
+  "sentence_tokens" : [ "A", "comprehensive", "summary", "about", "gene", "specific", "features", "of", "BnaFLS", "candidates", "is", "summarized", "in", "Supplementary", "Table", "2", "." ]
+}, {
+  "sentence_tokens" : [ "GSDS", "2.0", "(", "Hu", "et", "al", ".,", "2015", ")", "was", "used", "to", "generate", "gene", "structure", "plots", "." ]
+}, {
+  "sentence_tokens" : [ "Literature", "knowledge", "was", "used", "to", "identify", "MYB-recognition", "elements", "(", "MRE", ")", "within", "1", "kbp", "upstream", "of", "the", "translational", "start", "site", "of", "BnaFLS", "candidates", "(", "Supplementary", "Figure", "2", ")", "." ]
+}, {
+  "sentence_tokens" : [ "The", "conserved", "MRE", "consensus", "sequence", "5", "'-AcCTACCa-3", "'", ",", "identified", "as", "a", "SG7", "recognition", "motif", "(", "Hartmann", "et", "al", ".,", "2005", ";", "Stracke", "et", "al", ".,", "2007", ")", "and", "the", "sequence", "motifs", "important", "for", "the", "binding", "of", "AthMYB21", "(", "MYBPZM", ":", "5", "'-CCWACC-3", "'", ")", "and", "AthMYB24", "(", "MYBCORE", ":", "5", "'-CNGTTR-3", "'", ")", "to", "AthFLS1", "were", "used", "for", "screening", "(", "Battat", "et", "al", ".,", "2019", ";", "Shan", "et", "al", ".,", "2020", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Theoretical", "isoelectric", "points", ",", "as", "well", "as", "molecular", "weight", "values", "of", "the", "BnaFLS", "protein", "sequences", "were", "calculated", "with", "ExPASY", "V", "(", "Gasteiger", "et", "al", ".,", "2005", ";", "Supplementary", "Table", "3", ")", "." ]
+}, {
+  "sentence_tokens" : [ "In", "addition", ",", "SignalP", "v.", "5.0", "(", "Almagro", "Armenteros", "et", "al", ".,", "2019b", ")", "and", "TargetP", "v.", "2.0", "(", "Almagro", "Armenteros", "et", "al", ".,", "2019a", ")", "were", "used", "to", "infer", "the", "presence", "of", "signal", "peptides", "and", "N-terminal", "presequences", "of", "BnaFLS", "candidates", ",", "respectively", "(", "Supplementary", "Tables", "4", ",", "5", ")", "." ]
+}, {
+  "sentence_tokens" : [ "TMHMM", "v.", "2.0", "(", "Krogh", "et", "al", ".,", "2001", ")", "was", "used", "to", "predict", "transmembrane", "regions", "within", "BnaFLS", "sequences", "(", "Supplementary", "Table", "2", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Finally", ",", "Plant-mPLoc", "v.", "2.0", "(", "Chou", "and", "Shen", ",", "2010", ")", "was", "used", "to", "predict", "the", "subcellular", "localization", "of", "BnaFLS", "candidates", "(", "Supplementary", "Table", "2", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Amino", "acid", "sequence", "identities", "of", "BnaFLSs", "compared", "to", "FLS", "homologs", "of", "A.", "thaliana", ",", "B.", "rapa", ",", "and", "B.", "oleracea", "were", "calculated", "based", "on", "a", "MAFFT", "alignment", "(", "Supplementary", "Table", "6", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Protein", "sequence", "alignments", "were", "visualized", "at", "http://espript.ibcp.fr/ESPript/ESPript/index.php", "v.", "3.0", "(", "Robert", "and", "Gouet", ",", "2014", ")", "using", "the", "AthFLS1", "pdb", "file", "derived", "from", "Pucker", "et", "al", ".,", "2020", "." ]
+}, {
+  "sentence_tokens" : [ "Functionally", "relevant", "amino", "acid", "residues", "and", "motifs", "for", "FLS", "and", "F3H", "activity", "were", "highlighted.In", "silico", "secondary", "structure", "models", "of", "relevant", "BnaFLS", "candidates", "were", "generated", "via", "I-TASSER", "(", "Roy", "et", "al", ".,", "2010", ")", "and", "visualized", "with", "Chimera", "v.", "1.13.1", "(", "Pettersen", "et", "al", ".,", "2004", ")", "." ]
+}, {
+  "sentence_tokens" : [ "The", "AthF3H", "PDB", "file", "derived", "from", "Pucker", "et", "al", ".,", "2020", "was", "used", "for", "visualization", "." ]
+}, {
+  "sentence_tokens" : [ "The", "generated", "PDB", "files", "of", "this", "work", "can", "be", "accessed", "via", "Supplementary", "File", "2", "." ]
+}, {
+  "sentence_tokens" : [ "Gene", "Expression", "Analysis", ":", "Ribonucleic", "Acid", "Extraction", ",", "Library", "Construction", ",", "and", "Sequencing", "." ]
+}, {
+  "sentence_tokens" : [ "Ribonucleic", "acid", "(", "RNA", ")", "samples", "were", "isolated", "from", "seeds", "and", "leaves", "using", "the", "NucleoSpin", "RNA", "Plant", "kit", "(", "Macherey-Nagel", ",", "D", "u", "ren", ",", "Germany", ")", "according", "to", "manufacturer", "'", "s", "instructions", "." ]
+}, {
+  "sentence_tokens" : [ "Seed", "samples", "of", "the", "B.", "napus", "cultivar", "Express", "617", "were", "collected", "23", "and", "35", "days", "after", "flowering", "(", "DAF", ")", ",", "while", "leave", "samples", "were", "collected", "35", "DAF", "." ]
+}, {
+  "sentence_tokens" : [ "Samples", "were", "collected", "in", "triplicates", "." ]
+}, {
+  "sentence_tokens" : [ "The", "RNA", "quality", "was", "validated", "using", "NanoDrop", "and", "Agilent", "2100", "to", "confirm", "the", "purity", ",", "concentration", ",", "and", "integrity", ",", "respectively", "." ]
+}, {
+  "sentence_tokens" : [ "Based", "on", "1", "mu", "g", "of", "total", "RNA", ",", "sequencing", "libraries", "were", "constructed", "following", "the", "TruSeq", "v2", "protocol", "." ]
+}, {
+  "sentence_tokens" : [ "Three", "seed", "and", "leaf", "samples", "per", "genotype", "were", "processed", "." ]
+}, {
+  "sentence_tokens" : [ "Single", "end", "sequencing", "of", "82", "nt", "was", "performed", "on", "an", "Illumina", "NextSeq", "500", "at", "the", "Sequencing", "Core", "Facility", "of", "the", "Center", "for", "Biotechnology", "(", "CeBiTec", ")", "at", "Bielefeld", "University", "." ]
+}, {
+  "sentence_tokens" : [ "Gene", "Expression", "Analysis", "and", "Co-expression", "Analysis", "Using", "Brassica", "napus", "RNA-Seq", "Data", "." ]
+}, {
+  "sentence_tokens" : [ "Read", "quality", "was", "assessed", "by", "FastQC", "(", "Andrews", ",", "2018", ")", ",", "revealing", "reads", "of", "good", "quality", "reaching", "a", "phred", "score", "of", "35", "or", "above", "." ]
+}, {
+  "sentence_tokens" : [ "Next", ",", "reads", "were", "mapped", "to", "the", "Express", "617", "reference", "genome", "sequence", "(", "Lee", "et", "al", ".,", "2020", ")", "using", "STAR", "v.", "2.7.1a", "(", "Dobin", "et", "al", ".,", "2013", ")", "." ]
+}, {
+  "sentence_tokens" : [ "STAR", "was", "run", "in", "basic", "mode", "allowing", "maximal", "5", "%", "mismatches", "per", "read", "length", "and", "using", "a", "minimum", "of", "90", "%", "matches", "per", "read", "length", "." ]
+}, {
+  "sentence_tokens" : [ "These", "read", "mappings", "were", "used", "to", "manually", "correct", "the", "functional", "annotation", "of", "the", "BnaFLS", "candidates", "(", "Supplementary", "File", "3", ")", "." ]
+}, {
+  "sentence_tokens" : [ "The", "corresponding", "corrected", "annotation", "file", "was", "used", "for", "downstream", "analysis.Beside", "the", "newly", "generated", "RNA-Seq", "data", ",", "publicly", "available", "RNA-Seq", "data", "sets", "were", "used", "and", "retrieved", "from", "the", "Sequence", "Read", "Archive", "via", "fastq-dump", "v.", "2.9.6", "to", "analyze", "the", "expression", "of", "the", "candidate", "genes", "across", "various", "organs", "(", "Supplementary", "Table", "7", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Kallisto", "v.", "0.44", "(", "Bray", "et", "al", ".,", "2016", ")", "was", "used", "with", "default", "parameters", "to", "quantify", "transcripts", "abundance", "." ]
+}, {
+  "sentence_tokens" : [ "The", "heatmap", "was", "constructed", "with", "a", "customized", "python", "script", "(", "see", "text", "footnote", "2", ")", "using", "mean", "transcripts", "per", "millions", "(", "TPMs", ")", "per", "organ", "." ]
+}, {
+  "sentence_tokens" : [ "Condition", "independent", "co-expression", "analysis", "was", "performed", "to", "identify", "co-expressed", "genes", "using", "Spearman", "'", "s", "correlation", "coefficient", "(", "see", "text", "footnote", "2", ")", "by", "incorporating", "696", "RNA-Seq", "data", "sets", "(", "Supplementary", "Table", "8)", "." ]
+}, {
+  "sentence_tokens" : [ "To", "filter", "for", "strong", "co-expression", "the", "Spearman", "'", "s", "correlation", "coefficient", "threshold", "was", "set", "to", "0.7", "as", "suggested", "by", "Usadel", "et", "al.", "(", "2009", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Functional", "Annotation", "of", "Brassica", "napus", "Express", "617", "Genes", "." ]
+}, {
+  "sentence_tokens" : [ "Genes", "were", "functionally", "annotated", "by", "transferring", "the", "A.", "thaliana", "Araport11", "(", "Cheng", "et", "al", ".,", "2017", ")", "functional", "annotation", "to", "the", "B.", "napus", "Express", "617", "gene", "models", "." ]
+}, {
+  "sentence_tokens" : [ "The", "annotation", "was", "used", "for", "the", "co-expression", "analysis", "." ]
+}, {
+  "sentence_tokens" : [ "OrthoFinder", "v.", "2.3.7", "(", "Emms", "and", "Kelly", ",", "2019", ")", "was", "applied", "using", "default", "parameters", "to", "identify", "orthogroups", "between", "the", "representative", "peptide", "sequences", "of", "Araport11", "and", "the", "B.", "napus", "Express", "617", "peptide", "sequences", "as", "previously", "defined", "(", "Pucker", "et", "al", ".,", "2017", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Remaining", "non", "annotated", "genes", "were", "functionally", "annotated", "by", "using", "reciprocal", "best", "blast", "hits", "(", "RBHs", ")", "and", "best", "blast", "hits", "(", "BBHs", ")", "as", "described", "previously", "(", "Pucker", "et", "al", ".,", "2016", ";", "Supplementary", "Table", "9", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Generation", "of", "BnaFLSs", "Constructs", "." ]
+}, {
+  "sentence_tokens" : [ "All", "constructs", "generated", "in", "this", "work", "were", "produced", "via", "Gateway", "cloning", "technique", "according", "to", "manufacturer", "'", "s", "instructions", "and", "verified", "by", "DNA", "sequencing", "(", "Supplementary", "Table", "10", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Total", "RNA", "from", "leaves", "and", "seeds", "of", "Express", "617", "was", "extracted", "as", "described", "above", "(", "see", "section", "\"", "Gene", "Expression", "Analysis", ":", "Ribonucleic", "Acid", "Extraction", ",", "Library", "Construction", ",", "and", "Sequencing", "\"", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Complementary", "DNA", "(", "cDNA", ")", "was", "synthesized", "with", "the", "ProtoScript", "Reverse", "Transcriptase", "kit", "(", "Invitrogen", ",", "Karlsruhe", ",", "Germany", ")", "using", "~", "1", "mu", "g", "of", "total", "RNA", "and", "1", "mu", "l", "of", "oligo", "(", "dT", ")", "and", "1", "mu", "l", "of", "random-hexamer", "primers", "." ]
+}, {
+  "sentence_tokens" : [ "cDNA", "fragments", "corresponding", "to", "the", "full-length", "ORFs", "of", "the", "candidate", "genes", "were", "then", "amplified", "via", "PCR", "with", "Q5", "High-Fidelity", "Polymerase", "PCR", "kit", "(", "NEB", ",", "Frankfurt", "am", "Main", ",", "Germany", ")", "using", "gene", "specific", "gateway", "primers", "(", "Supplementary", "Table", "9", ")", "." ]
+}, {
+  "sentence_tokens" : [ "The", "sizes", "of", "the", "amplification", "products", "were", "analyzed", "by", "gel", "electrophoresis", "and", "visualized", "by", "ethidium", "bromide", "on", "a", "1", "%", "agarose", "gel", "." ]
+}, {
+  "sentence_tokens" : [ "The", "amplicons", "were", "purified", "from", "the", "PCR", "reagent", "tube", "via", "the", "NucleoSpin", "Gel", "and", "PCR", "Clean-up", "Kit", "(", "Macherey-Nagel", ",", "D", "u", "ren", ",", "Germany", ")", "." ]
+}, {
+  "sentence_tokens" : [ "The", "purified", "cDNA", "fragments", "corresponding", "to", "the", "full-length", "ORFs", "of", "the", "candidate", "genes", "were", "then", "recombined", "into", "pDONR", "/", "Zeo", "(", "Invitrogen", ",", "Karlsruhe", ",", "Germany", ")", "using", "the", "Gateway", "BP", "Clonase", "II", "Enzyme", "Mix", "(", "Invitrogen", ",", "Karlsruhe", ",", "Germany", ")", "and", "the", "attB", "recombination", "sites", "of", "the", "respective", "gateway", "primers", "(", "Supplementary", "Table", "10", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Each", "entry", "clone", "was", "then", "used", "to", "transfer", "the", "CDS", "into", "the", "destination", "vector", "pLEELA", "(", "Jakoby", "et", "al", ".,", "2004", ")", "or", "pDEST17", "(", "Invitrogen", ")", "via", "the", "Gateway", "LR", "Clonase", "II", "Enzyme", "Mix", "(", "Invitrogen", ",", "Karlsruhe", ",", "Germany", ")", "." ]
+}, {
+  "sentence_tokens" : [ "In", "pLEELA", ",", "the", "rapeseed", "coding", "sequences", "are", "under", "control", "of", "a", "double", "35S", "promoter", "." ]
+}, {
+  "sentence_tokens" : [ "pDEST17", "was", "used", "for", "heterologous", "protein", "expression", "during", "the", "in", "vivo", "E.", "coli", "bioconversion", "assay", "under", "the", "control", "of", "the", "T7", "promotor", "." ]
+}, {
+  "sentence_tokens" : [ "The", "following", "constructs", "were", "available", "from", "previous", "studies", ":", "pDEST17-AthF3H", ",", "pDEST17-AthFLS1", "(", "Busche", "et", "al", ".,", "2021", ")", ",", "pDONR-AthFLS3", ",", "pDONR-AthFLS5", ",", "pDONR-AthANS", "(", "Preuss", "et", "al", ".,", "2009", ")", "." ]
+}, {
+  "sentence_tokens" : [ "The", "respective", "BnaFLS", "CDS", "sequences", "are", "listed", "in", "Supplementary", "File", "4", "." ]
+}, {
+  "sentence_tokens" : [ "Flavanone", "3-Hydroxylase", "and", "Flavonol", "Synthase", "Bioconversion", "Assay", "in", "E.", "coli", "." ]
+}, {
+  "sentence_tokens" : [ "The", "bioconversion", "assay", "in", "E.", "coli", "subsequent", "HPTLC", "analysis", "of", "the", "methanolic", "extracts", "were", "performed", "as", "described", "in", "Busche", "et", "al.", "(", "2021", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Successful", "heterologous", "expression", "of", "the", "recombinant", "proteins", "via", "SDS-PAGE", "was", "shown", "(", "Supplementary", "Figure", "3", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Generation", "of", "Complementation", "Lines", "." ]
+}, {
+  "sentence_tokens" : [ "The", "generated", "pLEELA-BnaFLSX", "constructs", "were", "used", "to", "transform", "the", "A.", "thaliana", "f3h", "knock", "out", "mutant", ",", "as", "well", "as", "the", "ans", "and", "fls1", "double", "mutant", "using", "the", "A.", "tumefaciens", "strain", "GV3101", ":", "pM90RK", "(", "Koncz", "and", "Schell", ",", "1986", ")", "according", "to", "the", "floral", "dip", "protocol", "(", "Clough", "and", "Bent", ",", "1998", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Selection", "of", "T1", "plants", "was", "carried", "out", "by", "BASTA", "selection", "." ]
+}, {
+  "sentence_tokens" : [ "Surviving", "plants", "were", "genotyped", "for", "the", "respective", "wildtype", "and", "mutant", "alleles", ",", "as", "well", "as", "the", "insertion", "of", "the", "transgene", "into", "the", "genome", "and", "its", "expression", "via", "PCR", "and", "RT-PCR", "(", "Supplementary", "Table", "10", ")", "." ]
+}, {
+  "sentence_tokens" : [ "The", "genotyping", "for", "the", "presence", "of", "the", "transgene", "was", "repeated", "with", "T2", "plants", "." ]
+}, {
+  "sentence_tokens" : [ "T2", "plants", "were", "used", "for", "the", "generation", "of", "flavonol", "containing", "methanolic", "extracts", "as", "described", "below", "(", "see", "section", "\"", "Flavonol", "Content", "Analysis", "by", "High-Performance", "Thin-Layer", "Chromatography", "\"", ")", "." ]
+}, {
+  "sentence_tokens" : [ "T2", "plants", "of", "the", "transformed", "ans", "and", "fls1", "mutants", "and", "T3", "plants", "of", "the", "transformed", "f3h", "mutants", "were", "used", "for", "DPBA", "staining", "of", "young", "seedlings", "(", "see", "section", "\"", "In", "situ", "Flavonoid", "Staining", "of", "Whole", "Seedlings", "\"", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Flavonol", "Content", "Analysis", "by", "High-Performance", "Thin-Layer", "Chromatography", "." ]
+}, {
+  "sentence_tokens" : [ "The", "flavonol", "glycosides", "were", "extracted", "and", "analyzed", "as", "previously", "described", "(", "Stracke", "et", "al", ".,", "2009", ")", "." ]
+}, {
+  "sentence_tokens" : [ "A.", "thaliana", "stems", "were", "homogenized", "in", "80", "%", "methanol", "and", "incubated", "for", "15", "min", "at", "70", "degrees", "C", "and", "then", "centrifuged", "for", "10", "min", "at", "16,100", "x", "g." ]
+}, {
+  "sentence_tokens" : [ "The", "supernatants", "were", "vacuum", "dried", "at", "60", "degrees", "C", "and", "sediments", "were", "dissolved", "in", "1", "mu", "l", "of", "80", "%", "methanol", "mg", "starting", "material", "for", "HPTLC", "analysis", "." ]
+}, {
+  "sentence_tokens" : [ "In", "total", ",", "3", "mu", "l", "of", "each", "sample", "were", "spotted", "on", "silica-60", "HPTLC-plates", "." ]
+}, {
+  "sentence_tokens" : [ "The", "A.", "thaliana", "accessions", "Col-0", "and", "N", "o", "ssen-0", ",", "as", "well", "as", "the", "ans", "and", "fls1", "double", "mutant", "were", "used", "as", "controls", "for", "the", "ans", "and", "fls1", "A.", "thaliana", "complementation", "lines", "." ]
+}, {
+  "sentence_tokens" : [ "For", "the", "f3h", "complementation", "lines", ",", "Col-0", "and", "the", "f3h", "mutant", "were", "used", "as", "controls", "." ]
+}, {
+  "sentence_tokens" : [ "The", "mobile", "phase", "consisted", "of", "a", "mixture", "of", "66.7", "%", "ethyl", "acetate", ",", "8", "%", "formic", "acid", ",", "8", "%", "acetic", "acid", ",", "and", "17.3", "%", "water", "." ]
+}, {
+  "sentence_tokens" : [ "Flavonoid", "compounds", "were", "detected", "as", "described", "before", "(", "Stracke", "et", "al", ".,", "2009", ")", "." ]
+}, {
+  "sentence_tokens" : [ "In", "situ", "Flavonoid", "Staining", "of", "Whole", "Seedlings", "." ]
+}, {
+  "sentence_tokens" : [ "The", "visualization", "of", "flavonoids", "via", "DPBA", "staining", "with", "whole", "seedlings", "was", "performed", "as", "described", "(", "Stracke", "et", "al", ".,", "2007", ")", ",", "with", "the", "following", "minor", "adaptations", ":", "the", "bleached", "seedlings", "were", "stained", "to", "saturation", "in", "a", "freshly", "prepared", "aqueous", "solution", "of", "0.25", "%", "(", "w/v", ")", "DPBA", ",", "0.01", "%", "(", "v/v", ")", "Triton", "X-100", ",", "and", "20", "%", "ethanol", "(", "v/v", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Results", "." ]
+}, {
+  "sentence_tokens" : [ "Flavonol", "Synthase", "Family", "of", "Brassica", "napus", "." ]
+}, {
+  "sentence_tokens" : [ "We", "identified", "a", "monophyletic", "group", "of", "13", "BnaFLS", "candidates", "through", "phylogenetic", "analysis", "using", "F3H", ",", "ANS", ",", "and", "2-ODD-like", "protein", "sequences", "as", "outgroup", "to", "classify", "members", "of", "the", "2-ODD", "family", "(", "Figure", "2", ",", "Supplementary", "Figure", "1", ",", "and", "Supplementary", "Table", "2", ")", "of", "B.", "napus", "." ]
+}, {
+  "sentence_tokens" : [ "The", "BnaFLS", "candidates", "were", "further", "classified", "within", "the", "FLS", "gene", "family", "based", "on", "their", "phylogenetic", "relationship", "to", "their", "most", "likely", "A.", "thaliana", "orthologs", "(", "Figure", "2", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Thereby", ",", "we", "identified", "two", "BnaFLS1", ",", "two", "BnaFLS2", ",", "five", "BnaFLS3", ",", "and", "four", "BnaFLS4", "candidates", "in", "the", "B.", "napus", "cultivar", "Express", "617", "." ]
+}, {
+  "sentence_tokens" : [ "BnaFLS1-1", "was", "identified", "on", "chromosome", "C09", ",", "while", "its", "homeolog", "BnaFLS1-2", "is", "located", "on", "chromosome", "A09.The", "genomic", "structure", "of", "the", "BnaFLS", "candidate", "genes", "comprises", "3-4", "exons", "and", "the", "encoded", "proteins", "display", "a", "length", "range", "from", "270", "to", "336", "amino", "acids", "(", "aa", ")", "(", "Table", "1", ",", "Supplementary", "Figure", "4", ",", "and", "Supplementary", "Table", "2", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Considering", "the", "chromosomal", "rearrangements", "as", "described", "for", "the", "cultivar", "Darmor-bzh", "(", "Chalhoub", "et", "al", ".,", "2014", ")", ",", "homeologs", "were", "identified", "(", "Table", "1", ")", "." ]
+}, {
+  "sentence_tokens" : [ "No", "FLS5", "and", "FLS6", "homologs", "were", "identified", "in", "B.", "rapa", ",", "B.", "oleracea", ",", "and", "B.", "napus", "(", "Figure", "2", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Additionally", "screened", "B.", "napus", "cultivars", "(", "Gangan", ",", "No2127", ",", "Quinta", ",", "Shenglii", ",", "Tapidor", ",", "Westar", ",", "ZS11", ",", "Zheyou7", ")", "were", "in", "line", "with", "these", "results", "." ]
+}, {
+  "sentence_tokens" : [ "As", "a", "FLS6", "homolog", "is", "present", "in", "Raphanus", "sativus", ",", "a", "very", "close", "relative", "to", "B.", "rapa", ",", "B.", "oleracea", "and", "B.", "napus", ",", "the", "latter", "three", "might", "have", "lost", "FLS6", "very", "recently", "." ]
+}, {
+  "sentence_tokens" : [ "FLS5", "was", "not", "found", "in", "the", "analyzed", "species", "of", "Brassiceae", ",", "Arabideae", ",", "Eutremeae", ",", "and", "Coluteocarpeae", ",", "while", "at", "least", "one", "copy", "was", "present", "in", "Camelineae", "and", "Boechereae", "indicating", "that", "FLS5", "might", "have", "recently", "emerged", "in", "the", "latter", "tribes", "." ]
+}, {
+  "sentence_tokens" : [ "Organ-", "and", "Temporal", "Specific", "Expression", "of", "BnaFLS", "Candidates", "." ]
+}, {
+  "sentence_tokens" : [ "The", "expression", "of", "all", "BnaFLS", "candidate", "genes", "was", "analyzed", "by", "newly", "generated", "and", "publicly", "available", "RNA-Seq", "data", "(", "Table", "2", "and", "Supplementary", "Table", "7", ")", "." ]
+}, {
+  "sentence_tokens" : [ "As", "seeds", "are", "the", "major", "organ", "for", "agronomical", "relevance", ",", "we", "screened", "for", "BnaFLS", "candidates", "expressed", "in", "seeds", "." ]
+}, {
+  "sentence_tokens" : [ "In", "total", ",", "five", "genes", "were", "found", "to", "be", "expressed", "in", "seeds", ":", "BnaFLS1-1", ",", "BnaFLS1-2", ",", "BnaFLS2-1", ",", "BnaFLS3-3", ",", "and", "BnaFLS3-4", "." ]
+}, {
+  "sentence_tokens" : [ "These", "five", "BnaFLS", "candidate", "genes", "revealed", "organ-", "and", "seed", "developmental", "specific", "expression", "patterns", "(", "Table", "2", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Both", "BnaFLS1", "candidates", "revealed", "similar", "expression", "patters", ",", "showing", "the", "highest", "expression", "in", "late", "anther", "development", ",", "petals", ",", "and", "seeds", "." ]
+}, {
+  "sentence_tokens" : [ "The", "expression", "of", "both", "BnaFLS1s", "tend", "to", "increase", "in", "siliques", "from", "10", "to", "40", "days", "after", "flowering", "(", "DAF", ")", "." ]
+}, {
+  "sentence_tokens" : [ "A", "similar", "expression", "pattern", "was", "observed", "in", "the", "seed", "coat", "revealing", "a", "development", "dependent", "expression", "." ]
+}, {
+  "sentence_tokens" : [ "The", "biggest", "differences", "in", "BnaFLS1-1", "and", "BnaFLS1-2", "expression", "were", "observed", "in", "the", "embryo", ",", "where", "BnaFLS1-2", "is", "higher", "expressed", "compared", "to", "BnaFLS1-1", "indicating", "organ", "specific", "transcriptional", "regulation", "at", "least", "for", "this", "organ", "." ]
+}, {
+  "sentence_tokens" : [ "In", "contrast", "to", "BnaFLS1s", ",", "both", "BnaFLS3s", "are", "only", "marginally", "expressed", "in", "anthers", "and", "petals", "." ]
+}, {
+  "sentence_tokens" : [ "While", "the", "expression", "of", "BnaFLS1s", "peaks", "during", "late", "seed", "and", "silique", "development", ",", "the", "expression", "of", "both", "BnaFLS3s", "peak", "in", "the", "early", "developmental", "stages", "." ]
+}, {
+  "sentence_tokens" : [ "BnaFLS3-4", "is", "highly", "expressed", "during", "seed", "coat", "development", "." ]
+}, {
+  "sentence_tokens" : [ "Contrasting", "expression", "patterns", "of", "BnaFLS3-3", "and", "BnaFLS3-4", "were", "identified", "in", "e.g", ".,", "seed", "coat", "samples", "indicating", "again", "organ", "specific", "transcriptional", "regulation", "." ]
+}, {
+  "sentence_tokens" : [ "BnaFLS2-1", "was", "only", "marginally", "expressed", "in", "all", "analyzed", "organs", ",", "showing", "the", "highest", "expression", "in", "seed", "coat", "and", "roots", "." ]
+}, {
+  "sentence_tokens" : [ "In", "summary", ",", "these", "findings", "indicate", "a", "role", "of", "BnaFLS1-1", ",", "BnaFLS1-2", ",", "BnaFLS2-1", ",", "BnaFLS3-3", ",", "and", "BnaFLS3-4", "in", "seeds.The", "five", "BnaFLS", "candidates", "expressed", "in", "seeds", "were", "used", "for", "downstream", "in-depth", "sequence-", "and", "functional", "analysis", "of", "the", "encoded", "proteins", "." ]
+}, {
+  "sentence_tokens" : [ "The", "candidates", "revealed", "similar", "genomic", "structures", "and", "an", "alternative", "splice", "variant", "of", "BnaFLS2-1", "was", "detected", "(", "Figure", "3", ",", "Supplementary", "Table", "2", ",", "and", "Supplementary", "Figure", "5", ")", "." ]
+}, {
+  "sentence_tokens" : [ "BnaFLS1-1", "and", "BnaFLS1-2", "Are", "Co-expressed", "With", "Major", "Players", "of", "the", "Flavonoid", "Biosynthesis", "." ]
+}, {
+  "sentence_tokens" : [ "To", "get", "first", "insights", "into", "which", "biological", "pathways", "the", "five", "BnaFLS", "candidates", "expressed", "in", "seeds", "might", "be", "involved", ",", "we", "identified", "co-expressed", "genes", "(", "Supplementary", "Tables", "11", "-", "15", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Interestingly", ",", "the", "genes", "with", "the", "most", "similar", "expression", "pattern", "to", "BnaFLS1-1", "are", "part", "of", "the", "flavonoid", "biosynthesis", "or", "the", "general", "phenylpropanoid", "pathway", ",", "including", "4CL", ",", "CHS", ",", "CHI", ",", "F3H", ",", "F3", "'", "H", ",", "FLS1-2", ",", "UGT84A2", ",", "GSTF12", ",", "and", "MYB111", "." ]
+}, {
+  "sentence_tokens" : [ "Similar", "results", "were", "obtained", "for", "BnaFLS1-2", ",", "which", "is", "co-expressed", "with", "homolog", "(", "s", ")", "of", "4CL", ",", "CHS", ",", "CHI", ",", "F3H", ",", "FLS1-1", ",", "UGT84A2", ",", "and", "MYB111", "." ]
+}, {
+  "sentence_tokens" : [ "Both", "BnaFLS1", "genes", "contain", "the", "conserved", "subgroup", "7", "MYB-recognition", "element", "(", "MRE", ")", "motif", "in", "their", "putative", "promotor", "sequences", "(", "Supplementary", "Figure", "2", ")", "." ]
+}, {
+  "sentence_tokens" : [ "BnaFLS3-4", "was", "identified", "to", "be", "co-expressed", "with", "genes", "which", "mostly", "lack", "a", "functional", "annotation", "." ]
+}, {
+  "sentence_tokens" : [ "However", ",", "BnaFLS3-4", "is", "strongly", "co-expressed", "with", "a", "MYB61", "homolog", "." ]
+}, {
+  "sentence_tokens" : [ "AthMYB61", "is", "a", "known", "regulator", "of", "seed", "coat", "development", "." ]
+}, {
+  "sentence_tokens" : [ "For", "BnaFLS2-1", "(", "Spearman", "'", "s", "correlation", "coefficient", "<", "0.59", ")", "and", "BnaFLS3-3", "(", "Spearman", "'", "s", "correlation", "coefficient", "<", "0.69", ")", "no", "genes", "with", "strong", "co-expression", "could", "be", "identified", "." ]
+}, {
+  "sentence_tokens" : [ "This", "is", "likely", "due", "to", "the", "very", "weak", "expression", "of", "BnaFLS2-1", "and", "the", "broad", "expression", "pattern", "of", "BnaFLS3-3", "(", "Table", "2", ")", "." ]
+}, {
+  "sentence_tokens" : [ "BnaFLS", "Candidates", "Share", "High", "Amino", "Acid", "Sequence", "Identity", "to", "Arabidopsis", "thaliana", "2-ODD", "Orthologs", "." ]
+}, {
+  "sentence_tokens" : [ "To", "shed", "light", "on", "the", "potential", "functionalities", "of", "the", "BnaFLS", "candidates", ",", "the", "encoded", "proteins", "were", "compared", "to", "the", "well", "characterized", "2-ODD-members", "FLS", ",", "F3H", ",", "and", "ANS", "from", "A.", "thaliana", "(", "Table", "3", ")", "." ]
+}, {
+  "sentence_tokens" : [ "BnaFLS1-1", "and", "BnaFLS1-2", "share", ">", "91", "%", "sequence", "identity", "to", "AthFLS1", ",", "while", "BnaFLS2-1", "has", "57.4", "%", "sequence", "identity", "to", "AthFLS2", "." ]
+}, {
+  "sentence_tokens" : [ "BnaFLS3-2", "and", "BnaFLS3-3", "revealed", "a", "sequence", "identity", "of", "66.8", "%", "to", "AthFLS3", "." ]
+}, {
+  "sentence_tokens" : [ "When", "comparing", "all", "BnaFLS", "candidates", "to", "AthF3H", "and", "AthANS", ",", "the", "protein", "identity", "ranged", "from", "26.7-31", "to", "33.6-38.4", "%", ",", "respectively", "." ]
+}, {
+  "sentence_tokens" : [ "The", "two", "BnaFLS1", "candidates", "share", "98.2", "%", "sequence", "identity", ",", "differing", "in", "6", "aa", "positions", ",", "while", "both", "BnaFLS3", "candidates", "have", "97.4", "%", "sequence", "identity", ",", "differing", "in", "8", "aa", "positions", "." ]
+}, {
+  "sentence_tokens" : [ "The", "high", "sequence", "similarity", "between", "the", "BnaFLS", "candidates", "and", "their", "respective", "AthFLS", "orthologs", "implies", "close", "structural", "relationships", "and", "related", "functions", "." ]
+}, {
+  "sentence_tokens" : [ "BnaFLS", "Candidates", "Carry", "Residues", "Important", "for", "Flavonol", "Synthase", "and", "Flavanone", "3-Hydroxylase", "Activity", "." ]
+}, {
+  "sentence_tokens" : [ "The", "five", "BnaFLS", "candidates", "expressed", "in", "seeds", "were", "analyzed", "with", "respect", "to", "conserved", "amino", "acids", "and", "motifs", "important", "for", "FLS", "functionality", "(", "Figure", "4", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Both", "BnaFLS1", "candidates", "contain", "all", "conserved", "amino", "acids", "and", "motifs", "." ]
+}, {
+  "sentence_tokens" : [ "All", "remaining", "candidates", "lack", "the", "motifs", "potentially", "important", "for", "FLS", "activity", ",", "namely", "\"", "SxxTxLVP", "\"-,", "\"", "CPQ", "and", "RPxLAL", "\"-,", "and", "the", "N-terminal", "\"", "PxxxIRxxxEQP", ",", "\"", "in", "parts", "or", "completely", "." ]
+}, {
+  "sentence_tokens" : [ "However", ",", "all", "BnaFLS", "candidates", "possess", "the", "conserved", "residues", "for", "ferrous", "iron-", "and", "2-oxoglutarate-binding", "." ]
+}, {
+  "sentence_tokens" : [ "Only", "BnaFLS2-1", "revealed", "three", "amino", "acid", "exchanges", "in", "the", "five", "substrate", "binding", "residues", "analyzed", ",", "which", "are", "H103N", ",", "K173R", ",", "and", "E266D", "." ]
+}, {
+  "sentence_tokens" : [ "BnaFLS3-3", "and", "BnaFLS3-4", "carry", "a", "G235A", "(", "G261", "in", "AthFLS1", ")", "amino", "acid", "exchange", "." ]
+}, {
+  "sentence_tokens" : [ "As", "some", "FLSs", "are", "bifunctional", "showing", "F3H-side", "activity", ",", "BnaFLS", "candidates", "were", "additionally", "screened", "for", "residues", "important", "for", "F3H", "activity", "(", "Figure", "4", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Besides", "the", "previously", "described", "G235A", "exchange", "of", "both", "BnaFLS3", "candidates", ",", "all", "five", "BnaFLS", "candidates", "possess", "the", "residues", "described", "to", "play", "a", "role", "for", "F3H", "activity", "." ]
+}, {
+  "sentence_tokens" : [ "The", "high", "conservation", "of", "relevant", "motifs", "and", "amino", "acids", "suggested", "both", "FLS1", "candidates", "to", "be", "bifunctional", "." ]
+}, {
+  "sentence_tokens" : [ "Due", "to", "the", "incomplete", "motifs", "and", "exchanges", "in", "conserved", "amino", "acids", "of", "BnaFLS3-3", ",", "BnaFLS3-4", ",", "and", "BnaFLS2-1", "the", "FLS", "and/or", "F3H", "activity", "of", "these", "candidates", "might", "be", "affected.Moreover", ",", "all", "BnaFLS", "candidates", "were", "predicted", "to", "contain", "no", "transmembrane", "helices", ",", "signal", "peptides", "or", "N-terminal", "presequences", "(", "mitochondrial-,", "chloroplast-,", "thylakoid", "luminal", "transfer", "peptide", ")", "and", "are", "therefore", "assumed", "and", "predicted", "to", "be", "located", "in", "the", "cytoplasm", "(", "Supplementary", "Tables", "2", ",", "4", ",", "5", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Functional", "Characterization", "of", "BnaFLS", "Candidates", "." ]
+}, {
+  "sentence_tokens" : [ "For", "the", "functional", "characterization", "of", "BnaFLS1-1", ",", "BnaFLS1-2", ",", "BnaFLS2-1", ",", "BnaFLS3-3", ",", "and", "BnaFLS3-4", "in", "vivo", "bioconversion", "assays", "in", "E.", "coli", "as", "well", "as", "analysis", "of", "stablely", "transformed", "A.", "thaliana", "knock", "out", "mutants", "were", "performed", "." ]
+}, {
+  "sentence_tokens" : [ "The", "reproducibility", "of", "the", "bioconversion", "assay", "was", "ensured", "by", "showing", "that", "the", "observed", "functionalities", "of", "the", "well-known", "2-ODD", "members", "AthFLS1", ",", "AthFLS3", ",", "AthFLS5", ",", "AthF3H", ",", "and", "AthANS", "match", "literature", "based", "knowledge", "(", "Supplementary", "Figure", "6", ")", "." ]
+}, {
+  "sentence_tokens" : [ "As", "expected", ",", "AthF3H", "showed", "clear", "F3H", "activity", "." ]
+}, {
+  "sentence_tokens" : [ "In", "line", "with", "previous", "reports", ",", "AthFLS1", "was", "identified", "as", "bifunctional", "possessing", "FLS", "activity", "and", "F3H", "side", "activity", "and", "AthANS", "showed", "FLS", "and", "F3H", "side", "activity", "." ]
+}, {
+  "sentence_tokens" : [ "None", "of", "these", "activities", "could", "be", "detected", "for", "AthFLS5", "." ]
+}, {
+  "sentence_tokens" : [ "Although", "AthFLS3", "was", "reported", "to", "have", "FLS", "activity", "under", "extended", "assay", "conditions", "in", "E.", "coli", ",", "we", "could", "not", "detect", "FLS", "or", "F3H", "activity", "." ]
+}, {
+  "sentence_tokens" : [ "BnaFLS1-1", "and", "BnaFLS1-2", "Are", "Bifunctional", "Enzymes", "Exhibiting", "Flavanone", "3-Hydroxylase", "and", "Flavonol", "Synthase", "Activity", "." ]
+}, {
+  "sentence_tokens" : [ "The", "predictions", "reported", "above", "were", "experimentally", "validated", "for", "BnaFLS1-1", "and", "BnaFLS1-2", ",", "which", "were", "indeed", "bifunctional", "." ]
+}, {
+  "sentence_tokens" : [ "Both", "enzymes", "can", "generate", "dihydrokaempferol", "and", "kaempferol", "(", "Figures", "5A", ",", "B", ")", "." ]
+}, {
+  "sentence_tokens" : [ "To", "validate", "bifunctionality", "in", "planta", ",", "flavonol", "glycosides", "of", "the", "ans", "and", "fls1", "A.", "thaliana", "double", "mutants", "transgenic", "for", "BnaFLS1-1", "and", "BnaFLS1-2", "were", "analyzed", "via", "HPTLC", "." ]
+}, {
+  "sentence_tokens" : [ "In", "line", "with", "the", "bioconversion", "assay", "results", ",", "the", "in", "planta", "analysis", "revealed", "successful", "complementation", "of", "the", "ans", "and", "fls1", "A.", "thaliana", "double", "knock", "out", "mutant", "by", "BnaFLS1-1", "or", "BnaFLS1-2", ",", "restoring", "the", "A.", "thaliana", "wildtype", "phenotype", "(", "Figure", "5C", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Additionally", ",", "DPBA", "staining", "of", "young", "seedlings", "was", "used", "to", "visualize", "flavonoid", "derivatives", "under", "UV", "illumination", ",", "including", "kaempferol", "(", "green", ")", "and", "quercetin", "derivatives", "(", "yellow", ",", "orange", ")", "." ]
+}, {
+  "sentence_tokens" : [ "This", "in", "situ", "validation", "revealed", "a", "restoration", "of", "the", "wildtype", "phenotype", "by", "BnaFLS1-1", "and", "BnaFLS1-2", "compared", "to", "the", "f3h", "and", "ans", "and", "fls1", "knock", "out", "mutants", "(", "Figures", "5D", ",", "E", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Collectively", ",", "these", "results", "showed", "that", "BnaFLS1-1", "and", "BnaFLS1-2", "encode", "bifunctional", "enzymes", ",", "which", "exhibit", "FLS", "and", "F3H", "activity", "." ]
+}, {
+  "sentence_tokens" : [ "BnaFLS", "Family", "Members", "With", "Divergent", "Enzyme", "Functionalities", "." ]
+}, {
+  "sentence_tokens" : [ "Interestingly", ",", "only", "BnaFLS1-1", "and", "BnaFLS1-2", "revealed", "FLS", "activity", "out", "of", "the", "five", "BnaFLS", "candidates", "expressed", "in", "seeds", "." ]
+}, {
+  "sentence_tokens" : [ "While", "neither", "F3H", "nor", "FLS", "activity", "could", "be", "detected", "for", "BnaFLS2-1", "(", "Supplementary", "Figure", "7", ")", ",", "both", "BnaFLS3", "candidates", "showed", "F3H", "activity", "in", "vivo", "and", "in", "planta", ",", "thus", "they", "can", "convert", "naringenin", "to", "dihydroflavonols", "(", "Figures", "6A", "-", "E", ")", "." ]
+}, {
+  "sentence_tokens" : [ "However", ",", "no", "FLS", "activity", "could", "be", "detected", "for", "both", "BnaFLS3s", "(", "Figures", "6A", "-", "E", ")", "." ]
+}, {
+  "sentence_tokens" : [ "These", "findings", "validate", "the", "predictions", "based", "on", "the", "presence", "of", "almost", "all", "important", "residues", "for", "F3H", "activity", "for", "both", "BnaFLS3s", ",", "with", "G235A", "(", "G261", "in", "AthFLS1", ")", "being", "the", "only", "exception", "(", "Figure", "4", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Structural", "Modeling", "Revealed", "Three", "Major", "Differences", "of", "the", "Bifunctional", "Enzymes", "Compared", "to", "Monofunctional", "Ones", "." ]
+}, {
+  "sentence_tokens" : [ "To", "investigate", "whether", "the", "bifunctionality", "of", "both", "BnaFLS1s", "compared", "to", "both", "BnaFLS3s", ",", "which", "showed", "only", "F3H", "activity", ",", "might", "be", "based", "on", "structural", "differences", "in", "silico", ",", "3D", "models", "were", "generated", "(", "Figures", "7A", "-", "F", ")", "." ]
+}, {
+  "sentence_tokens" : [ "The", "BnaFLS1s", "showed", "three", "major", "differences", "compared", "to", "both", "BnaFLS3s", ",", "which", "offer", "insights", "into", "the", "potential", "mechanisms", "of", "bifunctionality", ":", "(", "i", ")", "Both", "BnaFLS3", "models", "revealed", "a", "shorter", "N-terminus", "compared", "to", "BnaFLS1s", ",", "resulting", "in", "the", "loss", "of", "the", "presumably", "FLS", "specific", "\"", "PxxxIRxxxEQP", "\"-motif", "and", "alpha-helices", "(", "Figures", "4", ",", "7", ")", "." ]
+}, {
+  "sentence_tokens" : [ "(", "ii", ")", "The", "amino", "acid", "G261", "proposed", "to", "be", "involved", "in", "proper", "folding", "is", "only", "present", "in", "both", "BnaFLS1s", ",", "while", "BnaFLS3s", "carry", "an", "alanine", "at", "this", "position", "." ]
+}, {
+  "sentence_tokens" : [ "This", "residue", "is", "located", "between", "the", "transition", "of", "a", "beta-sheet", "from", "the", "jellyroll", "core", "structure", "to", "an", "alpha-helix", "." ]
+}, {
+  "sentence_tokens" : [ "The", "hydrophobic", "side", "chain", "of", "alanine", "likely", "reduces", "the", "space", "in", "the", "catalytic", "center", "." ]
+}, {
+  "sentence_tokens" : [ "(", "iii", ")", "Both", "BnaFLS3s", "show", "only", "partial", "overlaps", "with", "the", "\"", "SxxTxLVP", "\"-", "and", "\"", "CPQ", "and", "RPxLAL", "\"-FLS-specific", "sequence", "motifs", "(", "Figure", "4", ")", "." ]
+}, {
+  "sentence_tokens" : [ "However", ",", "these", "mismatches", "do", "not", "have", "a", "substantial", "effect", "on", "the", "overall", "secondary", "structure", "in", "these", "regions", "(", "Figures", "7E", ",", "F", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Moreover", ",", "an", "extended", "N-terminus", "is", "not", "essential", "for", "F3H", "activity", "since", "it", "is", "absent", "in", "BnaFLS3-3", "and", "BnaFLS3-4", "(", "Figures", "7D", "-", "F", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Discussion", "." ]
+}, {
+  "sentence_tokens" : [ "Phylogeny", "of", "BnaFLS", "Gene", "Family", "Members", "." ]
+}, {
+  "sentence_tokens" : [ "Although", "flavonols", "are", "of", "agronomical", ",", "ornamental", ",", "nutritional", ",", "and", "health", "importance", ",", "the", "major", "players", "of", "the", "flavonol", "biosynthesis", "in", "the", "oil", "and", "protein", "crop", "B.", "napus", "have", "not", "been", "investigated", "in", "great", "detail", "yet", "." ]
+}, {
+  "sentence_tokens" : [ "So", "far", ",", "only", "one", "FLS", "gene", "was", "identified", "via", "transient", "expression", "in", "tobacco", "(", "Vu", "et", "al", ".,", "2015", ")", "." ]
+}, {
+  "sentence_tokens" : [ "However", ",", "as", "there", "are", "several", "members", "of", "the", "BnaFLS", "gene", "family", "expressed", "in", "seeds", ",", "it", "is", "necessary", "to", "characterize", "the", "encoding", "enzymes", "to", "infer", "which", "genes", "contribute", "to", "flavonol", "biosynthesis", "in", "B.", "napus", "seeds.The", "members", "of", "the", "BnaFLS", "gene", "family", "are", "more", "closely", "related", "to", "each", "other", "than", "to", "any", "of", "the", "other", "2-ODDs", ",", "which", "is", "in", "line", "with", "the", "results", "for", "the", "AthFLS", "gene", "family", "(", "Owens", "et", "al", ".,", "2008", ")", "." ]
+}, {
+  "sentence_tokens" : [ "In", "contrast", "to", "the", "AthFLS", "gene", "family", ",", "which", "is", "located", "on", "chromosome", "5", "in", "close", "proximity", "(", "Owens", "et", "al", ".,", "2008", ")", ",", "the", "members", "of", "the", "BnaFLS", "gene", "family", "are", "distributed", "across", "seven", "chromosomes", "." ]
+}, {
+  "sentence_tokens" : [ "Considering", "the", "chromosomal", "rearrangements", "described", "for", "B.", "napus", "cultivar", "Darmor-bzh", "(", "Chalhoub", "et", "al", ".,", "2014", ")", "and", "also", "the", "chromosomal", "positions", "of", "the", "B.", "rapa", "(", "Guo", "et", "al", ".,", "2014", ")", "and", "B.", "oleracea", "(", "Parkin", "et", "al", ".,", "2014", ")", "FLS", "genes", ",", "high", "local", "synteny", "of", "the", "FLS", "loci", "to", "those", "of", "B.", "napus", "Express", "617", "was", "identified", "." ]
+}, {
+  "sentence_tokens" : [ "This", "syntenic", "relation", "allowed", "the", "assignment", "of", "6", "homeologous", "pairs", "of", "the", "B.", "napus", "FLS", "gene", "family", "." ]
+}, {
+  "sentence_tokens" : [ "The", "homeolog", "pair", "BnaFLS3-3", "and", "BnaFLS3-4", "is", "located", "on", "the", "pseudochromosome", "C02", "and", "clusters", "together", "with", "one", "additional", "unassigned", "BnaFLS3-5", "homolog", "." ]
+}, {
+  "sentence_tokens" : [ "The", "position", "of", "BnaFLS3-4", "and", "BnaFLS3-5", "on", "C02", "in", "the", "Express", "617", "assembly", "likely", "derives", "from", "a", "mis-assembly", "as", "inferred", "by", "manual", "curation", "of", "the", "locus", "and", "the", "frequent", "assignment", "of", "the", "respective", "homologs", "to", "A02", "in", "other", "long-read", "B.", "napus", "cultivar", "assemblies", "like", "Westar", "and", "Shengli", "(", "Song", "et", "al", ".,", "2020", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Moreover", ",", "the", "respective", "B.", "rapa", "homologs", "BraFLS3-4", "(", "Bra029212", ")", "and", "BraFLS3-5", "(", "Bra029211", ")", "are", "located", "on", "A02", "." ]
+}, {
+  "sentence_tokens" : [ "BraFLS3-4", "and", "BraFLS3-5", "are", "assumed", "to", "originate", "from", "duplication", "of", "the", "syntenic", "AthFLS2", "to", "AthFLS5", "tandem", "array", "." ]
+}, {
+  "sentence_tokens" : [ "This", "duplication", "is", "part", "of", "the", "whole", "genome", "duplication", "(", "WGD", ")", ",", "but", "only", "some", "genes", "of", "the", "array", "were", "retained", "in", "B.", "rapa", "(", "Guo", "et", "al", ".,", "2014", ")", "." ]
+}, {
+  "sentence_tokens" : [ "BraFLS3-5", "is", "assumed", "to", "be", "derived", "from", "a", "gene", "duplication", "event", "of", "BraFLS3-4", "(", "Guo", "et", "al", ".,", "2014", ")", ",", "which", "is", "underlined", "by", "the", "close", "proximity", "of", "the", "two", "homologs", "BnaFLS3-4", "and", "BnaFLS3-5", "(", "only", "2.9", "kbp", "apart", "in", "the", "Express", "617", "assembly", ",", "see", "Table", "1", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Moreover", ",", "BraFLS2-2", "(", "Bra038647", ")", "and", "BraFLS3-2", "(", "Bra038648", ")", "are", "assumed", "to", "have", "emerged", "by", "WGD", "events", "as", "described", "before", "(", "Guo", "et", "al", ".,", "2014", ")", "." ]
+}, {
+  "sentence_tokens" : [ "A", "similar", "originating", "mechanism", "is", "assumed", "for", "BolFLS2-1", "(", "Bo3g103270", ")", "and", "BolFLS3-1", "(", "Bo3g103260", ")", "and", "thus", "for", "their", "respective", "homologs", "BnaFLS3-1", "and", "BnaFLS2-1", "." ]
+}, {
+  "sentence_tokens" : [ "Therefore", ",", "these", "ancient", "duplication", "events", "shaped", "the", "B.", "napus", "FLS", "gene", "family.In", "A.", "thaliana", "FLS5", "encodes", "a", "full-length", "protein", ",", "which", "contains", "amino", "acid", "exchanges", "important", "for", "hydrogen", "bonding", "of", "the", "substrate", "most", "likely", "resulting", "in", "a", "non", "functional", "polypeptide", "(", "Owens", "et", "al", ".,", "2008", ";", "Preuss", "et", "al", ".,", "2009", ")", "." ]
+}, {
+  "sentence_tokens" : [ "In", "line", "with", "our", "results", ",", "no", "FLS5", "homolog", "was", "identified", "in", "B.", "rapa", "(", "Guo", "et", "al", ".,", "2014", ")", "." ]
+}, {
+  "sentence_tokens" : [ "However", ",", "we", "could", "also", "not", "detect", "FLS5", "in", "Brassiceae", ",", "Arabideae", ",", "Eutremeae", ",", "and", "Coluteocarpeae", ",", "but", "FLS5", "was", "detected", "in", "the", "Camelineae", ",", "which", "include", "A.", "thaliana", ",", "as", "well", "as", "in", "Boechereae", "." ]
+}, {
+  "sentence_tokens" : [ "Thus", ",", "we", "postulate", "that", "FLS5", "emerged", "after", "the", "divergence", "of", "the", "common", "ancestor", "of", "the", "parental", "species", "of", "B.", "napus", "(", "B.", "rapa", "and", "B.", "oleracea", ")", "and", "A.", "thaliana", "rather", "than", "that", "it", "was", "frequently", "lost", "after", "the", "WGD", "events", "of", "the", "tandem", "array", "as", "postulated", "by", "Guo", "et", "al", ".,", "2014.FLS6", "was", "characterized", "as", "a", "pseudogene", "in", "A.", "thaliana", "(", "Owens", "et", "al", ".,", "2008", ";", "Stracke", "et", "al", ".,", "2009", ")", "and", "no", "FLS6", "homolog", "was", "identified", "in", "B.", "rapa", "(", "Guo", "et", "al", ".,", "2014", ")", "." ]
+}, {
+  "sentence_tokens" : [ "These", "findings", "are", "in", "line", "with", "our", "results", "showing", "that", "FLS6", "was", "lost", "very", "recently", "in", "B.", "rapa", "and", "B.", "oleracea", "and", "consequently", "is", "not", "present", "in", "B.", "napus", ",", "since", "FLS6", "is", "still", "present", "in", "Raphanus", "sativus", "." ]
+}, {
+  "sentence_tokens" : [ "As", "FLS6", "was", "identified", "as", "pseudogene", "and", "FLS5", "is", "known", "to", "encode", "a", "non", "functional", "protein", "in", "A.", "thaliana", "(", "Owens", "et", "al", ".,", "2008", ";", "Preuss", "et", "al", ".,", "2009", ";", "Stracke", "et", "al", ".,", "2009", ")", ",", "the", "parental", "species", "B.", "oleracea", "and", "B.", "rapa", "have", "already", "eliminated", "these", "\"", "unnecessary", "\"", "genes.However", ",", "some", "BnaFLS", "genes", "are", "retained", "as", "they", "still", "encode", "functional", "proteins", "like", "BnaFLS3-3", "and", "BnaFLS3-4", ",", "which", "encode", "for", "proteins", "with", "F3H", "activity", "." ]
+}, {
+  "sentence_tokens" : [ "Importantly", ",", "both", "BnaFLS3s", "show", "a", "higher", "sequence", "identity", "with", "functional", "FLSs", "compared", "to", "F3H", "homologs", ",", "although", "exhibiting", "only", "F3H", "activity", "." ]
+}, {
+  "sentence_tokens" : [ "This", "fact", "provides", "clear", "evidence", "that", "a", "classification", "solely", "based", "on", "amino", "acid", "sequences", "is", "not", "sufficient", "to", "infer", "functionalities", "of", "FLS", "family", "members", "and", "very", "likely", "2-ODDs", "in", "general", "." ]
+}, {
+  "sentence_tokens" : [ "The", "BnaFLS", "Gene", "Family", "Contains", "Two", "Bifunctional", "Flavonol", "Synthases", "." ]
+}, {
+  "sentence_tokens" : [ "Bifunctionality", "has", "so", "far", "not", "been", "reported", "for", "a", "FLS", "from", "B.", "napus", "." ]
+}, {
+  "sentence_tokens" : [ "By", "using", "two", "independent", "methods", ",", "we", "demonstrated", "bifunctionality", "of", "the", "two", "BnaFLS1", "homeologs", ",", "which", "exhibit", "F3H", "and", "FLS", "activity", "." ]
+}, {
+  "sentence_tokens" : [ "Thus", ",", "BnaFLS1-1", "and", "BnaFLS1-2", "are", "responsible", "for", "flavonol", "production", "in", "planta", "." ]
+}, {
+  "sentence_tokens" : [ "We", "hypothesize", "that", "the", "respective", "orthologs", "of", "B.", "oleracea", "(", "Bo9g174290", ")", "and", "B.", "rapa", "(", "Bra009358", ")", "are", "bifunctional", "enzymes", "as", "well", "(", "Supplementary", "Table", "6", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Moreover", ",", "two", "additional", "members", "of", "the", "BnaFLS", "gene", "family", "have", "been", "functionally", "characterized", "." ]
+}, {
+  "sentence_tokens" : [ "Interestingly", ",", "BnaFLS3-3", "and", "BnaFLS3-4", "revealed", "only", "F3H", "activity", ",", "while", "no", "FLS", "activity", "was", "detected", "." ]
+}, {
+  "sentence_tokens" : [ "By", "incorporating", "sequence", "and", "structural", "analyses", "of", "3D", "secondary", "structure", "models", "of", "BnaFLS1s", "vs.", "BnaFLS3s", ",", "we", "proposed", "a", "set", "of", "evolutionary", "events", "underlying", "the", "mechanisms", "of", "bifunctionality", "." ]
+}, {
+  "sentence_tokens" : [ "Both", "BnaFLS3s", "lack", "several", "amino", "acids", "at", "the", "beginning", "of", "the", "N-terminus", ",", "which", "could", "cause", "the", "loss", "of", "FLS", "activity", "as", "it", "harbors", "the", "\"", "PxxxIRxxxEQP", "\"", "motif", "." ]
+}, {
+  "sentence_tokens" : [ "This", "motif", "was", "previously", "proposed", "to", "be", "important", "for", "FLS", "activity", "as", "it", "distinguishes", "FLS", "from", "2-oxoglutarate-/FeII-dependent", "dioxygenases", "with", "other", "substrate", "specificities", "(", "Owens", "et", "al", ".,", "2008", ";", "Stracke", "et", "al", ".,", "2009", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Additional", "support", "for", "the", "relevance", "of", "this", "N-terminal", "region", "is", "provided", "by", "an", "AthFLS1", "protein", "lacking", "the", "first", "21", "amino", "acids", "which", "showed", "no", "FLS", "activity", "(", "Pelletier", "et", "al", ".,", "1999", ";", "Owens", "et", "al", ".,", "2008", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Moreover", ",", "amino", "acid", "exchanges", "in", "the", "\"", "CPQ", "and", "RPxLAL", "\"-", "and", "\"", "SxxTxLVP", "\"-motif", "in", "both", "BnaFLS3s", "possibly", "impact", "FLS", "activity", "." ]
+}, {
+  "sentence_tokens" : [ "In", "addition", ",", "both", "BnaFLS3s", "carry", "a", "G235A", "(", "G261", "in", "AthFLS1", ")", "amino", "acid", "exchange", "in", "comparison", "to", "BnaFLS1s", ",", "which", "might", "be", "relevant", "for", "bifunctionality", "as", "this", "exchange", "reduced", "the", "activity", "of", "a", "mutated", "Citrus", "unshiu", "FLS", "by", "90", "%", "(", "Wellmann", "et", "al", ".,", "2002", ")", "." ]
+}, {
+  "sentence_tokens" : [ "This", "glycine", "is", "conserved", "across", "2-ODDs", "and", "is", "suggested", "to", "play", "a", "role", "in", "proper", "folding", "(", "Wellmann", "et", "al", ".,", "2002", ")", "." ]
+}, {
+  "sentence_tokens" : [ "In", "accordance", ",", "we", "identified", "the", "A235", "of", "BnaFLS3s", "and", "G261", "of", "BnaFLS1", "located", "between", "the", "transition", "of", "a", "beta-sheet", "from", "the", "jellyroll", "core", "structure", "to", "an", "alpha-helix", ",", "thereby", "the", "hydrophobic", "side", "chain", "of", "the", "alanine", "might", "reduce", "the", "space", "in", "the", "catalytic", "center", "." ]
+}, {
+  "sentence_tokens" : [ "We", "propose", "that", "FLS", "bifunctionality", "is", "likely", "influenced", "by", "a", "combination", "of", "the", "identified", "motifs", "and", "residues", "rather", "than", "a", "single", "causative", "change", "as", "observed", "before", "for", "other", "flavonoid", "enzymes", "(", "Gebhardt", "et", "al", ".,", "2007", ";", "Seitz", "et", "al", ".,", "2007", ")", "." ]
+}, {
+  "sentence_tokens" : [ "The", "impact", "of", "each", "motif", "or", "amino", "acid", "on", "FLS", "bifunctionality", "needs", "further", "investigations", "that", "go", "beyond", "this", "study", "." ]
+}, {
+  "sentence_tokens" : [ "As", "these", "sequence", "differences", "of", "BnaFLS3s", "do", "not", "abolish", "F3H", "activity", ",", "we", "uncovered", "that", "a", "truncated", "N-terminus", "and", "G261", "are", "not", "essential", "for", "F3H", "activity", "." ]
+}, {
+  "sentence_tokens" : [ "This", "is", "of", "importance", "as", "G261", "was", "reported", "to", "be", "important", "for", "F3H", "activity", "(", "Britsch", "et", "al", ".,", "1993", ")", "while", "it", "may", "only", "play", "a", "minor", "role", "in", "conservation", "of", "F3H", "activity.In", "addition", "to", "the", "FLS", "activity", "of", "BnaFLS1s", ",", "the", "2-ODD", "member", "ANS", "might", "be", "able", "to", "contribute", "to", "flavonol", "production", ",", "as", "AthANS", "exhibit", "FLS", "and", "F3H", "side", "activities", "in", "vitro", "(", "Turnbull", "et", "al", ".,", "2004", ")", "." ]
+}, {
+  "sentence_tokens" : [ "In", "planta", ",", "FLS", "is", "the", "major", "enzyme", "in", "flavonol", "production", "as", "AthANS", "was", "not", "able", "to", "fully", "substitute", "AthFLS1", "in", "vivo", "which", "is", "visible", "in", "the", "flavonol", "deficient", "fls1-2", "mutant", "(", "Owens", "et", "al", ".,", "2008", ";", "Stracke", "et", "al", ".,", "2009", ")", "." ]
+}, {
+  "sentence_tokens" : [ "BnaFLS2-1", "is", "most", "likely", "a", "pseudogene", "." ]
+}, {
+  "sentence_tokens" : [ "Although", "BnaFLS2-1", "is", "still", "marginally", "expressed", "as", "shown", "by", "RNA-Seq", "data", ",", "it", "carries", "amino", "acid", "exchanges", "within", "3/5", "substrate", "binding", "residues", "in", "addition", "to", "a", "truncated", "N-terminus", ",", "which", "render", "the", "protein", "non", "functional", "." ]
+}, {
+  "sentence_tokens" : [ "In", "addition", ",", "an", "alternative", "transcript", "of", "BnaFLS2-1", "was", "discovered", "(", "Supplementary", "Figure", "5", ")", "that", "leads", "to", "a", "frameshift", "and", "thus", "likely", "encodes", "a", "non", "functional", "protein", "as", "well", "." ]
+}, {
+  "sentence_tokens" : [ "In", "A.", "thaliana", ",", "a", "heterologous", "expressed", "mutated", "FLS", "carrying", "one", "of", "the", "identified", "amino", "acid", "exchanges", ",", "namely", "K202R", "(", "K173R", "in", "BnaFLS2-1", ")", "is", "described", "to", "possess", "only", "12", "%", "of", "the", "wild", "type", "FLS", "activity", "(", "Chua", "et", "al", ".,", "2008", ")", "." ]
+}, {
+  "sentence_tokens" : [ "In", "accordance", ",", "AthFLS2", "encodes", "a", "most", "likely", "non", "functional", "protein", ",", "which", "also", "harbors", "a", "truncated", "N-terminus", "(", "Owens", "et", "al", ".,", "2008", ")", "." ]
+}, {
+  "sentence_tokens" : [ "We", "assume", "that", "BnaFLS2-1", "might", "be", "derived", "from", "a", "gene", "duplication", "event", ",", "losing", "its", "original", "function", "over", "time", "due", "to", "a", "pseudogenization", "process", "similar", "to", "that", "proposed", "for", "the", "AthFLS", "gene", "family", "members", "(", "Preuss", "et", "al", ".,", "2009", ";", "Stracke", "et", "al", ".,", "2009", ")", "." ]
+}, {
+  "sentence_tokens" : [ "The", "rather", "low", "expression", "of", "BnaFLS2-1", "across", "various", "organs", "supports", "this", "hypothesis", "." ]
+}, {
+  "sentence_tokens" : [ "BnaFLS1s", "Are", "Major", "Players", "in", "Flavonol", "Biosynthesis", "in", "Brassica", "napus", "Seeds", "." ]
+}, {
+  "sentence_tokens" : [ "The", "spatio-temporal", "patterns", "of", "flavonol", "accumulation", "in", "B.", "napus", "are", "characterized", "by", "the", "activity", "of", "multiple", "BnaFLS", "genes", "." ]
+}, {
+  "sentence_tokens" : [ "Both", "BnaFLS3s", "are", "expressed", "in", "early", "seed", "development", "while", "BnaFLS1s", "are", "expressed", "during", "late", "seed", "development", "(", "Table", "2", ")", "." ]
+}, {
+  "sentence_tokens" : [ "The", "similar", "expression", "patterns", "of", "both", "BnaFLS1s", "are", "expected", "because", "they", "are", "homeologs", "." ]
+}, {
+  "sentence_tokens" : [ "Thus", ",", "their", "expression", "patterns", "in", "the", "parental", "species", "B.", "rapa", "and", "B.", "oleraceae", "were", "likely", "to", "be", "very", "similar", "as", "they", "fulfill", "similar", "functions", "." ]
+}, {
+  "sentence_tokens" : [ "In", "line", "with", "these", "results", ",", "BnaFLS1-1", "and", "BnaFLS1-2", "share", "co-expressed", "genes", "of", "the", "flavonoid", "and", "phenylpropanoid", "pathway", "." ]
+}, {
+  "sentence_tokens" : [ "Both", "BnaFLS1s", "are", "co-expressed", "with", "MYB111", ",", "a", "regulator", "of", "flavonol", "biosynthesis", "(", "Stracke", "et", "al", ".,", "2007", ")", "and", "contain", "SG7", "MRE", "in", "their", "putative", "promoter", "regions", "." ]
+}, {
+  "sentence_tokens" : [ "Additionally", ",", "genes", "important", "for", "flavonoid", "transport", "into", "the", "vacuole", "and", "anthocyanidin", "and", "flavonol", "glycosylation", "like", "GSTF12", "(", "TT19", ")", "and", "UGT84A2", "(", "Kitamura", "et", "al", ".,", "2004", ";", "Yonekura-Sakakibara", "et", "al", ".,", "2012", ")", "were", "identified", "to", "be", "co-expressed", "with", "BnaFLS1s", "." ]
+}, {
+  "sentence_tokens" : [ "These", "results", "further", "support", "the", "role", "of", "BnaFLS1-1", "and", "BnaFLS1-2", "as", "major", "players", "of", "flavonol", "biosynthesis", "in", "B.", "napus", "seeds", "." ]
+}, {
+  "sentence_tokens" : [ "Moreover", ",", "transcriptomic", "and", "functional", "analysis", "of", "BnaFLS1s", "indicate", "gene", "redundancy.Both", "BnaFLS1s", "were", "mainly", "expressed", "in", "reproductive", "organs", "as", "observed", "for", "AthFLS1", "(", "Owens", "et", "al", ".,", "2008", ")", "." ]
+}, {
+  "sentence_tokens" : [ "BnaFLS3-4", "was", "identified", "to", "be", "co-expressed", "with", "the", "well-known", "transcription", "factors", "MYB61", ",", "MYB123", ",", "and", "MYB5", "which", "play", "a", "role", "in", "flavonoid", "biosynthesis", "and", "seed", "coat", "development", "in", "A.", "thaliana", "(", "Penfield", "et", "al", ".,", "2001", ";", "Li", "et", "al", ".,", "2009", ";", "Xu", "et", "al", ".,", "2014", ")", "." ]
+}, {
+  "sentence_tokens" : [ "In", "line", "with", "metabolomic", "studies", "showing", "that", "phenolic", "and", "flavonoid", "seed", "content", "maximized", "35", "days", "after", "flowering", "(", "DAF", ")", "(", "Wang", "et", "al", ".,", "2018", ")", ",", "the", "expression", "of", "BnaFLS1s", "was", "higher", "at", "35", "DAF", "compared", "to", "23", "DAF", "." ]
+}, {
+  "sentence_tokens" : [ "In", "accordance", ",", "most", "kaempferol", "and", "quercetin", "derivates", "reach", "their", "abundance", "peak", "at", "35", "DAF", "(", "Wang", "et", "al", ".,", "2018", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Thus", "the", "expression", "pattern", "of", "BnaFLS1s", "fit", "well", "with", "the", "flavonol", "accumulation", "pattern", "of", "developing", "seeds", ",", "where", "flavonols", "contribute", "to", "seed", "quality", "(", "Wang", "et", "al", ".,", "2018", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Finally", ",", "the", "expression", "of", "BnaFLSs", "family", "members", "is", "not", "restricted", "to", "seeds", "." ]
+}, {
+  "sentence_tokens" : [ "Some", "BnaFLSs", "were", "identified", "to", "be", "expressed", "in", "roots", "including", "BnaFLS3-3", "and", "BnaFLS3-4", "indicating", "a", "role", "of", "those", "BnaFLS", "family", "members", "in", "flavonoid", "biosynthesis", "in", "roots", "." ]
+}, {
+  "sentence_tokens" : [ "Future", "Perspectives", "in", "Engineering", "Flavonol", "Content", "in", "Brassica", "napus", "." ]
+}, {
+  "sentence_tokens" : [ "Engineering", "and", "breeding", "of", "flavonol", "content", "is", "of", "agronomical", ",", "economical", ",", "and", "ornamental", "importance", "(", "Takahashi", "et", "al", ".,", "2007", ";", "Cook", "et", "al", ".,", "2013", ";", "Yin", "et", "al", ".,", "2019", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Flavonol", "content", "in", "petals", "influences", "pollinator", "attraction", "and", "drives", "microevolution", "of", "pollinators", "(", "Sheehan", "et", "al", ".,", "2015", ";", "Grotewold", ",", "2016", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Moreover", ",", "flavonols", "possess", "ROS", "scavenging", "activities", "and", "provide", "protection", "against", "UV-B", "radiation", "(", "Harborne", "and", "Williams", ",", "2000", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Besides", "the", "potential", "of", "engineering", "flavonol", "biosynthesis", ",", "anthocyanin", "and", "proanthocyanindin", "production", "can", "be", "engineered", "as", "FLS", "and", "DFR", "compete", "for", "substrates", "(", "Figure", "8)", ",", "thereby", "influencing", "important", "agronomical", "traits", "e.g", ".,", "seed", "color", "(", "Luo", "et", "al", ".,", "2016", ")", "." ]
+}, {
+  "sentence_tokens" : [ "This", "study", "identified", "two", "bifunctional", "BnaFLS1s", "which", "are", "highly", "expressed", "in", "seeds", "and", "can", "thus", "be", "harnessed", "to", "engineer", "the", "metabolic", "flux", "of", "seed", "flavonol", "biosynthesis", "in", "the", "future", "(", "Figure", "8)", "." ]
+}, {
+  "sentence_tokens" : [ "For", "example", ",", "the", "main", "bitter", "off-taste", "component", "in", "rapeseed", "protein", "isolates", "is", "kaempferol", "3-O-(", "2", "''", "'-O-Sinapoyl-beta-sophoroside", ")", "(", "Hald", "et", "al", ".,", "2019", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Thus", ",", "the", "results", "of", "this", "study", "provide", "the", "basis", "for", "breeding", "low-phenolics", "lines", "with", "focus", "on", "the", "reduction", "of", "e.g", ".,", "kaempferols", "in", "seeds", ",", "thereby", "supporting", "the", "use", "of", "rapeseed", "protein", "in", "human", "consumption", "." ]
+}, {
+  "sentence_tokens" : [ "Data", "Availability", "Statement", "." ]
+}, {
+  "sentence_tokens" : [ "The", "original", "contributions", "presented", "in", "the", "study", "are", "publicly", "available", "." ]
+}, {
+  "sentence_tokens" : [ "The", "RNA-Seq", "data", "sets", "generated", "for", "this", "study", "can", "be", "found", "in", "the", "ENA", "and", "NCBI", "BioProject", "PRJEB45399", "." ]
+}, {
+  "sentence_tokens" : [ "Author", "Contributions", "." ]
+}, {
+  "sentence_tokens" : [ "HS", ",", "DH", ",", "and", "BW", "conceived", "and", "designed", "research", "." ]
+}, {
+  "sentence_tokens" : [ "HS", ",", "MS", ",", "TB", ",", "MB", ",", "and", "PV", "investigated", "and", "conducted", "experiments", "." ]
+}, {
+  "sentence_tokens" : [ "HS", "performed", "bioinformatic", "analyses", "and", "data", "curation", ",", "and", "wrote", "the", "initial", "draft", "manuscript", "." ]
+}, {
+  "sentence_tokens" : [ "HS", ",", "BW", ",", "DH", ",", "MB", ",", "and", "TB", "revised", "the", "manuscript", "." ]
+}, {
+  "sentence_tokens" : [ "All", "authors", "contributed", "to", "the", "article", "and", "approved", "the", "submitted", "version", "." ]
+}, {
+  "sentence_tokens" : [ "Conflict", "of", "Interest", "." ]
+}, {
+  "sentence_tokens" : [ "The", "authors", "declare", "that", "the", "research", "was", "conducted", "in", "the", "absence", "of", "any", "commercial", "or", "financial", "relationships", "that", "could", "be", "construed", "as", "a", "potential", "conflict", "of", "interest", "." ]
+}, {
+  "sentence_tokens" : [ "Publisher", "'s", "Note", "." ]
+}, {
+  "sentence_tokens" : [ "All", "claims", "expressed", "in", "this", "article", "are", "solely", "those", "of", "the", "authors", "and", "do", "not", "necessarily", "represent", "those", "of", "their", "affiliated", "organizations", ",", "or", "those", "of", "the", "publisher", ",", "the", "editors", "and", "the", "reviewers", "." ]
+}, {
+  "sentence_tokens" : [ "Any", "product", "that", "may", "be", "evaluated", "in", "this", "article", ",", "or", "claim", "that", "may", "be", "made", "by", "its", "manufacturer", ",", "is", "not", "guaranteed", "or", "endorsed", "by", "the", "publisher", "." ]
+} ]

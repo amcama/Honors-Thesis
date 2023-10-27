@@ -1,0 +1,881 @@
+[ {
+  "sentence_tokens" : [ "PP2A", "is", "required", "for", "rapamycin", "response", ",", "directly", "supporting", "our", "prediction", "that", "RRD1", "mediates", "rapamycin", "response", "variation", "among", "the", "yeast", "segregants", "." ],
+  "event_indices" : [ 12, 13, 14, 15 ],
+  "type" : "Positive_activation",
+  "polarity" : true,
+  "controller_indices" : [ 12, 13 ],
+  "controlled_indices" : [ 14, 15 ],
+  "trigger_indices" : [ 13, 14 ],
+  "rule_name" : "Positive_activation_syntax_1_verb",
+  "rule" : null
+}, {
+  "sentence_tokens" : [ "RRD1", "is", "an", "activator", "of", "PP2A", ",", "a", "gene", "involved", "in", "G1", "phase", "progression", "." ],
+  "event_indices" : [ 0, 1, 2, 3, 4, 5, 6 ],
+  "type" : "Positive_activation",
+  "polarity" : true,
+  "controller_indices" : [ 0, 1 ],
+  "controlled_indices" : [ 5, 6 ],
+  "trigger_indices" : [ 1, 2, 3, 4 ],
+  "rule_name" : "Positive_activation_copula_1",
+  "rule" : null
+}, {
+  "sentence_tokens" : [ "PP2A", "is", "required", "for", "rapamycin", "response", ",", "directly", "supporting", "our", "prediction", "that", "RRD1", "mediates", "rapamycin", "response", "variation", "among", "the", "yeast", "segregants", "." ],
+  "event_indices" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 ],
+  "type" : "Positive_activation",
+  "polarity" : true,
+  "controller_indices" : [ 0, 1 ],
+  "controlled_indices" : [ 14, 15 ],
+  "trigger_indices" : [ 8, 9 ],
+  "rule_name" : "Positive_activation_syntax_1_verb",
+  "rule" : null
+}, {
+  "sentence_tokens" : [ "Rapamycin", "induces", "insulin", "resistance", "via", "mTORC2", ",", "which", "regulates", "de", "novo", "ceramide", "synthesis", "." ],
+  "event_indices" : [ 0, 1, 2, 3, 4 ],
+  "type" : "Positive_activation",
+  "polarity" : true,
+  "controller_indices" : [ 0, 1 ],
+  "controlled_indices" : [ 2, 3, 4 ],
+  "trigger_indices" : [ 1, 2 ],
+  "rule_name" : "Positive_activation_token_1_verb",
+  "rule" : null
+}, {
+  "sentence_tokens" : [ "Temporal", "genetic", "association", "and", "temporal", "genetic", "causality", "methods", "for", "dissecting", "complex", "networks", "." ]
+}, {
+  "sentence_tokens" : [ "A", "large", "amount", "of", "panomic", "data", "has", "been", "generated", "in", "populations", "for", "understanding", "causal", "relationships", "in", "complex", "biological", "systems", "." ]
+}, {
+  "sentence_tokens" : [ "Both", "genetic", "and", "temporal", "models", "can", "be", "used", "to", "establish", "causal", "relationships", "among", "molecular", ",", "cellular", ",", "or", "phenotypical", "traits", ",", "but", "with", "limitations", "." ]
+}, {
+  "sentence_tokens" : [ "To", "fully", "utilize", "high-dimension", "temporal", "and", "genetic", "data", ",", "we", "develop", "a", "multivariate", "polynomial", "temporal", "genetic", "association", "(", "MPTGA", ")", "approach", "for", "detecting", "temporal", "genetic", "loci", "(", "teQTLs", ")", "of", "quantitative", "traits", "monitored", "over", "time", "in", "a", "population", "and", "a", "temporal", "genetic", "causality", "test", "(", "TGCT", ")", "for", "inferring", "causal", "relationships", "between", "traits", "linked", "to", "the", "locus", "." ]
+}, {
+  "sentence_tokens" : [ "We", "apply", "MPTGA", "and", "TGCT", "to", "simulated", "data", "sets", "and", "a", "yeast", "F2", "population", "in", "response", "to", "rapamycin", ",", "and", "demonstrate", "increased", "power", "to", "detect", "teQTLs", "." ]
+}, {
+  "sentence_tokens" : [ "We", "identify", "a", "teQTL", "hotspot", "locus", "interacting", "with", "rapamycin", "treatment", ",", "infer", "putative", "causal", "regulators", "of", "the", "teQTL", "hotspot", ",", "and", "experimentally", "validate", "RRD1", "as", "the", "causal", "regulator", "for", "this", "teQTL", "hotspot", "." ]
+}, {
+  "sentence_tokens" : [ "Introduction", "." ]
+}, {
+  "sentence_tokens" : [ "Among", "the", "top", "objectives", "in", "modeling", "living", "systems", "is", "the", "construction", "of", "mathematical", "models", "capable", "of", "predicting", "future", "states", "of", "a", "system", "given", "a", "set", "of", "initial", "starting", "conditions", "." ]
+}, {
+  "sentence_tokens" : [ "Whether", "predicting", "the", "risk", "of", "a", "disease", "at", "any", "point", "along", "one", "'", "s", "life", "course", "given", "genetic", ",", "environmental", ",", "and", "clinical", "data", ",", "or", "predicting", "the", "molecular", "response", "to", "perturbations", "on", "a", "given", "protein", "or", "proteins", "and", "the", "consequences", "of", "that", "molecular", "response", "at", "the", "cellular", "and", "ultimately", "physiological", "levels", ",", "identifying", "the", "complex", "web", "of", "causal", "relationships", "among", "molecular", "features", "and", "between", "molecular", "and", "higher-order", "features", "is", "central", "to", "achieving", "an", "accurate", "understanding", "of", "complex", "biological", "systems", "." ]
+}, {
+  "sentence_tokens" : [ "Whereas", "descriptive", "models", "may", "achieve", "a", "high", "degree", "of", "accuracy", "in", "classifying", "individuals", "based", "on", "any", "number", "of", "features", "(", "e.g", ".,", "distinguishing", "poor", "from", "good", "prognosis", "in", "breast", "cancer", "based", "upon", "tumor", "gene", "expression", "data", ")", ",", "predictive", "models", "seek", "to", "represent", "causal", "relationships", "between", "variables", "of", "interest", "and", "as", "a", "result", "reflect", "information", "flow", "through", "the", "system", ",", "thus", "enabling", "the", "identification", "of", "key", "modulators", "of", "a", "given", "biological", "process", ",", "key", "points", "of", "therapeutic", "intervention", ",", "or", "other", "interesting", "aspects", "of", "system", "behavior", "that", "can", "aid", "in", "our", "understanding", "of", "it", "." ]
+}, {
+  "sentence_tokens" : [ "Building", "highly", "accurate", "predictive", "models", "depends", "on", "establishing", "causal", "relationships", "among", "the", "variables", "of", "interest", "." ]
+}, {
+  "sentence_tokens" : [ "Elucidating", "physical", "interactions", "have", "been", "the", "primary", "means", "by", "which", "biologists", "establish", "causal", "relationships", "." ]
+}, {
+  "sentence_tokens" : [ "For", "example", ",", "a", "transcription", "factor", "binding", "to", "a", "stretch", "of", "DNA", "and", "thus", "facilitating", "the", "transcription", "of", "a", "gene", "that", "in", "turn", "activates", "a", "given", "biological", "pathway", "." ]
+}, {
+  "sentence_tokens" : [ "Another", "type", "of", "causal", "relationships", "inferred", "through", "statistical", "causality", "tests", "has", "achieved", "widespread", "utility", "." ]
+}, {
+  "sentence_tokens" : [ "This", "type", "of", "causal", "relationships", "is", "considered", "as", "a", "weak", "form", "of", "causality", "and", "experimental", "follow-ups", "are", "generally", "needed", "to", "validate", "them", "." ]
+}, {
+  "sentence_tokens" : [ "However", ",", "this", "weak", "causality", "enables", "us", "to", "orient", "the", "vast", "sea", "of", "correlations", "observed", "among", "hundreds", "of", "thousands", "of", "molecular", "phenotypes", "that", "can", "be", "simultaneously", "assayed", ",", "according", "to", "the", "direction", "of", "information", "flow.Methods", "such", "as", "Bayesian", "network", "reconstruction", "algorithms", "have", "been", "devised", "to", "infer", "causal", "relationships", "among", "correlated", "traits", "." ]
+}, {
+  "sentence_tokens" : [ "However", ",", "such", "methods", "based", "on", "correlation", "data", "alone", "are", "well", "known", "to", "be", "generally", "unable", "to", "uniquely", "resolve", "the", "causal", "relationships", "among", "traits", ",", "given", "the", "different", "types", "of", "possible", "relationships", "between", "traits", "may", "not", "be", "statistically", "distinguishable", "from", "one", "another", "(", "e.g", ".,", "see", "Fig.", "1a", ")", "." ]
+}, {
+  "sentence_tokens" : [ "To", "break", "this", "statistical", "symmetry", "so", "that", "causal", "relationships", "can", "be", "more", "precisely", "resolved", ",", "a", "systematic", "source", "of", "genetic", "and/or", "environmental", "perturbations", "must", "be", "introduced", "." ]
+}, {
+  "sentence_tokens" : [ "Genetics", "based", "causal", "(", "GC", ")", "inference", "anchors", "on", "the", "genetic", "locus", ",", "information", "can", "only", "flow", "from", "the", "genetic", "locus", ",", "so", "that", "other", "Markov", "equivalent", "structures", "are", "not", "biologically", "possible", "(", "Fig.", "1b", ")", "." ]
+}, {
+  "sentence_tokens" : [ "GC", "have", "demonstrated", "widespread", "utility", "in", "biology", "over", "the", "last", "decade", "." ]
+}, {
+  "sentence_tokens" : [ "Panomic", "quantitative", "trait", "loci", "relating", "DNA", "variants", "to", "panomic", "data", "and", "higher-order", "phenotypes", "such", "as", "disease", "state", "have", "been", "appropriately", "leveraged", "to", "infer", "causal", "relationships", "between", "molecular", "data", "and", "higher-order", "phenotypes", "." ]
+}, {
+  "sentence_tokens" : [ "The", "successes", "of", "GC", "inference", "notwithstanding", ",", "these", "approaches", "are", "not", "without", "their", "weaknesses", "." ]
+}, {
+  "sentence_tokens" : [ "For", "example", "(", "Fig.", "1c", ")", ",", "if", "two", "traits", "are", "related", "via", "a", "negative", "feedback", "loop", ",", "the", "sign", "of", "their", "correlation", "and", "the", "direction", "of", "the", "causal", "relationship", "inferred", "from", "a", "GC", "approach", "would", "be", "determined", "by", "the", "average", "strength", "of", "the", "genetic", "perturbations", "on", "each", "trait", "in", "the", "population", "(", "the", "causal", "relationship", "would", "flow", "in", "the", "direction", "of", "the", "dominant", "genetic", "perturbation", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Similarly", ",", "a", "broad", "range", "of", "data", ",", "from", "imaging", "data", "to", "panomic", "and", "clinical", "data", ",", "have", "been", "scored", "longitudinally", "in", "populations", "." ]
+}, {
+  "sentence_tokens" : [ "Time-series", "based", "causal", "(", "TSC", ")", "inference", "such", "as", "dynamic", "Bayesian", "networks", "or", "Granger", "causality", "has", "been", "developed", "to", "infer", "causal", "relationships", "from", "such", "data", "(", "Fig.", "1d", ")", "." ]
+}, {
+  "sentence_tokens" : [ "However", ",", "TSC", "inference", "often", "cannot", "resolve", "even", "simple", "causal", "relationships", "." ]
+}, {
+  "sentence_tokens" : [ "For", "example", ",", "if", "a", "trait", "(", "gray", "node", "in", "Fig.", "1e", ")", "causes", "changes", "in", "two", "other", "traits", "(", "green", "and", "blue", "nodes", "in", "Fig.", "1e", ")", ",", "but", "a", "longer", "lag", "for", "the", "impact", "of", "the", "gray", "node", "on", "the", "blue", "node", "is", "observed", "compared", "with", "the", "green", "node", ",", "then", "the", "time-series", "signal", "for", "the", "green", "node", "may", "well", "predict", "the", "behavior", "of", "the", "signal", "from", "the", "blue", "node", ",", "leading", "to", "a", "false", "causal", "inference", "(", "Fig.", "1e", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Both", "genetic", "and", "temporal", "data", "are", "needed", "to", "solve", "these", "problems.To", "date", ",", "inferring", "causality", "by", "jointly", "considering", "temporal", "and", "genetic", "dimensions", "in", "a", "formal", "modeling", "framework", "has", "not", "been", "systematically", "explored", "in", "high-dimension", "omics", "data", "." ]
+}, {
+  "sentence_tokens" : [ "Integrating", "these", "two", "dimensions", ",", "which", "have", "a", "fundamental", "role", "in", "enabling", "causal", "inference", ",", "has", "the", "potential", "to", "enhance", "the", "power", "to", "resolve", "causal", "relationships", "and", "to", "provide", "a", "more", "accurate", "view", "of", "regulatory", "networks", "in", "biological", "systems", "." ]
+}, {
+  "sentence_tokens" : [ "Previous", "method", "proposed", "to", "model", "growth", "related", "temporal", "traits", "using", "a", "multivariate", "normal", "distribution", "and", "assumed", "that", "the", "mean", "vectors", "followed", "a", "logistic", "growth", "curve", "." ]
+}, {
+  "sentence_tokens" : [ "In", "the", "context", "of", "temporal", "gene", "expression", "traits", ",", "the", "trajectories", "are", "usually", "much", "more", "complex", "and", "thus", "require", "more", "flexible", "fitting", "options.Here", "we", "present", "a", "multivariate", "polynomial", "temporal", "genetic", "association", "(", "MPTGA", ")", "model", "that", "formally", "integrates", "genetic", "and", "temporal", "information", "to", "identify", "genetic", "association", "and", "a", "temporal", "genetic", "causality", "test", "(", "TGCT", ")", "to", "infer", "causal", "relationships", "among", "quantitative", "traits", "." ]
+}, {
+  "sentence_tokens" : [ "To", "highlight", "the", "utility", "of", "this", "type", "of", "integrated", "tests", ",", "we", "apply", "it", "to", "transcriptomic", "data", "generated", "in", "a", "segregating", "population", "of", "yeast", "that", "were", "profiled", "at", "six", "different", "time", "points", "in", "response", "to", "treatment", "with", "the", "drug", "rapamycin", "." ]
+}, {
+  "sentence_tokens" : [ "From", "these", "data", ",", "we", "demonstrate", "that", "the", "MPTGA", "test", "identifies", "significantly", "more", "genetic", "associations", "than", "the", "sum", "of", "the", "relationships", "identified", "via", "a", "genetic", "association", "test", "independently", "applied", "at", "different", "time", "points", "." ]
+}, {
+  "sentence_tokens" : [ "In", "addition", ",", "we", "demonstrate", "that", "this", "approach", "has", "increased", "power", "to", "detect", "the", "causal", "regulators", "of", "expression", "quantitative", "trait", "loci", "(", "eQTL", ")", "hotspots", "that", "have", "been", "previously", "defined", "in", "this", "population", ",", "including", "the", "identification", "of", "regulators", "that", "had", "previously", "evaded", "direct", "detection", "." ]
+}, {
+  "sentence_tokens" : [ "Finally", ",", "we", "identify", "and", "experimentally", "validate", "new", "causal", "regulators", "for", "temporal", "eQTL", "(", "teQTL", ")", "hotspots", "in", "this", "yeast", "population", "that", "explain", "the", "gene-by-drug", "interactions", "identified", "in", "our", "experiment", "." ]
+}, {
+  "sentence_tokens" : [ "Results", "." ]
+}, {
+  "sentence_tokens" : [ "Overview", "of", "temporal", "genetic", "association", "and", "causality", "tests", "." ]
+}, {
+  "sentence_tokens" : [ "As", "living", "systems", "are", "dynamic", ",", "constantly", "changing", "over", "time", "to", "adjust", "to", "different", "states", "and", "environmental", "conditions", ",", "the", "extent", "to", "which", "different", "genetic", "loci", "will", "impact", "a", "given", "trait", "may", "vary", "over", "time", "." ]
+}, {
+  "sentence_tokens" : [ "There", "are", "multiple", "ways", "to", "model", "the", "behavior", "of", "a", "trait", "over", "time", "with", "respect", "to", "a", "given", "genetic", "locus", "." ]
+}, {
+  "sentence_tokens" : [ "A", "simple", "approach", "is", "to", "perform", "eQTL", "analysis", "at", "each", "time", "point", "independently", ",", "then", "combine", "the", "results", "from", "analysis", "of", "all", "time", "points", "(", "referred", "as", "the", "union", "method", ")", "or", "perform", "meta-analysis", "based", "on", "Fisher", "'", "s", "method", "(", "referred", "as", "the", "Fisher", "'", "s", "method", ")", "." ]
+}, {
+  "sentence_tokens" : [ "We", "can", "also", "apply", "multivariate", "analysis", "of", "variance", "(", "MANOVA", ")", "to", "detect", "the", "difference", "of", "gene", "expression", "levels", "across", "different", "time", "points", "between", "different", "genotype", "groups", "." ]
+}, {
+  "sentence_tokens" : [ "Alternatively", ",", "we", "can", "model", "time-series", "data", "by", "different", "autoregressive", "(", "AR", ")", "models", ",", "then", "assess", "whether", "the", "AR", "models", "are", "different", "with", "regard", "to", "different", "genotypes", "(", "referred", "to", "as", "the", "AR", "model", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Alternatively", ",", "we", "can", "consider", "a", "quantitative", "trait", "following", "a", "polynomial", "function", "with", "regard", "of", "time", "and", "then", "employ", "a", "straightforward", "regression", "approach", "to", "model", "the", "trait", "with", "respect", "to", "a", "given", "genetic", "locus", "(", "referred", "as", "the", "regression", "method", ")", "." ]
+}, {
+  "sentence_tokens" : [ "If", "we", "further", "assume", "that", "for", "each", "genotype", "the", "trait", "over", "time", "follows", "a", "multivariate", "normal", "distribution", "similar", "to", "Ma", "et", "al.", "and", "the", "variances", "across", "subsequent", "time", "points", "are", "correlated", ",", "we", "develop", "MPTGA", "as", "a", "genetic", "association", "testing", "framework", "(", "see", "Methods", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Instead", "of", "assuming", "the", "mean", "vectors", "of", "the", "multivariate", "normal", "distribution", "follow", "a", "logistic", "growth", "curve", "as", "in", "Ma", "et", "al.", ",", "we", "model", "the", "mean", "vectors", "of", "the", "expression", "trajectories", "using", "a", "polynomial", "function", ",", "which", "is", "able", "to", "capture", "diverse", "types", "of", "temporal", "responses.Temporal", "QTL", "can", "be", "treated", "as", "a", "systematic", "source", "of", "perturbation", "to", "infer", "causality", "among", "traits", "associated", "with", "the", "QTL", "." ]
+}, {
+  "sentence_tokens" : [ "There", "are", "a", "limited", "number", "of", "causal", "relationships", "possible", "between", "two", "traits", "associated", "with", "a", "given", "genetic", "locus", "(", "Supplementary", "Fig.", "1", ")", ":", "simple", "causal", "and", "reactive", "models", "(", "M1", "and", "M2", ")", ",", "an", "independent", "model", "(", "M3", ")", ",", "and", "partial", "causal", "and", "reactive", "models", "(", "M4", "and", "M5", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Based", "on", "these", "possible", "relationships", ",", "in", "the", "context", "of", "static", "QTL", ",", "a", "likelihood", "based", "causality", "model", "selection", "(", "LCMS", ")", "procedure", "had", "been", "developed", "to", "infer", "causal", "relationships", "." ]
+}, {
+  "sentence_tokens" : [ "This", "approach", "has", "been", "widely", "validated", "as", "predicting", "causal", "relationships", "with", "reasonable", "accuracy", "." ]
+}, {
+  "sentence_tokens" : [ "In", "the", "context", "of", "multi-dimensional", "time-series", "data", ",", "we", "now", "seek", "to", "combine", "temporal", "and", "genetic", "information", "to", "infer", "causal", "relationships", "between", "two", "time", "series", "." ]
+}, {
+  "sentence_tokens" : [ "Granger", "formalized", "the", "idea", "of", "a", "time", "series", "based", "causality", "test", "in", "the", "context", "of", "linear", "regression", ",", "where", "the", "prediction", "of", "a", "time", "series", "could", "be", "significantly", "improved", "by", "incorporating", "information", "from", "previous", "time", "points", "in", "a", "second", "time", "series", "." ]
+}, {
+  "sentence_tokens" : [ "Several", "mediation", "models", "for", "longitudinal", "data", "were", "developed", "based", "on", "Granger", "causality", ",", "but", "no", "model", "takes", "genetic", "data", "into", "consideration", "." ]
+}, {
+  "sentence_tokens" : [ "To", "develop", "a", "causality", "test", "based", "on", "genetics", "and", "time", "to", "assess", "how", "two", "traits", "are", "related", ",", "we", "adopted", "the", "idea", "of", "including", "the", "lagged", "values", "of", "the", "time", "series", "from", "one", "temporal-genetic", "associated", "trait", "to", "augment", "when", "comparing", "to", "the", "time", "series", "of", "the", "second", "temporal-genetic", "trait", "." ]
+}, {
+  "sentence_tokens" : [ "More", "specifically", ",", "after", "identifying", "two", "traits", "X", "and", "Y", "with", "temporal-genetic", "association", "to", "the", "same", "locus", ",", "there", "are", "five", "possible", "causal", "and", "reactive", "relationships", "as", "shown", "in", "Supplementary", "Fig.", "1", "." ]
+}, {
+  "sentence_tokens" : [ "In", "a", "causal", "model", "(", "M1", ":", "X", "-->", "Y", ")", ",", "the", "genetic", "effect", "(", "or", "the", "association", "with", "the", "marker", ")", "of", "Trait", "Y", "is", "solely", "explained", "by", "Trait", "X,", "so", "that", "the", "time-series", "values", "of", "Trait", "Y", "can", "be", "predicted", "with", "values", "of", "Traits", "X", "and", "Y", "at", "previous", "time", "points", "." ]
+}, {
+  "sentence_tokens" : [ "In", "an", "independent", "model", "(", "M3", ":", "X", "_|_", "Y", ")", ",", "the", "genetic", "effect", "of", "Trait", "Y", "cannot", "be", "explained", "by", "Trait", "X.", "In", "a", "partial", "causal", "model", "(", "M4", ")", ",", "the", "genetic", "effect", "of", "Trait", "Y", "can", "only", "partially", "be", "explained", "by", "Trait", "X,", "so", "that", "the", "time-series", "values", "of", "Trait", "Y", "can", "be", "predicted", "with", "values", "of", "Traits", "X", "and", "Y", "at", "previous", "time", "points", ",", "as", "well", "as", "the", "genotype", "information", "at", "the", "associated", "locus", "." ]
+}, {
+  "sentence_tokens" : [ "When", "traits", "X", "and", "Y", "were", "switched", "in", "models", "M1", "and", "M4", ",", "the", "causal", "and", "partial", "causal", "relationships", "can", "be", "represented", "in", "models", "M2", "and", "M5", ",", "respectively", "." ]
+}, {
+  "sentence_tokens" : [ "First", ",", "we", "assess", "TGCT", "'", "s", "power", "to", "distinguish", "causal", "and", "reactive", "relationships", "(", "M1", "vs.", "M2", ")", "in", "general", "by", "comparing", "the", "joint", "likelihood", "L", "(", "X,", "Y", ")", "(", "Methods", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Then", ",", "we", "focus", "on", "the", "cis", "-", "trans", "trait", "pairs", "as", "the", "following", ":", "Trait", "X", "has", "a", "cis-teQTL", "and", "Trait", "Y", "has", "a", "trans-teQTL", "at", "the", "same", "locus", "so", "that", "models", "to", "be", "assessed", "are", "limited", "to", "M1", ",", "M3", ",", "and", "M4", "." ]
+}, {
+  "sentence_tokens" : [ "We", "applied", "a", "linear", "regression", "on", "the", "corresponding", "time-series", "data", "for", "Trait", "Y", "and", "selected", "the", "model", "that", "best", "explains", "the", "data", "according", "to", "a", "given", "model", "selection", "criterion", "(", "e.g", ".,", "Akaike", "information", "criterion", "(", "AIC", ")", "or", "Bayesian", "Information", "Criterion", "(", "BIC", ")", ")", "as", "detailed", "in", "Methods", "." ]
+}, {
+  "sentence_tokens" : [ "Evaluating", "temporal-genetic", "association", "methods", "." ]
+}, {
+  "sentence_tokens" : [ "To", "compare", "the", "performance", "of", "multiple", "approaches", "for", "detecting", "temporal-genetic", "associations", ",", "we", "applied", "these", "methods", "to", "a", "set", "of", "simulated", "data", "(", "see", "Methods", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Various", "time-series", "patterns", "were", "simulated", "(", "Supplementary", "Fig.", "2", ")", ",", "which", "were", "similar", "to", "the", "patterns", "observed", "in", "the", "yeast", "time-series", "data", "." ]
+}, {
+  "sentence_tokens" : [ "As", "each", "time", "point", "in", "a", "time", "series", "is", "not", "independent", ",", "the", "residues", "at", "each", "time", "are", "correlated", "(", "auto-correlation", ")", "." ]
+}, {
+  "sentence_tokens" : [ "We", "generated", "time-series", "data", "assuming", "different", "strength", "of", "auto-correlation", "." ]
+}, {
+  "sentence_tokens" : [ "Temporal", "genetic", "association", "results", "(", "Fig.", "2", ")", "show", "that", "MPTGA", "performed", "the", "best", "in", "the", "context", "of", "strong", "auto-correlated", "data", "(", "MANOVA", "as", "the", "second", "best", ",", "the", "Fisher", "'", "s", "method", "performed", "the", "worst", ")", ",", "whereas", "MPTGA", "was", "essentially", "equivalent", "to", "the", "regression", "method", "in", "the", "context", "of", "weak", "auto-correlated", "data", "(", "the", "union", "method", "performed", "the", "worst", ")", "." ]
+}, {
+  "sentence_tokens" : [ "When", "the", "auto-correlation", "coefficient", "was", "around", "0.7", ",", "all", "methods", "performed", "similarly", ",", "except", "MANOVA", "." ]
+}, {
+  "sentence_tokens" : [ "The", "distribution", "of", "auto-correlation", "coefficients", "estimated", "from", "the", "empirical", "yeast", "time-series", "data", "was", "centered", "around", "0.85", "(", "Supplementary", "Fig.", "3", ")", ",", "at", "which", "the", "MPTGA", "performed", "best", "." ]
+}, {
+  "sentence_tokens" : [ "In", "general", ",", "the", "MPTGA", "is", "robust", "over", "a", "broad", "range", "of", "operating", "conditions", "(", "Fig.", "2d", ")", "." ]
+}, {
+  "sentence_tokens" : [ "The", "AR", "method", "was", "not", "included", "in", "Fig.", "2", ",", "as", "it", "performed", "worse", "than", "other", "methods", "across", "all", "conditions", "(", "Supplementary", "Fig.", "4", ")", "." ]
+}, {
+  "sentence_tokens" : [ "We", "also", "compared", "the", "power", "of", "these", "methods", "with", "different", "sample", "sizes", ",", "the", "pattern", "was", "similar", "as", "shown", "in", "Fig.", "2", "with", "MPTGA", "performing", "the", "best", "when", "auto-correlation", "was", "high", "(", "Supplementary", "Fig.", "4", ")", "." ]
+}, {
+  "sentence_tokens" : [ "To", "assess", "a", "model", "'", "s", "robustness", "when", "there", "are", "missing", "data", "(", "detailed", "in", "Methods", ")", ",", "we", "randomly", "dropped", "data", "points", "in", "simulated", "time", "series", "at", "various", "rates", "and", "applied", "the", "above", "methods", "to", "the", "data", "sets", "with", "missing", "data", "." ]
+}, {
+  "sentence_tokens" : [ "The", "performances", "of", "the", "MPTGA", ",", "Regression", ",", "and", "AR", "methods", "were", "not", "sensitive", "to", "missing", "data", ",", "whereas", "the", "performances", "of", "the", "Union", ",", "Fisher", ",", "and", "MANOVA", "methods", "decreased", "as", "the", "missing", "data", "rate", "increased", "(", "Supplementary", "Fig.", "5", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Evaluating", "the", "TGCT", "test", "." ]
+}, {
+  "sentence_tokens" : [ "To", "evaluate", "the", "performance", "of", "TGCT", ",", "we", "simulated", "pairs", "of", "time-series", "data", "according", "to", "causal", ",", "independent", ",", "or", "partial", "causal", "models", "(", "see", "Methods", ")", "." ]
+}, {
+  "sentence_tokens" : [ "We", "applied", "TGCT", "only", "to", "the", "pairs", "in", "which", "both", "time-series", "traits", "X", "and", "Y", "had", "temporal-genetic", "associations", "(", "MPTGA", "p", "<", "10", ")", "to", "the", "tested", "locus", "." ]
+}, {
+  "sentence_tokens" : [ "First", ",", "we", "simulated", "pairs", "of", "traits", "according", "to", "the", "causal", "model", "(", "M1", ")", ",", "then", "assessed", "whether", "the", "causal", "(", "M1", ":", "X", "-->", "Y", ")", "or", "reactive", "(", "M2", ":", "Y", "-->", "X)", "model", "fit", "the", "data", "better", "(", "Methods", ")", "." ]
+}, {
+  "sentence_tokens" : [ "TGCT", "identified", "the", "correct", "model", "in", "most", "cases", "with", "the", "accuracy", "of", "99.54", "%", ",", "99.82", "%", ",", "99.95", "%", ",", "and", "99.97", "%", "for", "the", "sample", "size", "of", "20", ",", "50", ",", "100", ",", "150", ",", "respectively", "(", "Supplementary", "Fig.", "6", ",", "the", "log", "likelihood", "ratio", "(", "LR", ")", "of", "M1", "vs.", "M2", "is", "shown", "in", "Supplementary", "Fig.", "7", ")", "." ]
+}, {
+  "sentence_tokens" : [ "When", "genetic", "information", "is", "known", ",", "we", "can", "focus", "on", "relationships", "between", "cis", "regulated", "genes", "and", "trans-regulated", "genes", "instead", "of", "testing", "all", "possible", "pairs", "." ]
+}, {
+  "sentence_tokens" : [ "In", "the", "rest", "of", "the", "tests", ",", "we", "assumed", "Trait", "X", "had", "a", "cis-teQTL", "so", "that", "we", "can", "simplify", "our", "tests", "without", "considering", "models", "M2", "and", "M5", "." ]
+}, {
+  "sentence_tokens" : [ "When", "comparing", "models", "M1", ",", "M3", ",", "and", "M4", ",", "we", "needed", "to", "model", "only", "Trait", "Y", "without", "explicitly", "modeling", "Trait", "X", "(", "Methods", ")", "." ]
+}, {
+  "sentence_tokens" : [ "For", "pairs", "simulated", "under", "the", "causal", "model", "(", "M1", ")", ",", "TGCT", "identified", "the", "causal", "model", "as", "the", "best", "model", "in", "all", "cases", "across", "a", "wide", "range", "of", "strength", "of", "AR", "and", "causal", "effects", "(", "Supplementary", "Fig.", "8)", "." ]
+}, {
+  "sentence_tokens" : [ "The", "BIC", "differences", "between", "the", "causal", "model", "and", "other", "models", "are", "shown", "in", "Supplementary", "Fig.", "9", "." ]
+}, {
+  "sentence_tokens" : [ "For", "pairs", "simulated", "under", "the", "independent", "model", "(", "M3", ")", ",", "TGCT", "identified", "the", "independent", "model", "as", "the", "best", "model", "in", "most", "cases", "with", "accuracy", "of", "95.8", "%", ",", "97.7", "%", ",", "97.7", "%", ",", "and", "98.9", "%", "for", "the", "sample", "size", "of", "20", ",", "50", ",", "100", ",", "and", "150", ",", "respectively", ",", "across", "a", "wide", "range", "of", "parameters", "(", "Supplementary", "Fig.", "10", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Simulations", "under", "the", "partial", "causal", "model", "(", "M4", ")", "were", "complicated", "as", "there", "were", "three", "parameters", "for", "representing", "the", "strength", "of", "genetic", "and", "causal", "effects", "(", "Supplementary", "Fig.", "11", ")", "." ]
+}, {
+  "sentence_tokens" : [ "TGCT", "identified", "the", "partial", "causal", "model", "as", "the", "best", "model", "in", "all", "cases", "except", "when", "the", "genetic", "or", "causal", "effect", "was", "close", "to", "zero", "." ]
+}, {
+  "sentence_tokens" : [ "For", "example", ",", "when", "beta", "is", "close", "to", "0", ",", "the", "partial", "model", "(", "M4", ")", "is", "converted", "to", "the", "independent", "model", "(", "M3", ")", "." ]
+}, {
+  "sentence_tokens" : [ "In", "such", "cases", ",", "TGCT", "identified", "the", "independent", "model", "as", "the", "best", "model", "." ]
+}, {
+  "sentence_tokens" : [ "When", "both", "beta", "and", "beta", "are", "close", "to", "0", ",", "the", "partial", "model", "(", "M4", ")", "is", "converted", "to", "causal", "model", "(", "M1", ")", "and", "TGCT", "identified", "the", "causal", "model", "as", "the", "best", "model", "in", "such", "cases", "." ]
+}, {
+  "sentence_tokens" : [ "Dissecting", "regulatory", "networks", "response", "to", "rapamycin", "." ]
+}, {
+  "sentence_tokens" : [ "We", "applied", "multiple", "methods", "to", "expression", "data", "generated", "in", "a", "population", "of", "95", "genotyped", "haploid", "yeast", "segregants", "that", "were", "treated", "with", "the", "macrolide", "drug", "rapamycin", "and", "compared", "teQTLs", "identified", "at", "a", "5", "%", "false", "discovery", "rate", "(", "FDR", ")", "(", "teQTLs", "are", "listed", "in", "Supplementary", "Tables", "1", "-", "5", ")", "." ]
+}, {
+  "sentence_tokens" : [ "The", "yeast", "segregants", "were", "profiled", "at", "six", "different", "time", "points", "starting", "with", "a", "baseline", "expression", "profile", "just", "before", "treatment", "and", "then", "five", "subsequent", "time", "points", "post", "treatment", "." ]
+}, {
+  "sentence_tokens" : [ "The", "aim", "in", "applying", "the", "teQTL", "and", "causality", "analysis", "in", "this", "population", "was", "to", "dissect", "the", "causal", "regulators", "most", "strongly", "modulating", "the", "treatment", "response", "across", "individuals", "in", "the", "population", "." ]
+}, {
+  "sentence_tokens" : [ "Given", "traditional", "eQTL", "detection", "methods", "considering", "gene", "expression", "levels", "in", "a", "static", "state", "(", "without", "considering", "the", "time-series", "data", ")", ",", "for", "a", "baseline", "to", "use", "in", "the", "comparisons", ",", "we", "mapped", "eQTLs", "based", "on", "gene", "expression", "data", "at", "the", "first", "time", "point.Compared", "with", "the", "teQTL", "approaches", ",", "the", "static", "eQTL", "approach", "detected", "fewer", "QTLs", "(", "Table", "1", ")", "at", "a", "fixed", "FDR", "." ]
+}, {
+  "sentence_tokens" : [ "Among", "the", "four", "teQTL", "methods", "MPTGA", ",", "union", ",", "regression", ",", "and", "the", "Fisher", "'", "s", "p-value", "methods", "resulted", "in", "the", "highest", "to", "lowest", "numbers", "of", "teQTLs", ",", "respectively", "." ]
+}, {
+  "sentence_tokens" : [ "When", "comparing", "teQTL", "confidence", "intervals", "for", "constraining", "the", "true", "location", "of", "variant", "(", "s", ")", "underlying", "the", "teQTL", ",", "the", "QTL", "95", "%", "confidence", "intervals", "(", "Methods", ")", "for", "all", "teQTL", "methods", "were", "tighter", "compared", "with", "the", "static", "methods", "(", "Table", "1", ")", "." ]
+}, {
+  "sentence_tokens" : [ "These", "results", "suggest", "that", "the", "methods", "that", "take", "into", "account", "the", "time-series", "data", "refine", "the", "QTL", "location", ",", "thus", "reducing", "the", "number", "of", "potential", "candidate", "causal", "regulators", "to", "consider", "in", "the", "linkage", "region", "." ]
+}, {
+  "sentence_tokens" : [ "The", "regression", "method", "resulted", "in", "fewer", "but", "sharper", "eQTLs", "than", "the", "MPTGA", "method", "." ]
+}, {
+  "sentence_tokens" : [ "MPTGA", "is", "the", "best", "model", "with", "balance", "of", "the", "number", "of", "eQTLs", "identified", "and", "average", "confidence", "intervals.Similar", "to", "the", "eQTLs", "in", "this", "yeast", "cross", "that", "have", "been", "previously", "reported", ",", "the", "teQTLs", "were", "clustered", "into", "teQTL", "hotspots", "(", "Fig.", "3", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Across", "all", "methods", "a", "total", "of", "18", "hotspots", "were", "identified", "(", "Table", "2", ",", "expression", "traits", "linked", "to", "each", "eQTL", "hotspot", "are", "listed", "in", "Supplementary", "Tables", "6", "-", "10", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Of", "the", "14", "eQTL", "hotspots", "identified", "by", "the", "static", "eQTL", "method", ",", "10", "overlapped", "with", "eQTL", "hotspots", "previously", "identified", "in", "this", "same", "yeast", "F2", "cross", "." ]
+}, {
+  "sentence_tokens" : [ "Among", "the", "ten", "eQTL", "hotspots", ",", "seven", "of", "them", "identified", "by", "the", "static", "were", "identified", "by", "all", "four", "times", "series", "based", "methods", "." ]
+}, {
+  "sentence_tokens" : [ "In", "addition", ",", "three", "and", "three", "additional", "teQTL", "hotspots", "were", "identified", "by", "the", "MPTGA", "and", "regression", "methods", ",", "respectively", "(", "Table", "2", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Despite", "rapamycin", "treatment", "inducing", "a", "large", "impact", "on", "cell", "cycle", "and", "metabolism", "in", "yeast", ",", "none", "of", "the", "14", "static", "eQTL", "hotspots", "were", "enriched", "for", "genes", "in", "the", "rapamycin", "transcriptional", "response", "signature", "." ]
+}, {
+  "sentence_tokens" : [ "Of", "the", "11", "teQTL", "hotspots", "identified", "by", "MPTGA", ",", "eight", "were", "significantly", "enriched", "for", "this", "signature", "." ]
+}, {
+  "sentence_tokens" : [ "A", "key", "mechanism", "for", "cell", "growth", "is", "the", "regulation", "of", "ribosome", "biogenesis", "." ]
+}, {
+  "sentence_tokens" : [ "Ribosomal", "protein", "gene", "expression", "is", "regulated", "by", "mTOR", ",", "the", "target", "of", "rapamycin", "." ]
+}, {
+  "sentence_tokens" : [ "Six", "of", "the", "eight", "teQTL", "hotspots", "identified", "by", "MPTGA", "enriched", "for", "the", "rapamycin", "response", "signature", "were", "also", "enriched", "for", "the", "GO", "term", "structural", "constituent", "of", "ribosome", "(", "Table", "3", ")", ",", "demonstrating", "the", "ability", "of", "MPTGA", "to", "capture", "both", "static", "and", "dynamic", "genetic", "associations.In", "contrast", ",", "only", "one", "(", "chrXV", ":150,000", ")", "of", "the", "teQTL", "hotspots", "identified", "by", "the", "union", "method", "were", "enriched", "for", "the", "rapamycin", "response", "signature", ",", "suggesting", "that", "although", "this", "approach", "increases", "the", "power", "to", "detect", "static", "eQTL", ",", "the", "union", "method", "is", "not", "as", "sensitive", "for", "detecting", "a", "dynamic", "response", "." ]
+}, {
+  "sentence_tokens" : [ "The", "regression", "method", "is", "closely", "related", "to", "the", "MPTGA", "method", ",", "but", "only", "one", "(", "chrXV", ":150,000", ")", "of", "its", "identified", "hotspots", "was", "enriched", "for", "genes", "in", "the", "rapamycin", "response", "signature", ",", "suggesting", "this", "approach", "in", "a", "temporal", "context", "may", "be", "prone", "to", "sporadic", "associations", "." ]
+}, {
+  "sentence_tokens" : [ "Inferring", "causal", "regulators", "of", "teQTL", "hotspots", "." ]
+}, {
+  "sentence_tokens" : [ "Similar", "as", "we", "have", "previously", "shown", "for", "static", "eQTL", "hotspots", ",", "we", "applied", "TGCT", "to", "resolve", "the", "causal", "regulators", "underlying", "teQTL", "hotspots", "." ]
+}, {
+  "sentence_tokens" : [ "For", "each", "teQTL", "hotspot", ",", "candidate", "causal", "genes", "were", "defined", "as", "genes", "with", "cis-teQTLs", "linked", "to", "the", "teQTL", "hotspot", "." ]
+}, {
+  "sentence_tokens" : [ "We", "applied", "TGCT", "to", "infer", "the", "causal", "regulators", "of", "the", "teQTL", "hotspots", "identified", "by", "MPTGA", "(", "Table", "4", ",", "all", "predicted", "causal", "relationships", "are", "listed", "in", "Supplementary", "Table", "11", ")", "." ]
+}, {
+  "sentence_tokens" : [ "The", "distribution", "of", "BIC", "difference", "between", "causal", "model", "M1", "and", "the", "second", "best", "fit", "models", "is", "shown", "in", "Supplementary", "Fig.", "12", "." ]
+}, {
+  "sentence_tokens" : [ "The", "top", "putative", "causal", "regulators", "for", "each", "teQTL", "hotspot", "were", "ranked", "based", "on", "the", "number", "of", "causal", "relationships", "that", "the", "regulator", "had", "." ]
+}, {
+  "sentence_tokens" : [ "We", "compared", "the", "causal", "regulators", "identified", "in", "this", "dataset", "to", "those", "we", "previously", "predicted", "and", "validated", "." ]
+}, {
+  "sentence_tokens" : [ "Of", "the", "11", "teQTL", "hotspots", "identified", "by", "MPTGA", ",", "7", "overlapped", "previously", "identified", "static", "eQTL", "hotspots", "in", "this", "population", "(", "Table", "2", ")", "for", "which", "we", "had", "predicted", "and", "validated", "static", "causal", "regulators", "." ]
+}, {
+  "sentence_tokens" : [ "All", "previously", "validated", "causal", "regulators", "were", "identified", "as", "putative", "key", "causal", "regulators", "by", "TGCT", "(", "bolded", "genes", "in", "Table", "4", ")", "." ]
+}, {
+  "sentence_tokens" : [ "In", "addition", "to", "the", "eQTL", "hotspots", "identified", "by", "the", "static", "method", ",", "MPTGA", "identified", "3", "dynamic", "teQTL", "hotspots", "." ]
+}, {
+  "sentence_tokens" : [ "The", "teQTL", "hotspot", "at", "chrV", ":190,000", "was", "the", "largest", "in", "terms", "of", "the", "number", "of", "expression", "traits", "linking", "to", "the", "locus", ",", "with", "162", "gene", "expression", "traits", "linked", "to", "this", "locus", "versus", "only", "7", "expression", "traits", "identified", "by", "the", "static", "eQTL", "approach", "." ]
+}, {
+  "sentence_tokens" : [ "The", "genes", "linked", "to", "this", "teQTL", "hotspot", "were", "significantly", "enriched", "for", "the", "rapamycin", "response", "signature", "(", "3.9-fold", "enrichment", ";", "Fisher", "'", "s", "exact", "test", "(", "FET", ")", "p", "=", "1.28", "x", "10", ")", "." ]
+}, {
+  "sentence_tokens" : [ "The", "top", "putative", "causal", "regulator", "predicted", "by", "TGCT", "for", "this", "hotspot", "was", "ISC1", ",", "inositol", "phosphingolipid", "phospholipase", "C", ",", "a", "gene", "involved", "in", "ceramide", "production", "." ]
+}, {
+  "sentence_tokens" : [ "ISC1", "was", "supported", "as", "causal", "for", "136", "of", "the", "162", "genes", "linked", "to", "this", "teQTL", "hotspot", "." ]
+}, {
+  "sentence_tokens" : [ "Ceramide", "and", "its", "metabolites", "also", "play", "a", "pathogenic", "role", "in", "insulin", "resistance", "." ]
+}, {
+  "sentence_tokens" : [ "Taken", "together", ",", "these", "data", "support", "ISC1", "as", "a", "causal", "regulator", "for", "rapamycin", "response", "differences", "among", "the", "yeast", "segregants", "." ]
+}, {
+  "sentence_tokens" : [ "The", "identification", "of", "this", "teQTL", "hotspot", "and", "of", "ISC1", "as", "a", "causal", "regulator", "could", "not", "have", "happened", "by", "analyzing", "any", "single", "time", "point", "after", "the", "rapamycin", "treatment", "." ]
+}, {
+  "sentence_tokens" : [ "The", "genetic-by-drug", "perturbation", "interaction", "at", "this", "locus", "was", "only", "detectable", "in", "light", "of", "the", "time-series", "data", "considered", "in", "full.In", "addition", "to", "the", "ISC1", "teQTL", "hotspot", ",", "the", "teQTL", "hotspot", "at", "locus", "chrIX", ":70,000", "was", "only", "identified", "by", "the", "MPTGA", "method", "." ]
+}, {
+  "sentence_tokens" : [ "A", "general", "temporal", "pattern", "of", "genes", "linked", "to", "the", "hotspot", "is", "shown", "in", "Fig.", "4", "." ]
+}, {
+  "sentence_tokens" : [ "The", "gene", "expression", "level", "differences", "between", "segregants", "carrying", "different", "genotype", "at", "the", "locus", "were", "small", "but", "consistently", "getting", "larger", "(", "Fig.", "4a", ",", "Supplementary", "Fig.", "14", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Testing", "each", "time", "point", "individually", ",", "the", "differences", "were", "not", "significant", ",", "which", "may", "explain", "why", "the", "static", ",", "union", ",", "and", "Fisher", "'", "s", "method", "could", "not", "identify", "the", "teQTL", "hotspot", "." ]
+}, {
+  "sentence_tokens" : [ "MPTGA", ",", "the", "regression", ",", "and", "the", "union", "methods", "(", "Fig.", "4b", "-", "d", ")", "suggested", "a", "putative", "teQTL", "at", "the", "locus", ",", "but", "p-values", "for", "the", "regression", "and", "the", "union", "methods", "were", "not", "significant", "at", "an", "FDR", "<", "0.05", "." ]
+}, {
+  "sentence_tokens" : [ "Without", "constraining", "on", "residues", ",", "the", "regression", "method", "is", "prone", "to", "sporadic", "association", "(", "detailed", "in", "Discussion", ")", "so", "that", "p-value", "cutoff", "for", "5", "%", "FDR", "is", "much", "lower", "than", "the", "one", "for", "the", "MPTGA", ",", "which", "explained", "why", "the", "regression", "method", "missed", "the", "teQTL", "hotspot.The", "chrIX", ":70,000", "teQTL", "hotspot", "was", "also", "significantly", "enriched", "for", "rapamycin", "signature", "genes", "(", "5.0-fold", "enrichment", ",", "FET", "p", "=", "1.4", "x", "10", ")", ",", "which", "suggests", "this", "teQTL", "hotspot", "was", "driven", "by", "gene-by-rapamycin", "interactions", "." ]
+}, {
+  "sentence_tokens" : [ "The", "top", "putative", "causal", "regulator", "predicted", "by", "TGCT", "for", "this", "hotspot", "was", "RRD1", "(", "Table", "4", ",", "the", "distribution", "of", "BIC", "difference", "between", "causal", "model", "M1", "and", "the", "second", "best", "fit", "models", "is", "shown", "in", "Supplementary", "Fig.", "13", ")", "." ]
+}, {
+  "sentence_tokens" : [ "To", "validate", "RRD1", "as", "a", "causal", "regulator", "of", "the", "teQTL", "hotspot", "at", "chrIX", ":70,000", "driven", "by", "gene-by-rapamycin", "interactions", ",", "we", "compared", "genome-wide", "gene", "expression", "profiles", "of", "the", "RRD1", "knockout", "strain", "to", "the", "wild-type", "strain", ",", "both", "with", "and", "without", "rapamycin", "in", "the", "culture", "media", "(", "Methods", ")", "." ]
+}, {
+  "sentence_tokens" : [ "At", "an", "FDR", "<", "1", "%", ",", "64", "differentially", "expressed", "genes", "(", "DEGs", ")", "were", "identified", "between", "the", "RRD1", "knockout", "and", "wild-type", "strains", ",", "without", "exposure", "to", "rapamycin", "." ]
+}, {
+  "sentence_tokens" : [ "These", "64", "DGEs", "were", "significantly", "overlapped", "with", "the", "rapamycin", "signature", "(", "5.1-fold", "enrichment", ",", "FET", "p", "=", "1.1", "x", "10", ")", "." ]
+}, {
+  "sentence_tokens" : [ "When", "compared", "with", "genes", "linked", "to", "the", "11", "teQTL", "hotspots", "identified", "by", "MPTGA", ",", "the", "RRD1", "knockout", "signature", "significantly", "overlapped", "with", "5", "teQTL", "hotspots", "(", "Fig.", "5a", ")", ",", "which", "were", "also", "enriched", "for", "the", "rapamycin", "signature", "(", "Table", "2", ")", "." ]
+}, {
+  "sentence_tokens" : [ "The", "teQTL", "hotspot", "ChrIX", ":70,000", "was", "enriched", "for", "the", "RRD1", "knockout", "signature", "(", "4.1-fold", "enrichment", ",", "FET", "p", "=", "0.036", ")", "and", "the", "teQTL", "hotspot", "ChrXV", ":150,000", "was", "most", "significantly", "enriched", "for", "the", "RRD1", "knockout", "signature", "(", "2.5-fold", "enrichment", ",", "FET", "p", "=", "8.3", "x", "10", ")", "." ]
+}, {
+  "sentence_tokens" : [ "When", "compared", "with", "the", "eQTL", "hotspots", "based", "on", "static", "T0", "data", ",", "the", "RRD1", "knockout", "signature", "significantly", "overlapped", "with", "the", "eQTL", "hotspot", "at", "ChrXV", ":150,000", "(", "4.2-fold", "enrichment", ",", "FET", "p", "=", "8.1", "x", "10", ")", "." ]
+}, {
+  "sentence_tokens" : [ "The", "RRD1", "knockout", "signature", "was", "enriched", "for", "the", "GO", "biological", "process", "response", "to", "stress", "(", "12.9-fold", "enrichment", ",", "FET", "p", "=", "3.1", "x", "10", ")", ",", "which", "is", "consistent", "with", "the", "functional", "annotation", "of", "this", "static", "eQTL", "hotspot", "." ]
+}, {
+  "sentence_tokens" : [ "These", "results", "were", "consistent", "with", "RRD1", "expression", "levels", "being", "regulated", "both", "in", "cis", "and", "in", "trans", "by", "DNA", "variations", "at", "ChrXV", ":150,000", "(", "Fig.", "5b", ")", "." ]
+}, {
+  "sentence_tokens" : [ "When", "comparing", "the", "RRD1", "knockout", "and", "wild-type", "strains", "in", "the", "presence", "of", "rapamycin", ",", "582", "DGEs", "were", "identified", "at", "an", "FDR", "<", "1", "%", "." ]
+}, {
+  "sentence_tokens" : [ "The", "RRD1", "rapamycin", "signature", "overlapped", "seven", "teQTL", "hotspots", "(", "Fig.", "5a", ")", ",", "which", "were", "all", "enriched", "for", "the", "rapamycin", "signature", "." ]
+}, {
+  "sentence_tokens" : [ "Among", "these", "teQTL", "hotspots", ",", "the", "teQTL", "hotspot", "ChrIX", ":70,000", ",", "where", "RRD1", "is", "physically", "located", ",", "was", "with", "the", "highest", "fold", "enrichment", "(", "7.1-fold", "enrichment", ",", "FET", "p", "=", "3.7", "x", "10", ")", "." ]
+}, {
+  "sentence_tokens" : [ "More", "specifically", ",", "directions", "of", "changes", "for", "all", "genes", "in", "the", "overlap", "between", "genes", "linked", "to", "the", "teQTL", "hotspot", "ChrIX", ":70,000", "and", "DGEs", "in", "RRD1", "knockout", "signature", "are", "consistent", "between", "the", "time", "course", "and", "RRD1", "knockout", "experiments", "." ]
+}, {
+  "sentence_tokens" : [ "The", "segregants", "carrying", "RM", "allele", "at", "the", "RRD1", "locus", "had", "low", "RRD1", "expression", "level", "in", "comparison", "with", "the", "segregants", "carrying", "BY", "allele", "(", "Supplementary", "Fig.", "15", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Among", "65", "genes", "linked", "to", "the", "teQTL", "hotspot", "chrIX", ":70,000", ",", "56", "genes", "were", "expressed", "higher", "in", "the", "segregants", "carrying", "RM", "allele", "and", "42", "of", "them", "overlapped", "with", "upregulated", "in", "RRD1-KO", "strain", "(", "FET", "p", "=", "2.4", "x", "10", ")", ",", "whereas", "9", "genes", "were", "expressed", "lower", "in", "the", "segregants", "carrying", "RM", "allele", "and", "6", "of", "them", "overlapped", "with", "downregulated", "genes", "in", "RRD1-KO", "strain", "(", "FET", "p", "=", "2.0", "x", "10", ")", "." ]
+}, {
+  "sentence_tokens" : [ "In", "addition", "to", "the", "hotspot", "ChrIX", ":70,000", ",", "the", "top", "three", "teQTL", "hotspots", "with", "the", "highest", "fold", "enrichment", "include", "ChrV", ":190,000", "and", "ChrIV", ":90,000", "(", "fold", "enrichment", "=", "6.2", "and", "4.7", ",", "FET", "p", "=", "1.2", "x", "10", "and", "2.9", "x", "10", ",", "respectively", ")", ",", "which", "are", "the", "three", "unique", "teQTL", "hotspots", "compared", "with", "static", "eQTL", "hotspots", "(", "Table", "2", ")", "." ]
+}, {
+  "sentence_tokens" : [ "The", "teQTL", "hotspot", "at", "chrXV", ":150,000", "was", "with", "the", "most", "significant", "enrichment", "p-value", "(", "2.6-fold", "enrichment", ",", "FET", "p", "=", "1.3", "x", "10", ")", ",", "consistent", "with", "RRD1", "expression", "variation", "being", "linked", "in", "cis", "to", "ChrIX", ":70,000", "and", "in", "trans", "to", "ChrXV", ":150,000", "(", "Fig.", "5b", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Genes", "putatively", "regulated", "by", "RRD1", "inferred", "by", "TGCT", "were", "also", "regulated", "by", "other", "genetic", "perturbations", "(", "Fig.", "5c", ")", "." ]
+}, {
+  "sentence_tokens" : [ "The", "RRD1", "rapamycin", "signature", "was", "significantly", "enriched", "for", "the", "GO", "term", "structural", "constituent", "of", "ribosome", "(", "4.0-fold", "enrichment", ",", "FET", "p", "=", "1.6", "x", "10", ")", ",", "which", "is", "consistent", "with", "the", "GO", "functional", "annotations", "of", "the", "set", "of", "genes", "simultaneously", "linked", "to", "these", "teQTL", "hotspots", "(", "Table", "3", ")", "." ]
+}, {
+  "sentence_tokens" : [ "These", "results", "combined", "indicate", "that", "RRD1", "interacts", "with", "rapamycin", "to", "give", "rise", "to", "the", "teQTL", "hotspot", "at", "chrIX", ":70,000", ",", "and", "that", "this", "gene-by-rapamycin", "interaction", "was", "only", "detected", "by", "our", "TGCT", "test", "." ]
+}, {
+  "sentence_tokens" : [ "Discussion", "." ]
+}, {
+  "sentence_tokens" : [ "In", "this", "study", ",", "we", "developed", "MPTGA", "to", "optimally", "integrate", "genetic", "and", "temporal", "information", "to", "identify", "genetic", "associations", "for", "gene", "expression", "traits", "." ]
+}, {
+  "sentence_tokens" : [ "With", "respect", "to", "other", "methods", "we", "tested", ",", "MPTGA", "was", "the", "most", "robust", "and", "sensitive", "in", "our", "simulation", "study", "." ]
+}, {
+  "sentence_tokens" : [ "When", "applied", "to", "a", "yeast", "F2", "time-series", "data", "set", "profiled", "in", "response", "to", "a", "rapamycin", "perturbation", ",", "MPTGA", "detected", "more", "biologically", "relevant", "teQTL", "hotspots", ",", "along", "with", "tighter", "eQTL", "confidence", "intervals", "compared", "with", "the", "static", "method", "(", "Table", "1", ")", ",", "which", "may", "lead", "to", "fewer", "candidate", "causal", "regulators", "to", "consider", "for", "each", "eQTL", "hotspot", "." ]
+}, {
+  "sentence_tokens" : [ "We", "also", "developed", "the", "causal", "inference", "test", ",", "TGCT", ",", "which", "simultaneously", "considers", "temporal", "and", "genetic", "data", "to", "infer", "causal", "relationships", "systematically", "." ]
+}, {
+  "sentence_tokens" : [ "Temporal-genetic", "data", "together", "has", "more", "power", "to", "distinguish", "which", "gene", "is", "the", "true", "causal", "regulator", "among", "correlated", "genes", "colocalizing", "at", "a", "locus", "than", "the", "static", "method", "." ]
+}, {
+  "sentence_tokens" : [ "Application", "of", "TGCT", "in", "the", "F2", "yeast", "cross", "in", "the", "context", "of", "treatment", "with", "rapamycin", "resulted", "in", "the", "identification", "the", "key", "causal", "regulators", "ISC1", "and", "RRD1", ",", "which", "modulated", "response", "to", "this", "perturbation", ",", "revealing", "the", "molecular", "mechanisms", "related", "to", "rapamycin", "response", "." ]
+}, {
+  "sentence_tokens" : [ "Our", "prediction", "of", "RRD1", "as", "a", "causal", "regulator", "of", "gene-by-rapamycin", "interactions", "was", "experimentally", "confirmed.For", "each", "teQTL", "hotspot", ",", "we", "tested", "all", "cis", "-", "trans", "gene", "pairs", "at", "the", "locus", "for", "potential", "causal", "relationships", "." ]
+}, {
+  "sentence_tokens" : [ "For", "a", "gene", "with", "a", "trans-eQTL", "at", "a", "hotspot", ",", "the", "TGCT", "may", "report", "multiple", "candidate", "causal", "genes", "." ]
+}, {
+  "sentence_tokens" : [ "On", "the", "other", "hand", ",", "for", "two", "genes", "(", "X1", "and", "X2", ")", "with", "cis-eQTLs", "at", "a", "hotspot", ",", "both", "may", "be", "causal", "to", "an", "overlapped", "set", "of", "genes", "(", "Ys", ")", "with", "trans-eQTLs", "linked", "the", "locus", ",", "e.g", ".,", "X1", "-->", "Y", "and", "X2", "-->", "Y." ]
+}, {
+  "sentence_tokens" : [ "In", "these", "cases", ",", "TGCT", "cannot", "distinguish", "which", "cis-eQTL", "gene", "is", "the", "true", "causal", "gene", "." ]
+}, {
+  "sentence_tokens" : [ "Thus", ",", "multiple", "putative", "causal", "genes", "were", "reported", "for", "hotspots", "with", "a", "large", "number", "eQTLs", "(", "Table", "4", ")", "." ]
+}, {
+  "sentence_tokens" : [ "To", "distinguish", "which", "causal", "relationship", ",", "X1", "-->", "Y", "or", "X2", "-->", "Y", ",", "is", "true", ",", "more", "data", "are", "needed", ",", "such", "as", "more", "F2", "strains", "to", "breakdown", "linkage", "disequilibrium", "(", "LD", ")", "structures", "or", "more", "time", "points", "to", "break", "correlation", "relationships", "among", "colocalized", "genes", "so", "that", "the", "TGCT", "has", "more", "power", "to", "distinguish", "which", "gene", "is", "true", "causal", "regulator", "among", "correlated", "genes", "colocalizing", "at", "a", "locus", "than", "static", "methods", "." ]
+}, {
+  "sentence_tokens" : [ "Follow-up", "experiments", "are", "recommended", "to", "validate", "putative", "causal", "regulators.Rapamycin", "has", "been", "shown", "to", "extend", "lifespan", "in", "mice", ",", "but", "then", "chronic", "usage", "has", "also", "been", "shown", "to", "lead", "to", "insulin", "resistance", "." ]
+}, {
+  "sentence_tokens" : [ "Identifying", "what", "molecular", "and", "physiological", "states", "stand", "to", "benefit", "from", "rapamycin", "treatment", "is", "critical", "before", "such", "a", "drug", "can", "be", "considered", "as", "an", "anti-aging", "treatment", "." ]
+}, {
+  "sentence_tokens" : [ "A", "systematic", "screen", "identifies", "238", "genes", "whose", "deletion", "extends", "replicative", "lifespan", "in", "yeast", "." ]
+}, {
+  "sentence_tokens" : [ "The", "238", "aging", "related", "gene", "set", "marginally", "overlapped", "with", "the", "rapamycin", "signature", "(", "1.7-fold", "enrichment", ",", "FET", "p", "=", "0.03", ")", "." ]
+}, {
+  "sentence_tokens" : [ "However", ",", "the", "three", "unique", "teQTL", "hotspots", "identified", "by", "the", "MPTGA", "were", "significantly", "enriched", "for", "the", "aging", "related", "genes", "(", "fold", "enrichment", "=", "3.0", ",", "4.3", ",", "and", "4.4", ",", "FET", "p", "=", "0.004", ",", "1.3", "x", "10", ",", "and", "1.2", "x", "10", ",", "for", "ChrIV", ":90,000", ",", "ChrV", ":190,000", ",", "and", "ChrIX", ":70,000", ",", "respectively", ")", ",", "whereas", "none", "of", "the", "static", "eQTL", "hotspots", "nor", "eQTL", "hotspots", "identified", "by", "the", "union", "nor", "the", "Fisher", "'", "s", "method", "was", "enriched", "for", "the", "aging", "genes", "at", "p", "<", "0.01", "(", "Table", "5", ")", "." ]
+}, {
+  "sentence_tokens" : [ "As", "we", "show", "in", "Fig.", "3", "and", "Table", "2", ",", "gene-by-rapamycin", "interactions", "were", "only", "detected", "when", "a", "time", "series", "was", "considered", "as", "a", "whole", ",", "not", "when", "individual", "time", "points", "were", "considered", "separately", ",", "directly", "demonstrating", "the", "importance", "of", "a", "temporal", "genetic", "association", "study", "." ]
+}, {
+  "sentence_tokens" : [ "Most", "gene-by-perturbation", "interaction", "screens", ",", "such", "as", "synthetic", "lethal", "small", "interfering", "RNA", "screen", ",", "monitor", "effects", "at", "only", "one", "time", "point", "." ]
+}, {
+  "sentence_tokens" : [ "Our", "results", "suggest", "that", "monitoring", "such", "effects", "at", "multiple", "time", "points", "and", "analyzing", "them", "together", "as", "a", "time", "series", "can", "dramatically", "increase", "the", "power", "of", "detecting", "gene-by-perturbation", "interactions", ",", "as", "well", "as", "causal", "relationships", "among", "traits.MPTGA", "and", "the", "regression", "methods", "are", "closely", "related", "(", "Methods", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Even", "though", "the", "p-values", "of", "the", "two", "methods", "are", "not", "directly", "comparable", "(", "as", "the", "underlying", "functions", "for", "modeling", "are", "different", ")", ",", "the", "association", "p-values", "based", "on", "the", "two", "methods", "were", "closely", "tracked", "with", "each", "other", "(", "an", "example", "in", "Fig.", "4b", ",", "c", ";", "Supplementary", "Fig.", "16", ")", "in", "general", "." ]
+}, {
+  "sentence_tokens" : [ "However", ",", "there", "were", "multiple", "differences", "in", "the", "yeast", "teQTL", "results", "." ]
+}, {
+  "sentence_tokens" : [ "Given", "variance", "observed", "in", "a", "given", "variable", "of", "interest", ",", "the", "regression", "model", "attempts", "to", "fit", "as", "much", "of", "the", "variance", "as", "possible", "so", "that", "it", "is", "more", "prone", "to", "sporadic", "associations", "or", "overfitting", "." ]
+}, {
+  "sentence_tokens" : [ "In", "contrast", ",", "MPTGA", "is", "a", "regularized", "regression", "method", ",", "which", "is", "constrained", "by", "regularization", "terms", "and", "so", "can", "only", "fit", "a", "portion", "of", "the", "variance", "." ]
+}, {
+  "sentence_tokens" : [ "To", "access", "the", "tendency", "of", "sporadic", "association", "or", "overfitting", "in", "each", "method", ",", "we", "compared", "p-values", "of", "neighboring", "single-nucleotide", "polymorphisms", "(", "SNPs", ")", "(", "Methods", ")", "." ]
+}, {
+  "sentence_tokens" : [ "The", "p-values", "for", "peak", "SNPs", "and", "neighboring", "SNPs", "were", "highly", "correlated", ",", "with", "correlation", "coefficients", "of", "0.89", "and", "0.69", "for", "MPTGA", "and", "the", "regression", "method", ",", "respectively", "(", "Supplementary", "Fig.", "17", ",", "detailed", "in", "Supplementary", "Discussion", ")", ",", "suggesting", "that", "MPTGA", "is", "less", "prone", "to", "overfitting", "than", "the", "regression", "method.We", "also", "checked", "statistical", "validity", "and", "potential", "inflation", "of", "p-values", "of", "MPTGA", "(", "detailed", "in", "Methods", ")", "." ]
+}, {
+  "sentence_tokens" : [ "First", ",", "we", "simulated", "a", "set", "of", "gene", "expression", "traits", "and", "genotypes", "." ]
+}, {
+  "sentence_tokens" : [ "As", "they", "were", "simulated", "independently", ",", "no", "gene", "association", "was", "expected", "." ]
+}, {
+  "sentence_tokens" : [ "The", "QQ", "plot", "for", "the", "simulated", "data", "(", "Supplementary", "Fig.", "18a", ")", "suggests", "that", "p-values", "of", "MPTGA", "are", "slightly", "inflated", "." ]
+}, {
+  "sentence_tokens" : [ "We", "then", "generated", "permuted", "data", "from", "the", "yeast", "F2", "data", "set", "by", "permuting", "strain", "labels", "so", "that", "the", "genetic", "structure", "is", "intact", "." ]
+}, {
+  "sentence_tokens" : [ "As", "there", "are", "LD", "structures", "in", "the", "genetic", "structure", ",", "the", "QQ", "plot", "for", "the", "permuted", "data", "(", "Supplementary", "Fig.", "18b", ")", "is", "slightly", "different", "from", "the", "QQ", "plot", "for", "the", "simulated", "data", "." ]
+}, {
+  "sentence_tokens" : [ "The", "QQ", "plot", "for", "the", "yeast", "F2", "data", "(", "Supplementary", "Fig.", "18c", ")", "is", "significantly", "different", "from", "the", "plots", "for", "simulated", "and", "permutated", "data", "." ]
+}, {
+  "sentence_tokens" : [ "The", "QQ", "plot", "comparing", "the", "results", "of", "the", "real", "data", "and", "permuted", "data", "(", "Supplementary", "Fig.", "18d", ")", "indicates", "that", "the", "result", "of", "the", "real", "data", "was", "significantly", "different", "from", "the", "result", "of", "the", "permutated", "data", "." ]
+}, {
+  "sentence_tokens" : [ "These", "results", "together", "suggest", "that", "p-value", "itself", "is", "not", "accurate", "and", "it", "is", "better", "to", "use", "FDR", "values", "to", "control", "errors.MPTGA", "and", "TGCT", "share", "similarity", "with", "common", "genetic", "association", "methods", "and", "temporal", "causality", "methods", "." ]
+}, {
+  "sentence_tokens" : [ "Other", "methods", "have", "been", "developed", "to", "integrate", "genetic", ",", "gene", "expression", "and", "temporal", "information", "to", "construct", "global", "regulatory", "networks", "." ]
+}, {
+  "sentence_tokens" : [ "Instead", "of", "focusing", "on", "inferring", "individual", "regulations", ",", "MPTGA", "is", "mainly", "for", "genetic", "association", "and", "TGCT", "is", "powerful", "for", "identifying", "gene-by-perturbation", "interactions", "." ]
+}, {
+  "sentence_tokens" : [ "Brodt", "et", "al.", "proposed", "the", "DyVER", "method", ",", "which", "analyzes", "genetic", "effect", "at", "each", "individual", "time", "point", "first", ",", "then", "discretize", "genetic", "effects", "at", "different", "time", "points", "into", "two", "states", "." ]
+}, {
+  "sentence_tokens" : [ "Our", "simulation", "results", "indicate", "that", "the", "MPTGA", "method", "is", "more", "sensitive", "than", "methods", "considering", "individual", "time", "points", "separately", "when", "variances", "were", "not", "independent", "(", "Fig.", "2", ")", "." ]
+}, {
+  "sentence_tokens" : [ "More", "importantly", ",", "when", "there", "are", "missing", "data", ",", "there", "is", "no", "performance", "degradation", "for", "methods", "modeling", "all", "time", "points", "together", ",", "but", "there", "is", "clear", "performance", "degradation", "for", "methods", "considering", "individual", "time", "points", "separately", "(", "Supplementary", "Fig.", "5", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Comparing", "the", "results", "of", "Brodt", "et", "al.", "and", "our", "results", ",", "all", "modules", "identified", "in", "Brodt", "et", "al.", "'", "s", "Fig.", "5A", "were", "also", "identified", "by", "all", "methods", "(", "Table", "2", ")", ",", "except", "the", "ChrIII", "MATalpha", "hotspot", "." ]
+}, {
+  "sentence_tokens" : [ "Both", "the", "static", "and", "Fisher", "methods", "identified", "the", "ChrIII", "MATalpha", "hotspot", ",", "but", "the", "number", "of", "traits", "linked", "to", "the", "locus", "was", "less", "than", "the", "cutoff", "for", "the", "MPTGA", "(", "Fig.", "3", "shows", "that", "there", "is", "a", "small", "peak", "at", "the", "locus", ")", "." ]
+}, {
+  "sentence_tokens" : [ "On", "the", "other", "hand", ",", "multiple", "teQTL", "hotspots", "identified", "by", "the", "MPTGA", "method", "are", "not", "reported", "in", "Brodt", "et", "al.", "For", "example", ",", "the", "ChrIX70", ",000", "hotspot", "includes", "gene", "expression", "with", "genetic", "effects", "gradually", "changing", "over", "time", "(", "Fig.", "4a", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Considering", "the", "last", "time", "point", "alone", ",", "the", "Wilcoxon", "rank-sum", "test", "p-value", "was", "<", "0.01", "(", "Fig.", "4d", ")", ",", "but", "not", "significantly", "at", "the", "genome", "level", "." ]
+}, {
+  "sentence_tokens" : [ "The", "DyVER", "method", "(", "as", "well", "as", "the", "method", "proposed", "by", "Francesconi", "and", "Lehner", ")", ",", "which", "aims", "to", "group", "genetic", "effects", "at", "each", "individual", "time", "point", "into", "two", "discrete", "states", "is", "unlikely", "to", "work", "well", "in", "the", "cases", "with", "moderate", "genetic", "effect", "changes", "over", "time", "." ]
+}, {
+  "sentence_tokens" : [ "This", "also", "highlights", "the", "advantage", "of", "the", "MPTGA", "method", "that", "simultaneously", "takes", "all", "time", "points", "into", "consideration.In", "the", "current", "study", ",", "MPTGA", "and", "TGCT", "are", "simplified", "based", "on", "a", "haploid", "system", "." ]
+}, {
+  "sentence_tokens" : [ "They", "can", "be", "generalized", "for", "diploid", "systems", "(", "detailed", "in", "Methods", ")", "." ]
+}, {
+  "sentence_tokens" : [ "When", "applying", "the", "MPTGA", "and", "TGCT", "to", "diploid", "systems", "in", "which", "there", "are", "three", "possible", "genotypes", ",", "00/01/11", "(", "or", "0/1/2", ")", ",", "at", "each", "SNP", ",", "we", "can", "apply", "these", "methods", "directly", "to", "detect", "dominant", "and", "recessive", "effects", "." ]
+}, {
+  "sentence_tokens" : [ "To", "detect", "full", "genetic", "effects", ",", "we", "can", "estimate", "parameters", "for", "each", "genotype", ",", "then", "compare", "them", "with", "the", "estimated", "parameters", "without", "considering", "genotype", "(", "null", "model", ")", "." ]
+}, {
+  "sentence_tokens" : [ "In", "addition", ",", "in", "the", "current", "TGCT", "test", ",", "we", "explicitly", "modeled", "the", "causal", "variable", "in", "an", "AR", "form", "." ]
+}, {
+  "sentence_tokens" : [ "If", "long", "time-series", "data", "are", "available", ",", "a", "more", "flexible", "model", "can", "be", "used", "to", "unify", "the", "models", "used", "in", "MPTGA", "and", "TGCT", ",", "such", "as", "polynomial", "functions", "in", "both", "tests", "(", "detailed", "in", "Methods", ")", "." ]
+}, {
+  "sentence_tokens" : [ "The", "integration", "of", "both", "genetic", "and", "temporal", "information", "in", "our", "study", "represents", "only", "the", "beginning", "step", "needed", "to", "dissect", "the", "dynamic", "regulation", "." ]
+}, {
+  "sentence_tokens" : [ "There", "are", "also", "many", "other", "directions", "for", "improvement", "in", "temporal-genetic", "data", "analysis", "." ]
+}, {
+  "sentence_tokens" : [ "First", ",", "other", "types", "of", "available", "high-throughput", "data", "have", "not", "been", "integrated", "in", "the", "analysis", "yet", "." ]
+}, {
+  "sentence_tokens" : [ "To", "integrate", "multiple", "types", "of", "data", ",", "Zhu", "et", "al.", "reconstructed", "causal", "networks", "and", "predicted", "the", "causal", "regulators", "for", "the", "eQTL", "hotspots", "of", "gene", "expression", "activity", "in", "a", "segregating", "yeast", "population", "." ]
+}, {
+  "sentence_tokens" : [ "Second", ",", "the", "accuracy", "of", "MPTG", "depends", "on", "the", "amount", "of", "data", "available", "and", "data", "associated", "measurement", "errors", "." ]
+}, {
+  "sentence_tokens" : [ "The", "integration", "of", "other", "types", "of", "high-throughput", "data", "might", "reduce", "the", "influence", "of", "these", "errors", "." ]
+}, {
+  "sentence_tokens" : [ "Furthermore", ",", "the", "proposed", "TGCT", "method", "could", "only", "address", "the", "relationship", "between", "a", "pair", "of", "gene", "expression", "traits", "and", "a", "locus", "." ]
+}, {
+  "sentence_tokens" : [ "More", "complicated", "models", "might", "be", "further", "considered", "to", "assess", "and", "represent", "more", "comprehensive", "regulation", "relationships", "as", "a", "larger", "network", ",", "e.g", ".,", "multiple", "QTLs", "affect", "the", "expression", "of", "multiple", "transcripts", "and", "these", "RNAs", "in", "turn", "act", "on", "another", "complex", "trait", "." ]
+}, {
+  "sentence_tokens" : [ "Finally", ",", "our", "procedure", "focuses", "on", "identifying", "causal", "and", "reactive", "relationships", "which", "is", "a", "very", "simplistic", "view", "of", "the", "gene", "networks", "." ]
+}, {
+  "sentence_tokens" : [ "However", ",", "the", "true", "biology", "is", "much", "more", "complicated", "." ]
+}, {
+  "sentence_tokens" : [ "The", "genes", "interacting", "in", "a", "large", "network", "may", "be", "subject", "to", "negative", "and", "positive", "feedback", "control", "." ]
+}, {
+  "sentence_tokens" : [ "Despite", "these", "issues", ",", "the", "ability", "to", "integrate", "both", "the", "genetic", "and", "temporal", "information", "in", "the", "eQTL", "analysis", "offers", "a", "promising", "approach", "to", "understand", "the", "dynamic", "regulation.In", "practice", ",", "the", "power", "of", "MPTGA", "and", "TGCT", "is", "limited", "by", "the", "number", "of", "time", "points", "observed", ",", "the", "number", "of", "individuals", "included", "in", "a", "study", ",", "and", "confounding", "factors", "." ]
+}, {
+  "sentence_tokens" : [ "Comparing", "with", "the", "yeast", "experiments", "where", "all", "experimental", "conditions", "are", "carefully", "controlled", "to", "be", "similar", ",", "there", "are", "multiple", "confounding", "factors", "that", "may", "contribute", "to", "variations", "to", "a", "human", "time", "course", "study", ",", "such", "as", "age", ",", "amount", "of", "sleep", "or", "physical", "exercise", ",", "food", "or", "drug", "taken", ",", "and", "diseases", "." ]
+}, {
+  "sentence_tokens" : [ "Furthermore", ",", "genetic", "architecture", "of", "human", "is", "more", "complex", "than", "that", "of", "yeast", "." ]
+}, {
+  "sentence_tokens" : [ "Blood", "is", "the", "most", "accessible", "human", "tissue", "for", "temporal-genetic", "studies", "." ]
+}, {
+  "sentence_tokens" : [ "We", "previously", "studied", "genetic", "regulation", "of", "human", "blood", "transcriptome", "at", "static", "state", "and", "in", "time", "series", "." ]
+}, {
+  "sentence_tokens" : [ "A", "large", "amount", "of", "trans-eSNPs", "for", "human", "blood", "transcriptome", "were", "identified", "using", "1002", "subjects", "." ]
+}, {
+  "sentence_tokens" : [ "Only", "cis-eSNPs", "but", "no", "trans-eSNP", "was", "identified", "with", "40", "subjects", ",", "suggesting", "it", "was", "underpowered", "for", "detecting", "trans-eSNPs", "." ]
+}, {
+  "sentence_tokens" : [ "An", "eQTL", "study", "in", "Japanese", "population", "indicates", "that", "trans-eSNPs", "can", "be", "detected", "with", "76", "subjects", "." ]
+}, {
+  "sentence_tokens" : [ "To", "identify", "more", "trans-eSNPs", ",", "more", "subjects", "are", "needed", "in", "genetic", "studies", "." ]
+}, {
+  "sentence_tokens" : [ "We", "previously", "showed", "that", "it", "is", "possible", "to", "infer", "temporal", "causal", "relationships", "in", "transcription", "regulation", "of", "human", "blood", "transcriptome", "using", "7", "time", "points", "." ]
+}, {
+  "sentence_tokens" : [ "To", "effectively", "apply", "the", "temporal-genetic", "association", "and", "causality", "tests", "to", "a", "human", "study", ",", "we", "estimate", "that", "at", "least", "8", "time", "points", "and", "200", "individuals", "are", "needed", "." ]
+}, {
+  "sentence_tokens" : [ "It", "is", "worth", "noting", "that", "the", "time", "intervals", "in", "a", "time", "series", "are", "not", "needed", "to", "be", "the", "same", "." ]
+}, {
+  "sentence_tokens" : [ "For", "example", ",", "given", "a", "polynomial", "function", ",", "we", "sampled", "five", "time", "points", "at", "random", "intervals", "and", "simulated", "100", "traits", "(", "Supplementary", "Fig.", "19a", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Then", ",", "we", "fit", "the", "simulated", "traits", "to", "a", "cubic", "polynomial", "function", ",", "which", "almost", "perfectly", "matches", "with", "the", "pattern", "underlying", "the", "simulated", "traits", "(", "Supplementary", "Fig.", "19b", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Thus", ",", "when", "designing", "a", "temporal", "experiment", ",", "it", "is", "better", "to", "sample", "more", "time", "points", "around", "the", "time", "when", "derivatives", "of", "temporal", "patterns", "change", "." ]
+}, {
+  "sentence_tokens" : [ "Methods", "." ]
+}, {
+  "sentence_tokens" : [ "Yeast", "data", "." ]
+}, {
+  "sentence_tokens" : [ "A", "set", "of", "time-series", "messenger", "RNA", "gene", "expression", "data", "is", "available", ",", "which", "measured", "the", "gene", "expression", "levels", "of", "95", "genotyped", "haploid", "yeast", "F2", "segregants", "after", "a", "perturbation", "with", "the", "macrolide", "drug", "rapamycin", "." ]
+}, {
+  "sentence_tokens" : [ "These", "segregants", "were", "constructed", "and", "genotyped", "by", "Brem", "et", "al.", "and", "were", "derived", "from", "two", "genetically", "diverse", "parental", "yeast", "strains", "BY4716", "(", "BY", ")", "and", "RM11-1a", "(", "RM", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Each", "yeast", "segregant", "in", "this", "set", "of", "time-series", "data", "was", "sampled", "at", "10", "min", "intervals", "for", "up", "to", "50", "min", "after", "rapamycin", "addition", ",", "and", "RNA", "was", "extracted", "and", "profiled", "with", "Affymetrix", "Yeast", "2.0", "microarrays", "." ]
+}, {
+  "sentence_tokens" : [ "This", "dataset", "was", "used", "for", "constructing", "predictive", "networks", "by", "taking", "advantage", "of", "both", "genetic", "variations", "and", "time", "dependencies", "." ]
+}, {
+  "sentence_tokens" : [ "A", "total", "5703", "gene", "expression", "traits", "and", "2956", "SNPs", "were", "used", "in", "the", "current", "study", "." ]
+}, {
+  "sentence_tokens" : [ "Methods", "for", "time", "series", "based", "eQTL", "analysis", "." ]
+}, {
+  "sentence_tokens" : [ "To", "model", "the", "behavior", "of", "a", "quantitative", "trait", "over", "time", "with", "respect", "to", "a", "given", "genetic", "locus", ",", "we", "can", "model", "the", "behavior", "of", "the", "trait", "using", "different", "continuous", "functions", "for", "each", "possible", "genotype", "at", "a", "given", "locus", "." ]
+}, {
+  "sentence_tokens" : [ "For", "example", ",", "in", "the", "case", "of", "a", "haploid", "organism", ",", "consider", "a", "gene", "expression", "trait", ",", "Y", ",", "assayed", "in", "individual", "i", "at", "time", "t", "at", "a", "particular", "marker", "location", "with", "two", "genotypes", "." ]
+}, {
+  "sentence_tokens" : [ "In", "this", "case", "we", "can", "generally", "represent", "the", "expression", "levels", "of", "the", "trait", "as", "y", "(", "t", ")", "=", "delta", "g", "(", "t", ")", "+", "delta", "g", "(", "t", ")", "+", "epsilon", "(", "t", ")", ",", "where", "delta", "and", "delta", "are", "the", "indicator", "variables", "for", "the", "two", "possible", "genotypes", "at", "the", "marker", "for", "individual", "i", ",", "and", "g", "(", "t", ")", "and", "g", "(", "t", ")", "are", "functions", "representing", "the", "dynamic", "process", "for", "individuals", "with", "different", "genotypes", "(", "the", "two", "possible", "genotypes", "here", "have", "been", "encoded", "as", "0", "and", "1", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Although", "the", "functions", "could", "take", "on", "any", "form", "that", "can", "be", "appropriately", "parameterized", "(", "e.g", ".,", "exponential", ",", "polynomial", ",", "and", "so", "on", ")", ",", "we", "consider", "K", "degree", "polynomial", "forms", "here", "given", "they", "are", "flexible", "and", "commonly", "used", "in", "fitting", "complex", "curves", ":", "gt", "=", "sum", "k", "=", "0K", "beta", "ktk", ",", "with", "coefficient", "beta", "for", "the", "exponent", "k.", "Given", "this", "form", "of", "trait", "behavior", "over", "time", ",", "the", "trait", "with", "respect", "to", "a", "given", "genetic", "locus", "can", "be", "expressed", "as", ":", "y", "(", "t", ")", "=", "delta", "i0", "sum", "k", "=", "0K", "beta", "k0tk", "+", "delta", "i1", "sum", "k", "=", "0K", "beta", "k1tk+", "epsilon", "i", "(", "t", ")", "." ]
+}, {
+  "sentence_tokens" : [ "For", "each", "genetic", "association", "approach", "described", "below", ",", "FDR", "was", "estimated", "by", "permutation", "tests", "in", "which", "the", "strain", "labels", "are", "randomly", "permuted", "so", "that", "the", "correlation", "of", "the", "expression", "traits", "was", "maintained", ",", "while", "any", "genetic", "associations", "were", "destroyed", "." ]
+}, {
+  "sentence_tokens" : [ "When", "applying", "to", "the", "yeast", "data", "set", ",", "we", "divided", "whole", "yeast", "genome", "into", "602", "bins", "of", "20", "kb", "in", "size", "." ]
+}, {
+  "sentence_tokens" : [ "The", "thresholds", "for", "declaring", "eQTL", "hotspots", "are", "based", "on", "binomial", "test", "p-value", "cutoff", "0.05/602", "." ]
+}, {
+  "sentence_tokens" : [ "We", "assumed", "that", "the", "number", "of", "eQTL", "in", "a", "bin", "follows", "the", "binomial", "distribution", "with", "parameters", "n", "=", "total", "number", "of", "linkage", "identified", "across", "the", "whole", "genome", "and", "p", "=", "1/602", ",", "which", "assumes", "equal", "probability", "of", "linkage", "among", "the", "602", "bins", "." ]
+}, {
+  "sentence_tokens" : [ "Thus", ",", "under", "the", "hypothesis", "of", "binomial", "distribution", ",", "the", "threshold", "N", "was", "selected", "such", "that", "the", "probability", "of", "observing", "at", "least", "N", "eQTL", "linkage", "is", "less", "than", "0.05/602", "." ]
+}, {
+  "sentence_tokens" : [ "Static", "method", "." ]
+}, {
+  "sentence_tokens" : [ "Traditional", "eQTL", "analysis", "is", "restricted", "to", "gene", "expression", "levels", "at", "a", "static", "state", ",", "among", "which", "a", "straightforward", "method", "is", "to", "split", "segregants", "into", "two", "groups", "according", "to", "their", "genotypes", "at", "a", "marker", "and", "perform", "the", "t-test", "or", "Wilcoxon", "rank-sum", "test", "to", "check", "whether", "there", "is", "sufficient", "evidence", "that", "the", "gene", "expression", "levels", "are", "significantly", "different", "between", "the", "two", "groups", "." ]
+}, {
+  "sentence_tokens" : [ "Union", "method", "." ]
+}, {
+  "sentence_tokens" : [ "A", "straightforward", "approach", "to", "leverage", "gene", "expression", "data", "of", "whole", "time", "series", "is", "to", "perform", "eQTL", "analysis", "at", "each", "time", "point", "independently", ",", "then", "combine", "the", "results", "from", "analysis", "of", "all", "six", "time", "point", "at", "a", "locus", "as", "the", "following", ":", "pj", "=", "argmintpt", ",", "j", ",", "where", "p", "is", "the", "Wilcoxon", "rank-sum", "test", "p-value", "for", "the", "gene", "expression", "trait", "j", "at", "the", "time", "point", "t." ]
+}, {
+  "sentence_tokens" : [ "It", "means", "that", "if", "a", "gene", "expression", "trait", "was", "significantly", "linked", "to", "a", "locus", "at", "any", "of", "the", "six", "time", "points", ",", "the", "trait", "was", "linked", "to", "the", "locus", "in", "the", "union", "method", "." ]
+}, {
+  "sentence_tokens" : [ "The", "significant", "p-value", "cutoff", "is", "determined", "by", "permutation", "tests", "with", "FDR", "<", "0.05", "." ]
+}, {
+  "sentence_tokens" : [ "Meta-analysis", ":", "Fisher", "'s", "p-value", "." ]
+}, {
+  "sentence_tokens" : [ "A", "meta-analysis", "approach", "over", "a", "time-series", "data", "assumes", "that", "data", "at", "different", "points", "are", "repeated", "measurements", "of", "the", "same", "underlying", "data", "." ]
+}, {
+  "sentence_tokens" : [ "Similar", "to", "the", "union", "method", ",", "we", "perform", "eQTL", "analysis", "at", "each", "time", "point", "independently", ",", "then", "combine", "the", "results", "from", "analysis", "of", "all", "six", "time", "point", "at", "a", "locus", "as", "the", "following", ":", "p", "=", "product", "tpt", ",", "j", ",", "where", "p", "is", "the", "Wilcoxon", "rank-sum", "test", "p-value", "for", "the", "gene", "expression", "trait", "j", "at", "the", "time", "point", "t." ]
+}, {
+  "sentence_tokens" : [ "The", "significant", "p-value", "cutoff", "is", "determined", "by", "permutation", "tests", "with", "FDR", "<", "0.05", "." ]
+}, {
+  "sentence_tokens" : [ "Multivariate", "analysis", "of", "variance", "." ]
+}, {
+  "sentence_tokens" : [ "MANOVA", "takes", "into", "account", "the", "covariance", "between", "multiple", "dependent", "variables", "and", "thus", "is", "specifically", "appropriate", "in", "testing", "for", "association", "between", "a", "SNP", "and", "multiple", "correlated", "gene", "expression", "traits", "across", "different", "time", "points", "." ]
+}, {
+  "sentence_tokens" : [ "In", "particular", ",", "we", "test", "the", "hypothesis", ":", "H0", ":", "mu", "0t", "=", "mu", "1t", ",", "foralltvs.H1", ":", "mu", "0t", "!=", "mu", "1t", ",", "foratleastonetWhere", "mu", "represents", "the", "mean", "gene", "expression", "level", "in", "the", "genotype", "g", "group", "at", "the", "testing", "locus", "at", "time", "point", "t." ]
+}, {
+  "sentence_tokens" : [ "If", "MANOVA", "identifies", "significant", "difference", "of", "gene", "expression", "levels", "across", "different", "time", "points", "between", "groups", "of", "samples", "with", "different", "genotypes", ",", "we", "declare", "an", "eQTL", "for", "the", "trait", "at", "the", "testing", "locus", "." ]
+}, {
+  "sentence_tokens" : [ "Regression", "method", "." ]
+}, {
+  "sentence_tokens" : [ "Many", "gene", "expression", "changes", "in", "time-series", "were", "not", "monotonic", "and", "sometimes", "have", "more", "than", "one", "fluctuation", "(", "Supplementary", "Fig.", "20", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Neither", "linear", "function", "nor", "quadratic", "polynomial", "was", "sufficient", "to", "capture", "underlying", "these", "dynamic", "patterns", "." ]
+}, {
+  "sentence_tokens" : [ "On", "the", "other", "hand", ",", "there", "were", "only", "6", "time", "points", "in", "our", "time-series", "data", "." ]
+}, {
+  "sentence_tokens" : [ "A", "cubic", "polynomial", "was", "sufficient", "to", "capture", "all", "dynamic", "patterns", "in", "this", "study", "(", "Supplementary", "Fig.", "21", ")", "." ]
+}, {
+  "sentence_tokens" : [ "We", "also", "tried", "to", "use", "higher", "degree", "polynomials", "to", "fit", "the", "dynamic", "gene", "expression", "changes", "." ]
+}, {
+  "sentence_tokens" : [ "The", "average", "mean", "squared", "errors", "were", "similar", "to", "the", "one", "with", "the", "cubic", "polynomials", "used", "(", "Supplementary", "Fig.", "22", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Therefore", ",", "we", "selected", "the", "cubic", "polynomial", "curve", "fitting", "throughout", "this", "paper", ":", "g", "(", "t", ")", "=", "beta", "+", "beta", "t", "+", "beta", "t", "+", "beta", "t", "." ]
+}, {
+  "sentence_tokens" : [ "A", "general", "regression", "model", "with", "cubic", "polynomial", "fitting", "for", "a", "trait", "y", "is", "y", "(", "t", ")", "=", "beta", "+", "beta", "t", "+", "beta", "t", "+", "beta", "t", "+", "epsilon", ",", "in", "which", "the", "predictor", "variables", "are", "(", "t", ",", "t", ",", "t", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Thus", ",", "each", "set", "of", "time-series", "data", "contributed", "six", "observations", "in", "the", "regression", "model", "and", "the", "total", "number", "of", "observations", "was", "6N", ",", "where", "N", "is", "the", "total", "number", "of", "segregants", "in", "the", "yeast", "F2", "data", "set", "." ]
+}, {
+  "sentence_tokens" : [ "To", "examine", "the", "difference", "between", "segregants", "with", "different", "genotypes", ",", "we", "compared", "the", "reduced", "model", "H", "(", "single", "fitting", "y", "(", "t", ")", "=", "beta", "+", "beta", "t", "+", "beta", "t", "+", "beta", "t", "+", "epsilon", ")", "with", "a", "full", "model", "H", "(", "separate", "fitting", "for", "each", "genotype", ")", "asyit", "=", "delta", "i0", "beta", "00+", "beta", "10t+", "beta", "20t2+", "beta", "30t3+", "delta", "i1", "beta", "01+", "beta", "11t+", "beta", "21t2+", "beta", "31t3+", "epsilon", "i", ",", "where", "delta", "and", "delta", "are", "the", "indicator", "variables", "for", "genotype", "0", "and", "genotype", "1", "." ]
+}, {
+  "sentence_tokens" : [ "We", "performed", "an", "F-test", "to", "compare", "the", "reduced", "model", "against", "the", "full", "model", "to", "detect", "eQTL", "association", "." ]
+}, {
+  "sentence_tokens" : [ "Multivariate", "polynomial", "temporal", "genetic", "association", "." ]
+}, {
+  "sentence_tokens" : [ "MPTGA", "was", "similar", "to", "the", "regression", "model", "described", "above", "." ]
+}, {
+  "sentence_tokens" : [ "Regression", "model", "assumed", "variances", "at", "each", "time", "points", "were", "independent", "while", "MPTGA", "assumes", "variances", "are", "related", "." ]
+}, {
+  "sentence_tokens" : [ "Similar", "to", "Ma", "et", "al.", ",", "we", "assumed", "that", "for", "each", "genotype", ",", "the", "time-series", "gene", "expression", "trait", "followed", "a", "multivariate", "normal", "density", ",", "in", "which", "the", "mean", "vector", "is", "modeled", "by", "a", "polynomial", "function", "g", "=", "gjt1", "x", "m", "=", "sum", "k", "=", "0K", "beta", "kjtk1", "x", "m", ",", "where", "m", "is", "the", "number", "of", "time", "points", "in", "time-series", "data", "." ]
+}, {
+  "sentence_tokens" : [ "Variance", "at", "each", "time", "point", "follows", "a", "first", "order", "AR", "model", "AR", "(", "1", ")", "as", ":", "Sigma", "=", "sigma", "e21", "rho", "..." ]
+}, {
+  "sentence_tokens" : [ "rho", "m-1", "rho", "1", "..." ]
+}, {
+  "sentence_tokens" : [ "rho", "m-2", "..." ]
+}, {
+  "sentence_tokens" : [ "..." ]
+}, {
+  "sentence_tokens" : [ "..." ]
+}, {
+  "sentence_tokens" : [ "..." ]
+}, {
+  "sentence_tokens" : [ "rho", "m-1", "rho", "m-2", "..." ]
+}, {
+  "sentence_tokens" : [ "1", "." ]
+}, {
+  "sentence_tokens" : [ "The", "density", "for", "time-series", "data", "could", "be", "written", "as", "f", "(", "y", ")", "=", "12", "pi", "m", "/", "2", "Sigma", "1", "/", "2expy-gj", "Sigma-1y-gjT", "/", "2.In", "our", "studies", ",", "the", "mean", "vector", "was", "then", "modeled", "by", "the", "cubic", "curve", "g", "=", "[", "g", "(", "t", ")", "]", "=", "[", "beta", "+", "beta", "t", "+", "beta", "t", "+", "beta", "t", "]", "." ]
+}, {
+  "sentence_tokens" : [ "The", "joint", "likelihood", "for", "N", "=", "95", "segregants", "was", "then", "L", "(", "Theta", ")", "=", "product", "i", "=", "1N", "delta", "i0f0", "(", "yi", ")", "+", "delta", "i1f1", "(", "yi", ")", ",", "where", "Theta", "=", "(", "beta", ",", "beta", ",", "beta", ",", "beta", ",", "rho", ",", "sigma", "e2", ")", "is", "the", "set", "of", "unknown", "parameters", "in", "the", "statistical", "model", "." ]
+}, {
+  "sentence_tokens" : [ "Maximum", "likelihood", "estimates", "(", "MLEs", ")", "were", "calculated", "by", "taking", "derivative", "of", "log", "L", "(", "Theta", ")", "with", "respect", "to", "each", "unknown", "parameter", "." ]
+}, {
+  "sentence_tokens" : [ "To", "solve", "these", "equations", ",", "we", "first", "expressed", "beta", "'", "s", ",", "sigma", "e2", "and", "log", "L", "(", "Theta", ")", "as", "functions", "of", "rho", "as", "below", ",", "then", "looked", "for", "the", "critical", "point", "of", "log", "L", "(", "Theta", ")", "which", "reached", "its", "maximum.Notation", ":", "T0", "=", "sum", "i", "=", "1N", "delta", "i0yi", ",", "T1", "=", "sum", "i", "=", "1N", "delta", "i1yi", ",", "I", "=", "[", "1", "..." ]
+}, {
+  "sentence_tokens" : [ "1", "]", ",", "I", "=", "[", "1", "..." ]
+}, {
+  "sentence_tokens" : [ "m", "]", ",", "I2", "=", "I1", "." ]
+}, {
+  "sentence_tokens" : [ "2", "=", "1", "..." ]
+}, {
+  "sentence_tokens" : [ "m2", ",", "I3", "=", "I1", "." ]
+}, {
+  "sentence_tokens" : [ "3", "=", "1", "..." ]
+}, {
+  "sentence_tokens" : [ "m3", ",", "Q", "rho", ",", "U", ",", "V", "=", "11-rho", "2U1V1+", "UmVm", "-", "rho", "1-rho", "2", "sum", "i", "=", "1m-1UiVi", "+1+", "Ui", "+1", "Vi", "+", "1+", "rho", "21-rho", "2", "sum", "i", "=", "2m-1UiVi", ",", "where", "U", "=", "[", "U", ",", "..." ]
+}, {
+  "sentence_tokens" : [ ",", "U", "]", "and", "V", "=", "[", "V", ",", "..." ]
+}, {
+  "sentence_tokens" : [ ",", "V", "]", "." ]
+}, {
+  "sentence_tokens" : [ "By", "taking", "derivative", "of", "log", "L", "(", "Theta", ")", "with", "respect", "to", "beta", "'", "s", ",", "the", "following", "linear", "system", "was", "obtained", ":", "alpha", "11", "beta", "00+", "alpha", "12", "beta", "10+", "alpha", "13", "beta", "20+", "alpha", "14", "beta", "30", "=", "b1", "alpha", "21", "beta", "00+", "alpha", "22", "beta", "10+", "alpha", "23", "beta", "20+", "alpha", "24", "beta", "30", "=", "b2", "alpha", "31", "beta", "00+", "alpha", "32", "beta", "10+", "alpha", "33", "beta", "20+", "alpha", "34", "beta", "30", "=", "b3", "alpha", "41", "beta", "00+", "alpha", "42", "beta", "10+", "alpha", "43", "beta", "20+", "alpha", "44", "beta", "30", "=", "b4", ",", "where", "alpha", "=", "n", "Q", "(", "rho", ",", "I", ",", "I", ")", "and", "b", "=", "Q", "(", "rho", ",", "T", ",", "I", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Here", ",", "n0", "=", "sum", "i", "=", "1N", "delta", "i0", "and", "n1", "=", "sum", "i", "=", "1N", "delta", "i1", "." ]
+}, {
+  "sentence_tokens" : [ "Then", ",", "the", "coefficients", "for", "the", "linear", "system", "could", "be", "obtained", "by", "beta", "00", "beta", "10", "beta", "20", "beta", "30", "=", "alpha", "11", "alpha", "12", "alpha", "13", "alpha", "14", "alpha", "21", "alpha", "22", "alpha", "23", "alpha", "24", "alpha", "31", "alpha", "32", "alpha", "33", "alpha", "34", "alpha", "41", "alpha", "42", "alpha", "43", "alpha", "44-1", "*", "b1b2b3b4", "." ]
+}, {
+  "sentence_tokens" : [ "beta", "'", "s", "could", "be", "obtained", "similarly", "." ]
+}, {
+  "sentence_tokens" : [ "Taking", "derivative", "with", "respect", "to", "sigma", ",", "we", "had", "sigma", "e2", "=", "sum", "i", "=", "1NQ", "rho", ",", "yi", ",", "yi+", "sum", "i", "=0", ",1", "Q", "rho", ",", "Ti", ",", "Ti-sum", "j", "=", "032", "beta", "jiQ", "rho", ",", "Ti", ",", "Ij+", "sum", "j", "=", "03", "sum", "k", "=", "03ni", "beta", "ji", "beta", "kiQ", "rho", ",", "Ij", ",", "IkmN", "." ]
+}, {
+  "sentence_tokens" : [ "Since", "we", "already", "had", "beta", "'", "s", "in", "terms", "of", "rho", ",", "here", "sigma", "e2", "was", "expressed", "as", "a", "function", "of", "rho", ",", "too", "." ]
+}, {
+  "sentence_tokens" : [ "The", "log", "likelihood", "could", "be", "written", "as", "logL", "Theta", "=", "-mN2log2", "pi", "-", "N2m-1log1-rho", "2+", "mlog", "sigma", "e2", "-", "mN2", ",", "thus", "the", "MLE", "rho", "^", "could", "be", "obtained", "by", "looking", "for", "the", "critical", "point", "that", "maximizes", "log", "L", "(", "Theta", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Then", "the", "MLE", "for", "(", "beta", ",", "beta", ",", "beta", ",", "beta", ",", "sigma", "e2", ")", "could", "also", "be", "obtained.After", "determining", "parameters", "with", "MLE", "procedure", ",", "LR", "test", "was", "performed", "to", "test", "the", "hypothesis", "of", "the", "existence", "of", "eQTL", "by", "comparing", "a", "reduced", "model", "H", "(", "single", "gene", "expression", "trait", "curve", ")", "against", "the", "full", "model", "H", "(", "different", "gene", "expression", "trait", "curve", "for", "different", "genotypes", ")", ":", "H0", ":", "beta", "00", "=", "beta", "01", ",", "beta", "10", "=", "beta", "11", ",", "beta", "20", "=", "beta", "21", ",", "beta", "30", "=", "beta", "31H1", ":", "atleastoneoftheequalitiesdoesnothold.It", "is", "noteworthy", "that", "MPTGA", "is", "equivalent", "to", "the", "regression", "method", "when", "the", "AR", "coefficient", "rho", "is", "forced", "to", "be", "zero", ",", "assuming", "independent", "relationship", "among", "observations", "in", "the", "time", "series", "as", "the", "regression", "method", "." ]
+}, {
+  "sentence_tokens" : [ "Therefore", ",", "it", "is", "expected", "that", "the", "regression", "method", "would", "have", "similar", "performance", "as", "the", "MPTGA", "method", "when", "the", "time-series", "data", "is", "of", "low", "self-dependency", "." ]
+}, {
+  "sentence_tokens" : [ "The", "AR", "model", "." ]
+}, {
+  "sentence_tokens" : [ "Time-series", "data", "are", "commonly", "modeled", "by", "a", "time", "lagged", "AR", "model", "(", "first", "ordered", "AR", "model", "as", "an", "example", ")", ":", "Yi", ",", "t", "=", "beta", "0+", "beta", "1Yi", ",", "t-1+", "epsilon", "i", ",", "t.To", "access", "whether", "Trait", "Y", "is", "associated", "with", "a", "genetic", "locus", ",", "we", "compared", "a", "null", "modelH0", ":", "Yi", ",", "t", "=", "beta", "0+", "beta", "1Yi", ",", "t-1+", "epsilon", "i", ",", "t", ",", "t", "=", "2", ",", "..." ]
+}, {
+  "sentence_tokens" : [ ",6", "vs.", "a", "full", "model", "(", "fitting", "each", "genotype", "separately", ")", "asH1", ":", "Yi", ",", "t", "=", "delta", "i0", "(", "beta", "00+", "beta", "10Yi", ",", "t-1", ")", "+", "delta", "i1", "(", "beta", "01+", "beta", "11Yi", ",", "t-1", ")", "+", "epsilon", "i", ",", "t", ",", "t", "=", "2", ",", "..." ]
+}, {
+  "sentence_tokens" : [ ",6", ",", "where", "delta", "and", "delta", "are", "the", "indicator", "variables", "for", "genotype", "0", "and", "genotype", "1", "." ]
+}, {
+  "sentence_tokens" : [ "It", "is", "noteworthy", "that", "this", "formulation", "corresponds", "to", "the", "independent", "model", "M3", "in", "the", "TGCT", "test", "section", "below", "and", "we", "will", "refer", "to", "this", "method", "as", "the", "AR", "method", "in", "temporal-genetic", "association", "tests", "." ]
+}, {
+  "sentence_tokens" : [ "We", "performed", "a", "linear", "regression", "to", "estimate", "the", "parameters", "under", "each", "model", "and", "used", "an", "F-test", "to", "compare", "the", "null", "model", "against", "the", "full", "model", "to", "detect", "eQTL", "associations", "." ]
+}, {
+  "sentence_tokens" : [ "Estimating", "confident", "intervals", "of", "eQTLs", "." ]
+}, {
+  "sentence_tokens" : [ "We", "employed", "the", "chi", "quantile", "method", "in", "the", "LOD", "score", "test", "described", "in", "Mangin", "et", "al.", ",", "in", "which", "the", "corresponding", "statistic", "T", "(", "d", ")", "follows", "a", "chi", "square", "distribution", "with", "N", "degree", "of", "freedom", "under", "the", "null", "hypothesis", "that", "d", "is", "the", "QTL", "position", "." ]
+}, {
+  "sentence_tokens" : [ "The", "(", "1", "-", "alpha", ")", "confidence", "interval", "is", "then", "defined", "as", "[", "dinf", ",", "dsup", "]", ",", "where", "dinf", "(", "dsup", ")", "is", "the", "smallest", "(", "the", "greatest", ")", "value", "of", "d", "such", "that", "T", "(", "d", ")", "is", "smaller", "than", "chi", "N", ",", "alpha", "2", ",", "where", "chi", "N", ",", "alpha", "2", "is", "the", "alpha", "quantile", "of", "a", "chi", "2", "with", "N", "degree", "of", "freedom", "." ]
+}, {
+  "sentence_tokens" : [ "Here", ",", "T", "(", "d0", ")", "=", "supd", "[", "R", "(", "d", ")", "]-R", "(", "d0", ")", "and", "R", "(", "d", ")", "is", "the", "-", "2", "*", "log-LR", "statisticR", "(", "d", ")", "=", "-2", "loglikelihoodofdatawithnoeQTLlikelihoodofdatawithaneQTLatd", "." ]
+}, {
+  "sentence_tokens" : [ "Temporal-genetic", "causality", "test", "." ]
+}, {
+  "sentence_tokens" : [ "Temporal", "QTL", "can", "be", "treated", "as", "a", "systematic", "source", "of", "perturbation", "to", "infer", "causality", "among", "traits", "associated", "with", "the", "QTL", "." ]
+}, {
+  "sentence_tokens" : [ "We", "and", "others", "have", "previously", "demonstrated", "that", "for", "two", "traits", "associated", "with", "a", "given", "genetic", "locus", "there", "are", "a", "limited", "number", "of", "causal", "relationships", "possible", "between", "the", "traits", "(", "Supplementary", "Fig.", "1", ")", ":", "(", "1", ")", "Trait", "X", "is", "causal", "for", "Trait", "Y", "(", "M1", ")", ";", "(", "2", ")", "Trait", "Y", "is", "causal", "for", "Trait", "X", "(", "M2", ")", ";", "(", "3", ")", "Trait", "X", "is", "independent", "of", "Trait", "Y", "(", "M3", ")", ";", "(", "4", ")", "Trait", "X", "is", "partially", "causal", "for", "Trait", "Y", "(", "M4", ")", ";", "(", "5", ")", "Trait", "Y", "is", "partially", "causal", "for", "Trait", "X", "(", "M5", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Models", "M1", "and", "M2", "are", "the", "simplest", "causal", "relationships", "between", "two", "traits", "in", "which", "a", "given", "locus", "acts", "on", "one", "of", "the", "traits", "through", "the", "other", "." ]
+}, {
+  "sentence_tokens" : [ "Model", "M3", "is", "the", "fully", "independent", "model", "in", "which", "the", "genetic", "locus", "acts", "independently", "on", "each", "trait", "." ]
+}, {
+  "sentence_tokens" : [ "Models", "M4", "and", "M5", "represent", "partial", "causal", "relationships", "in", "which", "one", "trait", "is", "causal", "for", "the", "other", ",", "but", "the", "genetic", "locus", "acts", "independently", "on", "each", "trait.Static", "eQTLs", "and", "teQTLs", "were", "not", "evenly", "distributed", "along", "the", "whole", "genome", "." ]
+}, {
+  "sentence_tokens" : [ "There", "were", "loci", "referred", "to", "as", "eQTL", "hotspots", "where", "many", "gene", "expression", "traits", "were", "linked", "." ]
+}, {
+  "sentence_tokens" : [ "It", "is", "important", "to", "dissect", "causal", "regulators", "underlying", "these", "eQTL", "hotspot", "loci", ",", "which", "can", "regulate", "a", "large", "number", "of", "gene", "expression", "traits", "." ]
+}, {
+  "sentence_tokens" : [ "To", "identify", "causal", "regulators", "for", "a", "given", "hotspot", ",", "Zhu", "et", "al.", "first", "identified", "genes", "with", "cis-eQTL", "in", "the", "corresponding", "eQTL", "hotspot", "region", "and", "inferred", "their", "downstream", "regulated", "genes", "as", "the", "set", "of", "genes", "that", "could", "be", "reached", "in", "the", "integrative", "molecular", "Bayesian", "Network", "." ]
+}, {
+  "sentence_tokens" : [ "If", "the", "downstream", "set", "of", "a", "cis", "regulated", "gene", "at", "an", "eQTL", "hotspot", "locus", "is", "significantly", "enriched", "for", "eQTLs", "linked", "to", "the", "locus", ",", "the", "cis", "regulated", "gene", "is", "inferred", "as", "a", "key", "regulator", "of", "the", "eQTL", "hotspot", "." ]
+}, {
+  "sentence_tokens" : [ "Instead", "of", "integrating", "diverse", "data", "into", "a", "global", "causal", "network", ",", "we", "aim", "to", "test", "pairwise", "causality", "by", "leveraging", "time", "dependent", "genetic", "data.The", "LCMS", "proposed", "by", "Schadt", "et", "al.", "used", "normal", "distributions", "to", "model", "the", "static", "time", "expression", "trait", "data", "." ]
+}, {
+  "sentence_tokens" : [ "Here", "with", "multi-dimensional", "time-series", "data", ",", "we", "seek", "to", "combine", "both", "the", "dynamic", "information", "and", "genetic", "information", "to", "infer", "the", "causal", "relationship", "between", "two", "time", "series", "more", "precisely", "." ]
+}, {
+  "sentence_tokens" : [ "Granger", "formalized", "the", "idea", "of", "time", "series", "based", "causality", "test", "in", "the", "context", "of", "linear", "regression", "." ]
+}, {
+  "sentence_tokens" : [ "The", "idea", "of", "Granger", "causality", "is", "to", "test", "whether", "the", "prediction", "of", "the", "time", "series", "could", "be", "significantly", "improved", "by", "incorporating", "information", "from", "previous", "time", "points", "in", "a", "second", "time", "series", ",", "and", "thus", "to", "test", "whether", "the", "second", "time", "series", "has", "a", "causal", "effect", "on", "the", "first", "time", "series", "." ]
+}, {
+  "sentence_tokens" : [ "Mathematically", ",", "Granger", "causality", "test", "compares", "the", "reduced", "model", "with", "the", "full", "model", ",", "which", "adds", "the", "lagged", "information", "of", "another", "time", "series", "as", "a", "predictor", "in", "regression", ",", "and", "tests", "whether", "the", "improvement", "in", "fitting", "the", "data", "is", "significant", "." ]
+}, {
+  "sentence_tokens" : [ "We", "adopted", "the", "idea", "to", "include", "the", "lagged", "values", "of", "one", "time", "series", "to", "augment", "the", "autoregression", "when", "comparing", "the", "causal", "relation", "and", "independent", "relation", "." ]
+}, {
+  "sentence_tokens" : [ "Due", "to", "a", "small", "number", "of", "time", "points", "available", ",", "we", "used", "first-order", "autoregression", "model", "AR", "(", "1", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Specifically", ",", "the", "five", "models", "in", "Supplementary", "Fig.", "1", "were", "represented", "as", ":", "M1", ":", "Xi", ",", "t", "=", "delta", "i0", "(", "alpha", "00+", "alpha", "10Xi", ",", "t-1", ")", "+", "delta", "i1", "(", "alpha", "01+", "alpha", "11Xi", ",", "t-1", ")", "+", "epsilon", "i", ",", "tYi", ",", "t", "=", "beta", "0+", "beta", "1Yi", ",", "t-1+", "beta", "2Xi", ",", "t-1+", "mu", "i", ",", "tM2", ":", "Yi", ",", "t", "=", "delta", "i0", "(", "beta", "00+", "beta", "10Yi", ",", "t-1", ")", "+", "delta", "i1", "(", "beta", "01+", "beta", "11Yi", ",", "t-1", ")", "+", "mu", "i", ",", "tXi", ",", "t", "=", "alpha", "0+", "alpha", "1Xi", ",", "t-1+", "alpha", "2Yi", ",", "t-1+", "epsilon", "i", ",", "tM3", ":", "Xi", ",", "t", "=", "delta", "i0", "(", "alpha", "00+", "alpha", "10Xi", ",", "t-1", ")", "+", "delta", "i1", "(", "alpha", "01+", "alpha", "11Xi", ",", "t-1", ")", "+", "epsilon", "i", ",", "tYi", ",", "t", "=", "delta", "i0", "(", "beta", "00+", "beta", "10Yi", ",", "t-1", ")", "+", "delta", "i1", "(", "beta", "01+", "beta", "11Yi", ",", "t-1", ")", "+", "mu", "i", ",", "tM4", ":", "Xi", ",", "t", "=", "delta", "i0", "(", "alpha", "00+", "alpha", "10Xi", ",", "t-1", ")", "+", "delta", "i1", "(", "alpha", "01+", "alpha", "11Xi", ",", "t-1", ")", "+", "epsilon", "i", ",", "tYi", ",", "t", "=", "delta", "i0", "(", "beta", "00+", "beta", "10Yi", ",", "t-1", ")", "+", "delta", "i1", "(", "beta", "01+", "beta", "11Yi", ",", "t-1", ")", "+", "beta", "2Xi", ",", "t-1+", "mu", "i", ",", "tM5", ":", "Yi", ",", "t", "=", "delta", "i0", "(", "beta", "00+", "beta", "10Yi", ",", "t-1", ")", "+", "delta", "i1", "(", "beta", "01+", "beta", "11Yi", ",", "t-1", ")", "+", "mu", "i", ",", "tXi", ",", "t", "=", "delta", "i0", "(", "alpha", "00+", "alpha", "10Xi", ",", "t-1", ")", "+", "delta", "i1", "(", "alpha", "01+", "alpha", "11Xi", ",", "t-1", ")", "+", "alpha", "2Yi", ",", "t-1+", "epsilon", "i", ",", "tWe", "used", "different", "autoregression", "parameters", "for", "different", "genotypes", "to", "account", "for", "the", "genetic", "effect", "and", "added", "the", "lagged", "value", "of", "one", "time", "series", "to", "represent", "the", "causal", "effect", "of", "one", "time", "series", "on", "the", "other", "." ]
+}, {
+  "sentence_tokens" : [ "The", "parameters", "in", "each", "model", "were", "estimated", "using", "ordinary", "linear", "regression", "." ]
+}, {
+  "sentence_tokens" : [ "The", "log", "likelihood", "of", "X", "and", "Y", "are", "calculated", "aslnL", "^", "(", "X)", "=-N2ln2", "pi-N2ln", "sum", "i", ",", "t", ">", "1Xi", ",", "t-X", "^", "i", ",", "t2+", "N2lnN-N2andlnL", "^", "(", "Y", ")", "=-N2ln2", "pi-N2ln", "sum", "i", ",", "t", ">", "1Yi", ",", "t-Y", "i", ",", "t2+", "N2lnN-N2When", "assessing", "the", "causal", "(", "M1", ":", "X", "-->", "Y", ")", "and", "reactive", "(", "M2", ":", "Y", "-->", "X)", "models", ",", "we", "calculated", "log", "joint", "likelihood", "lnL", "^", "(", "X,", "Y", ")", "=", "lnL", "^", "X+", "lnL", "^", "(", "Y", ")", "under", "these", "two", "models", "." ]
+}, {
+  "sentence_tokens" : [ "As", "the", "total", "numbers", "of", "parameters", "in", "M1", "and", "M2", "are", "the", "same", ",", "comparing", "lnL", "^", "(", "X,", "Y", ")", "under", "these", "two", "models", "and", "comparing", "BICs", "are", "equivalent.One", "of", "our", "major", "goals", "of", "the", "TGCT", "test", "is", "to", "identify", "the", "cis-regulators", "of", "teQTL", "hotspots", "." ]
+}, {
+  "sentence_tokens" : [ "If", "we", "assume", "Trait", "X", "with", "a", "cis-eQTL", "linked", "to", "a", "teQTL", "hotspot", ",", "then", "we", "can", "restrict", "the", "model", "selection", "among", "causal", "(", "M1", ":", "X", "-->", "Y", ")", ",", "independent", "(", "M3", ":", "X", "_|_", "Y", ")", ",", "and", "partial", "causal", "(", "M4", ")", "models", "without", "considering", "the", "reactive", "(", "M2", ":", "Y", "-->", "X)", "and", "partial", "reactive", "(", "M5", ")", "models", "." ]
+}, {
+  "sentence_tokens" : [ "In", "such", "cases", ",", "the", "three", "models", "share", "the", "same", "regression", "model", "for", "Trait", "X.", "Thus", ",", "we", "perform", "model", "selection", "based", "only", "on", "the", "regression", "on", "Trait", "Y." ]
+}, {
+  "sentence_tokens" : [ "The", "corresponding", "log", "likelihood", "was", "estimated", "as", "follows", ":", "lnL", "^", "=-N2ln2", "pi-N2ln", "sum", "i", ",", "t", ">", "1Yi", ",", "t-Y", "i", ",", "t2+", "N2lnN-N2And", "BIC", "is", "defined", "as", "BIC", "=", "lnNk-2ln", "(", "L", "^", ")", ",", "where", "k", "is", "the", "number", "of", "parameters", "estimated", "in", "the", "corresponding", "model", "." ]
+}, {
+  "sentence_tokens" : [ "BIC", "penalizes", "complex", "models", "." ]
+}, {
+  "sentence_tokens" : [ "The", "model", "with", "the", "smallest", "BIC", "was", "identified", "as", "the", "model", "best", "supported", "by", "the", "data.For", "each", "teQTL", "hotspot", ",", "we", "first", "identified", "genes", "with", "cis-teQTLs", "linked", "to", "the", "hotspot", "as", "candidate", "causal", "genes", ",", "then", "pair", "these", "cis-eQTL", "genes", "with", "all", "genes", "with", "trans-eQTLs", "linked", "to", "the", "hotspot", "for", "the", "causality", "test", "." ]
+}, {
+  "sentence_tokens" : [ "The", "cis-eQTL", "genes", "with", "the", "number", "of", "causal", "relations", "significantly", "more", "than", "expected", "by", "chance", "(", "the", "cutoff", "value", "for", "defining", "a", "teQTL", "hotspot", ")", "were", "selected", "as", "the", "putative", "key", "regulators", "of", "the", "eQTL", "hotspot", "." ]
+}, {
+  "sentence_tokens" : [ "MPTGA", "and", "TGCT", "in", "diploid", "systems", "." ]
+}, {
+  "sentence_tokens" : [ "The", "above", "MPTGA", "and", "TGCT", "are", "simplified", "based", "on", "a", "haploid", "system", "." ]
+}, {
+  "sentence_tokens" : [ "When", "applying", "the", "MPTGA", "and", "TGCT", "to", "diploid", "systems", "in", "which", "there", "are", "three", "possible", "genotypes", ",", "00/01/11", "(", "or", "0/1/2", ")", ",", "at", "each", "SNP", ",", "we", "can", "apply", "these", "methods", "directly", "to", "detect", "dominant", "and", "recessive", "effects", "." ]
+}, {
+  "sentence_tokens" : [ "To", "detect", "full", "genetic", "effects", ",", "the", "genetic", "association", "test", "can", "be", "expressed", "as", "y", "(", "t", ")", "=", "delta", "i0", "sum", "k", "=", "0K", "beta", "k0tk", "+", "delta", "i1", "sum", "k", "=", "0K", "beta", "k1tk", "+", "delta", "i2", "sum", "k", "=", "0K", "beta", "k2tk", "+", "epsilon", "i", "(", "t", ")", "for", "a", "given", "trait", "Y", ",", "then", "the", "reduced", "model", "H", "(", "single", "gene", "expression", "trait", "curve", ")", ":", "beta", "k0", "=", "beta", "k1", "=", "beta", "k2forallkcan", "be", "compared", "against", "the", "full", "model", "H", "(", "different", "gene", "expression", "trait", "curve", "for", "different", "genotypes", ")", ":", "at", "least", "one", "of", "the", "equalities", "does", "not", "hold.To", "test", "the", "hypothesis", "of", "the", "existence", "of", "eQTL", "at", "a", "locus", ",", "we", "can", "estimate", "these", "parameters", "with", "an", "MLE", "procedure", "and", "performing", "LR", "test", "as", "we", "described", "in", "the", "above", "section", "." ]
+}, {
+  "sentence_tokens" : [ "Similar", "generalization", "can", "be", "applied", "to", "the", "TGCT", "." ]
+}, {
+  "sentence_tokens" : [ "A", "generalized", "TGCT", "." ]
+}, {
+  "sentence_tokens" : [ "One", "potential", "drawback", "in", "the", "current", "TGCT", "test", "is", "that", "we", "explicitly", "modeled", "the", "causal", "variable", "in", "an", "AR", "form", ",", "which", "is", "not", "as", "powerful", "in", "identifying", "genetic", "effects", "as", "other", "methods", "(", "Supplementary", "Fig.", "4", ")", "." ]
+}, {
+  "sentence_tokens" : [ "This", "also", "leads", "to", "the", "results", "that", "the", "proposed", "temporal-genetic", "association", "test", "(", "MPTGA", ")", "and", "the", "causality", "test", "(", "TGCT", ")", "are", "based", "on", "two", "different", "forms", "of", "models", "instead", "of", "a", "unified", "function", "." ]
+}, {
+  "sentence_tokens" : [ "If", "long", "time-series", "data", "are", "available", ",", "a", "more", "flexible", "model", "can", "be", "used", "to", "unify", "the", "approaches", "used", "in", "temporal-genetic", "association", "and", "causality", "tests", "." ]
+}, {
+  "sentence_tokens" : [ "Specifically", ",", "the", "models", "can", "be", "specified", "as", "follows", ":", "given", "Trait", "X", "with", "cis-eQTL", ",", "X", "=", "delta", "i0fx0t-1t+", "delta", "i1fx1t-1t+", "epsilon", "t", ",", "and", "Trait", "Y", "with", "trans-eQTL", ",", "then", "the", "three", "possible", "models", "of", "the", "causal", "relationships", "between", "them", "can", "be", "rewritten", "as", "the", "followingM1", "causal", "model", ":", "Yi", ",", "t", "=", "ft-1t+", "beta", "2Xi", ",", "t-1+", "epsilon", "tM3independentmodel", ":", "Yi", ",", "t", "=", "delta", "i0f0t-1t+", "delta", "i1f1t-1t+", "epsilon", "tM4partialcausalmodel", ":", "Yi", ",", "t", "=", "delta", "i0f0t-1t+", "delta", "i1f1t-1t+", "beta", "2Xi", ",", "t-1+", "epsilon", "t", ",", "Where", "f0t-1t", "and", "f1t-1t", "correspond", "to", "polynomial", "fitting", "functions", "using", "previous", "time", "points", "of", "each", "genotype", ",", "respectively", ";", "f", "(", "t", ")", "corresponds", "to", "a", "single", "polynomial", "fitting", "function", "using", "previous", "time", "points", "of", "both", "genotypes", "." ]
+}, {
+  "sentence_tokens" : [ "Then", ",", "we", "can", "test", "for", "temporal-genetic", "causality", "using", "the", "same", "model", "selection", "approach", "as", "described", "in", "the", "TGCT", "method", "." ]
+}, {
+  "sentence_tokens" : [ "We", "can", "set", "the", "degrees", "of", "polynomial", "functions", "f", "(", "t", ")", ",", "f0t-1t", ",", "and", "f1t-1t", "as", "the", "same", "as", "the", "polynomial", "function", "f", "(", "t", ")", "used", "in", "MPTGA", "." ]
+}, {
+  "sentence_tokens" : [ "If", "the", "number", "of", "time", "points", "is", "not", "large", "enough", "for", "the", "unified", "model", "described", "above", ",", "but", "larger", "than", "the", "size", "in", "our", "current", "study", ",", "we", "can", "make", "TGCT", "more", "flexible", "by", "using", "higher", "order", "AR", "models", "instead", "of", "first-order", "AR", "models", "." ]
+}, {
+  "sentence_tokens" : [ "Permutation", "tests", "." ]
+}, {
+  "sentence_tokens" : [ "Two", "types", "of", "information", "are", "critical", "to", "temporal-genetic", "association", "tests", ":", "(", "1", ")", "temporal", "relationships", ";", "(", "2", ")", "genetic", "structures", "(", "LD", "structures", "across", "the", "genome", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Thus", ",", "in", "the", "permutation", "procedure", ",", "we", "preserved", "the", "temporal", "relationships", "and", "genetic", "structure", ",", "and", "only", "permuted", "the", "strain", "labels", "." ]
+}, {
+  "sentence_tokens" : [ "We", "left", "the", "gene", "expression", "data", "unchanged", "and", "permuted", "the", "strain", "labels", "in", "the", "genetic", "data", "so", "that", "true", "generic", "associations", "were", "destroyed", "while", "the", "correlation", "relationship", "of", "expression", "traits", "was", "maintained", "." ]
+}, {
+  "sentence_tokens" : [ "We", "performed", "the", "permutation", "10", "times", "." ]
+}, {
+  "sentence_tokens" : [ "At", "a", "specific", "p-value", "cutoff", ",", "the", "FDR", "was", "calculated", "as", ":", "FDR", "=", "average", "#associations", "<", "pinpermuteddata", "#associations", "<", "pinoriginaldata", "." ]
+}, {
+  "sentence_tokens" : [ "The", "p-values", "cutoffs", "needed", "to", "control", "the", "FDR", "at", "the", "5", "%", "level", "were", "used", "in", "our", "temporal-genetic", "association", "tests", "." ]
+}, {
+  "sentence_tokens" : [ "Simulation", "studies", "for", "temporal", "genetic", "associations", "." ]
+}, {
+  "sentence_tokens" : [ "We", "simulated", "time-series", "data", "sets", "from", "multivariate", "normal", "distribution", ",", "with", "mean", "vector", "modeled", "by", "various", "patterns", "that", "are", "similar", "to", "the", "observed", "experimental", "results", "(", "Supplementary", "Fig.", "2", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Each", "set", "of", "data", "was", "then", "drawn", "either", "from", "a", "single", "model", "or", "two", "separate", "models", "with", "equal", "probability", ",", "which", "mimic", "the", "situation", "of", "existence", "and", "absence", "of", "eQTL", "effects", "." ]
+}, {
+  "sentence_tokens" : [ "Ten", "thousand", "data", "sets", "were", "simulated", ",", "in", "which", "each", "data", "set", "consisted", "of", "N", "six-point", "time", "series", "either", "from", "a", "single", "multivariate", "normal", "distribution", "or", "two", "separate", "multivariate", "normal", "distributions", "." ]
+}, {
+  "sentence_tokens" : [ "The", "number", "of", "samples", "N", "varied", "from", "20", "to", "100", "." ]
+}, {
+  "sentence_tokens" : [ "The", "covariance", "matrix", "was", "modeled", "as", "above", ",", "where", "rho", "was", "between", "0.1", "and", "0.9", "with", "rho", "~", "N", "(", "0.9", ",", "0.02", ")", "for", "high", "correlation", "data", "set", "or", "rho", "~", "N", "(", "0.1", ",", "0.02", ")", "for", "low", "correlation", "data", "set", "." ]
+}, {
+  "sentence_tokens" : [ "Robustness", "of", "temporal-genetic", "association", "methods", "." ]
+}, {
+  "sentence_tokens" : [ "We", "assessed", "the", "robustness", "of", "temporal-genetic", "association", "methods", "by", "randomly", "dropping", "data", "points", "in", "the", "simulated", "time", "series", "with", "data", "missing", "rate", "varying", "from", "0.02", "to", "0.1", "." ]
+}, {
+  "sentence_tokens" : [ "For", "methods", "that", "involve", "fitting", "a", "curve", "to", "the", "data", "within", "each", "genotype", ",", "i.e", ".,", "MPTGA", ",", "regression", "and", "AR", ",", "the", "samples", "with", "missing", "time", "points", "were", "masked", "first", ",", "then", "each", "method", "was", "applied", "to", "the", "remaining", "samples", "(", "corresponding", "forms", "of", "curves", "fitted", "to", "the", "remaining", "data", ")", ",", "then", "the", "missing", "time", "points", "were", "imputed", "based", "on", "the", "fitted", "curves", "and", "the", "temporal-genetic", "association", "methods", "were", "applied", "to", "the", "imputed", "data", "." ]
+}, {
+  "sentence_tokens" : [ "For", "the", "other", "methods", "that", "do", "not", "fit", "curves", "to", "the", "data", ",", "i.e", ".,", "union", ",", "Fisher", "and", "MANOVA", ",", "the", "samples", "with", "missing", "data", "were", "masked", "first", "and", "each", "method", "was", "applied", "to", "the", "remaining", "data", "." ]
+}, {
+  "sentence_tokens" : [ "Simulation", "studies", "for", "TGCT", "." ]
+}, {
+  "sentence_tokens" : [ "To", "evaluate", "the", "performance", "of", "the", "TGCT", "test", ",", "we", "simulated", "pairs", "of", "time", "series", "for", "traits", "X", "and", "Y", "under", "different", "models", "." ]
+}, {
+  "sentence_tokens" : [ "We", "performed", "two", "sets", "of", "simulation", "studies", "." ]
+}, {
+  "sentence_tokens" : [ "In", "the", "first", "set", "of", "studies", ",", "we", "simulated", "10,000", "trait", "pairs", "for", "each", "parameter", "setting", "." ]
+}, {
+  "sentence_tokens" : [ "Each", "Trait", "X", "consisted", "of", "6", "time", "points", "for", "N", "samples", "with", "the", "mean", "vectors", "following", "one", "of", "the", "patterns", "shown", "in", "Supplementary", "Fig.", "2", "." ]
+}, {
+  "sentence_tokens" : [ "The", "genetic", "effects", "were", "simulated", "by", "drawing", "variations", "from", "two", "separate", "multivariate", "normal", "distributions", "." ]
+}, {
+  "sentence_tokens" : [ "Each", "Trait", "Y", "was", "simulated", "from", "Trait", "X", "according", "to", "the", "causal", "model", "(", "M1", ")", "." ]
+}, {
+  "sentence_tokens" : [ "The", "covariance", "matrices", "were", "modeled", "similarly", "with", "rho", "~", "N", "(", "0.8", ",", "0.1", ")", "for", "each", "dataset", "." ]
+}, {
+  "sentence_tokens" : [ "The", "above", "simulation", "scheme", "was", "repeated", "to", "generate", "10,000", "trait", "pairs", "for", "each", "sample", "size", "N", "that", "varied", "from", "20", "to", "150", "and", "with", "each", "set", "of", "parameters", "in", "the", "causal", "model", "M1", "." ]
+}, {
+  "sentence_tokens" : [ "For", "the", "pairs", "with", "both", "traits", "linked", "to", "the", "tested", "locus", "(", "MPTGA", "p-value", "<", "10", ")", ",", "we", "compared", "the", "joint", "likelihood", "L", "(", "X,", "Y", ")", "based", "on", "the", "causal", "model", "(", "M1", ")", "with", "the", "reactive", "model", "(", "M2", ")", "." ]
+}, {
+  "sentence_tokens" : [ "In", "the", "second", "set", "of", "studies", ",", "we", "simulated", "10,000", "trait", "pairs", "." ]
+}, {
+  "sentence_tokens" : [ "Each", "Trait", "X", "consisting", "of", "six", "time", "points", "for", "N", "samples", "was", "simulated", "similar", "as", "above", ",", "and", "Trait", "Y", "was", "simulated", "according", "to", "the", "causal", "(", "M1", ")", ",", "independent", "(", "M3", ")", ",", "or", "partial", "causal", "(", "M4", ")", "model", "with", "different", "parameter", "settings", "." ]
+}, {
+  "sentence_tokens" : [ "For", "the", "pairs", "with", "both", "traits", "linked", "to", "the", "tested", "locus", "(", "MPTGA", "p-value", "<", "10", ")", ",", "we", "calculated", "the", "likelihoods", "of", "Y", "based", "on", "the", "causal", "(", "M1", ")", ",", "independent", "(", "M3", ")", ",", "and", "partial", "causal", "(", "M4", ")", "models", ",", "and", "selected", "the", "best", "fit", "model", "based", "on", "BIC", "(", "detailed", "in", "the", "Methods", "section", "above", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Assessing", "overfitting", "problem", "." ]
+}, {
+  "sentence_tokens" : [ "Both", "the", "MPTGA", "and", "the", "regression", "method", ",", "or", "the", "polynomial", "regression", "based", "methods", "in", "general", ",", "are", "prone", "to", "sporadic", "associations", "or", "overfitting", "." ]
+}, {
+  "sentence_tokens" : [ "To", "assess", "the", "tendency", "of", "sporadic", "association", "or", "overfitting", "in", "the", "MPTGA", "or", "the", "regression", "method", ",", "we", "compared", "p-values", "of", "significant", "associations", "in", "both", "empirical", "and", "permuted", "data", "and", "the", "p-values", "of", "neighboring", "SNPs", "that", "are", "in", "strong", "LD", "." ]
+}, {
+  "sentence_tokens" : [ "If", "a", "significant", "trait-SNP", "association", "is", "detected", "(", "a", "statistical", "model", "is", "trained", ")", "and", "the", "trained", "model", "describes", "the", "true", "underlying", "relationship", ",", "then", "neighboring", "SNPs", "in", "high", "LD", ",", "where", "genotypes", "for", "SNPs", "in", "high", "LD", "data", "vary", "slightly", "(", "according", "to", "the", "strength", "of", "the", "LD", "structure", ")", ",", "should", "be", "able", "to", "predict", "the", "trait", "or", "strongly", "associate", "with", "the", "trait", "(", "model", "testing", ")", "." ]
+}, {
+  "sentence_tokens" : [ "On", "the", "other", "hand", ",", "if", "a", "significant", "trait-SNP", "association", "detected", "(", "a", "statistical", "model", "is", "trained", ")", "and", "the", "trained", "model", "describes", "noise", "instead", "of", "the", "true", "underlying", "relationship", ",", "then", "neighboring", "SNPs", "in", "high", "LD", "are", "unlikely", "to", "be", "able", "to", "predict", "the", "trait", "or", "strongly", "associate", "with", "the", "trait", "(", "model", "testing", ")", "." ]
+}, {
+  "sentence_tokens" : [ "Thus", ",", "by", "comparing", "the", "consistency", "and", "correlation", "of", "the", "strengths", "of", "associations", "between", "peak", "SNPs", "and", "neighboring", "SNPs", "in", "high", "LD", "to", "a", "trait", "we", "can", "assess", "overfitting", "problem", ",", "less", "overfitting", "will", "lead", "to", "a", "higher", "consistency", "and", "correlation", "." ]
+}, {
+  "sentence_tokens" : [ "Assessing", "statistical", "validity", "." ]
+}, {
+  "sentence_tokens" : [ "To", "assess", "the", "statistical", "validity", "of", "the", "MPTGA", "test", ",", "we", "compare", "the", "QQ", "plots", "from", "the", "p-values", "of", "the", "MPTGA", "test", "based", "on", "(", "1", ")", "simulated", "data", ",", "(", "2", ")", "real", "data", ",", "and", "(", "3", ")", "permuted", "real", "data.The", "simulation", "scheme", "is", "as", "follows", ":", "first", ",", "we", "simulate", "a", "genotype", "vector", "for", "95", "samples", "with", "each", "cell", "taking", "a", "random", "0/1", "value", "with", "0.5", "probability", ";", "then", "we", "simulate", "a", "random", "gene", "expression", "trait", "(", "95", "samples", "x", "6", "time", "points", ")", "from", "a", "multivariate", "normal", "distribution", "with", "a", "mean", "vector", "corresponding", "to", "a", "random", "pattern", "in", "Supplementary", "Fig.", "2", "as", "we", "use", "in", "the", "Simulation", "studies", "for", "temporal", "genetic", "associations", "section", ";", "finally", ",", "the", "MPTGA", "test", "is", "applied", "to", "the", "simulated", "genotype", "and", "gene", "expression", "traits", "." ]
+}, {
+  "sentence_tokens" : [ "The", "gene", "expression", "matrix", "is", "simulated", "independently", "from", "the", "genotype", "matrix", ",", "this", "simulation", "is", "depicting", "a", "scenario", "with", "no", "association", "between", "the", "gene", "expression", "trajectories", "and", "the", "genotypes", "." ]
+}, {
+  "sentence_tokens" : [ "For", "the", "yeast", "dataset", ",", "we", "tested", "5703", "gene", "expression", "traits", "v.s", "." ]
+}, {
+  "sentence_tokens" : [ "2956", "SNPs", ",", "resulting", "in", "a", "5703", "x", "2956", "p-value", "matrix", "." ]
+}, {
+  "sentence_tokens" : [ "Next", ",", "we", "permuted", "the", "strain", "labels", "and", "performed", "MPTGA", "test", ",", "resulting", "in", "another", "5,703", "x", "2956", "p-value", "matrix", "in", "each", "permutation", "." ]
+}, {
+  "sentence_tokens" : [ "RRD1", "KO", "experiments", "." ]
+}, {
+  "sentence_tokens" : [ "The", "wild", "type", "strain", "BY4730", "and", "RRD1", "knockout", "strain", "YSC6273-201925697", "were", "obtained", "from", "Thermo", "Scientific", "Open", "Biosystems", "." ]
+}, {
+  "sentence_tokens" : [ "Yeast", "was", "grown", "in", "YPD", "medium", "to", "log-phase", "in", "shaken", "flasks", "at", "30", "degrees", "C.", "Total", "RNA", "was", "extracted", "as", "described", "previously", "." ]
+}, {
+  "sentence_tokens" : [ "For", "rapamycin", "treatment", ",", "100", "nM", "rapamycin", "(", "Cayman", "Chemical", ",", "Ann", "Arbor", ",", "MI", ")", "was", "added", "to", "the", "medium", "after", "yeast", "grew", "to", "log-phase", "." ]
+}, {
+  "sentence_tokens" : [ "After", "culture", "for", "50", "min", ",", "total", "RNA", "was", "extracted", "the", "same", "as", "above", "." ]
+}, {
+  "sentence_tokens" : [ "All", "experiments", "were", "repeated", "3", "times", "on", "three", "different", "days.Approximately", "250", "ng", "of", "total", "RNA", "per", "sample", "was", "used", "for", "library", "construction", "by", "the", "TruSeq", "RNA", "Sample", "Prep", "Kit", "(", "Illumina", ")", "and", "sequenced", "using", "the", "Illumina", "HiSeq", "2500", "instrument", "with", "100nt", "single-read", "setting", "according", "to", "the", "manufacturer", "'", "s", "instructions", "." ]
+}, {
+  "sentence_tokens" : [ "Sequence", "reads", "were", "aligned", "to", "yeast", "genome", "assembly", "using", "Tophat", "." ]
+}, {
+  "sentence_tokens" : [ "Total", "6932", "yeast", "transcripts", "were", "quantified", "using", "Cufflinks", ",", "and", "5542", "of", "them", "overlap", "with", "transcripts", "on", "Yeast", "Genome", "2.0", "Arrays", "from", "Affymetrix", ",", "which", "was", "used", "for", "generating", "the", "yeast", "F2", "time", "course", "data", "." ]
+}, {
+  "sentence_tokens" : [ "The", "5542", "transcripts", "were", "used", "in", "further", "analysis", "." ]
+}, {
+  "sentence_tokens" : [ "DEGs", "were", "defined", "by", "CuffDiff", "." ]
+}, {
+  "sentence_tokens" : [ "At", "q-value", "<", "0.01", ",", "64", "and", "581", "were", "in", "RRD1", "ko", "signature", "without", "rapamycin", "(", "RRD1", "ko", "no", "treatment", "vs.", "wild-type", "no", "treatment", ")", "and", "RRD1", "ko", "signature", "with", "rapamycin", "(", "RRD1", "ko", "with", "rapamycin", "vs.", "wild", "type", "with", "rapamycin", ")", ",", "respectively", "." ]
+}, {
+  "sentence_tokens" : [ "The", "RNA", "sequencing", "data", "generated", "are", "available", "at", "GEO", "data", "base", "with", "accession", "number", "GSE86786", "." ]
+}, {
+  "sentence_tokens" : [ "eQTL", "hotspots", "." ]
+}, {
+  "sentence_tokens" : [ "The", "yeast", "genome", "is", "divided", "into", "20", "kb", "bins", "and", "the", "number", "of", "(", "t", ")", "eQTLs", "associated", "with", "markers", "in", "each", "bin", "is", "counted", "." ]
+}, {
+  "sentence_tokens" : [ "For", "those", "bins", "with", "significantly", "more", "(", "t", ")", "eQTLs", "than", "expected", "by", "chance", ",", "the", "genetic", "location", "corresponding", "to", "the", "bin", "is", "defined", "as", "a", "(", "t", ")", "eQTL", "hotspot", "." ]
+}, {
+  "sentence_tokens" : [ "If", "neighboring", "bins", "were", "(", "t", ")", "eQTL", "hotspots", ",", "then", "they", "are", "merged", "into", "a", "single", "(", "t", ")", "eQTL", "hotspot", "." ]
+}, {
+  "sentence_tokens" : [ "Gene-set", "enrichment", "." ]
+}, {
+  "sentence_tokens" : [ "The", "yeast", "GO", "categories", "were", "derived", "from", "the", "SGD", "database", "(", "http://db.yeastgenome.org/cgi-bin/GO/goTermFinder", ")", "." ]
+}, {
+  "sentence_tokens" : [ "We", "restricted", "attention", "to", "GO", "terms", "based", "on", "the", "slim", "mapping", "from", "SGD", ",", "which", "is", "comprised", "of", "roughly", "100", "categories", "." ]
+}, {
+  "sentence_tokens" : [ "We", "applied", "the", "hypergeometric", "test", "using", "the", "annotation", "database", "." ]
+}, {
+  "sentence_tokens" : [ "The", "annotations", "with", "the", "most", "significant", "p-values", "were", "reported", "in", "Table", "3", "." ]
+}, {
+  "sentence_tokens" : [ "We", "also", "applied", "the", "hypergeometric", "test", "for", "enrichment", "analysis", "for", "all", "signatures", "comparison", "." ]
+}, {
+  "sentence_tokens" : [ "Code", "availability", "." ]
+}, {
+  "sentence_tokens" : [ "Codes", "for", "MPTGA", "and", "TGCT", "can", "be", "found", "at", "http://research.mssm.edu/integrative-network-biology/Software.html", "." ]
+} ]
