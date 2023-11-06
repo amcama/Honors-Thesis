@@ -58,8 +58,8 @@ def main():
     )
     eval_ds.to_pandas() # TODO maybe not yet...
 
-    labels = train_ds.num_columns
-    
+    # labels = train_ds.num_columns
+    labels = 5
     config = AutoConfig.from_pretrained(transformer_name, num_labels = labels)
     model = (BertForSequenceClassification.from_pretrained(transformer_name, config=config))
     
@@ -99,12 +99,12 @@ def main():
 
     y_true = output.label_ids
     y_pred = np.argmax(output.predictions, axis=-1)
-    target_names = ['Positive_activation', 'Negative_activation', 'Positive_regulation', 'Negative_regulation']
+    target_names = ['Positive_activation', 'Negative_activation', 'Positive_regulation', 'Negative_regulation', 'No_relation']
     print(classification_report(y_true, y_pred, target_names=target_names))
     
 
 def tokenize(examples):
-    output = tokenizer(examples['sentence_tokens'], is_split_into_words=True)
+    output = tokenizer(examples['sentence_tokens'], is_split_into_words=True, truncation=True)
     return output
 
 def read_data():
@@ -112,17 +112,17 @@ def read_data():
     Read data from sample_training_data folder and remove duplicates.
     """
     json_data = []
-    # directory1 = 'sample_training_data'
-    # for filename in os.listdir(directory1):
-    #     if filename.endswith('.json'):
-    #         with open(os.path.join(directory1, filename)) as f:
-    #             data = json.load(f)
-    #             if (len(data) > 0):
-    #                 json_data.append(data)
+    directory1 = 'sample_training_data'
+    for filename in os.listdir(directory1):
+        if filename.endswith('.json'):
+            with open(os.path.join(directory1, filename)) as f:
+                data = json.load(f)
+                if (len(data) > 0):
+                    json_data.append(data)
+                # if (len(json_data) == 50):
+                #     break
 
-    #                 # if (len(json_data) == 50): # for testing with smaller data
-    #                 #     break
-
+    pretty_print(data)
     directory2 = 'negative_training_data'
     for filename in os.listdir(directory2):
         if filename.endswith('.json'):
@@ -131,7 +131,9 @@ def read_data():
                 if (len(data) > 0):
                     # print(data,"\n\n\n")
                     json_data.append(data)
-            
+                # if (len(json_data) == 100):
+                #     break
+    pretty_print(data)
 
     list_no_dups = remove_duplicates(json_data)
     random.shuffle(list_no_dups)
@@ -155,8 +157,7 @@ def read_data():
         else:
             e['label'] = 4
         
-    pretty_print(list_no_dups)
-    exit(0)
+    # pretty_print(list_no_dups)
     return list_no_dups
 
 def remove_duplicates(list):
