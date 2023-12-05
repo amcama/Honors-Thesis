@@ -45,11 +45,11 @@ def main():
     ds['validation'] = Dataset.from_pandas(eval_df)
     # ds['test'] = Dataset.from_pandas(test_df)
 
+
     train_ds = ds['train'].map(
         tokenize, batched=True,
-        remove_columns=['sentence_tokens', 'event_indices', 'polarity', 'controller_indices', 'controlled_indices', 'trigger_indices']
+        remove_columns=['event_indices', 'polarity', 'controller_indices', 'controlled_indices', 'trigger_indices']
     )   
-    train_ds.to_pandas()
 
     eval_ds = ds['validation'].map(
         tokenize,
@@ -98,7 +98,9 @@ def main():
     print("~ Prediction output for eval_ds:\n", output, "\n")
 
     y_true = output.label_ids
+    # print(y_true)
     y_pred = np.argmax(output.predictions, axis=-1)
+    # print(y_pred)
     target_names = ['Positive_activation', 'Negative_activation', 'Positive_regulation', 'Negative_regulation', 'No_relation']
     print(classification_report(y_true, y_pred, target_names=target_names))
     
@@ -107,36 +109,63 @@ def tokenize(examples):
     output = tokenizer(examples['sentence_tokens'], is_split_into_words=True, truncation=True)
     return output
 
+def add_entity_markers(text):
+    print(len(text))
+
+    for i in range(0, len(text)):
+        new_sentence = ["[CLS]"]
+        sentence = text[i]['sentence_tokens']
+        entity_count = 1
+
+        for j in range(0, len(sentence)):
+            word = sentence[j]
+            if ((word.isupper()) and (len(word) > 2)):
+                new_sentence.append("[E{}]".format(entity_count))
+                new_sentence.append(word)
+                new_sentence.append("[/E{}]".format(entity_count))
+                entity_count += 1
+            elif (word.strip() == "."):
+                new_sentence.append("[SEP]")
+            else:
+                new_sentence.append(word)
+
+        text[i]['sentence_tokens'] = new_sentence
+    return text
+
+
 def read_data():
     """ 
     Read data from sample_training_data folder and remove duplicates.
     """
     json_data = []
     directory1 = 'sample_training_data'
+
+    count = 0 # for testing with smaller sample sizes
+
     for filename in os.listdir(directory1):
         if filename.endswith('.json'):
             with open(os.path.join(directory1, filename)) as f:
                 data = json.load(f)
                 if (len(data) > 0):
                     json_data.append(data)
-                # if (len(json_data) == 50):
-                #     break
+                    count += 1
 
-    pretty_print(data)
     directory2 = 'negative_training_data'
     for filename in os.listdir(directory2):
         if filename.endswith('.json'):
             with open(os.path.join(directory2, filename)) as f:
                 data = json.load(f)
                 if (len(data) > 0):
-                    # print(data,"\n\n\n")
                     json_data.append(data)
-                # if (len(json_data) == 100):
-                #     break
-    pretty_print(data)
+                    count += 1
+
 
     list_no_dups = remove_duplicates(json_data)
     random.shuffle(list_no_dups)
+    print(len(list_no_dups))
+
+    # add entity markers 
+    x = add_entity_markers(list_no_dups)
 
     # 0: Negative_activation 
     # 1: Postive_activation
@@ -157,7 +186,7 @@ def read_data():
         else:
             e['label'] = 4
         
-    # pretty_print(list_no_dups)
+    pretty_print(list_no_dups)
     return list_no_dups
 
 def remove_duplicates(list):
