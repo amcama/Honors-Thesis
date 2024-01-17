@@ -5,7 +5,7 @@ import math
 import torch
 import numpy as np
 from tqdm.notebook import tqdm
-from datasets import Dataset, DatasetDict
+from datasets import Dataset, DatasetDict, load_metric
 # from clulab.clu_tokenizer import CluTokenizer
 from transformers import AutoTokenizer
 from torch import nn
@@ -17,6 +17,14 @@ from sklearn.metrics import accuracy_score
 from transformers import Trainer
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report
+import sklearn.metrics as metrics
+from sklearn.metrics import ConfusionMatrixDisplay
+import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
+from sklearn.datasets import make_classification
+from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
+from sklearn.model_selection import train_test_split
+from sklearn.svm import SVC
 
 transformer_name = 'bert-base-cased'
 tokenizer = AutoTokenizer.from_pretrained(transformer_name)
@@ -58,9 +66,8 @@ def main():
     )
     eval_ds.to_pandas() # TODO maybe not yet...
 
-    # labels = train_ds.num_columns
-    labels = 5
-    config = AutoConfig.from_pretrained(transformer_name, num_labels = labels)
+    num_labels = 5
+    config = AutoConfig.from_pretrained(transformer_name, num_labels = num_labels)
     model = (BertForSequenceClassification.from_pretrained(transformer_name, config=config))
     
     # -- [10] --
@@ -94,15 +101,31 @@ def main():
     print("~ Train Output:\n", train_output, "\n")
 
     # -- [14] --
-    output = trainer.predict(eval_ds)
-    print("~ Prediction output for eval_ds:\n", output, "\n")
+    predictions = trainer.predict(eval_ds)
 
-    y_true = output.label_ids
-    # print(y_true)
-    y_pred = np.argmax(output.predictions, axis=-1)
-    # print(y_pred)
+    print("~ Prediction output for eval_ds:\n", predictions, "\n")
+    y_true = predictions.label_ids
+    y_pred = np.argmax(predictions.predictions, axis=-1)
     target_names = ['Positive_activation', 'Negative_activation', 'Positive_regulation', 'Negative_regulation', 'No_relation']
+
     print(classification_report(y_true, y_pred, target_names=target_names))
+
+    # get confusion matrix
+    # cm = metrics.confusion_matrix(y_true=y_true, y_pred=y_pred, labels=[0,1,2,3,4])
+    print("Confusion Matrix:")
+    cm = metrics.multilabel_confusion_matrix(y_true=y_true, y_pred=y_pred, labels=[0,1,2,3,4])
+
+    print(cm)
+"""
+TN -> [0,0]
+FN -> [1,0]
+TP -> [1,1]
+FP -> [0,1]
+
+In multilabel confusion matrix, the count of true negatives is at 00, 
+false negatives is at 10, true positives is at 11 and false positives is at 01.
+"""
+
     
 
 def tokenize(examples):
@@ -132,7 +155,6 @@ def add_entity_markers(text):
         text[i]['sentence_tokens'] = new_sentence
     return text
 
-
 def read_data():
     """ 
     Read data from sample_training_data folder and remove duplicates.
@@ -149,6 +171,8 @@ def read_data():
                 if (len(data) > 0):
                     json_data.append(data)
                     count += 1
+            # if (count > 2): # for testing
+            #     break
 
     directory2 = 'negative_training_data'
     for filename in os.listdir(directory2):
@@ -158,21 +182,24 @@ def read_data():
                 if (len(data) > 0):
                     json_data.append(data)
                     count += 1
-
+            # if (count > 3): # for testing
+            #     break
+               
+    print(len(json_data))
 
     list_no_dups = remove_duplicates(json_data)
+
     random.shuffle(list_no_dups)
-    print(len(list_no_dups))
 
     # add entity markers 
-    x = add_entity_markers(list_no_dups)
+    data_entity_markers = add_entity_markers(list_no_dups)
 
     # 0: Negative_activation 
-    # 1: Postive_activation
+    # 1: Postive_activationc
     # 2: Negative_regulation
     # 3: Positive_regulation
     # 4: no relation
-    for e in list_no_dups:
+    for e in data_entity_markers:
         if (e.get('type')):
             e['label'] = e.pop('type')
             if (e['label'] == "Negative_activation"):
@@ -185,9 +212,8 @@ def read_data():
                 e['label'] = 3
         else:
             e['label'] = 4
-        
-    pretty_print(list_no_dups)
-    return list_no_dups
+    
+    return data_entity_markers
 
 def remove_duplicates(list):
     # concatenate all nested items into single list
