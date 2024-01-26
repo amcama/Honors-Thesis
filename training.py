@@ -29,15 +29,14 @@ from sklearn.svm import SVC
 transformer_name = 'bert-base-cased'
 tokenizer = AutoTokenizer.from_pretrained(transformer_name)
 
+configuration = 2
 
 def main():
     init()
     data = read_data()
     
     # Take the first 60% as train, next 20% as development, last 20% as test (Don't use test for now)
-
     train_list, eval_list = train_test_split(data, train_size=0.6)
-    # eval_list, test_list = train_test_split(eval_list, train_size=0.5)
 
     # create train dataset
     train_df = pd.DataFrame(train_list)
@@ -58,15 +57,18 @@ def main():
         tokenize, batched=True,
         remove_columns=['event_indices', 'polarity', 'controller_indices', 'controlled_indices', 'trigger_indices']
     )   
+    print(train_ds)
+    exit(0)
+    #maybe add entity markers after tokenization???
 
     eval_ds = ds['validation'].map(
         tokenize,
         batched=True,
-        remove_columns=['sentence_tokens', 'event_indices', 'polarity', 'controller_indices', 'controlled_indices', 'trigger_indices']
+        remove_columns=['event_indices', 'polarity', 'controller_indices', 'controlled_indices', 'trigger_indices']
     )
-    eval_ds.to_pandas() # TODO maybe not yet...
+    eval_ds.to_pandas()
 
-    num_labels = 5
+    num_labels = 3 # TODO make this not hard coded
     config = AutoConfig.from_pretrained(transformer_name, num_labels = num_labels)
     model = (BertForSequenceClassification.from_pretrained(transformer_name, config=config))
     
@@ -96,7 +98,6 @@ def main():
         tokenizer=tokenizer,
     )    
     print("\n", train_ds, "\n")
-
     train_output = trainer.train()
     print("~ Train Output:\n", train_output, "\n")
 
@@ -106,12 +107,11 @@ def main():
     print("~ Prediction output for eval_ds:\n", predictions, "\n")
     y_true = predictions.label_ids
     y_pred = np.argmax(predictions.predictions, axis=-1)
-    target_names = ['Positive_activation', 'Negative_activation', 'Positive_regulation', 'Negative_regulation', 'No_relation']
+    target_names = ['Positive_activation', 'Negative_activation', 'No_relation']
 
     print(classification_report(y_true, y_pred, target_names=target_names))
 
     # get confusion matrix
-    # cm = metrics.confusion_matrix(y_true=y_true, y_pred=y_pred, labels=[0,1,2,3,4])
     print("Confusion Matrix:")
     cm = metrics.multilabel_confusion_matrix(y_true=y_true, y_pred=y_pred, labels=[0,1,2,3,4])
 
@@ -127,33 +127,83 @@ false negatives is at 10, true positives is at 11 and false positives is at 01.
 """
 
     
-
 def tokenize(examples):
     output = tokenizer(examples['sentence_tokens'], is_split_into_words=True, truncation=True)
     return output
 
+
+
 def add_entity_markers(text):
-    print(len(text))
+    for i in range(0, len(text)): # TODO change back - just for testing
+        og_sentence = text[i]['sentence_tokens']
+        new_sentence = []
+        if (('controller_indices' in text[i]) & ('controlled_indices' in text[i])):
+            print(" i = ", i)
 
-    for i in range(0, len(text)):
-        new_sentence = ["[CLS]"]
-        sentence = text[i]['sentence_tokens']
-        entity_count = 1
+            controller_indices = text[i]['controller_indices']
+            controlled_indices = text[i]['controlled_indices']
 
-        for j in range(0, len(sentence)):
-            word = sentence[j]
-            if ((word.isupper()) and (len(word) > 2)):
-                new_sentence.append("[E{}]".format(entity_count))
-                new_sentence.append(word)
-                new_sentence.append("[/E{}]".format(entity_count))
-                entity_count += 1
-            elif (word.strip() == "."):
-                new_sentence.append("[SEP]")
-            else:
-                new_sentence.append(word)
+            # print("og_sentence: ", og_sentence)
+            # print("controller_indices: ", controller_indices)
+            # print("controlled_indices: ", controlled_indices)
 
-        text[i]['sentence_tokens'] = new_sentence
+            controller_start = controller_indices[0]
+            controller_end = controller_indices[len(controller_indices)-1] - 1
+
+            controlled_start = controlled_indices[0]
+            controlled_end = controlled_indices[len(controlled_indices)-1] - 1
+
+            entity_count = 1
+            for j in range(0, len(og_sentence)):
+                
+                if (j == controller_start):
+                    new_sentence.append("[E{}]".format(entity_count))
+                    new_sentence.append(og_sentence[j])
+                    if (j == controller_end):
+                        new_sentence.append("[/E{}]".format(entity_count))
+                        entity_count += 1
+                        continue
+                    continue
+
+                if (j == controller_end):
+                    new_sentence.append(og_sentence[j])
+                    new_sentence.append("[/E{}]".format(entity_count))
+                    entity_count += 1
+                    continue
+                
+                if (j == controlled_start):
+                    new_sentence.append("[E{}]".format(entity_count))
+                    new_sentence.append(og_sentence[j])
+                    if (j == controlled_end):
+                        new_sentence.append("[/E{}]".format(entity_count))
+                        entity_count += 1
+                        continue
+                    continue
+
+                if (j == controlled_end):
+                    new_sentence.append(og_sentence[j])
+                    new_sentence.append("[/E{}]".format(entity_count))
+                    entity_count += 1
+                    continue
+            
+                else:
+                    new_sentence.append(og_sentence[j])
+
+
+            print('new_sentence: ', new_sentence,'\n\n-----------------------------\n')
+
+
+        # else:
+        #     # add [SEP] to sentence
+        #     continue
+    exit(0)
+
     return text
+
+
+
+
+
 
 def read_data():
     """ 
@@ -171,8 +221,8 @@ def read_data():
                 if (len(data) > 0):
                     json_data.append(data)
                     count += 1
-            # if (count > 2): # for testing
-            #     break
+                if (count > 1): # for testing
+                    break
 
     directory2 = 'negative_training_data'
     for filename in os.listdir(directory2):
@@ -182,24 +232,16 @@ def read_data():
                 if (len(data) > 0):
                     json_data.append(data)
                     count += 1
-            # if (count > 3): # for testing
-            #     break
+                if (count > 2): # for testing
+                    break
                
-    print(len(json_data))
-
     list_no_dups = remove_duplicates(json_data)
-
     random.shuffle(list_no_dups)
-
-    # add entity markers 
-    data_entity_markers = add_entity_markers(list_no_dups)
-
+    
     # 0: Negative_activation 
-    # 1: Postive_activationc
-    # 2: Negative_regulation
-    # 3: Positive_regulation
-    # 4: no relation
-    for e in data_entity_markers:
+    # 1: Postive_activation
+    # 2: No_relation
+    for e in list_no_dups:
         if (e.get('type')):
             e['label'] = e.pop('type')
             if (e['label'] == "Negative_activation"):
@@ -207,13 +249,19 @@ def read_data():
             elif (e['label'] == "Positive_activation"):
                 e['label'] = 1
             elif (e['label'] == "Negative_regulation"):
-                e['label'] = 2
+                e['label'] = 0
             elif (e['label'] == "Positive_regulation"):
-                e['label'] = 3
+                e['label'] = 1
         else:
-            e['label'] = 4
-    
-    return data_entity_markers
+            e['label'] = 2
+    # pretty_print(data)
+            
+        # add entity markers 
+    if (configuration != 1):
+        data = add_entity_markers(list_no_dups)
+    else:
+        data = list_no_dups
+    return data
 
 def remove_duplicates(list):
     # concatenate all nested items into single list
