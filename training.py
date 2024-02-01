@@ -134,18 +134,12 @@ def tokenize(examples):
 
 
 def add_entity_markers(text):
-    for i in range(0, len(text)): # TODO change back - just for testing
+    for i in range(0, len(text)): 
         og_sentence = text[i]['sentence_tokens']
         new_sentence = []
         if (('controller_indices' in text[i]) & ('controlled_indices' in text[i])):
-            print(" i = ", i)
-
             controller_indices = text[i]['controller_indices']
             controlled_indices = text[i]['controlled_indices']
-
-            # print("og_sentence: ", og_sentence)
-            # print("controller_indices: ", controller_indices)
-            # print("controlled_indices: ", controlled_indices)
 
             controller_start = controller_indices[0]
             controller_end = controller_indices[len(controller_indices)-1] - 1
@@ -155,7 +149,6 @@ def add_entity_markers(text):
 
             entity_count = 1
             for j in range(0, len(og_sentence)):
-                
                 if (j == controller_start):
                     new_sentence.append("[E{}]".format(entity_count))
                     new_sentence.append(og_sentence[j])
@@ -186,16 +179,31 @@ def add_entity_markers(text):
                     entity_count += 1
                     continue
             
+                if (og_sentence[j].strip() == "."):
+                    new_sentence.append("[SEP]")
+                else:
+                    new_sentence.append(og_sentence[j])
+                
+            print("---------------------")
+            print("CONTROLLER INDICES: ", controller_indices)
+            print("CONTROLLED INDICES: ", controlled_indices)
+            print("\nORIGINAL: ", og_sentence)
+            print("\nNEW: ", new_sentence)
+            print(("---------------------\n"))
+
+        else:
+            for j in range(0, len(og_sentence)):
+                if (og_sentence[j].strip() == "."):
+                    new_sentence.append("[SEP]")
                 else:
                     new_sentence.append(og_sentence[j])
 
+            print("---------------------")
+            print("> NO_RELATION")
+            print("ORIGINAL: ", og_sentence)
+            print("\nNEW: ", new_sentence)
+            print(("---------------------\n"))
 
-            print('new_sentence: ', new_sentence,'\n\n-----------------------------\n')
-
-
-        # else:
-        #     # add [SEP] to sentence
-        #     continue
     exit(0)
 
     return text
