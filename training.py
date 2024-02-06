@@ -57,8 +57,6 @@ def main():
         tokenize, batched=True,
         remove_columns=['event_indices', 'polarity', 'controller_indices', 'controlled_indices', 'trigger_indices']
     )   
-    print(train_ds)
-    exit(0)
     #maybe add entity markers after tokenization???
 
     eval_ds = ds['validation'].map(
@@ -184,27 +182,76 @@ def add_entity_markers(text):
                 else:
                     new_sentence.append(og_sentence[j])
                 
-            print("---------------------")
-            print("CONTROLLER INDICES: ", controller_indices)
-            print("CONTROLLED INDICES: ", controlled_indices)
-            print("\nORIGINAL: ", og_sentence)
-            print("\nNEW: ", new_sentence)
-            print(("---------------------\n"))
+            # print("\n---------------------")
+            # print("CONTROLLER INDICES: ", controller_indices)
+            # print("CONTROLLED INDICES: ", controlled_indices)
+            # label_1 = ""
+            # if (text[i]['label'] == 0):
+            #     label_1 = "Negative_activation"
+            # elif (text[i]['label'] == 1):
+            #     label_1 = "Positive_activation"
+            # print("LABEL: ", label_1)
 
-        else:
+            # print("\nORIGINAL: ", og_sentence)
+            # print("\nNEW:      ", new_sentence)
+
+
+
+        if (('entity_one_indices' in text[i]) & ('entity_two_indices' in text[i])):
+            e1_indices = text[i]['entity_one_indices']
+            e2_indices = text[i]['entity_two_indices']
+
+            e1_start = e1_indices[0]
+            e1_end = e1_indices[len(e1_indices)-1] - 1
+
+            e2_start = e2_indices[0]
+            e2_end = e2_indices[len(e2_indices)-1] - 1
+
+            entity_count = 1
             for j in range(0, len(og_sentence)):
+                if (j == e1_start):
+                    new_sentence.append("[E{}]".format(entity_count))
+                    new_sentence.append(og_sentence[j])
+                    if (j == e1_end):
+                        new_sentence.append("[/E{}]".format(entity_count))
+                        entity_count += 1
+                        continue
+                    continue
+
+                if (j == e1_end):
+                    new_sentence.append(og_sentence[j])
+                    new_sentence.append("[/E{}]".format(entity_count))
+                    entity_count += 1
+                    continue
+                
+                if (j == e2_start):
+                    new_sentence.append("[E{}]".format(entity_count))
+                    new_sentence.append(og_sentence[j])
+                    if (j == e2_end):
+                        new_sentence.append("[/E{}]".format(entity_count))
+                        entity_count += 1
+                        continue
+                    continue
+
+                if (j == e2_end):
+                    new_sentence.append(og_sentence[j])
+                    new_sentence.append("[/E{}]".format(entity_count))
+                    entity_count += 1
+                    continue
+            
                 if (og_sentence[j].strip() == "."):
                     new_sentence.append("[SEP]")
                 else:
                     new_sentence.append(og_sentence[j])
-
-            print("---------------------")
-            print("> NO_RELATION")
-            print("ORIGINAL: ", og_sentence)
-            print("\nNEW: ", new_sentence)
-            print(("---------------------\n"))
-
-    exit(0)
+            # print("\n---------------------\n")
+            # print("E1 INDICES: ", e1_indices)
+            # print("E2 INDICES: ", e2_indices)
+            # if (text[i]['label'] == 2):
+            #     print("LABEL: No_relation")
+            # else:
+            #     print("LABEL:", text[i]['label'])
+            # print("\nORIGINAL: ", og_sentence)
+            # print("\nNEW:      ", new_sentence)
 
     return text
 
@@ -219,20 +266,18 @@ def read_data():
     """
     json_data = []
     directory1 = 'sample_training_data'
+    directory2 = 'negative_training_data'
 
     count = 0 # for testing with smaller sample sizes
-
     for filename in os.listdir(directory1):
         if filename.endswith('.json'):
             with open(os.path.join(directory1, filename)) as f:
                 data = json.load(f)
                 if (len(data) > 0):
                     json_data.append(data)
-                    count += 1
-                if (count > 1): # for testing
-                    break
+                    if (len(json_data) > 75): # for testing
+                        break
 
-    directory2 = 'negative_training_data'
     for filename in os.listdir(directory2):
         if filename.endswith('.json'):
             with open(os.path.join(directory2, filename)) as f:
@@ -240,12 +285,12 @@ def read_data():
                 if (len(data) > 0):
                     json_data.append(data)
                     count += 1
-                if (count > 2): # for testing
-                    break
+                    if (len(json_data) > 100): # for testing
+                        break
                
     list_no_dups = remove_duplicates(json_data)
     random.shuffle(list_no_dups)
-    
+
     # 0: Negative_activation 
     # 1: Postive_activation
     # 2: No_relation
@@ -262,9 +307,7 @@ def read_data():
                 e['label'] = 1
         else:
             e['label'] = 2
-    # pretty_print(data)
-            
-        # add entity markers 
+
     if (configuration != 1):
         data = add_entity_markers(list_no_dups)
     else:

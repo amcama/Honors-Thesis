@@ -9,1075 +9,183 @@
   "rule_name" : "Positive_activation_syntax_2_verb",
   "rule" : null
 }, {
-  "sentence_tokens" : [ "A", "Model", "for", "Genome", "Size", "Evolution", "." ]
-}, {
-  "sentence_tokens" : [ "We", "present", "a", "model", "for", "genome", "size", "evolution", "that", "takes", "into", "account", "both", "local", "mutations", "such", "as", "small", "insertions", "and", "small", "deletions", ",", "and", "large", "chromosomal", "rearrangements", "such", "as", "duplications", "and", "large", "deletions", "." ]
-}, {
-  "sentence_tokens" : [ "We", "introduce", "the", "possibility", "of", "undergoing", "several", "mutations", "within", "one", "generation", "." ]
-}, {
-  "sentence_tokens" : [ "The", "model", ",", "albeit", "minimalist", ",", "reveals", "a", "non", "trivial", "spontaneous", "dynamics", "of", "genome", "size", ":", "in", "the", "absence", "of", "selection", ",", "an", "arbitrary", "large", "part", "of", "genomes", "remains", "beneath", "a", "finite", "size", ",", "even", "for", "a", "duplication", "rate", "2.6-fold", "higher", "than", "the", "rate", "of", "large", "deletions", ",", "and", "even", "if", "there", "is", "also", "a", "systematic", "bias", "toward", "small", "insertions", "compared", "to", "small", "deletions", "." ]
-}, {
-  "sentence_tokens" : [ "Specifically", ",", "we", "show", "that", "the", "condition", "of", "existence", "of", "an", "asymptotic", "stationary", "distribution", "for", "genome", "size", "non", "trivially", "depends", "on", "the", "rates", "and", "mean", "sizes", "of", "the", "different", "mutation", "types", "." ]
-}, {
-  "sentence_tokens" : [ "We", "also", "give", "upper", "bounds", "for", "the", "median", "and", "other", "quantiles", "of", "the", "genome", "size", "distribution", ",", "and", "argue", "that", "these", "bounds", "cannot", "be", "overcome", "by", "selection", "." ]
-}, {
-  "sentence_tokens" : [ "Taken", "together", ",", "our", "results", "show", "that", "the", "spontaneous", "dynamics", "of", "genome", "size", "naturally", "prevents", "it", "from", "growing", "infinitely", ",", "even", "in", "cases", "where", "intuition", "would", "suggest", "an", "infinite", "growth", "." ]
-}, {
-  "sentence_tokens" : [ "Using", "quantitative", "numerical", "examples", ",", "we", "show", "that", ",", "in", "practice", ",", "a", "shrinkage", "bias", "appears", "very", "quickly", "in", "genomes", "undergoing", "mutation", "accumulation", ",", "even", "though", "DNA", "gains", "and", "losses", "appear", "to", "be", "perfectly", "symmetrical", "at", "first", "sight", "." ]
-}, {
-  "sentence_tokens" : [ "We", "discuss", "this", "spontaneous", "dynamics", "in", "the", "light", "of", "the", "other", "evolutionary", "forces", "proposed", "in", "the", "literature", "and", "argue", "that", "it", "provides", "them", "a", "stability", "related", "size", "limit", "below", "which", "they", "can", "act", "." ]
-}, {
-  "sentence_tokens" : [ "Introduction", "." ]
-}, {
-  "sentence_tokens" : [ "Genome", "lengths", "span", "several", "order", "of", "magnitudes", "across", "all", "living", "species", "(", "Koonin", "2008", ",", "2009", ")", "and", "the", "origin", "of", "these", "variations", "is", "still", "unclear", "." ]
-}, {
-  "sentence_tokens" : [ "Total", "genome", "size", "does", "not", "correlate", "well", "with", "organismal", "complexity", ",", "a", "paradox", "called", "\"", "C-value", "paradox", "\"", "in", "the", "1970s", "(", "Thomas", "1971", ")", "." ]
-}, {
-  "sentence_tokens" : [ "When", "it", "was", "discovered", "that", "DNA", "comprises", "not", "only", "genes", "but", "also", "a", "lot", "of", "non", "coding", "sequences", ",", "it", "felt", "logical", "to", "rather", "search", "for", "a", "correlation", "between", "gene", "number", "and", "organismal", "complexity", "." ]
-}, {
-  "sentence_tokens" : [ "There", "again", ",", "no", "obvious", "correlation", "was", "found", ",", "a", "phenomenon", "called", "the", "\"", "G-value", "paradox", "\"", "(", "Betr", "a", "n", "and", "Long", "2002", ";", "Hahn", "and", "Wray", "2002", ")", "." ]
-}, {
-  "sentence_tokens" : [ "One", "reason", "could", "be", "the", "difficulty", "to", "define", "an", "objective", "and", "quantitative", "measure", "of", "organismal", "complexity", "." ]
-}, {
-  "sentence_tokens" : [ "But", "even", "if", "such", "a", "good", "measure", "was", "available", ",", "its", "correlation", "with", "genome", "size", "or", "gene", "number", "could", "very", "well", "be", "low", "anyway", "." ]
-}, {
-  "sentence_tokens" : [ "Indeed", ",", "genome", "size", "results", "from", "a", "tension", "between", "multiple", "evolutionary", "pressures", ",", "some", "acting", "at", "the", "mutation", "level", ",", "other", "at", "the", "selection", "level", ",", "some", "tending", "to", "make", "the", "genome", "grow", ",", "other", "tending", "to", "make", "it", "shrink", "." ]
-}, {
-  "sentence_tokens" : [ "It", "is", "thus", "essential", "to", "understand", "how", "each", "pressure", "acts", "individually", "in", "order", "to", "disentangle", "their", "interactions.The", "formalism", "we", "propose", "here", "sets", "a", "general", "framework", "for", "the", "study", "of", "the", "impact", "of", "mutational", "mechanisms", "on", "genome", "length", "with", "two", "important", "features", ":", "(", "i", ")", "genomes", "can", "undergo", "both", "small", "indels", "and", "large", "chromosomal", "rearrangements", "and", "(", "ii", ")", "genomes", "undergo", "a", "size", "dependent", "number", "of", "mutations", "rather", "than", "limiting", "the", "mutations", "to", "one", "per", "replication", "." ]
-}, {
-  "sentence_tokens" : [ "This", "framework", "allows", "us", "to", "give", "a", "simple", "condition", "for", "the", "existence", "and", "uniqueness", "of", "a", "stationary", "distribution", "for", "genome", "size", "in", "the", "absence", "of", "selection", ",", "and", "we", "characterize", "how", "each", "type", "of", "mutation", "impacts", "the", "spontaneous", "dynamics", "of", "genome", "size", "." ]
-}, {
-  "sentence_tokens" : [ "We", "find", "that", "for", "a", "wide", "range", "of", "mutation", "rates", ",", "the", "spontaneous", "dynamics", "of", "genome", "size", "naturally", "prevents", "it", "from", "growing", "indefinitely.We", "present", "the", "details", "of", "the", "mathematical", "model", "and", "the", "hypotheses", "that", "underlie", "the", "biological", "mechanisms", "for", "mutations", "and", "replication", "in", "Sect", "." ]
-}, {
-  "sentence_tokens" : [ "2", "." ]
-}, {
-  "sentence_tokens" : [ "In", "Sect", "." ]
-}, {
-  "sentence_tokens" : [ "3", ",", "we", "analyze", "the", "evolution", "of", "genome", "size", "in", "the", "absence", "of", "selection", "." ]
-}, {
-  "sentence_tokens" : [ "It", "shows", "that", "a", "stationary", "distribution", "exists", "even", "if", "duplications", "are", "twice", "as", "frequent", "as", "deletions", "." ]
-}, {
-  "sentence_tokens" : [ "In", "Sect", "." ]
-}, {
-  "sentence_tokens" : [ "4", ",", "we", "use", "a", "continuous", "approximation", "to", "analyze", "further", "the", "outcome", "of", "mutations", "in", "a", "single", "generation", "and", "show", "that", "one", "generation", "is", "already", "enough", "for", "genome", "size", "to", "be", "bounded", ",", "independently", "from", "the", "initial", "sizes", "of", "the", "genomes", "." ]
-}, {
-  "sentence_tokens" : [ "In", "Sect", "." ]
-}, {
-  "sentence_tokens" : [ "5", ",", "we", "generalize", "the", "results", "to", "various", "distributions", "for", "the", "size", "of", "mutations", "and", "to", "the", "presence", "of", "selection", "." ]
-}, {
-  "sentence_tokens" : [ "As", "the", "bounds", "found", "in", "Sect", "." ]
-}, {
-  "sentence_tokens" : [ "4", "apply", "for", "every", "generation", ",", "we", "argue", "that", "selection", "cannot", "help", "overcome", "the", "bounds", "found", "in", "Sect", "." ]
-}, {
-  "sentence_tokens" : [ "4", "but", "determines", "how", "the", "population", "behaves", "with", "respect", "to", "these", "bounds", "." ]
-}, {
-  "sentence_tokens" : [ "In", "order", "to", "illustrate", "how", "our", "results", "apply", "in", "biologically", "plausible", "situations", ",", "we", "propose", "numerical", "simulations", "of", "genome", "size", "evolution", "in", "mutation", "accumulation", "experiments", "in", "Sect", "." ]
-}, {
-  "sentence_tokens" : [ "6", "." ]
-}, {
-  "sentence_tokens" : [ "We", "discuss", "the", "extensions", "and", "limits", "of", "the", "model", ",", "as", "well", "as", "the", "links", "with", "previous", "studies", ",", "in", "Sect", "." ]
-}, {
-  "sentence_tokens" : [ "7", "." ]
-}, {
-  "sentence_tokens" : [ "A", "Model", "for", "Genome", "Size", "Evolution", "." ]
-}, {
-  "sentence_tokens" : [ "Definition", "of", "the", "Model", "." ]
-}, {
-  "sentence_tokens" : [ "We", "consider", "four", "types", "of", "mutations", "that", "occur", "in", "natural", "genomes", ":", "small", "insertions", "and", "deletions", "(", "hereafter", "called", "indels", ")", ",", "large", "deletions", "and", "duplications", "." ]
-}, {
-  "sentence_tokens" : [ "In", "this", "study", ",", "we", "suppose", "that", "the", "impact", "of", "mutations", "on", "a", "genome", "of", "size", "s0", "is", "as", "follows", ":", "For", "small", "insertions", ",", "1", "to", "lins", "bases", "are", "added", "to", "the", "genome", "." ]
-}, {
-  "sentence_tokens" : [ "The", "size", "after", "one", "mutation", "belongs", "to", "{", "s0", "+1", ",", "..." ]
-}, {
-  "sentence_tokens" : [ ",", "s0+", "lins", "}", "." ]
-}, {
-  "sentence_tokens" : [ "The", "transition", "probabilities", "can", "be", "defined", "arbitrarily", ",", "but", "we", "suppose", "they", "do", "not", "depend", "on", "the", "starting", "state", "s0", "." ]
-}, {
-  "sentence_tokens" : [ "The", "state", "s0", "=0", "can", "be", "escaped", "through", "small", "insertions.For", "small", "deletions", ",", "1", "to", "lsdel", "bases", "are", "removed", "from", "the", "genome", "(", "if", "possible", ")", "." ]
-}, {
-  "sentence_tokens" : [ "The", "size", "after", "one", "mutation", "belongs", "to", "{", "max", "(", "0", ",", "s0-lsdel", ")", ",", "..." ]
-}, {
-  "sentence_tokens" : [ ",", "max", "(", "0", ",", "s0-1", ")", "}", "." ]
-}, {
-  "sentence_tokens" : [ "The", "transition", "probabilities", "can", "be", "defined", "arbitrarily", ",", "but", "should", "not", "depend", "on", "the", "starting", "size", "s0", "." ]
-}, {
-  "sentence_tokens" : [ "All", "the", "transitions", "that", "go", "below", "0", "are", "rewired", "to", "0", "." ]
-}, {
-  "sentence_tokens" : [ "If", "s0", "=0", ",", "the", "size", "after", "the", "small", "deletion", "is", "0", "with", "probability", "1.For", "duplications", ",", "1", "to", "s0", "bases", "are", "added", "to", "the", "genome", "." ]
-}, {
-  "sentence_tokens" : [ "The", "size", "after", "one", "mutation", "belongs", "to", "{", "s0", "+1", ",", "..." ]
-}, {
-  "sentence_tokens" : [ ",2", "s0", "}", "." ]
-}, {
-  "sentence_tokens" : [ "We", "suppose", "that", "each", "final", "state", "is", "reached", "with", "probability", "1/s0", "." ]
-}, {
-  "sentence_tokens" : [ "If", "s0", "=0", ",", "the", "size", "after", "the", "duplication", "is", "0", "with", "probability", "1.For", "large", "deletions", ",", "1", "to", "s0", "bases", "are", "removed", "from", "the", "genome", "." ]
-}, {
-  "sentence_tokens" : [ "The", "size", "after", "one", "mutation", "belongs", "to", "{", "0", ",", "..." ]
-}, {
-  "sentence_tokens" : [ ",", "s0-1", "}", "." ]
-}, {
-  "sentence_tokens" : [ "We", "suppose", "that", "each", "final", "state", "is", "reached", "with", "probability", "1/s0", "." ]
-}, {
-  "sentence_tokens" : [ "If", "s0", "=0", ",", "the", "size", "after", "the", "large", "deletion", "is", "0", "with", "probability", "1.We", "suppose", "that", "small", "deletions", "(", "resp", "." ]
-}, {
-  "sentence_tokens" : [ "insertions", ")", "and", "large", "deletions", "(", "resp", "." ]
-}, {
-  "sentence_tokens" : [ "duplications", ")", "occur", "according", "to", "different", "mechanisms", "(", "thus", "at", "different", "rates", ")", "." ]
-}, {
-  "sentence_tokens" : [ "The", "fact", "that", "the", "indel", "distribution", "does", "not", "depend", "on", "s0", "is", "not", "strictly", "necessary", ",", "but", "makes", "one", "part", "of", "the", "proof", "simpler", "(", "see", "Remark", "4", "in", "Appendix", "1", ")", "." ]
-}, {
-  "sentence_tokens" : [ "The", "important", "assumption", "is", "that", "there", "is", "an", "upper", "bound", "on", "the", "size", "of", "indels", "(", "lins", "for", "small", "insertions", "and", "lsdel", "for", "small", "deletions", ")", ",", "but", "these", "bounds", "may", "be", "arbitrarily", "large", "(", "several", "kb", "for", "example", ")", "." ]
-}, {
-  "sentence_tokens" : [ "Indels", "can", "be", "thought", "as", "representing", "two", "kinds", "of", "events", "." ]
-}, {
-  "sentence_tokens" : [ "First", ",", "replication", "slippage", "of", "the", "DNA", "polymerase", "can", "lead", "to", "the", "loss", "or", "gain", "of", "a", "few", "base", "pairs", "." ]
-}, {
-  "sentence_tokens" : [ "Second", ",", "the", "transposition", "of", "transposable", "elements", "leads", "to", "the", "gain", "of", "up", "to", "10", "kb", "." ]
-}, {
-  "sentence_tokens" : [ "They", "can", "be", "incorporated", "as", "small", "insertions", "in", "our", "model", "." ]
-}, {
-  "sentence_tokens" : [ "However", ",", "note", "that", "here", "the", "insertion", "rate", "will", "be", "defined", "per", "base", "pair", "whereas", "the", "transposition", "rate", "is", "normally", "given", "per", "transposable", "element", "." ]
-}, {
-  "sentence_tokens" : [ "One", "could", "imagine", "a", "more", "complex", "model", "where", "two", "organization", "levels", "are", "considered", ":", "the", "base", "pair", "level", "for", "some", "mutational", "mechanisms", "and", "the", "copy", "number", "level", "for", "other", "elements", "such", "as", "transposable", "elements", "or", "tandemly", "repeated", "sequences", ",", "but", "that", "would", "increase", "the", "number", "of", "parameters", "." ]
-}, {
-  "sentence_tokens" : [ "By", "choosing", "the", "base", "pair", "level", "and", "expressing", "the", "mutation", "rate", "per", "base", "pair", ",", "the", "spontaneous", "rate", "of", "transposition", "will", "be", "higher", "than", "normally", "expected", "." ]
-}, {
-  "sentence_tokens" : [ "Hence", "the", "pressure", "toward", "genome", "growth", "is", "high", "in", "the", "model", "." ]
-}, {
-  "sentence_tokens" : [ "Therefore", ",", "the", "convergence", "toward", "finite", "sizes", "proved", "in", "this", "growth-prone", "model", "(", "Theorem", "2", ")", "should", "arguably", "hold", "in", "the", "more", "realistic", "model", "where", "transposable", "elements", "replicate", "more", "moderately", "based", "on", "their", "copy", "number.For", "large", "deletions", "and", "duplications", ",", "we", "have", "assumed", "that", "the", "number", "of", "base", "pairs", "that", "are", "lost", "or", "gained", "follows", "a", "uniform", "distribution", "between", "1", "and", "the", "current", "genome", "size", "." ]
-}, {
-  "sentence_tokens" : [ "Mechanistically", ",", "if", "the", "two", "end", "points", "of", "a", "deletion", "(", "or", "a", "duplication", ")", "are", "taken", "at", "random", "along", "the", "genome", ",", "the", "resulting", "distribution", "of", "losses", "(", "or", "gains", ")", "is", "uniform", "." ]
-}, {
-  "sentence_tokens" : [ "We", "use", "these", "distributions", "as", "a", "guideline", "through", "the", "paper", "but", "this", "is", "not", "necessary", "for", "showing", "that", "the", "genome", "size", "remains", "bounded", "." ]
-}, {
-  "sentence_tokens" : [ "We", "will", "see", "that", "the", "proof", "holds", "for", "a", "more", "general", "family", "of", "distributions", "(", "see", "Sect", "." ]
-}, {
-  "sentence_tokens" : [ "5", ",", "Corollary", "1", ")", "." ]
-}, {
-  "sentence_tokens" : [ "It", "is", "also", "important", "to", "note", "that", "these", "distributions", "reflect", "the", "spontaneous", "events", "." ]
-}, {
-  "sentence_tokens" : [ "Estimations", "of", "the", "distributions", "of", "rearrangements", "based", "on", "fixed", "events", "(", "filtered", "by", "natural", "selection", ")", "yield", "exponential", "or", ",", "more", "generally", ",", "gamma", "distributions", "(", "Sankoff", "et", "al.", "2005", ";", "Darling", "et", "al.", "2008", ")", "." ]
-}, {
-  "sentence_tokens" : [ "The", "spontaneous", "distributions", "are", "generally", "not", "accessible", "because", "large", "events", "are", "likely", "to", "be", "lethal", "and", "thus", "not", "observable", "." ]
-}, {
-  "sentence_tokens" : [ "Data", "from", "bacteria", "suggest", "that", "they", "could", "follow", "a", "lognormal", "law", "(", "see", "Sect", "." ]
-}, {
-  "sentence_tokens" : [ "6", ",", "Fig.", "3", ")", "." ]
-}, {
-  "sentence_tokens" : [ "There", "is", "evidence", "that", "large", "events", "occur", "in", "all", "species", "." ]
-}, {
-  "sentence_tokens" : [ "In", "bacterial", "strains", "cultivated", "in", "laboratory", "conditions", ",", "amplifications", "and", "numerous", "large", "deletions", "through", "ectopic", "recombination", "have", "been", "observed", ",", "the", "size", "of", "single", "deletions", "reaching", "up", "to", "more", "than", "200", "kb", "under", "weak", "selection", "(", "Porwollik", "et", "al.", "2004", ";", "Nilsson", "et", "al.", "2005", ")", "." ]
-}, {
-  "sentence_tokens" : [ "What", "is", "more", ",", "at", "least", "locally", ",", "the", "deletion", "sizes", "might", "be", "uniform", "because", "of", "random", "insertions", "of", "transposable", "elements", "(", "Cooper", "et", "al.", "2001", ")", "." ]
-}, {
-  "sentence_tokens" : [ "In", "the", "human", "genome", ",", "duplications", "and", "large", "deletions", "causing", "genetic", "diseases", "have", "been", "identified", "." ]
-}, {
-  "sentence_tokens" : [ "Another", "example", "is", "the", "Smith-Magenis", "syndrom", ",", "often", "associated", "with", "a", "partial", "deletion", "of", "chromosome", "17", ",", "spanning", "from", "950", "kb", "to", "9", "Mb", "(", "Lupski", "2007", ")", "." ]
-}, {
-  "sentence_tokens" : [ "For", "comparison", "purposes", ",", "a", "deletion", "of", "9", "Mb", "is", "approximately", "twice", "the", "size", "of", "the", "whole", "genome", "of", "E.", "coli", "K12", "(", "4.6", "Mb", ")", "." ]
-}, {
-  "sentence_tokens" : [ "Additionally", ",", "whole", "chromosomes", ",", "or", "even", "genomes", ",", "can", "be", "lost", "or", "duplicated", "because", "of", "segregation", "problems", "during", "cell", "division", "." ]
-}, {
-  "sentence_tokens" : [ "Whole", "genome", "duplications", "have", "been", "selected", "frequently", "through", "the", "history", "of", "life", "and", "numerous", "genomes", "bear", "traces", "of", "such", "events", "(", "Jaillon", "et", "al.", "2009", ")", "." ]
-}, {
-  "sentence_tokens" : [ "For", "each", "type", "of", "mutation", ",", "we", "define", "a", "mutation", "rate", "expressed", "as", "a", "number", "of", "mutations", "per", "base", "pair", "per", "generation", ":", "mu", "ins", "for", "small", "insertions", ",", "mu", "sdel", "for", "small", "deletions", ",", "mu", "ldel", "for", "large", "deletions", "and", "mu", "dup", "for", "duplications", "." ]
-}, {
-  "sentence_tokens" : [ "We", "call", "mu", "=", "mu", "ins+", "mu", "sdel+", "mu", "ldel+", "mu", "dup", "the", "total", "mutation", "rate", "per", "base", "pair", "per", "generation", "(", "note", "that", "in", "this", "paper", ",", "the", "term", "\"", "mutations", "\"", "refers", "to", "small", "indels", "and", "chromosomal", "rearrangements", ")", "." ]
-}, {
-  "sentence_tokens" : [ "For", "every", "generation", ",", "we", "suppose", "that", "the", "occurrences", "of", "mutations", "of", "type", "type", "along", "a", "genome", "follow", "independent", "Poisson", "processes", "with", "rate", "mu", "type", ",", "where", "mu", "type", "is", "the", "rate", "of", "the", "mutation", "considered", "." ]
-}, {
-  "sentence_tokens" : [ "The", "total", "number", "of", "mutations", "per", "generation", "is", "given", "by", "a", "Poisson", "law", "with", "parameter", "mu", "s0", ",", "where", "s0", "is", "the", "size", "of", "the", "genome", "considered", "at", "the", "beginning", "of", "the", "generation", "." ]
-}, {
-  "sentence_tokens" : [ "As", "we", "shall", "see", "later", "(", "Sect", "." ]
-}, {
-  "sentence_tokens" : [ "5", ")", ",", "allowing", "for", "several", "mutations", "per", "generation", "is", "essential", "when", "we", "include", "selection", "in", "the", "model", "." ]
-}, {
-  "sentence_tokens" : [ "As", "a", "result", "of", "the", "independence", "of", "the", "Poisson", "processes", ",", "the", "probability", "that", "any", "given", "mutation", "is", "a", "small", "insertion", "(", "for", "example", ")", "is", "mu", "ins/mu", "." ]
-}, {
-  "sentence_tokens" : [ "We", "can", "write", "the", "mutations", "as", "transitions", "on", "N", ",", "the", "space", "of", "all", "possible", "genome", "sizes", "." ]
-}, {
-  "sentence_tokens" : [ "We", "chose", "not", "to", "have", "a", "predefined", "maximal", "genome", "size", "to", "ensure", "that", "infinite", "growth", "is", "possible", "and", "that", "the", "convergence", "to", "a", "stationary", "distribution", "is", "not", "trivial.We", "define", "two", "transition", "matrices", "on", "this", "space", "." ]
-}, {
-  "sentence_tokens" : [ "The", "first", ",", "called", "M1", ",", "describes", "the", "action", "of", "a", "single", "mutation", "." ]
-}, {
-  "sentence_tokens" : [ "The", "second", "matrix", ",", "called", "MG", ",", "gives", "the", "transitions", "for", "one", "generation", ",", "when", "all", "mutations", "have", "been", "drawn", "according", "to", "independent", "Poisson", "processes", "." ]
-}, {
-  "sentence_tokens" : [ "Definition", "1", "." ]
-}, {
-  "sentence_tokens" : [ "M1", "=(", "(", "M1", ")", "ij", ")", "i", ",", "j", "in", "N", "where", "(", "M1", ")", "ij", "is", "the", "probability", "that", "a", "genome", "having", "initial", "size", "i", "ends", "up", "having", "size", "j", "after", "exactly", "one", "mutation", "." ]
-}, {
-  "sentence_tokens" : [ "M1", "is", "a", "stochastic", "matrix", "." ]
-}, {
-  "sentence_tokens" : [ "The", "transition", "rates", "from", "state", "i", "to", "state", "j", "are", "computed", "according", "to", "the", "definitions", "above", "." ]
-}, {
-  "sentence_tokens" : [ "M1", "gives", "the", "evolution", "of", "genome", "size", "mutation", "after", "mutation", "." ]
-}, {
-  "sentence_tokens" : [ "Definition", "2", "." ]
-}, {
-  "sentence_tokens" : [ "MG", "=(", "(", "MG", ")", "ij", ")", "i", ",", "j", "in", "N", "\\", "{", "0", "}", "where", "(", "MG", ")", "ij", "is", "the", "probability", "that", "a", "genome", "having", "initial", "size", "i", "ends", "up", "having", "size", "j", "after", "one", "generation", "." ]
-}, {
-  "sentence_tokens" : [ "Several", "mutations", "can", "occur", "in", "one", "generation", "depending", "on", "the", "rates", "mu", "sdel", ",", "mu", "ins", ",", "mu", "ldel", "and", "mu", "dup", "." ]
-}, {
-  "sentence_tokens" : [ "MG", "gives", "the", "evolution", "of", "genome", "size", "generation", "after", "generation.Importantly", ",", "we", "define", "MG", "on", "N", "*", "=", "N", "\\", "{", "0", "}", "instead", "of", "N.", "All", "individuals", "ending", "up", "with", "length", "0", "after", "complete", "replication", "are", "automatically", "reassigned", "to", "the", "state", "with", "length", "1", "." ]
-}, {
-  "sentence_tokens" : [ "While", "0", "is", "not", "an", "absorbing", "state", "in", "the", "Markov", "chain", "(", "N", ",", "M1", ")", "because", "of", "small", "insertions", ",", "it", "would", "be", "absorbing", "in", "the", "Markov", "chain", "(", "N", ",", "MG", ")", "because", "the", "number", "of", "mutations", "per", "replication", "given", "by", "the", "Poisson", "law", "is", "0", "." ]
-}, {
-  "sentence_tokens" : [ "Therefore", ",", "if", "we", "kept", "this", "state", ",", "it", "would", "partially", "affect", "the", "spontaneous", "dynamics", "of", "genomes", ":", "even", "if", "genomes", "tended", "do", "grow", ",", "there", "would", "be", "a", "nonzero", "probability", "that", "they", "remain", "trapped", "in", "the", "absorbing", "state", "." ]
-}, {
-  "sentence_tokens" : [ "In", "(", "N", "*", ",", "MG", ")", ",", "we", "made", "sure", "that", "there", "is", "no", "absorbing", "state", "(", "there", "is", "a", "nonzero", "probability", "to", "leave", "every", "state", ")", ",", "thus", "no", "trivial", "stationary", "distribution.We", "define", "a", "population", "vector", "nu", "t", "such", "that", "for-all", "t", "in", "N", ",", "nu", "t", "is", "a", "probability", "measure", "on", "N", "*", ",", "corresponding", "to", "the", "density", "of", "an", "infinite", "population", "." ]
-}, {
-  "sentence_tokens" : [ "nu", "t", "(", "s", ")", "represents", "the", "fraction", "of", "genomes", "with", "size", "s", "at", "generation", "t." ]
-}, {
-  "sentence_tokens" : [ "We", "consider", "an", "arbitrary", "starting", "population", "nu", "0", "." ]
-}, {
-  "sentence_tokens" : [ "In", "the", "special", "case", "where", "all", "genome", "states", "confer", "the", "same", "probability", "of", "reproduction", "(", "no", "selection", ")", ",", "the", "evolution", "of", "the", "population", "is", "given", "by1", "nu", "t", "+1", "=", "nu", "tMGBecause", "MG", "is", "stochastic", "and", "does", "not", "depend", "on", "t", ",", "Eq", "." ]
-}, {
-  "sentence_tokens" : [ "(", "1", ")", "can", "be", "interpreted", "as", "describing", "the", "evolution", "of", "the", "time-homogeneous", "Markov", "chain", "(", "N", "*", ",", "MG", ")", "in", "the", "space", "of", "genome", "sizes", "." ]
-}, {
-  "sentence_tokens" : [ "Fundamental", "Properties", "of", "the", "Gain", "and", "Loss", "Distributions", "." ]
-}, {
-  "sentence_tokens" : [ "Because", "mutations", "will", "accumulate", "with", "time", "(", "within", "a", "generation", "or", "along", "a", "lineage", ")", ",", "it", "is", "essential", "to", "understand", "how", "the", "effects", "of", "these", "mutations", "on", "genome", "size", "will", "\"", "add", "up", "\"", "in", "order", "to", "understand", "whether", "genomes", "have", "a", "tendency", "to", "grow", "or", "to", "shrink", "." ]
-}, {
-  "sentence_tokens" : [ "The", "model", "includes", "processes", "of", "different", "nature", "." ]
-}, {
-  "sentence_tokens" : [ "Small", "indels", "have", "additive", "effects", "and", "the", "average", "impact", "of", "an", "indel", "does", "not", "depend", "on", "the", "initial", "genome", "size", "." ]
-}, {
-  "sentence_tokens" : [ "For", "equal", "rates", "of", "small", "insertions", "and", "small", "deletions", "(", "mu", "ins", "=", "mu", "sdel", ")", "and", "for", "the", "same", "length", "distribution", "of", "insertions", "and", "small", "deletions", "(", "lins", "=", "lsdel", ")", "in", "particular", ",", "the", "transitions", "due", "to", "small", "indels", "are", "symmetrical", "." ]
-}, {
-  "sentence_tokens" : [ "On", "the", "contrary", ",", "duplications", "and", "large", "deletions", "have", "a", "multiplicative", "effect", "on", "genome", "size", "and", "the", "average", "gains", "and", "losses", "vary", "with", "the", "starting", "genome", "size", "s0", "." ]
-}, {
-  "sentence_tokens" : [ "Explicitly", ",", "the", "average", "gains", "and", "losses", "are21", "+2+", "...+", "s0s0", "=", "s0", "(", "s0", "+1", ")", "2s0", "~", "s02.As", "illustrated", "in", "Fig.", "1a", ",", "for", "equal", "duplication", "and", "large", "deletion", "rates", ",", "the", "transitions", "might", "look", "symmetrical", "because", "for", "a", "given", "starting", "point", ",", "gains", "and", "losses", "compensate", "each", "other", "." ]
-}, {
-  "sentence_tokens" : [ "However", ",", "this", "does", "not", "give", "a", "good", "indication", "for", "our", "process", ",", "as", "in", "fact", "we", "need", "to", "know", "whether", "a", "loss", "or", "a", "gain", "that", "was", "just", "undergone", "will", "be", "compensated", ",", "taking", "into", "account", "the", "fact", "that", "genome", "size", "has", "changed", "between", "the", "two", "mutations", "." ]
-}, {
-  "sentence_tokens" : [ "In", "linear", "scale", ",", "this", "question", "is", "difficult", "to", "answer", "because", "average", "gains", "and", "losses", "keep", "changing", "." ]
-}, {
-  "sentence_tokens" : [ "Indeed", ",", "as", "depicted", "on", "Fig.", "1a", ",", "a", "smaller", "genome", "undergoes", "smaller", "average", "gains", "and", "losses", "." ]
-}, {
-  "sentence_tokens" : [ "For", "example", ",", "if", "a", "genome", "undergoes", "a", "deletion", "followed", "by", "a", "duplication", ",", "the", "loss", "will", "be", "on", "average", "bigger", "than", "the", "gain", ",", "as", "the", "genome", "will", "have", "reached", "a", "smaller", "size", "between", "the", "two", "mutations", "." ]
-}, {
-  "sentence_tokens" : [ "This", "remains", "true", "if", "it", "undergoes", "the", "duplication", "first", ",", "so", "we", "expect", "an", "average", "loss", ",", "even", "if", "the", "distributions", "are", "symmetrical", "and", "happen", "at", "the", "same", "rate", "." ]
-}, {
-  "sentence_tokens" : [ "Hence", ",", "the", "overall", "average", "change", "in", "genome", "size", "is", "difficult", "to", "predict", ",", "as", "it", "is", "the", "sum", "of", "ever", "changing", "average", "gains", "and", "losses.In", "order", "to", "aggregate", "losses", "and", "gains", "efficiently", ",", "we", "need", "to", "find", "a", "scale", "in", "which", "the", "average", "impacts", "of", "deletions", "and", "duplications", "do", "not", "change", "with", "genome", "size", ",", "so", "we", "can", "simply", "add", "them", "up", "without", "worrying", "about", "intermediate", "states", "." ]
-}, {
-  "sentence_tokens" : [ "This", "is", "the", "case", "in", "logarithmic", "scale", "(", "Fig.", "1b", ")", ",", "in", "which", "the", "gain", "and", "loss", "distributions", "become", "nearly", "invariant", "by", "translation", "." ]
-}, {
-  "sentence_tokens" : [ "It", "becomes", "clear", "that", "the", "duplication", "and", "large", "deletion", "process", "is", "de", "facto", "biased", "toward", "shrinkage", "as", ",", "on", "average", ",", "approximately", "2.59", "duplications", "are", "needed", "to", "revert", "a", "deletion", "(", "see", "Property", "1", "below", ")", "." ]
-}, {
-  "sentence_tokens" : [ "For", "indels", ",", "the", "linear", "scale", "is", "well", "adapted", "(", "Fig.", "1c", ")", "but", ",", "as", "they", "are", "asymptotically", "negligible", "compared", "to", "duplications", "and", "large", "deletions", "(", "Fig.", "1d", ")", ",", "we", "choose", "logarithmic", "scale", "over", "linear", "scale", "." ]
-}, {
-  "sentence_tokens" : [ "Definition", "3", "." ]
-}, {
-  "sentence_tokens" : [ "We", "call", "Sn", "the", "random", "variable", "giving", "the", "state", "of", "(", "N", ",", "M1", ")", "after", "n", "mutations", "." ]
-}, {
-  "sentence_tokens" : [ "In", "probability", "notation", ",", "the", "starting", "point", "s0", "in", "N", "is", "written", "as", "a", "subscript", ",", "as", "in", "Prs0Sn", "=", "k", "=(", "M1n", ")", "s0k", ",", "the", "probability", "that", "the", "size", "k", "in", "N", "is", "reached", "in", "n", "mutations", ",", "starting", "from", "s0", "." ]
-}, {
-  "sentence_tokens" : [ "For", "simplicity", ",", "when", "the", "starting", "size", "s0", "has", "no", "influence", ",", "we", "drop", "the", "subscript", ",", "as", "in", "Prs0Sn", "+1", "=", "j", "|", "Sn", "=", "i", "=", "PrSn", "+1", "=", "j", "|", "Sn", "=", "i", "=(", "M1", ")", "ij", "." ]
-}, {
-  "sentence_tokens" : [ "Property", "1", "." ]
-}, {
-  "sentence_tokens" : [ "Let", "Delta", "(", "s", ")", "=", "Elog", "(", "Sn", "+1", ")", "|", "Sn", "=", "s-Elog", "(", "Sn", ")", "|", "Sn", "=", "s", ",", "the", "average", "size", "of", "one", "mutation", "jumps", "in", "logarithmic", "scale", ",", "starting", "from", "s.if", "the", "(", "n", "+1", ")", "th", "mutation", "is", "a", "large", "deletion", ",", "Delta", "(", "s", ")", "--->", "s", "-->+", "infinity-1.", "if", "the", "(", "n", "+1", ")", "th", "mutation", "is", "a", "duplication", ",", "Delta", "(", "s", ")", "--->", "s", "-->+", "infinity", "2log2-1.if", "the", "(", "n", "+1", ")", "th", "mutation", "is", "an", "indel", ",", "Delta", "(", "s", ")", "--->", "s", "-->+", "infinity", "0", "." ]
-}, {
-  "sentence_tokens" : [ "The", "proof", "of", "this", "property", "is", "given", "at", "the", "beginning", "of", "Appendix", "1", "(", "restated", "as", "Property", "5", ")", "." ]
-}, {
-  "sentence_tokens" : [ "Existence", "and", "Uniqueness", "of", "a", "Stationary", "Distribution", "for", "the", "Generational", "Markov", "Chain", "(", "N", "*", ",", "MG", ")", "." ]
-}, {
-  "sentence_tokens" : [ "Equation", "(", "1", ")", "corresponds", "to", "the", "Markov", "chain", "(", "N", "*", ",", "MG", ")", ",", "it", "describes", "the", "evolution", "of", "genome", "size", "in", "the", "absence", "of", "selection", "." ]
-}, {
-  "sentence_tokens" : [ "We", "will", "show", "the", "existence", "and", "uniqueness", "of", "a", "stationary", "distribution", "for", "genome", "size", "using", "the", "following", "extension", "of", "Doeblin", "'", "s", "condition", "." ]
-}, {
-  "sentence_tokens" : [ "Theorem", "1", "." ]
-}, {
-  "sentence_tokens" : [ "(", "Doeblin", "'", "s", "condition", "in", "g", "steps", ")", "Let", "M", "be", "a", "transition", "probability", "matrix", "on", "a", "state", "space", "S", "with", "the", "property", "that", ",", "for", "some", "integer", "g", ">=", "1", ",", "some", "state", "if", "in", "S", "and", "epsilon", ">", "0", ",", "(", "Mg", ")", "iif", ">=", "epsilon", "for", "all", "i", "in", "S." ]
-}, {
-  "sentence_tokens" : [ "Then", "M", "has", "a", "unique", "stationary", "probability", "vector", "pi", ",", "(", "pi", ")", "if", ">=", "epsilon", "." ]
-}, {
-  "sentence_tokens" : [ "In", "other", "words", ",", "for", "all", "initial", "distributions", "mu", ",", "the", "system", "converges", "to", "the", "distribution", "given", "by", "pi", "." ]
-}, {
-  "sentence_tokens" : [ "Mathematically", ",", "||", "mu", "Mt-pi", "||", "<=", "2", "(", "1-epsilon", ")", "[", "tg", "]", ",", "t", ">=", "0", "." ]
-}, {
-  "sentence_tokens" : [ "In", "this", "definition", "and", "in", "the", "rest", "of", "this", "article", ",", "the", "norm", "is", "the", "1-norm", ",", "e.g", ".,", "||", "mu", "||", "=", "sum", "i", "in", "X", "mu", "i." ]
-}, {
-  "sentence_tokens" : [ "A", "proof", "of", "this", "theorem", "can", "be", "found", "in", "Stroock", "(", "2005", ")", "." ]
-}, {
-  "sentence_tokens" : [ "In", "this", "section", ",", "we", "will", "use", "Doeblin", "'", "s", "condition", "in", "g", "=", "2", "steps", "(", "generations", ")", "to", "prove", "the", "following", "theorem", "." ]
-}, {
-  "sentence_tokens" : [ "Theorem", "2", "." ]
-}, {
-  "sentence_tokens" : [ "(", "Stationary", "distribution", "for", "genome", "size", "without", "selection", ")", "If", "(", "2log2-1", ")", "mu", "dup", "<", "mu", "ldel", ",", "then", "the", "Markov", "chain", "(", "N", "*", ",", "MG", ")", "has", "a", "unique", "asymptotic", "stationary", "probability", "vector", "nu", "infinity", "." ]
-}, {
-  "sentence_tokens" : [ "For", "any", "initial", "distribution", "nu", "0", ",", "the", "distribution", "of", "genome", "sizes", "converges", "to", "nu", "infinity", "." ]
-}, {
-  "sentence_tokens" : [ "Mathematically", ",", "limt", "-->", "infinity", "||", "nu", "0MGt-nu", "infinity", "||", "=", "0Biologically", ",", "the", "convergence", "of", "the", "distribution", "implies", "that", ",", "even", "after", "a", "long", "time", "of", "evolution", ",", "genome", "size", "does", "not", "tend", "to", "infinity", ":", "an", "arbitrary", "large", "part", "of", "genomes", "is", "located", "beneath", "a", "finite", "size", "." ]
-}, {
-  "sentence_tokens" : [ "The", "rate", "of", "small", "insertions", "and", "small", "deletions", "does", "not", "impend", "the", "convergence", "of", "the", "system", "." ]
-}, {
-  "sentence_tokens" : [ "In", "particular", ",", "the", "rate", "of", "transposition", "of", "transposable", "elements", "can", "be", "arbitrarily", "large", ",", "genomes", "will", "still", "converge", "toward", "finite", "sizes", "." ]
-}, {
-  "sentence_tokens" : [ "What", "is", "more", ",", "genome", "size", "remains", "finite", "for", "a", "duplication", "rate", "mu", "dup", "as", "large", "as", "~", "2.6", "higher", "than", "the", "rate", "of", "large", "deletions", "mu", "ldel.The", "remainder", "of", "this", "section", "is", "dedicated", "to", "the", "proof", "of", "this", "theorem", "and", "can", "be", "skipped", "without", "impeding", "the", "understanding", "of", "the", "results.To", "prove", "that", "Doeblin", "'", "s", "condition", "is", "met", ",", "we", "have", "to", "evaluate", "the", "generational", "transitions", "in", "MG", "." ]
-}, {
-  "sentence_tokens" : [ "In", "order", "to", "do", "this", ",", "we", "need", "to", "study", "the", "single", "mutation", "level", "first", "." ]
-}, {
-  "sentence_tokens" : [ "In", "the", "mutational", "Markov", "chain", "(", "N", ",", "M1", ")", ",", "every", "state", "communicates", "with", "its", "neighbors", "." ]
-}, {
-  "sentence_tokens" : [ "More", "precisely", ",", "it", "is", "possible", "to", "gain", "exactly", "one", "base", "pair", "through", "small", "insertions", "or", "duplications", "and", "to", "lose", "exactly", "one", "base", "pair", "by", "small", "deletions", "or", "large", "deletions", "." ]
-}, {
-  "sentence_tokens" : [ "By", "combining", "these", "transitions", ",", "we", "can", "imagine", "a", "mutational", "path", "starting", "from", "any", "initial", "genome", "size", "to", "any", "final", "size", ",", "in", "a", "finite", "number", "of", "mutations", "." ]
-}, {
-  "sentence_tokens" : [ "At", "the", "generation", "level", ",", "these", "mutational", "paths", "may", "exactly", "occur", "with", "some", "positive", "probability", "given", "by", "the", "Poisson", "processes", "." ]
-}, {
-  "sentence_tokens" : [ "Thus", "all", "the", "states", "in", "(", "N", "*", ",", "MG", ")", "can", "transit", "to", "any", "state", "in", "N", "*", "in", "one", "step", "(", "generation", ")", "." ]
-}, {
-  "sentence_tokens" : [ "Concerns", "to", "Overcome", "." ]
-}, {
-  "sentence_tokens" : [ "Even", "though", "all", "the", "transitions", "in", "(", "N", "*", ",", "MG", ")", "are", "strictly", "positive", ",", "Doeblin", "'", "s", "condition", "is", "not", "trivially", "met", "." ]
-}, {
-  "sentence_tokens" : [ "Because", "N", "*", "is", "infinite", ",", "the", "probability", "associated", "to", "some", "transitions", "may", ",", "and", "will", ",", "become", "arbitrarily", "small", ",", "so", "there", "is", "no", "trivial", "lower", "bound", "epsilon", ">", "0", "as", "demanded", "in", "Doeblin", "'", "s", "condition", "." ]
-}, {
-  "sentence_tokens" : [ "The", "infinite", "size", "of", "the", "matrix", "is", "the", "main", "concern", "here", ",", "because", "a", "number", "of", "classical", "theorems", "(", "such", "as", "Perron", "-", "Frobenius", ")", "do", "not", "apply", "." ]
-}, {
-  "sentence_tokens" : [ "What", "is", "more", ",", "there", "is", "no", "absorbing", "state", ",", "so", "there", "is", "no", "trivial", "stationary", "distribution", "." ]
-}, {
-  "sentence_tokens" : [ "The", "important", "property", "is", "that", "in", "logarithmic", "scale", ",", "duplications", "and", "large", "deletions", "overcome", "small", "indels", "and", "become", "invariant", "by", "translation", "(", "Property", "1", ")", "." ]
-}, {
-  "sentence_tokens" : [ "The", "difficulty", "of", "the", "proof", "of", "Theorem", "2", "is", "that", "this", "behavior", "is", "only", "asymptotic", "(", "it", "is", "a", "good", "description", "for", "large", "genomes", ")", "." ]
-}, {
-  "sentence_tokens" : [ "Sketch", "of", "the", "Proof", "." ]
-}, {
-  "sentence_tokens" : [ "We", "will", "subdivide", "the", "space", "of", "genome", "states", "in", "two", "subspaces", ",", "a", "finite", "subspace", "Xsmall", "subset", "N", "*", "of", "genomes", "smaller", "than", "a", "specific", "size", "s", "~", ",", "and", "an", "infinite", "subspace", "Xlarge", "subset", "N", "*", "of", "genomes", "larger", "than", "s", "~", "." ]
-}, {
-  "sentence_tokens" : [ "We", "will", "show", "that", "a", "final", "genome", "size", "sf", "<=", "s", "~", "can", "be", "reached", "in", "g", "=", "2", "generations", "with", "a", "probability", "greater", "than", "a", "certain", "epsilon", ">", "0", ",", "regardless", "of", "the", "starting", "genome", "size", "s0.If", "s0", "in", "Xsmall", ",", "this", "condition", "is", "easily", "met", "because", "the", "subspace", "is", "finite", "." ]
-}, {
-  "sentence_tokens" : [ "This", "will", "be", "formally", "stated", "in", "Lemma", "1.If", "s0", "in", "Xlarge", ",", "the", "probability", "to", "reach", "sf", "in", "two", "generations", "is", "at", "least", "the", "probability", "to", "reach", "a", "state", "in", "Xsmall", "at", "the", "first", "generation", "and", "then", "to", "reach", "sf", "from", "there", "." ]
-}, {
-  "sentence_tokens" : [ "For", "the", "first", "generation", ",", "we", "will", "show", "that", "as", "long", "as", "duplications", "are", "not", "much", "more", "frequent", "than", "deletions", "(", "mu", "dup", "<", "2.59", "mu", "ldel", "approximately", ")", ",", "large", "genomes", "tend", "to", "become", "smaller", ",", "reach", "a", "smaller", "size", "in", "a", "finite", "time", "and", "stay", "around", "this", "smaller", "size", "." ]
-}, {
-  "sentence_tokens" : [ "This", "will", "be", "formally", "stated", "in", "Lemma", "2", "." ]
-}, {
-  "sentence_tokens" : [ "We", "will", "also", "use", "Chebyshev", "'", "s", "inequality", "to", "show", "that", "the", "number", "of", "mutations", "in", "one", "generation", "is", "indeed", "sufficient", "to", "shrink", "below", "s", "~", "." ]
-}, {
-  "sentence_tokens" : [ "For", "the", "second", "generation", ",", "we", "will", "use", "again", "Lemma", "1", "." ]
-}, {
-  "sentence_tokens" : [ "Lemma", "1", "." ]
-}, {
-  "sentence_tokens" : [ "Suppose", "we", "have", "a", "non", "empty", "and", "finite", "subset", "of", "possible", "genome", "sizes", "X", "subset", "N", "*", "." ]
-}, {
-  "sentence_tokens" : [ "Then", "there", "is", "sf", "in", "X", "and", "epsilon", "1", ">", "0", "such", "that", "(", "MG", ")", "sisf", ">=", "epsilon", "1", "for", "all", "si", "in", "X.", "Proof", "." ]
-}, {
-  "sentence_tokens" : [ "Pick", "any", "sf", "in", "X.", "As", "X", "is", "finite", ",", "the", "transition", "probabilities", "toward", "sf", "are", "bounded", "below", "by", "a", "real", "value", "epsilon", "1", "." ]
-}, {
-  "sentence_tokens" : [ "As", "just", "seen", "in", "the", "main", "text", ",", "every", "state", "is", "accessible", "by", "any", "other", "state", "in", "(", "N", "*", ",", "MG", ")", "with", "strictly", "positive", "probability", ",", "thus", "epsilon", "1", ">", "0", "." ]
-}, {
-  "sentence_tokens" : [ "*", "This", "lemma", "shows", "that", "Doeblin", "'", "s", "condition", "applies", "trivially", "for", "MG", "if", "we", "restrict", "genome", "size", "a", "priori", "." ]
-}, {
-  "sentence_tokens" : [ "However", ",", "in", "our", "model", ",", "genomes", "may", "be", "arbitrarily", "large", "." ]
-}, {
-  "sentence_tokens" : [ "We", "will", "show", "that", "no", "matter", "how", "large", "they", "are", ",", "they", "will", "reach", "the", "same", "finite", "set", "of", "states", "ultimately", "under", "the", "condition", "of", "the", "theorem", "." ]
-}, {
-  "sentence_tokens" : [ "Lemma", "2", "." ]
-}, {
-  "sentence_tokens" : [ "If", "(", "2log2-1", ")", "mu", "dup", "<", "mu", "ldel", ",", "there", "exists", "delta", ">", "0", "and", "a", "size", "threshold", "s", "~", "in", "N", "such", "that", "for-all", "n", ">=", "0", ",", "for-all", "s", ">=", "s", "~", ",", "Elog", "(", "Sn", "+1", ")", "|", "Sn", "=", "s", "<=", "Elog", "(", "Sn", ")", "|", "Sn", "=", "s-delta", "." ]
-}, {
-  "sentence_tokens" : [ "exists", "epsilon", "'", ">", "0", ",", "for-all", "n", ">=", "0", ",", "Prs0Sn", "<=", "s", "~", ">=", "epsilon", "'", "ifs0", "<=", "s", "~", "epsilon", "'", "1-logs0logs", "~+", "n", "delta", "ifs0", ">", "s", "~", "(", "where", "log", "is", "arbitrarily", "extended", "by", "log0", "=0", ")", "Details", "of", "the", "proof", "for", "Lemma", "2", "are", "presented", "in", "Appendix", "1", "." ]
-}, {
-  "sentence_tokens" : [ "This", "proof", "is", "done", "by", "looking", "at", "the", "general", "behavior", "for", "large", "genomes", "(", "with", "size", ">", "s", "~", ")", "and", "return", "times", "for", "small", "genomes", "(", "with", "size", "<=", "s", "~", ")", "." ]
-}, {
-  "sentence_tokens" : [ "It", "involves", "several", "steps", "." ]
-}, {
-  "sentence_tokens" : [ "We", "begin", "by", "looking", "at", "the", "impact", "of", "each", "mutation", "on", "genome", "size", "in", "the", "scale", "adapted", "to", "the", "mutations", "that", "scales", "most", "with", "genome", "size", "." ]
-}, {
-  "sentence_tokens" : [ "As", "stated", "in", "Property", "1", ",", "asymptotically", ",", "large", "deletions", "and", "duplications", "overcome", "local", "mutations", "and", "determine", "the", "spontaneous", "behavior", "." ]
-}, {
-  "sentence_tokens" : [ "The", "balance", "between", "duplications", "and", "deletions", "decides", "whether", "large", "genomes", "will", "tend", "to", "grow", "or", "to", "shrink", "." ]
-}, {
-  "sentence_tokens" : [ "If", "(", "2log2-1", ")", "mu", "dup", "<", "mu", "ldel", ",", "the", "tendency", "is", "toward", "smaller", "genomes", "and", "we", "can", "find", "a", "threshold", "s", "~", "above", "which", "genomes", "shrink", "by", "at", "least", "some", "(", "relative", ")", "amount", "delta", "on", "average", "." ]
-}, {
-  "sentence_tokens" : [ "We", "show", "that", "the", "probability", "for", "genomes", "to", "get", "below", "the", "s", "~", "threshold", "at", "least", "once", "progressively", "tends", "to", "1", ",", "when", "the", "number", "n", "of", "mutations", "increases", "(", "parenthesized", "part", "of", "the", "lower", "part", "of", "claim", "(", "b", ")", ")", "." ]
-}, {
-  "sentence_tokens" : [ "In", "parallel", ",", "we", "show", "that", "a", "fixed", "fraction", "of", "genomes", "starting", "below", "s", "~", "remains", "always", "there", "." ]
-}, {
-  "sentence_tokens" : [ "To", "do", "so", ",", "we", "show", "that", "starting", "from", "s", "~", "and", "aggregating", "with", "s", "~", "the", "states", "below", "s", "~", "represents", "a", "worst-case", "scenario", "in", "terms", "of", "genome", "growth", "." ]
-}, {
-  "sentence_tokens" : [ "We", "study", "the", "time", "of", "first", "returns", "to", "s", "~", "in", "this", "worst-case", "scenario", "." ]
-}, {
-  "sentence_tokens" : [ "We", "prove", "that", "the", "expected", "value", "of", "the", "first", "return", "time", "is", "finite", "and", ",", "using", "a", "theorem", "based", "on", "return", "times", ",", "derive", "the", "upper", "part", "of", "claim", "(", "b", ")", "." ]
-}, {
-  "sentence_tokens" : [ "This", "also", "implies", "that", "no", "matter", "how", "far", "above", "s", "~", "the", "genome", "size", "starts", ",", "once", "it", "is", "reached", ",", "a", "fixed", "fraction", "remains", "there", "forever", "(", "explaining", "the", "presence", "of", "epsilon", "'", "in", "the", "two", "parts", "of", "claim", "(", "b", ")", ")", "." ]
-}, {
-  "sentence_tokens" : [ "As", "detailed", "below", ",", "we", "complete", "the", "demonstration", "of", "Theorem", "2", "by", "showing", "that", "for", "large", "genomes", ",", "the", "number", "of", "mutations", "in", "one", "generation", "is", "indeed", "sufficient", "to", "shrink", "below", "s", "~", "(", "at", "least", "asymptotically", ")", "by", "linking", "the", "mutation", "chain", "(", "N", ",", "M1", ")", "to", "the", "generation", "chain", "(", "N", "*", ",", "MG", ")", "." ]
-}, {
-  "sentence_tokens" : [ "Proof", "(", "of", "Theorem", "2", ")", "." ]
-}, {
-  "sentence_tokens" : [ "We", "call", "Gt", "the", "random", "variable", "that", "describes", "the", "state", "of", "(", "N", "*", ",", "MG", ")", "at", "generation", "t.", "Let", "s", "~", "in", "N", "be", "the", "critical", "size", "given", "by", "Lemma", "2", "." ]
-}, {
-  "sentence_tokens" : [ "We", "subdivide", "the", "space", "of", "genome", "states", "into", "the", "finite", "subset", "Xsmall", "={", "1", "<=", "s", "<=", "s", "~", "}", "and", "the", "infinite", "subset", "Xlarge", "={", "s", ">", "s", "~", "}", "=", "N", "\\", "Xsmall", "." ]
-}, {
-  "sentence_tokens" : [ "We", "will", "show", "that", "some", "final", "genome", "size", "sf", "<=", "s", "~", "can", "be", "reached", "in", "g", "=", "2", "generations", "with", "a", "probability", "greater", "than", "epsilon", ">", "0", ",", "regardless", "of", "the", "starting", "genome", "size", "s0", "." ]
-}, {
-  "sentence_tokens" : [ "Case", "s0", "<=", "s", "~", "(", "s0", "in", "Xsmall", ")", ":", "The", "probability", "to", "reach", "size", "sf", "after", "two", "generations", "is", "at", "least", "the", "probability", "to", "reach", "sf", "and", "then", "to", "stay", "on", "sf", "." ]
-}, {
-  "sentence_tokens" : [ "We", "can", "apply", "Lemma", "1", "to", "Xsmall", "3", "exists", "sf", "<=", "s", "~", ",", "exists", "epsilon", "1", ">", "0", ",", "for-all", "s0", "<=", "s", "~", ",", "PrGt", "+1", "=", "sf", "|", "Gt", "=", "s0", ">=", "epsilon", "1.This", "is", "true", "in", "particular", "if", "s0", "=", "sf", "." ]
-}, {
-  "sentence_tokens" : [ "for-all", "s0", "<=", "s", "~", ",", "PrGt", "+2", "=", "sf", "|", "Gt", "=", "s0", ">=", "(", "epsilon", "1", ")", "2", "." ]
-}, {
-  "sentence_tokens" : [ "Case", "s0", ">", "s", "~", "(", "s0", "in", "Xlarge", ")", ":", "The", "probability", "to", "reach", "sf", "<=", "s", "~", "in", "two", "generations", "is", "at", "least", "the", "probability", "to", "reach", "a", "state", "in", "Xsmall", "at", "the", "first", "generation", "and", "then", "to", "reach", "size", "sf", "from", "there", "." ]
-}, {
-  "sentence_tokens" : [ "We", "begin", "by", "considering", "the", "first", "step", ",", "that", "is", ",", "PrGt", "+1", "<=", "s", "~", "|", "Gt", "=", "s0", "." ]
-}, {
-  "sentence_tokens" : [ "This", "transition", "probability", "is", "obtained", "by", "summing", "the", "probability", "transitions", "after", "n", "mutations", ",", "(", "Sn", ")", "n", "in", "N", ",", "weighted", "by", "the", "probability", "that", "n", "mutations", "occur", "within", "one", "generation", "." ]
-}, {
-  "sentence_tokens" : [ "The", "number", "of", "mutations", "N", "follows", "a", "Poisson", "distribution", "with", "parameter", "mu", "s0.PrGt", "+1", "<=", "s", "~", "|", "Gt", "=", "s0", "=", "sum", "n", ">=", "0Prs0Sn", "<=", "s", "~", "(", "mu", "s0", ")", "nn", "!" ]
-}, {
-  "sentence_tokens" : [ "e-mu", "s0.According", "to", "Lemma", "2", ",", "exists", "epsilon", "'", ">", "0", ",", "Prs0Sn", "<=", "s", "~", ">=", "epsilon", "'", "1-logs0logs", "~+", "n", "delta", "." ]
-}, {
-  "sentence_tokens" : [ "In", "order", "for", "this", "relation", "to", "be", "meaningful", ",", "we", "look", "for", "n", "*", "(", "s0", ")", "such", "that", "for-all", "n", ">=", "n", "*", "(", "s0", ")", ",", "Prs0Sn", "<=", "s", "~", ">=", "epsilon", "'/2", "." ]
-}, {
-  "sentence_tokens" : [ "We", "find", "n", "*", "(", "s0", ")", "=(", "2logs0-logs", "~", ")/delta", "." ]
-}, {
-  "sentence_tokens" : [ "This", "is", "the", "number", "of", "mutations", "that", "are", "needed", "to", "make", "sure", "that", "the", "probability", "of", "going", "below", "s", "~", "at", "least", "once", "is", "more", "than", "1/2", "." ]
-}, {
-  "sentence_tokens" : [ "By", "dropping", "the", "first", "terms", "of", "the", "sum", ",", "we", "obtainPrGt", "+1", "<=", "s", "~", "|", "Gt", "=", "s0", ">=", "sum", "n", ">=", "n", "*", "(", "s0", ")", "PrSn", "<=", "s", "~", "|", "S0", "=", "s0", "(", "mu", "s0", ")", "nn", "!" ]
-}, {
-  "sentence_tokens" : [ "e-mu", "s0thusPrGt", "+1", "<=", "s", "~", "|", "Gt", "=", "s0", ">=", "epsilon", "'", "2PrN", ">=", "(", "2logs0-logs", "~", ")/delta", "." ]
-}, {
-  "sentence_tokens" : [ "When", "s0", "goes", "to", "+", "infinity", ",", "we", "have", "(", "2logs0-logs", "~", ")/delta", "<<", "mu", "s0", "=", "EN", "." ]
-}, {
-  "sentence_tokens" : [ "What", "is", "more", ",", "sigma", "N", "=", "mu", "s0", "." ]
-}, {
-  "sentence_tokens" : [ "This", "means", "that", "when", "s0", "tends", "to", "infinity", ",", "(", "2logs0-logs", "~", ")/delta", "is", "below", "EN", "by", "a", "number", "of", "standard", "deviations", "that", "tends", "to", "infinity", "." ]
-}, {
-  "sentence_tokens" : [ "The", "one", "sided", "Chebyshev", "inequality", "implies", "that", "PrN", ">=", "(", "2logs0-logs", "~", ")/delta", "tends", "to", "1", "." ]
-}, {
-  "sentence_tokens" : [ "Because", "this", "nonzero", "limits", "exists", "and", "because", "the", "probability", "is", "always", "strictly", "positive", ",", "it", "is", "necessarily", "bounded", "below", "by", "some", "positive", "number", "." ]
-}, {
-  "sentence_tokens" : [ "Multiplication", "by", "epsilon", "'/2", "does", "not", "change", "that", "fact", ",", "hence", "exists", "epsilon", "2", ">", "0", ",", "PrGt", "+1", "<=", "s", "~", "|", "Gt", "=", "s0", ">=", "epsilon", "2.Once", "a", "state", "sj", "in", "Xsmall", "is", "reached", ",", "we", "apply", "the", "relation", "given", "by", "Lemma", "1", "for", "the", "second", "generation", "with", "the", "same", "sf", "as", "in", "(", "3", ")", "for-all", "s0", ">", "s", "~", ",", "PrGt", "+2", "=", "sf", "|", "Gt", "=", "s0", ">=", "epsilon", "2", "epsilon", "1.Taking", "epsilon", "=", "epsilon", "1", "x", "min", "{", "epsilon", "1", ",", "epsilon", "2", "}", "gives", "the", "desired", "lower", "bound", "for", "Doeblin", "'", "s", "condition", "in", "two", "steps", "for", "(", "N", "*", ",", "MG", ")", "." ]
-}, {
-  "sentence_tokens" : [ "*", "Quantitative", "Bounds", "for", "the", "Distribution", "Using", "a", "Continuous", "Approximation", "." ]
-}, {
-  "sentence_tokens" : [ "Theorem", "2", "shows", "that", "without", "selection", ",", "the", "size", "distribution", "converges", "toward", "a", "specific", "distribution", "nu", "infinity", "." ]
-}, {
-  "sentence_tokens" : [ "From", "a", "theoretical", "point", "of", "view", ",", "the", "quantiles", "of", "this", "distribution", "give", "bounds", "that", "indicate", "where", "the", "population", "will", "asymptotically", "be", "found", "." ]
-}, {
-  "sentence_tokens" : [ "However", ",", "the", "proof", "gives", "very", "little", "quantitative", "information", "about", "the", "location", "of", "these", "bounds", "." ]
-}, {
-  "sentence_tokens" : [ "In", "order", "to", "be", "more", "precise", ",", "we", "need", "to", "take", "into", "account", "the", "second", "moments", "of", "the", "transition", "distributions", "." ]
-}, {
-  "sentence_tokens" : [ "The", "proof", "of", "Theorem", "2", "relies", "on", "the", "fact", "that", ",", "asymptotically", ",", "the", "effect", "of", "indels", "become", "negligible", "compared", "to", "deletions", "and", "duplications", "(", "Property", "1", ")", "already", "for", "the", "first-order", "moments", "." ]
-}, {
-  "sentence_tokens" : [ "We", "use", "this", "remark", "to", "simplify", "the", "computations", "of", "the", "second", "moments", "and", "the", "bounds", "for", "the", "quantiles", "of", "the", "size", "distribution", "by", "considering", "a", "simplified", "and", "continuous", "model", "." ]
-}, {
-  "sentence_tokens" : [ "Definition", "4", "." ]
-}, {
-  "sentence_tokens" : [ "We", "consider", "a", "genome", "with", "starting", "size", "s0", "in", "R+", "*", "that", "undergoes", "only", "independent", "large", "deletions", "and", "duplications", "." ]
-}, {
-  "sentence_tokens" : [ "We", "call", "S", "^", "n", "in", "R+", "*", "the", "genome", "length", "after", "n", "mutations", "." ]
-}, {
-  "sentence_tokens" : [ "The", "size", "evolution", "is", "given", "by", "S", "^", "n", "+1", "=", "lambda", "nS", "^", "n", ",", "where", "lambda", "n", "->", "U", "(", "[", "0,1", "]", ")", "if", "the", "nth", "mutation", "is", "a", "deletion", "and", "lambda", "n", "->", "U", "(", "[", "1,2", "]", ")", "if", "it", "is", "a", "duplication", "." ]
-}, {
-  "sentence_tokens" : [ "In", "log", "scale", ",", "logS", "^", "n", "+1", "=", "log", "lambda", "n+", "logS", "^", "n." ]
-}, {
-  "sentence_tokens" : [ "We", "call", "Jn", "=", "log", "lambda", "n." ]
-}, {
-  "sentence_tokens" : [ "As", "in", "the", "general", "case", ",", "we", "assume", "that", "in", "one", "generation", "the", "number", "of", "deletions", "and", "duplications", "are", "Poisson", "distributed", "with", "parameters", "mu", "ldels0", "and", "mu", "dups0", "and", "follow", "independent", "Poisson", "processes", "." ]
-}, {
-  "sentence_tokens" : [ "We", "call", "S", "^", "f", "the", "genome", "size", "at", "the", "end", "of", "the", "generation", "." ]
-}, {
-  "sentence_tokens" : [ "Property", "2", "." ]
-}, {
-  "sentence_tokens" : [ "Because", "the", "mutations", "follow", "independent", "processes", ",", "the", "(", "Jn", ")", "n", "in", "N", "are", "independent", ",", "identically", "distributed", "and", "do", "not", "depend", "on", "S", "^", "n." ]
-}, {
-  "sentence_tokens" : [ "What", "is", "more", ",", "EJn", "=", "Elog", "lambda", "n", "|", "del.Prdeletion+", "Elog", "lambda", "n", "|", "dup.Prduplication", "=-mu", "ldel", "mu", "ldel+", "mu", "dup+", "(", "2log2-1", ")", "mu", "dup", "mu", "ldel+", "mu", "dupSimilarly", "we", "can", "obtain", "the", "second", "moment", "(", "thus", "the", "standard", "deviation", ")", "EJn2", "=", "2", "(", "mu", "ldel+", "(", "1-log2", ")", "2", "mu", "dup", ")", "mu", "ldel+", "mu", "dup", "." ]
-}, {
-  "sentence_tokens" : [ "Proof", "." ]
-}, {
-  "sentence_tokens" : [ "The", "results", "follow", "from", "integration", "by", "parts", ",", "namely", "Elog", "lambda", "n", "|", "del", "." ]
-}, {
-  "sentence_tokens" : [ "=", "integral", "01logxdx", "=-1,", "Elog", "lambda", "n", "|", "dup", "." ]
-}, {
-  "sentence_tokens" : [ "=", "integral", "12logxdx", "=", "2log2-1", "and", "for", "the", "second", "moment", "integral", "01log2xdx", "=", "2", ",", "integral", "12log2xdx", "=", "2", "(", "1-log2", ")", "2", "." ]
-}, {
-  "sentence_tokens" : [ "*", "Property", "3", "." ]
-}, {
-  "sentence_tokens" : [ "Es0logS", "^", "n", "=", "logs0+", "nEJn", "and", "sigma", "s0logS", "^", "n", "=", "n", "sigma", "Jn", "by", "the", "independence", "of", "the", "jumps", "." ]
-}, {
-  "sentence_tokens" : [ "The", "Central", "Limit", "Theorem", "states", "that", ",", "asymptotically", ",", "logS", "^", "n", "is", "normally", "distributed.Under", "the", "continuous", "approximation", ",", "we", "have", "a", "simple", "jumping", "process", "that", "is", "space-homogeneous", "in", "log", "scale", "." ]
-}, {
-  "sentence_tokens" : [ "As", "the", "two", "first", "moments", "are", "finite", ",", "it", "asymptotically", "behaves", "like", "biased", "diffusion", "because", "of", "the", "central", "limit", "theorem", "." ]
-}, {
-  "sentence_tokens" : [ "The", "standard", "deviation", "increases", "more", "slowly", "than", "the", "mean", "is", "shifted", "so", "the", "expected", "value", "gives", "a", "good", "description", "of", "the", "whole", "distribution", "." ]
-}, {
-  "sentence_tokens" : [ "The", "bias", "condition", "is", "very", "simple", ":", "if", "EJn", "<", "0", ",", "the", "genome", "shrinks", "on", "average", ",", "if", "EJn", ">", "0", ",", "it", "grows", "on", "average", "with", "every", "mutation", "." ]
-}, {
-  "sentence_tokens" : [ "The", "shrinkage", "condition", "is", "the", "same", "as", "for", "the", "discrete", "model", ":", "genomes", "asymptotically", "shrink", "if", "and", "only", "if", "mu", "ldel", ">", "(", "2log2-1", ")", "mu", "dup.The", "main", "difference", "with", "the", "discrete", "case", "is", "that", "the", "relative", "amount", "by", "which", "genomes", "shrink", "is", "identical", "whatever", "the", "starting", "position", "(", "even", "for", "small", "genomes", ")", "and", "it", "can", "lead", "logS", "^", "n", "to", "have", "negative", "values", ",", "which", "was", "not", "possible", "in", "the", "discrete", "space", "." ]
-}, {
-  "sentence_tokens" : [ "This", "means", "that", "once", "the", "genome", "becomes", "small", "(", "in", "the", "sense", "of", "the", "proof", "of", "Theorem", "2", ")", "it", "keeps", "getting", "smaller", "so", "there", "is", "no", "need", "to", "prove", "that", "it", "will", "remain", "small", "(", "as", "we", "did", "in", "Lemma", "2", ")", "." ]
-}, {
-  "sentence_tokens" : [ "This", "is", "because", "there", "are", "no", "local", "mutations", ",", "which", "could", "have", "a", "strong", "effect", "on", "small", "genomes.Thus", ",", "for", "large", "genomes", ",", "the", "behavior", "of", "the", "discrete", "Markov", "chain", "(", "N", ",", "M1", ")", "is", "close", "to", "the", "continuous", "approximation", "and", "is", "similar", "to", "biased", "diffusion", "." ]
-}, {
-  "sentence_tokens" : [ "When", "genomes", "become", "smaller", ",", "the", "bias", "may", "become", "weaker", "because", "of", "indels", "and", "discretization", "effects", "." ]
-}, {
-  "sentence_tokens" : [ "On", "the", "border", ",", "the", "state", "s", "=0", "is", "a", "wall", "that", "cannot", "be", "crossed", "." ]
-}, {
-  "sentence_tokens" : [ "Therefore", ",", "the", "discrete", "system", "is", "composed", "of", "a", "wall", "on", "one", "side", ",", "biased", "diffusion", "on", "the", "infinite", "side", "and", "an", "uncharacterized", "behavior", "in", "between", "." ]
-}, {
-  "sentence_tokens" : [ "If", "the", "diffusion", "is", "biased", "toward", "the", "wall", "(", "mu", "ldel", ">", "(", "2log2-1", ")", "mu", "dup", ")", ",", "it", "is", "easy", "to", "imagine", "that", "the", "population", "will", "end", "up", "next", "to", "the", "wall", ",", "even", "though", "its", "exact", "final", "position", "is", "partly", "determined", "by", "small", "indels.We", "now", "compute", "the", "distribution", "of", "genome", "size", "in", "the", "continuous", "model", "after", "one", "generation", "by", "weighting", "the", "(", "logS", "^", "n", ")", "n", "in", "N", "with", "the", "Poisson", "distribution", "." ]
-}, {
-  "sentence_tokens" : [ "Property", "4", "." ]
-}, {
-  "sentence_tokens" : [ "By", "definition", ",", "for", "all", "x", "in", "R", ",", "Prs0logS", "^", "f", "<=", "x", "=", "sum", "n", ">=", "0Prs0logS", "^", "n", "<=", "x(", "(", "mu", "ldel+", "mu", "dup", ")", "s0", ")", "nn", "!" ]
-}, {
-  "sentence_tokens" : [ "e-(", "mu", "ldel+", "mu", "dup", ")", "s0.The", "expected", "value", "is", "Es0logS", "^", "f", "=", "logs0+", "s0", "(", "(", "2log2-1", ")", "mu", "dup-mu", "ldel", ")", "and", "the", "standard", "deviation", "is", "sigma", "s0logS", "^", "f", "=", "s02", "(", "log2-1", ")", "2", "mu", "dup", "+2", "mu", "ldel", "." ]
-}, {
-  "sentence_tokens" : [ "The", "proof", "is", "given", "in", "Appendix", "1", "." ]
-}, {
-  "sentence_tokens" : [ "We", "introduce", "now", "a", "parameter", "k", "that", "will", "be", "used", "to", "compute", "the", "fraction", "of", "the", "population", "located", "beyond", "the", "mean", "of", "genome", "size", "after", "one", "generation", "plus", "k", "standard", "deviations", "." ]
-}, {
-  "sentence_tokens" : [ "We", "begin", "by", "computing", "the", "latter", "quantity", "depending", "on", "s0", "." ]
-}, {
-  "sentence_tokens" : [ "Lemma", "3", "." ]
-}, {
-  "sentence_tokens" : [ "Let", "k", ">=", "1", "and", "Qk", "(", "s0", ")", "=", "expEs0logS", "^", "f+", "k", "sigma", "s0logS", "^", "f." ]
-}, {
-  "sentence_tokens" : [ "We", "call", "A", "=", "mu", "ldel-(", "2log2-1", ")", "mu", "dup", "and", "B", "=", "2", "(", "log2-1", ")", "2", "mu", "dup", "+2", "mu", "ldel", ",", "so", "that", "Qk", "(", "s0", ")", "=", "exp", "(", "logs0-As0+", "kBs0", ")", "." ]
-}, {
-  "sentence_tokens" : [ "If", "(", "2log2-1", ")", "mu", "dup", "<", "mu", "ldel", ",", "Qk", "(", "s0", ")", "reaches", "a", "maximum", "for", "s0max", ",", "(", "k", ")", "=", "1A+", "k2B28A21", "+1", "+16", "AB2", "Qk", "(", "s0", ")", "=", "s0", "for", "a", "unique", "value", "sfixed", "(", "k", ")", "=", "k2B2/A2", ">=", "s0max", ",", "(", "k", ")", "." ]
-}, {
-  "sentence_tokens" : [ "The", "proof", "is", "straightforward", "and", "detailed", "in", "Appendix", "1", "." ]
-}, {
-  "sentence_tokens" : [ "The", "general", "shape", "of", "the", "curve", "and", "the", "points", "s0max", ",", "(", "k", ")", "and", "sfixed", "(", "k", ")", "are", "depicted", "on", "Fig.", "2", "in", "the", "case", "were", "k", "=", "1", "and", "mu", "dup", "=", "mu", "ldel", "=", "10-6", "." ]
-}, {
-  "sentence_tokens" : [ "By", "using", "Chebyshev", "'", "s", "inequality", ",", "Qk", "can", "be", "related", "to", "the", "quantiles", "of", "the", "distribution", "and", "we", "obtain", "the", "following", "proposition", "." ]
-}, {
-  "sentence_tokens" : [ "Proposition", "1", "." ]
-}, {
-  "sentence_tokens" : [ "Suppose", "(", "2log2-1", ")", "mu", "dup", "<", "mu", "ldel", "and", "k", ">=", "1.There", "is", "a", "bound", "s", "~", "max", "(", "k", ")", "such", "that", "for-all", "s0", "in", "R+", "*", ",", "Prs0S", "^", "f", "<=", "s", "~", "max", "(", "k", ")", ">=", "1-11+", "k2", "In", "other", "words", ",", "we", "can", "find", "a", "threshold", "s", "~", "max", "(", "k", ")", "independent", "from", "s0", "below", "which", "an", "arbitrary", "large", "part", "of", "the", "distribution", "can", "be", "found", "after", "one", "generation", "of", "the", "deletion", "and", "duplication", "process.Let", "s", "~", "fixed", "(", "k", ")", "=", "k22", "(", "log2-1", ")", "2", "mu", "dup", "+2", "mu", "ldel", "(", "mu", "ldel-(", "2log2-1", ")", "mu", "dup", ")", "2", "we", "have", "for-all", "s0", ">=", "s", "~", "fixed", "(", "k", ")", ",", "Prs0S", "^", "f", "<=", "s", "~", "fixed", "(", "k", ")", ">=", "1-11+", "k2", "Proof", "." ]
-}, {
-  "sentence_tokens" : [ "The", "proposition", "is", "a", "restatement", "of", "Lemma", "3", "by", "using", "Cantelli", "'", "s", "inequality", "(", "or", "one", "sided", "Chebyshev", "inequality", ")", "." ]
-}, {
-  "sentence_tokens" : [ "It", "states", "thatPrs0logS", "^", "f", "<=", "Es0logS", "^", "f+", "k", "sigma", "s0logS", "^", "f", ">=", "1-11+", "k2thusPrs0S", "^", "f", "<=", "Qk", "(", "s0", ")", ">=", "1-11+", "k2The", "first", "part", "of", "the", "proposition", "follows", "by", "taking", "s", "~", "max", "(", "k", ")", "=", "Qk", "(", "s0max", ",", "(", "k", ")", ")", "where", "s0max", ",", "(", "k", ")", "is", "defined", "as", "in", "Lemma", "3", "." ]
-}, {
-  "sentence_tokens" : [ "The", "second", "part", "is", "obtained", "with", "s", "~", "fixed", "(", "k", ")", "=", "sfixed", "(", "k", ")", "in", "Lemma", "3", "and", "by", "noting", "that", "Qk", "'", "(", "s0", ")", "<", "0", "for", "all", "s0", ">=", "sfixed", "(", "k", ")", ",", "so", "that", "Qk", "(", "s0", ")", "<=", "Qk", "(", "sfixed", "(", "k", ")", ")", "." ]
-}, {
-  "sentence_tokens" : [ "*", "Lemma", "3", "and", "Proposition", "1", "introduce", "two", "sequences", "of", "bounds", "that", "depend", "on", "a", "parameter", "k.", "s", "~", "max", "(", "k", ")", "gives", "bounds", "for", "the", "quantiles", "of", "the", "distribution", "at", "generation", "t", "+1", "that", "work", "for", "every", "starting", "genome", "and", "thus", "any", "starting", "distribution", "at", "time", "t.", "For", "k", "=", "1", ",", "the", "probability", "to", "get", "below", "s", "~", "max", "(", "1", ")", "is", "at", "least", "0.5", "for", "every", "step", "." ]
-}, {
-  "sentence_tokens" : [ "If", "the", "probabilities", "are", "seen", "as", "population", "densities", ",", "s", "~", "max", "(", "1", ")", "gives", "an", "upper", "bound", "for", "the", "median", "of", "the", "population", "at", "any", "step", "(", "except", "maybe", "the", "starting", "step", ")", "." ]
-}, {
-  "sentence_tokens" : [ "Increasing", "k", "increases", "the", "bound", "but", "gives", "even", "more", "restrictive", "conditions", "on", "the", "localization", "of", "the", "population", "at", "any", "step", "." ]
-}, {
-  "sentence_tokens" : [ "For", "example", ",", "for", "k", "=", "2", ",", "we", "have", "s", "~", "max", "(", "2", ")", ">", "s", "~", "max", "(", "1", ")", "but", "instead", ",", "we", "know", "that", "80", "%", "of", "the", "population", "is", "below", "s", "~", "max", "(", "2", ")", "at", "any", "step.Note", "that", "this", "would", "remain", "true", "even", "if", "the", "individuals", "were", "selected", "and", "then", "mutated", "." ]
-}, {
-  "sentence_tokens" : [ "Proposition", "1", "says", "that", "no", "matter", "which", "individuals", "are", "selected", "(", "i.e", ".,", "no", "matter", "the", "set", "of", "starting", "sizes", "s0", ")", ",", "the", "offspring", "will", "most", "likely", "be", "located", "below", "s", "~", "max", "(", "1", ")", "at", "the", "next", "step", "." ]
-}, {
-  "sentence_tokens" : [ "Figure", "2", "helps", "finding", "out", "the", "outcome", "of", "the", "selection", "mutation", "process", "." ]
-}, {
-  "sentence_tokens" : [ "To", "predict", "the", "impact", "of", "the", "mutations", "on", "size", ",", "one", "can", "interpret", "the", "x-axis", "as", "being", "the", "starting", "size", "and", "the", "y-axis", "as", "giving", "some", "likelihood", "about", "the", "final", "size", "." ]
-}, {
-  "sentence_tokens" : [ "Contrary", "to", "what", "could", "be", "naively", "expected", ",", "a", "fitness", "function", "that", "would", "select", "the", "genomes", "around", "s0max", ",", "(", "1", ")", "would", "lead", "to", "the", "largest", "genomes", "at", "the", "next", "generation", ",", "whereas", "a", "fitness", "function", "that", "would", "strongly", "select", "very", "large", "genomes", "would", "lead", "to", "much", "smaller", "genomes", ",", "as", "these", "large", "genomes", "are", "unable", "to", "maintain", "their", "size", ",", "even", "for", "one", "generation.We", "also", "illustrate", "bound", "s", "~", "fixed", "(", "k", ")", ",", "which", "is", "not", "a", "bound", "that", "works", "for", "any", "starting", "distribution", "but", "whose", "expression", "is", "much", "simpler", "than", "that", "of", "s", "~", "max", "(", "k", ")", "." ]
-}, {
-  "sentence_tokens" : [ "Genomes", "starting", "from", "s", "~", "fixed", "(", "1", ")", "have", "a", "probability", "higher", "than", "0.5", "to", "shrink", ",", "showing", "that", "they", "are", "already", "strongly", "unstable", "." ]
-}, {
-  "sentence_tokens" : [ "This", "shrinkage", "probability", "is", "far", "worse", "for", "genomes", "larger", "than", "s", "~", "fixed", "(", "1", ")", "." ]
-}, {
-  "sentence_tokens" : [ "The", "analysis", "shows", "that", "it", "is", "possible", "for", "genomes", "starting", "around", "s0max", ",", "(", "k", ")", "to", "increase", "above", "s", "~", "fixed", "(", "k", ")", "but", "due", "to", "the", "definition", "of", "s", "~", "fixed", "(", "k", ")", ",", "this", "behavior", "can", "only", "be", "transient", "." ]
-}, {
-  "sentence_tokens" : [ "s", "~", "fixed", "(", "k", ")", "is", "a", "plausible", "upper", "bound", "for", "the", "average", "behavior", ",", "even", "when", "selection", "is", "applied", "." ]
-}, {
-  "sentence_tokens" : [ "In", "the", "simple", "case", "where", "mu", "ldel", "=", "mu", "dup", "=", "mu", "dupdel", ",", "we", "have4s", "~", "fixed", "(", "k", ")", "=", "k2", "mu", "dupdel2", "(", "log2-1", ")", "2", "+2", "(", "1-(", "2log2-1", ")", ")", "2", "." ]
-}, {
-  "sentence_tokens" : [ "~", "5.81k2", "mu", "dupdelMore", "generally", ",", "if", "duplication", "and", "deletion", "rates", "are", "mechanically", "linked", "such", "that", "they", "are", "proportional", "to", "each", "other", ",", "say", "mu", "dup", "=", "lambda", "mu", "ldel", "with", "lambda", "<", "1/(", "2log2-1", ")", ",", "then5s", "~", "fixed", "(", "k", ")", "=", "k2", "mu", "ldel2", "lambda", "(", "log2-1", ")", "2", "+2", "(", "1-lambda", "(", "2log2-1", ")", ")", "2.These", "relations", "suggest", "that", "the", "bound", "on", "genome", "size", "would", "be", "roughly", "inversely", "proportional", "to", "the", "rate", "of", "large", "deletions", "and", "duplications.This", "analysis", "was", "done", "for", "a", "simplified", "model", "(", "continuous", "approximation", ")", "but", "it", "is", "arguably", "a", "good", "approximation", "for", "large", "genomes", "(", "genomes", "for", "which", "indels", "are", "negligible", "as", "in", "the", "definition", "of", "s", "~", ")", ",", "even", "in", "the", "discrete", "model", "involving", "all", "types", "of", "mutations", "." ]
-}, {
-  "sentence_tokens" : [ "We", "expect", "that", "Proposition", "1", "can", "be", "obtained", ",", "with", "some", "variations", ",", "for", "the", "discrete", "case", "by", "showing", "not", "only", "that", "the", "first", "moment", "is", "biased", "(", "see", "delta", "in", "Lemma", "2", ")", ",", "but", "also", "that", "the", "standard", "deviation", "increases", "more", "slowly", "with", "the", "number", "n", "of", "mutations", "than", "the", "first", "moment", "decreases", "." ]
-}, {
-  "sentence_tokens" : [ "In", "this", "case", ",", "this", "would", "mean", "that", ",", "regardless", "of", "the", "selection", "applied", "to", "the", "genomes", ",", "we", "can", "capture", "an", "arbitrarily", "large", "part", "of", "the", "distribution", "in", "a", "finite", "domain", "at", "any", "time", "step", "." ]
-}, {
-  "sentence_tokens" : [ "Generalizations", "and", "Interpretations", "." ]
-}, {
-  "sentence_tokens" : [ "Theorem", "2", "shows", "that", "there", "is", "an", "asymptotic", "distribution", "nu", "infinity", "for", "genome", "sizes", "in", "the", "absence", "of", "selection", "." ]
-}, {
-  "sentence_tokens" : [ "The", "convergence", "of", "the", "distribution", "implies", "that", "an", "arbitrary", "large", "part", "of", "genomes", "is", "located", "beneath", "a", "finite", "size", "." ]
-}, {
-  "sentence_tokens" : [ "What", "is", "more", ",", "the", "convergence", "does", "not", "depend", "on", "the", "rate", "of", "small", "insertions", "(", "possibly", "including", "transposable", "elements", ")", "and", "small", "deletions", "." ]
-}, {
-  "sentence_tokens" : [ "For", "uniform", "distributions", "of", "duplications", "and", "large", "deletions", ",", "the", "distribution", "of", "genome", "sizes", "converges", "for", "equal", "rates", "of", "duplication", "and", "large", "deletions", "and", "even", "if", "duplications", "are", "twice", "as", "frequent", "and", "deletions", "." ]
-}, {
-  "sentence_tokens" : [ "However", ",", "as", "mentioned", "in", "the", "presentation", "of", "the", "model", ",", "the", "uniform", "distribution", "for", "the", "sizes", "of", "duplications", "and", "large", "deletions", "is", "not", "necessary", "for", "the", "proof", "." ]
-}, {
-  "sentence_tokens" : [ "In", "the", "first", "subsection", "below", ",", "we", "give", "a", "more", "general", "condition", "for", "the", "existence", "of", "a", "stationary", "distribution", "that", "encompasses", "a", "larger", "family", "of", "distributions", "." ]
-}, {
-  "sentence_tokens" : [ "In", "the", "remainder", "of", "the", "section", ",", "we", "relate", "the", "results", "obtained", "to", "a", "more", "general", "model", "with", "selection", "in", "the", "case", "of", "an", "infinite", "population", "and", "their", "implications", "for", "a", "finite", "population", "." ]
-}, {
-  "sentence_tokens" : [ "Extension", "of", "Theorem", "2", "to", "More", "General", "Distributions", "for", "Duplications", "and", "Deletions", "." ]
-}, {
-  "sentence_tokens" : [ "We", "have", "initially", "hypothesized", "these", "distributions", "to", "be", "uniform", "for", "mathematical", "convenience", ",", "but", "all", "the", "proofs", "remain", "true", "under", "conditions", "similar", "to", "Property", "1", "." ]
-}, {
-  "sentence_tokens" : [ "All", "the", "results", "hold", "if", "the", "expected", "change", "of", "genome", "size", "for", "small", "indels", ",", "for", "duplications", "and", "large", "deletions", "converges", "to", "a", "constant", "in", "a", "specific", "scale", "given", "by", "a", "positive", "and", "increasing", "function", "f." ]
-}, {
-  "sentence_tokens" : [ "This", "is", "the", "idea", "of", "invariance", "by", "translation", "illustrated", "in", "Fig.", "1", "." ]
-}, {
-  "sentence_tokens" : [ "In", "the", "general", "case", ",", "the", "existence", "of", "a", "stationary", "distribution", "is", "also", "determined", "by", "a", "condition", "on", "duplication", "and", "deletion", "rates", "(", "and", "in", "extreme", "cases", "indel", "rates", ")", "that", "depends", "only", "on", "the", "average", "size", "of", "jumps", "." ]
-}, {
-  "sentence_tokens" : [ "Corollary", "1", "." ]
-}, {
-  "sentence_tokens" : [ "(", "Generalization", "of", "Theorem", "2", ")", "Suppose", "we", "have", "distributions", "of", "duplications", ",", "large", "deletions", "and", "indels", ",", "such", "that", "there", "exists", "a", "positive", "and", "increasing", "scaling", "function", "f", "that", "verifies", "the", "following", "conditions", "." ]
-}, {
-  "sentence_tokens" : [ "For", "Delta", "(", "s", ")", "=", "Ef", "(", "Sn", "+1", ")-f", "(", "Sn", ")", "|", "Sn", "=", "s", ":", "if", "the", "(", "n", "+1", ")", "th", "mutation", "is", "a", "deletion", ",", "Delta", "(", "s", ")", "--->", "s", "-->+", "infinity", "delta", "ldel.if", "the", "(", "n", "+1", ")", "th", "mutation", "is", "a", "duplication", ",", "Delta", "(", "s", ")", "--->", "s", "-->+", "infinity", "delta", "dup.if", "the", "(", "n", "+1", ")", "th", "mutation", "is", "an", "small", "insertion", ",", "Delta", "(", "s", ")", "--->", "s", "-->+", "infinity", "delta", "ins.if", "the", "(", "n", "+1", ")", "th", "mutation", "is", "an", "small", "deletion", ",", "Delta", "(", "s", ")", "--->", "s", "-->+", "infinity", "delta", "sdel.where", "delta", "ldel", "<=", "0", ",", "delta", "dup", ">=", "0", ",", "delta", "ins", ">=", "0", "and", "delta", "sdel", "<=", "0", "are", "constants", "among", "which", "at", "least", "one", "is", "nonzero.Then", "the", "Markov", "chain", "(", "N", "*", ",", "MG", ")", "has", "a", "unique", "asymptotic", "stationary", "probability", "vector", "nu", "infinity", "if6", "mu", "ldel", "delta", "ldel+", "mu", "dup", "delta", "dup+", "mu", "ins", "delta", "ins+", "mu", "sdel", "delta", "sdel", "<", "0If", "the", "duplications", "and", "deletions", "scale", "more", "rapidly", "than", "indels", ",", "delta", "ins", "=", "delta", "sdel", "=0", "and", "the", "condition", "simplifies", "to", "mu", "dup", "mu", "ldel", "<", "|", "delta", "ldel", "|", "delta", "dupexcept", "for", "delta", "dup", "=0", ",", "in", "which", "case", "there", "is", "always", "a", "stationary", "distribution.The", "proof", "is", "the", "same", "as", "for", "Theorem", "2", ",", "by", "replacing", "(", "2log2-1", ")", "mu", "dup-mu", "ldel", "by", "the", "left", "hand-side", "of", "the", "new", "condition", "(", "inequality", "(", "6", ")", ")", ",", "in", "particular", "for", "the", "definition", "of", "the", "global", "delta", "that", "incorporates", "the", "average", "impact", "of", "all", "mutations.If", "the", "duplication", "and", "deletion", "processes", "are", "of", "multiplicative", "nature", "(", "but", "not", "necessarily", "uniform", ")", ",", "f", "=", "log", "is", "the", "natural", "choice", "in", "the", "formula", "above", ",", "as", "used", "throughout", "the", "manuscript", "." ]
-}, {
-  "sentence_tokens" : [ "If", "the", "width", "of", "the", "deletion", "and", "duplication", "distribution", "does", "not", "scale", "proportionally", "to", "s0", ",", "another", "choice", "of", "f", "has", "to", "be", "made", ",", "such", "that", "the", "expected", "change", "tends", "to", "a", "constant", "." ]
-}, {
-  "sentence_tokens" : [ "In", "the", "extreme", "case", "where", "the", "average", "jump", "size", "already", "tends", "to", "a", "constant", "in", "normal", "scale", "(", "f", "=", "idN", ")", "for", "both", "deletions", "and", "duplications", ",", "the", "proof", "still", "works", "but", "the", "condition", "also", "incorporates", "the", "indel", "rates", "and", "their", "mean", "jump", "size", "." ]
-}, {
-  "sentence_tokens" : [ "However", "we", "expect", "that", ",", "if", "the", "impact", "of", "indels", "is", "bounded", "as", "in", "our", "model", ",", "they", "will", "become", "negligible", "and", "they", "will", "not", "appear", "in", "the", "condition", "for", "realistic", "duplication", "and", "deletion", "distributions.For", "example", ",", "we", "can", "consider", "all", "distributions", "of", "quasi-multiplicative", "nature", "." ]
-}, {
-  "sentence_tokens" : [ "Corollary", "1", "typically", "applies", "if", "the", "losses", "and", "gains", "considered", "are", "relative", "." ]
-}, {
-  "sentence_tokens" : [ "Roughly", "speaking", ",", "this", "happens", "if", "the", "distribution", "of", "gains", "and", "losses", "for", "some", "fraction", "of", "the", "genome", "is", "always", "the", "same", "(", "e.g", ".,", "there", "is", "always", "the", "same", "probability", "to", "lose", "less", "than", "5", ",", "10", "%", "or", "any", "other", "fraction", "of", "the", "genome", ",", "no", "matter", "the", "initial", "size", ")", "." ]
-}, {
-  "sentence_tokens" : [ "In", "this", "case", ",", "the", "relation", "above", "applies", "no", "matter", "whether", "the", "distribution", "is", "exponentially", "decreasing", ",", "uniform", ",", "multimodal", ",", "gamma", ",", "etc." ]
-}, {
-  "sentence_tokens" : [ "What", "is", "more", ",", "if", "the", "relative", "gains", "and", "losses", "are", "symmetrical", "(", "in", "linear", "scale", ")", ",", "there", "will", "be", "a", "stationary", "distribution", "for", "equal", "duplication", "and", "deletion", "rates", "and", "also", "for", "duplication", "rates", "moderately", "higher", "than", "deletion", "rates", "(", "the", "exact", "relation", "has", "to", "be", "computed", "for", "each", "distribution", ")", "." ]
-}, {
-  "sentence_tokens" : [ "If", "the", "second", "moment", "converges", "to", "a", "finite", "value", "in", "the", "scale", "given", "by", "f", ",", "as", "is", "the", "case", "for", "multiplicative", "or", "quasi-multiplicative", "distributions", ",", "the", "line", "of", "analysis", "given", "in", "Sect", "." ]
-}, {
-  "sentence_tokens" : [ "4", "can", "be", "used", "." ]
-}, {
-  "sentence_tokens" : [ "In", "other", "words", ",", "according", "to", "Chebyshev", "'", "s", "inequality", ",", "it", "will", "be", "possible", "to", "find", "bounds", "that", "will", "hold", "for", "every", "step", "of", "the", "generation", "process", "." ]
-}, {
-  "sentence_tokens" : [ "As", "a", "result", ",", "as", "discussed", "below", ",", "selection", "will", "not", "be", "able", "to", "lead", "to", "infinite", "genome", "growth", "in", "these", "cases", "also", "." ]
-}, {
-  "sentence_tokens" : [ "We", "expect", "that", "the", "proof", "can", "be", "extended", "for", "a", "second", "moment", "that", "does", "not", "converge", "in", "the", "scale", "given", "by", "f", ",", "but", "is", "bounded", "." ]
-}, {
-  "sentence_tokens" : [ "In", "this", "case", ",", "the", "analysis", "may", "become", "more", "technical", "and", "the", "bounds", "given", "by", "Chebyshev", "'", "s", "inequality", "very", "weak", ",", "but", "would", "still", "imply", "that", "selection", "cannot", "lead", "to", "infinite", "genome", "growth", "." ]
-}, {
-  "sentence_tokens" : [ "Interpretation", "for", "General", "Genome", "Structures", "in", "the", "Presence", "of", "Selection", "." ]
-}, {
-  "sentence_tokens" : [ "We", "did", "not", "introduce", "selection", "in", "the", "model", "presented", "until", "here", "." ]
-}, {
-  "sentence_tokens" : [ "In", "this", "section", ",", "we", "propose", "a", "more", "general", "framework", "for", "which", "our", "results", "hold", "but", "for", "which", "selection", "can", "be", "based", "on", "any", "feature", "of", "the", "genome", "or", "of", "the", "population", "." ]
-}, {
-  "sentence_tokens" : [ "Let", "Omega", "be", "the", "space", "of", "all", "genome", "states", "corresponding", "to", "different", "genome", "architectures", ",", "e.g", ".,", "all", "sequences", "of", "base", "pairs", "drawn", "from", "{", "A", ",", "C", ",", "G", ",", "T", "}", "." ]
-}, {
-  "sentence_tokens" : [ "We", "define", "a", "population", "vector", "pi", "t", "such", "that", "for-all", "t", "in", "N", ",", "pi", "t", "is", "a", "probability", "measure", "on", "Omega", ",", "corresponding", "to", "the", "density", "of", "an", "infinite", "population", "." ]
-}, {
-  "sentence_tokens" : [ "We", "consider", "an", "arbitrary", "starting", "population", "pi", "0", "." ]
-}, {
-  "sentence_tokens" : [ "For", "every", "generation", ",", "we", "assume", "that", "we", "can", "distinguish", "the", "selection", "process", "from", "the", "mutation", "process", "." ]
-}, {
-  "sentence_tokens" : [ "We", "call", "Selt", "the", "selection", "operator", "." ]
-}, {
-  "sentence_tokens" : [ "Selection", "may", "change", "with", "time", "." ]
-}, {
-  "sentence_tokens" : [ "The", "outcome", "of", "selection", "has", "to", "be", "a", "probability", "measure", "whose", "support", "is", "expected", "to", "be", "identical", "to", "the", "support", "of", "pi", "t." ]
-}, {
-  "sentence_tokens" : [ "Once", "selection", "has", "operated", ",", "we", "suppose", "that", "the", "population", "is", "mutated", "according", "to", "an", "operator", "M.", "Again", ",", "the", "outcome", "is", "a", "probability", "measure.The", "density", "of", "the", "population", "at", "step", "t", "+1", "in", "the", "space", "Omega", "of", "genome", "states", "is", "given", "by7", "pi", "t", "+1", "=", "M", "o", "Selt", "(", "pi", "t", ")", "We", "suppose", "that", "genomes", "undergo", "the", "same", "mutations", "as", "those", "studied", "until", "here", "(", "small", "indels", ",", "large", "deletions", ",", "duplications", ")", "and", "other", "mutations", "that", "do", "not", "change", "genome", "size", "but", "the", "detailed", "architecture", "(", "e.g", ".,", "point", "mutations", ",", "inversions", ",", "translocations", ")", "." ]
-}, {
-  "sentence_tokens" : [ "Our", "results", "apply", "to", "this", "model", "under", "the", "following", "condition", ":", "Projection", "condition", "We", "suppose", "that", "there", "is", "a", "projection", "phi", ":", "Omega", "-->", "N", "that", "is", "compatible", "with", "transitions", "induced", "by", "mutations", "." ]
-}, {
-  "sentence_tokens" : [ "Here", ",", "the", "projection", "is", "size", ":", "Omega", "-->", "N", "that", "associates", "a", "genome", "with", "its", "size", "in", "number", "of", "base", "pairs", "." ]
-}, {
-  "sentence_tokens" : [ "For", "two", "genomes", "omega", "1", ",", "omega", "2", "in", "Omega", "such", "that", "size", "(", "omega", "1", ")", "=", "size", "(", "omega", "2", ")", "=", "s0", ",", "the", "probability", "that", "omega", "1", "or", "omega", "2", "end", "up", "having", "some", "size", "sf", "in", "N", "after", "one", "mutation", "is", "exactly", "the", "same", ",", "even", "if", "omega", "1", "and", "omega", "2", "have", "a", "different", "detailed", "architecture", "(", "e.g", ".,", "the", "position", "or", "the", "number", "of", "genes", ")", "." ]
-}, {
-  "sentence_tokens" : [ "The", "transitions", "in", "the", "genome", "size", "space", "depend", "only", "on", "the", "initial", "genome", "size.In", "this", "case", ",", "the", "transitions", "in", "terms", "of", "size", "are", "given", "by", "the", "matrix", "MG", "(", "the", "additional", "mutations", "do", "not", "change", "genome", "size", "and", "thus", "they", "do", "not", "change", "the", "mutation", "paths", "in", "(", "N", ",", "M1", ")", ")", "." ]
-}, {
-  "sentence_tokens" : [ "To", "link", "the", "models", "formally", ",", "we", "define", "a", "projection", "size", "pi", "to", "obtain", ",", "from", "the", "population", "density", "pi", "t", "in", "Omega", ",", "the", "population", "density", "in", "the", "space", "N", "*", "of", "genome", "sizes", ":", "for-all", "s", "in", "N", "*", ",", "size", "pi", "(", "pi", "t", ")", "(", "s", ")", ":", "=", "integral", "Omega", "1", "{", "omega", "in", "Omega", ",", "size", "(", "omega", ")", "=", "s", "}", "d", "pi", "tIn", "matrix", "notation", ",", "the", "density", "of", "the", "population", "at", "step", "t", "+1", "in", "the", "space", "N", "*", "of", "genome", "sizes", "is", "given", "by8size", "pi", "(", "pi", "t", "+1", ")", "=", "size", "pi", "(", "Selt", "(", "pi", "t", ")", ")", "MGIn", "the", "absence", "of", "selection", ",", "the", "selection", "operator", "is", "the", "identity", "function", ",", "thus9size", "pi", "(", "pi", "t", "+1", ")", "=", "size", "pi", "(", "pi", "t", ")", "MGwhich", "is", "the", "equation", "studied", "in", "this", "article", "." ]
-}, {
-  "sentence_tokens" : [ "According", "to", "Theorem", "2", ",", "in", "the", "absence", "of", "selection", ",", "the", "marginal", "distribution", "of", "genome", "size", "of", "the", "population", "pi", "t", "is", "going", "to", "converge", "if", "duplications", "are", "not", "more", "than", "2.6", "times", "more", "frequent", "than", "large", "deletions", "." ]
-}, {
-  "sentence_tokens" : [ "However", ",", "we", "cannot", "show", "that", "the", "marginal", "distribution", "of", "genome", "size", "will", "converge", "in", "the", "presence", "of", "selection", "." ]
-}, {
-  "sentence_tokens" : [ "Instead", ",", "we", "can", "characterize", "upper", "bounds", "for", "its", "quantiles.If", "we", "consider", "the", "general", "model", "in", "Eq", "." ]
-}, {
-  "sentence_tokens" : [ "(", "7", ")", "or", "its", "projection", "on", "size", "in", "Eq", "." ]
-}, {
-  "sentence_tokens" : [ "(", "8)", ",", "we", "see", "that", "selection", "occurs", "prior", "to", "mutations", "." ]
-}, {
-  "sentence_tokens" : [ "The", "selection", "operator", "returns", "a", "vector", "Selt", "(", "pi", "t", ")", "for", "which", "the", "bounds", "found", "in", "Proposition", "1", "will", "hold", "." ]
-}, {
-  "sentence_tokens" : [ "For", "example", ",", "by", "choosing", "k", "for", "s", "~", "max", "(", "k", ")", ",", "we", "can", "say", "that", "for", "all", "t", ">=", "1", ",", "at", "most", "100/(", "1+", "k2", ")", "%", "of", "the", "population", "contained", "in", "pi", "t", "+1", "will", "have", "a", "size", "larger", "than", "s", "~", "max", "(", "k", ")", ",", "no", "matter", "how", "selection", "operated", "." ]
-}, {
-  "sentence_tokens" : [ "Because", "we", "can", "find", "a", "bound", "that", "works", "at", "any", "generation", ",", "the", "spontaneous", "mechanism", "we", "have", "just", "described", "cannot", "be", "overcome", "by", "selection.As", "these", "are", "upper", "bounds", ",", "they", "impose", "an", "upper", "limit", "to", "viable", "genome", "size", "but", "do", "not", "describe", "accurately", "where", "a", "population", "will", "be", "able", "to", "stabilize", "." ]
-}, {
-  "sentence_tokens" : [ "This", "will", "be", "determined", "by", "the", "selection", "operator", "and", "the", "details", "of", "all", "mutation", "processes", "." ]
-}, {
-  "sentence_tokens" : [ "Without", "further", "details", "on", "the", "selection", "operator", ",", "it", "is", "impossible", "to", "say", "whether", "the", "population", "will", "reach", "a", "stationary", "distribution", "and", "how", "far", "from", "the", "bounds", "they", "will", "evolve", "." ]
-}, {
-  "sentence_tokens" : [ "Nonetheless", ",", "Fig.", "2", "already", "gives", "some", "intuition", "about", "the", "interactions", "between", "the", "selection", "and", "the", "mutation", "operators", ",", "as", "the", "size", "of", "the", "selected", "genomes", "has", "a", "strong", "impact", "on", "the", "outcome", "." ]
-}, {
-  "sentence_tokens" : [ "As", "a", "result", ",", "selection", "determines", "how", "the", "population", "stabilizes", "with", "respect", "to", "these", "bounds", "and", "how", "close", "to", "the", "bounds", "individuals", "eventually", "get", "." ]
-}, {
-  "sentence_tokens" : [ "Generalization", "to", "a", "Finite", "Population", "." ]
-}, {
-  "sentence_tokens" : [ "The", "remarks", "for", "an", "infinite", "population", "hold", "to", "a", "lesser", "extent", "for", "finite", "sized", "populations", "of", "independently", "mutating", "individuals", "because", "the", "results", "of", "Sects", "." ]
-}, {
-  "sentence_tokens" : [ "3", "and", "4", "hold", "for", "a", "single", "individual", "from", "a", "probabilistic", "point", "of", "view", "." ]
-}, {
-  "sentence_tokens" : [ "If", "we", "decouple", "the", "selection", "and", "the", "mutation", "steps", ",", "we", "can", "have", "information", "on", "the", "probabilities", "of", "genomes", "being", "below", "some", "bound", "using", "Proposition", "1.Basically", ",", "the", "idea", "is", "the", "same", "as", "in", "the", "infinite", "population", "case", ",", "except", "that", "the", "evolution", "of", "individuals", "is", "stochastic", "and", "Eq", "." ]
-}, {
-  "sentence_tokens" : [ "(", "7", ")", "is", "not", "a", "good", "description", "for", "this", "kind", "of", "processes", "." ]
-}, {
-  "sentence_tokens" : [ "However", ",", "if", "we", "assume", "that", "for", "generation", "t", ",", "It", "individuals", "belonging", "to", "Omega", "survived", ",", "we", "can", "use", "the", "conclusions", "of", "Proposition", "1", "." ]
-}, {
-  "sentence_tokens" : [ "As", "explained", "for", "an", "infinite", "population", ",", "Proposition", "1", "allows", "us", "to", "choose", "a", "threshold", "s", "~", "max", "(", "k", ")", "such", "that", "the", "probability", "that", "any", "of", "the", "It", "mutating", "genomes", "goes", "above", "s", "~", "max", "(", "k", ")", "is", "at", "most", "1/(", "1+", "k2", ")", ",", "where", "k", "can", "be", "chosen", "arbitrarily", "large", "." ]
-}, {
-  "sentence_tokens" : [ "Because", "the", "individuals", "mutate", "independently", ",", "an", "upper", "bound", "on", "the", "number", "of", "genomes", "that", "are", "above", "s", "~", "max", "(", "k", ")", "at", "any", "generation", "is", "given", "by", "a", "binomial", "distribution", "B", "(", "It", ",1/(", "1+", "k2", ")", ")", "." ]
-}, {
-  "sentence_tokens" : [ "The", "proportion", "of", "genomes", "supposed", "to", "be", "above", "s", "~", "max", "(", "k", ")", "is", "the", "same", "on", "average", "for", "all", "It", "in", "N", ":100/(", "1+", "k2", ")", "%", ",", "but", "the", "standard", "deviation", "around", "this", "proportion", "becomes", "smaller", "when", "It", "increases", "." ]
-}, {
-  "sentence_tokens" : [ "When", "It", "tends", "to", "infinity", ",", "we", "find", "the", "same", "result", "as", "in", "the", "infinite", "case", "." ]
-}, {
-  "sentence_tokens" : [ "Numerical", "Illustration", "and", "Practical", "Implications", "for", "the", "Study", "of", "Real", "Genomes", "." ]
-}, {
-  "sentence_tokens" : [ "The", "theoretical", "results", "presented", "above", "may", "have", "important", "practical", "implications", "for", "the", "study", "of", "real", "genomes", "." ]
-}, {
-  "sentence_tokens" : [ "To", "illustrate", "this", ",", "we", "present", "here", "a", "quantitative", ",", "numerical", "example", "of", "spontaneous", "genome", "size", "evolution", ",", "with", "parameter", "values", "taken", "from", "experimental", "data", "." ]
-}, {
-  "sentence_tokens" : [ "Specifically", ",", "we", "simulated", "a", "\"", "mutation", "accumulation", "\"", "experiment", "on", "a", "genome", "made", "up", "of", "a", "single", "4-Mb", "chromosome", "--", "which", "is", "roughly", "the", "size", "of", "the", "genomes", "of", "Escherichia", "coli", "and", "Salmonella", "enterica", "--", ",", "with", "spontaneous", "mutation", "rates", "and", "event", "size", "distribution", "derived", "from", "experimental", "data", "in", "both", "species", "(", "see", "details", "below", ")", "." ]
-}, {
-  "sentence_tokens" : [ "Mutation", "accumulation", "experiments", "aim", "at", "unraveling", "the", "rates", "and", "spectrum", "of", "spontaneous", "mutations", "." ]
-}, {
-  "sentence_tokens" : [ "To", "do", "so", ",", "several", "lineages", "are", "propagated", "independently", "in", "the", "laboratory", ",", "starting", "from", "the", "same", "ancestor", "." ]
-}, {
-  "sentence_tokens" : [ "Each", "lineage", "experiences", "regular", ",", "frequent", "single-cell", "population", "bottlenecks", ",", "so", "that", "natural", "selection", "cannot", "operate", "efficiently", "and", "evolution", "proceeds", "almost", "only", "by", "genetic", "drift", "." ]
-}, {
-  "sentence_tokens" : [ "A", "key", "example", "of", "a", "mutation", "experiment", "with", "E.", "coli", "can", "be", "found", "in", "Kibota", "and", "Lynch", "(", "1996", ")", "." ]
-}, {
-  "sentence_tokens" : [ "Here", ",", "we", "mimicked", "an", "ideal", "mutation", "accumulation", "experiment", ",", "by", "simulating", "the", "evolution", "of", "genome", "size", "in", "10,000", "independent", "lines", ",", "all", "starting", "with", "an", "initial", "size", "of", "4", "x", "106", "bp", ",", "during", "1,000", "generations", ",", "with", "a", "single-cell", "bottleneck", "at", "each", "generation", "." ]
-}, {
-  "sentence_tokens" : [ "This", "is", "an", "\"", "ideal", "\"", "experiment", "in", "the", "sense", "that", ",", "contrary", "to", "the", "real", "laboratory", "experiments", ",", "we", "do", "not", "have", "to", "let", "the", "population", "grow", "between", "two", "bottlenecks", "or", "to", "pick", "up", "only", "the", "viable", "organisms", "." ]
-}, {
-  "sentence_tokens" : [ "In", "the", "simulations", ",", "natural", "selection", "cannot", "act", "at", "all", "." ]
-}, {
-  "sentence_tokens" : [ "No", "mutation", "will", "be", "filtered", "by", "natural", "selection", ",", "thereby", "allowing", "for", "a", "direct", "access", "to", "the", "spontaneous", "rates", "and", "spectrum", "of", "mutations.In", "these", "simulated", "lineages", ",", "four", "types", "of", "mutations", "could", "occur", ":", "segmental", "duplications", ",", "large", "deletions", ",", "small", "insertions", "and", "small", "deletions", "." ]
-}, {
-  "sentence_tokens" : [ "At", "each", "replication", ",", "the", "number", "of", "each", "type", "of", "event", "was", "drawn", "from", "a", "Poisson", "law", "with", "mean", "mu", "types", ",", "where", "mu", "type", "is", "the", "per-bp", "rate", "of", "this", "type", "of", "mutation", "and", "s", "is", "the", "size", "of", "the", "genome", "before", "the", "replication", "." ]
-}, {
-  "sentence_tokens" : [ "The", "events", "were", "performed", "in", "a", "random", "order.The", "rate", "of", "large", "deletions", "mu", "ldel", "was", "set", "to", "3.778", "x", "10-9", "per", "bp", ",", "which", "yields", ",", "in", "the", "initial", "state", ",", "0.017", "deletions", "per", "genome", "per", "generation", ",", "as", "measured", "in", "Salmonella", "enterica", "(", "Nilsson", "et", "al.", "2005", ")", "." ]
-}, {
-  "sentence_tokens" : [ "To", "simulate", "an", "unbiased", "process", ",", "we", "also", "set", "the", "segmental", "duplication", "rate", "mu", "dup", "to", "3.778", "x", "10-9", "per", "bp", "." ]
-}, {
-  "sentence_tokens" : [ "The", "rates", "of", "small", "insertions", "and", "small", "deletions", "were", "both", "set", "to", "twice", "the", "rate", "of", "large", "deletions", "and", "duplications", "." ]
-}, {
-  "sentence_tokens" : [ "The", "size", "of", "a", "small", "indel", "was", "uniformly", "drawn", "between", "1", "and", "40", "bp", ",", "regardless", "of", "the", "current", "chromosome", "size.For", "the", "size", "of", "duplications", "and", "large", "deletions", ",", "we", "tested", "two", "size", "distributions", ":", "(", "i", ")", "the", "uniform", "distribution", "between", "1", "and", "the", "current", "chromosome", "size", ",", "as", "introduced", "in", "Sect", "." ]
-}, {
-  "sentence_tokens" : [ "2", ",", "and", "(", "ii", ")", "a", "lognormal", "distribution", "truncated", "at", "the", "current", "chromosome", "size", ",", "as", "explained", "below", "." ]
-}, {
-  "sentence_tokens" : [ "We", "obtained", "this", "lognormal", "distribution", "by", "fitting", "the", "size", "distribution", "of", "127", "rearrangements", "observed", "in", "evolving", "cultures", "of", "Escherichia", "coli", "(", "D.", "Schneider", ",", "personal", "communication", ")", "and", "Salmonella", "enterica", "(", "Nilsson", "et", "al.", "2005", ";", "Sun", "et", "al.", "2012", ")", "." ]
-}, {
-  "sentence_tokens" : [ "Only", "experimentally", "verified", "duplications", ",", "deletions", "and", "inversions", "were", "considered", "." ]
-}, {
-  "sentence_tokens" : [ "Figure", "3", "(", "left", ")", "shows", "the", "empirical", "cumulative", "distribution", "function", "for", "this", "dataset", ",", "as", "well", "as", "the", "fitted", "lognormal", "distribution", "." ]
-}, {
-  "sentence_tokens" : [ "Its", "mean", "is", "10.1214", "in", "natural", "logarithmic", "scale", "(", "4.3957", "in", "log10", "scale", ")", "and", "its", "standard", "deviation", "is", "2.5602", "(", "1.1119", "in", "log10", "scale", ")", "." ]
-}, {
-  "sentence_tokens" : [ "This", "lognormal", "distribution", "is", "a", "rather", "accurate", "representation", "of", "the", "events", "occurring", "on", "the", "initial", "4", "Mb", "genome", "." ]
-}, {
-  "sentence_tokens" : [ "No", "experimental", "data", "are", "available", ",", "however", ",", "for", "the", "size", "distribution", "of", "the", "events", "occurring", "in", "mutant", "E.", "coli", "or", "Salmonella", "with", "a", "significantly", "different", "genome", "size", "." ]
-}, {
-  "sentence_tokens" : [ "More", "generally", ",", "we", "do", "not", "know", "how", "the", "size", "of", "the", "spontaneous", "events", "scales", "with", "genome", "size", "in", "a", "particular", "species", "." ]
-}, {
-  "sentence_tokens" : [ "We", "decided", "to", "simulate", "here", "the", "weakest", "possible", "scaling", ":", "instead", "of", "varying", "the", "parameters", "of", "the", "lognormal", "distribution", "with", "genome", "size", ",", "we", "used", "the", "same", "lognormal", "distribution", "lnN", "(", "10.1214,2.5602", ")", "for", "any", "genome", "size", ",", "except", "that", "this", "distribution", "was", "truncated", "at", "the", "current", "chromosome", "size", "." ]
-}, {
-  "sentence_tokens" : [ "Indeed", ",", "a", "segmental", "duplication", "(", "resp", "." ]
-}, {
-  "sentence_tokens" : [ "deletion", ")", "cannot", "duplicate", "(", "resp", "." ]
-}, {
-  "sentence_tokens" : [ "delete", ")", "more", "than", "the", "complete", "chromosome", "." ]
-}, {
-  "sentence_tokens" : [ "In", "practice", ",", "an", "event", "size", "was", "drawn", "from", "the", "distribution", "N", "(", "10.1214,2.5602", ")", "with", "independent", "redraw", "as", "long", "as", "the", "event", "size", "exceeded", "the", "current", "genome", "size", "." ]
-}, {
-  "sentence_tokens" : [ "As", "shown", "by", "Fig.", "3", "(", "right", ")", ",", "this", "truncation", "induces", "a", "variation", "of", "the", "mean", "event", "size", "with", "the", "size", "of", "the", "genome", "." ]
-}, {
-  "sentence_tokens" : [ "This", "variation", "is", "much", "weaker", "than", "the", "one", "of", "the", "uniform", "distribution", ",", "but", "it", "will", "prove", "important", "in", "the", "outcome", "of", "the", "simulations", "." ]
-}, {
-  "sentence_tokens" : [ "In", "terms", "of", "Corollary", "1", ",", "for", "the", "uniform", "distribution", ",", "the", "scaling", "function", "f", "is", "the", "logarithm", "." ]
-}, {
-  "sentence_tokens" : [ "In", "this", "logarithmic", "scale", ",", "we", "know", "from", "Property", "1", "that", "delta", "ldel", "=-1,", "delta", "dup", "=", "2log2-1", ",", "and", "delta", "ins", "=", "delta", "sdel", "=0", "." ]
-}, {
-  "sentence_tokens" : [ "With", "mu", "dup", "=", "mu", "ldel", "=3", ".778", "x", "10-9", ",", "we", "obtain", "mu", "dup", "delta", "dup+", "mu", "ldel", "delta", "ldel+", "mu", "ins", "delta", "ins+", "mu", "sdel", "delta", "sdel", "~", "-2.32", "x", "10-9", "." ]
-}, {
-  "sentence_tokens" : [ "This", "negative", "value", "tells", "us", "that", "genome", "size", "will", "reach", "a", "unique", "asymptotic", "stationary", "distribution", ",", "and", "hence", "that", "it", "will", "not", "grow", "infinitely.For", "the", "truncated", "lognormal", "distribution", ",", "the", "scaling", "function", "f", "is", "simply", "the", "identity", "function", ",", "thus", "we", "stay", "in", "the", "normal", "scale", "." ]
-}, {
-  "sentence_tokens" : [ "For", "infinite", "genome", "sizes", ",", "the", "truncated", "lognormal", "distribution", "converges", "to", "the", "complete", "lognormal", "distribution", "." ]
-}, {
-  "sentence_tokens" : [ "Hence", ",", "the", "event", "size", "tends", "to", "a", "constant", "for", "infinite", "genomes", ",", "and", "we", "have", "delta", "ldel", "=-e10.1214", "+2.560222", "~", "-6.59", "x", "105", ",", "delta", "dup", "~", "+6.59", "x", "105", "." ]
-}, {
-  "sentence_tokens" : [ "For", "the", "small", "events", ",", "we", "have", "delta", "ins", "=", "+20", "and", "delta", "sdel", "=-20.", "With", "mu", "dup", "=", "mu", "ldel", "and", "mu", "ins", "=", "mu", "sdel", ",", "we", "obtain", "mu", "dup", "delta", "dup+", "mu", "ldel", "delta", "ldel+", "mu", "ins", "delta", "ins+", "mu", "sdel", "delta", "sdel", "=0", "." ]
-}, {
-  "sentence_tokens" : [ "With", "this", "null", "value", ",", "we", "cannot", "predict", "the", "asymptotic", "behavior", "of", "genome", "size", "." ]
-}, {
-  "sentence_tokens" : [ "The", "simulations", "below", "will", "show", ",", "however", ",", "that", "the", "variation", "of", "event", "size", "for", "\"", "small", "\"", "genome", "sizes", "(", "Fig.", "3", ")", "suffices", "to", "induce", "a", "shrinkage.Indeed", ",", "after", "1,000", "generations", "without", "selection", ",", "genome", "shrinkage", "was", "observed", "in", "99", "%", "of", "the", "lines", "for", "the", "uniform", "distribution", ",", "and", "in", "61", "%", "of", "the", "lines", "for", "the", "truncated", "lognormal", "distribution", ",", "although", "(", "i", ")", "the", "rates", "of", "duplications", "and", "large", "deletions", "were", "identical", ",", "(", "ii", ")", "the", "rates", "of", "small", "insertions", "and", "small", "deletions", "were", "identical", ",", "(", "iii", ")", "the", "event", "size", "distributions", "were", "also", "identical", "for", "gains", "and", "losses", "." ]
-}, {
-  "sentence_tokens" : [ "Both", "proportions", "are", "significantly", "different", "from", "0.5", "(", "chi", "2", "test", "with", "1", "degree", "of", "freedom", ",", "both", "p", "values", "<", "2", "x", "10-16", ")", "." ]
-}, {
-  "sentence_tokens" : [ "The", "median", "DNA", "loss", "was", "-3.8", "x", "106", "bp", "in", "the", "uniform", "case", ",", "and", "-6.3", "x", "105", "bp", "in", "the", "lognormal", "case", "." ]
-}, {
-  "sentence_tokens" : [ "In", "both", "cases", ",", "this", "DNA", "loss", "is", "statistically", "different", "from", "0", "(", "Wilcoxon", "signed", "rank", "test", ",", "both", "p", "values", "<", "2", "x", "10-16", ")", "." ]
-}, {
-  "sentence_tokens" : [ "As", "shown", "by", "Table", "1", ",", "this", "shrinkage", "was", "neither", "due", "to", "a", "bias", "in", "the", "small", "indel", "counts", "nor", "to", "an", "excess", "of", "deletions", "over", "duplications", ",", "but", "to", "deletions", "being", "on", "average", "longer", "than", "duplications", "." ]
-}, {
-  "sentence_tokens" : [ "By", "looking", "at", "these", "polymorphisms", "only", ",", "one", "might", "be", "tempted", "to", "conclude", "that", "the", "size", "distribution", "of", "the", "spontaneous", "events", "is", "different", "for", "the", "deletions", "and", "for", "the", "duplications", ",", "while", "we", "know", "here", "that", "both", "types", "of", "events", "actually", "had", "the", "same", "size", "distribution", "for", "any", "starting", "genome", "size", "." ]
-}, {
-  "sentence_tokens" : [ "To", "further", "illustrate", "this", "spontaneous", "mutational", "dynamics", "toward", "shrinkage", "--", "despite", "equal", "rates", "of", "duplication", "and", "deletion", ",", "and", "despite", "identical", "spontaneous", "size", "distributions", "for", "both", "event", "types", "--", ",", "we", "propagated", "100", "mutation", "accumulation", "lines", ",", "again", "without", "any", "selection", ",", "until", "they", "reached", "the", "size", "of", "104", "bp", ",", "starting", "from", "4", "x", "106", "bp", "as", "previously", "." ]
-}, {
-  "sentence_tokens" : [ "As", "shown", "by", "Fig.", "4", ",", "for", "all", "lines", ",", "this", "shrinkage", "of", "two", "orders", "of", "magnitude", "occurs", "in", "less", "than", "75,000", "generations", "for", "the", "uniform", "case", ",", "and", "in", "less", "than", "250,000", "generations", "for", "the", "truncated", "lognormal", "case", "." ]
-}, {
-  "sentence_tokens" : [ "The", "practical", "implication", "of", "this", "spontaneous", "dynamics", "toward", "shrinkage", "is", "that", "mutation", "accumulation", "experiments", "where", "deletions", "are", "longer", "than", "duplications", "should", "be", "interpreted", "with", "caution", ",", "as", "this", "pattern", "can", "be", "obtained", "with", "identical", "event", "size", "distributions", "." ]
-}, {
-  "sentence_tokens" : [ "Moreover", ",", "additional", "simulations", "with", "higher", "duplication", "rates", "indicate", "that", "the", "median", "change", "in", "genome", "size", "after", "1,000", "generations", "remains", "negative", "for", "mu", "dup", "=", "1.2", "mu", "ldel", "for", "the", "truncated", "lognormal", "distribution", ",", "or", "for", "mu", "dup", "=", "2", "mu", "ldel", "for", "the", "uniform", "distribution", "(", "in", "agreement", "with", "Theorem", "2", ")", "." ]
-}, {
-  "sentence_tokens" : [ "Thus", ",", "a", "net", "decrease", "in", "genome", "size", "in", "a", "mutation", "accumulation", "experiment", "neither", "implies", "that", "the", "deletion", "rate", "is", "higher", "than", "the", "duplication", "rate", ",", "nor", "that", "spontaneous", "deletions", "tend", "to", "be", "longer", "than", "spontaneous", "duplications", "for", "a", "given", "starting", "point", "." ]
-}, {
-  "sentence_tokens" : [ "It", "might", "just", "as", "well", "come", "from", "a", "variation", "of", "event", "count", "and", "event", "size", "with", "chromosome", "size", "." ]
-}, {
-  "sentence_tokens" : [ "Discussion", "." ]
-}, {
-  "sentence_tokens" : [ "In", "this", "section", ",", "we", "discuss", "the", "relevance", "of", "our", "two", "main", "results", ":", "(", "i", ")", "the", "condition", "for", "the", "existence", "of", "a", "stationary", "distribution", "for", "genome", "size", ",", "and", "(", "ii", ")", "the", "upper", "bounds", "for", "the", "quantiles", "of", "the", "genome", "size", "distribution", "at", "any", "time", "step", "." ]
-}, {
-  "sentence_tokens" : [ "Finally", ",", "we", "investigate", "the", "link", "between", "our", "results", "and", "current", "theories", "on", "genome", "size", "evolution", "." ]
-}, {
-  "sentence_tokens" : [ "On", "the", "condition", "for", "the", "existence", "of", "a", "stationary", "distribution", "for", "genome", "size", "." ]
-}, {
-  "sentence_tokens" : [ "The", "model", "and", "the", "results", "presented", "here", "allow", "to", "determine", "the", "global", "spontaneous", "behavior", "of", "genome", "size", "in", "a", "variety", "of", "conditions", "." ]
-}, {
-  "sentence_tokens" : [ "It", "allows", "for", "a", "large", "family", "of", "distributions", "for", "indels", ",", "duplications", "and", "deletions", "." ]
-}, {
-  "sentence_tokens" : [ "Conveniently", ",", "the", "condition", "for", "the", "existence", "of", "an", "asymptotic", "distribution", "only", "depends", "on", "the", "first", "moment", "of", "these", "distributions", "in", "a", "scale", "adapted", "to", "the", "distribution", "that", "scales", "most", "with", "genome", "size", "(", "usually", "large", "deletions", "and/or", "duplications", ")", "." ]
-}, {
-  "sentence_tokens" : [ "The", "most", "difficult", "part", "may", "be", "finding", "the", "scaling", "function", ",", "but", "once", "it", "is", "found", ",", "the", "global", "dynamics", "is", "dictated", "by", "a", "very", "simple", "condition", "on", "the", "mutation", "rates", ",", "given", "in", "Corollary", "1", "." ]
-}, {
-  "sentence_tokens" : [ "Usually", ",", "the", "condition", "will", "only", "involve", "the", "ratio", "of", "duplication", "over", "large", "deletion", "rates", "." ]
-}, {
-  "sentence_tokens" : [ "When", "the", "condition", "is", "met", "and", "no", "selection", "is", "applied", ",", "the", "genomes", "converge", "toward", "an", "asymptotic", "stationary", "distribution", "." ]
-}, {
-  "sentence_tokens" : [ "From", "a", "biological", "point", "of", "view", ",", "this", "means", "that", "genomes", "do", "not", "grow", "indefinitely", "." ]
-}, {
-  "sentence_tokens" : [ "As", "our", "proof", "highlights", ",", "there", "is", "a", "threshold", "above", "which", "they", "will", "undergo", "systematic", "shrinkage.Finding", "the", "appropriate", "scale", "might", "be", "one", "of", "the", "most", "important", "challenges", "but", "can", "also", "be", "very", "simple", "for", "some", "families", "of", "distributions", "." ]
-}, {
-  "sentence_tokens" : [ "For", "example", ",", "if", "the", "duplication", "and", "deletion", "processes", "are", "of", "quasi-multiplicative", "nature", ",", "this", "condition", "is", "obtained", "in", "logarithmic", "scale", ",", "as", "illustrated", "throughout", "the", "paper", "and", "in", "Fig.", "1", "." ]
-}, {
-  "sentence_tokens" : [ "Biologically", "speaking", ",", "the", "strength", "of", "this", "scaling", "is", "that", "it", "breaks", "apparent", "symmetries", "." ]
-}, {
-  "sentence_tokens" : [ "In", "the", "case", "illustrated", "in", "Fig.", "1", ",", "it", "might", "look", "as", "if", "the", "duplications", "and", "deletions", "are", "symmetrical", "because", "for", "every", "starting", "position", ",", "losses", "and", "gains", "compensate", "each", "other", "." ]
-}, {
-  "sentence_tokens" : [ "Naively", ",", "one", "might", "conclude", "that", "the", "process", "is", "unbiased", "." ]
-}, {
-  "sentence_tokens" : [ "However", ",", "from", "the", "genome", "'", "s", "point", "of", "view", "as", "a", "walker", "along", "a", "Markov", "chain", ",", "symmetry", "means", "reversibility", "of", "jumps", ":", "do", "the", "losses", "and", "gains", "that", "I", "undergo", "when", "I", "move", "compensate", "each", "other", "?" ]
-}, {
-  "sentence_tokens" : [ "If", "there", "is", "a", "scaling", "in", "which", "the", "average", "size", "of", "jumps", "does", "not", "depend", "(", "asymptotically", ")", "on", "the", "starting", "position", ",", "we", "can", "answer", "the", "question", "." ]
-}, {
-  "sentence_tokens" : [ "In", "the", "rescaling", "shown", "in", "Fig.", "1", ",", "it", "is", "clear", "that", "the", "process", "that", "we", "thought", "unbiased", "at", "first", ",", "is", "in", "fact", "biased", "toward", "losses", "." ]
-}, {
-  "sentence_tokens" : [ "Indeed", ",", "after", "a", "loss", "is", "undergone", ",", "the", "average", "size", "of", "rearrangement", "diminishes", "with", "genome", "size", ",", "such", "that", "the", "average", "loss", "will", "always", "be", "larger", "than", "the", "next", "average", "gain.As", "shown", "in", "Sect", "." ]
-}, {
-  "sentence_tokens" : [ "6", ",", "even", "if", "we", "choose", "a", "function", "that", "does", "not", "scale", "asymptotically", "(", "average", "gains", "and", "losses", "due", "to", "rearrangements", "tend", "to", "a", "constant", "for", "large", "genomes", "in", "normal", "scale", ")", ",", "a", "scaling", "in", "gains", "and", "losses", "for", "small", "genomes", "will", "still", "induce", "a", "bias", "toward", "losses", "." ]
-}, {
-  "sentence_tokens" : [ "The", "process", "based", "on", "the", "truncated", "lognormal", "distributions", "for", "rearrangements", "that", "we", "illustrated", "might", "not", "converge", "in", "theory", "for", "equal", "duplication", "and", "deletion", "rates", "(", "Corollary", "1", "does", "not", "apply", ")", "but", ",", "in", "practice", ",", "the", "bulk", "of", "genomes", "will", "still", "undergo", "shrinkage", "because", "average", "losses", "are", "larger", "than", "average", "gains", ",", "notwithstanding", "the", "symmetry", "of", "the", "rearrangement", "distributions.From", "a", "mathematical", "point", "of", "view", ",", "our", "model", "displays", "similarities", "with", "models", "for", "the", "so", "called", "mini-", "and", "micro", "satellite", "loci", ",", "where", "a", "short", "sequence", "of", "DNA", "is", "highly", "repeated", "(", "Charlesworth", "et", "al.", "1994", ")", "." ]
-}, {
-  "sentence_tokens" : [ "Mathematical", "models", "were", "designed", "for", "the", "dynamics", "of", "the", "number", "of", "repeats", "in", "microsatellites", ",", "incorporating", "additive", "mechanisms", "similar", "to", "indels", "in", "our", "model", "and/or", "multiplicative", "mechanisms", "due", "to", "recombination", "." ]
-}, {
-  "sentence_tokens" : [ "In", "models", "incorporating", "only", "additive", "effects", ",", "the", "dynamics", "of", "the", "number", "of", "elements", "is", "relatively", "simple", "as", "it", "reflects", "the", "difference", "between", "average", "gains", "and", "losses", "(", "Kr", "u", "ger", "and", "Vogel", "1975", ";", "Walsh", "1987", ";", "Moody", "1988", ";", "Basten", "and", "Moody", "1991", ";", "Caliebe", "et", "al.", "2010", ")", "." ]
-}, {
-  "sentence_tokens" : [ "However", ",", "this", "implies", "that", "selection", "is", "necessary", "to", "prevent", "the", "number", "of", "repeats", "from", "going", "down", "to", "one", "or", "from", "going", "up", "to", "infinity", "." ]
-}, {
-  "sentence_tokens" : [ "When", "multiplicative", "effects", "are", "introduced", ",", "the", "dynamics", "become", "less", "trivial", ",", "as", "noted", "in", "the", "present", "study", "." ]
-}, {
-  "sentence_tokens" : [ "Distributions", "of", "the", "number", "of", "elements", "can", "converge", "around", "a", "finite", "number", "of", "elements", "in", "situations", "where", "average", "gains", "seemed", "to", "be", "higher", "than", "average", "losses", "(", "Stephan", "1987", ";", "Falush", "and", "Iwasa", "1999", ")", "." ]
-}, {
-  "sentence_tokens" : [ "Adding", "additive", "effects", "(", "such", "as", "indels", ")", "to", "a", "multiplicative", "model", "does", "not", "change", "the", "existence", "of", "the", "stationary", "distribution", "but", "changes", "some", "important", "features", "." ]
-}, {
-  "sentence_tokens" : [ "Corollary", "1", "implies", "that", "when", "multiplicative", "and", "additive", "processes", "are", "at", "work", ",", "we", "can", "have", "non", "trivial", "stationary", "distributions", "without", "the", "need", "for", "selection", "." ]
-}, {
-  "sentence_tokens" : [ "This", "is", "particularly", "true", "in", "non", "intuitive", "cases", ",", "when", "the", "apparent", "bias", "is", "toward", "gains", ",", "but", "the", "rescaled", "analysis", "predicts", "average", "loss", "." ]
-}, {
-  "sentence_tokens" : [ "In", "those", "cases", ",", "the", "mode", "of", "the", "distribution", "cannot", "be", "trivially", "predicted", "to", "lie", "at", "the", "origin", "or", "to", "diverge", "." ]
-}, {
-  "sentence_tokens" : [ "For", "example", ",", "Falush", "and", "Iwasa", "(", "1999", ")", "predicted", "a", "non", "trivial", "stationary", "distribution", "for", "the", "number", "of", "repeats", ",", "where", "most", "individuals", "own", "more", "than", "one", "or", "two", "copies", "." ]
-}, {
-  "sentence_tokens" : [ "Compared", "to", "the", "microsatellite", "models", ",", "the", "strength", "of", "our", "result", "is", "that", "it", "can", "be", "used", "to", "predict", "the", "exact", "threshold", "condition", "with", "simple", "calculations", ",", "without", "having", "to", "make", "any", "approximation", "." ]
-}, {
-  "sentence_tokens" : [ "Moreover", ",", "in", "most", "models", "where", "the", "size", "of", "the", "mutation", "scales", "with", "the", "number", "of", "elements", ",", "each", "mutation", "type", "is", "allowed", "to", "occur", "at", "most", "once", "per", "reproduction", ",", "which", "may", "be", "appropriate", "for", "the", "study", "of", "microsatellites", ",", "but", "unrealistic", "for", "large", "genomes.The", "interplay", "between", "additive", "and", "multiplicative", "processes", "might", "also", "be", "underlined", "in", "the", "study", "of", "genome", "reduction", "." ]
-}, {
-  "sentence_tokens" : [ "Mira", "et", "al.", "(", "2001", ")", "have", "argued", "that", "indel", "biases", "and", "losses", "through", "large", "deletions", "are", "good", "candidates", "to", "explain", "the", "reductive", "genome", "evolution", "undergone", "by", "some", "bacterial", "species", "." ]
-}, {
-  "sentence_tokens" : [ "Several", "models", "and", "papers", "have", "used", "this", "general", "idea", "but", "have", "focused", "only", "on", "biases", "in", "the", "small", "indel", "patterns", "(", "Petrov", "2000", ";", "Leushkin", "et", "al.", "2013", ")", "." ]
-}, {
-  "sentence_tokens" : [ "Our", "numerical", "examples", "(", "Sect", "." ]
-}, {
-  "sentence_tokens" : [ "6", ")", "show", "that", "such", "a", "bias", "is", "not", "necessary", "for", "observing", "genome", "shrinkage", ",", "as", "it", "suffices", "that", "there", "be", "a", "positive", "scaling", "in", "the", "size", "of", "rearrangements", "." ]
-}, {
-  "sentence_tokens" : [ "A", "symmetrical", "distribution", "of", "gains", "and", "losses", ",", "or", "even", "a", "slight", "bias", "toward", "gains", "will", "result", "in", "genome", "size", "tending", "to", "decrease", "with", "time", "(", "Fig.", "4", ")", "." ]
-}, {
-  "sentence_tokens" : [ "The", "\"", "rearrangement", "bias", "\"", "(", "due", "to", "the", "scaling", "of", "rearrangements", ")", "and", "the", "indel", "bias", "are", "two", "different", "biases", "that", "might", "be", "complementary", "." ]
-}, {
-  "sentence_tokens" : [ "According", "to", "our", "model", "and", "simulations", ",", "the", "rearrangement", "bias", "would", "set", "an", "upper", "size", "to", "genome", "size", "but", "would", "not", "necessarily", "lead", "to", "the", "convergence", "toward", "a", "particular", "value", "below", "this", "bound", "(", "notably", "in", "the", "presence", "of", "selection", ")", ",", "while", "the", "indel", "bias", "could", "not", "lead", "to", "infinite", "growth", "but", "would", "strongly", "affect", "the", "convergence", "of", "genome", "size", "within", "stable", "genomes", "(", "see", "discussion", "and", "figure", "in", "Sect", "." ]
-}, {
-  "sentence_tokens" : [ "7.3", ")", "." ]
-}, {
-  "sentence_tokens" : [ "On", "the", "Upper", "Bounds", "for", "the", "Quantiles", "of", "the", "Genome", "Size", "Distribution", "." ]
-}, {
-  "sentence_tokens" : [ "In", "the", "model", "presented", "here", ",", "we", "took", "into", "account", "the", "possibility", "of", "several", "mutations", "in", "one", "generation", "." ]
-}, {
-  "sentence_tokens" : [ "This", "does", "not", "change", "the", "condition", "for", "a", "stationary", "distribution", "given", "by", "the", "first-order", "dynamics", ",", "but", "highlights", "a", "fragility", "of", "large", "genomes", ",", "which", "we", "quantified", "by", "calculating", "upper", "bounds", "for", "the", "quantiles", "of", "the", "genome", "size", "distribution", "after", "one", "generation", "." ]
-}, {
-  "sentence_tokens" : [ "Contrary", "to", "the", "mutational", "Markov", "chain", ",", "the", "generational", "Markov", "chain", "shows", "that", "there", "is", "a", "non", "negligible", "probability", "that", "the", "genomes", "located", "above", "a", "given", "threshold", ",", "no", "matter", "how", "large", "they", "may", "be", ",", "collapse", "." ]
-}, {
-  "sentence_tokens" : [ "Strikingly", ",", "as", "already", "hinted", "in", "Lemma", "2", "and", "the", "proof", "of", "Theorem", "2", ",", "once", "the", "threshold", "is", "crossed", ",", "the", "probability", "of", "collapsing", "even", "increases", "with", "genome", "size", ",", "because", "the", "average", "loss", "due", "to", "the", "increasing", "number", "of", "mutations", "grows", "more", "rapidly", "than", "the", "genome", "size.In", "order", "to", "quantify", "this", "phenomenon", "further", ",", "including", "the", "second", "moment", "gave", "a", "more", "precise", "picture", "." ]
-}, {
-  "sentence_tokens" : [ "In", "the", "case", "of", "multiplicative", "processes", ",", "the", "standard", "deviation", "is", "small", "compared", "to", "the", "average", "shifts", ",", "such", "that", "the", "average", "behavior", "identified", "in", "Sect", "." ]
-}, {
-  "sentence_tokens" : [ "3", "gives", "in", "fact", "a", "good", "picture", "of", "the", "fate", "of", "large", "genomes", "." ]
-}, {
-  "sentence_tokens" : [ "This", "is", "illustrated", "in", "Fig.", "2", ",", "where", "it", "appears", "that", "after", "one", "generation", ",", "the", "genomes", "which", "manage", "to", "maintain", "or", "increase", "their", "size", "with", "probability", "higher", "than", "0.5", "are", "restricted", "to", "a", "finite", "domain.The", "existence", "of", "these", "bounds", "has", "two", "main", "implications", "." ]
-}, {
-  "sentence_tokens" : [ "First", ",", "they", "are", "not", "bounds", "on", "the", "stationary", "distribution", "but", "on", "the", "whole", "process", "." ]
-}, {
-  "sentence_tokens" : [ "This", "means", "that", "even", "if", "a", "selective", "force", "is", "applied", ",", "they", "are", "verified", "for", "every", "surviving", "individual", "." ]
-}, {
-  "sentence_tokens" : [ "In", "other", "words", ",", "selection", "cannot", "help", "overcome", "these", "bounds", ",", "even", "if", "the", "selection", "operator", "favors", "the", "largest", "genomes", "." ]
-}, {
-  "sentence_tokens" : [ "On", "the", "contrary", ",", "as", "depicted", "on", "Fig.", "2", ",", "very", "large", "genomes", "that", "may", "be", "selected", "are", "going", "to", "be", "the", "least", "robust", ",", "as", "they", "become", "even", "smaller", "than", "the", "rest", "of", "the", "population", "and", "their", "genome", "is", "going", "to", "undergo", "major", "shuffling", "." ]
-}, {
-  "sentence_tokens" : [ "This", "result", "is", "in", "contrast", "with", "other", "models", "for", "evolution", "with", "selection", "on", "a", "unbounded", "fitness", "space", ",", "which", "showed", "that", "the", "growth", "speed", "of", "the", "first", "moment", "of", "the", "fitness", "distribution", "converges", "to", "a", "positive", "constant", ",", "even", "when", "a", "density", "dependent", "cut-off", "prevented", "the", "fittest", "individuals", "to", "replicate", "(", "Tsimring", "et", "al.", "1996", ";", "Brunet", "and", "Derrida", "1997", ")", "." ]
-}, {
-  "sentence_tokens" : [ "We", "do", "not", "need", "here", "such", "a", "cut-off", "to", "prevent", "infinite", "genome", "growth", ",", "even", "if", "selection", "would", "favor", "the", "largest", "genomes", "." ]
-}, {
-  "sentence_tokens" : [ "To", "analyze", "more", "rigorously", "our", "model", "in", "the", "presence", "of", "selection", ",", "a", "possibility", "would", "be", "to", "consider", "a", "Markov", "process", "in", "the", "space", "of", "measures", "on", "X,", "as", "in", "the", "evolutionary", "models", "proposed", "by", "Fleming", "and", "Viot", "(", "1979", ")", ",", "Champagnat", "et", "al.", "(", "2006", ")", "." ]
-}, {
-  "sentence_tokens" : [ "Second", ",", "the", "individuals", "who", "have", "important", "probabilities", "to", "maintain", "their", "size", "are", "those", "which", "undergo", "rare", "rearrangements", "." ]
-}, {
-  "sentence_tokens" : [ "In", "this", "sense", ",", "our", "model", "predicts", "as", "a", "result", "what", "is", "assumed", "by", "numerous", "models", ",", "namely", "that", "the", "majority", "of", "a", "robust", "population", "will", "undergo", "at", "most", "one", "rearrangement", "(", "or", "even", "one", "mutation", "if", "the", "rates", "are", "similar", ")", "per", "generation", "." ]
-}, {
-  "sentence_tokens" : [ "Allowing", "for", "several", "mutations", "in", "one", "generation", "highlights", "an", "indirect", "pressure", "that", "limits", "genome", "growth", "but", "that", "is", "not", "necessarily", "likely", "to", "be", "observed", "in", "a", "sample", "of", "the", "population.We", "predicted", "at", "the", "end", "of", "Sect", "." ]
-}, {
-  "sentence_tokens" : [ "4", "an", "inverse", "relationship", "between", "total", "genome", "size", "and", "mutation", "rate", ",", "in", "the", "case", "where", "the", "deletion", "and", "duplication", "rate", "are", "proportional", "(", "Eq", "." ]
-}, {
-  "sentence_tokens" : [ "5", ")", "." ]
-}, {
-  "sentence_tokens" : [ "This", "relationship", "is", "strikingly", "similar", "to", "Drake", "'", "s", "experimental", "data", "for", "microorganisms", "(", "Drake", "1991", ")", ",", "where", "genome", "size", "seems", "to", "be", "inversely", "proportional", "to", "the", "\"", "global", "mutation", "rate", "\"", "." ]
-}, {
-  "sentence_tokens" : [ "However", ",", "in", "Drake", "'", "s", "study", ",", "most", "spontaneous", "events", "used", "to", "determine", "the", "global", "rate", "are", "of", "local", "nature", "(", "indels", ",", "small", "rearrangements", "and", "point", "mutations", ")", ",", "while", "in", "our", "study", ",", "the", "critical", "rates", "are", "the", "rates", "of", "chromosomal", "rearrangements.Thus", ",", "to", "better", "assess", "the", "relevance", "of", "the", "relationship", "we", "predicted", ",", "we", "need", "to", "know", "more", "about", "the", "actual", "rates", "of", "duplications", "and", "deletions", "." ]
-}, {
-  "sentence_tokens" : [ "Conflicting", "data", "sets", "exist", "on", "the", "link", "between", "allelic", "recombination", "rates", "and", "genome", "size", "(", "see", "Awadalla", "(", "2003", ")", "and", "Ross-Ibarra", "(", "2007", ")", "for", "example", ")", ",", "but", "deletions", "and", "duplications", "are", "non", "allelic", "recombination", "events", ",", "and", "the", "rate", "of", "non", "allelic", "recombination", "is", "not", "necessarily", "directly", "proportional", "to", "the", "rate", "of", "allelic", "recombination", "." ]
-}, {
-  "sentence_tokens" : [ "Indeed", ",", "allelic", "recombination", "results", "from", "homologous", "recombination", "only", ",", "while", "non", "allelic", "recombination", "can", "result", "from", "other", "mechanisms", "." ]
-}, {
-  "sentence_tokens" : [ "In", "human", ",", "Turner", "et", "al.", "(", "2008", ")", "have", "measured", "the", "spontaneous", "rates", "of", "non", "allelic", "recombination", "events", "leading", "to", "deletions", "and", "duplications", ",", "but", "only", "at", "four", "recombination", "hotspots", "." ]
-}, {
-  "sentence_tokens" : [ "So", "far", ",", "genome-wide", "measurements", "of", "duplication", "and", "deletion", "rates", "have", "been", "obtained", "by", "mutation", "accumulation", "experiments", "for", "a", "few", "species", "only", "." ]
-}, {
-  "sentence_tokens" : [ "Figure", "5", "shows", "the", "available", "data", "points", ",", "as", "well", "as", "the", "lower", "bounds", "for", "genome", "shrinkage", "computed", "in", "Sect", "." ]
-}, {
-  "sentence_tokens" : [ "4", ",", "Eq", "." ]
-}, {
-  "sentence_tokens" : [ "(", "4", ")", "." ]
-}, {
-  "sentence_tokens" : [ "We", "observe", "that", "genomes", "stabilize", "in", "zones", "were", "rearrangements", "are", "rare", "and", "the", "probability", "to", "shrink", "is", "very", "low", ",", "far", "below", "the", "bounds", "were", "genomes", "start", "to", "become", "unstable", "." ]
-}, {
-  "sentence_tokens" : [ "The", "precise", "dynamics", "of", "genomes", "in", "the", "presence", "of", "selection", "depends", "on", "the", "selection", "operator", ",", "so", "our", "model", "cannot", "precisely", "predict", "how", "far", "below", "the", "bounds", "real", "organisms", "are", "going", "to", "be", "." ]
-}, {
-  "sentence_tokens" : [ "The", "existence", "of", "our", "bounds", "relies", "on", "rates", "of", "chromosomal", "rearrangements", "that", "are", "expressed", "as", "rates", "per", "base", "pair", "to", "determine", "how", "often", "they", "occur", "in", "one", "generation", "." ]
-}, {
-  "sentence_tokens" : [ "Because", "of", "the", "Poisson", "law", ",", "the", "number", "of", "expected", "rearrangements", "increases", "linearly", "with", "genome", "size", "." ]
-}, {
-  "sentence_tokens" : [ "As", "genome", "length", "may", "change", "after", "every", "rearrangement", ",", "this", "hypothesis", "may", "seem", "strong", "." ]
-}, {
-  "sentence_tokens" : [ "For", "example", ",", "even", "if", "a", "large", "part", "of", "the", "genome", "was", "lost", "after", "a", "large", "deletion", ",", "the", "number", "of", "rearrangements", "remaining", "is", "given", "by", "the", "Poisson", "law", "based", "on", "the", "initial", "genome", "length", ",", "so", "the", "genome", "will", "continue", "to", "mutate", "several", "times", "if", "the", "initial", "size", "was", "large", "." ]
-}, {
-  "sentence_tokens" : [ "It", "would", "be", "interesting", "to", "study", "the", "case", "where", "the", "rates", "of", "the", "Poisson", "process", "take", "into", "account", "the", "current", "genome", "size", "(", "the", "process", "would", "not", "be", "Poisson", "anymore", ")", "in", "order", "to", "reevaluate", "the", "number", "of", "mutations", "remaining", "." ]
-}, {
-  "sentence_tokens" : [ "Preliminary", "results", "indicate", "that", "the", "results", "would", "still", "hold", "but", "that", "the", "curve", "giving", "the", "median", "of", "the", "size", "after", "replication", "as", "a", "function", "of", "the", "starting", "size", "would", "increase", "monotonically", "to", "a", "finite", "limit", "(", "instead", "of", "decreasing", "for", "large", "genomes", "as", "on", "Fig.", "2", ")", "." ]
-}, {
-  "sentence_tokens" : [ "Alternatively", ",", "it", "could", "be", "interesting", "to", "estimate", "the", "number", "of", "rearrangements", "based", "on", "a", "mechanical", "model.From", "a", "biochemical", "point", "of", "view", ",", "the", "rearrangement", "rate", "should", "not", "be", "expressed", "as", "a", "per", "base", "rate", ",", "but", "depending", "on", "elements", "that", "drive", "rearrangements", "(", "in", "which", "case", "we", "could", "look", "for", "a", "projection", "phi", "on", "these", "elements", "instead", "of", "the", "mapping", "on", "size", ")", "." ]
-}, {
-  "sentence_tokens" : [ "To", "study", "the", "relevance", "of", "our", "analysis", ",", "a", "deeper", "biochemical", "understanding", "of", "the", "scaling", "of", "rearrangement", "rate", "and", "size", "with", "genome", "size", "is", "needed", "." ]
-}, {
-  "sentence_tokens" : [ "Some", "rearrangements", "are", "known", "to", "be", "driven", "by", "specific", "sequences", ",", "such", "as", "transposable", "elements", ",", "insertion", "sequences", "or", "tandemly", "repeated", "sequences", "." ]
-}, {
-  "sentence_tokens" : [ "Biological", "data", "indicate", "that", "the", "number", "of", "transposable", "elements", "scales", "with", "genome", "size", "(", "Oliver", "et", "al.", "2007", ")", ",", "and", "in", "Arabidopsis", "the", "reduction", "of", "genome", "size", "could", "be", "linked", "to", "the", "capacity", "of", "one", "family", "of", "transposable", "elements", "to", "mediate", "rearrangements", "(", "Devos", "et", "al.", "2002", ")", "." ]
-}, {
-  "sentence_tokens" : [ "The", "impossibility", "of", "long-term", "accurate", "replication", "for", "large", "genomes", "reminds", "of", "Eigen", "'", "s", "error", "threshold", "(", "Eigen", "1971", ";", "Eigen", "et", "al.", "1988", ")", "." ]
-}, {
-  "sentence_tokens" : [ "Eigen", "noted", "that", "the", "mutation", "rate", "puts", "a", "limit", "on", "the", "size", "of", "a", "replicating", "polymer", "." ]
-}, {
-  "sentence_tokens" : [ "If", "a", "molecule", "exceeds", "this", "critical", "size", ",", "the", "number", "of", "mutations", "per", "replication", "is", "so", "high", "that", "the", "information", "is", "destroyed", "in", "subsequent", "generations", "of", "the", "molecule", "." ]
-}, {
-  "sentence_tokens" : [ "This", "model", "is", "often", "considered", "relevant", "for", "viruses", ",", "which", "have", "small", "genome", "sizes", "and", "high", "point", "mutation", "rates", "(", "Eigen", "and", "Schuster", "1979", ";", "Nowak", "1992", ";", "Wilke", "2003", ")", "." ]
-}, {
-  "sentence_tokens" : [ "Although", "the", "original", "formulation", "of", "Eigen", "'", "s", "model", "was", "rather", "general", ",", "the", "error", "threshold", "prediction", "was", "derived", "for", "the", "special", "case", "where", "all", "sequences", "have", "the", "same", "fixed", "length", "and", "undergo", "only", "point", "mutations", "(", "Eigen", "1971", ";", "Eigen", "et", "al.", "1988", ")", "." ]
-}, {
-  "sentence_tokens" : [ "Subsequent", "studies", "have", "relaxed", "other", "assumptions", "such", "as", "the", "infinite", "population", "size", "(", "Nowak", "and", "Schuster", "1989", ")", "or", "the", "homogeneity", "of", "the", "mutation", "rate", "along", "the", "sequence", "(", "Barbosa", "et", "al.", "2012", ")", ",", "but", "in", "all", "cases", "the", "mutations", "considered", "remained", "the", "local", "ones", ",", "although", "the", "importance", "of", "duplications", "and", "deletions", "was", "discussed", "in", "Eigen", "et", "al.", "(", "1988", ")", "." ]
-}, {
-  "sentence_tokens" : [ "Other", "models", "were", "designed", "to", "tackle", "related", "questions", "such", "as", "the", "existence", "of", "an", "error", "threshold", "limiting", "the", "total", "number", "of", "essential", "genes", "(", "Zeldovich", "et", "al.", "2007", ")", "or", "the", "extension", "to", "a", "cost", "including", "transcription", "or", "translation", "errors", "(", "Bird", "1995", ";", "P", "a", "l", "and", "Hurst", "2000", ")", "." ]
-}, {
-  "sentence_tokens" : [ "Our", "study", "shows", "that", "the", "nature", "of", "the", "mutations", "included", "in", "the", "model", "is", "important", "when", "studying", "the", "evolution", "of", "the", "genome", "structure", "as", "a", "whole", ",", "possibly", "including", "coding", "and", "noncoding", "DNA", "." ]
-}, {
-  "sentence_tokens" : [ "If", "only", "local", "mutations", "are", "considered", ",", "then", "the", "maximum", "size", "rule", "applies", "only", "to", "the", "coding", "part", "of", "the", "genome", "(", "Eigen", "et", "al.", "1988", ")", "." ]
-}, {
-  "sentence_tokens" : [ "We", "have", "shown", "here", "that", "if", "rearrangements", "with", "global", "effects", "are", "considered", "as", "well", ",", "then", "the", "noncoding", "part", "of", "the", "genome", "is", "also", "bounded", ",", "because", "noncoding", "DNA", "is", "mutagenic", "for", "the", "surrounding", "genes", ",", "as", "it", "provides", "breakpoints", "for", "large", "duplications", "and", "deletions", "." ]
-}, {
-  "sentence_tokens" : [ "This", "phenomenon", "was", "observed", "in", "an", "individual", "based", "model", "of", "genome", "evolution", "where", "genomes", "were", "explicitly", "represented", "as", "variable-length", "binary", "strings", ",", "and", "where", "an", "artificial", "chemistry", "was", "defined", "to", "compute", "the", "fitnesses", "(", "Knibbe", "et", "al.", "2007", ")", "." ]
-}, {
-  "sentence_tokens" : [ "Knibbe", "'", "s", "model", "fits", "into", "our", "framework", "and", "corresponds", "to", "the", "finite", "sized", "population", "case", "discussed", "in", "Sect", "." ]
-}, {
-  "sentence_tokens" : [ "5", "." ]
-}, {
-  "sentence_tokens" : [ "By", "including", "rearrangements", "in", "Eigen", "'", "s", "original", "model", ",", "we", "predict", "the", "existence", "of", "a", "generalized", "error-threshold", "applicable", "to", "the", "whole", "genome", "." ]
-}, {
-  "sentence_tokens" : [ "On", "the", "Link", "with", "Current", "Hypotheses", "in", "Molecular", "Evolution", "." ]
-}, {
-  "sentence_tokens" : [ "Genome", "growth", "is", "generally", "explained", "by", "the", "self", "replicating", "activity", "of", "transposable", "elements", "and", "by", "the", "neo-", "or", "sub-functionalization", "of", "gene", "duplicates", "(", "Lynch", "and", "Conery", "2003", ")", ",", "while", "the", "mechanisms", "pushing", "toward", "genome", "reduction", "are", "less", "clear", "." ]
-}, {
-  "sentence_tokens" : [ "Our", "results", "reveal", "that", "the", "sole", "dynamics", "of", "large", "duplications", "and", "large", "deletions", "implies", "a", "subtle", "bias", "toward", "genome", "shrinkage", "." ]
-}, {
-  "sentence_tokens" : [ "In", "the", "model", ",", "genomes", "tend", "to", "shrink", "even", "if", "the", "duplication", "and", "deletion", "rates", "are", "equal", "because", "of", "the", "multiplicative", "nature", "of", "these", "events", "." ]
-}, {
-  "sentence_tokens" : [ "Thus", ",", "the", "chromosomal", "instability", "of", "large", "genomes", "presented", "here", "is", "one", "of", "the", "pressures", "that", "can", "oppose", "genome", "growth", "." ]
-}, {
-  "sentence_tokens" : [ "However", ",", "it", "is", "not", "the", "only", "pressure", "acting", "on", "genome", "size", "." ]
-}, {
-  "sentence_tokens" : [ "As", "detailed", "below", ",", "other", "models", "hypothesize", "that", "total", "genome", "size", "has", "a", "direct", "fitness", "cost", ",", "that", "transposable", "element", "insertions", "are", "deleterious", "or", "that", "indels", "play", "a", "prominent", "role.Some", "theories", "suggest", "that", "genome", "size", "could", "be", "directly", "selected", "." ]
-}, {
-  "sentence_tokens" : [ "Long", "genomes", "could", "be", "longer", "to", "replicate", "and", "have", "a", "higher", "metabolic", "cost", "than", "smaller", "ones", "and", "thus", "be", "counter", "selected", "(", "Maniloff", "1996", ";", "Poole", "et", "al.", "2003", ")", "." ]
-}, {
-  "sentence_tokens" : [ "This", "hypothesis", "is", "now", "largely", "rejected", ",", "for", "example", "Mira", "et", "al.", "(", "2001", ")", "found", "no", "correlation", "between", "doubling", "time", "and", "genome", "size", "across", "diverse", "bacterial", "taxa", ",", "probably", "because", "replication", "can", "start", "anew", "on", "a", "genome", "already", "engaged", "in", "replication", ",", "and", "because", "there", "is", "much", "more", "material", "than", "DNA", "that", "has", "to", "be", "copied", "and", "shared", "during", "division", "." ]
-}, {
-  "sentence_tokens" : [ "Alternatively", ",", "the", "size", "of", "the", "nucleus", "(", "and", ",", "directly", "or", "indirectly", ",", "of", "the", "cell", ")", "could", "be", "linked", "to", "the", "bulk", "DNA", "content", "." ]
-}, {
-  "sentence_tokens" : [ "In", "this", "hypothesis", ",", "an", "optimal", "cell", "size", "is", "selected", "for", "physiological", "reasons", "and", "the", "large", "variations", "of", "non", "coding", "DNA", "are", "interpreted", "as", "a", "way", "to", "control", "precisely", "the", "size", "of", "the", "nucleus", "(", "Cavalier-Smith", "1978", ",", "1985", ";", "Gregory", "2001", ";", "DeLong", "et", "al.", "2010", ")", "." ]
-}, {
-  "sentence_tokens" : [ "Our", "model", "suggests", "that", "if", "selection", "favors", "a", "specific", "size", ",", "convergence", "of", "the", "population", "is", "possible", "only", "if", "this", "optimal", "size", "is", "in", "the", "zone", "where", "chromosomal", "rearrangements", "are", "rare", "." ]
-}, {
-  "sentence_tokens" : [ "In", "other", "words", ",", "a", "larger", "DNA", "content", "is", "possible", "only", "if", "molecular", "mechanisms", "evolve", "that", "increase", "the", "stability", "of", "chromosomes", "by", "reducing", "the", "frequency", "of", "duplications", "and", "large", "deletions.Other", "theories", "focus", "more", "specifically", "on", "the", "gene", "repertoire", "and", "events", "that", "can", "affect", "it", "." ]
-}, {
-  "sentence_tokens" : [ "On", "the", "one", "hand", ",", "transposition", "of", "transposable", "elements", "can", "lead", "to", "genome", "growth", "but", "their", "insertions", "can", "be", "deleterious", "either", "because", "they", "disrupt", "genes", "or", "because", "they", "promote", "ectopic", "recombination", "and", "thus", ",", "possibly", ",", "large", "deletions", "." ]
-}, {
-  "sentence_tokens" : [ "Because", "of", "these", "deleterious", "effects", ",", "selection", "would", "naturally", "eliminate", "transposable", "elements", "of", "the", "genome", "." ]
-}, {
-  "sentence_tokens" : [ "However", ",", "population", "genetics", "predicts", "that", ",", "in", "populations", "with", "smaller", "effective", "sizes", ",", "selection", "will", "be", "less", "likely", "to", "eliminate", "them", "and", "the", "genome", "will", "be", "larger", "." ]
-}, {
-  "sentence_tokens" : [ "Accumulation", "of", "selfish", "elements", "would", "thus", "reflect", "small", "population", "sizes", "(", "see", "Lynch", "and", "Conery", "(", "2003", ")", "for", "further", "details", ")", "." ]
-}, {
-  "sentence_tokens" : [ "On", "the", "other", "hand", ",", "some", "explanations", "invoke", "a", "higher", "spontaneous", "rate", "of", "small", "deletions", "compared", "to", "small", "insertions", ",", "with", "a", "bias", "strong", "enough", "to", "prevent", "the", "genome", "from", "growing", "(", "Petrov", "2000", ")", "." ]
-}, {
-  "sentence_tokens" : [ "This", "bias", "is", "due", "to", "more", "frequent", "or", "larger", "small", "deletions", "compared", "to", "small", "insertions", "and", "it", "is", "usually", "detected", "because", "it", "leads", "to", "an", "erosion", "of", "non", "coding", "sequences", "(", "Ophir", "and", "Graur", "1997", ";", "Mira", "et", "al.", "2001", ";", "Kuo", "and", "Ochman", "2009", ";", "Leushkin", "et", "al.", "2013", ")", "." ]
-}, {
-  "sentence_tokens" : [ "In", "this", "case", ",", "smaller", "population", "sizes", "can", "lead", "to", "smaller", "genomes", "." ]
-}, {
-  "sentence_tokens" : [ "Indeed", ",", "because", "of", "random", "genetic", "drift", ",", "some", "non", "essential", "genes", "may", "be", "inactivated", "and", ",", "subsequently", ",", "the", "resulting", "pseudogenes", "may", "be", "eroded", "by", "accumulation", "of", "small", "deletions", "(", "Mira", "et", "al.", "2001", ")", "." ]
-}, {
-  "sentence_tokens" : [ "More", "generally", ",", "the", "evolution", "of", "genome", "size", "in", "small", "populations", "will", "be", "more", "influenced", "by", "mutational", "biases.We", "predict", "that", "above", "some", "size", "threshold", ",", "the", "mutation", "bias", "due", "to", "ectopic", "recombination", "identified", "here", "will", "be", "stronger", "than", "any", "other", "mutational", "bias", "and", "even", "stronger", "than", "selective", "pressures", ":", "it", "will", "bring", "the", "genome", "back", "under", "the", "stability", "threshold", "." ]
-}, {
-  "sentence_tokens" : [ "For", "stable", "chromosomes", "(", "which", "undergo", "fewer", "and", "smaller", "rearrangements", ")", ",", "the", "dynamics", "of", "genome", "size", "will", "be", "influenced", "by", "selection", "(", "if", "the", "population", "is", "large", ")", ",", "transposition", "of", "transposable", "elements", ",", "the", "tendency", "to", "genome", "shrinkage", "due", "to", "ectopic", "recombination", "as", "identified", "here", "and", "the", "biases", "in", "the", "small", "indels", "." ]
-}, {
-  "sentence_tokens" : [ "Therefore", ",", "the", "equilibrium", "genome", "size", "depends", "on", "the", "strength", "of", "each", "of", "these", "forces", ",", "which", "will", "depend", "on", "the", "species", "considered", "(", "Fig.", "6", ")", "." ]
-}, {
-  "sentence_tokens" : [ "Indeed", ",", "large", "variations", "exist", "within", "closely", "related", "species", "(", "Thomas", "1971", ";", "Betr", "a", "n", "and", "Long", "2002", ";", "Tenaillon", "et", "al.", "2011", ")", ",", "indicating", "that", "there", "might", "not", "be", "one", "explanation", "valid", "for", "all", "species", "." ]
-}, {
-  "sentence_tokens" : [ "While", "a", "spontaneous", "bias", "toward", "small", "deletions", "compared", "to", "small", "insertions", "seems", "to", "be", "widespread", "among", "bacteria", "(", "Kuo", "and", "Ochman", "2009", ")", ",", "some", "species", "exhibit", "an", "opposite", "bias", "toward", "insertions", "(", "Denver", "et", "al.", "2004", ")", "." ]
-}, {
-  "sentence_tokens" : [ "Similarly", ",", "transposable", "elements", "are", "rare", "in", "some", "species", "(", "supposedly", "in", "bacteria", "for", "example", ")", "and", "their", "transposition", "rate", "may", "be", "controlled", "by", "the", "host", ",", "so", "that", "the", "interplay", "between", "small", "indels", ",", "large", "deletions", "and", "transposition", "has", "to", "be", "evaluated", "for", "each", "species", "." ]
-}, {
-  "sentence_tokens" : [ "To", "conclude", ",", "several", "evolutionary", "pressures", "act", "together", "on", "real", "genomes", "." ]
-}, {
-  "sentence_tokens" : [ "The", "advantage", "of", "modeling", "studies", "such", "as", "the", "present", "one", "is", "that", "one", "can", "isolate", "and", "investigate", "a", "given", "pressure", "such", "as", ",", "here", ",", "the", "spontaneous", "formation", "of", "deletions", "and", "duplications", "through", "ectopic", "recombination", "." ]
+  "sentence_tokens" : [ "4", "apply", "for", "every", "generation", ",", "we", "argue", "that", "selection", "cannot", "help", "overcome", "the", "bounds", "found", "in", "Sect", "." ],
+  "entity_one_indices" : [ 17, 18 ],
+  "entity_two_indices" : [ 11, 12 ]
+}, {
+  "sentence_tokens" : [ ",", "max", "(", "0", ",", "s0-1", ")", "}", "." ],
+  "entity_one_indices" : [ 5, 6 ],
+  "entity_two_indices" : [ 1, 2, 3, 4 ]
+}, {
+  "sentence_tokens" : [ "First", ",", "replication", "slippage", "of", "the", "DNA", "polymerase", "can", "lead", "to", "the", "loss", "or", "gain", "of", "a", "few", "base", "pairs", "." ],
+  "entity_one_indices" : [ 18, 19 ],
+  "entity_two_indices" : [ 6, 7, 8 ]
+}, {
+  "sentence_tokens" : [ "However", ",", "note", "that", "here", "the", "insertion", "rate", "will", "be", "defined", "per", "base", "pair", "whereas", "the", "transposition", "rate", "is", "normally", "given", "per", "transposable", "element", "." ],
+  "entity_one_indices" : [ 16, 17 ],
+  "entity_two_indices" : [ 12, 13 ]
+}, {
+  "sentence_tokens" : [ "For", "comparison", "purposes", ",", "a", "deletion", "of", "9", "Mb", "is", "approximately", "twice", "the", "size", "of", "the", "whole", "genome", "of", "E.", "coli", "K12", "(", "4.6", "Mb", ")", "." ],
+  "entity_one_indices" : [ 24, 25 ],
+  "entity_two_indices" : [ 8, 9 ]
+}, {
+  "sentence_tokens" : [ "We", "call", "mu", "=", "mu", "ins+", "mu", "sdel+", "mu", "ldel+", "mu", "dup", "the", "total", "mutation", "rate", "per", "base", "pair", "per", "generation", "(", "note", "that", "in", "this", "paper", ",", "the", "term", "\"", "mutations", "\"", "refers", "to", "small", "indels", "and", "chromosomal", "rearrangements", ")", "." ],
+  "entity_one_indices" : [ 17, 18 ],
+  "entity_two_indices" : [ 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 ]
+}, {
+  "sentence_tokens" : [ "While", "0", "is", "not", "an", "absorbing", "state", "in", "the", "Markov", "chain", "(", "N", ",", "M1", ")", "because", "of", "small", "insertions", ",", "it", "would", "be", "absorbing", "in", "the", "Markov", "chain", "(", "N", ",", "MG", ")", "because", "the", "number", "of", "mutations", "per", "replication", "given", "by", "the", "Poisson", "law", "is", "0", "." ],
+  "entity_one_indices" : [ 32, 33 ],
+  "entity_two_indices" : [ 9, 10, 11 ]
+}, {
+  "sentence_tokens" : [ "For", "equal", "rates", "of", "small", "insertions", "and", "small", "deletions", "(", "mu", "ins", "=", "mu", "sdel", ")", "and", "for", "the", "same", "length", "distribution", "of", "insertions", "and", "small", "deletions", "(", "lins", "=", "lsdel", ")", "in", "particular", ",", "the", "transitions", "due", "to", "small", "indels", "are", "symmetrical", "." ],
+  "entity_one_indices" : [ 28, 29 ],
+  "entity_two_indices" : [ 10, 11, 12, 13, 14, 15 ]
+}, {
+  "sentence_tokens" : [ "Existence", "and", "Uniqueness", "of", "a", "Stationary", "Distribution", "for", "the", "Generational", "Markov", "Chain", "(", "N", "*", ",", "MG", ")", "." ],
+  "entity_one_indices" : [ 16, 17 ],
+  "entity_two_indices" : [ 13, 14, 15 ]
+}, {
+  "sentence_tokens" : [ "More", "precisely", ",", "it", "is", "possible", "to", "gain", "exactly", "one", "base", "pair", "through", "small", "insertions", "or", "duplications", "and", "to", "lose", "exactly", "one", "base", "pair", "by", "small", "deletions", "or", "large", "deletions", "." ],
+  "entity_one_indices" : [ 22, 23 ],
+  "entity_two_indices" : [ 10, 11 ]
+}, {
+  "sentence_tokens" : [ "Because", "N", "*", "is", "infinite", ",", "the", "probability", "associated", "to", "some", "transitions", "may", ",", "and", "will", ",", "become", "arbitrarily", "small", ",", "so", "there", "is", "no", "trivial", "lower", "bound", "epsilon", ">", "0", "as", "demanded", "in", "Doeblin", "'", "s", "condition", "." ],
+  "entity_one_indices" : [ 34, 35, 36, 37 ],
+  "entity_two_indices" : [ 1, 2, 3 ]
+}, {
+  "sentence_tokens" : [ "We", "will", "subdivide", "the", "space", "of", "genome", "states", "in", "two", "subspaces", ",", "a", "finite", "subspace", "Xsmall", "subset", "N", "*", "of", "genomes", "smaller", "than", "a", "specific", "size", "s", "~", ",", "and", "an", "infinite", "subspace", "Xlarge", "subset", "N", "*", "of", "genomes", "larger", "than", "s", "~", "." ],
+  "entity_one_indices" : [ 35, 36, 37 ],
+  "entity_two_indices" : [ 17, 18, 19 ]
+}, {
+  "sentence_tokens" : [ "Then", "there", "is", "sf", "in", "X", "and", "epsilon", "1", ">", "0", "such", "that", "(", "MG", ")", "sisf", ">=", "epsilon", "1", "for", "all", "si", "in", "X.", "Proof", "." ],
+  "entity_one_indices" : [ 16, 17, 18, 19, 20 ],
+  "entity_two_indices" : [ 14, 15 ]
+}, {
+  "sentence_tokens" : [ "As", "just", "seen", "in", "the", "main", "text", ",", "every", "state", "is", "accessible", "by", "any", "other", "state", "in", "(", "N", "*", ",", "MG", ")", "with", "strictly", "positive", "probability", ",", "thus", "epsilon", "1", ">", "0", "." ],
+  "entity_one_indices" : [ 21, 22 ],
+  "entity_two_indices" : [ 18, 19, 20 ]
+}, {
+  "sentence_tokens" : [ "*", "This", "lemma", "shows", "that", "Doeblin", "'", "s", "condition", "applies", "trivially", "for", "MG", "if", "we", "restrict", "genome", "size", "a", "priori", "." ],
+  "entity_one_indices" : [ 12, 13 ],
+  "entity_two_indices" : [ 5, 6, 7, 8 ]
+}, {
+  "sentence_tokens" : [ "exists", "epsilon", "'", ">", "0", ",", "for-all", "n", ">=", "0", ",", "Prs0Sn", "<=", "s", "~", ">=", "epsilon", "'", "ifs0", "<=", "s", "~", "epsilon", "'", "1-logs0logs", "~+", "n", "delta", "ifs0", ">", "s", "~", "(", "where", "log", "is", "arbitrarily", "extended", "by", "log0", "=0", ")", "Details", "of", "the", "proof", "for", "Lemma", "2", "are", "presented", "in", "Appendix", "1", "." ],
+  "entity_one_indices" : [ 47, 48, 49 ],
+  "entity_two_indices" : [ 27, 28 ]
+}, {
+  "sentence_tokens" : [ "Case", "s0", ">", "s", "~", "(", "s0", "in", "Xlarge", ")", ":", "The", "probability", "to", "reach", "sf", "<=", "s", "~", "in", "two", "generations", "is", "at", "least", "the", "probability", "to", "reach", "a", "state", "in", "Xsmall", "at", "the", "first", "generation", "and", "then", "to", "reach", "size", "sf", "from", "there", "." ],
+  "entity_one_indices" : [ 15, 16, 17, 18, 19 ],
+  "entity_two_indices" : [ 0, 1 ]
+}, {
+  "sentence_tokens" : [ "We", "begin", "by", "considering", "the", "first", "step", ",", "that", "is", ",", "PrGt", "+1", "<=", "s", "~", "|", "Gt", "=", "s0", "." ],
+  "entity_one_indices" : [ 17, 18 ],
+  "entity_two_indices" : [ 6, 7 ]
+}, {
+  "sentence_tokens" : [ "The", "number", "of", "mutations", "N", "follows", "a", "Poisson", "distribution", "with", "parameter", "mu", "s0.PrGt", "+1", "<=", "s", "~", "|", "Gt", "=", "s0", "=", "sum", "n", ">=", "0Prs0Sn", "<=", "s", "~", "(", "mu", "s0", ")", "nn", "!" ],
+  "entity_one_indices" : [ 30, 31 ],
+  "entity_two_indices" : [ 18, 19 ]
+}, {
+  "sentence_tokens" : [ "e-mu", "s0.According", "to", "Lemma", "2", ",", "exists", "epsilon", "'", ">", "0", ",", "Prs0Sn", "<=", "s", "~", ">=", "epsilon", "'", "1-logs0logs", "~+", "n", "delta", "." ],
+  "entity_one_indices" : [ 22, 23 ],
+  "entity_two_indices" : [ 3, 4, 5 ]
+}, {
+  "sentence_tokens" : [ "The", "one", "sided", "Chebyshev", "inequality", "implies", "that", "PrN", ">=", "(", "2logs0-logs", "~", ")/delta", "tends", "to", "1", "." ],
+  "entity_one_indices" : [ 7, 8 ],
+  "entity_two_indices" : [ 3, 4 ]
+}, {
+  "sentence_tokens" : [ "As", "in", "the", "general", "case", ",", "we", "assume", "that", "in", "one", "generation", "the", "number", "of", "deletions", "and", "duplications", "are", "Poisson", "distributed", "with", "parameters", "mu", "ldels0", "and", "mu", "dups0", "and", "follow", "independent", "Poisson", "processes", "." ],
+  "entity_one_indices" : [ 26, 27, 28 ],
+  "entity_two_indices" : [ 23, 24, 25 ]
+}, {
+  "sentence_tokens" : [ "Because", "the", "mutations", "follow", "independent", "processes", ",", "the", "(", "Jn", ")", "n", "in", "N", "are", "independent", ",", "identically", "distributed", "and", "do", "not", "depend", "on", "S", "^", "n." ],
+  "entity_one_indices" : [ 24, 25, 26, 27 ],
+  "entity_two_indices" : [ 9, 10 ]
+}, {
+  "sentence_tokens" : [ "Es0logS", "^", "n", "=", "logs0+", "nEJn", "and", "sigma", "s0logS", "^", "n", "=", "n", "sigma", "Jn", "by", "the", "independence", "of", "the", "jumps", "." ],
+  "entity_one_indices" : [ 14, 15 ],
+  "entity_two_indices" : [ 0, 1, 2, 3, 4, 5, 6 ]
+}, {
+  "sentence_tokens" : [ "Therefore", ",", "the", "discrete", "system", "is", "composed", "of", "a", "wall", "on", "one", "side", ",", "biased", "diffusion", "on", "the", "infinite", "side", "and", "an", "uncharacterized", "behavior", "in", "between", "." ],
+  "entity_one_indices" : [ 19, 20 ],
+  "entity_two_indices" : [ 12, 13 ]
+}, {
+  "sentence_tokens" : [ "If", "the", "diffusion", "is", "biased", "toward", "the", "wall", "(", "mu", "ldel", ">", "(", "2log2-1", ")", "mu", "dup", ")", ",", "it", "is", "easy", "to", "imagine", "that", "the", "population", "will", "end", "up", "next", "to", "the", "wall", ",", "even", "though", "its", "exact", "final", "position", "is", "partly", "determined", "by", "small", "indels.We", "now", "compute", "the", "distribution", "of", "genome", "size", "in", "the", "continuous", "model", "after", "one", "generation", "by", "weighting", "the", "(", "logS", "^", "n", ")", "n", "in", "N", "with", "the", "Poisson", "distribution", "." ],
+  "entity_one_indices" : [ 15, 16, 17 ],
+  "entity_two_indices" : [ 13, 14 ]
+}, {
+  "sentence_tokens" : [ "By", "definition", ",", "for", "all", "x", "in", "R", ",", "Prs0logS", "^", "f", "<=", "x", "=", "sum", "n", ">=", "0Prs0logS", "^", "n", "<=", "x(", "(", "mu", "ldel+", "mu", "dup", ")", "s0", ")", "nn", "!" ],
+  "entity_one_indices" : [ 24, 25, 26, 27, 28, 29 ],
+  "entity_two_indices" : [ 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23 ]
+}, {
+  "sentence_tokens" : [ "Let", "k", ">=", "1", "and", "Qk", "(", "s0", ")", "=", "expEs0logS", "^", "f+", "k", "sigma", "s0logS", "^", "f." ],
+  "entity_one_indices" : [ 5, 6, 7 ],
+  "entity_two_indices" : [ 1, 2, 3, 4 ]
+}, {
+  "sentence_tokens" : [ "We", "call", "A", "=", "mu", "ldel-(", "2log2-1", ")", "mu", "dup", "and", "B", "=", "2", "(", "log2-1", ")", "2", "mu", "dup", "+2", "mu", "ldel", ",", "so", "that", "Qk", "(", "s0", ")", "=", "exp", "(", "logs0-As0+", "kBs0", ")", "." ],
+  "entity_one_indices" : [ 33, 34, 35 ],
+  "entity_two_indices" : [ 26, 27 ]
+}, {
+  "sentence_tokens" : [ "The", "proposition", "is", "a", "restatement", "of", "Lemma", "3", "by", "using", "Cantelli", "'", "s", "inequality", "(", "or", "one", "sided", "Chebyshev", "inequality", ")", "." ],
+  "entity_one_indices" : [ 18, 19 ],
+  "entity_two_indices" : [ 6, 7, 8 ]
+}, {
+  "sentence_tokens" : [ "The", "second", "part", "is", "obtained", "with", "s", "~", "fixed", "(", "k", ")", "=", "sfixed", "(", "k", ")", "in", "Lemma", "3", "and", "by", "noting", "that", "Qk", "'", "(", "s0", ")", "<", "0", "for", "all", "s0", ">=", "sfixed", "(", "k", ")", ",", "so", "that", "Qk", "(", "s0", ")", "<=", "Qk", "(", "sfixed", "(", "k", ")", ")", "." ],
+  "entity_one_indices" : [ 42, 43, 44 ],
+  "entity_two_indices" : [ 24, 25, 26 ]
+}, {
+  "sentence_tokens" : [ "*", "Lemma", "3", "and", "Proposition", "1", "introduce", "two", "sequences", "of", "bounds", "that", "depend", "on", "a", "parameter", "k.", "s", "~", "max", "(", "k", ")", "gives", "bounds", "for", "the", "quantiles", "of", "the", "distribution", "at", "generation", "t", "+1", "that", "work", "for", "every", "starting", "genome", "and", "thus", "any", "starting", "distribution", "at", "time", "t.", "For", "k", "=", "1", ",", "the", "probability", "to", "get", "below", "s", "~", "max", "(", "1", ")", "is", "at", "least", "0.5", "for", "every", "step", "." ],
+  "entity_one_indices" : [ 71, 72 ],
+  "entity_two_indices" : [ 1, 2, 3 ]
+}, {
+  "sentence_tokens" : [ "If", "the", "probabilities", "are", "seen", "as", "population", "densities", ",", "s", "~", "max", "(", "1", ")", "gives", "an", "upper", "bound", "for", "the", "median", "of", "the", "population", "at", "any", "step", "(", "except", "maybe", "the", "starting", "step", ")", "." ],
+  "entity_one_indices" : [ 33, 34 ],
+  "entity_two_indices" : [ 27, 28 ]
+}, {
+  "sentence_tokens" : [ "Increasing", "k", "increases", "the", "bound", "but", "gives", "even", "more", "restrictive", "conditions", "on", "the", "localization", "of", "the", "population", "at", "any", "step", "." ],
+  "entity_one_indices" : [ 19, 20 ],
+  "entity_two_indices" : [ 13, 14 ]
+}, {
+  "sentence_tokens" : [ "In", "other", "words", ",", "according", "to", "Chebyshev", "'", "s", "inequality", ",", "it", "will", "be", "possible", "to", "find", "bounds", "that", "will", "hold", "for", "every", "step", "of", "the", "generation", "process", "." ],
+  "entity_one_indices" : [ 23, 24 ],
+  "entity_two_indices" : [ 6, 7, 8, 9 ]
+}, {
+  "sentence_tokens" : [ "If", "we", "decouple", "the", "selection", "and", "the", "mutation", "steps", ",", "we", "can", "have", "information", "on", "the", "probabilities", "of", "genomes", "being", "below", "some", "bound", "using", "Proposition", "1.Basically", ",", "the", "idea", "is", "the", "same", "as", "in", "the", "infinite", "population", "case", ",", "except", "that", "the", "evolution", "of", "individuals", "is", "stochastic", "and", "Eq", "." ],
+  "entity_one_indices" : [ 48, 49 ],
+  "entity_two_indices" : [ 21, 22 ]
+}, {
+  "sentence_tokens" : [ "We", "obtained", "this", "lognormal", "distribution", "by", "fitting", "the", "size", "distribution", "of", "127", "rearrangements", "observed", "in", "evolving", "cultures", "of", "Escherichia", "coli", "(", "D.", "Schneider", ",", "personal", "communication", ")", "and", "Salmonella", "enterica", "(", "Nilsson", "et", "al.", "2005", ";", "Sun", "et", "al.", "2012", ")", "." ],
+  "entity_one_indices" : [ 36, 37 ],
+  "entity_two_indices" : [ 28, 29, 30 ]
+}, {
+  "sentence_tokens" : [ "Hence", ",", "the", "event", "size", "tends", "to", "a", "constant", "for", "infinite", "genomes", ",", "and", "we", "have", "delta", "ldel", "=-e10.1214", "+2.560222", "~", "-6.59", "x", "105", ",", "delta", "dup", "~", "+6.59", "x", "105", "." ],
+  "entity_one_indices" : [ 25, 26 ],
+  "entity_two_indices" : [ 16, 17 ]
+}, {
+  "sentence_tokens" : [ "Moreover", ",", "additional", "simulations", "with", "higher", "duplication", "rates", "indicate", "that", "the", "median", "change", "in", "genome", "size", "after", "1,000", "generations", "remains", "negative", "for", "mu", "dup", "=", "1.2", "mu", "ldel", "for", "the", "truncated", "lognormal", "distribution", ",", "or", "for", "mu", "dup", "=", "2", "mu", "ldel", "for", "the", "uniform", "distribution", "(", "in", "agreement", "with", "Theorem", "2", ")", "." ],
+  "entity_one_indices" : [ 36, 37, 38, 39, 40, 41, 42 ],
+  "entity_two_indices" : [ 22, 23, 24, 25, 26, 27, 28 ]
+}, {
+  "sentence_tokens" : [ "Moreover", ",", "in", "most", "models", "where", "the", "size", "of", "the", "mutation", "scales", "with", "the", "number", "of", "elements", ",", "each", "mutation", "type", "is", "allowed", "to", "occur", "at", "most", "once", "per", "reproduction", ",", "which", "may", "be", "appropriate", "for", "the", "study", "of", "microsatellites", ",", "but", "unrealistic", "for", "large", "genomes.The", "interplay", "between", "additive", "and", "multiplicative", "processes", "might", "also", "be", "underlined", "in", "the", "study", "of", "genome", "reduction", "." ],
+  "entity_one_indices" : [ 29, 30 ],
+  "entity_two_indices" : [ 20, 21 ]
+}, {
+  "sentence_tokens" : [ "Contrary", "to", "the", "mutational", "Markov", "chain", ",", "the", "generational", "Markov", "chain", "shows", "that", "there", "is", "a", "non", "negligible", "probability", "that", "the", "genomes", "located", "above", "a", "given", "threshold", ",", "no", "matter", "how", "large", "they", "may", "be", ",", "collapse", "." ],
+  "entity_one_indices" : [ 9, 10, 11 ],
+  "entity_two_indices" : [ 4, 5, 6 ]
+}, {
+  "sentence_tokens" : [ "The", "impossibility", "of", "long-term", "accurate", "replication", "for", "large", "genomes", "reminds", "of", "Eigen", "'", "s", "error", "threshold", "(", "Eigen", "1971", ";", "Eigen", "et", "al.", "1988", ")", "." ],
+  "entity_one_indices" : [ 17, 18, 19 ],
+  "entity_two_indices" : [ 11, 12, 13, 14, 15, 16 ]
+}, {
+  "sentence_tokens" : [ "Other", "models", "were", "designed", "to", "tackle", "related", "questions", "such", "as", "the", "existence", "of", "an", "error", "threshold", "limiting", "the", "total", "number", "of", "essential", "genes", "(", "Zeldovich", "et", "al.", "2007", ")", "or", "the", "extension", "to", "a", "cost", "including", "transcription", "or", "translation", "errors", "(", "Bird", "1995", ";", "P", "a", "l", "and", "Hurst", "2000", ")", "." ],
+  "entity_one_indices" : [ 38, 39 ],
+  "entity_two_indices" : [ 36, 37 ]
+}, {
+  "sentence_tokens" : [ "On", "the", "one", "hand", ",", "transposition", "of", "transposable", "elements", "can", "lead", "to", "genome", "growth", "but", "their", "insertions", "can", "be", "deleterious", "either", "because", "they", "disrupt", "genes", "or", "because", "they", "promote", "ectopic", "recombination", "and", "thus", ",", "possibly", ",", "large", "deletions", "." ],
+  "entity_one_indices" : [ 22, 23 ],
+  "entity_two_indices" : [ 5, 6 ]
+}, {
+  "sentence_tokens" : [ "Similarly", ",", "transposable", "elements", "are", "rare", "in", "some", "species", "(", "supposedly", "in", "bacteria", "for", "example", ")", "and", "their", "transposition", "rate", "may", "be", "controlled", "by", "the", "host", ",", "so", "that", "the", "interplay", "between", "small", "indels", ",", "large", "deletions", "and", "transposition", "has", "to", "be", "evaluated", "for", "each", "species", "." ],
+  "entity_one_indices" : [ 38, 39 ],
+  "entity_two_indices" : [ 18, 19 ]
 } ]

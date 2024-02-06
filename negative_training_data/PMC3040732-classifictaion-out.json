@@ -49,467 +49,143 @@
   "rule_name" : "Negative_activation_token_2_noun",
   "rule" : null
 }, {
-  "sentence_tokens" : [ "Independent", "component", "and", "pathway", "based", "analysis", "of", "miRNA", "regulated", "gene", "expression", "in", "a", "model", "of", "type", "1", "diabetes", "." ]
-}, {
-  "sentence_tokens" : [ "Background", "." ]
-}, {
-  "sentence_tokens" : [ "Several", "approaches", "have", "been", "developed", "for", "miRNA", "target", "prediction", ",", "including", "methods", "that", "incorporate", "expression", "profiling", "." ]
-}, {
-  "sentence_tokens" : [ "However", "the", "methods", "are", "still", "in", "need", "of", "improvements", "due", "to", "a", "high", "false", "discovery", "rate", "." ]
-}, {
-  "sentence_tokens" : [ "So", "far", ",", "none", "of", "the", "methods", "have", "used", "independent", "component", "analysis", "(", "ICA", ")", "." ]
-}, {
-  "sentence_tokens" : [ "Here", ",", "we", "developed", "a", "novel", "target", "prediction", "method", "based", "on", "ICA", "that", "incorporates", "both", "seed", "matching", "and", "expression", "profiling", "of", "miRNA", "and", "mRNA", "expressions", "." ]
-}, {
-  "sentence_tokens" : [ "The", "method", "was", "applied", "on", "a", "cellular", "model", "of", "type", "1", "diabetes", "." ]
-}, {
-  "sentence_tokens" : [ "Results", "." ]
-}, {
-  "sentence_tokens" : [ "Microrray", "profiling", "identified", "eight", "miRNAs", "(", "miR-124/128/192/194/204/375/672/708", ")", "with", "differential", "expression", "." ]
-}, {
-  "sentence_tokens" : [ "Applying", "ICA", "on", "the", "mRNA", "profiling", "data", "revealed", "five", "significant", "independent", "components", "(", "ICs", ")", "correlating", "to", "the", "experimental", "conditions", "." ]
-}, {
-  "sentence_tokens" : [ "The", "five", "ICs", "also", "captured", "the", "miRNA", "expressions", "by", "explaining", ">", "97", "%", "of", "their", "variance", "." ]
-}, {
-  "sentence_tokens" : [ "By", "using", "ICA", ",", "seven", "of", "the", "eight", "miRNAs", "showed", "significant", "enrichment", "of", "sequence", "predicted", "targets", ",", "compared", "to", "only", "four", "miRNAs", "when", "using", "simple", "negative", "correlation", "." ]
-}, {
-  "sentence_tokens" : [ "The", "ICs", "were", "enriched", "for", "miRNA", "targets", "that", "function", "in", "diabetes-relevant", "pathways", "e.g", "." ]
-}, {
-  "sentence_tokens" : [ "type", "1", "and", "type", "2", "diabetes", "and", "maturity", "onset", "diabetes", "of", "the", "young", "(", "MODY", ")", "." ]
-}, {
-  "sentence_tokens" : [ "Conclusions", "." ]
-}, {
-  "sentence_tokens" : [ "In", "this", "study", ",", "ICA", "was", "applied", "as", "an", "attempt", "to", "separate", "the", "various", "factors", "that", "influence", "the", "mRNA", "expression", "in", "order", "to", "identify", "miRNA", "targets", "." ]
-}, {
-  "sentence_tokens" : [ "The", "results", "suggest", "that", "ICA", "is", "better", "at", "identifying", "miRNA", "targets", "than", "negative", "correlation", "." ]
-}, {
-  "sentence_tokens" : [ "Additionally", ",", "combining", "ICA", "and", "pathway", "analysis", "constitutes", "a", "means", "for", "prioritizing", "between", "the", "predicted", "miRNA", "targets", "." ]
-}, {
-  "sentence_tokens" : [ "Applying", "the", "method", "on", "a", "model", "of", "type", "1", "diabetes", "resulted", "in", "identification", "of", "eight", "miRNAs", "that", "appear", "to", "affect", "pathways", "of", "relevance", "to", "disease", "mechanisms", "in", "diabetes", "." ]
-}, {
-  "sentence_tokens" : [ "Background", "." ]
-}, {
-  "sentence_tokens" : [ "microRNAs", "(", "miRNAs", ")", "are", "a", "class", "of", "small", "non", "coding", "RNAs", "that", "function", "as", "posttranscriptional", "regulators", "of", "gene", "expression", "by", "mediating", "translational", "inhibition", "or", "mRNA", "degradation", "." ]
-}, {
-  "sentence_tokens" : [ "miRNA", "bind", "to", "``", "seed", "''", "sites", ",", "i.e.", "stretches", "of", "6-8", "nucleotides", "in", "the", "3", "'", "untranslated", "region", "(", "UTR", ")", "of", "their", "target", "mRNAs", "." ]
-}, {
-  "sentence_tokens" : [ "miRNAs", "regulate", "various", "cellular", "processes", "and", "appear", "to", "be", "involved", "in", "the", "development", "of", "many", "diseases.Most", "approaches", "for", "miRNA", "target", "identification", "rely", "on", "either", "one", "or", "a", "combination", "of", "seed", "matching", ",", "site", "accessibility", "and", "phylogenetic", "conservation", "[", "1", "]", "." ]
-}, {
-  "sentence_tokens" : [ "In", "addition", ",", "some", "have", "incorporated", "target", "site", "location", ",", "multiple", "target", "sites", "and", "expression", "profiling", "[", "1", "]", "." ]
-}, {
-  "sentence_tokens" : [ "A", "number", "of", "target", "prediction", "methods", "use", "expression", "profiling", "of", "both", "miRNA", "and", "mRNA", "expressions", "[", "2-5", "]", "." ]
-}, {
-  "sentence_tokens" : [ "Most", "of", "the", "approaches", "are", "based", "on", "negative", "correlation", ",", "i.e.", "reciprocal", "expressions", "of", "miRNAs", "and", "their", "degraded", "target", "mRNAs.High-dimensional", "biological", "data", ",", "such", "as", "microarray", "profiling", "data", ",", "are", "often", "interpreted", "as", "being", "composed", "of", "sets", "of", "transcriptional-", "or", "activity", "programs", "that", "explain", "some", ",", "or", "most", ",", "of", "the", "complexity", "in", "the", "data", "[", "6-8", "]", "." ]
-}, {
-  "sentence_tokens" : [ "Various", "methods", "are", "being", "applied", "on", "profiling", "data", "e.g", "." ]
-}, {
-  "sentence_tokens" : [ "principal", "component", "analysis", "(", "PCA", ")", "and", "clustering", "." ]
-}, {
-  "sentence_tokens" : [ "In", "the", "last", "couple", "of", "years", "independent", "component", "analysis", "(", "ICA", ")", "has", "been", "extensively", "applied", "on", "mRNA", "profiling", "data", "and", "recently", ",", "ICA", "was", "applied", "on", "miRNA", "profiling", "data", "as", "well", "[", "9", "]", "." ]
-}, {
-  "sentence_tokens" : [ "ICA", "is", "a", "computational", "method", "for", "separating", "mixed", "independent", "signals", "and", "can", "be", "used", "to", "decompose", "the", "expression", "matrix", "into", "independent", "components", "[", "10", "]", "." ]
-}, {
-  "sentence_tokens" : [ "This", "decomposition", "has", "been", "shown", "to", "be", "informative", "in", "several", "studies", "[", "11-15", "]", ",", "and", "superior", "to", "clustering", "and", "PCA", "[", "16-19", "]", "." ]
-}, {
-  "sentence_tokens" : [ "Apparently", ",", "the", "representation", "of", "gene", "expression", "as", "a", "mix", "of", "independent", ",", "possibly", "overlapping", ",", "transcriptional", "programs", "captures", "the", "differential", "regulation", "of", "well", "defined", "biological", "processes", "and", "metabolic", "pathways", "[", "19,20", "]", "." ]
-}, {
-  "sentence_tokens" : [ "Type", "1", "diabetes", "(", "T1D", ")", "is", "an", "immune", "mediated", "disease", "characterized", "by", "insulin", "deficiency", "due", "to", "a", "specific", "destruction", "of", "the", "pancreatic", "beta-cells", "." ]
-}, {
-  "sentence_tokens" : [ "Pro", "inflammatory", "cytokines", "are", "involved", "in", "the", "destruction", "through", "induction", "of", "apoptosis", "[", "21", "]", "." ]
-}, {
-  "sentence_tokens" : [ "The", "endocrine", "cells", "in", "the", "pancreatic", "islets", "all", "arise", "from", "the", "same", "progenitor", "stem", "cell", "and", "the", "maturation", "of", "the", "different", "cell", "types", "is", "dependent", "on", "a", "number", "of", "factors", ",", "such", "as", "transcription", "factors", "and", "miRNAs", ",", "that", "are", "activated", "in", "a", "tightly", "regulated", "pattern", "[", "22,23", "]", "." ]
-}, {
-  "sentence_tokens" : [ "One", "of", "the", "central", "transcription", "factors", "in", "pancreatic", "development", "is", "Pancreatic", "and", "duodenal", "homeobox", "1", "(", "Pdx-1", ")", "[", "24-26", "]", "." ]
-}, {
-  "sentence_tokens" : [ "In", "the", "mature", "endocrine", "cells", ",", "Pdx-1", "expression", "is", "restricted", "to", "the", "beta-cell", ",", "where", "it", "is", "important", "for", "insulin", "expression", "[", "27", "]", "." ]
-}, {
-  "sentence_tokens" : [ "In", "the", "present", "study", ",", "we", "have", "used", "a", "model", "of", "type", "1", "diabetes", "based", "on", "beta-cell", "maturation", "and", "interleukin-1", "beta", "(", "IL-1", "beta", ")", "sensitivity", "." ]
-}, {
-  "sentence_tokens" : [ "In", "response", "to", "Pdx-1", "induction", "the", "cells", "progress", "from", "an", "immature", "to", "a", "mature", "beta-cell", "phenotype", "[", "28", "]", "." ]
-}, {
-  "sentence_tokens" : [ "The", "beta-cell", "maturation", "is", "accompanied", "by", "an", "increased", "sensitivity", "to", "the", "toxic", "effects", "of", "IL-1", "beta", "that", "is", "reflected", "in", "both", "transcriptional", "and", "protein", "expression", "patterns", "[", "29-31", "]", "." ]
-}, {
-  "sentence_tokens" : [ "Genes", "regulated", "by", "Pdx-1", "are", "therefore", "believed", "to", "be", "involved", "in", "the", "acquired", "IL-1", "beta", "sensitivity", ",", "and", "identification", "of", "these", "genes", "would", "provide", "knowledge", "about", "the", "mechanisms", "underlying", "this", "beta-cell", "specific", "trait", "." ]
-}, {
-  "sentence_tokens" : [ "Interestingly", ",", "a", "study", "investigating", "genomic", "targets", "of", "transcription", "factors", "in", "a", "beta-cell", "line", "suggested", "that", "several", "miRNAs", "are", "under", "Pdx-1", "regulation", "[", "32", "]", "." ]
-}, {
-  "sentence_tokens" : [ "Furthermore", ",", "a", "number", "of", "miRNAs", "have", "been", "implicated", "in", "the", "regulation", "of", "pancreatic", "development", "and", "beta-cell", "differentiation", "[", "22,33-36]", "." ]
-}, {
-  "sentence_tokens" : [ "Here", ",", "we", "have", "developed", "a", "novel", "miRNA", "target", "prediction", "method", "that", "is", "based", "on", "ICA", "and", "combines", "seed", "matching", "and", "expression", "profiling", "." ]
-}, {
-  "sentence_tokens" : [ "We", "comprehensively", "profiled", "both", "miRNA", "and", "mRNA", "expressions", "from", "the", "type", "1", "diabetes", "model", "." ]
-}, {
-  "sentence_tokens" : [ "ICA", "was", "applied", "on", "the", "mRNA", "expression", "data", "for", "identification", "of", "miRNA", "targets", "." ]
-}, {
-  "sentence_tokens" : [ "Our", "method", "was", "compared", "to", "negative", "correlation", "." ]
-}, {
-  "sentence_tokens" : [ "We", "validated", "our", "observations", "by", "use", "of", "pathway", "analysis", "and", "human", "pancreatic", "islet", "preparations", "." ]
-}, {
-  "sentence_tokens" : [ "Results", "." ]
-}, {
-  "sentence_tokens" : [ "beta-cell", "specific", "gene", "expression", "." ]
-}, {
-  "sentence_tokens" : [ "To", "confirm", "that", "the", "INSr", "alpha", "beta", "cells", "progressed", "from", "a", "hybrid", "alpha", "beta-like", "phenotype", "to", "a", "more", "mature", "beta-cell", "phenotype", "upon", "Pdx-1", "induction", "as", "seen", "in", "previous", "studies", "[", "28,37", "]", ",", "the", "expression", "levels", "of", "known", "insulin", "and", "Pdx-1", "dependent", "genes", "were", "examined", "using", "the", "array", "data", "(", "Additional", "file", "1", ")", "." ]
-}, {
-  "sentence_tokens" : [ "The", "observed", "expression", "profiles", "were", "in", "agreement", "with", "insulin", "and", "Pdx-1", "regulations", "known", "from", "other", "studies.The", "dox", "induced", "Pdx-1", "expression", "was", "examined", "using", "qPCR", "and", "western", "blotting", "with", "mouse", "specific", "primers", "and", "antibody", ",", "respectively", "." ]
-}, {
-  "sentence_tokens" : [ "We", "found", "that", "dox", "treatment", "for", "24", "hours", "resulted", "in", "increased", "expression", "of", "both", "Pdx-1", "mRNA", "(", "33", "fold", ",", "p", "<", "0.05", ")", "and", "protein", "(", "6", "fold", ",", "p", "<", "0.05", ")", "(", "Figure", "1", ")", "." ]
-}, {
-  "sentence_tokens" : [ "miRNAs", "differentially", "expressed", "in", "a", "model", "of", "type", "1", "diabetes", "." ]
-}, {
-  "sentence_tokens" : [ "miRNA", "expression", "profiling", "resulted", "in", "identification", "of", "eight", "miRNAs", "with", "differential", "expression", "in", "response", "to", "Pdx-1", "induction", "and/or", "IL-1", "beta", "exposure", "." ]
-}, {
-  "sentence_tokens" : [ "All", "eight", "miRNAs", "(", "miR-124/128/192/194/204/375/672/708", ")", "showed", "significant", "(", "p", "<", "0.05", ")", "changes", "in", "expression", "between", "conditions", "and/or", "time", "points", "(", "Figure", "2A", ")", "." ]
-}, {
-  "sentence_tokens" : [ "The", "eight", "miRNA", "expression", "profiles", "capture", "all", "three", "experimental", "conditions", ":", "dox", "induced", "Pdx-1", "expression", ",", "IL-1", "beta", "exposure", "and", "time", "." ]
-}, {
-  "sentence_tokens" : [ "For", "example", ",", "the", "miR-672", "expression", "decreased", "significantly", "(", "p", "<", "0.05", ")", "with", "time", "independent", "of", "Pdx-1", "induction", "and/or", "IL-1", "beta", "treatment", "." ]
-}, {
-  "sentence_tokens" : [ "The", "reversed", "pattern", "was", "seen", "for", "miR-204", ",", "though", "only", "for", "cells", "with", "induced", "Pdx-1", "expression", "." ]
-}, {
-  "sentence_tokens" : [ "A", "third", "example", "was", "the", "up-regulating", "effect", "of", "IL-1", "beta", "treatment", "on", "the", "expressions", "of", "miR-128/192/194", "." ]
-}, {
-  "sentence_tokens" : [ "The", "expression", "of", "two", "of", "the", "eight", "miRNAs", "were", "validated", "in", "a", "new", "set", "of", "samples", "using", "real-time", "quantitative", "PCR", "." ]
-}, {
-  "sentence_tokens" : [ "We", "found", "that", "the", "expression", "of", "miR-375", "was", "significantly", "decreased", "in", "response", "to", "Pdx-1", "induction", "(", "by", "~", "50", "%", ",", "p", "<", "0.05", ")", ",", "whereas", "the", "miR-194", "expression", "was", "significantly", "increased", "in", "response", "to", "IL-1", "beta", "treatment", "(", "by", "~", "50", "%", ",", "p", "<", "0.05", ")", ",", "see", "Figure", "3", "." ]
-}, {
-  "sentence_tokens" : [ "Furthermore", ",", "there", "was", "a", "tendency", "towards", "a", "decreased", "miR-194", "expression", "in", "response", "to", "Pdx-1", "induction", "(", "by", "~", "50", "%", ",", "p", "=", "0.05", ")", "." ]
-}, {
-  "sentence_tokens" : [ "These", "expression", "changes", "confirmed", "the", "results", "from", "the", "array", "." ]
-}, {
-  "sentence_tokens" : [ "miRNA", "target", "prediction", "using", "negative", "correlation", "or", "ICA", "." ]
-}, {
-  "sentence_tokens" : [ "To", "assess", "the", "effect", "of", "the", "Pdx-1-", "and", "IL-1", "beta-mediated", "miRNA", "activity", ",", "mRNAs", "were", "profiled", "in", "the", "same", "set", "of", "samples", "as", "used", "for", "the", "miRNA", "arrays.Initially", ",", "targets", "were", "predicted", "for", "each", "of", "the", "eight", "miRNAs", "using", "6mer", "seed", "matching", "." ]
-}, {
-  "sentence_tokens" : [ "The", "total", "number", "of", "6mer", "seed", "matches", "for", "each", "miRNA", "is", "listed", "in", "Table", "1", "." ]
-}, {
-  "sentence_tokens" : [ "For", "identification", "of", "miRNA", "targets", "using", "negative", "correlation", ",", "correlation", "coefficients", "were", "calculated", "between", "each", "pair", "of", "miRNA", "and", "mRNA", "profiles", "and", "the", "mRNAs", "were", "ordered", "according", "to", "these", "correlation", "coefficients", "." ]
-}, {
-  "sentence_tokens" : [ "Four", "of", "the", "eight", "miRNAs", "showed", "a", "significant", "enrichment", "of", "sequence", "predicted", "targets", "among", "mRNAs", "with", "correlation", "coefficients", "close", "to", "-1", "(", "q", "<", "0.1", ")", ",", "Table", "1", "." ]
-}, {
-  "sentence_tokens" : [ "Additional", "file", "2", "lists", "all", "calculated", "correlation", "coefficients.Applying", "ICA", "on", "the", "mRNA", "expression", "data", "resulted", "in", "identification", "of", "five", "highly", "significant", "ICs", "(", "Bonferroni", "corrected", "q", "<", "0.0001", ")", "with", "mixes", "shown", "in", "Figure", "2B", "." ]
-}, {
-  "sentence_tokens" : [ "See", "Additional", "file", "2", "for", "all", "loads", ",", "as", "well", "as", "the", "method", "section", "for", "further", "details", "on", "ICA.For", "each", "of", "the", "eight", "miRNAs", ",", "the", "loads", "in", "each", "IC", "were", "tested", "for", "enrichment", "of", "predicted", "targets", "with", "a", "6mer", "seed", "match", "." ]
-}, {
-  "sentence_tokens" : [ "Seven", "of", "the", "eight", "miRNAs", "(", "including", "all", "four", "identified", "by", "negative", "correlation", ")", "showed", "a", "significant", "enrichment", "of", "sequence", "predicted", "targets", "in", "the", "IC", "loads", "(", "q", "<", "0.07", ")", ",", "Table", "1", "." ]
-}, {
-  "sentence_tokens" : [ "Furthermore", ",", "we", "analyzed", "IC", "1", "for", "cooperativity", "between", "each", "pair", "of", "miRNAs", "by", "testing", "the", "loads", "in", "IC", "1", "for", "enrichment", "of", "predicted", "targets", "with", "seed", "matches", "for", "both", "miRNAs", "(", "Additional", "file", "3", ")", "." ]
-}, {
-  "sentence_tokens" : [ "We", "found", "that", "the", "miRNA", "pairs", "miR-375/672", ",", "miR-194/375", ",", "miR-192/375", "and", "miR-124/194", "had", "a", "significant", "regulatory", "effect", "(", "Bonferroni", "corrected", "q", "<", "0.05", ")", "when", "testing", "for", "enrichment", "of", "their", "common", "targets", "in", "IC", "1.The", "miRNAs", "had", "small", "fold", "changes", "compared", "to", "the", "fold", "changes", "of", "the", "mRNAs", "." ]
-}, {
-  "sentence_tokens" : [ "Therefore", "it", "was", "not", "possible", "to", "apply", "ICA", "on", "the", "miRNA", "data", "or", "on", "a", "combination", "of", "the", "mRNA", "and", "miRNA", "expression", "matrices", "." ]
-}, {
-  "sentence_tokens" : [ "However", ",", "by", "forming", "a", "linear", "superposition", "of", "the", "ICs", "we", "identified", "the", "major", "contributions", "from", "the", "ICs", "on", "the", "miRNA", "expressions", "." ]
-}, {
-  "sentence_tokens" : [ "Interestingly", ",", "all", "eight", "miRNAs", "could", "be", "represented", "(", "percent", "variance", "explained", ">", "97", "%", ")", "by", "a", "superposition", "of", "the", "five", "ICs", ",", "as", "shown", "in", "Figure", "2C", "(", "also", "see", "Additional", "file", "4", ")", "." ]
-}, {
-  "sentence_tokens" : [ "The", "majority", "of", "predicted", "miRNA", "targets", "were", "present", "in", "two", "or", "three", "of", "the", "ICs", "." ]
-}, {
-  "sentence_tokens" : [ "For", "example", ",", "miR-124", "primarily", "has", "targets", "in", "component", "1", "and", "4", ",", "which", "both", "are", "Pdx-1", "affected", "components", "." ]
-}, {
-  "sentence_tokens" : [ "Another", "example", "is", "miR-192", "and", "miR-194", "that", "both", "have", "targets", "in", "component", "1", ",", "2", "and", "4", ",", "which", "were", "affected", "by", "both", "Pdx-1", "and", "IL-1", "beta", "." ]
-}, {
-  "sentence_tokens" : [ "Independent", "components", "have", "clear", "biological", "profiles", "." ]
-}, {
-  "sentence_tokens" : [ "To", "assess", "the", "biological", "relevance", "of", "the", "identified", "ICs", ",", "we", "tested", "the", "ICs", "for", "enrichment", "of", "genes", "known", "to", "be", "regulated", "by", "Pdx-1", "or", "affected", "by", "IL-1", "beta", "(", "Additional", "file", "5", ")", "." ]
-}, {
-  "sentence_tokens" : [ "Mixes", "of", "IC", "1", "clearly", "correlated", "with", "the", "induction", "of", "Pdx-1", ",", "and", "genes", "regulated", "by", "Pdx-1", "were", "overrepresented", "in", "this", "IC", "(", "p", "<", "0.047", ",", "data", "not", "shown", ")", "." ]
-}, {
-  "sentence_tokens" : [ "Interestingly", ",", "one", "group", "had", "low", "negative", "loads", "and", "another", "had", "high", "positive", "loads", ",", "indicating", "positive", "and", "negative", "regulation", "by", "Pdx-1", ",", "respectively", "." ]
-}, {
-  "sentence_tokens" : [ "Similarly", ",", "ICs", "3", "and", "4", "correlated", "with", "the", "presence", "or", "absence", "of", "IL-1", "beta", "." ]
-}, {
-  "sentence_tokens" : [ "Specifically", ",", "IC", "3", "was", "enriched", "for", "known", "IL-1", "beta", "affected", "genes", "among", "genes", "with", "low", "negative", "load", "(", "p", "<", "0.0021", ",", "data", "not", "shown", ")", ",", "whereas", "IC", "4", "was", "enriched", "for", "IL-1", "beta", "affected", "genes", "with", "high", "positive", "load", "(", "p", "<", "0.024", ",", "data", "not", "shown", ")", "." ]
-}, {
-  "sentence_tokens" : [ "In", "a", "similar", "manner", ",", "we", "tested", "the", "ICs", "for", "enrichment", "of", "miRNA", "targets", "associated", "with", "metabolic", "or", "signalling", "pathways", ",", "as", "annotated", "by", "KEGG", "[", "38", "]", "or", "by", "the", "Molecular", "Signatures", "Database", "(", "MSigDB", ",", "http://www.broadinstitute.org", ")", "." ]
-}, {
-  "sentence_tokens" : [ "Specifically", ",", "we", "tested", "the", "genes", "with", "high", "positive", "or", "low", "negative", "loads", "in", "each", "IC", "for", "overrepresentation", "of", "annotated", "pathway", "genes.When", "using", "KEGG", "terms", "only", ",", "25", "pathways", "were", "significantly", "enriched", "for", "miRNA", "targets", "in", "the", "five", "ICs", "(", "q", "<", "0.05", ")", "." ]
-}, {
-  "sentence_tokens" : [ "The", "most", "significant", "and", "diabetes-relevant", "pathways", "are", "shown", "in", "Figure", "4", "(", "all", "are", "listed", "in", "Additional", "file", "6", ")", "." ]
-}, {
-  "sentence_tokens" : [ "Notable", "was", "the", "significance", "of", "genes", "with", "low", "loads", "in", "IC", "3", "belonging", "to", "the", "T1D", "pathway", "." ]
-}, {
-  "sentence_tokens" : [ "IC", "3", "had", "a", "clear", "correlation", "with", "stimulation", "of", "IL-1", "beta", "." ]
-}, {
-  "sentence_tokens" : [ "Furthermore", ",", "the", "pathways", "maturity", "onset", "diabetes", "of", "the", "young", "(", "MODY", ")", ",", "type", "2", "diabetes", "(", "T2D", ")", "mellitus", "and", "oxidative", "phosphorylation", "were", "significant", "." ]
-}, {
-  "sentence_tokens" : [ "The", "first", "two", "have", "an", "obvious", "relation", "to", "diabetes", ",", "and", "the", "oxidative", "phosphorylation", "pathway", "has", "been", "shown", "to", "be", "related", "to", "both", "type", "1", "and", "type", "2", "diabetes", "[", "39", "]", "." ]
-}, {
-  "sentence_tokens" : [ "When", "using", "MSigDB", "annotations", ",", "150", "pathways", "were", "significantly", "enriched", "for", "miRNA", "targets", "belonging", "to", "the", "five", "ICs", "(", "q", "<", "0.05", ")", "." ]
-}, {
-  "sentence_tokens" : [ "A", "selection", "of", "the", "pathways", "is", "shown", "in", "Figure", "4", "(", "all", "are", "listed", "in", "Additional", "file", "6", ")", "." ]
-}, {
-  "sentence_tokens" : [ "Since", "KEGG", "is", "part", "of", "MSigDB", "it", "comes", "as", "no", "surprise", "that", "T2D", ",", "MODY", "and", "oxidative", "phosphorylation", "again", "showed", "up", "as", "significant", "." ]
-}, {
-  "sentence_tokens" : [ "However", ",", "T1D", "did", "not", "show", "up", "as", "a", "significant", "pathway", ",", "probably", "due", "to", "correction", "of", "multiple", "testing", ",", "since", "MSigDB", "is", "a", "much", "larger", "repository", "." ]
-}, {
-  "sentence_tokens" : [ "Also", ",", "dysregulation", "of", "genes", "involved", "in", "the", "p53", "signaling", "pathway", "have", "been", "suggested", "to", "sensitize", "the", "cells", "to", "apoptotic", "stimuli", "[", "32,40", "]", "." ]
-}, {
-  "sentence_tokens" : [ "In", "accordance", "with", "this", ",", "we", "find", "genes", "annotated", "with", "the", "p53", "signalling", "pathway", "(", "using", "MSigDB", ")", "having", "significant", "low", "loads", "in", "IC", "3", "." ]
-}, {
-  "sentence_tokens" : [ "Identification", "of", "miRNA", "regulatory", "networks", "." ]
-}, {
-  "sentence_tokens" : [ "miRNAs", "and", "mRNAs", "can", "interact", "in", "regulatory", "networks", "." ]
-}, {
-  "sentence_tokens" : [ "miRNAs", "can", "regulate", "mRNAs", "directly", "or", "indirectly", "through", "secondary", "factors", "." ]
-}, {
-  "sentence_tokens" : [ "Furthermore", ",", "mRNA", "targets", "can", "act", "as", "transcription", "factors", "for", "miRNAs", ",", "thus", "forming", "a", "regulatory", "loop.Using", "a", "combined", "bioinformatics", "approach", "involving", "seed", "matching", ",", "promoter", "analysis", ",", "text", "mining", "and", "ICA", "we", "identified", "miRNA", "regulatory", "networks", "(", "Figure", "5", ")", "." ]
-}, {
-  "sentence_tokens" : [ "Using", "the", "miRNA", "database", "http://www.miRbase.org", ",", "we", "found", "STAT3", "binding", "sites", "in", "the", "promoter", "of", "the", "human", "miR-124", "gene", "." ]
-}, {
-  "sentence_tokens" : [ "This", "interaction", "was", "supported", "by", "ICA", "that", "showed", "that", "miR-124", "and", "Stat3", "both", "have", "negative", "contribution", "from", "IC", "1", "(", "Additional", "file", "2", "and", "Figure", "2C", ")", "correlating", "with", "an", "up-regulation", "in", "response", "to", "Pdx-1", "induction", "." ]
-}, {
-  "sentence_tokens" : [ "Interestingly", ",", "the", "3'UTR", "of", "Stat3", "has", "seed", "matches", "for", "miR-124", "(", "TargetScan", "and", "6mer", "seed", "matching", ")", ",", "indicating", "a", "potential", "feedback", "loop.Furthermore", ",", "we", "found", "positive", "and", "negative", "contribution", "from", "IC", "1", "for", "Pax6", "and", "miR-124/128", ",", "respectively", "(", "Additional", "file", "2", "and", "Figure", "2C", ")", ",", "meaning", "they", "have", "reciprocal", "expressions", "(", "down-regulation", "of", "Pax6", "and", "up-regulation", "of", "miR-124/128", ")", "in", "response", "to", "Pdx-1", "induction", "." ]
-}, {
-  "sentence_tokens" : [ "Validation", "in", "human", "pancreatic", "islets", "and", "beta-cell", "studies", "." ]
-}, {
-  "sentence_tokens" : [ "To", "verify", "the", "identified", "miRNA", "targets", "affected", "by", "Pdx-1", "and/or", "cytokine", "stimulation", ",", "we", "used", "mRNA", "expression", "profiling", "data", "from", "studies", "on", "human", "pancreatic", "islets", "and", "rat", "beta-cell", "lines", "and", "tested", "whether", "the", "data", "were", "enriched", "for", "ICA", "identified", "targets", "of", "the", "eight", "miRNAs.Using", "mRNA", "profiling", "data", "from", "untreated", "and", "cytokine", "treated", "human", "pancreatic", "islet", "preparations", "(", "unpublished", "data", ")", "we", "tested", "the", "cytokine", "induced", "fold", "changes", "for", "enrichment", "of", "predicted", "miRNA", "targets", "." ]
-}, {
-  "sentence_tokens" : [ "Interestingly", ",", "we", "found", "that", "predicted", "targets", "of", "miR-128/192/194/204/375", "were", "significantly", "up-regulated", "in", "response", "to", "cytokine", "treatment", "as", "compared", "to", "non", "targets", "(", "q", "=", "0.007", ",", "q", "=", "0.004", ",", "q", "=", "0.033", ",", "q", "=", "0.001", "and", "q", "=", "0.05", ",", "respectively", ")", "." ]
-}, {
-  "sentence_tokens" : [ "The", "results", "suggest", "that", "the", "five", "miRNAs", "may", "play", "a", "role", "in", "human", "pancreatic", "islets", "as", "well.Additionally", ",", "we", "performed", "similar", "analysis", "of", "publicly", "available", "data", "from", "two", "previous", "studies", "on", "beta-cells", "." ]
-}, {
-  "sentence_tokens" : [ "Cardozo", "et", "al.", "[", "41", "]", "performed", "mRNA", "profiling", "on", "beta-cells", "from", "10", "weeks", "old", "male", "Wistar", "rats", ",", "un", "stimulated", "or", "stimulated", "with", "cytokines", "(", "IL-1", "beta", "and/or", "IFN", "gamma", ")", "." ]
-}, {
-  "sentence_tokens" : [ "Using", "their", "mRNA", "data", ",", "we", "found", "that", "targets", "of", "miR-192", "were", "significantly", "down-regulated", "in", "response", "to", "IL-1", "beta", "stimulation", "when", "comparing", "to", "non", "targets", "(", "q", "=", "0.02", ")", "." ]
-}, {
-  "sentence_tokens" : [ "Kutlu", "et", "al.", "[", "42", "]", "performed", "mRNA", "profiling", "on", "insulin", "producing", "INS-1E", "cells", ",", "untreated", "or", "exposed", "to", "a", "combination", "of", "IL-1", "beta", "and", "IFN", "gamma", "." ]
-}, {
-  "sentence_tokens" : [ "In", "their", "data", "set", ",", "we", "found", "that", "the", "expressions", "of", "miR-128", "targets", "were", "significant", "increased", "in", "response", "to", "cytokine", "exposure", "when", "comparing", "to", "non", "targets", "(", "q", "=", "0.002", ")", "." ]
-}, {
-  "sentence_tokens" : [ "Discussion", "." ]
-}, {
-  "sentence_tokens" : [ "The", "motivation", "for", "applying", "a", "more", "advanced", "method", "like", "ICA", "for", "miRNA", "target", "prediction", "than", "negative", "correlation", "was", "that", "surprisingly", "few", "mRNAs", "have", "clear", "negative", "correlations", "with", "their", "targeting", "miRNAs", "." ]
-}, {
-  "sentence_tokens" : [ "This", "is", "probably", "due", "to", "the", "mRNA", "profiles", "being", "influenced", "by", "a", "number", "of", "factors", "e.g", "." ]
-}, {
-  "sentence_tokens" : [ "miRNA", "regulation", ",", "transcription", "factor", "binding", "and", "site", "accessibility", "." ]
-}, {
-  "sentence_tokens" : [ "Here", ",", "ICA", "was", "used", "as", "an", "attempt", "to", "filter", "the", "factors", "influencing", "mRNA", "expression", "." ]
-}, {
-  "sentence_tokens" : [ "Decomposition", "of", "microarray", "data", "using", "ICA", "has", "been", "shown", "to", "outperform", "other", "linear", "data", "representations", ",", "such", "as", "PCA", "[", "16-19", "]", "." ]
-}, {
-  "sentence_tokens" : [ "Several", "target", "prediction", "methods", "have", "incorporated", "miRNA", "and", "mRNA", "profiling", "data", "." ]
-}, {
-  "sentence_tokens" : [ "However", ",", "none", "of", "them", "uses", "ICA.The", "miRNA", "array", "profiling", "identified", "eight", "miRNAs", "with", "differential", "expression", "in", "a", "type", "1", "diabetes", "model", "." ]
-}, {
-  "sentence_tokens" : [ "Performing", "ICA", "on", "the", "mRNA", "expressions", "from", "the", "same", "samples", "resulted", "in", "five", "ICs", "that", "correlated", "with", "the", "experimental", "conditions", "studied", "." ]
-}, {
-  "sentence_tokens" : [ "Comparing", "the", "two", "target", "prediction", "methods", "indicated", "that", "ICA", "was", "better", "at", "capturing", "miRNA", "activity", "than", "negative", "correlation", "." ]
-}, {
-  "sentence_tokens" : [ "Seven", "miRNAs", "showed", "a", "significant", "enrichment", "of", "sequence", "predicted", "targets", "when", "using", "ICA", ",", "as", "compared", "to", "only", "four", "by", "use", "of", "negative", "correlation", "." ]
-}, {
-  "sentence_tokens" : [ "Interestingly", ",", "the", "ICs", "were", "enriched", "for", "miRNA", "targets", "with", "functional", "roles", "in", "diabetes-relevant", "pathways", "e.g", "." ]
-}, {
-  "sentence_tokens" : [ "the", "pathways", "T1D", ",", "T2D", ",", "MODY", ",", "oxidative", "phosphorylation", ",", "insulin", ",", "cytokine-cytokine", "receptors", "and", "type", "1", "interferon", "." ]
-}, {
-  "sentence_tokens" : [ "This", "supports", "that", "the", "eight", "miRNAs", "are", "implicated", "in", "disease", "mechanisms", "in", "diabetes", "." ]
-}, {
-  "sentence_tokens" : [ "Additionally", ",", "targets", "of", "five", "of", "the", "eight", "miRNAs", "were", "significantly", "regulated", "by", "cytokines", "in", "models", "of", "beta-cell", "destruction", "e.g", "." ]
-}, {
-  "sentence_tokens" : [ "in", "human", "islets.miRNAs", "fine", "tune", "the", "expression", "of", "genes", "in", "a", "combinatorial", "manner", ",", "meaning", "that", "several", "miRNAs", "can", "target", "the", "same", "mRNA", "transcript", "[", "43", "]", "." ]
-}, {
-  "sentence_tokens" : [ "Furthermore", ",", "a", "cluster", "of", "co-expressed", "miRNAs", "can", "regulate", "functionally", "related", "genes", "[", "44", "]", "." ]
-}, {
-  "sentence_tokens" : [ "In", "this", "study", ",", "we", "observe", "small", "expression", "changes", "in", "the", "miRNAs", "." ]
-}, {
-  "sentence_tokens" : [ "However", ",", "even", "minute", "changes", "in", "miRNA", "expressions", "might", "have", "impact", "on", "mRNA", "expression", ",", "and", "miRNAs", "acting", "in", "a", "cooperative", "manner", "can", "most", "likely", "induce", "biologically", "relevant", "expression", "changes", "in", "their", "targets", "." ]
-}, {
-  "sentence_tokens" : [ "ICA", "can", "uncover", "these", "more", "complex", "interactions", "." ]
-}, {
-  "sentence_tokens" : [ "Interestingly", ",", "it", "was", "recently", "suggested", "that", "cooperativity", "could", "be", "incorporated", "for", "prediction", "of", "target", "interactions", "between", "different", "miRNAs", "[", "1", "]", "." ]
-}, {
-  "sentence_tokens" : [ "For", "the", "eight", "miRNAs", "we", "identified", ",", "there", "is", "a", "significant", "overlap", "in", "the", "mRNAs", "they", "target", "." ]
-}, {
-  "sentence_tokens" : [ "We", "have", "incorporated", "cooperativity", "between", "miRNAs", "pairwise", "and", "identified", "four", "miRNA", "pairs", "(", "miR-375/672", ",", "miR-194/375", ",", "miR-192/375", ",", "miR-124/194", ")", "that", "had", "a", "significant", "co-regulatory", "effect", "on", "their", "common", "targets", "in", "IC", "1.Of", "the", "eight", "significant", "miRNAs", ",", "miR-124", "and", "miR-375", "have", "previously", "been", "identified", "in", "beta-cells", "[", "33,35,45,46", "]", "." ]
-}, {
-  "sentence_tokens" : [ "Further", ",", "the", "expression", "of", "miR-204", "has", "been", "shown", "to", "be", "induced", "in", "insulinomas", ",", "where", "its", "expression", "correlated", "with", "insulin", "expression", "[", "47", "]", "." ]
-}, {
-  "sentence_tokens" : [ "That", "miR-375", "was", "significantly", "regulated", "strengthens", "our", "model", "since", "a", "previous", "study", "observed", "interaction", "between", "Pdx-1", "(", "and", "NeuroD1", ")", "and", "the", "miR-375", "locus", "[", "32", "]", "." ]
-}, {
-  "sentence_tokens" : [ "However", ",", "no", "Pdx-1", "consensus", "binding", "sites", "were", "identified", ",", "but", "binding", "elements", "for", "other", "transcription", "factors", "have", "been", "identified", "in", "the", "miR-375", "locus", "[", "48", "]", "." ]
-}, {
-  "sentence_tokens" : [ "Additionally", ",", "the", "decreased", "miR-375", "expression", "is", "in", "agreement", "with", "miR-375", "having", "a", "higher", "expression", "level", "in", "non-beta-cells", "than", "in", "beta-cells", "[", "35", "]", "." ]
-}, {
-  "sentence_tokens" : [ "This", "is", "also", "supported", "by", "our", "findings", "in", "alpha-cells", "versus", "beta-cells", "(", "Additional", "file", "7", ")", "." ]
-}, {
-  "sentence_tokens" : [ "Interestingly", ",", "both", "miR-375", "and", "Pax6", ",", "a", "key", "factor", "in", "alpha-cell", "development", ",", "had", "negative", "loads", "in", "IC", "1", ",", "i.e.", "both", "were", "down-regulated", "in", "response", "to", "Pdx-1", "." ]
-}, {
-  "sentence_tokens" : [ "The", "decreased", "miR-375", "expression", "is", "also", "in", "compliance", "with", "the", "function", "of", "miR-375", "as", "a", "negative", "regulator", "of", "insulin", "exocytosis", "[", "45", "]", ",", "since", "it", "correlates", "with", "the", "need", "for", "an", "increased", "insulin", "secretion", "in", "the", "mature", "beta-cell", "phenotype", "." ]
-}, {
-  "sentence_tokens" : [ "miR-194", "is", "highly", "expressed", "in", "liver", "and", "in", "intestinal", "epithelial", "cells", ",", "where", "it", "is", "under", "regulation", "by", "Hnf1", "alpha", "[", "49,50", "]", "." ]
-}, {
-  "sentence_tokens" : [ "Interestingly", ",", "Hnf1", "alpha", "is", "required", "for", "proper", "beta-cell", "function", "and", "mutations", "in", "this", "gene", "cause", "MODY", "[", "23", "]", "." ]
-}, {
-  "sentence_tokens" : [ "miR-192", "is", "also", "expressed", "in", "the", "liver", "and", "is", "in", "cluster", "with", "miR-194", ",", "suggesting", "co-regulation", "[", "49,50", "]", "." ]
-}, {
-  "sentence_tokens" : [ "So", "far", ",", "miR-672", "and", "miR-708", "have", "not", "been", "examined", "in", "beta-cells", "." ]
-}, {
-  "sentence_tokens" : [ "The", "likely", "involvement", "of", "miR-128/192/194/204/708", "in", "beta-cell", "regulatory", "networks", "(", "Figure", "5", ")", "and", "the", "high", "expression", "in", "beta-cells", "compared", "to", "alpha-cells", "for", "miR-672/204", "(", "Additional", "file", "7", ")", "make", "them", "interesting", "candidates", "for", "further", "studies.We", "have", "used", "ICA", "for", "bioinformatics", "investigation", "of", "the", "functional", "roles", "of", "the", "miRNAs", "and", "their", "targets", "." ]
-}, {
-  "sentence_tokens" : [ "ICA", "in", "combination", "with", "pathway", "analysis", "indicates", "that", "the", "eight", "miRNAs", ",", "through", "their", "mRNA", "targets", ",", "are", "implicated", "in", "several", "diabetes", "relevant", "pathways.The", "transcriptional", "changes", "mediated", "by", "miRNAs", "on", "their", "targets", "may", "not", "be", "entirely", "explained", "by", "direct", "repression", "but", "may", "also", "reflect", "indirect", "mechanisms", "such", "as", "activation", "by", "feedback", "and", "feed-forward", "transcriptional", "loops", "within", "regulatory", "networks", "[", "52,53", "]", "." ]
-}, {
-  "sentence_tokens" : [ "miRNAs", "can", "be", "important", "players", "in", "these", "networks", "." ]
-}, {
-  "sentence_tokens" : [ "By", "use", "of", "a", "combined", "bioinformatics", "approach", "we", "identified", "miRNA", "regulatory", "networks", "." ]
-}, {
-  "sentence_tokens" : [ "The", "results", "suggest", "connections", "between", "seven", "of", "the", "eight", "miRNAs", "through", "interactions", "with", "key", "pancreatic", "transcription", "factors", ",", "cytokine", "signalling", "molecules", "and", "insulin", "(", "Figure", "5", ")", "." ]
-}, {
-  "sentence_tokens" : [ "Conclusions", "." ]
-}, {
-  "sentence_tokens" : [ "Using", "ICA", ",", "we", "have", "developed", "a", "novel", "miRNA", "target", "prediction", "method", "that", "incorporates", "seed", "matching", "and", "expression", "profiling", "." ]
-}, {
-  "sentence_tokens" : [ "We", "believe", "that", "the", "method", "has", "advantages", "compared", "to", "simple", "negative", "correlation", "." ]
-}, {
-  "sentence_tokens" : [ "Additionally", ",", "ICA", "in", "combination", "with", "bioinformatics", "approaches", "such", "as", "pathway", "analysis", "constitutes", "a", "means", "of", "prioritizing", "between", "the", "predicted", "miRNA", "targets", "for", "further", "investigations", "." ]
-}, {
-  "sentence_tokens" : [ "To", "the", "best", "of", "our", "knowledge", "this", "is", "the", "first", "study", "that", "uses", "ICA", "for", "miRNA", "target", "prediction", "." ]
-}, {
-  "sentence_tokens" : [ "Interestingly", ",", "applying", "the", "method", "on", "a", "model", "of", "type", "1", "diabetes", "resulted", "in", "identification", "of", "eight", "miRNAs", "that", "appear", "to", "directly", "or", "indirectly", "affect", "pathways", "of", "relevance", "to", "disease", "mechanisms", "in", "diabetes", "." ]
-}, {
-  "sentence_tokens" : [ "Methods", "." ]
-}, {
-  "sentence_tokens" : [ "Cell", "cultures", "." ]
-}, {
-  "sentence_tokens" : [ "INSr", "alpha", "beta", ",", "beta", "TC-3", "and", "alpha", "TC-1", "cells", "were", "cultured", "in", "complete", "RPMI-1640", "medium", "(", "RPMI-1640", "with", "Glutamax", "(", "Gibco", "BRL", ",", "Paisley", ",", "Scotland", ",", "UK", ")", ",", "100", "U/ml", "penicillin", "and", "100", "mu", "g/ml", "streptomycin", ")", "supplemented", "with", "10", "%", "FBS", "." ]
-}, {
-  "sentence_tokens" : [ "50", "mu", "M", "beta-mercaptoethanol", "was", "additionally", "added", "to", "the", "INSr", "alpha", "beta", "cells", "." ]
-}, {
-  "sentence_tokens" : [ "For", "the", "INSr", "alpha", "beta", "cells", ",", "TeT", "system", "approved", "FBS", "(", "CLONTECH", ",", "Palo", "Alto", ",", "CA", ")", "was", "used", ",", "and", "the", "medium", "was", "supplemented", "with", "150", "mu", "g/ml", "geneticin", "and", "100", "mu", "g/ml", "hygromycin", "to", "maintain", "a", "pure", "culture", "of", "cells", "expressing", "the", "Pdx-1", "plasmid", "construct", "." ]
-}, {
-  "sentence_tokens" : [ "The", "INSr", "alpha", "beta", "cells", "were", "treated", "with", "doxycycline", "(", "500", "ng/ml", ";", "Sigma", "Aldrich", ",", "Saint", "Louis", ",", "MO", ",", "USA", ")", "for", "24", "h", "to", "allow", "for", "Pdx-1", "expression", "after", "which", "the", "cells", "were", "cultured", "in", "the", "presence", "or", "absence", "of", "human", "recombinant", "IL-1", "beta", "(", "40", "pg/ml", ";", "BD", "Pharmingen", ",", "San", "Diego", ",", "CA", ")", "for", "additionally", "2", "h", "or", "24", "h.", "Human", "pancreatic", "islet", "preparations", "." ]
-}, {
-  "sentence_tokens" : [ "Human", "islet", "preparations", "(", "n", "=", "4", ")", "provided", "through", "the", "Juvenile", "Diabetes", "Research", "Foundation", "(", "JDRF", ")", "Islet", "Distribution", "Program", "(", "JDRF", "award", "6-2005-1178", ")", "by", "Islet", "Cell", "Resource", "Centres", "in", "Milan", "(", "Italy", ")", "and", "Lille", "(", "France", ")", "were", "treated", "for", "48", "hours", "with", "IL-1", "beta", "(", "1", "ng/ul", ")", "or", "a", "combination", "of", "IL-1", "beta", "(", "1", "ng/ul", ")", ",", "IFN", "gamma", "(", "20", "ng/ul", ")", "and", "TNF", "alpha", "(", "8", "ng/ul", ")", "." ]
-}, {
-  "sentence_tokens" : [ "RNA", "extraction", "and", "RT-qPCR", "." ]
-}, {
-  "sentence_tokens" : [ "Total", "RNA", "was", "extracted", "using", "TRIzol", "reagent", "(", "Invitrogen", ",", "Carlsbad", ",", "CA", ")", "according", "to", "the", "manufacturer", "'s", "instructions", "." ]
-}, {
-  "sentence_tokens" : [ "cDNA", "was", "prepared", "using", "miScript", "reverse", "transcription", "kit", "(", "Qiagen", ",", "Hilden", ",", "Germany", ")", ",", "TaqMan", "microRNA", "reverse", "transcription", "reagents", "(", "Applied", "Biosystems", ",", "Foster", "City", ",", "CA", ")", "or", "TaqMan", "reverse", "transcription", "reagents", "(", "Applied", "Biosystems", ")", ",", "as", "described", "by", "the", "manufacturer.In", "INSr", "alpha", "beta", "cells", "(", "n", "=", "5", ")", "the", "miRNA", "expression", "levels", "were", "analysed", "by", "use", "of", "miScript", "Primer", "Assays", "(", "Qiagen", ")", ",", "whereas", "in", "beta", "TC-3", "(", "n", "=", "5", ")", "and", "alpha", "TC-1", "(", "n", "=", "5", ")", "cells", "miRNA", "expressions", "were", "analysed", "using", "TaqMan", "microRNA", "assays", "(", "Applied", "Biosystems", ")", "." ]
-}, {
-  "sentence_tokens" : [ "Gene", "expression", "levels", "were", "analysed", "using", "TaqMan", "gene", "expression", "assays", "(", "Applied", "Biosystems", ")", "." ]
-}, {
-  "sentence_tokens" : [ "All", "samples", "were", "analyzed", "in", "duplicates", "on", "a", "ABI", "7900HT", "system", "(", "Applied", "Biosystems", ")", "." ]
-}, {
-  "sentence_tokens" : [ "Data", "were", "evaluated", "using", "the", "2", "method", "[", "54", "]", ",", "normalizing", "miRNA", "and", "gene", "expressions", "to", "an", "endogenous", "control", ",", "and", "subsequently", "comparing", "each", "miRNA", "and", "gene", "in", "treated", "vs.", "un", "stimulated", "cells", "." ]
-}, {
-  "sentence_tokens" : [ "miRNAs", "were", "normalized", "to", "let-7c", ",", "whereas", "genes", "were", "normalized", "to", "Ppia", "." ]
-}, {
-  "sentence_tokens" : [ "The", "coefficient", "of", "variation", "(", "CV", ")", "for", "miScript", "assays", "ranged", "from", "0.018", "to", "0.077", "." ]
-}, {
-  "sentence_tokens" : [ "Western", "blotting", "." ]
-}, {
-  "sentence_tokens" : [ "The", "INSr", "alpha", "beta", "cells", "(", "n", "=", "4", ")", "were", "washed", "with", "PBS", "and", "lysed", "." ]
-}, {
-  "sentence_tokens" : [ "The", "protein", "concentrations", "of", "whole", "cell", "protein", "lysates", "were", "measured", "with", "Bio-Rad", "Protein", "Assay", "." ]
-}, {
-  "sentence_tokens" : [ "Samples", "were", "boiled", "before", "loading", "on", "a", "NuPage", "gel", "(", "10", "%", "BisTris", "gels", ",", "Invitrogen", ")", "placed", "in", "an", "X-Cell", "Surelock", "system", "(", "Invitrogen", ")", "." ]
-}, {
-  "sentence_tokens" : [ "Proteins", "were", "separated", "and", "then", "transferred", "to", "a", "pre-soaked", "nitrocellulose", "membrane", "(", "Invitrogen", ")", ",", "which", "was", "blocked", "in", "milk", "for", "one", "hour", "and", "then", "washed", "." ]
-}, {
-  "sentence_tokens" : [ "The", "membrane", "was", "incubated", "in", "a", "5", "ml", "milk", "solution", "containing", "primary", "antibody", ",", "either", "monoclonal", "Pdx-1", "mouse", "antibody", "[", "37", "]", "overnight", "or", "monoclonal", "mouse", "beta-actin", "antibody", "(", "Abcam", ",", "Cambridge", ",", "MA", ";", "#ab", "6276", ")", "for", "one", "hour", "." ]
-}, {
-  "sentence_tokens" : [ "Horseradish", "peroxidase", "conjugated", "anti-mouse", "antibodies", "(", "Cell", "signalling", ",", "#", "7076", ")", "were", "used", "as", "secondary", "antibodies", "." ]
-}, {
-  "sentence_tokens" : [ "The", "membrane", "was", "incubated", "in", "LumiGlo", "(", "Cell", "Signialing", "Technology", ",", "Danvers", ",", "MA", ")", "solution", "and", "visualized", "using", "the", "LAS2000", "system", "(", "Fujifilm", "Europa", "GmbH", ",", "Dusseldorf", ",", "Germany", ")", "." ]
-}, {
-  "sentence_tokens" : [ "Profiling", "and", "preprocessing", "of", "array", "data", "." ]
-}, {
-  "sentence_tokens" : [ "The", "mRNA", "expressions", "from", "INSr", "alpha", "beta", "cells", "(", "n", "=", "4", ")", "were", "profiled", "on", "Affymetrix", "Rat", "Genome", "230", "2.0", "arrays", "." ]
-}, {
-  "sentence_tokens" : [ "For", "each", "probeset", "in", "each", "sample", ",", "log2-ratios", "were", "calculated", "between", "the", "expression", "of", "that", "probeset", "and", "the", "average", "of", "the", "control", "samples.The", "miRNA", "expressions", "from", "INSr", "alpha", "beta", "cells", "(", "n", "=", "3", ")", "were", "profiled", "on", "Exiqon", "miRCURY", "LNA", "microRNA", "Array", "v.11.0", "arrays", "and", "median", "normalized", "." ]
-}, {
-  "sentence_tokens" : [ "The", "control", "samples", "(", "n", "=", "3", ")", "were", "pooled", "and", "used", "as", "a", "common", "reference", "on", "all", "arrays", ",", "and", "log2-ratios", "were", "calculated", "for", "each", "sample", "against", "this", "reference.The", "mRNA", "expressions", "from", "human", "islet", "preparations", "(", "n", "=", "4", ")", "were", "analyzed", "on", "Affymetrix", "Human", "Genome", "U133", "Plus", "2.0", "arrays", "." ]
-}, {
-  "sentence_tokens" : [ "The", "beta-cell", "data", "from", "Refs", "." ]
-}, {
-  "sentence_tokens" : [ "[", "41", "]", "and", "[", "42", "]", "were", "downloaded", "from", "T1DBase", "http://www.t1dbase.org", "." ]
-}, {
-  "sentence_tokens" : [ "These", "mRNA", "expressions", "had", "been", "profiled", "using", "the", "Affymetrix", "Rat", "Genome", "U34A", "array.All", "CEL-files", "were", "preprocessed", "using", "the", "RMA", "package", "[", "55", "]", "in", "Bioconductor", "[", "56", "]", "with", "remapped", "Ensembl", "build", "50", "gene", "probesets", "[", "57", "]", "." ]
-}, {
-  "sentence_tokens" : [ "For", "mRNA", "data", "from", "human", "islets", "and", "published", "beta-cell", "studies", ",", "foldchanges", "log2", "(", "cytokine", ",", "24", "h", ")/(", "untreated", ",", "24", "h", ")", "were", "calculated", "for", "the", "average", "of", "the", "replicate", "samples", "in", "each", "condition", "." ]
-}, {
-  "sentence_tokens" : [ "Sequence", "based", "miRNA", "target", "prediction", "." ]
-}, {
-  "sentence_tokens" : [ "For", "7764", "out", "of", "the", "9953", "Ensembl", "gene", "probesets", "analyzed", ",", "3'UTR", "sequences", "could", "be", "downloaded", "from", "Ensembl", "through", "Biomart", "[", "58", "]", "." ]
-}, {
-  "sentence_tokens" : [ "Mature", "sequences", "of", "significantly", "changed", "miRNAs", "were", "downloaded", "from", "miRbase", "[", "59", "]", "and", "the", "6mer", "seed", "matches", "extracted", "." ]
-}, {
-  "sentence_tokens" : [ "Ensembl", "gene", "probesets", "with", "a", "given", "miRNA", "6mer", "seed", "match", "in", "their", "3'UTR", "were", "identified", "as", "targets", "of", "that", "miRNA", "." ]
-}, {
-  "sentence_tokens" : [ "Independent", "component", "analysis", "." ]
-}, {
-  "sentence_tokens" : [ "Mathematically", ",", "T", "transcriptional", "programs", "are", "active", "in", "the", "cells", "under", "study", ",", "each", "of", "which", "is", "a", "(", "column", ")", "vector", "C", "-->", "t", ",", "t", "=", "1", ",", "...,", "T", ",", "representing", "G", "gene", "inductions", "or", "repressions", "." ]
-}, {
-  "sentence_tokens" : [ "We", "measure", "all", "G", "induced", "or", "repressed", "genes", "in", "S", "samples.Each", "of", "these", "programs", "can", "be", "identified", "by", "a", "simple", "linear", "decomposition", "of", "the", "G", "x", "S", "expression", "matrix", "E", ",", "E", "=", "CM", "or", "Egs", "=", "sum", "t", "=", "1TCgtMts", "or", "E", "-->", "s", "=", "sum", "t", "=", "1TCtMtswhere", "C", "is", "the", "G", "x", "T", "matrix", "containing", "the", "transcriptional", "programs", ",", "in", "coefficient", "vector", "notation", ",", "C", "=(", "C", "-->", "1", ",", "C", "-->", "2", ",", "..." ]
-}, {
-  "sentence_tokens" : [ ",", "C", "-->", "T", ")", ",", "likewise", "E", "=(", "E", "-->", "1", ",", "E", "-->", "2", ",", "..." ]
-}, {
-  "sentence_tokens" : [ ",", "E", "-->", "S", ")", "and", "M", "is", "the", "T", "x", "S", "matrix", "giving", "the", "linear", "mixing", "of", "each", "program", "in", "each", "sample", "." ]
-}, {
-  "sentence_tokens" : [ "Two-way", "clustering", "of", "correlated", "genes", "and", "samples", "into", "non", "overlapping", "sets", "was", "represented", "by", "component", "vectors", "C", "-->", "t", "with", "discrepant", "sets", "of", "non", "vanishing", "entriesCgt", "!=", "0", "<=>", "Cgj", "=~", "0", "for-all", "j", "!=", "t.ICA", "extracts", "n", "=", "min", "{", "G", ",", "S", "}", "independent", "components", "." ]
-}, {
-  "sentence_tokens" : [ "Since", "the", "number", "of", "samples", "was", "much", "lower", "than", "the", "number", "of", "genes", ",", "we", "assumed", "n", "=", "S." ]
-}, {
-  "sentence_tokens" : [ "The", "number", "of", "interesting", "transcriptional", "programs", "T", "may", "be", "equal", "to", ",", "or", "lower", "than", "S." ]
-}, {
-  "sentence_tokens" : [ "A", "common", "practice", "is", "to", "project", "E", "onto", "it", "'s", "first", "O", "principal", "component", "directions", ",", "and", "then", "extract", "O", "independent", "components", "in", "this", "subspace", "." ]
-}, {
-  "sentence_tokens" : [ "This", "approach", "has", "several", "important", "drawbacks", "." ]
-}, {
-  "sentence_tokens" : [ "First", ",", "the", "number", "of", "interesting", "transcriptional", "programs", "is", "not", "known", "beforehand", ",", "and", "one", "therefore", "needs", "to", "guess", "or", "resort", "to", "a", "recursive", "trial-and-error", "approach", "to", "choose", "an", "O", "that", "allows", "all", "T", "transcriptional", "programs", "to", "be", "extracted", "." ]
-}, {
-  "sentence_tokens" : [ "Second", ",", "it", "is", "not", "obvious", "that", "a", "projection", "onto", "O", "<", "S", "principal", "component", "directions", "preserves", "all", "T", "transcriptional", "programs", "." ]
-}, {
-  "sentence_tokens" : [ "It", "is", "possible", "to", "construct", "examples", "where", "two", "clusters", "in", "the", "data", "are", "only", "well", "separated", "in", "the", "subspace", "of", "the", "first", "and", "last", "principal", "components", "[", "60", "]", "." ]
-}, {
-  "sentence_tokens" : [ "Clustering", "in", "a", "subspace", "spanned", "by", "principal", "components", "generally", "degrades", "cluster", "quality", "[", "61", "]", "." ]
-}, {
-  "sentence_tokens" : [ "Finally", ",", "even", "when", "a", "projection", "onto", "T", "principal", "components", "allows", "all", "the", "T", "interesting", "transcriptional", "programs", "to", "be", "extracted", "by", "ICA", ",", "a", "way", "to", "explore", "and", "rank", "these", "independent", "components", "to", "clarify", "their", "significance", "is", "still", "needed", "." ]
-}, {
-  "sentence_tokens" : [ "In", "the", "present", "study", ",", "the", "independent", "components", "were", "ranked", "according", "to", "their", "accordance", "with", "the", "experimental", "conditions.The", "fastICA", "algorithm", "[", "62,63", "]", "in", "R", "http://www.R-project.org", "was", "used", "to", "estimate", "the", "component", "matrix", "and", "mixing", "matrix", ",", "by", "numeric", "maximization", "of", "the", "negentropy", "of", "the", "independent", "components", "." ]
-}, {
-  "sentence_tokens" : [ "The", "negentropy", "was", "approximated", "by", "J", "(", "y", ")", "=", "(", "<", "G", "(", "y", ")", ">", "-", "<", "G", "(", "v", ")", ">", ")", ",", "where", "y", "is", "the", "distribution", "of", "loads", ",", "v", "is", "a", "random", "variable", "distributed", "as", "א", "(", "0,1", ")", ",", "and", "the", "contrast", "function", "G", "(", "u", ")", "was", "here", "defined", "as", "G", "(", "u", ")", "=-exp", "(-u22", ")", "." ]
-}, {
-  "sentence_tokens" : [ "By", "convention", ",", "the", "loads", "in", "each", "component", "have", "mean", "0", "and", "variance", "1.Assuming", "that", "the", "individual", "contributions", "on", "mRNA", "expression", "are", "linearly", "separable", "and", "reasonable", "independent", "of", "each", "other", ",", "ICA", "can", "separate", "the", "various", "contributions", "making", "it", "possible", "to", "detect", "pathways", "regulated", "by", "the", "various", "miRNAs.ICs", "with", "mixes", ",", "i.e.", "rows", "in", "M", "showing", "significant", "changes", "between", "the", "experimental", "conditions", "and/or", "time", "points", ",", "are", "identified", "by", "calculating", "F-statistics", "and", "requiring", "Bonferroni", "corrected", "p-values", "less", "than", "0.0001", "." ]
-}, {
-  "sentence_tokens" : [ "Statistics", "." ]
-}, {
-  "sentence_tokens" : [ "Overall", "expression", "data", "were", "analysed", "using", "one-way", "analysis", "of", "variance", "(", "ANOVA", ";", "F-statistics", ")", "." ]
-}, {
-  "sentence_tokens" : [ "The", "eight", "significant", "miRNAs", "were", "selected", "based", "on", "an", "overall", "q-value", "<", "0.1", "(", "Additional", "file", "8)", "." ]
-}, {
-  "sentence_tokens" : [ "Comparison", "between", "groups", "was", "done", "using", "t-test", "." ]
-}, {
-  "sentence_tokens" : [ "Correction", "for", "multiple", "testing", "was", "performed", "either", "by", "applying", "a", "Bonferroni", "or", "a", "false", "discovery", "rate", "(", "fdr", ")", "correction", "to", "the", "p-values", "(", "q-value", ")", "." ]
-}, {
-  "sentence_tokens" : [ "A", "Bonferroni", "correction", "was", "chosen", "when", "few", "tests", "were", "performed", ",", "as", "was", "the", "case", "for", "the", "finding", "of", "significant", "ICs", "and", "miRNAs", "." ]
-}, {
-  "sentence_tokens" : [ "When", "a", "larger", "number", "of", "tests", "were", "performed", "a", "fdr", "correction", "was", "applied.The", "loads", "in", "each", "IC", "are", "considered", "non", "Gaussian", "distributed", "." ]
-}, {
-  "sentence_tokens" : [ "Loads", "and", "fold", "changes", "for", "genes", "that", "had", "seed", "match", "for", "the", "miRNAs", "or", "were", "assigned", "to", "a", "specific", "biological", "pathway", "were", "analysed", "using", "Wilcoxon", "rank", "sum", "test", "." ]
-}, {
-  "sentence_tokens" : [ "For", "analysis", "of", "negative", "correlation", ",", "Pearson", "correlation", "coefficients", "were", "calculated", "between", "each", "pair", "of", "miRNA", "and", "mRNA", "profiles", "." ]
-}, {
-  "sentence_tokens" : [ "The", "mRNAs", "were", "then", "ordered", "according", "to", "these", "correlation", "coefficients", "." ]
-}, {
-  "sentence_tokens" : [ "P-values", "<", "0.05", "were", "considered", "significant", "." ]
-}, {
-  "sentence_tokens" : [ "List", "of", "abbreviations", "." ]
-}, {
-  "sentence_tokens" : [ "3'UTR", ":", "untranslated", "region", "in", "the", "3", "'", "end", "of", "the", "mRNA", ";", "dox", ":", "doxycycline", ";", "FBS", ":", "fetal", "bovine", "serum", ";", "IC", ":", "independent", "component", ";", "ICA", ":", "independent", "component", "analysis", ";", "IFN", "gamma", ":", "interferon", "gamma", ";", "IL-1", "beta", ":", "interleukin", "1", "beta", ";", "miR", "and", "miRNA", ":", "microRNA", ";", "MODY", ":", "maturity", "onset", "diabetes", "of", "the", "young", ";", "mRNA", ":", "messenger", "RNA", ";", "PBS", ":", "phosphate", "buffered", "saline", ";", "PCA", ":", "principal", "component", "analysis", ";", "RT-qPCR", ":", "reverse", "transcription", "-", "quantitative", "polymerase", "chain", "reaction", ";", "T1D", ":", "type", "1", "diabetes", ";", "T2D", ":", "type", "2", "diabetes", ";", "TNF", "alpha", ":", "tumor", "necrosis", "factor", "alpha", "." ]
-}, {
-  "sentence_tokens" : [ "Authors", "'", "contributions", "." ]
-}, {
-  "sentence_tokens" : [ "FP", "and", "CHBB", "designed", "the", "study", "." ]
-}, {
-  "sentence_tokens" : [ "The", "experimental", "work", "was", "performed", "by", "CHBB", ",", "TF", "and", "TG", "." ]
-}, {
-  "sentence_tokens" : [ "The", "analyses", "and", "the", "manuscript", "draft", "were", "conducted", "by", "LP", ",", "CHBB", "and", "TF", "." ]
-}, {
-  "sentence_tokens" : [ "ICA", "and", "microarray", "data", "analysis", "were", "conducted", "by", "LP", "and", "PHH", "." ]
-}, {
-  "sentence_tokens" : [ "FP", "edited", "the", "paper", "and", "prepared", "it", "for", "final", "review", "." ]
-}, {
-  "sentence_tokens" : [ "All", "authors", "read", "and", "approved", "the", "final", "manuscript", "and", "have", "no", "conflicting", "interest", "in", "the", "study", "." ]
+  "sentence_tokens" : [ "Independent", "component", "and", "pathway", "based", "analysis", "of", "miRNA", "regulated", "gene", "expression", "in", "a", "model", "of", "type", "1", "diabetes", "." ],
+  "entity_one_indices" : [ 15, 16, 17, 18 ],
+  "entity_two_indices" : [ 9, 10, 11 ]
+}, {
+  "sentence_tokens" : [ "microRNAs", "(", "miRNAs", ")", "are", "a", "class", "of", "small", "non", "coding", "RNAs", "that", "function", "as", "posttranscriptional", "regulators", "of", "gene", "expression", "by", "mediating", "translational", "inhibition", "or", "mRNA", "degradation", "." ],
+  "entity_one_indices" : [ 25, 26, 27 ],
+  "entity_two_indices" : [ 18, 19, 20 ]
+}, {
+  "sentence_tokens" : [ "In", "the", "last", "couple", "of", "years", "independent", "component", "analysis", "(", "ICA", ")", "has", "been", "extensively", "applied", "on", "mRNA", "profiling", "data", "and", "recently", ",", "ICA", "was", "applied", "on", "miRNA", "profiling", "data", "as", "well", "[", "9", "]", "." ],
+  "entity_one_indices" : [ 23, 24 ],
+  "entity_two_indices" : [ 10, 11 ]
+}, {
+  "sentence_tokens" : [ "Type", "1", "diabetes", "(", "T1D", ")", "is", "an", "immune", "mediated", "disease", "characterized", "by", "insulin", "deficiency", "due", "to", "a", "specific", "destruction", "of", "the", "pancreatic", "beta-cells", "." ],
+  "entity_one_indices" : [ 13, 14 ],
+  "entity_two_indices" : [ 0, 1, 2, 3 ]
+}, {
+  "sentence_tokens" : [ "In", "the", "mature", "endocrine", "cells", ",", "Pdx-1", "expression", "is", "restricted", "to", "the", "beta-cell", ",", "where", "it", "is", "important", "for", "insulin", "expression", "[", "27", "]", "." ],
+  "entity_one_indices" : [ 19, 20 ],
+  "entity_two_indices" : [ 6, 7 ]
+}, {
+  "sentence_tokens" : [ "Genes", "regulated", "by", "Pdx-1", "are", "therefore", "believed", "to", "be", "involved", "in", "the", "acquired", "IL-1", "beta", "sensitivity", ",", "and", "identification", "of", "these", "genes", "would", "provide", "knowledge", "about", "the", "mechanisms", "underlying", "this", "beta-cell", "specific", "trait", "." ],
+  "entity_one_indices" : [ 13, 14, 15 ],
+  "entity_two_indices" : [ 3, 4 ]
+}, {
+  "sentence_tokens" : [ "Interestingly", ",", "a", "study", "investigating", "genomic", "targets", "of", "transcription", "factors", "in", "a", "beta-cell", "line", "suggested", "that", "several", "miRNAs", "are", "under", "Pdx-1", "regulation", "[", "32", "]", "." ],
+  "entity_one_indices" : [ 20, 21 ],
+  "entity_two_indices" : [ 8, 9 ]
+}, {
+  "sentence_tokens" : [ "miRNA", "expression", "profiling", "resulted", "in", "identification", "of", "eight", "miRNAs", "with", "differential", "expression", "in", "response", "to", "Pdx-1", "induction", "and/or", "IL-1", "beta", "exposure", "." ],
+  "entity_one_indices" : [ 18, 19, 20 ],
+  "entity_two_indices" : [ 15, 16 ]
+}, {
+  "sentence_tokens" : [ "The", "eight", "miRNA", "expression", "profiles", "capture", "all", "three", "experimental", "conditions", ":", "dox", "induced", "Pdx-1", "expression", ",", "IL-1", "beta", "exposure", "and", "time", "." ],
+  "entity_one_indices" : [ 16, 17, 18 ],
+  "entity_two_indices" : [ 13, 14 ]
+}, {
+  "sentence_tokens" : [ "The", "reversed", "pattern", "was", "seen", "for", "miR-204", ",", "though", "only", "for", "cells", "with", "induced", "Pdx-1", "expression", "." ],
+  "entity_one_indices" : [ 14, 15 ],
+  "entity_two_indices" : [ 6, 7 ]
+}, {
+  "sentence_tokens" : [ "A", "third", "example", "was", "the", "up-regulating", "effect", "of", "IL-1", "beta", "treatment", "on", "the", "expressions", "of", "miR-128/192/194", "." ],
+  "entity_one_indices" : [ 15, 16 ],
+  "entity_two_indices" : [ 8, 9, 10 ]
+}, {
+  "sentence_tokens" : [ "Furthermore", ",", "there", "was", "a", "tendency", "towards", "a", "decreased", "miR-194", "expression", "in", "response", "to", "Pdx-1", "induction", "(", "by", "~", "50", "%", ",", "p", "=", "0.05", ")", "." ],
+  "entity_one_indices" : [ 14, 15 ],
+  "entity_two_indices" : [ 9, 10 ]
+}, {
+  "sentence_tokens" : [ "To", "assess", "the", "effect", "of", "the", "Pdx-1-", "and", "IL-1", "beta-mediated", "miRNA", "activity", ",", "mRNAs", "were", "profiled", "in", "the", "same", "set", "of", "samples", "as", "used", "for", "the", "miRNA", "arrays.Initially", ",", "targets", "were", "predicted", "for", "each", "of", "the", "eight", "miRNAs", "using", "6mer", "seed", "matching", "." ],
+  "entity_one_indices" : [ 8, 9 ],
+  "entity_two_indices" : [ 6, 7 ]
+}, {
+  "sentence_tokens" : [ "Furthermore", ",", "we", "analyzed", "IC", "1", "for", "cooperativity", "between", "each", "pair", "of", "miRNAs", "by", "testing", "the", "loads", "in", "IC", "1", "for", "enrichment", "of", "predicted", "targets", "with", "seed", "matches", "for", "both", "miRNAs", "(", "Additional", "file", "3", ")", "." ],
+  "entity_one_indices" : [ 18, 19, 20 ],
+  "entity_two_indices" : [ 4, 5, 6 ]
+}, {
+  "sentence_tokens" : [ "Another", "example", "is", "miR-192", "and", "miR-194", "that", "both", "have", "targets", "in", "component", "1", ",", "2", "and", "4", ",", "which", "were", "affected", "by", "both", "Pdx-1", "and", "IL-1", "beta", "." ],
+  "entity_one_indices" : [ 25, 26, 27 ],
+  "entity_two_indices" : [ 23, 24 ]
+}, {
+  "sentence_tokens" : [ "To", "assess", "the", "biological", "relevance", "of", "the", "identified", "ICs", ",", "we", "tested", "the", "ICs", "for", "enrichment", "of", "genes", "known", "to", "be", "regulated", "by", "Pdx-1", "or", "affected", "by", "IL-1", "beta", "(", "Additional", "file", "5", ")", "." ],
+  "entity_one_indices" : [ 27, 28, 29 ],
+  "entity_two_indices" : [ 23, 24 ]
+}, {
+  "sentence_tokens" : [ "IC", "3", "had", "a", "clear", "correlation", "with", "stimulation", "of", "IL-1", "beta", "." ],
+  "entity_one_indices" : [ 9, 10, 11 ],
+  "entity_two_indices" : [ 0, 1, 2 ]
+}, {
+  "sentence_tokens" : [ "Furthermore", ",", "mRNA", "targets", "can", "act", "as", "transcription", "factors", "for", "miRNAs", ",", "thus", "forming", "a", "regulatory", "loop.Using", "a", "combined", "bioinformatics", "approach", "involving", "seed", "matching", ",", "promoter", "analysis", ",", "text", "mining", "and", "ICA", "we", "identified", "miRNA", "regulatory", "networks", "(", "Figure", "5", ")", "." ],
+  "entity_one_indices" : [ 31, 32 ],
+  "entity_two_indices" : [ 7, 8 ]
+}, {
+  "sentence_tokens" : [ "Using", "the", "miRNA", "database", "http://www.miRbase.org", ",", "we", "found", "STAT3", "binding", "sites", "in", "the", "promoter", "of", "the", "human", "miR-124", "gene", "." ],
+  "entity_one_indices" : [ 17, 18, 19 ],
+  "entity_two_indices" : [ 8, 9 ]
+}, {
+  "sentence_tokens" : [ "To", "verify", "the", "identified", "miRNA", "targets", "affected", "by", "Pdx-1", "and/or", "cytokine", "stimulation", ",", "we", "used", "mRNA", "expression", "profiling", "data", "from", "studies", "on", "human", "pancreatic", "islets", "and", "rat", "beta-cell", "lines", "and", "tested", "whether", "the", "data", "were", "enriched", "for", "ICA", "identified", "targets", "of", "the", "eight", "miRNAs.Using", "mRNA", "profiling", "data", "from", "untreated", "and", "cytokine", "treated", "human", "pancreatic", "islet", "preparations", "(", "unpublished", "data", ")", "we", "tested", "the", "cytokine", "induced", "fold", "changes", "for", "enrichment", "of", "predicted", "miRNA", "targets", "." ],
+  "entity_one_indices" : [ 37, 38 ],
+  "entity_two_indices" : [ 8, 9 ]
+}, {
+  "sentence_tokens" : [ "Interestingly", ",", "we", "found", "that", "predicted", "targets", "of", "miR-128/192/194/204/375", "were", "significantly", "up-regulated", "in", "response", "to", "cytokine", "treatment", "as", "compared", "to", "non", "targets", "(", "q", "=", "0.007", ",", "q", "=", "0.004", ",", "q", "=", "0.033", ",", "q", "=", "0.001", "and", "q", "=", "0.05", ",", "respectively", ")", "." ],
+  "entity_one_indices" : [ 13, 14, 15, 16 ],
+  "entity_two_indices" : [ 8, 9 ]
+}, {
+  "sentence_tokens" : [ "Using", "their", "mRNA", "data", ",", "we", "found", "that", "targets", "of", "miR-192", "were", "significantly", "down-regulated", "in", "response", "to", "IL-1", "beta", "stimulation", "when", "comparing", "to", "non", "targets", "(", "q", "=", "0.02", ")", "." ],
+  "entity_one_indices" : [ 15, 16, 17, 18 ],
+  "entity_two_indices" : [ 10, 11 ]
+}, {
+  "sentence_tokens" : [ "In", "their", "data", "set", ",", "we", "found", "that", "the", "expressions", "of", "miR-128", "targets", "were", "significant", "increased", "in", "response", "to", "cytokine", "exposure", "when", "comparing", "to", "non", "targets", "(", "q", "=", "0.002", ")", "." ],
+  "entity_one_indices" : [ 17, 18, 19, 20 ],
+  "entity_two_indices" : [ 11, 12, 13 ]
+}, {
+  "sentence_tokens" : [ "Decomposition", "of", "microarray", "data", "using", "ICA", "has", "been", "shown", "to", "outperform", "other", "linear", "data", "representations", ",", "such", "as", "PCA", "[", "16-19", "]", "." ],
+  "entity_one_indices" : [ 18, 19 ],
+  "entity_two_indices" : [ 5, 6 ]
+}, {
+  "sentence_tokens" : [ "However", ",", "no", "Pdx-1", "consensus", "binding", "sites", "were", "identified", ",", "but", "binding", "elements", "for", "other", "transcription", "factors", "have", "been", "identified", "in", "the", "miR-375", "locus", "[", "48", "]", "." ],
+  "entity_one_indices" : [ 15, 16 ],
+  "entity_two_indices" : [ 3, 4 ]
+}, {
+  "sentence_tokens" : [ "Additionally", ",", "the", "decreased", "miR-375", "expression", "is", "in", "agreement", "with", "miR-375", "having", "a", "higher", "expression", "level", "in", "non-beta-cells", "than", "in", "beta-cells", "[", "35", "]", "." ],
+  "entity_one_indices" : [ 10, 11 ],
+  "entity_two_indices" : [ 4, 5 ]
+}, {
+  "sentence_tokens" : [ "Interestingly", ",", "Hnf1", "alpha", "is", "required", "for", "proper", "beta-cell", "function", "and", "mutations", "in", "this", "gene", "cause", "MODY", "[", "23", "]", "." ],
+  "entity_one_indices" : [ 16, 17 ],
+  "entity_two_indices" : [ 2, 3 ]
+}, {
+  "sentence_tokens" : [ "miR-192", "is", "also", "expressed", "in", "the", "liver", "and", "is", "in", "cluster", "with", "miR-194", ",", "suggesting", "co-regulation", "[", "49,50", "]", "." ],
+  "entity_one_indices" : [ 12, 13 ],
+  "entity_two_indices" : [ 0, 1 ]
+}, {
+  "sentence_tokens" : [ "The", "likely", "involvement", "of", "miR-128/192/194/204/708", "in", "beta-cell", "regulatory", "networks", "(", "Figure", "5", ")", "and", "the", "high", "expression", "in", "beta-cells", "compared", "to", "alpha-cells", "for", "miR-672/204", "(", "Additional", "file", "7", ")", "make", "them", "interesting", "candidates", "for", "further", "studies.We", "have", "used", "ICA", "for", "bioinformatics", "investigation", "of", "the", "functional", "roles", "of", "the", "miRNAs", "and", "their", "targets", "." ],
+  "entity_one_indices" : [ 38, 39 ],
+  "entity_two_indices" : [ 4, 5 ]
+}, {
+  "sentence_tokens" : [ "The", "results", "suggest", "connections", "between", "seven", "of", "the", "eight", "miRNAs", "through", "interactions", "with", "key", "pancreatic", "transcription", "factors", ",", "cytokine", "signalling", "molecules", "and", "insulin", "(", "Figure", "5", ")", "." ],
+  "entity_one_indices" : [ 22, 23 ],
+  "entity_two_indices" : [ 15, 16 ]
+}, {
+  "sentence_tokens" : [ "Gene", "expression", "levels", "were", "analysed", "using", "TaqMan", "gene", "expression", "assays", "(", "Applied", "Biosystems", ")", "." ],
+  "entity_one_indices" : [ 7, 8, 9 ],
+  "entity_two_indices" : [ 0, 1, 2 ]
+}, {
+  "sentence_tokens" : [ "For", "each", "probeset", "in", "each", "sample", ",", "log2-ratios", "were", "calculated", "between", "the", "expression", "of", "that", "probeset", "and", "the", "average", "of", "the", "control", "samples.The", "miRNA", "expressions", "from", "INSr", "alpha", "beta", "cells", "(", "n", "=", "3", ")", "were", "profiled", "on", "Exiqon", "miRCURY", "LNA", "microRNA", "Array", "v.11.0", "arrays", "and", "median", "normalized", "." ],
+  "entity_one_indices" : [ 38, 39, 40, 41, 42, 43, 44, 45 ],
+  "entity_two_indices" : [ 26, 27 ]
+}, {
+  "sentence_tokens" : [ "These", "mRNA", "expressions", "had", "been", "profiled", "using", "the", "Affymetrix", "Rat", "Genome", "U34A", "array.All", "CEL-files", "were", "preprocessed", "using", "the", "RMA", "package", "[", "55", "]", "in", "Bioconductor", "[", "56", "]", "with", "remapped", "Ensembl", "build", "50", "gene", "probesets", "[", "57", "]", "." ],
+  "entity_one_indices" : [ 30, 31, 32, 33, 34, 35 ],
+  "entity_two_indices" : [ 18, 19 ]
+}, {
+  "sentence_tokens" : [ "We", "measure", "all", "G", "induced", "or", "repressed", "genes", "in", "S", "samples.Each", "of", "these", "programs", "can", "be", "identified", "by", "a", "simple", "linear", "decomposition", "of", "the", "G", "x", "S", "expression", "matrix", "E", ",", "E", "=", "CM", "or", "Egs", "=", "sum", "t", "=", "1TCgtMts", "or", "E", "-->", "s", "=", "sum", "t", "=", "1TCtMtswhere", "C", "is", "the", "G", "x", "T", "matrix", "containing", "the", "transcriptional", "programs", ",", "in", "coefficient", "vector", "notation", ",", "C", "=(", "C", "-->", "1", ",", "C", "-->", "2", ",", "..." ],
+  "entity_one_indices" : [ 33, 34 ],
+  "entity_two_indices" : [ 24, 25, 26, 27 ]
+}, {
+  "sentence_tokens" : [ "FP", "and", "CHBB", "designed", "the", "study", "." ],
+  "entity_one_indices" : [ 2, 3 ],
+  "entity_two_indices" : [ 0, 1 ]
 } ]

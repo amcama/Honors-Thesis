@@ -69,435 +69,159 @@
   "rule_name" : "Positive_activation_syntax_1_verb",
   "rule" : null
 }, {
-  "sentence_tokens" : [ "Development", "and", "Multi-Data", "Set", "Verification", "of", "an", "RNA", "Binding", "Protein", "Signature", "for", "Prognosis", "Prediction", "in", "Glioma", "." ]
-}, {
-  "sentence_tokens" : [ "Objective", ":", "Increasing", "evidence", "emphasizes", "the", "clinical", "implications", "of", "RNA", "binding", "proteins", "(", "RBPs", ")", "in", "cancers", "." ]
-}, {
-  "sentence_tokens" : [ "This", "study", "aimed", "to", "develop", "a", "RBP", "signature", "for", "predicting", "prognosis", "in", "glioma.Methods", ":", "Two", "glioma", "datasets", "as", "training", "(", "n", "=", "693", ")", "and", "validation", "(", "n", "=", "325", ")", "sets", "were", "retrieved", "from", "the", "CGGA", "database", "." ]
-}, {
-  "sentence_tokens" : [ "In", "the", "training", "set", ",", "univariate", "Cox", "regression", "analysis", "was", "conducted", "to", "screen", "prognosis", "related", "RBPs", "based", "on", "differentially", "expressed", "RBPs", "between", "WHO", "grade", "II", "and", "IV", "." ]
-}, {
-  "sentence_tokens" : [ "A", "ten-RBP", "signature", "was", "then", "established", "." ]
-}, {
-  "sentence_tokens" : [ "The", "predictive", "efficacy", "was", "evaluated", "by", "ROCs", "." ]
-}, {
-  "sentence_tokens" : [ "The", "applicability", "was", "verified", "in", "the", "validation", "set", "." ]
-}, {
-  "sentence_tokens" : [ "The", "pathways", "involving", "the", "risk", "scores", "were", "analyzed", "by", "ssGSEA", "." ]
-}, {
-  "sentence_tokens" : [ "scRNA-seq", "was", "utilized", "for", "evaluating", "their", "expression", "in", "different", "glioma", "cell", "types", "." ]
-}, {
-  "sentence_tokens" : [ "Moreover", ",", "their", "expression", "was", "externally", "validated", "between", "glioma", "and", "control", "samples.Results", ":", "Based", "on", "39", "prognosis", "related", "RBPs", ",", "a", "ten", "RBP", "signature", "was", "constructed", "." ]
-}, {
-  "sentence_tokens" : [ "High", "risk", "score", "distinctly", "indicated", "a", "poorer", "prognosis", "than", "low", "risk", "score", "." ]
-}, {
-  "sentence_tokens" : [ "AUCs", "were", "separately", "0.838", "and", "0.822", "in", "the", "training", "and", "validation", "sets", ",", "suggesting", "its", "well", "performance", "for", "prognosis", "prediction", "." ]
-}, {
-  "sentence_tokens" : [ "Following", "adjustment", "of", "other", "clinicopathological", "characteristics", ",", "the", "signature", "was", "an", "independent", "risk", "factor", "." ]
-}, {
-  "sentence_tokens" : [ "Various", "cancer", "related", "pathways", "were", "significantly", "activated", "in", "samples", "with", "high", "risk", "score", "." ]
-}, {
-  "sentence_tokens" : [ "The", "scRNA-seq", "identified", "that", "risk", "RBPs", "were", "mainly", "expressed", "in", "glioma", "malignant", "cells", "." ]
-}, {
-  "sentence_tokens" : [ "Their", "high", "expression", "was", "also", "found", "in", "glioma", "than", "control", "samples.Conclusion", ":", "This", "study", "developed", "a", "novel", "RBP", "signature", "for", "robustly", "predicting", "prognosis", "of", "glioma", "following", "multi-data", "set", "verification", "." ]
-}, {
-  "sentence_tokens" : [ "These", "RBPs", "may", "affect", "the", "progression", "of", "glioma", "." ]
-}, {
-  "sentence_tokens" : [ "Introduction", "." ]
-}, {
-  "sentence_tokens" : [ "Glioma", "is", "the", "most", "frequently", "diagnosed", "primary", "brain", "malignancy", ",", "accounting", "for", "70", "%", "of", "all", "brain", "malignancies", "(", "1", ")", "." ]
-}, {
-  "sentence_tokens" : [ "In", "line", "with", "the", "2016", "World", "Health", "Organization", "(", "WHO", ")", "classification", ",", "glioblastoma", "(", "GBM", ")", "is", "the", "most", "common", "histology", "type", ",", "which", "corresponds", "to", "WHO", "grade", "IV", ",", "with", "a", "median", "survival", "of", "<", "2", "years", "and", "a", "5-year", "survival", "rate", "of", "5", "%", "(", "2", ")", "." ]
-}, {
-  "sentence_tokens" : [ "The", "incidence", "of", "lower", "grade", "gliomas", "(", "LGG", ")", "WHO", "grade", "II", "is", "relatively", "lower", "and", "patients", "with", "grade", "II", "exhibit", "better", "clinical", "outcomes", "and", "more", "sensitive", "to", "therapies", "(", "3", ")", "." ]
-}, {
-  "sentence_tokens" : [ "At", "present", ",", "the", "diagnosis", "of", "glioma", "primarily", "depends", "on", "histopathology", ",", "imaging", "as", "well", "as", "molecular", "diagnosis", "(", "4", "-", "6", ")", "." ]
-}, {
-  "sentence_tokens" : [ "Nevertheless", ",", "because", "of", "complicacy", "and", "heterogeneity", ",", "traditionally", "diagnostic", "and", "therapeutic", "techniques", "exert", "side", "effects", "for", "the", "clinical", "outcomes", "of", "patients", "." ]
-}, {
-  "sentence_tokens" : [ "To", "prolong", "the", "survival", "time", "of", "patients", ",", "it", "is", "of", "clinical", "importance", "for", "discovering", "novel", "accurate", "molecular", "biomarkers", "for", "prognosis", "prediction", "in", "glioma.RBPs", "play", "major", "participants", "of", "the", "life", "cycle", "of", "mRNAs", "(", "7", ")", "." ]
-}, {
-  "sentence_tokens" : [ "One", "thousand", "five", "hundred", "forty-two", "RBP", "genes", "have", "been", "discovered", "in", "the", "human", "genome", ",", "corresponding", "to", "over", "7.5", "%", "of", "protein", "encoding", "genes", "(", "8)", "." ]
-}, {
-  "sentence_tokens" : [ "Totally", ",", "~", "50", "%", "of", "RBPs", "exert", "post-transcriptional", "mediated", "effects", "on", "gene", "expression", "(", "8)", "." ]
-}, {
-  "sentence_tokens" : [ "Abnormally", "expressed", "RBPs", "have", "been", "considered", "as", "drivers", "for", "cancers", "." ]
-}, {
-  "sentence_tokens" : [ "They", "may", "be", "involved", "in", "regulating", "the", "progression", "and", "spread", "of", "cancers", "(", "9", ")", "." ]
-}, {
-  "sentence_tokens" : [ "Increasing", "evidence", "highlights", "the", "critical", "roles", "of", "RBPs", "in", "the", "malignant", "biological", "behaviors", "in", "gliomas", "(", "10", ")", "." ]
-}, {
-  "sentence_tokens" : [ "For", "example", ",", "RBP", "SRSF1", "could", "regulate", "the", "cell", "cycle", "through", "stabilizing", "NEAT1", "for", "glioma", "(", "11", ")", "." ]
-}, {
-  "sentence_tokens" : [ "RBP", "SRSF3", "regulates", "RNA", "alternative", "splicing", ",", "thereby", "inducing", "glioblastoma", "occurrence", "via", "influencing", "key", "biological", "processes", "(", "13", ")", "." ]
-}, {
-  "sentence_tokens" : [ "Nevertheless", ",", "their", "roles", "still", "require", "to", "be", "explored", "in", "depth", "via", "further", "functional", "studies", "." ]
-}, {
-  "sentence_tokens" : [ "Recent", "studies", "suggest", "that", "several", "RBPs", "exhibit", "significant", "associations", "with", "clinical", "outcomes", "of", "glioma", "patients", ",", "such", "as", "SNRPN", "and", "IGF2BP3", "(", "14", ")", "." ]
-}, {
-  "sentence_tokens" : [ "Hence", ",", "targeting", "RBPs", "appears", "to", "be", "promising", "strategies", "for", "the", "development", "of", "novel", "treatment", "against", "cancers", "." ]
-}, {
-  "sentence_tokens" : [ "Moreover", ",", "it", "is", "of", "significance", "to", "understand", "the", "prognostic", "implications", "of", "RBPs", "in", "glioma", "." ]
-}, {
-  "sentence_tokens" : [ "Herein", ",", "our", "findings", "developed", "a", "RBP", "signature", "for", "predicting", "the", "clinical", "outcomes", "of", "glioma", "patients", "." ]
-}, {
-  "sentence_tokens" : [ "After", "validation", ",", "this", "signature", "exhibited", "a", "robust", "predictive", "efficacy", "." ]
-}, {
-  "sentence_tokens" : [ "Materials", "and", "Methods", "." ]
-}, {
-  "sentence_tokens" : [ "Glioma", "Data", "Acquirement", "and", "Preprocessing", "." ]
-}, {
-  "sentence_tokens" : [ "Two", "glioma", "datasets", "(", "n", "=", "693", "or", "325", ")", "containing", "mRNA", "sequencing", "and", "corresponding", "clinical", "information", "were", "retrieved", "from", "the", "Chinese", "Glioma", "Genome", "Atlas", "(", "CGGA", ")", "." ]
-}, {
-  "sentence_tokens" : [ "A", "dataset", "(", "n", "=", "693", ")", "was", "used", "as", "the", "training", "set", "and", "another", "(", "n", "=", "325", ")", "was", "utilized", "as", "the", "validation", "set", "." ]
-}, {
-  "sentence_tokens" : [ "The", "batch", "effects", "were", "presented", "after", "integration", "of", "the", "two", "datasets", "." ]
-}, {
-  "sentence_tokens" : [ "Differential", "Expression", "Analysis", "." ]
-}, {
-  "sentence_tokens" : [ "The", "mRNA", "expression", "profiles", "of", "RBPs", "were", "extracted", "from", "the", "training", "and", "validation", "sets", "." ]
-}, {
-  "sentence_tokens" : [ "Differentially", "expressed", "RBPs", "were", "defined", "by", "comparing", "WHO", "grade", "II", "and", "IV", "samples", "via", "the", "edgeR", "package", "in", "R", "(", "15", ")", "." ]
-}, {
-  "sentence_tokens" : [ "The", "criteria", "were", "set", "as", "follows", ":", "|", "log", "fold", "change", "(", "FC", ")", "|", ">=", "0.58", "and", "false", "discovery", "rate", "(", "FDR", ")", ">", "0.5", "." ]
-}, {
-  "sentence_tokens" : [ "Differentially", "expressed", "RBPs", "were", "visualized", "into", "volcano", "and", "heatmap", "plots", "." ]
-}, {
-  "sentence_tokens" : [ "Univariate", "and", "Multivariate", "Cox", "Proportional", "Hazard", "Model", "." ]
-}, {
-  "sentence_tokens" : [ "Univariate", "cox", "regression", "analysis", "was", "conducted", "for", "differentially", "expressed", "RBPs", "in", "the", "training", "set", "." ]
-}, {
-  "sentence_tokens" : [ "RBPs", "with", "hazard", "ratio", ">", "1", "and", "p", "<", "0.001", "were", "risk", "factors", "and", "those", "with", "hazard", "ratio", "<", "1", "and", "p", "<", "0.001", "were", "protective", "factors", "." ]
-}, {
-  "sentence_tokens" : [ "RBPs", "with", "p", "<", "0.001", "were", "chosen", "for", "multivariable", "cox", "regression", "." ]
-}, {
-  "sentence_tokens" : [ "Totally", ",", "ten", "RBPs", "were", "filtered", "out", "for", "building", "up", "the", "predictive", "model", "." ]
-}, {
-  "sentence_tokens" : [ "The", "risk", "score", "for", "each", "sample", "was", "calculated", "by", "combining", "the", "coefficient", "and", "the", "expression", "level", "of", "RBP", "." ]
-}, {
-  "sentence_tokens" : [ "Afterwards", ",", "the", "patients", "were", "separated", "into", "high-", "and", "low-risk", "groups", "in", "line", "with", "the", "median", "values", "of", "the", "risk", "scores", "." ]
-}, {
-  "sentence_tokens" : [ "Kaplan-Meier", "curves", "were", "constructed", "and", "the", "differences", "in", "survival", "time", "between", "groups", "were", "compared", "by", "log-rank", "test", "." ]
-}, {
-  "sentence_tokens" : [ "Using", "the", "heatmap", "package", "in", "R", ",", "the", "ten", "RBPs", "were", "displayed", "between", "the", "two", "groups", "." ]
-}, {
-  "sentence_tokens" : [ "Relative", "operating", "characteristic", "curves", "(", "ROCs", ")", "were", "built", "for", "assessment", "of", "the", "predictive", "efficacy", "of", "the", "signature", "." ]
-}, {
-  "sentence_tokens" : [ "Univariate", "and", "multivariate", "cox", "regression", "analysis", "was", "utilized", "to", "evaluate", "the", "associations", "between", "risk", "score", "as", "well", "as", "other", "clinical", "features", "and", "prognosis", "among", "glioma", "samples", "." ]
-}, {
-  "sentence_tokens" : [ "Functional", "Enrichment", "Analysis", "." ]
-}, {
-  "sentence_tokens" : [ "Kyoto", "Encyclopedia", "of", "Genes", "and", "Genomes", "(", "KEGG", ")", "and", "Gene", "Ontology", "(", "GO", ")", "enrichment", "analyses", "were", "conducted", "for", "prognosis", "related", "RBPs", "via", "the", "clusterProfiler", "package", "in", "R", "(", "16", ")", "." ]
-}, {
-  "sentence_tokens" : [ "Terms", "with", "adjusted", "p", "<", "0.05", "were", "statistically", "significant", "." ]
-}, {
-  "sentence_tokens" : [ "Single", "Sample", "Gene", "Set", "Enrichment", "Analysis", "(", "ssGSEA", ")", "." ]
-}, {
-  "sentence_tokens" : [ "Hallmark", "gene", "sets", "were", "obtained", "from", "the", "Molecular", "Signatures", "Database", "v7.2", "." ]
-}, {
-  "sentence_tokens" : [ "ssGSEA", "was", "utilized", "to", "analyze", "the", "associations", "between", "risk", "scores", "and", "signaling", "pathways", "via", "the", "Gene", "Set", "Variation", "Analysis", "(", "GSVA", ")", "in", "R", "package", "(", "17", ")", "." ]
-}, {
-  "sentence_tokens" : [ "GSVA", "score", "in", "each", "pathway", "was", "calculated", "for", "a", "specific", "sample", "." ]
-}, {
-  "sentence_tokens" : [ "The", "difference", "in", "a", "specific", "alteration", "in", "a", "pathway", "was", "compared", "between", "high", "and", "low", "risk", "groups", "via", "Wilcoxon", "rank-sum", "test", "." ]
-}, {
-  "sentence_tokens" : [ "Construction", "and", "Evaluation", "of", "a", "Nomogram", "." ]
-}, {
-  "sentence_tokens" : [ "Based", "on", "the", "coefficients", "of", "the", "ten", "RBPs", "from", "the", "multivariate", "Cox", "regression", "analysis", ",", "the", "score", "was", "determined", "for", "each", "RBP", "." ]
-}, {
-  "sentence_tokens" : [ "The", "total", "point", "was", "obtained", "by", "adding", "all", "scores", "of", "the", "RBPs", "." ]
-}, {
-  "sentence_tokens" : [ "Through", "the", "function", "conversion", "relationship", "between", "the", "total", "point", "and", "the", "1-,", "2-,", "and", "3-year", "survival", "probability", ",", "the", "predicted", "probability", "of", "the", "individual", "outcome", "event", "was", "calculated", "." ]
-}, {
-  "sentence_tokens" : [ "The", "nomogram", "was", "conducted", "via", "the", "forestplot", "package", "in", "R.", "Calibration", "curve", "was", "drawn", "for", "internal", "verification", "utilizing", "the", "rms", "package", "." ]
-}, {
-  "sentence_tokens" : [ "The", "predicted", "5-year", "survival", "was", "compared", "with", "the", "actual", "survival", "time", "." ]
-}, {
-  "sentence_tokens" : [ "Single", "Cell", "RNA", "Sequencing", "(", "scRNA-seq", ")", "Data", "." ]
-}, {
-  "sentence_tokens" : [ "Three", "single", "cell", "RNA-seq", "datasets", "for", "glioma", "including", "GSE131928", "Smart-seq2", "(", "18", ")", ",", "GSE131928", "10X", "Genomics", ",", "GSE102130", "datasets", "were", "retrieved", "from", "the", "Gene", "Expression", "Omnibus", "(", "GEO", ";", "https://www.ncbi.nlm.nih.gov/gds/", ")", "." ]
-}, {
-  "sentence_tokens" : [ "Following", "quality", "control", ",", "normalization", "and", "linear", "scaling", "analyses", ",", "cell", "cluster", "was", "presented", "via", "the", "Seurat", "package", "in", "R", "(", "19", ")", "." ]
-}, {
-  "sentence_tokens" : [ "Cell", "types", "were", "visualized", "by", "the", "t", "distributed", "stochastic", "neighbor", "embedding", "(", "t-SNE", ")", "." ]
-}, {
-  "sentence_tokens" : [ "The", "expression", "levels", "of", "the", "ten", "RBPs", "were", "visualized", "in", "each", "cell", "type", "." ]
-}, {
-  "sentence_tokens" : [ "Spearson", "Correlation", "Analysis", "." ]
-}, {
-  "sentence_tokens" : [ "The", "expression", "levels", "of", "IGF2BP3", ",", "RDM1", ",", "NSUN7", ",", "EXO1", ",", "APOBEC3F", ",", "FBXO17", ",", "FAM46A", ",", "ANG", ",", "ADARB2", ",", "and", "EIF4E1B", "were", "compared", "between", "glioma", "WHO", "grade", "II", "and", "IV", "samples", "." ]
-}, {
-  "sentence_tokens" : [ "At", "the", "mRNA", "levels", ",", "Spearson", "correlation", "analysis", "was", "presented", "between", "these", "RBPs", "among", "the", "whole", "datasets", "." ]
-}, {
-  "sentence_tokens" : [ "Gene", "Expression", "Profiling", "Interactive", "Analysis", "(", "GEPIA", ")", "." ]
-}, {
-  "sentence_tokens" : [ "Using", "the", "GEPIA", "database", ";", "(", "http://gepia2.cancer-pku.cn/#index", ")", ",", "the", "expression", "of", "RBPs", "was", "compared", "between", "tumor", "(", "n", "=", "163", ")", "and", "normal", "(", "n", "=", "207", ")", "specimens", "in", "the", "GBM", "dataset", "from", "TCGA", "and", "GTE", "database", "." ]
-}, {
-  "sentence_tokens" : [ "The", "cutoffs", "were", "set", "as", "|", "log2FC", "|", ">", "1", "and", "p", "<", "0.01", "." ]
-}, {
-  "sentence_tokens" : [ "Reverse", "Transcription", "Quantitative", "Polymerase", "Chain", "Reaction", "(", "RT-qPCR", ")", "." ]
-}, {
-  "sentence_tokens" : [ "Ten", "pairs", "of", "glioma", "and", "normal", "tissue", "specimens", "were", "collected", "from", "The", "Second", "Affiliated", "Hospital", "of", "Nanchang", "university", "." ]
-}, {
-  "sentence_tokens" : [ "All", "patients", "provided", "written", "informed", "content", "." ]
-}, {
-  "sentence_tokens" : [ "This", "study", "was", "approved", "by", "the", "Ethics", "Committee", "of", "The", "Second", "Affiliated", "Hospital", "of", "Nanchang", "university", "(", "2020018", ")", "." ]
-}, {
-  "sentence_tokens" : [ "Total", "RNA", "was", "extracted", "from", "tissues", "utilizing", "TRIzol", "(", "Beyotime", ",", "Shanghai", ")", ",", "which", "was", "reverse", "transcribed", "into", "cDNA", "." ]
-}, {
-  "sentence_tokens" : [ "RT-qPCR", "was", "presented", "by", "the", "miScript", "SYBR", "Green", "PCR", "Kit", "(", "Applied", "Biosystems", ",", "USA", ")", "." ]
-}, {
-  "sentence_tokens" : [ "Table", "1", "listed", "the", "sequence", "information", "of", "primers", "." ]
-}, {
-  "sentence_tokens" : [ "GAPDH", "was", "utilized", "as", "a", "control", "." ]
-}, {
-  "sentence_tokens" : [ "The", "expression", "levels", "were", "calculated", "with", "the", "2", "-", "Delta", "Delta", "Ct", "method", "." ]
-}, {
-  "sentence_tokens" : [ "Using", "GraphPad", "Prism", "7.0", ",", "the", "differences", "between", "tumor", "and", "normal", "groups", "were", "determined", "using", "student", "'s", "t-test", "." ]
-}, {
-  "sentence_tokens" : [ "P", "<", "0.05", "indicated", "statistically", "significant", "." ]
-}, {
-  "sentence_tokens" : [ "Results", "." ]
-}, {
-  "sentence_tokens" : [ "Screening", "Prognosis", "Related", "RBPs", "for", "Glioma", "." ]
-}, {
-  "sentence_tokens" : [ "In", "this", "study", ",", "we", "compared", "the", "differences", "in", "expression", "of", "1,487", "RBPs", "between", "glioma", "WHO", "grade", "II", "and", "IV", "samples", "in", "the", "training", "set", "." ]
-}, {
-  "sentence_tokens" : [ "With", "the", "criteria", "of", "|", "log", "FC", "|", ">=", "0.58", "and", "FDR", ">", "0.5", ",", "40", "RBPs", "were", "abnormally", "expressed", "between", "glioma", "II", "and", "IV", "samples", "(", "Supplementary", "Table", "1", ")", "." ]
-}, {
-  "sentence_tokens" : [ "Among", "them", ",", "23", "RBPs", "were", "up-regulated", "whereas", "17", "RBPs", "were", "down-regulated", "in", "glioma", "grade", "IV", "compared", "to", "II", "(", "Figure", "1A", ")", "." ]
-}, {
-  "sentence_tokens" : [ "Heat", "maps", "visualized", "the", "expression", "patterns", "of", "these", "RBPs", "between", "glioma", "II", "and", "IV", "samples", "(", "Figure", "1B", ")", "." ]
-}, {
-  "sentence_tokens" : [ "We", "explored", "prognosis", "related", "RBPs", "in", "glioma", "via", "univariate", "cox", "regression", "analysis", "." ]
-}, {
-  "sentence_tokens" : [ "Our", "data", "suggested", "that", "39", "RBPs", "were", "significantly", "associated", "with", "prognosis", "of", "glioma", "(", "Figure", "1C", ")", "." ]
-}, {
-  "sentence_tokens" : [ "Among", "them", ",", "22", "RBPs", "were", "risk", "factors", "for", "glioma", "and", "17", "RBPs", "were", "protective", "factors", "for", "glioma", "." ]
-}, {
-  "sentence_tokens" : [ "To", "further", "probe", "the", "biological", "functions", "of", "these", "prognosis", "related", "RBPs", ",", "we", "carried", "out", "KEGG", "and", "GO", "enrichment", "analysis", "." ]
-}, {
-  "sentence_tokens" : [ "Our", "data", "suggested", "that", "RNA", "transport", ",", "mRNA", "surveillance", "and", "RNA", "degradation", "pathways", "were", "distinctly", "enriched", ",", "as", "shown", "in", "Figure", "1D", "." ]
-}, {
-  "sentence_tokens" : [ "GO", "enrichment", "analysis", "results", "revealed", "that", "these", "RBPs", "were", "involved", "in", "mediating", "various", "key", "biological", "processes", "such", "as", "mRNA", "metabolic", "process", ",", "RNA", "splicing", ",", "mRNA", "processing", ",", "RNA", "transport", "and", "localization", "(", "Figures", "1E", ",", "F", ")", "." ]
-}, {
-  "sentence_tokens" : [ "These", "data", "demonstrated", "that", "the", "prognosis", "related", "RBPs", "we", "selected", "could", "be", "involved", "in", "the", "progression", "of", "glioma", "." ]
-}, {
-  "sentence_tokens" : [ "Establishment", "of", "an", "RBP", "Signature", "for", "Prognosis", "Prediction", "in", "Glioma", "." ]
-}, {
-  "sentence_tokens" : [ "Based", "on", "prognosis", "related", "RBPs", ",", "in", "the", "training", "set", ",", "a", "ten-RBP", "signature", "was", "established", "for", "glioma", "via", "multivariate", "cox", "regression", "analysis", "(", "Figure", "2A", ")", "." ]
-}, {
-  "sentence_tokens" : [ "The", "risk", "score", "for", "each", "glioma", "was", "determined", "as", "follows", ":", "0.772546974482237", "the", "expression", "levels", "of", "IGF2BP3", "+", "(", "-0.529440079138294", ")", "the", "expression", "levels", "of", "RDM1", "+", "0.959791181375875", "the", "expression", "levels", "of", "NSUN7", "+", "1.28748170838841", "the", "expression", "levels", "of", "EXO1", "+", "(", "-", "0.92777652353892", ")", "the", "expression", "levels", "of", "APOBEC3F", "+", "0.746260894529048", "the", "expression", "levels", "of", "FBXO17", "+", "(", "-", "0.545584467299167", ")", "FAM46A", "+", "0.999495382483528", "the", "expression", "levels", "of", "ANG", "+", "0.682420092015883", "the", "expression", "levels", "of", "ADARB2", "+", "(", "-", "0.565975323034877", ")", "the", "expression", "levels", "of", "EIF4E1B", "." ]
-}, {
-  "sentence_tokens" : [ "Among", "them", ",", "IGF2BP3", "(", "HR", ":", "2.165", ",", "95", "%", "CI", ":", "1.547", "-", "3.030", ",", "p", "<", "0.001", ")", ",", "NSUN7", "(", "HR", ":", "2.611", ",", "95", "%", "CI", ":", "1.226", "-", "5.561", ",", "p", "=", "0.013", ")", ",", "EXO1", "(", "HR", ":", "3.624", ",", "95", "%", "CI", ":", "1.978", "-", "3.030", ",", "p", "<", "0.001", ")", ",", "FBXO17", "(", "HR", ":", "2.109", ",", "95", "%", "CI", ":", "1.161", "-", "3.831", ",", "p", "=", "0.014", ")", ",", "ANG", "(", "HR", ":", "2.717", ",", "95", "%", "CI", ":", "1.454", "-", "5.078", ",", "p", "=", "0.002", ")", "and", "ADARB2", "(", "HR", ":", "1.979", ",", "95", "%", "CI", ":", "1.308", "-", "2.992", ",", "p", "=", "0.001", ")", "were", "negatively", "correlated", "with", "survival", "time", "for", "glioma", "patients", "." ]
-}, {
-  "sentence_tokens" : [ "APOBEC3F", "(", "HR", ":", "0.395", ",", "95", "%", "CI", ":", "0.201", "-", "0.778", ",", "p", "=", "0.007", ")", "and", "EIF4E1B", "(", "HR", ":", "0.568", "95", "%", "CI", ":", "0.342", "-", "0.943", ",", "p", "=", "0.029", ")", "were", "positively", "associated", "with", "clinical", "outcomes", "in", "glioma", "patients", "." ]
-}, {
-  "sentence_tokens" : [ "On", "the", "grounds", "of", "the", "median", "risk", "score", ",", "these", "patients", "were", "separated", "into", "high", "and", "low", "risk", "groups", "(", "Figure", "2B", ")", "." ]
-}, {
-  "sentence_tokens" : [ "In", "comparison", "to", "the", "low-risk", "group", ",", "the", "number", "of", "dead", "patients", "was", "higher", "in", "the", "high-risk", "group", "(", "Figure", "2C", ")", "." ]
-}, {
-  "sentence_tokens" : [ "There", "were", "distinct", "differences", "in", "expression", "levels", "of", "these", "ten", "RBPs", "between", "the", "two", "subgroups", "(", "Figure", "2D", ")", "." ]
-}, {
-  "sentence_tokens" : [ "The", "patients", "in", "the", "high-risk", "group", "exhibited", "an", "unfavorable", "prognosis", "compared", "to", "those", "in", "the", "low-risk", "group", "(", "p", "<", "0.0001", ";", "Figure", "2E", ")", "." ]
-}, {
-  "sentence_tokens" : [ "The", "area", "under", "the", "curve", "(", "AUC", ")", "was", "0.838", ",", "demonstrating", "that", "the", "signature", "possessed", "the", "well", "performance", "for", "prognosis", "prediction", "in", "glioma", "patients", "(", "Figure", "2F", ")", "." ]
-}, {
-  "sentence_tokens" : [ "Based", "on", "the", "univariate", "cox", "regression", "analysis", ",", "PRS", "type", "(", "HR", ":", "2.003", ",", "95", "%", "CI", ":", "1.359", "-", "2.953", ",", "p", "<", "0.001", ")", ",", "grade", "(", "HR", ":", "3.008", ",", "95", "%", "CI", ":", "2.297", "-", "3.938", ",", "p", "<", "0.001", ")", ",", "age", "(", "HR", ":", "3.797", ",", "95", "%", "CI", ":", "2.444", "-", "5.900", ",", "p", "<", "0.001", ")", ",", "chemotherapy", "status", "(", "HR", ":", "1.911", ",", "95", "%", "CI", ":", "1.151", "-", "3.174", ",", "p", "=", "0.012", ")", "and", "risk", "score", "(", "HR", ":", "1.294", ",", "95", "%", "CI", ":", "1.229", "-", "1.363", ",", "p", "<", "0.001", ")", "were", "risk", "factors", "for", "glioma", "(", "Figure", "2G", ")", "." ]
-}, {
-  "sentence_tokens" : [ "We", "further", "assessed", "whether", "the", "signature", "could", "independently", "predict", "the", "clinical", "outcomes", "of", "glioma", "patients", "." ]
-}, {
-  "sentence_tokens" : [ "Our", "multivariate", "cox", "regression", "analysis", "revealed", "the", "independency", "of", "the", "predictive", "efficacy", "of", "the", "signature", "(", "HR", ":", "1.217", ",", "95", "%", "CI", ":", "1.143", "-", "1.295", ",", "p", "<", "0.001", ";", "Figure", "2H", ")", "." ]
-}, {
-  "sentence_tokens" : [ "Grade", "(", "HR", ":", "2.702", ",", "95", "%", "CI", ":", "1.948", "-", "3.749", ",", "p", "<", "0.001", ")", "and", "age", "(", "HR", ":", "1.975", ",", "95", "%", "CI", ":", "1.249", "-", "3.123", ",", "p", "=", "0.004", ")", "were", "both", "independently", "predictive", "of", "the", "clinical", "outcomes", "of", "glioma", "patients", "." ]
-}, {
-  "sentence_tokens" : [ "Collectively", ",", "this", "signature", "could", "be", "robustly", "and", "accurately", "predictive", "of", "the", "clinical", "outcomes", "for", "glioma", "patients", "." ]
-}, {
-  "sentence_tokens" : [ "Validation", "of", "the", "RBP", "Signature", "for", "Predicting", "Prognosis", "of", "Glioma", "." ]
-}, {
-  "sentence_tokens" : [ "We", "further", "verified", "the", "applicability", "of", "the", "signature", "for", "predicting", "prognosis", "of", "glioma", "in", "the", "validation", "set", "." ]
-}, {
-  "sentence_tokens" : [ "Following", "the", "same", "method", ",", "patients", "were", "divided", "into", "high", "and", "low", "risk", "groups", "in", "accordance", "with", "the", "median", "value", "(", "Figure", "3A", ")", "." ]
-}, {
-  "sentence_tokens" : [ "In", "the", "high-risk", "group", ",", "the", "number", "of", "dead", "patients", "was", "much", "higher", "than", "in", "the", "low-risk", "group", "(", "Figure", "3B", ")", "." ]
-}, {
-  "sentence_tokens" : [ "In", "Figure", "3C", ",", "these", "ten", "RBPs", "were", "abnormally", "expressed", "between", "the", "two", "subgroups", "." ]
-}, {
-  "sentence_tokens" : [ "Patients", "in", "the", "high-risk", "group", "exhibited", "shorter", "survival", "time", "than", "those", "in", "the", "low-risk", "group", "(", "p", "<", "0.0001", ";", "Figure", "3D", ")", "." ]
-}, {
-  "sentence_tokens" : [ "The", "high", "predictive", "value", "was", "confirmed", "by", "the", "ROC", "curve", "(", "AUC", "=", "0.822", ";", "Figure", "3E", ")", "." ]
-}, {
-  "sentence_tokens" : [ "PRS", "type", "(", "HR", ":", "2.541", ",", "95", "%", "CI", ":", "1.879", "-", "3.436", ",", "p", "<", "0.001", ")", ",", "grade", "(", "HR", ":", "2.868", ",", "95", "%", "CI", ":", "2.360", "-", "3.486", ",", "p", "<", "0.001", ")", ",", "age", "(", "HR", ":", "2.166", ",", "95", "%", "CI", ":", "1.386", "-", "3.386", ",", "p", "<", "0.001", ")", ",", "chemotherapy", "(", "HR", ":", "1.574", ",", "95", "%", "CI", ":", "1.155", "-", "2.145", ",", "p", "<", "0.004", ")", ",", "and", "risk", "score", "(", "HR", ":", "1.298", ",", "95", "%", "CI", ":", "1.248", "-", "1.351", ",", "p", "<", "0.001", ")", "had", "negative", "correlations", "with", "prognosis", "of", "glioma", "patients", "(", "Figure", "3F", ")", "." ]
-}, {
-  "sentence_tokens" : [ "Following", "the", "multivariate", "cox", "regression", "analysis", ",", "risk", "score", "(", "HR", ":", "1.214", ",", "95", "%", "CI", ":", "1.156", "-", "1.274", ",", "p", "<", "0.001", ")", ",", "PRS", "type", "(", "HR", ":", "1.958", ",", "95", "%", "CI", ":", "1.413", "-", "2.715", ",", "p", "<", "0.001", ")", ",", "and", "grade", "(", "HR", ":", "2.430", ",", "95", "%", "CI", ":", "1.943", "-", "3.040", ",", "p", "<", "0.001", ")", "were", "independent", "risk", "factors", "for", "glioma", "(", "Figure", "3G", ")", "." ]
-}, {
-  "sentence_tokens" : [ "ssGSEA", "Determines", "Signaling", "Pathways", "Involved", "in", "the", "Ten-RBP", "Signature", "." ]
-}, {
-  "sentence_tokens" : [ "GSVA", "score", "of", "a", "specific", "alteration", "in", "a", "pathway", "was", "calculated", "in", "each", "glioma", "sample", "." ]
-}, {
-  "sentence_tokens" : [ "Our", "data", "suggested", "that", "the", "high-risk", "scores", "were", "significantly", "associated", "with", "hypoxia", ",", "TNF", "alpha", "signaling", "pathway", "via", "NF-kappa", "B", ",", "inflammatory", "response", ",", "mitotic", "spindle", ",", "PI3K-Akt-mTOR", "signaling", "pathway", ",", "Notch", "signaling", "pathway", ",", "interferon", "alpha", "response", ",", "interferon", "gamma", "response", "and", "glycolysis", "(", "all", "p", "<", "0.0001", ";", "Figure", "4", ")", "." ]
-}, {
-  "sentence_tokens" : [ "No", "difference", "in", "WNT", "beta-Catenin", "signaling", "was", "found", "between", "high", "and", "low", "risk", "score", "groups", "." ]
-}, {
-  "sentence_tokens" : [ "Above", "findings", "revealed", "that", "cancer", "related", "pathways", "were", "activated", "in", "the", "glioma", "samples", "with", "high", "risk", "scores", "." ]
-}, {
-  "sentence_tokens" : [ "Construction", "and", "Evaluation", "of", "a", "Nomogram", "for", "Prognosis", "Prediction", "of", "Glioma", "." ]
-}, {
-  "sentence_tokens" : [ "To", "personally", "calculate", "the", "survival", "rate", "of", "specific", "patient", "with", "glioma", ",", "a", "nomogram", "was", "established", "based", "on", "the", "ten", "RBPs", "in", "the", "training", "set", "." ]
-}, {
-  "sentence_tokens" : [ "According", "to", "the", "influence", "levels", "of", "each", "RBP", "in", "the", "model", "on", "the", "clinical", "outcomes", ",", "each", "score", "of", "the", "RBP", "was", "assigned", ",", "and", "the", "total", "score", "was", "determined", "." ]
-}, {
-  "sentence_tokens" : [ "The", "1-,", "2-,", "and", "3-year", "survival", "probability", "of", "an", "individual", "patient", "was", "predicted", "based", "on", "the", "total", "scores", "(", "Figure", "5A", ")", "." ]
-}, {
-  "sentence_tokens" : [ "We", "further", "evaluated", "the", "predictive", "efficacy", "of", "the", "nomogram", "in", "the", "validation", "set", "(", "Figure", "5B", ")", "." ]
-}, {
-  "sentence_tokens" : [ "Calibration", "curves", "were", "depicted", "to", "compare", "the", "nomogram", "predicted", "5-year", "survival", "probability", "and", "actual", "survival", "time", "." ]
-}, {
-  "sentence_tokens" : [ "Both", "in", "the", "training", "(", "Figure", "5C", ")", "and", "validation", "(", "Figure", "5D", ")", "sets", ",", "the", "nomogram", "exhibited", "the", "well", "performance", "for", "prediction", "of", "the", "5-year", "survival", "time", "for", "glioma", "patients", "." ]
-}, {
-  "sentence_tokens" : [ "Thus", ",", "the", "nomogram", "could", "be", "used", "for", "accurately", "assessing", "the", "survival", "probability", "for", "glioma", "patients", "." ]
-}, {
-  "sentence_tokens" : [ "Single", "Cell", "RNA-seq", "Reveals", "the", "Expression", "of", "the", "Risk", "RBP", "Signatures", "in", "Glioma", "." ]
-}, {
-  "sentence_tokens" : [ "We", "deeply", "analyzed", "the", "expression", "levels", "of", "the", "risk", "RBP", "signatures", "in", "a", "single", "glioma", "cell", "in", "the", "three", "datasets", "." ]
-}, {
-  "sentence_tokens" : [ "In", "the", "GSE131928", "Smart-seq2", "dataset", ",", "seven", "cell", "types", "were", "clustered", ",", "including", "AC", "like", "malignant", ",", "CD8Tex", ",", "MES", "like", "malignant", ",", "mon", "and", "macrophages", ",", "NPC", "like", "malignant", ",", "OPC", "like", "malignant", "and", "oligodendrocyte", "(", "Figure", "6A", ")", "." ]
-}, {
-  "sentence_tokens" : [ "Consistent", "with", "our", "multivariate", "Cox", "regression", "analysis", "results", ",", "IGF2BP3", ",", "NSUN7", ",", "EXO1", ",", "and", "FBXO17", "were", "highly", "expressed", "in", "AC-,", "MES-,", "NPC-,", "and", "OPC", "like", "malignant", "cells", "(", "Figures", "6B", "-", "F", ")", "." ]
-}, {
-  "sentence_tokens" : [ "Furthermore", ",", "heat", "map", "visualized", "the", "expression", "patterns", "of", "EXO1", "(", "Figure", "6G", ")", ",", "FBXO17", "(", "Figure", "6H", ")", ",", "IGF2BP3", "(", "Figure", "6I", ")", ",", "and", "NSUN7", "(", "Figure", "6J", ")", "in", "different", "cell", "types", "in", "the", "three", "datasets", "." ]
-}, {
-  "sentence_tokens" : [ "Higher", "expression", "levels", "of", "the", "four", "RBPs", "were", "detected", "in", "the", "AC-,", "MES-,", "NPC-", "and", "OPC", "like", "malignant", "cells", ",", "which", "could", "be", "related", "to", "poor", "prognosis", "for", "glioma", "patients", "." ]
-}, {
-  "sentence_tokens" : [ "The", "Risk", "RBP", "Signatures", "Are", "Highly", "Expressed", "in", "Glioma", "Grade", "IV", "Than", "II." ]
-}, {
-  "sentence_tokens" : [ "We", "further", "compared", "the", "expression", "levels", "of", "the", "ten", "RBP", "signatures", "in", "glioma", "grade", "II", "and", "IV", "samples", "." ]
-}, {
-  "sentence_tokens" : [ "The", "data", "showed", "that", "ADARB2", "and", "EIF4E1B", "had", "lower", "expression", "levels", "in", "glioma", "grade", "IV", "than", "II", "samples", "(", "both", "p", "<", "0.001", ";", "Figure", "7A", ")", "." ]
-}, {
-  "sentence_tokens" : [ "Most", "risk", "signatures", "exhibited", "higher", "expression", "levels", "of", "IGF2BP3", ",", "RDM1", ",", "NSUN7", ",", "EXO1", ",", "APOBEC3F", ",", "FBXO17", ",", "FAM46A", ",", "and", "ANG", "in", "grade", "IV", "than", "II." ]
-}, {
-  "sentence_tokens" : [ "These", "results", "demonstrated", "that", "these", "risk", "signatures", "could", "affect", "the", "progression", "of", "glioma", "." ]
-}, {
-  "sentence_tokens" : [ "Our", "study", "assessed", "whether", "these", "signatures", "could", "interact", "to", "promote", "tumor", "progression", "." ]
-}, {
-  "sentence_tokens" : [ "The", "correlation", "analysis", "showed", "that", ",", "at", "the", "mRNA", "levels", ",", "there", "were", "obvious", "positive", "correlations", "between", "most", "of", "risk", "signatures", "(", "Figure", "7B", ")", ",", "such", "as", "RDM1", "and", "EXO1", "(", "r", "=", "0.53", ")", ",", "ANG", "and", "FAM46A", "(", "r", "=", "0.51", ")", ",", "APOBEC3F", "and", "FBXO17", "(", "r", "=", "0.54", ")", ",", "APOBEC3F", "and", "ANG", "(", "r", "=", "0.7", ")", "." ]
-}, {
-  "sentence_tokens" : [ "The", "Risk", "RBP", "Signatures", "Are", "Highly", "Expressed", "in", "Glioma", "Than", "Controls", "." ]
-}, {
-  "sentence_tokens" : [ "The", "expression", "of", "risk", "RBP", "signatures", "was", "compared", "in", "glioma", "(", "n", "=", "163", ")", "and", "control", "samples", "(", "n", "=", "207", ")", "in", "TCGA-GTEx", "database", "." ]
-}, {
-  "sentence_tokens" : [ "The", "results", "showed", "that", "ANG", "(", "Figure", "8A", ")", ",", "EXO1", "(", "Figure", "8B", ")", ",", "FBXO17", "(", "Figure", "8C", ")", ",", "IGF2BP3", "(", "Figure", "8D", ")", ",", "and", "NSUN7", "(", "Figure", "8E", ")", "displayed", "distinctly", "higher", "expression", "levels", "in", "glioma", "compared", "to", "controls", "(", "p", "<", "0.05", ")", "." ]
-}, {
-  "sentence_tokens" : [ "Furthermore", ",", "we", "validated", "their", "expression", "in", "10", "pairs", "of", "glioma", "and", "normal", "tissue", "specimens", "by", "RT-qPCR", "." ]
-}, {
-  "sentence_tokens" : [ "Our", "data", "confirmed", "the", "up-regulation", "of", "ANG", "(", "Figure", "9A", ")", ",", "EXO1", "(", "Figure", "9B", ")", ",", "FBXO17", "(", "Figure", "9C", ")", ",", "IGF2BP3", "(", "Figure", "9D", ")", ",", "and", "NSUN7", "(", "Figure", "9E", ")", "in", "glioma", "than", "normal", "samples", "(", "all", "p", "<", "0.0001", ")", "." ]
-}, {
-  "sentence_tokens" : [ "These", "findings", "revealed", "that", "these", "risk", "signatures", "could", "participate", "in", "the", "progression", "of", "glioma", "." ]
-}, {
-  "sentence_tokens" : [ "Discussion", "." ]
-}, {
-  "sentence_tokens" : [ "Recent", "research", "demonstrates", "that", "several", "RBPs", "have", "closely", "correlations", "with", "the", "malignant", "behaviors", "of", "glioma", "(", "14", ")", "." ]
-}, {
-  "sentence_tokens" : [ "Nevertheless", ",", "the", "functions", "of", "most", "of", "the", "RBPs", "in", "glioma", "tumorigenesis", "remain", "unclear", "(", "20", ")", "." ]
-}, {
-  "sentence_tokens" : [ "In", "this", "study", ",", "based", "on", "prognosis", "related", "RBPs", ",", "we", "established", "a", "ten-RBP", "signature", "for", "prognosis", "prediction", "in", "glioma", "." ]
-}, {
-  "sentence_tokens" : [ "Following", "multi-dataset", "verification", ",", "this", "signature", "could", "robustly", "predict", "clinical", "outcomes", "for", "glioma", "patients.Herein", ",", "40", "RBPs", "were", "differentially", "expressed", "between", "glioma", "WHO", "grade", "IV", "and", "II.", "Among", "them", ",", "39", "RBPs", "were", "correlated", "to", "prognosis", "of", "glioma", ",", "which", "might", "be", "involved", "in", "the", "malignancies", "of", "glioma", "." ]
-}, {
-  "sentence_tokens" : [ "Hence", ",", "we", "probed", "the", "biological", "functions", "involving", "these", "RBPs", "." ]
-}, {
-  "sentence_tokens" : [ "Based", "on", "them", ",", "we", "developed", "a", "ten-RBP", "signature", "for", "glioma", "." ]
-}, {
-  "sentence_tokens" : [ "The", "signature", "could", "be", "utilized", "for", "robustly", "predicting", "the", "prognosis", "of", "patients", "." ]
-}, {
-  "sentence_tokens" : [ "Both", "in", "the", "training", "and", "validation", "sets", ",", "high", "risk", "score", "was", "predictive", "of", "poorer", "prognosis", "." ]
-}, {
-  "sentence_tokens" : [ "AUCs", "were", "0.838", "and", "0.822", "in", "the", "two", "sets", ",", "respectively", ",", "suggesting", "the", "well", "performance", "." ]
-}, {
-  "sentence_tokens" : [ "Following", "adjustment", "with", "other", "clinical", "features", ",", "the", "signature", "was", "an", "independent", "prognostic", "factor", "." ]
-}, {
-  "sentence_tokens" : [ "As", "previous", "studies", ",", "several", "RBP", "signatures", "have", "been", "constructed", "for", "other", "cancers", "." ]
-}, {
-  "sentence_tokens" : [ "For", "example", ",", "Li", "et", "al.", "built", "up", "a", "nine-RBP", "gene", "signature", "for", "lung", "squamous", "cell", "carcinoma", "prognosis", "(", "21", ")", "." ]
-}, {
-  "sentence_tokens" : [ "A", "six-RBP", "model", "constructed", "by", "Wu", "et", "al.", "demonstrated", "a", "well", "performance", "for", "predicting", "the", "clinical", "outcomes", "of", "bladder", "cancer", "(", "22", ")", "." ]
-}, {
-  "sentence_tokens" : [ "However", ",", "so", "far", ",", "there", "is", "still", "a", "lack", "of", "RBP", "related", "signature", "for", "glioma", "." ]
-}, {
-  "sentence_tokens" : [ "Our", "research", "fills", "this", "gap", "at", "some", "extents.Our", "findings", "revealed", "that", "high-risk", "scores", "were", "markedly", "associated", "with", "various", "cancer", "related", "pathways", ",", "like", "hypoxia", ",", "TNF", "alpha", "signaling", "pathway", "via", "NF-kappa", "B", ",", "inflammatory", "response", ",", "mitotic", "spindle", ",", "PI3K-Akt-mTOR", ",", "Notch", ",", "interferon", "alpha", "response", ",", "interferon", "gamma", "response", "and", "glycolysis", "pathways", ",", "indicating", "that", "cancer", "related", "pathways", "were", "activated", "in", "glioma", "samples", "with", "high-risk", "scores", "." ]
-}, {
-  "sentence_tokens" : [ "These", "RBPs", "could", "affect", "glioma", "progression", "via", "mediating", "above", "pathways", "." ]
-}, {
-  "sentence_tokens" : [ "Hence", ",", "activation", "of", "cancer", "related", "pathways", "could", "be", "related", "to", "poor", "prognosis", "in", "high-risk", "score", "patients", "." ]
-}, {
-  "sentence_tokens" : [ "To", "improve", "the", "clinical", "application", "potential", "of", "RBPs", ",", "we", "constructed", "a", "nomogram", "combining", "the", "ten", "RBPs", "for", "assessment", "of", "the", "1-,", "2-,", "and", "3-year", "survival", "probability", "." ]
-}, {
-  "sentence_tokens" : [ "This", "nomogram", "was", "validated", "in", "the", "validation", "set", ",", "indicating", "the", "high", "application", "values", "." ]
-}, {
-  "sentence_tokens" : [ "After", "evaluation", "of", "calibration", "curves", ",", "the", "nomogram", "predicted", "5-year", "survival", "was", "highly", "consistent", "with", "the", "actual", "survival", ",", "suggesting", "that", "the", "nomogram", "possessed", "the", "potential", "as", "a", "scoring", "tool", "for", "predicting", "the", "clinical", "outcomes", "of", "patients.We", "further", "explored", "why", "the", "high-risk", "scores", "indicated", "poor", "clinical", "outcomes", "." ]
-}, {
-  "sentence_tokens" : [ "ScRNA-seq", "technology", "is", "widely", "used", "in", "basic", "scientific", "research", "and", "clinical", "research", "(", "25", ")", "." ]
-}, {
-  "sentence_tokens" : [ "Single", "cells", "have", "a", "place", "in", "many", "fields", "and", "are", "of", "great", "significance", "for", "the", "early", "diagnosis", ",", "tracking", "and", "individualized", "treatment", "of", "cancer", "(", "26", ",", "27", ")", "." ]
-}, {
-  "sentence_tokens" : [ "The", "information", "displayed", "by", "traditional", "sequencing", "methods", "is", "also", "average", "information", "at", "the", "multi-cell", "level", ",", "while", "sequencing", "at", "the", "single-cell", "level", "can", "completely", "reflect", "the", "transcriptome", "status", "of", "different", "cells", "in", "the", "same", "cell", "group", "(", "28", ")", "." ]
-}, {
-  "sentence_tokens" : [ "Due", "to", "the", "high", "heterogeneity", "and", "complexity", "of", "glioma", ",", "the", "survival", "time", "of", "patients", "in", "the", "same", "pathological", "stage", "is", "completely", "different", "." ]
-}, {
-  "sentence_tokens" : [ "It", "is", "of", "significance", "to", "present", "scRNA-seq", "analysis", "for", "glioma", "." ]
-}, {
-  "sentence_tokens" : [ "Herein", ",", "we", "detected", "the", "expression", "of", "the", "risk", "RBP", "signatures", "in", "different", "glioma", "cell", "types", "." ]
-}, {
-  "sentence_tokens" : [ "Our", "data", "suggested", "that", "IGF2BP3", ",", "NSUN7", ",", "EXO1", ",", "and", "FBXO17", "were", "highly", "expressed", "in", "AC-,", "MES-,", "NPC-,", "and", "OPC", "like", "malignant", "cells", ",", "which", "could", "be", "related", "to", "poor", "prognosis", "for", "glioma", "patients", "." ]
-}, {
-  "sentence_tokens" : [ "Furthermore", ",", "the", "four", "RBPs", "exhibited", "higher", "expression", "in", "WHO", "grade", "IV", "than", "II", ",", "indicating", "that", "they", "were", "associated", "with", "the", "malignancy", "of", "glioma", "." ]
-}, {
-  "sentence_tokens" : [ "After", "validation", "by", "RT-qPCR", ",", "IGF2BP3", ",", "NSUN7", ",", "EXO1", ",", "and", "FBXO17", "had", "higher", "expression", "levels", "in", "glioma", "than", "controls", "." ]
-}, {
-  "sentence_tokens" : [ "As", "previous", "studies", ",", "IGF2BP3", "facilitated", "viability", "and", "migration", "for", "glioma", "cells", "(", "29", ")", "." ]
-}, {
-  "sentence_tokens" : [ "NSUN7", "is", "a", "risk", "factor", "for", "lower-grade", "glioma", "patients", "(", "30", ")", "." ]
-}, {
-  "sentence_tokens" : [ "EXO1", "is", "associated", "with", "shorter", "survival", "time", "and", "hyposensitivity", "to", "temozolomide", "treatment", "in", "glioma", "(", "31", ")", "." ]
-}, {
-  "sentence_tokens" : [ "High", "FBXO17", "expression", "could", "independently", "predict", "the", "clinical", "outcomes", "for", "high-grade", "glioma", "(", "32", ")", "." ]
-}, {
-  "sentence_tokens" : [ "Combining", "our", "results", "and", "previous", "research", ",", "these", "risk", "RBPs", "could", "accelerate", "the", "malignant", "behaviors", "of", "glioma.In", "this", "study", ",", "a", "ten-RBP", "signature", "was", "constructed", "for", "glioma", "prognosis", "." ]
-}, {
-  "sentence_tokens" : [ "This", "signature", "could", "independently", "predict", "the", "prognosis", "of", "patients", "with", "high", "accuracy", "and", "sensitivity", "." ]
-}, {
-  "sentence_tokens" : [ "Combining", "RNA-seq", "and", "scRNA-seq", "analysis", ",", "we", "found", "that", "the", "four", "risk", "RBPs", "could", "contribute", "to", "the", "malignant", "behaviors", "of", "glioma", "." ]
-}, {
-  "sentence_tokens" : [ "Their", "roles", "should", "be", "investigated", "by", "basic", "experiments", "and", "larger", "cohorts", "." ]
-}, {
-  "sentence_tokens" : [ "Conclusion", "." ]
-}, {
-  "sentence_tokens" : [ "The", "10-RBP", "gene", "signature", "exhibited", "a", "predictive", "efficacy", "for", "glioma", "prognosis", "under", "multi-data", "set", "verification", "." ]
-}, {
-  "sentence_tokens" : [ "This", "signature", "may", "possess", "a", "promising", "application", "for", "clinical", "decision", "making", "as", "well", "as", "individualized", "therapy", "." ]
-}, {
-  "sentence_tokens" : [ "Data", "Availability", "Statement", "." ]
-}, {
-  "sentence_tokens" : [ "The", "original", "contributions", "presented", "in", "the", "study", "are", "included", "in", "the", "article", "and", "Supplementary", "Material", ",", "further", "inquiries", "can", "be", "directed", "to", "the", "corresponding", "author/s", "." ]
-}, {
-  "sentence_tokens" : [ "Ethics", "Statement", "." ]
-}, {
-  "sentence_tokens" : [ "The", "studies", "involving", "human", "participants", "were", "reviewed", "and", "approved", "by", "the", "Ethics", "Committee", "of", "The", "Second", "Affiliated", "Hospital", "of", "Nanchang", "university", "(", "2020018", ")", "." ]
-}, {
-  "sentence_tokens" : [ "The", "patients", "and", "participants", "provided", "their", "written", "informed", "consent", "to", "participate", "in", "this", "study", "." ]
-}, {
-  "sentence_tokens" : [ "Author", "Contributions", "." ]
-}, {
-  "sentence_tokens" : [ "SS", "conceived", "and", "designed", "the", "study", "." ]
-}, {
-  "sentence_tokens" : [ "CS", "and", "ZC", "conducted", "most", "of", "the", "experiments", "and", "data", "analysis", ",", "and", "wrote", "the", "manuscript", "." ]
-}, {
-  "sentence_tokens" : [ "JL", "and", "JZ", "participated", "in", "collecting", "data", "and", "helped", "to", "draft", "the", "manuscript", "." ]
-}, {
-  "sentence_tokens" : [ "All", "authors", "contributed", "to", "the", "article", "and", "approved", "the", "submitted", "version", "." ]
-}, {
-  "sentence_tokens" : [ "Conflict", "of", "Interest", "." ]
-}, {
-  "sentence_tokens" : [ "The", "authors", "declare", "that", "the", "research", "was", "conducted", "in", "the", "absence", "of", "any", "commercial", "or", "financial", "relationships", "that", "could", "be", "construed", "as", "a", "potential", "conflict", "of", "interest", "." ]
+  "sentence_tokens" : [ "Development", "and", "Multi-Data", "Set", "Verification", "of", "an", "RNA", "Binding", "Protein", "Signature", "for", "Prognosis", "Prediction", "in", "Glioma", "." ],
+  "entity_one_indices" : [ 15, 16 ],
+  "entity_two_indices" : [ 7, 8, 9 ]
+}, {
+  "sentence_tokens" : [ "Objective", ":", "Increasing", "evidence", "emphasizes", "the", "clinical", "implications", "of", "RNA", "binding", "proteins", "(", "RBPs", ")", "in", "cancers", "." ],
+  "entity_one_indices" : [ 13, 14 ],
+  "entity_two_indices" : [ 9, 10, 11 ]
+}, {
+  "sentence_tokens" : [ "This", "study", "aimed", "to", "develop", "a", "RBP", "signature", "for", "predicting", "prognosis", "in", "glioma.Methods", ":", "Two", "glioma", "datasets", "as", "training", "(", "n", "=", "693", ")", "and", "validation", "(", "n", "=", "325", ")", "sets", "were", "retrieved", "from", "the", "CGGA", "database", "." ],
+  "entity_one_indices" : [ 15, 16 ],
+  "entity_two_indices" : [ 6, 7 ]
+}, {
+  "sentence_tokens" : [ "In", "the", "training", "set", ",", "univariate", "Cox", "regression", "analysis", "was", "conducted", "to", "screen", "prognosis", "related", "RBPs", "based", "on", "differentially", "expressed", "RBPs", "between", "WHO", "grade", "II", "and", "IV", "." ],
+  "entity_one_indices" : [ 15, 16 ],
+  "entity_two_indices" : [ 6, 7 ]
+}, {
+  "sentence_tokens" : [ "These", "RBPs", "may", "affect", "the", "progression", "of", "glioma", "." ],
+  "entity_one_indices" : [ 7, 8 ],
+  "entity_two_indices" : [ 1, 2 ]
+}, {
+  "sentence_tokens" : [ "In", "line", "with", "the", "2016", "World", "Health", "Organization", "(", "WHO", ")", "classification", ",", "glioblastoma", "(", "GBM", ")", "is", "the", "most", "common", "histology", "type", ",", "which", "corresponds", "to", "WHO", "grade", "IV", ",", "with", "a", "median", "survival", "of", "<", "2", "years", "and", "a", "5-year", "survival", "rate", "of", "5", "%", "(", "2", ")", "." ],
+  "entity_one_indices" : [ 22, 23 ],
+  "entity_two_indices" : [ 13, 14 ]
+}, {
+  "sentence_tokens" : [ "The", "incidence", "of", "lower", "grade", "gliomas", "(", "LGG", ")", "WHO", "grade", "II", "is", "relatively", "lower", "and", "patients", "with", "grade", "II", "exhibit", "better", "clinical", "outcomes", "and", "more", "sensitive", "to", "therapies", "(", "3", ")", "." ],
+  "entity_one_indices" : [ 7, 8 ],
+  "entity_two_indices" : [ 5, 6 ]
+}, {
+  "sentence_tokens" : [ "Totally", ",", "~", "50", "%", "of", "RBPs", "exert", "post-transcriptional", "mediated", "effects", "on", "gene", "expression", "(", "8)", "." ],
+  "entity_one_indices" : [ 12, 13, 14 ],
+  "entity_two_indices" : [ 6, 7 ]
+}, {
+  "sentence_tokens" : [ "Increasing", "evidence", "highlights", "the", "critical", "roles", "of", "RBPs", "in", "the", "malignant", "biological", "behaviors", "in", "gliomas", "(", "10", ")", "." ],
+  "entity_one_indices" : [ 14, 15 ],
+  "entity_two_indices" : [ 7, 8 ]
+}, {
+  "sentence_tokens" : [ "RBP", "SRSF3", "regulates", "RNA", "alternative", "splicing", ",", "thereby", "inducing", "glioblastoma", "occurrence", "via", "influencing", "key", "biological", "processes", "(", "13", ")", "." ],
+  "entity_one_indices" : [ 9, 10 ],
+  "entity_two_indices" : [ 0, 1, 2 ]
+}, {
+  "sentence_tokens" : [ "Moreover", ",", "it", "is", "of", "significance", "to", "understand", "the", "prognostic", "implications", "of", "RBPs", "in", "glioma", "." ],
+  "entity_one_indices" : [ 14, 15 ],
+  "entity_two_indices" : [ 12, 13 ]
+}, {
+  "sentence_tokens" : [ "Herein", ",", "our", "findings", "developed", "a", "RBP", "signature", "for", "predicting", "the", "clinical", "outcomes", "of", "glioma", "patients", "." ],
+  "entity_one_indices" : [ 14, 15 ],
+  "entity_two_indices" : [ 6, 7 ]
+}, {
+  "sentence_tokens" : [ "Two", "glioma", "datasets", "(", "n", "=", "693", "or", "325", ")", "containing", "mRNA", "sequencing", "and", "corresponding", "clinical", "information", "were", "retrieved", "from", "the", "Chinese", "Glioma", "Genome", "Atlas", "(", "CGGA", ")", "." ],
+  "entity_one_indices" : [ 22, 23 ],
+  "entity_two_indices" : [ 1, 2 ]
+}, {
+  "sentence_tokens" : [ "Hallmark", "gene", "sets", "were", "obtained", "from", "the", "Molecular", "Signatures", "Database", "v7.2", "." ],
+  "entity_one_indices" : [ 8, 9, 10, 11 ],
+  "entity_two_indices" : [ 0, 1, 2, 3 ]
+}, {
+  "sentence_tokens" : [ "Based", "on", "the", "coefficients", "of", "the", "ten", "RBPs", "from", "the", "multivariate", "Cox", "regression", "analysis", ",", "the", "score", "was", "determined", "for", "each", "RBP", "." ],
+  "entity_one_indices" : [ 21, 22 ],
+  "entity_two_indices" : [ 11, 12 ]
+}, {
+  "sentence_tokens" : [ "RT-qPCR", "was", "presented", "by", "the", "miScript", "SYBR", "Green", "PCR", "Kit", "(", "Applied", "Biosystems", ",", "USA", ")", "." ],
+  "entity_one_indices" : [ 9, 10 ],
+  "entity_two_indices" : [ 0, 1 ]
+}, {
+  "sentence_tokens" : [ "Using", "GraphPad", "Prism", "7.0", ",", "the", "differences", "between", "tumor", "and", "normal", "groups", "were", "determined", "using", "student", "'s", "t-test", "." ],
+  "entity_one_indices" : [ 8, 9 ],
+  "entity_two_indices" : [ 2, 3 ]
+}, {
+  "sentence_tokens" : [ "Heat", "maps", "visualized", "the", "expression", "patterns", "of", "these", "RBPs", "between", "glioma", "II", "and", "IV", "samples", "(", "Figure", "1B", ")", "." ],
+  "entity_one_indices" : [ 10, 11 ],
+  "entity_two_indices" : [ 0, 1 ]
+}, {
+  "sentence_tokens" : [ "To", "further", "probe", "the", "biological", "functions", "of", "these", "prognosis", "related", "RBPs", ",", "we", "carried", "out", "KEGG", "and", "GO", "enrichment", "analysis", "." ],
+  "entity_one_indices" : [ 17, 18 ],
+  "entity_two_indices" : [ 10, 11 ]
+}, {
+  "sentence_tokens" : [ "Our", "data", "suggested", "that", "RNA", "transport", ",", "mRNA", "surveillance", "and", "RNA", "degradation", "pathways", "were", "distinctly", "enriched", ",", "as", "shown", "in", "Figure", "1D", "." ],
+  "entity_one_indices" : [ 10, 11, 12 ],
+  "entity_two_indices" : [ 4, 5, 6 ]
+}, {
+  "sentence_tokens" : [ "Establishment", "of", "an", "RBP", "Signature", "for", "Prognosis", "Prediction", "in", "Glioma", "." ],
+  "entity_one_indices" : [ 9, 10 ],
+  "entity_two_indices" : [ 3, 4 ]
+}, {
+  "sentence_tokens" : [ "Our", "multivariate", "cox", "regression", "analysis", "revealed", "the", "independency", "of", "the", "predictive", "efficacy", "of", "the", "signature", "(", "HR", ":", "1.217", ",", "95", "%", "CI", ":", "1.143", "-", "1.295", ",", "p", "<", "0.001", ";", "Figure", "2H", ")", "." ],
+  "entity_one_indices" : [ 22, 23 ],
+  "entity_two_indices" : [ 16, 17 ]
+}, {
+  "sentence_tokens" : [ "Validation", "of", "the", "RBP", "Signature", "for", "Predicting", "Prognosis", "of", "Glioma", "." ],
+  "entity_one_indices" : [ 9, 10 ],
+  "entity_two_indices" : [ 3, 4 ]
+}, {
+  "sentence_tokens" : [ "No", "difference", "in", "WNT", "beta-Catenin", "signaling", "was", "found", "between", "high", "and", "low", "risk", "score", "groups", "." ],
+  "entity_one_indices" : [ 4, 5 ],
+  "entity_two_indices" : [ 3, 4 ]
+}, {
+  "sentence_tokens" : [ "According", "to", "the", "influence", "levels", "of", "each", "RBP", "in", "the", "model", "on", "the", "clinical", "outcomes", ",", "each", "score", "of", "the", "RBP", "was", "assigned", ",", "and", "the", "total", "score", "was", "determined", "." ],
+  "entity_one_indices" : [ 20, 21 ],
+  "entity_two_indices" : [ 7, 8 ]
+}, {
+  "sentence_tokens" : [ "Single", "Cell", "RNA-seq", "Reveals", "the", "Expression", "of", "the", "Risk", "RBP", "Signatures", "in", "Glioma", "." ],
+  "entity_one_indices" : [ 12, 13 ],
+  "entity_two_indices" : [ 9, 10 ]
+}, {
+  "sentence_tokens" : [ "The", "Risk", "RBP", "Signatures", "Are", "Highly", "Expressed", "in", "Glioma", "Grade", "IV", "Than", "II." ],
+  "entity_one_indices" : [ 8, 9 ],
+  "entity_two_indices" : [ 2, 3 ]
+}, {
+  "sentence_tokens" : [ "We", "further", "compared", "the", "expression", "levels", "of", "the", "ten", "RBP", "signatures", "in", "glioma", "grade", "II", "and", "IV", "samples", "." ],
+  "entity_one_indices" : [ 12, 13 ],
+  "entity_two_indices" : [ 9, 10 ]
+}, {
+  "sentence_tokens" : [ "The", "Risk", "RBP", "Signatures", "Are", "Highly", "Expressed", "in", "Glioma", "Than", "Controls", "." ],
+  "entity_one_indices" : [ 8, 9 ],
+  "entity_two_indices" : [ 2, 3 ]
+}, {
+  "sentence_tokens" : [ "The", "expression", "of", "risk", "RBP", "signatures", "was", "compared", "in", "glioma", "(", "n", "=", "163", ")", "and", "control", "samples", "(", "n", "=", "207", ")", "in", "TCGA-GTEx", "database", "." ],
+  "entity_one_indices" : [ 9, 10 ],
+  "entity_two_indices" : [ 4, 5 ]
+}, {
+  "sentence_tokens" : [ "Furthermore", ",", "we", "validated", "their", "expression", "in", "10", "pairs", "of", "glioma", "and", "normal", "tissue", "specimens", "by", "RT-qPCR", "." ],
+  "entity_one_indices" : [ 16, 17 ],
+  "entity_two_indices" : [ 10, 11 ]
+}, {
+  "sentence_tokens" : [ "In", "this", "study", ",", "based", "on", "prognosis", "related", "RBPs", ",", "we", "established", "a", "ten-RBP", "signature", "for", "prognosis", "prediction", "in", "glioma", "." ],
+  "entity_one_indices" : [ 19, 20 ],
+  "entity_two_indices" : [ 8, 9 ]
+}, {
+  "sentence_tokens" : [ "However", ",", "so", "far", ",", "there", "is", "still", "a", "lack", "of", "RBP", "related", "signature", "for", "glioma", "." ],
+  "entity_one_indices" : [ 15, 16 ],
+  "entity_two_indices" : [ 11, 12 ]
+}, {
+  "sentence_tokens" : [ "These", "RBPs", "could", "affect", "glioma", "progression", "via", "mediating", "above", "pathways", "." ],
+  "entity_one_indices" : [ 4, 5 ],
+  "entity_two_indices" : [ 1, 2 ]
+}, {
+  "sentence_tokens" : [ "As", "previous", "studies", ",", "IGF2BP3", "facilitated", "viability", "and", "migration", "for", "glioma", "cells", "(", "29", ")", "." ],
+  "entity_one_indices" : [ 10, 11 ],
+  "entity_two_indices" : [ 4, 5 ]
+}, {
+  "sentence_tokens" : [ "NSUN7", "is", "a", "risk", "factor", "for", "lower-grade", "glioma", "patients", "(", "30", ")", "." ],
+  "entity_one_indices" : [ 7, 8 ],
+  "entity_two_indices" : [ 0, 1 ]
+}, {
+  "sentence_tokens" : [ "High", "FBXO17", "expression", "could", "independently", "predict", "the", "clinical", "outcomes", "for", "high-grade", "glioma", "(", "32", ")", "." ],
+  "entity_one_indices" : [ 11, 12 ],
+  "entity_two_indices" : [ 1, 2 ]
+}, {
+  "sentence_tokens" : [ "Combining", "our", "results", "and", "previous", "research", ",", "these", "risk", "RBPs", "could", "accelerate", "the", "malignant", "behaviors", "of", "glioma.In", "this", "study", ",", "a", "ten-RBP", "signature", "was", "constructed", "for", "glioma", "prognosis", "." ],
+  "entity_one_indices" : [ 26, 27 ],
+  "entity_two_indices" : [ 21, 22 ]
+}, {
+  "sentence_tokens" : [ "The", "10-RBP", "gene", "signature", "exhibited", "a", "predictive", "efficacy", "for", "glioma", "prognosis", "under", "multi-data", "set", "verification", "." ],
+  "entity_one_indices" : [ 9, 10 ],
+  "entity_two_indices" : [ 1, 2, 3 ]
 } ]
