@@ -111,7 +111,7 @@ def main():
 
     # get confusion matrix
     print("Confusion Matrix:")
-    cm = metrics.multilabel_confusion_matrix(y_true=y_true, y_pred=y_pred, labels=[0,1,2,3,4])
+    cm = metrics.multilabel_confusion_matrix(y_true=y_true, y_pred=y_pred, labels=[0,1,2])
 
     print(cm)
 """
@@ -132,6 +132,7 @@ def tokenize(examples):
 
 
 def add_entity_markers(text):
+    print("inside add_entity_markers")
     for i in range(0, len(text)): 
         og_sentence = text[i]['sentence_tokens']
         new_sentence = []
@@ -181,7 +182,10 @@ def add_entity_markers(text):
                     new_sentence.append("[SEP]")
                 else:
                     new_sentence.append(og_sentence[j])
-                
+            
+            text[i]['sentence_tokens'] = new_sentence
+
+
             # print("\n---------------------")
             # print("CONTROLLER INDICES: ", controller_indices)
             # print("CONTROLLED INDICES: ", controlled_indices)
@@ -194,8 +198,6 @@ def add_entity_markers(text):
 
             # print("\nORIGINAL: ", og_sentence)
             # print("\nNEW:      ", new_sentence)
-
-
 
         if (('entity_one_indices' in text[i]) & ('entity_two_indices' in text[i])):
             e1_indices = text[i]['entity_one_indices']
@@ -243,6 +245,7 @@ def add_entity_markers(text):
                     new_sentence.append("[SEP]")
                 else:
                     new_sentence.append(og_sentence[j])
+            text[i]['sentence_tokens'] = new_sentence
             # print("\n---------------------\n")
             # print("E1 INDICES: ", e1_indices)
             # print("E2 INDICES: ", e2_indices)
@@ -252,7 +255,9 @@ def add_entity_markers(text):
             #     print("LABEL:", text[i]['label'])
             # print("\nORIGINAL: ", og_sentence)
             # print("\nNEW:      ", new_sentence)
-
+                
+    if (configuration == 3):
+        pass
     return text
 
 
@@ -268,15 +273,14 @@ def read_data():
     directory1 = 'sample_training_data'
     directory2 = 'negative_training_data'
 
-    count = 0 # for testing with smaller sample sizes
     for filename in os.listdir(directory1):
         if filename.endswith('.json'):
             with open(os.path.join(directory1, filename)) as f:
                 data = json.load(f)
                 if (len(data) > 0):
                     json_data.append(data)
-                    if (len(json_data) > 75): # for testing
-                        break
+                    # if (len(json_data) > 5): # for testing
+                    #     break
 
     for filename in os.listdir(directory2):
         if filename.endswith('.json'):
@@ -284,9 +288,8 @@ def read_data():
                 data = json.load(f)
                 if (len(data) > 0):
                     json_data.append(data)
-                    count += 1
-                    if (len(json_data) > 100): # for testing
-                        break
+                    # if (len(json_data) > 10): # for testing
+                    #     break
                
     list_no_dups = remove_duplicates(json_data)
     random.shuffle(list_no_dups)
@@ -312,6 +315,7 @@ def read_data():
         data = add_entity_markers(list_no_dups)
     else:
         data = list_no_dups
+
     return data
 
 def remove_duplicates(list):
