@@ -105,7 +105,7 @@ def main():
     print("~ Prediction output for eval_ds:\n", predictions, "\n")
     y_true = predictions.label_ids
     y_pred = np.argmax(predictions.predictions, axis=-1)
-    target_names = ['Positive_activation', 'Negative_activation', 'No_relation']
+    target_names = ['Negative_activation','Positive_activation', 'No_relation']
 
     print(classification_report(y_true, y_pred, target_names=target_names))
 
@@ -279,8 +279,8 @@ def read_data():
                 data = json.load(f)
                 if (len(data) > 0):
                     json_data.append(data)
-                    # if (len(json_data) > 5): # for testing
-                    #     break
+                    if (len(json_data) > 3): # for testing
+                        break
 
     for filename in os.listdir(directory2):
         if filename.endswith('.json'):
@@ -288,8 +288,8 @@ def read_data():
                 data = json.load(f)
                 if (len(data) > 0):
                     json_data.append(data)
-                    # if (len(json_data) > 10): # for testing
-                    #     break
+                    if (len(json_data) > 6): # for testing
+                        break
                
     list_no_dups = remove_duplicates(json_data)
     random.shuffle(list_no_dups)
