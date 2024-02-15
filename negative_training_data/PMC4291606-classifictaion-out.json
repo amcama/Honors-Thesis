@@ -1,53 +1,281 @@
-[ {
-  "sentence_tokens" : [ "Spontaneous", "closure", "of", "Patent", "Ductus", "Arteriosus", "(", "PDA", ")", "could", "happen", "in", "the", "first", "year", ",", "but", "since", "it", "increases", "the", "risk", "of", "endocarditis", ",", "its", "closure", "is", "suggested", "to", "happen", "in", "6-month", "age", ",", "but", "drug", "induced", "or", "surgical", "closure", "is", "needed", "for", "infants", "who", "are", "very", "birth", "low", "weight", "(", "under", "1000", "g", ")", "." ],
-  "event_indices" : [ 18, 19, 20, 21, 22, 23, 24 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 18, 19 ],
-  "controlled_indices" : [ 23, 24 ],
-  "trigger_indices" : [ 19, 20 ],
-  "rule_name" : "Positive_activation_syntax_1_verb, pronominalMatch",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Also", "it", "showed", "that", "giving", "indomethacin", "causes", "5", "times", "reduction", "in", "prevalence", "of", "small", "PDA", "and", "no", "large", "PDA", "case", "was", "found", "in", "study", "group", "." ],
-  "event_indices" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 ],
-  "type" : "Negative_activation",
-  "polarity" : false,
-  "controller_indices" : [ 1, 2 ],
-  "controlled_indices" : [ 14, 15 ],
-  "trigger_indices" : [ 6, 7 ],
-  "rule_name" : "Positive_activation_syntax_1_verb, pronominalMatch",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Introduction", ":", "We", "decided", "to", "investigate", "the", "effects", "of", "injecting", "Indomethacin", "on", "reducing", "complications", "of", "Patent", "Ductus", "Arteriosus", "(", "PDA", ")", "and", "the", "need", "for", "prolonged", "mechanical", "ventilation", "." ],
-  "entity_one_indices" : [ 19, 20 ],
-  "entity_two_indices" : [ 15, 16, 17, 18 ]
-}, {
-  "sentence_tokens" : [ "The", "main", "mechanism", "of", "arterial", "duct", "closure", "has", "not", "understood", "yet", ",", "but", "increasing", "oxygen", "pressure", "and", "releasing", "vasoactive", "agents", "have", "important", "roles", "in", "duct", "'", "s", "closure", "process", "in", "after-birth", "step", "." ],
-  "entity_one_indices" : [ 31, 32 ],
-  "entity_two_indices" : [ 14, 15 ]
-}, {
-  "sentence_tokens" : [ "PDA", "therapy", "consists", "of", "restricting", "fluid", "intake", ",", "administering", "prostaglandin", "inhibitors", "(", "such", "as", "indomethacin", ")", "and", "surgical", "closure", "." ],
-  "entity_one_indices" : [ 9, 10 ],
-  "entity_two_indices" : [ 0, 1 ]
-}, {
-  "sentence_tokens" : [ "This", "study", "showed", "that", "symptomatic", "PDA", ",", "Grade", "1-3", "IVH", ",", "and", "duration", "of", "respiratory", "support", "were", "significantly", "higher", "in", "the", "control", "group", "." ],
-  "entity_one_indices" : [ 7, 8, 9, 10 ],
-  "entity_two_indices" : [ 5, 6 ]
-}, {
-  "sentence_tokens" : [ "One", "of", "the", "important", "goals", "of", "prophylactic", "intravenous", "indomethacin", "is", "preventing", "PDA", "and", "reducing", "associated", "complications", "in", "infants", "with", "extremely", "low", "body", "weight", "(", "ELBW", ")", "by", "early", "and", "permanent", "closing", "of", "arterial", "ducts", "." ],
-  "entity_one_indices" : [ 21, 22, 23 ],
-  "entity_two_indices" : [ 11, 12 ]
-}, {
-  "sentence_tokens" : [ "Spontaneous", "arterial", "duct", "closure", "happens", "in", "less", "than", "40", "%", "of", "infants", "under", "26", "weeks", "and", "in", "more", "than", "70", "%", "of", "infants", "over", "30", "week", ",", "and", "prophylactic", "indomethacin", "in", "the", "first", "6", "hours", "of", "birth", "have", "reduced", "symptomatic", "PDA", "in", "infants", "under", "1000", "g", "and", "also", "decreased", "IVH", "grade", "3", "&", "4", "cases", "." ],
-  "entity_one_indices" : [ 49, 50, 51, 52, 53, 54, 55 ],
-  "entity_two_indices" : [ 40, 41 ]
-}, {
-  "sentence_tokens" : [ "In", "a", "Cochrane", "review", "about", "giving", "prophylactic", "intravenous", "indomethacin", "for", "reducing", "mortality", "and", "disability", "it", "was", "mentioned", "that", "in", "infants", "under", "1500", "g", "it", "reduces", "symptomatic", "PDA", "cases", "and", "reduces", "IVH", "grade", "3", "&", "4", "." ],
-  "entity_one_indices" : [ 30, 31, 32, 33, 34, 35 ],
-  "entity_two_indices" : [ 26, 27 ]
-}, {
-  "sentence_tokens" : [ "This", "study", "was", "also", "registered", "at", "Iranian", "Registry", "of", "Clinical", "Trials", "by", "code", "of", "IRCT201107117010N1", "(", "http://www.irct.ir", ")", "Competing", "interests", "." ],
-  "entity_one_indices" : [ 16, 17 ],
-  "entity_two_indices" : [ 14, 15 ]
-} ]
+{
+  "regulations" : [ {
+    "sentence_tokens" : [ "Spontaneous", "closure", "of", "Patent", "Ductus", "Arteriosus", "(", "PDA", ")", "could", "happen", "in", "the", "first", "year", ",", "but", "since", "it", "increases", "the", "risk", "of", "endocarditis", ",", "its", "closure", "is", "suggested", "to", "happen", "in", "6-month", "age", ",", "but", "drug", "induced", "or", "surgical", "closure", "is", "needed", "for", "infants", "who", "are", "very", "birth", "low", "weight", "(", "under", "1000", "g", ")", "." ],
+    "event_indices" : [ 18, 19, 20, 21, 22, 23, 24 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 18, 19 ],
+    "controlled_indices" : [ 23, 24 ],
+    "trigger_indices" : [ 19, 20 ],
+    "rule_name" : "Positive_activation_syntax_1_verb, pronominalMatch",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "Also", "it", "showed", "that", "giving", "indomethacin", "causes", "5", "times", "reduction", "in", "prevalence", "of", "small", "PDA", "and", "no", "large", "PDA", "case", "was", "found", "in", "study", "group", "." ],
+    "event_indices" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 ],
+    "type" : "Negative_activation",
+    "polarity" : false,
+    "controller_indices" : [ 1, 2 ],
+    "controlled_indices" : [ 14, 15 ],
+    "trigger_indices" : [ 6, 7 ],
+    "rule_name" : "Positive_activation_syntax_1_verb, pronominalMatch",
+    "rule" : null
+  } ],
+  "hardInstances" : [ {
+    "sentence_tokens" : [ "Spontaneous", "closure", "of", "Patent", "Ductus", "Arteriosus", "(", "PDA", ")", "could", "happen", "in", "the", "first", "year", ",", "but", "since", "it", "increases", "the", "risk", "of", "endocarditis", ",", "its", "closure", "is", "suggested", "to", "happen", "in", "6-month", "age", ",", "but", "drug", "induced", "or", "surgical", "closure", "is", "needed", "for", "infants", "who", "are", "very", "birth", "low", "weight", "(", "under", "1000", "g", ")", "." ],
+    "entities_indices" : [ [ 3, 4, 5, 6 ], [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "Also", "it", "showed", "that", "giving", "indomethacin", "causes", "5", "times", "reduction", "in", "prevalence", "of", "small", "PDA", "and", "no", "large", "PDA", "case", "was", "found", "in", "study", "group", "." ],
+    "entities_indices" : [ [ 18, 19 ] ]
+  } ],
+  "withoutRegulations" : [ {
+    "sentence_tokens" : [ "This", "study", "was", "also", "registered", "at", "Iranian", "Registry", "of", "Clinical", "Trials", "by", "code", "of", "IRCT201107117010N1", "(", "http://www.irct.ir", ")", "Competing", "interests", "." ],
+    "entities_indices" : [ [ 14, 15 ], [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "Effects", "of", "Intravenous", "Indomethacin", "on", "Reduction", "of", "Symptomatic", "Patent", "Ductus", "Arteriosus", "Cases", "and", "Decreasing", "the", "Need", "for", "Prolonged", "Mechanical", "Ventilation", "." ],
+    "entities_indices" : [ [ 8, 9, 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "Results", ":", "Symptomatic", "PDA", "rate", "was", "significantly", "higher", "in", "the", "control", "group", "(", "25.7", "%", "vs.", "0", "%", ";", "P", "<=0", ".001", ")", "." ],
+    "entities_indices" : [ [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "Prostaglandins", "(", "PG", ")", "E1", ",", "E2", ",", "and", "I2", "cause", "arterial", "ducts", "to", "remain", "open", "and", "prostaglandin", "synthesis", "inhibitors", "cause", "shrinkage", "of", "arterial", "ducts", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 2, 3 ], [ 4, 5 ], [ 6, 7 ], [ 9, 10 ], [ 17, 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "a", "Cochrane", "review", "about", "giving", "prophylactic", "intravenous", "indomethacin", "for", "reducing", "mortality", "and", "disability", "it", "was", "mentioned", "that", "in", "infants", "under", "1500", "g", "it", "reduces", "symptomatic", "PDA", "cases", "and", "reduces", "IVH", "grade", "3", "&", "4", "." ],
+    "entities_indices" : [ [ 26, 27 ], [ 30, 31, 32, 33, 34, 35 ] ]
+  }, {
+    "sentence_tokens" : [ "Starting", "intravenous", "indomethacin", "in", "the", "first", "12", "hours", "in", "infants", "under", "30", "weeks", "and", "weight", "of", "400-1250", "have", "reduced", "PDA", "cases", "and", "the", "need", "for", "surgery", "." ],
+    "entities_indices" : [ [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "After", "birth", ",", "indomethacin", "causes", "shrinkage", ",", "ischemia", "and", "rearrangement", "in", "the", "structure", "of", "the", "arterial", "duct", ",", "duct", "closure", "and", "reduces", "the", "need", "for", "surgical", "intervention", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "Exclusion", "criteria", "was", "consisted", "of", ":", "1-", "Certain", "congenital", "abnormalities", "2-", "Despite", "the", "severe", "asphyxia", "(", "Fifth", "minute", "apgar", "score", "<", "7", "or", "being", "initial", "pH", "less", "than", "7.1", ")", "3-", "Moderate", "thrombocytopenia", "(", "50,000/mu", "L", ")", "." ],
+    "entities_indices" : [ [ 8, 9, 10 ], [ 14, 15 ], [ 25, 26 ], [ 32, 33 ] ]
+  }, {
+    "sentence_tokens" : [ "Statistical", "analysis", "was", "performed", "by", "SPSS-16", "(", "SPSS", "Inc", ".,", "Chicago", ",", "USA", ")", "." ],
+    "entities_indices" : [ [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "Introduction", ":", "We", "decided", "to", "investigate", "the", "effects", "of", "injecting", "Indomethacin", "on", "reducing", "complications", "of", "Patent", "Ductus", "Arteriosus", "(", "PDA", ")", "and", "the", "need", "for", "prolonged", "mechanical", "ventilation", "." ],
+    "entities_indices" : [ [ 15, 16, 17, 18 ], [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "Incidence", "of", "grade", "1-3", "intraventricular", "hemorrhage", "was", "higher", "in", "the", "control", "group", "and", "the", "ratio", "of", "needed", "time", "for", "respiratory", "support", "in", "the", "control", "group", "to", "the", "case", "group", "was", "approximately", "2.1", "." ],
+    "entities_indices" : [ [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "Our", "study", "showed", "that", "giving", "prophylactic", "intravenous", "indomethacin", "to", "preterm", "infants", "who", "are", "equal", "and", "under", "32", "weeks", "leads", "to", "2.8", "times", "reduction", "in", "the", "number", "of", "ventilator", "needed", "days", ",", "and", "2", "times", "reduction", "in", "need", "for", "NCPAP", "in", "study", "group", "." ],
+    "entities_indices" : [ [ 38, 39 ] ]
+  }, {
+    "sentence_tokens" : [ "Also", "31", "infants", "(", "94.92", "%", ")", "from", "study", "group", "needed", "for", "NCPAP", "for", "4.17", "+/-", "4.26", "days", "and", "31", "infants", "(", "88.57", "%", ")", "in", "control", "group", "needed", "it", "for", "2.03", "+/-", "1.27", "days", "." ],
+    "entities_indices" : [ [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "4-", "High", "serum", "creatinine", "(", "Cr", ")", "1.8", "mg/dl", "5-", "The", "obvious", "bleeding", "(", "respiratory", ",", "digestive", ",", "urinary", ",", "skin", "or", "mucous", ")", "6-", "Receiving", "indomethacin", "by", "mother", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 5, 6 ], [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "main", "mechanism", "of", "arterial", "duct", "closure", "has", "not", "understood", "yet", ",", "but", "increasing", "oxygen", "pressure", "and", "releasing", "vasoactive", "agents", "have", "important", "roles", "in", "duct", "'", "s", "closure", "process", "in", "after-birth", "step", "." ],
+    "entities_indices" : [ [ 14, 15 ], [ 31, 32 ] ]
+  }, {
+    "sentence_tokens" : [ "PDA", "therapy", "consists", "of", "restricting", "fluid", "intake", ",", "administering", "prostaglandin", "inhibitors", "(", "such", "as", "indomethacin", ")", "and", "surgical", "closure", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "Prophylactic", "intravenous", "indomethacin", "caused", "significant", "differences", "in", "need", "for", "ventilation", ",", "C-PAP", ",", "and", "in", "using", "nasal", "cannula", "with", "high", "frequency", "or", "oxy", "hood", "." ],
+    "entities_indices" : [ [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "Methods", ":", "During", "this", "randomized", "clinical", "trial", ",", "70", "premature", "infants", "with", "matched", "gestational", "age", "and", "birth", "weight", "were", "divided", "into", "case", "and", "control", "groups", "." ],
+    "entities_indices" : [ [ 16, 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "Administering", "prophylactic", "intravenous", "indomethacin", "for", "under", "32", "weeks", "preterm", "infants", "causes", "a", "reduction", "in", "symptomatic", "PDA", "cases", ",", "need", "for", "mechanical", "ventilation", ",", "NCPAP", "and", "oxygen", ",", "reduction", "of", "IVH", "grade", "1-3", "and", "reduction", "in", "short", "term", "mortality", ",", "but", "no", "difference", "was", "found", "in", "IVH", "grade", "4", "amount", "between", "two", "groups", "." ],
+    "entities_indices" : [ [ 15, 16 ], [ 25, 26 ], [ 29, 30, 31, 32 ] ]
+  }, {
+    "sentence_tokens" : [ "ROP", "was", "not", "investigated", "in", "our", "study", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "Cr", "and", "platelets", "were", "measured", "on", "the", "first", "and", "fourth", "days", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "Prophylactic", "intravenous", "indomethacin", "causes", "reduction", "in", "need", "for", "treatment", "of", "PDA", "complications", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "One", "of", "the", "important", "goals", "of", "prophylactic", "intravenous", "indomethacin", "is", "preventing", "PDA", "and", "reducing", "associated", "complications", "in", "infants", "with", "extremely", "low", "body", "weight", "(", "ELBW", ")", "by", "early", "and", "permanent", "closing", "of", "arterial", "ducts", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 21, 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "Conclusion", ":", "Intravenous", "Indomethacin", "reduced", "the", "number", "of", "PDA", "cases", "and", "incidence", "of", "grade", "2", "and", "3", "intraventricular", "hemorrhage", ",", "without", "any", "short", "term", "side", "effects", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 18, 19 ], [ 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "difference", "of", "two", "groups", "in", "need", "for", "ventilation", "and", "continuous", "positive", "airway", "pressure", "(", "C-PAP", ")", "was", "2.85", "and", "2.05", "times", ",", "respectively", "." ],
+    "entities_indices" : [ [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "study", "showed", "that", "symptomatic", "PDA", ",", "Grade", "1-3", "IVH", ",", "and", "duration", "of", "respiratory", "support", "were", "significantly", "higher", "in", "the", "control", "group", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 7, 8, 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "randomized", "clinical", "trial", "which", "was", "conducted", "in", "neonatal", "intensive", "care", "unit", "of", "Alzahra", "Educational-Medical", "center", "(", "Tabriz", ",", "Iran", ")", ",", "during", "June", "of", "2010", "till", "December", "of", "2012", ",", "70", "premature", "infants", "with", "under", "32", "weeks", "age", "and", "birth", "weight", "of", "800-1500", "g", "were", "included", "in", "study", "." ],
+    "entities_indices" : [ [ 41, 42, 43 ] ]
+  }, {
+    "sentence_tokens" : [ "Spontaneous", "arterial", "duct", "closure", "happens", "in", "less", "than", "40", "%", "of", "infants", "under", "26", "weeks", "and", "in", "more", "than", "70", "%", "of", "infants", "over", "30", "week", ",", "and", "prophylactic", "indomethacin", "in", "the", "first", "6", "hours", "of", "birth", "have", "reduced", "symptomatic", "PDA", "in", "infants", "under", "1000", "g", "and", "also", "decreased", "IVH", "grade", "3", "&", "4", "cases", "." ],
+    "entities_indices" : [ [ 40, 41 ], [ 49, 50, 51, 52, 53, 54, 55 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "study", "was", "aimed", "to", "investigate", "the", "effects", "of", "intravenous", "indomethacin", "on", "reducing", "complications", "of", "PDA", "and", "the", "need", "for", "prolonged", "ventilatory", "support", "." ],
+    "entities_indices" : [ [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "Its", "shrinkage", "and", "closure", "starts", "from", "pulmonary", "artery", "side", "and", "continues", "to", "aorta", "in", "a", "cone", "shape", "." ],
+    "entities_indices" : [ [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "study", "group", ",", "21", "infants", "(", "60.6", "%", ")", "had", "no", "other", "heart", "findings", ",", "10", "infants", "(", "28.4", "%", ")", "had", "atrial", "septal", "defect", ",", "2", "infants", "(", "5.7", "%", ")", "had", "mitral", "regurgitation", "and", "2", "infants", "(", "5.7", "%", ")", "had", "tricuspid", "regurgitation", ",", "but", "in", "control", "group", ",", "25", "infants", "(", "71.4", "%", ")", "had", "no", "other", "heart", "findings", ",", "8", "infants", "(", "22.9", "%", ")", "had", "atrial", "septal", "defect", ",", "1", "infant", "(", "2.9", "%", ")", "had", "ventricular", "septal", "defect", ",", "and", "1", "infant", "(", "2.9", "%", ")", "had", "mitral", "regurgitation", "." ],
+    "entities_indices" : [ [ 23, 24, 25, 26 ], [ 34, 35, 36 ], [ 44, 45, 46 ], [ 71, 72, 73, 74 ], [ 82, 83, 84, 85 ], [ 94, 95, 96 ] ]
+  }, {
+    "sentence_tokens" : [ "Primary", "blood", "pH", "was", "examined", "in", "both", "groups", "in", "neonatal", "intensive", "care", "unit", "on", "admission", "time", "and", "." ],
+    "entities_indices" : [ [ 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "About", "increase", "probability", "of", "Retinopathy", "of", "Prematurity", "(", "ROP", ")", "in", "infants", "who", "had", "received", "indomethacin", ",", "there", "was", "no", "statistical", "significant", "difference", "in", "ROP", "grades", "." ],
+    "entities_indices" : [ [ 4, 5, 6, 7 ], [ 8, 9 ], [ 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "Groups", "were", "not", "statistically", "different", "in", "birth", "weight", ",", "Apgar", "score", "of", "the", "1", "and", "5", "minutes", ",", "endotracheal", "surfactant", ",", "time", "for", "receiving", "first", "dose", "of", "surfactant", ",", "serum", "Cr", ",", "platelet", "count", "in", "the", "1", "and", "4", "days", "and", "primary", "pH", "(", "P", ">", "0.05", ")", "." ],
+    "entities_indices" : [ [ 6, 7, 8 ], [ 19, 20 ], [ 27, 28 ], [ 30, 31 ], [ 42, 43 ] ]
+  }, {
+    "sentence_tokens" : [ "Quantitative", "data", "were", "presented", "as", "mean", "+/-", "standard", "deviation", "(", "SD", ")", ",", "while", "qualitative", "data", "were", "demonstrated", "as", "frequency", "and", "percent", "(", "%", ")", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "our", "study", ",", "prevalence", "of", "PDA", "in", "control", "group", "was", "9", "times", "of", "that", "of", "study", "group", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "Comparing", "pulmonary", "arterial", "hypertension", "by", "Doppler", "echocardiography", ",", "mild", "PH", "cases", "are", "2.6", "times", "more", "prevalent", "and", "bond", "pulse", "and", "moderate", "pH", "were", "not", "found", "in", "study", "group", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 9, 10 ], [ 21, 22 ] ]
+  } ],
+  "emptySentences" : [ {
+    "sentence_tokens" : [ "Effects", "of", "Intravenous", "Indomethacin", "on", "Reduction", "of", "Symptomatic", "Patent", "Ductus", "Arteriosus", "Cases", "and", "Decreasing", "the", "Need", "for", "Prolonged", "Mechanical", "Ventilation", "." ]
+  }, {
+    "sentence_tokens" : [ "Introduction", ":", "We", "decided", "to", "investigate", "the", "effects", "of", "injecting", "Indomethacin", "on", "reducing", "complications", "of", "Patent", "Ductus", "Arteriosus", "(", "PDA", ")", "and", "the", "need", "for", "prolonged", "mechanical", "ventilation", "." ]
+  }, {
+    "sentence_tokens" : [ "Methods", ":", "During", "this", "randomized", "clinical", "trial", ",", "70", "premature", "infants", "with", "matched", "gestational", "age", "and", "birth", "weight", "were", "divided", "into", "case", "and", "control", "groups", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "study", "group", ",", "intravenous", "indomethacin", "started", "from", "the", "first", "2-12", "hours", "of", "birth", "." ]
+  }, {
+    "sentence_tokens" : [ "All", "patients", "were", "followed", "by", "echocardiography", "at", "the", "fourth", "day", "and", "skull", "ultrasound", "in", "the", "second", "week", "." ]
+  }, {
+    "sentence_tokens" : [ "Results", ":", "Symptomatic", "PDA", "rate", "was", "significantly", "higher", "in", "the", "control", "group", "(", "25.7", "%", "vs.", "0", "%", ";", "P", "<=0", ".001", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Incidence", "of", "grade", "1-3", "intraventricular", "hemorrhage", "was", "higher", "in", "the", "control", "group", "and", "the", "ratio", "of", "needed", "time", "for", "respiratory", "support", "in", "the", "control", "group", "to", "the", "case", "group", "was", "approximately", "2.1", "." ]
+  }, {
+    "sentence_tokens" : [ "Conclusion", ":", "Intravenous", "Indomethacin", "reduced", "the", "number", "of", "PDA", "cases", "and", "incidence", "of", "grade", "2", "and", "3", "intraventricular", "hemorrhage", ",", "without", "any", "short", "term", "side", "effects", "." ]
+  }, {
+    "sentence_tokens" : [ "Introduction", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "main", "mechanism", "of", "arterial", "duct", "closure", "has", "not", "understood", "yet", ",", "but", "increasing", "oxygen", "pressure", "and", "releasing", "vasoactive", "agents", "have", "important", "roles", "in", "duct", "'", "s", "closure", "process", "in", "after-birth", "step", "." ]
+  }, {
+    "sentence_tokens" : [ "Prostaglandins", "(", "PG", ")", "E1", ",", "E2", ",", "and", "I2", "cause", "arterial", "ducts", "to", "remain", "open", "and", "prostaglandin", "synthesis", "inhibitors", "cause", "shrinkage", "of", "arterial", "ducts", "." ]
+  }, {
+    "sentence_tokens" : [ "Its", "shrinkage", "and", "closure", "starts", "from", "pulmonary", "artery", "side", "and", "continues", "to", "aorta", "in", "a", "cone", "shape", "." ]
+  }, {
+    "sentence_tokens" : [ "PDA", "therapy", "consists", "of", "restricting", "fluid", "intake", ",", "administering", "prostaglandin", "inhibitors", "(", "such", "as", "indomethacin", ")", "and", "surgical", "closure", "." ]
+  }, {
+    "sentence_tokens" : [ "After", "birth", ",", "indomethacin", "causes", "shrinkage", ",", "ischemia", "and", "rearrangement", "in", "the", "structure", "of", "the", "arterial", "duct", ",", "duct", "closure", "and", "reduces", "the", "need", "for", "surgical", "intervention", "." ]
+  }, {
+    "sentence_tokens" : [ "So", "this", "motivated", "clinical", "researchers", "to", "use", "this", "drug", "after", "birth", "upon", "suspected", "initial", "symptoms", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "study", "was", "aimed", "to", "investigate", "the", "effects", "of", "intravenous", "indomethacin", "on", "reducing", "complications", "of", "PDA", "and", "the", "need", "for", "prolonged", "ventilatory", "support", "." ]
+  }, {
+    "sentence_tokens" : [ "Materials", "and", "methods", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "randomized", "clinical", "trial", "which", "was", "conducted", "in", "neonatal", "intensive", "care", "unit", "of", "Alzahra", "Educational-Medical", "center", "(", "Tabriz", ",", "Iran", ")", ",", "during", "June", "of", "2010", "till", "December", "of", "2012", ",", "70", "premature", "infants", "with", "under", "32", "weeks", "age", "and", "birth", "weight", "of", "800-1500", "g", "were", "included", "in", "study", "." ]
+  }, {
+    "sentence_tokens" : [ "Patients", "were", "excluded", "if", "they", "had", "any", "of", "the", "exclusion", "criteria", "." ]
+  }, {
+    "sentence_tokens" : [ "Exclusion", "criteria", "was", "consisted", "of", ":", "1-", "Certain", "congenital", "abnormalities", "2-", "Despite", "the", "severe", "asphyxia", "(", "Fifth", "minute", "apgar", "score", "<", "7", "or", "being", "initial", "pH", "less", "than", "7.1", ")", "3-", "Moderate", "thrombocytopenia", "(", "50,000/mu", "L", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "4-", "High", "serum", "creatinine", "(", "Cr", ")", "1.8", "mg/dl", "5-", "The", "obvious", "bleeding", "(", "respiratory", ",", "digestive", ",", "urinary", ",", "skin", "or", "mucous", ")", "6-", "Receiving", "indomethacin", "by", "mother", "." ]
+  }, {
+    "sentence_tokens" : [ "Explaining", "the", "parents", "that", "there", "were", "not", "any", "reported", "side", "effects", "of", "prophylactic", "intravenous", "indomethacin", "in", "premature", "infants", "as", "well", "as", "its", "reported", "benefits", ",", "patients", "were", "included", "in", "study", "after", "the", "written", "consent", "was", "obtained", "." ]
+  }, {
+    "sentence_tokens" : [ "Infants", "were", "randomly", "divided", "into", "case", "and", "control", "groups", "(", "35", "in", "each", "group", ")", "using", "Rand", "list", "software", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "case", "group", ",", "intravenous", "indomethacin", "injection", "with", "0.2", "mg/kg", "dose", "started", "from", "first", "2-12", "hours", "and", "continued", "after", "24", "and", "48", "hours", "with", "0.1", "mg/kg", "dose", "." ]
+  }, {
+    "sentence_tokens" : [ "On", "the", "fourth", "day", "of", "birth", ",", "thoracic", "echocardiography", "was", "conducted", "for", "both", "groups", "and", "in", "the", "second", "week", "skull", "ultrasonography", "through", "fontanel", "was", "performed", "." ]
+  }, {
+    "sentence_tokens" : [ "Primary", "blood", "pH", "was", "examined", "in", "both", "groups", "in", "neonatal", "intensive", "care", "unit", "on", "admission", "time", "and", "." ]
+  }, {
+    "sentence_tokens" : [ "Cr", "and", "platelets", "were", "measured", "on", "the", "first", "and", "fourth", "days", "." ]
+  }, {
+    "sentence_tokens" : [ "Both", "groups", "were", "investigated", "for", "Intermittent", "Mandatory", "Ventilation", "(", "IMV", ")", ",", "Continuous", "Nasal", "Positive", "Airway", "Pressure", "(", "NCPAP", ")", ",", "High-Flow", "Nasal", "Canola", "(", "HFNC", ")", "or", "oxy-hood", "." ]
+  }, {
+    "sentence_tokens" : [ "Statistical", "analysis", "was", "performed", "by", "SPSS-16", "(", "SPSS", "Inc", ".,", "Chicago", ",", "USA", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Quantitative", "data", "were", "presented", "as", "mean", "+/-", "standard", "deviation", "(", "SD", ")", ",", "while", "qualitative", "data", "were", "demonstrated", "as", "frequency", "and", "percent", "(", "%", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "collected", "data", "were", "studied", "using", "descriptive", "statistical", "methods", ",", "the", "mean", "difference", "test", "for", "independent", "groups", ",", "and", "Chi-squaretest", "or", "Fisher", "'", "s", "exact", "test", "." ]
+  }, {
+    "sentence_tokens" : [ "P", "value", "less", "than", "0.05", "was", "considered", "significant", "." ]
+  }, {
+    "sentence_tokens" : [ "Results", "." ]
+  }, {
+    "sentence_tokens" : [ "Each", "group", "included", "18", "girl", "(", "51.4", "%", ")", "and", "17", "boys", "(", "48.6", "%", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "gestational", "age", "was", "28.9", "+/-", "1.21", "weeks", "in", "study", "group", "and", "29.51", "+/-", "1.65", "weeks", "in", "controls", "(", "P", "=0", ".8", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Groups", "were", "not", "statistically", "different", "in", "birth", "weight", ",", "Apgar", "score", "of", "the", "1", "and", "5", "minutes", ",", "endotracheal", "surfactant", ",", "time", "for", "receiving", "first", "dose", "of", "surfactant", ",", "serum", "Cr", ",", "platelet", "count", "in", "the", "1", "and", "4", "days", "and", "primary", "pH", "(", "P", ">", "0.05", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Eight", "infants", "(", "22.8", "%", ")", "from", "study", "group", "were", "under", "ventilator", "for", "1.46", "+/-", "0.66", "days", ",", "but", "in", "control", "group", "10", "infants", "(", "28.5", "%", ")", "underwent", "ventilation", "for", "4.16", "+/-", "2.93", "days", "." ]
+  }, {
+    "sentence_tokens" : [ "Also", "31", "infants", "(", "94.92", "%", ")", "from", "study", "group", "needed", "for", "NCPAP", "for", "4.17", "+/-", "4.26", "days", "and", "31", "infants", "(", "88.57", "%", ")", "in", "control", "group", "needed", "it", "for", "2.03", "+/-", "1.27", "days", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "difference", "of", "two", "groups", "in", "need", "for", "ventilation", "and", "continuous", "positive", "airway", "pressure", "(", "C-PAP", ")", "was", "2.85", "and", "2.05", "times", ",", "respectively", "." ]
+  }, {
+    "sentence_tokens" : [ "There", "was", "similar", "value", "in", "using", "nasal", "cannula", "with", "high", "frequency", "or", "oxy", "hood", "and", "significant", "difference", "was", "found", "in", "reduction", "of", "time", "needed", "for", "interventions", "." ]
+  }, {
+    "sentence_tokens" : [ "Prophylactic", "intravenous", "indomethacin", "caused", "significant", "differences", "in", "need", "for", "ventilation", ",", "C-PAP", ",", "and", "in", "using", "nasal", "cannula", "with", "high", "frequency", "or", "oxy", "hood", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "other", "words", "this", "drug", "led", "to", "reduction", "of", "need", "for", "respiratory", "support", "in", "all", "mentioned", "variables", "of", "study", "group", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "study", "group", ",", "21", "infants", "(", "60.6", "%", ")", "had", "no", "other", "heart", "findings", ",", "10", "infants", "(", "28.4", "%", ")", "had", "atrial", "septal", "defect", ",", "2", "infants", "(", "5.7", "%", ")", "had", "mitral", "regurgitation", "and", "2", "infants", "(", "5.7", "%", ")", "had", "tricuspid", "regurgitation", ",", "but", "in", "control", "group", ",", "25", "infants", "(", "71.4", "%", ")", "had", "no", "other", "heart", "findings", ",", "8", "infants", "(", "22.9", "%", ")", "had", "atrial", "septal", "defect", ",", "1", "infant", "(", "2.9", "%", ")", "had", "ventricular", "septal", "defect", ",", "and", "1", "infant", "(", "2.9", "%", ")", "had", "mitral", "regurgitation", "." ]
+  }, {
+    "sentence_tokens" : [ "Auditory", "symptoms", "in", "clinical", "examination", "were", "10.9", "times", "more", "prevalent", "in", "control", "group", "." ]
+  }, {
+    "sentence_tokens" : [ "Three", "infants", "(", "8.57", "%", ")", "were", "expired", "in", "control", "group", "while", "one", "infant", "(", "2.85", "%", ")", "in", "study", "group", "." ]
+  }, {
+    "sentence_tokens" : [ "Other", "complementary", "results", "are", "summarized", "in", "Table", "1", "." ]
+  }, {
+    "sentence_tokens" : [ "Discussion", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "study", "showed", "that", "symptomatic", "PDA", ",", "Grade", "1-3", "IVH", ",", "and", "duration", "of", "respiratory", "support", "were", "significantly", "higher", "in", "the", "control", "group", "." ]
+  }, {
+    "sentence_tokens" : [ "One", "of", "the", "important", "goals", "of", "prophylactic", "intravenous", "indomethacin", "is", "preventing", "PDA", "and", "reducing", "associated", "complications", "in", "infants", "with", "extremely", "low", "body", "weight", "(", "ELBW", ")", "by", "early", "and", "permanent", "closing", "of", "arterial", "ducts", "." ]
+  }, {
+    "sentence_tokens" : [ "Spontaneous", "arterial", "duct", "closure", "happens", "in", "less", "than", "40", "%", "of", "infants", "under", "26", "weeks", "and", "in", "more", "than", "70", "%", "of", "infants", "over", "30", "week", ",", "and", "prophylactic", "indomethacin", "in", "the", "first", "6", "hours", "of", "birth", "have", "reduced", "symptomatic", "PDA", "in", "infants", "under", "1000", "g", "and", "also", "decreased", "IVH", "grade", "3", "&", "4", "cases", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "our", "study", ",", "prevalence", "of", "PDA", "in", "control", "group", "was", "9", "times", "of", "that", "of", "study", "group", "." ]
+  }, {
+    "sentence_tokens" : [ "Starting", "intravenous", "indomethacin", "in", "the", "first", "12", "hours", "in", "infants", "under", "30", "weeks", "and", "weight", "of", "400-1250", "have", "reduced", "PDA", "cases", "and", "the", "need", "for", "surgery", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "was", "also", "obvious", "in", "our", "study", "." ]
+  }, {
+    "sentence_tokens" : [ "Prophylactic", "intravenous", "indomethacin", "causes", "reduction", "in", "need", "for", "treatment", "of", "PDA", "complications", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "our", "study", "there", "were", "not", "significant", "differences", "between", "two", "groups", "in", "severe", "IVH", "and", "NEC", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "a", "Cochrane", "review", "about", "giving", "prophylactic", "intravenous", "indomethacin", "for", "reducing", "mortality", "and", "disability", "it", "was", "mentioned", "that", "in", "infants", "under", "1500", "g", "it", "reduces", "symptomatic", "PDA", "cases", "and", "reduces", "IVH", "grade", "3", "&", "4", "." ]
+  }, {
+    "sentence_tokens" : [ "It", "also", "has", "been", "mentioned", "that", "giving", "intravenous", "indomethacin", "has", "not", "significant", "effect", "on", "short", "term", "and", "long", "term", "mortality", "and", "also", "on", "incidence", "of", "NEC", "and", "long", "term", "nervous", "evolution", "is", "yet", "under", "study", "." ]
+  }, {
+    "sentence_tokens" : [ "About", "increase", "probability", "of", "Retinopathy", "of", "Prematurity", "(", "ROP", ")", "in", "infants", "who", "had", "received", "indomethacin", ",", "there", "was", "no", "statistical", "significant", "difference", "in", "ROP", "grades", "." ]
+  }, {
+    "sentence_tokens" : [ "ROP", "was", "not", "investigated", "in", "our", "study", "." ]
+  }, {
+    "sentence_tokens" : [ "Our", "study", "showed", "that", "giving", "prophylactic", "intravenous", "indomethacin", "to", "preterm", "infants", "who", "are", "equal", "and", "under", "32", "weeks", "leads", "to", "2.8", "times", "reduction", "in", "the", "number", "of", "ventilator", "needed", "days", ",", "and", "2", "times", "reduction", "in", "need", "for", "NCPAP", "in", "study", "group", "." ]
+  }, {
+    "sentence_tokens" : [ "Comparing", "pulmonary", "arterial", "hypertension", "by", "Doppler", "echocardiography", ",", "mild", "PH", "cases", "are", "2.6", "times", "more", "prevalent", "and", "bond", "pulse", "and", "moderate", "pH", "were", "not", "found", "in", "study", "group", "." ]
+  }, {
+    "sentence_tokens" : [ "Conclusion", "." ]
+  }, {
+    "sentence_tokens" : [ "Administering", "prophylactic", "intravenous", "indomethacin", "for", "under", "32", "weeks", "preterm", "infants", "causes", "a", "reduction", "in", "symptomatic", "PDA", "cases", ",", "need", "for", "mechanical", "ventilation", ",", "NCPAP", "and", "oxygen", ",", "reduction", "of", "IVH", "grade", "1-3", "and", "reduction", "in", "short", "term", "mortality", ",", "but", "no", "difference", "was", "found", "in", "IVH", "grade", "4", "amount", "between", "two", "groups", "." ]
+  }, {
+    "sentence_tokens" : [ "Acknowledgments", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "research", "was", "supported", "by", "a", "grant", "from", "Children", "Health", "Research", "Center", "of", "Tabriz", "University", "of", "Medical", "Sciences", ",", "Tabriz", ",", "Iran", "." ]
+  }, {
+    "sentence_tokens" : [ "Ethical", "issues", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "study", "was", "approved", "by", "the", "ethics", "committee", "of", "Tabriz", "University", "of", "Medical", "Sciences", "(", "Registration", "code", ":", "5/4/2573", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "study", "was", "also", "registered", "at", "Iranian", "Registry", "of", "Clinical", "Trials", "by", "code", "of", "IRCT201107117010N1", "(", "http://www.irct.ir", ")", "Competing", "interests", "." ]
+  }, {
+    "sentence_tokens" : [ "Authors", "declare", "no", "conflict", "of", "interests", "in", "this", "study", "." ]
+  } ]
+}

@@ -1,31 +1,450 @@
-[ {
-  "sentence_tokens" : [ "An", "equal", "rise", "in", "humeral", "fractures", "in", "females", "of", "this", "age-group", "supports", "this", "." ],
-  "event_indices" : [ 4, 5, 6, 7, 8, 9, 10, 11, 12, 13 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 4, 5, 6 ],
-  "controlled_indices" : [ 12, 13 ],
-  "trigger_indices" : [ 11, 12 ],
-  "rule_name" : "Positive_activation_syntax_1_verb, pronominalMatch",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "The", "LMR", "collects", "data", "from", "all", "Dutch", "hospitals", "regarding", "hospital", "admissions", ",", "admission", "diagnosis", ",", "length", "of", "hospital", "stay", ",", "gender", ",", "age", ",", "and", "trauma", "mechanism", "." ],
-  "entity_one_indices" : [ 25, 26 ],
-  "entity_two_indices" : [ 1, 2 ]
-}, {
-  "sentence_tokens" : [ "Superficial", "injuries", "and", "contusions", "were", "the", "most", "abundant", "injury", "in", "the", "arm", "region", "(", "32", "%", "in", "males", ",", "33", "%", "in", "females", ")", ",", "followed", "by", "fractures", "of", "the", "forearm", "(", "21", "%", "and", "20", "%", ")", "." ],
-  "entity_one_indices" : [ 11, 12 ],
-  "entity_two_indices" : [ 3, 4 ]
-}, {
-  "sentence_tokens" : [ "In", "accordance", "with", "our", "data", ",", "all", "studies", "displayed", "a", "higher", "incidence", "of", "shoulder", "dislocations", "in", "men", "than", "in", "women", "[", "1,37,38", "]", "." ],
-  "entity_one_indices" : [ 16, 17 ],
-  "entity_two_indices" : [ 13, 14, 15 ]
-}, {
-  "sentence_tokens" : [ "A", "final", "explanation", "for", "the", "higher", "costs", "of", "fracture", "care", "in", "the", "elderly", "women", "could", "be", "that", "they", "outlive", "their", "partners", ",", "which", "may", "increase", "the", "chance", "of", "extended", "nursing", "home", "admission", "or", "home", "care.To", "the", "best", "of", "our", "knowledge", ",", "this", "is", "the", "first", "population", "based", "study", "to", "show", "trends", "in", "incidence", "and", "cost", "of", "fourteen", "different", "injuries", "of", "the", "upper", "extremity", "at", "a", "national", "level", "." ],
-  "entity_one_indices" : [ 33, 34 ],
-  "entity_two_indices" : [ 30, 31 ]
-}, {
-  "sentence_tokens" : [ "ED", ":", "Emergency", "department", ";", "ICD-9-CM", ":", "International", "classification", "of", "diseases", "9th", "revision", ",", "clinical", "modification", ";", "LIS", ":", "National", "injury", "surveillance", "system", ";", "LMR", ":", "National", "medical", "registration", "." ],
-  "entity_one_indices" : [ 10, 11 ],
-  "entity_two_indices" : [ 2, 3 ]
-} ]
+{
+  "regulations" : [ {
+    "sentence_tokens" : [ "An", "equal", "rise", "in", "humeral", "fractures", "in", "females", "of", "this", "age-group", "supports", "this", "." ],
+    "event_indices" : [ 4, 5, 6, 7, 8, 9, 10, 11, 12, 13 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 4, 5, 6 ],
+    "controlled_indices" : [ 12, 13 ],
+    "trigger_indices" : [ 11, 12 ],
+    "rule_name" : "Positive_activation_syntax_1_verb, pronominalMatch",
+    "rule" : null
+  } ],
+  "hardInstances" : [ ],
+  "withoutRegulations" : [ {
+    "sentence_tokens" : [ "Over", "the", "past", "two", "decades", ",", "a", "mean", "incidence", "rate", "for", "women", "of", "1,042", "per", "100,000", "person-years", "was", "seen", ",", "compared", "with", "987", "per", "100,000", "for", "men", "(", "Figure", "1", ")", "." ],
+    "entities_indices" : [ [ 26, 27 ] ]
+  }, {
+    "sentence_tokens" : [ "Young", "males", "have", "a", "higher", "upper", "extremity", "injury", "incidence", "than", "females", "of", "the", "same", "age", ",", "which", "seems", "in", "line", "with", "previous", "findings", "that", "young", "males", "experience", "more", "road", "traffic", "incidents", "and", "sports", "trauma", "[", "3,19", "]", "." ],
+    "entities_indices" : [ [ 33, 34 ] ]
+  }, {
+    "sentence_tokens" : [ "Trends", "in", "incidence", "and", "costs", "of", "injuries", "to", "the", "shoulder", ",", "arm", "and", "wrist", "in", "The", "Netherlands", "between", "1986", "and", "2008", "." ],
+    "entities_indices" : [ [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "With", "average", "costs", "of", "euro", "4,440", "per", "case", ",", "upper", "arm", "fractures", "represented", "the", "most", "expensive", "injury", "per", "case", "in", "both", "men", "and", "women.A", "substantial", "difference", "in", "costs", "between", "males", "and", "females", "was", "noted", "." ],
+    "entities_indices" : [ [ 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "Age", "standardized", "incidence", "rates", "of", "upper", "extremity", "injuries", "were", "calculated", "for", "each", "year", "between", "1986", "and", "2008", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "With", "a", "missing", "value", "rate", "of", "less", "than", "5", "%", "(", "except", "12", "%", "for", "2007", ")", ",", "the", "LMR", "data", "have", "almost", "complete", "national", "coverage", ",", "and", "were", "extrapolated", "to", "full", "national", "coverage", "[", "25", "]", "." ],
+    "entities_indices" : [ [ 19, 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "arm", "region", "included", "the", "upper", "arm", ",", "the", "elbow", ",", "and", "the", "forearm", "." ],
+    "entities_indices" : [ [ 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "After", "applying", "a", "correction", "for", "inflation", ",", "Meerding", "et", "al.", "reported", "euro", "1,080", "for", "wrist", "fractures", ",", "euro", "1,130", "for", "clavicle", "and", "shoulder", "fractures", ",", "and", "euro", "3,200", "for", "upper", "arm", "fractures", ",", "as", "opposed", "to", "euro", "1,890", ",", "euro", "2,550", "and", "euro", "4,440", ",", "respectively", ",", "in", "the", "current", "study", "." ],
+    "entities_indices" : [ [ 22, 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "Superficial", "injuries", "and", "contusions", "were", "the", "most", "abundant", "injury", "in", "the", "arm", "region", "(", "32", "%", "in", "males", ",", "33", "%", "in", "females", ")", ",", "followed", "by", "fractures", "of", "the", "forearm", "(", "21", "%", "and", "20", "%", ")", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "Upper", "arm", "and", "shoulder", "fractures", "represented", "5", "%", "and", "10", "%", "of", "all", "injuries", ",", "respectively", "." ],
+    "entities_indices" : [ [ 3, 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "Women", "suffer", "significantly", "more", "fractures", "when", "aged", "65", "years", "and", "over", ",", "which", "seems", "attributable", "to", "the", "increasing", "occurrence", "of", "postmenopausal", "osteoporosis", "in", "elderly", "women", "[", "6,9,10,36", "]", "." ],
+    "entities_indices" : [ [ 20, 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "Both", "boys", "and", "girls", "in", "the", "age", "of", "5", "-", "14", "years", "had", "a", "relatively", "high", "incidence", "of", "upper", "extremity", "injuries", ",", "especially", "of", "the", "wrist", "and", "arm", "(", "Figure", "2", ")", "." ],
+    "entities_indices" : [ [ 27, 28 ] ]
+  }, {
+    "sentence_tokens" : [ "Injuries", "seen", "in", "the", "upper", "extremity", "include", "fractures", ",", "dislocations", ",", "sprains", ",", "contusions", ",", "wounds", ",", "and", "superficial", "lesions.Population-based", "knowledge", "on", "the", "economic", "impact", "of", "upper", "extremity", "injuries", "is", "essential", "for", "the", "allocation", "of", "health", "care", "services", ",", "optimization", "of", "preventive", "measures", "and", "research", "purposes", ";", "it", "also", "provides", "a", "forecast", "for", "the", "future", "." ],
+    "entities_indices" : [ [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "All", "codes", "in", "Chapter", "17", "(", "Injuries", "and", "Poisoning", ",", "codes", "800", "-", "999", ")", "related", "to", "fractures", "(", "810", "-", "819", ")", ",", "dislocation", "(", "830", "-", "839", ")", ",", "sprains", "and", "strains", "(", "840", "-", "848", ")", ",", "open", "wounds", "(", "880", "-", "887", ")", ",", "superficial", "injuries", "(", "910", "-", "919", ")", ",", "and", "contusion", "(", "920", "-", "924", ")", "at", "the", "shoulder", ",", "arm", "and", "wrist", "area", "were", "included", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 31, 32, 33, 34 ], [ 57, 58 ], [ 67, 68 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "LMR", "collects", "data", "from", "all", "Dutch", "hospitals", "regarding", "hospital", "admissions", ",", "admission", "diagnosis", ",", "length", "of", "hospital", "stay", ",", "gender", ",", "age", ",", "and", "trauma", "mechanism", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "Finally", ",", "recent", "improvement", "in", "the", "data", "sources", "on", "home", "and", "nursing", "care", "and", "on", "operative", "interventions", "may", "have", "resulted", "in", "a", "more", "accurate", ",", "most", "likely", "higher", ",", "estimate", "of", "costs", "in", "our", "study.The", "main", "strength", "of", "our", "study", "is", "that", "we", "used", "up-to-date", "population", "based", "data", "over", "a", "longer", ",", "continuous", "time-period", "." ],
+    "entities_indices" : [ [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "Upper", "extremity", "injuries", "account", "for", "a", "large", "proportion", "of", "attendances", "to", "the", "Emergency", "Department", "." ],
+    "entities_indices" : [ [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "Upper", "extremity", "injuries", "were", "defined", "using", "the", "International", "Classification", "of", "Diseases", ",", "ninth", "revision", "(", "ICD-9-CM", ")", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "Most", "epidemiologic", "studies", "on", "upper", "extremity", "injuries", "primarily", "focused", "on", "one", "distinct", "subgroup", "such", "as", "a", "separate", "type", "of", "injury", ",", "anatomical", "region", ",", "or", "age", "group", "[", "1-15", "]", "." ],
+    "entities_indices" : [ [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "DDH", "participated", "in", "the", "design", "of", "the", "study", ",", "data", "interpretation", "and", "critical", "revision", "of", "the", "manuscript", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "Even", "though", "the", "age", "adjusted", "incidence", "rates", "for", "men", "and", "women", "were", "similar", ",", "the", "total", "costs", "of", "upper", "extremity", "injuries", "for", "females", "almost", "doubled", "those", "of", "males", "." ],
+    "entities_indices" : [ [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "LIS", "is", "based", "upon", "13", "geographically", "distributed", "Emergency", "Departments", "(", "EDs", ")", "in", "the", "Netherlands", ",", "resulting", "in", "a", "representative", "12", "%", "sample", "of", "injury", "related", "ED", "visits", "." ],
+    "entities_indices" : [ [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "Fractures", "are", "the", "most", "expensive", "type", "of", "injury", ",", "especially", "in", "women.Our", "data", "demonstrate", "an", "evident", "influence", "of", "age", "and", "gender", "on", "the", "incidence", "of", "certain", "upper", "extremity", "injuries", "." ],
+    "entities_indices" : [ [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "An", "average", "upper", "extremity", "injury", "in", "women", "aged", "65", "years", "or", "older", "was", "with", "euro", "4,310", "per", "case", "approximately", "euro", "1,400", "more", "expensive", "than", "the", "same", "injury", "in", "men.Figure", "4", "shows", "the", "total", "cost", "per", "type", "of", "injury", "by", "gender", "for", "three", "age", "groups", "." ],
+    "entities_indices" : [ [ 35, 36 ] ]
+  }, {
+    "sentence_tokens" : [ "GITI", "participated", "in", "the", "design", "of", "the", "study", ",", "and", "assisted", "in", "the", "data", "analysis", "and", "data", "interpretation", ",", "and", "drafting", "of", "the", "manuscript", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "this", "study", ",", "the", "upper", "extremity", "was", "separated", "into", "shoulder", ",", "arm", ",", "and", "wrist", "." ],
+    "entities_indices" : [ [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "accordance", "with", "our", "data", ",", "all", "studies", "displayed", "a", "higher", "incidence", "of", "shoulder", "dislocations", "in", "men", "than", "in", "women", "[", "1,37,38", "]", "." ],
+    "entities_indices" : [ [ 13, 14, 15 ], [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "ED", ":", "Emergency", "department", ";", "ICD-9-CM", ":", "International", "classification", "of", "diseases", "9th", "revision", ",", "clinical", "modification", ";", "LIS", ":", "National", "injury", "surveillance", "system", ";", "LMR", ":", "National", "medical", "registration", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "SP", "participated", "in", "the", "design", "of", "the", "study", "and", "the", "statistical", "analysis", "and", "drafting", "of", "the", "manuscript", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "PP", "participated", "in", "the", "design", "of", "the", "study", ",", "data", "interpretation", "and", "critical", "revision", "of", "the", "manuscript", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "Health", "care", "costs", "of", "injuries", "were", "calculated", "by", "multiplication", "of", "the", "incidence", ",", "health", "care", "volumes", "(", "e.g", ".,", "length", "of", "stay", "in", "hospital", "or", "institution", ",", "the", "number", "of", "outpatient", "visits", ",", "General", "Practitioner", "visits", ",", "home", "care", "hours", ",", "and", "physical", "therapy", "treatments", ")", ",", "and", "unit", "costs", "(", "e.g", ".,", "costs", "per", "day", "in", "hospital", ")", "." ],
+    "entities_indices" : [ [ 37, 38 ] ]
+  }, {
+    "sentence_tokens" : [ "Upper", "extremity", "injuries", "account", "for", "a", "substantial", "proportion", "of", "all", "injury", "patients", "visiting", "the", "Emergency", "Departments", "(", "EDs", ")", "." ],
+    "entities_indices" : [ [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "Upper", "extremity", "injuries", "accounted", "for", "42", "%", "of", "all", "injury", "related", "visits", "to", "the", "Emergency", "Departments", "(", "EDs", ")", "." ],
+    "entities_indices" : [ [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "An", "extrapolation", "factor", "was", "estimated", "by", "comparing", "the", "number", "of", "admitted", "injury", "patients", "in", "the", "LIS", "database", "with", "the", "total", "number", "of", "admitted", "injury", "patients", "as", "recorded", "in", "the", "LMR", "." ],
+    "entities_indices" : [ [ 29, 30 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "final", "explanation", "for", "the", "higher", "costs", "of", "fracture", "care", "in", "the", "elderly", "women", "could", "be", "that", "they", "outlive", "their", "partners", ",", "which", "may", "increase", "the", "chance", "of", "extended", "nursing", "home", "admission", "or", "home", "care.To", "the", "best", "of", "our", "knowledge", ",", "this", "is", "the", "first", "population", "based", "study", "to", "show", "trends", "in", "incidence", "and", "cost", "of", "fourteen", "different", "injuries", "of", "the", "upper", "extremity", "at", "a", "national", "level", "." ],
+    "entities_indices" : [ [ 30, 31 ], [ 33, 34 ] ]
+  }, {
+    "sentence_tokens" : [ "During", "this", "age", ",", "an", "increased", "calcium", "demand", "combined", "with", "maximal", "skeletal", "growth", "and", "an", "increased", "physical", "activity", "leads", "to", "more", "fractures", "[", "35", "]", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  } ],
+  "emptySentences" : [ {
+    "sentence_tokens" : [ "Trends", "in", "incidence", "and", "costs", "of", "injuries", "to", "the", "shoulder", ",", "arm", "and", "wrist", "in", "The", "Netherlands", "between", "1986", "and", "2008", "." ]
+  }, {
+    "sentence_tokens" : [ "Background", "." ]
+  }, {
+    "sentence_tokens" : [ "Upper", "extremity", "injuries", "account", "for", "a", "large", "proportion", "of", "attendances", "to", "the", "Emergency", "Department", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "aim", "of", "this", "study", "was", "to", "assess", "population", "based", "trends", "in", "the", "incidence", "of", "upper", "extremity", "injuries", "in", "the", "Dutch", "population", "between", "1986", "and", "2008", ",", "and", "to", "give", "a", "detailed", "overview", "of", "the", "associated", "health", "care", "costs", "." ]
+  }, {
+    "sentence_tokens" : [ "Methods", "." ]
+  }, {
+    "sentence_tokens" : [ "Age", "standardized", "incidence", "rates", "of", "upper", "extremity", "injuries", "were", "calculated", "for", "each", "year", "between", "1986", "and", "2008", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "average", "number", "of", "people", "in", "each", "of", "the", "5-year", "age", "classes", "for", "each", "year", "of", "the", "study", "was", "calculated", "and", "used", "as", "the", "standard", "(", "reference", ")", "population", "." ]
+  }, {
+    "sentence_tokens" : [ "Injury", "cases", "were", "extracted", "from", "the", "National", "Injury", "Surveillance", "System", "(", "non", "hospitalized", "patients", ")", "and", "the", "National", "Medical", "Registration", "(", "hospitalized", "patients", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "An", "incidence", "based", "cost", "model", "was", "applied", "in", "order", "to", "estimate", "associated", "direct", "health", "care", "costs", "in", "2007", "." ]
+  }, {
+    "sentence_tokens" : [ "Results", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "overall", "age", "adjusted", "incidence", "of", "upper", "extremity", "injuries", "increased", "from", "970", "to", "1,098", "per", "100,000", "persons", "(", "13", "%", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "highest", "incidence", "was", "seen", "in", "young", "persons", "and", "elderly", "women", "." ]
+  }, {
+    "sentence_tokens" : [ "Total", "annual", "costs", "for", "all", "injuries", "were", "290", "million", "euro", ",", "of", "which", "190", "million", "euro", "were", "paid", "for", "injuries", "sustained", "by", "women", "." ]
+  }, {
+    "sentence_tokens" : [ "Wrist", "fractures", "were", "the", "most", "expensive", "injuries", "(", "83", "million", "euro", ")", "due", "to", "high", "incidence", ",", "whereas", "upper", "arm", "fractures", "were", "the", "most", "expensive", "injuries", "per", "case", "(", "4,440", "euro", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Major", "cost", "peaks", "were", "observed", "for", "fractures", "in", "elderly", "women", "due", "to", "high", "incidence", "and", "costs", "per", "patient", "." ]
+  }, {
+    "sentence_tokens" : [ "Conclusions", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "overall", "incidence", "of", "upper", "extremity", "injury", "in", "the", "Netherlands", "increased", "by", "13", "%", "in", "the", "period", "1986-2008", "." ]
+  }, {
+    "sentence_tokens" : [ "Females", "with", "upper", "extremity", "fractures", "and", "especially", "elderly", "women", "with", "wrist", "fractures", "accounted", "for", "a", "substantial", "share", "of", "total", "costs", "." ]
+  }, {
+    "sentence_tokens" : [ "Background", "." ]
+  }, {
+    "sentence_tokens" : [ "Upper", "extremity", "injuries", "account", "for", "a", "substantial", "proportion", "of", "all", "injury", "patients", "visiting", "the", "Emergency", "Departments", "(", "EDs", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Besides", "the", "impact", "of", "upper", "extremity", "injuries", "on", "health", "and", "daily", "life", ",", "they", "impose", "an", "economic", "burden", "on", "the", "community.The", "upper", "extremity", "consists", "of", "the", "shoulder", "(", "i.e", ".,", "clavicle", "and", "scapula", ")", ",", "upper", "arm", "(", "i.e", ".,", "proximal", "humerus", "and", "humeral", "shaft", ")", ",", "elbow", "(", "i.e", ".,", "distal", "humerus", ",", "proximal", "radius", "and", "ulna", ")", ",", "forearm", "(", "i.e", ".,", "ulna", "and", "radius", ")", ",", "wrist", "(", "i.e", ".,", "distal", "radius", "and", "ulna", ",", "carpal", "bones", ")", ",", "and", "hand", "(", "i.e", ".,", "metacarpal", "bones", "and", "the", "phalanges", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Injuries", "seen", "in", "the", "upper", "extremity", "include", "fractures", ",", "dislocations", ",", "sprains", ",", "contusions", ",", "wounds", ",", "and", "superficial", "lesions.Population-based", "knowledge", "on", "the", "economic", "impact", "of", "upper", "extremity", "injuries", "is", "essential", "for", "the", "allocation", "of", "health", "care", "services", ",", "optimization", "of", "preventive", "measures", "and", "research", "purposes", ";", "it", "also", "provides", "a", "forecast", "for", "the", "future", "." ]
+  }, {
+    "sentence_tokens" : [ "Most", "epidemiologic", "studies", "on", "upper", "extremity", "injuries", "primarily", "focused", "on", "one", "distinct", "subgroup", "such", "as", "a", "separate", "type", "of", "injury", ",", "anatomical", "region", ",", "or", "age", "group", "[", "1-15", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "most", "studies", ",", "data", "from", "single", "hospitals", "or", "regional", "data", "were", "used", "[", "2,3,8,11", "-13,15-17]", "." ]
+  }, {
+    "sentence_tokens" : [ "Few", "publications", "used", "a", "national", "injury", "database", "[", "1,4,5,7,9,18,19", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Data", "regarding", "the", "associated", "health", "care", "costs", "are", "generally", "lacking", "." ]
+  }, {
+    "sentence_tokens" : [ "Some", "studies", "report", "direct", "costs", "of", "upper", "extremity", "injuries", ",", "mostly", "fractures", "[", "2,19-23]", "." ]
+  }, {
+    "sentence_tokens" : [ "No", "papers", "reported", "on", "both", "incidence", "trends", "and", "costs", "of", "all", "injuries", "to", "the", "upper", "extremity.Due", "to", "budgetary", "restraints", "and", "increasing", "costs", "for", "health", "care", "services", ",", "economic", "analyses", "are", "becoming", "more", "important", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "aim", "of", "this", "study", "was", "to", "examine", "recent", "long-term", "population", "based", "trends", "in", "the", "incidence", "of", "upper", "extremity", "injuries", "in", "the", "Dutch", "population", "between", "1986", "and", "2008", "and", "to", "give", "a", "detailed", "overview", "of", "the", "associated", "health", "care", "costs", "in", "2007", "." ]
+  }, {
+    "sentence_tokens" : [ "Methods", "." ]
+  }, {
+    "sentence_tokens" : [ "Data", "sources", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "this", "retrospective", "study", "data", "were", "collected", "for", "all", "upper", "extremity", "injuries", "in", "The", "Netherlands", "in", "the", "period", "1986", "-", "2008", "." ]
+  }, {
+    "sentence_tokens" : [ "Upper", "extremity", "injuries", "were", "defined", "using", "the", "International", "Classification", "of", "Diseases", ",", "ninth", "revision", "(", "ICD-9-CM", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "All", "codes", "in", "Chapter", "17", "(", "Injuries", "and", "Poisoning", ",", "codes", "800", "-", "999", ")", "related", "to", "fractures", "(", "810", "-", "819", ")", ",", "dislocation", "(", "830", "-", "839", ")", ",", "sprains", "and", "strains", "(", "840", "-", "848", ")", ",", "open", "wounds", "(", "880", "-", "887", ")", ",", "superficial", "injuries", "(", "910", "-", "919", ")", ",", "and", "contusion", "(", "920", "-", "924", ")", "at", "the", "shoulder", ",", "arm", "and", "wrist", "area", "were", "included", "." ]
+  }, {
+    "sentence_tokens" : [ "An", "overview", "of", "the", "ICD-9-CM", "codes", "is", "shown", "in", "Table", "1", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "this", "study", ",", "the", "upper", "extremity", "was", "separated", "into", "shoulder", ",", "arm", ",", "and", "wrist", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "shoulder", "region", "included", "the", "clavicle", "and", "scapula", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "arm", "region", "included", "the", "upper", "arm", ",", "the", "elbow", ",", "and", "the", "forearm", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "wrist", "region", "included", "the", "distal", "radius", ",", "the", "distal", "ulna", ",", "and", "the", "carpal", "bones.Injury", "cases", "were", "extracted", "from", "the", "National", "Injury", "Surveillance", "System", "(", "LIS", ")", "[", "24", "]", "and", "the", "National", "Medical", "Registration", "(", "LMR", ")", "[", "25", "]", ",", "to", "include", "non", "hospitalized", "and", "hospitalized", "patients", ",", "respectively", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "LIS", "is", "based", "upon", "13", "geographically", "distributed", "Emergency", "Departments", "(", "EDs", ")", "in", "the", "Netherlands", ",", "resulting", "in", "a", "representative", "12", "%", "sample", "of", "injury", "related", "ED", "visits", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "adherence", "population", "of", "the", "participating", "hospitals", "in", "this", "study", "is", "representative", "for", "the", "Dutch", "population", "in", "age", "and", "gender", "structure", "[", "24", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "LMR", "collects", "data", "from", "all", "Dutch", "hospitals", "regarding", "hospital", "admissions", ",", "admission", "diagnosis", ",", "length", "of", "hospital", "stay", ",", "gender", ",", "age", ",", "and", "trauma", "mechanism", "." ]
+  }, {
+    "sentence_tokens" : [ "With", "a", "missing", "value", "rate", "of", "less", "than", "5", "%", "(", "except", "12", "%", "for", "2007", ")", ",", "the", "LMR", "data", "have", "almost", "complete", "national", "coverage", ",", "and", "were", "extrapolated", "to", "full", "national", "coverage", "[", "25", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Calculation", "of", "incidence", "rates", "and", "trends", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "age", "specific", "incidence", "rates", "were", "calculated", "in", "5-year", "age", "groups", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "each", "age", "group", "the", "absolute", "number", "of", "upper", "extremity", "injuries", "was", "registered", "in", "the", "LIS", "database", "." ]
+  }, {
+    "sentence_tokens" : [ "Because", "the", "absolute", "number", "was", "obtained", "from", "a", "sample", ",", "the", "figures", "were", "weighted", "in", "order", "to", "create", "national", "estimates", "." ]
+  }, {
+    "sentence_tokens" : [ "An", "extrapolation", "factor", "was", "estimated", "by", "comparing", "the", "number", "of", "admitted", "injury", "patients", "in", "the", "LIS", "database", "with", "the", "total", "number", "of", "admitted", "injury", "patients", "as", "recorded", "in", "the", "LMR", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "age-", "and", "sex", "specific", "incidence", "rates", "per", "100,000", "person", "years", "were", "calculated", "based", "upon", "the", "Dutch", "mid", "year", "standard", "population", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "mid", "year", "population", "sizes", "for", "all", "age-groups", "were", "obtained", "from", "Statistics", "Netherlands", "[", "26", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "\"", "Direct", "standardization", "\"", "was", "used", "in", "order", "to", "calculate", "age", "adjusted", "incidence", "rates", "[", "27", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "average", "number", "of", "people", "in", "each", "of", "the", "5-year", "age", "classes", "for", "each", "year", "of", "the", "study", "(", "1986", "-", "2010", ")", "was", "calculated", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "number", "was", "used", "as", "the", "standard", "(", "reference", ")", "population", ",", "as", "described", "previously", "[", "28-30", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "overall", "growth", "in", "the", "number", "of", "hospital", "admissions", "was", "calculated", "for", "2008", "in", "percents", "relative", "to", "the", "year", "1986", "." ]
+  }, {
+    "sentence_tokens" : [ "Calculation", "of", "costs", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "incidence", "based", "Dutch", "Burden", "of", "Injury", "Model", "was", "used", "in", "order", "to", "measure", "and", "describe", "the", "health", "care", "costs", "resulting", "from", "injuries", "occurring", "during", "a", "specified", "period", "[", "27", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "each", "individual", "injury", "group", "patient", "numbers", ",", "health", "care", "consumption", ",", "and", "related", "costs", "were", "calculated", "using", "the", "LIS", "database", ",", "the", "National", "Hospital", "Discharge", "Registry", ",", "and", "a", "patient", "follow-up", "survey", "conducted", "in", "2007", "[", "31,32", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "model", ",", "the", "age-", "and", "injury", "specific", "costs", "are", "based", "upon", "the", "estimated", "health", "care", "supplied", "to", "the", "individual", "patients", "." ]
+  }, {
+    "sentence_tokens" : [ "Health", "care", "costs", "of", "injuries", "were", "calculated", "by", "multiplication", "of", "the", "incidence", ",", "health", "care", "volumes", "(", "e.g", ".,", "length", "of", "stay", "in", "hospital", "or", "institution", ",", "the", "number", "of", "outpatient", "visits", ",", "General", "Practitioner", "visits", ",", "home", "care", "hours", ",", "and", "physical", "therapy", "treatments", ")", ",", "and", "unit", "costs", "(", "e.g", ".,", "costs", "per", "day", "in", "hospital", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "All", "unit", "costs", "were", "estimated", "according", "to", "national", "guidelines", "for", "health", "care", "costing", "[", "33", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "All", "costs", "in", "this", "study", "were", "calculated", "over", "the", "year", "2007", "." ]
+  }, {
+    "sentence_tokens" : [ "Costs", "are", "calculated", "every", "five", "years", ";", "the", "2007", "data", "were", "the", "most", "recent", "data", "available", "." ]
+  }, {
+    "sentence_tokens" : [ "Despite", "the", "12", "%", "of", "missing", "data", "entries", "for", "2007", ",", "detailed", "cost", "information", "was", "available", "for", "all", "patients", "in", "the", "database", "." ]
+  }, {
+    "sentence_tokens" : [ "Results", "." ]
+  }, {
+    "sentence_tokens" : [ "Incidence", "." ]
+  }, {
+    "sentence_tokens" : [ "Between", "1986", "and", "2008", ",", "a", "total", "number", "of", "3,711,600", "patients", "(", "1,844,300", "males", "and", "1,867,300", "females", ")", "visited", "an", "ED", "with", "an", "upper", "extremity", "injury", ",", "comprising", "42", "%", "of", "the", "total", "injury", "related", "ED", "visits", "in", "The", "Netherlands", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "overall", "(", "i.e", ".,", "males", "and", "females", "combined", ")", "age", "adjusted", "incidence", "of", "upper", "extremity", "injuries", "increased", "by", "13", "%", ",", "from", "970", "in", "1986", "to", "1,098", "in", "2008", ",", "with", "a", "peak", "in", "1999", "of", "1,250", "per", "100,000", "persons", "(", "Figure", "1", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Since", "2005", ",", "the", "incidence", "increased", "again", ",", "especially", "in", "children.Injuries", "to", "the", "upper", "extremity", "appeared", "to", "be", "age-", "and", "gender", "related", "." ]
+  }, {
+    "sentence_tokens" : [ "Women", "were", "more", "likely", "to", "sustain", "an", "injury", "to", "the", "upper", "extremity", "." ]
+  }, {
+    "sentence_tokens" : [ "Over", "the", "past", "two", "decades", ",", "a", "mean", "incidence", "rate", "for", "women", "of", "1,042", "per", "100,000", "person-years", "was", "seen", ",", "compared", "with", "987", "per", "100,000", "for", "men", "(", "Figure", "1", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Both", "boys", "and", "girls", "in", "the", "age", "of", "5", "-", "14", "years", "had", "a", "relatively", "high", "incidence", "of", "upper", "extremity", "injuries", ",", "especially", "of", "the", "wrist", "and", "arm", "(", "Figure", "2", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "From", "the", "age", "of", "45", "onwards", ",", "the", "incidence", "rate", "of", "upper", "extremity", "injuries", "in", "females", "increased", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "older", "males", ",", "this", "peak", "was", "visible", "from", "the", "age", "of", "80", "years", "onwards.The", "relatively", "high", "incidence", "of", "upper", "extremity", "injuries", "among", "boys", "(", "aged", "10", "-", "14", "year", ")", "was", "mainly", "attributable", "to", "wrist", "fractures", ";", "1,157", "per", "100,000", "person-years", "(", "Figure", "3", ")", ";", "dislocations", "and", "fractures", "of", "the", "shoulder", "and", "clavicle", "were", "also", "abundant", "." ]
+  }, {
+    "sentence_tokens" : [ "Most", "upper", "extremity", "injuries", "in", "older", "women", "resulted", "in", "a", "fracture", ",", "mainly", "in", "the", "wrist", "and", "to", "a", "lesser", "extent", "also", "in", "the", "upper", "arm", "(", "Figures", "2B", "and", "3", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Superficial", "injuries", "and", "contusions", "were", "the", "most", "abundant", "injury", "in", "the", "arm", "region", "(", "32", "%", "in", "males", ",", "33", "%", "in", "females", ")", ",", "followed", "by", "fractures", "of", "the", "forearm", "(", "21", "%", "and", "20", "%", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Fracture", "injuries", "were", "mainly", "observed", "injury", "in", "the", "wrist", "and", "shoulder", "areas", "and", "were", "seen", "in", "61", "%", "and", "41", "%", "of", "the", "injuries", "to", "the", "wrist", "and", "shoulder", ",", "respectively", "." ]
+  }, {
+    "sentence_tokens" : [ "Wrist", "fractures", "occurred", "more", "frequently", "in", "females", "than", "in", "males", "(", "290", "versus", "206", "per", "100,000", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "During", "the", "study", "period", ",", "the", "incidence", "of", "wrist", "fractures", "increased", "by", "24", "%", "in", "males", "and", "by", "10", "%", "in", "females", "." ]
+  }, {
+    "sentence_tokens" : [ "Costs", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "total", "health", "care", "costs", "of", "upper", "extremity", "injuries", "in", "The", "Netherlands", "were", "euro", "290", "million", "a", "year", ",", "of", "which", "190", "million", "euro", "were", "paid", "for", "injuries", "sustained", "by", "women", "(", "66", "%", ";", "Table", "2", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Mean", "costs", "per", "patient", "were", "euro", "1,150", "for", "males", "and", "euro", "2,180", "for", "females", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "total", "health", "care", "costs", "varied", "substantially", "between", "the", "different", "injury", "subtypes", "." ]
+  }, {
+    "sentence_tokens" : [ "Overall", ",", "fractures", "comprised", "53", "%", "of", "all", "upper", "extremity", "injuries", "but", "accounted", "for", "76", "%", "of", "the", "total", "costs.Women", "with", "wrist", "fractures", "accounted", "for", "21", "%", "of", "total", "costs", "of", "upper", "extremity", "injuries", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "total", "health", "care", "costs", "for", "wrist", "fractures", "were", "euro", "83", "million", "making", "them", "the", "most", "expensive", "injuries", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "seemed", "mainly", "attributable", "to", "the", "high", "incidence", "(", "Table", "2", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Upper", "arm", "and", "shoulder", "fractures", "represented", "5", "%", "and", "10", "%", "of", "all", "injuries", ",", "respectively", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "with", "total", "costs", "of", "over", "euro", "40", "million", "each", ",", "they", "were", "the", "second", "and", "third", "most", "expensive", "injuries", "." ]
+  }, {
+    "sentence_tokens" : [ "Fractures", "of", "the", "wrist", ",", "shoulder", ",", "and", "upper", "arm", "accounted", "for", "almost", "60", "%", "of", "total", "costs", "." ]
+  }, {
+    "sentence_tokens" : [ "With", "average", "costs", "of", "euro", "4,440", "per", "case", ",", "upper", "arm", "fractures", "represented", "the", "most", "expensive", "injury", "per", "case", "in", "both", "men", "and", "women.A", "substantial", "difference", "in", "costs", "between", "males", "and", "females", "was", "noted", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "almost", "all", "injury", "groups", "total", "costs", "were", "higher", "for", "females", ",", "except", "for", "open", "wounds", "(", "Table", "2", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Costs", "were", "generally", "higher", "due", "to", "higher", "incidence", "rates", "and", "higher", "mean", "costs", "." ]
+  }, {
+    "sentence_tokens" : [ "An", "average", "upper", "extremity", "injury", "in", "women", "aged", "65", "years", "or", "older", "was", "with", "euro", "4,310", "per", "case", "approximately", "euro", "1,400", "more", "expensive", "than", "the", "same", "injury", "in", "men.Figure", "4", "shows", "the", "total", "cost", "per", "type", "of", "injury", "by", "gender", "for", "three", "age", "groups", "." ]
+  }, {
+    "sentence_tokens" : [ "Although", "the", "total", "costs", "for", "the", "male", "population", "under", "the", "age", "of", "65", "was", "slightly", "higher", "than", "for", "their", "female", "peers", ",", "the", "total", "costs", "for", "females", "aged", "65", "years", "or", "older", "was", "almost", "seven", "times", "higher", "than", "the", "corresponding", "age", "group", "in", "males", ",", "mainly", "due", "to", "fractures", "and", "dislocations", "." ]
+  }, {
+    "sentence_tokens" : [ "Discussion", "." ]
+  }, {
+    "sentence_tokens" : [ "Upper", "extremity", "injuries", "accounted", "for", "42", "%", "of", "all", "injury", "related", "visits", "to", "the", "Emergency", "Departments", "(", "EDs", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "past", "25", "years", "the", "overall", "incidence", "of", "upper", "extremity", "injuries", "in", "the", "Netherlands", "increased", "by", "13", "%", "." ]
+  }, {
+    "sentence_tokens" : [ "Throughout", "the", "years", ",", "the", "incidence", "was", "age", "and", "gender", "related", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "increase", "in", "incidence", "of", "upper", "extremity", "injuries", "is", "most", "evident", "in", "patients", "aged", "60", "years", "and", "above", "." ]
+  }, {
+    "sentence_tokens" : [ "Fractures", "are", "the", "most", "expensive", "type", "of", "injury", ",", "especially", "in", "women.Our", "data", "demonstrate", "an", "evident", "influence", "of", "age", "and", "gender", "on", "the", "incidence", "of", "certain", "upper", "extremity", "injuries", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "10", "-", "14", "year", "old", "boys", "group", "is", "prone", "to", "wrist", "fractures", ",", "as", "shown", "before", "[", "34,35", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "During", "this", "age", ",", "an", "increased", "calcium", "demand", "combined", "with", "maximal", "skeletal", "growth", "and", "an", "increased", "physical", "activity", "leads", "to", "more", "fractures", "[", "35", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Young", "males", "have", "a", "higher", "upper", "extremity", "injury", "incidence", "than", "females", "of", "the", "same", "age", ",", "which", "seems", "in", "line", "with", "previous", "findings", "that", "young", "males", "experience", "more", "road", "traffic", "incidents", "and", "sports", "trauma", "[", "3,19", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Women", "suffer", "significantly", "more", "fractures", "when", "aged", "65", "years", "and", "over", ",", "which", "seems", "attributable", "to", "the", "increasing", "occurrence", "of", "postmenopausal", "osteoporosis", "in", "elderly", "women", "[", "6,9,10,36", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "addition", ",", "the", "higher", "rate", "of", "falls", "may", "also", "explain", "the", "rise", "in", "fractures", "in", "the", "elderly", "[", "29,30", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Several", "studies", "describe", "incidence", "rates", "on", "injuries", "that", "were", "also", "included", "in", "the", "current", "study", "." ]
+  }, {
+    "sentence_tokens" : [ "Since", "these", "used", "another", "reference", "population", "form", "the", "standardization", ",", "absolute", "numbers", "may", "differ", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "trends", "remain", "indicative", "." ]
+  }, {
+    "sentence_tokens" : [ "Lofthus", "et", "al.", "reported", "that", "incidence", "rates", "on", "wrist", "fractures", "in", "females", "aged", "50", "and", "over", "range", "from", "554", "to", "1,098", "per", "100,000", "[", "16", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "seems", "slightly", "higher", "than", "the", "incidence", "found", "in", "our", "study", "(", "average", "489", ",", "range", "430", "-", "621", "per", "100,000", ")", ",", "but", "this", "may", "be", "due", "to", "differences", "in", "the", "reference", "population", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "literature", ",", "dislocation", "of", "the", "glenohumeral", "joint", "ranged", "from", "11.2-27.0", "per", "100,000", "person", "years", "[", "1,37,38", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "is", "lower", "than", "the", "incidence", "(", "51.2", "per", "100,000", ")", "found", "in", "our", "study", ",", "which", "also", "contained", "dislocation", "of", "the", "acromioclavicular", "joint", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "accordance", "with", "our", "data", ",", "all", "studies", "displayed", "a", "higher", "incidence", "of", "shoulder", "dislocations", "in", "men", "than", "in", "women", "[", "1,37,38", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Even", "though", "the", "age", "adjusted", "incidence", "rates", "for", "men", "and", "women", "were", "similar", ",", "the", "total", "costs", "of", "upper", "extremity", "injuries", "for", "females", "almost", "doubled", "those", "of", "males", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "huge", "difference", "is", "for", "a", "considerable", "part", "attributable", "to", "the", "higher", "costs", "per", "case", "in", "females", "and", "the", "female", "preponderance", "in", "the", "older", "Dutch", "population", "(", "Statistics", "Netherlands", ")", "[", "26", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Over", "75", "%", "of", "total", "costs", "were", "attributable", "to", "fractures", ",", "making", "them", "the", "most", "expensive", "injuries", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "majority", "of", "the", "costs", "for", "fractures", "were", "accounted", "for", "by", "women", "(", "69", "%", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Fractures", "were", "expected", "to", "have", "the", "highest", "costs", "of", "all", "injuries", ",", "due", "to", "possible", "hospital", "admissions", ",", "surgical", "intervention", ",", "plaster", "treatment", ",", "X-rays", ",", "longer", "rehabilitation", ",", "and", "physical", "therapy", "." ]
+  }, {
+    "sentence_tokens" : [ "An", "explanation", "for", "the", "extensive", "costs", "of", "fractures", "in", "the", "elderly", "females", "could", "be", "that", "osteoporotic", "bones", "of", "postmenopausal", "women", "fracture", "more", "severely", "[", "37", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Such", "fractures", "may", "require", "more", "radiological", "evaluation", "and", "more", "extensive", "or", "expensive", "surgical", "interventions", "." ]
+  }, {
+    "sentence_tokens" : [ "Also", ",", "new", "surgical", "techniques", "may", "have", "lowered", "the", "threshold", "for", "surgical", "interventions", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "addition", ",", "surgery", "performed", "in", "osteoporotic", "bone", "has", "a", "higher", "failure", "rate", "which", "may", "result", "in", "an", "increased", "rate", "of", "revision", "surgeries", "[", "39", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "final", "explanation", "for", "the", "higher", "costs", "of", "fracture", "care", "in", "the", "elderly", "women", "could", "be", "that", "they", "outlive", "their", "partners", ",", "which", "may", "increase", "the", "chance", "of", "extended", "nursing", "home", "admission", "or", "home", "care.To", "the", "best", "of", "our", "knowledge", ",", "this", "is", "the", "first", "population", "based", "study", "to", "show", "trends", "in", "incidence", "and", "cost", "of", "fourteen", "different", "injuries", "of", "the", "upper", "extremity", "at", "a", "national", "level", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "few", "other", "studies", "presented", "cost", "information", "of", "upper", "extremity", "injuries", ",", "of", "which", "most", "concern", "high-risk", "groups", "[", "2,21", "]", "or", "economic", "evaluation", "studies", "of", "treatment", "interventions", "[", "40,41", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Only", "Meerding", "et", "al.", "calculated", "costs", "of", "fractures", "of", "the", "wrist", ",", "the", "clavicle", "and", "shoulder", ",", "and", "the", "upper", "arm", "in", "the", "Netherlands", "[", "19", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "After", "applying", "a", "correction", "for", "inflation", ",", "Meerding", "et", "al.", "reported", "euro", "1,080", "for", "wrist", "fractures", ",", "euro", "1,130", "for", "clavicle", "and", "shoulder", "fractures", ",", "and", "euro", "3,200", "for", "upper", "arm", "fractures", ",", "as", "opposed", "to", "euro", "1,890", ",", "euro", "2,550", "and", "euro", "4,440", ",", "respectively", ",", "in", "the", "current", "study", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "higher", "costs", "as", "observed", "in", "the", "current", "study", "may", "be", "attributable", ",", "at", "least", "partly", ",", "to", "a", "higher", "number", "of", "patients", "receiving", "operative", "treatment", "for", "fractures", "." ]
+  }, {
+    "sentence_tokens" : [ "Higher", "current", "costs", "for", "(", "new", "or", "improved", ")", "implants", "can", "also", "not", "be", "ruled", "out", "." ]
+  }, {
+    "sentence_tokens" : [ "Finally", ",", "recent", "improvement", "in", "the", "data", "sources", "on", "home", "and", "nursing", "care", "and", "on", "operative", "interventions", "may", "have", "resulted", "in", "a", "more", "accurate", ",", "most", "likely", "higher", ",", "estimate", "of", "costs", "in", "our", "study.The", "main", "strength", "of", "our", "study", "is", "that", "we", "used", "up-to-date", "population", "based", "data", "over", "a", "longer", ",", "continuous", "time-period", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "use", "of", "data", "from", "a", "representative", "national", "sample", "of", "outpatients", "using", "data", "from", "a", "national", "registry", "is", "a", "more", "reliable", "representation", "of", "the", "health", "care", "problem", "than", "extrapolating", "data", "from", "one", "clinical", "trial", "or", "one", "hospital", "only", "[", "24", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Although", "the", "registrations", "in", "the", "LIS-database", "only", "cover", "12", "%", "of", "the", "Dutch", "population", ",", "international", "validation", "studies", "have", "shown", "that", "the", "mathematical", "model", "that", "was", "applied", "for", "the", "calculation", "of", "the", "overall", "Dutch", "data", "has", "a", "high", "level", "of", "completeness", "and", "validity", "." ]
+  }, {
+    "sentence_tokens" : [ "Meerding", "et", "al.", "showed", "that", "there", "was", "a", "close", "agreement", "between", "de", "cases", "recorded", "in", "the", "LIS", "and", "the", "hospital", "'", "s", "discharge", "system", "[", "24", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Lyons", "et", "al.", "reported", "that", "there", "was", "a", "particularly", "good", "agreement", "between", "the", "extrapolated", "data", "from", "the", "LIS", "and", "the", "actual", "incidences", "of", "hospital", "admissions", "for", "injuries", "[", "42", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Another", "strength", "of", "our", "study", "is", "that", "it", "presents", "comprehensive", "estimates", "of", "health", "care", "costs", ",", "including", "all", "relevant", "health", "care", "sectors", "(", "i.e", ".,", "hospital", "inpatient", "care", ",", "medical", "procedures", ",", "rehabilitation", "clinics", ",", "and", "nursing", "homes", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "model", "uses", "data", "from", "the", "LIS", ",", "the", "National", "Hospital", "Discharge", "Registry", ",", "and", "a", "patient", "follow-up", "survey", "conducted", "in", "2007", "." ]
+  }, {
+    "sentence_tokens" : [ "Unfortunately", ",", "when", "performing", "the", "follow-up", "survey", ",", "it", "was", "not", "known", "that", "2007", "was", "a", "year", "with", "relatively", "more", "missing", "data", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "due", "to", "the", "very", "large", "sample", "of", "the", "survey", "and", "the", "use", "of", "a", "uniform", "coding", "method", ",", "it", "was", "possible", "to", "compare", "the", "healthcare", "use", "and", "related", "healthcare", "costs", "of", "all", "types", "of", "upper", "extremity", "injuries", "[", "31", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "limitation", "of", "the", "cost", "model", "is", "that", "indirect", "health", "care", "costs", ",", "such", "as", "absenteeism", "and", "work", "disability", "were", "not", "taken", "into", "account", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "could", "be", "a", "suggestion", "for", "future", "research", "." ]
+  }, {
+    "sentence_tokens" : [ "Furthermore", ",", "there", "may", "be", "some", "statistical", "uncertainty", "due", "to", "underreporting", "of", "combined", "injuries", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "example", ",", "patients", "with", "wounds", "concomitant", "with", "a", "fracture", "will", "be", "reported", "as", "fractures", ",", "not", "as", "wounds", "." ]
+  }, {
+    "sentence_tokens" : [ "Moreover", ",", "only", "patients", "who", "visited", "the", "ED", "were", "recorded", "in", "the", "LIS", "and", "LMR", "databases", "." ]
+  }, {
+    "sentence_tokens" : [ "Therefore", "patients", "who", "visited", "their", "general", "practitioner", "were", "not", "included", "." ]
+  }, {
+    "sentence_tokens" : [ "Conclusions", "." ]
+  }, {
+    "sentence_tokens" : [ "There", "has", "been", "a", "13", "%", "rise", "in", "incidence", "of", "upper", "extremity", "injuries", "in", "the", "Netherlands", "over", "the", "past", "two", "decades", "." ]
+  }, {
+    "sentence_tokens" : [ "These", "injuries", "constitute", "a", "substantial", "part", "of", "all", "injury", "related", "ED", "visits", "and", "impose", "a", "burden", "on", "health", "care", "costs", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "incidence", "of", "upper", "extremity", "injuries", "seems", "strongly", "age", "and", "gender", "related", "." ]
+  }, {
+    "sentence_tokens" : [ "Fractures", "are", "the", "most", "common", "injuries", "and", "they", "impose", "the", "greatest", "burden", "on", "health", "care", "costs", ",", "especially", "in", "women", "." ]
+  }, {
+    "sentence_tokens" : [ "Current", "treatment", "programs", "of", "especially", "frequently", "occurring", "injuries", "and", "injuries", "associated", "with", "high", "costs", "need", "to", "be", "evaluated", "in", "order", "to", "assess", "if", "health", "care", "cost", "reduction", "is", "feasible", "." ]
+  }, {
+    "sentence_tokens" : [ "Abbreviations", "." ]
+  }, {
+    "sentence_tokens" : [ "ED", ":", "Emergency", "department", ";", "ICD-9-CM", ":", "International", "classification", "of", "diseases", "9th", "revision", ",", "clinical", "modification", ";", "LIS", ":", "National", "injury", "surveillance", "system", ";", "LMR", ":", "National", "medical", "registration", "." ]
+  }, {
+    "sentence_tokens" : [ "Competing", "interests", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "authors", "declare", "that", "they", "have", "no", "competing", "interests", "." ]
+  }, {
+    "sentence_tokens" : [ "Authors", "'", "contributions", "." ]
+  }, {
+    "sentence_tokens" : [ "SP", "participated", "in", "the", "design", "of", "the", "study", "and", "the", "statistical", "analysis", "and", "drafting", "of", "the", "manuscript", "." ]
+  }, {
+    "sentence_tokens" : [ "GITI", "participated", "in", "the", "design", "of", "the", "study", ",", "and", "assisted", "in", "the", "data", "analysis", "and", "data", "interpretation", ",", "and", "drafting", "of", "the", "manuscript", "." ]
+  }, {
+    "sentence_tokens" : [ "MJMP", "participated", "in", "the", "design", "of", "the", "study", ",", "data", "collection", "and", "critical", "revision", "of", "the", "manuscript", "." ]
+  }, {
+    "sentence_tokens" : [ "DE", "participated", "in", "the", "design", "of", "the", "study", ",", "data", "interpretation", "and", "critical", "revision", "of", "the", "manuscript", "." ]
+  }, {
+    "sentence_tokens" : [ "PP", "participated", "in", "the", "design", "of", "the", "study", ",", "data", "interpretation", "and", "critical", "revision", "of", "the", "manuscript", "." ]
+  }, {
+    "sentence_tokens" : [ "DDH", "participated", "in", "the", "design", "of", "the", "study", ",", "data", "interpretation", "and", "critical", "revision", "of", "the", "manuscript", "." ]
+  }, {
+    "sentence_tokens" : [ "EMMVL", "supervised", ",", "and", "participated", "in", "the", "design", "of", "the", "study", ",", "data", "collection", ",", "analysis", "and", "interpretation", ",", "and", "drafting", "and", "critical", "revision", "of", "the", "manuscript", "." ]
+  }, {
+    "sentence_tokens" : [ "All", "authors", "have", "read", "and", "approved", "the", "final", "manuscript", "." ]
+  }, {
+    "sentence_tokens" : [ "Pre-publication", "history", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "pre-publication", "history", "for", "this", "paper", "can", "be", "accessed", "here:http://www.biomedcentral.com/1471-2458/13/531/prepub" ]
+  } ]
+}

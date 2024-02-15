@@ -1,251 +1,901 @@
-[ {
-  "sentence_tokens" : [ "They", "indicated", "the", "structural", "similarity", "between", "kynurenine", "and", "tryptophan", "as", "the", "cause", "of", "kynurenine", "mediated", "inhibition", "of", "auxin", "biosynthesis", "in", "roots", "of", "Arabidopsis", "thaliana", "seedlings", "when", "grown", "in", "a", "medium", "containing", "kynurenine", "." ],
-  "event_indices" : [ 13, 14, 15, 16, 17, 18, 19 ],
-  "type" : "Negative_activation",
-  "polarity" : false,
-  "controller_indices" : [ 13, 14 ],
-  "controlled_indices" : [ 17, 18, 19 ],
-  "trigger_indices" : [ 14, 15 ],
-  "rule_name" : "Positive_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "The", "plant", "vector", "pDHA", "[", "47", "]", "was", "linearised", "with", "BamHI", "restriction", "enzyme", ",", "blunted", "as", "described", "above", ",", "dephosphorylated", "using", "calf", "intestinal", "alkaline", "phosphatase", "(", "CIAP", ")", ",", "and", "ligated", "to", "the", "IDO1", "fragment", "to", "obtain", "the", "pDHA.IDO1", "intermediate", "vector", ",", "where", "IDO1", "was", "under", "the", "control", "of", "the", "constitutive", "35S", "cauliflower", "mosaic", "virus", "(", "CMV", ")", "promoter", "and", "the", "35S", "terminator", "suitable", "for", "plant", "expression", "." ],
-  "event_indices" : [ 10, 11, 12, 13 ],
-  "type" : "Negative_activation",
-  "polarity" : false,
-  "controller_indices" : [ 12, 13 ],
-  "controlled_indices" : [ 10, 11 ],
-  "trigger_indices" : [ 11, 12 ],
-  "rule_name" : "Negative_activation_token_1_noun",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Human", "Indoleamine", "2,3-dioxygenase", "1", "(", "IDO1", ")", "Expressed", "in", "Plant", "Cells", "Induces", "Kynurenine", "Production", "." ],
-  "event_indices" : [ 5, 6, 7, 8, 9, 10, 11, 12, 13 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 5, 6, 7, 8 ],
-  "controlled_indices" : [ 12, 13 ],
-  "trigger_indices" : [ 11, 12 ],
-  "rule_name" : "Positive_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "IDO1", "immunoregulatory", "effects", "are", "mainly", "mediated", "by", "dendritic", "cells", "(", "DCs", ")", ",", "the", "most", "potent", "antigen", "presenting", "cells", "in", "the", "mammal", "immune", "system", "that", ",", "upon", "IDO1", "upregulation", ",", "acquire", "tolerogenic", "functions", "." ],
-  "event_indices" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 10, 11 ],
-  "controlled_indices" : [ 0, 1 ],
-  "trigger_indices" : [ 5, 6 ],
-  "rule_name" : "Positive_activation_syntax_2_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Therefore", ",", "the", "catalytic", "activity", "of", "recombinant", "human", "IDO1", "in", "transformed", "plants", "could", "be", "exploited", "to", "produce", "kynurenine", "in", "an", "organism", "normally", "producing", "large", "quantities", "of", "its", "precursor", "." ],
-  "event_indices" : [ 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 8, 9 ],
-  "controlled_indices" : [ 17, 18 ],
-  "trigger_indices" : [ 16, 17 ],
-  "rule_name" : "Positive_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "In", "mammal", "cells", ",", "IDO1", "catalyzes", "the", "conversion", "of", "the", "essential", "amino", "acid", "tryptophan", "into", "kynurenine", "." ],
-  "event_indices" : [ 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 4, 5 ],
-  "controlled_indices" : [ 15, 16 ],
-  "trigger_indices" : [ 5, 6 ],
-  "rule_name" : "Positive_activation_syntax_7_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Kynurenine", "is", "required", "for", "the", "production", "of", "several", "metabolites", ",", "being", "the", "first", "metabolite", "in", "the", "kynurenine", "pathway", ",", "which", "leads", "to", "the", "final", "biosynthesis", "of", "nicotinamide", "adenine", "dinucleotide", "(", "NAD+", ")", "." ],
-  "event_indices" : [ 16, 17, 18, 19, 20, 21, 22, 23, 24, 25 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 16, 17 ],
-  "controlled_indices" : [ 24, 25 ],
-  "trigger_indices" : [ 20, 21 ],
-  "rule_name" : "Positive_activation_syntax_7_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "To", "confer", "higher", "stability", "to", "the", "heterologous", "human", "IDO1", "protein", "and", "to", "provide", "a", "more", "sensitive", "method", "to", "detect", "the", "protein", "of", "interest", ",", "we", "cloned", "a", "gene", "construct", "coding", "for", "IDO1-GFP", "." ],
-  "entity_one_indices" : [ 31, 32 ],
-  "entity_two_indices" : [ 8, 9 ]
-}, {
-  "sentence_tokens" : [ "Analysis", "of", "transiently", "transfected", "tobacco", "protoplasts", "demonstrated", "that", "the", "IDO1-GFP", "gene", "led", "to", "the", "expression", "of", "a", "detectable", "protein", "and", "to", "the", "production", "of", "kynurenine", "in", "the", "protoplast", "medium", "." ],
-  "entity_one_indices" : [ 24, 25 ],
-  "entity_two_indices" : [ 9, 10, 11 ]
-}, {
-  "sentence_tokens" : [ "To", "the", "best", "of", "our", "knowledge", ",", "this", "is", "the", "first", "report", "on", "the", "expression", "of", "human", "IDO1", "enzyme", "capable", "of", "secreting", "kynurenines", "in", "plant", "cells", "." ],
-  "entity_one_indices" : [ 18, 19 ],
-  "entity_two_indices" : [ 17, 18 ]
-}, {
-  "sentence_tokens" : [ "Foreign", "genes", "have", "been", "transferred", "into", "the", "plants", "by", "Agrobacterium", "tumefaciens", "mediated", "transformation", "methods", "[", "7,8", "]", "or", "other", "delivery", "systems", "including", "particle", "bombardment", ",", "PEG", "mediated", "DNA", "uptake", "in", "wall-free", "protoplasts", "[", "9", "]", ",", "and", "nanomaterial", "based", "delivery", "devices", "[", "10", "]", "." ],
-  "entity_one_indices" : [ 25, 26 ],
-  "entity_two_indices" : [ 0, 1, 2 ]
-}, {
-  "sentence_tokens" : [ "Indoleamine", "2,3-dioxygenase", "1", "(", "IDO1", ")", "represents", "one", "of", "the", "most", "interesting", "proteins", "which", "links", "an", "ancient", "metabolic", "pathway", "with", "immune", "regulation", "." ],
-  "entity_one_indices" : [ 4, 5 ],
-  "entity_two_indices" : [ 0, 1, 2, 3 ]
-}, {
-  "sentence_tokens" : [ "This", "activity", "leads", "to", "the", "kynurenine", "production", ",", "which", "is", "the", "upstream", "metabolite", "along", "the", "so", "called", "kynurenine", "pathway", "[", "14", "]", "." ],
-  "entity_one_indices" : [ 17, 18 ],
-  "entity_two_indices" : [ 5, 6 ]
-}, {
-  "sentence_tokens" : [ "Moreover", ",", "apart", "from", "being", "a", "cytoplasmic", "enzyme", ",", "IDO1", "also", "acts", "as", "a", "signal", "transducing", "molecule", "by", "binding", "tyrosine", "phosphatases", "in", "its", "immunoreceptor", "tyrosine", "based", "inhibitory", "motif", "(", "ITIM", ")", "domains", "[", "23", "]", "and", "anchoring", "to", "the", "early", "endosomes", "." ],
-  "entity_one_indices" : [ 9, 10 ],
-  "entity_two_indices" : [ 7, 8 ]
-}, {
-  "sentence_tokens" : [ "This", "localisation", "is", "a", "result", "of", "the", "IDO1", "interaction", "with", "activated", "class", "IA", "PI3K", "subunits", "[", "24", "]", "." ],
-  "entity_one_indices" : [ 13, 14 ],
-  "entity_two_indices" : [ 7, 8 ]
-}, {
-  "sentence_tokens" : [ "A", "comparison", "of", "the", "human", "IDO1", "amino", "acid", "sequence", "and", "the", "plant", "protein", "databases", "was", "performed", "." ],
-  "entity_one_indices" : [ 6, 7, 8 ],
-  "entity_two_indices" : [ 5, 6 ]
-}, {
-  "sentence_tokens" : [ "Then", ",", "we", "transformed", "tobacco", "(", "N.", "tabacum", "cv.", "Petit", "Havana", ")", "plants", "with", "A.", "tumefaciens", "harbouring", "the", "pGreenII.IDO1", "vector", "to", "obtain", "plants", "stably", "expressing", "human", "IDO1", "." ],
-  "entity_one_indices" : [ 26, 27 ],
-  "entity_two_indices" : [ 18, 19 ]
-}, {
-  "sentence_tokens" : [ "Selection", "with", "kanamycin", "allowed", "for", "the", "regeneration", "of", "transformed", "plants", "(", "T0", ")", ",", "as", "shown", "in", "Figure", "1B", "(", "left", "panel", ")", "." ],
-  "entity_one_indices" : [ 6, 7 ],
-  "entity_two_indices" : [ 2, 3 ]
-}, {
-  "sentence_tokens" : [ "However", ",", "even", "if", "IDO1", "mRNA", "was", "detected", "by", "RT-PCR", "in", "leaves", "(", "Figure", "1E", ")", ",", "IDO1", "protein", "was", "undetectable", "by", "Western", "blotting", "in", "total", "proteins", "extracted", "from", "leaves", "and", "roots", "of", "transformed", "plants", ",", "suggesting", "a", "protein", "stability", "problem", "." ],
-  "entity_one_indices" : [ 17, 18 ],
-  "entity_two_indices" : [ 4, 5 ]
-}, {
-  "sentence_tokens" : [ "Therefore", ",", "a", "second", "cloning", "strategy", "was", "carried", "out", "by", "fusing", "IDO1", "sequence", "to", "the", "GFP", "tag", ",", "aiming", "to", "obtain", "a", "more", "stable", "fusion", "protein", ",", "as", "frequently", "observed", "in", "fusion", "technology", "[", "31", "]", "." ],
-  "entity_one_indices" : [ 15, 16 ],
-  "entity_two_indices" : [ 11, 12 ]
-}, {
-  "sentence_tokens" : [ "For", "this", "purpose", "and", "for", "obtaining", "a", "tag", "useful", "as", "both", "a", "protein", "detector", "and", "a", "possible", "purification", "system", ",", "we", "assembled", "the", "gene", "construct", "coding", "for", "IDO1-GFP", "under", "the", "same", "constitutive", "promoter", "previously", "used", "in", "pGreenII.IDO1", ",", "the", "35S", "promoter", "(", "Figure", "2A", ")", ",", "and", "we", "transiently", "transfected", "tobacco", "protoplasts", "with", "the", "new", "vector", "pV.IDO1-GFP", "." ],
-  "entity_one_indices" : [ 36, 37 ],
-  "entity_two_indices" : [ 27, 28 ]
-}, {
-  "sentence_tokens" : [ "As", "a", "result", ",", "IDO1", "can", "be", "expressed", "in", "vitro", "as", "a", "GFP", "fused", "protein", "in", "transiently", "transformed", "protoplasts", "." ],
-  "entity_one_indices" : [ 12, 13 ],
-  "entity_two_indices" : [ 4, 5 ]
-}, {
-  "sentence_tokens" : [ "Transiently", "Expressed", "IDO1-GFP", "Had", "Catalytic", "Activity", "and", "Similar", "Subcellular", "Localisation", "of", "Mammal", "IDO1", "." ],
-  "entity_one_indices" : [ 12, 13 ],
-  "entity_two_indices" : [ 2, 3 ]
-}, {
-  "sentence_tokens" : [ "In", "fact", ",", "the", "WT", "control", "protoplasts", "showed", "undetectable", "production", "of", "kynurenine", "in", "comparison", "with", "the", "IDO1", "transfected", "cells", ",", "both", "in", "the", "presence", "and", "absence", "of", "an", "extra", "amount", "of", "tryptophan", "in", "the", "medium", "(", "Figure", "3A", ")", "." ],
-  "entity_one_indices" : [ 16, 17 ],
-  "entity_two_indices" : [ 11, 12 ]
-}, {
-  "sentence_tokens" : [ "Moreover", ",", "the", "addition", "of", "tryptophan", "to", "the", "medium", "allowed", "for", "the", "production", "of", "a", "significantly", "higher", "level", "of", "kynurenine", "as", "compared", "to", "untreated", "IDO1", "transfected", "cells", "." ],
-  "entity_one_indices" : [ 24, 25 ],
-  "entity_two_indices" : [ 19, 20 ]
-}, {
-  "sentence_tokens" : [ "Since", "perfect", "co-localisation", "would", "result", "in", "statistical", "coefficients", "close", "to", "1", ",", "our", "results", "confirmed", "the", "partial", "localisation", "of", "IDO1", "at", "PVC", "and", "MVB", "membrane", "when", "co-expressed", "with", "TR2RFP-VSR2", "(", "Figure", "3C", ")", "." ],
-  "entity_one_indices" : [ 28, 29 ],
-  "entity_two_indices" : [ 19, 20 ]
-}, {
-  "sentence_tokens" : [ "As", "a", "whole", ",", "on", "the", "basis", "of", "these", "data", ",", "we", "found", "that", "GFP", "tagged", "IDO1", "can", "be", "transiently", "expressed", "in", "protoplasts", "in", "a", "catalytically", "active", "conformation", "and", "has", "a", "similar", "intracellular", "localisation", "to", "that", "found", "in", "mammalian", "cells", "." ],
-  "entity_one_indices" : [ 16, 17 ],
-  "entity_two_indices" : [ 14, 15 ]
-}, {
-  "sentence_tokens" : [ "Another", "enzyme", ",", "named", "glucocerebrosidase", ",", "is", "produced", "in", "plant", "cell", "suspension", "cultures", "and", "commercialised", "[", "13", "]", "for", "Gaucher", "'", "s", "disease", "treatment", "." ],
-  "entity_one_indices" : [ 4, 5 ],
-  "entity_two_indices" : [ 1, 2 ]
-}, {
-  "sentence_tokens" : [ "In", "the", "current", "report", ",", "a", "cloning", "strategy", "was", "set", "for", "the", "expression", "of", "a", "catalytically", "active", "form", "of", "human", "IDO1", "in", "plant", "cells", ",", "with", "the", "aim", "of", "exploring", "an", "alternative", "platform", "for", "the", "kynurenine", "production", "." ],
-  "entity_one_indices" : [ 35, 36 ],
-  "entity_two_indices" : [ 20, 21 ]
-}, {
-  "sentence_tokens" : [ "This", "molecule", "is", "an", "agonist", "of", "AhR", ",", "a", "crucial", "factor", "in", "the", "immune", "response", "regulation", "that", "exerts", "its", "roles", "through", "different", "immunoregulatory", "mechanisms", "." ],
-  "entity_one_indices" : [ 13, 14, 15 ],
-  "entity_two_indices" : [ 6, 7 ]
-}, {
-  "sentence_tokens" : [ "In", "fact", ",", "when", "activated", ",", "AhR", "is", "capable", "of", "inhibiting", "the", "production", "of", "several", "proinflammatory", "cytokines", "and", "of", "controlling", "the", "generation", "of", "regulatory", "T", "(", "Treg", ")", "cells", "and/or", "T", "helper", "17", "(", "Th17", ")", "cells", "in", "mouse", "models", "of", "autoimmune", "diseases", "[", "39", "]", "." ],
-  "entity_one_indices" : [ 41, 42, 43 ],
-  "entity_two_indices" : [ 6, 7 ]
-}, {
-  "sentence_tokens" : [ "Apart", "from", "arylformamidase", ",", "plants", "do", "not", "possess", "orthologous", "genes", "coding", "for", "enzymes", "involved", "in", "the", "kynurenine", "pathway", "[", "41", "]", "." ],
-  "entity_one_indices" : [ 16, 17 ],
-  "entity_two_indices" : [ 2, 3 ]
-}, {
-  "sentence_tokens" : [ "Although", "the", "genetic", "transformation", "had", "been", "effective", "and", "the", "transgene", "transcription", "did", "occur", ",", "transformed", "plants", "failed", "to", "express", "IDO1", "protein", "." ],
-  "entity_one_indices" : [ 19, 20 ],
-  "entity_two_indices" : [ 10, 11 ]
-}, {
-  "sentence_tokens" : [ "Under", "these", "conditions", ",", "IDO1-GFP", "fusion", "protein", "was", "expressed", ",", "accumulated", "in", "the", "protoplasts", "and", ",", "most", "importantly", ",", "secreted", "kynurenine", "in", "the", "medium", "." ],
-  "entity_one_indices" : [ 20, 21 ],
-  "entity_two_indices" : [ 4, 5 ]
-}, {
-  "sentence_tokens" : [ "In", "fact", ",", "according", "to", "He", "and", "colleagues", "[", "43", "]", ",", "kynurenine", "is", "an", "alternative", "substrate", "that", "can", "competitively", "inhibit", "the", "key", "enzymes", "involved", "in", "the", "conversion", "of", "tryptophan", "into", "indole-3-pyruvic", "acid", "in", "one", "of", "the", "auxin", "biosynthesis", "pathways", "." ],
-  "entity_one_indices" : [ 37, 38, 39 ],
-  "entity_two_indices" : [ 12, 13 ]
-}, {
-  "sentence_tokens" : [ "In", "our", "study", ",", "we", "observed", "that", "the", "extra", "tryptophan", "supplementation", "to", "the", "protoplast", "medium", ",", "rather", "than", "affecting", "the", "catalytic", "activity", "of", "IDO1-GFP", ",", "increased", "fourfold", "the", "production", "of", "kynurenine", "." ],
-  "entity_one_indices" : [ 30, 31 ],
-  "entity_two_indices" : [ 23, 24 ]
-}, {
-  "sentence_tokens" : [ "These", "findings", "suggest", "that", "kynurenine", "production", "increases", "according", "to", "the", "availability", "of", "the", "substrate", "tryptophan", "in", "the", "medium", ",", "and", "IDO1", "activity", "promotes", "an", "increased", "level", "of", "tryptophan", "in", "the", "medium", "by", "a", "still", "unidentified", "mechanism", "." ],
-  "entity_one_indices" : [ 20, 21 ],
-  "entity_two_indices" : [ 4, 5 ]
-}, {
-  "sentence_tokens" : [ "In", "fact", ",", "tryptophan", "for", "humans", "is", "an", "essential", "amino", "acid", "necessary", "for", "the", "in", "vivo", "biosynthesis", "of", "proteins", ",", "as", "well", "as", "a", "precursor", "of", "several", "bioactive", "compounds", "." ],
-  "entity_one_indices" : [ 16, 17 ],
-  "entity_two_indices" : [ 9, 10, 11 ]
-}, {
-  "sentence_tokens" : [ "It", "is", "widely", "used", "as", "a", "dietary", "supplement", "for", "several", "perceived", "benefits", ",", "such", "as", "sleep", "and", "mood", "regulation", "[", "44", "]", ",", "and", "it", "is", "reported", "to", "mitigate", "the", "course", "of", "several", "chronic", "diseases", ",", "such", "as", "Chron", "'", "s", "disease", "[", "45", "]", "." ],
-  "entity_one_indices" : [ 33, 34, 35 ],
-  "entity_two_indices" : [ 15, 16 ]
-}, {
-  "sentence_tokens" : [ "To", "the", "best", "of", "our", "knowledge", ",", "this", "is", "the", "first", "report", "on", "kynurenine", "production", "in", "plant", "cells", "by", "expressing", "human", "IDO1", "protein", "." ],
-  "entity_one_indices" : [ 21, 22 ],
-  "entity_two_indices" : [ 13, 14 ]
-}, {
-  "sentence_tokens" : [ "Further", "studies", "will", "be", "necessary", "to", "verify", "if", "a", "negative", "IDO1", "mediated", "interference", "with", "plant", "metabolism", "may", "occur", "during", "plant", "growth", "." ],
-  "entity_one_indices" : [ 15, 16 ],
-  "entity_two_indices" : [ 10, 11 ]
-}, {
-  "sentence_tokens" : [ "After", "co-cultivation", ",", "the", "leaf", "discs", "were", "grown", "aseptically", "in", "Petri", "dishes", "at", "25", "degrees", "C", "under", "full", "light", "on", "the", "same", "medium", "supplemented", "with", "500", "mg/L", "of", "cefotaxime", "and", "100", "mg/L", "kanamycin", "to", "avoid", "Agrobacterium", "growth", "and", "to", "select", "transformed", "cells", ",", "respectively", "." ],
-  "entity_one_indices" : [ 32, 33 ],
-  "entity_two_indices" : [ 28, 29 ]
-}, {
-  "sentence_tokens" : [ "This", "reconstituted", "cassette", "was", "sequenced", "to", "confirm", "the", "integrity", "of", "IDO1", "gene", "and", "the", "frame", "with", "GFP", "." ],
-  "entity_one_indices" : [ 16, 17 ],
-  "entity_two_indices" : [ 10, 11 ]
-}, {
-  "sentence_tokens" : [ "The", "floating", "green", "band", ",", "representing", "vital", "protoplast", ",", "was", "recovered", "and", "washed", "twice", "with", "W5", "solution", "(", "152", "mM", "NaCl", ",", "5", "mM", "KCl", ",", "125", "mM", "CaCl", "." ],
-  "entity_one_indices" : [ 24, 25 ],
-  "entity_two_indices" : [ 20, 21 ]
-}, {
-  "sentence_tokens" : [ "After", "testing", "viability", "and", "yield", "with", "fluorescein", "diacetate", "staining", ",", "we", "used", "protoplasts", "for", "further", "analysis", "." ],
-  "entity_one_indices" : [ 7, 8 ],
-  "entity_two_indices" : [ 6, 7 ]
-}, {
-  "sentence_tokens" : [ "Fluorescence", "was", "detected", "with", "a", "552", "nm", "dichroic", "beam", "splitter", "and", "a", "475", "to", "550", "nm", "bandpass", "filter", "for", "GFP", "and", "a", "560", "to", "700", "nm", "bandpass", "filter", "for", "RFP", "." ],
-  "entity_one_indices" : [ 29, 30 ],
-  "entity_two_indices" : [ 19, 20 ]
-}, {
-  "sentence_tokens" : [ "Statistical", "colocalisation", "between", "IDO1-GFP", "and", "TR2RFP-VSR2", "was", "performed", "as", "described", "in", "Gershlick", "et", "al.", "[", "53", "]", "." ],
-  "entity_one_indices" : [ 5, 6 ],
-  "entity_two_indices" : [ 3, 4 ]
-}, {
-  "sentence_tokens" : [ "Total", "DNA", "was", "isolated", "from", "wild", "type", "and", "transgenic", "tobacco", "leaves", "using", "the", "GenElute", "TM", "Plant", "Genomic", "DNA", "Miniprep", "kit", "(", "Merck", "KGaA", ",", "Darmstadt", ",", "Germany", ")", "." ],
-  "entity_one_indices" : [ 14, 15 ],
-  "entity_two_indices" : [ 6, 7 ]
-}, {
-  "sentence_tokens" : [ "The", "cDNA", "preparations", "were", "analysed", "by", "PCR", "using", "specific", "primers", "for", "human", "IDO1", "(", "forward", ",", "5", "'-", "CTCCTGGACAATCAGTAAAGAGTACC-3", "'", ";", "reverse", ",", "5", "'-", "ACTTCTCAACTCTTTCTCGAAGCTGG-3", "'", ")", "and", "plant", "actin", "(", "forward", ",", "5", "'-", "ATGGCGGATGGGGAGGACATTCA-3", "'", ";", "reverse", ",", "5", "'-", "CCTTTTGTTATCCACATCTGTTG-3", "'", ")", "." ],
-  "entity_one_indices" : [ 30, 31 ],
-  "entity_two_indices" : [ 12, 13 ]
-}, {
-  "sentence_tokens" : [ "Proteins", "were", "separated", "by", "SDS-PAGE", "on", "10", "%", "polyacrylamide", "gels", "and", "then", "transferred", "to", "nitrocellulose", "." ],
-  "entity_one_indices" : [ 14, 15 ],
-  "entity_two_indices" : [ 8, 9 ]
-}, {
-  "sentence_tokens" : [ "Membranes", "were", "blocked", "with", "5", "%", "(", "w/v", ")", "non", "fat", "dried", "milk", "in", "Tris", "buffered", "saline", "containing", "0.1", "%", "(", "v/v", ")", "Tween", "20", "at", "room", "temperature", "for", "1", "h." ],
-  "entity_one_indices" : [ 23, 24, 25 ],
-  "entity_two_indices" : [ 14, 15 ]
-}, {
-  "sentence_tokens" : [ "The", "software", "TURBOCHROM", "4", "was", "used", "for", "evaluating", "the", "concentrations", "of", "kynurenine", "and", "tryptophan", "in", "the", "samples", "by", "mean", "of", "a", "calibration", "curve", "." ],
-  "entity_one_indices" : [ 11, 12 ],
-  "entity_two_indices" : [ 1, 2, 3, 4 ]
-} ]
+{
+  "regulations" : [ {
+    "sentence_tokens" : [ "They", "indicated", "the", "structural", "similarity", "between", "kynurenine", "and", "tryptophan", "as", "the", "cause", "of", "kynurenine", "mediated", "inhibition", "of", "auxin", "biosynthesis", "in", "roots", "of", "Arabidopsis", "thaliana", "seedlings", "when", "grown", "in", "a", "medium", "containing", "kynurenine", "." ],
+    "event_indices" : [ 13, 14, 15, 16, 17, 18, 19 ],
+    "type" : "Negative_activation",
+    "polarity" : false,
+    "controller_indices" : [ 13, 14 ],
+    "controlled_indices" : [ 17, 18, 19 ],
+    "trigger_indices" : [ 14, 15 ],
+    "rule_name" : "Positive_activation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "The", "plant", "vector", "pDHA", "[", "47", "]", "was", "linearised", "with", "BamHI", "restriction", "enzyme", ",", "blunted", "as", "described", "above", ",", "dephosphorylated", "using", "calf", "intestinal", "alkaline", "phosphatase", "(", "CIAP", ")", ",", "and", "ligated", "to", "the", "IDO1", "fragment", "to", "obtain", "the", "pDHA.IDO1", "intermediate", "vector", ",", "where", "IDO1", "was", "under", "the", "control", "of", "the", "constitutive", "35S", "cauliflower", "mosaic", "virus", "(", "CMV", ")", "promoter", "and", "the", "35S", "terminator", "suitable", "for", "plant", "expression", "." ],
+    "event_indices" : [ 10, 11, 12, 13 ],
+    "type" : "Negative_activation",
+    "polarity" : false,
+    "controller_indices" : [ 12, 13 ],
+    "controlled_indices" : [ 10, 11 ],
+    "trigger_indices" : [ 11, 12 ],
+    "rule_name" : "Negative_activation_token_1_noun",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "Human", "Indoleamine", "2,3-dioxygenase", "1", "(", "IDO1", ")", "Expressed", "in", "Plant", "Cells", "Induces", "Kynurenine", "Production", "." ],
+    "event_indices" : [ 5, 6, 7, 8, 9, 10, 11, 12, 13 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 5, 6, 7, 8 ],
+    "controlled_indices" : [ 12, 13 ],
+    "trigger_indices" : [ 11, 12 ],
+    "rule_name" : "Positive_activation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "IDO1", "immunoregulatory", "effects", "are", "mainly", "mediated", "by", "dendritic", "cells", "(", "DCs", ")", ",", "the", "most", "potent", "antigen", "presenting", "cells", "in", "the", "mammal", "immune", "system", "that", ",", "upon", "IDO1", "upregulation", ",", "acquire", "tolerogenic", "functions", "." ],
+    "event_indices" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 10, 11 ],
+    "controlled_indices" : [ 0, 1 ],
+    "trigger_indices" : [ 5, 6 ],
+    "rule_name" : "Positive_activation_syntax_2_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "the", "catalytic", "activity", "of", "recombinant", "human", "IDO1", "in", "transformed", "plants", "could", "be", "exploited", "to", "produce", "kynurenine", "in", "an", "organism", "normally", "producing", "large", "quantities", "of", "its", "precursor", "." ],
+    "event_indices" : [ 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 8, 9 ],
+    "controlled_indices" : [ 17, 18 ],
+    "trigger_indices" : [ 16, 17 ],
+    "rule_name" : "Positive_activation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "In", "mammal", "cells", ",", "IDO1", "catalyzes", "the", "conversion", "of", "the", "essential", "amino", "acid", "tryptophan", "into", "kynurenine", "." ],
+    "event_indices" : [ 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 4, 5 ],
+    "controlled_indices" : [ 15, 16 ],
+    "trigger_indices" : [ 5, 6 ],
+    "rule_name" : "Positive_activation_syntax_7_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "Kynurenine", "is", "required", "for", "the", "production", "of", "several", "metabolites", ",", "being", "the", "first", "metabolite", "in", "the", "kynurenine", "pathway", ",", "which", "leads", "to", "the", "final", "biosynthesis", "of", "nicotinamide", "adenine", "dinucleotide", "(", "NAD+", ")", "." ],
+    "event_indices" : [ 16, 17, 18, 19, 20, 21, 22, 23, 24, 25 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 16, 17 ],
+    "controlled_indices" : [ 24, 25 ],
+    "trigger_indices" : [ 20, 21 ],
+    "rule_name" : "Positive_activation_syntax_7_verb",
+    "rule" : null
+  } ],
+  "hardInstances" : [ {
+    "sentence_tokens" : [ "They", "indicated", "the", "structural", "similarity", "between", "kynurenine", "and", "tryptophan", "as", "the", "cause", "of", "kynurenine", "mediated", "inhibition", "of", "auxin", "biosynthesis", "in", "roots", "of", "Arabidopsis", "thaliana", "seedlings", "when", "grown", "in", "a", "medium", "containing", "kynurenine", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 31, 32 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "plant", "vector", "pDHA", "[", "47", "]", "was", "linearised", "with", "BamHI", "restriction", "enzyme", ",", "blunted", "as", "described", "above", ",", "dephosphorylated", "using", "calf", "intestinal", "alkaline", "phosphatase", "(", "CIAP", ")", ",", "and", "ligated", "to", "the", "IDO1", "fragment", "to", "obtain", "the", "pDHA.IDO1", "intermediate", "vector", ",", "where", "IDO1", "was", "under", "the", "control", "of", "the", "constitutive", "35S", "cauliflower", "mosaic", "virus", "(", "CMV", ")", "promoter", "and", "the", "35S", "terminator", "suitable", "for", "plant", "expression", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 22, 23, 24, 25 ], [ 26, 27 ], [ 33, 34 ], [ 38, 39 ], [ 43, 44 ] ]
+  }, {
+    "sentence_tokens" : [ "Human", "Indoleamine", "2,3-dioxygenase", "1", "(", "IDO1", ")", "Expressed", "in", "Plant", "Cells", "Induces", "Kynurenine", "Production", "." ],
+    "entities_indices" : [ [ 1, 2, 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "IDO1", "immunoregulatory", "effects", "are", "mainly", "mediated", "by", "dendritic", "cells", "(", "DCs", ")", ",", "the", "most", "potent", "antigen", "presenting", "cells", "in", "the", "mammal", "immune", "system", "that", ",", "upon", "IDO1", "upregulation", ",", "acquire", "tolerogenic", "functions", "." ],
+    "entities_indices" : [ [ 27, 28 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "mammal", "cells", ",", "IDO1", "catalyzes", "the", "conversion", "of", "the", "essential", "amino", "acid", "tryptophan", "into", "kynurenine", "." ],
+    "entities_indices" : [ [ 11, 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "Kynurenine", "is", "required", "for", "the", "production", "of", "several", "metabolites", ",", "being", "the", "first", "metabolite", "in", "the", "kynurenine", "pathway", ",", "which", "leads", "to", "the", "final", "biosynthesis", "of", "nicotinamide", "adenine", "dinucleotide", "(", "NAD+", ")", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 26, 27, 28, 29 ], [ 30, 31 ] ]
+  } ],
+  "withoutRegulations" : [ {
+    "sentence_tokens" : [ "Unexpectedly", ",", "the", "final", "(", "i.e", ".,", "after", "the", "24", "h", "incubation", ")", "tryptophan", "level", "measured", "in", "the", "medium", "with", "extra-added", "tryptophan", "(", "100", "mu", "M", ")", "was", "significantly", "higher", "in", "the", "presence", "of", "transfected", "IDO1", "cells", "than", "in", "the", "WT", "control", "(", "Figure", "3B", ")", "." ],
+    "entities_indices" : [ [ 35, 36 ] ]
+  }, {
+    "sentence_tokens" : [ "One", "T1", "plant", "deriving", "from", "each", "of", "the", "10", "primary", "regenerants", ",", "T1n", "(", "n", "=", "1", "-", "10", ")", ",", "was", "analysed", "by", "PCR", "to", "confirm", "the", "IDO1", "gene", "presence", "." ],
+    "entities_indices" : [ [ 28, 29 ] ]
+  }, {
+    "sentence_tokens" : [ "Although", "the", "genetic", "transformation", "had", "been", "effective", "and", "the", "transgene", "transcription", "did", "occur", ",", "transformed", "plants", "failed", "to", "express", "IDO1", "protein", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "Statistical", "colocalisation", "between", "IDO1-GFP", "and", "TR2RFP-VSR2", "was", "performed", "as", "described", "in", "Gershlick", "et", "al.", "[", "53", "]", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "Finally", ",", "in", "plants", ",", "IDO1", "keeps", "the", "same", "dual", "localisation", "recently", "found", "in", "mammalian", "cells", "[", "46", "]", "." ],
+    "entities_indices" : [ [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "Analysis", "of", "transiently", "transfected", "tobacco", "protoplasts", "demonstrated", "that", "the", "IDO1-GFP", "gene", "led", "to", "the", "expression", "of", "a", "detectable", "protein", "and", "to", "the", "production", "of", "kynurenine", "in", "the", "protoplast", "medium", "." ],
+    "entities_indices" : [ [ 9, 10, 11 ], [ 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "production", "of", "recombinant", "proteins", "in", "plants", "dates", "back", "to", "the", "end", "of", "1980s", "[", "1", "]", ",", "and", "since", "then", "many", "recombinant", "proteins", "have", "been", "produced", "in", "plants", "for", "different", "uses", ",", "spanning", "from", "biomedical", "applications", "to", "industrial", "production", "[", "2,3", "]", "." ],
+    "entities_indices" : [ [ 3, 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "order", "to", "avoid", "possibile", "impact", "of", "tryptophan", "depletion", ",", "due", "to", "the", "catalytic", "activity", "of", "IDO1", ",", "on", "cell", "vitality", "and", "protein", "expression", ",", "we", "added", "an", "extra", "amount", "of", "tryptophan", "to", "the", "protoplast", "medium", "." ],
+    "entities_indices" : [ [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "Since", "IDO1", "coding", "sequence", "contained", "another", "HindIII", "site", "(", "Figure", "2A", ")", ",", "the", "digestion", "of", "pUC.IDO1-GFP", "by", "EcoRI", "and", "HindIII", "generated", "two", "fragments", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 6, 7, 8 ], [ 14, 15 ], [ 16, 17 ], [ 18, 19 ], [ 20, 21 ], [ 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "2H", "O", ",", "5", "mM", "glucose", ")", "." ],
+    "entities_indices" : [ [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "DNA", "PCR", "amplification", "was", "carried", "out", "using", "the", "primer", "pairs", "forward", "35S1", "(", "5", "'-ACGTTCCAACCACGTCTTCAAAG-3", "'", ")", "and", "reverse", "IDO1", "(", "5", "'-GCAAGACCTTACGGACATCT-3", "'", ")", "and", "forward", "35S2", "(", "5", "'-CATGGAGTCAAAGATTCAAA-3", "'", ")", "and", "reverse", "IDO1", "for", "T0", "and", "T1", "plants", ",", "respectively", "." ],
+    "entities_indices" : [ [ 19, 20 ], [ 27, 28, 29, 30, 31, 32 ], [ 35, 36 ] ]
+  }, {
+    "sentence_tokens" : [ "After", "being", "blocked", ",", "membranes", "were", "incubated", "overnight", "with", "primary", "antibodies", ",", "namely", ",", "anti-IDO1", "(", "Merck", "Millipore", ",", "Darmstadt", ",", "Germany", ")", ",", "anti-GFP", "(", "Thermo", "Fisher", "Scientific", ",", "Waltham", ",", "MA", ",", "USA", ")", ",", "and", "anti-Rubisco", "large", "subunit", "(", "rbcL", ",", "Agrisera", ",", "Sweden", ")", ",", "then", "washed", "and", "incubated", "with", "appropriate", "horseradish", "peroxidase", "(", "HRP", ")-conjugated", "secondary", "antibody", "(", "Thermo", "Fisher", "Scientific", ",", "Waltham", ",", "MA", ",", "USA", ")", "for", "1", "h", "at", "room", "temperature", "." ],
+    "entities_indices" : [ [ 32, 33 ], [ 56, 57 ], [ 58, 59 ], [ 69, 70 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "localisation", "is", "a", "result", "of", "the", "IDO1", "interaction", "with", "activated", "class", "IA", "PI3K", "subunits", "[", "24", "]", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "Moreover", ",", "most", "of", "these", "proteins", "were", "reported", "to", "have", "an", "unknown", "function", "and", ",", "in", "the", "few", "cases", "of", "being", "identified", "as", "indoleamine", "2,3-dioxygenase", "enzymes", ",", "the", "evidence", "supporting", "the", "existence", "was", "inferred", "only", "by", "homology.Therefore", ",", "to", "express", "IDO1", "in", "plants", ",", "we", "cloned", "the", "human", "IDO1", "cDNA", "into", "plant", "expression", "vector", "pGreenII", ",", "obtaining", "pGreenII.IDO1", "." ],
+    "entities_indices" : [ [ 23, 24, 25 ], [ 40, 41 ], [ 48, 49 ], [ 57, 58 ] ]
+  }, {
+    "sentence_tokens" : [ "Thus", ",", "the", "IDO1", "ability", "to", "restrain", "inflammation", "depends", "on", "two", "distinct", "functions", "of", "the", "IDO1", "protein", ":", "one", "is", "enzymatic", "(", "tryptophan", "degradation", "to", "kynurenine", ")", "while", "the", "other", "is", "independent", "from", "its", "enzymatic", "function.Potential", "clinical", "applications", "of", "kynurenine", "are", "growing", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 7, 8 ], [ 15, 16 ], [ 39, 40 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "lack", "of", "human", "IDO1", "expression", "in", "plants", "could", "possibly", "be", "attributed", "to", "protein", "instability", "." ],
+    "entities_indices" : [ [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "Membranes", "were", "blocked", "with", "5", "%", "(", "w/v", ")", "non", "fat", "dried", "milk", "in", "Tris", "buffered", "saline", "containing", "0.1", "%", "(", "v/v", ")", "Tween", "20", "at", "room", "temperature", "for", "1", "h." ],
+    "entities_indices" : [ [ 14, 15 ], [ 23, 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "our", "study", ",", "we", "observed", "that", "the", "extra", "tryptophan", "supplementation", "to", "the", "protoplast", "medium", ",", "rather", "than", "affecting", "the", "catalytic", "activity", "of", "IDO1-GFP", ",", "increased", "fourfold", "the", "production", "of", "kynurenine", "." ],
+    "entities_indices" : [ [ 23, 24 ], [ 30, 31 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "result", "of", "digestion", "was", "separated", "on", "a", "1", "%", "agarose", "gel", "and", "the", "IDO1", "band", "was", "isolated", "and", "purified", "using", "the", "T-Pro", "Gel", "and", "PCR", "DNA", "Purification", "kit", "(", "T-Pro", "Biotechnology", ",", "New", "Taipei", "County", ",", "Taiwan", ")", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 10, 11 ], [ 14, 15 ], [ 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "After", "W5", "removal", "by", "centrifuging", "for", "10", "min", "at", "60", "x", "g", ",", "protoplasts", "were", "resuspended", "at", "a", "concentration", "of", "1", "x", "10", "mL", "with", "MaCa", "buffer", "(", "0.1", "%", "MES", ",", "20", "mM", "CaCl", ",", "0.5", "M", "mannitol", "(", "pH", "5.6", ")", ")", ",", "heated", "at", "45", "degrees", "C", "for", "5", "min", ",", "and", "mixed", "with", "60", "mu", "g", "of", "plasmid", "DNA", "mL", "of", "protoplast", "suspension", "." ],
+    "entities_indices" : [ [ 23, 24 ], [ 30, 31 ], [ 38, 39 ], [ 40, 41 ], [ 63, 64 ] ]
+  }, {
+    "sentence_tokens" : [ "IDO1", "functional", "activity", "was", "measured", "in", "protoplast", "culture", "supernatants", "in", "terms", "of", "the", "ability", "to", "metabolise", "tryptophan", "to", "kynurenine", ",", "whose", "concentrations", "were", "measured", "by", "using", "a", "Perkin", "Elmer", ",", "series", "200", "HPLC", "instrument", "(", "Waltham", ",", "MA", ",", "USA", ")", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 18, 19 ], [ 37, 38 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "fact", ",", "through", "its", "enzymatic", "activity", ",", "IDO1", "generates", "both", "tryptophan", "deprivation", "in", "local", "tissue", "microenvironments", "and", "the", "formation", "of", "bioactive", "metabolites", "collectively", "called", "kynurenines", "." ],
+    "entities_indices" : [ [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "total", ",", "10", "PCR", "positive", "plants", "were", "chosen", ",", "transplanted", "to", "pots", "in", "controlled", "greenhouse", "conditions", ",", "and", "reared", "to", "flower", "for", "seed", "production", "." ],
+    "entities_indices" : [ [ 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "fact", ",", "when", "activated", ",", "AhR", "is", "capable", "of", "inhibiting", "the", "production", "of", "several", "proinflammatory", "cytokines", "and", "of", "controlling", "the", "generation", "of", "regulatory", "T", "(", "Treg", ")", "cells", "and/or", "T", "helper", "17", "(", "Th17", ")", "cells", "in", "mouse", "models", "of", "autoimmune", "diseases", "[", "39", "]", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 41, 42, 43 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "floating", "green", "band", ",", "representing", "vital", "protoplast", ",", "was", "recovered", "and", "washed", "twice", "with", "W5", "solution", "(", "152", "mM", "NaCl", ",", "5", "mM", "KCl", ",", "125", "mM", "CaCl", "." ],
+    "entities_indices" : [ [ 20, 21 ], [ 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "additional", "tryptophan", "did", "not", "change", "IDO1", "protein", "expression", "in", "protoplasts", ",", "as", "shown", "in", "(", "Figure", "2B", ")", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "On", "the", "contrary", ",", "IDO1", "could", "not", "be", "found", "co-localising", "with", "other", "cell", "compartments", "of", "the", "secretory", "pathway", "when", "co-expressed", "with", "markers", "of", "the", "late", "prevacuolar", "compartment", "(", "RFP-Rha1", ",", "LPVC", "marker", ")", ",", "Golgi", "apparatus", "(", "ST-RFP", "marker", ")", ",", "or", "trans-Golgi", "network", "(", "RFP-SYP61", ",", "TGN", "marker", ")", "(", "Figure", "3D", ")", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 28, 29 ], [ 30, 31 ], [ 47, 48 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "study", ",", "considering", "the", "only", "options", "for", "kynurenine", "production", "as", "chemical", "synthesis", "or", "extraction", "from", "human", "tissues", ",", "we", "expressed", "human", "IDO1", "in", "plant", "cells", "in", "order", "to", "investigate", "the", "possibility", "to", "obtain", "an", "alternative", "production", "platform", "for", "both", "IDO1", "protein", "and", "biologic", "kynurenine", "." ],
+    "entities_indices" : [ [ 9, 10 ], [ 13, 14 ], [ 23, 24 ], [ 41, 42 ], [ 45, 46 ] ]
+  }, {
+    "sentence_tokens" : [ "Soil-grown", "N.", "tabacum", "cv.", "Petit", "Havana", "[", "51", "]", "leaves", "were", "infiltrated", "at", "OD", "0.1", "with", "A.", "tumefaciens", "cultures", "containing", "the", "pV-IDO1-GFP", "alone", "or", "with", "either", "organelle", "marker", "such", "as", "ST-RFP", "(", "Golgi", "marker", ")", ",", "RFP-SYP61", "(", "TGN", "marker", ")", ",", "TR2RFP-VSR2", "(", "PVC", "and", "MVB", "marker", ")", ",", "or", "RFP-Rha1", "(", "LPVC", "marker", ")", ",", "as", "described", "previously", "[", "52", "]", "." ],
+    "entities_indices" : [ [ 21, 22 ], [ 30, 31 ], [ 36, 37 ], [ 38, 39 ], [ 42, 43 ], [ 44, 45 ], [ 46, 47 ], [ 51, 52 ], [ 53, 54, 55 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "cDNA", "preparations", "were", "analysed", "by", "PCR", "using", "specific", "primers", "for", "human", "IDO1", "(", "forward", ",", "5", "'-", "CTCCTGGACAATCAGTAAAGAGTACC-3", "'", ";", "reverse", ",", "5", "'-", "ACTTCTCAACTCTTTCTCGAAGCTGG-3", "'", ")", "and", "plant", "actin", "(", "forward", ",", "5", "'-", "ATGGCGGATGGGGAGGACATTCA-3", "'", ";", "reverse", ",", "5", "'-", "CCTTTTGTTATCCACATCTGTTG-3", "'", ")", "." ],
+    "entities_indices" : [ [ 12, 13 ], [ 30, 31 ] ]
+  }, {
+    "sentence_tokens" : [ "Heterologous", "protein", "expression", "and", "kynurenine", "production", "in", "protoplasts", "were", "also", "assessed", "in", "the", "presence", "of", "an", "excess", "of", "tryptophan", "in", "order", "to", "compensate", "the", "depletion", "caused", "by", "the", "IDO1", "metabolising", "activity", "that", "could", "interfere", "with", "the", "plant", "cell", "development", ",", "as", "recently", "demonstrated", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 28, 29 ], [ 37, 38, 39 ] ]
+  }, {
+    "sentence_tokens" : [ "Several", "recombinant", "human", "proteins", "with", "therapeutic", "activity", "have", "been", "produced", "in", "plants", ",", "for", "example", ",", "the", "enzyme", "alpha-mannosidase", "is", "produced", "in", "stably", "transformed", "plants", "for", "the", "replacement", "therapy", "of", "the", "lysosomal", "storage", "disease", "alpha-mannosidosis", "." ],
+    "entities_indices" : [ [ 17, 18 ], [ 18, 19 ], [ 31, 32, 33, 34 ], [ 34, 35 ] ]
+  }, {
+    "sentence_tokens" : [ "Shoots", "emerging", "from", "each", "explant", "were", "kept", "separated", "to", "guarantee", "regeneration", "of", "independent", "transformants", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "After", "approximately", "5", "-", "6", "weeks", ",", "shoots", "were", "plated", "on", "MS", "medium", "without", "hormones", "but", "still", "supplemented", "with", "antibiotics", "until", "new", "plants", "developed", "." ],
+    "entities_indices" : [ [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "fact", ",", "when", "expressed", "in", "vivo", "in", "tobacco", "leaves", "via", "Agrobacterium", "infiltration", "and", "observed", "by", "confocal", "microscopy", ",", "the", "majority", "of", "IDO1-GFP", "are", "found", "in", "the", "cytoplasm", ",", "with", "partial", "colocalisation", "with", "the", "early", "endosomes.In", "summary", ",", "this", "study", "demonstrates", "that", "in", "plant", "cells", "IDO1-GFP", "shares", "the", "same", "enzymatic", "activity", "and", "subcellular", "distribution", "with", "native", "IDO1", ",", "paving", "the", "way", "to", "the", "possible", "use", "of", "plants", "as", "bioreactors", "to", "produce", "kynurenine", "." ],
+    "entities_indices" : [ [ 12, 13 ], [ 22, 23 ], [ 56, 57 ], [ 71, 72 ] ]
+  }, {
+    "sentence_tokens" : [ "PVC", "and", "MVB", "are", "intermediate", "compartments", "mediating", "protein", "transport", "between", "trans-Golgi", "network", "(", "TGN", ")", "and", "vacuole", ",", "holding", "overlapping", "functions", "with", "mammalian", "early", "endosomes", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 2, 3 ], [ 7, 8, 9 ], [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "Interestingly", ",", "the", "intracellular", "localisation", "of", "human", "IDO1", "in", "plant", "cells", "is", "similar", "to", "that", "found", "in", "mammal", "cells", ",", "mainly", "in", "cytosol", ",", "but", "in", "early", "endosomes", "as", "well", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "Transiently", "Expressed", "IDO1-GFP", "Had", "Catalytic", "Activity", "and", "Similar", "Subcellular", "Localisation", "of", "Mammal", "IDO1", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "To", "the", "best", "of", "our", "knowledge", ",", "this", "is", "the", "first", "report", "on", "kynurenine", "production", "in", "plant", "cells", "by", "expressing", "human", "IDO1", "protein", "." ],
+    "entities_indices" : [ [ 13, 14 ], [ 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "Another", "enzyme", ",", "named", "glucocerebrosidase", ",", "is", "produced", "in", "plant", "cell", "suspension", "cultures", "and", "commercialised", "[", "13", "]", "for", "Gaucher", "'", "s", "disease", "treatment", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "All", "analyses", "were", "performed", "using", "Graph", "Pad", "Prism", "software", "8.0", "." ],
+    "entities_indices" : [ [ 6, 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "possible", "explanation", "could", "be", "the", "instability", "and/or", "the", "rapid", "degradation", "of", "human", "IDO1", "protein", "in", "a", "heterologous", "platform", "such", "as", "the", "plant", "cell", "." ],
+    "entities_indices" : [ [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "Moreover", ",", "NAD+", "is", "a", "coenzyme", "with", "a", "pivotal", "role", "in", "a", "vast", "number", "of", "biochemical", "processes", ",", "as", "well", "as", "in", "several", "redox", "reactions", ",", "and", "it", "is", "vital", "to", "mitochondrial", "function", "[", "29", "]", "." ],
+    "entities_indices" : [ [ 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "Protoplasts", "were", "pelleted", "at", "60", "x", "g", "for", "10", "min", "at", "room", "temperature", ",", "resuspended", "in", "K3", "medium", "to", "a", "final", "density", "of", "1", "x", "10", "protoplasts", "mL", ",", "and", "incubated", "2", "h", "at", "25", "degrees", "C", "in", "the", "dark", "." ],
+    "entities_indices" : [ [ 27, 28 ] ]
+  }, {
+    "sentence_tokens" : [ "As", "recently", "demonstrated", ",", "in", "mammal", "cells", ",", "IDO1", "is", "localised", "not", "only", "in", "the", "cytosol", "but", "also", "in", "early", "endosomes", "[", "24", "]", "." ],
+    "entities_indices" : [ [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "Then", ",", "following", "an", "incubation", "of", "24", "h", "at", "25", "degrees", "C", "in", "the", "dark", ",", "the", "K3", "medium", "was", "recovered", "with", "a", "Pasteur", "pipette", "and", "filtered", "with", "a", "syringe", "containing", "a", "cotton", "filter", "to", "eliminate", "remaining", "protoplasts", "." ],
+    "entities_indices" : [ [ 23, 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "particular", ",", "several", "kynurenines", "reinforce", "the", "immunoregulatory", "circuit", "in", "mammals", "by", "acting", "as", "a", "ligand", "of", "aryl", "hydrocarbon", "receptor", "(", "AhR", ")", "in", "both", "T", "cells", "and", "DCs", "[", "21", "]", "." ],
+    "entities_indices" : [ [ 15, 16 ], [ 17, 18, 19, 20 ], [ 21, 22 ], [ 28, 29 ] ]
+  }, {
+    "sentence_tokens" : [ "Cloning", "of", "IDO1", "cDNA", "in", "a", "Plant", "Expression", "Vector", "and", "Attempted", "Stably", "Expression", "in", "Tobacco", "Plants", "." ],
+    "entities_indices" : [ [ 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "molecule", "is", "an", "agonist", "of", "AhR", ",", "a", "crucial", "factor", "in", "the", "immune", "response", "regulation", "that", "exerts", "its", "roles", "through", "different", "immunoregulatory", "mechanisms", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 13, 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "Human", "IDO1", "expressed", "in", "protoplasts", "was", "found", "to", "be", "capable", "of", "producing", "kynurenine", ",", "but", "this", "effect", "was", "strictly", "related", "to", "the", "enzyme", "presence", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 12, 13 ], [ 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "Rice", "(", "Oryza", "sativa", ")", "seems", "to", "be", "an", "exception", "because", "genomic", "database", "searching", "has", "revealed", "the", "presence", "of", "several", "biosynthetic", "genes", "encoding", "core", "enzymes", "in", "kynurenine", "pathways", ",", "despite", "a", "lack", "of", "biochemical", "evidence", "[", "41", "]", "." ],
+    "entities_indices" : [ [ 26, 27 ] ]
+  }, {
+    "sentence_tokens" : [ "Kynurenine", "Analysis", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "a", "second", "cloning", "strategy", "was", "carried", "out", "by", "fusing", "IDO1", "sequence", "to", "the", "GFP", "tag", ",", "aiming", "to", "obtain", "a", "more", "stable", "fusion", "protein", ",", "as", "frequently", "observed", "in", "fusion", "technology", "[", "31", "]", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "resulting", "vector", "(", "pUC.IDO1-GFP", ")", "contained", "the", "35S", "promoter", "and", "the", "IDO1", "sequence", "in", "frame", "with", "a", "C-terminal", "GFP", ",", "followed", "by", "the", "NOS", "terminator", "in", "a", "EcoRI-HindIII", "cassette", "." ],
+    "entities_indices" : [ [ 12, 13 ], [ 19, 20 ], [ 24, 25 ], [ 28, 29, 30 ] ]
+  }, {
+    "sentence_tokens" : [ "Interestingly", ",", "they", "found", "that", "the", "effect", "of", "kynurenine", "treatment", "could", "be", "suppressed", "by", "the", "presence", "in", "the", "medium", "of", "high", "doses", "of", "tryptophan", "." ],
+    "entities_indices" : [ [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "After", "excision", ",", "both", "5", "'", "and", "3", "'", "sticky", "ends", "were", "blunted", "by", "DNA", "polymerase", "I", "large", "(", "Klenow", ")", "fragment", "to", "allow", "non", "compatible", "ends", "joining", "." ],
+    "entities_indices" : [ [ 14, 15, 16, 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "Since", "perfect", "co-localisation", "would", "result", "in", "statistical", "coefficients", "close", "to", "1", ",", "our", "results", "confirmed", "the", "partial", "localisation", "of", "IDO1", "at", "PVC", "and", "MVB", "membrane", "when", "co-expressed", "with", "TR2RFP-VSR2", "(", "Figure", "3C", ")", "." ],
+    "entities_indices" : [ [ 19, 20 ], [ 28, 29 ] ]
+  }, {
+    "sentence_tokens" : [ "After", "deproteinisation", ",", "the", "samples", "were", "eluted", "by", "a", "mobile", "phase", "containing", "10", "mM", "NaH", "PO", "(", "pH", "=", "3.0", ";", "99", "%", ")", "and", "methanol", "(", "1", "%", ")", "(", "Sigma-Aldrich", ",", "St.", "Louis", ",", "MO", ",", "USA", ")", ",", "with", "a", "flow", "rate", "of", "1.3", "mL/min", "." ],
+    "entities_indices" : [ [ 15, 16 ], [ 17, 18 ], [ 25, 26 ], [ 36, 37 ] ]
+  }, {
+    "sentence_tokens" : [ "Apart", "from", "arylformamidase", ",", "plants", "do", "not", "possess", "orthologous", "genes", "coding", "for", "enzymes", "involved", "in", "the", "kynurenine", "pathway", "[", "41", "]", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "Total", "DNA", "was", "isolated", "from", "wild", "type", "and", "transgenic", "tobacco", "leaves", "using", "the", "GenElute", "TM", "Plant", "Genomic", "DNA", "Miniprep", "kit", "(", "Merck", "KGaA", ",", "Darmstadt", ",", "Germany", ")", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "Strain", "GV3101", "of", "A.", "tumefaciens", "was", "transformed", "by", "electroporation", "with", "the", "pGreenII.IDO1", "vector", "and", "used", "to", "produce", "transgenic", "tobacco", "(", "N.", "tabacum", "cv.", "Petit", "Havana", ")", ",", "as", "described", "by", "Pompa", "and", "colleagues", "[", "48", "]", "." ],
+    "entities_indices" : [ [ 30, 31 ] ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "a", "partial", "compartmentalisation", "of", "IDO1", "protein", "to", "prevacuolar", "compartments", "and", "multivesicular", "bodies", "(", "PVC", "and", "MVB", ")", "was", "also", "observed", "when", "co-expressed", "with", "a", "PVC", "and", "MVB", "marker", "(", "TR2RFP-VSR2", ")", "(", "Figure", "3C", ")", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 15, 16 ], [ 17, 18 ], [ 26, 27 ], [ 28, 29 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "final", "plasmid", "was", "sequenced", "to", "verify", "the", "correct", "sequence", "and", "orientation", "of", "the", "IDO1", "expression", "cassette", "." ],
+    "entities_indices" : [ [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "Under", "these", "conditions", ",", "IDO1-GFP", "fusion", "protein", "was", "expressed", ",", "accumulated", "in", "the", "protoplasts", "and", ",", "most", "importantly", ",", "secreted", "kynurenine", "in", "the", "medium", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "Here", ",", "we", "attempted", "to", "produce", "kynurenine", ",", "a", "health", "promoting", "metabolite", ",", "in", "plants", "of", "Nicotiana", "tabacum", "(", "tobacco", ")", "transformed", "by", "Agrobacterium", "tumefaciens", "with", "the", "gene", ",", "coding", "for", "human", "indoleamine", "2,3-dioxygenase", "1", "(", "IDO1", ")", ",", "an", "enzyme", "responsible", "for", "the", "kynurenine", "production", "because", "of", "tryptophan", "degradation", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 32, 33, 34, 35 ], [ 36, 37 ], [ 40, 41 ], [ 44, 45 ] ]
+  }, {
+    "sentence_tokens" : [ "Confocal", "imaging", "was", "performed", "using", "an", "inverted", "Zeiss", "LSM", "700", "laser", "scanning", "microscope", "." ],
+    "entities_indices" : [ [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "comparison", "of", "the", "human", "IDO1", "amino", "acid", "sequence", "and", "the", "plant", "protein", "databases", "was", "performed", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 6, 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "Few", "T0", "events", "unable", "to", "amplify", "were", "considered", "as", "regeneration", "escapes", "." ],
+    "entities_indices" : [ [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "As", "a", "control", ",", "kynurenine", "was", "also", "measured", "in", "non", "transformed", "protoplasts", "subjected", "to", "the", "same", "culture", "conditions", "." ],
+    "entities_indices" : [ [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "activity", "leads", "to", "the", "kynurenine", "production", ",", "which", "is", "the", "upstream", "metabolite", "along", "the", "so", "called", "kynurenine", "pathway", "[", "14", "]", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "Briefly", ",", "to", "isolate", "mesophyll", "protoplasts", ",", "we", "wounded", "young", "fully", "expanded", "leaves", "from", "tobacco", "plants", "grown", "under", "aseptic", "conditions", "with", "a", "scalpel", "and", "placed", "them", "in", "a", "Petri", "dish", "with", "the", "abaxial", "side", "in", "contact", "with", "the", "1", "x", "enzyme", "mix", "solution", "(", "in", "1", "%", "Cellulase", "Onozuka", "RS", ",", "0.5", "%", "Macerozime", "R-10", ")", "dissolved", "in", "K3", "medium", "(", "3.78", "g", "Gamborg", "'", "s", "B-5", "Basal", "Medium", "with", "Minimal", "Organics", ",", "5.1", "mM", "CaCl", "." ],
+    "entities_indices" : [ [ 33, 34 ], [ 40, 41 ], [ 47, 48 ], [ 49, 50 ], [ 63, 64, 65, 66, 67, 68, 69 ] ]
+  }, {
+    "sentence_tokens" : [ "Briefly", ",", "1", "x", "10", "transformed", "protoplasts", "were", "resuspended", "in", "1", "mL", "of", "K3", "medium", "alone", "or", "supplemented", "with", "exogenous", "L-tryptophan", "100", "mu", "M", "(", "Sigma-Aldrich", ",", "St.", "Louis", ",", "MO", ",", "USA", ")", "which", "was", "added", "2", "h", "after", "transfection", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 20, 21 ], [ 30, 31 ] ]
+  }, {
+    "sentence_tokens" : [ "As", "a", "result", ",", "IDO1", "expressing", "DCs", "mediate", "multiple", "effects", "on", "T", "lymphocytes", ",", "including", "inhibition", "of", "proliferation", ",", "apoptosis", ",", "and", "differentiation", "towards", "a", "regulatory", "phenotype", "[", "22", "]", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 6, 7 ], [ 17, 18 ], [ 19, 20 ], [ 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "Only", "transformed", "explants", "showed", "an", "amplified", "fragment", "of", "about", "500", "bp", ",", "confirming", "the", "presence", "of", "the", "IDO1", "gene", "cassette", "in", "their", "genome", "." ],
+    "entities_indices" : [ [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "Further", "studies", "will", "be", "necessary", "to", "verify", "if", "a", "negative", "IDO1", "mediated", "interference", "with", "plant", "metabolism", "may", "occur", "during", "plant", "growth", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "Among", "these", "metabolites", ",", "kynurenic", "acid", "and", "xanthurenic", "acid", ",", "as", "well", "as", "their", "analogues", ",", "have", "neuroprotective", "activities", ",", "suggesting", "that", "they", "may", "find", "use", "in", "drug", "development", "for", "neurological", "diseases", "[", "25,26,27,28", "]", "." ],
+    "entities_indices" : [ [ 4, 5, 6 ], [ 7, 8, 9 ], [ 31, 32 ] ]
+  }, {
+    "sentence_tokens" : [ "To", "investigate", "the", "intracellular", "localisation", "of", "human", "IDO1", "in", "plant", "cells", ",", "we", "analyzed", "leaves", "of", "soil-grown", "tobacco", "plants", "transfected", "in", "vivo", "by", "A.", "tumefaciens", "cultures", "with", "both", "pV.IDO1-GFP", "and", "red", "fluorescent", "protein", "(", "RFP", ")-tagged", "organelle", "markers", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 28, 29 ], [ 30, 31, 32, 33 ], [ 34, 35 ] ]
+  }, {
+    "sentence_tokens" : [ "Foreign", "genes", "have", "been", "transferred", "into", "the", "plants", "by", "Agrobacterium", "tumefaciens", "mediated", "transformation", "methods", "[", "7,8", "]", "or", "other", "delivery", "systems", "including", "particle", "bombardment", ",", "PEG", "mediated", "DNA", "uptake", "in", "wall-free", "protoplasts", "[", "9", "]", ",", "and", "nanomaterial", "based", "delivery", "devices", "[", "10", "]", "." ],
+    "entities_indices" : [ [ 0, 1, 2 ], [ 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "this", "purpose", "and", "for", "obtaining", "a", "tag", "useful", "as", "both", "a", "protein", "detector", "and", "a", "possible", "purification", "system", ",", "we", "assembled", "the", "gene", "construct", "coding", "for", "IDO1-GFP", "under", "the", "same", "constitutive", "promoter", "previously", "used", "in", "pGreenII.IDO1", ",", "the", "35S", "promoter", "(", "Figure", "2A", ")", ",", "and", "we", "transiently", "transfected", "tobacco", "protoplasts", "with", "the", "new", "vector", "pV.IDO1-GFP", "." ],
+    "entities_indices" : [ [ 27, 28 ], [ 36, 37 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "reconstituted", "cassette", "was", "sequenced", "to", "confirm", "the", "integrity", "of", "IDO1", "gene", "and", "the", "frame", "with", "GFP", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "even", "if", "IDO1", "mRNA", "was", "detected", "by", "RT-PCR", "in", "leaves", "(", "Figure", "1E", ")", ",", "IDO1", "protein", "was", "undetectable", "by", "Western", "blotting", "in", "total", "proteins", "extracted", "from", "leaves", "and", "roots", "of", "transformed", "plants", ",", "suggesting", "a", "protein", "stability", "problem", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "Furthermore", ",", "plant", "cell", "cultures", "represent", "interesting", "options", "for", "an", "easy", "and", "scalable", "production", "of", "secondary", "metabolites", ",", "such", "as", "the", "anticancer", "drug", "paclitaxel", "[", "34", "]", "." ],
+    "entities_indices" : [ [ 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "After", "incubation", "at", "room", "temperature", "for", "30", "min", ",", "transformed", "protoplasts", "were", "slowly", "diluted", "to", "14", "mL", "with", "W5", "solution", "." ],
+    "entities_indices" : [ [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "fact", ",", "tryptophan", "for", "humans", "is", "an", "essential", "amino", "acid", "necessary", "for", "the", "in", "vivo", "biosynthesis", "of", "proteins", ",", "as", "well", "as", "a", "precursor", "of", "several", "bioactive", "compounds", "." ],
+    "entities_indices" : [ [ 9, 10, 11 ], [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "To", "the", "best", "of", "our", "knowledge", ",", "this", "is", "the", "first", "report", "on", "the", "expression", "of", "human", "IDO1", "enzyme", "capable", "of", "secreting", "kynurenines", "in", "plant", "cells", "." ],
+    "entities_indices" : [ [ 17, 18 ], [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "Then", ",", "we", "transformed", "tobacco", "(", "N.", "tabacum", "cv.", "Petit", "Havana", ")", "plants", "with", "A.", "tumefaciens", "harbouring", "the", "pGreenII.IDO1", "vector", "to", "obtain", "plants", "stably", "expressing", "human", "IDO1", "." ],
+    "entities_indices" : [ [ 18, 19 ], [ 26, 27 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "particular", ",", "the", "sequence", "of", "an", "IDO1", "gene", "(", "OsIDO", ")", "was", "identified", ",", "coding", "for", "a", "protein", "with", "a", "low", "identity", "(", "26", "%", ")", "and", "low", "similarity", "(", "42", "%", ")", "to", "Mus", "musculus", "IDO1", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 10, 11 ], [ 37, 38 ] ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "a", "different", "construct", "was", "cloned", "encoding", "for", "the", "fusion", "protein", "IDO1-GFP", "with", "the", "aim", "of", "improving", "the", "protein", "stability", "." ],
+    "entities_indices" : [ [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "PCR", "fragment", "was", "digested", "by", "ClaI", "and", "NheI", "restriction", "enzymes", "and", "inserted", "in", "the", "vector", "pJA1", ",", "derived", "from", "pAW7", "after", "replacing", "the", "RFP", "with", "GFP", "[", "49", "]", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 8, 9 ], [ 16, 17 ], [ 24, 25 ], [ 26, 27 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "current", "report", ",", "a", "cloning", "strategy", "was", "set", "for", "the", "expression", "of", "a", "catalytically", "active", "form", "of", "human", "IDO1", "in", "plant", "cells", ",", "with", "the", "aim", "of", "exploring", "an", "alternative", "platform", "for", "the", "kynurenine", "production", "." ],
+    "entities_indices" : [ [ 20, 21 ], [ 35, 36 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "fact", ",", "the", "WT", "control", "protoplasts", "showed", "undetectable", "production", "of", "kynurenine", "in", "comparison", "with", "the", "IDO1", "transfected", "cells", ",", "both", "in", "the", "presence", "and", "absence", "of", "an", "extra", "amount", "of", "tryptophan", "in", "the", "medium", "(", "Figure", "3A", ")", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "Briefly", ",", "tobacco", "plants", "were", "transformed", "by", "co-cultivation", "with", "A.", "tumefaciens", "harbouring", "pGreenII.IDO1", "on", "agar", "solidified", "MS", "medium", "containing", "1", "mg/L", "of", "6-benzylaminopurine", "(", "BA", ")", "and", "0.1", "mg/L", "of", "alpha-naphthaleneacetic", "acid", "(", "NAA", ")", "hormones", "." ],
+    "entities_indices" : [ [ 12, 13 ], [ 14, 15 ], [ 16, 17 ], [ 24, 25 ], [ 30, 31, 32 ], [ 33, 34 ] ]
+  }, {
+    "sentence_tokens" : [ "After", "PCR", "results", ",", "10", "transgenic", "plants", "(", "labelled", "with", "numbers", "from", "1", "to", "10", ")", "were", "chosen", "and", "reared", "to", "flower", "to", "obtain", "seeds", "." ],
+    "entities_indices" : [ [ 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "presence", "of", "IDO1", "gene", "in", "transgenic", "plants", "was", "confirmed", "by", "PCR", ",", "but", "the", "protein", "failed", "to", "be", "detected", "." ],
+    "entities_indices" : [ [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "When", "GFP", "fusions", "were", "imaged", "with", "RFP", "organelle", "markers", ",", "samples", "were", "excited", "with", "a", "diode", "laser", "at", "the", "wavelength", "of", "488", "nm", "for", "GFP", "and", "555", "nm", "for", "RFP", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 6, 7 ], [ 24, 25 ], [ 29, 30 ] ]
+  }, {
+    "sentence_tokens" : [ "To", "stably", "express", "IDO1", "in", "tobacco", "plants", ",", "we", "excised", "human", "IDO1", "cDNA", "from", "plasmid", "pEZM02.IDO1", "using", "EcoRI", "and", "NotI", "restriction", "enzymes", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 11, 12 ], [ 17, 18 ], [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "UV", "detector", "at", "360", "nm", "and", "220", "nm", "performed", "detection", "of", "kynurenine", "and", "tryptophan", ",", "respectively", "." ],
+    "entities_indices" : [ [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "resulting", "vector", "pV.IDO1-GFP", "was", "used", "for", "tobacco", "protoplast", "transformation", "and", ",", "after", "transformation", "into", "A.", "tumefaciens", ",", "for", "infiltration", "experiments", "." ],
+    "entities_indices" : [ [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "IDO1", "gene", "presence", "was", "confirmed", "by", "PCR", "analysis", "(", "Figure", "1D", ")", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "this", "purpose", ",", "we", "measured", "kynurenine", "concentration", "in", "K3", "medium", "after", "a", "24", "h", "incubation", "of", "protoplasts", "in", "medium", "alone", "or", "with", "extra", "tryptophan", "added", "to", "enhance", "and", "detect", "the", "metabolic", "product", "(", "Figure", "3A", ")", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "IDO1", "is", "widely", "recognised", "as", "an", "authentic", "immune", "regulator", "capable", "of", "fine", "tuning", "immune", "responses", "not", "only", "in", "pregnancy", "[", "15", "]", "but", "also", "in", "several", "pathological", "conditions", ",", "such", "as", "autoimmune", "diseases", "[", "16,17", "]", ",", "chronic", "inflammation", "[", "18", "]", ",", "transplantation", "[", "19", "]", ",", "and", "neoplasia", "[", "20", "]", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 31, 32, 33 ], [ 38, 39 ], [ 49, 50 ] ]
+  }, {
+    "sentence_tokens" : [ "2H", "O", ",", "3.12", "mM", "NH", "NO", ",", "0.4", "M", "sucrose", ",", "1.67", "mM", "xylose", ",", "BA", "1", "mg/L", ",", "NAA", "1", "mg/L", "(", "pH", "5.5", ")", ")", "for", "16", "h", "at", "25", "degrees", "C", "in", "the", "dark", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 6, 7 ], [ 10, 11 ], [ 14, 15 ], [ 18, 19 ], [ 20, 21 ], [ 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "As", "an", "additional", "control", ",", "tobacco", "protoplasts", "were", "also", "transformed", "with", "the", "empty", "vector", ",", "and", "the", "kynurenine", "concentration", "measured", "in", "their", "K3", "medium", "resulted", "in", "being", "undetectable", ",", "similar", "to", "what", "we", "found", "in", "WT", "protoplasts", "." ],
+    "entities_indices" : [ [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "All", "results", "are", "shown", "as", "mean", "+/-", "SD", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "Total", "RNA", "was", "extracted", "from", "leaf", "tissues", "of", "transformed", "plants", "with", "the", "NucleoSpin", "RNA", "Plant", "kit", "(", "Macherey", "-", "Nagel", ",", "D", "u", "ren", ",", "Germany", ")", "." ],
+    "entities_indices" : [ [ 12, 13, 14, 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "IDO1", "is", "a", "heme", "containing", "enzyme", "that", "catalyses", "the", "oxidative", "cleavage", "of", "the", "indole", "ring", "in", "L-tryptophan", ",", "regulating", "the", "catabolism", "of", "this", "essential", "amino", "acid", "at", "an", "initial", ",", "rate", "limiting", "level", "in", "a", "specific", "pathway", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 3, 4 ], [ 5, 6 ], [ 16, 17 ], [ 20, 21 ], [ 24, 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "the", "production", "of", "transgenic", "plants", ",", "we", "introduced", "the", "expression", "cassette", "excised", "by", "EcoRI", "digestion", "from", "the", "pDHA.IDO1", "plasmid", "into", "the", "pGreenII.0029", "binary", "vector", "[", "7", "]", "opened", "with", "the", "same", "restriction", "enzyme", ",", "obtaining", "pGreen.IDO1", "." ],
+    "entities_indices" : [ [ 14, 15 ], [ 15, 16 ], [ 33, 34 ], [ 36, 37 ] ]
+  }, {
+    "sentence_tokens" : [ "After", "testing", "viability", "and", "yield", "with", "fluorescein", "diacetate", "staining", ",", "we", "used", "protoplasts", "for", "further", "analysis", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "Confocal", "analysis", "revealed", "that", "IDO1", "was", "primarily", "found", "in", "a", "diffuse", "pattern", "consistent", "with", "cytoplasmic", "localisation", "." ],
+    "entities_indices" : [ [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "Both", "fragments", "were", "cloned", "in", "the", "pV", "binary", "vector", "for", "plant", "transformation", "and", "digested", "with", "EcoRI", "and", "HindIII", "in", "order", "to", "reconstitute", "the", "original", "IDO1-GFP", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 15, 16 ], [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "the", "enzymatic", "activity", "of", "OsIDO", "had", "not", "been", "demonstrated", "[", "42", "]", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "Selection", "with", "kanamycin", "allowed", "for", "the", "regeneration", "of", "transformed", "plants", "(", "T0", ")", ",", "as", "shown", "in", "Figure", "1B", "(", "left", "panel", ")", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "Protoplast", "transformation", "with", "polyethylene", "glycol", "(", "PEG", ")", "was", "performed", "by", "adding", "an", "equal", "volume", "of", "a", "solution", "containing", "40", "%", "(", "w/v", ")", "PEG", "4000", ",", "0.1", "M", "Ca", "(", "NO", ")", ",", "and", "0.4", "M", "mannitol", "(", "pH", "8)", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 6, 7 ], [ 24, 25 ], [ 29, 30 ], [ 31, 32 ], [ 37, 38 ], [ 39, 40 ] ]
+  }, {
+    "sentence_tokens" : [ "Immunoreactive", "bands", "were", "detected", "by", "enhanced", "chemiluminescence", "(", "Bio-Rad", ",", "Hercules", ",", "CA", ",", "USA", ")", "." ],
+    "entities_indices" : [ [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "By", "means", "of", "Western", "blotting", "with", "two", "different", "antibodies", "detecting", "IDO1", "protein", "and", "the", "GFP", "tag", ",", "respectively", ",", "we", "revealed", "the", "expression", "of", "a", "69", "kDa", "protein", ",", "matching", "the", "size", "of", "IDO1-GFP", ",", "in", "plants", "transfected", "with", "pV.IDO1-GFP", "(", "Figure", "2B", ")", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 14, 15 ], [ 33, 34 ] ]
+  }, {
+    "sentence_tokens" : [ "It", "is", "widely", "used", "as", "a", "dietary", "supplement", "for", "several", "perceived", "benefits", ",", "such", "as", "sleep", "and", "mood", "regulation", "[", "44", "]", ",", "and", "it", "is", "reported", "to", "mitigate", "the", "course", "of", "several", "chronic", "diseases", ",", "such", "as", "Chron", "'", "s", "disease", "[", "45", "]", "." ],
+    "entities_indices" : [ [ 15, 16 ], [ 33, 34, 35 ] ]
+  }, {
+    "sentence_tokens" : [ "To", "fuse", "GFP", "in", "frame", "to", "IDO1", "at", "the", "C-terminal", ",", "we", "amplified", "IDO1", "cDNA", "with", "PCR", "from", "pDHA.IDO1", "with", "the", "forward", "primer", "IDO1ClaI", "(", "GCAGACTACATCGATGGCACACGCTATGG", ")", "and", "the", "reverse", "primer", "IDO1NheI", "(", "GGCCGCTAGCACCTTCCTTCAAAAG", ")", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 6, 7 ], [ 13, 14 ], [ 18, 19 ], [ 23, 24 ], [ 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "Moreover", ",", "apart", "from", "being", "a", "cytoplasmic", "enzyme", ",", "IDO1", "also", "acts", "as", "a", "signal", "transducing", "molecule", "by", "binding", "tyrosine", "phosphatases", "in", "its", "immunoreceptor", "tyrosine", "based", "inhibitory", "motif", "(", "ITIM", ")", "domains", "[", "23", "]", "and", "anchoring", "to", "the", "early", "endosomes", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "As", "a", "result", ",", "IDO1", "can", "be", "expressed", "in", "vitro", "as", "a", "GFP", "fused", "protein", "in", "transiently", "transformed", "protoplasts", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "Since", "alignment", "errors", "can", "appear", "when", "the", "sequence", "identity", "drops", "below", "35", "%", "[", "30", "]", ",", "these", "sequence", "homologies", "seemed", "to", "be", "too", "low", "to", "confirm", "the", "presence", "of", "IDO1", "in", "the", "Plantae", "kingdom", "." ],
+    "entities_indices" : [ [ 30, 31 ] ]
+  }, {
+    "sentence_tokens" : [ "Fluorescence", "was", "detected", "with", "a", "552", "nm", "dichroic", "beam", "splitter", "and", "a", "475", "to", "550", "nm", "bandpass", "filter", "for", "GFP", "and", "a", "560", "to", "700", "nm", "bandpass", "filter", "for", "RFP", "." ],
+    "entities_indices" : [ [ 19, 20 ], [ 29, 30 ] ]
+  }, {
+    "sentence_tokens" : [ "Human", "IDO1-GFP", "Can", "Be", "Transiently", "Expressed", "in", "Tobacco", "Protoplasts", "." ],
+    "entities_indices" : [ [ 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "Kinetex", "C18", "column", "(", "250", "x", "4.6", "mu", "m", ",", "5", "mu", "m", ",", "100", "A", ";", "Phenomenex", ",", "USA", ")", ",", "maintained", "at", "the", "temperature", "of", "37", "degrees", "C", "and", "pressure", "of", "1800", "PSI", ",", "was", "used", "." ],
+    "entities_indices" : [ [ 35, 36 ] ]
+  }, {
+    "sentence_tokens" : [ "Proteins", "were", "separated", "by", "SDS-PAGE", "on", "10", "%", "polyacrylamide", "gels", "and", "then", "transferred", "to", "nitrocellulose", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "fact", ",", "according", "to", "He", "and", "colleagues", "[", "43", "]", ",", "kynurenine", "is", "an", "alternative", "substrate", "that", "can", "competitively", "inhibit", "the", "key", "enzymes", "involved", "in", "the", "conversion", "of", "tryptophan", "into", "indole-3-pyruvic", "acid", "in", "one", "of", "the", "auxin", "biosynthesis", "pathways", "." ],
+    "entities_indices" : [ [ 12, 13 ], [ 37, 38, 39 ] ]
+  }, {
+    "sentence_tokens" : [ "To", "confer", "higher", "stability", "to", "the", "heterologous", "human", "IDO1", "protein", "and", "to", "provide", "a", "more", "sensitive", "method", "to", "detect", "the", "protein", "of", "interest", ",", "we", "cloned", "a", "gene", "construct", "coding", "for", "IDO1-GFP", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 31, 32 ] ]
+  }, {
+    "sentence_tokens" : [ "T1", "seeds", "from", "self", "fertilisation", "were", "harvested", "at", "maturity", ",", "seeded", "onto", "kanamycin", "selective", "medium", ",", "and", "scored", "for", "resistance", "." ],
+    "entities_indices" : [ [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "As", "a", "whole", ",", "on", "the", "basis", "of", "these", "data", ",", "we", "found", "that", "GFP", "tagged", "IDO1", "can", "be", "transiently", "expressed", "in", "protoplasts", "in", "a", "catalytically", "active", "conformation", "and", "has", "a", "similar", "intracellular", "localisation", "to", "that", "found", "in", "mammalian", "cells", "." ],
+    "entities_indices" : [ [ 14, 15 ], [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "software", "TURBOCHROM", "4", "was", "used", "for", "evaluating", "the", "concentrations", "of", "kynurenine", "and", "tryptophan", "in", "the", "samples", "by", "mean", "of", "a", "calibration", "curve", "." ],
+    "entities_indices" : [ [ 1, 2, 3, 4 ], [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "finding", "of", "possible", "kynurenine", "participation", "in", "a", "positive", "feedback", "loop", "in", "AhR", "signalling", "paves", "the", "way", "to", "a", "probable", "use", "of", "kynurenine", "as", "an", "immunoregulatory", "drug.Plant", "organisms", "naturally", "produce", "all", "amino", "acids", "including", "tryptophan", ",", "which", "not", "only", "result", "as", "an", "essential", "component", "of", "protein", "synthesis", ",", "but", "also", "serves", "as", "a", "precursor", "for", "a", "wide", "range", "of", "indole", "containing", "secondary", "metabolites", "that", "are", "important", "for", "plant", "growth", ",", "such", "as", "auxin", "[", "40", "]", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 12, 13 ], [ 22, 23 ], [ 45, 46, 47 ], [ 72, 73 ] ]
+  }, {
+    "sentence_tokens" : [ "After", "co-cultivation", ",", "the", "leaf", "discs", "were", "grown", "aseptically", "in", "Petri", "dishes", "at", "25", "degrees", "C", "under", "full", "light", "on", "the", "same", "medium", "supplemented", "with", "500", "mg/L", "of", "cefotaxime", "and", "100", "mg/L", "kanamycin", "to", "avoid", "Agrobacterium", "growth", "and", "to", "select", "transformed", "cells", ",", "respectively", "." ],
+    "entities_indices" : [ [ 28, 29 ], [ 32, 33 ] ]
+  }, {
+    "sentence_tokens" : [ "Seeds", "were", "germinated", "on", "kanamycin", "selective", "medium", "and", "for", "several", "plants", "(", "T1", "events", ")", "." ],
+    "entities_indices" : [ [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "Indoleamine", "2,3-dioxygenase", "1", "(", "IDO1", ")", "represents", "one", "of", "the", "most", "interesting", "proteins", "which", "links", "an", "ancient", "metabolic", "pathway", "with", "immune", "regulation", "." ],
+    "entities_indices" : [ [ 0, 1, 2, 3 ], [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "One-way", "ANOVA", "followed", "by", "post", "hoc", "Bonferroni", "'", "s", "test", "was", "used", "when", "three", "or", "more", "samples", "were", "under", "comparison", "." ],
+    "entities_indices" : [ [ 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "Moreover", ",", "the", "addition", "of", "tryptophan", "to", "the", "medium", "allowed", "for", "the", "production", "of", "a", "significantly", "higher", "level", "of", "kynurenine", "as", "compared", "to", "untreated", "IDO1", "transfected", "cells", "." ],
+    "entities_indices" : [ [ 19, 20 ], [ 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "we", "investigated", "if", "IDO1-GFP", "transiently", "expressed", "in", "protoplasts", "had", "enzymatic", "activity", "." ],
+    "entities_indices" : [ [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "the", "reverse", "transcribed", "PCR", "(", "RT-PCR", ")", "analysis", ",", "RNA", "was", "treated", "with", "DNase", "I", "(", "Qiagen", ",", "Venlo", ",", "The", "Netherlands", ")", "and", "reverse", "transcribed", "(", "2", "mu", "g", ")", "using", "oligo", "(", "dT", ")", "18", "and", "the", "SuperScript", "III", "Reverse", "Transcriptase", "(", "Thermo", "Fisher", "Scientific", ",", "Waltham", ",", "MA", ",", "USA", ")", ",", "according", "to", "the", "manufacturer", "'", "s", "instructions", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 14, 15, 16 ], [ 35, 36 ], [ 40, 41, 42, 43, 44 ], [ 51, 52 ] ]
+  }, {
+    "sentence_tokens" : [ "These", "findings", "suggest", "that", "kynurenine", "production", "increases", "according", "to", "the", "availability", "of", "the", "substrate", "tryptophan", "in", "the", "medium", ",", "and", "IDO1", "activity", "promotes", "an", "increased", "level", "of", "tryptophan", "in", "the", "medium", "by", "a", "still", "unidentified", "mechanism", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "Hence", ",", "during", "our", "study", ",", "we", "generated", "a", "specific", "vector", "for", "efficient", "transfection", "of", "human", "IDO1", "gene", "in", "plants", "." ],
+    "entities_indices" : [ [ 16, 17 ] ]
+  } ],
+  "emptySentences" : [ {
+    "sentence_tokens" : [ "Genetic", "engineering", "of", "plants", "has", "turned", "out", "to", "be", "an", "attractive", "approach", "to", "produce", "various", "secondary", "metabolites", "." ]
+  }, {
+    "sentence_tokens" : [ "Here", ",", "we", "attempted", "to", "produce", "kynurenine", ",", "a", "health", "promoting", "metabolite", ",", "in", "plants", "of", "Nicotiana", "tabacum", "(", "tobacco", ")", "transformed", "by", "Agrobacterium", "tumefaciens", "with", "the", "gene", ",", "coding", "for", "human", "indoleamine", "2,3-dioxygenase", "1", "(", "IDO1", ")", ",", "an", "enzyme", "responsible", "for", "the", "kynurenine", "production", "because", "of", "tryptophan", "degradation", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "presence", "of", "IDO1", "gene", "in", "transgenic", "plants", "was", "confirmed", "by", "PCR", ",", "but", "the", "protein", "failed", "to", "be", "detected", "." ]
+  }, {
+    "sentence_tokens" : [ "To", "confer", "higher", "stability", "to", "the", "heterologous", "human", "IDO1", "protein", "and", "to", "provide", "a", "more", "sensitive", "method", "to", "detect", "the", "protein", "of", "interest", ",", "we", "cloned", "a", "gene", "construct", "coding", "for", "IDO1-GFP", "." ]
+  }, {
+    "sentence_tokens" : [ "Analysis", "of", "transiently", "transfected", "tobacco", "protoplasts", "demonstrated", "that", "the", "IDO1-GFP", "gene", "led", "to", "the", "expression", "of", "a", "detectable", "protein", "and", "to", "the", "production", "of", "kynurenine", "in", "the", "protoplast", "medium", "." ]
+  }, {
+    "sentence_tokens" : [ "Interestingly", ",", "the", "intracellular", "localisation", "of", "human", "IDO1", "in", "plant", "cells", "is", "similar", "to", "that", "found", "in", "mammal", "cells", ",", "mainly", "in", "cytosol", ",", "but", "in", "early", "endosomes", "as", "well", "." ]
+  }, {
+    "sentence_tokens" : [ "To", "the", "best", "of", "our", "knowledge", ",", "this", "is", "the", "first", "report", "on", "the", "expression", "of", "human", "IDO1", "enzyme", "capable", "of", "secreting", "kynurenines", "in", "plant", "cells", "." ]
+  }, {
+    "sentence_tokens" : [ "1", "." ]
+  }, {
+    "sentence_tokens" : [ "Introduction", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "production", "of", "recombinant", "proteins", "in", "plants", "dates", "back", "to", "the", "end", "of", "1980s", "[", "1", "]", ",", "and", "since", "then", "many", "recombinant", "proteins", "have", "been", "produced", "in", "plants", "for", "different", "uses", ",", "spanning", "from", "biomedical", "applications", "to", "industrial", "production", "[", "2,3", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Plant", "platforms", "employing", "different", "expression", "systems", "have", "been", "developed", ",", "with", "the", "main", "distinction", "between", "stable", "transformation", ",", "where", "transgenes", "can", "be", "integrated", "either", "in", "the", "nuclear", "DNA", "or", "in", "the", "plastid", "DNA", "[", "4,5", "]", ",", "and", "transient", "expression", "[", "6", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Foreign", "genes", "have", "been", "transferred", "into", "the", "plants", "by", "Agrobacterium", "tumefaciens", "mediated", "transformation", "methods", "[", "7,8", "]", "or", "other", "delivery", "systems", "including", "particle", "bombardment", ",", "PEG", "mediated", "DNA", "uptake", "in", "wall-free", "protoplasts", "[", "9", "]", ",", "and", "nanomaterial", "based", "delivery", "devices", "[", "10", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "plant", "expression", "procedures", "share", "some", "common", "characteristics", "such", "as", "the", "production", "of", "favourable", "post-translational", "modifications", "and", "the", "absence", "of", "contaminating", "endotoxins", "and", "animal", "viruses", ",", "which", "are", "serious", "issues", "in", "bacterial", "and", "eukaryotic", "expression", "systems", "." ]
+  }, {
+    "sentence_tokens" : [ "Several", "reports", "have", "shown", "the", "successful", "expression", "of", "bioactive", "human", "proteins", "in", "plants", "[", "11,12,13", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Indoleamine", "2,3-dioxygenase", "1", "(", "IDO1", ")", "represents", "one", "of", "the", "most", "interesting", "proteins", "which", "links", "an", "ancient", "metabolic", "pathway", "with", "immune", "regulation", "." ]
+  }, {
+    "sentence_tokens" : [ "IDO1", "is", "a", "heme", "containing", "enzyme", "that", "catalyses", "the", "oxidative", "cleavage", "of", "the", "indole", "ring", "in", "L-tryptophan", ",", "regulating", "the", "catabolism", "of", "this", "essential", "amino", "acid", "at", "an", "initial", ",", "rate", "limiting", "level", "in", "a", "specific", "pathway", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "activity", "leads", "to", "the", "kynurenine", "production", ",", "which", "is", "the", "upstream", "metabolite", "along", "the", "so", "called", "kynurenine", "pathway", "[", "14", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "IDO1", "is", "widely", "recognised", "as", "an", "authentic", "immune", "regulator", "capable", "of", "fine", "tuning", "immune", "responses", "not", "only", "in", "pregnancy", "[", "15", "]", "but", "also", "in", "several", "pathological", "conditions", ",", "such", "as", "autoimmune", "diseases", "[", "16,17", "]", ",", "chronic", "inflammation", "[", "18", "]", ",", "transplantation", "[", "19", "]", ",", "and", "neoplasia", "[", "20", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "fact", ",", "through", "its", "enzymatic", "activity", ",", "IDO1", "generates", "both", "tryptophan", "deprivation", "in", "local", "tissue", "microenvironments", "and", "the", "formation", "of", "bioactive", "metabolites", "collectively", "called", "kynurenines", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "particular", ",", "several", "kynurenines", "reinforce", "the", "immunoregulatory", "circuit", "in", "mammals", "by", "acting", "as", "a", "ligand", "of", "aryl", "hydrocarbon", "receptor", "(", "AhR", ")", "in", "both", "T", "cells", "and", "DCs", "[", "21", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "As", "a", "result", ",", "IDO1", "expressing", "DCs", "mediate", "multiple", "effects", "on", "T", "lymphocytes", ",", "including", "inhibition", "of", "proliferation", ",", "apoptosis", ",", "and", "differentiation", "towards", "a", "regulatory", "phenotype", "[", "22", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Moreover", ",", "apart", "from", "being", "a", "cytoplasmic", "enzyme", ",", "IDO1", "also", "acts", "as", "a", "signal", "transducing", "molecule", "by", "binding", "tyrosine", "phosphatases", "in", "its", "immunoreceptor", "tyrosine", "based", "inhibitory", "motif", "(", "ITIM", ")", "domains", "[", "23", "]", "and", "anchoring", "to", "the", "early", "endosomes", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "localisation", "is", "a", "result", "of", "the", "IDO1", "interaction", "with", "activated", "class", "IA", "PI3K", "subunits", "[", "24", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Thus", ",", "the", "IDO1", "ability", "to", "restrain", "inflammation", "depends", "on", "two", "distinct", "functions", "of", "the", "IDO1", "protein", ":", "one", "is", "enzymatic", "(", "tryptophan", "degradation", "to", "kynurenine", ")", "while", "the", "other", "is", "independent", "from", "its", "enzymatic", "function.Potential", "clinical", "applications", "of", "kynurenine", "are", "growing", "." ]
+  }, {
+    "sentence_tokens" : [ "Among", "these", "metabolites", ",", "kynurenic", "acid", "and", "xanthurenic", "acid", ",", "as", "well", "as", "their", "analogues", ",", "have", "neuroprotective", "activities", ",", "suggesting", "that", "they", "may", "find", "use", "in", "drug", "development", "for", "neurological", "diseases", "[", "25,26,27,28", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Moreover", ",", "NAD+", "is", "a", "coenzyme", "with", "a", "pivotal", "role", "in", "a", "vast", "number", "of", "biochemical", "processes", ",", "as", "well", "as", "in", "several", "redox", "reactions", ",", "and", "it", "is", "vital", "to", "mitochondrial", "function", "[", "29", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "study", ",", "considering", "the", "only", "options", "for", "kynurenine", "production", "as", "chemical", "synthesis", "or", "extraction", "from", "human", "tissues", ",", "we", "expressed", "human", "IDO1", "in", "plant", "cells", "in", "order", "to", "investigate", "the", "possibility", "to", "obtain", "an", "alternative", "production", "platform", "for", "both", "IDO1", "protein", "and", "biologic", "kynurenine", "." ]
+  }, {
+    "sentence_tokens" : [ "2", "." ]
+  }, {
+    "sentence_tokens" : [ "Results", "." ]
+  }, {
+    "sentence_tokens" : [ "2.1", "." ]
+  }, {
+    "sentence_tokens" : [ "Cloning", "of", "IDO1", "cDNA", "in", "a", "Plant", "Expression", "Vector", "and", "Attempted", "Stably", "Expression", "in", "Tobacco", "Plants", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "comparison", "of", "the", "human", "IDO1", "amino", "acid", "sequence", "and", "the", "plant", "protein", "databases", "was", "performed", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "found", "some", "similarity", "within", "plants", "and", "green", "algae", "only", "at", "a", "low", "percentage", "with", "an", "identity", "average", "of", "around", "30", "%", "." ]
+  }, {
+    "sentence_tokens" : [ "Since", "alignment", "errors", "can", "appear", "when", "the", "sequence", "identity", "drops", "below", "35", "%", "[", "30", "]", ",", "these", "sequence", "homologies", "seemed", "to", "be", "too", "low", "to", "confirm", "the", "presence", "of", "IDO1", "in", "the", "Plantae", "kingdom", "." ]
+  }, {
+    "sentence_tokens" : [ "Moreover", ",", "most", "of", "these", "proteins", "were", "reported", "to", "have", "an", "unknown", "function", "and", ",", "in", "the", "few", "cases", "of", "being", "identified", "as", "indoleamine", "2,3-dioxygenase", "enzymes", ",", "the", "evidence", "supporting", "the", "existence", "was", "inferred", "only", "by", "homology.Therefore", ",", "to", "express", "IDO1", "in", "plants", ",", "we", "cloned", "the", "human", "IDO1", "cDNA", "into", "plant", "expression", "vector", "pGreenII", ",", "obtaining", "pGreenII.IDO1", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "schematic", "diagram", "of", "the", "vector", "assembly", "is", "shown", "in", "Figure", "1A", "." ]
+  }, {
+    "sentence_tokens" : [ "Then", ",", "we", "transformed", "tobacco", "(", "N.", "tabacum", "cv.", "Petit", "Havana", ")", "plants", "with", "A.", "tumefaciens", "harbouring", "the", "pGreenII.IDO1", "vector", "to", "obtain", "plants", "stably", "expressing", "human", "IDO1", "." ]
+  }, {
+    "sentence_tokens" : [ "Selection", "with", "kanamycin", "allowed", "for", "the", "regeneration", "of", "transformed", "plants", "(", "T0", ")", ",", "as", "shown", "in", "Figure", "1B", "(", "left", "panel", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Regenerated", "shoots", "were", "successively", "separated", "from", "chlorotic", "leaf", "discs", "and", "placed", "in", "fresh", "selective", "medium", "to", "stimulate", "further", "growth", "and", "roots", "formation", "(", "Figure", "1B", ",", "central", "panel", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "As", "expected", ",", "wild-type", "non", "transformed", "plants", "failed", "to", "regenerate", "when", "placed", "in", "freshly", "selective", "medium", "(", "Figure", "1B", ",", "right", "panel", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Total", "DNA", "was", "isolated", "from", "leaves", "of", "selected", "regenerated", "T0", "plants", "and", "examined", "by", "PCR", "(", "Figure", "1C", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Only", "transformed", "explants", "showed", "an", "amplified", "fragment", "of", "about", "500", "bp", ",", "confirming", "the", "presence", "of", "the", "IDO1", "gene", "cassette", "in", "their", "genome", "." ]
+  }, {
+    "sentence_tokens" : [ "Few", "T0", "events", "unable", "to", "amplify", "were", "considered", "as", "regeneration", "escapes", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "total", ",", "10", "PCR", "positive", "plants", "were", "chosen", ",", "transplanted", "to", "pots", "in", "controlled", "greenhouse", "conditions", ",", "and", "reared", "to", "flower", "for", "seed", "production", "." ]
+  }, {
+    "sentence_tokens" : [ "Seeds", "were", "germinated", "on", "kanamycin", "selective", "medium", "and", "for", "several", "plants", "(", "T1", "events", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "IDO1", "gene", "presence", "was", "confirmed", "by", "PCR", "analysis", "(", "Figure", "1D", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "even", "if", "IDO1", "mRNA", "was", "detected", "by", "RT-PCR", "in", "leaves", "(", "Figure", "1E", ")", ",", "IDO1", "protein", "was", "undetectable", "by", "Western", "blotting", "in", "total", "proteins", "extracted", "from", "leaves", "and", "roots", "of", "transformed", "plants", ",", "suggesting", "a", "protein", "stability", "problem", "." ]
+  }, {
+    "sentence_tokens" : [ "2.2", "." ]
+  }, {
+    "sentence_tokens" : [ "Human", "IDO1-GFP", "Can", "Be", "Transiently", "Expressed", "in", "Tobacco", "Protoplasts", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "lack", "of", "human", "IDO1", "expression", "in", "plants", "could", "possibly", "be", "attributed", "to", "protein", "instability", "." ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "a", "second", "cloning", "strategy", "was", "carried", "out", "by", "fusing", "IDO1", "sequence", "to", "the", "GFP", "tag", ",", "aiming", "to", "obtain", "a", "more", "stable", "fusion", "protein", ",", "as", "frequently", "observed", "in", "fusion", "technology", "[", "31", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "this", "purpose", "and", "for", "obtaining", "a", "tag", "useful", "as", "both", "a", "protein", "detector", "and", "a", "possible", "purification", "system", ",", "we", "assembled", "the", "gene", "construct", "coding", "for", "IDO1-GFP", "under", "the", "same", "constitutive", "promoter", "previously", "used", "in", "pGreenII.IDO1", ",", "the", "35S", "promoter", "(", "Figure", "2A", ")", ",", "and", "we", "transiently", "transfected", "tobacco", "protoplasts", "with", "the", "new", "vector", "pV.IDO1-GFP", "." ]
+  }, {
+    "sentence_tokens" : [ "By", "means", "of", "Western", "blotting", "with", "two", "different", "antibodies", "detecting", "IDO1", "protein", "and", "the", "GFP", "tag", ",", "respectively", ",", "we", "revealed", "the", "expression", "of", "a", "69", "kDa", "protein", ",", "matching", "the", "size", "of", "IDO1-GFP", ",", "in", "plants", "transfected", "with", "pV.IDO1-GFP", "(", "Figure", "2B", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "order", "to", "avoid", "possibile", "impact", "of", "tryptophan", "depletion", ",", "due", "to", "the", "catalytic", "activity", "of", "IDO1", ",", "on", "cell", "vitality", "and", "protein", "expression", ",", "we", "added", "an", "extra", "amount", "of", "tryptophan", "to", "the", "protoplast", "medium", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "additional", "tryptophan", "did", "not", "change", "IDO1", "protein", "expression", "in", "protoplasts", ",", "as", "shown", "in", "(", "Figure", "2B", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "As", "a", "result", ",", "IDO1", "can", "be", "expressed", "in", "vitro", "as", "a", "GFP", "fused", "protein", "in", "transiently", "transformed", "protoplasts", "." ]
+  }, {
+    "sentence_tokens" : [ "2.3", "." ]
+  }, {
+    "sentence_tokens" : [ "Transiently", "Expressed", "IDO1-GFP", "Had", "Catalytic", "Activity", "and", "Similar", "Subcellular", "Localisation", "of", "Mammal", "IDO1", "." ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "we", "investigated", "if", "IDO1-GFP", "transiently", "expressed", "in", "protoplasts", "had", "enzymatic", "activity", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "this", "purpose", ",", "we", "measured", "kynurenine", "concentration", "in", "K3", "medium", "after", "a", "24", "h", "incubation", "of", "protoplasts", "in", "medium", "alone", "or", "with", "extra", "tryptophan", "added", "to", "enhance", "and", "detect", "the", "metabolic", "product", "(", "Figure", "3A", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "As", "a", "control", ",", "kynurenine", "was", "also", "measured", "in", "non", "transformed", "protoplasts", "subjected", "to", "the", "same", "culture", "conditions", "." ]
+  }, {
+    "sentence_tokens" : [ "Human", "IDO1", "expressed", "in", "protoplasts", "was", "found", "to", "be", "capable", "of", "producing", "kynurenine", ",", "but", "this", "effect", "was", "strictly", "related", "to", "the", "enzyme", "presence", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "fact", ",", "the", "WT", "control", "protoplasts", "showed", "undetectable", "production", "of", "kynurenine", "in", "comparison", "with", "the", "IDO1", "transfected", "cells", ",", "both", "in", "the", "presence", "and", "absence", "of", "an", "extra", "amount", "of", "tryptophan", "in", "the", "medium", "(", "Figure", "3A", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "As", "an", "additional", "control", ",", "tobacco", "protoplasts", "were", "also", "transformed", "with", "the", "empty", "vector", ",", "and", "the", "kynurenine", "concentration", "measured", "in", "their", "K3", "medium", "resulted", "in", "being", "undetectable", ",", "similar", "to", "what", "we", "found", "in", "WT", "protoplasts", "." ]
+  }, {
+    "sentence_tokens" : [ "Moreover", ",", "the", "addition", "of", "tryptophan", "to", "the", "medium", "allowed", "for", "the", "production", "of", "a", "significantly", "higher", "level", "of", "kynurenine", "as", "compared", "to", "untreated", "IDO1", "transfected", "cells", "." ]
+  }, {
+    "sentence_tokens" : [ "Unexpectedly", ",", "the", "final", "(", "i.e", ".,", "after", "the", "24", "h", "incubation", ")", "tryptophan", "level", "measured", "in", "the", "medium", "with", "extra-added", "tryptophan", "(", "100", "mu", "M", ")", "was", "significantly", "higher", "in", "the", "presence", "of", "transfected", "IDO1", "cells", "than", "in", "the", "WT", "control", "(", "Figure", "3B", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "As", "recently", "demonstrated", ",", "in", "mammal", "cells", ",", "IDO1", "is", "localised", "not", "only", "in", "the", "cytosol", "but", "also", "in", "early", "endosomes", "[", "24", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "To", "investigate", "the", "intracellular", "localisation", "of", "human", "IDO1", "in", "plant", "cells", ",", "we", "analyzed", "leaves", "of", "soil-grown", "tobacco", "plants", "transfected", "in", "vivo", "by", "A.", "tumefaciens", "cultures", "with", "both", "pV.IDO1-GFP", "and", "red", "fluorescent", "protein", "(", "RFP", ")-tagged", "organelle", "markers", "." ]
+  }, {
+    "sentence_tokens" : [ "Confocal", "analysis", "revealed", "that", "IDO1", "was", "primarily", "found", "in", "a", "diffuse", "pattern", "consistent", "with", "cytoplasmic", "localisation", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "a", "partial", "compartmentalisation", "of", "IDO1", "protein", "to", "prevacuolar", "compartments", "and", "multivesicular", "bodies", "(", "PVC", "and", "MVB", ")", "was", "also", "observed", "when", "co-expressed", "with", "a", "PVC", "and", "MVB", "marker", "(", "TR2RFP-VSR2", ")", "(", "Figure", "3C", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "PVC", "and", "MVB", "are", "intermediate", "compartments", "mediating", "protein", "transport", "between", "trans-Golgi", "network", "(", "TGN", ")", "and", "vacuole", ",", "holding", "overlapping", "functions", "with", "mammalian", "early", "endosomes", "." ]
+  }, {
+    "sentence_tokens" : [ "Since", "plant", "organelles", "are", "not", "perinuclear", "as", "in", "mammalian", "cells", ",", "statistical", "analysis", "of", "co-localisation", "events", "could", "be", "performed", "to", "evaluate", "the", "relevance", "of", "the", "results", "." ]
+  }, {
+    "sentence_tokens" : [ "As", "seen", "in", "Figure", "3C", ",", "Pearson", "'", "s", "correlation", "(", "rp", ")", "and", "Spearman", "correlation", "(", "rs", ")", "resulted", "in", "coefficients", "of", "0.43", "and", "0.2", ",", "respectively", "." ]
+  }, {
+    "sentence_tokens" : [ "Since", "perfect", "co-localisation", "would", "result", "in", "statistical", "coefficients", "close", "to", "1", ",", "our", "results", "confirmed", "the", "partial", "localisation", "of", "IDO1", "at", "PVC", "and", "MVB", "membrane", "when", "co-expressed", "with", "TR2RFP-VSR2", "(", "Figure", "3C", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "On", "the", "contrary", ",", "IDO1", "could", "not", "be", "found", "co-localising", "with", "other", "cell", "compartments", "of", "the", "secretory", "pathway", "when", "co-expressed", "with", "markers", "of", "the", "late", "prevacuolar", "compartment", "(", "RFP-Rha1", ",", "LPVC", "marker", ")", ",", "Golgi", "apparatus", "(", "ST-RFP", "marker", ")", ",", "or", "trans-Golgi", "network", "(", "RFP-SYP61", ",", "TGN", "marker", ")", "(", "Figure", "3D", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "As", "a", "whole", ",", "on", "the", "basis", "of", "these", "data", ",", "we", "found", "that", "GFP", "tagged", "IDO1", "can", "be", "transiently", "expressed", "in", "protoplasts", "in", "a", "catalytically", "active", "conformation", "and", "has", "a", "similar", "intracellular", "localisation", "to", "that", "found", "in", "mammalian", "cells", "." ]
+  }, {
+    "sentence_tokens" : [ "3", "." ]
+  }, {
+    "sentence_tokens" : [ "Discussion", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "production", "of", "biopharmaceuticals", "in", "plant", "has", "been", "named", "as", "\"", "molecular", "farming", "\"", "[", "32,33", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "particular", ",", "plants", "can", "be", "used", "to", "produce", "pharmaceutical", "proteins", ",", "such", "as", "replacement", "human", "proteins", ",", "antibodies", ",", "and", "vaccine", "candidates", "[", "3", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Several", "recombinant", "human", "proteins", "with", "therapeutic", "activity", "have", "been", "produced", "in", "plants", ",", "for", "example", ",", "the", "enzyme", "alpha-mannosidase", "is", "produced", "in", "stably", "transformed", "plants", "for", "the", "replacement", "therapy", "of", "the", "lysosomal", "storage", "disease", "alpha-mannosidosis", "." ]
+  }, {
+    "sentence_tokens" : [ "Another", "enzyme", ",", "named", "glucocerebrosidase", ",", "is", "produced", "in", "plant", "cell", "suspension", "cultures", "and", "commercialised", "[", "13", "]", "for", "Gaucher", "'", "s", "disease", "treatment", "." ]
+  }, {
+    "sentence_tokens" : [ "Furthermore", ",", "plant", "cell", "cultures", "represent", "interesting", "options", "for", "an", "easy", "and", "scalable", "production", "of", "secondary", "metabolites", ",", "such", "as", "the", "anticancer", "drug", "paclitaxel", "[", "34", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Thus", ",", "in", "addition", "to", "whole", "plants", "grown", "in", "greenhouse", ",", "plant", "in", "vitro", "systems", "for", "generating", "metabolites", "and", "recombinant", "proteins", "are", "now", "considered", "an", "attractive", "alternative", "to", "classical", "technologies", "[", "35,36", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Although", "the", "efficiency", "of", "plant", "platforms", "for", "biological", "components", "production", "is", "largely", "recognised", ",", "prokaryotic", "and", "mammalian", "expression", "systems", "are", "still", "mainly", "used", "in", "biotechnological", "processes", "because", ",", "provided", "with", "a", "strong", "regulatory", "framework", ",", "they", "guarantee", "robustness", "and", "economic", "sustainability", "for", "the", "industrial", "platform", "[", "3", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Nevertheless", ",", "plant", "platforms", "might", "be", "attractive", "for", "the", "production", "of", "certain", "biopharmaceuticals", "with", "favourable", "glycan", "configurations", ",", "as", "well", "as", "for", "a", "rapid", "scale", "up", "process", "in", "the", "production", "of", "recombinant", "protein", "." ]
+  }, {
+    "sentence_tokens" : [ "Moreover", ",", "plants", "certainly", "do", "not", "allow", "the", "growth", "of", "human", "pathogens", "[", "37,38", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "current", "report", ",", "a", "cloning", "strategy", "was", "set", "for", "the", "expression", "of", "a", "catalytically", "active", "form", "of", "human", "IDO1", "in", "plant", "cells", ",", "with", "the", "aim", "of", "exploring", "an", "alternative", "platform", "for", "the", "kynurenine", "production", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "molecule", "is", "an", "agonist", "of", "AhR", ",", "a", "crucial", "factor", "in", "the", "immune", "response", "regulation", "that", "exerts", "its", "roles", "through", "different", "immunoregulatory", "mechanisms", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "fact", ",", "when", "activated", ",", "AhR", "is", "capable", "of", "inhibiting", "the", "production", "of", "several", "proinflammatory", "cytokines", "and", "of", "controlling", "the", "generation", "of", "regulatory", "T", "(", "Treg", ")", "cells", "and/or", "T", "helper", "17", "(", "Th17", ")", "cells", "in", "mouse", "models", "of", "autoimmune", "diseases", "[", "39", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "finding", "of", "possible", "kynurenine", "participation", "in", "a", "positive", "feedback", "loop", "in", "AhR", "signalling", "paves", "the", "way", "to", "a", "probable", "use", "of", "kynurenine", "as", "an", "immunoregulatory", "drug.Plant", "organisms", "naturally", "produce", "all", "amino", "acids", "including", "tryptophan", ",", "which", "not", "only", "result", "as", "an", "essential", "component", "of", "protein", "synthesis", ",", "but", "also", "serves", "as", "a", "precursor", "for", "a", "wide", "range", "of", "indole", "containing", "secondary", "metabolites", "that", "are", "important", "for", "plant", "growth", ",", "such", "as", "auxin", "[", "40", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Apart", "from", "arylformamidase", ",", "plants", "do", "not", "possess", "orthologous", "genes", "coding", "for", "enzymes", "involved", "in", "the", "kynurenine", "pathway", "[", "41", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Rice", "(", "Oryza", "sativa", ")", "seems", "to", "be", "an", "exception", "because", "genomic", "database", "searching", "has", "revealed", "the", "presence", "of", "several", "biosynthetic", "genes", "encoding", "core", "enzymes", "in", "kynurenine", "pathways", ",", "despite", "a", "lack", "of", "biochemical", "evidence", "[", "41", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "particular", ",", "the", "sequence", "of", "an", "IDO1", "gene", "(", "OsIDO", ")", "was", "identified", ",", "coding", "for", "a", "protein", "with", "a", "low", "identity", "(", "26", "%", ")", "and", "low", "similarity", "(", "42", "%", ")", "to", "Mus", "musculus", "IDO1", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "the", "enzymatic", "activity", "of", "OsIDO", "had", "not", "been", "demonstrated", "[", "42", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Hence", ",", "during", "our", "study", ",", "we", "generated", "a", "specific", "vector", "for", "efficient", "transfection", "of", "human", "IDO1", "gene", "in", "plants", "." ]
+  }, {
+    "sentence_tokens" : [ "Although", "the", "genetic", "transformation", "had", "been", "effective", "and", "the", "transgene", "transcription", "did", "occur", ",", "transformed", "plants", "failed", "to", "express", "IDO1", "protein", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "possible", "explanation", "could", "be", "the", "instability", "and/or", "the", "rapid", "degradation", "of", "human", "IDO1", "protein", "in", "a", "heterologous", "platform", "such", "as", "the", "plant", "cell", "." ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "a", "different", "construct", "was", "cloned", "encoding", "for", "the", "fusion", "protein", "IDO1-GFP", "with", "the", "aim", "of", "improving", "the", "protein", "stability", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "order", "to", "rapidly", "test", "the", "expression", "of", "this", "new", "gene", "construct", ",", "we", "transiently", "transfected", "protoplasts", ",", "plant", "cells", "with", "their", "cell", "wall", "removed", ",", "and", "cultivated", "them", "in", "vitro", "in", "a", "liquid", "medium", "." ]
+  }, {
+    "sentence_tokens" : [ "Under", "these", "conditions", ",", "IDO1-GFP", "fusion", "protein", "was", "expressed", ",", "accumulated", "in", "the", "protoplasts", "and", ",", "most", "importantly", ",", "secreted", "kynurenine", "in", "the", "medium", "." ]
+  }, {
+    "sentence_tokens" : [ "Heterologous", "protein", "expression", "and", "kynurenine", "production", "in", "protoplasts", "were", "also", "assessed", "in", "the", "presence", "of", "an", "excess", "of", "tryptophan", "in", "order", "to", "compensate", "the", "depletion", "caused", "by", "the", "IDO1", "metabolising", "activity", "that", "could", "interfere", "with", "the", "plant", "cell", "development", ",", "as", "recently", "demonstrated", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "fact", ",", "according", "to", "He", "and", "colleagues", "[", "43", "]", ",", "kynurenine", "is", "an", "alternative", "substrate", "that", "can", "competitively", "inhibit", "the", "key", "enzymes", "involved", "in", "the", "conversion", "of", "tryptophan", "into", "indole-3-pyruvic", "acid", "in", "one", "of", "the", "auxin", "biosynthesis", "pathways", "." ]
+  }, {
+    "sentence_tokens" : [ "Interestingly", ",", "they", "found", "that", "the", "effect", "of", "kynurenine", "treatment", "could", "be", "suppressed", "by", "the", "presence", "in", "the", "medium", "of", "high", "doses", "of", "tryptophan", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "our", "study", ",", "we", "observed", "that", "the", "extra", "tryptophan", "supplementation", "to", "the", "protoplast", "medium", ",", "rather", "than", "affecting", "the", "catalytic", "activity", "of", "IDO1-GFP", ",", "increased", "fourfold", "the", "production", "of", "kynurenine", "." ]
+  }, {
+    "sentence_tokens" : [ "These", "findings", "suggest", "that", "kynurenine", "production", "increases", "according", "to", "the", "availability", "of", "the", "substrate", "tryptophan", "in", "the", "medium", ",", "and", "IDO1", "activity", "promotes", "an", "increased", "level", "of", "tryptophan", "in", "the", "medium", "by", "a", "still", "unidentified", "mechanism", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "latter", "aspect", "is", "not", "less", "important", "for", "a", "nutraceutical", "application", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "fact", ",", "tryptophan", "for", "humans", "is", "an", "essential", "amino", "acid", "necessary", "for", "the", "in", "vivo", "biosynthesis", "of", "proteins", ",", "as", "well", "as", "a", "precursor", "of", "several", "bioactive", "compounds", "." ]
+  }, {
+    "sentence_tokens" : [ "It", "is", "widely", "used", "as", "a", "dietary", "supplement", "for", "several", "perceived", "benefits", ",", "such", "as", "sleep", "and", "mood", "regulation", "[", "44", "]", ",", "and", "it", "is", "reported", "to", "mitigate", "the", "course", "of", "several", "chronic", "diseases", ",", "such", "as", "Chron", "'", "s", "disease", "[", "45", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Finally", ",", "in", "plants", ",", "IDO1", "keeps", "the", "same", "dual", "localisation", "recently", "found", "in", "mammalian", "cells", "[", "46", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "fact", ",", "when", "expressed", "in", "vivo", "in", "tobacco", "leaves", "via", "Agrobacterium", "infiltration", "and", "observed", "by", "confocal", "microscopy", ",", "the", "majority", "of", "IDO1-GFP", "are", "found", "in", "the", "cytoplasm", ",", "with", "partial", "colocalisation", "with", "the", "early", "endosomes.In", "summary", ",", "this", "study", "demonstrates", "that", "in", "plant", "cells", "IDO1-GFP", "shares", "the", "same", "enzymatic", "activity", "and", "subcellular", "distribution", "with", "native", "IDO1", ",", "paving", "the", "way", "to", "the", "possible", "use", "of", "plants", "as", "bioreactors", "to", "produce", "kynurenine", "." ]
+  }, {
+    "sentence_tokens" : [ "To", "the", "best", "of", "our", "knowledge", ",", "this", "is", "the", "first", "report", "on", "kynurenine", "production", "in", "plant", "cells", "by", "expressing", "human", "IDO1", "protein", "." ]
+  }, {
+    "sentence_tokens" : [ "Further", "studies", "will", "be", "necessary", "to", "verify", "if", "a", "negative", "IDO1", "mediated", "interference", "with", "plant", "metabolism", "may", "occur", "during", "plant", "growth", "." ]
+  }, {
+    "sentence_tokens" : [ "4", "." ]
+  }, {
+    "sentence_tokens" : [ "Materials", "and", "Methods", "." ]
+  }, {
+    "sentence_tokens" : [ "4.1", "." ]
+  }, {
+    "sentence_tokens" : [ "Construction", "of", "Plasmids", "for", "Plant", "Transformation", "." ]
+  }, {
+    "sentence_tokens" : [ "To", "stably", "express", "IDO1", "in", "tobacco", "plants", ",", "we", "excised", "human", "IDO1", "cDNA", "from", "plasmid", "pEZM02.IDO1", "using", "EcoRI", "and", "NotI", "restriction", "enzymes", "." ]
+  }, {
+    "sentence_tokens" : [ "After", "excision", ",", "both", "5", "'", "and", "3", "'", "sticky", "ends", "were", "blunted", "by", "DNA", "polymerase", "I", "large", "(", "Klenow", ")", "fragment", "to", "allow", "non", "compatible", "ends", "joining", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "result", "of", "digestion", "was", "separated", "on", "a", "1", "%", "agarose", "gel", "and", "the", "IDO1", "band", "was", "isolated", "and", "purified", "using", "the", "T-Pro", "Gel", "and", "PCR", "DNA", "Purification", "kit", "(", "T-Pro", "Biotechnology", ",", "New", "Taipei", "County", ",", "Taiwan", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "the", "production", "of", "transgenic", "plants", ",", "we", "introduced", "the", "expression", "cassette", "excised", "by", "EcoRI", "digestion", "from", "the", "pDHA.IDO1", "plasmid", "into", "the", "pGreenII.0029", "binary", "vector", "[", "7", "]", "opened", "with", "the", "same", "restriction", "enzyme", ",", "obtaining", "pGreen.IDO1", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "final", "plasmid", "was", "sequenced", "to", "verify", "the", "correct", "sequence", "and", "orientation", "of", "the", "IDO1", "expression", "cassette", "." ]
+  }, {
+    "sentence_tokens" : [ "Strain", "GV3101", "of", "A.", "tumefaciens", "was", "transformed", "by", "electroporation", "with", "the", "pGreenII.IDO1", "vector", "and", "used", "to", "produce", "transgenic", "tobacco", "(", "N.", "tabacum", "cv.", "Petit", "Havana", ")", ",", "as", "described", "by", "Pompa", "and", "colleagues", "[", "48", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Briefly", ",", "tobacco", "plants", "were", "transformed", "by", "co-cultivation", "with", "A.", "tumefaciens", "harbouring", "pGreenII.IDO1", "on", "agar", "solidified", "MS", "medium", "containing", "1", "mg/L", "of", "6-benzylaminopurine", "(", "BA", ")", "and", "0.1", "mg/L", "of", "alpha-naphthaleneacetic", "acid", "(", "NAA", ")", "hormones", "." ]
+  }, {
+    "sentence_tokens" : [ "After", "co-cultivation", ",", "the", "leaf", "discs", "were", "grown", "aseptically", "in", "Petri", "dishes", "at", "25", "degrees", "C", "under", "full", "light", "on", "the", "same", "medium", "supplemented", "with", "500", "mg/L", "of", "cefotaxime", "and", "100", "mg/L", "kanamycin", "to", "avoid", "Agrobacterium", "growth", "and", "to", "select", "transformed", "cells", ",", "respectively", "." ]
+  }, {
+    "sentence_tokens" : [ "Shoots", "emerging", "from", "each", "explant", "were", "kept", "separated", "to", "guarantee", "regeneration", "of", "independent", "transformants", "." ]
+  }, {
+    "sentence_tokens" : [ "After", "approximately", "5", "-", "6", "weeks", ",", "shoots", "were", "plated", "on", "MS", "medium", "without", "hormones", "but", "still", "supplemented", "with", "antibiotics", "until", "new", "plants", "developed", "." ]
+  }, {
+    "sentence_tokens" : [ "Transformed", "plants", "(", "T0", ")", "were", "grown", "at", "25", "degrees", "C", "in", "16", "h", "of", "light", "in", "axenic", "culture", "in", "glass", "jars", "without", "antibiotics", "and", "propagated", "every", "5", "-", "6", "weeks", "." ]
+  }, {
+    "sentence_tokens" : [ "After", "PCR", "results", ",", "10", "transgenic", "plants", "(", "labelled", "with", "numbers", "from", "1", "to", "10", ")", "were", "chosen", "and", "reared", "to", "flower", "to", "obtain", "seeds", "." ]
+  }, {
+    "sentence_tokens" : [ "T1", "seeds", "from", "self", "fertilisation", "were", "harvested", "at", "maturity", ",", "seeded", "onto", "kanamycin", "selective", "medium", ",", "and", "scored", "for", "resistance", "." ]
+  }, {
+    "sentence_tokens" : [ "After", "21", "-", "28", "days", ",", "resistant", "seeds", "started", "to", "germinate", "." ]
+  }, {
+    "sentence_tokens" : [ "One", "T1", "plant", "deriving", "from", "each", "of", "the", "10", "primary", "regenerants", ",", "T1n", "(", "n", "=", "1", "-", "10", ")", ",", "was", "analysed", "by", "PCR", "to", "confirm", "the", "IDO1", "gene", "presence", "." ]
+  }, {
+    "sentence_tokens" : [ "To", "fuse", "GFP", "in", "frame", "to", "IDO1", "at", "the", "C-terminal", ",", "we", "amplified", "IDO1", "cDNA", "with", "PCR", "from", "pDHA.IDO1", "with", "the", "forward", "primer", "IDO1ClaI", "(", "GCAGACTACATCGATGGCACACGCTATGG", ")", "and", "the", "reverse", "primer", "IDO1NheI", "(", "GGCCGCTAGCACCTTCCTTCAAAAG", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "PCR", "fragment", "was", "digested", "by", "ClaI", "and", "NheI", "restriction", "enzymes", "and", "inserted", "in", "the", "vector", "pJA1", ",", "derived", "from", "pAW7", "after", "replacing", "the", "RFP", "with", "GFP", "[", "49", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "resulting", "vector", "(", "pUC.IDO1-GFP", ")", "contained", "the", "35S", "promoter", "and", "the", "IDO1", "sequence", "in", "frame", "with", "a", "C-terminal", "GFP", ",", "followed", "by", "the", "NOS", "terminator", "in", "a", "EcoRI-HindIII", "cassette", "." ]
+  }, {
+    "sentence_tokens" : [ "Since", "IDO1", "coding", "sequence", "contained", "another", "HindIII", "site", "(", "Figure", "2A", ")", ",", "the", "digestion", "of", "pUC.IDO1-GFP", "by", "EcoRI", "and", "HindIII", "generated", "two", "fragments", "." ]
+  }, {
+    "sentence_tokens" : [ "Both", "fragments", "were", "cloned", "in", "the", "pV", "binary", "vector", "for", "plant", "transformation", "and", "digested", "with", "EcoRI", "and", "HindIII", "in", "order", "to", "reconstitute", "the", "original", "IDO1-GFP", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "reconstituted", "cassette", "was", "sequenced", "to", "confirm", "the", "integrity", "of", "IDO1", "gene", "and", "the", "frame", "with", "GFP", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "resulting", "vector", "pV.IDO1-GFP", "was", "used", "for", "tobacco", "protoplast", "transformation", "and", ",", "after", "transformation", "into", "A.", "tumefaciens", ",", "for", "infiltration", "experiments", "." ]
+  }, {
+    "sentence_tokens" : [ "4.2", "." ]
+  }, {
+    "sentence_tokens" : [ "Tobacco", "Protoplast", "Isolation", "." ]
+  }, {
+    "sentence_tokens" : [ "Protoplasts", "were", "isolated", "from", "transgenic", "plants", "as", "described", "by", "De", "Marchis", "et", "al.", "[", "50", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Briefly", ",", "to", "isolate", "mesophyll", "protoplasts", ",", "we", "wounded", "young", "fully", "expanded", "leaves", "from", "tobacco", "plants", "grown", "under", "aseptic", "conditions", "with", "a", "scalpel", "and", "placed", "them", "in", "a", "Petri", "dish", "with", "the", "abaxial", "side", "in", "contact", "with", "the", "1", "x", "enzyme", "mix", "solution", "(", "in", "1", "%", "Cellulase", "Onozuka", "RS", ",", "0.5", "%", "Macerozime", "R-10", ")", "dissolved", "in", "K3", "medium", "(", "3.78", "g", "Gamborg", "'", "s", "B-5", "Basal", "Medium", "with", "Minimal", "Organics", ",", "5.1", "mM", "CaCl", "." ]
+  }, {
+    "sentence_tokens" : [ "2H", "O", ",", "3.12", "mM", "NH", "NO", ",", "0.4", "M", "sucrose", ",", "1.67", "mM", "xylose", ",", "BA", "1", "mg/L", ",", "NAA", "1", "mg/L", "(", "pH", "5.5", ")", ")", "for", "16", "h", "at", "25", "degrees", "C", "in", "the", "dark", "." ]
+  }, {
+    "sentence_tokens" : [ "Protoplasts", "were", "recovered", "by", "resuspending", "macerated", "leaves", "in", "K3", "medium", ",", "filtering", "through", "a", "sterile", "85", "mu", "m", "nylon", "mesh", ",", "and", "centrifuging", "for", "20", "min", "at", "60", "x", "g", "with", "a", "swinging", "bucket", "rotor", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "floating", "green", "band", ",", "representing", "vital", "protoplast", ",", "was", "recovered", "and", "washed", "twice", "with", "W5", "solution", "(", "152", "mM", "NaCl", ",", "5", "mM", "KCl", ",", "125", "mM", "CaCl", "." ]
+  }, {
+    "sentence_tokens" : [ "2H", "O", ",", "5", "mM", "glucose", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "After", "testing", "viability", "and", "yield", "with", "fluorescein", "diacetate", "staining", ",", "we", "used", "protoplasts", "for", "further", "analysis", "." ]
+  }, {
+    "sentence_tokens" : [ "4.3", "." ]
+  }, {
+    "sentence_tokens" : [ "Tobacco", "Protoplast", "Transformation", "." ]
+  }, {
+    "sentence_tokens" : [ "After", "W5", "removal", "by", "centrifuging", "for", "10", "min", "at", "60", "x", "g", ",", "protoplasts", "were", "resuspended", "at", "a", "concentration", "of", "1", "x", "10", "mL", "with", "MaCa", "buffer", "(", "0.1", "%", "MES", ",", "20", "mM", "CaCl", ",", "0.5", "M", "mannitol", "(", "pH", "5.6", ")", ")", ",", "heated", "at", "45", "degrees", "C", "for", "5", "min", ",", "and", "mixed", "with", "60", "mu", "g", "of", "plasmid", "DNA", "mL", "of", "protoplast", "suspension", "." ]
+  }, {
+    "sentence_tokens" : [ "Protoplast", "transformation", "with", "polyethylene", "glycol", "(", "PEG", ")", "was", "performed", "by", "adding", "an", "equal", "volume", "of", "a", "solution", "containing", "40", "%", "(", "w/v", ")", "PEG", "4000", ",", "0.1", "M", "Ca", "(", "NO", ")", ",", "and", "0.4", "M", "mannitol", "(", "pH", "8)", "." ]
+  }, {
+    "sentence_tokens" : [ "After", "incubation", "at", "room", "temperature", "for", "30", "min", ",", "transformed", "protoplasts", "were", "slowly", "diluted", "to", "14", "mL", "with", "W5", "solution", "." ]
+  }, {
+    "sentence_tokens" : [ "Protoplasts", "were", "pelleted", "at", "60", "x", "g", "for", "10", "min", "at", "room", "temperature", ",", "resuspended", "in", "K3", "medium", "to", "a", "final", "density", "of", "1", "x", "10", "protoplasts", "mL", ",", "and", "incubated", "2", "h", "at", "25", "degrees", "C", "in", "the", "dark", "." ]
+  }, {
+    "sentence_tokens" : [ "Then", ",", "tryptophan", "100", "mu", "M", "was", "added", "to", "half", "of", "the", "samples", ",", "and", "all", "the", "protoplasts", "were", "incubated", "for", "24", "h", "at", "25", "degrees", "C", "in", "the", "dark", "before", "subsequent", "analysis", "." ]
+  }, {
+    "sentence_tokens" : [ "4.4", "." ]
+  }, {
+    "sentence_tokens" : [ "Plant", "Transformation", "by", "Agroinfiltration", "and", "Microscopy", "Analysis", "." ]
+  }, {
+    "sentence_tokens" : [ "Soil-grown", "N.", "tabacum", "cv.", "Petit", "Havana", "[", "51", "]", "leaves", "were", "infiltrated", "at", "OD", "0.1", "with", "A.", "tumefaciens", "cultures", "containing", "the", "pV-IDO1-GFP", "alone", "or", "with", "either", "organelle", "marker", "such", "as", "ST-RFP", "(", "Golgi", "marker", ")", ",", "RFP-SYP61", "(", "TGN", "marker", ")", ",", "TR2RFP-VSR2", "(", "PVC", "and", "MVB", "marker", ")", ",", "or", "RFP-Rha1", "(", "LPVC", "marker", ")", ",", "as", "described", "previously", "[", "52", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "infiltrated", "areas", "were", "analysed", "48h", "post-infiltration", "by", "confocal", "laser", "scanning", "microscopy", "." ]
+  }, {
+    "sentence_tokens" : [ "Confocal", "imaging", "was", "performed", "using", "an", "inverted", "Zeiss", "LSM", "700", "laser", "scanning", "microscope", "." ]
+  }, {
+    "sentence_tokens" : [ "When", "GFP", "fusions", "were", "imaged", "with", "RFP", "organelle", "markers", ",", "samples", "were", "excited", "with", "a", "diode", "laser", "at", "the", "wavelength", "of", "488", "nm", "for", "GFP", "and", "555", "nm", "for", "RFP", "." ]
+  }, {
+    "sentence_tokens" : [ "Fluorescence", "was", "detected", "with", "a", "552", "nm", "dichroic", "beam", "splitter", "and", "a", "475", "to", "550", "nm", "bandpass", "filter", "for", "GFP", "and", "a", "560", "to", "700", "nm", "bandpass", "filter", "for", "RFP", "." ]
+  }, {
+    "sentence_tokens" : [ "All", "dual-colour", "imaging", "was", "performed", "by", "line", "switching", "to", "obtain", "adequate", "live", "bioimaging", "data", "that", "had", "not", "been", "distorted", "by", "organelle", "motion", "." ]
+  }, {
+    "sentence_tokens" : [ "Statistical", "colocalisation", "between", "IDO1-GFP", "and", "TR2RFP-VSR2", "was", "performed", "as", "described", "in", "Gershlick", "et", "al.", "[", "53", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "4.5", "." ]
+  }, {
+    "sentence_tokens" : [ "DNA", "Isolation", "and", "Analysis", "." ]
+  }, {
+    "sentence_tokens" : [ "Total", "DNA", "was", "isolated", "from", "wild", "type", "and", "transgenic", "tobacco", "leaves", "using", "the", "GenElute", "TM", "Plant", "Genomic", "DNA", "Miniprep", "kit", "(", "Merck", "KGaA", ",", "Darmstadt", ",", "Germany", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "DNA", "PCR", "amplification", "was", "carried", "out", "using", "the", "primer", "pairs", "forward", "35S1", "(", "5", "'-ACGTTCCAACCACGTCTTCAAAG-3", "'", ")", "and", "reverse", "IDO1", "(", "5", "'-GCAAGACCTTACGGACATCT-3", "'", ")", "and", "forward", "35S2", "(", "5", "'-CATGGAGTCAAAGATTCAAA-3", "'", ")", "and", "reverse", "IDO1", "for", "T0", "and", "T1", "plants", ",", "respectively", "." ]
+  }, {
+    "sentence_tokens" : [ "4.6", "." ]
+  }, {
+    "sentence_tokens" : [ "RNA", "Extraction", "and", "RT-PCR", "Analysis", "." ]
+  }, {
+    "sentence_tokens" : [ "Total", "RNA", "was", "extracted", "from", "leaf", "tissues", "of", "transformed", "plants", "with", "the", "NucleoSpin", "RNA", "Plant", "kit", "(", "Macherey", "-", "Nagel", ",", "D", "u", "ren", ",", "Germany", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "the", "reverse", "transcribed", "PCR", "(", "RT-PCR", ")", "analysis", ",", "RNA", "was", "treated", "with", "DNase", "I", "(", "Qiagen", ",", "Venlo", ",", "The", "Netherlands", ")", "and", "reverse", "transcribed", "(", "2", "mu", "g", ")", "using", "oligo", "(", "dT", ")", "18", "and", "the", "SuperScript", "III", "Reverse", "Transcriptase", "(", "Thermo", "Fisher", "Scientific", ",", "Waltham", ",", "MA", ",", "USA", ")", ",", "according", "to", "the", "manufacturer", "'", "s", "instructions", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "cDNA", "preparations", "were", "analysed", "by", "PCR", "using", "specific", "primers", "for", "human", "IDO1", "(", "forward", ",", "5", "'-", "CTCCTGGACAATCAGTAAAGAGTACC-3", "'", ";", "reverse", ",", "5", "'-", "ACTTCTCAACTCTTTCTCGAAGCTGG-3", "'", ")", "and", "plant", "actin", "(", "forward", ",", "5", "'-", "ATGGCGGATGGGGAGGACATTCA-3", "'", ";", "reverse", ",", "5", "'-", "CCTTTTGTTATCCACATCTGTTG-3", "'", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "4.7", "." ]
+  }, {
+    "sentence_tokens" : [ "Protein", "Extraction", "from", "Protoplasts", "and", "Western", "Blotting", "Analysis", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "protoplasts", "were", "washed", "twice", "in", "cold", "PBS", "and", "lysed", "with", "Laemmli", "sample", "buffer", "." ]
+  }, {
+    "sentence_tokens" : [ "Proteins", "were", "separated", "by", "SDS-PAGE", "on", "10", "%", "polyacrylamide", "gels", "and", "then", "transferred", "to", "nitrocellulose", "." ]
+  }, {
+    "sentence_tokens" : [ "Membranes", "were", "blocked", "with", "5", "%", "(", "w/v", ")", "non", "fat", "dried", "milk", "in", "Tris", "buffered", "saline", "containing", "0.1", "%", "(", "v/v", ")", "Tween", "20", "at", "room", "temperature", "for", "1", "h." ]
+  }, {
+    "sentence_tokens" : [ "After", "being", "blocked", ",", "membranes", "were", "incubated", "overnight", "with", "primary", "antibodies", ",", "namely", ",", "anti-IDO1", "(", "Merck", "Millipore", ",", "Darmstadt", ",", "Germany", ")", ",", "anti-GFP", "(", "Thermo", "Fisher", "Scientific", ",", "Waltham", ",", "MA", ",", "USA", ")", ",", "and", "anti-Rubisco", "large", "subunit", "(", "rbcL", ",", "Agrisera", ",", "Sweden", ")", ",", "then", "washed", "and", "incubated", "with", "appropriate", "horseradish", "peroxidase", "(", "HRP", ")-conjugated", "secondary", "antibody", "(", "Thermo", "Fisher", "Scientific", ",", "Waltham", ",", "MA", ",", "USA", ")", "for", "1", "h", "at", "room", "temperature", "." ]
+  }, {
+    "sentence_tokens" : [ "Immunoreactive", "bands", "were", "detected", "by", "enhanced", "chemiluminescence", "(", "Bio-Rad", ",", "Hercules", ",", "CA", ",", "USA", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "4.8", "." ]
+  }, {
+    "sentence_tokens" : [ "Kynurenine", "Analysis", "." ]
+  }, {
+    "sentence_tokens" : [ "IDO1", "functional", "activity", "was", "measured", "in", "protoplast", "culture", "supernatants", "in", "terms", "of", "the", "ability", "to", "metabolise", "tryptophan", "to", "kynurenine", ",", "whose", "concentrations", "were", "measured", "by", "using", "a", "Perkin", "Elmer", ",", "series", "200", "HPLC", "instrument", "(", "Waltham", ",", "MA", ",", "USA", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "Kinetex", "C18", "column", "(", "250", "x", "4.6", "mu", "m", ",", "5", "mu", "m", ",", "100", "A", ";", "Phenomenex", ",", "USA", ")", ",", "maintained", "at", "the", "temperature", "of", "37", "degrees", "C", "and", "pressure", "of", "1800", "PSI", ",", "was", "used", "." ]
+  }, {
+    "sentence_tokens" : [ "Briefly", ",", "1", "x", "10", "transformed", "protoplasts", "were", "resuspended", "in", "1", "mL", "of", "K3", "medium", "alone", "or", "supplemented", "with", "exogenous", "L-tryptophan", "100", "mu", "M", "(", "Sigma-Aldrich", ",", "St.", "Louis", ",", "MO", ",", "USA", ")", "which", "was", "added", "2", "h", "after", "transfection", "." ]
+  }, {
+    "sentence_tokens" : [ "Then", ",", "following", "an", "incubation", "of", "24", "h", "at", "25", "degrees", "C", "in", "the", "dark", ",", "the", "K3", "medium", "was", "recovered", "with", "a", "Pasteur", "pipette", "and", "filtered", "with", "a", "syringe", "containing", "a", "cotton", "filter", "to", "eliminate", "remaining", "protoplasts", "." ]
+  }, {
+    "sentence_tokens" : [ "After", "deproteinisation", ",", "the", "samples", "were", "eluted", "by", "a", "mobile", "phase", "containing", "10", "mM", "NaH", "PO", "(", "pH", "=", "3.0", ";", "99", "%", ")", "and", "methanol", "(", "1", "%", ")", "(", "Sigma-Aldrich", ",", "St.", "Louis", ",", "MO", ",", "USA", ")", ",", "with", "a", "flow", "rate", "of", "1.3", "mL/min", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "UV", "detector", "at", "360", "nm", "and", "220", "nm", "performed", "detection", "of", "kynurenine", "and", "tryptophan", ",", "respectively", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "software", "TURBOCHROM", "4", "was", "used", "for", "evaluating", "the", "concentrations", "of", "kynurenine", "and", "tryptophan", "in", "the", "samples", "by", "mean", "of", "a", "calibration", "curve", "." ]
+  }, {
+    "sentence_tokens" : [ "4.9", "." ]
+  }, {
+    "sentence_tokens" : [ "Statistics", "." ]
+  }, {
+    "sentence_tokens" : [ "Data", "are", "representative", "of", "at", "least", "three", "independent", "experiments", "." ]
+  }, {
+    "sentence_tokens" : [ "All", "results", "are", "shown", "as", "mean", "+/-", "SD", "." ]
+  }, {
+    "sentence_tokens" : [ "One-way", "ANOVA", "followed", "by", "post", "hoc", "Bonferroni", "'", "s", "test", "was", "used", "when", "three", "or", "more", "samples", "were", "under", "comparison", "." ]
+  }, {
+    "sentence_tokens" : [ "All", "analyses", "were", "performed", "using", "Graph", "Pad", "Prism", "software", "8.0", "." ]
+  } ]
+}

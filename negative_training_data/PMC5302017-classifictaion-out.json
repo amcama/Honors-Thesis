@@ -1,141 +1,859 @@
-[ {
-  "sentence_tokens" : [ "Sulphuric", "acid", "is", "produced", "in", "situ", "by", "reaction", "of", "OH", ",", "SO", ",", "and", "H", "O", "vapor", "." ],
-  "event_indices" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 9, 10 ],
-  "controlled_indices" : [ 0, 1, 2 ],
-  "trigger_indices" : [ 3, 4 ],
-  "rule_name" : "Positive_activation_syntax_2_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Sulphuric", "acid", "is", "produced", "in", "situ", "by", "reaction", "of", "OH", ",", "SO", ",", "and", "H", "O", "vapor", "." ],
-  "event_indices" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 11, 12 ],
-  "controlled_indices" : [ 0, 1, 2 ],
-  "trigger_indices" : [ 3, 4 ],
-  "rule_name" : "Positive_activation_syntax_2_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "SAWNUC", "(", "Sulphuric", "Acid", "Water", "Nucleation", ")", "is", "a", "model", "of", "binary", "nucleation", "that", "is", "based", "on", "laboratory", "measurements", "of", "the", "binding", "energies", "of", "sulphuric", "acid", "and", "water", "in", "charged", "and", "neutral", "clusters", "." ],
-  "entity_one_indices" : [ 24, 25, 26 ],
-  "entity_two_indices" : [ 2, 3, 4 ]
-}, {
-  "sentence_tokens" : [ "Three", "spin", "-", "off", "models", "of", "SAWNUC", "exist", "that", "specifically", "aim", "to", "be", "used", "in", "climate", "modeling", "." ],
-  "entity_one_indices" : [ 6, 7 ],
-  "entity_two_indices" : [ 1, 2 ]
-}, {
-  "sentence_tokens" : [ "The", "second", "is", "the", "parameterized", "nucleation", "(", "PARNUC", ")", "model", "that", "uses", "parametrized", "condensation", "and", "evaporation", "rates", "and", "solves", "nucleation", "in", "steady", "state", "with", "a", "specialized", "solver", "[", "Kazil", "and", "Lovejoy", ",", "2007", "]", ",", "and", "based", "on", "that", "the", "third", "model", "uses", "a", "PARNUC", "look", "-", "up", "table", "[", "Kazil", "et", "al", ".,", "2010", "]", "." ],
-  "entity_one_indices" : [ 44, 45, 46 ],
-  "entity_two_indices" : [ 13, 14 ]
-}, {
-  "sentence_tokens" : [ "The", "experiment", "consists", "of", "an", "aerosol", "chamber", "that", "can", "be", "illuminated", "by", "a", "particle", "beam", "from", "the", "CERN", "Proton", "Synchrotron", "(", "PS", ")", "." ],
-  "entity_one_indices" : [ 21, 22 ],
-  "entity_two_indices" : [ 18, 19 ]
-}, {
-  "sentence_tokens" : [ "The", "charged", "cluster", "distribution", "is", "measured", "by", "an", "Atmospheric", "Pressure", "Interface", "Time", "of", "Flight", "(", "APi", "-", "TOF", ")", "mass", "spectrometer", "[", "Junninen", "et", "al", ".,", "2010", "]", "." ],
-  "entity_one_indices" : [ 19, 20 ],
-  "entity_two_indices" : [ 17, 18 ]
-}, {
-  "sentence_tokens" : [ "SAWNUC", "uses", "a", "mixture", "of", "experimentally", "determined", "Gibbs", "energies", "and", "interpolations", "to", "classical", "bulk", "phase", "thermodynamics", "to", "determine", "the", "sulphuric", "acid", "uptake", "and", "evaporation", "rates", "for", "each", "negatively", "charged", "and", "neutral", "cluster", "." ],
-  "entity_one_indices" : [ 19, 20, 21 ],
-  "entity_two_indices" : [ 0, 1 ]
-}, {
-  "sentence_tokens" : [ "The", "OH", "is", "generated", "in", "the", "chamber", "by", "photolysis", "of", "O", "and", "the", "subsequent", "reaction", "of", "O", "(", "D", ")", "with", "H", "O.", "O", "and", "SO", "mixing", "ratios", "vary", "between", "experiments", "in", "a", "range", "from", "a", "few", "ppbv", "to", "up", "to", "3000", "or", "80", "ppbv", "for", "O", "and", "SO", ",", "respectively", "." ],
-  "entity_one_indices" : [ 8, 9 ],
-  "entity_two_indices" : [ 1, 2 ]
-}, {
-  "sentence_tokens" : [ "The", "UV", "light", "for", "the", "photolysis", "is", "transmitted", "via", "a", "fiber", "optic", "system", "into", "the", "chamber", "to", "prevent", "additional", "heat", ";", "a", "detailed", "description", "can", "be", "found", "in", "Kupc", "et", "al.", "[", "2011", "]", "." ],
-  "entity_one_indices" : [ 19, 20 ],
-  "entity_two_indices" : [ 5, 6 ]
-}, {
-  "sentence_tokens" : [ "The", "data", "used", "for", "our", "comparison", "were", "obtained", "during", "the", "CLOUD", "3", "(", "2010", ",", "originally", "published", "in", "Kirkby", "et", "al.", "[", "2011", "]", ")", "and", "CLOUD", "5", "(", "2011", ")", "campaigns", "." ],
-  "entity_one_indices" : [ 26, 27, 28 ],
-  "entity_two_indices" : [ 10, 11, 12 ]
-}, {
-  "sentence_tokens" : [ "The", "main", "focus", "of", "CLOUD", "5", "was", "nucleation", "at", "low", "temperatures", "(", "208", "-", "248", "K", ")", "characteristic", "of", "the", "upper", "troposphere.2.2", "Particle", "Dynamics", "and", "Counters", "." ],
-  "entity_one_indices" : [ 21, 22, 23, 24 ],
-  "entity_two_indices" : [ 4, 5, 6 ]
-}, {
-  "sentence_tokens" : [ "For", "conversion", "from", "the", "mass", "diameter", ",", "d", ",", "that", "is", "used", "in", "SAWNUC", "to", "mobility", "equivalent", "diameter", "the", "relationship", "established", "by", "Ku", "and", "Fernandez", "de", "la", "Mora", "[", "2009", "]", ",", "dpm", "=d", "+0.3", "nm", ",", "was", "applied.Relative", "humidity", "and", "temperature", "were", "kept", "constant", "during", "the", "individual", "nucleation", "events", "." ],
-  "entity_one_indices" : [ 22, 23 ],
-  "entity_two_indices" : [ 4, 5 ]
-}, {
-  "sentence_tokens" : [ "The", "other", "two", "are", "(", "mixing", "type", ")", "particle", "size", "magnifiers", "(", "PSM", ",", "model", "Airmodus", "A09", ")", "[", "Vanhanen", "et", "al", ".,", "2011", "]", "." ],
-  "entity_one_indices" : [ 12, 13 ],
-  "entity_two_indices" : [ 6, 7 ]
-}, {
-  "sentence_tokens" : [ "The", "fifth", "particle", "counter", "is", "a", "butanol", "-", "based", "TSI", "3776", "." ],
-  "entity_one_indices" : [ 6, 7 ],
-  "entity_two_indices" : [ 3, 4 ]
-}, {
-  "sentence_tokens" : [ "The", "method", "for", "peak", "formation", "rates", "works", "best", "for", "single", "nucleation", "experiments", "as", "it", "was", "the", "standard", "procedure", "during", "CLOUD", "5", "rather", "than", "consecutive", "experiments", ",", "i.e", ".,", "an", "experiment", "where", "nucleation", "conditions", "are", "changed", "from", "neutral", "to", "Galacatic", "Cosmic", "Rays", "(", "GCR", ")", "and", "then", "to", "pion", "beam", "without", "a", "cleaning", "cycle", "in", "between", "[", "cf.", "Kirkby", "et", "al", ".,", "2011", ",", "Figure", "S1", "]", ".3", "Results", "." ],
-  "entity_one_indices" : [ 42, 43 ],
-  "entity_two_indices" : [ 19, 20, 21 ]
-}, {
-  "sentence_tokens" : [ "The", "model", "results", "are", "all", "derived", "for", "a", "relative", "humidity", "of", "38", "%", "and", "the", "ion", "pair", "production", "rate", "is", "assumed", "to", "be", "75", "ion", "pairs", "cm", "s", "at", "278", "K", "in", "the", "case", "of", "pion", "beam", "nucleation", "(", "solid", "lines", "in", "Figures", "1", ",", "2", ",", "3", ")", "and", "4", "ion", "pairs", "cm", "s", "at", "278", "K", "for", "GCR", "nucleation", "(", "dotted", "lines", ")", "." ],
-  "entity_one_indices" : [ 59, 60 ],
-  "entity_two_indices" : [ 35, 36 ]
-}, {
-  "sentence_tokens" : [ "It", "is", "important", "that", "GCR", "in", "this", "context", "does", "not", "mean", "ionization", "only", "by", "galactic", "cosmic", "rays", "but", "also", "ionization", "by", "residual", "radiation", "from", "the", "CERN", "PS", "that", "penetrates", "the", "chamber", "and", "thus", "increases", "the", "ion", "pair", "production", "rate", "." ],
-  "entity_one_indices" : [ 26, 27 ],
-  "entity_two_indices" : [ 4, 5 ]
-}, {
-  "sentence_tokens" : [ "At", "temperatures", "below", "248", "K", "no", "ammonia", "was", "detected", "in", "the", "nucleating", "clusters", ",", "indicating", "that", "the", "ammonia", "had", "condensed", "to", "the", "walls", "[", "K", "u", "rten", "et", "al", ".,", "2016", "]", "." ],
-  "entity_one_indices" : [ 17, 18 ],
-  "entity_two_indices" : [ 6, 7 ]
-}, {
-  "sentence_tokens" : [ "It", "can", "be", "seen", "that", "overall", "there", "is", "good", "agreement", "between", "particle", "formation", "rates", "from", "SAWNUC", "and", "particle", "formation", "rates", "from", "CLOUD", "for", "temperatures", "between", "208", "to", "278", "K", "in", "the", "presence", "of", "ions", "(", "i.e", ".,", "GCR", "and", "with", "the", "pion", "beam", ")", "." ],
-  "entity_one_indices" : [ 41, 42 ],
-  "entity_two_indices" : [ 37, 38 ]
-}, {
-  "sentence_tokens" : [ "The", "modeled", "clusters", "include", "a", "certain", "water", "content", ",", "for", "each", "cluster", "this", "water", "does", "not", "appear", "in", "the", "measured", "clusters", "due", "to", "evaporation", "inside", "the", "APi", "-", "TOF", "(", "see", "below", ")", "." ],
-  "entity_one_indices" : [ 28, 29 ],
-  "entity_two_indices" : [ 26, 27 ]
-}, {
-  "sentence_tokens" : [ "This", "can", "be", "explained", "by", "fragmentation", "of", "the", "clusters", "inside", "the", "APi", "-", "TOF", "(", "as", "discussed", "below", ")", "or", "errors", "in", "the", "experimental", "Gibbs", "energies", "used", "in", "SAWNUC", "." ],
-  "entity_one_indices" : [ 13, 14 ],
-  "entity_two_indices" : [ 11, 12 ]
-}, {
-  "sentence_tokens" : [ "Variations", "in", "the", "Gibbs", "energy", "within", "the", "applied", "+/-", "0.5", "kcal", "mol", "could", "partially", "explain", "the", "shift", "in", "the", "maximum", "of", "the", "cluster", "distribution", ",", "but", "not", "the", "difference", "of", "almost", "an", "order", "of", "magnitude", "between", "the", "simulated", "and", "modeled", "(", "H2SO4", ")", "3", "." ],
-  "entity_one_indices" : [ 41, 42 ],
-  "entity_two_indices" : [ 11, 12 ]
-}, {
-  "sentence_tokens" : [ "These", "figures", "show", "the", "data", "for", "the", "whole", "CLOUD", "3", "campaign", ",", "at", "temperatures", "from", "292", "K", "to", "248", "K.", "From", "Figures", "10", "and", "11", "it", "is", "evident", "that", "SAWNUC", "predicts", "lower", "concentrations", "of", "the", "smallest", "clusters", "and", "higher", "concentrations", "of", "clusters", "containing", "between", "four", "and", "eight", "sulphuric", "acid", "molecules", "(", "with", "the", "HSO4", "-", "core", "ion", "included", "in", "that", "number", ")", "." ],
-  "entity_one_indices" : [ 47, 48, 49 ],
-  "entity_two_indices" : [ 29, 30 ]
-}, {
-  "sentence_tokens" : [ "When", "entering", "the", "low", "pressure", "region", "of", "the", "first", "stage", "of", "the", "APi", "-", "TOF", ",", "the", "pressure", "drops", "to", "0.002", "bar", "." ],
-  "entity_one_indices" : [ 14, 15 ],
-  "entity_two_indices" : [ 12, 13 ]
-}, {
-  "sentence_tokens" : [ "HSO4", "-", "without", "having", "the", "relatively", "stable", "(", "H2SO4", ")", "2", "." ],
-  "entity_one_indices" : [ 8, 9 ],
-  "entity_two_indices" : [ 0, 1 ]
-}, {
-  "sentence_tokens" : [ "However", ",", "such", "an", "evaporation", "cannot", "explain", "the", "high", "concentrations", "of", "HSO", "4", "-", "and", "(", "H2SO4", ")", "." ],
-  "entity_one_indices" : [ 16, 17 ],
-  "entity_two_indices" : [ 11, 12 ]
-}, {
-  "sentence_tokens" : [ "HSO4", "-", "signals", ",", "leading", "to", "an", "overestimation", "of", "the", "HSO", "4", "-", "signal", "relative", "to", "the", "signals", "from", "the", "larger", "clusters", ",", "then", "the", "observed", "cluster", "distribution", "could", "result", "." ],
-  "entity_one_indices" : [ 10, 11 ],
-  "entity_two_indices" : [ 0, 1 ]
-}, {
-  "sentence_tokens" : [ "Further", "technical", "studies", "should", "be", "made", "on", "transmission", "functions", "of", "the", "APi", "-", "TOF", "mass", "spectrometer", "[", "Junninen", "et", "al", ".,", "2010", ";", "Heinritzi", "et", "al", ".,", "2015", "]", ".4", "Summary", "and", "Conclusions", "." ],
-  "entity_one_indices" : [ 13, 14, 15 ],
-  "entity_two_indices" : [ 11, 12 ]
-}, {
-  "sentence_tokens" : [ "At", "248", "and", "278", "K", "the", "modeled", "neutral", "nucleation", "rates", "are", "substantially", "smaller", "than", "the", "measured", "ones", ",", "but", "the", "ion", "-", "induced", "nucleation", "rates", "are", "described", "well", "by", "SAWNUC", ",", "especially", "for", "high", "ion", "pair", "production", "rates", "(", "pion", "beam", ")", "." ],
-  "entity_one_indices" : [ 39, 40 ],
-  "entity_two_indices" : [ 29, 30 ]
-}, {
-  "sentence_tokens" : [ "The", "GCR", "nucleation", "rates", "at", "278", "K", "still", "agree", "reasonably", "well", "but", "the", "CLOUD", "rates", "are", "typically", "a", "factor", "5", "higher", "than", "SAWNUC", "predictions", "most", "likely", "due", "to", "contaminant", "ammonia", "concentrations", "of", "a", "few", "pptv", "." ],
-  "entity_one_indices" : [ 29, 30 ],
-  "entity_two_indices" : [ 1, 2 ]
-}, {
-  "sentence_tokens" : [ "As", "an", "important", "difference", "at", "temperatures", "of", "278", "and", "292", "K", ",", "the", "monomer", "concentration", "was", "generally", "found", "to", "be", "unexpectedly", "high", "in", "the", "APi", "-", "TOF", "." ],
-  "entity_one_indices" : [ 26, 27 ],
-  "entity_two_indices" : [ 24, 25 ]
-} ]
+{
+  "regulations" : [ {
+    "sentence_tokens" : [ "Sulphuric", "acid", "is", "produced", "in", "situ", "by", "reaction", "of", "OH", ",", "SO", ",", "and", "H", "O", "vapor", "." ],
+    "event_indices" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 9, 10 ],
+    "controlled_indices" : [ 0, 1, 2 ],
+    "trigger_indices" : [ 3, 4 ],
+    "rule_name" : "Positive_activation_syntax_2_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "Sulphuric", "acid", "is", "produced", "in", "situ", "by", "reaction", "of", "OH", ",", "SO", ",", "and", "H", "O", "vapor", "." ],
+    "event_indices" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 11, 12 ],
+    "controlled_indices" : [ 0, 1, 2 ],
+    "trigger_indices" : [ 3, 4 ],
+    "rule_name" : "Positive_activation_syntax_2_verb",
+    "rule" : null
+  } ],
+  "hardInstances" : [ {
+    "sentence_tokens" : [ "Sulphuric", "acid", "is", "produced", "in", "situ", "by", "reaction", "of", "OH", ",", "SO", ",", "and", "H", "O", "vapor", "." ],
+    "entities_indices" : [ [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "Sulphuric", "acid", "is", "produced", "in", "situ", "by", "reaction", "of", "OH", ",", "SO", ",", "and", "H", "O", "vapor", "." ],
+    "entities_indices" : [ [ 9, 10 ] ]
+  } ],
+  "withoutRegulations" : [ {
+    "sentence_tokens" : [ "Although", "the", "present", "CLOUD", "data", "already", "cover", "a", "large", "range", "of", "temperatures", "and", "H", "SO", "concentrations", ",", "additional", "measurements", "that", "are", "free", "of", "NH", "are", "needed", "to", "allow", "a", "detailed", "direct", "comparison", "of", "SAWNUC", "and", "CLOUD", "at", "warm", "temperatures", "(", "~", "292", "K", ")", "." ],
+    "entities_indices" : [ [ 23, 24 ], [ 33, 34 ], [ 35, 36 ], [ 40, 41, 42, 43 ] ]
+  }, {
+    "sentence_tokens" : [ "Although", "a", "first", "calibration", "at", "low", "temperatures", "has", "been", "performed", "to", "study", "the", "effect", "of", "sample", "temperature", "for", "some", "particle", "counters", "[", "Wimmer", "et", "al", ".,", "2015", "]", ",", "sufficient", "experimental", "data", "to", "account", "for", "this", "are", "currently", "not", "available.Sampling", "line", "corrections", ",", "ldpm", ",", "T", ",", "were", "applied", "to", "account", "for", "particle", "losses", "in", "the", "sampling", "tube", "[", "Baron", "and", "Willeke", ",", "2001", "]", "." ],
+    "entities_indices" : [ [ 59, 60 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "APi", "-", "TOF", "provides", "an", "important", "insight", "into", "the", "distribution", "of", "charged", "clusters", "in", "the", "CLOUD", "chamber", "." ],
+    "entities_indices" : [ [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "First", ",", "the", "derived", "nucleation", "rates", "agree", "well", "for", "the", "temperature", "range", "of", "208", "-", "223", "K", ",", "for", "ion", "-", "induced", "and", "neutral", "nucleation", "." ],
+    "entities_indices" : [ [ 10, 11, 12, 13, 14, 15, 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "experimental", "measurements", "span", "a", "temperature", "range", "of", "208-292", "K", ",", "sulphuric", "acid", "concentrations", "from", "1.10", "6", "to", "1.10", "9", "cm", "-3", ",", "and", "distinguish", "between", "ion", "induced", "and", "neutral", "nucleation", "." ],
+    "entities_indices" : [ [ 11, 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "Evaporation", "of", "clusters", "can", "also", "occur", "inside", "the", "sampling", "line", "during", "the", "transition", "from", "the", "chamber", "to", "the", "mass", "spectrometer", "." ],
+    "entities_indices" : [ [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "actual", "sulphuric", "acid", "uptake", "and", "evaporation", "rate", "constants", "for", "a", "specific", "cluster", "with", "i", "H", "SO", "is", "calculated", "as", "the", "weighted", "average", "over", "all", "water", "contents", "." ],
+    "entities_indices" : [ [ 2, 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "simulated", "results", "at", "278", "K", "in", "Figure", "2", "show", "that", "at", "H2SO4", "=", "1", "." ],
+    "entities_indices" : [ [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "It", "can", "be", "seen", "that", "overall", "there", "is", "good", "agreement", "between", "particle", "formation", "rates", "from", "SAWNUC", "and", "particle", "formation", "rates", "from", "CLOUD", "for", "temperatures", "between", "208", "to", "278", "K", "in", "the", "presence", "of", "ions", "(", "i.e", ".,", "GCR", "and", "with", "the", "pion", "beam", ")", "." ],
+    "entities_indices" : [ [ 37, 38 ], [ 41, 42 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "modeled", "clusters", "include", "a", "certain", "water", "content", ",", "for", "each", "cluster", "this", "water", "does", "not", "appear", "in", "the", "measured", "clusters", "due", "to", "evaporation", "inside", "the", "APi", "-", "TOF", "(", "see", "below", ")", "." ],
+    "entities_indices" : [ [ 26, 27 ], [ 28, 29 ] ]
+  }, {
+    "sentence_tokens" : [ "When", "entering", "the", "low", "pressure", "region", "of", "the", "first", "stage", "of", "the", "APi", "-", "TOF", ",", "the", "pressure", "drops", "to", "0.002", "bar", "." ],
+    "entities_indices" : [ [ 12, 13 ], [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "SAWNUC", "uses", "a", "mixture", "of", "experimentally", "determined", "Gibbs", "energies", "and", "interpolations", "to", "classical", "bulk", "phase", "thermodynamics", "to", "determine", "the", "sulphuric", "acid", "uptake", "and", "evaporation", "rates", "for", "each", "negatively", "charged", "and", "neutral", "cluster", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 19, 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "Ball", "et", "al.", "[", "1999", "]", "showed", "that", "small", "amounts", "of", "ternary", "vapor", ",", "in", "this", "case", "ammonia", ",", "can", "strongly", "enhance", "the", "observed", "nucleation", "rates", "." ],
+    "entities_indices" : [ [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "possible", "explanation", "is", "evaporation", "and", "fragmentation", "in", "the", "mass", "spectrometer", "." ],
+    "entities_indices" : [ [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "approach", "is", "similar", "to", "the", "variation", "done", "by", "Lovejoy", "et", "al.", "[", "2004", "]", ";", "however", ",", "Lovejoy", "et", "al.", "[", "2004", "]", "used", "random", "normally", "distributed", "errors", "of", "the", "Gibbs", "energies", ",", "while", "we", "used", "an", "absolute", "shift", "for", "each", "step", "." ],
+    "entities_indices" : [ [ 42, 43 ] ]
+  }, {
+    "sentence_tokens" : [ "Furthermore", ",", "larger", "clusters", "contain", "more", "water", "molecules", "when", "entering", "the", "mass", "spectrometer", "." ],
+    "entities_indices" : [ [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "As", "an", "important", "difference", "at", "temperatures", "of", "278", "and", "292", "K", ",", "the", "monomer", "concentration", "was", "generally", "found", "to", "be", "unexpectedly", "high", "in", "the", "APi", "-", "TOF", "." ],
+    "entities_indices" : [ [ 24, 25 ], [ 26, 27 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "data", "used", "for", "our", "comparison", "were", "obtained", "during", "the", "CLOUD", "3", "(", "2010", ",", "originally", "published", "in", "Kirkby", "et", "al.", "[", "2011", "]", ")", "and", "CLOUD", "5", "(", "2011", ")", "campaigns", "." ],
+    "entities_indices" : [ [ 10, 11, 12 ], [ 26, 27, 28 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "use", "the", "Sulphuric", "Acid", "Water", "Nucleation", "(", "SAWNUC", ")", "model", "of", "Lovejoy", "et", "al.", "[", "2004", "]", "which", "was", "not", "only", "originally", "developed", "for", "ion", "-", "induced", "nucleation", "but", "also", "includes", "neutral", "nucleation", "." ],
+    "entities_indices" : [ [ 3, 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "Here", "SAWNUC", "predicts", "peak", "particle", "formation", "rates", "which", "are", "considerably", "lower", "than", "the", "measured", "ones", "." ],
+    "entities_indices" : [ [ 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "Variations", "in", "the", "Gibbs", "energy", "within", "the", "applied", "+/-", "0.5", "kcal", "mol", "could", "partially", "explain", "the", "shift", "in", "the", "maximum", "of", "the", "cluster", "distribution", ",", "but", "not", "the", "difference", "of", "almost", "an", "order", "of", "magnitude", "between", "the", "simulated", "and", "modeled", "(", "H2SO4", ")", "3", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 41, 42 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "does", "not", "exclude", "the", "possibility", "that", "ammonia", "containing", "clusters", "fragment", "in", "the", "APi", "-", "TOF", "and", "leave", "HSO4", "-", "as", "the", "detected", "fragment", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 13, 14 ], [ 15, 16 ], [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "During", "the", "CLOUD", "5", "campaign", "a", "battery", "of", "five", "particle", "counters", "with", "cutoff", "sizes", ",", "i.e", ".,", "50", "%", "probability", "of", "counting", "a", "particle", "with", "that", "size", ",", "ranging", "from", "1.2", "to", "3", "nm", "(", "mobility", "equivalent", "diameter", ")", "was", "operated", "." ],
+    "entities_indices" : [ [ 2, 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "the", "binary", "experiments", "during", "CLOUD", "3", ",", "a", "data", "set", "of", "particle", "formation", "rates", "at", "1.7", "nm", "(", "mobility", "equivalent", "diameter", ")", "exists", "[", "Kirkby", "et", "al", ".,", "2011", "]", "." ],
+    "entities_indices" : [ [ 5, 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "the", "dependence", "of", "the", "particle", "formation", "rate", "to", "the", "Gibbs", "energies", "decreases", "with", "decreasing", "temperature", ",", "due", "to", "the", "exponential", "dependency", "of", "the", "evaporation", "rate", "(", "7", ")", "kid", "=", "ki", "-", "1a", "rho", "0exp", "beta", "Delta", "RGi0", "." ],
+    "entities_indices" : [ [ 38, 39 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "steady", "state", "solution", "uses", "a", "direct", "iteration", "scheme", "that", "solves", "the", "set", "of", "differential", "equations", ",", "described", "in", "Lovejoy", "et", "al.", "[", "2004", "]", "and", "Kazil", "and", "Lovejoy", "[", "2007", "]", ",", "for", "d", "n", "=0", "and", "a", "maximum", "mobility", "equivalent", "diameter", "of", "1.7", "nm", "." ],
+    "entities_indices" : [ [ 34, 35, 36, 37 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "is", "confirmed", "by", "the", "APi", "-", "TOF", "measurements", "that", "show", "the", "presence", "of", "ammonia", "in", "the", "nucleating", "clusters", "see", "K", "u", "rten", "et", "al.", "[", "2016", "]", ",", "Duplissy", "et", "al.", "[", "2016", "]", ",", "and", "Schobesberger", "et", "al.", "[", "2015", "]", "for", "a", "comprehensive", "discussion", "of", "the", "NH", "background", "in", "the", "CLOUD", "chamber", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 7, 8 ], [ 14, 15 ], [ 49, 50 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "contaminant", "ammonia", "most", "likely", "explains", "the", "difference", "in", "nucleation", "rates", "for", "the", "experimental", "(", "ternary", ")", "data", "and", "the", "binary", "model", "results", "at", "the", "warmer", "temperatures", "." ],
+    "entities_indices" : [ [ 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "such", "an", "evaporation", "cannot", "explain", "the", "high", "concentrations", "of", "HSO", "4", "-", "and", "(", "H2SO4", ")", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "Good", "agreement", ",", "within", "a", "factor", "of", "5", ",", "is", "found", "between", "the", "experimental", "and", "modeled", "formation", "rates", "for", "ion", "induced", "nucleation", "at", "278", "K", "and", "below", "and", "for", "neutral", "nucleation", "at", "208", "and", "223", "K.", "Differences", "at", "warm", "temperatures", "are", "attributed", "to", "ammonia", "contamination", "which", "was", "indicated", "by", "the", "presence", "of", "ammonia-sulphuric", "acid", "clusters", ",", "detected", "by", "an", "Atmospheric", "Pressure", "Interface", "Time", "of", "Flight", "(", "APi-TOF", ")", "mass", "spectrometer", "." ],
+    "entities_indices" : [ [ 43, 44 ], [ 66, 67 ], [ 68, 69 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "same", "is", "probably", "true", "for", "very", "stable", "clusters", "containing", "dimethyl", "amine", ",", "such", "as", "the", "clusters", "described", "in", "K", "u", "rten", "et", "al.", "[", "2014", "]", "." ],
+    "entities_indices" : [ [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "At", "248", "and", "278", "K", "the", "modeled", "neutral", "nucleation", "rates", "are", "substantially", "smaller", "than", "the", "measured", "ones", ",", "but", "the", "ion", "-", "induced", "nucleation", "rates", "are", "described", "well", "by", "SAWNUC", ",", "especially", "for", "high", "ion", "pair", "production", "rates", "(", "pion", "beam", ")", "." ],
+    "entities_indices" : [ [ 29, 30 ], [ 39, 40 ] ]
+  }, {
+    "sentence_tokens" : [ "Due", "to", "this", "difference", ",", "the", "average", "of", "the", "maximum", "d", "N", "over", "all", "counting", "efficiencies", "is", "used", "to", "compare", "simulation", "and", "experiment", "for", "the", "CLOUD", "5", "data", "set", "." ],
+    "entities_indices" : [ [ 25, 26, 27, 28 ] ]
+  }, {
+    "sentence_tokens" : [ "Fragmentation", "does", "not", "occur", "by", "stepwise", "evaporation", "of", "H", "SO", "thus", "enabling", "(", "H2SO4", ")", "i", "-", "1", "." ],
+    "entities_indices" : [ [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "Three", "spin", "-", "off", "models", "of", "SAWNUC", "exist", "that", "specifically", "aim", "to", "be", "used", "in", "climate", "modeling", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "is", "most", "likely", "explained", "by", "the", "fragmentation", "or", "evaporation", "of", "larger", "clusters", "in", "the", "APi", "-", "TOF", "or", "by", "inaccuracies", "of", "the", "mass", "-", "dependent", "transfer", "function.5", "Outlook", "." ],
+    "entities_indices" : [ [ 15, 16 ], [ 17, 18 ], [ 23, 24 ], [ 26, 27, 28, 29 ] ]
+  }, {
+    "sentence_tokens" : [ "Here", "SAWNUC", "predicts", "particle", "formation", "rates", "which", "are", "considerably", "lower", "than", "the", "measured", "ones.3.3", "Comparison", "of", "the", "Charged", "Cluster", "Distribution", "." ],
+    "entities_indices" : [ [ 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "Since", "the", "parametrization", "of", "the", "neutral", "channel", "to", "the", "results", "of", "Ball", "et", "al.", "[", "1999", "]", "was", "done", "without", "this", ",", "a", "reparametrization", "would", "be", "necessary", "but", "such", "a", "reparametrization", "is", "outside", "the", "scope", "of", "this", "paper.At", "292", "K", ",", "Figure", "3", ",", "the", "deviation", "between", "model", "and", "experiment", "is", "more", "pronounced", "than", "at", "278", "K." ],
+    "entities_indices" : [ [ 37, 38, 39, 40 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "fifth", "particle", "counter", "is", "a", "butanol", "-", "based", "TSI", "3776", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "An", "overview", "of", "the", "measured", "and", "modeled", "particle", "formation", "rate", "as", "function", "of", "H", "SO", "when", "no", "NH", "is", "added", "is", "shown", "in", "Figure", "1", "for", "temperatures", "below", "273", "K", ",", "in", "Figure", "2", "for", "278", "K", ",", "and", "in", "Figure", "3", "for", "292", "K.", "For", "the", "calculated", "results", "the", "shaded", "area", "shows", "the", "variability", "due", "to", "a", "variation", "in", "the", "Gibbs", "energies", ",", "which", "were", "varied", "by", "doing", "two", "additional", "calculations", ",", "in", "one", "case", "adding", "and", "in", "the", "second", "case", "subtracting", "0.5", "kcal", "mol", "to", "the", "cluster", "Gibbs", "energies", "of", "stepwise", "sulphuric", "acid", "addition", "." ],
+    "entities_indices" : [ [ 17, 18 ], [ 85, 86 ], [ 93, 94, 95 ] ]
+  }, {
+    "sentence_tokens" : [ "Here", "the", "measured", "nucleation", "is", "a", "ternary", "nucleation", "where", "SAWNUC", "can", "only", "provide", "lower", "limits", "of", "the", "nucleation", "rate.Considering", "the", "enormous", "range", "(", "many", "orders", "of", "magnitude", ")", "of", "binary", "nucleation", "rates", "that", "had", "been", "reported", "for", "comparable", "conditions", "in", "the", "literature", "[", "cf.", "Benson", "et", "al", ".,", "2008", ",", "and", "references", "therein", "]", ",", "the", "agreement", "between", "SAWNUC", "and", "CLOUD", "over", "a", "range", "of", "temperatures", "and", "H", "SO", "concentrations", "is", "very", "good", "(", "i.e", ".,", "for", "temperatures", "of", "208", "-", "223", "K", "for", "neutral", "nucleation", "and", "for", "208", "-", "278", "K", "for", "ion", "-", "induced", "nucleation", ")", "." ],
+    "entities_indices" : [ [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "UV", "light", "for", "the", "photolysis", "is", "transmitted", "via", "a", "fiber", "optic", "system", "into", "the", "chamber", "to", "prevent", "additional", "heat", ";", "a", "detailed", "description", "can", "be", "found", "in", "Kupc", "et", "al.", "[", "2011", "]", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "HSO4", "-", ",", "with", "i", ">=", "4", ",", "to", "fragment", "to", "HSO4", "-", "and", "(", "H2SO4", ")", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 5, 6, 7 ], [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "Additionally", ",", "the", "influence", "of", "ammonia", "for", "the", "charged", "cluster", "distribution", "is", "already", "much", "smaller", "at", "278", "K", ",", "and", "also", ",", "there", "is", "a", "HSO4", "-", "signal", "present", "in", "the", "APi", "-", "TOF", "that", "is", "clearly", "elevated", "compared", "to", "the", "abundance", "expected", "from", "SAWNUC.Besides", "fragmentation", ",", "another", "reason", "for", "the", "observed", "discrepancies", "in", "the", "cluster", "distribution", "could", "be", "an", "underestimation", "of", "the", "uncertainties", "in", "the", "mass", "-", "dependent", "transmission", "efficiencies", "of", "the", "APi", "-", "TOF", "mass", "spectrometer", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 31, 32 ], [ 33, 34 ], [ 66, 67 ], [ 73, 74 ], [ 75, 76, 77 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "order", "to", "minimize", "numerical", "errors", ",", "a", "linear", "increase", "in", "sulphuric", "acid", "content", "was", "applied", ",", "in", "steps", "of", "one", "molecule", "of", "H", "SO", ",", "for", "particles", "up", "to", "a", "mobility", "equivalent", "diameter", "of", "3.3", "nm", "." ],
+    "entities_indices" : [ [ 11, 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "high", "temperatures", "(", "292", "K", ",", "Figure", "7", ")", "the", "position", "of", "the", "measured", "and", "simulated", "maxima", "both", "appear", "at", "the", "cluster", "containing", "three", "sulphuric", "acid", "molecules", "." ],
+    "entities_indices" : [ [ 25, 26, 27 ] ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "a", "large", "number", "of", "experimental", "studies", "of", "binary", "homogenous", "nucleation", "of", "sulphuric", "acid", "and", "water", "have", "been", "made", ",", "mostly", "limited", "to", "room", "temperature", "[", "see", ",", "for", "example", ",", "Raes", "and", "Janssens", ",", "1986", ";", "Wyslouzil", "et", "al", ".,", "1991", ";", "Ball", "et", "al", ".,", "1999", ";", "Young", "et", "al", ".,", "2008", ";", "Zollner", "et", "al", ".,", "2012", "]", "." ],
+    "entities_indices" : [ [ 13, 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "model", "results", "are", "all", "derived", "for", "a", "relative", "humidity", "of", "38", "%", "and", "the", "ion", "pair", "production", "rate", "is", "assumed", "to", "be", "75", "ion", "pairs", "cm", "s", "at", "278", "K", "in", "the", "case", "of", "pion", "beam", "nucleation", "(", "solid", "lines", "in", "Figures", "1", ",", "2", ",", "3", ")", "and", "4", "ion", "pairs", "cm", "s", "at", "278", "K", "for", "GCR", "nucleation", "(", "dotted", "lines", ")", "." ],
+    "entities_indices" : [ [ 35, 36 ], [ 59, 60 ] ]
+  }, {
+    "sentence_tokens" : [ "At", "248", "K", "still", "some", "NH", "was", "detected", "during", "the", "experiments", ";", "however", ",", "the", "background", "was", "much", "lower", "(", "0.3", "pptv", ")", "and", "less", "ammonia", "was", "present", "in", "the", "APi", "-", "TOF", "data", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 25, 26 ], [ 30, 31 ], [ 32, 33 ] ]
+  }, {
+    "sentence_tokens" : [ "As", "the", "absolute", "uncertainties", "are", "not", "known", "we", "also", "use", "a", "shift", "of", "0.5", "kcal", "mol", "." ],
+    "entities_indices" : [ [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "is", "especially", "a", "problem", "in", "case", "of", "low", "nucleation", "and", "growth", "rate", "conditions", "and", "particularly", "with", "NH", "contamination", "(", "i.e", ".,", "the", "experiment", "resulted", "in", "a", "quick", "nucleation", ",", "while", "a", "binary", "system", "would", "have", "not", "responded", "within", "that", "time", ")", "." ],
+    "entities_indices" : [ [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "Here", "Delta", "RGi0", "is", "the", "standard", "reaction", "Gibbs", "energy", "for", "the", "formation", "of", "cluster", "i", "from", "cluster", "i", "-", "1", ",", "ki", "-", "1a", "is", "the", "association", "rate", "constant", "for", "the", "cluster", "containing", "one", "H", "SO", "less", ",", "rho", "is", "the", "standard", "density", ",", "and", "beta", "=", "1kbT", "is", "the", "reciprocal", "temperature", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 16, 17, 18, 19, 20, 21, 22, 23 ], [ 38, 39 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "charged", "cluster", "distribution", "is", "measured", "by", "an", "Atmospheric", "Pressure", "Interface", "Time", "of", "Flight", "(", "APi", "-", "TOF", ")", "mass", "spectrometer", "[", "Junninen", "et", "al", ".,", "2010", "]", "." ],
+    "entities_indices" : [ [ 17, 18 ], [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "HSO4", "-", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "can", "be", "explained", "by", "fragmentation", "of", "the", "clusters", "inside", "the", "APi", "-", "TOF", "(", "as", "discussed", "below", ")", "or", "errors", "in", "the", "experimental", "Gibbs", "energies", "used", "in", "SAWNUC", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "10", "s", ")", "is", "taken", "into", "account", "due", "to", "the", "constant", "flow", "of", "gas", "through", "the", "chamber.2.1", "CLOUD", "Chamber", "." ],
+    "entities_indices" : [ [ 16, 17, 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "main", "compound", "responsible", "for", "new", "particle", "formation", "in", "the", "upper", "troposphere", "is", "considered", "to", "be", "sulphuric", "acid", "[", "Weber", "et", "al", ".,", "1999", "]", "." ],
+    "entities_indices" : [ [ 16, 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "SAWNUC", "determines", "the", "most", "probable", "water", "content", "of", "each", "cluster", "and", "defines", "the", "size", "of", "the", "cluster", "based", "on", "this", "water", "content", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "Also", "the", "high", "HSO4", "-", "concentrations", "indicate", "that", "the", "most", "likely", "cause", "of", "the", "discrepancy", "is", "fragmentation", "inside", "the", "APi", "-", "TOF.Figures", "10", ",", "11", ",", "12", "show", "calculated", "steady", "state", "cluster", "concentrations", "versus", "the", "cluster", "concentration", "measured", "with", "the", "APi", "-", "TOF", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 19, 20 ], [ 40, 41 ], [ 42, 43 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "comparison", "includes", "only", "concentrations", "from", "CLOUD", "3", "at", "temperatures", "from", "292", "K", "to", "248", "K", "as", "at", "lower", "temperatures", "for", "conditions", "in", "CLOUD", "5", "a", "reliable", "conversion", "from", "count", "rates", "to", "absolute", "concentrations", "is", "not", "available", "." ],
+    "entities_indices" : [ [ 6, 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "OH", "is", "generated", "in", "the", "chamber", "by", "photolysis", "of", "O", "and", "the", "subsequent", "reaction", "of", "O", "(", "D", ")", "with", "H", "O.", "O", "and", "SO", "mixing", "ratios", "vary", "between", "experiments", "in", "a", "range", "from", "a", "few", "ppbv", "to", "up", "to", "3000", "or", "80", "ppbv", "for", "O", "and", "SO", ",", "respectively", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "APi-TOF", "measurements", "of", "the", "sulphuric", "acid", "ion", "cluster", "distributions", "(", "(", "H2SO4", ")", "i.HSO4-", "with", "i", "=", "0", ",", "1", ",", "...,", "10", ")", "show", "qualitative", "agreement", "with", "the", "SAWNUC", "ion", "cluster", "distributions", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 4, 5, 6 ], [ 11, 12 ], [ 29, 30 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "ensures", "that", "all", "D", "step", "function", "counting", "efficiencies", "start", "to", "respond", "in", "the", "linear", "region", "of", "H", "SO", "addition", "." ],
+    "entities_indices" : [ [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "HSO4", "-", "compared", "to", "the", "SAWNUC", "model", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "Ionizing", "particles", "come", "from", "galactic", "cosmic", "rays", "and", "the", "CERN", "PS", "pion", "beam", "." ],
+    "entities_indices" : [ [ 10, 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "SAWNUC", "originally", "does", "not", "include", "any", "enhancements", "in", "the", "monomer", "uptake", "and", "coagulation", "rates", "of", "neutral", "species", "." ],
+    "entities_indices" : [ [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "If", "the", "transmission", "efficiencies", "varied", "strongly", "over", "the", "mass", "range", "between", "the", "HSO4", "-", "and", "(", "H2SO4", ")", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 12, 13 ], [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "Rate", "coefficients", "for", "wall", "losses", "from", "each", "particle", "size", "bin", "i", "are", "taken", "into", "account", "by", "applying", "[", "Crump", "et", "al", ".,", "1982", ";", "Park", "et", "al", ".,", "2001", ";", "Metzger", "et", "al", ".,", "2010", "]", ":", "(", "1", ")", "kiwall", "=", "CwallDi", "." ],
+    "entities_indices" : [ [ 24, 25, 26, 27, 28, 29 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "possible", "explanation", "is", "that", "the", "clusters", "entering", "the", "mass", "spectrometer", "do", "not", "heat", "up", "fast", "enough", ",", "from", "the", "relatively", "low", "temperature", "of", "their", "initial", "state", ",", "to", "allow", "for", "fragmentation", "." ],
+    "entities_indices" : [ [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "other", "two", "are", "(", "mixing", "type", ")", "particle", "size", "magnifiers", "(", "PSM", ",", "model", "Airmodus", "A09", ")", "[", "Vanhanen", "et", "al", ".,", "2011", "]", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "It", "is", "important", "that", "GCR", "in", "this", "context", "does", "not", "mean", "ionization", "only", "by", "galactic", "cosmic", "rays", "but", "also", "ionization", "by", "residual", "radiation", "from", "the", "CERN", "PS", "that", "penetrates", "the", "chamber", "and", "thus", "increases", "the", "ion", "pair", "production", "rate", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 26, 27 ] ]
+  }, {
+    "sentence_tokens" : [ "Here", "the", "nucleation", "mechanism", "transitions", "into", "a", "ternary", "nucleation.At", "the", "warmer", "temperatures", "of", "278", "K", "and", "more", "pronounced", "at", "292", "K", ",", "the", "experimental", "nucleation", "rates", "are", "found", "to", "be", "substantially", "higher", "than", "the", "predictions", "from", "SAWNUC", "." ],
+    "entities_indices" : [ [ 36, 37 ] ]
+  }, {
+    "sentence_tokens" : [ "It", "should", "be", "noted", "that", "for", "208", "K", "and", "223", "K", "the", "relative", "humidity", "in", "the", "CLOUD", "chamber", "differed", "from", "38", "%", ",", "but", "at", "these", "temperatures", "the", "influence", "of", "relative", "humidity", "is", "relatively", "low", "and", "does", "not", "affect", "the", "overview", "character", "of", "Figure", "1", "." ],
+    "entities_indices" : [ [ 16, 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "Note", "that", "the", "SAWNUC", "model", "is", "entirely", "independent", "of", "the", "CLOUD", "measurements", "and", "there", "are", "no", "free", "parameters", "in", "the", "model.Second", ",", "we", "conclude", "that", "SAWNUC", "can", "be", "used", "to", "model", "directly", "the", "particle", "concentration", "measurements", "of", "a", "CPC", "during", "nucleation", "." ],
+    "entities_indices" : [ [ 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "SAWNUC", "(", "Sulphuric", "Acid", "Water", "Nucleation", ")", "is", "a", "model", "of", "binary", "nucleation", "that", "is", "based", "on", "laboratory", "measurements", "of", "the", "binding", "energies", "of", "sulphuric", "acid", "and", "water", "in", "charged", "and", "neutral", "clusters", "." ],
+    "entities_indices" : [ [ 2, 3, 4 ], [ 24, 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "main", "focus", "of", "CLOUD", "5", "was", "nucleation", "at", "low", "temperatures", "(", "208", "-", "248", "K", ")", "characteristic", "of", "the", "upper", "troposphere.2.2", "Particle", "Dynamics", "and", "Counters", "." ],
+    "entities_indices" : [ [ 4, 5, 6 ], [ 21, 22, 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "second", "is", "the", "parameterized", "nucleation", "(", "PARNUC", ")", "model", "that", "uses", "parametrized", "condensation", "and", "evaporation", "rates", "and", "solves", "nucleation", "in", "steady", "state", "with", "a", "specialized", "solver", "[", "Kazil", "and", "Lovejoy", ",", "2007", "]", ",", "and", "based", "on", "that", "the", "third", "model", "uses", "a", "PARNUC", "look", "-", "up", "table", "[", "Kazil", "et", "al", ".,", "2010", "]", "." ],
+    "entities_indices" : [ [ 13, 14 ], [ 44, 45, 46 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "case", "the", "clusters", "containing", "several", "sulphuric", "acid", "and", "the", "bisulphate", "ion", "will", "take", "up", "ammonia", "and", "would", "therefore", "appear", "in", "a", "different", "channel", "in", "the", "APi", "-", "TOF", "." ],
+    "entities_indices" : [ [ 7, 8, 9 ], [ 16, 17 ], [ 27, 28 ], [ 29, 30 ] ]
+  }, {
+    "sentence_tokens" : [ "These", "data", "sets", "contain", "steady", "state", "particle", "formation", "rates", "that", "were", "corrected", "for", "losses", "[", "K", "u", "rten", "et", "al", ".,", "2015", ",", "2016", "]", "." ],
+    "entities_indices" : [ [ 15, 16, 17, 18, 19, 20, 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "HSO4", "-", "without", "having", "the", "relatively", "stable", "(", "H2SO4", ")", "2", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "decreasing", "influence", "can", "mainly", "be", "attributed", "to", "a", "significantly", "lower", "background", "concentration", "of", "NH", "at", "these", "temperatures", "." ],
+    "entities_indices" : [ [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "observed", "temporal", "evolution", "of", "the", "measured", "particle", "concentration", "is", "then", "given", "by", "(", "6", ")", "d", "tNCPC", "=", "sum", "ifdp", ",", "imltdp", ",", "im", ",", "T", "d", "tni", "." ],
+    "entities_indices" : [ [ 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "Furthermore", ",", "relatively", "stable", "clusters", "do", "probably", "not", "fragment", "in", "the", "APi", "-", "TOF", ",", "for", "example", ",", "the", "(", "H2SO4", ")", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 13, 14 ], [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "Lovejoy", "et", "al.", "[", "2004", "]", "used", "an", "uncertainty", "in", "the", "Gibbs", "energies", "of", "+/-", "0.5", "kcal", "mol", "." ],
+    "entities_indices" : [ [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "number", "of", "sulphuric", "acid", "molecules", "in", "each", "cluster", "is", "color", "coded", "." ],
+    "entities_indices" : [ [ 3, 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "temperatures", "of", "208", "and", "223", "K", "neutral", "nucleation", "agrees", "well", "with", "the", "model", ",", "while", "the", "deviations", "at", "248", ",", "273", ",", "and", "292", "K", "are", "most", "likely", "due", "to", "ammonia", "contamination.Arrows", "in", "Figure", "4", "indicate", "data", "points", "that", "are", "outside", "of", "the", "given", "axis", "range", "." ],
+    "entities_indices" : [ [ 31, 32 ] ]
+  }, {
+    "sentence_tokens" : [ "New", "particle", "formation", "is", "an", "important", "source", "of", "cloud", "condensation", "nuclei", "[", "Kerminen", "et", "al", ".,", "2005", ";", "Laaksonen", "et", "al", ".,", "2005", ";", "Kuang", "et", "al", ".,", "2009", "]", "." ],
+    "entities_indices" : [ [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "CLOUD", "chamber", "is", "a", "stainless", "steel", "continuously", "stirred", "tank", "reactor", ",", "with", "a", "volume", "of", "26", "m", "." ],
+    "entities_indices" : [ [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "conversion", "from", "the", "mass", "diameter", ",", "d", ",", "that", "is", "used", "in", "SAWNUC", "to", "mobility", "equivalent", "diameter", "the", "relationship", "established", "by", "Ku", "and", "Fernandez", "de", "la", "Mora", "[", "2009", "]", ",", "dpm", "=d", "+0.3", "nm", ",", "was", "applied.Relative", "humidity", "and", "temperature", "were", "kept", "constant", "during", "the", "individual", "nucleation", "events", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "depletion", "of", "H", "SO", "in", "the", "sampling", "line", ",", "due", "to", "losses", "to", "the", "walls", ",", "results", "in", "a", "lower", "sulphuric", "acid", "uptake", "of", "the", "clusters", "and", "shifts", "the", "expected", "equilibrium", "cluster", "distribution", "." ],
+    "entities_indices" : [ [ 21, 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "pion", "(", "pi", ")", "beam", "allows", "an", "adjustable", "ion", "pair", "production", "rate", "up", "to", "around", "75", "ion", "pairs", "cm", "s", "." ],
+    "entities_indices" : [ [ 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "experiment", "consists", "of", "an", "aerosol", "chamber", "that", "can", "be", "illuminated", "by", "a", "particle", "beam", "from", "the", "CERN", "Proton", "Synchrotron", "(", "PS", ")", "." ],
+    "entities_indices" : [ [ 18, 19 ], [ 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "approach", "used", "in", "the", "present", "study", "is", "based", "on", "detailed", "modeling", "of", "H", "SO", "condensation", "and", "evaporation", "starting", "with", "the", "monomers", "[", "Becker", "and", "D", "o", "ring", ",", "1935", "]", "." ],
+    "entities_indices" : [ [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "Figure", "S2", "in", "the", "supporting", "information", "shows", "the", "water", "and", "sulphuric", "acid", "content", "as", "function", "of", "diameter", "." ],
+    "entities_indices" : [ [ 10, 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "Recently", ",", "Kangasluoma", "et", "al.", "[", "2014", "]", "published", "a", "more", "detailed", "study", "on", "the", "influence", "of", "the", "chemical", "composition", "of", "aerosol", "particles", "on", "particle", "counter", "response", "functions", "." ],
+    "entities_indices" : [ [ 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "Although", "recent", "measurements", "show", "that", "ternary", "nucleation", "of", "H", "SO", ",", "water", ",", "and", "ammonia", "often", "dominates", "over", "binary", "nucleation", "[", "Kirkby", "et", "al", ".,", "2011", ";", "Glasoe", "et", "al", ".,", "2015", ";", "K", "u", "rten", "et", "al", ".,", "2016", "]", ",", "the", "understanding", "of", "the", "latter", "is", "crucial", "for", "regions", "of", "the", "free", "troposphere", "with", "low", "ammonia", "and", "for", "a", "deeper", "understanding", "of", "the", "fundamental", "processes", "involved", "in", "nucleation", "." ],
+    "entities_indices" : [ [ 14, 15 ], [ 33, 34, 35, 36, 37, 38, 39, 40, 41 ], [ 57, 58 ] ]
+  }, {
+    "sentence_tokens" : [ "Remaining", "differences", "between", "the", "measured", "and", "modeled", "distributions", "are", "most", "likely", "due", "to", "fragmentation", "in", "the", "APi-TOF", "." ],
+    "entities_indices" : [ [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "method", "for", "peak", "formation", "rates", "works", "best", "for", "single", "nucleation", "experiments", "as", "it", "was", "the", "standard", "procedure", "during", "CLOUD", "5", "rather", "than", "consecutive", "experiments", ",", "i.e", ".,", "an", "experiment", "where", "nucleation", "conditions", "are", "changed", "from", "neutral", "to", "Galacatic", "Cosmic", "Rays", "(", "GCR", ")", "and", "then", "to", "pion", "beam", "without", "a", "cleaning", "cycle", "in", "between", "[", "cf.", "Kirkby", "et", "al", ".,", "2011", ",", "Figure", "S1", "]", ".3", "Results", "." ],
+    "entities_indices" : [ [ 19, 20, 21 ], [ 42, 43 ] ]
+  }, {
+    "sentence_tokens" : [ "HSO4", "-", "seen", "in", "Figures", "10", "and", "11.The", "presence", "of", "ammonia", "can", "also", "lower", "the", "concentration", "of", "measured", "clusters", "larger", "than", "(", "H2SO4", ")", "3", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 10, 11 ], [ 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "HSO4", "-", "signals", ",", "leading", "to", "an", "overestimation", "of", "the", "HSO", "4", "-", "signal", "relative", "to", "the", "signals", "from", "the", "larger", "clusters", ",", "then", "the", "observed", "cluster", "distribution", "could", "result", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "At", "higher", "temperature", "NH", "contamination", "is", "higher", "and", "has", "a", "major", "influence", "on", "nucleation", ",", "especially", "for", "neutral", "nucleation", "." ],
+    "entities_indices" : [ [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "At", "temperatures", "below", "248", "K", "no", "ammonia", "was", "detected", "in", "the", "nucleating", "clusters", ",", "indicating", "that", "the", "ammonia", "had", "condensed", "to", "the", "walls", "[", "K", "u", "rten", "et", "al", ".,", "2016", "]", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "Only", "a", "short", "summary", "of", "SAWNUC", "will", "be", "given", "here", "since", "it", "was", "described", "in", "detail", "by", "Lovejoy", "et", "al.", "[", "2004", "]", "." ],
+    "entities_indices" : [ [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "These", "figures", "show", "the", "data", "for", "the", "whole", "CLOUD", "3", "campaign", ",", "at", "temperatures", "from", "292", "K", "to", "248", "K.", "From", "Figures", "10", "and", "11", "it", "is", "evident", "that", "SAWNUC", "predicts", "lower", "concentrations", "of", "the", "smallest", "clusters", "and", "higher", "concentrations", "of", "clusters", "containing", "between", "four", "and", "eight", "sulphuric", "acid", "molecules", "(", "with", "the", "HSO4", "-", "core", "ion", "included", "in", "that", "number", ")", "." ],
+    "entities_indices" : [ [ 29, 30 ], [ 47, 48, 49 ] ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "it", "is", "difficult", "to", "explain", "the", "very", "high", "HSO4", "-", "signal", "in", "the", "APi", "-", "TOF", "if", "only", "NH", "uptake", "would", "be", "responsible", "for", "it", "." ],
+    "entities_indices" : [ [ 15, 16 ], [ 17, 18 ], [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "Four", "counters", "are", "diethylene", "glycol", "-", "based", "CPCs", ",", "with", "two", "of", "them", "being", "continuous", "flow", "particle", "counters", "[", "Iida", "et", "al", ".,", "2009", ";", "Wimmer", "et", "al", ".,", "2013", "]", "." ],
+    "entities_indices" : [ [ 3, 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "Predictions", "of", "SAWNUC", "are", "compared", "for", "the", "first", "time", "comprehensively", "with", "experimental", "binary", "nucleation", "data", "from", "the", "CLOUD", "chamber", "at", "European", "Organization", "for", "Nuclear", "Research", "." ],
+    "entities_indices" : [ [ 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "These", "campaigns", "were", "dedicated", "to", "binary", "and", "ternary", "(", "with", "NH", ")", "nucleation", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "HSO4", "-", "as", "intermediate", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "simulated", "particle", "number", "concentration", ",", "N", ",", "that", "represents", "the", "uncorrected", "observed", "particle", "concentration", "rate", "with", "a", "CPC", "is", "(", "5", ")", "NCPC", "=", "sum", "ifdp", ",", "imltdp", ",", "im", ",", "Tni", ",", "where", "n", "is", "the", "number", "concentration", "for", "a", "cluster", "containing", "i", "H", "SO", "molecules", "." ],
+    "entities_indices" : [ [ 30, 31 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "ion", "pair", "production", "rates", "were", "scaled", "by", "the", "density", "of", "the", "chamber", "air", "at", "different", "temperatures.Although", "NH", "was", "not", "added", "during", "these", "experiments", "at", "278", "K", "and", "292", "K", "the", "ammonia", "contamination", "in", "the", "CLOUD", "chamber", "was", "considerable", "(", "the", "ammonia", "background", "concentration", "was", "around", "2", "pptv", "and", "4", "pptv", ")", "and", "the", "nucleation", "process", "was", "strongly", "influenced", "by", "ammonia", "." ],
+    "entities_indices" : [ [ 17, 18 ], [ 31, 32 ], [ 41, 42 ], [ 60, 61 ] ]
+  }, {
+    "sentence_tokens" : [ "Furthermore", ",", "in", "this", "study", "the", "peak", "formation", "rate", "of", "new", "particles", ",", "i.e", ".,", "the", "maximum", "in", "the", "derivative", "of", "the", "total", "particle", "concentration", "N", "with", "respect", "to", "time", "(", "d", "N", ")", ",", "as", "measured", "by", "several", "condensation", "particle", "counters", ",", "CPCs", ",", "is", "compared", "with", "SAWNUC", "simulations", "." ],
+    "entities_indices" : [ [ 39, 40 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "most", "of", "the", "particle", "counters", "the", "agreement", "between", "experimental", "and", "simulated", "values", "is", "within", "a", "factor", "of", "5", "for", "temperatures", "at", "or", "below", "278", "K.At", "temperatures", "of", "278", "K", "and", "above", ",", "NH", "contamination", "has", "a", "major", "influence", "on", "nucleation", ",", "especially", "for", "neutral", "nucleation", "." ],
+    "entities_indices" : [ [ 33, 34 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "comparison", "works", "reasonably", "well", "but", "is", "limited", "especially", "by", "the", "uncertainties", "of", "the", "detection", "efficiency", "function", "of", "the", "CPC", "as", "a", "function", "of", "particle", "size", ",", "chemical", "composition", ",", "and", "charging", "state.Third", ",", "the", "sulphuric", "acid", "ion", "cluster", "distributions", "modeled", "by", "SAWNUC", "compared", "reasonably", "well", "with", "APi", "-", "TOF", "measurements", "at", "248", "K." ],
+    "entities_indices" : [ [ 35, 36, 37 ], [ 42, 43 ], [ 49, 50 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "CLOUD", "5", "these", "data", "are", "summarized", "in", "K", "u", "rten", "et", "al.", "[", "2016", "]", "." ],
+    "entities_indices" : [ [ 1, 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "These", "counting", "efficiencies", "are", "described", "either", "by", "a", "sigmoidal", "dependency", "on", "the", "particle", "diameter", "with", "four", "fit", "parameters", ",", "p", "to", "p", ":", "(", "2", ")", "fdpm", "=", "p1+", "p21+", "expp3", "-", "dpm/p4", ")", "or", "by", "the", "function", "from", "Wehner", "et", "al.", "[", "2011", "]", "with", "three", "parameters", "a", ",", "b", ",", "and", "c", ":", "(", "3", ")", "fdpm", "=", "a", "-", "expb", "-", "dpm/c", "." ],
+    "entities_indices" : [ [ 28, 29, 30, 31, 32, 33 ] ]
+  }, {
+    "sentence_tokens" : [ "Further", "technical", "studies", "should", "be", "made", "on", "transmission", "functions", "of", "the", "APi", "-", "TOF", "mass", "spectrometer", "[", "Junninen", "et", "al", ".,", "2010", ";", "Heinritzi", "et", "al", ".,", "2015", "]", ".4", "Summary", "and", "Conclusions", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 13, 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "GCR", "nucleation", "rates", "at", "278", "K", "still", "agree", "reasonably", "well", "but", "the", "CLOUD", "rates", "are", "typically", "a", "factor", "5", "higher", "than", "SAWNUC", "predictions", "most", "likely", "due", "to", "contaminant", "ammonia", "concentrations", "of", "a", "few", "pptv", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 29, 30 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "concentration", "of", "sulphuric", "acid", "was", "measured", "with", "a", "Chemical", "Ionization", "Mass", "Spectrometer", "(", "CIMS", ")", "[", "Tanner", "et", "al", ".,", "1997", ";", "K", "u", "rten", "et", "al", ".,", "2011", ",", "2012", "]", "and", "time", "-", "dependent", "H", "SO", "concentrations", "are", "used", "as", "input", "for", "the", "SAWNUC", "modeling", "." ],
+    "entities_indices" : [ [ 3, 4, 5 ], [ 11, 12 ], [ 23, 24, 25, 26, 27, 28, 29, 30 ] ]
+  } ],
+  "emptySentences" : [ {
+    "sentence_tokens" : [ "Comparison", "of", "the", "SAWNUC", "model", "with", "CLOUD", "measurements", "of", "sulphuric", "acid-water", "nucleation", "." ]
+  }, {
+    "sentence_tokens" : [ "Abstract", "." ]
+  }, {
+    "sentence_tokens" : [ "Binary", "nucleation", "of", "sulphuric", "acid-water", "particles", "is", "expected", "to", "be", "an", "important", "process", "in", "the", "free", "troposphere", "at", "low", "temperatures", "." ]
+  }, {
+    "sentence_tokens" : [ "SAWNUC", "(", "Sulphuric", "Acid", "Water", "Nucleation", ")", "is", "a", "model", "of", "binary", "nucleation", "that", "is", "based", "on", "laboratory", "measurements", "of", "the", "binding", "energies", "of", "sulphuric", "acid", "and", "water", "in", "charged", "and", "neutral", "clusters", "." ]
+  }, {
+    "sentence_tokens" : [ "Predictions", "of", "SAWNUC", "are", "compared", "for", "the", "first", "time", "comprehensively", "with", "experimental", "binary", "nucleation", "data", "from", "the", "CLOUD", "chamber", "at", "European", "Organization", "for", "Nuclear", "Research", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "experimental", "measurements", "span", "a", "temperature", "range", "of", "208-292", "K", ",", "sulphuric", "acid", "concentrations", "from", "1.10", "6", "to", "1.10", "9", "cm", "-3", ",", "and", "distinguish", "between", "ion", "induced", "and", "neutral", "nucleation", "." ]
+  }, {
+    "sentence_tokens" : [ "Good", "agreement", ",", "within", "a", "factor", "of", "5", ",", "is", "found", "between", "the", "experimental", "and", "modeled", "formation", "rates", "for", "ion", "induced", "nucleation", "at", "278", "K", "and", "below", "and", "for", "neutral", "nucleation", "at", "208", "and", "223", "K.", "Differences", "at", "warm", "temperatures", "are", "attributed", "to", "ammonia", "contamination", "which", "was", "indicated", "by", "the", "presence", "of", "ammonia-sulphuric", "acid", "clusters", ",", "detected", "by", "an", "Atmospheric", "Pressure", "Interface", "Time", "of", "Flight", "(", "APi-TOF", ")", "mass", "spectrometer", "." ]
+  }, {
+    "sentence_tokens" : [ "APi-TOF", "measurements", "of", "the", "sulphuric", "acid", "ion", "cluster", "distributions", "(", "(", "H2SO4", ")", "i.HSO4-", "with", "i", "=", "0", ",", "1", ",", "...,", "10", ")", "show", "qualitative", "agreement", "with", "the", "SAWNUC", "ion", "cluster", "distributions", "." ]
+  }, {
+    "sentence_tokens" : [ "Remaining", "differences", "between", "the", "measured", "and", "modeled", "distributions", "are", "most", "likely", "due", "to", "fragmentation", "in", "the", "APi-TOF", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "CLOUD", "results", "are", "in", "good", "agreement", "with", "previously", "measured", "cluster", "binding", "energies", "and", "show", "the", "SAWNUC", "model", "to", "be", "a", "good", "representation", "of", "ion", "induced", "and", "neutral", "binary", "nucleation", "of", "sulphuric", "acid-water", "clusters", "in", "the", "middle", "and", "upper", "troposphere", "." ]
+  }, {
+    "sentence_tokens" : [ "1", "Introduction", "." ]
+  }, {
+    "sentence_tokens" : [ "New", "particle", "formation", "is", "an", "important", "source", "of", "cloud", "condensation", "nuclei", "[", "Kerminen", "et", "al", ".,", "2005", ";", "Laaksonen", "et", "al", ".,", "2005", ";", "Kuang", "et", "al", ".,", "2009", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "main", "compound", "responsible", "for", "new", "particle", "formation", "in", "the", "upper", "troposphere", "is", "considered", "to", "be", "sulphuric", "acid", "[", "Weber", "et", "al", ".,", "1999", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "a", "large", "number", "of", "experimental", "studies", "of", "binary", "homogenous", "nucleation", "of", "sulphuric", "acid", "and", "water", "have", "been", "made", ",", "mostly", "limited", "to", "room", "temperature", "[", "see", ",", "for", "example", ",", "Raes", "and", "Janssens", ",", "1986", ";", "Wyslouzil", "et", "al", ".,", "1991", ";", "Ball", "et", "al", ".,", "1999", ";", "Young", "et", "al", ".,", "2008", ";", "Zollner", "et", "al", ".,", "2012", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Ball", "et", "al.", "[", "1999", "]", "showed", "that", "small", "amounts", "of", "ternary", "vapor", ",", "in", "this", "case", "ammonia", ",", "can", "strongly", "enhance", "the", "observed", "nucleation", "rates", "." ]
+  }, {
+    "sentence_tokens" : [ "Kirkby", "et", "al.", "[", "2011", "]", "gave", "a", "more", "detailed", "quantification", "of", "this", "effect", "for", "temperatures", "between", "248", "and", "292", "K." ]
+  }, {
+    "sentence_tokens" : [ "In", "general", ",", "all", "laboratory", "experiments", "studying", "atmospheric", "aerosol", "nucleation", "are", "potentially", "prone", "to", "enhanced", "nucleation", "rates", "due", "to", "contaminants", "." ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "the", "concentrations", "of", "contaminants", "and", "their", "possible", "contribution", "to", "new", "particle", "formation", "rates", "need", "to", "be", "monitored", "carefully.Besides", "ternary", "vapors", ",", "ions", "my", "also", "enhance", "the", "formation", "of", "molecular", "clusters", "in", "the", "atmosphere", ",", "as", "shown", "originally", "by", "Wilson", "[", "1898", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Ney", "[", "1959", "]", "therefore", "hypothesized", "that", "cosmic", "rays", "could", "affect", "clouds", "and", "thereby", "influence", "climate", "." ]
+  }, {
+    "sentence_tokens" : [ "Subsequent", "work", "has", "shown", "that", "ion", "-", "induced", "aerosol", "nucleation", "is", "expected", "to", "account", "for", "a", "substantial", "fraction", "of", "new", "particle", "production", "in", "the", "free", "troposphere", "[", "Raes", "et", "al", ".,", "1986", ";", "Lovejoy", "et", "al", ".,", "2004", ";", "Kirkby", "et", "al", ".,", "2011", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Modeling", "of", "nucleation", "processes", "is", "a", "difficult", "task", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "microphysical", "properties", "of", "nanometer", "-", "scale", "nucleating", "clusters", "differ", "from", "those", "of", "bulk", "phases", ",", "a", "common", "phenomenon", "in", "nanoscience", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "a", "long", "time", "it", "was", "believed", "that", "binary", "nucleation", "of", "H", "SO", "and", "water", "vapor", "is", "the", "most", "important", "mechanism", "of", "new", "particle", "formation", "in", "the", "atmosphere", ",", "and", "today", "it", "is", "still", "considered", "to", "be", "important", "in", "the", "free", "troposphere", "." ]
+  }, {
+    "sentence_tokens" : [ "Although", "recent", "measurements", "show", "that", "ternary", "nucleation", "of", "H", "SO", ",", "water", ",", "and", "ammonia", "often", "dominates", "over", "binary", "nucleation", "[", "Kirkby", "et", "al", ".,", "2011", ";", "Glasoe", "et", "al", ".,", "2015", ";", "K", "u", "rten", "et", "al", ".,", "2016", "]", ",", "the", "understanding", "of", "the", "latter", "is", "crucial", "for", "regions", "of", "the", "free", "troposphere", "with", "low", "ammonia", "and", "for", "a", "deeper", "understanding", "of", "the", "fundamental", "processes", "involved", "in", "nucleation", "." ]
+  }, {
+    "sentence_tokens" : [ "Several", "approaches", "exist", "to", "describe", "binary", "nucleation", ",", "and", "in", "particular", ",", "classical", "nucleation", "theory", "has", "been", "established", "for", "a", "long", "time", "and", "is", "widely", "used", "." ]
+  }, {
+    "sentence_tokens" : [ "Improvements", "of", "the", "classical", "binary", "nucleation", "theory", "and", "a", "comparison", "with", "the", "CLOUD", "data", "are", "provided", "in", "Duplissy", "et", "al.", "[", "2016", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "approach", "used", "in", "the", "present", "study", "is", "based", "on", "detailed", "modeling", "of", "H", "SO", "condensation", "and", "evaporation", "starting", "with", "the", "monomers", "[", "Becker", "and", "D", "o", "ring", ",", "1935", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "approach", "can", "be", "considered", "as", "an", "extension", "of", "the", "discrete", "general", "dynamics", "equation", "down", "to", "the", "monomer", "." ]
+  }, {
+    "sentence_tokens" : [ "Other", "examples", "of", "similar", "models", "include", "McMurry", "and", "Friedlander", "[", "1979", "]", ",", "Gelbard", "and", "Seinfeld", "[", "1978", "]", ",", "McGraw", "and", "Marlow", "[", "1983", "]", ",", "Yu", "[", "2006", "]", ",", "and", "Kulmala", "[", "2010", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "use", "the", "Sulphuric", "Acid", "Water", "Nucleation", "(", "SAWNUC", ")", "model", "of", "Lovejoy", "et", "al.", "[", "2004", "]", "which", "was", "not", "only", "originally", "developed", "for", "ion", "-", "induced", "nucleation", "but", "also", "includes", "neutral", "nucleation", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "evaporation", "rate", "of", "charged", "clusters", "containing", "a", "few", "H", "SO", "molecules", "is", "based", "on", "measured", "thermodynamics", "[", "Curtius", "et", "al", ".,", "2001", ";", "Lovejoy", "and", "Curtius", ",", "2001", ";", "Froyd", "and", "Lovejoy", ",", "2003", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "intermediate", "sizes", "the", "Gibbs", "energies", "are", "interpolated", "between", "these", "measured", "values", "and", "the", "bulk", "phase", "limit", "." ]
+  }, {
+    "sentence_tokens" : [ "Neutral", "nucleation", "is", "based", "on", "dimer", "and", "trimer", "thermodynamics", "[", "Hanson", "and", "Lovejoy", ",", "2006", ";", "Kazil", "and", "Lovejoy", ",", "2007", "]", "and", "bulk", "phase", "thermodynamics", "with", "adjustments", "to", "reproduce", "experimental", "results", "from", "Ball", "et", "al.", "[", "1999", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Three", "spin", "-", "off", "models", "of", "SAWNUC", "exist", "that", "specifically", "aim", "to", "be", "used", "in", "climate", "modeling", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "first", "one", "consists", "of", "a", "set", "of", "fitted", "equations", "by", "Modgil", "et", "al.", "[", "2005", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "second", "is", "the", "parameterized", "nucleation", "(", "PARNUC", ")", "model", "that", "uses", "parametrized", "condensation", "and", "evaporation", "rates", "and", "solves", "nucleation", "in", "steady", "state", "with", "a", "specialized", "solver", "[", "Kazil", "and", "Lovejoy", ",", "2007", "]", ",", "and", "based", "on", "that", "the", "third", "model", "uses", "a", "PARNUC", "look", "-", "up", "table", "[", "Kazil", "et", "al", ".,", "2010", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "direct", "comparison", "of", "experimental", "nucleation", "data", "from", "CLOUD", "with", "the", "independent", "results", "from", "the", "SAWNUC", "model", "is", "a", "tool", "to", "cross", "check", "and", "validate", "the", "model", "and", "the", "experimental", "measurements", "." ]
+  }, {
+    "sentence_tokens" : [ "Furthermore", ",", "the", "SAWNUC", "model", "can", "facilitate", "the", "understanding", "of", "the", "nucleation", "and", "growth", "processes", "." ]
+  }, {
+    "sentence_tokens" : [ "Here", "we", "compare", "the", "CLOUD", "binary", "nucleation", "measurements", "of", "the", "H", "SO", "-", "H", "O", "system", "at", "temperatures", "between", "292", "and", "208", "K", "with", "SAWNUC", "model", "results", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "CLOUD", "project", "was", "established", "at", "CERN", "(", "European", "Organization", "for", "Nuclear", "Research", ")", "to", "improve", "the", "current", "understanding", "of", "nucleation", ",", "especially", "ion", "-", "induced", "nucleation", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "experiment", "consists", "of", "an", "aerosol", "chamber", "that", "can", "be", "illuminated", "by", "a", "particle", "beam", "from", "the", "CERN", "Proton", "Synchrotron", "(", "PS", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "particle", "beam", "simulates", "galactic", "cosmic", "rays", "that", "are", "the", "major", "source", "of", "ions", "in", "the", "atmosphere", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "chamber", "provides", "an", "extremely", "clean", "environment", "with", "state", "-", "of", "-", "the", "-", "art", "technology", "." ]
+  }, {
+    "sentence_tokens" : [ "Contaminant", "levels", "of", "species", "that", "could", "contribute", "to", "the", "nucleation", "process", "are", "kept", "as", "low", "as", "possible", ",", "and", "the", "composition", "of", "charged", "nucleating", "clusters", "is", "continuously", "monitored", "so", "that", "the", "influence", "of", "such", "contaminants", "can", "be", "detected", "." ]
+  }, {
+    "sentence_tokens" : [ "Various", "instruments", "continuously", "record", "the", "chamber", "contents", ",", "such", "as", "precursor", "gas", "concentrations", ",", "particle", "concentrations", ",", "or", "molecular", "composition", "of", "charged", "clusters", "and", "operational", "parameters", "such", "as", "pressure", ",", "temperature", ",", "and", "rotational", "speed", "of", "the", "mixing", "fans.Two", "sets", "of", "data", "are", "of", "special", "interest", "for", "the", "present", "study", ":", "the", "particle", "formation", "rates", "at", "a", "given", "diameter", ",", "here", "1.7", "nm", "(", "J", ")", ",", "and", "the", "distribution", "of", "the", "charged", "clusters", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "charged", "cluster", "distribution", "is", "measured", "by", "an", "Atmospheric", "Pressure", "Interface", "Time", "of", "Flight", "(", "APi", "-", "TOF", ")", "mass", "spectrometer", "[", "Junninen", "et", "al", ".,", "2010", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "allows", "a", "direct", "comparison", "with", "the", "original", "work", "of", "Curtius", "et", "al.", "[", "2001", "]", ",", "Lovejoy", "and", "Curtius", "[", "2001", "]", ",", "Froyd", "and", "Lovejoy", "[", "2003", "]", ",", "and", "Lovejoy", "et", "al.", "[", "2004", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Furthermore", ",", "in", "this", "study", "the", "peak", "formation", "rate", "of", "new", "particles", ",", "i.e", ".,", "the", "maximum", "in", "the", "derivative", "of", "the", "total", "particle", "concentration", "N", "with", "respect", "to", "time", "(", "d", "N", ")", ",", "as", "measured", "by", "several", "condensation", "particle", "counters", ",", "CPCs", ",", "is", "compared", "with", "SAWNUC", "simulations", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "this", "comparison", "the", "counting", "efficiencies", "of", "the", "instruments", "used", "at", "CLOUD", "are", "applied", "to", "the", "simulated", "aerosol", "and", "cluster", "populations", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "allows", "a", "comparison", "with", "the", "measured", "CPC", "values", "without", "applying", "any", "corrections", "to", "calculate", "the", "formation", "rate", "at", "a", "smaller", "diameter", "(", "closer", "to", "the", "critical", "cluster", "size", ")", ".2", "Methods", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "original", "SAWNUC", "code", "[", "Lovejoy", "et", "al", ".,", "2004", "]", "was", "modified", "to", "be", "applied", "to", "the", "CLOUD", "chamber", "experiments", "." ]
+  }, {
+    "sentence_tokens" : [ "Only", "a", "short", "summary", "of", "SAWNUC", "will", "be", "given", "here", "since", "it", "was", "described", "in", "detail", "by", "Lovejoy", "et", "al.", "[", "2004", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "SAWNUC", "uses", "a", "mixture", "of", "experimentally", "determined", "Gibbs", "energies", "and", "interpolations", "to", "classical", "bulk", "phase", "thermodynamics", "to", "determine", "the", "sulphuric", "acid", "uptake", "and", "evaporation", "rates", "for", "each", "negatively", "charged", "and", "neutral", "cluster", "." ]
+  }, {
+    "sentence_tokens" : [ "Each", "cluster", "is", "assumed", "to", "be", "in", "equilibrium", "with", "the", "surrounding", "water", "vapor", ",", "an", "assumption", "that", "is", "valid", "for", "high", "water", "vapor", "concentrations", "found", "in", "the", "troposphere", "(", "see", "also", "Schelling", "and", "Reiss", "[", "1981", "]", "and", "Jaecker", "-", "Voirol", "et", "al.", "[", "1987", "]", "for", "more", "details", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "SAWNUC", "determines", "the", "most", "probable", "water", "content", "of", "each", "cluster", "and", "defines", "the", "size", "of", "the", "cluster", "based", "on", "this", "water", "content", "." ]
+  }, {
+    "sentence_tokens" : [ "Figure", "S2", "in", "the", "supporting", "information", "shows", "the", "water", "and", "sulphuric", "acid", "content", "as", "function", "of", "diameter", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "actual", "sulphuric", "acid", "uptake", "and", "evaporation", "rate", "constants", "for", "a", "specific", "cluster", "with", "i", "H", "SO", "is", "calculated", "as", "the", "weighted", "average", "over", "all", "water", "contents", "." ]
+  }, {
+    "sentence_tokens" : [ "Lovejoy", "et", "al.", "[", "2004", "]", "fixed", "the", "ion", "-", "ion", "recombination", "coefficient", "in", "the", "limit", "of", "small", "ions", "to", "be", "1.6", "." ]
+  }, {
+    "sentence_tokens" : [ "10", "cm", "s", "." ]
+  }, {
+    "sentence_tokens" : [ "Franchin", "et", "al.", "[", "2015", "]", "indicate", "that", "the", "parameterization", "by", "Brasseur", "and", "Chatel", "[", "1983", "]", "is", "a", "better", "representation", "of", "ion", "-", "ion", "recombination", "of", "small", "ions", "under", "low", "temperature", "and", "ground", "level", "pressure", ";", "therefore", ",", "this", "parametrization", "was", "used", "in", "this", "study", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "system", "of", "differential", "equations", "describing", "the", "evolution", "of", "clusters", "and", "aerosols", "with", "i", "H", "SO", "molecules", "is", "solved", "for", "either", "steady", "state", "conditions", "or", "time", "resolved", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "steady", "state", "solution", "uses", "a", "direct", "iteration", "scheme", "that", "solves", "the", "set", "of", "differential", "equations", ",", "described", "in", "Lovejoy", "et", "al.", "[", "2004", "]", "and", "Kazil", "and", "Lovejoy", "[", "2007", "]", ",", "for", "d", "n", "=0", "and", "a", "maximum", "mobility", "equivalent", "diameter", "of", "1.7", "nm", "." ]
+  }, {
+    "sentence_tokens" : [ "Parameters", "used", "in", "SAWNUC", "are", "summarized", "in", "the", "supporting", "information", "Table", "S1.In", "chamber", "experiments", "particles", "can", "be", "lost", "to", "the", "chamber", "walls", "." ]
+  }, {
+    "sentence_tokens" : [ "Mechanisms", "that", "transport", "particles", "to", "the", "wall", "are", "diffusion", "and", "gravitational", "settling", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "latter", "can", "be", "ignored", "for", "nucleation", "experiments", "in", "the", "CLOUD", "chamber", ",", "since", "particles", "always", "remain", "smaller", "than", "100", "nm", "and", "gravitational", "settling", "is", "therefore", "negligible", "." ]
+  }, {
+    "sentence_tokens" : [ "Ehrhart", "and", "Curtius", "[", "2013", "]", "showed", "that", "the", "diffusion", "wall", "loss", "can", "have", "a", "significant", "influence", "on", "nucleation", "rates", "in", "chamber", "experiments", "." ]
+  }, {
+    "sentence_tokens" : [ "Rate", "coefficients", "for", "wall", "losses", "from", "each", "particle", "size", "bin", "i", "are", "taken", "into", "account", "by", "applying", "[", "Crump", "et", "al", ".,", "1982", ";", "Park", "et", "al", ".,", "2001", ";", "Metzger", "et", "al", ".,", "2010", "]", ":", "(", "1", ")", "kiwall", "=", "CwallDi", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "size", "-", "dependent", "diffusion", "coefficient", "D", "is", "assumed", "to", "be", "described", "by", "the", "Cunningham", "-", "Millikan", "equation", "[", "Cunningham", ",", "1910", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "coefficient", "C", "includes", "turbulence", "due", "to", "flows", "induced", "by", "the", "mixing", "fans", "[", "Voigtl", "a", "nder", "et", "al", ".,", "2012", "]", "and", "the", "geometry", "of", "the", "chamber", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "value", "of", "C", "at", "several", "temperatures", "was", "determined", "by", "wall", "loss", "experiments", "with", "H", "SO", "." ]
+  }, {
+    "sentence_tokens" : [ "Additionally", ",", "a", "constant", "first", "-", "order", "dilution", "loss", "of", "(", "9.6", "." ]
+  }, {
+    "sentence_tokens" : [ "10", "s", ")", "is", "taken", "into", "account", "due", "to", "the", "constant", "flow", "of", "gas", "through", "the", "chamber.2.1", "CLOUD", "Chamber", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "CLOUD", "chamber", "is", "a", "stainless", "steel", "continuously", "stirred", "tank", "reactor", ",", "with", "a", "volume", "of", "26", "m", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "general", "description", "is", "given", "in", "the", "supplementary", "information", "of", "Kirkby", "et", "al.", "[", "2011", "]", "and", "in", "Duplissy", "et", "al.", "[", "2016", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "chamber", "is", "mixed", "by", "two", "fans", "that", "ensure", "short", "mixing", "times", "and", "an", "almost", "homogenous", "distribution", "of", "trace", "gases", "and", "nucleating", "particles", "[", "Voigtl", "a", "nder", "et", "al", ".,", "2012", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "OH", "is", "generated", "in", "the", "chamber", "by", "photolysis", "of", "O", "and", "the", "subsequent", "reaction", "of", "O", "(", "D", ")", "with", "H", "O.", "O", "and", "SO", "mixing", "ratios", "vary", "between", "experiments", "in", "a", "range", "from", "a", "few", "ppbv", "to", "up", "to", "3000", "or", "80", "ppbv", "for", "O", "and", "SO", ",", "respectively", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "UV", "light", "for", "the", "photolysis", "is", "transmitted", "via", "a", "fiber", "optic", "system", "into", "the", "chamber", "to", "prevent", "additional", "heat", ";", "a", "detailed", "description", "can", "be", "found", "in", "Kupc", "et", "al.", "[", "2011", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "data", "used", "for", "our", "comparison", "were", "obtained", "during", "the", "CLOUD", "3", "(", "2010", ",", "originally", "published", "in", "Kirkby", "et", "al.", "[", "2011", "]", ")", "and", "CLOUD", "5", "(", "2011", ")", "campaigns", "." ]
+  }, {
+    "sentence_tokens" : [ "These", "campaigns", "were", "dedicated", "to", "binary", "and", "ternary", "(", "with", "NH", ")", "nucleation", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "main", "focus", "of", "CLOUD", "5", "was", "nucleation", "at", "low", "temperatures", "(", "208", "-", "248", "K", ")", "characteristic", "of", "the", "upper", "troposphere.2.2", "Particle", "Dynamics", "and", "Counters", "." ]
+  }, {
+    "sentence_tokens" : [ "To", "simulate", "the", "dynamics", "of", "particle", "formation", "the", "set", "of", "equations", "describing", "the", "particle", "evolution", "is", "solved", "for", "time", "steps", "of", "typically", "60", "s", "with", "VODE", "(", "Variable", "Coefficient", "Ordinary", "Differential", "Equation", "solver", ")", "[", "Brown", "et", "al", ".,", "1989", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "To", "compare", "the", "model", "results", "directly", "with", "the", "observed", "temporal", "evolution", "of", "measured", "particle", "concentrations", ",", "the", "signals", "of", "various", "particle", "counters", "were", "modeled", "using", "their", "measured", "counting", "efficiencies", "[", "Wimmer", "et", "al", ".,", "2013", ";", "Riccobono", "et", "al", ".,", "2012", "]", "as", "a", "function", "of", "the", "mobility", "equivalent", "particle", "diameter", "fdpm", "to", "the", "simulated", "aerosol", "population", "." ]
+  }, {
+    "sentence_tokens" : [ "These", "counting", "efficiencies", "are", "described", "either", "by", "a", "sigmoidal", "dependency", "on", "the", "particle", "diameter", "with", "four", "fit", "parameters", ",", "p", "to", "p", ":", "(", "2", ")", "fdpm", "=", "p1+", "p21+", "expp3", "-", "dpm/p4", ")", "or", "by", "the", "function", "from", "Wehner", "et", "al.", "[", "2011", "]", "with", "three", "parameters", "a", ",", "b", ",", "and", "c", ":", "(", "3", ")", "fdpm", "=", "a", "-", "expb", "-", "dpm/c", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "parameters", "used", "to", "model", "the", "particle", "counters", "are", "compiled", "in", "Tables", "1", "and", "2", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "particle", "diameter", "where", "50", "%", "of", "particles", "are", "counted", "(", "D", ")", "is", "also", "included", "in", "the", "table", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "D", "is", "typically", "reported", "as", "a", "cutoff", "diameter", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "counting", "efficiency", "is", "probably", "also", "a", "function", "of", "the", "temperature", "of", "the", "sampled", "aerosol", "." ]
+  }, {
+    "sentence_tokens" : [ "Although", "a", "first", "calibration", "at", "low", "temperatures", "has", "been", "performed", "to", "study", "the", "effect", "of", "sample", "temperature", "for", "some", "particle", "counters", "[", "Wimmer", "et", "al", ".,", "2015", "]", ",", "sufficient", "experimental", "data", "to", "account", "for", "this", "are", "currently", "not", "available.Sampling", "line", "corrections", ",", "ldpm", ",", "T", ",", "were", "applied", "to", "account", "for", "particle", "losses", "in", "the", "sampling", "tube", "[", "Baron", "and", "Willeke", ",", "2001", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "correction", "is", "derived", "for", "straight", "sampling", "lines", "." ]
+  }, {
+    "sentence_tokens" : [ "Due", "to", "a", "lack", "of", "experimental", "characterization", "of", "the", "used", "Y", "splitter", "sampling", "lines", ",", "instruments", "connected", "with", "a", "Y", "splitter", "are", "corrected", "with", "the", "same", "method", "as", "for", "straight", "lines", ",", "although", "the", "losses", "are", "expected", "to", "be", "higher", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "a", "CPC", "sampling", "through", "a", "Y", "splitter", "with", "a", "core", "sampling", "line", ",", "the", "individual", "losses", "for", "each", "part", "of", "the", "line", "are", "multiplied", "to", "yield", "an", "estimate", "of", "the", "total", "transmission", "efficiency", ",", "(", "4", ")", "ltdpm", ",", "T", "=", "lydpm", ",", "Tlsdpm", ",", "Tlcdpm", ",", "T." ]
+  }, {
+    "sentence_tokens" : [ "In", "case", "a", "Y", "splitter", "is", "used", ",", "the", "term", "l", "describes", "losses", "before", "splitting", "the", "flow", "and", "l", "describes", "losses", "after", "splitting", "the", "flow", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "particle", "counters", "with", "straight", "sampling", "lines", ",", "l", "=", "1", ",", "and", "l", "covers", "all", "losses", "in", "the", "sampling", "line", "up", "to", "the", "core", "sampling", "line", "l", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "simulated", "particle", "number", "concentration", ",", "N", ",", "that", "represents", "the", "uncorrected", "observed", "particle", "concentration", "rate", "with", "a", "CPC", "is", "(", "5", ")", "NCPC", "=", "sum", "ifdp", ",", "imltdp", ",", "im", ",", "Tni", ",", "where", "n", "is", "the", "number", "concentration", "for", "a", "cluster", "containing", "i", "H", "SO", "molecules", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "observed", "temporal", "evolution", "of", "the", "measured", "particle", "concentration", "is", "then", "given", "by", "(", "6", ")", "d", "tNCPC", "=", "sum", "ifdp", ",", "imltdp", ",", "im", ",", "T", "d", "tni", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "order", "to", "minimize", "numerical", "errors", ",", "a", "linear", "increase", "in", "sulphuric", "acid", "content", "was", "applied", ",", "in", "steps", "of", "one", "molecule", "of", "H", "SO", ",", "for", "particles", "up", "to", "a", "mobility", "equivalent", "diameter", "of", "3.3", "nm", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "particles", "larger", "than", "this", ",", "geometric", "size", "bins", "are", "applied", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "ensures", "that", "all", "D", "step", "function", "counting", "efficiencies", "start", "to", "respond", "in", "the", "linear", "region", "of", "H", "SO", "addition", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "conversion", "from", "the", "mass", "diameter", ",", "d", ",", "that", "is", "used", "in", "SAWNUC", "to", "mobility", "equivalent", "diameter", "the", "relationship", "established", "by", "Ku", "and", "Fernandez", "de", "la", "Mora", "[", "2009", "]", ",", "dpm", "=d", "+0.3", "nm", ",", "was", "applied.Relative", "humidity", "and", "temperature", "were", "kept", "constant", "during", "the", "individual", "nucleation", "events", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "concentration", "of", "sulphuric", "acid", "was", "measured", "with", "a", "Chemical", "Ionization", "Mass", "Spectrometer", "(", "CIMS", ")", "[", "Tanner", "et", "al", ".,", "1997", ";", "K", "u", "rten", "et", "al", ".,", "2011", ",", "2012", "]", "and", "time", "-", "dependent", "H", "SO", "concentrations", "are", "used", "as", "input", "for", "the", "SAWNUC", "modeling", "." ]
+  }, {
+    "sentence_tokens" : [ "Similarly", ",", "the", "time", "-", "dependent", "ion", "pair", "production", "rate", "is", "used", "as", "an", "input", "parameter", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "ion", "pair", "production", "rate", "is", "proportional", "to", "the", "number", "of", "ionizing", "particles", "that", "pass", "through", "the", "chamber", "each", "second", "[", "Smirnov", ",", "2005", ";", "Duplissy", "et", "al", ".,", "2010", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Ionizing", "particles", "come", "from", "galactic", "cosmic", "rays", "and", "the", "CERN", "PS", "pion", "beam", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "pion", "(", "pi", ")", "beam", "allows", "an", "adjustable", "ion", "pair", "production", "rate", "up", "to", "around", "75", "ion", "pairs", "cm", "s", "." ]
+  }, {
+    "sentence_tokens" : [ "An", "electric", "field", "in", "the", "chamber", "with", "a", "potential", "difference", "of", "60", "kV", "can", "remove", "all", "ions", "efficiently", "in", "<=", "1", "s.", "Therefore", ",", "in", "all", "cases", "when", "the", "clearing", "field", "is", "switched", "on", ",", "q", "=~", "0.2.2.1", "Determination", "of", "Peak", "Particle", "Formation", "Rate", "." ]
+  }, {
+    "sentence_tokens" : [ "During", "the", "CLOUD", "5", "campaign", "a", "battery", "of", "five", "particle", "counters", "with", "cutoff", "sizes", ",", "i.e", ".,", "50", "%", "probability", "of", "counting", "a", "particle", "with", "that", "size", ",", "ranging", "from", "1.2", "to", "3", "nm", "(", "mobility", "equivalent", "diameter", ")", "was", "operated", "." ]
+  }, {
+    "sentence_tokens" : [ "Four", "counters", "are", "diethylene", "glycol", "-", "based", "CPCs", ",", "with", "two", "of", "them", "being", "continuous", "flow", "particle", "counters", "[", "Iida", "et", "al", ".,", "2009", ";", "Wimmer", "et", "al", ".,", "2013", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "other", "two", "are", "(", "mixing", "type", ")", "particle", "size", "magnifiers", "(", "PSM", ",", "model", "Airmodus", "A09", ")", "[", "Vanhanen", "et", "al", ".,", "2011", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "fifth", "particle", "counter", "is", "a", "butanol", "-", "based", "TSI", "3776", "." ]
+  }, {
+    "sentence_tokens" : [ "Counting", "efficiencies", "as", "a", "function", "of", "particle", "diameter", "exist", "for", "all", "five", "particle", "counters", "." ]
+  }, {
+    "sentence_tokens" : [ "These", "counting", "efficiencies", "differ", "with", "chemical", "composition", "of", "the", "particles", "." ]
+  }, {
+    "sentence_tokens" : [ "Usual", "compounds", "used", "for", "calibrations", "are", "salts", "or", "metal", "oxides", ";", "therefore", ",", "calibrations", "with", "pure", "H", "SO", "-", "H", "O", "were", "not", "available", ",", "with", "the", "exception", "of", "a", "single", "calibration", "of", "the", "DEG", "-", "2", "-", "CPC", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "details", "of", "these", "calibrations", "see", "Wimmer", "et", "al.", "[", "2013", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Recently", ",", "Kangasluoma", "et", "al.", "[", "2014", "]", "published", "a", "more", "detailed", "study", "on", "the", "influence", "of", "the", "chemical", "composition", "of", "aerosol", "particles", "on", "particle", "counter", "response", "functions", "." ]
+  }, {
+    "sentence_tokens" : [ "Additionally", ",", "the", "polarity", "of", "the", "aerosol", "particles", "has", "an", "influence", "on", "the", "counting", "efficiency", "[", "Jiang", "et", "al", ".,", "2011", ";", "Kuang", "et", "al", ".,", "2012", "]", "and", "Chen", "[", "2013", "]", "showed", "that", "neutral", "particles", "have", "counting", "efficiencies", "different", "from", "charged", "particles", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "measured", "d", "N", "is", "compared", "with", "the", "simulated", "one", "by", "comparing", "the", "maximum", "values", "and", "the", "time", "t", "at", "which", "this", "maximum", "occurs", "." ]
+  }, {
+    "sentence_tokens" : [ "During", "nucleation", "experiments", "in", "the", "CLOUD", "chamber", "the", "temporal", "evolution", "of", "the", "particle", "concentration", ",", "d", "N", "(", "t", ")", ",", "will", "reach", "a", "maximum", "before", "dropping", "to", "zero", "when", "formation", "of", "new", "particles", "and", "losses", "of", "particles", "reach", "a", "steady", "state", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "region", "around", "this", "maximum", "is", "approximated", "with", "a", "Taylor", "series", "truncated", "after", "the", "second", "-", "order", "term", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "method", "for", "peak", "formation", "rates", "works", "best", "for", "single", "nucleation", "experiments", "as", "it", "was", "the", "standard", "procedure", "during", "CLOUD", "5", "rather", "than", "consecutive", "experiments", ",", "i.e", ".,", "an", "experiment", "where", "nucleation", "conditions", "are", "changed", "from", "neutral", "to", "Galacatic", "Cosmic", "Rays", "(", "GCR", ")", "and", "then", "to", "pion", "beam", "without", "a", "cleaning", "cycle", "in", "between", "[", "cf.", "Kirkby", "et", "al", ".,", "2011", ",", "Figure", "S1", "]", ".3", "Results", "." ]
+  }, {
+    "sentence_tokens" : [ "3.1", "Comparison", "With", "CLOUD", "Particle", "Formation", "Rates", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "the", "binary", "experiments", "during", "CLOUD", "3", ",", "a", "data", "set", "of", "particle", "formation", "rates", "at", "1.7", "nm", "(", "mobility", "equivalent", "diameter", ")", "exists", "[", "Kirkby", "et", "al", ".,", "2011", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "CLOUD", "5", "these", "data", "are", "summarized", "in", "K", "u", "rten", "et", "al.", "[", "2016", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "These", "data", "sets", "contain", "steady", "state", "particle", "formation", "rates", "that", "were", "corrected", "for", "losses", "[", "K", "u", "rten", "et", "al", ".,", "2015", ",", "2016", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "An", "overview", "of", "the", "measured", "and", "modeled", "particle", "formation", "rate", "as", "function", "of", "H", "SO", "when", "no", "NH", "is", "added", "is", "shown", "in", "Figure", "1", "for", "temperatures", "below", "273", "K", ",", "in", "Figure", "2", "for", "278", "K", ",", "and", "in", "Figure", "3", "for", "292", "K.", "For", "the", "calculated", "results", "the", "shaded", "area", "shows", "the", "variability", "due", "to", "a", "variation", "in", "the", "Gibbs", "energies", ",", "which", "were", "varied", "by", "doing", "two", "additional", "calculations", ",", "in", "one", "case", "adding", "and", "in", "the", "second", "case", "subtracting", "0.5", "kcal", "mol", "to", "the", "cluster", "Gibbs", "energies", "of", "stepwise", "sulphuric", "acid", "addition", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "approach", "is", "similar", "to", "the", "variation", "done", "by", "Lovejoy", "et", "al.", "[", "2004", "]", ";", "however", ",", "Lovejoy", "et", "al.", "[", "2004", "]", "used", "random", "normally", "distributed", "errors", "of", "the", "Gibbs", "energies", ",", "while", "we", "used", "an", "absolute", "shift", "for", "each", "step", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "choice", "of", "an", "absolute", "shift", "was", "made", "here", "to", "see", "the", "maximum", "change", "that", "could", "occur", "." ]
+  }, {
+    "sentence_tokens" : [ "Lovejoy", "et", "al.", "[", "2004", "]", "introduced", "this", "as", "a", "reasonable", "ad", "hoc", "assumption", "to", "explore", "the", "changes", "that", "are", "caused", "by", "such", "an", "assumption", "." ]
+  }, {
+    "sentence_tokens" : [ "As", "the", "absolute", "uncertainties", "are", "not", "known", "we", "also", "use", "a", "shift", "of", "0.5", "kcal", "mol", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "model", "results", "are", "all", "derived", "for", "a", "relative", "humidity", "of", "38", "%", "and", "the", "ion", "pair", "production", "rate", "is", "assumed", "to", "be", "75", "ion", "pairs", "cm", "s", "at", "278", "K", "in", "the", "case", "of", "pion", "beam", "nucleation", "(", "solid", "lines", "in", "Figures", "1", ",", "2", ",", "3", ")", "and", "4", "ion", "pairs", "cm", "s", "at", "278", "K", "for", "GCR", "nucleation", "(", "dotted", "lines", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "It", "is", "important", "that", "GCR", "in", "this", "context", "does", "not", "mean", "ionization", "only", "by", "galactic", "cosmic", "rays", "but", "also", "ionization", "by", "residual", "radiation", "from", "the", "CERN", "PS", "that", "penetrates", "the", "chamber", "and", "thus", "increases", "the", "ion", "pair", "production", "rate", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "ion", "pair", "production", "rates", "were", "scaled", "by", "the", "density", "of", "the", "chamber", "air", "at", "different", "temperatures.Although", "NH", "was", "not", "added", "during", "these", "experiments", "at", "278", "K", "and", "292", "K", "the", "ammonia", "contamination", "in", "the", "CLOUD", "chamber", "was", "considerable", "(", "the", "ammonia", "background", "concentration", "was", "around", "2", "pptv", "and", "4", "pptv", ")", "and", "the", "nucleation", "process", "was", "strongly", "influenced", "by", "ammonia", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "is", "confirmed", "by", "the", "APi", "-", "TOF", "measurements", "that", "show", "the", "presence", "of", "ammonia", "in", "the", "nucleating", "clusters", "see", "K", "u", "rten", "et", "al.", "[", "2016", "]", ",", "Duplissy", "et", "al.", "[", "2016", "]", ",", "and", "Schobesberger", "et", "al.", "[", "2015", "]", "for", "a", "comprehensive", "discussion", "of", "the", "NH", "background", "in", "the", "CLOUD", "chamber", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "contaminant", "ammonia", "most", "likely", "explains", "the", "difference", "in", "nucleation", "rates", "for", "the", "experimental", "(", "ternary", ")", "data", "and", "the", "binary", "model", "results", "at", "the", "warmer", "temperatures", "." ]
+  }, {
+    "sentence_tokens" : [ "At", "248", "K", "still", "some", "NH", "was", "detected", "during", "the", "experiments", ";", "however", ",", "the", "background", "was", "much", "lower", "(", "0.3", "pptv", ")", "and", "less", "ammonia", "was", "present", "in", "the", "APi", "-", "TOF", "data", "." ]
+  }, {
+    "sentence_tokens" : [ "It", "should", "be", "noted", "that", "for", "208", "K", "and", "223", "K", "the", "relative", "humidity", "in", "the", "CLOUD", "chamber", "differed", "from", "38", "%", ",", "but", "at", "these", "temperatures", "the", "influence", "of", "relative", "humidity", "is", "relatively", "low", "and", "does", "not", "affect", "the", "overview", "character", "of", "Figure", "1", "." ]
+  }, {
+    "sentence_tokens" : [ "Figure", "S1", "in", "the", "supporting", "information", "gives", "an", "indication", "of", "the", "humidity", "dependence", "for", "the", "five", "temperatures", "shown", "here", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "black", "line", "in", "Figure", "1", "shows", "the", "possible", "enhancement", "of", "the", "particle", "formation", "rates", "due", "to", "attractive", "interactions", "between", "neutral", "particles", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "attractive", "potential", "was", "described", "by", "the", "Hamaker", "potential", "[", "Hamaker", ",", "1937", "]", "assuming", "a", "Hamaker", "constant", "of", "6.4", "." ]
+  }, {
+    "sentence_tokens" : [ "10", "erg", "[", "Chan", "and", "Mozurkewich", ",", "2001", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "SAWNUC", "originally", "does", "not", "include", "any", "enhancements", "in", "the", "monomer", "uptake", "and", "coagulation", "rates", "of", "neutral", "species", "." ]
+  }, {
+    "sentence_tokens" : [ "Since", "the", "parametrization", "of", "the", "neutral", "channel", "to", "the", "results", "of", "Ball", "et", "al.", "[", "1999", "]", "was", "done", "without", "this", ",", "a", "reparametrization", "would", "be", "necessary", "but", "such", "a", "reparametrization", "is", "outside", "the", "scope", "of", "this", "paper.At", "292", "K", ",", "Figure", "3", ",", "the", "deviation", "between", "model", "and", "experiment", "is", "more", "pronounced", "than", "at", "278", "K." ]
+  }, {
+    "sentence_tokens" : [ "The", "simulated", "results", "at", "278", "K", "in", "Figure", "2", "show", "that", "at", "H2SO4", "=", "1", "." ]
+  }, {
+    "sentence_tokens" : [ "109", "cm", "the", "neutral", "nucleation", "exceeds", "the", "ion", "-", "induced", "nucleation", ",", "which", "reached", "its", "plateau", "at", "the", "value", "of", "the", "ion", "pair", "production", "rate", "." ]
+  }, {
+    "sentence_tokens" : [ "At", "lower", "temperatures", "the", "agreement", "between", "SAWNUC", "and", "experimental", "results", "is", "better", "as", "the", "influence", "of", "ternary", "nucleation", "decreases", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "decreasing", "influence", "can", "mainly", "be", "attributed", "to", "a", "significantly", "lower", "background", "concentration", "of", "NH", "at", "these", "temperatures", "." ]
+  }, {
+    "sentence_tokens" : [ "At", "temperatures", "below", "248", "K", "no", "ammonia", "was", "detected", "in", "the", "nucleating", "clusters", ",", "indicating", "that", "the", "ammonia", "had", "condensed", "to", "the", "walls", "[", "K", "u", "rten", "et", "al", ".,", "2016", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "the", "dependence", "of", "the", "particle", "formation", "rate", "to", "the", "Gibbs", "energies", "decreases", "with", "decreasing", "temperature", ",", "due", "to", "the", "exponential", "dependency", "of", "the", "evaporation", "rate", "(", "7", ")", "kid", "=", "ki", "-", "1a", "rho", "0exp", "beta", "Delta", "RGi0", "." ]
+  }, {
+    "sentence_tokens" : [ "Here", "Delta", "RGi0", "is", "the", "standard", "reaction", "Gibbs", "energy", "for", "the", "formation", "of", "cluster", "i", "from", "cluster", "i", "-", "1", ",", "ki", "-", "1a", "is", "the", "association", "rate", "constant", "for", "the", "cluster", "containing", "one", "H", "SO", "less", ",", "rho", "is", "the", "standard", "density", ",", "and", "beta", "=", "1kbT", "is", "the", "reciprocal", "temperature", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "exponential", "temperature", "dependence", "of", "the", "evaporation", "rate", "constant", "dominates", "over", "the", "weak", "T", "dependence", "of", "the", "forward", "rate", "constant", "and", "therefore", "controls", "the", "temperature", "dependence", "of", "the", "nucleation", "rate.Figure", "1", "shows", "that", "at", "low", "temperatures", "the", "particle", "formation", "rates", "can", "be", "higher", "for", "lower", "ion", "pair", "production", "rates", "." ]
+  }, {
+    "sentence_tokens" : [ "As", "already", "shown", "in", "Kazil", "and", "Lovejoy", "[", "2004", "]", ",", "this", "is", "mainly", "because", "of", "the", "reduced", "lifetime", "due", "to", "higher", "recombination", "rates", "of", "ions", "at", "high", "total", "ion", "concentration", "." ]
+  }, {
+    "sentence_tokens" : [ "At", "low", "total", "ion", "concentration", "losses", "to", "the", "wall", "are", "the", "dominant", "loss", "term", "for", "ions.Figure", "4", "gives", "a", "direct", "comparison", "between", "experimental", "and", "simulated", "formation", "rates", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "the", "correlation", "plot", "the", "same", "conditions", "as", "in", "the", "experiments", "were", "used", "in", "the", "simulation", "." ]
+  }, {
+    "sentence_tokens" : [ "It", "can", "be", "seen", "that", "overall", "there", "is", "good", "agreement", "between", "particle", "formation", "rates", "from", "SAWNUC", "and", "particle", "formation", "rates", "from", "CLOUD", "for", "temperatures", "between", "208", "to", "278", "K", "in", "the", "presence", "of", "ions", "(", "i.e", ".,", "GCR", "and", "with", "the", "pion", "beam", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "temperatures", "of", "208", "and", "223", "K", "neutral", "nucleation", "agrees", "well", "with", "the", "model", ",", "while", "the", "deviations", "at", "248", ",", "273", ",", "and", "292", "K", "are", "most", "likely", "due", "to", "ammonia", "contamination.Arrows", "in", "Figure", "4", "indicate", "data", "points", "that", "are", "outside", "of", "the", "given", "axis", "range", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "is", "the", "case", "for", "neutral", "nucleation", "at", "temperatures", "of", "278", "and", "292", "K", "(", "as", "mentioned", "in", "the", "discussion", "of", "Figures", "2", "and", "3", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "comparison", "for", "all", "the", "data", "is", "included", "in", "Table", "3", "that", "contains", "the", "parameters", "for", "linear", "least", "squares", "fits", "to", "logJsim", "versus", "logJexp", "for", "the", "various", "temperatures", "and", "neutral", "as", "well", "as", "ion", "-", "induced", "nucleation", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "case", "of", "perfect", "agreement", "the", "slope", "would", "be", "1", "and", "the", "intercept", "0", "." ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "these", "fits", "give", "a", "direct", "indication", "how", "good", "the", "agreement", "between", "experimental", "and", "simulated", "result", "is.3.2", "Comparison", "With", "Peak", "Particle", "Formation", "Rates", "." ]
+  }, {
+    "sentence_tokens" : [ "Figure", "5", "shows", "that", "the", "number", "concentration", "and", "d", "N", "can", "differ", "between", "two", "counting", "efficiencies", "." ]
+  }, {
+    "sentence_tokens" : [ "Due", "to", "this", "difference", ",", "the", "average", "of", "the", "maximum", "d", "N", "over", "all", "counting", "efficiencies", "is", "used", "to", "compare", "simulation", "and", "experiment", "for", "the", "CLOUD", "5", "data", "set", "." ]
+  }, {
+    "sentence_tokens" : [ "To", "take", "into", "account", "the", "different", "counting", "efficiencies", ",", "the", "upper", "and", "lower", "limits", "of", "the", "peak", "formation", "rates", "are", "used", "as", "uncertainties", "of", "the", "simulated", "particle", "formation", "rate", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "general", ",", "simulated", "and", "measured", "particle", "formation", "rates", "agree", "well", "for", "temperatures", "below", "273", "K", "(", "see", "Figure", "6", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "most", "of", "the", "particle", "counters", "the", "agreement", "between", "experimental", "and", "simulated", "values", "is", "within", "a", "factor", "of", "5", "for", "temperatures", "at", "or", "below", "278", "K.At", "temperatures", "of", "278", "K", "and", "above", ",", "NH", "contamination", "has", "a", "major", "influence", "on", "nucleation", ",", "especially", "for", "neutral", "nucleation", "." ]
+  }, {
+    "sentence_tokens" : [ "Here", "SAWNUC", "predicts", "peak", "particle", "formation", "rates", "which", "are", "considerably", "lower", "than", "the", "measured", "ones", "." ]
+  }, {
+    "sentence_tokens" : [ "Furthermore", ",", "the", "simulations", "did", ",", "in", "cases", "with", "relatively", "large", "cutoff", "diameters", ",", "not", "reach", "a", "maximum", "formation", "rate", "before", "the", "end", "of", "the", "simulated", "experiment", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "is", "especially", "a", "problem", "in", "case", "of", "low", "nucleation", "and", "growth", "rate", "conditions", "and", "particularly", "with", "NH", "contamination", "(", "i.e", ".,", "the", "experiment", "resulted", "in", "a", "quick", "nucleation", ",", "while", "a", "binary", "system", "would", "have", "not", "responded", "within", "that", "time", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "the", "direct", "comparison", "with", "the", "measured", "time", "series", "of", "H", "SO", "and", "ion", "pair", "production", "rate", "is", "limited", "to", "\"", "well", "behaved", "\"", "runs", ",", "i.e", ".,", "runs", "with", "an", "additional", "waiting", "period", "after", "the", "particle", "formation", "rate", "peaked", "." ]
+  }, {
+    "sentence_tokens" : [ "At", "higher", "temperature", "NH", "contamination", "is", "higher", "and", "has", "a", "major", "influence", "on", "nucleation", ",", "especially", "for", "neutral", "nucleation", "." ]
+  }, {
+    "sentence_tokens" : [ "Here", "SAWNUC", "predicts", "particle", "formation", "rates", "which", "are", "considerably", "lower", "than", "the", "measured", "ones.3.3", "Comparison", "of", "the", "Charged", "Cluster", "Distribution", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "APi", "-", "TOF", "provides", "an", "important", "insight", "into", "the", "distribution", "of", "charged", "clusters", "in", "the", "CLOUD", "chamber", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "comparison", "of", "measured", "charged", "cluster", "distributions", "at", "different", "temperatures", "with", "a", "simulated", "distribution", "is", "shown", "in", "Figures", "7", ",", "8,", "9", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "comparison", "includes", "only", "concentrations", "from", "CLOUD", "3", "at", "temperatures", "from", "292", "K", "to", "248", "K", "as", "at", "lower", "temperatures", "for", "conditions", "in", "CLOUD", "5", "a", "reliable", "conversion", "from", "count", "rates", "to", "absolute", "concentrations", "is", "not", "available", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "high", "temperatures", "(", "292", "K", ",", "Figure", "7", ")", "the", "position", "of", "the", "measured", "and", "simulated", "maxima", "both", "appear", "at", "the", "cluster", "containing", "three", "sulphuric", "acid", "molecules", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "modeled", "clusters", "include", "a", "certain", "water", "content", ",", "for", "each", "cluster", "this", "water", "does", "not", "appear", "in", "the", "measured", "clusters", "due", "to", "evaporation", "inside", "the", "APi", "-", "TOF", "(", "see", "below", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "At", "278", "K", "(", "Figure", "8)", "the", "measured", "peak", "position", "is", "decreased", "by", "one", "H", "SO", "molecule", "compared", "to", "the", "SAWNUC", "result", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "can", "be", "explained", "by", "fragmentation", "of", "the", "clusters", "inside", "the", "APi", "-", "TOF", "(", "as", "discussed", "below", ")", "or", "errors", "in", "the", "experimental", "Gibbs", "energies", "used", "in", "SAWNUC", "." ]
+  }, {
+    "sentence_tokens" : [ "Lovejoy", "et", "al.", "[", "2004", "]", "used", "an", "uncertainty", "in", "the", "Gibbs", "energies", "of", "+/-", "0.5", "kcal", "mol", "." ]
+  }, {
+    "sentence_tokens" : [ "To", "show", "the", "sensitivity", "of", "the", "distribution", ",", "this", "value", "is", "used", "as", "upper", "and", "lower", "bounds", "in", "the", "calculation", "." ]
+  }, {
+    "sentence_tokens" : [ "Variations", "in", "the", "Gibbs", "energy", "within", "the", "applied", "+/-", "0.5", "kcal", "mol", "could", "partially", "explain", "the", "shift", "in", "the", "maximum", "of", "the", "cluster", "distribution", ",", "but", "not", "the", "difference", "of", "almost", "an", "order", "of", "magnitude", "between", "the", "simulated", "and", "modeled", "(", "H2SO4", ")", "3", "." ]
+  }, {
+    "sentence_tokens" : [ "HSO4", "-", "." ]
+  }, {
+    "sentence_tokens" : [ "Also", "the", "high", "HSO4", "-", "concentrations", "indicate", "that", "the", "most", "likely", "cause", "of", "the", "discrepancy", "is", "fragmentation", "inside", "the", "APi", "-", "TOF.Figures", "10", ",", "11", ",", "12", "show", "calculated", "steady", "state", "cluster", "concentrations", "versus", "the", "cluster", "concentration", "measured", "with", "the", "APi", "-", "TOF", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "number", "of", "sulphuric", "acid", "molecules", "in", "each", "cluster", "is", "color", "coded", "." ]
+  }, {
+    "sentence_tokens" : [ "These", "figures", "show", "the", "data", "for", "the", "whole", "CLOUD", "3", "campaign", ",", "at", "temperatures", "from", "292", "K", "to", "248", "K.", "From", "Figures", "10", "and", "11", "it", "is", "evident", "that", "SAWNUC", "predicts", "lower", "concentrations", "of", "the", "smallest", "clusters", "and", "higher", "concentrations", "of", "clusters", "containing", "between", "four", "and", "eight", "sulphuric", "acid", "molecules", "(", "with", "the", "HSO4", "-", "core", "ion", "included", "in", "that", "number", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "possible", "explanation", "is", "evaporation", "and", "fragmentation", "in", "the", "mass", "spectrometer", "." ]
+  }, {
+    "sentence_tokens" : [ "When", "entering", "the", "low", "pressure", "region", "of", "the", "first", "stage", "of", "the", "APi", "-", "TOF", ",", "the", "pressure", "drops", "to", "0.002", "bar", "." ]
+  }, {
+    "sentence_tokens" : [ "After", "an", "initial", "adiabatic", "cooling", ",", "the", "clusters", "will", "be", "heated", "up", "again", "by", "collisions", "with", "residual", "gas", "molecules", "in", "the", "first", "stage", "and", "acceleration", "by", "electric", "fields", "in", "the", "atmospheric", "pressure", "interface", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "process", "will", "lead", "to", "a", "substantial", "energy", "deposition", "into", "the", "clusters", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "larger", "cluster", "should", "be", "able", "to", "dissipate", "this", "energy", "into", "more", "vibrational", "modes", "of", "freedom", "." ]
+  }, {
+    "sentence_tokens" : [ "Furthermore", ",", "larger", "clusters", "contain", "more", "water", "molecules", "when", "entering", "the", "mass", "spectrometer", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "initial", "evaporation", "of", "these", "water", "molecules", "can", "cool", "down", "the", "cluster", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "high", "HSO4", "-", "concentration", "is", "the", "result", "of", "fragmentation", "of", "clusters", "containing", "a", "few", "H", "SO", "molecules", "." ]
+  }, {
+    "sentence_tokens" : [ "Fragmentation", "does", "not", "occur", "by", "stepwise", "evaporation", "of", "H", "SO", "thus", "enabling", "(", "H2SO4", ")", "i", "-", "1", "." ]
+  }, {
+    "sentence_tokens" : [ "HSO4", "-", ",", "with", "i", ">=", "4", ",", "to", "fragment", "to", "HSO4", "-", "and", "(", "H2SO4", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "HSO4", "-", "without", "having", "the", "relatively", "stable", "(", "H2SO4", ")", "2", "." ]
+  }, {
+    "sentence_tokens" : [ "HSO4", "-", "as", "intermediate", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "dependence", "of", "possible", "fragmentation", "reactions", "is", "further", "complicated", "by", "a", "possible", "dependence", "on", "the", "initial", "state", "of", "the", "charged", "clusters", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "example", ",", "at", "248", "K", "there", "is", "no", "clear", "fragmentation", "pattern", "visible", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "possible", "explanation", "is", "that", "the", "clusters", "entering", "the", "mass", "spectrometer", "do", "not", "heat", "up", "fast", "enough", ",", "from", "the", "relatively", "low", "temperature", "of", "their", "initial", "state", ",", "to", "allow", "for", "fragmentation", "." ]
+  }, {
+    "sentence_tokens" : [ "Furthermore", ",", "relatively", "stable", "clusters", "do", "probably", "not", "fragment", "in", "the", "APi", "-", "TOF", ",", "for", "example", ",", "the", "(", "H2SO4", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "HSO4", "-", "appears", "to", "be", "stable", "enough", "to", "be", "detected", "and", "is", "the", "largest", "fragmentation", "product", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "same", "is", "probably", "true", "for", "very", "stable", "clusters", "containing", "dimethyl", "amine", ",", "such", "as", "the", "clusters", "described", "in", "K", "u", "rten", "et", "al.", "[", "2014", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Evaporation", "of", "clusters", "can", "also", "occur", "inside", "the", "sampling", "line", "during", "the", "transition", "from", "the", "chamber", "to", "the", "mass", "spectrometer", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "depletion", "of", "H", "SO", "in", "the", "sampling", "line", ",", "due", "to", "losses", "to", "the", "walls", ",", "results", "in", "a", "lower", "sulphuric", "acid", "uptake", "of", "the", "clusters", "and", "shifts", "the", "expected", "equilibrium", "cluster", "distribution", "." ]
+  }, {
+    "sentence_tokens" : [ "It", "is", "therefore", "possible", "that", "clusters", "evaporate", "toward", "a", "new", "distribution", "during", "the", "sampling", "process", "." ]
+  }, {
+    "sentence_tokens" : [ "Whether", "the", "clusters", "reach", "the", "new", "steady", "state", "distribution", "depends", "on", "their", "evaporation", "rate", "and", "the", "dwell", "time", "in", "the", "sampling", "line", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "such", "an", "evaporation", "cannot", "explain", "the", "high", "concentrations", "of", "HSO", "4", "-", "and", "(", "H2SO4", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "HSO4", "-", "seen", "in", "Figures", "10", "and", "11.The", "presence", "of", "ammonia", "can", "also", "lower", "the", "concentration", "of", "measured", "clusters", "larger", "than", "(", "H2SO4", ")", "3", "." ]
+  }, {
+    "sentence_tokens" : [ "HSO4", "-", "compared", "to", "the", "SAWNUC", "model", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "case", "the", "clusters", "containing", "several", "sulphuric", "acid", "and", "the", "bisulphate", "ion", "will", "take", "up", "ammonia", "and", "would", "therefore", "appear", "in", "a", "different", "channel", "in", "the", "APi", "-", "TOF", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "it", "is", "difficult", "to", "explain", "the", "very", "high", "HSO4", "-", "signal", "in", "the", "APi", "-", "TOF", "if", "only", "NH", "uptake", "would", "be", "responsible", "for", "it", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "does", "not", "exclude", "the", "possibility", "that", "ammonia", "containing", "clusters", "fragment", "in", "the", "APi", "-", "TOF", "and", "leave", "HSO4", "-", "as", "the", "detected", "fragment", "." ]
+  }, {
+    "sentence_tokens" : [ "Additionally", ",", "the", "influence", "of", "ammonia", "for", "the", "charged", "cluster", "distribution", "is", "already", "much", "smaller", "at", "278", "K", ",", "and", "also", ",", "there", "is", "a", "HSO4", "-", "signal", "present", "in", "the", "APi", "-", "TOF", "that", "is", "clearly", "elevated", "compared", "to", "the", "abundance", "expected", "from", "SAWNUC.Besides", "fragmentation", ",", "another", "reason", "for", "the", "observed", "discrepancies", "in", "the", "cluster", "distribution", "could", "be", "an", "underestimation", "of", "the", "uncertainties", "in", "the", "mass", "-", "dependent", "transmission", "efficiencies", "of", "the", "APi", "-", "TOF", "mass", "spectrometer", "." ]
+  }, {
+    "sentence_tokens" : [ "If", "the", "transmission", "efficiencies", "varied", "strongly", "over", "the", "mass", "range", "between", "the", "HSO4", "-", "and", "(", "H2SO4", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "HSO4", "-", "signals", ",", "leading", "to", "an", "overestimation", "of", "the", "HSO", "4", "-", "signal", "relative", "to", "the", "signals", "from", "the", "larger", "clusters", ",", "then", "the", "observed", "cluster", "distribution", "could", "result", "." ]
+  }, {
+    "sentence_tokens" : [ "Further", "technical", "studies", "should", "be", "made", "on", "transmission", "functions", "of", "the", "APi", "-", "TOF", "mass", "spectrometer", "[", "Junninen", "et", "al", ".,", "2010", ";", "Heinritzi", "et", "al", ".,", "2015", "]", ".4", "Summary", "and", "Conclusions", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "direct", "comparison", "of", "binary", "H", "SO", "-", "H", "O", "aerosol", "formation", "between", "the", "CLOUD", "measurements", "and", "the", "SAWNUC", "model", "over", "the", "temperature", "range", "of", "208", "to", "292", "K", "yields", "several", "conclusions", "." ]
+  }, {
+    "sentence_tokens" : [ "First", ",", "the", "derived", "nucleation", "rates", "agree", "well", "for", "the", "temperature", "range", "of", "208", "-", "223", "K", ",", "for", "ion", "-", "induced", "and", "neutral", "nucleation", "." ]
+  }, {
+    "sentence_tokens" : [ "Nucleation", "rates", "at", "temperatures", "below", "230", "K", "show", "only", "a", "small", "dependence", "on", "the", "evaporation", "rates", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "they", "still", "exhibit", "some", "dependence", "on", "evaporation", "rates", "and", "provide", "an", "important", "limit", "for", "the", "Gibbs", "energies", "of", "the", "neutral", "and", "charged", "clusters", "." ]
+  }, {
+    "sentence_tokens" : [ "At", "248", "and", "278", "K", "the", "modeled", "neutral", "nucleation", "rates", "are", "substantially", "smaller", "than", "the", "measured", "ones", ",", "but", "the", "ion", "-", "induced", "nucleation", "rates", "are", "described", "well", "by", "SAWNUC", ",", "especially", "for", "high", "ion", "pair", "production", "rates", "(", "pion", "beam", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "demonstrates", "that", "the", "evaporation", "rates", "of", "the", "ion", "clusters", "are", "described", "adequately", "in", "SAWNUC", "and", "implicitly", "confirms", "also", "the", "experimental", "results", "of", "Curtius", "et", "al.", "[", "2001", "]", ",", "Lovejoy", "and", "Curtius", "[", "2001", "]", ",", "and", "Froyd", "and", "Lovejoy", "[", "2003", "]", "that", "provide", "the", "thermochemical", "data", "for", "the", "ion", "-", "induced", "nucleation", "path", "in", "SAWNUC", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "GCR", "nucleation", "rates", "at", "278", "K", "still", "agree", "reasonably", "well", "but", "the", "CLOUD", "rates", "are", "typically", "a", "factor", "5", "higher", "than", "SAWNUC", "predictions", "most", "likely", "due", "to", "contaminant", "ammonia", "concentrations", "of", "a", "few", "pptv", "." ]
+  }, {
+    "sentence_tokens" : [ "Here", "the", "nucleation", "mechanism", "transitions", "into", "a", "ternary", "nucleation.At", "the", "warmer", "temperatures", "of", "278", "K", "and", "more", "pronounced", "at", "292", "K", ",", "the", "experimental", "nucleation", "rates", "are", "found", "to", "be", "substantially", "higher", "than", "the", "predictions", "from", "SAWNUC", "." ]
+  }, {
+    "sentence_tokens" : [ "At", "292", "K", "the", "experimental", "rates", "are", "at", "least", "a", "factor", "10", "higher", "than", "expected", "by", "SAWNUC", "for", "binary", "nucleation", "and", "often", "several", "orders", "of", "magnitude", "higher", "." ]
+  }, {
+    "sentence_tokens" : [ "Here", "the", "measured", "nucleation", "is", "a", "ternary", "nucleation", "where", "SAWNUC", "can", "only", "provide", "lower", "limits", "of", "the", "nucleation", "rate.Considering", "the", "enormous", "range", "(", "many", "orders", "of", "magnitude", ")", "of", "binary", "nucleation", "rates", "that", "had", "been", "reported", "for", "comparable", "conditions", "in", "the", "literature", "[", "cf.", "Benson", "et", "al", ".,", "2008", ",", "and", "references", "therein", "]", ",", "the", "agreement", "between", "SAWNUC", "and", "CLOUD", "over", "a", "range", "of", "temperatures", "and", "H", "SO", "concentrations", "is", "very", "good", "(", "i.e", ".,", "for", "temperatures", "of", "208", "-", "223", "K", "for", "neutral", "nucleation", "and", "for", "208", "-", "278", "K", "for", "ion", "-", "induced", "nucleation", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Note", "that", "the", "SAWNUC", "model", "is", "entirely", "independent", "of", "the", "CLOUD", "measurements", "and", "there", "are", "no", "free", "parameters", "in", "the", "model.Second", ",", "we", "conclude", "that", "SAWNUC", "can", "be", "used", "to", "model", "directly", "the", "particle", "concentration", "measurements", "of", "a", "CPC", "during", "nucleation", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "comparison", "works", "reasonably", "well", "but", "is", "limited", "especially", "by", "the", "uncertainties", "of", "the", "detection", "efficiency", "function", "of", "the", "CPC", "as", "a", "function", "of", "particle", "size", ",", "chemical", "composition", ",", "and", "charging", "state.Third", ",", "the", "sulphuric", "acid", "ion", "cluster", "distributions", "modeled", "by", "SAWNUC", "compared", "reasonably", "well", "with", "APi", "-", "TOF", "measurements", "at", "248", "K." ]
+  }, {
+    "sentence_tokens" : [ "As", "an", "important", "difference", "at", "temperatures", "of", "278", "and", "292", "K", ",", "the", "monomer", "concentration", "was", "generally", "found", "to", "be", "unexpectedly", "high", "in", "the", "APi", "-", "TOF", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "is", "most", "likely", "explained", "by", "the", "fragmentation", "or", "evaporation", "of", "larger", "clusters", "in", "the", "APi", "-", "TOF", "or", "by", "inaccuracies", "of", "the", "mass", "-", "dependent", "transfer", "function.5", "Outlook", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "a", "future", "study", ",", "SAWNUC", "should", "be", "extended", "to", "take", "into", "account", "ternary", "vapors", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "results", "of", "Froyd", "and", "Lovejoy", "[", "2012", "]", "should", "be", "included", "together", "with", "the", "development", "of", "SAWNUC", "to", "include", "ternary", "or", "general", "multicomponent", "nucleation", "." ]
+  }, {
+    "sentence_tokens" : [ "Before", "such", "studies", "can", "be", "conducted", "a", "detailed", "sensitivity", "study", "must", "be", "performed", "to", "define", "the", "most", "important", "parameters", "for", "determining", "the", "free", "energies", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "optimization", "of", "such", "parameters", "should", "be", "done", "by", "fitting", "them", "to", "tabulated", "ternary", "particle", "formation", "rates", "from", "clean", "experiments", ",", "e.g", ".,", "Zollner", "et", "al.", "[", "2012", "]", ",", "Glasoe", "et", "al.", "[", "2015", "]", ",", "and", "CLOUD", "data", "." ]
+  }, {
+    "sentence_tokens" : [ "Although", "the", "present", "CLOUD", "data", "already", "cover", "a", "large", "range", "of", "temperatures", "and", "H", "SO", "concentrations", ",", "additional", "measurements", "that", "are", "free", "of", "NH", "are", "needed", "to", "allow", "a", "detailed", "direct", "comparison", "of", "SAWNUC", "and", "CLOUD", "at", "warm", "temperatures", "(", "~", "292", "K", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "humidity", "dependence", "of", "binary", "neutral", "and", "ion", "-", "induced", "nucleation", "also", "needs", "to", "be", "studied", "in", "more", "detail", "in", "future", "CLOUD", "experiments", "." ]
+  } ]
+}

@@ -1,149 +1,1064 @@
-[ {
-  "sentence_tokens" : [ "FERMT1", "has", "been", "shown", "to", "interact", "directly", "with", "beta-catenin", "and", "activated", "the", "Wnt/beta-catenin", "signalling", "pathway", "by", "decreasing", "the", "phosphorylation", "level", "of", "beta-catenin", "in", "colon", "cancer", "." ],
-  "event_indices" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22 ],
-  "type" : "Positive_regulation",
-  "polarity" : true,
-  "controller_indices" : [ 0, 1 ],
-  "controlled_indices" : [ 19, 20, 21, 22 ],
-  "trigger_indices" : [ 10, 11 ],
-  "rule_name" : "Positive_regulation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "In", "breast", "cancer", "patients", ",", "AGR2", "was", "associated", "with", "poorer", "survival", "and", "increased", "metastasis", "[", "47", "]", "." ],
-  "event_indices" : [ 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 5, 6 ],
-  "controlled_indices" : [ 13, 14 ],
-  "trigger_indices" : [ 12, 13 ],
-  "rule_name" : "Positive_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Fresh", "tumour", "samples", "from", "human", "pancreatic", "adenocarcinoma", "patients", "were", "implanted", "in", "severe", "combined", "immunodeficiency", "(", "SCID", ")", "mice", "." ],
-  "entity_one_indices" : [ 17, 18 ],
-  "entity_two_indices" : [ 11, 12, 13, 14 ]
-}, {
-  "sentence_tokens" : [ "The", "human", "origin", "of", "the", "PDX", "was", "confirmed", "using", "human", "specific", "antibodies", ";", "however", ",", "the", "stromal", "component", "was", "replaced", "by", "murine", "cells", "." ],
-  "entity_one_indices" : [ 10, 11, 12 ],
-  "entity_two_indices" : [ 5, 6 ]
-}, {
-  "sentence_tokens" : [ "The", "number", "of", "mice", "per", "patient", "implanted", "varied", "from", "3", "to", "5", "depending", "on", "the", "tumour", "type", "and", "quantity", "." ],
-  "entity_one_indices" : [ 16, 17 ],
-  "entity_two_indices" : [ 3, 4 ]
-}, {
-  "sentence_tokens" : [ "KRAS", "mutation", "were", "detected", "in", "8/10", "samples", "and", "PIK3R1", "mutations", "were", "detected", "in", "5/10", "samples", "." ],
-  "entity_one_indices" : [ 8, 9 ],
-  "entity_two_indices" : [ 0, 1 ]
-}, {
-  "sentence_tokens" : [ "Two", "further", "tumour", "cell", "lines", "failed", "to", "proliferate", "after", "initial", "sub-culturing", ":", "PIN", "089", "and", "PIN", "091", "." ],
-  "entity_one_indices" : [ 15, 16 ],
-  "entity_two_indices" : [ 12, 13 ]
-}, {
-  "sentence_tokens" : [ "The", "two", "stromal", "cell", "lines", ",", "Fibro-102", "and", "Fibro", "120", ",", "have", "been", "successfully", "cultured", ",", "cryo", "preserved", "and", "restored", "." ],
-  "entity_one_indices" : [ 8, 9, 10 ],
-  "entity_two_indices" : [ 6, 7 ]
-}, {
-  "sentence_tokens" : [ "The", "complete", "dataset", "in", "this", "publication", "have", "been", "deposited", "in", "NCBI", "'", "s", "Gene", "Expression", "Omnibus", ",", "GEO", "Series", "accession", "number", "GSE141873", "[", "13,14,16", "]", "." ],
-  "entity_one_indices" : [ 13, 14, 15 ],
-  "entity_two_indices" : [ 10, 11, 12, 13 ]
-}, {
-  "sentence_tokens" : [ "TOP2A", "(", "Figure", "5E", ")", "showed", "a", "6.4-fold", "increase", "(", "p", "=", "2.00", "x", "10", ")", "in", "the", "tumour", "compared", "to", "adjacent", "normal", "tissue", "(", "p", "=", "2.00", "x", "10", ")", "and", "a", "further", "3.8-fold", "increase", "in", "the", "PDX", "F1", "tissue", "compared", "to", "the", "patient", "tumour", "." ],
-  "entity_one_indices" : [ 2, 3, 4 ],
-  "entity_two_indices" : [ 0, 1 ]
-}, {
-  "sentence_tokens" : [ "MUC1", "has", "been", "shown", "to", "be", "overexpressed", "in", "pancreatic", "cancer", "[", "18", "]", ",", "and", "has", "been", "associated", "with", "multidrug", "resistance", "and", "gemcitabine", "resistance", "[", "19", "]", "." ],
-  "entity_one_indices" : [ 22, 23 ],
-  "entity_two_indices" : [ 0, 1 ]
-}, {
-  "sentence_tokens" : [ "Depending", "upon", "the", "size", "and", "type", "of", "tumour", "material", ",", "3", "-", "5", "mice", "were", "implanted", "per", "patient", "sample", "." ],
-  "entity_one_indices" : [ 13, 14 ],
-  "entity_two_indices" : [ 5, 6 ]
-}, {
-  "sentence_tokens" : [ "A", "decrease", "in", "body", "weight", "of", ">", "10", "%", "resulted", "in", "increased", "monitoring", "with", "body", "weight", "decrease", "of", "20", "%", "resulting", "in", "humane", "euthanasia", "." ],
-  "entity_one_indices" : [ 14, 15, 16 ],
-  "entity_two_indices" : [ 3, 4, 5 ]
-}, {
-  "sentence_tokens" : [ "Following", "humane", "euthanasia", "of", "the", "mouse", ",", "the", "tumour", "was", "divided", "for", "cryopreservation", ",", "formalin", "fixed", "paraffin", "embedding", "(", "FFPE", ")", "and", "snap", "frozen", "." ],
-  "entity_one_indices" : [ 19, 20 ],
-  "entity_two_indices" : [ 14, 15, 16, 17, 18 ]
-}, {
-  "sentence_tokens" : [ "Real", "Envision", "Detection", "System", "Peroxidase", "and", "DAB+", "." ],
-  "entity_one_indices" : [ 6, 7 ],
-  "entity_two_indices" : [ 4, 5 ]
-}, {
-  "sentence_tokens" : [ "On", "the", "autostainer", "(", "DAKO", ")", ",", "slides", "were", "blocked", "for", "10", "min", "with", "200", "mu", "L", "HRP", "Block", "(", "DAKO", ")", "." ],
-  "entity_one_indices" : [ 20, 21 ],
-  "entity_two_indices" : [ 15, 16, 17, 18, 19 ]
-}, {
-  "sentence_tokens" : [ "Slides", "were", "once", "again", "washed", "with", "1", "x", "wash", "buffer", "and", "then", "incubated", "with", "200", "mu", "L", "Real", "EnVision", "(", "DAKO", ")", "for", "30", "min", "." ],
-  "entity_one_indices" : [ 20, 21 ],
-  "entity_two_indices" : [ 15, 16, 17, 18, 19 ]
-}, {
-  "sentence_tokens" : [ "All", "slides", "were", "then", "counterstained", "with", "haematoxylin", "(", "DAKO", ")", "for", "5", "min", "and", "were", "rinsed", "with", "deionised", "water", "and", "then", "with", "wash", "buffer", "." ],
-  "entity_one_indices" : [ 8, 9 ],
-  "entity_two_indices" : [ 6, 7 ]
-}, {
-  "sentence_tokens" : [ "The", "genes", "were", "further", "subdivided", "by", "pathway", ",", "and", "include", "MAPK", ",", "PI3K", "and", "related", "pathway", "genes", "(", "Supplementary", "Table", "S3", ")", "." ],
-  "entity_one_indices" : [ 12, 13 ],
-  "entity_two_indices" : [ 10, 11 ]
-}, {
-  "sentence_tokens" : [ "Per", "1", "mL", "of", "Trizol", "reagent", "used", ",", "200", "mu", "L", "of", "chloroform", "was", "added", "to", "the", "Eppendorf", "(", "Hamburg", ",", "Germany", ")", ",", "sample", "was", "mixed", "and", "allowed", "to", "sit", "for", "5", "min", "." ],
-  "entity_one_indices" : [ 12, 13 ],
-  "entity_two_indices" : [ 2, 3 ]
-}, {
-  "sentence_tokens" : [ "500", "mu", "L", "of", "isopropanol", "was", "added", "to", "the", "aqueous", "phase", ",", "allowed", "to", "sit", "at", "room", "temperature", "for", "10", "min", ",", "after", "which", "it", "was", "spun", "at", "12,000", "x", "g", "at", "4", "degrees", "C", "for", "10", "min", "." ],
-  "entity_one_indices" : [ 4, 5 ],
-  "entity_two_indices" : [ 1, 2, 3 ]
-}, {
-  "sentence_tokens" : [ "Preparation", "of", "cRNA", ",", "hybridization", ",", "and", "scanning", "of", "microarrays", "was", "performed", "according", "to", "the", "manufacturer", "'", "s", "protocol", "(", "Affymetrix", ",", "Thermo-Fischer", ",", "Santa", "Clara", ",", "Ca", ",", "USA", ")", "." ],
-  "entity_one_indices" : [ 27, 28 ],
-  "entity_two_indices" : [ 24, 25 ]
-}, {
-  "sentence_tokens" : [ "The", "chips", "were", "scanned", "in", "an", "Affymetrix", "3000", "7G", "scanner.Differential", "gene", "analysis", "expression", "was", "carried", "out", "using", "Applied", "Biosystems", "Transcriptome", "Analysis", "Console", "(", "TAC", ")", "software", "4.0.2", "." ],
-  "entity_one_indices" : [ 23, 24 ],
-  "entity_two_indices" : [ 1, 2 ]
-}, {
-  "sentence_tokens" : [ "Mutational", "analyses", "by", "Sequenom", "MassArray", "MALDI-TOF", "showed", "80", "%", "of", "samples", "examined", "possessed", "a", "KRAS", "mutation", "." ],
-  "entity_one_indices" : [ 14, 15 ],
-  "entity_two_indices" : [ 5, 6 ]
-}, {
-  "sentence_tokens" : [ "The", "bank", "established", "in", "this", "study", "displays", "a", "higher", "engraftment", "rate", "for", "PDAC", "tumours", "than", "many", "others", "previously", "reported", "." ],
-  "entity_one_indices" : [ 12, 13 ],
-  "entity_two_indices" : [ 1, 2 ]
-}, {
-  "sentence_tokens" : [ "Two", "recent", "reports", "showed", "similar", "engraftment", "rates", "(", "72", "%", "and", "71", "%", ")", ",", "although", "this", "was", "observed", "in", "more", "immune", "compromised", "NSG", "and", "NSG", "nude", "mice", "[", "33,34", "]", "." ],
-  "entity_one_indices" : [ 25, 26 ],
-  "entity_two_indices" : [ 23, 24 ]
-}, {
-  "sentence_tokens" : [ "SERPINA3", "has", "been", "associated", "with", "endometrial", "cancers", "[", "37", "]", "and", "undifferentiated", "carcinoma", "with", "osteoclast", "like", "giant", "cells", ",", "a", "rare", "pancreatic", "cancer", "[", "38", "]", "." ],
-  "entity_one_indices" : [ 12, 13 ],
-  "entity_two_indices" : [ 0, 1 ]
-}, {
-  "sentence_tokens" : [ "In", "a", "meta-analysis", "of", "publicly", "available", "datasets", "of", "transcriptome", "data", "for", "human", "pancreas", "specimens", "and", "a", "GEM", "mouse", "models", "Bhasin", "et", "al.", "included", "SERPINB5", "as", "one", "the", "of", "the", "genes", "in", "a", "five", "gene", "panel", "for", "discriminating", "PDAC", "and", "early", "precursor", "lesions", "." ],
-  "entity_one_indices" : [ 37, 38 ],
-  "entity_two_indices" : [ 23, 24 ]
-}, {
-  "sentence_tokens" : [ "In", "oesophageal", "cancer", ",", "overexpression", "of", "FERMT1", "by", "lenti-viral", "vector", "increased", "proliferation", "and", "radiation", "resistance", "in", "vitro", "[", "44", "]", "." ],
-  "entity_one_indices" : [ 11, 12 ],
-  "entity_two_indices" : [ 6, 7 ]
-}, {
-  "sentence_tokens" : [ "FERMT1", "is", "a", "putative", "downstream", "gene", "target", "of", "EPS8", "[", "45", "]", "." ],
-  "entity_one_indices" : [ 8, 9 ],
-  "entity_two_indices" : [ 0, 1 ]
-}, {
-  "sentence_tokens" : [ "While", "changes", "in", "EPS8", "were", "not", "seen", "in", "our", "data", "set", ",", "FERMT1", "changes", "were", "seen", "." ],
-  "entity_one_indices" : [ 12, 13 ],
-  "entity_two_indices" : [ 3, 4 ]
-}, {
-  "sentence_tokens" : [ "This", "highlighted", "SLC6A14", "as", "a", "potential", "prognostic", "biomarker", "of", "pancreatic", "cancer", "." ],
-  "entity_one_indices" : [ 7, 8 ],
-  "entity_two_indices" : [ 2, 3 ]
-}, {
-  "sentence_tokens" : [ "Interestingly", "CENPF", "and", "SERBINB5", "were", "also", "included", "in", "this", "panel", "of", "prognostic", "genes", "." ],
-  "entity_one_indices" : [ 3, 4 ],
-  "entity_two_indices" : [ 1, 2 ]
-}, {
-  "sentence_tokens" : [ "These", "genes", "were", "predominantly", "associated", "with", "proliferation", ",", "cell", "cycles", "and", "mitotic", "processes", ",", "suggesting", "a", "significant", "role", "in", "tumour", "proliferation", ",", "progression", "and", "tumour", "engraftment", "in", "vivo", "." ],
-  "entity_one_indices" : [ 20, 21 ],
-  "entity_two_indices" : [ 6, 7 ]
-} ]
+{
+  "regulations" : [ {
+    "sentence_tokens" : [ "FERMT1", "has", "been", "shown", "to", "interact", "directly", "with", "beta-catenin", "and", "activated", "the", "Wnt/beta-catenin", "signalling", "pathway", "by", "decreasing", "the", "phosphorylation", "level", "of", "beta-catenin", "in", "colon", "cancer", "." ],
+    "event_indices" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22 ],
+    "type" : "Positive_regulation",
+    "polarity" : true,
+    "controller_indices" : [ 0, 1 ],
+    "controlled_indices" : [ 19, 20, 21, 22 ],
+    "trigger_indices" : [ 10, 11 ],
+    "rule_name" : "Positive_regulation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "In", "breast", "cancer", "patients", ",", "AGR2", "was", "associated", "with", "poorer", "survival", "and", "increased", "metastasis", "[", "47", "]", "." ],
+    "event_indices" : [ 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 5, 6 ],
+    "controlled_indices" : [ 13, 14 ],
+    "trigger_indices" : [ 12, 13 ],
+    "rule_name" : "Positive_activation_syntax_1_verb",
+    "rule" : null
+  } ],
+  "hardInstances" : [ {
+    "sentence_tokens" : [ "FERMT1", "has", "been", "shown", "to", "interact", "directly", "with", "beta-catenin", "and", "activated", "the", "Wnt/beta-catenin", "signalling", "pathway", "by", "decreasing", "the", "phosphorylation", "level", "of", "beta-catenin", "in", "colon", "cancer", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 12, 13 ], [ 13, 14, 15 ] ]
+  } ],
+  "withoutRegulations" : [ {
+    "sentence_tokens" : [ "SERPINA3", "has", "been", "associated", "with", "endometrial", "cancers", "[", "37", "]", "and", "undifferentiated", "carcinoma", "with", "osteoclast", "like", "giant", "cells", ",", "a", "rare", "pancreatic", "cancer", "[", "38", "]", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "is", "in", "line", "with", "previously", "published", "data", "the", "shows", ",", "once", "established", ",", "xenografts", "tend", "to", "be", "robust", "with", "stable", "gene", "expression", "profile", "between", "early", "and", "late", "passage", "PDX", "tumours", "[", "31", "]", "." ],
+    "entities_indices" : [ [ 21, 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "MUC13", "was", "significantly", "increased", "in", "both", "the", "N", "vs.", "T", "comparison", "(", "9.4-fold", ")", "and", "the", "T", "vs.", "F1", "comparison", "(", "3.0-fold", ")", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "Frozen", "samples", "from", "F1", "PDX", "tumours", "could", "be", "later", "successfully", "passaged", "in", "SCID", "mice", "to", "F2", "PDX", "tumours", "." ],
+    "entities_indices" : [ [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "selection", "of", "the", "genes", "shortlisted", "and", "described", "here", ",", "have", "previously", "been", "associated", "with", "pancreatic", "cancer", "and", "validated", "as", "having", "an", "effect", "on", "proliferation", ",", "invasion", "and", "migration.Serpin", "family", "B", "member", "5", ",", "SERPINB5", ",", "had", "the", "largest", "fold", "change", "in", "the", "T", "vs.", "F1", "analysis", "and", "in", "the", "top", "ten", "differentially", "expressed", "genes", "in", "the", "T", "vs.", "N", "analysis", "." ],
+    "entities_indices" : [ [ 24, 25 ], [ 26, 27 ], [ 34, 35 ] ]
+  }, {
+    "sentence_tokens" : [ "While", "changes", "in", "EPS8", "were", "not", "seen", "in", "our", "data", "set", ",", "FERMT1", "changes", "were", "seen", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "500", "mu", "L", "of", "isopropanol", "was", "added", "to", "the", "aqueous", "phase", ",", "allowed", "to", "sit", "at", "room", "temperature", "for", "10", "min", ",", "after", "which", "it", "was", "spun", "at", "12,000", "x", "g", "at", "4", "degrees", "C", "for", "10", "min", "." ],
+    "entities_indices" : [ [ 1, 2, 3 ], [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "Differential", "gene", "expression", "showed", "over", "5000", "genes", "changed", "across", "the", "N", "vs.", "T", "and", "T", "vs.", "PDX", "samples", "." ],
+    "entities_indices" : [ [ 1, 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "snap", "freezing", ",", "a", "piece", "of", "tumour", "was", "minced", "with", "a", "scalpel", ",", "placed", "in", "a", "cryovial", "and", "placed", "directly", "into", "LN", ",", "then", "stored", "at", "-", "80", "degrees", "C.", "For", "FFPE", ",", "a", "central", "slice", "was", "preserved", "in", "10", "%", "neutral", "buffered", "formalin", "overnight", "and", "processed", "subsequently", "in", "70", "%", ",", "90", "%", ",", "100", "%", "ethanol", "followed", "100", "%", "xylene", "(", "1", "h", "each", ")", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 22, 23 ], [ 32, 33 ], [ 58, 59 ], [ 62, 63 ] ]
+  }, {
+    "sentence_tokens" : [ "Once", "the", "slides", "were", "cleared", ",", "they", "were", "mounted", "using", "DPX", "(", "BDH", ")", "." ],
+    "entities_indices" : [ [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "study", "details", "the", "establishment", "of", "a", "PDX", "biobank", "containing", "pancreatic", "ductal", "adenocarcinoma", ",", "intraductal", "papillary", "mucinous", "neoplasm", ",", "cholangiocarcinomas", "and", "neuroendocrine", "tumour", "including", "one", "PDX", "of", "a", "neo-adjuvant", "treated", "PDAC", "model", "." ],
+    "entities_indices" : [ [ 12, 13 ], [ 17, 18 ], [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "TMPRSS4", "showed", "fold", "changes", "of", "9.5", "and", "2.1", "in", "the", "N", "vs.", "T", "and", "T", "vs.", "F1", "respectively", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "Of", "those", "11", ",", "nine", "patients", "presented", "with", "jaundice", ",", "obstructive", "jaundice", "or", "painless", "obstructive", "jaundice", ",", "1", "presented", "with", "abdominal", "pain", "and", "another", "patient", "was", "an", "incidental", "identification", "on", "a", "PET", "scan", "." ],
+    "entities_indices" : [ [ 8, 9, 10, 11 ], [ 11, 12 ], [ 14, 15, 16 ], [ 20, 21, 22 ], [ 31, 32 ] ]
+  }, {
+    "sentence_tokens" : [ "Cumulatively", ",", "this", "demonstrates", "the", "applicability", "of", "PDX", "models", "and", "transcriptomic", "array", "to", "identify", "genes", "associated", "with", "growth", "and", "proliferation", "of", "pancreatic", "cancer", "." ],
+    "entities_indices" : [ [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "comparison", "of", "FERMT1", "(", "Figure", "5B", ")", "compared", "to", "patient", "tumour", "a", "6.4-fold", "increase", "(", "p", "=", "3.00", "x", "10", ")", "was", "detected", "with", "a", "further", "2.5-fold", "increase", "(", "p", "=", "5.40", "x", "10", ")", "in", "the", "F1", "PDX", "tumour", "material", "when", "compared", "to", "the", "F1", "cohort", "." ],
+    "entities_indices" : [ [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "was", "done", "before", "the", "LN", "completely", "evaporated", "and", "while", "the", "powder", "was", "still", "frozen.Once", "homogenised", ",", "RNA", "samples", "were", "prepared", "using", "Trizol", ",", "according", "to", "manufacturer", "'", "s", "guidelines", "." ],
+    "entities_indices" : [ [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "Salts", "were", "removed", "by", "adding", "a", "cation-exchange", "resin", ",", "before", "the", "multiplexed", "reactions", "were", "spotted", "onto", "SpectroCHIP", "II", "arrays", "." ],
+    "entities_indices" : [ [ 16, 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "Microarray", "Gene", "Expression", "Analysis", "." ],
+    "entities_indices" : [ [ 1, 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "Pancreatic", "patients", "with", "higher", "TOP2A", "levels", "were", "thought", "to", "have", "poor", "prognosis", "." ],
+    "entities_indices" : [ [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "Tumour", "cell", "lines", "were", "confirmed", "as", "human", "by", "IHC", "." ],
+    "entities_indices" : [ [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "Of", "the", "bank", "of", "11", "samples", "collected", "in", "that", "study", ",", "one", "had", "received", "neo-adjuvant", "therapy", "and", "formed", "a", "sub-cutaneous", "tumour", ",", "but", "did", "not", "form", "a", "tumour", "intraperitoneal", "nor", "at", "the", "orthotopic", "site", "[", "29", "]", "." ],
+    "entities_indices" : [ [ 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "number", "of", "mice", "per", "patient", "implanted", "varied", "from", "3", "to", "5", "depending", "on", "the", "tumour", "type", "and", "quantity", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "From", "11", "F1", "PDX", "tumour", "pieces", ",", "three", "tumour", "cell", "lines", "were", "isolated", ":", "PIN", "080", ",", "PIN", "099", "and", "PIN", "127", "." ],
+    "entities_indices" : [ [ 14, 15 ], [ 17, 18 ], [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "Also", "in", "2010", ",", "Mardin", "et", "al.", "identified", "through", "the", "analysis", "of", "the", "invasive", "and", "metastatic", "potential", "of", "16", "PDAC", "cell", "lines", "that", "SERPINB5", "expression", "may", "correspond", "with", "invasive", "tumours", "[", "41", "]", "." ],
+    "entities_indices" : [ [ 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "primary", "antibody", "used", "was", "Abcam", "Anti-Mitochondria", "antibody", "113", "-", "1", "(", "ab92824", ")", ",", "a", "human", "specific", "antibody", "[", "21", "]", "." ],
+    "entities_indices" : [ [ 5, 6, 7, 8, 9, 10, 11 ], [ 12, 13 ], [ 17, 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "SERPINB5", "has", "been", "previously", "associated", "with", "pancreatic", "cancer", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "small", "piece", "of", "tumour", "(", "<", "2", "mm", ")", "was", "minced", "and", "placed", "in", "Collagenase", "and", "Hyaluronidase", "(", "StemCell", "Technologies", "Cambridge", ",", "UK", ")", "at", "4", "degrees", "C", "for", "1", "h", "and", "then", "transferred", "to", "37", "degrees", "C", "for", "30", "min", "." ],
+    "entities_indices" : [ [ 15, 16 ], [ 17, 18 ], [ 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "SLC6A14", "has", "been", "investigated", "as", "a", "potential", "novel", "therapeutic", "target", "for", "pancreatic", "cancer", "using", "alpha-methyltryptophan", "as", "a", "pharmacological", "inhibitor", "of", "SLC6A14", "and", "showed", "reduced", "proliferation", "and", "clonogenic", "survival", "[", "52", "]", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 20, 21 ], [ 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "Of", "the", "35", "PDAC", "samples", "acquired", ",", "seven", "had", "received", "neo-adjuvant", "treatment", "prior", "to", "surgery", ",", "PIN", "139", ",", "PIN", "145", ",", "PIN", "165", ",", "PIN", "191", ",", "PIN", "194", ",", "PIN", "199", "and", "PIN", "210", "." ],
+    "entities_indices" : [ [ 16, 17 ], [ 19, 20 ], [ 22, 23 ], [ 25, 26 ], [ 28, 29 ], [ 31, 32 ], [ 34, 35 ] ]
+  }, {
+    "sentence_tokens" : [ "Animals", "were", "monitored", "weekly", "for", "body", "weight", "and", "tumour", "development", "." ],
+    "entities_indices" : [ [ 5, 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "MUC13", "has", "been", "shown", "to", "be", "increased", "in", "PDAC", "tissue", "compared", "to", "normal", "adjacent", "tissue", "[", "20", "]", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "activation", "was", "seen", "to", "promote", "EMT", "and", "led", "to", "a", "more", "aggressive", "and", "invasive", "phenotype", "in", "colon", "cancer", "[", "43", "]", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "KRAS", "mutation", "were", "detected", "in", "8/10", "samples", "and", "PIK3R1", "mutations", "were", "detected", "in", "5/10", "samples", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "These", "genes", "were", "predominantly", "associated", "with", "proliferation", ",", "cell", "cycles", "and", "mitotic", "processes", ",", "suggesting", "a", "significant", "role", "in", "tumour", "proliferation", ",", "progression", "and", "tumour", "engraftment", "in", "vivo", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "human", "origin", "of", "the", "PDX", "was", "confirmed", "using", "human", "specific", "antibodies", ";", "however", ",", "the", "stromal", "component", "was", "replaced", "by", "murine", "cells", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 10, 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "SERPIN", "superfamily", "of", "proteins", "is", "known", "to", "consist", "of", "37", "members", "in", "humans", ",", "with", "13", "members", "of", "the", "SERPINA", "family", "and", "13", "members", "of", "the", "SERPINB", "family", "[", "36", "]", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 20, 21 ], [ 20, 21, 22 ], [ 27, 28 ] ]
+  }, {
+    "sentence_tokens" : [ "To", "date", ",", "FERMT1", "changes", "have", "not", "previously", "been", "directly", "shown", "in", "pancreatic", "cancer.Ramachandran", "et", "al.", "showed", "that", "Anterior", "Gradient", "2", ",", "AGR2", ",", "gene", "was", "expressed", "in", "pancreatic", "cancer", "tissues", "and", "cell", "lines", ",", "though", "this", "is", "not", "expressed", "in", "chronic", "pancreatitis", "samples", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 22, 23 ], [ 36, 37 ], [ 41, 42, 43 ] ]
+  }, {
+    "sentence_tokens" : [ "Further", "validation", "was", "performed", "using", "AMIGO", "database", "against", "Homo", "Sapiens", "database", "of", "all", "genes", "." ],
+    "entities_indices" : [ [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "Real", "Envision", "Detection", "System", "Peroxidase", "and", "DAB+", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "breast", "cancer", "mouse", "models", ",", "SLC6A14", "knock", "out", "mice", "showed", "a", "marked", "delay", "in", "tumour", "formation", "and", "tumour", "size", ",", "and", "analysis", "of", "the", "tumour", "material", "revealed", "evidence", "of", "amino", "acid", "starvation", "in", "the", "slc6a14", "mice", "suggesting", "a", "key", "role", "from", "SLC6A14", "in", "both", "tumour", "development", "and", "growth", "[", "50", "]", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 9, 10 ], [ 30, 31, 32 ], [ 32, 33 ], [ 35, 36, 37 ], [ 42, 43 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "decrease", "in", "body", "weight", "of", ">", "10", "%", "resulted", "in", "increased", "monitoring", "with", "body", "weight", "decrease", "of", "20", "%", "resulting", "in", "humane", "euthanasia", "." ],
+    "entities_indices" : [ [ 3, 4, 5 ], [ 14, 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "Using", "microarray", "screening", "this", "study", "sought", "to", "compare", "the", "mRNA", "profile", "of", "adjacent", "normal", "tissue", ",", "patient", "tumour", "tissues", "and", "PDX", "F1", "tissue", "." ],
+    "entities_indices" : [ [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "Previously", ",", "our", "group", "examined", "10", "primary", "patient", "tumour", "samples", "and", "nine", "matched", "normal", "adjacent", "specimens", "and", "10", "matched", "F1", "and", "F2", "generation", "PDX", "tumours", "using", "high-resolution", "mass", "spectrometry", "." ],
+    "entities_indices" : [ [ 27, 28 ] ]
+  }, {
+    "sentence_tokens" : [ "SERPINE1", "was", "decreased", "in", "T", "vs.", "N", "analysis", "(", "3.6-fold", ")", "and", "further", "decreased", "in", "T", "vs.", "F1", "comparison", "(", "4.9-fold", ")", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "Briefly", ",", "powdered", "tissue", "was", "lysed", "in", "1", "mL", "of", "Trizol", "reagent", "." ],
+    "entities_indices" : [ [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "PIN", "194", "was", "a", "neo-adjuvant", "treated", "with", "gemcitabine", "and", "Abraxane", "and", "long-course", "radiation", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 7, 8 ], [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "TOP2A", "has", "been", "shown", "in", "pancreatic", "cancer", "cell", "lines", "to", "be", "associated", "with", "proliferation", "and", "migration", "through", "activation", "of", "the", "beta-catenin", "signalling", "pathway", "[", "57", "]", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 13, 14 ], [ 20, 21 ], [ 21, 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "Unincorporated", "nucleotides", "were", "inactivated", "using", "shrimp", "alkaline", "phosphatase", "(", "SAP", ")", ",", "and", "a", "single", "base", "extension", "reaction", "was", "performed", "using", "extension", "primers", "that", "hybridise", "immediately", "adjacent", "to", "the", "mutations", "of", "interest", "." ],
+    "entities_indices" : [ [ 6, 7, 8 ], [ 9, 10 ], [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "cryopreservation", ",", "implant", "sized", "tumour", "pieces", "were", "stored", "in", "freezing", "media", "(", "RMPI/FCS/DMSO", "--", "50/40/10", "%", "v/v", ")", "in", "a", "cryovial", "and", "placed", "in", "a", "Mr", "Frosty", "freezing", "container", "(", "ThermoFischer", ",", "Dublin", "Ireland", ")", "for", "24", "h", "and", "then", "transferred", "to", "the", "liquid", "nitrogen", "(", "LN", ")", "for", "long-term", "storage", "." ],
+    "entities_indices" : [ [ 26, 27 ], [ 45, 46 ], [ 47, 48 ] ]
+  }, {
+    "sentence_tokens" : [ "Figure", "5A", "shows", "the", "individual", "levels", "of", "SERPINB5", "in", "the", "adjacent", "normal", ",", "tumour", "and", "F1", "PDX", "tumour", "samples", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "Snap-frozen", "sections", "of", "PDX", "tumours", ",", "original", "patient", "material", "and", "adjacent", "normal", "tissue", "were", "prepared", "for", "RNA", "extraction", "by", "grinding", "samples", "under", "LN", "using", "a", "mortar", "and", "pestle", "." ],
+    "entities_indices" : [ [ 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "primary", "patient", "tumours", "predominantly", "cluster", "together", "by", "PCA", "analysis", ",", "with", "two", "samples", "PIN", "080", "and", "PIN", "089", "distant", "from", "the", "cluster", ",", "Figure", "4", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 14, 15 ], [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "slides", "were", "then", "immersed", "into", "xylene", ",", "twice", ",", "for", "5", "min", "each", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "These", "genes", "have", "been", "associated", "with", "growth", ",", "proliferation", ",", "invasion", "and", "metastasis", "in", "pancreatic", "cancer", "previously", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 10, 11 ], [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "Depending", "upon", "the", "size", "and", "type", "of", "tumour", "material", ",", "3", "-", "5", "mice", "were", "implanted", "per", "patient", "sample", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "Mice", "were", "monitored", "for", "tumours", "development", "for", "up", "to", "1", "year", "post", "implantation", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "Of", "the", "10", "samples", "analysed", ",", "mutations", "were", "detected", "in", "all", "samples", "except", "one", "(", "PIN", "116", ")", "." ],
+    "entities_indices" : [ [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "Severe", "combined", "immunodeficiency", "(", "SCID", ")", ",", "CB17", "and", "lcr-Prkdc", "/", "lcrCrl", "mice", "(", "Charles", "River", ",", "UK", ")", "were", "implanted", "subcutaneously", "with", "fresh", "patient", "tumour", "material", "." ],
+    "entities_indices" : [ [ 0, 1, 2, 3 ], [ 7, 8 ], [ 9, 10 ], [ 11, 12, 13 ], [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "is", "in", "line", "with", "previously", "reported", "clinical", "KRAS", "mutation", "rates", "[", "32", "]", "." ],
+    "entities_indices" : [ [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "complete", "dataset", "in", "this", "publication", "have", "been", "deposited", "in", "NCBI", "'", "s", "Gene", "Expression", "Omnibus", ",", "GEO", "Series", "accession", "number", "GSE141873", "[", "13,14,16", "]", "." ],
+    "entities_indices" : [ [ 10, 11, 12, 13 ], [ 13, 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "oesophageal", "cancer", ",", "overexpression", "of", "FERMT1", "by", "lenti-viral", "vector", "increased", "proliferation", "and", "radiation", "resistance", "in", "vitro", "[", "44", "]", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "Samples", "with", "a", "RNA", "Integrity", "Number", "(", "RIN", ")", "number", "greater", "than", "8", "were", "most", "suitable", "for", "microarray", "analysis", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "Slides", "were", "once", "again", "washed", "with", "1", "x", "wash", "buffer", "and", "then", "incubated", "with", "200", "mu", "L", "Real", "EnVision", "(", "DAKO", ")", "for", "30", "min", "." ],
+    "entities_indices" : [ [ 15, 16, 17, 18, 19 ], [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "Following", "digestion", ",", "the", "sample", "was", "centrifuged", "200", "g", "for", "5", "min", "and", "the", "supernatant", "removed", "." ],
+    "entities_indices" : [ [ 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "Following", "either", "deparaffinisation", "or", "epitope", "retrieval", "as", "outlined", "above", "slides", "were", "immersed", "in", "1", "x", "wash", "buffer", "." ],
+    "entities_indices" : [ [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "digested", "material", "was", "suspended", "with", "complete", "media", "(", "DMEM", "and", "F-12", "Hams", "supplemented", "with", "10", "%", "FCS", "1", "%", "PenStrep", ")", "." ],
+    "entities_indices" : [ [ 11, 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "Of", "these", ",", "35", "samples", "were", "PDAC", ",", "with", "three", "cholangiocarcinoma", ",", "three", "IPMN", "and", "six", "NET", "samples", "acquired", ";", "a", "full", "breakdown", "of", "samples", "acquired", "and", "engraftment", "status", "is", "given", "in", "Table", "3", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 10, 11 ], [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "Topoisomerase", "II", "alpha", "(", "TOP2A", ")", "gene", "encodes", "for", "a", "nuclear", "enzyme", "that", "regulates", "the", "topological", "structure", "of", "DNA", "and", "is", "involved", "in", "chromosome", "condensation", ",", "chromatid", "separation", "and", "torsional", "stress", "relief", "during", "DNA", "transcription", "and", "replication", "." ],
+    "entities_indices" : [ [ 0, 1, 2 ], [ 4, 5 ], [ 23, 24, 25 ], [ 34, 35 ] ]
+  }, {
+    "sentence_tokens" : [ "Ethanol", "was", "removed", "from", "pellet", ",", "which", "were", "allowed", "to", "air", "dry", ",", "and", "were", "then", "reconstituted", "in", "nuclease", "free", "water.Samples", "were", "quantified", "using", "a", "Nanodrop", "(", "Thermo", "Scientific", ",", "Dublin", "Ireland", ")", "and", "quality", "determined", "using", "Agilent", "Bioanalyser", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "RNA-Seq", "analysis", "by", "Mao", "et", "al.", "of", "10", "PDAC", "tumour", "samples", "and", "adjacent", "benign", "tissue", "also", "detected", "SERPINB5", "." ],
+    "entities_indices" : [ [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "Amongst", "the", "mRNA", "candidates", "elevated", "in", "the", "PDX", "and", "tumour", "vs.", "normal", "were", "SERPINB5", ",", "FERMT1", ",", "AGR2", ",", "SLC6A14", "and", "TOP2A", "." ],
+    "entities_indices" : [ [ 13, 14 ], [ 15, 16 ], [ 17, 18 ], [ 19, 20 ], [ 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "Pancreatic", "PDX", "Biobank", "." ],
+    "entities_indices" : [ [ 0, 1, 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "Mutational", "analyses", "by", "Sequenom", "MassArray", "MALDI-TOF", "showed", "80", "%", "of", "samples", "examined", "possessed", "a", "KRAS", "mutation", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "Immunohistochemical", "Characterisation", "of", "PDX", "tumours", "." ],
+    "entities_indices" : [ [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "epitope", "retrieval", "slides", "were", "heated", "to", "97", "degrees", "C", "for", "20", "min", "and", "then", "cooled", "to", "65", "degrees", "C.", "3.5.2", "." ],
+    "entities_indices" : [ [ 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "was", "achieved", "by", "immersing", "the", "slide", "in", "70", "%", ",", "90", "%", "and", "100", "%", "ethanol", ",", "twice", "in", "each", "ethanol", "solutions", "for", "3", "min", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 16, 17 ], [ 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "MUC1", "has", "been", "shown", "to", "be", "overexpressed", "in", "pancreatic", "cancer", "[", "18", "]", ",", "and", "has", "been", "associated", "with", "multidrug", "resistance", "and", "gemcitabine", "resistance", "[", "19", "]", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "study", ",", "the", "average", "age", "of", "65", "years", "for", "women", "and", "67", "years", "for", "men", "shows", "that", "patients", "who", "are", "eligible", "for", "surgery", "are", "somewhat", "younger", "than", "the", "pancreatic", "patient", "population", "as", "a", "whole", "." ],
+    "entities_indices" : [ [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "Solute", "carrier", "family", "6", "member", ",", "SLC6A14", "encoded", "protein", "is", "a", "sodium-", "and", "chloride", "dependent", "neutral", "and", "basic", "amino", "acid", "transporter", "[", "49", "]", "." ],
+    "entities_indices" : [ [ 0, 1, 2 ], [ 0, 1, 2, 3, 4, 5 ], [ 6, 7 ], [ 13, 14 ], [ 18, 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "Immunohistochemical", "analysis", "using", "the", "human", "specific", "antibody", "Anti-Mitochondria", "antibody", "113", "-", "1", "(", "dilution", "1/1000", ")", "confirmed", "that", "the", "tumour", "cells", "isolated", "were", "human", "in", "origin.From", "seven", "patient", "tumours", ",", "two", "patient", "derived", "stromal", "cell", "lines", "were", "isolated", "." ],
+    "entities_indices" : [ [ 5, 6, 7, 8, 9, 10, 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "MS", "identification", "allowed", "for", "the", "isolation", "of", "the", "human", "only", "protein", ",", "representing", "the", "tumour", "cells", ",", "and", "these", "were", "tracked", "from", "patient", "tumour", ",", "to", "F1", "and", "F2", "generation", "PDX", "tumours", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "Given", "the", "small", "sample", "numbers", ",", "PDX", "growth", "and", "take", "rate", "cannot", "be", "attributed", "to", "a", "single", "factor", "but", "key", "operational", "factors", "including", "the", "immediate", "cooling", "of", "the", "sample", "following", "surgery", ",", "rapid", "implantation", "and", "sample", "selection", "and", "identification", "by", "histopathologist", "2.3", "." ],
+    "entities_indices" : [ [ 6, 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "By", "comparing", "the", "adjacent", "normal", "to", "the", "tumour", "and", "the", "tumour", "to", "the", "F1", "PDX", "tumour", "we", "aimed", "to", "map", "the", "genes", "associated", "with", "tumour", "growth", ",", "proliferation", "and", "tumour", "in", "engraftment", "." ],
+    "entities_indices" : [ [ 27, 28 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "is", "representative", "of", "the", "heterogeneity", "of", "the", "patients", "with", "the", "minor", "selection", "pressure", "of", "the", "PDX", "formation", "and", "the", "murine", "stromal", "replacement", "through", "engraftment", "resulting", "in", "a", "less", "heterogeneous", "sample", "population", "in", "the", "PDX", "tumours.In", "total", ",", "more", "than", "5000", "genes", "were", "differentially", "expressed", "in", "the", "comparisons", "on", "adjacent", "normal", "vs.", "tumour", "and", "tumour", "vs.", "PDX", ",", "taking", "a", "1.5-fold", "cut", "off", "." ],
+    "entities_indices" : [ [ 61, 62 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "vitro", ",", "AGR2", "silencing", "by", "siRNA", "knockdown", "showed", "a", "decrease", "in", "cancer", "cell", "proliferation", "and", "invasion", "and", "increased", "gemcitabine", "sensitivity", "of", "resistant", "cells", "[", "46", "]", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 14, 15 ], [ 16, 17 ], [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "Preparation", "of", "cRNA", ",", "hybridization", ",", "and", "scanning", "of", "microarrays", "was", "performed", "according", "to", "the", "manufacturer", "'", "s", "protocol", "(", "Affymetrix", ",", "Thermo-Fischer", ",", "Santa", "Clara", ",", "Ca", ",", "USA", ")", "." ],
+    "entities_indices" : [ [ 24, 25 ], [ 27, 28 ] ]
+  }, {
+    "sentence_tokens" : [ "Following", "humane", "euthanasia", "of", "the", "mouse", ",", "the", "tumour", "was", "divided", "for", "cryopreservation", ",", "formalin", "fixed", "paraffin", "embedding", "(", "FFPE", ")", "and", "snap", "frozen", "." ],
+    "entities_indices" : [ [ 14, 15, 16, 17, 18 ], [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "chips", "were", "scanned", "in", "an", "Affymetrix", "3000", "7G", "scanner.Differential", "gene", "analysis", "expression", "was", "carried", "out", "using", "Applied", "Biosystems", "Transcriptome", "Analysis", "Console", "(", "TAC", ")", "software", "4.0.2", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "bank", "established", "in", "this", "study", "displays", "a", "higher", "engraftment", "rate", "for", "PDAC", "tumours", "than", "many", "others", "previously", "reported", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "SERPINA1", "was", "increased", "in", "T", "vs.", "N", "(", "3.6-fold", ")", ",", "but", "decreased", "in", "T", "vs.", "F1", "(", "5.0-fold", ")", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "Interestingly", "CENPF", "and", "SERBINB5", "were", "also", "included", "in", "this", "panel", "of", "prognostic", "genes", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "is", "somewhat", "higher", "that", "previously", "reported", "rates", "of", "61", "%", "(", "sub-cutaneous", ")", "and", "62", "%", "(", "orthotopic", ")", "for", "primary", "pancreatic", "cancer", "samples", ",", "though", "these", "models", "were", "established", "in", "nude", "mice", "rather", "than", "SCID", "mice", "[", "26,27", "]", "." ],
+    "entities_indices" : [ [ 37, 38 ] ]
+  }, {
+    "sentence_tokens" : [ "Animal", "welfare", "monitoring", "criteria", "included", "tumour", "volume", ",", "tumour", "axis", ",", "body", "weight", "and", "condition", "." ],
+    "entities_indices" : [ [ 11, 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "Fresh", "tumour", "samples", "from", "human", "pancreatic", "adenocarcinoma", "patients", "were", "implanted", "in", "severe", "combined", "immunodeficiency", "(", "SCID", ")", "mice", "." ],
+    "entities_indices" : [ [ 11, 12, 13, 14 ], [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "study", "by", "Fukuhisa", "et", "al.", "examined", "the", "role", "of", "EPS8", "in", "PDAC", ",", "and", "showed", "that", "EPS8", "was", "overexpressed", "in", "PDAC", "clinical", "specimens", ",", "and", "linked", "with", "proliferation", "and", "invasion", "in", "vitro", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 17, 18 ], [ 28, 29 ], [ 30, 31 ] ]
+  }, {
+    "sentence_tokens" : [ "Two", "recent", "reports", "showed", "similar", "engraftment", "rates", "(", "72", "%", "and", "71", "%", ")", ",", "although", "this", "was", "observed", "in", "more", "immune", "compromised", "NSG", "and", "NSG", "nude", "mice", "[", "33,34", "]", "." ],
+    "entities_indices" : [ [ 23, 24 ], [ 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "three", "tumour", "cell", "lines", "established", "were", "confirmed", "as", "human", "by", "IHC", ",", "as", "detailed", "in", "Figure", "2", "." ],
+    "entities_indices" : [ [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "Slides", "were", "washed", "again", "with", "wash", "buffer", "and", "then", "stained", "with", "200", "mu", "L", "DAB+", "substrate", "for", "5", "min", "and", "this", "procedure", "was", "repeated", "twice", "." ],
+    "entities_indices" : [ [ 12, 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "On", "the", "autostainer", "(", "DAKO", ")", ",", "slides", "were", "blocked", "for", "10", "min", "with", "200", "mu", "L", "HRP", "Block", "(", "DAKO", ")", "." ],
+    "entities_indices" : [ [ 15, 16, 17, 18, 19 ], [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "Other", "genes", "included", "in", "this", "panel", "were", "TMPRSS4", ",", "AHNAK2", ",", "POSTN", ",", "ECT2", "[", "39", "]", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 9, 10 ], [ 11, 12 ], [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "brief", ",", "300", "ng", "of", "total", "RNA", "extracted", "from", "homogenised", "patient", "samples", "isolated", "using", "Trizol", "was", "converted", "into", "double", "stranded", "cDNA", "by", "reverse", "transcription", "." ],
+    "entities_indices" : [ [ 23, 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "TOP2A", "(", "Figure", "5E", ")", "showed", "a", "6.4-fold", "increase", "(", "p", "=", "2.00", "x", "10", ")", "in", "the", "tumour", "compared", "to", "adjacent", "normal", "tissue", "(", "p", "=", "2.00", "x", "10", ")", "and", "a", "further", "3.8-fold", "increase", "in", "the", "PDX", "F1", "tissue", "compared", "to", "the", "patient", "tumour", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 2, 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "Briefly", ",", "tissue", "sample", "was", "placed", "in", "a", "metal", "mortar", "with", "a", "small", "volume", "of", "LN", "and", "ground", "quickly", "." ],
+    "entities_indices" : [ [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "Of", "these", "six", "samples", ",", "only", "one", "sample", "grew", "as", "a", "PDX", "tumour", "." ],
+    "entities_indices" : [ [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "TOP2A", "has", "been", "associated", "with", "many", "solid", "cancers", "such", "as", "breast", "and", "prostate", "cancers", "[", "53,54,55", "]", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "mRNA", "profile", "showed", "that", "after", "passaging", "in", "the", "mouse", ",", "the", "PDX", "tumours", "cluster", "closely", "together", "." ],
+    "entities_indices" : [ [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "Fermitin", "family", "member", "1", ",", "FERMT1", ",", "encoded", "protein", "is", "involved", "in", "integrin", "signalling", "and", "linkage", "of", "the", "actin", "cytoskeleton", "to", "the", "extracellular", "matrix", "and", "has", "been", "shown", "to", "be", "significantly", "over-expressed", "in", "colon", "cancer", "[", "42", "]", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 0, 1, 2, 3, 4 ], [ 5, 6 ], [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "Patients", "predominately", "received", "gemcitabine", ",", "gemcitabine", "+", "Abraxane", "or", "FOLFIRINOX", "as", "an", "adjuvant", "treatment", ",", "with", "some", "individuals", "receiving", "Carboplatin", "and", "Etoposide", "combination", "or", "Capecitabine", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 5, 6 ], [ 7, 8 ], [ 19, 20 ], [ 21, 22 ], [ 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "Per", "1", "mL", "of", "Trizol", "reagent", "used", ",", "200", "mu", "L", "of", "chloroform", "was", "added", "to", "the", "Eppendorf", "(", "Hamburg", ",", "Germany", ")", ",", "sample", "was", "mixed", "and", "allowed", "to", "sit", "for", "5", "min", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "Cells", "were", "seeded", "directly", "on", "Superfrost", "microscope", "slides", "and", "allowed", "to", "attach", "overnight", "at", "37", "degrees", "C", ",", "5", "%", "CO", "." ],
+    "entities_indices" : [ [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "tumour", "was", "cut", "into", "implant", "sized", "pieces", "(", "<", "2", "mm", ")", "and", "rinsed", "with", "fresh", "serum-free", "RPMI", "media", "following", "transport", "." ],
+    "entities_indices" : [ [ 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "Gene", "ontology", "analysis", "of", "a", "subset", "of", "genes", "demonstrated", "genes", "upregulated", "in", "normal", "vs.", "tumour", "vs.", "PDX", "were", "linked", "with", "cell", "cycle", ",", "cycles", "cell", "process", "and", "mitotic", "cell", "cycle", "." ],
+    "entities_indices" : [ [ 0, 1, 2 ], [ 20, 21, 22 ], [ 27, 28, 29, 30 ] ]
+  }, {
+    "sentence_tokens" : [ "Of", "the", "35", "pancreatic", "ductal", "adenocarcinoma", "(", "PDAC", ")", "samples", "obtained", ",", "14", "(", "40", "%", ")", "were", "female", "and", "21", "(", "60", "%", ")", "were", "male", "." ],
+    "entities_indices" : [ [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "our", "differential", "gene", "expression", "list", "3", "of", "the", "39", "SERPIN", "family", "members", "were", "statistically", "significantly", "changed", ",", "SERPINA1", ",", "SERPINB5", "and", "SERPINE1", "." ],
+    "entities_indices" : [ [ 3, 4, 5 ], [ 10, 11 ], [ 18, 19 ], [ 20, 21 ], [ 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "breakdown", "of", "the", "numbers", "of", "genes", "changed", "is", "given", "in", "Table", "5", ",", "while", "the", "top", "20", "genes", "differential", "expressed", "with", "a", "LOG", "fold", "change", "of", "2", "or", "greater", "in", "the", "adjacent", "normal", "vs.", "tumour", "and", "tumour", "vs.", "PDX", "F1", "is", "shown", "in", "Table", "6", ";", "Table", "7", ",", "respectively.In", "order", "to", "determine", "which", "biological", "process", "the", "differentially", "expressed", "genes", "were", "involved", "in", ",", "gene", "ontology", "analysis", "was", "completed", "on", "a", "short", "list", "of", "89", "genes", "[", "13,14", "]", "." ],
+    "entities_indices" : [ [ 18, 19 ], [ 39, 40 ], [ 55, 56, 57 ], [ 65, 66, 67 ] ]
+  }, {
+    "sentence_tokens" : [ "PDX", "tumours", "are", "known", "to", "recapitulate", "the", "patient", "morphology", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "RNA", "pellet", "was", "then", "washed", "using", "75", "%", "ethanol", "and", "spun", "at", "4", "degrees", "C", "at", "7500", "x", "g", "for", "5", "min", "." ],
+    "entities_indices" : [ [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "shortlisted", "89", "genes", "of", "interest", "were", "classified", "by", "biological", "process", "using", "a", "Fisher", "Test", "and", "applying", "a", "Bonferroni", "correction", "(", "Table", "9", ")", "." ],
+    "entities_indices" : [ [ 9, 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "Similarly", ",", "AHNAK2", "fold", "changes", "were", "2.6", "(", "N", "vs.", "T", ")", "and", "2", "(", "T", "vs.", "F1", ")", ",", "POSTN", "15.5", "(", "N", "vs.", "T", ")", "and", "-69.9", "(", "T", "vs.", "F1", ")", ",", "ECT2", "2.6", "(", "N", "vs.", "T", ")", "and", "2.7", "(", "T", "vs.", "F1", ")", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 20, 21 ], [ 35, 36 ] ]
+  }, {
+    "sentence_tokens" : [ "Deparaffinisation", "and", "antigen", "retrieval", "were", "performed", "using", "Epitope", "Retrieval", "3-in-1", "solution", "(", "pH", "6", ")", "(", "DAKO", ",", "Cruinn", ",", "Dublin", "Ireland", ")", "was", "used", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 12, 13 ], [ 16, 17 ], [ 18, 19 ], [ 20, 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "our", "list", "of", "differentially", "expressed", "genes", "MUC1", "was", "1.7-fold", "increased", "in", "tumour", "vs.", "normal", "but", "not", "statistically", "significantly", "changed", "in", "the", "tumour", "compared", "to", "F1", "comparison", "(", "see", "Supplementary", "Table", "S2", ")", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "Following", "the", "counterstaining", "with", "haematoxylin", ",", "the", "slides", "were", "then", "dehydrated", "." ],
+    "entities_indices" : [ [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "Preservation", "of", "PDX", "tumours", "." ],
+    "entities_indices" : [ [ 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "Other", "detected", "mutations", "included", "IDH1", "(", "1/10", ")", ";", "MET", "(", "1/10", ")", ";", "PHLPP2", "(", "3/10", ")", "and", "PIK3CA", "(", "1/10", ")", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 14, 15 ], [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "subset", "panel", "of", "89", "genes", "were", "identified", "and", "shortlisted", "as", "differentially", "upregulated", "in", "tumour", "compared", "to", "normal", "and", "further", "upregulated", "in", "PDX", "F1", "tumours", "." ],
+    "entities_indices" : [ [ 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "bank", "of", "pancreatic", "PDX", "tumours", "models", "the", "subset", "of", "pancreatic", "cancer", "patients", "who", "are", "eligible", "for", "surgical", "resection", "." ],
+    "entities_indices" : [ [ 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "Gene", "ontology", "analysis", "of", "the", "89", "gene", "increased", "in", "tumour", "(", "vs.", "adjacent", "normal", ")", "and", "further", "increased", "in", "PDX", "tumour", "(", "vs.", "patient", "tumour", ")", "showed", "the", "biological", "processed", "enriched", "for", "genes", "associated", "with", "cell", "cycle", ",", "cell", "cycle", "process", "as", "well", "as", "mitotic", "cell", "cycle", "processes", "(", "Table", "8", "and", "Table", "9", ")", "." ],
+    "entities_indices" : [ [ 0, 1, 2 ], [ 35, 36, 37 ], [ 38, 39, 40, 41 ], [ 44, 45, 46, 47 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "two", "stromal", "cell", "lines", ",", "Fibro-102", "and", "Fibro", "120", ",", "have", "been", "successfully", "cultured", ",", "cryo", "preserved", "and", "restored", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 8, 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "study", ",", "we", "focused", "on", "genes", "that", "were", "differentially", "expressed", "in", "both", "comparisons", "and", "associated", "with", "disease", "initiation", "and", "disease", "progression", "characteristics", "." ],
+    "entities_indices" : [ [ 21, 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "All", "slides", "were", "then", "counterstained", "with", "haematoxylin", "(", "DAKO", ")", "for", "5", "min", "and", "were", "rinsed", "with", "deionised", "water", "and", "then", "with", "wash", "buffer", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "Previous", "proteomic", "analysis", "of", "the", "same", "sample", "cohort", "also", "found", "SERPINB5", "to", "be", "increased", "at", "the", "protein", "level", "when", "human", "specific", "proteins", "were", "identified", "with", "significantly", "increased", "expression", "in", "PDX", "F1", "tumours", "compared", "to", "PDAC", "tumour", "tissues", ",", "as", "determined", "by", "quantitative", "label-free", "mass", "spectrometric", "analysis", "[", "30", "]", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 29, 30 ], [ 43, 44 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "establishment", "of", "pancreatic", "cancer", "cell", "lines", "using", "finely", "minced", "tissue", "fragments", "and", "specialised", "media", "components", "has", "been", "previously", "reported", "[", "8,9", "]", "." ],
+    "entities_indices" : [ [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "Matrix", "chips", "were", "analysed", "on", "an", "Agena", "MassArray", "Matrix", "assisted", "laser", "desorption", "and", "ionisation", "Time", "of", "Flight", "(", "MALDI-TOF", ")", "system", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 16, 17 ], [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "genes", "were", "further", "subdivided", "by", "pathway", ",", "and", "include", "MAPK", ",", "PI3K", "and", "related", "pathway", "genes", "(", "Supplementary", "Table", "S3", ")", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "Pancreatic", "ductal", "adenocarcinoma", "(", "PDAC", ")", "has", "no", "viable", "screening", "method", ",", "and", "an", "absence", "of", "early", "clinical", "symptoms", ",", "leaving", "it", "detected", "usually", "later", "in", "the", "disease", "stage", "." ],
+    "entities_indices" : [ [ 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "pancreatic", "cancer", ",", "the", "invasive", "potential", "of", "pancreatic", "cancer", "cells", "in", "vitro", "was", "proportional", "to", "the", "AGR2", "expression", "level", "[", "48", "]", "." ],
+    "entities_indices" : [ [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "Biotin", "labelled", "cRNA", "was", "generated", "by", "converting", "the", "cDNA", "sample", "using", "the", "Genechip", "WT", "plus", "reagent", "kit", "(", "Affymetrix", ",", "Thermo-Fischer", ",", "Santa", "Clara", ",", "Ca", ",", "USA", ")", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 22, 23 ], [ 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "our", "global", "analysis", "of", "six", "adjacent", "normal", "compared", "to", "seven", "tumour", "samples", ",", "SERPINB5", ",", "also", "known", "as", "P15", "and", "Maspin", "[", "17", "]", ",", "was", "shown", "to", "be", "increased", "in", "the", "tumour", "samples", "compared", "to", "the", "adjacent", "normal", "samples", "(", "6.8-fold", "increase", ")", ",", "with", "a", "further", "increase", "in", "the", "F1", "generation", "PDX", "tumours", "(", "eight", "samples", ")", "compared", "to", "the", "patient", "tumour", "samples", "(", "6.6-fold", "increase", ")", "." ],
+    "entities_indices" : [ [ 14, 15 ], [ 19, 20 ], [ 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "Eight", "PDX", "tumour", "samples", "were", "interrogated", "by", "Affymetrix", "Microarray", "technology", "in", "matched", "comparison", "to", "patient", "tumour", "and", "adjacent", "normal", "tissue", "." ],
+    "entities_indices" : [ [ 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "Samples", "from", "78", "%", "of", "treatment-naive", "pancreatic", "ductal", "adenocarcinoma", "patients", "grew", "as", "PDX", "tumours", "and", "were", "confirmed", "by", "histopathology", "." ],
+    "entities_indices" : [ [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "FERMT1", "is", "a", "putative", "downstream", "gene", "target", "of", "EPS8", "[", "45", "]", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "Two", "further", "tumour", "cell", "lines", "failed", "to", "proliferate", "after", "initial", "sub-culturing", ":", "PIN", "089", "and", "PIN", "091", "." ],
+    "entities_indices" : [ [ 12, 13 ], [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "Microarray", "gene", "expression", "profiling", "was", "performed", "on", "GeneChip", "Human", "Gene", "2.0", "ST", "array", "on", "five", "triple", "matched", "samples", "and", "three", "double", "matched", "samples", ",", "detailed", "in", "Table", "4", "." ],
+    "entities_indices" : [ [ 1, 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "in", "a", "study", "of", "24,262", "patients", "with", "diverse", "tumour", "types", ",", "only", "4", "%", "of", "tumours", "had", "TOP2A", "amplification", "[", "56", "]", "." ],
+    "entities_indices" : [ [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "Neo-adjuvant", "treatments", "included", "FOLFIRINOX", "with", "radiation", ",", "gemcitabine", "and", "oxaliplatin", "with", "radiation", "and", "gemcitabine", "and", "Abraxane", "with", "radiation", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 7, 8 ], [ 9, 10 ], [ 13, 14 ], [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "highlighted", "SLC6A14", "as", "a", "potential", "prognostic", "biomarker", "of", "pancreatic", "cancer", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "AGR-2", "(", "Figure", "5C", ")", "was", "increased", "4.98-fold", "(", "p", "=", "1.50", "x", "10", ")", "in", "the", "patient", "tumour", "compared", "to", "the", "adjacent", "normal", "tissue", "and", "a", "further", "5.09-fold", "(", "p", "=", "3.00", "x", "10", ")", "increased", "in", "PDX", "F1", "tissue", "compared", "to", "tumour", "material", "Solute", "Carrier", "SLC6A14", "(", "Figure", "5D", ")", "showed", "a", "22.8-fold", "increase", "(", "p", "=", "4.00", "x", "10", ")", "in", "a", "comparison", "between", "tumour", "tissue", "and", "adjacent", "normal", "material", "and", "a", "further", "3.2-fold", "increase", "(", "p", "=", "1.07", "x", "10", ")", "in", "the", "F1", "PDX", "cohort", "compared", "to", "the", "tumour", "tissue", "." ],
+    "entities_indices" : [ [ 47, 48 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "a", "meta-analysis", "of", "publicly", "available", "datasets", "of", "transcriptome", "data", "for", "human", "pancreas", "specimens", "and", "a", "GEM", "mouse", "models", "Bhasin", "et", "al.", "included", "SERPINB5", "as", "one", "the", "of", "the", "genes", "in", "a", "five", "gene", "panel", "for", "discriminating", "PDAC", "and", "early", "precursor", "lesions", "." ],
+    "entities_indices" : [ [ 23, 24 ], [ 37, 38 ] ]
+  }, {
+    "sentence_tokens" : [ "After", "initial", "macroscopic", "pathological", "confirmation", ",", "material", "remaining", "after", "diagnostic", "sampling", "was", "cold", "transferred", "in", "RPMI", "1640", "medium", "containing", "1", "%", "Penicillin-Streptomycin", ",", "1", "%", "fungazone", "to", "DCU", "." ],
+    "entities_indices" : [ [ 15, 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "comparison", ",", "between", "F1", "and", "F2", "generation", "of", "PDX", "tumour", ",", "only", "eight", "human", "specific", "proteins", "were", "differentially", "expressed", "when", "analysed", "by", "quantitative", "label-free", "differential", "analysis", "." ],
+    "entities_indices" : [ [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "Gene", "ontology", "(", "GO", ")", "analysis", "showed", "that", "the", "shortlist", "of", "89", "genes", "upregulated", "by", "two-fold", "or", "more", "in", "both", "the", "N", "vs.", "T", "comparison", "and", "T", "vs.", "F1", "comparison", "were", "predominantly", "related", "to", "biological", "processes", "such", "as", "cell", "cycle", "and", "mitosis", "(", "Table", "8)", "." ],
+    "entities_indices" : [ [ 0, 1, 2 ], [ 3, 4 ], [ 38, 39, 40 ], [ 41, 42 ] ]
+  } ],
+  "emptySentences" : [ {
+    "sentence_tokens" : [ "Establishment", "and", "Characterisation", "by", "Expression", "Microarray", "of", "Patient", "Derived", "Xenograft", "Panel", "of", "Human", "Pancreatic", "Adenocarcinoma", "Patients", "." ]
+  }, {
+    "sentence_tokens" : [ "Pancreatic", "cancer", "remains", "among", "the", "most", "lethal", "cancers", "worldwide", ",", "with", "poor", "early", "detection", "rates", "and", "poor", "survival", "rates", "." ]
+  }, {
+    "sentence_tokens" : [ "Patient", "derived", "xenograft", "(", "PDX", ")", "models", "have", "increasingly", "been", "used", "in", "preclinical", "and", "clinical", "research", "of", "solid", "cancers", "to", "fulfil", "unmet", "need", "." ]
+  }, {
+    "sentence_tokens" : [ "Fresh", "tumour", "samples", "from", "human", "pancreatic", "adenocarcinoma", "patients", "were", "implanted", "in", "severe", "combined", "immunodeficiency", "(", "SCID", ")", "mice", "." ]
+  }, {
+    "sentence_tokens" : [ "Samples", "from", "78", "%", "of", "treatment-naive", "pancreatic", "ductal", "adenocarcinoma", "patients", "grew", "as", "PDX", "tumours", "and", "were", "confirmed", "by", "histopathology", "." ]
+  }, {
+    "sentence_tokens" : [ "Frozen", "samples", "from", "F1", "PDX", "tumours", "could", "be", "later", "successfully", "passaged", "in", "SCID", "mice", "to", "F2", "PDX", "tumours", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "human", "origin", "of", "the", "PDX", "was", "confirmed", "using", "human", "specific", "antibodies", ";", "however", ",", "the", "stromal", "component", "was", "replaced", "by", "murine", "cells", "." ]
+  }, {
+    "sentence_tokens" : [ "Cell", "lines", "were", "successfully", "developed", "from", "three", "PDX", "tumours", "." ]
+  }, {
+    "sentence_tokens" : [ "RNA", "was", "extracted", "from", "eight", "PDX", "tumours", "and", "where", "possible", ",", "corresponding", "primary", "tumour", "(", "T", ")", "and", "adjacent", "normal", "tissues", "(", "N", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "mRNA", "profiles", "of", "tumour", "vs.", "F1", "PDX", "and", "normal", "vs.", "tumour", "were", "compared", "by", "Affymetrix", "microarray", "analysis", "." ]
+  }, {
+    "sentence_tokens" : [ "Differential", "gene", "expression", "showed", "over", "5000", "genes", "changed", "across", "the", "N", "vs.", "T", "and", "T", "vs.", "PDX", "samples", "." ]
+  }, {
+    "sentence_tokens" : [ "Gene", "ontology", "analysis", "of", "a", "subset", "of", "genes", "demonstrated", "genes", "upregulated", "in", "normal", "vs.", "tumour", "vs.", "PDX", "were", "linked", "with", "cell", "cycle", ",", "cycles", "cell", "process", "and", "mitotic", "cell", "cycle", "." ]
+  }, {
+    "sentence_tokens" : [ "Amongst", "the", "mRNA", "candidates", "elevated", "in", "the", "PDX", "and", "tumour", "vs.", "normal", "were", "SERPINB5", ",", "FERMT1", ",", "AGR2", ",", "SLC6A14", "and", "TOP2A", "." ]
+  }, {
+    "sentence_tokens" : [ "These", "genes", "have", "been", "associated", "with", "growth", ",", "proliferation", ",", "invasion", "and", "metastasis", "in", "pancreatic", "cancer", "previously", "." ]
+  }, {
+    "sentence_tokens" : [ "Cumulatively", ",", "this", "demonstrates", "the", "applicability", "of", "PDX", "models", "and", "transcriptomic", "array", "to", "identify", "genes", "associated", "with", "growth", "and", "proliferation", "of", "pancreatic", "cancer", "." ]
+  }, {
+    "sentence_tokens" : [ "1", "." ]
+  }, {
+    "sentence_tokens" : [ "Introduction", "." ]
+  }, {
+    "sentence_tokens" : [ "Pancreatic", "cancer", "remains", "a", "cancer", "of", "unmet", "need", ",", "with", "a", "5", "year", "survival", "rate", "of", "approximately", "7", "-", "9", "%", "[", "1", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "survival", "rate", "has", "shown", "little", "to", "no", "improvement", "over", "a", "30", "year", "period", "." ]
+  }, {
+    "sentence_tokens" : [ "Pancreatic", "ductal", "adenocarcinoma", "(", "PDAC", ")", "has", "no", "viable", "screening", "method", ",", "and", "an", "absence", "of", "early", "clinical", "symptoms", ",", "leaving", "it", "detected", "usually", "later", "in", "the", "disease", "stage", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "only", "curative", "option", "is", "surgery", ",", "and", "this", "is", "only", "viable", "in", "early", "stage", "(", "R0/R1", ")", "cases", "where", "the", "cancer", "has", "not", "metastasised", "." ]
+  }, {
+    "sentence_tokens" : [ "Even", "with", "radical", "surgical", "resection", ",", "the", "5", "year", "survival", "rates", "are", "not", "comparable", "with", "other", "solid", "cancers.One", "of", "the", "most", "common", "research", "tools", "for", "oncology", "research", "is", "the", "cell-line", "model", "." ]
+  }, {
+    "sentence_tokens" : [ "Cell", "lines", "and", "cell-line", "panels", "have", "formed", "the", "basis", "of", "much", "preclinical", "research", "previously", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "limitations", "of", "conventional", "cell", "lines", "for", "pancreatic", "cancer", "research", "has", "been", "previously", "discussed", ",", "showing", "to", "be", "a", "poor", "predictor", "of", "clinical", "trial", "outcome", "[", "2", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "pancreatic", "cancer", ",", "in", "vitro", "models", "are", "often", "poor", "in", "predicting", "clinical", "therapeutic", "response", "[", "3", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Patient", "derived", "xenograft", "(", "PDX", ")", "models", "have", "emerged", "as", "a", "tool", "for", "investigation", "of", "pancreatic", "cancer", "and", "become", "more", "utilised", "as", "they", "have", "been", "shown", "to", "more", "closely", "represent", "patient", "tumours", "[", "4", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Due", "to", "its", "more", "aggressive", "nature", ",", "pancreatic", "cancer", "PDX", "models", "are", "established", "with", "a", "high", "take", "rate", "when", "compared", "to", "other", "cancers", ",", "such", "as", "breast", "cancer", "[", "5,6", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "While", "ovarian", "cancer", "PDX", "models", "are", "established", "with", "similar", "engraftment", "rates", "as", "pancreatic", "cancer", "[", "7", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Pancreatic", "cancer", "cell", "lines", ",", "while", "not", "mimicking", "the", "tumour", "-", "stromal", "interaction", "or", "pancreatic", "cancer", "'", "s", "dense", "desmoplasia", "offer", "a", "model", "to", "examine", "direct", "drug", "effects", "on", "the", "tumour", "cells", "." ]
+  }, {
+    "sentence_tokens" : [ "PDX", "models", "also", "offer", "the", "opportunity", "for", "the", "development", "of", "novel", "cell-line", "models", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "establishment", "of", "pancreatic", "cancer", "cell", "lines", "using", "finely", "minced", "tissue", "fragments", "and", "specialised", "media", "components", "has", "been", "previously", "reported", "[", "8,9", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "These", "additional", "cell-line", "models", "provide", "valuable", "resources", "to", "map", "the", "genomic", "alterations", "involved", "in", "human", "pancreatic", "cancer.This", "study", "shows", "the", "comprehensive", "development", "of", "patient", "derived", "xenograft", "models", ",", "including", "detailing", "the", "tumours", "that", "failed", "to", "proliferate", "as", "PDX", "models", "." ]
+  }, {
+    "sentence_tokens" : [ "From", "these", "novel", "models", ",", "primary", "cell", "lines", "were", "developed", "and", "characterised", "as", "human", "tumour", "cell", "lines", "." ]
+  }, {
+    "sentence_tokens" : [ "Using", "microarray", "screening", "this", "study", "sought", "to", "compare", "the", "mRNA", "profile", "of", "adjacent", "normal", "tissue", ",", "patient", "tumour", "tissues", "and", "PDX", "F1", "tissue", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "revealed", "the", "innate", "heterogeneity", "of", "the", "adjacent", "normal", "tissue", "and", "patient", "pancreatic", "tumour", "but", "showed", "patient", "derived", "xenograft", "models", "more", "closely", "clustered", "together", "." ]
+  }, {
+    "sentence_tokens" : [ "More", "than", "1400", "genes", "were", "differential", "expressed", "between", "the", "tumour", "and", "adjacent", "normal", "tissue", ",", "with", "more", "than", "3800", "genes", "differentially", "expressed", "in", "the", "tumour", "-", "PDX", "comparison", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "study", ",", "we", "focused", "on", "genes", "that", "were", "differentially", "expressed", "in", "both", "comparisons", "and", "associated", "with", "disease", "initiation", "and", "disease", "progression", "characteristics", "." ]
+  }, {
+    "sentence_tokens" : [ "2", "." ]
+  }, {
+    "sentence_tokens" : [ "Results", "." ]
+  }, {
+    "sentence_tokens" : [ "2.1", "." ]
+  }, {
+    "sentence_tokens" : [ "Patient", "Characteristics", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "total", ",", "48", "patient", "samples", "were", "collected", "from", "patients", "who", "ranged", "in", "age", "from", "40", "years", "to", "80", "years", ",", "with", "a", "total", "29", "males", "and", "19", "females", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "baseline", "characteristics", "of", "the", "patients", "are", "given", "in", "Table", "1", "." ]
+  }, {
+    "sentence_tokens" : [ "Of", "the", "35", "pancreatic", "ductal", "adenocarcinoma", "(", "PDAC", ")", "samples", "obtained", ",", "14", "(", "40", "%", ")", "were", "female", "and", "21", "(", "60", "%", ")", "were", "male", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "average", "age", "for", "surgery", "for", "PDAC", "patients", "was", "65", "years", "for", "female", "patients", "and", "67", "years", "for", "male", "patients", "." ]
+  }, {
+    "sentence_tokens" : [ "Of", "the", "surgical", "specimens", "obtained", ",", "six", "samples", "from", "PDAC", "patients", "had", "received", "neo-adjuvant", "treatment", "." ]
+  }, {
+    "sentence_tokens" : [ "Node", "status", "was", "available", "for", "24", "of", "the", "33", "PDAC", "patients", ",", "with", "17", "of", "those", "patients", "having", "a", "pT3", "node", "status", "." ]
+  }, {
+    "sentence_tokens" : [ "pT3", "node", "status", "indicates", "extension", "beyond", "the", "pancreas", "into", "the", "peripancreatic", "soft", "tissue", "or", "the", "surrounding", "structures", "[", "10", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Due", "the", "centralised", "nature", "of", "pancreatic", "cancer", "surgical", "resection", "procedures", "in", "Ireland", ",", "follow-up", "data", "was", "not", "available", "for", "all", "patients", "in", "the", "study", ",", "many", "of", "whom", "were", "treated", "in", "facilities", "other", "than", "the", "surgical", "hospital", "for", "their", "post-surgical", "care", "." ]
+  }, {
+    "sentence_tokens" : [ "Available", "follow", "up", "information", "regarding", "treatment", "and", "survival", "is", "given", "in", "Table", "2", "." ]
+  }, {
+    "sentence_tokens" : [ "Patients", "predominately", "received", "gemcitabine", ",", "gemcitabine", "+", "Abraxane", "or", "FOLFIRINOX", "as", "an", "adjuvant", "treatment", ",", "with", "some", "individuals", "receiving", "Carboplatin", "and", "Etoposide", "combination", "or", "Capecitabine", "." ]
+  }, {
+    "sentence_tokens" : [ "Patient", "survival", "ranged", "from", "less", "than", "4", "months", "to", "over", "3", "years.Only", "11", "of", "48", "patient", "samples", "had", "recorded", "information", "regarding", "the", "patient", "presentation", "." ]
+  }, {
+    "sentence_tokens" : [ "Of", "those", "11", ",", "nine", "patients", "presented", "with", "jaundice", ",", "obstructive", "jaundice", "or", "painless", "obstructive", "jaundice", ",", "1", "presented", "with", "abdominal", "pain", "and", "another", "patient", "was", "an", "incidental", "identification", "on", "a", "PET", "scan", "." ]
+  }, {
+    "sentence_tokens" : [ "2.2", "." ]
+  }, {
+    "sentence_tokens" : [ "Pancreatic", "PDX", "Biobank", "." ]
+  }, {
+    "sentence_tokens" : [ "Tumour", "material", "obtained", "was", "confirmed", "macroscopically", "by", "consultant", "histopathologist", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "quantity", "of", "tumour", "available", "for", "research", "(", "biobanking", "and", "implantation", ")", "was", "variable", "and", "determined", "by", "the", "pathologist", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "number", "of", "mice", "per", "patient", "implanted", "varied", "from", "3", "to", "5", "depending", "on", "the", "tumour", "type", "and", "quantity", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "total", ",", "48", "patient", "samples", "were", "acquired", "over", "a", "5", "year", "period", "." ]
+  }, {
+    "sentence_tokens" : [ "Of", "these", ",", "35", "samples", "were", "PDAC", ",", "with", "three", "cholangiocarcinoma", ",", "three", "IPMN", "and", "six", "NET", "samples", "acquired", ";", "a", "full", "breakdown", "of", "samples", "acquired", "and", "engraftment", "status", "is", "given", "in", "Table", "3", "." ]
+  }, {
+    "sentence_tokens" : [ "All", "samples", "were", "confirmed", "as", "by", "the", "consultant", "histopathologist", "to", "have", "maintained", "architecture", "and", "morphology", "as", "the", "original", "patient", "tumour", ",", "representation", "images", "Supplementary", "Materials", "Figure", "S1", "." ]
+  }, {
+    "sentence_tokens" : [ "Of", "the", "35", "PDAC", "samples", "acquired", ",", "seven", "had", "received", "neo-adjuvant", "treatment", "prior", "to", "surgery", ",", "PIN", "139", ",", "PIN", "145", ",", "PIN", "165", ",", "PIN", "191", ",", "PIN", "194", ",", "PIN", "199", "and", "PIN", "210", "." ]
+  }, {
+    "sentence_tokens" : [ "Neo-adjuvant", "treatments", "included", "FOLFIRINOX", "with", "radiation", ",", "gemcitabine", "and", "oxaliplatin", "with", "radiation", "and", "gemcitabine", "and", "Abraxane", "with", "radiation", "." ]
+  }, {
+    "sentence_tokens" : [ "Of", "these", "six", "samples", ",", "only", "one", "sample", "grew", "as", "a", "PDX", "tumour", "." ]
+  }, {
+    "sentence_tokens" : [ "Samples", "were", "received", "without", "the", "complete", "pathological", "diagnostics", "and", "samples", "were", "implanted", "as", "and", "when", "they", "arrived", "." ]
+  }, {
+    "sentence_tokens" : [ "PIN", "194", "was", "a", "neo-adjuvant", "treated", "with", "gemcitabine", "and", "Abraxane", "and", "long-course", "radiation", "." ]
+  }, {
+    "sentence_tokens" : [ "On", "histopathological", "confirmation", ",", "the", "sample", "showed", "no", "trace", "of", "residual", "tumour", "cells", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "suggests", "lower", "engraftment", "rates", "(", "14", "%", ")", "in", "pre-treated", "samples", "are", "possibly", "due", "to", "the", "reduced", "number", "of", "viable", "tumour", "cells", "in", "the", "sample", "due", "to", "the", "treatment", "effect", ",", "however", "a", "larger", "sample", "size", "would", "be", "required", "to", "confirm", "this.The", "average", "number", "of", "days", "following", "implantation", "of", "patient", "tumour", "to", "palpate", "tumour", "is", "78", "days", ",", "ranging", "from", "20", "days", "to", "306", "days", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "tumour", "growth", "rates", "in", "the", "first", "generation", "in", "mouse", "(", "F1", "generation", ")", "varied", "both", "within", "tumours", "and", "between", "tumours", "with", "timelines", "for", "harvesting", "tumours", "ranging", "from", "72", "days", "post", "implant", "to", "512", "days", "post", "implant", "." ]
+  }, {
+    "sentence_tokens" : [ "Tumour", "growth", "rates", "in", "Figure", "1", "show", "that", "while", "tumour", "initiation", "takes", "time", ",", "tumour", "growth", "rate", "increases", "once", "established", "." ]
+  }, {
+    "sentence_tokens" : [ "Given", "that", "similar", "sized", "tumour", "pieces", "are", "implanted", "in", "each", "animal", "the", "intra-tumour", "and", "inter-tumour", "variation", "in", "growth", "and", "take", "rate", "maybe", "representative", "of", "innate", "tumour", "heterogeneity", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "treatment-na", "i", "ve", "PDAC", "samples", "78", "%", "grew", "in", "vivo", ",", "in", "neo-adjuvant", "treated", "samples", "only", "14", "%", "(", "1/7", ")", "samples", "produced", "a", "tumour", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "neuroendocrine", "tumours", ",", "20", "%", "(", "1/5", ")", "of", "samples", "grew", "in", "vivo.In", "total", ",", "10", "F1", "generation", "PDX", "fresh", "frozen", "tumour", "samples", "were", "investigated", "for", "mutational", "status", "by", "Sequenom", "MassArray", "MALDI-TOF", "system", ",", "Supplementary", "Data", "Table", "S1", "and", "Figure", "S2", "." ]
+  }, {
+    "sentence_tokens" : [ "Of", "the", "10", "samples", "analysed", ",", "mutations", "were", "detected", "in", "all", "samples", "except", "one", "(", "PIN", "116", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "KRAS", "mutation", "were", "detected", "in", "8/10", "samples", "and", "PIK3R1", "mutations", "were", "detected", "in", "5/10", "samples", "." ]
+  }, {
+    "sentence_tokens" : [ "Other", "detected", "mutations", "included", "IDH1", "(", "1/10", ")", ";", "MET", "(", "1/10", ")", ";", "PHLPP2", "(", "3/10", ")", "and", "PIK3CA", "(", "1/10", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Given", "the", "small", "sample", "numbers", ",", "PDX", "growth", "and", "take", "rate", "cannot", "be", "attributed", "to", "a", "single", "factor", "but", "key", "operational", "factors", "including", "the", "immediate", "cooling", "of", "the", "sample", "following", "surgery", ",", "rapid", "implantation", "and", "sample", "selection", "and", "identification", "by", "histopathologist", "2.3", "." ]
+  }, {
+    "sentence_tokens" : [ "Derivation", "of", "Cancer", "Associated", "Fibroblasts", "and", "Tumour", "Cell", "Lines", "." ]
+  }, {
+    "sentence_tokens" : [ "From", "11", "F1", "PDX", "tumour", "pieces", ",", "three", "tumour", "cell", "lines", "were", "isolated", ":", "PIN", "080", ",", "PIN", "099", "and", "PIN", "127", "." ]
+  }, {
+    "sentence_tokens" : [ "Two", "further", "tumour", "cell", "lines", "failed", "to", "proliferate", "after", "initial", "sub-culturing", ":", "PIN", "089", "and", "PIN", "091", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "three", "tumour", "cell", "lines", "established", "were", "confirmed", "as", "human", "by", "IHC", ",", "as", "detailed", "in", "Figure", "2", "." ]
+  }, {
+    "sentence_tokens" : [ "Immunohistochemical", "analysis", "using", "the", "human", "specific", "antibody", "Anti-Mitochondria", "antibody", "113", "-", "1", "(", "dilution", "1/1000", ")", "confirmed", "that", "the", "tumour", "cells", "isolated", "were", "human", "in", "origin.From", "seven", "patient", "tumours", ",", "two", "patient", "derived", "stromal", "cell", "lines", "were", "isolated", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "two", "stromal", "cell", "lines", ",", "Fibro-102", "and", "Fibro", "120", ",", "have", "been", "successfully", "cultured", ",", "cryo", "preserved", "and", "restored", "." ]
+  }, {
+    "sentence_tokens" : [ "These", "cell", "lines", "grow", "with", "a", "fibroblast", "morphology", "." ]
+  }, {
+    "sentence_tokens" : [ "Preliminary", "data", "(", "unpublished", ")", "indicated", "phenotypic", "changes", "in", "pancreatic", "cancer", "cells", "(", "Mia-PaCa-2", ",", "Panc-1", ")", "in", "response", "to", "co-culture", "with", "patient", "derived", "stromal", "cells", "in", "comparison", "to", "cancer", "cell", "alone", "." ]
+  }, {
+    "sentence_tokens" : [ "2.4", "." ]
+  }, {
+    "sentence_tokens" : [ "Immunohistochemical", "Characterisation", "of", "PDX", "tumours", "." ]
+  }, {
+    "sentence_tokens" : [ "PDX", "tumours", "are", "known", "to", "recapitulate", "the", "patient", "morphology", "." ]
+  }, {
+    "sentence_tokens" : [ "Additionally", ",", "as", "the", "tumours", "grow", ",", "within", "the", "first", "passage", "in", "the", "stroma", "is", "replaced", "with", "mouse", "tissue", "[", "2,11,12", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Shown", "in", "Figure", "3", "are", "representative", "examples", "of", "10", "PDX", "tumour", "samples", "stained", "for", "human", "specificity", "using", "Anti-Mitochondria", "antibody", "113-1", "(", "1/1000", "dilution", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "images", "show", "the", "tumour", "cells", "staining", "positive", "for", "human", "with", "the", "stromal", "material", "not", "staining", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "demonstrates", "the", "maintenance", "of", "the", "human", "tumour", "phenotype", "through", "the", "passaging", ",", "with", "murine", "cells", "overtaking", "the", "stroma", "." ]
+  }, {
+    "sentence_tokens" : [ "2.5", "." ]
+  }, {
+    "sentence_tokens" : [ "Microarray", "Gene", "Expression", "Analysis", "." ]
+  }, {
+    "sentence_tokens" : [ "Microarray", "gene", "expression", "profiling", "was", "performed", "on", "GeneChip", "Human", "Gene", "2.0", "ST", "array", "on", "five", "triple", "matched", "samples", "and", "three", "double", "matched", "samples", ",", "detailed", "in", "Table", "4", "." ]
+  }, {
+    "sentence_tokens" : [ "mRNA", "profile", "showed", "that", "after", "passaging", "in", "the", "mouse", ",", "the", "PDX", "tumours", "cluster", "closely", "together", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "primary", "patient", "tumours", "predominantly", "cluster", "together", "by", "PCA", "analysis", ",", "with", "two", "samples", "PIN", "080", "and", "PIN", "089", "distant", "from", "the", "cluster", ",", "Figure", "4", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "adjacent", "normal", "tissue", "displayed", "the", "least", "amount", "of", "clustering", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "is", "representative", "of", "the", "heterogeneity", "of", "the", "patients", "with", "the", "minor", "selection", "pressure", "of", "the", "PDX", "formation", "and", "the", "murine", "stromal", "replacement", "through", "engraftment", "resulting", "in", "a", "less", "heterogeneous", "sample", "population", "in", "the", "PDX", "tumours.In", "total", ",", "more", "than", "5000", "genes", "were", "differentially", "expressed", "in", "the", "comparisons", "on", "adjacent", "normal", "vs.", "tumour", "and", "tumour", "vs.", "PDX", ",", "taking", "a", "1.5-fold", "cut", "off", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "breakdown", "of", "the", "numbers", "of", "genes", "changed", "is", "given", "in", "Table", "5", ",", "while", "the", "top", "20", "genes", "differential", "expressed", "with", "a", "LOG", "fold", "change", "of", "2", "or", "greater", "in", "the", "adjacent", "normal", "vs.", "tumour", "and", "tumour", "vs.", "PDX", "F1", "is", "shown", "in", "Table", "6", ";", "Table", "7", ",", "respectively.In", "order", "to", "determine", "which", "biological", "process", "the", "differentially", "expressed", "genes", "were", "involved", "in", ",", "gene", "ontology", "analysis", "was", "completed", "on", "a", "short", "list", "of", "89", "genes", "[", "13,14", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Gene", "ontology", "(", "GO", ")", "analysis", "showed", "that", "the", "shortlist", "of", "89", "genes", "upregulated", "by", "two-fold", "or", "more", "in", "both", "the", "N", "vs.", "T", "comparison", "and", "T", "vs.", "F1", "comparison", "were", "predominantly", "related", "to", "biological", "processes", "such", "as", "cell", "cycle", "and", "mitosis", "(", "Table", "8)", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "suggests", "that", "this", "shortlist", "of", "genes", "(", "Supplementary", "Table", "S2", ")", "are", "selected", "for", "growth", "and", "demonstrate", "the", "genes", "associated", "with", "tumour", "initiation", "and", "tumour", "progression", "." ]
+  }, {
+    "sentence_tokens" : [ "Further", "validation", "was", "performed", "using", "AMIGO", "database", "against", "Homo", "Sapiens", "database", "of", "all", "genes", "." ]
+  }, {
+    "sentence_tokens" : [ "[", "15", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "shortlisted", "89", "genes", "of", "interest", "were", "classified", "by", "biological", "process", "using", "a", "Fisher", "Test", "and", "applying", "a", "Bonferroni", "correction", "(", "Table", "9", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "complete", "dataset", "in", "this", "publication", "have", "been", "deposited", "in", "NCBI", "'", "s", "Gene", "Expression", "Omnibus", ",", "GEO", "Series", "accession", "number", "GSE141873", "[", "13,14,16", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Figure", "5A", "-", "E", "show", "five", "genes", "of", "interest", "that", "were", "upregulated", "in", "N", "vs.", "T", "vs.", "F1", "giving", "the", "individual", "expression", "in", "each", "sample", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "our", "global", "analysis", "of", "six", "adjacent", "normal", "compared", "to", "seven", "tumour", "samples", ",", "SERPINB5", ",", "also", "known", "as", "P15", "and", "Maspin", "[", "17", "]", ",", "was", "shown", "to", "be", "increased", "in", "the", "tumour", "samples", "compared", "to", "the", "adjacent", "normal", "samples", "(", "6.8-fold", "increase", ")", ",", "with", "a", "further", "increase", "in", "the", "F1", "generation", "PDX", "tumours", "(", "eight", "samples", ")", "compared", "to", "the", "patient", "tumour", "samples", "(", "6.6-fold", "increase", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Both", "of", "these", "global", "comparisons", "were", "statistically", "significant", "(", "p", "=", "8.84", "x", "10", "and", "8.96", "x", "10", "respectively", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Figure", "5A", "shows", "the", "individual", "levels", "of", "SERPINB5", "in", "the", "adjacent", "normal", ",", "tumour", "and", "F1", "PDX", "tumour", "samples", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "comparison", "of", "FERMT1", "(", "Figure", "5B", ")", "compared", "to", "patient", "tumour", "a", "6.4-fold", "increase", "(", "p", "=", "3.00", "x", "10", ")", "was", "detected", "with", "a", "further", "2.5-fold", "increase", "(", "p", "=", "5.40", "x", "10", ")", "in", "the", "F1", "PDX", "tumour", "material", "when", "compared", "to", "the", "F1", "cohort", "." ]
+  }, {
+    "sentence_tokens" : [ "AGR-2", "(", "Figure", "5C", ")", "was", "increased", "4.98-fold", "(", "p", "=", "1.50", "x", "10", ")", "in", "the", "patient", "tumour", "compared", "to", "the", "adjacent", "normal", "tissue", "and", "a", "further", "5.09-fold", "(", "p", "=", "3.00", "x", "10", ")", "increased", "in", "PDX", "F1", "tissue", "compared", "to", "tumour", "material", "Solute", "Carrier", "SLC6A14", "(", "Figure", "5D", ")", "showed", "a", "22.8-fold", "increase", "(", "p", "=", "4.00", "x", "10", ")", "in", "a", "comparison", "between", "tumour", "tissue", "and", "adjacent", "normal", "material", "and", "a", "further", "3.2-fold", "increase", "(", "p", "=", "1.07", "x", "10", ")", "in", "the", "F1", "PDX", "cohort", "compared", "to", "the", "tumour", "tissue", "." ]
+  }, {
+    "sentence_tokens" : [ "TOP2A", "(", "Figure", "5E", ")", "showed", "a", "6.4-fold", "increase", "(", "p", "=", "2.00", "x", "10", ")", "in", "the", "tumour", "compared", "to", "adjacent", "normal", "tissue", "(", "p", "=", "2.00", "x", "10", ")", "and", "a", "further", "3.8-fold", "increase", "in", "the", "PDX", "F1", "tissue", "compared", "to", "the", "patient", "tumour", "." ]
+  }, {
+    "sentence_tokens" : [ "MUC1", "has", "been", "shown", "to", "be", "overexpressed", "in", "pancreatic", "cancer", "[", "18", "]", ",", "and", "has", "been", "associated", "with", "multidrug", "resistance", "and", "gemcitabine", "resistance", "[", "19", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "our", "list", "of", "differentially", "expressed", "genes", "MUC1", "was", "1.7-fold", "increased", "in", "tumour", "vs.", "normal", "but", "not", "statistically", "significantly", "changed", "in", "the", "tumour", "compared", "to", "F1", "comparison", "(", "see", "Supplementary", "Table", "S2", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "MUC13", "was", "significantly", "increased", "in", "both", "the", "N", "vs.", "T", "comparison", "(", "9.4-fold", ")", "and", "the", "T", "vs.", "F1", "comparison", "(", "3.0-fold", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "MUC13", "has", "been", "shown", "to", "be", "increased", "in", "PDAC", "tissue", "compared", "to", "normal", "adjacent", "tissue", "[", "20", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "3", "." ]
+  }, {
+    "sentence_tokens" : [ "Materials", "and", "Methods", "." ]
+  }, {
+    "sentence_tokens" : [ "3.1", "." ]
+  }, {
+    "sentence_tokens" : [ "Sample", "Acquisition", "and", "Ethical", "Approval", "." ]
+  }, {
+    "sentence_tokens" : [ "Pancreatic", "cancer", "tissue", "and", "adjacent", "normal", "tissue", "(", "N", ")", "were", "obtained", "from", "patients", "undergoing", "surgical", "resection", "at", "St", "Vincent", "'", "s", "University", "Hospital", "." ]
+  }, {
+    "sentence_tokens" : [ "After", "initial", "macroscopic", "pathological", "confirmation", ",", "material", "remaining", "after", "diagnostic", "sampling", "was", "cold", "transferred", "in", "RPMI", "1640", "medium", "containing", "1", "%", "Penicillin-Streptomycin", ",", "1", "%", "fungazone", "to", "DCU", "." ]
+  }, {
+    "sentence_tokens" : [ "Transfer", "time", "between", "hospital", "and", "implantation", "was", "on", "average", "2", "h", "or", "less.Collection", "of", "patient", "material", "was", "approved", "by", "St", "Vincent", "'", "s", "University", "Hospital", "Research", "Ethics", "Committee", "." ]
+  }, {
+    "sentence_tokens" : [ "All", "animal", "work", "received", "ethical", "approval", "from", "the", "DCU", "Research", "Ethics", "Committee", "(", "DCUREC/2012/202", ")", "and", "was", "licensed", "by", "Department", "of", "Health", "(", "B100-4501", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "3.2", "." ]
+  }, {
+    "sentence_tokens" : [ "PDX", "Tumour", "Development", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "tumour", "was", "cut", "into", "implant", "sized", "pieces", "(", "<", "2", "mm", ")", "and", "rinsed", "with", "fresh", "serum-free", "RPMI", "media", "following", "transport", "." ]
+  }, {
+    "sentence_tokens" : [ "Severe", "combined", "immunodeficiency", "(", "SCID", ")", ",", "CB17", "and", "lcr-Prkdc", "/", "lcrCrl", "mice", "(", "Charles", "River", ",", "UK", ")", "were", "implanted", "subcutaneously", "with", "fresh", "patient", "tumour", "material", "." ]
+  }, {
+    "sentence_tokens" : [ "Depending", "upon", "the", "size", "and", "type", "of", "tumour", "material", ",", "3", "-", "5", "mice", "were", "implanted", "per", "patient", "sample", "." ]
+  }, {
+    "sentence_tokens" : [ "Under", "anaesthesia", "(", "isoflourane", ",", "O", "carrier", "gas", ")", "a", "small", "incision", "was", "made", "in", "the", "skin", "of", "the", "left", "flank", "of", "the", "animal", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "tumour", "piece", "was", "placed", "in", "the", "pocket", "under", "the", "skin", "and", "the", "wound", "sealed", "with", "a", "single", "staple", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "animals", "were", "monitored", "post-surgery", ",", "and", "staple", "removal", "was", "within", "10", "days", "." ]
+  }, {
+    "sentence_tokens" : [ "Animals", "were", "monitored", "weekly", "for", "body", "weight", "and", "tumour", "development", "." ]
+  }, {
+    "sentence_tokens" : [ "Mice", "were", "monitored", "for", "tumours", "development", "for", "up", "to", "1", "year", "post", "implantation", "." ]
+  }, {
+    "sentence_tokens" : [ "Animal", "welfare", "monitoring", "criteria", "included", "tumour", "volume", ",", "tumour", "axis", ",", "body", "weight", "and", "condition", "." ]
+  }, {
+    "sentence_tokens" : [ "There", "tumour", "volume", "and", "tumour", "axis", "limits", "were", "set", "as", "<", "2000", "mm", ",", "and", "<", "20", "mm", "respectively", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "decrease", "in", "body", "weight", "of", ">", "10", "%", "resulted", "in", "increased", "monitoring", "with", "body", "weight", "decrease", "of", "20", "%", "resulting", "in", "humane", "euthanasia", "." ]
+  }, {
+    "sentence_tokens" : [ "3.3", "." ]
+  }, {
+    "sentence_tokens" : [ "Preservation", "of", "PDX", "tumours", "." ]
+  }, {
+    "sentence_tokens" : [ "Following", "humane", "euthanasia", "of", "the", "mouse", ",", "the", "tumour", "was", "divided", "for", "cryopreservation", ",", "formalin", "fixed", "paraffin", "embedding", "(", "FFPE", ")", "and", "snap", "frozen", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "cryopreservation", ",", "implant", "sized", "tumour", "pieces", "were", "stored", "in", "freezing", "media", "(", "RMPI/FCS/DMSO", "--", "50/40/10", "%", "v/v", ")", "in", "a", "cryovial", "and", "placed", "in", "a", "Mr", "Frosty", "freezing", "container", "(", "ThermoFischer", ",", "Dublin", "Ireland", ")", "for", "24", "h", "and", "then", "transferred", "to", "the", "liquid", "nitrogen", "(", "LN", ")", "for", "long-term", "storage", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "snap", "freezing", ",", "a", "piece", "of", "tumour", "was", "minced", "with", "a", "scalpel", ",", "placed", "in", "a", "cryovial", "and", "placed", "directly", "into", "LN", ",", "then", "stored", "at", "-", "80", "degrees", "C.", "For", "FFPE", ",", "a", "central", "slice", "was", "preserved", "in", "10", "%", "neutral", "buffered", "formalin", "overnight", "and", "processed", "subsequently", "in", "70", "%", ",", "90", "%", ",", "100", "%", "ethanol", "followed", "100", "%", "xylene", "(", "1", "h", "each", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Following", "processing", "the", "tumours", "were", "embedded", "in", "paraffin", "." ]
+  }, {
+    "sentence_tokens" : [ "FFPE", "samples", "of", "PDX", "tumours", "were", "reviewed", "by", "consultant", "histopathologist", "to", "validate", "maintenance", "of", "tumour", "phenotype", "in", "comparison", "with", "original", "patient", "tumour", "." ]
+  }, {
+    "sentence_tokens" : [ "3.4", "." ]
+  }, {
+    "sentence_tokens" : [ "Cell", "Isolation", "from", "Tumour", "Material", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "small", "piece", "of", "tumour", "(", "<", "2", "mm", ")", "was", "minced", "and", "placed", "in", "Collagenase", "and", "Hyaluronidase", "(", "StemCell", "Technologies", "Cambridge", ",", "UK", ")", "at", "4", "degrees", "C", "for", "1", "h", "and", "then", "transferred", "to", "37", "degrees", "C", "for", "30", "min", "." ]
+  }, {
+    "sentence_tokens" : [ "Following", "digestion", ",", "the", "sample", "was", "centrifuged", "200", "g", "for", "5", "min", "and", "the", "supernatant", "removed", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "digested", "material", "was", "suspended", "with", "complete", "media", "(", "DMEM", "and", "F-12", "Hams", "supplemented", "with", "10", "%", "FCS", "1", "%", "PenStrep", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Samples", "were", "monitored", "for", "growth", "and", "fed", "as", "required", "." ]
+  }, {
+    "sentence_tokens" : [ "Tumour", "cells", "were", "isolated", "from", "first", "generation", "PDX", "tumours", "while", "fibroblasts", "were", "isolated", "directly", "from", "patient", "tumours", "." ]
+  }, {
+    "sentence_tokens" : [ "Tumour", "cell", "lines", "were", "confirmed", "as", "human", "by", "IHC", "." ]
+  }, {
+    "sentence_tokens" : [ "3.5", "." ]
+  }, {
+    "sentence_tokens" : [ "Immunohistochemical", "Analysis", "of", "PDX", "tumours", "to", "determine", "Human-Mouse", "Tissue", "." ]
+  }, {
+    "sentence_tokens" : [ "3.5.1", "." ]
+  }, {
+    "sentence_tokens" : [ "Immunohistochemistry", "." ]
+  }, {
+    "sentence_tokens" : [ "All", "immune-histochemical", "(", "IHC", ")", "staining", "was", "performed", "using", "the", "DAKO", "Autostainer", "." ]
+  }, {
+    "sentence_tokens" : [ "Deparaffinisation", "and", "antigen", "retrieval", "were", "performed", "using", "Epitope", "Retrieval", "3-in-1", "solution", "(", "pH", "6", ")", "(", "DAKO", ",", "Cruinn", ",", "Dublin", "Ireland", ")", "was", "used", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "epitope", "retrieval", "slides", "were", "heated", "to", "97", "degrees", "C", "for", "20", "min", "and", "then", "cooled", "to", "65", "degrees", "C.", "3.5.2", "." ]
+  }, {
+    "sentence_tokens" : [ "Real", "Envision", "Detection", "System", "Peroxidase", "and", "DAB+", "." ]
+  }, {
+    "sentence_tokens" : [ "Following", "either", "deparaffinisation", "or", "epitope", "retrieval", "as", "outlined", "above", "slides", "were", "immersed", "in", "1", "x", "wash", "buffer", "." ]
+  }, {
+    "sentence_tokens" : [ "On", "the", "autostainer", "(", "DAKO", ")", ",", "slides", "were", "blocked", "for", "10", "min", "with", "200", "mu", "L", "HRP", "Block", "(", "DAKO", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Slides", "were", "washed", "with", "1", "x", "wash", "buffer", "and", "200", "mu", "L", "of", "the", "primary", "antibody", "were", "added", "to", "the", "slides", "for", "30", "min", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "primary", "antibody", "used", "was", "Abcam", "Anti-Mitochondria", "antibody", "113", "-", "1", "(", "ab92824", ")", ",", "a", "human", "specific", "antibody", "[", "21", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "antibody", "was", "used", "at", "a", "dilution", "of", "1", "in", "1000", "." ]
+  }, {
+    "sentence_tokens" : [ "Slides", "were", "once", "again", "washed", "with", "1", "x", "wash", "buffer", "and", "then", "incubated", "with", "200", "mu", "L", "Real", "EnVision", "(", "DAKO", ")", "for", "30", "min", "." ]
+  }, {
+    "sentence_tokens" : [ "Slides", "were", "washed", "again", "with", "wash", "buffer", "and", "then", "stained", "with", "200", "mu", "L", "DAB+", "substrate", "for", "5", "min", "and", "this", "procedure", "was", "repeated", "twice", "." ]
+  }, {
+    "sentence_tokens" : [ "All", "slides", "were", "then", "counterstained", "with", "haematoxylin", "(", "DAKO", ")", "for", "5", "min", "and", "were", "rinsed", "with", "deionised", "water", "and", "then", "with", "wash", "buffer", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "negative", "control", "sample", "was", "also", "tested", "for", "each", "sample", "using", "antibody", "diluent", "without", "any", "antibody", "present", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "was", "used", "to", "evaluate", "any", "non", "specific", "staining", "." ]
+  }, {
+    "sentence_tokens" : [ "Following", "the", "counterstaining", "with", "haematoxylin", ",", "the", "slides", "were", "then", "dehydrated", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "was", "achieved", "by", "immersing", "the", "slide", "in", "70", "%", ",", "90", "%", "and", "100", "%", "ethanol", ",", "twice", "in", "each", "ethanol", "solutions", "for", "3", "min", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "slides", "were", "then", "immersed", "into", "xylene", ",", "twice", ",", "for", "5", "min", "each", "." ]
+  }, {
+    "sentence_tokens" : [ "Once", "the", "slides", "were", "cleared", ",", "they", "were", "mounted", "using", "DPX", "(", "BDH", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "3.5.3", "." ]
+  }, {
+    "sentence_tokens" : [ "Immunohistochemical", "Analysis", "of", "Cell", "Lines", "." ]
+  }, {
+    "sentence_tokens" : [ "Cells", "were", "seeded", "directly", "on", "Superfrost", "microscope", "slides", "and", "allowed", "to", "attach", "overnight", "at", "37", "degrees", "C", ",", "5", "%", "CO", "." ]
+  }, {
+    "sentence_tokens" : [ "Slides", "were", "washed", "3", "times", "in", "PBS", "and", "cells", "were", "then", "fixed", "in", "cold", "4", "%", "paraformaldehyde", "for", "15", "min", "and", "washed", "with", "PBS", "." ]
+  }, {
+    "sentence_tokens" : [ "Immunostaining", "was", "carried", "out", "using", "the", "Dako", "Autostainer", "as", "per", "Section", "3.5.2", ",", "without", "the", "initial", "antigen", "retrieval", "." ]
+  }, {
+    "sentence_tokens" : [ "3.6", "." ]
+  }, {
+    "sentence_tokens" : [ "Mutational", "Analysis", "." ]
+  }, {
+    "sentence_tokens" : [ "Mass", "spectrometry", "based", "single-nucleotide", "polymorphism", "genotyping", "technology", "(", "Agena", "Biosciences", ",", "Hamburg", ",", "Germany", ")", "was", "used", "for", "identification", "of", "hotspot", ",", "potentially", "clinically", "relevant", "nonsynonymous", "somatic", "mutations", "as", "previously", "described", "[", "22", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "genes", "were", "further", "subdivided", "by", "pathway", ",", "and", "include", "MAPK", ",", "PI3K", "and", "related", "pathway", "genes", "(", "Supplementary", "Table", "S3", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Assays", "were", "designed", "using", "strict", "assay", "design", "parameters", "optimized", "for", "sensitive", "mutation", "detection", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "panel", "consisted", "of", "31", "multiplex", "assays", "capable", "of", "detecting", "378", "somatic", "hotspot", "mutations", "in", "49", "genes", "." ]
+  }, {
+    "sentence_tokens" : [ "DNA", "was", "extracted", "from", "fresh", "frozen", "tumour", "material", "using", "QIAmp", "DNA", "mini", "kit", "(", "Qiagen", ",", "Hilden", ",", "Germany", ")", "and", "quantified", "by", "Qubit", "dsDNA", "." ]
+  }, {
+    "sentence_tokens" : [ "10", "ng", "of", "DNA", "was", "added", "to", "each", "PCR", "reaction", "and", "DNA", "was", "amplified", "using", "custom", "designed", "PCR", "primer", "pools", "." ]
+  }, {
+    "sentence_tokens" : [ "Unincorporated", "nucleotides", "were", "inactivated", "using", "shrimp", "alkaline", "phosphatase", "(", "SAP", ")", ",", "and", "a", "single", "base", "extension", "reaction", "was", "performed", "using", "extension", "primers", "that", "hybridise", "immediately", "adjacent", "to", "the", "mutations", "of", "interest", "." ]
+  }, {
+    "sentence_tokens" : [ "Salts", "were", "removed", "by", "adding", "a", "cation-exchange", "resin", ",", "before", "the", "multiplexed", "reactions", "were", "spotted", "onto", "SpectroCHIP", "II", "arrays", "." ]
+  }, {
+    "sentence_tokens" : [ "Matrix", "chips", "were", "analysed", "on", "an", "Agena", "MassArray", "Matrix", "assisted", "laser", "desorption", "and", "ionisation", "Time", "of", "Flight", "(", "MALDI-TOF", ")", "system", "." ]
+  }, {
+    "sentence_tokens" : [ "3.7", "." ]
+  }, {
+    "sentence_tokens" : [ "Sample", "Preparation", "for", "Microarray", "." ]
+  }, {
+    "sentence_tokens" : [ "Snap-frozen", "sections", "of", "PDX", "tumours", ",", "original", "patient", "material", "and", "adjacent", "normal", "tissue", "were", "prepared", "for", "RNA", "extraction", "by", "grinding", "samples", "under", "LN", "using", "a", "mortar", "and", "pestle", "." ]
+  }, {
+    "sentence_tokens" : [ "Briefly", ",", "tissue", "sample", "was", "placed", "in", "a", "metal", "mortar", "with", "a", "small", "volume", "of", "LN", "and", "ground", "quickly", "." ]
+  }, {
+    "sentence_tokens" : [ "When", "powdered", "the", "powder", "was", "transferred", "to", "a", "clean", "Eppendorf", "tube", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "was", "done", "before", "the", "LN", "completely", "evaporated", "and", "while", "the", "powder", "was", "still", "frozen.Once", "homogenised", ",", "RNA", "samples", "were", "prepared", "using", "Trizol", ",", "according", "to", "manufacturer", "'", "s", "guidelines", "." ]
+  }, {
+    "sentence_tokens" : [ "Briefly", ",", "powdered", "tissue", "was", "lysed", "in", "1", "mL", "of", "Trizol", "reagent", "." ]
+  }, {
+    "sentence_tokens" : [ "Sample", "was", "allowed", "to", "homogenise", "at", "room", "temperature", "for", "15", "min", "." ]
+  }, {
+    "sentence_tokens" : [ "Per", "1", "mL", "of", "Trizol", "reagent", "used", ",", "200", "mu", "L", "of", "chloroform", "was", "added", "to", "the", "Eppendorf", "(", "Hamburg", ",", "Germany", ")", ",", "sample", "was", "mixed", "and", "allowed", "to", "sit", "for", "5", "min", "." ]
+  }, {
+    "sentence_tokens" : [ "At", "4", "degrees", "C", "samples", "were", "spun", "at", "12,000", "x", "g", "for", "15", "min", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "aqueous", "phase", "was", "then", "separated", "using", "a", "micropipette", "and", "places", "in", "a", "new", "Eppendorf", "." ]
+  }, {
+    "sentence_tokens" : [ "500", "mu", "L", "of", "isopropanol", "was", "added", "to", "the", "aqueous", "phase", ",", "allowed", "to", "sit", "at", "room", "temperature", "for", "10", "min", ",", "after", "which", "it", "was", "spun", "at", "12,000", "x", "g", "at", "4", "degrees", "C", "for", "10", "min", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "RNA", "pellet", "was", "then", "washed", "using", "75", "%", "ethanol", "and", "spun", "at", "4", "degrees", "C", "at", "7500", "x", "g", "for", "5", "min", "." ]
+  }, {
+    "sentence_tokens" : [ "Ethanol", "was", "removed", "from", "pellet", ",", "which", "were", "allowed", "to", "air", "dry", ",", "and", "were", "then", "reconstituted", "in", "nuclease", "free", "water.Samples", "were", "quantified", "using", "a", "Nanodrop", "(", "Thermo", "Scientific", ",", "Dublin", "Ireland", ")", "and", "quality", "determined", "using", "Agilent", "Bioanalyser", "." ]
+  }, {
+    "sentence_tokens" : [ "Samples", "with", "a", "RNA", "Integrity", "Number", "(", "RIN", ")", "number", "greater", "than", "8", "were", "most", "suitable", "for", "microarray", "analysis", "." ]
+  }, {
+    "sentence_tokens" : [ "3.8", "." ]
+  }, {
+    "sentence_tokens" : [ "Microarray", "GeneChip", "Human", "Gene", "2.0", "ST", "array", "Processing", "and", "Hybridization", "." ]
+  }, {
+    "sentence_tokens" : [ "Preparation", "of", "cRNA", ",", "hybridization", ",", "and", "scanning", "of", "microarrays", "was", "performed", "according", "to", "the", "manufacturer", "'", "s", "protocol", "(", "Affymetrix", ",", "Thermo-Fischer", ",", "Santa", "Clara", ",", "Ca", ",", "USA", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "brief", ",", "300", "ng", "of", "total", "RNA", "extracted", "from", "homogenised", "patient", "samples", "isolated", "using", "Trizol", "was", "converted", "into", "double", "stranded", "cDNA", "by", "reverse", "transcription", "." ]
+  }, {
+    "sentence_tokens" : [ "Biotin", "labelled", "cRNA", "was", "generated", "by", "converting", "the", "cDNA", "sample", "using", "the", "Genechip", "WT", "plus", "reagent", "kit", "(", "Affymetrix", ",", "Thermo-Fischer", ",", "Santa", "Clara", ",", "Ca", ",", "USA", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Labelled", "cRNA", "was", "hybridized", "to", "the", "Affymetrix", "GeneChip", "Human", "Gene", "2.0", "ST", "Array", "while", "rotating", "at", "60", "rpm", "for", "16", "h", "at", "45", "degrees", "C." ]
+  }, {
+    "sentence_tokens" : [ "After", "hybridization", ",", "the", "microarray", "was", "washed", "using", "the", "Affymetrix", "Fluidics", "Station", "according", "to", "the", "manufacturer", "'", "s", "protocol", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "chips", "were", "scanned", "in", "an", "Affymetrix", "3000", "7G", "scanner.Differential", "gene", "analysis", "expression", "was", "carried", "out", "using", "Applied", "Biosystems", "Transcriptome", "Analysis", "Console", "(", "TAC", ")", "software", "4.0.2", "." ]
+  }, {
+    "sentence_tokens" : [ "Resulting", "gene", "lists", "were", "filtered", "for", "+/-", "2-fold", "changes", ",", "a", "p-value", "<", "0.05", "and", "an", "overall", "FDR", "F-Test", ":", "<", "0.005", "." ]
+  }, {
+    "sentence_tokens" : [ "4", "." ]
+  }, {
+    "sentence_tokens" : [ "Discussion", "." ]
+  }, {
+    "sentence_tokens" : [ "Patients", "ages", "and", "diagnosis", "characteristics", "are", "broadly", "representative", "of", "the", "earlier-stage", "pancreatic", "cancer", "patient", "population", "at", "large", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "Ireland", ",", "the", "median", "age", "of", "diagnosis", "is", "70", "-", "74", "years", "for", "the", "entire", "pancreatic", "patient", "population", "[", "23", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "study", ",", "the", "average", "age", "of", "65", "years", "for", "women", "and", "67", "years", "for", "men", "shows", "that", "patients", "who", "are", "eligible", "for", "surgery", "are", "somewhat", "younger", "than", "the", "pancreatic", "patient", "population", "as", "a", "whole", "." ]
+  }, {
+    "sentence_tokens" : [ "Only", "10", "-", "20", "%", "of", "patients", "diagnosed", "with", "pancreatic", "cancer", "are", "eligible", "for", "surgery", ",", "and", "the", "biobank", "developed", "here", "is", "representative", "of", "that", "patient", "population", "[", "24,25", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "ability", "of", "a", "patient", "tumour", "to", "grow", "a", "tumour", "in", "vivo", "was", "not", "correlated", "with", "any", "single", "characteristic", ",", "though", "PDAC", "samples", ",", "which", "formed", "the", "bulk", "of", "the", "samples", "received", ",", "formed", "tumours", "at", "a", "greater", "rate", "than", "neuroendocrine", "tumours", "(", "78", "%", "compared", "to", "20", "%", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "PDAC", "samples", "which", "were", "treatment", "na", "i", "ve", "formed", "tumours", "in", "vivo", "78", "%", "of", "the", "time", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "is", "somewhat", "higher", "that", "previously", "reported", "rates", "of", "61", "%", "(", "sub-cutaneous", ")", "and", "62", "%", "(", "orthotopic", ")", "for", "primary", "pancreatic", "cancer", "samples", ",", "though", "these", "models", "were", "established", "in", "nude", "mice", "rather", "than", "SCID", "mice", "[", "26,27", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "78", "%", "reported", "here", "is", "also", "higher", "than", "43", "%", "detailed", "by", "Pergolini", "et", "al", ".,", "though", "Pergolini", "et", "al.", "reported", "cryopreserving", "tumours", "first", "rather", "than", "direct", "implantation", "which", "potential", "reflects", "the", "differences", "seen", "here", "[", "28", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "suggests", "that", "for", "initial", "passaging", ",", "direct", "implantation", "gives", "a", "better", "take", "rate", "with", "cryopreservation", "being", "suitable", "for", "later", "passages", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "is", "potentially", "due", "to", "the", "selection", "pressures", "the", "tumour", "undergoes", "in", "vivo", "and", "the", "biological", "processes", "involved", "in", "engraftment.From", "seven", "tumours", "collected", "where", "the", "patient", "had", "received", "neo-adjuvant", "treatment", ",", "one", "formed", "a", "sub-cutaneous", "tumour", "in", "vivo", "." ]
+  }, {
+    "sentence_tokens" : [ "Dorado", "et", "al.", "examined", "three", "experimental", "techniques", "for", "the", "establishment", "of", "pancreatic", "PDX", "models", ",", "subcutaneous", ",", "orthotopic", "and", "intraperitoneal", "." ]
+  }, {
+    "sentence_tokens" : [ "Of", "the", "bank", "of", "11", "samples", "collected", "in", "that", "study", ",", "one", "had", "received", "neo-adjuvant", "therapy", "and", "formed", "a", "sub-cutaneous", "tumour", ",", "but", "did", "not", "form", "a", "tumour", "intraperitoneal", "nor", "at", "the", "orthotopic", "site", "[", "29", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Previously", ",", "our", "group", "examined", "10", "primary", "patient", "tumour", "samples", "and", "nine", "matched", "normal", "adjacent", "specimens", "and", "10", "matched", "F1", "and", "F2", "generation", "PDX", "tumours", "using", "high-resolution", "mass", "spectrometry", "." ]
+  }, {
+    "sentence_tokens" : [ "MS", "identification", "allowed", "for", "the", "isolation", "of", "the", "human", "only", "protein", ",", "representing", "the", "tumour", "cells", ",", "and", "these", "were", "tracked", "from", "patient", "tumour", ",", "to", "F1", "and", "F2", "generation", "PDX", "tumours", "." ]
+  }, {
+    "sentence_tokens" : [ "Between", "patient", "primary", "and", "F1", "tumour", "32", "proteins", "were", "upregulated", "and", "113", "downregulated", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "comparison", ",", "between", "F1", "and", "F2", "generation", "of", "PDX", "tumour", ",", "only", "eight", "human", "specific", "proteins", "were", "differentially", "expressed", "when", "analysed", "by", "quantitative", "label-free", "differential", "analysis", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "demonstrates", "the", "fidelity", "of", "tumour", "phenotype", "once", "engrafted", "[", "30", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "is", "in", "line", "with", "previously", "published", "data", "the", "shows", ",", "once", "established", ",", "xenografts", "tend", "to", "be", "robust", "with", "stable", "gene", "expression", "profile", "between", "early", "and", "late", "passage", "PDX", "tumours", "[", "31", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "bank", "of", "pancreatic", "PDX", "tumours", "models", "the", "subset", "of", "pancreatic", "cancer", "patients", "who", "are", "eligible", "for", "surgical", "resection", "." ]
+  }, {
+    "sentence_tokens" : [ "Mutational", "analyses", "by", "Sequenom", "MassArray", "MALDI-TOF", "showed", "80", "%", "of", "samples", "examined", "possessed", "a", "KRAS", "mutation", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "is", "in", "line", "with", "previously", "reported", "clinical", "KRAS", "mutation", "rates", "[", "32", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "These", "PDX", "samples", "are", "a", "truer", "representation", "of", "human", "pancreatic", "cancer", "than", "pancreatic", "cancer", "cell", "lines", "or", "cell-line", "derived", "xenograft", "models", ",", "which", "often", "fail", "to", "recapitulate", "the", "stroma", "and", "desmoplasia", "of", "pancreatic", "cancer", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "recent", "years", ",", "given", "the", "unmet", "need", "of", "pancreatic", "cancer", "patients", ",", "banks", "of", "patient", "derived", "xenograft", "tumours", "have", "been", "established", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "bank", "established", "in", "this", "study", "displays", "a", "higher", "engraftment", "rate", "for", "PDAC", "tumours", "than", "many", "others", "previously", "reported", "." ]
+  }, {
+    "sentence_tokens" : [ "Two", "recent", "reports", "showed", "similar", "engraftment", "rates", "(", "72", "%", "and", "71", "%", ")", ",", "although", "this", "was", "observed", "in", "more", "immune", "compromised", "NSG", "and", "NSG", "nude", "mice", "[", "33,34", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Eight", "PDX", "tumour", "samples", "were", "interrogated", "by", "Affymetrix", "Microarray", "technology", "in", "matched", "comparison", "to", "patient", "tumour", "and", "adjacent", "normal", "tissue", "." ]
+  }, {
+    "sentence_tokens" : [ "Primary", "patient", "tumour", "cluster", "together", "with", "PDX", "tumours", "clustering", "together", "but", "separate", "from", "the", "primary", "tumour", "." ]
+  }, {
+    "sentence_tokens" : [ "RNASeq", "data", "in", "ovarian", "PDX", "models", "demonstrate", "this", "differential", "clustering", "is", "predominantly", "due", "to", "the", "loss", "of", "human", "stroma", "and", "the", "growth", "of", "murine", "stroma", "[", "35", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "By", "comparing", "the", "adjacent", "normal", "to", "the", "tumour", "and", "the", "tumour", "to", "the", "F1", "PDX", "tumour", "we", "aimed", "to", "map", "the", "genes", "associated", "with", "tumour", "growth", ",", "proliferation", "and", "tumour", "in", "engraftment", "." ]
+  }, {
+    "sentence_tokens" : [ "Gene", "ontology", "analysis", "of", "the", "89", "gene", "increased", "in", "tumour", "(", "vs.", "adjacent", "normal", ")", "and", "further", "increased", "in", "PDX", "tumour", "(", "vs.", "patient", "tumour", ")", "showed", "the", "biological", "processed", "enriched", "for", "genes", "associated", "with", "cell", "cycle", ",", "cell", "cycle", "process", "as", "well", "as", "mitotic", "cell", "cycle", "processes", "(", "Table", "8", "and", "Table", "9", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "selection", "of", "the", "genes", "shortlisted", "and", "described", "here", ",", "have", "previously", "been", "associated", "with", "pancreatic", "cancer", "and", "validated", "as", "having", "an", "effect", "on", "proliferation", ",", "invasion", "and", "migration.Serpin", "family", "B", "member", "5", ",", "SERPINB5", ",", "had", "the", "largest", "fold", "change", "in", "the", "T", "vs.", "F1", "analysis", "and", "in", "the", "top", "ten", "differentially", "expressed", "genes", "in", "the", "T", "vs.", "N", "analysis", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "SERPIN", "superfamily", "of", "proteins", "is", "known", "to", "consist", "of", "37", "members", "in", "humans", ",", "with", "13", "members", "of", "the", "SERPINA", "family", "and", "13", "members", "of", "the", "SERPINB", "family", "[", "36", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "SERPINA3", "has", "been", "associated", "with", "endometrial", "cancers", "[", "37", "]", "and", "undifferentiated", "carcinoma", "with", "osteoclast", "like", "giant", "cells", ",", "a", "rare", "pancreatic", "cancer", "[", "38", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "our", "differential", "gene", "expression", "list", "3", "of", "the", "39", "SERPIN", "family", "members", "were", "statistically", "significantly", "changed", ",", "SERPINA1", ",", "SERPINB5", "and", "SERPINE1", "." ]
+  }, {
+    "sentence_tokens" : [ "SERPINA1", "was", "increased", "in", "T", "vs.", "N", "(", "3.6-fold", ")", ",", "but", "decreased", "in", "T", "vs.", "F1", "(", "5.0-fold", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "SERPINE1", "was", "decreased", "in", "T", "vs.", "N", "analysis", "(", "3.6-fold", ")", "and", "further", "decreased", "in", "T", "vs.", "F1", "comparison", "(", "4.9-fold", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "SERPINB5", "has", "been", "previously", "associated", "with", "pancreatic", "cancer", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "a", "meta-analysis", "of", "publicly", "available", "datasets", "of", "transcriptome", "data", "for", "human", "pancreas", "specimens", "and", "a", "GEM", "mouse", "models", "Bhasin", "et", "al.", "included", "SERPINB5", "as", "one", "the", "of", "the", "genes", "in", "a", "five", "gene", "panel", "for", "discriminating", "PDAC", "and", "early", "precursor", "lesions", "." ]
+  }, {
+    "sentence_tokens" : [ "Other", "genes", "included", "in", "this", "panel", "were", "TMPRSS4", ",", "AHNAK2", ",", "POSTN", ",", "ECT2", "[", "39", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "other", "four", "genes", "in", "the", "panel", "were", "also", "detected", "as", "being", "significantly", "changed", "in", "our", "analysis", "." ]
+  }, {
+    "sentence_tokens" : [ "TMPRSS4", "showed", "fold", "changes", "of", "9.5", "and", "2.1", "in", "the", "N", "vs.", "T", "and", "T", "vs.", "F1", "respectively", "." ]
+  }, {
+    "sentence_tokens" : [ "Similarly", ",", "AHNAK2", "fold", "changes", "were", "2.6", "(", "N", "vs.", "T", ")", "and", "2", "(", "T", "vs.", "F1", ")", ",", "POSTN", "15.5", "(", "N", "vs.", "T", ")", "and", "-69.9", "(", "T", "vs.", "F1", ")", ",", "ECT2", "2.6", "(", "N", "vs.", "T", ")", "and", "2.7", "(", "T", "vs.", "F1", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "RNA-Seq", "analysis", "by", "Mao", "et", "al.", "of", "10", "PDAC", "tumour", "samples", "and", "adjacent", "benign", "tissue", "also", "detected", "SERPINB5", "." ]
+  }, {
+    "sentence_tokens" : [ "Their", "analysis", "showed", "SERPINB5", "to", "be", "overexpressed", "in", "PDAC", "tumour", "in", "comparison", "to", "adjacent", "normal", "tissue", "[", "40", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Also", "in", "2010", ",", "Mardin", "et", "al.", "identified", "through", "the", "analysis", "of", "the", "invasive", "and", "metastatic", "potential", "of", "16", "PDAC", "cell", "lines", "that", "SERPINB5", "expression", "may", "correspond", "with", "invasive", "tumours", "[", "41", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Previous", "proteomic", "analysis", "of", "the", "same", "sample", "cohort", "also", "found", "SERPINB5", "to", "be", "increased", "at", "the", "protein", "level", "when", "human", "specific", "proteins", "were", "identified", "with", "significantly", "increased", "expression", "in", "PDX", "F1", "tumours", "compared", "to", "PDAC", "tumour", "tissues", ",", "as", "determined", "by", "quantitative", "label-free", "mass", "spectrometric", "analysis", "[", "30", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Fermitin", "family", "member", "1", ",", "FERMT1", ",", "encoded", "protein", "is", "involved", "in", "integrin", "signalling", "and", "linkage", "of", "the", "actin", "cytoskeleton", "to", "the", "extracellular", "matrix", "and", "has", "been", "shown", "to", "be", "significantly", "over-expressed", "in", "colon", "cancer", "[", "42", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "activation", "was", "seen", "to", "promote", "EMT", "and", "led", "to", "a", "more", "aggressive", "and", "invasive", "phenotype", "in", "colon", "cancer", "[", "43", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "oesophageal", "cancer", ",", "overexpression", "of", "FERMT1", "by", "lenti-viral", "vector", "increased", "proliferation", "and", "radiation", "resistance", "in", "vitro", "[", "44", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "study", "by", "Fukuhisa", "et", "al.", "examined", "the", "role", "of", "EPS8", "in", "PDAC", ",", "and", "showed", "that", "EPS8", "was", "overexpressed", "in", "PDAC", "clinical", "specimens", ",", "and", "linked", "with", "proliferation", "and", "invasion", "in", "vitro", "." ]
+  }, {
+    "sentence_tokens" : [ "FERMT1", "is", "a", "putative", "downstream", "gene", "target", "of", "EPS8", "[", "45", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "While", "changes", "in", "EPS8", "were", "not", "seen", "in", "our", "data", "set", ",", "FERMT1", "changes", "were", "seen", "." ]
+  }, {
+    "sentence_tokens" : [ "To", "date", ",", "FERMT1", "changes", "have", "not", "previously", "been", "directly", "shown", "in", "pancreatic", "cancer.Ramachandran", "et", "al.", "showed", "that", "Anterior", "Gradient", "2", ",", "AGR2", ",", "gene", "was", "expressed", "in", "pancreatic", "cancer", "tissues", "and", "cell", "lines", ",", "though", "this", "is", "not", "expressed", "in", "chronic", "pancreatitis", "samples", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "vitro", ",", "AGR2", "silencing", "by", "siRNA", "knockdown", "showed", "a", "decrease", "in", "cancer", "cell", "proliferation", "and", "invasion", "and", "increased", "gemcitabine", "sensitivity", "of", "resistant", "cells", "[", "46", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "pancreatic", "cancer", ",", "the", "invasive", "potential", "of", "pancreatic", "cancer", "cells", "in", "vitro", "was", "proportional", "to", "the", "AGR2", "expression", "level", "[", "48", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Solute", "carrier", "family", "6", "member", ",", "SLC6A14", "encoded", "protein", "is", "a", "sodium-", "and", "chloride", "dependent", "neutral", "and", "basic", "amino", "acid", "transporter", "[", "49", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "breast", "cancer", "mouse", "models", ",", "SLC6A14", "knock", "out", "mice", "showed", "a", "marked", "delay", "in", "tumour", "formation", "and", "tumour", "size", ",", "and", "analysis", "of", "the", "tumour", "material", "revealed", "evidence", "of", "amino", "acid", "starvation", "in", "the", "slc6a14", "mice", "suggesting", "a", "key", "role", "from", "SLC6A14", "in", "both", "tumour", "development", "and", "growth", "[", "50", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "2019", ",", "Cheng", "et", "al.", "used", "three", "publicly", "available", "datasets", "to", "identified", "differentially", "regulated", "genes", "and", "validated", "these", "genes", "in", "a", "retrospective", "clinical", "study", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "highlighted", "SLC6A14", "as", "a", "potential", "prognostic", "biomarker", "of", "pancreatic", "cancer", "." ]
+  }, {
+    "sentence_tokens" : [ "Interestingly", "CENPF", "and", "SERBINB5", "were", "also", "included", "in", "this", "panel", "of", "prognostic", "genes", "." ]
+  }, {
+    "sentence_tokens" : [ "Both", "of", "these", "genes", "were", "also", "identified", "in", "our", "panel", "[", "51", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "SLC6A14", "has", "been", "investigated", "as", "a", "potential", "novel", "therapeutic", "target", "for", "pancreatic", "cancer", "using", "alpha-methyltryptophan", "as", "a", "pharmacological", "inhibitor", "of", "SLC6A14", "and", "showed", "reduced", "proliferation", "and", "clonogenic", "survival", "[", "52", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Topoisomerase", "II", "alpha", "(", "TOP2A", ")", "gene", "encodes", "for", "a", "nuclear", "enzyme", "that", "regulates", "the", "topological", "structure", "of", "DNA", "and", "is", "involved", "in", "chromosome", "condensation", ",", "chromatid", "separation", "and", "torsional", "stress", "relief", "during", "DNA", "transcription", "and", "replication", "." ]
+  }, {
+    "sentence_tokens" : [ "TOP2A", "has", "been", "associated", "with", "many", "solid", "cancers", "such", "as", "breast", "and", "prostate", "cancers", "[", "53,54,55", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "in", "a", "study", "of", "24,262", "patients", "with", "diverse", "tumour", "types", ",", "only", "4", "%", "of", "tumours", "had", "TOP2A", "amplification", "[", "56", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Pancreatic", "patients", "with", "higher", "TOP2A", "levels", "were", "thought", "to", "have", "poor", "prognosis", "." ]
+  }, {
+    "sentence_tokens" : [ "TOP2A", "has", "been", "shown", "in", "pancreatic", "cancer", "cell", "lines", "to", "be", "associated", "with", "proliferation", "and", "migration", "through", "activation", "of", "the", "beta-catenin", "signalling", "pathway", "[", "57", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "5", "." ]
+  }, {
+    "sentence_tokens" : [ "Conclusions", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "study", "details", "the", "establishment", "of", "a", "PDX", "biobank", "containing", "pancreatic", "ductal", "adenocarcinoma", ",", "intraductal", "papillary", "mucinous", "neoplasm", ",", "cholangiocarcinomas", "and", "neuroendocrine", "tumour", "including", "one", "PDX", "of", "a", "neo-adjuvant", "treated", "PDAC", "model", "." ]
+  }, {
+    "sentence_tokens" : [ "From", "this", "biobank", ",", "a", "further", "of", "three", "primary", "tumour", "cell", "lines", "and", "two", "primary", "patient", "derived", "stromal", "cell", "lines", "were", "established.This", "panel", "of", "PDX", "tumours", "with", "matched", "patient", "tumour", "and", "adjacent", "normal", "tissue", "was", "investigated", "by", "Microarray", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "subset", "panel", "of", "89", "genes", "were", "identified", "and", "shortlisted", "as", "differentially", "upregulated", "in", "tumour", "compared", "to", "normal", "and", "further", "upregulated", "in", "PDX", "F1", "tumours", "." ]
+  }, {
+    "sentence_tokens" : [ "Potentially", "this", "panel", "indicates", "genes", "highly", "associated", "with", "tumour", "growth", "and", "development", "." ]
+  }, {
+    "sentence_tokens" : [ "These", "genes", "were", "predominantly", "associated", "with", "proliferation", ",", "cell", "cycles", "and", "mitotic", "processes", ",", "suggesting", "a", "significant", "role", "in", "tumour", "proliferation", ",", "progression", "and", "tumour", "engraftment", "in", "vivo", "." ]
+  } ]
+}

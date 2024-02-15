@@ -1,87 +1,496 @@
-[ {
-  "sentence_tokens" : [ "On", "the", "other", "hand", ",", "in", "the", "case", "of", "a", "conventional", "ECT", ",", "a", "magnetic", "sensor", ",", "such", "as", "a", "Hall", "sensor", ",", "is", "used", "to", "detect", "the", "intensity", "of", "the", "eddy", "current", ",", "but", ",", "in", "this", "research", ",", "the", "only", "variation", "of", "the", "voltage", "of", "the", "coil", "caused", "by", "the", "PEC", "is", "measured", "without", "any", "additional", "sensor", ",", "while", "the", "PEC", "is", "induced", "on", "a", "specimen", "through", "the", "same", "sensor", "coil", "." ],
-  "event_indices" : [ 48, 49, 50, 51, 52, 53 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 52, 53 ],
-  "controlled_indices" : [ 48, 49 ],
-  "trigger_indices" : [ 49, 50 ],
-  "rule_name" : "Positive_activation_syntax_2_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "However", ",", "the", "conventional", "wired", "system", "used", "in", "SHM", "is", "uneconomical", "because", "a", "large", "amount", "of", "wire", "is", "necessary", "and", "requires", "substantial", "labor", "during", "the", "installation", "and", "maintenance", "periods", "." ],
-  "entity_one_indices" : [ 16, 17 ],
-  "entity_two_indices" : [ 8, 9 ]
-}, {
-  "sentence_tokens" : [ "When", "considering", "the", "total", "economic", "costs", "of", "WSN", "SHM", ",", "the", "operating", "time", "should", "be", "taken", "into", "account", ",", "because", "the", "WSN", "is", "generally", "powered", "by", "a", "battery.SHM", "includes", "measuring", "temperature", ",", "humidity", ",", "wind", "speed", ",", "earthquake", "incidence", ",", "and", "corrosion", "." ],
-  "entity_one_indices" : [ 21, 22 ],
-  "entity_two_indices" : [ 7, 8 ]
-}, {
-  "sentence_tokens" : [ "Steel", "framed", "reinforced", "concrete", "(", "SRC", ")", "has", "a", "light", "self-weight", ",", "high", "strength", ",", "and", "high", "stiffness", "by", "combining", "steel", "beams", "with", "reinforced", "concrete", "(", "RC", ")", "[", "8]", "and", "is", "used", "in", "large", "construction", "projects", ",", "such", "as", "skyscrapers", ",", "bridges", ",", "and", "tunnels", "." ],
-  "entity_one_indices" : [ 26, 27 ],
-  "entity_two_indices" : [ 5, 6 ]
-}, {
-  "sentence_tokens" : [ "However", ",", "bridges", "are", "easily", "corroded", "by", "ionic", "deicing", "chemicals", "used", "in", "winter", "[", "9", "]", ",", "and", "subsea", "tunnels", "are", "also", "corroded", "due", "to", "electrochemical", "action", "caused", "by", "chloride", "ion", "invasion", "[", "10", "]", "." ],
-  "entity_one_indices" : [ 31, 32 ],
-  "entity_two_indices" : [ 29, 30, 31 ]
-}, {
-  "sentence_tokens" : [ "Data", "acquisition", "(", "DAQ", ")", "equipment", ",", "such", "as", "an", "analog-to-digital", "converter", "(", "ADC", ")", "board", ",", "is", "used", "to", "measure", "the", "response", "[", "28,29", "]", ",", "but", "this", "configuration", "is", "unsuitable", "for", "application", "in", "an", "actual", "situation", "that", "requires", "a", "low-power", "system", ",", "such", "as", "the", "typical", "WSN", "environment", "." ],
-  "entity_one_indices" : [ 48, 49 ],
-  "entity_two_indices" : [ 13, 14 ]
-}, {
-  "sentence_tokens" : [ "C1", "and", "C2", "are", "capacitors", ",", "and", "a", "sensor", "coil", "is", "placed", "between", "them", "." ],
-  "entity_one_indices" : [ 9, 10 ],
-  "entity_two_indices" : [ 0, 1 ]
-}, {
-  "sentence_tokens" : [ "According", "to", "Kirchhoff", "'", "s", "voltage", "law", "(", "KVL", ")", ",", "the", "circuit", "is", "described", "as", "follows", ":", "(", "1", ")", "VPulse+", "j", "omega", "C1ILoop", "-", "(", "RS+", "j", "omega", "LS", ")", "ILoop+", "j", "omega", "C2ILoop", "=0", "However", ",", "Equation", "(", "1", ")", "is", "based", "on", "the", "circuit", "in", "Figure", "2", "without", "any", "specimen", "." ],
-  "entity_one_indices" : [ 30, 31 ],
-  "entity_two_indices" : [ 21, 22, 23, 24, 25 ]
-}, {
-  "sentence_tokens" : [ "Therefore", ",", "when", "measuring", "corrosion", ",", "the", "effective", "resistance", "of", "the", "coil", "sensor", "(", "Delta", "RV", ")", "is", "varied", "by", "the", "specimen", "." ],
-  "entity_one_indices" : [ 14, 15 ],
-  "entity_two_indices" : [ 11, 12 ]
-}, {
-  "sentence_tokens" : [ "The", "VPulse", "square", "wave", "with", "1", "Hz", ",", "is", "an", "input", "to", "the", "RLC", "circuit", "." ],
-  "entity_one_indices" : [ 13, 14 ],
-  "entity_two_indices" : [ 3, 4 ]
-}, {
-  "sentence_tokens" : [ "In", "order", "to", "make", "the", "planar", "coil", "sensor", ",", "a", "foam", "board", ",", "double", "sided", "adhesive", "tape", ",", "and", "AWG26", "wire", "were", "used", ",", "and", "its", "size", "is", "arbitrarily", "chosen", "to", "be", "150", "mm", "by", "150", "mm", "for", "an", "experiment", "." ],
-  "entity_one_indices" : [ 19, 20, 21 ],
-  "entity_two_indices" : [ 6, 7 ]
-}, {
-  "sentence_tokens" : [ "The", "sampled", "data", "are", "stored", "in", "an", "SD", "card", "for", "every", "sampling", "as", "backup", "data", ",", "which", "can", "prevent", "data", "loss", "caused", "by", "communication", "errors", "." ],
-  "entity_one_indices" : [ 8, 9 ],
-  "entity_two_indices" : [ 7, 8 ]
-}, {
-  "sentence_tokens" : [ "The", "master", "node", "in", "the", "gateway", "layer", "is", "implemented", "using", "a", "Raspberry", "Pi", "3", "B+", ",", "which", "is", "a", "single-board", "computer", "the", "size", "of", "a", "credit", "card", "and", "has", "a", "built-in", "operating", "system", "." ],
-  "entity_one_indices" : [ 26, 27 ],
-  "entity_two_indices" : [ 12, 13, 14 ]
-}, {
-  "sentence_tokens" : [ "Additionally", ",", "the", "Raspberry", "Pi", "has", "both", "an", "ethernet", "port", "and", "a", "wireless", "LAN", ",", "and", "it", "can", "be", "connected", "to", "the", "Internet", "without", "an", "additional", "device", "." ],
-  "entity_one_indices" : [ 13, 14 ],
-  "entity_two_indices" : [ 4, 5 ]
-}, {
-  "sentence_tokens" : [ "Each", "line", "in", "Figure", "8", "indicates", "the", "voltage", "variation", "of", "VC2", "according", "to", "the", "level", "of", "corrosion", ",", "which", "represents", "the", "PEC", "response", "that", "is", "sampled", "500", "times", "for", "about", "one", "second", "by", "the", "sensor", "node", "." ],
-  "entity_one_indices" : [ 10, 11 ],
-  "entity_two_indices" : [ 7, 8 ]
-}, {
-  "sentence_tokens" : [ "(", "Figure", "9", ")", "The", "red", "line", "indicates", "the", "inductance", "of", "the", "sensor", "coil", ",", "and", "the", "blue", "line", "indicates", "the", "resistance", "of", "sensor", "coil", "." ],
-  "entity_one_indices" : [ 24, 25 ],
-  "entity_two_indices" : [ 13, 14 ]
-}, {
-  "sentence_tokens" : [ "The", "PEC", "induced", "in", "the", "steel", "plate", "generates", "a", "magnetic", "field", "whose", "direction", "is", "opposite", "to", "that", "of", "the", "sensor", "coil", "." ],
-  "entity_one_indices" : [ 20, 21 ],
-  "entity_two_indices" : [ 1, 2 ]
-}, {
-  "sentence_tokens" : [ "The", "inductance", "of", "the", "sensor", "coil", "decreases", "due", "to", "the", "reduction", "in", "magnetic", "flux", "in", "the", "coil", "." ],
-  "entity_one_indices" : [ 16, 17 ],
-  "entity_two_indices" : [ 5, 6 ]
-}, {
-  "sentence_tokens" : [ "Additionally", ",", "the", "resistance", "of", "the", "sensor", "coil", "increases", "because", "of", "the", "energy", "dissipation", "caused", "by", "the", "PEC", "[", "34", "]", "." ],
-  "entity_one_indices" : [ 12, 13, 14 ],
-  "entity_two_indices" : [ 7, 8 ]
-}, {
-  "sentence_tokens" : [ "According", "to", "the", "blue", "line", "(", "S10", "A50", ")", ",", "the", "maximum", "distance", "for", "the", "detection", "of", "steel", "plate", "is", "about", "50", "mm", "because", "it", "is", "almost", "similar", "to", "the", "pink", "line", "(", "S10", "A50+", ")", ",", "which", "shows", "the", "voltage", "values", "in", "the", "case", "that", "the", "steel", "plate", "is", "placed", "further", "than", "50mm", "from", "the", "sensor", "coil.In", "the", "experiments", ",", "a", "viability", "of", "applying", "the", "proposed", "method", "to", "a", "steel", "framed", "structure", "was", "confirmed", "by", "the", "fact", "that", "the", "corrosion", "level", "was", "detected", "by", "variation", "of", "PEC", "." ],
-  "entity_one_indices" : [ 87, 88 ],
-  "entity_two_indices" : [ 40, 41 ]
-} ]
+{
+  "regulations" : [ {
+    "sentence_tokens" : [ "On", "the", "other", "hand", ",", "in", "the", "case", "of", "a", "conventional", "ECT", ",", "a", "magnetic", "sensor", ",", "such", "as", "a", "Hall", "sensor", ",", "is", "used", "to", "detect", "the", "intensity", "of", "the", "eddy", "current", ",", "but", ",", "in", "this", "research", ",", "the", "only", "variation", "of", "the", "voltage", "of", "the", "coil", "caused", "by", "the", "PEC", "is", "measured", "without", "any", "additional", "sensor", ",", "while", "the", "PEC", "is", "induced", "on", "a", "specimen", "through", "the", "same", "sensor", "coil", "." ],
+    "event_indices" : [ 48, 49, 50, 51, 52, 53 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 52, 53 ],
+    "controlled_indices" : [ 48, 49 ],
+    "trigger_indices" : [ 49, 50 ],
+    "rule_name" : "Positive_activation_syntax_2_verb",
+    "rule" : null
+  } ],
+  "hardInstances" : [ {
+    "sentence_tokens" : [ "On", "the", "other", "hand", ",", "in", "the", "case", "of", "a", "conventional", "ECT", ",", "a", "magnetic", "sensor", ",", "such", "as", "a", "Hall", "sensor", ",", "is", "used", "to", "detect", "the", "intensity", "of", "the", "eddy", "current", ",", "but", ",", "in", "this", "research", ",", "the", "only", "variation", "of", "the", "voltage", "of", "the", "coil", "caused", "by", "the", "PEC", "is", "measured", "without", "any", "additional", "sensor", ",", "while", "the", "PEC", "is", "induced", "on", "a", "specimen", "through", "the", "same", "sensor", "coil", "." ],
+    "entities_indices" : [ [ 45, 46 ], [ 62, 63 ], [ 72, 73 ] ]
+  } ],
+  "withoutRegulations" : [ {
+    "sentence_tokens" : [ "Thus", ",", "the", "efficiency", "becomes", "higher", "than", "the", "conventional", "SHM", "method", "." ],
+    "entities_indices" : [ [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "size", "of", "the", "steel", "plates", "and", "the", "acrylic", "plates", "used", "in", "the", "experiment", "were", "each", "150", "mm", "by", "150", "mm", ",", "and", "had", "the", "same", "dimensions", "as", "the", "sensor", "coil", "with", "thicknesses", "of", "2", "mm", ",", "4", "mm", ",", "6", "mm", ",", "8", "mm", ",", "and", "10", "mm", "." ],
+    "entities_indices" : [ [ 30, 31 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "order", "to", "use", "a", "relational", "database", "management", "system", ",", "MariaDB", "is", "installed", "to", "collect", "data", "from", "the", "sensor", "node", "and", "for", "storage", "in", "the", "database", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "amount", "of", "corrosion", "can", "be", "evaluated", "without", "a", "high-end", "data", "acquisition", "device", "nor", "a", "signal", "conditioner", "with", "a", "computer", "system", ",", "and", "the", "cost", "of", "the", "sensor", "module", "can", "be", "reduced", "because", "the", "coil", "is", "utilized", "for", "both", "inducing", "eddy", "current", "and", "detecting", "the", "effect", "of", "the", "eddy", "current", "without", "an", "additional", "device", "." ],
+    "entities_indices" : [ [ 34, 35 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "circuit", "to", "delay", "the", "PEC", "response", "based", "on", "the", "resistance-inductance-capacitance", "(", "RLC", ")", "combination", "was", "designed", "for", "data", "sampling", "to", "utilize", "the", "conventional", "hardware", "of", "WSN", "for", "SHM", ",", "and", "this", "approach", "was", "verified", "by", "simulations", "and", "experiments", "." ],
+    "entities_indices" : [ [ 12, 13 ], [ 26, 27 ], [ 28, 29 ] ]
+  }, {
+    "sentence_tokens" : [ "SHM", ",", "which", "evaluates", "the", "durability", "of", "building", "structures", ",", "diagnoses", "points", "with", "damage", "and", "finds", "their", "location", "by", "collecting", "data", "using", "a", "sensor", "system", "in", "real", "time", "[", "1", "]", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "mechanism", "of", "the", "eddy", "current", "method", "is", "to", "measure", "the", "conductivity", "and", "permeability", "changes", "caused", "by", "corrosion", "by", "inducing", "an", "eddy", "current", "that", "is", "generated", "by", "a", "sine", "wave", "or", "pulse", "[", "19,20,21,22,23", "]", "." ],
+    "entities_indices" : [ [ 29, 30 ] ]
+  }, {
+    "sentence_tokens" : [ "Although", "the", "method", "using", "a", "single-wavelength", "sine", "wave", "successfully", "measures", "corrosion", ",", "the", "detectable", "depth", "is", "limited", "by", "the", "skin", "effect", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "when", "measuring", "corrosion", ",", "the", "effective", "resistance", "of", "the", "coil", "sensor", "(", "Delta", "RV", ")", "is", "varied", "by", "the", "specimen", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "If", "a", "WSN", "is", "applied", "to", "the", "SHM", "system", ",", "building", "structures", "can", "be", "conveniently", "maintained", "with", "a", "low", "cost", "[", "4,5", "]", "." ],
+    "entities_indices" : [ [ 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "It", "shows", "that", "the", "sampling", "is", "possible", "by", "the", "ADC", ",", "which", "is", "generally", "used", "in", "the", "actual", "situation.Figure", "8", "shows", "the", "experimental", "result", "of", "sampling", "the", "delayed", "PEC", "response", "using", "the", "proposed", "system", "and", "examines", "if", "corrosion", "is", "detected", "from", "the", "steel", "framed", "construction", "sample", "." ],
+    "entities_indices" : [ [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "According", "to", "the", "blue", "line", "(", "S10", "A50", ")", ",", "the", "maximum", "distance", "for", "the", "detection", "of", "steel", "plate", "is", "about", "50", "mm", "because", "it", "is", "almost", "similar", "to", "the", "pink", "line", "(", "S10", "A50+", ")", ",", "which", "shows", "the", "voltage", "values", "in", "the", "case", "that", "the", "steel", "plate", "is", "placed", "further", "than", "50mm", "from", "the", "sensor", "coil.In", "the", "experiments", ",", "a", "viability", "of", "applying", "the", "proposed", "method", "to", "a", "steel", "framed", "structure", "was", "confirmed", "by", "the", "fact", "that", "the", "corrosion", "level", "was", "detected", "by", "variation", "of", "PEC", "." ],
+    "entities_indices" : [ [ 40, 41 ], [ 87, 88 ] ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "bridges", "are", "easily", "corroded", "by", "ionic", "deicing", "chemicals", "used", "in", "winter", "[", "9", "]", ",", "and", "subsea", "tunnels", "are", "also", "corroded", "due", "to", "electrochemical", "action", "caused", "by", "chloride", "ion", "invasion", "[", "10", "]", "." ],
+    "entities_indices" : [ [ 29, 30, 31 ], [ 31, 32 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "sampled", "data", "are", "stored", "in", "an", "SD", "card", "for", "every", "sampling", "as", "backup", "data", ",", "which", "can", "prevent", "data", "loss", "caused", "by", "communication", "errors", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "PEC", "induced", "in", "the", "steel", "plate", "generates", "a", "magnetic", "field", "whose", "direction", "is", "opposite", "to", "that", "of", "the", "sensor", "coil", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "sensor", "node", "is", "made", "by", "combining", "the", "proposed", "circuit", "with", "the", "hardware", "configuration", "of", "a", "conventional", "Zigbee", "based", "WSN", "for", "remote", "monitoring", "." ],
+    "entities_indices" : [ [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "paper", ",", "we", "proposed", "a", "platform", "that", "could", "perform", "the", "remote", "monitoring", "of", "the", "corrosion", "of", "steel", "framed", "construction", "in", "real", "time", "using", "the", "PEC", "method", "." ],
+    "entities_indices" : [ [ 26, 27 ] ]
+  }, {
+    "sentence_tokens" : [ "Thus", ",", "the", "developed", "low-cost", "wireless", "SHM", "system", "can", "be", "utilized", "to", "conveniently", "measure", "the", "corrosion", "of", "steel", "framed", "construction", "with", "convenience", "at", "an", "actual", "construction", "site", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "Structural", "health", "monitoring", "(", "SHM", ")", "can", "be", "more", "efficient", "with", "the", "application", "of", "a", "wireless", "sensor", "network", "(", "WSN", ")", "." ],
+    "entities_indices" : [ [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "research", ",", "the", "sensor", "coil", "has", "a", "planar", "square", "shape", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "Especially", ",", "the", "importance", "of", "configuring", "sensing", "modules", "and", "the", "WSN", "for", "remote", "monitoring", "were", "studied", ",", "and", "the", "PEC", "responses", "caused", "by", "the", "corrosion", "of", "a", "specimen", "made", "with", "steel", "were", "able", "to", "be", "sampled", "remotely", "using", "the", "proposed", "system", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "addition", ",", "for", "the", "precise", "SHM", ",", "the", "simulation", "or", "experiment", "for", "the", "specific", "condition", "should", "be", "carried", "out", "before", "installing", "the", "system", "for", "an", "actual", "building", "structure", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "By", "applying", "the", "proposed", "method", "using", "the", "WSN", ",", "the", "remote", "monitoring", "system", "can", "be", "utilized", "for", "a", "more", "convenient", "real-time", "analysis", "of", "the", "corrosion", "state", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "a", "WSN", ",", "the", "low", "cost", ",", "small", "size", ",", "and", "low", "power", "consumption", "are", "usually", "taken", "into", "account", "." ],
+    "entities_indices" : [ [ 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "It", "is", "defined", "as", "follows", ":", "(", "2", ")", "RVS", "=", "RS+", "Delta", "RVThe", "effective", "inductance", "of", "the", "sensor", "(", "Delta", "LV", ")", "coil", "is", "also", "altered", "by", "the", "specimen", ",", "which", "could", "be", "a", "conductive", "material", ",", "and", "is", "defined", "as", "follows", ":(", "3", ")", "LVS", "=", "LS+", "Delta", "LVThe", "substitution", "of", "Equations", "(", "2", ")", "and", "(", "3", ")", "into", "(", "1", ")", "is", "expressed", "as", "follows", ":(", "4", ")", "VPulse+", "j", "omega", "C1ILoop", "-", "(", "RVS+", "j", "omega", "LVS", ")", "ILoop+", "j", "omega", "C2ILoop", "=", "0ILoop", "is", "calculated", "as", "Equation", "(", "5", ")", ":(", "5", ")", "ILoop", "=", "-", "VPulsej", "(", "1", "omega", "C1", "+1", "omega", "C2", "-", "omega", "LVS", ")", "-", "(", "RVS", ")", "The", "voltage", "of", "C2", "is", "expressed", "as", "the", "following", "Equation", "(", "6", ")", ":(", "6", ")", "VC2", "=", "-", "jILoop", "omega", "C2Using", "Equations", "(", "5", ")", "and", "(", "6", ")", "can", "be", "described", "as", "follows", ":(", "7", ")", "VC2", "=", "jVPulse", "omega", "C2", "[", "j", "(", "1", "omega", "C1", "+1", "omega", "C2", "-", "omega", "LVS", ")", "-", "(", "RVS", ")", "]", "Therefore", ",", "it", "can", "be", "seen", "that", "a", "change", "in", "the", "specimen", "'", "s", "electrical", "properties", "produces", "a", "variation", "in", "the", "PEC", "." ],
+    "entities_indices" : [ [ 12, 13 ], [ 20, 21 ], [ 23, 24 ], [ 46, 47 ], [ 49, 50 ], [ 69, 70, 71, 72, 73, 74, 75, 76 ], [ 81, 82 ], [ 106, 107 ], [ 112, 113 ], [ 119, 120 ], [ 166, 167 ], [ 172, 173 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "sampling", "the", "PEC", "response", "signals", "detected", "by", "the", "sensor", "coil", ",", "the", "ADS1015", "analog-to-digital", "converter", "is", "used", ",", "which", "has", "a", "12-bit", "resolution", "and", "a", "sampling", "rate", "of", "3300", "samples", "per", "second", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "the", "conventional", "wired", "system", "used", "in", "SHM", "is", "uneconomical", "because", "a", "large", "amount", "of", "wire", "is", "necessary", "and", "requires", "substantial", "labor", "during", "the", "installation", "and", "maintenance", "periods", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "Moreover", ",", "the", "server", "computer", ",", "implemented", "with", "a", "Raspberry", "Pi", ",", "is", "suitable", "for", "the", "proposed", "system", "because", "of", "its", "low", "cost", "and", "tiny", "size", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "Data", "acquisition", "(", "DAQ", ")", "equipment", ",", "such", "as", "an", "analog-to-digital", "converter", "(", "ADC", ")", "board", ",", "is", "used", "to", "measure", "the", "response", "[", "28,29", "]", ",", "but", "this", "configuration", "is", "unsuitable", "for", "application", "in", "an", "actual", "situation", "that", "requires", "a", "low-power", "system", ",", "such", "as", "the", "typical", "WSN", "environment", "." ],
+    "entities_indices" : [ [ 13, 14 ], [ 48, 49 ] ]
+  }, {
+    "sentence_tokens" : [ "(", "Figure", "1", ")", "In", "this", "section", ",", "a", "delay", "circuit", "designed", "to", "sample", "PEC", "responses", ",", "in", "order", "to", "compare", "the", "results", "from", "the", "hardware", "configuration", "of", "a", "conventional", "WSN", "system", ",", "is", "described", "." ],
+    "entities_indices" : [ [ 30, 31 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "case", "of", "the", "long-term", "stability", "of", "the", "system", ",", "the", "accumulated", "measurement", "error", "of", "sensor", "inside", "the", "building", "structure", ",", "due", "to", "various", "causes", ",", "should", "be", "corrected", "by", "periodic", "calibration", "so", "that", "it", "is", "not", "regarded", "as", "corrosion.Additionally", ",", "the", "variations", "of", "the", "inductance", "and", "the", "resistance", "of", "the", "sensor", "coil", "were", "examined", "using", "an", "LCR", "meter", "to", "verify", "the", "relationship", "with", "the", "corrosion", "level", "." ],
+    "entities_indices" : [ [ 52, 53 ] ]
+  }, {
+    "sentence_tokens" : [ "If", "the", "number", "of", "turns", "of", "the", "coil", "for", "the", "sensor", "is", "increased", ",", "the", "intensity", "of", "PEC", "response", "becomes", "high", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "order", "to", "operate", "the", "delay", "circuit", "for", "a", "simulation", ",", "4.7", "nF", "ceramic", "capacitors", "are", "selected", "for", "both", "C1", "and", "C2", ",", "and", "the", "inductance", "and", "resistance", "of", "the", "sensor", "coil", "are", "set", "to", "195", "uH", "and", "2.5", "Omega", ",", "respectively", "." ],
+    "entities_indices" : [ [ 12, 13 ], [ 19, 20 ], [ 31, 32 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "sensor", "coil", "has", "an", "inductance", "(", "Ls", ")", "and", "resistance", "(", "Rs", ")", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 7, 8 ], [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "master", "node", "in", "the", "gateway", "layer", "is", "implemented", "using", "a", "Raspberry", "Pi", "3", "B+", ",", "which", "is", "a", "single-board", "computer", "the", "size", "of", "a", "credit", "card", "and", "has", "a", "built-in", "operating", "system", "." ],
+    "entities_indices" : [ [ 12, 13, 14 ], [ 26, 27 ] ]
+  }, {
+    "sentence_tokens" : [ "According", "to", "the", "results", ",", "the", "delayed", "PEC", "response", "was", "successfully", "sampled", "by", "the", "sensor", "node", "with", "the", "proposed", "circuit", ",", "and", "the", "corrosion", "was", "identified", "by", "considering", "the", "fact", "that", "the", "peak", "value", "of", "VC2", "consistently", "decreased", "as", "the", "corrosion", "progressed", "." ],
+    "entities_indices" : [ [ 35, 36 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "order", "to", "make", "the", "planar", "coil", "sensor", ",", "a", "foam", "board", ",", "double", "sided", "adhesive", "tape", ",", "and", "AWG26", "wire", "were", "used", ",", "and", "its", "size", "is", "arbitrarily", "chosen", "to", "be", "150", "mm", "by", "150", "mm", "for", "an", "experiment", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 19, 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "users", "can", "easily", "access", "the", "monitoring", "system", "without", "the", "restrictions", "of", "time", "and", "space", ",", "provided", "that", "they", "have", "a", "smartphone", "or", "tablet", "PC", "connected", "to", "the", "Internet", "." ],
+    "entities_indices" : [ [ 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "Furthermore", ",", "by", "applying", "WSN", "and", "IoT", "technology", ",", "a", "real-time", "remote", "monitoring", "system", "was", "implemented", "that", "was", "easily", "accessible", "for", "user", "and", "could", "efficiently", "analyze", "the", "status", "of", "corrosion", "with", "database", "and", "visualization", "software", "." ],
+    "entities_indices" : [ [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "proposed", "system", "configures", "the", "WSN", "to", "remotely", "transmit", "the", "measured", "data", "to", "the", "master", "node", "of", "a", "Zigbee", "communication", "device", "(", "xBee", "s2c", ",", "DIGI", ",", "Hopkins", ",", "MN", ",", "USA", ")", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 25, 26 ], [ 27, 28 ], [ 29, 30 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "paper", ",", "we", "propose", "a", "method", "for", "detecting", "the", "corrosion", "of", "a", "steel", "framed", "construction", "with", "a", "convenient", "monitoring", "system", "using", "WSN", "." ],
+    "entities_indices" : [ [ 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "thicknesses", "of", "the", "steel", "plates", "(", "S", ")", "and", "the", "acrylic", "plates", "(", "A", ")", "used", "to", "simulate", "the", "depth", "of", "corrosion", "were", "10", "mm", "for", "the", "steel", "plate", "and", "0", "mm", "for", "the", "acrylic", "plate", "for", "Line", "1", ";", "8", "mm", "for", "the", "steel", "plate", "and", "2", "mm", "for", "the", "acrylic", "plate", "for", "Line", "2", ";", "6", "mm", "for", "the", "steel", "plate", "and", "4", "mm", "for", "the", "acrylic", "plate", "for", "Line", "3", ";", "4", "mm", "for", "the", "steel", "plate", "and", "6", "mm", "for", "the", "acrylic", "plate", "for", "Line", "4", ";", "and", "2", "mm", "for", "the", "steel", "plate", "and", "8", "mm", "for", "the", "acrylic", "plate", "for", "Line", "5", ",", "respectively", "." ],
+    "entities_indices" : [ [ 55, 56, 57 ] ]
+  }, {
+    "sentence_tokens" : [ "Additionally", ",", "the", "resistance", "of", "the", "sensor", "coil", "increases", "because", "of", "the", "energy", "dissipation", "caused", "by", "the", "PEC", "[", "34", "]", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 12, 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "C1", "and", "C2", "are", "capacitors", ",", "and", "a", "sensor", "coil", "is", "placed", "between", "them", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "Steel", "framed", "construction", "(", "SC", ")", "[", "6", "]", "is", "constructed", "quickly", "and", "has", "low", "local", "environmental", "pollution", "and", "can", "be", "applied", "for", "the", "construction", "of", "building", "parking", "lots", ",", "but", ",", "in", "this", "case", ",", "severe", "corrosion", "can", "occur", "due", "to", "direct", "exposure", "to", "weather", "conditions", "[", "7", "]", "." ],
+    "entities_indices" : [ [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "VPulse", "is", "the", "input", "source", ",", "and", "ILoop", "is", "the", "current", "flowing", "in", "the", "loop", "circuit", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "An", "Arduino", "based", "system", ",", "which", "has", "many", "commercial", "modules", "for", "expansion", ",", "sufficient", "open", "library", "codes", ",", "and", "a", "high", "compatibility", ",", "provides", "a", "complimentary", "integrated", "development", "environment", "(", "IDE", ")", "for", "developers", "." ],
+    "entities_indices" : [ [ 30, 31 ] ]
+  }, {
+    "sentence_tokens" : [ "Thus", ",", "the", "sensor", "coil", "with", "a", "larger", "size", "has", "a", "higher", "sensitivity", "." ],
+    "entities_indices" : [ [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "when", "the", "sensor", "coil", "is", "buried", "or", "fixed", ",", "the", "effect", "is", "generated", "by", "the", "corrosion", "of", "the", "specimen", ",", "and", "the", "same", "principle", "of", "a", "thickness", "measurement", "is", "applied", "to", "the", "evaluation", "of", "corrosion", "[", "13", "]", "." ],
+    "entities_indices" : [ [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "When", "installed", "in", "an", "actual", "building", ",", "the", "sensor", "coil", "should", "not", "prevent", "the", "corrosion", "of", "the", "steel", "frame", ",", "so", "it", "should", "be", "installed", "at", "a", "suitable", "distance", "." ],
+    "entities_indices" : [ [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "VPulse", "square", "wave", "with", "1", "Hz", ",", "is", "an", "input", "to", "the", "RLC", "circuit", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "Moreover", ",", "the", "system", "also", "provides", "convenience", ",", "efficiency", ",", "and", "portability", "by", "using", "a", "Raspberry", "Pi", "for", "the", "server", "computer.Furthermore", ",", "the", "proposed", "system", "can", "be", "applied", "in", "other", "fields", ",", "such", "as", "non", "destructive", "testing", "related", "to", "cracks", "or", "the", "thickness", "of", "paint", "for", "aircraft", "and", "ships", "by", "designing", "sensor", "coils", "with", "various", "shapes", "depending", "on", "the", "particular", "desired", "application.The", "limitation", "of", "the", "proposed", "system", "is", "the", "power", "consumption", "for", "the", "long-term", "measurements", "." ],
+    "entities_indices" : [ [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "(", "Figure", "9", ")", "The", "red", "line", "indicates", "the", "inductance", "of", "the", "sensor", "coil", ",", "and", "the", "blue", "line", "indicates", "the", "resistance", "of", "sensor", "coil", "." ],
+    "entities_indices" : [ [ 13, 14 ], [ 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "it", "is", "suitable", "for", "an", "actual", "application", "of", "a", "WSN", "for", "structural", "health", "monitoring", "." ],
+    "entities_indices" : [ [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "According", "to", "Kirchhoff", "'", "s", "voltage", "law", "(", "KVL", ")", ",", "the", "circuit", "is", "described", "as", "follows", ":", "(", "1", ")", "VPulse+", "j", "omega", "C1ILoop", "-", "(", "RS+", "j", "omega", "LS", ")", "ILoop+", "j", "omega", "C2ILoop", "=0", "However", ",", "Equation", "(", "1", ")", "is", "based", "on", "the", "circuit", "in", "Figure", "2", "without", "any", "specimen", "." ],
+    "entities_indices" : [ [ 21, 22, 23, 24, 25 ], [ 30, 31 ] ]
+  }, {
+    "sentence_tokens" : [ "Steel", "framed", "reinforced", "concrete", "(", "SRC", ")", "has", "a", "light", "self-weight", ",", "high", "strength", ",", "and", "high", "stiffness", "by", "combining", "steel", "beams", "with", "reinforced", "concrete", "(", "RC", ")", "[", "8]", "and", "is", "used", "in", "large", "construction", "projects", ",", "such", "as", "skyscrapers", ",", "bridges", ",", "and", "tunnels", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 26, 27 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "paper", ",", "an", "optimal", "remote", "monitoring", "system", "platform", "for", "SHM", "is", "proposed", "based", "on", "pulsed", "eddy", "current", "(", "PEC", ")", "that", "is", "utilized", "for", "measuring", "the", "corrosion", "of", "a", "steel", "framed", "construction", "." ],
+    "entities_indices" : [ [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "By", "using", "the", "proposed", "method", ",", "the", "tiny", ",", "low-cost", "hardware", "module", "for", "SHM", "can", "be", "manufactured", "without", "a", "function", "generator", ",", "oscilloscope", ",", "and", "other", "general-purpose", "measuring", "equipment", "." ],
+    "entities_indices" : [ [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "research", ",", "a", "sampling", "rate", "of", "500", "samples", "per", "second", "is", "chosen", "for", "the", "experiment", ",", "and", "a", "smaller", "sampling", "rate", "is", "possible", "to", "detect", "corrosion", "for", "SHM", "." ],
+    "entities_indices" : [ [ 29, 30 ] ]
+  }, {
+    "sentence_tokens" : [ "It", "is", "based", "on", "an", "RLC", "circuit", "and", "constitutes", "a", "loop", "circuit", "by", "connecting", "all", "components", "in", "series", "." ],
+    "entities_indices" : [ [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "When", "considering", "the", "total", "economic", "costs", "of", "WSN", "SHM", ",", "the", "operating", "time", "should", "be", "taken", "into", "account", ",", "because", "the", "WSN", "is", "generally", "powered", "by", "a", "battery.SHM", "includes", "measuring", "temperature", ",", "humidity", ",", "wind", "speed", ",", "earthquake", "incidence", ",", "and", "corrosion", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "Additionally", ",", "the", "Raspberry", "Pi", "has", "both", "an", "ethernet", "port", "and", "a", "wireless", "LAN", ",", "and", "it", "can", "be", "connected", "to", "the", "Internet", "without", "an", "additional", "device", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "Each", "line", "in", "Figure", "8", "indicates", "the", "voltage", "variation", "of", "VC2", "according", "to", "the", "level", "of", "corrosion", ",", "which", "represents", "the", "PEC", "response", "that", "is", "sampled", "500", "times", "for", "about", "one", "second", "by", "the", "sensor", "node", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "inductance", "of", "the", "sensor", "coil", "decreases", "due", "to", "the", "reduction", "in", "magnetic", "flux", "in", "the", "coil", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "Accordingly", ",", "in", "the", "experimental", "setup", ",", "the", "thickness", "reduction", "due", "to", "corrosion", "is", "replaced", "by", "the", "change", "in", "the", "thickness", "of", "the", "steel", "plates", ",", "and", "the", "consequent", "lift-off", "effect", "was", "simulated", "by", "placing", "non", "conductive", "acrylic", "plates", "between", "the", "steel", "plate", "and", "the", "coil", "." ],
+    "entities_indices" : [ [ 45, 46 ] ]
+  } ],
+  "emptySentences" : [ {
+    "sentence_tokens" : [ "Development", "of", "a", "Wireless", "Corrosion", "Detection", "System", "for", "Steel", "Framed", "Structures", "Using", "Pulsed", "Eddy", "Currents", "." ]
+  }, {
+    "sentence_tokens" : [ "Structural", "health", "monitoring", "(", "SHM", ")", "can", "be", "more", "efficient", "with", "the", "application", "of", "a", "wireless", "sensor", "network", "(", "WSN", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "the", "hardware", "that", "makes", "up", "this", "system", "should", "have", "sufficient", "performance", "to", "sample", "the", "data", "collected", "from", "the", "sensor", "in", "real-time", "situations", "." ]
+  }, {
+    "sentence_tokens" : [ "High-performance", "hardware", "can", "be", "used", "for", "this", "purpose", ",", "but", "is", "not", "suitable", "in", "this", "application", "because", "of", "its", "relatively", "high", "power", "consumption", ",", "high", "cost", ",", "large", "size", ",", "and", "so", "on", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "paper", ",", "an", "optimal", "remote", "monitoring", "system", "platform", "for", "SHM", "is", "proposed", "based", "on", "pulsed", "eddy", "current", "(", "PEC", ")", "that", "is", "utilized", "for", "measuring", "the", "corrosion", "of", "a", "steel", "framed", "construction", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "circuit", "to", "delay", "the", "PEC", "response", "based", "on", "the", "resistance-inductance-capacitance", "(", "RLC", ")", "combination", "was", "designed", "for", "data", "sampling", "to", "utilize", "the", "conventional", "hardware", "of", "WSN", "for", "SHM", ",", "and", "this", "approach", "was", "verified", "by", "simulations", "and", "experiments", "." ]
+  }, {
+    "sentence_tokens" : [ "Especially", ",", "the", "importance", "of", "configuring", "sensing", "modules", "and", "the", "WSN", "for", "remote", "monitoring", "were", "studied", ",", "and", "the", "PEC", "responses", "caused", "by", "the", "corrosion", "of", "a", "specimen", "made", "with", "steel", "were", "able", "to", "be", "sampled", "remotely", "using", "the", "proposed", "system", "." ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "we", "present", "a", "remote", "SHM", "system", "platform", "for", "diagnosing", "the", "corrosion", "condition", "of", "a", "building", "with", "a", "steel", "structure", ",", "and", "proving", "its", "viability", "with", "experiments", "." ]
+  }, {
+    "sentence_tokens" : [ "1", "." ]
+  }, {
+    "sentence_tokens" : [ "Introduction", "." ]
+  }, {
+    "sentence_tokens" : [ "SHM", ",", "which", "evaluates", "the", "durability", "of", "building", "structures", ",", "diagnoses", "points", "with", "damage", "and", "finds", "their", "location", "by", "collecting", "data", "using", "a", "sensor", "system", "in", "real", "time", "[", "1", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Additionally", ",", "advanced", "methods", "were", "introduced", "to", "reconstruct", "the", "lost", "data", "for", "the", "precise", "SHM", "." ]
+  }, {
+    "sentence_tokens" : [ "[", "2,3", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "the", "conventional", "wired", "system", "used", "in", "SHM", "is", "uneconomical", "because", "a", "large", "amount", "of", "wire", "is", "necessary", "and", "requires", "substantial", "labor", "during", "the", "installation", "and", "maintenance", "periods", "." ]
+  }, {
+    "sentence_tokens" : [ "If", "a", "WSN", "is", "applied", "to", "the", "SHM", "system", ",", "building", "structures", "can", "be", "conveniently", "maintained", "with", "a", "low", "cost", "[", "4,5", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "When", "considering", "the", "total", "economic", "costs", "of", "WSN", "SHM", ",", "the", "operating", "time", "should", "be", "taken", "into", "account", ",", "because", "the", "WSN", "is", "generally", "powered", "by", "a", "battery.SHM", "includes", "measuring", "temperature", ",", "humidity", ",", "wind", "speed", ",", "earthquake", "incidence", ",", "and", "corrosion", "." ]
+  }, {
+    "sentence_tokens" : [ "Corrosion", ",", "which", "affects", "the", "durability", "of", "buildings", ",", "occurs", "in", "all", "steel", "structural", "materials", "." ]
+  }, {
+    "sentence_tokens" : [ "Various", "steel", "sections", ",", "such", "as", "wide", "flanges", ",", "I-beams", ",", "and", "channels", ",", "are", "used", "for", "structures", "such", "as", "buildings", ",", "roads", ",", "and", "bridges", ",", "which", "can", "be", "easily", "seen", "around", "us", ",", "and", "these", "structures", "are", "classified", "by", "the", "following", "construction", "method", "." ]
+  }, {
+    "sentence_tokens" : [ "Steel", "framed", "construction", "(", "SC", ")", "[", "6", "]", "is", "constructed", "quickly", "and", "has", "low", "local", "environmental", "pollution", "and", "can", "be", "applied", "for", "the", "construction", "of", "building", "parking", "lots", ",", "but", ",", "in", "this", "case", ",", "severe", "corrosion", "can", "occur", "due", "to", "direct", "exposure", "to", "weather", "conditions", "[", "7", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Steel", "framed", "reinforced", "concrete", "(", "SRC", ")", "has", "a", "light", "self-weight", ",", "high", "strength", ",", "and", "high", "stiffness", "by", "combining", "steel", "beams", "with", "reinforced", "concrete", "(", "RC", ")", "[", "8]", "and", "is", "used", "in", "large", "construction", "projects", ",", "such", "as", "skyscrapers", ",", "bridges", ",", "and", "tunnels", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "bridges", "are", "easily", "corroded", "by", "ionic", "deicing", "chemicals", "used", "in", "winter", "[", "9", "]", ",", "and", "subsea", "tunnels", "are", "also", "corroded", "due", "to", "electrochemical", "action", "caused", "by", "chloride", "ion", "invasion", "[", "10", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "corrosion", "of", "steel", "framed", "construction", ",", "which", "is", "caused", "by", "various", "factors", "in", "the", "diverse", "environments", ",", "should", "be", "measured", "to", "provide", "a", "warning", "before", "breakdown", ",", "because", "it", "can", "cause", "cracks", ",", "the", "spalling", "of", "concrete", ",", "and", "structural", "collapse", "[", "11", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "There", "are", "several", "technologies", "used", "to", "measure", "corrosion", ",", "including", "the", "following", "methods", ":", "eddy", "current", "[", "12,13", "]", ",", "ground", "penetrating", "radar", "(", "GPR", ")", "[", "14", "]", ",", "galvanostatic", "pulse", "method", "(", "GPM", ")", "[", "15", "]", ",", "fiber", "Bragg", "grating", "(", "FBG", ")", "[", "16", "]", ",", "ultrasonic", "pulse", "velocity", "(", "UPV", ")", "[", "17", "]", ",", "and", "infrared", "thermography", "(", "IRT", ")", "[", "18", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Eddy", "current", "testing", "(", "ECT", ")", "is", "the", "method", "used", "in", "this", "research", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "mechanism", "of", "the", "eddy", "current", "method", "is", "to", "measure", "the", "conductivity", "and", "permeability", "changes", "caused", "by", "corrosion", "by", "inducing", "an", "eddy", "current", "that", "is", "generated", "by", "a", "sine", "wave", "or", "pulse", "[", "19,20,21,22,23", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Although", "the", "method", "using", "a", "single-wavelength", "sine", "wave", "successfully", "measures", "corrosion", ",", "the", "detectable", "depth", "is", "limited", "by", "the", "skin", "effect", "." ]
+  }, {
+    "sentence_tokens" : [ "Since", "corrosion", "occurs", "not", "only", "on", "the", "surface", "of", "a", "steel", "frame", "but", "also", "inside", "of", "it", ",", "it", "is", "appropriate", "to", "use", "multiple-frequency", "waves", "as", "input", "signals", "to", "evaluate", "the", "durability", "of", "structures", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "the", "method", "of", "generating", "multiple", "frequencies", "requires", "much", "more", "complex", "and", "expensive", "electronics", "than", "a", "single-frequency", "system", ",", "involving", "generating", "input", "signals", "and", "measuring", "output", "signals", ",", "and", "it", "is", "not", "suitable", "for", "minimizing", "cost", "or", "power", "consumption", "." ]
+  }, {
+    "sentence_tokens" : [ "On", "the", "other", "hand", ",", "the", "method", "of", "PEC", "using", "a", "pulse", "signal", "as", "an", "input", "has", "the", "possibility", "to", "minimize", "the", "power", "consumption", "[", "24,25", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Further", ",", "since", "it", "covers", "multiple", "frequencies", "which", "can", "detect", "various", "depths", "of", "objects", "without", "actually", "changing", "the", "frequency", "[", "12,26", "]", ",", "PEC", "can", "be", "used", "as", "an", "alternative", "to", "explicit", "multiple-frequency", "methods", "for", "inspecting", "corrosion", "deep", "inside", "a", "steel", "frame", "." ]
+  }, {
+    "sentence_tokens" : [ "Thus", ",", "to", "detect", "corrosion", ",", "the", "pulse", "input", "is", "applied", "for", "the", "steel", "structure", ",", "and", "the", "output", "from", "the", "PEC", "response", "should", "be", "measured", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "typical", "PEC", "response", "appears", "as", "an", "exponential", "decay", "for", "several", "milliseconds", "[", "27", "]", ",", "shown", "in", "Figure", "1", "." ]
+  }, {
+    "sentence_tokens" : [ "Data", "acquisition", "(", "DAQ", ")", "equipment", ",", "such", "as", "an", "analog-to-digital", "converter", "(", "ADC", ")", "board", ",", "is", "used", "to", "measure", "the", "response", "[", "28,29", "]", ",", "but", "this", "configuration", "is", "unsuitable", "for", "application", "in", "an", "actual", "situation", "that", "requires", "a", "low-power", "system", ",", "such", "as", "the", "typical", "WSN", "environment", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "a", "WSN", ",", "the", "low", "cost", ",", "small", "size", ",", "and", "low", "power", "consumption", "are", "usually", "taken", "into", "account", "." ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "measuring", "the", "PEC", "response", "is", "difficult", "when", "applying", "a", "conventional", "system", "for", "use", "in", "an", "actual", "SHM", "application", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "paper", ",", "we", "propose", "a", "method", "for", "detecting", "the", "corrosion", "of", "a", "steel", "framed", "construction", "with", "a", "convenient", "monitoring", "system", "using", "WSN", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "circuit", "designed", "to", "delay", "the", "PEC", "response", "makes", "it", "possible", "to", "easily", "deploy", "in", "an", "actual", "construction", "environment", "." ]
+  }, {
+    "sentence_tokens" : [ "After", "a", "PEC", "is", "induced", "to", "detect", "corrosion", ",", "in", "order", "to", "measure", "the", "response", ",", "a", "delay", "circuit", "for", "the", "response", "signal", "should", "be", "provided", ",", "because", "the", "output", "signals", "vary", "too", "fast", "for", "sampling", "them", "using", "a", "conventional", "measurement", "system", "." ]
+  }, {
+    "sentence_tokens" : [ "By", "applying", "the", "proposed", "method", "using", "the", "WSN", ",", "the", "remote", "monitoring", "system", "can", "be", "utilized", "for", "a", "more", "convenient", "real-time", "analysis", "of", "the", "corrosion", "state", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "order", "to", "achieve", "this", ",", "tiny", "sensor", "modules", ",", "without", "large", "sized", ",", "general-purpose", "measuring", "equipment", ",", "should", "be", "developed", "and", "installed", "in", "various", "locations", "of", "the", "building", "for", "a", "more", "efficient", "and", "precise", "SHM", "." ]
+  }, {
+    "sentence_tokens" : [ "Additionally", ",", "the", "more", "collected", "data", "from", "the", "several", "parts", "of", "a", "building", ",", "the", "more", "efficient", "SHM", "is", "." ]
+  }, {
+    "sentence_tokens" : [ "Additionally", ",", "various", "analysis", "environments", "with", "a", "convenient", "user", "interface", "are", "provided", "in", "the", "hardware", "configurations", "." ]
+  }, {
+    "sentence_tokens" : [ "2", "." ]
+  }, {
+    "sentence_tokens" : [ "Pulsed", "Eddy", "Current", "Response", "." ]
+  }, {
+    "sentence_tokens" : [ "PEC", "response", "must", "be", "measured", "to", "evaluate", "the", "amount", "of", "corrosion", ",", "but", "it", "is", "difficult", "to", "measure", "this", "with", "the", "hardware", "configuration", "generally", "used", "for", "WSNs", "." ]
+  }, {
+    "sentence_tokens" : [ "(", "Figure", "1", ")", "In", "this", "section", ",", "a", "delay", "circuit", "designed", "to", "sample", "PEC", "responses", ",", "in", "order", "to", "compare", "the", "results", "from", "the", "hardware", "configuration", "of", "a", "conventional", "WSN", "system", ",", "is", "described", "." ]
+  }, {
+    "sentence_tokens" : [ "Figure", "2", "shows", "the", "configuration", "of", "the", "proposed", "delay", "circuit", "of", "the", "sensor", "module", "." ]
+  }, {
+    "sentence_tokens" : [ "It", "is", "based", "on", "an", "RLC", "circuit", "and", "constitutes", "a", "loop", "circuit", "by", "connecting", "all", "components", "in", "series", "." ]
+  }, {
+    "sentence_tokens" : [ "C1", "and", "C2", "are", "capacitors", ",", "and", "a", "sensor", "coil", "is", "placed", "between", "them", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "sensor", "coil", "has", "an", "inductance", "(", "Ls", ")", "and", "resistance", "(", "Rs", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "VPulse", "is", "the", "input", "source", ",", "and", "ILoop", "is", "the", "current", "flowing", "in", "the", "loop", "circuit", "." ]
+  }, {
+    "sentence_tokens" : [ "According", "to", "Kirchhoff", "'", "s", "voltage", "law", "(", "KVL", ")", ",", "the", "circuit", "is", "described", "as", "follows", ":", "(", "1", ")", "VPulse+", "j", "omega", "C1ILoop", "-", "(", "RS+", "j", "omega", "LS", ")", "ILoop+", "j", "omega", "C2ILoop", "=0", "However", ",", "Equation", "(", "1", ")", "is", "based", "on", "the", "circuit", "in", "Figure", "2", "without", "any", "specimen", "." ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "when", "measuring", "corrosion", ",", "the", "effective", "resistance", "of", "the", "coil", "sensor", "(", "Delta", "RV", ")", "is", "varied", "by", "the", "specimen", "." ]
+  }, {
+    "sentence_tokens" : [ "It", "is", "defined", "as", "follows", ":", "(", "2", ")", "RVS", "=", "RS+", "Delta", "RVThe", "effective", "inductance", "of", "the", "sensor", "(", "Delta", "LV", ")", "coil", "is", "also", "altered", "by", "the", "specimen", ",", "which", "could", "be", "a", "conductive", "material", ",", "and", "is", "defined", "as", "follows", ":(", "3", ")", "LVS", "=", "LS+", "Delta", "LVThe", "substitution", "of", "Equations", "(", "2", ")", "and", "(", "3", ")", "into", "(", "1", ")", "is", "expressed", "as", "follows", ":(", "4", ")", "VPulse+", "j", "omega", "C1ILoop", "-", "(", "RVS+", "j", "omega", "LVS", ")", "ILoop+", "j", "omega", "C2ILoop", "=", "0ILoop", "is", "calculated", "as", "Equation", "(", "5", ")", ":(", "5", ")", "ILoop", "=", "-", "VPulsej", "(", "1", "omega", "C1", "+1", "omega", "C2", "-", "omega", "LVS", ")", "-", "(", "RVS", ")", "The", "voltage", "of", "C2", "is", "expressed", "as", "the", "following", "Equation", "(", "6", ")", ":(", "6", ")", "VC2", "=", "-", "jILoop", "omega", "C2Using", "Equations", "(", "5", ")", "and", "(", "6", ")", "can", "be", "described", "as", "follows", ":(", "7", ")", "VC2", "=", "jVPulse", "omega", "C2", "[", "j", "(", "1", "omega", "C1", "+1", "omega", "C2", "-", "omega", "LVS", ")", "-", "(", "RVS", ")", "]", "Therefore", ",", "it", "can", "be", "seen", "that", "a", "change", "in", "the", "specimen", "'", "s", "electrical", "properties", "produces", "a", "variation", "in", "the", "PEC", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "order", "to", "operate", "the", "delay", "circuit", "for", "a", "simulation", ",", "4.7", "nF", "ceramic", "capacitors", "are", "selected", "for", "both", "C1", "and", "C2", ",", "and", "the", "inductance", "and", "resistance", "of", "the", "sensor", "coil", "are", "set", "to", "195", "uH", "and", "2.5", "Omega", ",", "respectively", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "VPulse", "square", "wave", "with", "1", "Hz", ",", "is", "an", "input", "to", "the", "RLC", "circuit", "." ]
+  }, {
+    "sentence_tokens" : [ "Figure", "3", "shows", "the", "result", "achieved", "by", "an", "electronic", "circuit", "simulator", ",", "EveryCircuit", ",", "confirming", "that", "the", "PEC", "response", "is", "delayed", "by", "the", "proposed", "circuit", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "exponentially", "decaying", "signal", "obtained", "by", "simulation", "appeared", "for", "about", "500", "ms", ",", "and", "demonstrated", "that", "it", "took", "approximately", "100", "times", "longer", "than", "the", "general", "PEC", "response", "shown", "in", "Figure", "1", "." ]
+  }, {
+    "sentence_tokens" : [ "3", "." ]
+  }, {
+    "sentence_tokens" : [ "Corrosion", "Remote", "Monitoring", "System", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "section", ",", "we", "propose", "a", "system", "for", "implementing", "the", "design", "described", "in", "the", "previous", "section", ",", "which", "is", "able", "to", "sample", "the", "delayed", "PEC", "response", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "sensor", "node", "is", "made", "by", "combining", "the", "proposed", "circuit", "with", "the", "hardware", "configuration", "of", "a", "conventional", "Zigbee", "based", "WSN", "for", "remote", "monitoring", "." ]
+  }, {
+    "sentence_tokens" : [ "Additionally", ",", "a", "user-friendly", "interface", "is", "implemented", "for", "convenience", "." ]
+  }, {
+    "sentence_tokens" : [ "3.1", "." ]
+  }, {
+    "sentence_tokens" : [ "Sensor", "Node", "Design", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "the", "detection", "and", "remote", "monitoring", "of", "corrosion", ",", "the", "proposed", "system", "requires", "several", "functions", ",", "including", "data", "collection", "and", "communication", "." ]
+  }, {
+    "sentence_tokens" : [ "Figure", "4", "shows", "the", "hardware", "configuration", "of", "the", "sensor", "node", "." ]
+  }, {
+    "sentence_tokens" : [ "An", "Arduino", "based", "system", ",", "which", "has", "many", "commercial", "modules", "for", "expansion", ",", "sufficient", "open", "library", "codes", ",", "and", "a", "high", "compatibility", ",", "provides", "a", "complimentary", "integrated", "development", "environment", "(", "IDE", ")", "for", "developers", "." ]
+  }, {
+    "sentence_tokens" : [ "Thus", ",", "the", "Arduino", "Pro", "Mini", "was", "chosen", "to", "develop", "the", "hardware", "for", "the", "proposed", "system", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "addition", ",", "it", "is", "utilized", "as", "a", "pulse", "generator", ",", "because", "a", "digital", "input", "signal", "can", "be", "generated", "by", "controlling", "its", "GPIO", "." ]
+  }, {
+    "sentence_tokens" : [ "If", "the", "number", "of", "turns", "of", "the", "coil", "for", "the", "sensor", "is", "increased", ",", "the", "intensity", "of", "PEC", "response", "becomes", "high", "." ]
+  }, {
+    "sentence_tokens" : [ "Thus", ",", "the", "sensor", "coil", "with", "a", "larger", "size", "has", "a", "higher", "sensitivity", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "order", "to", "determine", "the", "size", "of", "the", "sensor", ",", "it", "is", "designed", "according", "to", "the", "size", "and", "shape", "of", "the", "part", "that", "is", "measured", ",", "optimized", "by", "a", "simulation", "or", "experiment", ",", "and", "then", "applied", "to", "the", "actual", "building", "structures", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "research", ",", "the", "sensor", "coil", "has", "a", "planar", "square", "shape", "." ]
+  }, {
+    "sentence_tokens" : [ "It", "can", "be", "placed", "close", "to", "a", "steel", "component", ",", "and", "is", "suitable", "for", "measuring", "the", "corrosion", "of", "a", "large", "area", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "order", "to", "make", "the", "planar", "coil", "sensor", ",", "a", "foam", "board", ",", "double", "sided", "adhesive", "tape", ",", "and", "AWG26", "wire", "were", "used", ",", "and", "its", "size", "is", "arbitrarily", "chosen", "to", "be", "150", "mm", "by", "150", "mm", "for", "an", "experiment", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "sampling", "the", "PEC", "response", "signals", "detected", "by", "the", "sensor", "coil", ",", "the", "ADS1015", "analog-to-digital", "converter", "is", "used", ",", "which", "has", "a", "12-bit", "resolution", "and", "a", "sampling", "rate", "of", "3300", "samples", "per", "second", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "sampled", "data", "are", "stored", "in", "an", "SD", "card", "for", "every", "sampling", "as", "backup", "data", ",", "which", "can", "prevent", "data", "loss", "caused", "by", "communication", "errors", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "research", ",", "a", "sampling", "rate", "of", "500", "samples", "per", "second", "is", "chosen", "for", "the", "experiment", ",", "and", "a", "smaller", "sampling", "rate", "is", "possible", "to", "detect", "corrosion", "for", "SHM", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "proposed", "system", "configures", "the", "WSN", "to", "remotely", "transmit", "the", "measured", "data", "to", "the", "master", "node", "of", "a", "Zigbee", "communication", "device", "(", "xBee", "s2c", ",", "DIGI", ",", "Hopkins", ",", "MN", ",", "USA", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "Zigbee", "module", "based", "on", "the", "IEEE", "802.15.4", "standard", "has", "various", "advantages", "such", "as", "a", "low", "power", "consumption", ",", "low", "cost", ",", "and", "high", "compatibility", "with", "various", "network", "topologies", "." ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "it", "is", "suitable", "for", "an", "actual", "application", "of", "a", "WSN", "for", "structural", "health", "monitoring", "." ]
+  }, {
+    "sentence_tokens" : [ "3.2", "." ]
+  }, {
+    "sentence_tokens" : [ "Networking", "and", "Monitoring", "." ]
+  }, {
+    "sentence_tokens" : [ "Figure", "5", "shows", "the", "architecture", "of", "the", "system", "for", "remotely", "monitoring", "the", "corrosion", "data", "collected", "from", "the", "sensor", "node", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "master", "node", "in", "the", "gateway", "layer", "is", "implemented", "using", "a", "Raspberry", "Pi", "3", "B+", ",", "which", "is", "a", "single-board", "computer", "the", "size", "of", "a", "credit", "card", "and", "has", "a", "built-in", "operating", "system", "." ]
+  }, {
+    "sentence_tokens" : [ "It", "is", "used", "as", "both", "a", "master", "node", "and", "server", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "order", "to", "use", "a", "relational", "database", "management", "system", ",", "MariaDB", "is", "installed", "to", "collect", "data", "from", "the", "sensor", "node", "and", "for", "storage", "in", "the", "database", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "data", "are", "visualized", "for", "analysis", ",", "and", "Grafana", ",", "a", "web", "based", "interactive", "application", ",", "provides", "convenient", "features", "to", "visualize", "the", "data", "from", "a", "database", "." ]
+  }, {
+    "sentence_tokens" : [ "Additionally", ",", "the", "Raspberry", "Pi", "has", "both", "an", "ethernet", "port", "and", "a", "wireless", "LAN", ",", "and", "it", "can", "be", "connected", "to", "the", "Internet", "without", "an", "additional", "device", "." ]
+  }, {
+    "sentence_tokens" : [ "As", "a", "result", ",", "users", "can", "access", "the", "master", "node", "through", "the", "Internet", "and", "monitor", "the", "data", "measured", "from", "the", "construction", "site", "anytime", "and", "anywhere", "." ]
+  }, {
+    "sentence_tokens" : [ "4", "." ]
+  }, {
+    "sentence_tokens" : [ "Experimental", "Section", "." ]
+  }, {
+    "sentence_tokens" : [ "Experiments", "were", "conducted", "to", "confirm", "the", "delay", "in", "the", "PEC", "response", "and", "verify", "the", "detectability", "of", "corrosion", "of", "the", "steel", "plate", "." ]
+  }, {
+    "sentence_tokens" : [ "Figure", "6", "shows", "the", "experimental", "setup", "to", "examine", "corrosion", "using", "the", "proposed", "system", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "lift-off", "effect", "is", "caused", "by", "variations", "in", "the", "distance", "between", "the", "sensor", "and", "the", "specimen", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "thickness", "of", "the", "rust", "on", "the", "specimen", "is", "regarded", "as", "the", "variation", "of", "distance", ",", "and", "it", "becomes", "a", "factor", "that", "interferes", "with", "the", "signal", "that", "is", "collected", "." ]
+  }, {
+    "sentence_tokens" : [ "Several", "studies", "aimed", "to", "reduce", "this", "effect", "[", "30,31,32", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "when", "the", "sensor", "coil", "is", "buried", "or", "fixed", ",", "the", "effect", "is", "generated", "by", "the", "corrosion", "of", "the", "specimen", ",", "and", "the", "same", "principle", "of", "a", "thickness", "measurement", "is", "applied", "to", "the", "evaluation", "of", "corrosion", "[", "13", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Accordingly", ",", "in", "the", "experimental", "setup", ",", "the", "thickness", "reduction", "due", "to", "corrosion", "is", "replaced", "by", "the", "change", "in", "the", "thickness", "of", "the", "steel", "plates", ",", "and", "the", "consequent", "lift-off", "effect", "was", "simulated", "by", "placing", "non", "conductive", "acrylic", "plates", "between", "the", "steel", "plate", "and", "the", "coil", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "size", "of", "the", "steel", "plates", "and", "the", "acrylic", "plates", "used", "in", "the", "experiment", "were", "each", "150", "mm", "by", "150", "mm", ",", "and", "had", "the", "same", "dimensions", "as", "the", "sensor", "coil", "with", "thicknesses", "of", "2", "mm", ",", "4", "mm", ",", "6", "mm", ",", "8", "mm", ",", "and", "10", "mm", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "collected", "experimental", "data", "were", "recorded", "and", "monitored", "by", "the", "proposed", "system", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "experiment", "measured", "the", "change", "in", "the", "response", "of", "PEC", "according", "to", "the", "thickness", "of", "corrosion", "." ]
+  }, {
+    "sentence_tokens" : [ "When", "installed", "in", "an", "actual", "building", ",", "the", "sensor", "coil", "should", "not", "prevent", "the", "corrosion", "of", "the", "steel", "frame", ",", "so", "it", "should", "be", "installed", "at", "a", "suitable", "distance", "." ]
+  }, {
+    "sentence_tokens" : [ "5", "." ]
+  }, {
+    "sentence_tokens" : [ "Result", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "order", "to", "verify", "the", "delay", "of", "the", "PEC", "response", "using", "the", "sensor", "circuit", "explained", "in", "Section", "2", ",", "the", "signal", "was", "measured", "using", "an", "oscilloscope", "." ]
+  }, {
+    "sentence_tokens" : [ "Figure", "7", "shows", "the", "output", "signal", "when", "the", "pulse", "is", "applied", "to", "the", "sensor", "circuit", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "signal", "induced", "by", "the", "proposed", "sensor", "circuit", "showed", "a", "peak", "value", "of", "approximately", "2.5", "V", "and", "an", "attenuation", "of", "a", "signal", "of", "about", "500", "ms", ",", "which", "were", "very", "similar", "to", "the", "simulation", "result", "in", "Figure", "3", "." ]
+  }, {
+    "sentence_tokens" : [ "It", "shows", "that", "the", "sampling", "is", "possible", "by", "the", "ADC", ",", "which", "is", "generally", "used", "in", "the", "actual", "situation.Figure", "8", "shows", "the", "experimental", "result", "of", "sampling", "the", "delayed", "PEC", "response", "using", "the", "proposed", "system", "and", "examines", "if", "corrosion", "is", "detected", "from", "the", "steel", "framed", "construction", "sample", "." ]
+  }, {
+    "sentence_tokens" : [ "Each", "line", "in", "Figure", "8", "indicates", "the", "voltage", "variation", "of", "VC2", "according", "to", "the", "level", "of", "corrosion", ",", "which", "represents", "the", "PEC", "response", "that", "is", "sampled", "500", "times", "for", "about", "one", "second", "by", "the", "sensor", "node", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "thicknesses", "of", "the", "steel", "plates", "(", "S", ")", "and", "the", "acrylic", "plates", "(", "A", ")", "used", "to", "simulate", "the", "depth", "of", "corrosion", "were", "10", "mm", "for", "the", "steel", "plate", "and", "0", "mm", "for", "the", "acrylic", "plate", "for", "Line", "1", ";", "8", "mm", "for", "the", "steel", "plate", "and", "2", "mm", "for", "the", "acrylic", "plate", "for", "Line", "2", ";", "6", "mm", "for", "the", "steel", "plate", "and", "4", "mm", "for", "the", "acrylic", "plate", "for", "Line", "3", ";", "4", "mm", "for", "the", "steel", "plate", "and", "6", "mm", "for", "the", "acrylic", "plate", "for", "Line", "4", ";", "and", "2", "mm", "for", "the", "steel", "plate", "and", "8", "mm", "for", "the", "acrylic", "plate", "for", "Line", "5", ",", "respectively", "." ]
+  }, {
+    "sentence_tokens" : [ "According", "to", "the", "results", ",", "the", "delayed", "PEC", "response", "was", "successfully", "sampled", "by", "the", "sensor", "node", "with", "the", "proposed", "circuit", ",", "and", "the", "corrosion", "was", "identified", "by", "considering", "the", "fact", "that", "the", "peak", "value", "of", "VC2", "consistently", "decreased", "as", "the", "corrosion", "progressed", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "significant", "thickness", "of", "corrosion", "depends", "on", "the", "kinds", "of", "building", "structures", "and", "their", "environments", "[", "33", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "amount", "of", "corrosion", "can", "be", "evaluated", "without", "a", "high-end", "data", "acquisition", "device", "nor", "a", "signal", "conditioner", "with", "a", "computer", "system", ",", "and", "the", "cost", "of", "the", "sensor", "module", "can", "be", "reduced", "because", "the", "coil", "is", "utilized", "for", "both", "inducing", "eddy", "current", "and", "detecting", "the", "effect", "of", "the", "eddy", "current", "without", "an", "additional", "device", "." ]
+  }, {
+    "sentence_tokens" : [ "Thus", ",", "the", "developed", "low-cost", "wireless", "SHM", "system", "can", "be", "utilized", "to", "conveniently", "measure", "the", "corrosion", "of", "steel", "framed", "construction", "with", "convenience", "at", "an", "actual", "construction", "site", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "addition", ",", "for", "the", "precise", "SHM", ",", "the", "simulation", "or", "experiment", "for", "the", "specific", "condition", "should", "be", "carried", "out", "before", "installing", "the", "system", "for", "an", "actual", "building", "structure", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "case", "of", "the", "long-term", "stability", "of", "the", "system", ",", "the", "accumulated", "measurement", "error", "of", "sensor", "inside", "the", "building", "structure", ",", "due", "to", "various", "causes", ",", "should", "be", "corrected", "by", "periodic", "calibration", "so", "that", "it", "is", "not", "regarded", "as", "corrosion.Additionally", ",", "the", "variations", "of", "the", "inductance", "and", "the", "resistance", "of", "the", "sensor", "coil", "were", "examined", "using", "an", "LCR", "meter", "to", "verify", "the", "relationship", "with", "the", "corrosion", "level", "." ]
+  }, {
+    "sentence_tokens" : [ "(", "Figure", "9", ")", "The", "red", "line", "indicates", "the", "inductance", "of", "the", "sensor", "coil", ",", "and", "the", "blue", "line", "indicates", "the", "resistance", "of", "sensor", "coil", "." ]
+  }, {
+    "sentence_tokens" : [ "As", "a", "result", ",", "the", "inductance", "and", "resistance", "varied", "by", "up", "to", "26", "%", ",", "and", "35", "%", ",", "respectively", ",", "due", "to", "the", "corrosion", "level", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "PEC", "induced", "in", "the", "steel", "plate", "generates", "a", "magnetic", "field", "whose", "direction", "is", "opposite", "to", "that", "of", "the", "sensor", "coil", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "inductance", "of", "the", "sensor", "coil", "decreases", "due", "to", "the", "reduction", "in", "magnetic", "flux", "in", "the", "coil", "." ]
+  }, {
+    "sentence_tokens" : [ "Additionally", ",", "the", "resistance", "of", "the", "sensor", "coil", "increases", "because", "of", "the", "energy", "dissipation", "caused", "by", "the", "PEC", "[", "34", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "was", "verified", "by", "experiments", "and", "analyses", "in", "the", "study.Figure", "10", "shows", "the", "detectable", "range", "of", "the", "sensor", ",", "which", "is", "experimental", "result", "measured", "using", "a", "steel", "plate", "and", "acrylic", "plates", "(", "0", "mm", ",", "25", "mm", ",", "50", "mm", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "According", "to", "the", "blue", "line", "(", "S10", "A50", ")", ",", "the", "maximum", "distance", "for", "the", "detection", "of", "steel", "plate", "is", "about", "50", "mm", "because", "it", "is", "almost", "similar", "to", "the", "pink", "line", "(", "S10", "A50+", ")", ",", "which", "shows", "the", "voltage", "values", "in", "the", "case", "that", "the", "steel", "plate", "is", "placed", "further", "than", "50mm", "from", "the", "sensor", "coil.In", "the", "experiments", ",", "a", "viability", "of", "applying", "the", "proposed", "method", "to", "a", "steel", "framed", "structure", "was", "confirmed", "by", "the", "fact", "that", "the", "corrosion", "level", "was", "detected", "by", "variation", "of", "PEC", "." ]
+  }, {
+    "sentence_tokens" : [ "According", "to", "the", "previous", "work", "[", "13", "]", ",", "detecting", "the", "corrosion", "of", "building", "structures", "is", "possible", "using", "PEC", "methodology", "." ]
+  }, {
+    "sentence_tokens" : [ "Tiny", "sensor", "modules", "developed", "by", "the", "proposed", "method", "can", "be", "installed", "in", "various", "parts", "of", "the", "real", "building", "structures", "more", "easily", "than", "conventional", "hardware", "equipment", "for", "SHM.Figure", "11", "is", "the", "screen", "that", "shows", "the", "results", ",", "according", "to", "corrosion", "status", ",", "using", "the", "Grafana", "web", "based", "monitoring", "application", ",", "based", "on", "the", "hardware", "configuration", "explained", "in", "Section", "3", "." ]
+  }, {
+    "sentence_tokens" : [ "Grafana", "provides", "various", "visualization", "tools", ",", "such", "as", "graphs", ",", "tables", ",", "and", "bar", "charts", ",", "which", "use", "data", "from", "the", "sensor", "nodes", "." ]
+  }, {
+    "sentence_tokens" : [ "Moreover", ",", "the", "server", "computer", ",", "implemented", "with", "a", "Raspberry", "Pi", ",", "is", "suitable", "for", "the", "proposed", "system", "because", "of", "its", "low", "cost", "and", "tiny", "size", "." ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "users", "can", "easily", "access", "the", "monitoring", "system", "without", "the", "restrictions", "of", "time", "and", "space", ",", "provided", "that", "they", "have", "a", "smartphone", "or", "tablet", "PC", "connected", "to", "the", "Internet", "." ]
+  }, {
+    "sentence_tokens" : [ "6", "." ]
+  }, {
+    "sentence_tokens" : [ "Conclusions", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "paper", ",", "we", "proposed", "a", "platform", "that", "could", "perform", "the", "remote", "monitoring", "of", "the", "corrosion", "of", "steel", "framed", "construction", "in", "real", "time", "using", "the", "PEC", "method", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "the", "SHM", "of", "the", "steel", "framed", "construction", ",", "the", "PEC", "response", "was", "sampled", "with", "the", "designed", "hardware", "configuration", "containing", "a", "delay", "circuit", ",", "and", "the", "performance", "of", "the", "sensor", "was", "confirmed", "by", "measuring", "the", "corrosion", "of", "the", "test", "sample", "in", "experiments", "." ]
+  }, {
+    "sentence_tokens" : [ "Furthermore", ",", "by", "applying", "WSN", "and", "IoT", "technology", ",", "a", "real-time", "remote", "monitoring", "system", "was", "implemented", "that", "was", "easily", "accessible", "for", "user", "and", "could", "efficiently", "analyze", "the", "status", "of", "corrosion", "with", "database", "and", "visualization", "software", "." ]
+  }, {
+    "sentence_tokens" : [ "By", "using", "the", "proposed", "method", ",", "the", "tiny", ",", "low-cost", "hardware", "module", "for", "SHM", "can", "be", "manufactured", "without", "a", "function", "generator", ",", "oscilloscope", ",", "and", "other", "general-purpose", "measuring", "equipment", "." ]
+  }, {
+    "sentence_tokens" : [ "Additionally", ",", "real-time", "and", "remote", "monitoring", "become", "possible", "if", "they", "are", "applied", "to", "many", "locations", "in", "the", "building", "structure", "with", "wireless", "networks", "." ]
+  }, {
+    "sentence_tokens" : [ "Thus", ",", "the", "efficiency", "becomes", "higher", "than", "the", "conventional", "SHM", "method", "." ]
+  }, {
+    "sentence_tokens" : [ "Moreover", ",", "the", "system", "also", "provides", "convenience", ",", "efficiency", ",", "and", "portability", "by", "using", "a", "Raspberry", "Pi", "for", "the", "server", "computer.Furthermore", ",", "the", "proposed", "system", "can", "be", "applied", "in", "other", "fields", ",", "such", "as", "non", "destructive", "testing", "related", "to", "cracks", "or", "the", "thickness", "of", "paint", "for", "aircraft", "and", "ships", "by", "designing", "sensor", "coils", "with", "various", "shapes", "depending", "on", "the", "particular", "desired", "application.The", "limitation", "of", "the", "proposed", "system", "is", "the", "power", "consumption", "for", "the", "long-term", "measurements", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "power", "consumption", "of", "sensor", "modules", "can", "be", "reduced", "by", "data", "compression", "and", "more", "efficient", "communication", "algorithms", ",", "etc." ]
+  }, {
+    "sentence_tokens" : [ "Additionally", ",", "the", "operation", "time", "can", "be", "improved", "by", "applying", "energy", "harvesting", "techniques", "such", "as", "wind", "and", "solar", "power", ",", "etc." ]
+  } ]
+}

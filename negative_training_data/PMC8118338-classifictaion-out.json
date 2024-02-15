@@ -1,191 +1,755 @@
-[ {
-  "sentence_tokens" : [ "In", "light", "of", "emerging", "evidence", "from", "the", "Alzheimer", "'", "s", "disease", "field", "that", "sleep", "is", "essential", "for", "clearing", "metabolites", "that", "may", "be", "neurotoxic", ",", "such", "as", "beta", "amyloid", "[", "38", "]", ",", "it", "is", "possible", "that", "inadequate", "sleep", "will", "also", "accelerate", "disease", "progression", "in", "HD", "." ],
-  "event_indices" : [ 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 32, 33 ],
-  "controlled_indices" : [ 41, 42, 43 ],
-  "trigger_indices" : [ 40, 41 ],
-  "rule_name" : "Positive_activation_syntax_1_verb, pronominalMatch",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "HD", "is", "a", "progressive", ",", "dominantly", "inherited", "neurodegenerative", "disease", "caused", "by", "an", "unstable", "CAG", "repeat", "mutation", "in", "the", "HD", "gene", "[", "36", "]", "." ],
-  "event_indices" : [ 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 18, 19 ],
-  "controlled_indices" : [ 7, 8, 9 ],
-  "trigger_indices" : [ 9, 10 ],
-  "rule_name" : "Positive_activation_syntax_2_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "The", "only", "significant", "difference", "between", "genotypes", "in", "the", "dynamics", "of", "EEG", "power", "was", "in", "the", "alpha", "range", "where", "it", "increased", "more", "in", "HD", "than", "it", "did", "in", "normal", "sheep", "after", "falling", "asleep", "(", "relative", "to", "average", "wake", "power", ";", "p", "=", "0.012", ",", "t", "=", "-2.57", ";", "Fig", "5D", ")", "." ],
-  "event_indices" : [ 18, 19, 20, 21, 22, 23 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 18, 19 ],
-  "controlled_indices" : [ 22, 23 ],
-  "trigger_indices" : [ 19, 20 ],
-  "rule_name" : "Positive_activation_syntax_7_verb, pronominalMatch",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Abnormally", "abrupt", "transitions", "from", "sleep-to-wake", "in", "Huntington", "'s", "disease", "sheep", "(", "Ovis", "aries", ")", "are", "revealed", "by", "automated", "analysis", "of", "sleep", "and", "wake", "transition", "dynamics", "." ],
-  "entity_one_indices" : [ 20, 21 ],
-  "entity_two_indices" : [ 6, 7, 8, 9 ]
-}, {
-  "sentence_tokens" : [ "Here", "we", "used", "novel", "automated", "analysis", "of", "quantitative", "electroencephalography", "to", "study", "transitions", "between", "wake", "and", "non", "rapid", "eye", "movement", "sleep", "in", "a", "sheep", "model", "of", "presymptomatic", "HD", "." ],
-  "entity_one_indices" : [ 26, 27 ],
-  "entity_two_indices" : [ 19, 20 ]
-}, {
-  "sentence_tokens" : [ "We", "found", "that", "while", "the", "number", "of", "transitions", "between", "sleep", "and", "wake", "were", "similar", "in", "normal", "and", "HD", "sheep", ",", "the", "dynamics", "of", "transitions", "from", "sleep-to-wake", "differed", "markedly", "between", "genotypes", "." ],
-  "entity_one_indices" : [ 17, 18 ],
-  "entity_two_indices" : [ 9, 10 ]
-}, {
-  "sentence_tokens" : [ "Rather", "than", "the", "gradual", "changes", "in", "EEG", "power", "that", "occurs", "during", "transitioning", "from", "sleep-to-wake", "in", "normal", "sheep", ",", "transition", "into", "wake", "was", "abrupt", "in", "HD", "sheep", "." ],
-  "entity_one_indices" : [ 24, 25 ],
-  "entity_two_indices" : [ 6, 7 ]
-}, {
-  "sentence_tokens" : [ "Not", "only", "does", "it", "facilitate", "metabolic", "rest", "[", "1", "]", "and", "support", "memory", "consolidation", "[", "2", ",", "3", "]", ",", "but", "also", "there", "is", "growing", "evidence", "that", "essential", "restorative", "and", "cleansing", "processes", "take", "place", "during", "sleep", "[", "4", ",", "5", "]", "." ],
-  "entity_one_indices" : [ 35, 36 ],
-  "entity_two_indices" : [ 6, 7 ]
-}, {
-  "sentence_tokens" : [ "Poor", "sleep", "can", "also", "contribute", "to", "the", "progression", "of", "neurological", "diseases", "[", "9", ",", "10", "]", "and", "accelerate", "aging", "[", "11", "]", "." ],
-  "entity_one_indices" : [ 10, 11 ],
-  "entity_two_indices" : [ 1, 2 ]
-}, {
-  "sentence_tokens" : [ "It", "is", "thought", "that", "a", "minimum", "period", "of", "uninterrupted", "sleep", "is", "required", "for", "sleep", "dependent", "mechanisms", "such", "as", "memory", "consolidation", "[", "19", "]", "and", "restorative", "processes", "including", "glymphatic", "cleaning", "[", "18", "]", "." ],
-  "entity_one_indices" : [ 13, 14 ],
-  "entity_two_indices" : [ 9, 10 ]
-}, {
-  "sentence_tokens" : [ "Such", "studies", "typically", "quantify", "the", "level", "of", "sleep", "disturbance", "by", "recording", "the", "time", "spent", "in", "bed", "and", "asleep", ",", "the", "number", "of", "awakenings", ",", "the", "duration", "of", "the", "awakening", ",", "and", "resulting", "daytime", "symptoms", "such", "as", "daytime", "sleepiness", "[", "25", "]", "." ],
-  "entity_one_indices" : [ 37, 38 ],
-  "entity_two_indices" : [ 7, 8 ]
-}, {
-  "sentence_tokens" : [ "However", ",", "the", "dynamics", "of", "sleep", "transitions", "or", "awakenings", "are", "rarely", "investigated", "despite", "it", "being", "likely", "that", "it", "is", "the", "disturbance", "to", "sleep", "rather", "than", "the", "amount", "of", "sleep", "that", "is", "lost", "that", "causes", "physiological", "stress", "[", "24", "]", "." ],
-  "entity_one_indices" : [ 28, 29 ],
-  "entity_two_indices" : [ 5, 6 ]
-}, {
-  "sentence_tokens" : [ "HD", "patients", "exhibit", "a", "range", "of", "sleep", "problems", ",", "including", "increased", "nocturnal", "awakenings", "[", "30", "-", "35", "]", "." ],
-  "entity_one_indices" : [ 6, 7 ],
-  "entity_two_indices" : [ 0, 1 ]
-}, {
-  "sentence_tokens" : [ "The", "sleep", "abnormalities", "associated", "with", "HD", "can", "appear", "during", "its", "presymptomatic", "and", "early", "stages", "[", "37", "]", "." ],
-  "entity_one_indices" : [ 5, 6 ],
-  "entity_two_indices" : [ 1, 2 ]
-}, {
-  "sentence_tokens" : [ "We", "have", "previously", "hypothesised", "that", "poor", "sleep", "may", "aggravate", "symptoms", "in", "HD", "patients", "[", "30", "]", "." ],
-  "entity_one_indices" : [ 11, 12 ],
-  "entity_two_indices" : [ 6, 7 ]
-}, {
-  "sentence_tokens" : [ "It", "is", "not", "clear", "to", "what", "extent", "abnormal", "sleep", "is", "part", "of", "the", "disease", "itself", ",", "or", "simply", "a", "consequence", "of", "anxiety", "and", "depression", "which", "are", "common", "in", "early-stage", "HD", "[", "42", ",", "43", "]", "." ],
-  "entity_one_indices" : [ 29, 30 ],
-  "entity_two_indices" : [ 8, 9 ]
-}, {
-  "sentence_tokens" : [ "They", "do", ",", "however", ",", "show", "abnormalities", "in", "their", "pattern", "of", "sleep", "and", "electroencephalograms", "(", "EEG", ")", "power", "distribution", "across", "the", "night", "[", "45", "]", "." ],
-  "entity_one_indices" : [ 15, 16 ],
-  "entity_two_indices" : [ 11, 12 ]
-}, {
-  "sentence_tokens" : [ "These", "data", "suggest", "that", "even", "though", "there", "are", "no", "behavioural", "signs", "of", "disease", "and", "little", "brain", "pathology", "at", "this", "age", ",", "control", "of", "the", "sleep", "and", "wake", "cycle", "in", "HD", "sheep", "is", "already", "abnormal", "." ],
-  "entity_one_indices" : [ 29, 30 ],
-  "entity_two_indices" : [ 24, 25 ]
-}, {
-  "sentence_tokens" : [ "If", "similar", "events", "are", "present", "in", "human", "HD", "sufferers", "then", "they", "may", "experience", "a", "decline", "in", "the", "rejuvenating", "processes", "of", "sleep", "even", "before", "any", "signs", "of", "the", "disease", "are", "present", "." ],
-  "entity_one_indices" : [ 20, 21 ],
-  "entity_two_indices" : [ 7, 8 ]
-}, {
-  "sentence_tokens" : [ "These", "sheep", "were", "part", "of", "a", "longitudinal", "comparative", "study", "of", "EEG", "in", "HD", "and", "normal", "sheep", "conducted", "at", "the", "Pre-clinical", "Imaging", "Research", "Laboratory", "(", "PIRL", ")", ",", "Adelaide", ",", "South", "Australia", "." ],
-  "entity_one_indices" : [ 12, 13 ],
-  "entity_two_indices" : [ 10, 11 ]
-}, {
-  "sentence_tokens" : [ "Pens", "were", "located", "in", "two", "rooms", "containing", "six", "(", "3", "HD", ",", "3", "normal", ")", "or", "four", "(", "2", "HD", ",", "2", "normal", ")", "pens", "each", "." ],
-  "entity_one_indices" : [ 19, 20 ],
-  "entity_two_indices" : [ 10, 11 ]
-}, {
-  "sentence_tokens" : [ "We", "developed", "a", "novel", ",", "automated", "method", "to", "detect", "transitions", "in-and-out", "of", "sleep", "from", "the", "EEG", "." ],
-  "entity_one_indices" : [ 15, 16 ],
-  "entity_two_indices" : [ 12, 13 ]
-}, {
-  "sentence_tokens" : [ "Classification", "of", "sleep", "state", "was", "based", "on", "state", "space", "ratio", "2", "(", "SSR2", ",", "Fig", "1A", ")", "using", "a", "modification", "of", "the", "state", "space", "analysis", "method", "[", "48", "]", "that", "we", "adapted", "previously", "for", "use", "with", "sheep", "[", "49", "]", "." ],
-  "entity_one_indices" : [ 12, 13 ],
-  "entity_two_indices" : [ 2, 3 ]
-}, {
-  "sentence_tokens" : [ "Using", "the", "manually", "scored", "data", ",", "any", "transitions", "that", "contained", "epochs", "scored", "as", "rapid", "eye", "movement", "(", "REM", ")", "sleep", "were", "removed", "from", "the", "analysis", "." ],
-  "entity_one_indices" : [ 19, 20 ],
-  "entity_two_indices" : [ 17, 18 ]
-}, {
-  "sentence_tokens" : [ "Two", "sample", "t-tests", "were", "used", "to", "test", "for", "differences", "between", "genotypes", "(", "N", "=", "5", ";", "HD", ",", "N", "=", "5", ";", "normal", ")", "in", "general", "measures", "of", "sleep", "fragmentation", "." ],
-  "entity_one_indices" : [ 28, 29 ],
-  "entity_two_indices" : [ 16, 17 ]
-}, {
-  "sentence_tokens" : [ "Pre-", "and", "post-transition", "power", "data", "were", "also", "analysed", "using", "linear", "mixed", "models", ",", "with", "sheep", "ID", "included", "as", "a", "random", "variable", "." ],
-  "entity_one_indices" : [ 15, 16 ],
-  "entity_two_indices" : [ 0, 1 ]
-}, {
-  "sentence_tokens" : [ "General", "features", "of", "the", "sleep", "wake", "cycle", "are", "not", "abnormal", "in", "HD", "sheep", "." ],
-  "entity_one_indices" : [ 11, 12 ],
-  "entity_two_indices" : [ 4, 5 ]
-}, {
-  "sentence_tokens" : [ "First", ",", "while", "the", "peak", "moving", "variance", "across", "all", "frequencies", "was", "similar", "in", "normal", "(", "Fig", "3E", ")", "and", "HD", "(", "Fig", "3G", ")", "sheep", "for", "wake-to-sleep", "transitions", ",", "it", "was", "higher", "during", "the", "transition", "from", "sleep-to-wake", "in", "HD", "(", "Fig", "3H", ")", "than", "in", "normal", "sheep", "(", "Fig", "3F", ")", "." ],
-  "entity_one_indices" : [ 38, 39 ],
-  "entity_two_indices" : [ 19, 20 ]
-}, {
-  "sentence_tokens" : [ "Second", ",", "duration", "of", "sleep-to-wake", "transitions", "were", "shorter", "(", "approximately", "half", "as", "long", ")", "in", "HD", "sheep", "in", "the", "delta", ",", "theta", ",", "and", "gamma", "frequency", "ranges", "(", "Table", "2", ")", "." ],
-  "entity_one_indices" : [ 19, 20 ],
-  "entity_two_indices" : [ 15, 16 ]
-}, {
-  "sentence_tokens" : [ "Third", ",", "the", "gradients", "of", "the", "sleep-to-wake", "transitions", "were", "steeper", "in", "HD", "than", "in", "normal", "sheep", "in", "the", "delta", ",", "theta", ",", "and", "alpha", "ranges", "(", "Table", "2", ")", "." ],
-  "entity_one_indices" : [ 18, 19 ],
-  "entity_two_indices" : [ 11, 12 ]
-}, {
-  "sentence_tokens" : [ "Calculating", "proportions", "relative", "to", "both", "the", "average", "during", "wake", "and", "sleep", "in", "this", "way", "is", "useful", "because", "the", "balance", "of", "powers", "in", "the", "EEG", "spectra", "differs", "between", "genotypes", "in", "the", "two", "states", ",", "thus", "the", "scale", "of", "the", "transitional", "change", "of", "powers", "also", "differs", "between", "genotypes", "depending", "on", "whether", "it", "is", "considered", "as", "changes", "relative", "to", "average", "power", "in", "sleep", "or", "wake", "." ],
-  "entity_one_indices" : [ 59, 60 ],
-  "entity_two_indices" : [ 23, 24 ]
-}, {
-  "sentence_tokens" : [ "Thus", ",", "the", "scale", "of", "the", "eventual", "transition", "in", "delta", "power", "is", "smaller", "for", "normal", "sheep", "than", "it", "is", "for", "HD", "sheep", "." ],
-  "entity_one_indices" : [ 20, 21 ],
-  "entity_two_indices" : [ 9, 10 ]
-}, {
-  "sentence_tokens" : [ "In", "the", "gamma", "range", "there", "was", "no", "difference", "between", "HD", "and", "normal", "sheep", "prior", "to", "the", "transition", ",", "but", "gamma", "was", "lower", "in", "HD", "compared", "to", "normal", "sheep", "after", "waking", "(", "p", "=", "0.013", ",", "t", "=", "2.56", ";", "Fig", "4G", ")", ",", "relative", "to", "average", "NREM", "power", "." ],
-  "entity_one_indices" : [ 23, 24 ],
-  "entity_two_indices" : [ 9, 10 ]
-}, {
-  "sentence_tokens" : [ "Transition", "from", "wake-to-sleep", "dynamics", "in", "the", "context", "of", "average", "sleep", "and", "wake", "power", "are", "similar", "in", "HD", "and", "normal", "sheep", "." ],
-  "entity_one_indices" : [ 16, 17 ],
-  "entity_two_indices" : [ 9, 10 ]
-}, {
-  "sentence_tokens" : [ "Furthermore", ",", "these", "awakenings", "amount", "to", "a", "more", "extreme", "change", "in", "EEG", "powers", "in", "HD", "than", "in", "normal", "sheep", "." ],
-  "entity_one_indices" : [ 14, 15 ],
-  "entity_two_indices" : [ 11, 12 ]
-}, {
-  "sentence_tokens" : [ "Several", "studies", "have", "reported", "loss", "of", "orexinergic", "neurons", "in", "post", "mortem", "brains", "of", "HD", "patients", "[", "55", "-", "57", "]", "and", "HD", "mice", "[", "58", "]", "." ],
-  "entity_one_indices" : [ 21, 22, 23 ],
-  "entity_two_indices" : [ 13, 14 ]
-}, {
-  "sentence_tokens" : [ "While", "at", "face", "value", "this", "suggests", "that", "the", "control", "of", "the", "arousal", "system", "may", "be", "affected", "first", "in", "HD", ",", "it", "is", "important", "to", "remember", "that", "wake", "and", "sleep", "are", "generated", "by", "different", "pathways", "which", ",", "although", "interconnected", ",", "are", "modulated", "by", "different", "factors", "[", "52", "]", "." ],
-  "entity_one_indices" : [ 28, 29 ],
-  "entity_two_indices" : [ 18, 19 ]
-}, {
-  "sentence_tokens" : [ "Furthermore", ",", "HD", "is", "a", "multifactorial", "disease", "with", "known", "impairments", "in", "multiple", "neurotransmitter", "systems", "[", "58", ",", "64", ",", "65", "]", "." ],
-  "entity_one_indices" : [ 12, 13 ],
-  "entity_two_indices" : [ 2, 3 ]
-}, {
-  "sentence_tokens" : [ "Examples", "of", "such", "processes", "include", "sleep", "spindle", "associated", "memory", "consolidation", ",", "which", "is", "a", "vital", "component", "in", "the", "memory", "creating", "process", "that", "occurs", "during", "NREM", "sleep", "[", "69", "]", "and", "reduces", "in", "activity", "prior", "to", "waking", "[", "70", "]", "." ],
-  "entity_one_indices" : [ 25, 26 ],
-  "entity_two_indices" : [ 5, 6 ]
-}, {
-  "sentence_tokens" : [ "There", "is", "little", "doubt", "that", "improving", "sleep", "would", "have", "a", "beneficial", "knock-on", "effect", "on", "cognitive", "function", "in", "HD", "patients", "." ],
-  "entity_one_indices" : [ 17, 18 ],
-  "entity_two_indices" : [ 6, 7 ]
-}, {
-  "sentence_tokens" : [ "In", "this", "study", "we", "have", "identified", "a", "very", "early", "sleep", "abnormality", "in", "HD", "sheep", "using", "a", "novel", "automated", "method", "." ],
-  "entity_one_indices" : [ 12, 13 ],
-  "entity_two_indices" : [ 9, 10 ]
-}, {
-  "sentence_tokens" : [ "This", "technique", "can", "be", "applied", "easily", "to", "EEG", "recorded", "from", "HD", "patients", "and", "we", "were", "able", "to", "obtain", "results", "from", "only", "a", "single", "night", "of", "recording", "." ],
-  "entity_one_indices" : [ 10, 11 ],
-  "entity_two_indices" : [ 7, 8 ]
-}, {
-  "sentence_tokens" : [ "If", "established", ",", "such", "a", "biomarker", "may", "be", "a", "relatively", "undemanding", "method", "for", "tracking", "the", "progression", "of", "HD", "." ],
-  "entity_one_indices" : [ 17, 18 ],
-  "entity_two_indices" : [ 5, 6 ]
-} ]
+{
+  "regulations" : [ {
+    "sentence_tokens" : [ "In", "light", "of", "emerging", "evidence", "from", "the", "Alzheimer", "'", "s", "disease", "field", "that", "sleep", "is", "essential", "for", "clearing", "metabolites", "that", "may", "be", "neurotoxic", ",", "such", "as", "beta", "amyloid", "[", "38", "]", ",", "it", "is", "possible", "that", "inadequate", "sleep", "will", "also", "accelerate", "disease", "progression", "in", "HD", "." ],
+    "event_indices" : [ 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 32, 33 ],
+    "controlled_indices" : [ 41, 42, 43 ],
+    "trigger_indices" : [ 40, 41 ],
+    "rule_name" : "Positive_activation_syntax_1_verb, pronominalMatch",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "HD", "is", "a", "progressive", ",", "dominantly", "inherited", "neurodegenerative", "disease", "caused", "by", "an", "unstable", "CAG", "repeat", "mutation", "in", "the", "HD", "gene", "[", "36", "]", "." ],
+    "event_indices" : [ 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 18, 19 ],
+    "controlled_indices" : [ 7, 8, 9 ],
+    "trigger_indices" : [ 9, 10 ],
+    "rule_name" : "Positive_activation_syntax_2_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "The", "only", "significant", "difference", "between", "genotypes", "in", "the", "dynamics", "of", "EEG", "power", "was", "in", "the", "alpha", "range", "where", "it", "increased", "more", "in", "HD", "than", "it", "did", "in", "normal", "sheep", "after", "falling", "asleep", "(", "relative", "to", "average", "wake", "power", ";", "p", "=", "0.012", ",", "t", "=", "-2.57", ";", "Fig", "5D", ")", "." ],
+    "event_indices" : [ 18, 19, 20, 21, 22, 23 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 18, 19 ],
+    "controlled_indices" : [ 22, 23 ],
+    "trigger_indices" : [ 19, 20 ],
+    "rule_name" : "Positive_activation_syntax_7_verb, pronominalMatch",
+    "rule" : null
+  } ],
+  "hardInstances" : [ {
+    "sentence_tokens" : [ "In", "light", "of", "emerging", "evidence", "from", "the", "Alzheimer", "'", "s", "disease", "field", "that", "sleep", "is", "essential", "for", "clearing", "metabolites", "that", "may", "be", "neurotoxic", ",", "such", "as", "beta", "amyloid", "[", "38", "]", ",", "it", "is", "possible", "that", "inadequate", "sleep", "will", "also", "accelerate", "disease", "progression", "in", "HD", "." ],
+    "entities_indices" : [ [ 13, 14 ], [ 37, 38 ], [ 44, 45 ] ]
+  }, {
+    "sentence_tokens" : [ "HD", "is", "a", "progressive", ",", "dominantly", "inherited", "neurodegenerative", "disease", "caused", "by", "an", "unstable", "CAG", "repeat", "mutation", "in", "the", "HD", "gene", "[", "36", "]", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "only", "significant", "difference", "between", "genotypes", "in", "the", "dynamics", "of", "EEG", "power", "was", "in", "the", "alpha", "range", "where", "it", "increased", "more", "in", "HD", "than", "it", "did", "in", "normal", "sheep", "after", "falling", "asleep", "(", "relative", "to", "average", "wake", "power", ";", "p", "=", "0.012", ",", "t", "=", "-2.57", ";", "Fig", "5D", ")", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  } ],
+  "withoutRegulations" : [ {
+    "sentence_tokens" : [ "EEG", "was", "recorded", "using", "a", "wireless", "telemetry", "system", "(", "Advanced", "W2100-System", ",", "Multichannel", "Systems", "Gmbh", ",", "Germany", ")", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "Nevertheless", ",", "given", "that", "in", "symptomatic", "HD", "patients", "and", "animal", "models", "of", "HD", ",", "sleep", "becomes", "fragmented", "as", "the", "disease", "progresses", "[", "30", ",", "31", ",", "50", "]", "and", "that", "the", "sheep", "we", "used", "were", "at", "a", "very", "early", "stage", "of", "disease", ",", "we", "suggest", "that", "the", "sudden", "awakenings", "we", "see", "in", "the", "HD", "sheep", "are", "among", "the", "first", "of", "the", "sleep", "disorders", "that", "occur", "in", "this", "HD", "model.Our", "study", "raises", "new", "questions", "about", "both", "the", "process", "underlying", "normal", "awakenings", "and", "the", "mechanism", "underlying", "early", "changes", "in", "awakening", "in", "HD", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 12, 13 ], [ 14, 15 ], [ 53, 54 ], [ 61, 62 ], [ 67, 68 ], [ 89, 90 ] ]
+  }, {
+    "sentence_tokens" : [ "Differences", "in", "wake", "and", "sleep", "transition", "times", "between", "HD", "and", "normal", "sheep", "across", "all", "channels", "were", "analysed", "using", "generalised", "linear", "mixed", "models", "with", "Gamma", "distributions", "." ],
+    "entities_indices" : [ [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "Abnormally", "abrupt", "transitions", "from", "sleep-to-wake", "in", "Huntington", "'s", "disease", "sheep", "(", "Ovis", "aries", ")", "are", "revealed", "by", "automated", "analysis", "of", "sleep", "and", "wake", "transition", "dynamics", "." ],
+    "entities_indices" : [ [ 6, 7, 8, 9 ], [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "Third", ",", "the", "gradients", "of", "the", "sleep-to-wake", "transitions", "were", "steeper", "in", "HD", "than", "in", "normal", "sheep", "in", "the", "delta", ",", "theta", ",", "and", "alpha", "ranges", "(", "Table", "2", ")", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "Rather", "than", "the", "gradual", "changes", "in", "EEG", "power", "that", "occurs", "during", "transitioning", "from", "sleep-to-wake", "in", "normal", "sheep", ",", "transition", "into", "wake", "was", "abrupt", "in", "HD", "sheep", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "Calculating", "proportions", "relative", "to", "both", "the", "average", "during", "wake", "and", "sleep", "in", "this", "way", "is", "useful", "because", "the", "balance", "of", "powers", "in", "the", "EEG", "spectra", "differs", "between", "genotypes", "in", "the", "two", "states", ",", "thus", "the", "scale", "of", "the", "transitional", "change", "of", "powers", "also", "differs", "between", "genotypes", "depending", "on", "whether", "it", "is", "considered", "as", "changes", "relative", "to", "average", "power", "in", "sleep", "or", "wake", "." ],
+    "entities_indices" : [ [ 23, 24 ], [ 59, 60 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "number", "of", "animals", "selected", "was", "determined", "as", "the", "optimal", "number", "that", "could", "be", "effectively", "managed", "at", "the", "facility", "under", "PC2", "conditions", "whilst", "providing", "a", "balanced", "sample", "of", "transgenic", "and", "normal", "genotype", "subjects", "." ],
+    "entities_indices" : [ [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "Alternatively", ",", "given", "that", "both", "neuronal", "function", "and", "connectivity", "are", "impaired", "in", "HD", "[", "66", ",", "67", "]", "it", "is", "possible", "that", "the", "ability", "of", "the", "cortical", "neurons", "to", "produce", "and", "propagate", "slow", "waves", "[", "68", "]", "is", "altered", "in", "HD", ",", "making", "it", "easier", "for", "them", "to", "quickly", "transition", "from", "the", "hyperpolarised", "sleep", "like", "state", "(", "cortical", "OFF", "state", ")", "to", "a", "depolarised", "wake", "like", "state", "(", "cortical", "ON", "state", ")", "." ],
+    "entities_indices" : [ [ 12, 13 ], [ 40, 41 ], [ 53, 54 ] ]
+  }, {
+    "sentence_tokens" : [ "By", "contrast", ",", "there", "were", "no", "genotypic", "differences", "in", "the", "speed", "and", "severity", "of", "transitions", "into", "sleep", "." ],
+    "entities_indices" : [ [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "further", "study", "of", "the", "temporal", "and", "spectral", "dynamics", "of", "sleep", "and", "wake", "transitions", "in", "models", "of", "sleep", "disturbance", "is", "warranted.A", "number", "of", "neurodegenerative", "diseases", "including", "Huntington", "'", "s", "(", "HD", ")", "[", "26", "]", ",", "Parkinson", "'", "s", "[", "27", "]", ",", "and", "Alzheimer", "'", "s", "disease", "[", "28", "]", "are", "associated", "with", "progressively", "disturbed", "sleep", "[", "29", "]", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 18, 19 ], [ 24, 25, 26 ], [ 27, 28, 29, 30 ], [ 31, 32 ], [ 57, 58 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "analysed", "EEG", "recorded", "for", "10", "hours", "during", "a", "single", "undisturbed", "night", "from", "these", "sheep", "." ],
+    "entities_indices" : [ [ 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "HD", "patients", "exhibit", "a", "range", "of", "sleep", "problems", ",", "including", "increased", "nocturnal", "awakenings", "[", "30", "-", "35", "]", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "Note", "that", "the", "sleep", "recordings", "analysed", "in", "this", "study", "were", "made", "before", "the", "sheep", "were", "treated", "with", "any", "psychoactive", "drugs", "." ],
+    "entities_indices" : [ [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "Poor", "sleep", "can", "also", "contribute", "to", "the", "progression", "of", "neurological", "diseases", "[", "9", ",", "10", "]", "and", "accelerate", "aging", "[", "11", "]", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "Thus", ",", "the", "scale", "of", "the", "eventual", "transition", "in", "delta", "power", "is", "smaller", "for", "normal", "sheep", "than", "it", "is", "for", "HD", "sheep", "." ],
+    "entities_indices" : [ [ 9, 10 ], [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "Slow", "wave", "activity", "(", "delta", "power", ")", "is", "also", "considered", "key", "to", "much", "of", "the", "restorative", "function", "in", "sleep", "[", "71", "]", ",", "including", "memory", "consolidation", "[", "72", ",", "73", "]", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 4, 5 ], [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "studies", "where", "sleep", "fragmentation", "is", "induced", "experimentally", ",", "typically", "using", "sounds", "[", "20", ",", "21", "]", "or", "physical", "disturbance", "[", "22", "]", ",", "the", "sleeper", "is", "awaked", "into", "a", "sudden", "hyper-aroused", "state", "." ],
+    "entities_indices" : [ [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "example", ",", "if", "NREM", "sleep", "promoting", "pathways", "(", "such", "as", "the", "melanin", "concentrating", "hormone", ")", "that", "inhibit", "wake", "promoting", "pathways", "are", "impaired", "early", "in", "HD", ",", "then", "this", "may", "result", "in", "abnormal", "transition", "dynamics", "without", "a", "change", "in", "the", "length", "of", "the", "sleep", "episode", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 12, 13, 14, 15 ], [ 25, 26 ], [ 43, 44 ] ]
+  }, {
+    "sentence_tokens" : [ "Following", "surgery", ",", "the", "sheep", "were", "held", "in", "individual", "pens", "in", "a", "covered", "outdoor", "arena", "where", "they", "were", "exposed", "to", "natural", "daylight", "conditions", "." ],
+    "entities_indices" : [ [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "Automated", "sleep", "and", "wake", "transition", "classification", "." ],
+    "entities_indices" : [ [ 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "study", "we", "have", "identified", "a", "very", "early", "sleep", "abnormality", "in", "HD", "sheep", "using", "a", "novel", "automated", "method", "." ],
+    "entities_indices" : [ [ 9, 10 ], [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "Treatments", "targeting", "the", "histaminergic", "system", "(", "using", "antagonists", "on", "the", "histamine", "3", "[", "H3", "]", "receptor", ")", "have", "been", "suggested", "specifically", "for", "treating", "early", "stage", "HD", "[", "63", "]", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 13, 14 ], [ 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "used", "a", "novel", "automated", "analysis", "of", "quantitative", "EEG", "to", "examine", "the", "dynamics", "of", "sleep", "and", "wake", "transitions", "in", "normal", "and", "HD", "sheep", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 14, 15 ], [ 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "found", "that", "transitions", "from", "sleep-to-wake", "in", "HD", "sheep", "are", "faster", "than", "those", "of", "normal", "sheep", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "contrast", "to", "this", ",", "there", "were", "no", "differences", "between", "HD", "and", "normal", "sheep", "in", "any", "of", "these", "measures", "of", "speed", "for", "the", "wake-to-sleep", "transitions", "(", "Table", "3", ")", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "Sleep", "disturbance", "is", "a", "common", "and", "disruptive", "symptom", "of", "neurodegenerative", "diseases", "such", "as", "Alzheimer", "'s", "and", "Huntington", "'s", "disease", "(", "HD", ")", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 9, 10, 11 ], [ 16, 17, 18, 19 ], [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "Furthermore", ",", "transitions", "to", "wake", "in", "normal", "sheep", "were", "preceded", "by", "a", "significant", "reduction", "in", "slow", "wave", "power", ",", "whereas", "in", "HD", "sheep", "this", "prior", "reduction", "in", "slow", "wave", "power", "was", "far", "less", "pronounced", "." ],
+    "entities_indices" : [ [ 16, 17 ], [ 21, 22 ], [ 28, 29 ] ]
+  }, {
+    "sentence_tokens" : [ "Spectral", "analysis", "shows", "sleep-to-wake", "dynamics", "differ", "between", "HD", "and", "normal", "sheep", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "Only", "transitions", "between", "NREM", "sleep", "and", "wake", "were", "analysed", "." ],
+    "entities_indices" : [ [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "Single", "animals", "were", "considered", "as", "the", "experimental", "unit", ",", "though", "data", "from", "all", "eight", "channels", "for", "each", "sheep", "were", "included", "in", "the", "analyses", ",", "thus", "sheep", "ID", "was", "included", "as", "a", "random", "variable", "." ],
+    "entities_indices" : [ [ 26, 27 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "have", "previously", "hypothesised", "that", "poor", "sleep", "may", "aggravate", "symptoms", "in", "HD", "patients", "[", "30", "]", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "then", "used", "an", "automated", "algorithm", "developed", "in-house", "to", "quantify", "dynamics", "of", "transitions", "between", "sleep", "and", "wake", "." ],
+    "entities_indices" : [ [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "Although", "this", "is", "speculation", "on", "our", "part", "it", "is", "supported", "by", "considerable", "evidence", "showing", "impairment", "of", "memory", "in", "patients", "with", "disorders", "that", "cause", "sudden", "awakenings", ",", "such", "as", "sleep", "apnoea", "[", "75", "]", ",", "insomnia", "[", "76", "]", "and", "Alzheimer", "'", "s", "disease", "[", "77", ",", "78", "]", "." ],
+    "entities_indices" : [ [ 28, 29 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "technique", "can", "be", "applied", "easily", "to", "EEG", "recorded", "from", "HD", "patients", "and", "we", "were", "able", "to", "obtain", "results", "from", "only", "a", "single", "night", "of", "recording", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "better", "understanding", "of", "sleep", "abnormalities", "in", "HD", "is", "clearly", "desirable.Here", "we", "investigated", "the", "dynamics", "of", "spontaneous", "transitions", "between", "(", "non", "rapid", "eye", "movement", ")", "NREM", "sleep", "and", "wake", "in", "normal", "and", "HD", "transgenic", "sheep", "(", "OVT-73", ")", "[", "44", "]", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 7, 8 ], [ 26, 27 ], [ 32, 33 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "eight", "EEG", "electrodes", "were", "positioned", "bilaterally", "at", "locations", "corresponding", "to", "the", "postcruciate", "gyrus", ",", "the", "ansatus", "sulcus", ",", "the", "front", "third", "of", "the", "ectolateral", "sulcus", ",", "and", "the", "lateral", "sulcus", "near", "the", "anterior", "part", "of", "the", "entolateral", "sulcus", "." ],
+    "entities_indices" : [ [ 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "Examples", "of", "such", "processes", "include", "sleep", "spindle", "associated", "memory", "consolidation", ",", "which", "is", "a", "vital", "component", "in", "the", "memory", "creating", "process", "that", "occurs", "during", "NREM", "sleep", "[", "69", "]", "and", "reduces", "in", "activity", "prior", "to", "waking", "[", "70", "]", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "propose", "that", "not", "only", "could", "these", "abnormal", "dynamics", "of", "sleep", "transitions", "be", "useful", "as", "an", "early", "biomarker", "of", "HD", ",", "but", "also", "that", "our", "novel", "methodology", "would", "be", "useful", "for", "studying", "transition", "dynamics", "in", "other", "sleep", "disorders", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 17, 18 ], [ 19, 20 ], [ 36, 37 ] ]
+  }, {
+    "sentence_tokens" : [ "Our", "study", "was", "approved", "by", "the", "SAHMRI", "Animal", "Ethics", "Committee", "and", "animal", "handling", "followed", "the", "physical", "containment", "conditions", "(", "PC2", ")", "set", "by", "the", "Institutional", "Biosafety", "Committee", "and", "the", "Office", "of", "the", "Gene", "Technology", "Regulator", "(", "OGTR", ",", "Australia", ")", "." ],
+    "entities_indices" : [ [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "Smooth", "transitions", "between", "sleep", "and", "wakefulness", "is", "regulated", "by", "a", "balanced", "interaction", "of", "excitatory", "and", "inhibitory", "networks", "of", "subcortical", "and", "cortical", "brain", "structures", "[", "51", ",", "52", "]", "." ],
+    "entities_indices" : [ [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "State", "space", "analysis", "of", "the", "automatically", "classified", "wake", "and", "NREM", "sleep", "vigilance", "stages", "also", "showed", "no", "differences", "in", "the", "mean", "spectral", "ratios", "of", "vigilance", "stages", "between", "HD", "and", "normal", "sheep", "(", "Fig", "2", ")", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 10, 11 ], [ 26, 27 ] ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "the", "level", "of", "delta", "power", "prior", "to", "waking", "was", "lower", "in", "normal", "than", "in", "HD", "sheep", "(", "p", "=", "0.016", ",", "t", "=", "-3.03", ";", "Fig", "4A", ")", ";", "in", "normal", "sheep", ",", "prior", "to", "waking", ",", "delta", "power", "was", "~", "50", "%", "lower", "than", "its", "average", "level", "during", "sleep", ",", "while", "in", "HD", "sheep", "the", "reduction", "in", "power", "before", "waking", "was", "much", "smaller", "(", "~", "25", "%", "less", ";", "Fig", "4A", ")", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 16, 17 ], [ 39, 40 ], [ 47, 48 ], [ 51, 52 ], [ 55, 56 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "data", "and", "MATLAB", "code", "used", "in", "this", "article", "are", "available", "online", "(", "https://doi.org/10.5061/dryad.q2bvq83jh", ")", "." ],
+    "entities_indices" : [ [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "Disturbed", "sleep", "can", "cause", "cognitive", "dysfunction", "and", "mood", "disturbance", "and", "exacerbate", "existing", "psychiatric", "problems", "such", "as", "depression", "and", "anxiety", "[", "6", "-", "8]", "." ],
+    "entities_indices" : [ [ 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "particular", ",", "sleep-to-wake", "transitions", "were", "both", "faster", "and", "of", "greater", "magnitude", "in", "HD", "than", "they", "were", "in", "normal", "sheep", "." ],
+    "entities_indices" : [ [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "Furthermore", ",", "these", "awakenings", "amount", "to", "a", "more", "extreme", "change", "in", "EEG", "powers", "in", "HD", "than", "in", "normal", "sheep", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "Transition", "from", "wake-to-sleep", "dynamics", "in", "the", "context", "of", "average", "sleep", "and", "wake", "power", "are", "similar", "in", "HD", "and", "normal", "sheep", "." ],
+    "entities_indices" : [ [ 9, 10 ], [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "Pre-", "and", "post-transition", "power", "data", "were", "also", "analysed", "using", "linear", "mixed", "models", ",", "with", "sheep", "ID", "included", "as", "a", "random", "variable", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "HD", "patients", ",", "sleep", "fragmentation", "appears", "at", "an", "early", "stage", "of", "disease", ",", "although", "features", "of", "the", "earliest", "sleep", "abnormalities", "in", "presymptomatic", "HD", "are", "not", "fully", "established", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 19, 20 ], [ 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "If", "established", ",", "such", "a", "biomarker", "may", "be", "a", "relatively", "undemanding", "method", "for", "tracking", "the", "progression", "of", "HD", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "Nevertheless", ",", "given", "that", "these", "mental", "health", "problems", "are", "associated", "with", "poor", "sleep", ",", "there", "is", "also", "potential", "for", "them", "to", "feedback", "and", "exacerbate", "problems", "with", "sleep", "in", "HD", "patients", "." ],
+    "entities_indices" : [ [ 12, 13 ], [ 26, 27 ], [ 28, 29 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "HD", "sheep", "were", "at", "an", "early", "and", "presymptomatic", "stage", ",", "showing", "no", "signs", "of", "disease", "." ],
+    "entities_indices" : [ [ 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "Given", "that", "the", "abnormalities", "we", "found", "were", "present", "in", "presymptomatic", "HD", "sheep", ",", "there", "may", "be", "potential", "in", "investigating", "therapies", "such", "as", "H3", "antagonists", "that", "might", "target", "sleep", "and", "wake", "abnormalities", "in", "this", "model", "of", "HD.It", "is", "notable", "that", "whereas", "sleep-to-wake", "transitions", "are", "abnormal", ",", "there", "was", "little", "effect", "on", "wake-to-sleep", "transitions", "in", "the", "HD", "sheep", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 22, 23 ], [ 27, 28 ], [ 35, 36 ], [ 54, 55 ] ]
+  }, {
+    "sentence_tokens" : [ "Our", "automated", "method", "for", "investigating", "the", "dynamics", "of", "sleep", "transitions", "provides", "a", "new", "tool", "for", "quantifying", "a", "previously", "unappreciated", "component", "of", "sleep", "that", "has", "potential", "as", "an", "early", "biomarker", "in", "HD", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 21, 22 ], [ 28, 29 ], [ 30, 31 ] ]
+  }, {
+    "sentence_tokens" : [ "Memory", "consolidation", "in", "HD", "sheep", "has", "not", "been", "studied", "to", "date", "but", "would", "be", "a", "worthwhile", "future", "study.Cognitive", "function", "is", "impaired", "in", "HD", "patients", "and", "correlated", "with", "changes", "in", "sleep", "[", "33", "]", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 22, 23 ], [ 29, 30 ] ]
+  }, {
+    "sentence_tokens" : [ "Briefly", ",", "implants", "consisted", "of", "eight", "subdural", "recording", "electrodes", "and", "one", "subdural", "reference", "electrode", "to", "record", "EEG", "." ],
+    "entities_indices" : [ [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "Whilst", "such", "arousals", "may", "not", "be", "noticed", "by", "normal", "sleepers", ",", "self", "reporting", "of", "awakenings", "is", "high", "in", "insomniacs", "and", "people", "with", "other", "health", "problems", ",", "such", "as", "sleep", "apnoea", "[", "16", "]", "." ],
+    "entities_indices" : [ [ 28, 29 ] ]
+  }, {
+    "sentence_tokens" : [ "While", "at", "face", "value", "this", "suggests", "that", "the", "control", "of", "the", "arousal", "system", "may", "be", "affected", "first", "in", "HD", ",", "it", "is", "important", "to", "remember", "that", "wake", "and", "sleep", "are", "generated", "by", "different", "pathways", "which", ",", "although", "interconnected", ",", "are", "modulated", "by", "different", "factors", "[", "52", "]", "." ],
+    "entities_indices" : [ [ 18, 19 ], [ 28, 29 ] ]
+  }, {
+    "sentence_tokens" : [ "Such", "studies", "typically", "quantify", "the", "level", "of", "sleep", "disturbance", "by", "recording", "the", "time", "spent", "in", "bed", "and", "asleep", ",", "the", "number", "of", "awakenings", ",", "the", "duration", "of", "the", "awakening", ",", "and", "resulting", "daytime", "symptoms", "such", "as", "daytime", "sleepiness", "[", "25", "]", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 37, 38 ] ]
+  }, {
+    "sentence_tokens" : [ "If", "similar", "events", "are", "present", "in", "human", "HD", "sufferers", "then", "they", "may", "experience", "a", "decline", "in", "the", "rejuvenating", "processes", "of", "sleep", "even", "before", "any", "signs", "of", "the", "disease", "are", "present", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "sheep", "were", "provided", "with", "food", "and", "water", "twice", "daily", ",", "at", "the", "start", "and", "end", "of", "the", "working", "day", "." ],
+    "entities_indices" : [ [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "During", "transitions-to-wake", ",", "there", "were", "associated", "changes", "to", "dynamics", "of", "EEG", "power", "spectra", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "sleep", "abnormalities", "associated", "with", "HD", "can", "appear", "during", "its", "presymptomatic", "and", "early", "stages", "[", "37", "]", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "EEG", "data", "were", "re-referenced", "using", "a", "global", "reference", "prior", "to", "importing", "into", "MATLAB", "for", "sleep", "transition", "analyses", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 12, 13 ], [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "Not", "only", "does", "it", "facilitate", "metabolic", "rest", "[", "1", "]", "and", "support", "memory", "consolidation", "[", "2", ",", "3", "]", ",", "but", "also", "there", "is", "growing", "evidence", "that", "essential", "restorative", "and", "cleansing", "processes", "take", "place", "during", "sleep", "[", "4", ",", "5", "]", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 35, 36 ] ]
+  }, {
+    "sentence_tokens" : [ "Several", "studies", "have", "reported", "loss", "of", "orexinergic", "neurons", "in", "post", "mortem", "brains", "of", "HD", "patients", "[", "55", "-", "57", "]", "and", "HD", "mice", "[", "58", "]", "." ],
+    "entities_indices" : [ [ 13, 14 ], [ 21, 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "Five", "were", "transgenic", "and", "carried", "a", "full-length", "copy", "of", "the", "human", "HD", "gene", "with", "a", "CAG", "repeat", "of", "73", "[", "44", "]", ",", "and", "the", "other", "(", "controls", ")", "5", "were", "age", "matched", "flock-mates", "." ],
+    "entities_indices" : [ [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "Using", "the", "manually", "scored", "data", ",", "any", "transitions", "that", "contained", "epochs", "scored", "as", "rapid", "eye", "movement", "(", "REM", ")", "sleep", "were", "removed", "from", "the", "analysis", "." ],
+    "entities_indices" : [ [ 17, 18 ], [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "Thus", ",", "the", "lack", "of", "a", "reduction", "in", "slow", "wave", "power", "prior", "to", "awakening", ",", "as", "we", "have", "observed", "in", "HD", "sheep", ",", "may", "indicate", "that", "these", "important", "functions", "are", "not", "progressing", "as", "normal", "during", "sleep", "." ],
+    "entities_indices" : [ [ 9, 10 ], [ 20, 21 ], [ 35, 36 ] ]
+  }, {
+    "sentence_tokens" : [ "First", ",", "while", "the", "peak", "moving", "variance", "across", "all", "frequencies", "was", "similar", "in", "normal", "(", "Fig", "3E", ")", "and", "HD", "(", "Fig", "3G", ")", "sheep", "for", "wake-to-sleep", "transitions", ",", "it", "was", "higher", "during", "the", "transition", "from", "sleep-to-wake", "in", "HD", "(", "Fig", "3H", ")", "than", "in", "normal", "sheep", "(", "Fig", "3F", ")", "." ],
+    "entities_indices" : [ [ 19, 20 ], [ 38, 39 ] ]
+  }, {
+    "sentence_tokens" : [ "Lights", "were", "left", "on", "during", "the", "night", "allowing", "sleep", "scoring", "to", "be", "validated", "against", "video", "footage", "." ],
+    "entities_indices" : [ [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "suggests", "an", "impaired", "ability", "to", "prepare", "for", "waking", "in", "HD", "sheep", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "found", "no", "difference", "between", "HD", "and", "normal", "sheep", "in", "general", "measures", "of", "sleep", ",", "including", "the", "length", "of", "NREM", "sleep", "periods", "and", "the", "number", "of", "awakenings", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 13, 14 ], [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "Transition", "gradient", "and", "variance", "differences", "were", "analysed", "using", "linear", "models", ",", "again", "with", "sheep", "ID", "included", "as", "a", "random", "variable", "and", "data", "were", "normalised", "for", "the", "linear", "models", "using", "sqrt", "(", ")", "transform", "." ],
+    "entities_indices" : [ [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "Even", "prior", "to", "this", "decline", ",", "slow", "wave", "power", "was", "nearly", "half", "its", "normal", "level", "during", "NREM", "sleep", ",", "making", "the", "eventual", "transition", "into", "wake", "a", "'", "gentle", "'", "event", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 12, 13 ], [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "length", "of", "bouts", "of", "wake", "or", "NREM", "sleep", "were", "calculated", "as", "the", "time", "difference", "between", "the", "start", "of", "wake", ",", "to", "the", "start", "of", "NREM", "sleep", ",", "or", "vice", "versa", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 17, 18 ], [ 23, 24 ], [ 26, 27 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "can", "speculate", "that", "in", "normal", "sleepers", ",", "there", "is", "a", "period", "of", "transition", "to", "wake", "that", "is", "required", "in", "order", "for", "sleep", "related", "processes", "to", "be", "terminated", "." ],
+    "entities_indices" : [ [ 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "There", "were", "no", "differences", "between", "HD", "and", "normal", "sheep", "in", "measures", "of", "sleep", "that", "are", "typically", "used", "to", "assess", "sleep", "fragmentation", ",", "including", "number", "of", "transitions", ",", "total", "power", ",", "and", "lengths", "of", "NREM", "sleep", "and", "wake", "bouts", "(", "Table", "1", ")", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 12, 13 ], [ 19, 20 ], [ 34, 35 ] ]
+  }, {
+    "sentence_tokens" : [ "Otherwise", ",", "transitions", "into", "sleep", "were", "very", "similar", "in", "HD", "and", "normal", "sheep", "in", "terms", "of", "spectral", "power", "dynamics", "and", "speed", "of", "transition", "(", "see", "for", "example", ",", "delta", "and", "alpha", "power", "in", "Fig", "5A", ",", "5B", "and", "5C", ";", "data", "from", "beta", "and", "theta", "bands", "are", "not", "shown", ")", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 9, 10 ], [ 28, 29 ], [ 36, 37 ] ]
+  }, {
+    "sentence_tokens" : [ "By", "contrast", ",", "transitions", "from", "wake-to-sleep", "were", "not", "abnormal", "in", "HD", "sheep", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "Here", "we", "used", "novel", "automated", "analysis", "of", "quantitative", "electroencephalography", "to", "study", "transitions", "between", "wake", "and", "non", "rapid", "eye", "movement", "sleep", "in", "a", "sheep", "model", "of", "presymptomatic", "HD", "." ],
+    "entities_indices" : [ [ 19, 20 ], [ 26, 27 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "could", "be", "especially", "useful", "if", "it", "were", "possible", "to", "perform", "the", "assessment", "using", "only", "a", "small", "number", "of", "sleep", "and", "wake", "transitions", "during", "the", "day", "." ],
+    "entities_indices" : [ [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "Behaviourally", ",", "they", "appear", "normal", "during", "both", "wake", "and", "sleep", "." ],
+    "entities_indices" : [ [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "There", "is", "little", "doubt", "that", "improving", "sleep", "would", "have", "a", "beneficial", "knock-on", "effect", "on", "cognitive", "function", "in", "HD", "patients", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "was", "true", "for", "both", "normal", "and", "HD", "sheep", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "Orexinergic", "system", "damage", "may", "therefore", "contribute", "to", "the", "abnormal", "awakenings", "that", "we", "see", "in", "HD", "sheep", "." ],
+    "entities_indices" : [ [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "EEG", "electrodes", "were", "implanted", "surgically", "1", "year", "before", "the", "recordings", "were", "made", ",", "as", "described", "previously", "[", "45", "-", "47", "]", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "Furthermore", ",", "HD", "is", "a", "multifactorial", "disease", "with", "known", "impairments", "in", "multiple", "neurotransmitter", "systems", "[", "58", ",", "64", ",", "65", "]", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "EEG", "powers", "in", "the", "50", "Hz", "frequency", "bin", "were", "omitted", "due", "to", "an", "artefact", "caused", "by", "a", "cycle", "in", "mains", "power", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "These", "sheep", "were", "part", "of", "a", "longitudinal", "comparative", "study", "of", "EEG", "in", "HD", "and", "normal", "sheep", "conducted", "at", "the", "Pre-clinical", "Imaging", "Research", "Laboratory", "(", "PIRL", ")", ",", "Adelaide", ",", "South", "Australia", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "Furthermore", ",", "multiple", "arousals", "during", "sleep", "occur", "very", "frequently", "during", "the", "night", "in", "healthy", "individuals", "[", "14", ",", "15", "]", "." ],
+    "entities_indices" : [ [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "gamma", "range", "there", "was", "no", "difference", "between", "HD", "and", "normal", "sheep", "prior", "to", "the", "transition", ",", "but", "gamma", "was", "lower", "in", "HD", "compared", "to", "normal", "sheep", "after", "waking", "(", "p", "=", "0.013", ",", "t", "=", "2.56", ";", "Fig", "4G", ")", ",", "relative", "to", "average", "NREM", "power", "." ],
+    "entities_indices" : [ [ 9, 10 ], [ 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "It", "is", "not", "clear", "to", "what", "extent", "abnormal", "sleep", "is", "part", "of", "the", "disease", "itself", ",", "or", "simply", "a", "consequence", "of", "anxiety", "and", "depression", "which", "are", "common", "in", "early-stage", "HD", "[", "42", ",", "43", "]", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 29, 30 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "functional", "relevance", "of", "the", "gentle", "awakening", "seen", "in", "normal", "sheep", "that", "is", "impaired", "in", "HD", "sheep", "is", "unknown", "." ],
+    "entities_indices" : [ [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "Sleep", "is", "essential", "to", "healthy", "brain", "function", "in", "humans", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "Of", "particular", "relevance", ",", "loss", "of", "hypothalamic", "orexinergic", "neurons", "causes", "severe", "disruption", "to", "the", "sleep", "and", "wake", "cycle", ",", "with", "low", "thresholds", "for", "transitions", ",", "as", "is", "seen", "in", "narcoleptic", "patients", "[", "53", "]", "and", "orexin", "knockout", "mice", "[", "54", "]", "." ],
+    "entities_indices" : [ [ 14, 15 ], [ 35, 36 ], [ 37, 38 ] ]
+  }, {
+    "sentence_tokens" : [ "These", "data", "suggest", "that", "even", "though", "there", "are", "no", "behavioural", "signs", "of", "disease", "and", "little", "brain", "pathology", "at", "this", "age", ",", "control", "of", "the", "sleep", "and", "wake", "cycle", "in", "HD", "sheep", "is", "already", "abnormal", "." ],
+    "entities_indices" : [ [ 24, 25 ], [ 29, 30 ] ]
+  }, {
+    "sentence_tokens" : [ "Transitions", "were", "confirmed", "post", "hoc", "by", "cross", "checking", "with", "manually", "scored", "NREM", "sleep", "and", "wake", "epochs", "(", "manually", "scored", "as", "previously", "described", "[", "49", "]", ")", "." ],
+    "entities_indices" : [ [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "There", "were", ",", "however", ",", "clear", "differences", "between", "HD", "and", "normal", "sheep", "in", "the", "dynamics", "of", "awakenings", "." ],
+    "entities_indices" : [ [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "Slow", "wave", "activity", "is", "highest", "when", "sleep", "pressure", "is", "elevated", "and", "also", "reduces", "during", "the", "progression", "of", "sleep", "[", "52", ",", "74", "]", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 6, 7 ], [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "Candidate", "sheep", "selected", "for", "electrophysiological", "recordings", "were", "transported", "to", "PIRL", "where", "implantation", "surgery", "was", "conducted", "." ],
+    "entities_indices" : [ [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "Second", ",", "duration", "of", "sleep-to-wake", "transitions", "were", "shorter", "(", "approximately", "half", "as", "long", ")", "in", "HD", "sheep", "in", "the", "delta", ",", "theta", ",", "and", "gamma", "frequency", "ranges", "(", "Table", "2", ")", "." ],
+    "entities_indices" : [ [ 15, 16 ], [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "normal", "sheep", ",", "transitions", "from", "sleep-to-wake", "showed", "a", "characteristic", "pattern", ",", "with", "a", "gradual", "decline", "in", "delta", ",", "theta", ",", "and", "alpha", "powers", "that", "started", "around", "two", "minutes", "before", "awakening", "." ],
+    "entities_indices" : [ [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "the", "dynamics", "of", "sleep", "transitions", "or", "awakenings", "are", "rarely", "investigated", "despite", "it", "being", "likely", "that", "it", "is", "the", "disturbance", "to", "sleep", "rather", "than", "the", "amount", "of", "sleep", "that", "is", "lost", "that", "causes", "physiological", "stress", "[", "24", "]", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 28, 29 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "abruptness", "of", "awakenings", "may", "also", "have", "potential", "to", "disrupt", "sleep", "dependent", "processes", "if", "they", "are", "interrupted", "in", "an", "untimely", "and", "disjointed", "manner", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "Pens", "were", "located", "in", "two", "rooms", "containing", "six", "(", "3", "HD", ",", "3", "normal", ")", "or", "four", "(", "2", "HD", ",", "2", "normal", ")", "pens", "each", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "Classification", "of", "sleep", "state", "was", "based", "on", "state", "space", "ratio", "2", "(", "SSR2", ",", "Fig", "1A", ")", "using", "a", "modification", "of", "the", "state", "space", "analysis", "method", "[", "48", "]", "that", "we", "adapted", "previously", "for", "use", "with", "sheep", "[", "49", "]", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "They", "do", ",", "however", ",", "show", "abnormalities", "in", "their", "pattern", "of", "sleep", "and", "electroencephalograms", "(", "EEG", ")", "power", "distribution", "across", "the", "night", "[", "45", "]", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "Further", "work", "is", "clearly", "needed", "to", "understand", "sudden", "awakenings", "and", "their", "consequences", "for", "HD", "patients", "." ],
+    "entities_indices" : [ [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "Furthermore", ",", "altered", "function", "of", "the", "histaminergic", "system", ",", "which", "is", "closely", "linked", "to", "the", "orexinergic", "system", "in", "regulating", "the", "sleep", "and", "wake", "cycle", "[", "59", ",", "60", "]", "may", "be", "another", "potential", "cause", "of", "abnormal", "sleep", "in", "HD", "patients", "[", "61", ",", "62", "]", "." ],
+    "entities_indices" : [ [ 20, 21 ], [ 36, 37 ], [ 38, 39 ] ]
+  }, {
+    "sentence_tokens" : [ "There", "is", "also", "growing", "awareness", "of", "the", "importance", "of", "sleep", "in", "synaptic", "homeostasis", "[", "39", ",", "40", "]", "and", "that", "sleep", "deficits", "may", "exacerbate", "the", "need", "for", "synaptic", "compensation", "caused", "by", "HD", "[", "41", "]", "." ],
+    "entities_indices" : [ [ 9, 10 ], [ 12, 13 ], [ 20, 21 ], [ 31, 32 ] ]
+  }, {
+    "sentence_tokens" : [ "Both", "sleep", "[", "45", "]", "and", "drug", "studies", "[", "46", "]", "published", "recently", "were", "part", "of", "this", "longitudinal", "study", "." ],
+    "entities_indices" : [ [ 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "It", "is", "thought", "that", "a", "minimum", "period", "of", "uninterrupted", "sleep", "is", "required", "for", "sleep", "dependent", "mechanisms", "such", "as", "memory", "consolidation", "[", "19", "]", "and", "restorative", "processes", "including", "glymphatic", "cleaning", "[", "18", "]", "." ],
+    "entities_indices" : [ [ 9, 10 ], [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "General", "features", "of", "the", "sleep", "wake", "cycle", "are", "not", "abnormal", "in", "HD", "sheep", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "found", "that", "while", "the", "number", "of", "transitions", "between", "sleep", "and", "wake", "were", "similar", "in", "normal", "and", "HD", "sheep", ",", "the", "dynamics", "of", "transitions", "from", "sleep-to-wake", "differed", "markedly", "between", "genotypes", "." ],
+    "entities_indices" : [ [ 9, 10 ], [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "did", "not", "note", "any", "overt", "differences", "in", "behaviour", "between", "HD", "and", "normal", "sheep", "[", "45", "]", ",", "suggesting", "that", "the", "rapid", "awakenings", "are", "not", "manifest", "as", "an", "overtly", "abnormal", "behaviour", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "developed", "a", "novel", ",", "automated", "method", "to", "detect", "transitions", "in-and-out", "of", "sleep", "from", "the", "EEG", "." ],
+    "entities_indices" : [ [ 12, 13 ], [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "Speed", "of", "transitions", "was", "assessed", "by", "three", "methods", "as", "follows", ":", "(", "A", ")", "By", "using", "the", "value", "of", "the", "peak", "in", "the", "moving", "variance", "(", "in", "a", "1-minute", "window", ")", "across", "all", "frequencies", "(", "normalised", "at", "each", "frequency", "by", "total", "power", "in", "each", "frequency", "bin", ")", "from", "-2", "to", "+2", "minutes", "from", "the", "transition", "centre", "(", "Fig", "2", ")", ";", "(", "B", ")", "By", "calculating", "the", "time", "difference", "from", "when", "the", "EEG", "power", "exceeded", "or", "dropped", "below", "more", "than", "the", "standard", "deviation", "around", "the", "mean", "of", "the", "power", "during", "the", "5", "minutes", "prior", "to", "the", "transition", ",", "to", "when", "EEG", "power", "returned", "to", "within", "the", "standard", "deviation", "of", "the", "power", "in", "the", "5", "minutes", "after", "the", "transition", "and", "(", "C", ")", "By", "calculating", "gradient", "in", "power", "change", "using", "a", "straight", "line", "from", "the", "start", "and", "end", "points", "of", "the", "transition", "as", "found", "in", "method", "B.", "Where", "analyses", "were", "conducted", "with", "the", "spectrum", "separated", "into", "frequency", "bands", ",", "the", "ranges", "we", "used", "were", "as", "follows", ":", "delta", "=", "0.5", "-", "4", "Hz", ";", "theta", "=", "4", "-", "9", "Hz", ";", "alpha", "=", "9", "-", "14", "Hz", ";", "beta", "=", "14", "-", "35", "Hz", ";", "and", "gamma", "=", "35", "-", "125", "Hz", "[", "46", "]", "." ],
+    "entities_indices" : [ [ 72, 73 ], [ 100, 101 ], [ 134, 135 ], [ 166, 167 ], [ 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201 ] ]
+  }, {
+    "sentence_tokens" : [ "Sleep", "problems", ",", "however", ",", "can", "be", "difficult", "to", "diagnose", ",", "particularly", "given", "that", "sleep", "is", "not", "a", "single", "continuum", ";", "points", "of", "transitions", "into", "and", "out", "of", "sleep", "are", "not", "always", "clear-cut", "[", "12", ",", "13", "]", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 14, 15 ], [ 28, 29 ] ]
+  }, {
+    "sentence_tokens" : [ "It", "may", "be", "that", "the", "optimal", "time", "for", "starting", "such", "treatments", "is", "when", "the", "first", "deficits", "appear", ",", "rather", "than", "when", "sleep", "structure", "is", "abnormal", "enough", "to", "affect", "the", "behaviour", "of", "the", "patient", "." ],
+    "entities_indices" : [ [ 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "EEG", "recordings", "were", "made", "continuously", "from", "an", "hour", "before", "sunset", "to", "an", "hour", "after", "sunrise", "(", "10.6", "hrs", ")", "from", "unrestrained", "sheep", "behaving", "naturally", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "Spectral", "analysis", "(", "Fig", "3", ")", "showed", "that", "the", "speed", "of", "transition", "from", "sleep-to-wake", "was", "slower", "in", "normal", "(", "Fig", "3B", ")", "than", "it", "was", "in", "HD", "sheep", "(", "Fig", "3D", ")", "." ],
+    "entities_indices" : [ [ 26, 27 ] ]
+  }, {
+    "sentence_tokens" : [ "Two", "minutes", "or", "so", "prior", "to", "waking", ",", "power", "in", "the", "delta", "(", "Fig", "4A", "and", "4B", ")", ",", "alpha", "(", "Fig", "4C", "and", "4D", ")", ",", "and", "beta", "(", "Fig", "4E", "and", "4F", ")", "ranges", "were", "lower", "than", "the", "average", "during", "sleep", ",", "and", "in", "the", "minute", "preceding", "the", "awakening", "power", "in", "these", "ranges", "fell", "rapidly", "towards", "levels", "that", "are", "normal", "during", "wake", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 16, 17 ], [ 42, 43 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "method", ",", "epochs", "were", "automatically", "classified", "as", "either", "sleep", ",", "wake", ",", "or", "inter-state", "based", "upon", "relative", "thresholding", "(", "Fig", "1B", ")", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "Two", "sample", "t-tests", "were", "used", "to", "test", "for", "differences", "between", "genotypes", "(", "N", "=", "5", ";", "HD", ",", "N", "=", "5", ";", "normal", ")", "in", "general", "measures", "of", "sleep", "fragmentation", "." ],
+    "entities_indices" : [ [ 16, 17 ], [ 28, 29 ] ]
+  } ],
+  "emptySentences" : [ {
+    "sentence_tokens" : [ "Abnormally", "abrupt", "transitions", "from", "sleep-to-wake", "in", "Huntington", "'s", "disease", "sheep", "(", "Ovis", "aries", ")", "are", "revealed", "by", "automated", "analysis", "of", "sleep", "and", "wake", "transition", "dynamics", "." ]
+  }, {
+    "sentence_tokens" : [ "Sleep", "disturbance", "is", "a", "common", "and", "disruptive", "symptom", "of", "neurodegenerative", "diseases", "such", "as", "Alzheimer", "'s", "and", "Huntington", "'s", "disease", "(", "HD", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "HD", "patients", ",", "sleep", "fragmentation", "appears", "at", "an", "early", "stage", "of", "disease", ",", "although", "features", "of", "the", "earliest", "sleep", "abnormalities", "in", "presymptomatic", "HD", "are", "not", "fully", "established", "." ]
+  }, {
+    "sentence_tokens" : [ "Here", "we", "used", "novel", "automated", "analysis", "of", "quantitative", "electroencephalography", "to", "study", "transitions", "between", "wake", "and", "non", "rapid", "eye", "movement", "sleep", "in", "a", "sheep", "model", "of", "presymptomatic", "HD", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "found", "that", "while", "the", "number", "of", "transitions", "between", "sleep", "and", "wake", "were", "similar", "in", "normal", "and", "HD", "sheep", ",", "the", "dynamics", "of", "transitions", "from", "sleep-to-wake", "differed", "markedly", "between", "genotypes", "." ]
+  }, {
+    "sentence_tokens" : [ "Rather", "than", "the", "gradual", "changes", "in", "EEG", "power", "that", "occurs", "during", "transitioning", "from", "sleep-to-wake", "in", "normal", "sheep", ",", "transition", "into", "wake", "was", "abrupt", "in", "HD", "sheep", "." ]
+  }, {
+    "sentence_tokens" : [ "Furthermore", ",", "transitions", "to", "wake", "in", "normal", "sheep", "were", "preceded", "by", "a", "significant", "reduction", "in", "slow", "wave", "power", ",", "whereas", "in", "HD", "sheep", "this", "prior", "reduction", "in", "slow", "wave", "power", "was", "far", "less", "pronounced", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "suggests", "an", "impaired", "ability", "to", "prepare", "for", "waking", "in", "HD", "sheep", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "abruptness", "of", "awakenings", "may", "also", "have", "potential", "to", "disrupt", "sleep", "dependent", "processes", "if", "they", "are", "interrupted", "in", "an", "untimely", "and", "disjointed", "manner", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "propose", "that", "not", "only", "could", "these", "abnormal", "dynamics", "of", "sleep", "transitions", "be", "useful", "as", "an", "early", "biomarker", "of", "HD", ",", "but", "also", "that", "our", "novel", "methodology", "would", "be", "useful", "for", "studying", "transition", "dynamics", "in", "other", "sleep", "disorders", "." ]
+  }, {
+    "sentence_tokens" : [ "Introduction", "." ]
+  }, {
+    "sentence_tokens" : [ "Sleep", "is", "essential", "to", "healthy", "brain", "function", "in", "humans", "." ]
+  }, {
+    "sentence_tokens" : [ "Not", "only", "does", "it", "facilitate", "metabolic", "rest", "[", "1", "]", "and", "support", "memory", "consolidation", "[", "2", ",", "3", "]", ",", "but", "also", "there", "is", "growing", "evidence", "that", "essential", "restorative", "and", "cleansing", "processes", "take", "place", "during", "sleep", "[", "4", ",", "5", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Disturbed", "sleep", "can", "cause", "cognitive", "dysfunction", "and", "mood", "disturbance", "and", "exacerbate", "existing", "psychiatric", "problems", "such", "as", "depression", "and", "anxiety", "[", "6", "-", "8]", "." ]
+  }, {
+    "sentence_tokens" : [ "Poor", "sleep", "can", "also", "contribute", "to", "the", "progression", "of", "neurological", "diseases", "[", "9", ",", "10", "]", "and", "accelerate", "aging", "[", "11", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Sleep", "problems", ",", "however", ",", "can", "be", "difficult", "to", "diagnose", ",", "particularly", "given", "that", "sleep", "is", "not", "a", "single", "continuum", ";", "points", "of", "transitions", "into", "and", "out", "of", "sleep", "are", "not", "always", "clear-cut", "[", "12", ",", "13", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Furthermore", ",", "multiple", "arousals", "during", "sleep", "occur", "very", "frequently", "during", "the", "night", "in", "healthy", "individuals", "[", "14", ",", "15", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Whilst", "such", "arousals", "may", "not", "be", "noticed", "by", "normal", "sleepers", ",", "self", "reporting", "of", "awakenings", "is", "high", "in", "insomniacs", "and", "people", "with", "other", "health", "problems", ",", "such", "as", "sleep", "apnoea", "[", "16", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "such", "disorders", ",", "nocturnal", "awakenings", "can", "be", "stressful", "and", "are", "associated", "with", "damage", "to", "neural", "and", "physiological", "function", "[", "9", ",", "17", ",", "18", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "It", "is", "thought", "that", "a", "minimum", "period", "of", "uninterrupted", "sleep", "is", "required", "for", "sleep", "dependent", "mechanisms", "such", "as", "memory", "consolidation", "[", "19", "]", "and", "restorative", "processes", "including", "glymphatic", "cleaning", "[", "18", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "studies", "where", "sleep", "fragmentation", "is", "induced", "experimentally", ",", "typically", "using", "sounds", "[", "20", ",", "21", "]", "or", "physical", "disturbance", "[", "22", "]", ",", "the", "sleeper", "is", "awaked", "into", "a", "sudden", "hyper-aroused", "state", "." ]
+  }, {
+    "sentence_tokens" : [ "Even", "in", "the", "short", "term", ",", "these", "induced", "arousals", "are", "associated", "with", "an", "array", "of", "problems", "including", "increased", "stress", ",", "mood", "disorders", ",", "and", "cognitive", "and", "memory", "impairments", "[", "22", "-", "24", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Such", "studies", "typically", "quantify", "the", "level", "of", "sleep", "disturbance", "by", "recording", "the", "time", "spent", "in", "bed", "and", "asleep", ",", "the", "number", "of", "awakenings", ",", "the", "duration", "of", "the", "awakening", ",", "and", "resulting", "daytime", "symptoms", "such", "as", "daytime", "sleepiness", "[", "25", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "the", "dynamics", "of", "sleep", "transitions", "or", "awakenings", "are", "rarely", "investigated", "despite", "it", "being", "likely", "that", "it", "is", "the", "disturbance", "to", "sleep", "rather", "than", "the", "amount", "of", "sleep", "that", "is", "lost", "that", "causes", "physiological", "stress", "[", "24", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "further", "study", "of", "the", "temporal", "and", "spectral", "dynamics", "of", "sleep", "and", "wake", "transitions", "in", "models", "of", "sleep", "disturbance", "is", "warranted.A", "number", "of", "neurodegenerative", "diseases", "including", "Huntington", "'", "s", "(", "HD", ")", "[", "26", "]", ",", "Parkinson", "'", "s", "[", "27", "]", ",", "and", "Alzheimer", "'", "s", "disease", "[", "28", "]", "are", "associated", "with", "progressively", "disturbed", "sleep", "[", "29", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "HD", "patients", "exhibit", "a", "range", "of", "sleep", "problems", ",", "including", "increased", "nocturnal", "awakenings", "[", "30", "-", "35", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "sleep", "abnormalities", "associated", "with", "HD", "can", "appear", "during", "its", "presymptomatic", "and", "early", "stages", "[", "37", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "have", "previously", "hypothesised", "that", "poor", "sleep", "may", "aggravate", "symptoms", "in", "HD", "patients", "[", "30", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "There", "is", "also", "growing", "awareness", "of", "the", "importance", "of", "sleep", "in", "synaptic", "homeostasis", "[", "39", ",", "40", "]", "and", "that", "sleep", "deficits", "may", "exacerbate", "the", "need", "for", "synaptic", "compensation", "caused", "by", "HD", "[", "41", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "It", "is", "not", "clear", "to", "what", "extent", "abnormal", "sleep", "is", "part", "of", "the", "disease", "itself", ",", "or", "simply", "a", "consequence", "of", "anxiety", "and", "depression", "which", "are", "common", "in", "early-stage", "HD", "[", "42", ",", "43", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Nevertheless", ",", "given", "that", "these", "mental", "health", "problems", "are", "associated", "with", "poor", "sleep", ",", "there", "is", "also", "potential", "for", "them", "to", "feedback", "and", "exacerbate", "problems", "with", "sleep", "in", "HD", "patients", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "better", "understanding", "of", "sleep", "abnormalities", "in", "HD", "is", "clearly", "desirable.Here", "we", "investigated", "the", "dynamics", "of", "spontaneous", "transitions", "between", "(", "non", "rapid", "eye", "movement", ")", "NREM", "sleep", "and", "wake", "in", "normal", "and", "HD", "transgenic", "sheep", "(", "OVT-73", ")", "[", "44", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "HD", "sheep", "were", "at", "an", "early", "and", "presymptomatic", "stage", ",", "showing", "no", "signs", "of", "disease", "." ]
+  }, {
+    "sentence_tokens" : [ "Behaviourally", ",", "they", "appear", "normal", "during", "both", "wake", "and", "sleep", "." ]
+  }, {
+    "sentence_tokens" : [ "They", "do", ",", "however", ",", "show", "abnormalities", "in", "their", "pattern", "of", "sleep", "and", "electroencephalograms", "(", "EEG", ")", "power", "distribution", "across", "the", "night", "[", "45", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "analysed", "EEG", "recorded", "for", "10", "hours", "during", "a", "single", "undisturbed", "night", "from", "these", "sheep", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "then", "used", "an", "automated", "algorithm", "developed", "in-house", "to", "quantify", "dynamics", "of", "transitions", "between", "sleep", "and", "wake", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "found", "no", "difference", "between", "HD", "and", "normal", "sheep", "in", "general", "measures", "of", "sleep", ",", "including", "the", "length", "of", "NREM", "sleep", "periods", "and", "the", "number", "of", "awakenings", "." ]
+  }, {
+    "sentence_tokens" : [ "There", "were", ",", "however", ",", "clear", "differences", "between", "HD", "and", "normal", "sheep", "in", "the", "dynamics", "of", "awakenings", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "particular", ",", "sleep-to-wake", "transitions", "were", "both", "faster", "and", "of", "greater", "magnitude", "in", "HD", "than", "they", "were", "in", "normal", "sheep", "." ]
+  }, {
+    "sentence_tokens" : [ "By", "contrast", ",", "there", "were", "no", "genotypic", "differences", "in", "the", "speed", "and", "severity", "of", "transitions", "into", "sleep", "." ]
+  }, {
+    "sentence_tokens" : [ "These", "data", "suggest", "that", "even", "though", "there", "are", "no", "behavioural", "signs", "of", "disease", "and", "little", "brain", "pathology", "at", "this", "age", ",", "control", "of", "the", "sleep", "and", "wake", "cycle", "in", "HD", "sheep", "is", "already", "abnormal", "." ]
+  }, {
+    "sentence_tokens" : [ "If", "similar", "events", "are", "present", "in", "human", "HD", "sufferers", "then", "they", "may", "experience", "a", "decline", "in", "the", "rejuvenating", "processes", "of", "sleep", "even", "before", "any", "signs", "of", "the", "disease", "are", "present", "." ]
+  }, {
+    "sentence_tokens" : [ "Our", "automated", "method", "for", "investigating", "the", "dynamics", "of", "sleep", "transitions", "provides", "a", "new", "tool", "for", "quantifying", "a", "previously", "unappreciated", "component", "of", "sleep", "that", "has", "potential", "as", "an", "early", "biomarker", "in", "HD", "." ]
+  }, {
+    "sentence_tokens" : [ "Methods", "." ]
+  }, {
+    "sentence_tokens" : [ "Subjects", "." ]
+  }, {
+    "sentence_tokens" : [ "Ten", "female", "merino", "sheep", "aged", "6", "years", "were", "used", "in", "this", "study", "." ]
+  }, {
+    "sentence_tokens" : [ "Five", "were", "transgenic", "and", "carried", "a", "full-length", "copy", "of", "the", "human", "HD", "gene", "with", "a", "CAG", "repeat", "of", "73", "[", "44", "]", ",", "and", "the", "other", "(", "controls", ")", "5", "were", "age", "matched", "flock-mates", "." ]
+  }, {
+    "sentence_tokens" : [ "These", "sheep", "were", "part", "of", "a", "longitudinal", "comparative", "study", "of", "EEG", "in", "HD", "and", "normal", "sheep", "conducted", "at", "the", "Pre-clinical", "Imaging", "Research", "Laboratory", "(", "PIRL", ")", ",", "Adelaide", ",", "South", "Australia", "." ]
+  }, {
+    "sentence_tokens" : [ "Both", "sleep", "[", "45", "]", "and", "drug", "studies", "[", "46", "]", "published", "recently", "were", "part", "of", "this", "longitudinal", "study", "." ]
+  }, {
+    "sentence_tokens" : [ "Note", "that", "the", "sleep", "recordings", "analysed", "in", "this", "study", "were", "made", "before", "the", "sheep", "were", "treated", "with", "any", "psychoactive", "drugs", "." ]
+  }, {
+    "sentence_tokens" : [ "Our", "study", "was", "approved", "by", "the", "SAHMRI", "Animal", "Ethics", "Committee", "and", "animal", "handling", "followed", "the", "physical", "containment", "conditions", "(", "PC2", ")", "set", "by", "the", "Institutional", "Biosafety", "Committee", "and", "the", "Office", "of", "the", "Gene", "Technology", "Regulator", "(", "OGTR", ",", "Australia", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "sheep", "were", "raised", "on", "open", "pasture", "as", "part", "of", "a", "larger", "flock", "at", "a", "breeding", "facility", "." ]
+  }, {
+    "sentence_tokens" : [ "Candidate", "sheep", "selected", "for", "electrophysiological", "recordings", "were", "transported", "to", "PIRL", "where", "implantation", "surgery", "was", "conducted", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "number", "of", "animals", "selected", "was", "determined", "as", "the", "optimal", "number", "that", "could", "be", "effectively", "managed", "at", "the", "facility", "under", "PC2", "conditions", "whilst", "providing", "a", "balanced", "sample", "of", "transgenic", "and", "normal", "genotype", "subjects", "." ]
+  }, {
+    "sentence_tokens" : [ "Following", "surgery", ",", "the", "sheep", "were", "held", "in", "individual", "pens", "in", "a", "covered", "outdoor", "arena", "where", "they", "were", "exposed", "to", "natural", "daylight", "conditions", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "pens", "were", "lined", "with", "clear", "Perspex", "so", "that", "the", "sheep", "were", "in", "visual", "contact", "with", "others", "in", "neighbouring", "pens", "and", "at", "the", "same", "time", "the", "risk", "of", "damage", "to", "the", "implanted", "devices", "was", "minimized", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "sheep", "were", "provided", "with", "food", "and", "water", "twice", "daily", ",", "at", "the", "start", "and", "end", "of", "the", "working", "day", "." ]
+  }, {
+    "sentence_tokens" : [ "Animal", "care", "technicians", "monitored", "the", "animals", "daily", "for", "physical", "condition", "and", "food", "and", "water", "consumption", "." ]
+  }, {
+    "sentence_tokens" : [ "Veterinary", "care", "was", "always", "available", "on", "site", "." ]
+  }, {
+    "sentence_tokens" : [ "Surgery", "." ]
+  }, {
+    "sentence_tokens" : [ "EEG", "electrodes", "were", "implanted", "surgically", "1", "year", "before", "the", "recordings", "were", "made", ",", "as", "described", "previously", "[", "45", "-", "47", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Briefly", ",", "implants", "consisted", "of", "eight", "subdural", "recording", "electrodes", "and", "one", "subdural", "reference", "electrode", "to", "record", "EEG", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "eight", "EEG", "electrodes", "were", "positioned", "bilaterally", "at", "locations", "corresponding", "to", "the", "postcruciate", "gyrus", ",", "the", "ansatus", "sulcus", ",", "the", "front", "third", "of", "the", "ectolateral", "sulcus", ",", "and", "the", "lateral", "sulcus", "near", "the", "anterior", "part", "of", "the", "entolateral", "sulcus", "." ]
+  }, {
+    "sentence_tokens" : [ "Electrodes", "were", "also", "positioned", "above", "the", "eyes", "for", "recording", "eye", "movements", "(", "EOG", ")", ",", "and", "stainless", "steel", "coils", "were", "implanted", "in", "the", "neck", "muscles", "for", "recording", "electromyogram", "(", "EMG", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Recording", "." ]
+  }, {
+    "sentence_tokens" : [ "EEG", "recordings", "were", "made", "continuously", "from", "an", "hour", "before", "sunset", "to", "an", "hour", "after", "sunrise", "(", "10.6", "hrs", ")", "from", "unrestrained", "sheep", "behaving", "naturally", "." ]
+  }, {
+    "sentence_tokens" : [ "EEG", "was", "recorded", "using", "a", "wireless", "telemetry", "system", "(", "Advanced", "W2100-System", ",", "Multichannel", "Systems", "Gmbh", ",", "Germany", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Data", "were", "saved", "at", "a", "sampling", "rate", "of", "250", "Hz", "." ]
+  }, {
+    "sentence_tokens" : [ "EEG", "data", "were", "re-referenced", "using", "a", "global", "reference", "prior", "to", "importing", "into", "MATLAB", "for", "sleep", "transition", "analyses", "." ]
+  }, {
+    "sentence_tokens" : [ "Data", "from", "all", "sheep", "were", "recorded", "indoors", "on", "the", "same", "night", "." ]
+  }, {
+    "sentence_tokens" : [ "Sheep", "had", "been", "moved", "to", "the", "recording", "pens", "on", "the", "previous", "day", "." ]
+  }, {
+    "sentence_tokens" : [ "Each", "sheep", "was", "randomly", "allocated", "to", "an", "individual", "pen", "in", "sight", "of", "other", "sheep", "within", "the", "room", "and", "had", "free", "access", "to", "food", "and", "water", "." ]
+  }, {
+    "sentence_tokens" : [ "Pens", "were", "located", "in", "two", "rooms", "containing", "six", "(", "3", "HD", ",", "3", "normal", ")", "or", "four", "(", "2", "HD", ",", "2", "normal", ")", "pens", "each", "." ]
+  }, {
+    "sentence_tokens" : [ "Lights", "were", "left", "on", "during", "the", "night", "allowing", "sleep", "scoring", "to", "be", "validated", "against", "video", "footage", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "data", "and", "MATLAB", "code", "used", "in", "this", "article", "are", "available", "online", "(", "https://doi.org/10.5061/dryad.q2bvq83jh", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Automated", "sleep", "and", "wake", "transition", "classification", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "developed", "a", "novel", ",", "automated", "method", "to", "detect", "transitions", "in-and-out", "of", "sleep", "from", "the", "EEG", "." ]
+  }, {
+    "sentence_tokens" : [ "Briefly", ",", "the", "power", "spectral", "density", "for", "each", "10", "second", "epoch", "were", "obtained", "using", "a", "Fast", "Fourier", "Transform", "(", "FFT", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Epochs", "were", "removed", "as", "artefacts", "if", "their", "spectral", "power", "exceeded", "three", "times", "the", "median", "absolute", "deviation", "from", "the", "mean", "spectral", "power", "of", "all", "epochs", "." ]
+  }, {
+    "sentence_tokens" : [ "Classification", "of", "sleep", "state", "was", "based", "on", "state", "space", "ratio", "2", "(", "SSR2", ",", "Fig", "1A", ")", "using", "a", "modification", "of", "the", "state", "space", "analysis", "method", "[", "48", "]", "that", "we", "adapted", "previously", "for", "use", "with", "sheep", "[", "49", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "method", ",", "epochs", "were", "automatically", "classified", "as", "either", "sleep", ",", "wake", ",", "or", "inter-state", "based", "upon", "relative", "thresholding", "(", "Fig", "1B", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "distance", "of", "20", "%", "(", "the", "value", "'", "y", "'", "in", "Fig", "1B", ")", ",", "from", "the", "mean", "location", "of", "the", "vigilance", "stages", "was", "chosen", "empirically", "as", "it", "provided", "a", "conservative", "threshold", "between", "states", "and", "ensured", "a", "wide", "separation", "between", "them", "that", "contained", "a", "transitional", "state", "." ]
+  }, {
+    "sentence_tokens" : [ "Only", "transitions", "between", "NREM", "sleep", "and", "wake", "were", "analysed", "." ]
+  }, {
+    "sentence_tokens" : [ "Using", "the", "manually", "scored", "data", ",", "any", "transitions", "that", "contained", "epochs", "scored", "as", "rapid", "eye", "movement", "(", "REM", ")", "sleep", "were", "removed", "from", "the", "analysis", "." ]
+  }, {
+    "sentence_tokens" : [ "Transitions", "were", "confirmed", "post", "hoc", "by", "cross", "checking", "with", "manually", "scored", "NREM", "sleep", "and", "wake", "epochs", "(", "manually", "scored", "as", "previously", "described", "[", "49", "]", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "our", "automated", "method", ",", "a", "transition", "from", "sleep-to-wake", "was", "defined", "as", "the", "time", "when", "more", "than", "50", "%", "of", "epochs", "across", "all", "channels", ",", "within", "a", "rolling", "5-minute", "window", ",", "met", "the", "automatic", "classification", "of", "wake", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "transition", "centre", "was", "defined", "as", "the", "mid", "point", "on", "the", "slope", "of", "the", "transition", "between", "the", "two", "states", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "same", "method", "was", "used", "to", "find", "the", "transitions", "from", "wake-to-sleep", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "length", "of", "bouts", "of", "wake", "or", "NREM", "sleep", "were", "calculated", "as", "the", "time", "difference", "between", "the", "start", "of", "wake", ",", "to", "the", "start", "of", "NREM", "sleep", ",", "or", "vice", "versa", "." ]
+  }, {
+    "sentence_tokens" : [ "Data", "from", "all", "sheep", "were", "sufficiently", "noise-free", "to", "conduct", "these", "analyses.For", "all", "sheep", ",", "spectral", "powers", "of", "epochs", "during", "transitions", "were", "normalised", "to", "the", "total", "power", "in", "the", "entire", "night", "(", "using", "the", "whole", "spectrum", ";", "0", "to", "125", "Hz", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Normalisation", "was", "performed", "for", "each", "channel", "of", "each", "sheep", "separately", "." ]
+  }, {
+    "sentence_tokens" : [ "Speed", "of", "transitions", "was", "assessed", "by", "three", "methods", "as", "follows", ":", "(", "A", ")", "By", "using", "the", "value", "of", "the", "peak", "in", "the", "moving", "variance", "(", "in", "a", "1-minute", "window", ")", "across", "all", "frequencies", "(", "normalised", "at", "each", "frequency", "by", "total", "power", "in", "each", "frequency", "bin", ")", "from", "-2", "to", "+2", "minutes", "from", "the", "transition", "centre", "(", "Fig", "2", ")", ";", "(", "B", ")", "By", "calculating", "the", "time", "difference", "from", "when", "the", "EEG", "power", "exceeded", "or", "dropped", "below", "more", "than", "the", "standard", "deviation", "around", "the", "mean", "of", "the", "power", "during", "the", "5", "minutes", "prior", "to", "the", "transition", ",", "to", "when", "EEG", "power", "returned", "to", "within", "the", "standard", "deviation", "of", "the", "power", "in", "the", "5", "minutes", "after", "the", "transition", "and", "(", "C", ")", "By", "calculating", "gradient", "in", "power", "change", "using", "a", "straight", "line", "from", "the", "start", "and", "end", "points", "of", "the", "transition", "as", "found", "in", "method", "B.", "Where", "analyses", "were", "conducted", "with", "the", "spectrum", "separated", "into", "frequency", "bands", ",", "the", "ranges", "we", "used", "were", "as", "follows", ":", "delta", "=", "0.5", "-", "4", "Hz", ";", "theta", "=", "4", "-", "9", "Hz", ";", "alpha", "=", "9", "-", "14", "Hz", ";", "beta", "=", "14", "-", "35", "Hz", ";", "and", "gamma", "=", "35", "-", "125", "Hz", "[", "46", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "EEG", "powers", "in", "the", "50", "Hz", "frequency", "bin", "were", "omitted", "due", "to", "an", "artefact", "caused", "by", "a", "cycle", "in", "mains", "power", "." ]
+  }, {
+    "sentence_tokens" : [ "Spectral", "analysis", "of", "pre", "and", "post", "transition", "differences", "was", "performed", "from", "-4", "to", "-2", "mins", "before", "transition", ",", "and", "from", "+2", "to", "+4", "mins", "after", "transition", ",", "because", "during", "these", "windows", "transitions", "had", "either", "not", "yet", "begun", ",", "or", "had", "already", "finished", "." ]
+  }, {
+    "sentence_tokens" : [ "During", "all", "stages", "of", "data", "processing", "investigators", "were", "blind", "to", "sheep", "genotype", "." ]
+  }, {
+    "sentence_tokens" : [ "Statistical", "analyses", "." ]
+  }, {
+    "sentence_tokens" : [ "Statistics", "were", "performed", "in", "R", "version", "4.0.0", "." ]
+  }, {
+    "sentence_tokens" : [ "Two", "sample", "t-tests", "were", "used", "to", "test", "for", "differences", "between", "genotypes", "(", "N", "=", "5", ";", "HD", ",", "N", "=", "5", ";", "normal", ")", "in", "general", "measures", "of", "sleep", "fragmentation", "." ]
+  }, {
+    "sentence_tokens" : [ "Differences", "in", "wake", "and", "sleep", "transition", "times", "between", "HD", "and", "normal", "sheep", "across", "all", "channels", "were", "analysed", "using", "generalised", "linear", "mixed", "models", "with", "Gamma", "distributions", "." ]
+  }, {
+    "sentence_tokens" : [ "Single", "animals", "were", "considered", "as", "the", "experimental", "unit", ",", "though", "data", "from", "all", "eight", "channels", "for", "each", "sheep", "were", "included", "in", "the", "analyses", ",", "thus", "sheep", "ID", "was", "included", "as", "a", "random", "variable", "." ]
+  }, {
+    "sentence_tokens" : [ "Transition", "gradient", "and", "variance", "differences", "were", "analysed", "using", "linear", "models", ",", "again", "with", "sheep", "ID", "included", "as", "a", "random", "variable", "and", "data", "were", "normalised", "for", "the", "linear", "models", "using", "sqrt", "(", ")", "transform", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "transitions", "to", "wake", ",", "where", "all", "gradients", "were", "negative", ",", "gradient", "and", "variance", "data", "were", "normalised", "first", "using", "abs", "(", ")", "transform", "." ]
+  }, {
+    "sentence_tokens" : [ "Pre-", "and", "post-transition", "power", "data", "were", "also", "analysed", "using", "linear", "mixed", "models", ",", "with", "sheep", "ID", "included", "as", "a", "random", "variable", "." ]
+  }, {
+    "sentence_tokens" : [ "Results", "." ]
+  }, {
+    "sentence_tokens" : [ "General", "features", "of", "the", "sleep", "wake", "cycle", "are", "not", "abnormal", "in", "HD", "sheep", "." ]
+  }, {
+    "sentence_tokens" : [ "There", "were", "no", "differences", "between", "HD", "and", "normal", "sheep", "in", "measures", "of", "sleep", "that", "are", "typically", "used", "to", "assess", "sleep", "fragmentation", ",", "including", "number", "of", "transitions", ",", "total", "power", ",", "and", "lengths", "of", "NREM", "sleep", "and", "wake", "bouts", "(", "Table", "1", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "State", "space", "analysis", "of", "the", "automatically", "classified", "wake", "and", "NREM", "sleep", "vigilance", "stages", "also", "showed", "no", "differences", "in", "the", "mean", "spectral", "ratios", "of", "vigilance", "stages", "between", "HD", "and", "normal", "sheep", "(", "Fig", "2", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Transition", "speed", "of", "sleep-to-wake", "but", "not", "wake-to-sleep", "differs", "between", "genotypes", "." ]
+  }, {
+    "sentence_tokens" : [ "Spectral", "analysis", "(", "Fig", "3", ")", "showed", "that", "the", "speed", "of", "transition", "from", "sleep-to-wake", "was", "slower", "in", "normal", "(", "Fig", "3B", ")", "than", "it", "was", "in", "HD", "sheep", "(", "Fig", "3D", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "was", "confirmed", "by", "all", "three", "of", "the", "methods", "we", "used", "for", "quantifying", "transition", "speed", "." ]
+  }, {
+    "sentence_tokens" : [ "First", ",", "while", "the", "peak", "moving", "variance", "across", "all", "frequencies", "was", "similar", "in", "normal", "(", "Fig", "3E", ")", "and", "HD", "(", "Fig", "3G", ")", "sheep", "for", "wake-to-sleep", "transitions", ",", "it", "was", "higher", "during", "the", "transition", "from", "sleep-to-wake", "in", "HD", "(", "Fig", "3H", ")", "than", "in", "normal", "sheep", "(", "Fig", "3F", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Second", ",", "duration", "of", "sleep-to-wake", "transitions", "were", "shorter", "(", "approximately", "half", "as", "long", ")", "in", "HD", "sheep", "in", "the", "delta", ",", "theta", ",", "and", "gamma", "frequency", "ranges", "(", "Table", "2", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Third", ",", "the", "gradients", "of", "the", "sleep-to-wake", "transitions", "were", "steeper", "in", "HD", "than", "in", "normal", "sheep", "in", "the", "delta", ",", "theta", ",", "and", "alpha", "ranges", "(", "Table", "2", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "contrast", "to", "this", ",", "there", "were", "no", "differences", "between", "HD", "and", "normal", "sheep", "in", "any", "of", "these", "measures", "of", "speed", "for", "the", "wake-to-sleep", "transitions", "(", "Table", "3", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Spectral", "analysis", "shows", "sleep-to-wake", "dynamics", "differ", "between", "HD", "and", "normal", "sheep", "." ]
+  }, {
+    "sentence_tokens" : [ "During", "transitions-to-wake", ",", "there", "were", "associated", "changes", "to", "dynamics", "of", "EEG", "power", "spectra", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "magnitude", "of", "the", "changes", "depended", "upon", "whether", "the", "power", "was", "considered", "as", "a", "proportion", "of", "its", "average", "during", "wake", "(", "Fig", "4A", ",", "4C", ",", "4E", "and", "4G", ")", "or", "sleep", "(", "Fig", "4B", ",", "4D", ",", "4F", "and", "4H", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Calculating", "proportions", "relative", "to", "both", "the", "average", "during", "wake", "and", "sleep", "in", "this", "way", "is", "useful", "because", "the", "balance", "of", "powers", "in", "the", "EEG", "spectra", "differs", "between", "genotypes", "in", "the", "two", "states", ",", "thus", "the", "scale", "of", "the", "transitional", "change", "of", "powers", "also", "differs", "between", "genotypes", "depending", "on", "whether", "it", "is", "considered", "as", "changes", "relative", "to", "average", "power", "in", "sleep", "or", "wake", "." ]
+  }, {
+    "sentence_tokens" : [ "Generally", ",", "however", ",", "the", "patterns", "were", "broadly", "similar", "." ]
+  }, {
+    "sentence_tokens" : [ "Two", "minutes", "or", "so", "prior", "to", "waking", ",", "power", "in", "the", "delta", "(", "Fig", "4A", "and", "4B", ")", ",", "alpha", "(", "Fig", "4C", "and", "4D", ")", ",", "and", "beta", "(", "Fig", "4E", "and", "4F", ")", "ranges", "were", "lower", "than", "the", "average", "during", "sleep", ",", "and", "in", "the", "minute", "preceding", "the", "awakening", "power", "in", "these", "ranges", "fell", "rapidly", "towards", "levels", "that", "are", "normal", "during", "wake", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "was", "true", "for", "both", "normal", "and", "HD", "sheep", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "the", "level", "of", "delta", "power", "prior", "to", "waking", "was", "lower", "in", "normal", "than", "in", "HD", "sheep", "(", "p", "=", "0.016", ",", "t", "=", "-3.03", ";", "Fig", "4A", ")", ";", "in", "normal", "sheep", ",", "prior", "to", "waking", ",", "delta", "power", "was", "~", "50", "%", "lower", "than", "its", "average", "level", "during", "sleep", ",", "while", "in", "HD", "sheep", "the", "reduction", "in", "power", "before", "waking", "was", "much", "smaller", "(", "~", "25", "%", "less", ";", "Fig", "4A", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Thus", ",", "the", "scale", "of", "the", "eventual", "transition", "in", "delta", "power", "is", "smaller", "for", "normal", "sheep", "than", "it", "is", "for", "HD", "sheep", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "found", "similar", "differences", "in", "transition", "dynamics", "in", "the", "alpha", "(", "p", "=", "0.009", ",", "t", "=", "-3.41", ";", "Fig", "4D", ")", "and", "beta", "(", "p", "=", "0.003", ",", "t", "=", "-4.32", ";", "Fig", "4F", ")", "frequency", "ranges", "proportional", "to", "average", "wake", "power", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "gamma", "range", "there", "was", "no", "difference", "between", "HD", "and", "normal", "sheep", "prior", "to", "the", "transition", ",", "but", "gamma", "was", "lower", "in", "HD", "compared", "to", "normal", "sheep", "after", "waking", "(", "p", "=", "0.013", ",", "t", "=", "2.56", ";", "Fig", "4G", ")", ",", "relative", "to", "average", "NREM", "power", "." ]
+  }, {
+    "sentence_tokens" : [ "Transition", "from", "wake-to-sleep", "dynamics", "in", "the", "context", "of", "average", "sleep", "and", "wake", "power", "are", "similar", "in", "HD", "and", "normal", "sheep", "." ]
+  }, {
+    "sentence_tokens" : [ "Otherwise", ",", "transitions", "into", "sleep", "were", "very", "similar", "in", "HD", "and", "normal", "sheep", "in", "terms", "of", "spectral", "power", "dynamics", "and", "speed", "of", "transition", "(", "see", "for", "example", ",", "delta", "and", "alpha", "power", "in", "Fig", "5A", ",", "5B", "and", "5C", ";", "data", "from", "beta", "and", "theta", "bands", "are", "not", "shown", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Discussion", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "used", "a", "novel", "automated", "analysis", "of", "quantitative", "EEG", "to", "examine", "the", "dynamics", "of", "sleep", "and", "wake", "transitions", "in", "normal", "and", "HD", "sheep", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "found", "that", "transitions", "from", "sleep-to-wake", "in", "HD", "sheep", "are", "faster", "than", "those", "of", "normal", "sheep", "." ]
+  }, {
+    "sentence_tokens" : [ "Furthermore", ",", "these", "awakenings", "amount", "to", "a", "more", "extreme", "change", "in", "EEG", "powers", "in", "HD", "than", "in", "normal", "sheep", "." ]
+  }, {
+    "sentence_tokens" : [ "By", "contrast", ",", "transitions", "from", "wake-to-sleep", "were", "not", "abnormal", "in", "HD", "sheep", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "did", "not", "note", "any", "overt", "differences", "in", "behaviour", "between", "HD", "and", "normal", "sheep", "[", "45", "]", ",", "suggesting", "that", "the", "rapid", "awakenings", "are", "not", "manifest", "as", "an", "overtly", "abnormal", "behaviour", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "focused", "monitoring", "of", "behaviour", "would", "be", "needed", "to", "confirm", "this", "." ]
+  }, {
+    "sentence_tokens" : [ "Nevertheless", ",", "given", "that", "in", "symptomatic", "HD", "patients", "and", "animal", "models", "of", "HD", ",", "sleep", "becomes", "fragmented", "as", "the", "disease", "progresses", "[", "30", ",", "31", ",", "50", "]", "and", "that", "the", "sheep", "we", "used", "were", "at", "a", "very", "early", "stage", "of", "disease", ",", "we", "suggest", "that", "the", "sudden", "awakenings", "we", "see", "in", "the", "HD", "sheep", "are", "among", "the", "first", "of", "the", "sleep", "disorders", "that", "occur", "in", "this", "HD", "model.Our", "study", "raises", "new", "questions", "about", "both", "the", "process", "underlying", "normal", "awakenings", "and", "the", "mechanism", "underlying", "early", "changes", "in", "awakening", "in", "HD", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "normal", "sheep", ",", "transitions", "from", "sleep-to-wake", "showed", "a", "characteristic", "pattern", ",", "with", "a", "gradual", "decline", "in", "delta", ",", "theta", ",", "and", "alpha", "powers", "that", "started", "around", "two", "minutes", "before", "awakening", "." ]
+  }, {
+    "sentence_tokens" : [ "Even", "prior", "to", "this", "decline", ",", "slow", "wave", "power", "was", "nearly", "half", "its", "normal", "level", "during", "NREM", "sleep", ",", "making", "the", "eventual", "transition", "into", "wake", "a", "'", "gentle", "'", "event", "." ]
+  }, {
+    "sentence_tokens" : [ "Smooth", "transitions", "between", "sleep", "and", "wakefulness", "is", "regulated", "by", "a", "balanced", "interaction", "of", "excitatory", "and", "inhibitory", "networks", "of", "subcortical", "and", "cortical", "brain", "structures", "[", "51", ",", "52", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Abnormal", "function", "of", "either", "network", "may", "modify", "the", "dynamics", "of", "these", "transitions", "." ]
+  }, {
+    "sentence_tokens" : [ "Of", "particular", "relevance", ",", "loss", "of", "hypothalamic", "orexinergic", "neurons", "causes", "severe", "disruption", "to", "the", "sleep", "and", "wake", "cycle", ",", "with", "low", "thresholds", "for", "transitions", ",", "as", "is", "seen", "in", "narcoleptic", "patients", "[", "53", "]", "and", "orexin", "knockout", "mice", "[", "54", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Several", "studies", "have", "reported", "loss", "of", "orexinergic", "neurons", "in", "post", "mortem", "brains", "of", "HD", "patients", "[", "55", "-", "57", "]", "and", "HD", "mice", "[", "58", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Orexinergic", "system", "damage", "may", "therefore", "contribute", "to", "the", "abnormal", "awakenings", "that", "we", "see", "in", "HD", "sheep", "." ]
+  }, {
+    "sentence_tokens" : [ "Furthermore", ",", "altered", "function", "of", "the", "histaminergic", "system", ",", "which", "is", "closely", "linked", "to", "the", "orexinergic", "system", "in", "regulating", "the", "sleep", "and", "wake", "cycle", "[", "59", ",", "60", "]", "may", "be", "another", "potential", "cause", "of", "abnormal", "sleep", "in", "HD", "patients", "[", "61", ",", "62", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Treatments", "targeting", "the", "histaminergic", "system", "(", "using", "antagonists", "on", "the", "histamine", "3", "[", "H3", "]", "receptor", ")", "have", "been", "suggested", "specifically", "for", "treating", "early", "stage", "HD", "[", "63", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Given", "that", "the", "abnormalities", "we", "found", "were", "present", "in", "presymptomatic", "HD", "sheep", ",", "there", "may", "be", "potential", "in", "investigating", "therapies", "such", "as", "H3", "antagonists", "that", "might", "target", "sleep", "and", "wake", "abnormalities", "in", "this", "model", "of", "HD.It", "is", "notable", "that", "whereas", "sleep-to-wake", "transitions", "are", "abnormal", ",", "there", "was", "little", "effect", "on", "wake-to-sleep", "transitions", "in", "the", "HD", "sheep", "." ]
+  }, {
+    "sentence_tokens" : [ "While", "at", "face", "value", "this", "suggests", "that", "the", "control", "of", "the", "arousal", "system", "may", "be", "affected", "first", "in", "HD", ",", "it", "is", "important", "to", "remember", "that", "wake", "and", "sleep", "are", "generated", "by", "different", "pathways", "which", ",", "although", "interconnected", ",", "are", "modulated", "by", "different", "factors", "[", "52", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Furthermore", ",", "HD", "is", "a", "multifactorial", "disease", "with", "known", "impairments", "in", "multiple", "neurotransmitter", "systems", "[", "58", ",", "64", ",", "65", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Thus", ",", "there", "are", "multiple", "possible", "explanations", "for", "our", "findings", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "example", ",", "if", "NREM", "sleep", "promoting", "pathways", "(", "such", "as", "the", "melanin", "concentrating", "hormone", ")", "that", "inhibit", "wake", "promoting", "pathways", "are", "impaired", "early", "in", "HD", ",", "then", "this", "may", "result", "in", "abnormal", "transition", "dynamics", "without", "a", "change", "in", "the", "length", "of", "the", "sleep", "episode", "." ]
+  }, {
+    "sentence_tokens" : [ "Alternatively", ",", "given", "that", "both", "neuronal", "function", "and", "connectivity", "are", "impaired", "in", "HD", "[", "66", ",", "67", "]", "it", "is", "possible", "that", "the", "ability", "of", "the", "cortical", "neurons", "to", "produce", "and", "propagate", "slow", "waves", "[", "68", "]", "is", "altered", "in", "HD", ",", "making", "it", "easier", "for", "them", "to", "quickly", "transition", "from", "the", "hyperpolarised", "sleep", "like", "state", "(", "cortical", "OFF", "state", ")", "to", "a", "depolarised", "wake", "like", "state", "(", "cortical", "ON", "state", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "functional", "relevance", "of", "the", "gentle", "awakening", "seen", "in", "normal", "sheep", "that", "is", "impaired", "in", "HD", "sheep", "is", "unknown", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "can", "speculate", "that", "in", "normal", "sleepers", ",", "there", "is", "a", "period", "of", "transition", "to", "wake", "that", "is", "required", "in", "order", "for", "sleep", "related", "processes", "to", "be", "terminated", "." ]
+  }, {
+    "sentence_tokens" : [ "Examples", "of", "such", "processes", "include", "sleep", "spindle", "associated", "memory", "consolidation", ",", "which", "is", "a", "vital", "component", "in", "the", "memory", "creating", "process", "that", "occurs", "during", "NREM", "sleep", "[", "69", "]", "and", "reduces", "in", "activity", "prior", "to", "waking", "[", "70", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Slow", "wave", "activity", "(", "delta", "power", ")", "is", "also", "considered", "key", "to", "much", "of", "the", "restorative", "function", "in", "sleep", "[", "71", "]", ",", "including", "memory", "consolidation", "[", "72", ",", "73", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Slow", "wave", "activity", "is", "highest", "when", "sleep", "pressure", "is", "elevated", "and", "also", "reduces", "during", "the", "progression", "of", "sleep", "[", "52", ",", "74", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Thus", ",", "the", "lack", "of", "a", "reduction", "in", "slow", "wave", "power", "prior", "to", "awakening", ",", "as", "we", "have", "observed", "in", "HD", "sheep", ",", "may", "indicate", "that", "these", "important", "functions", "are", "not", "progressing", "as", "normal", "during", "sleep", "." ]
+  }, {
+    "sentence_tokens" : [ "Although", "this", "is", "speculation", "on", "our", "part", "it", "is", "supported", "by", "considerable", "evidence", "showing", "impairment", "of", "memory", "in", "patients", "with", "disorders", "that", "cause", "sudden", "awakenings", ",", "such", "as", "sleep", "apnoea", "[", "75", "]", ",", "insomnia", "[", "76", "]", "and", "Alzheimer", "'", "s", "disease", "[", "77", ",", "78", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Memory", "consolidation", "in", "HD", "sheep", "has", "not", "been", "studied", "to", "date", "but", "would", "be", "a", "worthwhile", "future", "study.Cognitive", "function", "is", "impaired", "in", "HD", "patients", "and", "correlated", "with", "changes", "in", "sleep", "[", "33", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "There", "is", "little", "doubt", "that", "improving", "sleep", "would", "have", "a", "beneficial", "knock-on", "effect", "on", "cognitive", "function", "in", "HD", "patients", "." ]
+  }, {
+    "sentence_tokens" : [ "It", "may", "be", "that", "the", "optimal", "time", "for", "starting", "such", "treatments", "is", "when", "the", "first", "deficits", "appear", ",", "rather", "than", "when", "sleep", "structure", "is", "abnormal", "enough", "to", "affect", "the", "behaviour", "of", "the", "patient", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "study", "we", "have", "identified", "a", "very", "early", "sleep", "abnormality", "in", "HD", "sheep", "using", "a", "novel", "automated", "method", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "technique", "can", "be", "applied", "easily", "to", "EEG", "recorded", "from", "HD", "patients", "and", "we", "were", "able", "to", "obtain", "results", "from", "only", "a", "single", "night", "of", "recording", "." ]
+  }, {
+    "sentence_tokens" : [ "If", "established", ",", "such", "a", "biomarker", "may", "be", "a", "relatively", "undemanding", "method", "for", "tracking", "the", "progression", "of", "HD", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "could", "be", "especially", "useful", "if", "it", "were", "possible", "to", "perform", "the", "assessment", "using", "only", "a", "small", "number", "of", "sleep", "and", "wake", "transitions", "during", "the", "day", "." ]
+  }, {
+    "sentence_tokens" : [ "Further", "work", "is", "clearly", "needed", "to", "understand", "sudden", "awakenings", "and", "their", "consequences", "for", "HD", "patients", "." ]
+  } ]
+}

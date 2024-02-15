@@ -1,147 +1,1003 @@
-[ {
-  "sentence_tokens" : [ "The", "chip", ",", "with", "most", "cells", "on", "the", "coverslip", ",", "was", "then", "prewarmed", "at", "37", "degrees", "C", "in", "an", "incubator", "for", "4", "minutes", "and", "30", "seconds", ",", "allowing", "the", "collagen", "to", "start", "gelling", "." ],
-  "event_indices" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 1, 2 ],
-  "controlled_indices" : [ 29, 30 ],
-  "trigger_indices" : [ 27, 28 ],
-  "rule_name" : "Positive_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Using", "a", "platform", "we", "term", "``", "the", "drop", "patterning", "chip", "''", ",", "thousands", "of", "cells", "were", "simultaneously", "transferred", "from", "microwell", "arrays", "and", "fully", "embedded", ",", "only", "using", "the", "force", "of", "gravity", ",", "in", "precise", "patterns", "in", "3D", "collagen", "I", "or", "Matrigel", "." ],
-  "entity_one_indices" : [ 36, 37, 38 ],
-  "entity_two_indices" : [ 9, 10 ]
-}, {
-  "sentence_tokens" : [ "Whereas", "these", "methods", "allow", "for", "cell", "anchorage", "and", "ease", "of", "locating", "and", "image", "collecting", ",", "the", "stiff", "and/or", "2D", "nature", "of", "the", "substrates", "(", "e.g", ".,", "glass", "or", "plastic", "surfaces", ",", "2", "-", "4", "GPa", ")", "do", "not", "provide", "an", "accurate", "analog", "to", "the", "soft", ",", "3D", "nature", "of", "the", "in", "vivo", "environment", "(", "e.g", ".,", "breast", "tissue", ",", "hundreds", "of", "Pascals", ";", "human", "intestinal", "tissue", ",", "thousands", "of", "Pascals", ")", "." ],
-  "entity_one_indices" : [ 46, 47 ],
-  "entity_two_indices" : [ 34, 35 ]
-}, {
-  "sentence_tokens" : [ "In", "between", "2D", "and", "3D", "patterning", "methods", "are", "overlay", "methods", ",", "where", "cells", "are", "patterned", "on", "a", "substrate", "and", "then", "covered", "with", "a", "layer", "of", "hydrogel", "or", "other", "3D", "matrix", "." ],
-  "entity_one_indices" : [ 28, 29 ],
-  "entity_two_indices" : [ 4, 5 ]
-}, {
-  "sentence_tokens" : [ "Researchers", "have", "also", "used", "an", "array", "of", "magnetic", "nodes", "to", "trap", "magnetically", "labeled", "cells", "in", "between", "two", "layers", "of", "collagen", "." ],
-  "entity_one_indices" : [ 19, 20 ],
-  "entity_two_indices" : [ 10, 11 ]
-}, {
-  "sentence_tokens" : [ "Due", "to", "the", "natural", "adhesion", "of", "PDMS", "to", "itself", "and", "between", "PDMS", "and", "glass", ",", "the", "three", "layers", "spontaneously", "bond", "together", "with", "slight", "pressure", "applied", "by", "hand", "." ],
-  "entity_one_indices" : [ 6, 7 ],
-  "entity_two_indices" : [ 4, 5 ]
-}, {
-  "sentence_tokens" : [ "Step-by-step", "drop", "patterning", "in", "collagen", "." ],
-  "entity_one_indices" : [ 4, 5 ],
-  "entity_two_indices" : [ 0, 1, 2 ]
-}, {
-  "sentence_tokens" : [ "The", "first", "set", "of", "steps", "of", "the", "drop", "patterning", "technique", "includes", "priming", "the", "microwells", "with", "cells", "and", "assembling", "the", "chip", "(", "Fig.", "2a", ",", "steps", "1", "-", "5", ")", "." ],
-  "entity_one_indices" : [ 24, 25, 26, 27, 28, 29 ],
-  "entity_two_indices" : [ 19, 20 ]
-}, {
-  "sentence_tokens" : [ "Treating", "the", "PDMS", "substrate", "with", "air", "plasma", "and", "then", "incubating", "in", "bovine", "serum", "albumin", "(", "BSA", ")", "prior", "to", "seeding", "promoted", "surface", "wetting", "and", "prevented", "cell", "attachment", ",", "respectively", "." ],
-  "entity_one_indices" : [ 15, 16 ],
-  "entity_two_indices" : [ 13, 14 ]
-}, {
-  "sentence_tokens" : [ "We", "verified", "the", "cell", "arrays", "were", "fully", "embedded", "in", "the", "gel", "filled", "chamber", "without", "contacting", "either", "top", "or", "bottom", "surface", "by", "imaging", "the", "chip", "on", "different", "focal", "planes", "after", "the", "collagen", "gelled", "(", "Figure", "S3", ")", "." ],
-  "entity_one_indices" : [ 30, 31 ],
-  "entity_two_indices" : [ 23, 24 ]
-}, {
-  "sentence_tokens" : [ "Both", "the", "cell", "trapping", "efficiency", "and", "cell", "patterning", "efficiency", "were", "calculated", "according", "to", "equation", "(", "1", ")", ",", "by", "dividing", "the", "total", "number", "of", "cell", "occupied", "positions", "either", "in", "the", "microwells", "or", "in", "the", "collagen", "by", "the", "total", "number", "of", "microwells.1Efficiency", "(", "%", ")", "=", "NumberofOccupiedPositionsTotalNumberofMicrowells", "x", "100Cell", "trapping", "(", "T", ")", "and", "cell", "patterning", "(", "P", ")", "efficiencies", "for", "this", "method", "were", "measured", "on", "a", "total", "of", "forty", "20", "x", "20", "microwell", "arrays", "distributed", "over", "four", "chips", "(", "Fig.", "3a", ")", "." ],
-  "entity_one_indices" : [ 77, 78 ],
-  "entity_two_indices" : [ 34, 35 ]
-}, {
-  "sentence_tokens" : [ "In", "Fig.", "3b", ",", "the", "overall", "trapping", "and", "patterning", "efficiencies", "on", "the", "four", "individual", "chips", "were", "calculated", "as", "the", "mean", "of", "the", "efficiencies", "of", "all", "arrays", "on", "each", "chip", "from", "Fig.", "3a", "." ],
-  "entity_one_indices" : [ 28, 29 ],
-  "entity_two_indices" : [ 14, 15 ]
-}, {
-  "sentence_tokens" : [ "The", "average", "cell", "trapping", "efficiency", "and", "cell", "patterning", "efficiency", "of", "all", "arrays", "on", "the", "four", "chips", "were", "65.7", "+/-", "11.5", "%", "and", "51.2", "+/-", "11.7", "%", ",", "respectively.In", "addition", "to", "single", "cells", ",", "small", "cell", "clusters", ",", "such", "as", "doublets", "and", "triplets", ",", "were", "trapped", "in", "the", "microwells", "and", "patterned", "in", "collagen", "(", "Fig.", "3e", ")", "." ],
-  "entity_one_indices" : [ 51, 52 ],
-  "entity_two_indices" : [ 15, 16 ]
-}, {
-  "sentence_tokens" : [ "Compared", "to", "the", "common", "in", "vitro", "3D", "cell", "culture", "protocol", "of", "randomly", "embedding", "hundreds", "or", "thousands", "of", "cells", "in", "a", "matrix", ",", "the", "drop", "patterning", "chip", "is", "able", "to", "embed", "a", "similar", "sample", "size", "of", "cells", "in", "a", "matrix", ",", "approximately", "on", "the", "same", "focal", "plane", "in", "a", "well", "organized", "way", "(", "Fig.", "4a", ")", "." ],
-  "entity_one_indices" : [ 25, 26 ],
-  "entity_two_indices" : [ 6, 7 ]
-}, {
-  "sentence_tokens" : [ "On", "day", "3", ",", "the", "cells", "(", "phase-contrast", "images", "shown", "in", "Fig.", "4c", ")", "were", "fixed", "and", "their", "nuclei", "and", "actin", "fluorescently", "labeled", "in", "order", "to", "visualize", "cell", "morphology", "as", "the", "result", "of", "the", "3-day", "incubation", "within", "the", "drop", "patterning", "chip", "(", "Fig.", "4d", ")", "." ],
-  "entity_one_indices" : [ 40, 41 ],
-  "entity_two_indices" : [ 20, 21 ]
-}, {
-  "sentence_tokens" : [ "They", "continued", "to", "proliferate", "and", "migrate", "into", "neighboring", "zones.In", "contrast", ",", "the", "cells", "in", "zones", "V", ",", "VI", ",", "VIII", "and", "IX", "were", "not", ",", "at", "least", "initially", ",", "as", "motile", ",", "however", ",", "they", "did", "proliferate", "." ],
-  "entity_one_indices" : [ 19, 20 ],
-  "entity_two_indices" : [ 17, 18 ]
-}, {
-  "sentence_tokens" : [ "Only", "after", "three", "days", "did", "cells", "from", "these", "MCTS", "begin", "to", "form", "protrusive", "actions", "and", "migrate", "away", "from", "the", "MCTS", "in", "both", "single-cell", "(", "green", "arrowhead", ")", "and", "collective", "(", "white", "arrowheads", ")", "manners.After", "3.5", "days", ",", "the", "cells", "in", "the", "3", "x", "3", "array", "were", "fixed", "and", "their", "nuclei", "(", "Hoechst", ",", "blue", ")", "and", "F-actin", "(", "phalloidin", ",", "red", ")", "were", "stained", "." ],
-  "entity_one_indices" : [ 58, 59 ],
-  "entity_two_indices" : [ 56, 57 ]
-}, {
-  "sentence_tokens" : [ "A", "confocal", "image", "stack", "(", "height", ":", "112", "mu", "m", ")", "was", "acquired", "from", "a", "focal", "plane", "above", "a", "tumor", "array", "to", "a", "focal", "plane", "below", "the", "tumor", "array", "(", "Fig.", "5b", ")", "." ],
-  "entity_one_indices" : [ 27, 28 ],
-  "entity_two_indices" : [ 19, 20 ]
-}, {
-  "sentence_tokens" : [ "Matrigel", ",", "on", "the", "other", "hand", ",", "originating", "from", "the", "epithelial", "basement", "membrane", ",", "provides", "a", "different", "set", "of", "physical", "and", "biochemical", "cues", "for", "cells", "in", "3D", "culture", ",", "which", "promote", "organoid", "formation", "and", "tumor", "growth", "." ],
-  "entity_one_indices" : [ 34, 35 ],
-  "entity_two_indices" : [ 26, 27 ]
-}, {
-  "sentence_tokens" : [ "Within", "the", "larger", "array", ",", "two", "regions", "of", "interest", "are", "outlined", "(", "ROI1", ":", "blue", "and", "ROI2", ":", "red", ")", "from", "which", "higher", "magnification", "insets", "are", "presented", "." ],
-  "entity_one_indices" : [ 16, 17 ],
-  "entity_two_indices" : [ 12, 13 ]
-}, {
-  "sentence_tokens" : [ "The", "multiple-day", "monitoring", "of", "cell", "proliferation", "in", "ROI1", "is", "shown", "in", "Fig.", "6c", "." ],
-  "entity_one_indices" : [ 7, 8 ],
-  "entity_two_indices" : [ 4, 5, 6 ]
-}, {
-  "sentence_tokens" : [ "Depending", "on", "the", "type", "of", "study", ",", "a", "model", "of", "the", "mechanical", ",", "morphological", ",", "and/or", "biological", "activity", "of", "the", "ECM", "may", "be", "desired", "." ],
-  "entity_one_indices" : [ 20, 21 ],
-  "entity_two_indices" : [ 3, 4 ]
-}, {
-  "sentence_tokens" : [ "We", "demonstrated", "that", "the", "drop", "patterning", "method", "is", "applicable", "to", "three", "different", "types", "of", "matrix", "material", ":", "collagen", "I", ",", "Matrigel", ",", "and", "agarose", "(", "Figure", "S9", ")", "." ],
-  "entity_one_indices" : [ 23, 24 ],
-  "entity_two_indices" : [ 17, 18 ]
-}, {
-  "sentence_tokens" : [ "In", "a", "demonstration", "of", "the", "applicability", "of", "this", "method", "for", "tracking", "the", "manifestation", "of", "cell", "behavioral", "heterogeneity", "within", "a", "matrix", ",", "we", "point", "out", "the", "distinctly", "different", "behaviors", "of", "individual", "cell", "development", "in", "one", "array", "in", "both", "the", "collagen", "I", "and", "Matrige", "." ],
-  "entity_one_indices" : [ 38, 39 ],
-  "entity_two_indices" : [ 30, 31, 32 ]
-}, {
-  "sentence_tokens" : [ "We", "furthermore", "envision", "that", "the", "drop", "patterning", "method", "may", "be", "used", "for", "3D", "co-culture", "studies", "with", ",", "for", "example", ",", "cancer", "associated", "fibroblasts", ",", "endothelial", "cells", ",", "or", "immune", "cells", "on", "one", "chip", "." ],
-  "entity_one_indices" : [ 32, 33 ],
-  "entity_two_indices" : [ 12, 13 ]
-}, {
-  "sentence_tokens" : [ "Although", "single-cell", "microwells", "and", "arrays", "were", "used", "here", "to", "illustrate", "the", "use", "of", "this", "new", "method", ",", "we", "would", "like", "to", "point", "out", "that", "it", "is", "possible", "to", "tune", "the", "size", "of", "the", "microwells", "in", "order", "to", "drop-pattern", "aggregates", "of", "cells", "or", "pre-produced", "MCTS.The", "flexibility", "with", "which", "one", "may", "choose", "the", "cell", "patterns", "as", "well", "as", "the", "types", "of", "hydrogel", "makes", "this", "a", "generally", "useful", "tool", "for", "fields", "as", "varied", "as", "tissue", "engineering", ",", "stem", "cell", "research", ",", "ex", "vivo", "cancer", "assays", ",", "in", "vitro", "studies", "on", "intercellular", "communication", "(", "e.g", ".,", "neurite", "outgrowth", "of", "primary", "neurons", ")", ",", "and", "tumor-microenvironment", "interaction", "(", "e.g", ".,", "tumor", "angiogenesis", ")", "." ],
-  "entity_one_indices" : [ 106, 107 ],
-  "entity_two_indices" : [ 105, 106 ]
-}, {
-  "sentence_tokens" : [ "Micro-posts", "on", "the", "silicon", "wafer", "were", "fabricated", "in", "a", "negative", "photoresist", "(", "SU-8", "3025", ",", "MicroChem", ",", "MA", ",", "USA", ")", "through", "the", "techniques", "of", "photolithography", "." ],
-  "entity_one_indices" : [ 17, 18 ],
-  "entity_two_indices" : [ 3, 4 ]
-}, {
-  "sentence_tokens" : [ "After", "soft", "baking", "at", "95", "degrees", "C", "for", "10", "min", ",", "the", "SU-8", "coating", "was", "crosslinked", "under", "the", "exposure", "of", "UV", "light", "through", "a", "chrome", "mask", "." ],
-  "entity_one_indices" : [ 25, 26 ],
-  "entity_two_indices" : [ 12, 13 ]
-}, {
-  "sentence_tokens" : [ "After", "post-exposure", "baking", "at", "65", "degrees", "C", "for", "1", "min", "and", "95", "degrees", "C", "for", "8", "min", ",", "non", "crosslinked", "SU-8", "photoresist", "was", "washed", "off", "through", "the", "developing", "process", ",", "and", "all", "the", "crosslinked", "micro-posts", "remained", "on", "the", "silicon", "wafer", "." ],
-  "entity_one_indices" : [ 38, 39 ],
-  "entity_two_indices" : [ 20, 21 ]
-}, {
-  "sentence_tokens" : [ "To", "avoid", "local", "pH", "variance", ",", "the", "solution", "was", "pipetted", "up", "and", "down", "each", "time", "a", "fraction", "of", "NaOH", "was", "added", "." ],
-  "entity_one_indices" : [ 18, 19 ],
-  "entity_two_indices" : [ 3, 4 ]
-}, {
-  "sentence_tokens" : [ "When", "the", "cells", "were", "embedded", "in", "3D", "collagen", ",", "we", "continued", "culturing", "them", "by", "submerging", "the", "chip", "in", "fresh", "cell", "culture", "medium", "." ],
-  "entity_one_indices" : [ 16, 17 ],
-  "entity_two_indices" : [ 6, 7, 8 ]
-}, {
-  "sentence_tokens" : [ "The", "surface", "of", "the", "plasma", "treated", "microwell", "substrate", "and", "the", "glass", "coverslip", "were", "then", "incubated", "at", "room", "temperature", "for", "one", "hour", "with", "a", "10", "%", "bovine", "serum", "albumin", "(", "BSA", ")", "solution", "to", "further", "prevent", "cell", "attachment.After", "the", "BSA", "treatment", ",", "250", "mu", "L", "cell", "suspension", "(", "1", "x", "10", "cells/mL", ")", "was", "seeded", "on", "the", "microwell", "substrate", "and", "the", "cells", "were", "allowed", "to", "settle", "into", "the", "microwells", "for", "about", "5", "min", "." ],
-  "entity_one_indices" : [ 29, 30 ],
-  "entity_two_indices" : [ 27, 28 ]
-}, {
-  "sentence_tokens" : [ "HCT-116", "tumor", "arrays", "were", "grown", "in", "3D", "collagen", "I", "or", "Matrigel", "for", "multiple", "days", "." ],
-  "entity_one_indices" : [ 6, 7, 8 ],
-  "entity_two_indices" : [ 1, 2 ]
-}, {
-  "sentence_tokens" : [ "Samples", "were", "then", "incubated", "at", "4", "degrees", "C", "with", "a", "primary", "vimentin", "(", "Figure", "S6", ")", "antibody", "(", "1:50", ",", "mouse", ",", "Santa", "Cruz", ")", "diluted", "in", "incubation", "solution", "(", "PBS", "with", "0.1", "%", "BSA", ")", "overnight", "." ],
-  "entity_one_indices" : [ 22, 23 ],
-  "entity_two_indices" : [ 11, 12 ]
-}, {
-  "sentence_tokens" : [ "3D", "reconstructions", "of", "z-stacks", "of", "MCTS", "arrays", "were", "performed", "on", "software", "ZEN", "(", "Zeiss", ")", "and", "3D", "rendering", "based", "on", "confocal", "microscopic", "images", "was", "made", "by", "software", "Imaris", "8", "(", "Bitplane", ")", "." ],
-  "entity_one_indices" : [ 16, 17 ],
-  "entity_two_indices" : [ 0, 1 ]
-} ]
+{
+  "regulations" : [ {
+    "sentence_tokens" : [ "The", "chip", ",", "with", "most", "cells", "on", "the", "coverslip", ",", "was", "then", "prewarmed", "at", "37", "degrees", "C", "in", "an", "incubator", "for", "4", "minutes", "and", "30", "seconds", ",", "allowing", "the", "collagen", "to", "start", "gelling", "." ],
+    "event_indices" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 1, 2 ],
+    "controlled_indices" : [ 29, 30 ],
+    "trigger_indices" : [ 27, 28 ],
+    "rule_name" : "Positive_activation_syntax_1_verb",
+    "rule" : null
+  } ],
+  "hardInstances" : [ ],
+  "withoutRegulations" : [ {
+    "sentence_tokens" : [ "PDMS", "chambers", "have", "been", "proved", "to", "be", "suitable", "for", "3D", "cell", "culture", "due", "to", "the", "oxygen", "permeability", "of", "PDMS", "." ],
+    "entities_indices" : [ [ 9, 10 ], [ 15, 16 ], [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "Collagen", "fibers", "were", "auto-fluorescent", "in", "the", "blue", "channel", "on", "both", "the", "first", "and", "the", "last", "several", "images", "with", "no", "F-actin", "(", "red", ")", "observed", ",", "which", "verified", "that", "all", "the", "tumors", "were", "fully", "encapsulated", "in", "collagen", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 19, 20 ], [ 30, 31 ], [ 35, 36 ] ]
+  }, {
+    "sentence_tokens" : [ "Compared", "to", "the", "common", "in", "vitro", "3D", "cell", "culture", "protocol", "of", "randomly", "embedding", "hundreds", "or", "thousands", "of", "cells", "in", "a", "matrix", ",", "the", "drop", "patterning", "chip", "is", "able", "to", "embed", "a", "similar", "sample", "size", "of", "cells", "in", "a", "matrix", ",", "approximately", "on", "the", "same", "focal", "plane", "in", "a", "well", "organized", "way", "(", "Fig.", "4a", ")", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "Samples", "were", "then", "incubated", "at", "4", "degrees", "C", "with", "a", "primary", "vimentin", "(", "Figure", "S6", ")", "antibody", "(", "1:50", ",", "mouse", ",", "Santa", "Cruz", ")", "diluted", "in", "incubation", "solution", "(", "PBS", "with", "0.1", "%", "BSA", ")", "overnight", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "No", "statistical", "difference", "was", "measured", "in", "the", "patterning", "and", "trapping", "efficiencies", "between", "different", "inter-well", "spacings", "within", "a", "chip", "(", "Fig.", "3a", ")", ",", "which", "suggests", "that", "inter-well", "distance", "does", "not", "markedly", "affect", "efficiencies", "." ],
+    "entities_indices" : [ [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "To", "quantify", "the", "fidelity", "of", "the", "drop", "patterning", "method", ",", "we", "measured", "the", "horizontal", "(", "X)", "and", "vertical", "(", "Y", ")", "distances", "(", "arrows", "in", "Fig.", "4f", ")", "between", "two", "cells", "or", "clusters", "that", "were", "patterned", "by", "neighboring", "microwells", "(", "150", "mu", "m", "spacing", ")", "immediately", "after", "collagen", "gelation", "." ],
+    "entities_indices" : [ [ 47, 48 ] ]
+  }, {
+    "sentence_tokens" : [ "Using", "a", "platform", "we", "term", "``", "the", "drop", "patterning", "chip", "''", ",", "thousands", "of", "cells", "were", "simultaneously", "transferred", "from", "microwell", "arrays", "and", "fully", "embedded", ",", "only", "using", "the", "force", "of", "gravity", ",", "in", "precise", "patterns", "in", "3D", "collagen", "I", "or", "Matrigel", "." ],
+    "entities_indices" : [ [ 9, 10 ], [ 36, 37, 38 ] ]
+  }, {
+    "sentence_tokens" : [ "Arrays", "from", "difference", "chips", "showed", "similar", "distributions", "in", "both", "directions", "." ],
+    "entities_indices" : [ [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "Specifically", ",", "the", "samples", "were", "washed", "in", "PBS", ",", "fixed", "with", "3.7", "%", "paraformaldehyde", "at", "37", "degrees", "C", "for", "30", "min", ",", "and", "permeabilized", "with", "0.5", "%", "Triton", "X-100", "at", "37", "degrees", "C", "for", "30", "min", "." ],
+    "entities_indices" : [ [ 27, 28, 29 ] ]
+  }, {
+    "sentence_tokens" : [ "Treating", "the", "PDMS", "substrate", "with", "air", "plasma", "and", "then", "incubating", "in", "bovine", "serum", "albumin", "(", "BSA", ")", "prior", "to", "seeding", "promoted", "surface", "wetting", "and", "prevented", "cell", "attachment", ",", "respectively", "." ],
+    "entities_indices" : [ [ 13, 14 ], [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "Using", "collagen", "I", "for", "3D", "culturing", "of", "cells", "provides", "them", "with", "a", "fibrillar", "network", "similar", "to", "the", "native", "ECM", "in", "which", "a", "mesenchymal", "phenotype", "and", "protrusive", "sensing", "are", "promoted", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 4, 5 ], [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "Matrix", "materials", "and", "their", "biophysical", "properties", "are", "important", "considerations", "when", "designing", "and", "conducting", "studies", "of", "cell", "behavior", "in", "3D", "." ],
+    "entities_indices" : [ [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "gentle", "transfer", "method", "furthermore", "leads", "to", "excellent", "cell", "viability", "." ],
+    "entities_indices" : [ [ 8, 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "Engineered", "scaffolds", ",", "such", "as", "polymer", "structures", "fabricated", "via", "direct", "laser", "writing", "(", "DLW", ")", "and", "crack", "based", "patterning", ",", "provide", "single", "cells", "with", "adhesive", ",", "topological", "supports", "in", "a", "3D", "space", "." ],
+    "entities_indices" : [ [ 30, 31 ] ]
+  }, {
+    "sentence_tokens" : [ "Cell-cell", "distances", "were", "measured", "with", "ImageJ", "." ],
+    "entities_indices" : [ [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "Hundreds", "to", "thousands", "of", "cells", "may", "be", "captured", "in", "the", "wells", "on", "a", "chip", "for", "subsequent", "simultaneous", "patterning", "in", "a", "hydrogel", "(", "Fig.", "1c", ")", "." ],
+    "entities_indices" : [ [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "it", "would", "benefit", "a", "wide", "variety", "of", "studies", "to", "have", "a", "simple", "method", "to", "pattern", "cells", "within", "3D", "matrices", "for", "observation", "of", "their", "behavior", "over", "extended", "periods", "of", "time", "(", "longitudinal", ")", "." ],
+    "entities_indices" : [ [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "believe", "the", "drop", "patterning", "chip", "will", "become", "a", "useful", "tool", "to", "isolate", "and", "study", "the", "biological", "basis", "of", "different", "phenotypic", "behaviors", "displayed", "within", "the", "same", "cell", "line", "with", "respect", "to", "interactions", "with", "matrix", "materials.Technologies", ",", "such", "as", "cell", "microdroplets", "and", "micro-chambers", "along", "a", "microfluidic", "channel", ",", "are", "able", "to", "provide", "cells", "a", "3D", "environment", "while", "possibly", "allowing", "for", "cell", "proliferation", "to", "be", "tracked", "in", "individual", "droplets", "or", "chambers", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 53, 54 ], [ 59, 60, 61 ] ]
+  }, {
+    "sentence_tokens" : [ "Figure", "6e", "shows", "the", "3D", "reconstruction", "of", "ROI1", ",", "color", "coded", "by", "tumor", "volume", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 7, 8 ], [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "provides", "the", "basis", "for", "which", "cell-matrix", "interactions", "may", "be", "studied", "with", "respect", "to", "many", "different", "biochemical", "compositions", ",", "morphologies", ",", "and", "stiffness", "of", "ECM", "at", "the", "single-cell", "level", "in", "a", "more", "controllable", "way.Compared", "to", "random", "mixing", "of", "cells", "in", "a", "gel", ",", "this", "well", "organized", "method", "of", "3D", "cell", "culture", "made", "it", "possible", "to", "keep", "track", "of", "individual", "cell", "positions", "in", "a", "large", "sample", "size", "on", "one", "chip", "." ],
+    "entities_indices" : [ [ 24, 25 ], [ 48, 49 ], [ 68, 69 ] ]
+  }, {
+    "sentence_tokens" : [ "Again", ",", "ROI1", "was", "divided", "into", "eight", "zones", "." ],
+    "entities_indices" : [ [ 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "After", "allowing", "the", "cells", "to", "settle", "into", "the", "microwells", "for", "5", "minutes", ",", "excess", "medium", "and", "cells", "were", "removed", "from", "the", "surface", "by", "gently", "flushing", "with", "phosphate", "buffered", "saline", "(", "PBS", ")", "." ],
+    "entities_indices" : [ [ 26, 27 ] ]
+  }, {
+    "sentence_tokens" : [ "After", "an", "incubation", "time", "of", "4", "minutes", "and", "30", "seconds", "at", "37", "degrees", "C", ",", "the", "chip", "was", "inverted", "a", "second", "time", "and", "incubated", "at", "37", "degrees", "C", "for", "30", "minutes", "longer", "." ],
+    "entities_indices" : [ [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "square", "coverslip", "with", "standard", "dimensions", "(", "22", "mm", "x", "22", "mm", ",", "thickness", ":", "120", "-", "160", "mu", "m", ")", "was", "used", "to", "seal", "the", "whole", "device", "." ],
+    "entities_indices" : [ [ 13, 14, 15, 16, 17, 18, 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "To", "demonstrate", "how", "variable", "spacing", "may", "be", "used", "to", "investigate", "cell-cell", "interaction", "distances", "as", "a", "function", "of", "matrix", "properties", ",", "a", "concentric-circle", "pattern", "consisting", "of", "16", "radial", "lines", "was", "drop", "patterned", "and", "the", "cells", "were", "incubated", "(", "Fig.", "7c", ",", "d", ")", "for", "six", "days.In", "the", "concentric-circle", "pattern", "design", ",", "the", "cell-cell", "spacing", "along", "the", "radii", "is", "100", "mu", "m", "(", "red", "double", "headed", "arrow", ",", "Fig.", "7c", ")", "." ],
+    "entities_indices" : [ [ 64, 65 ] ]
+  }, {
+    "sentence_tokens" : [ "Using", "soft", "lithography", "techniques", ",", "we", "molded", "microwells", "onto", "a", "PDMS", "(", "Sylgard", "184", ",", "Dow", "Corning", ")", "sheet", "via", "the", "silicon", "master", "with", "micro-posts", "." ],
+    "entities_indices" : [ [ 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "majority", "of", "cells", "formed", "small", "MCTS", "with", "diameters", "of", "30", "-", "60", "mu", "m." ],
+    "entities_indices" : [ [ 13, 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "surface", "of", "the", "plasma", "treated", "microwell", "substrate", "and", "the", "glass", "coverslip", "were", "then", "incubated", "at", "room", "temperature", "for", "one", "hour", "with", "a", "10", "%", "bovine", "serum", "albumin", "(", "BSA", ")", "solution", "to", "further", "prevent", "cell", "attachment.After", "the", "BSA", "treatment", ",", "250", "mu", "L", "cell", "suspension", "(", "1", "x", "10", "cells/mL", ")", "was", "seeded", "on", "the", "microwell", "substrate", "and", "the", "cells", "were", "allowed", "to", "settle", "into", "the", "microwells", "for", "about", "5", "min", "." ],
+    "entities_indices" : [ [ 27, 28 ], [ 29, 30 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "averages", "and", "standard", "deviations", "of", "all", "measurements", "are", "143", "+/-", "26", "mu", "m", "in", "the", "X-", "and", "144", "+/-", "24", "mu", "m", "in", "the", "Y-direction", "." ],
+    "entities_indices" : [ [ 16, 17, 18, 19, 20, 21, 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "As", "shown", "previously", ",", "not", "all", "trapped", "cells", "fell", "out", "of", "the", "wells", ",", "which", "means", "there", "was", "a", "nominal", "discrepancy", "between", "the", "cell", "trapping", "efficiency", "in", "the", "microwells", "and", "the", "cell", "patterning", "efficiency", "in", "collagen", "." ],
+    "entities_indices" : [ [ 35, 36 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "enclosed", "chip", "was", "inverted", "and", "the", "trapped", "cells", "were", "allowed", "to", "fall", ",", "due", "to", "gravity", ",", "out", "of", "the", "microwells", "." ],
+    "entities_indices" : [ [ 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "To", "avoid", "local", "pH", "variance", ",", "the", "solution", "was", "pipetted", "up", "and", "down", "each", "time", "a", "fraction", "of", "NaOH", "was", "added", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "discrepancies", "between", "patterning", "and", "trapping", "efficiencies", "on", "different", "chips", "showed", "consistency", "regardless", "of", "the", "fluctuation", "in", "trapping", "efficiency", "(", "details", "in", "Figure", "S5", ")", ",", "which", "implies", "that", "this", "discrepancy", "is", "mainly", "due", "to", "the", "inherent", "adhesive", "interactions", "between", "cells", "and", "the", "microwell", "substrate", "material", "." ],
+    "entities_indices" : [ [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "After", "3.5", "days", "in", "the", "collagen", "gel", ",", "cells", "in", "zones", "II", ",", "III", ",", "IV", "and", "VII", "displayed", "the", "highest", "motility", "." ],
+    "entities_indices" : [ [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "Kernel", "distributions", "of", "the", "cell-cell", "distance", "(", "Fig.", "4g", ",", "h", ")", "were", "based", "on", "a", "total", "of", "558", "measurements", "in", "the", "X", "direction", "and", "515", "measurements", "in", "the", "Y", "direction", "on", "four", "arrays", "from", "four", "individual", "chips", "." ],
+    "entities_indices" : [ [ 37, 38 ] ]
+  }, {
+    "sentence_tokens" : [ "Biophysical", "properties", "of", "the", "extracellular", "matrix", "(", "ECM", ")", "are", "known", "to", "play", "a", "significant", "role", "in", "cell", "behavior", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "After", "2", "minutes", ",", "the", "microwells", "were", "out", "of", "focus", ",", "which", "means", "cells", "left", "the", "microwells", "and", "were", "traveling", "through", "the", "collagen", "solution", "." ],
+    "entities_indices" : [ [ 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "brief", ",", "a", "layer", "of", "SU-8", "(", "27.5", "mu", "m", "thick", ")", "was", "spin", "coated", "on", "a", "3-inch", "silicon", "wafer", "for", "30", "sec", "at", "2,800", "rpm", "." ],
+    "entities_indices" : [ [ 6, 7, 8, 9, 10, 11, 12, 13 ], [ 14, 15 ], [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "second", "set", "of", "steps", "of", "the", "drop", "patterning", "technique", "transfers", "the", "array", "of", "cells", "into", "the", "collagen", "gel", "(", "Fig.", "2a", ",", "steps", "6", "-", "9", ")", "." ],
+    "entities_indices" : [ [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "Both", "the", "cell", "trapping", "efficiency", "and", "cell", "patterning", "efficiency", "were", "calculated", "according", "to", "equation", "(", "1", ")", ",", "by", "dividing", "the", "total", "number", "of", "cell", "occupied", "positions", "either", "in", "the", "microwells", "or", "in", "the", "collagen", "by", "the", "total", "number", "of", "microwells.1Efficiency", "(", "%", ")", "=", "NumberofOccupiedPositionsTotalNumberofMicrowells", "x", "100Cell", "trapping", "(", "T", ")", "and", "cell", "patterning", "(", "P", ")", "efficiencies", "for", "this", "method", "were", "measured", "on", "a", "total", "of", "forty", "20", "x", "20", "microwell", "arrays", "distributed", "over", "four", "chips", "(", "Fig.", "3a", ")", "." ],
+    "entities_indices" : [ [ 34, 35 ], [ 77, 78 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "drop", "patterning", "method", "may", "also", "be", "used", "as", "part", "of", "a", "multiplexed", "design", ",", "integrated", "with", "other", "platforms", "--", "such", "as", "a", "chemotaxis", "device", "or", "an", "engineered", "blood", "vessel", "--", "to", "create", "a", "complex", "engineered", "niche", "for", "large", "scale", "studies", "cell-matrix", "interactions", "." ],
+    "entities_indices" : [ [ 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "Eight", "parts", "of", "type", "I", "bovine", "collagen", "monomer", "solution", "(", "3.1", "mg/mL", ",", "pH", "2", ",", "PureCol", ",", "Advanced", "Matrix", ",", "USA", ")", "was", "diluted", "with", "one", "part", "of", "10", "x", "PBS", ",", "and", "then", "neutralized", "to", "a", "pH", "of", "7.2", "-", "7.6", "with", "0.1", "M", "sodium", "hydroxide", "(", "NaOH", ")", "solution", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 6, 7 ], [ 13, 14 ], [ 38, 39 ], [ 46, 47, 48 ], [ 49, 50 ] ]
+  }, {
+    "sentence_tokens" : [ "Some", "innovative", "methods", "to", "manipulate", "cells", "into", "patterns", "include", "anchoring", "DNA", "labeled", "cells", "on", "a", "DNA", "patterned", "substrate", "and", "using", "dielectrophoretic", "(", "DEP", ")", "forces", "to", "attract", "cells", "to", "patterned", "nodes", "." ],
+    "entities_indices" : [ [ 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "Array", "patterns", "may", "be", "an", "efficient", "tool", "for", "ease", "of", "locating", "individual", "cells", "when", "one", "studies", "single", "cell", "behaviors", "in", "3D", "matrices", "." ],
+    "entities_indices" : [ [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "coverslip", "was", "also", "carefully", "slid", "aside", "for", "nutrient", "and", "oxygen", "exchange", "(", "Figure", "S2", ")", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "collagen", "I", ",", "we", "observed", "some", "cells", "to", "display", "more", "spread", "and", "motile", "behaviors", "whereas", "others", "displayed", "a", "more", "proliferative", "phenotype", "(", "Fig.", "5", ")", "." ],
+    "entities_indices" : [ [ 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "confocal", "image", "stack", "(", "height", ":", "112", "mu", "m", ")", "was", "acquired", "from", "a", "focal", "plane", "above", "a", "tumor", "array", "to", "a", "focal", "plane", "below", "the", "tumor", "array", "(", "Fig.", "5b", ")", "." ],
+    "entities_indices" : [ [ 19, 20 ], [ 27, 28 ] ]
+  }, {
+    "sentence_tokens" : [ "No", "method", "has", "yet", "been", "devised", "in", "which", "single", "cells", "or", "small", "cell", "clusters", "may", "be", "accurately", "patterned", ",", "without", "using", "any", "externally", "applied", "forces", "or", "chemical", "treatments", ",", "in", "various", "soft", "and", "continuous", "3D", "matrices", ",", "allowing", "for", "dynamic", "studies", "of", "individual", "cells", "'", "responses", "to", "biomechanical", "stimuli", "." ],
+    "entities_indices" : [ [ 34, 35 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "study", "of", "cell", "proliferation", "and", "tumor", "growth", "in", "3D", ",", "we", "chose", "a", "human", "colon", "cancer", "cell", "line", "HCT-116", "(", "ATCC", ")", "as", "a", "cell", "model", "." ],
+    "entities_indices" : [ [ 4, 5, 6 ], [ 7, 8 ], [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "cell", "viability", "assays", "based", "on", "collagen", ",", "HCT-116", "single", "cells", "or", "small", "cell", "clusters", "were", "stained", "with", "calcein", "AM", "and", "EthD-1", "(", "LIVE", "and", "DEAD", "Viability", "Kit", ",", "Invitrogen", ")", "19", "hours", "after", "drop", "patterning", "." ],
+    "entities_indices" : [ [ 2, 3, 4 ], [ 7, 8 ], [ 19, 20, 21 ], [ 22, 23 ], [ 26, 27 ], [ 28, 29 ] ]
+  }, {
+    "sentence_tokens" : [ "Based", "on", "the", "final", "concentration", "desired", ",", "we", "were", "able", "to", "adjust", "the", "collagen", "solution", "to", "any", "concentration", "lower", "than", "2.48", "mg/mL", ",", "by", "diluting", "with", "cell", "culture", "medium", "." ],
+    "entities_indices" : [ [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "After", "fixing", "the", "tumor", "arrays", "in", "Matrigel", "at", "Day", "3.5", ",", "we", "acquired", "fluorescence", "(", "red", ":", "F-actin", ",", "blue", ":", "nuclei", ")", "confocal", "images", "of", "the", "solid", "tumors", "in", "ROI1", "(", "Fig.", "6d", ")", "and", "ROI2", "(", "Fig.", "6f", ")", ",", "to", "further", "compare", "the", "morphologies", "of", "these", "tumors", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 17, 18 ], [ 28, 29 ], [ 36, 37 ], [ 49, 50 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "results", "presented", "here", "focused", "on", "collagen", "I", "and", "Matrigel", ",", "but", "this", "method", "may", "be", "furthermore", "expandable", "to", "any", "hydrogel", "formulation", "for", "which", "the", "gelation", "kinetics", "may", "be", "controlled", "on", "the", "time", "scale", "of", "minutes", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "Step-by-step", "drop", "patterning", "in", "collagen", "." ],
+    "entities_indices" : [ [ 0, 1, 2 ], [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "Overlaid", "on", "the", "image", "in", "Fig.", "7d", "(", "at", "day", "6", ")", "are", "the", "radial", "patterns", "(", "dotted", "yellow", "lines", ")", "and", "short", "solid", "lines", "(", "red", "and", "black", ")", "parallel", "to", "cell", "protrusions", "from", "the", "tumors", "." ],
+    "entities_indices" : [ [ 36, 37 ] ]
+  }, {
+    "sentence_tokens" : [ "Longitudinal", "observations", "of", "cell", "morphology", ",", "division", ",", "and", "tumor", "development", "in", "Matrigel", "." ],
+    "entities_indices" : [ [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "example", ",", "the", "intermediate", "filament", "protein", "vimentin", ",", "which", "is", "typically", "upregulated", "in", "cells", "undergoing", "epithelial-to-mesenchymal", "transition", "(", "EMT", ")", ",", "was", "labeled", "on", "the", "array", "of", "MCTS", ",", "as", "shown", "in", "Figure", "S6.In", "order", "to", "confirm", "that", "drop", "patterning", "does", "not", "damage", "living", "cells", ",", "cell", "viability", "assays", "were", "conducted", "via", "calcein", "acetoxymethyl", "ester", "(", "AM", ")", "and", "ethidium", "homodimer-1", "(", "EthD-1", ")", "staining", "19", "hours", "after", "the", "cells", "had", "been", "patterned", "in", "the", "collagen", "gel", "." ],
+    "entities_indices" : [ [ 4, 5, 6, 7 ], [ 7, 8 ], [ 19, 20 ], [ 47, 48, 49 ], [ 53, 54 ], [ 55, 56 ], [ 60, 61 ], [ 63, 64 ], [ 76, 77 ] ]
+  }, {
+    "sentence_tokens" : [ "3D", "reconstructions", "of", "z-stacks", "of", "MCTS", "arrays", "were", "performed", "on", "software", "ZEN", "(", "Zeiss", ")", "and", "3D", "rendering", "based", "on", "confocal", "microscopic", "images", "was", "made", "by", "software", "Imaris", "8", "(", "Bitplane", ")", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "Fig.", "5a", ",", "an", "array", "of", "cells", "was", "drop", "patterned", "into", "collagen", "I", "and", "the", "cells", "were", "tracked", "in", "nine", "positions", "over", "3.5", "days", "." ],
+    "entities_indices" : [ [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "Matrigel", "(", "growth", "factor", "reduced", ",", "Corning", "Life", "Sciences", ",", "Lowell", ",", "MA", ")", "was", "diluted", "with", "cell", "culture", "medium", "to", "a", "final", "concentration", "of", "5", "mg/mL", "." ],
+    "entities_indices" : [ [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "Then", "the", "chip", "was", "transferred", "into", "an", "incubator", "for", "prewarming", "." ],
+    "entities_indices" : [ [ 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "First", ",", "we", "treated", "the", "surface", "with", "Tridecafluoro-1", ",1,2,2-tetrahydrooctyl-1-trichlorosilane", "(", "TFOCS", ",", "Gelest", ",", "PA", ",", "USA", ")", "to", "prevent", "cured", "PDMS", "sticking", "to", "the", "master", "." ],
+    "entities_indices" : [ [ 7, 8, 9 ], [ 10, 11 ], [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "An", "example", "of", "this", "is", "the", "drastic", "difference", "in", "exhibited", "morphology", "dependent", "upon", "whether", "cells", "are", "plated", "on", "a", "2D", "substrate", "or", "within", "a", "3D", "matrix", "(", "Figure", "S1", ")", "." ],
+    "entities_indices" : [ [ 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "patterned", "array", "consisted", "of", "eight", "single", "cells", "(", "I-VIII", ")", "and", "one", "doublet", "(", "IX", ")", "." ],
+    "entities_indices" : [ [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "article", ",", "the", "detailed", "operation", "of", "the", "drop", "patterning", "chip", "is", "first", "presented", "for", "large-scale", "arrays", "based", "on", "collagen", "I.", "Performance", "of", "the", "method", "is", "evaluated", "by", "its", "patterning", "efficiency", ",", "single-cell", "occupancy", "rate", ",", "and", "spatial", "distribution", "of", "cells", "in", "3D", "collagen", "gel", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 20, 21 ], [ 43, 44, 45 ] ]
+  }, {
+    "sentence_tokens" : [ "They", "continued", "to", "proliferate", "and", "migrate", "into", "neighboring", "zones.In", "contrast", ",", "the", "cells", "in", "zones", "V", ",", "VI", ",", "VIII", "and", "IX", "were", "not", ",", "at", "least", "initially", ",", "as", "motile", ",", "however", ",", "they", "did", "proliferate", "." ],
+    "entities_indices" : [ [ 17, 18 ], [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "Immediately", "after", "the", "first", "chip", "inversion", "(", "labeled", "Time", "0", ")", ",", "the", "cells", "were", "still", "trapped", "in", "the", "microwells", "." ],
+    "entities_indices" : [ [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "step", "allowed", "for", "optimal", "wetting", "behavior", "while", "preventing", "cell", "attachment", "to", "the", "microwell", "walls", "." ],
+    "entities_indices" : [ [ 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "On", "day", "3", ",", "the", "cells", "(", "phase-contrast", "images", "shown", "in", "Fig.", "4c", ")", "were", "fixed", "and", "their", "nuclei", "and", "actin", "fluorescently", "labeled", "in", "order", "to", "visualize", "cell", "morphology", "as", "the", "result", "of", "the", "3-day", "incubation", "within", "the", "drop", "patterning", "chip", "(", "Fig.", "4d", ")", "." ],
+    "entities_indices" : [ [ 20, 21 ], [ 40, 41 ] ]
+  }, {
+    "sentence_tokens" : [ "HCT-116", "tumor", "arrays", "were", "grown", "in", "3D", "collagen", "I", "or", "Matrigel", "for", "multiple", "days", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 6, 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "Micro-posts", "on", "the", "silicon", "wafer", "were", "fabricated", "in", "a", "negative", "photoresist", "(", "SU-8", "3025", ",", "MicroChem", ",", "MA", ",", "USA", ")", "through", "the", "techniques", "of", "photolithography", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "Another", "drawback", "of", "some", "of", "these", "methods", "for", "mechanobiological", "experiments", "is", "the", "presence", "of", "stiff", "substrates", "and/or", "interfaces", "necessitated", "by", "the", "patterning", "methods", ",", "which", "may", "prevent", "the", "full", "encapsulation", "of", "the", "cells.Fully", "embedding", "a", "large", "population", "of", "single", "cells", "at", "specified", "locations", "in", "a", "3D", ",", "uniform", ",", "and", "soft", "environment", "presents", "a", "particular", "challenge", "." ],
+    "entities_indices" : [ [ 45, 46 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "goal", "of", "this", "work", "was", "to", "develop", "a", "simple", "and", "low-cost", "platform", "for", "patterning", "a", "large", "population", "of", "single", "cells", "or", "cell", "clusters", "completely", "within", "a", "3D", "environment", "(", "i.e", ".,", "without", "any", "undesirable", "discontinuous", "or", "stiff", "boundaries", ")", "." ],
+    "entities_indices" : [ [ 27, 28 ] ]
+  }, {
+    "sentence_tokens" : [ "After", "the", "cells", "were", "no", "longer", "sinking", ",", "the", "chip", "was", "transferred", "to", "a", "37", "degrees", "C", "incubator", "for", "10", "minutes", "to", "fully", "gel", "the", "matrix", "." ],
+    "entities_indices" : [ [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "drop", "patterning", "chip", "consists", "of", "three", "layers", "(", "Fig.", "1a", ")", ",", "which", "create", "a", "closed", "chamber", "that", "is", "filled", "with", "hydrogel", "(", "Fig.", "1b", ")", "." ],
+    "entities_indices" : [ [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "a", "demonstration", "of", "the", "applicability", "of", "this", "method", "for", "tracking", "the", "manifestation", "of", "cell", "behavioral", "heterogeneity", "within", "a", "matrix", ",", "we", "point", "out", "the", "distinctly", "different", "behaviors", "of", "individual", "cell", "development", "in", "one", "array", "in", "both", "the", "collagen", "I", "and", "Matrige", "." ],
+    "entities_indices" : [ [ 30, 31, 32 ], [ 38, 39 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "drop", "patterning", "chip", "." ],
+    "entities_indices" : [ [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "chamber", "was", "filled", "with", "about", "300", "mu", "L", "collagen", "I", "solution", "(", "1.0", "mg/mL", ")", "and", "then", "sealed", "with", "the", "coverslip", "(", "top", "component", ",", "Fig.", "1a", ")", "." ],
+    "entities_indices" : [ [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "designed", "the", "microwell", "patterns", "on", "computer", "aid", "design", "(", "CAD", ")", "software", "SolidWorks", "(", "Dassault", "Syst", "e", "mes", ")", ",", "and", "all", "the", "patterns", "were", "printed", "on", "a", "chrome", "mask", "by", "a", "high-resolution", "printing", "service", "(", "Front", "Range", "Photo", "Mask", ",", "CO", ",", "USA", ")", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 30, 31 ], [ 40, 41 ], [ 42, 43 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "between", "2D", "and", "3D", "patterning", "methods", "are", "overlay", "methods", ",", "where", "cells", "are", "patterned", "on", "a", "substrate", "and", "then", "covered", "with", "a", "layer", "of", "hydrogel", "or", "other", "3D", "matrix", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 28, 29 ] ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "it", "is", "becoming", "increasingly", "apparent", "that", "important", "aspects", "of", "cell", "behavior", "are", "elicited", "by", "their", "interactions", "with", "the", "extracellular", "matrix", "(", "ECM", ")", "." ],
+    "entities_indices" : [ [ 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "first", "set", "of", "steps", "of", "the", "drop", "patterning", "technique", "includes", "priming", "the", "microwells", "with", "cells", "and", "assembling", "the", "chip", "(", "Fig.", "2a", ",", "steps", "1", "-", "5", ")", "." ],
+    "entities_indices" : [ [ 19, 20 ], [ 24, 25, 26, 27, 28, 29 ] ]
+  }, {
+    "sentence_tokens" : [ "As", "Matrigel", "is", "a", "popular", "3D", "culture", "matrix", ",", "we", "demonstrated", "that", "our", "drop", "patterning", "method", "would", "be", "amenable", "to", "its", "usage", "." ],
+    "entities_indices" : [ [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "Our", "experience", "and", "other", "reports", ",", "however", ",", "indicate", "that", "the", "single-cell", "trapping", "efficiency", "of", "passive", "methods", "such", "as", "microwells", "is", "highly", "dependent", "on", "cell", "type", "and", "the", "ease", "with", "which", "the", "cells", "may", "be", "dissociated", "." ],
+    "entities_indices" : [ [ 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "Other", "single-cell", "resolution", "patterns", "in", "3D", "." ],
+    "entities_indices" : [ [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "demonstrated", "that", "the", "drop", "patterning", "method", "is", "applicable", "to", "three", "different", "types", "of", "matrix", "material", ":", "collagen", "I", ",", "Matrigel", ",", "and", "agarose", "(", "Figure", "S9", ")", "." ],
+    "entities_indices" : [ [ 17, 18 ], [ 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "green", "circle", "(", "radius", "R", "=", "500", "mu", "m", ")", "with", "a", "nominal", "cell-cell", "distance", "(", "black", "double", "headed", "arrow", ")", "of", "approximately", "200", "mu", "m", "encloses", "most", "cell", "protrusions", "occurring", "between", "MCTS", "in", "the", "circumferential", "direction", "(", "i.e", ".,", "red", "solid", "lines", ")", "." ],
+    "entities_indices" : [ [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "achieved", "an", "average", "viability", "of", "98", "%", ":", "458", "of", "470", "cells", "in", "the", "first", "chip", "and", "358", "of", "361", "cells", "in", "the", "second", "chip", "survived.While", "cells", "are", "being", "drop", "patterned", "in", "the", "collagen", "solution", ",", "cell", "drifting", "in", "the", "plane", "of", "the", "array", "may", "occur", "." ],
+    "entities_indices" : [ [ 16, 17 ], [ 25, 26 ], [ 34, 35 ] ]
+  }, {
+    "sentence_tokens" : [ "Preparation", "of", "collagen", "gel", "and", "Matrigel", "." ],
+    "entities_indices" : [ [ 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "Before", "loading", "the", "cells", "in", "the", "chip", ",", "we", "cultured", "them", "on", "tissue", "culture", "flasks", "in", "McCoy", "'", "s", "5", "A", "modified", "medium", "(", "Corning", ")", "with", "10", "%", "(", "vol", "and", "vol", ")", "FBS", "(", "Gibco", ")", "and", "1", "%", "penicillin", "and", "streptomycin", "(", "Gibco", ")", "at", "37", "degrees", "C", "and", "5", "%", "CO", "in", "a", "humidified", "incubator", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 34, 35 ], [ 41, 42 ], [ 43, 44 ], [ 54, 55 ] ]
+  }, {
+    "sentence_tokens" : [ "With", "a", "large", "and", "yet", "well", "organized", "group", "of", "cells", "captured", "in", "3D", "matrices", ",", "we", "demonstrated", "the", "capability", "of", "locating", "selected", "individual", "cells", "and", "monitoring", "cell", "division", ",", "migration", ",", "and", "proliferation", "for", "multiple", "days", "." ],
+    "entities_indices" : [ [ 12, 13 ], [ 26, 27, 28 ], [ 32, 33 ] ]
+  }, {
+    "sentence_tokens" : [ "Collagen", "gels", "were", "then", "transferred", "into", "a", "glass", "bottom", "dish", "(", "World", "Precision", "Instruments", ",", "FL", ",", "USA", ")", "for", "fixation", "and", "imaging", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "After", "post-exposure", "baking", "at", "65", "degrees", "C", "for", "1", "min", "and", "95", "degrees", "C", "for", "8", "min", ",", "non", "crosslinked", "SU-8", "photoresist", "was", "washed", "off", "through", "the", "developing", "process", ",", "and", "all", "the", "crosslinked", "micro-posts", "remained", "on", "the", "silicon", "wafer", "." ],
+    "entities_indices" : [ [ 20, 21 ], [ 38, 39 ] ]
+  }, {
+    "sentence_tokens" : [ "3D-reconstruction", "(", "Fig.", "5d", ")", "of", "the", "array", "of", "four", "solid", "tumors", "in", "Zones", "V", ",", "VI", ",", "VIII", ",", "and", "IX", "clearly", "shows", "the", "spatial", "relationship", "between", "tumors", "and", "the", "cells", "(", "marked", "with", "arrows", ")", "that", "were", "escaping", "the", "tumors", ",", "and", "reveals", "that", "cell", "migration", "in", "collagen", "did", "not", "only", "happen", "within", "the", "plane", "of", "the", "cell", "array", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 16, 17 ], [ 18, 19 ], [ 28, 29 ], [ 41, 42 ], [ 46, 47, 48 ], [ 49, 50 ] ]
+  }, {
+    "sentence_tokens" : [ "Then", ",", "we", "poured", "a", "thoroughly", "mixed", ",", "degassed", "PDMS", "precursor", "(", "ratio", "of", "base", "and", "curing", "agent", "=", "10:1", "by", "weight", ")", "onto", "the", "silicon", "master", "in", "a", "plastic", "Petri", "dish", "and", "allowed", "the", "PDMS", "to", "cure", "at", "70", "degrees", "C", "overnight", "." ],
+    "entities_indices" : [ [ 14, 15 ], [ 16, 17, 18 ], [ 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "difference", "in", "trapping", "efficiency", "was", "statistically", "significant", "between", "chips", "." ],
+    "entities_indices" : [ [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "Then", "we", "inverted", "the", "chip", "once", "again", "upon", "which", "time", "all", "cells", "fell", "from", "the", "coverslip", "simultaneously", ";", "adhesive", "interactions", "between", "the", "cells", "and", "the", "BSA", "treated", "coverslip", "were", "weaker", "and", "more", "uniform", "than", "those", "between", "the", "cells", "and", "microwells", "." ],
+    "entities_indices" : [ [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "Instead", "of", "protruding", "and", "migrating", "through", "the", "matrix", "as", "in", "collagen", "I", ",", "the", "HCT-116", "cells", "tended", "to", "maintain", "their", "positions", "and", "develop", "into", "MCTS", "in", "the", "Matrigel", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "drop", "patterning", "chip", "also", "demonstrated", "the", "ease", "of", "protein", "expression", "assay", "for", "the", "cells", "in", "selected", "positions", "via", "immunostaining", "." ],
+    "entities_indices" : [ [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "Using", "this", "method", ",", "the", "concentration", "of", "the", "neutralized", "collagen", "solution", "was", "2.48", "mg/mL", "." ],
+    "entities_indices" : [ [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "Population-level", "measurements", "mask", "heterogeneity", "in", "cell", "responses", ",", "and", "large-scale", "individual", "cell", "measurements", "are", "often", "performed", "in", "a", "one-time", ",", "snapshot", "manner", "after", "removing", "cells", "from", "their", "matrix", "." ],
+    "entities_indices" : [ [ 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "verified", "the", "cell", "arrays", "were", "fully", "embedded", "in", "the", "gel", "filled", "chamber", "without", "contacting", "either", "top", "or", "bottom", "surface", "by", "imaging", "the", "chip", "on", "different", "focal", "planes", "after", "the", "collagen", "gelled", "(", "Figure", "S3", ")", "." ],
+    "entities_indices" : [ [ 23, 24 ], [ 30, 31 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "demonstrated", "this", "capability", "with", "a", "couple", "of", "different", "patterns", "that", "we", "dropped", "into", "collagen", "I", "(", "Fig.", "7a", ")", "." ],
+    "entities_indices" : [ [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "Fluorescence", "images", "of", "cells", "and", "MCTS", "and", "reflectance", "imaged", "of", "collagen", "microstructure", "were", "acquired", "with", "a", "laser", "scanning", "confocal", "microscope", "(", "Zeiss", ",", "LSM", "510", "META", ")", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 23, 24 ], [ 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "silicon", "wafer", "was", "then", "hard", "baked", "at", "180", "degrees", "C", "for", "10", "min", "." ],
+    "entities_indices" : [ [ 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "Random", "regions", "on", "the", "chips", "were", "imaged", "." ],
+    "entities_indices" : [ [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "As", "discussed", "previously", ",", "the", "drop", "patterned", "cell", "arrays", "enable", "the", "study", "of", "single-cell", "behavior", "in", "3D", "gels", "over", "extended", "periods", "of", "time", "(", "Fig.", "4", "and", "Figure", "S6", ")", "." ],
+    "entities_indices" : [ [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "One", "way", "of", "achieving", "better", "statistics", "on", "observable", "cell", "behavior", "in", "3D", "culture", "has", "been", "to", "employ", "a", "modified", "hanging", "drop", "protocol", "." ],
+    "entities_indices" : [ [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "Within", "the", "larger", "array", ",", "two", "regions", "of", "interest", "are", "outlined", "(", "ROI1", ":", "blue", "and", "ROI2", ":", "red", ")", "from", "which", "higher", "magnification", "insets", "are", "presented", "." ],
+    "entities_indices" : [ [ 12, 13 ], [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "occurred", "due", "to", "a", "combination", "of", "factors", "including", "cell", "size", "variation", "and", "the", "susceptibility", "of", "cells", "to", "dissociation", "with", "enzymatic", "digestion", "." ],
+    "entities_indices" : [ [ 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "All", "data", "presented", "here", "are", "based", "on", "the", "experiments", "carried", "out", "on", "microwell", "arrays", "with", "center-to-center", "spacing", "(", "along", "both", "columns", "and", "rows", ")", "of", "100", "mu", "m", ",", "150", "mu", "m", ",", "or", "200", "mu", "m.", "On", "each", "drop", "patterning", "chip", ",", "we", "designed", "four", "arrays", "with", "100-mu", "m", "spacing", ",", "fours", "arrays", "of", "150-mu", "m", "spacing", ",", "and", "three", "arrays", "of", "200-mu", "m", "spacing", "." ],
+    "entities_indices" : [ [ 41, 42 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "synergy", "of", "the", "rate", "of", "collagen", "gelation", "and", "velocity", "of", "the", "falling", "cells", "resulted", "in", "the", "cell", "array", "becoming", "fully", "encapsulated", "approximately", "on", "the", "same", "focal", "plane", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "furthermore", "envision", "that", "the", "drop", "patterning", "method", "may", "be", "used", "for", "3D", "co-culture", "studies", "with", ",", "for", "example", ",", "cancer", "associated", "fibroblasts", ",", "endothelial", "cells", ",", "or", "immune", "cells", "on", "one", "chip", "." ],
+    "entities_indices" : [ [ 12, 13 ], [ 32, 33 ] ]
+  }, {
+    "sentence_tokens" : [ "Our", "desire", "for", "developing", "such", "a", "tool", "arose", "from", "facing", "the", "challenges", "of", "obtaining", "significant", "numbers", "of", "data", "points", "on", "the", "physical", "behavior", "of", "single", "cells", "and/or", "aggregates", "of", "cells", "embedded", "in", "3D", "matrices", "over", "time", "." ],
+    "entities_indices" : [ [ 32, 33 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "position", "shift", "of", "the", "collagen", "gel", "with", "respect", "to", "the", "PDMS", "microwell", "substrate", "--", "the", "gel", "detached", "after", "cell", "culture", "medium", "was", "added", "--", "did", "not", "affect", "the", "fidelity", "of", "the", "cell", "array", "." ],
+    "entities_indices" : [ [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "Position", "control", "over", "cell", "placement", "is", "indeed", "accurate", ",", "however", "these", "methods", "require", "special", "tools", "(", "e.g", ".,", "molecular", "printing", ",", "gold", "coated", "nodes", ",", "specially", "treated", "cells", ")", "not", "easily", "accessible", "in", "every", "lab", "." ],
+    "entities_indices" : [ [ 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "Matrigel", ",", "on", "the", "other", "hand", ",", "originating", "from", "the", "epithelial", "basement", "membrane", ",", "provides", "a", "different", "set", "of", "physical", "and", "biochemical", "cues", "for", "cells", "in", "3D", "culture", ",", "which", "promote", "organoid", "formation", "and", "tumor", "growth", "." ],
+    "entities_indices" : [ [ 26, 27 ], [ 34, 35 ] ]
+  }, {
+    "sentence_tokens" : [ "Finally", ",", "we", "present", "longitudinal", "observations", "of", "cell", "motility", "and", "in", "situ", "development", "of", "multicellular", "tumor", "spheroids", "(", "MCTS", ")", "from", "these", "individual", "cells", "in", "two", "representative", ",", "widely", "used", "matrices", ":", "collagen", "I", "and", "Matrigel", "." ],
+    "entities_indices" : [ [ 7, 8, 9 ], [ 15, 16 ], [ 32, 33 ], [ 35, 36 ] ]
+  }, {
+    "sentence_tokens" : [ "An", "F-actin", "probe", "rhodamine", "phalloidin", "(", "1:50", ",", "R415", ",", "Thermo", "Fisher", ")", "and", "a", "second", "antibody", "(", "1:50", ",", "mouse", ",", "Alexa", "Fluor", "488", ",", "Santa", "Cruz", ")", "were", "then", "applied", "in", "dark", "at", "4", "degrees", "C", "overnight", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 4, 5 ], [ 22, 23, 24, 25 ], [ 26, 27 ] ]
+  }, {
+    "sentence_tokens" : [ "Even", "though", "cell", "patterning", "efficiency", "may", "vary", ",", "the", "probability", "of", "the", "number", "of", "occupant", "cells", "per", "position", "was", "relatively", "consistent", "across", "chips", "." ],
+    "entities_indices" : [ [ 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "Figure", "3c", "summarizes", "the", "number", "of", "arrays", "that", "were", "measured", "on", "each", "chip", "." ],
+    "entities_indices" : [ [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "Design", "and", "fabrication", "of", "the", "drop", "patterning", "chip", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "All", "three", "components", "were", "sterilized", "all", "the", "three", "components", "with", "70", "%", "ethanol", "and", "then", "with", "UV", "light", "for", "15", "minutes", "." ],
+    "entities_indices" : [ [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "we", "term", "the", "platform", "\"", "the", "drop", "patterning", "chip", "\"", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "Whereas", "these", "methods", "allow", "for", "cell", "anchorage", "and", "ease", "of", "locating", "and", "image", "collecting", ",", "the", "stiff", "and/or", "2D", "nature", "of", "the", "substrates", "(", "e.g", ".,", "glass", "or", "plastic", "surfaces", ",", "2", "-", "4", "GPa", ")", "do", "not", "provide", "an", "accurate", "analog", "to", "the", "soft", ",", "3D", "nature", "of", "the", "in", "vivo", "environment", "(", "e.g", ".,", "breast", "tissue", ",", "hundreds", "of", "Pascals", ";", "human", "intestinal", "tissue", ",", "thousands", "of", "Pascals", ")", "." ],
+    "entities_indices" : [ [ 34, 35 ], [ 46, 47 ] ]
+  }, {
+    "sentence_tokens" : [ "Depending", "on", "the", "type", "of", "study", ",", "a", "model", "of", "the", "mechanical", ",", "morphological", ",", "and/or", "biological", "activity", "of", "the", "ECM", "may", "be", "desired", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "Reflectance", "confocal", "microscopy", "was", "used", "to", "visualize", "detailed", "microstructure", "of", "collagen", "(", "thickness", ":", "7", "mu", "m", ")", "surrounding", "the", "migrating", "cells", "(", "Fig.", "5c", ")", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "It", "took", "approximately", "8", "minutes", "for", "the", "single", "cells", "and", "11", "minutes", "for", "most", "the", "cells", "and", "cell", "clusters", "(", "i.e", ".,", "a", "doublet", "of", "cells", ",", "indicated", "with", "a", "blue", "arrow", ")", "to", "settle", "on", "the", "coverslip", "." ],
+    "entities_indices" : [ [ 31, 32 ] ]
+  }, {
+    "sentence_tokens" : [ "Because", "Matrigel", "tended", "to", "break", "when", "we", "tried", "to", "transfer", "it", "from", "a", "chip", "to", "a", "new", "dish", ",", "we", "directly", "stained", "the", "MCTS", "in", "the", "Matrigel", "on", "chip", "and", "conducted", "confocal", "imaging", "through", "the", "coverslip", "(", "Figure", "S8", ")", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 13, 14 ], [ 28, 29 ] ]
+  }, {
+    "sentence_tokens" : [ "After", "soft", "baking", "at", "95", "degrees", "C", "for", "10", "min", ",", "the", "SU-8", "coating", "was", "crosslinked", "under", "the", "exposure", "of", "UV", "light", "through", "a", "chrome", "mask", "." ],
+    "entities_indices" : [ [ 12, 13 ], [ 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "multiple-day", "monitoring", "of", "cell", "proliferation", "in", "ROI1", "is", "shown", "in", "Fig.", "6c", "." ],
+    "entities_indices" : [ [ 4, 5, 6 ], [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "According", "to", "the", "manufacturer", ",", "Matrigel", "gels", "rapidly", "at", "22", "degrees", "C", "to", "37", "degrees", "C.", "Indeed", ",", "when", "dropping", "the", "cells", "into", "Matrigel", "by", "inverting", "the", "chip", "at", "room", "temperature", ",", "we", "found", "that", "before", "cells", "reached", "the", "coverslip", "(", "spacer", "height", ":", "600", "mu", "m", ")", ",", "the", "rapid", "gelation", "of", "Matrigel", "had", "already", "captured", "the", "cells", "in", "the", "chamber", "." ],
+    "entities_indices" : [ [ 27, 28 ] ]
+  }, {
+    "sentence_tokens" : [ "Researchers", "have", "also", "used", "an", "array", "of", "magnetic", "nodes", "to", "trap", "magnetically", "labeled", "cells", "in", "between", "two", "layers", "of", "collagen", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "Then", "the", "supernatant", "was", "removed", "and", "excess", ",", "untrapped", "cells", "were", "gently", "flushed", "away", "with", "phosphate", "buffered", "saline", "(", "PBS", ")", "." ],
+    "entities_indices" : [ [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "chamber", "was", "filled", "with", "a", "collagen", "solution", "(", "1.0", "mg/mL", ")", "and", "then", "sealed", "with", "the", "coverslip", "(", "top", "component", ",", "Fig.", "1a", ")", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "Here", "we", "present", "an", "easy", "and", "low-cost", "method", "for", "large-scale", ",", "longitudinal", "studies", "of", "heterogeneous", "cell", "behavior", "in", "3D", "hydrogel", "matrices", "." ],
+    "entities_indices" : [ [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "Pattern", "fidelity", "allowed", "for", "easy", ",", "repeated", "location", "of", "the", "cells", "." ],
+    "entities_indices" : [ [ 0, 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "Only", "after", "three", "days", "did", "cells", "from", "these", "MCTS", "begin", "to", "form", "protrusive", "actions", "and", "migrate", "away", "from", "the", "MCTS", "in", "both", "single-cell", "(", "green", "arrowhead", ")", "and", "collective", "(", "white", "arrowheads", ")", "manners.After", "3.5", "days", ",", "the", "cells", "in", "the", "3", "x", "3", "array", "were", "fixed", "and", "their", "nuclei", "(", "Hoechst", ",", "blue", ")", "and", "F-actin", "(", "phalloidin", ",", "red", ")", "were", "stained", "." ],
+    "entities_indices" : [ [ 56, 57 ], [ 58, 59 ] ]
+  }, {
+    "sentence_tokens" : [ "Morphological", "classifications", "such", "as", "this", "have", "been", "previously", "described", "for", "a", "panel", "of", "human", "breast", "cancer", "cell", "lines", ",", "where", "the", "loosely", "organized", "grape", "like", "morphology", "has", "been", "attributed", "to", "weaker", "cell-cell", "adhesion", "." ],
+    "entities_indices" : [ [ 31, 32, 33 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "average", "cell", "trapping", "efficiency", "and", "cell", "patterning", "efficiency", "of", "all", "arrays", "on", "the", "four", "chips", "were", "65.7", "+/-", "11.5", "%", "and", "51.2", "+/-", "11.7", "%", ",", "respectively.In", "addition", "to", "single", "cells", ",", "small", "cell", "clusters", ",", "such", "as", "doublets", "and", "triplets", ",", "were", "trapped", "in", "the", "microwells", "and", "patterned", "in", "collagen", "(", "Fig.", "3e", ")", "." ],
+    "entities_indices" : [ [ 15, 16 ], [ 51, 52 ] ]
+  }, {
+    "sentence_tokens" : [ "Notably", ",", "the", "cells", "in", "zones", "I", "and", "II", "exhibited", "extensive", "protrusive", "behaviors", "into", "the", "collagen", "matrix", "starting", "from", "day", "2", ",", "with", "the", "protrusions", "changing", "directions", "during", "the", "first", "7", "hours", "of", "day", "2", "." ],
+    "entities_indices" : [ [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "Due", "to", "the", "natural", "adhesion", "of", "PDMS", "to", "itself", "and", "between", "PDMS", "and", "glass", ",", "the", "three", "layers", "spontaneously", "bond", "together", "with", "slight", "pressure", "applied", "by", "hand", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "Embedding", "cells", "in", "a", "3D", "matrix", "is", "most", "simply", "achieved", "by", "mixing", "cells", "with", "a", "liquid", "precursor", "to", "a", "synthetic", "or", "biological", "hydrogel", "and", "allowing", "the", "gelation", "process", "to", "encapsulate", "the", "cells", "." ],
+    "entities_indices" : [ [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "Although", "single-cell", "microwells", "and", "arrays", "were", "used", "here", "to", "illustrate", "the", "use", "of", "this", "new", "method", ",", "we", "would", "like", "to", "point", "out", "that", "it", "is", "possible", "to", "tune", "the", "size", "of", "the", "microwells", "in", "order", "to", "drop-pattern", "aggregates", "of", "cells", "or", "pre-produced", "MCTS.The", "flexibility", "with", "which", "one", "may", "choose", "the", "cell", "patterns", "as", "well", "as", "the", "types", "of", "hydrogel", "makes", "this", "a", "generally", "useful", "tool", "for", "fields", "as", "varied", "as", "tissue", "engineering", ",", "stem", "cell", "research", ",", "ex", "vivo", "cancer", "assays", ",", "in", "vitro", "studies", "on", "intercellular", "communication", "(", "e.g", ".,", "neurite", "outgrowth", "of", "primary", "neurons", ")", ",", "and", "tumor-microenvironment", "interaction", "(", "e.g", ".,", "tumor", "angiogenesis", ")", "." ],
+    "entities_indices" : [ [ 105, 106 ], [ 106, 107 ] ]
+  }, {
+    "sentence_tokens" : [ "After", "the", "cells", "were", "patterned", "in", "collagen", "gel", ",", "the", "whole", "chip", "was", "submerged", "in", "medium", "for", "on-chip", "3D", "cell", "culture", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 11, 12 ], [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "Adhesion", "of", "the", "cells", "to", "the", "PDMS", "microwell", "walls", "varied", ",", "therefore", "not", "all", "cells", "fell", "out", "of", "the", "microwells", "simultaneously", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "drop", "patterning", "method", "is", "easy", "and", "inexpensive", "to", "employ", "and", "significantly", "eases", "the", "task", "of", "collecting", "large", "numbers", "of", "data", "points", "for", "many", "different", "types", "of", "3D", "cell", "studies", "including", ":", "cell-matrix", "interactions", ",", "cell-cell", "interactions", ",", "cell", "division", "mechanics", ",", "and", "organoid", "or", "MCTS", "growth.To", "evaluate", "the", "performance", "of", "our", "method", ",", "we", "drop", "patterned", "cells", "into", "collagen", "I", "gels", "using", "evenly", "spaced", "arrays", "of", "single-cell-sized", "microwells", "." ],
+    "entities_indices" : [ [ 27, 28 ], [ 38, 39, 40 ], [ 59, 60 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "Fig.", "3b", ",", "the", "overall", "trapping", "and", "patterning", "efficiencies", "on", "the", "four", "individual", "chips", "were", "calculated", "as", "the", "mean", "of", "the", "efficiencies", "of", "all", "arrays", "on", "each", "chip", "from", "Fig.", "3a", "." ],
+    "entities_indices" : [ [ 14, 15 ], [ 28, 29 ] ]
+  }, {
+    "sentence_tokens" : [ "Two", "replicates", "(", "two", "chips", "prepared", "at", "different", "times", ")", "following", "the", "same", "drop", "pattering", "protocol", "were", "tested", "." ],
+    "entities_indices" : [ [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "Bright", "field", "images", "of", "microwells", "and", "cells", "were", "obtained", "with", "an", "inverted", "microscope", "(", "Zeiss", ",", "Axio", "Vert.A1", ")", "." ],
+    "entities_indices" : [ [ 16, 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "Since", "air", "could", "be", "introduced", "via", "mixing", "process", ",", "the", "final", "collagen", "solution", "was", "degassed", "on", "ice", "in", "a", "vacuum", "desiccator", "to", "eliminate", "bubbles", "during", "gelation", "." ],
+    "entities_indices" : [ [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "Longitudinal", "observations", "of", "single", "cell", "motility", ",", "division", ",", "and", "tumor", "development", "in", "collagen", "." ],
+    "entities_indices" : [ [ 4, 5, 6 ], [ 10, 11 ], [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "Similarly", ",", "the", "percentage", "of", "cell", "occupied", "positions", "in", "the", "embedded", "3D", "pattern", "reflects", "the", "overall", "efficiency", "of", "the", "drop", "patterning", "method", ",", "which", "we", "defined", "as", "cell", "patterning", "efficiency", "." ],
+    "entities_indices" : [ [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "When", "the", "cells", "were", "embedded", "in", "3D", "collagen", ",", "we", "continued", "culturing", "them", "by", "submerging", "the", "chip", "in", "fresh", "cell", "culture", "medium", "." ],
+    "entities_indices" : [ [ 6, 7, 8 ], [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "Large", "scale", "array", "patterning", "and", "characterization", "of", "spatial", "distribution", "in", "collagen", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  } ],
+  "emptySentences" : [ {
+    "sentence_tokens" : [ "Large-scale", "patterning", "of", "single", "cells", "and", "cell", "clusters", "in", "hydrogels", "." ]
+  }, {
+    "sentence_tokens" : [ "Biophysical", "properties", "of", "the", "extracellular", "matrix", "(", "ECM", ")", "are", "known", "to", "play", "a", "significant", "role", "in", "cell", "behavior", "." ]
+  }, {
+    "sentence_tokens" : [ "To", "gain", "a", "better", "understanding", "of", "the", "effects", "of", "the", "biophysical", "microenvironment", "on", "cell", "behavior", ",", "the", "practical", "challenge", "is", "longitudinally", "monitoring", "behavioral", "variations", "within", "a", "population", "to", "make", "statistically", "powerful", "assessments", "." ]
+  }, {
+    "sentence_tokens" : [ "Population-level", "measurements", "mask", "heterogeneity", "in", "cell", "responses", ",", "and", "large-scale", "individual", "cell", "measurements", "are", "often", "performed", "in", "a", "one-time", ",", "snapshot", "manner", "after", "removing", "cells", "from", "their", "matrix", "." ]
+  }, {
+    "sentence_tokens" : [ "Here", "we", "present", "an", "easy", "and", "low-cost", "method", "for", "large-scale", ",", "longitudinal", "studies", "of", "heterogeneous", "cell", "behavior", "in", "3D", "hydrogel", "matrices", "." ]
+  }, {
+    "sentence_tokens" : [ "Using", "a", "platform", "we", "term", "``", "the", "drop", "patterning", "chip", "''", ",", "thousands", "of", "cells", "were", "simultaneously", "transferred", "from", "microwell", "arrays", "and", "fully", "embedded", ",", "only", "using", "the", "force", "of", "gravity", ",", "in", "precise", "patterns", "in", "3D", "collagen", "I", "or", "Matrigel", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "method", "allows", "for", "throughputs", "approaching", "2D", "patterning", "methods", "that", "lack", "phenotypic", "information", "on", "cell-matrix", "interactions", ",", "and", "does", "not", "rely", "on", "special", "equipment", "and", "cell", "treatments", "that", "may", "result", "in", "a", "proximal", "stiff", "surface", "." ]
+  }, {
+    "sentence_tokens" : [ "With", "a", "large", "and", "yet", "well", "organized", "group", "of", "cells", "captured", "in", "3D", "matrices", ",", "we", "demonstrated", "the", "capability", "of", "locating", "selected", "individual", "cells", "and", "monitoring", "cell", "division", ",", "migration", ",", "and", "proliferation", "for", "multiple", "days", "." ]
+  }, {
+    "sentence_tokens" : [ "Introduction", "." ]
+  }, {
+    "sentence_tokens" : [ "Cell", "behavior", "is", "markedly", "variable", "not", "only", "between", "populations", "of", "cells", "of", "different", "types", "or", "from", "different", "tissues", ",", "but", "also", "within", "a", "population", "of", "cells", "." ]
+  }, {
+    "sentence_tokens" : [ "To", "understand", "the", "extent", "of", "variability", "between", "or", "within", "populations", "of", "cells", ",", "it", "is", "desirous", "to", "characterize", "a", "large", "sample", "of", "them", "." ]
+  }, {
+    "sentence_tokens" : [ "Typically", ",", "physical", "measurements", "on", "a", "large", "number", "of", "cells", "means", "removing", "them", "from", "physiologically", "relevant", "matrices", "and", "only", "capturing", "data", "at", "one", "time", "point", "(", "i.e", ".,", "snapshot", "measurements", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "it", "is", "becoming", "increasingly", "apparent", "that", "important", "aspects", "of", "cell", "behavior", "are", "elicited", "by", "their", "interactions", "with", "the", "extracellular", "matrix", "(", "ECM", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "An", "example", "of", "this", "is", "the", "drastic", "difference", "in", "exhibited", "morphology", "dependent", "upon", "whether", "cells", "are", "plated", "on", "a", "2D", "substrate", "or", "within", "a", "3D", "matrix", "(", "Figure", "S1", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "it", "would", "benefit", "a", "wide", "variety", "of", "studies", "to", "have", "a", "simple", "method", "to", "pattern", "cells", "within", "3D", "matrices", "for", "observation", "of", "their", "behavior", "over", "extended", "periods", "of", "time", "(", "longitudinal", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Embedding", "cells", "in", "a", "3D", "matrix", "is", "most", "simply", "achieved", "by", "mixing", "cells", "with", "a", "liquid", "precursor", "to", "a", "synthetic", "or", "biological", "hydrogel", "and", "allowing", "the", "gelation", "process", "to", "encapsulate", "the", "cells", "." ]
+  }, {
+    "sentence_tokens" : [ "Long-term", "monitoring", "of", "selected", "single", "cells", "or", "cell", "clusters", "in", "a", "mid-", "to", "high-throughput", "fashion", "then", "becomes", "a", "significant", "challenge", ",", "if", "not", "impossible", ",", "as", "the", "cells", "are", "positioned", "randomly", "." ]
+  }, {
+    "sentence_tokens" : [ "Researchers", "have", "resorted", "to", "embedding", "small", "numbers", "of", "cells", "into", "a", "matrix", "for", "long-term", "studies", "of", "single-cell", "behavior", ",", "which", "eases", "the", "experimentalist", "'", "s", "efforts", "to", "locate", "cells", ",", "but", "often", "does", "not", "provide", "a", "large", "enough", "sample", "set", "for", "significant", "statistical", "analyses", "." ]
+  }, {
+    "sentence_tokens" : [ "One", "way", "of", "achieving", "better", "statistics", "on", "observable", "cell", "behavior", "in", "3D", "culture", "has", "been", "to", "employ", "a", "modified", "hanging", "drop", "protocol", "." ]
+  }, {
+    "sentence_tokens" : [ "Using", "a", "hydrogel", "precursor", "mixed", "with", "cells", "to", "form", "the", "hanging", "drops", "is", "a", "simple", "way", "to", "encapsulate", "cells", "in", "controllable", "positions", "for", "high-throughput", "analyses", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "this", "method", "only", "creates", "macro-scale", "arrays", "and", "is", "not", "suitable", "for", "single-cell", "analysis", "because", "the", "number", "of", "cells", "in", "each", "drop", "will", "vary.Patterning", "methods", "and", "scaffolds", "have", "been", "devised", "in", "order", "to", "controllably", "position", "single", "cells", "or", "cell", "clusters", "for", "gathering", "large", ",", "longitudinal", "sets", "of", "data", "." ]
+  }, {
+    "sentence_tokens" : [ "These", "methods", "often", "take", "advantage", "of", "material", "surface", "properties", ",", "morphologies", ",", "or", "micropatterns", "to", "capture", "cells", "in", "fixed", "positions", "to", "promote", "cell", "attachment", "and", "elicit", "a", "mechanobiological", "response", "." ]
+  }, {
+    "sentence_tokens" : [ "Microwells", ",", "for", "example", ",", "can", "be", "used", "to", "rather", "simply", "achieve", "cell", "placement", "." ]
+  }, {
+    "sentence_tokens" : [ "Furthermore", ",", "they", "have", "not", "only", "been", "used", "as", "a", "niche", "where", "cells", "may", "proliferate", ",", "but", "they", "have", "also", "been", "used", "as", "a", "tool", "for", "transferring", "cells", "into", "other", "2D", "environments", "." ]
+  }, {
+    "sentence_tokens" : [ "Surface", "acoustic", "waves", "have", "been", "used", "to", "move", "single", "cells", "to", "desired", "positions", "on", "a", "2D", "substrate", "." ]
+  }, {
+    "sentence_tokens" : [ "Engineered", "scaffolds", ",", "such", "as", "polymer", "structures", "fabricated", "via", "direct", "laser", "writing", "(", "DLW", ")", "and", "crack", "based", "patterning", ",", "provide", "single", "cells", "with", "adhesive", ",", "topological", "supports", "in", "a", "3D", "space", "." ]
+  }, {
+    "sentence_tokens" : [ "Whereas", "these", "methods", "allow", "for", "cell", "anchorage", "and", "ease", "of", "locating", "and", "image", "collecting", ",", "the", "stiff", "and/or", "2D", "nature", "of", "the", "substrates", "(", "e.g", ".,", "glass", "or", "plastic", "surfaces", ",", "2", "-", "4", "GPa", ")", "do", "not", "provide", "an", "accurate", "analog", "to", "the", "soft", ",", "3D", "nature", "of", "the", "in", "vivo", "environment", "(", "e.g", ".,", "breast", "tissue", ",", "hundreds", "of", "Pascals", ";", "human", "intestinal", "tissue", ",", "thousands", "of", "Pascals", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "between", "2D", "and", "3D", "patterning", "methods", "are", "overlay", "methods", ",", "where", "cells", "are", "patterned", "on", "a", "substrate", "and", "then", "covered", "with", "a", "layer", "of", "hydrogel", "or", "other", "3D", "matrix", "." ]
+  }, {
+    "sentence_tokens" : [ "Some", "innovative", "methods", "to", "manipulate", "cells", "into", "patterns", "include", "anchoring", "DNA", "labeled", "cells", "on", "a", "DNA", "patterned", "substrate", "and", "using", "dielectrophoretic", "(", "DEP", ")", "forces", "to", "attract", "cells", "to", "patterned", "nodes", "." ]
+  }, {
+    "sentence_tokens" : [ "After", "the", "cells", "are", "positioned", ",", "a", "layer", "of", "hydrogel", "may", "be", "formed", "on", "top", "." ]
+  }, {
+    "sentence_tokens" : [ "Researchers", "have", "also", "used", "an", "array", "of", "magnetic", "nodes", "to", "trap", "magnetically", "labeled", "cells", "in", "between", "two", "layers", "of", "collagen", "." ]
+  }, {
+    "sentence_tokens" : [ "Position", "control", "over", "cell", "placement", "is", "indeed", "accurate", ",", "however", "these", "methods", "require", "special", "tools", "(", "e.g", ".,", "molecular", "printing", ",", "gold", "coated", "nodes", ",", "specially", "treated", "cells", ")", "not", "easily", "accessible", "in", "every", "lab", "." ]
+  }, {
+    "sentence_tokens" : [ "Another", "drawback", "of", "some", "of", "these", "methods", "for", "mechanobiological", "experiments", "is", "the", "presence", "of", "stiff", "substrates", "and/or", "interfaces", "necessitated", "by", "the", "patterning", "methods", ",", "which", "may", "prevent", "the", "full", "encapsulation", "of", "the", "cells.Fully", "embedding", "a", "large", "population", "of", "single", "cells", "at", "specified", "locations", "in", "a", "3D", ",", "uniform", ",", "and", "soft", "environment", "presents", "a", "particular", "challenge", "." ]
+  }, {
+    "sentence_tokens" : [ "No", "method", "has", "yet", "been", "devised", "in", "which", "single", "cells", "or", "small", "cell", "clusters", "may", "be", "accurately", "patterned", ",", "without", "using", "any", "externally", "applied", "forces", "or", "chemical", "treatments", ",", "in", "various", "soft", "and", "continuous", "3D", "matrices", ",", "allowing", "for", "dynamic", "studies", "of", "individual", "cells", "'", "responses", "to", "biomechanical", "stimuli", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "goal", "of", "this", "work", "was", "to", "develop", "a", "simple", "and", "low-cost", "platform", "for", "patterning", "a", "large", "population", "of", "single", "cells", "or", "cell", "clusters", "completely", "within", "a", "3D", "environment", "(", "i.e", ".,", "without", "any", "undesirable", "discontinuous", "or", "stiff", "boundaries", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "resulting", "platform", "should", "allow", "for", "longitudinal", "observation", "of", "the", "single", "cells", "or", "cell", "clusters", "and", "control", "over", "the", "cell-cell", "distance", "within", "various", "cell", "array", "patterns", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "article", ",", "we", "describe", "the", "design", ",", "fabrication", ",", "method", ",", "and", "performance", "of", "the", "platform", "that", "we", "developed", "." ]
+  }, {
+    "sentence_tokens" : [ "Results", "." ]
+  }, {
+    "sentence_tokens" : [ "Our", "platform", "capitalizes", "on", "the", "single-cell", "arraying", "power", "of", "microwells", ",", "which", "are", "fabricated", "by", "standard", "soft", "lithography", "techniques", "." ]
+  }, {
+    "sentence_tokens" : [ "Once", "the", "cells", "are", "trapped", "in", "the", "microwells", ",", "the", "platform", "is", "inverted", "and", "the", "cells", "are", "allowed", "to", "drop", "into", "a", "hydrogel", "that", "is", "in", "the", "process", "of", "gelation", "." ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "we", "term", "the", "platform", "\"", "the", "drop", "patterning", "chip", "\"", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "article", ",", "the", "detailed", "operation", "of", "the", "drop", "patterning", "chip", "is", "first", "presented", "for", "large-scale", "arrays", "based", "on", "collagen", "I.", "Performance", "of", "the", "method", "is", "evaluated", "by", "its", "patterning", "efficiency", ",", "single-cell", "occupancy", "rate", ",", "and", "spatial", "distribution", "of", "cells", "in", "3D", "collagen", "gel", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "gentle", "transfer", "method", "furthermore", "leads", "to", "excellent", "cell", "viability", "." ]
+  }, {
+    "sentence_tokens" : [ "Finally", ",", "we", "present", "longitudinal", "observations", "of", "cell", "motility", "and", "in", "situ", "development", "of", "multicellular", "tumor", "spheroids", "(", "MCTS", ")", "from", "these", "individual", "cells", "in", "two", "representative", ",", "widely", "used", "matrices", ":", "collagen", "I", "and", "Matrigel", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "drop", "patterning", "chip", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "drop", "patterning", "chip", "consists", "of", "three", "layers", "(", "Fig.", "1a", ")", ",", "which", "create", "a", "closed", "chamber", "that", "is", "filled", "with", "hydrogel", "(", "Fig.", "1b", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "three", "layers", ",", "from", "bottom", "to", "top", ",", "are", "a", "poly", "dimethylsiloxane", "(", "PDMS", ")", "microwell", "substrate", ",", "a", "PDMS", "square", "frame", "spacer", "(", "thickness", ":", "approximately", "600", "mu", "m", ")", ",", "and", "a", "standard", "glass", "coverslip", "(", "thickness", ":", "170", "mu", "m", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Due", "to", "the", "natural", "adhesion", "of", "PDMS", "to", "itself", "and", "between", "PDMS", "and", "glass", ",", "the", "three", "layers", "spontaneously", "bond", "together", "with", "slight", "pressure", "applied", "by", "hand", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "bond", "is", "reversible", "so", "the", "three", "components", "can", "be", "cleaned", "and", "reused", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "microwell", "dimensions", "--", "30", "mu", "m", "in", "diameter", "and", "27", "mu", "m", "in", "depth", "--", "are", "on", "the", "order", "of", "the", "size", "of", "a", "single", "cell", "." ]
+  }, {
+    "sentence_tokens" : [ "All", "data", "presented", "here", "are", "based", "on", "the", "experiments", "carried", "out", "on", "microwell", "arrays", "with", "center-to-center", "spacing", "(", "along", "both", "columns", "and", "rows", ")", "of", "100", "mu", "m", ",", "150", "mu", "m", ",", "or", "200", "mu", "m.", "On", "each", "drop", "patterning", "chip", ",", "we", "designed", "four", "arrays", "with", "100-mu", "m", "spacing", ",", "fours", "arrays", "of", "150-mu", "m", "spacing", ",", "and", "three", "arrays", "of", "200-mu", "m", "spacing", "." ]
+  }, {
+    "sentence_tokens" : [ "Each", "array", "is", "comprised", "of", "400", "microwells", "(", "20", "x", "20", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Hundreds", "to", "thousands", "of", "cells", "may", "be", "captured", "in", "the", "wells", "on", "a", "chip", "for", "subsequent", "simultaneous", "patterning", "in", "a", "hydrogel", "(", "Fig.", "1c", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Step-by-step", "drop", "patterning", "in", "collagen", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "first", "set", "of", "steps", "of", "the", "drop", "patterning", "technique", "includes", "priming", "the", "microwells", "with", "cells", "and", "assembling", "the", "chip", "(", "Fig.", "2a", ",", "steps", "1", "-", "5", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "cell", "suspension", "(", "approximately", "250", "mu", "L", ",", "1", "x", "10", "cells/mL", ")", "was", "deposited", "on", "to", "the", "PDMS", "substrate", "patterned", "with", "microwell", "arrays", "." ]
+  }, {
+    "sentence_tokens" : [ "Treating", "the", "PDMS", "substrate", "with", "air", "plasma", "and", "then", "incubating", "in", "bovine", "serum", "albumin", "(", "BSA", ")", "prior", "to", "seeding", "promoted", "surface", "wetting", "and", "prevented", "cell", "attachment", ",", "respectively", "." ]
+  }, {
+    "sentence_tokens" : [ "After", "allowing", "the", "cells", "to", "settle", "into", "the", "microwells", "for", "5", "minutes", ",", "excess", "medium", "and", "cells", "were", "removed", "from", "the", "surface", "by", "gently", "flushing", "with", "phosphate", "buffered", "saline", "(", "PBS", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "PDMS", "spacer", "(", "middle", "component", ",", "Fig.", "1a", ")", "was", "then", "assembled", "atop", "the", "substrate", ",", "creating", "a", "chamber", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "chamber", "was", "filled", "with", "about", "300", "mu", "L", "collagen", "I", "solution", "(", "1.0", "mg/mL", ")", "and", "then", "sealed", "with", "the", "coverslip", "(", "top", "component", ",", "Fig.", "1a", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "second", "set", "of", "steps", "of", "the", "drop", "patterning", "technique", "transfers", "the", "array", "of", "cells", "into", "the", "collagen", "gel", "(", "Fig.", "2a", ",", "steps", "6", "-", "9", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "enclosed", "chip", "was", "inverted", "and", "the", "trapped", "cells", "were", "allowed", "to", "fall", ",", "due", "to", "gravity", ",", "out", "of", "the", "microwells", "." ]
+  }, {
+    "sentence_tokens" : [ "Adhesion", "of", "the", "cells", "to", "the", "PDMS", "microwell", "walls", "varied", ",", "therefore", "not", "all", "cells", "fell", "out", "of", "the", "microwells", "simultaneously", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "means", "pattern", "fidelity", "may", "be", "lost", "and", "some", "cells", "may", "not", "be", "fully", "transferred", "into", "the", "gel", "." ]
+  }, {
+    "sentence_tokens" : [ "To", "improve", "the", "pattern", "fidelity", ",", "we", "first", "let", "the", "cells", "fall", "to", "the", "coverslip", "at", "room", "temperature", ",", "which", "took", "about", "10", "minutes", "." ]
+  }, {
+    "sentence_tokens" : [ "Then", "we", "inverted", "the", "chip", "once", "again", "upon", "which", "time", "all", "cells", "fell", "from", "the", "coverslip", "simultaneously", ";", "adhesive", "interactions", "between", "the", "cells", "and", "the", "BSA", "treated", "coverslip", "were", "weaker", "and", "more", "uniform", "than", "those", "between", "the", "cells", "and", "microwells", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "synergy", "of", "the", "rate", "of", "collagen", "gelation", "and", "velocity", "of", "the", "falling", "cells", "resulted", "in", "the", "cell", "array", "becoming", "fully", "encapsulated", "approximately", "on", "the", "same", "focal", "plane", "." ]
+  }, {
+    "sentence_tokens" : [ "After", "the", "cells", "were", "patterned", "in", "collagen", "gel", ",", "the", "whole", "chip", "was", "submerged", "in", "medium", "for", "on-chip", "3D", "cell", "culture", "." ]
+  }, {
+    "sentence_tokens" : [ "PDMS", "chambers", "have", "been", "proved", "to", "be", "suitable", "for", "3D", "cell", "culture", "due", "to", "the", "oxygen", "permeability", "of", "PDMS", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "coverslip", "was", "also", "carefully", "slid", "aside", "for", "nutrient", "and", "oxygen", "exchange", "(", "Figure", "S2", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "To", "visualize", "the", "drop", "patterning", "method", ",", "the", "whole", "process", "was", "monitored", "under", "a", "bright", "field", "microscope", "(", "Zeiss", ",", "Axio", "Vert.A1", ")", "(", "Fig.", "2b", "and", "Movie", "S1", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Focus", "was", "maintained", "on", "a", "single", "cell", "(", "indicated", "with", "red", "triangles", ")", "in", "the", "array", "." ]
+  }, {
+    "sentence_tokens" : [ "Immediately", "after", "the", "first", "chip", "inversion", "(", "labeled", "Time", "0", ")", ",", "the", "cells", "were", "still", "trapped", "in", "the", "microwells", "." ]
+  }, {
+    "sentence_tokens" : [ "After", "2", "minutes", ",", "the", "microwells", "were", "out", "of", "focus", ",", "which", "means", "cells", "left", "the", "microwells", "and", "were", "traveling", "through", "the", "collagen", "solution", "." ]
+  }, {
+    "sentence_tokens" : [ "It", "took", "approximately", "8", "minutes", "for", "the", "single", "cells", "and", "11", "minutes", "for", "most", "the", "cells", "and", "cell", "clusters", "(", "i.e", ".,", "a", "doublet", "of", "cells", ",", "indicated", "with", "a", "blue", "arrow", ")", "to", "settle", "on", "the", "coverslip", "." ]
+  }, {
+    "sentence_tokens" : [ "Another", "doublet", "remained", "stuck", "in", "a", "microwell", "(", "indicated", "with", "a", "red", "circle", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Then", "the", "chip", "was", "transferred", "into", "an", "incubator", "for", "prewarming", "." ]
+  }, {
+    "sentence_tokens" : [ "After", "an", "incubation", "time", "of", "4", "minutes", "and", "30", "seconds", "at", "37", "degrees", "C", ",", "the", "chip", "was", "inverted", "a", "second", "time", "and", "incubated", "at", "37", "degrees", "C", "for", "30", "minutes", "longer", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "resulting", ",", "fully", "embedded", ",", "3", "x", "3", "cell", "array", "is", "shown", "in", "the", "final", "image", "of", "Fig.", "2b", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "verified", "the", "cell", "arrays", "were", "fully", "embedded", "in", "the", "gel", "filled", "chamber", "without", "contacting", "either", "top", "or", "bottom", "surface", "by", "imaging", "the", "chip", "on", "different", "focal", "planes", "after", "the", "collagen", "gelled", "(", "Figure", "S3", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Cell", "patterning", "efficiency", "." ]
+  }, {
+    "sentence_tokens" : [ "Cell", "trapping", "efficiency", "is", "considered", "an", "important", "measure", "of", "the", "performance", "of", "microwell", "arrays", "in", "high-throughput", "research", "on", "anchorage", "dependent", "cells", "." ]
+  }, {
+    "sentence_tokens" : [ "Similarly", ",", "the", "percentage", "of", "cell", "occupied", "positions", "in", "the", "embedded", "3D", "pattern", "reflects", "the", "overall", "efficiency", "of", "the", "drop", "patterning", "method", ",", "which", "we", "defined", "as", "cell", "patterning", "efficiency", "." ]
+  }, {
+    "sentence_tokens" : [ "As", "shown", "previously", ",", "not", "all", "trapped", "cells", "fell", "out", "of", "the", "wells", ",", "which", "means", "there", "was", "a", "nominal", "discrepancy", "between", "the", "cell", "trapping", "efficiency", "in", "the", "microwells", "and", "the", "cell", "patterning", "efficiency", "in", "collagen", "." ]
+  }, {
+    "sentence_tokens" : [ "Both", "the", "cell", "trapping", "efficiency", "and", "cell", "patterning", "efficiency", "were", "calculated", "according", "to", "equation", "(", "1", ")", ",", "by", "dividing", "the", "total", "number", "of", "cell", "occupied", "positions", "either", "in", "the", "microwells", "or", "in", "the", "collagen", "by", "the", "total", "number", "of", "microwells.1Efficiency", "(", "%", ")", "=", "NumberofOccupiedPositionsTotalNumberofMicrowells", "x", "100Cell", "trapping", "(", "T", ")", "and", "cell", "patterning", "(", "P", ")", "efficiencies", "for", "this", "method", "were", "measured", "on", "a", "total", "of", "forty", "20", "x", "20", "microwell", "arrays", "distributed", "over", "four", "chips", "(", "Fig.", "3a", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "All", "three", "different", "inter-well", "spacings", "(", "100", "mu", "m", ",", "150", "mu", "m", ",", "and", "200", "mu", "m", ")", "were", "used", "." ]
+  }, {
+    "sentence_tokens" : [ "Figure", "3c", "summarizes", "the", "number", "of", "arrays", "that", "were", "measured", "on", "each", "chip", "." ]
+  }, {
+    "sentence_tokens" : [ "No", "statistical", "difference", "was", "measured", "in", "the", "patterning", "and", "trapping", "efficiencies", "between", "different", "inter-well", "spacings", "within", "a", "chip", "(", "Fig.", "3a", ")", ",", "which", "suggests", "that", "inter-well", "distance", "does", "not", "markedly", "affect", "efficiencies", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "discrepancies", "between", "patterning", "and", "trapping", "efficiencies", "on", "different", "chips", "showed", "consistency", "regardless", "of", "the", "fluctuation", "in", "trapping", "efficiency", "(", "details", "in", "Figure", "S5", ")", ",", "which", "implies", "that", "this", "discrepancy", "is", "mainly", "due", "to", "the", "inherent", "adhesive", "interactions", "between", "cells", "and", "the", "microwell", "substrate", "material", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "Fig.", "3b", ",", "the", "overall", "trapping", "and", "patterning", "efficiencies", "on", "the", "four", "individual", "chips", "were", "calculated", "as", "the", "mean", "of", "the", "efficiencies", "of", "all", "arrays", "on", "each", "chip", "from", "Fig.", "3a", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "difference", "in", "trapping", "efficiency", "was", "statistically", "significant", "between", "chips", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "attribute", "this", "fluctuation", "in", "trapping", "efficiency", "to", "the", "imprecise", "nature", "of", "the", "manual", "trapping", "operations", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "other", "words", ",", "increasing", "the", "trapping", "efficiency", "would", "lead", "to", "a", "higher", "patterning", "efficiency", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "average", "cell", "trapping", "efficiency", "and", "cell", "patterning", "efficiency", "of", "all", "arrays", "on", "the", "four", "chips", "were", "65.7", "+/-", "11.5", "%", "and", "51.2", "+/-", "11.7", "%", ",", "respectively.In", "addition", "to", "single", "cells", ",", "small", "cell", "clusters", ",", "such", "as", "doublets", "and", "triplets", ",", "were", "trapped", "in", "the", "microwells", "and", "patterned", "in", "collagen", "(", "Fig.", "3e", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "occurred", "due", "to", "a", "combination", "of", "factors", "including", "cell", "size", "variation", "and", "the", "susceptibility", "of", "cells", "to", "dissociation", "with", "enzymatic", "digestion", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "the", "cell", "line", "and", "treatment", "we", "used", "(", "see", "Materials", "and", "Methods", ")", ",", "the", "probability", "of", "finding", "a", "given", "number", "of", "cells", "in", "an", "occupied", "position", "corresponding", "to", "the", "20", "x", "20", "positions", "of", "an", "array", "is", "presented", "in", "Fig.", "3d", "." ]
+  }, {
+    "sentence_tokens" : [ "Each", "data", "point", "present", "a", "probability", "measurement", "based", "on", "an", "array", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "single-cell", "probability", "was", "40", "-", "60", "%", "on", "average", "and", "depended", "on", "how", "well", "the", "cells", "were", "disassociated", "." ]
+  }, {
+    "sentence_tokens" : [ "Even", "though", "cell", "patterning", "efficiency", "may", "vary", ",", "the", "probability", "of", "the", "number", "of", "occupant", "cells", "per", "position", "was", "relatively", "consistent", "across", "chips", "." ]
+  }, {
+    "sentence_tokens" : [ "Large", "scale", "array", "patterning", "and", "characterization", "of", "spatial", "distribution", "in", "collagen", "." ]
+  }, {
+    "sentence_tokens" : [ "Compared", "to", "the", "common", "in", "vitro", "3D", "cell", "culture", "protocol", "of", "randomly", "embedding", "hundreds", "or", "thousands", "of", "cells", "in", "a", "matrix", ",", "the", "drop", "patterning", "chip", "is", "able", "to", "embed", "a", "similar", "sample", "size", "of", "cells", "in", "a", "matrix", ",", "approximately", "on", "the", "same", "focal", "plane", "in", "a", "well", "organized", "way", "(", "Fig.", "4a", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "cells", "may", "be", "cultured", "for", "time", "periods", "up", "to", "several", "days", "(", "Fig.", "4b", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Cells", "can", "always", "be", "located", "in", "an", "array", "of", "hundreds", "of", "cells", "during", "multi-day", "incubation", "times", "." ]
+  }, {
+    "sentence_tokens" : [ "To", "illustrate", "this", ",", "we", "used", "two", "ROIs", ",", "which", "are", "drawn", "on", "images", "at", "the", "time", "of", "drop", "patterning", "(", "Fig.", "4a", ")", "and", "after", "three", "days", "(", "Fig.", "4b", "and", "Figure", "S6", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "On", "day", "3", ",", "the", "cells", "(", "phase-contrast", "images", "shown", "in", "Fig.", "4c", ")", "were", "fixed", "and", "their", "nuclei", "and", "actin", "fluorescently", "labeled", "in", "order", "to", "visualize", "cell", "morphology", "as", "the", "result", "of", "the", "3-day", "incubation", "within", "the", "drop", "patterning", "chip", "(", "Fig.", "4d", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "majority", "of", "cells", "formed", "small", "MCTS", "with", "diameters", "of", "30", "-", "60", "mu", "m." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "there", "were", "a", "few", "positions", "where", "cells", "exhibited", "a", "much", "more", "migratory", "phenotype", "(", "e.g", ".,", "white", "arrowheads", "in", "Fig.", "4d", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "drop", "patterning", "chip", "also", "demonstrated", "the", "ease", "of", "protein", "expression", "assay", "for", "the", "cells", "in", "selected", "positions", "via", "immunostaining", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "example", ",", "the", "intermediate", "filament", "protein", "vimentin", ",", "which", "is", "typically", "upregulated", "in", "cells", "undergoing", "epithelial-to-mesenchymal", "transition", "(", "EMT", ")", ",", "was", "labeled", "on", "the", "array", "of", "MCTS", ",", "as", "shown", "in", "Figure", "S6.In", "order", "to", "confirm", "that", "drop", "patterning", "does", "not", "damage", "living", "cells", ",", "cell", "viability", "assays", "were", "conducted", "via", "calcein", "acetoxymethyl", "ester", "(", "AM", ")", "and", "ethidium", "homodimer-1", "(", "EthD-1", ")", "staining", "19", "hours", "after", "the", "cells", "had", "been", "patterned", "in", "the", "collagen", "gel", "." ]
+  }, {
+    "sentence_tokens" : [ "Figure", "4e", "is", "a", "representative", "image", "of", "the", "resulting", "fluorescent", "signals", "on", "a", "section", "of", "an", "array", "." ]
+  }, {
+    "sentence_tokens" : [ "Two", "replicates", "(", "two", "chips", "prepared", "at", "different", "times", ")", "following", "the", "same", "drop", "pattering", "protocol", "were", "tested", "." ]
+  }, {
+    "sentence_tokens" : [ "Random", "regions", "on", "the", "chips", "were", "imaged", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "achieved", "an", "average", "viability", "of", "98", "%", ":", "458", "of", "470", "cells", "in", "the", "first", "chip", "and", "358", "of", "361", "cells", "in", "the", "second", "chip", "survived.While", "cells", "are", "being", "drop", "patterned", "in", "the", "collagen", "solution", ",", "cell", "drifting", "in", "the", "plane", "of", "the", "array", "may", "occur", "." ]
+  }, {
+    "sentence_tokens" : [ "Drifting", "influences", "the", "patterning", "fidelity", "(", "Fig.", "4f", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "To", "quantify", "the", "fidelity", "of", "the", "drop", "patterning", "method", ",", "we", "measured", "the", "horizontal", "(", "X)", "and", "vertical", "(", "Y", ")", "distances", "(", "arrows", "in", "Fig.", "4f", ")", "between", "two", "cells", "or", "clusters", "that", "were", "patterned", "by", "neighboring", "microwells", "(", "150", "mu", "m", "spacing", ")", "immediately", "after", "collagen", "gelation", "." ]
+  }, {
+    "sentence_tokens" : [ "Kernel", "distributions", "of", "the", "cell-cell", "distance", "(", "Fig.", "4g", ",", "h", ")", "were", "based", "on", "a", "total", "of", "558", "measurements", "in", "the", "X", "direction", "and", "515", "measurements", "in", "the", "Y", "direction", "on", "four", "arrays", "from", "four", "individual", "chips", "." ]
+  }, {
+    "sentence_tokens" : [ "On", "each", "array", ",", "at", "least", "100", "cell-cell", "spacing", "distances", "in", "each", "direction", "were", "measured", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "number", "of", "measurements", "depended", "on", "the", "cell", "patterning", "efficiency", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "cell-cell", "distances", "in", "both", "directions", "in", "each", "array", "are", "also", "presented", "as", "the", "mean", "+/-", "standard", "deviation", "overlaid", "with", "all", "measurements", "in", "Fig.", "4i", "." ]
+  }, {
+    "sentence_tokens" : [ "Arrays", "from", "difference", "chips", "showed", "similar", "distributions", "in", "both", "directions", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "averages", "and", "standard", "deviations", "of", "all", "measurements", "are", "143", "+/-", "26", "mu", "m", "in", "the", "X-", "and", "144", "+/-", "24", "mu", "m", "in", "the", "Y-direction", "." ]
+  }, {
+    "sentence_tokens" : [ "Longitudinal", "observations", "of", "single", "cell", "motility", ",", "division", ",", "and", "tumor", "development", "in", "collagen", "." ]
+  }, {
+    "sentence_tokens" : [ "As", "discussed", "previously", ",", "the", "drop", "patterned", "cell", "arrays", "enable", "the", "study", "of", "single-cell", "behavior", "in", "3D", "gels", "over", "extended", "periods", "of", "time", "(", "Fig.", "4", "and", "Figure", "S6", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "Fig.", "5a", ",", "an", "array", "of", "cells", "was", "drop", "patterned", "into", "collagen", "I", "and", "the", "cells", "were", "tracked", "in", "nine", "positions", "over", "3.5", "days", "." ]
+  }, {
+    "sentence_tokens" : [ "Here", ",", "we", "demonstrated", "the", "ease", "of", "following", "the", "progression", "of", "multiple", "cells", "over", "periods", "of", "time", ",", "even", "when", "not", "kept", "directly", "on", "an", "incubator", "equipped", "microscope", "stage", "." ]
+  }, {
+    "sentence_tokens" : [ "Pattern", "fidelity", "allowed", "for", "easy", ",", "repeated", "location", "of", "the", "cells", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "position", "shift", "of", "the", "collagen", "gel", "with", "respect", "to", "the", "PDMS", "microwell", "substrate", "--", "the", "gel", "detached", "after", "cell", "culture", "medium", "was", "added", "--", "did", "not", "affect", "the", "fidelity", "of", "the", "cell", "array", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "illustration", ",", "the", "region", "with", "the", "3", "x", "3", "cell", "array", "has", "been", "visually", "divided", "and", "labeled", "as", "zones", "I", "through", "IX", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "patterned", "array", "consisted", "of", "eight", "single", "cells", "(", "I-VIII", ")", "and", "one", "doublet", "(", "IX", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "All", "cells", "survived", ",", "and", "they", "divided", "within", "two", "days.Evidence", "of", "protrusive", "(", "Fig.", "5a", ",", "red", "and", "blue", "arrowheads", ")", "and", "motile", "behaviors", "was", "readily", "observed", "over", "the", "3.5-day", "period", "." ]
+  }, {
+    "sentence_tokens" : [ "Notably", ",", "the", "cells", "in", "zones", "I", "and", "II", "exhibited", "extensive", "protrusive", "behaviors", "into", "the", "collagen", "matrix", "starting", "from", "day", "2", ",", "with", "the", "protrusions", "changing", "directions", "during", "the", "first", "7", "hours", "of", "day", "2", "." ]
+  }, {
+    "sentence_tokens" : [ "Also", "in", "the", "first", "half", "of", "day", "2", ",", "cells", "from", "zones", "I", ",", "III", "and", "VII", "underwent", "phenotypic", "change", "and", "migrated", "away", "from", "their", "respective", "initial", "positions", "." ]
+  }, {
+    "sentence_tokens" : [ "After", "3.5", "days", "in", "the", "collagen", "gel", ",", "cells", "in", "zones", "II", ",", "III", ",", "IV", "and", "VII", "displayed", "the", "highest", "motility", "." ]
+  }, {
+    "sentence_tokens" : [ "They", "continued", "to", "proliferate", "and", "migrate", "into", "neighboring", "zones.In", "contrast", ",", "the", "cells", "in", "zones", "V", ",", "VI", ",", "VIII", "and", "IX", "were", "not", ",", "at", "least", "initially", ",", "as", "motile", ",", "however", ",", "they", "did", "proliferate", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "three", "single", "cells", "and", "one", "cell", "doublet", "began", "forming", "MCTS", "within", "the", "first", "two", "days", "." ]
+  }, {
+    "sentence_tokens" : [ "Only", "after", "three", "days", "did", "cells", "from", "these", "MCTS", "begin", "to", "form", "protrusive", "actions", "and", "migrate", "away", "from", "the", "MCTS", "in", "both", "single-cell", "(", "green", "arrowhead", ")", "and", "collective", "(", "white", "arrowheads", ")", "manners.After", "3.5", "days", ",", "the", "cells", "in", "the", "3", "x", "3", "array", "were", "fixed", "and", "their", "nuclei", "(", "Hoechst", ",", "blue", ")", "and", "F-actin", "(", "phalloidin", ",", "red", ")", "were", "stained", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "confocal", "image", "stack", "(", "height", ":", "112", "mu", "m", ")", "was", "acquired", "from", "a", "focal", "plane", "above", "a", "tumor", "array", "to", "a", "focal", "plane", "below", "the", "tumor", "array", "(", "Fig.", "5b", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Collagen", "fibers", "were", "auto-fluorescent", "in", "the", "blue", "channel", "on", "both", "the", "first", "and", "the", "last", "several", "images", "with", "no", "F-actin", "(", "red", ")", "observed", ",", "which", "verified", "that", "all", "the", "tumors", "were", "fully", "encapsulated", "in", "collagen", "." ]
+  }, {
+    "sentence_tokens" : [ "Reflectance", "confocal", "microscopy", "was", "used", "to", "visualize", "detailed", "microstructure", "of", "collagen", "(", "thickness", ":", "7", "mu", "m", ")", "surrounding", "the", "migrating", "cells", "(", "Fig.", "5c", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "3D-reconstruction", "(", "Fig.", "5d", ")", "of", "the", "array", "of", "four", "solid", "tumors", "in", "Zones", "V", ",", "VI", ",", "VIII", ",", "and", "IX", "clearly", "shows", "the", "spatial", "relationship", "between", "tumors", "and", "the", "cells", "(", "marked", "with", "arrows", ")", "that", "were", "escaping", "the", "tumors", ",", "and", "reveals", "that", "cell", "migration", "in", "collagen", "did", "not", "only", "happen", "within", "the", "plane", "of", "the", "cell", "array", "." ]
+  }, {
+    "sentence_tokens" : [ "Longitudinal", "observations", "of", "cell", "morphology", ",", "division", ",", "and", "tumor", "development", "in", "Matrigel", "." ]
+  }, {
+    "sentence_tokens" : [ "Using", "collagen", "I", "for", "3D", "culturing", "of", "cells", "provides", "them", "with", "a", "fibrillar", "network", "similar", "to", "the", "native", "ECM", "in", "which", "a", "mesenchymal", "phenotype", "and", "protrusive", "sensing", "are", "promoted", "." ]
+  }, {
+    "sentence_tokens" : [ "Matrigel", ",", "on", "the", "other", "hand", ",", "originating", "from", "the", "epithelial", "basement", "membrane", ",", "provides", "a", "different", "set", "of", "physical", "and", "biochemical", "cues", "for", "cells", "in", "3D", "culture", ",", "which", "promote", "organoid", "formation", "and", "tumor", "growth", "." ]
+  }, {
+    "sentence_tokens" : [ "As", "Matrigel", "is", "a", "popular", "3D", "culture", "matrix", ",", "we", "demonstrated", "that", "our", "drop", "patterning", "method", "would", "be", "amenable", "to", "its", "usage", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "Matrigel", "concentration", "of", "5", "mg/mL", "was", "used", "." ]
+  }, {
+    "sentence_tokens" : [ "According", "to", "the", "manufacturer", ",", "Matrigel", "gels", "rapidly", "at", "22", "degrees", "C", "to", "37", "degrees", "C.", "Indeed", ",", "when", "dropping", "the", "cells", "into", "Matrigel", "by", "inverting", "the", "chip", "at", "room", "temperature", ",", "we", "found", "that", "before", "cells", "reached", "the", "coverslip", "(", "spacer", "height", ":", "600", "mu", "m", ")", ",", "the", "rapid", "gelation", "of", "Matrigel", "had", "already", "captured", "the", "cells", "in", "the", "chamber", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "process", "took", "only", "about", "10", "minutes", "." ]
+  }, {
+    "sentence_tokens" : [ "After", "the", "cells", "were", "no", "longer", "sinking", ",", "the", "chip", "was", "transferred", "to", "a", "37", "degrees", "C", "incubator", "for", "10", "minutes", "to", "fully", "gel", "the", "matrix", "." ]
+  }, {
+    "sentence_tokens" : [ "Verification", "of", "full", "cell", "embedding", "is", "shown", "in", "Figure", "S7.Large-scale", "cell", "arrays", "were", "patterned", "in", "Matrigel", "with", "a", "nominal", "cell-cell", "spacing", "of", "100", "mu", "m", "(", "Fig.", "6a", ")", "and", "incubated", "for", "3.5", "days", "(", "Fig.", "6b", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Within", "the", "larger", "array", ",", "two", "regions", "of", "interest", "are", "outlined", "(", "ROI1", ":", "blue", "and", "ROI2", ":", "red", ")", "from", "which", "higher", "magnification", "insets", "are", "presented", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "multiple-day", "monitoring", "of", "cell", "proliferation", "in", "ROI1", "is", "shown", "in", "Fig.", "6c", "." ]
+  }, {
+    "sentence_tokens" : [ "Again", ",", "ROI1", "was", "divided", "into", "eight", "zones", "." ]
+  }, {
+    "sentence_tokens" : [ "Zone", "I", "and", "III", "were", "vacant", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "single", "cells", "in", "Zones", "V", "and", "VII", "divided", "into", "doublets", "after", "one", "day", "." ]
+  }, {
+    "sentence_tokens" : [ "Instead", "of", "protruding", "and", "migrating", "through", "the", "matrix", "as", "in", "collagen", "I", ",", "the", "HCT-116", "cells", "tended", "to", "maintain", "their", "positions", "and", "develop", "into", "MCTS", "in", "the", "Matrigel", "." ]
+  }, {
+    "sentence_tokens" : [ "After", "fixing", "the", "tumor", "arrays", "in", "Matrigel", "at", "Day", "3.5", ",", "we", "acquired", "fluorescence", "(", "red", ":", "F-actin", ",", "blue", ":", "nuclei", ")", "confocal", "images", "of", "the", "solid", "tumors", "in", "ROI1", "(", "Fig.", "6d", ")", "and", "ROI2", "(", "Fig.", "6f", ")", ",", "to", "further", "compare", "the", "morphologies", "of", "these", "tumors", "." ]
+  }, {
+    "sentence_tokens" : [ "Figure", "6e", "shows", "the", "3D", "reconstruction", "of", "ROI1", ",", "color", "coded", "by", "tumor", "volume", "." ]
+  }, {
+    "sentence_tokens" : [ "From", "Fig.", "6d", ",", "f", ",", "it", "is", "clear", "that", "no", "cells", "formed", "protrusions", "into", "the", "Matrigel", "." ]
+  }, {
+    "sentence_tokens" : [ "Other", "single-cell", "resolution", "patterns", "in", "3D", "." ]
+  }, {
+    "sentence_tokens" : [ "Array", "patterns", "may", "be", "an", "efficient", "tool", "for", "ease", "of", "locating", "individual", "cells", "when", "one", "studies", "single", "cell", "behaviors", "in", "3D", "matrices", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "the", "drop", "patterning", "method", "may", "also", "be", "used", "to", "produce", "other", ",", "more", "complex", "patterns", "that", "may", "be", "designed", ",", "for", "example", ",", "to", "induce", "or", "prohibit", "cell-cell", "interactions", "using", "spatial", "variations", "in", "the", "cell", "density", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "demonstrated", "this", "capability", "with", "a", "couple", "of", "different", "patterns", "that", "we", "dropped", "into", "collagen", "I", "(", "Fig.", "7a", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "illustrate", "the", "flexibility", "in", "pattern", "design", "with", "the", "letters", "R", ",", "P", ",", "and", "I", "(", "abbreviation", "for", "Rensselaer", "Polytechnic", "Institute", ")", "(", "Fig.", "7b", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "To", "demonstrate", "how", "variable", "spacing", "may", "be", "used", "to", "investigate", "cell-cell", "interaction", "distances", "as", "a", "function", "of", "matrix", "properties", ",", "a", "concentric-circle", "pattern", "consisting", "of", "16", "radial", "lines", "was", "drop", "patterned", "and", "the", "cells", "were", "incubated", "(", "Fig.", "7c", ",", "d", ")", "for", "six", "days.In", "the", "concentric-circle", "pattern", "design", ",", "the", "cell-cell", "spacing", "along", "the", "radii", "is", "100", "mu", "m", "(", "red", "double", "headed", "arrow", ",", "Fig.", "7c", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "cell-cell", "spacing", "on", "a", "circle", "is", "proportional", "to", "its", "radius", "(", "i.e", ".,", "larger", "when", "the", "radius", "is", "larger", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Thus", ",", "the", "area", "density", "of", "cells", "varies", "in", "radial", "direction", "and", "the", "cell-cell", "distance", "(", "black", "double", "headed", "arrows", ")", "can", "be", "varied", "within", "one", "pattern", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "observed", "that", "varying", "cell", "spacing", "might", "be", "used", "to", "probe", "the", "sensitivity", "of", "cells", "to", "signaling", "from", "neighboring", "cells", "as", "a", "function", "of", "spacing", "." ]
+  }, {
+    "sentence_tokens" : [ "Comparing", "Fig.", "7c", ",", "d", ",", "we", "found", "MCTS", "merged", "when", "they", "were", "patterned", "close", "to", "each", "other", "(", "blue", "dotted", "ellipses", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Overlaid", "on", "the", "image", "in", "Fig.", "7d", "(", "at", "day", "6", ")", "are", "the", "radial", "patterns", "(", "dotted", "yellow", "lines", ")", "and", "short", "solid", "lines", "(", "red", "and", "black", ")", "parallel", "to", "cell", "protrusions", "from", "the", "tumors", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "lengths", "of", "the", "solid", "lines", "indicate", "the", "protrusion", "lengths", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "black", "lines", "represent", "the", "cells", "protruding", "towards", "adjacent", "MCTS", "in", "the", "radial", "direction", ",", "while", "the", "red", "lines", "indicate", "protrusions", "between", "MCTS", "in", "the", "circumferential", "direction", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "green", "circle", "(", "radius", "R", "=", "500", "mu", "m", ")", "with", "a", "nominal", "cell-cell", "distance", "(", "black", "double", "headed", "arrow", ")", "of", "approximately", "200", "mu", "m", "encloses", "most", "cell", "protrusions", "occurring", "between", "MCTS", "in", "the", "circumferential", "direction", "(", "i.e", ".,", "red", "solid", "lines", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Cell", "patterns", "like", "the", "concentric", "circles", "may", "be", "potentially", "used", "as", "a", "tool", "to", "study", "cell-cell", "interactions", "and", "characterize", "the", "distance", "range", "for", "mechanical", "or", "chemical", "communications", "between", "cells", "with", "respect", "to", "matrix", "properties", "." ]
+  }, {
+    "sentence_tokens" : [ "Discussion", "and", "Outlook", "." ]
+  }, {
+    "sentence_tokens" : [ "Here", "we", "presented", "the", "development", "and", "performance", "evaluation", "of", "a", "method", "for", "embedding", "arrays", "and", "planar", "patterns", "of", "cells", "completely", "within", "hydrogels", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "cells", "do", "not", "sit", "within", "discontinuous", "interfaces", "or", "at", "boundaries", "between", "stiffness", "mismatched", "materials", "." ]
+  }, {
+    "sentence_tokens" : [ "Our", "desire", "for", "developing", "such", "a", "tool", "arose", "from", "facing", "the", "challenges", "of", "obtaining", "significant", "numbers", "of", "data", "points", "on", "the", "physical", "behavior", "of", "single", "cells", "and/or", "aggregates", "of", "cells", "embedded", "in", "3D", "matrices", "over", "time", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "drop", "patterning", "method", "is", "easy", "and", "inexpensive", "to", "employ", "and", "significantly", "eases", "the", "task", "of", "collecting", "large", "numbers", "of", "data", "points", "for", "many", "different", "types", "of", "3D", "cell", "studies", "including", ":", "cell-matrix", "interactions", ",", "cell-cell", "interactions", ",", "cell", "division", "mechanics", ",", "and", "organoid", "or", "MCTS", "growth.To", "evaluate", "the", "performance", "of", "our", "method", ",", "we", "drop", "patterned", "cells", "into", "collagen", "I", "gels", "using", "evenly", "spaced", "arrays", "of", "single-cell-sized", "microwells", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "reported", "the", "trapping", ",", "patterning", ",", "and", "single-cell", "efficiencies", "from", "hundreds", "of", "cells", "patterned", "in", "multiple", "trials", "." ]
+  }, {
+    "sentence_tokens" : [ "Reported", "for", "similar", "microwell", "trapping", "technologies", "are", "trapping", "efficiencies", "as", "high", "as", "85", "%", "to", "92", "%", "." ]
+  }, {
+    "sentence_tokens" : [ "Our", "experience", "and", "other", "reports", ",", "however", ",", "indicate", "that", "the", "single-cell", "trapping", "efficiency", "of", "passive", "methods", "such", "as", "microwells", "is", "highly", "dependent", "on", "cell", "type", "and", "the", "ease", "with", "which", "the", "cells", "may", "be", "dissociated", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "results", "in", "single-cell", "efficiencies", "on", "the", "order", "of", "26", "%", "to", "34", "%", ",", "and", "probabilities", "of", "cell", "numbers", "per", "well", "or", "per", "chamber", "fitting", "the", "Poisson", "distribution", "." ]
+  }, {
+    "sentence_tokens" : [ "Our", "single-cell", "efficiency", "is", "currently", "on", "par", "with", "these", "other", "studies", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "believe", "this", "may", "significantly", "be", "improved", "by", "designing", "the", "trapping", "steps", "around", "a", "more", "efficient", "microfluidic", "method", "." ]
+  }, {
+    "sentence_tokens" : [ "Matrix", "materials", "and", "their", "biophysical", "properties", "are", "important", "considerations", "when", "designing", "and", "conducting", "studies", "of", "cell", "behavior", "in", "3D", "." ]
+  }, {
+    "sentence_tokens" : [ "Depending", "on", "the", "type", "of", "study", ",", "a", "model", "of", "the", "mechanical", ",", "morphological", ",", "and/or", "biological", "activity", "of", "the", "ECM", "may", "be", "desired", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "demonstrated", "that", "the", "drop", "patterning", "method", "is", "applicable", "to", "three", "different", "types", "of", "matrix", "material", ":", "collagen", "I", ",", "Matrigel", ",", "and", "agarose", "(", "Figure", "S9", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "results", "presented", "here", "focused", "on", "collagen", "I", "and", "Matrigel", ",", "but", "this", "method", "may", "be", "furthermore", "expandable", "to", "any", "hydrogel", "formulation", "for", "which", "the", "gelation", "kinetics", "may", "be", "controlled", "on", "the", "time", "scale", "of", "minutes", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "provides", "the", "basis", "for", "which", "cell-matrix", "interactions", "may", "be", "studied", "with", "respect", "to", "many", "different", "biochemical", "compositions", ",", "morphologies", ",", "and", "stiffness", "of", "ECM", "at", "the", "single-cell", "level", "in", "a", "more", "controllable", "way.Compared", "to", "random", "mixing", "of", "cells", "in", "a", "gel", ",", "this", "well", "organized", "method", "of", "3D", "cell", "culture", "made", "it", "possible", "to", "keep", "track", "of", "individual", "cell", "positions", "in", "a", "large", "sample", "size", "on", "one", "chip", "." ]
+  }, {
+    "sentence_tokens" : [ "Individual", "MCTS", "could", "be", "easily", "traced", "back", "to", "the", "corresponding", "single", "cells", "or", "cell", "clusters", "that", "they", "developed", "from", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "a", "demonstration", "of", "the", "applicability", "of", "this", "method", "for", "tracking", "the", "manifestation", "of", "cell", "behavioral", "heterogeneity", "within", "a", "matrix", ",", "we", "point", "out", "the", "distinctly", "different", "behaviors", "of", "individual", "cell", "development", "in", "one", "array", "in", "both", "the", "collagen", "I", "and", "Matrige", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "collagen", "I", ",", "we", "observed", "some", "cells", "to", "display", "more", "spread", "and", "motile", "behaviors", "whereas", "others", "displayed", "a", "more", "proliferative", "phenotype", "(", "Fig.", "5", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "Matrigel", ",", "although", "no", "motile", "behavior", "was", "observed", ",", "the", "morphologies", "of", "MCTS", "(", "Fig.", "6d", "-", "f", ")", "were", "distinctly", "varied", "." ]
+  }, {
+    "sentence_tokens" : [ "Whereas", "some", "MCTS", "adopted", "round", "and", "smooth", "boundaries", ",", "some", "MCTS", "(", "outlined", "with", "dotted", "lines", ")", "were", "less", "packed", "and", "adopted", "a", "\"", "grape", "like", "\"", "morphology", "." ]
+  }, {
+    "sentence_tokens" : [ "Morphological", "classifications", "such", "as", "this", "have", "been", "previously", "described", "for", "a", "panel", "of", "human", "breast", "cancer", "cell", "lines", ",", "where", "the", "loosely", "organized", "grape", "like", "morphology", "has", "been", "attributed", "to", "weaker", "cell-cell", "adhesion", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "believe", "the", "drop", "patterning", "chip", "will", "become", "a", "useful", "tool", "to", "isolate", "and", "study", "the", "biological", "basis", "of", "different", "phenotypic", "behaviors", "displayed", "within", "the", "same", "cell", "line", "with", "respect", "to", "interactions", "with", "matrix", "materials.Technologies", ",", "such", "as", "cell", "microdroplets", "and", "micro-chambers", "along", "a", "microfluidic", "channel", ",", "are", "able", "to", "provide", "cells", "a", "3D", "environment", "while", "possibly", "allowing", "for", "cell", "proliferation", "to", "be", "tracked", "in", "individual", "droplets", "or", "chambers", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "these", "methods", "lack", "the", "ability", "to", "expand", "the", "complexity", "of", "the", "patterning", "and", "accurately", "control", "cell-cell", "interactions", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "drop", "patterning", "technique", "allows", "for", "a", "large", "degree", "of", "flexibility", "in", "pattern", "geometry", "(", "Fig.", "7", ")", "to", "elicit", "or", "minimize", "various", "cell", "interactions", "via", "mechanical", "or", "chemical", "cues", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "furthermore", "envision", "that", "the", "drop", "patterning", "method", "may", "be", "used", "for", "3D", "co-culture", "studies", "with", ",", "for", "example", ",", "cancer", "associated", "fibroblasts", ",", "endothelial", "cells", ",", "or", "immune", "cells", "on", "one", "chip", "." ]
+  }, {
+    "sentence_tokens" : [ "Although", "single-cell", "microwells", "and", "arrays", "were", "used", "here", "to", "illustrate", "the", "use", "of", "this", "new", "method", ",", "we", "would", "like", "to", "point", "out", "that", "it", "is", "possible", "to", "tune", "the", "size", "of", "the", "microwells", "in", "order", "to", "drop-pattern", "aggregates", "of", "cells", "or", "pre-produced", "MCTS.The", "flexibility", "with", "which", "one", "may", "choose", "the", "cell", "patterns", "as", "well", "as", "the", "types", "of", "hydrogel", "makes", "this", "a", "generally", "useful", "tool", "for", "fields", "as", "varied", "as", "tissue", "engineering", ",", "stem", "cell", "research", ",", "ex", "vivo", "cancer", "assays", ",", "in", "vitro", "studies", "on", "intercellular", "communication", "(", "e.g", ".,", "neurite", "outgrowth", "of", "primary", "neurons", ")", ",", "and", "tumor-microenvironment", "interaction", "(", "e.g", ".,", "tumor", "angiogenesis", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "drop", "patterning", "method", "may", "also", "be", "used", "as", "part", "of", "a", "multiplexed", "design", ",", "integrated", "with", "other", "platforms", "--", "such", "as", "a", "chemotaxis", "device", "or", "an", "engineered", "blood", "vessel", "--", "to", "create", "a", "complex", "engineered", "niche", "for", "large", "scale", "studies", "cell-matrix", "interactions", "." ]
+  }, {
+    "sentence_tokens" : [ "Materials", "and", "Methods", "." ]
+  }, {
+    "sentence_tokens" : [ "Design", "and", "fabrication", "of", "the", "drop", "patterning", "chip", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "designed", "the", "microwell", "patterns", "on", "computer", "aid", "design", "(", "CAD", ")", "software", "SolidWorks", "(", "Dassault", "Syst", "e", "mes", ")", ",", "and", "all", "the", "patterns", "were", "printed", "on", "a", "chrome", "mask", "by", "a", "high-resolution", "printing", "service", "(", "Front", "Range", "Photo", "Mask", ",", "CO", ",", "USA", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Micro-posts", "on", "the", "silicon", "wafer", "were", "fabricated", "in", "a", "negative", "photoresist", "(", "SU-8", "3025", ",", "MicroChem", ",", "MA", ",", "USA", ")", "through", "the", "techniques", "of", "photolithography", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "brief", ",", "a", "layer", "of", "SU-8", "(", "27.5", "mu", "m", "thick", ")", "was", "spin", "coated", "on", "a", "3-inch", "silicon", "wafer", "for", "30", "sec", "at", "2,800", "rpm", "." ]
+  }, {
+    "sentence_tokens" : [ "After", "soft", "baking", "at", "95", "degrees", "C", "for", "10", "min", ",", "the", "SU-8", "coating", "was", "crosslinked", "under", "the", "exposure", "of", "UV", "light", "through", "a", "chrome", "mask", "." ]
+  }, {
+    "sentence_tokens" : [ "After", "post-exposure", "baking", "at", "65", "degrees", "C", "for", "1", "min", "and", "95", "degrees", "C", "for", "8", "min", ",", "non", "crosslinked", "SU-8", "photoresist", "was", "washed", "off", "through", "the", "developing", "process", ",", "and", "all", "the", "crosslinked", "micro-posts", "remained", "on", "the", "silicon", "wafer", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "silicon", "wafer", "was", "then", "hard", "baked", "at", "180", "degrees", "C", "for", "10", "min", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "heights", "of", "these", "SU-8", "features", "were", "inspected", "by", "a", "stylus", "profilometer", "(", "Veeco", ",", "DekTak", "8)", "." ]
+  }, {
+    "sentence_tokens" : [ "Using", "soft", "lithography", "techniques", ",", "we", "molded", "microwells", "onto", "a", "PDMS", "(", "Sylgard", "184", ",", "Dow", "Corning", ")", "sheet", "via", "the", "silicon", "master", "with", "micro-posts", "." ]
+  }, {
+    "sentence_tokens" : [ "First", ",", "we", "treated", "the", "surface", "with", "Tridecafluoro-1", ",1,2,2-tetrahydrooctyl-1-trichlorosilane", "(", "TFOCS", ",", "Gelest", ",", "PA", ",", "USA", ")", "to", "prevent", "cured", "PDMS", "sticking", "to", "the", "master", "." ]
+  }, {
+    "sentence_tokens" : [ "Then", ",", "we", "poured", "a", "thoroughly", "mixed", ",", "degassed", "PDMS", "precursor", "(", "ratio", "of", "base", "and", "curing", "agent", "=", "10:1", "by", "weight", ")", "onto", "the", "silicon", "master", "in", "a", "plastic", "Petri", "dish", "and", "allowed", "the", "PDMS", "to", "cure", "at", "70", "degrees", "C", "overnight", "." ]
+  }, {
+    "sentence_tokens" : [ "After", "the", "PDMS", "was", "fully", "cured", ",", "we", "peeled", "it", "off", "and", "cut", "it", "into", "the", "desired", "size", "(", "25", "mm", "x", "25", "mm", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "PDMS", "spacer", "ring", "(", "thickness", ":", "approximately", "600", "mu", "m", ")", "was", "directly", "cut", "out", "of", "a", "plain", "PDMS", "sheet", "as", "a", "square", ",", "matching", "the", "size", "of", "the", "patterned", "PDMS", "substrate", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "square", "coverslip", "with", "standard", "dimensions", "(", "22", "mm", "x", "22", "mm", ",", "thickness", ":", "120", "-", "160", "mu", "m", ")", "was", "used", "to", "seal", "the", "whole", "device", "." ]
+  }, {
+    "sentence_tokens" : [ "Before", "assembling", ",", "we", "treated", "the", "PDMS", "substrate", "and", "spacer", "ring", "in", "a", "plasma", "cleaner", "(", "Harrick", "Plasma", ")", "and", "allowed", "them", "to", "partially", "recover", "its", "natural", "hydrophobicity", "in", "a", "sterile", "ambient", "environment", "overnight", "." ]
+  }, {
+    "sentence_tokens" : [ "All", "three", "components", "were", "sterilized", "all", "the", "three", "components", "with", "70", "%", "ethanol", "and", "then", "with", "UV", "light", "for", "15", "minutes", "." ]
+  }, {
+    "sentence_tokens" : [ "Preparation", "of", "collagen", "gel", "and", "Matrigel", "." ]
+  }, {
+    "sentence_tokens" : [ "Eight", "parts", "of", "type", "I", "bovine", "collagen", "monomer", "solution", "(", "3.1", "mg/mL", ",", "pH", "2", ",", "PureCol", ",", "Advanced", "Matrix", ",", "USA", ")", "was", "diluted", "with", "one", "part", "of", "10", "x", "PBS", ",", "and", "then", "neutralized", "to", "a", "pH", "of", "7.2", "-", "7.6", "with", "0.1", "M", "sodium", "hydroxide", "(", "NaOH", ")", "solution", "." ]
+  }, {
+    "sentence_tokens" : [ "To", "avoid", "local", "pH", "variance", ",", "the", "solution", "was", "pipetted", "up", "and", "down", "each", "time", "a", "fraction", "of", "NaOH", "was", "added", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "final", "volume", "was", "adjusted", "to", "ten", "parts", "with", "ultrapure", "water", "." ]
+  }, {
+    "sentence_tokens" : [ "Using", "this", "method", ",", "the", "concentration", "of", "the", "neutralized", "collagen", "solution", "was", "2.48", "mg/mL", "." ]
+  }, {
+    "sentence_tokens" : [ "Based", "on", "the", "final", "concentration", "desired", ",", "we", "were", "able", "to", "adjust", "the", "collagen", "solution", "to", "any", "concentration", "lower", "than", "2.48", "mg/mL", ",", "by", "diluting", "with", "cell", "culture", "medium", "." ]
+  }, {
+    "sentence_tokens" : [ "Matrigel", "(", "growth", "factor", "reduced", ",", "Corning", "Life", "Sciences", ",", "Lowell", ",", "MA", ")", "was", "diluted", "with", "cell", "culture", "medium", "to", "a", "final", "concentration", "of", "5", "mg/mL", "." ]
+  }, {
+    "sentence_tokens" : [ "To", "prevent", "local", "gelation", ",", "all", "the", "solutions", "and", "tubes", "were", "chilled", "and", "all", "mixing", "operations", "were", "conducted", "on", "ice", ",", "for", "both", "gels", "." ]
+  }, {
+    "sentence_tokens" : [ "Since", "air", "could", "be", "introduced", "via", "mixing", "process", ",", "the", "final", "collagen", "solution", "was", "degassed", "on", "ice", "in", "a", "vacuum", "desiccator", "to", "eliminate", "bubbles", "during", "gelation", "." ]
+  }, {
+    "sentence_tokens" : [ "Cell", "culture", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "study", "of", "cell", "proliferation", "and", "tumor", "growth", "in", "3D", ",", "we", "chose", "a", "human", "colon", "cancer", "cell", "line", "HCT-116", "(", "ATCC", ")", "as", "a", "cell", "model", "." ]
+  }, {
+    "sentence_tokens" : [ "Before", "loading", "the", "cells", "in", "the", "chip", ",", "we", "cultured", "them", "on", "tissue", "culture", "flasks", "in", "McCoy", "'", "s", "5", "A", "modified", "medium", "(", "Corning", ")", "with", "10", "%", "(", "vol", "and", "vol", ")", "FBS", "(", "Gibco", ")", "and", "1", "%", "penicillin", "and", "streptomycin", "(", "Gibco", ")", "at", "37", "degrees", "C", "and", "5", "%", "CO", "in", "a", "humidified", "incubator", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "cell", "culture", "medium", "was", "changed", "every", "other", "day", "and", "passaged", "when", "cells", "reached", "over", "80", "%", "confluency", "." ]
+  }, {
+    "sentence_tokens" : [ "When", "the", "cells", "were", "embedded", "in", "3D", "collagen", ",", "we", "continued", "culturing", "them", "by", "submerging", "the", "chip", "in", "fresh", "cell", "culture", "medium", "." ]
+  }, {
+    "sentence_tokens" : [ "Passage", "numbers", "of", "the", "cells", "used", "in", "this", "research", "did", "not", "exceed", "ten", "." ]
+  }, {
+    "sentence_tokens" : [ "Device", "preparation", "and", "assembly", "." ]
+  }, {
+    "sentence_tokens" : [ "Before", "drop", "patterning", ",", "the", "surface", "of", "the", "inherently", "hydrophobic", "PDMS", "microwell", "substrate", "(", "bottom", "component", ",", "Fig.", "1a", ")", "was", "treated", "with", "air", "plasma", "(", "Harrick", "Plasma", ")", "for", "30", "seconds", ",", "a", "process", "that", "renders", "its", "surface", "hydrophilic", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "substrate", "was", "then", "placed", "in", "a", "sterile", "ambient", "environment", "overnight", "to", "partially", "recover", "its", "natural", "hydrophobicity", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "step", "allowed", "for", "optimal", "wetting", "behavior", "while", "preventing", "cell", "attachment", "to", "the", "microwell", "walls", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "surface", "of", "the", "plasma", "treated", "microwell", "substrate", "and", "the", "glass", "coverslip", "were", "then", "incubated", "at", "room", "temperature", "for", "one", "hour", "with", "a", "10", "%", "bovine", "serum", "albumin", "(", "BSA", ")", "solution", "to", "further", "prevent", "cell", "attachment.After", "the", "BSA", "treatment", ",", "250", "mu", "L", "cell", "suspension", "(", "1", "x", "10", "cells/mL", ")", "was", "seeded", "on", "the", "microwell", "substrate", "and", "the", "cells", "were", "allowed", "to", "settle", "into", "the", "microwells", "for", "about", "5", "min", "." ]
+  }, {
+    "sentence_tokens" : [ "Then", "the", "supernatant", "was", "removed", "and", "excess", ",", "untrapped", "cells", "were", "gently", "flushed", "away", "with", "phosphate", "buffered", "saline", "(", "PBS", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "Kimwipe", "was", "used", "to", "carefully", "dry", "the", "unpatterned", "area", "near", "the", "edges", "of", "the", "substrate", ",", "while", "keeping", "the", "central", ",", "patterned", "area", "wet", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "dry", "PDMS", "spacer", "(", "middle", "component", ",", "Fig.", "1a", ")", "was", "then", "rapidly", "placed", "onto", "the", "substrate", "to", "create", "a", "chamber", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "chamber", "was", "filled", "with", "a", "collagen", "solution", "(", "1.0", "mg/mL", ")", "and", "then", "sealed", "with", "the", "coverslip", "(", "top", "component", ",", "Fig.", "1a", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Immunohistochemistry", "." ]
+  }, {
+    "sentence_tokens" : [ "HCT-116", "tumor", "arrays", "were", "grown", "in", "3D", "collagen", "I", "or", "Matrigel", "for", "multiple", "days", "." ]
+  }, {
+    "sentence_tokens" : [ "Collagen", "gels", "were", "then", "transferred", "into", "a", "glass", "bottom", "dish", "(", "World", "Precision", "Instruments", ",", "FL", ",", "USA", ")", "for", "fixation", "and", "imaging", "." ]
+  }, {
+    "sentence_tokens" : [ "Because", "Matrigel", "tended", "to", "break", "when", "we", "tried", "to", "transfer", "it", "from", "a", "chip", "to", "a", "new", "dish", ",", "we", "directly", "stained", "the", "MCTS", "in", "the", "Matrigel", "on", "chip", "and", "conducted", "confocal", "imaging", "through", "the", "coverslip", "(", "Figure", "S8", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Specifically", ",", "the", "samples", "were", "washed", "in", "PBS", ",", "fixed", "with", "3.7", "%", "paraformaldehyde", "at", "37", "degrees", "C", "for", "30", "min", ",", "and", "permeabilized", "with", "0.5", "%", "Triton", "X-100", "at", "37", "degrees", "C", "for", "30", "min", "." ]
+  }, {
+    "sentence_tokens" : [ "After", "washing", "with", "PBS", "three", "times", "for", "30", "min", ",", "the", "samples", "were", "blocked", "for", "10", "hours", "in", "5", "%", "BSA", "in", "PBS", "at", "room", "temperature", "." ]
+  }, {
+    "sentence_tokens" : [ "Samples", "were", "then", "incubated", "at", "4", "degrees", "C", "with", "a", "primary", "vimentin", "(", "Figure", "S6", ")", "antibody", "(", "1:50", ",", "mouse", ",", "Santa", "Cruz", ")", "diluted", "in", "incubation", "solution", "(", "PBS", "with", "0.1", "%", "BSA", ")", "overnight", "." ]
+  }, {
+    "sentence_tokens" : [ "An", "F-actin", "probe", "rhodamine", "phalloidin", "(", "1:50", ",", "R415", ",", "Thermo", "Fisher", ")", "and", "a", "second", "antibody", "(", "1:50", ",", "mouse", ",", "Alexa", "Fluor", "488", ",", "Santa", "Cruz", ")", "were", "then", "applied", "in", "dark", "at", "4", "degrees", "C", "overnight", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "nuclei", "were", "then", "stained", "with", "Hoechst", "(", "0.2", "mu", "g/mL", ",", "Hoechst", "33342", ",", "Thermo", "Fisher", ")", "at", "room", "temperature", "in", "dark", "for", "4", "hours", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "cell", "viability", "assays", "based", "on", "collagen", ",", "HCT-116", "single", "cells", "or", "small", "cell", "clusters", "were", "stained", "with", "calcein", "AM", "and", "EthD-1", "(", "LIVE", "and", "DEAD", "Viability", "Kit", ",", "Invitrogen", ")", "19", "hours", "after", "drop", "patterning", "." ]
+  }, {
+    "sentence_tokens" : [ "Image", "acquisition", "and", "statistical", "analysis", "." ]
+  }, {
+    "sentence_tokens" : [ "Bright", "field", "images", "of", "microwells", "and", "cells", "were", "obtained", "with", "an", "inverted", "microscope", "(", "Zeiss", ",", "Axio", "Vert.A1", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Fluorescence", "images", "of", "cells", "and", "MCTS", "and", "reflectance", "imaged", "of", "collagen", "microstructure", "were", "acquired", "with", "a", "laser", "scanning", "confocal", "microscope", "(", "Zeiss", ",", "LSM", "510", "META", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "3D", "reconstructions", "of", "z-stacks", "of", "MCTS", "arrays", "were", "performed", "on", "software", "ZEN", "(", "Zeiss", ")", "and", "3D", "rendering", "based", "on", "confocal", "microscopic", "images", "was", "made", "by", "software", "Imaris", "8", "(", "Bitplane", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Cell-cell", "distances", "were", "measured", "with", "ImageJ", "." ]
+  }, {
+    "sentence_tokens" : [ "All", "data", "was", "presented", "as", "mean", "+/-", "standard", "deviation", "(", "s.d", "." ]
+  }, {
+    "sentence_tokens" : [ ")", ",", "except", "for", "Fig.", "3a", "where", "the", "boxes", "represent", "the", "25th", "to", "75th", "percentile", "and", "the", "whiskers", "represent", "the", "minimum-maximum", "range", "." ]
+  }, {
+    "sentence_tokens" : [ "Statistical", "difference", "was", "determined", "by", "Kruskal", "-", "Wallis", "test", "with", "Dunn", "'", "s", "post", "hoc", "testing", "for", "multiple", "comparisons", "." ]
+  }, {
+    "sentence_tokens" : [ "Differences", "were", "considered", "significant", "at", "P", "<", "0.05", "." ]
+  } ]
+}

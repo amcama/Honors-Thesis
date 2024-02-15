@@ -1,119 +1,639 @@
-[ {
-  "sentence_tokens" : [ "CORE-RVEF", "were", "used", "to", "divide", "the", "patient", "cohort", "into", "three", "clinically", "relevant", "groups", "[", "19", "-", "21", "]", ":", "severely", "reduced", "RVEF", "(", "<=", "35", "%", ")", ",", "mildly", "to", "moderately", "reduced", "RVEF", "(", "35", "-", "50", "%", ")", ",", "and", "normal", "RVEF", "(", ">=", "50", "%", ")", "." ],
-  "event_indices" : [ 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38 ],
-  "type" : "Negative_activation",
-  "polarity" : false,
-  "controller_indices" : [ 21, 22 ],
-  "controlled_indices" : [ 32, 33, 34, 35, 36, 37, 38 ],
-  "trigger_indices" : [ 31, 32 ],
-  "rule_name" : "Negative_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "The", "current", "study", "was", "designed", "to", "test", "the", "hypothesis", "that", "quantification", "of", "RV", "function", "could", "be", "improved", "in", "these", "patients", "by", "using", "more", "diverse", "CMR", "datasets", "in", "addition", "to", "domain", "specific", "quantitative", "performance", "evaluation", "metrics", "during", "the", "cross", "validation", "phase", "of", "DL", "algorithm", "development", "." ],
-  "entity_one_indices" : [ 41, 42 ],
-  "entity_two_indices" : [ 12, 13 ]
-}, {
-  "sentence_tokens" : [ "Agreement", "between", "RVEF", "classifications", "made", "by", "the", "DL", "approaches", "and", "the", "CORE", "measurements", "was", "tested", "." ],
-  "entity_one_indices" : [ 7, 8 ],
-  "entity_two_indices" : [ 2, 3 ]
-}, {
-  "sentence_tokens" : [ "DL2-RVEF", "correlated", "with", "CORE-RVEF", "better", "than", "DL1-RVEF", "(", "r", "=", "0.87", "vs.", "r", "=", "0.42", ")", ",", "with", "narrower", "limits", "of", "agreement", "." ],
-  "entity_one_indices" : [ 3, 4 ],
-  "entity_two_indices" : [ 0, 1 ]
-}, {
-  "sentence_tokens" : [ "The", "use", "of", "a", "new", "DL", "algorithm", "cross", "validated", "on", "a", "dataset", "with", "a", "wide", "range", "of", "RV", "pathology", "using", "multiple", "domain", "specific", "metrics", "resulted", "in", "a", "considerable", "improvement", "in", "the", "accuracy", "of", "automated", "RVEF", "measurements", "." ],
-  "entity_one_indices" : [ 34, 35 ],
-  "entity_two_indices" : [ 5, 6 ]
-}, {
-  "sentence_tokens" : [ "In", "patients", "with", "ischemic", "or", "non", "ischemic", "cardiomyopathy", ",", "the", "presence", "of", "reduced", "RVEF", "in", "addition", "to", "reduced", "left", "ventricular", "(", "LV", ")", "function", "can", "better", "identify", "patients", "who", "may", "benefit", "from", "implantable", "cardioverter", "defibrillator", "and", "other", "interventions", "[", "1", ",", "2", "]", "." ],
-  "entity_one_indices" : [ 13, 14 ],
-  "entity_two_indices" : [ 7, 8 ]
-}, {
-  "sentence_tokens" : [ "The", "DL1", "segmentation", "model", ",", "included", "in", "cvi42", "(", "version", "5.11", ",", "Circle", "Cardiovascular", "Imaging", ",", "Calgary", ",", "Alberta", ",", "Canada", ")", ",", "is", "founded", "on", "a", "convolutional", "neural", "network", "(", "CNN", ")", "based", "on", "the", "U-net", "architecture", "." ],
-  "entity_one_indices" : [ 2, 3 ],
-  "entity_two_indices" : [ 1, 2 ]
-}, {
-  "sentence_tokens" : [ "During", "the", "training", "stage", ",", "the", "model", "parameters", "of", "CNN", "were", "optimized", "to", "reduce", "an", "energy", "function", "computed", "using", "the", "pixel-wise", "cross-entropy", "loss", "function", ",", "which", "penalizes", "the", "CNN", "when", "it", "does", "not", "correctly", "predict", "the", "segmentation", "label", "of", "a", "given", "pixel.The", "initial", "machine", "learning", "based", "RV", "contouring", "CNN", "was", "trained", "on", "multiple", "datasets", "summarized", "in", "Table", "1", "." ],
-  "entity_one_indices" : [ 44, 45 ],
-  "entity_two_indices" : [ 36, 37 ]
-}, {
-  "sentence_tokens" : [ "DL2", ",", "included", "in", "cvi42", "(", "Version", "5.13", ",", "Circle", "Cardiovascular", "Imaging", ")", "was", "trained", "using", "the", "exact", "same", "CNN", "architecture", "as", "DL1", "." ],
-  "entity_one_indices" : [ 22, 23 ],
-  "entity_two_indices" : [ 0, 1 ]
-}, {
-  "sentence_tokens" : [ "460", "additional", "tetralogy", "of", "Fallot", "images", "and", "9202", "additional", "images", "from", "UKBB", "were", "also", "added", "to", "the", "cross", "validation", "dataset", "." ],
-  "entity_one_indices" : [ 11, 12 ],
-  "entity_two_indices" : [ 2, 3, 4, 5 ]
-}, {
-  "sentence_tokens" : [ "In", "addition", "to", "DSC", ",", "the", "contour", "spatial", "distance", "based", "Hausdorff", "distance", "metric", "and", "domain", "specific", "performance", "metrics", "were", "computed", ",", "including", "absolute", "errors", "in", "RV", "volume", "prediction", ",", "LV", "volume", "and", "LV", "ejection", "fraction", "(", "LVEF", ")", "prediction", ",", "myocardial", "mass", "consistency", "and", "contour", "consistency", "." ],
-  "entity_one_indices" : [ 41, 42 ],
-  "entity_two_indices" : [ 3, 4 ]
-}, {
-  "sentence_tokens" : [ "Figure", "1", "shows", "examples", "of", "RV", "boundaries", "as", "determined", "by", "the", "core-lab", "and", "by", "the", "2", "DL", "algorithms", "." ],
-  "entity_one_indices" : [ 16, 17 ],
-  "entity_two_indices" : [ 11, 12 ]
-}, {
-  "sentence_tokens" : [ "Relationship", "between", "CORE-RVEF", "and", "DL-RVEF", "." ],
-  "entity_one_indices" : [ 4, 5 ],
-  "entity_two_indices" : [ 2, 3 ]
-}, {
-  "sentence_tokens" : [ "Figure", "3", "shows", "histograms", "that", "demonstrate", "the", "frequency", "of", "absolute", "differences", "between", "CORE-RVEF", "and", "each", "of", "the", "DL-RVEF", "algorithms", "for", "Group", "1", "(", "top", ")", "and", "Group", "2", "(", "bottom", ")", "." ],
-  "entity_one_indices" : [ 17, 18, 19 ],
-  "entity_two_indices" : [ 12, 13 ]
-}, {
-  "sentence_tokens" : [ "In", "contrast", ",", "for", "algorithm", "DL2", ",", "44", "(", "44", "%", ")", "cases", "in", "Group", "1", "were", "within", "3", "%", "absolute", "error", "and", "70", "(", "70", "%", ")", "cases", "were", "within", "5", "%", "error", ",", "while", "only", "10", "(", "10", "%", ")", "cases", "showed", "errors", ">", "10", "%", "when", "compared", "to", "CORE-RVEF", "." ],
-  "entity_one_indices" : [ 51, 52 ],
-  "entity_two_indices" : [ 4, 5, 6 ]
-}, {
-  "sentence_tokens" : [ "In", "group", "2", ",", "no", "case", "had", ">", "5", "%", "error", "according", "to", "DL1", ",", "as", "a", "consequence", "of", "the", "study", "design", ",", "and", "DL2", "resulted", "in", "a", "relatively", "small", "number", "of", "cases", "with", "larger", "errors", "." ],
-  "entity_one_indices" : [ 24, 25 ],
-  "entity_two_indices" : [ 13, 14 ]
-}, {
-  "sentence_tokens" : [ "For", "RVEDV", "and", "RVESV", ",", "algorithm", "DL1", "was", "less", "accurate", "than", "DL2", "when", "compared", "to", "CORE", "lab", "reference", "values", "(", "Fig.", "4", ")", "." ],
-  "entity_one_indices" : [ 11, 12 ],
-  "entity_two_indices" : [ 6, 7 ]
-}, {
-  "sentence_tokens" : [ "The", "accuracy", "of", "the", "DL1", "and", "DL2", "algorithms", "for", "classifying", "RV", "function", "into", "appropriate", "EF", "group", "was", "0.53", "and", "0.80", ",", "respectively", "." ],
-  "entity_one_indices" : [ 6, 7, 8 ],
-  "entity_two_indices" : [ 4, 5 ]
-}, {
-  "sentence_tokens" : [ "Thus", ",", "quantification", "of", "RVEF", ",", "as", "a", "biomarker", "of", "RV", "systolic", "function", ",", "can", "be", "used", "to", "guide", "therapeutic", "decision", "making", "and", "to", "assess", "prognosis", "[", "27", "-", "29", "]", "." ],
-  "entity_one_indices" : [ 8, 9 ],
-  "entity_two_indices" : [ 4, 5 ]
-}, {
-  "sentence_tokens" : [ "However", ",", "the", "process", "remains", "time", "consuming", "and", "even", "fully", "automated", ",", "commercially", "available", "DL", "techniques", "used", "to", "quantify", "RVEF", "may", "perform", "poorly", "in", "some", "patients", ",", "and", "as", "a", "result", "may", "fail", "to", "predict", "clinical", "events", "[", "31", "]", ",", "suggesting", "that", "the", "current", "approach", "to", "developing", "these", "algorithms", "needs", "to", "be", "refined", "." ],
-  "entity_one_indices" : [ 19, 20 ],
-  "entity_two_indices" : [ 14, 15 ]
-}, {
-  "sentence_tokens" : [ "The", "addition", "of", "10,161", "images", "to", "include", "RV", "pathologies", ",", "such", "as", "pulmonary", "arterial", "hypertension", ",", "repaired", "tetralogy", "of", "Fallot", ",", "etc.", "were", "used", "to", "revamp", "the", "cross", "validation", "strategy", "." ],
-  "entity_one_indices" : [ 17, 18, 19, 20 ],
-  "entity_two_indices" : [ 14, 15 ]
-}, {
-  "sentence_tokens" : [ "Additionally", ",", "the", "strict", "enforcement", "of", "a", "spatiotemporal", "consistency", "in", "the", "predicted", "outputs", "was", "adopted", "to", "post-processing", "in", "all", "stacks", ",", "which", "ensured", "the", "removal", "of", "outliers", "in", "the", "event", "that", "contours", "are", "predicted", "above", "the", "basal", "slice", "or", "below", "the", "apex.Although", "other", "studies", "have", "examined", "the", "accuracy", "of", "DL", "algorithms", "to", "quantify", "RVEF", "in", "comparison", "to", "a", "human", "expert", "[", "12", ",", "32", ",", "33", "]", ",", "they", "did", "not", "examine", "the", "clinical", "implications", "of", "any", "specific", "sources", "of", "error", "." ],
-  "entity_one_indices" : [ 53, 54 ],
-  "entity_two_indices" : [ 49, 50 ]
-}, {
-  "sentence_tokens" : [ "Rahman", "et", "al", ".,", "reported", "high", "levels", "of", "agreement", "between", "the", "DL", "algorithm", "and", "manual", "measurement", "of", "RVEF", ",", "but", "the", "focus", "was", "limited", "to", "the", "healthy", "population", "[", "34", "]", "." ],
-  "entity_one_indices" : [ 17, 18 ],
-  "entity_two_indices" : [ 11, 12 ]
-}, {
-  "sentence_tokens" : [ "In", "a", "study", "by", "Hakim", "et", "al", ".,", "when", "comparing", "automated", "RVEF", "measurements", "to", "a", "human", "expert", "generated", "reference", "values", ",", "the", "DL", "algorithm", "showed", "an", "r-value", "of", "0.76", "." ],
-  "entity_one_indices" : [ 22, 23 ],
-  "entity_two_indices" : [ 11, 12 ]
-}, {
-  "sentence_tokens" : [ "Furthermore", ",", "the", "RV", "apex", "is", "frequently", "incorrectly", "identified", "by", "the", "DL", "algorithms", "in", "cases", "of", "pathological", "RV", "morphology", "." ],
-  "entity_one_indices" : [ 11, 12 ],
-  "entity_two_indices" : [ 4, 5 ]
-}, {
-  "sentence_tokens" : [ "Another", "challenge", "for", "the", "DL-algorithms", "for", "calculating", "RVEF", "is", "the", "accurate", "identification", "of", "the", "ED", "and", "ES", "frames", "(", "Fig.", "6", ")", "." ],
-  "entity_one_indices" : [ 16, 17 ],
-  "entity_two_indices" : [ 7, 8 ]
-}, {
-  "sentence_tokens" : [ "There", "were", "three", "reasons", "for", "this", "choice", ":", "(", "1", ")", "vasodilator", "stress", "is", "a", "common", "indication", "for", "CMR", "imaging", ";", "(", "2", ")", "we", "suspected", "that", "the", "algorithms", "may", "not", "perform", "as", "well", "in", "this", "situation", ",", "since", "the", "images", "used", "to", "quantify", "EF", "are", "usually", "acquired", "after", "the", "administration", "of", "a", "gadolinium", "based", "contrast", "agent", ";", "and", "(", "3", ")", "the", "previous", "study", ",", "in", "which", "the", "original", "algorithm", "did", "not", "perform", "well", "in", "this", "subset", "of", "patients", ",", "was", "performed", "on", "their", "stress", "CMR", "images", ",", "and", "therefore", "testing", "the", "hypothesis", "that", "the", "retrained", "algorithm", "would", "perform", "better", "had", "to", "be", "done", "on", "the", "same", "images", "." ],
-  "entity_one_indices" : [ 44, 45 ],
-  "entity_two_indices" : [ 18, 19 ]
-}, {
-  "sentence_tokens" : [ "The", "use", "of", "a", "diverse", "dataset", "during", "the", "cross", "validation", "phase", "of", "DL", "algorithm", "development", "resulted", "in", "a", "considerable", "improvement", "in", "the", "accuracy", "of", "the", "automated", "analysis", "of", "RV", "volumes", "and", "RVEF", "in", "patients", "in", "whom", "the", "previous", "version", "of", "the", "software", "did", "not", "perform", "well", "." ],
-  "entity_one_indices" : [ 31, 32 ],
-  "entity_two_indices" : [ 12, 13 ]
-} ]
+{
+  "regulations" : [ {
+    "sentence_tokens" : [ "CORE-RVEF", "were", "used", "to", "divide", "the", "patient", "cohort", "into", "three", "clinically", "relevant", "groups", "[", "19", "-", "21", "]", ":", "severely", "reduced", "RVEF", "(", "<=", "35", "%", ")", ",", "mildly", "to", "moderately", "reduced", "RVEF", "(", "35", "-", "50", "%", ")", ",", "and", "normal", "RVEF", "(", ">=", "50", "%", ")", "." ],
+    "event_indices" : [ 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38 ],
+    "type" : "Negative_activation",
+    "polarity" : false,
+    "controller_indices" : [ 21, 22 ],
+    "controlled_indices" : [ 32, 33, 34, 35, 36, 37, 38 ],
+    "trigger_indices" : [ 31, 32 ],
+    "rule_name" : "Negative_activation_syntax_1_verb",
+    "rule" : null
+  } ],
+  "hardInstances" : [ {
+    "sentence_tokens" : [ "CORE-RVEF", "were", "used", "to", "divide", "the", "patient", "cohort", "into", "three", "clinically", "relevant", "groups", "[", "19", "-", "21", "]", ":", "severely", "reduced", "RVEF", "(", "<=", "35", "%", ")", ",", "mildly", "to", "moderately", "reduced", "RVEF", "(", "35", "-", "50", "%", ")", ",", "and", "normal", "RVEF", "(", ">=", "50", "%", ")", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  } ],
+  "withoutRegulations" : [ {
+    "sentence_tokens" : [ "Contour", "overlap", "metrics", "and", "the", "ability", "of", "accurate", "clinical", "biomarkers", "and", "results", "were", "factored", "into", "the", "exploration", "of", "DL2", "algorithm", "." ],
+    "entities_indices" : [ [ 18, 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "Relationship", "between", "CORE-RVEF", "and", "DL-RVEF", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "accuracy", "of", "the", "DL1", "and", "DL2", "algorithms", "for", "classifying", "RV", "function", "into", "appropriate", "EF", "group", "was", "0.53", "and", "0.80", ",", "respectively", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 6, 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "Agreement", "between", "RVEF", "classifications", "made", "by", "the", "DL", "approaches", "and", "the", "CORE", "measurements", "was", "tested", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "major", "source", "of", "error", "has", "typically", "been", "explained", "by", "poor", "automated", "segmentation", "at", "the", "basal", "slice", ",", "as", "was", "observed", "in", "prior", "studies", "[", "35", "]", "." ],
+    "entities_indices" : [ [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "Furthermore", ",", "quantification", "of", "RV", "size", "is", "an", "important", "determinant", "for", "guiding", "interventions", ",", "such", "as", "pulmonary", "valve", "replacement", "in", "patients", "with", "tetralogy", "of", "Fallot", "[", "10", "]", "." ],
+    "entities_indices" : [ [ 22, 23, 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "patients", "with", "ischemic", "or", "non", "ischemic", "cardiomyopathy", ",", "the", "presence", "of", "reduced", "RVEF", "in", "addition", "to", "reduced", "left", "ventricular", "(", "LV", ")", "function", "can", "better", "identify", "patients", "who", "may", "benefit", "from", "implantable", "cardioverter", "defibrillator", "and", "other", "interventions", "[", "1", ",", "2", "]", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "training", "hyper-parameters", "of", "the", "DL1", "model", "were", "selected", "by", "training", "multiple", "models", "with", "varying", "hyperparameters", "and", "selecting", "the", "model", "that", "performed", "the", "best", "on", "the", "cross", "validation", "data", "presented", "in", "Table", "1", ",", "which", "comprised", "solely", "of", "United", "Kingdom", "Biobank", "(", "UKBB", ")", "studies", "." ],
+    "entities_indices" : [ [ 5, 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "As", "a", "result", ",", "DL2", "algorithm", "also", "showed", "increasing", "accuracy", "from", "0.53", "to", "0.80", "for", "categorizing", "RV", "function", "." ],
+    "entities_indices" : [ [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "RVEDV", "and", "RVESV", ",", "algorithm", "DL1", "was", "less", "accurate", "than", "DL2", "when", "compared", "to", "CORE", "lab", "reference", "values", "(", "Fig.", "4", ")", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "Right", "ventricular", "(", "RV", ")", "function", "is", "an", "important", "predictor", "of", "outcomes", "in", "patients", "with", "heart", "disease", "[", "1", "-", "3", "]", "." ],
+    "entities_indices" : [ [ 15, 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "Deep", "learning", "algorithm", "development", "." ],
+    "entities_indices" : [ [ 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "Reproducibility", "was", "tested", "for", "the", "2", "DL", "algorithms", "on", "20", "randomly", "selected", "patients", "and", "by", "manual", "analyses", "by", "two", "expert", "readers", ",", "including", "inter-", "and", "intra-observer", "reproducibility", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "Another", "challenge", "for", "the", "DL-algorithms", "for", "calculating", "RVEF", "is", "the", "accurate", "identification", "of", "the", "ED", "and", "ES", "frames", "(", "Fig.", "6", ")", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "460", "additional", "tetralogy", "of", "Fallot", "images", "and", "9202", "additional", "images", "from", "UKBB", "were", "also", "added", "to", "the", "cross", "validation", "dataset", "." ],
+    "entities_indices" : [ [ 2, 3, 4, 5 ], [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "Indeed", ",", "we", "recently", "demonstrated", "that", "the", "RVEF", "measured", "using", "several", "commercial", "software", "tools", "resulted", "in", "clinically", "significant", "errors", "when", "compared", "to", "conventional", "measurements", "performed", "by", "an", "expert", "[", "15", "]", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "DL1", ",", "no", "case", "in", "Group", "1", "had", "<=", "5", "%", "error", "as", "a", "consequence", "of", "the", "study", "design", ",", "while", "errors", ">", "10", "%", "were", "noted", "in", "35", "(", "35", "%", ")", "of", "cases", "and", "errors", "exceeding", "20", "%", "were", "present", "in", "17", "(", "17", "%", ")", "." ],
+    "entities_indices" : [ [ 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "lowest", "rates", "of", "accurate", "classifications", "were", "noted", "in", "the", "middle", "RVEF", "category", "of", "35", "-", "50", "%", "(", "Fig.", "5", ")", "." ],
+    "entities_indices" : [ [ 11, 12, 13, 14, 15, 16, 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "fact", ",", "RVEF", "is", "associated", "with", "poor", "outcomes", "even", "in", "individuals", "with", "a", "preserved", "LVEF", "[", "3", ",", "30", "]", "." ],
+    "entities_indices" : [ [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "included", "the", "agreement", "between", "each", "of", "the", "DL", "techniques", "(", "DL1", "and", "DL2", ")", "against", "the", "CORE", "reference", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 11, 12 ], [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "recognition", "of", "the", "importance", "of", "RV", "function", ",", "CMR", "is", "increasingly", "being", "used", "to", "assess", "the", "RV", "due", "to", "its", "ability", "to", "accurately", "quantify", "chamber", "size", "and", "function", "without", "being", "limited", "by", "the", "complex", "RV", "geometry", "." ],
+    "entities_indices" : [ [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "intraclass", "correlations", "for", "the", "inter-", "and", "intra-observer", "variability", "of", "manual", "measurements", "were", "0.90", "and", "0.94", "for", "the", "RVEF", ",", "0.94", "and", "0.96", "for", "the", "RVEDV", ",", "0.94", "and", "0.97", "for", "the", "RVESV", ",", "respectively", "." ],
+    "entities_indices" : [ [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "identified", "100", "patients", "from", "our", "prior", "study", "who", "had", "the", "largest", "differences", "between", "manually", "measured", "and", "automated", "RVEF", "values", "." ],
+    "entities_indices" : [ [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "contrast", ",", "DL", "algorithms", "showed", "zero", "variability", "in", "all", "repeated", "measurements", ",", "due", "to", "their", "fully", "automated", ",", "deterministic", "nature", "." ],
+    "entities_indices" : [ [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "Compared", "to", "CORE-RVEF", ",", "the", "correlations", "of", "DL1-RVEF", "and", "DL2-RVEF", "were", "0.42", "and", "0.87", ",", "respectively", "(", "Fig.", "2", ")", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 7, 8 ], [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "From", "our", "prior", "study", "[", "15", "]", ",", "in", "which", "we", "compared", "the", "ability", "of", "several", "commercial", "DL-algorithms", "to", "automatically", "calculate", "RVEF", "against", "reference", "measurements", "made", "by", "a", "clinical", "expert", "." ],
+    "entities_indices" : [ [ 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "There", "were", "three", "reasons", "for", "this", "choice", ":", "(", "1", ")", "vasodilator", "stress", "is", "a", "common", "indication", "for", "CMR", "imaging", ";", "(", "2", ")", "we", "suspected", "that", "the", "algorithms", "may", "not", "perform", "as", "well", "in", "this", "situation", ",", "since", "the", "images", "used", "to", "quantify", "EF", "are", "usually", "acquired", "after", "the", "administration", "of", "a", "gadolinium", "based", "contrast", "agent", ";", "and", "(", "3", ")", "the", "previous", "study", ",", "in", "which", "the", "original", "algorithm", "did", "not", "perform", "well", "in", "this", "subset", "of", "patients", ",", "was", "performed", "on", "their", "stress", "CMR", "images", ",", "and", "therefore", "testing", "the", "hypothesis", "that", "the", "retrained", "algorithm", "would", "perform", "better", "had", "to", "be", "done", "on", "the", "same", "images", "." ],
+    "entities_indices" : [ [ 18, 19 ], [ 44, 45 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "cine-CMR", "images", "were", "analyzed", "semi", "automatically", "using", "commercial", "software", "(", "CardioAI", ",", "Arterys", ",", "San", "Francisco", ",", "California", ",", "USA", ")", "by", "an", "experienced", "expert", "reader", "in", "our", "core", "lab", ",", "who", "was", "blinded", "to", "clinical", "information", "." ],
+    "entities_indices" : [ [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "addition", "of", "10,161", "images", "to", "include", "RV", "pathologies", ",", "such", "as", "pulmonary", "arterial", "hypertension", ",", "repaired", "tetralogy", "of", "Fallot", ",", "etc.", "were", "used", "to", "revamp", "the", "cross", "validation", "strategy", "." ],
+    "entities_indices" : [ [ 14, 15 ], [ 17, 18, 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "Although", "a", "homogenous", "dataset", "may", "be", "a", "good", "way", "to", "build", "the", "foundations", "of", "a", "DL", "algorithm", ",", "as", "it", "often", "implies", "standardized", "labelling", "or", "contouring", "procedures", ",", "the", "absence", "of", "a", "heterogeneous", "dataset", "during", "the", "testing", "phase", "of", "development", "may", "result", "in", "an", "algorithm", "that", "functions", "poorly", "in", "clinical", "practice", ",", "where", "more", "diverse", "disease", "states", "and", "image", "quality", "are", "encountered", "that", "were", "not", "adequately", "reflected", "by", "the", "training", "dataset", "." ],
+    "entities_indices" : [ [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "sensitivity", ",", "specificity", ",", "and", "accuracy", "of", "DL1-RVEF", "and", "DL2-RVEF", "algorithms", "'", "ability", "to", "correctly", "categorize", "RV", "function", "were", "also", "calculated", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 10, 11 ], [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "Vasodilator", "contrast", "enhanced", "stress", "perfusion", "CMR", "imaging", "was", "performed", "using", "a", "1.5-T", "scanner", "(", "Achieva", ",", "Philips", "Healthcare", ",", "Best", ",", "The", "Netherlands", ")", "with", "a", "five-element", "phased", "array", "cardiac", "coil", "." ],
+    "entities_indices" : [ [ 30, 31 ] ]
+  }, {
+    "sentence_tokens" : [ "Additionally", ",", "RVEF", "values", "were", "classified", "into", "3", "categories", ":", "<", "=", "35", "%", ",", "35-50", "%", ",", "and", ">", "=", "50", "%", "." ],
+    "entities_indices" : [ [ 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "candidate", "models", "were", "compared", "against", "one", "another", "by", "computing", "the", "mean", "dice", "similarity", "coefficient", "(", "DSC", ")", "between", "predicted", "contours", "and", "manual", "annotations", "for", "each", "contour", "(", "RV", ",", "LV", "endocardium", ",", "and", "LV", "epicardium", ")", "independently", "." ],
+    "entities_indices" : [ [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "a", "study", "by", "Hakim", "et", "al", ".,", "when", "comparing", "automated", "RVEF", "measurements", "to", "a", "human", "expert", "generated", "reference", "values", ",", "the", "DL", "algorithm", "showed", "an", "r-value", "of", "0.76", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "DL2-RVEF", "correlated", "with", "CORE-RVEF", "better", "than", "DL1-RVEF", "(", "r", "=", "0.87", "vs.", "r", "=", "0.42", ")", ",", "with", "narrower", "limits", "of", "agreement", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "Thus", ",", "quantification", "of", "RVEF", ",", "as", "a", "biomarker", "of", "RV", "systolic", "function", ",", "can", "be", "used", "to", "guide", "therapeutic", "decision", "making", "and", "to", "assess", "prognosis", "[", "27", "-", "29", "]", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "the", "process", "remains", "time", "consuming", "and", "even", "fully", "automated", ",", "commercially", "available", "DL", "techniques", "used", "to", "quantify", "RVEF", "may", "perform", "poorly", "in", "some", "patients", ",", "and", "as", "a", "result", "may", "fail", "to", "predict", "clinical", "events", "[", "31", "]", ",", "suggesting", "that", "the", "current", "approach", "to", "developing", "these", "algorithms", "needs", "to", "be", "refined", "." ],
+    "entities_indices" : [ [ 14, 15 ], [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "Importantly", ",", "left", "heart", "disease", "can", "affect", "RV", "function", "through", "abnormal", "motion", "of", "the", "ventricular", "septum", "." ],
+    "entities_indices" : [ [ 3, 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "Figure", "3", "shows", "histograms", "that", "demonstrate", "the", "frequency", "of", "absolute", "differences", "between", "CORE-RVEF", "and", "each", "of", "the", "DL-RVEF", "algorithms", "for", "Group", "1", "(", "top", ")", "and", "Group", "2", "(", "bottom", ")", "." ],
+    "entities_indices" : [ [ 12, 13 ], [ 17, 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "Due", "to", "the", "scarcity", "of", "well", "annotated", "CMR", "images", ",", "publicly", "available", "datasets", "which", "are", "fairly", "homogenous", "in", "nature", ",", "are", "often", "utilized", "to", "develop", "these", "DL", "algorithms", "." ],
+    "entities_indices" : [ [ 26, 27 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "study", ",", "we", "hypothesized", "that", "the", "use", "of", "more", "diverse", "CMR", "datasets", ",", "which", "incorporate", "a", "wider", "range", "of", "RV", "pathology", ",", "scanner", "vendors", ",", "and", "imaging", "quality", "in", "addition", "to", "the", "use", "of", "multiple", "domain", "specific", "quantitative", "performance", "evaluation", "metrics", "during", "cross", "validation", "phase", "of", "DL", "algorithm", "development", "would", "result", "in", "a", "more", "generalized", "model", "and", "thus", "more", "accurate", "quantification", "of", "RV", "size", "and", "function", "in", "a", "subset", "of", "patients", "in", "whom", "the", "previous", "version", "of", "the", "software", "did", "not", "perform", "well", "." ],
+    "entities_indices" : [ [ 48, 49 ] ]
+  }, {
+    "sentence_tokens" : [ "Detecting", "the", "RV", "endocardial", "contour", "is", "challenging", "for", "both", "the", "clinician", "and", "automated", "DL", "algorithms", "." ],
+    "entities_indices" : [ [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "improvement", "was", "demonstrated", "in", "patients", "whose", "images", "were", "the", "most", "challenging", "and", "resulted", "in", "the", "largest", "RVEF", "errors", "." ],
+    "entities_indices" : [ [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "can", "be", "attributed", "to", "the", "unique", "morphology", ",", "thinner", "myocardium", ",", "and", "higher", "trabeculation", "burden", "of", "the", "RV", "chamber", "." ],
+    "entities_indices" : [ [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "addition", "to", "DSC", ",", "the", "contour", "spatial", "distance", "based", "Hausdorff", "distance", "metric", "and", "domain", "specific", "performance", "metrics", "were", "computed", ",", "including", "absolute", "errors", "in", "RV", "volume", "prediction", ",", "LV", "volume", "and", "LV", "ejection", "fraction", "(", "LVEF", ")", "prediction", ",", "myocardial", "mass", "consistency", "and", "contour", "consistency", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 41, 42 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "availability", "of", "an", "image", "analysis", "tool", "that", "can", "accurately", "and", "automatically", "quantify", "RV", "size", "and", "function", "from", "CMR", "images", "would", "not", "only", "help", "standardize", "image", "interpretation", ",", "but", "also", "improve", "clinical", "workflow", "." ],
+    "entities_indices" : [ [ 18, 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "CORE-RVEF", "and", "DL-RVEFs", "were", "obtained", "in", "all", "patients", "(", "feasibility", "of", "100", "%", ")", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "DL", "algorithm", "2", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "Indeed", ",", "measurements", "of", "RVEDV", ",", "RVESV", ",", "and", "RVEF", "made", "using", "the", "improved", "algorithm", "correlated", "better", "with", "the", "reference", "measurements", "." ],
+    "entities_indices" : [ [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "CNN", "is", "trained", "to", "associate", "pixel", "intensities", "of", "a", "CMR", "image", "to", "segmentation", "maps", "corresponding", "to", "the", "desired", "ventricular", "contours", "." ],
+    "entities_indices" : [ [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "Bland", "-", "Altman", "analyses", "of", "comparison", "between", "CORE-RVEDV", "and", "DL-RVEDV", "resulted", "in", "smaller", "biases", "and", "narrower", "limits", "of", "agreement", "for", "DL2", ":", "-", "32", "+/-", "103", "ml", "(", "DL1", ")", ",", "-", "13", "+/-", "37", "ml", "(", "DL2", ")", "." ],
+    "entities_indices" : [ [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "Cine", "images", "were", "uploaded", "into", "the", "software", "and", "fully", "automated", "segmentation", "was", "then", "performed", "without", "any", "further", "user", "input", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "Automated", "RVEF", "measurements", "were", "performed", "using", "the", "original", "version", "of", "the", "algorithm", "(", "DL1", ")", ",", "an", "updated", "version", "(", "DL2", ")", "developed", "from", "a", "dataset", "that", "included", "a", "wider", "range", "of", "RV", "pathology", "and", "validated", "using", "multiple", "domain", "specific", "quantitative", "performance", "evaluation", "metrics", ",", "and", "conventional", "methodology", "performed", "by", "a", "core", "laboratory", "(", "CORE", ")", "." ],
+    "entities_indices" : [ [ 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "this", "study", ",", "we", "selected", "100", "cases", "(", "of", "the", "200", "total", ")", "with", "the", "largest", "discrepancies", "between", "the", "DL", "generated", "and", "reference", "RVEFs", "(", "Group", "1", ")", "." ],
+    "entities_indices" : [ [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "results", "of", "Bland", "-", "Altman", "analyses", "for", "the", "two", "DL", "algorithms", "in", "comparison", "to", "the", "core", "lab", "analysis", "are", "depicted", "in", "Fig.", "2", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "Rahman", "et", "al", ".,", "reported", "high", "levels", "of", "agreement", "between", "the", "DL", "algorithm", "and", "manual", "measurement", "of", "RVEF", ",", "but", "the", "focus", "was", "limited", "to", "the", "healthy", "population", "[", "34", "]", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "Confusion", "matrices", "were", "generated", "for", "each", "DL-RVEF", "algorithm", "to", "display", "the", "concordance", "and", "discordance", "with", "the", "CORE-RVEF", "for", "each", "of", "the", "RVEF", "categories", "(", "<=", "35", "%", ",", "35", "-", "50", "%", ",", "and", ">=", "50", "%", ")", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 6, 7, 8 ], [ 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "group", "2", ",", "no", "case", "had", ">", "5", "%", "error", "according", "to", "DL1", ",", "as", "a", "consequence", "of", "the", "study", "design", ",", "and", "DL2", "resulted", "in", "a", "relatively", "small", "number", "of", "cases", "with", "larger", "errors", "." ],
+    "entities_indices" : [ [ 13, 14 ], [ 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "Although", "RVEF", "is", "a", "continuous", "variable", ",", "RVEF", "cutoff", "values", "have", "been", "shown", "to", "have", "prognostic", "value", "in", "patients", "with", "dilated", "cardiomyopathy", "[", "28", "]", "and", "in", "other", "disease", "states", "[", "9", "]", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 7, 8, 9 ], [ 20, 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "in", "our", "recent", "study", ",", "commercially", "available", "deep", "learning", "(", "DL", ")", "algorithms", "for", "RVEF", "quantification", "performed", "poorly", "in", "some", "patients", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 12, 13 ], [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "RVEF", "was", "determined", "using", "two", "different", "fully", "automated", "DL-algorithms", "DL1", "and", "DL2", ",", "described", "above", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 10, 11 ], [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "use", "of", "a", "diverse", "dataset", "during", "the", "cross", "validation", "phase", "of", "DL", "algorithm", "development", "resulted", "in", "a", "considerable", "improvement", "in", "the", "accuracy", "of", "the", "automated", "analysis", "of", "RV", "volumes", "and", "RVEF", "in", "patients", "in", "whom", "the", "previous", "version", "of", "the", "software", "did", "not", "perform", "well", "." ],
+    "entities_indices" : [ [ 12, 13 ], [ 31, 32 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "study", ",", "we", "aimed", "to", "determine", "the", "impact", "of", "including", "CMR", "images", "with", "diverse", "RV", "pathology", "during", "the", "cross", "validation", "stage", "on", "the", "performance", "of", "a", "DL", "algorithm", "developed", "to", "automatically", "quantify", "RV", "size", "and", "function", "." ],
+    "entities_indices" : [ [ 28, 29 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "increased", "correlation", "translated", "into", "more", "accurate", "classification", "of", "RVEF", "function", "." ],
+    "entities_indices" : [ [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "DL1", "segmentation", "model", ",", "included", "in", "cvi42", "(", "version", "5.11", ",", "Circle", "Cardiovascular", "Imaging", ",", "Calgary", ",", "Alberta", ",", "Canada", ")", ",", "is", "founded", "on", "a", "convolutional", "neural", "network", "(", "CNN", ")", "based", "on", "the", "U-net", "architecture", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "These", "findings", "underscore", "the", "critical", "importance", "of", "this", "strategy", "in", "the", "development", "of", "DL", "approaches", "for", "automated", "CMR", "measurements", "." ],
+    "entities_indices" : [ [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "basal", "short-axis", "slice", "is", "most", "often", "inaccurately", "segmented", "by", "both", "an", "expert", "and", "by", "the", "DL", "algorithms", ",", "particularly", "at", "the", "boundary", "of", "the", "pulmonary", "artery", "and", "right", "atrium", "." ],
+    "entities_indices" : [ [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "During", "the", "training", "stage", ",", "the", "model", "parameters", "of", "CNN", "were", "optimized", "to", "reduce", "an", "energy", "function", "computed", "using", "the", "pixel-wise", "cross-entropy", "loss", "function", ",", "which", "penalizes", "the", "CNN", "when", "it", "does", "not", "correctly", "predict", "the", "segmentation", "label", "of", "a", "given", "pixel.The", "initial", "machine", "learning", "based", "RV", "contouring", "CNN", "was", "trained", "on", "multiple", "datasets", "summarized", "in", "Table", "1", "." ],
+    "entities_indices" : [ [ 36, 37 ], [ 44, 45 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "use", "of", "a", "new", "DL", "algorithm", "cross", "validated", "on", "a", "dataset", "with", "a", "wide", "range", "of", "RV", "pathology", "using", "multiple", "domain", "specific", "metrics", "resulted", "in", "a", "considerable", "improvement", "in", "the", "accuracy", "of", "automated", "RVEF", "measurements", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 34, 35 ] ]
+  }, {
+    "sentence_tokens" : [ "RV", "systolic", "function", "is", "highly", "sensitive", "to", "changes", "in", "the", "afterload", "with", "small", "increases", "in", "afterload", "causing", "large", "decreases", "in", "stroke", "volume", "." ],
+    "entities_indices" : [ [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "our", "prior", "study", "[", "15", "]", ",", "we", "compared", "manual", "RVEF", "by", "a", "clinician", "to", "automated", "RVEF", "measurements", "made", "by", "three", "DL", "methods", "developed", "using", "publicly", "available", "CMR", "datasets", "and", "found", "that", "all", "three", "DL", "methods", "performed", "relatively", "poorly", "in", "a", "significant", "proportion", "of", "the", "patients.In", "this", "current", "study", ",", "we", "selected", "from", "our", "prior", "study", "[", "15", "]", "the", "100", "cases", ",", "in", "which", "the", "DL", "algorithm", "performed", "the", "worst", ",", "and", "found", "that", "an", "algorithm", "developed", "using", "a", "new", "approach", "with", "enhanced", "cross", "validation", "resulted", "in", "considerable", "improvement", "in", "its", "clinical", "performance", "." ],
+    "entities_indices" : [ [ 22, 23 ], [ 35, 36 ], [ 67, 68 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "addition", ",", "similar", "comparisons", "were", "performed", "on", "the", "remaining", "100", "patients", "in", "whom", "the", "original", "DL1", "algorithm", "performed", "well", ",", "i.e.", "with", "the", "least", "discrepancies", "with", "the", "reference", "RVEFs", "(", "Group", "2", ")", ",", "in", "order", "to", "verify", "that", "the", "algorithm", "modifications", "did", "not", "have", "detrimental", "effects", "on", "RVEF", "measurements", "in", "these", "patients.All", "subjects", "had", "previously", "signed", "informed", "consent", "to", "be", "included", "in", "a", "CMR", "registry", "permitting", "their", "images", ",", "clinical", "data", ",", "and", "outcomes", "to", "be", "used", "for", "future", "research", "." ],
+    "entities_indices" : [ [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "Algorithm", "DL2", "performed", "significantly", "better", "than", "DL1", ",", "as", "reflected", "by", "considerably", "narrower", "limits", "of", "agreement", ":", "-", "1", "+/-", "11", "%", "for", "DL2", "versus", "-", "1", "+/-", "28", "%", "for", "DL1", "." ],
+    "entities_indices" : [ [ 0, 1, 2 ], [ 6, 7 ], [ 23, 24 ], [ 31, 32 ] ]
+  }, {
+    "sentence_tokens" : [ "Automated", "RVEF", "measurements", "were", "performed", "using", "an", "updated", "version", "of", "the", "DL", "algorithm", "(", "DL2", ")", "cross", "validated", "on", "a", "diverse", "dataset", "of", "CMR", "images", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 11, 12 ], [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "Nevertheless", ",", "manual", "segmentation", "of", "the", "RV", "cavity", "is", "time", "consuming", "and", "has", "greater", "inter-reader", "variability", "than", "is", "seen", "for", "the", "LV", "cavity", "[", "11", "-", "14", "]", "." ],
+    "entities_indices" : [ [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "Thus", ",", "it", "is", "unknown", "how", "well", "this", "current", "algorithm", "would", "perform", "when", "it", "encounters", "more", "complex", "clinical", "cases", ",", "such", "as", "cyanotic", "congenital", "heart", "disease", "and", "other", "distorted", "anatomies", "." ],
+    "entities_indices" : [ [ 24, 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "DL2", ",", "included", "in", "cvi42", "(", "Version", "5.13", ",", "Circle", "Cardiovascular", "Imaging", ")", "was", "trained", "using", "the", "exact", "same", "CNN", "architecture", "as", "DL1", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "Additionally", ",", "the", "strict", "enforcement", "of", "a", "spatiotemporal", "consistency", "in", "the", "predicted", "outputs", "was", "adopted", "to", "post-processing", "in", "all", "stacks", ",", "which", "ensured", "the", "removal", "of", "outliers", "in", "the", "event", "that", "contours", "are", "predicted", "above", "the", "basal", "slice", "or", "below", "the", "apex.Although", "other", "studies", "have", "examined", "the", "accuracy", "of", "DL", "algorithms", "to", "quantify", "RVEF", "in", "comparison", "to", "a", "human", "expert", "[", "12", ",", "32", ",", "33", "]", ",", "they", "did", "not", "examine", "the", "clinical", "implications", "of", "any", "specific", "sources", "of", "error", "." ],
+    "entities_indices" : [ [ 49, 50 ], [ 53, 54 ] ]
+  }, {
+    "sentence_tokens" : [ "Indeed", ",", "the", "assessment", "of", "RV", "size", "and", "function", "using", "CMR", "has", "been", "shown", "to", "be", "of", "prognostic", "significance", "in", "patients", "with", "ischemic", "[", "5", "]", "and", "non", "ischemic", "cardiomyopathy", "[", "6", "]", ",", "valvular", "heart", "disease", "[", "7", "]", ",", "congenital", "heart", "disease", "[", "8]", ",", "and", "pulmonary", "hypertension", "[", "9", "]", "." ],
+    "entities_indices" : [ [ 29, 30 ], [ 34, 35, 36, 37 ], [ 42, 43, 44 ], [ 48, 49, 50 ] ]
+  }, {
+    "sentence_tokens" : [ "Each", "of", "the", "DL-RVEF", "approaches", "was", "compared", "against", "CORE-RVEF", "reference", "values", "using", "linear", "regression", "and", "Bland-Altman", "analyses", "." ],
+    "entities_indices" : [ [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "Simpson", "'", "s", "method", "of", "disks", "was", "used", "to", "calculate", "RV", "end-diastolic", "volume", "(", "RVEDV", ")", "and", "end-systolic", "volume", "(", "RVESV", ")", ",", "and", "RVEF", "." ],
+    "entities_indices" : [ [ 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "Based", "on", "CORE-RVEF", ",", "11", "of", "the", "100", "patients", "had", "severely", "reduced", "RVEF", "(", "<=", "35", "%", ")", ",", "21", "had", "mildly", "to", "moderately", "reduced", "RVEF", "(", "35", "-", "50", "%", ")", ",", "and", "68", "had", "preserved", "RVEF", "(", ">=", "50", "%", ")", "(", "Table", "3", ")", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 12, 13 ], [ 25, 26, 27, 28, 29, 30, 31 ], [ 37, 38 ] ]
+  }, {
+    "sentence_tokens" : [ "Importantly", ",", "the", "cross", "validation", "process", "was", "performed", "on", "this", "dataset", "and", "model", "selection", "was", "done", "in", "a", "manner", "that", "was", "blind", "to", "the", "cases", "on", "which", "it", "was", "tested", "and", "reported", "on", "in", "this", "study.Additional", "quantitative", "performance", "metrics", "were", "used", "to", "assess", "the", "performance", "of", "the", "algorithm", "during", "the", "cross", "validation", "phase", "as", "a", "spatial", "overlap", "metric", ",", "such", "as", "DSC", "fails", "to", "capture", "potential", "biases", "in", "the", "predicted", "contours", "[", "18", "]", "." ],
+    "entities_indices" : [ [ 61, 62 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "plane", "demarcating", "the", "ventricular", "base", "was", "identified", "automatically", "." ],
+    "entities_indices" : [ [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "Furthermore", ",", "the", "RV", "apex", "is", "frequently", "incorrectly", "identified", "by", "the", "DL", "algorithms", "in", "cases", "of", "pathological", "RV", "morphology", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "it", "is", "important", "to", "note", "that", "the", "correlation", "between", "the", "core", "laboratory", "measurement", "and", "the", "DL", "algorithm", "was", "not", "perfect", ",", "10", "%", "of", "cases", "still", "had", "a", ">", "10", "%", "absolute", "error", "in", "the", "RVEF", "measurement", ",", "and", "20", "%", "of", "patients", "were", "still", "categorized", "into", "an", "incorrect", "RVEF", "group", "." ],
+    "entities_indices" : [ [ 17, 18 ], [ 37, 38 ], [ 51, 52 ] ]
+  }, {
+    "sentence_tokens" : [ "Most", "currently", "available", "software", "that", "automatically", "quantifies", "RV", "size", "and", "function", "from", "CMR", "images", "are", "complex", "algorithms", "that", "use", "a", "form", "of", "artificial", "intelligence", "referred", "to", "as", "deep", "learning", "(", "DL", ")", "[", "16", ",", "17", "]", "." ],
+    "entities_indices" : [ [ 12, 13, 14 ], [ 28, 29 ], [ 30, 31 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "contrast", ",", "for", "algorithm", "DL2", ",", "44", "(", "44", "%", ")", "cases", "in", "Group", "1", "were", "within", "3", "%", "absolute", "error", "and", "70", "(", "70", "%", ")", "cases", "were", "within", "5", "%", "error", ",", "while", "only", "10", "(", "10", "%", ")", "cases", "showed", "errors", ">", "10", "%", "when", "compared", "to", "CORE-RVEF", "." ],
+    "entities_indices" : [ [ 4, 5, 6 ], [ 51, 52 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "current", "study", "was", "designed", "to", "test", "the", "hypothesis", "that", "quantification", "of", "RV", "function", "could", "be", "improved", "in", "these", "patients", "by", "using", "more", "diverse", "CMR", "datasets", "in", "addition", "to", "domain", "specific", "quantitative", "performance", "evaluation", "metrics", "during", "the", "cross", "validation", "phase", "of", "DL", "algorithm", "development", "." ],
+    "entities_indices" : [ [ 12, 13 ], [ 41, 42 ] ]
+  }, {
+    "sentence_tokens" : [ "RV", "dysfunction", "is", "associated", "with", "poor", "clinical", "outcomes", "in", "a", "wide", "range", "of", "cardiovascular", "disorders", "including", "but", "not", "limited", "to", "acute", "myocardial", "infarction", ",", "LV", "heart", "failure", ",", "congenital", "heart", "disease", ",", "arrhythmogenic", "cardiomyopathy", ",", "and", "pulmonary", "hypertension", "[", "25", ",", "26", "]", "." ],
+    "entities_indices" : [ [ 21, 22, 23 ], [ 25, 26, 27 ], [ 29, 30, 31 ], [ 33, 34 ], [ 36, 37, 38 ] ]
+  }, {
+    "sentence_tokens" : [ "DL", "image", "analysis", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "importance", "of", "RVEF", "for", "prediction", "of", "cardiovascular", "outcomes", "was", "demonstrated", "in", "a", "cohort", "comprised", "of", "a", "broad", "range", "of", "cardiovascular", "diseases", "by", "demonstrating", "that", "each", "10", "%", "drop", "in", "RVEF", "was", "associated", "with", "a", "1.33-fold", "increased", "risk", "[", "3", "]", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 20, 21, 22 ], [ 30, 31 ] ]
+  }, {
+    "sentence_tokens" : [ "DL", "algorithm", "1", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "addition", ",", "six", "to", "ten", "short-axis", "slices", "were", "obtained", "from", "the", "LV", "and", "RV", "base", "to", "the", "apex", "(", "slice", "thickness", "8", "mm", ";", "gap", "2", "mm", ")", "." ],
+    "entities_indices" : [ [ 15, 16 ], [ 18, 19 ], [ 25, 26, 27 ] ]
+  }, {
+    "sentence_tokens" : [ "Histograms", "displaying", "the", "difference", "in", "RVEF", "measurements", "between", "the", "DL", "algorithms", "and", "the", "core", "lab", "were", "generated", "." ],
+    "entities_indices" : [ [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "Using", "the", "entire", "short", "axis", "stack", "and", "standard", "long", "axis", "views", ",", "both", "DL1", "and", "DL2", "generated", "time-volume", "curves", ",", "from", "which", "end-diastole", "and", "end-systole", "were", "automatically", "determined", "and", "used", "to", "calculate", "RVEDV", ",", "RVESV", ",", "and", "RVEF", "." ],
+    "entities_indices" : [ [ 13, 14 ], [ 15, 16 ], [ 37, 38 ] ]
+  }, {
+    "sentence_tokens" : [ "Figure", "1", "shows", "examples", "of", "RV", "boundaries", "as", "determined", "by", "the", "core-lab", "and", "by", "the", "2", "DL", "algorithms", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 16, 17 ] ]
+  } ],
+  "emptySentences" : [ {
+    "sentence_tokens" : [ "Assessment", "of", "right", "ventricular", "size", "and", "function", "from", "cardiovascular", "magnetic", "resonance", "images", "using", "artificial", "intelligence", "." ]
+  }, {
+    "sentence_tokens" : [ "Background", "." ]
+  }, {
+    "sentence_tokens" : [ "Theoretically", ",", "artificial", "intelligence", "can", "provide", "an", "accurate", "automatic", "solution", "to", "measure", "right", "ventricular", "(", "RV", ")", "ejection", "fraction", "(", "RVEF", ")", "from", "cardiovascular", "magnetic", "resonance", "(", "CMR", ")", "images", ",", "despite", "the", "complex", "RV", "geometry", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "in", "our", "recent", "study", ",", "commercially", "available", "deep", "learning", "(", "DL", ")", "algorithms", "for", "RVEF", "quantification", "performed", "poorly", "in", "some", "patients", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "current", "study", "was", "designed", "to", "test", "the", "hypothesis", "that", "quantification", "of", "RV", "function", "could", "be", "improved", "in", "these", "patients", "by", "using", "more", "diverse", "CMR", "datasets", "in", "addition", "to", "domain", "specific", "quantitative", "performance", "evaluation", "metrics", "during", "the", "cross", "validation", "phase", "of", "DL", "algorithm", "development", "." ]
+  }, {
+    "sentence_tokens" : [ "Methods", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "identified", "100", "patients", "from", "our", "prior", "study", "who", "had", "the", "largest", "differences", "between", "manually", "measured", "and", "automated", "RVEF", "values", "." ]
+  }, {
+    "sentence_tokens" : [ "Automated", "RVEF", "measurements", "were", "performed", "using", "the", "original", "version", "of", "the", "algorithm", "(", "DL1", ")", ",", "an", "updated", "version", "(", "DL2", ")", "developed", "from", "a", "dataset", "that", "included", "a", "wider", "range", "of", "RV", "pathology", "and", "validated", "using", "multiple", "domain", "specific", "quantitative", "performance", "evaluation", "metrics", ",", "and", "conventional", "methodology", "performed", "by", "a", "core", "laboratory", "(", "CORE", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Each", "of", "the", "DL-RVEF", "approaches", "was", "compared", "against", "CORE-RVEF", "reference", "values", "using", "linear", "regression", "and", "Bland-Altman", "analyses", "." ]
+  }, {
+    "sentence_tokens" : [ "Additionally", ",", "RVEF", "values", "were", "classified", "into", "3", "categories", ":", "<", "=", "35", "%", ",", "35-50", "%", ",", "and", ">", "=", "50", "%", "." ]
+  }, {
+    "sentence_tokens" : [ "Agreement", "between", "RVEF", "classifications", "made", "by", "the", "DL", "approaches", "and", "the", "CORE", "measurements", "was", "tested", "." ]
+  }, {
+    "sentence_tokens" : [ "Results", "." ]
+  }, {
+    "sentence_tokens" : [ "CORE-RVEF", "and", "DL-RVEFs", "were", "obtained", "in", "all", "patients", "(", "feasibility", "of", "100", "%", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "DL2-RVEF", "correlated", "with", "CORE-RVEF", "better", "than", "DL1-RVEF", "(", "r", "=", "0.87", "vs.", "r", "=", "0.42", ")", ",", "with", "narrower", "limits", "of", "agreement", "." ]
+  }, {
+    "sentence_tokens" : [ "As", "a", "result", ",", "DL2", "algorithm", "also", "showed", "increasing", "accuracy", "from", "0.53", "to", "0.80", "for", "categorizing", "RV", "function", "." ]
+  }, {
+    "sentence_tokens" : [ "Conclusions", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "use", "of", "a", "new", "DL", "algorithm", "cross", "validated", "on", "a", "dataset", "with", "a", "wide", "range", "of", "RV", "pathology", "using", "multiple", "domain", "specific", "metrics", "resulted", "in", "a", "considerable", "improvement", "in", "the", "accuracy", "of", "automated", "RVEF", "measurements", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "improvement", "was", "demonstrated", "in", "patients", "whose", "images", "were", "the", "most", "challenging", "and", "resulted", "in", "the", "largest", "RVEF", "errors", "." ]
+  }, {
+    "sentence_tokens" : [ "These", "findings", "underscore", "the", "critical", "importance", "of", "this", "strategy", "in", "the", "development", "of", "DL", "approaches", "for", "automated", "CMR", "measurements", "." ]
+  }, {
+    "sentence_tokens" : [ "Introduction", "." ]
+  }, {
+    "sentence_tokens" : [ "Right", "ventricular", "(", "RV", ")", "function", "is", "an", "important", "predictor", "of", "outcomes", "in", "patients", "with", "heart", "disease", "[", "1", "-", "3", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "the", "non", "invasive", "assessment", "of", "RV", "size", "and", "function", "is", "significantly", "limited", "by", "its", "complex", "geometry", "." ]
+  }, {
+    "sentence_tokens" : [ "Cardiovascular", "magnetic", "resonance", "(", "CMR", ")", "quantification", "of", "RV", "volume", "using", "the", "method", "of", "disks", "is", "currently", "considered", "the", "reference", "standard", "for", "RV", "size", "and", "RVejection", "fraction", "(", "RVEF", ")", ",", "because", "the", "entire", "chamber", "is", "imaged", ",", "the", "boundary", "between", "the", "RV", "myocardium", "and", "blood", "pool", "is", "clearly", "delineated", ",", "and", "no", "geometric", "assumptions", "about", "the", "RV", "shape", "are", "needed", "[", "4", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Indeed", ",", "the", "assessment", "of", "RV", "size", "and", "function", "using", "CMR", "has", "been", "shown", "to", "be", "of", "prognostic", "significance", "in", "patients", "with", "ischemic", "[", "5", "]", "and", "non", "ischemic", "cardiomyopathy", "[", "6", "]", ",", "valvular", "heart", "disease", "[", "7", "]", ",", "congenital", "heart", "disease", "[", "8]", ",", "and", "pulmonary", "hypertension", "[", "9", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Furthermore", ",", "quantification", "of", "RV", "size", "is", "an", "important", "determinant", "for", "guiding", "interventions", ",", "such", "as", "pulmonary", "valve", "replacement", "in", "patients", "with", "tetralogy", "of", "Fallot", "[", "10", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "patients", "with", "ischemic", "or", "non", "ischemic", "cardiomyopathy", ",", "the", "presence", "of", "reduced", "RVEF", "in", "addition", "to", "reduced", "left", "ventricular", "(", "LV", ")", "function", "can", "better", "identify", "patients", "who", "may", "benefit", "from", "implantable", "cardioverter", "defibrillator", "and", "other", "interventions", "[", "1", ",", "2", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Nevertheless", ",", "manual", "segmentation", "of", "the", "RV", "cavity", "is", "time", "consuming", "and", "has", "greater", "inter-reader", "variability", "than", "is", "seen", "for", "the", "LV", "cavity", "[", "11", "-", "14", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "availability", "of", "an", "image", "analysis", "tool", "that", "can", "accurately", "and", "automatically", "quantify", "RV", "size", "and", "function", "from", "CMR", "images", "would", "not", "only", "help", "standardize", "image", "interpretation", ",", "but", "also", "improve", "clinical", "workflow", "." ]
+  }, {
+    "sentence_tokens" : [ "While", "several", "commercial", "tools", "are", "capable", "of", "accurately", "assessing", "LV", "volumes", "and", "ejection", "fraction", ",", "it", "is", "well", "recognized", "that", "these", "tools", "do", "not", "perform", "as", "well", "for", "the", "RV", "assessment", "." ]
+  }, {
+    "sentence_tokens" : [ "Indeed", ",", "we", "recently", "demonstrated", "that", "the", "RVEF", "measured", "using", "several", "commercial", "software", "tools", "resulted", "in", "clinically", "significant", "errors", "when", "compared", "to", "conventional", "measurements", "performed", "by", "an", "expert", "[", "15", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Most", "currently", "available", "software", "that", "automatically", "quantifies", "RV", "size", "and", "function", "from", "CMR", "images", "are", "complex", "algorithms", "that", "use", "a", "form", "of", "artificial", "intelligence", "referred", "to", "as", "deep", "learning", "(", "DL", ")", "[", "16", ",", "17", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Such", "algorithms", "are", "typically", "trained", "and", "tested", "using", "thousands", "of", "CMR", "images", "with", "the", "key", "anatomy", "annotated", "by", "expert", "physicians", "." ]
+  }, {
+    "sentence_tokens" : [ "Due", "to", "the", "scarcity", "of", "well", "annotated", "CMR", "images", ",", "publicly", "available", "datasets", "which", "are", "fairly", "homogenous", "in", "nature", ",", "are", "often", "utilized", "to", "develop", "these", "DL", "algorithms", "." ]
+  }, {
+    "sentence_tokens" : [ "Although", "a", "homogenous", "dataset", "may", "be", "a", "good", "way", "to", "build", "the", "foundations", "of", "a", "DL", "algorithm", ",", "as", "it", "often", "implies", "standardized", "labelling", "or", "contouring", "procedures", ",", "the", "absence", "of", "a", "heterogeneous", "dataset", "during", "the", "testing", "phase", "of", "development", "may", "result", "in", "an", "algorithm", "that", "functions", "poorly", "in", "clinical", "practice", ",", "where", "more", "diverse", "disease", "states", "and", "image", "quality", "are", "encountered", "that", "were", "not", "adequately", "reflected", "by", "the", "training", "dataset", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "study", ",", "we", "hypothesized", "that", "the", "use", "of", "more", "diverse", "CMR", "datasets", ",", "which", "incorporate", "a", "wider", "range", "of", "RV", "pathology", ",", "scanner", "vendors", ",", "and", "imaging", "quality", "in", "addition", "to", "the", "use", "of", "multiple", "domain", "specific", "quantitative", "performance", "evaluation", "metrics", "during", "cross", "validation", "phase", "of", "DL", "algorithm", "development", "would", "result", "in", "a", "more", "generalized", "model", "and", "thus", "more", "accurate", "quantification", "of", "RV", "size", "and", "function", "in", "a", "subset", "of", "patients", "in", "whom", "the", "previous", "version", "of", "the", "software", "did", "not", "perform", "well", "." ]
+  }, {
+    "sentence_tokens" : [ "Methods", "." ]
+  }, {
+    "sentence_tokens" : [ "Data", "and", "materials", "used", "in", "this", "study", "will", "not", "be", "made", "publicly", "available", "." ]
+  }, {
+    "sentence_tokens" : [ "Population", "and", "study", "design", "." ]
+  }, {
+    "sentence_tokens" : [ "From", "our", "prior", "study", "[", "15", "]", ",", "in", "which", "we", "compared", "the", "ability", "of", "several", "commercial", "DL-algorithms", "to", "automatically", "calculate", "RVEF", "against", "reference", "measurements", "made", "by", "a", "clinical", "expert", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "this", "study", ",", "we", "selected", "100", "cases", "(", "of", "the", "200", "total", ")", "with", "the", "largest", "discrepancies", "between", "the", "DL", "generated", "and", "reference", "RVEFs", "(", "Group", "1", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Automated", "RVEF", "measurements", "were", "performed", "using", "an", "updated", "version", "of", "the", "DL", "algorithm", "(", "DL2", ")", "cross", "validated", "on", "a", "diverse", "dataset", "of", "CMR", "images", "." ]
+  }, {
+    "sentence_tokens" : [ "To", "assess", "the", "improvement", "in", "algorithm", "performance", "afforded", "by", "this", "strategy", ",", "these", "measurements", "were", "compared", "side-by-side", "with", "the", "measurements", "performed", "using", "the", "original", "software", "(", "DL1", ")", "against", "the", "same", "reference", "standard", "." ]
+  }, {
+    "sentence_tokens" : [ "These", "comparisons", "included", "actual", "RVEF", "values", "and", "also", "classification", "of", "RV", "function", "based", "on", "these", "values", ",", "namely", "normal", ",", "mildly", "to", "moderately", "reduced", "and", "severely", "reduced", "function", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "addition", ",", "similar", "comparisons", "were", "performed", "on", "the", "remaining", "100", "patients", "in", "whom", "the", "original", "DL1", "algorithm", "performed", "well", ",", "i.e.", "with", "the", "least", "discrepancies", "with", "the", "reference", "RVEFs", "(", "Group", "2", ")", ",", "in", "order", "to", "verify", "that", "the", "algorithm", "modifications", "did", "not", "have", "detrimental", "effects", "on", "RVEF", "measurements", "in", "these", "patients.All", "subjects", "had", "previously", "signed", "informed", "consent", "to", "be", "included", "in", "a", "CMR", "registry", "permitting", "their", "images", ",", "clinical", "data", ",", "and", "outcomes", "to", "be", "used", "for", "future", "research", "." ]
+  }, {
+    "sentence_tokens" : [ "Patient", "demographics", "and", "clinical", "history", "were", "extracted", "from", "the", "electronic", "medical", "records", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "protocol", "was", "approved", "by", "the", "Institution", "Review", "Board", "." ]
+  }, {
+    "sentence_tokens" : [ "Deep", "learning", "algorithm", "development", "." ]
+  }, {
+    "sentence_tokens" : [ "DL", "algorithm", "1", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "DL1", "segmentation", "model", ",", "included", "in", "cvi42", "(", "version", "5.11", ",", "Circle", "Cardiovascular", "Imaging", ",", "Calgary", ",", "Alberta", ",", "Canada", ")", ",", "is", "founded", "on", "a", "convolutional", "neural", "network", "(", "CNN", ")", "based", "on", "the", "U-net", "architecture", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "CNN", "is", "trained", "to", "associate", "pixel", "intensities", "of", "a", "CMR", "image", "to", "segmentation", "maps", "corresponding", "to", "the", "desired", "ventricular", "contours", "." ]
+  }, {
+    "sentence_tokens" : [ "During", "the", "training", "stage", ",", "the", "model", "parameters", "of", "CNN", "were", "optimized", "to", "reduce", "an", "energy", "function", "computed", "using", "the", "pixel-wise", "cross-entropy", "loss", "function", ",", "which", "penalizes", "the", "CNN", "when", "it", "does", "not", "correctly", "predict", "the", "segmentation", "label", "of", "a", "given", "pixel.The", "initial", "machine", "learning", "based", "RV", "contouring", "CNN", "was", "trained", "on", "multiple", "datasets", "summarized", "in", "Table", "1", "." ]
+  }, {
+    "sentence_tokens" : [ "Standard", "image", "augmentation", "techniques", "were", "employed", "during", "the", "training", "phase", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "training", "hyper-parameters", "of", "the", "DL1", "model", "were", "selected", "by", "training", "multiple", "models", "with", "varying", "hyperparameters", "and", "selecting", "the", "model", "that", "performed", "the", "best", "on", "the", "cross", "validation", "data", "presented", "in", "Table", "1", ",", "which", "comprised", "solely", "of", "United", "Kingdom", "Biobank", "(", "UKBB", ")", "studies", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "candidate", "models", "were", "compared", "against", "one", "another", "by", "computing", "the", "mean", "dice", "similarity", "coefficient", "(", "DSC", ")", "between", "predicted", "contours", "and", "manual", "annotations", "for", "each", "contour", "(", "RV", ",", "LV", "endocardium", ",", "and", "LV", "epicardium", ")", "independently", "." ]
+  }, {
+    "sentence_tokens" : [ "DL", "algorithm", "2", "." ]
+  }, {
+    "sentence_tokens" : [ "DL2", ",", "included", "in", "cvi42", "(", "Version", "5.13", ",", "Circle", "Cardiovascular", "Imaging", ")", "was", "trained", "using", "the", "exact", "same", "CNN", "architecture", "as", "DL1", "." ]
+  }, {
+    "sentence_tokens" : [ "Prior", "to", "training", "DL2", ",", "9745", "new", "images", "were", "added", "to", "the", "Clinical", "dataset", "and", "the", "dataset", "was", "resampled", "such", "that", "roughly", "20", "%", "of", "the", "cases", "were", "used", "in", "training", "and", "the", "remainder", "were", "kept", "for", "cross", "validation", "." ]
+  }, {
+    "sentence_tokens" : [ "460", "additional", "tetralogy", "of", "Fallot", "images", "and", "9202", "additional", "images", "from", "UKBB", "were", "also", "added", "to", "the", "cross", "validation", "dataset", "." ]
+  }, {
+    "sentence_tokens" : [ "Importantly", ",", "the", "cross", "validation", "process", "was", "performed", "on", "this", "dataset", "and", "model", "selection", "was", "done", "in", "a", "manner", "that", "was", "blind", "to", "the", "cases", "on", "which", "it", "was", "tested", "and", "reported", "on", "in", "this", "study.Additional", "quantitative", "performance", "metrics", "were", "used", "to", "assess", "the", "performance", "of", "the", "algorithm", "during", "the", "cross", "validation", "phase", "as", "a", "spatial", "overlap", "metric", ",", "such", "as", "DSC", "fails", "to", "capture", "potential", "biases", "in", "the", "predicted", "contours", "[", "18", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "addition", "to", "DSC", ",", "the", "contour", "spatial", "distance", "based", "Hausdorff", "distance", "metric", "and", "domain", "specific", "performance", "metrics", "were", "computed", ",", "including", "absolute", "errors", "in", "RV", "volume", "prediction", ",", "LV", "volume", "and", "LV", "ejection", "fraction", "(", "LVEF", ")", "prediction", ",", "myocardial", "mass", "consistency", "and", "contour", "consistency", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "total", "number", "of", "discontinuous", "predictions", "in", "the", "midventricular", "region", "was", "also", "computed", "to", "favor", "the", "selection", "of", "models", "with", "highly", "consistent", "predictions", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "mean", "and", "standard", "deviation", "of", "all", "performance", "metrics", "were", "considered", "independently", "to", "select", "the", "most", "performant", "model", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "change", "in", "the", "cross", "validation", "process", "resulted", "in", "a", "different", "choice", "in", "hyperparameters", "." ]
+  }, {
+    "sentence_tokens" : [ "Specifically", ",", "there", "were", "changes", "in", "how", "each", "training", "batch", "was", "sampled", ",", "the", "frequency", "of", "the", "augmentations", ",", "and", "the", "point", "in", "time", "at", "which", "the", "training", "algorithm", "is", "stopped", "." ]
+  }, {
+    "sentence_tokens" : [ "Image", "acquisition", "." ]
+  }, {
+    "sentence_tokens" : [ "Vasodilator", "contrast", "enhanced", "stress", "perfusion", "CMR", "imaging", "was", "performed", "using", "a", "1.5-T", "scanner", "(", "Achieva", ",", "Philips", "Healthcare", ",", "Best", ",", "The", "Netherlands", ")", "with", "a", "five-element", "phased", "array", "cardiac", "coil", "." ]
+  }, {
+    "sentence_tokens" : [ "Retrospectively", "gated", "cine", "images", "were", "obtained", "following", "stress", "perfusion", "imaging", "using", "a", "balanced", "steady-state", "free", "precession", "(", "bSSFP", ")", "sequence", ",", "during", "approximately", "5-s", "breath", "holds", "(", "repetition", "time", "2.9", "ms", ";", "echo", "time", "1.5", "ms", ";", "flip", "angle", "60", "degrees", ";", "temporal", "resolution", "30", "-", "40", "ms", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Standard", "long-axis", "views", "were", "obtained", ",", "including", "four-chamber", ",", "two-chamber", ",", "and", "three-chamber", "images", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "addition", ",", "six", "to", "ten", "short-axis", "slices", "were", "obtained", "from", "the", "LV", "and", "RV", "base", "to", "the", "apex", "(", "slice", "thickness", "8", "mm", ";", "gap", "2", "mm", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Conventional", "image", "analysis", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "cine-CMR", "images", "were", "analyzed", "semi", "automatically", "using", "commercial", "software", "(", "CardioAI", ",", "Arterys", ",", "San", "Francisco", ",", "California", ",", "USA", ")", "by", "an", "experienced", "expert", "reader", "in", "our", "core", "lab", ",", "who", "was", "blinded", "to", "clinical", "information", "." ]
+  }, {
+    "sentence_tokens" : [ "Using", "the", "short-axis", "cine", "images", ",", "the", "RV", "endocardial", "boundary", "was", "automatically", "detected", "by", "the", "software", "and", "then", "corrected", "by", "the", "expert", "in", "end-diastolic", "and", "end-systolic", "frames", "." ]
+  }, {
+    "sentence_tokens" : [ "RV", "papillary", "muscles", "and", "trabecular", "tissue", "were", "included", "in", "the", "blood", "pool", "volume", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "RV", "outflow", "tract", "was", "included", "in", "the", "RV", "volume", "to", "the", "level", "of", "the", "pulmonary", "valve", "." ]
+  }, {
+    "sentence_tokens" : [ "When", "the", "boundary", "between", "the", "atrium", "and", "ventricle", "was", "unclear", ",", "long", "axis", "views", "and", "other", "frames", "of", "the", "cardiac", "cycle", "were", "reviewed", "to", "differentiate", "between", "the", "two", "chambers", "." ]
+  }, {
+    "sentence_tokens" : [ "Simpson", "'", "s", "method", "of", "disks", "was", "used", "to", "calculate", "RV", "end-diastolic", "volume", "(", "RVEDV", ")", "and", "end-systolic", "volume", "(", "RVESV", ")", ",", "and", "RVEF", "." ]
+  }, {
+    "sentence_tokens" : [ "All", "volume", "measurements", "were", "indexed", "to", "body", "surface", "area", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "RV", "measurements", "made", "by", "the", "core", "lab", "expert", "were", "considered", "as", "the", "reference", "standard", "(", "CORE-RVEF", ",", "CORE-RVEDV", ",", "CORE-RVESV", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "DL", "image", "analysis", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "RVEF", "was", "determined", "using", "two", "different", "fully", "automated", "DL-algorithms", "DL1", "and", "DL2", ",", "described", "above", "." ]
+  }, {
+    "sentence_tokens" : [ "Cine", "images", "were", "uploaded", "into", "the", "software", "and", "fully", "automated", "segmentation", "was", "then", "performed", "without", "any", "further", "user", "input", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "plane", "demarcating", "the", "ventricular", "base", "was", "identified", "automatically", "." ]
+  }, {
+    "sentence_tokens" : [ "Using", "the", "entire", "short", "axis", "stack", "and", "standard", "long", "axis", "views", ",", "both", "DL1", "and", "DL2", "generated", "time-volume", "curves", ",", "from", "which", "end-diastole", "and", "end-systole", "were", "automatically", "determined", "and", "used", "to", "calculate", "RVEDV", ",", "RVESV", ",", "and", "RVEF", "." ]
+  }, {
+    "sentence_tokens" : [ "Statistics", "." ]
+  }, {
+    "sentence_tokens" : [ "Continuous", "variables", "were", "tested", "for", "normal", "distribution", "." ]
+  }, {
+    "sentence_tokens" : [ "Continuous", "variables", "that", "were", "not", "normally", "distributed", ",", "were", "presented", "as", "the", "median", "with", "interquartile", "range", "(", "IQR", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Categorical", "variables", "were", "presented", "as", "absolute", "numbers", "with", "percentages", "." ]
+  }, {
+    "sentence_tokens" : [ "Inter-technique", "comparisons", "included", "linear", "regression", "analysis", "with", "Pearson", "correlation", "coefficients", "and", "Bland", "-", "Altman", "analyses", "of", "biases", "and", "limits", "of", "agreement", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "included", "the", "agreement", "between", "each", "of", "the", "DL", "techniques", "(", "DL1", "and", "DL2", ")", "against", "the", "CORE", "reference", "." ]
+  }, {
+    "sentence_tokens" : [ "Histograms", "displaying", "the", "difference", "in", "RVEF", "measurements", "between", "the", "DL", "algorithms", "and", "the", "core", "lab", "were", "generated", "." ]
+  }, {
+    "sentence_tokens" : [ "Confusion", "matrices", "were", "generated", "for", "each", "DL-RVEF", "algorithm", "to", "display", "the", "concordance", "and", "discordance", "with", "the", "CORE-RVEF", "for", "each", "of", "the", "RVEF", "categories", "(", "<=", "35", "%", ",", "35", "-", "50", "%", ",", "and", ">=", "50", "%", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "sensitivity", ",", "specificity", ",", "and", "accuracy", "of", "DL1-RVEF", "and", "DL2-RVEF", "algorithms", "'", "ability", "to", "correctly", "categorize", "RV", "function", "were", "also", "calculated", "." ]
+  }, {
+    "sentence_tokens" : [ "Reproducibility", "was", "tested", "for", "the", "2", "DL", "algorithms", "on", "20", "randomly", "selected", "patients", "and", "by", "manual", "analyses", "by", "two", "expert", "readers", ",", "including", "inter-", "and", "intra-observer", "reproducibility", "." ]
+  }, {
+    "sentence_tokens" : [ "Inter-", "and", "intra-", "observer", "variability", "was", "assessed", "using", "intraclass", "correlation", "coefficients", "(", "ICC", ")", "and", "coefficients", "of", "variation", "(", "CoV", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "P-values", "<", "0.05", "were", "considered", "significant", "." ]
+  }, {
+    "sentence_tokens" : [ "Analyses", "were", "performed", "using", "SPSS", "software", "(", "version", "23.0", ",", "Statistical", "Package", "for", "the", "Social", "Sciences", ",", "International", "Business", "Machines", ",", "Inc", ".,", "Armonk", ",", "New", "York", ",", "llinois", ",", "USA", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Results", "." ]
+  }, {
+    "sentence_tokens" : [ "Patient", "demographics", "." ]
+  }, {
+    "sentence_tokens" : [ "Patient", "characteristics", "for", "Group", "1", "are", "shown", "in", "Table", "2", "along", "with", "the", "relevant", "imaging", "findings", "." ]
+  }, {
+    "sentence_tokens" : [ "Figure", "1", "shows", "examples", "of", "RV", "boundaries", "as", "determined", "by", "the", "core-lab", "and", "by", "the", "2", "DL", "algorithms", "." ]
+  }, {
+    "sentence_tokens" : [ "Relationship", "between", "CORE-RVEF", "and", "DL-RVEF", "." ]
+  }, {
+    "sentence_tokens" : [ "Compared", "to", "CORE-RVEF", ",", "the", "correlations", "of", "DL1-RVEF", "and", "DL2-RVEF", "were", "0.42", "and", "0.87", ",", "respectively", "(", "Fig.", "2", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "results", "of", "Bland", "-", "Altman", "analyses", "for", "the", "two", "DL", "algorithms", "in", "comparison", "to", "the", "core", "lab", "analysis", "are", "depicted", "in", "Fig.", "2", "." ]
+  }, {
+    "sentence_tokens" : [ "Algorithm", "DL2", "performed", "significantly", "better", "than", "DL1", ",", "as", "reflected", "by", "considerably", "narrower", "limits", "of", "agreement", ":", "-", "1", "+/-", "11", "%", "for", "DL2", "versus", "-", "1", "+/-", "28", "%", "for", "DL1", "." ]
+  }, {
+    "sentence_tokens" : [ "Figure", "3", "shows", "histograms", "that", "demonstrate", "the", "frequency", "of", "absolute", "differences", "between", "CORE-RVEF", "and", "each", "of", "the", "DL-RVEF", "algorithms", "for", "Group", "1", "(", "top", ")", "and", "Group", "2", "(", "bottom", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "DL1", ",", "no", "case", "in", "Group", "1", "had", "<=", "5", "%", "error", "as", "a", "consequence", "of", "the", "study", "design", ",", "while", "errors", ">", "10", "%", "were", "noted", "in", "35", "(", "35", "%", ")", "of", "cases", "and", "errors", "exceeding", "20", "%", "were", "present", "in", "17", "(", "17", "%", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "contrast", ",", "for", "algorithm", "DL2", ",", "44", "(", "44", "%", ")", "cases", "in", "Group", "1", "were", "within", "3", "%", "absolute", "error", "and", "70", "(", "70", "%", ")", "cases", "were", "within", "5", "%", "error", ",", "while", "only", "10", "(", "10", "%", ")", "cases", "showed", "errors", ">", "10", "%", "when", "compared", "to", "CORE-RVEF", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "group", "2", ",", "no", "case", "had", ">", "5", "%", "error", "according", "to", "DL1", ",", "as", "a", "consequence", "of", "the", "study", "design", ",", "and", "DL2", "resulted", "in", "a", "relatively", "small", "number", "of", "cases", "with", "larger", "errors", "." ]
+  }, {
+    "sentence_tokens" : [ "Relationship", "between", "CORE-RV", "size", "and", "DL-RV", "size", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "RVEDV", "and", "RVESV", ",", "algorithm", "DL1", "was", "less", "accurate", "than", "DL2", "when", "compared", "to", "CORE", "lab", "reference", "values", "(", "Fig.", "4", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "RVEDV", ",", "the", "correlations", "between", "CORE-RVEDV", "and", "DL-RVEDV", "were", "0.65", "(", "DL1", ")", "and", "0.92", "(", "DL2", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "RVESV", ",", "the", "correlations", "between", "CORE-RVESV", "and", "DL-RVESV", "were", "0.54", "(", "DL1", ")", "and", "0.94", "(", "DL2", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Bland", "-", "Altman", "analyses", "of", "comparison", "between", "CORE-RVEDV", "and", "DL-RVEDV", "resulted", "in", "smaller", "biases", "and", "narrower", "limits", "of", "agreement", "for", "DL2", ":", "-", "32", "+/-", "103", "ml", "(", "DL1", ")", ",", "-", "13", "+/-", "37", "ml", "(", "DL2", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "RVESV", ",", "the", "bias", "and", "limits", "of", "agreement", "were", "-", "15", "+/-", "93", "ml", "(", "DL1", ")", ",", "-", "4", "+/-", "24", "ml", "(", "DL2", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Reproducibility", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "intraclass", "correlations", "for", "the", "inter-", "and", "intra-observer", "variability", "of", "manual", "measurements", "were", "0.90", "and", "0.94", "for", "the", "RVEF", ",", "0.94", "and", "0.96", "for", "the", "RVEDV", ",", "0.94", "and", "0.97", "for", "the", "RVESV", ",", "respectively", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "contrast", ",", "DL", "algorithms", "showed", "zero", "variability", "in", "all", "repeated", "measurements", ",", "due", "to", "their", "fully", "automated", ",", "deterministic", "nature", "." ]
+  }, {
+    "sentence_tokens" : [ "Classification", "into", "ejection", "fraction", "categories", "." ]
+  }, {
+    "sentence_tokens" : [ "Based", "on", "CORE-RVEF", ",", "11", "of", "the", "100", "patients", "had", "severely", "reduced", "RVEF", "(", "<=", "35", "%", ")", ",", "21", "had", "mildly", "to", "moderately", "reduced", "RVEF", "(", "35", "-", "50", "%", ")", ",", "and", "68", "had", "preserved", "RVEF", "(", ">=", "50", "%", ")", "(", "Table", "3", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "accuracy", "of", "the", "DL1", "and", "DL2", "algorithms", "for", "classifying", "RV", "function", "into", "appropriate", "EF", "group", "was", "0.53", "and", "0.80", ",", "respectively", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "lowest", "rates", "of", "accurate", "classifications", "were", "noted", "in", "the", "middle", "RVEF", "category", "of", "35", "-", "50", "%", "(", "Fig.", "5", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Discussion", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "study", ",", "we", "aimed", "to", "determine", "the", "impact", "of", "including", "CMR", "images", "with", "diverse", "RV", "pathology", "during", "the", "cross", "validation", "stage", "on", "the", "performance", "of", "a", "DL", "algorithm", "developed", "to", "automatically", "quantify", "RV", "size", "and", "function", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "found", "that", "such", "an", "approach", "resulted", "in", "substantial", "and", "clinically", "important", "improvements", "in", "the", "performance", "of", "the", "algorithm", "in", "patients", "whose", "images", "were", "difficult", "to", "handle", "for", "the", "previous", "version", "of", "the", "algorithm", "." ]
+  }, {
+    "sentence_tokens" : [ "These", "findings", "were", "in", "agreement", "with", "several", "previous", "studies", "[", "22", "-", "24", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "RV", "dysfunction", "is", "associated", "with", "poor", "clinical", "outcomes", "in", "a", "wide", "range", "of", "cardiovascular", "disorders", "including", "but", "not", "limited", "to", "acute", "myocardial", "infarction", ",", "LV", "heart", "failure", ",", "congenital", "heart", "disease", ",", "arrhythmogenic", "cardiomyopathy", ",", "and", "pulmonary", "hypertension", "[", "25", ",", "26", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "RV", "systolic", "function", "is", "highly", "sensitive", "to", "changes", "in", "the", "afterload", "with", "small", "increases", "in", "afterload", "causing", "large", "decreases", "in", "stroke", "volume", "." ]
+  }, {
+    "sentence_tokens" : [ "Importantly", ",", "left", "heart", "disease", "can", "affect", "RV", "function", "through", "abnormal", "motion", "of", "the", "ventricular", "septum", "." ]
+  }, {
+    "sentence_tokens" : [ "Thus", ",", "quantification", "of", "RVEF", ",", "as", "a", "biomarker", "of", "RV", "systolic", "function", ",", "can", "be", "used", "to", "guide", "therapeutic", "decision", "making", "and", "to", "assess", "prognosis", "[", "27", "-", "29", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Although", "RVEF", "is", "a", "continuous", "variable", ",", "RVEF", "cutoff", "values", "have", "been", "shown", "to", "have", "prognostic", "value", "in", "patients", "with", "dilated", "cardiomyopathy", "[", "28", "]", "and", "in", "other", "disease", "states", "[", "9", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "importance", "of", "RVEF", "for", "prediction", "of", "cardiovascular", "outcomes", "was", "demonstrated", "in", "a", "cohort", "comprised", "of", "a", "broad", "range", "of", "cardiovascular", "diseases", "by", "demonstrating", "that", "each", "10", "%", "drop", "in", "RVEF", "was", "associated", "with", "a", "1.33-fold", "increased", "risk", "[", "3", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "fact", ",", "RVEF", "is", "associated", "with", "poor", "outcomes", "even", "in", "individuals", "with", "a", "preserved", "LVEF", "[", "3", ",", "30", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "recognition", "of", "the", "importance", "of", "RV", "function", ",", "CMR", "is", "increasingly", "being", "used", "to", "assess", "the", "RV", "due", "to", "its", "ability", "to", "accurately", "quantify", "chamber", "size", "and", "function", "without", "being", "limited", "by", "the", "complex", "RV", "geometry", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "the", "process", "remains", "time", "consuming", "and", "even", "fully", "automated", ",", "commercially", "available", "DL", "techniques", "used", "to", "quantify", "RVEF", "may", "perform", "poorly", "in", "some", "patients", ",", "and", "as", "a", "result", "may", "fail", "to", "predict", "clinical", "events", "[", "31", "]", ",", "suggesting", "that", "the", "current", "approach", "to", "developing", "these", "algorithms", "needs", "to", "be", "refined", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "our", "study", ",", "we", "investigated", "a", "new", "approach", "to", "selecting", "a", "candidate", "algorithm", "to", "be", "used", "in", "clinical", "practice", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "biggest", "source", "of", "improvement", "in", "this", "study", "is", "from", "the", "increased", "variability", "in", "the", "cross", "validation", "dataset", "and", "addition", "of", "multiple", "performance", "metrics", "employed", "to", "guide", "model", "selection", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "addition", "of", "10,161", "images", "to", "include", "RV", "pathologies", ",", "such", "as", "pulmonary", "arterial", "hypertension", ",", "repaired", "tetralogy", "of", "Fallot", ",", "etc.", "were", "used", "to", "revamp", "the", "cross", "validation", "strategy", "." ]
+  }, {
+    "sentence_tokens" : [ "Contour", "overlap", "metrics", "and", "the", "ability", "of", "accurate", "clinical", "biomarkers", "and", "results", "were", "factored", "into", "the", "exploration", "of", "DL2", "algorithm", "." ]
+  }, {
+    "sentence_tokens" : [ "Additionally", ",", "the", "strict", "enforcement", "of", "a", "spatiotemporal", "consistency", "in", "the", "predicted", "outputs", "was", "adopted", "to", "post-processing", "in", "all", "stacks", ",", "which", "ensured", "the", "removal", "of", "outliers", "in", "the", "event", "that", "contours", "are", "predicted", "above", "the", "basal", "slice", "or", "below", "the", "apex.Although", "other", "studies", "have", "examined", "the", "accuracy", "of", "DL", "algorithms", "to", "quantify", "RVEF", "in", "comparison", "to", "a", "human", "expert", "[", "12", ",", "32", ",", "33", "]", ",", "they", "did", "not", "examine", "the", "clinical", "implications", "of", "any", "specific", "sources", "of", "error", "." ]
+  }, {
+    "sentence_tokens" : [ "Rahman", "et", "al", ".,", "reported", "high", "levels", "of", "agreement", "between", "the", "DL", "algorithm", "and", "manual", "measurement", "of", "RVEF", ",", "but", "the", "focus", "was", "limited", "to", "the", "healthy", "population", "[", "34", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "a", "study", "by", "Hakim", "et", "al", ".,", "when", "comparing", "automated", "RVEF", "measurements", "to", "a", "human", "expert", "generated", "reference", "values", ",", "the", "DL", "algorithm", "showed", "an", "r-value", "of", "0.76", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "major", "source", "of", "error", "has", "typically", "been", "explained", "by", "poor", "automated", "segmentation", "at", "the", "basal", "slice", ",", "as", "was", "observed", "in", "prior", "studies", "[", "35", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "our", "prior", "study", "[", "15", "]", ",", "we", "compared", "manual", "RVEF", "by", "a", "clinician", "to", "automated", "RVEF", "measurements", "made", "by", "three", "DL", "methods", "developed", "using", "publicly", "available", "CMR", "datasets", "and", "found", "that", "all", "three", "DL", "methods", "performed", "relatively", "poorly", "in", "a", "significant", "proportion", "of", "the", "patients.In", "this", "current", "study", ",", "we", "selected", "from", "our", "prior", "study", "[", "15", "]", "the", "100", "cases", ",", "in", "which", "the", "DL", "algorithm", "performed", "the", "worst", ",", "and", "found", "that", "an", "algorithm", "developed", "using", "a", "new", "approach", "with", "enhanced", "cross", "validation", "resulted", "in", "considerable", "improvement", "in", "its", "clinical", "performance", "." ]
+  }, {
+    "sentence_tokens" : [ "Indeed", ",", "measurements", "of", "RVEDV", ",", "RVESV", ",", "and", "RVEF", "made", "using", "the", "improved", "algorithm", "correlated", "better", "with", "the", "reference", "measurements", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "increased", "correlation", "translated", "into", "more", "accurate", "classification", "of", "RVEF", "function", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "it", "is", "important", "to", "note", "that", "the", "correlation", "between", "the", "core", "laboratory", "measurement", "and", "the", "DL", "algorithm", "was", "not", "perfect", ",", "10", "%", "of", "cases", "still", "had", "a", ">", "10", "%", "absolute", "error", "in", "the", "RVEF", "measurement", ",", "and", "20", "%", "of", "patients", "were", "still", "categorized", "into", "an", "incorrect", "RVEF", "group", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "emphasizes", "the", "need", "for", "additional", "algorithmic", "improvements", "in", "the", "future", "." ]
+  }, {
+    "sentence_tokens" : [ "Detecting", "the", "RV", "endocardial", "contour", "is", "challenging", "for", "both", "the", "clinician", "and", "automated", "DL", "algorithms", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "can", "be", "attributed", "to", "the", "unique", "morphology", ",", "thinner", "myocardium", ",", "and", "higher", "trabeculation", "burden", "of", "the", "RV", "chamber", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "basal", "short-axis", "slice", "is", "most", "often", "inaccurately", "segmented", "by", "both", "an", "expert", "and", "by", "the", "DL", "algorithms", ",", "particularly", "at", "the", "boundary", "of", "the", "pulmonary", "artery", "and", "right", "atrium", "." ]
+  }, {
+    "sentence_tokens" : [ "Furthermore", ",", "the", "RV", "apex", "is", "frequently", "incorrectly", "identified", "by", "the", "DL", "algorithms", "in", "cases", "of", "pathological", "RV", "morphology", "." ]
+  }, {
+    "sentence_tokens" : [ "Another", "challenge", "for", "the", "DL-algorithms", "for", "calculating", "RVEF", "is", "the", "accurate", "identification", "of", "the", "ED", "and", "ES", "frames", "(", "Fig.", "6", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "fact", ",", "some", "algorithms", "require", "end-diastole", "and", "end-systole", "to", "be", "pre-selected", "to", "overcome", "this", "challenge", "[", "36", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Limitations", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "was", "a", "single-center", "study", "performed", "in", "a", "relatively", "small", "number", "of", "patients", "." ]
+  }, {
+    "sentence_tokens" : [ "Although", "we", "demonstrated", "considerable", "improvement", "of", "algorithm", "performance", "in", "our", "cohort", ",", "it", "is", "possible", "that", "it", "may", "not", "perform", "as", "well", "on", "images", "acquired", "using", "other", "scanners", "or", "other", "CMR", "image", "acquisition", "techniques", "." ]
+  }, {
+    "sentence_tokens" : [ "Additionally", ",", "our", "study", "cohort", "was", "selected", "from", "patients", "referred", "for", "a", "CMR", "stress", "test", "and", "was", "not", "enriched", "with", "patients", "known", "to", "have", "more", "complex", "RV", "anatomy", "." ]
+  }, {
+    "sentence_tokens" : [ "Thus", ",", "it", "is", "unknown", "how", "well", "this", "current", "algorithm", "would", "perform", "when", "it", "encounters", "more", "complex", "clinical", "cases", ",", "such", "as", "cyanotic", "congenital", "heart", "disease", "and", "other", "distorted", "anatomies", "." ]
+  }, {
+    "sentence_tokens" : [ "Also", ",", "one", "could", "view", "as", "a", "limitation", "the", "fact", "that", "this", "study", "was", "performed", "on", "stress", "rather", "than", "resting", "CMR", "images", "." ]
+  }, {
+    "sentence_tokens" : [ "There", "were", "three", "reasons", "for", "this", "choice", ":", "(", "1", ")", "vasodilator", "stress", "is", "a", "common", "indication", "for", "CMR", "imaging", ";", "(", "2", ")", "we", "suspected", "that", "the", "algorithms", "may", "not", "perform", "as", "well", "in", "this", "situation", ",", "since", "the", "images", "used", "to", "quantify", "EF", "are", "usually", "acquired", "after", "the", "administration", "of", "a", "gadolinium", "based", "contrast", "agent", ";", "and", "(", "3", ")", "the", "previous", "study", ",", "in", "which", "the", "original", "algorithm", "did", "not", "perform", "well", "in", "this", "subset", "of", "patients", ",", "was", "performed", "on", "their", "stress", "CMR", "images", ",", "and", "therefore", "testing", "the", "hypothesis", "that", "the", "retrained", "algorithm", "would", "perform", "better", "had", "to", "be", "done", "on", "the", "same", "images", "." ]
+  }, {
+    "sentence_tokens" : [ "Conclusions", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "use", "of", "a", "diverse", "dataset", "during", "the", "cross", "validation", "phase", "of", "DL", "algorithm", "development", "resulted", "in", "a", "considerable", "improvement", "in", "the", "accuracy", "of", "the", "automated", "analysis", "of", "RV", "volumes", "and", "RVEF", "in", "patients", "in", "whom", "the", "previous", "version", "of", "the", "software", "did", "not", "perform", "well", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "despite", "the", "improvement", ",", "the", "current", "fully", "automated", "algorithm", "is", "still", "prone", "to", "errors", "when", "compared", "to", "a", "core", "laboratory", "measurement", "due", "to", "intrinsic", "anatomical", "challenges", "and", "therefore", "requires", "verification", "by", "an", "experienced", "reader", "." ]
+  } ]
+}

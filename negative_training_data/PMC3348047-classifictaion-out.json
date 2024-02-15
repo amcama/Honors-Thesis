@@ -1,1 +1,225 @@
-[ ]
+{
+  "regulations" : [ ],
+  "hardInstances" : [ ],
+  "withoutRegulations" : [ {
+    "sentence_tokens" : [ "The", "red", "bars", "reflect", "genes", "that", "are", "negatively", "associated", "with", "DMFS", ",", "indicative", "of", "higher", "expression", "in", "tumors", "with", "metastatic", "capability", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "Comparison", "of", "data", "merging", "methods", "with", "SVM", "attribute", "selection", "and", "classification", "in", "breast", "cancer", "gene", "expression", "." ],
+    "entities_indices" : [ [ 14, 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "analysis", "was", "performed", "using", "MeV", "(", "MultiExperimentViewer", ")", "[", "35", "]", "to", "search", "for", "genes", "that", "correlated", "with", "distant", "metastasis.A", "comparative", "study", "of", "performances", "of", "Recursive", "Feature", "Elimination", "(", "RFE", ")", "with", "SAM", "was", "carried", "out", "as", "an", "additional", "evaluation", "tool.For", "further", "validation", "of", "different", "data", "merging", "and", "processing", "technique", "comparison", ",", "we", "analyzed", "specific", "pathways", "associated", "with", "breast", "cancer", "progression", ":", "EGF", ",", "Stathmin", ",", "HER2", ",", "BRCA1", "and", "Homologous", "Recombination", "." ],
+    "entities_indices" : [ [ 33, 34 ], [ 63, 64 ], [ 65, 66 ], [ 67, 68 ], [ 69, 70 ], [ 71, 72, 73 ] ]
+  }, {
+    "sentence_tokens" : [ "VB", ",", "MA", "and", "CC", "carried", "out", "the", "PVCA", ",", "PCA", "and", "enrichment", "analysis", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 4, 5 ], [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "variation", "in", "each", "principal", "component", "is", "weighted", "by", "its", "eigenvalue", "from", "PCA", ",", "and", "the", "resulting", "value", "represents", "the", "overall", "variation", "explained", "by", "that", "component.The", "PVCA", "revealed", "that", "batch", "effects", "explained", "22.4", "%", "of", "the", "overall", "variation", "in", "the", "RMA", "data", "(", "Figure", "1a", ")", "and", "32,3", "%", "in", "the", "Quantile", "and", "MBEI", "data", "(", "Figure", "1d", ")", "." ],
+    "entities_indices" : [ [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "performed", "three", "pre-processing", "methods", ":", "Robust", "Multi-Chip", "Average", "[", "17", "]", ",", "frozen", "RMA", "[", "18", "]", "and", "Quantile", "Normalization", "with", "Model", "Based", "Expression", "Index", "[", "19", "]", ";", "subsequently", "we", "applied", "two", "data", "merging", "approaches", ":", "ComBat", "[", "20", "]", "and", "z", "scoring", "standardization", "procedure", "for", "each", "dataset", "." ],
+    "entities_indices" : [ [ 6, 7, 8, 9, 10, 11, 12 ], [ 13, 14, 15, 16, 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "clearly", "identified", "a", "cluster", "of", "samples", "performed", "in", "the", "same", "batch", "without", "any", "clear", "biological", "interpretation.After", "batch", "adjustment", "of", "the", "RMA", "dataset", "(", "Figure", "3b-c", ")", "and", "the", "MBEI", "dataset", "(", "Figure", "3e-f", ")", ",", "the", "clusters", "were", "no", "longer", "confused", "with", "the", "batch", "effects", "." ],
+    "entities_indices" : [ [ 21, 22, 23 ], [ 29, 30, 31 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "next", "step", "consisted", "of", "testing", "the", "dataset", "that", "had", "not", "been", "used", "on", "the", "samples", "to", "train", "the", "classifier", "." ],
+    "entities_indices" : [ [ 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "Again", "in", "this", "case", "Combat", "outperformed", "z-score", "with", "a", "number", "of", "genes", "almost", "double.In", "the", "same", "step", "of", "gene", "selection", ",", "RFE", "showed", "results", "markedly", "different", "from", "SAM", ",", "and", "the", "number", "of", "common", "genes", ",", "equal", "to", "zero", ",", "is", "not", "derived", "from", "chance", ":", "fRMA", "hindered", "RFE", "from", "finding", "biologically", "relevant", "genes.The", "biological", "meanings", "of", "gene", "expression", "have", "been", "also", "analyzed", "in", "terms", "of", "enrichment", "analysis.Our", "objectives", "tested", "predefined", "gene", "sets", "for", "their", "association", "with", "breast", "cancer", "progression", ",", "assuming", "that", "gene", "expression", "changes", "can", "be", "identified", "at", "the", "level", "of", "co", "regulated", "gene", "sets", "rather", "than", "individual", "genes.The", "application", "of", "gene", "set", "analysis", "by", "GSEA", "was", "also", "useful", "in", "finding", "common", "biological", "pathway", "changes", "and", "in", "comparing", "different", "preprocessing", "and", "data", "merging", "methods.GSEA", "detected", "three", "gene", "sets", ",", "Homologous", "Recombination", ",", "BRCA1", "and", "HER2", "pathway", ",", "as", "significantly", "up-regulated", "versus", "two", "gene", "sets", ",", "EGF", "and", "Stathmin", "Pathway", ",", "which", "were", "over-regulated", ";", "although", "in", "many", "cases", "the", "same", "gene", "sets", "were", "identified", "as", "significant", "by", "various", "programs", ",", "in", "a", "direct", "comparison", "across", "MBEI", "and", "RMA", "normalization", "using", "breast", "cancer", "datasets", ",", "the", "p-values", "of", "RMA", "were", "lower", "than", "the", "respective", "p", "values", "obtained", "by", "MBEI", "(", "Table", "4", ")", ",", "indicating", "that", "RMA", "is", "more", "statistically", "sensitive", "than", "MBEI", "for", "these", "gene", "sets.Again", ",", "fRMA", "found", "gene", "sets", "with", "lower", "significance", "than", "the", "others", "and", "Combat", "outperformed", "z-score", ",", "although", "the", "latter", "showed", "better", "results", "in", "terms", "of", "classification", "performances", "." ],
+    "entities_indices" : [ [ 16, 17 ], [ 21, 22 ], [ 27, 28 ], [ 57, 58, 59 ], [ 83, 84, 85 ], [ 107, 108 ], [ 131, 132, 133 ], [ 134, 135 ], [ 136, 137 ], [ 147, 148 ], [ 149, 150 ], [ 177, 178 ], [ 179, 180 ], [ 189, 190 ], [ 199, 200 ], [ 201, 202, 203 ], [ 207, 208 ] ]
+  }, {
+    "sentence_tokens" : [ "VB", ",", "PP", ",", "MA", "and", "CC", "carried", "out", "the", "data", "merging", "and", "classification", ",", "clustering", "and", "SAM", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 4, 5 ], [ 6, 7 ], [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "All", "of", "the", "patients", "in", "the", "data", "sets", "had", "lymphonode", "negative", "tumors", "and", "did", "not", "receive", "adjuvant", "systemic", "treatment", "." ],
+    "entities_indices" : [ [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "this", "reason", ",", "the", "class", "0", "set", "were", "down-sampled", "until", "half", "spread.The", "training", "step", "applies", "a", "SVM", "based", "Recursive", "Feature", "Elimination", "(", "RFE", ")", "method", "[", "31,32", "]", "for", "the", "selection", "of", "genes", "using", "an", "iterative", "procedure", "which", "ranks", "features", "and", "discards", "the", "worst", "one", ",", "after", "sub", "sampling", "of", "the", "dataset", "to", "make", "the", "distribution", "size", "of", "the", "two", "classes", "equal", "." ],
+    "entities_indices" : [ [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "is", "explained", "in", "part", "by", "heterogeneity", "of", "the", "data", "in", "terms", "of", "tumor", "grade", ",", "tumor", "size", ",", "histopathological", "tumor", "type", "and", "progesterone", "and", "estrogen", "receptor", "that", "might", "negatively", "influence", "the", "prediction", "." ],
+    "entities_indices" : [ [ 13, 14 ], [ 16, 17 ], [ 20, 21 ], [ 21, 22 ], [ 23, 24 ], [ 25, 26, 27 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "data", "merging", "algorithm", "that", "maximizes", "the", "regulation", "information", "contained", "in", "the", "dataset", "is", "also", "suitable", "for", "providing", "an", "optimal", "substrate", "for", "classification.The", "genes", "can", "be", "ordered", "in", "a", "rank", "list", ",", "according", "to", "their", "differential", "expression", "between", "the", "classes", ",", "and", "the", "goal", "of", "GSEA", "algorithm", "is", "to", "determine", "whether", "the", "members", "of", "specific", "pathways", "are", "randomly", "distributed", "throughout", "the", "ranked", "list", "or", "primarily", "found", "at", "the", "top", "or", "bottom", "." ],
+    "entities_indices" : [ [ 29, 30 ], [ 45, 46, 47 ] ]
+  }, {
+    "sentence_tokens" : [ "Thus", "we", "can", "conclude", "that", "the", "SVM", "classifier", "could", "not", "benefit", "from", "the", "merging", "of", "different", "batches", "and", "the", "increasing", "number", "of", "samples.The", "difference", "between", "Stratified", "Percentage", "Fold", "and", "weighted", "LDOCV", "average", "is", "very", "sharp", "in", "the", "MBEI", "pre-processed", "datasets", "showing", "that", "this", "method", "gets", "greater", "benefits", "from", "the", "merging", "algorithms", "." ],
+    "entities_indices" : [ [ 6, 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "Percentage", "Fold", "randomly", "divides", "the", "merged", "data", "set", "into", "training", "and", "testing", "sets", ",", "66", "%", "and", "34", "%", "respectively", ";", "the", "Stratified", "Percentage", "Fold", "splits", "each", "dataset", "by", "preserving", "the", "same", "percentage", "for", "training", "and", "testing", "sets", "." ],
+    "entities_indices" : [ [ 0, 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "Overall", ",", "GSEA", "with", "RMA", "normalization", "identified", "two", "gene", "sets", ",", "Homologous", "Recombination", "and", "BRCA1", "pathway", ",", "as", "statistically", "significant", "at", "p", "<", "0.05", "whereas", "GSEA", "with", "MBEI", "normalization", "detected", "Homologous", "Recombination", "and", "EGF", "pathway", "with", "the", "same", "p-value.For", "all", "gene", "sets", ",", "p-values", "obtained", "by", "RMA", "normalization", "were", "generally", "smaller", "than", "the", "p-values", "of", "corresponding", "gene", "sets", "obtained", "by", "MBEI", "normalization.With", "Combat", "data", ",", "GSEA", "identified", ",", "although", "with", "higher", "significance", ",", "the", "same", "gene", "sets", "derived", "from", "RMA", "or", "MBEI", "data", "alone.Comparison", "of", "different", "data", "merging", "techniques", "confirmed", "that", "ZScore", "shows", "more", "variation", "than", "MBEI", "or", "RMA", "data", "alone.fRMA", "revealed", "different", "gene", "sets", "regulated", "with", "a", "higher", "p-value", "than", "ZScore", "and", "Combat", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 4, 5 ], [ 11, 12, 13 ], [ 14, 15 ], [ 25, 26 ], [ 27, 28 ], [ 30, 31, 32 ], [ 33, 34 ], [ 46, 47 ], [ 60, 61, 62, 63, 64 ], [ 65, 66 ], [ 79, 80 ], [ 81, 82 ], [ 96, 97 ], [ 98, 99, 100, 101 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "past", ",", "several", "studies", "explored", "the", "issue", "of", "microarray", "data", "merging", ",", "but", "the", "arrival", "of", "new", "techniques", "and", "a", "focus", "on", "SVM", "based", "classification", "needed", "further", "investigation", "." ],
+    "entities_indices" : [ [ 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "fRMA", "without", "further", "adjustment", "for", "batch", "effects", "is", "similar", "to", "RMA", "when", "the", "data", "are", "analyzed", "as", "a", "single", "batch.This", "procedure", "led", "to", "seven", "differently", "merged", "datasets", ":", "RMA", "without", "merging", "(", "RMA", ")", ",", "RMA", "data", "merged", "by", "Combat", "(", "CB-RMA", ")", "and", "by", "z-score", "(", "ZS-RMA", ")", ",", "MBEI", "without", "merging", "(", "MBEI", ")", ",", "MBEI", "data", "merged", "by", "Combat", "(", "CB-MBEI", ")", "and", "by", "z-score", "(", "ZS-MBEI", ")", "and", "fRMA", "data", "(", "fRMA", ")", "." ],
+    "entities_indices" : [ [ 50, 51 ], [ 54, 55 ], [ 57, 58 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "past", ",", "different", "classifiers", "were", "built", "for", "patients", "showing", "different", "values", "for", "these", "features", "with", "successful", "results", "[", "28", "]", "." ],
+    "entities_indices" : [ [ 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "methods", "were", "compared", "from", "a", "new", "perspective", ",", "i.e.", "in", "terms", "of", "SVM", "classification", "and", "feature", "selection", "performances.For", "microarray", "data", "classification", "the", "methodologies", "involving", "feature", "selection", "and", "classification", "applied", "to", "SVM", "are", "proposed", "in", "a", "previous", "study", "[", "23", "]", "." ],
+    "entities_indices" : [ [ 31, 32 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "heat", "map", "of", "data", "sets", "that", "are", "pre-processed", "by", "robust", "multi-array", "average", "(", "RMA", ")", "and", "MBEI", "and", "merged", "by", "fRMA", "are", "presented", "in", "Figures", "4", ",", "5", ",", "6.Considering", "the", "expression", "level", "of", "the", "genes", "reported", "in", "each", "considered", "pathway", ",", "it", "can", "be", "observed", "that", "applying", "ComBat", "after", "RMA", "(", "Figure", "4b", ")", "or", "MBEI", "(", "Figure", "5b", ")", "leads", "to", "similar", "results", "to", "RMA", "(", "Figure", "4a", ")", "and", "MBEI", "(", "Figure", "5a", ")", "alone", ",", "respectively", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 17, 18 ], [ 21, 22 ], [ 36, 37 ], [ 36, 37 ], [ 57, 58 ], [ 73, 74 ] ]
+  }, {
+    "sentence_tokens" : [ "When", "comparing", "the", "differences", "in", "the", "SVM", "versus", "PVCA", "and", "Clustering", "results", ",", "we", "can", "conclude", "that", "the", "merging", "algorithms", "are", "an", "effective", "tool", ",", "but", "should", "be", "handled", "with", "care", "when", "it", "comes", "to", "the", "next", "algorithm", "in", "the", "workflow", "pipeline.fRMA", "showed", "performances", "comparable", "to", "non", "merged", "datasets", "also", "in", "the", "PVCA", "and", "Clustering", "case", "and", "our", "findings", "exclude", "it", "from", "being", "a", "good", "data", "merging", "algorithm", "even", "when", "compared", "with", "the", "simplest", "strategy", "of", "z-scoring.A", "comparative", "study", "of", "performances", "of", "Recursive", "Feature", "Elimination", "(", "RFE", ")", "with", "SAM", "has", "been", "given", "as", "an", "additional", "evaluation", "tool", "for", "the", "validation", "of", "RFE", "as", "feature", "selection.Also", "in", "this", "case", "we", "found", "an", "exception", ":", "SAM", "did", "not", "suffer", "from", "the", "fRMA", "normalization", "and", "reported", "a", "number", "of", "differentially", "expressed", "genes", "compared", "to", "the", "other", "techniques", "." ],
+    "entities_indices" : [ [ 76, 77 ], [ 89, 90 ], [ 114, 115 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "explored", "the", "performance", "of", "various", "pre-processing", "and", "data", "merging", "techniques", "by", "using", "biological", "pathway", "based", "analysis", "and", "determining", "whether", "a", "group", "of", "differentially", "expressed", "genes", "is", "enriched", "for", "a", "particular", "set.Here", ",", "we", "utilized", "a", "powerful", "analytical", "method", "called", "Gene", "Set", "Enrichment", "Analysis", "(", "GSEA", ")", "focusing", "on", "several", "biological", "pathways", ":", "EGF", ",", "Stathmin", ",", "HER2", ",", "BRCA1", ",", "Homologous", "Recombination", ",", "which", "are", "associated", "with", "breast", "cancer", "progression.The", "use", "of", "different", "methods", "of", "data", "merging", "and", "preprocessing", "can", "lead", "to", "a", "problem", "of", "poor", "congruency", "among", "datasets", "." ],
+    "entities_indices" : [ [ 53, 54 ], [ 55, 56 ], [ 57, 58 ], [ 59, 60 ], [ 61, 62, 63 ] ]
+  }, {
+    "sentence_tokens" : [ "Furthermore", ",", "the", "analysis", "of", "gene", "expression", "level", "in", "specific", "pathways", "confirmed", "the", "better", "performance", "of", "ComBat", "with", "respect", "to", "Z-Score", ",", "and", "focusing", "on", "PVCA", ",", "fRMA", "was", "inaccurate", "in", "removing", "the", "batch", "effect", "from", "the", "data", "." ],
+    "entities_indices" : [ [ 5, 6, 7 ], [ 25, 26 ], [ 27, 28 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "EB", "adjustment", "(", "Figure", "3b", ",", "e", ")", "has", "the", "advantage", "of", "being", "robust", "to", "outliers", "in", "small", "sample", "sizes", ",", "thus", "no", "notable", "difference", "was", "seen", "in", "our", "experimental", "set-up.The", "GSE1121", "samples", "clustered", "together", "more", "sharply", "than", "the", "GSE2990", "and", "the", "Foekens", "samples", "which", "created", "overlapping", "clusters.Normalized", "Mutual", "Information", "(", "NMI", ")", "[", "26", "]", "between", "the", "distribution", "of", "class", "labels", "and", "the", "distribution", "of", "cluster", "labels", "was", "used", "to", "assess", "the", "results", "of", "clustering", "after", "cutting", "the", "tree", "at", "a", "given", "threshold", "(", "0.5", ")", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 40, 41 ], [ 52, 53 ] ]
+  }, {
+    "sentence_tokens" : [ "SAM", "is", "a", "statistical", "technique", "for", "determining", "whether", "changes", "in", "gene", "expression", "are", "statistically", "significant", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 10, 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "particular", ",", "breast", "cancer", "has", "been", "extensively", "studied", "for", "gene", "expression", "in", "order", "to", "individualize", "a", "signature", "useful", "for", "molecular", "classification", "[", "3", "]", "and", "for", "prognostic", "purposes", "[", "4,5", "]", "." ],
+    "entities_indices" : [ [ 10, 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "Secondly", ",", "PCA", "is", "applied", "to", "the", "correlation", "matrix", "and", "once", "the", "number", "of", "principal", "components", "is", "determined", ",", "a", "variance", "component", "model", "is", "fitted", "separately", "to", "each", "of", "these", "principal", "components", "." ],
+    "entities_indices" : [ [ 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "heat", "map", "of", "RMA", "and", "MBEI", "data", "identified", "two", "over-regulated", "gene", "sets", ",", "EGF", "and", "Stathmin", "Pathway", ",", "indicative", "of", "higher", "expression", "in", "tumors", "with", "metastatic", "capability", "and", "three", "up-regulated", "gene", "sets", ",", "Homologous", "Recombination", ",", "BRCA1", "and", "HER2", "pathway", ",", "indicating", "a", "higher", "expression", "in", "tumors", "without", "metastasis.Gene", "Set", "Enrichment", "Analysis", "computes", "an", "enrichment", "score", "(", "ES", ")", "for", "a", "given", "gene", "set", "which", "reflects", "the", "degree", "to", "which", "a", "gene", "set", "is", "over-represented", "at", "the", "extremes", "of", "the", "entire", "ranked", "list", "of", "genes.A", "positive", "ES", "suggests", "gene", "set", "enrichment", "at", "the", "top", "of", "ranked", "list", ";", "a", "negative", "ES", "suggests", "gene", "set", "enrichment", "at", "the", "bottom", "of", "the", "ranked", "list.The", "nominal", "p-value", "estimates", "the", "statistical", "significance", "of", "the", "enrichment", "score", "for", "a", "single", "gene", "set.We", "found", "(", "Tables", "3", ",", "4", ")", "that", "both", "RMA", "and", "MBEI", "detected", "Homologous", "Recombination", "as", "the", "most", "significant", "gene", "set", ",", "however", ",", "the", "statistical", "significance", "of", "RMA", "of", "this", "gene", "set", "was", "much", "greater", ",", "p", "=", "0.0082", "(", "RMA", ")", "p", "=", "0.0073", "(", "CBRMA", ")", "p", "=", "0.0019", "(", "ZSCORE", ")", "versus", "p", "=", "0.0057", "(", "MBEI", ")", "p", "=", "0.0020", "(", "CBMBEI", ")", "p", "=", "0.3836", "(", "ZSMBEI", ")", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 4, 5 ], [ 6, 7 ], [ 14, 15 ], [ 16, 17 ], [ 24, 25 ], [ 34, 35, 36 ], [ 37, 38 ], [ 39, 40 ], [ 47, 48 ], [ 58, 59 ], [ 87, 88 ], [ 101, 102 ], [ 137, 138 ], [ 139, 140 ], [ 141, 142, 143 ], [ 156, 157 ], [ 194, 195 ], [ 200, 201 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "models", "were", "validated", "using", "Leave-One-Out", "Cross", "Validation", "(", "LOOCV", ")", ",", "Leave-Dataset-Out", "Cross", "Validation", "(", "LDOCV", ")", ",", "Percentage", "Fold", "and", "Stratified", "Percentage", "Fold", "." ],
+    "entities_indices" : [ [ 19, 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "applied", "pre-processing", "and", "data", "merging", "techniques", "to", "three", "breast", "cancer", "data", "sets", ":", "GSE11121", ",", "GSE2990", "(", "Gene", "Expression", "Omnibus", ")", "and", "a", "dataset", "used", "by", "Foekens", "et", "al.", "in", "[", "30", "]", ",", "containing", "respectively", "200", ",", "125", "and", "180", "samples", "from", "the", "same", "Affymetrix", "GeneChip", "Human", "Genome", "U133A", "platform", "." ],
+    "entities_indices" : [ [ 14, 15 ], [ 16, 17 ], [ 18, 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "directly", "merged", "the", "three", "microarray", "data", "sets", ",", "using", "the", "22283", "probe", "sets", "on", "Affymetrix", "HG-U133A", "microarray", ",", "to", "form", "an", "integrated", "data", "set", "in", "seven", "ways", ":", "RMA", ",", "Quantile", "and", "MBEI", ",", "RMA", "-", "ComBat", ",", "Quantile", "and", "MBEI-ComBat", ",", "RMA", "-", "Z-Score", "and", "Quantile", "and", "MBEI", "-", "Z-Score", ",", "frozenRMA", "." ],
+    "entities_indices" : [ [ 33, 34 ], [ 35, 36 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "previous", "studies", ",", "merging", "data", "sets", "were", "applied", "to", "develop", "a", "robust", "gene", "signature", "prognostic", "of", "survival", "outcome", "discretized", "into", "two", "[", "15", "]", "or", "more", "categorical", "values", ",", "or", "diagnostic", "of", "tumor", "subtypes", ",", "or", "predictive", "of", "treatment", "response", "[", "16", "]", "." ],
+    "entities_indices" : [ [ 33, 34 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "worst", "performance", "seemed", "to", "be", "that", "of", "fRMA", "(", "Figure", "1g", ")", "which", "showed", "a", "24,9", "%", "threshold", "of", "variation", "of", "the", "batch", "effects.To", "assess", "the", "removal", "of", "microarray", "bias", "effect", "across", "data", "sets", ",", "Principal", "Component", "Analysis", "(", "PCA", ")", "was", "applied", "to", "the", "data", "sets", "after", "the", "application", "of", "data", "merging", "methods", "." ],
+    "entities_indices" : [ [ 40, 41 ] ]
+  }, {
+    "sentence_tokens" : [ "Most", "probes", "were", "successfully", "identify", "by", "RMA-Combat", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "Furthermore", ",", "they", "are", "useful", "for", "molecular", "classification", "of", "tumor", "types", "[", "1", "]", ",", "for", "revealing", "complexity", "in", "the", "intrinsic", "cancer", "subtypes", "and", "for", "developing", "oncogenic", "pathway", "signatures", "as", "a", "guide", "to", "targeted", "therapies", "[", "2", "]", "." ],
+    "entities_indices" : [ [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "value", "of", "0.69", "was", "observed", "for", "the", "RMA", "dataset", ",", "which", "decreased", "to", "0.23", "and", "0.24", "after", "batch", "adjustment", "." ],
+    "entities_indices" : [ [ 8, 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "GSEA", "algorithm", ",", "an", "established", "method", "in", "pathway", "enrichment", "analysis", ",", "was", "used", "." ],
+    "entities_indices" : [ [ 1, 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "Again", ",", "fRMA", "seemed", "to", "be", "unable", "to", "adjust", "the", "combination", "among", "the", "three", "datasets.The", "results", "of", "hierarchical", "clustering", "analyses", "of", "class", "1", "before", "and", "after", "batch", "adjustments", "are", "presented", "in", "Figure", "3", "." ],
+    "entities_indices" : [ [ 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "F-2", "scores", "in", "Figure", "7a", "show", "that", "for", "both", "z-score", "and", "Combat", "merging", "procedures", "the", "results", "of", "classification", "with", "LDO", "validation", "are", "enhanced", "only", "when", "applied", "to", "the", "MBEI", "summarization.Z-score", "performed", "better", "than", "Combat", "with", "both", "summarization", "techniques", "and", "the", "worst", "results", "were", "achieved", "by", "fRMA.The", "LDO", "validation", "is", "representative", "of", "a", "clinical", "application", "where", "batches", "of", "patients", "are", "analyzed", "after", "the", "classifier", "has", "been", "built", "on", "previous", "batches", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 29, 30, 31 ] ]
+  }, {
+    "sentence_tokens" : [ "Here", ",", "the", "term", "``", "batch", "effect", "''", "refers", "to", "experimental", "variations", "of", "datasets", "generated", "by", "different", "labs.An", "Empirical", "Bayes", "method", ",", "called", "Combating", "Batch", "Effects", "when", "Combining", "Batches", "of", "Gene", "Expression", "Microarray", "Data", "(", "ComBat", ")", "and", "Z-Score", "were", "used", "to", "adjust", "the", "systematic", "difference", "of", "differently", "normalized", "data", "generated", "by", "the", "three", "different", "labs", "." ],
+    "entities_indices" : [ [ 30, 31, 32 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "used", "distant", "metastasis", "prediction", "based", "on", "SVM", "attribute", "selection", "and", "classification", "to", "three", "breast", "cancer", "data", "sets", "." ],
+    "entities_indices" : [ [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "Filtered", "datasets", "were", "also", "analyzed", "for", "statistically", "significant", "genes", "using", "the", "Significance", "Analysis", "of", "Microarray", "(", "SAM", ")", "algorithm", "[", "34", "]", "." ],
+    "entities_indices" : [ [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "To", "compare", "the", "ability", "of", "the", "different", "methods", "we", "performed", "GSEA", "algorithm", "showing", "the", "heat", "map", ",", "enrichment", "scores", "and", "corresponding", "p-values", "[", "27", "]", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "VB", ",", "PP", ",", "MA", ",", "CC", "and", "ST", "drafted", "the", "manuscript", "and", "then", "all", "the", "authors", "read", "and", "approved", "the", "final", "manuscript", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 4, 5 ], [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "Each", "learning", "set", "is", "created", "by", "using", "all", "the", "samples", "except", "one", ",", "the", "test", "set", "being", "the", "sample", "left", "out.Leave-one-out", "cross", "validation", "is", "used", "in", "the", "field", "of", "machine", "learning", "to", "determine", "how", "accurately", "a", "learning", "algorithm", "will", "be", "able", "to", "predict", "data", "that", "it", "was", "not", "trained", "on", "." ],
+    "entities_indices" : [ [ 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "number", "of", "enriched", "pathways", "found", "by", "GSEA", "is", "shown", "at", "the", "end", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "integrated", "data", "set", "consisted", "of", "111", "samples", "with", "distant", "metastases", "and", "394", "samples", "free", "of", "distant", "metastases", ",", "randomly", "divided", "into", "training", "and", "testing", "sets", "but", "respecting", "the", "proportions", "of", "the", "complete", "dataset", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "Conversely", "it", "is", "possible", "in", "the", "RMA", "data", "(", "Figure", "2a", ")", ",", "MBEI", "data", "(", "Figure", "2d", ")", "and", "fRMA", "data", "(", "Figure", "2g", ")", "." ],
+    "entities_indices" : [ [ 13, 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "With", "the", "``", "greater", "''", "alternative", ",", "every", "merging", "technique", "showed", "a", "pvalue", ">", ">", "0.05", ",", "showing", "that", "the", "number", "of", "overlapping", "genes", "between", "FRE", "and", "SAM", "is", "never", "greater", "than", "expected", "by", "chance", "." ],
+    "entities_indices" : [ [ 25, 26 ], [ 27, 28 ] ]
+  }, {
+    "sentence_tokens" : [ "It", "also", "confirms", "that", "Combat", "outperformed", "the", "other", "programs", "and", "the", "different", "pre-processing", "methods", "(", "MBEI", "and", "RMA", ")", "did", "not", "show", "significant", "variation", "giving", "rise", "to", "improvement", "of", "prediction", "." ],
+    "entities_indices" : [ [ 15, 16 ], [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "sample", "clustering", "showed", "a", "separation", "of", "the", "three", "groups", "of", "samples", "where", "adjustment", "for", "batch", "effects", "was", "not", "performed", "and", "the", "samples", "were", "only", "summarized", "by", "RMA", "(", "Figure", "3a", ")", "and", "MBEI", "(", "Figure", "3d", ")", "." ],
+    "entities_indices" : [ [ 33, 34 ] ]
+  }, {
+    "sentence_tokens" : [ "All", "probe", "sets", "were", "pre-ranked", "using", "SNR", "(", "signal", "to", "noise", "ratio", ")", "with", "respect", "to", "their", "correlation", "with", "distant", "metastasis-free", "survival.The", "signal", "to", "noise", "ratio", "(", "SNR", ")", "detects", "the", "expression", "patterns", "with", "a", "maximal", "difference", "in", "mean", "expression", "between", "two", "groups", "and", "minimal", "variation", "of", "expression", "within", "each", "group.The", "order", "probe", "set", "list", "was", "used", "as", "the", "GSEA", "input", "for", "pathway", "analysis.In", "a", "heat", "map", ",", "expression", "values", "are", "represented", "as", "colors", ",", "where", "the", "range", "of", "colors", "(", "red", ",", "pink", ",", "light", "blue", ",", "dark", "blue", ")", "shows", "the", "range", "of", "expression", "values", "(", "high", ",", "moderate", ",", "low", ",", "lowest", ")", "." ],
+    "entities_indices" : [ [ 27, 28 ], [ 59, 60 ], [ 65, 66 ] ]
+  }, {
+    "sentence_tokens" : [ "VB", ",", "ST", ",", "AP", "and", "PP", "conceived", "of", "the", "study", "and", "participated", "in", "its", "design", "and", "coordination", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "context", "of", "practical", "interest", "the", "merged", "datasets", "show", "some", "advantages", "compared", "to", "non", "merged", "datasets.Figure", "7b", "shows", "however", "that", "these", "results", "are", "comparable", "to", "those", "of", "non-", "merged", "MBEI", "datasets", "with", "stratified", "percentage", "folding", ",", "where", "obviously", "the", "classifier", "cannot", "benefit", "from", "the", "higher", "number", "of", "samples", "coming", "from", "different", "batches", "and", "the", "results", "could", "have", "been", "even", "better", "if", "the", "classifier", "had", "been", "built", "on", "a", "single", "batch", "." ],
+    "entities_indices" : [ [ 28, 29, 30, 31 ] ]
+  }, {
+    "sentence_tokens" : [ "To", "assess", "the", "quantity", "of", "batch", "effect", "and", "to", "compare", "the", "data", "merging", "methods", "Combat", ",", "ZScore", "and", "fRMA", ",", "we", "performed", "a", "novel", "hybrid", "approach", "known", "as", "principal", "variance", "component", "analysis.Principal", "Variance", "Component", "Analysis", "(", "PVCA", ")", "integrates", "two", "methods", ":", "principal", "components", "analysis", "(", "PCA", ")", "finds", "low", "dimensional", "linear", "combinations", "of", "data", "with", "maximal", "variability", "and", "variance", "components", "analysis", "(", "VCA", ")", "attributes", "and", "partitions", "variability", "into", "known", "sources", "via", "a", "classical", "random", "effects", "model.The", "first", "step", "is", "to", "obtain", "the", "covariance", "and", "correlation", "matrix", "of", "the", "microarray", "expression", "data", "matrix", "." ],
+    "entities_indices" : [ [ 46, 47 ], [ 79, 80 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "NMI", "score", "was", "higher", "for", "the", "MBEI", "dataset", "(", "0.82", ")", ",", "again", "falling", "to", "0.24", "and", "0.27", "after", "batch", "adjustment", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "comparison", "between", "several", "techniques", "to", "merge", "different", "datasets", "such", "as", "ComBat", ",", "Ratio_G", ",", "SVA", ",", "DWD", ",", "PAMR", ",", "has", "been", "carried", "out.We", "used", "three", "breast", "cancer", "microarray", "data", "sets", "from", "three", "different", "studies", "in", "which", "all", "the", "samples", "came", "from", "lymph-node-negative", "patients", "who", "had", "not", "received", "adjuvant", "systemic", "treatment", "." ],
+    "entities_indices" : [ [ 13, 14 ], [ 15, 16 ], [ 17, 18 ], [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "As", "previously", "described", ",", "two", "separated", "methods", ",", "SAM", "and", "RFE", ",", "were", "used", "to", "identify", "differentially", "expressed", "probes", "and", "to", "show", "the", "validation", "of", "RFE", "as", "feature", "selection", "in", "the", "training", "step", "of", "the", "classification.SAM", "resulted", "in", "204", ",", "289", ",", "166", ",", "197", ",", "257", ",", "197", "and", "210", "differentially", "expressed", "genes", "for", "the", "RMA", ",", "CB-RMA", ",", "ZS-RMA", ",", "MBEI", ",", "CB-MBEI", ",", "ZS-MBEI", "and", "fRMA", "respectively.Table", "2", "summarizes", "the", "results", "of", "shared", "genes", "extracted", "by", "SAM", "and", "RFE", "-", "SVM.A", "total", "of", "50", "common", "probes", "were", "found", "from", "SAM", "and", "RFE", "comparison", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 32, 33 ], [ 56, 57 ], [ 58, 59 ], [ 60, 61 ], [ 62, 63 ], [ 64, 65 ], [ 66, 67 ], [ 68, 69, 70, 71 ], [ 79, 80 ], [ 81, 82 ], [ 83, 84 ], [ 92, 93 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "study", "we", "have", "presented", "the", "results", "of", "the", "classification", "of", "breast", "cancer", "microarray", "data", ",", "with", "respect", "to", "the", "event", "of", "distant", "metastasis", "free", "survival", "in", "terms", "of", "recall", "and", "precision", "." ],
+    "entities_indices" : [ [ 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "success", "of", "batch", "effect", "removal", "was", "also", "evaluated", "using", "qualitative", "visualization", "techniques", "such", "as", "score", "plot", "of", "PCA", "and", "hierarchical", "clustering", "dendrogram.Subsequently", ",", "the", "three", "microarray", "datasets", ",", "processed", "in", "different", "ways", ",", "were", "examined", "for", "specific", "patterns", "of", "pathway", "deregulation", "with", "respect", "to", "clinical", "disease", "outcome", "." ],
+    "entities_indices" : [ [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "distinct", "clustering", "of", "the", "tumor", "groups", "did", "not", "indicate", "a", "large", "difference", "in", "gene", "expression", "patterns", "but", "only", "a", "bias", "introduced", "by", "experimental", "conditions", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 14, 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "design", "of", "the", "study", "is", "reported", "in", "Figure", "8.Three", "pre-processing", "methods", "were", "applied", "to", "microarray", "data", "to", "compute", "expression", "values", "from", "input", "CEL", "files", ":", "Robust", "Multi-array", "Average", "(", "RMA", ")", ",", "Quantile", "normalization", "-", "Model", "Based", "Expression", "Index", "(", "MBEI", ")", "and", "frozenRMA", "." ],
+    "entities_indices" : [ [ 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "approach", "utilizes", "two", "data", "analysis", "methods", ":", "first", ",", "principal", "component", "analysis", "(", "PCA", ")", "is", "used", "to", "efficiently", "reduce", "data", "dimension", "while", "maintaining", "the", "majority", "of", "the", "variability", "in", "the", "data", ",", "and", "variance", "component", "analysis", "(", "VCA", ")", "fits", "a", "mixed", "linear", "model", "using", "factors", "of", "interest", "as", "random", "(", "or", "batch", ")", "effects", "and", "other", "variables", "(", "or", "covariates", ")", "to", "estimate", "and", "partition", "the", "total", "variability.Average", "linkage", "hierarchical", "cluster", "analysis", "was", "carried", "out", "using", "Mev", "software", "with", "a", "modified", "Pearson", "correlation", "as", "a", "similarity", "metric", "." ],
+    "entities_indices" : [ [ 14, 15 ], [ 79, 80 ] ]
+  }, {
+    "sentence_tokens" : [ "Figure", "7", "also", "presents", "a", "complement", "to", "1", "of", "the", "NMI", "score", "for", "the", "clustering", "analysis", ",", "the", "number", "of", "relevant", "genes", "found", "by", "SAM", "and", "the", "-log10", "(", "pvalue", ")", "for", "the", "negative", "effect", "of", "the", "merging", "algorithm", "on", "the", "ability", "of", "RFE", "to", "select", "biologically", "relevant", "genes", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "trend", "was", "respected", "in", "the", "RMA", "-", "ComBat", "data", "(", "Figure", "2b", ")", ",", "RMA", "-", "Z-Score", "data", "(", "Figure", "2c", ")", ",", "MBEI", "-", "ComBat", "data", "(", "Figure", "2e", ")", "and", "MBEI", "-", "Z-Score", "data", "(", "Figure", "2f", ")", ",", "as", "shown", "in", "the", "graphs", "of", "the", "first", "three", "principal", "components", "." ],
+    "entities_indices" : [ [ 33, 34 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "light", "blue", "and", "dark", "blue", "bars", "reflect", "genes", "that", "are", "positively", "associated", "with", "DMFS", "(", "Disease", "Metastasis", "Free", "Survival", ")", ",", "indicating", "a", "higher", "expression", "in", "tumors", "without", "metastatic", "capability", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 17, 18 ], [ 27, 28 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "result", "indicates", "that", "the", "frozen", "RMA", "normalization", "hindered", "RFE", "from", "finding", "biologically", "relevant", "genes", ",", "although", "SAM", "reported", "a", "number", "of", "genes", "comparable", "to", "the", "other", "normalization", "methods", "." ],
+    "entities_indices" : [ [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "comparison", "within", "the", "RMA", "processed", "datasets", "shows", "that", "the", "non", "merged", "dataset", "has", "even", "higher", "performances", "than", "the", "ComBat", "and", "Z-score", "merged", "ones", "in", "stratified", "percentage", "folding.However", ",", "the", "merging", "procedure", "achieved", "some", "results", ",", "as", "shown", "by", "the", "PVCA", "and", "Clustering", "analysis", ",", "where", "both", "z-score", "and", "Combat", "datasets", "behaved", "better", "than", "non-", "merged", "ones", "." ],
+    "entities_indices" : [ [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "Processing", "Affymetrix", "expression", "arrays", "usually", "consists", "of", "three", "steps", ":", "background", "adjustment", ",", "normalization", "and", "summarization", "and", ",", "in", "this", "study", ",", "the", "data", "sets", "were", "processed", "in", "three", "ways", "(", "Table", "5", ")", "." ],
+    "entities_indices" : [ [ 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "model", ",", "composed", "of", "400", "gene", "expression", "levels", ",", "was", "then", "used", "for", "the", "training", "of", "a", "linear", "support", "vector", "machine", ",", "a", "classifier", "widely", "used", "in", "bioinformatics", "for", "its", "features", "[", "33", "]", "." ],
+    "entities_indices" : [ [ 6, 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "present", "study", "showed", "the", "difficulty", "of", "merging", "data", "from", "different", "datasets", ",", "even", "if", "they", "come", "from", "the", "same", "type", "of", "chip", ",", "due", "to", "the", "low", "accuracy", "even", "when", "using", "different", "approaches", "." ],
+    "entities_indices" : [ [ 20, 21 ], [ 22, 23 ] ]
+  } ],
+  "emptySentences" : [ ]
+}

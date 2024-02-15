@@ -1,19 +1,97 @@
-[ {
-  "sentence_tokens" : [ "Pseudomonas", "aeruginosa", "infection", "is", "the", "leading", "cause", "of", "death", "for", "Cystic", "Fibrosis", "patients", "." ],
-  "event_indices" : [ 2, 3, 4, 5, 6, 7, 8, 9 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 2, 3 ],
-  "controlled_indices" : [ 8, 9 ],
-  "trigger_indices" : [ 3, 4, 5, 6, 7 ],
-  "rule_name" : "Positive_activation_copula_1",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Our", "lab", "has", "replicated", "phenotypic", "diversification", "in", "a", "P.", "aeruginosa", "PAO1", "biofilm", "model", "of", "lung", "infection", "." ],
-  "entity_one_indices" : [ 15, 16 ],
-  "entity_two_indices" : [ 10, 11 ]
-}, {
-  "sentence_tokens" : [ "This", "gene", "is", "implicated", "in", "Pf4", "superinfectivity", ",", "which", "results", "in", "loss", "of", "host", "resistance", "and", "conversion", "from", "a", "lysogenic", "form", "to", "a", "lethal", ",", "lytic", "lifecycle.In", "total", ",", "nine", "Pf4", "haplotypes", "with", "frequencies", ">", "1", "%", "emerged", "by", "day", "11", ",", "while", "the", "original", "haplotype", "dropped", "to", "9", "%", "(", "Fig.", "1", ")", "." ],
-  "entity_one_indices" : [ 30, 31 ],
-  "entity_two_indices" : [ 5, 6 ]
-} ]
+{
+  "regulations" : [ {
+    "sentence_tokens" : [ "Pseudomonas", "aeruginosa", "infection", "is", "the", "leading", "cause", "of", "death", "for", "Cystic", "Fibrosis", "patients", "." ],
+    "event_indices" : [ 2, 3, 4, 5, 6, 7, 8, 9 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 2, 3 ],
+    "controlled_indices" : [ 8, 9 ],
+    "trigger_indices" : [ 3, 4, 5, 6, 7 ],
+    "rule_name" : "Positive_activation_copula_1",
+    "rule" : null
+  } ],
+  "hardInstances" : [ {
+    "sentence_tokens" : [ "Pseudomonas", "aeruginosa", "infection", "is", "the", "leading", "cause", "of", "death", "for", "Cystic", "Fibrosis", "patients", "." ],
+    "entities_indices" : [ [ 10, 11, 12 ] ]
+  } ],
+  "withoutRegulations" : [ {
+    "sentence_tokens" : [ "Bacteriophage", "evolution", "drives", "Pseudomonas", "aeruginosa", "PAO1", "biofilm", "diversification", "." ],
+    "entities_indices" : [ [ 3, 4, 5, 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "To", "reveal", "underlying", "genetic", "variants", ",", "we", "deep", "sequenced", "PAO1", "biofilm", "samples", "." ],
+    "entities_indices" : [ [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "GemSIM", "uses", "real", "data", "(", "e.g", ".,", "the", "PhiX", "control", ")", "to", "generate", "run", "specific", "error", "models", ",", "facilitating", "realistic", "simulation", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "gene", "is", "implicated", "in", "Pf4", "superinfectivity", ",", "which", "results", "in", "loss", "of", "host", "resistance", "and", "conversion", "from", "a", "lysogenic", "form", "to", "a", "lethal", ",", "lytic", "lifecycle.In", "total", ",", "nine", "Pf4", "haplotypes", "with", "frequencies", ">", "1", "%", "emerged", "by", "day", "11", ",", "while", "the", "original", "haplotype", "dropped", "to", "9", "%", "(", "Fig.", "1", ")", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 30, 31 ] ]
+  }, {
+    "sentence_tokens" : [ "These", "results", "suggest", "superinfective", "phage", "haplotype", "emergence", "drives", "diversification", "within", "PAO1", "biofilms", "." ],
+    "entities_indices" : [ [ 10, 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "Sequencing", "was", "also", "simulated", "from", "computer", "generated", "PAO1", "haplotypes", "with", "our", "program", "GemSIM", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "(", "ShoRAH", "'", "s", "error-correction", "algorithm", "can", "accurately", "identify", "variants", "in", "high", "diversity", "areas", "with", "frequencies", "down", "to", "0.1", "%", "." ],
+    "entities_indices" : [ [ 1, 2, 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "These", "SNPs", "may", "reflect", "early", "biofilm", "lifestyle", "adaptation.In", "contrast", "to", "the", "negligible", "genetic", "diversity", "of", "PAO1", ",", "its", "associated", "bacteriophage", "Pf4", "revealed", "ongoing", "diversification", ",", "characterised", "by", "an", "increase", "in", "Shannon", "'", "s", "entropy", "between", "days", "four", "and", "11", "and", "an", "explosion", "in", "phage", "population", "size", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 15, 16 ], [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "Both", "were", "within", "a", "large", "hypothetical", "outer-membrane", "protein", "postulated", "to", "be", "involved", "in", "biofilm", "formation", "and", "antibiotic", "resistance", "." ],
+    "entities_indices" : [ [ 13, 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "DNA", "was", "extracted", "from", "PAO1", "biofilm", "samples", "harvested", "after", "four", "and", "11", "days", "of", "growth", ",", "and", "Illumina", "sequenced", "to", ">", "1000x", "coverage", "." ],
+    "entities_indices" : [ [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "Our", "lab", "has", "replicated", "phenotypic", "diversification", "in", "a", "P.", "aeruginosa", "PAO1", "biofilm", "model", "of", "lung", "infection", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "Surprisingly", ",", "the", "PAO1", "genome", "contained", "only", "two", "SNPs", ",", "with", "frequencies", "around", "10", "%", "." ],
+    "entities_indices" : [ [ 3, 4 ] ]
+  } ],
+  "emptySentences" : [ {
+    "sentence_tokens" : [ "Bacteriophage", "evolution", "drives", "Pseudomonas", "aeruginosa", "PAO1", "biofilm", "diversification", "." ]
+  }, {
+    "sentence_tokens" : [ "Background", "." ]
+  }, {
+    "sentence_tokens" : [ "Antibiotic", "resistance", "is", "rife", ",", "possibly", "due", "to", "high", "colonising", "population", "diversity", "." ]
+  }, {
+    "sentence_tokens" : [ "Our", "lab", "has", "replicated", "phenotypic", "diversification", "in", "a", "P.", "aeruginosa", "PAO1", "biofilm", "model", "of", "lung", "infection", "." ]
+  }, {
+    "sentence_tokens" : [ "To", "reveal", "underlying", "genetic", "variants", ",", "we", "deep", "sequenced", "PAO1", "biofilm", "samples", "." ]
+  }, {
+    "sentence_tokens" : [ "Our", "analysis", "demonstrates", "several", "techniques", "for", "extracting", "meaningful", "biological", "information", "from", "error-prone", "sequencing", "data", "." ]
+  }, {
+    "sentence_tokens" : [ "Materials", "and", "methods", "." ]
+  }, {
+    "sentence_tokens" : [ "DNA", "was", "extracted", "from", "PAO1", "biofilm", "samples", "harvested", "after", "four", "and", "11", "days", "of", "growth", ",", "and", "Illumina", "sequenced", "to", ">", "1000x", "coverage", "." ]
+  }, {
+    "sentence_tokens" : [ "Sequencing", "was", "also", "simulated", "from", "computer", "generated", "PAO1", "haplotypes", "with", "our", "program", "GemSIM", "." ]
+  }, {
+    "sentence_tokens" : [ "GemSIM", "uses", "real", "data", "(", "e.g", ".,", "the", "PhiX", "control", ")", "to", "generate", "run", "specific", "error", "models", ",", "facilitating", "realistic", "simulation", "." ]
+  }, {
+    "sentence_tokens" : [ "After", "optimisation", ",", "the", "program", "VarScan", "{", "Koboldt", ",", "2009", "#", "48", "}", "accurately", "detected", "SNPs", "in", "simulated", "data", "with", "frequencies", "down", "to", "5", "%", "." ]
+  }, {
+    "sentence_tokens" : [ "VarScan", "was", "then", "used", "to", "identify", "SNPs", "with", "frequency", ">", "=", "5", "%", "in", "the", "biofilm", "data.In", "high", "diversity", "regions", ",", "haplotypes", "were", "reconstructed", "using", "bayesian", "statistical", "techniques", "implemented", "in", "the", "program", "ShoRAH", "{", "Zagordi", ",", "2010", "#", "49", "}", ",", "and", "validated", "through", "analysis", "of", "individual", "reads", "." ]
+  }, {
+    "sentence_tokens" : [ "(", "ShoRAH", "'", "s", "error-correction", "algorithm", "can", "accurately", "identify", "variants", "in", "high", "diversity", "areas", "with", "frequencies", "down", "to", "0.1", "%", "." ]
+  }, {
+    "sentence_tokens" : [ ")", "Results", "and", "conclusions", "." ]
+  }, {
+    "sentence_tokens" : [ "Surprisingly", ",", "the", "PAO1", "genome", "contained", "only", "two", "SNPs", ",", "with", "frequencies", "around", "10", "%", "." ]
+  }, {
+    "sentence_tokens" : [ "Both", "were", "within", "a", "large", "hypothetical", "outer-membrane", "protein", "postulated", "to", "be", "involved", "in", "biofilm", "formation", "and", "antibiotic", "resistance", "." ]
+  }, {
+    "sentence_tokens" : [ "Both", "SNPs", "were", "silent", ";", "however", "converted", "rare", "codons", "to", "more", "common", "ones", ",", "potentially", "increasing", "expression", "." ]
+  }, {
+    "sentence_tokens" : [ "These", "SNPs", "may", "reflect", "early", "biofilm", "lifestyle", "adaptation.In", "contrast", "to", "the", "negligible", "genetic", "diversity", "of", "PAO1", ",", "its", "associated", "bacteriophage", "Pf4", "revealed", "ongoing", "diversification", ",", "characterised", "by", "an", "increase", "in", "Shannon", "'", "s", "entropy", "between", "days", "four", "and", "11", "and", "an", "explosion", "in", "phage", "population", "size", "." ]
+  }, {
+    "sentence_tokens" : [ "All", "phage", "SNPs", "were", "within", "or", "upstream", "from", "the", "putative", "Repressor", "C", "gene", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "gene", "is", "implicated", "in", "Pf4", "superinfectivity", ",", "which", "results", "in", "loss", "of", "host", "resistance", "and", "conversion", "from", "a", "lysogenic", "form", "to", "a", "lethal", ",", "lytic", "lifecycle.In", "total", ",", "nine", "Pf4", "haplotypes", "with", "frequencies", ">", "1", "%", "emerged", "by", "day", "11", ",", "while", "the", "original", "haplotype", "dropped", "to", "9", "%", "(", "Fig.", "1", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "These", "results", "suggest", "superinfective", "phage", "haplotype", "emergence", "drives", "diversification", "within", "PAO1", "biofilms", "." ]
+  } ]
+}

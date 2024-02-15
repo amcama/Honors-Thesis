@@ -1,121 +1,656 @@
-[ {
-  "sentence_tokens" : [ "In", "COVID-19", ",", "it", "is", "speculated", "that", "SARS-CoV-2", "may", "inhibit", "hematopoiesis", "in", "the", "bone", "marrow", ",", "decreasing", "platelet", "production", "[", "62", "]", "." ],
-  "event_indices" : [ 7, 8, 9, 10, 11 ],
-  "type" : "Negative_activation",
-  "polarity" : false,
-  "controller_indices" : [ 7, 8 ],
-  "controlled_indices" : [ 10, 11 ],
-  "trigger_indices" : [ 9, 10 ],
-  "rule_name" : "Negative_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "In", "COVID-19", ",", "it", "is", "speculated", "that", "SARS-CoV-2", "may", "inhibit", "hematopoiesis", "in", "the", "bone", "marrow", ",", "decreasing", "platelet", "production", "[", "62", "]", "." ],
-  "event_indices" : [ 3, 4, 5, 6, 7, 8, 9, 10, 11 ],
-  "type" : "Negative_activation",
-  "polarity" : false,
-  "controller_indices" : [ 3, 4 ],
-  "controlled_indices" : [ 10, 11 ],
-  "trigger_indices" : [ 9, 10 ],
-  "rule_name" : "Negative_activation_syntax_1_verb, pronominalMatch",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "The", "same", "authors", "also", "reported", "that", "administering", "low", "molecular", "weight", "heparin", "in", "severe", "patients", "infected", "with", "SARS-CoV-2", "with", "elevated", "D-dimer", "or", "those", "with", "sepsis", "induced", "disseminated", "intravascular", "coagulation", "was", "significantly", "associated", "with", "improved", "survival", "." ],
-  "event_indices" : [ 23, 24, 25, 26, 27, 28 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 23, 24 ],
-  "controlled_indices" : [ 25, 26, 27, 28 ],
-  "trigger_indices" : [ 24, 25 ],
-  "rule_name" : "Positive_early_activation",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "This", "phenomenon", ",", "combined", "with", "sepsis", "induced", "disseminated", "intravascular", "coagulation", ",", "may", "justify", "the", "occurrence", "of", "thrombocytopenia", "in", "a", "subgroup", "of", "patients", "with", "COVID-19", "[", "63", "]", "." ],
-  "event_indices" : [ 5, 6, 7, 8, 9, 10 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 5, 6 ],
-  "controlled_indices" : [ 7, 8, 9, 10 ],
-  "trigger_indices" : [ 6, 7 ],
-  "rule_name" : "Positive_early_activation",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "To", "describe", "the", "laboratory", "parameters", "and", "biomarkers", "of", "the", "cytokine", "storm", "syndrome", "associated", "with", "severe", "and", "fatal", "COVID-19", "cases", "." ],
-  "entity_one_indices" : [ 17, 18 ],
-  "entity_two_indices" : [ 11, 12 ]
-}, {
-  "sentence_tokens" : [ "A", "search", "with", "standardized", "descriptors", "and", "synonyms", "was", "performed", "on", "November", "28", "th", ",", "2020", "of", "the", "MEDLINE", ",", "EMBASE", ",", "Cochrane", "Central", "Register", "of", "Controlled", "Trials", ",", "ClinicalTrials.gov", ",", "LILACS", ",", "and", "IBECS", "to", "identify", "studies", "of", "interest", "." ],
-  "entity_one_indices" : [ 19, 20 ],
-  "entity_two_indices" : [ 17, 18 ]
-}, {
-  "sentence_tokens" : [ "Eligible", "studies", "were", "those", "including", "laboratory", "parameters--including", "serum", "interleukin-6", "levels--from", "mild", ",", "moderate", ",", "or", "severe", "COVID-19", "cases", "." ],
-  "entity_one_indices" : [ 16, 17 ],
-  "entity_two_indices" : [ 8, 9 ]
-}, {
-  "sentence_tokens" : [ "As", "of", "March", "11", ",", "COVID-19", "had", "been", "detected", "in", "221", "countries", ",", "with", "117,799,584", "confirmed", "cases", "and", "more", "than", "2,615,018", "deaths", "[", "1", "]", "." ],
-  "entity_one_indices" : [ 5, 6 ],
-  "entity_two_indices" : [ 2, 3, 4 ]
-}, {
-  "sentence_tokens" : [ "Accumulating", "evidence", "suggests", "that", "a", "subgroup", "of", "patients", "with", "severe", "COVID-19", "might", "have", "cytokine", "storm", "syndrome", "(", "CSS", ")", "." ],
-  "entity_one_indices" : [ 15, 16 ],
-  "entity_two_indices" : [ 10, 11 ]
-}, {
-  "sentence_tokens" : [ "IL-6", "release", "instigates", "an", "amplification", "cascade", "that", "results", "in", "cis", "signaling", "with", "TH17", "differentiation", "and", "trans-signaling", "in", "many", "cell", "types", ",", "such", "as", "endothelial", "cells", "[", "3", ",", "5", "]", "." ],
-  "entity_one_indices" : [ 13, 14 ],
-  "entity_two_indices" : [ 0, 1 ]
-}, {
-  "sentence_tokens" : [ "We", "searched", "MEDLINE", ",", "EMBASE", ",", "Cochrane", "Central", "Register", "of", "Controlled", "Trials", "(", "CENTRAL", ")", ",", "LILACS", ",", "and", "IBECS", "using", "relevant", "descriptors", "and", "synonyms", ",", "adapting", "the", "search", "to", "the", "specifics", "of", "each", "database", "(", "S1", "Table", ")", "." ],
-  "entity_one_indices" : [ 4, 5 ],
-  "entity_two_indices" : [ 2, 3 ]
-}, {
-  "sentence_tokens" : [ "Nineteen", "studies", "assessed", "fatal", "and", "non", "fatal", "groups", "of", "patients", "with", "COVID-19", "and", "reported", "IL-6", "." ],
-  "entity_one_indices" : [ 14, 15 ],
-  "entity_two_indices" : [ 11, 12 ]
-}, {
-  "sentence_tokens" : [ "A", "cytokine", "profile", "resembling", "secondary", "hemophagocytic", "lymphohistiocytosis", "is", "associated", "with", "severe", "COVID-19", "(", "2", "-", "4", ",", "[", "50", "]", "." ],
-  "entity_one_indices" : [ 11, 12 ],
-  "entity_two_indices" : [ 5, 6, 7 ]
-}, {
-  "sentence_tokens" : [ "Anemia", "occurs", "in", "approximately", "80", "%", "of", "patients", "with", "sHLH", ",", "plays", "an", "important", "role", "in", "its", "pathophysiology", ",", "and", "can", "be", "a", "cause", "of", "poor", "prognosis", "on", "these", "patients", "[", "57", "]", "." ],
-  "entity_one_indices" : [ 9, 10 ],
-  "entity_two_indices" : [ 0, 1 ]
-}, {
-  "sentence_tokens" : [ "Our", "data", "indicate", "that", "the", "increase", "in", "white", "blood", "cells", "is", "associated", "with", "elevated", "neutrophils", ",", "and", "this", "finding", "may", "signify", "clinical", "deterioration", "and", "increased", "risk", "of", "a", "poor", "outcome.Despite", "an", "increase", "in", "white", "blood", "cell", "count", ",", "we", "found", "that", "lymphocytes", "were", "significantly", "decreased", "in", "patients", "with", "severe", "COVID-19", "." ],
-  "entity_one_indices" : [ 49, 50 ],
-  "entity_two_indices" : [ 21, 22, 23 ]
-}, {
-  "sentence_tokens" : [ "This", "study", "concluded", "that", "the", "cytokine", "storm", "is", "associated", "with", "COVID-19", "severity", ",", "likely", "through", "increased", "pulmonary", "pathology", ",", "T", "cell", "depletion", ",", "and", "CD4+", "T", "cell", "dysfunction.Our", "meta-analysis", "also", "found", "an", "association", "between", "lymphopenia", "and", "higher", "mortality", "." ],
-  "entity_one_indices" : [ 34, 35 ],
-  "entity_two_indices" : [ 10, 11 ]
-}, {
-  "sentence_tokens" : [ "Wang", "F", "et", "al.", "[", "60", "]", "assessed", "the", "levels", "of", "peripheral", "lymphocyte", "subsets", "by", "flow", "cytometry", "in", "60", "hospitalized", "patients", "with", "COVID-19", "before", "and", "after", "treatment", "and", "their", "association", "with", "clinical", "characteristics", "and", "treatment", "efficacy", "." ],
-  "entity_one_indices" : [ 22, 23 ],
-  "entity_two_indices" : [ 0, 1, 2, 3, 4 ]
-}, {
-  "sentence_tokens" : [ "The", "authors", "reported", "that", "total", "lymphocytes", ",", "CD4+", "T", "cells", ",", "CD8+", "T", "cells", ",", "B", "cells", ",", "and", "natural", "killer", "(", "NK", ")", "cells", "were", "decreased", "among", "patients", "with", "COVID-19", ",", "more", "so", "in", "severe", "cases", "than", "in", "mild", "cases", "." ],
-  "entity_one_indices" : [ 30, 31 ],
-  "entity_two_indices" : [ 20, 21 ]
-}, {
-  "sentence_tokens" : [ "In", "their", "analysis", ",", "the", "subsets", "of", "lymphocytes", "showed", "a", "significant", "association", "with", "inflammatory", "status", "in", "COVID-19", ",", "especially", "CD8+", "T", "cells", "and", "CD4", "+/CD8+", "ratio.Thrombocytopenia", "is", "a", "recurrent", "complication", "among", "patients", "requiring", "intensive", "care", ",", "regardless", "of", "the", "cause", "of", "hospitalization", ",", "and", "represents", "a", "marker", "of", "poor", "prognosis", "[", "61", "]", "." ],
-  "entity_one_indices" : [ 23, 24 ],
-  "entity_two_indices" : [ 16, 17 ]
-}, {
-  "sentence_tokens" : [ "However", ",", "its", "levels", "increase", "significantly", "in", "cases", "of", "generalized", "infection", ",", "mainly", "bacterial", "or", "fungal", "[", "67", "]", "." ],
-  "entity_one_indices" : [ 10, 11 ],
-  "entity_two_indices" : [ 2, 3 ]
-}, {
-  "sentence_tokens" : [ "Regarding", "immunological", "biomarkers", ",", "we", "believe", "that", "both", "parameters", "can", "be", "used", "as", "red", "flags", "for", "severe", "and", "fatal", "cases", "of", "COVID-19", "infection", "at", "hospital", "admission", "." ],
-  "entity_one_indices" : [ 22, 23 ],
-  "entity_two_indices" : [ 21, 22 ]
-}, {
-  "sentence_tokens" : [ "This", "review", "also", "confirms", "that", "certain", "laboratory", "tests", "that", "are", "part", "of", "routine", "care", "have", "also", "been", "reliably", "associated", "with", "severe", "and", "fatal", "cases", "of", "COVID-19", ",", "and", "including", "serum", "IL-6", "could", "be", "relevant", "for", "prognosis", "but", "could", "also", "improve", "therapeutic", "decision", "making", "." ],
-  "entity_one_indices" : [ 30, 31 ],
-  "entity_two_indices" : [ 25, 26 ]
-}, {
-  "sentence_tokens" : [ "We", "believe", "that", "IL-6", "acts", "as", "a", "major", "pro", "inflammatory", "mediator", "for", "the", "acute", "severe", "systemic", "inflammatory", "response", ",", "leading", "to", "a", "wide", "range", "of", "local", "and", "systemic", "changes", ",", "leucocytes", "recruitment", "and", "activation", "and", "hemodynamic", "effects", "." ],
-  "entity_one_indices" : [ 16, 17, 18 ],
-  "entity_two_indices" : [ 3, 4 ]
-}, {
-  "sentence_tokens" : [ "Thus", ",", "unexplored", "pathophysiological", "mechanisms", "may", "justify", "this", "heterogeneity", "and", "those", "results.Systematic", "reviews", "and", "meta-analysis", "of", "prospective", "studies", ",", "with", "standardized", "COVID-19", "severity", "criterion", "in", "a", "more", "global", "population", "sample", ",", "could", "be", "the", "key", "to", "better", "understanding", "the", "cytokine", "storm", "influences", "in", "patients", "infected", "with", "SARS-CoV-2", "and", "their", "outcomes", "." ],
-  "entity_one_indices" : [ 46, 47 ],
-  "entity_two_indices" : [ 21, 22 ]
-} ]
+{
+  "regulations" : [ {
+    "sentence_tokens" : [ "In", "COVID-19", ",", "it", "is", "speculated", "that", "SARS-CoV-2", "may", "inhibit", "hematopoiesis", "in", "the", "bone", "marrow", ",", "decreasing", "platelet", "production", "[", "62", "]", "." ],
+    "event_indices" : [ 7, 8, 9, 10, 11 ],
+    "type" : "Negative_activation",
+    "polarity" : false,
+    "controller_indices" : [ 7, 8 ],
+    "controlled_indices" : [ 10, 11 ],
+    "trigger_indices" : [ 9, 10 ],
+    "rule_name" : "Negative_activation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "In", "COVID-19", ",", "it", "is", "speculated", "that", "SARS-CoV-2", "may", "inhibit", "hematopoiesis", "in", "the", "bone", "marrow", ",", "decreasing", "platelet", "production", "[", "62", "]", "." ],
+    "event_indices" : [ 3, 4, 5, 6, 7, 8, 9, 10, 11 ],
+    "type" : "Negative_activation",
+    "polarity" : false,
+    "controller_indices" : [ 3, 4 ],
+    "controlled_indices" : [ 10, 11 ],
+    "trigger_indices" : [ 9, 10 ],
+    "rule_name" : "Negative_activation_syntax_1_verb, pronominalMatch",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "The", "same", "authors", "also", "reported", "that", "administering", "low", "molecular", "weight", "heparin", "in", "severe", "patients", "infected", "with", "SARS-CoV-2", "with", "elevated", "D-dimer", "or", "those", "with", "sepsis", "induced", "disseminated", "intravascular", "coagulation", "was", "significantly", "associated", "with", "improved", "survival", "." ],
+    "event_indices" : [ 23, 24, 25, 26, 27, 28 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 23, 24 ],
+    "controlled_indices" : [ 25, 26, 27, 28 ],
+    "trigger_indices" : [ 24, 25 ],
+    "rule_name" : "Positive_early_activation",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "This", "phenomenon", ",", "combined", "with", "sepsis", "induced", "disseminated", "intravascular", "coagulation", ",", "may", "justify", "the", "occurrence", "of", "thrombocytopenia", "in", "a", "subgroup", "of", "patients", "with", "COVID-19", "[", "63", "]", "." ],
+    "event_indices" : [ 5, 6, 7, 8, 9, 10 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 5, 6 ],
+    "controlled_indices" : [ 7, 8, 9, 10 ],
+    "trigger_indices" : [ 6, 7 ],
+    "rule_name" : "Positive_early_activation",
+    "rule" : null
+  } ],
+  "hardInstances" : [ {
+    "sentence_tokens" : [ "In", "COVID-19", ",", "it", "is", "speculated", "that", "SARS-CoV-2", "may", "inhibit", "hematopoiesis", "in", "the", "bone", "marrow", ",", "decreasing", "platelet", "production", "[", "62", "]", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "COVID-19", ",", "it", "is", "speculated", "that", "SARS-CoV-2", "may", "inhibit", "hematopoiesis", "in", "the", "bone", "marrow", ",", "decreasing", "platelet", "production", "[", "62", "]", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "same", "authors", "also", "reported", "that", "administering", "low", "molecular", "weight", "heparin", "in", "severe", "patients", "infected", "with", "SARS-CoV-2", "with", "elevated", "D-dimer", "or", "those", "with", "sepsis", "induced", "disseminated", "intravascular", "coagulation", "was", "significantly", "associated", "with", "improved", "survival", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "phenomenon", ",", "combined", "with", "sepsis", "induced", "disseminated", "intravascular", "coagulation", ",", "may", "justify", "the", "occurrence", "of", "thrombocytopenia", "in", "a", "subgroup", "of", "patients", "with", "COVID-19", "[", "63", "]", "." ],
+    "entities_indices" : [ [ 16, 17 ], [ 23, 24 ] ]
+  } ],
+  "withoutRegulations" : [ {
+    "sentence_tokens" : [ "Regarding", "immunological", "biomarkers", ",", "we", "believe", "that", "both", "parameters", "can", "be", "used", "as", "red", "flags", "for", "severe", "and", "fatal", "cases", "of", "COVID-19", "infection", "at", "hospital", "admission", "." ],
+    "entities_indices" : [ [ 21, 22 ], [ 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "cytokine", "profile", "resembling", "secondary", "hemophagocytic", "lymphohistiocytosis", "is", "associated", "with", "severe", "COVID-19", "(", "2", "-", "4", ",", "[", "50", "]", "." ],
+    "entities_indices" : [ [ 5, 6, 7 ], [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "Biomarkers", "of", "cytokine", "storm", "as", "red", "flags", "for", "severe", "and", "fatal", "COVID-19", "cases", ":", "A", "living", "systematic", "review", "and", "meta-analysis", "." ],
+    "entities_indices" : [ [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "no", "difference", "in", "the", "statistical", "heterogeneity", "across", "studies", "could", "be", "detected", "in", "this", "sensitivity", "analysis", ",", "except", "for", "d-dimer", "[", "MD", "5.94", ";", "CI", "5.16", "to", "6.73", ";", "N", "=", "2,459", ";", "I", "=", "0.19", "]", "and", "creatinine", "[", "MD", "19.44", ";", "CI", "16.79", "to", "22.10", ";", "N", "=", "1,689", ";", "I", "=", "0.49", "]", "in", "the", "mortality", "group", "." ],
+    "entities_indices" : [ [ 22, 23 ], [ 25, 26 ], [ 39, 40 ], [ 41, 42 ], [ 44, 45 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "study", "concluded", "that", "the", "cytokine", "storm", "is", "associated", "with", "COVID-19", "severity", ",", "likely", "through", "increased", "pulmonary", "pathology", ",", "T", "cell", "depletion", ",", "and", "CD4+", "T", "cell", "dysfunction.Our", "meta-analysis", "also", "found", "an", "association", "between", "lymphopenia", "and", "higher", "mortality", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 34, 35 ] ]
+  }, {
+    "sentence_tokens" : [ "Data", "synthesis", "." ],
+    "entities_indices" : [ [ 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "meta-analysis", "was", "performed", ",", "with", "a", "calculation", "of", "mean", "difference", "(", "MD", ")", "and", "95", "%", "confidence", "interval", "(", "95", "%", "CI", ")", "for", "each", "of", "the", "laboratory", "parameters", "related", "to", "patients", "with", "confirmed", "COVID-19", "with", "or", "without", "severe", "disease", "and", "non", "survivors", "or", "survivors", "." ],
+    "entities_indices" : [ [ 12, 13 ], [ 22, 23 ], [ 35, 36 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "review", "also", "confirms", "that", "certain", "laboratory", "tests", "that", "are", "part", "of", "routine", "care", "have", "also", "been", "reliably", "associated", "with", "severe", "and", "fatal", "cases", "of", "COVID-19", ",", "and", "including", "serum", "IL-6", "could", "be", "relevant", "for", "prognosis", "but", "could", "also", "improve", "therapeutic", "decision", "making", "." ],
+    "entities_indices" : [ [ 25, 26 ], [ 30, 31 ] ]
+  }, {
+    "sentence_tokens" : [ "As", "this", "study", "is", "underpowered", "to", "investigate", "the", "underlying", "mechanism", "of", "these", "inflammatory", "markers", "with", "the", "severity", "of", "COVID-19", ",", "further", "studies", "aiming", "at", "analyzing", "pathophysiological", "mechanisms", "of", "COVID-19", "are", "needed.We", "also", "examined", "evidence", "of", "publication", "bias", "in", "our", "meta-analyses", ",", "and", "the", "presence", "of", "non", "reporting", "bias", "was", "suggested", "in", "the", "meta-analysis", "on", "the", "association", "of", "IL-6", "with", "severity", "." ],
+    "entities_indices" : [ [ 18, 19 ], [ 28, 29 ], [ 57, 58 ] ]
+  }, {
+    "sentence_tokens" : [ "Elevated", "serum", "C-reactive", "protein", "(", "CRP", ")", ",", "a", "protein", "whose", "expression", "is", "driven", "by", "IL-6", ",", "is", "also", "a", "biomarker", "of", "severe", "clinical", "manifestations", "of", "COVID-19", "." ],
+    "entities_indices" : [ [ 2, 3, 4 ], [ 5, 6 ], [ 15, 16 ], [ 20, 21 ], [ 26, 27 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "infection", "results", "in", "monocyte", ",", "macrophage", ",", "and", "dendritic", "cell", "activation", "." ],
+    "entities_indices" : [ [ 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "Anemia", "occurs", "in", "approximately", "80", "%", "of", "patients", "with", "sHLH", ",", "plays", "an", "important", "role", "in", "its", "pathophysiology", ",", "and", "can", "be", "a", "cause", "of", "poor", "prognosis", "on", "these", "patients", "[", "57", "]", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "systematic", "review", ",", "procalcitonin", "levels", "increased", "significantly", "in", "non", "survivors", "but", "only", "showed", "a", "small", "effect", "size", "in", "studies", "comparing", "severe", "versus", "non", "severe", "patients", "." ],
+    "entities_indices" : [ [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "believe", "that", "IL-6", "acts", "as", "a", "major", "pro", "inflammatory", "mediator", "for", "the", "acute", "severe", "systemic", "inflammatory", "response", ",", "leading", "to", "a", "wide", "range", "of", "local", "and", "systemic", "changes", ",", "leucocytes", "recruitment", "and", "activation", "and", "hemodynamic", "effects", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 16, 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "clinical", "spectrum", "of", "this", "disease", "ranges", "from", "asymptomatic", "cases", "to", "severe", "pulmonary", "involvement", "with", "respiratory", "failure", ",", "systemic", "involvement", "with", "sepsis", ",", "septic", "shock", ",", "and", "multiple", "organ", "failure", "[", "2", "]", "." ],
+    "entities_indices" : [ [ 21, 22 ], [ 23, 24, 25 ], [ 27, 28, 29, 30 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "pooled", "analysis", "of", "nine", "studies", "showed", "that", "patients", "with", "COVID-19", "who", "did", "not", "survive", "also", "had", "higher", "levels", "of", "ferritin", "[", "MD", "853.43", ";", "95", "%", "CI", "601.20", "to", "1105.67", ";", "N", "=", "2,088", "]", "(", "Fig", "2C", ")", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 20, 21 ], [ 22, 23 ], [ 27, 28 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "have", "therefore", "designed", "and", "carried", "out", "this", "living", "systematic", "review", "to", "guide", "the", "evaluation", "and", "early", "recognition", "of", "CSS", "by", ":", "Identifying", "the", "laboratory", "parameters", "correlated", "with", "severe", "and", "fatal", "cases", "of", "COVID-19", ";", "Estimating", "the", "role", "of", "IL-6", "and", "ferritin", "as", "potential", "biomarkers", "related", "to", "cytokine", "storm", "development", "." ],
+    "entities_indices" : [ [ 33, 34 ], [ 39, 40 ], [ 41, 42 ] ]
+  }, {
+    "sentence_tokens" : [ "During", "the", "progression", "of", "the", "phases", ",", "as", "mentioned", "by", "Lin", "L", "et", "al.", "[", "54", "]", ",", "cells", "T", "and", "B", "reduce", ",", "while", "inflammatory", "cytokines", "and", "D-Dimer", "increase", "in", "severe", "patients", "." ],
+    "entities_indices" : [ [ 10, 11, 12, 13, 14, 15, 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "Our", "meta-analysis", "demonstrated", "that", "thrombocytopenia", "could", "be", "a", "predictor", "of", "severity", "and", "mortality", "in", "patients", "with", "COVID-19.Many", "inflammatory", "factors", "can", "cause", "systemic", "damage", "and", "multi-organ", "failure", "." ],
+    "entities_indices" : [ [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "Laboratory", "parameters", "in", "severe", "versus", "non", "severe", "patients", "and", "non", "surviving", "versus", "surviving", "patients", "with", "COVID-19", "are", "described", "in", "Table", "3", "." ],
+    "entities_indices" : [ [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "present", "systematic", "review", ",", "increased", "levels", "of", "D-dimer", "at", "hospital", "admission", "could", "be", "a", "good", "predictor", "of", "severe", "and", "fatal", "cases", "of", "COVID-19", "." ],
+    "entities_indices" : [ [ 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "Wang", "F", "et", "al.", "[", "60", "]", "assessed", "the", "levels", "of", "peripheral", "lymphocyte", "subsets", "by", "flow", "cytometry", "in", "60", "hospitalized", "patients", "with", "COVID-19", "before", "and", "after", "treatment", "and", "their", "association", "with", "clinical", "characteristics", "and", "treatment", "efficacy", "." ],
+    "entities_indices" : [ [ 0, 1, 2, 3, 4 ], [ 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "authors", "reported", "that", "total", "lymphocytes", ",", "CD4+", "T", "cells", ",", "CD8+", "T", "cells", ",", "B", "cells", ",", "and", "natural", "killer", "(", "NK", ")", "cells", "were", "decreased", "among", "patients", "with", "COVID-19", ",", "more", "so", "in", "severe", "cases", "than", "in", "mild", "cases", "." ],
+    "entities_indices" : [ [ 20, 21 ], [ 30, 31 ] ]
+  }, {
+    "sentence_tokens" : [ "Lymphopenia", ",", "thrombocytopenia", "and", "higher", "levels", "of", "IL-6", ",", "ferritin", ",", "D-dimer", ",", "aspartate", "aminotransferase", ",", "lactate", "dehydrogenase", ",", "CRP", ",", "procalcitonin", ",", "creatinine", ",", "neutrophils", "and", "leukocytes", "were", "associated", "with", "severe", "and", "fatal", "cases", "of", "COVID-19", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 2, 3 ], [ 7, 8 ], [ 9, 10 ], [ 11, 12 ], [ 16, 17 ], [ 19, 20 ], [ 21, 22 ], [ 23, 24 ], [ 36, 37 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "living", "systematic", "review", "with", "meta-analysis", ",", "a", "clear", "pattern", "of", "hematological", ",", "biochemical", ",", "inflammatory", ",", "and", "immune", "biomarker", "abnormalities", "could", "be", "found", "between", "patients", "with", "or", "without", "severe", "disease", "." ],
+    "entities_indices" : [ [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "Recognizing", "and", "treating", "CSS", "in", "a", "timely", "fashion", "is", "of", "paramount", "importance", ",", "as", "this", "information", "could", "lead", "to", "better", "outcomes", "in", "patients", "who", "present", "this", "complication", "as", "part", "of", "their", "clinical", "course", "of", "COVID-19", "." ],
+    "entities_indices" : [ [ 34, 35 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "participants", "(", "n", "=", "9,542", ")", "all", "received", "a", "positive", "COVID-19", "diagnosis", "through", "2019-nCoV", "RNA", "detection", "by", "SARS-CoV-2", "real-time", "polymerase", "chain", "reaction", "nasopharyngeal", "swab", "(", "RT-PCR", ")", "or", "specific", "virus", "IgM", "and", "IgG", "antibodies", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 18, 19 ], [ 26, 27 ], [ 31, 32 ], [ 33, 34, 35 ] ]
+  }, {
+    "sentence_tokens" : [ "Accumulating", "evidence", "suggests", "that", "a", "subgroup", "of", "patients", "with", "severe", "COVID-19", "might", "have", "cytokine", "storm", "syndrome", "(", "CSS", ")", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "our", "meta-analysis", ",", "the", "findings", "clarify", "the", "role", "of", "ferritin", "in", "the", "assessment", "of", "the", "systemic", "hyper-inflammation", "and", "can", "explain", "the", "relationship", "between", "hyperferritinemia", "and", "high", "levels", "of", "IL-6", "among", "adult", "patients", "with", "COVID-19", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 29, 30 ], [ 34, 35 ] ]
+  }, {
+    "sentence_tokens" : [ "Pooled", "results", "from", "twenty-two", "studies", "of", "both", "severe", "and", "non", "severe", "cases", "revealed", "higher", "levels", "of", "Il-6", "in", "patients", "with", "severe", "COVID-19", "in", "comparison", "to", "the", "group", "of", "mild", "COVID-19", "cases", "[", "MD", "28.99", ";", "95", "%", "CI", "18.24", "to", "39.75", ";", "N", "=", "4,861", "]", "(", "Fig", "2B", ")", "." ],
+    "entities_indices" : [ [ 16, 17 ], [ 21, 22 ], [ 29, 30 ], [ 32, 33 ], [ 37, 38 ] ]
+  }, {
+    "sentence_tokens" : [ "There", "was", "no", "change", "in", "the", "direction", "of", "the", "effect", "of", "the", "meta-analysis", "after", "their", "exclusion", "from", "this", "calculation", "[", "MD", "75.15", ";", "95", "%", "CI", "56.04", "to", "94.26", ";", "N", "=", "4,313", "]", "and", "[", "MD", "33.01", ";", "95", "%", "CI", "21.79", "to", "44.24", ";", "N", "=", "4,200", "]", ",", "respectively", "." ],
+    "entities_indices" : [ [ 20, 21 ], [ 25, 26 ], [ 36, 37 ], [ 41, 42 ] ]
+  }, {
+    "sentence_tokens" : [ "Yuan", "X", "et", "al.", "[", "56", "]", "demonstrated", "that", "patients", "with", "severe", "or", "critical", "COVID-19", "had", "decreased", "red", "blood", "cells", "compared", "to", "non", "severe", "patients", "." ],
+    "entities_indices" : [ [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "its", "levels", "increase", "significantly", "in", "cases", "of", "generalized", "infection", ",", "mainly", "bacterial", "or", "fungal", "[", "67", "]", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "Most", "studies", "showed", "a", "higher", "prevalence", "of", "comorbidities", "in", "patients", "with", "the", "severe", "form", "of", "COVID-19", "." ],
+    "entities_indices" : [ [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "Lymphopenia", ",", "thrombocytopenia", ",", "and", "elevated", "levels", "of", "interleukin-6", ",", "ferritin", ",", "D-dimer", ",", "aspartate", "aminotransferase", ",", "C-Reactive-Protein", ",", "procalcitonin", ",", "creatinine", ",", "neutrophils", "and", "leucocytes", "were", "associated", "with", "severe", "and", "fatal", "COVID-19", "cases", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 2, 3 ], [ 8, 9 ], [ 10, 11 ], [ 12, 13 ], [ 17, 18 ], [ 19, 20 ], [ 21, 22 ], [ 32, 33 ] ]
+  }, {
+    "sentence_tokens" : [ "Another", "meta-analysis", "showed", "a", "similar", "result", "of", "the", "discriminatory", "ability", "of", "D-dimer", "in", "patients", "with", "and", "without", "severe", "forms", "of", "COVID-19", "but", "did", "not", "provide", "data", "on", "mortality", "[", "71", "]", "." ],
+    "entities_indices" : [ [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "Ultimately", "fatal", "cases", "often", "evolve", "from", "life", "threatening", "disseminated", "intravascular", "coagulation", "requiring", "prompt", "intervention", "[", "69", "]", "." ],
+    "entities_indices" : [ [ 8, 9, 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "Based", "on", "observational", "studies", "[", "53", ",", "54", "]", ",", "COVID-19", "progression", "has", "now", "been", "divided", "into", "three", "clinical", "phases", ":", "the", "viremia", "phase", ",", "the", "acute", "phase", "(", "pneumonia", ")", ",", "and", "the", "recovery", "phase", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 22, 23 ], [ 29, 30 ] ]
+  }, {
+    "sentence_tokens" : [ "To", "describe", "the", "laboratory", "parameters", "and", "biomarkers", "of", "the", "cytokine", "storm", "syndrome", "associated", "with", "severe", "and", "fatal", "COVID-19", "cases", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "then", "assessed", "the", "risk", "of", "bias", "inherent", "to", "each", "of", "the", "included", "studies", "using", "the", "modified", "Newcastle-Ottawa", "Scale", "(", "NOS", ")", "[", "10", "]", "." ],
+    "entities_indices" : [ [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "While", "we", "explored", "the", "sources", "of", "heterogeneity", "in", "the", "meta-analyses", ",", "we", "could", "not", "find", "differences", "that", "could", "explain", "the", "sources", "of", "heterogeneity", "across", "studies.As", "the", "clinical", "course", "of", "patients", "with", "COVID-19", "may", "widely", "vary", "across", "individuals", ",", "unexplored", "clinical", "parameters", "may", "explain", "this", "heterogeneity", "." ],
+    "entities_indices" : [ [ 31, 32 ] ]
+  }, {
+    "sentence_tokens" : [ "CSS", "and", "secondary", "hemophagocytic", "lymphohistiocytosis", "(", "sHLH", ")", "are", "both", "associated", "with", "cytopenia", ",", "hyperferritinemia", ",", "and", "elevated", "interleukin-6", "(", "IL-6", ")", "due", "to", "a", "viral", "driven", "hyper-inflammation", "and", "amplification", "of", "the", "immune", "response", "[", "3", "-", "5", "]", "." ],
+    "entities_indices" : [ [ 3, 4, 5 ], [ 6, 7 ], [ 18, 19 ], [ 20, 21 ], [ 32, 33, 34 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "their", "analysis", ",", "the", "subsets", "of", "lymphocytes", "showed", "a", "significant", "association", "with", "inflammatory", "status", "in", "COVID-19", ",", "especially", "CD8+", "T", "cells", "and", "CD4", "+/CD8+", "ratio.Thrombocytopenia", "is", "a", "recurrent", "complication", "among", "patients", "requiring", "intensive", "care", ",", "regardless", "of", "the", "cause", "of", "hospitalization", ",", "and", "represents", "a", "marker", "of", "poor", "prognosis", "[", "61", "]", "." ],
+    "entities_indices" : [ [ 16, 17 ], [ 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "increased", "systemic", "cytokine", "production", "contributes", "to", "the", "pathophysiology", "of", "severe", "COVID-19", "and", "acute", "respiratory", "distress", "syndrome", "(", "ARDS", ")", "." ],
+    "entities_indices" : [ [ 3, 4, 5 ], [ 11, 12 ], [ 13, 14, 15, 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "Twenty-one", "studies", "[", "16", "-", "26", "]", "(", "n", "=", "4,313", ")", "assessed", "laboratory", "data", "related", "to", "the", "severity", "of", "COVID-19", ",", "comparing", "severe", "and", "non", "severe", "cases", "." ],
+    "entities_indices" : [ [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "Twenty-one", "studies", "(", "n", "=", "4,313", ")", "assessed", "laboratory", "data", "related", "to", "severe", "COVID-19", "cases", ",", "eighteen", "studies", "(", "n", "=", "4,681", ")", "assessed", "predictors", "for", "fatal", "COVID-19", "cases", "and", "one", "study", "(", "n", "=", "548", ")", "assessed", "laboratory", "biomarkers", "related", "to", "severe", "and", "fatal", "COVID-19", "cases", "." ],
+    "entities_indices" : [ [ 13, 14 ], [ 27, 28 ], [ 45, 46 ] ]
+  }, {
+    "sentence_tokens" : [ "After", "data", "was", "extracted", ",", "we", "used", "the", "\"", "meta", "\"", "package", "(", "version", "3.4.1", ")", "[", "11", "]", "of", "R", "software", "to", "perform", "the", "meta-analysis", "." ],
+    "entities_indices" : [ [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "Abnormalities", "of", "hemoglobin", "were", "not", "associated", "with", "disease", "severity", "or", "increased", "mortality", "." ],
+    "entities_indices" : [ [ 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "believe", "that", "the", "results", "of", "our", "review", "and", "meta-analysis", "including", "a", "relevant", "number", "of", "patients", ",", "especially", "those", "related", "to", "IL-6", "and", "ferritin", ",", "can", "be", "extrapolated", "to", "the", "real", "world", ",", "supporting", "clinical", "practice", "in", "coping", "with", "COVID-19", "and", "may", "help", "decision", "making", "processes", "." ],
+    "entities_indices" : [ [ 21, 22 ], [ 23, 24 ], [ 39, 40 ] ]
+  }, {
+    "sentence_tokens" : [ "Our", "data", "indicate", "that", "the", "increase", "in", "white", "blood", "cells", "is", "associated", "with", "elevated", "neutrophils", ",", "and", "this", "finding", "may", "signify", "clinical", "deterioration", "and", "increased", "risk", "of", "a", "poor", "outcome.Despite", "an", "increase", "in", "white", "blood", "cell", "count", ",", "we", "found", "that", "lymphocytes", "were", "significantly", "decreased", "in", "patients", "with", "severe", "COVID-19", "." ],
+    "entities_indices" : [ [ 21, 22, 23 ], [ 49, 50 ] ]
+  }, {
+    "sentence_tokens" : [ "Eligible", "studies", "were", "those", "including", "laboratory", "parameters--including", "serum", "interleukin-6", "levels--from", "mild", ",", "moderate", ",", "or", "severe", "COVID-19", "cases", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "Studies", "were", "included", "if", "they", "presented", "laboratory", "data", "--", "including", "serum", "IL-6", "levels", "--", "from", "mild-to-moderate", ",", "severe", "or", "critical", "patients", "with", "COVID-19", ",", "according", "to", "the", "National", "Health", "Commission", "of", "China", "(", "NHCC", ")", "Guidelines", "for", "Diagnosis", "and", "Management", "of", "COVID-19", "[", "8]", "or", "World", "Health", "Organization", "Interim", "Guidance", "for", "COVID-19", "[", "9", "]", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 22, 23 ], [ 41, 42 ], [ 51, 52 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "used", "the", "Egger", "'", "s", "test", "to", "assess", "publication", "bias", ",", "and", "the", "test", "suggested", "the", "presence", "of", "publication", "bias", "in", "the", "meta-analysis", "on", "the", "association", "between", "IL-6", "and", "severity", "(", "p", "<", "0.001", ")", "." ],
+    "entities_indices" : [ [ 28, 29 ] ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "biomarkers", "that", "identify", "which", "patients", "will", "evolve", "with", "the", "severe", "forms", "of", "COVID-19", "have", "substantial", "clinical", "applicability", "." ],
+    "entities_indices" : [ [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "Pooled", "results", "from", "these", "studies", "showed", "that", "the", "patients", "who", "progressed", "to", "death", "had", "higher", "levels", "of", "IL-6", "in", "comparison", "with", "those", "who", "survived", "[", "MD", "70.82", ";", "95", "%", "CI", "45.24", "to", "96.41", ";", "N", "=", "5,229", "]", "(", "Fig", "2A", ")", "." ],
+    "entities_indices" : [ [ 12, 13 ], [ 17, 18 ], [ 25, 26 ], [ 30, 31 ] ]
+  }, {
+    "sentence_tokens" : [ "One", "of", "the", "central", "challenges", "to", "defining", "initial", "treatment", "for", "patients", "with", "COVID-19", "is", "the", "early", "identification", "of", "those", "individuals", "who", "will", "evolve", "into", "more", "severe", "forms", "of", "the", "disease", "and", "of", "those", "who", "require", "specific", "interventions", "or", "treatments.Several", "laboratory", "differences", "were", "observed", "between", "severe", "and", "non", "severe", "disease", "." ],
+    "entities_indices" : [ [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "Thus", ",", "it", "is", "imperative", "to", "identify", "patients", "at", "high", "risk", "for", "early", "anticoagulation", "in", "COVID-19", "." ],
+    "entities_indices" : [ [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "Several", "studies", "suggested", "that", "markedly", "elevated", "ferritin", "in", "hospitalized", "patients", "is", "often", "associated", "with", "hemophagocytic", "lymphohistiocytosis", "syndrome", ",", "but", "cannot", "be", "considered", "as", "a", "specific", "marker", "[", "72", "-", "74", "]", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 14, 15, 16 ], [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "searched", "MEDLINE", ",", "EMBASE", ",", "Cochrane", "Central", "Register", "of", "Controlled", "Trials", "(", "CENTRAL", ")", ",", "LILACS", ",", "and", "IBECS", "using", "relevant", "descriptors", "and", "synonyms", ",", "adapting", "the", "search", "to", "the", "specifics", "of", "each", "database", "(", "S1", "Table", ")", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "review", "points", "to", "lymphopenia", ",", "thrombocytopenia", ",", "neutrophilia", ",", "leukocytosis", "as", "well", "as", "increased", "levels", "of", "IL-6", ",", "ferritin", ",", "D-dimer", ",", "aspartate", "aminotransferase", ",", "lactate", "dehydrogenase", ",", "procalcitonin", ",", "creatinine", "and", "CRP", "as", "indicators", "of", "severe", "and", "fatal", "cases", "of", "COVID-19", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 6, 7 ], [ 10, 11 ], [ 17, 18 ], [ 19, 20 ], [ 21, 22 ], [ 26, 27 ], [ 29, 30 ], [ 31, 32 ], [ 33, 34 ], [ 42, 43 ] ]
+  }, {
+    "sentence_tokens" : [ "These", "cells", "are", "typically", "considered", "proinflammatory", "and", "are", "recruited", "to", "the", "sites", "of", "inflammation", "where", "they", "can", "respond", "to", "pathogen", "associated", "molecular", "patterns", "(", "PAMPs", ")", "and", "damage", "associated", "molecular", "patterns", "(", "DAMPs", ")", "by", "producing", "interleukin-1", ",", "interleukin-6", ",", "interleukin-12", ",", "and", "tumor", "necrosis", "factor", "(", "TNF", ")", "[", "59", "]", "." ],
+    "entities_indices" : [ [ 13, 14 ], [ 36, 37 ], [ 38, 39 ], [ 40, 41 ], [ 43, 44, 45, 46 ], [ 47, 48 ] ]
+  }, {
+    "sentence_tokens" : [ "Liver", "damage", "in", "these", "patients", "might", "be", "directly", "caused", "by", "the", "viral", "infection", "of", "liver", "cells", ";", "indeed", ",", "pathological", "studies", "[", "65", ",", "66", "]", "have", "confirmed", "the", "presence", "of", "the", "SARS-CoV", "in", "liver", "tissues.Procalcitonin", "levels", "are", "generally", "undetectable", "in", "healthy", "individuals", "and", "remain", "unchanged", "or", "moderately", "increase", "in", "those", "with", "virus", "infection", "or", "systemic", "inflammatory", "diseases", "." ],
+    "entities_indices" : [ [ 11, 12, 13 ], [ 32, 33 ], [ 35, 36 ], [ 52, 53, 54 ], [ 57, 58 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "December", "2019", ",", "a", "new", "strain", "of", "coronavirus", ",", "severe", "acute", "respiratory", "syndrome", "-", "coronavirus", "2", "(", "SARS-CoV-2", ")", ",", "emerged", "in", "Wuhan", ",", "China", ",", "and", "starting", "in", "March", "of", "2020", ",", "the", "world", "was", "plunged", "into", "a", "pandemic", "due", "to", "the", "disease", "(", "COVID-19", ")", "caused", "by", "this", "new", "coronavirus", "." ],
+    "entities_indices" : [ [ 10, 11, 12, 13, 14 ], [ 18, 19 ], [ 46, 47 ] ]
+  }, {
+    "sentence_tokens" : [ "Different", "definitions", "of", "the", "term", "\"", "severity", "\"", "adopted", "by", "each", "author", ",", "some", "variables", "such", "as", "the", "time", "taken", "to", "collect", "laboratory", "tests", "or", "the", "number", "of", "the", "days", "from", "symptoms", "onset", "of", "COVID-19", "to", "hospital", "admission", "may", "also", "have", "notably", "contributed", "to", "this", "circumstance", "." ],
+    "entities_indices" : [ [ 34, 35 ] ]
+  }, {
+    "sentence_tokens" : [ "Sensitivity", "analysis", "was", "conducted", "on", "the", "IL-6", "parameters", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "Elevated", "levels", "of", "interleukin-6", "and", "hyperferritinemia", "should", "be", "considered", "as", "red", "flags", "of", "systemic", "inflammation", "and", "poor", "prognosis", "in", "COVID-19", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 14, 15 ], [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "line", "with", "this", "hypothesis", ",", "in", "the", "meta-analysis", "published", "by", "Lippi", "G", "and", "Plebani", "M", "[", "68", "]", ",", "a", "significant", "increase", "in", "procalcitonin", "levels", "was", "associated", "with", "bacterial", "co-infection", ",", "progression", "to", "severe", "forms", "of", "COVID-19", ",", "and", "death.The", "activation", "of", "the", "coagulation", "process", "is", "a", "fundamental", "mechanism", "of", "the", "etiopathogenesis", "of", "SARS-CoV-2", "infections", "and", "often", "leads", "to", "poor", "outcomes", "." ],
+    "entities_indices" : [ [ 24, 25 ], [ 30, 31 ], [ 37, 38 ], [ 44, 45 ], [ 54, 55 ], [ 55, 56 ] ]
+  }, {
+    "sentence_tokens" : [ "Eighteen", "studies", "(", "n", "=", "4,681", ")", "[", "13", "-", "15", ",", "27", "-", "33", ",", "35", "-", "42", "]", "evaluated", "the", "association", "between", "laboratory", "parameters", "and", "mortality", "in", "patients", "with", "COVID-19", "and", "one", "study", "(", "n", "=", "548", ")", "[", "43", "]", "assessed", "serum", "biomarkers", "related", "to", "severe", "and", "fatal", "COVID-19", "cases", "." ],
+    "entities_indices" : [ [ 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ], [ 31, 32 ], [ 51, 52 ] ]
+  }, {
+    "sentence_tokens" : [ "No", "publication", "bias", "was", "detected", "in", "any", "other", "analyses", "(", "S2A", "and", "S2B", "Table", ")", "." ],
+    "entities_indices" : [ [ 12, 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "found", "that", "lymphopenia", ",", "thrombocytopenia", "and", "high", "levels", "of", "ferritin", ",", "D-dimer", ",", "aspartate", "aminotransferase", ",", "lactate", "dehydrogenase", ",", "C-Reactive", "Protein", ",", "neutrophils", ",", "procalcitonin", "and", "creatinine", "are", "good", "indicators", "of", "both", "severe", "and", "fatal", "cases", "of", "COVID-19", "during", "the", "first", "days", "from", "illness", "onset", ",", "as", "is", "interleukin-6", ",", "the", "main", "cytokine", "involved", "in", "the", "CSS.As", "high", "inflammation", "is", "a", "primary", "cause", "of", "pathology", "in", "COVID-19", ",", "targeted", "anti-inflammatory", "treatments", "are", "being", "evaluated", "to", "reduce", "inflammation", "induced", "damage", "to", "the", "respiratory", "tract", "and", "to", "mitigate", "the", "cytokine", "storm", "[", "51", ",", "52", "]", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 5, 6 ], [ 10, 11 ], [ 12, 13 ], [ 17, 18 ], [ 20, 21, 22 ], [ 27, 28 ], [ 38, 39 ], [ 49, 50 ], [ 59, 60 ], [ 67, 68 ], [ 77, 78 ] ]
+  }, {
+    "sentence_tokens" : [ "IL-6", "release", "instigates", "an", "amplification", "cascade", "that", "results", "in", "cis", "signaling", "with", "TH17", "differentiation", "and", "trans-signaling", "in", "many", "cell", "types", ",", "such", "as", "endothelial", "cells", "[", "3", ",", "5", "]", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "Thus", ",", "unexplored", "pathophysiological", "mechanisms", "may", "justify", "this", "heterogeneity", "and", "those", "results.Systematic", "reviews", "and", "meta-analysis", "of", "prospective", "studies", ",", "with", "standardized", "COVID-19", "severity", "criterion", "in", "a", "more", "global", "population", "sample", ",", "could", "be", "the", "key", "to", "better", "understanding", "the", "cytokine", "storm", "influences", "in", "patients", "infected", "with", "SARS-CoV-2", "and", "their", "outcomes", "." ],
+    "entities_indices" : [ [ 21, 22 ], [ 46, 47 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "studies", "presenting", "continuous", "data", "as", "medians", "and", "inter-quartile", "ranges", ",", "we", "estimated", "the", "means", "and", "standard", "deviations", "according", "to", "the", "method", "described", "by", "Hozo", "SP", "et", "al.", "[", "12", "]", "." ],
+    "entities_indices" : [ [ 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "result", "is", "consistent", "with", "those", "reported", "by", "Chen", "G", "et", "al.", "[", "16", "]", ",", "who", "demonstrated", "that", "the", "total", "lymphocyte", "count", ",", "and", "specifically", "CD4+", "T", "cells", "and", "CD8+", "T", "cells", ",", "were", "slightly", "lower", "in", "moderate", "cases", "and", "significantly", "decreased", "in", "severe", "COVID-19", "." ],
+    "entities_indices" : [ [ 45, 46 ] ]
+  }, {
+    "sentence_tokens" : [ "Additionally", ",", "ferritin", "and", "C-reactive", "protein", "appear", "to", "be", "screening", "tools", "for", "the", "early", "diagnosis", "of", "a", "systemic", "inflammatory", "response", "syndrome", "in", "patients", "with", "a", "severe", "form", "of", "COVID-19", "(", "denominated", "CSS", ")", ",", "with", "lower", "cost", "and", "wider", "availability", "in", "frontline", "clinical", "practice", "than", "IL-6.Despite", "these", "rigorous", "efforts", "to", "guide", "clinicians", "in", "diagnosing", "CSS", ",", "discriminating", "this", "pathology", "from", "other", "conditions", ",", "particularly", "sepsis", "or", "disseminated", "intravascular", "coagulation", ",", "remains", "challenging", "due", "to", "the", "large", "degree", "of", "overlap", "in", "clinical", "presentation", "[", "77", "]", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 4, 5, 6 ], [ 17, 18, 19, 20, 21 ], [ 28, 29 ], [ 64, 65 ], [ 66, 67, 68, 69 ] ]
+  }, {
+    "sentence_tokens" : [ "Elevated", "serum", "concentrations", "of", "IL-6", "and", "other", "inflammatory", "cytokines", "are", "hallmarks", "of", "CSS", "and", "correlate", "with", "poor", "clinical", "outcomes", "[", "3", "]", "." ],
+    "entities_indices" : [ [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "Laboratory", "parameters", ",", "such", "as", "interleukin-6", ",", "ferritin", ",", "hematology", ",", "C-Reactive", "Protein", ",", "procalcitonin", ",", "lactate", "dehydrogenase", ",", "aspartate", "aminotransferase", ",", "creatinine", ",", "and", "D-dimer", ",", "were", "extracted", "from", "the", "studies", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 7, 8 ], [ 11, 12, 13 ], [ 14, 15 ], [ 16, 17 ], [ 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "also", "searched", "the", "Open", "Grey", "database", ",", "the", "World", "Health", "Organization", "International", "Clinical", "Trials", "Registry", "Platform", "(", "WHO", "ICTRP", ")", ",", "and", "ClinicalTrials.gov", "to", "identify", "published", ",", "ongoing", ",", "and", "unpublished", "studies", "." ],
+    "entities_indices" : [ [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "Laboratory", "parameters", ",", "such", "as", "IL-6", ",", "ferritin", ",", "hemoglobin", ",", "leukocytes", ",", "lymphocytes", ",", "neutrophils", ",", "platelets", ",", "CRP", ",", "procalcitonin", ",", "lactate", "dehydrogenase", "(", "LDH", ")", ",", "aspartate", "aminotransferase", "(", "AST", ")", ",", "creatinine", ",", "and", "D-dimer", "were", "analyzed", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 7, 8 ], [ 9, 10 ], [ 19, 20 ], [ 21, 22 ], [ 23, 24 ], [ 26, 27 ], [ 32, 33 ], [ 35, 36 ] ]
+  }, {
+    "sentence_tokens" : [ "As", "of", "March", "11", ",", "COVID-19", "had", "been", "detected", "in", "221", "countries", ",", "with", "117,799,584", "confirmed", "cases", "and", "more", "than", "2,615,018", "deaths", "[", "1", "]", "." ],
+    "entities_indices" : [ [ 2, 3, 4 ], [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "search", "with", "standardized", "descriptors", "and", "synonyms", "was", "performed", "on", "November", "28", "th", ",", "2020", "of", "the", "MEDLINE", ",", "EMBASE", ",", "Cochrane", "Central", "Register", "of", "Controlled", "Trials", ",", "ClinicalTrials.gov", ",", "LILACS", ",", "and", "IBECS", "to", "identify", "studies", "of", "interest", "." ],
+    "entities_indices" : [ [ 17, 18 ], [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "Considering", "that", "procalcitonin", "is", "a", "good", "predictor", "of", "bacterial", "infection", ",", "the", "non", "survivors", "possibly", "progressed", "to", "sepsis", ",", "an", "often-fatal", "complication", "in", "patients", "with", "COVID-19", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 8, 9, 10 ], [ 17, 18 ], [ 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "Ferritin", "is", "an", "acute", "protein", "that", "increases", "in", "response", "to", "a", "broad", "spectrum", "of", "inflammatory", "states", ",", "including", "infections", ",", "malignancy", ",", "iron", "overload", ",", "and", "liver", "or", "kidney", "disease", "[", "75", ",", "76", "]", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 18, 19 ], [ 22, 23, 24 ], [ 28, 29, 30 ] ]
+  }, {
+    "sentence_tokens" : [ "Ferritin", "levels", "were", "reported", "in", "six", "studies", "[", "16", ",", "20", ",", "21", "]", ",", "with", "the", "meta-analysis", "of", "severe", "and", "non", "severe", "patients", "showing", "that", "patients", "with", "severe", "COVID-19", "had", "higher", "levels", "of", "ferritin", "[", "MD", "654.40", ";", "95", "%", "CI", "383.48", "to", "925.33", ";", "N", "=", "3,470", "]", "(", "Fig", "2D", ")", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 29, 30 ], [ 34, 35 ], [ 36, 37 ], [ 41, 42 ] ]
+  }, {
+    "sentence_tokens" : [ "Tang", "N", "et", "al.", "[", "70", "]", "reported", "that", "the", "non", "surviving", "patients", "with", "COVID-19", "had", "higher", "fibrin", "related", "markers", "(", "D-dimer", "and", "fibrin", "degradation", "product", ")", "at", "admission", "compared", "with", "survivors", "." ],
+    "entities_indices" : [ [ 14, 15 ], [ 17, 18 ], [ 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "Summary", "measures", "and", "synthesis", "of", "results", "." ],
+    "entities_indices" : [ [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "review", "points", "to", "interleukin-6", ",", "ferritin", ",", "leukocytes", ",", "neutrophils", ",", "lymphocytes", ",", "platelets", ",", "C-Reactive", "Protein", ",", "procalcitonin", ",", "lactate", "dehydrogenase", ",", "aspartate", "aminotransferase", ",", "creatinine", ",", "and", "D-dimer", "as", "important", "biomarkers", "of", "cytokine", "storm", "syndrome", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 6, 7 ], [ 16, 17, 18 ], [ 19, 20 ], [ 21, 22 ], [ 27, 28 ], [ 37, 38 ] ]
+  }, {
+    "sentence_tokens" : [ "Ferritin", "and", "IL-6", "are", "significant", "biomarkers", "of", "CSS", ",", "and", "increases", "in", "levels", "of", "either", "could", "be", "considered", "red", "flags", "of", "systemic", "inflammation", "and", "poor", "prognosis", "in", "COVID-19", ",", "especially", "in", "the", "oldest", "patients", "and", "those", "with", "comorbidities", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 2, 3 ], [ 22, 23 ], [ 27, 28 ] ]
+  }, {
+    "sentence_tokens" : [ "Nineteen", "studies", "assessed", "fatal", "and", "non", "fatal", "groups", "of", "patients", "with", "COVID-19", "and", "reported", "IL-6", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "Nonetheless", ",", "our", "meta-analysis", "failed", "to", "find", "an", "association", "of", "low", "hemoglobin", "levels", "with", "severity", "or", "mortality", "rates", "among", "patients", "with", "COVID-19-related", "cytokine", "storms.The", "increased", "production", "(", "myelopoiesis", ")", "and", "mobilization", "of", "monocyte", "and", "neutrophil", "populations", "from", "the", "bone", "marrow", "is", "a", "response", "to", "many", "acute", "infections", "--", "including", "viral", "infections", "--", "and", "cytokines", "[", "58", "]", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 46, 47 ], [ 49, 50, 51 ] ]
+  }, {
+    "sentence_tokens" : [ "High", "serum", "levels", "of", "CRP", ",", "AST", ",", "LDH", ",", "and", "ferritin", "in", "patients", "with", "COVID-19", "may", "indicate", "that", "liver", "dysfunctions", "have", "been", "involved", ",", "and", "target", "treatments", "should", "be", "taken", "in", "time", "to", "prevent", "irreversible", "organ", "damage", "and", "increased", "risk", "of", "mortality", "[", "64", "]", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 6, 7 ], [ 8, 9 ], [ 11, 12 ], [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "Synthesis", "of", "results", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  } ],
+  "emptySentences" : [ {
+    "sentence_tokens" : [ "Biomarkers", "of", "cytokine", "storm", "as", "red", "flags", "for", "severe", "and", "fatal", "COVID-19", "cases", ":", "A", "living", "systematic", "review", "and", "meta-analysis", "." ]
+  }, {
+    "sentence_tokens" : [ "Objective", "." ]
+  }, {
+    "sentence_tokens" : [ "To", "describe", "the", "laboratory", "parameters", "and", "biomarkers", "of", "the", "cytokine", "storm", "syndrome", "associated", "with", "severe", "and", "fatal", "COVID-19", "cases", "." ]
+  }, {
+    "sentence_tokens" : [ "Methods", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "search", "with", "standardized", "descriptors", "and", "synonyms", "was", "performed", "on", "November", "28", "th", ",", "2020", "of", "the", "MEDLINE", ",", "EMBASE", ",", "Cochrane", "Central", "Register", "of", "Controlled", "Trials", ",", "ClinicalTrials.gov", ",", "LILACS", ",", "and", "IBECS", "to", "identify", "studies", "of", "interest", "." ]
+  }, {
+    "sentence_tokens" : [ "Grey", "literature", "searches", "and", "snowballing", "techniques", "were", "additionally", "utilized", "to", "identify", "yet", "unpublished", "works", "and", "related", "citations", "." ]
+  }, {
+    "sentence_tokens" : [ "Two", "review", "authors", "independently", "screened", "the", "retrieved", "titles", "and", "abstracts", ",", "selected", "eligible", "studies", "for", "inclusion", ",", "extracted", "data", "from", "the", "included", "studies", ",", "and", "then", "assessed", "the", "risk", "of", "bias", "using", "the", "Newcastle-Ottawa", "Scale", "." ]
+  }, {
+    "sentence_tokens" : [ "Eligible", "studies", "were", "those", "including", "laboratory", "parameters--including", "serum", "interleukin-6", "levels--from", "mild", ",", "moderate", ",", "or", "severe", "COVID-19", "cases", "." ]
+  }, {
+    "sentence_tokens" : [ "Laboratory", "parameters", ",", "such", "as", "interleukin-6", ",", "ferritin", ",", "hematology", ",", "C-Reactive", "Protein", ",", "procalcitonin", ",", "lactate", "dehydrogenase", ",", "aspartate", "aminotransferase", ",", "creatinine", ",", "and", "D-dimer", ",", "were", "extracted", "from", "the", "studies", "." ]
+  }, {
+    "sentence_tokens" : [ "Meta-analyses", "were", "conducted", "using", "the", "laboratory", "data", "to", "estimate", "mean", "differences", "with", "associated", "95", "%", "confidence", "intervals", "." ]
+  }, {
+    "sentence_tokens" : [ "Data", "synthesis", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "database", "search", "yielded", "9,620", "records", ";", "40", "studies", "(", "containing", "a", "total", "of", "9,542", "patients", ")", "were", "included", "in", "the", "final", "analysis", "." ]
+  }, {
+    "sentence_tokens" : [ "Twenty-one", "studies", "(", "n", "=", "4,313", ")", "assessed", "laboratory", "data", "related", "to", "severe", "COVID-19", "cases", ",", "eighteen", "studies", "(", "n", "=", "4,681", ")", "assessed", "predictors", "for", "fatal", "COVID-19", "cases", "and", "one", "study", "(", "n", "=", "548", ")", "assessed", "laboratory", "biomarkers", "related", "to", "severe", "and", "fatal", "COVID-19", "cases", "." ]
+  }, {
+    "sentence_tokens" : [ "Lymphopenia", ",", "thrombocytopenia", ",", "and", "elevated", "levels", "of", "interleukin-6", ",", "ferritin", ",", "D-dimer", ",", "aspartate", "aminotransferase", ",", "C-Reactive-Protein", ",", "procalcitonin", ",", "creatinine", ",", "neutrophils", "and", "leucocytes", "were", "associated", "with", "severe", "and", "fatal", "COVID-19", "cases", "." ]
+  }, {
+    "sentence_tokens" : [ "Conclusions", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "review", "points", "to", "interleukin-6", ",", "ferritin", ",", "leukocytes", ",", "neutrophils", ",", "lymphocytes", ",", "platelets", ",", "C-Reactive", "Protein", ",", "procalcitonin", ",", "lactate", "dehydrogenase", ",", "aspartate", "aminotransferase", ",", "creatinine", ",", "and", "D-dimer", "as", "important", "biomarkers", "of", "cytokine", "storm", "syndrome", "." ]
+  }, {
+    "sentence_tokens" : [ "Elevated", "levels", "of", "interleukin-6", "and", "hyperferritinemia", "should", "be", "considered", "as", "red", "flags", "of", "systemic", "inflammation", "and", "poor", "prognosis", "in", "COVID-19", "." ]
+  }, {
+    "sentence_tokens" : [ "Introduction", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "December", "2019", ",", "a", "new", "strain", "of", "coronavirus", ",", "severe", "acute", "respiratory", "syndrome", "-", "coronavirus", "2", "(", "SARS-CoV-2", ")", ",", "emerged", "in", "Wuhan", ",", "China", ",", "and", "starting", "in", "March", "of", "2020", ",", "the", "world", "was", "plunged", "into", "a", "pandemic", "due", "to", "the", "disease", "(", "COVID-19", ")", "caused", "by", "this", "new", "coronavirus", "." ]
+  }, {
+    "sentence_tokens" : [ "As", "of", "March", "11", ",", "COVID-19", "had", "been", "detected", "in", "221", "countries", ",", "with", "117,799,584", "confirmed", "cases", "and", "more", "than", "2,615,018", "deaths", "[", "1", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "clinical", "spectrum", "of", "this", "disease", "ranges", "from", "asymptomatic", "cases", "to", "severe", "pulmonary", "involvement", "with", "respiratory", "failure", ",", "systemic", "involvement", "with", "sepsis", ",", "septic", "shock", ",", "and", "multiple", "organ", "failure", "[", "2", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Accumulating", "evidence", "suggests", "that", "a", "subgroup", "of", "patients", "with", "severe", "COVID-19", "might", "have", "cytokine", "storm", "syndrome", "(", "CSS", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "CSS", "and", "secondary", "hemophagocytic", "lymphohistiocytosis", "(", "sHLH", ")", "are", "both", "associated", "with", "cytopenia", ",", "hyperferritinemia", ",", "and", "elevated", "interleukin-6", "(", "IL-6", ")", "due", "to", "a", "viral", "driven", "hyper-inflammation", "and", "amplification", "of", "the", "immune", "response", "[", "3", "-", "5", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Elevated", "serum", "concentrations", "of", "IL-6", "and", "other", "inflammatory", "cytokines", "are", "hallmarks", "of", "CSS", "and", "correlate", "with", "poor", "clinical", "outcomes", "[", "3", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Elevated", "serum", "C-reactive", "protein", "(", "CRP", ")", ",", "a", "protein", "whose", "expression", "is", "driven", "by", "IL-6", ",", "is", "also", "a", "biomarker", "of", "severe", "clinical", "manifestations", "of", "COVID-19", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "infection", "results", "in", "monocyte", ",", "macrophage", ",", "and", "dendritic", "cell", "activation", "." ]
+  }, {
+    "sentence_tokens" : [ "IL-6", "release", "instigates", "an", "amplification", "cascade", "that", "results", "in", "cis", "signaling", "with", "TH17", "differentiation", "and", "trans-signaling", "in", "many", "cell", "types", ",", "such", "as", "endothelial", "cells", "[", "3", ",", "5", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "increased", "systemic", "cytokine", "production", "contributes", "to", "the", "pathophysiology", "of", "severe", "COVID-19", "and", "acute", "respiratory", "distress", "syndrome", "(", "ARDS", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Recognizing", "and", "treating", "CSS", "in", "a", "timely", "fashion", "is", "of", "paramount", "importance", ",", "as", "this", "information", "could", "lead", "to", "better", "outcomes", "in", "patients", "who", "present", "this", "complication", "as", "part", "of", "their", "clinical", "course", "of", "COVID-19", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "have", "therefore", "designed", "and", "carried", "out", "this", "living", "systematic", "review", "to", "guide", "the", "evaluation", "and", "early", "recognition", "of", "CSS", "by", ":", "Identifying", "the", "laboratory", "parameters", "correlated", "with", "severe", "and", "fatal", "cases", "of", "COVID-19", ";", "Estimating", "the", "role", "of", "IL-6", "and", "ferritin", "as", "potential", "biomarkers", "related", "to", "cytokine", "storm", "development", "." ]
+  }, {
+    "sentence_tokens" : [ "Methods", "." ]
+  }, {
+    "sentence_tokens" : [ "Protocol", "and", "registration", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "systematic", "review", "protocol", "was", "registered", "within", "the", "International", "Prospective", "Register", "of", "Systematic", "Reviews", "(", "PROSPERO", ")", ",", "under", "the", "code", "CRD42020190021", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "followed", "the", "recommendations", "proposed", "by", "the", "Cochrane", "Collaboration", "Handbook", "[", "6", "]", "and", "the", "Preferred", "Reporting", "Items", "for", "Systematic", "Reviews", "and", "Meta-Analysis", "(", "PRISMA", ")", "[", "7", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Search", "strategy", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "searched", "MEDLINE", ",", "EMBASE", ",", "Cochrane", "Central", "Register", "of", "Controlled", "Trials", "(", "CENTRAL", ")", ",", "LILACS", ",", "and", "IBECS", "using", "relevant", "descriptors", "and", "synonyms", ",", "adapting", "the", "search", "to", "the", "specifics", "of", "each", "database", "(", "S1", "Table", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "also", "searched", "the", "Open", "Grey", "database", ",", "the", "World", "Health", "Organization", "International", "Clinical", "Trials", "Registry", "Platform", "(", "WHO", "ICTRP", ")", ",", "and", "ClinicalTrials.gov", "to", "identify", "published", ",", "ongoing", ",", "and", "unpublished", "studies", "." ]
+  }, {
+    "sentence_tokens" : [ "Finally", ",", "we", "used", "the", "technique", "of", "snowballing", ",", "searching", "the", "lists", "of", "references", "of", "the", "included", "studies", "." ]
+  }, {
+    "sentence_tokens" : [ "Eligibility", "criteria", "and", "study", "selection", "." ]
+  }, {
+    "sentence_tokens" : [ "Studies", "were", "included", "if", "they", "presented", "laboratory", "data", "--", "including", "serum", "IL-6", "levels", "--", "from", "mild-to-moderate", ",", "severe", "or", "critical", "patients", "with", "COVID-19", ",", "according", "to", "the", "National", "Health", "Commission", "of", "China", "(", "NHCC", ")", "Guidelines", "for", "Diagnosis", "and", "Management", "of", "COVID-19", "[", "8]", "or", "World", "Health", "Organization", "Interim", "Guidance", "for", "COVID-19", "[", "9", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Exclusion", "criteria", "consisted", "of", "studies", "that", "assessed", "pregnant", "women", ",", "pediatric", "patients", ",", "individuals", "co-infected", "with", "other", "microorganisms", ",", "or", "populations", "exclusively", "related", "to", "oncological", ",", "rheumatological", ",", "transplants", ",", "or", "chronic", "renal", "disease", "." ]
+  }, {
+    "sentence_tokens" : [ "All", "studies", "published", "before", "November", "28", ",", "2020", "were", "included", ",", "and", "no", "language", "restrictions", "were", "implemented", "for", "electronic", "search", "." ]
+  }, {
+    "sentence_tokens" : [ "Data", "extraction", "and", "quality", "appraisal", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "used", "a", "predefined", "form", "to", "extract", "data", "from", "included", "studies", "." ]
+  }, {
+    "sentence_tokens" : [ "Specifically", ",", "we", "extracted", "participants", "and", "studies", "characteristics", ",", "including", ":", "age", ",", "gender", ",", "diagnostic", "criteria", ",", "and", "the", "severity", "of", "condition", ",", "details", "on", "the", "number", "of", "participants", "screened", ",", "randomized", ",", "analyzed", ",", "excluded", ",", "lost", "to", "follow-up", "and", "dropped", "out", ",", "setting", ",", "duration", "of", "studies", ",", "laboratorial", "biomarkers", ",", "outcome", "measures", ",", "and", "time", "points", "reported", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "then", "assessed", "the", "risk", "of", "bias", "inherent", "to", "each", "of", "the", "included", "studies", "using", "the", "modified", "Newcastle-Ottawa", "Scale", "(", "NOS", ")", "[", "10", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "attempted", "to", "contact", "the", "authors", "of", "the", "included", "studies", "when", "any", "study", "data", "or", "other", "details", "were", "missing", "." ]
+  }, {
+    "sentence_tokens" : [ "Summary", "measures", "and", "synthesis", "of", "results", "." ]
+  }, {
+    "sentence_tokens" : [ "Study", "selection", ",", "data", "extraction", ",", "and", "assessment", "of", "the", "risk", "of", "bias", "were", "performed", "independently", "by", "two", "review", "authors", "." ]
+  }, {
+    "sentence_tokens" : [ "Disagreements", "were", "resolved", "through", "discussion", "or", ",", "if", "required", ",", "by", "consulting", "a", "third", "author", "." ]
+  }, {
+    "sentence_tokens" : [ "Studies", "were", "assessed", "into", "two", "separate", "groups", "for", "analysis", ":", "severity", "group", "and", "mortality", "group", "." ]
+  }, {
+    "sentence_tokens" : [ "Laboratory", "parameters", ",", "such", "as", "IL-6", ",", "ferritin", ",", "hemoglobin", ",", "leukocytes", ",", "lymphocytes", ",", "neutrophils", ",", "platelets", ",", "CRP", ",", "procalcitonin", ",", "lactate", "dehydrogenase", "(", "LDH", ")", ",", "aspartate", "aminotransferase", "(", "AST", ")", ",", "creatinine", ",", "and", "D-dimer", "were", "analyzed", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "assays", "for", "detecting", "laboratory", "tests", "were", "similar", "between", "studies", "." ]
+  }, {
+    "sentence_tokens" : [ "Statistical", "analysis", "." ]
+  }, {
+    "sentence_tokens" : [ "After", "data", "was", "extracted", ",", "we", "used", "the", "\"", "meta", "\"", "package", "(", "version", "3.4.1", ")", "[", "11", "]", "of", "R", "software", "to", "perform", "the", "meta-analysis", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "studies", "presenting", "continuous", "data", "as", "medians", "and", "inter-quartile", "ranges", ",", "we", "estimated", "the", "means", "and", "standard", "deviations", "according", "to", "the", "method", "described", "by", "Hozo", "SP", "et", "al.", "[", "12", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "meta-analysis", "was", "performed", ",", "with", "a", "calculation", "of", "mean", "difference", "(", "MD", ")", "and", "95", "%", "confidence", "interval", "(", "95", "%", "CI", ")", "for", "each", "of", "the", "laboratory", "parameters", "related", "to", "patients", "with", "confirmed", "COVID-19", "with", "or", "without", "severe", "disease", "and", "non", "survivors", "or", "survivors", "." ]
+  }, {
+    "sentence_tokens" : [ "Heterogeneity", "across", "the", "included", "studies", "was", "assessed", "using", "a", "chi-square", "(", "chi", "2", ")", "test", "and", "the", "I", "statistic", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "random", "effects", "model", "was", "employed", "to", "calculate", "pooled", "results", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "sensitivity", "analysis", "was", "performed", "to", "explore", "the", "sources", "of", "heterogeneity", "when", "I", ">", "50", "%", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "explored", "the", "sources", "of", "heterogeneity", "by", "excluding", "studies", "with", "unclear", "timepoints", "of", "collection", "and", "studies", "that", "collected", "blood", "parameters", "after", "seven", "days", "of", "hospital", "admission", "." ]
+  }, {
+    "sentence_tokens" : [ "When", "at", "least", "10", "studies", "were", "included", "in", "a", "meta-analysis", ",", "we", "assessed", "the", "possibility", "of", "publication", "bias", "using", "Egger", "'", "s", "test", "(", "S2A", "and", "S2B", "Table", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Results", "." ]
+  }, {
+    "sentence_tokens" : [ "Study", "selection", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "database", "search", "yielded", "9,620", "records", "." ]
+  }, {
+    "sentence_tokens" : [ "After", "removing", "duplicates", ",", "9,194", "titles", "and", "abstracts", "were", "examined", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "retrieved", "136", "full-text", "articles", "for", "further", "scrutiny", ";", "of", "those", ",", "96", "studies", "were", "excluded", "due", "to", ":", "ineligible", "population", "(", "n", "=", "10", ")", ",", "study", "design", "(", "n", "=", "5", ")", ",", "different", "definition", "of", "severity", "(", "n", "=", "11", ")", "or", "not", "reporting", "the", "laboratory", "data", "of", "interest", "for", "this", "meta-analysis", "(", "n", "=", "70", ")", "(", "S3", "Table", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "finally", "included", "40", "studies", "in", "this", "review", "(", "Fig", "1", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Study", "characteristics", "." ]
+  }, {
+    "sentence_tokens" : [ "Thirty-seven", "eligible", "studies", "consisted", "of", "retrospective", "case", "series", "and", "three", "were", "prospective", "cohorts", "[", "13", "-", "15", "]", ",", "conducted", "in", "various", "hospital", "settings", ":", "China", "(", "n", "=", "35", ")", "[", "16", "-", "31", "]", ",", "Israel", "(", "n", "=", "1", ")", "[", "32", "]", ",", "Brazil", "(", "n", "=", "1", ")", "[", "14", "]", ",", "Spain", "(", "n", "=", "1", ")", "[", "33", "]", ",", "Norway", "(", "n", "=", "1", ")", "[", "13", "]", "and", "Turkey", "(", "n", "=", "1", ")", "[", "34", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "participants", "(", "n", "=", "9,542", ")", "all", "received", "a", "positive", "COVID-19", "diagnosis", "through", "2019-nCoV", "RNA", "detection", "by", "SARS-CoV-2", "real-time", "polymerase", "chain", "reaction", "nasopharyngeal", "swab", "(", "RT-PCR", ")", "or", "specific", "virus", "IgM", "and", "IgG", "antibodies", "." ]
+  }, {
+    "sentence_tokens" : [ "Twenty-one", "studies", "[", "16", "-", "26", "]", "(", "n", "=", "4,313", ")", "assessed", "laboratory", "data", "related", "to", "the", "severity", "of", "COVID-19", ",", "comparing", "severe", "and", "non", "severe", "cases", "." ]
+  }, {
+    "sentence_tokens" : [ "Eighteen", "studies", "(", "n", "=", "4,681", ")", "[", "13", "-", "15", ",", "27", "-", "33", ",", "35", "-", "42", "]", "evaluated", "the", "association", "between", "laboratory", "parameters", "and", "mortality", "in", "patients", "with", "COVID-19", "and", "one", "study", "(", "n", "=", "548", ")", "[", "43", "]", "assessed", "serum", "biomarkers", "related", "to", "severe", "and", "fatal", "COVID-19", "cases", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "participants", "'", "baseline", "and", "demographic", "characteristics", "are", "presented", "in", "Table", "1", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "descriptive", "analysis", "indicates", "that", "patients", "with", "severe", "disease", "were", "older", "than", "non", "severe", "patients", ",", "except", "in", "two", "studies", "[", "43", ",", "44", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Mortality", "was", "also", "higher", "in", "the", "elderly", "." ]
+  }, {
+    "sentence_tokens" : [ "Most", "patients", "with", "severe", "disease", "and", "higher", "mortality", "were", "male", "." ]
+  }, {
+    "sentence_tokens" : [ "Most", "studies", "showed", "a", "higher", "prevalence", "of", "comorbidities", "in", "patients", "with", "the", "severe", "form", "of", "COVID-19", "." ]
+  }, {
+    "sentence_tokens" : [ "Risk", "of", "bias", "assessment", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "studies", "'", "risk", "of", "bias", ",", "as", "measured", "on", "the", "Newcastle-Ottawa", "Scale", ",", "as", "suggested", "by", "Bazerbachi", "2018", "[", "10", "]", ",", "ranged", "from", "2/5", "[", "19", ",", "45", "]", "to", "5/5", "[", "15", ",", "20", ",", "23", ",", "24", ",", "29", ",", "37", ",", "43", ",", "46", "-", "49", "]", ",", "with", "higher", "scores", "indicating", "lower", "risk", "of", "bias", "(", "Table", "2", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "All", "evaluated", "studies", "succeeded", "in", "excluding", "cases", "that", "were", "not", "pertinent", "to", "the", "research", "question", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "domain", "that", "revealed", "the", "highest", "frequency", "of", "negative", "assessment", "was", "the", "one", "related", "to", "the", "representativeness", "of", "the", "exposed", "group", "." ]
+  }, {
+    "sentence_tokens" : [ "Detailed", "information", "on", "each", "of", "the", "domains", "is", "provided", "in", "Table", "2", "." ]
+  }, {
+    "sentence_tokens" : [ "Synthesis", "of", "results", "." ]
+  }, {
+    "sentence_tokens" : [ "Laboratory", "parameters", "in", "severe", "versus", "non", "severe", "patients", "and", "non", "surviving", "versus", "surviving", "patients", "with", "COVID-19", "are", "described", "in", "Table", "3", "." ]
+  }, {
+    "sentence_tokens" : [ "Lymphopenia", ",", "thrombocytopenia", "and", "higher", "levels", "of", "IL-6", ",", "ferritin", ",", "D-dimer", ",", "aspartate", "aminotransferase", ",", "lactate", "dehydrogenase", ",", "CRP", ",", "procalcitonin", ",", "creatinine", ",", "neutrophils", "and", "leukocytes", "were", "associated", "with", "severe", "and", "fatal", "cases", "of", "COVID-19", "." ]
+  }, {
+    "sentence_tokens" : [ "Abnormalities", "of", "hemoglobin", "were", "not", "associated", "with", "disease", "severity", "or", "increased", "mortality", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "explored", "the", "sources", "of", "heterogeneity", "by", "excluding", "studies", "with", "unclear", "timepoints", "of", "collection", "and", "studies", "that", "collected", "blood", "parameters", "after", "7", "days", "of", "hospital", "admission", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "no", "difference", "in", "the", "statistical", "heterogeneity", "across", "studies", "could", "be", "detected", "in", "this", "sensitivity", "analysis", ",", "except", "for", "d-dimer", "[", "MD", "5.94", ";", "CI", "5.16", "to", "6.73", ";", "N", "=", "2,459", ";", "I", "=", "0.19", "]", "and", "creatinine", "[", "MD", "19.44", ";", "CI", "16.79", "to", "22.10", ";", "N", "=", "1,689", ";", "I", "=", "0.49", "]", "in", "the", "mortality", "group", "." ]
+  }, {
+    "sentence_tokens" : [ "Meta-analysis", "of", "laboratory", "data", "." ]
+  }, {
+    "sentence_tokens" : [ "Nineteen", "studies", "assessed", "fatal", "and", "non", "fatal", "groups", "of", "patients", "with", "COVID-19", "and", "reported", "IL-6", "." ]
+  }, {
+    "sentence_tokens" : [ "Pooled", "results", "from", "these", "studies", "showed", "that", "the", "patients", "who", "progressed", "to", "death", "had", "higher", "levels", "of", "IL-6", "in", "comparison", "with", "those", "who", "survived", "[", "MD", "70.82", ";", "95", "%", "CI", "45.24", "to", "96.41", ";", "N", "=", "5,229", "]", "(", "Fig", "2A", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Pooled", "results", "from", "twenty-two", "studies", "of", "both", "severe", "and", "non", "severe", "cases", "revealed", "higher", "levels", "of", "Il-6", "in", "patients", "with", "severe", "COVID-19", "in", "comparison", "to", "the", "group", "of", "mild", "COVID-19", "cases", "[", "MD", "28.99", ";", "95", "%", "CI", "18.24", "to", "39.75", ";", "N", "=", "4,861", "]", "(", "Fig", "2B", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "pooled", "analysis", "of", "nine", "studies", "showed", "that", "patients", "with", "COVID-19", "who", "did", "not", "survive", "also", "had", "higher", "levels", "of", "ferritin", "[", "MD", "853.43", ";", "95", "%", "CI", "601.20", "to", "1105.67", ";", "N", "=", "2,088", "]", "(", "Fig", "2C", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Ferritin", "levels", "were", "reported", "in", "six", "studies", "[", "16", ",", "20", ",", "21", "]", ",", "with", "the", "meta-analysis", "of", "severe", "and", "non", "severe", "patients", "showing", "that", "patients", "with", "severe", "COVID-19", "had", "higher", "levels", "of", "ferritin", "[", "MD", "654.40", ";", "95", "%", "CI", "383.48", "to", "925.33", ";", "N", "=", "3,470", "]", "(", "Fig", "2D", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Sensitivity", "analysis", "was", "conducted", "on", "the", "IL-6", "parameters", "." ]
+  }, {
+    "sentence_tokens" : [ "Five", "studies", "were", "found", "to", "be", "outliers", "in", "the", "mortality", "group", "[", "14", ",", "29", ",", "32", ",", "33", ",", "43", "]", ",", "and", "three", "studies", "in", "the", "severity", "group", "[", "20", "-", "22", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "There", "was", "no", "change", "in", "the", "direction", "of", "the", "effect", "of", "the", "meta-analysis", "after", "their", "exclusion", "from", "this", "calculation", "[", "MD", "75.15", ";", "95", "%", "CI", "56.04", "to", "94.26", ";", "N", "=", "4,313", "]", "and", "[", "MD", "33.01", ";", "95", "%", "CI", "21.79", "to", "44.24", ";", "N", "=", "4,200", "]", ",", "respectively", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "used", "the", "Egger", "'", "s", "test", "to", "assess", "publication", "bias", ",", "and", "the", "test", "suggested", "the", "presence", "of", "publication", "bias", "in", "the", "meta-analysis", "on", "the", "association", "between", "IL-6", "and", "severity", "(", "p", "<", "0.001", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "No", "publication", "bias", "was", "detected", "in", "any", "other", "analyses", "(", "S2A", "and", "S2B", "Table", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Discussion", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "cytokine", "profile", "resembling", "secondary", "hemophagocytic", "lymphohistiocytosis", "is", "associated", "with", "severe", "COVID-19", "(", "2", "-", "4", ",", "[", "50", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "living", "systematic", "review", "with", "meta-analysis", ",", "a", "clear", "pattern", "of", "hematological", ",", "biochemical", ",", "inflammatory", ",", "and", "immune", "biomarker", "abnormalities", "could", "be", "found", "between", "patients", "with", "or", "without", "severe", "disease", "." ]
+  }, {
+    "sentence_tokens" : [ "These", "differences", "could", "allow", "for", "the", "identification", "of", "predictors", "of", "severe", "and", "fatal", "cases", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "found", "that", "lymphopenia", ",", "thrombocytopenia", "and", "high", "levels", "of", "ferritin", ",", "D-dimer", ",", "aspartate", "aminotransferase", ",", "lactate", "dehydrogenase", ",", "C-Reactive", "Protein", ",", "neutrophils", ",", "procalcitonin", "and", "creatinine", "are", "good", "indicators", "of", "both", "severe", "and", "fatal", "cases", "of", "COVID-19", "during", "the", "first", "days", "from", "illness", "onset", ",", "as", "is", "interleukin-6", ",", "the", "main", "cytokine", "involved", "in", "the", "CSS.As", "high", "inflammation", "is", "a", "primary", "cause", "of", "pathology", "in", "COVID-19", ",", "targeted", "anti-inflammatory", "treatments", "are", "being", "evaluated", "to", "reduce", "inflammation", "induced", "damage", "to", "the", "respiratory", "tract", "and", "to", "mitigate", "the", "cytokine", "storm", "[", "51", ",", "52", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Based", "on", "observational", "studies", "[", "53", ",", "54", "]", ",", "COVID-19", "progression", "has", "now", "been", "divided", "into", "three", "clinical", "phases", ":", "the", "viremia", "phase", ",", "the", "acute", "phase", "(", "pneumonia", ")", ",", "and", "the", "recovery", "phase", "." ]
+  }, {
+    "sentence_tokens" : [ "During", "the", "progression", "of", "the", "phases", ",", "as", "mentioned", "by", "Lin", "L", "et", "al.", "[", "54", "]", ",", "cells", "T", "and", "B", "reduce", ",", "while", "inflammatory", "cytokines", "and", "D-Dimer", "increase", "in", "severe", "patients", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "progression", "has", "led", "some", "authors", "to", "suggest", "that", "anti-inflammatory", "treatment", "should", "be", "started", "in", "the", "acute", "phase", "to", "inhibit", "the", "inflammatory", "storms", "[", "54", ",", "55", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "One", "of", "the", "central", "challenges", "to", "defining", "initial", "treatment", "for", "patients", "with", "COVID-19", "is", "the", "early", "identification", "of", "those", "individuals", "who", "will", "evolve", "into", "more", "severe", "forms", "of", "the", "disease", "and", "of", "those", "who", "require", "specific", "interventions", "or", "treatments.Several", "laboratory", "differences", "were", "observed", "between", "severe", "and", "non", "severe", "disease", "." ]
+  }, {
+    "sentence_tokens" : [ "Yuan", "X", "et", "al.", "[", "56", "]", "demonstrated", "that", "patients", "with", "severe", "or", "critical", "COVID-19", "had", "decreased", "red", "blood", "cells", "compared", "to", "non", "severe", "patients", "." ]
+  }, {
+    "sentence_tokens" : [ "Anemia", "occurs", "in", "approximately", "80", "%", "of", "patients", "with", "sHLH", ",", "plays", "an", "important", "role", "in", "its", "pathophysiology", ",", "and", "can", "be", "a", "cause", "of", "poor", "prognosis", "on", "these", "patients", "[", "57", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Nonetheless", ",", "our", "meta-analysis", "failed", "to", "find", "an", "association", "of", "low", "hemoglobin", "levels", "with", "severity", "or", "mortality", "rates", "among", "patients", "with", "COVID-19-related", "cytokine", "storms.The", "increased", "production", "(", "myelopoiesis", ")", "and", "mobilization", "of", "monocyte", "and", "neutrophil", "populations", "from", "the", "bone", "marrow", "is", "a", "response", "to", "many", "acute", "infections", "--", "including", "viral", "infections", "--", "and", "cytokines", "[", "58", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "These", "cells", "are", "typically", "considered", "proinflammatory", "and", "are", "recruited", "to", "the", "sites", "of", "inflammation", "where", "they", "can", "respond", "to", "pathogen", "associated", "molecular", "patterns", "(", "PAMPs", ")", "and", "damage", "associated", "molecular", "patterns", "(", "DAMPs", ")", "by", "producing", "interleukin-1", ",", "interleukin-6", ",", "interleukin-12", ",", "and", "tumor", "necrosis", "factor", "(", "TNF", ")", "[", "59", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Our", "data", "indicate", "that", "the", "increase", "in", "white", "blood", "cells", "is", "associated", "with", "elevated", "neutrophils", ",", "and", "this", "finding", "may", "signify", "clinical", "deterioration", "and", "increased", "risk", "of", "a", "poor", "outcome.Despite", "an", "increase", "in", "white", "blood", "cell", "count", ",", "we", "found", "that", "lymphocytes", "were", "significantly", "decreased", "in", "patients", "with", "severe", "COVID-19", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "result", "is", "consistent", "with", "those", "reported", "by", "Chen", "G", "et", "al.", "[", "16", "]", ",", "who", "demonstrated", "that", "the", "total", "lymphocyte", "count", ",", "and", "specifically", "CD4+", "T", "cells", "and", "CD8+", "T", "cells", ",", "were", "slightly", "lower", "in", "moderate", "cases", "and", "significantly", "decreased", "in", "severe", "COVID-19", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "study", "concluded", "that", "the", "cytokine", "storm", "is", "associated", "with", "COVID-19", "severity", ",", "likely", "through", "increased", "pulmonary", "pathology", ",", "T", "cell", "depletion", ",", "and", "CD4+", "T", "cell", "dysfunction.Our", "meta-analysis", "also", "found", "an", "association", "between", "lymphopenia", "and", "higher", "mortality", "." ]
+  }, {
+    "sentence_tokens" : [ "Wang", "F", "et", "al.", "[", "60", "]", "assessed", "the", "levels", "of", "peripheral", "lymphocyte", "subsets", "by", "flow", "cytometry", "in", "60", "hospitalized", "patients", "with", "COVID-19", "before", "and", "after", "treatment", "and", "their", "association", "with", "clinical", "characteristics", "and", "treatment", "efficacy", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "authors", "reported", "that", "total", "lymphocytes", ",", "CD4+", "T", "cells", ",", "CD8+", "T", "cells", ",", "B", "cells", ",", "and", "natural", "killer", "(", "NK", ")", "cells", "were", "decreased", "among", "patients", "with", "COVID-19", ",", "more", "so", "in", "severe", "cases", "than", "in", "mild", "cases", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "their", "analysis", ",", "the", "subsets", "of", "lymphocytes", "showed", "a", "significant", "association", "with", "inflammatory", "status", "in", "COVID-19", ",", "especially", "CD8+", "T", "cells", "and", "CD4", "+/CD8+", "ratio.Thrombocytopenia", "is", "a", "recurrent", "complication", "among", "patients", "requiring", "intensive", "care", ",", "regardless", "of", "the", "cause", "of", "hospitalization", ",", "and", "represents", "a", "marker", "of", "poor", "prognosis", "[", "61", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Our", "meta-analysis", "demonstrated", "that", "thrombocytopenia", "could", "be", "a", "predictor", "of", "severity", "and", "mortality", "in", "patients", "with", "COVID-19.Many", "inflammatory", "factors", "can", "cause", "systemic", "damage", "and", "multi-organ", "failure", "." ]
+  }, {
+    "sentence_tokens" : [ "High", "serum", "levels", "of", "CRP", ",", "AST", ",", "LDH", ",", "and", "ferritin", "in", "patients", "with", "COVID-19", "may", "indicate", "that", "liver", "dysfunctions", "have", "been", "involved", ",", "and", "target", "treatments", "should", "be", "taken", "in", "time", "to", "prevent", "irreversible", "organ", "damage", "and", "increased", "risk", "of", "mortality", "[", "64", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Liver", "damage", "in", "these", "patients", "might", "be", "directly", "caused", "by", "the", "viral", "infection", "of", "liver", "cells", ";", "indeed", ",", "pathological", "studies", "[", "65", ",", "66", "]", "have", "confirmed", "the", "presence", "of", "the", "SARS-CoV", "in", "liver", "tissues.Procalcitonin", "levels", "are", "generally", "undetectable", "in", "healthy", "individuals", "and", "remain", "unchanged", "or", "moderately", "increase", "in", "those", "with", "virus", "infection", "or", "systemic", "inflammatory", "diseases", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "its", "levels", "increase", "significantly", "in", "cases", "of", "generalized", "infection", ",", "mainly", "bacterial", "or", "fungal", "[", "67", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "systematic", "review", ",", "procalcitonin", "levels", "increased", "significantly", "in", "non", "survivors", "but", "only", "showed", "a", "small", "effect", "size", "in", "studies", "comparing", "severe", "versus", "non", "severe", "patients", "." ]
+  }, {
+    "sentence_tokens" : [ "Considering", "that", "procalcitonin", "is", "a", "good", "predictor", "of", "bacterial", "infection", ",", "the", "non", "survivors", "possibly", "progressed", "to", "sepsis", ",", "an", "often-fatal", "complication", "in", "patients", "with", "COVID-19", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "line", "with", "this", "hypothesis", ",", "in", "the", "meta-analysis", "published", "by", "Lippi", "G", "and", "Plebani", "M", "[", "68", "]", ",", "a", "significant", "increase", "in", "procalcitonin", "levels", "was", "associated", "with", "bacterial", "co-infection", ",", "progression", "to", "severe", "forms", "of", "COVID-19", ",", "and", "death.The", "activation", "of", "the", "coagulation", "process", "is", "a", "fundamental", "mechanism", "of", "the", "etiopathogenesis", "of", "SARS-CoV-2", "infections", "and", "often", "leads", "to", "poor", "outcomes", "." ]
+  }, {
+    "sentence_tokens" : [ "Ultimately", "fatal", "cases", "often", "evolve", "from", "life", "threatening", "disseminated", "intravascular", "coagulation", "requiring", "prompt", "intervention", "[", "69", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Recent", "clinical", "experiences", "with", "anticoagulants", "suggest", "that", "these", "substances", "are", "associated", "with", "a", "lower", "risk", "of", "thromboembolic", "disease", "and", "severe", "ischemic", "manifestations", "in", "some", "patients", "." ]
+  }, {
+    "sentence_tokens" : [ "Thus", ",", "it", "is", "imperative", "to", "identify", "patients", "at", "high", "risk", "for", "early", "anticoagulation", "in", "COVID-19", "." ]
+  }, {
+    "sentence_tokens" : [ "Tang", "N", "et", "al.", "[", "70", "]", "reported", "that", "the", "non", "surviving", "patients", "with", "COVID-19", "had", "higher", "fibrin", "related", "markers", "(", "D-dimer", "and", "fibrin", "degradation", "product", ")", "at", "admission", "compared", "with", "survivors", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "present", "systematic", "review", ",", "increased", "levels", "of", "D-dimer", "at", "hospital", "admission", "could", "be", "a", "good", "predictor", "of", "severe", "and", "fatal", "cases", "of", "COVID-19", "." ]
+  }, {
+    "sentence_tokens" : [ "Another", "meta-analysis", "showed", "a", "similar", "result", "of", "the", "discriminatory", "ability", "of", "D-dimer", "in", "patients", "with", "and", "without", "severe", "forms", "of", "COVID-19", "but", "did", "not", "provide", "data", "on", "mortality", "[", "71", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Several", "studies", "suggested", "that", "markedly", "elevated", "ferritin", "in", "hospitalized", "patients", "is", "often", "associated", "with", "hemophagocytic", "lymphohistiocytosis", "syndrome", ",", "but", "cannot", "be", "considered", "as", "a", "specific", "marker", "[", "72", "-", "74", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Ferritin", "is", "an", "acute", "protein", "that", "increases", "in", "response", "to", "a", "broad", "spectrum", "of", "inflammatory", "states", ",", "including", "infections", ",", "malignancy", ",", "iron", "overload", ",", "and", "liver", "or", "kidney", "disease", "[", "75", ",", "76", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "our", "meta-analysis", ",", "the", "findings", "clarify", "the", "role", "of", "ferritin", "in", "the", "assessment", "of", "the", "systemic", "hyper-inflammation", "and", "can", "explain", "the", "relationship", "between", "hyperferritinemia", "and", "high", "levels", "of", "IL-6", "among", "adult", "patients", "with", "COVID-19", "." ]
+  }, {
+    "sentence_tokens" : [ "Regarding", "immunological", "biomarkers", ",", "we", "believe", "that", "both", "parameters", "can", "be", "used", "as", "red", "flags", "for", "severe", "and", "fatal", "cases", "of", "COVID-19", "infection", "at", "hospital", "admission", "." ]
+  }, {
+    "sentence_tokens" : [ "Additionally", ",", "ferritin", "and", "C-reactive", "protein", "appear", "to", "be", "screening", "tools", "for", "the", "early", "diagnosis", "of", "a", "systemic", "inflammatory", "response", "syndrome", "in", "patients", "with", "a", "severe", "form", "of", "COVID-19", "(", "denominated", "CSS", ")", ",", "with", "lower", "cost", "and", "wider", "availability", "in", "frontline", "clinical", "practice", "than", "IL-6.Despite", "these", "rigorous", "efforts", "to", "guide", "clinicians", "in", "diagnosing", "CSS", ",", "discriminating", "this", "pathology", "from", "other", "conditions", ",", "particularly", "sepsis", "or", "disseminated", "intravascular", "coagulation", ",", "remains", "challenging", "due", "to", "the", "large", "degree", "of", "overlap", "in", "clinical", "presentation", "[", "77", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "biomarkers", "that", "identify", "which", "patients", "will", "evolve", "with", "the", "severe", "forms", "of", "COVID-19", "have", "substantial", "clinical", "applicability", "." ]
+  }, {
+    "sentence_tokens" : [ "Our", "review", "demonstrated", "that", "older", "age", ",", "male", "gender", ",", "and", "comorbidities", "represent", "potential", "risk", "factors", "for", "severe", "and", "fatal", "cases", ",", "as", "has", "already", "been", "reported", "in", "the", "scientific", "literature", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "review", "also", "confirms", "that", "certain", "laboratory", "tests", "that", "are", "part", "of", "routine", "care", "have", "also", "been", "reliably", "associated", "with", "severe", "and", "fatal", "cases", "of", "COVID-19", ",", "and", "including", "serum", "IL-6", "could", "be", "relevant", "for", "prognosis", "but", "could", "also", "improve", "therapeutic", "decision", "making", "." ]
+  }, {
+    "sentence_tokens" : [ "Limitations", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "main", "limitations", "of", "this", "review", "stem", "from", "the", "nature", "of", "the", "included", "studies", ";", "all", "included", "studies", "were", "observational", "as", "they", "were", "published", "with", "the", "inherent", "urgency", "of", "a", "global", "pandemic", "." ]
+  }, {
+    "sentence_tokens" : [ "Although", "these", "are", "study", "designs", "with", "a", "lower", "level", "of", "evidence", ",", "the", "Newcastle-Ottawa", "Scale", "assessment", "of", "the", "risk", "of", "bias", "of", "the", "included", "studies", "did", "not", "show", "any", "salient", "risks", "." ]
+  }, {
+    "sentence_tokens" : [ "Another", "chief", "limitation", "lies", "in", "the", "fact", "that", "most", "patients", "are", "of", "Asian", "origin", ",", "which", "may", "compromise", "the", "external", "validity", "of", "this", "meta-analysis.Assessing", "the", "statistical", "heterogeneity", "of", "the", "included", "studies", "is", "an", "essential", "component", "of", "interpreting", "the", "results", "of", "any", "meta-analysis", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "present", "study", ",", "the", "meta-analysis", "of", "most", "outcomes", "showed", "considerable", "heterogeneity", ",", "requiring", "a", "more", "detailed", "examination", "of", "the", "studies", "in", "order", "to", "determine", "possible", "causes", "for", "this", "issue", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "attempted", "to", "explore", "sources", "of", "statistical", "heterogeneity", "by", "thoroughly", "examining", "clinical", "and", "methodological", "heterogeneity", "across", "studies", "and", "by", "performing", "sensitivity", "analysis", "." ]
+  }, {
+    "sentence_tokens" : [ "While", "we", "explored", "the", "sources", "of", "heterogeneity", "in", "the", "meta-analyses", ",", "we", "could", "not", "find", "differences", "that", "could", "explain", "the", "sources", "of", "heterogeneity", "across", "studies.As", "the", "clinical", "course", "of", "patients", "with", "COVID-19", "may", "widely", "vary", "across", "individuals", ",", "unexplored", "clinical", "parameters", "may", "explain", "this", "heterogeneity", "." ]
+  }, {
+    "sentence_tokens" : [ "Different", "definitions", "of", "the", "term", "\"", "severity", "\"", "adopted", "by", "each", "author", ",", "some", "variables", "such", "as", "the", "time", "taken", "to", "collect", "laboratory", "tests", "or", "the", "number", "of", "the", "days", "from", "symptoms", "onset", "of", "COVID-19", "to", "hospital", "admission", "may", "also", "have", "notably", "contributed", "to", "this", "circumstance", "." ]
+  }, {
+    "sentence_tokens" : [ "Discrepancies", "in", "reporting", "and", "detailing", "patients", "'", "comorbidities", "in", "each", "study", "may", "also", "have", "reinforced", "heterogeneity", "." ]
+  }, {
+    "sentence_tokens" : [ "Although", "considerable", ",", "the", "heterogeneity", "does", "not", "compromise", "the", "robustness", "of", "this", "meta-analysis", ",", "as", "it", "did", "not", "interfere", "with", "the", "direction", "and", "the", "magnitude", "of", "effects", "." ]
+  }, {
+    "sentence_tokens" : [ "As", "this", "study", "is", "underpowered", "to", "investigate", "the", "underlying", "mechanism", "of", "these", "inflammatory", "markers", "with", "the", "severity", "of", "COVID-19", ",", "further", "studies", "aiming", "at", "analyzing", "pathophysiological", "mechanisms", "of", "COVID-19", "are", "needed.We", "also", "examined", "evidence", "of", "publication", "bias", "in", "our", "meta-analyses", ",", "and", "the", "presence", "of", "non", "reporting", "bias", "was", "suggested", "in", "the", "meta-analysis", "on", "the", "association", "of", "IL-6", "with", "severity", "." ]
+  }, {
+    "sentence_tokens" : [ "As", "we", "found", "important", "heterogeneity", "in", "this", "meta-analysis", "and", "tests", "for", "adjusting", "for", "funnel", "plot", "asymmetry", "such", "as", "the", "trim", "and", "fill", "method", "are", "known", "to", "perform", "poorly", "when", "there", "is", "large", "between-study", "heterogeneity", "[", "78", "]", ",", "we", "did", "not", "perform", "trim", "and", "fill", "test", "." ]
+  }, {
+    "sentence_tokens" : [ "Of", "note", ",", "small-study", "effects", "may", "be", "due", "to", "reasons", "other", "than", "publication", "bias", ",", "such", "as", "heterogeneity", "[", "6", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "It", "is", "likely", "that", "asymmetry", "in", "this", "meta-analysis", "is", "also", "due", "to", "heterogeneity", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "believe", "that", "IL-6", "acts", "as", "a", "major", "pro", "inflammatory", "mediator", "for", "the", "acute", "severe", "systemic", "inflammatory", "response", ",", "leading", "to", "a", "wide", "range", "of", "local", "and", "systemic", "changes", ",", "leucocytes", "recruitment", "and", "activation", "and", "hemodynamic", "effects", "." ]
+  }, {
+    "sentence_tokens" : [ "Thus", ",", "unexplored", "pathophysiological", "mechanisms", "may", "justify", "this", "heterogeneity", "and", "those", "results.Systematic", "reviews", "and", "meta-analysis", "of", "prospective", "studies", ",", "with", "standardized", "COVID-19", "severity", "criterion", "in", "a", "more", "global", "population", "sample", ",", "could", "be", "the", "key", "to", "better", "understanding", "the", "cytokine", "storm", "influences", "in", "patients", "infected", "with", "SARS-CoV-2", "and", "their", "outcomes", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "believe", "that", "the", "results", "of", "our", "review", "and", "meta-analysis", "including", "a", "relevant", "number", "of", "patients", ",", "especially", "those", "related", "to", "IL-6", "and", "ferritin", ",", "can", "be", "extrapolated", "to", "the", "real", "world", ",", "supporting", "clinical", "practice", "in", "coping", "with", "COVID-19", "and", "may", "help", "decision", "making", "processes", "." ]
+  }, {
+    "sentence_tokens" : [ "As", "this", "is", "a", "living", "review", ",", "we", "are", "committed", "to", "keeping", "it", "updated", "as", "new", "evidence", "is", "published", "." ]
+  }, {
+    "sentence_tokens" : [ "Conclusions", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "review", "points", "to", "lymphopenia", ",", "thrombocytopenia", ",", "neutrophilia", ",", "leukocytosis", "as", "well", "as", "increased", "levels", "of", "IL-6", ",", "ferritin", ",", "D-dimer", ",", "aspartate", "aminotransferase", ",", "lactate", "dehydrogenase", ",", "procalcitonin", ",", "creatinine", "and", "CRP", "as", "indicators", "of", "severe", "and", "fatal", "cases", "of", "COVID-19", "." ]
+  }, {
+    "sentence_tokens" : [ "Ferritin", "and", "IL-6", "are", "significant", "biomarkers", "of", "CSS", ",", "and", "increases", "in", "levels", "of", "either", "could", "be", "considered", "red", "flags", "of", "systemic", "inflammation", "and", "poor", "prognosis", "in", "COVID-19", ",", "especially", "in", "the", "oldest", "patients", "and", "those", "with", "comorbidities", "." ]
+  } ]
+}

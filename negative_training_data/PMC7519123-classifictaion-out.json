@@ -1,1 +1,255 @@
-[ ]
+{
+  "regulations" : [ ],
+  "hardInstances" : [ ],
+  "withoutRegulations" : [ {
+    "sentence_tokens" : [ "Finally", ",", "we", "remark", "that", "there", "might", "be", "multiple", "meaningful", "community", "divisions", "in", "the", "network", ",", "and", "the", "fact", "that", "MTCOV", "'", "s", "partition", "seems", "to", "better", "capture", "the", "distributions", "in", "the", "attribute", "caste", "does", "not", "mean", "than", "one", "algorithm", "is", "better", "than", "the", "other", "." ],
+    "entities_indices" : [ [ 20, 21, 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "Doing", "the", "same", "for", "the", "other", "parameters", "yields", "(", "see", "Supplementary", "Section", "S1", "for", "details", ")", ":13", "uik", "=", "gamma", "sum", "zxizhizk+", "(", "1-gamma", ")", "sum", "j", ",", "l", ",", "alpha", "Aij", "(", "alpha", ")", "rho", "ijkl", "(", "alpha", ")", "gamma+", "(", "1-gamma", ")", "sum", "j", ",", "alpha", "Aij", "(", "alpha", ")", "14vik", "=", "gamma", "sum", "zxizhizk+", "(", "1-gamma", ")", "sum", "j", ",", "l", ",", "alpha", "Aji", "(", "alpha", ")", "rho", "jilk", "(", "alpha", ")", "gamma+", "(", "1-gamma", ")", "sum", "j", ",", "alpha", "Aji", "(", "alpha", ")", "15wkl", "(", "alpha", ")", "=", "sum", "i", ",", "jAij", "(", "alpha", ")", "rho", "ijkl", "(", "alpha", ")", "sum", "iuik", "sum", "jvjl", ",", "where", "Eq", "." ],
+    "entities_indices" : [ [ 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27 ] ]
+  }, {
+    "sentence_tokens" : [ "Each", "type", "of", "support", "corresponds", "to", "a", "layer", "in", "the", "network", ";", "we", "consider", "only", "those", "layers", "present", "in", "both", "rounds", ",", "for", "a", "total", "of", "L", "=", "6", "layers", "." ],
+    "entities_indices" : [ [ 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "move", "beyond", "MULTITENSOR", "by", "incorporating", "node", "covariates", "via", "introducing", "a", "proper", "likelihood", "term", "that", "accounts", "for", "this", "extra", "information", "." ],
+    "entities_indices" : [ [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "observe", "that", "MTCOV", "is", "significantly", "more", "robust", "than", "the", "algorithm", "that", "does", "not", "use", "any", "attribute", "information", ",", "regardless", "of", "the", "value", "of", "gamma", "." ],
+    "entities_indices" : [ [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "leads", "to", "the", "log-likelihood", "LX", "(", "U", ",", "V", ",", "beta", ")", "for", "the", "attribute", "dimension", ":6", "LX", "(", "U", ",", "V", ",", "beta", ")", "=", "sum", "i", "=", "1N", "sum", "z", "=", "1Zxizlog", "(", "pi", "iz", ")", "=", "sum", "i", ",", "zxizlog", "(", "12", "sum", "k", "beta", "kz", "(", "uik+", "vik", ")", ")", "." ],
+    "entities_indices" : [ [ 43, 44, 45, 46, 47, 48, 49, 50 ], [ 51, 52, 53 ] ]
+  }, {
+    "sentence_tokens" : [ "ui0", "|", "|", "ui", "|", "|", "2", "|", "|", "ui0", "|", "|", "2", "=", "1N", "sum", "i", "=", "1N", "sum", "k", "=", "1Cuikuik0", "|", "|", "ui", "|", "|", "2", "|", "|", "ui0", "|", "|", "218L1", "(", "U", ",", "U0", ")", "=", "12N", "sum", "i", "=", "1N", "|", "|", "ui-ui0", "|", "|", "1", "=", "12N", "sum", "i", "=", "1N", "sum", "k", "=", "1C", "|", "uik-uik0", "|", ",", "where", "ui", "is", "the", "C-dimensional", "vector", "containing", "the", "i-th", "row", "of", "U", ",", "representing", "the", "detected", "membership", "and", "similarly", "for", "ui0", "for", "the", "ground-truth", "U0", "." ],
+    "entities_indices" : [ [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 ], [ 36, 37, 38, 39, 40, 41 ], [ 86, 87 ], [ 89, 90, 91 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "robustness", "of", "MTCOV", "is", "also", "confirmed", "by", "analyzing", "the", "performances", "on", "a", "trial-by-trail", "basis", ",", "each", "trial", "being", "a", "random", "sample", "of", "the", "held-out", "entries", "." ],
+    "entities_indices" : [ [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "add", "Lagrange", "multipliers", "lambda", "=", "lambda", "(", "beta", ")", ",", "lambda", "(", "u", ")", ",", "lambda", "(", "v", ")", "to", "enforce", "constraints", ":11", "L", "'", "(", "Theta", ",", "h", ",", "rho", ",", "lambda", ")", "=L", "(", "Theta", ",", "h", ",", "rho", ")-sum", "k", "lambda", "k", "(", "beta", ")", "sum", "z", "=", "1Z", "beta", "kz-1-sum", "i", "lambda", "i", "(", "u", ")", "sum", "k", "=", "1Cuik-1-sum", "i", "lambda", "i", "(", "v", ")", "sum", "k", "=", "1Cvik-1.For", "instance", ",", "focusing", "on", "the", "update", "for", "beta", "zk", ",", "setting", "the", "derivative", "with", "respect", "to", "it", "in", "Eq", "." ],
+    "entities_indices" : [ [ 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68 ], [ 82, 83, 84 ], [ 93, 94 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "modeling", "the", "likelihood", "of", "the", "network", "topology", ",", "we", "adopt", "the", "ideas", "behind", "MULTITENSOR", ":", "we", "assume", "that", "the", "expected", "number", "of", "edges", "of", "type", "alpha", "from", "i", "to", "j", "is", "given", "by", "the", "parameter", ":1", "Mij", "(", "alpha", ")", "=", "sum", "k", ",", "l", "=", "1Cuikvjlwkl", "(", "alpha", ")", "." ],
+    "entities_indices" : [ [ 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "is", "also", "supported", "by", "a", "trial-by-trial", "comparison", "shown", "in", "Fig.", "6", "for", "F1-score", "(", "similar", "results", "are", "obtained", "for", "Jaccard", ")", ",", "where", "we", "find", "that", "MTCOV", "is", "more", "accurate", "in", "59", "%", "and", "90", "%", "of", "the", "cases", "than", "NC", "and", "CESNA", ",", "respectively", "." ],
+    "entities_indices" : [ [ 41, 42 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "is", "a", "set", "of", "graphs", "G", "={", "G", "(", "alpha", ")", "V", ",", "E", "(", "alpha", ")", "}", "1", "<=", "alpha", "<=", "L", "defined", "on", "a", "set", "V", "of", "N", "vertices", "shared", "across", "L", ">=", "1", "layers", ",", "and", "E", "(", "alpha", ")", "is", "the", "set", "of", "edges", "in", "the", "layer", "alpha", "." ],
+    "entities_indices" : [ [ 5, 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "Here", "we", "select", "(", "C", "^", ",", "gamma", "^", ")", "as", "the", "values", "are", "jointly", "closer", "to", "both", "the", "maximum", "values", "." ],
+    "entities_indices" : [ [ 7, 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "Specifically", ",", "we", "compare", "the", "communities", "extracted", "by", "our", "algorithm", "and", "those", "inferred", "by", "MULTITENSOR", "." ],
+    "entities_indices" : [ [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "One", "might", "then", "be", "tempted", "to", "adopt", "such", "methods", "also", "in", "multilayer", "networks", "by", "collapsing", "the", "topological", "structure", "into", "a", "suitable", "single", "network", "that", "can", "then", "be", "given", "in", "input", "to", "these", "single-layer", "and", "node", "attributed", "methods", "as", "done", "by", "Gheche", "et", "al.", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "updates", "for", "uik", "and", "vik", "are", "instead", "quite", "different", ";", "the", "main", "reason", "is", "that", "here", "we", "incorporated", "the", "node", "attributes", ",", "which", "appear", "both", "explicitly", "and", "implicitly", "(", "through", "h", ")", "inside", "the", "updates", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ ",", "xiZ", ")", ",", "the", "realization", "of", "the", "random", "variable", "Xi", ":", "xiz", "=", "1", "if", "node", "i", "has", "attribute", "corresponding", "to", "category", "z", ",", "0", "otherwise", "and", "sum", "z", "=", "1Zxiz", "=", "1", ";", "the", "original", "design", "matrix", "XN", "x", "1", "is", "thus", "translated", "into", "a", "binary", "matrix", "XN", "x", "Z.We", "then", "assume", "that", "each", "entry", "Xi", "of", "the", "design", "matrix", "is", "extracted", "from", "a", "multinomial", "distribution", "of", "parameter", "pi", "i", ",", "which", "yields", "the", "likelihood", "of", "the", "covariates", ":5", "PX", "(", "Xi", "=", "xi", "|", "U", ",", "V", ",", "beta", ")", "=", "PX", "(", "Xi1", "=", "xi1", ",", "..." ],
+    "entities_indices" : [ [ 81, 82 ], [ 94, 95 ], [ 96, 97, 98, 99 ] ]
+  }, {
+    "sentence_tokens" : [ "Results", "on", "synthetic", "data", "show", "that", "MTCOV", "and", "NC", "have", "similar", "performance", "in", "correctly", "classifying", "nodes", "in", "their", "ground-truth", "communities", "and", "both", "are", "better", "than", "CESNA", ";", "the", "main", "difference", "is", "that", "MTCOV", "is", "more", "stable", "and", "has", "less", "variance", "for", "high", "attribute", "correlation", ",", "in", "particular", "in", "the", "hard", "regime", "where", "classification", "is", "more", "difficult", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "find", "that", "MTCOV", "has", "smaller", "entropies", "over", "the", "groups", ",", "with", "two", "groups", "having", "the", "smallest", "values", ",", "whereas", "MULTITENSOR", "has", "the", "highest", ",", "showing", "its", "tendency", "to", "cluster", "individuals", "of", "different", "castes", "into", "the", "same", "group", "." ],
+    "entities_indices" : [ [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "addition", ",", "we", "observe", "that", "MTCOV", "has", "a", "more", "heterogenous", "group", "size", "distribution", "which", "seems", "to", "be", "correlated", "with", "caste", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "fact", ",", "even", "though", "performance", "deteriorates", "as", "we", "decrease", "the", "number", "of", "positive", "examples", "in", "the", "training", "set", "(", "i.e", ".,", "higher", "tpe", ")", ",", "MTCOV", "is", "less", "impacted", "by", "this", ",", "as", "shown", "in", "Fig.", "2", "(", "results", "reported", "in", "Supplementary", "Table", "S3", ")", "." ],
+    "entities_indices" : [ [ 26, 27 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "EM", "algorithm", "performs", "these", "steps", "by", "alternatively", "updating", "h", ",", "rho", "(", "Expectation", "step", ")", "and", "Theta", "(", "Maximization", "step", ")", ";", "this", "is", "done", "starting", "from", "a", "random", "configuration", "until", "L", "(", "Theta", ",", "h", ",", "rho", ")", "reaches", "a", "fixed", "point", "." ],
+    "entities_indices" : [ [ 14, 15 ], [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "Here", "we", "consider", "rescaling", "LG", "and", "LX", "only", "in", "studying", "the", "social", "support", "networks", "of", "Indian", "villages", ",", "as", "we", "have", "enough", "data", "for", "estimating", "the", "normalization", "coefficients", ";", "see", "Supplementary", "Section", "S3.1", "for", "details.We", "wish", "to", "find", "the", "Theta", "=(", "U", ",", "V", ",", "W", ",", "beta", ")", "that", "maximizes", "Eq", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 6, 7 ], [ 32, 33 ], [ 35, 36 ], [ 51, 52 ] ]
+  }, {
+    "sentence_tokens" : [ "(", "11", ")", "to", "zero", "and", "enforcing", "the", "constraint", "sum", "z", "=", "1Z", "beta", "kz", "=", "1", "gives", "lambda", "k", "(", "beta", ")", "=", "gamma", "sum", "i", ",", "zxizhizk", ";", "plugging", "this", "back", "finally", "gives", ":12", "beta", "kz", "=", "sum", "ixizhizk", "sum", "i", ",", "zxizhizk", ",", "which", "is", "valid", "for", "gamma", "!=", "0", "." ],
+    "entities_indices" : [ [ 8, 9, 10, 11, 12, 13, 14, 15, 16, 17 ], [ 18, 19, 20, 21, 22, 23, 24, 25, 26, 27 ], [ 28, 29 ], [ 44, 45 ], [ 50, 51, 52, 53 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "demonstrate", "our", "model", "beyond", "synthetic", "data", "by", "applying", "it", "to", "social", "support", "networks", "of", "two", "villages", "in", "Tamil", "Nadu", ",", "India", ",", "which", "we", "call", "by", "the", "pseudonyms", "\"", "Tenpa", "t", "t", "i", "\"", "(", "Ten", ")", "and", "\"", "Alak", "a", "puram", "\"", "(", "Ala", ")", "." ],
+    "entities_indices" : [ [ 30, 31, 32, 33, 34, 35 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "experiments", "where", "one", "of", "the", "two", "hyperparameters", "is", "fixed", "a", "priori", ",", "we", "run", "the", "same", "procedure", "but", "vary", "with", "grid", "search", "only", "the", "unknown", "hyperparameter", "." ],
+    "entities_indices" : [ [ 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "find", "that", "MTCOV", "performs", "well", "in", "predicting", "missing", "links", "and", "attributes", "." ],
+    "entities_indices" : [ [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "then", "select", "the", "combination", "(", "C", "^", ",", "gamma", "^", ")", "that", "returns", "the", "best", "average", "performance", "over", "the", "cross", "validation", "runs", "." ],
+    "entities_indices" : [ [ 9, 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "soft", "partitions", ",", "we", "consider", "two", "standard", "metrics", "for", "measuring", "distance", "between", "vectors", "as", "done", "by", "De", "Bacco", "et", "al.", ",", "such", "as", "cosine", "similarity", "(", "CS", ")", "and", "L1", "error", ",", "averaged", "over", "the", "nodes", ":17", "CS", "(", "U", ",", "U0", ")", "=", "1N", "sum", "i", "=", "1Nui", "." ],
+    "entities_indices" : [ [ 27, 28 ], [ 38, 39 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "contrast", ",", "the", "way", "in", "which", "MTCOV", "defines", "a", "community", "which", "spans", "caste", "boundaries", "(", "MTCOV", "C1", ")", "aligns", "with", "ethnographic", "knowledge", "of", "the", "relations", "between", "these", "castes", "." ],
+    "entities_indices" : [ [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "At", "the", "same", "time", ",", "if", "incorporating", "attribute", "information", "hurts", "inference", "tasks", ",", "the", "model", "will", "downweigh", "this", "contribution", "and", "instead", "use", "mostly", "the", "topological", "network", "structure.Our", "method", "allows", "domain", "experts", "to", "investigate", "particular", "attributes", "and", "select", "relevant", "community", "partitions", "based", "on", "what", "type", "of", "node", "information", "they", "are", "interested", "in", "studying", "." ],
+    "entities_indices" : [ [ 43, 44 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "other", "attributes", "are", "less", "informative", ";", "in", "particular", "age", "has", "a", "performance", "similar", "to", "MULTITENSOR", "in", "edge", "prediction", ",", "signalling", "that", "it", "does", "not", "contribute", "to", "inform", "edge", "formation", "." ],
+    "entities_indices" : [ [ 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ ",", "XiZ", "=", "xiZ", "|", "U", ",", "V", ",", "beta", ")", "=", "pi", "i1xi1", "..." ],
+    "entities_indices" : [ [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "While", "the", "communities", "identified", "by", "MTCOV", "and", "MULTITENSOR", "show", "substantial", "similarities", ",", "MTCOV", "generally", "classifies", "castes", "more", "consistently", "into", "distinct", "communities", ",", "as", "we", "show", "in", "Figs", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "each", "i", ",", "z", "with", "Xiz", "=", "1", ",", "hizk", "represents", "our", "estimate", "of", "the", "probability", "that", "the", "i-th", "node", "has", "the", "z-th", "category", ",", "given", "that", "it", "belongs", "to", "the", "community", "k.", "On", "the", "other", "hand", ",", "for", "each", "i", ",", "j", ",", "alpha", "with", "Aij", "(", "alpha", ")", "=", "1", ",", "rho", "ijkl", "(", "alpha", ")", "is", "the", "probability", "distribution", "over", "pairs", "of", "groups", "k", ",", "l.Using", "Jensen", "'", "s", "inequality", "logx", " " ],
+    "entities_indices" : [ [ 10, 11 ], [ 54, 55, 56 ] ]
+  }, {
+    "sentence_tokens" : [ "Calculating", "Eq", "." ],
+    "entities_indices" : [ [ 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "further", "assume", "that", ",", "given", "the", "memberships", "and", "affinity", "matrices", ",", "the", "edges", "are", "distributed", "independently", ";", "this", "is", "again", "a", "conditional", "independence", "assumption.We", "can", "then", "write", "the", "likelihood", "of", "the", "network", "topology", "as", ":2", "PG", "(", "A", "|", "U", ",", "V", ",", "W", ")", "=", "product", "i", ",", "j", "=", "1N", "product", "alpha", "=", "1Le-Mij", "(", "alpha", ")", "Mij", "(", "alpha", ")", "Aij", "(", "alpha", ")", "Aij", "(", "alpha", ")", "!,", "which", "leads", "to", "the", "log-likelihood", "LG", "(", "U", ",", "V", ",", "W", ")", "for", "the", "structural", "dimension", ":3", "LG", "(", "U", ",", "V", ",", "W", ")", "=", "sum", "i", ",", "j", ",", "alpha", "[", "Aij", "(", "alpha", ")", "log", "sum", "k", ",", "luikvjlwkl", "(", "alpha", ")-sum", "k", ",", "luikvjlwkl", "(", "alpha", ")", "]", ",", "where", "we", "have", "neglected", "constants", "that", "do", "not", "depend", "on", "the", "parameters", "." ],
+    "entities_indices" : [ [ 36, 37 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "also", "implies", "that", ",", "upon", "convergence", ",", "we", "can", "directly", "interpret", "the", "memberships", "as", "soft", "community", "assignments", "(", "or", "overlapping", ")", "without", "the", "need", "of", "post-processing", "their", "values", ";", "in", "words", ",", "uik", "represent", "the", "probability", "of", "node", "i", "to", "belong", "to", "the", "outgoing", "community", "k", ",", "similarly", "for", "vik", "and", "an", "incoming", "membership", "." ],
+    "entities_indices" : [ [ 50, 51 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "estimate", "them", "by", "using", "5-fold", "cross", "validation", "along", "with", "grid", "search", "to", "range", "across", "their", "possible", "values", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ ",", "L", "}", "is", "a", "graph", "G", "(", "alpha", ")", "(", "V", ",", "E", "(", "alpha", ")", ")", "with", "adjacency", "matrix", "A", "(", "alpha", ")", "=[", "aij", "(", "alpha", ")", "]", "in", "RN", "x", "N", ",", "where", "aij", "(", "alpha", ")", "is", "the", "number", "of", "edges", "of", "type", "alpha", "from", "i", "to", "j", ";", "here", "we", "consider", "only", "positive", "discrete", "entries", ";", "for", "binary", "entries", ",", "E", "=", "sum", "i", ",", "j", ",", "alpha", "aij", "(", "alpha", ")", "is", "the", "total", "the", "number", "of", "edges", "." ],
+    "entities_indices" : [ [ 32, 33 ], [ 47, 48 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "measure", "the", "probability", "of", "observing", "an", "edge", "as", "the", "predicted", "expected", "Poisson", "parameters", "of", "Eq", "." ],
+    "entities_indices" : [ [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "An", "experimental", "analysis", "of", "the", "computational", "time", "is", "provided", "in", "the", "Supplementary", "Section", "S2.Notice", "that", ",", "although", "we", "started", "from", "a", "network", "log-likelihood", "LG", "(", "U", ",", "V", ",", "W", ")", "similar", "to", "the", "one", "proposed", "in", "the", "MULTITENSOR", "model", ",", "the", "only", "update", "preserved", "from", "that", "is", "the", "one", "of", "wkl", "in", "Eq", "." ],
+    "entities_indices" : [ [ 53, 54 ] ]
+  }, {
+    "sentence_tokens" : [ "CESNA", ",", "similarly", "to", "our", "model", ",", "assumes", "conditional", "independence", "of", "the", "two", "likelihoods", "and", "introduces", "a", "regularization", "parameter", "between", "them", ";", "it", "uses", "block-coordinate", "ascent", "for", "parameters", "'", "estimation", ",", "while", "NC", "uses", "an", "EM", "algorithm", "for", "parameters", "'", "estimation", ",", "similarly", "to", "what", "we", "do", "here", "." ],
+    "entities_indices" : [ [ 32, 33 ] ]
+  }, {
+    "sentence_tokens" : [ "Namely", ",", "we", "introduce", "two", "probability", "distributions", ":", "hikz", "and", "rho", "ijkl", "(", "alpha", ")", "." ],
+    "entities_indices" : [ [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "Data", "were", "collected", "in", "the", "form", "of", "surveys", "where", "adult", "residents", "were", "asked", "to", "nominate", "those", "individuals", "who", "provided", "them", "with", "various", "types", "of", "support", ",", "including", "running", "errands", ",", "giving", "advice", ",", "and", "lending", "cash", "or", "other", "household", "items", "." ],
+    "entities_indices" : [ [ 35, 36 ] ]
+  }, {
+    "sentence_tokens" : [ "Notice", "that", "one", "can", "rescale", "a", "priori", "each", "likelihood", "term", "individually", "in", "order", "to", "control", "even", "more", "their", "magnitudes", ",", "and", "then", "add", "it", "to", "Eq", "." ],
+    "entities_indices" : [ [ 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "compare", "with", "MULTITENSOR", "to", "measure", "the", "extent", "to", "which", "adding", "the", "attributes", "helps", "predicting", "edges", "and", "attributes", ";", "in", "addition", ",", "in", "terms", "of", "accuracy", "values", ",", "we", "consider", "two", "baselines", "for", "further", "comparisons", ":", "(", "1", ")", "a", "uniform", "at", "random", "probability", "over", "the", "number", "of", "possible", "categories", "(", "RP", ")", ";", "and", "(", "2", ")", "the", "maximum", "relative", "frequency", "of", "the", "attribute", "value", "appearing", "more", "often", "(", "MRF", ")", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 51, 52 ], [ 70, 71 ] ]
+  }, {
+    "sentence_tokens" : [ "Table", "3", "reports", "the", "average", "results", "over", "ten", "runs", "for", "each", "network", ",", "and", "shows", "that", "MTCOV", "is", "capable", "of", "leveraging", "two", "sources", "of", "information", "to", "improve", "both", "performance", "metrics", "." ],
+    "entities_indices" : [ [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "pi", "iZxiZ.In", "order", "to", "satisfy", "the", "sum", "constraint", "sum", "z", "=", "1Z", "pi", "iz", "=", "1", ",", "we", "impose", "the", "normalizations", "sum", "z", "=", "1Z", "beta", "kz", "=", "1", ",", "valid", "for-all", "k", "and", "sum", "k", "=", "1Cuik", "=", "sum", "k", "=", "1Cvik", "=", "1", ",", "valid", "for-all", "i." ],
+    "entities_indices" : [ [ 10, 11, 12, 13, 14, 15, 16 ], [ 23, 24, 25, 26, 27, 28, 29 ] ]
+  }, {
+    "sentence_tokens" : [ "These", "lower", "bounds", "hold", "with", "equality", "when10hizk", "=", "beta", "kz", "(", "uik+", "vik", ")", "sum", "k", "'", "beta", "k", "'", "z", "(", "uik", "'+", "vik", "'", ")", ",", "rho", "ijkl", "(", "alpha", ")", "=", "uikvjlwkl", "(", "alpha", ")", "sum", "k", "'", ",", "l", "'", "uik", "'", "vjl", "'", "wk", "'", "l", "'", "(", "alpha", ")", ",", "thus", "maximizing", "LX", "(", "U", ",", "V", ",", "beta", ")", "is", "equivalent", "to", "maximizing", "LX", "(", "U", ",", "V", ",", "beta", ",", "h", ")", ";", "similarly", "for", "LG", "(", "U", ",", "V", ",", "W", ")", "and", "LG", "(", "U", ",", "V", ",", "W", ",", "rho", ")", "(", "this", "was", "also", "the", "same", "result", "derived", "by", "De", "Bacco", "et", "al.", ")", "." ],
+    "entities_indices" : [ [ 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21 ], [ 22, 23, 24, 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "EM", "algorithm", "thus", "consists", "in", "randomly", "initializing", "the", "parameters", "Theta", "and", "then", "repeatedly", "alternating", "between", "updating", "h", "and", "rho", "using", "Eq", "." ],
+    "entities_indices" : [ [ 19, 20, 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "Notice", "in", "particular", "the", "improvement", "in", "AUC", "when", "using", "caste", "compared", "to", "no", "attribute", "given", "(", "MULTITENSOR", ")", "." ],
+    "entities_indices" : [ [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "To", "make", "a", "quantitative", "estimate", "of", "the", "different", "behaviors", ",", "we", "measure", "the", "entropy", "of", "the", "attribute", "inside", "each", "community", "Hk", "=-sum", "z", "=", "1Zfzlogfz/log", "(", "Z", ")", ",", "where", "fz", "is", "the", "relative", "frequency", "of", "the", "z-th", "caste", "inside", "a", "group", "k", ",", "and", "the", "denominator", "is", "the", "entropy", "of", "a", "uniform", "distribution", "over", "the", "Z", "castes", ",", "our", "baseline", "for", "comparison", "." ],
+    "entities_indices" : [ [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "With", "MULTITENSOR", ",", "they", "are", "grouped", "together", ",", "while", "with", "MTCOV", ",", "the", "Hindu", "Y", "a", "tavars", "are", "joined", "up", "into", "a", "community", "with", "Pa", "l", "l", "ars", "and", "Kul", "a", "lars", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 24, 25 ], [ 31, 32 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "total", "log-likelihood", "is", "then", ":7", "L", "(", "U", ",", "V", ",", "W", ",", "beta", ")", "=", "1-gamma", "LG", "(", "U", ",", "V", ",", "W", ")", "+", "gamma", "LX", "(", "U", ",", "V", ",", "beta", ")", "=(", "1-gamma", ")", "sum", "i", ",", "j", ",", "alpha", "[", "Aij", "(", "alpha", ")", "log", "sum", "k", ",", "luikvjlwkl", "(", "alpha", ")-sum", "k", ",", "luikvjlwkl", "(", "alpha", ")", "]", "+", "gamma", "sum", "i", ",", "zxizlog", "(", "12", "sum", "k", "beta", "kz", "(", "uik+", "vik", ")", ")", "." ],
+    "entities_indices" : [ [ 16, 17, 18, 19 ], [ 27, 28, 29 ], [ 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41 ], [ 70, 71, 72, 73, 74, 75, 76, 77 ], [ 78, 79, 80 ] ]
+  }, {
+    "sentence_tokens" : [ "Overall", ",", "we", "aim", "at", "maximizing", "L", "(", "U", ",", "V", ",", "W", ",", "beta", ",", "h", ",", "rho", ")", "=", "1-gamma", "LG", "(", "U", ",", "V", ",", "W", ",", "rho", ")", "+", "gamma", "LX", "(", "U", ",", "V", ",", "beta", ",", "h", ")", ",", "in", "analogy", "with", "what", "was", "done", "before", "." ],
+    "entities_indices" : [ [ 18, 19 ], [ 20, 21, 22, 23 ], [ 33, 34, 35 ] ]
+  }, {
+    "sentence_tokens" : [ "One", "should", "then", "consider", "automating", "the", "process", "of", "rescaling", "them", "accordingly", ",", "as", "a", "pre-processing", "step", "to", "be", "incorporated", "into", "the", "model", "." ],
+    "entities_indices" : [ [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "Different", "approaches", "assume", "instead", "independence", "between", "attributes", "and", "membership", ",", "which", "follows", "a", "different", "idea", "of", "observing", "an", "interaction", "between", "individuals", "if", "either", "they", "belong", "to", "the", "same", "community", "(", "for", "assortative", "structures", ")", "or", "they", "share", "an", "attribute", "or", "both.Then", ",", "we", "model", "the", "probability", "of", "observing", "the", "z-th", "category", "for", "the", "attribute", "covariate", "of", "node", "i", "as", "the", "parameter", ":4", "pi", "iz", "=", "12", "sum", "k", "=", "1C", "beta", "kz", "(", "uik+", "vik", ")", ",", "where", "beta", "kz", "is", "the", "probability", "of", "observing", "a", "particular", "category", "z", "together", "with", "a", "community", "k", ";", "thus", "pi", "i", "=(", "pi", "i1", "..." ],
+    "entities_indices" : [ [ 60, 61, 62, 63, 64, 65, 66, 67, 68, 69 ], [ 73, 74, 75 ], [ 96, 97, 98, 99, 100 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "each", "network", ",", "we", "run", "a", "5-fold", "cross", "validation", "procedure", "combined", "with", "grid-search", "for", "fixing", "the", "hyperparameter", "gamma", "(", "see", "\"", "Cross", "validation", "tests", "and", "hyperparameter", "settings", "\"", "section", "for", "details", ";", "note", "that", "in", "this", "case", "we", "use", "the", "ground-truth", "value", "of", "C", ",", "hence", "gamma", "is", "the", "only", "hyperparameter", "left", "to", "be", "tuned", ")", "." ],
+    "entities_indices" : [ [ 17, 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "implies", "that", "our", "model", "restricted", "to", "gamma", "=0", ",", "i.e", ".,", "no", "attribute", "information", ",", "does", "not", "correspond", "exactly", "to", "MULTITENSOR", "." ],
+    "entities_indices" : [ [ 7, 8, 9 ], [ 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "As", "shown", "in", "Table", "1", ",", "MTCOV", "performs", "significantly", "better", "than", "MULTITENSOR", "on", "the", "first", "and", "second", "network", "." ],
+    "entities_indices" : [ [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "these", "we", "can", "compare", "against", "two", "state-of-the-art", "algorithms", ",", "both", "probabilistic", "generative", "models", "but", "different", "in", "their", "assumptions", ":", "CESNA", "which", "considers", "overlapping", "communities", "and", "posits", "two", "independent", "Bernoulli", "distributions", "for", "network", "edges", "and", "node", "attributes", ";", "and", "the", "model", "proposed", "by", "Newman", "and", "Clauset", "(", "NC", ")", "for", "non", "overlapping", "communities", ",", "a", "Bayesian", "approach", "where", "the", "priors", "on", "the", "community", "memberships", "depend", "on", "the", "node", "attributes", "." ],
+    "entities_indices" : [ [ 47, 48 ] ]
+  }, {
+    "sentence_tokens" : [ "(", "15", ")", "is", "valid", "for", "gamma", "!=", "1", "." ],
+    "entities_indices" : [ [ 6, 7, 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "allows", "domain", "experts", "to", "investigate", "particular", "attributes", "and", "select", "relevant", "community", "partitions", "based", "on", "what", "type", "of", "node", "information", "they", "are", "interested", "in", "investigating", "." ],
+    "entities_indices" : [ [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "Each", "layer", "alpha", "has", "an", "affinity", "matrix", "W", "(", "alpha", ")", "=[", "wkl", "(", "alpha", ")", "]", "in", "RC", "x", "C", "which", "describes", "the", "density", "of", "edges", "between", "each", "pair", "(", "k", ",", "l", ")", "of", "groups", "." ],
+    "entities_indices" : [ [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "fact", ",", "there", "might", "be", "other", "hidden", "topological", "properties", "that", "MULTITENSOR", "'", "s", "partition", "is", "picking", "up", "by", "being", "agnostic", "to", "caste", "membership", "." ],
+    "entities_indices" : [ [ 11, 12, 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "M-step", "is", "obtained", "by", "computing", "partial", "derivatives", "of", "L", "(", "Theta", ",", "h", ",", "rho", ")", "with", "respect", "to", "the", "various", "parameters", "in", "Theta", "and", "setting", "them", "equal", "to", "zero", "." ],
+    "entities_indices" : [ [ 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "hard", "partitions", ",", "the", "idea", "is", "to", "match", "every", "detected", "community", "with", "its", "most", "similar", "ground-truth", "community", "and", "measure", "similarity", "delta", "(", "Ci", "*", ",", "Cj", ")", "(", "and", "vice", "versa", "for", "every", "ground-truth", "community", "matched", "against", "a", "detected", "community", ")", "as", "done", "by", "Yang", "et", "al.", "." ],
+    "entities_indices" : [ [ 21, 22 ], [ 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "Depending", "on", "the", "task", "at", "hand", ",", "one", "can", "define", "performance", "as", "a", "combination", "of", "the", "two", ",", "bearing", "in", "mind", "that", "the", "values", "of", "(", "C", "^", ",", "gamma", "^", ")", "at", "the", "maximum", "of", "either", "of", "them", "might", "not", "coincide", "." ],
+    "entities_indices" : [ [ 29, 30, 31 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "adapt", "recent", "ideas", "from", "the", "generative", "model", "behind", "MULTITENSOR", ",", "a", "multilayer", "mixed-membership", "model", "based", "on", "a", "Poisson", "tensor", "factorization", ",", "to", "incorporate", "node", "attributes", "in", "a", "principled", "manner", "." ],
+    "entities_indices" : [ [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "addition", ",", "here", "we", "enforce", "normalizations", "like", "sum", "kuik", "=", "1", ",", "not", "enforced", "in", "MULTITENSOR", "." ],
+    "entities_indices" : [ [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "transform", "directed", "networks", "to", "undirected", "because", "both", "CESNA", "and", "NC", "do", "not", "distinguish", "for", "edge", "directionality", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "Nevertheless", ",", "a", "future", "expansion", "should", "include", "the", "possibility", "to", "work", "with", "any", "type", "of", "metadata.A", "community", "is", "a", "subset", "of", "vertices", "that", "share", "some", "properties", "." ],
+    "entities_indices" : [ [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "final", "performance", "is", "the", "average", "of", "these", "two", "comparisons", ":1612", "|", "C", "*", "|", "sum", "Ci", "*", "in", "C", "*", "maxCj", "in", "C", "delta", "(", "Ci", "*", ",", "Cj", ")", "+12", "|", "C", "|", "sum", "Cj", "in", "CmaxCi", "*", "in", "C", "*", "delta", "(", "Ci", "*", ",", "Cj", ")", ",", "where", "here", "we", "consider", "as", "similarity", "metric", "delta", "(", "." ],
+    "entities_indices" : [ [ 16, 17 ], [ 24, 25 ], [ 26, 27 ], [ 43, 44 ], [ 45, 46 ], [ 48, 49 ], [ 58, 59 ] ]
+  }, {
+    "sentence_tokens" : [ ",", "pi", "iZ", ")", "is", "a", "Z-dimensional", "vector", "such", "that", "pi", "iz", "in", "0,1", "and", "sum", "z", "=", "1Z", "pi", "iz", "=", "1", ",", "for-all", "i.", "For", "convenience", ",", "we", "consider", "one-hot", "encoding", "for", "xi", "=(", "xi1", ",", "..." ],
+    "entities_indices" : [ [ 10, 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "It", "also", "demonstrates", "the", "potential", "of", "capturing", "correlations", "between", "two", "different", "sources", "of", "information", ",", "which", "can", "have", "relevant", "applications", ",", "in", "particular", "when", "missing", "information", "of", "one", "kind", "." ],
+    "entities_indices" : [ [ 28, 29 ] ]
+  }, {
+    "sentence_tokens" : [ "for", "each", "log-likelihood", "term", "gives", ":8", "LX", "(", "U", ",", "V", ",", "beta", ")", ">=", "sum", "i", ",", "zxiz", "sum", "khizklog", "beta", "kz", "(", "uik+", "vik", ")", "2hizk", "=", "sum", "i", ",", "z", ",", "kxizhizklog", "beta", "kz", "(", "uik+", "vik", ")-hizklog2hizk", "=", "LX", "(", "U", ",", "V", ",", "beta", ",", "h", ")", "9LG", "(", "U", ",", "V", ",", "W", ")", ">=", "sum", "i", ",", "j", ",", "k", ",", "l", ",", "alpha", "[", "Aij", "(", "alpha", ")", "(", "rho", "ijkl", "(", "alpha", ")", "loguikvjlwkl", "(", "alpha", ")-rho", "ijkl", "(", "alpha", ")", "log", "rho", "ijkl", "(", "alpha", ")", ")-uikvjlwkl", "(", "alpha", ")", "]", "=", "LG", "(", "U", ",", "V", ",", "W", ",", "rho", ")", "." ],
+    "entities_indices" : [ [ 18, 19, 20, 21, 22, 23 ], [ 24, 25, 26 ], [ 34, 35, 36, 37 ], [ 38, 39, 40, 41, 42, 43 ] ]
+  }, {
+    "sentence_tokens" : [ "To", "ease", "comparison", ",", "we", "fix", "the", "same", "number", "of", "groups", "to", "C", "=", "4", "for", "both", "algorithms", "and", "measure", "how", "caste", "membership", "distributes", "across", "communities", ",", "and", "fix", "gamma", "=0", ".8", "as", "obtained", "with", "cross", "validation", "." ],
+    "entities_indices" : [ [ 28, 29, 30, 31, 32 ] ]
+  }, {
+    "sentence_tokens" : [ "While", "MULTITENSOR", "is", "clearly", "picking", "up", "the", "structural", "similarities", "of", "the", "two", "hamlets", ",", "this", "division", "makes", "little", "sense", "socially", "and", "culturally", "." ],
+    "entities_indices" : [ [ 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ ",", "L", "}", ",", "and", "the", "matrix", "beta", "=[", "beta", "kz", "]", "in", "RC", "x", "Z", ",", "which", "captures", "correlations", "between", "communities", "and", "attributes", "." ],
+    "entities_indices" : [ [ 1, 2, 3 ], [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "link-prediction", ",", "we", "used", "the", "AUC", "statistic", ",", "equivalent", "to", "the", "area", "under", "the", "receiver", "operating", "characteristic", "(", "ROC", ")", "curve", "." ],
+    "entities_indices" : [ [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "Values", "of", "Hk", "close", "to", "1", "denote", "a", "more", "uniform", "distribution", "of", "castes", ",", "whereas", "smaller", "values", "denote", "an", "unbalanced", "distribution", "with", "most", "of", "the", "people", "belonging", "to", "a", "few", "castes", "." ],
+    "entities_indices" : [ [ 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "compare", "against", "MULTITENSOR", ",", "an", "algorithm", "similar", "to", "ours", "but", "that", "does", "not", "include", "node", "attributes", "." ],
+    "entities_indices" : [ [ 3, 4 ] ]
+  } ],
+  "emptySentences" : [ ]
+}

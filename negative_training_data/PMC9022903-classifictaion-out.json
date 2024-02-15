@@ -1,115 +1,715 @@
-[ {
-  "sentence_tokens" : [ "Naveen", "Kumar", "et", "al.", "(", "28", ")", "indicated", "that", "UCB", "has", "been", "shown", "to", "cause", "apoptosis", "of", "platelets", "in", "vitro", "at", "the", "concentration", "range", "0", "-", "200", "mu", "M", "(", "0", "-", "11.7", "mg/dl", ")", "." ],
-  "event_indices" : [ 9, 10, 11, 12, 13, 14, 15, 16 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 9, 10 ],
-  "controlled_indices" : [ 15, 16 ],
-  "trigger_indices" : [ 14, 15 ],
-  "rule_name" : "Positive_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Relation", "Between", "Unconjugated", "Bilirubin", "and", "Peripheral", "Biomarkers", "of", "Inflammation", "Derived", "From", "Complete", "Blood", "Counts", "in", "Patients", "With", "Acute", "Stage", "of", "Schizophrenia", "." ],
-  "entity_one_indices" : [ 8, 9 ],
-  "entity_two_indices" : [ 3, 4 ]
-}, {
-  "sentence_tokens" : [ "Unconjugated", "bilirubin", "(", "UCB", ")", "is", "an", "efficient", "endogenous", "plasma", "antioxidant", "." ],
-  "entity_one_indices" : [ 10, 11 ],
-  "entity_two_indices" : [ 1, 2 ]
-}, {
-  "sentence_tokens" : [ "UCB", "and", "peripheral", "biomarkers", "of", "inflammation", "derived", "from", "complete", "blood", "counts", "(", "CBC", ")", "were", "investigated", "in", "the", "subjects", "with", "acute", "schizophrenia", ",", "and", "the", "results", "were", "compared", "with", "HCs", "." ],
-  "entity_one_indices" : [ 29, 30 ],
-  "entity_two_indices" : [ 5, 6 ]
-}, {
-  "sentence_tokens" : [ "The", "study", "indicates", "that", "white", "blood", "cells", ",", "neutrophil", ",", "monocyte", ",", "mean", "platelet", "volume", "(", "MPV", ")", ",", "red", "cell", "distribution", "width", "(", "RDW", ")", ",", "neutrophil", "and", "lymphocyte", "ratio", "(", "NLR", ")", ",", "and", "monocyte", "and", "lymphocyte", "ratio", "(", "MLR", ")", "have", "significantly", "increased", "in", "schizophrenia", "(", "p", "<", "0.05", "for", "all", ")", ",", "while", "platelet", ",", "lymphocyte", ",", "and", "platelet", "and", "lymphocyte", "ratio", "(", "PLR", ")", "in", "schizophrenia", "have", "significantly", "decreased", "(", "p", "<", "0.05", "for", "all", ")", "." ],
-  "entity_one_indices" : [ 67, 68 ],
-  "entity_two_indices" : [ 41, 42 ]
-}, {
-  "sentence_tokens" : [ "The", "correlations", "between", "UCB", "and", "other", "peripheral", "biomarkers", "of", "inflammation", "derived", "from", "CBC", "are", "very", "weak", "." ],
-  "entity_one_indices" : [ 12, 13 ],
-  "entity_two_indices" : [ 9, 10 ]
-}, {
-  "sentence_tokens" : [ "The", "model", "was", "as", "follows", ":", "Logit", "(", "P1", ")", "=", "-6.141", "+0.827", "MPV", "+5.613", "MLR-0.005", "PLR-0.346", "UBC", "." ],
-  "entity_one_indices" : [ 17, 18 ],
-  "entity_two_indices" : [ 8, 9 ]
-}, {
-  "sentence_tokens" : [ "A", "recent", "study", "conducted", "by", "Becklen", "et", "al.", "(", "15", ")", "set", "out", "to", "investigate", "the", "levels", "of", "total", "plasma", "bilirubin", "in", "subjects", "with", "a", "first-episode", "psychosis", ",", "and", "found", "that", "bilirubin", "levels", "were", "reduced", "compared", "with", "20", "healthy", "controls", "." ],
-  "entity_one_indices" : [ 31, 32 ],
-  "entity_two_indices" : [ 20, 21 ]
-}, {
-  "sentence_tokens" : [ "Elevated", "levels", "of", "these", "markers", "have", "been", "reported", "in", "schizophrenia", "(", "18", ",", "19", ")", "." ],
-  "entity_one_indices" : [ 4, 5 ],
-  "entity_two_indices" : [ 4, 5 ]
-}, {
-  "sentence_tokens" : [ "We", "aim", "to", "investigate", "the", "changes", "of", "UCB", "and", "peripheral", "biomarkers", "of", "inflammation", "derived", "from", "CBC", "in", "acute", "schizophrenia", "with", "large", "samples", ",", "and", "to", "confirm", "the", "relationship", "between", "them", "." ],
-  "entity_one_indices" : [ 12, 13 ],
-  "entity_two_indices" : [ 7, 8 ]
-}, {
-  "sentence_tokens" : [ "Therefore", ",", "in", "this", "study", "we", "combine", "peripheral", "biomarkers", "of", "inflammation", "derived", "from", "CBC", "(", "inflammatory", "biomarkers", ")", "and", "UCB", "(", "an", "oxidative", "stress", "biomarker", ")", "into", "parameters", "using", "a", "simplified", "equation", "to", "assess", "the", "capability", "of", "combined", "information", "to", "predict", "schizophrenia", "in", "the", "acute", "stage", "." ],
-  "entity_one_indices" : [ 24, 25 ],
-  "entity_two_indices" : [ 10, 11 ]
-}, {
-  "sentence_tokens" : [ "Receiver", "operating", "characteristic", "(", "ROC", ")", "curve", "was", "adopted", "to", "assess", "the", "combined", "value", "of", "UCB", "and", "peripheral", "biomarkers", "of", "inflammation", "derived", "from", "CBC", "to", "predict", "schizophrenia", "in", "the", "acute", "stage", "." ],
-  "entity_one_indices" : [ 20, 21 ],
-  "entity_two_indices" : [ 4, 5 ]
-}, {
-  "sentence_tokens" : [ "To", "explore", "the", "relationship", "between", "serum", "bilirubin", "concentration", "and", "peripheral", "biomarkers", "of", "inflammation", "derived", "from", "CBC", ",", "Spearman", "correlation", "analyses", "were", "performed", "." ],
-  "entity_one_indices" : [ 12, 13 ],
-  "entity_two_indices" : [ 6, 7 ]
-}, {
-  "sentence_tokens" : [ "The", "model", "was", "run", "to", "assess", "the", "potential", "predictive", "values", "of", "serum", "bilirubin", "and", "peripheral", "biomarkers", "of", "inflammation", "derived", "from", "CBC", "." ],
-  "entity_one_indices" : [ 17, 18 ],
-  "entity_two_indices" : [ 12, 13 ]
-}, {
-  "sentence_tokens" : [ "The", "area", "under", "the", "ROC", "is", "shown", "in", "Table", "5.A", "comparison", "was", "made", "between", "the", "new", "predictive", "model", "and", "inflammation", "predictive", "model", "." ],
-  "entity_one_indices" : [ 19, 20 ],
-  "entity_two_indices" : [ 4, 5 ]
-}, {
-  "sentence_tokens" : [ "The", "best", "cut-off", "value", "of", "peripheral", "biomarkers", "of", "inflammation", "was", "0.45959", "with", "sensitivity", "77.38", "%", "and", "specificity", "65.57", "%", "(", "AUC", "0.779", ",", "95", "%", "CI", "0.772", "-", "0.786", ")", "." ],
-  "entity_one_indices" : [ 25, 26 ],
-  "entity_two_indices" : [ 8, 9 ]
-}, {
-  "sentence_tokens" : [ "The", "recommended", "cut-off", "value", "for", "the", "combined", "value", "based", "on", "the", "maximum", "of", "Youden", "'s", "index", "on", "the", "ROC", "curve", "was", "0.53126", "and", "it", "exhibits", "73.01", "%", "sensitivity", "and", "76.87", "%", "specificity", "in", "the", "prediction", "(", "AUC", "0.831", ",", "95", "%", "CI", "0.825", "-", "0.837", ")", "." ],
-  "entity_one_indices" : [ 41, 42 ],
-  "entity_two_indices" : [ 18, 19 ]
-}, {
-  "sentence_tokens" : [ "One", "study", "(", "29", ")", "showed", "that", "reduced", "P-selectin", "expression", ",", "which", "is", "a", "protein", "released", "from", "activated", "platelets", ",", "was", "significantly", "linked", "to", "increasing", "bilirubin", "concentrations", "." ],
-  "entity_one_indices" : [ 25, 26 ],
-  "entity_two_indices" : [ 8, 9 ]
-}, {
-  "sentence_tokens" : [ "Ozdin", "and", "Boke", "(", "32", ")", "studied", "105", "relapse", "hospitalized", "schizophrenia", "patients", "and", "found", "that", "PLR", "is", "higher", "for", "the", "sample", "than", "HCs", "." ],
-  "entity_one_indices" : [ 22, 23 ],
-  "entity_two_indices" : [ 15, 16 ]
-}, {
-  "sentence_tokens" : [ "The", "sample", "size", "of", "our", "study", "is", "larger", ",", "which", "could", "provide", "more", "reliable", "supports", "for", "the", "conclusion", "that", "PLR", "is", "lower", "in", "patients", "with", "acute", "psychotic", "episodes", "of", "schizophrenia", "than", "in", "HCs", "." ],
-  "entity_one_indices" : [ 32, 33 ],
-  "entity_two_indices" : [ 19, 20 ]
-}, {
-  "sentence_tokens" : [ "Balcioglu", "and", "Kirlioglu", "'s", "research", "(", "18", ")", "reported", "higher", "levels", "of", "RDW", "in", "schizophrenia", "than", "in", "HCs", ",", "which", "is", "consistent", "with", "our", "results", "." ],
-  "entity_one_indices" : [ 17, 18 ],
-  "entity_two_indices" : [ 12, 13 ]
-}, {
-  "sentence_tokens" : [ "In", "addition", "to", "inflammation", ",", "oxidative", "stress", "plays", "a", "key", "role", "in", "the", "progression", "of", "schizophrenia", ",", "while", "bilirubin", "is", "a", "strong", "endogenous", "antioxidant", "(", "45", ")", "." ],
-  "entity_one_indices" : [ 18, 19 ],
-  "entity_two_indices" : [ 3, 4 ]
-}, {
-  "sentence_tokens" : [ "A", "systematic", "review", "(", "25", ")", "showed", "that", "UCB", "is", "in", "part", "implicated", "in", "the", "pathophysiological", "process", "of", "schizophrenia", ",", "and", "elevated", "bilirubin", "may", "be", "linked", "with", "lower", "risk", "of", "schizophrenia", "in", "the", "acute", "stage", "." ],
-  "entity_one_indices" : [ 22, 23 ],
-  "entity_two_indices" : [ 8, 9 ]
-}, {
-  "sentence_tokens" : [ "As", "a", "cross-sectional", "study", ",", "our", "study", "lacks", "conclusions", "regarding", "causal", "relationships", "between", "UCB", "and", "inflammation", "as", "well", "as", "relationships", "between", "UCB", ",", "inflammation", ",", "and", "schizophrenia", "." ],
-  "entity_one_indices" : [ 23, 24 ],
-  "entity_two_indices" : [ 15, 16 ]
-}, {
-  "sentence_tokens" : [ "Additional", "markers", "of", "platelet", "activation", "are", "also", "required", "(", "i.e", ".,", "P-selectin", ")", "to", "further", "verify", "the", "significance", "of", "these", "findings", "." ],
-  "entity_one_indices" : [ 11, 12 ],
-  "entity_two_indices" : [ 3, 4, 5 ]
-}, {
-  "sentence_tokens" : [ "HL", "and", "JM", ":", "conceptualization", ",", "project", "administration", ",", "supervision", ",", "writing", "--", "review", ",", "and", "editing", "." ],
-  "entity_one_indices" : [ 2, 3 ],
-  "entity_two_indices" : [ 0, 1 ]
-}, {
-  "sentence_tokens" : [ "This", "work", "was", "funded", "by", "Beijing", "Hospitals", "Authority", "Clinical", "Medicine", "Development", ",", "Scientific", "Foundation", "of", "Beijing", "Huilongguan", "Hospital", ",", "No", "LY202204", ",", "and", "Beijing", "Municipal", "Administration", "of", "Hospitals", "incubating", "Program", "(", "PX", "2022079", ")", "." ],
-  "entity_one_indices" : [ 31, 32 ],
-  "entity_two_indices" : [ 19, 20 ]
-} ]
+{
+  "regulations" : [ {
+    "sentence_tokens" : [ "Naveen", "Kumar", "et", "al.", "(", "28", ")", "indicated", "that", "UCB", "has", "been", "shown", "to", "cause", "apoptosis", "of", "platelets", "in", "vitro", "at", "the", "concentration", "range", "0", "-", "200", "mu", "M", "(", "0", "-", "11.7", "mg/dl", ")", "." ],
+    "event_indices" : [ 9, 10, 11, 12, 13, 14, 15, 16 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 9, 10 ],
+    "controlled_indices" : [ 15, 16 ],
+    "trigger_indices" : [ 14, 15 ],
+    "rule_name" : "Positive_activation_syntax_1_verb",
+    "rule" : null
+  } ],
+  "hardInstances" : [ ],
+  "withoutRegulations" : [ {
+    "sentence_tokens" : [ "Gama-Marques", "et", "al.", "'", "s", "study", "(", "12", ")", "claimed", "that", "schizophrenia", "was", "linked", "to", "higher", "levels", "of", "UCB", "." ],
+    "entities_indices" : [ [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "Relation", "Between", "Unconjugated", "Bilirubin", "and", "Peripheral", "Biomarkers", "of", "Inflammation", "Derived", "From", "Complete", "Blood", "Counts", "in", "Patients", "With", "Acute", "Stage", "of", "Schizophrenia", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "combined", "equation", "of", "the", "logistic", "regression", "model", "was", "logit", "(", "P1", ")", "=", "-", "6.141", "+0.827", "MPV", "+5.613", "MLR", "-", "0.005", "PLR", "-", "0.346", "UBC", "(", "Table", "3", ")", ";", "therefore", ",", "the", "\"", "combined", "\"", "value", "refers", "to", "logit", "(", "P1", ")", "in", "our", "report.MPV", ",", "RDW", ",", "MLR", ",", "NLR", ",", "and", "PLR", "were", "combined", "using", "logistic", "regression", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 19, 20 ], [ 25, 26 ], [ 42, 43 ], [ 48, 49 ], [ 50, 51 ], [ 52, 53 ], [ 55, 56 ] ]
+  }, {
+    "sentence_tokens" : [ "Additional", "markers", "of", "platelet", "activation", "are", "also", "required", "(", "i.e", ".,", "P-selectin", ")", "to", "further", "verify", "the", "significance", "of", "these", "findings", "." ],
+    "entities_indices" : [ [ 3, 4, 5 ], [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "RDW", "is", "considered", "as", "a", "comprehensive", "biomarker", "of", "chronic", "inflammation", "and", "oxidative", "stress", "(", "30", ")", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 6, 7 ], [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "Simultaneously", ",", "Spearman", "test", "was", "employed", "to", "assess", "the", "correlation", "between", "the", "variables", ",", "while", "logistic", "regression", "was", "adopted", "to", "determine", "the", "combined", "equation", "and", "receiver", "operating", "characteristic", "curve", "was", "used", "to", "evaluate", "the", "combined", "value", "of", "UCB", "and", "peripheral", "biomarkers", "of", "inflammation", "derived", "from", "CBC", "to", "predict", "schizophrenia", "in", "the", "acute", "stage", "." ],
+    "entities_indices" : [ [ 42, 43 ] ]
+  }, {
+    "sentence_tokens" : [ "Exclusion", "criteria", "include", "presently", "comorbid", "with", "any", "other", "psychiatric", "disorder", ",", "presence", "of", "a", "physical", "disease", "that", "may", "alter", "inflammatory", "status", "or", "serum", "bilirubin", "concentrations", "such", "as", "hepatic", "or", "renal", "failure", ",", "diabetes", "mellitus", ",", "hypertension", ",", "acute", "infection", ",", "acute", "or", "chronic", "immuno-inflammatory", "disease", "or", "pregnancy", ",", "obesity", "or", "being", "underweight", "(", "body", "mass", "index", ">", "29.9", "or", "<", "18.5", "kg/m", ",", "respectively", ")", ",", "heavy", "smoking", "(", ">", "20", "cigarettes", "per", "day", ")", ",", "being", "under", "an", "anti-inflammatory", "or", "immunosuppressive", "medication", ",", "documented", "laboratory", "findings", "of", "liver", "or", "renal", "pathology", ",", "iron-deficiency", "anemia", ",", "and", "lack", "of", "laboratory", "screening", "at", "admission", "." ],
+    "entities_indices" : [ [ 23, 24 ], [ 32, 33, 34 ], [ 35, 36 ], [ 38, 39 ], [ 48, 49 ], [ 54, 55 ], [ 67, 68 ], [ 93, 94, 95 ] ]
+  }, {
+    "sentence_tokens" : [ "Unexpectedly", ",", "we", "found", "that", "PLR", "is", "lower", "in", "patients", "with", "schizophrenia", "than", "healthy", "controls", "." ],
+    "entities_indices" : [ [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "All", "the", "relationships", "are", "weak", ";", "hence", ",", "we", "speculate", "that", "UCB", "has", "a", "protection", "effect", "on", "acute", "stage", "of", "schizophrenia", ",", "which", "is", "weak", "and", "indirect", "by", "affecting", "the", "proinflammatory", "processes", "." ],
+    "entities_indices" : [ [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "Inflammation", "is", "a", "complex", "pathophysiological", "process", "relying", "on", "multiple", "biological", "pathways", "and", "has", "high", "correlation", "with", "oxidative", "stress", "(", "20", ")", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "correlations", "between", "UCB", "and", "other", "peripheral", "biomarkers", "of", "inflammation", "derived", "from", "CBC", "are", "very", "weak", "." ],
+    "entities_indices" : [ [ 9, 10 ], [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "One", "study", "conducted", "in", "first-episode", "schizophrenia", "found", "that", "platelet", "count", "was", "significantly", "higher", "than", "that", "in", "the", "HCs", "(", "34", ")", "." ],
+    "entities_indices" : [ [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "Our", "findings", "suggest", "that", "a", "combination", "of", "MLR", ",", "MPV", ",", "PLR", ",", "and", "UBC", "could", "be", "used", "to", "predict", "acute", "stage", "of", "schizophrenia", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 9, 10 ], [ 11, 12 ], [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "in", "this", "study", "we", "combine", "peripheral", "biomarkers", "of", "inflammation", "derived", "from", "CBC", "(", "inflammatory", "biomarkers", ")", "and", "UCB", "(", "an", "oxidative", "stress", "biomarker", ")", "into", "parameters", "using", "a", "simplified", "equation", "to", "assess", "the", "capability", "of", "combined", "information", "to", "predict", "schizophrenia", "in", "the", "acute", "stage", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "recommended", "cut-off", "value", "for", "the", "combined", "value", "based", "on", "the", "maximum", "of", "Youden", "'s", "index", "on", "the", "ROC", "curve", "was", "0.53126", "and", "it", "exhibits", "73.01", "%", "sensitivity", "and", "76.87", "%", "specificity", "in", "the", "prediction", "(", "AUC", "0.831", ",", "95", "%", "CI", "0.825", "-", "0.837", ")", "." ],
+    "entities_indices" : [ [ 18, 19 ], [ 41, 42 ] ]
+  }, {
+    "sentence_tokens" : [ "Above", "all", ",", "we", "speculate", "that", "the", "inflammation", "occurring", "in", "schizophrenia", "could", "lead", "to", "consumption", "of", "bilirubin", "during", "scavenging", "of", "excessive", "free", "radicals", ",", "causing", "a", "consequent", "reduction", "in", "their", "serum", "levels", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 16, 17 ], [ 29, 30 ], [ 29, 30 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "control", "group", "was", "recruited", "from", "the", "local", "community", "visited", "outpatient", "unit", "for", "healthy", "medical", "examinations", ",", "coded", "with", "ICD-10", "Z00.00", "(", "encounter", "for", "general", "adult", "medical", "examination", "without", "abnormal", "findings", ")", ",", "without", "any", "record", "of", "personal", "or", "family", "history", "of", "psychiatric", "disorders", "." ],
+    "entities_indices" : [ [ 19, 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "Many", "clinical", "studies", "have", "observed", "a", "correlation", "between", "bilirubin", "and", "schizophrenia", ",", "however", ",", "with", "discrepancies", "in", "the", "results", "." ],
+    "entities_indices" : [ [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "study", "presented", "in", "this", "paper", "is", "the", "first", "to", "investigate", "the", "relation", "between", "peripheral", "biomarkers", "of", "inflammation", "derived", "from", "CBC", "and", "UCB", "levels", "." ],
+    "entities_indices" : [ [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "peripheral", "biomarkers", "of", "inflammation", "of", "logistic", "regression", "model", "were", "logit", "(", "P2", ")", "=", "-", "10.911", "+0.882", "MPV", "+0.166", "RDW", "+4.877", "MLR", "-", "0.003PLR", "(", "Table", "4", ")", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 12, 13 ], [ 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "Elevated", "RDW", "reflects", "enhanced", "cellular", "oxidative", "stress", ",", "which", "could", "lead", "to", "the", "consumption", "and", "even", "depletion", "of", "natural", "antioxidants", ",", "thus", "resulting", "in", "decrease", "in", "UCB", "concentration", "." ],
+    "entities_indices" : [ [ 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "correlations", "between", "UCB", "and", "other", "peripheral", "biomarkers", "of", "inflammation", "derived", "from", "CBC", "are", "very", "weak", ",", "i.e", ".,", "UCB", "is", "negatively", "correlated", "with", "lymphocyte", "(", "r", "=", "-", "0.033", ",", "p", "<", "0.001", ")", ",", "platelet", "counts", "(", "r", "=", "-", "0.05", ",", "p", "<", "0.001", ")", ",", "RDW", "(", "r", "=", "-", "0.041", ",", "p", "<", "0.001", ")", ",", "and", "WBC", "(", "r", "=", "-", "0.023", ",", "p", "=", "0.05", ")", ",", "and", "positively", "correlated", "with", "NLR", "(", "r", "=", "0.03", ",", "p", "=", "0.011", ")", "in", "the", "subjects", "with", "schizophrenia.Given", "that", "the", "MPV", ",", "RDW", ",", "MLR", ",", "NLR", ",", "PLR", ",", "and", "UCB", "were", "different", "between", "the", "control", "group", "and", "the", "acute", "schizophrenia", "group", ",", "we", "sought", "to", "determine", "whether", "these", "inflammation", "based", "markers", "and", "UCB", "could", "be", "predictors", "of", "schizophrenia", "." ],
+    "entities_indices" : [ [ 9, 10 ], [ 12, 13 ], [ 97, 98 ], [ 99, 100 ], [ 101, 102 ], [ 103, 104 ], [ 106, 107 ], [ 125, 126 ], [ 129, 130 ] ]
+  }, {
+    "sentence_tokens" : [ "An", "animal", "study", "suggested", "that", "UCB", "might", "be", "important", "to", "the", "pathophysiology", "of", "schizophrenia", "(", "11", ")", "." ],
+    "entities_indices" : [ [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "recent", "years", ",", "peripheral", "biomarkers", "of", "inflammation", "derived", "from", "CBC", "have", "been", "reported", "to", "reflect", "the", "condition", "of", "central", "oxidative", "stress", "in", "schizophrenia", "(", "21", ")", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "One", "recent", "study", "(", "46", ")", "showed", "potential", "of", "UCB", "as", "a", "biological", "marker", "for", "schizophrenia", "." ],
+    "entities_indices" : [ [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "Simultaneously", ",", "these", "cells", "were", "rapidly", "worn", "by", "the", "inflammation", "(", "41", ")", "." ],
+    "entities_indices" : [ [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "Further", "studies", "should", "pay", "attention", "to", "the", "change", "of", "UCB", "and", "PLR", ",", "MLR", ",", "and", "MPV", ",", "which", "may", "be", "prognostic", "biomarkers", "." ],
+    "entities_indices" : [ [ 9, 10 ], [ 11, 12 ], [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "recent", "study", "conducted", "by", "Becklen", "et", "al.", "(", "15", ")", "set", "out", "to", "investigate", "the", "levels", "of", "total", "plasma", "bilirubin", "in", "subjects", "with", "a", "first-episode", "psychosis", ",", "and", "found", "that", "bilirubin", "levels", "were", "reduced", "compared", "with", "20", "healthy", "controls", "." ],
+    "entities_indices" : [ [ 20, 21 ], [ 31, 32 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "best", "cut-off", "value", "of", "peripheral", "biomarkers", "of", "inflammation", "was", "0.45959", "with", "sensitivity", "77.38", "%", "and", "specificity", "65.57", "%", "(", "AUC", "0.779", ",", "95", "%", "CI", "0.772", "-", "0.786", ")", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "Data", "from", "logistic", "regression", "further", "support", "the", "conclusion", "that", "UCB", "has", "a", "protection", "effect", "on", "schizophrenia", "in", "the", "acute", "stage", "of", "schizophrenia", "." ],
+    "entities_indices" : [ [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "Ozdin", "and", "Boke", "'s", "study", "(", "32", ")", ",", "MLR", "and", "PLR", "were", "found", "to", "be", "important", "markers", "in", "schizophrenia", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 10, 11 ], [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "UCB", "and", "peripheral", "biomarkers", "of", "inflammation", "derived", "from", "complete", "blood", "counts", "(", "CBC", ")", "were", "investigated", "in", "the", "subjects", "with", "acute", "schizophrenia", ",", "and", "the", "results", "were", "compared", "with", "HCs", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 29, 30 ] ]
+  }, {
+    "sentence_tokens" : [ "As", "a", "cross-sectional", "study", ",", "our", "study", "lacks", "conclusions", "regarding", "causal", "relationships", "between", "UCB", "and", "inflammation", "as", "well", "as", "relationships", "between", "UCB", ",", "inflammation", ",", "and", "schizophrenia", "." ],
+    "entities_indices" : [ [ 15, 16 ], [ 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "Consistent", "with", "previous", "studies", ",", "our", "study", "found", "that", "levels", "of", "NLR", "and", "MLR", "in", "acute", "schizophrenia", "patients", "were", "increased", "compared", "with", "HCs", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 13, 14 ], [ 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "Platelets", "are", "involved", "in", "serotonin", "(", "5-HT", ")", "hypothesis", "and", "inflammation", "hypothesis", "to", "explain", "the", "pathogenesis", "of", "schizophrenia", "(", "33", ")", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 6, 7 ], [ 10, 11 ], [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "have", "also", "observed", "a", "negative", "correlation", "between", "UCB", "and", "lymphocyte", ",", "platelet", ",", "MPV", ",", "and", "RDW", ",", "and", "a", "positive", "correlation", "between", "UCB", "and", "NLR", "." ],
+    "entities_indices" : [ [ 17, 18 ], [ 24, 25 ], [ 26, 27 ] ]
+  }, {
+    "sentence_tokens" : [ "UCB", "exhibits", "negative", "correlation", "with", "MPV", "significantly", "(", "r", "=", "0.121", ",", "p", "<", "0.001", ")", ",", "and", "no", "correlation", "with", "neutrophil", "and", "monocyte", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "Pommerening", "Dornelles", "et", "al.", "(", "25", ")", "pointed", "out", "that", "studies", "reporting", "the", "lower", "UCB", "levels", "in", "schizophrenia", "(", "21", ",", "24", ")", "could", "indicate", "a", "chronic", "proinflammatory", "state", "caused", "by", "elevated", "reactive", "oxygen", "species", "and", "the", "consumption", "of", "the", "antioxidant", "potential", ",", "hence", "leading", "to", "neuronal", "damage", "." ],
+    "entities_indices" : [ [ 32, 33, 34, 35 ] ]
+  }, {
+    "sentence_tokens" : [ "Inflammation", "and", "oxidative", "stress", "are", "the", "major", "leading", "hypothetical", "causes", "of", "schizophrenia", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "On", "the", "contrary", ",", "Yin", "et", "al.", "(", "14", ")", "found", "that", "serum", "bilirubin", "concentration", "was", "significantly", "decreased", "in", "schizophrenia", "patients", "compared", "with", "healthy", "controls", "." ],
+    "entities_indices" : [ [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "results", "of", "these", "existing", "studies", "are", "inconsistent", ",", "and", "there", "have", "been", "relatively", "few", "studies", "with", "large", "sample", "sizes", "about", "the", "relationship", "between", "bilirubin", "and", "schizophrenia.Many", "studies", "have", "focused", "on", "the", "relationship", "between", "inflammation", "and", "the", "pathogenesis", "of", "schizophrenia", "(", "16", ")", "." ],
+    "entities_indices" : [ [ 24, 25 ], [ 34, 35 ], [ 37, 38 ] ]
+  }, {
+    "sentence_tokens" : [ "RDW", "as", "a", "reflecting", "variability", "marker", "of", "erythrocyte", "volume", "is", "a", "routinely", "available", "component", "of", "CBC", "." ],
+    "entities_indices" : [ [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "Nevertheless", ",", "to", "our", "knowledge", ",", "the", "present", "study", "is", "the", "first", "to", "indicate", "that", "the", "combined", "effect", "of", "peripheral", "biomarkers", "of", "inflammation", "derived", "from", "CBC", "and", "UCB", "could", "be", "better", "diagnosis", "parameters", "compared", "with", "single", "predictor", "independently", "in", "patients", "with", "acute", "schizophrenia", "." ],
+    "entities_indices" : [ [ 22, 23 ], [ 25, 26 ], [ 27, 28 ] ]
+  }, {
+    "sentence_tokens" : [ "Also", ",", "6,937", "subjects", "that", "age", ",", "complete", "blood", "count", ",", "and", "unconjugated", "bilirubin", "recorded", "were", "included", ",", "as", "shown", "in", "the", "flow", "process", "in", "Figure", "1", "." ],
+    "entities_indices" : [ [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "combination", "demonstrates", "better", "effectiveness", "in", "predicting", "schizophrenia", "in", "the", "acute", "stage", "(", "AUC", "0.831", ",", "95", "%", "CI", "0.825", "to", "0.837", ")", "." ],
+    "entities_indices" : [ [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "Several", "studies", "have", "suggested", "inflammation", "as", "a", "possible", "cause", "of", "elevated", "RDW", "(", "18", ")", "." ],
+    "entities_indices" : [ [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "Our", "findings", "suggest", "that", "a", "combination", "of", "markers", "including", "MLR", ",", "MPV", ",", "PLR", ",", "and", "UBC", "could", "be", "used", "to", "predict", "biomarkers", "of", "acute", "schizophrenia", "." ],
+    "entities_indices" : [ [ 9, 10 ], [ 11, 12 ], [ 13, 14 ], [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "Schizophrenia", "is", "a", "serious", "chronic", "mental", "disorder", ",", "which", "can", "cause", "various", "symptoms", "such", "as", "delusions", ",", "hallucinations", ",", "and", "cognitive", "impairments", "(", "1", ")", "." ],
+    "entities_indices" : [ [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "study", "may", "provide", "some", "clues", "to", "understanding", "the", "mechanism", "of", "schizophrenia", ",", "which", "may", "facilitate", "finding", "new", "ways", "of", "protecting", "schizophrenia.Complete", "blood", "counts", "and", "UCB", "are", "biomarkers", "that", "can", "be", "obtained", "quickly", "in", "routine", "blood", "tests", "." ],
+    "entities_indices" : [ [ 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "Unconjugated", "bilirubin", "(", "UCB", ")", "is", "the", "water-insoluble", "fraction", "of", "total", "bilirubin", "in", "the", "serum", ",", "which", "has", "been", "found", "to", "have", "powerful", "anti-inflammatory", "capacities", "(", "8)", "and", "plays", "a", "role", "in", "antioxidant", "in", "oxidative", "stress", "-", "related", "diseases", "in", "low", "concentrations", "(", "i.e", ".,", "20", "-", "100", "mu", "M", ")", "(", "between", "1.17", "and", "5.85", "mg/dl", ")", "(", "9", ")", ",", "while", "moderate", "and", "high", "levels", "directly", "cause", "cell", "apoptosis", "(", "10", ")", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 11, 12 ], [ 32, 33 ], [ 38, 39 ], [ 70, 71 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "logistic", "regression", "model", "(", "forward", "stepwise", "selection", ")", "was", "adopted", "to", "estimate", "the", "potential", "predictive", "value", "of", "PLR", ",", "MLR", ",", "PLR", ",", "RDW", ",", "MPV", ",", "and", "UCB", "in", "patients", "with", "schizophrenia", "." ],
+    "entities_indices" : [ [ 18, 19 ], [ 20, 21 ], [ 22, 23 ], [ 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "study", "indicates", "that", "white", "blood", "cells", ",", "neutrophil", ",", "monocyte", ",", "mean", "platelet", "volume", "(", "MPV", ")", ",", "red", "cell", "distribution", "width", "(", "RDW", ")", ",", "neutrophil", "and", "lymphocyte", "ratio", "(", "NLR", ")", ",", "and", "monocyte", "and", "lymphocyte", "ratio", "(", "MLR", ")", "have", "significantly", "increased", "in", "schizophrenia", "(", "p", "<", "0.05", "for", "all", ")", ",", "while", "platelet", ",", "lymphocyte", ",", "and", "platelet", "and", "lymphocyte", "ratio", "(", "PLR", ")", "in", "schizophrenia", "have", "significantly", "decreased", "(", "p", "<", "0.05", "for", "all", ")", "." ],
+    "entities_indices" : [ [ 41, 42 ], [ 67, 68 ] ]
+  }, {
+    "sentence_tokens" : [ "Our", "inclusion", "criteria", "looked", "for", "all", "with", "acute", "psychosis", "under", "the", "diagnosis", "of", "schizophrenia", "disorder", "diagnosed", "by", "two", "independent", "senior", "psychiatrists", "according", "to", "the", "International", "Classification", "of", "Diseases-10", "(", "ICD-10", "codes", "between", "F20.0", "and", "F20.9", ")", "." ],
+    "entities_indices" : [ [ 27, 28 ], [ 29, 30 ], [ 32, 33 ], [ 34, 35 ] ]
+  }, {
+    "sentence_tokens" : [ "Ozdin", "and", "Boke", "(", "32", ")", "studied", "105", "relapse", "hospitalized", "schizophrenia", "patients", "and", "found", "that", "PLR", "is", "higher", "for", "the", "sample", "than", "HCs", "." ],
+    "entities_indices" : [ [ 15, 16 ], [ 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "YW", ":", "conceptualization", ",", "methodology", ",", "validation", ",", "investigation", ",", "writing", "--", "review", ",", "and", "editing", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "systematic", "review", "(", "25", ")", "showed", "that", "UCB", "is", "in", "part", "implicated", "in", "the", "pathophysiological", "process", "of", "schizophrenia", ",", "and", "elevated", "bilirubin", "may", "be", "linked", "with", "lower", "risk", "of", "schizophrenia", "in", "the", "acute", "stage", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "work", "was", "funded", "by", "Beijing", "Hospitals", "Authority", "Clinical", "Medicine", "Development", ",", "Scientific", "Foundation", "of", "Beijing", "Huilongguan", "Hospital", ",", "No", "LY202204", ",", "and", "Beijing", "Municipal", "Administration", "of", "Hospitals", "incubating", "Program", "(", "PX", "2022079", ")", "." ],
+    "entities_indices" : [ [ 19, 20 ], [ 31, 32 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "study", ",", "we", "found", "that", "there", "is", "an", "increase", "in", "blood", "total", "WBC", "counts", ",", "neutrophils", ",", "monocytes", ",", "NLR", ",", "MLR", ",", "and", "RDW", ",", "and", "a", "reduction", "in", "lymphocyte", "counts", ",", "platelet", "counts", ",", "PLR", ",", "and", "UCB", "in", "schizophrenia", "of", "acute", "stage", "." ],
+    "entities_indices" : [ [ 21, 22 ], [ 23, 24 ], [ 26, 27 ], [ 38, 39 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "our", "results", ",", "MPV", "and", "platelet", "counts", "are", "negatively", "correlated", "with", "UCB", ";", "hence", ",", "we", "speculate", "that", "there", "could", "be", "a", "vicious", "cycle", "between", "platelet", "activity", "and", "UCB", "in", "schizophrenia", "." ],
+    "entities_indices" : [ [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "Besides", ",", "consistent", "with", "previous", "studies", "(", "19", ",", "23", ")", ",", "our", "study", "shows", "that", "WBC", ",", "neutrophil", ",", "monocyte", ",", "MPV", ",", "RDW", ",", "NLR", ",", "and", "MLR", "have", "significantly", "increased", "in", "patients", "with", "schizophrenia", "(", "p", "<", "0.05", "for", "all", ")", ",", "while", "platelet", ",", "lymphocyte", ",", "and", "PLR", "in", "patients", "with", "schizophrenia", "have", "significantly", "decreased", "(", "p", "<", "0.05", "for", "all", ")", "." ],
+    "entities_indices" : [ [ 24, 25 ], [ 26, 27 ], [ 29, 30 ], [ 51, 52 ] ]
+  }, {
+    "sentence_tokens" : [ "Correlation", "between", "bilirubin", "and", "inflammatory", "markers", "is", "reported", "to", "exist", ",", "in", "that", "UCB", "appears", "to", "be", "consumed", "by", "the", "increased", "inflammation", "levels", "(", "22", ")", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 13, 14 ], [ 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "we", "were", "the", "first", "to", "report", "a", "negative", "correlation", "between", "UCB", "and", "lymphocyte", ",", "platelet", ",", "MPV", ",", "and", "RDW", ",", "and", "a", "positive", "correlation", "between", "UCB", "and", "NLR", "in", "the", "acute", "stage", "of", "schizophrenia", "." ],
+    "entities_indices" : [ [ 21, 22 ], [ 28, 29 ], [ 30, 31 ] ]
+  }, {
+    "sentence_tokens" : [ "Previous", "reports", "(", "18", ",", "23", ")", "have", "also", "shown", "that", "NLR", ",", "PLR", ",", "and", "MLR", "values", "were", "higher", "in", "patients", "with", "schizophrenia", "than", "in", "healthy", "controls", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 13, 14 ], [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "area", "under", "the", "ROC", "is", "shown", "in", "Table", "5.A", "comparison", "was", "made", "between", "the", "new", "predictive", "model", "and", "inflammation", "predictive", "model", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "Keshavan", "et", "al.", "(", "26", ")", "reported", "that", "UCB", "has", "apoptotic", "pathways", ",", "primarily", "by", "binding", "to", "the", "mitochondrial", "membrane", ",", "resulting", "in", "the", "release", "of", "cytochrome", "c", "into", "the", "cytoplasm", "and", "activation", "of", "caspase-9", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 26, 27, 28 ], [ 34, 35 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "apoptosis", "of", "platelet", "transpires", "via", "augmented", "levels", "of", "reactive", "oxygen", "species", "(", "28", ",", "37", ")", ",", "which", "was", "supported", "by", "our", "study", ",", "where", "we", "found", "a", "negative", "relationship", "between", "platelet", "count", "and", "serum", "bilirubin", "that", "acts", "as", "a", "potent", "antioxidant", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 9, 10, 11, 12 ], [ 36, 37 ], [ 42, 43 ] ]
+  }, {
+    "sentence_tokens" : [ "Unconjugated", "bilirubin", "(", "UCB", ")", "is", "an", "efficient", "endogenous", "plasma", "antioxidant", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "study", "aims", "to", "leverage", "the", "advantage", "of", "a", "large", "sample", "of", "acute", "episode", "schizophrenia", "subjects", "on", "complete", "blood", "cell", "count", "parameters", "and", "unconjugated", "bilirubin", "." ],
+    "entities_indices" : [ [ 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "platelet", "and", "lymphocyte", "ratio", "(", "PLR", ")", ",", "neutrophil", "and", "lymphocyte", "ratio", "(", "NLR", ")", ",", "monocyte", "and", "lymphocyte", "ratio", "(", "MLR", ")", ",", "and", "red", "cell", "distribution", "width", "(", "RDW", ")", "are", "reproducible", "biomarkers", "of", "inflammation", "and", "calculated", "from", "the", "complete", "blood", "count", ",", "and", "its", "pathogenetic", "role", "has", "been", "investigated", "in", "schizophrenia", "(", "17", ")", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 22, 23 ], [ 37, 38 ] ]
+  }, {
+    "sentence_tokens" : [ "According", "to", "the", "logistic", "regression", "analysis", ",", "UCB", "and", "PLR", "play", "a", "role", "in", "the", "protection", "against", "the", "incidence", "of", "schizophrenia", "of", "acute", "stage", ",", "and", "MLR", "and", "MPV", "are", "risk", "factors", "for", "acute", "schizophrenia", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 9, 10 ], [ 26, 27 ], [ 28, 29 ] ]
+  }, {
+    "sentence_tokens" : [ "MPV", "is", "an", "indicator", "of", "platelet", "activation", "." ],
+    "entities_indices" : [ [ 5, 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "Semiz", "et", "al.", "(", "31", ")", "and", "Ozdin", "and", "Boke", "(", "32", ")", "found", "low", "lymphocyte", "counts", "in", "schizophrenia", ",", "which", "were", "also", "consistent", "with", "our", "study", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "LZ", "and", "TL", ":", "data", "curation", ",", "methodology", ",", "supervision", ",", "and", "validation", "." ],
+    "entities_indices" : [ [ 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "model", "was", "as", "follows", ":", "Logit", "(", "P1", ")", "=", "-6.141", "+0.827", "MPV", "+5.613", "MLR-0.005", "PLR-0.346", "UBC", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "Lu", "et", "al.", "(", "13", ")", "reported", "in", "their", "examination", "that", "peripheral", "TBIL", "of", "schizophrenic", "patients", "in", "the", "acute", "and", "remission", "stages", "were", "higher", "than", "those", "of", "healthy", "controls", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "Quantitative", "variables", "were", "expressed", "in", "the", "manner", "of", "mean", "+/-", "SD", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "Yu", "et", "al.", "(", "34", ")", "conducted", "a", "study", "in", "106", "first-episode", "schizophrenia", "patients", "and", "found", "that", "PLR", "is", "higher", "than", "in", "healthy", "controls", "." ],
+    "entities_indices" : [ [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "aim", "to", "investigate", "the", "changes", "of", "UCB", "and", "peripheral", "biomarkers", "of", "inflammation", "derived", "from", "CBC", "in", "acute", "schizophrenia", "with", "large", "samples", ",", "and", "to", "confirm", "the", "relationship", "between", "them", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "found", "that", "a", "combination", "of", "markers", "including", "MLR", ",", "MPV", ",", "PLR", ",", "and", "UBC", "could", "be", "leveraged", "as", "predictors", "for", "the", "diagnosis", "of", "acute", "schizophrenia.There", "has", "been", "good", "amount", "of", "research", "on", "investigating", "the", "relationship", "between", "UCB", "and", "the", "incidence", "of", "schizophrenia", "that", "is", "extensive", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 10, 11 ], [ 12, 13 ], [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "model", "was", "run", "to", "assess", "the", "potential", "predictive", "values", "of", "serum", "bilirubin", "and", "peripheral", "biomarkers", "of", "inflammation", "derived", "from", "CBC", "." ],
+    "entities_indices" : [ [ 12, 13 ], [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "our", "study", ",", "UCB", "levels", "are", "clearly", "lower", "in", "patients", "with", "acute", "psychotic", "episodes", "of", "the", "schizophrenia", "when", "compared", "with", "healthy", "controls", "." ],
+    "entities_indices" : [ [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "Scientists", "have", "been", "trying", "for", "a", "long", "time", "to", "investigate", "the", "pathogenesis", "of", "schizophrenia", "and", "search", "for", "biomarkers", "that", "may", "enable", "the", "identification", "of", "disease", "with", "objective", "diagnostic", "criteria", "(", "7", ")", "." ],
+    "entities_indices" : [ [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "addition", "to", "inflammation", ",", "oxidative", "stress", "plays", "a", "key", "role", "in", "the", "progression", "of", "schizophrenia", ",", "while", "bilirubin", "is", "a", "strong", "endogenous", "antioxidant", "(", "45", ")", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "It", "deserves", "further", "study", "that", "involves", "intermediates", "such", "as", "P-selection", "on", "the", "relationship", "between", "platelet", "counts", ",", "MPV", ",", "and", "UCB", "." ],
+    "entities_indices" : [ [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "NLR", ",", "MLR", ",", "and", "PLR", "are", "convenient", "markers", "of", "the", "systemic", "inflammatory", "response", "that", "seem", "to", "be", "less", "affected", "by", "confounding", "conditions", ",", "and", "provide", "more", "stable", "information", "than", "other", "single", "leukocyte", "parameters", "(", "42", ")", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 2, 3 ], [ 5, 6 ], [ 12, 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "It", "is", "a", "debilitating", "psychosis", "with", "~", "1", "%", "global", "lifetime", "risk", "(", "2", ")", "." ],
+    "entities_indices" : [ [ 6, 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "total", "of", "6,937", "acute", "schizophrenia", "patients", "and", "6,404", "healthy", "controls", "(", "HCs", ")", "were", "enrolled", "." ],
+    "entities_indices" : [ [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "Receiver", "operating", "characteristic", "(", "ROC", ")", "curve", "was", "adopted", "to", "assess", "the", "combined", "value", "of", "UCB", "and", "peripheral", "biomarkers", "of", "inflammation", "derived", "from", "CBC", "to", "predict", "schizophrenia", "in", "the", "acute", "stage", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "thought", "that", "the", "lymphocyte", "decrease", "caused", "by", "UCB", "slightly", "increases", "the", "level", "of", "NLR", ",", "leading", "to", "the", "positive", "correlation", "between", "UCB", "and", "NLR", "found", "in", "our", "study.Inflammatory", "processes", "play", "a", "key", "role", "in", "the", "development", "of", "schizophrenia", "." ],
+    "entities_indices" : [ [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "To", "explore", "the", "relationship", "between", "serum", "bilirubin", "concentration", "and", "peripheral", "biomarkers", "of", "inflammation", "derived", "from", "CBC", ",", "Spearman", "correlation", "analyses", "were", "performed", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "Balcioglu", "and", "Kirlioglu", "'s", "research", "(", "18", ")", "reported", "higher", "levels", "of", "RDW", "in", "schizophrenia", "than", "in", "HCs", ",", "which", "is", "consistent", "with", "our", "results", "." ],
+    "entities_indices" : [ [ 12, 13 ], [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "Elevated", "levels", "of", "these", "markers", "have", "been", "reported", "in", "schizophrenia", "(", "18", ",", "19", ")", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "as", "a", "retrospective", "study", ",", "there", "is", "a", "lack", "of", "clinical", "information", ",", "such", "as", "illness", "duration", "and", "PANSS", "scores", ",", "during", "the", "hospitalization", "period", "of", "the", "patients", "and", "potential", "confounding", "factors", "such", "as", "antipsychotic", "treatment", ",", "including", "dosage", ",", "time", "on", "treatment", ",", "smoking", ",", "and", "BMI", "of", "subjects", "." ],
+    "entities_indices" : [ [ 46, 47 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "sample", "size", "of", "our", "study", "is", "larger", ",", "which", "could", "provide", "more", "reliable", "supports", "for", "the", "conclusion", "that", "PLR", "is", "lower", "in", "patients", "with", "acute", "psychotic", "episodes", "of", "schizophrenia", "than", "in", "HCs", "." ],
+    "entities_indices" : [ [ 19, 20 ], [ 32, 33 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "research", "conducted", "by", "Gama-Marques", "et", "al.", "(", "12", ")", "found", "higher", "levels", "of", "UCB", "associated", "with", "an", "increased", "incidence", "of", "acute", "schizophrenia", "." ],
+    "entities_indices" : [ [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "HL", "and", "JM", ":", "conceptualization", ",", "project", "administration", ",", "supervision", ",", "writing", "--", "review", ",", "and", "editing", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "UCB", "has", "a", "protective", "effect", "on", "acute", "stage", "of", "schizophrenia", ",", "which", "is", "weak", "and", "indirect", "by", "affecting", "the", "proinflammatory", "processes", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "Inflammation", "is", "closely", "linked", "to", "oxidative", "stress", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "Peitl", "et", "al.", "'", "s", "study", "(", "35", ")", ",", "there", "was", "no", "statistically", "significant", "difference", "between", "schizophrenia", "and", "HC", "groups", "regarding", "total", "platelet", "count", "." ],
+    "entities_indices" : [ [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "results", "prove", "that", "the", "combination", "of", "peripheral", "biomarkers", "of", "inflammation", "and", "UCB", "is", "more", "effective", "in", "predicting", "acute", "schizophrenia", "(", "Figure", "3", ")", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "MPV", ",", "RDW", ",", "NLR", ",", "MLR", ",", "PLR", ",", "and", "UCB", "were", "taken", "as", "independent", "variables", "for", "a", "logistic", "regression", "analysis", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 4, 5 ], [ 6, 7 ], [ 8, 9 ], [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "From", "our", "results", ",", "UCB", "has", "potential", "diagnostic", "value", ",", "especially", "when", "combined", "with", "inflammatory", "indicators", "." ],
+    "entities_indices" : [ [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "variables", "were", "analyzed", "using", "an", "analytical", "method", ",", "i.e", ".,", "Kolmogorov", "-", "Smirnov", "test", ",", "to", "determine", "whether", "they", "follow", "normal", "distribution", "." ],
+    "entities_indices" : [ [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "Using", "schizophrenia", "as", "a", "classification", "variable", ",", "ROC", "curves", "for", "the", "effectiveness", "of", "MPV", ",", "RDW", ",", "MLR", ",", "PLR", ",", "UCB", ",", "and", "the", "combined", "values", "of", "these", "variables", "in", "predicting", "acute", "schizophrenia", "are", "shown", "in", "Figure", "2", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 15, 16 ], [ 17, 18 ], [ 19, 20 ], [ 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "One", "study", "(", "29", ")", "showed", "that", "reduced", "P-selectin", "expression", ",", "which", "is", "a", "protein", "released", "from", "activated", "platelets", ",", "was", "significantly", "linked", "to", "increasing", "bilirubin", "concentrations", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 25, 26 ] ]
+  } ],
+  "emptySentences" : [ {
+    "sentence_tokens" : [ "Relation", "Between", "Unconjugated", "Bilirubin", "and", "Peripheral", "Biomarkers", "of", "Inflammation", "Derived", "From", "Complete", "Blood", "Counts", "in", "Patients", "With", "Acute", "Stage", "of", "Schizophrenia", "." ]
+  }, {
+    "sentence_tokens" : [ "Background", "." ]
+  }, {
+    "sentence_tokens" : [ "Inflammation", "and", "oxidative", "stress", "are", "the", "major", "leading", "hypothetical", "causes", "of", "schizophrenia", "." ]
+  }, {
+    "sentence_tokens" : [ "Unconjugated", "bilirubin", "(", "UCB", ")", "is", "an", "efficient", "endogenous", "plasma", "antioxidant", "." ]
+  }, {
+    "sentence_tokens" : [ "Inflammation", "is", "closely", "linked", "to", "oxidative", "stress", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "relationship", "between", "UCB", "and", "inflammatory", "markers", "should", "be", "paid", "close", "attention", "in", "schizophrenia", "acute", "stage", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "paper", ",", "combined", "UCB", "and", "inflammatory", "markers", "were", "evaluated", "for", "their", "capability", "in", "predicting", "schizophrenia", "in", "the", "acute", "stage", "to", "find", "an", "easy", "and", "effective", "indicator", "to", "identify", "acute", "schizophrenia", "." ]
+  }, {
+    "sentence_tokens" : [ "Methods", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "total", "of", "6,937", "acute", "schizophrenia", "patients", "and", "6,404", "healthy", "controls", "(", "HCs", ")", "were", "enrolled", "." ]
+  }, {
+    "sentence_tokens" : [ "UCB", "and", "peripheral", "biomarkers", "of", "inflammation", "derived", "from", "complete", "blood", "counts", "(", "CBC", ")", "were", "investigated", "in", "the", "subjects", "with", "acute", "schizophrenia", ",", "and", "the", "results", "were", "compared", "with", "HCs", "." ]
+  }, {
+    "sentence_tokens" : [ "Simultaneously", ",", "Spearman", "test", "was", "employed", "to", "assess", "the", "correlation", "between", "the", "variables", ",", "while", "logistic", "regression", "was", "adopted", "to", "determine", "the", "combined", "equation", "and", "receiver", "operating", "characteristic", "curve", "was", "used", "to", "evaluate", "the", "combined", "value", "of", "UCB", "and", "peripheral", "biomarkers", "of", "inflammation", "derived", "from", "CBC", "to", "predict", "schizophrenia", "in", "the", "acute", "stage", "." ]
+  }, {
+    "sentence_tokens" : [ "Results", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "study", "indicates", "that", "white", "blood", "cells", ",", "neutrophil", ",", "monocyte", ",", "mean", "platelet", "volume", "(", "MPV", ")", ",", "red", "cell", "distribution", "width", "(", "RDW", ")", ",", "neutrophil", "and", "lymphocyte", "ratio", "(", "NLR", ")", ",", "and", "monocyte", "and", "lymphocyte", "ratio", "(", "MLR", ")", "have", "significantly", "increased", "in", "schizophrenia", "(", "p", "<", "0.05", "for", "all", ")", ",", "while", "platelet", ",", "lymphocyte", ",", "and", "platelet", "and", "lymphocyte", "ratio", "(", "PLR", ")", "in", "schizophrenia", "have", "significantly", "decreased", "(", "p", "<", "0.05", "for", "all", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "UCB", "exhibits", "negative", "correlation", "with", "MPV", "significantly", "(", "r", "=", "0.121", ",", "p", "<", "0.001", ")", ",", "and", "no", "correlation", "with", "neutrophil", "and", "monocyte", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "correlations", "between", "UCB", "and", "other", "peripheral", "biomarkers", "of", "inflammation", "derived", "from", "CBC", "are", "very", "weak", "." ]
+  }, {
+    "sentence_tokens" : [ "MPV", ",", "RDW", ",", "NLR", ",", "MLR", ",", "PLR", ",", "and", "UCB", "were", "taken", "as", "independent", "variables", "for", "a", "logistic", "regression", "analysis", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "model", "was", "as", "follows", ":", "Logit", "(", "P1", ")", "=", "-6.141", "+0.827", "MPV", "+5.613", "MLR-0.005", "PLR-0.346", "UBC", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "combination", "demonstrates", "better", "effectiveness", "in", "predicting", "schizophrenia", "in", "the", "acute", "stage", "(", "AUC", "0.831", ",", "95", "%", "CI", "0.825", "to", "0.837", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Conclusion", "." ]
+  }, {
+    "sentence_tokens" : [ "UCB", "has", "a", "protective", "effect", "on", "acute", "stage", "of", "schizophrenia", ",", "which", "is", "weak", "and", "indirect", "by", "affecting", "the", "proinflammatory", "processes", "." ]
+  }, {
+    "sentence_tokens" : [ "Our", "findings", "suggest", "that", "a", "combination", "of", "MLR", ",", "MPV", ",", "PLR", ",", "and", "UBC", "could", "be", "used", "to", "predict", "acute", "stage", "of", "schizophrenia", "." ]
+  }, {
+    "sentence_tokens" : [ "Introduction", "." ]
+  }, {
+    "sentence_tokens" : [ "Schizophrenia", "is", "a", "serious", "chronic", "mental", "disorder", ",", "which", "can", "cause", "various", "symptoms", "such", "as", "delusions", ",", "hallucinations", ",", "and", "cognitive", "impairments", "(", "1", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "It", "is", "a", "debilitating", "psychosis", "with", "~", "1", "%", "global", "lifetime", "risk", "(", "2", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "disease", "often", "causes", "patients", "to", "have", "difficulties", "in", "various", "aspects", "of", "their", "daily", "lives", "including", "social", ",", "occupational", ",", "and", "general", "functioning", "(", "3", ",", "4", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Furthermore", ",", "although", "the", "etiology", "of", "schizophrenia", "is", "unknown", ",", "the", "genetic", "liability", "of", "disabling", "conditions", "has", "been", "reported", "(", "5", ")", ",", "which", "has", "affected", "perception", "of", "patients", "with", "schizophrenia", ",", "exaggerated", "the", "dangerousness", "and", "unpredictability", ",", "and", "increased", "patients", "'", "stigma", "(", "6", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Scientists", "have", "been", "trying", "for", "a", "long", "time", "to", "investigate", "the", "pathogenesis", "of", "schizophrenia", "and", "search", "for", "biomarkers", "that", "may", "enable", "the", "identification", "of", "disease", "with", "objective", "diagnostic", "criteria", "(", "7", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Unconjugated", "bilirubin", "(", "UCB", ")", "is", "the", "water-insoluble", "fraction", "of", "total", "bilirubin", "in", "the", "serum", ",", "which", "has", "been", "found", "to", "have", "powerful", "anti-inflammatory", "capacities", "(", "8)", "and", "plays", "a", "role", "in", "antioxidant", "in", "oxidative", "stress", "-", "related", "diseases", "in", "low", "concentrations", "(", "i.e", ".,", "20", "-", "100", "mu", "M", ")", "(", "between", "1.17", "and", "5.85", "mg/dl", ")", "(", "9", ")", ",", "while", "moderate", "and", "high", "levels", "directly", "cause", "cell", "apoptosis", "(", "10", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "An", "animal", "study", "suggested", "that", "UCB", "might", "be", "important", "to", "the", "pathophysiology", "of", "schizophrenia", "(", "11", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Many", "clinical", "studies", "have", "observed", "a", "correlation", "between", "bilirubin", "and", "schizophrenia", ",", "however", ",", "with", "discrepancies", "in", "the", "results", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "research", "conducted", "by", "Gama-Marques", "et", "al.", "(", "12", ")", "found", "higher", "levels", "of", "UCB", "associated", "with", "an", "increased", "incidence", "of", "acute", "schizophrenia", "." ]
+  }, {
+    "sentence_tokens" : [ "Lu", "et", "al.", "(", "13", ")", "reported", "in", "their", "examination", "that", "peripheral", "TBIL", "of", "schizophrenic", "patients", "in", "the", "acute", "and", "remission", "stages", "were", "higher", "than", "those", "of", "healthy", "controls", "." ]
+  }, {
+    "sentence_tokens" : [ "On", "the", "contrary", ",", "Yin", "et", "al.", "(", "14", ")", "found", "that", "serum", "bilirubin", "concentration", "was", "significantly", "decreased", "in", "schizophrenia", "patients", "compared", "with", "healthy", "controls", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "recent", "study", "conducted", "by", "Becklen", "et", "al.", "(", "15", ")", "set", "out", "to", "investigate", "the", "levels", "of", "total", "plasma", "bilirubin", "in", "subjects", "with", "a", "first-episode", "psychosis", ",", "and", "found", "that", "bilirubin", "levels", "were", "reduced", "compared", "with", "20", "healthy", "controls", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "results", "of", "these", "existing", "studies", "are", "inconsistent", ",", "and", "there", "have", "been", "relatively", "few", "studies", "with", "large", "sample", "sizes", "about", "the", "relationship", "between", "bilirubin", "and", "schizophrenia.Many", "studies", "have", "focused", "on", "the", "relationship", "between", "inflammation", "and", "the", "pathogenesis", "of", "schizophrenia", "(", "16", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "platelet", "and", "lymphocyte", "ratio", "(", "PLR", ")", ",", "neutrophil", "and", "lymphocyte", "ratio", "(", "NLR", ")", ",", "monocyte", "and", "lymphocyte", "ratio", "(", "MLR", ")", ",", "and", "red", "cell", "distribution", "width", "(", "RDW", ")", "are", "reproducible", "biomarkers", "of", "inflammation", "and", "calculated", "from", "the", "complete", "blood", "count", ",", "and", "its", "pathogenetic", "role", "has", "been", "investigated", "in", "schizophrenia", "(", "17", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Elevated", "levels", "of", "these", "markers", "have", "been", "reported", "in", "schizophrenia", "(", "18", ",", "19", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Inflammation", "is", "a", "complex", "pathophysiological", "process", "relying", "on", "multiple", "biological", "pathways", "and", "has", "high", "correlation", "with", "oxidative", "stress", "(", "20", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "recent", "years", ",", "peripheral", "biomarkers", "of", "inflammation", "derived", "from", "CBC", "have", "been", "reported", "to", "reflect", "the", "condition", "of", "central", "oxidative", "stress", "in", "schizophrenia", "(", "21", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Correlation", "between", "bilirubin", "and", "inflammatory", "markers", "is", "reported", "to", "exist", ",", "in", "that", "UCB", "appears", "to", "be", "consumed", "by", "the", "increased", "inflammation", "levels", "(", "22", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "There", "could", "be", "an", "important", "underlying", "link", "in", "the", "association", "between", "UCB", "and", "inflammatory", "markers", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "study", ",", "we", "hypothesize", "that", "there", "might", "be", "a", "negative", "association", "between", "UCB", "and", "inflammatory", "markers", "." ]
+  }, {
+    "sentence_tokens" : [ "So", "far", ",", "the", "relationship", "of", "UCB", "and", "inflammatory", "markers", "has", "not", "been", "looked", "into", "in", "psychiatric", "disorders", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "aim", "to", "investigate", "the", "changes", "of", "UCB", "and", "peripheral", "biomarkers", "of", "inflammation", "derived", "from", "CBC", "in", "acute", "schizophrenia", "with", "large", "samples", ",", "and", "to", "confirm", "the", "relationship", "between", "them", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "study", "may", "provide", "some", "clues", "to", "understanding", "the", "mechanism", "of", "schizophrenia", ",", "which", "may", "facilitate", "finding", "new", "ways", "of", "protecting", "schizophrenia.Complete", "blood", "counts", "and", "UCB", "are", "biomarkers", "that", "can", "be", "obtained", "quickly", "in", "routine", "blood", "tests", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "hypothesize", "that", "inflammatory", "process", "and", "oxidative", "stress", "injury", "might", "be", "combined", "to", "get", "more", "information", "for", "predicting", "schizophrenia", "in", "the", "acute", "stage", "." ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "in", "this", "study", "we", "combine", "peripheral", "biomarkers", "of", "inflammation", "derived", "from", "CBC", "(", "inflammatory", "biomarkers", ")", "and", "UCB", "(", "an", "oxidative", "stress", "biomarker", ")", "into", "parameters", "using", "a", "simplified", "equation", "to", "assess", "the", "capability", "of", "combined", "information", "to", "predict", "schizophrenia", "in", "the", "acute", "stage", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "way", ",", "we", "hope", "to", "find", "a", "simple", "and", "reliable", "auxiliary", "index", "to", "identify", "acute", "schizophrenia", ",", "hence", "facilitate", "diagnosis", "of", "the", "disease", ",", "which", "is", "typically", "difficult", "due", "to", "the", "lack", "of", "objective", "diagnostic", "criteria", "for", "schizophrenia", "." ]
+  }, {
+    "sentence_tokens" : [ "Methods", "." ]
+  }, {
+    "sentence_tokens" : [ "Subjects", "and", "Data", "Collection", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "study", "was", "approved", "by", "the", "Local", "Ethics", "Committee", "of", "Hui-Long-Guan", "Hospital", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "study", "was", "designed", "as", "a", "cross-sectional", ",", "retrospective", "study", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "research", "was", "conducted", "in", "Beijing", "Hui-Long-Guan", "hospital", ",", "in", "collaboration", "with", "Clinical", "Medical", "College", "of", "Peking", "University", ",", "China", "in", "a", "six-year", "period", "from", "March", "15", ",", "2015", "to", "March", "15", ",", "2021.The", "research", "data", "collection", "was", "based", "on", "the", "HIS", "System", "(", "a", "database", "used", "in", "Hui-Long-Guan", "Hospital", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "data", "were", "extracted", "from", "the", "electronic", "medical", "records", "of", "the", "hospital", "without", "any", "accessible", "personal", "identifying", "information", "of", "the", "patients", "(", "except", "their", "hospital", "registration", "numbers", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Our", "inclusion", "criteria", "looked", "for", "all", "with", "acute", "psychosis", "under", "the", "diagnosis", "of", "schizophrenia", "disorder", "diagnosed", "by", "two", "independent", "senior", "psychiatrists", "according", "to", "the", "International", "Classification", "of", "Diseases-10", "(", "ICD-10", "codes", "between", "F20.0", "and", "F20.9", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Aged", "between", "18", "and", "65", "years", ",", "admitted", "to", "our", "psychiatric", "ward", ",", "all", "subjects", "were", "Han", "Chinese", "." ]
+  }, {
+    "sentence_tokens" : [ "Exclusion", "criteria", "include", "presently", "comorbid", "with", "any", "other", "psychiatric", "disorder", ",", "presence", "of", "a", "physical", "disease", "that", "may", "alter", "inflammatory", "status", "or", "serum", "bilirubin", "concentrations", "such", "as", "hepatic", "or", "renal", "failure", ",", "diabetes", "mellitus", ",", "hypertension", ",", "acute", "infection", ",", "acute", "or", "chronic", "immuno-inflammatory", "disease", "or", "pregnancy", ",", "obesity", "or", "being", "underweight", "(", "body", "mass", "index", ">", "29.9", "or", "<", "18.5", "kg/m", ",", "respectively", ")", ",", "heavy", "smoking", "(", ">", "20", "cigarettes", "per", "day", ")", ",", "being", "under", "an", "anti-inflammatory", "or", "immunosuppressive", "medication", ",", "documented", "laboratory", "findings", "of", "liver", "or", "renal", "pathology", ",", "iron-deficiency", "anemia", ",", "and", "lack", "of", "laboratory", "screening", "at", "admission", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "control", "group", "was", "recruited", "from", "the", "local", "community", "visited", "outpatient", "unit", "for", "healthy", "medical", "examinations", ",", "coded", "with", "ICD-10", "Z00.00", "(", "encounter", "for", "general", "adult", "medical", "examination", "without", "abnormal", "findings", ")", ",", "without", "any", "record", "of", "personal", "or", "family", "history", "of", "psychiatric", "disorders", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "control", "group", "were", "Han", "Chinese", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "total", ",", "6,404", "healthy", "controls", "were", "included", "at", "age", "of", "18", "-", "65", "years", "." ]
+  }, {
+    "sentence_tokens" : [ "All", "subjects", "signed", "consent", ",", "which", "was", "approved", "by", "the", "Institutional", "Research", "Ethics", "Committee", "of", "Beijing", "Hui-Long-Guan", "Hospital.After", "the", "eligibility", "evaluation", ",", "the", "patients", "'", "electronic", "and", "hard-copy", "files", "were", "reviewed", ",", "and", "patients", "'", "hospital", "registration", "numbers", "were", "provided", "." ]
+  }, {
+    "sentence_tokens" : [ "According", "to", "the", "hospital", "protocol", ",", "blood", "sampling", "was", "performed", "after", "an", "overnight", "fast", "." ]
+  }, {
+    "sentence_tokens" : [ "Preliminarily", ",", "data", "of", "10,047", "patients", "who", "were", "screened", "within", "the", "designated", "time", "frame", "were", "reviewed", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "total", "of", "112", "patients", "were", "excluded", "due", "to", "present", "comorbidity", "with", "other", "psychiatric", "disorders", ",", "2,112", "excluded", "for", "presence", "of", "a", "physical", "comorbidity", ",", "36", "excluded", "due", "to", "being", "under", "an", "anti-inflammatory", "medication", ",", "658", "excluded", "due", "to", "absence", "of", "blood", "screening", ",", "and", "192", "excluded", "for", "major", "pathology", "in", "laboratory", "results", "." ]
+  }, {
+    "sentence_tokens" : [ "Also", ",", "6,937", "subjects", "that", "age", ",", "complete", "blood", "count", ",", "and", "unconjugated", "bilirubin", "recorded", "were", "included", ",", "as", "shown", "in", "the", "flow", "process", "in", "Figure", "1", "." ]
+  }, {
+    "sentence_tokens" : [ "Statistical", "Analysis", "." ]
+  }, {
+    "sentence_tokens" : [ "SPSS", "(", "Statistical", "Package", "for", "the", "Social", "Sciences", "ver", "." ]
+  }, {
+    "sentence_tokens" : [ "25.0", ";", "SPSS", "Inc", ".,", "Chicago", ",", "Illinois", ",", "USA", ")", "computer", "program", "was", "used", "for", "statistical", "analysis", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "variables", "were", "analyzed", "using", "an", "analytical", "method", ",", "i.e", ".,", "Kolmogorov", "-", "Smirnov", "test", ",", "to", "determine", "whether", "they", "follow", "normal", "distribution", "." ]
+  }, {
+    "sentence_tokens" : [ "Spearman", "correlation", "was", "selected", "because", "the", "data", "did", "not", "conform", "to", "normal", "distribution", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "comparison", "between", "the", "groups", ",", "Mann", "-", "Whitney", "U-test", "was", "used", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "logistic", "regression", "model", "(", "forward", "stepwise", "selection", ")", "was", "adopted", "to", "estimate", "the", "potential", "predictive", "value", "of", "PLR", ",", "MLR", ",", "PLR", ",", "RDW", ",", "MPV", ",", "and", "UCB", "in", "patients", "with", "schizophrenia", "." ]
+  }, {
+    "sentence_tokens" : [ "Quantitative", "variables", "were", "expressed", "in", "the", "manner", "of", "mean", "+/-", "SD", "." ]
+  }, {
+    "sentence_tokens" : [ "All", "statistical", "tests", "were", "2", "tailed", "and", "p-value", "<", "0.05", "was", "considered", "as", "statistically", "significant", "." ]
+  }, {
+    "sentence_tokens" : [ "Logistic", "regression", "was", "employed", "to", "determine", "the", "combined", "equation", "." ]
+  }, {
+    "sentence_tokens" : [ "Receiver", "operating", "characteristic", "(", "ROC", ")", "curve", "was", "adopted", "to", "assess", "the", "combined", "value", "of", "UCB", "and", "peripheral", "biomarkers", "of", "inflammation", "derived", "from", "CBC", "to", "predict", "schizophrenia", "in", "the", "acute", "stage", "." ]
+  }, {
+    "sentence_tokens" : [ "Results", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "characteristics", "of", "the", "study", "population", "are", "summarized", "in", "Table", "1", "." ]
+  }, {
+    "sentence_tokens" : [ "There", "were", "6,937", "subjects", "with", "schizophrenia", "and", "6,404", "healthy", "controls", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "ages", "of", "the", "schizophrenia", "and", "control", "groups", "were", "39.410", "+/-", "12.461", "and", "39.380", "+/-", "9.751", "years", ",", "p", ">", "0.05", "(", "Table", "1", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Notably", ",", "patients", "with", "schizophrenia", "had", "significantly", "lower", "UCB", "compared", "with", "healthy", "controls", "(", "p", "<", "0.05", "for", "all", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Besides", ",", "consistent", "with", "previous", "studies", "(", "19", ",", "23", ")", ",", "our", "study", "shows", "that", "WBC", ",", "neutrophil", ",", "monocyte", ",", "MPV", ",", "RDW", ",", "NLR", ",", "and", "MLR", "have", "significantly", "increased", "in", "patients", "with", "schizophrenia", "(", "p", "<", "0.05", "for", "all", ")", ",", "while", "platelet", ",", "lymphocyte", ",", "and", "PLR", "in", "patients", "with", "schizophrenia", "have", "significantly", "decreased", "(", "p", "<", "0.05", "for", "all", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "To", "explore", "the", "relationship", "between", "serum", "bilirubin", "concentration", "and", "peripheral", "biomarkers", "of", "inflammation", "derived", "from", "CBC", ",", "Spearman", "correlation", "analyses", "were", "performed", "." ]
+  }, {
+    "sentence_tokens" : [ "As", "shown", "in", "Table", "2", ",", "UCB", "(", "r", "=", "0.121", ",", "p", "<", "0.001", ")", "were", "found", "to", "be", "negatively", "correlated", "with", "MPV", "significantly", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "there", "were", "no", "correlations", "between", "UCB", "concentrations", "and", "neutrophil", "or", "monocyte", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "correlations", "between", "UCB", "and", "other", "peripheral", "biomarkers", "of", "inflammation", "derived", "from", "CBC", "are", "very", "weak", ",", "i.e", ".,", "UCB", "is", "negatively", "correlated", "with", "lymphocyte", "(", "r", "=", "-", "0.033", ",", "p", "<", "0.001", ")", ",", "platelet", "counts", "(", "r", "=", "-", "0.05", ",", "p", "<", "0.001", ")", ",", "RDW", "(", "r", "=", "-", "0.041", ",", "p", "<", "0.001", ")", ",", "and", "WBC", "(", "r", "=", "-", "0.023", ",", "p", "=", "0.05", ")", ",", "and", "positively", "correlated", "with", "NLR", "(", "r", "=", "0.03", ",", "p", "=", "0.011", ")", "in", "the", "subjects", "with", "schizophrenia.Given", "that", "the", "MPV", ",", "RDW", ",", "MLR", ",", "NLR", ",", "PLR", ",", "and", "UCB", "were", "different", "between", "the", "control", "group", "and", "the", "acute", "schizophrenia", "group", ",", "we", "sought", "to", "determine", "whether", "these", "inflammation", "based", "markers", "and", "UCB", "could", "be", "predictors", "of", "schizophrenia", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "used", "schizophrenia", "and", "control", "as", "dependent", "variables", "for", "the", "stepwise", "logistic", "regression", "model", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "model", "was", "run", "to", "assess", "the", "potential", "predictive", "values", "of", "serum", "bilirubin", "and", "peripheral", "biomarkers", "of", "inflammation", "derived", "from", "CBC", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "combined", "equation", "of", "the", "logistic", "regression", "model", "was", "logit", "(", "P1", ")", "=", "-", "6.141", "+0.827", "MPV", "+5.613", "MLR", "-", "0.005", "PLR", "-", "0.346", "UBC", "(", "Table", "3", ")", ";", "therefore", ",", "the", "\"", "combined", "\"", "value", "refers", "to", "logit", "(", "P1", ")", "in", "our", "report.MPV", ",", "RDW", ",", "MLR", ",", "NLR", ",", "and", "PLR", "were", "combined", "using", "logistic", "regression", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "peripheral", "biomarkers", "of", "inflammation", "of", "logistic", "regression", "model", "were", "logit", "(", "P2", ")", "=", "-", "10.911", "+0.882", "MPV", "+0.166", "RDW", "+4.877", "MLR", "-", "0.003PLR", "(", "Table", "4", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Using", "schizophrenia", "as", "a", "classification", "variable", ",", "ROC", "curves", "for", "the", "effectiveness", "of", "MPV", ",", "RDW", ",", "MLR", ",", "PLR", ",", "UCB", ",", "and", "the", "combined", "values", "of", "these", "variables", "in", "predicting", "acute", "schizophrenia", "are", "shown", "in", "Figure", "2", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "area", "under", "the", "ROC", "is", "shown", "in", "Table", "5.A", "comparison", "was", "made", "between", "the", "new", "predictive", "model", "and", "inflammation", "predictive", "model", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "best", "cut-off", "value", "of", "peripheral", "biomarkers", "of", "inflammation", "was", "0.45959", "with", "sensitivity", "77.38", "%", "and", "specificity", "65.57", "%", "(", "AUC", "0.779", ",", "95", "%", "CI", "0.772", "-", "0.786", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "recommended", "cut-off", "value", "for", "the", "combined", "value", "based", "on", "the", "maximum", "of", "Youden", "'s", "index", "on", "the", "ROC", "curve", "was", "0.53126", "and", "it", "exhibits", "73.01", "%", "sensitivity", "and", "76.87", "%", "specificity", "in", "the", "prediction", "(", "AUC", "0.831", ",", "95", "%", "CI", "0.825", "-", "0.837", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "results", "prove", "that", "the", "combination", "of", "peripheral", "biomarkers", "of", "inflammation", "and", "UCB", "is", "more", "effective", "in", "predicting", "acute", "schizophrenia", "(", "Figure", "3", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Discussion", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "study", ",", "we", "found", "that", "there", "was", "a", "reduction", "in", "UCB", "in", "acute", "schizophrenia", "." ]
+  }, {
+    "sentence_tokens" : [ "Data", "from", "logistic", "regression", "further", "support", "the", "conclusion", "that", "UCB", "has", "a", "protection", "effect", "on", "schizophrenia", "in", "the", "acute", "stage", "of", "schizophrenia", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "we", "were", "the", "first", "to", "report", "a", "negative", "correlation", "between", "UCB", "and", "lymphocyte", ",", "platelet", ",", "MPV", ",", "and", "RDW", ",", "and", "a", "positive", "correlation", "between", "UCB", "and", "NLR", "in", "the", "acute", "stage", "of", "schizophrenia", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "found", "that", "a", "combination", "of", "markers", "including", "MLR", ",", "MPV", ",", "PLR", ",", "and", "UBC", "could", "be", "leveraged", "as", "predictors", "for", "the", "diagnosis", "of", "acute", "schizophrenia.There", "has", "been", "good", "amount", "of", "research", "on", "investigating", "the", "relationship", "between", "UCB", "and", "the", "incidence", "of", "schizophrenia", "that", "is", "extensive", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "it", "is", "not", "clear", "whether", "UCB", "concentration", "is", "positively", "or", "negatively", "associated", "with", "the", "incidence", "of", "schizophrenia", "." ]
+  }, {
+    "sentence_tokens" : [ "Gama-Marques", "et", "al.", "'", "s", "study", "(", "12", ")", "claimed", "that", "schizophrenia", "was", "linked", "to", "higher", "levels", "of", "UCB", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "Vitek", "et", "al.", "(", "24", ")", "claimed", "the", "opposite", ",", "i.e", ".,", "schizophrenia", "was", "linked", "with", "lower", "levels", "of", "the", "molecule", "." ]
+  }, {
+    "sentence_tokens" : [ "Our", "study", "supports", "the", "latter", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "our", "study", ",", "UCB", "levels", "are", "clearly", "lower", "in", "patients", "with", "acute", "psychotic", "episodes", "of", "the", "schizophrenia", "when", "compared", "with", "healthy", "controls", "." ]
+  }, {
+    "sentence_tokens" : [ "Pommerening", "Dornelles", "et", "al.", "(", "25", ")", "pointed", "out", "that", "studies", "reporting", "the", "lower", "UCB", "levels", "in", "schizophrenia", "(", "21", ",", "24", ")", "could", "indicate", "a", "chronic", "proinflammatory", "state", "caused", "by", "elevated", "reactive", "oxygen", "species", "and", "the", "consumption", "of", "the", "antioxidant", "potential", ",", "hence", "leading", "to", "neuronal", "damage", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "study", "presented", "in", "this", "paper", "is", "the", "first", "to", "investigate", "the", "relation", "between", "peripheral", "biomarkers", "of", "inflammation", "derived", "from", "CBC", "and", "UCB", "levels", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "found", "that", "lymphocyte", "has", "a", "negative", "relationship", "with", "UCB", "." ]
+  }, {
+    "sentence_tokens" : [ "Keshavan", "et", "al.", "(", "26", ")", "reported", "that", "UCB", "has", "apoptotic", "pathways", ",", "primarily", "by", "binding", "to", "the", "mitochondrial", "membrane", ",", "resulting", "in", "the", "release", "of", "cytochrome", "c", "into", "the", "cytoplasm", "and", "activation", "of", "caspase-9", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "may", "be", "the", "mechanism", "of", "the", "apoptotic", "effect", "of", "UCB", "in", "reducing", "lymphocyte", "counts", "(", "27", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "One", "study", "(", "29", ")", "showed", "that", "reduced", "P-selectin", "expression", ",", "which", "is", "a", "protein", "released", "from", "activated", "platelets", ",", "was", "significantly", "linked", "to", "increasing", "bilirubin", "concentrations", "." ]
+  }, {
+    "sentence_tokens" : [ "MPV", "is", "an", "indicator", "of", "platelet", "activation", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "our", "results", ",", "MPV", "and", "platelet", "counts", "are", "negatively", "correlated", "with", "UCB", ";", "hence", ",", "we", "speculate", "that", "there", "could", "be", "a", "vicious", "cycle", "between", "platelet", "activity", "and", "UCB", "in", "schizophrenia", "." ]
+  }, {
+    "sentence_tokens" : [ "It", "deserves", "further", "study", "that", "involves", "intermediates", "such", "as", "P-selection", "on", "the", "relationship", "between", "platelet", "counts", ",", "MPV", ",", "and", "UCB", "." ]
+  }, {
+    "sentence_tokens" : [ "RDW", "is", "considered", "as", "a", "comprehensive", "biomarker", "of", "chronic", "inflammation", "and", "oxidative", "stress", "(", "30", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Elevated", "RDW", "reflects", "enhanced", "cellular", "oxidative", "stress", ",", "which", "could", "lead", "to", "the", "consumption", "and", "even", "depletion", "of", "natural", "antioxidants", ",", "thus", "resulting", "in", "decrease", "in", "UCB", "concentration", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "study", ",", "UCB", "was", "significantly", "negatively", "correlated", "with", "RDW", "levels", "in", "the", "schizophrenia", "group", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "the", "present", "study", "is", "a", "cross-sectional", "study", ";", "further", "prospective", "cohort", "studies", "are", "needed", "to", "explore", "the", "relationship", "between", "UCB", "and", "RDW", "in", "acute", "schizophrenia", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "thought", "that", "the", "lymphocyte", "decrease", "caused", "by", "UCB", "slightly", "increases", "the", "level", "of", "NLR", ",", "leading", "to", "the", "positive", "correlation", "between", "UCB", "and", "NLR", "found", "in", "our", "study.Inflammatory", "processes", "play", "a", "key", "role", "in", "the", "development", "of", "schizophrenia", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "principal", "finding", "of", "the", "present", "study", "is", "significantly", "increased", "blood", "total", "WBC", "counts", ",", "neutrophils", ",", "and", "monocytes", "in", "patients", "with", "acute", "schizophrenia", "vs.", "controls", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "finding", "is", "consistent", "with", "a", "previous", "meta-analysis", "research", "(", "23", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "study", ",", "we", "observed", "lower", "lymphocyte", "counts", "in", "the", "schizophrenia", "group", "compared", "with", "the", "control", "group", "." ]
+  }, {
+    "sentence_tokens" : [ "Semiz", "et", "al.", "(", "31", ")", "and", "Ozdin", "and", "Boke", "(", "32", ")", "found", "low", "lymphocyte", "counts", "in", "schizophrenia", ",", "which", "were", "also", "consistent", "with", "our", "study", "." ]
+  }, {
+    "sentence_tokens" : [ "Platelets", "are", "involved", "in", "serotonin", "(", "5-HT", ")", "hypothesis", "and", "inflammation", "hypothesis", "to", "explain", "the", "pathogenesis", "of", "schizophrenia", "(", "33", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "One", "study", "conducted", "in", "first-episode", "schizophrenia", "found", "that", "platelet", "count", "was", "significantly", "higher", "than", "that", "in", "the", "HCs", "(", "34", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "Peitl", "et", "al.", "'", "s", "study", "(", "35", ")", ",", "there", "was", "no", "statistically", "significant", "difference", "between", "schizophrenia", "and", "HC", "groups", "regarding", "total", "platelet", "count", "." ]
+  }, {
+    "sentence_tokens" : [ "Our", "results", "did", "not", "replicate", "the", "results", ",", "in", "which", "platelet", "counts", "were", "significantly", "lower", "in", "patients", "with", "schizophrenia", "than", "in", "healthy", "controls", "." ]
+  }, {
+    "sentence_tokens" : [ "There", "could", "be", "two", "reasons", "to", "explain", "the", "discrepancy", "." ]
+  }, {
+    "sentence_tokens" : [ "First", ",", "platelet", "is", "a", "simple", "cell", "without", "nuclei", ",", "which", "is", "sensitive", "and", "fragile", ",", "and", "tends", "to", "apoptose", "when", "undergoing", "stimuli", "(", "36", ")", "such", "as", "schizophrenia", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "apoptosis", "of", "platelet", "transpires", "via", "augmented", "levels", "of", "reactive", "oxygen", "species", "(", "28", ",", "37", ")", ",", "which", "was", "supported", "by", "our", "study", ",", "where", "we", "found", "a", "negative", "relationship", "between", "platelet", "count", "and", "serum", "bilirubin", "that", "acts", "as", "a", "potent", "antioxidant", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "may", "be", "the", "main", "mechanism", "of", "platelet", "count", "decline", "in", "our", "findings", "." ]
+  }, {
+    "sentence_tokens" : [ "Second", ",", "because", "platelets", "are", "very", "vulnerable", "to", "therapeutic", "drugs", "in", "the", "circulation", "(", "36", ")", ",", "in", "our", "sample", ",", "patients", "were", "not", "taken", "off", "their", "antipsychotics", ",", "which", "is", "a", "confounding", "variable", "." ]
+  }, {
+    "sentence_tokens" : [ "Further", "study", "should", "rule", "them", "out", "to", "confirm", "the", "results", "." ]
+  }, {
+    "sentence_tokens" : [ "Platelet", "volume", "can", "reflect", "platelet", "function", "and", "activation", "degree", "(", "38", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "MPV", "is", "inversely", "correlated", "with", "platelet", "count", "(", "39", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "previous", "study", "(", "40", ")", "reported", "that", "large", "platelets", "increased", "in", "the", "course", "of", "an", "inflammatory", "condition", "." ]
+  }, {
+    "sentence_tokens" : [ "Simultaneously", ",", "these", "cells", "were", "rapidly", "worn", "by", "the", "inflammation", "(", "41", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "seems", "to", "explain", "the", "drop", "in", "platelet", "count", "and", "the", "rise", "in", "MPV", "in", "patients", "with", "ongoing", "acute", "schizophrenia", "in", "our", "study", "." ]
+  }, {
+    "sentence_tokens" : [ "NLR", ",", "MLR", ",", "and", "PLR", "are", "convenient", "markers", "of", "the", "systemic", "inflammatory", "response", "that", "seem", "to", "be", "less", "affected", "by", "confounding", "conditions", ",", "and", "provide", "more", "stable", "information", "than", "other", "single", "leukocyte", "parameters", "(", "42", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Previous", "reports", "(", "18", ",", "23", ")", "have", "also", "shown", "that", "NLR", ",", "PLR", ",", "and", "MLR", "values", "were", "higher", "in", "patients", "with", "schizophrenia", "than", "in", "healthy", "controls", "." ]
+  }, {
+    "sentence_tokens" : [ "Consistent", "with", "previous", "studies", ",", "our", "study", "found", "that", "levels", "of", "NLR", "and", "MLR", "in", "acute", "schizophrenia", "patients", "were", "increased", "compared", "with", "HCs", "." ]
+  }, {
+    "sentence_tokens" : [ "Unexpectedly", ",", "we", "found", "that", "PLR", "is", "lower", "in", "patients", "with", "schizophrenia", "than", "healthy", "controls", "." ]
+  }, {
+    "sentence_tokens" : [ "Yu", "et", "al.", "(", "34", ")", "conducted", "a", "study", "in", "106", "first-episode", "schizophrenia", "patients", "and", "found", "that", "PLR", "is", "higher", "than", "in", "healthy", "controls", "." ]
+  }, {
+    "sentence_tokens" : [ "Ozdin", "and", "Boke", "(", "32", ")", "studied", "105", "relapse", "hospitalized", "schizophrenia", "patients", "and", "found", "that", "PLR", "is", "higher", "for", "the", "sample", "than", "HCs", "." ]
+  }, {
+    "sentence_tokens" : [ "All", "these", "opposite", "results", "were", "obtained", "in", "small", "sample", "sizes", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "sample", "size", "of", "our", "study", "is", "larger", ",", "which", "could", "provide", "more", "reliable", "supports", "for", "the", "conclusion", "that", "PLR", "is", "lower", "in", "patients", "with", "acute", "psychotic", "episodes", "of", "schizophrenia", "than", "in", "HCs", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "the", "results", "of", "our", "study", "could", "be", "influenced", "by", "antipsychotics", ",", "so", "further", "study", "is", "needed", "to", "purify", "the", "samples", "to", "further", "verify", "the", "results", "." ]
+  }, {
+    "sentence_tokens" : [ "RDW", "as", "a", "reflecting", "variability", "marker", "of", "erythrocyte", "volume", "is", "a", "routinely", "available", "component", "of", "CBC", "." ]
+  }, {
+    "sentence_tokens" : [ "Several", "studies", "have", "suggested", "inflammation", "as", "a", "possible", "cause", "of", "elevated", "RDW", "(", "18", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "the", "underlying", "biological", "mechanisms", "is", "still", "unclear", "(", "43", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Balcioglu", "and", "Kirlioglu", "'s", "research", "(", "18", ")", "reported", "higher", "levels", "of", "RDW", "in", "schizophrenia", "than", "in", "HCs", ",", "which", "is", "consistent", "with", "our", "results", "." ]
+  }, {
+    "sentence_tokens" : [ "Above", "all", ",", "we", "speculate", "that", "the", "inflammation", "occurring", "in", "schizophrenia", "could", "lead", "to", "consumption", "of", "bilirubin", "during", "scavenging", "of", "excessive", "free", "radicals", ",", "causing", "a", "consequent", "reduction", "in", "their", "serum", "levels", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "ongoing", "apoptotic", "effect", "of", "UCB", "on", "lymphocyte", "and", "platelet", ",", "which", "has", "been", "shown", "in", "other", "studies", ",", "may", "be", "the", "mechanism", "through", "which", "UCB", "affects", "inflammatory", "in", "acute", "stage", "schizophrenia", "." ]
+  }, {
+    "sentence_tokens" : [ "All", "the", "relationships", "are", "weak", "in", "our", "study", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "speculate", "that", "the", "mechanism", "of", "UCB", "protecting", "individuals", "from", "schizophrenia", "is", "complex", "including", "inflammatory", "processes", ",", "immune", "processes", "may", "also", "be", "involved", "(", "44", ")", ",", "and", "we", "should", "pay", "more", "attention", "to", "UCB", "of", "schizophrenia", ",", "which", "could", "provide", "some", "clues", "to", "the", "mechanism", "of", "schizophrenia", "and", "facilitate", "finding", "new", "ways", "of", "protecting", "schizophrenia.In", "an", "attempt", "to", "identify", "patients", "with", "schizophrenia", "in", "the", "acute", "stage", ",", "several", "predictors", "of", "biomarkers", "have", "been", "investigated", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "Ozdin", "and", "Boke", "'s", "study", "(", "32", ")", ",", "MLR", "and", "PLR", "were", "found", "to", "be", "important", "markers", "in", "schizophrenia", "." ]
+  }, {
+    "sentence_tokens" : [ "Balcioglu", "and", "Kirlioglu", "(", "18", ")", "uses", "logistic", "regression", "analysis", "to", "demonstrate", "a", "significant", "predictive", "diagnosis", "value", "of", "MPV", "in", "schizophrenia", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "addition", "to", "inflammation", ",", "oxidative", "stress", "plays", "a", "key", "role", "in", "the", "progression", "of", "schizophrenia", ",", "while", "bilirubin", "is", "a", "strong", "endogenous", "antioxidant", "(", "45", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "systematic", "review", "(", "25", ")", "showed", "that", "UCB", "is", "in", "part", "implicated", "in", "the", "pathophysiological", "process", "of", "schizophrenia", ",", "and", "elevated", "bilirubin", "may", "be", "linked", "with", "lower", "risk", "of", "schizophrenia", "in", "the", "acute", "stage", "." ]
+  }, {
+    "sentence_tokens" : [ "One", "recent", "study", "(", "46", ")", "showed", "potential", "of", "UCB", "as", "a", "biological", "marker", "for", "schizophrenia", "." ]
+  }, {
+    "sentence_tokens" : [ "Nevertheless", ",", "to", "our", "knowledge", ",", "the", "present", "study", "is", "the", "first", "to", "indicate", "that", "the", "combined", "effect", "of", "peripheral", "biomarkers", "of", "inflammation", "derived", "from", "CBC", "and", "UCB", "could", "be", "better", "diagnosis", "parameters", "compared", "with", "single", "predictor", "independently", "in", "patients", "with", "acute", "schizophrenia", "." ]
+  }, {
+    "sentence_tokens" : [ "According", "to", "the", "logistic", "regression", "analysis", ",", "UCB", "and", "PLR", "play", "a", "role", "in", "the", "protection", "against", "the", "incidence", "of", "schizophrenia", "of", "acute", "stage", ",", "and", "MLR", "and", "MPV", "are", "risk", "factors", "for", "acute", "schizophrenia", "." ]
+  }, {
+    "sentence_tokens" : [ "From", "our", "results", ",", "UCB", "has", "potential", "diagnostic", "value", ",", "especially", "when", "combined", "with", "inflammatory", "indicators", "." ]
+  }, {
+    "sentence_tokens" : [ "Further", "study", "may", "focus", "on", "this", "point", "to", "help", "with", "the", "lack", "of", "objective", "diagnostic", "criteria", "for", "schizophrenia", "." ]
+  }, {
+    "sentence_tokens" : [ "Further", "studies", "should", "pay", "attention", "to", "the", "change", "of", "UCB", "and", "PLR", ",", "MLR", ",", "and", "MPV", ",", "which", "may", "be", "prognostic", "biomarkers", "." ]
+  }, {
+    "sentence_tokens" : [ "Limitations", "of", "the", "Study", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "study", "aims", "to", "leverage", "the", "advantage", "of", "a", "large", "sample", "of", "acute", "episode", "schizophrenia", "subjects", "on", "complete", "blood", "cell", "count", "parameters", "and", "unconjugated", "bilirubin", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "as", "a", "retrospective", "study", ",", "there", "is", "a", "lack", "of", "clinical", "information", ",", "such", "as", "illness", "duration", "and", "PANSS", "scores", ",", "during", "the", "hospitalization", "period", "of", "the", "patients", "and", "potential", "confounding", "factors", "such", "as", "antipsychotic", "treatment", ",", "including", "dosage", ",", "time", "on", "treatment", ",", "smoking", ",", "and", "BMI", "of", "subjects", "." ]
+  }, {
+    "sentence_tokens" : [ "As", "a", "cross-sectional", "study", ",", "our", "study", "lacks", "conclusions", "regarding", "causal", "relationships", "between", "UCB", "and", "inflammation", "as", "well", "as", "relationships", "between", "UCB", ",", "inflammation", ",", "and", "schizophrenia", "." ]
+  }, {
+    "sentence_tokens" : [ "Additional", "markers", "of", "platelet", "activation", "are", "also", "required", "(", "i.e", ".,", "P-selectin", ")", "to", "further", "verify", "the", "significance", "of", "these", "findings", "." ]
+  }, {
+    "sentence_tokens" : [ "Conclusion", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "study", ",", "we", "found", "that", "there", "is", "an", "increase", "in", "blood", "total", "WBC", "counts", ",", "neutrophils", ",", "monocytes", ",", "NLR", ",", "MLR", ",", "and", "RDW", ",", "and", "a", "reduction", "in", "lymphocyte", "counts", ",", "platelet", "counts", ",", "PLR", ",", "and", "UCB", "in", "schizophrenia", "of", "acute", "stage", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "have", "also", "observed", "a", "negative", "correlation", "between", "UCB", "and", "lymphocyte", ",", "platelet", ",", "MPV", ",", "and", "RDW", ",", "and", "a", "positive", "correlation", "between", "UCB", "and", "NLR", "." ]
+  }, {
+    "sentence_tokens" : [ "All", "the", "relationships", "are", "weak", ";", "hence", ",", "we", "speculate", "that", "UCB", "has", "a", "protection", "effect", "on", "acute", "stage", "of", "schizophrenia", ",", "which", "is", "weak", "and", "indirect", "by", "affecting", "the", "proinflammatory", "processes", "." ]
+  }, {
+    "sentence_tokens" : [ "Other", "potential", "mechanisms", "of", "the", "protection", "effect", "of", "UCB", "in", "schizophrenia", "need", "to", "be", "explored", "further", "." ]
+  }, {
+    "sentence_tokens" : [ "Our", "findings", "suggest", "that", "a", "combination", "of", "markers", "including", "MLR", ",", "MPV", ",", "PLR", ",", "and", "UBC", "could", "be", "used", "to", "predict", "biomarkers", "of", "acute", "schizophrenia", "." ]
+  }, {
+    "sentence_tokens" : [ "Data", "Availability", "Statement", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "original", "contributions", "presented", "in", "the", "study", "are", "included", "in", "the", "article", "and", "supplementary", "material", ",", "further", "inquiries", "can", "be", "directed", "to", "the", "corresponding", "authors", "." ]
+  }, {
+    "sentence_tokens" : [ "Author", "Contributions", "." ]
+  }, {
+    "sentence_tokens" : [ "HX", ":", "conceptualization", ",", "data", "curation", ",", "formal", "analysis", ",", "investigation", ",", "and", "writing", "--", "original", "draft", "." ]
+  }, {
+    "sentence_tokens" : [ "YW", ":", "conceptualization", ",", "methodology", ",", "validation", ",", "investigation", ",", "writing", "--", "review", ",", "and", "editing", "." ]
+  }, {
+    "sentence_tokens" : [ "LZ", "and", "TL", ":", "data", "curation", ",", "methodology", ",", "supervision", ",", "and", "validation", "." ]
+  }, {
+    "sentence_tokens" : [ "HL", "and", "JM", ":", "conceptualization", ",", "project", "administration", ",", "supervision", ",", "writing", "--", "review", ",", "and", "editing", "." ]
+  }, {
+    "sentence_tokens" : [ "JC", ":", "funding", "acquisition", ",", "conceptualization", ",", "project", "administration", ",", "supervision", ",", "writing", "--", "review", ",", "and", "editing", "." ]
+  }, {
+    "sentence_tokens" : [ "All", "authors", "contributed", "to", "the", "article", "and", "approved", "the", "submitted", "version", "." ]
+  }, {
+    "sentence_tokens" : [ "Funding", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "work", "was", "funded", "by", "Beijing", "Hospitals", "Authority", "Clinical", "Medicine", "Development", ",", "Scientific", "Foundation", "of", "Beijing", "Huilongguan", "Hospital", ",", "No", "LY202204", ",", "and", "Beijing", "Municipal", "Administration", "of", "Hospitals", "incubating", "Program", "(", "PX", "2022079", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Conflict", "of", "Interest", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "authors", "declare", "that", "the", "research", "was", "conducted", "in", "the", "absence", "of", "any", "commercial", "or", "financial", "relationships", "that", "could", "be", "construed", "as", "a", "potential", "conflict", "of", "interest", "." ]
+  }, {
+    "sentence_tokens" : [ "Publisher", "'s", "Note", "." ]
+  }, {
+    "sentence_tokens" : [ "All", "claims", "expressed", "in", "this", "article", "are", "solely", "those", "of", "the", "authors", "and", "do", "not", "necessarily", "represent", "those", "of", "their", "affiliated", "organizations", ",", "or", "those", "of", "the", "publisher", ",", "the", "editors", "and", "the", "reviewers", "." ]
+  }, {
+    "sentence_tokens" : [ "Any", "product", "that", "may", "be", "evaluated", "in", "this", "article", ",", "or", "claim", "that", "may", "be", "made", "by", "its", "manufacturer", ",", "is", "not", "guaranteed", "or", "endorsed", "by", "the", "publisher", "." ]
+  } ]
+}

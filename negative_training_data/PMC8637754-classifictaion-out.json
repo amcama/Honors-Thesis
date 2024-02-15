@@ -1,457 +1,1170 @@
-[ {
-  "sentence_tokens" : [ "Consistent", "with", "previous", "studies", ",", "we", "suggest", "that", "SIRT3", "plays", "a", "protective", "role", "against", "NE", "induced", "hair", "cell", "damage.SOD2", ",", "a", "SOD", "that", "is", "expressed", "only", "in", "the", "intracellular", "mitochondrial", "matrix", "(", "Slot", "et", "al", ".,", "1986", ")", ",", "plays", "a", "crucial", "role", "in", "resisting", "oxidative", "damage", "caused", "by", "mitochondrial", "superoxide", "(", "Jowko", "et", "al", ".,", "2017", ")", "." ],
-  "event_indices" : [ 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25 ],
-  "type" : "Positive_regulation",
-  "polarity" : true,
-  "controller_indices" : [ 8, 9 ],
-  "controlled_indices" : [ 21, 22, 23, 24, 25 ],
-  "trigger_indices" : [ 15, 16 ],
-  "rule_name" : "Positive_regulation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Further", ",", "supplementation", "with", "the", "NAD", "precursor", "NR", "to", "elevate", "NAD", "levels", "can", "rescue", "animals", "from", "NIHL", ";", "however", ",", "animals", "lacking", "SIRT3", "do", "not", "benefit", "from", "this", "effect", "(", "Brown", "et", "al", ".,", "2014", ")", "." ],
-  "event_indices" : [ 5, 6, 7, 8, 9, 10, 11, 12 ],
-  "type" : "Positive_regulation",
-  "polarity" : true,
-  "controller_indices" : [ 5, 6 ],
-  "controlled_indices" : [ 10, 11, 12 ],
-  "trigger_indices" : [ 9, 10 ],
-  "rule_name" : "Positive_regulation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Our", "findings", "reveal", "an", "interaction", "between", "SIRT3", "and", "noise", "induced", "oxidative", "stress", "in", "hair", "cells", "and", "suggest", "a", "potential", "therapeutic", "strategy", "to", "improve", "NIHL", "by", "activating", "SIRT3", "mediated", "SOD2", "deacetylation", "." ],
-  "event_indices" : [ 26, 27, 28, 29, 30 ],
-  "type" : "Positive_regulation",
-  "polarity" : true,
-  "controller_indices" : [ 26, 27 ],
-  "controlled_indices" : [ 28, 29, 30 ],
-  "trigger_indices" : [ 27, 28 ],
-  "rule_name" : "Positive_early_regulation",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "In", "a", "mouse", "model", "of", "acute", "kidney", "injury", ",", "SIRT3", "reduced", "Ac-SOD2", "and", "ROS", "levels", "and", "attenuated", "oxidative", "damage", ",", "thereby", "resisting", "apoptosis", "(", "Zhang", "et", "al", ".,", "2021", ")", "." ],
-  "event_indices" : [ 9, 10, 11, 12, 13, 14, 15 ],
-  "type" : "Negative_regulation",
-  "polarity" : false,
-  "controller_indices" : [ 9, 10 ],
-  "controlled_indices" : [ 11, 12, 13, 14, 15 ],
-  "trigger_indices" : [ 10, 11 ],
-  "rule_name" : "Negative_regulation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "NE", "increases", "ROS", "level", ",", "which", "causes", "hearing", "loss", "through", "oxidative", "damage", "to", "hair", "cells", "and", "neurons", "(", "Delmaghani", "et", "al", ".,", "2015", ")", "." ],
-  "event_indices" : [ 0, 1, 2, 3, 4 ],
-  "type" : "Positive_regulation",
-  "polarity" : true,
-  "controller_indices" : [ 0, 1 ],
-  "controlled_indices" : [ 2, 3, 4 ],
-  "trigger_indices" : [ 1, 2 ],
-  "rule_name" : "Positive_regulation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "In", "a", "mouse", "model", "of", "acute", "kidney", "injury", ",", "SIRT3", "reduced", "Ac-SOD2", "and", "ROS", "levels", "and", "attenuated", "oxidative", "damage", ",", "thereby", "resisting", "apoptosis", "(", "Zhang", "et", "al", ".,", "2021", ")", "." ],
-  "event_indices" : [ 9, 10, 11, 12, 13, 14, 15 ],
-  "type" : "Negative_regulation",
-  "polarity" : false,
-  "controller_indices" : [ 9, 10 ],
-  "controlled_indices" : [ 13, 14, 15 ],
-  "trigger_indices" : [ 10, 11 ],
-  "rule_name" : "Negative_regulation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "In", "this", "study", ",", "we", "found", "that", "SIRT3", "overexpression", "attenuated", "hearing", "loss", "by", "protecting", "hair", "cells", ",", "and", "this", "protective", "effect", "could", "be", "blocked", "by", "the", "SOD2", "inhibitor", "2-ME", "(", "Figure", "6", ")", "." ],
-  "event_indices" : [ 7, 8, 9, 10, 11, 12 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 7, 8, 9 ],
-  "controlled_indices" : [ 10, 11, 12 ],
-  "trigger_indices" : [ 9, 10 ],
-  "rule_name" : "Negative_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "One", "NE", "caused", "TTS", ",", "and", "two", "NEs", "caused", "PTS", "(", "Figure", "1", ")", "." ],
-  "event_indices" : [ 7, 8, 9, 10 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 7, 8 ],
-  "controlled_indices" : [ 9, 10 ],
-  "trigger_indices" : [ 8, 9 ],
-  "rule_name" : "Positive_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Using", "the", "ABR", "test", ",", "we", "found", "that", "the", "hearing", "thresholds", "of", "mice", "receiving", "a", "single", "NE", "increased", "transiently", "after", "NE", "and", "then", "decreased", ",", "which", "were", "not", "significantly", "different", "from", "those", "of", "the", "control", "group", "mice", "at", "2", "weeks", "after", "NE", ",", "indicating", "that", "a", "single", "NE", "caused", "a", "hearing", "temporary", "threshold", "shift", "(", "TTS", ")", "(", "Figure", "1C", ")", "." ],
-  "event_indices" : [ 47, 48, 49, 50, 51 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 47, 48 ],
-  "controlled_indices" : [ 50, 51 ],
-  "trigger_indices" : [ 48, 49 ],
-  "rule_name" : "Positive_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "We", "found", "that", ",", "compared", "with", "the", "control", "group", "mice", ",", "the", "PTS", "group", "mice", "had", "significantly", "reduced", "mitochondrial", "membrane", "potential", "and", "significantly", "increased", "8-OH", "expression", ",", "indicating", "that", "NE", "caused", "intracellular", "ROS", "accumulation", "by", "affecting", "mitochondrial", "function", "(", "Figure", "3", ")", "." ],
-  "event_indices" : [ 12, 13, 14, 15, 16, 17, 18, 19, 20, 21 ],
-  "type" : "Negative_activation",
-  "polarity" : false,
-  "controller_indices" : [ 12, 13 ],
-  "controlled_indices" : [ 18, 19, 20, 21 ],
-  "trigger_indices" : [ 17, 18 ],
-  "rule_name" : "Negative_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "We", "found", "that", ",", "compared", "with", "the", "control", "group", "mice", ",", "the", "PTS", "group", "mice", "had", "significantly", "reduced", "mitochondrial", "membrane", "potential", "and", "significantly", "increased", "8-OH", "expression", ",", "indicating", "that", "NE", "caused", "intracellular", "ROS", "accumulation", "by", "affecting", "mitochondrial", "function", "(", "Figure", "3", ")", "." ],
-  "event_indices" : [ 14, 15, 16, 17, 18, 19, 20, 21 ],
-  "type" : "Negative_activation",
-  "polarity" : false,
-  "controller_indices" : [ 14, 15 ],
-  "controlled_indices" : [ 18, 19, 20, 21 ],
-  "trigger_indices" : [ 17, 18 ],
-  "rule_name" : "Negative_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Compared", "with", "the", "control", "group", "mice", ",", "the", "PTS", "group", "mice", "showed", "decreased", "JC-1", "aggregates", "and", "increased", "JC-1", "monomers", ",", "indicating", "that", "the", "mitochondrial", "membrane", "potential", "was", "decreased", "in", "these", "mice", "(", "Figures", "3A", ",", "B", ")", "." ],
-  "event_indices" : [ 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 8, 9 ],
-  "controlled_indices" : [ 17, 18 ],
-  "trigger_indices" : [ 16, 17 ],
-  "rule_name" : "Positive_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Compared", "with", "the", "control", "group", "mice", ",", "the", "PTS", "group", "mice", "showed", "decreased", "JC-1", "aggregates", "and", "increased", "JC-1", "monomers", ",", "indicating", "that", "the", "mitochondrial", "membrane", "potential", "was", "decreased", "in", "these", "mice", "(", "Figures", "3A", ",", "B", ")", "." ],
-  "event_indices" : [ 10, 11, 12, 13, 14, 15, 16, 17, 18 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 10, 11 ],
-  "controlled_indices" : [ 17, 18 ],
-  "trigger_indices" : [ 16, 17 ],
-  "rule_name" : "Positive_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "We", "found", "that", ",", "compared", "with", "the", "control", "group", "mice", ",", "the", "PTS", "group", "mice", "had", "significantly", "reduced", "mitochondrial", "membrane", "potential", "and", "significantly", "increased", "8-OH", "expression", ",", "indicating", "that", "NE", "caused", "intracellular", "ROS", "accumulation", "by", "affecting", "mitochondrial", "function", "(", "Figure", "3", ")", "." ],
-  "event_indices" : [ 29, 30, 31, 32, 33 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 29, 30 ],
-  "controlled_indices" : [ 32, 33 ],
-  "trigger_indices" : [ 30, 31 ],
-  "rule_name" : "Positive_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "In", "a", "mouse", "model", "of", "acute", "kidney", "injury", ",", "SIRT3", "reduced", "Ac-SOD2", "and", "ROS", "levels", "and", "attenuated", "oxidative", "damage", ",", "thereby", "resisting", "apoptosis", "(", "Zhang", "et", "al", ".,", "2021", ")", "." ],
-  "event_indices" : [ 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 9, 10 ],
-  "controlled_indices" : [ 22, 23 ],
-  "trigger_indices" : [ 21, 22 ],
-  "rule_name" : "Negative_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "In", "a", "mouse", "model", "of", "acute", "kidney", "injury", ",", "SIRT3", "reduced", "Ac-SOD2", "and", "ROS", "levels", "and", "attenuated", "oxidative", "damage", ",", "thereby", "resisting", "apoptosis", "(", "Zhang", "et", "al", ".,", "2021", ")", "." ],
-  "event_indices" : [ 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 9, 10 ],
-  "controlled_indices" : [ 22, 23 ],
-  "trigger_indices" : [ 21, 22 ],
-  "rule_name" : "Negative_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Our", "previous", "study", "found", "that", "a", "single", "moderate", "NE", "caused", "TTS", ";", "however", ",", "repeated", "NE", "caused", "PTS", "(", "Luo", "et", "al", ".,", "2020", ")", "." ],
-  "event_indices" : [ 15, 16, 17, 18 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 15, 16 ],
-  "controlled_indices" : [ 17, 18 ],
-  "trigger_indices" : [ 16, 17 ],
-  "rule_name" : "Positive_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Furthermore", ",", "SIRT3", "overexpression", "reduces", "axonal", "degeneration", "induced", "by", "NE", ",", "thus", "making", "mice", "resistant", "to", "NIHL", "(", "Brown", "et", "al", ".,", "2014", ")", "." ],
-  "event_indices" : [ 7, 8, 9, 10, 11, 12, 13, 14 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 9, 10 ],
-  "controlled_indices" : [ 13, 14 ],
-  "trigger_indices" : [ 7, 8 ],
-  "rule_name" : "Positive_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Autophagy", "and", "apoptosis", "are", "often", "simultaneously", "triggered", "by", "similar", "stimuli", ",", "such", "as", "oxidative", "stress", ",", "in", "both", "hair", "cells", "and", "spiral", "ganglion", "neurons", "(", "SGNs", ")", "(", "He", "et", "al", ".,", "2021", ";", "Liu", "et", "al", ".,", "2021", ")", "." ],
-  "event_indices" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 17, 18 ],
-  "controlled_indices" : [ 0, 1 ],
-  "trigger_indices" : [ 6, 7 ],
-  "rule_name" : "Positive_activation_syntax_2_verb, pronominalMatch",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Autophagy", "and", "apoptosis", "are", "often", "simultaneously", "triggered", "by", "similar", "stimuli", ",", "such", "as", "oxidative", "stress", ",", "in", "both", "hair", "cells", "and", "spiral", "ganglion", "neurons", "(", "SGNs", ")", "(", "He", "et", "al", ".,", "2021", ";", "Liu", "et", "al", ".,", "2021", ")", "." ],
-  "event_indices" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 17, 18 ],
-  "controlled_indices" : [ 0, 1 ],
-  "trigger_indices" : [ 6, 7 ],
-  "rule_name" : "Positive_activation_syntax_2_verb, pronominalMatch",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Autophagy", "and", "apoptosis", "are", "often", "simultaneously", "triggered", "by", "similar", "stimuli", ",", "such", "as", "oxidative", "stress", ",", "in", "both", "hair", "cells", "and", "spiral", "ganglion", "neurons", "(", "SGNs", ")", "(", "He", "et", "al", ".,", "2021", ";", "Liu", "et", "al", ".,", "2021", ")", "." ],
-  "event_indices" : [ 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 17, 18 ],
-  "controlled_indices" : [ 2, 3 ],
-  "trigger_indices" : [ 6, 7 ],
-  "rule_name" : "Positive_activation_syntax_2_verb, pronominalMatch",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Autophagy", "and", "apoptosis", "are", "often", "simultaneously", "triggered", "by", "similar", "stimuli", ",", "such", "as", "oxidative", "stress", ",", "in", "both", "hair", "cells", "and", "spiral", "ganglion", "neurons", "(", "SGNs", ")", "(", "He", "et", "al", ".,", "2021", ";", "Liu", "et", "al", ".,", "2021", ")", "." ],
-  "event_indices" : [ 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 17, 18 ],
-  "controlled_indices" : [ 2, 3 ],
-  "trigger_indices" : [ 6, 7 ],
-  "rule_name" : "Positive_activation_syntax_2_verb, pronominalMatch",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Therefore", ",", "we", "conclude", "that", "SIRT3", "overexpression", "reduces", "noise", "induced", "hair", "cell", "damage", "by", "activating", "SOD2", "." ],
-  "event_indices" : [ 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 ],
-  "type" : "Negative_activation",
-  "polarity" : false,
-  "controller_indices" : [ 5, 6, 7 ],
-  "controlled_indices" : [ 15, 16 ],
-  "trigger_indices" : [ 9, 10 ],
-  "rule_name" : "Positive_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "The", "hearing", "thresholds", "in", "mice", "increased", "after", "two", "NEs", ",", "and", "although", "they", "decreased", "2", "weeks", "later", ",", "there", "was", "still", "a", "significant", "difference", "from", "the", "thresholds", "of", "the", "control", "group", "mice", ",", "indicating", "that", "two", "NEs", "caused", "a", "permanent", "threshold", "shift", "(", "PTS", ")", "in", "hearing", "in", "mice", "(", "Figure", "1D", ")", "." ],
-  "event_indices" : [ 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 36, 37 ],
-  "controlled_indices" : [ 46, 47 ],
-  "trigger_indices" : [ 37, 38 ],
-  "rule_name" : "Positive_activation_syntax_7_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "The", "hearing", "thresholds", "in", "mice", "increased", "after", "two", "NEs", ",", "and", "although", "they", "decreased", "2", "weeks", "later", ",", "there", "was", "still", "a", "significant", "difference", "from", "the", "thresholds", "of", "the", "control", "group", "mice", ",", "indicating", "that", "two", "NEs", "caused", "a", "permanent", "threshold", "shift", "(", "PTS", ")", "in", "hearing", "in", "mice", "(", "Figure", "1D", ")", "." ],
-  "event_indices" : [ 36, 37, 38, 39, 40, 41, 42, 43, 44 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 36, 37 ],
-  "controlled_indices" : [ 43, 44 ],
-  "trigger_indices" : [ 37, 38 ],
-  "rule_name" : "Positive_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "The", "hearing", "thresholds", "in", "mice", "increased", "after", "two", "NEs", ",", "and", "although", "they", "decreased", "2", "weeks", "later", ",", "there", "was", "still", "a", "significant", "difference", "from", "the", "thresholds", "of", "the", "control", "group", "mice", ",", "indicating", "that", "two", "NEs", "caused", "a", "permanent", "threshold", "shift", "(", "PTS", ")", "in", "hearing", "in", "mice", "(", "Figure", "1D", ")", "." ],
-  "event_indices" : [ 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 36, 37 ],
-  "controlled_indices" : [ 48, 49 ],
-  "trigger_indices" : [ 37, 38 ],
-  "rule_name" : "Positive_activation_syntax_7_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "NE", "increases", "ROS", "level", ",", "which", "causes", "hearing", "loss", "through", "oxidative", "damage", "to", "hair", "cells", "and", "neurons", "(", "Delmaghani", "et", "al", ".,", "2015", ")", "." ],
-  "event_indices" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 ],
-  "type" : "Negative_activation",
-  "polarity" : false,
-  "controller_indices" : [ 0, 1 ],
-  "controlled_indices" : [ 7, 8, 9 ],
-  "trigger_indices" : [ 6, 7 ],
-  "rule_name" : "Positive_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "NE", "increases", "ROS", "level", ",", "which", "causes", "hearing", "loss", "through", "oxidative", "damage", "to", "hair", "cells", "and", "neurons", "(", "Delmaghani", "et", "al", ".,", "2015", ")", "." ],
-  "event_indices" : [ 2, 3, 4, 5, 6, 7, 8, 9 ],
-  "type" : "Negative_activation",
-  "polarity" : false,
-  "controller_indices" : [ 2, 3, 4 ],
-  "controlled_indices" : [ 7, 8, 9 ],
-  "trigger_indices" : [ 6, 7 ],
-  "rule_name" : "Positive_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Noise", "Exposure", "Causes", "a", "Hearing", "Threshold", "Shift", "in", "Mice", "." ],
-  "event_indices" : [ 0, 1, 2, 3, 4, 5 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 0, 1, 2 ],
-  "controlled_indices" : [ 4, 5 ],
-  "trigger_indices" : [ 2, 3 ],
-  "rule_name" : "Positive_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Noise", "Exposure", "Causes", "a", "Hearing", "Threshold", "Shift", "in", "Mice", "." ],
-  "event_indices" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 0, 1, 2 ],
-  "controlled_indices" : [ 8, 9 ],
-  "trigger_indices" : [ 2, 3 ],
-  "rule_name" : "Positive_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Moreover", ",", "3-TYP", "reduced", "the", "enzymatic", "activity", "and", "deacetylation", "levels", "of", "superoxide", "dismutase", "2", "(", "SOD2", ")", "." ],
-  "entity_one_indices" : [ 15, 16 ],
-  "entity_two_indices" : [ 11, 12, 13, 14 ]
-}, {
-  "sentence_tokens" : [ "These", "findings", "suggest", "that", "insufficient", "SIRT3", "and", "SOD2", "signaling", "leads", "to", "mitochondrial", "oxidative", "damage", "resulting", "in", "hair", "cell", "injury", "in", "NIHL", "." ],
-  "entity_one_indices" : [ 7, 8 ],
-  "entity_two_indices" : [ 5, 6 ]
-}, {
-  "sentence_tokens" : [ "ROS", "are", "mainly", "produced", "in", "the", "mitochondrial", "oxidative", "respiratory", "chain", ";", "therefore", ",", "mitochondrial", "dysfunction", "can", "lead", "to", "cellular", "ROS", "accumulation", "(", "Gao", "et", "al", ".,", "2019", ";", "Zhao", "et", "al", ".,", "2019", ")", "." ],
-  "entity_one_indices" : [ 19, 20 ],
-  "entity_two_indices" : [ 0, 1 ]
-}, {
-  "sentence_tokens" : [ "Acetylation", "is", "one", "of", "the", "most", "important", "post-translational", "SOD2", "modifications", ",", "leading", "to", "the", "downregulation", "of", "the", "SOD2", "function", "(", "Dikalova", "et", "al", ".,", "2017", ")", "." ],
-  "entity_one_indices" : [ 17, 18 ],
-  "entity_two_indices" : [ 8, 9 ]
-}, {
-  "sentence_tokens" : [ "SIRT3", "works", "by", "deacetylating", "proteins", ",", "particularly", "lysine", "of", "SOD2", ",", "to", "regulate", "its", "activity", "and", "thus", "maintain", "mitochondrial", "function", "(", "Yang", "et", "al", ".,", "2016", ")", "." ],
-  "entity_one_indices" : [ 9, 10 ],
-  "entity_two_indices" : [ 0, 1 ]
-}, {
-  "sentence_tokens" : [ "To", "test", "this", "hypothesis", ",", "we", "explored", "the", "protective", "effect", "of", "SIRT3", "on", "hair", "cell", "injury", "in", "NIHL", "mice", "and", "its", "underlying", "mechanisms", "." ],
-  "entity_one_indices" : [ 18, 19 ],
-  "entity_two_indices" : [ 11, 12 ]
-}, {
-  "sentence_tokens" : [ "C57BL/6", "J", "male", "mice", "were", "obtained", "from", "the", "Experimental", "Animal", "Center", "of", "Capital", "Medical", "University", "(", "Beijing", ",", "China", ")", "." ],
-  "entity_one_indices" : [ 3, 4 ],
-  "entity_two_indices" : [ 0, 1, 2 ]
-}, {
-  "sentence_tokens" : [ "Experiments", "were", "performed", "on", "mice", "after", "abnormal", "hearing", "was", "excluded", "by", "audiometric", "testing", "." ],
-  "entity_one_indices" : [ 7, 8 ],
-  "entity_two_indices" : [ 4, 5 ]
-}, {
-  "sentence_tokens" : [ "For", "the", "intervention", "group", "mice", "received", "3-TYP", ",", "2-ME", "or", "AAV-SIRT3", "in", "addition", "to", "NE", "." ],
-  "entity_one_indices" : [ 14, 15 ],
-  "entity_two_indices" : [ 4, 5 ]
-}, {
-  "sentence_tokens" : [ "We", "used", "the", "TDT", "system", "3", "evoked", "potential", "workstation", "(", "Tucker-Davis", "Technologies", ",", "Alachua", ",", "FL", ",", "United", "States", ")", "to", "record", "ABR", "." ],
-  "entity_one_indices" : [ 22, 23 ],
-  "entity_two_indices" : [ 3, 4 ]
-}, {
-  "sentence_tokens" : [ "After", "anesthesia", ",", "the", "recording", "electrode", "was", "inserted", "in", "the", "subcutaneous", "area", "at", "the", "midpoint", "of", "the", "line", "connecting", "the", "anterior", "margins", "of", "the", "auricles", "on", "both", "sides", "of", "the", "mouse", ",", "the", "reference", "electrode", "was", "inserted", "into", "the", "subcutaneous", "area", "behind", "the", "tested", "ear", ",", "and", "the", "ground", "electrode", "was", "inserted", "into", "the", "subcutaneous", "area", "behind", "the", "contralateral", "ear", "." ],
-  "entity_one_indices" : [ 59, 60 ],
-  "entity_two_indices" : [ 44, 45 ]
-}, {
-  "sentence_tokens" : [ "Sound", "intensity", "was", "attenuated", "from", "90", "to", "0", "dB", "in", "5", "dB", "intervals", ",", "and", "the", "responses", "were", "analyzed", "using", "BioSigRZ", "software", "(", "Tucker-Davis", "Technologies", ")", ",", "digitized", ",", "and", "averaged", "for", "each", "frequency-level", "combination", "(", "1,024", "samples", "and", "level", ")", "." ],
-  "entity_one_indices" : [ 11, 12 ],
-  "entity_two_indices" : [ 8, 9 ]
-}, {
-  "sentence_tokens" : [ "After", "ABR", "testing", ",", "mice", "were", "sacrificed", "under", "deep", "anesthesia", ",", "and", "the", "cochlea", "was", "removed", "and", "immersed", "in", "4", "%", "paraformaldehyde", "at", "4", "degrees", "C", "for", "overnight", "fixation", "." ],
-  "entity_one_indices" : [ 4, 5 ],
-  "entity_two_indices" : [ 1, 2 ]
-}, {
-  "sentence_tokens" : [ "Cochlear", "proteins", "were", "extracted", "and", "protein", "concentrations", "were", "measured", "using", "a", "BCA", "Protein", "Quantification", "Kit", "(", "Beyotime", ",", "China", ")", "." ],
-  "entity_one_indices" : [ 14, 15 ],
-  "entity_two_indices" : [ 11, 12 ]
-}, {
-  "sentence_tokens" : [ "After", "blocking", "in", "5", "%", "skim", "milk", "at", "room", "temperature", "for", "1", "h", ",", "samples", "were", "incubated", "with", "anti-SOD2", "(", "Cell", "Signaling", "Technology", ")", ",", "anti-ac-SOD2", "(", "Abcam", ")", ",", "anti-C-cas3", "(", "Cell", "Signaling", "Technology", ")", ",", "anti-Cyt", "c", "(", "Abcam", ")", ",", "anti-COX", "IV", "(", "Abcam", ")", ",", "and", "beta-actin", "(", "Cell", "Signaling", "Technology", ")", "primary", "antibodies", "overnight", "at", "4", "degrees", "C", ",", "followed", "by", "incubation", "with", "the", "appropriate", "secondary", "antibody", "at", "room", "temperature", "for", "1", "h." ],
-  "entity_one_indices" : [ 50, 51 ],
-  "entity_two_indices" : [ 43, 44, 45 ]
-}, {
-  "sentence_tokens" : [ "Cells", "were", "incubated", "for", "1", "h", "at", "37", "degrees", "C", "using", "Cu/Zn-SOD", "inhibitor", "A", "and", "for", "15", "min", "at", "37", "degrees", "C", "using", "Cu/Zn-SOD", "inhibitor", "B.", "Consequently", ",", "samples", "were", "added", "to", "a", "96-well", "plate", "and", "mixed", "with", "the", "assay", "solution", "." ],
-  "entity_one_indices" : [ 23, 24, 25 ],
-  "entity_two_indices" : [ 11, 12, 13, 14 ]
-}, {
-  "sentence_tokens" : [ "Bilateral", "cochleae", "were", "dissected", "from", "eight", "mice", "(", "four", "per", "group", ")", "and", "homogenized", "in", "NADP", "+/NADPH", "extracts", "." ],
-  "entity_one_indices" : [ 15, 16 ],
-  "entity_two_indices" : [ 6, 7 ]
-}, {
-  "sentence_tokens" : [ "The", "amplitude", "of", "ABR", "wave", "I", "in", "both", "the", "PTS", "and", "TTS", "groups", "was", "significantly", "different", "from", "that", "in", "the", "control", "group", "(", "Figures", "1B", ",", "E", ")", "." ],
-  "entity_one_indices" : [ 9, 10 ],
-  "entity_two_indices" : [ 3, 4, 5 ]
-}, {
-  "sentence_tokens" : [ "We", "divided", "the", "cochlear", "Basilar", "membrane", "into", "the", "apical", ",", "middle", ",", "and", "basal", "turns", "in", "the", "PTS", "and", "TTS", "group", "mice", "for", "this", "study", "." ],
-  "entity_one_indices" : [ 21, 22 ],
-  "entity_two_indices" : [ 17, 18 ]
-}, {
-  "sentence_tokens" : [ "Both", "the", "PTS", "and", "TTS", "groups", "showed", "an", "increased", "number", "of", "unpaired", "synapses", "compared", "to", "the", "control", "group", ",", "with", "a", "greater", "increase", "observed", "in", "the", "PTS", "group", "(", "Figures", "2C", "-", "E", ")", "." ],
-  "entity_one_indices" : [ 26, 27 ],
-  "entity_two_indices" : [ 2, 3 ]
-}, {
-  "sentence_tokens" : [ "Immunofluorescence", "staining", "of", "frozen", "sections", "of", "mouse", "cochlea", "revealed", "that", "8-OH", "expression", "was", "elevated", "in", "the", "PTS", "group", "compared", "to", "that", "in", "the", "control", "group", "(", "Figures", "3C", ",", "D", ")", "." ],
-  "entity_one_indices" : [ 16, 17 ],
-  "entity_two_indices" : [ 10, 11 ]
-}, {
-  "sentence_tokens" : [ "WB", "analysis", "on", "mouse", "cochleae", "revealed", "that", "Cytochrome", "c", "expression", "was", "decreased", "in", "the", "mitochondria", "and", "increased", "in", "the", "cytoplasm", "in", "the", "PTS", "group", "compared", "with", "that", "in", "the", "control", "group", "(", "Figures", "3E", ",", "F", ")", "." ],
-  "entity_one_indices" : [ 22, 23 ],
-  "entity_two_indices" : [ 7, 8, 9 ]
-}, {
-  "sentence_tokens" : [ "The", "level", "of", "NADPH", "oxidase", "activity", "in", "the", "PTS", "group", "was", "significantly", "higher", "than", "that", "in", "the", "control", "group", "(", "Figure", "3G", ")", "." ],
-  "entity_one_indices" : [ 8, 9 ],
-  "entity_two_indices" : [ 3, 4, 5 ]
-}, {
-  "sentence_tokens" : [ "We", "used", "the", "SIRT3", "inhibitor", "3-TYP", "for", "the", "intervention", ",", "which", "was", "administered", "1", "week", "before", "each", "NE", "(", "Figure", "4A", ")", "." ],
-  "entity_one_indices" : [ 17, 18 ],
-  "entity_two_indices" : [ 3, 4, 5 ]
-}, {
-  "sentence_tokens" : [ "The", "number", "of", "unpaired", "synapses", "in", "the", "PTS", "+3-TYP", "and", "PTS", "groups", "was", "not", "significantly", "different", "in", "the", "apical", "and", "middle", "turns", ",", "whereas", "a", "significantly", "higher", "value", "was", "observed", "in", "the", "basal", "rotation", "(", "Figures", "4E", "-", "G", ")", "." ],
-  "entity_one_indices" : [ 10, 11 ],
-  "entity_two_indices" : [ 7, 8 ]
-}, {
-  "sentence_tokens" : [ "We", "induced", "SIRT3", "overexpression", "by", "introducing", "AAV-SIRT3", "in", "4-week-old", "mice", "undergoing", "posterior", "semicircular", "canal", "surgery", "." ],
-  "entity_one_indices" : [ 9, 10 ],
-  "entity_two_indices" : [ 2, 3 ]
-}, {
-  "sentence_tokens" : [ "The", "SOD2", "inhibitor", "2-ME", "was", "administered", "starting", "1", "week", "before", "each", "NE", "(", "Figure", "6A", ")", "." ],
-  "entity_one_indices" : [ 11, 12 ],
-  "entity_two_indices" : [ 1, 2, 3 ]
-}, {
-  "sentence_tokens" : [ "These", "findings", "indicate", "that", "SIRT3", "overexpression", "by", "the", "introduction", "of", "AAV-SIRT3", "into", "the", "posterior", "semicircular", "canal", "is", "feasible", "." ],
-  "entity_one_indices" : [ 10, 11 ],
-  "entity_two_indices" : [ 4, 5 ]
-}, {
-  "sentence_tokens" : [ "The", "thresholds", "were", "significantly", "higher", "in", "the", "PTS", "+2-ME", "+", "AAV-SIRT3", "group", "than", "in", "the", "PTS", "+", "AAV-SIRT3", "group", "(", "Figure", "6D", ")", "." ],
-  "entity_one_indices" : [ 15, 16 ],
-  "entity_two_indices" : [ 7, 8 ]
-}, {
-  "sentence_tokens" : [ "Compared", "with", "the", "PTS", "+", "AAV-SIRT3", "group", ",", "the", "number", "of", "synapses", "in", "the", "PTS", "+2-ME", "+", "AAV-SIRT3", "group", "was", "significantly", "decreased", "in", "the", "apical", ",", "middle", ",", "and", "basal", "turns", "(", "Figures", "6E", ",", "F", ")", "." ],
-  "entity_one_indices" : [ 14, 15 ],
-  "entity_two_indices" : [ 3, 4 ]
-}, {
-  "sentence_tokens" : [ "In", "the", "inner", "ear", ",", "the", "mechanical", "vibration", "of", "a", "sound", "wave", "is", "transduced", "into", "electrical", "signals", "by", "hair", "cells", "(", "Chen", "et", "al", ".,", "2021", ")", ",", "and", "these", "electrical", "signals", "are", "transmitted", "to", "auditory", "cortex", "through", "the", "synapses", "of", "the", "SGNs", "(", "Guo", "et", "al", ".,", "2020", ")", "." ],
-  "entity_one_indices" : [ 44, 45 ],
-  "entity_two_indices" : [ 11, 12 ]
-}, {
-  "sentence_tokens" : [ "In", "agreement", "with", "previous", "studies", ",", "we", "found", "that", "hair", "cell", "damage", "was", "more", "significant", "in", "the", "PTS", "group", "than", "in", "the", "TTS", "group", ",", "both", "at", "the", "audiological", "and", "morphological", "levels", ";", "therefore", ",", "we", "chose", "the", "PTS", "group", "for", "further", "study", "(", "Figure", "2", ")", "." ],
-  "entity_one_indices" : [ 38, 39 ],
-  "entity_two_indices" : [ 17, 18 ]
-}, {
-  "sentence_tokens" : [ "Studies", "have", "reported", "that", "SIRT3", "can", "balance", "ROS", "levels", "by", "modifying", "post-translational", "levels", "and", "can", "activate", "long-term", "transcriptional", "programs", "to", "protect", "cells", "from", "oxidative", "damage", "(", "van", "de", "Ven", "et", "al", ".,", "2017", ")", "." ],
-  "entity_one_indices" : [ 7, 8 ],
-  "entity_two_indices" : [ 4, 5 ]
-}, {
-  "sentence_tokens" : [ "SIRT3", "is", "a", "major", "regulator", "of", "the", "mitochondrial", "oxidative", "stress", "response", "(", "Giblin", "et", "al", ".,", "2014", ")", "." ],
-  "entity_one_indices" : [ 9, 10, 11 ],
-  "entity_two_indices" : [ 0, 1 ]
-}, {
-  "sentence_tokens" : [ "SOD2", "serves", "as", "the", "first", "line", "of", "defense", "against", "mitochondrial", "oxidative", "damage", "and", "is", "the", "main", "mitochondrial", "ROS", "scavenger", "(", "Miao", "and", "St", ",", "2009", ")", "." ],
-  "entity_one_indices" : [ 17, 18 ],
-  "entity_two_indices" : [ 0, 1 ]
-}, {
-  "sentence_tokens" : [ "SOD2", "is", "post-translationally", "regulated", "in", "several", "ways", ";", "however", ",", "acetylation", "is", "the", "major", "SOD2", "active", "modification", "(", "Zou", "et", "al", ".,", "2016", ")", "." ],
-  "entity_one_indices" : [ 14, 15 ],
-  "entity_two_indices" : [ 0, 1 ]
-}, {
-  "sentence_tokens" : [ "The", "reduced", "level", "of", "lysine", "acetylation", "in", "SOD2", "increases", "its", "enzymatic", "activity", "(", "Candas", "and", "Li", ",", "2014", ")", "." ],
-  "entity_one_indices" : [ 15, 16 ],
-  "entity_two_indices" : [ 7, 8 ]
-}, {
-  "sentence_tokens" : [ "The", "4-HNE", "level", "reflects", "cellular", "membrane", "damage", "due", "to", "lipid", "peroxidation", "induced", "by", "ROS", "." ],
-  "entity_one_indices" : [ 13, 14 ],
-  "entity_two_indices" : [ 1, 2 ]
-}, {
-  "sentence_tokens" : [ "In", "multiple", "disease", "models", ",", "SIRT3", "has", "been", "reported", "to", "play", "an", "important", "role", "in", "antioxidant", "damage", "by", "regulating", "its", "downstream", "molecule", ",", "SOD2", "." ],
-  "entity_one_indices" : [ 23, 24 ],
-  "entity_two_indices" : [ 5, 6 ]
-} ]
+{
+  "regulations" : [ {
+    "sentence_tokens" : [ "Consistent", "with", "previous", "studies", ",", "we", "suggest", "that", "SIRT3", "plays", "a", "protective", "role", "against", "NE", "induced", "hair", "cell", "damage.SOD2", ",", "a", "SOD", "that", "is", "expressed", "only", "in", "the", "intracellular", "mitochondrial", "matrix", "(", "Slot", "et", "al", ".,", "1986", ")", ",", "plays", "a", "crucial", "role", "in", "resisting", "oxidative", "damage", "caused", "by", "mitochondrial", "superoxide", "(", "Jowko", "et", "al", ".,", "2017", ")", "." ],
+    "event_indices" : [ 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25 ],
+    "type" : "Positive_regulation",
+    "polarity" : true,
+    "controller_indices" : [ 8, 9 ],
+    "controlled_indices" : [ 21, 22, 23, 24, 25 ],
+    "trigger_indices" : [ 15, 16 ],
+    "rule_name" : "Positive_regulation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "Further", ",", "supplementation", "with", "the", "NAD", "precursor", "NR", "to", "elevate", "NAD", "levels", "can", "rescue", "animals", "from", "NIHL", ";", "however", ",", "animals", "lacking", "SIRT3", "do", "not", "benefit", "from", "this", "effect", "(", "Brown", "et", "al", ".,", "2014", ")", "." ],
+    "event_indices" : [ 5, 6, 7, 8, 9, 10, 11, 12 ],
+    "type" : "Positive_regulation",
+    "polarity" : true,
+    "controller_indices" : [ 5, 6 ],
+    "controlled_indices" : [ 10, 11, 12 ],
+    "trigger_indices" : [ 9, 10 ],
+    "rule_name" : "Positive_regulation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "Our", "findings", "reveal", "an", "interaction", "between", "SIRT3", "and", "noise", "induced", "oxidative", "stress", "in", "hair", "cells", "and", "suggest", "a", "potential", "therapeutic", "strategy", "to", "improve", "NIHL", "by", "activating", "SIRT3", "mediated", "SOD2", "deacetylation", "." ],
+    "event_indices" : [ 26, 27, 28, 29, 30 ],
+    "type" : "Positive_regulation",
+    "polarity" : true,
+    "controller_indices" : [ 26, 27 ],
+    "controlled_indices" : [ 28, 29, 30 ],
+    "trigger_indices" : [ 27, 28 ],
+    "rule_name" : "Positive_early_regulation",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "In", "a", "mouse", "model", "of", "acute", "kidney", "injury", ",", "SIRT3", "reduced", "Ac-SOD2", "and", "ROS", "levels", "and", "attenuated", "oxidative", "damage", ",", "thereby", "resisting", "apoptosis", "(", "Zhang", "et", "al", ".,", "2021", ")", "." ],
+    "event_indices" : [ 9, 10, 11, 12, 13, 14, 15 ],
+    "type" : "Negative_regulation",
+    "polarity" : false,
+    "controller_indices" : [ 9, 10 ],
+    "controlled_indices" : [ 11, 12, 13, 14, 15 ],
+    "trigger_indices" : [ 10, 11 ],
+    "rule_name" : "Negative_regulation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "NE", "increases", "ROS", "level", ",", "which", "causes", "hearing", "loss", "through", "oxidative", "damage", "to", "hair", "cells", "and", "neurons", "(", "Delmaghani", "et", "al", ".,", "2015", ")", "." ],
+    "event_indices" : [ 0, 1, 2, 3, 4 ],
+    "type" : "Positive_regulation",
+    "polarity" : true,
+    "controller_indices" : [ 0, 1 ],
+    "controlled_indices" : [ 2, 3, 4 ],
+    "trigger_indices" : [ 1, 2 ],
+    "rule_name" : "Positive_regulation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "In", "a", "mouse", "model", "of", "acute", "kidney", "injury", ",", "SIRT3", "reduced", "Ac-SOD2", "and", "ROS", "levels", "and", "attenuated", "oxidative", "damage", ",", "thereby", "resisting", "apoptosis", "(", "Zhang", "et", "al", ".,", "2021", ")", "." ],
+    "event_indices" : [ 9, 10, 11, 12, 13, 14, 15 ],
+    "type" : "Negative_regulation",
+    "polarity" : false,
+    "controller_indices" : [ 9, 10 ],
+    "controlled_indices" : [ 13, 14, 15 ],
+    "trigger_indices" : [ 10, 11 ],
+    "rule_name" : "Negative_regulation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "In", "this", "study", ",", "we", "found", "that", "SIRT3", "overexpression", "attenuated", "hearing", "loss", "by", "protecting", "hair", "cells", ",", "and", "this", "protective", "effect", "could", "be", "blocked", "by", "the", "SOD2", "inhibitor", "2-ME", "(", "Figure", "6", ")", "." ],
+    "event_indices" : [ 7, 8, 9, 10, 11, 12 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 7, 8, 9 ],
+    "controlled_indices" : [ 10, 11, 12 ],
+    "trigger_indices" : [ 9, 10 ],
+    "rule_name" : "Negative_activation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "One", "NE", "caused", "TTS", ",", "and", "two", "NEs", "caused", "PTS", "(", "Figure", "1", ")", "." ],
+    "event_indices" : [ 7, 8, 9, 10 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 7, 8 ],
+    "controlled_indices" : [ 9, 10 ],
+    "trigger_indices" : [ 8, 9 ],
+    "rule_name" : "Positive_activation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "Using", "the", "ABR", "test", ",", "we", "found", "that", "the", "hearing", "thresholds", "of", "mice", "receiving", "a", "single", "NE", "increased", "transiently", "after", "NE", "and", "then", "decreased", ",", "which", "were", "not", "significantly", "different", "from", "those", "of", "the", "control", "group", "mice", "at", "2", "weeks", "after", "NE", ",", "indicating", "that", "a", "single", "NE", "caused", "a", "hearing", "temporary", "threshold", "shift", "(", "TTS", ")", "(", "Figure", "1C", ")", "." ],
+    "event_indices" : [ 47, 48, 49, 50, 51 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 47, 48 ],
+    "controlled_indices" : [ 50, 51 ],
+    "trigger_indices" : [ 48, 49 ],
+    "rule_name" : "Positive_activation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "We", "found", "that", ",", "compared", "with", "the", "control", "group", "mice", ",", "the", "PTS", "group", "mice", "had", "significantly", "reduced", "mitochondrial", "membrane", "potential", "and", "significantly", "increased", "8-OH", "expression", ",", "indicating", "that", "NE", "caused", "intracellular", "ROS", "accumulation", "by", "affecting", "mitochondrial", "function", "(", "Figure", "3", ")", "." ],
+    "event_indices" : [ 12, 13, 14, 15, 16, 17, 18, 19, 20, 21 ],
+    "type" : "Negative_activation",
+    "polarity" : false,
+    "controller_indices" : [ 12, 13 ],
+    "controlled_indices" : [ 18, 19, 20, 21 ],
+    "trigger_indices" : [ 17, 18 ],
+    "rule_name" : "Negative_activation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "We", "found", "that", ",", "compared", "with", "the", "control", "group", "mice", ",", "the", "PTS", "group", "mice", "had", "significantly", "reduced", "mitochondrial", "membrane", "potential", "and", "significantly", "increased", "8-OH", "expression", ",", "indicating", "that", "NE", "caused", "intracellular", "ROS", "accumulation", "by", "affecting", "mitochondrial", "function", "(", "Figure", "3", ")", "." ],
+    "event_indices" : [ 14, 15, 16, 17, 18, 19, 20, 21 ],
+    "type" : "Negative_activation",
+    "polarity" : false,
+    "controller_indices" : [ 14, 15 ],
+    "controlled_indices" : [ 18, 19, 20, 21 ],
+    "trigger_indices" : [ 17, 18 ],
+    "rule_name" : "Negative_activation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "Compared", "with", "the", "control", "group", "mice", ",", "the", "PTS", "group", "mice", "showed", "decreased", "JC-1", "aggregates", "and", "increased", "JC-1", "monomers", ",", "indicating", "that", "the", "mitochondrial", "membrane", "potential", "was", "decreased", "in", "these", "mice", "(", "Figures", "3A", ",", "B", ")", "." ],
+    "event_indices" : [ 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 8, 9 ],
+    "controlled_indices" : [ 17, 18 ],
+    "trigger_indices" : [ 16, 17 ],
+    "rule_name" : "Positive_activation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "Compared", "with", "the", "control", "group", "mice", ",", "the", "PTS", "group", "mice", "showed", "decreased", "JC-1", "aggregates", "and", "increased", "JC-1", "monomers", ",", "indicating", "that", "the", "mitochondrial", "membrane", "potential", "was", "decreased", "in", "these", "mice", "(", "Figures", "3A", ",", "B", ")", "." ],
+    "event_indices" : [ 10, 11, 12, 13, 14, 15, 16, 17, 18 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 10, 11 ],
+    "controlled_indices" : [ 17, 18 ],
+    "trigger_indices" : [ 16, 17 ],
+    "rule_name" : "Positive_activation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "We", "found", "that", ",", "compared", "with", "the", "control", "group", "mice", ",", "the", "PTS", "group", "mice", "had", "significantly", "reduced", "mitochondrial", "membrane", "potential", "and", "significantly", "increased", "8-OH", "expression", ",", "indicating", "that", "NE", "caused", "intracellular", "ROS", "accumulation", "by", "affecting", "mitochondrial", "function", "(", "Figure", "3", ")", "." ],
+    "event_indices" : [ 29, 30, 31, 32, 33 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 29, 30 ],
+    "controlled_indices" : [ 32, 33 ],
+    "trigger_indices" : [ 30, 31 ],
+    "rule_name" : "Positive_activation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "In", "a", "mouse", "model", "of", "acute", "kidney", "injury", ",", "SIRT3", "reduced", "Ac-SOD2", "and", "ROS", "levels", "and", "attenuated", "oxidative", "damage", ",", "thereby", "resisting", "apoptosis", "(", "Zhang", "et", "al", ".,", "2021", ")", "." ],
+    "event_indices" : [ 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 9, 10 ],
+    "controlled_indices" : [ 22, 23 ],
+    "trigger_indices" : [ 21, 22 ],
+    "rule_name" : "Negative_activation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "In", "a", "mouse", "model", "of", "acute", "kidney", "injury", ",", "SIRT3", "reduced", "Ac-SOD2", "and", "ROS", "levels", "and", "attenuated", "oxidative", "damage", ",", "thereby", "resisting", "apoptosis", "(", "Zhang", "et", "al", ".,", "2021", ")", "." ],
+    "event_indices" : [ 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 9, 10 ],
+    "controlled_indices" : [ 22, 23 ],
+    "trigger_indices" : [ 21, 22 ],
+    "rule_name" : "Negative_activation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "Our", "previous", "study", "found", "that", "a", "single", "moderate", "NE", "caused", "TTS", ";", "however", ",", "repeated", "NE", "caused", "PTS", "(", "Luo", "et", "al", ".,", "2020", ")", "." ],
+    "event_indices" : [ 15, 16, 17, 18 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 15, 16 ],
+    "controlled_indices" : [ 17, 18 ],
+    "trigger_indices" : [ 16, 17 ],
+    "rule_name" : "Positive_activation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "Furthermore", ",", "SIRT3", "overexpression", "reduces", "axonal", "degeneration", "induced", "by", "NE", ",", "thus", "making", "mice", "resistant", "to", "NIHL", "(", "Brown", "et", "al", ".,", "2014", ")", "." ],
+    "event_indices" : [ 7, 8, 9, 10, 11, 12, 13, 14 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 9, 10 ],
+    "controlled_indices" : [ 13, 14 ],
+    "trigger_indices" : [ 7, 8 ],
+    "rule_name" : "Positive_activation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "Autophagy", "and", "apoptosis", "are", "often", "simultaneously", "triggered", "by", "similar", "stimuli", ",", "such", "as", "oxidative", "stress", ",", "in", "both", "hair", "cells", "and", "spiral", "ganglion", "neurons", "(", "SGNs", ")", "(", "He", "et", "al", ".,", "2021", ";", "Liu", "et", "al", ".,", "2021", ")", "." ],
+    "event_indices" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 17, 18 ],
+    "controlled_indices" : [ 0, 1 ],
+    "trigger_indices" : [ 6, 7 ],
+    "rule_name" : "Positive_activation_syntax_2_verb, pronominalMatch",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "Autophagy", "and", "apoptosis", "are", "often", "simultaneously", "triggered", "by", "similar", "stimuli", ",", "such", "as", "oxidative", "stress", ",", "in", "both", "hair", "cells", "and", "spiral", "ganglion", "neurons", "(", "SGNs", ")", "(", "He", "et", "al", ".,", "2021", ";", "Liu", "et", "al", ".,", "2021", ")", "." ],
+    "event_indices" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 17, 18 ],
+    "controlled_indices" : [ 0, 1 ],
+    "trigger_indices" : [ 6, 7 ],
+    "rule_name" : "Positive_activation_syntax_2_verb, pronominalMatch",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "Autophagy", "and", "apoptosis", "are", "often", "simultaneously", "triggered", "by", "similar", "stimuli", ",", "such", "as", "oxidative", "stress", ",", "in", "both", "hair", "cells", "and", "spiral", "ganglion", "neurons", "(", "SGNs", ")", "(", "He", "et", "al", ".,", "2021", ";", "Liu", "et", "al", ".,", "2021", ")", "." ],
+    "event_indices" : [ 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 17, 18 ],
+    "controlled_indices" : [ 2, 3 ],
+    "trigger_indices" : [ 6, 7 ],
+    "rule_name" : "Positive_activation_syntax_2_verb, pronominalMatch",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "Autophagy", "and", "apoptosis", "are", "often", "simultaneously", "triggered", "by", "similar", "stimuli", ",", "such", "as", "oxidative", "stress", ",", "in", "both", "hair", "cells", "and", "spiral", "ganglion", "neurons", "(", "SGNs", ")", "(", "He", "et", "al", ".,", "2021", ";", "Liu", "et", "al", ".,", "2021", ")", "." ],
+    "event_indices" : [ 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 17, 18 ],
+    "controlled_indices" : [ 2, 3 ],
+    "trigger_indices" : [ 6, 7 ],
+    "rule_name" : "Positive_activation_syntax_2_verb, pronominalMatch",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "we", "conclude", "that", "SIRT3", "overexpression", "reduces", "noise", "induced", "hair", "cell", "damage", "by", "activating", "SOD2", "." ],
+    "event_indices" : [ 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 ],
+    "type" : "Negative_activation",
+    "polarity" : false,
+    "controller_indices" : [ 5, 6, 7 ],
+    "controlled_indices" : [ 15, 16 ],
+    "trigger_indices" : [ 9, 10 ],
+    "rule_name" : "Positive_activation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "The", "hearing", "thresholds", "in", "mice", "increased", "after", "two", "NEs", ",", "and", "although", "they", "decreased", "2", "weeks", "later", ",", "there", "was", "still", "a", "significant", "difference", "from", "the", "thresholds", "of", "the", "control", "group", "mice", ",", "indicating", "that", "two", "NEs", "caused", "a", "permanent", "threshold", "shift", "(", "PTS", ")", "in", "hearing", "in", "mice", "(", "Figure", "1D", ")", "." ],
+    "event_indices" : [ 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 36, 37 ],
+    "controlled_indices" : [ 46, 47 ],
+    "trigger_indices" : [ 37, 38 ],
+    "rule_name" : "Positive_activation_syntax_7_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "The", "hearing", "thresholds", "in", "mice", "increased", "after", "two", "NEs", ",", "and", "although", "they", "decreased", "2", "weeks", "later", ",", "there", "was", "still", "a", "significant", "difference", "from", "the", "thresholds", "of", "the", "control", "group", "mice", ",", "indicating", "that", "two", "NEs", "caused", "a", "permanent", "threshold", "shift", "(", "PTS", ")", "in", "hearing", "in", "mice", "(", "Figure", "1D", ")", "." ],
+    "event_indices" : [ 36, 37, 38, 39, 40, 41, 42, 43, 44 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 36, 37 ],
+    "controlled_indices" : [ 43, 44 ],
+    "trigger_indices" : [ 37, 38 ],
+    "rule_name" : "Positive_activation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "The", "hearing", "thresholds", "in", "mice", "increased", "after", "two", "NEs", ",", "and", "although", "they", "decreased", "2", "weeks", "later", ",", "there", "was", "still", "a", "significant", "difference", "from", "the", "thresholds", "of", "the", "control", "group", "mice", ",", "indicating", "that", "two", "NEs", "caused", "a", "permanent", "threshold", "shift", "(", "PTS", ")", "in", "hearing", "in", "mice", "(", "Figure", "1D", ")", "." ],
+    "event_indices" : [ 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 36, 37 ],
+    "controlled_indices" : [ 48, 49 ],
+    "trigger_indices" : [ 37, 38 ],
+    "rule_name" : "Positive_activation_syntax_7_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "NE", "increases", "ROS", "level", ",", "which", "causes", "hearing", "loss", "through", "oxidative", "damage", "to", "hair", "cells", "and", "neurons", "(", "Delmaghani", "et", "al", ".,", "2015", ")", "." ],
+    "event_indices" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 ],
+    "type" : "Negative_activation",
+    "polarity" : false,
+    "controller_indices" : [ 0, 1 ],
+    "controlled_indices" : [ 7, 8, 9 ],
+    "trigger_indices" : [ 6, 7 ],
+    "rule_name" : "Positive_activation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "NE", "increases", "ROS", "level", ",", "which", "causes", "hearing", "loss", "through", "oxidative", "damage", "to", "hair", "cells", "and", "neurons", "(", "Delmaghani", "et", "al", ".,", "2015", ")", "." ],
+    "event_indices" : [ 2, 3, 4, 5, 6, 7, 8, 9 ],
+    "type" : "Negative_activation",
+    "polarity" : false,
+    "controller_indices" : [ 2, 3, 4 ],
+    "controlled_indices" : [ 7, 8, 9 ],
+    "trigger_indices" : [ 6, 7 ],
+    "rule_name" : "Positive_activation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "Noise", "Exposure", "Causes", "a", "Hearing", "Threshold", "Shift", "in", "Mice", "." ],
+    "event_indices" : [ 0, 1, 2, 3, 4, 5 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 0, 1, 2 ],
+    "controlled_indices" : [ 4, 5 ],
+    "trigger_indices" : [ 2, 3 ],
+    "rule_name" : "Positive_activation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "Noise", "Exposure", "Causes", "a", "Hearing", "Threshold", "Shift", "in", "Mice", "." ],
+    "event_indices" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 0, 1, 2 ],
+    "controlled_indices" : [ 8, 9 ],
+    "trigger_indices" : [ 2, 3 ],
+    "rule_name" : "Positive_activation_syntax_1_verb",
+    "rule" : null
+  } ],
+  "hardInstances" : [ {
+    "sentence_tokens" : [ "Consistent", "with", "previous", "studies", ",", "we", "suggest", "that", "SIRT3", "plays", "a", "protective", "role", "against", "NE", "induced", "hair", "cell", "damage.SOD2", ",", "a", "SOD", "that", "is", "expressed", "only", "in", "the", "intracellular", "mitochondrial", "matrix", "(", "Slot", "et", "al", ".,", "1986", ")", ",", "plays", "a", "crucial", "role", "in", "resisting", "oxidative", "damage", "caused", "by", "mitochondrial", "superoxide", "(", "Jowko", "et", "al", ".,", "2017", ")", "." ],
+    "entities_indices" : [ [ 14, 15 ], [ 50, 51 ] ]
+  }, {
+    "sentence_tokens" : [ "Further", ",", "supplementation", "with", "the", "NAD", "precursor", "NR", "to", "elevate", "NAD", "levels", "can", "rescue", "animals", "from", "NIHL", ";", "however", ",", "animals", "lacking", "SIRT3", "do", "not", "benefit", "from", "this", "effect", "(", "Brown", "et", "al", ".,", "2014", ")", "." ],
+    "entities_indices" : [ [ 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "Our", "findings", "reveal", "an", "interaction", "between", "SIRT3", "and", "noise", "induced", "oxidative", "stress", "in", "hair", "cells", "and", "suggest", "a", "potential", "therapeutic", "strategy", "to", "improve", "NIHL", "by", "activating", "SIRT3", "mediated", "SOD2", "deacetylation", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "a", "mouse", "model", "of", "acute", "kidney", "injury", ",", "SIRT3", "reduced", "Ac-SOD2", "and", "ROS", "levels", "and", "attenuated", "oxidative", "damage", ",", "thereby", "resisting", "apoptosis", "(", "Zhang", "et", "al", ".,", "2021", ")", "." ],
+    "entities_indices" : [ [ 5, 6, 7, 8 ], [ 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "NE", "increases", "ROS", "level", ",", "which", "causes", "hearing", "loss", "through", "oxidative", "damage", "to", "hair", "cells", "and", "neurons", "(", "Delmaghani", "et", "al", ".,", "2015", ")", "." ],
+    "entities_indices" : [ [ 7, 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "a", "mouse", "model", "of", "acute", "kidney", "injury", ",", "SIRT3", "reduced", "Ac-SOD2", "and", "ROS", "levels", "and", "attenuated", "oxidative", "damage", ",", "thereby", "resisting", "apoptosis", "(", "Zhang", "et", "al", ".,", "2021", ")", "." ],
+    "entities_indices" : [ [ 5, 6, 7, 8 ], [ 11, 12 ], [ 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "study", ",", "we", "found", "that", "SIRT3", "overexpression", "attenuated", "hearing", "loss", "by", "protecting", "hair", "cells", ",", "and", "this", "protective", "effect", "could", "be", "blocked", "by", "the", "SOD2", "inhibitor", "2-ME", "(", "Figure", "6", ")", "." ],
+    "entities_indices" : [ [ 26, 27, 28 ] ]
+  }, {
+    "sentence_tokens" : [ "One", "NE", "caused", "TTS", ",", "and", "two", "NEs", "caused", "PTS", "(", "Figure", "1", ")", "." ],
+    "entities_indices" : [ [ 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "Using", "the", "ABR", "test", ",", "we", "found", "that", "the", "hearing", "thresholds", "of", "mice", "receiving", "a", "single", "NE", "increased", "transiently", "after", "NE", "and", "then", "decreased", ",", "which", "were", "not", "significantly", "different", "from", "those", "of", "the", "control", "group", "mice", "at", "2", "weeks", "after", "NE", ",", "indicating", "that", "a", "single", "NE", "caused", "a", "hearing", "temporary", "threshold", "shift", "(", "TTS", ")", "(", "Figure", "1C", ")", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 9, 10 ], [ 12, 13 ], [ 16, 17 ], [ 20, 21 ], [ 36, 37 ], [ 41, 42 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "found", "that", ",", "compared", "with", "the", "control", "group", "mice", ",", "the", "PTS", "group", "mice", "had", "significantly", "reduced", "mitochondrial", "membrane", "potential", "and", "significantly", "increased", "8-OH", "expression", ",", "indicating", "that", "NE", "caused", "intracellular", "ROS", "accumulation", "by", "affecting", "mitochondrial", "function", "(", "Figure", "3", ")", "." ],
+    "entities_indices" : [ [ 9, 10 ], [ 14, 15 ], [ 24, 25 ], [ 29, 30 ], [ 32, 33 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "found", "that", ",", "compared", "with", "the", "control", "group", "mice", ",", "the", "PTS", "group", "mice", "had", "significantly", "reduced", "mitochondrial", "membrane", "potential", "and", "significantly", "increased", "8-OH", "expression", ",", "indicating", "that", "NE", "caused", "intracellular", "ROS", "accumulation", "by", "affecting", "mitochondrial", "function", "(", "Figure", "3", ")", "." ],
+    "entities_indices" : [ [ 9, 10 ], [ 12, 13 ], [ 24, 25 ], [ 29, 30 ], [ 32, 33 ] ]
+  }, {
+    "sentence_tokens" : [ "Compared", "with", "the", "control", "group", "mice", ",", "the", "PTS", "group", "mice", "showed", "decreased", "JC-1", "aggregates", "and", "increased", "JC-1", "monomers", ",", "indicating", "that", "the", "mitochondrial", "membrane", "potential", "was", "decreased", "in", "these", "mice", "(", "Figures", "3A", ",", "B", ")", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 10, 11 ], [ 13, 14 ], [ 23, 24, 25, 26 ], [ 30, 31 ] ]
+  }, {
+    "sentence_tokens" : [ "Compared", "with", "the", "control", "group", "mice", ",", "the", "PTS", "group", "mice", "showed", "decreased", "JC-1", "aggregates", "and", "increased", "JC-1", "monomers", ",", "indicating", "that", "the", "mitochondrial", "membrane", "potential", "was", "decreased", "in", "these", "mice", "(", "Figures", "3A", ",", "B", ")", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 8, 9 ], [ 13, 14 ], [ 23, 24, 25, 26 ], [ 30, 31 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "found", "that", ",", "compared", "with", "the", "control", "group", "mice", ",", "the", "PTS", "group", "mice", "had", "significantly", "reduced", "mitochondrial", "membrane", "potential", "and", "significantly", "increased", "8-OH", "expression", ",", "indicating", "that", "NE", "caused", "intracellular", "ROS", "accumulation", "by", "affecting", "mitochondrial", "function", "(", "Figure", "3", ")", "." ],
+    "entities_indices" : [ [ 9, 10 ], [ 12, 13 ], [ 14, 15 ], [ 18, 19, 20, 21 ], [ 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "a", "mouse", "model", "of", "acute", "kidney", "injury", ",", "SIRT3", "reduced", "Ac-SOD2", "and", "ROS", "levels", "and", "attenuated", "oxidative", "damage", ",", "thereby", "resisting", "apoptosis", "(", "Zhang", "et", "al", ".,", "2021", ")", "." ],
+    "entities_indices" : [ [ 5, 6, 7, 8 ], [ 11, 12 ], [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "a", "mouse", "model", "of", "acute", "kidney", "injury", ",", "SIRT3", "reduced", "Ac-SOD2", "and", "ROS", "levels", "and", "attenuated", "oxidative", "damage", ",", "thereby", "resisting", "apoptosis", "(", "Zhang", "et", "al", ".,", "2021", ")", "." ],
+    "entities_indices" : [ [ 5, 6, 7, 8 ], [ 11, 12 ], [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "Our", "previous", "study", "found", "that", "a", "single", "moderate", "NE", "caused", "TTS", ";", "however", ",", "repeated", "NE", "caused", "PTS", "(", "Luo", "et", "al", ".,", "2020", ")", "." ],
+    "entities_indices" : [ [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "Furthermore", ",", "SIRT3", "overexpression", "reduces", "axonal", "degeneration", "induced", "by", "NE", ",", "thus", "making", "mice", "resistant", "to", "NIHL", "(", "Brown", "et", "al", ".,", "2014", ")", "." ],
+    "entities_indices" : [ [ 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "Autophagy", "and", "apoptosis", "are", "often", "simultaneously", "triggered", "by", "similar", "stimuli", ",", "such", "as", "oxidative", "stress", ",", "in", "both", "hair", "cells", "and", "spiral", "ganglion", "neurons", "(", "SGNs", ")", "(", "He", "et", "al", ".,", "2021", ";", "Liu", "et", "al", ".,", "2021", ")", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 34, 35, 36, 37, 38, 39 ] ]
+  }, {
+    "sentence_tokens" : [ "Autophagy", "and", "apoptosis", "are", "often", "simultaneously", "triggered", "by", "similar", "stimuli", ",", "such", "as", "oxidative", "stress", ",", "in", "both", "hair", "cells", "and", "spiral", "ganglion", "neurons", "(", "SGNs", ")", "(", "He", "et", "al", ".,", "2021", ";", "Liu", "et", "al", ".,", "2021", ")", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 34, 35, 36, 37, 38, 39 ] ]
+  }, {
+    "sentence_tokens" : [ "Autophagy", "and", "apoptosis", "are", "often", "simultaneously", "triggered", "by", "similar", "stimuli", ",", "such", "as", "oxidative", "stress", ",", "in", "both", "hair", "cells", "and", "spiral", "ganglion", "neurons", "(", "SGNs", ")", "(", "He", "et", "al", ".,", "2021", ";", "Liu", "et", "al", ".,", "2021", ")", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 34, 35, 36, 37, 38, 39 ] ]
+  }, {
+    "sentence_tokens" : [ "Autophagy", "and", "apoptosis", "are", "often", "simultaneously", "triggered", "by", "similar", "stimuli", ",", "such", "as", "oxidative", "stress", ",", "in", "both", "hair", "cells", "and", "spiral", "ganglion", "neurons", "(", "SGNs", ")", "(", "He", "et", "al", ".,", "2021", ";", "Liu", "et", "al", ".,", "2021", ")", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 34, 35, 36, 37, 38, 39 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "hearing", "thresholds", "in", "mice", "increased", "after", "two", "NEs", ",", "and", "although", "they", "decreased", "2", "weeks", "later", ",", "there", "was", "still", "a", "significant", "difference", "from", "the", "thresholds", "of", "the", "control", "group", "mice", ",", "indicating", "that", "two", "NEs", "caused", "a", "permanent", "threshold", "shift", "(", "PTS", ")", "in", "hearing", "in", "mice", "(", "Figure", "1D", ")", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 4, 5 ], [ 8, 9 ], [ 31, 32 ], [ 43, 44 ], [ 48, 49 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "hearing", "thresholds", "in", "mice", "increased", "after", "two", "NEs", ",", "and", "although", "they", "decreased", "2", "weeks", "later", ",", "there", "was", "still", "a", "significant", "difference", "from", "the", "thresholds", "of", "the", "control", "group", "mice", ",", "indicating", "that", "two", "NEs", "caused", "a", "permanent", "threshold", "shift", "(", "PTS", ")", "in", "hearing", "in", "mice", "(", "Figure", "1D", ")", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 4, 5 ], [ 8, 9 ], [ 31, 32 ], [ 46, 47 ], [ 48, 49 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "hearing", "thresholds", "in", "mice", "increased", "after", "two", "NEs", ",", "and", "although", "they", "decreased", "2", "weeks", "later", ",", "there", "was", "still", "a", "significant", "difference", "from", "the", "thresholds", "of", "the", "control", "group", "mice", ",", "indicating", "that", "two", "NEs", "caused", "a", "permanent", "threshold", "shift", "(", "PTS", ")", "in", "hearing", "in", "mice", "(", "Figure", "1D", ")", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 4, 5 ], [ 8, 9 ], [ 31, 32 ], [ 43, 44 ], [ 46, 47 ] ]
+  }, {
+    "sentence_tokens" : [ "NE", "increases", "ROS", "level", ",", "which", "causes", "hearing", "loss", "through", "oxidative", "damage", "to", "hair", "cells", "and", "neurons", "(", "Delmaghani", "et", "al", ".,", "2015", ")", "." ],
+    "entities_indices" : [ [ 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "NE", "increases", "ROS", "level", ",", "which", "causes", "hearing", "loss", "through", "oxidative", "damage", "to", "hair", "cells", "and", "neurons", "(", "Delmaghani", "et", "al", ".,", "2015", ")", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "Noise", "Exposure", "Causes", "a", "Hearing", "Threshold", "Shift", "in", "Mice", "." ],
+    "entities_indices" : [ [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "Noise", "Exposure", "Causes", "a", "Hearing", "Threshold", "Shift", "in", "Mice", "." ],
+    "entities_indices" : [ [ 4, 5 ] ]
+  } ],
+  "withoutRegulations" : [ {
+    "sentence_tokens" : [ "SIRT3", "Overexpression", "Protects", "Hair", "Cells", "Against", "Noise", "Exposure", "in", "a", "SOD2", "Dependent", "Manner", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 6, 7, 8 ], [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "NADPH", "oxidase", "activity", "was", "calculated", "from", "the", "standard", "curve", "." ],
+    "entities_indices" : [ [ 0, 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "Sirtuin-3", "Protects", "Cochlear", "Hair", "Cells", "Against", "Noise", "Induced", "Damage", "via", "the", "Superoxide", "Dismutase", "2/Reactive", "Oxygen", "Species", "Signaling", "Pathway", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 11, 12 ], [ 14, 15 ], [ 16, 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "Cell", "pellets", "were", "then", "resuspended", "in", "a", "cell", "culture", "medium", "containing", "JC-1", "staining", "working", "solution", "and", "incubated", "at", "37", "degrees", "C", "for", "20", "min", "in", "the", "dark", ",", "washed", "with", "cold", "JC-1", "staining", "buffer", "and", "analyzed", "by", "flow", "cytometry", "(", "FACS", "Aria", "IIu", ",", "BD", "Biosciences", ")", "within", "1", "h.", "Measurement", "of", "SOD2", "Activity", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 31, 32 ], [ 41, 42 ], [ 52, 53 ] ]
+  }, {
+    "sentence_tokens" : [ "Subsequently", ",", "we", "administered", "adeno", "associated", "virus-SIRT3", "to", "the", "posterior", "semicircular", "canals", "and", "found", "that", "SIRT3", "overexpression", "significantly", "attenuated", "hair", "cell", "injury", "and", "that", "this", "protective", "effect", "of", "SIRT3", "could", "be", "blocked", "by", "2-methoxyestradiol", ",", "a", "SOD2", "inhibitor", "." ],
+    "entities_indices" : [ [ 15, 16 ], [ 28, 29 ], [ 33, 34 ], [ 36, 37, 38 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "analyzed", "the", "mitochondrial", "membrane", "potential", "in", "the", "inner", "ear", "cells", "of", "the", "PTS", "and", "control", "group", "mice", "." ],
+    "entities_indices" : [ [ 3, 4, 5, 6 ], [ 13, 14 ], [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "After", "washing", "three", "times", "with", "PBS", ",", "the", "samples", "were", "incubated", "with", "primary", "antibody", "solution", "at", "4", "degrees", "C", "overnight", "." ],
+    "entities_indices" : [ [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "WB", "results", "showed", "that", "SIRT3", "expression", "was", "significantly", "higher", "in", "the", "PTS", "+", "AAV-SIRT3", "group", "than", "in", "the", "PTS", "group", "(", "Figure", "6C", ")", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 11, 12 ], [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "It", "is", "well", "documented", "that", "oxidative", "damage", "is", "a", "major", "cause", "of", "hearing", "loss", "cochlear", "and", "hair", "cells", ",", "which", "can", "be", "easily", "damaged", "by", "various", "insults", ",", "including", "mutations", "in", "deafness", "genes", "(", "Qian", "et", "al", ".,", "2020", ")", ",", "aging", "(", "Qi", "et", "al", ".,", "2019", ")", ",", "noise", ",", "drugs", ",", "infections", "and", "injuries", "(", "Liu", "et", "al", ".,", "2019", ")", ",", "or", "lack", "of", "regenerative", "capacity", "(", "Chen", "et", "al", ".,", "2021", ")", "." ],
+    "entities_indices" : [ [ 12, 13, 14 ], [ 31, 32 ], [ 43, 44 ], [ 54, 55 ] ]
+  }, {
+    "sentence_tokens" : [ "SOD2", "converts", "SOD", "to", "hydrogen", "peroxide", ",", "which", "is", "subsequently", "converted", "to", "water", "by", "catalase", "and", "other", "peroxidases", "(", "Fridovich", ",", "1995", ")", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 2, 3 ], [ 4, 5, 6 ], [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "used", "the", "TDT", "system", "3", "evoked", "potential", "workstation", "(", "Tucker-Davis", "Technologies", ",", "Alachua", ",", "FL", ",", "United", "States", ")", "to", "record", "ABR", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "SIRT3", "works", "by", "deacetylating", "proteins", ",", "particularly", "lysine", "of", "SOD2", ",", "to", "regulate", "its", "activity", "and", "thus", "maintain", "mitochondrial", "function", "(", "Yang", "et", "al", ".,", "2016", ")", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "Given", "the", "important", "role", "of", "mitochondrial", "function", "in", "the", "development", "of", "NIHL", ",", "we", "hypothesized", "that", "changes", "in", "SOD2", "deacetylation", "levels", "due", "to", "SIRT3", "activity", "are", "involved", "in", "the", "pathogenesis", "of", "NIHL", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 18, 19 ], [ 23, 24 ], [ 29, 30 ], [ 31, 32 ] ]
+  }, {
+    "sentence_tokens" : [ "ROS", "are", "mainly", "produced", "in", "the", "mitochondrial", "oxidative", "respiratory", "chain", ";", "therefore", ",", "mitochondrial", "dysfunction", "can", "lead", "to", "cellular", "ROS", "accumulation", "(", "Gao", "et", "al", ".,", "2019", ";", "Zhao", "et", "al", ".,", "2019", ")", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "Activating", "the", "Akt-SIRT3-SOD2", "signaling", "pathway", "ameliorates", "mitochondrial", "damage", "and", "attenuates", "brain", "ischemia-reperfusion", "injury", "in", "diabetic", "mice", "(", "Liu", "et", "al", ".,", "2021", ")", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 3, 4, 5 ], [ 11, 12, 13 ], [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "amplitude", "of", "ABR", "wave", "I", "in", "both", "the", "PTS", "and", "TTS", "groups", "was", "significantly", "different", "from", "that", "in", "the", "control", "group", "(", "Figures", "1B", ",", "E", ")", "." ],
+    "entities_indices" : [ [ 3, 4, 5 ], [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "Increased", "SIRT3", "expression", "protects", "cells", "from", "oxidative", "stress", "induced", "cell", "death", "and", "inhibits", "apoptosis", "in", "age", "related", "SGNs", "and", "hair", "cells", "(", "Someya", "et", "al", ".,", "2010", ")", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 9, 10, 11 ], [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "Sound", "intensity", "was", "attenuated", "from", "90", "to", "0", "dB", "in", "5", "dB", "intervals", ",", "and", "the", "responses", "were", "analyzed", "using", "BioSigRZ", "software", "(", "Tucker-Davis", "Technologies", ")", ",", "digitized", ",", "and", "averaged", "for", "each", "frequency-level", "combination", "(", "1,024", "samples", "and", "level", ")", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "SOD2", "viability", "units", "were", "calculated", "using", "a", "standard", "curve", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "Loss", "of", "hair", "cells", "and", "SGNs", "is", "the", "main", "cause", "of", "hearing", "loss", "(", "Zhang", "et", "al", ".,", "2021", ")", "." ],
+    "entities_indices" : [ [ 11, 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "Cochlear", "proteins", "were", "extracted", "and", "protein", "concentrations", "were", "measured", "using", "a", "BCA", "Protein", "Quantification", "Kit", "(", "Beyotime", ",", "China", ")", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "C57BL/6", "J", "male", "mice", "were", "obtained", "from", "the", "Experimental", "Animal", "Center", "of", "Capital", "Medical", "University", "(", "Beijing", ",", "China", ")", "." ],
+    "entities_indices" : [ [ 0, 1, 2 ], [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "4-HNE", "level", "reflects", "cellular", "membrane", "damage", "due", "to", "lipid", "peroxidation", "induced", "by", "ROS", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "After", "collecting", "the", "cochlear", "cells", ",", "they", "were", "resuspended", "in", "100", "mu", "L", "of", "diluted", "dichloro-dihydro-fluorescein", "diacetate", "and", "incubated", "for", "20", "min", "at", "37", "degrees", "C", "in", "a", "cell", "culture", "incubator", "." ],
+    "entities_indices" : [ [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "Compared", "with", "the", "PTS", "+", "AAV-SIRT3", "group", ",", "the", "number", "of", "synapses", "in", "the", "PTS", "+2-ME", "+", "AAV-SIRT3", "group", "was", "significantly", "decreased", "in", "the", "apical", ",", "middle", ",", "and", "basal", "turns", "(", "Figures", "6E", ",", "F", ")", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "expression", "of", "8-OHdG", "and", "4HNE", "was", "analyzed", "using", "Image-Pro", "Plus", "6.0", "software", "(", "Media", "Cybernetics", ",", "Inc.", "United", "States", ")", "." ],
+    "entities_indices" : [ [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "To", "explore", "the", "effect", "of", "3-TYP", "on", "SOD2", ",", "we", "performed", "WB", "assays", "for", "both", "Ac-SOD2", "and", "SOD2", "in", "the", "cochlea", "and", "assayed", "SOD2", "activity", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 7, 8 ], [ 15, 16 ], [ 17, 18 ], [ 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "SOD2", "activity", "assay", "was", "performed", "using", "the", "Cu/Zn-SOD", "and", "Mn-SOD", "Assay", "Kit", "with", "WST-8", "(", "Beyotime", ",", "China", ")", "according", "to", "the", "manufacturer", "'", "s", "instructions", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 8, 9 ], [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "observed", "that", "the", "acetylation", "level", "of", "SOD2", "was", "elevated", "in", "the", "PTS", "+3-TYP", "group", "compared", "to", "that", "in", "the", "PTS", "group", "(", "Figure", "5A", ")", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 12, 13 ], [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "Compared", "with", "the", "control", "group", "mice", ",", "both", "the", "PTS", "and", "TTS", "group", "mice", "had", "decreased", "number", "of", "paired", "synapses", ",", "with", "the", "PTS", "group", "mice", "showing", "a", "more", "significant", "decrease", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 9, 10 ], [ 13, 14 ], [ 23, 24 ], [ 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "Mitochondrial", "oxidative", "stress", "is", "involved", "in", "hair", "cell", "damage", "caused", "by", "noise", "induced", "hearing", "loss", "(", "NIHL", ")", "." ],
+    "entities_indices" : [ [ 11, 12, 13, 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "These", "findings", "suggest", "that", "insufficient", "SIRT3", "and", "SOD2", "signaling", "leads", "to", "mitochondrial", "oxidative", "damage", "resulting", "in", "hair", "cell", "injury", "in", "NIHL", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "4", ",", "6-diamidino-2-phe-nylindole", "(", "DAPI", ")", "was", "used", "for", "the", "final", "addition", "of", "coverslips", "." ],
+    "entities_indices" : [ [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "Both", "the", "PTS", "and", "TTS", "groups", "showed", "an", "increased", "number", "of", "unpaired", "synapses", "compared", "to", "the", "control", "group", ",", "with", "a", "greater", "increase", "observed", "in", "the", "PTS", "group", "(", "Figures", "2C", "-", "E", ")", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 26, 27 ] ]
+  }, {
+    "sentence_tokens" : [ "Afterward", ",", "the", "cells", "were", "washed", "three", "times", "with", "a", "serum-free", "cell", "culture", "medium", ",", "and", "chemiluminescence", "was", "measured", "using", "an", "EnSpire", "enzyme", "marker", "(", "PerkinElmer", ",", "Waltham", ",", "MA", ")", "." ],
+    "entities_indices" : [ [ 29, 30 ] ]
+  }, {
+    "sentence_tokens" : [ "Viral", "Constructs", "and", "Posterior", "Semicircular", "Canal", "Transduction", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "Second", ",", "further", "investigations", "are", "warranted", "to", "evaluate", "SIRT3", "and", "SOD2", "mediated", "alterations", "in", "the", "mitochondrial", "function", "of", "hair", "cells", "and", "determine", "the", "pathogenesis", "of", "TTS", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 10, 11 ], [ 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "Caspase", "3", "and", "Cytochrome", "c", "protein", "expression", "levels", "were", "significantly", "higher", "in", "the", "PTS", "+3-TYP", "group", "than", "in", "the", "PTS", "group", "(", "Figures", "5F", ",", "G", ")", "." ],
+    "entities_indices" : [ [ 0, 1, 2 ], [ 3, 4, 5 ], [ 13, 14 ], [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "Studies", "have", "reported", "that", "SIRT3", "can", "balance", "ROS", "levels", "by", "modifying", "post-translational", "levels", "and", "can", "activate", "long-term", "transcriptional", "programs", "to", "protect", "cells", "from", "oxidative", "damage", "(", "van", "de", "Ven", "et", "al", ".,", "2017", ")", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "the", "intervention", "group", "mice", "received", "3-TYP", ",", "2-ME", "or", "AAV-SIRT3", "in", "addition", "to", "NE", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "found", "that", "mitochondrial", "SIRT3", "plays", "an", "important", "role", "in", "NIHL", "by", "regulating", "redox", "imbalance", "through", "SOD2", "activation.In", "C57BL/6", "J", "mice", ",", "repetitive", "noise", "induced", "impairment", "of", "cochlear", "function", "and", "altered", "synaptic", "morphology", "have", "dose", "dependent", "characteristics", "(", "Qian", "et", "al", ".,", "2021", ")", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 10, 11 ], [ 16, 17 ], [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "Noise", "is", "a", "worldwide", "public", "health", "problem", "and", "an", "important", "risk", "factor", "for", "sensorineural", "hearing", "loss", "(", "SNHL", ")", "." ],
+    "entities_indices" : [ [ 13, 14, 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "It", "is", "widely", "believed", "that", "mitochondrial", "oxidative", "stress", "leads", "to", "NIHL", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "Other", "cochleae", "were", "decalcified", "using", "10", "%", "EDTA", "for", "2", "h", ";", "structures", "such", "as", "vascular", "striae", ",", "spiral", "ligaments", "and", "capping", "membranes", "were", "carefully", "excised", "under", "a", "microscope", ",", "and", "the", "remaining", "basilar", "membranes", "were", "divided", "into", "the", "apical", ",", "middle", ",", "and", "basal", "turns", "for", "immunofluorescence", "staining", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "Most", "IHCs", "could", "be", "transfected", "with", "AAV-SIRT3", ",", "as", "observed", "on", "confocal", "microscopy", "(", "Figure", "6B", ")", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "level", "of", "NADPH", "oxidase", "activity", "in", "the", "PTS", "group", "was", "significantly", "higher", "than", "that", "in", "the", "control", "group", "(", "Figure", "3G", ")", "." ],
+    "entities_indices" : [ [ 3, 4, 5 ], [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "Bilateral", "cochleae", "were", "dissected", "from", "eight", "mice", "(", "four", "per", "group", ")", "and", "homogenized", "in", "NADP", "+/NADPH", "extracts", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "SOD2", "serves", "as", "the", "first", "line", "of", "defense", "against", "mitochondrial", "oxidative", "damage", "and", "is", "the", "main", "mitochondrial", "ROS", "scavenger", "(", "Miao", "and", "St", ",", "2009", ")", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "key", "targets", "in", "the", "pathogenesis", "of", "noise", "induced", "hearing", "loss", "(", "NIHL", ")", "should", "be", "explored.Mitochondrial", "abnormalities", "caused", "by", "ROS", "accumulation", "play", "an", "important", "role", "in", "the", "pathogenesis", "of", "NIHL", "(", "Ding", "et", "al", ".,", "2020", ";", "Zhong", "et", "al", ".,", "2020", ")", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 8, 9, 10, 11, 12 ], [ 21, 22 ], [ 29, 30 ], [ 33, 34 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "analysis", "of", "the", "number", "of", "paired", "synapses", "at", "the", "level", "of", "IHCs", "revealed", "no", "significant", "changes", "in", "the", "basolateral", "membrane", "in", "the", "PTS", "+3-TYP", "group", "compared", "with", "that", "in", "the", "PTS", "group", ",", "while", "this", "number", "was", "significantly", "reduced", "in", "the", "middle", "and", "basal", "turns", "." ],
+    "entities_indices" : [ [ 12, 13 ], [ 23, 24 ], [ 31, 32 ] ]
+  }, {
+    "sentence_tokens" : [ "ABR", "Testing", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "SOD2", "activity", "was", "significantly", "decreased", "in", "the", "PTS", "+3-TYP", "group", "compared", "with", "that", "in", "the", "PTS", "group", "(", "Figure", "5B", ")", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 7, 8 ], [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "OHC", "survival", "rate", "was", "significantly", "lower", "in", "the", "PTS", "+3-TYP", "group", "than", "in", "the", "PTS", "group", "(", "Figures", "4C", ",", "D", ")", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 9, 10 ], [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "Sirtuin-3", "(", "SIRT3", ")", "plays", "an", "important", "role", "in", "hair", "cell", "survival", "by", "regulating", "mitochondrial", "function", ";", "however", ",", "the", "role", "of", "SIRT3", "in", "NIHL", "is", "unknown", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 2, 3 ], [ 10, 11, 12 ], [ 22, 23 ], [ 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "SIRT3", "resists", "the", "ototoxicity", "of", "gentamicin", "(", "Han", "et", "al", ".,", "2020", ")", ",", "and", "its", "upregulation", "protects", "mice", "against", "hearing", "loss", "caused", "by", "high-fat", "diet", "and", "aging", "(", "Miwa", ",", "2021", ")", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 18, 19 ], [ 20, 21, 22 ], [ 27, 28 ] ]
+  }, {
+    "sentence_tokens" : [ "Mice", "in", "the", "PTS", "group", "received", "NE", "at", "6", "and", "8", "weeks", "old", "of", "mice", ",", "whereas", "mice", "in", "the", "TTS", "group", "received", "NE", "only", "at", "8", "weeks", "old", ",", "and", "both", "groups", "underwent", "auditory", "brainstem", "response", "(", "ABR", ")", "testing", "at", "10", "weeks", "(", "Figure", "1A", ")", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 3, 4 ], [ 6, 7 ], [ 14, 15 ], [ 17, 18 ], [ 23, 24 ], [ 38, 39 ] ]
+  }, {
+    "sentence_tokens" : [ "Both", "3-TYP", "(", "MCE", "Chemicals", "&", "Equipment", "Co", ".,", "Malta", ",", "NY", ")", "and", "2-methoxyestradiol", "(", "2-ME", ";", "Selleck", "Chemicals", ",", "Houston", ",", "TX", ")", "were", "administered", "by", "intraperitoneal", "injection", "starting", "1", "week", "prior", "to", "NE", "for", "7", "days", "3-TYP", "was", "administered", "at", "50", "mg/kg/day", ",", "and", "2-ME", "was", "administered", "at", "16", "mg/kg/day", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 23, 24 ], [ 35, 36 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "audiological", "and", "morphological", "levels", "were", "not", "significantly", "different", "between", "the", "PTS", "+", "AAV8-GFP", "and", "PTS", "group", "mice", ";", "therefore", ",", "these", "findings", "are", "not", "shown", "in", "this", "figure", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 13, 14 ], [ 15, 16 ], [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "tests", "were", "performed", "using", "click", "and", "tone", "bursts", "at", "frequencies", "of", "4", ",", "8,", "16", ",", "and", "32", "kHz", "with", "the", "SigGenRZ", "software", "(", "Tucker-Davis", "Technologies", ")", "." ],
+    "entities_indices" : [ [ 22, 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "found", "that", "SIRT3", "inhibition", "resulted", "in", "a", "significant", "increase", "in", "the", "acetylation", "level", "of", "SOD2", ",", "a", "decrease", "in", "SOD2", "activity", ",", "a", "significant", "increase", "in", "ROS", "levels", ",", "and", "an", "increase", "in", "apoptosis", "(", "Figure", "5", ")", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 15, 16 ], [ 20, 21 ], [ 27, 28 ], [ 34, 35 ] ]
+  }, {
+    "sentence_tokens" : [ "SOD2", "upregulation", "plays", "a", "protective", "role", "in", "acute", "acoustic", "injury", "in", "rats", "(", "Zhu", "et", "al", ".,", "2020", ")", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "First", ",", "mitochondrial", "redox", "homeostasis", "is", "a", "complex", "system", ",", "and", "the", "linkage", "of", "SIRT3", "and", "SOD2", "signaling", "with", "other", "antioxidant", "systems", "requires", "further", "investigation", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 14, 15 ], [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "Superoxide", "dismutase", "2", "(", "SOD2", ")", "is", "a", "key", "antioxidant", "enzyme", "in", "mitochondria", "that", "reduces", "ROS", "production", "and", "protects", "cells", "from", "oxidative", "stress", "(", "Sarsour", "et", "al", ".,", "2014", ")", "." ],
+    "entities_indices" : [ [ 0, 1, 2, 3 ], [ 4, 5 ], [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "After", "anesthesia", ",", "the", "recording", "electrode", "was", "inserted", "in", "the", "subcutaneous", "area", "at", "the", "midpoint", "of", "the", "line", "connecting", "the", "anterior", "margins", "of", "the", "auricles", "on", "both", "sides", "of", "the", "mouse", ",", "the", "reference", "electrode", "was", "inserted", "into", "the", "subcutaneous", "area", "behind", "the", "tested", "ear", ",", "and", "the", "ground", "electrode", "was", "inserted", "into", "the", "subcutaneous", "area", "behind", "the", "contralateral", "ear", "." ],
+    "entities_indices" : [ [ 44, 45 ], [ 59, 60 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "secondary", "antibodies", "used", "were", "goat", "anti-mouse", "IgG1", "Alexa", "Fluor", "568", ",", "goat", "anti-mouse", "IgG2a", "Alexa", "Fluor", "488", ",", "and", "goat", "anti-rabbit", "IgG", "(", "H", "+", "L", ")", "Alexa", "Fluor", "647", "(", "1:300", ",", "Invitrogen", "and", "Molecular", "Probes", ",", "Eugene", ",", "OR", ")", "." ],
+    "entities_indices" : [ [ 8, 9, 10, 11 ], [ 15, 16, 17, 18 ], [ 28, 29, 30, 31 ], [ 41, 42 ] ]
+  }, {
+    "sentence_tokens" : [ "Regarding", "both", "audiology", "and", "morphology", ",", "the", "damage", "in", "the", "PTS", "group", "was", "more", "significant", "than", "that", "in", "the", "TTS", "group", ";", "therefore", ",", "we", "chose", "the", "PTS", "group", "to", "investigate", "the", "mechanism", "of", "SIRT3", "in", "NIHL", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 27, 28 ], [ 34, 35 ] ]
+  }, {
+    "sentence_tokens" : [ "Purified", "adeno", "associated", "virus", "(", "AAV", ")", "eight", "vectors", "with", "SIRT3", "and", "the", "GFP", "gene", "(", "AAV8-SIRT3-GFP", ")", "and", "AAV8-GFP", "vectors", "were", "obtained", "from", "Vigenebio", "Biosciences", "Co.", "(", "Jinan", ",", "China", ")", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 13, 14 ], [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "Although", "several", "studies", "in", "the", "past", "decades", "have", "focused", "on", "countering", "noise", "induced", "hair", "cell", "damage", "by", "interfering", "with", "ROS", ",", "there", "are", "no", "clinically", "relevant", "intervention", "targets", "to", "date", "." ],
+    "entities_indices" : [ [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "ABR", "results", "showed", "no", "significant", "difference", "in", "hearing", "thresholds", "between", "the", "PTS", "and", "PTS", "+2-ME", "groups", ",", "and", "hearing", "thresholds", "were", "significantly", "lower", "in", "the", "PTS", "+", "AAV-SIRT3", "group", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 8, 9 ], [ 12, 13 ], [ 14, 15 ], [ 19, 20 ], [ 26, 27 ] ]
+  }, {
+    "sentence_tokens" : [ "SIRT3", "maintains", "ROS", "homeostasis", "by", "activating", "SOD2", "through", "deacetylation", "and", "converting", "harmful", "superoxide", "radicals", "to", "harmless", "oxygen", "or", "hydrogen", "peroxide", "(", "Shen", "et", "al", ".,", "2020", ")", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 2, 3 ], [ 3, 4 ], [ 6, 7 ], [ 12, 13 ], [ 16, 17 ], [ 18, 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "mitochondrial", "membrane", "potential", "assay", "kit", "with", "JC-1", "(", "Beyotime", ",", "China", ")", "was", "used", "to", "analyze", "mitochondrial", "ROS", "production", "." ],
+    "entities_indices" : [ [ 1, 2, 3, 4 ], [ 7, 8 ], [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "Mitochondria", ",", "as", "a", "major", "source", "of", "ROS", ",", "play", "a", "key", "role", "in", "regulating", "cellular", "functions", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "divided", "the", "cochlear", "Basilar", "membrane", "into", "the", "apical", ",", "middle", ",", "and", "basal", "turns", "in", "the", "PTS", "and", "TTS", "group", "mice", "for", "this", "study", "." ],
+    "entities_indices" : [ [ 17, 18 ], [ 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "After", "washing", "with", "Tris", "buffered", "saline", "with", "Tween", ",", "protein", "bands", "were", "observed", "using", "chemiluminescent", "reagents", "(", "Applygen", "Technologies", "Inc.", "China", ")", "." ],
+    "entities_indices" : [ [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "2", "mu", "l", "volume", "of", "the", "virus", "was", "injected", "at", "a", "rate", "of", "0.5", "mu", "l/min", "." ],
+    "entities_indices" : [ [ 15, 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "Thus", ",", "ameliorating", "noise", "induced", "mitochondrial", "redox", "imbalance", "by", "intervening", "in", "the", "SIRT3", "and", "SOD2", "signaling", "pathway", "may", "be", "a", "new", "therapeutic", "target", "for", "hair", "cell", "injury", "." ],
+    "entities_indices" : [ [ 12, 13 ], [ 14, 15 ], [ 15, 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "Noise", "Exposure", "." ],
+    "entities_indices" : [ [ 0, 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "Quantitative", "values", "are", "expressed", "as", "mean", "+/-", "standard", "error", "of", "the", "mean", "(", "SEM", ")", "and", "statistically", "analyzed", "using", "GraphPad", "Prism", "software", "version", "8.0", "(", "GraphPad", "Software", "Inc", ".,", "San", "Diego", ",", "CA", ")", "." ],
+    "entities_indices" : [ [ 20, 21 ], [ 29, 30 ], [ 32, 33 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "SOD2", "inhibitor", "2-ME", "was", "administered", "starting", "1", "week", "before", "each", "NE", "(", "Figure", "6A", ")", "." ],
+    "entities_indices" : [ [ 1, 2, 3 ], [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "Cells", "were", "incubated", "for", "1", "h", "at", "37", "degrees", "C", "using", "Cu/Zn-SOD", "inhibitor", "A", "and", "for", "15", "min", "at", "37", "degrees", "C", "using", "Cu/Zn-SOD", "inhibitor", "B.", "Consequently", ",", "samples", "were", "added", "to", "a", "96-well", "plate", "and", "mixed", "with", "the", "assay", "solution", "." ],
+    "entities_indices" : [ [ 11, 12, 13, 14 ], [ 23, 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "Mitochondria", "are", "the", "main", "sites", "of", "intracellular", "ROS", "production", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "number", "of", "unpaired", "synapses", "in", "the", "PTS", "+3-TYP", "and", "PTS", "groups", "was", "not", "significantly", "different", "in", "the", "apical", "and", "middle", "turns", ",", "whereas", "a", "significantly", "higher", "value", "was", "observed", "in", "the", "basal", "rotation", "(", "Figures", "4E", "-", "G", ")", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "4-Hydroxynonenal", "(", "4HNE", ")", "was", "used", "to", "detect", "cellular", "oxidative", "stress", "levels", ",", "and", "we", "observed", "that", "4HNE", "expression", "in", "IHCs", "was", "significantly", "higher", "in", "the", "PTS", "+3-TYP", "group", "than", "in", "the", "PTS", "group", "(", "Figures", "5C", ",", "D", ")", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 26, 27 ], [ 32, 33 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "study", ",", "we", "used", "3-TYP", "to", "inhibit", "SIRT3", "and", "found", "that", "this", "inhibition", "aggravated", "oxidative", "damage", "in", "the", "hair", "cells", "of", "mice", "with", "NIHL", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 9, 10 ], [ 23, 24 ], [ 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "After", "blocking", "in", "5", "%", "skim", "milk", "at", "room", "temperature", "for", "1", "h", ",", "samples", "were", "incubated", "with", "anti-SOD2", "(", "Cell", "Signaling", "Technology", ")", ",", "anti-ac-SOD2", "(", "Abcam", ")", ",", "anti-C-cas3", "(", "Cell", "Signaling", "Technology", ")", ",", "anti-Cyt", "c", "(", "Abcam", ")", ",", "anti-COX", "IV", "(", "Abcam", ")", ",", "and", "beta-actin", "(", "Cell", "Signaling", "Technology", ")", "primary", "antibodies", "overnight", "at", "4", "degrees", "C", ",", "followed", "by", "incubation", "with", "the", "appropriate", "secondary", "antibody", "at", "room", "temperature", "for", "1", "h." ],
+    "entities_indices" : [ [ 43, 44, 45 ], [ 50, 51 ] ]
+  }, {
+    "sentence_tokens" : [ "SIRT3", "is", "a", "major", "regulator", "of", "the", "mitochondrial", "oxidative", "stress", "response", "(", "Giblin", "et", "al", ".,", "2014", ")", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 9, 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "control", "group", "mice", "were", "injected", "with", "equal", "amounts", "of", "either", "saline", "or", "corn", "oil", "." ],
+    "entities_indices" : [ [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "agreement", "with", "previous", "studies", ",", "we", "found", "that", "hair", "cell", "damage", "was", "more", "significant", "in", "the", "PTS", "group", "than", "in", "the", "TTS", "group", ",", "both", "at", "the", "audiological", "and", "morphological", "levels", ";", "therefore", ",", "we", "chose", "the", "PTS", "group", "for", "further", "study", "(", "Figure", "2", ")", "." ],
+    "entities_indices" : [ [ 17, 18 ], [ 38, 39 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "examined", "changes", "in", "the", "number", "of", "hair", "cells", "and", "synapses", "after", "NE", "." ],
+    "entities_indices" : [ [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "WB", "analysis", "on", "mouse", "cochleae", "revealed", "that", "Cytochrome", "c", "expression", "was", "decreased", "in", "the", "mitochondria", "and", "increased", "in", "the", "cytoplasm", "in", "the", "PTS", "group", "compared", "with", "that", "in", "the", "control", "group", "(", "Figures", "3E", ",", "F", ")", "." ],
+    "entities_indices" : [ [ 7, 8, 9 ], [ 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "study", "identified", "a", "critical", "role", "for", "the", "SIRT3", "and", "SOD2", "signaling", "pathway", "in", "hearing", "protection", "by", "maintaining", "the", "redox", "state", "of", "mitochondria", "in", "hair", "cells", "after", "NE", "(", "Figure", "7", ")", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 10, 11 ], [ 11, 12, 13 ], [ 14, 15 ], [ 27, 28 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "thresholds", "were", "significantly", "higher", "in", "the", "PTS", "+2-ME", "+", "AAV-SIRT3", "group", "than", "in", "the", "PTS", "+", "AAV-SIRT3", "group", "(", "Figure", "6D", ")", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "All", "ABR", "tests", "were", "performed", "by", "the", "same", "researchers", "." ],
+    "entities_indices" : [ [ 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "Cochlear", "samples", "were", "observed", "and", "imaged", "using", "a", "Leica", "scanning", "confocal", "microscope", "(", "Leica", "Camera", "AG", ",", "Hessen", ",", "Germany", ")", "." ],
+    "entities_indices" : [ [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "As", "the", "main", "site", "of", "cellular", "energy", "metabolism", ",", "mitochondria", "have", "various", "biological", "functions", "such", "as", "regulating", "cell", "proliferation", ",", "differentiation", ",", "apoptosis", "and", "senescence", "." ],
+    "entities_indices" : [ [ 6, 7, 8 ], [ 17, 18, 19 ], [ 20, 21 ], [ 22, 23 ], [ 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "NIHL", "is", "a", "major", "occupational", "risk", "in", "industrialized", "countries", "and", "is", "estimated", "to", "affect", "approximately", "5", "%", "of", "the", "world", "population", "(", "Basner", "et", "al", ".,", "2014", ")", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "According", "to", "the", "manufacturer", "'", "s", "instructions", ",", "NADPH", "oxidase", "activity", "was", "assayed", "using", "a", "NADP", "+/NADPH", "Assay", "Kit", "with", "WST-8", "(", "Beyotime", ",", "China", ")", "." ],
+    "entities_indices" : [ [ 8, 9, 10 ], [ 15, 16 ], [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "After", "ABR", "testing", ",", "mice", "were", "sacrificed", "under", "deep", "anesthesia", ",", "and", "the", "cochlea", "was", "removed", "and", "immersed", "in", "4", "%", "paraformaldehyde", "at", "4", "degrees", "C", "for", "overnight", "fixation", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "SOD2", "is", "post-translationally", "regulated", "in", "several", "ways", ";", "however", ",", "acetylation", "is", "the", "major", "SOD2", "active", "modification", "(", "Zou", "et", "al", ".,", "2016", ")", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "multiple", "disease", "models", ",", "SIRT3", "has", "been", "reported", "to", "play", "an", "important", "role", "in", "antioxidant", "damage", "by", "regulating", "its", "downstream", "molecule", ",", "SOD2", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "Sirtuin-3", "(", "SIRT3", ")", ",", "a", "member", "of", "the", "Sirtuin", "family", ",", "is", "a", "nicotinamide", "adenine", "dinucleotide", "(", "NAD", ")-dependent", "deacetylase", "that", "is", "localized", "in", "the", "mitochondria", "(", "Onyango", "et", "al", ".,", "2002", ")", ";", "it", "is", "the", "major", "mitochondrial", "deacetylase", "(", "Lombard", "et", "al", ".,", "2007", ")", "and", "a", "key", "factor", "regulating", "autophagy", "pathways", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 2, 3 ], [ 9, 10 ], [ 14, 15, 16, 17 ], [ 18, 19 ], [ 39, 40, 41 ], [ 53, 54 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "ABR", "test", "results", "showed", "that", "the", "hearing", "threshold", "of", "the", "PTS", "+3-TYP", "group", "was", "significantly", "higher", "than", "that", "of", "the", "PTS", "group", "(", "Figure", "4B", ")", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 7, 8 ], [ 11, 12 ], [ 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "According", "to", "the", "different", "interventions", "strategies", ",", "mice", "were", "randomly", "divided", "into", "the", "following", "groups", ":", "27", "mice", "in", "the", "control", "group", ",", "5", "in", "the", "TTS", "group", ",", "73", "in", "the", "PTS", "group", ",", "37", "in", "the", "PTS", "+3-TYP", "group", ",", "5", "in", "the", "PTS", "+", "corn", "oil", "group", ",", "5", "in", "the", "PTS", "+2-ME", "group", ",", "5", "in", "the", "PTS", "+", "saline", "group", ",", "9", "in", "the", "PTS", "+", "AAV-SIRT3", "group", ",", "5", "in", "the", "PTS", "+", "AAV-GFP", "group", ",", "and", "5", "in", "the", "PTS", "+2-ME", "+", "AAV-SIRT3", "group", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 17, 18 ], [ 32, 33 ], [ 38, 39 ], [ 45, 46 ], [ 54, 55 ], [ 61, 62 ], [ 69, 70 ], [ 77, 78 ], [ 86, 87 ] ]
+  }, {
+    "sentence_tokens" : [ "Noise", "exposure", "(", "NE", ")", "causes", "oxidative", "stress", ",", "elevates", "reactive", "oxygen", "species", "(", "ROS", ")", "levels", ",", "and", "causes", "hair", "cell", "damage", ",", "which", "further", "contributes", "to", "hearing", "loss", "(", "Delmaghani", "et", "al", ".,", "2015", ")", "." ],
+    "entities_indices" : [ [ 0, 1, 2 ], [ 3, 4 ], [ 10, 11, 12, 13 ], [ 14, 15 ], [ 28, 29, 30 ] ]
+  }, {
+    "sentence_tokens" : [ "Diet", "induced", "obese", "mice", "showed", "significant", "hearing", "loss", "due", "to", "reduced", "SOD2", "levels", ",", "resulting", "in", "elevated", "ROS", "and", "increased", "hair", "cell", "mortality", "(", "Lee", "et", "al", ".,", "2020", ")", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 6, 7, 8 ], [ 11, 12 ], [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "These", "findings", "indicate", "that", "SIRT3", "overexpression", "by", "the", "introduction", "of", "AAV-SIRT3", "into", "the", "posterior", "semicircular", "canal", "is", "feasible", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "Prior", "to", "initiating", "the", "ABR", "test", ",", "mice", "were", "anesthetized", "by", "intraperitoneal", "injection", "of", "100", "mg/kg", "ketamine", "and", "10", "mg/kg", "xylazine", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 7, 8 ], [ 16, 17 ], [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "cochlea", "was", "cut", "and", "digested", "with", "trypsin", ",", "and", "the", "cells", "were", "collected", "by", "centrifugation", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "Animals", "in", "the", "noise", "group", "were", "placed", "in", "wire", "mesh", "cages", "inside", "an", "anechoic", "chamber", "and", "exposed", "to", "100", "dB", "sound", "pressure", "level", "(", "SPL", ")", "broadband", "white", "noise", "for", "2", "h.", "Noise", "synthesis", "was", "performed", "using", "Cool", "Edit", "Pro", "software", "(", "Adobe", "Systems", ",", "San", "Jose", ",", "CA", ")", "and", "transmitted", "through", "XTi4002", ",", "CROWN", "amplifiers", "(", "Harman", ",", "Elkhart", ",", "IN", ")", "to", "two", "speakers", "(", "JBL", "KP6000", ",", "PROFESSIONAL", ",", "Harman", ")", "for", "noise", "release", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 19, 20 ], [ 24, 25 ], [ 33, 34 ], [ 45, 46 ], [ 48, 49 ], [ 53, 54 ], [ 55, 56 ], [ 58, 59 ], [ 68, 69, 70 ], [ 71, 72 ], [ 73, 74 ] ]
+  }, {
+    "sentence_tokens" : [ "To", "test", "this", "hypothesis", ",", "we", "explored", "the", "protective", "effect", "of", "SIRT3", "on", "hair", "cell", "injury", "in", "NIHL", "mice", "and", "its", "underlying", "mechanisms", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "To", "select", "a", "suitable", "model", "for", "NIHL", ",", "we", "chose", "2", "h", "of", "100", "dB", "SPL", "white", "noise", "in", "one", "and", "two", "episodes", "of", "NE", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 14, 15, 16 ], [ 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "Cochlear", "sections", "and", "spreads", "were", "incubated", "with", "5", "%", "normal", "goat", "serum", "(", "ZSGB-BIO", ",", "Beijing", ",", "China", ")", "and", "0.3", "%", "Triton", "X-100", "(", "Sigma-Aldrich", ",", "St.", "Louis", ",", "MO", ")", "in", "phosphate", "buffered", "saline", "(", "PBS", ")", "for", "2", "h", "at", "room", "temperature", "." ],
+    "entities_indices" : [ [ 22, 23, 24 ], [ 30, 31 ], [ 33, 34 ] ]
+  }, {
+    "sentence_tokens" : [ "Compared", "with", "the", "control", "group", "mice", ",", "the", "TTS", "group", "mice", "showed", "no", "significant", "loss", "of", "outer", "hair", "cells", "(", "OHCs", ")", "in", "either", "the", "apical", ",", "middle", "or", "basal", "turns", ",", "whereas", "the", "PTS", "group", "mice", "showed", "significant", "OHC", "loss", "(", "Figures", "2A", ",", "B", ")", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 10, 11 ], [ 34, 35 ], [ 36, 37 ] ]
+  }, {
+    "sentence_tokens" : [ "Using", "3-TYP", "to", "suppress", "SIRT3", ",", "we", "found", "that", "SIRT3", "inhibition", "significantly", "aggravated", "the", "damage", "to", "hair", "cells", "and", "worsened", "hearing", "loss", "in", "mice", "after", "NE", "(", "Figure", "4", ")", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 4, 5 ], [ 9, 10 ], [ 20, 21, 22 ], [ 23, 24 ], [ 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "induced", "SIRT3", "overexpression", "by", "introducing", "AAV-SIRT3", "in", "4-week-old", "mice", "undergoing", "posterior", "semicircular", "canal", "surgery", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "Acetylation", "is", "one", "of", "the", "most", "important", "post-translational", "SOD2", "modifications", ",", "leading", "to", "the", "downregulation", "of", "the", "SOD2", "function", "(", "Dikalova", "et", "al", ".,", "2017", ")", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "As", "previously", "described", ",", "the", "injection", "was", "administered", "through", "the", "semicircular", "canals", "(", "canalostomy", ")", "(", "Guo", "et", "al", ".,", "2018", ")", "." ],
+    "entities_indices" : [ [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "Noise", "Exposure", "Induces", "Oxidative", "Damage", "in", "Hair", "Cells", "." ],
+    "entities_indices" : [ [ 0, 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "primary", "antibodies", "used", "were", "anti-myosin-VIIa", "(", "1:300", ",", "Proteus", "BioSciences", "Inc.", "Ramona", ",", "CA", ")", ",", "anti-CtBP2", "(", "1:500", ",", "BD", "Biosciences", ",", "Franklin", "Lakes", ",", "NJ", ")", ",", "anti-GluR2", "(", "1:400", ",", "Millipore", ",", "Burlington", ",", "MA", ")", ",", "anti-8-hydroxy-2", "'-deoxyguanosine", "(", "8-OHdG", ",", "1:300", ",", "Abcam", ",", "Cambridge", ",", "United", "Kingdom", ")", ",", "anti-green", "fluorescent", "protein", "(", "GFP", ")", "(", "1:100", ",", "Santa", "Cruz", "Biotechnology", ",", "Dallas", ",", "TX", ")", ",", "and", "anti-4-HNE", "(", "1:500", ";", "Abcam", ")", "." ],
+    "entities_indices" : [ [ 9, 10, 11, 12, 13 ], [ 14, 15 ], [ 17, 18 ], [ 38, 39 ], [ 41, 42, 43 ], [ 44, 45 ], [ 56, 57, 58, 59 ], [ 60, 61 ], [ 65, 66 ], [ 71, 72 ] ]
+  }, {
+    "sentence_tokens" : [ "ROS", "Detection", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "inner", "ear", ",", "the", "mechanical", "vibration", "of", "a", "sound", "wave", "is", "transduced", "into", "electrical", "signals", "by", "hair", "cells", "(", "Chen", "et", "al", ".,", "2021", ")", ",", "and", "these", "electrical", "signals", "are", "transmitted", "to", "auditory", "cortex", "through", "the", "synapses", "of", "the", "SGNs", "(", "Guo", "et", "al", ".,", "2020", ")", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 44, 45 ] ]
+  }, {
+    "sentence_tokens" : [ "AAV-SIRT3", "was", "surgically", "introduced", "into", "the", "inner", "ear", "at", "4", "weeks", "in", "the", "AAV-SIRT3", "intervention", "group", "of", "mice", ",", "and", "an", "equal", "amount", "of", "empty", "virus", "was", "introduced", "into", "the", "control", "group", "mice", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 17, 18 ], [ 32, 33 ] ]
+  }, {
+    "sentence_tokens" : [ "Nicotinamide", "riboside", "(", "NR", ")", ",", "as", "a", "SIRT3", "agonist", ",", "has", "a", "protective", "effect", "on", "hair", "cells", "and", "synapses", "in", "mice", "after", "NE", "by", "reducing", "cellular", "oxidative", "damage", "(", "Han", "et", "al", ".,", "2020", ")", "." ],
+    "entities_indices" : [ [ 0, 1, 2 ], [ 3, 4 ], [ 8, 9 ], [ 21, 22 ], [ 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "Immunofluorescence", "CtBP2", "staining", "in", "the", "apical", ",", "middle", ",", "and", "basal", "turns", "revealed", "no", "significant", "difference", "in", "the", "number", "of", "synapses", "in", "the", "PTS", "+2-ME", "group", "compared", "with", "that", "in", "the", "PTS", "group", ",", "whereas", "the", "number", "of", "synapses", "in", "the", "PTS", "+", "AAV-SIRT3", "group", "was", "significantly", "elevated", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 23, 24 ], [ 31, 32 ], [ 41, 42 ] ]
+  }, {
+    "sentence_tokens" : [ "Experiments", "were", "performed", "on", "mice", "after", "abnormal", "hearing", "was", "excluded", "by", "audiometric", "testing", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "Parts", "of", "the", "cochlea", "were", "decalcified", "in", "10", "%", "ethylenediaminetetraacetic", "acid", "(", "EDTA", ")", "for", "12", "h", "and", "subsequently", "dehydrated", "in", "30", "%", "sucrose", "for", "2", "h.", "Afterward", ",", "the", "cochlea", "was", "immersed", "in", "an", "optimal", "cutting", "temperature", "compound", "." ],
+    "entities_indices" : [ [ 9, 10, 11 ], [ 12, 13 ], [ 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "SIRT3", "regulates", "mitochondrial", "energy", "metabolism", "and", "biosynthesis", ";", "therefore", ",", "abnormal", "SIRT3", "expression", "negatively", "affects", "mitochondrial", "function", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 3, 4, 5 ], [ 6, 7 ], [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "Moreover", ",", "3-TYP", "reduced", "the", "enzymatic", "activity", "and", "deacetylation", "levels", "of", "superoxide", "dismutase", "2", "(", "SOD2", ")", "." ],
+    "entities_indices" : [ [ 11, 12, 13, 14 ], [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "used", "the", "SIRT3", "inhibitor", "3-TYP", "for", "the", "intervention", ",", "which", "was", "administered", "1", "week", "before", "each", "NE", "(", "Figure", "4A", ")", "." ],
+    "entities_indices" : [ [ 3, 4, 5 ], [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "cochlea", ",", "intracellular", "ROS", "levels", "were", "significantly", "higher", "in", "the", "PTS", "+3-TYP", "group", "than", "in", "the", "PTS", "group", "(", "Figure", "5E", ")", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 12, 13 ], [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "Equal", "amounts", "of", "proteins", "were", "separated", "by", "12", "%", "sodium", "dodecyl", "sulfate", "polyacrylamide", "gel", "electrophoresis", "and", "subsequently", "electrotransferred", "to", "polyvinylidene", "fluoride", "membranes", "." ],
+    "entities_indices" : [ [ 9, 10, 11, 12 ], [ 12, 13 ], [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "Determination", "of", "NADPH", "Oxidase", "Activity", "." ],
+    "entities_indices" : [ [ 2, 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "3-TYP", "Increases", "the", "Acetylation", "Level", "of", "SOD2", "and", "Aggravates", "Oxidative", "Stress", "and", "Apoptosis", "." ],
+    "entities_indices" : [ [ 0, 1, 2 ], [ 6, 7 ], [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "threshold", "was", "defined", "as", "the", "lowest", "stimulus", "decibel", "that", "evoked", "a", "significant", "positive", "wave", "in", "the", "response", "trajectory", "." ],
+    "entities_indices" : [ [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "reduced", "level", "of", "lysine", "acetylation", "in", "SOD2", "increases", "its", "enzymatic", "activity", "(", "Candas", "and", "Li", ",", "2014", ")", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "After", "the", "cochlear", "tissue", "was", "cut", "and", "digested", "with", "trypsin", ",", "the", "cells", "were", "extracted", "by", "centrifugation", "." ],
+    "entities_indices" : [ [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "Noise", "Exposure", "Leads", "to", "Loss", "of", "Cochlear", "Outer", "Hair", "Cells", "and", "Reduced", "Inner", "Hair", "Cell", "Synapses", "." ],
+    "entities_indices" : [ [ 0, 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "Immunofluorescence", "staining", "of", "frozen", "sections", "of", "mouse", "cochlea", "revealed", "that", "8-OH", "expression", "was", "elevated", "in", "the", "PTS", "group", "compared", "to", "that", "in", "the", "control", "group", "(", "Figures", "3C", ",", "D", ")", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "intracellular", "ROS", "assay", "was", "performed", "using", "the", "Reactive", "Oxygen", "Species", "Assay", "Kit", "(", "Beyotime", ",", "Shanghai", ",", "China", ")", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 8, 9, 10, 11 ], [ 12, 13 ] ]
+  } ],
+  "emptySentences" : [ {
+    "sentence_tokens" : [ "Sirtuin-3", "Protects", "Cochlear", "Hair", "Cells", "Against", "Noise", "Induced", "Damage", "via", "the", "Superoxide", "Dismutase", "2/Reactive", "Oxygen", "Species", "Signaling", "Pathway", "." ]
+  }, {
+    "sentence_tokens" : [ "Mitochondrial", "oxidative", "stress", "is", "involved", "in", "hair", "cell", "damage", "caused", "by", "noise", "induced", "hearing", "loss", "(", "NIHL", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Sirtuin-3", "(", "SIRT3", ")", "plays", "an", "important", "role", "in", "hair", "cell", "survival", "by", "regulating", "mitochondrial", "function", ";", "however", ",", "the", "role", "of", "SIRT3", "in", "NIHL", "is", "unknown", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "study", ",", "we", "used", "3-TYP", "to", "inhibit", "SIRT3", "and", "found", "that", "this", "inhibition", "aggravated", "oxidative", "damage", "in", "the", "hair", "cells", "of", "mice", "with", "NIHL", "." ]
+  }, {
+    "sentence_tokens" : [ "Moreover", ",", "3-TYP", "reduced", "the", "enzymatic", "activity", "and", "deacetylation", "levels", "of", "superoxide", "dismutase", "2", "(", "SOD2", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Subsequently", ",", "we", "administered", "adeno", "associated", "virus-SIRT3", "to", "the", "posterior", "semicircular", "canals", "and", "found", "that", "SIRT3", "overexpression", "significantly", "attenuated", "hair", "cell", "injury", "and", "that", "this", "protective", "effect", "of", "SIRT3", "could", "be", "blocked", "by", "2-methoxyestradiol", ",", "a", "SOD2", "inhibitor", "." ]
+  }, {
+    "sentence_tokens" : [ "These", "findings", "suggest", "that", "insufficient", "SIRT3", "and", "SOD2", "signaling", "leads", "to", "mitochondrial", "oxidative", "damage", "resulting", "in", "hair", "cell", "injury", "in", "NIHL", "." ]
+  }, {
+    "sentence_tokens" : [ "Thus", ",", "ameliorating", "noise", "induced", "mitochondrial", "redox", "imbalance", "by", "intervening", "in", "the", "SIRT3", "and", "SOD2", "signaling", "pathway", "may", "be", "a", "new", "therapeutic", "target", "for", "hair", "cell", "injury", "." ]
+  }, {
+    "sentence_tokens" : [ "Introduction", "." ]
+  }, {
+    "sentence_tokens" : [ "Noise", "is", "a", "worldwide", "public", "health", "problem", "and", "an", "important", "risk", "factor", "for", "sensorineural", "hearing", "loss", "(", "SNHL", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Oxidative", "stress", "induced", "hair", "cell", "damage", "plays", "an", "important", "role", "in", "its", "development", "(", "Zhang", "et", "al", ".,", "2019", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Noise", "exposure", "(", "NE", ")", "causes", "oxidative", "stress", ",", "elevates", "reactive", "oxygen", "species", "(", "ROS", ")", "levels", ",", "and", "causes", "hair", "cell", "damage", ",", "which", "further", "contributes", "to", "hearing", "loss", "(", "Delmaghani", "et", "al", ".,", "2015", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Although", "several", "studies", "in", "the", "past", "decades", "have", "focused", "on", "countering", "noise", "induced", "hair", "cell", "damage", "by", "interfering", "with", "ROS", ",", "there", "are", "no", "clinically", "relevant", "intervention", "targets", "to", "date", "." ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "key", "targets", "in", "the", "pathogenesis", "of", "noise", "induced", "hearing", "loss", "(", "NIHL", ")", "should", "be", "explored.Mitochondrial", "abnormalities", "caused", "by", "ROS", "accumulation", "play", "an", "important", "role", "in", "the", "pathogenesis", "of", "NIHL", "(", "Ding", "et", "al", ".,", "2020", ";", "Zhong", "et", "al", ".,", "2020", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "ROS", "are", "mainly", "produced", "in", "the", "mitochondrial", "oxidative", "respiratory", "chain", ";", "therefore", ",", "mitochondrial", "dysfunction", "can", "lead", "to", "cellular", "ROS", "accumulation", "(", "Gao", "et", "al", ".,", "2019", ";", "Zhao", "et", "al", ".,", "2019", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Thus", ",", "mitochondrial", "dysfunction", "supposedly", "causes", "most", "oxidative", "damage", "(", "Tian", "et", "al", ".,", "2013", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Sirtuin-3", "(", "SIRT3", ")", ",", "a", "member", "of", "the", "Sirtuin", "family", ",", "is", "a", "nicotinamide", "adenine", "dinucleotide", "(", "NAD", ")-dependent", "deacetylase", "that", "is", "localized", "in", "the", "mitochondria", "(", "Onyango", "et", "al", ".,", "2002", ")", ";", "it", "is", "the", "major", "mitochondrial", "deacetylase", "(", "Lombard", "et", "al", ".,", "2007", ")", "and", "a", "key", "factor", "regulating", "autophagy", "pathways", "." ]
+  }, {
+    "sentence_tokens" : [ "As", "the", "main", "site", "of", "cellular", "energy", "metabolism", ",", "mitochondria", "have", "various", "biological", "functions", "such", "as", "regulating", "cell", "proliferation", ",", "differentiation", ",", "apoptosis", "and", "senescence", "." ]
+  }, {
+    "sentence_tokens" : [ "SIRT3", "regulates", "mitochondrial", "energy", "metabolism", "and", "biosynthesis", ";", "therefore", ",", "abnormal", "SIRT3", "expression", "negatively", "affects", "mitochondrial", "function", "." ]
+  }, {
+    "sentence_tokens" : [ "Increased", "SIRT3", "expression", "protects", "cells", "from", "oxidative", "stress", "induced", "cell", "death", "and", "inhibits", "apoptosis", "in", "age", "related", "SGNs", "and", "hair", "cells", "(", "Someya", "et", "al", ".,", "2010", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Superoxide", "dismutase", "2", "(", "SOD2", ")", "is", "a", "key", "antioxidant", "enzyme", "in", "mitochondria", "that", "reduces", "ROS", "production", "and", "protects", "cells", "from", "oxidative", "stress", "(", "Sarsour", "et", "al", ".,", "2014", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Acetylation", "is", "one", "of", "the", "most", "important", "post-translational", "SOD2", "modifications", ",", "leading", "to", "the", "downregulation", "of", "the", "SOD2", "function", "(", "Dikalova", "et", "al", ".,", "2017", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "SIRT3", "works", "by", "deacetylating", "proteins", ",", "particularly", "lysine", "of", "SOD2", ",", "to", "regulate", "its", "activity", "and", "thus", "maintain", "mitochondrial", "function", "(", "Yang", "et", "al", ".,", "2016", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Given", "the", "important", "role", "of", "mitochondrial", "function", "in", "the", "development", "of", "NIHL", ",", "we", "hypothesized", "that", "changes", "in", "SOD2", "deacetylation", "levels", "due", "to", "SIRT3", "activity", "are", "involved", "in", "the", "pathogenesis", "of", "NIHL", "." ]
+  }, {
+    "sentence_tokens" : [ "To", "test", "this", "hypothesis", ",", "we", "explored", "the", "protective", "effect", "of", "SIRT3", "on", "hair", "cell", "injury", "in", "NIHL", "mice", "and", "its", "underlying", "mechanisms", "." ]
+  }, {
+    "sentence_tokens" : [ "Materials", "and", "Methods", "." ]
+  }, {
+    "sentence_tokens" : [ "Animals", "and", "Treatments", "." ]
+  }, {
+    "sentence_tokens" : [ "C57BL/6", "J", "male", "mice", "were", "obtained", "from", "the", "Experimental", "Animal", "Center", "of", "Capital", "Medical", "University", "(", "Beijing", ",", "China", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Experiments", "were", "performed", "on", "mice", "after", "abnormal", "hearing", "was", "excluded", "by", "audiometric", "testing", "." ]
+  }, {
+    "sentence_tokens" : [ "According", "to", "the", "different", "interventions", "strategies", ",", "mice", "were", "randomly", "divided", "into", "the", "following", "groups", ":", "27", "mice", "in", "the", "control", "group", ",", "5", "in", "the", "TTS", "group", ",", "73", "in", "the", "PTS", "group", ",", "37", "in", "the", "PTS", "+3-TYP", "group", ",", "5", "in", "the", "PTS", "+", "corn", "oil", "group", ",", "5", "in", "the", "PTS", "+2-ME", "group", ",", "5", "in", "the", "PTS", "+", "saline", "group", ",", "9", "in", "the", "PTS", "+", "AAV-SIRT3", "group", ",", "5", "in", "the", "PTS", "+", "AAV-GFP", "group", ",", "and", "5", "in", "the", "PTS", "+2-ME", "+", "AAV-SIRT3", "group", "." ]
+  }, {
+    "sentence_tokens" : [ "Mice", "in", "the", "PTS", "group", "received", "NE", "at", "6", "and", "8", "weeks", "old", "of", "mice", ",", "whereas", "mice", "in", "the", "TTS", "group", "received", "NE", "only", "at", "8", "weeks", "old", ",", "and", "both", "groups", "underwent", "auditory", "brainstem", "response", "(", "ABR", ")", "testing", "at", "10", "weeks", "(", "Figure", "1A", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "the", "intervention", "group", "mice", "received", "3-TYP", ",", "2-ME", "or", "AAV-SIRT3", "in", "addition", "to", "NE", "." ]
+  }, {
+    "sentence_tokens" : [ "Both", "3-TYP", "(", "MCE", "Chemicals", "&", "Equipment", "Co", ".,", "Malta", ",", "NY", ")", "and", "2-methoxyestradiol", "(", "2-ME", ";", "Selleck", "Chemicals", ",", "Houston", ",", "TX", ")", "were", "administered", "by", "intraperitoneal", "injection", "starting", "1", "week", "prior", "to", "NE", "for", "7", "days", "3-TYP", "was", "administered", "at", "50", "mg/kg/day", ",", "and", "2-ME", "was", "administered", "at", "16", "mg/kg/day", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "control", "group", "mice", "were", "injected", "with", "equal", "amounts", "of", "either", "saline", "or", "corn", "oil", "." ]
+  }, {
+    "sentence_tokens" : [ "AAV-SIRT3", "was", "surgically", "introduced", "into", "the", "inner", "ear", "at", "4", "weeks", "in", "the", "AAV-SIRT3", "intervention", "group", "of", "mice", ",", "and", "an", "equal", "amount", "of", "empty", "virus", "was", "introduced", "into", "the", "control", "group", "mice", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "animals", "were", "cared", "for", "and", "used", "in", "accordance", "with", "the", "Guideline", "for", "the", "Care", "and", "Use", "of", "Laboratory", "Animals", "of", "the", "National", "Institutes", "of", "Health", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "experimental", "protocols", "were", "approved", "by", "the", "Committee", "on", "the", "Ethics", "of", "Animal", "Experiments", "of", "Capital", "Medical", "University", "." ]
+  }, {
+    "sentence_tokens" : [ "Noise", "Exposure", "." ]
+  }, {
+    "sentence_tokens" : [ "Animals", "in", "the", "noise", "group", "were", "placed", "in", "wire", "mesh", "cages", "inside", "an", "anechoic", "chamber", "and", "exposed", "to", "100", "dB", "sound", "pressure", "level", "(", "SPL", ")", "broadband", "white", "noise", "for", "2", "h.", "Noise", "synthesis", "was", "performed", "using", "Cool", "Edit", "Pro", "software", "(", "Adobe", "Systems", ",", "San", "Jose", ",", "CA", ")", "and", "transmitted", "through", "XTi4002", ",", "CROWN", "amplifiers", "(", "Harman", ",", "Elkhart", ",", "IN", ")", "to", "two", "speakers", "(", "JBL", "KP6000", ",", "PROFESSIONAL", ",", "Harman", ")", "for", "noise", "release", "." ]
+  }, {
+    "sentence_tokens" : [ "ABR", "Testing", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "used", "the", "TDT", "system", "3", "evoked", "potential", "workstation", "(", "Tucker-Davis", "Technologies", ",", "Alachua", ",", "FL", ",", "United", "States", ")", "to", "record", "ABR", "." ]
+  }, {
+    "sentence_tokens" : [ "Prior", "to", "initiating", "the", "ABR", "test", ",", "mice", "were", "anesthetized", "by", "intraperitoneal", "injection", "of", "100", "mg/kg", "ketamine", "and", "10", "mg/kg", "xylazine", "." ]
+  }, {
+    "sentence_tokens" : [ "After", "anesthesia", ",", "the", "recording", "electrode", "was", "inserted", "in", "the", "subcutaneous", "area", "at", "the", "midpoint", "of", "the", "line", "connecting", "the", "anterior", "margins", "of", "the", "auricles", "on", "both", "sides", "of", "the", "mouse", ",", "the", "reference", "electrode", "was", "inserted", "into", "the", "subcutaneous", "area", "behind", "the", "tested", "ear", ",", "and", "the", "ground", "electrode", "was", "inserted", "into", "the", "subcutaneous", "area", "behind", "the", "contralateral", "ear", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "tests", "were", "performed", "using", "click", "and", "tone", "bursts", "at", "frequencies", "of", "4", ",", "8,", "16", ",", "and", "32", "kHz", "with", "the", "SigGenRZ", "software", "(", "Tucker-Davis", "Technologies", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Sound", "intensity", "was", "attenuated", "from", "90", "to", "0", "dB", "in", "5", "dB", "intervals", ",", "and", "the", "responses", "were", "analyzed", "using", "BioSigRZ", "software", "(", "Tucker-Davis", "Technologies", ")", ",", "digitized", ",", "and", "averaged", "for", "each", "frequency-level", "combination", "(", "1,024", "samples", "and", "level", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "threshold", "was", "defined", "as", "the", "lowest", "stimulus", "decibel", "that", "evoked", "a", "significant", "positive", "wave", "in", "the", "response", "trajectory", "." ]
+  }, {
+    "sentence_tokens" : [ "All", "ABR", "tests", "were", "performed", "by", "the", "same", "researchers", "." ]
+  }, {
+    "sentence_tokens" : [ "Tissue", "Preparation", "." ]
+  }, {
+    "sentence_tokens" : [ "After", "ABR", "testing", ",", "mice", "were", "sacrificed", "under", "deep", "anesthesia", ",", "and", "the", "cochlea", "was", "removed", "and", "immersed", "in", "4", "%", "paraformaldehyde", "at", "4", "degrees", "C", "for", "overnight", "fixation", "." ]
+  }, {
+    "sentence_tokens" : [ "Parts", "of", "the", "cochlea", "were", "decalcified", "in", "10", "%", "ethylenediaminetetraacetic", "acid", "(", "EDTA", ")", "for", "12", "h", "and", "subsequently", "dehydrated", "in", "30", "%", "sucrose", "for", "2", "h.", "Afterward", ",", "the", "cochlea", "was", "immersed", "in", "an", "optimal", "cutting", "temperature", "compound", "." ]
+  }, {
+    "sentence_tokens" : [ "Frozen", "sections", "of", "10", "mu", "m", "thickness", "were", "stored", "at", "-", "20", "degrees", "C", "for", "immunohistochemistry", "." ]
+  }, {
+    "sentence_tokens" : [ "Other", "cochleae", "were", "decalcified", "using", "10", "%", "EDTA", "for", "2", "h", ";", "structures", "such", "as", "vascular", "striae", ",", "spiral", "ligaments", "and", "capping", "membranes", "were", "carefully", "excised", "under", "a", "microscope", ",", "and", "the", "remaining", "basilar", "membranes", "were", "divided", "into", "the", "apical", ",", "middle", ",", "and", "basal", "turns", "for", "immunofluorescence", "staining", "." ]
+  }, {
+    "sentence_tokens" : [ "Immunostaining", "." ]
+  }, {
+    "sentence_tokens" : [ "Cochlear", "sections", "and", "spreads", "were", "incubated", "with", "5", "%", "normal", "goat", "serum", "(", "ZSGB-BIO", ",", "Beijing", ",", "China", ")", "and", "0.3", "%", "Triton", "X-100", "(", "Sigma-Aldrich", ",", "St.", "Louis", ",", "MO", ")", "in", "phosphate", "buffered", "saline", "(", "PBS", ")", "for", "2", "h", "at", "room", "temperature", "." ]
+  }, {
+    "sentence_tokens" : [ "After", "washing", "three", "times", "with", "PBS", ",", "the", "samples", "were", "incubated", "with", "primary", "antibody", "solution", "at", "4", "degrees", "C", "overnight", "." ]
+  }, {
+    "sentence_tokens" : [ "After", "multiple", "washes", ",", "the", "samples", "were", "incubated", "with", "secondary", "antibodies", "at", "a", "ratio", "of", "1:300", "for", "2", "h", "at", "room", "temperature", "and", "protected", "from", "light", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "primary", "antibodies", "used", "were", "anti-myosin-VIIa", "(", "1:300", ",", "Proteus", "BioSciences", "Inc.", "Ramona", ",", "CA", ")", ",", "anti-CtBP2", "(", "1:500", ",", "BD", "Biosciences", ",", "Franklin", "Lakes", ",", "NJ", ")", ",", "anti-GluR2", "(", "1:400", ",", "Millipore", ",", "Burlington", ",", "MA", ")", ",", "anti-8-hydroxy-2", "'-deoxyguanosine", "(", "8-OHdG", ",", "1:300", ",", "Abcam", ",", "Cambridge", ",", "United", "Kingdom", ")", ",", "anti-green", "fluorescent", "protein", "(", "GFP", ")", "(", "1:100", ",", "Santa", "Cruz", "Biotechnology", ",", "Dallas", ",", "TX", ")", ",", "and", "anti-4-HNE", "(", "1:500", ";", "Abcam", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "secondary", "antibodies", "used", "were", "goat", "anti-mouse", "IgG1", "Alexa", "Fluor", "568", ",", "goat", "anti-mouse", "IgG2a", "Alexa", "Fluor", "488", ",", "and", "goat", "anti-rabbit", "IgG", "(", "H", "+", "L", ")", "Alexa", "Fluor", "647", "(", "1:300", ",", "Invitrogen", "and", "Molecular", "Probes", ",", "Eugene", ",", "OR", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "4", ",", "6-diamidino-2-phe-nylindole", "(", "DAPI", ")", "was", "used", "for", "the", "final", "addition", "of", "coverslips", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "expression", "of", "8-OHdG", "and", "4HNE", "was", "analyzed", "using", "Image-Pro", "Plus", "6.0", "software", "(", "Media", "Cybernetics", ",", "Inc.", "United", "States", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Hair", "Cells", "and", "Synapses", "Counting", "." ]
+  }, {
+    "sentence_tokens" : [ "Cochlear", "samples", "were", "observed", "and", "imaged", "using", "a", "Leica", "scanning", "confocal", "microscope", "(", "Leica", "Camera", "AG", ",", "Hessen", ",", "Germany", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "basilar", "membrane", "was", "divided", "into", "apical", ",", "middle", ",", "and", "basal", "turns", "to", "count", "the", "hair", "cells", "separately", "." ]
+  }, {
+    "sentence_tokens" : [ "Lost", "hair", "cells", "were", "examined", "under", "a", "x", "63", "oil", "immersion", "objective", "lens", "and", "their", "numbers", "and", "proportions", "were", "statistically", "analyzed", "." ]
+  }, {
+    "sentence_tokens" : [ "Ten", "cochlear", "samples", "from", "each", "group", "were", "used", "for", "hair", "cell", "counts", "." ]
+  }, {
+    "sentence_tokens" : [ "Scans", "were", "taken", "at", "0.35", "mu", "m/layer", "intervals", "from", "the", "top", "to", "the", "bottom", "of", "the", "inner", "hair", "cell", "(", "IHC", ")", "and", "subsequently", "superimposed", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "each", "region", ",", "the", "total", "number", "of", "synapses", "was", "evaluated", "for", "a", "total", "of", "approximately", "10", "IHCs", ",", "and", "the", "average", "was", "subsequently", "calculated", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "number", "of", "paired", "and", "unpaired", "synapses", "at", "the", "apical", ",", "middle", ",", "and", "basal", "turns", "were", "counted", "." ]
+  }, {
+    "sentence_tokens" : [ "Viral", "Constructs", "and", "Posterior", "Semicircular", "Canal", "Transduction", "." ]
+  }, {
+    "sentence_tokens" : [ "Purified", "adeno", "associated", "virus", "(", "AAV", ")", "eight", "vectors", "with", "SIRT3", "and", "the", "GFP", "gene", "(", "AAV8-SIRT3-GFP", ")", "and", "AAV8-GFP", "vectors", "were", "obtained", "from", "Vigenebio", "Biosciences", "Co.", "(", "Jinan", ",", "China", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "expression", "of", "carrier", "genes", "was", "driven", "by", "the", "cytomegalovirus", "promoter", "." ]
+  }, {
+    "sentence_tokens" : [ "Viral", "particles", "were", "purified", "using", "ion-exchange", "column", "chromatography", ";", "physical", "titers", "were", "1.81", "x", "10", "vg/ml", "(", "AAV8-SIRT3-GFP", ")", "and", "1.19", "x", "10", "vg/mL", "(", "AAV8-GFP", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "vectors", "were", "stored", "at", "approximately", "-", "80", "degrees", "C." ]
+  }, {
+    "sentence_tokens" : [ "As", "previously", "described", ",", "the", "injection", "was", "administered", "through", "the", "semicircular", "canals", "(", "canalostomy", ")", "(", "Guo", "et", "al", ".,", "2018", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "2", "mu", "l", "volume", "of", "the", "virus", "was", "injected", "at", "a", "rate", "of", "0.5", "mu", "l/min", "." ]
+  }, {
+    "sentence_tokens" : [ "Western", "Blotting", "(", "WB", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Cochlear", "proteins", "were", "extracted", "and", "protein", "concentrations", "were", "measured", "using", "a", "BCA", "Protein", "Quantification", "Kit", "(", "Beyotime", ",", "China", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Equal", "amounts", "of", "proteins", "were", "separated", "by", "12", "%", "sodium", "dodecyl", "sulfate", "polyacrylamide", "gel", "electrophoresis", "and", "subsequently", "electrotransferred", "to", "polyvinylidene", "fluoride", "membranes", "." ]
+  }, {
+    "sentence_tokens" : [ "After", "blocking", "in", "5", "%", "skim", "milk", "at", "room", "temperature", "for", "1", "h", ",", "samples", "were", "incubated", "with", "anti-SOD2", "(", "Cell", "Signaling", "Technology", ")", ",", "anti-ac-SOD2", "(", "Abcam", ")", ",", "anti-C-cas3", "(", "Cell", "Signaling", "Technology", ")", ",", "anti-Cyt", "c", "(", "Abcam", ")", ",", "anti-COX", "IV", "(", "Abcam", ")", ",", "and", "beta-actin", "(", "Cell", "Signaling", "Technology", ")", "primary", "antibodies", "overnight", "at", "4", "degrees", "C", ",", "followed", "by", "incubation", "with", "the", "appropriate", "secondary", "antibody", "at", "room", "temperature", "for", "1", "h." ]
+  }, {
+    "sentence_tokens" : [ "After", "washing", "with", "Tris", "buffered", "saline", "with", "Tween", ",", "protein", "bands", "were", "observed", "using", "chemiluminescent", "reagents", "(", "Applygen", "Technologies", "Inc.", "China", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "ROS", "Detection", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "intracellular", "ROS", "assay", "was", "performed", "using", "the", "Reactive", "Oxygen", "Species", "Assay", "Kit", "(", "Beyotime", ",", "Shanghai", ",", "China", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "After", "collecting", "the", "cochlear", "cells", ",", "they", "were", "resuspended", "in", "100", "mu", "L", "of", "diluted", "dichloro-dihydro-fluorescein", "diacetate", "and", "incubated", "for", "20", "min", "at", "37", "degrees", "C", "in", "a", "cell", "culture", "incubator", "." ]
+  }, {
+    "sentence_tokens" : [ "Afterward", ",", "the", "cells", "were", "washed", "three", "times", "with", "a", "serum-free", "cell", "culture", "medium", ",", "and", "chemiluminescence", "was", "measured", "using", "an", "EnSpire", "enzyme", "marker", "(", "PerkinElmer", ",", "Waltham", ",", "MA", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "mitochondrial", "membrane", "potential", "assay", "kit", "with", "JC-1", "(", "Beyotime", ",", "China", ")", "was", "used", "to", "analyze", "mitochondrial", "ROS", "production", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "cochlea", "was", "cut", "and", "digested", "with", "trypsin", ",", "and", "the", "cells", "were", "collected", "by", "centrifugation", "." ]
+  }, {
+    "sentence_tokens" : [ "Cell", "pellets", "were", "then", "resuspended", "in", "a", "cell", "culture", "medium", "containing", "JC-1", "staining", "working", "solution", "and", "incubated", "at", "37", "degrees", "C", "for", "20", "min", "in", "the", "dark", ",", "washed", "with", "cold", "JC-1", "staining", "buffer", "and", "analyzed", "by", "flow", "cytometry", "(", "FACS", "Aria", "IIu", ",", "BD", "Biosciences", ")", "within", "1", "h.", "Measurement", "of", "SOD2", "Activity", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "SOD2", "activity", "assay", "was", "performed", "using", "the", "Cu/Zn-SOD", "and", "Mn-SOD", "Assay", "Kit", "with", "WST-8", "(", "Beyotime", ",", "China", ")", "according", "to", "the", "manufacturer", "'", "s", "instructions", "." ]
+  }, {
+    "sentence_tokens" : [ "After", "the", "cochlear", "tissue", "was", "cut", "and", "digested", "with", "trypsin", ",", "the", "cells", "were", "extracted", "by", "centrifugation", "." ]
+  }, {
+    "sentence_tokens" : [ "Cells", "were", "incubated", "for", "1", "h", "at", "37", "degrees", "C", "using", "Cu/Zn-SOD", "inhibitor", "A", "and", "for", "15", "min", "at", "37", "degrees", "C", "using", "Cu/Zn-SOD", "inhibitor", "B.", "Consequently", ",", "samples", "were", "added", "to", "a", "96-well", "plate", "and", "mixed", "with", "the", "assay", "solution", "." ]
+  }, {
+    "sentence_tokens" : [ "Chemiluminescence", "was", "measured", "using", "an", "EnSpire", "enzyme", "marker", "(", "PerkinElmer", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "SOD2", "viability", "units", "were", "calculated", "using", "a", "standard", "curve", "." ]
+  }, {
+    "sentence_tokens" : [ "Determination", "of", "NADPH", "Oxidase", "Activity", "." ]
+  }, {
+    "sentence_tokens" : [ "According", "to", "the", "manufacturer", "'", "s", "instructions", ",", "NADPH", "oxidase", "activity", "was", "assayed", "using", "a", "NADP", "+/NADPH", "Assay", "Kit", "with", "WST-8", "(", "Beyotime", ",", "China", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Bilateral", "cochleae", "were", "dissected", "from", "eight", "mice", "(", "four", "per", "group", ")", "and", "homogenized", "in", "NADP", "+/NADPH", "extracts", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "samples", "were", "centrifuged", "at", "12,000", "g", "for", "10", "min", "at", "4", "degrees", "C", ",", "and", "the", "supernatant", "was", "subsequently", "collected", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "testing", ",", "200", "mu", "l", "of", "the", "sample", "was", "aspirated", "and", "placed", "in", "a", "water", "bath", "at", "60", "degrees", "C", "for", "30", "min", "." ]
+  }, {
+    "sentence_tokens" : [ "Afterward", ",", "they", "were", "centrifuged", "at", "10,000", "g", "for", "5", "min", "at", "4", "degrees", "C", ",", "the", "supernatant", "was", "collected", "and", "mixed", "with", "G6PDH", "working", "solution", "and", "color", "development", "solution", ",", "and", "incubated", "for", "20", "min", "at", "37", "degrees", "C", "protected", "from", "the", "light", "." ]
+  }, {
+    "sentence_tokens" : [ "Sample", "chemiluminescence", "was", "measured", "using", "an", "EnSpire", "enzyme", "marker", "(", "PerkinElmer", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "NADPH", "oxidase", "activity", "was", "calculated", "from", "the", "standard", "curve", "." ]
+  }, {
+    "sentence_tokens" : [ "Statistical", "Analysis", "." ]
+  }, {
+    "sentence_tokens" : [ "Quantitative", "values", "are", "expressed", "as", "mean", "+/-", "standard", "error", "of", "the", "mean", "(", "SEM", ")", "and", "statistically", "analyzed", "using", "GraphPad", "Prism", "software", "version", "8.0", "(", "GraphPad", "Software", "Inc", ".,", "San", "Diego", ",", "CA", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "statistical", "methods", "selected", "were", "two-way", "analysis", "of", "variance", "or", "unpaired", "t-test", ",", "as", "appropriate", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "all", "analyses", ",", "values", "of", "p", "<", "0.05", "were", "considered", "statistically", "significant", "." ]
+  }, {
+    "sentence_tokens" : [ "Results", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "amplitude", "of", "ABR", "wave", "I", "in", "both", "the", "PTS", "and", "TTS", "groups", "was", "significantly", "different", "from", "that", "in", "the", "control", "group", "(", "Figures", "1B", ",", "E", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Noise", "Exposure", "Leads", "to", "Loss", "of", "Cochlear", "Outer", "Hair", "Cells", "and", "Reduced", "Inner", "Hair", "Cell", "Synapses", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "examined", "changes", "in", "the", "number", "of", "hair", "cells", "and", "synapses", "after", "NE", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "divided", "the", "cochlear", "Basilar", "membrane", "into", "the", "apical", ",", "middle", ",", "and", "basal", "turns", "in", "the", "PTS", "and", "TTS", "group", "mice", "for", "this", "study", "." ]
+  }, {
+    "sentence_tokens" : [ "Compared", "with", "the", "control", "group", "mice", ",", "the", "TTS", "group", "mice", "showed", "no", "significant", "loss", "of", "outer", "hair", "cells", "(", "OHCs", ")", "in", "either", "the", "apical", ",", "middle", "or", "basal", "turns", ",", "whereas", "the", "PTS", "group", "mice", "showed", "significant", "OHC", "loss", "(", "Figures", "2A", ",", "B", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "analyzed", "the", "synapses", "of", "the", "IHCs", "in", "two", "dimensions", ":", "paired", "and", "orphan", "synapses", "." ]
+  }, {
+    "sentence_tokens" : [ "Compared", "with", "the", "control", "group", "mice", ",", "both", "the", "PTS", "and", "TTS", "group", "mice", "had", "decreased", "number", "of", "paired", "synapses", ",", "with", "the", "PTS", "group", "mice", "showing", "a", "more", "significant", "decrease", "." ]
+  }, {
+    "sentence_tokens" : [ "Both", "the", "PTS", "and", "TTS", "groups", "showed", "an", "increased", "number", "of", "unpaired", "synapses", "compared", "to", "the", "control", "group", ",", "with", "a", "greater", "increase", "observed", "in", "the", "PTS", "group", "(", "Figures", "2C", "-", "E", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Regarding", "both", "audiology", "and", "morphology", ",", "the", "damage", "in", "the", "PTS", "group", "was", "more", "significant", "than", "that", "in", "the", "TTS", "group", ";", "therefore", ",", "we", "chose", "the", "PTS", "group", "to", "investigate", "the", "mechanism", "of", "SIRT3", "in", "NIHL", "." ]
+  }, {
+    "sentence_tokens" : [ "Noise", "Exposure", "Induces", "Oxidative", "Damage", "in", "Hair", "Cells", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "analyzed", "the", "mitochondrial", "membrane", "potential", "in", "the", "inner", "ear", "cells", "of", "the", "PTS", "and", "control", "group", "mice", "." ]
+  }, {
+    "sentence_tokens" : [ "Immunofluorescence", "staining", "of", "frozen", "sections", "of", "mouse", "cochlea", "revealed", "that", "8-OH", "expression", "was", "elevated", "in", "the", "PTS", "group", "compared", "to", "that", "in", "the", "control", "group", "(", "Figures", "3C", ",", "D", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "WB", "analysis", "on", "mouse", "cochleae", "revealed", "that", "Cytochrome", "c", "expression", "was", "decreased", "in", "the", "mitochondria", "and", "increased", "in", "the", "cytoplasm", "in", "the", "PTS", "group", "compared", "with", "that", "in", "the", "control", "group", "(", "Figures", "3E", ",", "F", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "level", "of", "NADPH", "oxidase", "activity", "in", "the", "PTS", "group", "was", "significantly", "higher", "than", "that", "in", "the", "control", "group", "(", "Figure", "3G", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "3-TYP", "Exacerbates", "Noise", "Induced", "Hair", "Cell", "Damage", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "used", "the", "SIRT3", "inhibitor", "3-TYP", "for", "the", "intervention", ",", "which", "was", "administered", "1", "week", "before", "each", "NE", "(", "Figure", "4A", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "ABR", "test", "results", "showed", "that", "the", "hearing", "threshold", "of", "the", "PTS", "+3-TYP", "group", "was", "significantly", "higher", "than", "that", "of", "the", "PTS", "group", "(", "Figure", "4B", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "OHC", "survival", "rate", "was", "significantly", "lower", "in", "the", "PTS", "+3-TYP", "group", "than", "in", "the", "PTS", "group", "(", "Figures", "4C", ",", "D", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "analysis", "of", "the", "number", "of", "paired", "synapses", "at", "the", "level", "of", "IHCs", "revealed", "no", "significant", "changes", "in", "the", "basolateral", "membrane", "in", "the", "PTS", "+3-TYP", "group", "compared", "with", "that", "in", "the", "PTS", "group", ",", "while", "this", "number", "was", "significantly", "reduced", "in", "the", "middle", "and", "basal", "turns", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "number", "of", "unpaired", "synapses", "in", "the", "PTS", "+3-TYP", "and", "PTS", "groups", "was", "not", "significantly", "different", "in", "the", "apical", "and", "middle", "turns", ",", "whereas", "a", "significantly", "higher", "value", "was", "observed", "in", "the", "basal", "rotation", "(", "Figures", "4E", "-", "G", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "3-TYP", "Increases", "the", "Acetylation", "Level", "of", "SOD2", "and", "Aggravates", "Oxidative", "Stress", "and", "Apoptosis", "." ]
+  }, {
+    "sentence_tokens" : [ "To", "explore", "the", "effect", "of", "3-TYP", "on", "SOD2", ",", "we", "performed", "WB", "assays", "for", "both", "Ac-SOD2", "and", "SOD2", "in", "the", "cochlea", "and", "assayed", "SOD2", "activity", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "observed", "that", "the", "acetylation", "level", "of", "SOD2", "was", "elevated", "in", "the", "PTS", "+3-TYP", "group", "compared", "to", "that", "in", "the", "PTS", "group", "(", "Figure", "5A", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "SOD2", "activity", "was", "significantly", "decreased", "in", "the", "PTS", "+3-TYP", "group", "compared", "with", "that", "in", "the", "PTS", "group", "(", "Figure", "5B", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "4-Hydroxynonenal", "(", "4HNE", ")", "was", "used", "to", "detect", "cellular", "oxidative", "stress", "levels", ",", "and", "we", "observed", "that", "4HNE", "expression", "in", "IHCs", "was", "significantly", "higher", "in", "the", "PTS", "+3-TYP", "group", "than", "in", "the", "PTS", "group", "(", "Figures", "5C", ",", "D", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "cochlea", ",", "intracellular", "ROS", "levels", "were", "significantly", "higher", "in", "the", "PTS", "+3-TYP", "group", "than", "in", "the", "PTS", "group", "(", "Figure", "5E", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Caspase", "3", "and", "Cytochrome", "c", "protein", "expression", "levels", "were", "significantly", "higher", "in", "the", "PTS", "+3-TYP", "group", "than", "in", "the", "PTS", "group", "(", "Figures", "5F", ",", "G", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "SIRT3", "Overexpression", "Protects", "Hair", "Cells", "Against", "Noise", "Exposure", "in", "a", "SOD2", "Dependent", "Manner", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "induced", "SIRT3", "overexpression", "by", "introducing", "AAV-SIRT3", "in", "4-week-old", "mice", "undergoing", "posterior", "semicircular", "canal", "surgery", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "SOD2", "inhibitor", "2-ME", "was", "administered", "starting", "1", "week", "before", "each", "NE", "(", "Figure", "6A", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Most", "IHCs", "could", "be", "transfected", "with", "AAV-SIRT3", ",", "as", "observed", "on", "confocal", "microscopy", "(", "Figure", "6B", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "WB", "results", "showed", "that", "SIRT3", "expression", "was", "significantly", "higher", "in", "the", "PTS", "+", "AAV-SIRT3", "group", "than", "in", "the", "PTS", "group", "(", "Figure", "6C", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "These", "findings", "indicate", "that", "SIRT3", "overexpression", "by", "the", "introduction", "of", "AAV-SIRT3", "into", "the", "posterior", "semicircular", "canal", "is", "feasible", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "ABR", "results", "showed", "no", "significant", "difference", "in", "hearing", "thresholds", "between", "the", "PTS", "and", "PTS", "+2-ME", "groups", ",", "and", "hearing", "thresholds", "were", "significantly", "lower", "in", "the", "PTS", "+", "AAV-SIRT3", "group", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "thresholds", "were", "significantly", "higher", "in", "the", "PTS", "+2-ME", "+", "AAV-SIRT3", "group", "than", "in", "the", "PTS", "+", "AAV-SIRT3", "group", "(", "Figure", "6D", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Immunofluorescence", "CtBP2", "staining", "in", "the", "apical", ",", "middle", ",", "and", "basal", "turns", "revealed", "no", "significant", "difference", "in", "the", "number", "of", "synapses", "in", "the", "PTS", "+2-ME", "group", "compared", "with", "that", "in", "the", "PTS", "group", ",", "whereas", "the", "number", "of", "synapses", "in", "the", "PTS", "+", "AAV-SIRT3", "group", "was", "significantly", "elevated", "." ]
+  }, {
+    "sentence_tokens" : [ "Compared", "with", "the", "PTS", "+", "AAV-SIRT3", "group", ",", "the", "number", "of", "synapses", "in", "the", "PTS", "+2-ME", "+", "AAV-SIRT3", "group", "was", "significantly", "decreased", "in", "the", "apical", ",", "middle", ",", "and", "basal", "turns", "(", "Figures", "6E", ",", "F", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "audiological", "and", "morphological", "levels", "were", "not", "significantly", "different", "between", "the", "PTS", "+", "AAV8-GFP", "and", "PTS", "group", "mice", ";", "therefore", ",", "these", "findings", "are", "not", "shown", "in", "this", "figure", "." ]
+  }, {
+    "sentence_tokens" : [ "Discussion", "." ]
+  }, {
+    "sentence_tokens" : [ "NIHL", "is", "a", "major", "occupational", "risk", "in", "industrialized", "countries", "and", "is", "estimated", "to", "affect", "approximately", "5", "%", "of", "the", "world", "population", "(", "Basner", "et", "al", ".,", "2014", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "inner", "ear", ",", "the", "mechanical", "vibration", "of", "a", "sound", "wave", "is", "transduced", "into", "electrical", "signals", "by", "hair", "cells", "(", "Chen", "et", "al", ".,", "2021", ")", ",", "and", "these", "electrical", "signals", "are", "transmitted", "to", "auditory", "cortex", "through", "the", "synapses", "of", "the", "SGNs", "(", "Guo", "et", "al", ".,", "2020", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Loss", "of", "hair", "cells", "and", "SGNs", "is", "the", "main", "cause", "of", "hearing", "loss", "(", "Zhang", "et", "al", ".,", "2021", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "It", "is", "well", "documented", "that", "oxidative", "damage", "is", "a", "major", "cause", "of", "hearing", "loss", "cochlear", "and", "hair", "cells", ",", "which", "can", "be", "easily", "damaged", "by", "various", "insults", ",", "including", "mutations", "in", "deafness", "genes", "(", "Qian", "et", "al", ".,", "2020", ")", ",", "aging", "(", "Qi", "et", "al", ".,", "2019", ")", ",", "noise", ",", "drugs", ",", "infections", "and", "injuries", "(", "Liu", "et", "al", ".,", "2019", ")", ",", "or", "lack", "of", "regenerative", "capacity", "(", "Chen", "et", "al", ".,", "2021", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Mitochondria", "are", "the", "main", "sites", "of", "intracellular", "ROS", "production", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "found", "that", "mitochondrial", "SIRT3", "plays", "an", "important", "role", "in", "NIHL", "by", "regulating", "redox", "imbalance", "through", "SOD2", "activation.In", "C57BL/6", "J", "mice", ",", "repetitive", "noise", "induced", "impairment", "of", "cochlear", "function", "and", "altered", "synaptic", "morphology", "have", "dose", "dependent", "characteristics", "(", "Qian", "et", "al", ".,", "2021", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "To", "select", "a", "suitable", "model", "for", "NIHL", ",", "we", "chose", "2", "h", "of", "100", "dB", "SPL", "white", "noise", "in", "one", "and", "two", "episodes", "of", "NE", "." ]
+  }, {
+    "sentence_tokens" : [ "Previous", "studies", "have", "shown", "that", "the", "main", "site", "of", "noise", "induced", "inner", "ear", "damage", "is", "the", "ribbon", "synapse", "(", "Feng", "et", "al", ".,", "2020", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "in", "addition", "to", "OHC", "count", ",", "we", "counted", "IHC", "ribbon", "synapses", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "agreement", "with", "previous", "studies", ",", "we", "found", "that", "hair", "cell", "damage", "was", "more", "significant", "in", "the", "PTS", "group", "than", "in", "the", "TTS", "group", ",", "both", "at", "the", "audiological", "and", "morphological", "levels", ";", "therefore", ",", "we", "chose", "the", "PTS", "group", "for", "further", "study", "(", "Figure", "2", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Oxidative", "stress", "plays", "an", "important", "role", "in", "NIHL", ",", "and", "genetic", "variants", "of", "oxidative", "stress", "affect", "the", "susceptibility", "to", "noise", "(", "White", ",", "2019", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Studies", "have", "reported", "that", "SIRT3", "can", "balance", "ROS", "levels", "by", "modifying", "post-translational", "levels", "and", "can", "activate", "long-term", "transcriptional", "programs", "to", "protect", "cells", "from", "oxidative", "damage", "(", "van", "de", "Ven", "et", "al", ".,", "2017", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "SIRT3", "resists", "the", "ototoxicity", "of", "gentamicin", "(", "Han", "et", "al", ".,", "2020", ")", ",", "and", "its", "upregulation", "protects", "mice", "against", "hearing", "loss", "caused", "by", "high-fat", "diet", "and", "aging", "(", "Miwa", ",", "2021", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "SIRT3", "is", "a", "major", "regulator", "of", "the", "mitochondrial", "oxidative", "stress", "response", "(", "Giblin", "et", "al", ".,", "2014", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Nicotinamide", "riboside", "(", "NR", ")", ",", "as", "a", "SIRT3", "agonist", ",", "has", "a", "protective", "effect", "on", "hair", "cells", "and", "synapses", "in", "mice", "after", "NE", "by", "reducing", "cellular", "oxidative", "damage", "(", "Han", "et", "al", ".,", "2020", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "is", "consistent", "with", "our", "findings", "." ]
+  }, {
+    "sentence_tokens" : [ "Using", "3-TYP", "to", "suppress", "SIRT3", ",", "we", "found", "that", "SIRT3", "inhibition", "significantly", "aggravated", "the", "damage", "to", "hair", "cells", "and", "worsened", "hearing", "loss", "in", "mice", "after", "NE", "(", "Figure", "4", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "SOD2", "serves", "as", "the", "first", "line", "of", "defense", "against", "mitochondrial", "oxidative", "damage", "and", "is", "the", "main", "mitochondrial", "ROS", "scavenger", "(", "Miao", "and", "St", ",", "2009", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "SOD2", "converts", "SOD", "to", "hydrogen", "peroxide", ",", "which", "is", "subsequently", "converted", "to", "water", "by", "catalase", "and", "other", "peroxidases", "(", "Fridovich", ",", "1995", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Diet", "induced", "obese", "mice", "showed", "significant", "hearing", "loss", "due", "to", "reduced", "SOD2", "levels", ",", "resulting", "in", "elevated", "ROS", "and", "increased", "hair", "cell", "mortality", "(", "Lee", "et", "al", ".,", "2020", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "SOD2", "upregulation", "plays", "a", "protective", "role", "in", "acute", "acoustic", "injury", "in", "rats", "(", "Zhu", "et", "al", ".,", "2020", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "SOD2", "is", "post-translationally", "regulated", "in", "several", "ways", ";", "however", ",", "acetylation", "is", "the", "major", "SOD2", "active", "modification", "(", "Zou", "et", "al", ".,", "2016", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "reduced", "level", "of", "lysine", "acetylation", "in", "SOD2", "increases", "its", "enzymatic", "activity", "(", "Candas", "and", "Li", ",", "2014", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "4-HNE", "level", "reflects", "cellular", "membrane", "damage", "due", "to", "lipid", "peroxidation", "induced", "by", "ROS", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "found", "that", "SIRT3", "inhibition", "resulted", "in", "a", "significant", "increase", "in", "the", "acetylation", "level", "of", "SOD2", ",", "a", "decrease", "in", "SOD2", "activity", ",", "a", "significant", "increase", "in", "ROS", "levels", ",", "and", "an", "increase", "in", "apoptosis", "(", "Figure", "5", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "SIRT3", "maintains", "ROS", "homeostasis", "by", "activating", "SOD2", "through", "deacetylation", "and", "converting", "harmful", "superoxide", "radicals", "to", "harmless", "oxygen", "or", "hydrogen", "peroxide", "(", "Shen", "et", "al", ".,", "2020", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "multiple", "disease", "models", ",", "SIRT3", "has", "been", "reported", "to", "play", "an", "important", "role", "in", "antioxidant", "damage", "by", "regulating", "its", "downstream", "molecule", ",", "SOD2", "." ]
+  }, {
+    "sentence_tokens" : [ "Activating", "the", "Akt-SIRT3-SOD2", "signaling", "pathway", "ameliorates", "mitochondrial", "damage", "and", "attenuates", "brain", "ischemia-reperfusion", "injury", "in", "diabetic", "mice", "(", "Liu", "et", "al", ".,", "2021", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Mitochondria", ",", "as", "a", "major", "source", "of", "ROS", ",", "play", "a", "key", "role", "in", "regulating", "cellular", "functions", "." ]
+  }, {
+    "sentence_tokens" : [ "It", "is", "widely", "believed", "that", "mitochondrial", "oxidative", "stress", "leads", "to", "NIHL", "." ]
+  }, {
+    "sentence_tokens" : [ "Our", "current", "work", "reveals", "innovative", "molecular", "mechanisms", "by", "which", "mitochondrial", "oxidative", "stress", "regulates", "noise", "induced", "hair", "cell", "injury", "." ]
+  }, {
+    "sentence_tokens" : [ "Thus", ",", "the", "study", "results", "provide", "new", "potential", "therapeutic", "targets", "with", "important", "implications", "for", "intervention", "in", "the", "development", "of", "NIHL.However", ",", "our", "study", "has", "some", "limitations", "." ]
+  }, {
+    "sentence_tokens" : [ "First", ",", "mitochondrial", "redox", "homeostasis", "is", "a", "complex", "system", ",", "and", "the", "linkage", "of", "SIRT3", "and", "SOD2", "signaling", "with", "other", "antioxidant", "systems", "requires", "further", "investigation", "." ]
+  }, {
+    "sentence_tokens" : [ "Second", ",", "further", "investigations", "are", "warranted", "to", "evaluate", "SIRT3", "and", "SOD2", "mediated", "alterations", "in", "the", "mitochondrial", "function", "of", "hair", "cells", "and", "determine", "the", "pathogenesis", "of", "TTS", "." ]
+  }, {
+    "sentence_tokens" : [ "Conclusion", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "study", "identified", "a", "critical", "role", "for", "the", "SIRT3", "and", "SOD2", "signaling", "pathway", "in", "hearing", "protection", "by", "maintaining", "the", "redox", "state", "of", "mitochondria", "in", "hair", "cells", "after", "NE", "(", "Figure", "7", ")", "." ]
+  } ]
+}

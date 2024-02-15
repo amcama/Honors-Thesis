@@ -1,89 +1,587 @@
-[ {
-  "sentence_tokens" : [ "Furthermore", ",", "tumors", "that", "received", "neoadjuvant", "therapy", "tended", "to", "have", "reduced", "RASSF1A", "methylation", "when", "compared", "with", "chemotherapy", "naive", "tumors", "." ],
-  "event_indices" : [ 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13 ],
-  "type" : "Negative_regulation",
-  "polarity" : false,
-  "controller_indices" : [ 2, 3 ],
-  "controlled_indices" : [ 11, 12, 13 ],
-  "trigger_indices" : [ 10, 11 ],
-  "rule_name" : "Negative_regulation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Tumors", "that", "received", "neoadjuvant", "therapy", "tended", "to", "have", "reduced", "RASSF1A", "methylation", "when", "compared", "with", "tumors", "that", "did", "not", "(", "p", "<", "0.005", ";", "Fig.", "5", ")", ",", "suggesting", "that", "neoadjuvant", "therapy", "may", "affect", "RASSF1A", "methylation", "." ],
-  "event_indices" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 ],
-  "type" : "Negative_regulation",
-  "polarity" : false,
-  "controller_indices" : [ 0, 1 ],
-  "controlled_indices" : [ 9, 10, 11 ],
-  "trigger_indices" : [ 8, 9 ],
-  "rule_name" : "Negative_regulation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Relationship", "between", "Tumor", "DNA", "Methylation", "Status", "and", "Patient", "Characteristics", "in", "African-American", "and", "European-American", "Women", "with", "Breast", "Cancer", "." ],
-  "entity_one_indices" : [ 3, 4, 5 ],
-  "entity_two_indices" : [ 2, 3 ]
-}, {
-  "sentence_tokens" : [ "It", "has", "been", "hypothesized", "that", "the", "higher", "likelihood", "of", "developing", "triple", "negative", "breast", "cancer", "might", "contribute", "to", "the", "higher", "mortality", "from", "breast", "cancer", "experienced", "by", "AA", "women", "compared", "with", "EA", "women", "[", "1", "]", ",", "[", "13", "]", ",", "[", "14", "]", "." ],
-  "entity_one_indices" : [ 25, 26 ],
-  "entity_two_indices" : [ 10, 11, 12, 13, 14 ]
-}, {
-  "sentence_tokens" : [ "Recent", "large", "scale", "gene", "expression", "profiling", "studies", "has", "confirmed", "the", "identities", "of", "these", "5", "subtypes", "based", "on", "their", "distinct", "gene", "expression", "signatures", "and", "clinical", "outcomes", "[", "10", "]", ",", "[", "11", "]", ",", "[", "15", "]", "." ],
-  "entity_one_indices" : [ 19, 20, 21 ],
-  "entity_two_indices" : [ 3, 4, 5 ]
-}, {
-  "sentence_tokens" : [ "In", "addition", "to", "somatic", "mutations", ",", "tumor", "DNA", "methylation", "pattern", "were", "found", "to", "show", "differences", "between", "breast", "cancer", "subtypes", "[", "24", "]", "-", "[", "27", "]", "." ],
-  "entity_one_indices" : [ 7, 8, 9 ],
-  "entity_two_indices" : [ 6, 7 ]
-}, {
-  "sentence_tokens" : [ "The", "PCR", "primers", "were", "designed", "to", "assay", "the", "methylation", "status", "of", "CpGs", "within", "0.5", "kb", "from", "the", "transcription", "start", "site", "." ],
-  "entity_one_indices" : [ 18, 19 ],
-  "entity_two_indices" : [ 17, 18 ]
-}, {
-  "sentence_tokens" : [ "Either", "one-step", "or", "two-step", "PCR", "reactions", "were", "carried", "out", "using", "2", "i", "L", "of", "bisulfite", "converted", "genomic", "DNA", "and", "either", "one", "or", "two", "sets", "of", "different", "bisulfite", "PCR", "primers", "in", "a", "standard", "PCR", "reaction", "mix", "." ],
-  "entity_one_indices" : [ 26, 27 ],
-  "entity_two_indices" : [ 14, 15 ]
-}, {
-  "sentence_tokens" : [ "The", "integrity", "of", "the", "PCR", "product", "was", "verified", "on", "1.5", "%", "agarose", "gels", "with", "ethidium", "bromide", "staining", "." ],
-  "entity_one_indices" : [ 14, 15, 16 ],
-  "entity_two_indices" : [ 11, 12 ]
-}, {
-  "sentence_tokens" : [ "Z", "scores", "for", "DNA", "methylation", "levels", "of", "each", "gene", "was", "calculated", "across", "all", "tumor", "samples", "." ],
-  "entity_one_indices" : [ 13, 14 ],
-  "entity_two_indices" : [ 3, 4, 5 ]
-}, {
-  "sentence_tokens" : [ "There", "are", "equal", "numbers", "of", "AA", "and", "EA", "patients", "with", "triple", "negative", "or", "basal", "like", "tumors", "in", "the", "data", "set", "." ],
-  "entity_one_indices" : [ 15, 16 ],
-  "entity_two_indices" : [ 5, 6 ]
-}, {
-  "sentence_tokens" : [ "AA", "patients", "tended", "to", "have", "higher", "grade", "tumors", "more", "frequently", "than", "EA", "patients", "." ],
-  "entity_one_indices" : [ 7, 8 ],
-  "entity_two_indices" : [ 0, 1 ]
-}, {
-  "sentence_tokens" : [ "The", "LINE1", "repetitive", "element", ",", "a", "global", "methylation", "marker", ",", "showed", "a", "distinct", "methylation", "pattern", "and", "was", "found", "to", "be", "hypermethylated", "in", "both", "the", "malignant", "and", "non", "cancerous", "breast", "tissue", "samples", ",", "as", "one", "may", "expect", "with", "a", "significant", "reduction", "of", "%", "LINE1", "methylation", "in", "tumors", "compared", "to", "non", "cancerous", "tissue", "samples", "." ],
-  "entity_one_indices" : [ 45, 46 ],
-  "entity_two_indices" : [ 1, 2, 3, 4 ]
-}, {
-  "sentence_tokens" : [ "The", "statistical", "analysis", "revealed", "difference", "in", "the", "methylation", "status", "between", "AA", "and", "EA", "patients", "for", "the", "CDH13", "gene", "(", "p", "=", "0.023", ")", ",", "but", "not", "for", "any", "other", "gene", "." ],
-  "entity_one_indices" : [ 16, 17 ],
-  "entity_two_indices" : [ 10, 11 ]
-}, {
-  "sentence_tokens" : [ "There", "was", "no", "significant", "correlation", "between", "CDH13", "methylation", "and", "individual", "ancestry", "score", "suggesting", "that", "no", "functional", "African", "ancestry", "related", "Single", "nucleotide", "polymorphic", "marker", "(", "s", ")", "is", "affecting", "CDH13", "methylation", "." ],
-  "entity_one_indices" : [ 28, 29 ],
-  "entity_two_indices" : [ 6, 7 ]
-}, {
-  "sentence_tokens" : [ "We", "investigated", "the", "association", "of", "relative", "methylation", "changes", "in", "breast", "tumors", "with", "neoadjuvant", "therapy", "by", "comparing", "tumors", "that", "received", "neoadjuvant", "therapy", "(", "n", "=", "9", ")", "to", "those", "that", "did", "not", "(", "n", "=", "53", ";", "Mann-Whitney", ")", "." ],
-  "entity_one_indices" : [ 16, 17 ],
-  "entity_two_indices" : [ 9, 10, 11 ]
-}, {
-  "sentence_tokens" : [ "We", "integrated", "the", "DNA", "methylation", "status", "of", "multiple", "genes", "by", "summing", "their", "methylation", "levels", "as", "z-scores", "." ],
-  "entity_one_indices" : [ 11, 12 ],
-  "entity_two_indices" : [ 3, 4, 5 ]
-}, {
-  "sentence_tokens" : [ "We", "observed", "that", "age", "was", "significantly", "associated", "with", "methylation", "of", "SFRP1", "gene", "and", "may", "affect", "AA", "differently", "than", "EA", "women", "." ],
-  "entity_one_indices" : [ 15, 16 ],
-  "entity_two_indices" : [ 10, 11 ]
-}, {
-  "sentence_tokens" : [ "We", "observed", "that", "neoadjuvant", "therapy", "may", "affect", "RASSF1A", "methylation", "suggesting", "that", "RASSF1A", "methylation", "could", "actually", "be", "a", "useful", "predictive", "marker", "for", "neoadjuvant", "therapy", "response", "." ],
-  "entity_one_indices" : [ 11, 12 ],
-  "entity_two_indices" : [ 7, 8 ]
-} ]
+{
+  "regulations" : [ {
+    "sentence_tokens" : [ "Furthermore", ",", "tumors", "that", "received", "neoadjuvant", "therapy", "tended", "to", "have", "reduced", "RASSF1A", "methylation", "when", "compared", "with", "chemotherapy", "naive", "tumors", "." ],
+    "event_indices" : [ 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13 ],
+    "type" : "Negative_regulation",
+    "polarity" : false,
+    "controller_indices" : [ 2, 3 ],
+    "controlled_indices" : [ 11, 12, 13 ],
+    "trigger_indices" : [ 10, 11 ],
+    "rule_name" : "Negative_regulation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "Tumors", "that", "received", "neoadjuvant", "therapy", "tended", "to", "have", "reduced", "RASSF1A", "methylation", "when", "compared", "with", "tumors", "that", "did", "not", "(", "p", "<", "0.005", ";", "Fig.", "5", ")", ",", "suggesting", "that", "neoadjuvant", "therapy", "may", "affect", "RASSF1A", "methylation", "." ],
+    "event_indices" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 ],
+    "type" : "Negative_regulation",
+    "polarity" : false,
+    "controller_indices" : [ 0, 1 ],
+    "controlled_indices" : [ 9, 10, 11 ],
+    "trigger_indices" : [ 8, 9 ],
+    "rule_name" : "Negative_regulation_syntax_1_verb",
+    "rule" : null
+  } ],
+  "hardInstances" : [ {
+    "sentence_tokens" : [ "Furthermore", ",", "tumors", "that", "received", "neoadjuvant", "therapy", "tended", "to", "have", "reduced", "RASSF1A", "methylation", "when", "compared", "with", "chemotherapy", "naive", "tumors", "." ],
+    "entities_indices" : [ [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "Tumors", "that", "received", "neoadjuvant", "therapy", "tended", "to", "have", "reduced", "RASSF1A", "methylation", "when", "compared", "with", "tumors", "that", "did", "not", "(", "p", "<", "0.005", ";", "Fig.", "5", ")", ",", "suggesting", "that", "neoadjuvant", "therapy", "may", "affect", "RASSF1A", "methylation", "." ],
+    "entities_indices" : [ [ 14, 15 ], [ 33, 34 ] ]
+  } ],
+  "withoutRegulations" : [ {
+    "sentence_tokens" : [ "There", "are", "equal", "numbers", "of", "AA", "and", "EA", "patients", "with", "triple", "negative", "or", "basal", "like", "tumors", "in", "the", "data", "set", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "investigated", "the", "association", "of", "relative", "methylation", "changes", "in", "breast", "tumors", "with", "neoadjuvant", "therapy", "by", "comparing", "tumors", "that", "received", "neoadjuvant", "therapy", "(", "n", "=", "9", ")", "to", "those", "that", "did", "not", "(", "n", "=", "53", ";", "Mann-Whitney", ")", "." ],
+    "entities_indices" : [ [ 9, 10, 11 ], [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "Relationship", "between", "Tumor", "DNA", "Methylation", "Status", "and", "Patient", "Characteristics", "in", "African-American", "and", "European-American", "Women", "with", "Breast", "Cancer", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 3, 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "When", "we", "studied", "the", "relative", "methylation", "frequency", "after", "stratification", "into", "two", "age", "groups", "with", "the", "cutoff", "point", "at", "age", "50", ",", "we", "found", "that", "young", "(", "<", "50", "years", "of", "age", ")", "and", "ER", "negative", "AA", "patients", "had", "a", "significantly", "higher", "methylation", "index", "at", "the", "CDH13", "locus", "than", "the", "matched", "EA", "patients", "(", "p", "<", "0.005", ";", "Fig.", "3b", ")", ",", "while", "the", "analysis", "of", "RASSF1A", ",", "RAR", "beta", "2", "and", "SFRP1", "did", "not", "find", "significant", "differences", "in", "this", "subgroup", "analysis", "." ],
+    "entities_indices" : [ [ 33, 34 ], [ 35, 36 ], [ 45, 46 ], [ 65, 66 ], [ 67, 68 ], [ 71, 72 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "humans", ",", "methylation", "changes", "are", "more", "and", "more", "recognized", "as", "part", "of", "pathologic", "aging", "physiology", "[", "31", "]", ",", "[", "38", "]", "." ],
+    "entities_indices" : [ [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "Significant", "differences", "in", "the", "CDH13", "methylation", "status", "were", "observed", "by", "comparing", "DNA", "methylation", "between", "AA", "and", "EA", "patients", ",", "with", "more", "obvious", "CDH13", "methylation", "differences", "between", "the", "two", "patient", "groups", "in", "the", "ER-", "disease", "and", "among", "young", "patients", "(", "age", "<", "50", ")", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 11, 12, 13 ], [ 14, 15 ], [ 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "65", "cases", "that", "we", "tested", ",", "14", "cases", "were", "triple", "negative", "tumors", "and", "tended", "to", "have", "increased", "CDH13", "methylation", "and", "a", "decreased", "methylation", "of", "the", "RASSF1A", "and", "SFRP1", "genes", "." ],
+    "entities_indices" : [ [ 13, 14 ], [ 19, 20 ], [ 27, 28 ], [ 29, 30 ] ]
+  }, {
+    "sentence_tokens" : [ "Bisulfite", "converted", "DNA", "from", "blood", "of", "normal", "volunteers", "and", "blank", "reactions", ",", "with", "water", "substituted", "for", "DNA", ",", "served", "as", "negative", "control", "and", "bisulfite", "converted", "SssI", "methylase", "-", "treated", "blood", "DNA", "served", "as", "a", "positive", "control", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 23, 24 ], [ 25, 26, 27 ] ]
+  }, {
+    "sentence_tokens" : [ "Briefly", ",", "genomic", "DNA", "(", "2", "i", "g", ")", "was", "denatured", "in", "0.3", "mol/L", "NaOH", "at", "37", "degrees", "C", "for", "15", "minutes", ";", "sodium", "bisulfite", "and", "hydroquinone", "were", "added", "to", "final", "concentrations", "of", "3.1", "mol/L", "and", "0.5", "mmol/L", ",", "respectively", "." ],
+    "entities_indices" : [ [ 14, 15 ], [ 23, 24, 25 ], [ 26, 27 ] ]
+  }, {
+    "sentence_tokens" : [ "Some", "of", "these", "genetic", "alterations", "tend", "to", "occur", "more", "commonly", "in", "tumors", "of", "AA", "than", "EA", "patients", "as", "shown", "for", "p53", "and", "BRCA1/2", "mutations", "[", "20", "]", ",", "[", "21", "]", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 13, 14 ], [ 20, 21 ], [ 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "tissues", "were", "taken", "as", "distant", "as", "possible", "during", "routine", "surgery", "and", "none", "of", "the", "adjacent", "normal", "tissues", "contained", "visible", "tumor", "contamination", "by", "histological", "analysis", "." ],
+    "entities_indices" : [ [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "Moreover", ",", "Loo", "and", "coworkers", "observed", "significant", "differences", "in", "genomic", "copy", "number", "alterations", "in", "triple", "negative", "tumors", "from", "AA", "and", "EA", "women", "[", "22", "]", ",", "whereas", "other", "investigators", "have", "reported", "differences", "in", "the", "gene", "expression", "profiles", "between", "AA", "and", "EA", "tumors", "in", "pathways", "related", "to", "tumor", "angiogenesis", "and", "chemotaxis", "[", "23", "]", "." ],
+    "entities_indices" : [ [ 16, 17 ], [ 18, 19 ], [ 34, 35, 36 ], [ 38, 39 ], [ 41, 42 ], [ 46, 47 ], [ 47, 48 ], [ 49, 50 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "stark", "contrast", "to", "the", "incidence", "rates", ",", "AA", "women", "have", "generally", "higher", "age", "adjusted", "mortality", "rates", "than", "EA", "women", ",", "accounting", "for", "the", "highest", "breast", "cancer", "mortality", "rates", "among", "all", "US", "population", "groups", "[", "3", "]", "." ],
+    "entities_indices" : [ [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "Many", "existing", "data", "indicates", "that", "aberrant", "DNA", "methylation", "is", "associated", "with", "breast", "cancer", "risk", ";", "however", ",", "to", "our", "knowledge", "there", "is", "only", "one", "published", "report", "to", "suggest", "an", "association", "between", "DNA", "methylation", "changes", "and", "invasive", "ductal", "breast", "cancers", "comparing", "AA", "patients", "with", "EA", "patients", "[", "28", "]", "." ],
+    "entities_indices" : [ [ 6, 7, 8 ], [ 31, 32, 33 ], [ 40, 41 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "observed", "that", "neoadjuvant", "therapy", "may", "affect", "RASSF1A", "methylation", "suggesting", "that", "RASSF1A", "methylation", "could", "actually", "be", "a", "useful", "predictive", "marker", "for", "neoadjuvant", "therapy", "response", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "AA", "women", "also", "experience", "almost", "twice", "the", "prevalence", "of", "the", "triple", "negative", "disease", "(", "ER", ",", "progesterone", "receptor", "[", "PR", "]", ",", "and", "human", "epidermal", "growth", "receptor", "2", "[", "HER2", "]", "negative", ")", "when", "compared", "with", "EA", "women", "[", "11", "]", ",", "[", "13", "]", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 14, 15 ], [ 16, 17, 18 ], [ 19, 20 ], [ 29, 30 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "PCR", "primers", "were", "designed", "to", "assay", "the", "methylation", "status", "of", "CpGs", "within", "0.5", "kb", "from", "the", "transcription", "start", "site", "." ],
+    "entities_indices" : [ [ 17, 18 ], [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "Lastly", ",", "age", "itself", "was", "modestly", "associated", "with", "the", "methylation", "status", "at", "the", "SFRP1", "locus", "in", "the", "tumor", "samples", "tumor", "samples", "(", "p", "=", "0.084", ";", "Fig.", "3c", ")", "." ],
+    "entities_indices" : [ [ 13, 14 ], [ 17, 18 ], [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "Each", "bisulfite", "PCR", "and", "pyrosequencing", "reaction", "was", "done", "at", "least", "twice", "." ],
+    "entities_indices" : [ [ 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "LINE1", "repetitive", "element", ",", "a", "global", "methylation", "marker", ",", "showed", "a", "distinct", "methylation", "pattern", "and", "was", "found", "to", "be", "hypermethylated", "in", "both", "the", "malignant", "and", "non", "cancerous", "breast", "tissue", "samples", ",", "as", "one", "may", "expect", "with", "a", "significant", "reduction", "of", "%", "LINE1", "methylation", "in", "tumors", "compared", "to", "non", "cancerous", "tissue", "samples", "." ],
+    "entities_indices" : [ [ 1, 2, 3, 4 ], [ 45, 46 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "integrated", "the", "DNA", "methylation", "status", "of", "multiple", "genes", "by", "summing", "their", "methylation", "levels", "as", "z-scores", "." ],
+    "entities_indices" : [ [ 3, 4, 5 ], [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "basal", "like", "tumors", "(", "13", "cases", ")", "tended", "to", "have", "a", "decrease", "RASSF1A", "methylation", "whereas", "the", "luminal", "A", "tumors", "(", "21", "cases", ")", "tended", "to", "have", "a", "decrease", "CDH13", "methylation", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 13, 14 ], [ 19, 20 ], [ 29, 30 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "contrast", ",", "we", "could", "not", "detect", "any", "methylation", "differences", "between", "AA", "and", "EA", "patients", "in", "the", "ER", "positive", "disease", ",", "indicating", "that", "the", "CDH13", "differences", "between", "the", "two", "patient", "groups", "are", "restricted", "to", "ER", "negative", "tumors", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 17, 18 ], [ 24, 25 ], [ 34, 35 ], [ 36, 37 ] ]
+  }, {
+    "sentence_tokens" : [ "Aberrant", "DNA", "methylation", "is", "critical", "for", "development", "and", "progression", "of", "breast", "cancer", "." ],
+    "entities_indices" : [ [ 1, 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "addition", ",", "we", "observed", "associations", "between", "CDH13", ",", "SFRP1", ",", "and", "RASSF1A", "methylation", "and", "breast", "cancer", "subtypes", "and", "between", "SFRP1", "methylation", "and", "patient", "'s", "age", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 9, 10 ], [ 12, 13 ], [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "observed", "that", "age", "was", "significantly", "associated", "with", "methylation", "of", "SFRP1", "gene", "and", "may", "affect", "AA", "differently", "than", "EA", "women", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "To", "further", "explore", "the", "association", "of", "the", "tumor", "methylation", "status", "with", "patient", "characteristics", "such", "as", "age", ",", "race", "and", "ethnicity", "and", "ER", "status", ",", "we", "initially", "examined", "gene", "methylation", "differences", "between", "AA", "and", "EA", "women", "(", "Fig.", "3a", ")", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 17, 18 ], [ 21, 22 ], [ 31, 32 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "purpose", "of", "the", "present", "study", "was", "to", "test", "the", "hypothesis", "that", "tumor", "DNA", "methylation", "is", "different", "between", "AA", "and", "EA", "patients", ",", "as", "reported", "previously", "in", "one", "publication", ",", "and", "to", "characterize", "the", "relationship", "between", "the", "DNA", "methylation", "status", "of", "several", "breast", "cancer", "related", "genes", "and", "patient", "characteristics", "or", "tumor", "markers", "." ],
+    "entities_indices" : [ [ 12, 13 ], [ 13, 14, 15 ], [ 18, 19 ], [ 37, 38, 39 ], [ 50, 51 ] ]
+  }, {
+    "sentence_tokens" : [ "High", "molecular", "weight", "genomic", "DNA", "was", "isolated", "from", "fresh-frozen", "breast", "tissues", "using", "the", "DNeasy", "(R)", "isolation", "kit", "following", "the", "manufactures", "directions", "for", "purification", "from", "human", "tissues", "(", "Qiagen", ",", "Valencia", ",", "CA", ")", "." ],
+    "entities_indices" : [ [ 31, 32 ] ]
+  }, {
+    "sentence_tokens" : [ "AA", "patients", "tended", "to", "have", "higher", "grade", "tumors", "more", "frequently", "than", "EA", "patients", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "It", "has", "been", "hypothesized", "that", "the", "higher", "likelihood", "of", "developing", "triple", "negative", "breast", "cancer", "might", "contribute", "to", "the", "higher", "mortality", "from", "breast", "cancer", "experienced", "by", "AA", "women", "compared", "with", "EA", "women", "[", "1", "]", ",", "[", "13", "]", ",", "[", "14", "]", "." ],
+    "entities_indices" : [ [ 10, 11, 12, 13, 14 ], [ 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "Disease", "staging", "was", "performed", "according", "to", "the", "TNM", "system", "of", "the", "American", "Joint", "Committee", "on", "Cancer", "and", "Union", "Internationale", "Contre", "le", "Cancer", "(", "AJCC", "and", "UICC", ")", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "There", "was", "no", "significant", "correlation", "between", "CDH13", "methylation", "and", "individual", "ancestry", "score", "suggesting", "that", "no", "functional", "African", "ancestry", "related", "Single", "nucleotide", "polymorphic", "marker", "(", "s", ")", "is", "affecting", "CDH13", "methylation", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 28, 29 ] ]
+  }, {
+    "sentence_tokens" : [ "Next", ",", "we", "analyzed", "tumor", "characteristics", "to", "investigate", "whether", "there", "is", "a", "correlation", "of", "%", "methylation", "with", "clinical", "outcomes", "(", "Fig.", "4a", "-", "c", ")", "." ],
+    "entities_indices" : [ [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "conclusion", ",", "the", "DNA", "methylation", "status", "of", "breast", "tumors", "was", "found", "to", "be", "significantly", "associated", "with", "clinicopathological", "features", "and", "race", "and", "ethnicity", "of", "the", "patients", "." ],
+    "entities_indices" : [ [ 4, 5, 6 ], [ 8, 9, 10 ], [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "integrity", "of", "the", "PCR", "product", "was", "verified", "on", "1.5", "%", "agarose", "gels", "with", "ethidium", "bromide", "staining", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 14, 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "Such", "candidate", "genes", "are", "being", "explored", "as", "potential", "biomarkers", "for", "detecting", "breast", "cancer", "invasion", "and", "for", "predicting", "response", "to", "neoadjuvant", "therapy", "as", "well", "as", "other", "therapeutic", "intermediates", "." ],
+    "entities_indices" : [ [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "ESR1", "was", "uncommonly", "methylated", "and", "the", "p16", "gene", "was", "not", "methylated", "in", "either", "tumor", "or", "non", "cancerous", "breast", "tissues", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 6, 7, 8 ], [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "Relationship", "between", "gene", "methylation", "and", "tumor", "subtypes", "." ],
+    "entities_indices" : [ [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "When", "breast", "cancer", "risk", "is", "stratified", "by", "age", ",", "EA", "women", "have", "the", "highest", "age", "adjusted", "breast", "cancer", "incidence", "among", "women", ">", "50", "years", "whereas", "in", "the", "<", "50", "age", "group", ",", "the", "pattern", "is", "different", "with", "the", "EA", "women", "having", "lower", "incidence", "rates", "than", "AA", "[", "3", "]", "." ],
+    "entities_indices" : [ [ 45, 46 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "main", "role", "of", "folate", "is", "to", "provide", "one-carbon", "units", "in", "several", "reactions", "necessary", "for", "DNA", "methylation", "and", "synthesis", ",", "while", "vitamins", "B12", "and", "B6", "serve", "as", "cofactors", "in", "some", "of", "these", "reactions", "[", "42", "]", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 15, 16, 17 ], [ 18, 19 ], [ 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "High", "molecular", "weight", "genomic", "DNA", "extracted", "from", "breast", "tissues", "was", "modified", "using", "sodium", "bisulfite", "treatment", "[", "30", "]", "." ],
+    "entities_indices" : [ [ 12, 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "Diet-low", "levels", "of", "S-adenosyl", "methionine", "(", "SAM", ")", ",", "and", "the", "production", "of", "SAM", "depends", "on", "dietary", "factors", "such", "as", "folate", ",", "vitamin", "B6", ",", "and", "vitamin", "B12", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 13, 14 ], [ 20, 21 ], [ 22, 23, 24 ], [ 26, 27, 28 ] ]
+  }, {
+    "sentence_tokens" : [ "While", "the", "DNA", "methylation", "status", "of", "individual", "genes", "were", "not", "associated", "with", "patients", "survival", "(", "data", "not", "shown", ")", ",", "we", "tested", "if", "the", "combination", "of", "genes", "could", "improve", "the", "ability", "in", "detecting", "the", "association", "between", "methylation", "status", "and", "disease", "outcome", "." ],
+    "entities_indices" : [ [ 2, 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "investigated", "the", "association", "of", "CpG", "island", "methylation", "in", "candidate", "genes", "and", "clinicopathological", "features", "in", "65", "African-American", "(", "AA", ")", "and", "European-American", "(", "EA", ")", "breast", "cancer", "patients", "." ],
+    "entities_indices" : [ [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "Clinical", "and", "pathological", "information", "(", "e.g", ".,", "tumor", "receptor", "status", ")", "was", "obtained", "from", "medical", "records", "and", "pathology", "reports", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "Nottingham", "system", "was", "used", "to", "determine", "the", "tumor", "grade", "." ],
+    "entities_indices" : [ [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "Modified", "DNA", "was", "precipitated", "with", "ethanol", ",", "washed", "in", "70", "%", "ethanol", ",", "dried", ",", "and", "dissolved", "in", "50", "i", "L", "of", "TE", "buffer", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 11, 12 ], [ 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "solving", "the", "racial", "disparity", "will", "require", "understanding", "possible", "tumor", "biological", "differences", "between", "population", "groups", "beyond", "the", "current", "knowledge", "of", "differences", "in", "hormone", "receptor", "status", "and", "disease", "grade", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "Recent", "large", "scale", "gene", "expression", "profiling", "studies", "has", "confirmed", "the", "identities", "of", "these", "5", "subtypes", "based", "on", "their", "distinct", "gene", "expression", "signatures", "and", "clinical", "outcomes", "[", "10", "]", ",", "[", "11", "]", ",", "[", "15", "]", "." ],
+    "entities_indices" : [ [ 3, 4, 5 ], [ 19, 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "Bisulfite", "modification", "was", "completed", "by", "DNA", "desulfonation", "in", "0.3", "mol/L", "NaOH", "at", "37", "degrees", "C", "for", "15", "minutes", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "Our", "data", "offer", "the", "possibility", "that", "gene", "methylation", "pattern", "in", "breast", "tissues", "may", "contribute", "to", "altered", "gene", "expression", "in", "older", "AA", "and", "EA", "individuals.Recent", "microarray", "profiling", "of", "invasive", "breast", "carcinomas", "has", "revealed", "5", "distinct", "tumor", "subtypes", "with", "distinct", "gene", "expression", "signatures", "and", "clinical", "outcomes", "." ],
+    "entities_indices" : [ [ 16, 17, 18 ], [ 20, 21 ], [ 29, 30 ], [ 34, 35 ], [ 38, 39, 40 ] ]
+  }, {
+    "sentence_tokens" : [ "Another", "report", "also", "observed", "that", "hormone", "receptor", "negative", "tumors", "from", "young", "AA", "patients", "show", "distinct", "DNA", "hypermethylation", "at", "certain", "loci", "when", "compared", "with", "EA", "tumors", ",", "suggesting", "candidate", "tumor", "biological", "differences", "between", "the", "two", "patient", "groups", "as", "they", "relate", "to", "cancer", "epigenetics", "[", "28", "]", "." ],
+    "entities_indices" : [ [ 5, 6, 7 ], [ 8, 9 ], [ 11, 12 ], [ 15, 16, 17 ], [ 24, 25 ], [ 28, 29 ], [ 41, 42 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "investigated", "the", "methylation", "status", "of", "8", "genes", "of", "which", "6", "are", "known", "growth", "suppressor", "genes", "namely", "p16", ",", "RASSF1A", ",", "RAR", "beta", "2", ",", "CDH13", ",", "HIN1", "and", "SFRP1", "genes", ",", "with", "the", "other", "2", "encoding", "the", "estrogen", "receptor", "alpha", "(", "ESR1", ")", "or", "representing", "a", "global", "methylation", "marker", ",", "the", "LINE1", "repetitive", "elements", "[", "31", "]", "-", "[", "34", "]", "." ],
+    "entities_indices" : [ [ 17, 18 ], [ 19, 20 ], [ 21, 22 ], [ 25, 26 ], [ 27, 28 ], [ 29, 30 ], [ 38, 39, 40 ], [ 42, 43 ], [ 52, 53, 54, 55 ] ]
+  }, {
+    "sentence_tokens" : [ "Among", "the", "different", "population", "groups", "within", "the", "United", "States", ",", "the", "overall", "breast", "cancer", "incidence", "is", "highest", "in", "European", "American", "(", "EA", ")", "women", "followed", "by", "African", "American", "(", "AA", ")", "women", "[", "2", "]", "." ],
+    "entities_indices" : [ [ 29, 30 ] ]
+  }, {
+    "sentence_tokens" : [ "Either", "one-step", "or", "two-step", "PCR", "reactions", "were", "carried", "out", "using", "2", "i", "L", "of", "bisulfite", "converted", "genomic", "DNA", "and", "either", "one", "or", "two", "sets", "of", "different", "bisulfite", "PCR", "primers", "in", "a", "standard", "PCR", "reaction", "mix", "." ],
+    "entities_indices" : [ [ 14, 15 ], [ 26, 27 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "statistical", "analysis", "revealed", "difference", "in", "the", "methylation", "status", "between", "AA", "and", "EA", "patients", "for", "the", "CDH13", "gene", "(", "p", "=", "0.023", ")", ",", "but", "not", "for", "any", "other", "gene", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "CDH13", "gene", "is", "a", "well-known", "tumor", "suppressor", "gene", "whose", "protein", "product", "is", "a", "putative", "mediator", "of", "cell-cell", "interaction", "and", "cancer", "cell", "invasion", "and", "metastasis", "[", "37", "]", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 6, 7, 8 ], [ 22, 23 ], [ 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "To", "assess", "the", "biological", "significance", "of", "promoter", "methylation", "in", "the", "breast", "tumor", "samples", ",", "we", "correlated", "the", "relative", "methylation", "frequency", "with", "gene", "expression", "data", "from", "a", "previously", "described", "genome-wide", "gene", "expression", "study", "[", "23", "]", "." ],
+    "entities_indices" : [ [ 10, 11, 12 ], [ 21, 22, 23 ], [ 29, 30, 31 ] ]
+  }, {
+    "sentence_tokens" : [ "Five", "of", "the", "8", "genes", "(", "RASSF1A", ",", "RAR", "beta", "2", ",", "CDH13", ",", "HIN1", "and", "SFRP1", ")", "were", "frequently", "hypermethylated", "in", "the", "tumor", "samples", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 8, 9 ], [ 12, 13 ], [ 14, 15 ], [ 16, 17 ], [ 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "observed", "that", "triple", "negative", "breast", "cancers", "tended", "to", "have", "increased", "CDH13", "methylation", "(", "p", "=", "0.044", ")", "and", "a", "decreased", "methylation", "of", "the", "RASSF1A", "(", "p", "<", "0.02", ")", "and", "SFRP1", "(", "p", "<", "0.05", ",", "Fig.", "4a", ")", "genes", "when", "compared", "with", "other", "subtypes", "." ],
+    "entities_indices" : [ [ 3, 4, 5, 6, 7 ], [ 11, 12 ], [ 24, 25 ], [ 31, 32 ] ]
+  }, {
+    "sentence_tokens" : [ "To", "ascertain", "whether", "individual", "ancestry", "is", "influencing", "the", "methylation", "status", ",", "we", "carried", "out", "a", "correlation", "analysis", "between", "West", "African", "score", "(", "for", "AA", ")", "or", "European", "score", "(", "for", "EA", ")", "and", "methylation", "score", "(", "Fig", "S2b", ")", "." ],
+    "entities_indices" : [ [ 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "evaluated", "the", "DNA", "methylation", "status", "for", "a", "panel", "of", "genes", "in", "paired", "adjacent", "non", "cancerous", "and", "breast", "tumor", "specimens", "from", "a", "total", "of", "65", "patients", "(", "32", "AA", "and", "33", "EA", "women", ")", "." ],
+    "entities_indices" : [ [ 3, 4, 5 ], [ 17, 18, 19 ], [ 28, 29 ] ]
+  }, {
+    "sentence_tokens" : [ "Furthermore", ",", "patients", "with", "high", "methylation", "scores", "revealed", "poor", "outcome", "(", "Fig.", "6B", ")", ",", "implying", "the", "potential", "association", "between", "methylation", "of", "these", "genes", "and", "poor", "outcome", "of", "AA", "patients", "." ],
+    "entities_indices" : [ [ 23, 24 ], [ 23, 24 ], [ 28, 29 ] ]
+  }, {
+    "sentence_tokens" : [ "Sustained", "low", "levels", "of", "these", "nutrients", "may", "lead", "to", "disturbance", "in", "DNA", "methylation", ",", "synthesis", ",", "and", "repair", ",", "possibility", "influencing", "breast", "cancer", "disparity.In", "conclusion", ",", "ongoing", "studies", "clearly", "demonstrates", "differential", "DNA", "methylation", "patterns", "in", "AA", "and", "EA", "breast", "cancer", "cases", "that", "may", "represent", "an", "integration", "of", "lifestyle", "and", "genetic", "predisposing", "factors", "resulting", "in", "altered", "patterns", "of", "gene", "expression", "and", "differences", "in", "clinical", "outcome", "and", "behavior", "." ],
+    "entities_indices" : [ [ 11, 12, 13 ], [ 14, 15 ], [ 31, 32, 33 ], [ 35, 36 ], [ 57, 58, 59 ] ]
+  }, {
+    "sentence_tokens" : [ "Quantitative", "methylation", "analysis", "was", "carried", "out", "on", "bisulfite", "modified", "genomic", "DNA", "and", "sequencing", "(", "pyrosequencing", ")", "for", "promoter", "CpG", "islands", "of", "p16", ",", "ESR1", ",", "RASSF1A", ",", "RARbeta2", ",", "CDH13", ",", "HIN1", ",", "SFRP1", "genes", "and", "the", "LINE1", "repetitive", "element", "using", "matched", "paired", "non", "cancerous", "and", "breast", "tumor", "specimen", "(", "32", "AA", "and", "33", "EA", "women", ")", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 21, 22 ], [ 23, 24 ], [ 25, 26 ], [ 27, 28 ], [ 29, 30 ], [ 31, 32 ], [ 33, 34 ], [ 37, 38 ], [ 46, 47, 48 ], [ 51, 52 ] ]
+  }, {
+    "sentence_tokens" : [ "Correlation", "between", "promoter", "methylation", "and", "gene", "expression", "level", "." ],
+    "entities_indices" : [ [ 5, 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "collection", "of", "tumor", "specimens", "and", "clinical", "and", "pathological", "information", "was", "reviewed", "and", "approved", "by", "the", "University", "of", "Maryland", "Institutional", "Review", "Board", "for", "the", "participating", "institutions", "(", "UMD", "protocol", "0298229", ")", "." ],
+    "entities_indices" : [ [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "Our", "most", "notable", "observation", "is", "the", "presence", "of", "a", "significantly", "higher", "methylation", "at", "a", "CpG", "site", "in", "the", "CDH13", "gene", "in", "breast", "tumor", "samples", "from", "AA", "women", "when", "compared", "with", "EA", "women", "among", "young", "and", "ER", "negative", "patients", "." ],
+    "entities_indices" : [ [ 18, 19 ], [ 21, 22, 23 ], [ 25, 26 ], [ 35, 36 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "did", "not", "see", "any", "correlation", "of", "methylation", "with", "lymph", "node", ",", "tumor", "grade", "which", "may", "mainly", "reflect", "a", "limitation", "on", "the", "sample", "size", "used", "in", "this", "study.Methylation", "of", "specific", "candidate", "genes", "or", "groups", "of", "genes", "has", "been", "associated", "with", "poorer", "prognosis", "and", "these", "genes", "may", "affect", "tumor", "aggressiveness", "independent", "of", "their", "methylation", "phenotype", "[", "39", "]", "-", "[", "41", "]", "." ],
+    "entities_indices" : [ [ 12, 13 ], [ 47, 48 ], [ 51, 52 ], [ 51, 52 ] ]
+  }, {
+    "sentence_tokens" : [ "Breast", "cancer", "is", "a", "heterogeneous", "disease", "consisting", "of", "five", "major", "breast", "tumor", "subtypes", ":", "basal", ",", "human", "epidermal", "growth", "factor", "receptor", "2", "(", "HER2", ")-positive/estrogen", "receptor", "(", "ER", ")-negative", ",", "luminal", "A", ",", "luminal", "B", ",", "and", "normal", "like", "[", "9", "]", ",", "[", "10", "]", "." ],
+    "entities_indices" : [ [ 10, 11, 12 ], [ 17, 18, 19, 20, 21 ], [ 23, 24 ], [ 27, 28 ], [ 30, 31, 32 ] ]
+  }, {
+    "sentence_tokens" : [ "Overall", ",", "we", "observed", "the", "trend", "that", "tumors", "of", "older", "patients", "tend", "to", "have", "increased", "promoter", "methylation", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "These", "3", "loci", "tended", "to", "be", "more", "methylated", "in", "AA", "compared", "with", "EA", "tumors", "supporting", "our", "hypothesis", "that", "differences", "in", "methylation", "patterns", "may", "contribute", "to", "the", "more", "aggressive", "and", "poorer", "disease", "outcome", "in", "AA", "women.Consistent", "differences", "in", "the", "methylation", "pattern", "between", "AA", "and", "EA", "breast", "cancer", "cases", "can", "be", "attributed", "to", "environmental", "factors", "including", "dietary", "factors", "(", "e.g", ".,", "availability", "of", "methyl", "donors", ")", ",", "or", "functional", "SNP", "allele", "frequencies", "." ],
+    "entities_indices" : [ [ 9, 10 ], [ 13, 14 ], [ 33, 34 ], [ 41, 42 ], [ 61, 62 ], [ 67, 68, 69 ] ]
+  }, {
+    "sentence_tokens" : [ "Fresh-frozen", "tissue", "samples", "corresponding", "to", "paired", "normal", "and", "breast", "tumor", "specimen", "from", "65", "patients", "(", "32", "AA", ",", "and", "33", "EA", "women", ")", "were", "obtained", "from", "University", "of", "Maryland", "Medical", "Center", "(", "UMD", ")", "and", "Veterans", "Administration", "(", "VA", ")", "Hospital", ",", "Baltimore", "MD", ".,", "and", "processed", "as", "previously", "described", "[", "29", "]", "." ],
+    "entities_indices" : [ [ 8, 9, 10 ], [ 16, 17 ], [ 43, 44 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "closely", "related", "basal", "like", "tumors", "also", "had", "decreased", "RASSF1A", "methylation", "(", "p", "=", "0.052", ";", "Fig.", "4b", ")", "when", "compared", "with", "other", "breast", "cancer", "subtypes", ",", "while", "the", "luminal", "A", "tumors", "tended", "to", "have", "a", "reduced", "CDH13", "methylation", "(", "p", "<", "0.03", ";", "Fig.", "4c", ")", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 9, 10 ], [ 31, 32 ], [ 37, 38 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "repeated", "the", "analysis", "for", "AA", "and", "EA", "women", "that", "were", "not", "exposed", "to", "neoadjuvant", "therapy", ",", "there", "was", "little", "difference", "from", "all", "cases", "analyzed", "(", "Fig", "S2a", ")", "." ],
+    "entities_indices" : [ [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "investigated", "the", "association", "between", "DNA", "methylation", "status", "and", "outcome", "of", "the", "patients", "." ],
+    "entities_indices" : [ [ 5, 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "addition", "to", "somatic", "mutations", ",", "tumor", "DNA", "methylation", "pattern", "were", "found", "to", "show", "differences", "between", "breast", "cancer", "subtypes", "[", "24", "]", "-", "[", "27", "]", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 7, 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "Pyrosequencing", "was", "done", "using", "the", "PSQ", "HS96", "Gold", "SNP", "Reagents", "on", "a", "PSQ", "96HS", "machine", "(", "Qiagen", ")", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 12, 13 ], [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "Thus", "CDH13", "hypermethylation", "may", "contribute", "to", "the", "distinct", "molecular", "alterations", "hypothesized", "for", "AA", "and", "EA", "tumors", "that", "may", "play", "a", "role", "in", "the", "early", "onset", "of", "breast", "cancer", "that", "lacks", "ER", "expression", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 12, 13 ], [ 15, 16 ], [ 30, 31 ] ]
+  }, {
+    "sentence_tokens" : [ "Genomic", "alterations", "that", "impact", "the", "expression", "patterns", "of", "individual", "genes", "or", "entire", "signatures", "in", "breast", "cancer", "have", "been", "described", "and", "include", ";", "inherited", "BRCA1", "and", "BRCA2", "[", "16", "]", ",", "p53", "[", "17", "]", ",", "and", "H-ras-1", "mutations", "[", "18", "]", "and", "overexpression", "of", "cyclin", "D1", "[", "19", "]", "." ],
+    "entities_indices" : [ [ 23, 24 ], [ 25, 26 ], [ 30, 31 ], [ 36, 37 ], [ 44, 45 ] ]
+  }, {
+    "sentence_tokens" : [ "Finally", ",", "Kaplan", "Meier", "survival", "analysis", "showed", "a", "significant", "association", "between", "methylation", "at", "3", "loci", "(", "RASSF1A", ",", "RARbeta2", "and", "CDH13", ")", "and", "reduced", "overall", "disease", "survival", "." ],
+    "entities_indices" : [ [ 16, 17 ], [ 18, 19 ], [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "Because", "AA", "and", "EA", "women", "with", "breast", "cancer", "experience", "differences", "in", "tumor", "subtype", "presentations", ",", "we", "investigated", "methylation", "changes", "as", "potential", "biomarkers", "for", "tumor", "subtypes", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 11, 12 ], [ 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "typical", "example", "of", "methylation", "raw", "data", "presented", "as", "pyrogram", "for", "CDH13", "CpG", "island", "is", "shown", "in", "Pyrogram", "Data", "S1", "." ],
+    "entities_indices" : [ [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "As", "shown", "in", "figure", "2", ",", "the", "Spearman", "rank", "correlation", "revealed", "significant", "inverse", "association", "between", "promoter", "methylation", "and", "gene", "expression", "for", "RAR", "beta", "2", "(", "r", "=", "-", "0.322", ";", "p", "<", "0.05", ")", "and", "SFRP1", "(", "r", "=", "-", "0.513", ";", "p", "<", "0.001", ")", ",", "suggesting", "that", "silencing", "of", "these", "genes", "is", "at", "least", "partly", "caused", "by", "promoter", "methylation", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 18, 19, 20 ], [ 21, 22 ], [ 35, 36 ] ]
+  }, {
+    "sentence_tokens" : [ "IRB", "approval", "of", "this", "protocol", "was", "obtained", "at", "all", "institutions", "(", "UMD", ",", "VA", "and", "Howard", "University", ")", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "Young", "AA", "women", "are", "at", "an", "increased", "risk", "to", "develop", "basal", "like", "breast", "tumors", ",", "which", "tend", "to", "be", "both", "more", "aggressive", "and", "therapy", "resistant", "than", "the", "luminal", "type", "tumors", "and", "also", "have", "an", "increased", "propensity", "to", "metastasize", "to", "brain", "and", "lung", "[", "10", "]", "-", "[", "12", "]", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 12, 13, 14 ], [ 28, 29 ], [ 29, 30 ] ]
+  }, {
+    "sentence_tokens" : [ "When", "z-scores", "of", "three", "genes", "that", "tended", "to", "be", "methylated", "more", "in", "AA", "patients", "(", "RASSF1A", ",", "RAR", "beta", "2", "and", "CDH13", ";", "shown", "in", "Fig.", "3B", ")", "were", "combined", ",", "the", "sum", "of", "methylation", "scores", "become", "significantly", "higher", "in", "AA", "tumors", "(", "p", "=", "0.035", ";", "Fig.", "6A", ")", "." ],
+    "entities_indices" : [ [ 12, 13 ], [ 15, 16 ], [ 17, 18 ], [ 21, 22 ], [ 40, 41 ], [ 41, 42 ] ]
+  }, {
+    "sentence_tokens" : [ "Five", "of", "the", "genes", ",", "all", "known", "tumor", "suppressor", "genes", "(", "RASSF1A", ",", "RARbeta2", ",", "CDH13", ",", "HIN1", "and", "SFRP1", ")", ",", "were", "found", "to", "be", "frequently", "hypermethylated", "in", "breast", "tumor", "tissues", "but", "not", "in", "the", "adjacent", "non", "cancerous", "tissues", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 3, 4 ], [ 7, 8, 9 ], [ 11, 12 ], [ 13, 14 ], [ 15, 16 ], [ 17, 18 ], [ 19, 20 ], [ 29, 30, 31 ] ]
+  }, {
+    "sentence_tokens" : [ "Finally", ",", "high", "methylation", "of", "RASSF1A", ",", "RAR", "beta", "2", "and", "CDH13", "loci", "were", "associated", "with", "worse", "overall", "disease", "survival", "in", "our", "analysis", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 7, 8 ], [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "To", "further", "examine", "the", "relationship", "between", "the", "methylation", "profile", "with", "patient", "characteristics", "and", "tumor", "markers", ",", "we", "focused", "on", "the", "4", "genes", "(", "RASSF1A", ",", "RAR", "beta", "2", ",", "CDH13", "and", "SFRP1", ")", "that", "showed", "the", "highest", "relative", "changes", "in", "tissue", "methylation", "status", "across", "the", "65", "tissue", "pairs", "." ],
+    "entities_indices" : [ [ 13, 14 ], [ 23, 24 ], [ 25, 26 ], [ 29, 30 ], [ 31, 32 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "CpG", "islands", "interrogated", "were", "previously", "described", ";", "p16", ",", "RASSF1A", ",", "RAR", "beta", "2", "and", "ESR1", "[", "31", "]", ",", "[", "32", "]", ",", "LINE1", ",", "CDH13", ",", "HIN1", "[", "33", "]", "and", "SFRP1", "[", "34", "]", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 10, 11 ], [ 12, 13 ], [ 16, 17 ], [ 25, 26 ], [ 27, 28 ], [ 29, 30 ], [ 34, 35 ] ]
+  }, {
+    "sentence_tokens" : [ "It", "has", "been", "suggested", "that", "the", "higher", "morality", "and", "lower", "survival", "rates", "among", "AA", "women", "are", "all", "due", "to", "factors", "associated", "with", "lower", "socioeconomic", "status", "and", "delayed", "disease", "diagnosis", "[", "4", "]", "-", "[", "7", "]", "." ],
+    "entities_indices" : [ [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "clinicopathological", "features", "did", "not", "differ", "significantly", "between", "the", "two", "patient", "groups", "by", "age", "at", "diagnosis", ",", "ER", "status", ",", "tumor", "size", "and", "disease", "stage", ",", "lymph", "node", "status", "or", "tumor", "p53", "status", "." ],
+    "entities_indices" : [ [ 17, 18 ], [ 20, 21 ], [ 30, 31 ], [ 31, 32 ] ]
+  }, {
+    "sentence_tokens" : [ "Z", "scores", "for", "DNA", "methylation", "levels", "of", "each", "gene", "was", "calculated", "across", "all", "tumor", "samples", "." ],
+    "entities_indices" : [ [ 3, 4, 5 ], [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "These", "findings", "are", "consistent", "with", "findings", "by", "others", "that", "methylation", "differences", "in", "breast", "tumors", "between", "AA", "and", "EA", "patients", "are", "perhaps", "restricted", "to", "ER", "negative", "tumors", "[", "28", "]", "." ],
+    "entities_indices" : [ [ 12, 13, 14 ], [ 15, 16 ], [ 23, 24 ], [ 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "present", "study", ",", "we", "used", "quantitative", "DNA", "methylation", "analysis", "to", "measure", "the", "methylation", "frequency", "in", "6", "known", "tumor", "suppressor", "genes", ",", "the", "estrogen", "receptor", "alpha", "and", "1", "global", "methylation", "marker", "to", "delineate", "their", "methylation", "differences", "in", "AA", "and", "EA", "patients", "and", "to", "characterize", "the", "relationship", "between", "the", "DNA", "methylation", "status", "and", "patient", "characteristics", "or", "tumor", "markers", "." ],
+    "entities_indices" : [ [ 8, 9, 10 ], [ 19, 20, 21 ], [ 24, 25, 26 ], [ 34, 35 ], [ 34, 35 ], [ 38, 39 ], [ 49, 50, 51 ], [ 56, 57 ] ]
+  }, {
+    "sentence_tokens" : [ "Our", "data", "suggests", "that", "DNA", "methylation", "reflected", "by", "the", "CDH13", ",", "RASSF1A", "and", "SFRP1", "locus", "panel", "might", "have", "a", "role", "in", "the", "phenotype", "of", "breast", "tumor", "subtypes", "." ],
+    "entities_indices" : [ [ 4, 5, 6 ], [ 9, 10 ], [ 11, 12 ], [ 13, 14 ], [ 24, 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "did", "not", "observe", "a", "significant", "association", "between", "methylation", "and", "gene", "expression", "for", "the", "RASSF1A", "and", "CDH13", "loci", ",", "suggesting", "that", "other", "repression", "mechanisms", "like", "chromatin", "silencing", "or", "methylation", "at", "other", "CpG", "island", "are", "important", "in", "RASSF1A", "and", "CDH13", "silencing", "." ],
+    "entities_indices" : [ [ 10, 11, 12 ], [ 14, 15 ], [ 16, 17 ], [ 25, 26, 27 ], [ 36, 37 ], [ 38, 39 ] ]
+  } ],
+  "emptySentences" : [ {
+    "sentence_tokens" : [ "Relationship", "between", "Tumor", "DNA", "Methylation", "Status", "and", "Patient", "Characteristics", "in", "African-American", "and", "European-American", "Women", "with", "Breast", "Cancer", "." ]
+  }, {
+    "sentence_tokens" : [ "Aberrant", "DNA", "methylation", "is", "critical", "for", "development", "and", "progression", "of", "breast", "cancer", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "investigated", "the", "association", "of", "CpG", "island", "methylation", "in", "candidate", "genes", "and", "clinicopathological", "features", "in", "65", "African-American", "(", "AA", ")", "and", "European-American", "(", "EA", ")", "breast", "cancer", "patients", "." ]
+  }, {
+    "sentence_tokens" : [ "Quantitative", "methylation", "analysis", "was", "carried", "out", "on", "bisulfite", "modified", "genomic", "DNA", "and", "sequencing", "(", "pyrosequencing", ")", "for", "promoter", "CpG", "islands", "of", "p16", ",", "ESR1", ",", "RASSF1A", ",", "RARbeta2", ",", "CDH13", ",", "HIN1", ",", "SFRP1", "genes", "and", "the", "LINE1", "repetitive", "element", "using", "matched", "paired", "non", "cancerous", "and", "breast", "tumor", "specimen", "(", "32", "AA", "and", "33", "EA", "women", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Five", "of", "the", "genes", ",", "all", "known", "tumor", "suppressor", "genes", "(", "RASSF1A", ",", "RARbeta2", ",", "CDH13", ",", "HIN1", "and", "SFRP1", ")", ",", "were", "found", "to", "be", "frequently", "hypermethylated", "in", "breast", "tumor", "tissues", "but", "not", "in", "the", "adjacent", "non", "cancerous", "tissues", "." ]
+  }, {
+    "sentence_tokens" : [ "Significant", "differences", "in", "the", "CDH13", "methylation", "status", "were", "observed", "by", "comparing", "DNA", "methylation", "between", "AA", "and", "EA", "patients", ",", "with", "more", "obvious", "CDH13", "methylation", "differences", "between", "the", "two", "patient", "groups", "in", "the", "ER-", "disease", "and", "among", "young", "patients", "(", "age", "<", "50", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "addition", ",", "we", "observed", "associations", "between", "CDH13", ",", "SFRP1", ",", "and", "RASSF1A", "methylation", "and", "breast", "cancer", "subtypes", "and", "between", "SFRP1", "methylation", "and", "patient", "'s", "age", "." ]
+  }, {
+    "sentence_tokens" : [ "Finally", ",", "Kaplan", "Meier", "survival", "analysis", "showed", "a", "significant", "association", "between", "methylation", "at", "3", "loci", "(", "RASSF1A", ",", "RARbeta2", "and", "CDH13", ")", "and", "reduced", "overall", "disease", "survival", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "conclusion", ",", "the", "DNA", "methylation", "status", "of", "breast", "tumors", "was", "found", "to", "be", "significantly", "associated", "with", "clinicopathological", "features", "and", "race", "and", "ethnicity", "of", "the", "patients", "." ]
+  }, {
+    "sentence_tokens" : [ "Introduction", "." ]
+  }, {
+    "sentence_tokens" : [ "Breast", "cancer", "is", "the", "most", "commonly", "diagnosed", "cancer", "among", "women", "in", "the", "United", "States", ",", "with", ">", "130,000", "cases", "diagnosed", "yearly", "[", "1", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Among", "the", "different", "population", "groups", "within", "the", "United", "States", ",", "the", "overall", "breast", "cancer", "incidence", "is", "highest", "in", "European", "American", "(", "EA", ")", "women", "followed", "by", "African", "American", "(", "AA", ")", "women", "[", "2", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "When", "breast", "cancer", "risk", "is", "stratified", "by", "age", ",", "EA", "women", "have", "the", "highest", "age", "adjusted", "breast", "cancer", "incidence", "among", "women", ">", "50", "years", "whereas", "in", "the", "<", "50", "age", "group", ",", "the", "pattern", "is", "different", "with", "the", "EA", "women", "having", "lower", "incidence", "rates", "than", "AA", "[", "3", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "stark", "contrast", "to", "the", "incidence", "rates", ",", "AA", "women", "have", "generally", "higher", "age", "adjusted", "mortality", "rates", "than", "EA", "women", ",", "accounting", "for", "the", "highest", "breast", "cancer", "mortality", "rates", "among", "all", "US", "population", "groups", "[", "3", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "It", "has", "been", "suggested", "that", "the", "higher", "morality", "and", "lower", "survival", "rates", "among", "AA", "women", "are", "all", "due", "to", "factors", "associated", "with", "lower", "socioeconomic", "status", "and", "delayed", "disease", "diagnosis", "[", "4", "]", "-", "[", "7", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "While", "socioeconomic", "factors", "are", "undoubtedly", "very", "important", ",", "they", "may", "not", "explain", "the", "full", "magnitude", "of", "the", "US", "survival", "health", "disparity", "in", "breast", "cancer", "[", "8]", "." ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "solving", "the", "racial", "disparity", "will", "require", "understanding", "possible", "tumor", "biological", "differences", "between", "population", "groups", "beyond", "the", "current", "knowledge", "of", "differences", "in", "hormone", "receptor", "status", "and", "disease", "grade", "." ]
+  }, {
+    "sentence_tokens" : [ "Breast", "cancer", "is", "a", "heterogeneous", "disease", "consisting", "of", "five", "major", "breast", "tumor", "subtypes", ":", "basal", ",", "human", "epidermal", "growth", "factor", "receptor", "2", "(", "HER2", ")-positive/estrogen", "receptor", "(", "ER", ")-negative", ",", "luminal", "A", ",", "luminal", "B", ",", "and", "normal", "like", "[", "9", "]", ",", "[", "10", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Young", "AA", "women", "are", "at", "an", "increased", "risk", "to", "develop", "basal", "like", "breast", "tumors", ",", "which", "tend", "to", "be", "both", "more", "aggressive", "and", "therapy", "resistant", "than", "the", "luminal", "type", "tumors", "and", "also", "have", "an", "increased", "propensity", "to", "metastasize", "to", "brain", "and", "lung", "[", "10", "]", "-", "[", "12", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "AA", "women", "also", "experience", "almost", "twice", "the", "prevalence", "of", "the", "triple", "negative", "disease", "(", "ER", ",", "progesterone", "receptor", "[", "PR", "]", ",", "and", "human", "epidermal", "growth", "receptor", "2", "[", "HER2", "]", "negative", ")", "when", "compared", "with", "EA", "women", "[", "11", "]", ",", "[", "13", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "It", "has", "been", "hypothesized", "that", "the", "higher", "likelihood", "of", "developing", "triple", "negative", "breast", "cancer", "might", "contribute", "to", "the", "higher", "mortality", "from", "breast", "cancer", "experienced", "by", "AA", "women", "compared", "with", "EA", "women", "[", "1", "]", ",", "[", "13", "]", ",", "[", "14", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Recent", "large", "scale", "gene", "expression", "profiling", "studies", "has", "confirmed", "the", "identities", "of", "these", "5", "subtypes", "based", "on", "their", "distinct", "gene", "expression", "signatures", "and", "clinical", "outcomes", "[", "10", "]", ",", "[", "11", "]", ",", "[", "15", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Genomic", "alterations", "that", "impact", "the", "expression", "patterns", "of", "individual", "genes", "or", "entire", "signatures", "in", "breast", "cancer", "have", "been", "described", "and", "include", ";", "inherited", "BRCA1", "and", "BRCA2", "[", "16", "]", ",", "p53", "[", "17", "]", ",", "and", "H-ras-1", "mutations", "[", "18", "]", "and", "overexpression", "of", "cyclin", "D1", "[", "19", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Some", "of", "these", "genetic", "alterations", "tend", "to", "occur", "more", "commonly", "in", "tumors", "of", "AA", "than", "EA", "patients", "as", "shown", "for", "p53", "and", "BRCA1/2", "mutations", "[", "20", "]", ",", "[", "21", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Moreover", ",", "Loo", "and", "coworkers", "observed", "significant", "differences", "in", "genomic", "copy", "number", "alterations", "in", "triple", "negative", "tumors", "from", "AA", "and", "EA", "women", "[", "22", "]", ",", "whereas", "other", "investigators", "have", "reported", "differences", "in", "the", "gene", "expression", "profiles", "between", "AA", "and", "EA", "tumors", "in", "pathways", "related", "to", "tumor", "angiogenesis", "and", "chemotaxis", "[", "23", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "addition", "to", "somatic", "mutations", ",", "tumor", "DNA", "methylation", "pattern", "were", "found", "to", "show", "differences", "between", "breast", "cancer", "subtypes", "[", "24", "]", "-", "[", "27", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Another", "report", "also", "observed", "that", "hormone", "receptor", "negative", "tumors", "from", "young", "AA", "patients", "show", "distinct", "DNA", "hypermethylation", "at", "certain", "loci", "when", "compared", "with", "EA", "tumors", ",", "suggesting", "candidate", "tumor", "biological", "differences", "between", "the", "two", "patient", "groups", "as", "they", "relate", "to", "cancer", "epigenetics", "[", "28", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "purpose", "of", "the", "present", "study", "was", "to", "test", "the", "hypothesis", "that", "tumor", "DNA", "methylation", "is", "different", "between", "AA", "and", "EA", "patients", ",", "as", "reported", "previously", "in", "one", "publication", ",", "and", "to", "characterize", "the", "relationship", "between", "the", "DNA", "methylation", "status", "of", "several", "breast", "cancer", "related", "genes", "and", "patient", "characteristics", "or", "tumor", "markers", "." ]
+  }, {
+    "sentence_tokens" : [ "Materials", "and", "Methods", "." ]
+  }, {
+    "sentence_tokens" : [ "Tissue", "." ]
+  }, {
+    "sentence_tokens" : [ "Fresh-frozen", "tissue", "samples", "corresponding", "to", "paired", "normal", "and", "breast", "tumor", "specimen", "from", "65", "patients", "(", "32", "AA", ",", "and", "33", "EA", "women", ")", "were", "obtained", "from", "University", "of", "Maryland", "Medical", "Center", "(", "UMD", ")", "and", "Veterans", "Administration", "(", "VA", ")", "Hospital", ",", "Baltimore", "MD", ".,", "and", "processed", "as", "previously", "described", "[", "29", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Clinical", "and", "pathological", "information", "(", "e.g", ".,", "tumor", "receptor", "status", ")", "was", "obtained", "from", "medical", "records", "and", "pathology", "reports", "." ]
+  }, {
+    "sentence_tokens" : [ "Disease", "staging", "was", "performed", "according", "to", "the", "TNM", "system", "of", "the", "American", "Joint", "Committee", "on", "Cancer", "and", "Union", "Internationale", "Contre", "le", "Cancer", "(", "AJCC", "and", "UICC", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "Nottingham", "system", "was", "used", "to", "determine", "the", "tumor", "grade", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "collection", "of", "tumor", "specimens", "and", "clinical", "and", "pathological", "information", "was", "reviewed", "and", "approved", "by", "the", "University", "of", "Maryland", "Institutional", "Review", "Board", "for", "the", "participating", "institutions", "(", "UMD", "protocol", "0298229", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "IRB", "approval", "of", "this", "protocol", "was", "obtained", "at", "all", "institutions", "(", "UMD", ",", "VA", "and", "Howard", "University", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "tissues", "were", "taken", "as", "distant", "as", "possible", "during", "routine", "surgery", "and", "none", "of", "the", "adjacent", "normal", "tissues", "contained", "visible", "tumor", "contamination", "by", "histological", "analysis", "." ]
+  }, {
+    "sentence_tokens" : [ "High", "molecular", "weight", "genomic", "DNA", "was", "isolated", "from", "fresh-frozen", "breast", "tissues", "using", "the", "DNeasy", "(R)", "isolation", "kit", "following", "the", "manufactures", "directions", "for", "purification", "from", "human", "tissues", "(", "Qiagen", ",", "Valencia", ",", "CA", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "DNA", "concentration", "was", "measured", "using", "the", "Nanodrop", "Spectrophotometer", "(", "Nanodrop", ",", "Wilmington", ",", "DE", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Bisulfite", "modification", ",", "PCR", ",", "and", "pyrosequencing", "analysis", "." ]
+  }, {
+    "sentence_tokens" : [ "High", "molecular", "weight", "genomic", "DNA", "extracted", "from", "breast", "tissues", "was", "modified", "using", "sodium", "bisulfite", "treatment", "[", "30", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Briefly", ",", "genomic", "DNA", "(", "2", "i", "g", ")", "was", "denatured", "in", "0.3", "mol/L", "NaOH", "at", "37", "degrees", "C", "for", "15", "minutes", ";", "sodium", "bisulfite", "and", "hydroquinone", "were", "added", "to", "final", "concentrations", "of", "3.1", "mol/L", "and", "0.5", "mmol/L", ",", "respectively", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "reaction", "was", "incubated", "at", "50", "degrees", "C", "for", "16", "hours", "and", "desalted", "using", "Wizard", "DNA", "purification", "resin", "(", "Promega", ")", "according", "to", "the", "instruction", "of", "the", "manufacturer", "." ]
+  }, {
+    "sentence_tokens" : [ "Bisulfite", "modification", "was", "completed", "by", "DNA", "desulfonation", "in", "0.3", "mol/L", "NaOH", "at", "37", "degrees", "C", "for", "15", "minutes", "." ]
+  }, {
+    "sentence_tokens" : [ "Modified", "DNA", "was", "precipitated", "with", "ethanol", ",", "washed", "in", "70", "%", "ethanol", ",", "dried", ",", "and", "dissolved", "in", "50", "i", "L", "of", "TE", "buffer", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "PCR", "primers", "were", "designed", "to", "assay", "the", "methylation", "status", "of", "CpGs", "within", "0.5", "kb", "from", "the", "transcription", "start", "site", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "CpG", "islands", "interrogated", "were", "previously", "described", ";", "p16", ",", "RASSF1A", ",", "RAR", "beta", "2", "and", "ESR1", "[", "31", "]", ",", "[", "32", "]", ",", "LINE1", ",", "CDH13", ",", "HIN1", "[", "33", "]", "and", "SFRP1", "[", "34", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "PCR", "primer", "sequences", "and", "sequencing", "primer", "sequences", "are", "listed", "in", "the", "Table", "S1", "." ]
+  }, {
+    "sentence_tokens" : [ "Either", "one-step", "or", "two-step", "PCR", "reactions", "were", "carried", "out", "using", "2", "i", "L", "of", "bisulfite", "converted", "genomic", "DNA", "and", "either", "one", "or", "two", "sets", "of", "different", "bisulfite", "PCR", "primers", "in", "a", "standard", "PCR", "reaction", "mix", "." ]
+  }, {
+    "sentence_tokens" : [ "One", "of", "the", "primers", "(", "reverse", "primer", ")", "in", "the", "final", "PCR", "reaction", "was", "biotinylated", "to", "create", "an", "ssDNA", "template", "for", "the", "pyrosequencing", "reaction", "." ]
+  }, {
+    "sentence_tokens" : [ "Where", "indicated", ",", "we", "used", "a", "previously", "described", "amplification", "protocol", "[", "35", "]", "based", "on", "the", "universal", "primer", "approach", "." ]
+  }, {
+    "sentence_tokens" : [ "Briefly", ",", "the", "biotinylated", "reverse", "primer", "was", "substituted", "with", "a", "5", "'", "tailed", "unlabeled", "reverse", "primer", "and", "a", "biotinylated", "universal", "primer", "at", "a", "ratio", "of", "1", ":", "9", "in", "the", "PCR", "reaction", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "integrity", "of", "the", "PCR", "product", "was", "verified", "on", "1.5", "%", "agarose", "gels", "with", "ethidium", "bromide", "staining", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "PCR", "product", "was", "immobilized", "on", "streptavidin-Sepharose", "beads", "(", "Amersham", ")", ",", "washed", ",", "and", "denatured", ",", "and", "the", "biotinylated", "strands", "were", "released", "into", "annealing", "buffer", "containing", "the", "sequencing", "primer", "." ]
+  }, {
+    "sentence_tokens" : [ "Pyrosequencing", "was", "done", "using", "the", "PSQ", "HS96", "Gold", "SNP", "Reagents", "on", "a", "PSQ", "96HS", "machine", "(", "Qiagen", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Bisulfite", "converted", "DNA", "from", "blood", "of", "normal", "volunteers", "and", "blank", "reactions", ",", "with", "water", "substituted", "for", "DNA", ",", "served", "as", "negative", "control", "and", "bisulfite", "converted", "SssI", "methylase", "-", "treated", "blood", "DNA", "served", "as", "a", "positive", "control", "." ]
+  }, {
+    "sentence_tokens" : [ "Each", "bisulfite", "PCR", "and", "pyrosequencing", "reaction", "was", "done", "at", "least", "twice", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "typical", "example", "of", "methylation", "raw", "data", "presented", "as", "pyrogram", "for", "CDH13", "CpG", "island", "is", "shown", "in", "Pyrogram", "Data", "S1", "." ]
+  }, {
+    "sentence_tokens" : [ "Statistical", "analysis", "." ]
+  }, {
+    "sentence_tokens" : [ "Statistical", "analyses", "were", "performed", "using", "R", ",", "a", "language", "and", "environment", "for", "statistical", "computing", "by", "R", "Development", "Core", "Team", "at", "R", "Foundation", "for", "Statistical", "Computing", ",", "and", "packages", "in", "Bioconductor", "[", "36", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Specifically", ",", "survival", "analysis", "was", "performed", "using", "survival", "package", "." ]
+  }, {
+    "sentence_tokens" : [ "Z", "scores", "for", "DNA", "methylation", "levels", "of", "each", "gene", "was", "calculated", "across", "all", "tumor", "samples", "." ]
+  }, {
+    "sentence_tokens" : [ "Groups", "of", "samples", "were", "compared", "by", "Mann-Whitney", "test", "with", "Bonferroni", "correction", "." ]
+  }, {
+    "sentence_tokens" : [ "Results", "." ]
+  }, {
+    "sentence_tokens" : [ "Methylation", "status", "of", "gene", "promoter", "CpG", "islands", "in", "matched", "normal", "and", "breast", "cancer", "tissues", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "evaluated", "the", "DNA", "methylation", "status", "for", "a", "panel", "of", "genes", "in", "paired", "adjacent", "non", "cancerous", "and", "breast", "tumor", "specimens", "from", "a", "total", "of", "65", "patients", "(", "32", "AA", "and", "33", "EA", "women", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "demographic", ",", "clinicopathological", "characteristics", "and", "percent", "ancestry", "of", "the", "patient", "samples", "are", "presented", "in", "Table", "1", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "clinicopathological", "features", "did", "not", "differ", "significantly", "between", "the", "two", "patient", "groups", "by", "age", "at", "diagnosis", ",", "ER", "status", ",", "tumor", "size", "and", "disease", "stage", ",", "lymph", "node", "status", "or", "tumor", "p53", "status", "." ]
+  }, {
+    "sentence_tokens" : [ "There", "are", "equal", "numbers", "of", "AA", "and", "EA", "patients", "with", "triple", "negative", "or", "basal", "like", "tumors", "in", "the", "data", "set", "." ]
+  }, {
+    "sentence_tokens" : [ "AA", "patients", "tended", "to", "have", "higher", "grade", "tumors", "more", "frequently", "than", "EA", "patients", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "investigated", "the", "methylation", "status", "of", "8", "genes", "of", "which", "6", "are", "known", "growth", "suppressor", "genes", "namely", "p16", ",", "RASSF1A", ",", "RAR", "beta", "2", ",", "CDH13", ",", "HIN1", "and", "SFRP1", "genes", ",", "with", "the", "other", "2", "encoding", "the", "estrogen", "receptor", "alpha", "(", "ESR1", ")", "or", "representing", "a", "global", "methylation", "marker", ",", "the", "LINE1", "repetitive", "elements", "[", "31", "]", "-", "[", "34", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "used", "pyrosequencing", "assays", "to", "analyze", "the", "methylation", "status", "of", "these", "genes", "in", "the", "65", "matched", "tissue", "pairs", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "each", "gene", "studied", ",", "the", "percentage", "(", "%", ")", "of", "methylation", "at", "a", "specific", "promoter", "was", "compared", "between", "the", "non", "cancerous", "and", "the", "cancerous", "tissues", "(", "Fig.", "1", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "pyrosequencing", "analysis", "was", "repeated", "only", "with", "cases", "that", "were", "not", "exposed", "to", "neoadjuvant", "therapy", "(", "Fig", "S1", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "There", "was", "little", "difference", "from", "all", "cases", "analyzed", "." ]
+  }, {
+    "sentence_tokens" : [ "Five", "of", "the", "8", "genes", "(", "RASSF1A", ",", "RAR", "beta", "2", ",", "CDH13", ",", "HIN1", "and", "SFRP1", ")", "were", "frequently", "hypermethylated", "in", "the", "tumor", "samples", "." ]
+  }, {
+    "sentence_tokens" : [ "ESR1", "was", "uncommonly", "methylated", "and", "the", "p16", "gene", "was", "not", "methylated", "in", "either", "tumor", "or", "non", "cancerous", "breast", "tissues", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "LINE1", "repetitive", "element", ",", "a", "global", "methylation", "marker", ",", "showed", "a", "distinct", "methylation", "pattern", "and", "was", "found", "to", "be", "hypermethylated", "in", "both", "the", "malignant", "and", "non", "cancerous", "breast", "tissue", "samples", ",", "as", "one", "may", "expect", "with", "a", "significant", "reduction", "of", "%", "LINE1", "methylation", "in", "tumors", "compared", "to", "non", "cancerous", "tissue", "samples", "." ]
+  }, {
+    "sentence_tokens" : [ "To", "further", "examine", "the", "relationship", "between", "the", "methylation", "profile", "with", "patient", "characteristics", "and", "tumor", "markers", ",", "we", "focused", "on", "the", "4", "genes", "(", "RASSF1A", ",", "RAR", "beta", "2", ",", "CDH13", "and", "SFRP1", ")", "that", "showed", "the", "highest", "relative", "changes", "in", "tissue", "methylation", "status", "across", "the", "65", "tissue", "pairs", "." ]
+  }, {
+    "sentence_tokens" : [ "Correlation", "between", "promoter", "methylation", "and", "gene", "expression", "level", "." ]
+  }, {
+    "sentence_tokens" : [ "To", "assess", "the", "biological", "significance", "of", "promoter", "methylation", "in", "the", "breast", "tumor", "samples", ",", "we", "correlated", "the", "relative", "methylation", "frequency", "with", "gene", "expression", "data", "from", "a", "previously", "described", "genome-wide", "gene", "expression", "study", "[", "23", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "As", "shown", "in", "figure", "2", ",", "the", "Spearman", "rank", "correlation", "revealed", "significant", "inverse", "association", "between", "promoter", "methylation", "and", "gene", "expression", "for", "RAR", "beta", "2", "(", "r", "=", "-", "0.322", ";", "p", "<", "0.05", ")", "and", "SFRP1", "(", "r", "=", "-", "0.513", ";", "p", "<", "0.001", ")", ",", "suggesting", "that", "silencing", "of", "these", "genes", "is", "at", "least", "partly", "caused", "by", "promoter", "methylation", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "did", "not", "observe", "a", "significant", "association", "between", "methylation", "and", "gene", "expression", "for", "the", "RASSF1A", "and", "CDH13", "loci", ",", "suggesting", "that", "other", "repression", "mechanisms", "like", "chromatin", "silencing", "or", "methylation", "at", "other", "CpG", "island", "are", "important", "in", "RASSF1A", "and", "CDH13", "silencing", "." ]
+  }, {
+    "sentence_tokens" : [ "Relationship", "between", "gene", "methylation", "status", "and", "patient", "characteristics", "." ]
+  }, {
+    "sentence_tokens" : [ "To", "further", "explore", "the", "association", "of", "the", "tumor", "methylation", "status", "with", "patient", "characteristics", "such", "as", "age", ",", "race", "and", "ethnicity", "and", "ER", "status", ",", "we", "initially", "examined", "gene", "methylation", "differences", "between", "AA", "and", "EA", "women", "(", "Fig.", "3a", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "statistical", "analysis", "revealed", "difference", "in", "the", "methylation", "status", "between", "AA", "and", "EA", "patients", "for", "the", "CDH13", "gene", "(", "p", "=", "0.023", ")", ",", "but", "not", "for", "any", "other", "gene", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "repeated", "the", "analysis", "for", "AA", "and", "EA", "women", "that", "were", "not", "exposed", "to", "neoadjuvant", "therapy", ",", "there", "was", "little", "difference", "from", "all", "cases", "analyzed", "(", "Fig", "S2a", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "When", "we", "studied", "the", "relative", "methylation", "frequency", "after", "stratification", "into", "two", "age", "groups", "with", "the", "cutoff", "point", "at", "age", "50", ",", "we", "found", "that", "young", "(", "<", "50", "years", "of", "age", ")", "and", "ER", "negative", "AA", "patients", "had", "a", "significantly", "higher", "methylation", "index", "at", "the", "CDH13", "locus", "than", "the", "matched", "EA", "patients", "(", "p", "<", "0.005", ";", "Fig.", "3b", ")", ",", "while", "the", "analysis", "of", "RASSF1A", ",", "RAR", "beta", "2", "and", "SFRP1", "did", "not", "find", "significant", "differences", "in", "this", "subgroup", "analysis", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "contrast", ",", "we", "could", "not", "detect", "any", "methylation", "differences", "between", "AA", "and", "EA", "patients", "in", "the", "ER", "positive", "disease", ",", "indicating", "that", "the", "CDH13", "differences", "between", "the", "two", "patient", "groups", "are", "restricted", "to", "ER", "negative", "tumors", "." ]
+  }, {
+    "sentence_tokens" : [ "These", "findings", "are", "consistent", "with", "findings", "by", "others", "that", "methylation", "differences", "in", "breast", "tumors", "between", "AA", "and", "EA", "patients", "are", "perhaps", "restricted", "to", "ER", "negative", "tumors", "[", "28", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "To", "ascertain", "whether", "individual", "ancestry", "is", "influencing", "the", "methylation", "status", ",", "we", "carried", "out", "a", "correlation", "analysis", "between", "West", "African", "score", "(", "for", "AA", ")", "or", "European", "score", "(", "for", "EA", ")", "and", "methylation", "score", "(", "Fig", "S2b", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "There", "was", "no", "significant", "correlation", "between", "CDH13", "methylation", "and", "individual", "ancestry", "score", "suggesting", "that", "no", "functional", "African", "ancestry", "related", "Single", "nucleotide", "polymorphic", "marker", "(", "s", ")", "is", "affecting", "CDH13", "methylation", "." ]
+  }, {
+    "sentence_tokens" : [ "Lastly", ",", "age", "itself", "was", "modestly", "associated", "with", "the", "methylation", "status", "at", "the", "SFRP1", "locus", "in", "the", "tumor", "samples", "tumor", "samples", "(", "p", "=", "0.084", ";", "Fig.", "3c", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "change", "is", "not", "correlated", "with", "normal", "samples", "was", "there", "was", "little", "variation", "in", "%", "methylation", "in", "normal", "tissues", "(", "as", "shown", "in", "Fig.", "1", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Overall", ",", "we", "observed", "the", "trend", "that", "tumors", "of", "older", "patients", "tend", "to", "have", "increased", "promoter", "methylation", "." ]
+  }, {
+    "sentence_tokens" : [ "Relationship", "between", "gene", "methylation", "and", "tumor", "subtypes", "." ]
+  }, {
+    "sentence_tokens" : [ "Next", ",", "we", "analyzed", "tumor", "characteristics", "to", "investigate", "whether", "there", "is", "a", "correlation", "of", "%", "methylation", "with", "clinical", "outcomes", "(", "Fig.", "4a", "-", "c", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "observed", "that", "triple", "negative", "breast", "cancers", "tended", "to", "have", "increased", "CDH13", "methylation", "(", "p", "=", "0.044", ")", "and", "a", "decreased", "methylation", "of", "the", "RASSF1A", "(", "p", "<", "0.02", ")", "and", "SFRP1", "(", "p", "<", "0.05", ",", "Fig.", "4a", ")", "genes", "when", "compared", "with", "other", "subtypes", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "closely", "related", "basal", "like", "tumors", "also", "had", "decreased", "RASSF1A", "methylation", "(", "p", "=", "0.052", ";", "Fig.", "4b", ")", "when", "compared", "with", "other", "breast", "cancer", "subtypes", ",", "while", "the", "luminal", "A", "tumors", "tended", "to", "have", "a", "reduced", "CDH13", "methylation", "(", "p", "<", "0.03", ";", "Fig.", "4c", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Correlating", "gene", "methylation", "changes", "with", "neoadjuvant", "therapy", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "investigated", "the", "association", "of", "relative", "methylation", "changes", "in", "breast", "tumors", "with", "neoadjuvant", "therapy", "by", "comparing", "tumors", "that", "received", "neoadjuvant", "therapy", "(", "n", "=", "9", ")", "to", "those", "that", "did", "not", "(", "n", "=", "53", ";", "Mann-Whitney", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Methylation", "signatures", "that", "are", "associated", "with", "survival", "and", "ethnic", "difference", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "investigated", "the", "association", "between", "DNA", "methylation", "status", "and", "outcome", "of", "the", "patients", "." ]
+  }, {
+    "sentence_tokens" : [ "While", "the", "DNA", "methylation", "status", "of", "individual", "genes", "were", "not", "associated", "with", "patients", "survival", "(", "data", "not", "shown", ")", ",", "we", "tested", "if", "the", "combination", "of", "genes", "could", "improve", "the", "ability", "in", "detecting", "the", "association", "between", "methylation", "status", "and", "disease", "outcome", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "integrated", "the", "DNA", "methylation", "status", "of", "multiple", "genes", "by", "summing", "their", "methylation", "levels", "as", "z-scores", "." ]
+  }, {
+    "sentence_tokens" : [ "When", "z-scores", "of", "three", "genes", "that", "tended", "to", "be", "methylated", "more", "in", "AA", "patients", "(", "RASSF1A", ",", "RAR", "beta", "2", "and", "CDH13", ";", "shown", "in", "Fig.", "3B", ")", "were", "combined", ",", "the", "sum", "of", "methylation", "scores", "become", "significantly", "higher", "in", "AA", "tumors", "(", "p", "=", "0.035", ";", "Fig.", "6A", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Furthermore", ",", "patients", "with", "high", "methylation", "scores", "revealed", "poor", "outcome", "(", "Fig.", "6B", ")", ",", "implying", "the", "potential", "association", "between", "methylation", "of", "these", "genes", "and", "poor", "outcome", "of", "AA", "patients", "." ]
+  }, {
+    "sentence_tokens" : [ "Discussion", "." ]
+  }, {
+    "sentence_tokens" : [ "Many", "existing", "data", "indicates", "that", "aberrant", "DNA", "methylation", "is", "associated", "with", "breast", "cancer", "risk", ";", "however", ",", "to", "our", "knowledge", "there", "is", "only", "one", "published", "report", "to", "suggest", "an", "association", "between", "DNA", "methylation", "changes", "and", "invasive", "ductal", "breast", "cancers", "comparing", "AA", "patients", "with", "EA", "patients", "[", "28", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "present", "study", ",", "we", "used", "quantitative", "DNA", "methylation", "analysis", "to", "measure", "the", "methylation", "frequency", "in", "6", "known", "tumor", "suppressor", "genes", ",", "the", "estrogen", "receptor", "alpha", "and", "1", "global", "methylation", "marker", "to", "delineate", "their", "methylation", "differences", "in", "AA", "and", "EA", "patients", "and", "to", "characterize", "the", "relationship", "between", "the", "DNA", "methylation", "status", "and", "patient", "characteristics", "or", "tumor", "markers", "." ]
+  }, {
+    "sentence_tokens" : [ "Our", "most", "notable", "observation", "is", "the", "presence", "of", "a", "significantly", "higher", "methylation", "at", "a", "CpG", "site", "in", "the", "CDH13", "gene", "in", "breast", "tumor", "samples", "from", "AA", "women", "when", "compared", "with", "EA", "women", "among", "young", "and", "ER", "negative", "patients", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "CDH13", "gene", "is", "a", "well-known", "tumor", "suppressor", "gene", "whose", "protein", "product", "is", "a", "putative", "mediator", "of", "cell-cell", "interaction", "and", "cancer", "cell", "invasion", "and", "metastasis", "[", "37", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Thus", "CDH13", "hypermethylation", "may", "contribute", "to", "the", "distinct", "molecular", "alterations", "hypothesized", "for", "AA", "and", "EA", "tumors", "that", "may", "play", "a", "role", "in", "the", "early", "onset", "of", "breast", "cancer", "that", "lacks", "ER", "expression", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "humans", ",", "methylation", "changes", "are", "more", "and", "more", "recognized", "as", "part", "of", "pathologic", "aging", "physiology", "[", "31", "]", ",", "[", "38", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "While", "associations", "between", "gene", "promoter", "methylation", "and", "age", "have", "been", "reported", ",", "there", "is", "inconsistency", "in", "findings", "from", "different", "groups", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "observed", "that", "age", "was", "significantly", "associated", "with", "methylation", "of", "SFRP1", "gene", "and", "may", "affect", "AA", "differently", "than", "EA", "women", "." ]
+  }, {
+    "sentence_tokens" : [ "Our", "data", "offer", "the", "possibility", "that", "gene", "methylation", "pattern", "in", "breast", "tissues", "may", "contribute", "to", "altered", "gene", "expression", "in", "older", "AA", "and", "EA", "individuals.Recent", "microarray", "profiling", "of", "invasive", "breast", "carcinomas", "has", "revealed", "5", "distinct", "tumor", "subtypes", "with", "distinct", "gene", "expression", "signatures", "and", "clinical", "outcomes", "." ]
+  }, {
+    "sentence_tokens" : [ "Because", "AA", "and", "EA", "women", "with", "breast", "cancer", "experience", "differences", "in", "tumor", "subtype", "presentations", ",", "we", "investigated", "methylation", "changes", "as", "potential", "biomarkers", "for", "tumor", "subtypes", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "65", "cases", "that", "we", "tested", ",", "14", "cases", "were", "triple", "negative", "tumors", "and", "tended", "to", "have", "increased", "CDH13", "methylation", "and", "a", "decreased", "methylation", "of", "the", "RASSF1A", "and", "SFRP1", "genes", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "basal", "like", "tumors", "(", "13", "cases", ")", "tended", "to", "have", "a", "decrease", "RASSF1A", "methylation", "whereas", "the", "luminal", "A", "tumors", "(", "21", "cases", ")", "tended", "to", "have", "a", "decrease", "CDH13", "methylation", "." ]
+  }, {
+    "sentence_tokens" : [ "Our", "data", "suggests", "that", "DNA", "methylation", "reflected", "by", "the", "CDH13", ",", "RASSF1A", "and", "SFRP1", "locus", "panel", "might", "have", "a", "role", "in", "the", "phenotype", "of", "breast", "tumor", "subtypes", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "did", "not", "see", "any", "correlation", "of", "methylation", "with", "lymph", "node", ",", "tumor", "grade", "which", "may", "mainly", "reflect", "a", "limitation", "on", "the", "sample", "size", "used", "in", "this", "study.Methylation", "of", "specific", "candidate", "genes", "or", "groups", "of", "genes", "has", "been", "associated", "with", "poorer", "prognosis", "and", "these", "genes", "may", "affect", "tumor", "aggressiveness", "independent", "of", "their", "methylation", "phenotype", "[", "39", "]", "-", "[", "41", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Such", "candidate", "genes", "are", "being", "explored", "as", "potential", "biomarkers", "for", "detecting", "breast", "cancer", "invasion", "and", "for", "predicting", "response", "to", "neoadjuvant", "therapy", "as", "well", "as", "other", "therapeutic", "intermediates", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "observed", "that", "neoadjuvant", "therapy", "may", "affect", "RASSF1A", "methylation", "suggesting", "that", "RASSF1A", "methylation", "could", "actually", "be", "a", "useful", "predictive", "marker", "for", "neoadjuvant", "therapy", "response", "." ]
+  }, {
+    "sentence_tokens" : [ "Finally", ",", "high", "methylation", "of", "RASSF1A", ",", "RAR", "beta", "2", "and", "CDH13", "loci", "were", "associated", "with", "worse", "overall", "disease", "survival", "in", "our", "analysis", "." ]
+  }, {
+    "sentence_tokens" : [ "These", "3", "loci", "tended", "to", "be", "more", "methylated", "in", "AA", "compared", "with", "EA", "tumors", "supporting", "our", "hypothesis", "that", "differences", "in", "methylation", "patterns", "may", "contribute", "to", "the", "more", "aggressive", "and", "poorer", "disease", "outcome", "in", "AA", "women.Consistent", "differences", "in", "the", "methylation", "pattern", "between", "AA", "and", "EA", "breast", "cancer", "cases", "can", "be", "attributed", "to", "environmental", "factors", "including", "dietary", "factors", "(", "e.g", ".,", "availability", "of", "methyl", "donors", ")", ",", "or", "functional", "SNP", "allele", "frequencies", "." ]
+  }, {
+    "sentence_tokens" : [ "Diet-low", "levels", "of", "S-adenosyl", "methionine", "(", "SAM", ")", ",", "and", "the", "production", "of", "SAM", "depends", "on", "dietary", "factors", "such", "as", "folate", ",", "vitamin", "B6", ",", "and", "vitamin", "B12", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "main", "role", "of", "folate", "is", "to", "provide", "one-carbon", "units", "in", "several", "reactions", "necessary", "for", "DNA", "methylation", "and", "synthesis", ",", "while", "vitamins", "B12", "and", "B6", "serve", "as", "cofactors", "in", "some", "of", "these", "reactions", "[", "42", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Sustained", "low", "levels", "of", "these", "nutrients", "may", "lead", "to", "disturbance", "in", "DNA", "methylation", ",", "synthesis", ",", "and", "repair", ",", "possibility", "influencing", "breast", "cancer", "disparity.In", "conclusion", ",", "ongoing", "studies", "clearly", "demonstrates", "differential", "DNA", "methylation", "patterns", "in", "AA", "and", "EA", "breast", "cancer", "cases", "that", "may", "represent", "an", "integration", "of", "lifestyle", "and", "genetic", "predisposing", "factors", "resulting", "in", "altered", "patterns", "of", "gene", "expression", "and", "differences", "in", "clinical", "outcome", "and", "behavior", "." ]
+  } ]
+}

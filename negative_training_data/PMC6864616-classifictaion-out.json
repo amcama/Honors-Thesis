@@ -1,1 +1,783 @@
-[ ]
+{
+  "regulations" : [ ],
+  "hardInstances" : [ ],
+  "withoutRegulations" : [ {
+    "sentence_tokens" : [ "Consequently", ",", "at", "each", "iteration", "of", "the", "negotiation", "procedure", ",", "the", "sensor", "'", "s", "CIT", "is", "periodically", "updated", "in", "the", "MCASNs", "." ],
+    "entities_indices" : [ [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "addition", ",", "the", "shortest", "path", "routing", "result", "in", "high", "routing", "table", "management", "cost", "and", "congestion", "problems", "because", "of", "quickly", "draining", "the", "residual", "energy", "frequently", "used", "by", "ASNs", "nearer", "to", "the", "sink", "." ],
+    "entities_indices" : [ [ 27, 28 ], [ 31, 32 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "interference", "range", "based", "on", "the", "minimum", "distance", "(", "D", ")", "information", "between", "the", "SU", "transmitter", "and", "PU", "receiver", "away", "from", "each", "other", "can", "be", "computed", "as", ":(", "27", ")", "S", "i", "r", "(", "D", ")", "=", "PPU", "i", "'", "." ],
+    "entities_indices" : [ [ 15, 16 ], [ 17, 18 ], [ 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "rate", "is", "found", "to", "be", "extremely", "low", "around", "1", "%", "in", "QoSRP", "nearly", "throughout", "the", "simulation", "period", ",", "compared", "to", "all", "other", "routing", "protocols", "in", "UWSNs", "." ],
+    "entities_indices" : [ [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "Thus", ",", "for", "each", "secondary", "user", ",", "the", "constraint", "is", "to", "limit", "all", "neighboring", "acoustic", "sensor", "nodes", "of", "a", "secondary", "user", "for", "using", "different", "spectrum", "channels", "for", "avoiding", "the", "interference", "effect", "in", "the", "UWSNs", ",", "which", "are", "satisfied", "by", "the", "constraints", "in", "Equation", "(", "28", ")", "can", "be", "numerically", "written", "as", ":(", "28", ")", "I", "n", "t", "f", "=", "sum", "i", "=", "1", "n", "sum", "j", "=", "1", "m", "G", "(", "PU", "i", ",", "PS", "j", ")", "C", "i", "<=", "TI", "n", "t", "f", "(", "PS", "j", ")", "<=", "1", ",", "for-all", "PU", "i", "in", "C", "n", "subject", "to", ":(", "28a", ")", "I", "n", "t", "(", "PS", "j", "(", "C", "i", ")", ")", "in", "R", "i", "<=", "I", "n", "t", "f", "(", "tau", "s", ")", "<", "1", "(", "28b", ")", "E", "t", "n", "(", "PS", "j", "(", "C", "j", ")", ")", "in", "R", "j", "<=", "I", "n", "t", "f", "(", "tau", "s", ")", "<", "1", "(", "28c", ")", "I", "n", "t", "(", "PS", "j", "(", "C", "i", ")", ")", "in", "R", "i", "|", "R", "j", "<=", "I", "n", "t", "f", "(", "tau", "s", ")", "<=", "1", "(", "28d", ")", "E", "t", "n", "(", "PS", "j", "(", "C", "i", ")", ")", "in", "R", "j", "|", "R", "i", "<=", "I", "n", "t", "f", "(", "tau", "s", ")", "<=", "1", "(", "28e", ")", "I", "n", "t", "(", "PS", "j", "(", "C", "i", ")", ")", "in", "R", "j", "union", "R", "j", "<=", "I", "n", "t", "f", "(", "tau", "s", ")", "<=", "1", "(", "28f", ")", "PU", "i", "intersection", "PS", "j", "(", "C", "i", ")", "in", "R", "i", "union", "R", "j", "!=", "C", "i", "(", "28g", ")", "PU", "i", "intersection", "PS", "j", "(", "C", "i", ")", "in", "R", "i", "union", "R", "j", "=C", "k", ",", "C", "k", "subset/equal", "C", "m", "a", "x", "(", "28h", ")", "for-all", "l", "j", "(", "C", "i", ")", "<=", "C", "k", "<=", "1", ";", "for-all", "PS", "j", "in", "(", "R", "i", ",", "R", "j", ")", ",", "for-all", "l", "j", "in", "L", "(", "28i", ")", "l", "j", "(", "C", "i", ")", ">", "0", ";", "R", "i", "union", "R", "j", ">=", "0", ";", "I", "n", "t", "f", ">=", "0", "(", "28j", ")", "tau", "s", ">=", "0", ";", "1", "<", "tau", "s", "<", "tau", "Constraints", "in", "(", "28a", ")", "and", "(", "28b", ")", "ensure", "that", "the", "internal", "(", "I", "n", "t", ")", "and", "external", "(", "E", "t", "n", ")", "interferences", "of", "the", "primary", "or", "secondary", "users", "belong", "to", "a", "different", "regions", "R", "i", "and", "R", "j", "using", "different", "frequency", "channels", "C", "i", "and", "C", "j", "at", "time", "tau", "s", "is", "less", "than", "the", "defined", "threshold", "level", "." ],
+    "entities_indices" : [ [ 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70 ], [ 71, 72 ], [ 74, 75 ], [ 80, 81 ], [ 85, 86 ], [ 92, 93 ], [ 106, 107 ], [ 134, 135 ], [ 162, 163 ], [ 193, 194 ], [ 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217 ], [ 224, 225 ], [ 251, 252 ], [ 254, 255 ], [ 272, 273 ], [ 275, 276 ], [ 314, 315 ], [ 321, 322, 323 ], [ 342, 343, 344, 345, 346, 347, 348, 349, 350, 351, 352, 353, 354, 355, 356, 357, 358, 359, 360, 361, 362, 363 ], [ 423, 424 ] ]
+  }, {
+    "sentence_tokens" : [ "Usually", ",", "a", "candidate", "with", "high", "residual", "energy", ",", "lower", "distance", "to", "the", "source", "node", "and", "sink", "is", "given", "high", "priority", "in", "the", "routing", "table", "." ],
+    "entities_indices" : [ [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "key", "objective", "function", "of", "the", "EnD", "mechanism", "(", "phi", "UWCD", "(", "1", ")", ")", "of", "the", "proposed", "algorithm", "is", "numerically", "indicated", "as", ":", "for-all", "i", "=", "{", "1,2", ",", "..." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "It", "indicates", "that", "the", "congestion", "management", "efficiency", "of", "QERP", "is", "higher", "around", "90", "%", "compared", "to", "the", "MERP", "and", "LRP", "routing", "protocols", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 17, 18 ], [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "Thus", ",", "the", "packets", "forwarding", "by", "employing", "simple", "topology", "information", "(", "hop", "count", ")", ",", "angle", "information", ",", "residual", "energy", "and", "previous", "history", "of", "successful", "transmissions", "in", "a", "greedy", "manner", "towards", "the", "sink", "greatly", "reduce", "the", "congestion", ",", "data", "path", "loops", ",", "and", "balances", "the", "energy", "consumption", "load", "of", "UWSNs", "." ],
+    "entities_indices" : [ [ 32, 33 ] ]
+  }, {
+    "sentence_tokens" : [ "These", "location-aware", "ASNs", "(", "computed", "by", "using", "self", "localization", "scheme", "in", "[", "32", "]", ")", "deployed", "for", "continuous", "oceanographic", "data", "collection", "are", "equipped", "with", "omnidirectional", "acoustic", "transceivers", "have", "identical", "communication", "range", "and", "asymmetric", "communication", "links", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "Thus", ",", "each", "SU", "based", "on", "its", "local", "sensing", "observation", "exchanges", "decision", "on", "the", "existence", "or", "non", "existence", "of", "the", "primary", "signals", "in", "the", "UWSNs.The", "receiver", "SU", "combines", "the", "received", "sensing", "information", "with", "its", "own", "information", "and", "after", "some", "necessary", "calculations", "makes", "an", "ultimate", "decision", "whether", "the", "PU", "is", "active", "or", "not", "in", "the", "network", "." ],
+    "entities_indices" : [ [ 47, 48 ] ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "the", "statistical", "model", "of", "the", "PU", "s", "behavior", "must", "be", "simple", "enough", "that", "describes", "precisely", "how", "the", "PU", "s", "are", "envisioned", "to", "operate", "in", "the", "network", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "At", "this", "stage", ",", "each", "source", "node", "has", "the", "multiple", "constructed", "data", "paths", "information", "towards", "the", "sea", "surface", "sink", "." ],
+    "entities_indices" : [ [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "By", "contrast", ",", "in", "the", "GCoS", "approach", ",", "a", "set", "of", "predefined", "ASNs", "is", "assigned", "to", "monitor", "the", "activities", "of", "a", "channel", "in", "a", "group", "." ],
+    "entities_indices" : [ [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "hard", "decision", "mechanism", "after", "considering", "the", "individual", "SU", "s", "local", "decisions", "conveniently", "applies", "the", "linear", "fusion", "rules", "such", "as", "AND", ",", "OR", ",", "and", "K-out-of-M", "to", "obtain", "a", "reliable", "cooperative", "decision", "." ],
+    "entities_indices" : [ [ 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "neighboring", "discovery", "process", "finds", "and", "maintains", "the", "updated", "neighboring", "ASNs", "information", "for", "each", "ASN", "in", "UWSNs", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "designed", "scheme", "employs", "a", "recovery", "mode", "procedure", "based", "on", "the", "ASNs", "depth", "adjustment", "during", "relaying", "data", "packets", "from", "ASNs", "in", "void", "regions", "to", "the", "sea", "surface", "sink", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 19, 20 ], [ 27, 28 ] ]
+  }, {
+    "sentence_tokens" : [ "Generally", ",", "the", "forwarders", "switch", "to", "sleep", "mode", "if", "they", "do", "not", "have", "more", "data", "to", "transmit", "to", "the", "sink", "." ],
+    "entities_indices" : [ [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "can", "be", "computed", "numerically", "by", "using", "Equations", "(", "22", ")", "and", "(", "23", ")", "as", ":(", "22", ")", "D", "r", "(", "C", "i", ")", "=", "B", "l", "log2", "(", "1+", "G", "(", "C", "i", ")", "l", "T", "p", "(", "C", "i", ")", "N", "o", ")", "l", "in", "SU", "j", ",", "PS", "j", ";", "B", "l", "in", "Nf", "(", "C", "i", ")", "Accordingly", ",", "when", "T", "p", "(", "max", ")", "is", "used", ",", "the", "corresponding", "maximum", "data", "rate", "is", ":(", "23", ")", "D", "r", "(", "max", ")", "(", "C", "i", ")", "=", "B", "l", "log2", "(", "1+", "G", "(", "C", "i", ")", "l", "T", "p", "(", "max", ")", ",", "(", "C", "i", ")", "N", "o", ")", "l", "in", "SU", "j", ",", "PS", "j", ";", "B", "l", "in", "Nf", "(", "C", "i", ")", "in", "which", "the", "B", "l", "is", "the", "bandwidth", "of", "a", "link", "l", "between", "SU", "j", "and", "PS", "j", "in", "the", "network", "." ],
+    "entities_indices" : [ [ 51, 52 ], [ 57, 58 ], [ 106, 107 ], [ 121, 122 ], [ 127, 128 ], [ 148, 149 ] ]
+  }, {
+    "sentence_tokens" : [ "Finally", ",", "the", "packets", "delivery", "ratio", "(", "PDR", ")", "rate", "is", "recorded", "around", "99", "%", "when", "the", "maximum", "vacant", "channels", "record", "up", "to", "11", "at", "each", "ASN", "in", "UWSNs", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "Consequently", ",", "the", "test", "statics", "of", "energy", "detection", "(", "T", "Epsilon", "D", ")", "of", "the", "received", "signal", "at", "the", "SU", "i", "can", "be", "numerically", "written", "as", ":(", "2", ")", "T", "Epsilon", "nD", "=", "sum", "n", "=", "1L", "s", "|", "Epsilon", "SL", "[", "n", "]", "|", "2", "subject", "to", ":(", "2a", ")", "SL", "[", "n", "]", "<=", "tau", "sigma", ";(", "2b", ")", "0", "<", "Msg", "(", "i", ")", "<=", "Msgsg", "(", "j", ")", "<=", "1", ";(", "2c", ")", "n", ">", "1", "<=", "k", ";(", "2d", ")", "Epsilon", "SL", "[", "n", "]", ">=", "Epsilon", "sigma", ";(", "2e", ")", "rho", "e", "<=", "rho", "e", "(", "epsilon", ")", "<", "1", ";(", "2f", ")", "tau", "sigma", ">", "0", "1", "<=", "sigma", "<=", "T", "for-all", "n", "in", "PU", "j", ";(", "2g", ")", "Epsilon", "sigma", ">=", "0", "1", "<=", "sigma", "<=", "E", "for-all", "E", "[", "n", "]", "in", "PU", "j", ";(", "2h", ")", "rho", "e", ">=", "0", "1", "<=", "e", "<=", "E", ";", "In", "Equation", "(", "2", ")", ",", "Epsilon", "SL", "and", "SL", "[", "n", "]", "are", ",", "the", "received", "signal", "energy", "and", "the", "n-sample", "of", "the", "SL", "while", "L", "s", "is", "the", "sum", "of", "the", "length", "of", "n", "samples", "over", "an", "interval", "which", "helps", "to", "obtain", "a", "level", "of", "performance", "under", "certain", "SNR", "conditions", "in", "the", "network", "." ],
+    "entities_indices" : [ [ 31, 32 ], [ 63, 64 ], [ 109, 110 ], [ 121, 122 ], [ 141, 142 ], [ 182, 183, 184 ], [ 206, 207 ] ]
+  }, {
+    "sentence_tokens" : [ "Then", ",", "it", "sends", "its", "own", "information", "of", "sender", "identity", ",", "current", "channel", ",", "remaining", "energy", ",", "level", "number", ",", "position", "with", "the", "angle", "of", "message", "received", "with", "value", "1", "only", "if", "its", "distance", "to", "the", "sink", "is", "lower", "than", "the", "sender", ",", "otherwise", "it", "is", "0", "." ],
+    "entities_indices" : [ [ 36, 37 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "received", "energy", "at", "each", "SU", "i", "is", "compared", "to", "the", "predefined", "detection", "threshold", "(", "sigma", ")", "to", "reach", "a", "decision", "about", "the", "presence", "or", "absence", "of", "PU", "j." ],
+    "entities_indices" : [ [ 27, 28 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "solution", "becomes", "useful", "when", "the", "acoustic", "sensor", "nodes", "(", "ASNs", ")", "are", "close", "to", "each", "other", "and", "there", "are", "no", "obstructions", "in", "the", "water", ",", "such", "as", "oil", ",", "fish", ",", "rocks", ",", "etc." ],
+    "entities_indices" : [ [ 10, 11 ], [ 30, 31 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "SCA", ",", "the", "acoustic", "environments", "such", "as", "interferences", ",", "data", "traffic", "pattern", ",", "etc", ".,", "are", "generally", "known", "[", "40", "]", "." ],
+    "entities_indices" : [ [ 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "underwater", "environment", ",", "the", "signal", "strength", "of", "association", "between", "each", "secondary", "user", "SU", "j", "and", ",", "primary", "or", "secondary", "user", "(", "PS", "j", ")", "is", "highly", "correlated", "to", "the", "capacity", "of", "data", "transmission", "of", "a", "channel", "(", "C", "i", ")", "in", "the", "network", "." ],
+    "entities_indices" : [ [ 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "the", "wireless", "link", "between", "neighboring", "ASNs", "may", "perform", "poorly", "or", "even", "be", "down", "at", "any", "given", "moment", ",", "which", "will", "increase", "the", "packet", "retransmissions", "as", "an", "attempt", "to", "deliver", "data", "packets", "result", "in", "more", "packet", "collisions", ",", "delay", "and", "energy", "consumption", "in", "UWSNs", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "Then", ",", "each", "ASN", "creates", "a", "new", "record", "entry", "for", "neighboring", "sink", "and", "computes", "the", "distance", "to", "the", "sea", "surface", "sink", "of", "itself", "and", "stores", "this", "information", "in", "the", "neighboring", "information", "table", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "low", "latency", "of", "QERP", "is", "due", "to", "it", "finding", "alternative", "routes", "in", "a", "robust", "manner", "." ],
+    "entities_indices" : [ [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "primary", "user", "signal", "and", "noise", "are", "assumed", "to", "be", "independent", "and", "therefore", "a", "binary", "hypothesis", "testing", "problem", "of", "received", "energy", "signals", "at", "the", "SU", "can", "be", "formulated", "as", ":(", "3", ")", "T", "Epsilon", "nD", "(", "SU", "i", ")", "SL", "=", "sum", "i", "=", "1", "m", "|", "n", "o", "(", "i", ")", "|", "2", "in", "H0", "(", "4", ")", "T", "Epsilon", "nD", "(", "SU", "i", ")", "SL", "=", "sum", "i", "=", "1", "m", "|", "C", "g", "(", "i", ")", "SL", "(", "i", ")", "+", "n", "o", "(", "i", ")", "|", "2", "in", "H1", "in", "which", "m", ",", "C", "g", "(", "i", ")", ",", "n", "oise", "(", "i", ")", "are", "the", "time-bandwidth", "product", ",", "the", "channel", "gain", "between", "PU", "and", "SU", ",", "and", "noise", "in", "the", "i", "t", "h", "time", "slot", ",", "respectively", "." ],
+    "entities_indices" : [ [ 34, 35 ], [ 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54 ], [ 61, 62 ], [ 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91 ], [ 117, 118 ] ]
+  }, {
+    "sentence_tokens" : [ "Packets", "Forwarding", "Scheme", "(", "UWPF", ")", "." ],
+    "entities_indices" : [ [ 0, 1, 2, 3 ], [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "During", "simulations", ",", "a", "set", "of", "250", "ASNs", "in", "a", "region", "of", "size", "length", "(", "m", ")", "x", "width", "(", "m", ")", "x", "depth", "(", "m", ")", "is", "randomly", "deployed", "to", "simulate", "the", "continuous", "events", "monitoring", "using", "acoustic", "sensor", "network", "in", "UWEs", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "Finally", ",", "we", "assume", "that", "the", "remote", "user/s", "can", "configure", ",", "control", "and", "monitor", "ASNs", "by", "connecting", "to", "the", "BS", "through", "one", "of", "the", "highly", "stable", "communication", "technology", ",", "such", "as", "satellite", "or", "cellular", "." ],
+    "entities_indices" : [ [ 14, 15 ], [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "sum", "T", "p", "(", "(", "PS", "j", ")", ")", "." ],
+    "entities_indices" : [ [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "channel", "detecting", "probability", "is", "noticed", "to", "be", "high", "with", "low", "FA", "s", "and", "MeD", "probabilities", "as", "shown", "in", "Figure", "9", ";", "Figure", "10", ",", "respectively", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "Equation", "(", "5d", ")", "constraints", "state", "that", "a", "channel", "belongs", "to", "the", "PU", "j", "is", "available", "to", "SU", "i", "for", "the", "time", "tau", "s", ",", "while", "the", "constaints", "in", "Equation", "(", "5e", ")", "satisfy", "the", "satement", "specified", "in", "Equation", "(", "5d", ")", "." ],
+    "entities_indices" : [ [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "Putting", "this", "all", "together", ",", "we", "can", "see", "that", "acoustic", "networks", "have", "a", "large", "propagation", "latency", ",", "low", "available", "data", "transmission", "capacity", ",", "high", "bit", "error", "rate", "(", "BER", ")", "and", "dynamic", "topology", "structure", "in", "UWEs.There", "are", "a", "few", "alternatives", "to", "acoustic", "telemetry", ",", "such", "as", "radio", "waves", "and", "optical", "communication", "that", "can", "be", "used", "[", "5", "]", "." ],
+    "entities_indices" : [ [ 28, 29 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "Section", "4", ",", "we", "also", "provide", "simulation", "results", "and", "analyze", "the", "performance", "of", "QoSRP", "against", "existing", "routing", "protocols", "in", "UWEs", "." ],
+    "entities_indices" : [ [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "EnD", "is", "the", "widely", "used", "channel", "detection", "method", ",", "which", "does", "not", "require", "any", "previous", "knowledge", "of", "the", "PU", "signals", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "Finally", ",", "the", "entire", "gathered", "data", "is", "upload", "from", "the", "source", "to", "the", "destination", "over", "the", "best", "upstream", "and", "downstream", "multi-hop", "links", "over", "a", "set", "of", "best", "forwarding", "nodes", ",", "which", "numerically", "can", "be", "expressed", "as", ":(", "34a", ")", "D", "i", "-->", "j", "=D", "(", "i", ",", "S", "i", "n", "k", ")", "-", "D", "(", "(", "j", ")", "r", "e", "l", "a", "y", ",", "S", "i", "n", "k", ")", "<=", "1", "for-all", "i", ",", "j", "r", "e", "l", "a", "y", "in", "S", "i", "n", "k", "(", "34b", ")", "D", "j", "-->", "S", "i", "n", "k", "=", "D", "(", "F", "r", "e", "l", "a", "y", "{", "(", "(", "j", ",", "k", ")", "subset/equal", "n", ")", "}", ")", ">", "D", "m", "i", "n", "&", "&", "<=", "D", "m", "a", "x", "for-all", "k", "r", "e", "l", "a", "y", "in", "S", "i", "n", "k", "(", "34c", ")", "D", "j", "-->", "S", "i", "n", "k", "=", "D.", "F", "r", "e", "l", "a", "y", "(", "n", ")", "in", "U", "p", "s", "t", "r", "e", "a", "m", "for-all", "F", "r", "e", "l", "a", "y", "(", "n", ")", "in", "S", "i", "n", "k", "(", "34d", ")", "DS", "i", "n", "k", "-->", "i", "=", "D.", "RF", "r", "e", "l", "a", "y", "(", "n", ")", "in", "D", "o", "w", "n", "s", "t", "r", "e", "a", "m", "(", "1q", ")", "for-all", "BF", "r", "e", "l", "a", "y", "(", "n", ")", "in", "i", "(", "34e", ")", "D", "s", "u", "m", "=", "sum", "j", "in", "F", "r", "e", "l", "a", "y", ">", "1D", "j", "-->", "S", "i", "n", "k", "(", "F", "r", "e", "l", "a", "y", "(", "j", ")", ")", "<=", "F", "r", "e", "l", "a", "y", "(", "m", "a", "x", ")", "for-all", "j", "r", "e", "l", "a", "y", "in", "S", "i", "n", "k", "(", "34f", ")", "rho", "b", "(", "p", "d", "(", "i", ")", ")", "(", "RP", "i", ")", "=", "beta", "1", "." ],
+    "entities_indices" : [ [ 39, 40, 41, 42, 43, 44 ], [ 47, 48, 49, 50, 51 ], [ 64, 65, 66, 67, 68, 69, 70, 71, 72, 73 ], [ 74, 75, 76 ], [ 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97 ], [ 98, 99, 100 ], [ 117, 118, 119, 120, 121, 122, 123, 124, 125 ], [ 136, 137, 138, 139, 140, 141 ], [ 169, 170, 171, 172, 173 ], [ 188, 189 ], [ 196, 197 ], [ 220, 221 ], [ 230, 231, 232 ], [ 257, 258, 259, 260, 261, 262, 263, 264, 265, 266, 267, 268, 269, 270 ], [ 287, 288, 289, 290, 291, 292 ], [ 304, 305 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "research", "in", "[", "14", "]", "balances", "the", "energy", "consumption", "load", "and", "avoids", "the", "void", "regions", "because", "of", "considering", "the", "normalized", "depth", "variance", "of", "the", "relay", "ASNs", "in", "the", "network", "." ],
+    "entities_indices" : [ [ 26, 27 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "channel", "steady", "state", "probability", "for", "both", "the", "busy", "and", "idle", "can", "be", "numerically", "computed", "as", ":(", "17", ")", "rho", "(", "B", "u", "s", "y", ")", "=", "b", "a+", "b", "(", "18", ")", "rho", "(", "I", "d", "l", "e", ")", "=", "a", "a+", "b", "in", "which", "rho", "(", "B", "u", "s", "y", ")", "and", "rho", "(", "I", "d", "l", "e", ")", "indicate", "the", "busy", "probability", "and", "idle", "probability", ",", "respectively", "." ],
+    "entities_indices" : [ [ 54, 55, 56, 57, 58, 59 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "designed", "scheme", "to", "reduce", "network", "overhead", "employs", "a", "hybrid", "unicast", "and", "broadcast", "communication", "mechanisms", "to", "maintain", "network", "topology", "changes", "and", "making", "new", "routing", "decisions", "when", "the", "current", "data", "paths", "become", "unavailable.The", "protocol", "in", "[", "23", "]", "divides", "entire", "grid", "routing", "architecture", "into", "many", "small", "cubes", "indicated", "as", "clusters", "to", "maintain", "the", "reliability", "of", "data", "transmission", "." ],
+    "entities_indices" : [ [ 39, 40 ] ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "this", "technology", "is", "making", "possible", "a", "new", "era", "in", "variety", "of", "ocean", "monitoring", "and", "exploration", "applications", ",", "such", "as", "monitoring", "natural", "disasters", ",", "mine", "recognition", ",", "navigation", "assistance", ",", "underwater", "pollution", ",", "study", "of", "marine", "life", "and", "tactic", "surveillance", "applications", "[", "10", "]", "." ],
+    "entities_indices" : [ [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "increase", "in", "noise", "level", "above", "this", "limit", "increases", "the", "probability", "of", "FA", "s", "while", "it", "reduces", "with", "the", "decrease", "in", "noise", "below", "this", "threshold", "level", "." ],
+    "entities_indices" : [ [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "it", "is", "indicated", "as", "one", "of", "the", "basic", "functions", "of", "the", "SNR", "in", "the", "UWEs", "." ],
+    "entities_indices" : [ [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "Consequently", ",", "the", "fusion", "center", "combined", "the", "neighboring", "SU", "s", "information", "and", "computes", "the", "combined", "likelihood", "ratio", "like", "in", "a", "Neyman-Pearson", "test", "(", "T", ")", "to", "make", "the", "final", "decision", "on", "the", "presence", "or", "absence", "of", "the", "primary", "signals", "which", "can", "be", "numerically", "indicated", "as", "(", "13", ")", "T", "(", "y", ")", "=", "product", "i", "=", "1SU", "n", "rho", "(", "x", "i", "|", "H1", ")", "rho", "(", "x", "i", "|", "H0", ")", "H1", "<=>", "H0", "א", "in", "which", "SU", "n", "shows", "that", "there", "are", "n", "number", "of", "SU", "s", "and", "the", "observations", "at", "each", "SU", "are", "indicated", "by", "x", "i", "such", "that", "i", "={", "1", ",", "2", ",", "3", ",", "..." ],
+    "entities_indices" : [ [ 102, 103, 104, 105, 106, 107, 108, 109 ] ]
+  }, {
+    "sentence_tokens" : [ "Then", "each", "new", "acoustic", "relay", "node", "which", "receives", "an", "a", "c", "k", "_", "m", "s", "g", "message", "from", "the", "sea", "surface", "sink", "first", "checks", "and", "decides", "either", "it", "was", "the", "selected", "next-hop", "forwarder", "along", "a", "distinct", "routing", "path", "in", "the", "upstream", "direction", "." ],
+    "entities_indices" : [ [ 10, 11, 12, 13, 14 ], [ 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "proposed", "mechanism", "while", "conveying", "information", "avoids", "congestion", ",", "data", "path", "loops", "and", "balances", "the", "energy", "consumption", "load", "of", "UWSNs.The", "performance", "of", "the", "QoSRP", "protocol", "against", "existing", "routing", "schemes", "is", "validated", "through", "extensive", "simulations", "conducted", "by", "NS2", "and", "AquaSim", "2.0", "in", "the", "UWSNs.The", "later", "sections", "explain", "the", "working", "mechanism", "of", "our", "proposed", "routing", "protocol", "in", "UWSNs", "." ],
+    "entities_indices" : [ [ 23, 24 ], [ 36, 37 ], [ 38, 39, 40 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "set", "of", "secondary", "users", "selected", "Se", "(", "SU", "i", ")", "from", "the", "rest", "of", "the", "secondary", "users", "SU", "j", "in", "the", "decision", "making", "procedure", "can", "be", "numerically", "shown", "as", ":(", "12", ")", "Se", "(", "SU", "i", ")", "=", "sum", "i", "=", "1", "n", "sum", "j", "=", "1", "k", "SU", "j", "-", "SU", "i", "subject", "to", ":(", "12a", ")", "SU", "i", "subset/equal", "SU", "j", "in", "R", "i", "(", "Ci", ")", "<", "R", "n", "(", "12b", ")", "SU", "i", "in", "I", "b", "e", "s", "t", "(", "H1", "|", "H0", ")", "=~", "1", "(", "12c", ")", "rho", "e", "SU", "i", "(", "Ci", ")", "<", "delta", "(", "12d", ")", "SU", "k", "in", "I", "p", "omicron", "omicron", "r", "(", "H1", "|", "H0", ")", "=0", "(", "12e", ")", "SU", "i", "(", "H1", "|", "H0", ")", "<=", "tau", "s", "<", "tau", "Constraints", "in", "(", "12a", ")", "state", "that", "the", "selected", "secondary", "users", "are", "less", "than", "the", "total", "number", "of", "secondary", "users", "involved", "in", "the", "sensing", "process", "for", "the", "distinct", "channels", "in", "a", "region", "in", "the", "network", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 9, 10, 11 ], [ 13, 14 ], [ 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84 ], [ 102, 103 ] ]
+  }, {
+    "sentence_tokens" : [ "On", "the", "other", "hand", ",", "the", "sink", "floats", "on", "the", "sea", "surface", "and", "is", "equipped", "with", "both", "acoustic", "modem", "and", "radio", "modem", "aiming", "to", "gather", "data", "from", "ASNs", "through", "acoustic", "signals", "and", "forward", "the", "gathered", "data", "using", "radio", "signals", "to", "the", "offshore", "BS", "and", "then", "the", "remote", "user/s", "for", "monitoring", "purposes", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 27, 28 ], [ 42, 43 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "interference", "does", "not", "heavily", "affect", "the", "transmissions", "in", "a", "single", "channel", "protocol", "at", "the", "beginning", "as", "the", "interference", "is", "not", "frequent", "enough", ",", "showing", "the", "average", "87", "%", ",", "90", "%", ",", "92", "%", "reception", "rates", "in", "LRP", ",", "QERP", "and", "MERP", "in", "the", "first", "30", "s", "as", "shown", "in", "Figure", "6", "." ],
+    "entities_indices" : [ [ 38, 39 ], [ 40, 41 ], [ 42, 43 ] ]
+  }, {
+    "sentence_tokens" : [ "G", "(", "C", "i", ")", "l", "(", "d", "1", "'", ")", "PSU", "j", "'", "G", "(", "C", "i", ")", "l", "(", "d", "2", "'", ")", "+", "P", "b", "'", "in", "which", "d", "'", "is", "the", "distance", "between", "transmitter", "and", "receiver", "acoustic", "nodes", ",", "P", "b", "'", "at", "the", "primary", "receiver", "PPU", "i", "'", "and", "PSU", "j", "'", "is", "the", "power", "of", "background", "interference", ",", "d", "1", "'", "is", "the", "distance", "information", "of", "a", "PU", "located", "away", "to", "the", "PU", "transmitter", "and", "d", "2", "'", "is", "the", "distance", "information", "of", "a", "secondary", "user", "located", "away", "to", "the", "primary", "user", "receiver", "in", "the", "network", "." ],
+    "entities_indices" : [ [ 0, 1, 2, 3, 4, 5, 6 ], [ 11, 12 ], [ 31, 32, 33 ], [ 50, 51, 52, 53 ], [ 54, 55 ], [ 73, 74 ], [ 78, 79 ], [ 81, 82, 83, 84 ] ]
+  }, {
+    "sentence_tokens" : [ "Constraints", "in", "(", "28c", ")", "and", "(", "28d", ")", "guarantees", "that", "the", "I", "n", "t", "and", "E", "t", "n", "of", "the", "primary", "or", "secondary", "users", "belong", "to", "the", "different", "regions", "R", "i", "or", "R", "j", "using", "the", "same", "frequency", "channels", "C", "i", "at", "time", "tau", "s", "must", "be", "less", "than", "the", "defined", "threshold", "level", "." ],
+    "entities_indices" : [ [ 30, 31, 32, 33, 34, 35 ], [ 44, 45 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "DCoS", "is", "further", "divided", "into", "restricted", "spectrum", "sensing", "(", "DRS", ")", "and", "whole", "spectrum", "sensing", "(", "DWS", ")", "[", "39", "]", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "Both", "above", "routing", "schemes", "achieve", "low", "latency", ",", "energy", "consumption", "and", "high", "packets", "delivery", "with", "the", "expense", "of", "poor", "synchronization", "and", "corrupted", "data", "packets", "due", "to", "detouring", "forwarding", "in", "void", "regions", "in", "UWSNs.To", "solve", "the", "issues", "of", "above", "mentioned", "depth", "based", "routing", "schemes", ",", "the", "work", "in", "[", "16", "]", "presents", "a", "novel", "concept", "of", "vector", "based", "opportunistic", "routing", "in", "which", "the", "smallest", "hop", "counts", "are", "selected", "towards", "the", "sink", "during", "conveying", "data", "packets", "." ],
+    "entities_indices" : [ [ 69, 70 ] ]
+  }, {
+    "sentence_tokens" : [ "Generally", ",", "the", "ASNs", "closer", "to", "the", "sink", "convey", "more", "packets", "compared", "to", "the", "sensors", "that", "are", "far", "away", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "Constraints", "in", "(", "34c", ")", "show", "that", "the", "maximum", "and", "minimum", "distance", "information", "of", "the", "forwarders", "during", "data", "transmission", "is", "bounded", "to", "the", "upward", "direction", "U", "p", "s", "t", "r", "e", "a", "m", "towards", "the", "sink", "." ],
+    "entities_indices" : [ [ 35, 36 ] ]
+  }, {
+    "sentence_tokens" : [ "Similarly", ",", "the", "protocol", "proposed", "in", "[", "30", "]", "uses", "multi", "layered", "architecture", "to", "discover", "a", "set", "of", "feasible", "relay", "ASNs", "during", "conveying", "data", "towards", "the", "sink", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 20, 21 ], [ 26, 27 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "UWEs", ",", "the", "ASNs", "due", "to", "constraints", "of", "limited", "residual", "energy", "and", "short", "communication", "range", "transmit", "packets", "to", "the", "sink", "in", "a", "multiple", "hops", "manner", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "Sensing", "Overhead", "at", "the", "Fusion", "Center", "." ],
+    "entities_indices" : [ [ 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "An", "acoustic", "relay", "node", "that", "receives", "an", "a", "c", "k", "_", "m", "s", "g", "message", "from", "the", "sea", "surface", "sink", "first", "it", "checks", "and", "decides", "either", "it", "was", "the", "selected", "next-hop", "forward", "along", "a", "distinct", "routing", "path", "in", "the", "upstream", "direction", "." ],
+    "entities_indices" : [ [ 8, 9, 10, 11, 12 ], [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "beam", "widths", "of", "each", "ASN", "is", "varied", "between", "0", "and", "360", "degrees", "in", "each", "set", "of", "experiments", "while", "the", "acoustic", "communication", "range", "of", "the", "sink", "was", "200", "m." ],
+    "entities_indices" : [ [ 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "On", "the", "contrary", ",", "the", "overall", "packets", "delivery", "ratio", "is", "recorded", "high", "at", "around", "99", "%", "in", "QoSRP", "in", "UWSNs", "." ],
+    "entities_indices" : [ [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "if", "the", "OFF", "period", "of", "the", "PU", "channel", "is", "too", "small", "then", "the", "spectrum", "state", "may", "not", "change", "for", "the", "SU", "s", "due", "to", "not", "utilizing", "the", "channel", "in", "case", "the", "primary", "user", "is", "absent", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "To", "this", "end", ",", "the", "key", "objective", "function", "of", "UWCA", "algorithm", "can", "be", "numerically", "indicated", "as", "(", "14", ")", "phi", "UWCA", "(", "2", ")", "=", "sum", "i", "=", "1", "|", "n", "|", "max", "i", "(", "C", "u+", "T", "p", ")", "+", "mini", "(", "I", "n", "t", "f+", "P", "e", "r+", "C", "t", ")", "In", "the", "proposed", "scheme", ",", "the", "PU", "activity", "information", "can", "provide", "an", "opportunity", "to", "SUs", "for", "their", "reliable", "data", "transmission", "in", "the", "network", "." ],
+    "entities_indices" : [ [ 59, 60 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "UWCA", "scheme", "assigns", "high", "data", "rates", "channels", "to", "acoustic", "sensor", "nodes", "(", "ASNs", ")", "with", "longer", "idle", "probability", "in", "a", "robust", "manner", "." ],
+    "entities_indices" : [ [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "work", "in", "[", "2", "]", "proposes", "a", "location-free", "pressure", "routing", "protocol", "that", "considers", "three", "basic", "parameters", "such", "as", "depth", ",", "residual", "energy", "and", "link", "quality", "of", "the", "relay", "ASNs", "." ],
+    "entities_indices" : [ [ 29, 30 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "proposed", "mechanism", ",", "if", "an", "ASN", "has", "packets", "to", "forward", "via", "multi-hop", "communication", "to", "the", "sea", "surface", "sink", ",", "it", "appoints", "the", "next-hop", "forwarder", "ASNs", "based", "on", "its", "local", "knowledge", "which", "depends", "on", "various", "parameters", "of", "the", "neighboring", "relay", "ASN", "in", "the", "network", "." ],
+    "entities_indices" : [ [ 19, 20 ], [ 26, 27 ] ]
+  }, {
+    "sentence_tokens" : [ "Thus", ",", "the", "ASNs", "die", "once", "the", "energy", "runs", "out", "." ],
+    "entities_indices" : [ [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "average", "packet", "error", "rate", "of", "LPR", "is", "observed", "to", "be", "high", "around", "10", "%", "compared", "to", "QERP", "and", "MERP", "recorded", "up", "to", "7", "%", "and", "8", "%", "in", "UWSNs", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 17, 18 ], [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "study", "in", "[", "28", "]", "presents", "a", "disjoint", "multipath", "disruption-tolerant", "packets", "forwarding", "mechanism", "in", "which", "multiple", "routing", "paths", "by", "employing", "the", "hue", ",", "saturation", "and", "value", "colour", "space", "that", "are", "constructed", "to", "greedily", "convey", "packets", "to", "the", "sea", "surface", "sink", "." ],
+    "entities_indices" : [ [ 40, 41 ] ]
+  }, {
+    "sentence_tokens" : [ "On", "the", "other", "hand", ",", "the", "hard", "decision", "mechanism", "performs", "best", "when", "the", "channel", "state", "information", "between", "the", "PU", "s", "and", "SU", "s", "varies", "in", "time", "and", "location", "in", "UWEs", "." ],
+    "entities_indices" : [ [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "key", "aims", "during", "the", "packet", "forwarding", "procedure", ",", "including", "maximizing", "the", "packet", "delivery", "ratio", "(", "P", "d", "r", ")", ",", "minimize", "the", "congestion", "(", "C", "o", "n", "g", ")", ",", "latency", "(", "D", "e", "l", ")", "and", "load", "balancing", "(", "L", "b", ")", "in", "UWSNs", "." ],
+    "entities_indices" : [ [ 41, 42, 43 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "proposed", "scheme", ",", "we", "employ", "First", "in", "First", "Out", "(", "FILO", ")", "policy", "to", "avoid", "the", "management", "complexity", "of", "the", "events", "data", "in", "a", "channel", "information", "table", "(", "CIT", ")", "." ],
+    "entities_indices" : [ [ 30, 31 ] ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "the", "QoSRP", "periodically", "orders", "the", "channel", "based", "on", "their", "priority", "each", "time", "before", "making", "a", "decision", "on", "the", "new", "channel", "in", "order", "to", "avoid", "the", "interference", "channel", "." ],
+    "entities_indices" : [ [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "SU", "must", "be", "capable", "of", "detecting", "the", "PU", "transmitter", "signals", "within", "the", "range", "of", "d", "1", "'", "+", "d", "2", "'", ",", "which", "translates", "to", "a", "sensitivity", "constraint", "for", "the", "secondary", "user", "detector", "to", "prevent", "harsh", "interference", "from", "the", "primary", "user", "receiver", "in", "the", "network", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 15, 16, 17, 18, 19, 20, 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "the", "high", "noise", ",", "interference", ",", "fading", ",", "and", "multipath", "effects", "increase", "the", "probability", "of", "sensing", "errors", "in", "terms", "of", "false", "alarms", "(", "FA", "s", ")", "or", "miss-detection", "(", "M", "i", "D", ")", ",", "which", "leads", "to", "poor", "channel", "detection", "performance", "in", "UWSNs", "." ],
+    "entities_indices" : [ [ 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "After", "updating", "the", "sink", "record", ",", "these", "ASNs", "rebroadcasts", "the", "n", "e", "g", "_", "m", "s", "g", "message", "to", "their", "neighbors", "within", "their", "transmission", "radius", "with", "the", "following", "values", ":", "the", "sender", "identity", ",", "current", "channel", ",", "remaining", "energy", ",", "level", "number", ",", "position", ",", "angle", "of", "departure", "and", "distance", "to", "the", "sink", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 7, 8 ], [ 12, 13, 14, 15 ], [ 52, 53 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "proposed", "protocol", "achieves", "low", "latency", "performance", "and", "increases", "the", "packets", "delivery", "rates", "and", "throughput", ",", "but", "it", "faces", "the", "issues", "of", "communication", "overheads", "in", "UWSNs.The", "protocol", "proposed", "in", "[", "19", "]", "exploits", "the", "link", "quality", "of", "relay", "ASNs", "by", "considering", "the", "cross-layer", "design", "paradigm", "during", "forwarding", "packets", "around", "connectivity", "voids", "and", "shadow", "zones", "in", "UWSNs", "." ],
+    "entities_indices" : [ [ 38, 39 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "worst", "case", ",", "if", "a", "suitable", "packets", "forwarder", "is", "not", "found", "in", "the", "sender", "'", "s", "communication", "range", "in", "upward", "direction", "then", "it", "sends", "r", "d", "i", "s", "_", "m", "s", "g", "to", "the", "same", "or", "lower", "levels", "neighboring", "candidates", "." ],
+    "entities_indices" : [ [ 28, 29, 30, 31, 32, 33, 34 ] ]
+  }, {
+    "sentence_tokens" : [ "Constraints", "in", "Equation", "(", "5h", ")", "state", "that", "the", "SU", "i", "senses", "a", "channel", "Ci", "in", "a", "region", "R", "i", "and", "will", "not", "be", "sensed", "the", "same", "channel", "immediately", "once", "it", "is", "found", "busy", "in", "the", "network", "." ],
+    "entities_indices" : [ [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "Generally", ",", "there", "exist", "few", "signal", "detection", "techniques", "like", "matched", "filter", "detection", "(", "MaD", ")", ",", "wavelet", "detection", "(", "WeD", ")", ",", "cyclostationary", "detection", "(", "CyD", ")", "and", "energy", "detection", "(", "EnD", ")", "[", "34", "]", ",", "etc", ".,", "that", "can", "be", "employed", "during", "sensing", "the", "spectrum", "to", "enhance", "the", "detection", "probability", "in", "the", "UWEs.In", "the", "MaD", "technique", ",", "the", "SU", "have", "the", "prior", "knowledge", "of", "the", "PU", "signals", "and", "a", "matching", "filter", "is", "applied", ",", "which", "amplifies", "the", "SNR", "of", "the", "received", "acoustic", "frequency", "samples", "." ],
+    "entities_indices" : [ [ 13, 14 ], [ 25, 26 ], [ 31, 32 ], [ 56, 57 ], [ 67, 68 ] ]
+  }, {
+    "sentence_tokens" : [ "On", "the", "other", "hand", ",", "efficient", "data", "collection", "using", "ASNs", "is", "challenging", "due", "to", "the", "various", "aforementioned", "factors", "in", "the", "UWSNs", "." ],
+    "entities_indices" : [ [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "Constraints", "in", "(", "34j", ")", "indicate", "the", "expected", "delay", "from", "relay", "node", "j", "towards", "the", "S", "i", "n", "k", "is", "computed", "by", "the", "average", "remaining", "hop", "counts", "A", "v", "g", "(", ")", "r", "e", "l", "a", "y", "along", "a", "routing", "path", "in", "the", "network", "." ],
+    "entities_indices" : [ [ 15, 16, 17, 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "Finally", ",", "the", "data", "with", "the", "new", "relay", "nodes", "information", "is", "delivered", "to", "the", "sea", "surface", "sink", ",", "which", "sends", "an", "a", "c", "k", "_", "m", "s", "g", "message", "to", "the", "downstream", "senders", "to", "inform", "them", "about", "this", "new", "route", ",", "including", "the", "identity", "of", "each", "forwarding", "and", "new", "selected", "relay", "node", ",", "and", "delivers", "it", "to", "the", "source", "node", "." ],
+    "entities_indices" : [ [ 16, 17 ], [ 22, 23, 24, 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "entire", "mechanism", "ensures", "that", "the", "packets", "will", "travel", "over", "a", "set", "of", "optimal", "forwarders", "with", "the", "appropriate", "distances", "before", "getting", "to", "the", "sea", "surface", "sink", "." ],
+    "entities_indices" : [ [ 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "Equation", "(", "34f", ")", "indicates", "the", "probability", "of", "a", "packet", "drop", "rho", "b", "(", "p", "d", "(", "i", ")", ")", "in", "the", "i", "th", "queue", "of", "a", "forwarding", "candidate", "along", "the", "selected", "routing", "path", "RP", "i", "in", "the", "network", "." ],
+    "entities_indices" : [ [ 9, 10, 11, 12, 13 ], [ 34, 35 ] ]
+  }, {
+    "sentence_tokens" : [ ",", "T", "p", "(", "i", ")", "}", "numerically", "shown", "as", ":(", "20", ")", "T", "p", "(", "n", ")", "=", "sum", "i", "=", "1", "n", "T", "p", "(", "C", "i", ")", ",", "T", "p", "(", "C", "i", ")", "<=", "T", "p", "(", "t", "h", "r", "e", "s", "h", "o", "l", "d", ")", ";", "subject", "to", ":(", "20a", ")", "0", "<=", "T", "p", "(", "min", ")", "<=", "X.", "T", "p", "(", "C", "i", ")", "l", "<=", "T", "p", "(", "max", ")", "<=", "1", "X", "in", "{", "0,1", "}", ",", "l", "in", "L", "(", "20b", ")", "T", "p", "(", "rec", ")", "(", "C", "i", ")", "=", "T", "p", "(", "tra", ")", "T", "p", "(", "A", ")", "Nf", "(", "C", "i", ")", "|", "G", "(", "C", "i", ")", "|", "2", "(", "20c", ")", "0", "<=", "sum", "l", "in", "LioutT", "p", "(", "l", ")", "<=", "T", "p", "(", "max", ")", ",", "l", "in", "L", "(", "20d", ")", "T", "p", "(", "ECS", ")", "=(", "sum", "l", "in", "LioutT", "p", "(", "l", ")", "+", "sum", "l", "in", "LiInXl", "." ],
+    "entities_indices" : [ [ 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 ], [ 113, 114 ], [ 155, 156 ] ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "the", "overall", "packets", "delivery", "ratio", "is", "recorded", "high", "around", "89", "%", "in", "MERP", "compared", "to", "86", "%", "and", "84", "%", "in", "the", "QERP", "and", "LRP", "routing", "protocols", "in", "UWSNs", "." ],
+    "entities_indices" : [ [ 14, 15 ], [ 24, 25 ], [ 26, 27 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "proposed", "scheme", "takes", "into", "account", "the", "time", "and", "location", "dependent", "acoustic", "channel", "communication", "characteristics", "during", "time-critical", "events", "data", "gathering", "and", "relaying", "towards", "the", "sink", "." ],
+    "entities_indices" : [ [ 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "channel", "modeling", "problem", "of", "the", "designed", "scheme", ",", "a", "suitable", "channel", "Ci", "from", "the", "available", "channel", "list", "C", "n", "is", "occupied", "by", "each", "secondary", "user", "SU", "j", "opportunistically", "when", "a", "PU", "i", "goes", "silent", "for", "tau", "off", "seconds", "in", "order", "to", "maximize", "the", "total", "channel", "utility", "in", "UWSNs", "." ],
+    "entities_indices" : [ [ 13, 14 ], [ 32, 33 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "receiver", "node", "compares", "its", "own", "distance", "and", "the", "sender", "distance", "to", "the", "sink", "." ],
+    "entities_indices" : [ [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "simulation", "results", "reveal", "that", "the", "QoSRP", "protocol", "performs", "better", "compared", "to", "existing", "routing", "schemes", "in", "UWSNs", "." ],
+    "entities_indices" : [ [ 6, 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "Equations", "(", "5b", ")", "and", "(", "5c", ")", "constraints", "guarantee", "that", "the", "PU", "is", "active", "and", "inactive", "for", "a", "particular", "channel", "Ci", "in", "a", "time", "interval", "in", "the", "network", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 12, 13 ], [ 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "An", "acoustic", "node", "closest", "to", "the", "sink", "receives", "the", "n", "e", "g", "_", "m", "s", "g", "message", "successfully", ",", "sets", "the", "layer", "number", "to", "maximum", "n", ",", "which", "infers", "that", "it", "has", "a", "direct", "contact", "with", "the", "sea", "surface", "sink", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 11, 12, 13, 14 ], [ 39, 40 ] ]
+  }, {
+    "sentence_tokens" : [ "Then", ",", "the", "congestion", "avoidance", "procedure", "begins", ",", "which", "is", "based", "on", "diverting", "the", "incoming", "data", "traffic", "to", "the", "other", "available", "forwarding", "candidates", "towards", "the", "sea", "surface", "sink", "." ],
+    "entities_indices" : [ [ 27, 28 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "which", "T", "p", "(", "tra", ")", ",", "Nf", "(", "C", "i", ")", "and", "G", "(", "C", "i", ")", "are", ",", "the", "transmission", "power", ",", "the", "number", "of", "frequency", "channels", "and", "channel", "gain", "in", "the", "UWEs", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "mechanism", "guarantees", "the", "target", "probability", "of", "false", "alarm", "while", "maximizing", "the", "probability", "of", "detection", "when", "making", "a", "global", "decision", "for", "the", "presence", "or", "absence", "of", "the", "PU", "on", "a", "channel", "in", "the", "MCASNs", "." ],
+    "entities_indices" : [ [ 27, 28 ] ]
+  }, {
+    "sentence_tokens" : [ "On", "the", "other", "hand", ",", "H0", "illustrates", "that", "the", "i", "th", "spectrum", "is", "available", "with", "probability", "rho", "i", "d", "e", "a", "l", ",", "i.e", ".,", "rho", "(", "PU", "i", ")", "+", "rho", "i", "d", "e", "a", "l", "=", "1", "in", "the", "sensing", "time", "tau", "s." ],
+    "entities_indices" : [ [ 16, 17, 18, 19, 20, 21, 22 ], [ 23, 24, 25, 26 ], [ 27, 28 ] ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "the", "MERP", "protocol", "data", "delivery", "performance", "improves", "as", "the", "interference", "rate", "increases", "since", "it", "has", "more", "time", "to", "recover", "compared", "to", "the", "QERP", "and", "LRP", "routing", "protocols", "." ],
+    "entities_indices" : [ [ 3, 4, 5 ], [ 24, 25 ], [ 26, 27 ] ]
+  }, {
+    "sentence_tokens" : [ "Usually", ",", "QERP", "and", "MERP", "are", "overlapping", "each", "other", "'", "s", "and", "try", "to", "achieve", "a", "minimum", "packet", "error", "rate", "in", "UWSNs", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "First", ",", "most", "of", "the", "schemes", "employ", "probabilistic", "values", "to", "estimate", "the", "link", "quality", "between", "ASNs", "in", "highly", "dynamic", "UWEs", "." ],
+    "entities_indices" : [ [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "Upon", "receiving", "the", "n", "e", "g", "_", "m", "s", "g", "message", "correctly", ",", "each", "ASN", "creates", "a", "record", "entry", "for", "new", "neighboring", "ASNs", "then", "computes", "the", "distance", "to", "the", "sender", "of", "itself", ",", "angle", "of", "packets", "arrival", ",", "level", "number", ",", "and", "stores", "the", "entire", "received", "information", "in", "the", "neighboring", "information", "table", "." ],
+    "entities_indices" : [ [ 5, 6, 7, 8 ], [ 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "Equation", "(", "34f", ")", ",", "the", "rho", "b", "(", "p", "i", "(", "i", ")", "i", "n", "i", ")", "and", "Q", "v", "i", "are", ",", "the", "initial", "packet", "loss", "probability", "and", "the", "level", "of", "variation", "in", "the", "length", "of", "the", "i", "th", "virtual", "queue", "can", "be", "determined", "using", "Equation", "(", "34g", ")", "and", "Equation", "(", "34h", ")", ",", "respectively", "." ],
+    "entities_indices" : [ [ 7, 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ ",", "l", "};(", "1", ")", "phi", "UWCD", "(", "1", ")", "=", "sum", "i", "=", "1", "|", "n", "|", "maxi", "rho", "D", "e", "T+", "mini", "rho", "FA", "s+", "mini", "rho", "M", "i", "D", "The", "key", "aims", "of", "the", "objective", "function", "is", "to", "maximize", "the", "probability", "of", "detection", "(", "rho", "D", "e", "T", ")", "and", "minimize", "the", "probability", "of", "FA", "s", "(", "rho", "FA", "s", ")", "and", "missed-detection", "(", "rho", "M", "i", "D", ")", "in", "UWSNs", "." ],
+    "entities_indices" : [ [ 25, 26 ], [ 57, 58 ], [ 61, 62 ] ]
+  }, {
+    "sentence_tokens" : [ "It", "helps", "in", "driving", "weather", "and", "regulating", "Earth", "'", "s", "temperature", ",", "provides", "primary", "resources", "for", "humans", "and", "serves", "as", "a", "medium", "for", "commerce", "and", "transport", "." ],
+    "entities_indices" : [ [ 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "overall", "delay", "performance", "in", "QoSRP", "routing", "protocol", "with", "95", "%", "confidence", "intervals", "is", "recorded", "up", "to", "700", "ms.", "By", "contrast", ",", "the", "latency", "performance", "of", "QERP", "is", "observed", "well", "around", "800", "ms", "compared", "to", "MERP", "and", "LRP", "recorded", "around", "890", "and", "1000", "ms", "in", "UWSNs", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 26, 27 ], [ 35, 36 ], [ 37, 38 ] ]
+  }, {
+    "sentence_tokens" : [ "Also", ",", "the", "study", "in", "[", "21", "]", "presents", "a", "cross-layer", "cooperative", "routing", "protocol", "in", "which", "the", "ASNs", "selects", "the", "forwarding", "relay", "ASN", "based", "on", "their", "link", "quality", "indicators", "towards", "the", "destination", "." ],
+    "entities_indices" : [ [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "interference", "(", "I", "n", "t", "f", ")", "constraint", "due", "to", "high", "transmission", "power", "in", "the", "underwater", "can", "be", "computed", "by", "using", "the", "follow", "Equation", "(", "25", ")", "as", ":(", "25", ")", "I", "n", "t", "f", "(", "c", "o", "n", "s", ")", "=", "sum", "i", "=", "1", "n", "sum", "j", "=", "1", "m", "(", "T", "p", "(", "SU", "j", ")", "." ],
+    "entities_indices" : [ [ 3, 4, 5, 6, 7 ], [ 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53 ], [ 57, 58, 59 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "addition", ",", "it", "provides", "sufficient", "protection", "to", "the", "PU", "s", "in", "terms", "of", "interference", "in", "the", "network", "." ],
+    "entities_indices" : [ [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "major", "contributions", "of", "our", "proposed", "protocols", "are", "as", "follows", ":", "We", "propose", "an", "underwater", "acoustic", "channel", "detection", "mechanism", "to", "find", "the", "vacant", "channels", "with", "a", "high", "probability", "of", "detection", "and", "low", "probability", "of", "missed", "detection", "and", "false", "alarms.An", "underwater", "acoustic", "channel", "assignment", "mechanism", "is", "proposed", "to", "assign", "high", "data", "rates", "channels", "to", "acoustic", "sensor", "nodes", "with", "longer", "idle", "probability", "in", "a", "robust", "manner.A", "hybrid", "underwater", "routing", "mechanism", "is", "proposed", "to", "convey", "collected", "data", "to", "the", "sink", "." ],
+    "entities_indices" : [ [ 76, 77 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "paper", "proposes", "a", "novel", "cross-layer", "QoS-aware", "multichannel", "routing", "protocol", "called", "QoSRP", "for", "the", "internet", "of", "UWSNs", "based", "time-critical", "marine", "monitoring", "applications", "." ],
+    "entities_indices" : [ [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "As", "stated", "above", ",", "to", "achieve", "a", "longer", "idle", "probability", "for", "SUs", ",", "the", "desired", "channels", "are", "assigned", "by", "considering", "the", "previous", "channels", "history", "values", "saved", "in", "the", "channel", "table", "." ],
+    "entities_indices" : [ [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "proposed", "scheme", ",", "the", "probability", "of", "FA", "s", ",", "M", "i", "D", "and", "D", "e", "T", "using", "K-out-of-M", "rule", "can", "be", "written", "as", ":(", "9", ")", "rho", "D", "e", "T", "=", "sum", "l", "=", "k", "=", "1", "|", "n", "|", "sum", "j", "=", "1", "|", "m", "|", "rho", "D", "e", "T", "(", "SU", "j", ")", "l", "(", "1", "-", "rho", "D", "e", "T", "(", "SU", "j", ")", ")", "|", "m", "-", "l", "|", "(", "10", ")", "rho", "M", "i", "D", "=", "1", "-", "sum", "j", "=", "1", "|", "m", "|", "[", "rho", "D", "e", "T", "(", "1", "-", "rho", "e", ")", "+", "(", "1", "-", "rho", "e", "(", "SU", "j", ")", ")", "+", "rho", "e", "(", "SU", "j", ")", "]", "(", "11", ")", "rho", "FA", "s", "=", "1", "-", "sum", "j", "=", "1", "|", "m", "|", "[", "(", "1", "-", "rho", "FA", "s", ")", "(", "1", "-", "rho", "e", ")", "SU", "j+", "rho", "FA", "s", "(", "SU", "j", ")", ",", "rho", "e", "(", "SU", "j", ")", "]", "Equations", "(", "9", ")", ",", "(", "10", ")", "and", "(", "11", ")", "illustrate", "the", "probability", "of", "D", "e", "T", "when", "all", "m", "secondary", "users", "sensed", "the", "existence", "of", "a", "PU", "i", "such", "that", "SU", "j", ">", "SUi", "determine", "H1", "when", "H1", "exits", ",", "the", "M", "i", "D", "probability", "when", "the", "secondary", "users", "SU", "j", ">", "SUi", "decides", "H0", "but", "H1", "exists", ",", "and", "the", "FA", "s", "probability", "when", "the", "secondary", "users", "SU", "j", ">", "SUi", "decide", "H0", "but", "H1", "exists", ",", "respectively", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 126, 127 ], [ 143, 144 ], [ 155, 156 ], [ 162, 163, 164, 165, 166, 167 ], [ 198, 199 ], [ 224, 225 ], [ 233, 234 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "SU", "can", "use", "the", "oFF", "period", "of", "the", "PU", "channel", "to", "transmit", "its", "own", "data", "in", "the", "network", "." ],
+    "entities_indices" : [ [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "addition", ",", "the", "other", "main", "reason", "for", "high", "PDR", "and", "throughput", "is", "the", "efficient", "performance", "of", "the", "channel", "detection", "algorithm", "in", "UWSNs", "." ],
+    "entities_indices" : [ [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "level", "rapidly", "increases", "up", "to", "96", "%", "when", "the", "ASNs", "keeps", "the", "record", "around", "9", "vacant", "channels", "in", "UWSNs", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "Thus", ",", "the", "SCA", "limits", "channel", "utilization", "and", "cannot", "provide", "data", "reliability", "in", "the", "underwater", "." ],
+    "entities_indices" : [ [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "Upon", "receiving", "the", "r", "d", "i", "s", "_", "m", "s", "g", ",", "each", "receiving", "acoustic", "node", "located", "on", "the", "same", "or", "lower", "levels", "marks", "itself", "as", "a", "helper", "node", "." ],
+    "entities_indices" : [ [ 5, 6, 7, 8, 9, 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "detection", "sensitivity", "identifies", "the", "received", "SNR", "ratio", "at", "the", "secondary", "user", "(", "SU", ")", "with", "a", "satisfied", "probability", "of", "detection", "conditions", "in", "MCASNs", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "ASNs", "deployment", "missions", "can", "take", "several", "days", "since", "sensors", "might", "be", "attached", "to", "docks", ",", "anchored", "buoys", ",", "sea", "floors", ",", "underwater", "autonomous", "vehicles", "(", "UAVs", ")", ",", "low-power", "gliders", ",", "or", "underpowered", "drifters", ",", "depending", "on", "the", "desired", "network", "architecture", "[", "5", "]", "." ],
+    "entities_indices" : [ [ 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "Often", ",", "underwater", "ASNs", "are", "equipped", "with", "acoustic", "modems", "to", "wirelessly", "communicate", "with", "each", "other", "." ],
+    "entities_indices" : [ [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "Hence", ",", "it", "is", "highly", "desired", "to", "reduce", "the", "sensing", "errors", "during", "channel", "detection", "to", "enhance", "the", "usage", "level", "of", "the", "vacant", "channel", "and", "to", "minimize", "the", "collision", "probability", "with", "PU", "transmissions.In", "this", "respect", ",", "the", "detection", "threshold", "that", "precisely", "detects", "the", "presence", "of", "primary", "signals", "plays", "an", "important", "role", "in", "the", "multichannel", "acoustic", "sensor", "networks", "(", "MCASNs", ")", "." ],
+    "entities_indices" : [ [ 30, 31 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "proposed", "scheme", ",", "the", "DCoS", "overcomes", "the", "drawbacks", "of", "CCoS", ",", "but", "the", "sensing", "capabilities", "of", "SU", "s", "in", "DCoS", "are", "usually", "limited", "due", "to", "software", "defined", "hardware", "limitations", "such", "as", "low", "computation", ",", "signal", "processing", ",", "memory", ",", "etc." ],
+    "entities_indices" : [ [ 11, 12 ], [ 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "proposed", "scheme", "employs", "various", "transmitting", "power", "levels", "and", "the", "residual", "energy", "of", "down-stream", "relay", "ASNs", "in", "the", "information", "relaying", "process", "." ],
+    "entities_indices" : [ [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "transmission", "of", "PU", "signals", "is", "a", "random", "process", ",", "which", "follows", "an", "independent", "identically", "distributed", "pattern", "with", "mean", "zero", "and", "variance", "sigma", "s", "2", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 21, 22, 23, 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "As", "future", "work", ",", "the", "researchers", "aim", "to", "focus", "on", "the", "ASNs", "'", "mobility", "and", "energy", "consumption", "issues", "with", "different", "QoS", "requirements", "in", "order", "to", "achieve", "a", "more", "realistic", "approach", "for", "time-critical", "applications", "of", "UWSNs", "." ],
+    "entities_indices" : [ [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "Subsequently", ",", "the", "route", "discovery", "process", "at", "each", "hop", "follows", "the", "same", "previous", "procedure", "until", "the", "forwarding", "candidate", "closer", "to", "the", "sea", "surface", "sink", "is", "found", "to", "convey", "packets", "." ],
+    "entities_indices" : [ [ 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "Constraints", "in", "Equation", "(", "5f", ")", "explain", "that", "the", "SU", "i", "must", "not", "hold", "the", "channel", "for", "the", "entire", "time", "since", "the", "PU", "j", "can", "reclaim", "the", "channel", "any", "time", "in", "the", "network", "." ],
+    "entities_indices" : [ [ 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "Upon", "receiving", "the", "r", "d", "i", "s", "_", "m", "s", "g", "message", "successfully", ",", "each", "ASN", "computes", "and", "updates", "the", "distance", "to", "the", "sender", "of", "itself", ",", "angle", "of", "packet", "arrival", ",", "level", "number", "in", "the", "routing", "table", "." ],
+    "entities_indices" : [ [ 5, 6, 7, 8, 9, 10, 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "Compared", "to", "DRS", ",", "the", "DWS", "in", "the", "proposed", "scheme", "increases", "the", "chance", "of", "finding", "high", "data", "rates", "channels", "at", "low", "interference", ",", "sensing", "overheads", "and", "latency", "due", "to", "allowing", "various", "SU", "s", "to", "sense", "different", "channels", "concurrently", "in", "UWSNs", "." ],
+    "entities_indices" : [ [ 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "proposed", "QoSRP", "scheme", ",", "the", "UWCD", "mechanism", "successfully", "detects", "vacant", "channels", "for", "ASNs", "with", "a", "high", "probability", "of", "detection", "and", "low", "probability", "of", "missed-detection", "and", "FA", "s", "in", "the", "highly", "dynamic", "network", "topology", "." ],
+    "entities_indices" : [ [ 14, 15 ], [ 27, 28 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "type", "of", "channel", "assignment", "offers", "several", "advantages", "such", "as", "low", "complexity", "and", "overhead", "in", "the", "network", "." ],
+    "entities_indices" : [ [ 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "proposed", "scheme", "selects", "the", "subset", "of", "relay", "ASNs", "based", "on", "the", "pressure", "levels", "to", "route", "data", "at", "low", "interference", "towards", "the", "surface", "sonobuoy", "." ],
+    "entities_indices" : [ [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "addition", ",", "the", "ASNs", "employing", "different", "channels", "on", "multiple", "paths", "with", "different", "lengths", "have", "different", "propagation", "period", ",", "the", "angles", "of", "arrival", "(", "AoA", ")", "and", "the", "angle", "of", "departure", "(", "AoD", ")", "in", "UWEs", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "DRS", "allows", "secondary", "users", "to", "sense", "for", "the", "vacant", "channels", "in", "a", "specific", "region", "." ],
+    "entities_indices" : [ [ 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "On", "the", "contrary", ",", "the", "fusion", "center", "in", "K-out-of-M", "rule", "declares", "the", "ultimate", "decision", "that", "there", "is", "a", "PU", "'", "s", "transmission", "only", "if", "at", "least", "K", "secondary", "users", "out", "of", "M", "selected", "local", "detectors", "decide", "about", "the", "presence", "of", "a", "PU", "'", "s", "signal", "." ],
+    "entities_indices" : [ [ 18, 19 ], [ 41, 42 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "ASNs", "in", "UASNs", "have", "sensing", ",", "processing", "and", "communication", "capabilities", ",", "thus", "they", "are", "emerging", "as", "a", "fundamental", "technology", "for", "IoUT", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "level", "is", "periodically", "decreasing", "in", "the", "downward", "direction", "for", "the", "nodes", "located", "in", "the", "lower", "layers", "such", "as", "n", "-", "1", ",", "n", "-", "2", ",", "etc", ".,", "and", "reaches", "to", "0", "as", "shown", "in", "Figure", "5a", "." ],
+    "entities_indices" : [ [ 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "procedure", "repeats", "at", "each", "hop", "until", "the", "data", "packets", "are", "successfully", "delivered", "to", "the", "sea", "surface", "sink", "." ],
+    "entities_indices" : [ [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "respect", ",", "the", "key", "objective", "function", "of", "the", "packets", "forwarding", "(", "phi", "UWPF", "(", "3", ")", ")", "algorithm", "is", "numerically", "indicated", "as", ":(", "34", ")", "phi", "UWPF", "(", "3", ")", "=", "sum", "i", "=", "1", "|", "n", "|", "maxiP", "d", "r+", "maxiL", "b+", "miniC", "o", "n", "g+", "miniD", "e", "l", "3.4.1", "." ],
+    "entities_indices" : [ [ 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "LRP", "scheme", "performs", "insignificant", "than", "all", "routing", "schemes", "due", "to", "spending", "a", "prominent", "time", "during", "routes", "finding", "process", "in", "the", "network", "." ],
+    "entities_indices" : [ [ 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "Generally", ",", "the", "exponential", "model", "provides", "a", "good", "approximation", "to", "measure", "the", "duration", "of", "the", "PU", "states", "." ],
+    "entities_indices" : [ [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "model", ",", "the", "path", "loss", "is", "mainly", "caused", "by", "the", "geometrical", "spreading", "and", "signal", "attenuation", "associated", "with", "frequency", "dependent", "absorption", "is", "calculated", "as", ":(", "35", ")", "10logA", "(", "d", ",", "f", ")/AO", "=", "k", "x", "10logd+", "d", "x", "10loga", "(", "f", ")", "d", "The", "absorption", "coefficient", "a", "(", "f", ")", "using", "the", "Thorp", "'", "s", "formula", "[", "44", "]", "is", "given", "as", ":(", "36", ")", "10loga", "(", "f", ")", "=0", ".11", "x", "f21+", "f2", "+44", "x", "f24100+", "f2", "+2.75", "x", "10", "-", "4f2", "+0.003", "in", "which", ",", "the", "factors", "transmission", "loss", "A", "(", "d", ",", "f", ")", "and", "noise", "level", "N", "(", "f", ")", "are", "functions", "of", "the", "distance", "(", "d", ")", "and", "frequency", "." ],
+    "entities_indices" : [ [ 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43 ], [ 54, 55, 56, 57 ], [ 90, 91, 92, 93, 94 ], [ 95, 96, 97, 98 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "underwater", ",", "the", "noise", "(", "n", "oise", ")", "is", "a", "real", "valued", "Gaussian", "variable", "that", "considers", "various", "underwater", "environment", "parameters", "with", "zero", "mean", "and", "variance", "sigma", "v", "2", "is", "constrained", "by", "Equation", "(", "2e", ")", "within", "a", "certain", "error", "probability", "." ],
+    "entities_indices" : [ [ 26, 27, 28, 29, 30 ] ]
+  }, {
+    "sentence_tokens" : [ "On", "the", "other", "hand", ",", "this", "high", "PDR", "is", "also", "due", "to", "utilizing", "the", "most", "appropriate", "channel", "to", "mitigate", "the", "interference", "and", "noise", "effects", "during", "packets", "transmission", "in", "UWSNs", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "developed", "protocol", "improves", "the", "packets", "delivery", "rates", "and", "reduces", "the", "latency", ",", "but", "it", "faces", "the", "issue", "of", "low", "throughput", "and", "poor", "loading", "balancing", "in", "UWSNs.Han", "et", "al.", "[", "29", "]", "propose", "an", "asymmetric", "link", "based", "reverse", "routing", "in", "which", "a", "directional", "beam", "width", "mechanism", "is", "used", "to", "analyze", "the", "link", "quality", "between", "relay", "ASNs", "." ],
+    "entities_indices" : [ [ 55, 56 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "technique", "provides", "better", "channel", "detection", "in", "underwater", "since", "it", "does", "not", "need", "any", "previous", "information", "about", "the", "PU", "'", "s", "signals", "." ],
+    "entities_indices" : [ [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "Thus", ",", "the", "hypothesis", "at", "each", "secondary", "user", "is", "saying", "that", "the", "PU", "is", "active", "only", "if", "the", "received", "signal", "energy", "is", "greater", "than", "the", "defined", "limit", "and", "idle", "when", "it", "is", "less", "than", "the", "defined", "threshold", "value", ",", "which", "can", "be", "numerically", "indicated", "as", ":(", "5", ")", "T", "Epsilon", "nD", "(", "SU", "i", ")", "SL", "=[", "H0", "in", "Epsilon", "SL", ">", "sigma", "|", "H1", "in", "Epsilon", "SL", "<", "sigma", "]", "in", "tau", "s", "subject", "to", ":(", "5a", ")", "T", "Epsilon", "nD", "(", "SU", "i", ")", "SL", "=", "tau", "on", "|", "tau", "off", "in", "C", "i", "subset/equal", "C", "n", "(", "5b", ")", "H1", "(", "Ci", ")", "in", "Cn", "=", "1", "(", "tau", "on", ")", "(", "5c", ")", "H0", "(", "Ci", ")", "in", "Cn", "=0", "(", "tau", "off", ")", "(", "5d", ")", "PU", "j", "(", "Ci", ")", "in", "Cn", "!=", "tau", "on", "(", "5e", ")", "Ci", "in", "H1", "|", "H0", "<=", "1", "(", "5f", ")", "SU", "i", "(", "Ci", ")", "in", "Cn", "(", "R", "i", ")", "=", "tau", "-", "tau", "s", "(", "5g", ")", "SU", "i", "not-in", "Ci", "(", "R", "i", ")", "=", "tau", "(", "5h", ")", "SU", "i", "(", "Ci", ")", "busy", "in", "Cn", "(", "R", "i", ")", "!=", "tau", "s", "in", "which", "sigma", "is", "the", "threshold", "value", "of", "energy", "is", "used", "to", "compare", "is", "the", "local", "spectrum", "sensing", "decision", "of", "a", "SU", "i", ",", "H1", "denotes", "the", "i", "th", "channel", "is", "not", "available", "because", "of", "the", "PU", "i", "activity", "with", "probability", "rho", "(", "PU", "i", ")", "in", "the", "sensing", "time", "tau", "s", "is", "constraint", "by", "Equation", "(", "5a", ")", "." ],
+    "entities_indices" : [ [ 12, 13 ], [ 50, 51 ], [ 81, 82 ], [ 88, 89 ], [ 100, 101 ], [ 104, 105 ], [ 111, 112 ], [ 119, 120 ], [ 125, 126 ], [ 131, 132 ], [ 134, 135 ], [ 139, 140 ], [ 144, 145 ], [ 176, 177 ], [ 178, 179, 180, 181, 182, 183, 184 ], [ 193, 194 ], [ 195, 196, 197, 198, 199, 200, 201 ], [ 203, 204 ], [ 237, 238 ], [ 242, 243 ], [ 244, 245 ], [ 251, 252 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "proposed", "architecture", "consists", "of", "a", "sea", "surface", "sink", ",", "base", "station", "(", "BS", ")", "and", "ASNs", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 10, 11 ], [ 13, 14 ], [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "CCoS", "can", "considerably", "intensify", "the", "systems", "aptitude", "in", "identifying", "and", "evading", "the", "PU", "signals", "in", "the", "network", "." ],
+    "entities_indices" : [ [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "research", "in", "[", "10,25,26", "]", "propose", "bio", "inspired", "dynamic", "cluster", "based", "routing", "protocols", "to", "provide", "reliable", "data", "transmission", "by", "considering", "the", "number", "of", "hop", "counts", "and", "the", "confidence", "level", "of", "the", "relay", "ASNs", "in", "UWSNs", "." ],
+    "entities_indices" : [ [ 33, 34 ] ]
+  }, {
+    "sentence_tokens" : [ "(", "Q", "j/Q", "l", ")", "-", "1", ",", "if", ":", "i", "Q", "i", ">=", "1", "}", "(", "34h", ")", "Q", "v", "i", "=", "Q", "i", "n", "e", "w", "-", "Q", "i", "o", "l", "d", "Q", "l/N", "e", "(", "j", ")", "0", "<", "for-all", "Q", "i", "<=", "Q", "l", "=", "1", "(", "34i", ")", "0", "<=", "rho", "b", "(", "p", "d", "(", "i", ")", ")", "<", "1", "(", "34j", ")", "D", "j", "-->", "S", "i", "n", "k", "=D", "(", "j", ",", "S", "i", "n", "k", ")/A", "v", "g", "(", "F", "r", "e", "l", "a", "y", "(", "j", ")", ")", "where", "for-all", "j", "r", "e", "l", "a", "y", ">", "1", "&", "&", "j", "r", "e", "l", "a", "y", "in", "S", "i", "n", "k", "(", "34k", ")", "t", "k", "=", "sum", "i", "=", "1", "n", "t", "b", "a", "c", "k", "o", "f", "f+", "F", "r", "e", "l", "a", "y+", "t", "a", "c", "k", "<=", "1", "for-all", "LASN", "(", "i", ",", "j", ")", "in", "S", "i", "n", "k", "Constraints", "in", "(", "34a", ")", "state", "that", "in", "single-hop", "packet", "progress", ",", "the", "Euclidian", "distance", "(", "D", ")", "of", "next-hop", "forwarder", "j", "receiving", "data", "packets", "from", "an", "acoustic", "node", "i", "must", "be", "less", "than", "the", "sender", "to", "the", "sink", "." ],
+    "entities_indices" : [ [ 80, 81, 82, 83, 84, 85, 86, 87 ], [ 88, 89, 90 ], [ 117, 118, 119, 120, 121, 122 ], [ 160, 161, 162, 163, 164, 165 ], [ 183, 184, 185, 186 ], [ 202, 203 ] ]
+  }, {
+    "sentence_tokens" : [ "On", "the", "other", "hand", ",", "the", "third", "routing", "protocol", "faces", "excessive", "overhead", "issues", "due", "to", "periodically", "updating", "the", "neighboring", "ASNs", "in", "UWSNs", "." ],
+    "entities_indices" : [ [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "Lastly", ",", "the", "UWPF", "mechanism", "during", "conveying", "information", "avoids", "congestion", ",", "data", "path", "loops", "and", "balances", "the", "data", "traffic", "load", "in", "UWSNs", "." ],
+    "entities_indices" : [ [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "designed", "mechanism", ",", "the", "impact", "of", "the", "noise", "factor", "(", "N", "o", ")", "on", "the", "channel", "selection", "in", "a", "specific", "time", "tau", "i", "interval", "in", "the", "underwater", "environments", "is", "computed", "as", ":(", "19", ")", "N", "o", "=", "sum", "i", "=", "1", "n", "(", "AN", "o+", "MN", "o+", "TN", "o+", "NN", "o", ")", "tau", "i", "in", "which", "TN", "o", ",", "AN", "o", ",", "+", "NN", "o", "and", "MN", "o", "are", ",", "the", "thermal", "noise", ",", "the", "acoustic", "channel", "noise", "factors", "due", "to", "signal", "internal", "interferences", ",", "nature", "noise", "contains", "factors", "like", "seismic", ",", "rain", ",", "wind", "and", "marine", "animals", ",", "and", "man-made", "noise", "like", "shipping", "and", "a", "motor", "on", "a", "boat", "in", "the", "UWEs", "." ],
+    "entities_indices" : [ [ 9, 10, 11 ], [ 12, 13, 14 ], [ 47, 48 ], [ 49, 50 ], [ 51, 52 ], [ 58, 59 ], [ 65, 66 ], [ 68, 69 ], [ 94, 95 ], [ 111, 112 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "SDA", "approach", "takes", "the", "advantages", "of", "both", "static", "and", "dynamic", "channel", "assignments", "and", "provides", "better", "trade-off", "between", "low", "overheads", "and", "traffic", "changes", "with", "high", "adaptation", "to", "channel", "variety", "in", "the", "proposed", "scheme", "." ],
+    "entities_indices" : [ [ 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "CCoS", "approach", ",", "SU", "s", "for", "a", "channel", "Ci", "sense", "the", "temporal", "nonexistence", "of", "the", "PUi", "and", "send", "their", "local", "observation", "data", "to", "a", "specialized", "fusion", "center", ",", "which", "combines", "the", "received", "channel", "results", "and", "decides", "the", "use", "of", "the", "channel", "Ci", "for", "packets", "transmission", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 43, 44 ] ]
+  }, {
+    "sentence_tokens" : [ "Upon", "receiving", "the", "i", "n", "i", "_", "m", "s", "g", "message", ",", "the", "sea", "surface", "sink", "broadcasts", "neighboring", "discovery", "(", "n", "e", "g", "_", "m", "s", "g", ")", "message", "to", "randomly", "deploy", "acoustic", "nodes", "in", "its", "communication", "range", "with", "the", "following", "values", ":", "the", "sink", "identity", ",", "level", "number", "and", "location", "information", "with", "the", "angle", "of", "packet", "departure", "in", "UWSNs", "." ],
+    "entities_indices" : [ [ 3, 4, 5, 6, 7, 8, 9, 10, 11 ], [ 15, 16 ], [ 22, 23, 24, 25 ], [ 44, 45 ] ]
+  }, {
+    "sentence_tokens" : [ "G", "(", "SU", "j", ",", "PS", "j", ")", ")", "C", "i", "and", "the", "interference", "range", "of", "a", "secondary", "user", "RIntf", "(", "SU", "j", ")", "numerically", "written", "as", ":(", "26", ")", "RI", "n", "t", "f", "(", "SU", "j", ")", "=", "sum", "i", "=", "1", "n", "sum", "j", "=", "1", "m", "PU", "i", ",", "P", "l", "o", "s", "s", "(", "d", "m", "a", "x", ")", "SU", "j", ",", "P", "l", "o", "s", "s", "(", "d", ")", "+", "BI", "n", "t", "f", "p", "(", "m", "a", "x", ")", "(", "C", "i", ")", "The", "SU", "by", "using", "signal", "level", "measurements", "must", "estimate", "the", "interference", "level", ",", "it", "creates", "at", "the", "PU", "receivers", "during", "continuous", "transmission", "in", "UWSNs", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 19, 20 ], [ 21, 22, 23 ], [ 30, 31 ], [ 49, 50 ], [ 58, 59, 60, 61, 62, 63, 64, 65 ], [ 75, 76 ], [ 106, 107 ] ]
+  }, {
+    "sentence_tokens" : [ "Fourth", ",", "the", "existing", "static-channel", "based", "routing", "solutions", "due", "to", "lack", "of", "dynamic", "channel", "adaptation", "cannot", "mitigate", "the", "inference", "effects", "in", "order", "to", "provide", "high", "packet", "delivery", "rates", "and", "network", "throughput", "with", "low", "latency", "and", "corrupted", "packets", "in", "UWSNs.These", "facts", "motivate", "researchers", "to", "propose", "a", "novel", "cross-layer", "QoS-aware", "multichannel", "routing", "protocol", "called", "QoSRP", "for", "the", "internet", "of", "UWSNs", "to", "mitigate", "the", "effects", "of", "the", "underwater", "environments", "and", "improve", "the", "overall", "data", "collection", "in", "UWSNs", "." ],
+    "entities_indices" : [ [ 52, 53 ] ]
+  }, {
+    "sentence_tokens" : [ "Consequently", ",", "a", "SU", "j", "during", "the", "channel", "assignment", "process", "finds", "a", "free", "channel", "can", "only", "transmit", "events", "related", "information", "by", "following", "the", "transmission", "power", "consist", "of", "a", "feasible", "range", "T", "p", "(", "n", ")", "={", "T", "p", "1", ",", "T", "p", "2", ",", "..." ],
+    "entities_indices" : [ [ 41, 42, 43 ] ]
+  }, {
+    "sentence_tokens" : [ "Moreover", ",", "the", "channel", "detection", "performance", "of", "the", "matched", "filter", "can", "be", "severely", "limited", "because", "the", "primary", "user", "(", "PU", ")", "signals", "information", "is", "hardly", "available", "at", "the", "PU", "'", "s", "in", "UWEs", "." ],
+    "entities_indices" : [ [ 19, 20 ], [ 28, 29 ] ]
+  }, {
+    "sentence_tokens" : [ "To", "address", "some", "of", "the", "issues", "faced", "by", "the", "above", "schemes", ",", "the", "protocol", "in", "[", "31", "]", "overcomes", "packets", "loss", "by", "considering", "the", "forwarder", "ASNs", "connectivity", "issues", "along", "a", "route", "towards", "the", "sink", "." ],
+    "entities_indices" : [ [ 25, 26 ], [ 33, 34 ] ]
+  }, {
+    "sentence_tokens" : [ "Constraints", "in", "(", "20d", ")", "are", "the", "energy", "consumption", "(", "ECS", ")", "constraints", "during", "a", "time", "slot", "at", "acoustic", "sensor", "node", "i", "in", "the", "network", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "DCoS", ",", "a", "set", "of", "SU", "s", "without", "the", "coordination", "of", "the", "centralized", "expert", "devices", "locally", "detects", "the", "PU", "signals", "and", "maintains", "the", "spectrum", "information", "to", "make", "the", "decision", "by", "itself", "." ],
+    "entities_indices" : [ [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "Constraints", "in", "(", "34e", ")", "guarantees", "that", "the", "number", "of", "forwarding", "nodes", "cannot", "be", "higher", "than", "the", "defined", "maximum", "forwarding", "nodes", "F", "r", "e", "l", "a", "y", "(", "m", "a", "x", ")", "along", "a", "routing", "path", "towards", "the", "sink", "." ],
+    "entities_indices" : [ [ 21, 22, 23 ], [ 38, 39 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "rate", "is", "found", "more", "in", "MERP", "and", "LRP", "compared", "to", "the", "QERP", "routing", "protocol", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 8, 9 ], [ 12, 13, 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "proposed", "QoSRP", "scheme", "considers", "the", "unique", "characteristics", "of", "the", "acoustic", "communication", "in", "highly", "dynamic", "network", "topology", "during", "gathering", "and", "relaying", "events", "data", "towards", "the", "sink", "." ],
+    "entities_indices" : [ [ 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "cooperative", "sensing", "can", "be", "individual", "(", "ICoS", ")", "or", "group", "based", "(", "GCoS", ")", "sensing", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "Constraints", "in", "(", "12e", ")", "make", "it", "sure", "that", "the", "selected", "secondary", "users", "detect", "the", "channel", "in", "predefined", "time", "intervals", "(", "tau", "s", ")", "." ],
+    "entities_indices" : [ [ 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "Similarly", ",", "the", "study", "in", "[", "24", "]", "provides", "a", "bio", "inspired", "distributed", "spectral", "clustering", "routing", "protocol", "that", "exploits", "link", "quality", "by", "considering", "signal", "to", "noise", "ratio", "(", "SNR", ")", "values", "between", "relay", "ASNs", "to", "provide", "highly", "stable", "clustering", "and", "routing", "architecture", "in", "the", "network", "." ],
+    "entities_indices" : [ [ 28, 29 ], [ 33, 34 ] ]
+  }, {
+    "sentence_tokens" : [ "Thus", ",", "the", "optimal", "channel", "detection", "threshold", "significantly", "reduces", "the", "sensing", "errors", ",", "enhance", "spectrum", "utilization", "and", "provides", "enough", "protection", "to", "PU", "transmissions", "in", "the", "MCASNs", "." ],
+    "entities_indices" : [ [ 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "On", "the", "other", "hand", ",", "continue", "data", "transmission", "for", "a", "long", "time", "can", "drain", "relay", "nodes", "energy", ",", "particularly", "for", "those", "who", "are", "nearer", "to", "the", "sink", "." ],
+    "entities_indices" : [ [ 26, 27 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "less", "error", "in", "computing", "the", "SNR", "value", "decreases", "the", "probability", "of", "FA", "s", "in", "UWEs", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "network", "model", "used", "in", "the", "design", ",", "development", ",", "simulating", "and", "testing", "the", "QoSRP", "scheme", "is", "illustrated", "in", "Figure", "1", "." ],
+    "entities_indices" : [ [ 14, 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "energy", "of", "both", "sea", "surface", "sink", "and", "BS", "is", "assumed", "to", "be", "unlimited", "since", "they", "can", "be", "charged", "by", "suitable", "green", "energy", "resources", ",", "such", "as", "solar", "energy", ",", "etc." ],
+    "entities_indices" : [ [ 6, 7 ], [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "Constraints", "(", "28f", ")", "is", "the", "supporting", "constraints", "for", "(", "28e", ")", "guarantees", "that", "at", "the", "same", "time", "tau", "s", "primary", "and", "secondary", "users", "in", "a", "region", "R", "i", "or", "R", "j", "cannot", "use", "the", "same", "channel", "C", "i", "to", "avoid", "harmful", "interference", "while", "the", "constraints", "in", "(", "28g", ")", "confirm", "that", "different", "channels", "are", "assigned", "to", "each", "primary", "and", "secondary", "users", "in", "the", "network", "." ],
+    "entities_indices" : [ [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "QoSRP", "uses", "a", "transmission", "phase-lock", "that", "is", "based", "on", "the", "previous", "history", "wake", "up", "or", "sleep", "activity", "information", "of", "the", "primary", "users", "and", ",", "therefore", ",", "the", "transmission", "node", "knows", "the", "receiver", "wake", "up", "phase", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "performance", "of", "locally", "detecting", "spectrum", "by", "each", "SU", "is", "computed", "by", "the", "probability", "of", "detection", "when", "a", "PU", "i", "is", "idle", "and", "the", "probability", "of", "FA", "s", "when", "a", "PU", "i", "is", "active", "and", "can", "be", "numerically", "expressed", "as", "(", "6", ")", "rho", "D", "e", "T", "=", "rho", "(", "H1", "|", "H1", ")", "in", "rho", "(", "Epsilon", "SL", ">", "sigma", "|", "H1", ")", "(", "7", ")", "rho", "M", "i", "D", "=", "1", "-", "rho", "D", "e", "T", "(", "Epsilon", "SL", "<", "sigma", "|", "H1", ")", "(", "8)", "rho", "FA", "s", "=", "rho", "(", "H1", "|", "H0", ")", "in", "rho", "(", "Epsilon", "SL", ">", "sigma", "|", "H0", ")", "Equations", "(", "6", ")", ",", "(", "7", ")", "and", "(", "8)", "show", "the", "D", "e", "T", "probability", "when", "SU", "determines", "H1", "when", "H1", "exits", ",", "the", "M", "i", "D", "probability", "when", "SU", "decides", "H0", "but", "H1", "exists", ",", "and", "the", "FA", "s", "probability", "when", "SU", "decides", "H1", "but", "H0", "exists", ",", "respectively", "." ],
+    "entities_indices" : [ [ 18, 19 ], [ 26, 27 ], [ 30, 31 ], [ 89, 90 ], [ 99, 100, 101, 102, 103, 104, 105, 106 ], [ 148, 149 ] ]
+  }, {
+    "sentence_tokens" : [ "Thus", ",", "a", "node", "with", "the", "highest", "priority", "in", "the", "routing", "table", "is", "selected", "as", "a", "potential", "forwarder", "to", "relay", "information", "of", "the", "source", "node", "towards", "the", "sink", "." ],
+    "entities_indices" : [ [ 27, 28 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "SU", "s", "must", "leave", "the", "detected", "channel", "Ci", "and", "immediately", "switch", "to", "an", "alternative", "channel", "C", "j", "by", "identifying", "the", "spectrum", "holes", "for", "transferring", "packets", "in", "UWSNs", "." ],
+    "entities_indices" : [ [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "model", ",", "there", "exist", "two", "states", ",", "namely", "ON", "state", "and", "OFF", "state", "are", "used", "to", "describe", "the", "activity", "of", "each", "channel", ",", "indicating", "the", "channel", "is", "occupied", "by", "a", "PU", "and", "the", "channel", "is", "idle", ",", "respectively", "." ],
+    "entities_indices" : [ [ 32, 33 ] ]
+  }, {
+    "sentence_tokens" : [ "Constraints", "(", "20e", ")", "verify", "the", "residual", "energy", "of", "each", "ASN", "at", "the", "end", "of", "time", "slot", "tau", "s", "is", "since", "the", "energy", "level", "is", "constrained", "between", "battery", "outage", "(", "Bout", ")", "and", "maximum", "battery", "power", "(", "Bmax", ")", "in", "the", "network", "." ],
+    "entities_indices" : [ [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "Consequently", ",", "the", "probability", "of", "ideal", "channel", "availability", "for", "a", "secondary", "user", "based", "on", "the", "previous", "channel", "history", "between", "the", "time", "tau", "i", "and", "tau", "j", "for", "tau", "k", "time", "can", "be", "computed", "as", ":(", "33", ")", "rho", "availableC", "i", "(", "SU", "j", ")", "=", "1", "-", "rho", "tau", "o", "n", "-->", "o", "ffC", "i", "(", "PU", "i", ")", "Thus", ",", "the", "designed", "scheme", "saves", "a", "notable", "amount", "of", "spectrum", "re-sensing", "energy", "by", "avoiding", "the", "data", "packet", "collision", "due", "to", "assigning", "a", "longer", "idle", "channel", "between", "the", "PUs", "and", "SUs", "in", "the", "UWSNs", "." ],
+    "entities_indices" : [ [ 48, 49 ], [ 56, 57 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "fact", ",", "we", "evaluate", "the", "performance", "of", "QoSRP", "against", "well-known", "LRP", "[", "24", "]", ",", "QERP", "[", "26", "]", "and", "MERP", "[", "10", "]", "routing", "protocols", "developed", "for", "UWSNs", "based", "events", "monitoring", "applications", "in", "UWEs", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 11, 12 ], [ 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "(", "C", "i", ")", "sum", "i", "=", "1n", "phi", "SU", "j.", "mu", "(", "phi", "C", "i", "SU", "j", "(", "U", "t", "(", "SU", "j", ")", ")", ")", "This", "maximum", "utility", "function", ",", "i.e", ".,", "phi", "SU", "j", "(", "phi", "C", "i", "SU", "j", ")", "=", "phi", "SU", "j", "log", "(", "1+", "phi", "C", "i", "SU", "j", ")", "is", "assumed", "to", "be", "proportional", "to", "the", "Shannon", "capacity", "biased", "by", "priority", "parameter", "phi", "SU", "j", "of", "the", "secondary", "user", "SU", "j", "by", "using", "channel", "C", "i", "in", "the", "network", "." ],
+    "entities_indices" : [ [ 22, 23, 24, 25 ], [ 32, 33, 34, 35, 36, 37 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "case", "of", "high", "interferences", ",", "the", "QoSRP", "selects", "certain", "channels", "to", "change", "into", "after", "checking", "the", "channels", "'", "condition", "and", "hops", "to", "another", "channel", "quickly", "by", "efficiently", "detecting", "the", "primary", "user", "signals", "to", "keep", "the", "error", "and", "loss", "rates", "to", "a", "minimum", "as", "shown", "in", "Figure", "11", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "Consequently", ",", "by", "considering", "the", "defined", "transmission", "power", "level", "the", "SNR", "must", "be", "greater", "than", "the", "defined", "threshold", "level", "(", "T", "s", "n", "r", ")", "in", "order", "to", "decode", "received", "signal", "correctly", "can", "be", "numerically", "indicated", "as", ":(", "21", ")", "SNR", "(", "PS", "j", ")", "=", "T", "p", "(", "tra", ")", ",", "(", "PU", "i", ",", "PS", "j", ")", "G", "(", "C", "i", ")", "lN", "o+", "sum", "k", ",", "m", "!=", "i", ",", "jT", "p", "(", "PUk", ",", "PSm", ")", ">=", "T", "s", "n", "r", "In", "which", "G", "(", "C", "i", ")", "l", "is", "the", "channel", "gain", "of", "a", "link", "l", "between", "PU", "i", "and", "PS", "j", "in", "the", "network", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 42, 43 ], [ 53, 54 ], [ 56, 57 ], [ 64, 65 ], [ 69, 70, 71, 72 ], [ 78, 79 ], [ 102, 103 ], [ 105, 106 ] ]
+  }, {
+    "sentence_tokens" : [ "Initially", ",", "a", "remote", "user", "initiates", "the", "neighbors", "finding", "process", "by", "forwarding", "a", "network", "initialization", "(", "i", "n", "i", "_", "m", "s", "g", ")", "message", "to", "the", "sea", "surface", "sink", "." ],
+    "entities_indices" : [ [ 16, 17, 18, 19, 20, 21, 22, 23 ], [ 29, 30 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "model", ",", "the", "durations", "of", "both", "ON", "and", "OFF", "periods", "is", "considered", "as", "exponentially", "distributed", "and", "independent", "with", "means", "1/I", "d", "l", "e", "and", "1/B", "u", "s", "y", ",", "respectively", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 20, 21, 22, 23, 24, 25, 26, 27, 28 ] ]
+  }, {
+    "sentence_tokens" : [ "After", "receiving", "the", "packets", ",", "the", "sink", "sends", "a", "confirmation", "message", "to", "the", "senders", "in", "the", "reverse", "routing", "path", "to", "notify", "the", "source", "node", "that", "its", "data", "has", "been", "received", "for", "further", "processing", "and", "sent", "to", "a", "remote", "user", "in", "the", "network.In", "addition", ",", "the", "similar", "procedure", "is", "repeated", "in", "the", "reverse", "packets", "forwarding", "from", "the", "sink", "towards", "the", "source", "node", "in", "UWSNs", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 56, 57 ] ]
+  }, {
+    "sentence_tokens" : [ "On", "the", "contrary", ",", "the", "latency", "performance", "of", "MERP", "is", "better", "due", "to", "it", "spending", "less", "time", "handling", "congestion", "issues", "in", "the", "packets", "forwarding", "process", "." ],
+    "entities_indices" : [ [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "a", "highly", "reliable", "routing", "architecture", "is", "essential", "for", "UWSNs.In", "the", "rest", "of", "the", "paper", ",", "Section", "2", "discusses", "the", "existing", "routing", "protocols", "in", "UWSNs", "." ],
+    "entities_indices" : [ [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "(", "1", "-", "sum", "j", "=", "1", "n", "j", "(", "Q", "j", ")", "Q", "l", ")", "+", "rho", "b", "(", "p", "d", "(", "i", ")", "i", "n", "i", ")", "for-all", "j", "r", "e", "l", "a", "y", "in", "S", "i", "n", "k", "(", "34g", ")", "rho", "b", "(", "p", "d", "(", "i", ")", "i", "n", "k", ")", "=", "{", "0", ",", "if", ":", "i", "Q", "i", "<", "1", ";", "N", "(", "j", ")", "2", "." ],
+    "entities_indices" : [ [ 37, 38, 39, 40, 41, 42 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "key", "reason", "for", "this", "high", "PDR", "is", ",", "the", "secondary", "users", "'", "activities", "is", "higher", "during", "packets", "forwarding", "compared", "to", "the", "primary", "user", "activities", "for", "a", "long", "time", "in", "UWSNs", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "AND", "fusion", "rule", ",", "the", "fusion", "center", "declares", "H1", "only", "if", "all", "independent", "SU", "s", "decide", "on", "H1", "and", "declares", "H1", "for", "the", "OR", "rule", "only", "if", "any", "of", "independent", "SU", "s", "decides", "on", "H1", "in", "the", "cooperative", "decision", "." ],
+    "entities_indices" : [ [ 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "On", "the", "other", "hand", ",", "the", "congestion", "management", "profile", "of", "MERP", "and", "LRP", "are", "overlapping", "each", "other", "and", "is", "around", "83", "%", "and", "82", "%", ",", "respectively.In", "these", "single-channel", "protocols", ",", "the", "node", "does", "not", "have", "enough", "time", "to", "recover", "from", "the", "high", "interference", "to", "retransmit", "and", "drops", "most", "of", "the", "packets", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "Finally", ",", "the", "UWPF", "mechanism", "exploits", "the", "relay", "ASNs", "by", "employing", "hybrid", "angle", "based", "and", "greedy", "routing", "mechanisms", "to", "their", "NASNs", "to", "route", "packets", "around", "connectivity", "voids", "and", "shadow", "zones", "in", "UWSNs", "." ],
+    "entities_indices" : [ [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "addition", ",", "a", "PU", "channel", "with", "poor", "data", "transmission", "performance", "is", "blocked", "by", "the", "SU", "for", "a", "defined", "time", "interval", "to", "provide", "the", "opportunity", "of", "data", "transmission", "for", "other", "SU", "s", "as", "revealed", "in", "Figure", "4", "." ],
+    "entities_indices" : [ [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "From", "low", "to", "high", ",", "the", "packet", "loss", "increases", "over", "time", "and", "always", "goes", "up", "until", "16", "%", ",", "14", "%", "and", "11", "%", "in", "MERP", ",", "QERP", "and", "LRP", "routing", "protocols", "." ],
+    "entities_indices" : [ [ 25, 26 ], [ 27, 28 ], [ 29, 30 ] ]
+  }, {
+    "sentence_tokens" : [ "It", "is", "assumed", "that", "each", "SU", "j", "selects", "an", "appropriate", "data", "capacity", "channel", "from", "the", "existing", "channel", "list", "i.e", ".,", "SU", "j", "(", "C", "i", ")", "intersection", "PS", "j", "(", "C", "i", ")", "=", "empty", ",", "i.e", ".,", "f", "(", "SU", "j", ")", "+", "f", "(", "PS", "j", ")", "<=", "1", "in", "which", "f", "(", "PS", "j", ")", "=", "1/sum", "{", "C", "n", "}", "and", "f", "(", "PS", "j", ")", "=", "1/sum", "{", "C", "n", "-", "1", "}", "for", "{", "f", "in", "C", "n", "}", "is", "the", "normalized", "frequency", "bands", "allocated", "to", "a", "set", "of", "distinct", "acoustic", "sensors", "in", "the", "network", "." ],
+    "entities_indices" : [ [ 27, 28 ], [ 46, 47 ], [ 55, 56 ], [ 67, 68 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "ASNs", "directly", "received", "the", "n", "e", "g", "_", "m", "s", "g", "messages", "from", "the", "sea", "surface", "sink", "are", "marked", "as", "level", "n." ],
+    "entities_indices" : [ [ 1, 2 ], [ 7, 8, 9, 10, 11, 12, 13 ], [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "randomly", "deployed", "ASNs", "in", "a", "geographic", "area", "of", "interest", "over", "the", "ocean", "bottom", "are", "equipped", "with", "the", "main", "functions", "of", "sensing", ",", "sampling", ",", "and", "acoustic", "transmitters", "." ],
+    "entities_indices" : [ [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "To", "do", "so", ",", "the", "source", "node", "by", "considering", "the", "local", "records", "sends", "the", "route", "discovery", "(", "r", "d", "i", "s", "_", "m", "s", "g", ")", "message", "to", "its", "neighbors", "with", "the", "following", "values", ":", "the", "sender", "identity", ",", "current", "channel", ",", "remaining", "energy", ",", "level", "number", ",", "position", "with", "the", "angle", "of", "message", "departure", "and", "distance", "to", "the", "sink", "." ],
+    "entities_indices" : [ [ 19, 20, 21, 22, 23, 24, 25 ], [ 59, 60 ] ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "each", "primary", "user", "class", "requires", "a", "dedicated", "sensing", "receiver", ",", "which", "is", "expensive", "and", "consumes", "significant", "ASNs", "battery", "power", "in", "UWSNs", "." ],
+    "entities_indices" : [ [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "the", "optical", "signal", "can", "only", "propagate", "short", "distances", "(", "e.g", ".,", "2", "-", "8", "m", "with", "special", "lenses", ")", "[", "7", "]", "." ],
+    "entities_indices" : [ [ 11, 12, 13, 14, 15, 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "QoSRP", "scheme", "is", "validated", "through", "extensive", "simulations", "conducted", "by", "NS2", "and", "AquaSim", "2.0", "in", "underwater", "environments", "(", "UWEs", ")", "." ],
+    "entities_indices" : [ [ 1, 2, 3 ], [ 10, 11 ], [ 12, 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "the", "first", "scheme", "faces", "the", "issue", "of", "high", "congestion", "near", "to", "the", "sink", "than", "others", "while", "the", "main", "problem", "of", "the", "second", "scheme", "is", "invalid", "data", "packets", "due", "to", "path", "loops", "in", "the", "network", "." ],
+    "entities_indices" : [ [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "All", "the", "above", "factors", "lead", "to", "low", "latency", "in", "QoSRP", "compared", "to", "QERP", ",", "MERP", "and", "LRP", "routing", "schemes", "as", "shown", "in", "Figure", "12", "." ],
+    "entities_indices" : [ [ 9, 10 ], [ 12, 13 ], [ 14, 15 ], [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "addition", ",", "the", "ASNs", "move", "passively", "with", "water", "currents", "in", "vertical", "and", "horizontal", "directions", "with", "a", "velocity", "of", "0", "to", "0.8", "m/min", "and", "0", "to", "1", "m/min", ",", "respectively", "." ],
+    "entities_indices" : [ [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "Thus", ",", "the", "most", "appropriate", "SU", "s", "among", "the", "others", "which", "have", "better", "D", "e", "T", "probability", "by", "considering", "a", "given", "FA", "s", "probability", "in", "a", "region", "must", "be", "given", "the", "opportunity", "to", "participate", "in", "the", "DCoS", "." ],
+    "entities_indices" : [ [ 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "SU", "and", "PU", "could", "transmit", "data", "simultaneously", "only", "if", "they", "are", "far", "from", "each", "other", "and", "have", "low", "interference", "effect", "computed", "by", "the", "signal-to-interference", "ratio", "(", "S", "i", "r", ")", "in", "the", "UWSNS", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 27, 28, 29, 30 ] ]
+  }, {
+    "sentence_tokens" : [ "To", "do", "so", ",", "the", "SU", "that", "requires", "the", "channel", "information", "sends", "multicast", "request", "messages", "to", "its", "neighboring", "ASNs", "." ],
+    "entities_indices" : [ [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "Consequently", ",", "there", "are", "three", "types", "of", "channel", "assignment", "mechanism", "for", "multichannel", "schemes", ",", "namely", "static", "channel", "assignment", "(", "SCA", ")", ",", "dynamic", "channel", "assignment", "(", "DCA", ")", "and", "semi", "dynamic", "channel", "assignment", "(", "SDA", ")", "in", "UWSNs", "." ],
+    "entities_indices" : [ [ 29, 30, 31, 32, 33 ], [ 34, 35 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "PDF", "function", "for", "both", "ON", "and", "OFF", "states", "is", "numerically", "computed", "as", ":(", "15", ")", "FB", "u", "s", "y", "(", "t", ")", "=", "a", "e", "-", "a", "(", "t", ")", ",", "t", ">=", "0", ",", "(", "16", ")", "FI", "d", "l", "e", "(", "t", ")", "=", "b", "e", "-", "b", "(", "t", ")", ",", "t", ">=", "0", ",", "in", "which", "a", "and", "b", "represent", "the", "behavior", "of", "the", "PU", "transition", "rate", "from", "ON", "state", "to", "OFF", "state", "and", "from", "OFF", "state", "to", "ON", "state", ",", "respectively", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 5, 6 ], [ 16, 17 ], [ 39, 40 ], [ 55, 56, 57, 58 ], [ 69, 70 ], [ 80, 81 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "addition", ",", "the", "forwarding", "candidates", "with", "the", "same", "level", "n", "and", "being", "equal", "to", "the", "sink", "have", "the", "intermediate", "priority", "in", "the", "routing", "table", "." ],
+    "entities_indices" : [ [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "designed", "scheme", ",", "a", "simple", "and", "effective", "energy", "detection", "mechanism", "appropriately", "detects", "the", "existence", "of", "the", "PU", "signal", "based", "on", "its", "received", "energy", "by", "comparing", "it", "to", "a", "detection", "threshold", "." ],
+    "entities_indices" : [ [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "SU", "s", "for", "a", "channel", "Ci", "sense", "the", "temporal", "non", "existence", "of", "the", "PUi", "and", "find", "this", "channel", "busy", "if", "occupied", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "CyD", "technique", ",", "the", "presence", "of", "primary", "users", "can", "be", "identified", "even", "at", "very", "low", "signal-to-noise", "values", "by", "observing", "the", "periodicity", "of", "the", "collected", "PU", "'", "s", "signals", "in", "UWEs", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 26, 27 ] ]
+  }, {
+    "sentence_tokens" : [ "Constraints", "in", "Equation", "(", "5f", ")", "verify", "that", "the", "SU", "i", "senses", "a", "channel", "Ci", "in", "the", "region", "R", "i", "and", "holds", "the", "channel", "for", "a", "specific", "time", "once", "it", "is", "found", "free", "in", "the", "network", "." ],
+    "entities_indices" : [ [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "To", "this", "end", ",", "the", "SNR", "in", "the", "underwater", "at", "the", "i", "th", "secondary", "user", "SU", "i", "is", "computed", "as", "SNR", "(", "SU", "i", ")", "=|", "C", "g", "|", "2", "sigma", "s", "2/sigma", "v", "2", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "On", "the", "other", "hand", ",", "the", "QoSRP", "uses", "routing", "through", "the", "good", "neighborhood", ",", "which", "provides", "alternative", "routes", "instead", "of", "concentrating", "on", "a", "single", "good", "path", "to", "ensure", "that", "the", "workload", "is", "widely", "spread", "and", "no", "specific", "nodes", "are", "being", "used", "excessively.The", "neighborhood", "metric", "uses", "the", "information", "regarding", "the", "quality", "of", "the", "surrounding", "neighborhood", ",", "which", "are", "the", "forwarding", "path", "value", "and", "the", "neighborhood", "influence", "on", "the", "node", "in", "making", "a", "decision", "based", "on", "the", "priority", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "Generally", ",", "high", "capacity", "links", "with", "low", "interferences", "are", "allocated", "statically", "to", "the", "sensors", "closer", "to", "the", "sink", "that", "have", "the", "heaviest", "traffic", "loads", "in", "the", "network.The", "rest", "of", "the", "available", "channels", "are", "allocated", "for", "other", "sensors", "to", "pursue", "a", "dynamic", "channel", "assignment", "." ],
+    "entities_indices" : [ [ 17, 18 ], [ 27, 28 ] ]
+  }, {
+    "sentence_tokens" : [ "tau", "s", ",", "l", "in", "L", "(", "20e", ")", "Btry", "(", "tau", "s", "+1", ")", "=", "min", "{", "Bmax", ",", "max", "[", "Bout", ",", "Bi", "(", "tau", "s", ")", "+", "Ri", "(", "tau", "s", ")", "-", "Ei", "(", "tau", "s", ")", "]", "}", "tau", "s", "in", "tau", "(", "20f", ")", "tau", "s", ">=", "0", "1", "<", "tau", "s", "<", "tau", "(", "20g", ")", "T", "p", ">=", "0", "1", "<", "Bout", "<=", "Bmax", "(", "20h", ")", "X", "in", "{", "0,1", "}", "Constraints", "in", "(", "20a", ")", "show", "that", "the", "transmission", "power", "for", "each", "ASN", "cannot", "exceed", "T", "p", "(", "max", ")", "in", "the", "network", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 11, 12 ], [ 26, 27 ], [ 36, 37 ] ]
+  }, {
+    "sentence_tokens" : [ "Constraints", "in", "(", "12b", ")", "guarantee", "that", "the", "selected", "secondary", "users", "perform", "the", "best", "(", "I", "b", "e", "s", "t", ")", "in", "terms", "of", "channel", "detections", "with", "low", "error", "probability", "(", "delta", ")", "is", "satisfied", "by", "Equation", "(", "12c", ")", "." ],
+    "entities_indices" : [ [ 31, 32 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "following", "section", "explains", "the", "working", "procedure", "of", "QoSRP", "protocol", "in", "detail", "." ],
+    "entities_indices" : [ [ 8, 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "Thus", ",", "by", "considering", "the", "above", "data", "transmission", "rates", "with", "high", "transmission", "power", ",", "the", "average", "throughput", "(", "T", "h", "p", ")", "of", "the", "i", "th", "channel", "T", "h", "p", "(", "C", "i", ")", "during", "sensing", "time", "tau", "i", "from", "the", "total", "sensing", "time", "slot", "tau", "is", "computed", "as", ":(", "24", ")", "T", "h", "p", "(", "C", "i", ")", "=", "rho", "(", "H0", ",", "C", "i", ")", "(", "1", "-", "rho", "(", "f", "a", ",", "Ci", ")", "(", "tau", "i", ",", "sigma", ")", ")", "+", "rho", "(", "H1", ",", "C", "i", ")", "(", "1", "-", "rho", "(", "d", ",", "Ci", ")", "(", "tau", "i", ",", "sigma", ")", ")", "However", ",", "this", "high", "transmission", "power", "significantly", "improves", "the", "data", "transmission", "rate", "to", "a", "faraway", "distance", "in", "the", "network", "." ],
+    "entities_indices" : [ [ 45, 46 ], [ 75, 76 ], [ 85, 86 ], [ 99, 100 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "initial", "energy", "of", "each", "ASN", "and", "sea", "surface", "sink", "were", "set", "to", "100", "J", "and", "100", "kJ", "with", "average", "ocean", "depth", "is", "1", "mile", "(", "=~", "1.6", "km", ")", "." ],
+    "entities_indices" : [ [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "ICoS", "mechanism", ",", "some", "randomly", "selected", "ASNs", "monitor", "the", "data", "transmission", "activities", "of", "a", "specific", "channel", "independently", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "Considering", "the", "interference", "issues", ",", "the", "maximum", "utility", "for", "each", "user", "'", "s", "channel", "selected", "for", "the", "information", "transmission", "is", "computed", "numerically", "in", "Equation", "(", "29", ")", "as", "(", "29", ")", "U", "t", "=", "max", "U", "t", "(", "SU", "j", ")", "." ],
+    "entities_indices" : [ [ 38, 39, 40 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "addition", ",", "Equations", "(", "7", ")", "and", "(", "8)", "clearly", "indicate", "that", "SU", "provides", "reliable", "protection", "to", "PU", "when", "the", "detection", "probability", "is", "high", "while", "the", "SU", "loses", "spectrum", "access", "opportunities", "when", "the", "false", "alarm", "probability", "is", "high", "in", "the", "network", "." ],
+    "entities_indices" : [ [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "Moreover", ",", "in", "most", "cases", "these", "relay", "nodes", "are", "facing", "congestion", "issues", "because", "they", "are", "forwarding", "a", "huge", "amount", "of", "data", "coming", "from", "the", "rest", "of", "the", "network", "." ],
+    "entities_indices" : [ [ 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "route", "construction", "process", "starts", "from", "the", "source", "node", "have", "packets", "to", "convey", "to", "the", "sea", "surface", "sink", "." ],
+    "entities_indices" : [ [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "By", "doing", "this", ",", "it", "ensures", "that", "the", "rest", "of", "the", "node", "'", "s", "listening", "channels", "are", "good", "channels", "." ],
+    "entities_indices" : [ [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "the", "possibility", "of", "finding", "a", "poor", "capacity-aware", "channel", "with", "high", "interference", "also", "arises", "that", "affects", "the", "neighboring", "ASNs", "leading", "to", "low", "link", "qualities", "in", "the", "network", "." ],
+    "entities_indices" : [ [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "higher", "the", "priority", ",", "the", "shorter", "is", "the", "time", "for", "data", "to", "reach", "the", "sea", "surface", "sink", "." ],
+    "entities_indices" : [ [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "Where", "the", "Bi", "(", "tau", "s", ")", ",", "Btry", "(", "tau", "s", "+1", ")", ",", "Ri", "(", "tau", "s", ")", "and", "Ei", "(", "tau", "s", ")", "are", ",", "the", "remaining", "energy", "of", "each", "ASN", "at", "the", "beginning", ",", "the", "remaining", "energy", "of", "each", "ASN", "at", "the", "end", "of", "time", "slot", "tau", "s", ",", "the", "rate", "of", "energy", "replenishment", "that", "changes", "dynamically", "and", "initial", "battery", "power", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 15, 16 ], [ 21, 22 ], [ 23, 24 ], [ 50, 51 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "receiving", "node", "repeats", "the", "same", "aforesaid", "procedure", "to", "find", "the", "most", "appropriate", "forwarder", "towards", "the", "sea", "surface", "sink.Finally", ",", "the", "route", "discovery", "message", "is", "delivered", "to", "the", "sea", "surface", "sink", ",", "which", "sends", "an", "a", "c", "k", "_", "m", "s", "g", "message", "to", "the", "downstream", "senders", ",", "including", "the", "identity", "of", "each", "forwarding", "relay", "node", "which", "is", "delivered", "to", "the", "source", "node", "." ],
+    "entities_indices" : [ [ 30, 31 ], [ 36, 37, 38, 39, 40 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "QoSRP", ",", "the", "number", "of", "packets", "received", "at", "the", "sink", "is", "observed", "around", "88", "%", "when", "the", "vacant", "channel", "'", "s", "record", "is", "found", "to", "be", "around", "5", "at", "each", "ASN", "in", "UWSNs", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "beta", "1", ",", "beta", "2", ",", "Q", "j", ",", "Q", "l", "are", ",", "the", "constant", "depends", "on", "the", "variation", "in", "the", "length", "of", "the", "i", "th", "queue", ",", "the", "queue", "capacity", "constant", "defined", "by", "the", "user", ",", "the", "number", "of", "packets", "in", "the", "j", "he", "queue", "and", "maximum", "queue", "length", "l", "of", "a", "forwarding", "node", "in", "the", "network", "." ],
+    "entities_indices" : [ [ 1, 2, 3 ], [ 4, 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "the", "multichannel", "is", "proposed", "as", "a", "prominent", "technology", "to", "implement", "spectrum", "access", "for", "its", "autonomous", ",", "agility", ",", "and", "ability", "to", "detect", "the", "primary", "user", "'", "s", "(", "PU", ")", "signal", "." ],
+    "entities_indices" : [ [ 30, 31 ] ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "the", "internet", "of", "things", "(", "IoT", ")", "technology", "is", "expected", "to", "make", "possible", "a", "new", "era", "in", "the", "vast", "ocean", "exploration", "with", "the", "aims", "to", "connect", "ubiquitous", "devices", "and", "facilities", "with", "different", "types", "of", "underwater", "networks", "to", "provide", "efficient", "and", "reliable", "services", "for", "all", "kinds", "of", "applications", "anytime", "and", "anywhere", "[", "1", "]", "." ],
+    "entities_indices" : [ [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "Initially", ",", "a", "set", "of", "gateway", "nodes", "along", "the", "shortest", "path", "trees", "is", "defined", "to", "limit", "the", "association", "count", "of", "neighboring", "ASNs", "." ],
+    "entities_indices" : [ [ 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "the", "number", "of", "samples", "of", "the", "received", "signal", "energy", "of", "L", "s", "(", "n", ")", "such", "that", "n", ">", "1", "using", "the", "central", "limit", "theorem", "over", "an", "interval", "are", "considered", "to", "obtain", "some", "level", "of", "performances", "under", "certain", "SNR", "conditions", "is", "constrained", "by", "Equations", "(", "2c", ")", "and", "(", "2b", ")", "in", "the", "network", "." ],
+    "entities_indices" : [ [ 40, 41 ] ]
+  }, {
+    "sentence_tokens" : [ "It", "dipicts", "that", "the", "PU9", "channel", "is", "blocked", "for", "a", "predefined", "time", "and", "assigned", "a", "lower", "priority", "in", "the", "CIT", "since", "it", "performs", "poorly", "in", "transmission", "performance", "in", "the", "UWSNs", "." ],
+    "entities_indices" : [ [ 4, 5, 6 ], [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "SU", "n", "}", "at", "the", "fusion", "center", "y", "such", "that", "y", "={", "y", "1", ",", "y", "2", ",", "y", "3", ",", "..." ],
+    "entities_indices" : [ [ 15, 16, 17 ], [ 18, 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "addition", ",", "the", "fusion", "mechanism", "improves", "the", "robustness", "of", "the", "decision", "making", "process", "at", "the", "fusion", "node", "on", "the", "presence", "or", "absence", "of", "PU", "s", "in", "UWSNs", "." ],
+    "entities_indices" : [ [ 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "addition", ",", "the", "capacity", "of", "carrying", "events", "data", "(", "D", "c", ")", "of", "a", "channel", "C", "i", ",", "i.e", ".,", "Ci", "in", "sum", "{", "C1", ",", "C2", ",", "..." ],
+    "entities_indices" : [ [ 10, 11, 12 ], [ 21, 22 ], [ 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "sea", "surface", "sink", "is", "embedded", "with", "a", "global", "positioning", "system", "(", "GPS", ")", "and", "periodically", "updates", "the", "BS", "about", "its", "location", "information", "by", "disseminating", "periodic", "beaconing", "in", "the", "network", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 12, 13 ], [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "Constraints", "in", "(", "34k", ")", "show", "that", "the", "back", "off", "time", "to", "acquire", "the", "channel", "(", "t", "b", "a", "c", "k", "o", "f", "f", ")", "for", "finding", "an", "appropriate", "forwarding", "relay", "node", "(", "F", "r", "e", "l", "a", "y", ")", "and", "acknowledgement", "time", "(", "t", "a", "c", "k", ")", "for", "sending", "a", "data", "packet", "must", "be", "less", "than", "the", "defined", "threshold", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 16, 17, 18, 19, 20, 21, 22, 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "Constraints", "in", "(", "28e", ")", "state", "that", "the", "I", "n", "t", "f", "for", "the", "primary", "or", "secondary", "users", "belong", "to", "a", "region", "R", "i", "or", "R", "j", "using", "the", "same", "frequency", "channel", "at", "time", "tau", "s", "must", "not", "be", "greater", "than", "the", "defined", "threshold", "value", "." ],
+    "entities_indices" : [ [ 25, 26, 27 ], [ 34, 35 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "widely", "considered", "model", "that", "accurately", "describes", "the", "behavior", "of", "the", "PU", "in", "an", "ON", "-", "OFF", "model", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 14, 15 ], [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "Thus", ",", "in", "all", "low", ",", "intermediate", "and", "high", "interference", "cases", ",", "the", "channel", "detection", "probability", "is", "high", "for", "QoSRP", "at", "around", "87", "%", "to", "91", "%", "in", "both", "individual", "and", "group", "sensing", "cases", ",", "even", "though", "there", "is", "interference", "in", "the", "network", "." ],
+    "entities_indices" : [ [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "neighboring", "SU", "s", "after", "successfully", "receiving", "the", "request", "message", "start", "to", "observe", "the", "channel", "activity", "in", "the", "network", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "Similarly", ",", "the", "constraints", "in", "(", "34d", ")", "verify", "that", "the", "message", "forwarding", "from", "the", "sink", "towards", "the", "source", "node", "i", "in", "the", "reverse", "forwarding", "nodes", "RF", "r", "e", "l", "a", "y", "(", "n", ")", "is", "bounded", "to", "downward", "direction", "(", "D", "o", "w", "n", "s", "t", "r", "e", "a", "m", ")", "." ],
+    "entities_indices" : [ [ 15, 16 ], [ 26, 27 ] ]
+  }, {
+    "sentence_tokens" : [ "Consequently", ",", "the", "primary", "users", "channel", "history", "PC", "(", "h", ")", "based", "on", "the", "sensing", "results", "is", "maintained", "by", "each", "secondary", "user", "node", "SU", "j", "with", "a", "predefined", "priority", "(", "p", "i", ")", "in", "the", "underwater", ",", "which", "can", "be", "estimated", "as", ":(", "30", ")", "PC", "(", "h", ")", "(", "SU", "j", ")", "=", "sum", "i", "=", "1", "n", "sum", "k", "=", "1", "l", "p", "C", "i", "(", "PU", "i", ")", "h", "(", "k", ")", "On", "the", "other", "hand", ",", "during", "the", "time", "tau", "i", "the", "channels", "stored", "with", "decreasing", "priority", "in", "a", "PS", "j", "sensor", "'", "s", "channel", "table", "is", "numerically", "estimated", "by", "using", "the", "following", "Equation", "(", "31", ")", ":(", "31", ")", "PS", "j", "h", "(", "k", ")", "=", "sum", "i", "=", "1", "n", "sum", "k", "=", "1", "l", "(", "PU", "i", ")", "h", "(", "k", ")", "The", "volume", "of", "channel", "history", "data", "stored", "(", "D", "s", ")", "in", "the", "channel", "table", "of", "a", "secondary", "user", "at", "a", "given", "time", "tau", "i", "is", "numerically", "indicated", "as", ":(", "32", ")", "D", "s", "(", "SU", "j", ")", "=", "sum", "i", "=", "0", "tau", "0D", "s", "(", "SU", "j", ")", "C", "i", "(", "tau", ")", "d", "tau", "In", "the", "proposed", "scheme", ",", "a", "primary", "or", "the", "secondary", "user", "sensor", "may", "share", "information", "to", "its", "single", "hop", "neighboring", "sensors", "and", "sense", "the", "entire", "region", "only", "in", "a", "case", "where", "the", "desired", "capacity", "channel", "is", "currently", "occupied", "or", "does", "not", "have", "desired", "capacity", "channel", "information", "stored", "in", "the", "CIT", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 45, 46 ], [ 68, 69 ], [ 93, 94 ], [ 114, 115 ], [ 132, 133 ], [ 182, 183 ], [ 245, 246 ] ]
+  }, {
+    "sentence_tokens" : [ "Second", ",", "during", "conveying", "packets", "these", "schemes", "consider", "shortest", "paths", "routing", "with", "excessive", "hop", "counts", ",", "which", "may", "balance", "the", "network", "residual", "energy", ";", "however", ",", "it", "consumes", "more", "ASNs", "energy", "and", "increases", "the", "probability", "of", "invalid", "data", "packets", "because", "of", "data", "path", "loops", "in", "UWSNs", "." ],
+    "entities_indices" : [ [ 29, 30 ] ]
+  } ],
+  "emptySentences" : [ ]
+}

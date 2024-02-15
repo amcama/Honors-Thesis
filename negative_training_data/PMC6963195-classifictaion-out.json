@@ -1,105 +1,589 @@
-[ {
-  "sentence_tokens" : [ "No", "fish", "mortalities", "nor", "decreased", "feed", "intake", "rate", "were", "observed", "in", "the", "RAS", "units", "treated", "with", "phage", "." ],
-  "event_indices" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13 ],
-  "type" : "Negative_activation",
-  "polarity" : false,
-  "controller_indices" : [ 1, 2 ],
-  "controlled_indices" : [ 12, 13 ],
-  "trigger_indices" : [ 4, 5 ],
-  "rule_name" : "Negative_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "For", "example", ",", "geosmin", "compounds", "accumulate", "in", "fish", "tissue", ",", "causing", "unwanted", "earthy", "taste", "and", "odor", "[", "27", "]", "." ],
-  "event_indices" : [ 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 3, 4 ],
-  "controlled_indices" : [ 13, 14 ],
-  "trigger_indices" : [ 10, 11 ],
-  "rule_name" : "Positive_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "The", "Fate", "of", "Bacteriophages", "in", "Recirculating", "Aquaculture", "Systems", "(", "RAS", ")--Towards", "Developing", "Phage", "Therapy", "for", "RAS", "." ],
-  "entity_one_indices" : [ 15, 16 ],
-  "entity_two_indices" : [ 9, 10 ]
-}, {
-  "sentence_tokens" : [ "Water", "in", "RAS", "is", "reused", "after", "being", "treated", ",", "dramatically", "reducing", "the", "amount", "of", "water", "needed", "for", "fish", "farming", "in", "aquaculture", "sites", "." ],
-  "entity_one_indices" : [ 17, 18 ],
-  "entity_two_indices" : [ 2, 3 ]
-}, {
-  "sentence_tokens" : [ "Confining", "large", "populations", "of", "aquatic", "animals", "are", "a", "risk", "factor", "when", "considering", "infectious", "diseases", ",", "and", "aquaculture", "rearing", "units", "have", "been", "shown", "to", "favor", "pathogens", "and", "virulence", "increase", "[", "3,4,5", "]", "." ],
-  "entity_one_indices" : [ 26, 27 ],
-  "entity_two_indices" : [ 12, 13, 14 ]
-}, {
-  "sentence_tokens" : [ "The", "reuse", "of", "water", "in", "RAS", "may", "pose", "a", "biosecurity", "challenge", "for", "infectious", "diseases", ",", "as", "the", "removal", "of", "pathogens", "or", "chemical", "residues", "from", "the", "tanks", "is", "difficult", ",", "increasing", "the", "unnecessary", "exposure", "of", "aquatic", "animals", "to", "both", "[", "6", "]", "." ],
-  "entity_one_indices" : [ 12, 13, 14 ],
-  "entity_two_indices" : [ 5, 6 ]
-}, {
-  "sentence_tokens" : [ "So", "far", ",", "there", "is", "no", "information", "about", "phage", "use", "in", "RAS", ",", "but", "this", "type", "of", "system", "can", "be", "considered", "an", "ideal", "environment", "for", "phage", "therapy", "applications", "[", "14", "]", "." ],
-  "entity_one_indices" : [ 15, 16 ],
-  "entity_two_indices" : [ 11, 12 ]
-}, {
-  "sentence_tokens" : [ "Phages", "were", "recovered", "from", "all", "sampled", "components", "of", "the", "RAS", "system", "up", "to", "14", "days", ",", "and", "from", "the", "water", "from", "rearing", "tanks", ",", "fish", "mucus", "and", "carrier", "media", "from", "the", "fixed", "and", "moving", "bed", "biofilters", "for", "21", "days", "after", "a", "single", "phage", "exposure", "(", "Figure", "1A", "-", "G", ")", "." ],
-  "entity_one_indices" : [ 24, 25 ],
-  "entity_two_indices" : [ 9, 10 ]
-}, {
-  "sentence_tokens" : [ "These", "negative", "controls", ",", "allied", "to", "the", "data", "from", "control", "tanks", ",", "support", "the", "idea", "that", "phages", "found", "over", "time", "were", "derived", "from", "the", "original", "lysate", "and", "not", "from", "the", "environment", "or", "natural", "infections", "during", "the", "course", "of", "the", "experiment.Water", "parameters", "were", "measured", "over", "the", "course", "of", "the", "experiment", ",", "and", "no", "significant", "changes", "were", "detected", "between", "control", "and", "phage", "treated", "RAS", "(", "Table", "1", ")", "." ],
-  "entity_one_indices" : [ 61, 62 ],
-  "entity_two_indices" : [ 33, 34 ]
-}, {
-  "sentence_tokens" : [ "RAS", "has", "been", "considered", "to", "be", "an", "optimal", "environment", "for", "the", "use", "of", "phage", "therapy", "against", "bacterial", "diseases", "[", "14", "]", ",", "but", "so", "far", ",", "phage", "distribution", "and", "stability", "have", "not", "been", "tested", "on", "these", "systems", "." ],
-  "entity_one_indices" : [ 17, 18 ],
-  "entity_two_indices" : [ 0, 1 ]
-}, {
-  "sentence_tokens" : [ "Here", "we", "show", "that", "after", "a", "single", "phage", "addition", ",", "the", "phage", "can", "be", "re-isolated", "from", "the", "RAS", "units", "at", "a", "fish", "farm", "for", "up", "to", "three", "weeks", "." ],
-  "entity_one_indices" : [ 21, 22 ],
-  "entity_two_indices" : [ 17, 18 ]
-}, {
-  "sentence_tokens" : [ "Phage", "persistence", "was", "longest", "in", "the", "rearing", "tank", "water", ",", "fish", "mucus", ",", "and", "biofilm", "media", "." ],
-  "entity_one_indices" : [ 10, 11 ],
-  "entity_two_indices" : [ 7, 8 ]
-}, {
-  "sentence_tokens" : [ "Furthermore", ",", "and", "perhaps", "more", "importantly", ",", "phage", "addition", "did", "not", "cause", "alterations", "in", "water", "quality", "nor", "in", "fish", "health", ",", "demonstrating", "it", "is", "a", "safe", "treatment", "in", "the", "fish", "farming", "system", "." ],
-  "entity_one_indices" : [ 29, 30 ],
-  "entity_two_indices" : [ 18, 19 ]
-}, {
-  "sentence_tokens" : [ "Surprisingly", ",", "the", "plastic", "media", "colonized", "by", "biofilms", "in", "the", "moving", "and", "fixed", "bed", "biofilters", "contained", "more", "phages", "than", "the", "rest", "of", "the", "RAS", "system", "." ],
-  "entity_one_indices" : [ 23, 24 ],
-  "entity_two_indices" : [ 20, 21 ]
-}, {
-  "sentence_tokens" : [ "While", "we", "did", "not", "explore", "this", "adhesion", "in", "more", "detail", ",", "it", "may", "be", "caused", "by", "unspecific", "interactions", "with", "the", "extracellular", "matrix", "(", "mainly", "exopolysaccharides", ")", "protecting", "the", "biofilm", "[", "26", "]", ",", "similarly", "to", "what", "was", "observed", "to", "occur", "between", "phages", "and", "mucins", "." ],
-  "entity_one_indices" : [ 11, 12 ],
-  "entity_two_indices" : [ 6, 7 ]
-}, {
-  "sentence_tokens" : [ "However", ",", "our", "in", "vitro", "results", "suggest", "a", "specific", "microbiome", "plays", "a", "role", "in", "phage", "adhesion", "in", "biofilters", ",", "as", "adhesion", "was", "significantly", "higher", "in", "moving", "bed", "carrier", "media", "compared", "to", "fixed", "bed", "media", "." ],
-  "entity_one_indices" : [ 20, 21 ],
-  "entity_two_indices" : [ 15, 16 ]
-}, {
-  "sentence_tokens" : [ "Each", "tank", "was", "stocked", "with", "270", "-", "280", "rainbow", "trout", "(", "Oncorhynchus", "mykiss", ")", "(", "mean", "50", "g", ")", ",", "and", "fish", "were", "fed", "300", "g.", "d", "." ],
-  "entity_one_indices" : [ 21, 22 ],
-  "entity_two_indices" : [ 1, 2 ]
-}, {
-  "sentence_tokens" : [ "Briefly", ",", "the", "supernatant", "of", "overnight", "F.", "columnare", "strain", "B185", "cultures", "made", "in", "0.5", "x", "Shieh", "media", "supplemented", "with", "0.1", "%", "purified", "porcine", "mucin", "(", "Sigma", ",", "USA", ")", "were", "transferred", "to", "sterile", "flasks", "and", "infected", "with", "FCL-2", "." ],
-  "entity_one_indices" : [ 37, 38 ],
-  "entity_two_indices" : [ 23, 24 ]
-}, {
-  "sentence_tokens" : [ "Three", "hundred", "microliters", "of", "overnight", "cultures", "of", "F.", "columnare", "strain", "B185", "were", "added", "to", "three", "milliliters", "of", "soft-Shieh", "agar", "supplemented", "with", "0.1", "%", "mucin", ",", "and", "the", "mixture", "was", "added", "to", "the", "top", "of", "Shieh-agar", "plates", "." ],
-  "entity_one_indices" : [ 23, 24 ],
-  "entity_two_indices" : [ 18, 19 ]
-}, {
-  "sentence_tokens" : [ "Tank", "water", ",", "fish", "mucus", ",", "and", "plastic", "carrier", "media", "from", "moving", "and", "fixed", "beds", "were", "sampled", "periodically", "." ],
-  "entity_one_indices" : [ 3, 4 ],
-  "entity_two_indices" : [ 0, 1 ]
-}, {
-  "sentence_tokens" : [ "Fish", "handling", "was", "conducted", "according", "to", "the", "Finnish", "Act", "on", "the", "Use", "of", "Animals", "for", "Experimental", "Purposes", ",", "under", "permission", "ESAVI/8187/2018", "granted", "for", "Lotta-Riina", "Sundberg", "by", "the", "National", "Animal", "Experiment", "Board", "at", "the", "Regional", "State", "Administrative", "Agency", "for", "Southern", "Finland", "." ],
-  "entity_one_indices" : [ 8, 9 ],
-  "entity_two_indices" : [ 0, 1 ]
-}, {
-  "sentence_tokens" : [ "The", "media", "were", "added", "to", "50", "mL", "falcon", "tubes", "and", "covered", "with", "nine", "ml", "of", "tank", "water", "." ],
-  "entity_one_indices" : [ 15, 16 ],
-  "entity_two_indices" : [ 6, 7 ]
-}, {
-  "sentence_tokens" : [ "10", "mu", "L", "samples", "were", "collected", "from", "the", "tubes", "periodically", ",", "and", "added", "into", "990", "mu", "L", "of", "Shieh", "medium", "and", "a", "drop", "of", "chloroform", ",", "and", "maintained", "on", "ice", "until", "the", "phage", "titers", "were", "determined", "." ],
-  "entity_one_indices" : [ 24, 25 ],
-  "entity_two_indices" : [ 1, 2, 3, 4 ]
-} ]
+{
+  "regulations" : [ {
+    "sentence_tokens" : [ "No", "fish", "mortalities", "nor", "decreased", "feed", "intake", "rate", "were", "observed", "in", "the", "RAS", "units", "treated", "with", "phage", "." ],
+    "event_indices" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13 ],
+    "type" : "Negative_activation",
+    "polarity" : false,
+    "controller_indices" : [ 1, 2 ],
+    "controlled_indices" : [ 12, 13 ],
+    "trigger_indices" : [ 4, 5 ],
+    "rule_name" : "Negative_activation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "For", "example", ",", "geosmin", "compounds", "accumulate", "in", "fish", "tissue", ",", "causing", "unwanted", "earthy", "taste", "and", "odor", "[", "27", "]", "." ],
+    "event_indices" : [ 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 3, 4 ],
+    "controlled_indices" : [ 13, 14 ],
+    "trigger_indices" : [ 10, 11 ],
+    "rule_name" : "Positive_activation_syntax_1_verb",
+    "rule" : null
+  } ],
+  "hardInstances" : [ {
+    "sentence_tokens" : [ "For", "example", ",", "geosmin", "compounds", "accumulate", "in", "fish", "tissue", ",", "causing", "unwanted", "earthy", "taste", "and", "odor", "[", "27", "]", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  } ],
+  "withoutRegulations" : [ {
+    "sentence_tokens" : [ "RAS", "has", "been", "considered", "to", "be", "an", "optimal", "environment", "for", "the", "use", "of", "phage", "therapy", "against", "bacterial", "diseases", "[", "14", "]", ",", "but", "so", "far", ",", "phage", "distribution", "and", "stability", "have", "not", "been", "tested", "on", "these", "systems", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "Each", "RAS", "unit", "had", "a", "total", "water", "volume", "of", "890", "liters", ",", "with", "a", "water", "flow", "of", "720", "liters", "per", "hour", "and", "water", "renewal", "of", "150", "liters", "per", "day", "(", "resulting", "in", "the", "turnover", "rate", "of", "the", "entire", "water", "volume", "in", "six", "days", ")", "." ],
+    "entities_indices" : [ [ 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "Fate", "of", "Bacteriophages", "in", "Recirculating", "Aquaculture", "Systems", "(", "RAS", ")--Towards", "Developing", "Phage", "Therapy", "for", "RAS", "." ],
+    "entities_indices" : [ [ 9, 10 ], [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "conclusion", ",", "we", "have", "shown", "that", "a", "phage", "can", "persist", "in", "RAS", "units", "for", "extended", "periods", "of", "time", ",", "and", "the", "water", "treatment", "processes", "or", "system", "components", "are", "not", "a", "threat", "to", "viral", "particles", "or", "vice", "versa", "." ],
+    "entities_indices" : [ [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "Indeed", ",", "as", "host", "specific", "and", "self", "replicating", "agent", "they", "might", "be", "optimal", "for", "targeted", "pathogen", "eradication", "in", "RAS", "." ],
+    "entities_indices" : [ [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "phage", "treatment", ",", "water", "flow", "was", "stopped", "in", "six", "RAS", "units", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "So", "far", ",", "there", "is", "no", "information", "about", "phage", "use", "in", "RAS", ",", "but", "this", "type", "of", "system", "can", "be", "considered", "an", "ideal", "environment", "for", "phage", "therapy", "applications", "[", "14", "]", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "During", "recent", "years", ",", "a", "growing", "interest", "in", "recirculating", "aquaculture", "systems", "(", "RAS", ")", "has", "appeared", "[", "1,2", "]", "." ],
+    "entities_indices" : [ [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "Briefly", ",", "the", "supernatant", "of", "overnight", "F.", "columnare", "strain", "B185", "cultures", "made", "in", "0.5", "x", "Shieh", "media", "supplemented", "with", "0.1", "%", "purified", "porcine", "mucin", "(", "Sigma", ",", "USA", ")", "were", "transferred", "to", "sterile", "flasks", "and", "infected", "with", "FCL-2", "." ],
+    "entities_indices" : [ [ 23, 24 ], [ 37, 38 ] ]
+  }, {
+    "sentence_tokens" : [ "Tank", "water", ",", "fish", "mucus", ",", "and", "plastic", "carrier", "media", "from", "moving", "and", "fixed", "beds", "were", "sampled", "periodically", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "Also", ",", "no", "F.", "columnare", "was", "isolated", "from", "fish", "gills", "sampled", "at", "time", "zero", "." ],
+    "entities_indices" : [ [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "Phages", "infecting", "geosmin", "producing", "Streptomyces", "species", "have", "already", "been", "shown", "to", "be", "capable", "of", "reducing", "geosmin", "production", "[", "28", "]", "and", "could", "be", "used", "in", "RAS", "systems", "to", "control", "product", "quality", "." ],
+    "entities_indices" : [ [ 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "By", "enriching", "the", "RAS", "tanks", "with", "the", "right", "type", "of", "phage", ",", "aquatic", "animal", "farmers", "could", "achieve", "long-term", "protection", "from", "common", "aquaculture", "bacterial", "diseases", ",", "protecting", "their", "production", "while", "at", "the", "same", "time", "avoiding", "the", "costs", "and", "risks", "of", "antibiotic", "use", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 8, 9 ], [ 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "Since", "in", "this", "study", ",", "phage", "FCL-2", "was", "present", "in", "the", "water", "at", "all", "time", "points", "due", "to", "water", "recirculation", "in", "the", "system", ",", "phage", "enrichment", "in", "mucus", "was", "not", "evident", "although", "it", "lasted", "longer", "than", "in", "the", "flow-through", "systems", "[", "17", "]", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "phage", "stability", "over", "time", "on", "RAS", "farms", ",", "phage", "distribution", "in", "the", "tanks", ",", "and", "how", "the", "different", "treatment", "units", "affect", "phage", "survival", "have", "not", "been", "tested.In", "this", "work", ",", "we", "investigated", "phage", "dynamics", "in", "RAS", "research", "fish", "farm", "with", "rainbow", "trout", "(", "Oncorhynchus", "mykiss", ")", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 37, 38 ], [ 39, 40 ] ]
+  }, {
+    "sentence_tokens" : [ "FCL-2", "Phage", "." ],
+    "entities_indices" : [ [ 0, 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "Then", "470", "milliliters", "of", "phage", "FCL-2", "lysate", "(", "2", "x", "10", "pfu/mL", ")", "was", "added", "to", "the", "fish", "tanks", "(", "n", "=", "3", ")", "." ],
+    "entities_indices" : [ [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "Components", "of", "the", "system", "such", "as", "biofilter", "carrier", "media", "and", "fish", "mucus", "may", "have", "a", "positive", "impact", "in", "phage", "persistence", ",", "by", "selectively", "enriching", "phages", "compared", "to", "the", "water", ",", "and", "slowly", "releasing", "them", "over", "time", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "Fish", "handling", "was", "conducted", "according", "to", "the", "Finnish", "Act", "on", "the", "Use", "of", "Animals", "for", "Experimental", "Purposes", ",", "under", "permission", "ESAVI/8187/2018", "granted", "for", "Lotta-Riina", "Sundberg", "by", "the", "National", "Animal", "Experiment", "Board", "at", "the", "Regional", "State", "Administrative", "Agency", "for", "Southern", "Finland", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "Aquaculture", "production", "has", "increased", "tremendously", "during", "the", "last", "decades", ",", "and", "new", "techniques", "have", "been", "developed", ",", "e.g", ".,", "recirculating", "aquaculture", "systems", "(", "RAS", ")", "." ],
+    "entities_indices" : [ [ 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "Furthermore", ",", "and", "perhaps", "more", "importantly", ",", "phage", "addition", "did", "not", "cause", "alterations", "in", "water", "quality", "nor", "in", "fish", "health", ",", "demonstrating", "it", "is", "a", "safe", "treatment", "in", "the", "fish", "farming", "system", "." ],
+    "entities_indices" : [ [ 18, 19 ], [ 29, 30 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "tested", "the", "survival", "and", "spread", "of", "Flavobacterium", "columnare", "-infecting", "phage", "FCL-2", "in", "recirculating", "aquaculture", "fish", "farm", "with", "rainbow", "trout", "(", "Oncorhynchus", "mykiss", ")", "in", "a", "fully", "controlled", "study", "." ],
+    "entities_indices" : [ [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "Before", "starting", "the", "experiment", ",", "water", "and", "fish", "mucus", "samples", "were", "collected", "and", "tested", "to", "guarantee", "that", "no", "pre-existing", "F.", "columnare", "or", "phage", "capable", "of", "infecting", "F.", "columnare", "were", "already", "present", "at", "the", "systems", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "Previous", "studies", "on", "the", "RAS", "biofilter", "microbiome", "have", "shown", "the", "presence", "of", "Flavobacterium", "spp", "in", "the", "biofilters", "[", "24", "]", ",", "but", ",", "although", "this", "possibility", "cannot", "be", "excluded", ",", "we", "did", "not", "detect", "F.", "columnare", "during", "the", "experiment", "." ],
+    "entities_indices" : [ [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "Each", "tank", "was", "stocked", "with", "270", "-", "280", "rainbow", "trout", "(", "Oncorhynchus", "mykiss", ")", "(", "mean", "50", "g", ")", ",", "and", "fish", "were", "fed", "300", "g.", "d", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "Here", "we", "show", "that", "after", "a", "single", "phage", "addition", ",", "the", "phage", "can", "be", "re-isolated", "from", "the", "RAS", "units", "at", "a", "fish", "farm", "for", "up", "to", "three", "weeks", "." ],
+    "entities_indices" : [ [ 17, 18 ], [ 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "Total", "ammonia", "nitrogen", "(", "TAN", ")", ",", "nitrite", ",", "and", "nitrate", "were", "analyzed", "spectrophotometrically", "once", "a", "week", "from", "the", "tank", "outlet", "water", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 2, 3 ], [ 4, 5 ], [ 7, 8 ], [ 10, 11 ], [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "Phage", "concentration", "was", "highest", "in", "the", "plastic", "carrier", "media", ",", "indicating", "that", "bacterial", "biofilm", "might", "be", "a", "substrate", "where", "phage", "preferentially", "enrich", "." ],
+    "entities_indices" : [ [ 12, 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "At", "the", "time", "of", "the", "'", "post-antibiotic", "era", "'", "declared", "by", "the", "WHO", ",", "interest", "towards", "sustainable", "tools", "that", "reduce", "the", "need", "for", "antibiotics", "is", "increasing", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "study", "shows", "phages", "as", "a", "potent", "strategy", "for", "maintaining", "biosecurity", "in", "RAS", "systems", "." ],
+    "entities_indices" : [ [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "media", "were", "added", "to", "50", "mL", "falcon", "tubes", "and", "covered", "with", "nine", "ml", "of", "tank", "water", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "phage", "stock", "used", "was", "prepared", "by", "infecting", "host", "cultures", "supplemented", "with", "mucin", ",", "as", "described", "previously", "[", "17", "]", "." ],
+    "entities_indices" : [ [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "have", "already", "shown", "that", "phages", "FCL-2", "and", "T4", "are", "held", "for", "up", "to", "a", "week", "in", "rainbow", "trout", "mucus", "in", "open", "flow-through", "systems", ",", "and", "that", "FCL-2", "retention", "has", "a", "protective", "effect", "against", "Flavobacterium", "columnare", "infections", "[", "17", "]", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 8, 9 ], [ 27, 28 ], [ 36, 37 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "indicates", "that", "interactions", "with", "the", "tank", "microbiome", "or", "with", "filtration", "and", "water", "treatment", "systems", "are", "not", "deleterious", "for", "phage", "presence", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "RAS", ",", "the", "majority", "of", "water", "volume", "is", "circulated", "via", "mechanical", "and", "biological", "filters", "and", "reused", "in", "the", "tanks", "." ],
+    "entities_indices" : [ [ 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "demonstrate", "phage", "persistence", "in", "a", "RAS", "for", "three", "weeks", "after", "a", "single", "phage", "exposure", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "Additionally", ",", "phage", "presence", "did", "not", "alter", "water", "quality", "parameters", "nor", "resulted", "in", "fish", "mortality", "." ],
+    "entities_indices" : [ [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "Nevertheless", ",", "antibiotic", "use", "influences", "microbial", "ecology", "and", "resistance", "evolution", "also", "outside", "fish", "farming", "[", "7,18,19", "]", ",", "affecting", "environmental", "and", "food", "safety", "." ],
+    "entities_indices" : [ [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "reuse", "of", "water", "in", "RAS", "may", "pose", "a", "biosecurity", "challenge", "for", "infectious", "diseases", ",", "as", "the", "removal", "of", "pathogens", "or", "chemical", "residues", "from", "the", "tanks", "is", "difficult", ",", "increasing", "the", "unnecessary", "exposure", "of", "aquatic", "animals", "to", "both", "[", "6", "]", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 12, 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "Fish", "gills", "were", "also", "sampled", "to", "test", "for", "the", "presence", "of", "F.", "columnare", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "Phages", "were", "re-isolated", "from", "water", "collected", "from", "different", "points", "in", "the", "system", ",", "from", "fish", "mucus", "and", "gills", ",", "and", "also", "from", "plastic", "carrier", "media", "used", "in", "biofilter", "units", "." ],
+    "entities_indices" : [ [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "It", "should", "be", "noted", "that", "the", "media", "collected", "from", "fish", "tanks", "were", "colonized", "by", "biofilms", ",", "while", "autoclaved", "media", "were", "clean", "and", "sterile", "." ],
+    "entities_indices" : [ [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "our", "in", "vitro", "results", "suggest", "a", "specific", "microbiome", "plays", "a", "role", "in", "phage", "adhesion", "in", "biofilters", ",", "as", "adhesion", "was", "significantly", "higher", "in", "moving", "bed", "carrier", "media", "compared", "to", "fixed", "bed", "media", "." ],
+    "entities_indices" : [ [ 15, 16 ], [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "Three", "hundred", "microliters", "of", "overnight", "cultures", "of", "F.", "columnare", "strain", "B185", "were", "added", "to", "three", "milliliters", "of", "soft-Shieh", "agar", "supplemented", "with", "0.1", "%", "mucin", ",", "and", "the", "mixture", "was", "added", "to", "the", "top", "of", "Shieh-agar", "plates", "." ],
+    "entities_indices" : [ [ 18, 19 ], [ 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "Phage", "retention", "in", "animal", "mucus", "has", "been", "shown", "previously", "and", "associated", "with", "the", "presence", "of", "Ig", "like", "domains", "in", "the", "phage", "structural", "proteins", "[", "23", "]", "." ],
+    "entities_indices" : [ [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "After", "a", "single", "addition", ",", "phage", "persisted", "in", "water", "samples", "collected", "from", "tank", ",", "fixed", "bed", ",", "moving", "bed", ",", "and", "aeration", "unit", "up", "to", "14", "days", ",", "and", "in", "the", "water", "of", "rearing", "tanks", ",", "rainbow", "trout", "mucus", ",", "and", "bioreactor", "carrier", "media", "from", "the", "fixed", "and", "moving", "bed", "biofilters", "for", "21", "days", "." ],
+    "entities_indices" : [ [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "Phages", "Persist", "in", "RAS", "for", "Up", "to", "Three", "Weeks", "." ],
+    "entities_indices" : [ [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "study", "was", "performed", "at", "the", "Laukaa", "fish", "farm", "of", "the", "Natural", "Resources", "Institute", "Finland", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "Fish", "health", "and", "feed", "intake", "rate", "were", "monitored", "daily", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "Clean", "autoclaved", "plastic", "media", "and", "media", "collected", "from", "the", "moving", "and", "fixed", "beds", "of", "control", "(", "no", "phage", ")", "fish", "tanks", "were", "used", "for", "testing", "phage", "adsorption", "and", "retention", "in", "vitro", "." ],
+    "entities_indices" : [ [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "Furthermore", ",", "by", "selecting", "phages", "targeting", "unwanted", "contaminants", "(", "pathogens", "or", "other", "bacteria", ")", ",", "this", "approach", "could", "be", "used", "in", "developing", "phage", "based", "techniques", "in", "managing", "the", "RAS", "biofilter", "microbiome", "." ],
+    "entities_indices" : [ [ 28, 29 ] ]
+  }, {
+    "sentence_tokens" : [ "It", "has", "been", "isolated", "from", "the", "same", "fish", "farm", "where", "this", "experiment", "was", "performed", "and", "shown", "to", "be", "efficient", "as", "a", "phage", "therapy", "agent", "in", "laboratory", "conditions", "[", "12,17,29", "]", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "All", "samples", "were", "preserved", "by", "the", "addition", "of", "chloroform", "until", "being", "processed", "." ],
+    "entities_indices" : [ [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "the", "prevention", "and", "treatment", "of", "diseases", "in", "these", "systems", "are", "challenging", ",", "as", "the", "pathogens", "spread", "throughout", "the", "system", ",", "and", "the", "addition", "of", "chemicals", "and", "antibiotics", "disrupts", "the", "microbiome", "of", "the", "biofilters", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "Surprisingly", ",", "the", "plastic", "media", "colonized", "by", "biofilms", "in", "the", "moving", "and", "fixed", "bed", "biofilters", "contained", "more", "phages", "than", "the", "rest", "of", "the", "RAS", "system", "." ],
+    "entities_indices" : [ [ 20, 21 ], [ 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "use", "of", "phage", "therapy", "on", "RAS", "can", "be", "effective", "since", "only", "one", "phage", "dose", "is", "sufficient", "for", "persistence", "and", "spread", "over", "the", "whole", "system", "without", "being", "destroyed", "by", "the", "water", "treatment", "processes", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "Bacterial", "disease", "epidemics", "need", "antibiotic", "treatment", "also", "in", "fish", "production", ",", "but", "the", "legislation", "related", "to", "antibiotic", "use", "in", "aquaculture", "differs", "between", "countries", "." ],
+    "entities_indices" : [ [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "Many", "of", "the", "pathogens", "that", "threaten", "aquaculture", "are", "bacteria", ",", "and", "the", "diseases", "are", "treated", "with", "antibiotics", "." ],
+    "entities_indices" : [ [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "Although", "other", "phage", "species", "must", "be", "tested", "and", "the", "effect", "of", "phage", "held", "in", "the", "system", "on", "bacterial", "outbreaks", "evaluated", ",", "our", "results", "highlight", "the", "relevance", "of", "phage", "based", "techniques", "in", "developing", "healthy", "RAS", "systems", "." ],
+    "entities_indices" : [ [ 33, 34 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "use", "of", "RAS", "is", "advantageous", "to", "other", "aquaculture", "methods", "when", "considering", "water", "use", "and", "nutrient", "discharges", "." ],
+    "entities_indices" : [ [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "Confining", "large", "populations", "of", "aquatic", "animals", "are", "a", "risk", "factor", "when", "considering", "infectious", "diseases", ",", "and", "aquaculture", "rearing", "units", "have", "been", "shown", "to", "favor", "pathogens", "and", "virulence", "increase", "[", "3,4,5", "]", "." ],
+    "entities_indices" : [ [ 12, 13, 14 ], [ 26, 27 ] ]
+  }, {
+    "sentence_tokens" : [ "Fish", "were", "removed", "from", "the", "tanks", ",", "euthanatized", "with", "an", "overdose", "of", "benzocaine", ",", "and", "skin", "mucus", "was", "scrapped", "with", "a", "glass", "slide", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 12, 13 ], [ 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "Phage", "solution", "was", "added", "to", "the", "water", "of", "three", "rearing", "tanks", ",", "and", "phage", "numbers", "were", "measured", "over", "time", "from", "different", "locations", "of", "each", "system", ",", "on", "the", "fish", "mucus", ",", "and", "on", "plastic", "carrier", "media", "used", "to", "collect", "biofilm", "in", "the", "moving", "and", "fixed", "bed", "bioreactors", "." ],
+    "entities_indices" : [ [ 28, 29 ] ]
+  }, {
+    "sentence_tokens" : [ "Phage", "persistence", "was", "longest", "in", "the", "rearing", "tank", "water", ",", "fish", "mucus", ",", "and", "biofilm", "media", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "10", "mu", "L", "samples", "were", "collected", "from", "the", "tubes", "periodically", ",", "and", "added", "into", "990", "mu", "L", "of", "Shieh", "medium", "and", "a", "drop", "of", "chloroform", ",", "and", "maintained", "on", "ice", "until", "the", "phage", "titers", "were", "determined", "." ],
+    "entities_indices" : [ [ 1, 2, 3, 4 ], [ 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "On", "day", "seven", ",", "the", "phage", "presence", "on", "fish", "gills", "was", "tested", "." ],
+    "entities_indices" : [ [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "Six", "individual", "RAS", "units", "were", "used", ",", "each", "containing", "of", "a", "500", "L", "fish", "tank", ",", "a", "swirl", "separator", ",", "a", "drum", "filter", ",", "a", "150", "L", "fixed", "and", "a", "moving", "bed", "biofilter", "(", "each", "filled", "with", "70", "L", "of", "plastic", "carrier", "media", ",", "RK", "Bioelements", ")", ",", "and", "a", "trickling", "filter", "for", "carbon", "dioxide", "removal", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 13, 14, 15 ], [ 44, 45 ], [ 53, 54, 55 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "location", "of", "the", "fish", "farm", "and", "an", "example", "of", "the", "RAS", "system", "(", "fish", "tank", ",", "solids", "removal", "units", ",", "and", "moving", "and", "fixed", "bed", "bioreactors", ")", "can", "be", "seen", "in", "Figure", "3", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 11, 12 ], [ 14, 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "Phages", "were", "recovered", "from", "all", "sampled", "components", "of", "the", "RAS", "system", "up", "to", "14", "days", ",", "and", "from", "the", "water", "from", "rearing", "tanks", ",", "fish", "mucus", "and", "carrier", "media", "from", "the", "fixed", "and", "moving", "bed", "biofilters", "for", "21", "days", "after", "a", "single", "phage", "exposure", "(", "Figure", "1A", "-", "G", ")", "." ],
+    "entities_indices" : [ [ 9, 10 ], [ 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "Adsorption", "Tests", "on", "Plastic", "Carrier", "Media", "." ],
+    "entities_indices" : [ [ 3, 4, 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "Phage", "therapy", "is", "not", "a", "novel", "concept", ",", "as", "it", "has", "been", "used", "for", "almost", "a", "century", "to", "treat", "bacterial", "infections", "in", "humans", "[", "10,11", "]", "." ],
+    "entities_indices" : [ [ 19, 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "Phage", "presence", "was", "verified", "by", "plating", "the", "samples", "on", "fresh", "lawns", "of", "F.", "columnare", "strain", "B185", "made", "in", "soft-agar-Shieh", "while", "F.", "columnare", "presence", "was", "verified", "by", "plating", "the", "water", "samples", "in", "Shieh-agar", "containing", "tobramycin", "." ],
+    "entities_indices" : [ [ 33, 34 ] ]
+  }, {
+    "sentence_tokens" : [ "While", "we", "did", "not", "explore", "this", "adhesion", "in", "more", "detail", ",", "it", "may", "be", "caused", "by", "unspecific", "interactions", "with", "the", "extracellular", "matrix", "(", "mainly", "exopolysaccharides", ")", "protecting", "the", "biofilm", "[", "26", "]", ",", "similarly", "to", "what", "was", "observed", "to", "occur", "between", "phages", "and", "mucins", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "Phages", "could", "be", "applied", "as", "a", "treatment", "to", "ongoing", "infections", "in", "a", "conventional", "phage", "therapy", "approach", ",", "but", "the", "potential", "for", "preventive", "phage", "therapy", "could", "be", "more", "interesting", "." ],
+    "entities_indices" : [ [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "Data", "analysis", "was", "made", "using", "the", "GraphPad", "software", "version", "8.0.1", "(", "GraphPad", "Software", ",", "San", "Diego", ",", "USA", ")", "." ],
+    "entities_indices" : [ [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "As", "a", "model", ",", "we", "used", "Flavobacterium", "columnare", "-infecting", "phage", "FCL-2", ",", "which", "has", "been", "isolated", "from", "the", "same", "fish", "farm", "years", "earlier", "and", "shown", "to", "be", "suitable", "for", "phage", "therapy", "in", "our", "earlier", "studies", "[", "12,17", "]", "." ],
+    "entities_indices" : [ [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "As", "the", "data", "collected", "from", "the", "RAS", "experiment", "indicated", ",", "phages", "were", "preferentially", "enriched", "in", "the", "plastic", "carrier", "media", "of", "fixed", "and", "moving", "bed", "biofilters", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "FCL-2", ",", "a", "myophage", "infecting", "Flavobacterium", "columnare", ",", "was", "used", "as", "the", "model", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "Water", "samples", "were", "taken", "from", "the", "fish", "tank", "and", "from", "the", "moving", "and", "fixed", "beds", "and", "from", "the", "trickling", "filter", "(", "aeration", "unit", ")", "." ],
+    "entities_indices" : [ [ 6, 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "Water", "quality", "was", "monitored", "in", "the", "fish", "tanks", "with", "an", "online", "monitoring", "system", "consisting", "of", "a", "spectrometer", "probe", "measuring", "total", "organic", "carbon", ",", "a", "pH", "probe", ",", "and", "an", "optical", "oxygen", "probe", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 24, 25 ], [ 30, 31 ] ]
+  }, {
+    "sentence_tokens" : [ "Longer", "persistence", "of", "phages", "in", "mucus", "and", "water", "suggest", "that", "protection", "against", "infections", "will", "also", "be", "maintained", "for", "longer", "periods", ",", "which", "could", "reduce", "or", "delay", "the", "need", "for", "antibiotic", "treatments.The", "rearing", "water", "quality", "in", "RAS", "systems", "relies", "on", "the", "capacity", "of", "biofilters", "to", "remove", "ammonia", ",", "yet", "a", "vast", "portion", "of", "bacteria", "species", "in", "the", "biofilters", "are", "other", ",", "mainly", "heterotrophic", "bacteria", "[", "24,25", "]", "." ],
+    "entities_indices" : [ [ 12, 13 ], [ 35, 36 ], [ 45, 46 ] ]
+  }, {
+    "sentence_tokens" : [ "These", "negative", "controls", ",", "allied", "to", "the", "data", "from", "control", "tanks", ",", "support", "the", "idea", "that", "phages", "found", "over", "time", "were", "derived", "from", "the", "original", "lysate", "and", "not", "from", "the", "environment", "or", "natural", "infections", "during", "the", "course", "of", "the", "experiment.Water", "parameters", "were", "measured", "over", "the", "course", "of", "the", "experiment", ",", "and", "no", "significant", "changes", "were", "detected", "between", "control", "and", "phage", "treated", "RAS", "(", "Table", "1", ")", "." ],
+    "entities_indices" : [ [ 33, 34 ], [ 61, 62 ] ]
+  }, {
+    "sentence_tokens" : [ "Water", "in", "RAS", "is", "reused", "after", "being", "treated", ",", "dramatically", "reducing", "the", "amount", "of", "water", "needed", "for", "fish", "farming", "in", "aquaculture", "sites", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "it", "is", "also", "a", "vulnerable", "environment", "for", "outbreaks", "of", "infectious", "diseases", "." ],
+    "entities_indices" : [ [ 11, 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "might", "be", "enough", "to", "delay", "the", "onset", "of", "a", "bacterial", "disease", "outbreak", "by", "keeping", "the", "infective", "bacterial", "doses", "low", "due", "to", "phage", "infections", "." ],
+    "entities_indices" : [ [ 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "final", "phage", "concentration", "in", "each", "tank", "was", "1", "x", "10", "pfu/mL", "at", "time", "zero", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  } ],
+  "emptySentences" : [ {
+    "sentence_tokens" : [ "The", "Fate", "of", "Bacteriophages", "in", "Recirculating", "Aquaculture", "Systems", "(", "RAS", ")--Towards", "Developing", "Phage", "Therapy", "for", "RAS", "." ]
+  }, {
+    "sentence_tokens" : [ "Aquaculture", "production", "has", "increased", "tremendously", "during", "the", "last", "decades", ",", "and", "new", "techniques", "have", "been", "developed", ",", "e.g", ".,", "recirculating", "aquaculture", "systems", "(", "RAS", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "RAS", ",", "the", "majority", "of", "water", "volume", "is", "circulated", "via", "mechanical", "and", "biological", "filters", "and", "reused", "in", "the", "tanks", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "the", "prevention", "and", "treatment", "of", "diseases", "in", "these", "systems", "are", "challenging", ",", "as", "the", "pathogens", "spread", "throughout", "the", "system", ",", "and", "the", "addition", "of", "chemicals", "and", "antibiotics", "disrupts", "the", "microbiome", "of", "the", "biofilters", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "increasing", "antibiotic", "resistance", "has", "made", "phage", "therapy", "a", "relevant", "alternative", "for", "antibiotics", "in", "food", "production", "." ]
+  }, {
+    "sentence_tokens" : [ "Indeed", ",", "as", "host", "specific", "and", "self", "replicating", "agent", "they", "might", "be", "optimal", "for", "targeted", "pathogen", "eradication", "in", "RAS", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "tested", "the", "survival", "and", "spread", "of", "Flavobacterium", "columnare", "-infecting", "phage", "FCL-2", "in", "recirculating", "aquaculture", "fish", "farm", "with", "rainbow", "trout", "(", "Oncorhynchus", "mykiss", ")", "in", "a", "fully", "controlled", "study", "." ]
+  }, {
+    "sentence_tokens" : [ "After", "a", "single", "addition", ",", "phage", "persisted", "in", "water", "samples", "collected", "from", "tank", ",", "fixed", "bed", ",", "moving", "bed", ",", "and", "aeration", "unit", "up", "to", "14", "days", ",", "and", "in", "the", "water", "of", "rearing", "tanks", ",", "rainbow", "trout", "mucus", ",", "and", "bioreactor", "carrier", "media", "from", "the", "fixed", "and", "moving", "bed", "biofilters", "for", "21", "days", "." ]
+  }, {
+    "sentence_tokens" : [ "Furthermore", ",", "phage", "adsorbed", "preferentially", "to", "moving", "bed", "carrier", "media", ",", "which", "contained", "biofilm", "attached", "and", "from", "which", "higher", "phage", "numbers", "were", "recovered", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "study", "shows", "phages", "as", "a", "potent", "strategy", "for", "maintaining", "biosecurity", "in", "RAS", "systems", "." ]
+  }, {
+    "sentence_tokens" : [ "1", "." ]
+  }, {
+    "sentence_tokens" : [ "Introduction", "." ]
+  }, {
+    "sentence_tokens" : [ "Aquaculture", "production", "is", "an", "important", "source", "of", "a", "protein", "destined", "for", "human", "consumption", "." ]
+  }, {
+    "sentence_tokens" : [ "It", "is", "an", "expanding", "industry", "with", "many", "strategies", "employed", "to", "improve", "efficiency", "and", "environmental", "impact", "." ]
+  }, {
+    "sentence_tokens" : [ "During", "recent", "years", ",", "a", "growing", "interest", "in", "recirculating", "aquaculture", "systems", "(", "RAS", ")", "has", "appeared", "[", "1,2", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Water", "in", "RAS", "is", "reused", "after", "being", "treated", ",", "dramatically", "reducing", "the", "amount", "of", "water", "needed", "for", "fish", "farming", "in", "aquaculture", "sites", "." ]
+  }, {
+    "sentence_tokens" : [ "Confining", "large", "populations", "of", "aquatic", "animals", "are", "a", "risk", "factor", "when", "considering", "infectious", "diseases", ",", "and", "aquaculture", "rearing", "units", "have", "been", "shown", "to", "favor", "pathogens", "and", "virulence", "increase", "[", "3,4,5", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "reuse", "of", "water", "in", "RAS", "may", "pose", "a", "biosecurity", "challenge", "for", "infectious", "diseases", ",", "as", "the", "removal", "of", "pathogens", "or", "chemical", "residues", "from", "the", "tanks", "is", "difficult", ",", "increasing", "the", "unnecessary", "exposure", "of", "aquatic", "animals", "to", "both", "[", "6", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Many", "of", "the", "pathogens", "that", "threaten", "aquaculture", "are", "bacteria", ",", "and", "the", "diseases", "are", "treated", "with", "antibiotics", "." ]
+  }, {
+    "sentence_tokens" : [ "Antibiotic", "leakage", "to", "the", "environment", "can", "lead", "to", "environmental", "and", "health", "issues", "(", "i.e", ".,", "alterations", "in", "microbial", "communities", "and", "selection", "for", "resistance", "against", "antibiotics", ")", "[", "7", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "example", ",", "antibiotic", "resistance", "genes", "are", "enriched", "in", "sediments", "associated", "with", "aquaculture", "sites", "[", "8,9", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Thus", ",", "means", "to", "implement", "the", "One", "Health", "approach", "(", "https://www.who.int/features/qa/one-health/en/", ")", "in", "aquaculture", "production", "need", "to", "be", "developed.One", "possible", "alternative", "to", "antibiotics", "and", "a", "solution", "to", "the", "antimicrobial", "resistance", "crisis", "and", "One", "Health", "approach", "is", "the", "use", "of", "(", "bacteria", ")", "phage", "therapy", "." ]
+  }, {
+    "sentence_tokens" : [ "Phages", "are", "viruses", "that", "specifically", "infect", "only", "bacteria", ",", "without", "causing", "harm", "to", "surround", "microbiota", "or", "eukaryotic", "cells", "." ]
+  }, {
+    "sentence_tokens" : [ "Phage", "therapy", "is", "not", "a", "novel", "concept", ",", "as", "it", "has", "been", "used", "for", "almost", "a", "century", "to", "treat", "bacterial", "infections", "in", "humans", "[", "10,11", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "It", "has", "also", "been", "applied", "to", "aquaculture", "related", "bacterial", "pathogens", ",", "experimentally", ",", "and", "in", "practice", "[", "12,13", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "So", "far", ",", "there", "is", "no", "information", "about", "phage", "use", "in", "RAS", ",", "but", "this", "type", "of", "system", "can", "be", "considered", "an", "ideal", "environment", "for", "phage", "therapy", "applications", "[", "14", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "water", "recirculation", "process", "is", "an", "advantage", "for", "phage", "delivery", "since", ",", "in", "theory", ",", "phage", "would", "remain", "in", "the", "system", "for", "long", "time", "periods", "for", "being", "small", "enough", "to", "pass", "through", "filters", "and", "other", "barriers", ",", "recirculating", "freely", "with", "the", "water", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "would", "enable", "prolonged", "protection", "via", "extending", "the", "time", "animals", "are", "exposed", "to", "phage", ",", "while", "also", "favoring", "phage", "evolution", "in", "response", "to", "phage", "resistant", "bacteria", ",", "which", "has", "been", "documented", "in", "open", "aquaculture", "systems", "[", "15", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "addition", ",", "whereas", "chemicals", "and", "antibiotics", "might", "influence", "the", "microbiome", "composition", "of", "biological", "filters", "[", "16", "]", ",", "host", "specific", "phages", "infect", "only", "their", "target", "bacteria", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "phage", "stability", "over", "time", "on", "RAS", "farms", ",", "phage", "distribution", "in", "the", "tanks", ",", "and", "how", "the", "different", "treatment", "units", "affect", "phage", "survival", "have", "not", "been", "tested.In", "this", "work", ",", "we", "investigated", "phage", "dynamics", "in", "RAS", "research", "fish", "farm", "with", "rainbow", "trout", "(", "Oncorhynchus", "mykiss", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "As", "a", "model", ",", "we", "used", "Flavobacterium", "columnare", "-infecting", "phage", "FCL-2", ",", "which", "has", "been", "isolated", "from", "the", "same", "fish", "farm", "years", "earlier", "and", "shown", "to", "be", "suitable", "for", "phage", "therapy", "in", "our", "earlier", "studies", "[", "12,17", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Phage", "solution", "was", "added", "to", "the", "water", "of", "three", "rearing", "tanks", ",", "and", "phage", "numbers", "were", "measured", "over", "time", "from", "different", "locations", "of", "each", "system", ",", "on", "the", "fish", "mucus", ",", "and", "on", "plastic", "carrier", "media", "used", "to", "collect", "biofilm", "in", "the", "moving", "and", "fixed", "bed", "bioreactors", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "demonstrate", "phage", "persistence", "in", "a", "RAS", "for", "three", "weeks", "after", "a", "single", "phage", "exposure", "." ]
+  }, {
+    "sentence_tokens" : [ "Phage", "concentration", "was", "highest", "in", "the", "plastic", "carrier", "media", ",", "indicating", "that", "bacterial", "biofilm", "might", "be", "a", "substrate", "where", "phage", "preferentially", "enrich", "." ]
+  }, {
+    "sentence_tokens" : [ "Additionally", ",", "phage", "presence", "did", "not", "alter", "water", "quality", "parameters", "nor", "resulted", "in", "fish", "mortality", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "use", "of", "phage", "therapy", "on", "RAS", "can", "be", "effective", "since", "only", "one", "phage", "dose", "is", "sufficient", "for", "persistence", "and", "spread", "over", "the", "whole", "system", "without", "being", "destroyed", "by", "the", "water", "treatment", "processes", "." ]
+  }, {
+    "sentence_tokens" : [ "2", "." ]
+  }, {
+    "sentence_tokens" : [ "Results", "." ]
+  }, {
+    "sentence_tokens" : [ "2.1", "." ]
+  }, {
+    "sentence_tokens" : [ "Phages", "Persist", "in", "RAS", "for", "Up", "to", "Three", "Weeks", "." ]
+  }, {
+    "sentence_tokens" : [ "Phages", "were", "recovered", "from", "all", "sampled", "components", "of", "the", "RAS", "system", "up", "to", "14", "days", ",", "and", "from", "the", "water", "from", "rearing", "tanks", ",", "fish", "mucus", "and", "carrier", "media", "from", "the", "fixed", "and", "moving", "bed", "biofilters", "for", "21", "days", "after", "a", "single", "phage", "exposure", "(", "Figure", "1A", "-", "G", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "all", "samples", ",", "a", "similar", "trend", "was", "observed", "with", "the", "phage", "numbers", "decaying", "faster", "in", "the", "first", "days", "then", "becoming", "more", "stable", "at", "the", "end", "." ]
+  }, {
+    "sentence_tokens" : [ "Phage", "titers", "were", "higher", "in", "filter", "carrier", "media", "samples", ",", "suggesting", "that", "bacterial", "biofilm", "may", "have", "a", "role", "in", "phage", "enrichment", "." ]
+  }, {
+    "sentence_tokens" : [ "On", "day", "seven", ",", "the", "phage", "presence", "on", "fish", "gills", "was", "tested", "." ]
+  }, {
+    "sentence_tokens" : [ "Phage", "titers", "in", "gills", "were", "similar", "to", "the", "ones", "found", "in", "mucus", "and", "slightly", "lower", "than", "in", "water", "(", "Figure", "1H", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "No", "infective", "phage", "particles", "appeared", "in", "samples", "taken", "from", "the", "control", "tanks", "over", "the", "course", "of", "the", "experiment.No", "phages", "capable", "of", "infecting", "Flavobacterium", "columnare", "strain", "B185", "were", "detected", "from", "water", "or", "mucus", "samples", "collected", "at", "time", "zero", "." ]
+  }, {
+    "sentence_tokens" : [ "Also", ",", "no", "F.", "columnare", "was", "isolated", "from", "fish", "gills", "sampled", "at", "time", "zero", "." ]
+  }, {
+    "sentence_tokens" : [ "These", "negative", "controls", ",", "allied", "to", "the", "data", "from", "control", "tanks", ",", "support", "the", "idea", "that", "phages", "found", "over", "time", "were", "derived", "from", "the", "original", "lysate", "and", "not", "from", "the", "environment", "or", "natural", "infections", "during", "the", "course", "of", "the", "experiment.Water", "parameters", "were", "measured", "over", "the", "course", "of", "the", "experiment", ",", "and", "no", "significant", "changes", "were", "detected", "between", "control", "and", "phage", "treated", "RAS", "(", "Table", "1", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "2.2", "." ]
+  }, {
+    "sentence_tokens" : [ "Attachment", "of", "Phages", "to", "Filter", "Pellets", "Is", "Dependent", "on", "Biofilm", "." ]
+  }, {
+    "sentence_tokens" : [ "As", "the", "data", "collected", "from", "the", "RAS", "experiment", "indicated", ",", "phages", "were", "preferentially", "enriched", "in", "the", "plastic", "carrier", "media", "of", "fixed", "and", "moving", "bed", "biofilters", "." ]
+  }, {
+    "sentence_tokens" : [ "Therefore", "we", "decided", "to", "test", "phage", "adsorption", "in", "this", "material", "in", "vitro", "directly", "." ]
+  }, {
+    "sentence_tokens" : [ "Sterile", "carrier", "media", "and", "media", "collected", "from", "control", "(", "no", "phage", ")", "tanks", "were", "exposed", "to", "phage", ",", "and", "the", "number", "of", "free", "phages", "was", "determined", "in", "the", "supernatant", "." ]
+  }, {
+    "sentence_tokens" : [ "It", "should", "be", "noted", "that", "the", "media", "collected", "from", "fish", "tanks", "were", "colonized", "by", "biofilms", ",", "while", "autoclaved", "media", "were", "clean", "and", "sterile", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "percentage", "of", "attached", "phage", "was", "calculated", "from", "the", "titer", "(", "pfu/mL", ")", "of", "the", "free", "phage", "particles", "in", "the", "water", "at", "each", "time", "point", "(", "which", "in", "turn", "was", "used", "to", "calculate", "the", "corresponding", "number", "of", "phage", "particles", "attached", "to", "the", "pellets", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "(", "Figure", "2", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Although", "phage", "inactivation", "was", "not", "tested", ",", "it", "is", "unlikely", "to", "have", "affected", "the", "results", "since", "phage", "FCL-2", "is", "considerably", "stable", "over", "time", "." ]
+  }, {
+    "sentence_tokens" : [ "It", "is", "clear", "that", "phage", "adsorbed", "preferentially", "to", "moving", "bed", "bioreactor", "media", "." ]
+  }, {
+    "sentence_tokens" : [ "After", "six", "hours", ",", "more", "phages", "were", "adsorbed", "to", "moving", "bed", "than", "to", "fixed", "bed", "media", "and", "sterile", "media", "(", "p", "=", "0.011", "and", "p", "=", "0.000033", ",", "respectively", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "persisted", "up", "to", "24", "hours", "after", "exposure", "(", "p", "=", "0.000013", "when", "compared", "to", "fixed", "bed", "filters", "and", "p", "<", "0.000001", "when", "compared", "to", "sterile", "carrier", "media", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "3", "." ]
+  }, {
+    "sentence_tokens" : [ "Discussion", "." ]
+  }, {
+    "sentence_tokens" : [ "Bacterial", "disease", "epidemics", "need", "antibiotic", "treatment", "also", "in", "fish", "production", ",", "but", "the", "legislation", "related", "to", "antibiotic", "use", "in", "aquaculture", "differs", "between", "countries", "." ]
+  }, {
+    "sentence_tokens" : [ "Nevertheless", ",", "antibiotic", "use", "influences", "microbial", "ecology", "and", "resistance", "evolution", "also", "outside", "fish", "farming", "[", "7,18,19", "]", ",", "affecting", "environmental", "and", "food", "safety", "." ]
+  }, {
+    "sentence_tokens" : [ "At", "the", "time", "of", "the", "'", "post-antibiotic", "era", "'", "declared", "by", "the", "WHO", ",", "interest", "towards", "sustainable", "tools", "that", "reduce", "the", "need", "for", "antibiotics", "is", "increasing", "." ]
+  }, {
+    "sentence_tokens" : [ "Phages", "infecting", "aquaculture", "pathogens", "such", "as", "Flavobacterium", "and", "Vibrio", "species", "have", "already", "been", "isolated", "[", "14,20,21", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "use", "of", "RAS", "is", "advantageous", "to", "other", "aquaculture", "methods", "when", "considering", "water", "use", "and", "nutrient", "discharges", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "it", "is", "also", "a", "vulnerable", "environment", "for", "outbreaks", "of", "infectious", "diseases", "." ]
+  }, {
+    "sentence_tokens" : [ "RAS", "has", "been", "considered", "to", "be", "an", "optimal", "environment", "for", "the", "use", "of", "phage", "therapy", "against", "bacterial", "diseases", "[", "14", "]", ",", "but", "so", "far", ",", "phage", "distribution", "and", "stability", "have", "not", "been", "tested", "on", "these", "systems", "." ]
+  }, {
+    "sentence_tokens" : [ "Here", "we", "show", "that", "after", "a", "single", "phage", "addition", ",", "the", "phage", "can", "be", "re-isolated", "from", "the", "RAS", "units", "at", "a", "fish", "farm", "for", "up", "to", "three", "weeks", "." ]
+  }, {
+    "sentence_tokens" : [ "Phages", "were", "re-isolated", "from", "water", "collected", "from", "different", "points", "in", "the", "system", ",", "from", "fish", "mucus", "and", "gills", ",", "and", "also", "from", "plastic", "carrier", "media", "used", "in", "biofilter", "units", "." ]
+  }, {
+    "sentence_tokens" : [ "Phage", "persistence", "was", "longest", "in", "the", "rearing", "tank", "water", ",", "fish", "mucus", ",", "and", "biofilm", "media", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "indicates", "that", "interactions", "with", "the", "tank", "microbiome", "or", "with", "filtration", "and", "water", "treatment", "systems", "are", "not", "deleterious", "for", "phage", "presence", "." ]
+  }, {
+    "sentence_tokens" : [ "Furthermore", ",", "and", "perhaps", "more", "importantly", ",", "phage", "addition", "did", "not", "cause", "alterations", "in", "water", "quality", "nor", "in", "fish", "health", ",", "demonstrating", "it", "is", "a", "safe", "treatment", "in", "the", "fish", "farming", "system", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "detailed", "knowledge", "of", "the", "applied", "phage", "needs", "to", "be", "available", "to", "consider", "its", "suitability", "as", "a", "treatment", "[", "22", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Phage", "retention", "in", "animal", "mucus", "has", "been", "shown", "previously", "and", "associated", "with", "the", "presence", "of", "Ig", "like", "domains", "in", "the", "phage", "structural", "proteins", "[", "23", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "have", "already", "shown", "that", "phages", "FCL-2", "and", "T4", "are", "held", "for", "up", "to", "a", "week", "in", "rainbow", "trout", "mucus", "in", "open", "flow-through", "systems", ",", "and", "that", "FCL-2", "retention", "has", "a", "protective", "effect", "against", "Flavobacterium", "columnare", "infections", "[", "17", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Since", "in", "this", "study", ",", "phage", "FCL-2", "was", "present", "in", "the", "water", "at", "all", "time", "points", "due", "to", "water", "recirculation", "in", "the", "system", ",", "phage", "enrichment", "in", "mucus", "was", "not", "evident", "although", "it", "lasted", "longer", "than", "in", "the", "flow-through", "systems", "[", "17", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Longer", "persistence", "of", "phages", "in", "mucus", "and", "water", "suggest", "that", "protection", "against", "infections", "will", "also", "be", "maintained", "for", "longer", "periods", ",", "which", "could", "reduce", "or", "delay", "the", "need", "for", "antibiotic", "treatments.The", "rearing", "water", "quality", "in", "RAS", "systems", "relies", "on", "the", "capacity", "of", "biofilters", "to", "remove", "ammonia", ",", "yet", "a", "vast", "portion", "of", "bacteria", "species", "in", "the", "biofilters", "are", "other", ",", "mainly", "heterotrophic", "bacteria", "[", "24,25", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Surprisingly", ",", "the", "plastic", "media", "colonized", "by", "biofilms", "in", "the", "moving", "and", "fixed", "bed", "biofilters", "contained", "more", "phages", "than", "the", "rest", "of", "the", "RAS", "system", "." ]
+  }, {
+    "sentence_tokens" : [ "Indeed", ",", "in", "vitro", "testing", "revealed", "that", "biofilm", "was", "needed", "for", "phage", "retention", "in", "the", "pellets", "." ]
+  }, {
+    "sentence_tokens" : [ "While", "we", "did", "not", "explore", "this", "adhesion", "in", "more", "detail", ",", "it", "may", "be", "caused", "by", "unspecific", "interactions", "with", "the", "extracellular", "matrix", "(", "mainly", "exopolysaccharides", ")", "protecting", "the", "biofilm", "[", "26", "]", ",", "similarly", "to", "what", "was", "observed", "to", "occur", "between", "phages", "and", "mucins", "." ]
+  }, {
+    "sentence_tokens" : [ "Yet", ",", "the", "mechanism", "by", "which", "the", "phages", "attach", "to", "the", "microbial", "biofilm", "remains", "unclear", "." ]
+  }, {
+    "sentence_tokens" : [ "Another", "possibility", "could", "be", "the", "presence", "of", "the", "Flavobacterium", "host", "in", "the", "biofilter", "microbiome", "." ]
+  }, {
+    "sentence_tokens" : [ "Previous", "studies", "on", "the", "RAS", "biofilter", "microbiome", "have", "shown", "the", "presence", "of", "Flavobacterium", "spp", "in", "the", "biofilters", "[", "24", "]", ",", "but", ",", "although", "this", "possibility", "cannot", "be", "excluded", ",", "we", "did", "not", "detect", "F.", "columnare", "during", "the", "experiment", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "our", "in", "vitro", "results", "suggest", "a", "specific", "microbiome", "plays", "a", "role", "in", "phage", "adhesion", "in", "biofilters", ",", "as", "adhesion", "was", "significantly", "higher", "in", "moving", "bed", "carrier", "media", "compared", "to", "fixed", "bed", "media", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "may", "have", "also", "been", "caused", "by", "quantitative", "differences", "in", "the", "biofilm", "of", "these", "two", "filter", "materials", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "conclusion", ",", "we", "have", "shown", "that", "a", "phage", "can", "persist", "in", "RAS", "units", "for", "extended", "periods", "of", "time", ",", "and", "the", "water", "treatment", "processes", "or", "system", "components", "are", "not", "a", "threat", "to", "viral", "particles", "or", "vice", "versa", "." ]
+  }, {
+    "sentence_tokens" : [ "Components", "of", "the", "system", "such", "as", "biofilter", "carrier", "media", "and", "fish", "mucus", "may", "have", "a", "positive", "impact", "in", "phage", "persistence", ",", "by", "selectively", "enriching", "phages", "compared", "to", "the", "water", ",", "and", "slowly", "releasing", "them", "over", "time", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "might", "be", "enough", "to", "delay", "the", "onset", "of", "a", "bacterial", "disease", "outbreak", "by", "keeping", "the", "infective", "bacterial", "doses", "low", "due", "to", "phage", "infections", "." ]
+  }, {
+    "sentence_tokens" : [ "Furthermore", ",", "by", "selecting", "phages", "targeting", "unwanted", "contaminants", "(", "pathogens", "or", "other", "bacteria", ")", ",", "this", "approach", "could", "be", "used", "in", "developing", "phage", "based", "techniques", "in", "managing", "the", "RAS", "biofilter", "microbiome", "." ]
+  }, {
+    "sentence_tokens" : [ "Phages", "infecting", "geosmin", "producing", "Streptomyces", "species", "have", "already", "been", "shown", "to", "be", "capable", "of", "reducing", "geosmin", "production", "[", "28", "]", "and", "could", "be", "used", "in", "RAS", "systems", "to", "control", "product", "quality", "." ]
+  }, {
+    "sentence_tokens" : [ "4", "." ]
+  }, {
+    "sentence_tokens" : [ "Material", "and", "Methods", "." ]
+  }, {
+    "sentence_tokens" : [ "4.1", "." ]
+  }, {
+    "sentence_tokens" : [ "Experimental", "Site", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "study", "was", "performed", "at", "the", "Laukaa", "fish", "farm", "of", "the", "Natural", "Resources", "Institute", "Finland", "." ]
+  }, {
+    "sentence_tokens" : [ "Six", "individual", "RAS", "units", "were", "used", ",", "each", "containing", "of", "a", "500", "L", "fish", "tank", ",", "a", "swirl", "separator", ",", "a", "drum", "filter", ",", "a", "150", "L", "fixed", "and", "a", "moving", "bed", "biofilter", "(", "each", "filled", "with", "70", "L", "of", "plastic", "carrier", "media", ",", "RK", "Bioelements", ")", ",", "and", "a", "trickling", "filter", "for", "carbon", "dioxide", "removal", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "fixed", "bed", "bioreactors", ",", "the", "carrier", "media", "lies", "static", "in", "the", "bottom", "of", "the", "reactor", ",", "whereas", "in", "moving", "bed", "bioreactors", ",", "the", "carrier", "media", "is", "agitated", "continuously", "with", "air", "." ]
+  }, {
+    "sentence_tokens" : [ "Each", "RAS", "unit", "had", "a", "total", "water", "volume", "of", "890", "liters", ",", "with", "a", "water", "flow", "of", "720", "liters", "per", "hour", "and", "water", "renewal", "of", "150", "liters", "per", "day", "(", "resulting", "in", "the", "turnover", "rate", "of", "the", "entire", "water", "volume", "in", "six", "days", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Each", "tank", "was", "stocked", "with", "270", "-", "280", "rainbow", "trout", "(", "Oncorhynchus", "mykiss", ")", "(", "mean", "50", "g", ")", ",", "and", "fish", "were", "fed", "300", "g.", "d", "." ]
+  }, {
+    "sentence_tokens" : [ "Fish", "health", "and", "feed", "intake", "rate", "were", "monitored", "daily", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "location", "of", "the", "fish", "farm", "and", "an", "example", "of", "the", "RAS", "system", "(", "fish", "tank", ",", "solids", "removal", "units", ",", "and", "moving", "and", "fixed", "bed", "bioreactors", ")", "can", "be", "seen", "in", "Figure", "3", "." ]
+  }, {
+    "sentence_tokens" : [ "4.2", "." ]
+  }, {
+    "sentence_tokens" : [ "FCL-2", "Phage", "." ]
+  }, {
+    "sentence_tokens" : [ "FCL-2", ",", "a", "myophage", "infecting", "Flavobacterium", "columnare", ",", "was", "used", "as", "the", "model", "." ]
+  }, {
+    "sentence_tokens" : [ "It", "has", "been", "isolated", "from", "the", "same", "fish", "farm", "where", "this", "experiment", "was", "performed", "and", "shown", "to", "be", "efficient", "as", "a", "phage", "therapy", "agent", "in", "laboratory", "conditions", "[", "12,17,29", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "phage", "stock", "used", "was", "prepared", "by", "infecting", "host", "cultures", "supplemented", "with", "mucin", ",", "as", "described", "previously", "[", "17", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Briefly", ",", "the", "supernatant", "of", "overnight", "F.", "columnare", "strain", "B185", "cultures", "made", "in", "0.5", "x", "Shieh", "media", "supplemented", "with", "0.1", "%", "purified", "porcine", "mucin", "(", "Sigma", ",", "USA", ")", "were", "transferred", "to", "sterile", "flasks", "and", "infected", "with", "FCL-2", "." ]
+  }, {
+    "sentence_tokens" : [ "Twenty-four", "hours", "later", ",", "the", "whole", "cultures", "were", "centrifuged", ",", "and", "the", "supernatant", "filtered", "to", "obtain", "a", "sterile", "high-titers", "phage", "lysate", "." ]
+  }, {
+    "sentence_tokens" : [ "Phages", "were", "quantified", "by", "the", "double-agar", "overlay", "method", "." ]
+  }, {
+    "sentence_tokens" : [ "Three", "hundred", "microliters", "of", "overnight", "cultures", "of", "F.", "columnare", "strain", "B185", "were", "added", "to", "three", "milliliters", "of", "soft-Shieh", "agar", "supplemented", "with", "0.1", "%", "mucin", ",", "and", "the", "mixture", "was", "added", "to", "the", "top", "of", "Shieh-agar", "plates", "." ]
+  }, {
+    "sentence_tokens" : [ "Then", ",", "dilutions", "of", "the", "samples", "were", "added", "as", "drops", "to", "the", "top", "of", "the", "mixture", "and", "phage", "plaques", "were", "counted", "two", "days", "later", "." ]
+  }, {
+    "sentence_tokens" : [ "4.3", "." ]
+  }, {
+    "sentence_tokens" : [ "Phage", "Treatment", "and", "Sampling", "." ]
+  }, {
+    "sentence_tokens" : [ "Before", "starting", "the", "experiment", ",", "water", "and", "fish", "mucus", "samples", "were", "collected", "and", "tested", "to", "guarantee", "that", "no", "pre-existing", "F.", "columnare", "or", "phage", "capable", "of", "infecting", "F.", "columnare", "were", "already", "present", "at", "the", "systems", "." ]
+  }, {
+    "sentence_tokens" : [ "Fish", "gills", "were", "also", "sampled", "to", "test", "for", "the", "presence", "of", "F.", "columnare", "." ]
+  }, {
+    "sentence_tokens" : [ "Phage", "presence", "was", "verified", "by", "plating", "the", "samples", "on", "fresh", "lawns", "of", "F.", "columnare", "strain", "B185", "made", "in", "soft-agar-Shieh", "while", "F.", "columnare", "presence", "was", "verified", "by", "plating", "the", "water", "samples", "in", "Shieh-agar", "containing", "tobramycin", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "phage", "treatment", ",", "water", "flow", "was", "stopped", "in", "six", "RAS", "units", "." ]
+  }, {
+    "sentence_tokens" : [ "Then", "470", "milliliters", "of", "phage", "FCL-2", "lysate", "(", "2", "x", "10", "pfu/mL", ")", "was", "added", "to", "the", "fish", "tanks", "(", "n", "=", "3", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "final", "phage", "concentration", "in", "each", "tank", "was", "1", "x", "10", "pfu/mL", "at", "time", "zero", "." ]
+  }, {
+    "sentence_tokens" : [ "An", "equal", "volume", "of", "sterile", "media", "was", "added", "to", "control", "tanks", "(", "n", "=", "3", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "After", "one", "hour", ",", "water", "samples", "were", "collected", ",", "and", "water", "flow", "was", "restarted", "." ]
+  }, {
+    "sentence_tokens" : [ "Tank", "water", ",", "fish", "mucus", ",", "and", "plastic", "carrier", "media", "from", "moving", "and", "fixed", "beds", "were", "sampled", "periodically", "." ]
+  }, {
+    "sentence_tokens" : [ "Water", "samples", "were", "taken", "from", "the", "fish", "tank", "and", "from", "the", "moving", "and", "fixed", "beds", "and", "from", "the", "trickling", "filter", "(", "aeration", "unit", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Fish", "were", "removed", "from", "the", "tanks", ",", "euthanatized", "with", "an", "overdose", "of", "benzocaine", ",", "and", "skin", "mucus", "was", "scrapped", "with", "a", "glass", "slide", "." ]
+  }, {
+    "sentence_tokens" : [ "Sterile", "water", "was", "added", "to", "the", "mucus", "samples", ",", "to", "a", "final", "volume", "of", "one", "milliliter", "." ]
+  }, {
+    "sentence_tokens" : [ "Plastic", "media", "from", "the", "moving", "and", "fixed", "beds", "were", "collected", "and", "kept", "in", "falcon", "tubes", "immersed", "in", "water", "from", "the", "respective", "bed", "." ]
+  }, {
+    "sentence_tokens" : [ "All", "samples", "were", "preserved", "by", "the", "addition", "of", "chloroform", "until", "being", "processed", "." ]
+  }, {
+    "sentence_tokens" : [ "4.4", "." ]
+  }, {
+    "sentence_tokens" : [ "Ethics", "." ]
+  }, {
+    "sentence_tokens" : [ "Fish", "handling", "was", "conducted", "according", "to", "the", "Finnish", "Act", "on", "the", "Use", "of", "Animals", "for", "Experimental", "Purposes", ",", "under", "permission", "ESAVI/8187/2018", "granted", "for", "Lotta-Riina", "Sundberg", "by", "the", "National", "Animal", "Experiment", "Board", "at", "the", "Regional", "State", "Administrative", "Agency", "for", "Southern", "Finland", "." ]
+  }, {
+    "sentence_tokens" : [ "4.5", "." ]
+  }, {
+    "sentence_tokens" : [ "Water", "Quality", "Monitoring", "." ]
+  }, {
+    "sentence_tokens" : [ "Water", "quality", "was", "monitored", "in", "the", "fish", "tanks", "with", "an", "online", "monitoring", "system", "consisting", "of", "a", "spectrometer", "probe", "measuring", "total", "organic", "carbon", ",", "a", "pH", "probe", ",", "and", "an", "optical", "oxygen", "probe", "." ]
+  }, {
+    "sentence_tokens" : [ "Total", "ammonia", "nitrogen", "(", "TAN", ")", ",", "nitrite", ",", "and", "nitrate", "were", "analyzed", "spectrophotometrically", "once", "a", "week", "from", "the", "tank", "outlet", "water", "." ]
+  }, {
+    "sentence_tokens" : [ "4.6", "." ]
+  }, {
+    "sentence_tokens" : [ "Adsorption", "Tests", "on", "Plastic", "Carrier", "Media", "." ]
+  }, {
+    "sentence_tokens" : [ "Clean", "autoclaved", "plastic", "media", "and", "media", "collected", "from", "the", "moving", "and", "fixed", "beds", "of", "control", "(", "no", "phage", ")", "fish", "tanks", "were", "used", "for", "testing", "phage", "adsorption", "and", "retention", "in", "vitro", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "media", "were", "added", "to", "50", "mL", "falcon", "tubes", "and", "covered", "with", "nine", "ml", "of", "tank", "water", "." ]
+  }, {
+    "sentence_tokens" : [ "After", "one", "hour", "gently", "shaking", ",", "1", "ml", "of", "a", "phage", "solution", "(", "2", "x", "10", "pfu/mL", ")", "was", "added", ",", "and", "the", "tubes", "returned", "to", "the", "shaker", "." ]
+  }, {
+    "sentence_tokens" : [ "10", "mu", "L", "samples", "were", "collected", "from", "the", "tubes", "periodically", ",", "and", "added", "into", "990", "mu", "L", "of", "Shieh", "medium", "and", "a", "drop", "of", "chloroform", ",", "and", "maintained", "on", "ice", "until", "the", "phage", "titers", "were", "determined", "." ]
+  }, {
+    "sentence_tokens" : [ "4.7", "." ]
+  }, {
+    "sentence_tokens" : [ "Statistical", "Analysis", "." ]
+  }, {
+    "sentence_tokens" : [ "Data", "analysis", "was", "made", "using", "the", "GraphPad", "software", "version", "8.0.1", "(", "GraphPad", "Software", ",", "San", "Diego", ",", "USA", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Unpaired", "t-tests", "were", "employed", "for", "comparing", "tested", "conditions", "in", "the", "appropriate", "datasets", "." ]
+  }, {
+    "sentence_tokens" : [ "5", "." ]
+  }, {
+    "sentence_tokens" : [ "Conclusions", "." ]
+  }, {
+    "sentence_tokens" : [ "Although", "other", "phage", "species", "must", "be", "tested", "and", "the", "effect", "of", "phage", "held", "in", "the", "system", "on", "bacterial", "outbreaks", "evaluated", ",", "our", "results", "highlight", "the", "relevance", "of", "phage", "based", "techniques", "in", "developing", "healthy", "RAS", "systems", "." ]
+  }, {
+    "sentence_tokens" : [ "Phages", "could", "be", "applied", "as", "a", "treatment", "to", "ongoing", "infections", "in", "a", "conventional", "phage", "therapy", "approach", ",", "but", "the", "potential", "for", "preventive", "phage", "therapy", "could", "be", "more", "interesting", "." ]
+  }, {
+    "sentence_tokens" : [ "By", "enriching", "the", "RAS", "tanks", "with", "the", "right", "type", "of", "phage", ",", "aquatic", "animal", "farmers", "could", "achieve", "long-term", "protection", "from", "common", "aquaculture", "bacterial", "diseases", ",", "protecting", "their", "production", "while", "at", "the", "same", "time", "avoiding", "the", "costs", "and", "risks", "of", "antibiotic", "use", "." ]
+  } ]
+}

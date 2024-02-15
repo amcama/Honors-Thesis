@@ -1,139 +1,870 @@
-[ {
-  "sentence_tokens" : [ "The", "Malaria", "Transmission", "Intensity", "and", "Mortality", "Burden", "across", "Africa", "(", "MTIMBA", ")", "project", "was", "initiated", "by", "the", "INDEPTH", "Network", "(", "22", ",", "23", ")", "and", "conducted", "over", "a", "period", "of", "2001", "-", "2004", "in", "several", "countries", "in", "Africa", "including", "Tanzania", ",", "Kenya", ",", "Mozambique", ",", "Senegal", ",", "Ghana", "and", "Burkina", "Faso", "." ],
-  "event_indices" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 17, 18, 19 ],
-  "controlled_indices" : [ 1, 2 ],
-  "trigger_indices" : [ 14, 15 ],
-  "rule_name" : "Positive_activation_syntax_2_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Malaria", "transmission", "is", "measured", "using", "entomological", "inoculation", "rate", "(", "EIR", ")", ",", "number", "of", "infective", "mosquito", "bites/person/unit", "time", "." ],
-  "entity_one_indices" : [ 9, 10 ],
-  "entity_two_indices" : [ 0, 1 ]
-}, {
-  "sentence_tokens" : [ "A", "comprehensive", "entomological", "database", "compiled", "by", "the", "Malaria", "Transmission", "Intensity", "and", "Mortality", "Burden", "across", "Africa", "(", "MTIMBA", ")", "project", "(", "2001-2004", ")", "at", "several", "sites", "is", "the", "most", "suitable", "dataset", "for", "studying", "malaria", "transmission-mortality", "relations", "." ],
-  "entity_one_indices" : [ 32, 33 ],
-  "entity_two_indices" : [ 7, 8 ]
-}, {
-  "sentence_tokens" : [ "EIR", "was", "calculated", "using", "model", "based", "predictions", "of", "SR", "and", "density", "." ],
-  "entity_one_indices" : [ 8, 9 ],
-  "entity_two_indices" : [ 0, 1 ]
-}, {
-  "sentence_tokens" : [ "Malaria", "transmission", "was", "mostly", "influenced", "by", "rain", "and", "temperature", ",", "which", "significantly", "reduces", "the", "probability", "of", "observing", "zero", "mosquitoes", "." ],
-  "entity_one_indices" : [ 6, 7 ],
-  "entity_two_indices" : [ 0, 1 ]
-}, {
-  "sentence_tokens" : [ "Malaria", "is", "still", "endemic", "in", "more", "than", "100", "countries", "worldwide", ",", "leaving", "children", "and", "pregnant", "mothers", "being", "the", "most", "vulnerable", "groups", "for", "infections", "(", "1", ")", "." ],
-  "entity_one_indices" : [ 22, 23 ],
-  "entity_two_indices" : [ 0, 1 ]
-}, {
-  "sentence_tokens" : [ "Understanding", "the", "heterogeneity", "in", "transmission", "and", "human", "exposure", "to", "malaria", "infection", "is", "critical", "for", "optimizing", "control", "programs", "and", "targeting", "interventions", "(", "9", "-", "12", ")", "." ],
-  "entity_one_indices" : [ 10, 11 ],
-  "entity_two_indices" : [ 9, 10 ]
-}, {
-  "sentence_tokens" : [ "EIR", "is", "the", "product", "of", "the", "human", "biting", "rate", ",", "for", "example", ",", "mosquito", "bites/person/night", "(", "which", "can", "also", "be", "estimated", "using", "mosquito", "density", ")", "and", "the", "sporozoite", "rate", "(", "SR", ")", ",", "which", "is", "the", "proportion", "of", "infective", "mosquitoes", "(", "7", ",", "17", ")", "." ],
-  "entity_one_indices" : [ 30, 31 ],
-  "entity_two_indices" : [ 0, 1 ]
-}, {
-  "sentence_tokens" : [ "Uncertainty", "due", "to", "small", "sample", ",", "low", "values", "and", "variability", "in", "the", "SR", "and", "cost", "complicate", "precise", "estimation", "of", "EIR", "requiring", "standardized", "entomological", "surveys", "conducted", "over", "large", "areas", "(", "5", ",", "6", ",", "13", ",", "14", ")", "." ],
-  "entity_one_indices" : [ 19, 20 ],
-  "entity_two_indices" : [ 12, 13 ]
-}, {
-  "sentence_tokens" : [ "However", ",", "when", "EIR", "is", "estimated", "as", "a", "product", "of", "the", "SR", "and", "mosquito", "density", ",", "which", "are", "generated", "from", "the", "binomial", "and", "a", "count", "distribution", "like", "Poisson", "or", "negative", "binomial", ",", "respectively", ",", "normality", "assumptions", "are", "void", "." ],
-  "entity_one_indices" : [ 11, 12 ],
-  "entity_two_indices" : [ 3, 4 ]
-}, {
-  "sentence_tokens" : [ "We", "now", "demonstrate", "a", "rigorous", "modelling", "way", "of", "analysing", "large", "spatio-temporal", "EIR", "data", "and", "study", "the", "heterogeneity", ",", "space", "and", "temporal", "patterns", "of", "malaria", "transmission", "within", "one", "MTIMBA", "site", ",", "the", "Rufiji", "DSS", "area", "in", "Tanzania", "(", "44", ")", "." ],
-  "entity_one_indices" : [ 32, 33 ],
-  "entity_two_indices" : [ 23, 24 ]
-}, {
-  "sentence_tokens" : [ "Model", "based", "predictions", "of", "SR", "and", "density", "were", "multiplied", "to", "compute", "EIR", "." ],
-  "entity_one_indices" : [ 11, 12 ],
-  "entity_two_indices" : [ 4, 5 ]
-}, {
-  "sentence_tokens" : [ "The", "study", "utilized", "data", "collected", "from", "one", "of", "the", "MTIMBA", "sites", "in", "Tanzania", ",", "the", "Rufiji", "DSS", "(", "RDSS", ")", "." ],
-  "entity_one_indices" : [ 16, 17 ],
-  "entity_two_indices" : [ 9, 10, 11 ]
-}, {
-  "sentence_tokens" : [ "The", "RDSS", "is", "located", "in", "Rufiji", "District", ",", "Coast", "Region", ",", "Tanzania", ",", "about", "178", "km", "south", "of", "Dar", "es", "Salaam", "." ],
-  "entity_one_indices" : [ 18, 19 ],
-  "entity_two_indices" : [ 1, 2 ]
-}, {
-  "sentence_tokens" : [ "The", "surveillance", "area", "covers", "an", "area", "of", "1,813", "km", "and", "monitors", "85,000", "people", ",", "which", "is", "about", "47", "%", "of", "the", "total", "population", "of", "the", "Rufiji", "District", "(", "INDEPTH", "Monogram", ")", "." ],
-  "entity_one_indices" : [ 28, 29, 30 ],
-  "entity_two_indices" : [ 25, 26, 27 ]
-}, {
-  "sentence_tokens" : [ "A", "prominent", "feature", "in", "the", "District", "is", "the", "Rufiji", "River", "with", "its", "large", "flood", "plain", "and", "delta", ",", "the", "most", "extensive", "in", "the", "country", "(", "INDEPTH", "Monogram", ";", "Rufiji", "DSS", "Profile", ",", "2000", ")", "." ],
-  "entity_one_indices" : [ 29, 30 ],
-  "entity_two_indices" : [ 16, 17 ]
-}, {
-  "sentence_tokens" : [ "The", "majority", "of", "the", "people", "in", "the", "Rufiji", "District", "are", "subsistence", "farmers.The", "main", "responsible", "malaria", "vectors", "in", "the", "area", "include", "A.", "funestus", ",", "and", "members", "of", "the", "A.", "gambiae", "complex", ",", "including", "A.", "gambiae", "(", "sensu", "stricto", ")", "and", "A.", "arabiensis", "." ],
-  "entity_one_indices" : [ 29, 30 ],
-  "entity_two_indices" : [ 14, 15 ]
-}, {
-  "sentence_tokens" : [ "Y", "is", "assumed", "to", "follow", "a", "negative", "binomial", "distribution", ",", "Y", "~", "NB", "(", "r", ",", "p", ")", ",", "where", "p", "=", "r/(", "r+", "mu", ")", "." ],
-  "entity_one_indices" : [ 23, 24, 25 ],
-  "entity_two_indices" : [ 12, 13 ]
-}, {
-  "sentence_tokens" : [ "For", "the", "regression", "coefficients", ",", "beta", ",", "delta", "and", "alpha", ",", "a", "standard", "non", "informative", "uniform", "prior", "is", "adopted", ",", "i.e.", "beta", "~", "Unif", "(", "-", "infinity", ",", "infinity", ")", ",", "delta", "~", "Unif", "(", "-", "infinity", ",", "infinity", ")", "and", "alpha", "~", "Unif", "(", "-", "infinity", ",", "infinity", ")", ",", "respectively", "." ],
-  "entity_one_indices" : [ 31, 32 ],
-  "entity_two_indices" : [ 7, 8 ]
-}, {
-  "sentence_tokens" : [ "An", "exponential", "correlation", "structure", "for", "the", "covariance", "matrix", "of", "the", "spatial", "process", "is", "adopted", ",", "that", "is", "Sigma", "ij", "(", "1", ")", "=", "sigma", "sp2", "(", "1", ")", "exp", "(-dij", "rho", "(", "1", ")", ")", ",", "where", "sigma", "sp2", "(", "1", ")", "is", "the", "spatial", "variance", ",", "d", "is", "the", "distance", "between", "locations", "s", "and", "s", "and", "rho", "measuring", "the", "correlation", "decay", "and", "also", "known", "as", "the", "effective", "range", "(", "3/rho", ")", "and", "estimates", "the", "distance", "where", "the", "spatial", "correlation", "is", "<", "5", "%", "." ],
-  "entity_one_indices" : [ 38, 39 ],
-  "entity_two_indices" : [ 24, 25 ]
-}, {
-  "sentence_tokens" : [ "The", "approach", "optimizes", "the", "selection", "of", "the", "best", "subset", "by", "minimizing", "the", "maximum", "of", "the", "nearest-neighbour", "distance", "between", "the", "original", "survey", "and", "the", "subset", "locations.The", "epsilon", "t", "(", "1", ")", "model", "temporal", "correlation", "via", "a", "stationary", "autoregressive", "process", "of", "order", "one", ",", "i.e.", "e1", "~", "Normal", "(", "0", ",", "sigma", "T2", "(", "1", ")/(", "1-gamma", "2", ")", ")", "and", "e", "|", "e", "~", "Normal", "et", "|", "e1", ",", "..." ],
-  "entity_one_indices" : [ 66, 67 ],
-  "entity_two_indices" : [ 42, 43 ]
-}, {
-  "sentence_tokens" : [ "The", "regression", "function", "links", "the", "SR", "with", "other", "terms", "of", "the", "model", "(", "as", "shown", "for", "the", "density", "data", ")", "and", "is", "given", "as", "logit", "logit", "(", "pi", "it", ")", "=", "XT", "(", "2", ")", "beta", "(", "2", ")", "+", "f", "(", "t", ")", "(", "2", ")", "+", "Ui", "(", "2", ")", "+", ">", "epsilon", "t", "(", "2", ")", "+", "phi", "i", "(", "2", ")", "." ],
-  "entity_one_indices" : [ 48, 49 ],
-  "entity_two_indices" : [ 5, 6 ]
-}, {
-  "sentence_tokens" : [ "This", "was", "implemented", "in", "STATA", "10", "(", "Stata", "Corps", ")", "." ],
-  "entity_one_indices" : [ 7, 8, 9 ],
-  "entity_two_indices" : [ 4, 5, 6 ]
-}, {
-  "sentence_tokens" : [ "The", "EIR", "can", "be", "estimated", "as", "a", "product", "of", "the", "SR", "and", "human", "biting", "rate", "." ],
-  "entity_one_indices" : [ 10, 11 ],
-  "entity_two_indices" : [ 1, 2 ]
-}, {
-  "sentence_tokens" : [ "For", "practical", "implementation", "of", "the", "geostatistical", "model", "281", "knots", "(", "2,479", "unique", "locations", ")", "were", "selected", "for", "the", "density", "data", "(", "both", "species", ")", ",", "177", "(", "415", "unique", "locations", ")", "for", "SR", "analysis", "of", "A.", "funestus", "and", "219", "(", "639", "unique", "locations", ")", "for", "SR", "of", "A.", "gambiae", "." ],
-  "entity_one_indices" : [ 45, 46 ],
-  "entity_two_indices" : [ 32, 33 ]
-}, {
-  "sentence_tokens" : [ "The", "crude", "annual", "SRs", "were", "3.3", ",", "2.8", "and", "3.2", "%", "for", "Year", "1", "(", "October", "01", "-", "September", "02", ")", ",", "Year", "2", "(", "October", "02", "-", "September", "03", ")", "and", "Year", "3", "(", "October", "03", "-", "September", "04", ")", ",", "respectively", "." ],
-  "entity_one_indices" : [ 22, 23, 24 ],
-  "entity_two_indices" : [ 3, 4 ]
-}, {
-  "sentence_tokens" : [ "The", "prediction", "error", "for", "the", "EIR", "estimates", "was", "obtained", "my", "multiplying", "the", "prediction", "errors", "obtained", "from", "SR", "and", "density", "models.Patterns", "in", "Fig.", "4", "show", "that", "few", "surveyed", "households", "are", "located", "in", "areas", "with", "EIR", "<", "1", ";", "however", ",", "a", "large", "proportion", "of", "household", "presented", "high", "transmission", "intensity", "." ],
-  "entity_one_indices" : [ 16, 17 ],
-  "entity_two_indices" : [ 5, 6 ]
-}, {
-  "sentence_tokens" : [ "The", "annual", "and", "species", "specific", "population", "adjusted", "EIR", "were", "calculated", "by", "averaging", "predicted", "inoculation", "rates", "at", "all", "households", "(", "N", "=", "14,516", ")", "within", "the", "RDSS", "(", "Fig.", "5", ")", "excluding", "all", "of", "the", "other", "pixels", "." ],
-  "entity_one_indices" : [ 25, 26 ],
-  "entity_two_indices" : [ 7, 8 ]
-}, {
-  "sentence_tokens" : [ "In", "this", "study", ",", "we", "assessed", "spatial", "-", "temporal", "variation", "and", "heterogeneity", "of", "malaria", "transmission", "in", "the", "Rufiji", "DSS", "site", "using", "a", "large", "geo", "referenced", "biweekly", "entomological", "dataset", "collected", "over", "3", "years", ",", "and", "rigorous", "Bayesian", "geostatistical", "models", "." ],
-  "entity_one_indices" : [ 18, 19 ],
-  "entity_two_indices" : [ 13, 14 ]
-}, {
-  "sentence_tokens" : [ "Bayesian", "spatio-temporal", "binomial", "and", "zero", "inflated", "negative", "binomial", "regression", "models", "were", "developed", "to", "produce", "monthly", "maps", "of", "EIR", "taking", "into", "account", "the", "malaria", "-", "climate", "relation", "and", "seasonality", "in", "transmission", "(", "35", ",", "36", ",", "59", "-", "61", ")", "." ],
-  "entity_one_indices" : [ 22, 23 ],
-  "entity_two_indices" : [ 17, 18 ]
-}, {
-  "sentence_tokens" : [ "A", "study", ",", "which", "assessed", "spatio-temporal", "variation", "of", "EIR", "in", "Navrongo", "DSS", ",", "showed", "similar", "patterns", "of", "seasonality", "that", "differed", "by", "species", "(", "28", ")", "." ],
-  "entity_one_indices" : [ 11, 12 ],
-  "entity_two_indices" : [ 8, 9 ]
-}, {
-  "sentence_tokens" : [ "Small-scale", "variations", "in", "malaria", "transmission", "are", "common", "in", "sub-Saharan", "Africa", "and", "create", "complexity", "in", "implementing", "strategies", "to", "combat", "malaria", "(", "8,", "28", ",", "59", ",", "75", "-", "77", ")", "." ],
-  "entity_one_indices" : [ 18, 19 ],
-  "entity_two_indices" : [ 3, 4 ]
-}, {
-  "sentence_tokens" : [ "Through", "that", ",", "much", "more", "accurate", "estimates", "of", "the", "benefits", "to", "be", "gained", "by", "reducing", "malaria", "transmission", "can", "be", "estimated", "than", "if", "it", "would", "have", "been", "possible", "from", "analyses", "that", "aggregate", "EIR", "over", "large", "areas", "and", "time", "periods", "or", "those", "fitted", "assuming", "normally", "distributed", "EIR", "." ],
-  "entity_one_indices" : [ 44, 45 ],
-  "entity_two_indices" : [ 15, 16 ]
-} ]
+{
+  "regulations" : [ {
+    "sentence_tokens" : [ "The", "Malaria", "Transmission", "Intensity", "and", "Mortality", "Burden", "across", "Africa", "(", "MTIMBA", ")", "project", "was", "initiated", "by", "the", "INDEPTH", "Network", "(", "22", ",", "23", ")", "and", "conducted", "over", "a", "period", "of", "2001", "-", "2004", "in", "several", "countries", "in", "Africa", "including", "Tanzania", ",", "Kenya", ",", "Mozambique", ",", "Senegal", ",", "Ghana", "and", "Burkina", "Faso", "." ],
+    "event_indices" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 17, 18, 19 ],
+    "controlled_indices" : [ 1, 2 ],
+    "trigger_indices" : [ 14, 15 ],
+    "rule_name" : "Positive_activation_syntax_2_verb",
+    "rule" : null
+  } ],
+  "hardInstances" : [ ],
+  "withoutRegulations" : [ {
+    "sentence_tokens" : [ "Lags", "refer", "to", "a", "climate", "/", "environment", "value", "at", "different", "time", "intervals", "prior", "to", "the", "study", "date", "that", "might", "influence", "the", "amount", "of", "mosquitoes", "collected", "or", "the", "SR", "." ],
+    "entities_indices" : [ [ 27, 28 ] ]
+  }, {
+    "sentence_tokens" : [ "Covariates", "Xit", "(", "1", ")", ",", "seasonal", "trends", "f", "(", "t", ")", ",", "spatial", "Ui", "(", "1", ")", ",", "temporal", "epsilon", "t", "(", "1", ")", "=(", "e1", ",", "e2", ",...,", "et", ")", "and", "non", "spatial", "phi", "i", "(", "1", ")", "random", "effects", "are", "introduced", "on", "the", "log", "scale", "of", "the", "mean", "count", "via", "the", "equation", "log", "(", "mu", "it", ")", "=", "XT", "(", "1", ")", "beta", "(", "1", ")", "+", "f", "(", "t", ")", "(", "1", ")", "+", "Ui", "(", "1", ")", "+", "et", "(", "1", ")", "+", "phi", "i", "(", "1", ")", ",", "where", "beta", "is", "the", "vector", "of", "regression", "coefficients", ",", "phi", "i", "(", "1", ")", "is", "a", "residual", "error", "term", "capturing", "the", "remaining", "variability", "in", "the", "data", "." ],
+    "entities_indices" : [ [ 14, 15 ], [ 26, 27 ], [ 28, 29 ], [ 78, 79 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "exposure", "surfaces", "estimated", "using", "this", "approach", "can", "be", "linked", "to", "mortality", "data", "to", "assess", "the", "malaria", "specific", "mortality", "burden", "." ],
+    "entities_indices" : [ [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "Highly", "significant", "effects", "of", "temperature", "on", "the", "SR", "and", "density", "of", "A.", "funestus", "were", "observed", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "Modelling", "heterogeneity", "in", "malaria", "transmission", "using", "large", "sparse", "spatio-temporal", "entomological", "data", "." ],
+    "entities_indices" : [ [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "prediction", "error", "for", "the", "EIR", "estimates", "was", "obtained", "my", "multiplying", "the", "prediction", "errors", "obtained", "from", "SR", "and", "density", "models.Patterns", "in", "Fig.", "4", "show", "that", "few", "surveyed", "households", "are", "located", "in", "areas", "with", "EIR", "<", "1", ";", "however", ",", "a", "large", "proportion", "of", "household", "presented", "high", "transmission", "intensity", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "Fitted", "values", "from", "models", "with", "all", "possible", "combinations", "of", "the", "environmental", "lags", "were", "calculated", "and", "plotted", "against", "the", "observed", "values", "(", "mosquito", "counts", "or", "SR", ")", "." ],
+    "entities_indices" : [ [ 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "Depending", "on", "the", "mosquito", "collection", "method", "used", "(", "human", "landing", ",", "light", "trap", ",", "etc.", ")", ",", "the", "human", "biting", "rate", "can", "be", "correctly", "approximated", "either", "by", "the", "number", "of", "blood", "meals", "taken", "on", "humans/mosquito/day", "or", "by", "the", "mosquito", "density", "." ],
+    "entities_indices" : [ [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "Spatial", "ranges", "are", "quite", "high", "especially", "for", "the", "SRs", "." ],
+    "entities_indices" : [ [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "standard", "modelling", "approaches", ",", "EIR", "is", "treated", "as", "a", "continuous", "outcome", ",", "logarithmically", "transformed", "to", "fulfil", "the", "assumption", "of", "normality", "(", "21", ",", "24", "-", "27", ")", "." ],
+    "entities_indices" : [ [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "impact", "of", "the", "malaria", "burden", "on", "the", "achievement", "of", "Millennium", "Development", "Goals", "is", "enormous", ",", "and", "its", "control", "is", "a", "potential", "contribution", "towards", "significant", "progress", "(", "1", ")", "." ],
+    "entities_indices" : [ [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "Malaria", "is", "transmitted", "by", "female", "Anopheles", "mosquitoes", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "Malaria", "transmission", "was", "mostly", "influenced", "by", "rain", "and", "temperature", ",", "which", "significantly", "reduces", "the", "probability", "of", "observing", "zero", "mosquitoes", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "These", "latent", "observations", "U", "of", "the", "original", "process", "can", "be", "approximated", "by", "the", "'", "predictions", "'", "of", "the", "sub-process", "via", "the", "mean", "of", "Gaussian", "conditional", "distribution", "U", "(", "1", ")", "(", "s", ")", "|", "U", "*", "(", "1", ")", "~", "N", "(", "QT", "Sigma", "*", "-", "1U", "*", "(", "1", ")", ",", "sigma", "2-QT", "Sigma", "*-1Q", ")", ",", "that", "is", "U", "^", "=", "QT", "Sigma", "*-1U", "*", "(", "1", ")", ",", "where", "Q", "=", "Cov", "(", "U", "*", "(", "1", ")", ",", "U", "(", "1", ")", ")", "is", "an", "mxn", "matrix", "of", "the", "covariance", "functions", "between", "the", "full", "and", "the", "sub-process", "(", "48", ",", "49", ")", "." ],
+    "entities_indices" : [ [ 39, 40, 41 ], [ 42, 43, 44, 45, 46, 47, 48 ], [ 52, 53, 54, 55, 56 ], [ 60, 61, 62, 63, 64, 65, 66, 67 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "Fig.", "3", ",", "monthly", "time", "series", "(", "median", ")", "predicted", "EIR", "are", "plotted", "for", "the", "entire", "study", "period", "." ],
+    "entities_indices" : [ [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "EIR", "estimates", "representing", "the", "infectious", "bite/person/day", "were", "calculated", "as", ":", "EI", "^", "Rjt", "=", "1.605", "*", "(", "(", "pi", "^", "jtaf", "*", "mu", "^", "jtaf", ")", "+", "(", "pi", "^", "jtag", "*", "mu", "^", "jtag", ")", ")", "where", "1.605", "is", "the", "correction", "factor.The", "EI", "^", "Rjt", "was", "then", "multiplied", "by", "30.5", "and", "365", "to", "obtain", "monthly", "and", "annual", "estimates", ",", "respectively", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 10, 11 ], [ 18, 19, 20, 21, 22, 23, 24, 25 ], [ 28, 29, 30, 31, 32, 33, 34, 35 ], [ 43, 44 ] ]
+  }, {
+    "sentence_tokens" : [ "Spatial", "variability", "accounts", "more", "for", "the", "total", "variability", "in", "the", "data", "as", "compared", "to", "the", "non", "spatial", "and", "temporal", "variability.For", "a", "total", "of", "63", ",", "99", ",", "368", "and", "368", "test", "locations", "selected", "for", "validation", "of", "SR-AF", ",", "SR-AG", ",", "Density-AF", "and", "Density-AG", "models", "respectively", ",", "68.3", ",", "63.6", ",", "84.1", "and", "89.9", "%", "of", "the", "locations", "were", "correctly", "predicted", "within", "95", "%", "credible", "interval", "." ],
+    "entities_indices" : [ [ 36, 37 ], [ 38, 39 ], [ 40, 41 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "EIR", "can", "be", "estimated", "as", "a", "product", "of", "the", "SR", "and", "human", "biting", "rate", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "now", "demonstrate", "a", "rigorous", "modelling", "way", "of", "analysing", "large", "spatio-temporal", "EIR", "data", "and", "study", "the", "heterogeneity", ",", "space", "and", "temporal", "patterns", "of", "malaria", "transmission", "within", "one", "MTIMBA", "site", ",", "the", "Rufiji", "DSS", "area", "in", "Tanzania", "(", "44", ")", "." ],
+    "entities_indices" : [ [ 23, 24 ], [ 32, 33 ] ]
+  }, {
+    "sentence_tokens" : [ "Malaria", "disease", "burden", "and", "transmission", "can", "be", "assessed", "using", "incidence", "or", "prevalence", "in", "human", "hosts", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "Our", "work", "is", "amongst", "the", "few", "to", "address", "spatial", "modelling", "of", "Entomology", "inoculation", "rate", "(", "EIR", ")", "based", "on", "sparse", "data", "by", "applying", "current", "Bayesian", "methodologies", "approximating", "spatial", "processes", "for", "large", "data", "." ],
+    "entities_indices" : [ [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "EIR", "were", "categorized", "into", "five", "transmission", "intensities", "which", "were", ":", "no", "transmission", "(", "EIR", "=0", ")", ",", "very", "low", "(", "EIR", ">=", "0.0", "-", "1", ")", ",", "low", "(", "EIR", ">=", "1", "-", "10", ")", ",", "average", "(", "EIR", ">=", "10", "-", "100", ")", ",", "and", "high", "(", "EIR", ">=", "100", ")", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 20, 21, 22, 23, 24, 25 ], [ 29, 30, 31, 32, 33, 34 ], [ 48, 49, 50, 51 ] ]
+  }, {
+    "sentence_tokens" : [ "Small-scale", "variations", "in", "malaria", "transmission", "are", "common", "in", "sub-Saharan", "Africa", "and", "create", "complexity", "in", "implementing", "strategies", "to", "combat", "malaria", "(", "8,", "28", ",", "59", ",", "75", "-", "77", ")", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "Let", "N", "and", "Z", "be", "the", "number", "of", "mosquitoes", "tested", "and", "number", "infected", ",", "respectively", "at", "location", "s", "and", "calendar", "month", "t.", "Z", "is", "assumed", "to", "arise", "from", "a", "binomial", "distribution", ",", "Z", "~", "Bin", "(", "N", ",", "pi", ")", ",", "where", "pi", "measures", "the", "SR", "at", "location", "s", "and", "time", "t." ],
+    "entities_indices" : [ [ 45, 46 ] ]
+  }, {
+    "sentence_tokens" : [ "Geostatistical", "zero", "inflated", "negative", "binomial", "and", "logistic", "regression", "models", "were", "fitted", "on", "the", "mosquito", "density", "and", "SR", "data", ",", "respectively", "." ],
+    "entities_indices" : [ [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "regression", "function", "links", "the", "SR", "with", "other", "terms", "of", "the", "model", "(", "as", "shown", "for", "the", "density", "data", ")", "and", "is", "given", "as", "logit", "logit", "(", "pi", "it", ")", "=", "XT", "(", "2", ")", "beta", "(", "2", ")", "+", "f", "(", "t", ")", "(", "2", ")", "+", "Ui", "(", "2", ")", "+", ">", "epsilon", "t", "(", "2", ")", "+", "phi", "i", "(", "2", ")", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 48, 49 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "Sigma", "is", "a", "matrix", "with", "elements", "Sigma", "ij", "(", "1", ")", "and", "quantify", "the", "covariance", "Cov", "(", "U", ",", "U", ")", "between", "the", "pair", "of", "locations", "s", "and", "s", ",", "respectively", "." ],
+    "entities_indices" : [ [ 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "It", "acknowledges", "key", "characteristic", "of", "the", "data", ",", "considers", "computation", "difficulties", "and", "correlation", "among", "potential", "drivers", "of", "malaria", "transmission", "." ],
+    "entities_indices" : [ [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "majority", "of", "the", "people", "in", "the", "Rufiji", "District", "are", "subsistence", "farmers.The", "main", "responsible", "malaria", "vectors", "in", "the", "area", "include", "A.", "funestus", ",", "and", "members", "of", "the", "A.", "gambiae", "complex", ",", "including", "A.", "gambiae", "(", "sensu", "stricto", ")", "and", "A.", "arabiensis", "." ],
+    "entities_indices" : [ [ 14, 15 ], [ 29, 30 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "annual", "and", "species", "specific", "population", "adjusted", "EIR", "were", "calculated", "by", "averaging", "predicted", "inoculation", "rates", "at", "all", "households", "(", "N", "=", "14,516", ")", "within", "the", "RDSS", "(", "Fig.", "5", ")", "excluding", "all", "of", "the", "other", "pixels", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "study", ",", "which", "assessed", "spatio-temporal", "variation", "of", "EIR", "in", "Navrongo", "DSS", ",", "showed", "similar", "patterns", "of", "seasonality", "that", "differed", "by", "species", "(", "28", ")", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "Moreover", ",", "DSS", "sites", "including", "Rufiji", ",", "collected", "comprehensive", "records", "of", "all", "cause", "and", "disease", "mortality", "in", "the", "human", "population", "at", "the", "time", "of", "this", "entomological", "surveillance", "." ],
+    "entities_indices" : [ [ 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "Model", "based", "predictions", "of", "SR", "and", "density", "were", "multiplied", "to", "compute", "EIR", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "spatial", "temporal", "distribution", "of", "year-by-year", "EIR", "is", "shown", "in", "Fig.", "4", "with", "maps", "of", "prediction", "error", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "f", "(", "t", ")", "is", "modelled", "via", "trigonometric", "function", "with", "a", "mixture", "of", "cycle", ",", "C", "f", "(", "t", ")", "=", "sum", "c", "=", "1C", "{", "delta", "1c", "(", "1", ")", "*", "cos", "(", "2", "pi", "Tct", ")", "+", "delta", "2c", "(", "1", ")", "*", "sin", "(", "2", "pi", "Tct", ")", "}", ",", "C", "=", "2", ";", "t", "=", "1", ",...,", "12/36", "where", "T", "is", "the", "period", "of", "the", "season", "for", "cycle", "C", "(", "i.e.", "T", "=", "12", "and", "T", "=", "6", ")", "and", "delta", "1c", "(", "1", ")", "and", "delta", "2c", "(", "1", ")", "are", "regression", "parameters", "used", "to", "describe", "the", "amplitude", "and", "phase", "within", "a", "period", "(", "45", ",", "46", ")", "." ],
+    "entities_indices" : [ [ 26, 27 ], [ 39, 40 ], [ 84, 85 ], [ 90, 91 ] ]
+  }, {
+    "sentence_tokens" : [ "Understanding", "the", "heterogeneity", "in", "transmission", "and", "human", "exposure", "to", "malaria", "infection", "is", "critical", "for", "optimizing", "control", "programs", "and", "targeting", "interventions", "(", "9", "-", "12", ")", "." ],
+    "entities_indices" : [ [ 9, 10 ], [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "main", "objective", "of", "the", "initiative", "was", "to", "assess", "the", "relation", "between", "the", "intensity", "of", "malaria", "transmission", "and", "all", "cause", "as", "well", "as", "malaria", "specific", "mortality", "across", "Africa", ",", "taking", "into", "account", "the", "influence", "of", "malaria", "control", "activities", "." ],
+    "entities_indices" : [ [ 15, 16 ], [ 23, 24 ], [ 35, 36 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "final", "model", "was", "implemented", "in", "OpenBUGS", "and", "parameters", "were", "estimated", "using", "the", "Gibbs", "sampler", "MCMC", "algorithm", "." ],
+    "entities_indices" : [ [ 13, 14, 15, 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "Figure", "2", "presents", "selected", "EIR", "maps", "for", "the", "Rufiji", "DSS", "site", "for", "the", "A.", "funestus", "and", "A.", "gambiae", "." ],
+    "entities_indices" : [ [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "Methodology", "introduced", "here", "has", "the", "potential", "for", "efficient", "assessment", "of", "the", "contribution", "of", "malaria", "transmission", "in", "mortality", "and", "monitoring", "performance", "of", "control", "and", "intervention", "strategies", "." ],
+    "entities_indices" : [ [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "That", "implies", "that", "all", "repeated", "surveys", "from", "a", "specific", "location", "within", "the", "same", "month", "were", "collapsed", "(", "sum", "of", "mosquito", "density", "and", "tested", "and", "positive", ")", "to", "a", "single", "observation.To", "account", "for", "the", "environmental-lag-effect", "on", "mosquito", "density", "or", "SR", ",", "non", "spatial", "(", "negative", ")", "binomial", "models", "(", "with", "and", "without", "zero", "inflation", ")", "were", "fitted", "and", "best", "lags", "were", "assessed", "." ],
+    "entities_indices" : [ [ 38, 39 ] ]
+  }, {
+    "sentence_tokens" : [ "It", "can", "be", "also", "used", "to", "predict", "other", "measures", "of", "transmission", ",", "which", "are", "used", "to", "evaluate", "effectiveness", "of", "malaria", "control", "program", "(", "5", ",", "18", ")", "." ],
+    "entities_indices" : [ [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "Model", "based", "prediction", "of", "SR", "and", "density", "were", "multiplied", "to", "obtain", "estimates", "of", "monthly", "and", "annual", "EIR", "." ],
+    "entities_indices" : [ [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "Two", "species", "A.", "funestus", "and", "A.", "gambiae", "are", "mainly", "responsible", "for", "malaria", "transmission", "in", "this", "region", "." ],
+    "entities_indices" : [ [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "Attributes", "of", "each", "species", "are", "also", "indicated.The", "transmission", "starts", "peaking", "in", "the", "month", "of", "April", "(", "just", "after", "rains", ")", "and", "gradually", "drops", "in", "July", "(", "first", "year", "of", "the", "study", ")", "." ],
+    "entities_indices" : [ [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "study", "utilized", "data", "collected", "from", "one", "of", "the", "MTIMBA", "sites", "in", "Tanzania", ",", "the", "Rufiji", "DSS", "(", "RDSS", ")", "." ],
+    "entities_indices" : [ [ 9, 10, 11 ], [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "At", "a", "specific", "pixel", "j", "and", "month", "t", "the", "predicted", "values", "of", "SR", ",", "pi", "^", "jt", "and", "mosquito", "density", ",", "mu", "^", "jt", "were", "obtained", "for", "A.", "funestus", "and", "A.", "gambiae", "species", "." ],
+    "entities_indices" : [ [ 12, 13 ], [ 14, 15, 16, 17 ], [ 21, 22, 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "Bayesian", "geostatistical", "binomial", "and", "negative", "binomial", "models", "with", "zero", "inflation", "were", "fitted", "for", "sporozoite", "rates", "(", "SRs", ")", "and", "mosquito", "density", ",", "respectively", "." ],
+    "entities_indices" : [ [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "Predictions", "and", "calculations", "of", "EIR", "were", "done", "in", "Fortran", "95", "(", "Compaq", "Visual", "Fortran", "Professional", "6.6.0", ")", "." ],
+    "entities_indices" : [ [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "distribution", "of", "the", "data", "is", "now", "defined", "as", ":P", "(", "Y", "=0", "|", "p", "*", ",", "theta", ")", "=p", "*+", "(", "1-p", "*", ")", "pi", "(", "0", "|", "theta", ")", "P", "(", "Y", "=", "y", "|", "p", "*", ",", "theta", ")", "=(", "1-p", "*", ")", "pi", "(", "y", "|", "theta", ")", ",", "y", ">", "0", "where", "p", "*", "is", "the", "probability", "for", "a", "count", "to", "arise", "from", "the", "zero", "mass", "and", "1", "-", "p", "*", "is", "the", "probability", "to", "observe", "a", "sample", "from", "a", "count", "distribution", "(", "i.e.", "pi", "(", "y", "|", "theta", ")", "=", "NB", "for", "our", "case", ",", "and", "theta", "is", "the", "vector", "of", "parameters", "associated", "with", "the", "distribution", ")", "." ],
+    "entities_indices" : [ [ 19, 20, 21, 22, 23, 24 ], [ 43, 44, 45 ], [ 70, 71 ], [ 96, 97 ], [ 102, 103 ] ]
+  }, {
+    "sentence_tokens" : [ "U", "is", "considered", "to", "arise", "from", "the", "same", "Gaussian", "process", "as", "U", "and", "thus", "U", "~", "N", "(", "0", ",", "Sigma", "*", ")", ",", "where", "Sigma", "is", "the", "mxm", "covariance", "matrix", "of", "the", "sub-process", "." ],
+    "entities_indices" : [ [ 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "southern", "part", "of", "the", "DSS", "showed", "high", "transmission", "throughout", "the", "years", "." ],
+    "entities_indices" : [ [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "phi", "i", "(", "1", ")", "is", "assumed", "to", "follow", "a", "normal", "distribution", "with", "mean", "zero", "and", "a", "homoscedastic", "variance", "sigma", "e2", "(", "1", ")", "." ],
+    "entities_indices" : [ [ 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "prominent", "feature", "in", "the", "District", "is", "the", "Rufiji", "River", "with", "its", "large", "flood", "plain", "and", "delta", ",", "the", "most", "extensive", "in", "the", "country", "(", "INDEPTH", "Monogram", ";", "Rufiji", "DSS", "Profile", ",", "2000", ")", "." ],
+    "entities_indices" : [ [ 16, 17 ], [ 29, 30 ] ]
+  }, {
+    "sentence_tokens" : [ "t-1Normal", "(", "gamma", "(", "1", ")", "et-1", ",", "sigma", "T2", "(", "1", ")", ")", ",", "t", ">=", "2", ",", "where", "gamma", "(", "1", ")", "is", "an", "autocorrelation", "parameter", "|", "gamma", "(", "1", ")", "|", "<", "1", "which", "adopts", "a", "bounded", "uniform", "distribution", ",", "gamma", "(", "1", ")", "~", "Unif", "[", "-1,1", "]", "and", "sigma", "T2", "(", "1", ")", "is", "the", "temporal", "error", "(", "51", ")", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 8, 9 ], [ 15, 16, 17, 18 ], [ 28, 29, 30 ], [ 47, 48, 49, 50, 51, 52 ] ]
+  }, {
+    "sentence_tokens" : [ "Malaria", "transmission", "is", "measured", "using", "entomological", "inoculation", "rate", "(", "EIR", ")", ",", "number", "of", "infective", "mosquito", "bites/person/unit", "time", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "Uncertainty", "due", "to", "small", "sample", ",", "low", "values", "and", "variability", "in", "the", "SR", "and", "cost", "complicate", "precise", "estimation", "of", "EIR", "requiring", "standardized", "entomological", "surveys", "conducted", "over", "large", "areas", "(", "5", ",", "6", ",", "13", ",", "14", ")", "." ],
+    "entities_indices" : [ [ 12, 13 ], [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "southern", "part", "of", "the", "DSS", "showed", "high", "transmission", "throughout", "the", "years", "." ],
+    "entities_indices" : [ [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "predicted", "power", "of", "the", "model", "at", "95", "%", "credible", "interval", "is", "reported.Using", "the", "estimates", "obtained", "from", "the", "models", ",", "SR", "and", "mosquito", "density", "were", "predicted", "for", "the", "whole", "Rufiji", "site", "." ],
+    "entities_indices" : [ [ 20, 21 ], [ 22, 23 ], [ 29, 30, 31 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "crude", "EIR", "were", "507", ",", "72.8", "and", "146", "infectious", "bites/person/year", "for", "3", "years", "respectively", "." ],
+    "entities_indices" : [ [ 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "Mapping", "of", "EIR", "." ],
+    "entities_indices" : [ [ 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "Malaria", "is", "still", "endemic", "in", "more", "than", "100", "countries", "worldwide", ",", "leaving", "children", "and", "pregnant", "mothers", "being", "the", "most", "vulnerable", "groups", "for", "infections", "(", "1", ")", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "To", "our", "knowledge", ",", "Kasasa", "et", "al.", "(", "28", ")", "is", "the", "only", "literature", "report", "analysis", "of", "EIR", "data", "considering", "the", "two", "sources", "of", "data", "separately", "." ],
+    "entities_indices" : [ [ 17, 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "EIR", "was", "calculated", "using", "model", "based", "predictions", "of", "SR", "and", "density", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "was", "implemented", "in", "STATA", "10", "(", "Stata", "Corps", ")", "." ],
+    "entities_indices" : [ [ 4, 5, 6 ], [ 7, 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "Table", "1", "summarizes", "the", "results", "of", "parameter", "estimations", "from", "a", "multivariate", "geostatistical", "models", "on", "SRs", "and", "mosquito", "density.The", "effect", "of", "environmental", "variables", "differs", "significantly", "between", "species", "." ],
+    "entities_indices" : [ [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "Remote", "sensing", "data", "were", "extracted", "from", "different", "sources", "with", "different", "spatial", ",", "Sp", ",", "and", "temporal", ",", "T", ",", "resolutions", "." ],
+    "entities_indices" : [ [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "Geostatistical", "models", "have", "been", "widely", "used", "in", "malaria", "mapping", "in", "recent", "years", "(", "3", ",", "38", ",", "52", ",", "62", "-", "64", ")", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "Differences", "on", "the", "effect", "of", "environmental", "factors", "on", "the", "mosquito", "abundance", "and", "SRs", "of", "the", "species", "were", "observed", "." ],
+    "entities_indices" : [ [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "work", "demonstrates", "a", "rigorous", "approach", "for", "analysing", "large", "and", "highly", "variable", "entomological", "data", "for", "the", "study", "of", "malaria", "transmission", "heterogeneity", ",", "measured", "by", "EIR", ",", "within", "the", "Rufiji", "Demographic", "Surveillance", "System", "(", "DSS", ")", ",", "MTIMBA", "project", "site", "in", "Tanzania", "." ],
+    "entities_indices" : [ [ 18, 19 ], [ 24, 25 ], [ 33, 34 ], [ 36, 37 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "MTIMBA", "entomological", "data", "have", "been", "collected", "fortnightly", "over", "large", "number", "of", "locations", "(", "households", ")", "and", "to", "date", "this", "is", "the", "only", "available", "entomological", "database", "appropriate", "to", "study", "space", "-", "time", "heterogeneity", "of", "malaria", "transmission", "in", "Africa", "." ],
+    "entities_indices" : [ [ 34, 35 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "RDSS", "is", "located", "in", "Rufiji", "District", ",", "Coast", "Region", ",", "Tanzania", ",", "about", "178", "km", "south", "of", "Dar", "es", "Salaam", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "this", "study", ",", "EIR", "was", "calculated", "as", "a", "product", "of", "SR", "and", "mosquito", "density", "and", "then", "adjusted", "using", "a", "correction", "factor", "of", "1.605", "to", "calibrate", "estimates", "obtained", "from", "light", "trap", "collection", "(", "28", ",", "53", ",", "54", ")", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 11, 12 ], [ 30, 31 ] ]
+  }, {
+    "sentence_tokens" : [ "There", "was", "a", "reduction", "in", "the", "second", "year", "of", "the", "study", "and", "EIR", "increased", "again", "during", "the", "last", "year", "." ],
+    "entities_indices" : [ [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "Inverse", "gamma", "priors", "are", "adopted", "for", "the", "variance", "parameters", "sigma", "sp2", "(", "1", ")", ",", "sigma", "T2", "(", "1", ")", "and", "sigma", "e2", "(", "1", ")", "." ],
+    "entities_indices" : [ [ 0, 1, 2, 3 ], [ 10, 11 ], [ 15, 16 ], [ 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "work", "adds", "to", "the", "few", "in", "literature", "that", "indirect", "evaluates", "performance", "of", "using", "subsets", "to", "approximate", "the", "spatial", "process", "in", "real-life", "field", "data.Changes", "in", "climate", "conditions", ",", "natural", "inhabitants", "and", "other", "human", "activities", ",", "which", "depend", "on", "the", "environment", ",", "alter", "the", "intensity", "of", "malaria", "transmission", "(", "21", ",", "65", ")", "." ],
+    "entities_indices" : [ [ 45, 46 ] ]
+  }, {
+    "sentence_tokens" : [ "Understanding", "heterogeneity", "of", "malaria", "transmission", "has", "been", "difficult", "due", "to", "a", "lack", "of", "appropriate", "data", "." ],
+    "entities_indices" : [ [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "had", "an", "abundance", "of", "data", "on", "both", "mosquito", "and", "human", "populations", ";", "however", ",", "due", "to", "the", "relative", "small", "DSS", "area", ",", "it", "is", "difficult", "to", "separate", "the", "contributions", "of", "these", "different", "factors", "to", "the", "spatial", "correlation", ",", "which", "explains", "the", "higher", "spatial", "range", "." ],
+    "entities_indices" : [ [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "Accurate", "estimation", "of", "EIR", "requires", "longitudinal", "surveys", "within", "the", "study", "area", "to", "take", "into", "account", "spatio-temporal", "variations", "and", "seasonality", "trends", "." ],
+    "entities_indices" : [ [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ ",", "U", "(", "s", "*", ")", ")", "." ],
+    "entities_indices" : [ [ 1, 2, 3, 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "High", "transmission", "was", "observed", "immediately", "at", "the", "onset", "of", "rains", ",", "especially", "during", "the", "heavy", "rain", "period", "." ],
+    "entities_indices" : [ [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "Rain", "and", "temperature", "are", "the", "most", "influencing", "factors", "for", "density", "and", "sporozoite", "with", "higher", "effect", "on", "the", "A.", "funestus", "species", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "Transmission", "intensity", "reduced", "significantly", "during", "Year", "2", "and", "3", ",", "contrary", "to", "the", "Year", "1", ",", "pronouncing", "high", "seasonality", "and", "spatial", "variability", "." ],
+    "entities_indices" : [ [ 13, 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "approach", "optimizes", "the", "selection", "of", "the", "best", "subset", "by", "minimizing", "the", "maximum", "of", "the", "nearest-neighbour", "distance", "between", "the", "original", "survey", "and", "the", "subset", "locations.The", "epsilon", "t", "(", "1", ")", "model", "temporal", "correlation", "via", "a", "stationary", "autoregressive", "process", "of", "order", "one", ",", "i.e.", "e1", "~", "Normal", "(", "0", ",", "sigma", "T2", "(", "1", ")/(", "1-gamma", "2", ")", ")", "and", "e", "|", "e", "~", "Normal", "et", "|", "e1", ",", "..." ],
+    "entities_indices" : [ [ 42, 43 ], [ 66, 67 ] ]
+  }, {
+    "sentence_tokens" : [ "EIR", "is", "the", "product", "of", "the", "human", "biting", "rate", ",", "for", "example", ",", "mosquito", "bites/person/night", "(", "which", "can", "also", "be", "estimated", "using", "mosquito", "density", ")", "and", "the", "sporozoite", "rate", "(", "SR", ")", ",", "which", "is", "the", "proportion", "of", "infective", "mosquitoes", "(", "7", ",", "17", ")", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 30, 31 ] ]
+  }, {
+    "sentence_tokens" : [ "Established", "correlation", "between", "number", "of", "mosquitoes", "captured", "by", "light", "traps", "and", "human", "landing", "catches", "is", "usually", "used", "to", "adjust", "light", "trap", "collection", "to", "equivalence", "of", "biting", "catches", "and", "avoid", "collection", "bias", "(", "53", ")", "." ],
+    "entities_indices" : [ [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "crude", "annual", "SRs", "were", "3.3", ",", "2.8", "and", "3.2", "%", "for", "Year", "1", "(", "October", "01", "-", "September", "02", ")", ",", "Year", "2", "(", "October", "02", "-", "September", "03", ")", "and", "Year", "3", "(", "October", "03", "-", "September", "04", ")", ",", "respectively", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 22, 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "when", "EIR", "is", "estimated", "as", "a", "product", "of", "the", "SR", "and", "mosquito", "density", ",", "which", "are", "generated", "from", "the", "binomial", "and", "a", "count", "distribution", "like", "Poisson", "or", "negative", "binomial", ",", "respectively", ",", "normality", "assumptions", "are", "void", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "Through", "that", ",", "much", "more", "accurate", "estimates", "of", "the", "benefits", "to", "be", "gained", "by", "reducing", "malaria", "transmission", "can", "be", "estimated", "than", "if", "it", "would", "have", "been", "possible", "from", "analyses", "that", "aggregate", "EIR", "over", "large", "areas", "and", "time", "periods", "or", "those", "fitted", "assuming", "normally", "distributed", "EIR", "." ],
+    "entities_indices" : [ [ 15, 16 ], [ 44, 45 ] ]
+  }, {
+    "sentence_tokens" : [ "Y", "is", "assumed", "to", "follow", "a", "negative", "binomial", "distribution", ",", "Y", "~", "NB", "(", "r", ",", "p", ")", ",", "where", "p", "=", "r/(", "r+", "mu", ")", "." ],
+    "entities_indices" : [ [ 12, 13 ], [ 23, 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "These", "include", "normalized", "difference", "vegetation", "index", "(", "NDVI", ")", "(", "Sp", ":", "250", "m", ";", "T", ":", "16", "days", ";", "Source", ":", "MODIS", ")", ",", "day", "and", "night", "temperature", "(", "Sp", ":", "1", "km", ";", "T", ":", "8", "days", ";", "Source", ":", "MODIS", ")", ",", "rainfall", "(", "Sp", ":", "8", "km", ";", "T", ":", "10", "days", ";", "Source", ":", "ADDS", ")", "and", "distance", "to", "the", "nearest", "water", "bodies", "(", "Sp", ":", "1", "km", ";", "Source", ":", "Health", "Mapper", ")", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 30, 31 ], [ 47, 48 ], [ 69, 70 ] ]
+  }, {
+    "sentence_tokens" : [ "Bayesian", "spatio-temporal", "binomial", "and", "zero", "inflated", "negative", "binomial", "regression", "models", "were", "developed", "to", "produce", "monthly", "maps", "of", "EIR", "taking", "into", "account", "the", "malaria", "-", "climate", "relation", "and", "seasonality", "in", "transmission", "(", "35", ",", "36", ",", "59", "-", "61", ")", "." ],
+    "entities_indices" : [ [ 17, 18 ], [ 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "transmission", "intensity", "is", "therefore", "highly", "sensitive", "to", "environmental", "variations", "that", "affect", "the", "densities", "of", "these", "vectors", "and", "their", "ability", "to", "transmit", "the", "infection", "(", "2", "-", "4", ")", "." ],
+    "entities_indices" : [ [ 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "Most", "of", "these", "techniques", "have", "been", "applied", "in", "simulated", "data", ",", "observed", "in", "regular", "grid", "and", "mainly", "with", "Gaussian", "characteristics", "." ],
+    "entities_indices" : [ [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "the", "regression", "coefficients", ",", "beta", ",", "delta", "and", "alpha", ",", "a", "standard", "non", "informative", "uniform", "prior", "is", "adopted", ",", "i.e.", "beta", "~", "Unif", "(", "-", "infinity", ",", "infinity", ")", ",", "delta", "~", "Unif", "(", "-", "infinity", ",", "infinity", ")", "and", "alpha", "~", "Unif", "(", "-", "infinity", ",", "infinity", ")", ",", "respectively", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 31, 32 ] ]
+  }, {
+    "sentence_tokens" : [ "Global", "estimates", "report", "219", "million", "malaria", "cases", "(", "range", "154", "-", "289", "million", ")", "with", "about", "660", "thousands", "deaths", "(", "range", "610", "-", "971", ")", ",", "most", "of", "these", "(", "~", "90", "%", ")", "occurring", "in", "Africa", "." ],
+    "entities_indices" : [ [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "Mosquito", "populations", "usually", "peak", "during", "the", "rain", "seasons", "especially", "in", "areas", "where", "rice", "cultivation", "is", "taking", "place", "and", "during", "the", "dry", "months", ",", "a", "high", "population", "was", "usually", "observed", "in", "areas", "with", "permanent", "water", "bodies", "(", "23", ")", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "An", "exponential", "correlation", "structure", "for", "the", "covariance", "matrix", "of", "the", "spatial", "process", "is", "adopted", ",", "that", "is", "Sigma", "ij", "(", "1", ")", "=", "sigma", "sp2", "(", "1", ")", "exp", "(-dij", "rho", "(", "1", ")", ")", ",", "where", "sigma", "sp2", "(", "1", ")", "is", "the", "spatial", "variance", ",", "d", "is", "the", "distance", "between", "locations", "s", "and", "s", "and", "rho", "measuring", "the", "correlation", "decay", "and", "also", "known", "as", "the", "effective", "range", "(", "3/rho", ")", "and", "estimates", "the", "distance", "where", "the", "spatial", "correlation", "is", "<", "5", "%", "." ],
+    "entities_indices" : [ [ 24, 25 ], [ 38, 39 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "Gaussian", "process", "approximation", "proposed", "by", "Banerjee", "et", "al.", "(", "40", ")", "is", "applied", "to", "binomial", "(", "SRs", ")", "and", "negative", "binomial", "(", "density", ")", "data", "with", "zero", "inflation", "." ],
+    "entities_indices" : [ [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "complex", "component", "of", "our", "proposal", "is", "how", "to", "separately", "model", "SR", "and", "density", "data", ",", "incorporate", "seasonality", ",", "choosing", "environment", "lags", "and", "lastly", "approximate", "the", "spatial", "correlation", "when", "the", "large", "number", "of", "location", "has", "been", "observed", "." ],
+    "entities_indices" : [ [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "Light", "traps", "operated", "from", "sundown", "to", "sunrise", "(", "i.e.", "6", "pm", "-", "6", "am", ")", "for", "two", "consecutive", "nights", "in", "each", "household", "and", "bags", "were", "emptied", "every", "morning", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "Calculation", "of", "EIR", "." ],
+    "entities_indices" : [ [ 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "there", "is", "a", "paucity", "of", "this", "type", "of", "data", "due", "to", "cost", "and", "resources", "needed", "to", "collect", "them", "(", "19", "-", "21", ")", "." ],
+    "entities_indices" : [ [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "practical", "implementation", "of", "the", "geostatistical", "model", "281", "knots", "(", "2,479", "unique", "locations", ")", "were", "selected", "for", "the", "density", "data", "(", "both", "species", ")", ",", "177", "(", "415", "unique", "locations", ")", "for", "SR", "analysis", "of", "A.", "funestus", "and", "219", "(", "639", "unique", "locations", ")", "for", "SR", "of", "A.", "gambiae", "." ],
+    "entities_indices" : [ [ 32, 33 ], [ 45, 46 ] ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "the", "entomological", "inoculation", "rate", "(", "EIR", ")", "most", "directly", "quantifies", "the", "exposure", "of", "the", "human", "population", "to", "the", "infectious", "stages", "of", "the", "parasite", "(", "12", "-", "16", ")", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "Gelman-Rubin", "diagnostics", "indicated", "good", "convergence", "of", "all", "model", "parameters", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "Over", "68", "and", "85", "%", "of", "the", "locations", "selected", "for", "validation", "for", "SR", "and", "density", ",", "respectively", ",", "were", "correctly", "predicted", "within", "95", "%", "credible", "interval", "indicating", "good", "performance", "of", "the", "models", "." ],
+    "entities_indices" : [ [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "model", "is", "defined", "as", "a", "mixture", "of", "a", "degenerate", "distribution", "with", "mass", "at", "zero", "and", "a", "non", "degenerate", "count", "distribution", "." ],
+    "entities_indices" : [ [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "Such", "heterogeneity", "arising", "from", "unmeasured", "factors", "is", "captured", "by", "the", "prediction", "errors.The", "methodology", "described", "in", "this", "study", "allows", "estimation", "of", "EIR", "while", "adjusting", "for", "both", ",", "temporal", "and", "small", "area", "spatial", "variations", "in", "a", "systematic", "and", "thorough", "manner", "." ],
+    "entities_indices" : [ [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "comprehensive", "entomological", "database", "compiled", "by", "the", "Malaria", "Transmission", "Intensity", "and", "Mortality", "Burden", "across", "Africa", "(", "MTIMBA", ")", "project", "(", "2001-2004", ")", "at", "several", "sites", "is", "the", "most", "suitable", "dataset", "for", "studying", "malaria", "transmission-mortality", "relations", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 32, 33 ] ]
+  }, {
+    "sentence_tokens" : [ "Model", "for", "SR", "." ],
+    "entities_indices" : [ [ 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "Moreover", ",", "the", "MTIMBA-EIR", "data", "have", "been", "collected", "at", "fixed", "locations", "and", "they", "are", "typically", "geostatistical", "data", "." ],
+    "entities_indices" : [ [ 3, 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "surveillance", "area", "covers", "an", "area", "of", "1,813", "km", "and", "monitors", "85,000", "people", ",", "which", "is", "about", "47", "%", "of", "the", "total", "population", "of", "the", "Rufiji", "District", "(", "INDEPTH", "Monogram", ")", "." ],
+    "entities_indices" : [ [ 25, 26, 27 ], [ 28, 29, 30 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "discussion", "and", "conclusion", "of", "the", "findings", "consider", "the", "implications", "for", "timing", "and", "allocation", "of", "resources", "for", "malaria", "interventions", "." ],
+    "entities_indices" : [ [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "Most", "A.", "gambiae", "mosquitoes", "were", "captured", "during", "the", "months", "of", "April", "and", "May", "while", "most", "A.", "funestus", "were", "collected", "in", "the", "period", "of", "July", "-", "September", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "Our", "results", "depict", "temporal", "and", "seasonal", "variation", "in", "EIR", "along", "the", "study", "period", "and", "study", "area", "." ],
+    "entities_indices" : [ [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "study", ",", "we", "assessed", "spatial", "-", "temporal", "variation", "and", "heterogeneity", "of", "malaria", "transmission", "in", "the", "Rufiji", "DSS", "site", "using", "a", "large", "geo", "referenced", "biweekly", "entomological", "dataset", "collected", "over", "3", "years", ",", "and", "rigorous", "Bayesian", "geostatistical", "models", "." ],
+    "entities_indices" : [ [ 13, 14 ], [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "r", "is", "an", "over-dispersion", "parameter", "and", "mu", "is", "the", "mean", "mosquito", "density", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  } ],
+  "emptySentences" : [ {
+    "sentence_tokens" : [ "Modelling", "heterogeneity", "in", "malaria", "transmission", "using", "large", "sparse", "spatio-temporal", "entomological", "data", "." ]
+  }, {
+    "sentence_tokens" : [ "Background", "." ]
+  }, {
+    "sentence_tokens" : [ "Malaria", "transmission", "is", "measured", "using", "entomological", "inoculation", "rate", "(", "EIR", ")", ",", "number", "of", "infective", "mosquito", "bites/person/unit", "time", "." ]
+  }, {
+    "sentence_tokens" : [ "Understanding", "heterogeneity", "of", "malaria", "transmission", "has", "been", "difficult", "due", "to", "a", "lack", "of", "appropriate", "data", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "comprehensive", "entomological", "database", "compiled", "by", "the", "Malaria", "Transmission", "Intensity", "and", "Mortality", "Burden", "across", "Africa", "(", "MTIMBA", ")", "project", "(", "2001-2004", ")", "at", "several", "sites", "is", "the", "most", "suitable", "dataset", "for", "studying", "malaria", "transmission-mortality", "relations", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "data", "are", "sparse", "and", "large", ",", "with", "small-scale", "spatial-temporal", "variation", "." ]
+  }, {
+    "sentence_tokens" : [ "Objective", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "work", "demonstrates", "a", "rigorous", "approach", "for", "analysing", "large", "and", "highly", "variable", "entomological", "data", "for", "the", "study", "of", "malaria", "transmission", "heterogeneity", ",", "measured", "by", "EIR", ",", "within", "the", "Rufiji", "Demographic", "Surveillance", "System", "(", "DSS", ")", ",", "MTIMBA", "project", "site", "in", "Tanzania", "." ]
+  }, {
+    "sentence_tokens" : [ "Design", "." ]
+  }, {
+    "sentence_tokens" : [ "Bayesian", "geostatistical", "binomial", "and", "negative", "binomial", "models", "with", "zero", "inflation", "were", "fitted", "for", "sporozoite", "rates", "(", "SRs", ")", "and", "mosquito", "density", ",", "respectively", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "spatial", "process", "was", "approximated", "from", "a", "subset", "of", "locations", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "models", "were", "adjusted", "for", "environmental", "effects", ",", "seasonality", "and", "temporal", "correlations", "and", "assessed", "based", "on", "their", "predictive", "ability", "." ]
+  }, {
+    "sentence_tokens" : [ "EIR", "was", "calculated", "using", "model", "based", "predictions", "of", "SR", "and", "density", "." ]
+  }, {
+    "sentence_tokens" : [ "Results", "." ]
+  }, {
+    "sentence_tokens" : [ "Malaria", "transmission", "was", "mostly", "influenced", "by", "rain", "and", "temperature", ",", "which", "significantly", "reduces", "the", "probability", "of", "observing", "zero", "mosquitoes", "." ]
+  }, {
+    "sentence_tokens" : [ "High", "transmission", "was", "observed", "at", "the", "onset", "of", "heavy", "rains", "." ]
+  }, {
+    "sentence_tokens" : [ "Transmission", "intensity", "reduced", "significantly", "during", "Year", "2", "and", "3", ",", "contrary", "to", "the", "Year", "1", ",", "pronouncing", "high", "seasonality", "and", "spatial", "variability", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "southern", "part", "of", "the", "DSS", "showed", "high", "transmission", "throughout", "the", "years", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "spatial", "shift", "of", "transmission", "intensity", "was", "observed", "where", "an", "increase", "in", "households", "with", "very", "low", "transmission", "intensity", "and", "significant", "reduction", "of", "locations", "with", "high", "transmission", "were", "observed", "over", "time", "." ]
+  }, {
+    "sentence_tokens" : [ "Over", "68", "and", "85", "%", "of", "the", "locations", "selected", "for", "validation", "for", "SR", "and", "density", ",", "respectively", ",", "were", "correctly", "predicted", "within", "95", "%", "credible", "interval", "indicating", "good", "performance", "of", "the", "models", "." ]
+  }, {
+    "sentence_tokens" : [ "Conclusion", "." ]
+  }, {
+    "sentence_tokens" : [ "Methodology", "introduced", "here", "has", "the", "potential", "for", "efficient", "assessment", "of", "the", "contribution", "of", "malaria", "transmission", "in", "mortality", "and", "monitoring", "performance", "of", "control", "and", "intervention", "strategies", "." ]
+  }, {
+    "sentence_tokens" : [ "Malaria", "is", "still", "endemic", "in", "more", "than", "100", "countries", "worldwide", ",", "leaving", "children", "and", "pregnant", "mothers", "being", "the", "most", "vulnerable", "groups", "for", "infections", "(", "1", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Global", "estimates", "report", "219", "million", "malaria", "cases", "(", "range", "154", "-", "289", "million", ")", "with", "about", "660", "thousands", "deaths", "(", "range", "610", "-", "971", ")", ",", "most", "of", "these", "(", "~", "90", "%", ")", "occurring", "in", "Africa", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "impact", "of", "the", "malaria", "burden", "on", "the", "achievement", "of", "Millennium", "Development", "Goals", "is", "enormous", ",", "and", "its", "control", "is", "a", "potential", "contribution", "towards", "significant", "progress", "(", "1", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Malaria", "is", "transmitted", "by", "female", "Anopheles", "mosquitoes", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "transmission", "intensity", "is", "therefore", "highly", "sensitive", "to", "environmental", "variations", "that", "affect", "the", "densities", "of", "these", "vectors", "and", "their", "ability", "to", "transmit", "the", "infection", "(", "2", "-", "4", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Up", "to", "10-fold", "variations", "in", "transmission", "intensity", "have", "been", "observed", "within", "very", "small", "localities", "due", "to", "geographical", ",", "biological", "or", "socio-economic", "factors", "(", "5", "-", "8)", "." ]
+  }, {
+    "sentence_tokens" : [ "Understanding", "the", "heterogeneity", "in", "transmission", "and", "human", "exposure", "to", "malaria", "infection", "is", "critical", "for", "optimizing", "control", "programs", "and", "targeting", "interventions", "(", "9", "-", "12", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Malaria", "disease", "burden", "and", "transmission", "can", "be", "assessed", "using", "incidence", "or", "prevalence", "in", "human", "hosts", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "the", "entomological", "inoculation", "rate", "(", "EIR", ")", "most", "directly", "quantifies", "the", "exposure", "of", "the", "human", "population", "to", "the", "infectious", "stages", "of", "the", "parasite", "(", "12", "-", "16", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "EIR", "is", "the", "product", "of", "the", "human", "biting", "rate", ",", "for", "example", ",", "mosquito", "bites/person/night", "(", "which", "can", "also", "be", "estimated", "using", "mosquito", "density", ")", "and", "the", "sporozoite", "rate", "(", "SR", ")", ",", "which", "is", "the", "proportion", "of", "infective", "mosquitoes", "(", "7", ",", "17", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "measure", "expresses", "the", "average", "number", "of", "infective", "bites", "a", "person", "receives", "in", "a", "specified", "unit", "of", "time", "." ]
+  }, {
+    "sentence_tokens" : [ "It", "can", "be", "also", "used", "to", "predict", "other", "measures", "of", "transmission", ",", "which", "are", "used", "to", "evaluate", "effectiveness", "of", "malaria", "control", "program", "(", "5", ",", "18", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Uncertainty", "due", "to", "small", "sample", ",", "low", "values", "and", "variability", "in", "the", "SR", "and", "cost", "complicate", "precise", "estimation", "of", "EIR", "requiring", "standardized", "entomological", "surveys", "conducted", "over", "large", "areas", "(", "5", ",", "6", ",", "13", ",", "14", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Accurate", "estimation", "of", "EIR", "requires", "longitudinal", "surveys", "within", "the", "study", "area", "to", "take", "into", "account", "spatio-temporal", "variations", "and", "seasonality", "trends", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "there", "is", "a", "paucity", "of", "this", "type", "of", "data", "due", "to", "cost", "and", "resources", "needed", "to", "collect", "them", "(", "19", "-", "21", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "main", "objective", "of", "the", "initiative", "was", "to", "assess", "the", "relation", "between", "the", "intensity", "of", "malaria", "transmission", "and", "all", "cause", "as", "well", "as", "malaria", "specific", "mortality", "across", "Africa", ",", "taking", "into", "account", "the", "influence", "of", "malaria", "control", "activities", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "MTIMBA", "entomological", "data", "have", "been", "collected", "fortnightly", "over", "large", "number", "of", "locations", "(", "households", ")", "and", "to", "date", "this", "is", "the", "only", "available", "entomological", "database", "appropriate", "to", "study", "space", "-", "time", "heterogeneity", "of", "malaria", "transmission", "in", "Africa", "." ]
+  }, {
+    "sentence_tokens" : [ "These", "data", "are", "sparse", "with", "seasonal", "variations", "and", "spatio-temporal", "correlations", "." ]
+  }, {
+    "sentence_tokens" : [ "High", "dependence", "of", "climate", ",", "environment", "and", "ecological", "factors", "in", "the", "life", "of", "mosquito", "and", "seasonality", "any", "of", "the", "survey", "locations", "had", "zero", "mosquitoes", "or", "proportion", "of", "infected", "ones", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "standard", "modelling", "approaches", ",", "EIR", "is", "treated", "as", "a", "continuous", "outcome", ",", "logarithmically", "transformed", "to", "fulfil", "the", "assumption", "of", "normality", "(", "21", ",", "24", "-", "27", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "when", "EIR", "is", "estimated", "as", "a", "product", "of", "the", "SR", "and", "mosquito", "density", ",", "which", "are", "generated", "from", "the", "binomial", "and", "a", "count", "distribution", "like", "Poisson", "or", "negative", "binomial", ",", "respectively", ",", "normality", "assumptions", "are", "void", "." ]
+  }, {
+    "sentence_tokens" : [ "To", "our", "knowledge", ",", "Kasasa", "et", "al.", "(", "28", ")", "is", "the", "only", "literature", "report", "analysis", "of", "EIR", "data", "considering", "the", "two", "sources", "of", "data", "separately", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "addition", ",", "due", "to", "the", "amount", "of", "zeros", "which", "is", "larger", "than", "what", "can", "be", "generated", "by", "the", "standard", "distributions", ",", "the", "data", "are", "over", "and", "under", "dispersed", "and", "zero", "inflated", "(", "21", ",", "29", "-", "32", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Statistical", "analysis", "which", "accounts", "for", "these", "characteristics", "is", "essential", "to", "obtain", "unbiased", "estimates", "for", "the", "regression", "coefficients", "(", "33", "-", "36", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Moreover", ",", "the", "MTIMBA-EIR", "data", "have", "been", "collected", "at", "fixed", "locations", "and", "they", "are", "typically", "geostatistical", "data", "." ]
+  }, {
+    "sentence_tokens" : [ "Similar", "exposures", "of", "environmental", "and", "climatic", "conditions", "to", "locations", "which", "are", "geographically", "close", "introduce", "spatial", "correlation", "between", "them", "." ]
+  }, {
+    "sentence_tokens" : [ "Geostatistical", "models", "take", "into", "account", "spatial", "correlation", "by", "introducing", "location", "specific", "random", "effects", "as", "latent", "observations", "from", "a", "multivariate", "spatial", "Gaussian", "process", "(", "37", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Spatial", "correlation", "between", "any", "pair", "of", "locations", "is", "often", "considered", "as", "a", "function", "of", "distance", "on", "the", "covariance", "matrix", "of", "the", "process", "." ]
+  }, {
+    "sentence_tokens" : [ "These", "models", "have", "a", "large", "number", "of", "parameters", "." ]
+  }, {
+    "sentence_tokens" : [ "Bayesian", "formulations", "(", "38", ")", "allow", "model", "fit", "via", "Markov", "Chain", "Monte", "Carlo", "(", "MCMC", ")", "simulation", "methods", "(", "39", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "the", "estimation", "process", "involves", "covariance", "matrix", "computations", "which", "are", "infeasible", "when", "the", "number", "of", "locations", "is", "too", "large", "(", "40", ",", "41", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "computational", "flexible", "way", "to", "overcome", "this", "problem", "is", "the", "approximation", "of", "the", "spatial", "process", "from", "a", "subset", "of", "locations", "using", "properties", "of", "conditional", "multivariate", "Gaussian", "distribution", "of", "the", "process", "(", "40", "-", "42", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Most", "of", "these", "techniques", "have", "been", "applied", "in", "simulated", "data", ",", "observed", "in", "regular", "grid", "and", "mainly", "with", "Gaussian", "characteristics", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "study", ",", "selection", "of", "subset", "of", "locations", "is", "implemented", "using", "methods", "proposed", "in", "our", "previous", "work", "(", "40", ",", "43", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "now", "demonstrate", "a", "rigorous", "modelling", "way", "of", "analysing", "large", "spatio-temporal", "EIR", "data", "and", "study", "the", "heterogeneity", ",", "space", "and", "temporal", "patterns", "of", "malaria", "transmission", "within", "one", "MTIMBA", "site", ",", "the", "Rufiji", "DSS", "area", "in", "Tanzania", "(", "44", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "Gaussian", "process", "approximation", "proposed", "by", "Banerjee", "et", "al.", "(", "40", ")", "is", "applied", "to", "binomial", "(", "SRs", ")", "and", "negative", "binomial", "(", "density", ")", "data", "with", "zero", "inflation", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "models", "are", "fitted", "using", "Bayesian", "MCMC", "simulation", "and", "assessed", "on", "the", "basis", "of", "their", "predictive", "ability", "." ]
+  }, {
+    "sentence_tokens" : [ "Model", "based", "predictions", "of", "SR", "and", "density", "were", "multiplied", "to", "compute", "EIR", "." ]
+  }, {
+    "sentence_tokens" : [ "Model", "formulation", "details", "are", "given", "in", "the", "methodology", "section", "and", "selected", "results", "are", "presented", "afterwards", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "discussion", "and", "conclusion", "of", "the", "findings", "consider", "the", "implications", "for", "timing", "and", "allocation", "of", "resources", "for", "malaria", "interventions", "." ]
+  }, {
+    "sentence_tokens" : [ "Methodology", "." ]
+  }, {
+    "sentence_tokens" : [ "Study", "site", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "study", "utilized", "data", "collected", "from", "one", "of", "the", "MTIMBA", "sites", "in", "Tanzania", ",", "the", "Rufiji", "DSS", "(", "RDSS", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "RDSS", "is", "located", "in", "Rufiji", "District", ",", "Coast", "Region", ",", "Tanzania", ",", "about", "178", "km", "south", "of", "Dar", "es", "Salaam", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "RDSS", "area", "extends", "from", "7.47", "degrees", "to", "8.03", "degrees", "south", "latitude", "and", "38.62", "degrees", "-", "39.17", "degrees", "east", "longitude", "and", "operates", "in", "six", "contiguous", "wards", "and", "31", "villages", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "surveillance", "area", "covers", "an", "area", "of", "1,813", "km", "and", "monitors", "85,000", "people", ",", "which", "is", "about", "47", "%", "of", "the", "total", "population", "of", "the", "Rufiji", "District", "(", "INDEPTH", "Monogram", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Rufiji", "District", "has", "an", "overall", "mean", "altitude", "of", "<", "500", "metres", "." ]
+  }, {
+    "sentence_tokens" : [ "Its", "vegetation", "is", "mainly", "formed", "of", "tropical", "forests", "and", "grassland", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "district", "has", "hot", "weather", "throughout", "the", "year", "and", "two", "rainy", "seasons", ":", "short", "rains", "(", "October", "-", "December", ")", "and", "long", "rains", "(", "February", "-", "May", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "average", "annual", "precipitation", "in", "the", "district", "is", "between", "800", "and", "1,000", "mm", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "prominent", "feature", "in", "the", "District", "is", "the", "Rufiji", "River", "with", "its", "large", "flood", "plain", "and", "delta", ",", "the", "most", "extensive", "in", "the", "country", "(", "INDEPTH", "Monogram", ";", "Rufiji", "DSS", "Profile", ",", "2000", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "majority", "of", "the", "people", "in", "the", "Rufiji", "District", "are", "subsistence", "farmers.The", "main", "responsible", "malaria", "vectors", "in", "the", "area", "include", "A.", "funestus", ",", "and", "members", "of", "the", "A.", "gambiae", "complex", ",", "including", "A.", "gambiae", "(", "sensu", "stricto", ")", "and", "A.", "arabiensis", "." ]
+  }, {
+    "sentence_tokens" : [ "Mosquito", "populations", "usually", "peak", "during", "the", "rain", "seasons", "especially", "in", "areas", "where", "rice", "cultivation", "is", "taking", "place", "and", "during", "the", "dry", "months", ",", "a", "high", "population", "was", "usually", "observed", "in", "areas", "with", "permanent", "water", "bodies", "(", "23", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Mosquito", "data", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "entomological", "data", "were", "collected", "for", "the", "period", "of", "3", "years", ",", "October", "2001", "-", "September", "2004", "(", "Source", ":", "http://www.indepth-network.org/dss_site_profiles/rufiji.pdf", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "MTIMBA", "entomological", "protocol", "has", "been", "well", "defined", "in", "MTIMBA", "documentation", "(", "unpublished", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "a", "snapshot", ",", "mosquitoes", "were", "captured", "at", "least", "twice", "every", "month", "using", "Centers", "for", "Disease", "Control", "(", "CDC", ")", "miniature", "light", "traps", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "human", "population", "in", "the", "RDSS", "was", "classified", "into", "geographical", "clusters", "(", "100", "-", "1,000", "people", ")", ",", "then", "for", "each", "round", "a", "simple", "random", "sampling", "(", "without", "replacement", ")", "was", "employed", "within", "clusters", "to", "select", "between", "20", "and", "100", "'", "index", "'", "people", "(", "households", ")", "for", "the", "set-up", "of", "mosquito", "catches", "(", "traps", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "traps", "were", "fitted", "indoors", "with", "incandescent", "bulbs", "and", "laid", "close", "to", "a", "human", "volunteer", "(", "randomly", "selected", "from", "members", "of", "the", "household", ")", "sleeping", "under", "an", "untreated", "bednet", "." ]
+  }, {
+    "sentence_tokens" : [ "Light", "traps", "operated", "from", "sundown", "to", "sunrise", "(", "i.e.", "6", "pm", "-", "6", "am", ")", "for", "two", "consecutive", "nights", "in", "each", "household", "and", "bags", "were", "emptied", "every", "morning", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "total", "of", "2,479", "unique", "locations", "(", "households", ")", "involved", "were", "geo", "referenced", "." ]
+  }, {
+    "sentence_tokens" : [ "Collected", "mosquitoes", "were", "counted", "and", "sorted", "into", "vector", "species", "to", "allow", "for", "separate", "assessment", "of", "transmission", "intensity", "." ]
+  }, {
+    "sentence_tokens" : [ "Environmental", "and", "climatic", "data", "." ]
+  }, {
+    "sentence_tokens" : [ "Remote", "sensing", "data", "were", "extracted", "from", "different", "sources", "with", "different", "spatial", ",", "Sp", ",", "and", "temporal", ",", "T", ",", "resolutions", "." ]
+  }, {
+    "sentence_tokens" : [ "These", "include", "normalized", "difference", "vegetation", "index", "(", "NDVI", ")", "(", "Sp", ":", "250", "m", ";", "T", ":", "16", "days", ";", "Source", ":", "MODIS", ")", ",", "day", "and", "night", "temperature", "(", "Sp", ":", "1", "km", ";", "T", ":", "8", "days", ";", "Source", ":", "MODIS", ")", ",", "rainfall", "(", "Sp", ":", "8", "km", ";", "T", ":", "10", "days", ";", "Source", ":", "ADDS", ")", "and", "distance", "to", "the", "nearest", "water", "bodies", "(", "Sp", ":", "1", "km", ";", "Source", ":", "Health", "Mapper", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Statistical", "analysis", "." ]
+  }, {
+    "sentence_tokens" : [ "Geostatistical", "zero", "inflated", "negative", "binomial", "and", "logistic", "regression", "models", "were", "fitted", "on", "the", "mosquito", "density", "and", "SR", "data", ",", "respectively", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "models", "accounted", "for", "the", "effect", "of", "environmental", "and", "climatic", "predictors", ",", "annual", "trends", ",", "seasonal", "patterns", ",", "and", "spatial", "and", "temporal", "correlations", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "predictive", "process", "was", "used", "to", "approximate", "the", "spatial", "process", "using", "a", "subset", "of", "locations", "." ]
+  }, {
+    "sentence_tokens" : [ "Model", "based", "prediction", "of", "SR", "and", "density", "were", "multiplied", "to", "obtain", "estimates", "of", "monthly", "and", "annual", "EIR", "." ]
+  }, {
+    "sentence_tokens" : [ "Details", "of", "the", "model", "formulation", "and", "its", "implementation", "are", "described", "in", "the", "subsections", "below", "." ]
+  }, {
+    "sentence_tokens" : [ "Programs", "used", "for", "this", "analysis", "are", "available", "via", "contact", "with", "the", "corresponding", "author", "." ]
+  }, {
+    "sentence_tokens" : [ "Model", "formulation", "for", "density", "data", "." ]
+  }, {
+    "sentence_tokens" : [ "Let", "Y", "be", "the", "number", "of", "female", "mosquitoes", "and", "Xit", "(", "1", ")", "be", "a", "vector", "of", "environmental", "predictors", "(", "extracted", "from", "satellite", "data", ")", "observed", "at", "location", "s", ",", "i", "=", "1", ",", "..." ]
+  }, {
+    "sentence_tokens" : [ ",", "n", ",", "and", "calendar", "month", "t", "=", "1", ",", "..." ]
+  }, {
+    "sentence_tokens" : [ ",36", "for", "a", "specific", "species", "." ]
+  }, {
+    "sentence_tokens" : [ "Y", "is", "assumed", "to", "follow", "a", "negative", "binomial", "distribution", ",", "Y", "~", "NB", "(", "r", ",", "p", ")", ",", "where", "p", "=", "r/(", "r+", "mu", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "r", "is", "an", "over-dispersion", "parameter", "and", "mu", "is", "the", "mean", "mosquito", "density", "." ]
+  }, {
+    "sentence_tokens" : [ "Covariates", "Xit", "(", "1", ")", ",", "seasonal", "trends", "f", "(", "t", ")", ",", "spatial", "Ui", "(", "1", ")", ",", "temporal", "epsilon", "t", "(", "1", ")", "=(", "e1", ",", "e2", ",...,", "et", ")", "and", "non", "spatial", "phi", "i", "(", "1", ")", "random", "effects", "are", "introduced", "on", "the", "log", "scale", "of", "the", "mean", "count", "via", "the", "equation", "log", "(", "mu", "it", ")", "=", "XT", "(", "1", ")", "beta", "(", "1", ")", "+", "f", "(", "t", ")", "(", "1", ")", "+", "Ui", "(", "1", ")", "+", "et", "(", "1", ")", "+", "phi", "i", "(", "1", ")", ",", "where", "beta", "is", "the", "vector", "of", "regression", "coefficients", ",", "phi", "i", "(", "1", ")", "is", "a", "residual", "error", "term", "capturing", "the", "remaining", "variability", "in", "the", "data", "." ]
+  }, {
+    "sentence_tokens" : [ "f", "(", "t", ")", "is", "modelled", "via", "trigonometric", "function", "with", "a", "mixture", "of", "cycle", ",", "C", "f", "(", "t", ")", "=", "sum", "c", "=", "1C", "{", "delta", "1c", "(", "1", ")", "*", "cos", "(", "2", "pi", "Tct", ")", "+", "delta", "2c", "(", "1", ")", "*", "sin", "(", "2", "pi", "Tct", ")", "}", ",", "C", "=", "2", ";", "t", "=", "1", ",...,", "12/36", "where", "T", "is", "the", "period", "of", "the", "season", "for", "cycle", "C", "(", "i.e.", "T", "=", "12", "and", "T", "=", "6", ")", "and", "delta", "1c", "(", "1", ")", "and", "delta", "2c", "(", "1", ")", "are", "regression", "parameters", "used", "to", "describe", "the", "amplitude", "and", "phase", "within", "a", "period", "(", "45", ",", "46", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Separate", "models", "were", "fitted", "assuming", ":", "(", "i", ")", "a", "constant", "seasonal", "pattern", "across", "the", "3", "years", "of", "the", "study", "by", "taking", "t", "=", "1", ",", "..." ]
+  }, {
+    "sentence_tokens" : [ ",12", ";", "or", "(", "ii", ")", "a", "continuous", "time", "for", "the", "entire", "study", "period", "by", "taking", "t", "=", "1", ",", "..." ]
+  }, {
+    "sentence_tokens" : [ ",36", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "seasonal", "pattern", "considering", "dry", "and", "wet", "categorization", "of", "the", "data", "was", "also", "assessed.A", "zero", "inflated", "model", "formulation", "was", "adopted", "to", "take", "into", "account", "the", "excess", "zeros", "in", "the", "count", "data", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "model", "is", "defined", "as", "a", "mixture", "of", "a", "degenerate", "distribution", "with", "mass", "at", "zero", "and", "a", "non", "degenerate", "count", "distribution", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "log-likelihood", "is", "therefore", "a", "sum", "of", "the", "log-likelihood", "for", "the", "non", "zero", "and", "the", "zero", "counts", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "distribution", "of", "the", "data", "is", "now", "defined", "as", ":P", "(", "Y", "=0", "|", "p", "*", ",", "theta", ")", "=p", "*+", "(", "1-p", "*", ")", "pi", "(", "0", "|", "theta", ")", "P", "(", "Y", "=", "y", "|", "p", "*", ",", "theta", ")", "=(", "1-p", "*", ")", "pi", "(", "y", "|", "theta", ")", ",", "y", ">", "0", "where", "p", "*", "is", "the", "probability", "for", "a", "count", "to", "arise", "from", "the", "zero", "mass", "and", "1", "-", "p", "*", "is", "the", "probability", "to", "observe", "a", "sample", "from", "a", "count", "distribution", "(", "i.e.", "pi", "(", "y", "|", "theta", ")", "=", "NB", "for", "our", "case", ",", "and", "theta", "is", "the", "vector", "of", "parameters", "associated", "with", "the", "distribution", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "probability", "can", "be", "assigned", "a", "value", "between", "0", "and", "1", ",", "usually", "approximates", "the", "proportion", "of", "zero", "counts", "in", "the", "sample", "or", "can", "be", "a", "function", "of", "covariates", "similar", "or", "different", "from", "those", "used", "in", "the", "full", "model", "(", "21", ",", "33", ",", "34", ",", "47", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Involving", "possible", "sources", "of", "zero", "inflation", "(", "e.g", "." ]
+  }, {
+    "sentence_tokens" : [ "covariates", ")", "reduces", "bias", "in", "parameter", "estimation", "of", "p", "*", "and", "other", "sources", "of", "uncertainty", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "our", "case", "p", "*", "is", "modelled", "with", "a", "logit", "link", "as", "a", "function", "of", "all", "climatic", "predictors", "Xi", "*", "observed", "at", "location", "s", ",", "i.e.", "logit", "(", "pi", "*", ")", "=X", "*", "T", "alpha", ",", "where", "alpha", "is", "the", "corresponding", "vector", "of", "regression", "coefficients.Bayesian", "model", "formulation", "requires", "the", "specification", "of", "prior", "distributions", "for", "all", "unknown", "parameters", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "the", "regression", "coefficients", ",", "beta", ",", "delta", "and", "alpha", ",", "a", "standard", "non", "informative", "uniform", "prior", "is", "adopted", ",", "i.e.", "beta", "~", "Unif", "(", "-", "infinity", ",", "infinity", ")", ",", "delta", "~", "Unif", "(", "-", "infinity", ",", "infinity", ")", "and", "alpha", "~", "Unif", "(", "-", "infinity", ",", "infinity", ")", ",", "respectively", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "latent", "observations", "Ui", "(", "1", ")", "introduced", "at", "each", "location", "s", "are", "assumed", "to", "be", "derived", "from", "a", "multivariate", "normal", "distribution", "with", "a", "covariance", "matrix", "Sigma", "nxn", "(", "1", ")", ",", "i.e.", "U", "(", "1", ")", "~", "MVN", "(", "0", ",", "Sigma", "nxn", "(", "1", ")", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "Sigma", "is", "a", "matrix", "with", "elements", "Sigma", "ij", "(", "1", ")", "and", "quantify", "the", "covariance", "Cov", "(", "U", ",", "U", ")", "between", "the", "pair", "of", "locations", "s", "and", "s", ",", "respectively", "." ]
+  }, {
+    "sentence_tokens" : [ "Its", "distribution", "defines", "the", "Gaussian", "spatial", "process", "." ]
+  }, {
+    "sentence_tokens" : [ "Under", "the", "assumption", "of", "stationarity", ",", "the", "spatial", "correlation", "is", "taken", "to", "be", "a", "function", "of", "distance", "between", "locations", "." ]
+  }, {
+    "sentence_tokens" : [ "An", "exponential", "correlation", "structure", "for", "the", "covariance", "matrix", "of", "the", "spatial", "process", "is", "adopted", ",", "that", "is", "Sigma", "ij", "(", "1", ")", "=", "sigma", "sp2", "(", "1", ")", "exp", "(-dij", "rho", "(", "1", ")", ")", ",", "where", "sigma", "sp2", "(", "1", ")", "is", "the", "spatial", "variance", ",", "d", "is", "the", "distance", "between", "locations", "s", "and", "s", "and", "rho", "measuring", "the", "correlation", "decay", "and", "also", "known", "as", "the", "effective", "range", "(", "3/rho", ")", "and", "estimates", "the", "distance", "where", "the", "spatial", "correlation", "is", "<", "5", "%", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "decay", "parameter", "rho", "assumed", "to", "follow", "a", "gamma", "distribution.Computation", "of", "the", "Gaussian", "process", "requires", "the", "inversion", "of", "the", "covariance", "matrix", ",", "Sigma", ",", "which", "for", "a", "very", "large", "number", "of", "locations", "is", "not", "feasible", "." ]
+  }, {
+    "sentence_tokens" : [ "To", "enable", "model", "fit", "we", "approximate", "the", "spatial", "process", "by", "a", "subset", "of", "locations", ",", "knots", ",", "{", "s", "*", ",", "i", "=", "1", ",", "..." ]
+  }, {
+    "sentence_tokens" : [ ",", "m", "}", "(", "m", "<", "<", "n", ")", "with", "latent", "observations", "U", "=(", "U", "(", "s", "*", ")", ",", "..." ]
+  }, {
+    "sentence_tokens" : [ ",", "U", "(", "s", "*", ")", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "U", "is", "considered", "to", "arise", "from", "the", "same", "Gaussian", "process", "as", "U", "and", "thus", "U", "~", "N", "(", "0", ",", "Sigma", "*", ")", ",", "where", "Sigma", "is", "the", "mxm", "covariance", "matrix", "of", "the", "sub-process", "." ]
+  }, {
+    "sentence_tokens" : [ "These", "latent", "observations", "U", "of", "the", "original", "process", "can", "be", "approximated", "by", "the", "'", "predictions", "'", "of", "the", "sub-process", "via", "the", "mean", "of", "Gaussian", "conditional", "distribution", "U", "(", "1", ")", "(", "s", ")", "|", "U", "*", "(", "1", ")", "~", "N", "(", "QT", "Sigma", "*", "-", "1U", "*", "(", "1", ")", ",", "sigma", "2-QT", "Sigma", "*-1Q", ")", ",", "that", "is", "U", "^", "=", "QT", "Sigma", "*-1U", "*", "(", "1", ")", ",", "where", "Q", "=", "Cov", "(", "U", "*", "(", "1", ")", ",", "U", "(", "1", ")", ")", "is", "an", "mxn", "matrix", "of", "the", "covariance", "functions", "between", "the", "full", "and", "the", "sub-process", "(", "48", ",", "49", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Selection", "of", "subset", "of", "location", "was", "done", "using", "the", "minimax", "space", "filling", "design", "implemented", "in", "R", "software", "(", "50", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "approach", "optimizes", "the", "selection", "of", "the", "best", "subset", "by", "minimizing", "the", "maximum", "of", "the", "nearest-neighbour", "distance", "between", "the", "original", "survey", "and", "the", "subset", "locations.The", "epsilon", "t", "(", "1", ")", "model", "temporal", "correlation", "via", "a", "stationary", "autoregressive", "process", "of", "order", "one", ",", "i.e.", "e1", "~", "Normal", "(", "0", ",", "sigma", "T2", "(", "1", ")/(", "1-gamma", "2", ")", ")", "and", "e", "|", "e", "~", "Normal", "et", "|", "e1", ",", "..." ]
+  }, {
+    "sentence_tokens" : [ "t-1Normal", "(", "gamma", "(", "1", ")", "et-1", ",", "sigma", "T2", "(", "1", ")", ")", ",", "t", ">=", "2", ",", "where", "gamma", "(", "1", ")", "is", "an", "autocorrelation", "parameter", "|", "gamma", "(", "1", ")", "|", "<", "1", "which", "adopts", "a", "bounded", "uniform", "distribution", ",", "gamma", "(", "1", ")", "~", "Unif", "[", "-1,1", "]", "and", "sigma", "T2", "(", "1", ")", "is", "the", "temporal", "error", "(", "51", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "phi", "i", "(", "1", ")", "is", "assumed", "to", "follow", "a", "normal", "distribution", "with", "mean", "zero", "and", "a", "homoscedastic", "variance", "sigma", "e2", "(", "1", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Inverse", "gamma", "priors", "are", "adopted", "for", "the", "variance", "parameters", "sigma", "sp2", "(", "1", ")", ",", "sigma", "T2", "(", "1", ")", "and", "sigma", "e2", "(", "1", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Model", "for", "SR", "." ]
+  }, {
+    "sentence_tokens" : [ "Let", "N", "and", "Z", "be", "the", "number", "of", "mosquitoes", "tested", "and", "number", "infected", ",", "respectively", "at", "location", "s", "and", "calendar", "month", "t.", "Z", "is", "assumed", "to", "arise", "from", "a", "binomial", "distribution", ",", "Z", "~", "Bin", "(", "N", ",", "pi", ")", ",", "where", "pi", "measures", "the", "SR", "at", "location", "s", "and", "time", "t." ]
+  }, {
+    "sentence_tokens" : [ "The", "regression", "function", "links", "the", "SR", "with", "other", "terms", "of", "the", "model", "(", "as", "shown", "for", "the", "density", "data", ")", "and", "is", "given", "as", "logit", "logit", "(", "pi", "it", ")", "=", "XT", "(", "2", ")", "beta", "(", "2", ")", "+", "f", "(", "t", ")", "(", "2", ")", "+", "Ui", "(", "2", ")", "+", ">", "epsilon", "t", "(", "2", ")", "+", "phi", "i", "(", "2", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "similar", "specification", "described", "for", "the", "density", "model", "is", "followed", "in", "this", "model", "." ]
+  }, {
+    "sentence_tokens" : [ "Data", "management", "and", "environmental", "lags", "." ]
+  }, {
+    "sentence_tokens" : [ "To", "facilitate", "the", "assessment", "of", "the", "seasonal", "pattern", ",", "data", "were", "summarized", "by", "location", "and", "calendar", "month", "." ]
+  }, {
+    "sentence_tokens" : [ "That", "implies", "that", "all", "repeated", "surveys", "from", "a", "specific", "location", "within", "the", "same", "month", "were", "collapsed", "(", "sum", "of", "mosquito", "density", "and", "tested", "and", "positive", ")", "to", "a", "single", "observation.To", "account", "for", "the", "environmental-lag-effect", "on", "mosquito", "density", "or", "SR", ",", "non", "spatial", "(", "negative", ")", "binomial", "models", "(", "with", "and", "without", "zero", "inflation", ")", "were", "fitted", "and", "best", "lags", "were", "assessed", "." ]
+  }, {
+    "sentence_tokens" : [ "Lags", "refer", "to", "a", "climate", "/", "environment", "value", "at", "different", "time", "intervals", "prior", "to", "the", "study", "date", "that", "might", "influence", "the", "amount", "of", "mosquitoes", "collected", "or", "the", "SR", "." ]
+  }, {
+    "sentence_tokens" : [ "Lags", "considered", "include", "the", "current", "month", "(", "month", "of", "collection", "of", "mosquitoes", ")", ";", "1/2/3", "month", "(", "s", ")", "prior", "to", "the", "collection", ";", "average", "of", "current", "and", "one", "previous", "month", ";", "average", "of", "one", "and", "two", "previous", "months", ";", "and", "lastly", "average", "of", "current", ",", "one", "and", "two", "previous", "months", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "analysis", "took", "into", "account", "seasonality", ",", "distance", "from", "water", "bodies", "and", "time", "(", "annual", "effect", ")", "which", "was", "incorporated", "as", "a", "binary", "variable", "indicating", "the", "year", "of", "study", "." ]
+  }, {
+    "sentence_tokens" : [ "Analysis", "was", "conducted", "separately", "for", "each", "species", "." ]
+  }, {
+    "sentence_tokens" : [ "Fitted", "values", "from", "models", "with", "all", "possible", "combinations", "of", "the", "environmental", "lags", "were", "calculated", "and", "plotted", "against", "the", "observed", "values", "(", "mosquito", "counts", "or", "SR", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "combination", "which", "best", "fits", "the", "data", "was", "used", "for", "further", "analysis", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "was", "implemented", "in", "STATA", "10", "(", "Stata", "Corps", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Model", "validation", "and", "prediction", "." ]
+  }, {
+    "sentence_tokens" : [ "Models", "were", "fitted", "using", "a", "training", "set", "(", "85", "%", "of", "the", "data", ")", "randomly", "selected", "from", "the", "entire", "data", "." ]
+  }, {
+    "sentence_tokens" : [ "Validation", "of", "the", "model", "performance", "was", "done", "on", "the", "test", "locations", "(", "the", "remaining", "15", "%", "of", "the", "data", ")", "The", "predictive", "ability", "of", "the", "model", "was", "assessed", "by", "specifically", "calculate", "different", "credible", "intervals", "with", "different", "probability", "coverage", "of", "the", "posterior", "predictive", "distribution", "and", "compare", "the", "percentage", "of", "test", "locations", "correctly", "predicted", "within", "these", "credible", "intervals", "(", "52", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "best", "predictive", "ability", "of", "the", "model", "is", "observed", "when", "higher", "the", "number", "of", "test", "locations", "falls", "within", "the", "narrowest", "credible", "interval", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "predicted", "power", "of", "the", "model", "at", "95", "%", "credible", "interval", "is", "reported.Using", "the", "estimates", "obtained", "from", "the", "models", ",", "SR", "and", "mosquito", "density", "were", "predicted", "for", "the", "whole", "Rufiji", "site", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "prediction", "was", "done", "at", "the", "250", "m", "resolution", "." ]
+  }, {
+    "sentence_tokens" : [ "Calculation", "of", "EIR", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "EIR", "can", "be", "estimated", "as", "a", "product", "of", "the", "SR", "and", "human", "biting", "rate", "." ]
+  }, {
+    "sentence_tokens" : [ "Depending", "on", "the", "mosquito", "collection", "method", "used", "(", "human", "landing", ",", "light", "trap", ",", "etc.", ")", ",", "the", "human", "biting", "rate", "can", "be", "correctly", "approximated", "either", "by", "the", "number", "of", "blood", "meals", "taken", "on", "humans/mosquito/day", "or", "by", "the", "mosquito", "density", "." ]
+  }, {
+    "sentence_tokens" : [ "Established", "correlation", "between", "number", "of", "mosquitoes", "captured", "by", "light", "traps", "and", "human", "landing", "catches", "is", "usually", "used", "to", "adjust", "light", "trap", "collection", "to", "equivalence", "of", "biting", "catches", "and", "avoid", "collection", "bias", "(", "53", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "this", "study", ",", "EIR", "was", "calculated", "as", "a", "product", "of", "SR", "and", "mosquito", "density", "and", "then", "adjusted", "using", "a", "correction", "factor", "of", "1.605", "to", "calibrate", "estimates", "obtained", "from", "light", "trap", "collection", "(", "28", ",", "53", ",", "54", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "At", "a", "specific", "pixel", "j", "and", "month", "t", "the", "predicted", "values", "of", "SR", ",", "pi", "^", "jt", "and", "mosquito", "density", ",", "mu", "^", "jt", "were", "obtained", "for", "A.", "funestus", "and", "A.", "gambiae", "species", "." ]
+  }, {
+    "sentence_tokens" : [ "EIR", "estimates", "representing", "the", "infectious", "bite/person/day", "were", "calculated", "as", ":", "EI", "^", "Rjt", "=", "1.605", "*", "(", "(", "pi", "^", "jtaf", "*", "mu", "^", "jtaf", ")", "+", "(", "pi", "^", "jtag", "*", "mu", "^", "jtag", ")", ")", "where", "1.605", "is", "the", "correction", "factor.The", "EI", "^", "Rjt", "was", "then", "multiplied", "by", "30.5", "and", "365", "to", "obtain", "monthly", "and", "annual", "estimates", ",", "respectively", "." ]
+  }, {
+    "sentence_tokens" : [ "Monthly", "and", "annual", "maps", "were", "produced", "to", "show", "seasonal", "and", "temporal", "trends", "of", "the", "transmission", "." ]
+  }, {
+    "sentence_tokens" : [ "Geostatistical", "model", "implementation", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "final", "model", "was", "implemented", "in", "OpenBUGS", "and", "parameters", "were", "estimated", "using", "the", "Gibbs", "sampler", "MCMC", "algorithm", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "spatial", "variance", "parameter", "was", "sampled", "directly", "from", "its", "inverse", "gamma", "full", "conditional", "distributions", "using", "Gibbs", "sampling", "(", "39", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "remaining", "parameters", "were", "simulated", "using", "Metropolis", "algorithm", "with", "a", "normal", "proposal", "distribution", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "mean", "of", "the", "proposal", "distribution", "was", "the", "parameter", "estimated", "from", "the", "previous", "iteration", "with", "a", "fixed", "variance", "(", "55", ",", "56", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Two", "separate", "chains", "were", "run", "in", "parallel", "with", "a", "total", "of", "150,000", "iterations", "each", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "burn-in", "of", "20,000", "iterations", "was", "done", "and", "the", "last", "5,000", "and", "1,000", "samples", "were", "used", "for", "posterior", "inference", "and", "prediction", ",", "respectively", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "Gelman-Rubin", "model", "diagnostic", "tool", "(", "57", ")", "was", "used", "to", "assess", "convergence", "of", "chains", "before", "summarizing", "the", "results", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "package", "'", "fields", "'", "in", "R", "was", "used", "for", "selection", "of", "knots", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "practical", "implementation", "of", "the", "geostatistical", "model", "281", "knots", "(", "2,479", "unique", "locations", ")", "were", "selected", "for", "the", "density", "data", "(", "both", "species", ")", ",", "177", "(", "415", "unique", "locations", ")", "for", "SR", "analysis", "of", "A.", "funestus", "and", "219", "(", "639", "unique", "locations", ")", "for", "SR", "of", "A.", "gambiae", "." ]
+  }, {
+    "sentence_tokens" : [ "Predictions", "and", "calculations", "of", "EIR", "were", "done", "in", "Fortran", "95", "(", "Compaq", "Visual", "Fortran", "Professional", "6.6.0", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Results", "." ]
+  }, {
+    "sentence_tokens" : [ "Data", "description", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "total", "of", "2,479", "unique", "locations", "were", "visited", "for", "the", "collection", "of", "the", "mosquitoes", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "total", "of", "15,983", "A.", "funestus", "(", "from", "18", "%", "of", "the", "surveyed", "locations", ",", "n", "=", "447", ")", "and", "17,885", "A.", "gambiae", "(", "from", "27.3", "%", "of", "the", "surveyed", "locations", ",", "n", "=", "678", ")", "mosquitoes", "were", "captured", "." ]
+  }, {
+    "sentence_tokens" : [ "About", "83", "and", "74.3", "%", "of", "the", "visits", "for", "mosquito", "collection", "for", "A.", "funestus", "and", "A.", "gambiae", "received", "zero", "counts", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "crude", "annual", "SRs", "were", "3.3", ",", "2.8", "and", "3.2", "%", "for", "Year", "1", "(", "October", "01", "-", "September", "02", ")", ",", "Year", "2", "(", "October", "02", "-", "September", "03", ")", "and", "Year", "3", "(", "October", "03", "-", "September", "04", ")", ",", "respectively", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "crude", "EIR", "were", "507", ",", "72.8", "and", "146", "infectious", "bites/person/year", "for", "3", "years", "respectively", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "Fig.", "1", ",", "the", "relation", "between", "rainfall", ",", "temperature", "and", "mosquito", "density", "is", "shown", "(", "data", "collapsed", "in", "a", "period", "of", "one", "calendar", "year", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Most", "A.", "gambiae", "mosquitoes", "were", "captured", "during", "the", "months", "of", "April", "and", "May", "while", "most", "A.", "funestus", "were", "collected", "in", "the", "period", "of", "July", "-", "September", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "number", "of", "A.", "gambiae", "collected", "was", "higher", "during", "the", "heavy", "rains", "while", "short", "rains", "with", "high", "temperature", "favour", "the", "population", "of", "A.", "funestus", "(", "Fig.", "1", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Geostatistical", "model", "results", "." ]
+  }, {
+    "sentence_tokens" : [ "Table", "1", "summarizes", "the", "results", "of", "parameter", "estimations", "from", "a", "multivariate", "geostatistical", "models", "on", "SRs", "and", "mosquito", "density.The", "effect", "of", "environmental", "variables", "differs", "significantly", "between", "species", "." ]
+  }, {
+    "sentence_tokens" : [ "Rain", "and", "temperature", "are", "the", "most", "influencing", "factors", "for", "density", "and", "sporozoite", "with", "higher", "effect", "on", "the", "A.", "funestus", "species", "." ]
+  }, {
+    "sentence_tokens" : [ "No", "significant", "effect", "of", "distance", "to", "the", "water", "bodies", "was", "obtained", "." ]
+  }, {
+    "sentence_tokens" : [ "highly", "pronounced", "with", "a", "significant", "decrease", "of", "mosquito", "population", "in", "Year", "2", "as", "compared", "to", "Year", "1", "and", "later", "an", "increase", "in", "the", "Year", "3", "as", "compared", "to", "Year", "2", "." ]
+  }, {
+    "sentence_tokens" : [ "Spatial", "ranges", "are", "quite", "high", "especially", "for", "the", "SRs", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "estimate", "of", "the", "over-dispersion", "parameter", "of", "A.", "funestus", "is", "twice", "as", "large", "as", "that", "of", "A.", "gambiae", "which", "could", "be", "influenced", "by", "the", "amount", "of", "zero", "counts", "in", "the", "data", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "the", "estimate", "of", "r", "is", "larger", "than", "1", "indicating", "that", "the", "data", "are", "not", "highly", "overdispersed", "(", "58", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Day", "temperature", "significantly", "reduces", "the", "probability", "of", "observing", "zero", "mosquito", "counts", "." ]
+  }, {
+    "sentence_tokens" : [ "Spatial", "variability", "accounts", "more", "for", "the", "total", "variability", "in", "the", "data", "as", "compared", "to", "the", "non", "spatial", "and", "temporal", "variability.For", "a", "total", "of", "63", ",", "99", ",", "368", "and", "368", "test", "locations", "selected", "for", "validation", "of", "SR-AF", ",", "SR-AG", ",", "Density-AF", "and", "Density-AG", "models", "respectively", ",", "68.3", ",", "63.6", ",", "84.1", "and", "89.9", "%", "of", "the", "locations", "were", "correctly", "predicted", "within", "95", "%", "credible", "interval", "." ]
+  }, {
+    "sentence_tokens" : [ "Gelman-Rubin", "diagnostics", "indicated", "good", "convergence", "of", "all", "model", "parameters", "." ]
+  }, {
+    "sentence_tokens" : [ "Mapping", "of", "EIR", "." ]
+  }, {
+    "sentence_tokens" : [ "Figure", "2", "presents", "selected", "EIR", "maps", "for", "the", "Rufiji", "DSS", "site", "for", "the", "A.", "funestus", "and", "A.", "gambiae", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "southern", "part", "of", "the", "DSS", "showed", "high", "transmission", "throughout", "the", "years", "." ]
+  }, {
+    "sentence_tokens" : [ "High", "transmission", "was", "observed", "immediately", "at", "the", "onset", "of", "rains", ",", "especially", "during", "the", "heavy", "rain", "period", "." ]
+  }, {
+    "sentence_tokens" : [ "At", "the", "end", "of", "the", "rainy", "season", "(", "May", "-", "June", ")", ",", "the", "transmission", "spread", "throughout", "the", "region", "(", "Fig.", "2", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "Fig.", "3", ",", "monthly", "time", "series", "(", "median", ")", "predicted", "EIR", "are", "plotted", "for", "the", "entire", "study", "period", "." ]
+  }, {
+    "sentence_tokens" : [ "Attributes", "of", "each", "species", "are", "also", "indicated.The", "transmission", "starts", "peaking", "in", "the", "month", "of", "April", "(", "just", "after", "rains", ")", "and", "gradually", "drops", "in", "July", "(", "first", "year", "of", "the", "study", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "There", "was", "a", "reduction", "in", "the", "second", "year", "of", "the", "study", "and", "EIR", "increased", "again", "during", "the", "last", "year", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "similar", "monthly", "trend", "is", "observed", "across", "years", ",", "which", "emphasizes", "seasonality", "." ]
+  }, {
+    "sentence_tokens" : [ "A.", "funestus", "are", "more", "prominent", "during", "the", "dry", "months", "while", "A.", "gambiae", "are", "more", "prominent", "during", "the", "rainy", "periods", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "spatial", "temporal", "distribution", "of", "year-by-year", "EIR", "is", "shown", "in", "Fig.", "4", "with", "maps", "of", "prediction", "error", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "prediction", "error", "for", "the", "EIR", "estimates", "was", "obtained", "my", "multiplying", "the", "prediction", "errors", "obtained", "from", "SR", "and", "density", "models.Patterns", "in", "Fig.", "4", "show", "that", "few", "surveyed", "households", "are", "located", "in", "areas", "with", "EIR", "<", "1", ";", "however", ",", "a", "large", "proportion", "of", "household", "presented", "high", "transmission", "intensity", "." ]
+  }, {
+    "sentence_tokens" : [ "Higher", "prediction", "errors", "are", "seen", "in", "areas", "with", "few", "surveyed", "locations", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "errors", "also", "capture", "the", "effect", "of", "heterogeneity", "arising", "from", "unmeasured", "factors", "." ]
+  }, {
+    "sentence_tokens" : [ "Population", "adjusted", "EIR", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "annual", "and", "species", "specific", "population", "adjusted", "EIR", "were", "calculated", "by", "averaging", "predicted", "inoculation", "rates", "at", "all", "households", "(", "N", "=", "14,516", ")", "within", "the", "RDSS", "(", "Fig.", "5", ")", "excluding", "all", "of", "the", "other", "pixels", "." ]
+  }, {
+    "sentence_tokens" : [ "Results", "are", "presented", "in", "Table", "2", "." ]
+  }, {
+    "sentence_tokens" : [ "Overall", "transmission", "intensity", "reduced", "significantly", "during", "Year", "2", "and", "3", "as", "compared", "to", "Year", "1", "of", "the", "study", "." ]
+  }, {
+    "sentence_tokens" : [ "A.", "funestus", "was", "the", "main", "responsible", "vector", "for", "transmission", "in", "the", "first", "(", "68", "%", ")", "and", "second", "(", "78", "%", ")", "year", ",", "while", "the", "last", "year", "transmission", "was", "mainly", "driven", "by", "A.", "gambiae", "(", "63", "%", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "addition", ",", "we", "assessed", "the", "spatial", "shift", "(", "distribution", ")", "of", "transmission", "intensity", "over", "time", ",", "as", "illustrated", "in", "Table", "3", "." ]
+  }, {
+    "sentence_tokens" : [ "EIR", "were", "categorized", "into", "five", "transmission", "intensities", "which", "were", ":", "no", "transmission", "(", "EIR", "=0", ")", ",", "very", "low", "(", "EIR", ">=", "0.0", "-", "1", ")", ",", "low", "(", "EIR", ">=", "1", "-", "10", ")", ",", "average", "(", "EIR", ">=", "10", "-", "100", ")", ",", "and", "high", "(", "EIR", ">=", "100", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "change", "in", "the", "percentage", "of", "households", "exposed", "to", "a", "specific", "level", "of", "transmission", "was", "then", "studied.The", "proportion", "of", "households", "predicted", "with", "very", "low", "transmission", "intensity", "increased", "between", "the", "first", "year", "and", "the", "third", "year", "of", "the", "study", ",", "from", "4.0", "to", "7.2", "%", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "significant", "reduction", "(", "over", "68", "%", ")", "of", "locations", "with", "high", "transmission", "is", "seen", "during", "the", "last", "year", "of", "the", "study", "(", "i.e.", "12.6", "%", "in", "the", "first", "year", "to", "4", "%", "in", "the", "third", "year", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Discussion", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "study", ",", "we", "assessed", "spatial", "-", "temporal", "variation", "and", "heterogeneity", "of", "malaria", "transmission", "in", "the", "Rufiji", "DSS", "site", "using", "a", "large", "geo", "referenced", "biweekly", "entomological", "dataset", "collected", "over", "3", "years", ",", "and", "rigorous", "Bayesian", "geostatistical", "models", "." ]
+  }, {
+    "sentence_tokens" : [ "Our", "work", "is", "amongst", "the", "few", "to", "address", "spatial", "modelling", "of", "Entomology", "inoculation", "rate", "(", "EIR", ")", "based", "on", "sparse", "data", "by", "applying", "current", "Bayesian", "methodologies", "approximating", "spatial", "processes", "for", "large", "data", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "INDEPTH-MTIMBA", "data", ",", "which", "was", "used", "in", "our", "application", ",", "is", "the", "most", "comprehensive", "entomological", "database", "in", "Africa", "." ]
+  }, {
+    "sentence_tokens" : [ "Bayesian", "spatio-temporal", "binomial", "and", "zero", "inflated", "negative", "binomial", "regression", "models", "were", "developed", "to", "produce", "monthly", "maps", "of", "EIR", "taking", "into", "account", "the", "malaria", "-", "climate", "relation", "and", "seasonality", "in", "transmission", "(", "35", ",", "36", ",", "59", "-", "61", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Geostatistical", "models", "have", "been", "widely", "used", "in", "malaria", "mapping", "in", "recent", "years", "(", "3", ",", "38", ",", "52", ",", "62", "-", "64", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Most", "of", "these", "analysis", "involved", "standard", "geostatistical", "models", "which", "are", "relevant", "for", "a", "moderate", "number", "of", "locations", "." ]
+  }, {
+    "sentence_tokens" : [ "Computation", "involved", "in", "these", "models", "is", "not", "feasible", "for", "data", "collected", "over", "a", "large", "number", "of", "survey", "locations", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "study", ",", "we", "used", "methods", "proposed", "by", "Barnejee", "et", "al.", "(", "40", ")", "and", "Finley", "et", "al.", "(", "42", ")", "to", "approximate", "the", "spatial", "process", "using", "a", "subset", "of", "survey", "locations", "selected", "via", "space", "filling", "design", "implemented", "in", "R", "software", "." ]
+  }, {
+    "sentence_tokens" : [ "Additive", "temporal", "correlations", "with", "autoregressive", "structure", "were", "also", "incorporated", "in", "all", "models", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "predictive", "power", "of", "the", "model", "suggests", "good", "performance", "of", "the", "spatial", "correlation", "approximated", "from", "a", "subset", "of", "observed", "location", "." ]
+  }, {
+    "sentence_tokens" : [ "That", "might", "indicate", "that", "the", "subset", "selected", "was", "significantly", "appropriate", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "work", "adds", "to", "the", "few", "in", "literature", "that", "indirect", "evaluates", "performance", "of", "using", "subsets", "to", "approximate", "the", "spatial", "process", "in", "real-life", "field", "data.Changes", "in", "climate", "conditions", ",", "natural", "inhabitants", "and", "other", "human", "activities", ",", "which", "depend", "on", "the", "environment", ",", "alter", "the", "intensity", "of", "malaria", "transmission", "(", "21", ",", "65", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Our", "results", "depict", "temporal", "and", "seasonal", "variation", "in", "EIR", "along", "the", "study", "period", "and", "study", "area", "." ]
+  }, {
+    "sentence_tokens" : [ "Transmission", "was", "higher", "during", "the", "rainy", "periods", "with", "high", "temperatures", "and", "very", "low", "during", "the", "dry", "season", "or", "year", "." ]
+  }, {
+    "sentence_tokens" : [ "Two", "species", "A.", "funestus", "and", "A.", "gambiae", "are", "mainly", "responsible", "for", "malaria", "transmission", "in", "this", "region", "." ]
+  }, {
+    "sentence_tokens" : [ "Differences", "on", "the", "effect", "of", "environmental", "factors", "on", "the", "mosquito", "abundance", "and", "SRs", "of", "the", "species", "were", "observed", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "population", "of", "A.", "gambiae", "increases", "at", "the", "onset", "of", "heavy", "rains", "while", "that", "of", "A.", "funestus", "peaks", "during", "the", "short", "rains", "season", "." ]
+  }, {
+    "sentence_tokens" : [ "Similar", "results", "have", "been", "reported", "in", "the", "Kilombero", "valley", "and", "other", "areas", "with", "similar", "climate", "in", "Africa", "and", "are", "associated", "with", "the", "preferential", "conditions", "of", "breeding", "sites", "of", "these", "species", "(", "13", ",", "16", ",", "66", "-", "70", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "study", ",", "which", "assessed", "spatio-temporal", "variation", "of", "EIR", "in", "Navrongo", "DSS", ",", "showed", "similar", "patterns", "of", "seasonality", "that", "differed", "by", "species", "(", "28", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Highly", "significant", "effects", "of", "temperature", "on", "the", "SR", "and", "density", "of", "A.", "funestus", "were", "observed", "." ]
+  }, {
+    "sentence_tokens" : [ "Contrary", "to", "A.", "gambiae", "which", "has", "relatively", "exophilic", "behaviour", ",", "this", "species", "is", "strictly", "endophilic", ",", "which", "could", "facilitate", "choice", "of", "conducive", "a", "resting", "environment", "favouring", "the", "gonotrophic", "cycle", "resulting", "in", "higher", "survival", "and", "hence", "longer", "infectivity", "(", "71", "-", "73", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Knowledge", "of", "these", "characteristics", "can", "be", "important", "for", "understanding", "disease", "dynamics", "and", "for", "efficient", "implementation", "of", "interventions", "(", "5", ",", "6", ",", "66", ",", "74", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "There", "was", "considerable", "variation", "over", "short", "distances", "in", "the", "intensity", "of", "transmission", "." ]
+  }, {
+    "sentence_tokens" : [ "Small-scale", "variations", "in", "malaria", "transmission", "are", "common", "in", "sub-Saharan", "Africa", "and", "create", "complexity", "in", "implementing", "strategies", "to", "combat", "malaria", "(", "8,", "28", ",", "59", ",", "75", "-", "77", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "spatial", "correlation", "was", "still", "present", "over", "a", "substantial", "distance", "and", "the", "spatial", "variation", "comprised", "of", "about", "90", "%", "of", "the", "total", "data", "variance", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "spatial", "correlation", "arises", "partly", "due", "to", "spatial", "pattern", "in", "environmental", "drivers", "of", "transmission", ",", "partly", "due", "to", "effects", "of", "limited", "mosquito", "dispersion", ",", "and", "is", "also", "affected", "by", "human", "factors", "such", "as", "migration", "and", "human", "population", "densities", "(", "41", ",", "42", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "had", "an", "abundance", "of", "data", "on", "both", "mosquito", "and", "human", "populations", ";", "however", ",", "due", "to", "the", "relative", "small", "DSS", "area", ",", "it", "is", "difficult", "to", "separate", "the", "contributions", "of", "these", "different", "factors", "to", "the", "spatial", "correlation", ",", "which", "explains", "the", "higher", "spatial", "range", "." ]
+  }, {
+    "sentence_tokens" : [ "Such", "heterogeneity", "arising", "from", "unmeasured", "factors", "is", "captured", "by", "the", "prediction", "errors.The", "methodology", "described", "in", "this", "study", "allows", "estimation", "of", "EIR", "while", "adjusting", "for", "both", ",", "temporal", "and", "small", "area", "spatial", "variations", "in", "a", "systematic", "and", "thorough", "manner", "." ]
+  }, {
+    "sentence_tokens" : [ "It", "acknowledges", "key", "characteristic", "of", "the", "data", ",", "considers", "computation", "difficulties", "and", "correlation", "among", "potential", "drivers", "of", "malaria", "transmission", "." ]
+  }, {
+    "sentence_tokens" : [ "It", "could", "be", "seen", "that", "the", "crude", "EIR", "were", "underestimated", "as", "compared", "to", "model", "based", "estimations", "by", "over", "55", "%", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "underlines", "the", "importance", "of", "utilizing", "efficient", "methodologies", "while", "estimating", "epidemiological", "parameters", "to", "allow", "for", "proper", "decisions.Our", "formulation", "allows", "further", "expansion", "and", "easy", "incorporation", "of", "other", "covariates", "in", "the", "main", "structure", "of", "the", "model", "either", "as", "specific", "covariates", "or", "their", "interaction", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "complex", "component", "of", "our", "proposal", "is", "how", "to", "separately", "model", "SR", "and", "density", "data", ",", "incorporate", "seasonality", ",", "choosing", "environment", "lags", "and", "lastly", "approximate", "the", "spatial", "correlation", "when", "the", "large", "number", "of", "location", "has", "been", "observed", "." ]
+  }, {
+    "sentence_tokens" : [ "All", "these", "have", "been", "worked", "on", "." ]
+  }, {
+    "sentence_tokens" : [ "Moreover", ",", "DSS", "sites", "including", "Rufiji", ",", "collected", "comprehensive", "records", "of", "all", "cause", "and", "disease", "mortality", "in", "the", "human", "population", "at", "the", "time", "of", "this", "entomological", "surveillance", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "exposure", "surfaces", "estimated", "using", "this", "approach", "can", "be", "linked", "to", "mortality", "data", "to", "assess", "the", "malaria", "specific", "mortality", "burden", "." ]
+  }, {
+    "sentence_tokens" : [ "Through", "that", ",", "much", "more", "accurate", "estimates", "of", "the", "benefits", "to", "be", "gained", "by", "reducing", "malaria", "transmission", "can", "be", "estimated", "than", "if", "it", "would", "have", "been", "possible", "from", "analyses", "that", "aggregate", "EIR", "over", "large", "areas", "and", "time", "periods", "or", "those", "fitted", "assuming", "normally", "distributed", "EIR", "." ]
+  } ]
+}

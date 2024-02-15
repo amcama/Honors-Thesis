@@ -1,63 +1,675 @@
-[ {
-  "sentence_tokens" : [ "We", "defined", "the", "difference", "between", "the", "retrieved", "LST", "and", "the", "calculated", "LST", "as", "Delta", "LST", ",", "where", "the", "inverted", "LST", "is", "obtained", "by", "inversion", "of", "remote", "sensing", "images", ",", "and", "the", "calculated", "LST", "is", "calculated", "by", "the", "functional", "relationship.In", "order", "to", "analyze", "the", "factors", "causing", "Delta", "LST", ",", "this", "paper", "used", "the", "average", "value", "of", "NDVI", "in", "the", "height", "groups", "as", "the", "vegetation", "environment", "of", "this", "group", "." ],
-  "event_indices" : [ 43, 44, 45, 46 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 43, 44 ],
-  "controlled_indices" : [ 45, 46 ],
-  "trigger_indices" : [ 44, 45 ],
-  "rule_name" : "Positive_activation_syntax_1_verb, nounPhraseMatch, strictHeadMatch",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "The", "phenomenon", "that", "increasing", "people", "have", "been", "exposed", "to", "heat", "environments", "and", "suffered", "from", "extreme", "heat", "has", "aroused", "concerns", "of", "governments", "around", "the", "world", "[", "7", "]", "." ],
-  "entity_one_indices" : [ 15, 16 ],
-  "entity_two_indices" : [ 9, 10 ]
-}, {
-  "sentence_tokens" : [ "Two", "main", "types", "of", "data", "--", "vector", "data", "and", "raster", "data", "--", "were", "used", "in", "this", "paper", ":", "Vector", "data", ":", "To", "extract", "the", "building", "density", "and", "building", "height", "in", "the", "study", "area", ",", "the", "community", "outline", "data", "and", "building", "outline", "data", "of", "Beijing", "'", "s", "central", "urban", "area", "in", "2017", "were", "selected.Raster", "data", ":", "To", "extract", "the", "NDVI", "and", "LST", "in", "the", "study", "area", ",", "we", "selected", "the", "Landsat", "8", "operational", "land", "imager", "and", "thermal", "infrared", "sensor", "(", "TIRS", ")", "images", "data", "(", "Table", "1", ")", "." ],
-  "entity_one_indices" : [ 60, 61 ],
-  "entity_two_indices" : [ 58, 59 ]
-}, {
-  "sentence_tokens" : [ "There", "were", "two", "effective", "methods", ":", "the", "first", "algorithm", "was", "the", "automatic", "cloud", "removal", "method", "(", "ACRM", ")", ",", "which", "employed", "a", "linear", "regression", "between", "the", "different", "spectral", "band", "sand", "the", "cirrus", "band", ";", "the", "second", "algorithm", "was", "an", "independent", "component", "analysis", "(", "ICA", ")", ",", "which", "considered", "the", "noise", "(", "clouds", ")", "as", "part", "of", "independent", "components", "applied", "over", "the", "study", "area", "." ],
-  "entity_one_indices" : [ 43, 44 ],
-  "entity_two_indices" : [ 29, 30 ]
-}, {
-  "sentence_tokens" : [ "Correlation", "Analysis", "between", "NDVI", "and", "LST", "." ],
-  "entity_one_indices" : [ 5, 6 ],
-  "entity_two_indices" : [ 3, 4 ]
-}, {
-  "sentence_tokens" : [ "With", "the", "development", "of", "urbanization", ",", "the", "phenomenon", "of", "the", "urban", "heat", "island", "has", "become", "more", "obvious", ",", "and", "the", "change", "of", "LST", "has", "a", "great", "relationship", "with", "a", "city", "'", "s", "environment", "." ],
-  "entity_one_indices" : [ 22, 23 ],
-  "entity_two_indices" : [ 11, 12 ]
-}, {
-  "sentence_tokens" : [ "This", "paper", "assumed", "that", "the", "change", "of", "Delta", "LST", "was", "entirely", "caused", "by", "Delta", "NDVI", "and", "that", "the", "correlation", "between", "the", "two", "was", "the", "cooling", "effect", "of", "vegetation", "." ],
-  "entity_one_indices" : [ 13, 14 ],
-  "entity_two_indices" : [ 7, 8 ]
-}, {
-  "sentence_tokens" : [ "LST0", "represents", "the", "LST", "value", "calculated", "from", "the", "functional", "relationship", ",", "and", "Delta", "LST", "indicates", "the", "difference", "between", "LSTt", "and", "LST0.In", "this", "article", ",", "if", "the", "hypothesis", "is", "valid", ",", "it", "means", "that", "other", "factors", "have", "little", "impact", "on", "the", "cooling", "effect", "of", "vegetation", "except", "for", "building", "density", "in", "the", "case", "of", "calculating", "the", "cooling", "effect", "of", "vegetation", "grouped", "by", "building", "density", "." ],
-  "entity_one_indices" : [ 12, 13 ],
-  "entity_two_indices" : [ 0, 1 ]
-}, {
-  "sentence_tokens" : [ "Comparing", "LST", "and", "NDVI", ",", "the", "LST", "of", "the", "region", "with", "high", "NDVI", "value", "was", "smaller", ",", "as", "shown", "in", "the", "blue", "region", "." ],
-  "entity_one_indices" : [ 3, 4 ],
-  "entity_two_indices" : [ 1, 2 ]
-}, {
-  "sentence_tokens" : [ "Due", "to", "the", "significant", "negative", "linear", "correlation", "between", "NDVI", "and", "LST", ",", "the", "k", "and", "slope", "of", "the", "linear", "correlation", "were", "considered", "to", "be", "the", "cooling", "effect", "of", "vegetation", "on", "LST", "(", "Table", "A1", "in", "Appendix", "A", ")", "." ],
-  "entity_one_indices" : [ 10, 11 ],
-  "entity_two_indices" : [ 8, 9 ]
-}, {
-  "sentence_tokens" : [ "Within", "the", "building", "density", "of", "0.35", "-", "0.45", ",", "both", "Figure", "8c,", "d", "showed", "that", "k", "(", "middle", ")", "was", "higher", "than", "the", "NDVI", "." ],
-  "entity_one_indices" : [ 23, 24 ],
-  "entity_two_indices" : [ 10, 11, 12, 13 ]
-}, {
-  "sentence_tokens" : [ "PHOENICS", "can", "accurately", "simulate", "the", "airflow", "phenomenon", "of", "the", "research", "object", "and", "accurately", "simulate", "the", "airflow", ",", "air", "quality", ",", "heat", "transfer", ",", "pollution", "and", "comfort", "of", "the", "ventilation", "system", "[", "48", "]", "." ],
-  "entity_one_indices" : [ 20, 21 ],
-  "entity_two_indices" : [ 0, 1 ]
-}, {
-  "sentence_tokens" : [ "Point", "1", ":", "The", "comparison", "of", "P1", "and", "P2", "showed", "that", "the", "smaller", "the", "building", "distance", ",", "the", "larger", "the", "wind", "speed", "." ],
-  "entity_one_indices" : [ 8, 9 ],
-  "entity_two_indices" : [ 6, 7 ]
-}, {
-  "sentence_tokens" : [ "Many", "studies", "have", "shown", "that", "LST", "was", "impacted", "by", "building", "characteristics", "and", "vegetation", "distribution", ",", "but", "the", "interaction", "between", "the", "factors", "has", "rarely", "been", "paid", "attention", "to", "." ],
-  "entity_one_indices" : [ 20, 21 ],
-  "entity_two_indices" : [ 5, 6 ]
-} ]
+{
+  "regulations" : [ {
+    "sentence_tokens" : [ "We", "defined", "the", "difference", "between", "the", "retrieved", "LST", "and", "the", "calculated", "LST", "as", "Delta", "LST", ",", "where", "the", "inverted", "LST", "is", "obtained", "by", "inversion", "of", "remote", "sensing", "images", ",", "and", "the", "calculated", "LST", "is", "calculated", "by", "the", "functional", "relationship.In", "order", "to", "analyze", "the", "factors", "causing", "Delta", "LST", ",", "this", "paper", "used", "the", "average", "value", "of", "NDVI", "in", "the", "height", "groups", "as", "the", "vegetation", "environment", "of", "this", "group", "." ],
+    "event_indices" : [ 43, 44, 45, 46 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 43, 44 ],
+    "controlled_indices" : [ 45, 46 ],
+    "trigger_indices" : [ 44, 45 ],
+    "rule_name" : "Positive_activation_syntax_1_verb, nounPhraseMatch, strictHeadMatch",
+    "rule" : null
+  } ],
+  "hardInstances" : [ {
+    "sentence_tokens" : [ "We", "defined", "the", "difference", "between", "the", "retrieved", "LST", "and", "the", "calculated", "LST", "as", "Delta", "LST", ",", "where", "the", "inverted", "LST", "is", "obtained", "by", "inversion", "of", "remote", "sensing", "images", ",", "and", "the", "calculated", "LST", "is", "calculated", "by", "the", "functional", "relationship.In", "order", "to", "analyze", "the", "factors", "causing", "Delta", "LST", ",", "this", "paper", "used", "the", "average", "value", "of", "NDVI", "in", "the", "height", "groups", "as", "the", "vegetation", "environment", "of", "this", "group", "." ],
+    "entities_indices" : [ [ 13, 14 ], [ 55, 56 ] ]
+  } ],
+  "withoutRegulations" : [ {
+    "sentence_tokens" : [ "Due", "to", "the", "significant", "negative", "linear", "correlation", "between", "NDVI", "and", "LST", ",", "the", "k", "and", "slope", "of", "the", "linear", "correlation", "were", "considered", "to", "be", "the", "cooling", "effect", "of", "vegetation", "on", "LST", "(", "Table", "A1", "in", "Appendix", "A", ")", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "Impacts", "of", "Building", "Features", "on", "the", "Cooling", "Effect", "of", "Vegetation", "in", "Community", "Based", "MicroClimate", ":", "Recognition", ",", "Measurement", "and", "Simulation", "from", "a", "Case", "Study", "of", "Beijing", "." ],
+    "entities_indices" : [ [ 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "reasonable", "building", "structure", "will", "provide", "a", "powerful", "aid", "to", "alleviate", "the", "urban", "heat", "island", "." ],
+    "entities_indices" : [ [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "Comparing", "the", "building", "density", "with", "the", "LST", ",", "it", "was", "found", "that", "the", "building", "density", "gradually", "decreased", "from", "the", "center", "to", "the", "periphery", "of", "the", "study", "area", ",", "and", "the", "LST", "maintained", "a", "synchronous", "change", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "Nevertheless", ",", "the", "characteristics", "and", "distributions", "of", "buildings", "within", "a", "city", "are", "important", "factors", "that", "determine", "heat", "transfer", "." ],
+    "entities_indices" : [ [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "Land", "cover", "changes", "directly", "affect", "the", "accumulation", "and", "dispersal", "of", "heat", "on", "the", "city", "surface", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "PHOENICS", "can", "accurately", "simulate", "the", "airflow", "phenomenon", "of", "the", "research", "object", "and", "accurately", "simulate", "the", "airflow", ",", "air", "quality", ",", "heat", "transfer", ",", "pollution", "and", "comfort", "of", "the", "ventilation", "system", "[", "48", "]", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "paper", "assumed", "that", "the", "change", "of", "Delta", "LST", "was", "entirely", "caused", "by", "Delta", "NDVI", "and", "that", "the", "correlation", "between", "the", "two", "was", "the", "cooling", "effect", "of", "vegetation", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "Comparing", "LST", "and", "NDVI", ",", "the", "LST", "of", "the", "region", "with", "high", "NDVI", "value", "was", "smaller", ",", "as", "shown", "in", "the", "blue", "region", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "comparison", "of", "P2", ",", "P3", ",", "and", "P4", "showed", "that", "appropriate", "distribution", "of", "buildings", "was", "required", ";", "otherwise", ",", "too", "many", "buildings", "could", "cause", "wind", "speed", "to", "decrease", "or", "even", "stop", "(", "Table", "2", ")", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 5, 6 ], [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "Absorbing", "and", "releasing", "solar", "energy", ",", "a", "large", "amount", "of", "urban", "heat", "comes", "from", "solar", "energy", "." ],
+    "entities_indices" : [ [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "Within", "the", "building", "density", "of", "0.35", "-", "0.45", ",", "both", "Figure", "8c,", "d", "showed", "that", "k", "(", "middle", ")", "was", "higher", "than", "the", "NDVI", "." ],
+    "entities_indices" : [ [ 10, 11, 12, 13 ], [ 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "addition", "to", "the", "absorption", "of", "solar", "energy", ",", "the", "accumulation", "of", "urban", "heat", "comes", "from", "the", "conversion", "of", "other", "energy", "." ],
+    "entities_indices" : [ [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "Ventilation", "is", "one", "of", "the", "important", "measures", "to", "alleviate", "urban", "heat", "islands", "[", "26", "]", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "When", "the", "building", "density", "was", "0.4", "-", "0.5", ",", "Figure", "8a", ",", "b", "both", "showed", "that", "the", "k", "(", "low", ")", "was", "higher", "than", "NDVI", "." ],
+    "entities_indices" : [ [ 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "Due", "to", "the", "accumulation", "of", "heat", ",", "the", "urban", "environment", "and", "human", "health", "are", "threatened", "." ],
+    "entities_indices" : [ [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "Thus", ",", "cities", "have", "become", "the", "main", "living", "environment", "for", "people", ",", "and", ",", "as", "such", ",", "it", "is", "significant", "to", "study", "the", "mechanism", "of", "the", "urban", "heat", "island", "." ],
+    "entities_indices" : [ [ 27, 28 ] ]
+  }, {
+    "sentence_tokens" : [ "Research", "Framework", "." ],
+    "entities_indices" : [ [ 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "Using", "high", "albedo", "materials", ",", "pavements", ",", "green", "vegetation", ",", "green", "roofs", ",", "urban", "planning", ",", "pervious", "pavements", ",", "shade", "trees", ",", "and", "the", "existence", "of", "water", "bodies", "in", "city", "areas", "are", "potential", "urban", "heat", "island", "mitigation", "strategies", "[", "25,26,27,28,29", "]", "." ],
+    "entities_indices" : [ [ 34, 35 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "formula", "for", "calculating", "building", "density", "is", "as", "follows", "(", "1", ")", ":(", "1", ")", "d", "=", "sum", "i", "=", "1nSiS", "where", "d", "is", "the", "building", "density", ",", "Si", "is", "the", "area", "of", "the", "buildings", "within", "a", "block", ",", "and", "S", "is", "the", "total", "area", "of", "a", "block", "." ],
+    "entities_indices" : [ [ 28, 29 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "comparison", "of", "P2", ",", "P3", ",", "and", "P4", "showed", "that", "when", "the", "building", "spacing", "was", "the", "same", ",", "the", "distribution", "of", "buildings", "behind", "could", "impact", "the", "wind", "speed", "at", "point", "1", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 5, 6 ], [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "order", "to", "analyze", "the", "impact", "of", "building", "characteristics", "on", "the", "cooling", "effect", "of", "vegetation", ",", "it", "is", "necessary", "to", "eliminate", "other", "factors", "in", "the", "study", "area", "." ],
+    "entities_indices" : [ [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "Two", "main", "types", "of", "data", "--", "vector", "data", "and", "raster", "data", "--", "were", "used", "in", "this", "paper", ":", "Vector", "data", ":", "To", "extract", "the", "building", "density", "and", "building", "height", "in", "the", "study", "area", ",", "the", "community", "outline", "data", "and", "building", "outline", "data", "of", "Beijing", "'", "s", "central", "urban", "area", "in", "2017", "were", "selected.Raster", "data", ":", "To", "extract", "the", "NDVI", "and", "LST", "in", "the", "study", "area", ",", "we", "selected", "the", "Landsat", "8", "operational", "land", "imager", "and", "thermal", "infrared", "sensor", "(", "TIRS", ")", "images", "data", "(", "Table", "1", ")", "." ],
+    "entities_indices" : [ [ 58, 59 ], [ 60, 61 ] ]
+  }, {
+    "sentence_tokens" : [ "With", "the", "development", "of", "urbanization", ",", "the", "phenomenon", "of", "the", "urban", "heat", "island", "has", "become", "more", "obvious", ",", "and", "the", "change", "of", "LST", "has", "a", "great", "relationship", "with", "a", "city", "'", "s", "environment", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "Quite", "some", "work", "in", "this", "direction", "has", "been", "carried", "out", "by", "Ricci", "et", "al.", "[", "4,5,6", "]", "CFD", "simulations", "and", "full-scale", "measurements", "." ],
+    "entities_indices" : [ [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "average", "value", "of", "NDVI", "for", "the", "low-rise", "building", "group", "in", "the", "study", "area", "was", "0.166", ",", "the", "middle-rise", "building", "group", "was", "0.186", ",", "and", "the", "high-rise", "building", "group", "was", "0.163", "." ],
+    "entities_indices" : [ [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "Densely", "distributed", "buildings", "with", "low", "rise", "can", "easily", "become", "the", "largest", "heat", "source", "in", "a", "city", "[", "32,33", "]", ";", "we", "later", "explore", "possible", "limitations", "." ],
+    "entities_indices" : [ [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "sustainable", "development", "of", "the", "environment", "is", "also", "affected", "by", "the", "increase", "of", "factors", "with", "high", "photochemical", "reaction", "levels", ",", "such", "as", "the", "ozone", "[", "11,12", "]", "." ],
+    "entities_indices" : [ [ 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "Point", "1", ":", "The", "comparison", "of", "P1", "and", "P2", "showed", "that", "the", "smaller", "the", "building", "distance", ",", "the", "larger", "the", "wind", "speed", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "Such", "change", "of", "surface", "roughness", "regulates", "or", "even", "restructures", "local", "meteorological", "conditions", ",", "i.e", ".,", "cumulative", "urban", "heat", "from", "wildness", "to", "urban", "areas", "." ],
+    "entities_indices" : [ [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "(", "2", ")", "Delta", "NDVI", "=", "NDVIt", "-", "NDVI0", "(", "3", ")", "Delta", "LST", "=", "LSTt", "-", "LST0", "where", "NDVIt", "indicates", "the", "NDVI", "value", "of", "blocks", ",", "NDVI0", "indicates", "the", "average", "NDVI", "value", "in", "the", "different", "building", "height", "zones", ",", "Delta", "NDVI", "indicates", "the", "difference", "between", "NDVI", "and", "NDVI0", ",", "LSTt", "indicates", "the", "true", "LST", "of", "blocks", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 12, 13 ], [ 22, 23 ], [ 27, 28 ], [ 40, 41 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "conclusion", "provides", "powerful", "help", "for", "urban", "planning", "and", "mitigating", "the", "impact", "of", "the", "thermal", "environment", "on", "human", "health", "." ],
+    "entities_indices" : [ [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "Calculation", "of", "NDVI", "." ],
+    "entities_indices" : [ [ 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "Many", "studies", "have", "shown", "that", "LST", "was", "impacted", "by", "building", "characteristics", "and", "vegetation", "distribution", ",", "but", "the", "interaction", "between", "the", "factors", "has", "rarely", "been", "paid", "attention", "to", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "paper", "discovered", "the", "characteristics", "of", "wind", "speed", "changes", "hidden", "under", "the", "building", "features", ",", "as", "well", "as", "its", "impact", "on", "LST", "." ],
+    "entities_indices" : [ [ 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "Correlation", "Analysis", "between", "NDVI", "and", "LST", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "k", "(", "high", ")", "and", "NDVI", "in", "Figure", "8e", ",", "f", "had", "the", "same", "changing", "trend", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "After", "improving", "ACRM", ",", "the", "NDVI", "was", "computed", "using", "ACRM", ",", "which", "showed", "a", "better", "correlation", "than", "ICA", "with", "the", "MODIS", "NDVI", "product", "[", "39", "]", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 17, 18 ], [ 20, 21, 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "Moreover", ",", "the", "wind", "speeds", "of", "P2", ",", "P3", ",", "and", "P1", "were", "not", "much", "different", ",", "showing", "that", "wind", "speed", "could", "be", "minimized", "only", "when", "there", "were", "a", "large", "number", "of", "buildings", "(", "Table", "2", ")", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 8, 9 ], [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "It", "should", "be", "noted", "that", "the", "comparison", "of", "k", "and", "NDVI", "in", "this", "article", "was", "not", "for", "numerical", "values", "but", "for", "change", "trends", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "Beijing", "'", "s", "climate", "is", "typically", "northern", "temperate", "semi", "humid", "continental", "monsoon", "climate", ",", "i.e", ".,", "hot", "and", "rainy", "in", "summer", ",", "cold", "and", "dry", "in", "winter", ",", "and", "short", "in", "spring", "and", "autumn", "." ],
+    "entities_indices" : [ [ 31, 32 ] ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "research", "on", "mitigating", "urban", "heat", "islands", "has", "become", "the", "focus", "of", "scholarly", "attention", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "seasonal", "distribution", "of", "precipitation", "is", "very", "uneven.Because", "the", "distribution", "of", "buildings", "is", "compact", "and", "the", "phenomenon", "of", "urban", "heat", "islands", "is", "obvious", ",", "making", "it", "suitable", "for", "the", "research", "of", "the", "urban", "thermal", "environment", ",", "the", "area", "within", "the", "5th", "ring", "road", "of", "Beijing", "was", "selected", "as", "the", "study", "area", "(", "Figure", "1", ")", "." ],
+    "entities_indices" : [ [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "average", "wind", "speed", "was", "significantly", "negatively", "correlated", "with", "urban", "heat", "island", "intensity", "and", "was", "part", "of", "planning", "the", "distribution", "of", "buildings", "to", "ensure", "adequate", "ventilation", "indoors", "and", "outdoors", "[", "30,47", "]", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "Affected", "by", "the", "thermal", "environment", ",", "the", "morbidity", "and", "mortality", "of", "heat", "stress", "and", "heat", "related", "diseases", "have", "increased", "[", "8,9,10", "]", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 14, 15 ], [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "Further", ",", "the", "effects", "of", "land", "composition", "on", "LST", "are", "stronger", "than", "other", "explanatory", "variables", "[", "19,20", "]", "." ],
+    "entities_indices" : [ [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "LST0", "represents", "the", "LST", "value", "calculated", "from", "the", "functional", "relationship", ",", "and", "Delta", "LST", "indicates", "the", "difference", "between", "LSTt", "and", "LST0.In", "this", "article", ",", "if", "the", "hypothesis", "is", "valid", ",", "it", "means", "that", "other", "factors", "have", "little", "impact", "on", "the", "cooling", "effect", "of", "vegetation", "except", "for", "building", "density", "in", "the", "case", "of", "calculating", "the", "cooling", "effect", "of", "vegetation", "grouped", "by", "building", "density", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "K", "(", "the", "slope", "of", "the", "correlation", "between", "NDVI", "and", "LST", ")", "was", "approximately", "equal", "to", "Delta", "k", "(", "the", "slope", "of", "the", "correlation", "between", "NDVI", "and", "LST", ")", ",", "indicating", "that", "when", "grouped", "by", "building", "density", ",", "only", "building", "features", "and", "vegetation", "had", "a", "significant", "impact", "on", "surface", "temperature", ",", "and", "other", "factors", "could", "be", "ignored", "." ],
+    "entities_indices" : [ [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "Moreover", ",", "there", "are", "a", "large", "amount", "of", "heat", "accumulations", "in", "places", "with", "dense", "population", "distribution", ",", "serious", "pollution", ",", "and", "traffic", "congestion", "[", "15,16", "]", "." ],
+    "entities_indices" : [ [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "land", "surface", "information", ",", "including", "the", "spatial", "distribution", "of", "LST", ",", "building", "density", ",", "building", "height", ",", "and", "the", "NDVI", "index", ",", "were", "reported", "in", "the", "figure", "by", "ArcGIS", "10.2", "(", "Figure", "5", ")", "." ],
+    "entities_indices" : [ [ 29, 30, 31 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "influence", "of", "landscape", "configuration", "and", "diversity", "factors", "on", "LST", "is", "relatively", "weak", "and", "can", "be", "easily", "concealed", "by", "the", "influence", "of", "landscape", "components", "[", "32,34,35", "]", "." ],
+    "entities_indices" : [ [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "There", "was", "a", "positive", "correlation", "between", "building", "density", "and", "LST", "(", "Figure", "7", ")", ";", "however", ",", "the", "order", "of", "building", "density", "in", "Figure", "9", "was", "D", ">", "C", ">", "B", ">", "A", ",", "and", "the", "order", "of", "LST", "was", "D", ">", "A", ">", "C", ">", "B.", "Therefore", ",", "the", "reason", "for", "this", "result", "may", "be", "that", "the", "vegetation", "had", "a", "stronger", "cooling", "effect", "in", "the", "B", "and", "C", "compared", "to", "the", "A", "and", "D.This", "paper", "uses", "the", "computational", "fluid", "dynamics", "(", "CFD", ")", "method", "to", "simulate", ";", "the", "software", "used", "is", "PHOENICS", "." ],
+    "entities_indices" : [ [ 38, 39 ], [ 82, 83 ], [ 92, 93 ] ]
+  }, {
+    "sentence_tokens" : [ "Studying", "the", "formation", "mechanism", "of", "the", "thermal", "environment", "is", "the", "prerequisite", "for", "mitigating", "urban", "heat", "islands.Affected", "by", "many", "factors", ",", "the", "formation", "of", "urban", "thermal", "environments", "is", "complicated", "." ],
+    "entities_indices" : [ [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "Studying", "the", "effects", "of", "urban", "forms", "on", "ventilation", "was", "herein", "employed", "to", "somewhat", "avoid", "urban", "heat", "accumulation", "in", "urban", "planning", "." ],
+    "entities_indices" : [ [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "There", "were", "two", "effective", "methods", ":", "the", "first", "algorithm", "was", "the", "automatic", "cloud", "removal", "method", "(", "ACRM", ")", ",", "which", "employed", "a", "linear", "regression", "between", "the", "different", "spectral", "band", "sand", "the", "cirrus", "band", ";", "the", "second", "algorithm", "was", "an", "independent", "component", "analysis", "(", "ICA", ")", ",", "which", "considered", "the", "noise", "(", "clouds", ")", "as", "part", "of", "independent", "components", "applied", "over", "the", "study", "area", "." ],
+    "entities_indices" : [ [ 29, 30 ], [ 43, 44 ] ]
+  }, {
+    "sentence_tokens" : [ "Point", "2", ":", "The", "comparison", "of", "P2", ",", "P3", ",", "and", "P1", "showed", "that", "the", "uneven", "distribution", "of", "the", "building", "was", "employed", "to", "increase", "the", "wind", "speed", "inside", "the", "buildings", "." ],
+    "entities_indices" : [ [ 0, 1, 2 ], [ 6, 7 ], [ 8, 9 ], [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "phenomenon", "that", "increasing", "people", "have", "been", "exposed", "to", "heat", "environments", "and", "suffered", "from", "extreme", "heat", "has", "aroused", "concerns", "of", "governments", "around", "the", "world", "[", "7", "]", "." ],
+    "entities_indices" : [ [ 9, 10 ], [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "reasonable", "building", "density", "value", "can", "fully", "reflect", "the", "characteristics", "of", "urban", "ventilation", "and", "achieve", "the", "effects", "of", "alleviating", "urban", "heat", "islands", "." ],
+    "entities_indices" : [ [ 20, 21 ] ]
+  } ],
+  "emptySentences" : [ {
+    "sentence_tokens" : [ "Impacts", "of", "Building", "Features", "on", "the", "Cooling", "Effect", "of", "Vegetation", "in", "Community", "Based", "MicroClimate", ":", "Recognition", ",", "Measurement", "and", "Simulation", "from", "a", "Case", "Study", "of", "Beijing", "." ]
+  }, {
+    "sentence_tokens" : [ "Due", "to", "the", "accumulation", "of", "heat", ",", "the", "urban", "environment", "and", "human", "health", "are", "threatened", "." ]
+  }, {
+    "sentence_tokens" : [ "Land", "surface", "cover", "has", "effects", "on", "the", "thermal", "environment", ";", "nevertheless", ",", "the", "effects", "of", "land", "surface", "features", "and", "spatial", "patterns", "remain", "poorly", "known", "in", "a", "community", "based", "microclimate", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "study", "quantified", "and", "verified", "the", "impacts", "of", "normalized", "difference", "vegetation", "index", "(", "NDVI", ")", "on", "land", "surface", "temperature", "(", "LST", ")", "(", "K", ",", "the", "slope", "of", "the", "trend", "line", "of", "a", "linear", "regression", "between", "NDVI", "and", "LST", ")", "in", "different", "building", "density", "by", "using", "building", "outline", "and", "Landsat", "8", "satellite", "imagery", "." ]
+  }, {
+    "sentence_tokens" : [ "Comparing", "the", "cooling", "effect", "and", "distribution", "of", "vegetation", "showed", "that", "the", "vegetative", "cover", "had", "a", "cooling", "effect", "on", "LST", ",", "characterized", "by", "synchronous", "change", ",", "and", "building", "density", "had", "a", "significant", "impact", "on", "the", "cooling", "effect", "of", "vegetation", "." ]
+  }, {
+    "sentence_tokens" : [ "Through", "identification", "and", "simulation", ",", "it", "was", "found", "that", "the", "key", "factor", "is", "the", "wind", "speed", "between", "the", "buildings", "because", ",", "in", "different", "building", "densities", ",", "the", "wind", "speed", "was", "different", ",", "and", "studies", "had", "shown", "that", "when", "the", "building", "density", "was", "between", "0.35", "and", "0.50", ",", "the", "wind", "speed", "between", "buildings", "was", "higher", ",", "resulting", "in", "a", "better", "cooling", "effect", "of", "vegetation", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "conclusion", "has", "important", "reference", "significance", "for", "urban", "planning", "and", "mitigating", "the", "impact", "of", "the", "thermal", "environment", "on", "human", "health", "." ]
+  }, {
+    "sentence_tokens" : [ "1", "." ]
+  }, {
+    "sentence_tokens" : [ "Introduction", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "recent", "decades", ",", "urbanization", "and", "industrialization", "have", ",", "without", "a", "doubt", ",", "become", "the", "major", "driving", "force", "of", "global", "economic", "prosperity", ",", "especially", "in", "developing", "countries", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "great", "number", "of", "people", "and", "related", "human", "activities", "are", "transferred", "and", "then", "tailored", "to", "urban", "settings", "." ]
+  }, {
+    "sentence_tokens" : [ "Correspondingly", ",", "surface", "roughness", "is", "of", "increasing", "complexity", ",", "which", "is", "commonly", "caused", "by", "spreading", "built-up", "areas", "and", "intensifying", "buildings", "and", "structures", "[", "1,2,3", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Such", "change", "of", "surface", "roughness", "regulates", "or", "even", "restructures", "local", "meteorological", "conditions", ",", "i.e", ".,", "cumulative", "urban", "heat", "from", "wildness", "to", "urban", "areas", "." ]
+  }, {
+    "sentence_tokens" : [ "Quite", "some", "work", "in", "this", "direction", "has", "been", "carried", "out", "by", "Ricci", "et", "al.", "[", "4,5,6", "]", "CFD", "simulations", "and", "full-scale", "measurements", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "authors", "have", "confirmed", "and", "proven", "how", "the", "surface", "roughness", ",", "the", "large-scale", "forcing", "(", "inflow", "conditions", ")", "and", "local", "scale", "forcing", "(", "e.g", ".,", "buildings", ")", "can", "strongly", "affect", "the", "wind", "effects", "inside", "an", "urban", "environment", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "phenomenon", "that", "increasing", "people", "have", "been", "exposed", "to", "heat", "environments", "and", "suffered", "from", "extreme", "heat", "has", "aroused", "concerns", "of", "governments", "around", "the", "world", "[", "7", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Affected", "by", "the", "thermal", "environment", ",", "the", "morbidity", "and", "mortality", "of", "heat", "stress", "and", "heat", "related", "diseases", "have", "increased", "[", "8,9,10", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "sustainable", "development", "of", "the", "environment", "is", "also", "affected", "by", "the", "increase", "of", "factors", "with", "high", "photochemical", "reaction", "levels", ",", "such", "as", "the", "ozone", "[", "11,12", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "research", "on", "mitigating", "urban", "heat", "islands", "has", "become", "the", "focus", "of", "scholarly", "attention", "." ]
+  }, {
+    "sentence_tokens" : [ "Studying", "the", "formation", "mechanism", "of", "the", "thermal", "environment", "is", "the", "prerequisite", "for", "mitigating", "urban", "heat", "islands.Affected", "by", "many", "factors", ",", "the", "formation", "of", "urban", "thermal", "environments", "is", "complicated", "." ]
+  }, {
+    "sentence_tokens" : [ "Absorbing", "and", "releasing", "solar", "energy", ",", "a", "large", "amount", "of", "urban", "heat", "comes", "from", "solar", "energy", "." ]
+  }, {
+    "sentence_tokens" : [ "Land", "use", "and", "land", "cover", "changes", "caused", "by", "urbanization", "show", "different", "absorption", "and", "albedo", "for", "solar", "energy", "due", "to", "different", "materials", "[", "13,14", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "land", "surface", "temperature", "is", "high", "in", "bare", "land", ",", "factories", ",", "airports", ",", "workshops", ",", "and", "low", "in", "places", "with", "much", "vegetation", "." ]
+  }, {
+    "sentence_tokens" : [ "Moreover", ",", "there", "are", "a", "large", "amount", "of", "heat", "accumulations", "in", "places", "with", "dense", "population", "distribution", ",", "serious", "pollution", ",", "and", "traffic", "congestion", "[", "15,16", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Various", "land", "cover", "indices", "that", "use", "remote", "sensing", "technologies", "for", "extraction", "have", "different", "effects", "on", "LST", "[", "17,18", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Land", "cover", "changes", "directly", "affect", "the", "accumulation", "and", "dispersal", "of", "heat", "on", "the", "city", "surface", "." ]
+  }, {
+    "sentence_tokens" : [ "Further", ",", "the", "effects", "of", "land", "composition", "on", "LST", "are", "stronger", "than", "other", "explanatory", "variables", "[", "19,20", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "two", "most", "researched", "factors", "are", "vegetation", "and", "buildings", ",", "as", "they", "are", "each", "important", "parts", "of", "a", "city", "and", "the", "main", "powers", "to", "regulate", "the", "urban", "thermal", "environment", "[", "7,21,22,23,24", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Using", "high", "albedo", "materials", ",", "pavements", ",", "green", "vegetation", ",", "green", "roofs", ",", "urban", "planning", ",", "pervious", "pavements", ",", "shade", "trees", ",", "and", "the", "existence", "of", "water", "bodies", "in", "city", "areas", "are", "potential", "urban", "heat", "island", "mitigation", "strategies", "[", "25,26,27,28,29", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "addition", "to", "the", "absorption", "of", "solar", "energy", ",", "the", "accumulation", "of", "urban", "heat", "comes", "from", "the", "conversion", "of", "other", "energy", "." ]
+  }, {
+    "sentence_tokens" : [ "Human", "beings", "are", "the", "subjects", "of", "cities", "and", "other", "human", "activities", ",", "including", "natural", "respiration", "and", "industrial", "production", ",", "both", "of", "which", "play", "important", "roles", "in", "the", "formation", "of", "the", "thermal", "environment", "." ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "the", "urban", "thermal", "environment", "is", "related", "to", "population", "density", ",", "urban", "transportation", ",", "and", "industrial", "structure", "[", "15,19,30", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "air", "pollutants", ",", "products", ",", "and", "results", "of", "human", "activities", "also", "impact", "the", "urban", "thermal", "environment", "[", "31", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "scattered", "distribution", "of", "buildings", "with", "high", "rises", "can", "facilitate", "LST", "mitigation", "." ]
+  }, {
+    "sentence_tokens" : [ "Densely", "distributed", "buildings", "with", "low", "rise", "can", "easily", "become", "the", "largest", "heat", "source", "in", "a", "city", "[", "32,33", "]", ";", "we", "later", "explore", "possible", "limitations", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "current", "literature", ",", "scarce", "research", "has", "investigated", "influential", "factors", "of", "urban", "thermal", "environment", "on", "a", "microscale", ",", "especially", "regarding", "the", "shape", ",", "materials", ",", "and", "distributions", "of", "buildings", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "influence", "of", "landscape", "configuration", "and", "diversity", "factors", "on", "LST", "is", "relatively", "weak", "and", "can", "be", "easily", "concealed", "by", "the", "influence", "of", "landscape", "components", "[", "32,34,35", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Nevertheless", ",", "the", "characteristics", "and", "distributions", "of", "buildings", "within", "a", "city", "are", "important", "factors", "that", "determine", "heat", "transfer", "." ]
+  }, {
+    "sentence_tokens" : [ "Unraveling", "how", "urban", "morphology", "influences", "urban", "thermal", "environment", "intensity", "is", "paramount", "given", "the", "human", "health", "consequences", "associated", "with", "the", "continued", "growth", "of", "urban", "populations", "in", "the", "future", "[", "36", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "local", "climate", "and", "landscape", "should", "be", "considered", "to", "eliminate", "urban", "thermal", "environment", "hazards", "in", "future", "urbanization", "processes", "[", "35", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "One", "vital", "contribution", "of", "urbanization", "and", "industrialization", "is", "to", "circle", "a", "given", "number", "of", "buildings", "and", "structures", "and", "divide", "them", "as", "\"", "closed", "\"", "plots", "." ]
+  }, {
+    "sentence_tokens" : [ "Consequently", ",", "the", "effects", "of", "buildings", "and", "structures", "--", "within", "or", "between", "plots", "--", "force", "meteorological", "elements", "to", "vary", "at", "the", "community", "scale", "[", "37", "]", "and", "then", "form", "a", "microclimate", "." ]
+  }, {
+    "sentence_tokens" : [ "To", "learn", "the", "driving", "principle", "of", "formation", "of", "the", "internal", "thermal", "environment", "in", "\"", "closed", "\"", "plots", ",", "effectively", "improving", "the", "urban", "thermal", "environment", "and", "mitigating", "the", "harm", "to", "human", "health", ",", "taking", "commonly", "used", "vegetation", "and", "buildings", "as", "research", "objects", ",", "some", "studies", "are", "done", "in", "community", "based", "microclimate", ":", "(", "1", ")", "the", "cooling", "effect", "of", "vegetation", ";", "(", "2", ")", "the", "impact", "of", "built-up", "features", "on", "the", "cooling", "effect", ";", "and", "(", "3", ")", "the", "reason", "and", "mechanism", "of", "the", "impact", "." ]
+  }, {
+    "sentence_tokens" : [ "2", "." ]
+  }, {
+    "sentence_tokens" : [ "Materials", "and", "Methods", "." ]
+  }, {
+    "sentence_tokens" : [ "2.1", "." ]
+  }, {
+    "sentence_tokens" : [ "Study", "Area", "." ]
+  }, {
+    "sentence_tokens" : [ "Beijing", "--", "the", "center", "of", "national", "politics", ",", "culture", ",", "international", "exchanges", ",", "and", "technological", "innovation", "with", "high", "levels", "of", "urbanization", "--", "is", "the", "capital", "of", "the", "People", "'", "s", "Republic", "of", "China", "." ]
+  }, {
+    "sentence_tokens" : [ "Beijing", "'", "s", "climate", "is", "typically", "northern", "temperate", "semi", "humid", "continental", "monsoon", "climate", ",", "i.e", ".,", "hot", "and", "rainy", "in", "summer", ",", "cold", "and", "dry", "in", "winter", ",", "and", "short", "in", "spring", "and", "autumn", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "frost-free", "period", "throughout", "the", "year", "is", "180", "to", "200", "days", ",", "and", "the", "western", "mountainous", "region", "is", "short", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "seasonal", "distribution", "of", "precipitation", "is", "very", "uneven.Because", "the", "distribution", "of", "buildings", "is", "compact", "and", "the", "phenomenon", "of", "urban", "heat", "islands", "is", "obvious", ",", "making", "it", "suitable", "for", "the", "research", "of", "the", "urban", "thermal", "environment", ",", "the", "area", "within", "the", "5th", "ring", "road", "of", "Beijing", "was", "selected", "as", "the", "study", "area", "(", "Figure", "1", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "2.2", "." ]
+  }, {
+    "sentence_tokens" : [ "Data", "." ]
+  }, {
+    "sentence_tokens" : [ "Two", "main", "types", "of", "data", "--", "vector", "data", "and", "raster", "data", "--", "were", "used", "in", "this", "paper", ":", "Vector", "data", ":", "To", "extract", "the", "building", "density", "and", "building", "height", "in", "the", "study", "area", ",", "the", "community", "outline", "data", "and", "building", "outline", "data", "of", "Beijing", "'", "s", "central", "urban", "area", "in", "2017", "were", "selected.Raster", "data", ":", "To", "extract", "the", "NDVI", "and", "LST", "in", "the", "study", "area", ",", "we", "selected", "the", "Landsat", "8", "operational", "land", "imager", "and", "thermal", "infrared", "sensor", "(", "TIRS", ")", "images", "data", "(", "Table", "1", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "remote", "sensing", "image", "of", "the", "summer", "with", "a", "small", "amount", "of", "cloud", "was", "selected", ",", "which", "was", "downloaded", "from", "the", "USGS", "." ]
+  }, {
+    "sentence_tokens" : [ "To", "avoid", "the", "interference", "of", "rainfall", ",", "there", "was", "no", "rainfall", "on", "the", "day", "of", "the", "selected", "image", "and", "the", "days", "before", "and", "after", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "order", "to", "make", "the", "research", "results", "more", "scientific", ",", "this", "article", "selected", "remote", "sensing", "images", "on", "10", "July", "2017", "for", "verification", "." ]
+  }, {
+    "sentence_tokens" : [ "2.3", "." ]
+  }, {
+    "sentence_tokens" : [ "Research", "Methods", "." ]
+  }, {
+    "sentence_tokens" : [ "2.3.1", "." ]
+  }, {
+    "sentence_tokens" : [ "Research", "Framework", "." ]
+  }, {
+    "sentence_tokens" : [ "As", "one", "of", "the", "main", "elements", "of", "the", "urban", "environment", ",", "both", "buildings", "and", "vegetation", "had", "a", "great", "impact", "on", "land", "surface", "temperatures", "." ]
+  }, {
+    "sentence_tokens" : [ "Affected", "by", "urban", "planning", ",", "the", "distribution", "of", "buildings", "and", "vegetation", "within", "the", "city", "was", "mutually", "restricted", ";", "therefore", ",", "the", "research", "content", "of", "this", "article", "is", "divided", "into", "the", "following", "four", "parts", "(", "Figure", "2", ")", ":", "(", "1", ")", "matching", "the", "spatial", "distribution", "of", "vegetation", "and", "building", "features", ";", "(", "2", ")", "analyzing", "the", "cooling", "effect", "of", "vegetation", ";", "(", "3", ")", "examining", "the", "influence", "of", "buildings", "on", "the", "cooling", "effect", "of", "vegetation", ";", "and", "(", "4", ")", "analyzing", ",", "measuring", ",", "and", "simulating", "the", "impact", "mechanism", "of", "buildings", "." ]
+  }, {
+    "sentence_tokens" : [ "2.3.2", "." ]
+  }, {
+    "sentence_tokens" : [ "Surface", "Information", "." ]
+  }, {
+    "sentence_tokens" : [ "Calculation", "of", "Building", "Density", "." ]
+  }, {
+    "sentence_tokens" : [ "Statistical", "units", "are", "the", "blocks", "formed", "by", "the", "community", "outline", "where", "the", "buildings", "are", "located", ",", "rather", "than", "traditionally", "fishing", "grids", ",", "for", "the", "reason", "that", "many", "complete", "buildings", "are", "divided", "into", "two", "or", "more", "statistical", "units", "by", "traditional", "fishing", "grids", "." ]
+  }, {
+    "sentence_tokens" : [ "Compared", "with", "the", "fishing", "grids", ",", "the", "blocks", "not", "only", "preserved", "the", "integrity", "of", "the", "building", "but", "also", "avoided", "the", "effects", "of", "roads", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "addition", ",", "to", "avoid", "the", "impacts", "of", "water", ",", "all", "samples", "containing", "water", "were", "eliminated", "in", "the", "blocks", "(", "Figure", "3", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "building", "density", "is", "the", "proportion", "of", "the", "area", "of", "the", "buildings", "within", "the", "block", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "formula", "for", "calculating", "building", "density", "is", "as", "follows", "(", "1", ")", ":(", "1", ")", "d", "=", "sum", "i", "=", "1nSiS", "where", "d", "is", "the", "building", "density", ",", "Si", "is", "the", "area", "of", "the", "buildings", "within", "a", "block", ",", "and", "S", "is", "the", "total", "area", "of", "a", "block", "." ]
+  }, {
+    "sentence_tokens" : [ "LST", "Retrieval", "." ]
+  }, {
+    "sentence_tokens" : [ "Estimation", "of", "land", "surface", "temperature", "(", "LST", ")", "from", "Landsat", "data", "requires", "a", "systematic", "methodology", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "single-window", "method", "was", "used", "to", "retrieve", "LST", "in", "this", "study", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "improved", "mono-window", "(", "IMW", ")", "algorithm", "was", "used", "as", "an", "efficient", "method", "for", "LST", "retrieval", "from", "the", "Landsat", "8", "TIRS", "Band", "10", "data", "." ]
+  }, {
+    "sentence_tokens" : [ "Validation", "of", "the", "IMW", "algorithm", "using", "the", "simulated", "datasets", "for", "various", "situations", "indicated", "that", "the", "LST", "difference", "between", "the", "retrieved", "and", "simulated", "ones", "was", "0.67", "K", ",", "on", "average", "[", "38", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Calculation", "of", "NDVI", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "normalized", "difference", "vegetation", "index", "(", "NDVI", ")", "is", "a", "linear", "combination", "between", "the", "near", "infrared", "band", "and", "red", "band", ",", "which", "is", "regarded", "as", "the", "basic", "index", "for", "measuring", "the", "\"", "greenness", "\"", "of", "the", "earth", "'", "s", "surface", "[", "7", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "use", "of", "optical", "remote", "sensing", "data", "in", "the", "computation", "of", "environmental", "indices", "of", "this", "region", "was", "hampered", "by", "the", "presence", "of", "clouds", "." ]
+  }, {
+    "sentence_tokens" : [ "There", "were", "two", "effective", "methods", ":", "the", "first", "algorithm", "was", "the", "automatic", "cloud", "removal", "method", "(", "ACRM", ")", ",", "which", "employed", "a", "linear", "regression", "between", "the", "different", "spectral", "band", "sand", "the", "cirrus", "band", ";", "the", "second", "algorithm", "was", "an", "independent", "component", "analysis", "(", "ICA", ")", ",", "which", "considered", "the", "noise", "(", "clouds", ")", "as", "part", "of", "independent", "components", "applied", "over", "the", "study", "area", "." ]
+  }, {
+    "sentence_tokens" : [ "After", "improving", "ACRM", ",", "the", "NDVI", "was", "computed", "using", "ACRM", ",", "which", "showed", "a", "better", "correlation", "than", "ICA", "with", "the", "MODIS", "NDVI", "product", "[", "39", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "2.3.3", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "Cooling", "Effect", "of", "Vegetation", "." ]
+  }, {
+    "sentence_tokens" : [ "Matching", "of", "Vegetation", "and", "Building", "Characteristics", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "area", "of", "green", "space", "is", "important", "for", "urban", "construction", "during", "urban", "planning", ",", "providing", "a", "comfortable", "environment", "for", "human", "beings", "and", "regulating", "the", "urban", "climate", "[", "40", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "the", "distribution", "of", "buildings", "impacts", "the", "distribution", "of", "urban", "green", "space", ",", "where", "the", "building", "density", "is", "higher", ",", "and", "the", "vegetation", "is", "generally", "less", "distributed", "." ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "the", "building", "distribution", "could", "not", "be", "ignored", "when", "discussing", "the", "cooling", "effect", "of", "vegetation", "." ]
+  }, {
+    "sentence_tokens" : [ "Because", "of", "the", "height", "and", "density", "characteristics", "of", "the", "buildings", ",", "the", "NDVI", "in", "the", "sample", "points", "was", "classified", "and", "counted", "(", "Table", "A1", "and", "Table", "A2", "in", "Appendix", "A", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "counted", "the", "NDVI", "value", "of", "the", "sample", "points", "in", "each", "group", "and", "selected", "the", "area", "within", "the", "quartile", "as", "the", "vegetation", "distribution", "of", "the", "group", "through", "box-plot", "analysis.Therefore", ",", "we", "classified", "all", "samples", "according", "to", "different", "building", "heights", "and", "different", "building", "densities", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "samples", "were", "divided", "into", "three", "major", "building", "height", "zones", ":", "low", ",", "medium", "and", "high-rise", ",", "and", "each", "zone", "was", "divided", "into", "10", "small", "zones", "according", "to", "different", "building", "density", "." ]
+  }, {
+    "sentence_tokens" : [ "Sample", "points", "in", "each", "area", "are", "used", "for", "the", "next", "analysis", "." ]
+  }, {
+    "sentence_tokens" : [ "Correlation", "Analysis", "between", "NDVI", "and", "LST", "." ]
+  }, {
+    "sentence_tokens" : [ "Vegetation", "cover", "--", "an", "important", "factor", "for", "regulating", "the", "urban", "thermal", "environment", "--", "has", "a", "significant", "negative", "correlation", "with", "LST", ",", "and", "its", "cooling", "effects", "are", "closely", "related", "to", "its", "distribution", "[", "7,41", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "analyzed", "the", "correlation", "between", "NDVI", "and", "LST", "of", "sample", "points", "in", "different", "groups", "and", "then", "judged", "the", "cooling", "effect", "of", "vegetation", "under", "different", "building", "characteristics", "." ]
+  }, {
+    "sentence_tokens" : [ "2.3.4", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "Impacts", "of", "Buildings", "on", "the", "Cooling", "Effect", "." ]
+  }, {
+    "sentence_tokens" : [ "With", "the", "development", "of", "urbanization", ",", "the", "phenomenon", "of", "the", "urban", "heat", "island", "has", "become", "more", "obvious", ",", "and", "the", "change", "of", "LST", "has", "a", "great", "relationship", "with", "a", "city", "'", "s", "environment", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "order", "to", "analyze", "the", "impact", "of", "building", "characteristics", "on", "the", "cooling", "effect", "of", "vegetation", ",", "it", "is", "necessary", "to", "eliminate", "other", "factors", "in", "the", "study", "area", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "Relationship", "between", "Building", "Density", "and", "LST", "." ]
+  }, {
+    "sentence_tokens" : [ "Both", "building", "density", "and", "building", "height", "certainly", "affect", "LST", "." ]
+  }, {
+    "sentence_tokens" : [ "All", "blocks", "in", "the", "study", "areas", "were", "divided", "into", "different", "groups", "according", "to", "different", "building", "heights", ",", "including", "high-rise", "of", "9", "or", "more", "floors", ",", "middle-rise", "of", "4", "-", "9", "floors", ",", "and", "low-rise", "of", "1", "-", "3", "floors", "." ]
+  }, {
+    "sentence_tokens" : [ "Then", ",", "the", "building", "density", "and", "LST", "of", "all", "blocks", "were", "counted", "and", "input", "in", "SPSS", "software", "for", "correlation", "analysis", "." ]
+  }, {
+    "sentence_tokens" : [ "Correlation", "between", "DeltaNDVI", "and", "DeltaLST", "." ]
+  }, {
+    "sentence_tokens" : [ "There", "was", "a", "strong", "linear", "correlation", "between", "building", "density", "and", "LST", ";", "the", "scatter", "plot", "of", "which", "showed", "a", "straight", "band", "distribution", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "functional", "relationship", "was", "summarized", "as", "a", "straight", "line", ",", "y", "=", "kx", "+", "b.", "Therefore", ",", "the", "LST", "of", "blocks", "was", "estimated", "by", "bringing", "the", "building", "density", "value", "into", "y", "=", "kx", "+", "b." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "the", "environment", "in", "each", "block", "was", "different", ",", "and", "where", "the", "buildings", ",", "vegetation", "and", "other", "factors", "impacted", "LST", "." ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "the", "functional", "relationship", "between", "building", "density", "and", "LST", "was", "only", "a", "comprehensive", "relationship", "of", "all", "blocks", "." ]
+  }, {
+    "sentence_tokens" : [ "If", "the", "building", "density", "of", "a", "block", "was", "brought", "into", "the", "functional", "relationship", ",", "the", "result", "was", "likely", "to", "be", "different", "from", "the", "LST", "obtained", "by", "retrieving", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "each", "individual", "block", ",", "the", "difference", "between", "the", "NDVI", "value", "and", "the", "NDVI", "average", "value", "indicates", "the", "difference", "in", "vegetation", "distribution", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "paper", "assumed", "that", "the", "change", "of", "Delta", "LST", "was", "entirely", "caused", "by", "Delta", "NDVI", "and", "that", "the", "correlation", "between", "the", "two", "was", "the", "cooling", "effect", "of", "vegetation", "." ]
+  }, {
+    "sentence_tokens" : [ "Comparing", "this", "relationship", "with", "the", "cooling", "effect", "of", "vegetation", ",", "if", "the", "difference", "between", "the", "results", "was", "obvious", ",", "it", "meant", "that", "other", "factors", "had", "a", "greater", "impact", "on", "LST", "(", "Figure", "4a", ",", "c", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "if", "the", "difference", "was", "relatively", "small", ",", "it", "meant", "that", "other", "factors", "could", "be", "ignored", "(", "Figure", "4b", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "(", "2", ")", "Delta", "NDVI", "=", "NDVIt", "-", "NDVI0", "(", "3", ")", "Delta", "LST", "=", "LSTt", "-", "LST0", "where", "NDVIt", "indicates", "the", "NDVI", "value", "of", "blocks", ",", "NDVI0", "indicates", "the", "average", "NDVI", "value", "in", "the", "different", "building", "height", "zones", ",", "Delta", "NDVI", "indicates", "the", "difference", "between", "NDVI", "and", "NDVI0", ",", "LSTt", "indicates", "the", "true", "LST", "of", "blocks", "." ]
+  }, {
+    "sentence_tokens" : [ "LST0", "represents", "the", "LST", "value", "calculated", "from", "the", "functional", "relationship", ",", "and", "Delta", "LST", "indicates", "the", "difference", "between", "LSTt", "and", "LST0.In", "this", "article", ",", "if", "the", "hypothesis", "is", "valid", ",", "it", "means", "that", "other", "factors", "have", "little", "impact", "on", "the", "cooling", "effect", "of", "vegetation", "except", "for", "building", "density", "in", "the", "case", "of", "calculating", "the", "cooling", "effect", "of", "vegetation", "grouped", "by", "building", "density", "." ]
+  }, {
+    "sentence_tokens" : [ "3", "." ]
+  }, {
+    "sentence_tokens" : [ "Results", "and", "Discuss", "." ]
+  }, {
+    "sentence_tokens" : [ "3.1", "." ]
+  }, {
+    "sentence_tokens" : [ "Surface", "Information", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "land", "surface", "information", ",", "including", "the", "spatial", "distribution", "of", "LST", ",", "building", "density", ",", "building", "height", ",", "and", "the", "NDVI", "index", ",", "were", "reported", "in", "the", "figure", "by", "ArcGIS", "10.2", "(", "Figure", "5", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Comparing", "the", "building", "density", "with", "the", "LST", ",", "it", "was", "found", "that", "the", "building", "density", "gradually", "decreased", "from", "the", "center", "to", "the", "periphery", "of", "the", "study", "area", ",", "and", "the", "LST", "maintained", "a", "synchronous", "change", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "LST", "in", "the", "south", "was", "higher", "than", "the", "LST", "in", "the", "north", ",", "which", "may", "be", "related", "to", "the", "distribution", "of", "more", "water", "in", "the", "north", "(", "white", "area", "in", "Figure", "5", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Further", ",", "there", "were", "more", "train", "stations", "and", "airports", "in", "the", "south", ",", "which", "had", "a", "positive", "effect", "on", "LST", "[", "21", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Moreover", ",", "there", "were", "more", "low-floor", "buildings", "in", "the", "south", "of", "the", "study", "area", "and", "more", "middle-", "and", "high-floor", "buildings", "in", "the", "north", "." ]
+  }, {
+    "sentence_tokens" : [ "Building", "height", "had", "a", "certain", "negative", "correlation", "with", "the", "land", "surface", "temperature", "[", "42,43", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Comparing", "LST", "and", "NDVI", ",", "the", "LST", "of", "the", "region", "with", "high", "NDVI", "value", "was", "smaller", ",", "as", "shown", "in", "the", "blue", "region", "." ]
+  }, {
+    "sentence_tokens" : [ "3.2", "." ]
+  }, {
+    "sentence_tokens" : [ "Distribution", "of", "Vegetation", "and", "Buildings", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "average", "value", "of", "NDVI", "for", "the", "low-rise", "building", "group", "in", "the", "study", "area", "was", "0.166", ",", "the", "middle-rise", "building", "group", "was", "0.186", ",", "and", "the", "high-rise", "building", "group", "was", "0.163", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "different", "building", "height", "groups", ",", "the", "distribution", "of", "vegetation", "decreased", "with", "the", "increase", "of", "building", "density", "." ]
+  }, {
+    "sentence_tokens" : [ "Among", "them", ",", "for", "middle-rise", "buildings", ",", "vegetation", "decreased", "the", "fastest", ",", "and", "the", "low-rise", "was", "the", "slowest", "(", "Figure", "6", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "3.3", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "Cooling", "Effect", "of", "Vegetation", "and", "the", "Interference", "of", "Other", "Factors", "." ]
+  }, {
+    "sentence_tokens" : [ "3.3.1", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "Relationship", "between", "Building", "Density", "and", "LST", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "significant", "positive", "correlations", "between", "building", "density", "and", "LST", "appeared", "on", "different", "building", "height", "zones", ",", "and", "the", "slope", "of", "linear", "relationships", "gradually", "reduced", "from", "low-rise", "to", "high-rise", "(", "Figure", "7", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "3.3.2", "." ]
+  }, {
+    "sentence_tokens" : [ "Comparison", "of", "Cooling", "Effect", "." ]
+  }, {
+    "sentence_tokens" : [ "Due", "to", "the", "significant", "negative", "linear", "correlation", "between", "NDVI", "and", "LST", ",", "the", "k", "and", "slope", "of", "the", "linear", "correlation", "were", "considered", "to", "be", "the", "cooling", "effect", "of", "vegetation", "on", "LST", "(", "Table", "A1", "in", "Appendix", "A", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "K", "(", "the", "slope", "of", "the", "correlation", "between", "NDVI", "and", "LST", ")", "was", "approximately", "equal", "to", "Delta", "k", "(", "the", "slope", "of", "the", "correlation", "between", "NDVI", "and", "LST", ")", ",", "indicating", "that", "when", "grouped", "by", "building", "density", ",", "only", "building", "features", "and", "vegetation", "had", "a", "significant", "impact", "on", "surface", "temperature", ",", "and", "other", "factors", "could", "be", "ignored", "." ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "the", "cooling", "effect", "of", "the", "vegetation", "in", "the", "study", "area", "on", "the", "surface", "temperature", "was", "mainly", "affected", "by", "two", "factors", ":", "its", "own", "distribution", "characteristics", "and", "architectural", "characteristics", "." ]
+  }, {
+    "sentence_tokens" : [ "3.4", "." ]
+  }, {
+    "sentence_tokens" : [ "Impact", "of", "Building", "Characteristics", "on", "Vegetation", "Cooling", "Effects", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "order", "to", "make", "the", "research", "results", "of", "the", "main", "image", "more", "credible", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "chose", "another", "verification", "image", "to", "analyzed", "using", "exactly", "the", "same", "processing", "method", "as", "the", "main", "image", "and", "got", "the", "research", "results", "shown", "in", "Figure", "8.", "Analyzed", "in", "the", "order", "of", "building", "density", "from", "low", "to", "high", ",", "the", "change", "trend", "of", "the", "cooling", "effect", "of", "vegetation", "(", "k", ")", "was", "mostly", "consistent", "with", "the", "change", "trend", "of", "distribution", "of", "vegetation", "(", "NDVI", ")", ";", "however", ",", "there", "were", "also", "some", "differences", ",", "and", "the", "differences", "had", "a", "certain", "regular", "compared", "with", "the", "value", "of", "building", "density", "." ]
+  }, {
+    "sentence_tokens" : [ "It", "should", "be", "noted", "that", "the", "comparison", "of", "k", "and", "NDVI", "in", "this", "article", "was", "not", "for", "numerical", "values", "but", "for", "change", "trends", "." ]
+  }, {
+    "sentence_tokens" : [ "Low-Rise", "Building", "Height", "Zone", "." ]
+  }, {
+    "sentence_tokens" : [ "When", "the", "building", "density", "was", "0.4", "-", "0.5", ",", "Figure", "8a", ",", "b", "both", "showed", "that", "the", "k", "(", "low", ")", "was", "higher", "than", "NDVI", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "range", "of", "0.25", "-", "0.35", ",", "Figure", "8a", "also", "showed", "that", "k", "(", "low", ")", "was", "higher", "than", "NDVI", ",", "and", "Figure", "8b", "showed", "the", "same", "change", "trend", "between", "the", "two", "." ]
+  }, {
+    "sentence_tokens" : [ "Moreover", ",", "it", "was", "opposite", "to", "Figure", "8a", ",", "b", "in", "the", "range", "of", "0.55", "-", "0.6", "." ]
+  }, {
+    "sentence_tokens" : [ "There", "were", "few", "buildings", "(", "building", "density", "<", "0.35", ")", "in", "the", "low-rise", "building", "height", "zone", "of", "the", "study", "area", ";", "therefore", ",", "the", "difference", "in", "Figure", "8a", "may", "be", "caused", "by", "fewer", "sampling", "points", "." ]
+  }, {
+    "sentence_tokens" : [ "Middle-Rise", "Building", "Height", "Zone", "." ]
+  }, {
+    "sentence_tokens" : [ "Within", "the", "building", "density", "of", "0.35", "-", "0.45", ",", "both", "Figure", "8c,", "d", "showed", "that", "k", "(", "middle", ")", "was", "higher", "than", "the", "NDVI", "." ]
+  }, {
+    "sentence_tokens" : [ "When", "the", "building", "density", ">=", "0.5", ",", "the", "k", "(", "middle", ")", "was", "occasionally", "higher", "than", "or", "lower", "than", "the", "NDVI", "in", "Figure", "8c,", "while", "the", "k", "(", "middle", ")", "always", "was", "higher", "than", "NDVI", "in", "Figure", "8d", "." ]
+  }, {
+    "sentence_tokens" : [ "High-Rise", "Building", "Height", "Zone", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "k", "(", "high", ")", "and", "NDVI", "in", "Figure", "8e", ",", "f", "had", "the", "same", "changing", "trend", "." ]
+  }, {
+    "sentence_tokens" : [ "Only", "when", "the", "building", "density", "was", "0.35", "-", "0.5", ",", "the", "k", "(", "high", ")", "was", "higher", "than", "NDVI.Due", "to", "the", "limitation", "of", "the", "shooting", "period", "and", "cloud", "cover", ",", "the", "time", "of", "the", "two", "remote", "sensing", "images", "selected", "in", "this", "paper", "were", "7", "May", "2017", ",", "and", "10", "July", "2017", "." ]
+  }, {
+    "sentence_tokens" : [ "Moreover", ",", "the", "weather", "conditions", "should", "be", "kept", "as", "consistent", "as", "possible", "(", "Table", "1", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "there", "were", "still", "two", "different", "conditions", "the", "one", "was", "the", "wind", "direction", "(", "the", "former", "was", "northwest", "wind", ",", "the", "latter", "was", "southwest", "wind", ")", ",", "and", "the", "other", "was", "the", "temperature", "difference", "between", "the", "two", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "case", ",", "the", "same", "part", "between", "the", "two", "image", "results", "could", "be", "considered", "a", "reliable", "research", "result", ",", "and", "the", "different", "parts", "may", "be", "caused", "by", "different", "environmental", "conditions.Therefore", ",", "when", "the", "building", "density", "<", "0.35", ",", "the", "change", "trend", "was", "the", "same", "for", "the", "cooling", "effect", "of", "vegetation", "and", "distribution", "of", "vegetation", ",", "indicating", "that", "building", "density", "had", "no", "effect", "on", "the", "cooling", "effect", "of", "vegetation", "." ]
+  }, {
+    "sentence_tokens" : [ "When", "the", "building", "density", "was", "0.35", "-", "0.5", ",", "the", "cooling", "effect", "of", "vegetation", "was", "higher", "than", "the", "distribution", "of", "vegetation", ",", "indicating", "that", "building", "density", "enhanced", "the", "cooling", "effect", "of", "vegetation", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "when", "the", "building", "density", ">", "0.5", "in", "the", "high-rise", "building", "zone", ",", "the", "change", "trend", "was", "the", "same", "for", "the", "cooling", "effect", "of", "vegetation", "and", "distribution", "of", "vegetation", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "middle-", "and", "low-rise", "building", "zone", ",", "the", "cooling", "effect", "of", "the", "vegetation", "may", "be", "higher", "or", "lower", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "showed", "that", "when", "the", "building", "density", ">", "0.5", ",", "the", "cooling", "effect", "of", "vegetation", "was", "also", "impacted", ",", "but", "the", "impact", "did", "not", "have", "an", "obvious", "regular", "with", "building", "density.According", "to", "the", "research", "in", "Section", "3.5.2", ",", "when", "the", "building", "density", ">=", "0.5", ",", "the", "cooling", "effect", "of", "vegetation", "was", "more", "affected", "by", "the", "spatial", "distribution", "of", "buildings", "." ]
+  }, {
+    "sentence_tokens" : [ "Moreover", ",", "the", "results", "of", "the", "two", "images", "were", "also", "different", ",", "which", "may", "be", "caused", "by", "different", "wind", "directions", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "the", "same", "image", ",", "the", "same", "wind", "passed", "through", "blocks", "with", "different", "spatial", "distribution", ",", "the", "wind", "speed", "inside", "the", "buildings", "was", "different", ",", "while", "for", "the", "different", "images", ",", "wind", "with", "different", "wind", "directions", "passed", "through", "the", "same", "block", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "wind", "speed", "inside", "the", "buildings", "was", "also", "different", "." ]
+  }, {
+    "sentence_tokens" : [ "3.5", "." ]
+  }, {
+    "sentence_tokens" : [ "Measuring", "and", "Simulation", "." ]
+  }, {
+    "sentence_tokens" : [ "3.5.1", "." ]
+  }, {
+    "sentence_tokens" : [ "Analysis", "of", "Possible", "Factor", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "effect", "factors", "mainly", "include", "surface", "information", ",", "aboveground", "information", ",", "and", "environmental", "information", "in", "the", "city", "." ]
+  }, {
+    "sentence_tokens" : [ "Surface", "information", "includes", "vegetation", ",", "buildings", ",", "water", "bodies", ",", "and", "roads", "[", "1,2,44", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Aboveground", "information", "includes", "wind", "speed", ",", "population", "density", ",", "and", "human", "activity", "[", "31,42", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Environmental", "information", "includes", "season", ",", "elevation", ",", "slope", ",", "soil", "texture", ",", "and", "humidity", "[", "45", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Because", "the", "factor", "was", "related", "to", "the", "building", "characteristics", ",", "looking", "for", "the", "factor", "around", "the", "building", "density", "was", "effective", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "urban", "expansion", "of", "a", "high-density", "downtown", "morphological", "pattern", "causes", "wind", "speed", "per", "year", "to", "trend", "downward", "[", "46", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "average", "wind", "speed", "was", "significantly", "negatively", "correlated", "with", "urban", "heat", "island", "intensity", "and", "was", "part", "of", "planning", "the", "distribution", "of", "buildings", "to", "ensure", "adequate", "ventilation", "indoors", "and", "outdoors", "[", "30,47", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "summary", ",", "wind", "speed", "can", "change", "the", "land", "surface", "temperature", "and", "is", "related", "to", "building", "density", ",", "which", "may", "be", "a", "factor", "." ]
+  }, {
+    "sentence_tokens" : [ "3.5.2", "." ]
+  }, {
+    "sentence_tokens" : [ "Simulation", "of", "the", "Factor", "." ]
+  }, {
+    "sentence_tokens" : [ "To", "verify", "the", "influence", "of", "wind", "speed", "on", "the", "cooling", "effect", "of", "vegetation", "and", "to", "explore", "how", "wind", "speed", "impacts", "cooling", "effects", ",", "this", "paper", "simulated", "the", "wind", "speed", "distribution", "characteristics", "of", "four", "various", "sample", "areas", "with", "land", "surface", "temperature", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "paper", "selected", "four", "regions", "in", "the", "study", "area", "with", "the", "same", "vegetation", "distribution", "and", "different", "building", "densities", ",", "and", "their", "building", "heights", "belonged", "to", "the", "middle-rise", "(", "Figure", "9", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "There", "was", "a", "positive", "correlation", "between", "building", "density", "and", "LST", "(", "Figure", "7", ")", ";", "however", ",", "the", "order", "of", "building", "density", "in", "Figure", "9", "was", "D", ">", "C", ">", "B", ">", "A", ",", "and", "the", "order", "of", "LST", "was", "D", ">", "A", ">", "C", ">", "B.", "Therefore", ",", "the", "reason", "for", "this", "result", "may", "be", "that", "the", "vegetation", "had", "a", "stronger", "cooling", "effect", "in", "the", "B", "and", "C", "compared", "to", "the", "A", "and", "D.This", "paper", "uses", "the", "computational", "fluid", "dynamics", "(", "CFD", ")", "method", "to", "simulate", ";", "the", "software", "used", "is", "PHOENICS", "." ]
+  }, {
+    "sentence_tokens" : [ "PHOENICS", "can", "accurately", "simulate", "the", "airflow", "phenomenon", "of", "the", "research", "object", "and", "accurately", "simulate", "the", "airflow", ",", "air", "quality", ",", "heat", "transfer", ",", "pollution", "and", "comfort", "of", "the", "ventilation", "system", "[", "48", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Since", "the", "complex", "urban", "environment", "existed", "around", "the", "simulation", "domain", ",", "a", "five-day", "continuous", "site", "observation", "was", "carried", "out", "on", "the", "thermal", "environment", "in", "the", "study", "area", "before", "the", "simulation", "." ]
+  }, {
+    "sentence_tokens" : [ "Measurement", "results", "for", "environmental", "conditions", "at", "the", "time", "of", "remote", "sensing", "image", "acquisition", "were", "used", "as", "the", "reference", "for", "setting", "boundary", "conditions", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "paper", "cheese", "x,", "y", "and", "z", "of", "500", "m", ",", "400", "m", "and", "100", "m", "as", "the", "calculation", "geometry", ",", "and", "the", "number", "of", "cells", "were", "5000", ",", "4000", ",", "1000", ",", "respectively", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "calculation", "settings", "and", "boundary", "conditions", "are", "shown", "in", "Figure", "10", "[", "49,50", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "cross-sectional", "wind", "speed", "distribution", "at", "1.5", "m", "from", "the", "ground", "was", "extracted", "because", "the", "1.5", "m", "was", "the", "optimum", "height", "for", "the", "comfort", "of", "the", "human", "body", "due", "to", "the", "wind", "speed", "[", "51", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "To", "compare", "and", "analyze", "the", "effects", "of", "the", "distance", "between", "buildings", "on", "the", "wind", "speed", ",", "points", "1", "and", "2", "were", "selected", "for", "analysis", "in", "the", "simulation", "diagram", "(", "Figure", "11", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Point", "1", ":", "The", "comparison", "of", "P1", "and", "P2", "showed", "that", "the", "smaller", "the", "building", "distance", ",", "the", "larger", "the", "wind", "speed", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "comparison", "of", "P2", ",", "P3", ",", "and", "P4", "showed", "that", "when", "the", "building", "spacing", "was", "the", "same", ",", "the", "distribution", "of", "buildings", "behind", "could", "impact", "the", "wind", "speed", "at", "point", "1", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "the", "more", "crowded", "the", "building", ",", "the", "lower", "the", "wind", "speed", "." ]
+  }, {
+    "sentence_tokens" : [ "Moreover", ",", "the", "wind", "speeds", "of", "P2", ",", "P3", ",", "and", "P1", "were", "not", "much", "different", ",", "showing", "that", "wind", "speed", "could", "be", "minimized", "only", "when", "there", "were", "a", "large", "number", "of", "buildings", "(", "Table", "2", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Point", "2", ":", "The", "comparison", "of", "P2", ",", "P3", ",", "and", "P1", "showed", "that", "the", "uneven", "distribution", "of", "the", "building", "was", "employed", "to", "increase", "the", "wind", "speed", "inside", "the", "buildings", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "comparison", "of", "P2", ",", "P3", ",", "and", "P4", "showed", "that", "appropriate", "distribution", "of", "buildings", "was", "required", ";", "otherwise", ",", "too", "many", "buildings", "could", "cause", "wind", "speed", "to", "decrease", "or", "even", "stop", "(", "Table", "2", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "the", "effects", "of", "buildings", "on", "wind", "speed", "mainly", "have", "two", "points", ":", "(", "1", ")", "the", "building", "distance", "impacted", "the", "wind", "speed", ",", "i.e", ".,", "the", "smaller", "the", "distance", ",", "the", "greater", "the", "wind", "speed", ";", "(", "2", ")", "the", "uneven", "distribution", "of", "buildings", "impacted", "the", "wind", "speed", ",", "i.e", ".,", "proper", "building", "distribution", "helped", "improve", "the", "ventilation", "inside", "the", "block", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "end", ",", "whether", "it", "is", "the", "building", "spacing", "or", "the", "uneven", "distribution", "of", "the", "building", "when", "the", "building", "density", "is", "large", "enough", ",", "the", "air", "circulation", "inside", "a", "building", "will", "be", "severely", "hindered", ",", "and", "wind", "speed", "will", "become", "smaller", "." ]
+  }, {
+    "sentence_tokens" : [ "When", "the", "building", "density", "is", "small", ",", "the", "wind", "speed", "changes", "synchronously", ";", "however", ",", "when", "the", "building", "density", "is", "large", "enough", ",", "the", "wind", "speed", "decreases", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "feature", "is", "the", "same", "as", "that", "of", "a", "covered-up", "factor.This", "analysis", "explains", "why", "the", "cooling", "effect", "of", "vegetation", "is", "stronger", "when", "the", "building", "density", "is", "0.35", "-", "0.50", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "in", "the", "middle-", "and", "high-rise", "areas", ",", "when", "the", "building", "density", "reaches", "0.5", "-", "0.6", ",", "the", "cooling", "effect", "of", "vegetation", "is", "very", "strong", "(", "Figure", "8b", ",", "c", ",", "e", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "article", "speculated", "that", "this", "might", "also", "be", "related", "to", "wind", "speed", "because", "a", "large", "number", "of", "examples", "have", "proven", "that", "it", "is", "easy", "to", "form", "a", "greater", "inter", "building", "wind", "between", "closely", "adjacent", "tall", "buildings", ",", "which", "can", "also", "be", "called", "the", "street", "canyon", "effect", "." ]
+  }, {
+    "sentence_tokens" : [ "Of", "course", ",", "to", "prove", "this", "requires", "more", "scholars", "to", "conduct", "further", "research", "." ]
+  }, {
+    "sentence_tokens" : [ "4", "." ]
+  }, {
+    "sentence_tokens" : [ "Conclusions", "." ]
+  }, {
+    "sentence_tokens" : [ "4.1", "." ]
+  }, {
+    "sentence_tokens" : [ "Main", "Achievements", "." ]
+  }, {
+    "sentence_tokens" : [ "Many", "studies", "have", "shown", "that", "LST", "was", "impacted", "by", "building", "characteristics", "and", "vegetation", "distribution", ",", "but", "the", "interaction", "between", "the", "factors", "has", "rarely", "been", "paid", "attention", "to", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "paper", "analyzed", "the", "cooling", "effect", "of", "vegetation", "and", "studied", "the", "influence", "of", "building", "characteristics", "on", "the", "cooling", "effect", "." ]
+  }, {
+    "sentence_tokens" : [ "Through", "comparative", "research", ",", "this", "paper", "found", "that", "the", "cooling", "effect", "of", "vegetation", "was", "analyzed", "according", "to", "different", "building", "densities", ",", "and", "the", "interference", "of", "other", "influencing", "factors", "was", "small", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "main", "influence", "on", "the", "cooling", "effect", "of", "vegetation", "was", "building", "characteristics.The", "urban", "thermal", "environment", "was", "impacted", "by", "vegetation", "distribution", "and", "architectural", "characteristics", "." ]
+  }, {
+    "sentence_tokens" : [ "At", "the", "same", "time", ",", "there", "were", "also", "some", "factors", "that", "have", "not", "been", "discovered", "or", "proven", "in", "the", "city", ",", "which", "were", "easily", "covered", "up", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "paper", "discovered", "the", "characteristics", "of", "wind", "speed", "changes", "hidden", "under", "the", "building", "features", ",", "as", "well", "as", "its", "impact", "on", "LST", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "wind", "speed", "between", "buildings", "change", "with", "the", "increase", "of", "building", "density", ",", "and", "the", "changes", "in", "wind", "speed", "do", "impact", "the", "LST", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "reasonable", "building", "density", "value", "can", "fully", "reflect", "the", "characteristics", "of", "urban", "ventilation", "and", "achieve", "the", "effects", "of", "alleviating", "urban", "heat", "islands", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "addition", ",", "wind", "speed", "was", "not", "only", "impacted", "by", "the", "building", "density", "but", "also", "related", "to", "the", "spatial", "distribution", "of", "the", "building", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "reasonable", "building", "structure", "will", "provide", "a", "powerful", "aid", "to", "alleviate", "the", "urban", "heat", "island", "." ]
+  }, {
+    "sentence_tokens" : [ "Through", "comparative", "analysis", ",", "this", "paper", "found", "that", "when", "the", "building", "density", "was", "0.35", "-", "0.50", ",", "the", "cooling", "effect", "of", "vegetation", "was", "better", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "conclusion", "provides", "powerful", "help", "for", "urban", "planning", "and", "mitigating", "the", "impact", "of", "the", "thermal", "environment", "on", "human", "health", "." ]
+  }, {
+    "sentence_tokens" : [ "4.2", "." ]
+  }, {
+    "sentence_tokens" : [ "Limitations", "and", "Uncertainties", "." ]
+  }, {
+    "sentence_tokens" : [ "Due", "to", "the", "effects", "of", "the", "water", "body", "on", "the", "surrounding", "land", "surface", "temperature", ",", "the", "analysis", "of", "correlations", "between", "vegetation", ",", "building", "density", ",", "and", "land", "surface", "temperature", "were", "disturbed", "[", "19,34", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "there", "were", "very", "few", "water", "bodies", "in", "the", "study", "area", ",", "and", "outliers", "were", "removed", "during", "correlation", "analysis", "." ]
+  }, {
+    "sentence_tokens" : [ "Thus", ",", "this", "paper", "minimized", "the", "interference", "effects", "of", "the", "above", "factors.The", "wind", "speed", "between", "buildings", "was", "a", "highly", "susceptible", "factor", "and", "so", "real-time", "measurement", "was", "difficult", "." ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "the", "simulation", "was", "used", "to", "prove", "the", "change", "characteristics", "of", "wind", "speed", "between", "buildings", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "paper", ",", "only", "representative", "sample", "areas", "were", "selected", "for", "wind", "speed", "simulation", ",", "which", "could", "not", "fully", "express", "the", "relationship", "between", "wind", "speed", "and", "building", "features", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "concluded", "that", "the", "wind", "speed", "was", "impacted", "by", "different", "building", "densities", "and", "building", "distributions", "through", "simulation", "experiments", ",", "yet", "uncertainty", "was", "still", "present", "." ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "we", "were", "only", "trying", "to", "reveal", "this", "problem", ",", "because", "there", "was", "no", "more", "support", ",", "we", "could", "not", "be", "sure", "that", "this", "complex", "urban", "issue", "was", "fully", "explained", ",", "but", "at", "least", "for", "our", "graphs", "and", "conclusions", ",", "we", "could", "confirm", "that", "this", "potential", "factor", "exists", ",", "and", "we", "also", "hope", "more", "scholars", "come", "to", "support", "our", "view", "." ]
+  }, {
+    "sentence_tokens" : [ "4.3", "." ]
+  }, {
+    "sentence_tokens" : [ "Implications", "for", "Environmental", "Management", "." ]
+  }, {
+    "sentence_tokens" : [ "Urbanization", "is", "a", "global", "trend", "." ]
+  }, {
+    "sentence_tokens" : [ "Until", "now", ",", "more", "than", "50", "%", "of", "the", "human", "population", "are", "situated", "in", "cities", "[", "23", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Thus", ",", "cities", "have", "become", "the", "main", "living", "environment", "for", "people", ",", "and", ",", "as", "such", ",", "it", "is", "significant", "to", "study", "the", "mechanism", "of", "the", "urban", "heat", "island", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "research", "showed", "that", "the", "characteristics", "of", "buildings", "have", "an", "impact", "on", "the", "cooling", "effect", "of", "vegetation", ",", "and", "the", "specific", "performance", "was", "the", "cooling", "effect", "of", "wind", "speed", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "found", "that", "good", "ventilation", "not", "only", "effectively", "avoided", "the", "accumulation", "of", "air", "pollutants", "in", "the", "city", ",", "but", "it", "improved", "the", "land", "surface", "temperature", "and", "brought", "residents", "a", "cooling", "temperature", "in", "the", "hot", "summer", "[", "8,9,10,11,12", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Whether", "focusing", "on", "sustainable", "development", "of", "the", "environment", "or", "human", "'", "s", "physical", "and", "mental", "health", ",", "urban", "ventilation", "is", "a", "necessary", "element", "to", "add", "to", "cities", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "article", "determined", "the", "range", "of", "building", "density", "for", "optimal", "ventilation", "(", "Figure", "11", ")", ",", "which", "had", "a", "great", "reference", "value", "for", "urban", "planning.In", "recent", "years", ",", "increasing", "ventilation", "corridors", "have", "been", "constructed", "." ]
+  }, {
+    "sentence_tokens" : [ "Ventilation", "is", "one", "of", "the", "important", "measures", "to", "alleviate", "urban", "heat", "islands", "[", "26", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Studying", "the", "effects", "of", "urban", "forms", "on", "ventilation", "was", "herein", "employed", "to", "somewhat", "avoid", "urban", "heat", "accumulation", "in", "urban", "planning", "." ]
+  }, {
+    "sentence_tokens" : [ "Nevertheless", ",", "it", "is", "difficult", "to", "directly", "associate", "architectural", "features", "with", "wind", "speed", "[", "47", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "article", "reflected", "the", "effect", "of", "wind", "speed", "on", "the", "surface", "temperature", "through", "the", "cooling", "effect", "of", "vegetation", ",", "which", "will", "provide", "ideas", "for", "other", "researchers", "." ]
+  } ]
+}

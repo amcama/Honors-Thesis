@@ -1,169 +1,899 @@
-[ {
-  "sentence_tokens" : [ "The", "expression", "of", "IFNB", "under", "viral", "infection", "was", "delayed", "compared", "to", "that", "under", "stimulation", "by", "the", "TLR", "ligands", "poly", "(", "I", ":C", ")", "and", "LPS", "." ],
-  "event_indices" : [ 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 16, 17 ],
-  "controlled_indices" : [ 24, 25 ],
-  "trigger_indices" : [ 13, 14 ],
-  "rule_name" : "Positive_activation_syntax_2_noun",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "The", "expression", "of", "IFNB", "under", "viral", "infection", "was", "delayed", "compared", "to", "that", "under", "stimulation", "by", "the", "TLR", "ligands", "poly", "(", "I", ":C", ")", "and", "LPS", "." ],
-  "event_indices" : [ 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 18, 19, 20, 21, 22, 23 ],
-  "controlled_indices" : [ 24, 25 ],
-  "trigger_indices" : [ 13, 14 ],
-  "rule_name" : "Positive_activation_syntax_2_noun",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "To", "test", "whether", "the", "inferred", "genes", "are", "expressed", "under", "conditions", "known", "to", "induce", "typeI", "interferons", ",", "we", "designed", "primers", "to", "Pteropus", "IFNB", "and", "to", "a", "control", "housekeeping", "gene", "(", "PPIA", ")", "and", "a", "gene", "(", "OAS2", ")", "induced", "by", "paracrine", "IFNB", "signaling", "." ],
-  "event_indices" : [ 35, 36, 37, 38, 39, 40, 41 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 40, 41 ],
-  "controlled_indices" : [ 35, 36 ],
-  "trigger_indices" : [ 37, 38 ],
-  "rule_name" : "Positive_activation_syntax_2_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Even", "Rabies", "virus", ",", "for", "which", "we", "have", "a", "great", "wealth", "of", "experimental", "data", ",", "and", "which", "is", "regarded", "as", "invariably", "lethal", "in", "other", "mammals", ",", "has", "been", "shown", "repeatedly", "to", "have", "decreased", "virulence", "in", "bats", "[", "14", "]", "." ],
-  "event_indices" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34 ],
-  "type" : "Negative_activation",
-  "polarity" : false,
-  "controller_indices" : [ 1, 2 ],
-  "controlled_indices" : [ 33, 34 ],
-  "trigger_indices" : [ 32, 33 ],
-  "rule_name" : "Negative_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Among", "wildlife", "sources", ",", "bats", ",", "mammals", "of", "the", "order", "Chiroptera", ",", "are", "perhaps", "the", "most", "striking", ",", "serving", "as", "the", "primary", "natural", "reservoirs", "for", "many", "human", "pathogens", "[", "2-5", "]", ",", "including", "several", "viruses", "of", "notorious", "lethality", "in", "humans", ":", "Nipah", "virus", "[", "6", "]", ",", "Hendra", "virus", "[", "7", "]", ",", "Ebola", "and", "Marburg", "Viruses", "[", "8,9", "]", ",", "and", "Rabies", "virus", "." ],
-  "entity_one_indices" : [ 62, 63 ],
-  "entity_two_indices" : [ 4, 5 ]
-}, {
-  "sentence_tokens" : [ "Rabies", "virus", "is", "regarded", "as", "the", "most", "lethal", "of", "all", "human", "pathogens", ",", "and", "has", "been", "found", "in", "bats", "for", "over", "a", "century", "[", "10", "]", "." ],
-  "entity_one_indices" : [ 18, 19 ],
-  "entity_two_indices" : [ 0, 1 ]
-}, {
-  "sentence_tokens" : [ "Rabies", "and", "other", "Lyssaviruses", "are", "now", "found", "in", "many", "other", "animals", ",", "but", "phylogenetic", "studies", "indicate", "that", "these", "viruses", "first", "evolved", "in", "bats", "and", "transferred", "to", "animals", "of", "the", "order", "Carnivora", "more", "recently", "[", "11", "]", "." ],
-  "entity_one_indices" : [ 22, 23 ],
-  "entity_two_indices" : [ 0, 1 ]
-}, {
-  "sentence_tokens" : [ "The", "association", "of", "so", "many", "human-lethal", "viruses", "with", "bats", "may", "be", "partially", "attributable", "to", "the", "fact", "that", "the", "order", "Chiroptera", "to", "which", "the", "bats", "belong", ",", "is", "the", "second", "largest", "mammalian", "order", ",", "behind", "only", "Rodentia", "in", "total", "species", "[", "15", "]", "." ],
-  "entity_one_indices" : [ 23, 24 ],
-  "entity_two_indices" : [ 8, 9 ]
-}, {
-  "sentence_tokens" : [ "Most", "pathogenic", "viruses", ",", "including", "all", "of", "the", "viruses", "listed", "above", ",", "possess", "one", "or", "more", "genes", "that", "directly", "antagonize", "the", "type-I", "interferon", "response", "[", "16-19", "]", ",", "indicating", "a", "strong", "coevolutionary", "pressure", "between", "these", "viruses", "and", "the", "type-I", "interferon", "system", "." ],
-  "entity_one_indices" : [ 39, 40 ],
-  "entity_two_indices" : [ 22, 23 ]
-}, {
-  "sentence_tokens" : [ "Type", "I", "inteferons", "are", "the", "primary", "mediators", "of", "one", "of", "the", "earliest", "stages", "of", "the", "antiviral", "response", "in", "mammals", "." ],
-  "entity_one_indices" : [ 15, 16, 17 ],
-  "entity_two_indices" : [ 0, 1 ]
-}, {
-  "sentence_tokens" : [ "Cells", "exposed", "to", "these", "cytokines", "enter", "an", "infection-refractory", "state", "induced", "by", "signaling", "through", "the", "common", "type-I", "interferon", "receptor", "complex", "." ],
-  "entity_one_indices" : [ 16, 17, 18 ],
-  "entity_two_indices" : [ 16, 17 ]
-}, {
-  "sentence_tokens" : [ "All", "of", "the", "known", "mammalian", "type-I", "interferons", "genes", "are", "intronless", ";", "their", "transcripts", "are", "neither", "spliced", "nor", "edited", "before", "translation", ",", "and", "expression", "is", "controlled", "at", "the", "transcriptional", "level", "[", "23,25,26", "]", "." ],
-  "entity_one_indices" : [ 19, 20 ],
-  "entity_two_indices" : [ 4, 5, 6, 7, 8 ]
-}, {
-  "sentence_tokens" : [ "The", "base", "calling", "software", "reads", "the", "raw", "sequencing", "trace", "and", ",", "for", "each", "position", ",", "reports", "a", "single", "base", "and", "a", "quality", "score", "." ],
-  "entity_one_indices" : [ 18, 19 ],
-  "entity_two_indices" : [ 1, 2 ]
-}, {
-  "sentence_tokens" : [ "Each", "of", "these", "15", "assemblies", "maps", "unambiguously", "to", "one", "of", "the", "13", "known", "IFNA", "genes", "or", "the", "single", "whole", "pseudogene", "at", "an", "average", "error", "rate", "of", "6.0", "x", "10", "per", "base", "(", "14", "mismatches", "in", "23374", "bases", ")", "." ],
-  "entity_one_indices" : [ 30, 31 ],
-  "entity_two_indices" : [ 13, 14 ]
-}, {
-  "sentence_tokens" : [ "There", "are", "2", "single", "nucleotide", "differences", "between", "the", "two", "assemblies", "mapping", "to", "IFNA17", "and", "one", "dinucleotide", "difference", "." ],
-  "entity_one_indices" : [ 15, 16 ],
-  "entity_two_indices" : [ 12, 13 ]
-}, {
-  "sentence_tokens" : [ "The", "sequences", "retrieved", "in", "each", "of", "the", "blast", "searches", "were", "then", "assembled", "using", "the", "methods", "described", "above.We", "obtained", "unique", "final", "assemblies", "for", "IFNB", "in", "each", "bat", "." ],
-  "entity_one_indices" : [ 22, 23 ],
-  "entity_two_indices" : [ 7, 8 ]
-}, {
-  "sentence_tokens" : [ "No", "hits", "to", "bovine", "IFNT", "beyond", "those", "already", "obtained", "using", "other", "queries", "were", "found", "." ],
-  "entity_one_indices" : [ 3, 4, 5 ],
-  "entity_two_indices" : [ 1, 2 ]
-}, {
-  "sentence_tokens" : [ "Chiropteran", "Type", "II", "interferon", "." ],
-  "entity_one_indices" : [ 3, 4 ],
-  "entity_two_indices" : [ 1, 2 ]
-}, {
-  "sentence_tokens" : [ "The", "results", "are", "as", "follows.We", "obtained", "DNA", "sequences", "from", "19", "independent", "IFNB", "clones", "from", "two", "individual", "bats", "." ],
-  "entity_one_indices" : [ 16, 17 ],
-  "entity_two_indices" : [ 11, 12 ]
-}, {
-  "sentence_tokens" : [ "The", "error", "rate", "was", "consistent", "with", "that", "found", "in", "the", "IFNB", "genes", "at", "1.7", "x", "10", "per", "base", "(", "6", "errors", "in", "3430", "bases", ")", "." ],
-  "entity_one_indices" : [ 17, 18 ],
-  "entity_two_indices" : [ 10, 11 ]
-}, {
-  "sentence_tokens" : [ "For", "IFND", "and", "IFNA", ",", "respectively", ",", "we", "collected", "sequences", "from", "32", "and", "52", "clones", "from", "a", "single", "animal", "." ],
-  "entity_one_indices" : [ 3, 4 ],
-  "entity_two_indices" : [ 1, 2 ]
-}, {
-  "sentence_tokens" : [ "OAS", "expression", "lagged", "behind", "that", "of", "IFNB", ",", "reaching", "its", "peak", "value", "by", "8", "hours", ",", "declining", "from", "the", "peak", "level", "only", "partially", "by", "24", "hours", "." ],
-  "entity_one_indices" : [ 6, 7 ],
-  "entity_two_indices" : [ 0, 1 ]
-}, {
-  "sentence_tokens" : [ "In", "contrast", ",", "cells", "treated", "with", "VSV", "had", "peak", "levels", "of", "IFNB", "appear", "by", "8", "hours", "and", "remain", "almost", "unchanged", "to", "24", "hours", ";", "OAS", "expression", "rose", "more", "slowly", ",", "and", "had", "not", "reached", "a", "maximum", "level", "by", "24", "hours", "(", "Figure", "5", ")", "." ],
-  "entity_one_indices" : [ 24, 25 ],
-  "entity_two_indices" : [ 11, 12 ]
-}, {
-  "sentence_tokens" : [ "We", "validated", "the", "method", "on", "raw", ",", "unassembled", "traces", "from", "the", "human", "genome", "sequencing", "project", ",", "finding", "that", "we", "could", "assemble", "the", "known", "interferon", "alpha", "sequences", "accurately", ",", "and", "further", ",", "identify", "at", "least", "one", "case", "in", "which", "two", "alleles", "are", "present.It", "should", "be", "noted", "that", "our", "method", "requires", "more", "computation", "than", "assembly", "methods", "currently", "in", "use", "due", "to", "the", "numerical", "minimization", "over", "the", "mutation", "frequency", "required", "in", "Eq", "(", "10", ")", ",", "and", "is", "therefore", "not", "suitable", "for", "large-scale", "assembly.Using", "this", "method", ",", "we", "inferred", "a", "total", "of", "61", "type-I", "interferon", "genes", "with", "intact", "ORFs", "from", "the", "whole-genome", "shotgun", "trace", "archives", "for", "two", "chiropteran", "species", ",", "Pteropus", "vampyrus", "and", "Myotis", "lucifugus", "." ],
-  "entity_one_indices" : [ 91, 92 ],
-  "entity_two_indices" : [ 23, 24 ]
-}, {
-  "sentence_tokens" : [ "A", "recent", "analysis", "of", "bovine", "type-I", "interferons", "from", "the", "assembled", "Bos", "taurus", "genome", "[", "32", "]", "finds", "26", "intact", "IFNW", "genes", ",", "providing", "precedent", "for", "our", "otherwise", "striking", "results", "." ],
-  "entity_one_indices" : [ 19, 20, 21 ],
-  "entity_two_indices" : [ 4, 5, 6, 7 ]
-}, {
-  "sentence_tokens" : [ "The", "gene", "family", "assembly", "from", "trace", "archives", "indicates", "that", "there", "are", "7", "intact", "IFNA", "in", "Pteropus", ";", "analysis", "of", "direct", "sequencing", "from", "PBMCs", "gives", "maximum", "posterior", "probability", "to", "the", "presence", "of", "9", "IFNA", "genes", "(", "Figure", "4", ")", ",", "with", "a", "90", "%", "credible", "interval", "containing", "6", "to", "16", "genes", "." ],
-  "entity_one_indices" : [ 32, 33 ],
-  "entity_two_indices" : [ 13, 14 ]
-}, {
-  "sentence_tokens" : [ "It", "is", "striking", "to", "us", "that", "this", "family", "seems", "to", "have", "been", "so", "dramatically", "enlarged", "in", "bats", "." ],
-  "entity_one_indices" : [ 16, 17 ],
-  "entity_two_indices" : [ 6, 7, 8 ]
-}, {
-  "sentence_tokens" : [ "Searching", "the", "bat", "trace", "archives", "with", "bovine", "IFNT", "did", "not", "produce", "hits", "that", "had", "not", "been", "returned", "with", "the", "other", "searches", "." ],
-  "entity_one_indices" : [ 11, 12 ],
-  "entity_two_indices" : [ 6, 7, 8 ]
-}, {
-  "sentence_tokens" : [ "The", "forward", "and", "reverse", "primers", "encoded", "restriction", "sites", "for", "NheI", "and", "XhoI", "respectively", ",", "which", "allowed", "cloning", "of", "the", "full", "length", "gene", "into", "mammalian", "expression", "vector", "pcDNA3.1", "(", "+", ")", "." ],
-  "entity_one_indices" : [ 11, 12 ],
-  "entity_two_indices" : [ 9, 10 ]
-}, {
-  "sentence_tokens" : [ "Amplification", "was", "followed", "by", "a", "final", "elongation", "step", "at", "72", "degrees", "C", "for", "5", "minutes", "and", "samples", "held", "at", "4", "degrees", "C.", "PCR", "was", "performed", "on", "a", "P", "x", "2", "Thermal", "Cycler", "from", "ThermoElectron", "Corporation", "(", "Waltham", ",", "MA", ")", "." ],
-  "entity_one_indices" : [ 38, 39 ],
-  "entity_two_indices" : [ 7, 8 ]
-}, {
-  "sentence_tokens" : [ "Stimulants", "were", "diluted", "such", "that", "the", "addition", "of", "250", "mu", "l", "stimulant", "would", "give", "a", "final", "concentration", "of", "10", "mu", "g/ml", "poly", "I", ":C", ",", "1", "mu", "g/ml", "LPS", ",", "or", "an", "MOI", "of", "5", "for", "VSV", "." ],
-  "entity_one_indices" : [ 28, 29 ],
-  "entity_two_indices" : [ 21, 22, 23, 24 ]
-}, {
-  "sentence_tokens" : [ "Cells", "were", "incubated", "at", "37", "'", "and", "5", "%", "CO2", "for", "the", "indicated", "times", ",", "after", "which", "cells", "were", "harvested", "into", "RNA", "lysis", "buffer", "(", "Qiagen", "RNEasy", "kit", ")", "according", "to", "the", "manufacturer", "'s", "instructions.Purified", "RNA", "was", "prepared", "from", "these", "whole-cell", "lysates", "as", "described", "in", "the", "protocols", "accompanying", "the", "Qiagen", "RNeasy", "kit", ",", "Qiashedder", ",", "and", "Qiagen", "RNeasy", "Mini", "kit", "and", "Qiagen", "DNase-Free", "DNase", "Set", "." ],
-  "entity_one_indices" : [ 56, 57, 58, 59, 60, 61, 62, 63, 64 ],
-  "entity_two_indices" : [ 9, 10 ]
-}, {
-  "sentence_tokens" : [ "Quantitative", "real-time", "PCR", "was", "performed", "in", "an", "Eppendorf", "Mastercycler", "ep", "realplex", "thermal", "cycler", "using", "SYBRGreenER", "qPCR", "Supermix", "and", "primers", "designed", "from", "the", "inferred", "gene", "sequences", "(", "additional", "file", "3", ")", "." ],
-  "entity_one_indices" : [ 14, 15, 16, 17 ],
-  "entity_two_indices" : [ 7, 8, 9, 10, 11 ]
-}, {
-  "sentence_tokens" : [ "(", "14", ")", "The", "pmf", "on", "c", "is", "given", "by", "the", "recursion", "(", "15", ")", "with", "P", "(", "1", "|", "g", ",1", ")", "=", "1", "and", "P", "(", "c", "|", "g", ",1", ")", "=", "0", "for", "c", "!=", "1.P", "(", "S", "|", "c", ")", "is", "approximated", "by", "minimizing", "the", "number", ",", "m", ",", "of", "mutations", "over", "the", "assignments", "of", "observed", "sequences", "to", "c", "groups", "." ],
-  "entity_one_indices" : [ 40, 41, 42, 43 ],
-  "entity_two_indices" : [ 36, 37, 38, 39 ]
-}, {
-  "sentence_tokens" : [ "P", "is", "then", "the", "posterior", "probability", "of", "getting", "m", "mutations", "given", "the", "observed", "number", "of", "mutations", "in", "the", "IFNB", "and", "IFNK", "datasets.Note", "that", "this", "technique", "is", "independent", "of", "the", "assembly", "methods", "described", "elsewhere", "in", "the", "paper", "." ],
-  "entity_one_indices" : [ 20, 21 ],
-  "entity_two_indices" : [ 18, 19 ]
-}, {
-  "sentence_tokens" : [ "ER", "and", "TBK", "conceived", "the", "project", "and", "designed", "the", "experiments", "." ],
-  "entity_one_indices" : [ 2, 3 ],
-  "entity_two_indices" : [ 0, 1 ]
-} ]
+{
+  "regulations" : [ {
+    "sentence_tokens" : [ "The", "expression", "of", "IFNB", "under", "viral", "infection", "was", "delayed", "compared", "to", "that", "under", "stimulation", "by", "the", "TLR", "ligands", "poly", "(", "I", ":C", ")", "and", "LPS", "." ],
+    "event_indices" : [ 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 16, 17 ],
+    "controlled_indices" : [ 24, 25 ],
+    "trigger_indices" : [ 13, 14 ],
+    "rule_name" : "Positive_activation_syntax_2_noun",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "The", "expression", "of", "IFNB", "under", "viral", "infection", "was", "delayed", "compared", "to", "that", "under", "stimulation", "by", "the", "TLR", "ligands", "poly", "(", "I", ":C", ")", "and", "LPS", "." ],
+    "event_indices" : [ 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 18, 19, 20, 21, 22, 23 ],
+    "controlled_indices" : [ 24, 25 ],
+    "trigger_indices" : [ 13, 14 ],
+    "rule_name" : "Positive_activation_syntax_2_noun",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "To", "test", "whether", "the", "inferred", "genes", "are", "expressed", "under", "conditions", "known", "to", "induce", "typeI", "interferons", ",", "we", "designed", "primers", "to", "Pteropus", "IFNB", "and", "to", "a", "control", "housekeeping", "gene", "(", "PPIA", ")", "and", "a", "gene", "(", "OAS2", ")", "induced", "by", "paracrine", "IFNB", "signaling", "." ],
+    "event_indices" : [ 35, 36, 37, 38, 39, 40, 41 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 40, 41 ],
+    "controlled_indices" : [ 35, 36 ],
+    "trigger_indices" : [ 37, 38 ],
+    "rule_name" : "Positive_activation_syntax_2_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "Even", "Rabies", "virus", ",", "for", "which", "we", "have", "a", "great", "wealth", "of", "experimental", "data", ",", "and", "which", "is", "regarded", "as", "invariably", "lethal", "in", "other", "mammals", ",", "has", "been", "shown", "repeatedly", "to", "have", "decreased", "virulence", "in", "bats", "[", "14", "]", "." ],
+    "event_indices" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34 ],
+    "type" : "Negative_activation",
+    "polarity" : false,
+    "controller_indices" : [ 1, 2 ],
+    "controlled_indices" : [ 33, 34 ],
+    "trigger_indices" : [ 32, 33 ],
+    "rule_name" : "Negative_activation_syntax_1_verb",
+    "rule" : null
+  } ],
+  "hardInstances" : [ {
+    "sentence_tokens" : [ "The", "expression", "of", "IFNB", "under", "viral", "infection", "was", "delayed", "compared", "to", "that", "under", "stimulation", "by", "the", "TLR", "ligands", "poly", "(", "I", ":C", ")", "and", "LPS", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 5, 6, 7 ], [ 18, 19, 20, 21, 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "expression", "of", "IFNB", "under", "viral", "infection", "was", "delayed", "compared", "to", "that", "under", "stimulation", "by", "the", "TLR", "ligands", "poly", "(", "I", ":C", ")", "and", "LPS", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 5, 6, 7 ], [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "To", "test", "whether", "the", "inferred", "genes", "are", "expressed", "under", "conditions", "known", "to", "induce", "typeI", "interferons", ",", "we", "designed", "primers", "to", "Pteropus", "IFNB", "and", "to", "a", "control", "housekeeping", "gene", "(", "PPIA", ")", "and", "a", "gene", "(", "OAS2", ")", "induced", "by", "paracrine", "IFNB", "signaling", "." ],
+    "entities_indices" : [ [ 21, 22 ], [ 29, 30 ] ]
+  }, {
+    "sentence_tokens" : [ "Even", "Rabies", "virus", ",", "for", "which", "we", "have", "a", "great", "wealth", "of", "experimental", "data", ",", "and", "which", "is", "regarded", "as", "invariably", "lethal", "in", "other", "mammals", ",", "has", "been", "shown", "repeatedly", "to", "have", "decreased", "virulence", "in", "bats", "[", "14", "]", "." ],
+    "entities_indices" : [ [ 35, 36 ] ]
+  } ],
+  "withoutRegulations" : [ {
+    "sentence_tokens" : [ "Given", "this", "interpretation", ",", "the", "overall", "frequency", "of", "pre-sequencing", "PCR", "error", "was", "1.6", "x", "10", "per", "base", "(", "17", "errors", "in", "10792", "bases", ")", "The", "inferred", "IFNB", "genes", "are", "91", "%", "identical", "to", "an", "IFNB", "isolated", "from", "Rousettus", "aegyptiacus", "[", "4", "]", "and", "80", "%", "identical", "to", "IFNB", "from", "the", "domestic", "pig", ",", "Sus", "scrofa.Using", "IFNK", "primers", ",", "we", "obtained", "sequences", "from", "7", "clones", "from", "a", "single", "animal", ",", "and", "found", "two", "distinct", "genes", ",", "differing", "from", "each", "other", "in", "two", "nucleotides", "." ],
+    "entities_indices" : [ [ 16, 17 ], [ 26, 27 ], [ 34, 35 ], [ 47, 48 ], [ 55, 56 ] ]
+  }, {
+    "sentence_tokens" : [ "CS", ",", "KH", ",", "and", "AH", "performed", "the", "experiments", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 2, 3 ], [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "Chiropteran", "types", "I", "and", "II", "interferon", "genes", "inferred", "from", "genome", "sequencing", "traces", "by", "a", "statistical", "gene", "family", "assembler", "." ],
+    "entities_indices" : [ [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "IFND", "has", "been", "found", "as", "a", "functional", "gene", "only", "in", "pigs", ",", "where", "the", "gene", "product", "is", "expressed", "in", "the", "placenta", "and", "plays", "a", "role", "in", "embryonic", "development", "[", "33", "]", ",", "but", "is", "not", "suspected", "of", "involvement", "in", "the", "response", "to", "viruses", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 10, 11 ], [ 40, 41, 42, 43 ] ]
+  }, {
+    "sentence_tokens" : [ "Pteropus", "produced", "a", "single", "final", "assembly", ",", "which", "had", "an", "intact", "ORF.The", "sequencing", "traces", "returned", "in", "the", "search", "on", "IFNA2", "produced", "multiple", "final", "assemblies", "that", "fall", "into", "three", "distinct", "families", "with", "clear", "similarity", "to", "IFNA", ",", "IFNW", ",", "and", "IFND", "(", "Table", "1", ")", ",", "respectively.No", "relevant", "hits", "to", "murine", "IFNZ", "were", "found", "in", "either", "chiropteran", "genome", "." ],
+    "entities_indices" : [ [ 19, 20 ], [ 34, 35 ], [ 36, 37 ], [ 39, 40 ], [ 47, 48 ], [ 49, 50, 51 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "used", "our", "methods", "to", "infer", "the", "type-II", "interferon", "genes", "in", "the", "two", "bats", "by", "using", "the", "full-length", "human", "IFNG", "gene", "comprising", "introns", "and", "exons", "(", "4972", "bases", ",", "NC_000012", "REGION", ":", "complement", "(", "68548550", ".." ],
+    "entities_indices" : [ [ 8, 9 ], [ 13, 14 ], [ 19, 20 ], [ 29, 30, 31 ] ]
+  }, {
+    "sentence_tokens" : [ "Genomic", "DNA", "was", "prepared", "from", "whole", "unfractionated", "peripheral", "blood", "from", "Pteropus", "vampyrus", "bats", "." ],
+    "entities_indices" : [ [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "validated", "the", "method", "by", "inferring", "the", "human", "IFNA", "genes", "from", "the", "genome", "trace", "archives", ",", "and", "used", "it", "to", "infer", "61", "type-I", "interferon", "genes", ",", "and", "single", "type-II", "interferon", "genes", "in", "the", "bats", "Pteropus", "vampyrus", "and", "Myotis", "lucifugus", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 23, 24 ], [ 29, 30 ], [ 33, 34 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "IFNA", ",", "four", "sequences", "were", "recovered", "multiple", "times", "from", "independent", "procedures", "." ],
+    "entities_indices" : [ [ 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "It", "is", "worth", "noting", "that", "the", "placental", "type-I", "interferon", "in", "cattle", "is", "IFNT", "rather", "than", "IFND", "[", "34", "]", "." ],
+    "entities_indices" : [ [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "addition", ",", "bat", "populations", "in", "North", "America", "are", "declining", "rapidly", "as", "a", "result", "of", "white-nose", "syndrome", ",", "an", "emergent", "disease", "associated", "with", "a", "fungal", "pathogen", "[", "35", "]", "." ],
+    "entities_indices" : [ [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "Type", "I", "interferons", "in", "Myotis", "lucifugus", "and", "Pteropus", "vampyrus", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "Animals", "were", "housed", "together", "with", "conspecifics", "in", "an", "indoor", "and", "outdoor", "circular", "flight", "enclosure", "and", "were", "fed", "a", "mixture", "of", "fruit", ",", "vegetables", ",", "commercial", "primate", "chow", ",", "and", "a", "vitamin", "supplement", "." ],
+    "entities_indices" : [ [ 30, 31 ] ]
+  }, {
+    "sentence_tokens" : [ "SARS", "like", "Coronaviruses", "have", "also", "been", "found", "in", "bats", "[", "12,13", "]", "and", "so", "far", "provide", "the", "closest", "link", "to", "the", "agent", "of", "human", "SARS.Infection", "by", "each", "of", "these", "viruses", "in", "bats", "appears", "to", "be", "asymptomatic", "or", "of", "greatly", "reduced", "pathology", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 8, 9 ], [ 31, 32 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "performed", "this", "procedure", "in", "three", "different", "ways.First", ",", "we", "collected", "relevant", "sequencing", "traces", "by", "performing", "a", "BLAST", "search", "using", "the", "567", "nt-long", "protein", "coding", "portion", "of", "the", "human", "IFNA2", "transcript", "(", "NM_000605", ")", "and", "retrieved", "291", "traces", "with", "expected", "values", "less", "than", "10", "." ],
+    "entities_indices" : [ [ 17, 18 ], [ 29, 30 ], [ 32, 33 ] ]
+  }, {
+    "sentence_tokens" : [ "Gene", "expression", "." ],
+    "entities_indices" : [ [ 0, 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "both", "cases", ",", "1000", "boot-strap", "replications", "were", "generated", "using", "seqboot", "and", "the", "consensus", "phylogeny", "was", "assembled", "with", "consense", ",", "both", "from", "the", "PHYLIP", "package", "." ],
+    "entities_indices" : [ [ 23, 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "Type", "I", "inteferons", "are", "the", "primary", "mediators", "of", "one", "of", "the", "earliest", "stages", "of", "the", "antiviral", "response", "in", "mammals", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 15, 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "Quantitative", "real-time", "PCR", "was", "performed", "in", "an", "Eppendorf", "Mastercycler", "ep", "realplex", "thermal", "cycler", "using", "SYBRGreenER", "qPCR", "Supermix", "and", "primers", "designed", "from", "the", "inferred", "gene", "sequences", "(", "additional", "file", "3", ")", "." ],
+    "entities_indices" : [ [ 7, 8, 9, 10, 11 ], [ 14, 15, 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "humans", ",", "mice", "and", "pigs", ",", "there", "is", "just", "one", "IFNW", "gene", "but", "up", "to", "two", "dozen", "members", "in", "each", "bat", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 5, 6 ], [ 11, 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "Cells", "were", "collected", "from", "the", "interface", ",", "washed", ",", "and", "plated", "on", "24", "well", "flat-bottom", "tissue", "culture", "plates", "(", "2", "x", "10", "cells", "and", "well", ")", "in", "a", "total", "volume", "of", "250", "mu", "l.", "Cells", "were", "treated", "as", "indicated", "with", "either", "poly", "(", "I", ":C", ")", "(", "Invivogen", ")", ",", "LPS", "(", "Sigma", ")", ",", "or", "VSV", "(", "Ramsburg", "lab", "stocks", "confirmed", "endotoxin", "free", "using", "LAL", "assay", ")", "." ],
+    "entities_indices" : [ [ 41, 42, 43, 44, 45, 46 ], [ 50, 51 ], [ 62, 63 ], [ 65, 66 ] ]
+  }, {
+    "sentence_tokens" : [ "One", "pair", "of", "distinct", "assemblies", "was", "mapped", ",", "erroneously", ",", "to", "a", "single", "IFNA", "." ],
+    "entities_indices" : [ [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "(", "14", ")", "The", "pmf", "on", "c", "is", "given", "by", "the", "recursion", "(", "15", ")", "with", "P", "(", "1", "|", "g", ",1", ")", "=", "1", "and", "P", "(", "c", "|", "g", ",1", ")", "=", "0", "for", "c", "!=", "1.P", "(", "S", "|", "c", ")", "is", "approximated", "by", "minimizing", "the", "number", ",", "m", ",", "of", "mutations", "over", "the", "assignments", "of", "observed", "sequences", "to", "c", "groups", "." ],
+    "entities_indices" : [ [ 36, 37, 38, 39 ], [ 40, 41, 42, 43 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "bat", "genes", "are", "typically", "but", "not", "universally", "more", "closely", "related", "to", "the", "orthologous", "pig", "genes", "than", "to", "the", "orthologous", "human", "genes", "." ],
+    "entities_indices" : [ [ 1, 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "No", "hits", "to", "bovine", "IFNT", "beyond", "those", "already", "obtained", "using", "other", "queries", "were", "found", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 3, 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "base", "calling", "software", "reads", "the", "raw", "sequencing", "trace", "and", ",", "for", "each", "position", ",", "reports", "a", "single", "base", "and", "a", "quality", "score", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "Amplification", "was", "followed", "by", "a", "final", "elongation", "step", "at", "72", "degrees", "C", "for", "5", "minutes", "and", "samples", "held", "at", "4", "degrees", "C.", "PCR", "was", "performed", "on", "a", "P", "x", "2", "Thermal", "Cycler", "from", "ThermoElectron", "Corporation", "(", "Waltham", ",", "MA", ")", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 38, 39 ] ]
+  }, {
+    "sentence_tokens" : [ "TBK", "developed", ",", "implemented", ",", "and", "applied", "the", "statistical", "methods", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "Chiropteran", "Type", "II", "interferon", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "likelihood", "function", "for", "the", "observed", "set", "S", "of", "sequences", "is", "a", "function", "of", "the", "true", "number", ",", "g", ",", "of", "genes", "and", "the", "sample", "size", ",", "n", ",", "by", "summing", "over", "the", "unobserved", "number", ",", "c", ",", "of", "distinct", "genes", "sampled", "." ],
+    "entities_indices" : [ [ 6, 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "Accepting", "this", "conclusion", "reduces", "the", "error", "rate", "to", "less", "than", "4", "x", "10", "per", "base", "." ],
+    "entities_indices" : [ [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "experimental", "infections", "of", "mice", "with", "Rabies", "virus", ",", "the", "investigators", "noted", "a", "marked", "correlation", "between", "survival", "and", "IFN", "production", "[", "20", "]", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 4, 5 ], [ 6, 7 ], [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "All", "animals", "were", "handled", "in", "strict", "accordance", "with", "good", "animal", "practice", "as", "defined", "by", "the", "relevant", "national", "and/or", "local", "animal", "welfare", "bodies", ",", "and", "all", "animal", "work", "was", "covered", "by", "an", "IACUC", "protocol", "from", "the", "Lubee", "Bat", "Conservancy", "(", "USDA", "Research", "Facility", "#", "58-R-0131", ")", "." ],
+    "entities_indices" : [ [ 36, 37 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "recent", "analysis", "of", "bovine", "type-I", "interferons", "from", "the", "assembled", "Bos", "taurus", "genome", "[", "32", "]", "finds", "26", "intact", "IFNW", "genes", ",", "providing", "precedent", "for", "our", "otherwise", "striking", "results", "." ],
+    "entities_indices" : [ [ 4, 5, 6, 7 ], [ 19, 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "There", "are", "13", "human", "functional", "IFN", "alpha", "genes", ",", "as", "well", "as", "single", "functional", "genes", "for", "IFN", "beta", ",", "IFN", "epsilon", ",", "IFN", "omega", ",", "and", "IFN", "kappa", "The", "type", "1", "interferons", "are", "highly", "pleiomorphic", ",", "exhibiting", "both", "distinct", "and", "complex", "overlapping", "function", "[", "21,24", "]", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 16, 17 ], [ 19, 20 ], [ 22, 23 ], [ 26, 27 ], [ 29, 30 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "validated", "the", "method", "by", "inferring", "the", "human", "interferon-alpha", "(", "IFNA", ")", "gene", "family", "directly", "from", "the", "human", "whole-genome", "sequencing", "trace", "archives", ",", "and", "comparing", "the", "results", "to", "IFNA", "gene", "sequences", "known", "from", "the", "finished", "human", "genome", "(", "as", "well", "as", "from", "decades", "of", "molecular", "biology", "on", "the", "human", "IFNA", ")", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 10, 11 ], [ 28, 29 ], [ 49, 50 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "one", "case", ",", "a", "pair", "of", "assemblies", "mapped", "to", "a", "single", "genomic", "gene", ",", "IFNA17", "." ],
+    "entities_indices" : [ [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "set", "consisting", "of", "type-I", "interferon", "amino", "acid", "sequences", "from", "human", "(", "Homo", "sapiens", ")", ",", "domestic", "pig", "(", "Sus", "scrofa", ")", ",", "duckbill", "platypus", "(", "Ornithorhynchus", "anatinus", ")", "and", "the", "amino", "acid", "sequences", "corresponding", "to", "the", "Chiropteran", "genes", "inferred", "in", "this", "paper", "was", "submitted", "to", "multiple", "sequence", "alignment", "by", "CLUSTALW", "2.0.10", "[", "36", "]", "and", "ProbCons", "1.12", "[", "37", "]", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 6, 7, 8 ], [ 31, 32, 33 ], [ 50, 51, 52, 53, 54, 55 ], [ 56, 57, 58 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "contrast", ",", "cells", "treated", "with", "VSV", "had", "peak", "levels", "of", "IFNB", "appear", "by", "8", "hours", "and", "remain", "almost", "unchanged", "to", "24", "hours", ";", "OAS", "expression", "rose", "more", "slowly", ",", "and", "had", "not", "reached", "a", "maximum", "level", "by", "24", "hours", "(", "Figure", "5", ")", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "method", "takes", "full", "advantage", "of", "the", "quality", "scores", "generated", "by", "base", "calling", "software", ",", "incorporating", "them", "into", "a", "complete", "probabilistic", "error", "model", ",", "to", "overcome", "the", "limitation", "inherent", "in", "the", "inference", "of", "gene", "family", "members", "from", "partial", "sequence", "information", "." ],
+    "entities_indices" : [ [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "Finally", ",", "we", "confirm", "our", "inferences", "by", "cloning", "and", "sequencing", "genes", "from", "four", "of", "the", "interferon", "families", "." ],
+    "entities_indices" : [ [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "Both", "bats", "have", "multiple", "members", "in", "the", "IFND", "family", "with", "five", "intact", "members", "and", "seven", "pseudogenes", "in", "Pteropus", ",", "and", "twelve", "intact", "members", "in", "Myotis", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 7, 8 ], [ 7, 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "Because", "PCR", "was", "used", "in", "an", "amplification", "step", "prior", "to", "cloning", "(", "unlike", "the", "process", "used", "for", "genomic", "sequencing", ")", ",", "it", "is", "difficult", "to", "discern", "the", "expected", "genetic", "variability", "from", "sequencing", "error", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "One", "pair", "of", "assemblies", "was", "erroneously", "mapped", "to", "a", "single", "IFNA", "pseudogene", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "Stimulants", "were", "diluted", "such", "that", "the", "addition", "of", "250", "mu", "l", "stimulant", "would", "give", "a", "final", "concentration", "of", "10", "mu", "g/ml", "poly", "I", ":C", ",", "1", "mu", "g/ml", "LPS", ",", "or", "an", "MOI", "of", "5", "for", "VSV", "." ],
+    "entities_indices" : [ [ 21, 22, 23, 24 ], [ 28, 29 ] ]
+  }, {
+    "sentence_tokens" : [ "Each", "of", "these", "15", "assemblies", "maps", "unambiguously", "to", "one", "of", "the", "13", "known", "IFNA", "genes", "or", "the", "single", "whole", "pseudogene", "at", "an", "average", "error", "rate", "of", "6.0", "x", "10", "per", "base", "(", "14", "mismatches", "in", "23374", "bases", ")", "." ],
+    "entities_indices" : [ [ 13, 14 ], [ 30, 31 ] ]
+  }, {
+    "sentence_tokens" : [ "Walker", "and", "Roberts", "[", "32", "]", "report", "finding", "three", "IFND", "pseudogenes", ",", "but", "no", "intact", "IFND", "in", "the", "cow", "." ],
+    "entities_indices" : [ [ 9, 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "particular", ",", "the", "interferon", "families", "fall", "into", "distinct", "clades", ",", "with", "the", "exception", "of", "the", "platypus", "IFNA", "genes", ",", "which", "appear", "ancestral", "to", "the", "IFNA", ",", "IFNW", ",", "and", "IFND", "genes", "of", "the", "other", "species", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 17, 18 ], [ 25, 26 ], [ 27, 28 ], [ 30, 31, 32 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "used", "the", "inferred", "sequences", "to", "design", "sequencing", "primers", "and", "make", "several", "clones", "from", "each", "of", "IFNA", ",", "IFNB", ",", "IFND", ",", "and", "IFNK", "." ],
+    "entities_indices" : [ [ 16, 17 ], [ 18, 19 ], [ 20, 21 ], [ 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "TBK", ",", "CS", ",", "and", "ER", "wrote", "the", "manuscript", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 2, 3 ], [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "Assembling", "these", "reads", "using", "our", "method", "produced", "13", "distinct", "assemblies", "with", "two", "or", "more", "reads", "in", "each", ",", "mapping", "(", "as", "described", "above", ")", "to", "12", "different", "human", "genomic", "regions", ":", "7", "IFNAs", ",", "human", "IFNW1", ",", "LOC100130866", "(", "annotated", "by", "NCBI", "as", "similar", "to", "IFNW1", ")", ",", "2", "IFNA", "pseudogenes", "and", "1", "IFNW", "pseudogene", "." ],
+    "entities_indices" : [ [ 35, 36 ], [ 37, 38 ], [ 41, 42 ], [ 45, 46 ], [ 49, 50 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "PCR", "program", "consisted", "of", "an", "initialization", "step", "at", "94", "degrees", "C", "for", "5", "minutes", ",", "then", "30", "cycles", "of", "amplification", "consisting", "of", "denaturation", "at", "94", "degrees", "C", "for", "1", "minute", ",", "annealing", "at", "55", "degrees", "C", "for", "30", "seconds", ",", "and", "elongation", "at", "72", "degrees", "for", "1", "minute", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "contrast", ",", "the", "IFNA", "family", "is", "the", "largest", "IFN-I", "family", "in", "several", "mammals", ",", "including", "humans", ",", "mice", "and", "pigs", ",", "but", "appears", "to", "be", "smaller", "in", "Pteropus", "and", "absent", "but", "for", "pseudogenes", "in", "Myotis", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 9, 10 ], [ 9, 10, 11 ], [ 18, 19 ], [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "state", ",", "transcription", "and", "translation", "of", "viral", "gene", "products", "is", "inhibited", ",", "MHC", "class", "I", "expression", "is", "upregulated", ",", "RNA", "and", "protein", "degradation", "are", "accelerated", "(", "reviewed", "in", "depth", "in", "refs", "[", "21-23", "]", ")", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 6, 7 ], [ 14, 15 ], [ 23, 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "All", "of", "the", "known", "mammalian", "type-I", "interferons", "genes", "are", "intronless", ";", "their", "transcripts", "are", "neither", "spliced", "nor", "edited", "before", "translation", ",", "and", "expression", "is", "controlled", "at", "the", "transcriptional", "level", "[", "23,25,26", "]", "." ],
+    "entities_indices" : [ [ 4, 5, 6, 7, 8 ], [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "Additional", "file", "2", "contains", "an", "alignment", "of", "the", "three", "multiply", "represented", "IFND", "clones", "compared", "to", "the", "IFND", "assemblies.Since", "it", "was", "not", "possible", "to", "determine", "by", "inspection", "what", "the", "underlying", "true", "gene", "sequences", "are", "or", "how", "many", "there", "are", "." ],
+    "entities_indices" : [ [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "low", "coverage", "levels", "of", "these", "projects", "and", "the", "fact", "that", "so", "many", "genes", "with", "immunological", "functions", "appear", "in", "large", "families", "of", "very", "similar", "genes", "requires", "the", "development", "of", "more", "precise", "inferential", "tools", "for", "their", "study.Toward", "that", "end", ",", "we", "have", "developed", "a", "method", "for", "the", "assembly", "of", "genome", "sequence", "fragments", "for", "use", "in", "the", "inference", "of", "gene", "family", "members", "when", "the", "genome", "coverage", "is", "too", "low", "for", "reliable", "complete", "assembly", "." ],
+    "entities_indices" : [ [ 50, 51 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "circumstance", "may", "be", "an", "indication", "that", "there", "are", "additional", "type-I", "interferon", "genes", "not", "covered", "by", "the", "Pteropus", "sequencing", "traces", ",", "and", "may", "also", "reflect", "significant", "population", "polymorphism", "in", "the", "wild", "bat", "population.We", "used", "these", "same", "primers", "to", "show", ",", "using", "quantitative", "RT-PRC", ",", "that", "the", "P.", "vampyrus", "candidate", "IFNB", "and", "OAS2", "(", "a", "gene", "induced", "by", "IFNB", "in", "other", "mammals", ")", ",", "are", "expressed", "upon", "stimulation", "by", "type-I", "inducing", "agents", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 42, 43 ], [ 49, 50 ], [ 51, 52 ], [ 57, 58 ] ]
+  }, {
+    "sentence_tokens" : [ "Among", "wildlife", "sources", ",", "bats", ",", "mammals", "of", "the", "order", "Chiroptera", ",", "are", "perhaps", "the", "most", "striking", ",", "serving", "as", "the", "primary", "natural", "reservoirs", "for", "many", "human", "pathogens", "[", "2-5", "]", ",", "including", "several", "viruses", "of", "notorious", "lethality", "in", "humans", ":", "Nipah", "virus", "[", "6", "]", ",", "Hendra", "virus", "[", "7", "]", ",", "Ebola", "and", "Marburg", "Viruses", "[", "8,9", "]", ",", "and", "Rabies", "virus", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 62, 63 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "find", "no", "evidence", "of", "IFNT", "or", "IFNZ", "in", "either", "bat.For", "IFNB", ",", "IFNK", ",", "and", "IFNE", ",", "we", "find", "one", "member", "of", "each", "in", "P.", "vampyrus", ",", "and", "one", "or", "two", "in", "M.", "lucifugus", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 7, 8 ], [ 11, 12 ], [ 13, 14 ], [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "association", "of", "so", "many", "human-lethal", "viruses", "with", "bats", "may", "be", "partially", "attributable", "to", "the", "fact", "that", "the", "order", "Chiroptera", "to", "which", "the", "bats", "belong", ",", "is", "the", "second", "largest", "mammalian", "order", ",", "behind", "only", "Rodentia", "in", "total", "species", "[", "15", "]", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "mammals", ",", "the", "type", "I", "interferons", "have", "a", "single", "exon", "of", "fewer", "than", "700", "bases", "." ],
+    "entities_indices" : [ [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "forward", "and", "reverse", "primers", "encoded", "restriction", "sites", "for", "NheI", "and", "XhoI", "respectively", ",", "which", "allowed", "cloning", "of", "the", "full", "length", "gene", "into", "mammalian", "expression", "vector", "pcDNA3.1", "(", "+", ")", "." ],
+    "entities_indices" : [ [ 9, 10 ], [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "Most", "pathogenic", "viruses", ",", "including", "all", "of", "the", "viruses", "listed", "above", ",", "possess", "one", "or", "more", "genes", "that", "directly", "antagonize", "the", "type-I", "interferon", "response", "[", "16-19", "]", ",", "indicating", "a", "strong", "coevolutionary", "pressure", "between", "these", "viruses", "and", "the", "type-I", "interferon", "system", "." ],
+    "entities_indices" : [ [ 22, 23 ], [ 39, 40 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "four", "sequences", "are", "within", "1", ",", "2", ",", "5", "and", "6", "bases", "of", "the", "most", "similar", "inferred", "IFNA", "gene", "." ],
+    "entities_indices" : [ [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "reconstruction", "provides", "an", "estimate", "of", "the", "number", "of", "genes", "in", "the", "family", "and", "posterior", "probability", "mass", "functions", "on", "the", "DNA", "sequences", "of", "these", "genes.We", "first", "present", "the", "model", "and", "the", "algorithm", "we", "have", "developed", "to", "minimize", "the", "description", "length", "and", "thereby", "infer", "the", "structure", "of", "the", "gene", "family", "." ],
+    "entities_indices" : [ [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "One", "of", "the", "most", "intriguing", "findings", "of", "late", "is", "that", "bats", "are", "the", "natural", "reservoirs", "of", "many", "of", "the", "most", "pathogenic", "viruses", "in", "humans.While", "it", "is", "known", "that", "microbe-host", "coevolution", "drives", "pathogenicity", "in", "the", "natural", "host", ",", "the", "effect", "of", "such", "coevolution", "on", "alternative", "hosts", "has", "not", "been", "described", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "size", "of", "this", "family", "suggests", "that", "it", "may", "still", "be", "involved", "in", "host", "defense", "in", "bats", "even", "if", "it", "has", "lost", "that", "function", "in", "pigs", "." ],
+    "entities_indices" : [ [ 3, 4, 5 ], [ 16, 17 ], [ 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "Each", "of", "these", "final", "assemblies", "contained", "an", "intact", "ORF", "which", ",", "when", "BLASTed", "against", "the", "NCBI", "nucleotide", "sequence", "database", ",", "returned", "multiple", "hits", "on", "the", "corresponding", "gene", "in", "several", "mammals", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 15, 16 ], [ 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "Alignments", "of", "the", "bat", "DNA", "sequences", "and", "of", "all", "the", "amino", "acid", "sequences", "are", "available", "in", "additional", "files", "4", "." ],
+    "entities_indices" : [ [ 10, 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "There", "are", "2", "single", "nucleotide", "differences", "between", "the", "two", "assemblies", "mapping", "to", "IFNA17", "and", "one", "dinucleotide", "difference", "." ],
+    "entities_indices" : [ [ 12, 13 ], [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "Pteropus", "vampyrus", "IFNB", ",", "IFNK", ",", "IFND", ",", "and", "IFNA", "sequences", "have", "been", "submitted", "to", "Genbank", "(", "GU126493", ",", "HM63650", ",", "HM636501", ",", "and", "HM636502", ")", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 4, 5 ], [ 6, 7 ], [ 9, 10 ], [ 17, 18 ], [ 19, 20 ], [ 21, 22 ], [ 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "IFND", "and", "IFNA", ",", "respectively", ",", "we", "collected", "sequences", "from", "32", "and", "52", "clones", "from", "a", "single", "animal", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "500", "mu", "l", "of", "complete", "medium", "was", "added", "to", "the", "unstimulated", "control", "wells", "." ],
+    "entities_indices" : [ [ 1, 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "OAS", "expression", "lagged", "behind", "that", "of", "IFNB", ",", "reaching", "its", "peak", "value", "by", "8", "hours", ",", "declining", "from", "the", "peak", "level", "only", "partially", "by", "24", "hours", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "bats", "were", "captured", "manually", ",", "anesthesia", "was", "mask", "induced", "with", "5", "%", "isoflurane", "in", "oxygen", "(", "3", "L/min", ")", ",", "and", "the", "bats", "were", "maintained", "with", "2.5", "%", "isoflurane", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 8, 9 ], [ 13, 14 ], [ 15, 16 ], [ 23, 24 ], [ 29, 30 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "results", "are", "as", "follows.We", "obtained", "DNA", "sequences", "from", "19", "independent", "IFNB", "clones", "from", "two", "individual", "bats", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "Bats", ",", "remarkably", ",", "are", "the", "natural", "reservoirs", "of", "many", "of", "the", "most", "pathogenic", "viruses", "in", "humans", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "gene", "family", "assembly", "from", "trace", "archives", "indicates", "that", "there", "are", "7", "intact", "IFNA", "in", "Pteropus", ";", "analysis", "of", "direct", "sequencing", "from", "PBMCs", "gives", "maximum", "posterior", "probability", "to", "the", "presence", "of", "9", "IFNA", "genes", "(", "Figure", "4", ")", ",", "with", "a", "90", "%", "credible", "interval", "containing", "6", "to", "16", "genes", "." ],
+    "entities_indices" : [ [ 13, 14 ], [ 32, 33 ] ]
+  }, {
+    "sentence_tokens" : [ "Bat", "Genome", "Projects", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "validated", "the", "method", "on", "raw", ",", "unassembled", "traces", "from", "the", "human", "genome", "sequencing", "project", ",", "finding", "that", "we", "could", "assemble", "the", "known", "interferon", "alpha", "sequences", "accurately", ",", "and", "further", ",", "identify", "at", "least", "one", "case", "in", "which", "two", "alleles", "are", "present.It", "should", "be", "noted", "that", "our", "method", "requires", "more", "computation", "than", "assembly", "methods", "currently", "in", "use", "due", "to", "the", "numerical", "minimization", "over", "the", "mutation", "frequency", "required", "in", "Eq", "(", "10", ")", ",", "and", "is", "therefore", "not", "suitable", "for", "large-scale", "assembly.Using", "this", "method", ",", "we", "inferred", "a", "total", "of", "61", "type-I", "interferon", "genes", "with", "intact", "ORFs", "from", "the", "whole-genome", "shotgun", "trace", "archives", "for", "two", "chiropteran", "species", ",", "Pteropus", "vampyrus", "and", "Myotis", "lucifugus", "." ],
+    "entities_indices" : [ [ 23, 24 ], [ 91, 92 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "sequences", "retrieved", "in", "each", "of", "the", "blast", "searches", "were", "then", "assembled", "using", "the", "methods", "described", "above.We", "obtained", "unique", "final", "assemblies", "for", "IFNB", "in", "each", "bat", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "IFND", ",", "there", "are", "three", "multiply", "represented", "sequences", "." ],
+    "entities_indices" : [ [ 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "Rabies", "virus", "is", "regarded", "as", "the", "most", "lethal", "of", "all", "human", "pathogens", ",", "and", "has", "been", "found", "in", "bats", "for", "over", "a", "century", "[", "10", "]", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "IFNA", ",", "the", "posterior", "probability", "is", "maximized", "at", "g", "=", "9", "genes", ";", "the", "90", "%", "credible", "interval", "is", "(", "6,17", ")", "." ],
+    "entities_indices" : [ [ 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "validate", "the", "methods", "by", "reconstructing", "the", "human", "type-I", "interferon", "family", "genes", "from", "sequencing", "traces", "from", "the", "human", "genome", "project", "." ],
+    "entities_indices" : [ [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "case", "where", "we", "do", "find", "two", "genes", ",", "we", "are", "confident", "that", "there", "the", "genes", "are", "distinct", ",", "though", "they", "may", "represent", "alleles", "rather", "than", "paralogs.We", "used", "the", "inferred", "sequences", "for", "P.", "vampyrus", "IFNA", ",", "IFNB", ",", "IFND", ",", "and", "IFNK", "to", "design", "oligonucleotide", "primers", "for", "cloning", "and", "sequencing", "and", "recovered", "a", "total", "of", "110", "sequences", "." ],
+    "entities_indices" : [ [ 35, 36 ], [ 37, 38 ], [ 39, 40 ], [ 42, 43 ], [ 45, 46 ] ]
+  }, {
+    "sentence_tokens" : [ "Cells", "exposed", "to", "these", "cytokines", "enter", "an", "infection-refractory", "state", "induced", "by", "signaling", "through", "the", "common", "type-I", "interferon", "receptor", "complex", "." ],
+    "entities_indices" : [ [ 16, 17 ], [ 16, 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "latter", "two", "genes", "were", "also", "inferred", "by", "the", "methods", "described.Fresh", "Pteropus", "PBMCs", "from", "two", "individual", "animals", "were", "cultured", "under", "four", "different", "conditions", ":", "with", "lipopolysaccharide", "(", "LPS", ")", ",", "with", "the", "synthetic", "RNA", "poly", "(", "I", ":C", ")", ",", "with", "Vesicular", "Stomatitis", "Virus", "(", "VSV", ")", ",", "and", "with", "culture", "medium", "alone.With", "LPS", "or", "poly", "(", "I", ":C", ")", "treatment", ",", "IFNB", "mRNA", "expression", "was", "increased", "20-50", "fold", "by", "2", "hours", "and", "decreased", "slowly", "to", "near", "the", "starting", "value", "by", "24", "hours", "." ],
+    "entities_indices" : [ [ 25, 26 ], [ 27, 28 ], [ 34, 35, 36, 37, 38, 39 ], [ 41, 42, 43 ], [ 53, 54 ], [ 55, 56, 57, 58, 59, 60 ], [ 62, 63 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "confirmed", "our", "inferences", "by", "direct", "cloning", "and", "sequencing", "of", "IFNA", ",", "IFNB", ",", "IFND", ",", "and", "IFNK", "in", "P.", "vampyrus", ",", "and", "by", "demonstrating", "transcription", "of", "some", "of", "the", "inferred", "genes", "by", "known", "interferon", "inducing", "stimuli", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 12, 13 ], [ 14, 15 ], [ 17, 18 ], [ 25, 26 ], [ 34, 35 ] ]
+  }, {
+    "sentence_tokens" : [ "Searching", "the", "bat", "trace", "archives", "with", "bovine", "IFNT", "did", "not", "produce", "hits", "that", "had", "not", "been", "returned", "with", "the", "other", "searches", "." ],
+    "entities_indices" : [ [ 6, 7, 8 ], [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "Using", "primers", "derived", "from", "the", "inferred", "interferon", "gene", "sequences", "and", "encoded", "for", "restriction", "enzyme", "cloning", "sites", ",", "the", "genes", "were", "PCR", "amplified", "from", "the", "genomic", "DNA", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "log", "expression", "level", "of", "IFNB", "and", "OAS2", "relative", "to", "the", "housekeeping", "gene", "PPIA", "was", "estimated", "by", "subtracting", "the", "mean", "Ct", "value", "for", "each", "gene", "and", "treatment", "and", "time", "point", "combination", "from", "the", "corresponding", "mean", "Ct", "value", "for", "PPIA", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 7, 8 ], [ 13, 14 ], [ 20, 21 ], [ 35, 36 ], [ 38, 39 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "this", "purpose", ",", "we", "used", "one", "of", "the", "P.vampyrus", "putative", "IFNA", "genes", "rather", "than", "human", "IFNA2", "as", "the", "BLAST", "query", ",", "and", "selected", "a", "subsample", "of", "the", "retrieved", "sequences", "to", "simulate", "low", "coverage.There", "were", "74", "trace", "reads", "in", "the", "subset", "produced", "by", "the", "Whitehead", "Institute", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 16, 17 ], [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "information", "resides", ",", "for", "the", "most", "part", ",", "in", "partially-or", "unassembled", "genome", "sequences", ",", "and", "is", "not", "practically", "available", "for", "such", "purposes", "without", "further", "technical", "developments.Our", "aims", "in", "this", "paper", "are", "to", "describe", "the", "method", "we", "have", "devised", "for", "the", "partial", "assembly", "of", "genome", "sequencing", "traces", "for", "the", "inference", "of", "gene", "families", ",", "to", "validate", "this", "method", "on", "the", "human", "interferon", "alpha", "family", ",", "and", "to", "use", "it", "for", "the", "inference", "of", "the", "type-I", "interferon", "families", "in", "the", "bats", "Myotis", "lucifugus", "(", "little", "brown", "bat", ")", "and", "Pteropus", "vampyrus", "(", "large", "flying", "fox", ")", "." ],
+    "entities_indices" : [ [ 61, 62 ], [ 75, 76 ], [ 79, 80 ] ]
+  }, {
+    "sentence_tokens" : [ "These", "facts", ",", "and", "others", ",", "suggest", "that", "the", "study", "of", "host", "defense", "and", "immunity", "in", "these", "unique", "creatures", "would", "benefit", "the", "pursuit", "of", "ecological", "and", "human", "health", "." ],
+    "entities_indices" : [ [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "greatest", "similarity", "was", "to", "horse", ",", "pig", ",", "and", "cow", "sequences", ",", "with", "about", "80", "%", "nucleotide", "identity.Myotis", "produced", "two", "final", "assemblies", "for", "IFNE", ",", "both", "of", "which", "contain", "intact", "ORFs", "and", "appear", ",", "on", "close", "examination", ",", "to", "be", "genuinely", "distinct", "sequences", "." ],
+    "entities_indices" : [ [ 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "It", "is", "striking", "to", "us", "that", "this", "family", "seems", "to", "have", "been", "so", "dramatically", "enlarged", "in", "bats", "." ],
+    "entities_indices" : [ [ 6, 7, 8 ], [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "error", "rate", "was", "consistent", "with", "that", "found", "in", "the", "IFNB", "genes", "at", "1.7", "x", "10", "per", "base", "(", "6", "errors", "in", "3430", "bases", ")", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "On", "the", "other", "hand", ",", "the", "unique", "lifestyles", "and", "ecological", "circumstances", "of", "bats", "makes", "plausible", "the", "idea", "that", "the", "coevolution", "of", "bats", "and", "their", "viruses", "produced", "unusually", "virulent", "viruses", "and", "a", "host", "antiviral", "response", "tuned", "to", "suppress", "them.If", "the", "latter", "is", "the", "case", ",", "it", "will", "be", "of", "great", "interest", "to", "understand", "the", "ways", "in", "which", "the", "several", "components", "of", "the", "bat", "antiviral", "response", "differ", "from", "those", "in", "humans", "and", "other", "mammals", "." ],
+    "entities_indices" : [ [ 12, 13 ], [ 21, 22 ], [ 32, 33, 34 ], [ 62, 63, 64 ] ]
+  }, {
+    "sentence_tokens" : [ "If", "the", "reported", "base", "is", "X,", "and", "the", "reported", "quality", "score", "is", "q", ",", "we", "take", "the", "output", "to", "represent", "a", "posterior", "probability", "mass", "function", "(", "pmf", ")", "on", "the", "latent", "nucleotide", "state", "at", "that", "position", ",", "given", "by", "(", "1", ")", "where", "D", "represents", "the", "data", "conditioning", "the", "estimate", ",", "and", "epsilon", "(", "q", ")", "is", "defined", "by", "(", "2", ")", "It", "is", "not", "necessary", "to", "specify", "a", "likelihood", "function", ",", "or", "even", "to", "describe", "what", "the", "nature", "of", "D", "is", ",", "so", "we", "simply", "write", "for", "the", "posterior", "probability", "mass", "function", "on", "xi", "in", "the", "jth", "position", "in", "the", "ith", "sequencing", "trace", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 23, 24 ], [ 91, 92 ], [ 94, 95 ] ]
+  }, {
+    "sentence_tokens" : [ "IFNG", ",", "the", "type", "II", "interferon", ",", "has", "multiple", "exons", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 3, 4 ], [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "JR", "and", "TBK", "performed", "the", "phylogenetic", "analysis", "." ],
+    "entities_indices" : [ [ 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "quantity", "of", "primary", "importance", "for", "us", "is", "the", "cost", "difference", "between", "the", "direct", "and", "indirect", "models", "for", "a", "given", "pair", "of", "traces", "(", "10", ")", "The", "logarithmic", "term", "is", "the", "cost", "of", "encoding", "the", "mutation", "rate", "that", "minimizes", "the", "alignment", "score", "[", "30", "]", ";", "the", "argument", "is", "the", "number", "of", "nucleotides", "in", "the", "overlap", "of", "traces", "1", "and", "2", "in", "the", "optimal", "alignment", ",", "ie", ",", "the", "number", "of", "degrees", "of", "freedom", "available", "to", "estimate", "mu", "." ],
+    "entities_indices" : [ [ 77, 78 ] ]
+  }, {
+    "sentence_tokens" : [ "Cells", "were", "incubated", "at", "37", "'", "and", "5", "%", "CO2", "for", "the", "indicated", "times", ",", "after", "which", "cells", "were", "harvested", "into", "RNA", "lysis", "buffer", "(", "Qiagen", "RNEasy", "kit", ")", "according", "to", "the", "manufacturer", "'s", "instructions.Purified", "RNA", "was", "prepared", "from", "these", "whole-cell", "lysates", "as", "described", "in", "the", "protocols", "accompanying", "the", "Qiagen", "RNeasy", "kit", ",", "Qiashedder", ",", "and", "Qiagen", "RNeasy", "Mini", "kit", "and", "Qiagen", "DNase-Free", "DNase", "Set", "." ],
+    "entities_indices" : [ [ 9, 10 ], [ 56, 57, 58, 59, 60, 61, 62, 63, 64 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "IFND", ",", "the", "greatest", "posterior", "probability", "occurs", "at", "g", "=", "19", "genes", ",", "and", "the", "90", "%", "credible", "interval", "is", "(", "15,28", ")", "." ],
+    "entities_indices" : [ [ 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "Cattle", "have", "13", "IFNA", "genes", "in", "spite", "of", "having", "a", "greatly", "enlarged", "IFNW", "family", "[", "32", "]", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 12, 13 ], [ 12, 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "They", "are", "induced", "rapidly", "and", "secreted", "upon", "viral", "infection", "." ],
+    "entities_indices" : [ [ 7, 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "use", "this", "method", "to", "infer", "the", "type-I", "interferon", "families", "from", "the", "sequencing", "traces", "from", "the", "Myotis", "lucifugus", "and", "Pteropus", "vampyrus", "genome", "sequencing", "projects", "." ],
+    "entities_indices" : [ [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "Rabies", "and", "other", "Lyssaviruses", "are", "now", "found", "in", "many", "other", "animals", ",", "but", "phylogenetic", "studies", "indicate", "that", "these", "viruses", "first", "evolved", "in", "bats", "and", "transferred", "to", "animals", "of", "the", "order", "Carnivora", "more", "recently", "[", "11", "]", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "subset", "of", "trace", "reads", "from", "the", "Venter", "Institute", "consisted", "of", "103", "sequences", ",", "producing", "22", "distinct", "assemblies", "with", "2", "or", "more", "reads", ",", "mapping", "to", "22", "different", "regions", "of", "the", "human", "genome", ":", "all", "13", "IFNAs", ",", "1", "IFNA", "pseudogene", ",", "IFNW1", ",", "and", "6", "regions", "annotated", "as", "either", "IFNW", "like", "or", "IFNW", "pseudogenes", "." ],
+    "entities_indices" : [ [ 39, 40 ], [ 42, 43 ], [ 50, 51, 52 ], [ 53, 54, 55 ] ]
+  }, {
+    "sentence_tokens" : [ "There", "are", "two", "bat", "genome", "projects", "currently", "underway", ",", "a", "circumstance", "that", "promises", "to", "speed", "the", "discovery", "host", "factors", "important", "in", "the", "coevolution", "of", "bats", "with", "their", "viruses", "." ],
+    "entities_indices" : [ [ 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "intact", "ORFs", "of", "the", "inferred", "sequences", "were", "aligned", "with", "the", "type-I", "interferons", "from", "humans", "and", "from", "the", "domestic", "pig", ",", "Sus", "scrofa", "(", "which", "is", "substantially", "more", "closely", "related", "to", "bats", "than", "is", "the", "human", ")", ",", "and", "as", "an", "outgroup", ",", "the", "IFNB", "and", "IFNA", "gene", "sequences", "from", "the", "duckbill", "platypus", "(", "Ornithorhynchus", "anatinus", ")", "." ],
+    "entities_indices" : [ [ 11, 12, 13 ], [ 31, 32 ], [ 44, 45 ], [ 46, 47 ] ]
+  }, {
+    "sentence_tokens" : [ "Animals", "were", "housed", "in", "captivity", "at", "the", "Lubee", "Bat", "Conservancy", "in", "Gainesville", ",", "Florida", ",", "USA", "." ],
+    "entities_indices" : [ [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "Additionally", ",", "the", "bat", "genes", "from", "one", "bat", "species", "are", "typically", ",", "but", "not", "universally", ",", "more", "closely", "related", "to", "the", "orthologous", "genes", "from", "the", "other", "bat", "species", "than", "to", "those", "of", "pigs", "or", "humans", "." ],
+    "entities_indices" : [ [ 32, 33 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "find", "that", "the", "largest", "of", "the", "IFN-I", "gene", "families", "in", "both", "bats", "comprises", "genes", "orthologous", "to", "the", "IFNW", "genes", "in", "other", "mammals", "." ],
+    "entities_indices" : [ [ 7, 8, 9 ], [ 7, 8, 9, 10 ], [ 12, 13 ], [ 18, 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "Continue", "at", "step", "2", "until", "total", "assembly", "cost", "can", "no", "longer", "be", "reduced", "." ],
+    "entities_indices" : [ [ 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "used", "the", "protein", "coding", "portions", "of", "the", "human", "genes", "IFNA2", ",", "IFNK", ",", "IFNB", ",", "and", "IFNE", ",", "the", "bovine", "gene", "IFNT", ",", "and", "murine", "gene", "IFNZ", "in", "blast", "searches", "against", "the", "whole", "genome", "shotgun", "sequence", "trace", "archives", "for", "Pteropus", "vampyrus", "and", "Myotis", "lucifugus", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 12, 13 ], [ 14, 15 ], [ 17, 18 ], [ 20, 21, 22, 23 ], [ 27, 28 ], [ 29, 30 ] ]
+  }, {
+    "sentence_tokens" : [ "Minimum", "evolution", "phylogenies", "were", "inferred", "using", "fastme", "[", "39", "]", "based", "on", "the", "distance", "matrix", "calculated", "with", "protdist", "found", "in", "PHYLIP", "." ],
+    "entities_indices" : [ [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "cDNA", "synthesis", "was", "performed", "using", "the", "Invitrogen", "two-step", "qRT-PCR", "kit", "according", "to", "the", "manufacturer", "'s", "protocol", "." ],
+    "entities_indices" : [ [ 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "P", "is", "then", "the", "posterior", "probability", "of", "getting", "m", "mutations", "given", "the", "observed", "number", "of", "mutations", "in", "the", "IFNB", "and", "IFNK", "datasets.Note", "that", "this", "technique", "is", "independent", "of", "the", "assembly", "methods", "described", "elsewhere", "in", "the", "paper", "." ],
+    "entities_indices" : [ [ 18, 19 ], [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "ER", "and", "TBK", "conceived", "the", "project", "and", "designed", "the", "experiments", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "dinucleotide", "difference", "is", "less", "well", "supported", ",", "with", "just", "a", "single", "trace", "covering", "it", "in", "one", "assembly", ",", "though", "the", "corresponding", "bases", "in", "this", "trace", "are", "good", "quality", "." ],
+    "entities_indices" : [ [ 1, 2 ] ]
+  } ],
+  "emptySentences" : [ {
+    "sentence_tokens" : [ "Chiropteran", "types", "I", "and", "II", "interferon", "genes", "inferred", "from", "genome", "sequencing", "traces", "by", "a", "statistical", "gene", "family", "assembler", "." ]
+  }, {
+    "sentence_tokens" : [ "Background", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "rate", "of", "emergence", "of", "human", "pathogens", "is", "steadily", "increasing", ";", "most", "of", "these", "novel", "agents", "originate", "in", "wildlife", "." ]
+  }, {
+    "sentence_tokens" : [ "Bats", ",", "remarkably", ",", "are", "the", "natural", "reservoirs", "of", "many", "of", "the", "most", "pathogenic", "viruses", "in", "humans", "." ]
+  }, {
+    "sentence_tokens" : [ "There", "are", "two", "bat", "genome", "projects", "currently", "underway", ",", "a", "circumstance", "that", "promises", "to", "speed", "the", "discovery", "host", "factors", "important", "in", "the", "coevolution", "of", "bats", "with", "their", "viruses", "." ]
+  }, {
+    "sentence_tokens" : [ "These", "genomes", ",", "however", ",", "are", "not", "yet", "assembled", "and", "one", "of", "them", "will", "provide", "only", "low", "coverage", ",", "making", "the", "inference", "of", "most", "genes", "of", "immunological", "interest", "error-prone", "." ]
+  }, {
+    "sentence_tokens" : [ "Many", "more", "wildlife", "genome", "projects", "are", "underway", "and", "intend", "to", "provide", "only", "shallow", "coverage", "." ]
+  }, {
+    "sentence_tokens" : [ "Results", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "have", "developed", "a", "statistical", "method", "for", "the", "assembly", "of", "gene", "families", "from", "partial", "genomes", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "method", "takes", "full", "advantage", "of", "the", "quality", "scores", "generated", "by", "base", "calling", "software", ",", "incorporating", "them", "into", "a", "complete", "probabilistic", "error", "model", ",", "to", "overcome", "the", "limitation", "inherent", "in", "the", "inference", "of", "gene", "family", "members", "from", "partial", "sequence", "information", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "validated", "the", "method", "by", "inferring", "the", "human", "IFNA", "genes", "from", "the", "genome", "trace", "archives", ",", "and", "used", "it", "to", "infer", "61", "type-I", "interferon", "genes", ",", "and", "single", "type-II", "interferon", "genes", "in", "the", "bats", "Pteropus", "vampyrus", "and", "Myotis", "lucifugus", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "confirmed", "our", "inferences", "by", "direct", "cloning", "and", "sequencing", "of", "IFNA", ",", "IFNB", ",", "IFND", ",", "and", "IFNK", "in", "P.", "vampyrus", ",", "and", "by", "demonstrating", "transcription", "of", "some", "of", "the", "inferred", "genes", "by", "known", "interferon", "inducing", "stimuli", "." ]
+  }, {
+    "sentence_tokens" : [ "Conclusion", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "statistical", "trace", "assembler", "described", "here", "provides", "a", "reliable", "method", "for", "extracting", "information", "from", "the", "many", "available", "and", "forthcoming", "partial", "or", "shallow", "genome", "sequencing", "projects", ",", "thereby", "facilitating", "the", "study", "of", "a", "wider", "variety", "of", "organisms", "with", "ecological", "and", "biomedical", "significance", "to", "humans", "than", "would", "otherwise", "be", "possible", "." ]
+  }, {
+    "sentence_tokens" : [ "Background", "." ]
+  }, {
+    "sentence_tokens" : [ "Novel", "human", "pathogens", "appear", "at", "a", "continually", "increasing", "rate", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "majority", "of", "these", "agents", "are", "zoonotic", ",", "and", "have", "their", "origins", "in", "wildlife", "[", "1", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Among", "wildlife", "sources", ",", "bats", ",", "mammals", "of", "the", "order", "Chiroptera", ",", "are", "perhaps", "the", "most", "striking", ",", "serving", "as", "the", "primary", "natural", "reservoirs", "for", "many", "human", "pathogens", "[", "2-5", "]", ",", "including", "several", "viruses", "of", "notorious", "lethality", "in", "humans", ":", "Nipah", "virus", "[", "6", "]", ",", "Hendra", "virus", "[", "7", "]", ",", "Ebola", "and", "Marburg", "Viruses", "[", "8,9", "]", ",", "and", "Rabies", "virus", "." ]
+  }, {
+    "sentence_tokens" : [ "Rabies", "virus", "is", "regarded", "as", "the", "most", "lethal", "of", "all", "human", "pathogens", ",", "and", "has", "been", "found", "in", "bats", "for", "over", "a", "century", "[", "10", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Rabies", "and", "other", "Lyssaviruses", "are", "now", "found", "in", "many", "other", "animals", ",", "but", "phylogenetic", "studies", "indicate", "that", "these", "viruses", "first", "evolved", "in", "bats", "and", "transferred", "to", "animals", "of", "the", "order", "Carnivora", "more", "recently", "[", "11", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "SARS", "like", "Coronaviruses", "have", "also", "been", "found", "in", "bats", "[", "12,13", "]", "and", "so", "far", "provide", "the", "closest", "link", "to", "the", "agent", "of", "human", "SARS.Infection", "by", "each", "of", "these", "viruses", "in", "bats", "appears", "to", "be", "asymptomatic", "or", "of", "greatly", "reduced", "pathology", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "association", "of", "so", "many", "human-lethal", "viruses", "with", "bats", "may", "be", "partially", "attributable", "to", "the", "fact", "that", "the", "order", "Chiroptera", "to", "which", "the", "bats", "belong", ",", "is", "the", "second", "largest", "mammalian", "order", ",", "behind", "only", "Rodentia", "in", "total", "species", "[", "15", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "On", "the", "other", "hand", ",", "the", "unique", "lifestyles", "and", "ecological", "circumstances", "of", "bats", "makes", "plausible", "the", "idea", "that", "the", "coevolution", "of", "bats", "and", "their", "viruses", "produced", "unusually", "virulent", "viruses", "and", "a", "host", "antiviral", "response", "tuned", "to", "suppress", "them.If", "the", "latter", "is", "the", "case", ",", "it", "will", "be", "of", "great", "interest", "to", "understand", "the", "ways", "in", "which", "the", "several", "components", "of", "the", "bat", "antiviral", "response", "differ", "from", "those", "in", "humans", "and", "other", "mammals", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "main", "hurdle", "to", "the", "pursuit", "of", "this", "goal", "is", "our", "paucity", "of", "knowledge", "of", "bat", "immunology", "and", "almost", "complete", "lack", "of", "reagents", "to", "initiate", "such", "studies", "." ]
+  }, {
+    "sentence_tokens" : [ "What", "we", "do", "have", "now", "that", "was", "not", "available", "a", "few", "years", "ago", "is", "the", "information", "obtained", "through", "large-scale", "sequencing", "projects", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "information", "resides", ",", "for", "the", "most", "part", ",", "in", "partially-or", "unassembled", "genome", "sequences", ",", "and", "is", "not", "practically", "available", "for", "such", "purposes", "without", "further", "technical", "developments.Our", "aims", "in", "this", "paper", "are", "to", "describe", "the", "method", "we", "have", "devised", "for", "the", "partial", "assembly", "of", "genome", "sequencing", "traces", "for", "the", "inference", "of", "gene", "families", ",", "to", "validate", "this", "method", "on", "the", "human", "interferon", "alpha", "family", ",", "and", "to", "use", "it", "for", "the", "inference", "of", "the", "type-I", "interferon", "families", "in", "the", "bats", "Myotis", "lucifugus", "(", "little", "brown", "bat", ")", "and", "Pteropus", "vampyrus", "(", "large", "flying", "fox", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Most", "pathogenic", "viruses", ",", "including", "all", "of", "the", "viruses", "listed", "above", ",", "possess", "one", "or", "more", "genes", "that", "directly", "antagonize", "the", "type-I", "interferon", "response", "[", "16-19", "]", ",", "indicating", "a", "strong", "coevolutionary", "pressure", "between", "these", "viruses", "and", "the", "type-I", "interferon", "system", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "experimental", "infections", "of", "mice", "with", "Rabies", "virus", ",", "the", "investigators", "noted", "a", "marked", "correlation", "between", "survival", "and", "IFN", "production", "[", "20", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Type", "I", "inteferons", "are", "the", "primary", "mediators", "of", "one", "of", "the", "earliest", "stages", "of", "the", "antiviral", "response", "in", "mammals", "." ]
+  }, {
+    "sentence_tokens" : [ "They", "are", "induced", "rapidly", "and", "secreted", "upon", "viral", "infection", "." ]
+  }, {
+    "sentence_tokens" : [ "Cells", "exposed", "to", "these", "cytokines", "enter", "an", "infection-refractory", "state", "induced", "by", "signaling", "through", "the", "common", "type-I", "interferon", "receptor", "complex", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "state", ",", "transcription", "and", "translation", "of", "viral", "gene", "products", "is", "inhibited", ",", "MHC", "class", "I", "expression", "is", "upregulated", ",", "RNA", "and", "protein", "degradation", "are", "accelerated", "(", "reviewed", "in", "depth", "in", "refs", "[", "21-23", "]", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "There", "are", "13", "human", "functional", "IFN", "alpha", "genes", ",", "as", "well", "as", "single", "functional", "genes", "for", "IFN", "beta", ",", "IFN", "epsilon", ",", "IFN", "omega", ",", "and", "IFN", "kappa", "The", "type", "1", "interferons", "are", "highly", "pleiomorphic", ",", "exhibiting", "both", "distinct", "and", "complex", "overlapping", "function", "[", "21,24", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "All", "of", "the", "known", "mammalian", "type-I", "interferons", "genes", "are", "intronless", ";", "their", "transcripts", "are", "neither", "spliced", "nor", "edited", "before", "translation", ",", "and", "expression", "is", "controlled", "at", "the", "transcriptional", "level", "[", "23,25,26", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Bat", "Genome", "Projects", "." ]
+  }, {
+    "sentence_tokens" : [ "There", "are", "two", "bat", "whole-genome", "sequencing", "projects", "in", "progress", ",", "but", "neither", "is", "complete", "at", "this", "point", "." ]
+  }, {
+    "sentence_tokens" : [ "One", "of", "them", "will", "provide", "coverage", "at", "a", "level", "that", "will", "not", "produce", "a", "reliable", "assembly", "." ]
+  }, {
+    "sentence_tokens" : [ "There", "are", "in", "fact", "a", "great", "many", "sequencing", "projects", "underway", "for", "which", "there", "is", "no", "intent", "to", "do", "full", "coverage", "[", "27", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "Myotis", "lucifugus", "genome", "sequencing", "project", "has", "completed", "sequencing", "to", "approximately", "7-fold", "coverage", "with", "27,486,306", "traces", "thus", "far", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "genome", "is", ",", "as", "of", "this", "writing", ",", "being", "assembled", "http://www.broadinstitute.org/science/projects/mammals-models/brown-bat/little-brown-bat", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "Pteropus", "vampyrus", "genome", "sequencing", "project", "has", "produced", "8,051,001", "genome", "traces", "http://www.hgsc.bcm.tmc.edu/project-species-m-Megabat.hgsc?pageLocation=Megabat", "and", "is", "slated", "for", "completion", "with", "2x", "coverage", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "Pteropus", "project", "is", "based", "on", "samples", "from", "a", "single", "individual", "bat", "(", "personal", "communication", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "consequence", "of", "incomplete", "coverage", "is", "the", "exacerbation", "of", "one", "of", "the", "shortcomings", "of", "whole-genome", "shotgun", "sequencing", ":", "the", "difficulty", "of", "resolving", "repetitive", "DNA", "segments", "[", "28", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "If", "two", "sequencing", "traces", "contain", "regions", "of", "similarity", ",", "it", "may", "be", "difficult", "or", "impossible", "to", "determine", "whether", "these", "traces", "are", "derived", "from", "the", "same", "underlying", "DNA", "or", "from", "two", "distinct", "DNA", "segments", "that", "are", "themselves", "paralogous", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "difficulty", "is", "not", "limited", "to", "the", "assembly", "of", "highly", "repetitious", "intergenic", "regions", ",", "but", "to", "the", "inference", "of", "gene", "families", "as", "well.This", "latter", "problem", "is", "particularly", "unfortunate", ",", "because", "gene", "duplication", "is", "a", "major", "source", "of", "innovative", "potential", "in", "evolution", ",", "and", "the", "comparative", "study", "of", "gene", "families", "among", "related", "species", "is", "therefore", "of", "great", "interest", "[", "29", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Furthermore", ",", "a", "large", "proportion", "of", "genes", "in", "eukaryotic", "genomes", "reside", "in", "families", ",", "including", "the", "genes", "that", "encode", "the", "type-I", "interferons.In", "this", "paper", ",", "we", "describe", "a", "method", "for", "the", "inference", "of", "gene", "family", "members", "from", "unassembled", "sequencing", "traces", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "method", "is", "conceptually", "straightforward", ",", "and", "is", "based", "on", "an", "information-theoretic", "model", "that", "accounts", "for", "both", "sequencing", "error", "and", "evolutionary", "divergence", ",", "providing", "the", "means", "to", "encode", "the", "set", "of", "sequencing", "traces", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "then", "seek", "those", "partial", "assemblies", "that", "make", "the", "total", "description", "length", "of", "the", "combined", "set", "of", "sequencing", "traces", "as", "small", "as", "possible", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "reconstruction", "provides", "an", "estimate", "of", "the", "number", "of", "genes", "in", "the", "family", "and", "posterior", "probability", "mass", "functions", "on", "the", "DNA", "sequences", "of", "these", "genes.We", "first", "present", "the", "model", "and", "the", "algorithm", "we", "have", "developed", "to", "minimize", "the", "description", "length", "and", "thereby", "infer", "the", "structure", "of", "the", "gene", "family", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "validate", "the", "methods", "by", "reconstructing", "the", "human", "type-I", "interferon", "family", "genes", "from", "sequencing", "traces", "from", "the", "human", "genome", "project", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "use", "this", "method", "to", "infer", "the", "type-I", "interferon", "families", "from", "the", "sequencing", "traces", "from", "the", "Myotis", "lucifugus", "and", "Pteropus", "vampyrus", "genome", "sequencing", "projects", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "examine", "these", "genes", "in", "comparison", "with", "the", "orthologous", "families", "in", "humans", "and", "other", "mammals", "." ]
+  }, {
+    "sentence_tokens" : [ "Finally", ",", "we", "confirm", "our", "inferences", "by", "cloning", "and", "sequencing", "genes", "from", "four", "of", "the", "interferon", "families", "." ]
+  }, {
+    "sentence_tokens" : [ "Results", "." ]
+  }, {
+    "sentence_tokens" : [ "Inference", "of", "Gene", "Families", "From", "Trace", "Archives", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "section", ",", "we", "present", "the", "mathematical", "basis", "of", "the", "assembly", "method", "we", "have", "developed", "and", "provide", "a", "concise", "algorithmic", "implementation.We", "assume", "a", "set", "S", "of", "sequencing", "traces", "containing", "regions", "with", "similarity", "to", "some", "given", "gene", "or", "genes", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "practice", ",", "this", "seed", "gene", "would", "be", "an", "ortholog", "of", "the", "genes", "one", "is", "attempting", "to", "infer", ";", "one", "collects", "S", "using", "similarity", "searching", "on", "the", "complete", "trace", "archive", "for", "the", "species", "of", "interest.There", "are", "g", "genes", "in", "the", "family", ",", "where", "g", "is", "an", "unknown", "integer", "." ]
+  }, {
+    "sentence_tokens" : [ "Each", "of", "these", "genes", "is", "related", "to", "a", "common", "ancestor", "alpha", "(", "whose", "sequence", "is", "also", "unknown", ")", "and", "differs", "from", "alpha", "by", "the", "accumulation", "of", "mutations", ",", "including", "insertions", "and", "deletions", "." ]
+  }, {
+    "sentence_tokens" : [ "Each", "sequencing", "trace", "results", "from", "direct", "templating", "from", "one", "of", "these", "genes", ",", "and", "differs", "from", "it", "by", "sequencing", "error", "only", "." ]
+  }, {
+    "sentence_tokens" : [ "Figure", "1", "illustrates", "the", "statistical", "model", "used", "for", "the", "inferential", "procedure.Given", "any", "two", "sequencing", "traces", "in", "S", ",", "they", "are", "related", "either", "through", "sharing", "the", "same", "immediate", "template", "(", "traces", "5", "and", "6", "in", "figure", "1", ",", "for", "example", ")", ",", "or", "indirectly", ",", "through", "the", "ancestor", ",", "alpha", ",", "with", "each", "having", "a", "distinct", "immediate", "template", "." ]
+  }, {
+    "sentence_tokens" : [ "These", "two", "alternatives", "correspond", "to", "two", "different", "likelihoods", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "first", ",", "the", "differences", "between", "the", "two", "traces", "are", "attributable", "to", "sequencing", "error", "only", ",", "and", "must", "be", "consistent", "with", "the", "reported", "position", "specific", "quality", "scores", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "latter", ",", "the", "divergence", "of", "the", "underlying", "genes", "from", "their", "common", "ancestor", "provides", "an", "additional", "source", "of", "differences", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "difference", "in", "description", "lengths", "under", "these", "two", "models", "provides", "a", "criterion", "for", "choosing", "between", "the", "models", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "fact", ",", "the", "criterion", "we", "will", "use", "for", "determining", "the", "final", "set", "of", "assemblies", "is", "the", "minimization", "of", "the", "total", "description", "length", "of", "S", "under", "the", "model", "in", "figure", "1", "." ]
+  }, {
+    "sentence_tokens" : [ "Briefly", ",", "the", "description", "length", "is", "the", "information", "required", "to", "encode", "the", "data", "and", "the", "values", "of", "the", "model", "parameters", "." ]
+  }, {
+    "sentence_tokens" : [ "(", "See", "[", "30", "]", "for", "a", "complete", "treatment", "of", "description", "length", "techniques", "for", "inference", "." ]
+  }, {
+    "sentence_tokens" : [ ")", "For", "any", "sub-model", "for", "pairs", "of", "traces", "that", "involves", "mutations", "from", "the", "common", "ancestor", ",", "the", "description", "length", "must", "account", "for", "the", "information", "required", "to", "encode", "the", "mutation", "rate", "." ]
+  }, {
+    "sentence_tokens" : [ "If", "y", "is", "the", "overlap", "in", "nucleotides", "between", "the", "two", "sequencing", "traces", ",", "the", "cost", "of", "encoding", "the", "mutation", "rate", "is", "log", "y.The", "objective", "of", "the", "assembly", "procedure", "is", "the", "minimization", "of", "the", "description", "length", "over", "all", "topologies", "of", "the", "form", "shown", "in", "figure", "1", ",", "but", "there", "is", "no", "method", "for", "finding", "this", "minimum", ",", "short", "of", "exhaustive", "enumeration", "over", "all", "topologies", ",", "which", "is", "ruled", "out", "by", "practical", "considerations", "for", "all", "but", "the", "smallest", "S." ]
+  }, {
+    "sentence_tokens" : [ "We", "therefore", "adopt", "a", "greedy", "progressive", "method", "familiar", "from", "its", "use", "in", "multiple", "sequence", "alignment", "." ]
+  }, {
+    "sentence_tokens" : [ "At", "each", "stage", ",", "we", "find", "the", "pair", "of", "sequences", "(", "traces", "or", "partial", "assemblies", ")", "that", "provide", "the", "maximum", "saving", "in", "description", "length", "and", "assemble", "them", ",", "replacing", "the", "pair", "by", "the", "new", "assembly", "they", "have", "formed", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "process", "continues", "until", "there", "are", "no", "remaining", "moves", "that", "lead", "to", "a", "description", "length", "reduction.The", "following", "section", "provides", "the", "details", "for", "the", "probability", "model", "." ]
+  }, {
+    "sentence_tokens" : [ "Quality", "scores", "and", "conditional", "probabilities", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "base", "calling", "software", "reads", "the", "raw", "sequencing", "trace", "and", ",", "for", "each", "position", ",", "reports", "a", "single", "base", "and", "a", "quality", "score", "." ]
+  }, {
+    "sentence_tokens" : [ "If", "the", "reported", "base", "is", "X,", "and", "the", "reported", "quality", "score", "is", "q", ",", "we", "take", "the", "output", "to", "represent", "a", "posterior", "probability", "mass", "function", "(", "pmf", ")", "on", "the", "latent", "nucleotide", "state", "at", "that", "position", ",", "given", "by", "(", "1", ")", "where", "D", "represents", "the", "data", "conditioning", "the", "estimate", ",", "and", "epsilon", "(", "q", ")", "is", "defined", "by", "(", "2", ")", "It", "is", "not", "necessary", "to", "specify", "a", "likelihood", "function", ",", "or", "even", "to", "describe", "what", "the", "nature", "of", "D", "is", ",", "so", "we", "simply", "write", "for", "the", "posterior", "probability", "mass", "function", "on", "xi", "in", "the", "jth", "position", "in", "the", "ith", "sequencing", "trace", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "simplicity", "in", "this", "presentation", ",", "we", "will", "assume", "that", "the", "prior", "pmf", "on", "xi", "is", "uniform", "on", "A", ",", "C", ",", "G", ",", "T", ",", "-.", "We", "will", "also", "need", "the", "posterior", "pmf", "on", "the", "ancestral", "state", "alpha", ",", "which", "is", "obtained", "by", "specifying", "a", "model", "for", "the", "accumulation", "of", "mutations", "from", "alpha", "to", "xi", ",", "and", "summing", "over", "the", "unobserved", "state", ",", "xi", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "take", "a", "simple", "reversible", "mutation", "model", "(", "3", ")", "and", "let", "(", "4", ")", "Consider", "the", "model", "partially", "described", "by", "having", "position", "i", "in", "trace", "1", "aligned", "with", "position", "j", "in", "trace", "2", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "posterior", "pmf", "for", "the", "latent", "true", "nucleotide", "state", "is", "(", "5", ")", "where", "k", "is", "the", "position", "in", "the", "assembly", "corresponding", "to", "i", "and", "j", "in", "traces", "1", "and", "2", ",", "respectively", "." ]
+  }, {
+    "sentence_tokens" : [ "is", "given", "by", "(", "6", ")", "Since", "the", "criterion", "is", "the", "minimization", "of", "the", "description", "length", "we", "compare", "any", "two", "models", "by", "the", "difference", "in", "their", "description", "lengths", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "alignment", "cost", ",", "then", ",", "is", "the", "difference", "in", "description", "length", "between", "the", "model", "in", "which", "these", "positions", "are", "aligned", "(", "given", "the", "alignment", ")", "and", "the", "one", "in", "which", "they", "are", "independent", ",", "and", "is", "give", "by", "(", "7", ")", "Denote", "by", "A", "(", "k", ")", "the", "vector", "whose", "components", "are", "the", "indices", "for", "the", "aligned", "traces", "corresponding", "to", "the", "kth", "position", "in", "the", "resulting", "assembly", "." ]
+  }, {
+    "sentence_tokens" : [ "Then", "the", "cost", "of", "the", "alignment", "is", "(", "8)", "For", "the", "case", "where", "traces", "1", "and", "2", "are", "related", "indirectly", "through", "a", "common", "ancestor", ",", "we", "similarly", "have", "(", "9", ")", "with", "the", "appropriate", "and", "obvious", "definitions", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "quantity", "of", "primary", "importance", "for", "us", "is", "the", "cost", "difference", "between", "the", "direct", "and", "indirect", "models", "for", "a", "given", "pair", "of", "traces", "(", "10", ")", "The", "logarithmic", "term", "is", "the", "cost", "of", "encoding", "the", "mutation", "rate", "that", "minimizes", "the", "alignment", "score", "[", "30", "]", ";", "the", "argument", "is", "the", "number", "of", "nucleotides", "in", "the", "overlap", "of", "traces", "1", "and", "2", "in", "the", "optimal", "alignment", ",", "ie", ",", "the", "number", "of", "degrees", "of", "freedom", "available", "to", "estimate", "mu", "." ]
+  }, {
+    "sentence_tokens" : [ "When", "c", "is", "positive", ",", "the", "indirect", "model", "is", "the", "more", "efficient", ";", "when", "c", "is", "negative", ",", "the", "direct", "model", "is", "more", "efficient.For", "progressive", "alignment", ",", "note", "that", "the", "posterior", "assembly", "pmf", "and", "the", "cost", "are", "composed", "from", "the", "individual", "sequential", "alignments", "." ]
+  }, {
+    "sentence_tokens" : [ "Suppose", "we", "first", "align", "traces", "1", "and", "2", "to", "obtain", "assembly", "4", ",", "and", "then", "align", "trace", "3", "to", "assembly", "4", "to", "produce", "assembly", "5", "as", "shown", "in", "figure", "2", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "need", "to", "refine", "our", "notation", "for", "indexing", "by", "letting", "refer", "to", "the", "position", "in", "trace", "i", "corresponding", "to", "position", "k", "in", "assembly", "a." ]
+  }, {
+    "sentence_tokens" : [ "So", ",", "for", "the", "example", "of", "figure", "2", ",", "we", "have", "(", "11", ")", "It", "is", "then", "straightforward", "to", "show", "that", "the", "alignment", "scores", "are", "additive", ":(", "12", ")", "and", "that", "the", "assembly", "posterior", "pmfs", "are", "obtained", "by", "composition", "(", "13", ")", "We", "have", "shown", "that", "the", "total", "cost", "for", "the", "composite", "alignment", "is", "given", "by", "the", "sum", "of", "the", "sum", "of", "alignment", "costs", ",", "but", ",", "as", "with", "all", "progressive", "alignment", "methods", ",", "the", "minimum-cost", "composite", "alignment", "may", "not", "be", "the", "global", "minimum", "cost", "alignment.The", "complete", "procedure", ",", "then", ",", "is1", "." ]
+  }, {
+    "sentence_tokens" : [ "Compute", "all", "of", "the", "minimum", "pairwise", "alignment", "costs", "c", "using", "dynamic", "programming.2", "." ]
+  }, {
+    "sentence_tokens" : [ "Assemble", "the", "two", "sub-assemblies", "with", "least", "alignment", "cost", ",", "and", "replace", "them", "with", "the", "new", "assembly", "that", "results", "." ]
+  }, {
+    "sentence_tokens" : [ "Compute", "the", "pairwise", "costs", "between", "the", "remaining", "subassemblies", "and", "the", "new", "assembly.3", "." ]
+  }, {
+    "sentence_tokens" : [ "Continue", "at", "step", "2", "until", "total", "assembly", "cost", "can", "no", "longer", "be", "reduced", "." ]
+  }, {
+    "sentence_tokens" : [ "Validation", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "validated", "the", "method", "by", "inferring", "the", "human", "interferon-alpha", "(", "IFNA", ")", "gene", "family", "directly", "from", "the", "human", "whole-genome", "sequencing", "trace", "archives", ",", "and", "comparing", "the", "results", "to", "IFNA", "gene", "sequences", "known", "from", "the", "finished", "human", "genome", "(", "as", "well", "as", "from", "decades", "of", "molecular", "biology", "on", "the", "human", "IFNA", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "performed", "this", "procedure", "in", "three", "different", "ways.First", ",", "we", "collected", "relevant", "sequencing", "traces", "by", "performing", "a", "BLAST", "search", "using", "the", "567", "nt-long", "protein", "coding", "portion", "of", "the", "human", "IFNA2", "transcript", "(", "NM_000605", ")", "and", "retrieved", "291", "traces", "with", "expected", "values", "less", "than", "10", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "trimmed", "each", "sequence", "and", "applied", "the", "assembly", "method", "described", "above.The", "procedure", "resulted", "in", "15", "final", "assemblies", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "compared", "the", "inferred", "genes", "to", "the", "human", "genome", "reference", "assembly", "." ]
+  }, {
+    "sentence_tokens" : [ "Each", "of", "these", "15", "assemblies", "maps", "unambiguously", "to", "one", "of", "the", "13", "known", "IFNA", "genes", "or", "the", "single", "whole", "pseudogene", "at", "an", "average", "error", "rate", "of", "6.0", "x", "10", "per", "base", "(", "14", "mismatches", "in", "23374", "bases", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "one", "case", ",", "a", "pair", "of", "assemblies", "mapped", "to", "a", "single", "genomic", "gene", ",", "IFNA17", "." ]
+  }, {
+    "sentence_tokens" : [ "There", "are", "2", "single", "nucleotide", "differences", "between", "the", "two", "assemblies", "mapping", "to", "IFNA17", "and", "one", "dinucleotide", "difference", "." ]
+  }, {
+    "sentence_tokens" : [ "Each", "of", "the", "single", "nucleotide", "differences", "is", "strongly", "supported", ",", "with", "multiple", "high-quality", "reads", "supporting", "the", "inference", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "dinucleotide", "difference", "is", "less", "well", "supported", ",", "with", "just", "a", "single", "trace", "covering", "it", "in", "one", "assembly", ",", "though", "the", "corresponding", "bases", "in", "this", "trace", "are", "good", "quality", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "evidence", "strongly", "suggests", "that", "the", "two", "assemblies", "do", "map", "to", "two", "different", "alleles", "of", "the", "same", "gene", "." ]
+  }, {
+    "sentence_tokens" : [ "Accepting", "this", "conclusion", "reduces", "the", "error", "rate", "to", "less", "than", "4", "x", "10", "per", "base", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "10", "remaining", "mismatches", "include", "a", "single", "4-nucleotide", "deletion", "relative", "to", "the", "genomic", "sequence.For", "the", "next", "two", "validation", "procedures", ",", "our", "intent", "was", "to", "more", "accurately", "represent", "the", "situation", "in", "which", "the", "assembler", "would", "be", "used", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "this", "purpose", ",", "we", "used", "one", "of", "the", "P.vampyrus", "putative", "IFNA", "genes", "rather", "than", "human", "IFNA2", "as", "the", "BLAST", "query", ",", "and", "selected", "a", "subsample", "of", "the", "retrieved", "sequences", "to", "simulate", "low", "coverage.There", "were", "74", "trace", "reads", "in", "the", "subset", "produced", "by", "the", "Whitehead", "Institute", "." ]
+  }, {
+    "sentence_tokens" : [ "Assembling", "these", "reads", "using", "our", "method", "produced", "13", "distinct", "assemblies", "with", "two", "or", "more", "reads", "in", "each", ",", "mapping", "(", "as", "described", "above", ")", "to", "12", "different", "human", "genomic", "regions", ":", "7", "IFNAs", ",", "human", "IFNW1", ",", "LOC100130866", "(", "annotated", "by", "NCBI", "as", "similar", "to", "IFNW1", ")", ",", "2", "IFNA", "pseudogenes", "and", "1", "IFNW", "pseudogene", "." ]
+  }, {
+    "sentence_tokens" : [ "One", "pair", "of", "distinct", "assemblies", "was", "mapped", ",", "erroneously", ",", "to", "a", "single", "IFNA", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "subset", "of", "trace", "reads", "from", "the", "Venter", "Institute", "consisted", "of", "103", "sequences", ",", "producing", "22", "distinct", "assemblies", "with", "2", "or", "more", "reads", ",", "mapping", "to", "22", "different", "regions", "of", "the", "human", "genome", ":", "all", "13", "IFNAs", ",", "1", "IFNA", "pseudogene", ",", "IFNW1", ",", "and", "6", "regions", "annotated", "as", "either", "IFNW", "like", "or", "IFNW", "pseudogenes", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "alignments", "of", "these", "assemblies", "to", "the", "genome", "revealed", "3", "mismatches", "in", "31531", "total", "bases", "." ]
+  }, {
+    "sentence_tokens" : [ "One", "pair", "of", "assemblies", "was", "erroneously", "mapped", "to", "a", "single", "IFNA", "pseudogene", "." ]
+  }, {
+    "sentence_tokens" : [ "Type", "I", "interferons", "in", "Myotis", "lucifugus", "and", "Pteropus", "vampyrus", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "used", "the", "protein", "coding", "portions", "of", "the", "human", "genes", "IFNA2", ",", "IFNK", ",", "IFNB", ",", "and", "IFNE", ",", "the", "bovine", "gene", "IFNT", ",", "and", "murine", "gene", "IFNZ", "in", "blast", "searches", "against", "the", "whole", "genome", "shotgun", "sequence", "trace", "archives", "for", "Pteropus", "vampyrus", "and", "Myotis", "lucifugus", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "sequences", "retrieved", "in", "each", "of", "the", "blast", "searches", "were", "then", "assembled", "using", "the", "methods", "described", "above.We", "obtained", "unique", "final", "assemblies", "for", "IFNB", "in", "each", "bat", "." ]
+  }, {
+    "sentence_tokens" : [ "Each", "of", "these", "final", "assemblies", "contained", "an", "intact", "ORF", "which", ",", "when", "BLASTed", "against", "the", "NCBI", "nucleotide", "sequence", "database", ",", "returned", "multiple", "hits", "on", "the", "corresponding", "gene", "in", "several", "mammals", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "greatest", "similarity", "was", "to", "horse", ",", "pig", ",", "and", "cow", "sequences", ",", "with", "about", "80", "%", "nucleotide", "identity.Myotis", "produced", "two", "final", "assemblies", "for", "IFNE", ",", "both", "of", "which", "contain", "intact", "ORFs", "and", "appear", ",", "on", "close", "examination", ",", "to", "be", "genuinely", "distinct", "sequences", "." ]
+  }, {
+    "sentence_tokens" : [ "Pteropus", "produced", "a", "single", "final", "assembly", ",", "which", "had", "an", "intact", "ORF.The", "sequencing", "traces", "returned", "in", "the", "search", "on", "IFNA2", "produced", "multiple", "final", "assemblies", "that", "fall", "into", "three", "distinct", "families", "with", "clear", "similarity", "to", "IFNA", ",", "IFNW", ",", "and", "IFND", "(", "Table", "1", ")", ",", "respectively.No", "relevant", "hits", "to", "murine", "IFNZ", "were", "found", "in", "either", "chiropteran", "genome", "." ]
+  }, {
+    "sentence_tokens" : [ "No", "hits", "to", "bovine", "IFNT", "beyond", "those", "already", "obtained", "using", "other", "queries", "were", "found", "." ]
+  }, {
+    "sentence_tokens" : [ "Chiropteran", "Type", "II", "interferon", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "mammals", ",", "the", "type", "I", "interferons", "have", "a", "single", "exon", "of", "fewer", "than", "700", "bases", "." ]
+  }, {
+    "sentence_tokens" : [ "IFNG", ",", "the", "type", "II", "interferon", ",", "has", "multiple", "exons", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "used", "our", "methods", "to", "infer", "the", "type-II", "interferon", "genes", "in", "the", "two", "bats", "by", "using", "the", "full-length", "human", "IFNG", "gene", "comprising", "introns", "and", "exons", "(", "4972", "bases", ",", "NC_000012", "REGION", ":", "complement", "(", "68548550", ".." ]
+  }, {
+    "sentence_tokens" : [ "68553521", ")", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Our", "methods", "produced", "a", "single", "assembly", "in", "each", "bat", "(", "Additional", "File", "1", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "All", "exons", "were", "clearly", "identifiable", "and", "all", "intronic", "splice", "signals", "were", "conserved", "." ]
+  }, {
+    "sentence_tokens" : [ "Table", "2", "shows", "the", "sequence", "similarity", "among", "the", "human", "and", "bat", "sequences", "." ]
+  }, {
+    "sentence_tokens" : [ "Phylogenetics", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "intact", "ORFs", "of", "the", "inferred", "sequences", "were", "aligned", "with", "the", "type-I", "interferons", "from", "humans", "and", "from", "the", "domestic", "pig", ",", "Sus", "scrofa", "(", "which", "is", "substantially", "more", "closely", "related", "to", "bats", "than", "is", "the", "human", ")", ",", "and", "as", "an", "outgroup", ",", "the", "IFNB", "and", "IFNA", "gene", "sequences", "from", "the", "duckbill", "platypus", "(", "Ornithorhynchus", "anatinus", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "phylogenetic", "tree", "relating", "these", "genes", "was", "inferred", "using", "maximum", "likelihood", "(", "Figure", "3", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "features", "of", "the", "inferred", "phylogenetic", "tree", "are", "consistent", "with", "those", "found", "in", "previous", "investigations", "[", "31", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "particular", ",", "the", "interferon", "families", "fall", "into", "distinct", "clades", ",", "with", "the", "exception", "of", "the", "platypus", "IFNA", "genes", ",", "which", "appear", "ancestral", "to", "the", "IFNA", ",", "IFNW", ",", "and", "IFND", "genes", "of", "the", "other", "species", "." ]
+  }, {
+    "sentence_tokens" : [ "Within", "each", "of", "the", "families", ",", "the", "genes", "fall", "into", "clades", "according", "to", "species", ",", "with", "no", "interdigitation", "of", "genes", "from", "different", "species", "in", "any", "clade", "(", "Figure", "3", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Additionally", ",", "the", "bat", "genes", "from", "one", "bat", "species", "are", "typically", ",", "but", "not", "universally", ",", "more", "closely", "related", "to", "the", "orthologous", "genes", "from", "the", "other", "bat", "species", "than", "to", "those", "of", "pigs", "or", "humans", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "bat", "genes", "are", "typically", "but", "not", "universally", "more", "closely", "related", "to", "the", "orthologous", "pig", "genes", "than", "to", "the", "orthologous", "human", "genes", "." ]
+  }, {
+    "sentence_tokens" : [ "Sequencing", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "used", "the", "inferred", "sequences", "to", "design", "sequencing", "primers", "and", "make", "several", "clones", "from", "each", "of", "IFNA", ",", "IFNB", ",", "IFND", ",", "and", "IFNK", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "results", "are", "as", "follows.We", "obtained", "DNA", "sequences", "from", "19", "independent", "IFNB", "clones", "from", "two", "individual", "bats", "." ]
+  }, {
+    "sentence_tokens" : [ "Among", "these", ",", "2", "distinct", "but", "very", "closely", "related", "genes", "were", "clearly", "discernible", "." ]
+  }, {
+    "sentence_tokens" : [ "One", "sequence", "is", "identical", "to", "the", "consensus", "of", "all", "19", "sequences", ",", "and", "is", "found", "in", "7", "of", "12", "clones", "from", "one", "bat", ",", "and", "all", "the", "clones", "from", "the", "other", "." ]
+  }, {
+    "sentence_tokens" : [ "Given", "this", "interpretation", ",", "the", "overall", "frequency", "of", "pre-sequencing", "PCR", "error", "was", "1.6", "x", "10", "per", "base", "(", "17", "errors", "in", "10792", "bases", ")", "The", "inferred", "IFNB", "genes", "are", "91", "%", "identical", "to", "an", "IFNB", "isolated", "from", "Rousettus", "aegyptiacus", "[", "4", "]", "and", "80", "%", "identical", "to", "IFNB", "from", "the", "domestic", "pig", ",", "Sus", "scrofa.Using", "IFNK", "primers", ",", "we", "obtained", "sequences", "from", "7", "clones", "from", "a", "single", "animal", ",", "and", "found", "two", "distinct", "genes", ",", "differing", "from", "each", "other", "in", "two", "nucleotides", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "error", "rate", "was", "consistent", "with", "that", "found", "in", "the", "IFNB", "genes", "at", "1.7", "x", "10", "per", "base", "(", "6", "errors", "in", "3430", "bases", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "IFND", "and", "IFNA", ",", "respectively", ",", "we", "collected", "sequences", "from", "32", "and", "52", "clones", "from", "a", "single", "animal", "." ]
+  }, {
+    "sentence_tokens" : [ "Because", "PCR", "was", "used", "in", "an", "amplification", "step", "prior", "to", "cloning", "(", "unlike", "the", "process", "used", "for", "genomic", "sequencing", ")", ",", "it", "is", "difficult", "to", "discern", "the", "expected", "genetic", "variability", "from", "sequencing", "error", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "IFNA", ",", "four", "sequences", "were", "recovered", "multiple", "times", "from", "independent", "procedures", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "mean", "number", "of", "mismatches", "in", "pairwise", "comparisons", "is", "just", "under", "7", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "four", "sequences", "are", "within", "1", ",", "2", ",", "5", "and", "6", "bases", "of", "the", "most", "similar", "inferred", "IFNA", "gene", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "IFND", ",", "there", "are", "three", "multiply", "represented", "sequences", "." ]
+  }, {
+    "sentence_tokens" : [ "Two", "of", "these", "genes", "differ", "at", "9", "bases", ";", "the", "third", ",", "which", "represents", "a", "pseudogene", ",", "differs", "from", "the", "other", "two", "by", "more", "than", "20", "bases", "." ]
+  }, {
+    "sentence_tokens" : [ "These", "genes", "differ", "from", "their", "nearest", "inferred", "IFND", "sequences", "by", "7", ",", "12", ",", "and", "20", "bases", ",", "respectively", "." ]
+  }, {
+    "sentence_tokens" : [ "Additional", "file", "2", "contains", "an", "alignment", "of", "the", "three", "multiply", "represented", "IFND", "clones", "compared", "to", "the", "IFND", "assemblies.Since", "it", "was", "not", "possible", "to", "determine", "by", "inspection", "what", "the", "underlying", "true", "gene", "sequences", "are", "or", "how", "many", "there", "are", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "instead", "estimated", "the", "posterior", "probability", "on", "the", "number", "of", "genes", "in", "each", "family", "as", "described", "in", "Methods", "(", "Figure", "4", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "IFNA", ",", "the", "posterior", "probability", "is", "maximized", "at", "g", "=", "9", "genes", ";", "the", "90", "%", "credible", "interval", "is", "(", "6,17", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "IFND", ",", "the", "greatest", "posterior", "probability", "occurs", "at", "g", "=", "19", "genes", ",", "and", "the", "90", "%", "credible", "interval", "is", "(", "15,28", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Gene", "expression", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "latter", "two", "genes", "were", "also", "inferred", "by", "the", "methods", "described.Fresh", "Pteropus", "PBMCs", "from", "two", "individual", "animals", "were", "cultured", "under", "four", "different", "conditions", ":", "with", "lipopolysaccharide", "(", "LPS", ")", ",", "with", "the", "synthetic", "RNA", "poly", "(", "I", ":C", ")", ",", "with", "Vesicular", "Stomatitis", "Virus", "(", "VSV", ")", ",", "and", "with", "culture", "medium", "alone.With", "LPS", "or", "poly", "(", "I", ":C", ")", "treatment", ",", "IFNB", "mRNA", "expression", "was", "increased", "20-50", "fold", "by", "2", "hours", "and", "decreased", "slowly", "to", "near", "the", "starting", "value", "by", "24", "hours", "." ]
+  }, {
+    "sentence_tokens" : [ "OAS", "expression", "lagged", "behind", "that", "of", "IFNB", ",", "reaching", "its", "peak", "value", "by", "8", "hours", ",", "declining", "from", "the", "peak", "level", "only", "partially", "by", "24", "hours", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "contrast", ",", "cells", "treated", "with", "VSV", "had", "peak", "levels", "of", "IFNB", "appear", "by", "8", "hours", "and", "remain", "almost", "unchanged", "to", "24", "hours", ";", "OAS", "expression", "rose", "more", "slowly", ",", "and", "had", "not", "reached", "a", "maximum", "level", "by", "24", "hours", "(", "Figure", "5", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Discussion", "." ]
+  }, {
+    "sentence_tokens" : [ "Recent", "research", "has", "demonstrated", "very", "clearly", "that", "the", "rate", "of", "emergence", "of", "human", "pathogens", "continues", "to", "increasing", "steadily", ",", "and", "that", "the", "source", "of", "the", "majority", "of", "these", "agents", "is", "wildlife", "[", "1", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "One", "of", "the", "most", "intriguing", "findings", "of", "late", "is", "that", "bats", "are", "the", "natural", "reservoirs", "of", "many", "of", "the", "most", "pathogenic", "viruses", "in", "humans.While", "it", "is", "known", "that", "microbe-host", "coevolution", "drives", "pathogenicity", "in", "the", "natural", "host", ",", "the", "effect", "of", "such", "coevolution", "on", "alternative", "hosts", "has", "not", "been", "described", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "development", "of", "many", "genome", "sequencing", "projects", "extending", "beyond", "domesticated", "animals", "provides", "an", "opportunity", "to", "begin", "such", "inquiries", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "low", "coverage", "levels", "of", "these", "projects", "and", "the", "fact", "that", "so", "many", "genes", "with", "immunological", "functions", "appear", "in", "large", "families", "of", "very", "similar", "genes", "requires", "the", "development", "of", "more", "precise", "inferential", "tools", "for", "their", "study.Toward", "that", "end", ",", "we", "have", "developed", "a", "method", "for", "the", "assembly", "of", "genome", "sequence", "fragments", "for", "use", "in", "the", "inference", "of", "gene", "family", "members", "when", "the", "genome", "coverage", "is", "too", "low", "for", "reliable", "complete", "assembly", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "validated", "the", "method", "on", "raw", ",", "unassembled", "traces", "from", "the", "human", "genome", "sequencing", "project", ",", "finding", "that", "we", "could", "assemble", "the", "known", "interferon", "alpha", "sequences", "accurately", ",", "and", "further", ",", "identify", "at", "least", "one", "case", "in", "which", "two", "alleles", "are", "present.It", "should", "be", "noted", "that", "our", "method", "requires", "more", "computation", "than", "assembly", "methods", "currently", "in", "use", "due", "to", "the", "numerical", "minimization", "over", "the", "mutation", "frequency", "required", "in", "Eq", "(", "10", ")", ",", "and", "is", "therefore", "not", "suitable", "for", "large-scale", "assembly.Using", "this", "method", ",", "we", "inferred", "a", "total", "of", "61", "type-I", "interferon", "genes", "with", "intact", "ORFs", "from", "the", "whole-genome", "shotgun", "trace", "archives", "for", "two", "chiropteran", "species", ",", "Pteropus", "vampyrus", "and", "Myotis", "lucifugus", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "find", "that", "the", "largest", "of", "the", "IFN-I", "gene", "families", "in", "both", "bats", "comprises", "genes", "orthologous", "to", "the", "IFNW", "genes", "in", "other", "mammals", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "humans", ",", "mice", "and", "pigs", ",", "there", "is", "just", "one", "IFNW", "gene", "but", "up", "to", "two", "dozen", "members", "in", "each", "bat", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "recent", "analysis", "of", "bovine", "type-I", "interferons", "from", "the", "assembled", "Bos", "taurus", "genome", "[", "32", "]", "finds", "26", "intact", "IFNW", "genes", ",", "providing", "precedent", "for", "our", "otherwise", "striking", "results", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "contrast", ",", "the", "IFNA", "family", "is", "the", "largest", "IFN-I", "family", "in", "several", "mammals", ",", "including", "humans", ",", "mice", "and", "pigs", ",", "but", "appears", "to", "be", "smaller", "in", "Pteropus", "and", "absent", "but", "for", "pseudogenes", "in", "Myotis", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "gene", "family", "assembly", "from", "trace", "archives", "indicates", "that", "there", "are", "7", "intact", "IFNA", "in", "Pteropus", ";", "analysis", "of", "direct", "sequencing", "from", "PBMCs", "gives", "maximum", "posterior", "probability", "to", "the", "presence", "of", "9", "IFNA", "genes", "(", "Figure", "4", ")", ",", "with", "a", "90", "%", "credible", "interval", "containing", "6", "to", "16", "genes", "." ]
+  }, {
+    "sentence_tokens" : [ "Cattle", "have", "13", "IFNA", "genes", "in", "spite", "of", "having", "a", "greatly", "enlarged", "IFNW", "family", "[", "32", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Both", "bats", "have", "multiple", "members", "in", "the", "IFND", "family", "with", "five", "intact", "members", "and", "seven", "pseudogenes", "in", "Pteropus", ",", "and", "twelve", "intact", "members", "in", "Myotis", "." ]
+  }, {
+    "sentence_tokens" : [ "IFND", "has", "been", "found", "as", "a", "functional", "gene", "only", "in", "pigs", ",", "where", "the", "gene", "product", "is", "expressed", "in", "the", "placenta", "and", "plays", "a", "role", "in", "embryonic", "development", "[", "33", "]", ",", "but", "is", "not", "suspected", "of", "involvement", "in", "the", "response", "to", "viruses", "." ]
+  }, {
+    "sentence_tokens" : [ "It", "is", "striking", "to", "us", "that", "this", "family", "seems", "to", "have", "been", "so", "dramatically", "enlarged", "in", "bats", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "size", "of", "this", "family", "suggests", "that", "it", "may", "still", "be", "involved", "in", "host", "defense", "in", "bats", "even", "if", "it", "has", "lost", "that", "function", "in", "pigs", "." ]
+  }, {
+    "sentence_tokens" : [ "Walker", "and", "Roberts", "[", "32", "]", "report", "finding", "three", "IFND", "pseudogenes", ",", "but", "no", "intact", "IFND", "in", "the", "cow", "." ]
+  }, {
+    "sentence_tokens" : [ "It", "is", "worth", "noting", "that", "the", "placental", "type-I", "interferon", "in", "cattle", "is", "IFNT", "rather", "than", "IFND", "[", "34", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Searching", "the", "bat", "trace", "archives", "with", "bovine", "IFNT", "did", "not", "produce", "hits", "that", "had", "not", "been", "returned", "with", "the", "other", "searches", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "find", "no", "evidence", "of", "IFNT", "or", "IFNZ", "in", "either", "bat.For", "IFNB", ",", "IFNK", ",", "and", "IFNE", ",", "we", "find", "one", "member", "of", "each", "in", "P.", "vampyrus", ",", "and", "one", "or", "two", "in", "M.", "lucifugus", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "case", "where", "we", "do", "find", "two", "genes", ",", "we", "are", "confident", "that", "there", "the", "genes", "are", "distinct", ",", "though", "they", "may", "represent", "alleles", "rather", "than", "paralogs.We", "used", "the", "inferred", "sequences", "for", "P.", "vampyrus", "IFNA", ",", "IFNB", ",", "IFND", ",", "and", "IFNK", "to", "design", "oligonucleotide", "primers", "for", "cloning", "and", "sequencing", "and", "recovered", "a", "total", "of", "110", "sequences", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "directly", "cloned", "sequences", "validate", "much", "of", "the", "gene", "family", "inferences", ";", "most", "of", "the", "repeated", "sequences", "are", "within", "a", "few", "bases", "of", "the", "nearest", "inferred", "gene", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "minority", "of", "the", "directly", "sequenced", "genes", "are", "surprisingly", "far", "from", "the", "nearest", "inferred", "gene", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "circumstance", "may", "be", "an", "indication", "that", "there", "are", "additional", "type-I", "interferon", "genes", "not", "covered", "by", "the", "Pteropus", "sequencing", "traces", ",", "and", "may", "also", "reflect", "significant", "population", "polymorphism", "in", "the", "wild", "bat", "population.We", "used", "these", "same", "primers", "to", "show", ",", "using", "quantitative", "RT-PRC", ",", "that", "the", "P.", "vampyrus", "candidate", "IFNB", "and", "OAS2", "(", "a", "gene", "induced", "by", "IFNB", "in", "other", "mammals", ")", ",", "are", "expressed", "upon", "stimulation", "by", "type-I", "inducing", "agents", "." ]
+  }, {
+    "sentence_tokens" : [ "Furthermore", ",", "the", "temporal", "trajectories", "of", "this", "expression", "is", "consistent", "with", "the", "known", "mechanisms", "of", "such", "signaling", "." ]
+  }, {
+    "sentence_tokens" : [ "Conclusions", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "bat", "has", "been", "implicated", "as", "a", "major", "reservoir", "for", "viruses", "of", "extreme", "pathogenicity", "in", "humans", ",", "and", "suffers", "substantially", "less", "disease", "when", "infected", "by", "these", "viruses", "than", "humans", "do", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "addition", ",", "bat", "populations", "in", "North", "America", "are", "declining", "rapidly", "as", "a", "result", "of", "white-nose", "syndrome", ",", "an", "emergent", "disease", "associated", "with", "a", "fungal", "pathogen", "[", "35", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "These", "facts", ",", "and", "others", ",", "suggest", "that", "the", "study", "of", "host", "defense", "and", "immunity", "in", "these", "unique", "creatures", "would", "benefit", "the", "pursuit", "of", "ecological", "and", "human", "health", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "major", "obstacle", "in", "this", "undertaking", "is", "the", "lack", "of", "reagents", "that", "would", "make", "such", "investigations", "possible", "." ]
+  }, {
+    "sentence_tokens" : [ "One", "way", "to", "get", "this", "effort", "underway", "is", "to", "take", "advantage", "of", "the", "rich", "store", "of", "information", "contained", "in", "existing", "partial", "genome", "sequences", "." ]
+  }, {
+    "sentence_tokens" : [ "Although", "the", "information", "available", "in", "these", "genome", "databases", "requires", "more", "careful", "treatment", "for", "its", "extraction", "than", "is", "required", "for", "a", "complete", ",", "assembled", "genome", ",", "we", "have", "developed", "methods", "that", "facilitate", "this", "task", ",", "and", "have", "demonstrated", "their", "utility", "." ]
+  }, {
+    "sentence_tokens" : [ "Methods", "." ]
+  }, {
+    "sentence_tokens" : [ "Ethics", "Statement", "." ]
+  }, {
+    "sentence_tokens" : [ "All", "animals", "were", "handled", "in", "strict", "accordance", "with", "good", "animal", "practice", "as", "defined", "by", "the", "relevant", "national", "and/or", "local", "animal", "welfare", "bodies", ",", "and", "all", "animal", "work", "was", "covered", "by", "an", "IACUC", "protocol", "from", "the", "Lubee", "Bat", "Conservancy", "(", "USDA", "Research", "Facility", "#", "58-R-0131", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Animals", "and", "sample", "collection", "." ]
+  }, {
+    "sentence_tokens" : [ "Subjects", "for", "this", "study", "included", "10", "male", "Large", "Flying", "Foxes", "(", "Pteropus", "vampyrus", ")", "Some", "of", "the", "animals", "were", "wild", "caught", ",", "and", "some", "were", "laboratory", "born", ";", "all", "were", "reproductively", "mature", ",", "ranging", "in", "age", "from", "4", "to", "21", "yrs", "." ]
+  }, {
+    "sentence_tokens" : [ "Animals", "were", "housed", "in", "captivity", "at", "the", "Lubee", "Bat", "Conservancy", "in", "Gainesville", ",", "Florida", ",", "USA", "." ]
+  }, {
+    "sentence_tokens" : [ "Animals", "were", "housed", "together", "with", "conspecifics", "in", "an", "indoor", "and", "outdoor", "circular", "flight", "enclosure", "and", "were", "fed", "a", "mixture", "of", "fruit", ",", "vegetables", ",", "commercial", "primate", "chow", ",", "and", "a", "vitamin", "supplement", "." ]
+  }, {
+    "sentence_tokens" : [ "Water", "was", "provided", "ad", "libitum", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "bats", "were", "captured", "manually", ",", "anesthesia", "was", "mask", "induced", "with", "5", "%", "isoflurane", "in", "oxygen", "(", "3", "L/min", ")", ",", "and", "the", "bats", "were", "maintained", "with", "2.5", "%", "isoflurane", "." ]
+  }, {
+    "sentence_tokens" : [ "Blood", "was", "collected", "from", "the", "left", "and", "right", "brachial", "veins", "using", "3-ml", "syringes", "and", "25-gauge", "needles", "." ]
+  }, {
+    "sentence_tokens" : [ "Blood", "samples", "were", "transferred", "to", "heparanized", "tubes", ",", "maintained", "and", "shipped", "at", "room", "temperature", "(", "22", "degrees", "C", ")", "via", "overnight", "courier", "." ]
+  }, {
+    "sentence_tokens" : [ "Cloning", "and", "Sequencing", "." ]
+  }, {
+    "sentence_tokens" : [ "Genomic", "DNA", "was", "prepared", "from", "whole", "unfractionated", "peripheral", "blood", "from", "Pteropus", "vampyrus", "bats", "." ]
+  }, {
+    "sentence_tokens" : [ "Using", "primers", "derived", "from", "the", "inferred", "interferon", "gene", "sequences", "and", "encoded", "for", "restriction", "enzyme", "cloning", "sites", ",", "the", "genes", "were", "PCR", "amplified", "from", "the", "genomic", "DNA", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "forward", "and", "reverse", "primers", "encoded", "restriction", "sites", "for", "NheI", "and", "XhoI", "respectively", ",", "which", "allowed", "cloning", "of", "the", "full", "length", "gene", "into", "mammalian", "expression", "vector", "pcDNA3.1", "(", "+", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "PCR", "program", "consisted", "of", "an", "initialization", "step", "at", "94", "degrees", "C", "for", "5", "minutes", ",", "then", "30", "cycles", "of", "amplification", "consisting", "of", "denaturation", "at", "94", "degrees", "C", "for", "1", "minute", ",", "annealing", "at", "55", "degrees", "C", "for", "30", "seconds", ",", "and", "elongation", "at", "72", "degrees", "for", "1", "minute", "." ]
+  }, {
+    "sentence_tokens" : [ "Amplification", "was", "followed", "by", "a", "final", "elongation", "step", "at", "72", "degrees", "C", "for", "5", "minutes", "and", "samples", "held", "at", "4", "degrees", "C.", "PCR", "was", "performed", "on", "a", "P", "x", "2", "Thermal", "Cycler", "from", "ThermoElectron", "Corporation", "(", "Waltham", ",", "MA", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "After", "purification", ",", "the", "inserted", "genes", "were", "sequenced", "using", "vector", "primers", "downstream", "and", "upstream", "of", "the", "insert", "site", "." ]
+  }, {
+    "sentence_tokens" : [ "Pteropus", "vampyrus", "IFNB", ",", "IFNK", ",", "IFND", ",", "and", "IFNA", "sequences", "have", "been", "submitted", "to", "Genbank", "(", "GU126493", ",", "HM63650", ",", "HM636501", ",", "and", "HM636502", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Quantitative", "RT-PCR", "." ]
+  }, {
+    "sentence_tokens" : [ "Whole", "anticoagulated", "blood", "was", "collected", "from", "the", "brachial", "vein", "and", "layered", "over", "lymphocyte", "separation", "medium", "(", "Lympholyte", "M", ",", "Cedarlane", "Labs", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Cells", "were", "collected", "from", "the", "interface", ",", "washed", ",", "and", "plated", "on", "24", "well", "flat-bottom", "tissue", "culture", "plates", "(", "2", "x", "10", "cells", "and", "well", ")", "in", "a", "total", "volume", "of", "250", "mu", "l.", "Cells", "were", "treated", "as", "indicated", "with", "either", "poly", "(", "I", ":C", ")", "(", "Invivogen", ")", ",", "LPS", "(", "Sigma", ")", ",", "or", "VSV", "(", "Ramsburg", "lab", "stocks", "confirmed", "endotoxin", "free", "using", "LAL", "assay", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Stimulants", "were", "diluted", "such", "that", "the", "addition", "of", "250", "mu", "l", "stimulant", "would", "give", "a", "final", "concentration", "of", "10", "mu", "g/ml", "poly", "I", ":C", ",", "1", "mu", "g/ml", "LPS", ",", "or", "an", "MOI", "of", "5", "for", "VSV", "." ]
+  }, {
+    "sentence_tokens" : [ "500", "mu", "l", "of", "complete", "medium", "was", "added", "to", "the", "unstimulated", "control", "wells", "." ]
+  }, {
+    "sentence_tokens" : [ "Cells", "were", "incubated", "at", "37", "'", "and", "5", "%", "CO2", "for", "the", "indicated", "times", ",", "after", "which", "cells", "were", "harvested", "into", "RNA", "lysis", "buffer", "(", "Qiagen", "RNEasy", "kit", ")", "according", "to", "the", "manufacturer", "'s", "instructions.Purified", "RNA", "was", "prepared", "from", "these", "whole-cell", "lysates", "as", "described", "in", "the", "protocols", "accompanying", "the", "Qiagen", "RNeasy", "kit", ",", "Qiashedder", ",", "and", "Qiagen", "RNeasy", "Mini", "kit", "and", "Qiagen", "DNase-Free", "DNase", "Set", "." ]
+  }, {
+    "sentence_tokens" : [ "cDNA", "synthesis", "was", "performed", "using", "the", "Invitrogen", "two-step", "qRT-PCR", "kit", "according", "to", "the", "manufacturer", "'s", "protocol", "." ]
+  }, {
+    "sentence_tokens" : [ "Quantitative", "real-time", "PCR", "was", "performed", "in", "an", "Eppendorf", "Mastercycler", "ep", "realplex", "thermal", "cycler", "using", "SYBRGreenER", "qPCR", "Supermix", "and", "primers", "designed", "from", "the", "inferred", "gene", "sequences", "(", "additional", "file", "3", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Independent", "biological", "replicates", "were", "prepared", "for", "each", "treatment", "and", "time", "point", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "log", "expression", "level", "of", "IFNB", "and", "OAS2", "relative", "to", "the", "housekeeping", "gene", "PPIA", "was", "estimated", "by", "subtracting", "the", "mean", "Ct", "value", "for", "each", "gene", "and", "treatment", "and", "time", "point", "combination", "from", "the", "corresponding", "mean", "Ct", "value", "for", "PPIA", "." ]
+  }, {
+    "sentence_tokens" : [ "Estimation", "of", "Gene", "Family", "Size", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "likelihood", "function", "for", "the", "observed", "set", "S", "of", "sequences", "is", "a", "function", "of", "the", "true", "number", ",", "g", ",", "of", "genes", "and", "the", "sample", "size", ",", "n", ",", "by", "summing", "over", "the", "unobserved", "number", ",", "c", ",", "of", "distinct", "genes", "sampled", "." ]
+  }, {
+    "sentence_tokens" : [ "(", "14", ")", "The", "pmf", "on", "c", "is", "given", "by", "the", "recursion", "(", "15", ")", "with", "P", "(", "1", "|", "g", ",1", ")", "=", "1", "and", "P", "(", "c", "|", "g", ",1", ")", "=", "0", "for", "c", "!=", "1.P", "(", "S", "|", "c", ")", "is", "approximated", "by", "minimizing", "the", "number", ",", "m", ",", "of", "mutations", "over", "the", "assignments", "of", "observed", "sequences", "to", "c", "groups", "." ]
+  }, {
+    "sentence_tokens" : [ "P", "is", "then", "the", "posterior", "probability", "of", "getting", "m", "mutations", "given", "the", "observed", "number", "of", "mutations", "in", "the", "IFNB", "and", "IFNK", "datasets.Note", "that", "this", "technique", "is", "independent", "of", "the", "assembly", "methods", "described", "elsewhere", "in", "the", "paper", "." ]
+  }, {
+    "sentence_tokens" : [ "Phylogenetic", "Inference", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "set", "consisting", "of", "type-I", "interferon", "amino", "acid", "sequences", "from", "human", "(", "Homo", "sapiens", ")", ",", "domestic", "pig", "(", "Sus", "scrofa", ")", ",", "duckbill", "platypus", "(", "Ornithorhynchus", "anatinus", ")", "and", "the", "amino", "acid", "sequences", "corresponding", "to", "the", "Chiropteran", "genes", "inferred", "in", "this", "paper", "was", "submitted", "to", "multiple", "sequence", "alignment", "by", "CLUSTALW", "2.0.10", "[", "36", "]", "and", "ProbCons", "1.12", "[", "37", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Maximum", "likelihood", "and", "minimum", "evolution", "phylogenies", "were", "inferred", "from", "each", "resulting", "multiple", "sequence", "alignment", "." ]
+  }, {
+    "sentence_tokens" : [ "Maximum", "likelihood", "phylogenies", "were", "inferred", "with", "proml", "found", "in", "the", "PHYLIP", "3.68", "package", "[", "38", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Minimum", "evolution", "phylogenies", "were", "inferred", "using", "fastme", "[", "39", "]", "based", "on", "the", "distance", "matrix", "calculated", "with", "protdist", "found", "in", "PHYLIP", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "both", "cases", ",", "1000", "boot-strap", "replications", "were", "generated", "using", "seqboot", "and", "the", "consensus", "phylogeny", "was", "assembled", "with", "consense", ",", "both", "from", "the", "PHYLIP", "package", "." ]
+  }, {
+    "sentence_tokens" : [ "FigTree", "1.2.1", "http://tree.bio.ed.ac.uk/software/figtree/", "was", "used", "for", "initial", "visualization", "and", "final", "production", "of", "figures", "of", "the", "resulting", "phylogenetic", "trees", "." ]
+  }, {
+    "sentence_tokens" : [ "Alignments", "of", "the", "bat", "DNA", "sequences", "and", "of", "all", "the", "amino", "acid", "sequences", "are", "available", "in", "additional", "files", "4", "." ]
+  }, {
+    "sentence_tokens" : [ "Authors", "'", "contributions", "." ]
+  }, {
+    "sentence_tokens" : [ "ER", "and", "TBK", "conceived", "the", "project", "and", "designed", "the", "experiments", "." ]
+  }, {
+    "sentence_tokens" : [ "TBK", "developed", ",", "implemented", ",", "and", "applied", "the", "statistical", "methods", "." ]
+  }, {
+    "sentence_tokens" : [ "CS", ",", "KH", ",", "and", "AH", "performed", "the", "experiments", "." ]
+  }, {
+    "sentence_tokens" : [ "JR", "and", "TBK", "performed", "the", "phylogenetic", "analysis", "." ]
+  }, {
+    "sentence_tokens" : [ "AW", "contributed", "critical", "reagents", "and", "assisted", "in", "interpretation", "of", "results", "." ]
+  }, {
+    "sentence_tokens" : [ "TBK", ",", "CS", ",", "and", "ER", "wrote", "the", "manuscript", "." ]
+  }, {
+    "sentence_tokens" : [ "All", "authors", "read", "and", "approved", "the", "final", "manuscript", "." ]
+  } ]
+}

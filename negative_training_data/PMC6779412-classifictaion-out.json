@@ -1,1 +1,309 @@
-[ ]
+{
+  "regulations" : [ ],
+  "hardInstances" : [ ],
+  "withoutRegulations" : [ {
+    "sentence_tokens" : [ "For", "brain", "primordium", ",", "all", "5", "genes", "with", "detectable", "FISH", "signals", "as", "predicted", "by", "FIND", "were", "indeed", "highly", "expressed", "in", "brain", "at", "stages", "11", "or", "12", "(", "S1", "Table", ",", "Fig", "3a", ")", "." ],
+    "entities_indices" : [ [ 9, 10 ], [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "modENCODE", "RNA-seq", "dataset", "was", "downloaded", "from", "[", "16", "]", "." ],
+    "entities_indices" : [ [ 0, 1, 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "Accurate", "genome-wide", "predictions", "of", "spatio-temporal", "gene", "expression", "during", "embryonic", "development", "." ],
+    "entities_indices" : [ [ 5, 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "Even", "though", "flies", "lack", "a", "skeletal", "system", ",", "bone", "diseases", "are", "mapped", "best", "to", "mesoderm", "primordium", "tissues", ",", "suggesting", "that", "at", "least", "their", "early", "development", "during", "mesoderm", "stage", "may", "be", "modeled", "(", "Fig", "5", ")", "." ],
+    "entities_indices" : [ [ 8, 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "developed", "structured", "in", "silico", "nano-dissection", ",", "a", "computational", "approach", "that", "predicts", "gene", "expression", "in", ">", "200", "tissue-developmental", "stages", "." ],
+    "entities_indices" : [ [ 12, 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "resource", ",", "together", "with", "the", "exploratory", "tools", "are", "freely", "available", "at", "our", "webserver", "http://find.princeton.edu", ",", "which", "provides", "a", "valuable", "tool", "for", "a", "range", "of", "applications", ",", "from", "predicting", "spatio-temporal", "expression", "patterns", "to", "recognizing", "tissue", "signatures", "from", "differential", "gene", "expression", "profiles", "." ],
+    "entities_indices" : [ [ 38, 39, 40 ] ]
+  }, {
+    "sentence_tokens" : [ "All", "samples", "were", "standardized", "to", "mean", "0", "and", "variance", "1.Tissue-", "and", "developmental", "stage-", "specific", "expression", "standards", "were", "obtained", "from", "BDGP", "in", "situ", "database", "(", "insitu.fruitfly.org", ")", "and", "FlyFISH", "database", "(", "fly-fish.ccbr.utoronto.ca", ")", "on", "May", "2014", "." ],
+    "entities_indices" : [ [ 27, 28 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "second", "stage", ",", "we", "use", "a", "conditional", "random", "field", "classifier", ",", "which", "integrates", "individual", "tissue-stage", "predictions", "using", "learned", "dependencies", "of", "gene", "expression", "between", "tissue-stage", "terms", "." ],
+    "entities_indices" : [ [ 22, 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "first", "obtain", "a", "fast", "approximation", "of", "parameters", "by", "optimizing", "a", "modified", "pseudo-likelihood", "objective", ",", "sum", "i", "sum", "mlogP", "(", "Ym", "(", "i", ")", "|X(", "i", ")", ",", "Y-m", "(", "i", ")", ")", "+", "lambda", "|", "J", "|", "=", "sum", "i", "sum", "me", "sum", "m", "(", "WmX+", "alpha", "m", ")", "Ym+", "sum", "(", "m", ",", "n", ")", "in", "GontologyJmnYmYne", "sum", "m", "(", "WmX+", "alpha", "m", ")", "Ym+", "sum", "(", "m", ",", "n", ")", "in", "GontologyJmnYmYn", "+1+", "lambda", "|", "J", "|", "for", "which", "the", "gradient", "can", "be", "computed", "efficiently", "because", "it", "does", "not", "involve", "computing", "Z", "which", "is", "intractable", ",", "and", "initialize", "the", "second", "step", "optimization", "which", "optimizes", "the", "true", "objective", "with", "the", "estimators", "from", "first", "step", "." ],
+    "entities_indices" : [ [ 15, 16, 17, 18, 19 ], [ 20, 21, 22, 23, 24, 25, 26, 27 ], [ 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42 ], [ 103, 104 ], [ 115, 116 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "D.", "melanogaster", "embryonic", "development", ",", "the", "well", "annotated", "resource", "of", "gene", "expression", "across", "tissues", "and", "developmental", "time", ",", "provide", "a", "unique", "opportunity", "to", "systematically", "predict", "not", "only", "tissue", "specific", "expression", "but", "also", "the", "temporal", "stage", "of", "gene", "expression", "." ],
+    "entities_indices" : [ [ 11, 12, 13 ], [ 37, 38, 39 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "set", "momentum", "to", "0.9", "and", "L1", "regularization", "parameter", "to", "8.After", "the", "model", "is", "trained", ",", "for", "prediction", "from", "the", "second-stage", "CRF", "model", "we", "ran", "80,000", "rounds", "of", "Gibbs", "sampling", "and", "average", "over", "the", "samples", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "Specifically", ",", "we", "identified", "fly", "orthologs", "of", "human", "disease", "gene", "from", "OMIM", "database", ",", "using", "a", "functional", "mapping", "approach", "which", "identifies", "gene", "that", "are", "not", "only", "similar", "in", "sequence", ",", "but", "also", "share", "similar", "roles", "in", "pathways", "in", "human", "and", "fly", "[", "12", "]", "." ],
+    "entities_indices" : [ [ 8, 9, 10 ], [ 11, 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "Furthermore", ",", "the", "ability", "to", "predict", "gene", "expression", "patterns", "in", "highly", "specific", "cell", "types", "depends", "on", "the", "input", "data", "compendiums", "being", "informative", "of", "the", "gene", "co-expression", "patterns", "in", "these", "cell", "types", "and", "the", "availability", "of", "known", "expressed", "genes", "from", "these", "specific", "cell", "types", "as", "labels", "." ],
+    "entities_indices" : [ [ 6, 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "Probes", "were", "detected", "with", "peroxidase", "conjugated", "antibodies", "(", "Roche", ")", "and", "developed", "using", "the", "TSA-plus", "Tyramide", "fluorescence", "system", "(", "Perkin", "Elmer", ")", "for", "fluorescein", "or", "Cy3", "fluorophore", "deposition.Imaging", "was", "performed", "in", "a", "Zeiss", "LSM", "780", "confocal", "microscope", ",", "using", "a", "Plan-Apochromat", "20x/0.8", "objective", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 23, 24 ], [ 25, 26 ], [ 33, 34 ] ]
+  }, {
+    "sentence_tokens" : [ "Even", "for", "cases", "where", "the", "transcriptome", "profiles", "are", "not", "tissue-", "or", "stage", "specific", ",", "they", "are", "an", "information", "rich", "source", "of", "co-regulated", "gene", "expression", "patterns", ",", "such", "as", "those", "of", "genes", "within", "the", "same", "regulatory", "or", "biochemical", "pathways", "." ],
+    "entities_indices" : [ [ 22, 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "As", "the", "expression", "for", "each", "tissue", "is", "globally", "predicted", "considering", "dependencies", "between", "all", "tissue-stage", "terms", ",", "this", "approach", "allows", "for", "borrowing", "information", "from", "relevant", "tissues.Spatio-temporal", "gene", "expression", "during", "Drosophila", "embryogenesis", "has", "been", "extensively", "studied", "via", "large-scale", "in", "situ", "hybridization", "projects", ",", "such", "as", "the", "BDGP", "in", "situ", "database", "[", "1", "]", "and", "Fly-FISH", "database", "[", "2", "]", "." ],
+    "entities_indices" : [ [ 25, 26, 27 ], [ 29, 30 ], [ 44, 45, 46, 47, 48, 49, 50, 51 ], [ 52, 53, 54, 55, 56, 57 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "particularly", "interesting", "example", "is", "the", "gene", "Ppn", "(", "Papilin", ")", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "Case", "study", "2", ":", "Identifying", "potential", "human", "disease", "models", "in", "Drosophila", "." ],
+    "entities_indices" : [ [ 0, 1, 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "whole", "embryo", ")", "expression", "datasets", "and", "identification", "of", "most", "relevant", "tissues", "for", "study", "of", "human", "disease.To", "facilitate", "the", "exploration", "of", "our", "spatio-developmental", "gene", "expression", "predictions", "and", "downstream", "analyses", ",", "we", "provide", "a", "user-friendly", "web", "interface", "(", "http://find.princeton.edu", ")", "." ],
+    "entities_indices" : [ [ 22, 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "Structured", "in-silico", "nano-dissection", "for", "spatio-developmental", "gene", "expression", "prediction", "." ],
+    "entities_indices" : [ [ 5, 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "Case", "study", "1", ":", "Using", "spatio-developmental", "gene", "expression", "predictions", "for", "understanding", "tissue-specificity", "at", "transcriptome-scale", "." ],
+    "entities_indices" : [ [ 0, 1, 2, 3 ], [ 6, 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "Drosophila", "melanogaster", "raw", "microarray", "data", "for", "the", "two", "major", "platforms", "GPL1322", "and", "GPL72", "were", "downloaded", "from", "NCBI", "Gene", "Expression", "Omnibus", "at", "May", "2014", "and", "processed", "with", "the", "GEO2R", "package", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 12, 13 ], [ 17, 18, 19 ], [ 27, 28 ] ]
+  }, {
+    "sentence_tokens" : [ "Comprehensive", "information", "on", "the", "timing", "and", "location", "of", "gene", "expression", "is", "fundamental", "to", "our", "understanding", "of", "embryonic", "development", "and", "tissue", "formation", "." ],
+    "entities_indices" : [ [ 8, 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "Thus", "13/13", "tested", "genes", "exhibited", "the", "FIND", "predicted", "expression", "pattern", "for", "embryonic", "muscle", "system", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "gene", "expression", "prediction", "dataset", "is", "available", "at", "http://find.princeton.edu/predictions/download/", "or", "https://doi.org/10.5281/zenodo.3408411", "." ],
+    "entities_indices" : [ [ 1, 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "bsf", "is", "predicted", "to", "have", "similar", "expression", "level", "throughout", "stages", "11", "-", "16", "in", "midgut", "but", "with", "an", "increase", "of", "~", "3", "fold", "in", "muscle", "for", "the", "same", "temporal", "transition", "." ],
+    "entities_indices" : [ [ 20, 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "trh", "gene", "codes", "for", "an", "essential", "transcription", "factor", "in", "the", "development", "of", "the", "tracheal", "system", "[", "11", "]", "(", "E-GEOD-28780", ")", "." ],
+    "entities_indices" : [ [ 1, 2, 3 ], [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "stage", "learns", "and", "applies", "transcriptional", "dependencies", "between", "developmentally", "and", "anatomically", "related", "tissue-stages", ",", "with", "lineage", "knowledge", "encoded", "in", "the", "structure", "of", "a", "probabilistic", "graphical", "model", "based", "on", "the", "tissue", "developmental", "ontology.Using", "our", "SIND", "algorithm", ",", "together", "with", "in", "situ", "gene", "annotations", "and", "a", "compendium", "of", "6,378", "genome-wide", "expression", "and", "chromatin", "immunoprecipitation", "(", "ChIP", ")", "datasets", ",", "we", "predicted", "global", "expression", "patterns", "in", "282", "tissue-developmental", "stages", ",", "including", ">", "4000", "genes", "without", "prior", "in", "situ", "data", "." ],
+    "entities_indices" : [ [ 53, 54 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "11", "more", "genes", ",", "literature", "evidence", "corroborated", "the", "FIND", "predictions", "(", "S1", "Table", ")", "." ],
+    "entities_indices" : [ [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "these", "datasets", ",", "as", "gene", "expression", "is", "measured", "in", "a", "diversity", "of", "genetic", "or", "environmental", "conditions", ",", "functionally", "related", "genes", "are", "often", "co-expressed", "or", "perturbed", "together", "[", "5,6", "]", "." ],
+    "entities_indices" : [ [ 5, 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "Non", "transcriptomic", "sequencing", "alignment", "data", "was", "summarized", "by", "RPKM", "within", "+/-", "500bp", "region", "to", "TSS", "." ],
+    "entities_indices" : [ [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "FIND", "'", "s", "quantitative", "score", "for", "every", "tissue", "and", "stage", "for", "every", "gene", "in", "the", "genome", "can", "detect", "tissue-specificity", "signals", "from", "whole-organism", "differential", "expression", "experiments", ",", "even", "in", "the", "absence", "of", "reliable", "tissue", "specific", "markers", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "fluorescein", "detection", ",", "we", "used", "the", "488nm", "wavelength", "of", "a", "multiline", "Argon", "laser", ",", "a", "MSB", "488/561", "dichroic", "mirror", "and", "a", "spectral", "detector", "set", "for", "a", "500-600nm", "detection", "range", "." ],
+    "entities_indices" : [ [ 12, 13 ], [ 16, 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "Specifically", ",", "we", "rank", "tissues", "based", "on", "Spearman", "correlation", "of", "the", "differential", "gene", "expression", "log", "fold", "changes", "and", "the", "prediction", "scores", "for", "each", "of", "the", "282", "tissue-stages", "." ],
+    "entities_indices" : [ [ 12, 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "CRF", "model", "that", "directly", "provides", "probability", "output", "for", "each", "gene", "and", "each", "tissue", "is", "formulated", "as", "the", "following", "P", "(", "Y", "|X)", "=", "1Ze", "sum", "m", "(", "WmX+", "alpha", "m", ")", "Ym+", "sum", "(", "m", ",", "n", ")", "in", "GontologyJmnYmYnP", "(", "Y", "|", "X)", "describes", "the", "conditional", "probability", "model", "." ],
+    "entities_indices" : [ [ 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "Integrating", "individual", "tissue", "predictions", "with", "our", "conditional", "random", "field", "(", "CRF", ")", "model", "is", "a", "major", "factor", "for", "enhancing", "performance", ",", "in", "addition", "to", "utilizing", "a", "wide", "range", "of", "datasets", "and", "data", "types", "(", "S1", "Fig", ")", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "To", "address", "this", "challenge", ",", "we", "examined", "FIND", "predicted", "tissue-stage", "patterns", "in", "the", "fly", "embryo", "for", "human", "disease", "genes", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 17, 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "Thus", ",", "we", "verified", "all", "high", "confidence", "predictions", "that", "we", "tested", ",", "indicating", "the", "utility", "of", "using", "FIND", "predictions", "to", "guide", "future", "studies.To", "determine", "how", "FIND", "predicts", "new", "multi-tissue", "expression", "patterns", ",", "we", "compared", "the", "predicted", "spatial-temporal", "patterns", "with", "experimentally", "measured", "gene", "expression", "across", "tissue", "and", "developmental", "stages", "." ],
+    "entities_indices" : [ [ 17, 18 ], [ 25, 26 ], [ 41, 42, 43 ] ]
+  }, {
+    "sentence_tokens" : [ "Briefly", ",", "we", "used", "cDNA", "clones", "from", "the", "DGRC", "collections", "DGC1", "and", "2", "[", "21", "]", "for", "preparing", "digoxigenin", "labelled", "or", "fluorescein", "labeled", "RNA", "probes", ",", "except", "for", "the", "CG14688", "gene", "for", "which", "we", "use", "a", "previously", "reported", "cDNA", "template", "[", "22", "]", "and", "CG34284", "for", "which", "we", "amplified", "a", "cDNA", "fragment", "." ],
+    "entities_indices" : [ [ 8, 9, 10, 11, 12, 13 ], [ 18, 19 ], [ 29, 30, 31 ] ]
+  }, {
+    "sentence_tokens" : [ "Large-scale", "projects", "involving", "in", "situ", "hybridization", "and", "imaging", ",", "most", "representatively", "the", "Berkeley", "Drosophila", "Genome", "Project", "(", "BDGP", ")", "[", "1", "]", ",", "have", "resulted", "in", "thousands", "of", "gene", "expression", "patterns", "now", "manually", "annotated", "to", "very", "specific", "tissues", "with", "controlled", "vocabularies", "[", "1", "]", "." ],
+    "entities_indices" : [ [ 28, 29, 30 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "is", "both", "because", "gene", "expression", "in", "a", "precursor", "tissue", "usually", "provides", "informative", "insight", "into", "gene", "expression", "patterns", "of", "the", "tissue", "it", "develops", "into", ",", "and", "because", "related", "tissues", ",", "e.g", "." ],
+    "entities_indices" : [ [ 4, 5, 6 ], [ 15, 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "5", "more", "genes", ",", "literature", "evidence", "again", "corroborated", "the", "FIND", "predictions", "(", "S3", "Table", ")", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "While", "high-throughput", "in", "situ", "hybridization", "projects", "provide", "invaluable", "information", "about", "developmental", "gene", "expression", "patterns", "for", "model", "organisms", "like", "Drosophila", ",", "the", "output", "of", "these", "experiments", "is", "primarily", "qualitative", ",", "and", "a", "high", "proportion", "of", "protein", "coding", "genes", "and", "most", "non", "coding", "genes", "lack", "any", "annotation", "." ],
+    "entities_indices" : [ [ 11, 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "|", "J", "|", "represents", "the", "L1", "norm", "of", "interactions", "J", "which", "equals", "sum", "of", "absolute", "values", "of", "all", "entries", "of", "J.", "lambda", "is", "the", "L1", "regularization", "parameter.To", "prevent", "overfitting", "to", "the", "in", "situ", "annotations", ",", "for", "the", "training", "of", "the", "second", "stage", "model", ",", "all", "predictions", "from", "the", "first", "stage", "were", "made", "on", "holdout", "genes", "with", "5", "fold", "cross", "validation", "." ],
+    "entities_indices" : [ [ 1, 2, 3 ], [ 20, 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "provide", "all", "our", "predictions", "and", "exploratory", "tools", "in", "a", "user-friendly", "web", "interface", "FIND", "(", "fly", "in", "silico", "nano-dissection", ",", "find.princeton.edu", ")", "that", "allows", "the", "user", "to", "query", "predicted", "gene", "expression", "pattern", "and", "perform", "tissue-specificity", "prediction", "task", "." ],
+    "entities_indices" : [ [ 29, 30, 31 ] ]
+  }, {
+    "sentence_tokens" : [ "Integrating", "genomic", "data", "for", "embryonic", "tissue-developmental", "stage", "specific", "gene", "expression", "prediction", "." ],
+    "entities_indices" : [ [ 8, 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "Our", "machine", "learning", "algorithm", "uses", "a", "cell-lineage", "aware", "approach", "to", "predict", "gene", "expression", "with", "spatio-developmental", "specificity", "based", "on", "whole-genome", "scale", "expression", "data", "." ],
+    "entities_indices" : [ [ 11, 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "Markov", "chains", "for", "all", "genes", "are", "parallelized", "for", "speeding", "up.For", "each", "iteration", ",", "we", "increment", "model", "parameters", "based", "on", "stochastic", "gradient", "descent", "with", "specified", "step", "size", "." ],
+    "entities_indices" : [ [ 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "cell", "lineage", "information", "is", "critical", "for", "specific", "tissues", "and", "stages", "that", "can", "benefit", "from", "considering", "developmental", "context", "including", "its", "precursor", "and", "descendant", "tissues.Our", "model", "takes", "in", "situ", "gene", "expression", "annotations", "and", "functional", "genomics", "data", "as", "input", "and", "performs", "prediction", "in", "the", "stages", "." ],
+    "entities_indices" : [ [ 28, 29, 30 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "the", "second", "step", ",", "we", "estimate", "the", "stochastic", "gradient", "of", "the", "model", "objective", "by", "Gibbs", "sampling", "and", "employ", "stochastic", "gradient", "descent", "with", "momentum", "for", "optimization", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "Using", "machine", "learning", "algorithms", "and", "known", "tissue", "specific", "gene", "standards", ",", "these", "co-regulatory", "patterns", "can", "be", "extracted", "to", "infer", "tissue", "specific", "expression", "of", "genes", ",", "which", "combine", "advantages", "of", "both", "data", "types", "." ],
+    "entities_indices" : [ [ 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "Spatio-temporal", "gene", "expression", "information", "is", "fundamental", "for", "understanding", "the", "intricate", "mechanisms", "of", "embryonic", "development", ",", "which", "involves", "both", "precisely", "controlled", "differentiation", "into", "dozens", "of", "tissue", "types", ",", "as", "well", "as", "dramatic", "temporal", "transitions", "such", "as", "gastrulation", "and", "segmentation.In", "the", "model", "organism", "Drosophila", "melanogaster", ",", "decade-long", "efforts", "in", "systematically", "characterizing", "developmental", "and", "tissue", "specific", "expression", "patterns", "have", "greatly", "advanced", "the", "understanding", "of", "embryonic", "development", "and", "tissue", "formation", "[", "1", "-", "3", "]", "." ],
+    "entities_indices" : [ [ 1, 2, 3 ], [ 20, 21 ], [ 35, 36 ] ]
+  }, {
+    "sentence_tokens" : [ "Using", "the", "ontology", "based", "CRF", "method", "that", "we", "developed", "provides", "a", "consistent", "improvement", "across", "almost", "all", "tissues", "(", "Fig", "2b", ")", ",", "demonstrating", "the", "importance", "of", "the", "integrative", "approach", "allowing", "sharing", "information", "cross", "tissue-stages", "with", "developmental", "cell", "lineage", "." ],
+    "entities_indices" : [ [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "Since", "BDGP", "in", "situ", "annotation", "are", "more", "comprehensive", "in", "fine", "tissue", "structures", ",", "we", "use", "BDGP", "as", "the", "main", "standards", "while", "using", "FlyFISH", "as", "assistance", "standards", "that", "were", "only", "used", "to", "train", "first-stage", "classifiers", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "use", "a", "learning", "rate", "annealing", "scheme", "of", "100,000", "iterations", "of", "learning", "rate", "1e-6", ",", "followed", "by", "50,000", "iterations", "of", "1e-7", "and", "50,000", "iterations", "of", "1e-8", "." ],
+    "entities_indices" : [ [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "As", "predicted", ",", "the", "bsf", "gene", "has", "a", "clear", "pattern", "of", "co-expression", "in", "the", "midgut", "and", "muscle", "at", "stage", "13", "and", "later", ",", "but", "when", "looking", "at", "stage", "12", ",", "the", "expression", "in", "muscle", "is", "much", "lower", "than", "in", "the", "midgut", "primordia", "(", "Fig", "4b", ")", "." ],
+    "entities_indices" : [ [ 4, 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "Human", "disease", "gene", "sets", "were", "obtained", "from", "OMIM", "." ],
+    "entities_indices" : [ [ 1, 2, 3, 4 ], [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "Computing", "the", "exact", "gradient", "of", "the", "CRF", "likelihood", "over", "the", "ontology", "based", "graph", "is", "intractable", "since", "the", "graph", "is", "not", "tree", "or", "chain", "structured", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "Indeed", ",", "fly", "eye", "is", "known", "to", "share", "key", "developmental", "biology", "with", "mammals", ",", "for", "example", ",", "the", "Drosophila", "eyeless", "and", "its", "mammal", "ortholog", "Pax6", "are", "both", "essential", "to", "eye", "development", "[", "13", "]", "." ],
+    "entities_indices" : [ [ 24, 25 ], [ 29, 30, 31 ] ]
+  }, {
+    "sentence_tokens" : [ "Importantly", ",", "our", "model", "gave", "all", "of", "these", "tissues", "high", "prediction", "scores", "for", "ppn", "expression", "(", "Fig", "3c", ",", "top", ")", ",", "showing", "that", "complex", "expression", "patterns", "can", "be", "accurately", "predicted", "from", "our", "method.We", "next", "assessed", "how", "the", "variation", "of", "gene", "expression", "probabilities", "across", "stages", "are", "related", "to", "temporal", "variation", "in", "expression", "levels", "during", "development", "for", "specific", "genes", "." ],
+    "entities_indices" : [ [ 13, 14 ], [ 40, 41, 42 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "performed", "FISH", "for", "four", "(", "Malpighian", "tubules", ")", "and", "five", "(", "salivary", "glands", ")", "genes", "with", "more", "than", "20-fold", "enrichment", "above", "background", ",", "and", "in", "all", "cases", "we", "were", "able", "to", "detect", "expression", "on", "the", "respective", "tissues", "(", "S5", "Fig", ")", "." ],
+    "entities_indices" : [ [ 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "fact", ",", "most", "of", "the", "tissues", "we", "make", "predictions", "for", "are", "fine", "embryonic", "structures", "without", "existing", "high-throughput", "microarray", "or", "RNA-seq", "data", "specific", "for", "those", "structures.In", "the", "second", "stage", ",", "we", "use", "prior", "developmental", "cell", "lineage", "knowledge", "to", "help", "integrate", "individual", "tissue-stage", "specific", "predictions", "with", "a", "conditional", "random", "field", "(", "CRF", ")", "probabilistic", "graphical", "model", "." ],
+    "entities_indices" : [ [ 50, 51 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "second", "example", "is", "Twist", ",", "an", "upstream", "regulator", "of", "Mef2", "that", "has", "an", "earlier", "and", "broader", "role", "in", "mesoderm", "development", "[", "10", "]", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 10, 11 ], [ 19, 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "Tissue-stage", "nodes", "are", "connected", "with", "the", "following", "rules", ":", "If", "they", "are", "in", "a", "developmental", "precursor-and-descendent", "relationship", "and", "in", "the", "same", "or", "adjacent", "stages.If", "they", "are", "directly", "connected", "in", "the", "tissue", "developmental", "ontology", "by", "the", "\"", "part", "of", "\"", "relationship", "and", "in", "the", "same", "or", "adjacent", "stages.If", "they", "are", "the", "same", "tissue", "type", "in", "adjacent", "stages.The", "\"", "no", "staining", "\"", "terms", "were", "connected", "to", "all", "other", "terms", "in", "the", "same", "stage", "(", "because", "of", "the", "expected", "negative", "dependencies", ")", "." ],
+    "entities_indices" : [ [ 52, 53 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "Cy3", "detection", ",", "samples", "were", "excited", "with", "a", "DPSS", "laser", "at", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "Drosophila", "melanogaster", "RNA-seq", "and", "ChIP-seq", "raw", "reads", "data", "were", "downloaded", "from", "NCBI", "Sequence", "Read", "Archive", "(", "SRA", ")", "and", "aligned", "to", "BDGP5", "fly", "genome", "assembly", "using", "bowtie2", "with", "local", "alignment", "mode", "[", "15", "]", "." ],
+    "entities_indices" : [ [ 0, 1, 2, 3 ], [ 4, 5 ], [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "Accurate", "data-centric", "predictions", "of", "spatio-temporal", "gene", "expression", "will", "therefore", "complement", "current", "in", "situ", "hybridization", "efforts", "." ],
+    "entities_indices" : [ [ 5, 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "addition", ",", "we", "could", "confirm", "the", "previously", "reported", "expression", "in", "the", "dorsal", "vessel", "[", "8]", "and", "also", "detected", "Ppn", "expression", "in", "the", "visceral", "muscle", "and", "somatic", "muscle", "primordia", "(", "Fig", "3c", ",", "bottom", ")", "." ],
+    "entities_indices" : [ [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "Specifically", ",", "for", "each", "fold", ",", "4/5", "of", "the", "genes", "were", "used", "for", "training", "and", "the", "trained", "model", "was", "used", "to", "predict", "the", "rest", "1/5", "holdout", "genes", "." ],
+    "entities_indices" : [ [ 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "As", "an", "overview", "(", "Fig", "1", ",", "see", "also", "Methods", ")", ",", "our", "approach", "first", "predicts", "gene", "expression", "probabilities", "for", "each", "tissue-stage", "term", "individually", "by", "learning", "linear", "models", "of", "transcription", "and", "chromatin", "signals", "that", "predict", "tissue-stage", "specific", "expression", "levels", "using", "a", "structural", "support", "vector", "machine", "(", "SVM", ")", "algorithm", ",", "and", "then", "integrates", "individual", "tissue-stage", "term", "predictions", "with", "a", "global", "developmental", "lineage-aware", "probabilistic", "graphical", "model", "." ],
+    "entities_indices" : [ [ 16, 17, 18 ], [ 29, 30 ] ]
+  }, {
+    "sentence_tokens" : [ "Despite", "the", "distinct", "morphology", "of", "fly", "eyes", ",", "larval", "eye", "primordium", "is", "selected", "as", "the", "best", "tissue", "for", "modeling", "for", "eye", "diseases", "(", "Fig", "5", ")", "." ],
+    "entities_indices" : [ [ 20, 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "differential", "gene", "expression", "after", "a", "perturbation", "experiment", ")", "." ],
+    "entities_indices" : [ [ 1, 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "case", ",", "we", "performed", "Biozym", "Red", "HS", "Master", "Mix", "(", "Biozym", ")", "using", "as", "template", "total", "cDNA", "obtained", "from", "mixed", "stage", "of", "D.", "melanogaster", "wt", "embryos", "(", "an", "overnight", "embryo", "collection", ")", "and", "the", "primers", "GTCGGTCATTGAAAGTTTCC", "and", "CCGAACATATTCCAAATCTG", ")", "." ],
+    "entities_indices" : [ [ 7, 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "example", ",", "Myocyte", "enhancer", "factor", "2", "(", "Mef2", ")", "loss-of-function", "mutants", "have", "defects", "in", "myoblast", "fusion", "and", "terminal", "muscle", "differentiation", "[", "9", "]", ",", "consistent", "with", "the", "role", "of", "Mef2", "as", "an", "essential", "conserved", "transcriptional", "regulator", "of", "muscle", "development", "." ],
+    "entities_indices" : [ [ 4, 5, 6, 7 ], [ 8, 9 ], [ 15, 16, 17 ], [ 20, 21 ], [ 30, 31 ], [ 35, 36, 37 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "examined", "the", "ability", "of", "the", "model", "to", "predict", "expression", "patterns", "(", "outside", "of", "the", "training", "set", ")", "by", "both", "collecting", "gene", "expression", "information", "from", "the", "literature", "and", "performing", "fluorescent", "in", "situ", "hybridization", "(", "FISH", ")", "experiments", "for", "genes", "where", "no", "prior", "tissue-developmental", "mapping", "was", "available.We", "started", "by", "examining", "gene", "expression", "patterns", "in", "two", "tissues", "(", "BDGP", "in", "situ", "ontology", "categories", ")", "that", "had", "both", "a", "large", "number", "of", "genes", "with", "high", "scoring", "predictions", "(", "all", "predictions", "above", "threshold", "0.8", ")", "and", "are", "easy", "to", "assess", "in", "in", "situ", "images", ":", "brain", "primordium", "(", "stages", "11", "-", "12", ")", "and", "embryonic", "muscle", "system", "(", "stages", "13", "and", "later", ")", "." ],
+    "entities_indices" : [ [ 21, 22, 23 ], [ 34, 35 ], [ 49, 50, 51 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "DAPI", "detection", ",", "samples", "were", "excited", "with", "a", "diode", "at", "405nm", "and", "the", "emission", "fluorescence", "was", "detected", "with", "a", "MBS405", "dichroic", "mirror", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "Gibbs", "sampling", "based", "gradient", "estimation", ",", "we", "first", "rewrite", "the", "likelihood", "as", "P", "(", "Y", "|X)", "=", "1Ze", "sum", "mfm", "(", "X)", "Ym+", "sum", "(", "m", ",", "n", ")", "in", "GontologyJmnYmYnTo", "compute", "the", "stochastic", "gradient", "for", "the", "log-likelihood", "when", "conditioned", "on", "X,", "we", "used", "the", "fact", "(", "ignored", "writing", "down", "conditioning", "on", "X", "for", "simplicity", ")", "d", "log", "(", "P", ")", "d", "fm", "=", "Ym", " -E", "(", "Ym", ")", ",", "d", "log", "(", "P", ")", "d", "Jmn", "=", "YmYn", " -E", "(", "YmYn", ")", "where", "expectations", "E", "(", "Y", ")", "and", "E", "(", "Y", "Y", ")", "are", "estimated", "by", "MCMC", "sampling", "." ],
+    "entities_indices" : [ [ 63, 64 ], [ 82, 83 ] ]
+  }, {
+    "sentence_tokens" : [ "Additionally", ",", "a", "momentum", "term", "was", "used", "for", "stabilizing", "the", "update", "and", "improving", "convergence", "." ],
+    "entities_indices" : [ [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "complete", "and", "quantitative", "nature", "of", "the", "predictions", "enables", "previously", "infeasible", "analysis", "of", "tissue", "specificities", ",", "such", "as", "analyzing", "tissue", "specific", "signatures", "in", "whole-animal", "differential", "expression", "datasets", "and", "mapping", "human", "diseases", "to", "D.", "melanogaster", "tissue", "and", "stages", "for", "aiding", "the", "development", "of", "human", "disease", "models", "in", "the", "fly", "." ],
+    "entities_indices" : [ [ 30, 31 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "the", "embryonic", "muscle", "system", "(", "stages", "13", "and", "later", ")", "all", "8", "genes", "with", "detectable", "FISH", "signals", "showed", "patterns", "in", "muscle", "systems", ",", "including", "in", "the", "somatic", "muscle", ",", "visceral", "muscle", "and", "dorsal", "vessel", "(", "the", "fly", "embryo", "heart", ")", "(", "S2", "Table", ",", "Fig", "3b", "-", "3d", ")", "." ],
+    "entities_indices" : [ [ 16, 17 ], [ 48, 49 ] ]
+  }, {
+    "sentence_tokens" : [ "Specifically", ",", "we", "estimate", "the", "quantitative", "gene", "expression", "dependencies", "between", "developmentally", "related", "tissues", "empirically", "from", "in", "situ", "annotations", "and", "use", "it", "for", "integrating", "predictions", "." ],
+    "entities_indices" : [ [ 6, 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "Twist", "loss-of-function", "mutants", "lead", "to", "a", "block", "in", "gastrulation", "and", "a", "loss", "of", "mesodermal", "cells", "(", "E-TABM-162", ")", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "Moreover", ",", "considering", "the", "established", "tissue", "lineage", "information", "for", "D.", "melanogaster", "development", "[", "1", "]", ",", "which", "has", "been", "curated", "into", "a", "tissue", "developmental", "ontology", ",", "the", "prediction", "algorithms", "can", "be", "further", "improved", "by", "integrating", "information", "across", "tissue-stages", "while", "considering", "the", "ontological", "relations", "between", "cell", "types.Here", ",", "we", "present", "an", "approach", "for", "the", "prediction", "of", "gene", "expression", "during", "embryonic", "development", "in", "D.", "melanogaster", "based", "on", "integrating", "the", "tissue", "specificity", "of", "in", "situ", "hybridization", "data", "with", "the", "quantitative", "and", "comprehensive", "measurements", "from", "public", "genomic", "data", "compendium", "." ],
+    "entities_indices" : [ [ 55, 56, 57 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "global", "topological", "structure", "of", "the", "predicted", "tissue-stage-specific", "transcriptomes", ",", "as", "visualized", "by", "LDA", "and", "PCA", ",", "shows", "organization", "by", "both", "developmental", "stage", "order", "(", "S2", "and", "S3a", "Figs", ")", "and", "by", "embryonic", "layer", "of", "origin", "(", "Fig", "2c", "and", "S3b", "Fig", ")", "." ],
+    "entities_indices" : [ [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "Auditory", "system", "diseases", "are", "best", "mapped", "to", "the", "dorsal", "head", "epidermis", ",", "as", "well", "as", "sensory", "complex", "(", "Fig", "5", ")", "." ],
+    "entities_indices" : [ [ 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "Our", "previous", "work", "has", "shown", "that", "such", "an", "approach", "can", "accurately", "predict", "cell", "type", "specific", "gene", "expression", "in", "the", "human", "kidney", "[", "6", "]", "and", "worm", "tissues", "[", "5", "]", "from", "non", "tissue", "specific", "data", ",", "using", "manually", "curated", "cell", "type", "gene", "markers", "." ],
+    "entities_indices" : [ [ 13, 14 ], [ 15, 16, 17 ], [ 40, 41 ] ]
+  }, {
+    "sentence_tokens" : [ "Enabling", "our", "approach", "is", "a", "cell", "lineage-aware", "computational", "method", ",", "SIND", ",", "that", "uses", "a", "unified", "spatial-temporal", "transcription", "probabilistic", "graphical", "model", "to", "integrate", "predictions", "for", "developmentally", "related", "tissues", "informed", "by", "tissue", "developmental", "ontology", "." ],
+    "entities_indices" : [ [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "is", "demonstrated", "for", "CG12792", ",", "which", "is", "a", "ubiquitously", "expressed", "genes", "at", "early", "developmental", "stages", ",", "with", "more", "restricted", "expression", "at", "13", "hours", "after", "egg", "laying", "(", "AEL", ")", "(", "Fig", "2d", ")", "." ],
+    "entities_indices" : [ [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "example", ",", "in", "the", "case", "of", "TpnC47D", ",", "the", "predicted", "expression", "scores", "(", "Fig", "4a", ")", "are", "very", "high", "for", "the", "term", "embryonic", "larval", "muscle", "system", "(", "stages", "13", "-", "16", ")", "but", "much", "lower", "for", "the", "precursor", "term", "muscle", "system", "primordium", "(", "stages", "11", "-", "12", ")", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "Specifically", ",", "for", "each", "tissue-stage", "term", ",", "a", "linear", "structural", "SVM", "model", "was", "trained", "to", "predict", "in", "situ", "annotations", "(", "whether", "a", "gene", "is", "annotated", "to", "a", "tissue-stage", ")", "from", "functional", "genomic", "datasets", "including", "transcriptome", "profiling", "data", "(", "microarray", "and", "RNA-seq", ")", "and", "chromatin", "profiling", "data", "(", "ChIP-seq", ")", "." ],
+    "entities_indices" : [ [ 47, 48 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "named", "the", "Drosophila", "tissue-developmental", "stage", "gene", "expression", "prediction", "system", "FIND.Conceptually", ",", "in", "the", "first", "stage", ",", "our", "method", "discovers", "and", "exploits", "the", "co-regulatory", "patterns", "of", "cell", "lineage", "specific", "genes", "from", "high-throughput", "measurements", "of", "samples", "from", "diverse", "tissue", "origins", "and", "under", "a", "wide", "range", "of", "genetic", ",", "chemical", ",", "or", "environmental", "perturbations", "[", "5,6", "]", "." ],
+    "entities_indices" : [ [ 6, 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "obtained", "a", "performance", "of", "median", "area", "under", "receiver", "operating", "characteristics", "(", "AUROC", ")", "0.87", "across", "282", "tissue-stage", "terms", "(", "Fig", "2a", "and", "2b", ",", "S2", "File", ")", "." ],
+    "entities_indices" : [ [ 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "While", "Drosophila", "melanogaster", "provides", "a", "flexible", "and", "powerful", "genetic", "model", "for", "a", "wide", "range", "of", "human", "diseases", ",", "it", "is", "not", "always", "clear", "which", "tissue", "is", "the", "best", "choice", "for", "modeling", "a", "certain", "human", "disease", "." ],
+    "entities_indices" : [ [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "Here", ",", "we", "applied", "a", "machine", "learning", "approach", "by", "training", "models", "on", "all", "public", "gene", "expression", "and", "chromatin", "data", ",", "even", "from", "whole-organism", "experiments", ",", "to", "provide", "genome-wide", ",", "quantitative", "spatio-temporal", "predictions", "for", "all", "genes", "." ],
+    "entities_indices" : [ [ 14, 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "RNA-seq", "alignment", "data", "was", "summarized", "by", "RPKM", "using", "BDGP", "v5.78", "gene", "annotation", "(", "and", "lncRNA", "annotation", "from", "[", "16", "]", ")", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 8, 9, 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "main", "cell", "type", "where", "this", "gene", "is", "expressed", "is", "the", "plasmatocyte", "(", "Fig", "3c", ")", ",", "which", "is", "consistent", "with", "previous", "observations", "from", "Fly-FISH", "[", "2", "]", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "As", "a", "proof-of-concept", ",", "we", "used", "three", "differential", "gene", "expression", "datasets", "comparing", "whole", "embryo", "mutant", "vs.", "wild", "type", "to", "predict", "the", "tissues", "most", "affected", "by", "these", "perturbations", "independently", "of", "any", "prior", "knowledge", "other", "than", "FIND", "predictions", "(", "Table", "1", ")", "." ],
+    "entities_indices" : [ [ 8, 9, 10 ], [ 17, 18 ], [ 34, 35 ] ]
+  }, {
+    "sentence_tokens" : [ "These", "studies", "provide", "a", "very", "rich", "resource", "of", "spatio-temporal", "specificity", "of", "gene", "expression", "and", "are", "used", "as", "training", "standards", "for", "our", "models", "." ],
+    "entities_indices" : [ [ 11, 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "Other", "acquisition", "parameters", ",", "such", "as", "PMT", "gain", "and", "offset", ",", "were", "set", "independently", "for", "each", "probe", ",", "dependent", "on", "the", "signal", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "Then", ",", "embryonic", "tissues", "were", "ranked", "based", "on", "their", "enrichment", "of", "genes", "related", "to", "each", "disease", ",", "thus", "prioritizing", "fly", "tissues", "by", "their", "relevance", "to", "human", "disease.Among", "the", "diseases", "with", "most", "significant", "tissue", "enrichment", ",", "muscle", "diseases", "and", "cardiomyotrophy", "was", "mapped", "to", "somatic", "muscles", "(", "Fig", "5", ")", "." ],
+    "entities_indices" : [ [ 28, 29 ], [ 36, 37 ] ]
+  }, {
+    "sentence_tokens" : [ "Accordingly", ",", "our", "method", "predicts", "the", "loss", "of", "a", "wide", "range", "of", "mesoderm", "derivatives", "in", "twist", "loss-of-function", "mutants", ",", "and", "at", "earlier", "stages", "than", "those", "predicted", "for", "Mef2", "(", "Table", "1", ")", "." ],
+    "entities_indices" : [ [ 15, 16 ], [ 27, 28 ] ]
+  } ],
+  "emptySentences" : [ ]
+}

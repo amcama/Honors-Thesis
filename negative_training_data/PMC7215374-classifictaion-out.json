@@ -1,193 +1,929 @@
-[ {
-  "sentence_tokens" : [ "Dectin-1", "activates", "macrophages", "and", "dendritic", "cells", ",", "initiates", "phagocytosis", "of", "fungi", ",", "and", "induces", "signaling", "cascade", "via", "caspase", "associated", "recruitment", "domain", "containing", "protein", "9", "(", "CARD9", ")", "and", "NF-kB", "to", "produce", "pro", "inflammatory", "cytokines", "." ],
-  "event_indices" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 0, 1 ],
-  "controlled_indices" : [ 8, 9 ],
-  "trigger_indices" : [ 7, 8 ],
-  "rule_name" : "Positive_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "A", "recent", "study", "demonstrated", "a", "central", "role", "of", "Dectin-1", "in", "regulating", "the", "severity", "of", "inflammation", "in", "mouse", "models", "of", "DSS", "induced", "colitis", "[", "60", "]", "." ],
-  "event_indices" : [ 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 8, 9 ],
-  "controlled_indices" : [ 21, 22 ],
-  "trigger_indices" : [ 20, 21 ],
-  "rule_name" : "Positive_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "A", "recent", "study", "demonstrated", "a", "central", "role", "of", "Dectin-1", "in", "regulating", "the", "severity", "of", "inflammation", "in", "mouse", "models", "of", "DSS", "induced", "colitis", "[", "60", "]", "." ],
-  "event_indices" : [ 19, 20, 21, 22 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 19, 20 ],
-  "controlled_indices" : [ 21, 22 ],
-  "trigger_indices" : [ 20, 21 ],
-  "rule_name" : "Positive_early_activation",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Colitis", "induced", "by", "Entamoeba", "histolytica", "may", "resemble", "CD", "[", "171,172", "]", "." ],
-  "event_indices" : [ 0, 1, 2, 3, 4, 5 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 3, 4, 5 ],
-  "controlled_indices" : [ 0, 1 ],
-  "trigger_indices" : [ 1, 2 ],
-  "rule_name" : "Positive_activation_syntax_2_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "A", "recent", "study", "by", "Sovran", "et", "al.", "identified", "opposing", "effects", "of", "administrating", "C.", "albicans", "or", "S.", "boulardii", "to", "mice", "with", "DSS", "induced", "colitis", ",", "resulting", "in", "increased", "disease", "severity", "or", "reduced", "disease", "symptoms", ",", "respectively", "." ],
-  "event_indices" : [ 20, 21, 22, 23 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 20, 21 ],
-  "controlled_indices" : [ 22, 23 ],
-  "trigger_indices" : [ 21, 22 ],
-  "rule_name" : "Positive_early_activation",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "It", "was", "also", "shown", "that", "IBS-C", "involves", "an", "increase", "in", "M.", "smithii", "abundance", "[", "136", "]", "and", "a", "specific", "formulation", "of", "lovastatin", ",", "a", "fungal", "metabolite", "found", "to", "inhibit", "methane", "production", "in", "methanogenic", "microorganisms", ",", "was", "recently", "tested", "as", "a", "possible", "way", "to", "treat", "those", "suffering", "from", "IBS-C", "[", "137", "]", "." ],
-  "event_indices" : [ 24, 25, 26, 27, 28, 29, 30 ],
-  "type" : "Negative_activation",
-  "polarity" : false,
-  "controller_indices" : [ 24, 25, 26 ],
-  "controlled_indices" : [ 29, 30 ],
-  "trigger_indices" : [ 28, 29 ],
-  "rule_name" : "Negative_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Gut", "Microbiota", "beyond", "Bacteria--Mycobiome", ",", "Virome", ",", "Archaeome", ",", "and", "Eukaryotic", "Parasites", "in", "IBD", "." ],
-  "entity_one_indices" : [ 13, 14 ],
-  "entity_two_indices" : [ 1, 2 ]
-}, {
-  "sentence_tokens" : [ "Still", ",", "recent", "research", "acknowledged", "human", "mycobiome", "as", "a", "dynamic", "community", ",", "responsive", "to", "environmental", "and", "pathophysiological", "changes", ",", "and", "playing", "a", "vital", "role", "in", "host", "metabolism", ",", "as", "well", "as", "maintenance", "of", "host", "immune", "homeostasis", "[", "3,8,9,10", "]", "." ],
-  "entity_one_indices" : [ 35, 36 ],
-  "entity_two_indices" : [ 26, 27 ]
-}, {
-  "sentence_tokens" : [ "Fungi", "account", "for", "a", "relatively", "small", "percentage", "of", "the", "human", "microbiota", ",", "with", "10", "to", "10", "fungal", "cells", "per", "gram", "of", "fecal", "matter", "(", "compared", "to", "10", "bacterial", "cells", "per", "gram", ")", "[", "11", "]", "and", "only", "0.1", "%", "of", "the", "9.9", "million", "reference", "genes", "in", "a", "current", "human", "gut", "microbial", "metagenomic", "reference", "catalog", "are", "reported", "to", "be", "of", "eukaryotic", "origin", "[", "12,13", "]", "." ],
-  "entity_one_indices" : [ 30, 31 ],
-  "entity_two_indices" : [ 19, 20 ]
-}, {
-  "sentence_tokens" : [ "Additionally", ",", "reports", "suggest", "that", "the", "abundance", "of", "Candida", "in", "the", "gut", "positively", "correlated", "with", "high", "carbohydrate", "diets", ",", "and", "inversely", "correlated", "to", "consumption", "of", "total", "saturated", "fatty", "acids", ",", "while", "recent", "intake", "of", "short-chain", "fatty", "acids", "reduced", "the", "abundance", "of", "Aspergillus", "[", "26", "]", "." ],
-  "entity_one_indices" : [ 34, 35, 36, 37 ],
-  "entity_two_indices" : [ 16, 17 ]
-}, {
-  "sentence_tokens" : [ "S.", "boulardii", "is", "still", "prescribed", "as", "a", "probiotic", "to", "prevent", "diarrhea", "and", "intestinal", "colonization", "with", "Clostridium", "difficile", "following", "antibiotic", "therapy", "[", "33,34", "]", "and", "is", "efficient", "in", "preventing", "recurrent", "C.", "difficile", "infections", "[", "35", "]", "." ],
-  "entity_one_indices" : [ 31, 32 ],
-  "entity_two_indices" : [ 10, 11 ]
-}, {
-  "sentence_tokens" : [ "Although", "fungi", "can", "exert", "beneficial", "effects", "to", "host", "health", ",", "the", "disturbance", "of", "gut", "mycobiota", "was", "also", "implicated", "in", "various", "gastrointestinal", "diseases", "." ],
-  "entity_one_indices" : [ 20, 21, 22 ],
-  "entity_two_indices" : [ 13, 14, 15 ]
-}, {
-  "sentence_tokens" : [ "Decreased", "fungal", "diversity", "and", "dysbiosis", "were", "found", "in", "IBS", "patients", ",", "correlating", "mycobiota", "signature", "with", "visceral", "hypersensitivity", ",", "which", "is", "considered", "as", "one", "of", "the", "major", "pathophysiological", "features", "of", "IBS", "[", "45", "]", "." ],
-  "entity_one_indices" : [ 16, 17 ],
-  "entity_two_indices" : [ 4, 5 ]
-}, {
-  "sentence_tokens" : [ "Additionally", ",", "studies", "confirm", "fungal", "burden", "is", "increased", "in", "both", "CD", "and", "UC", "[", "55,56", "]", ",", "with", "the", "fungal", "cells", "translocating", "trough", "the", "intestinal", "barrier", "during", "the", "chronic", "stage", "of", "colitis", "[", "56,57", "]", "." ],
-  "entity_one_indices" : [ 31, 32 ],
-  "entity_two_indices" : [ 10, 11 ]
-}, {
-  "sentence_tokens" : [ "On", "the", "other", "hand", ",", "mice", "with", "depleted", "Enterobacteriaceae", "exhibited", "normal", "susceptibility", "to", "colitis", ",", "but", "neither", "C.", "albicans", "nor", "S.", "boulardii", "could", "exert", "disease", "modulating", "effects", "in", "this", "experimental", "setting", "." ],
-  "entity_one_indices" : [ 13, 14 ],
-  "entity_two_indices" : [ 5, 6 ]
-}, {
-  "sentence_tokens" : [ "Recent", "research", "also", "identified", "CARD9", "as", "the", "key", "downstream", "signaling", "molecule", "for", "the", "induction", "of", "immune", "response", "to", "fungi", "[", "62", "]", "." ],
-  "entity_one_indices" : [ 15, 16, 17 ],
-  "entity_two_indices" : [ 4, 5 ]
-}, {
-  "sentence_tokens" : [ "Interestingly", ",", "Candida", "overgrowth", ",", "which", "is", "one", "of", "the", "characteristic", "features", "in", "IBD", "patients", ",", "could", "not", "be", "positively", "correlated", "with", "CARD9", "polymorphism", "[", "64", "]", "." ],
-  "entity_one_indices" : [ 22, 23 ],
-  "entity_two_indices" : [ 13, 14 ]
-}, {
-  "sentence_tokens" : [ "IL-17", "and", "IL-22", "were", "also", "found", "to", "affect", "commensal", "fungal", "communities", "." ],
-  "entity_one_indices" : [ 2, 3 ],
-  "entity_two_indices" : [ 0, 1 ]
-}, {
-  "sentence_tokens" : [ "The", "virome", "includes", "double", "stranded", "DNA", "(", "dsDNA", ")", ",", "single", "stranded", "DNA", "(", "ssDNA", ")", ",", "as", "well", "as", "RNA", "viruses", "." ],
-  "entity_one_indices" : [ 10, 11, 12, 13 ],
-  "entity_two_indices" : [ 3, 4, 5, 6 ]
-}, {
-  "sentence_tokens" : [ "Accordingly", ",", "there", "is", "mounting", "evidence", "that", "the", "community", "of", "phages", "in", "the", "gut", "is", "altered", "when", "dysbiosis", "related", "disorders", "are", "considered", ",", "such", "as", "IBD", "and", "colorectal", "cancer", "." ],
-  "entity_one_indices" : [ 25, 26 ],
-  "entity_two_indices" : [ 17, 18 ]
-}, {
-  "sentence_tokens" : [ "The", "exact", "role", "of", "human", "gut", "virome", "in", "the", "etiology", "of", "IBD", "has", "yet", "to", "be", "elucidated", ",", "as", "not", "only", "our", "understanding", "of", "the", "virome", "is", "still", "fragmented", "and", "without", "clear", "links", "to", "different", "inflammatory", "conditions", ",", "but", "there", "is", "also", "an", "inherent", "complexity", "of", "IBD", "as", "a", "prototypic", "multifactorial", "disease", "[", "1,85", "]", "." ],
-  "entity_one_indices" : [ 46, 47 ],
-  "entity_two_indices" : [ 11, 12 ]
-}, {
-  "sentence_tokens" : [ "A", "dataset", "used", "for", "this", "study", "was", "recently", "reanalyzed", ",", "confirming", "IBD", "specific", "changes", "in", "the", "virome", ",", "loss", "of", "the", "\"", "core", "phageome", "\"", "and", "increased", "abundance", "of", "induced", "temperate", "phages", "in", "patients", "with", "CD", "[", "84", "]", "." ],
-  "entity_one_indices" : [ 35, 36 ],
-  "entity_two_indices" : [ 11, 12 ]
-}, {
-  "sentence_tokens" : [ "Furthermore", ",", "the", "changes", "in", "the", "composition", "of", "virome", "mirrored", "shifts", "in", "bacterial", "composition", ",", "while", "both", "virome", "and", "bacteriome", "alterations", "were", "more", "pronounced", "in", "patients", "with", "CD", "when", "compared", "to", "UC", ",", "reflecting", "the", "disease", "severity", "." ],
-  "entity_one_indices" : [ 31, 32 ],
-  "entity_two_indices" : [ 27, 28 ]
-}, {
-  "sentence_tokens" : [ "Additionally", ",", "recent", "research", "suggests", "that", "Spounaviridae", "phage", "subfamily", ",", "as", "well", "as", "phages", "that", "target", "Streptococcus", "and", "Alistipes", "may", "serve", "as", "informative", "disease", "markers", "for", "murine", "colitis", "analogous", "to", "IBD", "[", "93", "]", "." ],
-  "entity_one_indices" : [ 30, 31 ],
-  "entity_two_indices" : [ 27, 28 ]
-}, {
-  "sentence_tokens" : [ "AIEC", "was", "shown", "to", "colonize", "the", "ileal", "mucosa", "of", "CD", "and", "correlate", "with", "disease", "location", ",", "activity", ",", "and", "postoperative", "recurrence", "[", "95", "]", "." ],
-  "entity_one_indices" : [ 20, 21 ],
-  "entity_two_indices" : [ 9, 10 ]
-}, {
-  "sentence_tokens" : [ "A", "growing", "body", "of", "data", "confirms", "that", "perturbations", "in", "eukaryotic", "virome", "are", "linked", "to", "the", "pathogenesis", "of", "IBD", "[", "86", "]", "." ],
-  "entity_one_indices" : [ 17, 18 ],
-  "entity_two_indices" : [ 15, 16 ]
-}, {
-  "sentence_tokens" : [ "A", "study", "that", "analyzed", "colon", "samples", "of", "IBD", "patients", "and", "healthy", "controls", "showed", "that", "IBD", "was", "characterized", "by", "increased", "levels", "of", "Herpesviridae", "family", ",", "as", "well", "as", "augmented", "expression", "of", "pertaining", "endogenous", "viral", "sequences", "[", "97", "]", "." ],
-  "entity_one_indices" : [ 14, 15 ],
-  "entity_two_indices" : [ 7, 8 ]
-}, {
-  "sentence_tokens" : [ "The", "role", "of", "eukaryotic", "viruses", "as", "potential", "triggers", "of", "gut", "inflammation", "has", "been", "studied", "in", "animal", "models", "as", "well", ",", "mostly", "concentrating", "on", "Norovirus", "as", "a", "contributor", "to", "intestinal", "inflammation", "[", "100,101", "]", "." ],
-  "entity_one_indices" : [ 29, 30 ],
-  "entity_two_indices" : [ 10, 11 ]
-}, {
-  "sentence_tokens" : [ "However", ",", "these", "challenges", "are", "bound", "to", "be", "solved", ",", "and", "as", "gut", "virome", "research", "becomes", "standardized", "and", "expands", "even", "further", ",", "opportunities", "will", "arise", "to", "explore", "virome", "directed", "treatment", "approaches", "for", "IBD", ",", "clinical", "testing", "of", "aforementioned", "phage", "preparation", "being", "the", "first", "step", "in", "that", "direction", "." ],
-  "entity_one_indices" : [ 43, 44 ],
-  "entity_two_indices" : [ 32, 33 ]
-}, {
-  "sentence_tokens" : [ "The", "archaeal", "cell", "walls", "do", "not", "contain", "peptidoglycans", ",", "but", "are", "composed", "diverse", "structures", "including", "methanochondroitin", "and", "pseudomurein", "[", "107", "]", ",", "while", "their", "cell", "membranes", "are", "composed", "of", "L-glycerol-ether", "and", "isoprenoid", "lipids", "(", "in", "contrast", "to", "D-glycerol-ester", "and", "fatty", "acid", "lipids", "in", "bacterial", "and", "eukaryotic", "membranes", ")", ",", "enhancing", "membrane", "stability", "and", "rigidity", "[", "108", "]", "." ],
-  "entity_one_indices" : [ 39, 40, 41 ],
-  "entity_two_indices" : [ 31, 32 ]
-}, {
-  "sentence_tokens" : [ "The", "majority", "of", "the", "detected", "archaea", "in", "the", "human", "gastrointestinal", "tract", "are", "methane", "producing", "organisms", "(", "methanogens", ")", ",", "which", "possess", "the", "unique", "ability", "to", "respire", "H", "and", "produce", "methane", "as", "the", "main", "metabolic", "product", "under", "anaerobic", "conditions", "." ],
-  "entity_one_indices" : [ 29, 30 ],
-  "entity_two_indices" : [ 12, 13 ]
-}, {
-  "sentence_tokens" : [ "The", "archaeal", "overgrowth", "and", "increased", "removal", "of", "SCFA", "from", "the", "biofilms", "results", "in", "dysbiosis", ",", "triggering", "bacteria", "to", "become", "endoparasitic", "and", "enter", "intestinal", "epithelial", "tissues", ",", "which", "in", "turn", "leads", "to", "inflammatory", "processes", "in", "the", "human", "gut", "[", "142", "]", "." ],
-  "entity_one_indices" : [ 13, 14 ],
-  "entity_two_indices" : [ 7, 8 ]
-}, {
-  "sentence_tokens" : [ "In", "addition", ",", "the", "ryzophagy", "cycle", "in", "plant", "and", "symbiotic", "bacteria", "systems", "identified", "butyric", "acid", "as", "a", "signal", "molecule", "for", "maintenance", "of", "bacteria", "in", "biofilms", ",", "with", "the", "low", "concentrations", "of", "butyric", "acid", "inducing", "bacterial", "endoparasitism", "[", "147", "]", "." ],
-  "entity_one_indices" : [ 31, 32, 33 ],
-  "entity_two_indices" : [ 13, 14, 15 ]
-}, {
-  "sentence_tokens" : [ "Similarly", ",", "another", "study", "demonstrated", "B.", "hominis", "infection", "was", "associated", "with", "more", "severe", "symptoms", "and", "decreased", "disease", "treatment", "efficiency", "in", "patients", "with", "refractory", "ulcerative", "colitis", "[", "158", "]", "." ],
-  "entity_one_indices" : [ 23, 24, 25 ],
-  "entity_two_indices" : [ 7, 8 ]
-}, {
-  "sentence_tokens" : [ "Additional", "confirmation", "that", "B.", "hominis", "could", "be", "a", "commensal", "microorganism", "comes", "from", "a", "study", "in", "which", "patients", "with", "recurrent", "Clostridium", "difficile", "infections", "(", "rCDI", ")", "were", "treated", "using", "fecal", "microbiota", "transplantation", "(", "FMT", ")", "[", "170", "]", "." ],
-  "entity_one_indices" : [ 32, 33 ],
-  "entity_two_indices" : [ 21, 22 ]
-}, {
-  "sentence_tokens" : [ "Although", "Blastocystis", "positive", "fecal", "samples", "were", "previously", "excluded", "from", "FMT", "by", "many", "stool", "banks", ",", "resulting", "in", "a", "high", "rate", "(", "30", "%", "-", "50", "%", ")", "of", "donor", "exclusion", ",", "this", "study", "reported", "no", "adverse", "gastrointestinal", "symptoms", "nor", "any", "significant", "effect", "on", "the", "treatment", "outcome", "when", "Blastocystis", "positive", "stool", "was", "used", "for", "the", "procedure.Many", "protozoan", "parasites", ",", "however", ",", "are", "pathogenic", "species", "and", "can", "cause", "intestinal", "inflammation", "and", "disease", "." ],
-  "entity_one_indices" : [ 67, 68 ],
-  "entity_two_indices" : [ 9, 10 ]
-}, {
-  "sentence_tokens" : [ "Considering", "the", "latter", ",", "an", "association", "between", "Cryptosporidium", "parvum", "infection", "and", "gut", "dysbiosis", "(", "most", "notably", "perturbations", "of", "Bacteroidetes", "and", "Firmicutes", "ratio", "linked", "to", "chronic", "inflammatory", "processes", ")", "has", "been", "demonstrated", "in", "animal", "models", "[", "174", "]", "." ],
-  "entity_one_indices" : [ 12, 13 ],
-  "entity_two_indices" : [ 9, 10 ]
-}, {
-  "sentence_tokens" : [ "On", "the", "other", "hand", ",", "the", "presence", "of", "the", "Entamoeba", "spp.", "(", "excluding", "the", "pathogenic", "E.", "histolytica", ")", "has", "been", "linked", "to", "increased", "bacterial", "diversity", "in", "the", "gut", ",", "as", "well", "as", "with", "the", "changes", "in", "the", "composition", "of", "the", "gut", "microbiome", "--", "more", "specifically", ",", "Entamoeba", "colonization", "was", "negatively", "correlated", "with", "inflammatory", "diseases", "and", "autoimmune", "disorders", "[", "175", "]", "." ],
-  "entity_one_indices" : [ 53, 54 ],
-  "entity_two_indices" : [ 9, 10, 11 ]
-}, {
-  "sentence_tokens" : [ "Although", "microbiome", "directed", "therapy", "is", "still", "in", "its", "infancy", ",", "studies", "conducted", "thus", "far", "suggest", "that", "direct", "or", "indirect", "alterations", "in", "human", "virome", "and", "mycobiome", ",", "as", "well", "as", "changes", "in", "archaea", "and", "eukaryotic", "parasites", "may", "improve", "health", "outcomes", "in", "inflammatory", "diseases", "such", "as", "IBD.However", ",", "the", "association", "of", "commensal", "fungi", ",", "viruses", ",", "archaea", ",", "and", "eukaryotic", "protozoa", "with", "the", "host", "in", "healthy", "and", "diseased", "states", ",", "as", "well", "as", "their", "interactions", "with", "each", "other", ",", "reflects", "a", "rather", "intricate", "nexus", "that", "transcends", "a", "mere", "\"", "cause", "and", "effect", "\"", "relationship", "." ],
-  "entity_one_indices" : [ 71, 72 ],
-  "entity_two_indices" : [ 41, 42 ]
-} ]
+{
+  "regulations" : [ {
+    "sentence_tokens" : [ "Dectin-1", "activates", "macrophages", "and", "dendritic", "cells", ",", "initiates", "phagocytosis", "of", "fungi", ",", "and", "induces", "signaling", "cascade", "via", "caspase", "associated", "recruitment", "domain", "containing", "protein", "9", "(", "CARD9", ")", "and", "NF-kB", "to", "produce", "pro", "inflammatory", "cytokines", "." ],
+    "event_indices" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 0, 1 ],
+    "controlled_indices" : [ 8, 9 ],
+    "trigger_indices" : [ 7, 8 ],
+    "rule_name" : "Positive_activation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "A", "recent", "study", "demonstrated", "a", "central", "role", "of", "Dectin-1", "in", "regulating", "the", "severity", "of", "inflammation", "in", "mouse", "models", "of", "DSS", "induced", "colitis", "[", "60", "]", "." ],
+    "event_indices" : [ 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 8, 9 ],
+    "controlled_indices" : [ 21, 22 ],
+    "trigger_indices" : [ 20, 21 ],
+    "rule_name" : "Positive_activation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "A", "recent", "study", "demonstrated", "a", "central", "role", "of", "Dectin-1", "in", "regulating", "the", "severity", "of", "inflammation", "in", "mouse", "models", "of", "DSS", "induced", "colitis", "[", "60", "]", "." ],
+    "event_indices" : [ 19, 20, 21, 22 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 19, 20 ],
+    "controlled_indices" : [ 21, 22 ],
+    "trigger_indices" : [ 20, 21 ],
+    "rule_name" : "Positive_early_activation",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "Colitis", "induced", "by", "Entamoeba", "histolytica", "may", "resemble", "CD", "[", "171,172", "]", "." ],
+    "event_indices" : [ 0, 1, 2, 3, 4, 5 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 3, 4, 5 ],
+    "controlled_indices" : [ 0, 1 ],
+    "trigger_indices" : [ 1, 2 ],
+    "rule_name" : "Positive_activation_syntax_2_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "A", "recent", "study", "by", "Sovran", "et", "al.", "identified", "opposing", "effects", "of", "administrating", "C.", "albicans", "or", "S.", "boulardii", "to", "mice", "with", "DSS", "induced", "colitis", ",", "resulting", "in", "increased", "disease", "severity", "or", "reduced", "disease", "symptoms", ",", "respectively", "." ],
+    "event_indices" : [ 20, 21, 22, 23 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 20, 21 ],
+    "controlled_indices" : [ 22, 23 ],
+    "trigger_indices" : [ 21, 22 ],
+    "rule_name" : "Positive_early_activation",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "It", "was", "also", "shown", "that", "IBS-C", "involves", "an", "increase", "in", "M.", "smithii", "abundance", "[", "136", "]", "and", "a", "specific", "formulation", "of", "lovastatin", ",", "a", "fungal", "metabolite", "found", "to", "inhibit", "methane", "production", "in", "methanogenic", "microorganisms", ",", "was", "recently", "tested", "as", "a", "possible", "way", "to", "treat", "those", "suffering", "from", "IBS-C", "[", "137", "]", "." ],
+    "event_indices" : [ 24, 25, 26, 27, 28, 29, 30 ],
+    "type" : "Negative_activation",
+    "polarity" : false,
+    "controller_indices" : [ 24, 25, 26 ],
+    "controlled_indices" : [ 29, 30 ],
+    "trigger_indices" : [ 28, 29 ],
+    "rule_name" : "Negative_activation_syntax_1_verb",
+    "rule" : null
+  } ],
+  "hardInstances" : [ {
+    "sentence_tokens" : [ "Dectin-1", "activates", "macrophages", "and", "dendritic", "cells", ",", "initiates", "phagocytosis", "of", "fungi", ",", "and", "induces", "signaling", "cascade", "via", "caspase", "associated", "recruitment", "domain", "containing", "protein", "9", "(", "CARD9", ")", "and", "NF-kB", "to", "produce", "pro", "inflammatory", "cytokines", "." ],
+    "entities_indices" : [ [ 17, 18 ], [ 25, 26 ], [ 28, 29 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "recent", "study", "demonstrated", "a", "central", "role", "of", "Dectin-1", "in", "regulating", "the", "severity", "of", "inflammation", "in", "mouse", "models", "of", "DSS", "induced", "colitis", "[", "60", "]", "." ],
+    "entities_indices" : [ [ 14, 15 ], [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "recent", "study", "demonstrated", "a", "central", "role", "of", "Dectin-1", "in", "regulating", "the", "severity", "of", "inflammation", "in", "mouse", "models", "of", "DSS", "induced", "colitis", "[", "60", "]", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "Colitis", "induced", "by", "Entamoeba", "histolytica", "may", "resemble", "CD", "[", "171,172", "]", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "recent", "study", "by", "Sovran", "et", "al.", "identified", "opposing", "effects", "of", "administrating", "C.", "albicans", "or", "S.", "boulardii", "to", "mice", "with", "DSS", "induced", "colitis", ",", "resulting", "in", "increased", "disease", "severity", "or", "reduced", "disease", "symptoms", ",", "respectively", "." ],
+    "entities_indices" : [ [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "It", "was", "also", "shown", "that", "IBS-C", "involves", "an", "increase", "in", "M.", "smithii", "abundance", "[", "136", "]", "and", "a", "specific", "formulation", "of", "lovastatin", ",", "a", "fungal", "metabolite", "found", "to", "inhibit", "methane", "production", "in", "methanogenic", "microorganisms", ",", "was", "recently", "tested", "as", "a", "possible", "way", "to", "treat", "those", "suffering", "from", "IBS-C", "[", "137", "]", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 21, 22 ] ]
+  } ],
+  "withoutRegulations" : [ {
+    "sentence_tokens" : [ "Recently", ",", "Ungaro", "et", "al.", "utilized", "a", "thorough", "metagenomic", "analysis", "of", "gut", "mucosa", "on", "a", "large", "cohort", "of", "treatment-na", "i", "ve", "IBD", "patients", "to", "explore", "potential", "viral", "signatures", "and", "triggers", "[", "99", "]", "." ],
+    "entities_indices" : [ [ 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "Gut", "Microbiota", "beyond", "Bacteria--Mycobiome", ",", "Virome", ",", "Archaeome", ",", "and", "Eukaryotic", "Parasites", "in", "IBD", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "Interestingly", ",", "Candida", "overgrowth", ",", "which", "is", "one", "of", "the", "characteristic", "features", "in", "IBD", "patients", ",", "could", "not", "be", "positively", "correlated", "with", "CARD9", "polymorphism", "[", "64", "]", "." ],
+    "entities_indices" : [ [ 13, 14 ], [ 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "Additional", "confirmation", "that", "B.", "hominis", "could", "be", "a", "commensal", "microorganism", "comes", "from", "a", "study", "in", "which", "patients", "with", "recurrent", "Clostridium", "difficile", "infections", "(", "rCDI", ")", "were", "treated", "using", "fecal", "microbiota", "transplantation", "(", "FMT", ")", "[", "170", "]", "." ],
+    "entities_indices" : [ [ 21, 22 ], [ 32, 33 ] ]
+  }, {
+    "sentence_tokens" : [ "cerevisiae", "antibodies", "(", "ASCA", ")", "were", "commonly", "found", "in", "the", "serum", "of", "CD", "patients", ",", "suggesting", "the", "host", "'", "s", "immune", "responses", "toward", "intestinal", "fungi", "[", "48", "]", "." ],
+    "entities_indices" : [ [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "archaeal", "cell", "walls", "do", "not", "contain", "peptidoglycans", ",", "but", "are", "composed", "diverse", "structures", "including", "methanochondroitin", "and", "pseudomurein", "[", "107", "]", ",", "while", "their", "cell", "membranes", "are", "composed", "of", "L-glycerol-ether", "and", "isoprenoid", "lipids", "(", "in", "contrast", "to", "D-glycerol-ester", "and", "fatty", "acid", "lipids", "in", "bacterial", "and", "eukaryotic", "membranes", ")", ",", "enhancing", "membrane", "stability", "and", "rigidity", "[", "108", "]", "." ],
+    "entities_indices" : [ [ 31, 32 ], [ 39, 40, 41 ] ]
+  }, {
+    "sentence_tokens" : [ "To", "conclude", ",", "the", "shift", "in", "archaeal", "populations", "associated", "with", "IBD", "could", "be", "related", "to", "bacterial", "dysbiosis", "and", "alteration", "in", "the", "intestinal", "nutritional", "environment", "(", "i.e", ".,", "reduction", "of", "hydrogen", "gas", "and", "increase", "of", "short-chain", "alcohols", "such", "as", "methanol", ")", ",", "favoring", "methylotrophic", "archaeal", "species", ",", "particularly", "M.", "stadtmanae", ",", "thus", "increasing", "the", "inflammatory", "response", "within", "the", "human", "gut", "[", "141", "]", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 16, 17 ], [ 29, 30, 31 ], [ 35, 36 ], [ 38, 39 ], [ 53, 54, 55 ] ]
+  }, {
+    "sentence_tokens" : [ "S.", "boulardii", "is", "still", "prescribed", "as", "a", "probiotic", "to", "prevent", "diarrhea", "and", "intestinal", "colonization", "with", "Clostridium", "difficile", "following", "antibiotic", "therapy", "[", "33,34", "]", "and", "is", "efficient", "in", "preventing", "recurrent", "C.", "difficile", "infections", "[", "35", "]", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 31, 32 ] ]
+  }, {
+    "sentence_tokens" : [ "Fungi", "account", "for", "a", "relatively", "small", "percentage", "of", "the", "human", "microbiota", ",", "with", "10", "to", "10", "fungal", "cells", "per", "gram", "of", "fecal", "matter", "(", "compared", "to", "10", "bacterial", "cells", "per", "gram", ")", "[", "11", "]", "and", "only", "0.1", "%", "of", "the", "9.9", "million", "reference", "genes", "in", "a", "current", "human", "gut", "microbial", "metagenomic", "reference", "catalog", "are", "reported", "to", "be", "of", "eukaryotic", "origin", "[", "12,13", "]", "." ],
+    "entities_indices" : [ [ 19, 20 ], [ 30, 31 ] ]
+  }, {
+    "sentence_tokens" : [ "Additionally", ",", "the", "identification", "of", "composition", "and", "diversity", "of", "the", "fungal", "community", "is", "influenced", "by", "the", "nucleic", "acid", "isolation", "method", "[", "14", "]", ",", "the", "choice", "of", "sequencing", "primer", "pairs", "[", "15", "]", ",", "as", "well", "as", "different", "sequencing", "technologies", "[", "16,17", "]", "and", "bioinformatics", "pipelines", "[", "18,19", "]", "." ],
+    "entities_indices" : [ [ 16, 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "Numerous", "studies", "demonstrated", "that", "chronic", "inflammation", "of", "the", "intestinal", "mucosa", "in", "IBD", "is", "associated", "with", "alterations", "in", "microbial", "community", "structure", "and", "function", ",", "termed", "\"", "dysbiosis", "\"", "(", "Figure", "1", ")", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 11, 12 ], [ 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "recent", "report", "found", "significantly", "lower", "M.", "smithii", "levels", "among", "IBD", "patients", "compared", "to", "healthy", "individuals", ",", "with", "the", "levels", "returning", "to", "normal", "values", "in", "disease", "remission", "[", "140", "]", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "Interestingly", ",", "this", "study", "did", "not", "reveal", "increased", "levels", "of", "bacterial", "hosts", ",", "suggesting", "the", "abundance", "of", "phages", "is", "not", "always", "correlated", "with", "host", "abundance", "and", "that", "inflammation", "might", "be", "caused", "by", "induction", "of", "phage", "replication", "and", "excision", "." ],
+    "entities_indices" : [ [ 27, 28 ] ]
+  }, {
+    "sentence_tokens" : [ "Moreover", ",", "one", "of", "the", "suggested", "treatments", "for", "intestinal", "disorders", "proposes", "utilizing", "butyrate", "producing", "bacteria", "supplements", "to", "enhance", "intestinal", "epithelial", "barrier", "integrity", "[", "146", "]", "." ],
+    "entities_indices" : [ [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "significant", "role", "of", "non", "bacterial", "microbiota", "in", "maintaining", "human", "homeostasis", ",", "as", "well", "as", "in", "disease", "etiology", ",", "is", "slowly", "unveiling", "(", "Table", "1", ")", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "These", "antibodies", ",", "raised", "against", "mannan", ",", "a", "component", "in", "the", "fungal", "cell", "wall", ",", "were", "soon", "identified", "as", "a", "reliable", "diagnostic", "biomarker", "for", "CD", "and", "predictors", "of", "the", "disease", "course", "[", "49,50", "]", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 22, 23 ], [ 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "On", "the", "other", "hand", ",", "mice", "with", "depleted", "Enterobacteriaceae", "exhibited", "normal", "susceptibility", "to", "colitis", ",", "but", "neither", "C.", "albicans", "nor", "S.", "boulardii", "could", "exert", "disease", "modulating", "effects", "in", "this", "experimental", "setting", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "Due", "to", "the", "proposed", "mutualistic", "interaction", "of", "Blastocystis", "and", "its", "host", ",", "some", "authors", "even", "suggested", "using", "the", "protist", "in", "a", "manner", "similar", "to", "that", "described", "for", "some", "intestinal", "helminths", "[", "168", "]", ",", "in", "order", "to", "elicit", "a", "beneficial", "immunomodulatory", "response", "in", "patients", "with", "IBD", "[", "169", "]", "." ],
+    "entities_indices" : [ [ 45, 46 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "a", "population", "with", "irritable", "bowel", "syndrome", "(", "IBS", ")", ",", "the", "subjects", "with", "the", "constipation", "dominant", "disease", "(", "IBS-C", ")", "were", "shown", "to", "have", "a", "higher", "proportion", "of", "methane", "producers", "than", "individuals", "with", "the", "diarrhea", "dominant", "disease", "(", "IBS-D", ")", "[", "135", "]", "." ],
+    "entities_indices" : [ [ 4, 5, 6, 7 ], [ 15, 16 ], [ 29, 30 ], [ 35, 36 ] ]
+  }, {
+    "sentence_tokens" : [ "Thus", ",", "the", "intestinal", "virome", "is", "closely", "linked", "to", "the", "prokaryotic", "microbial", "communities", "not", "just", "by", "sharing", "a", "common", "niche", ",", "but", "also", "by", "contributing", "to", "the", "ecosystem", "dynamics", "as", "well", "as", "by", "providing", "various", "genetic", "elements", "such", "as", "virulence", "factors", "or", "antibiotic", "resistance", "genes", "while", "integrated", "as", "a", "prophage", "[", "83", "]", "." ],
+    "entities_indices" : [ [ 39, 40 ] ]
+  }, {
+    "sentence_tokens" : [ "Recent", "animal", "studies", "corroborated", "the", "role", "of", "enteric", "phages", "in", "IBD", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "Dectin-1", "deficient", "mice", "were", "found", "to", "develop", "more", "severe", "colitis", ",", "due", "to", "the", "overgrowth", "of", "opportunistic", "fungi", "(", "i.e", ".,", "Candida", "and", "Trichosporon", ")", ",", "while", "treatment", "with", "antifungal", "drug", "fluconazole", "ameliorated", "the", "disease", "[", "60,61", "]", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 2, 3 ], [ 9, 10 ], [ 29, 30, 31 ], [ 31, 32 ] ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "these", "challenges", "are", "bound", "to", "be", "solved", ",", "and", "as", "gut", "virome", "research", "becomes", "standardized", "and", "expands", "even", "further", ",", "opportunities", "will", "arise", "to", "explore", "virome", "directed", "treatment", "approaches", "for", "IBD", ",", "clinical", "testing", "of", "aforementioned", "phage", "preparation", "being", "the", "first", "step", "in", "that", "direction", "." ],
+    "entities_indices" : [ [ 32, 33 ], [ 43, 44 ] ]
+  }, {
+    "sentence_tokens" : [ "Additional", "studies", "confirmed", "an", "increased", "representation", "of", "Candida", "species", "in", "IBD", ",", "namely", "C.", "tropicalis", "in", "familial", "CD", "[", "54", "]", ",", "as", "well", "as", "C.", "glabrata", "in", "colonic", "biopsy", "samples", "from", "patients", "with", "CD", "[", "55", "]", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 17, 18 ], [ 34, 35 ] ]
+  }, {
+    "sentence_tokens" : [ "Considering", "the", "latter", ",", "an", "association", "between", "Cryptosporidium", "parvum", "infection", "and", "gut", "dysbiosis", "(", "most", "notably", "perturbations", "of", "Bacteroidetes", "and", "Firmicutes", "ratio", "linked", "to", "chronic", "inflammatory", "processes", ")", "has", "been", "demonstrated", "in", "animal", "models", "[", "174", "]", "." ],
+    "entities_indices" : [ [ 9, 10 ], [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "Instead", ",", "Candida", "was", "hardly", "detectible", "in", "CARD9", "deficient", "mice", ",", "suggesting", "this", "taxon", "was", "not", "the", "driver", "of", "dysbiosis", "as", "in", "dectin-1", "deficient", "animals", "[", "65", "]", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 9, 10 ], [ 19, 20 ], [ 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "Furthermore", ",", "the", "changes", "in", "the", "composition", "of", "virome", "mirrored", "shifts", "in", "bacterial", "composition", ",", "while", "both", "virome", "and", "bacteriome", "alterations", "were", "more", "pronounced", "in", "patients", "with", "CD", "when", "compared", "to", "UC", ",", "reflecting", "the", "disease", "severity", "." ],
+    "entities_indices" : [ [ 27, 28 ], [ 31, 32 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "human", "microbiota", "is", "a", "diverse", "microbial", "ecosystem", "associated", "with", "many", "beneficial", "physiological", "functions", "as", "well", "as", "numerous", "disease", "etiologies", "." ],
+    "entities_indices" : [ [ 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "finding", "suggests", "that", "bacteria", "are", "the", "major", "driving", "force", "in", "acute", "inflammation", "and", "fungi", "may", "act", "as", "a", "counterbalance", "in", "maintaining", "the", "microbial", "homeostasis", "in", "acute", "colitis", "." ],
+    "entities_indices" : [ [ 12, 13 ], [ 24, 25 ], [ 27, 28 ] ]
+  }, {
+    "sentence_tokens" : [ "Initial", "studies", "reported", "a", "significantly", "increased", "frequency", "of", "protozoa", "infection", ",", "with", "a", "high", "rate", "of", "B.", "hominis", ",", "in", "UC", "patients", "with", "persistent", "and", "intermittent", "disease", "activity", "as", "compared", "to", "the", "remission", "states", "[", "157", "]", "." ],
+    "entities_indices" : [ [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "Sokol", "et", "al.", "report", "a", "similar", "finding", "in", "adult", "subjects", "with", "IBD", ":", "a", "decrease", "in", "gut", "mycobiome", "biodiversity", "and", "elevated", "Basidiomycota", "and", "Ascomycota", "ratio", ",", "mainly", "due", "to", "the", "increased", "prevalence", "and", "abundance", "of", "C.", "albicans", "and", "reduction", "of", "S.", "cerevisiae", "[", "53", "]", "." ],
+    "entities_indices" : [ [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "Hence", ",", "integrating", "both", "bacteriome", "and", "virome", "assessment", "offers", "higher", "classification", "power", "between", "healthy", "and", "diseased", "states", "in", "IBD", "[", "84", "]", "." ],
+    "entities_indices" : [ [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "same", "study", "revealed", "that", "a", "polymorphism", "in", "the", "Dectin-1", "gene", "was", "associated", "with", "increased", "severity", "of", "disease", "in", "patients", "with", "UC", "[", "60", "]", "." ],
+    "entities_indices" : [ [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "Mounting", "research", "evidence", ",", "however", ",", "suggests", "that", "instead", "of", "causing", "disease", ",", "a", "significant", "proportion", "of", "these", "organisms", "can", "be", "linked", "to", "maintaining", "intestinal", "homeostasis", "[", "4", "]", "." ],
+    "entities_indices" : [ [ 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "Other", "parasites", "can", "complicate", "the", "course", "of", "IBD", ",", "i.e", ".,", "cryptosporidiosis", "leads", "to", "increased", "hospitalization", "in", "children", "with", "either", "UC", "or", "CD", "[", "173", "]", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 11, 12 ], [ 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "contrast", "to", "research", "on", "bacteria", "and", "fungi", ",", "no", "universal", "marker", "gene", "can", "be", "utilized", "to", "study", "viruses", "and", "the", "majority", "of", "obtained", "sequences", "do", "not", "exist", "in", "publicly", "available", "databases", "(", "\"", "viral", "dark", "matter", "\"", "[", "76,77", "]", ")", ",", "so", "the", "usual", "methodological", "approach", "of", "virome", "research", "is", "metagenomics.The", "healthy", "human", "intestine", "is", "a", "home", "to", "approximately", "10", "bacteriophages", ",", "outnumbering", "the", "commensal", "bacteria", "by", "a", "factor", "of", "10", "[", "71,78", "]", ",", "with", "the", "\"", "core", "phageome", "\"", "predominantly", "consisting", "of", "dsDNA", "viruses", "from", "the", "Caudovirales", "order", "(", "Myoviridae", ",", "Podoviridae", ",", "and", "Siphoviridae", "families", ")", "and", "ssDNA", "viruses", "of", "the", "Microviridae", "family", "[", "79", "]", "." ],
+    "entities_indices" : [ [ 58, 59 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "fact", "that", "interactions", "between", "gut", "bacteria", "and", "fungi", "are", "closely", "associated", "with", "disease", "was", "also", "investigated", "in", "mouse", "models", "of", "dextran", "sulfate", "sodium", "(", "DSS", ")", "induced", "colitis", "." ],
+    "entities_indices" : [ [ 21, 22, 23 ], [ 23, 24 ], [ 25, 26 ], [ 28, 29 ] ]
+  }, {
+    "sentence_tokens" : [ "Still", ",", "recent", "research", "acknowledged", "human", "mycobiome", "as", "a", "dynamic", "community", ",", "responsive", "to", "environmental", "and", "pathophysiological", "changes", ",", "and", "playing", "a", "vital", "role", "in", "host", "metabolism", ",", "as", "well", "as", "maintenance", "of", "host", "immune", "homeostasis", "[", "3,8,9,10", "]", "." ],
+    "entities_indices" : [ [ 26, 27 ], [ 35, 36 ] ]
+  }, {
+    "sentence_tokens" : [ "Larger", "studies", "are", "warranted", "to", "further", "elucidate", "this", "relationship", ",", "although", "the", "role", "of", "certain", "herpesviruses", "in", "IBD", "development", "and", "disease", "exacerbations", "was", "already", "described", "[", "98", "]", "." ],
+    "entities_indices" : [ [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "By", "acting", "as", "a", "hydrogen", "sink", "and", "removing", "hydrogen", "gas", ",", "methanogens", "improve", "bacterial", "fermentation", "efficiency", "and", "allow", "more", "complete", "anaerobic", "degradation", "of", "organic", "material", "[", "120", "]", ",", "thus", "confirming", "archaea", "as", "a", "keystone", "species", "essentially", "involved", "in", "metabolic", "processes", "and", "optimal", "energy", "yield", "of", "the", "entire", "human", "microbiota", "[", "121", "]", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 5, 6 ], [ 8, 9, 10 ], [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "Both", "IL-17", "and", "IL-22", "might", "act", "as", "inducers", "of", "antimicrobial", "peptides", "(", "AMPs", ")", "in", "epithelial", "cells", "and", "were", "reported", "as", "protective", "against", "mucosal", "fungal", "infections", "[", "67,68", "]", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 3, 4 ], [ 12, 13 ], [ 24, 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "virome", "includes", "double", "stranded", "DNA", "(", "dsDNA", ")", ",", "single", "stranded", "DNA", "(", "ssDNA", ")", ",", "as", "well", "as", "RNA", "viruses", "." ],
+    "entities_indices" : [ [ 3, 4, 5, 6 ], [ 10, 11, 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "\"", "syntrophic", "imbalance", "hypothesis", "\"", "is", "supported", "by", "the", "fact", "that", "methanoarchaea", "overgrowth", "is", "implicated", "in", "human", "diseases", ",", "including", "the", "IBS", "[", "143", "]", "and", "the", "levels", "of", "butyric", "acid", "are", "shown", "to", "decline", "in", "patients", "with", "IBS", "and", "IBD", "[", "144,145", "]", "." ],
+    "entities_indices" : [ [ 18, 19 ], [ 30, 31, 32 ], [ 41, 42 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "role", "of", "eukaryotic", "viruses", "as", "potential", "triggers", "of", "gut", "inflammation", "has", "been", "studied", "in", "animal", "models", "as", "well", ",", "mostly", "concentrating", "on", "Norovirus", "as", "a", "contributor", "to", "intestinal", "inflammation", "[", "100,101", "]", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 29, 30 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "exact", "role", "of", "human", "gut", "virome", "in", "the", "etiology", "of", "IBD", "has", "yet", "to", "be", "elucidated", ",", "as", "not", "only", "our", "understanding", "of", "the", "virome", "is", "still", "fragmented", "and", "without", "clear", "links", "to", "different", "inflammatory", "conditions", ",", "but", "there", "is", "also", "an", "inherent", "complexity", "of", "IBD", "as", "a", "prototypic", "multifactorial", "disease", "[", "1,85", "]", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 46, 47 ] ]
+  }, {
+    "sentence_tokens" : [ "Additionally", ",", "recent", "research", "suggests", "that", "Spounaviridae", "phage", "subfamily", ",", "as", "well", "as", "phages", "that", "target", "Streptococcus", "and", "Alistipes", "may", "serve", "as", "informative", "disease", "markers", "for", "murine", "colitis", "analogous", "to", "IBD", "[", "93", "]", "." ],
+    "entities_indices" : [ [ 27, 28 ], [ 30, 31 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "addition", ",", "there", "is", "extensive", "genetic", "diversity", "in", "some", "common", "gut", "parasites", ",", "thus", "the", "associations", "between", "dysbiosis", "and", "various", "subtypes", "or", "genotypes", "are", "still", "not", "elucidated", "." ],
+    "entities_indices" : [ [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "broad-spectrum", "antibiotic", "treatment", "protected", "the", "mice", "from", "colitis", "and", "C.", "albicans", "had", "no", "pro", "inflammatory", "effect", "when", "administered", "to", "mice", "with", "disrupted", "bacterial", "microbiota", ",", "suggesting", "bacteria", "are", "essential", "for", "the", "development", "of", "colitis", "and", "C.", "albicans", "requires", "the", "presence", "of", "specific", "bacteria", "that", "trigger", "the", "intestinal", "inflammation", "to", "increase", "the", "disease", "intensity", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 9, 10 ], [ 21, 22 ], [ 35, 36 ], [ 49, 50 ] ]
+  }, {
+    "sentence_tokens" : [ "Additionally", ",", "Blastocystis", "positive", "patients", "exhibited", "a", "higher", "abundance", "of", "Clostridia", "class", ",", "Ruminococcaceae", ",", "and", "Prevotellaceae", "families", ",", "as", "well", "as", "Faecalibacterium", "and", "Roseburia", "butyrate", "producing", "bacterial", "genera", ",", "while", "Enterobacteriaceae", "were", "enriched", "in", "Blastocystis-free", "patients", ",", "suggesting", "B.", "hominis", "colonization", "was", "not", "associated", "with", "the", "colitis", "specific", "dysbiosis", "but", "with", "an", "increased", "diversity", "of", "intestinal", "bacterial", "microbiota", "[", "164", "]", "." ],
+    "entities_indices" : [ [ 25, 26 ], [ 47, 48 ], [ 49, 50 ] ]
+  }, {
+    "sentence_tokens" : [ "Despite", "its", "well", "established", "host-beneficial", "functions", ",", "intestinal", "microbiota", "has", "been", "implicated", "in", "various", "pathological", "conditions", ",", "including", "inflammatory", "bowel", "disease", "(", "IBD", ")", "and", "its", "two", "main", "entities", ":", "Crohn", "'", "s", "disease", "(", "CD", ")", "and", "ulcerative", "colitis", "(", "UC", ")", "." ],
+    "entities_indices" : [ [ 18, 19, 20, 21 ], [ 22, 23 ], [ 35, 36 ], [ 38, 39, 40 ] ]
+  }, {
+    "sentence_tokens" : [ "AIEC", "was", "shown", "to", "colonize", "the", "ileal", "mucosa", "of", "CD", "and", "correlate", "with", "disease", "location", ",", "activity", ",", "and", "postoperative", "recurrence", "[", "95", "]", "." ],
+    "entities_indices" : [ [ 9, 10 ], [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "Another", "notable", "finding", "of", "this", "study", "was", "the", "co-occurrence", "of", "Candida", "with", "particular", "bacterial", "(", "Prevotella", "and", "Rumminococcus", ")", "and", "archaeal", "genera", "(", "Methanobrevibacter", ")", ",", "providing", "support", "for", "the", "interkingdom", "syntrophic", "relationships", "in", "host", "metabolism.One", "of", "the", "first", "indications", "that", "fungi", "play", "a", "role", "in", "modulating", "gut", "homeostasis", "is", "the", "use", "of", "Saccharomyces", "boulardii", "as", "a", "constituent", "of", "herbal", "medicine", "traditionally", "utilized", "in", "Southeast", "Asia", "to", "reduce", "the", "severe", "diarrhea", "in", "patients", "with", "cholera", "." ],
+    "entities_indices" : [ [ 48, 49 ], [ 65, 66 ], [ 70, 71 ], [ 74, 75 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "growing", "body", "of", "data", "confirms", "that", "perturbations", "in", "eukaryotic", "virome", "are", "linked", "to", "the", "pathogenesis", "of", "IBD", "[", "86", "]", "." ],
+    "entities_indices" : [ [ 15, 16 ], [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "study", "further", "shows", "mice", "with", "fungi", "depleted", "by", "fluconazole", "treatment", "exhibited", "aggravated", "colitis", ",", "in", "contrast", "to", "bacteria", "depleted", "mice", ",", "that", "showed", "alleviated", "intestinal", "inflammation", "and", "a", "trend", "of", "disease", "remission", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 9, 10 ], [ 13, 14 ], [ 20, 21 ], [ 26, 27 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "cocktail", "of", "phages", "was", "reported", "to", "reduce", "symptoms", "in", "the", "mouse", "model", "of", "dextran", "sulfate", "sodium", "(", "DSS", ")-induced", "colitis", ",", "as", "well", "as", "significantly", "reduce", "fecal", "adhesive-invasive", "E.", "coli", "(", "AIEC", ")", "." ],
+    "entities_indices" : [ [ 14, 15, 16 ], [ 16, 17 ], [ 18, 19 ], [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "phages", "usually", "exhibit", "temperate", "lifestyle", "and", "integration", "into", "bacterial", "hosts", "as", "prophages", ",", "however", ",", "environmental", "stressors", "can", "induce", "the", "lytic", "cycle", "resulting", "in", "viral", "replication", "and", "destruction", "of", "host", "cells", "." ],
+    "entities_indices" : [ [ 25, 26, 27 ] ]
+  }, {
+    "sentence_tokens" : [ "Although", "fungi", "can", "exert", "beneficial", "effects", "to", "host", "health", ",", "the", "disturbance", "of", "gut", "mycobiota", "was", "also", "implicated", "in", "various", "gastrointestinal", "diseases", "." ],
+    "entities_indices" : [ [ 13, 14, 15 ], [ 20, 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "majority", "of", "the", "detected", "archaea", "in", "the", "human", "gastrointestinal", "tract", "are", "methane", "producing", "organisms", "(", "methanogens", ")", ",", "which", "possess", "the", "unique", "ability", "to", "respire", "H", "and", "produce", "methane", "as", "the", "main", "metabolic", "product", "under", "anaerobic", "conditions", "." ],
+    "entities_indices" : [ [ 12, 13 ], [ 29, 30 ] ]
+  }, {
+    "sentence_tokens" : [ "Some", "of", "the", "studies", "simultaneously", "analyzed", "both", "the", "fungal", "and", "bacterial", "microbiota", "revealing", "that", "the", "intestinal", "microbial", "network", "was", "different", "in", "IBD", "patients", "when", "compared", "to", "healthy", "individuals", "." ],
+    "entities_indices" : [ [ 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "Human", "Mycobiome", "." ],
+    "entities_indices" : [ [ 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "Human", "Archaeome", "." ],
+    "entities_indices" : [ [ 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "Although", "the", "research", "on", "the", "commensal", "viral", "and", "fungal", "constituents", "of", "human", "microbiota", "gained", "momentum", "recently", ",", "most", "microbiota", "studies", "still", "fail", "to", "include", "the", "archaea", "." ],
+    "entities_indices" : [ [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "recent", "report", "suggests", "beneficial", "effects", "of", "another", "probiotic", "yeast", ",", "Candida", "kefyr", ",", "in", "reducing", "the", "severity", "of", "colitis", "in", "animal", "models", "by", "decreasing", "the", "abundance", "of", "Bacteroides", "and", "lowering", "IL-6", "production", ",", "thus", "attenuating", "inflammation", "in", "the", "intestine", "[", "42", "]", "." ],
+    "entities_indices" : [ [ 19, 20 ], [ 31, 32, 33 ], [ 36, 37 ] ]
+  }, {
+    "sentence_tokens" : [ "Indeed", ",", "reduced", "fungal", "diversity", "and", "significantly", "increased", "abundance", "of", "specific", "Candida", "species", "were", "found", "in", "pediatric", "IBD", "patients", "[", "52", "]", "." ],
+    "entities_indices" : [ [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "addition", ",", "Fernandes", "et", "al.", "revealed", "how", "minor", "patterns", "and", "differences", "in", "gut", "virome", "may", "be", "used", "to", "differentiate", "pediatric", "patients", "with", "IBD", "from", "healthy", "controls", "." ],
+    "entities_indices" : [ [ 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "role", "of", "protozoan", "parasites", "in", "the", "development", "and", "progression", "of", "IBD", "has", "been", "studied", "by", "several", "research", "groups", ",", "with", "the", "emphasis", "on", "Blastocystis", "hominis", "[", "155,156", "]", "." ],
+    "entities_indices" : [ [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "usual", "molecular", "target", "for", "identifying", "fungi", "are", "the", "internal", "transcribed", "spacer", "(", "ITS", ")", "regions", "of", "ribosomal", "RNA", "genes", "." ],
+    "entities_indices" : [ [ 17, 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "majority", "of", "research", "on", "the", "effects", "of", "gut", "mycobiota", "in", "gastrointestinal", "diseases", "was", "however", "concentrated", "on", "intestinal", "inflammation", "and", "IBD", "." ],
+    "entities_indices" : [ [ 11, 12, 13 ], [ 18, 19 ], [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "methanogenic", "archaea", "are", "also", "associated", "with", "the", "etiology", "of", "IBD", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "Recent", "research", "also", "identified", "CARD9", "as", "the", "key", "downstream", "signaling", "molecule", "for", "the", "induction", "of", "immune", "response", "to", "fungi", "[", "62", "]", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 15, 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "archaeal", "overgrowth", "and", "increased", "removal", "of", "SCFA", "from", "the", "biofilms", "results", "in", "dysbiosis", ",", "triggering", "bacteria", "to", "become", "endoparasitic", "and", "enter", "intestinal", "epithelial", "tissues", ",", "which", "in", "turn", "leads", "to", "inflammatory", "processes", "in", "the", "human", "gut", "[", "142", "]", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "large", "study", "by", "Norman", "et", "al.", "observed", "disease", "specific", "changes", "and", "reduced", "diversity", "of", "the", "gut", "virome", "in", "both", "CD", "and", "UC", ",", "revealing", "the", "primary", "difference", "in", "the", "IBD", "associated", "virome", "was", "the", "increased", "richness", "of", "Caudovirales", "phages", "on", "a", "taxonomic", "level", ";", "however", ",", "the", "exact", "viruses", "that", "may", "give", "rise", "to", "such", "change", "were", "different", "in", "CD", "when", "compared", "to", "UC", "[", "88", "]", "." ],
+    "entities_indices" : [ [ 20, 21 ], [ 30, 31 ], [ 60, 61 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "key", "PRR", "for", "coordinating", "host", "response", "to", "fungi", "is", "Dectin-1", "(", "CLEC7A", ")", ",", "a", "C-type", "lectin", "receptor", "that", "recognizes", "beta-glucans", "in", "the", "fungal", "cell", "wall", "[", "59", "]", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 6, 7, 8, 9 ], [ 10, 11 ], [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "recent", "study", "identified", "a", "novel", "type", "of", "phage", ",", "crAssphage", ",", "as", "the", "most", "prevalent", "human", "associated", "virus", ",", "accounting", "for", "up", "to", "90", "%", "of", "the", "reads", "from", "human", "fecal", "viral", "metagenomes", "and", "about", "22", "%", "of", "the", "reads", "in", "the", "total", "metagenome", "[", "80", "]", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "On", "the", "other", "hand", ",", "diet", "related", "Polydnaviridae", "and", "Tymoviridae", "viral", "families", "were", "less", "enriched", "in", "patients", "with", "UC", ",", "and", "the", "same", "was", "valid", "for", "Virgaviridae", "in", "patients", "with", "CD", "[", "99", "]", "." ],
+    "entities_indices" : [ [ 30, 31 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "recent", "study", "found", "no", "difference", "in", "B.", "hominis", "prevalence", "between", "the", "active", "and", "remission", "phases", "of", "the", "disease", ",", "suggesting", "that", "B.", "hominis", "does", "not", "play", "a", "role", "in", "UC", "flare-up", "[", "165", "]", "." ],
+    "entities_indices" : [ [ 30, 31, 32, 33, 34, 35 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "clinical", "study", "revealed", "secukinumab", ",", "an", "IL-17A", "antagonist", ",", "was", "associated", "with", "exacerbations", "in", "patients", "with", "CD", ",", "identifying", "the", "higher", "rate", "of", "fungal", "infections", "in", "treated", "subjects", "[", "66", "]", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 7, 8 ], [ 17, 18 ], [ 24, 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "addition", ",", "a", "shift", "from", "lysogenic", "to", "lytic", "replication", "in", "the", "population", "of", "temperate", "phages", "may", "be", "linked", "to", "the", "development", "of", "IBD", "[", "84", "]", "." ],
+    "entities_indices" : [ [ 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "fact", ",", "the", "phage", "cocktail", "was", "found", "to", "target", "AIEC", "in", "homogenates", "of", "ileal", "biopsies", "taken", "from", "CD", "patients", "[", "94", "]", ",", "and", "the", "preparation", "is", "currently", "under", "evaluation", "in", "a", "clinical", "trial.Although", "most", "research", "concentrated", "on", "phage", "virome", ",", "eukaryotic", "virome", "is", "also", "proving", "to", "have", "a", "substantial", "role", "in", "human", "health", "and", "disease", ";", "therefore", ",", "both", "should", "be", "considered", "as", "distinct", ",", "but", "related", "entities", "." ],
+    "entities_indices" : [ [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "Zuo", "et", "al.", "employed", "deep", "sequencing", "techniques", "to", "discern", "alterations", "of", "the", "gut", "virome", "in", "patients", "with", "UC", ",", "showing", "an", "increased", "abundance", "of", "Pneumoviridae", "in", "UC", "patients", "compared", "to", "the", "control", "group", ",", "while", "the", "opposite", "was", "found", "for", "Anelloviridae", "family", "[", "90", "]", "." ],
+    "entities_indices" : [ [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "host", "immune", "system", "recognizes", "fungi", "using", "pattern", "recognition", "receptors", "(", "PRRs", ")", ",", "with", "the", "resulting", "host", "responses", "ranging", "from", "tolerance", "to", "inflammation", "." ],
+    "entities_indices" : [ [ 7, 8, 9, 10 ], [ 11, 12 ], [ 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "composition", "of", "gut", "mycobiome", "seems", "to", "be", "dynamic", "over", "time", "and", "far", "more", "variable", "than", "the", "composition", "of", "bacteria", ",", "both", "in", "humans", "[", "28", "]", "and", "in", "mice", "[", "29", "]", "." ],
+    "entities_indices" : [ [ 29, 30 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "finding", "was", "in", "line", "with", "epidemiological", "data", "that", "linked", "virulent", "subtypes", "of", "B.", "hominis", "with", "intestinal", "dysbiosis", "[", "160", "]", "." ],
+    "entities_indices" : [ [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "Similarly", ",", "another", "study", "showed", "the", "increasing", "bacteriophage", "levels", "(", "primarily", "Escherichia", ",", "Lactobacillus", ",", "and", "Bacteriodes", "infecting", "phages", ")", "in", "germ-free", "mice", "may", "alter", "the", "state", "of", "mucosal", "immunity", "and", "exacerbate", "colitis", "by", "inducing", "the", "production", "of", "IFN-gamma", "via", "TLR9", "[", "92", "]", "." ],
+    "entities_indices" : [ [ 22, 23 ], [ 29, 30 ], [ 32, 33 ], [ 38, 39 ], [ 40, 41 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "colorectal", "cancer", "(", "CRC", ")", ",", "an", "alteration", "of", "fungal", "composition", "and", "ecology", "was", "observed", ",", "characterized", "by", "an", "increased", "Basidiomycota", "and", "Ascomycota", "ratio", ",", "depletion", "of", "S.", "cerevisiae", ",", "as", "well", "as", "enrichment", "of", "Rhodotorula", ",", "Malassezia", ",", "and", "Acremonium", "genera", "along", "with", "several", "Aspergillus", "species", "(", "including", "A.", "flavus", ",", "a", "major", "producer", "of", "highly", "toxic", "carcinogen", "aflatoxin", ")", ",", "suggesting", "their", "possible", "contribution", "towards", "CRC", "pathogenesis", "[", "44", "]", "." ],
+    "entities_indices" : [ [ 60, 61 ], [ 68, 69 ], [ 69, 70 ] ]
+  }, {
+    "sentence_tokens" : [ "Additionally", ",", "studies", "confirm", "fungal", "burden", "is", "increased", "in", "both", "CD", "and", "UC", "[", "55,56", "]", ",", "with", "the", "fungal", "cells", "translocating", "trough", "the", "intestinal", "barrier", "during", "the", "chronic", "stage", "of", "colitis", "[", "56,57", "]", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 31, 32 ] ]
+  }, {
+    "sentence_tokens" : [ "Fungi", "are", "ubiquitous", "in", "the", "environment", "and", "a", "part", "of", "all", "Earth", "'", "s", "ecosystems", "[", "7", "]", "." ],
+    "entities_indices" : [ [ 11, 12, 13, 14, 15, 16, 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "Decreased", "fungal", "diversity", "and", "dysbiosis", "were", "found", "in", "IBS", "patients", ",", "correlating", "mycobiota", "signature", "with", "visceral", "hypersensitivity", ",", "which", "is", "considered", "as", "one", "of", "the", "major", "pathophysiological", "features", "of", "IBS", "[", "45", "]", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "On", "the", "other", "hand", ",", "weaker", "fungal", "-", "bacteria", "correlations", "were", "found", "in", "CD", "when", "compared", "to", "healthy", "volunteers", ",", "implying", "disrupted", "connections", "between", "two", "kingdoms", "in", "this", "disease", "[", "53", "]", "." ],
+    "entities_indices" : [ [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "On", "the", "other", "hand", ",", "several", "studies", "suggest", "the", "role", "of", "archaea", "in", "the", "development", "of", "intestinal", "diseases", "." ],
+    "entities_indices" : [ [ 16, 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "three-fold", "increase", "in", "the", "abundance", "of", "M.", "stadtmanae", ",", "which", "was", "shown", "to", "possess", "high", "immunogenic", "potential", "[", "127", "]", ",", "was", "reported", "in", "IBD", "patients", "when", "compared", "to", "healthy", "individuals", ",", "suggesting", "this", "archaeon", "might", "be", "involved", "in", "pathologic", "conditions", "within", "the", "human", "gut", "[", "138", "]", "." ],
+    "entities_indices" : [ [ 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "Bacteriophages", "were", "recently", "proposed", "as", "a", "therapeutic", "option", "for", "treating", "CD", "[", "94", "]", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "dysbiosis", "was", "characterized", "by", "elevated", "Wickerhamomyces", ",", "Alternaria", ",", "and", "Candida", ",", "together", "with", "reduced", "Cryptococcus", ",", "Phialemonium", ",", "and", "Wallemia", ",", "and", "unidentified", "Saccharomycetales", "genus", "[", "57", "]", "." ],
+    "entities_indices" : [ [ 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "fact", ",", "M.", "luminyensis", "was", "shown", "to", "be", "able", "to", "degrade", "trimethylamine", "(", "TMA", ")", ",", "a", "compound", "associated", "with", "metabolic", "disorders", "such", "as", "trimethylaminuria", "[", "130", "]", ",", "as", "well", "as", "reducing", "trimethylamine-N-oxide", "(", "TMAO", ")", "plasma", "levels", ",", "preventing", "the", "development", "of", "cardiovascular", "and", "chronic", "kidney", "diseases", "[", "131,132", "]", "." ],
+    "entities_indices" : [ [ 12, 13 ], [ 14, 15 ], [ 36, 37 ], [ 48, 49, 50 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "positive", "effects", "of", "S.", "boulardii", "come", "from", "inactivating", "pathogen", "toxins", "and", "directly", "inhibiting", "the", "growth", "and", "invasion", "of", "intestinal", "pathogens", "[", "36,37", "]", ",", "as", "well", "as", "boosting", "the", "host", "immunity", "and", "exerting", "anti-inflammatory", "functions", "in", "ulcerative", "colitis", "[", "38,39", "]", ",", "Crohn", "'", "s", "disease", "[", "38,40", "]", ",", "and", "C.", "difficile", "colitis", "[", "41", "]", "." ],
+    "entities_indices" : [ [ 17, 18 ], [ 31, 32 ], [ 37, 38, 39 ], [ 54, 55 ] ]
+  }, {
+    "sentence_tokens" : [ "Although", "microbiome", "directed", "therapy", "is", "still", "in", "its", "infancy", ",", "studies", "conducted", "thus", "far", "suggest", "that", "direct", "or", "indirect", "alterations", "in", "human", "virome", "and", "mycobiome", ",", "as", "well", "as", "changes", "in", "archaea", "and", "eukaryotic", "parasites", "may", "improve", "health", "outcomes", "in", "inflammatory", "diseases", "such", "as", "IBD.However", ",", "the", "association", "of", "commensal", "fungi", ",", "viruses", ",", "archaea", ",", "and", "eukaryotic", "protozoa", "with", "the", "host", "in", "healthy", "and", "diseased", "states", ",", "as", "well", "as", "their", "interactions", "with", "each", "other", ",", "reflects", "a", "rather", "intricate", "nexus", "that", "transcends", "a", "mere", "\"", "cause", "and", "effect", "\"", "relationship", "." ],
+    "entities_indices" : [ [ 41, 42 ], [ 71, 72 ] ]
+  }, {
+    "sentence_tokens" : [ "CARD9", "deficient", "patients", "are", "especially", "susceptible", "to", "fungal", "infections", "and", "polymorphism", "in", "CARD9", "gene", "is", "associated", "with", "a", "higher", "risk", "of", "developing", "IBD", "[", "63", "]", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 7, 8, 9 ], [ 12, 13 ], [ 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "Although", "Blastocystis", "positive", "fecal", "samples", "were", "previously", "excluded", "from", "FMT", "by", "many", "stool", "banks", ",", "resulting", "in", "a", "high", "rate", "(", "30", "%", "-", "50", "%", ")", "of", "donor", "exclusion", ",", "this", "study", "reported", "no", "adverse", "gastrointestinal", "symptoms", "nor", "any", "significant", "effect", "on", "the", "treatment", "outcome", "when", "Blastocystis", "positive", "stool", "was", "used", "for", "the", "procedure.Many", "protozoan", "parasites", ",", "however", ",", "are", "pathogenic", "species", "and", "can", "cause", "intestinal", "inflammation", "and", "disease", "." ],
+    "entities_indices" : [ [ 9, 10 ], [ 67, 68 ] ]
+  }, {
+    "sentence_tokens" : [ "Additionally", ",", "reports", "suggest", "that", "the", "abundance", "of", "Candida", "in", "the", "gut", "positively", "correlated", "with", "high", "carbohydrate", "diets", ",", "and", "inversely", "correlated", "to", "consumption", "of", "total", "saturated", "fatty", "acids", ",", "while", "recent", "intake", "of", "short-chain", "fatty", "acids", "reduced", "the", "abundance", "of", "Aspergillus", "[", "26", "]", "." ],
+    "entities_indices" : [ [ 16, 17 ], [ 34, 35, 36, 37 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "recent", "hypothesis", "on", "the", "role", "of", "archaea", "in", "human", "intestinal", "diseases", "suggests", "the", "butyric", "acid", ",", "a", "short-chain", "fatty", "acid", "(", "SCFA", ")", ",", "as", "the", "essential", "component", "in", "the", "regulation", "of", "syntrophic", "archaea", "and", "bacteria", "biofilms", "in", "the", "gut", "." ],
+    "entities_indices" : [ [ 10, 11, 12 ], [ 14, 15, 16 ], [ 17, 18, 19, 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "dataset", "used", "for", "this", "study", "was", "recently", "reanalyzed", ",", "confirming", "IBD", "specific", "changes", "in", "the", "virome", ",", "loss", "of", "the", "\"", "core", "phageome", "\"", "and", "increased", "abundance", "of", "induced", "temperate", "phages", "in", "patients", "with", "CD", "[", "84", "]", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 35, 36 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "only", "nonmethanogenic", "strains", "that", "were", "successfully", "isolated", "and", "characterized", "from", "the", "human", "gut", "are", "Haloferax", "massiliensis", "and", "Haloferax", "assiliense", ",", "demonstrating", "halophilic", "archaea", "can", "inhabit", "the", "human", "gut", "[", "125,126", "]", "." ],
+    "entities_indices" : [ [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "They", "found", "a", "high", "abundance", "of", "Hepadnaviridae", "family", "(", "together", "with", "the", "protein", "HBx", ")", "in", "patients", "with", "UC", ",", "and", "an", "increased", "abundance", "of", "Hepeviridae", "family", "when", "compared", "to", "controls", "." ],
+    "entities_indices" : [ [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "chronic", "recurrent", "colitis", "however", ",", "fungi", "may", "aggravate", "the", "disease", "severity", "and", "translocate", "into", "locations", "outside", "the", "gut", "[", "57", "]", "." ],
+    "entities_indices" : [ [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "study", ",", "most", "pronounced", "changes", "have", "been", "observed", "in", "the", "relative", "abundance", "of", "Caudovirales", "order", "of", "phages", ",", "with", "a", "substantially", "lower", "number", "of", "strains", "in", "the", "Microviridae", "family", "in", "patients", "with", "CD", "compared", "to", "healthy", "controls", "[", "89", "]", "." ],
+    "entities_indices" : [ [ 34, 35 ] ]
+  }, {
+    "sentence_tokens" : [ "Similarly", ",", "another", "study", "demonstrated", "B.", "hominis", "infection", "was", "associated", "with", "more", "severe", "symptoms", "and", "decreased", "disease", "treatment", "efficiency", "in", "patients", "with", "refractory", "ulcerative", "colitis", "[", "158", "]", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 23, 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "Despite", "being", "morphologically", "similar", "to", "bacteria", "regarding", "their", "shape", ",", "size", ",", "and", "unicellular", "organization", ",", "archaea", "feature", "many", "characteristics", "that", "are", "more", "closely", "related", "to", "those", "of", "eukaryotes", ",", "such", "as", "DNA", "replication", "and", "repair", "mechanisms", ",", "RNA", "transcription", ",", "and", "protein", "translation", "machinery", "[", "106", "]", "." ],
+    "entities_indices" : [ [ 32, 33, 34 ], [ 39, 40 ], [ 42, 43, 44 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "recent", "study", "proposed", "adding", "translational", "elongating", "factor", "1", "alpha", "(", "TEF1", "alpha", ")", "as", "a", "secondary", "barcode", "to", "the", "ITS", "barcode", "in", "order", "to", "increase", "the", "taxonomic", "resolution", "power", "and", "enhance", "the", "accuracy", "of", "fungal", "species", "identification", "[", "23", "]", "." ],
+    "entities_indices" : [ [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "Interestingly", ",", "treatment", "with", "fungicides", "could", "recover", "the", "visceral", "hypersensitivity", "to", "normal", "levels", "[", "45", "]", "." ],
+    "entities_indices" : [ [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "addition", ",", "the", "ryzophagy", "cycle", "in", "plant", "and", "symbiotic", "bacteria", "systems", "identified", "butyric", "acid", "as", "a", "signal", "molecule", "for", "maintenance", "of", "bacteria", "in", "biofilms", ",", "with", "the", "low", "concentrations", "of", "butyric", "acid", "inducing", "bacterial", "endoparasitism", "[", "147", "]", "." ],
+    "entities_indices" : [ [ 13, 14, 15 ], [ 31, 32, 33 ] ]
+  }, {
+    "sentence_tokens" : [ "Studies", "also", "indicated", "a", "lower", "proportion", "of", "patients", "were", "positive", "for", "methanogens", "in", "their", "gut", "compared", "to", "controls", ",", "primarily", "due", "to", "a", "reduction", "in", "the", "number", "of", "M.", "smithii", "in", "IBD", "subjects", "[", "138,139", "]", "." ],
+    "entities_indices" : [ [ 31, 32 ] ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "contrasting", "results", "on", "the", "role", "of", "B.", "hominis", "in", "IBD", "were", "also", "reported", "." ],
+    "entities_indices" : [ [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "Accordingly", ",", "there", "is", "mounting", "evidence", "that", "the", "community", "of", "phages", "in", "the", "gut", "is", "altered", "when", "dysbiosis", "related", "disorders", "are", "considered", ",", "such", "as", "IBD", "and", "colorectal", "cancer", "." ],
+    "entities_indices" : [ [ 17, 18 ], [ 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "review", "covers", "the", "recent", "findings", "on", "the", "non", "bacterial", "communities", "of", "the", "human", "gastrointestinal", "microbiota", "and", "their", "involvement", "in", "health", "and", "disease", ",", "with", "particular", "focus", "on", "the", "pathophysiology", "of", "inflammatory", "bowel", "disease", "." ],
+    "entities_indices" : [ [ 31, 32, 33, 34 ] ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "the", "most", "critical", "finding", "was", "the", "overlap", "of", "intestinal", "phage", "metagenomes", "in", "the", "mouse", "model", "and", "human", "studies", ",", "indicating", "that", "the", "mouse", "colitis", "model", "could", "be", "suitable", "for", "studying", "human", "disease", "[", "93", "]", "." ],
+    "entities_indices" : [ [ 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "study", "that", "analyzed", "colon", "samples", "of", "IBD", "patients", "and", "healthy", "controls", "showed", "that", "IBD", "was", "characterized", "by", "increased", "levels", "of", "Herpesviridae", "family", ",", "as", "well", "as", "augmented", "expression", "of", "pertaining", "endogenous", "viral", "sequences", "[", "97", "]", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "After", "reintroducing", "Enterobacteriaceae", ",", "both", "C.", "albicans", "and", "S.", "boulardii", "recovered", "their", "effects", "in", "severity", "of", "colitis", "[", "58", "]", "." ],
+    "entities_indices" : [ [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "Human", "Virome", "." ],
+    "entities_indices" : [ [ 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "most", "prevalent", "genus", "in", "non", "obese", "individuals", "was", "Mucor", ",", "with", "its", "abundance", "significantly", "higher", "in", "non", "obese", "individuals", ",", "and", "inversely", "correlated", "with", "metabolic", "markers", "of", "obesity", "[", "43", "]", "." ],
+    "entities_indices" : [ [ 28, 29 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "dysbiotic", "bacterial", "microbiota", "has", "been", "extensively", "characterized", "in", "IBD", "[", "5,6", "]", ",", "while", "the", "role", "of", "other", "microbiota", "constituents", ",", "as", "well", "as", "their", "interactions", "within", "the", "intestinal", "microbiota", ",", "remain", "unclear", "." ],
+    "entities_indices" : [ [ 1, 2, 3, 4 ], [ 9, 10 ], [ 25, 26 ], [ 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "Anaerobic", "bacterial", "fermentation", "results", "in", "the", "generation", "of", "short-chain", "fatty", "acids", "(", "SCFAs", ")", "such", "as", "acetate", ",", "propionate", ",", "and", "butyrate", ",", "as", "well", "as", "carbon", "dioxide", "and", "hydrogen", "gas", "[", "120", "]", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 8, 9, 10, 11 ], [ 12, 13 ], [ 16, 17 ], [ 18, 19 ], [ 21, 22 ], [ 26, 27, 28 ], [ 29, 30, 31 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "study", "by", "Hoarau", "et", "al.", "reported", "elevated", "levels", "of", "C.", "tropicalis", "positively", "correlated", "with", "Serratia", "marcescens", "and", "Escherichia", "coli", "in", "CD", "." ],
+    "entities_indices" : [ [ 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "Besides", "elevated", "Basidiomycota", "and", "Ascomycota", "ratio", "in", "IBD", "patients", "in", "comparison", "to", "healthy", "controls", "and", "in", "IBD", "flares", "vs.", "IBD", "remission", "[", "53", "]", ",", "fungal", "dysbiosis", "in", "IBD", "patients", "is", "also", "characterized", "by", "increased", "levels", "of", "Gibberella", "moniliformis", ",", "Alternaria", "brassicola", ",", "Aspergillus", "clavatus", ",", "and", "Cystofilobasidiaceae", "[", "55", "]", ",", "while", "Saccharomyces", "cerevisiae", "and", "Malassezia", "sympodialis", "are", "markedly", "decreased", "[", "53", "]", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 16, 17 ], [ 19, 20 ], [ 26, 27 ], [ 28, 29 ] ]
+  }, {
+    "sentence_tokens" : [ "Methane", ",", "the", "end-product", "of", "methanogenesis", ",", "has", "been", "implicated", "in", "slowing", "down", "the", "intestinal", "transit", "resulting", "in", "constipation", "and", "gastrointestinal", "disorders", "[", "134,135", "]", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 5, 6 ], [ 15, 16 ], [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "IL-17", "and", "IL-22", "were", "also", "found", "to", "affect", "commensal", "fungal", "communities", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "One", "of", "the", "first", "studies", "that", "linked", "gut", "virome", "dysbiosis", "with", "IBD", "pathogenesis", "clearly", "showed", "the", "increased", "abundance", "of", "phages", "infecting", "bacterial", "orders", "Alteromonadales", "and", "Clostridiales", ",", "including", "bacterial", "species", "Clostridium", "acetobutylicum", ",", "as", "well", "as", "elevated", "numbers", "of", "Retroviridae", "family", "representatives", ",", "in", "subjects", "with", "CD", "[", "87", "]", "." ],
+    "entities_indices" : [ [ 9, 10 ], [ 11, 12 ], [ 12, 13 ], [ 46, 47 ] ]
+  }, {
+    "sentence_tokens" : [ "By", "using", "murine", "models", ",", "Seth", "et", "al.", "showed", "that", "increased", "viral", "richness", "and", "increased", "alpha", "diversity", "exhibit", "a", "positive", "correlation", "with", "gut", "dysbiosis", "and", "the", "level", "of", "proinflammatory", "cytokines", "in", "the", "serum", "[", "91", "]", "." ],
+    "entities_indices" : [ [ 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "Similar", "findings", "were", "published", "for", "IBS", "as", "well", "[", "166,167", "]", ",", "thus", "implying", "B.", "hominis", "is", "a", "common", "constituent", "of", "healthy", "human", "microbiota", "exerting", "a", "protective", "role", "in", "gastrointestinal", "diseases", "[", "156", "]", "." ],
+    "entities_indices" : [ [ 29, 30, 31 ] ]
+  }, {
+    "sentence_tokens" : [ "On", "the", "other", "hand", ",", "the", "presence", "of", "the", "Entamoeba", "spp.", "(", "excluding", "the", "pathogenic", "E.", "histolytica", ")", "has", "been", "linked", "to", "increased", "bacterial", "diversity", "in", "the", "gut", ",", "as", "well", "as", "with", "the", "changes", "in", "the", "composition", "of", "the", "gut", "microbiome", "--", "more", "specifically", ",", "Entamoeba", "colonization", "was", "negatively", "correlated", "with", "inflammatory", "diseases", "and", "autoimmune", "disorders", "[", "175", "]", "." ],
+    "entities_indices" : [ [ 9, 10, 11 ], [ 53, 54 ] ]
+  } ],
+  "emptySentences" : [ {
+    "sentence_tokens" : [ "Gut", "Microbiota", "beyond", "Bacteria--Mycobiome", ",", "Virome", ",", "Archaeome", ",", "and", "Eukaryotic", "Parasites", "in", "IBD", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "human", "microbiota", "is", "a", "diverse", "microbial", "ecosystem", "associated", "with", "many", "beneficial", "physiological", "functions", "as", "well", "as", "numerous", "disease", "etiologies", "." ]
+  }, {
+    "sentence_tokens" : [ "Dominated", "by", "bacteria", ",", "the", "microbiota", "also", "includes", "commensal", "populations", "of", "fungi", ",", "viruses", ",", "archaea", ",", "and", "protists", "." ]
+  }, {
+    "sentence_tokens" : [ "Unlike", "bacterial", "microbiota", ",", "which", "was", "extensively", "studied", "in", "the", "past", "two", "decades", ",", "these", "non", "bacterial", "microorganisms", ",", "their", "functional", "roles", ",", "and", "their", "interaction", "with", "one", "another", "or", "with", "host", "immune", "system", "have", "not", "been", "as", "widely", "explored", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "review", "covers", "the", "recent", "findings", "on", "the", "non", "bacterial", "communities", "of", "the", "human", "gastrointestinal", "microbiota", "and", "their", "involvement", "in", "health", "and", "disease", ",", "with", "particular", "focus", "on", "the", "pathophysiology", "of", "inflammatory", "bowel", "disease", "." ]
+  }, {
+    "sentence_tokens" : [ "1", "." ]
+  }, {
+    "sentence_tokens" : [ "Introduction", "." ]
+  }, {
+    "sentence_tokens" : [ "Trillions", "of", "microbes", "colonize", "the", "human", "body", ",", "forming", "the", "microbial", "community", "collectively", "referred", "to", "as", "the", "human", "microbiota", "." ]
+  }, {
+    "sentence_tokens" : [ "Spanning", "all", "three", "domains", "of", "life", ",", "bacteria", ",", "eukaryotes", ",", "and", "archaea", ",", "as", "well", "as", "viruses", ",", "the", "human", "microbiota", "plays", "an", "important", "part", "in", "human", "physiology", "and", "health", "maintenance", "by", "helping", "in", "energy", "harvest", ",", "supporting", "the", "immune", "development", ",", "and", "providing", "protective", ",", "structural", ",", "and", "metabolic", "functions", "essential", "for", "the", "human", "body.Recent", "advancements", "in", "next", "generation", "sequencing", "and", "computational", "technologies", "have", "provided", "opportunities", "to", "investigate", "the", "structure", "and", "function", "of", "microbial", "communities", "associated", "with", "various", "body", "sites", "." ]
+  }, {
+    "sentence_tokens" : [ "As", "bacteria", "are", "the", "most", "abundant", "component", "of", "the", "microbiota", ",", "the", "vast", "majority", "of", "studies", "over", "the", "last", "decades", "focused", "primarily", "on", "the", "composition", "of", "bacterial", "microbiota", "and", "its", "effects", "on", "human", "health", "and", "disease", "." ]
+  }, {
+    "sentence_tokens" : [ "On", "the", "other", "hand", ",", "research", "on", "human", "fungal", "(", "mycobiome", ")", ",", "viral", "(", "virome", ")", ",", "and", "archaeal", "microbiota", "(", "archaeome", ")", "is", "still", "in", "its", "infancy", "." ]
+  }, {
+    "sentence_tokens" : [ "Nevertheless", ",", "recent", "studies", "revealed", "that", "these", "non", "bacterial", "microbial", "populations", "are", "also", "dynamic", "communities", ",", "interacting", "with", "one", "another", "and", "playing", "a", "vital", "role", "in", "host", "wellbeing", "[", "1,2,3,4", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "gastrointestinal", "tract", "is", "the", "most", "densely", "populated", "microbial", "niche", "of", "the", "human", "body", "." ]
+  }, {
+    "sentence_tokens" : [ "Despite", "its", "well", "established", "host-beneficial", "functions", ",", "intestinal", "microbiota", "has", "been", "implicated", "in", "various", "pathological", "conditions", ",", "including", "inflammatory", "bowel", "disease", "(", "IBD", ")", "and", "its", "two", "main", "entities", ":", "Crohn", "'", "s", "disease", "(", "CD", ")", "and", "ulcerative", "colitis", "(", "UC", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Numerous", "studies", "demonstrated", "that", "chronic", "inflammation", "of", "the", "intestinal", "mucosa", "in", "IBD", "is", "associated", "with", "alterations", "in", "microbial", "community", "structure", "and", "function", ",", "termed", "\"", "dysbiosis", "\"", "(", "Figure", "1", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "dysbiotic", "bacterial", "microbiota", "has", "been", "extensively", "characterized", "in", "IBD", "[", "5,6", "]", ",", "while", "the", "role", "of", "other", "microbiota", "constituents", ",", "as", "well", "as", "their", "interactions", "within", "the", "intestinal", "microbiota", ",", "remain", "unclear", "." ]
+  }, {
+    "sentence_tokens" : [ "2", "." ]
+  }, {
+    "sentence_tokens" : [ "Human", "Mycobiome", "." ]
+  }, {
+    "sentence_tokens" : [ "Fungi", "are", "ubiquitous", "in", "the", "environment", "and", "a", "part", "of", "all", "Earth", "'", "s", "ecosystems", "[", "7", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "addition", ",", "a", "diverse", "population", "of", "commensal", "fungi", "has", "been", "recognized", "as", "a", "fundamental", "component", "of", "the", "human", "body", ",", "co-existing", "with", "other", "microbes", "within", "the", "human", "microbiota", "[", "8]", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "contrast", "to", "the", "vast", "number", "of", "studies", "on", "the", "bacterial", "communities", "of", "the", "microbiota", "conducted", "in", "the", "last", "decades", ",", "the", "fungal", "constituents", "of", "the", "microbiota", ",", "the", "mycobiome", ",", "received", "much", "less", "attention", "." ]
+  }, {
+    "sentence_tokens" : [ "Still", ",", "recent", "research", "acknowledged", "human", "mycobiome", "as", "a", "dynamic", "community", ",", "responsive", "to", "environmental", "and", "pathophysiological", "changes", ",", "and", "playing", "a", "vital", "role", "in", "host", "metabolism", ",", "as", "well", "as", "maintenance", "of", "host", "immune", "homeostasis", "[", "3,8,9,10", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Early", "research", "of", "human", "mycobiome", "was", "based", "on", "culture", "dependent", "techniques", "for", "the", "identification", "and", "characterization", "of", "commensal", "fungal", "communities", "." ]
+  }, {
+    "sentence_tokens" : [ "While", "the", "new", "molecular", "culture", "independent", "next", "generation", "sequencing", "(", "NGS", ")", "techniques", "proved", "very", "effective", "for", "analyzing", "the", "bacterial", "component", "of", "microbiota", ",", "the", "DNA", "based", "sequencing", "studies", "of", "the", "human", "mycobiome", "are", "faced", "with", "several", "limitations", "." ]
+  }, {
+    "sentence_tokens" : [ "Fungi", "account", "for", "a", "relatively", "small", "percentage", "of", "the", "human", "microbiota", ",", "with", "10", "to", "10", "fungal", "cells", "per", "gram", "of", "fecal", "matter", "(", "compared", "to", "10", "bacterial", "cells", "per", "gram", ")", "[", "11", "]", "and", "only", "0.1", "%", "of", "the", "9.9", "million", "reference", "genes", "in", "a", "current", "human", "gut", "microbial", "metagenomic", "reference", "catalog", "are", "reported", "to", "be", "of", "eukaryotic", "origin", "[", "12,13", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Additionally", ",", "the", "identification", "of", "composition", "and", "diversity", "of", "the", "fungal", "community", "is", "influenced", "by", "the", "nucleic", "acid", "isolation", "method", "[", "14", "]", ",", "the", "choice", "of", "sequencing", "primer", "pairs", "[", "15", "]", ",", "as", "well", "as", "different", "sequencing", "technologies", "[", "16,17", "]", "and", "bioinformatics", "pipelines", "[", "18,19", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Finally", ",", "the", "incomplete", "databases", "for", "taxonomic", "assignment", "and", "annotation", "of", "fungal", "genomes", "present", "a", "serious", "difficulty", "in", "studying", "the", "human", "mycobiome", "[", "15", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "usual", "molecular", "target", "for", "identifying", "fungi", "are", "the", "internal", "transcribed", "spacer", "(", "ITS", ")", "regions", "of", "ribosomal", "RNA", "genes", "." ]
+  }, {
+    "sentence_tokens" : [ "As", "the", "ITS", "regions", "are", "highly", "divergent", "among", "fungi", ",", "these", "regions", "are", "often", "sufficiently", "different", "to", "classify", "fungi", "to", "the", "species", "level", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "2012", ",", "ITS", "was", "designated", "as", "the", "universal", "DNA", "barcode", "marker", "for", "the", "kingdom", "Fungi", "[", "20", "]", ",", "although", "this", "approach", "revealed", "potential", "PCR", "biases", "[", "21,22", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "recent", "study", "proposed", "adding", "translational", "elongating", "factor", "1", "alpha", "(", "TEF1", "alpha", ")", "as", "a", "secondary", "barcode", "to", "the", "ITS", "barcode", "in", "order", "to", "increase", "the", "taxonomic", "resolution", "power", "and", "enhance", "the", "accuracy", "of", "fungal", "species", "identification", "[", "23", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "On", "the", "other", "hand", ",", "the", "study", "comparing", "18S", "rRNA", "screening", "to", "ITS", "sequencing", "showed", "higher", "sensitivity", "of", "18S", "rRNA", "RT-PCR", "combined", "with", "SANGER", "sequencing", ",", "as", "this", "method", "detected", "fungal", "communities", "in", "several", "samples", "which", "were", "ITS", "negative", "[", "24", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Currently", ",", "there", "is", "no", "consensus", "on", "the", "best", "methodological", "approach", "for", "identifying", "human", "mycobiome", ",", "and", "consequently", "the", "results", "of", "studies", "using", "different", "methods", "vary.Human", "mycobiome", "inhabits", "the", "gastrointestinal", "tract", "but", "also", "skin", ",", "respiratory", "tract", ",", "genitourinary", "tract", ",", "as", "well", "as", "other", "mucosal", "surfaces", "in", "the", "host", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "gastrointestinal", "tract", "is", "the", "most", "studied", "fungal", "niche", "in", "humans", "." ]
+  }, {
+    "sentence_tokens" : [ "Reports", "suggest", "that", "the", "human", "gut", "is", "populated", "by", "three", "fungal", "phyla", ",", "Ascomycota", ",", "Basidiomycota", ",", "and", "Zygomycota", "[", "25,26", "]", ",", "with", "the", "\"", "core", "\"", "10", "genera", "identified", "in", "the", "majority", "of", "gastrointestinal", "tract", "samples", "consisting", "of", "Candida", "(", "particularly", "C.", "albicans", ")", ",", "Saccharomyces", "(", "particularly", "S.", "cerevisiae", ")", ",", "Penicillium", ",", "Aspergillus", ",", "Cryptococcus", ",", "Malassezia", "(", "particularly", "M.", "restricta", ")", ",", "Cladosporium", ",", "Galactomyces", ",", "Debaryomyces", ",", "and", "Trichosporon", "[", "25,27", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "composition", "of", "gut", "mycobiome", "seems", "to", "be", "dynamic", "over", "time", "and", "far", "more", "variable", "than", "the", "composition", "of", "bacteria", ",", "both", "in", "humans", "[", "28", "]", "and", "in", "mice", "[", "29", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Most", "studies", "consider", "fungi", "as", "commensal", "organisms", "in", "the", "gut", ",", "acquired", "early", "in", "life", "[", "30", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "has", "recently", "been", "challenged", "claiming", "that", "fungi", "do", "not", "routinely", "colonize", "the", "gastrointestinal", "tract", "of", "healthy", "adults", "[", "31", "]", ",", "instead", "postulating", "that", "all", "fungi", "identified", "in", "the", "human", "stool", "samples", "could", "be", "explained", "by", "their", "presence", "in", "the", "mouth", "or", "the", "diet", "." ]
+  }, {
+    "sentence_tokens" : [ "Indeed", ",", "diet", "is", "perceived", "as", "a", "crucial", "factor", "affecting", "the", "composition", "and", "variability", "of", "gut", "mycobiome", "[", "32", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "instance", ",", "gut", "mycobiome", "content", "was", "found", "to", "considerably", "differ", "between", "individuals", "having", "different", "dietary", "patterns", ",", "i.e", ".,", "vegetarians", "and", "people", "on", "a", "conventional", "Western", "diet", "[", "25,32", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Additionally", ",", "reports", "suggest", "that", "the", "abundance", "of", "Candida", "in", "the", "gut", "positively", "correlated", "with", "high", "carbohydrate", "diets", ",", "and", "inversely", "correlated", "to", "consumption", "of", "total", "saturated", "fatty", "acids", ",", "while", "recent", "intake", "of", "short-chain", "fatty", "acids", "reduced", "the", "abundance", "of", "Aspergillus", "[", "26", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Another", "notable", "finding", "of", "this", "study", "was", "the", "co-occurrence", "of", "Candida", "with", "particular", "bacterial", "(", "Prevotella", "and", "Rumminococcus", ")", "and", "archaeal", "genera", "(", "Methanobrevibacter", ")", ",", "providing", "support", "for", "the", "interkingdom", "syntrophic", "relationships", "in", "host", "metabolism.One", "of", "the", "first", "indications", "that", "fungi", "play", "a", "role", "in", "modulating", "gut", "homeostasis", "is", "the", "use", "of", "Saccharomyces", "boulardii", "as", "a", "constituent", "of", "herbal", "medicine", "traditionally", "utilized", "in", "Southeast", "Asia", "to", "reduce", "the", "severe", "diarrhea", "in", "patients", "with", "cholera", "." ]
+  }, {
+    "sentence_tokens" : [ "S.", "boulardii", "is", "still", "prescribed", "as", "a", "probiotic", "to", "prevent", "diarrhea", "and", "intestinal", "colonization", "with", "Clostridium", "difficile", "following", "antibiotic", "therapy", "[", "33,34", "]", "and", "is", "efficient", "in", "preventing", "recurrent", "C.", "difficile", "infections", "[", "35", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "positive", "effects", "of", "S.", "boulardii", "come", "from", "inactivating", "pathogen", "toxins", "and", "directly", "inhibiting", "the", "growth", "and", "invasion", "of", "intestinal", "pathogens", "[", "36,37", "]", ",", "as", "well", "as", "boosting", "the", "host", "immunity", "and", "exerting", "anti-inflammatory", "functions", "in", "ulcerative", "colitis", "[", "38,39", "]", ",", "Crohn", "'", "s", "disease", "[", "38,40", "]", ",", "and", "C.", "difficile", "colitis", "[", "41", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "recent", "report", "suggests", "beneficial", "effects", "of", "another", "probiotic", "yeast", ",", "Candida", "kefyr", ",", "in", "reducing", "the", "severity", "of", "colitis", "in", "animal", "models", "by", "decreasing", "the", "abundance", "of", "Bacteroides", "and", "lowering", "IL-6", "production", ",", "thus", "attenuating", "inflammation", "in", "the", "intestine", "[", "42", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Although", "fungi", "can", "exert", "beneficial", "effects", "to", "host", "health", ",", "the", "disturbance", "of", "gut", "mycobiota", "was", "also", "implicated", "in", "various", "gastrointestinal", "diseases", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "recent", "study", "demonstrated", "no", "significant", "changes", "in", "mycobiome", "richness", "between", "obese", "and", "non", "obese", "subjects", ";", "however", ",", "some", "specific", "compositional", "differences", "were", "noted", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "most", "prevalent", "genus", "in", "non", "obese", "individuals", "was", "Mucor", ",", "with", "its", "abundance", "significantly", "higher", "in", "non", "obese", "individuals", ",", "and", "inversely", "correlated", "with", "metabolic", "markers", "of", "obesity", "[", "43", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "colorectal", "cancer", "(", "CRC", ")", ",", "an", "alteration", "of", "fungal", "composition", "and", "ecology", "was", "observed", ",", "characterized", "by", "an", "increased", "Basidiomycota", "and", "Ascomycota", "ratio", ",", "depletion", "of", "S.", "cerevisiae", ",", "as", "well", "as", "enrichment", "of", "Rhodotorula", ",", "Malassezia", ",", "and", "Acremonium", "genera", "along", "with", "several", "Aspergillus", "species", "(", "including", "A.", "flavus", ",", "a", "major", "producer", "of", "highly", "toxic", "carcinogen", "aflatoxin", ")", ",", "suggesting", "their", "possible", "contribution", "towards", "CRC", "pathogenesis", "[", "44", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Insights", "into", "gut", "mycobiota", "playing", "a", "role", "in", "IBS", "were", "also", "reported", "." ]
+  }, {
+    "sentence_tokens" : [ "Decreased", "fungal", "diversity", "and", "dysbiosis", "were", "found", "in", "IBS", "patients", ",", "correlating", "mycobiota", "signature", "with", "visceral", "hypersensitivity", ",", "which", "is", "considered", "as", "one", "of", "the", "major", "pathophysiological", "features", "of", "IBS", "[", "45", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Interestingly", ",", "treatment", "with", "fungicides", "could", "recover", "the", "visceral", "hypersensitivity", "to", "normal", "levels", "[", "45", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "finding", "is", "in", "accordance", "with", "a", "previous", "study", "that", "reported", "yeast-free", "diets", "and", "antifungal", "treatments", "as", "helpful", "for", "IBS", "subjects", "[", "46", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "addition", ",", "S.", "boulardii", "was", "found", "to", "be", "effective", "in", "improving", "symptoms", "and", "the", "quality", "of", "life", "in", "IBS", "patients", "[", "47", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "majority", "of", "research", "on", "the", "effects", "of", "gut", "mycobiota", "in", "gastrointestinal", "diseases", "was", "however", "concentrated", "on", "intestinal", "inflammation", "and", "IBD", "." ]
+  }, {
+    "sentence_tokens" : [ "Even", "before", "the", "advent", "of", "molecular", "methods", "and", "NGS", ",", "increased", "levels", "of", "anti-S", "." ]
+  }, {
+    "sentence_tokens" : [ "cerevisiae", "antibodies", "(", "ASCA", ")", "were", "commonly", "found", "in", "the", "serum", "of", "CD", "patients", ",", "suggesting", "the", "host", "'", "s", "immune", "responses", "toward", "intestinal", "fungi", "[", "48", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "These", "antibodies", ",", "raised", "against", "mannan", ",", "a", "component", "in", "the", "fungal", "cell", "wall", ",", "were", "soon", "identified", "as", "a", "reliable", "diagnostic", "biomarker", "for", "CD", "and", "predictors", "of", "the", "disease", "course", "[", "49,50", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "ASCA", "also", "recognize", "many", "other", "fungi", ",", "including", "Candida", "[", "51", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Indeed", ",", "reduced", "fungal", "diversity", "and", "significantly", "increased", "abundance", "of", "specific", "Candida", "species", "were", "found", "in", "pediatric", "IBD", "patients", "[", "52", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Sokol", "et", "al.", "report", "a", "similar", "finding", "in", "adult", "subjects", "with", "IBD", ":", "a", "decrease", "in", "gut", "mycobiome", "biodiversity", "and", "elevated", "Basidiomycota", "and", "Ascomycota", "ratio", ",", "mainly", "due", "to", "the", "increased", "prevalence", "and", "abundance", "of", "C.", "albicans", "and", "reduction", "of", "S.", "cerevisiae", "[", "53", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Additional", "studies", "confirmed", "an", "increased", "representation", "of", "Candida", "species", "in", "IBD", ",", "namely", "C.", "tropicalis", "in", "familial", "CD", "[", "54", "]", ",", "as", "well", "as", "C.", "glabrata", "in", "colonic", "biopsy", "samples", "from", "patients", "with", "CD", "[", "55", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Besides", "elevated", "Basidiomycota", "and", "Ascomycota", "ratio", "in", "IBD", "patients", "in", "comparison", "to", "healthy", "controls", "and", "in", "IBD", "flares", "vs.", "IBD", "remission", "[", "53", "]", ",", "fungal", "dysbiosis", "in", "IBD", "patients", "is", "also", "characterized", "by", "increased", "levels", "of", "Gibberella", "moniliformis", ",", "Alternaria", "brassicola", ",", "Aspergillus", "clavatus", ",", "and", "Cystofilobasidiaceae", "[", "55", "]", ",", "while", "Saccharomyces", "cerevisiae", "and", "Malassezia", "sympodialis", "are", "markedly", "decreased", "[", "53", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Additionally", ",", "studies", "confirm", "fungal", "burden", "is", "increased", "in", "both", "CD", "and", "UC", "[", "55,56", "]", ",", "with", "the", "fungal", "cells", "translocating", "trough", "the", "intestinal", "barrier", "during", "the", "chronic", "stage", "of", "colitis", "[", "56,57", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Some", "of", "the", "studies", "simultaneously", "analyzed", "both", "the", "fungal", "and", "bacterial", "microbiota", "revealing", "that", "the", "intestinal", "microbial", "network", "was", "different", "in", "IBD", "patients", "when", "compared", "to", "healthy", "individuals", "." ]
+  }, {
+    "sentence_tokens" : [ "Sokol", "et", "al.", "identified", "positive", "correlations", "between", "the", "decreased", "abundance", "of", "S.", "cerevisiae", "and", "reduction", "of", "several", "bacterial", "genera", ",", "such", "as", "Bifidobacterium", ",", "Blautia", ",", "Roseburia", ",", "and", "Ruminococcus", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "total", "number", "and", "the", "intensity", "of", "fungal", "-", "bacterial", "associations", "were", "increased", "in", "UC", ",", "with", "distinct", "interactions", "potentially", "involved", "in", "the", "inflammatory", "processes", "." ]
+  }, {
+    "sentence_tokens" : [ "On", "the", "other", "hand", ",", "weaker", "fungal", "-", "bacteria", "correlations", "were", "found", "in", "CD", "when", "compared", "to", "healthy", "volunteers", ",", "implying", "disrupted", "connections", "between", "two", "kingdoms", "in", "this", "disease", "[", "53", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "study", "by", "Hoarau", "et", "al.", "reported", "elevated", "levels", "of", "C.", "tropicalis", "positively", "correlated", "with", "Serratia", "marcescens", "and", "Escherichia", "coli", "in", "CD", "." ]
+  }, {
+    "sentence_tokens" : [ "Moreover", ",", "in", "vitro", "experiments", "confirmed", "these", "species", "form", "thicker", "mixed", "biofilm", "than", "any", "of", "the", "species", "generates", "individually", ",", "creating", "a", "commensal", "niche", "additionally", "enriched", "in", "fungal", "hyphae", ",", "a", "form", "of", "growth", "usually", "implicated", "in", "pathogenic", "conditions", "[", "54", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "fact", "that", "interactions", "between", "gut", "bacteria", "and", "fungi", "are", "closely", "associated", "with", "disease", "was", "also", "investigated", "in", "mouse", "models", "of", "dextran", "sulfate", "sodium", "(", "DSS", ")", "induced", "colitis", "." ]
+  }, {
+    "sentence_tokens" : [ "Qiu", "et", "al.", "found", "that", "inflamed", "mouse", "intestine", "contained", "increased", "fungal", "burden", "in", "the", "mucosa", ",", "but", "decreased", "in", "the", "feces", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "dysbiosis", "was", "characterized", "by", "elevated", "Wickerhamomyces", ",", "Alternaria", ",", "and", "Candida", ",", "together", "with", "reduced", "Cryptococcus", ",", "Phialemonium", ",", "and", "Wallemia", ",", "and", "unidentified", "Saccharomycetales", "genus", "[", "57", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "study", "further", "shows", "mice", "with", "fungi", "depleted", "by", "fluconazole", "treatment", "exhibited", "aggravated", "colitis", ",", "in", "contrast", "to", "bacteria", "depleted", "mice", ",", "that", "showed", "alleviated", "intestinal", "inflammation", "and", "a", "trend", "of", "disease", "remission", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "finding", "suggests", "that", "bacteria", "are", "the", "major", "driving", "force", "in", "acute", "inflammation", "and", "fungi", "may", "act", "as", "a", "counterbalance", "in", "maintaining", "the", "microbial", "homeostasis", "in", "acute", "colitis", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "chronic", "recurrent", "colitis", "however", ",", "fungi", "may", "aggravate", "the", "disease", "severity", "and", "translocate", "into", "locations", "outside", "the", "gut", "[", "57", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "broad-spectrum", "antibiotic", "treatment", "protected", "the", "mice", "from", "colitis", "and", "C.", "albicans", "had", "no", "pro", "inflammatory", "effect", "when", "administered", "to", "mice", "with", "disrupted", "bacterial", "microbiota", ",", "suggesting", "bacteria", "are", "essential", "for", "the", "development", "of", "colitis", "and", "C.", "albicans", "requires", "the", "presence", "of", "specific", "bacteria", "that", "trigger", "the", "intestinal", "inflammation", "to", "increase", "the", "disease", "intensity", "." ]
+  }, {
+    "sentence_tokens" : [ "On", "the", "other", "hand", ",", "mice", "with", "depleted", "Enterobacteriaceae", "exhibited", "normal", "susceptibility", "to", "colitis", ",", "but", "neither", "C.", "albicans", "nor", "S.", "boulardii", "could", "exert", "disease", "modulating", "effects", "in", "this", "experimental", "setting", "." ]
+  }, {
+    "sentence_tokens" : [ "After", "reintroducing", "Enterobacteriaceae", ",", "both", "C.", "albicans", "and", "S.", "boulardii", "recovered", "their", "effects", "in", "severity", "of", "colitis", "[", "58", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "host", "immune", "system", "recognizes", "fungi", "using", "pattern", "recognition", "receptors", "(", "PRRs", ")", ",", "with", "the", "resulting", "host", "responses", "ranging", "from", "tolerance", "to", "inflammation", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "key", "PRR", "for", "coordinating", "host", "response", "to", "fungi", "is", "Dectin-1", "(", "CLEC7A", ")", ",", "a", "C-type", "lectin", "receptor", "that", "recognizes", "beta-glucans", "in", "the", "fungal", "cell", "wall", "[", "59", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Dectin-1", "deficient", "mice", "were", "found", "to", "develop", "more", "severe", "colitis", ",", "due", "to", "the", "overgrowth", "of", "opportunistic", "fungi", "(", "i.e", ".,", "Candida", "and", "Trichosporon", ")", ",", "while", "treatment", "with", "antifungal", "drug", "fluconazole", "ameliorated", "the", "disease", "[", "60,61", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "same", "study", "revealed", "that", "a", "polymorphism", "in", "the", "Dectin-1", "gene", "was", "associated", "with", "increased", "severity", "of", "disease", "in", "patients", "with", "UC", "[", "60", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Recent", "research", "also", "identified", "CARD9", "as", "the", "key", "downstream", "signaling", "molecule", "for", "the", "induction", "of", "immune", "response", "to", "fungi", "[", "62", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "CARD9", "deficient", "patients", "are", "especially", "susceptible", "to", "fungal", "infections", "and", "polymorphism", "in", "CARD9", "gene", "is", "associated", "with", "a", "higher", "risk", "of", "developing", "IBD", "[", "63", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Interestingly", ",", "Candida", "overgrowth", ",", "which", "is", "one", "of", "the", "characteristic", "features", "in", "IBD", "patients", ",", "could", "not", "be", "positively", "correlated", "with", "CARD9", "polymorphism", "[", "64", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Instead", ",", "Candida", "was", "hardly", "detectible", "in", "CARD9", "deficient", "mice", ",", "suggesting", "this", "taxon", "was", "not", "the", "driver", "of", "dysbiosis", "as", "in", "dectin-1", "deficient", "animals", "[", "65", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "IL-17", "and", "IL-22", "were", "also", "found", "to", "affect", "commensal", "fungal", "communities", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "clinical", "study", "revealed", "secukinumab", ",", "an", "IL-17A", "antagonist", ",", "was", "associated", "with", "exacerbations", "in", "patients", "with", "CD", ",", "identifying", "the", "higher", "rate", "of", "fungal", "infections", "in", "treated", "subjects", "[", "66", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Both", "IL-17", "and", "IL-22", "might", "act", "as", "inducers", "of", "antimicrobial", "peptides", "(", "AMPs", ")", "in", "epithelial", "cells", "and", "were", "reported", "as", "protective", "against", "mucosal", "fungal", "infections", "[", "67,68", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "3", "." ]
+  }, {
+    "sentence_tokens" : [ "Human", "Virome", "." ]
+  }, {
+    "sentence_tokens" : [ "Viruses", "are", "the", "most", "abundant", "and", "widespread", "biological", "entities", "on", "Earth", "[", "69", "]", "and", "integral", "members", "of", "the", "human", "microbiota", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "entire", "assembly", "of", "eukaryotic", "and", "bacterial", "viruses", "(", "bacteriophages", ")", "populating", "the", "human", "body", "was", "termed", "the", "human", "virome", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "virome", "includes", "double", "stranded", "DNA", "(", "dsDNA", ")", ",", "single", "stranded", "DNA", "(", "ssDNA", ")", ",", "as", "well", "as", "RNA", "viruses", "." ]
+  }, {
+    "sentence_tokens" : [ "Significant", "research", "effort", "in", "recent", "years", "was", "devoted", "to", "characterize", "this", "diverse", "community", "and", "appraise", "its", "impact", "on", "the", "host", "wellbeing", "[", "70,71,72", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Viruses", "are", "found", "in", "numerous", "human", "body", "sites", ",", "with", "the", "intestine", "being", "the", "most", "extensively", "populated", "and", "studied", "niche", "." ]
+  }, {
+    "sentence_tokens" : [ "Intestinal", "virome", "is", "large", "and", "diverse", ",", "but", "nonetheless", "stable", "and", "highly", "personalized", "[", "1,73", "]", ",", "established", "in", "the", "earliest", "period", "of", "human", "life", "simultaneously", "with", "the", "colonization", "of", "bacteria", "and", "other", "constituents", "of", "the", "gut", "microbiota", "[", "74", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "gut", "virome", "in", "the", "neonatal", "period", "predominantly", "consists", "of", "bacteriophages", ",", "with", "only", "a", "small", "fraction", "of", "eukaryotic", "viruses", ",", "and", "akin", "to", "the", "bacterial", "microbiome", ",", "it", "significantly", "varies", "across", "individuals", "[", "75", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "contrast", "to", "research", "on", "bacteria", "and", "fungi", ",", "no", "universal", "marker", "gene", "can", "be", "utilized", "to", "study", "viruses", "and", "the", "majority", "of", "obtained", "sequences", "do", "not", "exist", "in", "publicly", "available", "databases", "(", "\"", "viral", "dark", "matter", "\"", "[", "76,77", "]", ")", ",", "so", "the", "usual", "methodological", "approach", "of", "virome", "research", "is", "metagenomics.The", "healthy", "human", "intestine", "is", "a", "home", "to", "approximately", "10", "bacteriophages", ",", "outnumbering", "the", "commensal", "bacteria", "by", "a", "factor", "of", "10", "[", "71,78", "]", ",", "with", "the", "\"", "core", "phageome", "\"", "predominantly", "consisting", "of", "dsDNA", "viruses", "from", "the", "Caudovirales", "order", "(", "Myoviridae", ",", "Podoviridae", ",", "and", "Siphoviridae", "families", ")", "and", "ssDNA", "viruses", "of", "the", "Microviridae", "family", "[", "79", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "recent", "study", "identified", "a", "novel", "type", "of", "phage", ",", "crAssphage", ",", "as", "the", "most", "prevalent", "human", "associated", "virus", ",", "accounting", "for", "up", "to", "90", "%", "of", "the", "reads", "from", "human", "fecal", "viral", "metagenomes", "and", "about", "22", "%", "of", "the", "reads", "in", "the", "total", "metagenome", "[", "80", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "CrAssphage", "and", "novel", "crAass", "like", "phages", "are", "associated", "with", "Bacteroidetes", "bacterial", "phylum", "and", "are", "likely", "to", "become", "a", "family", "within", "the", "Caudovirales", "order", "[", "81,82", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "phages", "usually", "exhibit", "temperate", "lifestyle", "and", "integration", "into", "bacterial", "hosts", "as", "prophages", ",", "however", ",", "environmental", "stressors", "can", "induce", "the", "lytic", "cycle", "resulting", "in", "viral", "replication", "and", "destruction", "of", "host", "cells", "." ]
+  }, {
+    "sentence_tokens" : [ "Thus", ",", "the", "intestinal", "virome", "is", "closely", "linked", "to", "the", "prokaryotic", "microbial", "communities", "not", "just", "by", "sharing", "a", "common", "niche", ",", "but", "also", "by", "contributing", "to", "the", "ecosystem", "dynamics", "as", "well", "as", "by", "providing", "various", "genetic", "elements", "such", "as", "virulence", "factors", "or", "antibiotic", "resistance", "genes", "while", "integrated", "as", "a", "prophage", "[", "83", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Accordingly", ",", "there", "is", "mounting", "evidence", "that", "the", "community", "of", "phages", "in", "the", "gut", "is", "altered", "when", "dysbiosis", "related", "disorders", "are", "considered", ",", "such", "as", "IBD", "and", "colorectal", "cancer", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "addition", ",", "a", "shift", "from", "lysogenic", "to", "lytic", "replication", "in", "the", "population", "of", "temperate", "phages", "may", "be", "linked", "to", "the", "development", "of", "IBD", "[", "84", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "exact", "role", "of", "human", "gut", "virome", "in", "the", "etiology", "of", "IBD", "has", "yet", "to", "be", "elucidated", ",", "as", "not", "only", "our", "understanding", "of", "the", "virome", "is", "still", "fragmented", "and", "without", "clear", "links", "to", "different", "inflammatory", "conditions", ",", "but", "there", "is", "also", "an", "inherent", "complexity", "of", "IBD", "as", "a", "prototypic", "multifactorial", "disease", "[", "1,85", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Still", ",", "recent", "research", "provided", "some", "rationale", "for", "considering", "virome", "as", "a", "potentially", "important", "stakeholder", "in", "the", "development", "of", "chronic", "inflammatory", "conditions", "of", "the", "gut", "[", "86", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "One", "of", "the", "first", "studies", "that", "linked", "gut", "virome", "dysbiosis", "with", "IBD", "pathogenesis", "clearly", "showed", "the", "increased", "abundance", "of", "phages", "infecting", "bacterial", "orders", "Alteromonadales", "and", "Clostridiales", ",", "including", "bacterial", "species", "Clostridium", "acetobutylicum", ",", "as", "well", "as", "elevated", "numbers", "of", "Retroviridae", "family", "representatives", ",", "in", "subjects", "with", "CD", "[", "87", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "paper", ",", "authors", "also", "pinpointed", "viral", "biomarkers", "associated", "with", "the", "disease", "and", "hinted", "the", "importance", "of", "interactions", "between", "viral", "and", "bacterial", "communities", "in", "the", "gut", "[", "87", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "large", "study", "by", "Norman", "et", "al.", "observed", "disease", "specific", "changes", "and", "reduced", "diversity", "of", "the", "gut", "virome", "in", "both", "CD", "and", "UC", ",", "revealing", "the", "primary", "difference", "in", "the", "IBD", "associated", "virome", "was", "the", "increased", "richness", "of", "Caudovirales", "phages", "on", "a", "taxonomic", "level", ";", "however", ",", "the", "exact", "viruses", "that", "may", "give", "rise", "to", "such", "change", "were", "different", "in", "CD", "when", "compared", "to", "UC", "[", "88", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "dataset", "used", "for", "this", "study", "was", "recently", "reanalyzed", ",", "confirming", "IBD", "specific", "changes", "in", "the", "virome", ",", "loss", "of", "the", "\"", "core", "phageome", "\"", "and", "increased", "abundance", "of", "induced", "temperate", "phages", "in", "patients", "with", "CD", "[", "84", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "in", "contrast", "to", "the", "previous", "report", ",", "no", "changes", "in", "viral", "richness", "and", "overall", "viral", "alpha", "diversity", "were", "demonstrated", "." ]
+  }, {
+    "sentence_tokens" : [ "Furthermore", ",", "the", "changes", "in", "the", "composition", "of", "virome", "mirrored", "shifts", "in", "bacterial", "composition", ",", "while", "both", "virome", "and", "bacteriome", "alterations", "were", "more", "pronounced", "in", "patients", "with", "CD", "when", "compared", "to", "UC", ",", "reflecting", "the", "disease", "severity", "." ]
+  }, {
+    "sentence_tokens" : [ "Hence", ",", "integrating", "both", "bacteriome", "and", "virome", "assessment", "offers", "higher", "classification", "power", "between", "healthy", "and", "diseased", "states", "in", "IBD", "[", "84", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "addition", ",", "Fernandes", "et", "al.", "revealed", "how", "minor", "patterns", "and", "differences", "in", "gut", "virome", "may", "be", "used", "to", "differentiate", "pediatric", "patients", "with", "IBD", "from", "healthy", "controls", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "study", ",", "most", "pronounced", "changes", "have", "been", "observed", "in", "the", "relative", "abundance", "of", "Caudovirales", "order", "of", "phages", ",", "with", "a", "substantially", "lower", "number", "of", "strains", "in", "the", "Microviridae", "family", "in", "patients", "with", "CD", "compared", "to", "healthy", "controls", "[", "89", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Similarly", ",", "the", "expansion", "of", "the", "Caudovirales", "was", "observed", "in", "another", "study", ",", "together", "with", "decrease", "in", "richness", "and", "diversity", "in", "patients", "with", "UC", "[", "90", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Recent", "animal", "studies", "corroborated", "the", "role", "of", "enteric", "phages", "in", "IBD", "." ]
+  }, {
+    "sentence_tokens" : [ "By", "using", "murine", "models", ",", "Seth", "et", "al.", "showed", "that", "increased", "viral", "richness", "and", "increased", "alpha", "diversity", "exhibit", "a", "positive", "correlation", "with", "gut", "dysbiosis", "and", "the", "level", "of", "proinflammatory", "cytokines", "in", "the", "serum", "[", "91", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Similarly", ",", "another", "study", "showed", "the", "increasing", "bacteriophage", "levels", "(", "primarily", "Escherichia", ",", "Lactobacillus", ",", "and", "Bacteriodes", "infecting", "phages", ")", "in", "germ-free", "mice", "may", "alter", "the", "state", "of", "mucosal", "immunity", "and", "exacerbate", "colitis", "by", "inducing", "the", "production", "of", "IFN-gamma", "via", "TLR9", "[", "92", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Additionally", ",", "recent", "research", "suggests", "that", "Spounaviridae", "phage", "subfamily", ",", "as", "well", "as", "phages", "that", "target", "Streptococcus", "and", "Alistipes", "may", "serve", "as", "informative", "disease", "markers", "for", "murine", "colitis", "analogous", "to", "IBD", "[", "93", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Interestingly", ",", "this", "study", "did", "not", "reveal", "increased", "levels", "of", "bacterial", "hosts", ",", "suggesting", "the", "abundance", "of", "phages", "is", "not", "always", "correlated", "with", "host", "abundance", "and", "that", "inflammation", "might", "be", "caused", "by", "induction", "of", "phage", "replication", "and", "excision", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "the", "most", "critical", "finding", "was", "the", "overlap", "of", "intestinal", "phage", "metagenomes", "in", "the", "mouse", "model", "and", "human", "studies", ",", "indicating", "that", "the", "mouse", "colitis", "model", "could", "be", "suitable", "for", "studying", "human", "disease", "[", "93", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Bacteriophages", "were", "recently", "proposed", "as", "a", "therapeutic", "option", "for", "treating", "CD", "[", "94", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "cocktail", "of", "phages", "was", "reported", "to", "reduce", "symptoms", "in", "the", "mouse", "model", "of", "dextran", "sulfate", "sodium", "(", "DSS", ")-induced", "colitis", ",", "as", "well", "as", "significantly", "reduce", "fecal", "adhesive-invasive", "E.", "coli", "(", "AIEC", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "AIEC", "was", "shown", "to", "colonize", "the", "ileal", "mucosa", "of", "CD", "and", "correlate", "with", "disease", "location", ",", "activity", ",", "and", "postoperative", "recurrence", "[", "95", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "fact", ",", "the", "phage", "cocktail", "was", "found", "to", "target", "AIEC", "in", "homogenates", "of", "ileal", "biopsies", "taken", "from", "CD", "patients", "[", "94", "]", ",", "and", "the", "preparation", "is", "currently", "under", "evaluation", "in", "a", "clinical", "trial.Although", "most", "research", "concentrated", "on", "phage", "virome", ",", "eukaryotic", "virome", "is", "also", "proving", "to", "have", "a", "substantial", "role", "in", "human", "health", "and", "disease", ";", "therefore", ",", "both", "should", "be", "considered", "as", "distinct", ",", "but", "related", "entities", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "human", "intestinal", "mucosa", "is", "increasingly", "colonized", "with", "eukaryotic", "viruses", "from", "birth", "to", "2", "years", "of", "age", ",", "suggesting", "that", "the", "eukaryotic", "virome", "is", "established", "through", "environmental", "exposure", "[", "74", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "human", "eukaryotic", "virome", "consists", "of", "Adenoviridae", ",", "Anelloviridae", ",", "Astroviridae", ",", "Parvoviridae", ",", "Picornaviridae", ",", "and", "Picobirnaviridae", "families", ",", "demonstrating", "that", "viruses", ",", "which", "are", "usually", "considered", "as", "pathogens", "or", "opportunistic", "pathogens", ",", "frequently", "populate", "the", "human", "intestine", "[", "74", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "These", "viruses", "can", "exert", "symptomatic", "manifestations", "or", "can", "remain", "latent", "for", "a", "long", "time", ",", "also", "providing", "beneficial", "effects", "for", "the", "host", "[", "86,96", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "growing", "body", "of", "data", "confirms", "that", "perturbations", "in", "eukaryotic", "virome", "are", "linked", "to", "the", "pathogenesis", "of", "IBD", "[", "86", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Zuo", "et", "al.", "employed", "deep", "sequencing", "techniques", "to", "discern", "alterations", "of", "the", "gut", "virome", "in", "patients", "with", "UC", ",", "showing", "an", "increased", "abundance", "of", "Pneumoviridae", "in", "UC", "patients", "compared", "to", "the", "control", "group", ",", "while", "the", "opposite", "was", "found", "for", "Anelloviridae", "family", "[", "90", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "study", "that", "analyzed", "colon", "samples", "of", "IBD", "patients", "and", "healthy", "controls", "showed", "that", "IBD", "was", "characterized", "by", "increased", "levels", "of", "Herpesviridae", "family", ",", "as", "well", "as", "augmented", "expression", "of", "pertaining", "endogenous", "viral", "sequences", "[", "97", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Larger", "studies", "are", "warranted", "to", "further", "elucidate", "this", "relationship", ",", "although", "the", "role", "of", "certain", "herpesviruses", "in", "IBD", "development", "and", "disease", "exacerbations", "was", "already", "described", "[", "98", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Recently", ",", "Ungaro", "et", "al.", "utilized", "a", "thorough", "metagenomic", "analysis", "of", "gut", "mucosa", "on", "a", "large", "cohort", "of", "treatment-na", "i", "ve", "IBD", "patients", "to", "explore", "potential", "viral", "signatures", "and", "triggers", "[", "99", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "They", "found", "a", "high", "abundance", "of", "Hepadnaviridae", "family", "(", "together", "with", "the", "protein", "HBx", ")", "in", "patients", "with", "UC", ",", "and", "an", "increased", "abundance", "of", "Hepeviridae", "family", "when", "compared", "to", "controls", "." ]
+  }, {
+    "sentence_tokens" : [ "On", "the", "other", "hand", ",", "diet", "related", "Polydnaviridae", "and", "Tymoviridae", "viral", "families", "were", "less", "enriched", "in", "patients", "with", "UC", ",", "and", "the", "same", "was", "valid", "for", "Virgaviridae", "in", "patients", "with", "CD", "[", "99", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "role", "of", "eukaryotic", "viruses", "as", "potential", "triggers", "of", "gut", "inflammation", "has", "been", "studied", "in", "animal", "models", "as", "well", ",", "mostly", "concentrating", "on", "Norovirus", "as", "a", "contributor", "to", "intestinal", "inflammation", "[", "100,101", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Since", "it", "is", "clear", "that", "many", "viral", "families", "are", "potential", "players", "in", "the", "development", "of", "inflammatory", "processes", "in", "the", "gut", ",", "further", "studies", "are", "needed", "to", "precisely", "identify", "possible", "viral", "triggers", ",", "principally", "by", "appraising", "metagenome", "signatures", "of", "those", "with", "the", "disease", "." ]
+  }, {
+    "sentence_tokens" : [ "Nonetheless", ",", "there", "are", "many", "challenges", "in", "studying", "human", "virome", ",", "and", "the", "biggest", "may", "be", "the", "sample", "composition", "(", "as", "most", "habitually", "a", "fecal", "specimen", "is", "used", ")", "[", "102", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Extensive", "chemical", ",", "enzymatic", ",", "and", "mechanical", "processing", "is", "indispensable", "for", "eliminating", "cellular", "DNA", "and", "dietary", "elements", "to", "enrich", "the", "virome", "fraction", "[", "103", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "issue", "is", "even", "more", "pronounced", "when", "studies", "of", "mucosal", "virome", "are", "pursued", ",", "and", "where", "DNA", "yields", "are", "substantially", "lower", "[", "104", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "akin", "to", "other", "metagenomic", "approaches", ",", "it", "is", "pivotal", "to", "balance", "sequencing", "depth", ",", "sequencing", "chemistry", ",", "and", "read", "length", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "these", "challenges", "are", "bound", "to", "be", "solved", ",", "and", "as", "gut", "virome", "research", "becomes", "standardized", "and", "expands", "even", "further", ",", "opportunities", "will", "arise", "to", "explore", "virome", "directed", "treatment", "approaches", "for", "IBD", ",", "clinical", "testing", "of", "aforementioned", "phage", "preparation", "being", "the", "first", "step", "in", "that", "direction", "." ]
+  }, {
+    "sentence_tokens" : [ "4", "." ]
+  }, {
+    "sentence_tokens" : [ "Human", "Archaeome", "." ]
+  }, {
+    "sentence_tokens" : [ "Archaea", "are", "a", "separate", "domain", "of", "life", ",", "distinct", "from", "Bacteria", "and", "Eukarya", "[", "105", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Despite", "being", "morphologically", "similar", "to", "bacteria", "regarding", "their", "shape", ",", "size", ",", "and", "unicellular", "organization", ",", "archaea", "feature", "many", "characteristics", "that", "are", "more", "closely", "related", "to", "those", "of", "eukaryotes", ",", "such", "as", "DNA", "replication", "and", "repair", "mechanisms", ",", "RNA", "transcription", ",", "and", "protein", "translation", "machinery", "[", "106", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Although", "sharing", "properties", "with", "both", "Bacteria", "and", "Eukarya", ",", "archaea", "exhibit", "unique", "characteristics", "not", "present", "in", "either", "of", "these", "two", "domains", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "archaeal", "cell", "walls", "do", "not", "contain", "peptidoglycans", ",", "but", "are", "composed", "diverse", "structures", "including", "methanochondroitin", "and", "pseudomurein", "[", "107", "]", ",", "while", "their", "cell", "membranes", "are", "composed", "of", "L-glycerol-ether", "and", "isoprenoid", "lipids", "(", "in", "contrast", "to", "D-glycerol-ester", "and", "fatty", "acid", "lipids", "in", "bacterial", "and", "eukaryotic", "membranes", ")", ",", "enhancing", "membrane", "stability", "and", "rigidity", "[", "108", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Finally", ",", "archaea", "use", "distinctive", "metabolic", "pathways", "that", "can", "utilize", "sunlight", ",", "organic", ",", "and", "inorganic", "substrates", "as", "energy", "sources", "[", "109", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Due", "to", "their", "biochemical", "and", "metabolic", "advantages", ",", "archaea", "are", "capable", "of", "populating", "a", "broad", "variety", "of", "habitats", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "first", "archaea", "identified", "were", "extremophile", "species", "thriving", "in", "severe", "environments", ";", "however", ",", "with", "the", "advanced", "detection", "tools", "and", "molecular", "methods", ",", "archaea", "were", "also", "found", "in", "moderate", "climates", ",", "constituting", "a", "considerable", "portion", "of", "the", "Earth", "'", "s", "microbial", "biomass", "[", "109", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Furthermore", ",", "archaea", "were", "detected", "in", "plants", "[", "110", "]", "and", "in", "animal", "digestive", "tracts", "as", "part", "of", "the", "commensal", "microbiota", "[", "111,112", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Miller", "et", "al.", "discovered", "and", "characterized", "the", "first", "archaeon", "in", "human", "feces", ",", "Methanobrevibacter", "smithii", ",", "over", "35", "years", "ago", "[", "113", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "As", "the", "research", "on", "the", "human", "microbiota", "focused", "almost", "exclusively", "on", "the", "commensal", "bacteria", ",", "the", "insight", "into", "the", "human", "archaeome", "during", "the", "following", "decades", "was", "limited", "to", "only", "three", "archaeons", "identified", "in", "human", "stool", "samples", ":", "M.", "smithii", ",", "[", "113", "]", ",", "Methanosphaera", "stadtmanae", "[", "114", "]", ",", "and", "Methanomassiliicoccus", "luminyensis", "[", "115", "]", ",", "and", "one", "from", "oral", "mucosa", ":", "Methanobrevibacter", "oralis", "[", "116", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Recently", ",", "the", "application", "of", "molecular", "tools", "enabled", "detection", "of", "a", "number", "of", "archaeal", "signatures", "in", "the", "human", "samples", ",", "suggesting", "archaea", "are", "essential", "constituents", "of", "the", "human", "microbiota", "[", "117", "]", ",", "colonizing", "infants", "during", "the", "first", "year", "of", "life", "[", "118", "]", "and", "forming", "distinct", "communities", "across", "the", "human", "body", "[", "2,119", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "majority", "of", "the", "detected", "archaea", "in", "the", "human", "gastrointestinal", "tract", "are", "methane", "producing", "organisms", "(", "methanogens", ")", ",", "which", "possess", "the", "unique", "ability", "to", "respire", "H", "and", "produce", "methane", "as", "the", "main", "metabolic", "product", "under", "anaerobic", "conditions", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "human", "gut", ",", "the", "methanogens", "exist", "in", "a", "syntrophic", "relationship", "with", "bacterial", "species", "." ]
+  }, {
+    "sentence_tokens" : [ "Anaerobic", "bacterial", "fermentation", "results", "in", "the", "generation", "of", "short-chain", "fatty", "acids", "(", "SCFAs", ")", "such", "as", "acetate", ",", "propionate", ",", "and", "butyrate", ",", "as", "well", "as", "carbon", "dioxide", "and", "hydrogen", "gas", "[", "120", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Accumulation", "of", "H", "in", "the", "colon", ",", "however", ",", "inhibits", "bacterial", "energy", "production", "." ]
+  }, {
+    "sentence_tokens" : [ "By", "acting", "as", "a", "hydrogen", "sink", "and", "removing", "hydrogen", "gas", ",", "methanogens", "improve", "bacterial", "fermentation", "efficiency", "and", "allow", "more", "complete", "anaerobic", "degradation", "of", "organic", "material", "[", "120", "]", ",", "thus", "confirming", "archaea", "as", "a", "keystone", "species", "essentially", "involved", "in", "metabolic", "processes", "and", "optimal", "energy", "yield", "of", "the", "entire", "human", "microbiota", "[", "121", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Methanogens", "in", "the", "human", "gastrointestinal", "tract", "account", "for", "up", "to", "10", "%", "of", "all", "gut", "anaerobes", ",", "with", "M.", "smithii", "being", "the", "predominant", "archaeon", ",", "found", "in", "almost", "every", "subject", "[", "122", "]", ",", "possibly", "due", "to", "its", "ability", "to", "establish", "syntrophic", "association", "with", "several", "bacterial", "species", "[", "123", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "M.", "stadtmanae", "and", "M.", "luminyensis", "were", "detected", "in", "30", "%", "and", "4", "%", "of", "subjects", "tested", ",", "respectively", "[", "115,122", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Along", "with", "two", "candidate", "species", "\"", "Candidatus", "Methanomassiliicoccus", "intestinalis", "\"", "and", "\"", "Candidatus", "Methanomethylophilus", "alvus", "\"", ",", "several", "unknown", "members", "of", "the", "orders", "Methanosarcinales", ",", "Methanobacteriales", ",", "Methanococcales", ",", "Methanomicrobiales", ",", "and", "Methanopyrales", "were", "found", "to", "populate", "the", "human", "gut", "[", "124", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Besides", "these", "methanogenic", "archaea", ",", "members", "of", "the", "orders", "Desulfurococcales", ",", "Sulfolobales", ",", "Thermoproteales", ",", "Nitrososphaerales", ",", "and", "Halobacteriales", "have", "also", "been", "detected", "in", "the", "human", "intestine", "[", "124", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Recent", "publication", "utilizing", "archaea", "specific", "methodology", "suggested", "an", "increased", "prevalence", "of", "M.", "stadtmanae", "in", "the", "majority", "of", "human", "samples", ",", "but", "failed", "to", "detect", "any", "nonmethanogenic", "archaeal", "lineages", "[", "112", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "only", "nonmethanogenic", "strains", "that", "were", "successfully", "isolated", "and", "characterized", "from", "the", "human", "gut", "are", "Haloferax", "massiliensis", "and", "Haloferax", "assiliense", ",", "demonstrating", "halophilic", "archaea", "can", "inhabit", "the", "human", "gut", "[", "125,126", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "potential", "role", "of", "archaea", "in", "human", "health", "and", "disease", "is", "a", "controversial", "subject", "." ]
+  }, {
+    "sentence_tokens" : [ "High", "prevalence", "of", "M.", "smithii", "in", "human", "population", ",", "as", "well", "as", "its", "low", "immunogenic", "potential", ",", "suggests", "this", "species", "is", "a", "typical", "commensal", "gut", "microbe", "[", "127,128", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "same", "finding", "was", "reported", "for", "M.", "luminyensis", "[", "129", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "fact", ",", "M.", "luminyensis", "was", "shown", "to", "be", "able", "to", "degrade", "trimethylamine", "(", "TMA", ")", ",", "a", "compound", "associated", "with", "metabolic", "disorders", "such", "as", "trimethylaminuria", "[", "130", "]", ",", "as", "well", "as", "reducing", "trimethylamine-N-oxide", "(", "TMAO", ")", "plasma", "levels", ",", "preventing", "the", "development", "of", "cardiovascular", "and", "chronic", "kidney", "diseases", "[", "131,132", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Thus", ",", "a", "potential", "use", "of", "M.", "luminyensis", "as", "an", "archaeal", "probiotic", ",", "or", "\"", "archaebiotic", "\"", ",", "was", "proposed", "to", "promote", "a", "positive", "effect", "of", "archaea", "on", "human", "health", "[", "133", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "On", "the", "other", "hand", ",", "several", "studies", "suggest", "the", "role", "of", "archaea", "in", "the", "development", "of", "intestinal", "diseases", "." ]
+  }, {
+    "sentence_tokens" : [ "Methane", ",", "the", "end-product", "of", "methanogenesis", ",", "has", "been", "implicated", "in", "slowing", "down", "the", "intestinal", "transit", "resulting", "in", "constipation", "and", "gastrointestinal", "disorders", "[", "134,135", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "a", "population", "with", "irritable", "bowel", "syndrome", "(", "IBS", ")", ",", "the", "subjects", "with", "the", "constipation", "dominant", "disease", "(", "IBS-C", ")", "were", "shown", "to", "have", "a", "higher", "proportion", "of", "methane", "producers", "than", "individuals", "with", "the", "diarrhea", "dominant", "disease", "(", "IBS-D", ")", "[", "135", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "methanogenic", "archaea", "are", "also", "associated", "with", "the", "etiology", "of", "IBD", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "three-fold", "increase", "in", "the", "abundance", "of", "M.", "stadtmanae", ",", "which", "was", "shown", "to", "possess", "high", "immunogenic", "potential", "[", "127", "]", ",", "was", "reported", "in", "IBD", "patients", "when", "compared", "to", "healthy", "individuals", ",", "suggesting", "this", "archaeon", "might", "be", "involved", "in", "pathologic", "conditions", "within", "the", "human", "gut", "[", "138", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Studies", "also", "indicated", "a", "lower", "proportion", "of", "patients", "were", "positive", "for", "methanogens", "in", "their", "gut", "compared", "to", "controls", ",", "primarily", "due", "to", "a", "reduction", "in", "the", "number", "of", "M.", "smithii", "in", "IBD", "subjects", "[", "138,139", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "recent", "report", "found", "significantly", "lower", "M.", "smithii", "levels", "among", "IBD", "patients", "compared", "to", "healthy", "individuals", ",", "with", "the", "levels", "returning", "to", "normal", "values", "in", "disease", "remission", "[", "140", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "To", "conclude", ",", "the", "shift", "in", "archaeal", "populations", "associated", "with", "IBD", "could", "be", "related", "to", "bacterial", "dysbiosis", "and", "alteration", "in", "the", "intestinal", "nutritional", "environment", "(", "i.e", ".,", "reduction", "of", "hydrogen", "gas", "and", "increase", "of", "short-chain", "alcohols", "such", "as", "methanol", ")", ",", "favoring", "methylotrophic", "archaeal", "species", ",", "particularly", "M.", "stadtmanae", ",", "thus", "increasing", "the", "inflammatory", "response", "within", "the", "human", "gut", "[", "141", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "recent", "hypothesis", "on", "the", "role", "of", "archaea", "in", "human", "intestinal", "diseases", "suggests", "the", "butyric", "acid", ",", "a", "short-chain", "fatty", "acid", "(", "SCFA", ")", ",", "as", "the", "essential", "component", "in", "the", "regulation", "of", "syntrophic", "archaea", "and", "bacteria", "biofilms", "in", "the", "gut", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "archaeal", "overgrowth", "and", "increased", "removal", "of", "SCFA", "from", "the", "biofilms", "results", "in", "dysbiosis", ",", "triggering", "bacteria", "to", "become", "endoparasitic", "and", "enter", "intestinal", "epithelial", "tissues", ",", "which", "in", "turn", "leads", "to", "inflammatory", "processes", "in", "the", "human", "gut", "[", "142", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "\"", "syntrophic", "imbalance", "hypothesis", "\"", "is", "supported", "by", "the", "fact", "that", "methanoarchaea", "overgrowth", "is", "implicated", "in", "human", "diseases", ",", "including", "the", "IBS", "[", "143", "]", "and", "the", "levels", "of", "butyric", "acid", "are", "shown", "to", "decline", "in", "patients", "with", "IBS", "and", "IBD", "[", "144,145", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Moreover", ",", "one", "of", "the", "suggested", "treatments", "for", "intestinal", "disorders", "proposes", "utilizing", "butyrate", "producing", "bacteria", "supplements", "to", "enhance", "intestinal", "epithelial", "barrier", "integrity", "[", "146", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "addition", ",", "the", "ryzophagy", "cycle", "in", "plant", "and", "symbiotic", "bacteria", "systems", "identified", "butyric", "acid", "as", "a", "signal", "molecule", "for", "maintenance", "of", "bacteria", "in", "biofilms", ",", "with", "the", "low", "concentrations", "of", "butyric", "acid", "inducing", "bacterial", "endoparasitism", "[", "147", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Although", "the", "research", "on", "the", "commensal", "viral", "and", "fungal", "constituents", "of", "human", "microbiota", "gained", "momentum", "recently", ",", "most", "microbiota", "studies", "still", "fail", "to", "include", "the", "archaea", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "studies", "on", "human", "archaeome", "usually", "employ", "either", "cultivation", "or", "qPCR", "methodology", "[", "118,119,148", "]", ",", "while", "16S", "rRNA", "gene", "based", "research", "often", "uses", "bacterial", "targeted", "protocols", "and", "universal", "primer", "pairs", "to", "cover", "the", "broadest", "prokaryotic", "diversity", "[", "119,149", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "low", "abundance", "of", "archaeal", "DNA", "in", "human", "samples", ",", "inefficient", "cell", "lysis", "and", "DNA", "extraction", ",", "failure", "of", "the", "universal", "primers", "to", "fully", "detect", "archaeal", "signatures", ",", "as", "well", "as", "incomplete", "16S", "rRNA", "gene", "databases", ",", "all", "represent", "methodological", "pitfalls", "of", "human", "archaeome", "analysis", "[", "112,150,151", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "As", "archaea", "feature", "fundamentally", "different", "biology", "compared", "to", "their", "bacterial", "and", "eukaryotic", "counterparts", ",", "a", "specific", "methodology", "is", "required", "to", "investigate", "the", "human", "archaeome", "." ]
+  }, {
+    "sentence_tokens" : [ "Pausan", "et", "al.", "recently", "proposed", "an", "optimized", "detection", "method", "using", "specific", "16S", "rRNA", "gene", "targeting", "primer", "pair", "combinations", "for", "NGS", "amplicon", "sequencing", ",", "as", "well", "as", "optimized", "qPCR", "protocols", "for", "quantifying", "the", "archaeal", "16S", "rRNA", "gene", "to", "evaluate", "the", "bacteria", "and", "archaea", "ratios", "[", "152", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "proposed", "approach", "might", "prove", "useful", "as", "a", "standard", "operating", "procedure", "for", "detecting", "the", "full", "spectrum", "of", "archaeal", "diversity", "in", "human", "samples.The", "archaea", "are", "a", "keystone", "species", "in", "the", "human", "microbiota", "with", "a", "profound", "impact", "on", "all", "aspects", "of", "human", "life", "." ]
+  }, {
+    "sentence_tokens" : [ "Although", "our", "current", "knowledge", "on", "the", "archaea", "is", "still", "mostly", "based", "on", "methodological", "concepts", "highly", "biased", "toward", "bacterial", "commensals", ",", "improved", "detection", "methodologies", "should", "enable", "future", "studies", "to", "further", "identify", "new", "archaeal", "taxa", ",", "assess", "their", "impact", "on", "the", "composition", "and", "function", "of", "the", "entire", "gut", "microbial", "community", ",", "as", "well", "as", "their", "contribution", "to", "human", "health", "or", "disease", "." ]
+  }, {
+    "sentence_tokens" : [ "5", "." ]
+  }, {
+    "sentence_tokens" : [ "Eukaryotic", "Parasites", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "pathogenic", "potential", "of", "commonly", "encountered", "intestinal", "parasites", "is", "well", "established", "." ]
+  }, {
+    "sentence_tokens" : [ "Mounting", "research", "evidence", ",", "however", ",", "suggests", "that", "instead", "of", "causing", "disease", ",", "a", "significant", "proportion", "of", "these", "organisms", "can", "be", "linked", "to", "maintaining", "intestinal", "homeostasis", "[", "4", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Eukaryotic", "parasites", "evolved", "to", "cause", "minimal", "harm", "to", "their", "human", "hosts", "[", "153", "]", ",", "and", "some", "protozoan", "species", "can", "be", "considered", "a", "part", "of", "the", "human", "microbiota", "." ]
+  }, {
+    "sentence_tokens" : [ "Hamad", "et", "al.", "recently", "employed", "classical", "and", "molecular", "parasitological", "diagnostic", "methods", "to", "confirm", "the", "presence", "of", "over", "15", "different", "genera", "of", "protozoa", "(", "amoebozoans", ",", "flagellates", ",", "ciliates", ",", "stramenopiles", ",", "and", "apicomplexans", ")", "known", "to", "parasitize", ",", "but", "also", "commensalize", "the", "human", "gastrointestinal", "tract", "[", "154", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "role", "of", "protozoan", "parasites", "in", "the", "development", "and", "progression", "of", "IBD", "has", "been", "studied", "by", "several", "research", "groups", ",", "with", "the", "emphasis", "on", "Blastocystis", "hominis", "[", "155,156", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "B.", "hominis", "is", "a", "common", "protozoan", "parasite", "in", "the", "gut", "found", "in", "both", "humans", "and", "animals", ",", "transmitted", "by", "the", "fecal", "-", "oral", "route", "and", "associated", "with", "various", "gastrointestinal", "disorders", "." ]
+  }, {
+    "sentence_tokens" : [ "Initial", "studies", "reported", "a", "significantly", "increased", "frequency", "of", "protozoa", "infection", ",", "with", "a", "high", "rate", "of", "B.", "hominis", ",", "in", "UC", "patients", "with", "persistent", "and", "intermittent", "disease", "activity", "as", "compared", "to", "the", "remission", "states", "[", "157", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Similarly", ",", "another", "study", "demonstrated", "B.", "hominis", "infection", "was", "associated", "with", "more", "severe", "symptoms", "and", "decreased", "disease", "treatment", "efficiency", "in", "patients", "with", "refractory", "ulcerative", "colitis", "[", "158", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "more", "recent", "study", "revealed", "specific", "isolates", "of", "Blastocystis", "that", "may", "exert", "pathogenic", "effects", "by", "disrupting", "gut", "microbiota", "[", "159", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "finding", "was", "in", "line", "with", "epidemiological", "data", "that", "linked", "virulent", "subtypes", "of", "B.", "hominis", "with", "intestinal", "dysbiosis", "[", "160", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "contrasting", "results", "on", "the", "role", "of", "B.", "hominis", "in", "IBD", "were", "also", "reported", "." ]
+  }, {
+    "sentence_tokens" : [ "Studies", "revealed", "a", "lower", "burden", "of", "B.", "hominis", "(", "and", "Dientamoeba", "fragilis", ")", "in", "patients", "with", "UC", "when", "compared", "to", "the", "healthy", "individuals", "[", "161,162", "]", ",", "while", "another", "report", "demonstrated", "a", "lower", "prevalence", "of", "B.", "hominis", "in", "patients", "with", "active", "UC", "compared", "to", "those", "in", "remission", "[", "163", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Additionally", ",", "Blastocystis", "positive", "patients", "exhibited", "a", "higher", "abundance", "of", "Clostridia", "class", ",", "Ruminococcaceae", ",", "and", "Prevotellaceae", "families", ",", "as", "well", "as", "Faecalibacterium", "and", "Roseburia", "butyrate", "producing", "bacterial", "genera", ",", "while", "Enterobacteriaceae", "were", "enriched", "in", "Blastocystis-free", "patients", ",", "suggesting", "B.", "hominis", "colonization", "was", "not", "associated", "with", "the", "colitis", "specific", "dysbiosis", "but", "with", "an", "increased", "diversity", "of", "intestinal", "bacterial", "microbiota", "[", "164", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "recent", "study", "found", "no", "difference", "in", "B.", "hominis", "prevalence", "between", "the", "active", "and", "remission", "phases", "of", "the", "disease", ",", "suggesting", "that", "B.", "hominis", "does", "not", "play", "a", "role", "in", "UC", "flare-up", "[", "165", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Moreover", ",", "this", "study", "reported", "a", "higher", "abundance", "of", "B.", "hominis", "in", "the", "healthy", "group", "than", "in", "patients", "with", "UC", ",", "as", "well", "as", "milder", "disease", "symptoms", "for", "majority", "of", "Blastocystis", "positive", "UC", "patients", "." ]
+  }, {
+    "sentence_tokens" : [ "Similar", "findings", "were", "published", "for", "IBS", "as", "well", "[", "166,167", "]", ",", "thus", "implying", "B.", "hominis", "is", "a", "common", "constituent", "of", "healthy", "human", "microbiota", "exerting", "a", "protective", "role", "in", "gastrointestinal", "diseases", "[", "156", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Due", "to", "the", "proposed", "mutualistic", "interaction", "of", "Blastocystis", "and", "its", "host", ",", "some", "authors", "even", "suggested", "using", "the", "protist", "in", "a", "manner", "similar", "to", "that", "described", "for", "some", "intestinal", "helminths", "[", "168", "]", ",", "in", "order", "to", "elicit", "a", "beneficial", "immunomodulatory", "response", "in", "patients", "with", "IBD", "[", "169", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Additional", "confirmation", "that", "B.", "hominis", "could", "be", "a", "commensal", "microorganism", "comes", "from", "a", "study", "in", "which", "patients", "with", "recurrent", "Clostridium", "difficile", "infections", "(", "rCDI", ")", "were", "treated", "using", "fecal", "microbiota", "transplantation", "(", "FMT", ")", "[", "170", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Although", "Blastocystis", "positive", "fecal", "samples", "were", "previously", "excluded", "from", "FMT", "by", "many", "stool", "banks", ",", "resulting", "in", "a", "high", "rate", "(", "30", "%", "-", "50", "%", ")", "of", "donor", "exclusion", ",", "this", "study", "reported", "no", "adverse", "gastrointestinal", "symptoms", "nor", "any", "significant", "effect", "on", "the", "treatment", "outcome", "when", "Blastocystis", "positive", "stool", "was", "used", "for", "the", "procedure.Many", "protozoan", "parasites", ",", "however", ",", "are", "pathogenic", "species", "and", "can", "cause", "intestinal", "inflammation", "and", "disease", "." ]
+  }, {
+    "sentence_tokens" : [ "Other", "parasites", "can", "complicate", "the", "course", "of", "IBD", ",", "i.e", ".,", "cryptosporidiosis", "leads", "to", "increased", "hospitalization", "in", "children", "with", "either", "UC", "or", "CD", "[", "173", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Considering", "the", "latter", ",", "an", "association", "between", "Cryptosporidium", "parvum", "infection", "and", "gut", "dysbiosis", "(", "most", "notably", "perturbations", "of", "Bacteroidetes", "and", "Firmicutes", "ratio", "linked", "to", "chronic", "inflammatory", "processes", ")", "has", "been", "demonstrated", "in", "animal", "models", "[", "174", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "On", "the", "other", "hand", ",", "the", "presence", "of", "the", "Entamoeba", "spp.", "(", "excluding", "the", "pathogenic", "E.", "histolytica", ")", "has", "been", "linked", "to", "increased", "bacterial", "diversity", "in", "the", "gut", ",", "as", "well", "as", "with", "the", "changes", "in", "the", "composition", "of", "the", "gut", "microbiome", "--", "more", "specifically", ",", "Entamoeba", "colonization", "was", "negatively", "correlated", "with", "inflammatory", "diseases", "and", "autoimmune", "disorders", "[", "175", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Finally", ",", "one", "of", "the", "major", "issues", "that", "hampers", "further", "exploration", "of", "the", "relationship", "between", "protozoan", "parasites", "and", "other", "microbiota", "is", "the", "deficiency", "of", "genomic", "data", "on", "intestinal", "protozoa", "and", "other", "parasites", "[", "4", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "While", "genomic", "data", "is", "available", "in", "public", "databases", "for", "Blastocystis", "and", "Dientamoeba", ",", "there", "is", "scant", "ribosomal", "DNA", "sequences", "for", "some", "other", "gut", "parasites", ",", "even", "the", "common", "ones", "such", "as", "Entamoeba", "coli", "[", "4,176", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "addition", ",", "there", "is", "extensive", "genetic", "diversity", "in", "some", "common", "gut", "parasites", ",", "thus", "the", "associations", "between", "dysbiosis", "and", "various", "subtypes", "or", "genotypes", "are", "still", "not", "elucidated", "." ]
+  }, {
+    "sentence_tokens" : [ "6", "." ]
+  }, {
+    "sentence_tokens" : [ "Conclusions", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "significant", "role", "of", "non", "bacterial", "microbiota", "in", "maintaining", "human", "homeostasis", ",", "as", "well", "as", "in", "disease", "etiology", ",", "is", "slowly", "unveiling", "(", "Table", "1", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "impact", "of", "these", "diverse", "fungal", ",", "viral", ",", "archaeal", ",", "and", "protozoan", "communities", "on", "human", "health", "needs", "to", "be", "determined", "in", "more", "detail", "in", "order", "to", "expand", "the", "current", "\"", "bacteriocentric", "\"", "view", "of", "human", "microbiota", "and", "provide", "more", "holistic", "understanding", "of", "the", "human", "superorganism.To", "achieve", "this", "task", ",", "two", "important", "prerequisites", "are", "essential", ":", "(", "1", ")", "expanding", "fungal", ",", "viral", ",", "archaeal", ",", "and", "protozoan", "reference", "genomes", "in", "the", "currently", "available", "databases", "for", "reliable", "identification", "of", "those", "microorganisms", ";", "(", "2", ")", "establishing", "uniform", "methods", "of", "detection", "for", "each", "non", "bacterial", "commensal", "population", "to", "ensure", "consistent", "and", "comparable", "evaluation", "of", "microbial", "abundance", "in", "different", "human", "body", "sites", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "improved", "tools", "and", "the", "newly", "generated", "data", "would", "provide", "deeper", "insight", "on", "commensal", "non", "bacterial", "communities", "and", "the", "possibilities", "of", "their", "exploitation", "in", "promoting", "human", "health", "and", "ameliorating", "disease", "." ]
+  }, {
+    "sentence_tokens" : [ "Although", "microbiome", "directed", "therapy", "is", "still", "in", "its", "infancy", ",", "studies", "conducted", "thus", "far", "suggest", "that", "direct", "or", "indirect", "alterations", "in", "human", "virome", "and", "mycobiome", ",", "as", "well", "as", "changes", "in", "archaea", "and", "eukaryotic", "parasites", "may", "improve", "health", "outcomes", "in", "inflammatory", "diseases", "such", "as", "IBD.However", ",", "the", "association", "of", "commensal", "fungi", ",", "viruses", ",", "archaea", ",", "and", "eukaryotic", "protozoa", "with", "the", "host", "in", "healthy", "and", "diseased", "states", ",", "as", "well", "as", "their", "interactions", "with", "each", "other", ",", "reflects", "a", "rather", "intricate", "nexus", "that", "transcends", "a", "mere", "\"", "cause", "and", "effect", "\"", "relationship", "." ]
+  }, {
+    "sentence_tokens" : [ "Experimental", "approaches", "should", ",", "therefore", ",", "be", "tailored", "to", "pinpoint", "where", "and", "how", "exactly", "these", "constituents", "of", "human", "microbiota", "play", "a", "role", "(", "i.e", ".,", "whether", "at", "the", "disease", "onset", ",", "during", "early", "stages", ",", "or", "during", "active", "or", "latent", "disease", ")", "and", "account", "for", "a", "plethora", "of", "confounding", "factors", "which", "are", "currently", "pervasive", "in", "most", "of", "the", "studies", "." ]
+  }, {
+    "sentence_tokens" : [ "Although", "future", "research", "venues", "are", "paved", "with", "colossal", "challenges", ",", "the", "investments", "may", "pay", "off", ",", "as", "future", "applications", "of", "microbiome", "based", "diagnosis", ",", "prognosis", ",", "treatment", ",", "monitoring", ",", "treatment", ",", "and", "prevention", "of", "the", "disease", "holds", "promise", "for", "a", "paradigm", "shift", "in", "translational", "and", "clinical", "medicine", "." ]
+  } ]
+}
