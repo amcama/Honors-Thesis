@@ -1,37 +1,128 @@
-[ {
-  "sentence_tokens" : [ "AEEC", "is", "further", "identified", "as", "either", "LEE", "positive", "Shiga", "toxin", "producing", "E.", "coli", "(", "STEC", ")", "or", "enteropathogenic", "E.", "coli", "(", "EPEC", ")", "." ],
-  "event_indices" : [ 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 6, 7 ],
-  "controlled_indices" : [ 14, 15 ],
-  "trigger_indices" : [ 10, 11 ],
-  "rule_name" : "Positive_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "AEEC", "is", "further", "identified", "as", "either", "LEE", "positive", "Shiga", "toxin", "producing", "E.", "coli", "(", "STEC", ")", "or", "enteropathogenic", "E.", "coli", "(", "EPEC", ")", "." ],
-  "event_indices" : [ 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 6, 7 ],
-  "controlled_indices" : [ 21, 22 ],
-  "trigger_indices" : [ 10, 11 ],
-  "rule_name" : "Positive_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "We", "report", "here", "the", "draft", "genome", "sequences", "of", "nine", "enteropathogenic", "Escherichia", "coli", "(", "EPEC", ")", "strains", "isolated", "from", "children", "in", "Kenya", "who", "died", "during", "hospitalization", "with", "diarrhea", "." ],
-  "entity_one_indices" : [ 26, 27 ],
-  "entity_two_indices" : [ 13, 14 ]
-}, {
-  "sentence_tokens" : [ "The", "nine", "E.", "coli", "isolates", "described", "here", "are", "LEE", "positive", ",", "stx", "negative", ",", "and", "bfp", "positive", "and", "are", "therefore", "classified", "as", "typical", "EPEC", "based", "on", "their", "virulence", "factor", "content.The", "genomic", "DNA", "for", "sequencing", "was", "isolated", "from", "an", "overnight", "culture", "of", "each", "isolate", "using", "the", "Sigma", "GenElute", "kit", "(", "Sigma-Aldrich", ")", "." ],
-  "entity_one_indices" : [ 27, 28, 29 ],
-  "entity_two_indices" : [ 15, 16 ]
-}, {
-  "sentence_tokens" : [ "The", "genome", "assemblies", "contained", "an", "average", "of", "181", "contigs", "per", "isolate", "(", "range", ",", "117", "to", "283", ")", ",", "with", "an", "average", "G+", "C", "content", "of", "50.4", "%", "(", "range", ",", "50.3", "to", "50.6", "%", ")", "and", "an", "average", "genome", "size", "of", "5.2", "Mb", "(", "range", ",", "5.0", "to", "5.4", "Mb", ")", "." ],
-  "entity_one_indices" : [ 50, 51 ],
-  "entity_two_indices" : [ 43, 44 ]
-}, {
-  "sentence_tokens" : [ "Phylogenomic", "analysis", "of", "the", "whole", "genomes", "demonstrated", "that", "these", "isolates", "occur", "in", "two", "E.", "coli", "phylogroups", "(", "B1", "and", "B2", ")", "(", "8,", "9", ")", "and", "occupy", "four", "EPEC", "phylogenomic", "lineages", "." ],
-  "entity_one_indices" : [ 19, 20 ],
-  "entity_two_indices" : [ 17, 18 ]
-} ]
+{
+  "regulations" : [ {
+    "sentence_tokens" : [ "AEEC", "is", "further", "identified", "as", "either", "LEE", "positive", "Shiga", "toxin", "producing", "E.", "coli", "(", "STEC", ")", "or", "enteropathogenic", "E.", "coli", "(", "EPEC", ")", "." ],
+    "event_indices" : [ 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 6, 7 ],
+    "controlled_indices" : [ 14, 15 ],
+    "trigger_indices" : [ 10, 11 ],
+    "rule_name" : "Positive_activation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "AEEC", "is", "further", "identified", "as", "either", "LEE", "positive", "Shiga", "toxin", "producing", "E.", "coli", "(", "STEC", ")", "or", "enteropathogenic", "E.", "coli", "(", "EPEC", ")", "." ],
+    "event_indices" : [ 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 6, 7 ],
+    "controlled_indices" : [ 21, 22 ],
+    "trigger_indices" : [ 10, 11 ],
+    "rule_name" : "Positive_activation_syntax_1_verb",
+    "rule" : null
+  } ],
+  "hardInstances" : [ {
+    "sentence_tokens" : [ "AEEC", "is", "further", "identified", "as", "either", "LEE", "positive", "Shiga", "toxin", "producing", "E.", "coli", "(", "STEC", ")", "or", "enteropathogenic", "E.", "coli", "(", "EPEC", ")", "." ],
+    "entities_indices" : [ [ 8, 9, 10, 11, 12, 13 ], [ 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "AEEC", "is", "further", "identified", "as", "either", "LEE", "positive", "Shiga", "toxin", "producing", "E.", "coli", "(", "STEC", ")", "or", "enteropathogenic", "E.", "coli", "(", "EPEC", ")", "." ],
+    "entities_indices" : [ [ 8, 9, 10, 11, 12, 13 ], [ 14, 15 ] ]
+  } ],
+  "withoutRegulations" : [ {
+    "sentence_tokens" : [ "Attaching", "and", "effacing", "Escherichia", "coli", "(", "AEEC", ")", "is", "characterized", "by", "the", "presence", "of", "the", "locus", "of", "enterocyte", "effacement", "(", "LEE", ")", "pathogenicity", "region", "that", "encodes", "a", "type", "III", "secretion", "system", "involved", "in", "pathogenesis", "(", "1", "-", "3", ")", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 27, 28 ], [ 33, 34 ] ]
+  }, {
+    "sentence_tokens" : [ "JICI00000000", ",", "JICH00000000", ",", "JICG00000000", ",", "JICF00000000", ",", "JICE00000000", ",", "JICD00000000", ",", "JICC00000000", ",", "JICB00000000", ",", "and", "JICA00000000", ",", "for", "isolates", "S6966", ",", "S6995", ",", "S7005", ",", "S7438", ",", "S6400", ",", "S7380", ",", "S6662", ",", "S5274", ",", "and", "S6685", ",", "respectively", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 2, 3 ], [ 4, 5 ], [ 6, 7 ], [ 8, 9 ], [ 10, 11 ], [ 12, 13 ], [ 14, 15 ], [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "These", "nine", "isolates", "were", "isolated", "from", "children", "in", "Kenya", "who", "died", "during", "hospitalization", "with", "diarrhea", "(", "7", ")", "." ],
+    "entities_indices" : [ [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "five", "EPEC", "isolates", "identified", "in", "phylogroup", "B1", ",", "S7005", "(", "O126", ")", ",", "S6685", "(", "O114", ")", ",", "S5274", "(", "O111", ")", ",", "S7380", "(", "serogroup", "unknown", ")", ",", "and", "S6662", "(", "O111", ")", ",", "were", "all", "present", "in", "the", "EPEC2", "phylogenomic", "lineage", ",", "which", "contains", "the", "EPEC", "prototype", "isolate", "B171", "(", "12", ")", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 11, 12 ], [ 16, 17 ], [ 21, 22 ], [ 33, 34 ], [ 41, 42 ], [ 48, 49, 50, 51, 52 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "report", "here", "the", "draft", "genome", "sequences", "of", "nine", "enteropathogenic", "Escherichia", "coli", "(", "EPEC", ")", "strains", "isolated", "from", "children", "in", "Kenya", "who", "died", "during", "hospitalization", "with", "diarrhea", "." ],
+    "entities_indices" : [ [ 13, 14 ], [ 26, 27 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "nine", "E.", "coli", "isolates", "described", "here", "are", "LEE", "positive", ",", "stx", "negative", ",", "and", "bfp", "positive", "and", "are", "therefore", "classified", "as", "typical", "EPEC", "based", "on", "their", "virulence", "factor", "content.The", "genomic", "DNA", "for", "sequencing", "was", "isolated", "from", "an", "overnight", "culture", "of", "each", "isolate", "using", "the", "Sigma", "GenElute", "kit", "(", "Sigma-Aldrich", ")", "." ],
+    "entities_indices" : [ [ 15, 16 ], [ 27, 28, 29 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "genome", "assemblies", "contained", "an", "average", "of", "181", "contigs", "per", "isolate", "(", "range", ",", "117", "to", "283", ")", ",", "with", "an", "average", "G+", "C", "content", "of", "50.4", "%", "(", "range", ",", "50.3", "to", "50.6", "%", ")", "and", "an", "average", "genome", "size", "of", "5.2", "Mb", "(", "range", ",", "5.0", "to", "5.4", "Mb", ")", "." ],
+    "entities_indices" : [ [ 43, 44 ], [ 50, 51 ] ]
+  }, {
+    "sentence_tokens" : [ "Each", "of", "the", "isolates", "possess", "the", "EPEC", "adherence", "factor", "(", "EAF", ")", "plasmid", "encoding", "the", "bundle", "forming", "pilus", ",", "which", "is", "characteristic", "of", "EPEC", "." ],
+    "entities_indices" : [ [ 6, 7, 8, 9 ], [ 10, 11 ], [ 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "Among", "the", "four", "EPEC", "isolates", "in", "phylogroup", "B2", "was", "isolate", "S6995", "(", "O127", ")", ",", "which", "was", "identified", "in", "the", "EPEC1", "phylogenomic", "lineage", ",", "with", "the", "most", "widely", "studied", "prototype", "EPEC", "isolate", "E2348/69", "(", "10", ")", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 12, 13 ], [ 20, 21 ], [ 29, 30, 31, 32, 33 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "Illumina", "reads", "generated", "for", "each", "isolate", "were", "assembled", "de", "novo", "using", "the", "Velvet", "assembly", "program", "(", "6", ")", ",", "with", "k-mer", "values", "determined", "using", "VelvetOptimiser", "version", "2.1.4", "(", "http://bioinformatics.net.au/software.velvetoptimiser.shtml", ")", "." ],
+    "entities_indices" : [ [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "EPEC", "strains", "contain", "the", "LEE", "region", "but", "not", "the", "Shiga", "toxin", "encoding", "phage", ",", "and", "they", "are", "considered", "typical", "EPEC", "when", "they", "possess", "the", "bundle", "forming", "pilus", "(", "BFP", ")", "encoded", "by", "the", "EPEC", "adherence", "factor", "(", "EAF", ")", "plasmid", "(", "1", ",", "4", ",", "5", ")", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 4, 5, 6 ], [ 9, 10, 11 ], [ 28, 29 ], [ 33, 34, 35, 36 ], [ 37, 38 ] ]
+  }, {
+    "sentence_tokens" : [ "Also", "from", "phylogroup", "B2", "was", "EPEC", "isolate", "S6400", "(", "O119", ")", ",", "which", "was", "identified", "in", "the", "recently", "described", "EPEC4", "phylogenomic", "lineage", "(", "11", ")", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 5, 6 ], [ 9, 10 ], [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "Phylogenomic", "analysis", "of", "the", "whole", "genomes", "demonstrated", "that", "these", "isolates", "occur", "in", "two", "E.", "coli", "phylogroups", "(", "B1", "and", "B2", ")", "(", "8,", "9", ")", "and", "occupy", "four", "EPEC", "phylogenomic", "lineages", "." ],
+    "entities_indices" : [ [ 17, 18 ], [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "remaining", "two", "EPEC", "isolates", "identified", "in", "phylogroup", "B2", ",", "S6966", "(", "O53", ")", "and", "S7438", "(", "O55", ")", ",", "were", "present", "in", "unassigned", "phylogenomic", "lineages", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 12, 13 ], [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "GENOME", "ANNOUNCEMENT", "." ],
+    "entities_indices" : [ [ 0, 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "These", "EPEC", "isolates", "have", "diverse", "serogroups", "(", "O126", ",", "O119", ",", "O111", ",", "O53", ",", "O127", ",", "O55", ",", "and", "O114", ")", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 9, 10 ], [ 11, 12 ], [ 13, 14 ], [ 15, 16 ], [ 17, 18 ], [ 20, 21 ] ]
+  } ],
+  "emptySentences" : [ {
+    "sentence_tokens" : [ "Draft", "Genome", "Sequences", "of", "Nine", "Enteropathogenic", "Escherichia", "coli", "Strains", "from", "Kenya", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "report", "here", "the", "draft", "genome", "sequences", "of", "nine", "enteropathogenic", "Escherichia", "coli", "(", "EPEC", ")", "strains", "isolated", "from", "children", "in", "Kenya", "who", "died", "during", "hospitalization", "with", "diarrhea", "." ]
+  }, {
+    "sentence_tokens" : [ "Each", "of", "the", "isolates", "possess", "the", "EPEC", "adherence", "factor", "(", "EAF", ")", "plasmid", "encoding", "the", "bundle", "forming", "pilus", ",", "which", "is", "characteristic", "of", "EPEC", "." ]
+  }, {
+    "sentence_tokens" : [ "These", "isolates", "represent", "diverse", "serogroups", "and", "EPEC", "phylogenomic", "lineages", "." ]
+  }, {
+    "sentence_tokens" : [ "GENOME", "ANNOUNCEMENT", "." ]
+  }, {
+    "sentence_tokens" : [ "Attaching", "and", "effacing", "Escherichia", "coli", "(", "AEEC", ")", "is", "characterized", "by", "the", "presence", "of", "the", "locus", "of", "enterocyte", "effacement", "(", "LEE", ")", "pathogenicity", "region", "that", "encodes", "a", "type", "III", "secretion", "system", "involved", "in", "pathogenesis", "(", "1", "-", "3", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "EPEC", "strains", "contain", "the", "LEE", "region", "but", "not", "the", "Shiga", "toxin", "encoding", "phage", ",", "and", "they", "are", "considered", "typical", "EPEC", "when", "they", "possess", "the", "bundle", "forming", "pilus", "(", "BFP", ")", "encoded", "by", "the", "EPEC", "adherence", "factor", "(", "EAF", ")", "plasmid", "(", "1", ",", "4", ",", "5", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "contrast", ",", "LEE", "positive", "stx", "negative", "bfp", "negative", "E.", "coli", "strains", "are", "considered", "atypical", "EPEC", "(", "4", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "nine", "E.", "coli", "isolates", "described", "here", "are", "LEE", "positive", ",", "stx", "negative", ",", "and", "bfp", "positive", "and", "are", "therefore", "classified", "as", "typical", "EPEC", "based", "on", "their", "virulence", "factor", "content.The", "genomic", "DNA", "for", "sequencing", "was", "isolated", "from", "an", "overnight", "culture", "of", "each", "isolate", "using", "the", "Sigma", "GenElute", "kit", "(", "Sigma-Aldrich", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Genome", "sequencing", "was", "performed", "at", "the", "University", "of", "Maryland", "School", "of", "Medicine", ",", "Institute", "for", "Genome", "Sciences", ",", "at", "the", "Genome", "Resource", "Center", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "genome", "sequences", "were", "generated", "using", "paired-end", "libraries", "with", "300-bp", "inserts", "on", "the", "Illumina", "HiSeq", "2000", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "Illumina", "reads", "generated", "for", "each", "isolate", "were", "assembled", "de", "novo", "using", "the", "Velvet", "assembly", "program", "(", "6", ")", ",", "with", "k-mer", "values", "determined", "using", "VelvetOptimiser", "version", "2.1.4", "(", "http://bioinformatics.net.au/software.velvetoptimiser.shtml", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "genome", "assemblies", "contained", "an", "average", "of", "181", "contigs", "per", "isolate", "(", "range", ",", "117", "to", "283", ")", ",", "with", "an", "average", "G+", "C", "content", "of", "50.4", "%", "(", "range", ",", "50.3", "to", "50.6", "%", ")", "and", "an", "average", "genome", "size", "of", "5.2", "Mb", "(", "range", ",", "5.0", "to", "5.4", "Mb", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "These", "nine", "isolates", "were", "isolated", "from", "children", "in", "Kenya", "who", "died", "during", "hospitalization", "with", "diarrhea", "(", "7", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "These", "EPEC", "isolates", "have", "diverse", "serogroups", "(", "O126", ",", "O119", ",", "O111", ",", "O53", ",", "O127", ",", "O55", ",", "and", "O114", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Phylogenomic", "analysis", "of", "the", "whole", "genomes", "demonstrated", "that", "these", "isolates", "occur", "in", "two", "E.", "coli", "phylogroups", "(", "B1", "and", "B2", ")", "(", "8,", "9", ")", "and", "occupy", "four", "EPEC", "phylogenomic", "lineages", "." ]
+  }, {
+    "sentence_tokens" : [ "Among", "the", "four", "EPEC", "isolates", "in", "phylogroup", "B2", "was", "isolate", "S6995", "(", "O127", ")", ",", "which", "was", "identified", "in", "the", "EPEC1", "phylogenomic", "lineage", ",", "with", "the", "most", "widely", "studied", "prototype", "EPEC", "isolate", "E2348/69", "(", "10", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Also", "from", "phylogroup", "B2", "was", "EPEC", "isolate", "S6400", "(", "O119", ")", ",", "which", "was", "identified", "in", "the", "recently", "described", "EPEC4", "phylogenomic", "lineage", "(", "11", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "remaining", "two", "EPEC", "isolates", "identified", "in", "phylogroup", "B2", ",", "S6966", "(", "O53", ")", "and", "S7438", "(", "O55", ")", ",", "were", "present", "in", "unassigned", "phylogenomic", "lineages", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "five", "EPEC", "isolates", "identified", "in", "phylogroup", "B1", ",", "S7005", "(", "O126", ")", ",", "S6685", "(", "O114", ")", ",", "S5274", "(", "O111", ")", ",", "S7380", "(", "serogroup", "unknown", ")", ",", "and", "S6662", "(", "O111", ")", ",", "were", "all", "present", "in", "the", "EPEC2", "phylogenomic", "lineage", ",", "which", "contains", "the", "EPEC", "prototype", "isolate", "B171", "(", "12", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "genome", "sequencing", "of", "these", "nine", "EPEC", "isolates", "demonstrates", "that", "the", "EPEC", "isolates", "associated", "with", "diarrheal", "illness", "of", "children", "in", "Kenya", "exhibit", "considerable", "genomic", "diversity", "that", "was", "not", "previously", "appreciated", "." ]
+  }, {
+    "sentence_tokens" : [ "Nucleotide", "sequence", "accession", "numbers", ".." ]
+  }, {
+    "sentence_tokens" : [ "The", "genome", "assemblies", "have", "been", "deposited", "at", "DDBJ/EMBL/GenBank", "with", "accession", "no", "." ]
+  }, {
+    "sentence_tokens" : [ "JICI00000000", ",", "JICH00000000", ",", "JICG00000000", ",", "JICF00000000", ",", "JICE00000000", ",", "JICD00000000", ",", "JICC00000000", ",", "JICB00000000", ",", "and", "JICA00000000", ",", "for", "isolates", "S6966", ",", "S6995", ",", "S7005", ",", "S7438", ",", "S6400", ",", "S7380", ",", "S6662", ",", "S5274", ",", "and", "S6685", ",", "respectively", "." ]
+  } ]
+}

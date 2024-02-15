@@ -1,121 +1,348 @@
-[ {
-  "sentence_tokens" : [ "ATP1A2", "gene", "mutation", "has", "been", "indicated", "to", "cause", "alternating", "hemiplegia", "of", "childhood", "(", "AHC", ")", ";", "however", ",", "limited", "evidence", "supports", "this", "relationship", "so", "far", "." ],
-  "event_indices" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 0, 1 ],
-  "controlled_indices" : [ 9, 10 ],
-  "trigger_indices" : [ 7, 8 ],
-  "rule_name" : "Positive_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Pathogenic", "variants", "in", "ATP1A2", "are", "known", "to", "cause", "AHC", "type", "1", "(", "OMIM", "#", "104290", ")", ",", "but", "only", "a", "very", "limited", "number", "of", "cases", "have", "been", "reported", "[", "4", "-", "6", "]", ";", "thus", ",", "the", "gene", "(", "ATP1A2", ")-disease", "(", "AHC", ")", "relationship", "is", "\"", "Limited", "\"", "according", "to", "the", "ClinGen", "gene", "curation", "protocol", "(", "https://clinicalgenome.org/docs/summary-of-updates-to-the-clingen-gene-clinical-validity-curation-sop-version-7/", ")", "." ],
-  "event_indices" : [ 3, 4, 5, 6, 7, 8, 9, 10 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 3, 4 ],
-  "controlled_indices" : [ 8, 9, 10 ],
-  "trigger_indices" : [ 7, 8 ],
-  "rule_name" : "Positive_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Pathogenic", "variants", "in", "ATP1A2", "are", "known", "to", "cause", "AHC", "type", "1", "(", "OMIM", "#", "104290", ")", ",", "but", "only", "a", "very", "limited", "number", "of", "cases", "have", "been", "reported", "[", "4", "-", "6", "]", ";", "thus", ",", "the", "gene", "(", "ATP1A2", ")-disease", "(", "AHC", ")", "relationship", "is", "\"", "Limited", "\"", "according", "to", "the", "ClinGen", "gene", "curation", "protocol", "(", "https://clinicalgenome.org/docs/summary-of-updates-to-the-clingen-gene-clinical-validity-curation-sop-version-7/", ")", "." ],
-  "event_indices" : [ 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 3, 4 ],
-  "controlled_indices" : [ 12, 13, 14, 15, 16 ],
-  "trigger_indices" : [ 7, 8 ],
-  "rule_name" : "Positive_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "EEG", "showed", "diffuse", "slow", "waves", "throughout", "the", "waking", "and", "sleeping", "phases", ",", "especially", "in", "one", "hemisphere", "(", "corresponding", "to", "the", "abnormal", "MRI", "signal", "side", ")", "(", "Fig.", "2a", ")", "." ],
-  "event_indices" : [ 21, 22, 23, 24 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 23, 24 ],
-  "controlled_indices" : [ 21, 22 ],
-  "trigger_indices" : [ 22, 23 ],
-  "rule_name" : "Positive_activation_token_1_noun",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "De", "novo", "ATP1A2", "variants", "in", "two", "Chinese", "children", "with", "alternating", "hemiplegia", "of", "childhood", "upgraded", "the", "gene-disease", "relationship", "and", "variant", "classification", ":", "a", "case", "report", "." ],
-  "entity_one_indices" : [ 10, 11 ],
-  "entity_two_indices" : [ 2, 3 ]
-}, {
-  "sentence_tokens" : [ "Both", "patients", "presented", "with", "episodes", "of", "alternating", "hemiplegia", ",", "seizures", "and", "mild", "developmental", "delay", "." ],
-  "entity_one_indices" : [ 9, 10 ],
-  "entity_two_indices" : [ 7, 8 ]
-}, {
-  "sentence_tokens" : [ "The", "new", "genetic", "evidence", "we", "reported", "here", "strengthened", "the", "gene-disease", "relationship", ",", "and", "the", "gene", "curation", "level", "between", "ATP1A2", "and", "AHC", "became", "``", "Moderate", "''", "following", "the", "ClinGen", "Standard", "Operation", "Procedure", "." ],
-  "entity_one_indices" : [ 20, 21 ],
-  "entity_two_indices" : [ 18, 19 ]
-}, {
-  "sentence_tokens" : [ "The", "reporting", "of", "these", "two", "cases", "can", "elevate", "the", "level", "of", "gene", "-", "disease", "association", "from", "\"", "Limited", "\"", "to", "\"", "Moderate", "\"", ",", "thus", "further", "strengthening", "the", "causal", "relationship", "between", "ATP1A2", "and", "AHC", "." ],
-  "entity_one_indices" : [ 33, 34 ],
-  "entity_two_indices" : [ 31, 32 ]
-}, {
-  "sentence_tokens" : [ "Magnetic", "resonance", "imaging", "(", "MRI", ")", "(", "3.0T", ")", "scans", "and", "electroencephalogram", "(", "EEG", ")", "were", "performed", "in", "both", "patients", "." ],
-  "entity_one_indices" : [ 13, 14 ],
-  "entity_two_indices" : [ 4, 5 ]
-}, {
-  "sentence_tokens" : [ "Each", "episode", "was", "preceded", "by", "mild", "fever", "and", "generalized", "tonic", "-", "clonic", "seizures", "lasting", "less", "than", "5", "min", "followed", "by", "several", "days", "of", "hemiparesis", "." ],
-  "entity_one_indices" : [ 12, 13 ],
-  "entity_two_indices" : [ 6, 7 ]
-}, {
-  "sentence_tokens" : [ "There", "was", "no", "family", "history", "of", "similar", "symptoms", ",", "migraine", "or", "seizures.Brain", "diffusion", "weighted", "magnetic", "resonance", "imaging", "(", "MRI-DWI", ")", "showed", "transient", "unilateral", "cortical", "restricted", "diffusion", "signals", "during", "a", "severe", "episode", "of", "hemiplegia", "(", "Fig.", "1a", ")", "." ],
-  "entity_one_indices" : [ 32, 33 ],
-  "entity_two_indices" : [ 9, 10 ]
-}, {
-  "sentence_tokens" : [ "Brain", "MRI", "showed", "mild", "DWI", "hyperintensity", "involving", "the", "left", "hemispheric", "cortex", "(", "Fig.", "1b", ")", ",", "while", "his", "EEG", "was", "normal", "." ],
-  "entity_one_indices" : [ 18, 19 ],
-  "entity_two_indices" : [ 1, 2 ]
-}, {
-  "sentence_tokens" : [ "Variants", "in", "ATP1A2", "(", "NM_000702", ")", "were", "identified", "by", "whole-exome", "sequencing", ":", "c.970G", ">", "A", ":", "p.Gly324Ser", "[", "Chr1", "(", "GRCh37", ")", ":", "g.160097563G", ">", "A", "]", "in", "case", "1", "and", "c.889G", ">", "A", ":", "p.Ala297Thr", "[", "Chr1", "(", "GRCh37", ")", ":", "g.160097482G", ">", "A", "]", "in", "case", "2", "." ],
-  "entity_one_indices" : [ 4, 5 ],
-  "entity_two_indices" : [ 2, 3 ]
-}, {
-  "sentence_tokens" : [ "The", "variant", "c.889G", ">", "A", ":", "p.Ala297Thr", "of", "case", "2", "was", "reported", "[", "9", "]", "to", "be", "associated", "with", "dystonia", "but", "not", "hemiplegia", "." ],
-  "entity_one_indices" : [ 22, 23 ],
-  "entity_two_indices" : [ 19, 20 ]
-}, {
-  "sentence_tokens" : [ "Both", "variants", "are", "located", "in", "the", "intracellular", "region", "of", "the", "Na", "+/K", "+-ATPase", "a2", "subunit.As", "these", "two", "variants", "have", "not", "been", "reported", "to", "be", "related", "with", "AHC", "in", "the", "literature", ",", "to", "facilitate", "the", "evaluation", "of", "the", "clinical", "significance", "of", "each", "variant", ",", "we", "searched", "the", "same", "variant", "submitted", "in", "ClinVar", "(", "http://www.ncbi.nlm.nih.gov/clinvar/", ")", ",", "which", "displays", "supporting", "data", "from", "each", "submission", "and", "determines", "whether", "the", "submitted", "clinical", "interpretations", "are", "conflicting", "or", "concordant", "[", "10", "]", "." ],
-  "entity_one_indices" : [ 26, 27 ],
-  "entity_two_indices" : [ 10, 11 ]
-}, {
-  "sentence_tokens" : [ "We", "report", "the", "clinical", "and", "genetic", "data", "of", "two", "Chinese", "AHC", "patients", "with", "de", "novo", "ATP1A2", "variants", "." ],
-  "entity_one_indices" : [ 15, 16 ],
-  "entity_two_indices" : [ 10, 11 ]
-}, {
-  "sentence_tokens" : [ "One", "patient", "had", "epilepsy", "with", "persistent", "aphasia", "." ],
-  "entity_one_indices" : [ 6, 7 ],
-  "entity_two_indices" : [ 3, 4 ]
-}, {
-  "sentence_tokens" : [ "Postictal", "aphasia", "may", "be", "a", "feature", "of", "Todd", "'s", "paralysis", "." ],
-  "entity_one_indices" : [ 9, 10 ],
-  "entity_two_indices" : [ 1, 2 ]
-}, {
-  "sentence_tokens" : [ "We", "describe", "two", "children", "with", "episodes", "of", "hemiplegia", "after", "generalized", "tonic", "-", "clonic", "seizures", "." ],
-  "entity_one_indices" : [ 13, 14 ],
-  "entity_two_indices" : [ 7, 8 ]
-}, {
-  "sentence_tokens" : [ "Their", "alternating", "attacks", "and", "developmental", "delay", "support", "the", "diagnosis", "of", "AHC", "rather", "than", "Todd", "'s", "paralysis", "." ],
-  "entity_one_indices" : [ 15, 16 ],
-  "entity_two_indices" : [ 10, 11 ]
-}, {
-  "sentence_tokens" : [ "Abnormal", "brain", "MRI", "is", "uncommon", "for", "AHC", "but", "has", "been", "reported", "previously", "[", "5", "]", "." ],
-  "entity_one_indices" : [ 6, 7 ],
-  "entity_two_indices" : [ 2, 3 ]
-}, {
-  "sentence_tokens" : [ "However", ",", "persistent", "aphasia", "after", "hemiplegia", "has", "not", "been", "reported", "." ],
-  "entity_one_indices" : [ 5, 6 ],
-  "entity_two_indices" : [ 3, 4 ]
-}, {
-  "sentence_tokens" : [ "Furthermore", ",", "because", "these", "two", "variants", "have", "not", "been", "reported", "to", "be", "related", "with", "AHC", "in", "the", "literature", ",", "we", "searched", "ClinVar", "(", "http://www.ncbi.nlm.nih.gov/clinvar/", ")", "to", "further", "understand", "the", "ATP1A2", "mutations", "mentioned", "above", "." ],
-  "entity_one_indices" : [ 29, 30 ],
-  "entity_two_indices" : [ 14, 15 ]
-}, {
-  "sentence_tokens" : [ "Ultimately", ",", "based", "on", "our", "two", "patients", ",", "five", "other", "patients", "carrying", "either", "of", "the", "two", "mutations", "submitted", "in", "ClinVar", "(", "http://www.ncbi.nlm.nih.gov/clinvar/", ")", "all", "around", "the", "world", "could", "be", "diagnosed", "genetically.In", "conclusion", ",", "we", "reported", "two", "novel", "de", "novo", "ATP1A2", "variants", "and", "additional", "phenotypes", "associated", "with", "AHC", "in", "two", "Chinese", "patients", "." ],
-  "entity_one_indices" : [ 46, 47 ],
-  "entity_two_indices" : [ 39, 40 ]
-} ]
+{
+  "regulations" : [ {
+    "sentence_tokens" : [ "ATP1A2", "gene", "mutation", "has", "been", "indicated", "to", "cause", "alternating", "hemiplegia", "of", "childhood", "(", "AHC", ")", ";", "however", ",", "limited", "evidence", "supports", "this", "relationship", "so", "far", "." ],
+    "event_indices" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 0, 1 ],
+    "controlled_indices" : [ 9, 10 ],
+    "trigger_indices" : [ 7, 8 ],
+    "rule_name" : "Positive_activation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "Pathogenic", "variants", "in", "ATP1A2", "are", "known", "to", "cause", "AHC", "type", "1", "(", "OMIM", "#", "104290", ")", ",", "but", "only", "a", "very", "limited", "number", "of", "cases", "have", "been", "reported", "[", "4", "-", "6", "]", ";", "thus", ",", "the", "gene", "(", "ATP1A2", ")-disease", "(", "AHC", ")", "relationship", "is", "\"", "Limited", "\"", "according", "to", "the", "ClinGen", "gene", "curation", "protocol", "(", "https://clinicalgenome.org/docs/summary-of-updates-to-the-clingen-gene-clinical-validity-curation-sop-version-7/", ")", "." ],
+    "event_indices" : [ 3, 4, 5, 6, 7, 8, 9, 10 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 3, 4 ],
+    "controlled_indices" : [ 8, 9, 10 ],
+    "trigger_indices" : [ 7, 8 ],
+    "rule_name" : "Positive_activation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "Pathogenic", "variants", "in", "ATP1A2", "are", "known", "to", "cause", "AHC", "type", "1", "(", "OMIM", "#", "104290", ")", ",", "but", "only", "a", "very", "limited", "number", "of", "cases", "have", "been", "reported", "[", "4", "-", "6", "]", ";", "thus", ",", "the", "gene", "(", "ATP1A2", ")-disease", "(", "AHC", ")", "relationship", "is", "\"", "Limited", "\"", "according", "to", "the", "ClinGen", "gene", "curation", "protocol", "(", "https://clinicalgenome.org/docs/summary-of-updates-to-the-clingen-gene-clinical-validity-curation-sop-version-7/", ")", "." ],
+    "event_indices" : [ 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 3, 4 ],
+    "controlled_indices" : [ 12, 13, 14, 15, 16 ],
+    "trigger_indices" : [ 7, 8 ],
+    "rule_name" : "Positive_activation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "EEG", "showed", "diffuse", "slow", "waves", "throughout", "the", "waking", "and", "sleeping", "phases", ",", "especially", "in", "one", "hemisphere", "(", "corresponding", "to", "the", "abnormal", "MRI", "signal", "side", ")", "(", "Fig.", "2a", ")", "." ],
+    "event_indices" : [ 21, 22, 23, 24 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 23, 24 ],
+    "controlled_indices" : [ 21, 22 ],
+    "trigger_indices" : [ 22, 23 ],
+    "rule_name" : "Positive_activation_token_1_noun",
+    "rule" : null
+  } ],
+  "hardInstances" : [ {
+    "sentence_tokens" : [ "ATP1A2", "gene", "mutation", "has", "been", "indicated", "to", "cause", "alternating", "hemiplegia", "of", "childhood", "(", "AHC", ")", ";", "however", ",", "limited", "evidence", "supports", "this", "relationship", "so", "far", "." ],
+    "entities_indices" : [ [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "Pathogenic", "variants", "in", "ATP1A2", "are", "known", "to", "cause", "AHC", "type", "1", "(", "OMIM", "#", "104290", ")", ",", "but", "only", "a", "very", "limited", "number", "of", "cases", "have", "been", "reported", "[", "4", "-", "6", "]", ";", "thus", ",", "the", "gene", "(", "ATP1A2", ")-disease", "(", "AHC", ")", "relationship", "is", "\"", "Limited", "\"", "according", "to", "the", "ClinGen", "gene", "curation", "protocol", "(", "https://clinicalgenome.org/docs/summary-of-updates-to-the-clingen-gene-clinical-validity-curation-sop-version-7/", ")", "." ],
+    "entities_indices" : [ [ 12, 13, 14, 15, 16 ], [ 28, 29, 30, 31, 32, 33 ], [ 39, 40 ], [ 42, 43 ], [ 52, 53, 54 ] ]
+  }, {
+    "sentence_tokens" : [ "Pathogenic", "variants", "in", "ATP1A2", "are", "known", "to", "cause", "AHC", "type", "1", "(", "OMIM", "#", "104290", ")", ",", "but", "only", "a", "very", "limited", "number", "of", "cases", "have", "been", "reported", "[", "4", "-", "6", "]", ";", "thus", ",", "the", "gene", "(", "ATP1A2", ")-disease", "(", "AHC", ")", "relationship", "is", "\"", "Limited", "\"", "according", "to", "the", "ClinGen", "gene", "curation", "protocol", "(", "https://clinicalgenome.org/docs/summary-of-updates-to-the-clingen-gene-clinical-validity-curation-sop-version-7/", ")", "." ],
+    "entities_indices" : [ [ 8, 9, 10 ], [ 28, 29, 30, 31, 32, 33 ], [ 39, 40 ], [ 42, 43 ], [ 52, 53, 54 ] ]
+  }, {
+    "sentence_tokens" : [ "EEG", "showed", "diffuse", "slow", "waves", "throughout", "the", "waking", "and", "sleeping", "phases", ",", "especially", "in", "one", "hemisphere", "(", "corresponding", "to", "the", "abnormal", "MRI", "signal", "side", ")", "(", "Fig.", "2a", ")", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  } ],
+  "withoutRegulations" : [ {
+    "sentence_tokens" : [ "In", "our", "patients", ",", "two", "novel", "de", "novo", "variants", "(", "c.970G", ">", "A", ",", "c.889G", ">", "A", ")", "of", "ATP1A2", "were", "identified", "and", "classified", "as", "``", "likely", "pathogenic", "''", "following", "ACMG", "guidelines", "[", "8]", "." ],
+    "entities_indices" : [ [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "De", "novo", "ATP1A2", "variants", "in", "two", "Chinese", "children", "with", "alternating", "hemiplegia", "of", "childhood", "upgraded", "the", "gene-disease", "relationship", "and", "variant", "classification", ":", "a", "case", "report", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "Both", "patients", "presented", "with", "episodes", "of", "alternating", "hemiplegia", ",", "seizures", "and", "mild", "developmental", "delay", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "Postictal", "aphasia", "may", "be", "a", "feature", "of", "Todd", "'s", "paralysis", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "Case", "1", "was", "a", "4-year-old", "boy", "with", "febrile", "seizures", ",", "epileptic", "seizures", ",", "and", "recurrent", "hemiplegia", "." ],
+    "entities_indices" : [ [ 7, 8, 9 ], [ 11, 12 ], [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "He", "had", "no", "positive", "family", "history.The", "clinical", "data", "of", "the", "two", "Chinese", "patients", "with", "ATP1A2", "mutations", "are", "summarized", "in", "Table", "1", "." ],
+    "entities_indices" : [ [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "He", "had", "two", "episodes", "of", "acute", "hemiplegia", "within", "1", "year", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "Pathogenic", "variants", "in", "ATP1A2", "are", "more", "commonly", "associated", "with", "familial", "hemiplegic", "migraine", "(", "FHM", ")", "[", "7", "]", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 11, 12 ], [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "describe", "two", "children", "with", "episodes", "of", "hemiplegia", "after", "generalized", "tonic", "-", "clonic", "seizures", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "Ultimately", ",", "based", "on", "our", "two", "patients", ",", "five", "other", "patients", "carrying", "either", "of", "the", "two", "mutations", "submitted", "in", "ClinVar", "(", "http://www.ncbi.nlm.nih.gov/clinvar/", ")", "all", "around", "the", "world", "could", "be", "diagnosed", "genetically.In", "conclusion", ",", "we", "reported", "two", "novel", "de", "novo", "ATP1A2", "variants", "and", "additional", "phenotypes", "associated", "with", "AHC", "in", "two", "Chinese", "patients", "." ],
+    "entities_indices" : [ [ 39, 40 ], [ 46, 47 ] ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "our", "patients", "are", "also", "distinguished", "from", "the", "majority", "of", "classic", "AHC", "patients", "by", "the", "late", "age", "of", "onset", "(", "typically", "<", "18", "months", ")", ",", "the", "lack", "of", "recurrent", "dystonia", ",", "and", "autonomic", "nervous", "manifestations", "associated", "with", "seizures", "[", "11", "-", "13", "]", "." ],
+    "entities_indices" : [ [ 12, 13 ], [ 31, 32 ], [ 39, 40 ] ]
+  }, {
+    "sentence_tokens" : [ "According", "to", "the", "ACMG", "standard", "[", "8]", ",", "all", "submissions", "meet", "criteria", "for", "PM1", "(", "located", "in", "a", "mutational", "hot", "spot", "and/or", "critical", "and", "well", "established", "functional", "domain", "without", "benign", "variation", ")", ",", "PM2", "(", "the", "variants", "are", "not", "present", "in", "population", "databases", ")", "and", "PP3", "(", "algorithms", "developed", "to", "predict", "the", "effect", "of", "missense", "changes", "on", "protein", "structure", "and", "function", "suggest", "that", "the", "variants", "are", "likely", "to", "be", "disruptive", ",", "but", "these", "predictions", "have", "not", "been", "confirmed", "by", "published", "functional", "studies", "and", "their", "clinical", "significance", "is", "uncertain", ")", "." ],
+    "entities_indices" : [ [ 13, 14 ], [ 33, 34 ], [ 45, 46 ] ]
+  }, {
+    "sentence_tokens" : [ "To", "our", "knowledge", ",", "although", "the", "association", "of", "ATP1A2", "variants", "with", "epilepsy", "and", "hemiplegic", "attacks", "has", "previously", "been", "described", ",", "phenotypic", "overlap", "with", "aphasia", "and", "MRI", "abnormalities", "has", "not", "yet", "been", "reported.Our", "patients", "exhibited", "the", "clinical", "features", "of", "AHC", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 11, 12 ], [ 23, 24 ], [ 25, 26 ], [ 38, 39 ] ]
+  }, {
+    "sentence_tokens" : [ "There", "was", "no", "family", "history", "of", "similar", "symptoms", ",", "migraine", "or", "seizures.Brain", "diffusion", "weighted", "magnetic", "resonance", "imaging", "(", "MRI-DWI", ")", "showed", "transient", "unilateral", "cortical", "restricted", "diffusion", "signals", "during", "a", "severe", "episode", "of", "hemiplegia", "(", "Fig.", "1a", ")", "." ],
+    "entities_indices" : [ [ 9, 10 ], [ 32, 33 ] ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "our", "patients", "'", "presentations", "extended", "the", "clinical", "phenotype", "of", "Chinese", "AHC", "associated", "with", "the", "ATP1A2", "pathogenic", "variant.ATP1A2", "was", "initially", "identified", "to", "be", "associated", "with", "familial", "hemiplegia", "migraine", "(", "FHM", ")", "type", "2", "[", "14", "]", "." ],
+    "entities_indices" : [ [ 12, 13 ], [ 16, 17 ], [ 27, 28 ], [ 28, 29 ], [ 30, 31 ], [ 32, 33 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "report", "the", "clinical", "and", "genetic", "data", "of", "two", "Chinese", "AHC", "patients", "with", "de", "novo", "ATP1A2", "variants", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "Case", "2", "was", "a", "19-month-old", "boy", "from", "a", "nonconsanguineous", "couple", "who", "was", "admitted", "to", "our", "hospital", "because", "of", "fever", "and", "right", "hemiplegia", "after", "one", "febrile", "convulsion", "(", "generalized", "tonic", "-", "clonic", "seizures", "and", "right", "sided", "clonic", "seizures", "lasting", "less", "than", "5", "min", ")", "." ],
+    "entities_indices" : [ [ 18, 19 ], [ 21, 22 ], [ 24, 25, 26 ], [ 31, 32 ], [ 36, 37 ] ]
+  }, {
+    "sentence_tokens" : [ "Our", "study", "shows", "that", "the", "phenotype", "of", "patients", "with", "ATP1A2", "mutations", "is", "highly", "variable", "in", "terms", "of", "the", "diversity", "of", "clinical", "manifestations", "." ],
+    "entities_indices" : [ [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "Case", "presentation", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "Magnetic", "resonance", "imaging", "(", "MRI", ")", "(", "3.0T", ")", "scans", "and", "electroencephalogram", "(", "EEG", ")", "were", "performed", "in", "both", "patients", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "Both", "variants", "are", "located", "in", "the", "intracellular", "region", "of", "the", "Na", "+/K", "+-ATPase", "a2", "subunit.As", "these", "two", "variants", "have", "not", "been", "reported", "to", "be", "related", "with", "AHC", "in", "the", "literature", ",", "to", "facilitate", "the", "evaluation", "of", "the", "clinical", "significance", "of", "each", "variant", ",", "we", "searched", "the", "same", "variant", "submitted", "in", "ClinVar", "(", "http://www.ncbi.nlm.nih.gov/clinvar/", ")", ",", "which", "displays", "supporting", "data", "from", "each", "submission", "and", "determines", "whether", "the", "submitted", "clinical", "interpretations", "are", "conflicting", "or", "concordant", "[", "10", "]", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 26, 27 ] ]
+  }, {
+    "sentence_tokens" : [ "Their", "alternating", "attacks", "and", "developmental", "delay", "support", "the", "diagnosis", "of", "AHC", "rather", "than", "Todd", "'s", "paralysis", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "Furthermore", ",", "because", "these", "two", "variants", "have", "not", "been", "reported", "to", "be", "related", "with", "AHC", "in", "the", "literature", ",", "we", "searched", "ClinVar", "(", "http://www.ncbi.nlm.nih.gov/clinvar/", ")", "to", "further", "understand", "the", "ATP1A2", "mutations", "mentioned", "above", "." ],
+    "entities_indices" : [ [ 14, 15 ], [ 29, 30 ] ]
+  }, {
+    "sentence_tokens" : [ "Febrile", "convulsions", ",", "AHC", ",", "mild", "developmental", "delay", "and", "MRI", "abnormalities", "were", "present", "in", "both", "patients", "." ],
+    "entities_indices" : [ [ 0, 1, 2 ], [ 3, 4 ], [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "Variants", "in", "ATP1A2", "(", "NM_000702", ")", "were", "identified", "by", "whole-exome", "sequencing", ":", "c.970G", ">", "A", ":", "p.Gly324Ser", "[", "Chr1", "(", "GRCh37", ")", ":", "g.160097563G", ">", "A", "]", "in", "case", "1", "and", "c.889G", ">", "A", ":", "p.Ala297Thr", "[", "Chr1", "(", "GRCh37", ")", ":", "g.160097482G", ">", "A", "]", "in", "case", "2", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "Several", "studies", "[", "4", "-", "6", "]", "have", "implicated", "ATP1A2", "variants", "as", "uncommon", "causes", "of", "AHC", ",", "and", "the", "ATP1A2", "variants", "are", "also", "associated", "with", "epilepsy", "and", "mental", "retardation", "[", "5", "]", ";", "however", ",", "few", "such", "cases", "have", "been", "reported", ",", "and", "none", "have", "been", "reported", "in", "Chinese", "patients", "so", "far", "." ],
+    "entities_indices" : [ [ 9, 10 ], [ 15, 16 ], [ 19, 20 ], [ 25, 26 ], [ 27, 28, 29 ] ]
+  }, {
+    "sentence_tokens" : [ "Case", "presentation", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "More", "importantly", ",", "our", "study", "upgraded", "the", "variant", "classification", "of", "the", "two", "novel", "ATP1A2", "variants", "(", "c.970G", ">", "A", ",", "c.889G", ">", "A", ")", "." ],
+    "entities_indices" : [ [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "Brain", "MRI", "showed", "mild", "DWI", "hyperintensity", "involving", "the", "left", "hemispheric", "cortex", "(", "Fig.", "1b", ")", ",", "while", "his", "EEG", "was", "normal", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "Following", "these", "results", ",", "case", "1", "was", "treated", "with", "adenosine", "disodium", "triphosphate", "tablets", "and", "oxcarbazepine", "for", "his", "seizures", ",", "with", "no", "further", "hemiplegic", "episodes", "since", "the", "last", "admission", "." ],
+    "entities_indices" : [ [ 9, 10 ], [ 11, 12 ], [ 14, 15 ], [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "persistent", "aphasia", "after", "hemiplegia", "has", "not", "been", "reported", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "identified", "two", "Chinese", "AHC", "patients", "at", "the", "Children", "'", "s", "Hospital", "Affiliated", "with", "Soochow", "University", "from", "August", "2016", "to", "August", "2020", "." ],
+    "entities_indices" : [ [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "reporting", "of", "these", "two", "cases", "can", "elevate", "the", "level", "of", "gene", "-", "disease", "association", "from", "\"", "Limited", "\"", "to", "\"", "Moderate", "\"", ",", "thus", "further", "strengthening", "the", "causal", "relationship", "between", "ATP1A2", "and", "AHC", "." ],
+    "entities_indices" : [ [ 31, 32 ], [ 33, 34 ] ]
+  }, {
+    "sentence_tokens" : [ "Alternating", "hemiplegia", "of", "childhood", "(", "AHC", ")", "is", "a", "rare", "syndrome", "that", "is", "characterized", "by", "recurrent", "and", "varying", "degrees", "of", "alternating", "hemiplegia", "[", "1", "]", ",", "as", "well", "as", "other", "movement", "disorders", "such", "as", "dystonic", "posturing", ",", "choreoathetoid", "movements", ",", "and", "ocular", "motor", "abnormalities", "[", "2", "]", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 5, 6 ], [ 10, 11 ], [ 21, 22 ], [ 30, 31, 32 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "variant", "c.889G", ">", "A", ":", "p.Ala297Thr", "of", "case", "2", "was", "reported", "[", "9", "]", "to", "be", "associated", "with", "dystonia", "but", "not", "hemiplegia", "." ],
+    "entities_indices" : [ [ 19, 20 ], [ 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "Each", "episode", "was", "preceded", "by", "mild", "fever", "and", "generalized", "tonic", "-", "clonic", "seizures", "lasting", "less", "than", "5", "min", "followed", "by", "several", "days", "of", "hemiparesis", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "One", "patient", "had", "epilepsy", "with", "persistent", "aphasia", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "new", "genetic", "evidence", "we", "reported", "here", "strengthened", "the", "gene-disease", "relationship", ",", "and", "the", "gene", "curation", "level", "between", "ATP1A2", "and", "AHC", "became", "``", "Moderate", "''", "following", "the", "ClinGen", "Standard", "Operation", "Procedure", "." ],
+    "entities_indices" : [ [ 18, 19 ], [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "these", "seizures", "stop", "spontaneously", "within", "5", "min", "." ],
+    "entities_indices" : [ [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "His", "second", "hemiplegic", "episode", "was", "not", "accompanied", "by", "obvious", "abnormalities", "on", "MRI", ",", "but", "EEG", "changes", "(", "Fig.", "2b", ")", "were", "found", ",", "leaving", "him", "with", "persistent", "aphasia", "for", "over", "a", "year", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 14, 15 ], [ 27, 28 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "reported", "two", "Chinese", "patients", "with", "de", "novo", "ATP1A2", "variants", "(", "c.970G", ">", "A", "and", "c.889G", ">", "A", ")", "." ],
+    "entities_indices" : [ [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "case", "series", "not", "only", "further", "strengthened", "the", "causal", "relationship", "between", "ATP1A2", "and", "AHC", "but", "also", "extended", "the", "clinical", "phenotype", "of", "Chinese", "AHC", "associated", "with", "ATP1A2", "pathogenic", "variants", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 13, 14 ], [ 22, 23 ], [ 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "Here", ",", "we", "report", "two", "Chinese", "boys", "with", "de", "novo", "mutations", "in", "ATP1A2", "who", "presented", "with", "mild", "growth", "and", "developmental", "delays", ",", "seizures", ",", "alternating", "hemiplegia", ",", "and", "abnormal", "MRI", "signals", "." ],
+    "entities_indices" : [ [ 12, 13 ], [ 22, 23 ], [ 25, 26 ], [ 29, 30 ] ]
+  }, {
+    "sentence_tokens" : [ "Abnormal", "brain", "MRI", "is", "uncommon", "for", "AHC", "but", "has", "been", "reported", "previously", "[", "5", "]", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 6, 7 ] ]
+  } ],
+  "emptySentences" : [ {
+    "sentence_tokens" : [ "De", "novo", "ATP1A2", "variants", "in", "two", "Chinese", "children", "with", "alternating", "hemiplegia", "of", "childhood", "upgraded", "the", "gene-disease", "relationship", "and", "variant", "classification", ":", "a", "case", "report", "." ]
+  }, {
+    "sentence_tokens" : [ "Background", "." ]
+  }, {
+    "sentence_tokens" : [ "Case", "presentation", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "reported", "two", "Chinese", "patients", "with", "de", "novo", "ATP1A2", "variants", "(", "c.970G", ">", "A", "and", "c.889G", ">", "A", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Both", "patients", "presented", "with", "episodes", "of", "alternating", "hemiplegia", ",", "seizures", "and", "mild", "developmental", "delay", "." ]
+  }, {
+    "sentence_tokens" : [ "Brain", "magnetic", "resonance", "imaging", "revealed", "abnormal", "signals", "in", "both", "patients", "." ]
+  }, {
+    "sentence_tokens" : [ "Conclusions", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "new", "genetic", "evidence", "we", "reported", "here", "strengthened", "the", "gene-disease", "relationship", ",", "and", "the", "gene", "curation", "level", "between", "ATP1A2", "and", "AHC", "became", "``", "Moderate", "''", "following", "the", "ClinGen", "Standard", "Operation", "Procedure", "." ]
+  }, {
+    "sentence_tokens" : [ "Consequently", ",", "the", "two", "variants", "can", "be", "reclassified", "as", "likely", "pathogenic", "." ]
+  }, {
+    "sentence_tokens" : [ "Background", "." ]
+  }, {
+    "sentence_tokens" : [ "Alternating", "hemiplegia", "of", "childhood", "(", "AHC", ")", "is", "a", "rare", "syndrome", "that", "is", "characterized", "by", "recurrent", "and", "varying", "degrees", "of", "alternating", "hemiplegia", "[", "1", "]", ",", "as", "well", "as", "other", "movement", "disorders", "such", "as", "dystonic", "posturing", ",", "choreoathetoid", "movements", ",", "and", "ocular", "motor", "abnormalities", "[", "2", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Progressive", "cognitive", "impairment", "is", "also", "an", "important", "feature", "of", "this", "disease", "[", "3", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Pathogenic", "variants", "in", "ATP1A2", "are", "more", "commonly", "associated", "with", "familial", "hemiplegic", "migraine", "(", "FHM", ")", "[", "7", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Here", ",", "we", "report", "two", "Chinese", "boys", "with", "de", "novo", "mutations", "in", "ATP1A2", "who", "presented", "with", "mild", "growth", "and", "developmental", "delays", ",", "seizures", ",", "alternating", "hemiplegia", ",", "and", "abnormal", "MRI", "signals", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "reporting", "of", "these", "two", "cases", "can", "elevate", "the", "level", "of", "gene", "-", "disease", "association", "from", "\"", "Limited", "\"", "to", "\"", "Moderate", "\"", ",", "thus", "further", "strengthening", "the", "causal", "relationship", "between", "ATP1A2", "and", "AHC", "." ]
+  }, {
+    "sentence_tokens" : [ "Case", "presentation", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "identified", "two", "Chinese", "AHC", "patients", "at", "the", "Children", "'", "s", "Hospital", "Affiliated", "with", "Soochow", "University", "from", "August", "2016", "to", "August", "2020", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "patients", "were", "molecularly", "diagnosed", "by", "exome", "sequencing", ",", "and", "the", "diagnosis", "was", "confirmed", "by", "Sanger", "sequencing", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "study", "followed", "the", "principles", "of", "the", "Declaration", "of", "Helsinki", "and", "was", "approved", "by", "the", "Institutional", "Review", "Committee", "of", "Children", "'", "s", "Hospital", "Affiliated", "with", "Soochow", "University", "." ]
+  }, {
+    "sentence_tokens" : [ "Protocol", "Written", "informed", "consent", "was", "obtained", "from", "the", "patients", "'", "parents.Clinical", "chart", "review", "provided", "information", "regarding", "family", "history", ",", "case", "histories", "and", "neurological", "symptoms", "and", "onset", "." ]
+  }, {
+    "sentence_tokens" : [ "Magnetic", "resonance", "imaging", "(", "MRI", ")", "(", "3.0T", ")", "scans", "and", "electroencephalogram", "(", "EEG", ")", "were", "performed", "in", "both", "patients", "." ]
+  }, {
+    "sentence_tokens" : [ "Case", "1", "." ]
+  }, {
+    "sentence_tokens" : [ "Case", "1", "was", "a", "4-year-old", "boy", "with", "febrile", "seizures", ",", "epileptic", "seizures", ",", "and", "recurrent", "hemiplegia", "." ]
+  }, {
+    "sentence_tokens" : [ "He", "had", "two", "episodes", "of", "acute", "hemiplegia", "within", "1", "year", "." ]
+  }, {
+    "sentence_tokens" : [ "Each", "episode", "was", "preceded", "by", "mild", "fever", "and", "generalized", "tonic", "-", "clonic", "seizures", "lasting", "less", "than", "5", "min", "followed", "by", "several", "days", "of", "hemiparesis", "." ]
+  }, {
+    "sentence_tokens" : [ "Delayed", "motor", "development", "was", "exhibited", ":", "he", "was", "able", "to", "hold", "his", "neck", "up", "at", "3", "months", "and", "to", "walk", "unassisted", "at", "15", "months", "." ]
+  }, {
+    "sentence_tokens" : [ "There", "was", "no", "family", "history", "of", "similar", "symptoms", ",", "migraine", "or", "seizures.Brain", "diffusion", "weighted", "magnetic", "resonance", "imaging", "(", "MRI-DWI", ")", "showed", "transient", "unilateral", "cortical", "restricted", "diffusion", "signals", "during", "a", "severe", "episode", "of", "hemiplegia", "(", "Fig.", "1a", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "His", "second", "hemiplegic", "episode", "was", "not", "accompanied", "by", "obvious", "abnormalities", "on", "MRI", ",", "but", "EEG", "changes", "(", "Fig.", "2b", ")", "were", "found", ",", "leaving", "him", "with", "persistent", "aphasia", "for", "over", "a", "year", "." ]
+  }, {
+    "sentence_tokens" : [ "Case", "2", "." ]
+  }, {
+    "sentence_tokens" : [ "Case", "2", "was", "a", "19-month-old", "boy", "from", "a", "nonconsanguineous", "couple", "who", "was", "admitted", "to", "our", "hospital", "because", "of", "fever", "and", "right", "hemiplegia", "after", "one", "febrile", "convulsion", "(", "generalized", "tonic", "-", "clonic", "seizures", "and", "right", "sided", "clonic", "seizures", "lasting", "less", "than", "5", "min", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Neurological", "examination", "indicated", "right", "hemiparesis", "for", "2", "days", "but", "no", "other", "neurological", "signs", "." ]
+  }, {
+    "sentence_tokens" : [ "He", "had", "a", "similar", "episode", "2", "months", "before", "admission", ",", "which", "did", "not", "draw", "attention", "." ]
+  }, {
+    "sentence_tokens" : [ "Brain", "MRI", "showed", "mild", "DWI", "hyperintensity", "involving", "the", "left", "hemispheric", "cortex", "(", "Fig.", "1b", ")", ",", "while", "his", "EEG", "was", "normal", "." ]
+  }, {
+    "sentence_tokens" : [ "He", "was", "able", "to", "hold", "his", "neck", "up", "at", "3", "months", ",", "sit", "without", "support", "at", "8", "months", ",", "and", "walk", "unassisted", "at", "15", "months", "." ]
+  }, {
+    "sentence_tokens" : [ "He", "had", "no", "positive", "family", "history.The", "clinical", "data", "of", "the", "two", "Chinese", "patients", "with", "ATP1A2", "mutations", "are", "summarized", "in", "Table", "1", "." ]
+  }, {
+    "sentence_tokens" : [ "Results", "." ]
+  }, {
+    "sentence_tokens" : [ "Variants", "in", "ATP1A2", "(", "NM_000702", ")", "were", "identified", "by", "whole-exome", "sequencing", ":", "c.970G", ">", "A", ":", "p.Gly324Ser", "[", "Chr1", "(", "GRCh37", ")", ":", "g.160097563G", ">", "A", "]", "in", "case", "1", "and", "c.889G", ">", "A", ":", "p.Ala297Thr", "[", "Chr1", "(", "GRCh37", ")", ":", "g.160097482G", ">", "A", "]", "in", "case", "2", "." ]
+  }, {
+    "sentence_tokens" : [ "These", "variants", "were", "confirmed", "by", "Sanger", "sequencing", "in", "the", "patients", "and", "their", "parents", "and", "were", "found", "to", "be", "de", "novo", "variants", "." ]
+  }, {
+    "sentence_tokens" : [ "These", "two", "variants", "are", "classified", "as", "``", "likely", "pathogenic", "''", "following", "ACMG", "guidelines", "[", "8]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "variant", "c.970G", ">", "A", ":", "p.Gly324Ser", "of", "case", "1", "has", "not", "been", "reported", "in", "the", "literature", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "variant", "c.889G", ">", "A", ":", "p.Ala297Thr", "of", "case", "2", "was", "reported", "[", "9", "]", "to", "be", "associated", "with", "dystonia", "but", "not", "hemiplegia", "." ]
+  }, {
+    "sentence_tokens" : [ "Both", "variants", "are", "located", "in", "the", "intracellular", "region", "of", "the", "Na", "+/K", "+-ATPase", "a2", "subunit.As", "these", "two", "variants", "have", "not", "been", "reported", "to", "be", "related", "with", "AHC", "in", "the", "literature", ",", "to", "facilitate", "the", "evaluation", "of", "the", "clinical", "significance", "of", "each", "variant", ",", "we", "searched", "the", "same", "variant", "submitted", "in", "ClinVar", "(", "http://www.ncbi.nlm.nih.gov/clinvar/", ")", ",", "which", "displays", "supporting", "data", "from", "each", "submission", "and", "determines", "whether", "the", "submitted", "clinical", "interpretations", "are", "conflicting", "or", "concordant", "[", "10", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Searching", "'", "c.970G", ">", "A", ",", "c.889G", ">", "A", "'", "in", "ClinVar", "returns", "one", "and", "four", "submissions", ",", "respectively", "." ]
+  }, {
+    "sentence_tokens" : [ "All", "these", "submissions", "were", "classified", "as", "variants", "of", "uncertain", "significance", "(", "VUS", ")", "in", "ClinVar", "." ]
+  }, {
+    "sentence_tokens" : [ "(", "Table", "2", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Following", "these", "results", ",", "case", "1", "was", "treated", "with", "adenosine", "disodium", "triphosphate", "tablets", "and", "oxcarbazepine", "for", "his", "seizures", ",", "with", "no", "further", "hemiplegic", "episodes", "since", "the", "last", "admission", "." ]
+  }, {
+    "sentence_tokens" : [ "At", "his", "last", "follow-up", ",", "the", "strength", "of", "his", "limbs", "had", "completely", "returned", "." ]
+  }, {
+    "sentence_tokens" : [ "Although", "he", "still", "has", "speech", "problems", ",", "he", "has", "made", "great", "progress", "in", "following", "his", "parents", "'", "instructions", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "hemiparesis", "of", "case", "2", "is", "basically", "restored", ",", "with", "no", "further", "attacks", "so", "far", "." ]
+  }, {
+    "sentence_tokens" : [ "Discussion", "and", "conclusions", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "report", "the", "clinical", "and", "genetic", "data", "of", "two", "Chinese", "AHC", "patients", "with", "de", "novo", "ATP1A2", "variants", "." ]
+  }, {
+    "sentence_tokens" : [ "Febrile", "convulsions", ",", "AHC", ",", "mild", "developmental", "delay", "and", "MRI", "abnormalities", "were", "present", "in", "both", "patients", "." ]
+  }, {
+    "sentence_tokens" : [ "One", "patient", "had", "epilepsy", "with", "persistent", "aphasia", "." ]
+  }, {
+    "sentence_tokens" : [ "Postictal", "aphasia", "may", "be", "a", "feature", "of", "Todd", "'s", "paralysis", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "describe", "two", "children", "with", "episodes", "of", "hemiplegia", "after", "generalized", "tonic", "-", "clonic", "seizures", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "these", "seizures", "stop", "spontaneously", "within", "5", "min", "." ]
+  }, {
+    "sentence_tokens" : [ "Their", "alternating", "attacks", "and", "developmental", "delay", "support", "the", "diagnosis", "of", "AHC", "rather", "than", "Todd", "'s", "paralysis", "." ]
+  }, {
+    "sentence_tokens" : [ "To", "our", "knowledge", ",", "although", "the", "association", "of", "ATP1A2", "variants", "with", "epilepsy", "and", "hemiplegic", "attacks", "has", "previously", "been", "described", ",", "phenotypic", "overlap", "with", "aphasia", "and", "MRI", "abnormalities", "has", "not", "yet", "been", "reported.Our", "patients", "exhibited", "the", "clinical", "features", "of", "AHC", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "our", "patients", "are", "also", "distinguished", "from", "the", "majority", "of", "classic", "AHC", "patients", "by", "the", "late", "age", "of", "onset", "(", "typically", "<", "18", "months", ")", ",", "the", "lack", "of", "recurrent", "dystonia", ",", "and", "autonomic", "nervous", "manifestations", "associated", "with", "seizures", "[", "11", "-", "13", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Abnormal", "brain", "MRI", "is", "uncommon", "for", "AHC", "but", "has", "been", "reported", "previously", "[", "5", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "persistent", "aphasia", "after", "hemiplegia", "has", "not", "been", "reported", "." ]
+  }, {
+    "sentence_tokens" : [ "Our", "study", "shows", "that", "the", "phenotype", "of", "patients", "with", "ATP1A2", "mutations", "is", "highly", "variable", "in", "terms", "of", "the", "diversity", "of", "clinical", "manifestations", "." ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "our", "patients", "'", "presentations", "extended", "the", "clinical", "phenotype", "of", "Chinese", "AHC", "associated", "with", "the", "ATP1A2", "pathogenic", "variant.ATP1A2", "was", "initially", "identified", "to", "be", "associated", "with", "familial", "hemiplegia", "migraine", "(", "FHM", ")", "type", "2", "[", "14", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Several", "studies", "[", "4", "-", "6", "]", "have", "implicated", "ATP1A2", "variants", "as", "uncommon", "causes", "of", "AHC", ",", "and", "the", "ATP1A2", "variants", "are", "also", "associated", "with", "epilepsy", "and", "mental", "retardation", "[", "5", "]", ";", "however", ",", "few", "such", "cases", "have", "been", "reported", ",", "and", "none", "have", "been", "reported", "in", "Chinese", "patients", "so", "far", "." ]
+  }, {
+    "sentence_tokens" : [ "Based", "on", "the", "published", "cases", ",", "the", "gene", "-", "disease", "relationship", "regarding", "clinical", "validity", "is", "at", "a", "limited", "level", "per", "ClinGen", "gene", "curation", "classification", "(", "https://clinicalgenome.org/docs/summary-of-updates-to-the-clingen-gene-clinical-validity-curation-sop-version-7/", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "To", "reach", "an", "affirmatory", "level", ",", "additional", "cases", "or", "functional", "evidence", "is", "needed", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "our", "patients", ",", "two", "novel", "de", "novo", "variants", "(", "c.970G", ">", "A", ",", "c.889G", ">", "A", ")", "of", "ATP1A2", "were", "identified", "and", "classified", "as", "``", "likely", "pathogenic", "''", "following", "ACMG", "guidelines", "[", "8]", "." ]
+  }, {
+    "sentence_tokens" : [ "These", "two", "cases", "provided", "sufficient", "evidence", "to", "reclassify", "the", "gene", "-", "disease", "relationship", "as", "\"", "Moderate", "\"", "(", "the", "total", "clinical", "validity", "score", "reached", "8)", "." ]
+  }, {
+    "sentence_tokens" : [ "Furthermore", ",", "because", "these", "two", "variants", "have", "not", "been", "reported", "to", "be", "related", "with", "AHC", "in", "the", "literature", ",", "we", "searched", "ClinVar", "(", "http://www.ncbi.nlm.nih.gov/clinvar/", ")", "to", "further", "understand", "the", "ATP1A2", "mutations", "mentioned", "above", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "Variation", "Report", "presents", "all", "submissions", "referencing", "given", "variants", "." ]
+  }, {
+    "sentence_tokens" : [ "Interestingly", ",", "both", "of", "the", "novel", "variants", "have", "been", "submitted", "in", "ClinVar", ",", "while", "both", "of", "the", "submissions", "'", "variance", "classifications", "were", "VUS", "." ]
+  }, {
+    "sentence_tokens" : [ "According", "to", "the", "ACMG", "standard", "[", "8]", ",", "all", "submissions", "meet", "criteria", "for", "PM1", "(", "located", "in", "a", "mutational", "hot", "spot", "and/or", "critical", "and", "well", "established", "functional", "domain", "without", "benign", "variation", ")", ",", "PM2", "(", "the", "variants", "are", "not", "present", "in", "population", "databases", ")", "and", "PP3", "(", "algorithms", "developed", "to", "predict", "the", "effect", "of", "missense", "changes", "on", "protein", "structure", "and", "function", "suggest", "that", "the", "variants", "are", "likely", "to", "be", "disruptive", ",", "but", "these", "predictions", "have", "not", "been", "confirmed", "by", "published", "functional", "studies", "and", "their", "clinical", "significance", "is", "uncertain", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "summary", ",", "as", "the", "available", "evidence", "is", "currently", "insufficient", "to", "determine", "the", "pathogenicity", "of", "the", "two", "variants", "in", "disease", ",", "they", "have", "been", "classified", "as", "a", "VUS", "." ]
+  }, {
+    "sentence_tokens" : [ "Hence", ",", "the", "distinction", "between", "a", "deleterious", "mutation", "and", "a", "rare", "polymorphic", "variant", "may", "be", "difficult", "in", "isolated", "cases", "when", "the", "variant", "is", "unknown", ",", "except", "when", "de", "novo", "occurrence", "can", "be", "established", "[", "15", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Our", "patients", "provide", "crucial", "evidence", "that", "these", "two", "VUS", "could", "be", "upgraded", "as", "likely", "pathogenic", "." ]
+  }, {
+    "sentence_tokens" : [ "Ultimately", ",", "based", "on", "our", "two", "patients", ",", "five", "other", "patients", "carrying", "either", "of", "the", "two", "mutations", "submitted", "in", "ClinVar", "(", "http://www.ncbi.nlm.nih.gov/clinvar/", ")", "all", "around", "the", "world", "could", "be", "diagnosed", "genetically.In", "conclusion", ",", "we", "reported", "two", "novel", "de", "novo", "ATP1A2", "variants", "and", "additional", "phenotypes", "associated", "with", "AHC", "in", "two", "Chinese", "patients", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "case", "series", "not", "only", "further", "strengthened", "the", "causal", "relationship", "between", "ATP1A2", "and", "AHC", "but", "also", "extended", "the", "clinical", "phenotype", "of", "Chinese", "AHC", "associated", "with", "ATP1A2", "pathogenic", "variants", "." ]
+  }, {
+    "sentence_tokens" : [ "More", "importantly", ",", "our", "study", "upgraded", "the", "variant", "classification", "of", "the", "two", "novel", "ATP1A2", "variants", "(", "c.970G", ">", "A", ",", "c.889G", ">", "A", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Our", "study", "is", "a", "good", "example", "of", "a", "rare", "case", "series", "that", "helps", "to", "interpret", "genetic", "tests", "in", "molecular", "diagnosis", "practice", "and", "upgrade", "the", "variant", "classification", "in", "ClinVar", "." ]
+  } ]
+}

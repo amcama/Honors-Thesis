@@ -1,99 +1,506 @@
-[ {
-  "sentence_tokens" : [ "urate", ")", ",", "anemia", ",", "malnutrition", ",", "sodium", "and", "water", "retention", ",", "and", "abnormal", "calcium", "and", "phosphorus", "regulation", "may", "contribute", "to", "cerebrovascular", "disease", "." ],
-  "event_indices" : [ 16, 17, 18, 19, 20, 21, 22, 23 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 16, 17 ],
-  "controlled_indices" : [ 21, 22, 23 ],
-  "trigger_indices" : [ 19, 20 ],
-  "rule_name" : "Positive_activation_syntax_7_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Objective", ":", "Cerebral", "small", "vessel", "disease", "(", "CSVD", ")", "and", "chronic", "kidney", "disease", "(", "CKD", ")", "may", "be", "part", "of", "a", "multisystem", "small-vessel", "disorder", "." ],
-  "entity_one_indices" : [ 11, 12, 13 ],
-  "entity_two_indices" : [ 2, 3, 4, 5, 6 ]
-}, {
-  "sentence_tokens" : [ "Thus", "EGFR", "may", "also", "be", "of", "value", "in", "the", "prediction", "of", "cerebral", "small", "vessel", "disease", "." ],
-  "entity_one_indices" : [ 11, 12, 13, 14, 15 ],
-  "entity_two_indices" : [ 1, 2 ]
-}, {
-  "sentence_tokens" : [ "Parenchymal", "brain", "lesions", "are", "considered", "to", "be", "caused", "by", "pathologic", "changes", "in", "small", "blood", "vessels", ",", "which", "are", "collectively", "a", "sign", "of", "cerebral", "small", "vessel", "disease", "(", "CSVD", ")", "[", "2", "-", "5", "]", "." ],
-  "entity_one_indices" : [ 29, 30, 31, 32, 33, 34 ],
-  "entity_two_indices" : [ 22, 23, 24, 25, 26 ]
-}, {
-  "sentence_tokens" : [ "eGFR", "decrease", ">", "10", "mL/min/year", "If", "eGFR", "decreased", "by", "greater", "than", "10", "mL/min", "or", "CKD", "severity", "progressed", "in", "stage", ",", "patients", "were", "assigned", "to", "the", "progressive", "group", "[", "11,12", "]", "." ],
-  "entity_one_indices" : [ 6, 7 ],
-  "entity_two_indices" : [ 0, 1 ]
-}, {
-  "sentence_tokens" : [ "A", "3T", "MR", "scanner", "(", "MAGNETOM", "Verio", ",", "Siemens", "Healthcare", ",", "Erlangen", ",", "Germany", ")", "with", "a", "32-channel", "head", "coil", "was", "used", "." ],
-  "entity_one_indices" : [ 19, 20 ],
-  "entity_two_indices" : [ 2, 3 ]
-}, {
-  "sentence_tokens" : [ "The", "imaging", "sequences", "included", "conventional", "MR", "sequences", "(", "T1-", "and", "T2", "weighted", "imaging", ")", "as", "well", "as", "DWI", "(", "diffusion", "weighted", "imaging", ")", "and", "SWI", "(", "susceptibility", "weighted", "imaging", ")", "." ],
-  "entity_one_indices" : [ 24, 25 ],
-  "entity_two_indices" : [ 5, 6 ]
-}, {
-  "sentence_tokens" : [ "A", "group", "of", "magnitude", ",", "phase", ",", "minimum", "intensity", "projection", "(", "MIP", ")", ",", "and", "SWI", "images", "were", "automatically", "reconstructed", "online", "." ],
-  "entity_one_indices" : [ 15, 16 ],
-  "entity_two_indices" : [ 11, 12 ]
-}, {
-  "sentence_tokens" : [ "Two", "neuroradiologists", "(", "with", "six", "and", "nine", "years", "of", "experience", ",", "respectively", ")", "were", "highly", "trained", "before", "they", "reviewed", "images", ",", "and", "blinded", "to", "all", "clinical", "details", ",", "and", "recorded", "the", "locations", "and", "VRS", ",", "WML", ",", "LI", ",", "and", "CMB", "ratings", "." ],
-  "entity_one_indices" : [ 37, 38 ],
-  "entity_two_indices" : [ 35, 36 ]
-}, {
-  "sentence_tokens" : [ "We", "rated", "VRSs", "on", "T2", "imaging", "(", "with", "all", "sequences", "available", ")", "in", "the", "basal", "ganglia", "and", "centrum", "semiovale", "as", "0", "=", "none", ",", "1", "=", "1", "-", "10", ",", "2", "=", "11", "-", "20", ",", "3", "=", "21", "-", "40", ",", "and", "4", "=", ">", "40", "enlarged", "perivascular", "spaces", "per", "side", ",", "using", "the", "higher", "side", "if", "they", "were", "asymmetric", "." ],
-  "entity_one_indices" : [ 56, 57 ],
-  "entity_two_indices" : [ 51, 52 ]
-}, {
-  "sentence_tokens" : [ "LI", "of", "presumed", "vascular", "origin", "was", "defined", "as", "a", "round", "or", "ovoid", ",", "subcortical", ",", "fluid", "filled", "cavity", ",", "consistent", "with", "a", "small", "previously", "acute", "subcortical", "infarct", "or", "hemorrhage", "in", "the", "territory", "of", "a", "perforating", "arteriole", "(", "Figure", "2", ")", "." ],
-  "entity_one_indices" : [ 28, 29 ],
-  "entity_two_indices" : [ 0, 1 ]
-}, {
-  "sentence_tokens" : [ "A", "CMB", "on", "SWI", "MR", "images", "was", "defined", "as", "a", "2", "-", "5", "mm", "diameter", "uniform", "oval", ",", "low-signal", "focus", "with", "no", "surrounding", "edema", "." ],
-  "entity_one_indices" : [ 23, 24 ],
-  "entity_two_indices" : [ 3, 4, 5 ]
-}, {
-  "sentence_tokens" : [ "Lobar", "MRI", "landmarks", "were", "defined", "according", "to", "Stark", "and", "Bradley", "and", "included", "cortical", "and", "subcortical", "regions", "(", "including", "subcortical", "U", "fibers", ")", "." ],
-  "entity_one_indices" : [ 7, 8 ],
-  "entity_two_indices" : [ 1, 2 ]
-}, {
-  "sentence_tokens" : [ "There", "was", "no", "significant", "difference", "between", "the", "two", "groups", "in", "terms", "of", "age", ",", "gender", ",", "hypertension", ",", "diabetes", "and", "smoking", "." ],
-  "entity_one_indices" : [ 20, 21 ],
-  "entity_two_indices" : [ 16, 17 ]
-}, {
-  "sentence_tokens" : [ "Lower", "eGFR", "was", "a", "risk", "factor", "for", "both", "ischemic", "and", "hemorrhagic", "stroke", "." ],
-  "entity_one_indices" : [ 11, 12 ],
-  "entity_two_indices" : [ 1, 2 ]
-}, {
-  "sentence_tokens" : [ "It", "is", "widely", "accepted", "that", "chronic", "renal", "insufficiency", "is", "an", "independent", "risk", "factor", "for", "cerebrovascular", "disease", "[", "13,14", "]", "." ],
-  "entity_one_indices" : [ 14, 15, 16 ],
-  "entity_two_indices" : [ 5, 6, 7, 8 ]
-}, {
-  "sentence_tokens" : [ "Relationship", "of", "VRS", ",", "LI", ",", "and", "renal", "function", "." ],
-  "entity_one_indices" : [ 4, 5 ],
-  "entity_two_indices" : [ 2, 3 ]
-}, {
-  "sentence_tokens" : [ "LI", "was", "not", "significantly", "associated", "with", "eGFR", "." ],
-  "entity_one_indices" : [ 6, 7 ],
-  "entity_two_indices" : [ 0, 1 ]
-}, {
-  "sentence_tokens" : [ "The", "results", "of", "the", "present", "study", "are", "consistent", "with", "these", "conclusions", ",", "specifically", "that", "as", "renal", "function", "declines", ",", "the", "greater", "the", "degree", "of", "white", "matter", "degeneration", ",", "and", "the", "higher", "the", "incidence", "of", "CSVD.Possible", "explanations", "underlying", "the", "observed", "relationship", "between", "CKD", "and", "CSVD", "include", ":", "(", "1", ")", "microvasculature", "of", "the", "kidney", "and", "brain", "are", "similar", "in", "structure", "and", "function", ",", "as", "well", "as", "in", "microvascular", "regulation", ";", "(", "2", ")", "the", "vascular", "resistance", "of", "both", "organs", "is", "low", ",", "thus", "allowing", "high", "blood", "volumes", "to", "perfuse", "continuously", ";", "(", "3", ")", "both", "organs", "are", "particularly", "susceptible", "to", "atherosclerosis", ";", "(", "4", ")", "kidney", "damage", "is", "characterized", "by", "abnormalities", "in", "glomerular", "endothelial", "cell", "function", ",", "and", "WML", "is", "caused", "by", "endothelial", "cell", "dysfunction", ";", "(", "5", ")", "when", "chronic", "kidney", "disease", "progresses", ",", "associated", "factors", "such", "as", "accumulation", "of", "toxins", "(", "e.g", "." ],
-  "entity_one_indices" : [ 130, 131, 132 ],
-  "entity_two_indices" : [ 99, 100 ]
-}, {
-  "sentence_tokens" : [ "We", "used", "SWI", "sequence", "to", "detect", "the", "occurrence", "and", "progression", "of", "CMB", ";", "its", "sensitivity", "and", "accuracy", "has", "been", "widely", "recognized", "[", "18,19", "]", "." ],
-  "entity_one_indices" : [ 11, 12 ],
-  "entity_two_indices" : [ 2, 3 ]
-}, {
-  "sentence_tokens" : [ "Brain", "atrophy", "is", "sometimes", "considered", "another", "potential", "MRI", "feature", "of", "CSVD", "." ],
-  "entity_one_indices" : [ 7, 8 ],
-  "entity_two_indices" : [ 1, 2 ]
-}, {
-  "sentence_tokens" : [ "Although", "studies", "have", "suggested", "an", "association", "between", "brain", "atrophy", "and", "CSVD", ",", "brain", "atrophy", "is", "not", "specific", "to", "CSVD", ",", "often", "occurring", "in", "many", "other", "conditions", "." ],
-  "entity_one_indices" : [ 13, 14 ],
-  "entity_two_indices" : [ 8, 9 ]
-}, {
-  "sentence_tokens" : [ "Therefore", ",", "our", "study", "did", "not", "include", "brain", "atrophy", "as", "a", "consideration", "for", "the", "detection", "or", "assessment", "of", "CSVD.The", "results", "of", "this", "study", "support", "a", "relationship", "between", "the", "deterioration", "of", "renal", "function", "and", "cerebrovascular", "disease", ",", "but", "the", "mechanism", "underlying", "this", "relationship", "is", "not", "clear", "and", "needs", "further", "research", "." ],
-  "entity_one_indices" : [ 33, 34, 35 ],
-  "entity_two_indices" : [ 8, 9 ]
-} ]
+{
+  "regulations" : [ {
+    "sentence_tokens" : [ "urate", ")", ",", "anemia", ",", "malnutrition", ",", "sodium", "and", "water", "retention", ",", "and", "abnormal", "calcium", "and", "phosphorus", "regulation", "may", "contribute", "to", "cerebrovascular", "disease", "." ],
+    "event_indices" : [ 16, 17, 18, 19, 20, 21, 22, 23 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 16, 17 ],
+    "controlled_indices" : [ 21, 22, 23 ],
+    "trigger_indices" : [ 19, 20 ],
+    "rule_name" : "Positive_activation_syntax_7_verb",
+    "rule" : null
+  } ],
+  "hardInstances" : [ {
+    "sentence_tokens" : [ "urate", ")", ",", "anemia", ",", "malnutrition", ",", "sodium", "and", "water", "retention", ",", "and", "abnormal", "calcium", "and", "phosphorus", "regulation", "may", "contribute", "to", "cerebrovascular", "disease", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 5, 6 ], [ 7, 8 ], [ 14, 15 ] ]
+  } ],
+  "withoutRegulations" : [ {
+    "sentence_tokens" : [ "Of", "the", "52", "patients", "with", "CKD", ",", "17", "were", "classified", "into", "a", "progressive", "group", "and", "35", "were", "included", "in", "the", "stable", "group", "." ],
+    "entities_indices" : [ [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "Previous", "studies", "have", "reported", "conflicting", "findings", "regarding", "the", "association", "between", "LI", "and", "eGFR", ",", "with", "some", "concluding", "that", "decreased", "eGFR", "tended", "to", "be", "associated", "with", "a", "higher", "prevalence", "of", "LI", ",", "while", "other", "studies", "did", "not", "support", "this", "interpretation", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 12, 13 ], [ 19, 20 ], [ 29, 30 ] ]
+  }, {
+    "sentence_tokens" : [ "Chronic", "kidney", "disease", "correlates", "with", "MRI", "findings", "of", "cerebral", "small", "vessel", "disease", "." ],
+    "entities_indices" : [ [ 1, 2, 3 ], [ 5, 6 ], [ 8, 9, 10, 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "Although", "studies", "have", "suggested", "an", "association", "between", "brain", "atrophy", "and", "CSVD", ",", "brain", "atrophy", "is", "not", "specific", "to", "CSVD", ",", "often", "occurring", "in", "many", "other", "conditions", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "Age", ",", "gender", ",", "hypertension", ",", "diabetes", "and", "smoking", "were", "matched", "between", "groups", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 4, 5 ], [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "eGFR", "may", "reflect", "a", "more", "generalized", "process", "indicative", "of", "underlying", "vascular", "damage", ",", "not", "limited", "solely", "to", "the", "kidney.It", "is", "a", "bold", "speculation", "that", "when", "CSVD", "progresses", ",", "renal", "function", "in", "patients", "with", "CKD", "may", "correspondingly", "decline", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "Thus", "EGFR", "may", "also", "be", "of", "value", "in", "the", "prediction", "of", "cerebral", "small", "vessel", "disease", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 11, 12, 13, 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "Magnetic", "Resonance", "(", "MR", ")", "imaging", "is", "used", "to", "evaluate", "CSVD", "progression", ",", "as", "measured", "by", "VRS", "size", ",", "white", "matter", "lesions", "(", "WML", ")", ",", "presence", "of", "lacunar", "infarcts", "(", "LI", ")", ",", "and", "cerebral", "microbleeds", "(", "CMB", ")", "." ],
+    "entities_indices" : [ [ 0, 1, 2 ], [ 3, 4 ], [ 31, 32 ] ]
+  }, {
+    "sentence_tokens" : [ "Protocols", "were", "as", "follows", ":", "(", "1", ")", "T2-FOV", "250", "mm", ",", "TR/TE", "6000/95", "ms", ",", "flip", "angle", "150", "degrees", ",", "matrix", "384", "x", "384", ",", "slice", "thickness", "6", "mm", ",", "distance", "factor", "30", "%", ";", "(", "2", ")", "T1", "FLAIR-FOV", "250", "mm", ",", "TR/TE", "2,000/9", "ms", ",", "flip", "angle", "150", "degrees", ",", "matrix", "320", "x", "320", ",", "slice", "thickness", "6", "mm", ",", "distance", "factor", "30", "%", ";", "and", "(", "3", ")", "SWI-FOV", "230", "mm", ",", "TR/TE", "28/20", "ms", ",", "flip", "angle", "15", "degrees", ",", "matrix", "320", "x", "320", ",", "resolution", "0.76", "x", "0.76", "x", "1.2", ",", "slice", "thickness", "1.2", "mm", ",", "distance", "factor", "30", "%", "." ],
+    "entities_indices" : [ [ 12, 13, 14, 15 ], [ 44, 45, 46, 47 ], [ 76, 77, 78, 79 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "CMB", "on", "SWI", "MR", "images", "was", "defined", "as", "a", "2", "-", "5", "mm", "diameter", "uniform", "oval", ",", "low-signal", "focus", "with", "no", "surrounding", "edema", "." ],
+    "entities_indices" : [ [ 3, 4, 5 ], [ 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "These", "vessels", "have", "poor", "collateral", "anastomoses", ",", "causing", "increased", "susceptibility", "to", "ischemic", "or", "hemorrhagic", "stroke", "in", "the", "brainstem", "and", "deep", "white", "matter", "of", "the", "central", "nervous", "system", "." ],
+    "entities_indices" : [ [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "Pathologic-radiologic", "correlation", "studies", "have", "revealed", "that", "CMBs", "are", "focal", "accumulations", "of", "hemosiderin", "adjacent", "to", "abnormal", "blood", "vessels", "demonstrating", "fibrolipohyalinosis", "or", "amyloid", "microangiopathy", "." ],
+    "entities_indices" : [ [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "CKD", "associated", "pathological", "changes", "in", "small", "vessels", "of", "the", "kidneys", "may", "also", "exist", "in", "small", "brain", "arteries", "[", "9", "]", "." ],
+    "entities_indices" : [ [ 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "study", "also", "found", "that", "when", "CKD", "patients", "with", "declining", "eGFR", "also", "had", "progressive", "cerebrovascular", "disease", ",", "CKD", "and", "CSVD", "may", "have", "been", "correlated", ";", "the", "greater", "the", "degree", "of", "intracranial", "lesion", "burden", ",", "the", "more", "eGFR", "decreased", ",", "suggesting", "that", "eGFR", "may", "be", "a", "predictor", "of", "ischemic", "or", "hemorrhagic", "stroke.Features", "of", "CSVD", "include", "enlarged", "VRS", "and", "the", "presence", "of", "white", "matter", "lesions", "(", "WML", ")", ",", "lacunar", "infarcts", "(", "LI", ")", ",", "and", "cerebral", "microbleeds", "(", "CMB", ")", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 14, 15, 16 ], [ 36, 37 ], [ 41, 42 ], [ 52, 53 ], [ 70, 71 ] ]
+  }, {
+    "sentence_tokens" : [ "Lobar", "MRI", "landmarks", "were", "defined", "according", "to", "Stark", "and", "Bradley", "and", "included", "cortical", "and", "subcortical", "regions", "(", "including", "subcortical", "U", "fibers", ")", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "CKD", "is", "defined", "as", "a", "variety", "of", "causes", "of", "chronic", "kidney", "structure", "and", "dysfunction", "(", "history", "of", "renal", "damage", "over", "3", "months", ")", ",", "with", "or", "without", "changes", "in", "eGFR", ",", "abnormal", "blood", "or", "urine", "components", ",", "and", "abnormal", "imaging", "studies", "or", "unexplained", "decrease", "in", "eGFR", "(", "<", "60", "mL/min/1.73", "m", ")", "for", "more", "than", "3", "months", ";", "(", "2", ")", "Patients", "were", "followed", "for", "10", "-", "20", "months", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 29, 30 ], [ 45, 46 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "results", "of", "the", "present", "study", "are", "consistent", "with", "these", "conclusions", ",", "specifically", "that", "as", "renal", "function", "declines", ",", "the", "greater", "the", "degree", "of", "white", "matter", "degeneration", ",", "and", "the", "higher", "the", "incidence", "of", "CSVD.Possible", "explanations", "underlying", "the", "observed", "relationship", "between", "CKD", "and", "CSVD", "include", ":", "(", "1", ")", "microvasculature", "of", "the", "kidney", "and", "brain", "are", "similar", "in", "structure", "and", "function", ",", "as", "well", "as", "in", "microvascular", "regulation", ";", "(", "2", ")", "the", "vascular", "resistance", "of", "both", "organs", "is", "low", ",", "thus", "allowing", "high", "blood", "volumes", "to", "perfuse", "continuously", ";", "(", "3", ")", "both", "organs", "are", "particularly", "susceptible", "to", "atherosclerosis", ";", "(", "4", ")", "kidney", "damage", "is", "characterized", "by", "abnormalities", "in", "glomerular", "endothelial", "cell", "function", ",", "and", "WML", "is", "caused", "by", "endothelial", "cell", "dysfunction", ";", "(", "5", ")", "when", "chronic", "kidney", "disease", "progresses", ",", "associated", "factors", "such", "as", "accumulation", "of", "toxins", "(", "e.g", "." ],
+    "entities_indices" : [ [ 99, 100 ], [ 130, 131, 132 ] ]
+  }, {
+    "sentence_tokens" : [ "There", "was", "no", "significant", "change", "in", "VRS", ",", "WML", ",", "LI", ",", "or", "CMB", "at", "initial", "exam", "compared", "to", "follow-up", "in", "the", "stable", "group", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "study", "shows", "that", "with", "deterioration", "of", "renal", "function", ",", "as", "reflected", "in", "decreased", "eGFR", ",", "the", "patient", "group", "with", "progressive", "CKD", "had", "a", "greater", "degree", "of", "white", "matter", "degeneration", "and", "more", "CMB", "lesions", "." ],
+    "entities_indices" : [ [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "our", "study", "did", "not", "include", "brain", "atrophy", "as", "a", "consideration", "for", "the", "detection", "or", "assessment", "of", "CSVD.The", "results", "of", "this", "study", "support", "a", "relationship", "between", "the", "deterioration", "of", "renal", "function", "and", "cerebrovascular", "disease", ",", "but", "the", "mechanism", "underlying", "this", "relationship", "is", "not", "clear", "and", "needs", "further", "research", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 33, 34, 35 ] ]
+  }, {
+    "sentence_tokens" : [ "Similarly", ",", "we", "did", "not", "observe", "a", "significant", "difference", "in", "VRS", "size", "between", "initial", "exam", "(", "group", "2A", ")", "and", "follow-up", "(", "group", "2B", ")", "for", "the", "stable", "group", "(", "p", "=", "0.324", ")", "(", "Tables", "2", "-", "5", ")", "." ],
+    "entities_indices" : [ [ 35, 36, 37, 38, 39, 40 ] ]
+  }, {
+    "sentence_tokens" : [ "CSVD", "features", "of", "both", "groups", ",", "including", "enlarged", "Virchow-Robin", "spaces", "(", "VRS", ")", ",", "white", "matter", "lesions", "(", "WML", ")", ",", "lacunar", "infarcts", "(", "LI", ")", ",", "and", "cerebral", "microbleeds", "(", "CMB", ")", "were", "evaluated", "by", "magnetic", "resonance", "(", "MR", ")", "imaging.Results", ":", "WML", "and", "CMB", "in", "the", "progressive", "group", "were", "exacerbated", "at", "follow-up", "compared", "to", "initial", "exam", "(", "p", "=", "0.004", "and", "0.041", ",", "respectively", ")", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 24, 25 ], [ 36, 37, 38 ], [ 39, 40 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "follow-up", "time", "in", "this", "study", "may", "have", "been", "too", "short", "to", "fully", "evaluate", "and", "detect", "relevant", "changes", "in", "LI", "and", "VRS", "." ],
+    "entities_indices" : [ [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "presence", "of", "CMB", "were", "significantly", "different", "between", "the", "progressive", "group", "and", "stable", "group", "at", "follow-up", "(", "p", "=", "0.004", ")", "." ],
+    "entities_indices" : [ [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "Inclusion", "criteria", "were", "as", "follows", ":", "(", "1", ")", "met", "clinical", "diagnostic", "criteria", "for", "CKD", ",", "stage", "III", "or", "IV", ",", "as", "defined", "according", "to", "the", "Kidney", "Disease", "Outcomes", "Quality", "Initiative", "(", "KDOQI", ")", "." ],
+    "entities_indices" : [ [ 26, 27, 28 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "group", "of", "magnitude", ",", "phase", ",", "minimum", "intensity", "projection", "(", "MIP", ")", ",", "and", "SWI", "images", "were", "automatically", "reconstructed", "online", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "There", "was", "no", "significant", "difference", "between", "the", "two", "groups", "in", "terms", "of", "age", ",", "gender", ",", "hypertension", ",", "diabetes", "and", "smoking", "." ],
+    "entities_indices" : [ [ 16, 17 ], [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "MR", "examination", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "Lower", "eGFR", "was", "a", "risk", "factor", "for", "both", "ischemic", "and", "hemorrhagic", "stroke", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "Chi-square", "tests", "were", "used", "to", "compare", "the", "differences", "between", "groups", "of", "LI/CMB", "." ],
+    "entities_indices" : [ [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "finding", "is", "consistent", "with", "a", "study", "by", "Xiao", "et", "al", ".,", "who", "concluded", "that", "impaired", "estimated", "glomerular", "filtration", "rate", "is", "associated", "with", "severity", "of", "VRS", "enlargement", "[", "15", "]", "." ],
+    "entities_indices" : [ [ 17, 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "Conclusions", ":", "Patients", "with", "progressive", "CKD", "have", "a", "higher", "prevalence", "and", "severity", "of", "CSVD", ",", "which", "correlates", "with", "deterioration", "of", "renal", "function", "as", "assessed", "by", "decreased", "eGFR", "." ],
+    "entities_indices" : [ [ 26, 27 ] ]
+  }, {
+    "sentence_tokens" : [ "No", "significant", "difference", "was", "observed", "between", "group", "2A", "group", "2B", "(", "p", "=", "0.083", ")", "(", "Tables", "2", "-", "5", ")", "." ],
+    "entities_indices" : [ [ 16, 17, 18, 19, 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "eGFR", "was", "significantly", "correlated", "with", "VRS", ",", "WML", ",", "and", "CMB", "at", "follow-up", "group", "(", "all", "participants", ",", "n", "=", "52", ")", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "Estimated", "glomerular", "filtration", "rate", "(", "eGFR", ")", "is", "used", "to", "approximate", "the", "degree", "of", "renal", "dysfunction", "in", "chronic", "kidney", "disease", ",", "specifically", "as", "an", "estimate", "of", "the", "extent", "of", "functional", "nephron", "loss", ",", "and", "as", "such", "may", "be", "useful", "to", "guide", "the", "diagnosis", "and", "treatment", "of", "kidney", "disease.The", "earliest", "CKD", "associated", "lesion", "occurring", "in", "the", "nervous", "system", "is", "damage", "to", "small", "blood", "vessels", ",", "including", "small", "arteries", ",", "arterioles", ",", "capillaries", ",", "and", "small", "veins", "[", "1", "]", "." ],
+    "entities_indices" : [ [ 1, 2, 3 ], [ 5, 6 ], [ 18, 19, 20 ], [ 30, 31 ] ]
+  }, {
+    "sentence_tokens" : [ "Two", "neuroradiologists", "(", "with", "six", "and", "nine", "years", "of", "experience", ",", "respectively", ")", "were", "highly", "trained", "before", "they", "reviewed", "images", ",", "and", "blinded", "to", "all", "clinical", "details", ",", "and", "recorded", "the", "locations", "and", "VRS", ",", "WML", ",", "LI", ",", "and", "CMB", "ratings", "." ],
+    "entities_indices" : [ [ 35, 36 ], [ 37, 38 ] ]
+  }, {
+    "sentence_tokens" : [ "Chronic", "kidney", "disease", "has", "been", "reported", "to", "be", "associated", "with", "LI", ",", "WML", ",", "and", "CMB", "." ],
+    "entities_indices" : [ [ 1, 2, 3 ], [ 10, 11 ], [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "Objective", ":", "Cerebral", "small", "vessel", "disease", "(", "CSVD", ")", "and", "chronic", "kidney", "disease", "(", "CKD", ")", "may", "be", "part", "of", "a", "multisystem", "small-vessel", "disorder", "." ],
+    "entities_indices" : [ [ 2, 3, 4, 5, 6 ], [ 11, 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "Written", "informed", "consent", "for", "the", "use", "of", "data", "was", "obtained", "from", "patients", "and", "volunteers", "prior", "to", "MRI", "scanning", "." ],
+    "entities_indices" : [ [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "All", "participants", "underwent", "MR", "examinations", "between", "December", "2015", "and", "December", "2017", "." ],
+    "entities_indices" : [ [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "Peripheral", "space", "around", "blood", "vessels", "on", "MRI", "show", "clear", "boundaries", "in", "sharp", "oval-,", "round-,", "or", "tubular", "shaped", "structures", "(", "due", "to", "the", "location", "and", "type", "of", "cut", "--", "axial", ",", "sagittal", ",", "or", "coronal", ")", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 11, 12, 13, 14 ], [ 24, 25 ], [ 26, 27 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "is", "consistent", "with", "the", "travel", "of", "the", "perforated", "vessels.VRSs", "are", "mainly", "found", "in", "three", "typical", "positions", ":", "type", "I", "is", "found", "along", "the", "artery", "in", "the", "basal", "ganglia", ",", "type", "II", "is", "along", "the", "medullary", "artery", "in", "the", "brain", "convexity", "and", "extending", "into", "the", "white", "matter", "below", "the", "cortex", ",", "and", "type", "III", "is", "found", "in", "the", "midbrain", "." ],
+    "entities_indices" : [ [ 18, 19 ], [ 30, 31 ], [ 52, 53 ] ]
+  }, {
+    "sentence_tokens" : [ "All", "regions", "were", "presented", "for", "easy", "reference", "in", "an", "anatomical", "diagram", "(", "drawn", "by", "S.M.G", ")", "." ],
+    "entities_indices" : [ [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "Further", "study", "is", "required", "to", "clarify", "these", "issues.In", "conclusion", ",", "imaging", "findings", "suggest", "that", "there", "is", "a", "significant", "relationship", "between", "patients", "with", "progressive", "CKD", "and", "CSVD", ",", "especially", "as", "indicated", "by", "VRS", ",", "WML", ",", "and", "CMB", ",", "although", "the", "mechanism", "underlying", "this", "relationship", "remains", "to", "be", "understood", "." ],
+    "entities_indices" : [ [ 36, 37 ] ]
+  }, {
+    "sentence_tokens" : [ "Between", "December", "2015", "and", "December", "2017", ",", "55", "patients", "with", "CKD", "were", "enrolled", "in", "this", "study", ";", "three", "were", "lost", "to", "follow-up", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "There", "were", "also", "no", "differences", "using", "Pearson", "correlation", "between", "VRS/WML/LI/CMB", "scores", "in", "terms", "of", "follow-up", "durations", "." ],
+    "entities_indices" : [ [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "Chronic", "kidney", "disease", "is", "often", "accompanied", "by", "metabolic", "disturbances", ",", "disorders", "of", "water", ",", "electrolytes", ",", "and", "acid-base", "balance", ",", "and", "pathology", "of", "the", "nervous", "system", "." ],
+    "entities_indices" : [ [ 1, 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "Definite", "microbleeds", "were", "defined", "as", "small", ",", "rounded", "or", "circular", ",", "well", "defined", "hypointense", "lesions", "within", "brain", "parenchyma", "with", "clear", "margins", "ranging", "from", "2", "to", "10", "mm", "in", "size", "on", "SWI", "images", ";", "possible", "microbleeds", "were", "less", "well", "defined", ",", "less", "hypointense", ",", "or", "not", "strictly", "rounded", "or", "circular", "." ],
+    "entities_indices" : [ [ 30, 31 ] ]
+  }, {
+    "sentence_tokens" : [ "Pearson", "'s", "correlation", "for", "eGFR", "with", "VRS", ",", "WML", ",", "LI", ",", "and", "CMB", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 6, 7 ], [ 8, 9 ], [ 10, 11 ], [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "used", "SWI", "sequence", "to", "detect", "the", "occurrence", "and", "progression", "of", "CMB", ";", "its", "sensitivity", "and", "accuracy", "has", "been", "widely", "recognized", "[", "18,19", "]", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "CMB", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "There", "was", "no", "significant", "change", "in", "VRS", ",", "WML", ",", "LI", ",", "or", "CMB", "in", "the", "stable", "group", "at", "follow-up", "compared", "to", "initial", "exam", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "Relationship", "of", "VRS", ",", "LI", ",", "and", "renal", "function", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "WML", "is", "one", "of", "manifestation", "of", "cerebrovascular", "disease", ",", "and", "is", "closely", "related", "to", "cerebral", "ischemia", ",", "stroke", ",", "degeneration", ",", "and", "many", "other", "neurologic", "diseases", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 6, 7, 8 ], [ 15, 16 ], [ 17, 18 ], [ 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "CSVD", "in", "the", "progressive", "group", "was", "exacerbated", "as", "WML", "and", "CMB", "progressed.A", "meta-analysis", "conducted", "by", "Lee", "et", "al.", "concluded", "that", "that", "the", "risk", "of", "stroke", "increased", "in", "subjects", "with", "an", "eGFR", "<", "60", "mL/min/1.73", "m", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 10, 11, 12 ], [ 24, 25 ], [ 30, 31 ] ]
+  }, {
+    "sentence_tokens" : [ "Pearson", "'", "s", "correlation", "was", "used", "to", "evaluate", "the", "relationship", "between", "eGFR", "and", "VRS", ",", "WML", ",", "LI", ",", "and", "CMB", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 13, 14 ], [ 15, 16 ], [ 17, 18 ], [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "Related", "to", "endothelial", "dysfunction", ",", "one", "study", "found", "that", "Klotho", ",", "a", "protein", "expressed", "by", "the", "distal", "vessels", "of", "the", "kidney", ",", "is", "decreased", "in", "chronic", "kidney", "disease", ",", "leading", "to", "abnormal", "vascular", "endothelial", "function", "and", "cerebrovascular", "disease", "." ],
+    "entities_indices" : [ [ 9, 10 ], [ 26, 27, 28 ], [ 36, 37, 38 ] ]
+  }, {
+    "sentence_tokens" : [ "Since", "the", "kidney", "and", "brain", "share", "unique", "susceptibilities", "to", "vascular", "injury", ",", "kidney", "impairment", "may", "be", "predictive", "of", "the", "presence", "and", "severity", "of", "CSVD", "." ],
+    "entities_indices" : [ [ 9, 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "No", "significant", "difference", "was", "observed", "between", "the", "progressive", "group", "at", "initial", "exam", "(", "group", "1", "A", ")", "and", "follow-up", "(", "group", "1B", ")", ",", "or", "between", "the", "stable", "group", "at", "initial", "exam", "(", "group", "2A", ")", "and", "follow-up", "(", "group", "2B", ")", "(", "p", "=", "0.332", "and", "0.324", ",", "respectively", ")", "(", "Tables", "2", "-", "5", ")", "." ],
+    "entities_indices" : [ [ 52, 53, 54, 55, 56, 57 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "3T", "MR", "scanner", "(", "MAGNETOM", "Verio", ",", "Siemens", "Healthcare", ",", "Erlangen", ",", "Germany", ")", "with", "a", "32-channel", "head", "coil", "was", "used", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "Features", "of", "silent", "cerebral", "small", "vessel", "disease", "include", "enlarged", "Virchow-Robin", "spaces", "(", "VRS", ")", ",", "white", "matter", "lesions", "(", "WML", ")", ",", "lacunar", "infarcts", "(", "LI", ")", ",", "and", "cerebral", "microbleeds", "(", "CMB", ")", "." ],
+    "entities_indices" : [ [ 3, 4, 5, 6, 7 ], [ 9, 10 ], [ 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "If", "eGFR", "decreased", "by", "less", "than", "10", "mL/min", ",", "patients", "were", "assigned", "to", "the", "stable", "group", "(", "Figure", "1", ",", "Table", "1", ")", "." ],
+    "entities_indices" : [ [ 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "study", ",", "VRS", "was", "significantly", "correlated", "with", "eGFR", "." ],
+    "entities_indices" : [ [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "Only", "eGFR", "at", "follow-up", "was", "found", "to", "have", "a", "significant", "relationship", "with", "follow-up", "measures", "of", "VRS", ",", "WML", ",", "and", "CMB", "(", "correlation", "coefficients", "=", "-", "0.290", ",", "-", "0.284", ",", "-", "0.358", ",", "respectively", ";", "p", "=", "0.037", ",", "0.041", ",", "0.009", ",", "respectively", ")", "(", "Tables", "6", "and", "7", ")", "." ],
+    "entities_indices" : [ [ 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "Silent", "markers", "of", "CSVD", "include", "enlarged", "VRS", ",", "white", "matter", "lesions", "(", "WMLs", ")", ",", "lacunar", "infarcts", "(", "LIs", ")", ",", "and", "cerebral", "microbleeds", "(", "CMBs", ")", "." ],
+    "entities_indices" : [ [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "Brain", "atrophy", "is", "sometimes", "considered", "another", "potential", "MRI", "feature", "of", "CSVD", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "CMB", "were", "significantly", "different", "between", "the", "progressive", "group", "and", "stable", "group", "at", "follow-up.etimtaed", "Glomerular", "filtration", "rate", "(", "eGFR", ")", "was", "significantly", "correlated", "with", "VRS", ",", "WML", ",", "and", "CMB", "at", "follow-up", "(", "p", "=", "0.037", ",", "0.041", ",", "and", "0.009", ",", "respectively", ")", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 13, 14, 15 ], [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "VRS", ",", "WML", ",", "and", "CMB", "significantly", "correlated", "with", "eGFR", ",", "suggesting", "that", "eGFR", "may", "not", "only", "contribute", "to", "the", "evaluation", "of", "renal", "function", "in", "patients", "with", "CKD", "but", "may", "also", "find", "utility", "in", "the", "prediction", "of", "cerebral", "small", "vessel", "disease", "." ],
+    "entities_indices" : [ [ 9, 10 ], [ 13, 14 ], [ 27, 28 ], [ 37, 38, 39, 40, 41 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "imaging", "sequences", "included", "conventional", "MR", "sequences", "(", "T1-", "and", "T2", "weighted", "imaging", ")", "as", "well", "as", "DWI", "(", "diffusion", "weighted", "imaging", ")", "and", "SWI", "(", "susceptibility", "weighted", "imaging", ")", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "eGFR", "decrease", ">", "10", "mL/min/year", "If", "eGFR", "decreased", "by", "greater", "than", "10", "mL/min", "or", "CKD", "severity", "progressed", "in", "stage", ",", "patients", "were", "assigned", "to", "the", "progressive", "group", "[", "11,12", "]", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "LI", "of", "presumed", "vascular", "origin", "was", "defined", "as", "a", "round", "or", "ovoid", ",", "subcortical", ",", "fluid", "filled", "cavity", ",", "consistent", "with", "a", "small", "previously", "acute", "subcortical", "infarct", "or", "hemorrhage", "in", "the", "territory", "of", "a", "perforating", "arteriole", "(", "Figure", "2", ")", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 28, 29 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "study", "explored", "the", "relationship", "between", "CSVD", "and", "CKD.Methods", ":", "Between", "December", "2015", "and", "December", "2017", "(", "follow-up", "10-20", "months", ")", "52", "patients", "with", "chronic", "nephritis", "and", "CKD", "were", "classified", "into", "a", "progressive", "group", "(", "n", "=", "17", ")", "and", "stable", "group", "(", "n", "=", "35", ")", "." ],
+    "entities_indices" : [ [ 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "LI", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "It", "is", "widely", "accepted", "that", "chronic", "renal", "insufficiency", "is", "an", "independent", "risk", "factor", "for", "cerebrovascular", "disease", "[", "13,14", "]", "." ],
+    "entities_indices" : [ [ 5, 6, 7, 8 ], [ 14, 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "rated", "VRSs", "on", "T2", "imaging", "(", "with", "all", "sequences", "available", ")", "in", "the", "basal", "ganglia", "and", "centrum", "semiovale", "as", "0", "=", "none", ",", "1", "=", "1", "-", "10", ",", "2", "=", "11", "-", "20", ",", "3", "=", "21", "-", "40", ",", "and", "4", "=", ">", "40", "enlarged", "perivascular", "spaces", "per", "side", ",", "using", "the", "higher", "side", "if", "they", "were", "asymmetric", "." ],
+    "entities_indices" : [ [ 51, 52 ], [ 56, 57 ] ]
+  }, {
+    "sentence_tokens" : [ "Parenchymal", "brain", "lesions", "are", "considered", "to", "be", "caused", "by", "pathologic", "changes", "in", "small", "blood", "vessels", ",", "which", "are", "collectively", "a", "sign", "of", "cerebral", "small", "vessel", "disease", "(", "CSVD", ")", "[", "2", "-", "5", "]", "." ],
+    "entities_indices" : [ [ 22, 23, 24, 25, 26 ], [ 29, 30, 31, 32, 33, 34 ] ]
+  }, {
+    "sentence_tokens" : [ "After", "passing", "the", "variance", "equality", "test", ",", "paired", "sample", "t-tests", "were", "used", "to", "compare", "the", "differences", "in", "VRS/WML/LI/CMB", "within", "the", "two", "groups", ",", "such", "as", "the", "difference", "between", "initial", "exam", "and", "follow-up", "for", "the", "progressive", "group", ",", "and", "the", "difference", "between", "initial", "exam", "and", "follow-up", "for", "the", "stable", "group", "(", "to", "the", "third", "decimal", "place", ")", "." ],
+    "entities_indices" : [ [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "These", "observations", "suggest", "that", "there", "is", "a", "higher", "prevalence", "of", "cerebrovascular", "disease", "in", "the", "group", "with", "progressive", "CKD", "." ],
+    "entities_indices" : [ [ 10, 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "CMBs", "are", "the", "radiologic", "correlates", "of", "extravasation", "of", "blood", "components", "through", "injured", "or", "fragile", "vascular", "walls", ",", "or", "of", "frank", "small", "hemorrhage", "spots", "[", "16,17", "]", "." ],
+    "entities_indices" : [ [ 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "No", "significant", "difference", "was", "observed", "between", "group", "2A", "and", "group", "2B", "(", "p", "=", "0.324", ")", "(", "Figure", "4", ",", "Tables", "2", "-", "5", ")", "." ],
+    "entities_indices" : [ [ 20, 21, 22, 23, 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "LI", "was", "not", "significantly", "associated", "with", "eGFR", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 6, 7 ] ]
+  } ],
+  "emptySentences" : [ {
+    "sentence_tokens" : [ "Chronic", "kidney", "disease", "correlates", "with", "MRI", "findings", "of", "cerebral", "small", "vessel", "disease", "." ]
+  }, {
+    "sentence_tokens" : [ "Abstract", "." ]
+  }, {
+    "sentence_tokens" : [ "Objective", ":", "Cerebral", "small", "vessel", "disease", "(", "CSVD", ")", "and", "chronic", "kidney", "disease", "(", "CKD", ")", "may", "be", "part", "of", "a", "multisystem", "small-vessel", "disorder", "." ]
+  }, {
+    "sentence_tokens" : [ "Since", "the", "kidney", "and", "brain", "share", "unique", "susceptibilities", "to", "vascular", "injury", ",", "kidney", "impairment", "may", "be", "predictive", "of", "the", "presence", "and", "severity", "of", "CSVD", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "study", "explored", "the", "relationship", "between", "CSVD", "and", "CKD.Methods", ":", "Between", "December", "2015", "and", "December", "2017", "(", "follow-up", "10-20", "months", ")", "52", "patients", "with", "chronic", "nephritis", "and", "CKD", "were", "classified", "into", "a", "progressive", "group", "(", "n", "=", "17", ")", "and", "stable", "group", "(", "n", "=", "35", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Age", ",", "gender", ",", "hypertension", ",", "diabetes", "and", "smoking", "were", "matched", "between", "groups", "." ]
+  }, {
+    "sentence_tokens" : [ "CSVD", "features", "of", "both", "groups", ",", "including", "enlarged", "Virchow-Robin", "spaces", "(", "VRS", ")", ",", "white", "matter", "lesions", "(", "WML", ")", ",", "lacunar", "infarcts", "(", "LI", ")", ",", "and", "cerebral", "microbleeds", "(", "CMB", ")", "were", "evaluated", "by", "magnetic", "resonance", "(", "MR", ")", "imaging.Results", ":", "WML", "and", "CMB", "in", "the", "progressive", "group", "were", "exacerbated", "at", "follow-up", "compared", "to", "initial", "exam", "(", "p", "=", "0.004", "and", "0.041", ",", "respectively", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "There", "was", "no", "significant", "change", "in", "VRS", ",", "WML", ",", "LI", ",", "or", "CMB", "in", "the", "stable", "group", "at", "follow-up", "compared", "to", "initial", "exam", "." ]
+  }, {
+    "sentence_tokens" : [ "CMB", "were", "significantly", "different", "between", "the", "progressive", "group", "and", "stable", "group", "at", "follow-up.etimtaed", "Glomerular", "filtration", "rate", "(", "eGFR", ")", "was", "significantly", "correlated", "with", "VRS", ",", "WML", ",", "and", "CMB", "at", "follow-up", "(", "p", "=", "0.037", ",", "0.041", ",", "and", "0.009", ",", "respectively", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Conclusions", ":", "Patients", "with", "progressive", "CKD", "have", "a", "higher", "prevalence", "and", "severity", "of", "CSVD", ",", "which", "correlates", "with", "deterioration", "of", "renal", "function", "as", "assessed", "by", "decreased", "eGFR", "." ]
+  }, {
+    "sentence_tokens" : [ "Thus", "EGFR", "may", "also", "be", "of", "value", "in", "the", "prediction", "of", "cerebral", "small", "vessel", "disease", "." ]
+  }, {
+    "sentence_tokens" : [ "Introduction", "." ]
+  }, {
+    "sentence_tokens" : [ "Chronic", "kidney", "disease", "is", "often", "accompanied", "by", "metabolic", "disturbances", ",", "disorders", "of", "water", ",", "electrolytes", ",", "and", "acid-base", "balance", ",", "and", "pathology", "of", "the", "nervous", "system", "." ]
+  }, {
+    "sentence_tokens" : [ "Estimated", "glomerular", "filtration", "rate", "(", "eGFR", ")", "is", "used", "to", "approximate", "the", "degree", "of", "renal", "dysfunction", "in", "chronic", "kidney", "disease", ",", "specifically", "as", "an", "estimate", "of", "the", "extent", "of", "functional", "nephron", "loss", ",", "and", "as", "such", "may", "be", "useful", "to", "guide", "the", "diagnosis", "and", "treatment", "of", "kidney", "disease.The", "earliest", "CKD", "associated", "lesion", "occurring", "in", "the", "nervous", "system", "is", "damage", "to", "small", "blood", "vessels", ",", "including", "small", "arteries", ",", "arterioles", ",", "capillaries", ",", "and", "small", "veins", "[", "1", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "These", "vessels", "have", "poor", "collateral", "anastomoses", ",", "causing", "increased", "susceptibility", "to", "ischemic", "or", "hemorrhagic", "stroke", "in", "the", "brainstem", "and", "deep", "white", "matter", "of", "the", "central", "nervous", "system", "." ]
+  }, {
+    "sentence_tokens" : [ "Parenchymal", "brain", "lesions", "are", "considered", "to", "be", "caused", "by", "pathologic", "changes", "in", "small", "blood", "vessels", ",", "which", "are", "collectively", "a", "sign", "of", "cerebral", "small", "vessel", "disease", "(", "CSVD", ")", "[", "2", "-", "5", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Features", "of", "silent", "cerebral", "small", "vessel", "disease", "include", "enlarged", "Virchow-Robin", "spaces", "(", "VRS", ")", ",", "white", "matter", "lesions", "(", "WML", ")", ",", "lacunar", "infarcts", "(", "LI", ")", ",", "and", "cerebral", "microbleeds", "(", "CMB", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "correlation", "between", "CKD", "and", "CSVD", "is", "mainly", "due", "to", "similar", "hemodynamics", ",", "anatomical", ",", "and", "functional", "features", "of", "the", "kidney", "and", "brain", "." ]
+  }, {
+    "sentence_tokens" : [ "Unlike", "most", "other", "organs", ",", "both", "the", "kidneys", "and", "the", "brain", "are", "low-impedance", "terminal", "organs", ",", "which", "are", "exposed", "to", "high-flow", "blood", "shocks", "throughout", "the", "whole", "cardiac", "cycle", "[", "6", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Similar", "hemodynamics", "can", "be", "observed", "in", "the", "kidney", "and", "brain", "vessel", "beds", "[", "7,8", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "CKD", "associated", "pathological", "changes", "in", "small", "vessels", "of", "the", "kidneys", "may", "also", "exist", "in", "small", "brain", "arteries", "[", "9", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Arteries", "are", "exposed", "to", "a", "high", "pressure", ",", "and", "must", "maintain", "strong", "vascular", "tone", "in", "order", "to", "provide", "a", "large", "pressure", "gradient", "over", "a", "short", "distance", "." ]
+  }, {
+    "sentence_tokens" : [ "Ito", "et", "al.", "proposed", "a", "very", "interesting", "'", "strain", "of", "blood", "vessel", "hypothesis", ",", "'", "which", "they", "believe", "can", "be", "used", "as", "a", "brain-kidney", "association", "mechanism", ",", "based", "on", "the", "similar", "anatomical", "and", "functional", "features", "of", "small", "arteries", "in", "these", "organs", "[", "10", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "study", "aims", "to", "explore", "the", "progression", "of", "small", "vessel", "disease", "in", "CKD", "and", "its", "relationship", "to", "CSVD", "." ]
+  }, {
+    "sentence_tokens" : [ "Magnetic", "Resonance", "(", "MR", ")", "imaging", "is", "used", "to", "evaluate", "CSVD", "progression", ",", "as", "measured", "by", "VRS", "size", ",", "white", "matter", "lesions", "(", "WML", ")", ",", "presence", "of", "lacunar", "infarcts", "(", "LI", ")", ",", "and", "cerebral", "microbleeds", "(", "CMB", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Material", "and", "methods", "." ]
+  }, {
+    "sentence_tokens" : [ "Patients", "." ]
+  }, {
+    "sentence_tokens" : [ "Between", "December", "2015", "and", "December", "2017", ",", "55", "patients", "with", "CKD", "were", "enrolled", "in", "this", "study", ";", "three", "were", "lost", "to", "follow-up", "." ]
+  }, {
+    "sentence_tokens" : [ "Inclusion", "criteria", "were", "as", "follows", ":", "(", "1", ")", "met", "clinical", "diagnostic", "criteria", "for", "CKD", ",", "stage", "III", "or", "IV", ",", "as", "defined", "according", "to", "the", "Kidney", "Disease", "Outcomes", "Quality", "Initiative", "(", "KDOQI", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "CKD", "is", "defined", "as", "a", "variety", "of", "causes", "of", "chronic", "kidney", "structure", "and", "dysfunction", "(", "history", "of", "renal", "damage", "over", "3", "months", ")", ",", "with", "or", "without", "changes", "in", "eGFR", ",", "abnormal", "blood", "or", "urine", "components", ",", "and", "abnormal", "imaging", "studies", "or", "unexplained", "decrease", "in", "eGFR", "(", "<", "60", "mL/min/1.73", "m", ")", "for", "more", "than", "3", "months", ";", "(", "2", ")", "Patients", "were", "followed", "for", "10", "-", "20", "months", "." ]
+  }, {
+    "sentence_tokens" : [ "eGFR", "decrease", ">", "10", "mL/min/year", "If", "eGFR", "decreased", "by", "greater", "than", "10", "mL/min", "or", "CKD", "severity", "progressed", "in", "stage", ",", "patients", "were", "assigned", "to", "the", "progressive", "group", "[", "11,12", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "If", "eGFR", "decreased", "by", "less", "than", "10", "mL/min", ",", "patients", "were", "assigned", "to", "the", "stable", "group", "(", "Figure", "1", ",", "Table", "1", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Written", "informed", "consent", "for", "the", "use", "of", "data", "was", "obtained", "from", "patients", "and", "volunteers", "prior", "to", "MRI", "scanning", "." ]
+  }, {
+    "sentence_tokens" : [ "MR", "examination", "." ]
+  }, {
+    "sentence_tokens" : [ "All", "participants", "underwent", "MR", "examinations", "between", "December", "2015", "and", "December", "2017", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "3T", "MR", "scanner", "(", "MAGNETOM", "Verio", ",", "Siemens", "Healthcare", ",", "Erlangen", ",", "Germany", ")", "with", "a", "32-channel", "head", "coil", "was", "used", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "imaging", "sequences", "included", "conventional", "MR", "sequences", "(", "T1-", "and", "T2", "weighted", "imaging", ")", "as", "well", "as", "DWI", "(", "diffusion", "weighted", "imaging", ")", "and", "SWI", "(", "susceptibility", "weighted", "imaging", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Protocols", "were", "as", "follows", ":", "(", "1", ")", "T2-FOV", "250", "mm", ",", "TR/TE", "6000/95", "ms", ",", "flip", "angle", "150", "degrees", ",", "matrix", "384", "x", "384", ",", "slice", "thickness", "6", "mm", ",", "distance", "factor", "30", "%", ";", "(", "2", ")", "T1", "FLAIR-FOV", "250", "mm", ",", "TR/TE", "2,000/9", "ms", ",", "flip", "angle", "150", "degrees", ",", "matrix", "320", "x", "320", ",", "slice", "thickness", "6", "mm", ",", "distance", "factor", "30", "%", ";", "and", "(", "3", ")", "SWI-FOV", "230", "mm", ",", "TR/TE", "28/20", "ms", ",", "flip", "angle", "15", "degrees", ",", "matrix", "320", "x", "320", ",", "resolution", "0.76", "x", "0.76", "x", "1.2", ",", "slice", "thickness", "1.2", "mm", ",", "distance", "factor", "30", "%", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "group", "of", "magnitude", ",", "phase", ",", "minimum", "intensity", "projection", "(", "MIP", ")", ",", "and", "SWI", "images", "were", "automatically", "reconstructed", "online", "." ]
+  }, {
+    "sentence_tokens" : [ "Image", "analysis", ":", "CSVD", "evaluation", "." ]
+  }, {
+    "sentence_tokens" : [ "Silent", "markers", "of", "CSVD", "include", "enlarged", "VRS", ",", "white", "matter", "lesions", "(", "WMLs", ")", ",", "lacunar", "infarcts", "(", "LIs", ")", ",", "and", "cerebral", "microbleeds", "(", "CMBs", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Two", "neuroradiologists", "(", "with", "six", "and", "nine", "years", "of", "experience", ",", "respectively", ")", "were", "highly", "trained", "before", "they", "reviewed", "images", ",", "and", "blinded", "to", "all", "clinical", "details", ",", "and", "recorded", "the", "locations", "and", "VRS", ",", "WML", ",", "LI", ",", "and", "CMB", "ratings", "." ]
+  }, {
+    "sentence_tokens" : [ "Reliability", "was", "assessed", "on", "both", "intra-", "and", "interobserver", "level.In", "general", ",", "the", "diameter", "of", "a", "VRS", "is", "less", "than", "2", "mm", "." ]
+  }, {
+    "sentence_tokens" : [ "When", "the", "diameter", "of", "the", "surrounding", "space", "is", "greater", "than", "3", "mm", ",", "it", "is", "considered", "to", "be", "enlarged", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "is", "consistent", "with", "the", "travel", "of", "the", "perforated", "vessels.VRSs", "are", "mainly", "found", "in", "three", "typical", "positions", ":", "type", "I", "is", "found", "along", "the", "artery", "in", "the", "basal", "ganglia", ",", "type", "II", "is", "along", "the", "medullary", "artery", "in", "the", "brain", "convexity", "and", "extending", "into", "the", "white", "matter", "below", "the", "cortex", ",", "and", "type", "III", "is", "found", "in", "the", "midbrain", "." ]
+  }, {
+    "sentence_tokens" : [ "Peripheral", "space", "around", "blood", "vessels", "on", "MRI", "show", "clear", "boundaries", "in", "sharp", "oval-,", "round-,", "or", "tubular", "shaped", "structures", "(", "due", "to", "the", "location", "and", "type", "of", "cut", "--", "axial", ",", "sagittal", ",", "or", "coronal", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "structures", "have", "the", "same", "signal", "as", "cerebrospinal", "fluid", "without", "enhancement", "or", "place", "effect", "(", "Figure", "2", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "rated", "VRSs", "on", "T2", "imaging", "(", "with", "all", "sequences", "available", ")", "in", "the", "basal", "ganglia", "and", "centrum", "semiovale", "as", "0", "=", "none", ",", "1", "=", "1", "-", "10", ",", "2", "=", "11", "-", "20", ",", "3", "=", "21", "-", "40", ",", "and", "4", "=", ">", "40", "enlarged", "perivascular", "spaces", "per", "side", ",", "using", "the", "higher", "side", "if", "they", "were", "asymmetric", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "calculated", "total", "VRS", "scores", "(", "0", "-", "8)", "by", "summing", "the", "basal", "ganglia", "and", "centrum", "semiovale", "VRS", "scores", "(", "Figure", "2", ")", "[", "2", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "WML", "was", "defined", "as", "a", "signal", "abnormality", "of", "variable", "size", "in", "the", "white", "matter", "consisting", "of", "a", "hyperintensity", "on", "a", "T2", "weighted", "image", "such", "as", "fluid", "attenuated", "inversion", "recovery", "without", "cavitation", ",", "and", "decreased", "signal", "on", "T1", "weighted", "images", ",", "according", "to", "previous", "studies", "(", "Figure", "3", ")", "[", "2", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Fazekas", "scale", "(", "0", "-", "3", "points", ")", "was", "used", "as", "follows", ":", "Grade", "0", "(", "normal", ")", ",", "grade", "1", "(", "spot", "lesion", ")", ",", "grade", "2", "(", "fusion", "lesion", ")", ",", "and", "grade", "3", "(", "large", "fusion", "lesion", ")", "[", "4", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "LI", "of", "presumed", "vascular", "origin", "was", "defined", "as", "a", "round", "or", "ovoid", ",", "subcortical", ",", "fluid", "filled", "cavity", ",", "consistent", "with", "a", "small", "previously", "acute", "subcortical", "infarct", "or", "hemorrhage", "in", "the", "territory", "of", "a", "perforating", "arteriole", "(", "Figure", "2", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "CMB", "on", "SWI", "MR", "images", "was", "defined", "as", "a", "2", "-", "5", "mm", "diameter", "uniform", "oval", ",", "low-signal", "focus", "with", "no", "surrounding", "edema", "." ]
+  }, {
+    "sentence_tokens" : [ "Investigators", "have", "proposed", "a", "specified", "rating", "scale", "for", "CMBs", "(", "Figure", "3", ")", ",", "the", "Microbleed", "Anatomical", "Rating", "Scale.We", "classified", "microbleeds", "into", "'", "definite", "'", "and", "'", "possible", "'", "categories", "because", "a", "previous", "study", "suggested", "that", "such", "classification", "improves", "reliability", "." ]
+  }, {
+    "sentence_tokens" : [ "Definite", "microbleeds", "were", "defined", "as", "small", ",", "rounded", "or", "circular", ",", "well", "defined", "hypointense", "lesions", "within", "brain", "parenchyma", "with", "clear", "margins", "ranging", "from", "2", "to", "10", "mm", "in", "size", "on", "SWI", "images", ";", "possible", "microbleeds", "were", "less", "well", "defined", ",", "less", "hypointense", ",", "or", "not", "strictly", "rounded", "or", "circular", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "2", "to", "10-mm", "size", "range", "includes", "the", "highest", "upper", "limit", "defined", "in", "previous", "studies", "[", "5", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Microbleeds", "were", "classified", "into", "deep", ",", "lobar", ",", "and", "infratentorial", "categories", "." ]
+  }, {
+    "sentence_tokens" : [ "Lobar", "MRI", "landmarks", "were", "defined", "according", "to", "Stark", "and", "Bradley", "and", "included", "cortical", "and", "subcortical", "regions", "(", "including", "subcortical", "U", "fibers", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Deep", "regions", "included", "the", "basal", "ganglia", ",", "thalamus", ",", "internal", "capsule", ",", "external", "capsule", ",", "corpus", "callosum", ",", "and", "deep", "and", "periventricular", "white", "matter", "(", "DPWM", ")", ";", "infratentorial", "regions", "included", "the", "brainstem", "and", "cerebellum", "." ]
+  }, {
+    "sentence_tokens" : [ "All", "regions", "were", "presented", "for", "easy", "reference", "in", "an", "anatomical", "diagram", "(", "drawn", "by", "S.M.G", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "sum", "of", "definite", "and", "possible", "microbleeds", "was", "recorded", "as", "total", "microbleeds", "." ]
+  }, {
+    "sentence_tokens" : [ "Statistics", "." ]
+  }, {
+    "sentence_tokens" : [ "After", "passing", "the", "variance", "equality", "test", ",", "paired", "sample", "t-tests", "were", "used", "to", "compare", "the", "differences", "in", "VRS/WML/LI/CMB", "within", "the", "two", "groups", ",", "such", "as", "the", "difference", "between", "initial", "exam", "and", "follow-up", "for", "the", "progressive", "group", ",", "and", "the", "difference", "between", "initial", "exam", "and", "follow-up", "for", "the", "stable", "group", "(", "to", "the", "third", "decimal", "place", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "p-Values", "<", "0.05", "were", "deemed", "statistically", "significant", "." ]
+  }, {
+    "sentence_tokens" : [ "Two-sample", "t-test", "of", "VRS", "and", "WML", "was", "used", "to", "compare", "the", "difference", "between", "progressive", "group", "and", "stable", "group", "at", "initial", "exam", ",", "and", "the", "difference", "between", "progressive", "group", "and", "stable", "group", "at", "follow-up", "." ]
+  }, {
+    "sentence_tokens" : [ "Chi-square", "tests", "were", "used", "to", "compare", "the", "differences", "between", "groups", "of", "LI/CMB", "." ]
+  }, {
+    "sentence_tokens" : [ "Pearson", "'", "s", "correlation", "was", "used", "to", "evaluate", "the", "relationship", "between", "eGFR", "and", "VRS", ",", "WML", ",", "LI", ",", "and", "CMB", "." ]
+  }, {
+    "sentence_tokens" : [ "Results", "." ]
+  }, {
+    "sentence_tokens" : [ "Patient", "information", "." ]
+  }, {
+    "sentence_tokens" : [ "Of", "the", "52", "patients", "with", "CKD", ",", "17", "were", "classified", "into", "a", "progressive", "group", "and", "35", "were", "included", "in", "the", "stable", "group", "." ]
+  }, {
+    "sentence_tokens" : [ "There", "was", "no", "significant", "difference", "between", "the", "two", "groups", "in", "terms", "of", "age", ",", "gender", ",", "hypertension", ",", "diabetes", "and", "smoking", "." ]
+  }, {
+    "sentence_tokens" : [ "There", "were", "also", "no", "differences", "using", "Pearson", "correlation", "between", "VRS/WML/LI/CMB", "scores", "in", "terms", "of", "follow-up", "durations", "." ]
+  }, {
+    "sentence_tokens" : [ "VRS", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "did", "not", "observe", "a", "significant", "difference", "in", "VRS", "size", "between", "initial", "exam", "(", "group", "1A", ")", "and", "follow-up", "(", "group", "1B", ")", "for", "the", "progressive", "group", "(", "p", "=", "0.083", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Similarly", ",", "we", "did", "not", "observe", "a", "significant", "difference", "in", "VRS", "size", "between", "initial", "exam", "(", "group", "2A", ")", "and", "follow-up", "(", "group", "2B", ")", "for", "the", "stable", "group", "(", "p", "=", "0.324", ")", "(", "Tables", "2", "-", "5", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "WML", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "observed", "a", "significant", "difference", "in", "WML", "between", "group", "1A", "and", "group", "1B", "(", "p", "=", "0.004", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "No", "significant", "difference", "was", "observed", "between", "group", "2A", "group", "2B", "(", "p", "=", "0.083", ")", "(", "Tables", "2", "-", "5", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "WML", "in", "the", "progressive", "group", "were", "exacerbated", "at", "follow-up", "compared", "to", "at", "the", "initial", "exam", "(", "p", "=", "0.004", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "LI", "." ]
+  }, {
+    "sentence_tokens" : [ "No", "significant", "difference", "was", "observed", "between", "the", "progressive", "group", "at", "initial", "exam", "(", "group", "1", "A", ")", "and", "follow-up", "(", "group", "1B", ")", ",", "or", "between", "the", "stable", "group", "at", "initial", "exam", "(", "group", "2A", ")", "and", "follow-up", "(", "group", "2B", ")", "(", "p", "=", "0.332", "and", "0.324", ",", "respectively", ")", "(", "Tables", "2", "-", "5", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "CMB", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "observed", "a", "significant", "difference", "in", "presence", "of", "CMB", "between", "group", "1A", "and", "group", "1B", "(", "p", "=", "0.020", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "No", "significant", "difference", "was", "observed", "between", "group", "2A", "and", "group", "2B", "(", "p", "=", "0.324", ")", "(", "Figure", "4", ",", "Tables", "2", "-", "5", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "There", "was", "no", "significant", "change", "in", "VRS", ",", "WML", ",", "LI", ",", "or", "CMB", "at", "initial", "exam", "compared", "to", "follow-up", "in", "the", "stable", "group", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "presence", "of", "CMB", "were", "significantly", "different", "between", "the", "progressive", "group", "and", "stable", "group", "at", "follow-up", "(", "p", "=", "0.004", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Pearson", "'s", "correlation", "for", "eGFR", "with", "VRS", ",", "WML", ",", "LI", ",", "and", "CMB", "." ]
+  }, {
+    "sentence_tokens" : [ "Only", "eGFR", "at", "follow-up", "was", "found", "to", "have", "a", "significant", "relationship", "with", "follow-up", "measures", "of", "VRS", ",", "WML", ",", "and", "CMB", "(", "correlation", "coefficients", "=", "-", "0.290", ",", "-", "0.284", ",", "-", "0.358", ",", "respectively", ";", "p", "=", "0.037", ",", "0.041", ",", "0.009", ",", "respectively", ")", "(", "Tables", "6", "and", "7", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Discussion", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "study", "shows", "that", "with", "deterioration", "of", "renal", "function", ",", "as", "reflected", "in", "decreased", "eGFR", ",", "the", "patient", "group", "with", "progressive", "CKD", "had", "a", "greater", "degree", "of", "white", "matter", "degeneration", "and", "more", "CMB", "lesions", "." ]
+  }, {
+    "sentence_tokens" : [ "These", "observations", "suggest", "that", "there", "is", "a", "higher", "prevalence", "of", "cerebrovascular", "disease", "in", "the", "group", "with", "progressive", "CKD", "." ]
+  }, {
+    "sentence_tokens" : [ "CSVD", "in", "the", "progressive", "group", "was", "exacerbated", "as", "WML", "and", "CMB", "progressed.A", "meta-analysis", "conducted", "by", "Lee", "et", "al.", "concluded", "that", "that", "the", "risk", "of", "stroke", "increased", "in", "subjects", "with", "an", "eGFR", "<", "60", "mL/min/1.73", "m", "." ]
+  }, {
+    "sentence_tokens" : [ "Lower", "eGFR", "was", "a", "risk", "factor", "for", "both", "ischemic", "and", "hemorrhagic", "stroke", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "study", "also", "found", "that", "when", "CKD", "patients", "with", "declining", "eGFR", "also", "had", "progressive", "cerebrovascular", "disease", ",", "CKD", "and", "CSVD", "may", "have", "been", "correlated", ";", "the", "greater", "the", "degree", "of", "intracranial", "lesion", "burden", ",", "the", "more", "eGFR", "decreased", ",", "suggesting", "that", "eGFR", "may", "be", "a", "predictor", "of", "ischemic", "or", "hemorrhagic", "stroke.Features", "of", "CSVD", "include", "enlarged", "VRS", "and", "the", "presence", "of", "white", "matter", "lesions", "(", "WML", ")", ",", "lacunar", "infarcts", "(", "LI", ")", ",", "and", "cerebral", "microbleeds", "(", "CMB", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "It", "is", "widely", "accepted", "that", "chronic", "renal", "insufficiency", "is", "an", "independent", "risk", "factor", "for", "cerebrovascular", "disease", "[", "13,14", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "study", ",", "the", "differences", "in", "CMB", "between", "progressive", "and", "stable", "CKD", "patient", "groups", "is", "clear", "." ]
+  }, {
+    "sentence_tokens" : [ "eGFR", "was", "significantly", "correlated", "with", "VRS", ",", "WML", ",", "and", "CMB", "at", "follow-up", "group", "(", "all", "participants", ",", "n", "=", "52", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "finding", "is", "consistent", "with", "a", "study", "by", "Xiao", "et", "al", ".,", "who", "concluded", "that", "impaired", "estimated", "glomerular", "filtration", "rate", "is", "associated", "with", "severity", "of", "VRS", "enlargement", "[", "15", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Relationship", "of", "VRS", ",", "LI", ",", "and", "renal", "function", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "study", ",", "VRS", "was", "significantly", "correlated", "with", "eGFR", "." ]
+  }, {
+    "sentence_tokens" : [ "LI", "was", "not", "significantly", "associated", "with", "eGFR", "." ]
+  }, {
+    "sentence_tokens" : [ "Previous", "studies", "have", "reported", "conflicting", "findings", "regarding", "the", "association", "between", "LI", "and", "eGFR", ",", "with", "some", "concluding", "that", "decreased", "eGFR", "tended", "to", "be", "associated", "with", "a", "higher", "prevalence", "of", "LI", ",", "while", "other", "studies", "did", "not", "support", "this", "interpretation", "." ]
+  }, {
+    "sentence_tokens" : [ "Relationship", "of", "WML", "and", "renal", "function", "." ]
+  }, {
+    "sentence_tokens" : [ "WML", "is", "one", "of", "manifestation", "of", "cerebrovascular", "disease", ",", "and", "is", "closely", "related", "to", "cerebral", "ischemia", ",", "stroke", ",", "degeneration", ",", "and", "many", "other", "neurologic", "diseases", "." ]
+  }, {
+    "sentence_tokens" : [ "Arntz", "et", "al.", "found", "that", "WMLs", "with", "intracranial", "merged", "lesion", "can", "reflect", "the", "severity", "of", "CSVD", "in", "the", "elderly", ",", "and", "the", "development", "of", "WMLs", "can", "be", "regarded", "as", "the", "terminal", "changes", "of", "CSVD", "prognosis", "." ]
+  }, {
+    "sentence_tokens" : [ "Chronic", "kidney", "disease", "has", "been", "reported", "to", "be", "associated", "with", "LI", ",", "WML", ",", "and", "CMB", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "results", "of", "the", "present", "study", "are", "consistent", "with", "these", "conclusions", ",", "specifically", "that", "as", "renal", "function", "declines", ",", "the", "greater", "the", "degree", "of", "white", "matter", "degeneration", ",", "and", "the", "higher", "the", "incidence", "of", "CSVD.Possible", "explanations", "underlying", "the", "observed", "relationship", "between", "CKD", "and", "CSVD", "include", ":", "(", "1", ")", "microvasculature", "of", "the", "kidney", "and", "brain", "are", "similar", "in", "structure", "and", "function", ",", "as", "well", "as", "in", "microvascular", "regulation", ";", "(", "2", ")", "the", "vascular", "resistance", "of", "both", "organs", "is", "low", ",", "thus", "allowing", "high", "blood", "volumes", "to", "perfuse", "continuously", ";", "(", "3", ")", "both", "organs", "are", "particularly", "susceptible", "to", "atherosclerosis", ";", "(", "4", ")", "kidney", "damage", "is", "characterized", "by", "abnormalities", "in", "glomerular", "endothelial", "cell", "function", ",", "and", "WML", "is", "caused", "by", "endothelial", "cell", "dysfunction", ";", "(", "5", ")", "when", "chronic", "kidney", "disease", "progresses", ",", "associated", "factors", "such", "as", "accumulation", "of", "toxins", "(", "e.g", "." ]
+  }, {
+    "sentence_tokens" : [ "Related", "to", "endothelial", "dysfunction", ",", "one", "study", "found", "that", "Klotho", ",", "a", "protein", "expressed", "by", "the", "distal", "vessels", "of", "the", "kidney", ",", "is", "decreased", "in", "chronic", "kidney", "disease", ",", "leading", "to", "abnormal", "vascular", "endothelial", "function", "and", "cerebrovascular", "disease", "." ]
+  }, {
+    "sentence_tokens" : [ "Relationship", "of", "CMB", "and", "renal", "function", "." ]
+  }, {
+    "sentence_tokens" : [ "Pathologic-radiologic", "correlation", "studies", "have", "revealed", "that", "CMBs", "are", "focal", "accumulations", "of", "hemosiderin", "adjacent", "to", "abnormal", "blood", "vessels", "demonstrating", "fibrolipohyalinosis", "or", "amyloid", "microangiopathy", "." ]
+  }, {
+    "sentence_tokens" : [ "CMBs", "are", "the", "radiologic", "correlates", "of", "extravasation", "of", "blood", "components", "through", "injured", "or", "fragile", "vascular", "walls", ",", "or", "of", "frank", "small", "hemorrhage", "spots", "[", "16,17", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "addition", ",", "the", "present", "study", "found", "that", "there", "is", "a", "significant", "difference", "in", "CMB", "between", "patients", "with", "progressive", "CKD", "(", "progressive", "group", ")", "and", "patients", "with", "stable", "CKD", "(", "stable", "group", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "used", "SWI", "sequence", "to", "detect", "the", "occurrence", "and", "progression", "of", "CMB", ";", "its", "sensitivity", "and", "accuracy", "has", "been", "widely", "recognized", "[", "18,19", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Brain", "atrophy", "is", "sometimes", "considered", "another", "potential", "MRI", "feature", "of", "CSVD", "." ]
+  }, {
+    "sentence_tokens" : [ "Although", "studies", "have", "suggested", "an", "association", "between", "brain", "atrophy", "and", "CSVD", ",", "brain", "atrophy", "is", "not", "specific", "to", "CSVD", ",", "often", "occurring", "in", "many", "other", "conditions", "." ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "our", "study", "did", "not", "include", "brain", "atrophy", "as", "a", "consideration", "for", "the", "detection", "or", "assessment", "of", "CSVD.The", "results", "of", "this", "study", "support", "a", "relationship", "between", "the", "deterioration", "of", "renal", "function", "and", "cerebrovascular", "disease", ",", "but", "the", "mechanism", "underlying", "this", "relationship", "is", "not", "clear", "and", "needs", "further", "research", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "follow-up", "time", "in", "this", "study", "may", "have", "been", "too", "short", "to", "fully", "evaluate", "and", "detect", "relevant", "changes", "in", "LI", "and", "VRS", "." ]
+  }, {
+    "sentence_tokens" : [ "Further", "study", "is", "required", "to", "clarify", "these", "issues.In", "conclusion", ",", "imaging", "findings", "suggest", "that", "there", "is", "a", "significant", "relationship", "between", "patients", "with", "progressive", "CKD", "and", "CSVD", ",", "especially", "as", "indicated", "by", "VRS", ",", "WML", ",", "and", "CMB", ",", "although", "the", "mechanism", "underlying", "this", "relationship", "remains", "to", "be", "understood", "." ]
+  }, {
+    "sentence_tokens" : [ "VRS", ",", "WML", ",", "and", "CMB", "significantly", "correlated", "with", "eGFR", ",", "suggesting", "that", "eGFR", "may", "not", "only", "contribute", "to", "the", "evaluation", "of", "renal", "function", "in", "patients", "with", "CKD", "but", "may", "also", "find", "utility", "in", "the", "prediction", "of", "cerebral", "small", "vessel", "disease", "." ]
+  }, {
+    "sentence_tokens" : [ "eGFR", "may", "reflect", "a", "more", "generalized", "process", "indicative", "of", "underlying", "vascular", "damage", ",", "not", "limited", "solely", "to", "the", "kidney.It", "is", "a", "bold", "speculation", "that", "when", "CSVD", "progresses", ",", "renal", "function", "in", "patients", "with", "CKD", "may", "correspondingly", "decline", "." ]
+  }, {
+    "sentence_tokens" : [ "Conversely", ",", "when", "renal", "function", "in", "patients", "with", "CKD", "declines", ",", "CSVD", "may", "also", "progress", "and", "require", "more", "careful", "attention", "." ]
+  }, {
+    "sentence_tokens" : [ "These", "speculations", "remain", "for", "future", "studies", "." ]
+  } ]
+}

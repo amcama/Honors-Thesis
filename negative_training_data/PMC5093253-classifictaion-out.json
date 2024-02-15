@@ -1,87 +1,456 @@
-[ {
-  "sentence_tokens" : [ "Likewise", ",", "dogs", "with", "systemic", "diseases", "that", "may", "cause", "iron", "deficiency", ",", "such", "as", "chronic", "enteropathy", ",", "were", "also", "excluded.Our", "findings", "of", "higher", "BUN", "levels", ",", "blood", "creatinine", "levels", ",", "and", "prevalence", "of", "blood", "creatinine", ">", "1.6", "mg/dL", "among", "dogs", "with", "advanced", "HF", "are", "consistent", "with", "previous", "studies", "[", "1", ",", "23", "]", "." ],
-  "event_indices" : [ 5, 6, 7, 8, 9, 10 ],
-  "type" : "Negative_activation",
-  "polarity" : false,
-  "controller_indices" : [ 5, 6 ],
-  "controlled_indices" : [ 9, 10 ],
-  "trigger_indices" : [ 8, 9 ],
-  "rule_name" : "Positive_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "The", "prevalence", "of", "anemia", "was", "highest", "in", "dogs", "with", "the", "modified", "New", "York", "Heart", "Association", "(", "NYHA", ")", "class", "IV", "HF", "(", "33.3", "%", ")", ",", "followed", "by", "classes", "III", "(", "15.2", "%", ")", "and", "II", "(", "0", "%", ";", "p", "<", "0.001", ")", "." ],
-  "entity_one_indices" : [ 20, 21 ],
-  "entity_two_indices" : [ 3, 4 ]
-}, {
-  "sentence_tokens" : [ "Anemic", "dogs", "had", "a", "shorter", "median", "survival", "[", "13", "months", ";", "95", "%", "confidence", "interval", "(", "CI", ")", ":", "0.7-19.1", "]", "than", "nonanemic", "dogs", "(", "28", "months", ";", "95", "%", "CI", ":", "15.3-40.7", ";", "p", "<", ".001", ")", "." ],
-  "entity_one_indices" : [ 30, 31 ],
-  "entity_two_indices" : [ 16, 17 ]
-}, {
-  "sentence_tokens" : [ "A", "cardiorenal-anemia", "syndrome", "like", "triangle", "was", "observed", "and", "anemia", "was", "a", "prognostic", "factor", "for", "survival", "in", "dogs", "with", "DMVD", "." ],
-  "entity_one_indices" : [ 8, 9 ],
-  "entity_two_indices" : [ 2, 3 ]
-}, {
-  "sentence_tokens" : [ "Anemia", "is", "generally", "considered", "to", "be", "prevalent", "in", "human", "patients", "with", "HF", ",", "though", "prevalence", "rates", "in", "the", "literature", "vary", "widely", ",", "ranging", "from", "9.9", "%", "to", "over", "50", "%", "[", "11", ",", "12", "]", "." ],
-  "entity_one_indices" : [ 11, 12 ],
-  "entity_two_indices" : [ 0, 1 ]
-}, {
-  "sentence_tokens" : [ "The", "association", "among", "HF", ",", "impaired", "renal", "function", ",", "and", "anemia", "has", "not", "been", "well", "studied", "in", "dogs", "." ],
-  "entity_one_indices" : [ 10, 11 ],
-  "entity_two_indices" : [ 3, 4 ]
-}, {
-  "sentence_tokens" : [ "We", "hypothesized", "that", "survival", "time", "would", "be", "shortened", "in", "the", "presence", "of", "anemia", "and", "azotemia", "." ],
-  "entity_one_indices" : [ 14, 15 ],
-  "entity_two_indices" : [ 12, 13 ]
-}, {
-  "sentence_tokens" : [ "The", "diagnosed", "criteria", "of", "DMVD", "were", "based", "on", "echocardiographic", "findings", ":", "2D", "detection", "of", "mitral", "valve", "prolapse", ";", "any", "degree", "of", "mitral", "valve", "leaflet", "thickening", "or", "both", ";", "color", "Doppler", "identification", "of", "any", "degree", "of", "mitral", "valve", "regurgitation", "[", "19", "]", "." ],
-  "entity_one_indices" : [ 35, 36, 37, 38 ],
-  "entity_two_indices" : [ 14, 15, 16, 17 ]
-}, {
-  "sentence_tokens" : [ "In", "this", "study", ",", "anemia", "was", "defined", "as", "Hb", "<", "12.5", "g/dl", "and/or", "PCV", "<", "35", "%", "." ],
-  "entity_one_indices" : [ 13, 14 ],
-  "entity_two_indices" : [ 4, 5 ]
-}, {
-  "sentence_tokens" : [ "Azotemia", "was", "defined", "as", "BUN", ">", "26", "mg/dL", "and/or", "blood", "creatinine", ">", "1.6", "mg/dL", "." ],
-  "entity_one_indices" : [ 10, 11 ],
-  "entity_two_indices" : [ 0, 1 ]
-}, {
-  "sentence_tokens" : [ "Risks", "were", "quantitated", "as", "hazard", "ratios", "(", "HRs", ")", "with", "95", "%", "confidence", "intervals", "(", "CIs", ")", "." ],
-  "entity_one_indices" : [ 15, 16 ],
-  "entity_two_indices" : [ 7, 8 ]
-}, {
-  "sentence_tokens" : [ "Prevalence", "of", "Anemia", "and", "Azotemia", "." ],
-  "entity_one_indices" : [ 4, 5 ],
-  "entity_two_indices" : [ 2, 3 ]
-}, {
-  "sentence_tokens" : [ "Hb", "concentration", ",", "PCV", ",", "and", "RBC", "were", "highest", "in", "the", "NYHA", "class", "II", "(", "16.9", "+/-", "2.0", "g/dL", ",", "47.1", "+/-", "5.5", "%", ",", "and", "7.2", "+/-", "1.0", "x", "10", "/", "mu", "L", ",", "resp", "." ],
-  "entity_one_indices" : [ 32, 33 ],
-  "entity_two_indices" : [ 3, 4 ]
-}, {
-  "sentence_tokens" : [ "The", "overall", "prevalence", "of", "anemia", "in", "dogs", "with", "DMVD", "was", "14.9", "%", ",", "with", "prevalence", "showing", "an", "increasing", "trend", "from", "class", "II", "(", "0", "%", ")", "to", "class", "III", "(", "15.2", "%", ")", "to", "class", "IV", "(", "33.3", "%", ",", "p", "<", "0.001", ",", "Table", "2", ")", "." ],
-  "entity_one_indices" : [ 8, 9 ],
-  "entity_two_indices" : [ 4, 5 ]
-}, {
-  "sentence_tokens" : [ "The", "overall", "prevalence", "of", "azotemia", "in", "dogs", "with", "DMVD", "was", "44.7", "%", ",", "highest", "in", "the", "NYHA", "class", "IV", "(", "63.3", "%", ")", ",", "followed", "by", "classes", "III", "(", "41.3", "%", ")", "and", "II", "(", "34.2", "%", ")", ",", "but", "the", "differences", "among", "three", "classes", "were", "not", "significant", "(", "p", "=", "0.104", ",", "Table", "2", ")", "." ],
-  "entity_one_indices" : [ 8, 9 ],
-  "entity_two_indices" : [ 4, 5 ]
-}, {
-  "sentence_tokens" : [ "Meanwhile", ",", "presence", "of", "azotemia", "and", "blood", "creatinine", ">", "1.6", "mg/dL", "were", "not", "predictors", "of", "all", "cause", "mortality", "in", "the", "univariate", "analysis", "." ],
-  "entity_one_indices" : [ 7, 8 ],
-  "entity_two_indices" : [ 4, 5 ]
-}, {
-  "sentence_tokens" : [ "In", "this", "study", ",", "we", "found", "that", "Hb", "concentration", "and", "PCV", "decreased", "with", "increasing", "severity", "of", "NYHA", "functional", "status", "in", "dogs", "with", "DMVD", "." ],
-  "entity_one_indices" : [ 16, 17 ],
-  "entity_two_indices" : [ 10, 11 ]
-}, {
-  "sentence_tokens" : [ "Correction", "of", "anemia", "is", "strongly", "recommended", "to", "improve", "outcomes", "in", "human", "patients", "with", "HF", "[", "24", "]", "." ],
-  "entity_one_indices" : [ 13, 14 ],
-  "entity_two_indices" : [ 2, 3 ]
-}, {
-  "sentence_tokens" : [ "Blood", "creatinine", ">", "1.6", "mg/dl", "was", "also", "more", "prevalent", "in", "the", "dogs", "with", "advanced", "HF", "." ],
-  "entity_one_indices" : [ 14, 15 ],
-  "entity_two_indices" : [ 1, 2 ]
-}, {
-  "sentence_tokens" : [ "We", "did", "not", "have", "control", "comparison", "for", "the", "prevalence", "of", "anemia", "and", "azotemia", ",", "and", "we", "did", "not", "have", "an", "age", "matched", "healthy", "control", "group", "with", "which", "to", "compare", "survival", "times", "." ],
-  "entity_one_indices" : [ 12, 13 ],
-  "entity_two_indices" : [ 10, 11 ]
-} ]
+{
+  "regulations" : [ {
+    "sentence_tokens" : [ "Likewise", ",", "dogs", "with", "systemic", "diseases", "that", "may", "cause", "iron", "deficiency", ",", "such", "as", "chronic", "enteropathy", ",", "were", "also", "excluded.Our", "findings", "of", "higher", "BUN", "levels", ",", "blood", "creatinine", "levels", ",", "and", "prevalence", "of", "blood", "creatinine", ">", "1.6", "mg/dL", "among", "dogs", "with", "advanced", "HF", "are", "consistent", "with", "previous", "studies", "[", "1", ",", "23", "]", "." ],
+    "event_indices" : [ 5, 6, 7, 8, 9, 10 ],
+    "type" : "Negative_activation",
+    "polarity" : false,
+    "controller_indices" : [ 5, 6 ],
+    "controlled_indices" : [ 9, 10 ],
+    "trigger_indices" : [ 8, 9 ],
+    "rule_name" : "Positive_activation_syntax_1_verb",
+    "rule" : null
+  } ],
+  "hardInstances" : [ {
+    "sentence_tokens" : [ "Likewise", ",", "dogs", "with", "systemic", "diseases", "that", "may", "cause", "iron", "deficiency", ",", "such", "as", "chronic", "enteropathy", ",", "were", "also", "excluded.Our", "findings", "of", "higher", "BUN", "levels", ",", "blood", "creatinine", "levels", ",", "and", "prevalence", "of", "blood", "creatinine", ">", "1.6", "mg/dL", "among", "dogs", "with", "advanced", "HF", "are", "consistent", "with", "previous", "studies", "[", "1", ",", "23", "]", "." ],
+    "entities_indices" : [ [ 27, 28 ], [ 34, 35 ], [ 42, 43 ] ]
+  } ],
+  "withoutRegulations" : [ {
+    "sentence_tokens" : [ "Prevalence", "and", "Prognosis", "of", "Anemia", "in", "Dogs", "with", "Degenerative", "Mitral", "Valve", "Disease", "." ],
+    "entities_indices" : [ [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "median", "survival", "times", "for", "classes", "II", ",", "III", ",", "and", "IV", "were", "42", "months", "(", "95", "%", "CI", ":", "33.7", "-", "50.3", ")", ",", "26", "months", "(", "95", "%", "CI", ":", "21.3", "-", "30.7", ")", ",", "and", "7", "months", "(", "95", "%", "CI", ":", "3.6", "-", "10.4", ")", ",", "respectively", "(", "p", "<", "0.001", ",", "Table", "1", ")", "." ],
+    "entities_indices" : [ [ 18, 19 ], [ 30, 31 ], [ 43, 44 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "cardiorenal-anemia", "syndrome", "like", "interrelationship", "of", "clinical", "parameters", "can", "be", "seen", "in", "dogs", "with", "DMVD", "." ],
+    "entities_indices" : [ [ 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "presence", "of", "anemia", "was", "associated", "with", "HF", "severity", "and", "blood", "creatinine", ">", "1.6", "mg/dL", "(", "both", "p", "<", "0.001", ")", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 7, 8 ], [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "following", "pretreatment", "clinical", "information", "was", "collected", "from", "the", "case", "records", "of", "enrolled", "subjects", ":", "signalment", ";", "clinical", "presentation", ";", "results", "of", "physical", "examinations", ",", "including", "systemic", "arterial", "blood", "pressure", ";", "blood", "test", "results", ",", "such", "as", "Hb", "concentration", ",", "PCV", ",", "and", "blood", "concentrations", "of", "albumin", ",", "BUN", ",", "and", "blood", "creatinine", ";", "and", "urinalysis", "results", ",", "including", "microscopic", "examination", "of", "urinary", "sediments", "and", "urine", "specific", "gravity", "(", "refractometric", "method", ")", "." ],
+    "entities_indices" : [ [ 40, 41 ], [ 46, 47 ], [ 52, 53 ] ]
+  }, {
+    "sentence_tokens" : [ "Although", "treatment", "for", "dogs", "with", "HF", "has", "improved", "substantially", "in", "recent", "decades", ",", "it", "is", "not", "clear", "how", "azotemia", "and", "anemia", "affect", "survival", "in", "dogs", "with", "HF", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 18, 19 ], [ 20, 21 ], [ 26, 27 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "aims", "of", "this", "study", "were", "to", "evaluate", "the", "associations", "of", "pretreatment", "hematological", "[", "Hb", "concentration", "and", "packed", "cell", "volume", "(", "PCV", ")", "]", "and", "biochemical", "[", "blood", "urea", "nitrogen", "(", "BUN", ")", "and", "creatinine", "concentrations", "]", "parameters", "with", "survival", "in", "dogs", "with", "chronic", "degenerative", "mitral", "valve", "disease", "(", "DMVD", ")", "." ],
+    "entities_indices" : [ [ 21, 22 ], [ 28, 29 ], [ 29, 30 ], [ 34, 35 ] ]
+  }, {
+    "sentence_tokens" : [ "Comorbid", "HF", ",", "RI", ",", "and", "anemia", "form", "a", "clinical", "triangle", "termed", "cardiorenal-anemia", "syndrome", "wherein", "HF", "and", "RI", "have", "negative", "reciprocal", "effects", ",", "and", "their", "mutual", "exacerbation", "is", "aggravated", "by", "anemia", "[", "5", "]", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 3, 4 ], [ 6, 7 ], [ 13, 14 ], [ 15, 16 ], [ 17, 18 ], [ 30, 31 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "did", "not", "have", "control", "comparison", "for", "the", "prevalence", "of", "anemia", "and", "azotemia", ",", "and", "we", "did", "not", "have", "an", "age", "matched", "healthy", "control", "group", "with", "which", "to", "compare", "survival", "times", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "Meanwhile", ",", "presence", "of", "azotemia", "and", "blood", "creatinine", ">", "1.6", "mg/dL", "were", "not", "predictors", "of", "all", "cause", "mortality", "in", "the", "univariate", "analysis", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "overall", "prevalence", "of", "anemia", "in", "dogs", "with", "DMVD", "was", "14.9", "%", ",", "with", "prevalence", "showing", "an", "increasing", "trend", "from", "class", "II", "(", "0", "%", ")", "to", "class", "III", "(", "15.2", "%", ")", "to", "class", "IV", "(", "33.3", "%", ",", "p", "<", "0.001", ",", "Table", "2", ")", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "Studies", "of", "the", "effectiveness", "of", "anemia", "correction", "for", "improving", "outcomes", "in", "dogs", "with", "DMVD", "are", "needed.The", "present", "findings", "showing", "that", "severity", "of", "HF", "at", "admission", "and", "LA/Ao", ">", "1.7", "were", "also", "predictors", "of", "poor", "outcome", "in", "dogs", "with", "DMVD", "are", "consistent", "with", "the", "results", "of", "previous", "studies", "[", "25", ",", "26", "]", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 13, 14 ], [ 22, 23 ], [ 38, 39 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "univariate", "analysis", "was", "conducted", "to", "assess", "predictors", "(", "e.g", ".,", "NYHA", "class", "IV", ",", "LA/Ao", ">", "1.7", ",", "presence", "of", "anemia", ",", "presence", "of", "azotemia", ",", "and", "blood", "creatinine", ">", "1.6", "mg/dL", ")", "of", "all", "cause", "mortality", "." ],
+    "entities_indices" : [ [ 21, 22 ], [ 25, 26 ], [ 29, 30 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "median", "survival", "time", "for", "dogs", "without", "anemia", "was", "28", "months", "(", "95", "%", "CI", ":", "15.3", "-", "40.7", ")", "and", "for", "those", "with", "anemia", "was", "13", "months", "(", "95", "%", "CI", ":", "0.7", "-", "19.1", ";", "p", "<", "0.001", ";", "Figure", "1", ")", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 14, 15 ], [ 24, 25 ], [ 31, 32 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "humans", ",", "heart", "failure", "(", "HF", ")", "and", "renal", "insufficiency", "(", "RI", ")", "have", "negative", "reciprocal", "effects", ",", "and", "anemia", "can", "exacerbate", "their", "progression", "." ],
+    "entities_indices" : [ [ 3, 4, 5 ], [ 6, 7 ], [ 9, 10, 11 ], [ 12, 13 ], [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "Prevalence", "of", "Anemia", "and", "Azotemia", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "Anemic", "dogs", "had", "a", "shorter", "median", "survival", "[", "13", "months", ";", "95", "%", "confidence", "interval", "(", "CI", ")", ":", "0.7-19.1", "]", "than", "nonanemic", "dogs", "(", "28", "months", ";", "95", "%", "CI", ":", "15.3-40.7", ";", "p", "<", ".001", ")", "." ],
+    "entities_indices" : [ [ 16, 17 ], [ 30, 31 ] ]
+  }, {
+    "sentence_tokens" : [ "Thus", ",", "the", "presence", "of", "azotemia", "was", "presumably", "secondary", "to", "HF", "[", "1", "]", "even", "though", "the", "comparison", "of", "azotemia", "prevalence", "across", "the", "NYHA", "class", "groups", "did", "not", "reach", "significance.To", "the", "best", "of", "our", "knowledge", ",", "this", "is", "the", "first", "study", "to", "demonstrate", "an", "effect", "of", "anemia", "on", "survival", "in", "dogs", "with", "HF", "in", "the", "veterinary", "literature", "[", "18", "]", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 10, 11 ], [ 19, 20 ], [ 46, 47 ], [ 52, 53 ] ]
+  }, {
+    "sentence_tokens" : [ "Nicolle", "and", "coauthors", "found", "that", "50", "%", "of", "a", "group", "of", "124", "dogs", "with", "chronic", "heart", "valve", "disease", "had", "concomitant", "azotemia", "and", "that", "severity", "of", "azotemia", "and", "RI", "increased", "with", "severity", "of", "HF", "[", "1", "]", "." ],
+    "entities_indices" : [ [ 15, 16, 17, 18 ], [ 20, 21 ], [ 25, 26 ], [ 27, 28 ], [ 32, 33 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "univariate", "analysis", "indicated", "that", "designation", "to", "the", "NYHA", "class", "IV", "group", "(", "HR", ":", "3.1", ",", "95", "%", "CI", ":", "2.2", "-", "4.3", ";", "p", "<", "0.001", ")", ",", "LA/Ao", ">", "1.7", "(", "HR", ":", "2.7", ",", "95", "%", "CI", ":", "1.7", "-", "4.2", ";", "p", "=", "0.001", ")", ",", "and", "presence", "of", "anemia", "(", "HR", ":", "1.43", ",", "95", "%", "CI", ":", "1.1", "-", "1.9", ";", "p", "=", "0.004", ")", "were", "significant", "predictors", "of", "all", "cause", "mortality", "." ],
+    "entities_indices" : [ [ 13, 14 ], [ 19, 20 ], [ 34, 35 ], [ 40, 41 ], [ 54, 55 ], [ 56, 57 ], [ 62, 63 ] ]
+  }, {
+    "sentence_tokens" : [ "Meanwhile", ",", "BUN", "levels", ",", "blood", "creatinine", "levels", ",", "prevalence", "of", "anemia", ",", "and", "prevalence", "of", "blood", "creatinine", ">", "1.6", "mg/dL", "increased", "with", "increasing", "HF", "severity", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 11, 12 ], [ 17, 18 ], [ 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "associations", "among", "HF", ",", "RI", ",", "and", "anemia", "observed", "in", "this", "cohort", "are", "consistent", "with", "so", "called", "\"", "cardiorenal-anemia", "syndrome", "\"", "described", "in", "humans", "[", "5", "]", "and", "support", "the", "notion", "that", "there", "are", "cause", "and", "effect", "relationships", "among", "HF", ",", "RI", ",", "and", "anemia", "in", "dogs", "with", "DMVD.This", "study", "has", "some", "limitations", "worth", "noting", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 5, 6 ], [ 8, 9 ], [ 20, 21 ], [ 40, 41 ], [ 42, 43 ], [ 45, 46 ] ]
+  }, {
+    "sentence_tokens" : [ ")", "and", "IV", "(", "13.8", "+/-", "2.9", "g/dL", ",", "37.8", "+/-", "7.9", "%", "and", "5.9", "+/-", "1.4", "x", "10", "/", "mu", "L", ",", "resp", ".;", "p", "<", "0.001", ",", "p", "<", "0.001", ",", "and", "p", "<", "0.001", ",", "resp", ".,", "Table", "2", ")", "." ],
+    "entities_indices" : [ [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "study", ",", "we", "found", "that", "Hb", "concentration", "and", "PCV", "decreased", "with", "increasing", "severity", "of", "NYHA", "functional", "status", "in", "dogs", "with", "DMVD", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "humans", ",", "renal", "dysfunction", "is", "a", "critical", "independent", "risk", "factor", "of", "poor", "outcome", "and", "mortality", "in", "patients", "with", "HF", "[", "3", ",", "4", "]", "." ],
+    "entities_indices" : [ [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "Correction", "of", "anemia", "is", "strongly", "recommended", "to", "improve", "outcomes", "in", "human", "patients", "with", "HF", "[", "24", "]", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "retrospective", "study", ",", "the", "prevalence", "and", "prognostic", "significance", "of", "anemia", "in", "114", "dogs", "with", "degenerative", "mitral", "valve", "disease", "(", "DMVD", ")", "was", "investigated", "." ],
+    "entities_indices" : [ [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "diagnosed", "criteria", "of", "DMVD", "were", "based", "on", "echocardiographic", "findings", ":", "2D", "detection", "of", "mitral", "valve", "prolapse", ";", "any", "degree", "of", "mitral", "valve", "leaflet", "thickening", "or", "both", ";", "color", "Doppler", "identification", "of", "any", "degree", "of", "mitral", "valve", "regurgitation", "[", "19", "]", "." ],
+    "entities_indices" : [ [ 14, 15, 16, 17 ], [ 35, 36, 37, 38 ] ]
+  }, {
+    "sentence_tokens" : [ "Azotemia", "was", "defined", "as", "BUN", ">", "26", "mg/dL", "and/or", "blood", "creatinine", ">", "1.6", "mg/dL", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "Anemia", "is", "generally", "considered", "to", "be", "prevalent", "in", "human", "patients", "with", "HF", ",", "though", "prevalence", "rates", "in", "the", "literature", "vary", "widely", ",", "ranging", "from", "9.9", "%", "to", "over", "50", "%", "[", "11", ",", "12", "]", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "Meanwhile", "Slupe", "and", "coauthors", "found", "that", "28", "%", "of", "a", "group", "of", "116", "dogs", "with", "HF", "presented", "with", "anemia", "characterized", "by", "low", "hematocrit", "and", "hemoglobin", "(", "Hb", ")", "concentrations", "[", "18", "]", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 15, 16 ], [ 18, 19 ], [ 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "study", ",", "anemia", "was", "defined", "as", "Hb", "<", "12.5", "g/dl", "and/or", "PCV", "<", "35", "%", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "Categorical", "variables", "(", "i.e", ".,", "absence", "or", "presence", "of", "anemia", ",", "azotemia", ")", "were", "evaluated", "with", "Pearson", "'s", "chi", "square", "test.Kaplan-Meier", "survival", "curves", "were", "created", "to", "identify", "potential", "prognostic", "variables", "for", "death", "by", "any", "cause", "(", "all", "cause", "mortality", ")", "and", "log-rank", "tests", "were", "used", "to", "assess", "significance", "." ],
+    "entities_indices" : [ [ 9, 10 ], [ 11, 12 ], [ 31, 32 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "prevalence", "of", "azotemia", "is", "elevated", "in", "dogs", "with", "chronic", "heart", "valve", "disease", "and", "the", "risk", "of", "azotemia", "increases", "with", "HF", "severity", "[", "1", "]", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 10, 11, 12, 13 ], [ 17, 18 ], [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "Survival", "time", "was", "counted", "from", "the", "day", "of", "DMVD", "diagnosis", "to", "either", "the", "month", "of", "death", "or", "closing", "time", "of", "the", "study", "(", "May", "31", ",", "2015", ")", "." ],
+    "entities_indices" : [ [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "Pretreatment", "anemia", ",", "as", "indicated", "by", "Hb", "<", "12.5", "g/dL", ",", "at", "the", "time", "of", "diagnosis", "of", "DMVD", "is", "predictor", "of", "poor", "outcome", "in", "dogs", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 7, 8, 9, 10 ], [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "overall", "prevalence", "of", "azotemia", "in", "dogs", "with", "DMVD", "was", "44.7", "%", ",", "highest", "in", "the", "NYHA", "class", "IV", "(", "63.3", "%", ")", ",", "followed", "by", "classes", "III", "(", "41.3", "%", ")", "and", "II", "(", "34.2", "%", ")", ",", "but", "the", "differences", "among", "three", "classes", "were", "not", "significant", "(", "p", "=", "0.104", ",", "Table", "2", ")", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ ")", ",", "followed", "by", "classes", "III", "(", "14.5", "+/-", "2.8", "g/dL", ",", "39.6", "+/-", "8.1", "%", ",", "and", "6.1", "+/-", "1.2", "x", "10", "/", "mu", "L", ",", "resp", "." ],
+    "entities_indices" : [ [ 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "NYHA", "class", "IV", "(", "hazard", "ratio", "(", "HR", ")", ":", "3.1", ",", "95", "%", "CI", ":", "2.2-4.3", ";", "p", "<", "0.001", ")", ",", "left", "atrium", "and", "aorta", "ratio", ">", "1.7", "(", "HR", ":", "2.7", ",", "95", "%", "CI", ":", "1.7-4.2", ";", "p", "=", "0.001", ")", ",", "and", "presence", "of", "anemia", "(", "HR", ":", "1.43", ",", "95", "%", "CI", ":", "1.1-1.9", ";", "p", "=", "0.004", ")", "emerged", "as", "predictors", "of", "mortality", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 7, 8 ], [ 14, 15 ], [ 31, 32 ], [ 37, 38 ], [ 49, 50 ], [ 51, 52 ], [ 57, 58 ] ]
+  }, {
+    "sentence_tokens" : [ "Anemia", "was", "associated", "with", "a", "poor", "outcome", "and", "emerged", "as", "a", "predictor", "of", "mortality.The", "present", "findings", "fit", "with", "findings", "in", "human", "patients", "indicating", "that", "the", "prevalence", "of", "anemia", "comorbidity", "with", "HF", "increases", "with", "increasing", "severity", "of", "NYHA", "functional", "status", "and", "that", "anemia", "is", "a", "prognostic", "factor", "for", "mortality", "[", "12", ",", "13", "]", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 27, 28 ], [ 30, 31 ], [ 36, 37 ], [ 41, 42 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "median", "survival", "time", "for", "dogs", "with", "blood", "creatinine", "<=", "1.6", "mg/dL", "was", "43", "months", "(", "95", "%", "CI", ":", "18.2", "-", "67.5", ")", "and", "for", "those", "with", "blood", "creatinine", ">", "1.6", "mg/dL", "was", "20", "months", "(", "95", "%", "CI", ":", "10.5", "-", "29.5", ";", "p", "=", "0.159", ")", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 18, 19 ], [ 29, 30 ], [ 39, 40 ] ]
+  }, {
+    "sentence_tokens" : [ "Blood", "creatinine", ">", "1.6", "mg/dl", "was", "also", "more", "prevalent", "in", "the", "dogs", "with", "advanced", "HF", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "Pretreatment", "clinical", "parameters", ",", "prevalence", "of", "anemia", "and", "azotemia", ",", "and", "survival", "time", "were", "analyzed", "in", "relation", "to", "HF", "severity", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 8, 9 ], [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "BUN", "and", "blood", "creatinine", "concentrations", "were", "highest", "in", "class", "IV", "(", "50.8", "+/-", "17.8", "and", "1.4", "+/-", "0.9", "mg/dL", ")", ",", "followed", "by", "classes", "III", "(", "37.3", "+/-", "14.9", "and", "1.1", "+/-", "0.6", "mg/dL", ")", "and", "II", "(", "26.5", "+/-", "15.8", "and", "0.9", "+/-", "0.4", "mg/dL", ";", "p", "=", "0.032", "and", "p", "=", "0.018", ",", "resp", ".,", "Table", "2", ")", "." ],
+    "entities_indices" : [ [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "Severity", "of", "anemia", "tends", "to", "increase", "in", "parallel", "with", "severity", "of", "New", "York", "Heart", "Association", "(", "NYHA", ")", "functional", "status", "[", "12", ",", "13", "]", "." ],
+    "entities_indices" : [ [ 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "When", "the", "date", "of", "death", "was", "not", "available", "in", "the", "medical", "record", ",", "the", "dog", "'s", "owner", "was", "contacted", "to", "obtain", "this", "information", "." ],
+    "entities_indices" : [ [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "Anemia", "and", "RI", "have", "an", "addictive", "effect", "on", "mortality", "and", "are", "independent", "risk", "factors", "for", "mortality", "in", "human", "patients", "with", "HF", "[", "9", ",", "10", "]", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 2, 3 ], [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "There", "is", "growing", "awareness", "of", "an", "association", "between", "chronic", "heart", "failure", "(", "HF", ")", "and", "renal", "insufficiency", "(", "RI", ")", "in", "dogs", "[", "1", ",", "2", "]", "." ],
+    "entities_indices" : [ [ 9, 10, 11 ], [ 12, 13 ], [ 15, 16, 17 ], [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "Thirty-eight", "dogs", "were", "categorized", "as", "the", "NYHA", "class", "II", ",", "and", "46", "and", "30", "dogs", "were", "categorized", "as", "the", "NYHA", "classes", "III", "and", "IV", ",", "respectively", "(", "Table", "1", ")", "." ],
+    "entities_indices" : [ [ 19, 20, 21, 22, 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "overall", "prevalence", "of", "anemia", "of", "this", "study", "(", "14.5", "%", ")", "was", "lower", "than", "that", "reported", "previously", "(", "28", "%", ")", "[", "18", "]", ";", "however", ",", "an", "increasing", "prevalence", "of", "anemia", "was", "in", "relation", "to", "greater", "HF", "severity", ",", "with", "the", "rate", "reaching", "33.3", "%", "in", "the", "NYHA", "class", "IV", "group.Although", "the", "precise", "pathophysiology", "of", "anemia", "in", "dogs", "with", "DMVD", "is", "not", "yet", "known", ",", "it", "is", "worth", "noting", "that", "dogs", "with", "disorders", "that", "could", "potentially", "cause", "anemia", "independent", "of", "HF", ",", "such", "as", "tick-borne", "diseases", ",", "chronic", "renal", "failure", ",", "and", "neoplasia", "[", "22", "]", ",", "were", "excluded", "from", "this", "study", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 32, 33 ], [ 38, 39 ], [ 57, 58 ], [ 79, 80 ], [ 82, 83 ], [ 86, 87, 88 ], [ 89, 90, 91, 92 ], [ 94, 95 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "median", "survival", "time", "was", "24", "months", "(", "95", "%", "CI", ":", "18.5", "-", "29.5", ")", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "These", "results", "are", "consistent", "with", "studies", "of", "human", "HF", "patients", "in", "indicating", "that", "anemia", "is", "an", "independent", "predictor", "of", "mortality", "in", "HF", "patients", "[", "7", ",", "13", ",", "24", "]", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 13, 14 ], [ 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "Association", "of", "Variables", "with", "HF", "Severity", "." ],
+    "entities_indices" : [ [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "hypothesized", "that", "survival", "time", "would", "be", "shortened", "in", "the", "presence", "of", "anemia", "and", "azotemia", "." ],
+    "entities_indices" : [ [ 12, 13 ], [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "Anemia", "also", "emerged", "as", "a", "prognostic", "factor", "for", "survival", "in", "dogs", "with", "DMVD", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "association", "among", "HF", ",", "impaired", "renal", "function", ",", "and", "anemia", "has", "not", "been", "well", "studied", "in", "dogs", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "cardiorenal-anemia", "syndrome", "like", "triangle", "was", "observed", "and", "anemia", "was", "a", "prognostic", "factor", "for", "survival", "in", "dogs", "with", "DMVD", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "Hb", "concentration", ",", "PCV", ",", "and", "RBC", "were", "highest", "in", "the", "NYHA", "class", "II", "(", "16.9", "+/-", "2.0", "g/dL", ",", "47.1", "+/-", "5.5", "%", ",", "and", "7.2", "+/-", "1.0", "x", "10", "/", "mu", "L", ",", "resp", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 32, 33 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "overall", "prevalence", "of", "blood", "creatinine", ">", "1.6", "mg/dl", "was", "14.9", "%", ",", "highest", "in", "the", "NYHA", "class", "IV", "(", "23.3", "%", ")", ",", "followed", "by", "classes", "III", "(", "17.4", "%", ")", "and", "II", "(", "5.3", "%", ")", "." ],
+    "entities_indices" : [ [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "DMVD", "presented", "clinical", "signs", "and", "LA/Ao", ">", "1.4", "in", "echocardiographic", "examination", "but", "did", "not", "receive", "any", "form", "of", "treatment", "for", "HF", ",", "any", "other", "cardiovascular", "disorders", ",", "vector-borne", "diseases", ",", "acute", "and", "chronic", "renal", "failure", ",", "or", "other", "systemic", "disorders", "(", "gastrointestinal", ",", "hepatic", ",", "and", "neoplastic", ")", ",", "having", "been", "treated", "with", "potentially", "nephrotoxic", "drugs.All", "dogs", "in", "this", "study", "receive", "standard", "medical", "treatment", "for", "HF", ",", "including", "angiotensin", "converting", "enzyme", "inhibitor", ",", "furosemide", ",", "digoxin", ",", "and", "pimobendan", "based", "upon", "the", "clinical", "signs", "and", "chest", "radiographic", "and", "echocardiographic", "findings", "[", "20", "]", "." ],
+    "entities_indices" : [ [ 20, 21 ], [ 28, 29, 30, 31 ], [ 32, 33, 34, 35 ], [ 65, 66 ], [ 68, 69, 70, 71, 72 ], [ 73, 74 ], [ 75, 76 ], [ 78, 79 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "end-point", "of", "the", "study", "was", "death", "(", "all", "causes", ")", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "pathophysiology", "relating", "anemia", "to", "HF", "in", "humans", "is", "multifactorial", ",", "including", "renal", "dysfunction", "and", "impaired", "erythropoietin", "production", "[", "5", "]", ",", "overproduction", "of", "proinflammatory", "cytokines", "such", "as", "tumor", "necrosis", "factor", "and", "interleukins", "[", "14", ",", "15", "]", ",", "an", "expansion", "in", "plasma", "volume", "[", "16", "]", ",", "and", "downregulation", "of", "erythropoietin", ",", "such", "as", "by", "angiotensin", "converting", "enzyme", "inhibitors", "[", "17", "]", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 5, 6 ], [ 16, 17 ], [ 28, 29, 30, 31 ], [ 32, 33 ], [ 51, 52 ], [ 56, 57, 58, 59, 60 ] ]
+  }, {
+    "sentence_tokens" : [ "Although", "the", "blood", "test", "result", "of", "blood", "creatinine", ">", "1.6", "mg/dL", "was", "more", "prevalent", "in", "severe", "HF", "cases", ",", "relative", "to", "less", "severe", "cases", ",", "it", "was", "not", "significantly", "associated", "with", "a", "poor", "outcome", "nor", "was", "it", "a", "predictor", "of", "mortality.In", "this", "study", ",", "the", "presence", "of", "anemia", "was", "positively", "associated", "with", "both", "HF", "severity", "and", "blood", "creatinine", ">", "1.6", "mg/dL", ",", "a", "sign", "of", "development", "of", "RI", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 16, 17 ], [ 47, 48 ], [ 53, 54 ], [ 57, 58 ], [ 67, 68 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "prevalence", "of", "anemia", "was", "highest", "in", "dogs", "with", "the", "modified", "New", "York", "Heart", "Association", "(", "NYHA", ")", "class", "IV", "HF", "(", "33.3", "%", ")", ",", "followed", "by", "classes", "III", "(", "15.2", "%", ")", "and", "II", "(", "0", "%", ";", "p", "<", "0.001", ")", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "presence", "of", "anemia", "was", "positively", "associated", "with", "severity", "of", "NYHA", "functional", "classification", "and", "blood", "creatinine", ">", "1.6", "mg/dL", "(", "both", "p", "<", "0.001", ")", ",", "but", "not", "with", "the", "presence", "of", "azotemia", "(", "p", "=", "0.074", ")", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 10, 11 ], [ 15, 16 ], [ 32, 33 ] ]
+  }, {
+    "sentence_tokens" : [ "Anemia", "has", "been", "found", "to", "be", "a", "common", "comorbidity", "in", "human", "patients", "with", "HF", "and", "its", "presence", "not", "only", "is", "associated", "with", "worse", "long-term", "HF", "outcomes", "[", "6", ",", "7", "]", ",", "but", "also", "is", "a", "marker", "of", "subclinical", "comorbid", "RI", "[", "8]", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 13, 14 ], [ 24, 25 ], [ 40, 41 ] ]
+  }, {
+    "sentence_tokens" : [ "Risks", "were", "quantitated", "as", "hazard", "ratios", "(", "HRs", ")", "with", "95", "%", "confidence", "intervals", "(", "CIs", ")", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "median", "survival", "time", "for", "dogs", "without", "azotemia", "was", "39", "months", "(", "95", "%", "CI", ":", "20.4", "-", "57.5", ")", "and", "for", "those", "with", "azotemia", "was", "20", "months", "(", "95", "%", "CI", ":", "14.5", "-", "25.5", ";", "p", "=", "0.173", ")", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 14, 15 ], [ 24, 25 ], [ 31, 32 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "prevalence", "of", "blood", "creatinine", ">", "1.6", "mg/dL", "among", "three", "groups", "was", "significantly", "different", "(", "p", "=", "0.035", ",", "Table", "2", ")", "." ],
+    "entities_indices" : [ [ 4, 5 ] ]
+  } ],
+  "emptySentences" : [ {
+    "sentence_tokens" : [ "Prevalence", "and", "Prognosis", "of", "Anemia", "in", "Dogs", "with", "Degenerative", "Mitral", "Valve", "Disease", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "humans", ",", "heart", "failure", "(", "HF", ")", "and", "renal", "insufficiency", "(", "RI", ")", "have", "negative", "reciprocal", "effects", ",", "and", "anemia", "can", "exacerbate", "their", "progression", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "retrospective", "study", ",", "the", "prevalence", "and", "prognostic", "significance", "of", "anemia", "in", "114", "dogs", "with", "degenerative", "mitral", "valve", "disease", "(", "DMVD", ")", "was", "investigated", "." ]
+  }, {
+    "sentence_tokens" : [ "Pretreatment", "clinical", "parameters", ",", "prevalence", "of", "anemia", "and", "azotemia", ",", "and", "survival", "time", "were", "analyzed", "in", "relation", "to", "HF", "severity", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "prevalence", "of", "anemia", "was", "highest", "in", "dogs", "with", "the", "modified", "New", "York", "Heart", "Association", "(", "NYHA", ")", "class", "IV", "HF", "(", "33.3", "%", ")", ",", "followed", "by", "classes", "III", "(", "15.2", "%", ")", "and", "II", "(", "0", "%", ";", "p", "<", "0.001", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "presence", "of", "anemia", "was", "associated", "with", "HF", "severity", "and", "blood", "creatinine", ">", "1.6", "mg/dL", "(", "both", "p", "<", "0.001", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Anemic", "dogs", "had", "a", "shorter", "median", "survival", "[", "13", "months", ";", "95", "%", "confidence", "interval", "(", "CI", ")", ":", "0.7-19.1", "]", "than", "nonanemic", "dogs", "(", "28", "months", ";", "95", "%", "CI", ":", "15.3-40.7", ";", "p", "<", ".001", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "NYHA", "class", "IV", "(", "hazard", "ratio", "(", "HR", ")", ":", "3.1", ",", "95", "%", "CI", ":", "2.2-4.3", ";", "p", "<", "0.001", ")", ",", "left", "atrium", "and", "aorta", "ratio", ">", "1.7", "(", "HR", ":", "2.7", ",", "95", "%", "CI", ":", "1.7-4.2", ";", "p", "=", "0.001", ")", ",", "and", "presence", "of", "anemia", "(", "HR", ":", "1.43", ",", "95", "%", "CI", ":", "1.1-1.9", ";", "p", "=", "0.004", ")", "emerged", "as", "predictors", "of", "mortality", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "cardiorenal-anemia", "syndrome", "like", "triangle", "was", "observed", "and", "anemia", "was", "a", "prognostic", "factor", "for", "survival", "in", "dogs", "with", "DMVD", "." ]
+  }, {
+    "sentence_tokens" : [ "1", "." ]
+  }, {
+    "sentence_tokens" : [ "Introduction", "." ]
+  }, {
+    "sentence_tokens" : [ "There", "is", "growing", "awareness", "of", "an", "association", "between", "chronic", "heart", "failure", "(", "HF", ")", "and", "renal", "insufficiency", "(", "RI", ")", "in", "dogs", "[", "1", ",", "2", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "prevalence", "of", "azotemia", "is", "elevated", "in", "dogs", "with", "chronic", "heart", "valve", "disease", "and", "the", "risk", "of", "azotemia", "increases", "with", "HF", "severity", "[", "1", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "humans", ",", "renal", "dysfunction", "is", "a", "critical", "independent", "risk", "factor", "of", "poor", "outcome", "and", "mortality", "in", "patients", "with", "HF", "[", "3", ",", "4", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Comorbid", "HF", ",", "RI", ",", "and", "anemia", "form", "a", "clinical", "triangle", "termed", "cardiorenal-anemia", "syndrome", "wherein", "HF", "and", "RI", "have", "negative", "reciprocal", "effects", ",", "and", "their", "mutual", "exacerbation", "is", "aggravated", "by", "anemia", "[", "5", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Anemia", "has", "been", "found", "to", "be", "a", "common", "comorbidity", "in", "human", "patients", "with", "HF", "and", "its", "presence", "not", "only", "is", "associated", "with", "worse", "long-term", "HF", "outcomes", "[", "6", ",", "7", "]", ",", "but", "also", "is", "a", "marker", "of", "subclinical", "comorbid", "RI", "[", "8]", "." ]
+  }, {
+    "sentence_tokens" : [ "Anemia", "and", "RI", "have", "an", "addictive", "effect", "on", "mortality", "and", "are", "independent", "risk", "factors", "for", "mortality", "in", "human", "patients", "with", "HF", "[", "9", ",", "10", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Anemia", "is", "generally", "considered", "to", "be", "prevalent", "in", "human", "patients", "with", "HF", ",", "though", "prevalence", "rates", "in", "the", "literature", "vary", "widely", ",", "ranging", "from", "9.9", "%", "to", "over", "50", "%", "[", "11", ",", "12", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Severity", "of", "anemia", "tends", "to", "increase", "in", "parallel", "with", "severity", "of", "New", "York", "Heart", "Association", "(", "NYHA", ")", "functional", "status", "[", "12", ",", "13", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "pathophysiology", "relating", "anemia", "to", "HF", "in", "humans", "is", "multifactorial", ",", "including", "renal", "dysfunction", "and", "impaired", "erythropoietin", "production", "[", "5", "]", ",", "overproduction", "of", "proinflammatory", "cytokines", "such", "as", "tumor", "necrosis", "factor", "and", "interleukins", "[", "14", ",", "15", "]", ",", "an", "expansion", "in", "plasma", "volume", "[", "16", "]", ",", "and", "downregulation", "of", "erythropoietin", ",", "such", "as", "by", "angiotensin", "converting", "enzyme", "inhibitors", "[", "17", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Though", "less", "well", "studied", "in", "dogs", "than", "in", "humans", ",", "a", "pattern", "of", "interactions", "similar", "to", "that", "seen", "in", "human", "patients", "appears", "to", "be", "at", "work", "." ]
+  }, {
+    "sentence_tokens" : [ "Nicolle", "and", "coauthors", "found", "that", "50", "%", "of", "a", "group", "of", "124", "dogs", "with", "chronic", "heart", "valve", "disease", "had", "concomitant", "azotemia", "and", "that", "severity", "of", "azotemia", "and", "RI", "increased", "with", "severity", "of", "HF", "[", "1", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Meanwhile", "Slupe", "and", "coauthors", "found", "that", "28", "%", "of", "a", "group", "of", "116", "dogs", "with", "HF", "presented", "with", "anemia", "characterized", "by", "low", "hematocrit", "and", "hemoglobin", "(", "Hb", ")", "concentrations", "[", "18", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "association", "among", "HF", ",", "impaired", "renal", "function", ",", "and", "anemia", "has", "not", "been", "well", "studied", "in", "dogs", "." ]
+  }, {
+    "sentence_tokens" : [ "Although", "treatment", "for", "dogs", "with", "HF", "has", "improved", "substantially", "in", "recent", "decades", ",", "it", "is", "not", "clear", "how", "azotemia", "and", "anemia", "affect", "survival", "in", "dogs", "with", "HF", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "aims", "of", "this", "study", "were", "to", "evaluate", "the", "associations", "of", "pretreatment", "hematological", "[", "Hb", "concentration", "and", "packed", "cell", "volume", "(", "PCV", ")", "]", "and", "biochemical", "[", "blood", "urea", "nitrogen", "(", "BUN", ")", "and", "creatinine", "concentrations", "]", "parameters", "with", "survival", "in", "dogs", "with", "chronic", "degenerative", "mitral", "valve", "disease", "(", "DMVD", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "hypothesized", "that", "survival", "time", "would", "be", "shortened", "in", "the", "presence", "of", "anemia", "and", "azotemia", "." ]
+  }, {
+    "sentence_tokens" : [ "2", "." ]
+  }, {
+    "sentence_tokens" : [ "Materials", "and", "Methods", "." ]
+  }, {
+    "sentence_tokens" : [ "2.1", "." ]
+  }, {
+    "sentence_tokens" : [ "Animals", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "medical", "records", "of", "1,188", "dogs", "examined", "at", "the", "Cardiology", "Unit", "of", "the", "National", "Taiwan", "University", "Veterinary", "Hospital", "between", "2006", "and", "2015", "were", "reviewed", "." ]
+  }, {
+    "sentence_tokens" : [ "DMVD", "cases", "were", "compiled", "according", "to", "the", "following", "inclusion", "and", "exclusion", "criteria", "described", "below", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "inclusion", "criterion", "was", "a", "first-time", "diagnosis", "of", "DMVD", "based", "on", "clinical", "presentation", "and", "findings", "of", "physical", ",", "thoracic", "radiographic", ",", "and", "echocardiographic", "examinations", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "diagnosed", "criteria", "of", "DMVD", "were", "based", "on", "echocardiographic", "findings", ":", "2D", "detection", "of", "mitral", "valve", "prolapse", ";", "any", "degree", "of", "mitral", "valve", "leaflet", "thickening", "or", "both", ";", "color", "Doppler", "identification", "of", "any", "degree", "of", "mitral", "valve", "regurgitation", "[", "19", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "exclusion", "criteria", "were", "DMVD", "without", "presenting", "with", "clinical", "signs", "and", "no", "cardiac", "remodeling", "based", "on", "echocardiographic", "findings", "(", "no", "enlarged", "left", "atrium", ",", "left", "ventricle", "or", "both", ",", "and", "left", "atrium", "to", "aorta", "ratio", "[", "LA/Ao", "]", "<", "1.4", ")", "[", "19", ",", "20", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "DMVD", "presented", "clinical", "signs", "and", "LA/Ao", ">", "1.4", "in", "echocardiographic", "examination", "but", "did", "not", "receive", "any", "form", "of", "treatment", "for", "HF", ",", "any", "other", "cardiovascular", "disorders", ",", "vector-borne", "diseases", ",", "acute", "and", "chronic", "renal", "failure", ",", "or", "other", "systemic", "disorders", "(", "gastrointestinal", ",", "hepatic", ",", "and", "neoplastic", ")", ",", "having", "been", "treated", "with", "potentially", "nephrotoxic", "drugs.All", "dogs", "in", "this", "study", "receive", "standard", "medical", "treatment", "for", "HF", ",", "including", "angiotensin", "converting", "enzyme", "inhibitor", ",", "furosemide", ",", "digoxin", ",", "and", "pimobendan", "based", "upon", "the", "clinical", "signs", "and", "chest", "radiographic", "and", "echocardiographic", "findings", "[", "20", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "2.2", "." ]
+  }, {
+    "sentence_tokens" : [ "Study", "Design", "." ]
+  }, {
+    "sentence_tokens" : [ "2.2.1", "." ]
+  }, {
+    "sentence_tokens" : [ "Association", "of", "Variables", "with", "HF", "Severity", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "study", "cases", "were", "divided", "into", "groups", "based", "on", "the", "NYHA", "classification", "system", "and", "averaged", "study", "variables", "were", "compared", "across", "the", "NYHA", "class", "groups", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "following", "pretreatment", "clinical", "information", "was", "collected", "from", "the", "case", "records", "of", "enrolled", "subjects", ":", "signalment", ";", "clinical", "presentation", ";", "results", "of", "physical", "examinations", ",", "including", "systemic", "arterial", "blood", "pressure", ";", "blood", "test", "results", ",", "such", "as", "Hb", "concentration", ",", "PCV", ",", "and", "blood", "concentrations", "of", "albumin", ",", "BUN", ",", "and", "blood", "creatinine", ";", "and", "urinalysis", "results", ",", "including", "microscopic", "examination", "of", "urinary", "sediments", "and", "urine", "specific", "gravity", "(", "refractometric", "method", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Additionally", ",", "vertebral", "heart", "scale", "was", "measured", "using", "electronic", "calipers", "in", "the", "right", "lateral", "recumbent", "view", "of", "digital", "thoracic", "radiographs", "[", "21", "]", ",", "and", "left", "atrium", "to", "aorta", "ratios", "(", "LA/Ao", ",", "measured", "in", "the", "2D", "right", "parasternal", "short-axis", "view", ")", "were", "compared", "across", "the", "NYHA", "class", "groups", "[", "19", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "study", ",", "anemia", "was", "defined", "as", "Hb", "<", "12.5", "g/dl", "and/or", "PCV", "<", "35", "%", "." ]
+  }, {
+    "sentence_tokens" : [ "Azotemia", "was", "defined", "as", "BUN", ">", "26", "mg/dL", "and/or", "blood", "creatinine", ">", "1.6", "mg/dL", "." ]
+  }, {
+    "sentence_tokens" : [ "2.2.2", "." ]
+  }, {
+    "sentence_tokens" : [ "Survival", "." ]
+  }, {
+    "sentence_tokens" : [ "Clinical", "progression", "was", "assessed", "by", "review", "of", "medical", "records", "." ]
+  }, {
+    "sentence_tokens" : [ "Survival", "time", "was", "counted", "from", "the", "day", "of", "DMVD", "diagnosis", "to", "either", "the", "month", "of", "death", "or", "closing", "time", "of", "the", "study", "(", "May", "31", ",", "2015", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "When", "the", "date", "of", "death", "was", "not", "available", "in", "the", "medical", "record", ",", "the", "dog", "'s", "owner", "was", "contacted", "to", "obtain", "this", "information", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "end-point", "of", "the", "study", "was", "death", "(", "all", "causes", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "All", "owners", "of", "dogs", "whose", "cases", "were", "included", "in", "this", "study", "gave", "their", "informed", "consent", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "study", "was", "carried", "out", "in", "accordance", "with", "the", "code", "of", "the", "National", "Taiwan", "University", "." ]
+  }, {
+    "sentence_tokens" : [ "2.3", "." ]
+  }, {
+    "sentence_tokens" : [ "Data", "Analysis", "." ]
+  }, {
+    "sentence_tokens" : [ "Continuous", "data", "with", "normal", "distributions", "are", "presented", "as", "means", "+/-", "standard", "deviations", ",", "and", "skewed", "data", "are", "presented", "as", "medians", "(", "ranges", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "homogeneity", "of", "variance", "of", "each", "group", "was", "checked", "with", "the", "Levene", "test", "." ]
+  }, {
+    "sentence_tokens" : [ "Group", "comparisons", "of", "blood", "and", "urine", "test", "results", "were", "made", "with", "analyses", "of", "variance", "and", "Scheff", "e", "'", "s", "post", "hoc", "pairwise", "comparisons", "." ]
+  }, {
+    "sentence_tokens" : [ "Categorical", "variables", "(", "i.e", ".,", "absence", "or", "presence", "of", "anemia", ",", "azotemia", ")", "were", "evaluated", "with", "Pearson", "'s", "chi", "square", "test.Kaplan-Meier", "survival", "curves", "were", "created", "to", "identify", "potential", "prognostic", "variables", "for", "death", "by", "any", "cause", "(", "all", "cause", "mortality", ")", "and", "log-rank", "tests", "were", "used", "to", "assess", "significance", "." ]
+  }, {
+    "sentence_tokens" : [ "Dogs", "that", "were", "alive", "at", "the", "time", "of", "data", "analysis", "were", "censored", "in", "the", "survival", "analysis", ",", "and", "the", "last", "known", "date", "alive", "was", "used", "for", "dogs", "lost", "to", "follow-up", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "univariate", "analysis", "was", "conducted", "to", "assess", "predictors", "(", "e.g", ".,", "NYHA", "class", "IV", ",", "LA/Ao", ">", "1.7", ",", "presence", "of", "anemia", ",", "presence", "of", "azotemia", ",", "and", "blood", "creatinine", ">", "1.6", "mg/dL", ")", "of", "all", "cause", "mortality", "." ]
+  }, {
+    "sentence_tokens" : [ "Risks", "were", "quantitated", "as", "hazard", "ratios", "(", "HRs", ")", "with", "95", "%", "confidence", "intervals", "(", "CIs", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Statistical", "analyses", "were", "performed", "with", "a", "commercial", "statistical", "software", "package", "." ]
+  }, {
+    "sentence_tokens" : [ "Two", "tailed", "p", "values", "<", "0.05", "were", "considered", "significant", "." ]
+  }, {
+    "sentence_tokens" : [ "3", "." ]
+  }, {
+    "sentence_tokens" : [ "Results", "." ]
+  }, {
+    "sentence_tokens" : [ "3.1", "." ]
+  }, {
+    "sentence_tokens" : [ "Cohort", "Characteristics", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "total", "of", "114", "dogs", "(", "61", "females", ")", "met", "the", "inclusion", "criteria", "and", "were", "included", "in", "the", "study", "." ]
+  }, {
+    "sentence_tokens" : [ "Their", "mean", "age", "at", "the", "time", "of", "DMVD", "diagnosis", "was", "11.1", "+/-", "3.2", "years", "." ]
+  }, {
+    "sentence_tokens" : [ "Sixteen", "breeds", "were", "represented", "in", "the", "cohort", ",", "with", "the", "most", "represented", "breed", "being", "Maltese", "Terrier", "." ]
+  }, {
+    "sentence_tokens" : [ "Thirty-eight", "dogs", "were", "categorized", "as", "the", "NYHA", "class", "II", ",", "and", "46", "and", "30", "dogs", "were", "categorized", "as", "the", "NYHA", "classes", "III", "and", "IV", ",", "respectively", "(", "Table", "1", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "3.2", "." ]
+  }, {
+    "sentence_tokens" : [ "Prevalence", "of", "Anemia", "and", "Azotemia", "." ]
+  }, {
+    "sentence_tokens" : [ "Hb", "concentration", ",", "PCV", ",", "and", "RBC", "were", "highest", "in", "the", "NYHA", "class", "II", "(", "16.9", "+/-", "2.0", "g/dL", ",", "47.1", "+/-", "5.5", "%", ",", "and", "7.2", "+/-", "1.0", "x", "10", "/", "mu", "L", ",", "resp", "." ]
+  }, {
+    "sentence_tokens" : [ ")", ",", "followed", "by", "classes", "III", "(", "14.5", "+/-", "2.8", "g/dL", ",", "39.6", "+/-", "8.1", "%", ",", "and", "6.1", "+/-", "1.2", "x", "10", "/", "mu", "L", ",", "resp", "." ]
+  }, {
+    "sentence_tokens" : [ ")", "and", "IV", "(", "13.8", "+/-", "2.9", "g/dL", ",", "37.8", "+/-", "7.9", "%", "and", "5.9", "+/-", "1.4", "x", "10", "/", "mu", "L", ",", "resp", ".;", "p", "<", "0.001", ",", "p", "<", "0.001", ",", "and", "p", "<", "0.001", ",", "resp", ".,", "Table", "2", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "overall", "prevalence", "of", "anemia", "in", "dogs", "with", "DMVD", "was", "14.9", "%", ",", "with", "prevalence", "showing", "an", "increasing", "trend", "from", "class", "II", "(", "0", "%", ")", "to", "class", "III", "(", "15.2", "%", ")", "to", "class", "IV", "(", "33.3", "%", ",", "p", "<", "0.001", ",", "Table", "2", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "presence", "of", "anemia", "was", "positively", "associated", "with", "severity", "of", "NYHA", "functional", "classification", "and", "blood", "creatinine", ">", "1.6", "mg/dL", "(", "both", "p", "<", "0.001", ")", ",", "but", "not", "with", "the", "presence", "of", "azotemia", "(", "p", "=", "0.074", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "BUN", "and", "blood", "creatinine", "concentrations", "were", "highest", "in", "class", "IV", "(", "50.8", "+/-", "17.8", "and", "1.4", "+/-", "0.9", "mg/dL", ")", ",", "followed", "by", "classes", "III", "(", "37.3", "+/-", "14.9", "and", "1.1", "+/-", "0.6", "mg/dL", ")", "and", "II", "(", "26.5", "+/-", "15.8", "and", "0.9", "+/-", "0.4", "mg/dL", ";", "p", "=", "0.032", "and", "p", "=", "0.018", ",", "resp", ".,", "Table", "2", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "overall", "prevalence", "of", "azotemia", "in", "dogs", "with", "DMVD", "was", "44.7", "%", ",", "highest", "in", "the", "NYHA", "class", "IV", "(", "63.3", "%", ")", ",", "followed", "by", "classes", "III", "(", "41.3", "%", ")", "and", "II", "(", "34.2", "%", ")", ",", "but", "the", "differences", "among", "three", "classes", "were", "not", "significant", "(", "p", "=", "0.104", ",", "Table", "2", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "overall", "prevalence", "of", "blood", "creatinine", ">", "1.6", "mg/dl", "was", "14.9", "%", ",", "highest", "in", "the", "NYHA", "class", "IV", "(", "23.3", "%", ")", ",", "followed", "by", "classes", "III", "(", "17.4", "%", ")", "and", "II", "(", "5.3", "%", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "prevalence", "of", "blood", "creatinine", ">", "1.6", "mg/dL", "among", "three", "groups", "was", "significantly", "different", "(", "p", "=", "0.035", ",", "Table", "2", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "3.3", "." ]
+  }, {
+    "sentence_tokens" : [ "Survival", "Analysis", "." ]
+  }, {
+    "sentence_tokens" : [ "Of", "the", "114", "DMVD", "dogs", ",", "101", "were", "able", "to", "complete", "the", "follow-up", "and", "34", "were", "still", "alive", "at", "the", "conclusion", "of", "the", "study", ",", "and", "data", "regarding", "these", "dogs", "were", "censored", "from", "the", "survival", "analysis", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "median", "survival", "time", "was", "24", "months", "(", "95", "%", "CI", ":", "18.5", "-", "29.5", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "median", "survival", "times", "for", "classes", "II", ",", "III", ",", "and", "IV", "were", "42", "months", "(", "95", "%", "CI", ":", "33.7", "-", "50.3", ")", ",", "26", "months", "(", "95", "%", "CI", ":", "21.3", "-", "30.7", ")", ",", "and", "7", "months", "(", "95", "%", "CI", ":", "3.6", "-", "10.4", ")", ",", "respectively", "(", "p", "<", "0.001", ",", "Table", "1", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "median", "survival", "time", "for", "dogs", "without", "anemia", "was", "28", "months", "(", "95", "%", "CI", ":", "15.3", "-", "40.7", ")", "and", "for", "those", "with", "anemia", "was", "13", "months", "(", "95", "%", "CI", ":", "0.7", "-", "19.1", ";", "p", "<", "0.001", ";", "Figure", "1", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "median", "survival", "time", "for", "dogs", "without", "azotemia", "was", "39", "months", "(", "95", "%", "CI", ":", "20.4", "-", "57.5", ")", "and", "for", "those", "with", "azotemia", "was", "20", "months", "(", "95", "%", "CI", ":", "14.5", "-", "25.5", ";", "p", "=", "0.173", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "median", "survival", "time", "for", "dogs", "with", "blood", "creatinine", "<=", "1.6", "mg/dL", "was", "43", "months", "(", "95", "%", "CI", ":", "18.2", "-", "67.5", ")", "and", "for", "those", "with", "blood", "creatinine", ">", "1.6", "mg/dL", "was", "20", "months", "(", "95", "%", "CI", ":", "10.5", "-", "29.5", ";", "p", "=", "0.159", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "univariate", "analysis", "indicated", "that", "designation", "to", "the", "NYHA", "class", "IV", "group", "(", "HR", ":", "3.1", ",", "95", "%", "CI", ":", "2.2", "-", "4.3", ";", "p", "<", "0.001", ")", ",", "LA/Ao", ">", "1.7", "(", "HR", ":", "2.7", ",", "95", "%", "CI", ":", "1.7", "-", "4.2", ";", "p", "=", "0.001", ")", ",", "and", "presence", "of", "anemia", "(", "HR", ":", "1.43", ",", "95", "%", "CI", ":", "1.1", "-", "1.9", ";", "p", "=", "0.004", ")", "were", "significant", "predictors", "of", "all", "cause", "mortality", "." ]
+  }, {
+    "sentence_tokens" : [ "Meanwhile", ",", "presence", "of", "azotemia", "and", "blood", "creatinine", ">", "1.6", "mg/dL", "were", "not", "predictors", "of", "all", "cause", "mortality", "in", "the", "univariate", "analysis", "." ]
+  }, {
+    "sentence_tokens" : [ "4", "." ]
+  }, {
+    "sentence_tokens" : [ "Discussion", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "study", ",", "we", "found", "that", "Hb", "concentration", "and", "PCV", "decreased", "with", "increasing", "severity", "of", "NYHA", "functional", "status", "in", "dogs", "with", "DMVD", "." ]
+  }, {
+    "sentence_tokens" : [ "Meanwhile", ",", "BUN", "levels", ",", "blood", "creatinine", "levels", ",", "prevalence", "of", "anemia", ",", "and", "prevalence", "of", "blood", "creatinine", ">", "1.6", "mg/dL", "increased", "with", "increasing", "HF", "severity", "." ]
+  }, {
+    "sentence_tokens" : [ "Anemia", "was", "associated", "with", "a", "poor", "outcome", "and", "emerged", "as", "a", "predictor", "of", "mortality.The", "present", "findings", "fit", "with", "findings", "in", "human", "patients", "indicating", "that", "the", "prevalence", "of", "anemia", "comorbidity", "with", "HF", "increases", "with", "increasing", "severity", "of", "NYHA", "functional", "status", "and", "that", "anemia", "is", "a", "prognostic", "factor", "for", "mortality", "[", "12", ",", "13", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "overall", "prevalence", "of", "anemia", "of", "this", "study", "(", "14.5", "%", ")", "was", "lower", "than", "that", "reported", "previously", "(", "28", "%", ")", "[", "18", "]", ";", "however", ",", "an", "increasing", "prevalence", "of", "anemia", "was", "in", "relation", "to", "greater", "HF", "severity", ",", "with", "the", "rate", "reaching", "33.3", "%", "in", "the", "NYHA", "class", "IV", "group.Although", "the", "precise", "pathophysiology", "of", "anemia", "in", "dogs", "with", "DMVD", "is", "not", "yet", "known", ",", "it", "is", "worth", "noting", "that", "dogs", "with", "disorders", "that", "could", "potentially", "cause", "anemia", "independent", "of", "HF", ",", "such", "as", "tick-borne", "diseases", ",", "chronic", "renal", "failure", ",", "and", "neoplasia", "[", "22", "]", ",", "were", "excluded", "from", "this", "study", "." ]
+  }, {
+    "sentence_tokens" : [ "None", "of", "the", "dogs", "in", "this", "study", "suffered", "from", "acute", "or", "chronic", "renal", "disorders", ",", "and", "none", "of", "them", "presented", "with", "low", "urine", "specific", "gravity", "." ]
+  }, {
+    "sentence_tokens" : [ "Thus", ",", "the", "presence", "of", "azotemia", "was", "presumably", "secondary", "to", "HF", "[", "1", "]", "even", "though", "the", "comparison", "of", "azotemia", "prevalence", "across", "the", "NYHA", "class", "groups", "did", "not", "reach", "significance.To", "the", "best", "of", "our", "knowledge", ",", "this", "is", "the", "first", "study", "to", "demonstrate", "an", "effect", "of", "anemia", "on", "survival", "in", "dogs", "with", "HF", "in", "the", "veterinary", "literature", "[", "18", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "found", "that", "prognosis", "was", "less", "favorable", "for", "anemic", "than", "for", "nonanemic", "dogs", "and", "that", "a", "pretreatment", "Hb", "concentration", "<", "12.5", "g/dL", "was", "a", "predictor", "of", "poor", "outcome", "." ]
+  }, {
+    "sentence_tokens" : [ "These", "results", "are", "consistent", "with", "studies", "of", "human", "HF", "patients", "in", "indicating", "that", "anemia", "is", "an", "independent", "predictor", "of", "mortality", "in", "HF", "patients", "[", "7", ",", "13", ",", "24", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Correction", "of", "anemia", "is", "strongly", "recommended", "to", "improve", "outcomes", "in", "human", "patients", "with", "HF", "[", "24", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Studies", "of", "the", "effectiveness", "of", "anemia", "correction", "for", "improving", "outcomes", "in", "dogs", "with", "DMVD", "are", "needed.The", "present", "findings", "showing", "that", "severity", "of", "HF", "at", "admission", "and", "LA/Ao", ">", "1.7", "were", "also", "predictors", "of", "poor", "outcome", "in", "dogs", "with", "DMVD", "are", "consistent", "with", "the", "results", "of", "previous", "studies", "[", "25", ",", "26", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Although", "the", "blood", "test", "result", "of", "blood", "creatinine", ">", "1.6", "mg/dL", "was", "more", "prevalent", "in", "severe", "HF", "cases", ",", "relative", "to", "less", "severe", "cases", ",", "it", "was", "not", "significantly", "associated", "with", "a", "poor", "outcome", "nor", "was", "it", "a", "predictor", "of", "mortality.In", "this", "study", ",", "the", "presence", "of", "anemia", "was", "positively", "associated", "with", "both", "HF", "severity", "and", "blood", "creatinine", ">", "1.6", "mg/dL", ",", "a", "sign", "of", "development", "of", "RI", "." ]
+  }, {
+    "sentence_tokens" : [ "Blood", "creatinine", ">", "1.6", "mg/dl", "was", "also", "more", "prevalent", "in", "the", "dogs", "with", "advanced", "HF", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "associations", "among", "HF", ",", "RI", ",", "and", "anemia", "observed", "in", "this", "cohort", "are", "consistent", "with", "so", "called", "\"", "cardiorenal-anemia", "syndrome", "\"", "described", "in", "humans", "[", "5", "]", "and", "support", "the", "notion", "that", "there", "are", "cause", "and", "effect", "relationships", "among", "HF", ",", "RI", ",", "and", "anemia", "in", "dogs", "with", "DMVD.This", "study", "has", "some", "limitations", "worth", "noting", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "did", "not", "have", "control", "comparison", "for", "the", "prevalence", "of", "anemia", "and", "azotemia", ",", "and", "we", "did", "not", "have", "an", "age", "matched", "healthy", "control", "group", "with", "which", "to", "compare", "survival", "times", "." ]
+  }, {
+    "sentence_tokens" : [ "5", "." ]
+  }, {
+    "sentence_tokens" : [ "Conclusions", "." ]
+  }, {
+    "sentence_tokens" : [ "Pretreatment", "anemia", ",", "as", "indicated", "by", "Hb", "<", "12.5", "g/dL", ",", "at", "the", "time", "of", "diagnosis", "of", "DMVD", "is", "predictor", "of", "poor", "outcome", "in", "dogs", "." ]
+  }, {
+    "sentence_tokens" : [ "Anemia", "also", "emerged", "as", "a", "prognostic", "factor", "for", "survival", "in", "dogs", "with", "DMVD", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "cardiorenal-anemia", "syndrome", "like", "interrelationship", "of", "clinical", "parameters", "can", "be", "seen", "in", "dogs", "with", "DMVD", "." ]
+  } ]
+}

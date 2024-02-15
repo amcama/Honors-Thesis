@@ -1,139 +1,623 @@
-[ {
-  "sentence_tokens" : [ "SCFA", "(", "primarily", "acetate", ",", "propionate", "and", "butyrate", ")", "are", "products", "of", "bacterial", "fermentation", "of", "CHO", "in", "the", "colon", "34", "." ],
-  "event_indices" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 0, 1 ],
-  "controlled_indices" : [ 13, 14 ],
-  "trigger_indices" : [ 9, 10, 11 ],
-  "rule_name" : "Positive_activation_copula_1",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Consumption", "of", "RS", "is", "known", "to", "increase", "the", "faecal", "output", "of", "SCFA", ",", "and", "epidemiological", "evidence", "suggests", "it", "is", "protective", "against", "colorectal", "cancer", "35", "." ],
-  "event_indices" : [ 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 2, 3 ],
-  "controlled_indices" : [ 11, 12 ],
-  "trigger_indices" : [ 6, 7 ],
-  "rule_name" : "Positive_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "As", "evidence", "emerges", "on", "the", "link", "between", "diet", "and", "bacterial", "populations", "inhabiting", "the", "bowel", "36", "38", ",", "the", "reduction", "in", "RS", "intake", "we", "have", "reported", "may", "also", "reduce", "colonic", "SCFA", "production", ",", "which", "may", ",", "in", "turn", ",", "increase", "the", "risk", "of", "developing", "non", "infectious", "digestive", "disorders", "36", "39", "." ],
-  "event_indices" : [ 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 20, 21 ],
-  "controlled_indices" : [ 29, 30 ],
-  "trigger_indices" : [ 27, 28 ],
-  "rule_name" : "Negative_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "However", ",", "it", "is", "not", "known", "whether", "this", "results", "in", "changes", "to", "resistant", "starch", "(", "RS", ")", "consumption", "." ],
-  "entity_one_indices" : [ 15, 16 ],
-  "entity_two_indices" : [ 13, 14 ]
-}, {
-  "sentence_tokens" : [ "We", "aimed", "to", "determine", "whether", "intake", "of", "RS", "and", "serum", "concentrations", "of", "TMAO", "varied", "in", "response", "to", "either", "the", "Paleolithic", "or", "the", "Australian", "Guide", "to", "Healthy", "Eating", "(", "AGHE", ")", "diets", "and", "whether", "this", "was", "related", "to", "changes", "in", "food", "group", "consumption", "." ],
-  "entity_one_indices" : [ 12, 13 ],
-  "entity_two_indices" : [ 7, 8 ]
-}, {
-  "sentence_tokens" : [ "Serum", "TMAO", "concentrations", "were", "measured", "using", "liquid", "chromatography-MS", ";", "food", "groups", ",", "fibre", "and", "RS", "intake", "were", "estimated", "from", "weighed", "food", "records", "." ],
-  "entity_one_indices" : [ 14, 15 ],
-  "entity_two_indices" : [ 1, 2 ]
-}, {
-  "sentence_tokens" : [ "RS", "intake", "was", "significantly", "lower", "on", "the", "Paleolithic", "diet", "(", "P", "<", "0.01", ")", "and", "was", "not", "associated", "with", "TMAO", "concentrations", "." ],
-  "entity_one_indices" : [ 19, 20 ],
-  "entity_two_indices" : [ 0, 1 ]
-}, {
-  "sentence_tokens" : [ "While", "there", "were", "no", "significant", "changes", "in", "TMAO", "concentrations", ",", "increased", "meat", "consumption", "and", "reduced", "RS", "intake", "warrant", "further", "research", "to", "examine", "the", "markers", "of", "gastrointestinal", "health", "of", "Paleolithic", "diet", "followers", "and", "to", "update", "Australian", "food", "databases", "to", "include", "additional", "fibre", "components", "." ],
-  "entity_one_indices" : [ 15, 16 ],
-  "entity_two_indices" : [ 7, 8 ]
-}, {
-  "sentence_tokens" : [ "RS", "offers", "a", "range", "of", "health", "benefits", "mediated", "through", "the", "products", "of", "its", "fermentation", "by", "colonic", "bacteria", "11", "." ],
-  "entity_one_indices" : [ 13, 14 ],
-  "entity_two_indices" : [ 0, 1 ]
-}, {
-  "sentence_tokens" : [ "TMA", "is", "converted", "in", "the", "liver", "to", "trimethylamine-N-oxide", "(", "TMAO", ")", "18", "." ],
-  "entity_one_indices" : [ 9, 10 ],
-  "entity_two_indices" : [ 0, 1 ]
-}, {
-  "sentence_tokens" : [ "Wang", "et", "al.", "16", "showed", "that", "TMAO", "was", "a", "dose", "dependent", "predictor", "of", "CVD", "risk", "in", "a", "cohort", "of", "1876", "subjects", "and", "positively", "correlated", "with", "atherosclerotic", "plaque", "size", "(", "Pearson", "correlation", "R", "0", "." ],
-  "entity_one_indices" : [ 25, 26, 27 ],
-  "entity_two_indices" : [ 6, 7 ]
-}, {
-  "sentence_tokens" : [ "It", "is", "still", "not", "understood", "whether", "TMAO", "is", "a", "causative", "or", "correlative", "factor", "in", "atherosclerotic", "plaque", "development", ",", "and", "more", "research", "is", "required", "to", "understand", "the", "link", "with", "CVD", "." ],
-  "entity_one_indices" : [ 14, 15, 16 ],
-  "entity_two_indices" : [ 6, 7 ]
-}, {
-  "sentence_tokens" : [ "Similarly", "the", "increased", "risk", "of", "colorectal", "cancer", "associated", "with", "plasma", "TMAO", "in", "women", "21", "may", "merely", "be", "a", "demonstrating", "that", "TMAO", "serves", "as", "a", "marker", "for", "red", "and", "processed", "meat", "consumption", ",", "which", "are", "already", "established", "risk", "factors", "for", "this", "disease", "22", "." ],
-  "entity_one_indices" : [ 20, 21 ],
-  "entity_two_indices" : [ 10, 11 ]
-}, {
-  "sentence_tokens" : [ "For", "seafood", ",", "which", "is", "a", "source", "of", "pre-formed", "TMAO", ",", "the", "postprandial", "rise", "in", "circulating", "levels", "can", "be", "detected", "within", "15", "min", "of", "consumption", "24", ",", "indicating", "that", "TMAO", "is", "rapidly", "absorbed", "from", "the", "upper", "gut", ",", "without", "entering", "the", "colon", "24", "." ],
-  "entity_one_indices" : [ 29, 30 ],
-  "entity_two_indices" : [ 9, 10 ]
-}, {
-  "sentence_tokens" : [ "This", "suggests", "that", "colonic", "CHO", "fermentation", "may", "play", "a", "significant", "role", "in", "mediating", "microbial", "populations", ",", "which", "produce", "TMA", "." ],
-  "entity_one_indices" : [ 18, 19 ],
-  "entity_two_indices" : [ 5, 6 ]
-}, {
-  "sentence_tokens" : [ "We", "aimed", "to", "determine", "whether", "fasting", "TMAO", "concentrations", "varied", "in", "healthy", "subjects", "randomised", "to", "either", "the", "Paleolithic", "or", "the", "Australian", "Guide", "to", "Healthy", "Eating", "(", "AGHE", ")", "diet", ",", "for", "a", "4-week", "intervention", "and", "the", "relationship", "with", "dietary", "RS", ",", "total", "fibre", "and", "food", "group", "intake", "." ],
-  "entity_one_indices" : [ 38, 39 ],
-  "entity_two_indices" : [ 6, 7 ]
-}, {
-  "sentence_tokens" : [ "Serum", "was", "thawed", ",", "and", "150", "mu", "l", "was", "transferred", "to", "a", "2-ml", "Eppendorf", "tube", "." ],
-  "entity_one_indices" : [ 13, 14 ],
-  "entity_two_indices" : [ 6, 7, 8 ]
-}, {
-  "sentence_tokens" : [ "Aliquots", "(", "2", "mu", "l", ")", "were", "injected", "into", "the", "column", "and", "separated", "using", "a", "mobile", "phase", "of", "acetonitrile", "with", "0", "." ],
-  "entity_one_indices" : [ 18, 19 ],
-  "entity_two_indices" : [ 0, 1, 2, 3, 4, 5 ]
-}, {
-  "sentence_tokens" : [ "1", "%", "formic", "acid", "(", "A", ")", "and", "100", "mm", "ammonium", "formate", "(", "B", ")", "." ],
-  "entity_one_indices" : [ 10, 11, 12 ],
-  "entity_two_indices" : [ 2, 3, 4 ]
-}, {
-  "sentence_tokens" : [ "2", "with", "collision", "energies", "(", "eV", ")", "of", "30", ",", "16", "and", "11", ",", "respectively", ",", "were", "used", "to", "monitor", "TMAO", ";", "transitions", "of", "m/z", "85", "." ],
-  "entity_one_indices" : [ 24, 25, 26 ],
-  "entity_two_indices" : [ 20, 21 ]
-}, {
-  "sentence_tokens" : [ "The", "inclusion", "of", "protein", "serves", ",", "solid", "fat", ",", "red", "meat", ",", "egg", "and", "grain", "serves", "in", "addition", "to", "estimates", "of", "RS", "as", "covariates", "in", "the", "ANCOVA", "model", "did", "not", "alter", "this", "finding", "." ],
-  "entity_one_indices" : [ 21, 22 ],
-  "entity_two_indices" : [ 7, 8 ]
-}, {
-  "sentence_tokens" : [ "We", "have", "reported", "total", "dietary", "fibre", "intake", "consistent", "with", "other", "studies", "of", "the", "Paleolithic", "diet", "4", "6", "8", "10", ",", "however", ",", "the", "changes", "in", "RS", "intake", "reported", "here", "represent", "new", "findings", "and", "may", "have", "long-term", "health", "implications", "." ],
-  "entity_one_indices" : [ 25, 26 ],
-  "entity_two_indices" : [ 13, 14, 15, 16, 17, 18, 19 ]
-}, {
-  "sentence_tokens" : [ "Over", "the", "short-term", "intervention", ",", "our", "results", "indicate", "that", "fasting", "serum", "concentrations", "of", "TMAO", "were", "not", "influenced", "by", "the", "relative", "increase", "in", "serves", "of", "eggs", "and", "red", "meat", "consumed", "on", "a", "Paleolithic", "diet", "or", "the", "decrease", "in", "RS", "intake.With", "the", "exclusion", "of", "grains", ",", "cereals", ",", "dairy", "products", "and", "legumes", "on", "the", "Paleolithic", "diet", ",", "it", "was", "anticipated", "that", "differences", "would", "occur", "in", "the", "intake", "of", "the", "protein", "food", "group", ",", "which", "included", "meats", ",", "poultry", ",", "and", "alternatives", "such", "as", "seafood", ",", "nuts", "and", "seeds", "and", "legumes", "." ],
-  "entity_one_indices" : [ 37, 38 ],
-  "entity_two_indices" : [ 13, 14 ]
-}, {
-  "sentence_tokens" : [ "While", "RS", "intake", "was", "low", "on", "the", "Paleolithic", "diet", ",", "RS", "can", "be", "obtained", "on", "a", "Paleolithic", "diet", "from", "root", "vegetables", "and", "bananas", "13", "." ],
-  "entity_one_indices" : [ 10, 11 ],
-  "entity_two_indices" : [ 1, 2 ]
-}, {
-  "sentence_tokens" : [ "Previous", "research", "has", "shown", "that", "low-CHO", "diets", "decrease", "total", "faecal", "SCFA", "concentrations", "and", "total", "daily", "faecal", "SCFA", "excretion", "when", "compared", "with", "energy", "restricted", "high-CHO", "diets", "36", "." ],
-  "entity_one_indices" : [ 16, 17 ],
-  "entity_two_indices" : [ 10, 11 ]
-}, {
-  "sentence_tokens" : [ "TMAO", "concentrations", "were", "significantly", "higher", "on", "the", "high", "v.", "low", "RS", "intake", ",", "but", "the", "effect", "was", "also", "dependent", "on", "dietary", "CHO", "intake", "25", "." ],
-  "entity_one_indices" : [ 10, 11 ],
-  "entity_two_indices" : [ 0, 1 ]
-}, {
-  "sentence_tokens" : [ "The", "authors", "concluded", "that", "both", "dietary", "CHO", "and", "RS", "intake", "influence", "the", "production", "of", "TMA", "by", "colonic", "microbiota", "." ],
-  "entity_one_indices" : [ 14, 15 ],
-  "entity_two_indices" : [ 8, 9 ]
-}, {
-  "sentence_tokens" : [ "A", "full", "understanding", "of", "dietary", "modification", "of", "TMAO", "concentrations", "can", "be", "gained", "with", "future", "measurement", "of", "these", "variables", "in", "conjunction", "with", "RS", "." ],
-  "entity_one_indices" : [ 21, 22 ],
-  "entity_two_indices" : [ 7, 8 ]
-}, {
-  "sentence_tokens" : [ "Furthermore", ",", "participants", "in", "both", "dietary", "intervention", "groups", "decreased", "energy", "intake", "significantly", "3", ",", "which", "is", "known", "to", "impact", "the", "microbiota", "42", "44", ",", "and", "may", "have", "influenced", "the", "ability", "of", "the", "microbiota", "to", "produce", "TMA", "." ],
-  "entity_one_indices" : [ 35, 36 ],
-  "entity_two_indices" : [ 20, 21, 22, 23 ]
-}, {
-  "sentence_tokens" : [ "Furthermore", ",", "with", "increased", "understanding", "of", "the", "physiological", "responses", "to", "fibre", "fractions", ",", "it", "is", "critical", "that", "the", "Australian", "and", "New", "Zealand", "fibre", "databases", "are", "updated", "to", "include", "RS", "components", "to", "enable", "population", "health", "assessment", "and", "establish", "epidemiological", "links", "with", "chronic", "disease", "." ],
-  "entity_one_indices" : [ 40, 41, 42 ],
-  "entity_two_indices" : [ 28, 29 ]
-} ]
+{
+  "regulations" : [ {
+    "sentence_tokens" : [ "SCFA", "(", "primarily", "acetate", ",", "propionate", "and", "butyrate", ")", "are", "products", "of", "bacterial", "fermentation", "of", "CHO", "in", "the", "colon", "34", "." ],
+    "event_indices" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 0, 1 ],
+    "controlled_indices" : [ 13, 14 ],
+    "trigger_indices" : [ 9, 10, 11 ],
+    "rule_name" : "Positive_activation_copula_1",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "Consumption", "of", "RS", "is", "known", "to", "increase", "the", "faecal", "output", "of", "SCFA", ",", "and", "epidemiological", "evidence", "suggests", "it", "is", "protective", "against", "colorectal", "cancer", "35", "." ],
+    "event_indices" : [ 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 2, 3 ],
+    "controlled_indices" : [ 11, 12 ],
+    "trigger_indices" : [ 6, 7 ],
+    "rule_name" : "Positive_activation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "As", "evidence", "emerges", "on", "the", "link", "between", "diet", "and", "bacterial", "populations", "inhabiting", "the", "bowel", "36", "38", ",", "the", "reduction", "in", "RS", "intake", "we", "have", "reported", "may", "also", "reduce", "colonic", "SCFA", "production", ",", "which", "may", ",", "in", "turn", ",", "increase", "the", "risk", "of", "developing", "non", "infectious", "digestive", "disorders", "36", "39", "." ],
+    "event_indices" : [ 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 20, 21 ],
+    "controlled_indices" : [ 29, 30 ],
+    "trigger_indices" : [ 27, 28 ],
+    "rule_name" : "Negative_activation_syntax_1_verb",
+    "rule" : null
+  } ],
+  "hardInstances" : [ {
+    "sentence_tokens" : [ "SCFA", "(", "primarily", "acetate", ",", "propionate", "and", "butyrate", ")", "are", "products", "of", "bacterial", "fermentation", "of", "CHO", "in", "the", "colon", "34", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 5, 6 ], [ 7, 8 ] ]
+  } ],
+  "withoutRegulations" : [ {
+    "sentence_tokens" : [ "05", "mu", "g/ml", "TMAO", ")", "were", "prepared", "in", "synthetic", "serum", "and", "then", "processed", "using", "the", "same", "procedure", "as", "for", "the", "samples", "." ],
+    "entities_indices" : [ [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "increase", "we", "found", "in", "the", "protein", "food", "group", "was", "attributable", "to", "greater", "red", "meat", "and", "egg", "consumption", ",", "precursor", "foods", "for", "the", "formation", "of", "TMAO", "16", "." ],
+    "entities_indices" : [ [ 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "Paleolithic", "diet", "lowers", "resistant", "starch", "intake", "but", "does", "not", "affect", "serum", "trimethylamine-N-oxide", "concentrations", "in", "healthy", "women", "." ],
+    "entities_indices" : [ [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "Post-intervention", ",", "the", "Paleolithic", "compared", "with", "AGHE", "group", "had", "a", "significantly", "lower", "intake", "of", "total", "starch", "(", "-", "61", "." ],
+    "entities_indices" : [ [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "While", "there", "were", "no", "significant", "changes", "in", "TMAO", "concentrations", ",", "increased", "meat", "consumption", "and", "reduced", "RS", "intake", "warrant", "further", "research", "to", "examine", "the", "markers", "of", "gastrointestinal", "health", "of", "Paleolithic", "diet", "followers", "and", "to", "update", "Australian", "food", "databases", "to", "include", "additional", "fibre", "components", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "Previous", "research", "in", "rats", "indicated", "that", "the", "benefits", "of", "RS", "supplementation", "were", "attenuated", "when", "the", "animals", "were", "fed", "a", "high-fat", "diet", "(", "40", "-", "41", "%", "of", "energy", ")", "40", "." ],
+    "entities_indices" : [ [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "aimed", "to", "determine", "whether", "fasting", "TMAO", "concentrations", "varied", "in", "healthy", "subjects", "randomised", "to", "either", "the", "Paleolithic", "or", "the", "Australian", "Guide", "to", "Healthy", "Eating", "(", "AGHE", ")", "diet", ",", "for", "a", "4-week", "intervention", "and", "the", "relationship", "with", "dietary", "RS", ",", "total", "fibre", "and", "food", "group", "intake", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 38, 39 ] ]
+  }, {
+    "sentence_tokens" : [ "All", "food", "items", "in", "the", "database", "were", "updated", "with", "an", "RS", "value", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "Grains", "and", "pulses", "are", "important", "sources", "of", "a", "particular", "type", "of", "dietary", "fibre", ",", "resistant", "starch", "(", "RS", ")", "." ],
+    "entities_indices" : [ [ 9, 10 ], [ 15, 16 ], [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "full", "understanding", "of", "dietary", "modification", "of", "TMAO", "concentrations", "can", "be", "gained", "with", "future", "measurement", "of", "these", "variables", "in", "conjunction", "with", "RS", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "RS", "intake", "on", "a", "Paleolithic", "diet", "requires", "quantification", "to", "understand", "potential", "implications", "for", "the", "long-term", "gut", "and", "overall", "health", "outcomes.Trimethylamine", "(", "TMA", ")", "is", "produced", "in", "vivo", "by", "the", "microbiota", "of", "the", "bowel", ",", "from", "consumption", "of", "choline", ",", "phosphatidylcholine", "and", "l-carnitine", "15", "16", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 23, 24 ], [ 39, 40 ], [ 41, 42 ], [ 43, 44 ] ]
+  }, {
+    "sentence_tokens" : [ "ANCOVA", "was", "used", "to", "examine", "the", "associations", "between", "TMAO", "concentrations", "and", "changes", "in", "dietary", "variables", ",", "with", "particular", "attention", "to", "protein", "and", "meat", "servings", ",", "egg", ",", "solid", "fat", "and", "grain", "servings", ",", "in", "addition", "to", "RS", "intake", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 8, 9 ], [ 28, 29 ], [ 36, 37 ] ]
+  }, {
+    "sentence_tokens" : [ "Fibre", "and", "RS", "content", "of", "mixed", "dishes", "and", "recipes", "were", "determined", "based", "on", "fibre/RS", "proportions", "of", "individual", "ingredients", "within", "the", "recipe", "." ],
+    "entities_indices" : [ [ 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "TMAO", "is", "filtered", "and", "excreted", "by", "kidneys", "into", "the", "urine", "and", "elevations", "in", "serum", "TMAO", "may", "merely", "be", "a", "marker", "of", "reduced", "kidney", "function", ",", "often", "co-existing", "with", "coronary", "atherosclerosis", "20", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 14, 15 ], [ 29, 30 ] ]
+  }, {
+    "sentence_tokens" : [ "Bergeron", "et", "al.", "25", "recently", "reported", "that", "plasma", "TMAO", "concentrations", "were", "increased", ",", "in", "a", "2-week", "crossover", "study", "using", "high", "CHO", ",", "with", "high", "or", "low", "RS", "(", "51", "%", "of", "energy", "CHO", "(", "27", "g", "RS", ")", "and", "53", "%", "CHO", "(", "<", "2", "g", "RS", ")", ")", ",", "compared", "with", "low", "CHO", ",", "with", "high", "or", "low", "RS", "(", "40", "%", "CHO", "(", "19", "g", "RS", ")", "and", "39", "%", "CHO", "(", "<", "1", "g", "RS", ")", ")", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 26, 27 ], [ 36, 37 ], [ 46, 47 ], [ 59, 60 ], [ 67, 68 ], [ 77, 78 ] ]
+  }, {
+    "sentence_tokens" : [ "Liquid", "chromatography", "(", "LC", ")", "-", "MS", "grade", "acetonitrile", "(", "450", "mu", "l", ")", ",", "containing", "0", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 8, 9 ], [ 11, 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "inclusion", "of", "protein", "serves", ",", "solid", "fat", ",", "red", "meat", ",", "egg", "and", "grain", "serves", "in", "addition", "to", "estimates", "of", "RS", "as", "covariates", "in", "the", "ANCOVA", "model", "did", "not", "alter", "this", "finding", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "1", "%", "formic", "acid", "(", "A", ")", "and", "100", "mm", "ammonium", "formate", "(", "B", ")", "." ],
+    "entities_indices" : [ [ 2, 3, 4 ], [ 10, 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "Serum", "TMAO", "concentrations", "were", "measured", "using", "liquid", "chromatography-MS", ";", "food", "groups", ",", "fibre", "and", "RS", "intake", "were", "estimated", "from", "weighed", "food", "records", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "Serum", "was", "thawed", ",", "and", "150", "mu", "l", "was", "transferred", "to", "a", "2-ml", "Eppendorf", "tube", "." ],
+    "entities_indices" : [ [ 6, 7, 8 ], [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "01", ")", "and", "RS", ",", "at", "both", "minimum", "(", "-", "1", "." ],
+    "entities_indices" : [ [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "It", "is", "still", "not", "understood", "whether", "TMAO", "is", "a", "causative", "or", "correlative", "factor", "in", "atherosclerotic", "plaque", "development", ",", "and", "more", "research", "is", "required", "to", "understand", "the", "link", "with", "CVD", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 14, 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "the", "link", "between", "diet", ",", "the", "microbiota", "and", "TMAO", "is", "not", "yet", "well", "understood", ",", "and", "larger", ",", "long-term", "research", "in", "this", "area", "is", "required", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "calibration", "standards", ",", "check", "standards", "and", "samples", "were", "analysed", "by", "LC", "-", "MS/MS", "using", "a", "Thermo", "Scientific", "Ultimate", "3000", "Liquid", "Chromatograph", "and", "coupled", "to", "a", "Thermo", "Scientific", "Quantiva", "triple", "quadrupole", "mass", "spectrometer", "." ],
+    "entities_indices" : [ [ 31, 32 ] ]
+  }, {
+    "sentence_tokens" : [ "Choline", "and", "phosphatidylcholine", "are", "found", "predominately", "in", "milk", ",", "liver", ",", "meat", ",", "eggs", "and", "peanuts", "17", ",", "and", "l-carnitine", "are", "predominately", "found", "in", "red", "meat", "15", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 2, 3 ], [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "Over", "the", "short-term", "intervention", ",", "our", "results", "indicate", "that", "fasting", "serum", "concentrations", "of", "TMAO", "were", "not", "influenced", "by", "the", "relative", "increase", "in", "serves", "of", "eggs", "and", "red", "meat", "consumed", "on", "a", "Paleolithic", "diet", "or", "the", "decrease", "in", "RS", "intake.With", "the", "exclusion", "of", "grains", ",", "cereals", ",", "dairy", "products", "and", "legumes", "on", "the", "Paleolithic", "diet", ",", "it", "was", "anticipated", "that", "differences", "would", "occur", "in", "the", "intake", "of", "the", "protein", "food", "group", ",", "which", "included", "meats", ",", "poultry", ",", "and", "alternatives", "such", "as", "seafood", ",", "nuts", "and", "seeds", "and", "legumes", "." ],
+    "entities_indices" : [ [ 13, 14 ], [ 37, 38 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "instance", ",", "they", "underestimate", "most", "types", "of", "RS", "48", "." ],
+    "entities_indices" : [ [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "Individual", "variation", "in", "gut", "microbiota", "composition", "may", "also", "influence", "the", "production", "of", "TMAO", "in", "response", "to", "dietary", "sources", "of", "choline", "and", "l-carnitine", "24", "." ],
+    "entities_indices" : [ [ 12, 13 ], [ 19, 20 ], [ 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "Diets", "low", "in", "CHO", "and", "whole", "grains", "also", "have", "lower", "content", "of", "other", "fermentable", "fibres", "that", "could", "influence", "the", "gut", "microbiota", ",", "including", "oligosaccharides", ",", "beta-glucans", "and", "arabinoxylans", "41", "." ],
+    "entities_indices" : [ [ 27, 28 ] ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "the", "limited", "data", "for", "RS", "and", "the", "small", "sample", "size", "may", "have", "influenced", "these", "findings", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "Similar", "foods", "were", "grouped", ",", "and", "RS", "content", "was", "assumed", "to", "be", "consistent", "across", "the", "category", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "While", "RS", "intake", "was", "low", "on", "the", "Paleolithic", "diet", ",", "RS", "can", "be", "obtained", "on", "a", "Paleolithic", "diet", "from", "root", "vegetables", "and", "bananas", "13", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "priori", "sample", "size", "calculations", "were", "based", "on", "an", "expected", "15", "%", "reduction", "in", "the", "primary", "outcome", "variable", ",", "total", "cholesterol", ",", "with", "5", "%", "alpha-error", "and", "80", "%", "power", "between", "groups", "." ],
+    "entities_indices" : [ [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "Aliquots", "(", "2", "mu", "l", ")", "were", "injected", "into", "the", "column", "and", "separated", "using", "a", "mobile", "phase", "of", "acetonitrile", "with", "0", "." ],
+    "entities_indices" : [ [ 0, 1, 2, 3, 4, 5 ], [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "532", ")", "or", "change", "in", "serum", "TMAO", "concentration", "(", "Paleolithic", "median", "change", "3", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "it", "is", "not", "known", "whether", "this", "results", "in", "changes", "to", "resistant", "starch", "(", "RS", ")", "consumption", "." ],
+    "entities_indices" : [ [ 13, 14 ], [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "Drawing", "conclusions", "linking", "dietary", "fibre", "fraction", "intake", "with", "health", "outcomes", "is", "limited", "without", "having", "a", "complete", "understanding", "of", "dietary", "fibre", "fraction", "composition", ";", "thus", ",", "more", "research", "is", "now", "required", "to", "develop", "updated", "databases", "in", "this", "area.Despite", "the", "increased", "serves", "of", "fruits", "and", "vegetables", "consumed", "in", "the", "Paleolithic", "group", "and", "the", "maintenance", "of", "total", "dietary", "fibre", "intake", ",", "RS", "was", "negatively", "impacted", "by", "the", "elimination", "of", "whole", "grains", "and", "cereals", "." ],
+    "entities_indices" : [ [ 58, 59 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "seafood", ",", "which", "is", "a", "source", "of", "pre-formed", "TMAO", ",", "the", "postprandial", "rise", "in", "circulating", "levels", "can", "be", "detected", "within", "15", "min", "of", "consumption", "24", ",", "indicating", "that", "TMAO", "is", "rapidly", "absorbed", "from", "the", "upper", "gut", ",", "without", "entering", "the", "colon", "24", "." ],
+    "entities_indices" : [ [ 9, 10 ], [ 29, 30 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "recent", "paper", "reported", "that", "diets", "high", "in", "RS", "(", "19", "-", "27", "g/d", ")", ",", "but", "low", "in", "carbohydrate", "(", "CHO", ")", ",", "were", "also", "associated", "with", "increased", "plasma", "TMAO", "concentrations", "25", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 19, 20 ], [ 30, 31 ] ]
+  }, {
+    "sentence_tokens" : [ "To", "assess", "food", "group", "intake", ",", "the", "pre-", "and", "post-intervention", "3-d", "weighed", "food", "records", "collected", "previously", "23", "were", "re-analysed", "using", "Australian", "software", ",", "FoodWorks", "Professional", ",", "version", "8.0", "26", ",", "with", "food", "group", "analysis", "enabled", "to", "provide", "intake", "of", "the", "major", "food", "groups", ":", "grains", ",", "fruits", ",", "vegetables", ",", "protein", "foods", "and", "dairy", "foods", "and", "intake", "of", "fats", ",", "oils", "and", "added", "sugars", "." ],
+    "entities_indices" : [ [ 58, 59 ] ]
+  }, {
+    "sentence_tokens" : [ "An", "aliquot", "(", "100", "mu", "l", ")", "of", "the", "supernatant", "was", "transferred", "to", "a", "2-ml", "HPLC", "vial", ",", "diluted", "with", "75:25", "acetonitrile", "containing", "0.1", "%", "formic", "acid", ":", "100", "mm", "ammonium", "formate", "(", "400", "mu", "l", ")", "and", "mixed", "thoroughly", "." ],
+    "entities_indices" : [ [ 21, 22 ], [ 25, 26, 27 ], [ 30, 31, 32 ], [ 34, 35, 36 ] ]
+  }, {
+    "sentence_tokens" : [ "Current", "estimates", "of", "RS", "in", "an", "Australian", "diet", "are", "3", "." ],
+    "entities_indices" : [ [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "5", "%", "RS", "25", "." ],
+    "entities_indices" : [ [ 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "TMA", "is", "converted", "in", "the", "liver", "to", "trimethylamine-N-oxide", "(", "TMAO", ")", "18", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "TMAO", "analysis", "was", "conducted", "on", "fasting", "serum", "samples", "stored", "at", "-", "20", "degrees", "C", "and", "collected", "as", "part", "of", "the", "study", "as", "described", "previously", "3", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "LC", "separation", "was", "achieved", "using", "an", "Intrada", "amino", "acid", "column", "(", "150", "mm", "x", "3", "." ],
+    "entities_indices" : [ [ 8, 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "example", ",", "estimations", "of", "RS", "content", "are", "available", "for", "wholemeal", ",", "white", ",", "rye", "and", "flatbreads", "13", "." ],
+    "entities_indices" : [ [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "Previous", "research", "has", "shown", "that", "low-CHO", "diets", "decrease", "total", "faecal", "SCFA", "concentrations", "and", "total", "daily", "faecal", "SCFA", "excretion", "when", "compared", "with", "energy", "restricted", "high-CHO", "diets", "36", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "Furthermore", ",", "participants", "in", "both", "dietary", "intervention", "groups", "decreased", "energy", "intake", "significantly", "3", ",", "which", "is", "known", "to", "impact", "the", "microbiota", "42", "44", ",", "and", "may", "have", "influenced", "the", "ability", "of", "the", "microbiota", "to", "produce", "TMA", "." ],
+    "entities_indices" : [ [ 20, 21, 22, 23 ], [ 35, 36 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "change", "in", "TMAO", "concentrations", "between", "groups", "(", "Paleolithic", "3.39", "mum", "v.", "AGHE", "1.19", "mum", ",", "P", "=", "0.654", ")", "did", "not", "reach", "significance", "despite", "greater", "red", "meat", "and", "egg", "consumption", "in", "the", "Paleolithic", "group", "(", "0.65", "serves/d", ";", "95", "%", "CI", "0.2", ",", "1.1", ";", "P", "<", "0.01", ",", "and", "0.22", "serves/d", ";", "95", "%", "CI", "0.1", ",", "0.4", ",", "P", "<", "0.05", ",", "respectively", ")", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 41, 42 ], [ 56, 57 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "AGHE", "dietary", "intervention", "group", ",", "we", "also", "note", "no", "increase", "in", "consumption", "of", "legumes", ",", "which", "provide", "a", "good", "source", "of", "RS", "13", ",", "and", "may", "provide", "an", "area", "where", "these", "data", "can", "guide", "future", "interventions", "using", "the", "AGHE", "." ],
+    "entities_indices" : [ [ 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "05", "-", "5", "mu", "g/ml", "TMAO", "were", "prepared", "in", "0", "." ],
+    "entities_indices" : [ [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "Without", "faecal", "biochemistry", "measurements", ",", "such", "as", "SCFA", "concentrations", ",", "it", "is", "not", "possible", "to", "conclude", "that", "the", "increase", "in", "TMAO", "was", "due", "to", "the", "RS", "supplementation", "alone", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 20, 21 ], [ 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "Serum", "trimethylamine-N-oxide", "(", "TMAO", ")", "is", "produced", "mainly", "from", "colonic", "fermentation", "and", "hepatic", "conversion", "of", "animal", "protein", "and", "is", "implicated", "in", "CVD", ",", "but", "changes", "in", "RS", "intake", "may", "alter", "concentrations", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 3, 4 ], [ 10, 11 ], [ 26, 27 ] ]
+  }, {
+    "sentence_tokens" : [ "Further", "research", "is", "required", "to", "determine", "the", "effect", "of", "this", "reduction", "on", "the", "gut", "microbiota", "and", "subsequent", "health", "outcomes", ";", "in", "particular", ",", "the", "association", "with", "serum", "TMAO", "concentrations", "and", "CVD", "." ],
+    "entities_indices" : [ [ 27, 28 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "suggests", "that", "colonic", "CHO", "fermentation", "may", "play", "a", "significant", "role", "in", "mediating", "microbial", "populations", ",", "which", "produce", "TMA", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "Further", "research", "examining", "the", "long-term", "health", "impacts", "of", "the", "Paleolithic", "diet", "is", "now", "warranted", ",", "considering", "that", "RS", "intake", "is", "low", "on", "the", "dietary", "pattern", "." ],
+    "entities_indices" : [ [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "TMAO", "concentrations", "were", "significantly", "higher", "on", "the", "high", "v.", "low", "RS", "intake", ",", "but", "the", "effect", "was", "also", "dependent", "on", "dietary", "CHO", "intake", "25", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "1", "%", "formic", "acid", "and", "check", "standards", "(", "5", ",", "0", "." ],
+    "entities_indices" : [ [ 2, 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "Determination", "of", "RS", "content", "is", "problematic", "because", "levels", "differ", "depending", "on", "food", "preparation", "and", "cooking", "methods", ",", "storage", "conditions", ",", "level", "of", "ripeness", "and", "measurement", "technique", "12", "." ],
+    "entities_indices" : [ [ 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "Egg", "and", "red", "meat", "consumption", "elevate", "plasma", "TMAO", "concentrations", "in", "the", "24", "h", "following", "consumption", "20", "23", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "a", "reduction", "in", "beneficial", "bacteria", "mediated", "by", "the", "high-fat", "diet", "may", "have", "led", "to", "the", "increase", "in", "blood", "TMAO", "concentrations", "." ],
+    "entities_indices" : [ [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "Butyrate", ",", "in", "particular", ",", "contributes", "to", "the", "maintenance", "of", "colonic", "epithelia", "35", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "An", "evaluation", "of", "the", "prognostic", "value", "of", "TMAO", "concentrations", "showed", "that", "patients", "with", "heart", "failure", "had", "significantly", "higher", "plasma", "TMAO", "concentrations", ",", "associated", "with", "an", "increase", "in", "mortality", "(", "3", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 13, 14, 15 ], [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "our", "short-term", "intervention", ",", "the", "reduction", "in", "RS", "intake", "and", "the", "relative", "increases", "in", "meat", "and", "egg", "consumption", "did", "not", "impact", "serum", "concentrations", "of", "TMAO", ",", "although", "we", "note", "the", "small", "effect", "size", "of", "the", "TMAO", "result", ",", "and", "our", "small", "sample", "size", "may", "have", "limited", "our", "ability", "to", "detect", "the", "differences", "in", "this", "area", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 25, 26 ], [ 36, 37 ] ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "breads", "were", "grouped", "into", "one", "of", "these", "categories", ",", "and", "RS", "content", "was", "assumed", "to", "be", "consistent", "across", "the", "category", "." ],
+    "entities_indices" : [ [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "Despite", "the", "increased", "serves", "of", "fruits", "and", "vegetables", "consumed", "in", "the", "Paleolithic", "group", "and", "the", "maintenance", "of", "total", "dietary", "fibre", "intake", ",", "RS", "was", "negatively", "impacted", "by", "the", "elimination", "of", "whole", "grains", ",", "cereals", "and", "legumes", "." ],
+    "entities_indices" : [ [ 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "Wang", "et", "al.", "16", "showed", "that", "TMAO", "was", "a", "dose", "dependent", "predictor", "of", "CVD", "risk", "in", "a", "cohort", "of", "1876", "subjects", "and", "positively", "correlated", "with", "atherosclerotic", "plaque", "size", "(", "Pearson", "correlation", "R", "0", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 25, 26, 27 ] ]
+  }, {
+    "sentence_tokens" : [ "RS", "intake", "was", "significantly", "lower", "on", "the", "Paleolithic", "diet", "(", "P", "<", "0.01", ")", "and", "was", "not", "associated", "with", "TMAO", "concentrations", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "Trimethylamine-N-oxide", "analysis", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "authors", "concluded", "that", "both", "dietary", "CHO", "and", "RS", "intake", "influence", "the", "production", "of", "TMA", "by", "colonic", "microbiota", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "CHO", "intake", "are", "restricted", "on", "the", "Paleolithic", "diet", ",", "with", "cereal", "fibres", "excluded", ";", "therefore", ",", "it", "is", "important", "to", "understand", "how", "this", "dietary", "pattern", "might", "influence", "circulating", "TMAO", "concentrations", "." ],
+    "entities_indices" : [ [ 28, 29 ] ]
+  }, {
+    "sentence_tokens" : [ "Furthermore", ",", "with", "increased", "understanding", "of", "the", "physiological", "responses", "to", "fibre", "fractions", ",", "it", "is", "critical", "that", "the", "Australian", "and", "New", "Zealand", "fibre", "databases", "are", "updated", "to", "include", "RS", "components", "to", "enable", "population", "health", "assessment", "and", "establish", "epidemiological", "links", "with", "chronic", "disease", "." ],
+    "entities_indices" : [ [ 28, 29 ], [ 40, 41, 42 ] ]
+  }, {
+    "sentence_tokens" : [ "Similarly", "the", "increased", "risk", "of", "colorectal", "cancer", "associated", "with", "plasma", "TMAO", "in", "women", "21", "may", "merely", "be", "a", "demonstrating", "that", "TMAO", "serves", "as", "a", "marker", "for", "red", "and", "processed", "meat", "consumption", ",", "which", "are", "already", "established", "risk", "factors", "for", "this", "disease", "22", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "Minimum", "and", "maximum", "estimations", "were", "utilised", "for", "estimation", "of", "RS", "content", "based", "on", "data", "published", "by", "Roberts", "et", "al.", "13", "." ],
+    "entities_indices" : [ [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "aimed", "to", "determine", "whether", "intake", "of", "RS", "and", "serum", "concentrations", "of", "TMAO", "varied", "in", "response", "to", "either", "the", "Paleolithic", "or", "the", "Australian", "Guide", "to", "Healthy", "Eating", "(", "AGHE", ")", "diets", "and", "whether", "this", "was", "related", "to", "changes", "in", "food", "group", "consumption", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "have", "reported", "total", "dietary", "fibre", "intake", "consistent", "with", "other", "studies", "of", "the", "Paleolithic", "diet", "4", "6", "8", "10", ",", "however", ",", "the", "changes", "in", "RS", "intake", "reported", "here", "represent", "new", "findings", "and", "may", "have", "long-term", "health", "implications", "." ],
+    "entities_indices" : [ [ 13, 14, 15, 16, 17, 18, 19 ], [ 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "MS", "was", "operated", "under", "the", "following", "conditions", ":", "gases", "(", "arbitrary", "units", ")", "sheath", "52", ",", "auxiliary", "16", "and", "sweep", "2", ";", "ion", "transfer", "tube", "temperature", "was", "356", "degrees", "C", ";", "vapouriser", "temperature", "420", "degrees", "C", ";", "transitions", "of", "m/z", "76", "." ],
+    "entities_indices" : [ [ 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "RS", "offers", "a", "range", "of", "health", "benefits", "mediated", "through", "the", "products", "of", "its", "fermentation", "by", "colonic", "bacteria", "11", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "Examination", "of", "TMAO", "concentrations", "with", "longer-term", "adherence", "to", "a", "Paleolithic", "diet", ",", "which", "includes", "an", "examination", "of", "microbiota", "composition", "is", "recommended", ",", "aiding", "further", "understanding", "of", "the", "role", "of", "dietary", "patterns", ",", "RS", "intake", "and", "the", "microbiota", "in", "modulating", "TMAO", "concentrations", "and", "CVD", "risk.Our", "examination", "of", "fibre", "intake", "has", "highlighted", "limitations", "in", "the", "current", "Australian", "fibre", "data", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 32, 33 ], [ 39, 40 ] ]
+  }, {
+    "sentence_tokens" : [ "1", "mu", "g/ml", "of", "deuterated", "TMAO", "(", "TMAO-d", ")", "as", "the", "internal", "standard", ",", "was", "added", "to", "the", "serum", "." ],
+    "entities_indices" : [ [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "Pre-", "and", "post-intervention", "data", "were", "examined", "for", "normality", "using", "the", "Shapiro", "-", "Wilk", "test", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 10, 11 ], [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "Trimethylamine-N-oxide", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "2", "with", "collision", "energies", "(", "eV", ")", "of", "30", ",", "16", "and", "11", ",", "respectively", ",", "were", "used", "to", "monitor", "TMAO", ";", "transitions", "of", "m/z", "85", "." ],
+    "entities_indices" : [ [ 20, 21 ], [ 24, 25, 26 ] ]
+  } ],
+  "emptySentences" : [ {
+    "sentence_tokens" : [ "A", "Paleolithic", "diet", "lowers", "resistant", "starch", "intake", "but", "does", "not", "affect", "serum", "trimethylamine-N-oxide", "concentrations", "in", "healthy", "women", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "Paleolithic", "diet", "excludes", "two", "major", "sources", "of", "fibre", ",", "grains", "and", "legumes", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "it", "is", "not", "known", "whether", "this", "results", "in", "changes", "to", "resistant", "starch", "(", "RS", ")", "consumption", "." ]
+  }, {
+    "sentence_tokens" : [ "Serum", "trimethylamine-N-oxide", "(", "TMAO", ")", "is", "produced", "mainly", "from", "colonic", "fermentation", "and", "hepatic", "conversion", "of", "animal", "protein", "and", "is", "implicated", "in", "CVD", ",", "but", "changes", "in", "RS", "intake", "may", "alter", "concentrations", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "aimed", "to", "determine", "whether", "intake", "of", "RS", "and", "serum", "concentrations", "of", "TMAO", "varied", "in", "response", "to", "either", "the", "Paleolithic", "or", "the", "Australian", "Guide", "to", "Healthy", "Eating", "(", "AGHE", ")", "diets", "and", "whether", "this", "was", "related", "to", "changes", "in", "food", "group", "consumption", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "total", "of", "thirty-nine", "women", "(", "mean", "age", "47", "(", "sd", "13", ")", "years", ",", "BMI", "27", "(", "sd", "4", ")", "kg/m", "2", ")", "were", "randomised", "to", "AGHE", "(", "n", "17", ")", "or", "Paleolithic", "diets", "(", "n", "22", ")", "for", "4", "weeks", "." ]
+  }, {
+    "sentence_tokens" : [ "Serum", "TMAO", "concentrations", "were", "measured", "using", "liquid", "chromatography-MS", ";", "food", "groups", ",", "fibre", "and", "RS", "intake", "were", "estimated", "from", "weighed", "food", "records", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "change", "in", "TMAO", "concentrations", "between", "groups", "(", "Paleolithic", "3.39", "mum", "v.", "AGHE", "1.19", "mum", ",", "P", "=", "0.654", ")", "did", "not", "reach", "significance", "despite", "greater", "red", "meat", "and", "egg", "consumption", "in", "the", "Paleolithic", "group", "(", "0.65", "serves/d", ";", "95", "%", "CI", "0.2", ",", "1.1", ";", "P", "<", "0.01", ",", "and", "0.22", "serves/d", ";", "95", "%", "CI", "0.1", ",", "0.4", ",", "P", "<", "0.05", ",", "respectively", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "RS", "intake", "was", "significantly", "lower", "on", "the", "Paleolithic", "diet", "(", "P", "<", "0.01", ")", "and", "was", "not", "associated", "with", "TMAO", "concentrations", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "the", "limited", "data", "for", "RS", "and", "the", "small", "sample", "size", "may", "have", "influenced", "these", "findings", "." ]
+  }, {
+    "sentence_tokens" : [ "While", "there", "were", "no", "significant", "changes", "in", "TMAO", "concentrations", ",", "increased", "meat", "consumption", "and", "reduced", "RS", "intake", "warrant", "further", "research", "to", "examine", "the", "markers", "of", "gastrointestinal", "health", "of", "Paleolithic", "diet", "followers", "and", "to", "update", "Australian", "food", "databases", "to", "include", "additional", "fibre", "components", "." ]
+  }, {
+    "sentence_tokens" : [ "Previous", "research", "on", "the", "Paleolithic", "diet", "has", "examined", "its", "impact", "on", "cardiovascular", ",", "anthropometric", "and", "metabolic", "outcomes", "1", "9", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "elimination", "of", "cereals", ",", "legumes", "and", "dairy", "products", "from", "the", "Paleolithic", "diet", "means", "food", "patterns", "are", "likely", "to", "change", "significantly", ",", "yet", "there", "is", "little", "research", "on", "the", "changes", "in", "intake", "from", "the", "core", "food", "groups", "4", "5", "10", "." ]
+  }, {
+    "sentence_tokens" : [ "Although", "dietary", "fibre", "intake", "on", "a", "Paleolithic", "diet", "is", "often", "not", "significantly", "different", ",", "when", "compared", "with", "a", "control", "or", "standard", "diet", "3", "8", "10", ",", "it", "has", "yet", "to", "be", "established", "whether", "the", "dietary", "fibre", "profile", "is", "altered", "." ]
+  }, {
+    "sentence_tokens" : [ "Grains", "and", "pulses", "are", "important", "sources", "of", "a", "particular", "type", "of", "dietary", "fibre", ",", "resistant", "starch", "(", "RS", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "RS", "offers", "a", "range", "of", "health", "benefits", "mediated", "through", "the", "products", "of", "its", "fermentation", "by", "colonic", "bacteria", "11", "." ]
+  }, {
+    "sentence_tokens" : [ "Determination", "of", "RS", "content", "is", "problematic", "because", "levels", "differ", "depending", "on", "food", "preparation", "and", "cooking", "methods", ",", "storage", "conditions", ",", "level", "of", "ripeness", "and", "measurement", "technique", "12", "." ]
+  }, {
+    "sentence_tokens" : [ "Current", "estimates", "of", "RS", "in", "an", "Australian", "diet", "are", "3", "." ]
+  }, {
+    "sentence_tokens" : [ "4", "-", "9", "." ]
+  }, {
+    "sentence_tokens" : [ "4", "g/d", "13", ",", "but", "it", "has", "been", "suggested", "that", "increasing", "intake", "to", "approximately", "20", "g/d", "may", "be", "required", "to", "obtain", "health", "benefits", "from", "the", "prebiotic", "capacity", "14", "." ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "RS", "intake", "on", "a", "Paleolithic", "diet", "requires", "quantification", "to", "understand", "potential", "implications", "for", "the", "long-term", "gut", "and", "overall", "health", "outcomes.Trimethylamine", "(", "TMA", ")", "is", "produced", "in", "vivo", "by", "the", "microbiota", "of", "the", "bowel", ",", "from", "consumption", "of", "choline", ",", "phosphatidylcholine", "and", "l-carnitine", "15", "16", "." ]
+  }, {
+    "sentence_tokens" : [ "Choline", "and", "phosphatidylcholine", "are", "found", "predominately", "in", "milk", ",", "liver", ",", "meat", ",", "eggs", "and", "peanuts", "17", ",", "and", "l-carnitine", "are", "predominately", "found", "in", "red", "meat", "15", "." ]
+  }, {
+    "sentence_tokens" : [ "TMA", "is", "converted", "in", "the", "liver", "to", "trimethylamine-N-oxide", "(", "TMAO", ")", "18", "." ]
+  }, {
+    "sentence_tokens" : [ "Wang", "et", "al.", "16", "showed", "that", "TMAO", "was", "a", "dose", "dependent", "predictor", "of", "CVD", "risk", "in", "a", "cohort", "of", "1876", "subjects", "and", "positively", "correlated", "with", "atherosclerotic", "plaque", "size", "(", "Pearson", "correlation", "R", "0", "." ]
+  }, {
+    "sentence_tokens" : [ "42", ",", "P", "<", "0", "." ]
+  }, {
+    "sentence_tokens" : [ "001", ")", "in", "a", "rodent", "study", "." ]
+  }, {
+    "sentence_tokens" : [ "An", "evaluation", "of", "the", "prognostic", "value", "of", "TMAO", "concentrations", "showed", "that", "patients", "with", "heart", "failure", "had", "significantly", "higher", "plasma", "TMAO", "concentrations", ",", "associated", "with", "an", "increase", "in", "mortality", "(", "3", "." ]
+  }, {
+    "sentence_tokens" : [ "4", "times", ")", "risk", "19", "." ]
+  }, {
+    "sentence_tokens" : [ "It", "is", "still", "not", "understood", "whether", "TMAO", "is", "a", "causative", "or", "correlative", "factor", "in", "atherosclerotic", "plaque", "development", ",", "and", "more", "research", "is", "required", "to", "understand", "the", "link", "with", "CVD", "." ]
+  }, {
+    "sentence_tokens" : [ "TMAO", "is", "filtered", "and", "excreted", "by", "kidneys", "into", "the", "urine", "and", "elevations", "in", "serum", "TMAO", "may", "merely", "be", "a", "marker", "of", "reduced", "kidney", "function", ",", "often", "co-existing", "with", "coronary", "atherosclerosis", "20", "." ]
+  }, {
+    "sentence_tokens" : [ "Similarly", "the", "increased", "risk", "of", "colorectal", "cancer", "associated", "with", "plasma", "TMAO", "in", "women", "21", "may", "merely", "be", "a", "demonstrating", "that", "TMAO", "serves", "as", "a", "marker", "for", "red", "and", "processed", "meat", "consumption", ",", "which", "are", "already", "established", "risk", "factors", "for", "this", "disease", "22", "." ]
+  }, {
+    "sentence_tokens" : [ "Egg", "and", "red", "meat", "consumption", "elevate", "plasma", "TMAO", "concentrations", "in", "the", "24", "h", "following", "consumption", "20", "23", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "seafood", ",", "which", "is", "a", "source", "of", "pre-formed", "TMAO", ",", "the", "postprandial", "rise", "in", "circulating", "levels", "can", "be", "detected", "within", "15", "min", "of", "consumption", "24", ",", "indicating", "that", "TMAO", "is", "rapidly", "absorbed", "from", "the", "upper", "gut", ",", "without", "entering", "the", "colon", "24", "." ]
+  }, {
+    "sentence_tokens" : [ "Individual", "variation", "in", "gut", "microbiota", "composition", "may", "also", "influence", "the", "production", "of", "TMAO", "in", "response", "to", "dietary", "sources", "of", "choline", "and", "l-carnitine", "24", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "recent", "paper", "reported", "that", "diets", "high", "in", "RS", "(", "19", "-", "27", "g/d", ")", ",", "but", "low", "in", "carbohydrate", "(", "CHO", ")", ",", "were", "also", "associated", "with", "increased", "plasma", "TMAO", "concentrations", "25", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "suggests", "that", "colonic", "CHO", "fermentation", "may", "play", "a", "significant", "role", "in", "mediating", "microbial", "populations", ",", "which", "produce", "TMA", "." ]
+  }, {
+    "sentence_tokens" : [ "CHO", "intake", "are", "restricted", "on", "the", "Paleolithic", "diet", ",", "with", "cereal", "fibres", "excluded", ";", "therefore", ",", "it", "is", "important", "to", "understand", "how", "this", "dietary", "pattern", "might", "influence", "circulating", "TMAO", "concentrations", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "aimed", "to", "determine", "whether", "fasting", "TMAO", "concentrations", "varied", "in", "healthy", "subjects", "randomised", "to", "either", "the", "Paleolithic", "or", "the", "Australian", "Guide", "to", "Healthy", "Eating", "(", "AGHE", ")", "diet", ",", "for", "a", "4-week", "intervention", "and", "the", "relationship", "with", "dietary", "RS", ",", "total", "fibre", "and", "food", "group", "intake", "." ]
+  }, {
+    "sentence_tokens" : [ "Methods", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "current", "data", "were", "part", "of", "a", "larger", "study", "described", "elsewhere", "3", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "brief", ",", "a", "4-week", "dietary", "intervention", "was", "conducted", "in", "thirty-nine", "healthy", "females", "(", "mean", "age", "47", "(", "sd", "13", ")", "years", ",", "BMI", "27", "(", "sd", "4", ")", "kg/m", ")", "using", "ad", "libitum", "Paleolithic", "(", "n", "22", ")", "and", "AGHE", "diets", "(", "n", "17", ")", ",", "with", "3-d", "weighed", "food", "records", "collected", "pre-", "and", "post-intervention", "23", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "priori", "sample", "size", "calculations", "were", "based", "on", "an", "expected", "15", "%", "reduction", "in", "the", "primary", "outcome", "variable", ",", "total", "cholesterol", ",", "with", "5", "%", "alpha-error", "and", "80", "%", "power", "between", "groups", "." ]
+  }, {
+    "sentence_tokens" : [ "Participants", "were", "locally", "recruited", "from", "areas", "surrounding", "the", "university", "campus", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "study", "was", "approved", "by", "the", "Edith", "Cowan", "Human", "Research", "Ethics", "Committee", "(", "project", "13402", ")", "and", "registered", "on", "the", "Australian", "and", "New", "Zealand", "Register", "of", "Clinical", "Trials", "(", "ACTRN12615000246583", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Food", "group", "intake", "." ]
+  }, {
+    "sentence_tokens" : [ "To", "assess", "food", "group", "intake", ",", "the", "pre-", "and", "post-intervention", "3-d", "weighed", "food", "records", "collected", "previously", "23", "were", "re-analysed", "using", "Australian", "software", ",", "FoodWorks", "Professional", ",", "version", "8.0", "26", ",", "with", "food", "group", "analysis", "enabled", "to", "provide", "intake", "of", "the", "major", "food", "groups", ":", "grains", ",", "fruits", ",", "vegetables", ",", "protein", "foods", "and", "dairy", "foods", "and", "intake", "of", "fats", ",", "oils", "and", "added", "sugars", "." ]
+  }, {
+    "sentence_tokens" : [ "There", "were", "1211", "individual", "food", "items", "utilised", "for", "the", "78", ",", "3-d", "food", "records", "analysed", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "local", "copy", "of", "the", "database", "was", "made", ",", "and", "within", "FoodWorks", ",", "each", "food", "item", "was", "updated", "to", "the", "equivalent", "food", "item", "in", "the", "AUSFoods", "2015", "26", "and", "AUSNUT", "2013", "27", "databases", "." ]
+  }, {
+    "sentence_tokens" : [ "To", "assess", "fibre", "fraction", "intake", ",", "an", "additional", "local", "copy", "of", "the", "database", "was", "made", ",", "with", "the", "NZFoodFiles", "2014", "data", "set", "enabled", "28", "." ]
+  }, {
+    "sentence_tokens" : [ "Each", "food", "item", "was", "updated", "with", "soluble", "and", "insoluble", "fibre", "content", "." ]
+  }, {
+    "sentence_tokens" : [ "Where", "data", "were", "missing", "from", "FoodFiles", "2014", "29", ",", "or", "there", "was", "no", "appropriate", "match", "with", "the", "consumed", "food", ",", "soluble", "and", "insoluble", "fibre", "data", "were", "sourced", "from", "published", "literature", "30", "32", "." ]
+  }, {
+    "sentence_tokens" : [ "Minimum", "and", "maximum", "estimations", "were", "utilised", "for", "estimation", "of", "RS", "content", "based", "on", "data", "published", "by", "Roberts", "et", "al.", "13", "." ]
+  }, {
+    "sentence_tokens" : [ "All", "food", "items", "in", "the", "database", "were", "updated", "with", "an", "RS", "value", "." ]
+  }, {
+    "sentence_tokens" : [ "Similar", "foods", "were", "grouped", ",", "and", "RS", "content", "was", "assumed", "to", "be", "consistent", "across", "the", "category", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "example", ",", "estimations", "of", "RS", "content", "are", "available", "for", "wholemeal", ",", "white", ",", "rye", "and", "flatbreads", "13", "." ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "breads", "were", "grouped", "into", "one", "of", "these", "categories", ",", "and", "RS", "content", "was", "assumed", "to", "be", "consistent", "across", "the", "category", "." ]
+  }, {
+    "sentence_tokens" : [ "Foods", "for", "which", "no", "data", "were", "available", "were", "assigned", "a", "value", "of", "0", "." ]
+  }, {
+    "sentence_tokens" : [ "Fibre", "and", "RS", "content", "of", "mixed", "dishes", "and", "recipes", "were", "determined", "based", "on", "fibre/RS", "proportions", "of", "individual", "ingredients", "within", "the", "recipe", "." ]
+  }, {
+    "sentence_tokens" : [ "Trimethylamine-N-oxide", "analysis", "." ]
+  }, {
+    "sentence_tokens" : [ "TMAO", "analysis", "was", "conducted", "on", "fasting", "serum", "samples", "stored", "at", "-", "20", "degrees", "C", "and", "collected", "as", "part", "of", "the", "study", "as", "described", "previously", "3", "." ]
+  }, {
+    "sentence_tokens" : [ "Serum", "was", "thawed", ",", "and", "150", "mu", "l", "was", "transferred", "to", "a", "2-ml", "Eppendorf", "tube", "." ]
+  }, {
+    "sentence_tokens" : [ "Liquid", "chromatography", "(", "LC", ")", "-", "MS", "grade", "acetonitrile", "(", "450", "mu", "l", ")", ",", "containing", "0", "." ]
+  }, {
+    "sentence_tokens" : [ "1", "mu", "g/ml", "of", "deuterated", "TMAO", "(", "TMAO-d", ")", "as", "the", "internal", "standard", ",", "was", "added", "to", "the", "serum", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "tube", "was", "vortexed", "for", "30", "s", "and", "centrifuged", "at", "4000", "rpm", "and", "4", "degrees", "C", "for", "10", "min", "." ]
+  }, {
+    "sentence_tokens" : [ "An", "aliquot", "(", "100", "mu", "l", ")", "of", "the", "supernatant", "was", "transferred", "to", "a", "2-ml", "HPLC", "vial", ",", "diluted", "with", "75:25", "acetonitrile", "containing", "0.1", "%", "formic", "acid", ":", "100", "mm", "ammonium", "formate", "(", "400", "mu", "l", ")", "and", "mixed", "thoroughly", "." ]
+  }, {
+    "sentence_tokens" : [ "Calibration", "standards", "in", "the", "range", "of", "0", "." ]
+  }, {
+    "sentence_tokens" : [ "05", "-", "5", "mu", "g/ml", "TMAO", "were", "prepared", "in", "0", "." ]
+  }, {
+    "sentence_tokens" : [ "1", "%", "formic", "acid", "and", "check", "standards", "(", "5", ",", "0", "." ]
+  }, {
+    "sentence_tokens" : [ "25", "and", "0", "." ]
+  }, {
+    "sentence_tokens" : [ "05", "mu", "g/ml", "TMAO", ")", "were", "prepared", "in", "synthetic", "serum", "and", "then", "processed", "using", "the", "same", "procedure", "as", "for", "the", "samples", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "calibration", "standards", ",", "check", "standards", "and", "samples", "were", "analysed", "by", "LC", "-", "MS/MS", "using", "a", "Thermo", "Scientific", "Ultimate", "3000", "Liquid", "Chromatograph", "and", "coupled", "to", "a", "Thermo", "Scientific", "Quantiva", "triple", "quadrupole", "mass", "spectrometer", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "LC", "separation", "was", "achieved", "using", "an", "Intrada", "amino", "acid", "column", "(", "150", "mm", "x", "3", "." ]
+  }, {
+    "sentence_tokens" : [ "0", "mu", "m", "inner", "diameter", ")", "packed", "with", "3", "mu", "m", "particles", "." ]
+  }, {
+    "sentence_tokens" : [ "Aliquots", "(", "2", "mu", "l", ")", "were", "injected", "into", "the", "column", "and", "separated", "using", "a", "mobile", "phase", "of", "acetonitrile", "with", "0", "." ]
+  }, {
+    "sentence_tokens" : [ "1", "%", "formic", "acid", "(", "A", ")", "and", "100", "mm", "ammonium", "formate", "(", "B", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Initial", "mobile", "phase", "conditions", "were", "75", "%", "A", "and", "25", "%", "B", "held", "for", "3", "min", ",", "then", "B", "was", "increased", "to", "100", "%", "over", "4", "min", "and", "maintained", "for", "3", "min", ",", "and", "B", "was", "reduced", "to", "25", "%", "over", "0", "." ]
+  }, {
+    "sentence_tokens" : [ "1", "min", "and", "maintained", "for", "2", "min", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "flow", "rate", "was", "0", "." ]
+  }, {
+    "sentence_tokens" : [ "6", "ml/min", ",", "and", "the", "column", "was", "maintained", "at", "35", "degrees", "C.", "Detection", "was", "performed", "in", "positive", "mode", "(", "3500", "V", ")", ",", "and", "the", "analytes", "were", "ionised", "by", "electrospray", "and", "monitored", "in", "multiple", "reaction", "monitoring", "mode", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "MS", "was", "operated", "under", "the", "following", "conditions", ":", "gases", "(", "arbitrary", "units", ")", "sheath", "52", ",", "auxiliary", "16", "and", "sweep", "2", ";", "ion", "transfer", "tube", "temperature", "was", "356", "degrees", "C", ";", "vapouriser", "temperature", "420", "degrees", "C", ";", "transitions", "of", "m/z", "76", "." ]
+  }, {
+    "sentence_tokens" : [ "2", "to", "m/z", "48", "." ]
+  }, {
+    "sentence_tokens" : [ "2", ",", "58", "." ]
+  }, {
+    "sentence_tokens" : [ "1", "and", "59", "." ]
+  }, {
+    "sentence_tokens" : [ "2", "with", "collision", "energies", "(", "eV", ")", "of", "30", ",", "16", "and", "11", ",", "respectively", ",", "were", "used", "to", "monitor", "TMAO", ";", "transitions", "of", "m/z", "85", "." ]
+  }, {
+    "sentence_tokens" : [ "2", "to", "m/z", "46", "." ]
+  }, {
+    "sentence_tokens" : [ "2", ",", "66", "." ]
+  }, {
+    "sentence_tokens" : [ "2", "and", "68", "." ]
+  }, {
+    "sentence_tokens" : [ "2", "with", "collision", "energies", "(", "eV", ")", "of", "41", ",", "21", "and", "11", ",", "respectively", ",", "were", "used", "to", "monitor", "TMAO-d", "." ]
+  }, {
+    "sentence_tokens" : [ "Statistical", "analyses", "." ]
+  }, {
+    "sentence_tokens" : [ "Statistical", "analyses", "were", "conducted", "using", "SPSS", "for", "Windows", ",", "version", "23", "33", "." ]
+  }, {
+    "sentence_tokens" : [ "Pre-", "and", "post-intervention", "data", "were", "examined", "for", "normality", "using", "the", "Shapiro", "-", "Wilk", "test", "." ]
+  }, {
+    "sentence_tokens" : [ "Independent", "t", "test", "and", "Mann", "-", "Whitney", "U", "test", "for", "non", "normally", "distributed", "data", "were", "performed", "to", "examine", "the", "differences", "between", "the", "two", "groups", "in", "each", "of", "the", "dietary", "intake", "variables", "." ]
+  }, {
+    "sentence_tokens" : [ "Paired", "t", "test", "and", "Wilcoxon", "signed-rank", "test", "were", "conducted", "to", "determine", "the", "changes", "within", "groups", "." ]
+  }, {
+    "sentence_tokens" : [ "ANCOVA", "was", "used", "to", "examine", "the", "associations", "between", "TMAO", "concentrations", "and", "changes", "in", "dietary", "variables", ",", "with", "particular", "attention", "to", "protein", "and", "meat", "servings", ",", "egg", ",", "solid", "fat", "and", "grain", "servings", ",", "in", "addition", "to", "RS", "intake", "." ]
+  }, {
+    "sentence_tokens" : [ "Statistical", "significance", "was", "set", "at", "P", "<", "0", "." ]
+  }, {
+    "sentence_tokens" : [ "05", "." ]
+  }, {
+    "sentence_tokens" : [ "Results", "." ]
+  }, {
+    "sentence_tokens" : [ "Food", "group", "serves", "." ]
+  }, {
+    "sentence_tokens" : [ "As", "expected", "on", "a", "Paleolithic", "diet", ",", "there", "were", "significant", "reductions", "in", "the", "consumption", "of", "total", "grains", "(", "-", "4", "." ]
+  }, {
+    "sentence_tokens" : [ "6", "serves/d", ")", "and", "dairy", "products", "(", "-", "1", "." ]
+  }, {
+    "sentence_tokens" : [ "5", "serves/d", ")", "(", "P", "<", "0", "." ]
+  }, {
+    "sentence_tokens" : [ "01", "for", "both", ")", "(", "Table", "1", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Post-intervention", ",", "the", "Paleolithic", "group", "had", "a", "higher", "intake", "of", "protein", "foods", "(", "3", "." ]
+  }, {
+    "sentence_tokens" : [ "9", "v.", "2", "." ]
+  }, {
+    "sentence_tokens" : [ "6", "serves/d", ")", ",", "due", "to", "greater", "red", "meat", "consumption", ",", "and", "higher", "intake", "of", "fruits", "(", "3", "." ]
+  }, {
+    "sentence_tokens" : [ "1", "v.", "1", "." ]
+  }, {
+    "sentence_tokens" : [ "2", "serves/d", ")", "and", "vegetables", "(", "5", "." ]
+  }, {
+    "sentence_tokens" : [ "8", "v.", "4", "." ]
+  }, {
+    "sentence_tokens" : [ "0", "serves/d", ")", "(", "P", "<", "0", "." ]
+  }, {
+    "sentence_tokens" : [ "01", "for", "all", ")", ",", "compared", "with", "AGHE", "group", "." ]
+  }, {
+    "sentence_tokens" : [ "Whole", "grains", "contributed", "approximately", "half", "of", "the", "total", "grain", "intake", "(", "55", "." ]
+  }, {
+    "sentence_tokens" : [ "2", "%", ")", "in", "the", "AGHE", "group", "." ]
+  }, {
+    "sentence_tokens" : [ "Consumption", "of", "oil", ",", "solid", "fat", "equivalents", "and", "the", "percentage", "of", "energy", "consumed", "as", "added", "sugars", "were", "not", "significantly", "different", "between", "groups", "." ]
+  }, {
+    "sentence_tokens" : [ "Fibre", "." ]
+  }, {
+    "sentence_tokens" : [ "There", "were", "no", "significant", "differences", "between", "groups", "in", "total", "dietary", "fibre", ",", "soluble", "or", "insoluble", "fibre", "intake", "(", "Table", "2", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Post-intervention", ",", "the", "Paleolithic", "compared", "with", "AGHE", "group", "had", "a", "significantly", "lower", "intake", "of", "total", "starch", "(", "-", "61", "." ]
+  }, {
+    "sentence_tokens" : [ "4", "g/d", ",", "P", "<", "0", "." ]
+  }, {
+    "sentence_tokens" : [ "01", ")", "and", "RS", ",", "at", "both", "minimum", "(", "-", "1", "." ]
+  }, {
+    "sentence_tokens" : [ "18", "g/d", ",", "P", "<", "0", "." ]
+  }, {
+    "sentence_tokens" : [ "01", ")", "and", "maximum", "(", "-", "3", "." ]
+  }, {
+    "sentence_tokens" : [ "54", "g/d", ",", "P", "<", "0", "." ]
+  }, {
+    "sentence_tokens" : [ "05", ")", "estimated", "intakes", "." ]
+  }, {
+    "sentence_tokens" : [ "Trimethylamine-N-oxide", "." ]
+  }, {
+    "sentence_tokens" : [ "There", "were", "no", "significant", "differences", "between", "groups", "post-intervention", "(", "Paleolithic", "median", "6", "." ]
+  }, {
+    "sentence_tokens" : [ "79", "(", "sd", "12", "." ]
+  }, {
+    "sentence_tokens" : [ "92", ")", "mu", "m", "v.", "AGHE", "6", "." ]
+  }, {
+    "sentence_tokens" : [ "85", "(", "sd", "10", "." ]
+  }, {
+    "sentence_tokens" : [ "89", ")", "mu", "m", ",", "P", "=", "0", "." ]
+  }, {
+    "sentence_tokens" : [ "532", ")", "or", "change", "in", "serum", "TMAO", "concentration", "(", "Paleolithic", "median", "change", "3", "." ]
+  }, {
+    "sentence_tokens" : [ "39", "mu", "m", "v.", "AGHE", "1", "." ]
+  }, {
+    "sentence_tokens" : [ "19", "mu", "m", ",", "P", "=", "0", "." ]
+  }, {
+    "sentence_tokens" : [ "654", ",", "effect", "size", "=", "0", "." ]
+  }, {
+    "sentence_tokens" : [ "10", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "inclusion", "of", "protein", "serves", ",", "solid", "fat", ",", "red", "meat", ",", "egg", "and", "grain", "serves", "in", "addition", "to", "estimates", "of", "RS", "as", "covariates", "in", "the", "ANCOVA", "model", "did", "not", "alter", "this", "finding", "." ]
+  }, {
+    "sentence_tokens" : [ "Discussion", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "dietary", "intervention", "in", "a", "group", "of", "thirty-nine", "healthy", "women", "examined", "the", "differences", "in", "intake", "of", "core", "food", "groups", "and", "types", "of", "fibre", "between", "the", "Paleolithic", "and", "AGHE", "diets", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "have", "reported", "total", "dietary", "fibre", "intake", "consistent", "with", "other", "studies", "of", "the", "Paleolithic", "diet", "4", "6", "8", "10", ",", "however", ",", "the", "changes", "in", "RS", "intake", "reported", "here", "represent", "new", "findings", "and", "may", "have", "long-term", "health", "implications", "." ]
+  }, {
+    "sentence_tokens" : [ "Over", "the", "short-term", "intervention", ",", "our", "results", "indicate", "that", "fasting", "serum", "concentrations", "of", "TMAO", "were", "not", "influenced", "by", "the", "relative", "increase", "in", "serves", "of", "eggs", "and", "red", "meat", "consumed", "on", "a", "Paleolithic", "diet", "or", "the", "decrease", "in", "RS", "intake.With", "the", "exclusion", "of", "grains", ",", "cereals", ",", "dairy", "products", "and", "legumes", "on", "the", "Paleolithic", "diet", ",", "it", "was", "anticipated", "that", "differences", "would", "occur", "in", "the", "intake", "of", "the", "protein", "food", "group", ",", "which", "included", "meats", ",", "poultry", ",", "and", "alternatives", "such", "as", "seafood", ",", "nuts", "and", "seeds", "and", "legumes", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "increase", "we", "found", "in", "the", "protein", "food", "group", "was", "attributable", "to", "greater", "red", "meat", "and", "egg", "consumption", ",", "precursor", "foods", "for", "the", "formation", "of", "TMAO", "16", "." ]
+  }, {
+    "sentence_tokens" : [ "Despite", "the", "increased", "serves", "of", "fruits", "and", "vegetables", "consumed", "in", "the", "Paleolithic", "group", "and", "the", "maintenance", "of", "total", "dietary", "fibre", "intake", ",", "RS", "was", "negatively", "impacted", "by", "the", "elimination", "of", "whole", "grains", ",", "cereals", "and", "legumes", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "AGHE", "dietary", "intervention", "group", ",", "we", "also", "note", "no", "increase", "in", "consumption", "of", "legumes", ",", "which", "provide", "a", "good", "source", "of", "RS", "13", ",", "and", "may", "provide", "an", "area", "where", "these", "data", "can", "guide", "future", "interventions", "using", "the", "AGHE", "." ]
+  }, {
+    "sentence_tokens" : [ "While", "RS", "intake", "was", "low", "on", "the", "Paleolithic", "diet", ",", "RS", "can", "be", "obtained", "on", "a", "Paleolithic", "diet", "from", "root", "vegetables", "and", "bananas", "13", "." ]
+  }, {
+    "sentence_tokens" : [ "Butyrate", ",", "in", "particular", ",", "contributes", "to", "the", "maintenance", "of", "colonic", "epithelia", "35", "." ]
+  }, {
+    "sentence_tokens" : [ "Previous", "research", "has", "shown", "that", "low-CHO", "diets", "decrease", "total", "faecal", "SCFA", "concentrations", "and", "total", "daily", "faecal", "SCFA", "excretion", "when", "compared", "with", "energy", "restricted", "high-CHO", "diets", "36", "." ]
+  }, {
+    "sentence_tokens" : [ "Bergeron", "et", "al.", "25", "recently", "reported", "that", "plasma", "TMAO", "concentrations", "were", "increased", ",", "in", "a", "2-week", "crossover", "study", "using", "high", "CHO", ",", "with", "high", "or", "low", "RS", "(", "51", "%", "of", "energy", "CHO", "(", "27", "g", "RS", ")", "and", "53", "%", "CHO", "(", "<", "2", "g", "RS", ")", ")", ",", "compared", "with", "low", "CHO", ",", "with", "high", "or", "low", "RS", "(", "40", "%", "CHO", "(", "19", "g", "RS", ")", "and", "39", "%", "CHO", "(", "<", "1", "g", "RS", ")", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "authors", "reported", "the", "Hi-Maize", "260", "supplement", "used", "for", "the", "study", "comprised", "41", "." ]
+  }, {
+    "sentence_tokens" : [ "5", "%", "RS", "25", "." ]
+  }, {
+    "sentence_tokens" : [ "TMAO", "concentrations", "were", "significantly", "higher", "on", "the", "high", "v.", "low", "RS", "intake", ",", "but", "the", "effect", "was", "also", "dependent", "on", "dietary", "CHO", "intake", "25", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "authors", "concluded", "that", "both", "dietary", "CHO", "and", "RS", "intake", "influence", "the", "production", "of", "TMA", "by", "colonic", "microbiota", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "the", "low-CHO", "diets", "were", "also", "much", "higher", "in", "fat", "(", "40", "and", "41", "%", "of", "energy", ",", "respectively", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Previous", "research", "in", "rats", "indicated", "that", "the", "benefits", "of", "RS", "supplementation", "were", "attenuated", "when", "the", "animals", "were", "fed", "a", "high-fat", "diet", "(", "40", "-", "41", "%", "of", "energy", ")", "40", "." ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "a", "reduction", "in", "beneficial", "bacteria", "mediated", "by", "the", "high-fat", "diet", "may", "have", "led", "to", "the", "increase", "in", "blood", "TMAO", "concentrations", "." ]
+  }, {
+    "sentence_tokens" : [ "Without", "faecal", "biochemistry", "measurements", ",", "such", "as", "SCFA", "concentrations", ",", "it", "is", "not", "possible", "to", "conclude", "that", "the", "increase", "in", "TMAO", "was", "due", "to", "the", "RS", "supplementation", "alone", "." ]
+  }, {
+    "sentence_tokens" : [ "Diets", "low", "in", "CHO", "and", "whole", "grains", "also", "have", "lower", "content", "of", "other", "fermentable", "fibres", "that", "could", "influence", "the", "gut", "microbiota", ",", "including", "oligosaccharides", ",", "beta-glucans", "and", "arabinoxylans", "41", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "full", "understanding", "of", "dietary", "modification", "of", "TMAO", "concentrations", "can", "be", "gained", "with", "future", "measurement", "of", "these", "variables", "in", "conjunction", "with", "RS", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "our", "short-term", "intervention", ",", "the", "reduction", "in", "RS", "intake", "and", "the", "relative", "increases", "in", "meat", "and", "egg", "consumption", "did", "not", "impact", "serum", "concentrations", "of", "TMAO", ",", "although", "we", "note", "the", "small", "effect", "size", "of", "the", "TMAO", "result", ",", "and", "our", "small", "sample", "size", "may", "have", "limited", "our", "ability", "to", "detect", "the", "differences", "in", "this", "area", "." ]
+  }, {
+    "sentence_tokens" : [ "Furthermore", ",", "participants", "in", "both", "dietary", "intervention", "groups", "decreased", "energy", "intake", "significantly", "3", ",", "which", "is", "known", "to", "impact", "the", "microbiota", "42", "44", ",", "and", "may", "have", "influenced", "the", "ability", "of", "the", "microbiota", "to", "produce", "TMA", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "the", "link", "between", "diet", ",", "the", "microbiota", "and", "TMAO", "is", "not", "yet", "well", "understood", ",", "and", "larger", ",", "long-term", "research", "in", "this", "area", "is", "required", "." ]
+  }, {
+    "sentence_tokens" : [ "Recent", "epidemiological", "and", "experimental", "evidence", "has", "strengthened", "the", "link", "between", "red", "meat", "intake", "and", "colorectal", "cancer", "45", "47", "." ]
+  }, {
+    "sentence_tokens" : [ "Further", "research", "examining", "the", "long-term", "health", "impacts", "of", "the", "Paleolithic", "diet", "is", "now", "warranted", ",", "considering", "that", "RS", "intake", "is", "low", "on", "the", "dietary", "pattern", "." ]
+  }, {
+    "sentence_tokens" : [ "Examination", "of", "TMAO", "concentrations", "with", "longer-term", "adherence", "to", "a", "Paleolithic", "diet", ",", "which", "includes", "an", "examination", "of", "microbiota", "composition", "is", "recommended", ",", "aiding", "further", "understanding", "of", "the", "role", "of", "dietary", "patterns", ",", "RS", "intake", "and", "the", "microbiota", "in", "modulating", "TMAO", "concentrations", "and", "CVD", "risk.Our", "examination", "of", "fibre", "intake", "has", "highlighted", "limitations", "in", "the", "current", "Australian", "fibre", "data", "." ]
+  }, {
+    "sentence_tokens" : [ "Older", "methods", "of", "measuring", "total", "dietary", "fibre", "(", "AOAC", "985.29", "and", "991.43", ")", "fail", "to", "capture", "and", "quantify", "all", "CHO", "components", "that", "constitute", "dietary", "fibre", ",", "as", "currently", "defined", "48", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "instance", ",", "they", "underestimate", "most", "types", "of", "RS", "48", "." ]
+  }, {
+    "sentence_tokens" : [ "Drawing", "conclusions", "linking", "dietary", "fibre", "fraction", "intake", "with", "health", "outcomes", "is", "limited", "without", "having", "a", "complete", "understanding", "of", "dietary", "fibre", "fraction", "composition", ";", "thus", ",", "more", "research", "is", "now", "required", "to", "develop", "updated", "databases", "in", "this", "area.Despite", "the", "increased", "serves", "of", "fruits", "and", "vegetables", "consumed", "in", "the", "Paleolithic", "group", "and", "the", "maintenance", "of", "total", "dietary", "fibre", "intake", ",", "RS", "was", "negatively", "impacted", "by", "the", "elimination", "of", "whole", "grains", "and", "cereals", "." ]
+  }, {
+    "sentence_tokens" : [ "Further", "research", "is", "required", "to", "determine", "the", "effect", "of", "this", "reduction", "on", "the", "gut", "microbiota", "and", "subsequent", "health", "outcomes", ";", "in", "particular", ",", "the", "association", "with", "serum", "TMAO", "concentrations", "and", "CVD", "." ]
+  }, {
+    "sentence_tokens" : [ "Furthermore", ",", "with", "increased", "understanding", "of", "the", "physiological", "responses", "to", "fibre", "fractions", ",", "it", "is", "critical", "that", "the", "Australian", "and", "New", "Zealand", "fibre", "databases", "are", "updated", "to", "include", "RS", "components", "to", "enable", "population", "health", "assessment", "and", "establish", "epidemiological", "links", "with", "chronic", "disease", "." ]
+  } ]
+}

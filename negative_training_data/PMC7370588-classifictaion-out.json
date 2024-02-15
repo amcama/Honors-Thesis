@@ -1,105 +1,341 @@
-[ {
-  "sentence_tokens" : [ "Acquired", "CA", "is", "mostly", "caused", "by", "malignancy", "or", "trauma", "." ],
-  "event_indices" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 8, 9 ],
-  "controlled_indices" : [ 1, 2 ],
-  "trigger_indices" : [ 4, 5 ],
-  "rule_name" : "Positive_activation_syntax_2_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Somatostatin", "plays", "a", "crucial", "role", "in", "decreasing", "portal", "pressure", "by", "inhibiting", "glucagon", "and", "other", "intestinal", "peptide", "mediated", "splanchnic", "vasodilation", "[", "6", "]", "." ],
-  "event_indices" : [ 15, 16, 17, 18, 19 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 15, 16 ],
-  "controlled_indices" : [ 18, 19 ],
-  "trigger_indices" : [ 16, 17 ],
-  "rule_name" : "Positive_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "It", "also", "decreases", "intestinal", "peristalsis", ",", "fat", "absorption", ",", "thoracic", "duct", "flow", ",", "and", "triglyceride", "contents", "in", "lymphatics", "[", "2", "]", "." ],
-  "event_indices" : [ 0, 1, 2, 3, 4, 5 ],
-  "type" : "Negative_activation",
-  "polarity" : false,
-  "controller_indices" : [ 0, 1 ],
-  "controlled_indices" : [ 4, 5 ],
-  "trigger_indices" : [ 2, 3 ],
-  "rule_name" : "Negative_activation_syntax_1_verb, pronominalMatch",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "It", "also", "decreases", "intestinal", "peristalsis", ",", "fat", "absorption", ",", "thoracic", "duct", "flow", ",", "and", "triglyceride", "contents", "in", "lymphatics", "[", "2", "]", "." ],
-  "event_indices" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 ],
-  "type" : "Negative_activation",
-  "polarity" : false,
-  "controller_indices" : [ 0, 1 ],
-  "controlled_indices" : [ 14, 15 ],
-  "trigger_indices" : [ 2, 3 ],
-  "rule_name" : "Negative_activation_syntax_1_verb, pronominalMatch",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Chylous", "ascites", "(", "CA", ")", "is", "uncommon", "in", "cirrhosis", "." ],
-  "entity_one_indices" : [ 3, 4 ],
-  "entity_two_indices" : [ 0, 1, 2 ]
-}, {
-  "sentence_tokens" : [ "We", "describe", "the", "case", "of", "a", "middle", "aged", "female", "who", "presented", "with", "CA", "secondary", "to", "cirrhosis", ",", "and", "the", "challenges", "associated", "with", "her", "treatment", "and", "her", "management", "with", "the", "use", "of", "intravenous", "octreotide", "." ],
-  "entity_one_indices" : [ 32, 33 ],
-  "entity_two_indices" : [ 12, 13 ]
-}, {
-  "sentence_tokens" : [ "Chylous", "ascites", "(", "CA", ")", "is", "a", "rare", "manifestation", "of", "cirrhosis", "." ],
-  "entity_one_indices" : [ 3, 4 ],
-  "entity_two_indices" : [ 0, 1, 2 ]
-}, {
-  "sentence_tokens" : [ "The", "use", "of", "octreotide", "in", "the", "management", "of", "CA", "is", "limited", "to", "case", "reports", "and", "series", "[", "3", "]", "." ],
-  "entity_one_indices" : [ 8, 9 ],
-  "entity_two_indices" : [ 3, 4 ]
-}, {
-  "sentence_tokens" : [ "We", "describe", "the", "case", "of", "a", "59-year-old-female", "who", "presented", "with", "CA", "and", "was", "managed", "with", "octreotide", "with", "a", "significant", "reduction", "in", "ascitic", "fluid", "volume", "." ],
-  "entity_one_indices" : [ 15, 16 ],
-  "entity_two_indices" : [ 10, 11 ]
-}, {
-  "sentence_tokens" : [ "A", "59-year-old", "female", "with", "a", "medical", "history", "of", "alcoholic", "cirrhosis", "who", "had", "undergone", "uncomplicated", "elective", "splenectomy", "and", "distal", "pancreatectomy", "for", "splenic", "artery", "aneurysm", "2", "months", "ago", "was", "admitted", "to", "the", "intensive", "care", "unit", "with", "acute", "hypoxic", "respiratory", "failure", "for", "two", "weeks", "." ],
-  "entity_one_indices" : [ 22, 23 ],
-  "entity_two_indices" : [ 8, 9, 10 ]
-}, {
-  "sentence_tokens" : [ "Both", "ascitic", "and", "pleural", "fluid", "chemistries", "revealed", "elevated", "triglyceride", "levels", "(", "268", "mg/dL", "in", "the", "ascitic", "fluid", ")", ";", "therefore", ",", "a", "diagnosis", "of", "CA", "was", "made", "." ],
-  "entity_one_indices" : [ 24, 25 ],
-  "entity_two_indices" : [ 8, 9 ]
-}, {
-  "sentence_tokens" : [ "The", "patient", "'", "s", "ascitic", "fluid", "collection", "improved", "from", "about", "600", "mL", "per", "day", "to", "25", "mL", "per", "day", ",", "as", "shown", "in", "Figure", "1", "." ],
-  "entity_one_indices" : [ 16, 17 ],
-  "entity_two_indices" : [ 11, 12 ]
-}, {
-  "sentence_tokens" : [ "CA", "is", "the", "collection", "of", "milky", "appearing", "triglyceride", "rich", "fluid", "in", "the", "peritoneal", "cavity", "." ],
-  "entity_one_indices" : [ 7, 8 ],
-  "entity_two_indices" : [ 0, 1 ]
-}, {
-  "sentence_tokens" : [ "It", "is", "important", "to", "distinguish", "CA", "from", "pseudo-CA", ",", "in", "which", "the", "turbid", "appearance", "is", "due", "to", "cellular", "degeneration", "from", "an", "infection", "or", "underlying", "malignancy", "without", "actually", "containing", "high", "level", "of", "triglycerides", "[", "4", "]", "." ],
-  "entity_one_indices" : [ 21, 22 ],
-  "entity_two_indices" : [ 5, 6 ]
-}, {
-  "sentence_tokens" : [ "It", "is", "also", "important", "to", "note", "that", "in", "our", "patient", ",", "CA", "developed", "two", "months", "after", "abdominal", "surgery", ";", "therefore", ",", "it", "was", "likely", "not", "due", "to", "trauma", "from", "surgery", "." ],
-  "entity_one_indices" : [ 27, 28 ],
-  "entity_two_indices" : [ 11, 12 ]
-}, {
-  "sentence_tokens" : [ "Octreotide", "is", "a", "somatostatin", "analog", "with", "similar", "functions", "but", "longer", "half-life", "(", "upto", "two", "hours", ")", ",", "making", "it", "advantageous", "to", "use", "through", "the", "subcutaneous", "route", "[", "7", "]", "." ],
-  "entity_one_indices" : [ 3, 4 ],
-  "entity_two_indices" : [ 0, 1 ]
-}, {
-  "sentence_tokens" : [ "Zhou", "et", "al", ",", "published", "results", "of", "treatment", "of", "six", "patients", "with", "octreotide", "in", "2008", ",", "where", "they", "reported", "a", "significant", "decrease", "in", "cirrhosis", "related", "CA", "[", "3", "]", "." ],
-  "entity_one_indices" : [ 25, 26 ],
-  "entity_two_indices" : [ 12, 13 ]
-}, {
-  "sentence_tokens" : [ "Berzigotti", "et", "al.", "described", "the", "long-term", "use", "of", "octreotide", "in", "a", "cirrhotic", "patient", "with", "portal", "hypertension", "." ],
-  "entity_one_indices" : [ 14, 15, 16 ],
-  "entity_two_indices" : [ 8, 9 ]
-}, {
-  "sentence_tokens" : [ "All", "the", "aforementioned", "studies", "suggest", "that", "octreotide", "along", "with", "conservative", "therapy", "can", "play", "a", "crucial", "role", "in", "the", "management", "of", "CA", "and", "effusion", "of", "both", "cirrhotic", "and", "non", "cirrhotic", "origin", "." ],
-  "entity_one_indices" : [ 20, 21 ],
-  "entity_two_indices" : [ 6, 7 ]
-}, {
-  "sentence_tokens" : [ "Our", "case", "showed", "that", "even", "short-term", "use", "of", "octreotide", "can", "have", "a", "dramatic", "effect", "on", "the", "management", "of", "cirrhosis", "related", "CA", "and", "effusion", "." ],
-  "entity_one_indices" : [ 20, 21 ],
-  "entity_two_indices" : [ 8, 9 ]
-} ]
+{
+  "regulations" : [ {
+    "sentence_tokens" : [ "Acquired", "CA", "is", "mostly", "caused", "by", "malignancy", "or", "trauma", "." ],
+    "event_indices" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 8, 9 ],
+    "controlled_indices" : [ 1, 2 ],
+    "trigger_indices" : [ 4, 5 ],
+    "rule_name" : "Positive_activation_syntax_2_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "Somatostatin", "plays", "a", "crucial", "role", "in", "decreasing", "portal", "pressure", "by", "inhibiting", "glucagon", "and", "other", "intestinal", "peptide", "mediated", "splanchnic", "vasodilation", "[", "6", "]", "." ],
+    "event_indices" : [ 15, 16, 17, 18, 19 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 15, 16 ],
+    "controlled_indices" : [ 18, 19 ],
+    "trigger_indices" : [ 16, 17 ],
+    "rule_name" : "Positive_activation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "It", "also", "decreases", "intestinal", "peristalsis", ",", "fat", "absorption", ",", "thoracic", "duct", "flow", ",", "and", "triglyceride", "contents", "in", "lymphatics", "[", "2", "]", "." ],
+    "event_indices" : [ 0, 1, 2, 3, 4, 5 ],
+    "type" : "Negative_activation",
+    "polarity" : false,
+    "controller_indices" : [ 0, 1 ],
+    "controlled_indices" : [ 4, 5 ],
+    "trigger_indices" : [ 2, 3 ],
+    "rule_name" : "Negative_activation_syntax_1_verb, pronominalMatch",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "It", "also", "decreases", "intestinal", "peristalsis", ",", "fat", "absorption", ",", "thoracic", "duct", "flow", ",", "and", "triglyceride", "contents", "in", "lymphatics", "[", "2", "]", "." ],
+    "event_indices" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 ],
+    "type" : "Negative_activation",
+    "polarity" : false,
+    "controller_indices" : [ 0, 1 ],
+    "controlled_indices" : [ 14, 15 ],
+    "trigger_indices" : [ 2, 3 ],
+    "rule_name" : "Negative_activation_syntax_1_verb, pronominalMatch",
+    "rule" : null
+  } ],
+  "hardInstances" : [ {
+    "sentence_tokens" : [ "Somatostatin", "plays", "a", "crucial", "role", "in", "decreasing", "portal", "pressure", "by", "inhibiting", "glucagon", "and", "other", "intestinal", "peptide", "mediated", "splanchnic", "vasodilation", "[", "6", "]", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "It", "also", "decreases", "intestinal", "peristalsis", ",", "fat", "absorption", ",", "thoracic", "duct", "flow", ",", "and", "triglyceride", "contents", "in", "lymphatics", "[", "2", "]", "." ],
+    "entities_indices" : [ [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "It", "also", "decreases", "intestinal", "peristalsis", ",", "fat", "absorption", ",", "thoracic", "duct", "flow", ",", "and", "triglyceride", "contents", "in", "lymphatics", "[", "2", "]", "." ],
+    "entities_indices" : [ [ 4, 5 ] ]
+  } ],
+  "withoutRegulations" : [ {
+    "sentence_tokens" : [ "CA", "is", "a", "challenging", "diagnosis", "in", "cirrhotic", "patients", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "Chylous", "Ascites", "and", "Pleural", "Effusion", "Treated", "With", "Intravenous", "Octreotide", "." ],
+    "entities_indices" : [ [ 0, 1, 2 ], [ 3, 4, 5 ], [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "describe", "the", "case", "of", "a", "middle", "aged", "female", "who", "presented", "with", "CA", "secondary", "to", "cirrhosis", ",", "and", "the", "challenges", "associated", "with", "her", "treatment", "and", "her", "management", "with", "the", "use", "of", "intravenous", "octreotide", "." ],
+    "entities_indices" : [ [ 12, 13 ], [ 32, 33 ] ]
+  }, {
+    "sentence_tokens" : [ "Congenital", "CA", ",", "which", "is", "caused", "by", "lymphatic", "dysplasia", ",", "presents", "early", "in", "life", "." ],
+    "entities_indices" : [ [ 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "our", "patient", ",", "we", "observed", "significant", "improvement", "in", "the", "volume", "of", "chylous", "drainage", "during", "the", "five", "days", "of", "treatment", "with", "octreotide", "." ],
+    "entities_indices" : [ [ 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "CA", "is", "a", "rare", "complication", "of", "cirrhosis", ",", "occurring", "spontaneously", "in", "0.5-1", "%", "of", "patients", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "She", "was", "started", "on", "albumin", "and", "diuretic", "therapy", "with", "furosemide", "and", "spironolactone", "for", "portal", "hypertension", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 9, 10 ], [ 11, 12 ], [ 13, 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "It", "is", "also", "important", "to", "note", "that", "in", "our", "patient", ",", "CA", "developed", "two", "months", "after", "abdominal", "surgery", ";", "therefore", ",", "it", "was", "likely", "not", "due", "to", "trauma", "from", "surgery", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 27, 28 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "use", "of", "octreotide", "in", "the", "management", "of", "CA", "is", "limited", "to", "case", "reports", "and", "series", "[", "3", "]", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "Common", "causes", "of", "hypoxia", ",", "including", "pneumonia", ",", "congestive", "heart", "failure", ",", "and", "pulmonary", "embolism", ",", "were", "excluded", "during", "work-up.The", "patient", "underwent", "diagnostic", "and", "therapeutic", "paracentesis", "as", "well", "as", "thoracentesis", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 6, 7 ], [ 9, 10, 11 ], [ 13, 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "There", "was", "a", "remarkable", "improvement", "in", "the", "collection", "of", "ascitic", "fluid", "during", "octreotide", "therapy", "." ],
+    "entities_indices" : [ [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "Chylous", "ascites", "(", "CA", ")", "is", "uncommon", "in", "cirrhosis", "." ],
+    "entities_indices" : [ [ 0, 1, 2 ], [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "Berzigotti", "et", "al.", "described", "the", "long-term", "use", "of", "octreotide", "in", "a", "cirrhotic", "patient", "with", "portal", "hypertension", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 14, 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "Diagnosis", "is", "made", "when", "triglyceride", "level", "in", "ascitic", "fluid", "is", ">", "200", "mg/dL", "[", "2", "]", "." ],
+    "entities_indices" : [ [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "use", "of", "octreotide", "can", "effectively", "improve", "chylous", "fluid", "accumulation", ",", "which", "provides", "time", "for", "consideration", "of", "other", "treatment", "measures", "including", "TIPSS", "and", "liver", "transplantation", "." ],
+    "entities_indices" : [ [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "Both", "ascitic", "and", "pleural", "fluid", "chemistries", "revealed", "elevated", "triglyceride", "levels", "(", "268", "mg/dL", "in", "the", "ascitic", "fluid", ")", ";", "therefore", ",", "a", "diagnosis", "of", "CA", "was", "made", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "All", "the", "aforementioned", "studies", "suggest", "that", "octreotide", "along", "with", "conservative", "therapy", "can", "play", "a", "crucial", "role", "in", "the", "management", "of", "CA", "and", "effusion", "of", "both", "cirrhotic", "and", "non", "cirrhotic", "origin", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "It", "commonly", "manifests", "as", "diuretic", "refractory", "ascites", ",", "and", "treatment", "options", "are", "limited", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "Infections", "such", "as", "tuberculosis", "and", "filariasis", "are", "common", "causes", "in", "developing", "countries", "[", "5", "]", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 3, 4 ], [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "It", "often", "presents", "as", "diuretic", "resistant", "ascites", "and", "is", "associated", "with", "increased", "mortality", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "Our", "patient", "had", "spontaneous", "CA", "." ],
+    "entities_indices" : [ [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "beneficial", "role", "of", "octreotide", "has", "also", "been", "described", "in", "the", "management", "of", "ascites", "in", "the", "setting", "of", "non", "cirrhotic", "portal", "vein", "thrombosis", ",", "chylous", "effusion", "of", "malignancy", "origin", ",", "and", "chronic", "dialysis", "[", "6,9,10", "]", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 13, 14 ], [ 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "59-year-old", "female", "with", "a", "medical", "history", "of", "alcoholic", "cirrhosis", "who", "had", "undergone", "uncomplicated", "elective", "splenectomy", "and", "distal", "pancreatectomy", "for", "splenic", "artery", "aneurysm", "2", "months", "ago", "was", "admitted", "to", "the", "intensive", "care", "unit", "with", "acute", "hypoxic", "respiratory", "failure", "for", "two", "weeks", "." ],
+    "entities_indices" : [ [ 8, 9, 10 ], [ 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "Microbiological", "work-up", ",", "including", "gram", "stain", "and", "cultures", ",", "were", "negative", "." ],
+    "entities_indices" : [ [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "can", "occur", "as", "an", "early", "presentation", "or", "at", "later", "stages", "with", "cirrhosis", "or", "with", "complications", "from", "hepatocellular", "carcinoma", "or", "during", "TIPSS", "or", "procedures", "related", "to", "complications", "from", "cirrhosis", "such", "as", "sclerotherapy", "related", "thoracic", "duct", "injury", "[", "4", "]", "." ],
+    "entities_indices" : [ [ 17, 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "Zhou", "et", "al", ",", "published", "results", "of", "treatment", "of", "six", "patients", "with", "octreotide", "in", "2008", ",", "where", "they", "reported", "a", "significant", "decrease", "in", "cirrhosis", "related", "CA", "[", "3", "]", "." ],
+    "entities_indices" : [ [ 12, 13 ], [ 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "She", "was", "started", "on", "treatment", "with", "octreotide", "100", "micrograms", "scheduled", "three", "times", "per", "day", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "cirrhosis", ",", "CA", "is", "associated", "with", "high", "mortality", "[", "2", "]", "." ],
+    "entities_indices" : [ [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "Conservative", "approach", "includes", "the", "use", "of", "low-fat", "diet", ",", "medium-chain", "triglyceride", "(", "MCT", ")", "intake", ",", "total", "parenteral", "nutrition", "(", "TPN", ")", ",", "paracentesis", ",", "and", "use", "of", "somatostatin", "analogs", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 12, 13 ], [ 20, 21 ], [ 28, 29 ] ]
+  }, {
+    "sentence_tokens" : [ "Chylous", "ascites", "(", "CA", ")", "is", "a", "rare", "manifestation", "of", "cirrhosis", "." ],
+    "entities_indices" : [ [ 0, 1, 2 ], [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "It", "is", "important", "to", "distinguish", "CA", "from", "pseudo-CA", ",", "in", "which", "the", "turbid", "appearance", "is", "due", "to", "cellular", "degeneration", "from", "an", "infection", "or", "underlying", "malignancy", "without", "actually", "containing", "high", "level", "of", "triglycerides", "[", "4", "]", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "Our", "case", "showed", "that", "even", "short-term", "use", "of", "octreotide", "can", "have", "a", "dramatic", "effect", "on", "the", "management", "of", "cirrhosis", "related", "CA", "and", "effusion", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "Diagnosis", "is", "done", "by", "the", "detection", "of", "triglyceride", "rich", "ascitic", "fluid", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "successful", "treatment", "of", "iatrogenic", "chyloperitoneum", "in", "a", "child", "with", "octreotide", "in", "combination", "with", "TPN", "and", "MCT", "has", "been", "described", "in", "a", "study", "by", "Bhatia", "et", "al.", "[", "9", "]", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 10, 11 ], [ 14, 15 ], [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "She", "was", "found", "to", "have", "increased", "respiratory", "rate", ",", "diminished", "breath", "sounds", ",", "and", "abdominal", "ascites", "with", "shifting", "dullness", "." ],
+    "entities_indices" : [ [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "resistant", "cases", ",", "options", "include", "TIPSS", "and", "surgical", "measures", "such", "as", "closure", "of", "retroperitoneal", "shunt", "and", "creation", "of", "peritoneovenous", "shunt", "[", "4", "]", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "Case", "presentation", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "Her", "supplemental", "oxygen", "requirement", "improved", "significantly", ",", "and", "the", "patient", "was", "discharged", "on", "diuretic", "therapy", "." ],
+    "entities_indices" : [ [ 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "Mechanism", "of", "CA", "in", "cirrhosis", "is", "poorly", "understood", "." ],
+    "entities_indices" : [ [ 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "Due", "to", "the", "recurrence", "of", "effusion", "and", "need", "for", "frequent", "paracentesis", ",", "with", "poor", "prognosis", ",", "goals", "of", "care", "discussion", "were", "planned", ",", "and", "a", "temporary", "peritoneal", "drainage", "catheter", "was", "placed", "for", "symptom", "relief", "with", "a", "plan", "to", "discharge", "the", "patient", "on", "hospice", "care.Despite", "the", "above", "measures", ",", "accumulation", "of", "ascitic", "fluid", "was", "very", "challenging", "to", "control", "." ],
+    "entities_indices" : [ [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "Octreotide", "is", "a", "somatostatin", "analog", "with", "similar", "functions", "but", "longer", "half-life", "(", "upto", "two", "hours", ")", ",", "making", "it", "advantageous", "to", "use", "through", "the", "subcutaneous", "route", "[", "7", "]", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "led", "to", "the", "resolution", "of", "symptoms", ",", "and", "the", "patient", "was", "ultimately", "discharged", "for", "further", "long-term", "management", "with", "TIPSS", ",", "which", "improved", "her", "overall", "functional", "status.The", "successful", "use", "of", "octreotide", "in", "the", "management", "of", "CA", "has", "been", "reported", "in", "a", "few", "other", "studies", "." ],
+    "entities_indices" : [ [ 19, 20 ], [ 30, 31 ], [ 35, 36 ] ]
+  }, {
+    "sentence_tokens" : [ "CA", "is", "the", "collection", "of", "milky", "appearing", "triglyceride", "rich", "fluid", "in", "the", "peritoneal", "cavity", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "patient", "'", "s", "ascitic", "fluid", "collection", "improved", "from", "about", "600", "mL", "per", "day", "to", "25", "mL", "per", "day", ",", "as", "shown", "in", "Figure", "1", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "our", "case", "report", ",", "we", "have", "highlighted", "the", "use", "of", "octreotide", "in", "the", "management", "of", "CA", "and", "pleural", "effusion", "secondary", "to", "cirrhosis", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 16, 17 ], [ 18, 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "patient", "had", "hypoxia", ",", "which", "was", "attributed", "to", "hepatopulmonary", "syndrome", "and", "compressive", "atelectasis", "from", "hepatic", "hydrothorax", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 9, 10, 11 ], [ 13, 14 ], [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "There", "are", "no", "published", "guidelines", "on", "the", "management", "of", "CA", "." ],
+    "entities_indices" : [ [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "management", "of", "CA", "is", "equally", "challenging", "as", "no", "definite", "guidelines", "have", "been", "suggested", "[", "6", "]", "." ],
+    "entities_indices" : [ [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "describe", "the", "case", "of", "a", "59-year-old-female", "who", "presented", "with", "CA", "and", "was", "managed", "with", "octreotide", "with", "a", "significant", "reduction", "in", "ascitic", "fluid", "volume", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "long-term", "use", "of", "TPN", "is", "believed", "to", "have", "repairing", "effect", "on", "previously", "ruptured", "lymph", "vessels", "." ],
+    "entities_indices" : [ [ 4, 5 ] ]
+  } ],
+  "emptySentences" : [ {
+    "sentence_tokens" : [ "Chylous", "Ascites", "and", "Pleural", "Effusion", "Treated", "With", "Intravenous", "Octreotide", "." ]
+  }, {
+    "sentence_tokens" : [ "Chylous", "ascites", "(", "CA", ")", "is", "uncommon", "in", "cirrhosis", "." ]
+  }, {
+    "sentence_tokens" : [ "It", "often", "presents", "as", "diuretic", "resistant", "ascites", "and", "is", "associated", "with", "increased", "mortality", "." ]
+  }, {
+    "sentence_tokens" : [ "Diagnosis", "is", "done", "by", "the", "detection", "of", "triglyceride", "rich", "ascitic", "fluid", "." ]
+  }, {
+    "sentence_tokens" : [ "There", "are", "no", "published", "guidelines", "on", "the", "management", "of", "CA", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "describe", "the", "case", "of", "a", "middle", "aged", "female", "who", "presented", "with", "CA", "secondary", "to", "cirrhosis", ",", "and", "the", "challenges", "associated", "with", "her", "treatment", "and", "her", "management", "with", "the", "use", "of", "intravenous", "octreotide", "." ]
+  }, {
+    "sentence_tokens" : [ "Introduction", "." ]
+  }, {
+    "sentence_tokens" : [ "Chylous", "ascites", "(", "CA", ")", "is", "a", "rare", "manifestation", "of", "cirrhosis", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "has", "been", "described", "in", "a", "few", "cases", "in", "the", "medical", "literature", "." ]
+  }, {
+    "sentence_tokens" : [ "It", "can", "be", "congenital", "as", "well", "as", "acquired", "[", "1", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Congenital", "CA", ",", "which", "is", "caused", "by", "lymphatic", "dysplasia", ",", "presents", "early", "in", "life", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "cirrhosis", ",", "CA", "is", "associated", "with", "high", "mortality", "[", "2", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "It", "commonly", "manifests", "as", "diuretic", "refractory", "ascites", ",", "and", "treatment", "options", "are", "limited", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "use", "of", "octreotide", "in", "the", "management", "of", "CA", "is", "limited", "to", "case", "reports", "and", "series", "[", "3", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "describe", "the", "case", "of", "a", "59-year-old-female", "who", "presented", "with", "CA", "and", "was", "managed", "with", "octreotide", "with", "a", "significant", "reduction", "in", "ascitic", "fluid", "volume", "." ]
+  }, {
+    "sentence_tokens" : [ "Case", "presentation", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "59-year-old", "female", "with", "a", "medical", "history", "of", "alcoholic", "cirrhosis", "who", "had", "undergone", "uncomplicated", "elective", "splenectomy", "and", "distal", "pancreatectomy", "for", "splenic", "artery", "aneurysm", "2", "months", "ago", "was", "admitted", "to", "the", "intensive", "care", "unit", "with", "acute", "hypoxic", "respiratory", "failure", "for", "two", "weeks", "." ]
+  }, {
+    "sentence_tokens" : [ "She", "was", "found", "to", "have", "increased", "respiratory", "rate", ",", "diminished", "breath", "sounds", ",", "and", "abdominal", "ascites", "with", "shifting", "dullness", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "patient", "had", "hypoxia", ",", "which", "was", "attributed", "to", "hepatopulmonary", "syndrome", "and", "compressive", "atelectasis", "from", "hepatic", "hydrothorax", "." ]
+  }, {
+    "sentence_tokens" : [ "Common", "causes", "of", "hypoxia", ",", "including", "pneumonia", ",", "congestive", "heart", "failure", ",", "and", "pulmonary", "embolism", ",", "were", "excluded", "during", "work-up.The", "patient", "underwent", "diagnostic", "and", "therapeutic", "paracentesis", "as", "well", "as", "thoracentesis", "." ]
+  }, {
+    "sentence_tokens" : [ "Both", "ascitic", "and", "pleural", "fluid", "chemistries", "revealed", "elevated", "triglyceride", "levels", "(", "268", "mg/dL", "in", "the", "ascitic", "fluid", ")", ";", "therefore", ",", "a", "diagnosis", "of", "CA", "was", "made", "." ]
+  }, {
+    "sentence_tokens" : [ "Microbiological", "work-up", ",", "including", "gram", "stain", "and", "cultures", ",", "were", "negative", "." ]
+  }, {
+    "sentence_tokens" : [ "No", "malignant", "or", "suspicious", "cells", "were", "seen", "in", "the", "cytological", "analysis", "." ]
+  }, {
+    "sentence_tokens" : [ "She", "was", "started", "on", "albumin", "and", "diuretic", "therapy", "with", "furosemide", "and", "spironolactone", "for", "portal", "hypertension", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "patient", "underwent", "multiple", "paracentesis", "procedures", "with", "removal", "of", "about", "2-3", "liters", "of", "chylous", "fluid", "every", "72-96", "hours", "." ]
+  }, {
+    "sentence_tokens" : [ "Due", "to", "the", "recurrence", "of", "effusion", "and", "need", "for", "frequent", "paracentesis", ",", "with", "poor", "prognosis", ",", "goals", "of", "care", "discussion", "were", "planned", ",", "and", "a", "temporary", "peritoneal", "drainage", "catheter", "was", "placed", "for", "symptom", "relief", "with", "a", "plan", "to", "discharge", "the", "patient", "on", "hospice", "care.Despite", "the", "above", "measures", ",", "accumulation", "of", "ascitic", "fluid", "was", "very", "challenging", "to", "control", "." ]
+  }, {
+    "sentence_tokens" : [ "She", "was", "started", "on", "treatment", "with", "octreotide", "100", "micrograms", "scheduled", "three", "times", "per", "day", "." ]
+  }, {
+    "sentence_tokens" : [ "She", "received", "it", "for", "five", "days", "." ]
+  }, {
+    "sentence_tokens" : [ "There", "was", "a", "remarkable", "improvement", "in", "the", "collection", "of", "ascitic", "fluid", "during", "octreotide", "therapy", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "patient", "'", "s", "ascitic", "fluid", "collection", "improved", "from", "about", "600", "mL", "per", "day", "to", "25", "mL", "per", "day", ",", "as", "shown", "in", "Figure", "1", "." ]
+  }, {
+    "sentence_tokens" : [ "Her", "supplemental", "oxygen", "requirement", "improved", "significantly", ",", "and", "the", "patient", "was", "discharged", "on", "diuretic", "therapy", "." ]
+  }, {
+    "sentence_tokens" : [ "She", "underwent", "TIPSS", "(", "transjugular", "intrahepatic", "portosystemic", "shunt", "surgery", ")", "after", "her", "clinical", "improvement", "." ]
+  }, {
+    "sentence_tokens" : [ "With", "this", ",", "there", "was", "a", "significant", "improvement", "in", "her", "overall", "functional", "status", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "patient", "was", "referred", "for", "liver", "transplantation", "." ]
+  }, {
+    "sentence_tokens" : [ "Discussion", "." ]
+  }, {
+    "sentence_tokens" : [ "CA", "is", "the", "collection", "of", "milky", "appearing", "triglyceride", "rich", "fluid", "in", "the", "peritoneal", "cavity", "." ]
+  }, {
+    "sentence_tokens" : [ "It", "is", "uncommon", "and", "presents", "challenge", "in", "its", "management", "." ]
+  }, {
+    "sentence_tokens" : [ "Diagnosis", "is", "made", "when", "triglyceride", "level", "in", "ascitic", "fluid", "is", ">", "200", "mg/dL", "[", "2", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "It", "is", "important", "to", "distinguish", "CA", "from", "pseudo-CA", ",", "in", "which", "the", "turbid", "appearance", "is", "due", "to", "cellular", "degeneration", "from", "an", "infection", "or", "underlying", "malignancy", "without", "actually", "containing", "high", "level", "of", "triglycerides", "[", "4", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Abdominal", "malignancy", "and", "cirrhosis", "account", "for", "the", "majority", "of", "cases", "in", "developed", "countries", "." ]
+  }, {
+    "sentence_tokens" : [ "Infections", "such", "as", "tuberculosis", "and", "filariasis", "are", "common", "causes", "in", "developing", "countries", "[", "5", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "CA", "is", "a", "rare", "complication", "of", "cirrhosis", ",", "occurring", "spontaneously", "in", "0.5-1", "%", "of", "patients", "." ]
+  }, {
+    "sentence_tokens" : [ "Mechanism", "of", "CA", "in", "cirrhosis", "is", "poorly", "understood", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "can", "occur", "as", "an", "early", "presentation", "or", "at", "later", "stages", "with", "cirrhosis", "or", "with", "complications", "from", "hepatocellular", "carcinoma", "or", "during", "TIPSS", "or", "procedures", "related", "to", "complications", "from", "cirrhosis", "such", "as", "sclerotherapy", "related", "thoracic", "duct", "injury", "[", "4", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Our", "patient", "had", "spontaneous", "CA", "." ]
+  }, {
+    "sentence_tokens" : [ "Although", "the", "exact", "mechanism", "is", "unclear", ",", "it", "has", "been", "suggested", "that", "excessive", "hepatic", "and", "gastrointestinal", "lymph", "flow", "due", "to", "elevated", "portal", "pressure", "could", "lead", "to", "a", "breakage", "of", "serosal", "lymphatic", "channels", ",", "leaking", "chyle", "into", "the", "peritoneum", "[", "5", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "management", "of", "CA", "is", "equally", "challenging", "as", "no", "definite", "guidelines", "have", "been", "suggested", "[", "6", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Treatment", "has", "to", "be", "individualized", "based", "on", "the", "etiology", ",", "severity", ",", "and", "the", "presence", "of", "other", "comorbidities", "." ]
+  }, {
+    "sentence_tokens" : [ "Conservative", "approach", "includes", "the", "use", "of", "low-fat", "diet", ",", "medium-chain", "triglyceride", "(", "MCT", ")", "intake", ",", "total", "parenteral", "nutrition", "(", "TPN", ")", ",", "paracentesis", ",", "and", "use", "of", "somatostatin", "analogs", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "resistant", "cases", ",", "options", "include", "TIPSS", "and", "surgical", "measures", "such", "as", "closure", "of", "retroperitoneal", "shunt", "and", "creation", "of", "peritoneovenous", "shunt", "[", "4", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "our", "case", "report", ",", "we", "have", "highlighted", "the", "use", "of", "octreotide", "in", "the", "management", "of", "CA", "and", "pleural", "effusion", "secondary", "to", "cirrhosis", "." ]
+  }, {
+    "sentence_tokens" : [ "It", "is", "also", "important", "to", "note", "that", "in", "our", "patient", ",", "CA", "developed", "two", "months", "after", "abdominal", "surgery", ";", "therefore", ",", "it", "was", "likely", "not", "due", "to", "trauma", "from", "surgery", "." ]
+  }, {
+    "sentence_tokens" : [ "Octreotide", "is", "a", "somatostatin", "analog", "with", "similar", "functions", "but", "longer", "half-life", "(", "upto", "two", "hours", ")", ",", "making", "it", "advantageous", "to", "use", "through", "the", "subcutaneous", "route", "[", "7", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "our", "patient", ",", "we", "observed", "significant", "improvement", "in", "the", "volume", "of", "chylous", "drainage", "during", "the", "five", "days", "of", "treatment", "with", "octreotide", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "volume", "of", "drainage", "decreased", "from", "600mL/day", "to", "25mL/day", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "led", "to", "the", "resolution", "of", "symptoms", ",", "and", "the", "patient", "was", "ultimately", "discharged", "for", "further", "long-term", "management", "with", "TIPSS", ",", "which", "improved", "her", "overall", "functional", "status.The", "successful", "use", "of", "octreotide", "in", "the", "management", "of", "CA", "has", "been", "reported", "in", "a", "few", "other", "studies", "." ]
+  }, {
+    "sentence_tokens" : [ "Zhou", "et", "al", ",", "published", "results", "of", "treatment", "of", "six", "patients", "with", "octreotide", "in", "2008", ",", "where", "they", "reported", "a", "significant", "decrease", "in", "cirrhosis", "related", "CA", "[", "3", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Berzigotti", "et", "al.", "described", "the", "long-term", "use", "of", "octreotide", "in", "a", "cirrhotic", "patient", "with", "portal", "hypertension", "." ]
+  }, {
+    "sentence_tokens" : [ "They", "concluded", "that", "there", "was", "reduction", "in", "the", "need", "for", "repeated", "paracentesis", ",", "with", "maximum", "effect", "seen", "in", "the", "first", "month", "and", "six", "months", "with", "subsequent", "improvement", "in", "quality", "of", "life", "[", "8]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "long-term", "use", "of", "TPN", "is", "believed", "to", "have", "repairing", "effect", "on", "previously", "ruptured", "lymph", "vessels", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "successful", "treatment", "of", "iatrogenic", "chyloperitoneum", "in", "a", "child", "with", "octreotide", "in", "combination", "with", "TPN", "and", "MCT", "has", "been", "described", "in", "a", "study", "by", "Bhatia", "et", "al.", "[", "9", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "beneficial", "role", "of", "octreotide", "has", "also", "been", "described", "in", "the", "management", "of", "ascites", "in", "the", "setting", "of", "non", "cirrhotic", "portal", "vein", "thrombosis", ",", "chylous", "effusion", "of", "malignancy", "origin", ",", "and", "chronic", "dialysis", "[", "6,9,10", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "All", "the", "aforementioned", "studies", "suggest", "that", "octreotide", "along", "with", "conservative", "therapy", "can", "play", "a", "crucial", "role", "in", "the", "management", "of", "CA", "and", "effusion", "of", "both", "cirrhotic", "and", "non", "cirrhotic", "origin", "." ]
+  }, {
+    "sentence_tokens" : [ "Our", "case", "showed", "that", "even", "short-term", "use", "of", "octreotide", "can", "have", "a", "dramatic", "effect", "on", "the", "management", "of", "cirrhosis", "related", "CA", "and", "effusion", "." ]
+  }, {
+    "sentence_tokens" : [ "It", "not", "only", "shortened", "the", "hospital", "stay", "but", "also", "avoided", "further", "unnecessary", "diagnostic", "tests", "[", "11", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Conclusions", "." ]
+  }, {
+    "sentence_tokens" : [ "CA", "is", "a", "challenging", "diagnosis", "in", "cirrhotic", "patients", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "use", "of", "octreotide", "can", "effectively", "improve", "chylous", "fluid", "accumulation", ",", "which", "provides", "time", "for", "consideration", "of", "other", "treatment", "measures", "including", "TIPSS", "and", "liver", "transplantation", "." ]
+  } ]
+}

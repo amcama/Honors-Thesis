@@ -1,55 +1,460 @@
-[ {
-  "sentence_tokens" : [ "Our", "results", "demonstrate", "that", "a", "carefully", "designed", "pricing", "scheme", "is", "essential", "to", "avoid", "unintended", "incentives", "that", "potentially", "reduce", "power", "grid", "stability", "instead", "of", "enhancing", "it.For", "mobility", "systems", "in", "particular", ",", "characterizing", "the", "incentives", "and", "the", "conditions", "that", "promote", "artificially", "induced", "price", "surges", "suggests", "specific", "actions", "to", "suppress", "their", "emergence", "." ],
-  "event_indices" : [ 19, 20, 21, 22, 23, 24, 25, 26, 27 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 19, 20 ],
-  "controlled_indices" : [ 24, 25, 26, 27 ],
-  "trigger_indices" : [ 23, 24 ],
-  "rule_name" : "Positive_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "For", "Uber", ",", "the", "price", "p", "of", "the", "service", "(", "the", "total", "fare", "for", "a", "ride", ")", "decomposes", "into", "two", "parts", ",", "base", "cost", "p", "and", "surge", "fee", "p", ",1", "p", "=", "pbase+", "psurge", "(", "D", ",", "S", ")", ",", "as", "illustrated", "in", "Fig.", "1b", "for", "trips", "from", "Reagan", "National", "Airport", "(", "DCA", ")", "to", "Union", "Station", "in", "Washington", ",", "DC", "(", "see", "\"", "Methods", "\"", "section", "and", "Supplementary", "Table", "1", "for", "more", "details", ")", "." ],
-  "entity_one_indices" : [ 60, 61 ],
-  "entity_two_indices" : [ 22, 23 ]
-}, {
-  "sentence_tokens" : [ "These", "price", "surges", "are", "meant", "to", "incentivize", "customers", "to", "delay", "their", "request", ",", "reducing", "the", "current", "demand", ",", "as", "well", "as", "to", "incentivize", "drivers", "to", "offer", "their", "service", "in", "areas", "or", "at", "times", "with", "high", "demand", ",", "increasing", "the", "supply.As", "illustrated", "in", "Fig.", "1b", ",", "during", "the", "evening", "the", "system", "settles", "to", "constant", "base", "cost", ",", "reflecting", "constant", "trip", "duration", "in", "uncongested", "traffic", "." ],
-  "entity_one_indices" : [ 58, 59 ],
-  "entity_two_indices" : [ 53, 54 ]
-}, {
-  "sentence_tokens" : [ "For", "illustration", ",", "we", "take", "a", "piecewise", "linear", "price", "function", ",", "representing", "the", "simplest", "possible", "demand-supply", "response", ",", "such", "that", "drivers", "earn", "the", "total", "fare3p", "'", "(", "S", ",", "D", ")", "=", "pbaseifS", ">=", "Dpbase+", "psurgemaxD", "-", "SDelsewhen", "they", "serve", "a", "customer", ",", "where", "p", "denotes", "the", "(", "constant", ")", "base", "cost", "and", "psurgemax", "denotes", "the", "maximum", "possible", "surge", "fee", "when", "S", "=", "0", "(", "see", "\"", "Methods", "\"", "section", ",", "Supplementary", "Note", "3", "and", "Supplementary", "Fig.", "16", "for", "details", ")", "." ],
-  "entity_one_indices" : [ 50, 51 ],
-  "entity_two_indices" : [ 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36 ]
-}, {
-  "sentence_tokens" : [ "As", "drivers", "turn", "off", "their", "app", ",", "the", "fare", "increases", "from", "plow", "=p", "'", "(", "2", ",", "D", ")", "with", "both", "drivers", "online", "over", "pmid", "=p", "'", "(", "1", ",", "D", ")", ">=", "plow", "as", "one", "driver", "goes", "offline", "to", "phigh", "=p", "'", "(", "0", ",", "D", ")", ">=", "pmid", "when", "both", "drivers", "withhold", "their", "service", "." ],
-  "entity_one_indices" : [ 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 ],
-  "entity_two_indices" : [ 12, 13, 14, 15, 16, 17, 18 ]
-}, {
-  "sentence_tokens" : [ "At", "high", "demand", ",", "the", "payoff", "structure", "becomes", "that", "of", "a", "trivial", "game", "without", "any", "conflict", "of", "interest", "between", "the", "drivers", "as", "both", "drivers", "always", "profit", "from", "inducing", "artificial", "supply", "shortages", "to", "earn", "the", "additional", "surge", "fee", "(", "OFF", "-", "OFF", "equilibrium", ",", "orange", ")", "." ],
-  "entity_one_indices" : [ 40, 41 ],
-  "entity_two_indices" : [ 38, 39 ]
-}, {
-  "sentence_tokens" : [ "As", "the", "demand", "becomes", "elastic", "[", "Fig.", "2b", ",", "panels", "(", "ii", ")", "and", "(", "iii", ")", "]", ",", "i.e.", "the", "demand", "decreases", "in", "response", "to", "an", "increase", "of", "the", "total", "fare", "as4D", "'", "(", "p", "'", ",", "D", ")", "=D", "(", "1", "-", "delta", "(", "p", "'", "-", "pbase", ")", ")", "governed", "by", "the", "price", "elasticity", "delta", ",", "the", "risk", "of", "missing", "out", "on", "a", "customer", "increases", "and", "profits", "due", "to", "surge", "fees", "are", "counteracted", "by", "the", "reduced", "demand", "." ],
-  "entity_one_indices" : [ 57, 58 ],
-  "entity_two_indices" : [ 44, 45 ]
-}, {
-  "sentence_tokens" : [ "While", "we", "chose", "origin", "and", "destination", "locations", "consistently", "by", "type", "for", "each", "location", ",", "rounding", "of", "the", "price", "estimates", "to", "integer", "values", "and", "granularity", "of", "reported", "trip", "duration", "may", "limit", "data", "quality", "for", "very", "short", "trips", "(", "see", "also", "Supplementary", "Table", "2", "for", "a", "detailed", "list", "of", "trips", "recorded", ")", "." ],
-  "entity_one_indices" : [ 26, 27 ],
-  "entity_two_indices" : [ 9, 10 ]
-}, {
-  "sentence_tokens" : [ "For", "these", "normalized", "time", "series", ",", "we", "compute", "the", "per", "minute", "changes", "Delta", "p", "between", "consecutive", "time", "points", "(", "time", "t", "in", "minutes", ")", ",7", "Delta", "p", "(", "t", ")", "=", "totalfare", "(", "t", ")", "basecost", "(", "t", ")", "-", "totalfare", "(", "t", "-", "1", ")", "basecost", "(", "t", "-", "1", ")", "=", "surgefee", "(", "t", ")", "basecost", "(", "t", ")", "-", "surgefee", "(", "t", "-", "1", ")", "basecost", "(", "t", "-", "1", ")", "." ],
-  "entity_one_indices" : [ 25, 26 ],
-  "entity_two_indices" : [ 12, 13 ]
-}, {
-  "sentence_tokens" : [ "We", "take", "any", "data", "point", "with", "Delta", "p", "<", "10", "to", "belong", "to", "a", "Dirac", "delta", "distribution", "at", "zero", "(", "not", "shown", "in", "the", "histograms", ")", "and", "fit", "a", "Gaussian", "mixture", "model", "with", "two", "Gaussian", "distributions", "to", "the", "remaining", "data", "." ],
-  "entity_one_indices" : [ 15, 16 ],
-  "entity_two_indices" : [ 6, 7 ]
-}, {
-  "sentence_tokens" : [ "We", "increase", "the", "round-trip", "time", "from", "the", "base", "value", "ts", "=", "30", "min", "to", "ts", "=", "60", "min", "in", "the", "morning", "and", "afternoon", "(", "starting", "at", "08:00", "and", "increasing", "linearly", "up", "to", "the", "maximum", "at", "9:30", "and", "back", "to", "the", "base", "value", "until", "11:00", "." ],
-  "entity_one_indices" : [ 40, 41 ],
-  "entity_two_indices" : [ 7, 8 ]
-}, {
-  "sentence_tokens" : [ "Similar", "to", "the", "two-player", "game", ",", "we", "take", "a", "linear", "price", "dependence", "for", "the", "surge", "pricing", "as8p", "'", "(", "t", ")", "=", "pbaseifNidle", "(", "t", ")", ">=", "Nthreshpbase+", "psurgemax1", "-", "Nidle", "(", "t", ")", "Nthreselsebased", "on", "the", "number", "N", "of", "online", "drivers", "at", "the", "trip", "origin", "and", "the", "number", "of", "drivers", "N", "before", "the", "surge", "fee", "becomes", "non", "zero", "." ],
-  "entity_one_indices" : [ 44, 45 ],
-  "entity_two_indices" : [ 27, 28, 29 ]
-} ]
+{
+  "regulations" : [ {
+    "sentence_tokens" : [ "Our", "results", "demonstrate", "that", "a", "carefully", "designed", "pricing", "scheme", "is", "essential", "to", "avoid", "unintended", "incentives", "that", "potentially", "reduce", "power", "grid", "stability", "instead", "of", "enhancing", "it.For", "mobility", "systems", "in", "particular", ",", "characterizing", "the", "incentives", "and", "the", "conditions", "that", "promote", "artificially", "induced", "price", "surges", "suggests", "specific", "actions", "to", "suppress", "their", "emergence", "." ],
+    "event_indices" : [ 19, 20, 21, 22, 23, 24, 25, 26, 27 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 19, 20 ],
+    "controlled_indices" : [ 24, 25, 26, 27 ],
+    "trigger_indices" : [ 23, 24 ],
+    "rule_name" : "Positive_activation_syntax_1_verb",
+    "rule" : null
+  } ],
+  "hardInstances" : [ ],
+  "withoutRegulations" : [ {
+    "sentence_tokens" : [ "Characterizing", "the", "contribution", "w", "of", "the", "surge", "fee", "and", "the", "magnitude", "sigma", "of", "the", "associated", "price", "changes", "with", "a", "maximum-likelihood", "Gaussian", "mixture", "model", "fit6Px", "(", "Delta", "p", ";", "sigma", "x)", "=", "12", "pi", "sigma", "x2e", "-", "Delta", "p22", "sigma", "x2with", "x", "in", "base", ",", "surge", "(", "see", "\"", "Methods", "\"", "section", "for", "details", ")", ",", "we", "find", "locations", "without", "surge", "activity", "(", "Fig.", "3b", "and", "c", ")", "as", "well", "as", "locations", "with", "strong", "but", "infrequent", "price", "surges", "(", "Fig.", "3d", ")", "." ],
+    "entities_indices" : [ [ 25, 26 ], [ 36, 37, 38 ], [ 42, 43 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "distinguish", "between", "four", "types", "of", "routes", "based", "on", "the", "origin", "location", ":", "63", "airport", ",", "23", "convention", "center", ",", "12", "train", "station", ",", "and", "39", "city", "trips", "(", "see", "Supplementary", "Note", "4", ",", "Supplementary", "Fig.", "1", ",", "and", "Supplementary", "Table", "2", "for", "detailed", "information", ",", "see", "Supplementary", "Data", "for", "precise", "GPS", "coordinates", "of", "the", "different", "routes", ")", "." ],
+    "entities_indices" : [ [ 51, 52 ] ]
+  }, {
+    "sentence_tokens" : [ "To", "compare", "and", "characterize", "the", "surge", "dynamics", "for", "different", "trips", "we", "normalize", "the", "absolute", "surge", "fee", "time", "series", "by", "the", "base", "cost", "at", "that", "time", ",", "yielding", "an", "effective", "surge", "factor", "." ],
+    "entities_indices" : [ [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "These", "base", "cost", "increase", ",", "for", "example", ",", "during", "times", "of", "heavy", "traffic", ",", "such", "as", "morning", "and", "evening", "commuting", "hours", "(", "gray", "shading", "in", "Fig.", "1b", ")", "when", "the", "trip", "duration", "Delta", "t", "increases", "due", "to", "congestion.The", "second", "component", "(", "surge", "fee", "p", ")", "implements", "Uber", "'", "s", "surge", "pricing", "algorithm", "and", "reflects", "the", "time", "evolution", "of", "supply", "-", "demand", "imbalances", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 30, 31 ], [ 32, 33 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "collected", "aircraft", "landing", "times", ",", "call", "signs", ",", "and", "type", "of", "aircraft", "using", "flightradar24", "'", "s", "open", "API", "in", "the", "corresponding", "time", "frame", ",", "as", "well", "as", "information", "on", "the", "different", "aircraft", "'", "s", "current", "seat", "configuration", "obtained", "via", "flightera.net", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 10, 11 ], [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "simulations", "shown", "in", "Fig.", "2c", "reproduce", "qualitatively", "the", "same", "non", "equilibrium", "price", "dynamics", "as", "observed", "in", "the", "recorded", "price", "data", "(", "compare", "Fig.", "1b", ")", ":", "Increases", "of", "the", "trip", "duration", "during", "commuting", "hours", "(", "gray", "shading", "in", "Fig.", "2c", ")", "are", "accompanied", "by", "a", "sustained", "supply", "-", "demand", "imbalance", "and", "surge", "fees", "without", "drivers", "turning", "off", "their", "app", "." ],
+    "entities_indices" : [ [ 30, 31 ] ]
+  }, {
+    "sentence_tokens" : [ "Since", "the", "available", "price", "estimates", "are", "rounded", "to", "integer", "values", ",", "the", "recorded", "price", "estimate", "may", "not", "reflect", "all", "changes", "of", "the", "trip", "fare", "especially", "for", "shorter", "trips", "with", "lower", "absolute", "total", "fare", "." ],
+    "entities_indices" : [ [ 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "these", "normalized", "time", "series", ",", "we", "compute", "the", "per", "minute", "changes", "Delta", "p", "between", "consecutive", "time", "points", "(", "time", "t", "in", "minutes", ")", ",7", "Delta", "p", "(", "t", ")", "=", "totalfare", "(", "t", ")", "basecost", "(", "t", ")", "-", "totalfare", "(", "t", "-", "1", ")", "basecost", "(", "t", "-", "1", ")", "=", "surgefee", "(", "t", ")", "basecost", "(", "t", ")", "-", "surgefee", "(", "t", "-", "1", ")", "basecost", "(", "t", "-", "1", ")", "." ],
+    "entities_indices" : [ [ 12, 13 ], [ 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "each", "route", ",", "we", "prompted", "total", "fare", "requests", "with", "a", "fixed", "interval", "via", "Uber", "'", "s", "price", "estimate", "API", "endpoint", "recording", "the", "price", "estimates", "for", "each", "route", "every", "2", "-", "30", "s.", "Per", "request", ",", "the", "API", "returned", "lower", "and", "upper", "total", "fare", "estimates", "for", "all", "Uber", "products", "operating", "in", "the", "local", "area", ",", "as", "well", "as", "estimated", "distance", "and", "duration", "of", "the", "trip", "which", "we", "equipped", "with", "the", "request", "timestamp", "." ],
+    "entities_indices" : [ [ 19, 20 ], [ 37, 38 ], [ 64, 65 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "base", "cost", "p", "depend", "linearly", "on", "the", "round-trip", "time", "as", "pbase", "=", "1+", "ts/2", "in", "16,31", "USD", "as", "the", "round-trip", "time", "changes", "during", "the", "day", "." ],
+    "entities_indices" : [ [ 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "airport", "fees", "or", "tolls", ")", "of", "individual", "trips", "is", "not", "available", ",", "we", "take", "surcharges", "to", "be", "constant", "for", "each", "trip", "." ],
+    "entities_indices" : [ [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "distribution", "of", "price", "changes", "separates", "into", "a", "slow", "and", "fast", "timescale", "and", "a", "contribution", "where", "the", "price", "does", "not", "change5P", "Delta", "p", "=", "wbasePbase", "Delta", "p", ";", "sigma", "base+", "wsurgePsurge", "(", "Delta", "p", ";", "sigma", "surge", ")", "+", "w0", "delta", "(", "Delta", "p", ")", "." ],
+    "entities_indices" : [ [ 21, 22 ], [ 25, 26 ], [ 28, 29, 30, 31 ], [ 32, 33 ], [ 40, 41 ], [ 42, 43 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "resulting", "small", "fluctuations", "of", "the", "surge", "fee", ",", "however", ",", "are", "not", "captured", "by", "our", "timescale", "analysis", "as", "they", "are", "still", "small", "compared", "to", "the", "base", "cost", "and", "to", "actual", "price", "surges", "." ],
+    "entities_indices" : [ [ 26, 27 ] ]
+  }, {
+    "sentence_tokens" : [ "Taking", "both", "distributions", "to", "have", "a", "mean", "of", "zero", "(", "no", "price", "change", "on", "average", ")", "yieldsProb", "Delta", "p", "=", "w0", "delta", "(", "Delta", "p", ")", "+", "wbase12", "pi", "sigma", "main2e", "-", "Delta", "p22", "sigma", "base2+", "wsurge12", "pi", "sigma", "surge2e", "-", "Delta", "p22", "sigma", "surge2where", "the", "weight", "w", "defines", "the", "surge", "contribution", "and", "the", "standard", "deviation", "sigma", "is", "the", "normalized", "surge", "strength", "used", "to", "characterize", "the", "surge", "dynamics", "." ],
+    "entities_indices" : [ [ 17, 18 ], [ 21, 22 ], [ 23, 24 ], [ 32, 33, 34 ], [ 41, 42, 43 ] ]
+  }, {
+    "sentence_tokens" : [ "While", "we", "chose", "origin", "and", "destination", "locations", "consistently", "by", "type", "for", "each", "location", ",", "rounding", "of", "the", "price", "estimates", "to", "integer", "values", "and", "granularity", "of", "reported", "trip", "duration", "may", "limit", "data", "quality", "for", "very", "short", "trips", "(", "see", "also", "Supplementary", "Table", "2", "for", "a", "detailed", "list", "of", "trips", "recorded", ")", "." ],
+    "entities_indices" : [ [ 9, 10 ], [ 26, 27 ] ]
+  }, {
+    "sentence_tokens" : [ "Similar", "to", "the", "two-player", "game", ",", "we", "take", "a", "linear", "price", "dependence", "for", "the", "surge", "pricing", "as8p", "'", "(", "t", ")", "=", "pbaseifNidle", "(", "t", ")", ">=", "Nthreshpbase+", "psurgemax1", "-", "Nidle", "(", "t", ")", "Nthreselsebased", "on", "the", "number", "N", "of", "online", "drivers", "at", "the", "trip", "origin", "and", "the", "number", "of", "drivers", "N", "before", "the", "surge", "fee", "becomes", "non", "zero", "." ],
+    "entities_indices" : [ [ 27, 28, 29 ], [ 44, 45 ] ]
+  }, {
+    "sentence_tokens" : [ "To", "estimate", "the", "surge", "fee", "time", "series", ",", "we", "subtract", "the", "base", "cost", "of", "the", "respective", "product", "from", "the", "total", "fare", "estimate", "." ],
+    "entities_indices" : [ [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "illustration", ",", "we", "take", "a", "piecewise", "linear", "price", "function", ",", "representing", "the", "simplest", "possible", "demand-supply", "response", ",", "such", "that", "drivers", "earn", "the", "total", "fare3p", "'", "(", "S", ",", "D", ")", "=", "pbaseifS", ">=", "Dpbase+", "psurgemaxD", "-", "SDelsewhen", "they", "serve", "a", "customer", ",", "where", "p", "denotes", "the", "(", "constant", ")", "base", "cost", "and", "psurgemax", "denotes", "the", "maximum", "possible", "surge", "fee", "when", "S", "=", "0", "(", "see", "\"", "Methods", "\"", "section", ",", "Supplementary", "Note", "3", "and", "Supplementary", "Fig.", "16", "for", "details", ")", "." ],
+    "entities_indices" : [ [ 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36 ], [ 50, 51 ] ]
+  }, {
+    "sentence_tokens" : [ "Based", "only", "on", "the", "price", "time", "series", ",", "we", "quantify", "the", "timescales", "of", "normalized", "price", "changes", "Delta", "p", "for", "137", "different", "routes", "in", "59", "urban", "areas", "across", "six", "continents", "(", "Fig.", "3a", ",", "see", "\"", "Methods", "\"", "section", "for", "details", ")", "." ],
+    "entities_indices" : [ [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "Uber", ",", "the", "price", "p", "of", "the", "service", "(", "the", "total", "fare", "for", "a", "ride", ")", "decomposes", "into", "two", "parts", ",", "base", "cost", "p", "and", "surge", "fee", "p", ",1", "p", "=", "pbase+", "psurge", "(", "D", ",", "S", ")", ",", "as", "illustrated", "in", "Fig.", "1b", "for", "trips", "from", "Reagan", "National", "Airport", "(", "DCA", ")", "to", "Union", "Station", "in", "Washington", ",", "DC", "(", "see", "\"", "Methods", "\"", "section", "and", "Supplementary", "Table", "1", "for", "more", "details", ")", "." ],
+    "entities_indices" : [ [ 22, 23 ], [ 60, 61 ] ]
+  }, {
+    "sentence_tokens" : [ "These", "price", "surges", "are", "meant", "to", "incentivize", "customers", "to", "delay", "their", "request", ",", "reducing", "the", "current", "demand", ",", "as", "well", "as", "to", "incentivize", "drivers", "to", "offer", "their", "service", "in", "areas", "or", "at", "times", "with", "high", "demand", ",", "increasing", "the", "supply.As", "illustrated", "in", "Fig.", "1b", ",", "during", "the", "evening", "the", "system", "settles", "to", "constant", "base", "cost", ",", "reflecting", "constant", "trip", "duration", "in", "uncongested", "traffic", "." ],
+    "entities_indices" : [ [ 53, 54 ], [ 58, 59 ] ]
+  }, {
+    "sentence_tokens" : [ "First", ",", "dynamic", "pricing", "adjusts", "the", "price", "of", "a", "product", "or", "service", "to", "compensate", "for", "changes", "in", "its", "intrinsic", "base", "cost", "." ],
+    "entities_indices" : [ [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "incentive", "structure", "is", "a", "generic", "property", "of", "the", "dynamic", "pricing", ",", "illustrated", "by", "its", "existence", "in", "this", "fundamental", "game-theoretic", "model", "and", "demonstrated", "for", "more", "than", "two", "players", "in", "Supplementary", "Fig.", "20", "and", "non", "linear", "demand", "response", "in", "Supplementary", "Fig.", "19.Moreover", ",", "these", "incentives", "are", "sufficient", "to", "explain", "anomalous", "supply", "shortages", "in", "a", "time-continuous", "game", "under", "constant", "conditions", "(", "constant", "demand", ",", "a", "constant", "number", "of", "drivers", "and", "a", "constant", "price", "elasticity", "of", "demand", ")", "where", "the", "ON", "-", "OFF-decisions", "of", "the", "drivers", ",", "reacting", "to", "the", "current", "conditions", ",", "are", "the", "only", "remaining", "dynamics", "(", "Fig.", "2c", ")", "." ],
+    "entities_indices" : [ [ 77, 78 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "may", "include", "offering", "ride", "sharing", "options", "(", "effectively", "lowering", "the", "demand", ",", "compare", "Fig.", "2b", ")", "or", "providing", "more", "or", "alternative", "public", "transport", "options", "(", "effectively", "increasing", "the", "price", "elasticity", "of", "demand", ",", "compare", "Fig.", "2b", ")", "." ],
+    "entities_indices" : [ [ 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "Base", "cost", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "subtract", "the", "pickup", "fee", "and", "trip", "fee", "from", "the", "price", "estimate", ",", "and", "take", "the", "minimum", "value", "of", "this", "remaining", "surge", "fee", "and", "surcharge", "cost", "as", "estimate", "of", "the", "surcharges", ",", "such", "that", "zero", "surge", "fee", "occurs", "at", "least", "once", "in", "the", "recorded", "price", "estimates", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "convert", "all", "price", "estimates", "to", "US", "Dollars", "based", "on", "currency", "exchange", "rates", "provided", "by", "the", "European", "Central", "Bank", "for", "the", "date", "of", "recording.In", "all", "our", "analyses", ",", "we", "work", "with", "the", "lower", "estimate", "of", "the", "local", "economy", "product", "(", "UberX", ",", "UberGO", "in", "India", ")", "." ],
+    "entities_indices" : [ [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "slow", "price", "changes", "Pbase", "Delta", "p", ";", "sigma", "base", "describe", "changes", "of", "the", "base", "cost", "varying", "as", "slowly", "as", "traffic", "conditions", "change", "during", "the", "day", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 9, 10 ], [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "Upon", "completing", "a", "trip", ",", "drivers", "return", "to", "the", "origin", "location", "after", "a", "total", "round-trip", "time", "t", "uniformly", "distributed", "in", "ts", "-", "5", ",", "ts", "+5", "minutes", "." ],
+    "entities_indices" : [ [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "take", "Nthresh", "=", "lambda", "<ts>", ",", "where", "lambda", "=", "2", "requests", "per", "minute", "describes", "the", "demand", "modeled", "as", "a", "Poisson", "process", "in", "time", "." ],
+    "entities_indices" : [ [ 2, 3, 4, 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "take", "any", "data", "point", "with", "Delta", "p", "<", "10", "to", "belong", "to", "a", "Dirac", "delta", "distribution", "at", "zero", "(", "not", "shown", "in", "the", "histograms", ")", "and", "fit", "a", "Gaussian", "mixture", "model", "with", "two", "Gaussian", "distributions", "to", "the", "remaining", "data", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "As", "the", "demand", "becomes", "elastic", "[", "Fig.", "2b", ",", "panels", "(", "ii", ")", "and", "(", "iii", ")", "]", ",", "i.e.", "the", "demand", "decreases", "in", "response", "to", "an", "increase", "of", "the", "total", "fare", "as4D", "'", "(", "p", "'", ",", "D", ")", "=D", "(", "1", "-", "delta", "(", "p", "'", "-", "pbase", ")", ")", "governed", "by", "the", "price", "elasticity", "delta", ",", "the", "risk", "of", "missing", "out", "on", "a", "customer", "increases", "and", "profits", "due", "to", "surge", "fees", "are", "counteracted", "by", "the", "reduced", "demand", "." ],
+    "entities_indices" : [ [ 44, 45 ], [ 57, 58 ] ]
+  }, {
+    "sentence_tokens" : [ "Even", "with", "the", "above", "results", ",", "a", "bottom-up", "prediction", "is", "practically", "infeasible", "since", "the", "exact", "conditions", "under", "which", "these", "dynamics", "are", "promoted", "depend", "on", "the", "specific", "details", "of", "the", "trip", ",", "the", "local", "dynamics", "of", "demand", "and", "drivers", ",", "publicly", "unavailable", "details", "on", "the", "surge", "pricing", "algorithm", "as", "well", "as", "additional", "external", "influences", "such", "as", "local", "legislation.We", "overcome", "these", "obstacles", "by", "exploiting", "the", "characteristic", "temporal", "structure", "of", "the", "surge", "dynamics", "observed", "for", "confirmed", "anomalous", "supply", "shortages", "in", "DCA", "(", "compare", "Fig.", "1b", ")", "to", "identify", "locations", "with", "similar", "dynamics", "." ],
+    "entities_indices" : [ [ 29, 30 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "fast", "price", "changes", "Psurge", "(", "Delta", "p", ";", "sigma", "surge", ")", "are", "associated", "with", "sudden", "changes", "of", "the", "surge", "fee", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "payoff", "structure", "changes", "to", "a", "stag", "hung", "with", "multiple", "Nash", "equilibria", "when", "the", "surge", "fee", "or", "the", "demand", "increases", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "To", "determine", "the", "base", "cost", "(", "sum", "of", "pickup", "fee", ",", "trip", "fee", ",", "and", "surcharges", ")", "of", "a", "trip", "we", "first", "compute", "the", "trip", "fee", "based", "on", "the", "price", "per", "mile", ",", "price", "per", "minute", ",", "and", "the", "estimated", "trip", "length", "and", "duration", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 8, 9, 10 ], [ 11, 12 ], [ 19, 20 ], [ 24, 25 ], [ 40, 41 ] ]
+  }, {
+    "sentence_tokens" : [ "Longer", "trip", "duration", "means", "that", "drivers", "spend", "more", "time", "in", "traffic", "serving", "the", "same", "number", "of", "customers", ",", "which", "effectively", "reduces", "the", "supply", "of", "available", "drivers", "compared", "to", "the", "demand", ",", "and", "causes", "an", "increase", "of", "the", "surge", "fee", "." ],
+    "entities_indices" : [ [ 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "first", "component", "(", "base", "cost", ")", "consists", "of", "regular", "fees", "for", "a", "ride2pbase", "=", "p0+", "pt", "Delta", "t+", "pl", "Delta", "l", ",", "including", "one-off", "fees", "p", "as", "well", "as", "trip", "fees", "p", "and", "p", "proportional", "to", "the", "duration", "Delta", "t", "and", "distance", "Delta", "l", "of", "the", "trip", ",", "similar", "to", "the", "fare", "for", "a", "typical", "taxi", "cab", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 17, 18 ], [ 20, 21 ], [ 30, 31 ], [ 39, 40 ], [ 43, 44 ], [ 47, 48 ], [ 56, 57, 58 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "summary", ",", "we", "quantitatively", "demonstrated", "the", "emergence", "of", "non", "equilibrium", "price", "dynamics", "in", "on-demand", "mobility", "systems", "at", "various", "locations", "across", "the", "globe", "and", "explained", "the", "fundamental", "incentive", "structure", "ultimately", "giving", "rise", "to", "such", "non", "equilibrium", "price", "dynamics.The", "exact", "conditions", "promoting", "anomalous", "supply", "shortages", "and", "artificial", "price", "surges", "depend", "on", "a", "multitude", "of", "factors", "at", "each", "location", ",", "such", "as", "users", "'", "transportation", "preferences", ",", "working", "conditions", "for", "service", "providers", ",", "local", "legislation", ",", "and", "the", "availability", "of", "alternative", "transport", "options", "." ],
+    "entities_indices" : [ [ 79, 80 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "same", "incentives", "following", "a", "combination", "of", "few", "public", "transport", "options", "and", "a", "mismatch", "in", "driver", "availability", "and", "demand", "dynamics", "may", "also", "promote", "the", "emergence", "of", "supply", "anomalies", "particularly", "in", "the", "evening", "and", "at", "nighttime", "." ],
+    "entities_indices" : [ [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "As", "drivers", "turn", "off", "their", "app", ",", "the", "fare", "increases", "from", "plow", "=p", "'", "(", "2", ",", "D", ")", "with", "both", "drivers", "online", "over", "pmid", "=p", "'", "(", "1", ",", "D", ")", ">=", "plow", "as", "one", "driver", "goes", "offline", "to", "phigh", "=p", "'", "(", "0", ",", "D", ")", ">=", "pmid", "when", "both", "drivers", "withhold", "their", "service", "." ],
+    "entities_indices" : [ [ 12, 13, 14, 15, 16, 17, 18 ], [ 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "results", "presented", "in", "the", "manuscript", "(", "Fig.", "2b", ")", "are", "obtained", "with", "normalized", "parameters", "p", "=", "1", "and", "delta", "in", "0,0.15,0.30", ",", "allowing", "up", "to", "psurgemax", "=", "1/0", ".30", "=~", "3.33", "before", "no", "customer", "orders", "a", "ride", "at", "the", "maximum", "surge", "fee", "." ],
+    "entities_indices" : [ [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "model", "responses", "of", "the", "price", "to", "the", "current", "system", "state", "(", "number", "of", "available", "drivers", "and", "round-trip", "time", ")", "as", "instantaneous.The", "behavior", "of", "customers", "and", "drivers", "is", "as", "follows", ":", "Each", "customer", "i", "is", "assigned", "a", "uniformly", "random", "maximum", "price", "pmax", ",", "i", "in", "[", "pbase", ",", "pmax", "]", "they", "are", "willing", "to", "pay", ",", "where", "we", "take", "pmax", "=", "54", "USD", "." ],
+    "entities_indices" : [ [ 59, 60, 61, 62, 63 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "increase", "the", "round-trip", "time", "from", "the", "base", "value", "ts", "=", "30", "min", "to", "ts", "=", "60", "min", "in", "the", "morning", "and", "afternoon", "(", "starting", "at", "08:00", "and", "increasing", "linearly", "up", "to", "the", "maximum", "at", "9:30", "and", "back", "to", "the", "base", "value", "until", "11:00", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 40, 41 ] ]
+  }, {
+    "sentence_tokens" : [ "At", "high", "demand", ",", "the", "payoff", "structure", "becomes", "that", "of", "a", "trivial", "game", "without", "any", "conflict", "of", "interest", "between", "the", "drivers", "as", "both", "drivers", "always", "profit", "from", "inducing", "artificial", "supply", "shortages", "to", "earn", "the", "additional", "surge", "fee", "(", "OFF", "-", "OFF", "equilibrium", ",", "orange", ")", "." ],
+    "entities_indices" : [ [ 38, 39 ], [ 40, 41 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "last", "term", "w", "delta", "(", "Delta", "p", ")", "describes", "times", "when", "the", "price", "remains", "constant", "and", "contributes", "only", "at", "Delta", "p", "=", "0", ",", "where", "delta", "represents", "the", "Dirac-Delta", "distribution", "and", "w", "the", "remaining", "weight", "w", "=", "1", "-", "w", "-", "w", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 6, 7 ], [ 20, 21 ], [ 26, 27 ] ]
+  }, {
+    "sentence_tokens" : [ "Using", "Uber", "'", "s", "products", "API", "endpoint", ",", "we", "complemented", "the", "price", "estimate", "data", "with", "information", "on", "local", "booking", "fee", ",", "price", "per", "minute", ",", "price", "per", "mile", ",", "distance", "unit", ",", "minimum", "fees", ",", "and", "the", "currency", "code", "parameter", "per", "product", "and", "location", "." ],
+    "entities_indices" : [ [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "disregard", "entries", "without", "call", "signs", "or", "real", "landing", "times", "." ],
+    "entities_indices" : [ [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "Importantly", ",", "our", "results", "suggest", "that", "limiting", "the", "maximum", "surge", "fee", ",", "as", "done", "in", "response", "to", "the", "initial", "reports", "from", "DCA", "(", "see", "Fig.", "1b", ")", "and", "frequently", "discussed", "as", "potential", "legislation", "(", "compare", "Chennai", ",", "Fig.", "4", ")", ",", "is", "not", "an", "effective", "response", "and", "may", "even", "result", "in", "the", "opposite", "effect", "if", "the", "demand", "is", "highly", "elastic.In", "general", ",", "with", "the", "emergence", "of", "digital", "platforms", ",", "sharing", "economies", "and", "autonomous", "vehicle", "fleets", ",", "mobility", "services", "and", "other", "industries", "are", "becoming", "increasingly", "self", "organized", "and", "complex", "such", "that", "new", ",", "potentially", "unintended", "collective", "dynamics", "can", "emerge", "." ],
+    "entities_indices" : [ [ 35, 36 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "add", "the", "pickup", "fee", "obtained", "from", "the", "Uber", "products", "API", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  } ],
+  "emptySentences" : [ {
+    "sentence_tokens" : [ "Anomalous", "supply", "shortages", "from", "dynamic", "pricing", "in", "on-demand", "mobility", "." ]
+  }, {
+    "sentence_tokens" : [ "Dynamic", "pricing", "schemes", "are", "increasingly", "employed", "across", "industries", "to", "maintain", "a", "self", "organized", "balance", "of", "demand", "and", "supply", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "throughout", "complex", "dynamical", "systems", ",", "unintended", "collective", "states", "exist", "that", "may", "compromise", "their", "function", "." ]
+  }, {
+    "sentence_tokens" : [ "Here", "we", "reveal", "how", "dynamic", "pricing", "may", "induce", "demand-supply", "imbalances", "instead", "of", "preventing", "them", "." ]
+  }, {
+    "sentence_tokens" : [ "Combining", "game", "theory", "and", "time", "series", "analysis", "of", "dynamic", "pricing", "data", "from", "on-demand", "ride", "hailing", "services", ",", "we", "explain", "this", "apparent", "contradiction", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "derive", "a", "phase", "diagram", "demonstrating", "how", "and", "under", "which", "conditions", "dynamic", "pricing", "incentivizes", "collective", "action", "of", "ride", "hailing", "drivers", "to", "induce", "anomalous", "supply", "shortages", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "identify", "characteristic", "patterns", "in", "the", "price", "dynamics", "reflecting", "these", "supply", "anomalies", "by", "disentangling", "different", "timescales", "in", "price", "time", "series", "of", "ride", "hailing", "services", "at", "137", "locations", "across", "the", "globe", "." ]
+  }, {
+    "sentence_tokens" : [ "Our", "results", "provide", "systemic", "insights", "for", "the", "regulation", "of", "dynamic", "pricing", ",", "in", "particular", "in", "publicly", "accessible", "mobility", "systems", ",", "by", "unraveling", "under", "which", "conditions", "dynamic", "pricing", "schemes", "promote", "anomalous", "supply", "shortages", "." ]
+  }, {
+    "sentence_tokens" : [ "Introduction", "." ]
+  }, {
+    "sentence_tokens" : [ "Complex", "engineered", "systems", "are", "known", "to", "exhibit", "unintended", "states", "in", "their", "collective", "dynamics", "that", "often", "disrupt", "their", "function", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "complex", "mobility", "systems", ",", "examples", "include", "the", "emergence", "of", "congestion", ",", "anomalous", "random", "walks", "in", "human", "travel", "patterns", ",", "and", "cascading", "failures", "of", "mobility", "networks", "." ]
+  }, {
+    "sentence_tokens" : [ "As", "urban", "mobility", "becomes", "more", "and", "more", "self", "organized", "and", "digitized", ",", "mobility", "services", "increasingly", "employ", "dynamic", "pricing", ",", "in", "general", "serving", "two", "main", "purposes", "(", "Fig.", "1a", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "First", ",", "dynamic", "pricing", "adjusts", "the", "price", "of", "a", "product", "or", "service", "to", "compensate", "for", "changes", "in", "its", "intrinsic", "base", "cost", "." ]
+  }, {
+    "sentence_tokens" : [ "Second", ",", "it", "creates", "incentives", "for", "all", "market", "participants", "to", "equilibrate", "demand", "-", "supply", "imbalances", "by", "increasing", "the", "price", "if", "demand", "exceeds", "supply", "and", "vice", "versa", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "higher", "price", "both", "imposes", "higher", "costs", "to", "customers", "incentivizing", "them", "to", "decrease", "their", "demand", "and", ",", "at", "the", "same", "time", ",", "offers", "higher", "profit", "for", "identical", "service", "to", "suppliers", ",", "in", "turn", "motivating", "them", "to", "increase", "their", "supply", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "recent", "reports", "on", "on-demand", "ride", "hailing", "indicate", "that", "dynamic", "pricing", "may", "have", "the", "opposite", "effect", "and", "instead", "cause", "demand", "-", "supply", "imbalances.Here", ",", "we", "quantitatively", "demonstrate", "the", "existence", "of", "these", "imbalances", "by", "comparing", "price", "time", "series", "and", "demand", "estimates", "for", "ride", "hailing", "services", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "a", "game", "theoretic", "analysis", "we", "reveal", "the", "incentive", "structure", "for", "drivers", "to", "induce", "anomalous", "supply", "shortages", "as", "a", "generic", "feature", "of", "dynamic", "pricing", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "observation", "suggests", "that", "similar", "dynamics", "should", "emerge", "independent", "of", "the", "location", "or", "industry", "." ]
+  }, {
+    "sentence_tokens" : [ "Comparing", "price", "time", "series", "for", "137", "locations", "in", "59", "urban", "areas", "across", "six", "continents", "we", "find", "price", "dynamics", "reflecting", "anomalous", "supply", "shortages", "in", "several", "cities", "around", "the", "world", "." ]
+  }, {
+    "sentence_tokens" : [ "Results", "." ]
+  }, {
+    "sentence_tokens" : [ "Dynamic", "pricing", "in", "on-demand", "mobility", "." ]
+  }, {
+    "sentence_tokens" : [ "Dynamic", "pricing", "schemes", "are", "commonly", "applied", "by", "on-demand", "mobility", "service", "providers", ",", "such", "as", "Lyft", "and", "Uber", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "Uber", ",", "the", "price", "p", "of", "the", "service", "(", "the", "total", "fare", "for", "a", "ride", ")", "decomposes", "into", "two", "parts", ",", "base", "cost", "p", "and", "surge", "fee", "p", ",1", "p", "=", "pbase+", "psurge", "(", "D", ",", "S", ")", ",", "as", "illustrated", "in", "Fig.", "1b", "for", "trips", "from", "Reagan", "National", "Airport", "(", "DCA", ")", "to", "Union", "Station", "in", "Washington", ",", "DC", "(", "see", "\"", "Methods", "\"", "section", "and", "Supplementary", "Table", "1", "for", "more", "details", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "first", "component", "(", "base", "cost", ")", "consists", "of", "regular", "fees", "for", "a", "ride2pbase", "=", "p0+", "pt", "Delta", "t+", "pl", "Delta", "l", ",", "including", "one-off", "fees", "p", "as", "well", "as", "trip", "fees", "p", "and", "p", "proportional", "to", "the", "duration", "Delta", "t", "and", "distance", "Delta", "l", "of", "the", "trip", ",", "similar", "to", "the", "fare", "for", "a", "typical", "taxi", "cab", "." ]
+  }, {
+    "sentence_tokens" : [ "These", "base", "cost", "increase", ",", "for", "example", ",", "during", "times", "of", "heavy", "traffic", ",", "such", "as", "morning", "and", "evening", "commuting", "hours", "(", "gray", "shading", "in", "Fig.", "1b", ")", "when", "the", "trip", "duration", "Delta", "t", "increases", "due", "to", "congestion.The", "second", "component", "(", "surge", "fee", "p", ")", "implements", "Uber", "'", "s", "surge", "pricing", "algorithm", "and", "reflects", "the", "time", "evolution", "of", "supply", "-", "demand", "imbalances", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "surge", "fee", "increases", "due", "to", "persistent", "supply", "-", "demand", "imbalance", "during", "commuting", "hours", "." ]
+  }, {
+    "sentence_tokens" : [ "Longer", "trip", "duration", "means", "that", "drivers", "spend", "more", "time", "in", "traffic", "serving", "the", "same", "number", "of", "customers", ",", "which", "effectively", "reduces", "the", "supply", "of", "available", "drivers", "compared", "to", "the", "demand", ",", "and", "causes", "an", "increase", "of", "the", "surge", "fee", "." ]
+  }, {
+    "sentence_tokens" : [ "These", "price", "surges", "are", "meant", "to", "incentivize", "customers", "to", "delay", "their", "request", ",", "reducing", "the", "current", "demand", ",", "as", "well", "as", "to", "incentivize", "drivers", "to", "offer", "their", "service", "in", "areas", "or", "at", "times", "with", "high", "demand", ",", "increasing", "the", "supply.As", "illustrated", "in", "Fig.", "1b", ",", "during", "the", "evening", "the", "system", "settles", "to", "constant", "base", "cost", ",", "reflecting", "constant", "trip", "duration", "in", "uncongested", "traffic", "." ]
+  }, {
+    "sentence_tokens" : [ "Yet", ",", "even", "under", "these", "apparent", "equilibrium", "conditions", ",", "the", "time", "evolution", "of", "the", "surge", "fee", "exhibits", "a", "series", "of", "short", ",", "repeated", "price", "surges", "(", "dashed", "box", "in", "Fig.", "1b", ")", "that", "are", "not", "reflected", "in", "the", "demand", "dynamics", "(", "Fig.", "1c", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "fact", ",", "recent", "reports", "about", "driver", "behavior", "at", "DCA", "indicate", "that", "drivers", "collaboratively", "stimulate", "price", "surges", "in", "the", "evening", "hours", "by", "temporarily", "switching", "off", "their", "app", "." ]
+  }, {
+    "sentence_tokens" : [ "Thereby", ",", "they", "cause", "artificial", "supply", "shortages", ",", "implying", "supply-side-induced", "out-of-equilibrium", "price", "dynamics", "at", "this", "airport", "consistent", "with", "our", "observations.Using", "the", "observed", "price", "surges", "of", "confirmed", "anomalous", "supply", "shortages", "at", "DCA", "as", "a", "reference", "case", ",", "we", "address", "two", "key", "questions", ":", "First", ",", "what", "are", "the", "underlying", "incentives", "causing", "drivers", "to", "induce", "anomalous", "supply", "shortages", "and", "under", "which", "conditions", "do", "they", "emerge", "?" ]
+  }, {
+    "sentence_tokens" : [ "Second", ",", "do", "these", "non", "equilibrium", "dynamics", "emerge", "at", "other", "locations", "as", "well", "and", "how", "can", "we", "identify", "them", "without", "direct", "observation", "?" ]
+  }, {
+    "sentence_tokens" : [ "Incentives", "promoting", "anomalous", "supply", "shortages", "." ]
+  }, {
+    "sentence_tokens" : [ "While", "the", "specific", "conditions", "promoting", "artificial", "price", "surges", "depend", "on", "local", "details", "and", "demand", "dynamics", ",", "a", "first", "principles", "game", "theoretic", "description", "captures", "fundamental", "incentives", "underlying", "the", "anomalous", "supply", "shortages", ":", "S", "=", "2", "drivers", "are", "competing", "for", "a", "fixed", "demand", "D", "aiming", "to", "maximize", "their", "expected", "profit", "(", "Fig.", "2a", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "illustration", ",", "we", "take", "a", "piecewise", "linear", "price", "function", ",", "representing", "the", "simplest", "possible", "demand-supply", "response", ",", "such", "that", "drivers", "earn", "the", "total", "fare3p", "'", "(", "S", ",", "D", ")", "=", "pbaseifS", ">=", "Dpbase+", "psurgemaxD", "-", "SDelsewhen", "they", "serve", "a", "customer", ",", "where", "p", "denotes", "the", "(", "constant", ")", "base", "cost", "and", "psurgemax", "denotes", "the", "maximum", "possible", "surge", "fee", "when", "S", "=", "0", "(", "see", "\"", "Methods", "\"", "section", ",", "Supplementary", "Note", "3", "and", "Supplementary", "Fig.", "16", "for", "details", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Each", "driver", "has", "the", "option", "to", "temporarily", "not", "offer", "their", "service", ",", "contributing", "to", "an", "artificial", "supply", "shortage", ",", "S", "<", "2", "." ]
+  }, {
+    "sentence_tokens" : [ "As", "drivers", "turn", "off", "their", "app", ",", "the", "fare", "increases", "from", "plow", "=p", "'", "(", "2", ",", "D", ")", "with", "both", "drivers", "online", "over", "pmid", "=p", "'", "(", "1", ",", "D", ")", ">=", "plow", "as", "one", "driver", "goes", "offline", "to", "phigh", "=p", "'", "(", "0", ",", "D", ")", ">=", "pmid", "when", "both", "drivers", "withhold", "their", "service", "." ]
+  }, {
+    "sentence_tokens" : [ "While", "drivers", "who", "do", "not", "offer", "their", "service", "would", "typically", "miss", "out", "on", "a", "customer", ",", "the", "use", "of", "online", "mobile", "applications", "in", "most", "ride", "hailing", "services", "enables", "them", "to", "quickly", "change", "their", "decision", "." ]
+  }, {
+    "sentence_tokens" : [ "Turning", "their", "app", "back", "on", ",", "they", "can", "capitalize", "on", "the", "additional", "surge", "fee", "and", "earn", "the", "higher", "total", "fare", "by", "quickly", "accepting", "a", "customer", "before", "the", "dynamic", "pricing", "algorithm", "reacts", "(", "Fig.", "2a", ",", "see", "\"", "Methods", "\"", "section", "for", "details", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Figure", "2b", "illustrates", "the", "phase", "diagram", "of", "the", "resulting", "Nash", "equilibria", "." ]
+  }, {
+    "sentence_tokens" : [ "When", "the", "demand", "is", "inelastic", "and", "does", "not", "change", "as", "the", "price", "increases", "[", "Fig.", "2b", ",", "panel", "(", "i", ")", "]", ",", "at", "low", "demand", "and", "low", "surge", "fee", "the", "payoff", "structure", "of", "the", "game", "resembles", "a", "prisoner", "'", "s", "dilemma", ",", "describing", "a", "conflict", "of", "interest", "between", "the", "drivers", "." ]
+  }, {
+    "sentence_tokens" : [ "While", "the", "socially", "optimal", "strategy", "for", "both", "drivers", "is", "to", "go", "offline", ",", "maximizing", "their", "total", "profit", ",", "each", "driver", "individually", "profits", "more", "from", "remaining", "online", "." ]
+  }, {
+    "sentence_tokens" : [ "Consequently", ",", "both", "drivers", "remain", "online", "due", "to", "the", "high", "risk", "of", "completely", "missing", "out", "on", "a", "customer", "if", "the", "other", "driver", "remains", "online", "(", "ON", "-", "ON", "equilibrium", ",", "green", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "payoff", "structure", "changes", "to", "a", "stag", "hung", "with", "multiple", "Nash", "equilibria", "when", "the", "surge", "fee", "or", "the", "demand", "increases", "." ]
+  }, {
+    "sentence_tokens" : [ "If", "both", "drivers", "are", "online", ",", "neither", "profits", "individually", "from", "going", "offline", ",", "and", "vice-versa", "if", "both", "drivers", "are", "offline", "." ]
+  }, {
+    "sentence_tokens" : [ "Depending", "on", "the", "trust", "between", "the", "drivers", ",", "they", "settle", "into", "either", "an", "on", "-", "on", "(", "risk-averse", ")", "or", "an", "off", "-", "off", "(", "payoff", "dominant", "and", "socially", "optimal", ")", "Nash", "equilibrium", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "regime", ",", "an", "additional", "mixed", "strategy", "Nash", "equilibrium", "also", "exists", ",", "where", "both", "drivers", "go", "offline", "with", "a", "certain", "probability", "." ]
+  }, {
+    "sentence_tokens" : [ "At", "high", "demand", ",", "the", "payoff", "structure", "becomes", "that", "of", "a", "trivial", "game", "without", "any", "conflict", "of", "interest", "between", "the", "drivers", "as", "both", "drivers", "always", "profit", "from", "inducing", "artificial", "supply", "shortages", "to", "earn", "the", "additional", "surge", "fee", "(", "OFF", "-", "OFF", "equilibrium", ",", "orange", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "As", "the", "demand", "becomes", "elastic", "[", "Fig.", "2b", ",", "panels", "(", "ii", ")", "and", "(", "iii", ")", "]", ",", "i.e.", "the", "demand", "decreases", "in", "response", "to", "an", "increase", "of", "the", "total", "fare", "as4D", "'", "(", "p", "'", ",", "D", ")", "=D", "(", "1", "-", "delta", "(", "p", "'", "-", "pbase", ")", ")", "governed", "by", "the", "price", "elasticity", "delta", ",", "the", "risk", "of", "missing", "out", "on", "a", "customer", "increases", "and", "profits", "due", "to", "surge", "fees", "are", "counteracted", "by", "the", "reduced", "demand", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "a", "sufficiently", "strong", "demand", "response", "(", "high", "elasticity", ")", ",", "the", "game", "setting", "effectively", "changes", "to", "low", "demand", "conditions", "when", "a", "single", "driver", "goes", "offline", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "game", "becomes", "a", "prisoner", "'", "s", "dilemma", "or", "a", "trivial", "game", "where", "both", "drivers", "remain", "online", "(", "green", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Consequently", ",", "the", "parameter", "region", "where", "drivers", "are", "incentivized", "to", "switch", "off", "their", "app", "(", "orange", ")", "shrinks", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "particular", ",", "drivers", "are", "more", "strongly", "incentivized", "to", "create", "artificial", "price", "surges", "when", "the", "maximum", "surge", "fee", "is", "small", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "intermediate", "conditions", ",", "a", "new", "state", "of", "partial", "supply", "shortages", "emerges", ",", "where", "only", "one", "of", "the", "two", "drivers", "goes", "offline", "(", "red-blue-hatched", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "incentive", "structure", "is", "a", "generic", "property", "of", "the", "dynamic", "pricing", ",", "illustrated", "by", "its", "existence", "in", "this", "fundamental", "game-theoretic", "model", "and", "demonstrated", "for", "more", "than", "two", "players", "in", "Supplementary", "Fig.", "20", "and", "non", "linear", "demand", "response", "in", "Supplementary", "Fig.", "19.Moreover", ",", "these", "incentives", "are", "sufficient", "to", "explain", "anomalous", "supply", "shortages", "in", "a", "time-continuous", "game", "under", "constant", "conditions", "(", "constant", "demand", ",", "a", "constant", "number", "of", "drivers", "and", "a", "constant", "price", "elasticity", "of", "demand", ")", "where", "the", "ON", "-", "OFF-decisions", "of", "the", "drivers", ",", "reacting", "to", "the", "current", "conditions", ",", "are", "the", "only", "remaining", "dynamics", "(", "Fig.", "2c", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Drivers", "contribute", "to", "an", "artificial", "supply", "shortage", "if", "sufficiently", "many", "other", "idle", "drivers", "are", "willing", "to", "also", "participate", ",", "following", "their", "mean-field", "optimal", "strategy", "." ]
+  }, {
+    "sentence_tokens" : [ "To", "avoid", "never", "making", "profit", ",", "however", ",", "individual", "drivers", "remain", "offline", "only", "for", "a", "short", "amount", "of", "time", ",", "explicitly", "limiting", "the", "timescale", "of", "potential", "artificial", "price", "surges", "(", "see", "\"", "Methods", "\"", "section", "and", "Supplementary", "Note", "3", "for", "details", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "simulations", "shown", "in", "Fig.", "2c", "reproduce", "qualitatively", "the", "same", "non", "equilibrium", "price", "dynamics", "as", "observed", "in", "the", "recorded", "price", "data", "(", "compare", "Fig.", "1b", ")", ":", "Increases", "of", "the", "trip", "duration", "during", "commuting", "hours", "(", "gray", "shading", "in", "Fig.", "2c", ")", "are", "accompanied", "by", "a", "sustained", "supply", "-", "demand", "imbalance", "and", "surge", "fees", "without", "drivers", "turning", "off", "their", "app", "." ]
+  }, {
+    "sentence_tokens" : [ "At", "other", "times", ",", "the", "drivers", "create", "short", ",", "artificial", "price", "surges", "to", "maximize", "their", "profit", "." ]
+  }, {
+    "sentence_tokens" : [ "Identifying", "characteristic", "price", "dynamics", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "fact", "that", "these", "incentives", "are", "generic", "to", "dynamic", "pricing", "schemes", "suggests", "that", "artificial", "supply", "shortages", "and", "non", "equilibrium", "surge", "dynamics", "emerge", "independent", "of", "the", "location", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "direct", "observation", "of", "the", "supply", "dynamics", ",", "e.g", "." ]
+  }, {
+    "sentence_tokens" : [ "of", "the", "number", "and", "location", "of", "online", "drivers", ",", "is", "typically", "impossible", "as", "this", "information", "is", "not", "publicly", "available", "." ]
+  }, {
+    "sentence_tokens" : [ "Even", "with", "the", "above", "results", ",", "a", "bottom-up", "prediction", "is", "practically", "infeasible", "since", "the", "exact", "conditions", "under", "which", "these", "dynamics", "are", "promoted", "depend", "on", "the", "specific", "details", "of", "the", "trip", ",", "the", "local", "dynamics", "of", "demand", "and", "drivers", ",", "publicly", "unavailable", "details", "on", "the", "surge", "pricing", "algorithm", "as", "well", "as", "additional", "external", "influences", "such", "as", "local", "legislation.We", "overcome", "these", "obstacles", "by", "exploiting", "the", "characteristic", "temporal", "structure", "of", "the", "surge", "dynamics", "observed", "for", "confirmed", "anomalous", "supply", "shortages", "in", "DCA", "(", "compare", "Fig.", "1b", ")", "to", "identify", "locations", "with", "similar", "dynamics", "." ]
+  }, {
+    "sentence_tokens" : [ "Based", "only", "on", "the", "price", "time", "series", ",", "we", "quantify", "the", "timescales", "of", "normalized", "price", "changes", "Delta", "p", "for", "137", "different", "routes", "in", "59", "urban", "areas", "across", "six", "continents", "(", "Fig.", "3a", ",", "see", "\"", "Methods", "\"", "section", "for", "details", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "distribution", "of", "price", "changes", "separates", "into", "a", "slow", "and", "fast", "timescale", "and", "a", "contribution", "where", "the", "price", "does", "not", "change5P", "Delta", "p", "=", "wbasePbase", "Delta", "p", ";", "sigma", "base+", "wsurgePsurge", "(", "Delta", "p", ";", "sigma", "surge", ")", "+", "w0", "delta", "(", "Delta", "p", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "slow", "price", "changes", "Pbase", "Delta", "p", ";", "sigma", "base", "describe", "changes", "of", "the", "base", "cost", "varying", "as", "slowly", "as", "traffic", "conditions", "change", "during", "the", "day", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "fast", "price", "changes", "Psurge", "(", "Delta", "p", ";", "sigma", "surge", ")", "are", "associated", "with", "sudden", "changes", "of", "the", "surge", "fee", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "last", "term", "w", "delta", "(", "Delta", "p", ")", "describes", "times", "when", "the", "price", "remains", "constant", "and", "contributes", "only", "at", "Delta", "p", "=", "0", ",", "where", "delta", "represents", "the", "Dirac-Delta", "distribution", "and", "w", "the", "remaining", "weight", "w", "=", "1", "-", "w", "-", "w", "." ]
+  }, {
+    "sentence_tokens" : [ "Characterizing", "the", "contribution", "w", "of", "the", "surge", "fee", "and", "the", "magnitude", "sigma", "of", "the", "associated", "price", "changes", "with", "a", "maximum-likelihood", "Gaussian", "mixture", "model", "fit6Px", "(", "Delta", "p", ";", "sigma", "x)", "=", "12", "pi", "sigma", "x2e", "-", "Delta", "p22", "sigma", "x2with", "x", "in", "base", ",", "surge", "(", "see", "\"", "Methods", "\"", "section", "for", "details", ")", ",", "we", "find", "locations", "without", "surge", "activity", "(", "Fig.", "3b", "and", "c", ")", "as", "well", "as", "locations", "with", "strong", "but", "infrequent", "price", "surges", "(", "Fig.", "3d", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Importantly", ",", "we", "also", "identify", "several", "locations", "with", "price", "change", "characteristics", "similar", "to", "those", "observed", "at", "DCA", ",", "with", "a", "high", "magnitude", "and", "contribution", "of", "surge", "price", "changes", ",", "suggesting", "strong", "and", "frequent", "price", "surges", "potentially", "driven", "by", "anomalous", "supply", "dynamics", "(", "compare", "Fig.", "3e", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Indeed", ",", "all", "of", "the", "identified", "locations", "exhibit", "qualitatively", "similar", "non", "equilibrium", "surge", "fee", "dynamics", "with", "a", "large", "number", "of", "repeated", "price", "surges", ",", "in", "particular", "during", "evening", "hours", ",", "demonstrating", "that", "the", "phenomenon", "is", "ubiquitous", "(", "Fig.", "4", ",", "see", "Supplementary", "Figs", "." ]
+  }, {
+    "sentence_tokens" : [ "14", "and", "15", "for", "additional", "examples", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "While", "these", "results", "do", "not", "directly", "imply", "that", "all", "price", "surges", "at", "these", "locations", "are", "induced", "artificially", ",", "both", "the", "similarity", "of", "the", "timescale", "separation", "to", "confirmed", "artificial", "price", "surges", "and", "the", "universality", "of", "the", "incentives", "for", "drivers", "provide", "evidence", "supporting", "this", "conclusion", "." ]
+  }, {
+    "sentence_tokens" : [ "Discussion", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "summary", ",", "we", "quantitatively", "demonstrated", "the", "emergence", "of", "non", "equilibrium", "price", "dynamics", "in", "on-demand", "mobility", "systems", "at", "various", "locations", "across", "the", "globe", "and", "explained", "the", "fundamental", "incentive", "structure", "ultimately", "giving", "rise", "to", "such", "non", "equilibrium", "price", "dynamics.The", "exact", "conditions", "promoting", "anomalous", "supply", "shortages", "and", "artificial", "price", "surges", "depend", "on", "a", "multitude", "of", "factors", "at", "each", "location", ",", "such", "as", "users", "'", "transportation", "preferences", ",", "working", "conditions", "for", "service", "providers", ",", "local", "legislation", ",", "and", "the", "availability", "of", "alternative", "transport", "options", "." ]
+  }, {
+    "sentence_tokens" : [ "Our", "methodology", "to", "classify", "the", "price", "dynamics", "based", "on", "the", "separation", "of", "timescales", "of", "price", "changes", ",", "without", "explicit", "knowledge", "about", "the", "time", "resolved", "demand", "and", "supply", "evolution", ",", "enables", "a", "systematic", "search", "for", "supply", "anomalies", "based", "on", "price", "time", "series", "only", "." ]
+  }, {
+    "sentence_tokens" : [ "Although", "a", "direct", "observation", "of", "the", "supply", "dynamics", "may", "be", "required", "to", "confirm", "anomalous", "supply", "shortages", ",", "we", "identify", "a", "number", "of", "locations", "likely", "exhibiting", "anomalous", "supply", "shortages", "by", "combining", "confirmed", "reports", "and", "quantitative", "observations", "for", "reference", "cases", ",", "game-theoretically", "revealed", "generic", "incentive", "structures", "and", "large-scale", "time", "series", "analysis", "of", "recorded", "price", "estimates.Our", "theoretical", "model", "demonstrates", "that", "the", "underlying", "incentives", "are", "a", "generic", "property", "of", "dynamic", "pricing", "and", "should", "even", "apply", "across", "industries", "where", "prices", "are", "adapted", "to", "supply", "and", "demand", "fluctuations", "on", "short", "timescales", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "is", "particularly", "relevant", "for", "applications", "where", "prices", "are", "prescribed", "by", "an", "external", "algorithm", "instead", "of", "market", "clearing", "prices", "of", "buy", "and", "sell", "offers", "." ]
+  }, {
+    "sentence_tokens" : [ "One", "contemporary", "example", "may", "be", "recently", "discussed", "smart", "pricing", "schemes", "in", "power", "grids", ",", "especially", "since", "large", "parts", "of", "the", "demand", "are", "inelastic", "due", "to", "fixed", "daily", "routines", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "may", "include", "offering", "ride", "sharing", "options", "(", "effectively", "lowering", "the", "demand", ",", "compare", "Fig.", "2b", ")", "or", "providing", "more", "or", "alternative", "public", "transport", "options", "(", "effectively", "increasing", "the", "price", "elasticity", "of", "demand", ",", "compare", "Fig.", "2b", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "same", "incentives", "following", "a", "combination", "of", "few", "public", "transport", "options", "and", "a", "mismatch", "in", "driver", "availability", "and", "demand", "dynamics", "may", "also", "promote", "the", "emergence", "of", "supply", "anomalies", "particularly", "in", "the", "evening", "and", "at", "nighttime", "." ]
+  }, {
+    "sentence_tokens" : [ "Importantly", ",", "our", "results", "suggest", "that", "limiting", "the", "maximum", "surge", "fee", ",", "as", "done", "in", "response", "to", "the", "initial", "reports", "from", "DCA", "(", "see", "Fig.", "1b", ")", "and", "frequently", "discussed", "as", "potential", "legislation", "(", "compare", "Chennai", ",", "Fig.", "4", ")", ",", "is", "not", "an", "effective", "response", "and", "may", "even", "result", "in", "the", "opposite", "effect", "if", "the", "demand", "is", "highly", "elastic.In", "general", ",", "with", "the", "emergence", "of", "digital", "platforms", ",", "sharing", "economies", "and", "autonomous", "vehicle", "fleets", ",", "mobility", "services", "and", "other", "industries", "are", "becoming", "increasingly", "self", "organized", "and", "complex", "such", "that", "new", ",", "potentially", "unintended", "collective", "dynamics", "can", "emerge", "." ]
+  }, {
+    "sentence_tokens" : [ "Our", "results", "provide", "conceptual", "insights", "into", "these", "dynamics", "and", "may", "thereby", "support", "the", "creation", "and", "regulation", "of", "fair", ",", "efficient", "and", "transparent", "publicly", "available", "mobility", "services", "." ]
+  }, {
+    "sentence_tokens" : [ "Methods", "." ]
+  }, {
+    "sentence_tokens" : [ "Data", "sources", "and", "acquisition", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "work", ",", "we", "have", "recorded", "~", "28", "million", "ride", "hailing", "price", "estimates", "for", "137", "routes", "of", "Uber", "rides", "in", "59", "urban", "areas", "across", "six", "continents", "between", "31-05-2019", "and", "25-06-2019", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "distinguish", "between", "four", "types", "of", "routes", "based", "on", "the", "origin", "location", ":", "63", "airport", ",", "23", "convention", "center", ",", "12", "train", "station", ",", "and", "39", "city", "trips", "(", "see", "Supplementary", "Note", "4", ",", "Supplementary", "Fig.", "1", ",", "and", "Supplementary", "Table", "2", "for", "detailed", "information", ",", "see", "Supplementary", "Data", "for", "precise", "GPS", "coordinates", "of", "the", "different", "routes", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "each", "route", ",", "we", "prompted", "total", "fare", "requests", "with", "a", "fixed", "interval", "via", "Uber", "'", "s", "price", "estimate", "API", "endpoint", "recording", "the", "price", "estimates", "for", "each", "route", "every", "2", "-", "30", "s.", "Per", "request", ",", "the", "API", "returned", "lower", "and", "upper", "total", "fare", "estimates", "for", "all", "Uber", "products", "operating", "in", "the", "local", "area", ",", "as", "well", "as", "estimated", "distance", "and", "duration", "of", "the", "trip", "which", "we", "equipped", "with", "the", "request", "timestamp", "." ]
+  }, {
+    "sentence_tokens" : [ "Using", "Uber", "'", "s", "products", "API", "endpoint", ",", "we", "complemented", "the", "price", "estimate", "data", "with", "information", "on", "local", "booking", "fee", ",", "price", "per", "minute", ",", "price", "per", "mile", ",", "distance", "unit", ",", "minimum", "fees", ",", "and", "the", "currency", "code", "parameter", "per", "product", "and", "location", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "convert", "all", "price", "estimates", "to", "US", "Dollars", "based", "on", "currency", "exchange", "rates", "provided", "by", "the", "European", "Central", "Bank", "for", "the", "date", "of", "recording.In", "all", "our", "analyses", ",", "we", "work", "with", "the", "lower", "estimate", "of", "the", "local", "economy", "product", "(", "UberX", ",", "UberGO", "in", "India", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Data", "quality", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "consider", "the", "data", "reliable", "because", "of", "the", "generally", "good", "availability", "of", "Uber", "'", "s", "service", "." ]
+  }, {
+    "sentence_tokens" : [ "Almost", "all", "data", "points", "are", "recorded", "with", "sub-minute", "intervals", ",", "most", "on", "an", "even", "finer", "scale", "." ]
+  }, {
+    "sentence_tokens" : [ "Individual", "locations", "have", "single", "gaps", "of", "up", "to", "18", "min", "between", "two", "recordings", ",", "though", "these", "are", "single", "occurrences", "out", "of", "a", "total", "3", "-", "7", "days", "of", "observations", "per", "location", "and", "thus", "do", "not", "affect", "the", "overall", "statistical", "analysis", "." ]
+  }, {
+    "sentence_tokens" : [ "While", "we", "chose", "origin", "and", "destination", "locations", "consistently", "by", "type", "for", "each", "location", ",", "rounding", "of", "the", "price", "estimates", "to", "integer", "values", "and", "granularity", "of", "reported", "trip", "duration", "may", "limit", "data", "quality", "for", "very", "short", "trips", "(", "see", "also", "Supplementary", "Table", "2", "for", "a", "detailed", "list", "of", "trips", "recorded", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "resulting", "small", "fluctuations", "of", "the", "surge", "fee", ",", "however", ",", "are", "not", "captured", "by", "our", "timescale", "analysis", "as", "they", "are", "still", "small", "compared", "to", "the", "base", "cost", "and", "to", "actual", "price", "surges", "." ]
+  }, {
+    "sentence_tokens" : [ "Base", "cost", "." ]
+  }, {
+    "sentence_tokens" : [ "To", "determine", "the", "base", "cost", "(", "sum", "of", "pickup", "fee", ",", "trip", "fee", ",", "and", "surcharges", ")", "of", "a", "trip", "we", "first", "compute", "the", "trip", "fee", "based", "on", "the", "price", "per", "mile", ",", "price", "per", "minute", ",", "and", "the", "estimated", "trip", "length", "and", "duration", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "add", "the", "pickup", "fee", "obtained", "from", "the", "Uber", "products", "API", "." ]
+  }, {
+    "sentence_tokens" : [ "Since", "data", "on", "the", "surcharges", "(", "e.g", "." ]
+  }, {
+    "sentence_tokens" : [ "airport", "fees", "or", "tolls", ")", "of", "individual", "trips", "is", "not", "available", ",", "we", "take", "surcharges", "to", "be", "constant", "for", "each", "trip", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "subtract", "the", "pickup", "fee", "and", "trip", "fee", "from", "the", "price", "estimate", ",", "and", "take", "the", "minimum", "value", "of", "this", "remaining", "surge", "fee", "and", "surcharge", "cost", "as", "estimate", "of", "the", "surcharges", ",", "such", "that", "zero", "surge", "fee", "occurs", "at", "least", "once", "in", "the", "recorded", "price", "estimates", "." ]
+  }, {
+    "sentence_tokens" : [ "Surge", "fee", "." ]
+  }, {
+    "sentence_tokens" : [ "To", "estimate", "the", "surge", "fee", "time", "series", ",", "we", "subtract", "the", "base", "cost", "of", "the", "respective", "product", "from", "the", "total", "fare", "estimate", "." ]
+  }, {
+    "sentence_tokens" : [ "Since", "the", "available", "price", "estimates", "are", "rounded", "to", "integer", "values", ",", "the", "recorded", "price", "estimate", "may", "not", "reflect", "all", "changes", "of", "the", "trip", "fare", "especially", "for", "shorter", "trips", "with", "lower", "absolute", "total", "fare", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "leads", "to", "small", "fluctuations", "in", "the", "extracted", "surge", "fee", "that", "do", "not", "correspond", "to", "actual", "surge", "activity", "." ]
+  }, {
+    "sentence_tokens" : [ "Airport", "arrival", "data", "." ]
+  }, {
+    "sentence_tokens" : [ "To", "estimate", "the", "demand", "for", "rides", "at", "airports", ",", "we", "record", "the", "number", "of", "arrivals", "at", "each", "of", "the", "63", "airports", "where", "we", "recorded", "price", "estimates", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "collected", "aircraft", "landing", "times", ",", "call", "signs", ",", "and", "type", "of", "aircraft", "using", "flightradar24", "'", "s", "open", "API", "in", "the", "corresponding", "time", "frame", ",", "as", "well", "as", "information", "on", "the", "different", "aircraft", "'", "s", "current", "seat", "configuration", "obtained", "via", "flightera.net", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "disregard", "entries", "without", "call", "signs", "or", "real", "landing", "times", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "rare", "cases", "where", "no", "seat", "configuration", "was", "available", ",", "we", "estimate", "the", "number", "of", "seats", "as", "the", "average", "of", "all", "recorded", "flights", "with", "the", "same", "aircraft", "model", "(", "or", "the", "average", "over", "all", "aircraft", "models", "if", "no", "other", "similar", "model", "was", "recorded", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Airport", "demand", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "estimate", "the", "demand", "for", "ride", "hailing", "services", "as", "proportional", "to", "the", "number", "of", "seats", "of", "all", "arriving", "airplanes", "(", "implying", "a", "constant", "fraction", "of", "potential", "Uber", "customers", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "To", "create", "a", "continuous", "time", "series", "from", "the", "discrete", "arrival", "events", "of", "individual", "airplanes", "we", "compute", "a", "5", "min", "moving", "average", "to", "create", "equidistant", "records", "every", "minute", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "also", "slightly", "reduces", "the", "strong", "variations", "between", "minutes", "with", "and", "without", "arrivals.Because", "we", "have", "much", "more", "frequent", "but", "not", "equally", "spaced", "data", "for", "the", "Uber", "price", "estimates", ",", "we", "use", "the", "same", "procedure", "and", "compute", "a", "5", "min", "moving", "average", "of", "the", "surge", "fee", "for", "every", "minute", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "leaves", "us", "with", "the", "same", "granularity", "of", "the", "data", "as", "for", "the", "deplanements.Using", "these", "data", ",", "we", "compute", "the", "cross", "correlation", "between", "the", "Uber", "surge", "fee", "estimates", "and", "the", "deplanement", "data", "at", "the", "corresponding", "airport", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "Fig.", "1c", "we", "show", "the", "scatterplot", "at", "the", "timelag", "(", "deplanement", "earlier", "than", "surge", ")", "where", "this", "correlation", "is", "maximal", "for", "the", "illustrated", "window", "from", "20:00", "to", "02:00", "of", "the", "surge", "fee", "." ]
+  }, {
+    "sentence_tokens" : [ "Comparison", "of", "surge", "dynamics", "." ]
+  }, {
+    "sentence_tokens" : [ "To", "compare", "and", "characterize", "the", "surge", "dynamics", "for", "different", "trips", "we", "normalize", "the", "absolute", "surge", "fee", "time", "series", "by", "the", "base", "cost", "at", "that", "time", ",", "yielding", "an", "effective", "surge", "factor", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "these", "normalized", "time", "series", ",", "we", "compute", "the", "per", "minute", "changes", "Delta", "p", "between", "consecutive", "time", "points", "(", "time", "t", "in", "minutes", ")", ",7", "Delta", "p", "(", "t", ")", "=", "totalfare", "(", "t", ")", "basecost", "(", "t", ")", "-", "totalfare", "(", "t", "-", "1", ")", "basecost", "(", "t", "-", "1", ")", "=", "surgefee", "(", "t", ")", "basecost", "(", "t", ")", "-", "surgefee", "(", "t", "-", "1", ")", "basecost", "(", "t", "-", "1", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "To", "quantify", "and", "compare", "the", "statistical", "properties", "of", "the", "surge", "factor", "time", "series", "we", "split", "the", "price", "changes", "into", "three", "contributions", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "take", "any", "data", "point", "with", "Delta", "p", "<", "10", "to", "belong", "to", "a", "Dirac", "delta", "distribution", "at", "zero", "(", "not", "shown", "in", "the", "histograms", ")", "and", "fit", "a", "Gaussian", "mixture", "model", "with", "two", "Gaussian", "distributions", "to", "the", "remaining", "data", "." ]
+  }, {
+    "sentence_tokens" : [ "Taking", "both", "distributions", "to", "have", "a", "mean", "of", "zero", "(", "no", "price", "change", "on", "average", ")", "yieldsProb", "Delta", "p", "=", "w0", "delta", "(", "Delta", "p", ")", "+", "wbase12", "pi", "sigma", "main2e", "-", "Delta", "p22", "sigma", "base2+", "wsurge12", "pi", "sigma", "surge2e", "-", "Delta", "p22", "sigma", "surge2where", "the", "weight", "w", "defines", "the", "surge", "contribution", "and", "the", "standard", "deviation", "sigma", "is", "the", "normalized", "surge", "strength", "used", "to", "characterize", "the", "surge", "dynamics", "." ]
+  }, {
+    "sentence_tokens" : [ "Two", "player", "game--minimal", "theoretical", "model", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "results", "presented", "in", "the", "manuscript", "(", "Fig.", "2b", ")", "are", "obtained", "with", "normalized", "parameters", "p", "=", "1", "and", "delta", "in", "0,0.15,0.30", ",", "allowing", "up", "to", "psurgemax", "=", "1/0", ".30", "=~", "3.33", "before", "no", "customer", "orders", "a", "ride", "at", "the", "maximum", "surge", "fee", "." ]
+  }, {
+    "sentence_tokens" : [ "See", "Supplementary", "Note", "3", "for", "a", "detailed", "description", "." ]
+  }, {
+    "sentence_tokens" : [ "Dynamic", "multiplayer", "game", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "the", "dynamic", "multiplayer", "game", ",", "we", "consider", "a", "single", "origin", "location", "with", "N", "=", "160", "drivers", "." ]
+  }, {
+    "sentence_tokens" : [ "Upon", "completing", "a", "trip", ",", "drivers", "return", "to", "the", "origin", "location", "after", "a", "total", "round-trip", "time", "t", "uniformly", "distributed", "in", "ts", "-", "5", ",", "ts", "+5", "minutes", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "increase", "the", "round-trip", "time", "from", "the", "base", "value", "ts", "=", "30", "min", "to", "ts", "=", "60", "min", "in", "the", "morning", "and", "afternoon", "(", "starting", "at", "08:00", "and", "increasing", "linearly", "up", "to", "the", "maximum", "at", "9:30", "and", "back", "to", "the", "base", "value", "until", "11:00", "." ]
+  }, {
+    "sentence_tokens" : [ "Similarly", "in", "the", "afternoon", "from", "15:00", "to", "the", "maximum", "at", "18:00", "and", "back", "until", "20:00", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "base", "cost", "p", "depend", "linearly", "on", "the", "round-trip", "time", "as", "pbase", "=", "1+", "ts/2", "in", "16,31", "USD", "as", "the", "round-trip", "time", "changes", "during", "the", "day", "." ]
+  }, {
+    "sentence_tokens" : [ "Similar", "to", "the", "two-player", "game", ",", "we", "take", "a", "linear", "price", "dependence", "for", "the", "surge", "pricing", "as8p", "'", "(", "t", ")", "=", "pbaseifNidle", "(", "t", ")", ">=", "Nthreshpbase+", "psurgemax1", "-", "Nidle", "(", "t", ")", "Nthreselsebased", "on", "the", "number", "N", "of", "online", "drivers", "at", "the", "trip", "origin", "and", "the", "number", "of", "drivers", "N", "before", "the", "surge", "fee", "becomes", "non", "zero", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "take", "Nthresh", "=", "lambda", "<ts>", ",", "where", "lambda", "=", "2", "requests", "per", "minute", "describes", "the", "demand", "modeled", "as", "a", "Poisson", "process", "in", "time", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "model", "responses", "of", "the", "price", "to", "the", "current", "system", "state", "(", "number", "of", "available", "drivers", "and", "round-trip", "time", ")", "as", "instantaneous.The", "behavior", "of", "customers", "and", "drivers", "is", "as", "follows", ":", "Each", "customer", "i", "is", "assigned", "a", "uniformly", "random", "maximum", "price", "pmax", ",", "i", "in", "[", "pbase", ",", "pmax", "]", "they", "are", "willing", "to", "pay", ",", "where", "we", "take", "pmax", "=", "54", "USD", "." ]
+  }, {
+    "sentence_tokens" : [ "When", "the", "customer", "makes", "a", "request", ",", "they", "check", "the", "current", "total", "fare", "." ]
+  }, {
+    "sentence_tokens" : [ "If", "the", "current", "total", "fare", "is", "smaller", "than", "pmax", ",", "i", ",", "the", "customer", "orders", "the", "ride", "." ]
+  }, {
+    "sentence_tokens" : [ "If", "the", "total", "fare", "is", "higher", "or", "no", "drivers", "are", "online", "and", "idle", ",", "the", "customer", "waits", "and", "checks", "again", "every", "2", "min", "." ]
+  }, {
+    "sentence_tokens" : [ "After", "10", "min", "without", "ordering", "a", "ride", ",", "the", "customer", "leaves", "the", "system.At", "every", "point", "in", "time", "the", "drivers", "decide", "whether", "to", "switch", "their", "app", "off", "or", "on", "." ]
+  }, {
+    "sentence_tokens" : [ "They", "make", "this", "decision", "based", "on", "the", "(", "mean", "field", ")", "optimal", "strategy", "to", "optimize", "their", "collective", "payoff", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "driver", "switches", "off", "their", "app", "only", "if", "two", "conditions", "are", "fulfilled", ":", "first", ",", "if", "there", "are", "sufficiently", "many", "drivers", "available", "and", "willing", "to", "be", "offline", "to", "induce", "a", "non", "zero", "surge", "fee", "." ]
+  }, {
+    "sentence_tokens" : [ "Second", ",", "if", "the", "price", "is", "less", "than", "the", "(", "mean", "field", ")", "optimal", "value", "for", "the", "drivers", "given", "the", "current", "system", "state", "." ]
+  }, {
+    "sentence_tokens" : [ "Each", "driver", "remains", "offline", "for", "at", "most", "20", "min", "." ]
+  }, {
+    "sentence_tokens" : [ "After", "this", "time", ",", "the", "driver", "only", "considers", "going", "offline", "again", "after", "serving", "a", "customer", "(", "drivers", "try", "to", "obtain", "similar", "individual", "profits", "whereas", "their", "optimal", "strategy", "based", "on", "maximizing", "their", "collective", "profit", "would", "be", "for", "some", "drivers", "to", "be", "always", "offline", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Reporting", "summary", "." ]
+  }, {
+    "sentence_tokens" : [ "Further", "information", "on", "research", "design", "is", "available", "in", "the", "Nature", "Research", "Reporting", "Summary", "linked", "to", "this", "article", "." ]
+  } ]
+}

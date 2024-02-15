@@ -1,309 +1,787 @@
-[ {
-  "sentence_tokens" : [ "For", "example", ",", "acute", "morphine", "can", "increase", "NF-kB", "activity", ",", "subsequently", "altering", "the", "expression", "of", "opioid", "receptors", "and", "peptides", ",", "while", "chronic", "morphine", "can", "lead", "to", "a", "reduction", "in", "NF-kB", "activity", "(", "Chen", "et", "al.", "2006", ")", "." ],
-  "event_indices" : [ 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17 ],
-  "type" : "Positive_regulation",
-  "polarity" : true,
-  "controller_indices" : [ 4, 5 ],
-  "controlled_indices" : [ 13, 14, 15, 16, 17 ],
-  "trigger_indices" : [ 6, 7 ],
-  "rule_name" : "Positive_regulation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Precipitated", "morphine", "withdrawal", "can", "lead", "to", "alterations", "in", "Avp", "expression", "(", "Nunez", "et", "al.", "2007", ")", "and", "naloxone", "can", "reduce", "hypothalamic", "AVP", "mRNA", "levels", ",", "suggesting", "regulation", "by", "endogenous", "opioids", "(", "Zhou", "et", "al.", "2005", ")", "." ],
-  "event_indices" : [ 17, 18, 19, 20, 21, 22, 23, 24 ],
-  "type" : "Negative_regulation",
-  "polarity" : false,
-  "controller_indices" : [ 17, 18 ],
-  "controlled_indices" : [ 21, 22, 23, 24 ],
-  "trigger_indices" : [ 19, 20 ],
-  "rule_name" : "Negative_regulation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "The", "G118", "allele", "is", "associated", "with", "reduced", "dynorphin", "and", "enkephalin", "gene", "expression", "and", "increased", "peptide", "levels", "in", "heroin", "users", "(", "Drakenberg", "et", "al.", "2006", ")", "." ],
-  "event_indices" : [ 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 ],
-  "type" : "Positive_regulation",
-  "polarity" : true,
-  "controller_indices" : [ 2, 3 ],
-  "controlled_indices" : [ 14, 15, 16 ],
-  "trigger_indices" : [ 13, 14 ],
-  "rule_name" : "Positive_regulation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Intracerebroventricular", "nociceptin", "can", "abolish", "morphine", "conditioned", "place", "preference", "(", "Ciccocioppo", "et", "al.", "2000", ")", ",", "which", "involves", "the", "hippocampus", "(", "Huston", "et", "al.", "2013", ")", "." ],
-  "event_indices" : [ 1, 2, 3, 4, 5 ],
-  "type" : "Negative_activation",
-  "polarity" : false,
-  "controller_indices" : [ 1, 2 ],
-  "controlled_indices" : [ 4, 5 ],
-  "trigger_indices" : [ 3, 4 ],
-  "rule_name" : "Negative_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Both", "gene", "expression", "(", "Beato", "1989", ")", "and", "opioid", "receptor", "availability", "can", "be", "modulated", "by", "hormonal", "status", "in", "at", "least", "some", "brain", "regions", "(", "Zubieta", "et", "al.", "1999", ")", "." ],
-  "event_indices" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 20, 21 ],
-  "controlled_indices" : [ 1, 2, 3 ],
-  "trigger_indices" : [ 13, 14 ],
-  "rule_name" : "Positive_activation_syntax_2_verb, pronominalMatch",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Both", "gene", "expression", "(", "Beato", "1989", ")", "and", "opioid", "receptor", "availability", "can", "be", "modulated", "by", "hormonal", "status", "in", "at", "least", "some", "brain", "regions", "(", "Zubieta", "et", "al.", "1999", ")", "." ],
-  "event_indices" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 20, 21 ],
-  "controlled_indices" : [ 1, 2, 3 ],
-  "trigger_indices" : [ 13, 14 ],
-  "rule_name" : "Positive_activation_syntax_2_verb, pronominalMatch",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Both", "gene", "expression", "(", "Beato", "1989", ")", "and", "opioid", "receptor", "availability", "can", "be", "modulated", "by", "hormonal", "status", "in", "at", "least", "some", "brain", "regions", "(", "Zubieta", "et", "al.", "1999", ")", "." ],
-  "event_indices" : [ 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 20, 21 ],
-  "controlled_indices" : [ 8, 9, 10 ],
-  "trigger_indices" : [ 13, 14 ],
-  "rule_name" : "Positive_activation_syntax_2_verb, pronominalMatch",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Both", "gene", "expression", "(", "Beato", "1989", ")", "and", "opioid", "receptor", "availability", "can", "be", "modulated", "by", "hormonal", "status", "in", "at", "least", "some", "brain", "regions", "(", "Zubieta", "et", "al.", "1999", ")", "." ],
-  "event_indices" : [ 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 20, 21 ],
-  "controlled_indices" : [ 8, 9, 10 ],
-  "trigger_indices" : [ 13, 14 ],
-  "rule_name" : "Positive_activation_syntax_2_verb, pronominalMatch",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "As", "the", "A118G", "variant", "alters", "MOR", "function", ",", "it", "may", "cause", "changes", "in", "MOR", "modulated", "gene", "expression", "that", "contribute", "to", "the", "behavioral", ",", "molecular", ",", "and", "neurochemical", "alterations", "observed", "in", "humans", "and", "rodents", "bearing", "the", "G", "allele", "(", "Kreek", "et", "al.", "2005", ";", "Mura", "et", "al.", "2013", ")", "." ],
-  "event_indices" : [ 8, 9, 10, 11, 12, 13, 14 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 8, 9 ],
-  "controlled_indices" : [ 13, 14 ],
-  "trigger_indices" : [ 10, 11 ],
-  "rule_name" : "Positive_activation_syntax_7_verb, pronominalMatch",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "As", "the", "A118G", "variant", "alters", "MOR", "function", ",", "it", "may", "cause", "changes", "in", "MOR", "modulated", "gene", "expression", "that", "contribute", "to", "the", "behavioral", ",", "molecular", ",", "and", "neurochemical", "alterations", "observed", "in", "humans", "and", "rodents", "bearing", "the", "G", "allele", "(", "Kreek", "et", "al.", "2005", ";", "Mura", "et", "al.", "2013", ")", "." ],
-  "event_indices" : [ 5, 6, 7, 8, 9, 10, 11 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 8, 9 ],
-  "controlled_indices" : [ 5, 6 ],
-  "trigger_indices" : [ 10, 11 ],
-  "rule_name" : "Positive_activation_syntax_1_verb, pronominalMatch",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Healthy", "human", "G118", "carriers", "have", "altered", "HPA", "axis", "function", "Chong", "et", "al.", "2006", ";", "Ducat", "et", "al.", "2013", ";", "Hernandez-Avila", "et", "al.", "2003", ";", "Lovallo", "et", "al.", "2015", ";", "Wand", "et", "al.", "2002", ")", "and", "GG", "mice", "show", "resilience", "to", "social", "stress", "(", "Briand", "et", "al.", "2015", ")", ",", "which", "may", ",", "in", "part", ",", "reflect", "altered", "hippocampal", "regulation", "of", "the", "HPA", "axis.Interestingly", ",", "a", "study", "of", "hippocampal", "function", "in", "A112G", "mice", "has", "shown", "that", "wild-type", "mice", "have", "increased", "excitatory", "hippocampal", "activity", "in", "response", "to", "morphine", "." ],
-  "event_indices" : [ 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 71, 72 ],
-  "controlled_indices" : [ 83, 84, 85, 86 ],
-  "trigger_indices" : [ 78, 79 ],
-  "rule_name" : "Positive_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Healthy", "human", "G118", "carriers", "have", "altered", "HPA", "axis", "function", "Chong", "et", "al.", "2006", ";", "Ducat", "et", "al.", "2013", ";", "Hernandez-Avila", "et", "al.", "2003", ";", "Lovallo", "et", "al.", "2015", ";", "Wand", "et", "al.", "2002", ")", "and", "GG", "mice", "show", "resilience", "to", "social", "stress", "(", "Briand", "et", "al.", "2015", ")", ",", "which", "may", ",", "in", "part", ",", "reflect", "altered", "hippocampal", "regulation", "of", "the", "HPA", "axis.Interestingly", ",", "a", "study", "of", "hippocampal", "function", "in", "A112G", "mice", "has", "shown", "that", "wild-type", "mice", "have", "increased", "excitatory", "hippocampal", "activity", "in", "response", "to", "morphine", "." ],
-  "event_indices" : [ 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 76, 77 ],
-  "controlled_indices" : [ 83, 84, 85, 86 ],
-  "trigger_indices" : [ 78, 79 ],
-  "rule_name" : "Positive_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "In", "mice", ",", "CREB", "signaling", "increases", "in", "the", "ventral", "tegmental", "area", "in", "response", "to", "nicotine", "reward", "associated", "environments", "and", "this", "increase", "requires", "MORs", "(", "Walters", "et", "al.", "2005", ")", "." ],
-  "event_indices" : [ 1, 2, 3, 4, 5, 6 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 3, 4 ],
-  "controlled_indices" : [ 1, 2 ],
-  "trigger_indices" : [ 5, 6 ],
-  "rule_name" : "Positive_activation_syntax_7_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "As", "the", "A118G", "variant", "alters", "MOR", "function", ",", "it", "may", "cause", "changes", "in", "MOR", "modulated", "gene", "expression", "that", "contribute", "to", "the", "behavioral", ",", "molecular", ",", "and", "neurochemical", "alterations", "observed", "in", "humans", "and", "rodents", "bearing", "the", "G", "allele", "(", "Kreek", "et", "al.", "2005", ";", "Mura", "et", "al.", "2013", ")", "." ],
-  "event_indices" : [ 13, 14, 15, 16, 17 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 13, 14 ],
-  "controlled_indices" : [ 15, 16, 17 ],
-  "trigger_indices" : [ 14, 15 ],
-  "rule_name" : "Positive_activation_token_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Cannabinoid", "receptor", "signaling", ",", "including", "CB", "signaling", ",", "can", "regulate", "hippocampal", "function", ",", "presumably", "by", "regulating", "neurotransmitter", "release", "and", "synaptic", "responses", "(", "Davies", "et", "al.", "2002", ")", "." ],
-  "event_indices" : [ 0, 1, 2, 3, 4, 5, 6 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 5, 6 ],
-  "controlled_indices" : [ 0, 1, 2 ],
-  "trigger_indices" : [ 2, 3 ],
-  "rule_name" : "Positive_activation_syntax_noun_Hearst",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Interestingly", ",", "in", "the", "current", "study", ",", "for", "all", "genes", "showing", "a", "main", "effect", "of", "genotype", ",", "the", "G112", "allele", "led", "to", "a", "reduction", "in", "gene", "expression", "." ],
-  "event_indices" : [ 19, 20, 21, 22, 23, 24, 25, 26, 27 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 19, 20 ],
-  "controlled_indices" : [ 25, 26, 27 ],
-  "trigger_indices" : [ 20, 21 ],
-  "rule_name" : "Positive_activation_syntax_7_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Hippocampal", "infusions", "of", "nociceptin", "can", "impair", "spatial", "learning", "(", "Sandin", "et", "al.", "1997", ")", "." ],
-  "event_indices" : [ 3, 4, 5, 6, 7, 8 ],
-  "type" : "Negative_activation",
-  "polarity" : false,
-  "controller_indices" : [ 3, 4 ],
-  "controlled_indices" : [ 6, 7, 8 ],
-  "trigger_indices" : [ 5, 6 ],
-  "rule_name" : "Negative_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Interestingly", ",", "injection", "of", "an", "enkephalin", "analog", "into", "the", "hypothalamus", "can", "produce", "conditioned", "place", "preference", "(", "Agmo", "and", "G", "o", "mez", "1991", ")", ",", "suggesting", "that", "mu", "opioid", "receptor", "signaling", "in", "the", "hypothalamus", "is", "involved", "in", "conditioned", "reward", "." ],
-  "event_indices" : [ 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 5, 6 ],
-  "controlled_indices" : [ 12, 13, 14, 15 ],
-  "trigger_indices" : [ 11, 12 ],
-  "rule_name" : "Positive_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Interestingly", ",", "injection", "of", "an", "enkephalin", "analog", "into", "the", "hypothalamus", "can", "produce", "conditioned", "place", "preference", "(", "Agmo", "and", "G", "o", "mez", "1991", ")", ",", "suggesting", "that", "mu", "opioid", "receptor", "signaling", "in", "the", "hypothalamus", "is", "involved", "in", "conditioned", "reward", "." ],
-  "event_indices" : [ 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 5, 6 ],
-  "controlled_indices" : [ 18, 19, 20, 21, 22, 23 ],
-  "trigger_indices" : [ 11, 12 ],
-  "rule_name" : "Positive_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Interestingly", ",", "injection", "of", "an", "enkephalin", "analog", "into", "the", "hypothalamus", "can", "produce", "conditioned", "place", "preference", "(", "Agmo", "and", "G", "o", "mez", "1991", ")", ",", "suggesting", "that", "mu", "opioid", "receptor", "signaling", "in", "the", "hypothalamus", "is", "involved", "in", "conditioned", "reward", "." ],
-  "event_indices" : [ 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 5, 6 ],
-  "controlled_indices" : [ 16, 17 ],
-  "trigger_indices" : [ 11, 12 ],
-  "rule_name" : "Positive_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Oprm1", "A112G", ",", "a", "single", "nucleotide", "polymorphism", ",", "alters", "expression", "of", "stress", "responsive", "genes", "in", "multiple", "brain", "regions", "in", "male", "and", "female", "mice", "." ],
-  "entity_one_indices" : [ 22, 23 ],
-  "entity_two_indices" : [ 0, 1 ]
-}, {
-  "sentence_tokens" : [ "Mice", "homozygous", "for", "the", "G112", "allele", "show", "differences", "in", "opioid-", "and", "stress", "related", "phenotypes", "." ],
-  "entity_one_indices" : [ 5, 6 ],
-  "entity_two_indices" : [ 0, 1 ]
-}, {
-  "sentence_tokens" : [ "The", "G118", "allele", "also", "significantly", "alters", "stress", "responsivity", "and", "HPA", "axis", "regulation", "in", "healthy", "humans", "." ],
-  "entity_one_indices" : [ 9, 10 ],
-  "entity_two_indices" : [ 2, 3 ]
-}, {
-  "sentence_tokens" : [ "MOR", "activation", "leads", "to", "a", "series", "of", "downstream", "cellular", "effects", "(", "Al-Hasani", "and", "Bruchas", "2011", ")", ",", "which", "may", "include", "changes", "in", "gene", "expression", "." ],
-  "entity_one_indices" : [ 22, 23, 24 ],
-  "entity_two_indices" : [ 0, 1 ]
-}, {
-  "sentence_tokens" : [ "In", "the", "current", "study", ",", "we", "have", "profiled", "the", "expression", "of", "an", "array", "genes", "that", "(", "1", ")", "are", "associated", "with", "mu", "opioid", "dependence", "in", "humans", "(", "Bart", "et", "al.", "2004", ";", "Levran", "et", "al.", "2008", ")", "or", "(", "2", ")", "have", "been", "demonstrated", "to", "be", "related", "to", "responses", "to", "stress", "or", "drugs", "of", "abuse", "in", "rodents", "(", "Bale", "et", "al.", "2000", ";", "Caputi", "et", "al.", "2014", ";", "Deroche-Gamonet", "et", "al.", "2003", ";", "Edwards", "et", "al.", "2012", ";", "McClung", "et", "al.", "2005", ";", "Spangler", "et", "al.", "1993", ";", "Uhl", "et", "al.", "1988", ";", "Valenza", "et", "al.", "2016", ";", "Zhou", "et", "al.", "2001", ")", "." ],
-  "entity_one_indices" : [ 27, 28 ],
-  "entity_two_indices" : [ 22, 23, 24 ]
-}, {
-  "sentence_tokens" : [ "Heterozygous", "A112G", "mice", "(", "Mague", "et", "al.", "2009", ")", "were", "mated", "to", "obtain", "homozygous", "(", "112AA", "or", "112GG", ";", "AA", "or", "GG", ")", "offspring", "." ],
-  "entity_one_indices" : [ 19, 20 ],
-  "entity_two_indices" : [ 2, 3 ]
-}, {
-  "sentence_tokens" : [ "Heterozygous", "mice", "(", "112AG", ")", "were", "also", "produced", ",", "but", "only", "homozygous", "mice", "of", "both", "sexes", "are", "examined", "in", "the", "present", "study", "." ],
-  "entity_one_indices" : [ 12, 13 ],
-  "entity_two_indices" : [ 1, 2 ]
-}, {
-  "sentence_tokens" : [ "Ten-", "to", "twelve-week-old", "mice", "were", "housed", "in", "groups", "of", "four", "to", "five", "with", "free", "access", "to", "food", "and", "water", "in", "a", "light-", "(", "12:12", "h", "light", "and", "dark", "cycle", ",", "lights", "on", "at", "0900", ",", "lights", "off", "at", "2100", ")", "and", "temperature-", "(", "25", "degrees", "C", ")", "controlled", "room", "." ],
-  "entity_one_indices" : [ 3, 4 ],
-  "entity_two_indices" : [ 0, 1 ]
-}, {
-  "sentence_tokens" : [ "Mice", "were", "sacrificed", "by", "rapid", "decapitation", "between", "2", "and", "3", "h", "following", "lights", "on", "(", "1100", "-", "1200", ")", "." ],
-  "entity_one_indices" : [ 5, 6 ],
-  "entity_two_indices" : [ 0, 1 ]
-}, {
-  "sentence_tokens" : [ "RNA", "quality", "and", "quantity", "for", "each", "sample", "were", "determined", "using", "an", "Agilent", "2100", "Bioanalyzer", "(", "Agilent", "Technologies", ",", "Santa", "Clara", ",", "CA", ")", "." ],
-  "entity_one_indices" : [ 21, 22 ],
-  "entity_two_indices" : [ 18, 19 ]
-}, {
-  "sentence_tokens" : [ "Of", "these", "five", "reference", "genes", ",", "Gusb", "was", "stably", "expressed", "across", "groups", "in", "caudoputamen", "and", "Tbp", "was", "stably", "expressed", "across", "groups", "in", "nucleus", "accumbens", ",", "hypothalamus", ",", "hippocampus", ",", "and", "amygdala", "." ],
-  "entity_one_indices" : [ 15, 16 ],
-  "entity_two_indices" : [ 6, 7 ]
-}, {
-  "sentence_tokens" : [ "The", "Benjamini-Hochberg", "method", "(", "false", "discovery", "rate", ";", "5", "%", ")", "was", "used", "to", "identify", "differences", "in", "gene", "expression", "remaining", "significant", "after", "correction", "for", "multiple", "hypothesis", "testing", "(", "see", "Tables", "2", ",", "3", ",", "and", "4", ")", "." ],
-  "entity_one_indices" : [ 29, 30, 31, 32, 33, 34, 35, 36 ],
-  "entity_two_indices" : [ 17, 18, 19 ]
-}, {
-  "sentence_tokens" : [ "Oprm1", "A112G", "mice", "." ],
-  "entity_one_indices" : [ 2, 3 ],
-  "entity_two_indices" : [ 0, 1 ]
-}, {
-  "sentence_tokens" : [ "We", "have", "observed", "no", "differences", "in", "size", ",", "health", ",", "or", "mortality", "between", "AA", "and", "GG", "mice", "of", "either", "sex", "(", "data", "not", "shown", ")", "." ],
-  "entity_one_indices" : [ 16, 17 ],
-  "entity_two_indices" : [ 13, 14 ]
-}, {
-  "sentence_tokens" : [ "We", "also", "sought", "to", "identify", "genes", "included", "in", "our", "array", "that", "are", "differentially", "expressed", "in", "females", "and", "males", ",", "as", "the", "expression", "of", "some", "of", "the", "target", "genes", "included", "in", "our", "custom", "array", "might", "differ", "by", "sex", ",", "and", "because", "some", "studies", "have", "found", "sex", "dependent", "differences", "in", "behavioral", "and", "molecular", "measures", "in", "Oprm1", "A112G", "mice", "(", "Mague", "et", "al.", "2009", ";", "Wang", "et", "al.", "2014", ")", "." ],
-  "entity_one_indices" : [ 55, 56 ],
-  "entity_two_indices" : [ 53, 54 ]
-}, {
-  "sentence_tokens" : [ "There", "is", "evidence", "that", "AVP", "also", "participates", "in", "the", "effects", "of", "opioids", "on", "HPA", "activity", "." ],
-  "entity_one_indices" : [ 13, 14 ],
-  "entity_two_indices" : [ 4, 5 ]
-}, {
-  "sentence_tokens" : [ "The", "hippocampus", "is", "critically", "involved", "in", "learning", "and", "memory", ",", "but", "may", "also", "be", "involved", "in", "motivated", "behavior", "and", "drug", "reinforcement", "(", "Ito", "et", "al.", "2008", ";", "Koob", "and", "Volkow", "2010", ";", "Le", "Merrer", "et", "al.", "2009", ";", "Sharifzadeh", "et", "al.", "2006", ";", "Tracy", "et", "al.", "2001", ")", "." ],
-  "entity_one_indices" : [ 32, 33 ],
-  "entity_two_indices" : [ 6, 7 ]
-}, {
-  "sentence_tokens" : [ "This", "effect", "is", "attenuated", "in", "GG", "mice", "and", "may", "be", "due", "to", "a", "MOR", "loss", "of", "function", "in", "hippocampus", "(", "Mague", "et", "al.", "2015", ")", "." ],
-  "entity_one_indices" : [ 13, 14 ],
-  "entity_two_indices" : [ 6, 7 ]
-}, {
-  "sentence_tokens" : [ "These", "changes", "may", "result", "from", "a", "reduction", "in", "direct", "effects", "of", "MORs", "on", "hippocampal", "neurons", "as", "well", "as", "indirect", "effects", "through", "nociceptin", "or", "cannabinoid", "signaling.Sex", "differences", "in", "the", "expression", "of", "drug", "of", "abuse-", "and", "stress", "responsive", "genes", "in", "male", "and", "female", "mice", "are", "not", "routinely", "studied", "." ],
-  "entity_one_indices" : [ 41, 42 ],
-  "entity_two_indices" : [ 21, 22 ]
-}, {
-  "sentence_tokens" : [ "Further", ",", "GG", "mice", "also", "show", "brain-region", "and", "sex", "specific", "alterations", "in", "DAMGO", "stimulated", "GTP", "gamma", "S", "binding", "(", "Wang", "et", "al.", "2014", ")", "." ],
-  "entity_one_indices" : [ 14, 15 ],
-  "entity_two_indices" : [ 3, 4 ]
-}, {
-  "sentence_tokens" : [ "Interestingly", ",", "for", "all", "of", "these", "nominally", "significant", "sex", "dependent", "differences", "in", "gene", "expression", ",", "female", "mice", "showed", "greater", "expression", "levels", "compared", "to", "males", "regardless", "of", "genotype", "(", "Table", "3", ")", "." ],
-  "entity_one_indices" : [ 16, 17 ],
-  "entity_two_indices" : [ 12, 13, 14 ]
-}, {
-  "sentence_tokens" : [ "It", "is", "unclear", "why", "this", "may", "be", "the", "case", ";", "however", ",", "it", "has", "been", "demonstrated", "that", "mu", "opioid", "effects", "and", "mu", "opioid", "receptor", "signaling", "can", "vary", "between", "male", "and", "female", "rodents", "(", "Craft", "2008", ")", "." ],
-  "entity_one_indices" : [ 21, 22, 23, 24 ],
-  "entity_two_indices" : [ 17, 18 ]
-}, {
-  "sentence_tokens" : [ "To", "date", ",", "there", "have", "been", "no", "studies", "of", "the", "effects", "of", "hormonal", "status", "in", "Oprm1", "A112G", "mice", "." ],
-  "entity_one_indices" : [ 17, 18 ],
-  "entity_two_indices" : [ 15, 16 ]
-}, {
-  "sentence_tokens" : [ "Studies", "involving", "the", "manipulation", "of", "gonadal", "steroids", "in", "these", "mice", "will", "be", "required", "to", "investigate", "their", "involvement", "in", "the", "sex", "dependent", "differences", "observed", "in", "A112G", "mice", "." ],
-  "entity_one_indices" : [ 25, 26 ],
-  "entity_two_indices" : [ 9, 10 ]
-}, {
-  "sentence_tokens" : [ "MORs", "are", "poised", "to", "regulate", "a", "number", "of", "transcriptional", "pathways", "by", "regulating", "the", "activity", "of", "several", "downstream", "effectors", ",", "including", "adenylate", "cyclase", ",", "ion", "channels", ",", "and", ",", "of", "note", ",", "multiple", "classes", "of", "kinases", "(", "Ho", "et", "al.", "2009", ")", "." ],
-  "entity_one_indices" : [ 36, 37 ],
-  "entity_two_indices" : [ 20, 21, 22 ]
-}, {
-  "sentence_tokens" : [ "We", "have", "demonstrated", "that", "the", "basal", "expression", "of", "genes", "encoding", "key", "components", "of", "drug", "of", "abuse-", "and", "stress", "responsive", "systems", "are", "altered", "in", "male", "and", "female", "Oprm1", "A112G", "mice", "." ],
-  "entity_one_indices" : [ 28, 29 ],
-  "entity_two_indices" : [ 26, 27 ]
-}, {
-  "sentence_tokens" : [ "Future", "investigation", "of", "the", "downstream", "signaling", "consequences", "of", "MORs", "in", "A112G", "mice", "will", "be", "valuable", "to", "understanding", "the", "behavioral", "and", "molecular", "changes", "caused", "by", "the", "G", "allele", "in", "rodent", "models", "and", "in", "humans", "." ],
-  "entity_one_indices" : [ 25, 26, 27 ],
-  "entity_two_indices" : [ 11, 12 ]
-} ]
+{
+  "regulations" : [ {
+    "sentence_tokens" : [ "For", "example", ",", "acute", "morphine", "can", "increase", "NF-kB", "activity", ",", "subsequently", "altering", "the", "expression", "of", "opioid", "receptors", "and", "peptides", ",", "while", "chronic", "morphine", "can", "lead", "to", "a", "reduction", "in", "NF-kB", "activity", "(", "Chen", "et", "al.", "2006", ")", "." ],
+    "event_indices" : [ 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17 ],
+    "type" : "Positive_regulation",
+    "polarity" : true,
+    "controller_indices" : [ 4, 5 ],
+    "controlled_indices" : [ 13, 14, 15, 16, 17 ],
+    "trigger_indices" : [ 6, 7 ],
+    "rule_name" : "Positive_regulation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "Precipitated", "morphine", "withdrawal", "can", "lead", "to", "alterations", "in", "Avp", "expression", "(", "Nunez", "et", "al.", "2007", ")", "and", "naloxone", "can", "reduce", "hypothalamic", "AVP", "mRNA", "levels", ",", "suggesting", "regulation", "by", "endogenous", "opioids", "(", "Zhou", "et", "al.", "2005", ")", "." ],
+    "event_indices" : [ 17, 18, 19, 20, 21, 22, 23, 24 ],
+    "type" : "Negative_regulation",
+    "polarity" : false,
+    "controller_indices" : [ 17, 18 ],
+    "controlled_indices" : [ 21, 22, 23, 24 ],
+    "trigger_indices" : [ 19, 20 ],
+    "rule_name" : "Negative_regulation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "The", "G118", "allele", "is", "associated", "with", "reduced", "dynorphin", "and", "enkephalin", "gene", "expression", "and", "increased", "peptide", "levels", "in", "heroin", "users", "(", "Drakenberg", "et", "al.", "2006", ")", "." ],
+    "event_indices" : [ 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 ],
+    "type" : "Positive_regulation",
+    "polarity" : true,
+    "controller_indices" : [ 2, 3 ],
+    "controlled_indices" : [ 14, 15, 16 ],
+    "trigger_indices" : [ 13, 14 ],
+    "rule_name" : "Positive_regulation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "Intracerebroventricular", "nociceptin", "can", "abolish", "morphine", "conditioned", "place", "preference", "(", "Ciccocioppo", "et", "al.", "2000", ")", ",", "which", "involves", "the", "hippocampus", "(", "Huston", "et", "al.", "2013", ")", "." ],
+    "event_indices" : [ 1, 2, 3, 4, 5 ],
+    "type" : "Negative_activation",
+    "polarity" : false,
+    "controller_indices" : [ 1, 2 ],
+    "controlled_indices" : [ 4, 5 ],
+    "trigger_indices" : [ 3, 4 ],
+    "rule_name" : "Negative_activation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "Both", "gene", "expression", "(", "Beato", "1989", ")", "and", "opioid", "receptor", "availability", "can", "be", "modulated", "by", "hormonal", "status", "in", "at", "least", "some", "brain", "regions", "(", "Zubieta", "et", "al.", "1999", ")", "." ],
+    "event_indices" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 20, 21 ],
+    "controlled_indices" : [ 1, 2, 3 ],
+    "trigger_indices" : [ 13, 14 ],
+    "rule_name" : "Positive_activation_syntax_2_verb, pronominalMatch",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "Both", "gene", "expression", "(", "Beato", "1989", ")", "and", "opioid", "receptor", "availability", "can", "be", "modulated", "by", "hormonal", "status", "in", "at", "least", "some", "brain", "regions", "(", "Zubieta", "et", "al.", "1999", ")", "." ],
+    "event_indices" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 20, 21 ],
+    "controlled_indices" : [ 1, 2, 3 ],
+    "trigger_indices" : [ 13, 14 ],
+    "rule_name" : "Positive_activation_syntax_2_verb, pronominalMatch",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "Both", "gene", "expression", "(", "Beato", "1989", ")", "and", "opioid", "receptor", "availability", "can", "be", "modulated", "by", "hormonal", "status", "in", "at", "least", "some", "brain", "regions", "(", "Zubieta", "et", "al.", "1999", ")", "." ],
+    "event_indices" : [ 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 20, 21 ],
+    "controlled_indices" : [ 8, 9, 10 ],
+    "trigger_indices" : [ 13, 14 ],
+    "rule_name" : "Positive_activation_syntax_2_verb, pronominalMatch",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "Both", "gene", "expression", "(", "Beato", "1989", ")", "and", "opioid", "receptor", "availability", "can", "be", "modulated", "by", "hormonal", "status", "in", "at", "least", "some", "brain", "regions", "(", "Zubieta", "et", "al.", "1999", ")", "." ],
+    "event_indices" : [ 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 20, 21 ],
+    "controlled_indices" : [ 8, 9, 10 ],
+    "trigger_indices" : [ 13, 14 ],
+    "rule_name" : "Positive_activation_syntax_2_verb, pronominalMatch",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "As", "the", "A118G", "variant", "alters", "MOR", "function", ",", "it", "may", "cause", "changes", "in", "MOR", "modulated", "gene", "expression", "that", "contribute", "to", "the", "behavioral", ",", "molecular", ",", "and", "neurochemical", "alterations", "observed", "in", "humans", "and", "rodents", "bearing", "the", "G", "allele", "(", "Kreek", "et", "al.", "2005", ";", "Mura", "et", "al.", "2013", ")", "." ],
+    "event_indices" : [ 8, 9, 10, 11, 12, 13, 14 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 8, 9 ],
+    "controlled_indices" : [ 13, 14 ],
+    "trigger_indices" : [ 10, 11 ],
+    "rule_name" : "Positive_activation_syntax_7_verb, pronominalMatch",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "As", "the", "A118G", "variant", "alters", "MOR", "function", ",", "it", "may", "cause", "changes", "in", "MOR", "modulated", "gene", "expression", "that", "contribute", "to", "the", "behavioral", ",", "molecular", ",", "and", "neurochemical", "alterations", "observed", "in", "humans", "and", "rodents", "bearing", "the", "G", "allele", "(", "Kreek", "et", "al.", "2005", ";", "Mura", "et", "al.", "2013", ")", "." ],
+    "event_indices" : [ 5, 6, 7, 8, 9, 10, 11 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 8, 9 ],
+    "controlled_indices" : [ 5, 6 ],
+    "trigger_indices" : [ 10, 11 ],
+    "rule_name" : "Positive_activation_syntax_1_verb, pronominalMatch",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "Healthy", "human", "G118", "carriers", "have", "altered", "HPA", "axis", "function", "Chong", "et", "al.", "2006", ";", "Ducat", "et", "al.", "2013", ";", "Hernandez-Avila", "et", "al.", "2003", ";", "Lovallo", "et", "al.", "2015", ";", "Wand", "et", "al.", "2002", ")", "and", "GG", "mice", "show", "resilience", "to", "social", "stress", "(", "Briand", "et", "al.", "2015", ")", ",", "which", "may", ",", "in", "part", ",", "reflect", "altered", "hippocampal", "regulation", "of", "the", "HPA", "axis.Interestingly", ",", "a", "study", "of", "hippocampal", "function", "in", "A112G", "mice", "has", "shown", "that", "wild-type", "mice", "have", "increased", "excitatory", "hippocampal", "activity", "in", "response", "to", "morphine", "." ],
+    "event_indices" : [ 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 71, 72 ],
+    "controlled_indices" : [ 83, 84, 85, 86 ],
+    "trigger_indices" : [ 78, 79 ],
+    "rule_name" : "Positive_activation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "Healthy", "human", "G118", "carriers", "have", "altered", "HPA", "axis", "function", "Chong", "et", "al.", "2006", ";", "Ducat", "et", "al.", "2013", ";", "Hernandez-Avila", "et", "al.", "2003", ";", "Lovallo", "et", "al.", "2015", ";", "Wand", "et", "al.", "2002", ")", "and", "GG", "mice", "show", "resilience", "to", "social", "stress", "(", "Briand", "et", "al.", "2015", ")", ",", "which", "may", ",", "in", "part", ",", "reflect", "altered", "hippocampal", "regulation", "of", "the", "HPA", "axis.Interestingly", ",", "a", "study", "of", "hippocampal", "function", "in", "A112G", "mice", "has", "shown", "that", "wild-type", "mice", "have", "increased", "excitatory", "hippocampal", "activity", "in", "response", "to", "morphine", "." ],
+    "event_indices" : [ 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 76, 77 ],
+    "controlled_indices" : [ 83, 84, 85, 86 ],
+    "trigger_indices" : [ 78, 79 ],
+    "rule_name" : "Positive_activation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "In", "mice", ",", "CREB", "signaling", "increases", "in", "the", "ventral", "tegmental", "area", "in", "response", "to", "nicotine", "reward", "associated", "environments", "and", "this", "increase", "requires", "MORs", "(", "Walters", "et", "al.", "2005", ")", "." ],
+    "event_indices" : [ 1, 2, 3, 4, 5, 6 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 3, 4 ],
+    "controlled_indices" : [ 1, 2 ],
+    "trigger_indices" : [ 5, 6 ],
+    "rule_name" : "Positive_activation_syntax_7_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "As", "the", "A118G", "variant", "alters", "MOR", "function", ",", "it", "may", "cause", "changes", "in", "MOR", "modulated", "gene", "expression", "that", "contribute", "to", "the", "behavioral", ",", "molecular", ",", "and", "neurochemical", "alterations", "observed", "in", "humans", "and", "rodents", "bearing", "the", "G", "allele", "(", "Kreek", "et", "al.", "2005", ";", "Mura", "et", "al.", "2013", ")", "." ],
+    "event_indices" : [ 13, 14, 15, 16, 17 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 13, 14 ],
+    "controlled_indices" : [ 15, 16, 17 ],
+    "trigger_indices" : [ 14, 15 ],
+    "rule_name" : "Positive_activation_token_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "Cannabinoid", "receptor", "signaling", ",", "including", "CB", "signaling", ",", "can", "regulate", "hippocampal", "function", ",", "presumably", "by", "regulating", "neurotransmitter", "release", "and", "synaptic", "responses", "(", "Davies", "et", "al.", "2002", ")", "." ],
+    "event_indices" : [ 0, 1, 2, 3, 4, 5, 6 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 5, 6 ],
+    "controlled_indices" : [ 0, 1, 2 ],
+    "trigger_indices" : [ 2, 3 ],
+    "rule_name" : "Positive_activation_syntax_noun_Hearst",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "Interestingly", ",", "in", "the", "current", "study", ",", "for", "all", "genes", "showing", "a", "main", "effect", "of", "genotype", ",", "the", "G112", "allele", "led", "to", "a", "reduction", "in", "gene", "expression", "." ],
+    "event_indices" : [ 19, 20, 21, 22, 23, 24, 25, 26, 27 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 19, 20 ],
+    "controlled_indices" : [ 25, 26, 27 ],
+    "trigger_indices" : [ 20, 21 ],
+    "rule_name" : "Positive_activation_syntax_7_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "Hippocampal", "infusions", "of", "nociceptin", "can", "impair", "spatial", "learning", "(", "Sandin", "et", "al.", "1997", ")", "." ],
+    "event_indices" : [ 3, 4, 5, 6, 7, 8 ],
+    "type" : "Negative_activation",
+    "polarity" : false,
+    "controller_indices" : [ 3, 4 ],
+    "controlled_indices" : [ 6, 7, 8 ],
+    "trigger_indices" : [ 5, 6 ],
+    "rule_name" : "Negative_activation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "Interestingly", ",", "injection", "of", "an", "enkephalin", "analog", "into", "the", "hypothalamus", "can", "produce", "conditioned", "place", "preference", "(", "Agmo", "and", "G", "o", "mez", "1991", ")", ",", "suggesting", "that", "mu", "opioid", "receptor", "signaling", "in", "the", "hypothalamus", "is", "involved", "in", "conditioned", "reward", "." ],
+    "event_indices" : [ 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 5, 6 ],
+    "controlled_indices" : [ 12, 13, 14, 15 ],
+    "trigger_indices" : [ 11, 12 ],
+    "rule_name" : "Positive_activation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "Interestingly", ",", "injection", "of", "an", "enkephalin", "analog", "into", "the", "hypothalamus", "can", "produce", "conditioned", "place", "preference", "(", "Agmo", "and", "G", "o", "mez", "1991", ")", ",", "suggesting", "that", "mu", "opioid", "receptor", "signaling", "in", "the", "hypothalamus", "is", "involved", "in", "conditioned", "reward", "." ],
+    "event_indices" : [ 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 5, 6 ],
+    "controlled_indices" : [ 18, 19, 20, 21, 22, 23 ],
+    "trigger_indices" : [ 11, 12 ],
+    "rule_name" : "Positive_activation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "Interestingly", ",", "injection", "of", "an", "enkephalin", "analog", "into", "the", "hypothalamus", "can", "produce", "conditioned", "place", "preference", "(", "Agmo", "and", "G", "o", "mez", "1991", ")", ",", "suggesting", "that", "mu", "opioid", "receptor", "signaling", "in", "the", "hypothalamus", "is", "involved", "in", "conditioned", "reward", "." ],
+    "event_indices" : [ 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 5, 6 ],
+    "controlled_indices" : [ 16, 17 ],
+    "trigger_indices" : [ 11, 12 ],
+    "rule_name" : "Positive_activation_syntax_1_verb",
+    "rule" : null
+  } ],
+  "hardInstances" : [ {
+    "sentence_tokens" : [ "For", "example", ",", "acute", "morphine", "can", "increase", "NF-kB", "activity", ",", "subsequently", "altering", "the", "expression", "of", "opioid", "receptors", "and", "peptides", ",", "while", "chronic", "morphine", "can", "lead", "to", "a", "reduction", "in", "NF-kB", "activity", "(", "Chen", "et", "al.", "2006", ")", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 22, 23 ], [ 29, 30 ] ]
+  }, {
+    "sentence_tokens" : [ "Precipitated", "morphine", "withdrawal", "can", "lead", "to", "alterations", "in", "Avp", "expression", "(", "Nunez", "et", "al.", "2007", ")", "and", "naloxone", "can", "reduce", "hypothalamic", "AVP", "mRNA", "levels", ",", "suggesting", "regulation", "by", "endogenous", "opioids", "(", "Zhou", "et", "al.", "2005", ")", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "G118", "allele", "is", "associated", "with", "reduced", "dynorphin", "and", "enkephalin", "gene", "expression", "and", "increased", "peptide", "levels", "in", "heroin", "users", "(", "Drakenberg", "et", "al.", "2006", ")", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 10, 11, 12 ], [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "Intracerebroventricular", "nociceptin", "can", "abolish", "morphine", "conditioned", "place", "preference", "(", "Ciccocioppo", "et", "al.", "2000", ")", ",", "which", "involves", "the", "hippocampus", "(", "Huston", "et", "al.", "2013", ")", "." ],
+    "entities_indices" : [ [ 5, 6, 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "Both", "gene", "expression", "(", "Beato", "1989", ")", "and", "opioid", "receptor", "availability", "can", "be", "modulated", "by", "hormonal", "status", "in", "at", "least", "some", "brain", "regions", "(", "Zubieta", "et", "al.", "1999", ")", "." ],
+    "entities_indices" : [ [ 8, 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "Both", "gene", "expression", "(", "Beato", "1989", ")", "and", "opioid", "receptor", "availability", "can", "be", "modulated", "by", "hormonal", "status", "in", "at", "least", "some", "brain", "regions", "(", "Zubieta", "et", "al.", "1999", ")", "." ],
+    "entities_indices" : [ [ 8, 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "Both", "gene", "expression", "(", "Beato", "1989", ")", "and", "opioid", "receptor", "availability", "can", "be", "modulated", "by", "hormonal", "status", "in", "at", "least", "some", "brain", "regions", "(", "Zubieta", "et", "al.", "1999", ")", "." ],
+    "entities_indices" : [ [ 1, 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "Both", "gene", "expression", "(", "Beato", "1989", ")", "and", "opioid", "receptor", "availability", "can", "be", "modulated", "by", "hormonal", "status", "in", "at", "least", "some", "brain", "regions", "(", "Zubieta", "et", "al.", "1999", ")", "." ],
+    "entities_indices" : [ [ 1, 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "As", "the", "A118G", "variant", "alters", "MOR", "function", ",", "it", "may", "cause", "changes", "in", "MOR", "modulated", "gene", "expression", "that", "contribute", "to", "the", "behavioral", ",", "molecular", ",", "and", "neurochemical", "alterations", "observed", "in", "humans", "and", "rodents", "bearing", "the", "G", "allele", "(", "Kreek", "et", "al.", "2005", ";", "Mura", "et", "al.", "2013", ")", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 15, 16, 17 ], [ 35, 36, 37 ] ]
+  }, {
+    "sentence_tokens" : [ "As", "the", "A118G", "variant", "alters", "MOR", "function", ",", "it", "may", "cause", "changes", "in", "MOR", "modulated", "gene", "expression", "that", "contribute", "to", "the", "behavioral", ",", "molecular", ",", "and", "neurochemical", "alterations", "observed", "in", "humans", "and", "rodents", "bearing", "the", "G", "allele", "(", "Kreek", "et", "al.", "2005", ";", "Mura", "et", "al.", "2013", ")", "." ],
+    "entities_indices" : [ [ 13, 14 ], [ 15, 16, 17 ], [ 35, 36, 37 ] ]
+  }, {
+    "sentence_tokens" : [ "Healthy", "human", "G118", "carriers", "have", "altered", "HPA", "axis", "function", "Chong", "et", "al.", "2006", ";", "Ducat", "et", "al.", "2013", ";", "Hernandez-Avila", "et", "al.", "2003", ";", "Lovallo", "et", "al.", "2015", ";", "Wand", "et", "al.", "2002", ")", "and", "GG", "mice", "show", "resilience", "to", "social", "stress", "(", "Briand", "et", "al.", "2015", ")", ",", "which", "may", ",", "in", "part", ",", "reflect", "altered", "hippocampal", "regulation", "of", "the", "HPA", "axis.Interestingly", ",", "a", "study", "of", "hippocampal", "function", "in", "A112G", "mice", "has", "shown", "that", "wild-type", "mice", "have", "increased", "excitatory", "hippocampal", "activity", "in", "response", "to", "morphine", "." ],
+    "entities_indices" : [ [ 36, 37 ], [ 76, 77 ] ]
+  }, {
+    "sentence_tokens" : [ "Healthy", "human", "G118", "carriers", "have", "altered", "HPA", "axis", "function", "Chong", "et", "al.", "2006", ";", "Ducat", "et", "al.", "2013", ";", "Hernandez-Avila", "et", "al.", "2003", ";", "Lovallo", "et", "al.", "2015", ";", "Wand", "et", "al.", "2002", ")", "and", "GG", "mice", "show", "resilience", "to", "social", "stress", "(", "Briand", "et", "al.", "2015", ")", ",", "which", "may", ",", "in", "part", ",", "reflect", "altered", "hippocampal", "regulation", "of", "the", "HPA", "axis.Interestingly", ",", "a", "study", "of", "hippocampal", "function", "in", "A112G", "mice", "has", "shown", "that", "wild-type", "mice", "have", "increased", "excitatory", "hippocampal", "activity", "in", "response", "to", "morphine", "." ],
+    "entities_indices" : [ [ 36, 37 ], [ 71, 72 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "mice", ",", "CREB", "signaling", "increases", "in", "the", "ventral", "tegmental", "area", "in", "response", "to", "nicotine", "reward", "associated", "environments", "and", "this", "increase", "requires", "MORs", "(", "Walters", "et", "al.", "2005", ")", "." ],
+    "entities_indices" : [ [ 12, 13, 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "As", "the", "A118G", "variant", "alters", "MOR", "function", ",", "it", "may", "cause", "changes", "in", "MOR", "modulated", "gene", "expression", "that", "contribute", "to", "the", "behavioral", ",", "molecular", ",", "and", "neurochemical", "alterations", "observed", "in", "humans", "and", "rodents", "bearing", "the", "G", "allele", "(", "Kreek", "et", "al.", "2005", ";", "Mura", "et", "al.", "2013", ")", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 8, 9 ], [ 35, 36, 37 ] ]
+  }, {
+    "sentence_tokens" : [ "Cannabinoid", "receptor", "signaling", ",", "including", "CB", "signaling", ",", "can", "regulate", "hippocampal", "function", ",", "presumably", "by", "regulating", "neurotransmitter", "release", "and", "synaptic", "responses", "(", "Davies", "et", "al.", "2002", ")", "." ],
+    "entities_indices" : [ [ 16, 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "Interestingly", ",", "injection", "of", "an", "enkephalin", "analog", "into", "the", "hypothalamus", "can", "produce", "conditioned", "place", "preference", "(", "Agmo", "and", "G", "o", "mez", "1991", ")", ",", "suggesting", "that", "mu", "opioid", "receptor", "signaling", "in", "the", "hypothalamus", "is", "involved", "in", "conditioned", "reward", "." ],
+    "entities_indices" : [ [ 16, 17 ], [ 18, 19, 20, 21, 22, 23 ], [ 26, 27, 28, 29 ] ]
+  }, {
+    "sentence_tokens" : [ "Interestingly", ",", "injection", "of", "an", "enkephalin", "analog", "into", "the", "hypothalamus", "can", "produce", "conditioned", "place", "preference", "(", "Agmo", "and", "G", "o", "mez", "1991", ")", ",", "suggesting", "that", "mu", "opioid", "receptor", "signaling", "in", "the", "hypothalamus", "is", "involved", "in", "conditioned", "reward", "." ],
+    "entities_indices" : [ [ 12, 13, 14, 15 ], [ 16, 17 ], [ 26, 27, 28, 29 ] ]
+  }, {
+    "sentence_tokens" : [ "Interestingly", ",", "injection", "of", "an", "enkephalin", "analog", "into", "the", "hypothalamus", "can", "produce", "conditioned", "place", "preference", "(", "Agmo", "and", "G", "o", "mez", "1991", ")", ",", "suggesting", "that", "mu", "opioid", "receptor", "signaling", "in", "the", "hypothalamus", "is", "involved", "in", "conditioned", "reward", "." ],
+    "entities_indices" : [ [ 12, 13, 14, 15 ], [ 18, 19, 20, 21, 22, 23 ], [ 26, 27, 28, 29 ] ]
+  } ],
+  "withoutRegulations" : [ {
+    "sentence_tokens" : [ "We", "have", "observed", "no", "differences", "in", "size", ",", "health", ",", "or", "mortality", "between", "AA", "and", "GG", "mice", "of", "either", "sex", "(", "data", "not", "shown", ")", "." ],
+    "entities_indices" : [ [ 13, 14 ], [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "Future", "investigation", "of", "the", "downstream", "signaling", "consequences", "of", "MORs", "in", "A112G", "mice", "will", "be", "valuable", "to", "understanding", "the", "behavioral", "and", "molecular", "changes", "caused", "by", "the", "G", "allele", "in", "rodent", "models", "and", "in", "humans", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 25, 26, 27 ] ]
+  }, {
+    "sentence_tokens" : [ "AVP", "in", "the", "central", "nervous", "system", "is", "involved", "in", "stress", "responsivity", ",", "drug", "dependence", ",", "and", "emotional", "behavior", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "Oprm1", "A112G", ",", "a", "single", "nucleotide", "polymorphism", ",", "alters", "expression", "of", "stress", "responsive", "genes", "in", "multiple", "brain", "regions", "in", "male", "and", "female", "mice", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "effect", "is", "attenuated", "in", "GG", "mice", "and", "may", "be", "due", "to", "a", "MOR", "loss", "of", "function", "in", "hippocampus", "(", "Mague", "et", "al.", "2015", ")", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "Mice", "homozygous", "for", "the", "G112", "allele", "show", "differences", "in", "opioid-", "and", "stress", "related", "phenotypes", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "Further", ",", "GG", "mice", "also", "show", "brain-region", "and", "sex", "specific", "alterations", "in", "DAMGO", "stimulated", "GTP", "gamma", "S", "binding", "(", "Wang", "et", "al.", "2014", ")", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "also", "detected", "nominal", "sex", "dependent", "as", "well", "as", "sex-by-genotype", "interaction", "effects", "on", "gene", "expression", "." ],
+    "entities_indices" : [ [ 13, 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "profiler", "array", "includes", "five", "reference", "genes", "(", "glyceraldehyde", "3-phosphate", "dehydrogenase", ",", "Gapdh", ";", "beta-glucuronidase", ",", "Gusb", ";", "heat", "shock", "protein", "90", "alpha", "(", "cytosolic", ")", ",", "class", "B", "member", "1", ",", "Hsp90ab1", ";", "peptidylprolyl", "isomerase", "A", ",", "Ppia", ";", "TATA", "binding", "protein", ",", "Tbp", ")", "." ],
+    "entities_indices" : [ [ 8, 9, 10 ], [ 12, 13 ], [ 14, 15 ], [ 16, 17 ], [ 18, 19 ], [ 19, 20 ], [ 32, 33 ], [ 34, 35, 36, 37 ], [ 38, 39 ], [ 44, 45 ] ]
+  }, {
+    "sentence_tokens" : [ "OPRM1", "A118G", "has", "been", "demonstrated", "to", "produce", "a", "number", "of", "biochemical", "and", "molecular", "alterations", "(", "Kroslak", "et", "al.", "2007", ")", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "Our", "custom", "RT", "Profiler", "TM", "PCR", "Array", "(", "plate", "build", "CAPM13405E", ",", "Qiagen", ")", "used", "for", "the", "present", "study", "measures", "the", "expression", "of", "24", "genes", "related", "to", "drug", "and", "stress", "responsivity", "(", "for", "complete", "list", ",", "see", "Table", "1", ")", "." ],
+    "entities_indices" : [ [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "To", "date", ",", "there", "have", "been", "no", "studies", "of", "the", "effects", "of", "hormonal", "status", "in", "Oprm1", "A112G", "mice", "." ],
+    "entities_indices" : [ [ 15, 16 ], [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "Of", "these", "five", "reference", "genes", ",", "Gusb", "was", "stably", "expressed", "across", "groups", "in", "caudoputamen", "and", "Tbp", "was", "stably", "expressed", "across", "groups", "in", "nucleus", "accumbens", ",", "hypothalamus", ",", "hippocampus", ",", "and", "amygdala", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "MOR", "activation", "leads", "to", "a", "series", "of", "downstream", "cellular", "effects", "(", "Al-Hasani", "and", "Bruchas", "2011", ")", ",", "which", "may", "include", "changes", "in", "gene", "expression", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 22, 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "Both", "chronic", "morphine", "and", "morphine", "withdrawal", "have", "been", "demonstrated", "to", "alter", "galanin", "gene", "expression", "in", "multiple", "brain", "regions", ",", "implicating", "MORs", "in", "regulation", "of", "Gal", "expression", "(", "McClung", "et", "al.", "2005", ")", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 4, 5 ], [ 11, 12 ], [ 12, 13, 14 ], [ 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "observed", "several", "nominally", "significant", "sex", "dependent", "differences", "in", "gene", "expression", "and", "genotype-by-sex", "interactions", ";", "however", ",", "none", "of", "these", "findings", "survived", "correction", "for", "multiple", "testing", "." ],
+    "entities_indices" : [ [ 9, 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "sample", "of", "n", "=", "20", "mice", "(", "representing", "approximately", "9", "litters", ")", "was", "allocated", "in", "four", "different", "groups", "(", "male", "AA", ",", "male", "GG", ",", "female", "AA", ",", "female", "GG", ";", "N", "=", "5/group", ")", "according", "to", "a", "2", "x", "2", "factorial", "design", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 21, 22 ], [ 27, 28 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "A112G", "mice", ",", "compared", "to", "wild-type", "AA", "homozygotes", ",", "GG", "mice", "show", "increased", "c-Fos", "immunoreactivity", "in", "multiple", "brain", "regions", "in", "following", "social", "stress", "(", "Briand", "et", "al.", "2015", ")", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 7, 8 ], [ 11, 12 ], [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "did", "not", "observe", "any", "interaction", "effects", "in", "gene", "expression", "in", "hippocampus", "." ],
+    "entities_indices" : [ [ 8, 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "These", "changes", "may", "result", "from", "a", "reduction", "in", "direct", "effects", "of", "MORs", "on", "hippocampal", "neurons", "as", "well", "as", "indirect", "effects", "through", "nociceptin", "or", "cannabinoid", "signaling.Sex", "differences", "in", "the", "expression", "of", "drug", "of", "abuse-", "and", "stress", "responsive", "genes", "in", "male", "and", "female", "mice", "are", "not", "routinely", "studied", "." ],
+    "entities_indices" : [ [ 21, 22 ], [ 41, 42 ] ]
+  }, {
+    "sentence_tokens" : [ "Findings", "are", "summarized", "in", "Tables", "2", ",", "3", ",", "and", "4", "." ],
+    "entities_indices" : [ [ 4, 5, 6, 7, 8, 9, 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "Genotype-by-sex", "effects", "on", "behavior", "have", "been", "observed", "in", "A112G", "mice", "." ],
+    "entities_indices" : [ [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "neurohypophyseal", "system", ",", "AVP", "acts", "as", "an", "adrenocorticotropic", "hormone", "(", "ACTH", ")", "secretagogue", "Aguilera", "et", "al.", "1994", ";", "Griebel", "et", "al.", "2002", ";", "Zhou", "et", "al.", "2008", ")", "and", ",", "along", "with", "corticotropin", "releasing", "hormone", ",", "AVP", "is", "involved", "in", "regulating", "hypothalamic-pituitary-adrenal", "(", "HPA", ")", "axis", "function", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 9, 10, 11 ], [ 12, 13 ], [ 14, 15 ], [ 34, 35, 36, 37 ], [ 38, 39 ], [ 45, 46 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "Oprm1", "A112G", "mouse", "exhibits", "genotype", "dependent", "molecular", "alterations", ",", "including", "reductions", "in", "MOR", "mRNA", "and", "protein", "expression", "(", "Huang", "et", "al.", "2012", ";", "Mague", "et", "al.", "2009", ";", "Wang", "et", "al.", "2014", ")", "as", "well", "as", "behavioral", "alterations", ",", "including", "reduced", "morphine", "(", "Huang", "et", "al.", "2012", ";", "Mague", "et", "al.", "2009", ";", "Wang", "et", "al.", "2014", ")", "and", "buprenorphine", "(", "Browne", "et", "al.", "2017", ")", "analgesia", ",", "and", "increased", "opioid", "self", "administration", "(", "Zhang", "et", "al.", "2015", ")", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 13, 14 ], [ 42, 43 ], [ 60, 61 ] ]
+  }, {
+    "sentence_tokens" : [ "Heterozygous", "A112G", "mice", "(", "Mague", "et", "al.", "2009", ")", "were", "mated", "to", "obtain", "homozygous", "(", "112AA", "or", "112GG", ";", "AA", "or", "GG", ")", "offspring", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "GG", "mouse", "birth", "rates", "are", "slightly", "lower", "than", "the", "expected", "Mendelian", "rates", "as", "has", "been", "previously", "described", "(", "Mague", "et", "al.", "2009", ")", ";", "however", ",", "mice", "carrying", "the", "112G", "allele", "are", "fertile", "and", "produce", "litters", "of", "normal", "size", "." ],
+    "entities_indices" : [ [ 26, 27 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "G118", "allele", "is", "associated", "with", "greater", "daily", "drug", "intake", "in", "heroin", "users", "(", "Shi", "et", "al.", "2002", ")", ",", "greater", "automatic", "approach", "tendencies", "for", "alcohol", "and", "appetitive", "cues", "(", "Wiers", "et", "al.", "2009", ")", ",", "and", "increased", "neuronal", "activity", "in", "response", "to", "alcohol", "cues", "in", "cortical", "and", "striatal", "regions", "as", "shown", "by", "BOLD", "(", "blood", "oxygenation", "level", "dependent", ")", "imaging", "(", "Filbey", "et", "al.", "2008", ")", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 11, 12 ], [ 25, 26 ], [ 41, 42, 43, 44 ] ]
+  }, {
+    "sentence_tokens" : [ "Alterations", "in", "gene", "expression", "likely", "contribute", "to", "long-term", ",", "stable", "changes", "and", "variability", "in", "drug-", "and", "stress", "mediated", "behavior", "(", "Gray", "et", "al.", "2014", ";", "Kreek", "et", "al.", "2005", ",", "2012", ";", "Nestler", "2004b", ";", "Nestler", "and", "Aghajanian", "1997", ")", ";", "these", "differences", "in", "gene", "expression", "may", "then", "contribute", "to", "alterations", "in", "drug-", "and", "stress", "related", "behaviors", "in", "Oprm1", "A112G", "mice", "." ],
+    "entities_indices" : [ [ 2, 3, 4 ], [ 44, 45, 46 ], [ 58, 59 ], [ 60, 61 ] ]
+  }, {
+    "sentence_tokens" : [ "Genes", "showing", "significant", "effects", "with", "nominal", "p", "values", "are", "reported", "in", "Tables", "2", ",", "3", ",", "and", "4", "." ],
+    "entities_indices" : [ [ 11, 12, 13, 14, 15, 16, 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "detected", "nominal", "genotype", "dependent", "changes", "in", "gene", "expression", "of", "multiple", "genes", "." ],
+    "entities_indices" : [ [ 7, 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "Future", "studies", "with", "greater", "statistical", "power", "may", "reveal", "other", "genotype", "dependent", "differences", "as", "well", "as", "sex", "dependent", "differences", "in", "gene", "expression", "in", "male", "and", "female", "AA", "and", "GG", "mice.The", "hypothalamus", "plays", "a", "large", "role", "in", "feeding", ",", "stress", ",", "and", "homeostatic", "behavior", ",", "but", "it", "may", "also", "modulate", "reward", "related", "behaviors", "(", "DiLeone", "et", "al.", "2003", ";", "Le", "Merrer", "et", "al.", "2009", ")", "." ],
+    "entities_indices" : [ [ 19, 20, 21 ], [ 25, 26 ], [ 57, 58 ] ]
+  }, {
+    "sentence_tokens" : [ "Changes", "in", "the", "regulation", "of", "these", "genes", "by", "mu-opioid", "receptors", "encoded", "by", "the", "G112", "allele", "may", "be", "involved", "in", "some", "of", "the", "behavioral", "and", "molecular", "consequences", "of", "this", "polymorphism", "observed", "in", "mice", "." ],
+    "entities_indices" : [ [ 8, 9, 10 ], [ 14, 15 ], [ 31, 32 ] ]
+  }, {
+    "sentence_tokens" : [ "Many", "of", "the", "signaling", "pathways", "that", "MORs", "modulate", "ultimately", "act", "to", "regulate", "the", "activity", "of", "well", "characterized", "transcriptional", "regulators", "such", "as", "NF-kappa", "B", ",", "CREB", ",", "and", "Fos", "proteins", "(", "Al-Hasani", "and", "Bruchas", "2011", ";", "Deb", "et", "al.", "2010", ";", "Goldsmith", "et", "al.", "2011", ";", "Ho", "et", "al.", "2009", ")", ",", "although", "the", "ultimate", "transcriptional", "consequences", "depend", "upon", "cellular", "context", "." ],
+    "entities_indices" : [ [ 24, 25 ], [ 27, 28 ], [ 35, 36 ], [ 45, 46 ] ]
+  }, {
+    "sentence_tokens" : [ "Ten-", "to", "twelve-week-old", "mice", "were", "housed", "in", "groups", "of", "four", "to", "five", "with", "free", "access", "to", "food", "and", "water", "in", "a", "light-", "(", "12:12", "h", "light", "and", "dark", "cycle", ",", "lights", "on", "at", "0900", ",", "lights", "off", "at", "2100", ")", "and", "temperature-", "(", "25", "degrees", "C", ")", "controlled", "room", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "suggests", "reduced", "MOR", "dependent", "positive", "transcriptional", "regulation", "by", "MORs", "encoded", "by", "the", "variant", "G112", "allele", "compared", "to", "the", "prototype", "A112", "allele", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 15, 16 ], [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "MORs", "are", "poised", "to", "regulate", "a", "number", "of", "transcriptional", "pathways", "by", "regulating", "the", "activity", "of", "several", "downstream", "effectors", ",", "including", "adenylate", "cyclase", ",", "ion", "channels", ",", "and", ",", "of", "note", ",", "multiple", "classes", "of", "kinases", "(", "Ho", "et", "al.", "2009", ")", "." ],
+    "entities_indices" : [ [ 20, 21, 22 ], [ 36, 37 ] ]
+  }, {
+    "sentence_tokens" : [ "Hypothalamic", "galanin", "is", "implicated", "in", "stress", "resiliency", "(", "Juhasz", "et", "al.", "2014", ";", "Wrenn", "and", "Holmes", "2006", ")", "and", "altered", "galanin", "expression", "in", "this", "region", "has", "been", "associated", "with", "multiple", "pathological", "states", ",", "including", "depression", "and", "alcoholism", "(", "Davidson", "et", "al.", "2011", ")", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 20, 21 ], [ 36, 37 ] ]
+  }, {
+    "sentence_tokens" : [ "OPRM1", "A118G", ",", "a", "functional", "human", "mu-opioid", "receptor", "(", "MOR", ")", "polymorphism", ",", "is", "associated", "with", "drug", "dependence", "and", "altered", "stress", "responsivity", "in", "humans", "as", "well", "as", "altered", "MOR", "signaling", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 6, 7, 8 ], [ 9, 10 ], [ 28, 29 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "current", "study", ",", "we", "have", "profiled", "the", "expression", "of", "an", "array", "genes", "that", "(", "1", ")", "are", "associated", "with", "mu", "opioid", "dependence", "in", "humans", "(", "Bart", "et", "al.", "2004", ";", "Levran", "et", "al.", "2008", ")", "or", "(", "2", ")", "have", "been", "demonstrated", "to", "be", "related", "to", "responses", "to", "stress", "or", "drugs", "of", "abuse", "in", "rodents", "(", "Bale", "et", "al.", "2000", ";", "Caputi", "et", "al.", "2014", ";", "Deroche-Gamonet", "et", "al.", "2003", ";", "Edwards", "et", "al.", "2012", ";", "McClung", "et", "al.", "2005", ";", "Spangler", "et", "al.", "1993", ";", "Uhl", "et", "al.", "1988", ";", "Valenza", "et", "al.", "2016", ";", "Zhou", "et", "al.", "2001", ")", "." ],
+    "entities_indices" : [ [ 22, 23, 24 ], [ 27, 28 ] ]
+  }, {
+    "sentence_tokens" : [ "Here", ",", "we", "measure", "the", "baseline", "mRNA", "expression", "of", "these", "genes", "in", "the", "caudoputamen", ",", "nucleus", "accumbens", ",", "hypothalamus", ",", "hippocampus", ",", "and", "amygdala", "in", "minimally", "handled", ",", "drug-na", "i", "ve", ",", "male", ",", "and", "female", "mice", "homozygous", "for", "either", "the", "A112", "(", "AA", ")", "or", "G112", "(", "GG", ")", "allele", "." ],
+    "entities_indices" : [ [ 32, 33 ], [ 36, 37 ], [ 43, 44 ], [ 47, 48, 49, 50, 51 ] ]
+  }, {
+    "sentence_tokens" : [ "Mice", "were", "sacrificed", "by", "rapid", "decapitation", "between", "2", "and", "3", "h", "following", "lights", "on", "(", "1100", "-", "1200", ")", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "G118", "allele", "also", "significantly", "alters", "stress", "responsivity", "and", "HPA", "axis", "regulation", "in", "healthy", "humans", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "RNA", "extraction", "and", "cDNA", "synthesis", "." ],
+    "entities_indices" : [ [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "example", ",", "Mague", "and", "colleagues", "found", "that", "female", "GG", "mice", "fail", "to", "develop", "a", "significant", "morphine", "conditioned", "place", "preference", ",", "while", "AA", "males", ",", "AA", "females", ",", "and", "GG", "males", "did", "develop", "a", "significant", "morphine", "conditioned", "place", "preference", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 16, 17 ], [ 17, 18, 19, 20 ], [ 22, 23 ], [ 25, 26 ], [ 35, 36 ], [ 36, 37, 38, 39 ] ]
+  }, {
+    "sentence_tokens" : [ "Mice", "bearing", "an", "equivalent", "SNP", ",", "A112G", ",", "in", "the", "mouse", "MOR", "gene", "(", "Oprm1", ")", "were", "generated", ",", "characterized", ",", "and", "studied", "(", "Mague", "et", "al.", "2009", ")", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 11, 12 ], [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "used", "both", "male", "and", "female", "homozygous", "mice", "(", "AA", "or", "GG", ")", "in", "the", "current", "study.Our", "primary", "aim", "was", "to", "identify", "genes", "that", "were", "differentially", "expressed", "in", "GG", "versus", "AA", "mice", "in", "each", "brain", "region", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 9, 10 ], [ 30, 31, 32 ] ]
+  }, {
+    "sentence_tokens" : [ "Individual", "reactions", "had", "a", "total", "volume", "of", "10", "mu", "L", "and", "comprised", "cDNA", "diluted", "in", "2", "x", "SuperArray", "RT", "Real-Time", "TM", "SYBR", "Green", "PCR", "Master", "Mix", "(", "Qiagen", ")", "and", "ultrapure", "water.The", "real-time", "PCR", "reactions", "were", "carried", "out", "in", "an", "ABI", "Prism", "7900", "HT", "Sequence", "Detection", "System", "using", "the", "following", "program", ":", "10", "min", "at", "95", "degrees", "C", "(", "15", "s", "at", "95", "degrees", "C", "and", "1", "min", "at", "60", "degrees", "C", ")", "x", "40", "cycles", ",", "15", "s", "at", "95", "degrees", "C", ",", "15", "s", "at", "60", "degrees", "C", ",", "and", "15", "s", "at", "95", "degrees", "C." ],
+    "entities_indices" : [ [ 20, 21 ], [ 27, 28 ], [ 40, 41 ], [ 41, 42 ] ]
+  }, {
+    "sentence_tokens" : [ "RNA", "quality", "and", "quantity", "for", "each", "sample", "were", "determined", "using", "an", "Agilent", "2100", "Bioanalyzer", "(", "Agilent", "Technologies", ",", "Santa", "Clara", ",", "CA", ")", "." ],
+    "entities_indices" : [ [ 18, 19 ], [ 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "None", "of", "these", "sex", "dependent", "differences", "in", "gene", "expression", "survived", "correction", "for", "multiple", "testing", ";", "however", ",", "the", "nominally", "significant", "findings", "are", "reported", "in", "Table", "3", "." ],
+    "entities_indices" : [ [ 7, 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "hippocampus", "plays", "a", "role", "in", "feedback", "inhibition", "of", "the", "HPA", "axis", "(", "Jacobson", "and", "Sapolsky", "1991", ")", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "amygdala", ",", "we", "did", "not", "observe", "any", "significant", "differences", "in", "gene", "expression", "between", "AA", "and", "GG", "mice", "." ],
+    "entities_indices" : [ [ 11, 12, 13 ], [ 14, 15 ], [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "current", "study", "examines", "the", "expression", "of", "24", "genes", "related", "to", "drug", "and", "stress", "responsivity", "in", "the", "caudoputamen", ",", "nucleus", "accumbens", ",", "hypothalamus", ",", "hippocampus", ",", "and", "amygdala", "of", "drug-naive", ",", "stress", "minimized", ",", "male", "and", "female", "mice", "homozygous", "for", "either", "the", "G112", "variant", "allele", "or", "the", "wild-type", "A112", "allele", "." ],
+    "entities_indices" : [ [ 37, 38 ], [ 43, 44, 45 ], [ 47, 48 ] ]
+  }, {
+    "sentence_tokens" : [ "Heterozygous", "mice", "(", "112AG", ")", "were", "also", "produced", ",", "but", "only", "homozygous", "mice", "of", "both", "sexes", "are", "examined", "in", "the", "present", "study", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "detected", "genotype", "dependent", "differences", "in", "hypothalamic", "expression", "of", "the", "genes", "encoding", "the", "non", "opioid", "neuropeptides", "arginine", "vasopressin", "and", "galanin", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 10, 11 ], [ 15, 16 ], [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "There", "is", "evidence", "that", "AVP", "also", "participates", "in", "the", "effects", "of", "opioids", "on", "HPA", "activity", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "Benjamini-Hochberg", "method", "(", "false", "discovery", "rate", ";", "5", "%", ")", "was", "used", "to", "identify", "differences", "in", "gene", "expression", "remaining", "significant", "after", "correction", "for", "multiple", "hypothesis", "testing", "(", "see", "Tables", "2", ",", "3", ",", "and", "4", ")", "." ],
+    "entities_indices" : [ [ 17, 18, 19 ], [ 29, 30, 31, 32, 33, 34, 35, 36 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "found", "reduced", "hippocampal", "expression", "of", "Oprl1", ",", "Cnr1", "in", "GG", "mice", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 8, 9 ], [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "MOR", "signaling", "can", "regulate", "many", "cellular", "processes", ",", "including", "gene", "expression", ",", "and", "many", "of", "the", "long-term", ",", "stable", "effects", "of", "drugs", "and", "stress", "may", "stem", "from", "changes", "in", "gene", "expression", "in", "diverse", "brain", "regions", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 9, 10, 11 ], [ 29, 30, 31 ] ]
+  }, {
+    "sentence_tokens" : [ "It", "is", "unclear", "why", "this", "may", "be", "the", "case", ";", "however", ",", "it", "has", "been", "demonstrated", "that", "mu", "opioid", "effects", "and", "mu", "opioid", "receptor", "signaling", "can", "vary", "between", "male", "and", "female", "rodents", "(", "Craft", "2008", ")", "." ],
+    "entities_indices" : [ [ 17, 18 ], [ 21, 22, 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "Total", "RNA", "was", "isolated", "from", "homogenates", "using", "miRNeasy", "kits", "(", "Qiagen", ",", "Valencia", ",", "CA", ")", "." ],
+    "entities_indices" : [ [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "common", "single-nucleotide", "polymorphism", "(", "SNP", ")", "in", "the", "human", "mu-opioid", "receptor", "gene", "(", "OPRM1", ")", ",", "A118G", ",", "is", "associated", "with", "drug", "dependence", "in", "humans", "(", "Bart", "et", "al.", "2004", ",", "2006", ";", "Bond", "et", "al.", "1998", ";", "Nishizawa", "et", "al.", "2006", ")", ",", "although", "some", "studies", "have", "found", "no", "association", "(", "Bergen", "et", "al.", "1997", ";", "Coller", "et", "al.", "2009", ")", ",", "and", "others", "have", "suggested", "that", "it", "may", "be", "associated", "with", "drug", "dependence", "in", "some", "populations", "but", "protective", "in", "others", "(", "Schwantes-An", "et", "al.", "2016", ")", "." ],
+    "entities_indices" : [ [ 10, 11, 12, 13 ], [ 14, 15 ], [ 27, 28 ] ]
+  }, {
+    "sentence_tokens" : [ "Genomic", "DNA", "was", "removed", "and", "cDNA", "was", "synthesized", "from", "500", "ng", "of", "total", "RNA", "using", "RT", "HT", "First", "Strand", "kits", "(", "Qiagen", ",", "Valencia", ",", "CA", ")", "." ],
+    "entities_indices" : [ [ 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "mu-opioid", "receptor", "(", "MOR", ")", "is", "the", "primary", "site", "of", "action", "of", "many", "of", "the", "endogenous", "opioids", ",", "including", "beta-endorphin", "and", "met", "enkephalin", "(", "Akil", "et", "al.", "1984", ";", "Champion", "et", "al.", "1997", ";", "Hughes", "et", "al.", "1975", ")", "and", "many", "clinically", "important", "opioid", "therapeutics", "." ],
+    "entities_indices" : [ [ 1, 2, 3 ], [ 4, 5 ], [ 20, 21 ], [ 22, 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "Potential", "mechanisms", "of", "regulation", "of", "gene", "expression", "by", "MORs", "." ],
+    "entities_indices" : [ [ 3, 4, 5, 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "Of", "these", ",", "four", "genotype", "dependent", "differences", "survived", "correction", "for", "multiple", "testing", ":", "Avp", "and", "Gal", "in", "the", "hypothalamus", "and", "Oprl1", "and", "Cnr1", "in", "the", "hippocampus", "." ],
+    "entities_indices" : [ [ 13, 14 ], [ 15, 16 ], [ 20, 21 ], [ 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "also", "sought", "to", "identify", "genes", "included", "in", "our", "array", "that", "are", "differentially", "expressed", "in", "females", "and", "males", ",", "as", "the", "expression", "of", "some", "of", "the", "target", "genes", "included", "in", "our", "custom", "array", "might", "differ", "by", "sex", ",", "and", "because", "some", "studies", "have", "found", "sex", "dependent", "differences", "in", "behavioral", "and", "molecular", "measures", "in", "Oprm1", "A112G", "mice", "(", "Mague", "et", "al.", "2009", ";", "Wang", "et", "al.", "2014", ")", "." ],
+    "entities_indices" : [ [ 53, 54 ], [ 55, 56 ] ]
+  }, {
+    "sentence_tokens" : [ "Avp", "and", "Gal", "expressions", "were", "reduced", "in", "GG", "mice", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 2, 3 ], [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "Mice", "were", "genotyped", "by", "PCR", "using", "genomic", "DNA", "obtained", "by", "tail", "biopsy", "(", "forward", "primer", ",", "5", "'-GCTCCA", "TCTTGGATCCCCTTT-3", "'", ";", "reverse", "primer", ",", "5", "'-GAGCTACCCAGCAATTCCAGA-3", "'", ")", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "vitro", "studies", "in", "AV12", "cells", "expressing", "the", "G118", "MOR", "variant", "revealed", "a", "three-fold", "increase", "in", "beta-endorphin", "binding", "affinity", "as", "well", "as", "a", "three-fold", "increase", "in", "beta-endorphin", "potency", "as", "measured", "by", "activation", "of", "G", "protein", "coupled", "inward", "rectifying", "potassium", "channels", "(", "Bond", "et", "al.", "1998", ")", "." ],
+    "entities_indices" : [ [ 9, 10 ], [ 16, 17 ], [ 26, 27 ], [ 33, 34, 35 ], [ 38, 39, 40 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "ABI", "Prism", "7900", "Sequence", "Detection", "System", "was", "used", "to", "calculate", "the", "Ct", "value", "for", "each", "well", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 2, 3 ], [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "G118", "carriers", "show", "genotype", "dependent", "differences", "in", "response", "to", "endocrine", "challenge", "by", "metyrapone", "(", "Ducat", "et", "al.", "2013", ")", "as", "well", "as", "reductions", "in", "cortisol", "response", "to", "acute", "psychological", "stressors", "and", "MOR", "blockade", "by", "naltrexone", "or", "naloxone", "(", "Chong", "et", "al.", "2006", ";", "Hernandez-Avila", "et", "al.", "2003", ";", "Lovallo", "et", "al.", "2015", ";", "Wand", "et", "al.", "2002", ")", "." ],
+    "entities_indices" : [ [ 12, 13 ], [ 24, 25 ], [ 31, 32 ], [ 34, 35 ], [ 36, 37 ] ]
+  }, {
+    "sentence_tokens" : [ "Basal", "gene", "expression", "in", "Oprm1", "A112G", "mice", "." ],
+    "entities_indices" : [ [ 1, 2, 3 ], [ 4, 5 ], [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "same", "study", ",", "GG", "females", "also", "showed", "reduced", "naloxone", "precipitated", "morphine", "withdrawal", "compared", "to", "AA", "females", "(", "Mague", "et", "al.", "2009", ")", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 12, 13 ], [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "Ct", "values", "were", "normalized", "by", "calculating", "the", "difference", "between", "the", "target", "gene", "and", "the", "most", "stable", "reference", "gene", "according", "to", "brain", "region", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "Following", "correction", "for", "multiple", "testing", ",", "two", "genes", "differing", "by", "genotype", "in", "hypothalamus", ",", "Avp", "and", "Gal", ",", "and", "two", "genes", "differing", "by", "genotype", "in", "hippocampus", ",", "Cnr1", "and", "Opr1", ",", "remained", "significantly", "different", "between", "AA", "and", "GG", "mice", "(", "Table", "2", ")", "." ],
+    "entities_indices" : [ [ 14, 15 ], [ 16, 17 ], [ 27, 28 ], [ 29, 30 ], [ 35, 36 ], [ 38, 39 ] ]
+  }, {
+    "sentence_tokens" : [ "Many", "of", "the", "long-term", "changes", "in", "brain", "and", "behavior", "that", "characterize", "addiction", "are", "likely", "underpinned", "by", "changes", "in", "gene", "expression", "(", "Nestler", "2004a", ";", "Nestler", "and", "Aghajanian", "1997", ")", "." ],
+    "entities_indices" : [ [ 18, 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "Custom", "RT", "2", "ProfilerTM", "PCR", "Array", "." ],
+    "entities_indices" : [ [ 1, 2, 3, 4, 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "A118G", "is", "the", "most", "common", "coding", "region", "variant", "in", "the", "OPRM1", "gene", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "hippocampus", "is", "critically", "involved", "in", "learning", "and", "memory", ",", "but", "may", "also", "be", "involved", "in", "motivated", "behavior", "and", "drug", "reinforcement", "(", "Ito", "et", "al.", "2008", ";", "Koob", "and", "Volkow", "2010", ";", "Le", "Merrer", "et", "al.", "2009", ";", "Sharifzadeh", "et", "al.", "2006", ";", "Tracy", "et", "al.", "2001", ")", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 32, 33 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "mouse", "model", "bearing", "an", "equivalent", "polymorphism", "(", "Oprm1", "A112G", ")", "was", "previously", "generated", "and", "studied", "." ],
+    "entities_indices" : [ [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "Studies", "involving", "the", "manipulation", "of", "gonadal", "steroids", "in", "these", "mice", "will", "be", "required", "to", "investigate", "their", "involvement", "in", "the", "sex", "dependent", "differences", "observed", "in", "A112G", "mice", "." ],
+    "entities_indices" : [ [ 9, 10 ], [ 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "have", "demonstrated", "that", "the", "basal", "expression", "of", "genes", "encoding", "key", "components", "of", "drug", "of", "abuse-", "and", "stress", "responsive", "systems", "are", "altered", "in", "male", "and", "female", "Oprm1", "A112G", "mice", "." ],
+    "entities_indices" : [ [ 26, 27 ], [ 28, 29 ] ]
+  }, {
+    "sentence_tokens" : [ "Effect", "of", "genotype", "on", "basal", "gene", "expression", "." ],
+    "entities_indices" : [ [ 5, 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "Although", "we", "found", "nominally", "significant", "genotype-", "and", "sex", "dependent", "differences", "in", "the", "basal", "expression", "of", "a", "number", "of", "these", "genes", "in", "multiple", "regions", ",", "only", "genotype", "dependent", "differences", "in", "the", "expression", "of", "Avp", "and", "Gal", "in", "the", "hypothalamus", ",", "as", "well", "as", "Oprl1", "and", "Cnr1", "in", "the", "hippocampus", "survived", "corrections", "for", "multiplicity", "of", "testing", "(", "Tables", "2", ",", "3", ",", "and", "4", ")", "." ],
+    "entities_indices" : [ [ 32, 33 ], [ 34, 35 ], [ 42, 43 ], [ 44, 45 ], [ 55, 56, 57, 58, 59, 60, 61, 62 ] ]
+  }, {
+    "sentence_tokens" : [ "Tissues", "were", "homogenized", "in", "QIAzol", "(", "Qiagen", ",", "Valencia", ",", "CA", ")", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "Mu", "opioid", "receptors", "are", "involved", "in", "diverse", "neurobiological", "functions", "including", "drug", "reward", ",", "analgesia", ",", "and", "stress", "responsivity", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "Oprm1", "A112G", "mice", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "Normalized", "RT-PCR", "gene", "expressions", "were", "analyzed", "by", "two-way", "ANOVA", "with", "main", "effects", "of", "sex", "and", "genotype", "as", "well", "as", "their", "interaction", "." ],
+    "entities_indices" : [ [ 1, 2, 3 ], [ 8, 9 ], [ 19, 20 ], [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "Interestingly", ",", "for", "all", "of", "these", "nominally", "significant", "sex", "dependent", "differences", "in", "gene", "expression", ",", "female", "mice", "showed", "greater", "expression", "levels", "compared", "to", "males", "regardless", "of", "genotype", "(", "Table", "3", ")", "." ],
+    "entities_indices" : [ [ 12, 13, 14 ], [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "Effect", "of", "sex", "on", "basal", "gene", "expression", "." ],
+    "entities_indices" : [ [ 5, 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "These", "neuropeptides", "are", "involved", "in", "diverse", "functions", "including", "stress", "responsivity", ",", "motivational", "effects", "of", "opioids", "and", "psychostimulants", ",", "processing", "of", "appetitive", "stimuli", ",", "and", "emotional", "regulation", "(", "Bali", "et", "al.", "2015", ";", "Bisagno", "and", "Cadet", "2014", ";", "Zhou", "et", "al.", "2008", ")", "." ],
+    "entities_indices" : [ [ 1, 2 ] ]
+  } ],
+  "emptySentences" : [ {
+    "sentence_tokens" : [ "Oprm1", "A112G", ",", "a", "single", "nucleotide", "polymorphism", ",", "alters", "expression", "of", "stress", "responsive", "genes", "in", "multiple", "brain", "regions", "in", "male", "and", "female", "mice", "." ]
+  }, {
+    "sentence_tokens" : [ "Background", "." ]
+  }, {
+    "sentence_tokens" : [ "OPRM1", "A118G", ",", "a", "functional", "human", "mu-opioid", "receptor", "(", "MOR", ")", "polymorphism", ",", "is", "associated", "with", "drug", "dependence", "and", "altered", "stress", "responsivity", "in", "humans", "as", "well", "as", "altered", "MOR", "signaling", "." ]
+  }, {
+    "sentence_tokens" : [ "MOR", "signaling", "can", "regulate", "many", "cellular", "processes", ",", "including", "gene", "expression", ",", "and", "many", "of", "the", "long-term", ",", "stable", "effects", "of", "drugs", "and", "stress", "may", "stem", "from", "changes", "in", "gene", "expression", "in", "diverse", "brain", "regions", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "mouse", "model", "bearing", "an", "equivalent", "polymorphism", "(", "Oprm1", "A112G", ")", "was", "previously", "generated", "and", "studied", "." ]
+  }, {
+    "sentence_tokens" : [ "Mice", "homozygous", "for", "the", "G112", "allele", "show", "differences", "in", "opioid-", "and", "stress", "related", "phenotypes", "." ]
+  }, {
+    "sentence_tokens" : [ "Approach", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "current", "study", "examines", "the", "expression", "of", "24", "genes", "related", "to", "drug", "and", "stress", "responsivity", "in", "the", "caudoputamen", ",", "nucleus", "accumbens", ",", "hypothalamus", ",", "hippocampus", ",", "and", "amygdala", "of", "drug-naive", ",", "stress", "minimized", ",", "male", "and", "female", "mice", "homozygous", "for", "either", "the", "G112", "variant", "allele", "or", "the", "wild-type", "A112", "allele", "." ]
+  }, {
+    "sentence_tokens" : [ "Results", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "detected", "nominal", "genotype", "dependent", "changes", "in", "gene", "expression", "of", "multiple", "genes", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "also", "detected", "nominal", "sex", "dependent", "as", "well", "as", "sex-by-genotype", "interaction", "effects", "on", "gene", "expression", "." ]
+  }, {
+    "sentence_tokens" : [ "Of", "these", ",", "four", "genotype", "dependent", "differences", "survived", "correction", "for", "multiple", "testing", ":", "Avp", "and", "Gal", "in", "the", "hypothalamus", "and", "Oprl1", "and", "Cnr1", "in", "the", "hippocampus", "." ]
+  }, {
+    "sentence_tokens" : [ "Conclusions", "." ]
+  }, {
+    "sentence_tokens" : [ "Changes", "in", "the", "regulation", "of", "these", "genes", "by", "mu-opioid", "receptors", "encoded", "by", "the", "G112", "allele", "may", "be", "involved", "in", "some", "of", "the", "behavioral", "and", "molecular", "consequences", "of", "this", "polymorphism", "observed", "in", "mice", "." ]
+  }, {
+    "sentence_tokens" : [ "Introduction", "." ]
+  }, {
+    "sentence_tokens" : [ "Mu", "opioid", "receptors", "are", "involved", "in", "diverse", "neurobiological", "functions", "including", "drug", "reward", ",", "analgesia", ",", "and", "stress", "responsivity", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "mu-opioid", "receptor", "(", "MOR", ")", "is", "the", "primary", "site", "of", "action", "of", "many", "of", "the", "endogenous", "opioids", ",", "including", "beta-endorphin", "and", "met", "enkephalin", "(", "Akil", "et", "al.", "1984", ";", "Champion", "et", "al.", "1997", ";", "Hughes", "et", "al.", "1975", ")", "and", "many", "clinically", "important", "opioid", "therapeutics", "." ]
+  }, {
+    "sentence_tokens" : [ "Physiological", "and", "behavioral", "responses", "to", "opioids", "can", "vary", "from", "individual", "to", "individual", "(", "Smith", "2008", ")", ",", "and", "the", "heritability", "of", "complex", ",", "drug", "induced", "phenotypes", "suggests", "a", "critical", "role", "of", "genetic", "influences", "(", "Kreek", "et", "al.", "2005", ",", "2012", ";", "Al-Hasani", "and", "Bruchas", "2011", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "common", "single-nucleotide", "polymorphism", "(", "SNP", ")", "in", "the", "human", "mu-opioid", "receptor", "gene", "(", "OPRM1", ")", ",", "A118G", ",", "is", "associated", "with", "drug", "dependence", "in", "humans", "(", "Bart", "et", "al.", "2004", ",", "2006", ";", "Bond", "et", "al.", "1998", ";", "Nishizawa", "et", "al.", "2006", ")", ",", "although", "some", "studies", "have", "found", "no", "association", "(", "Bergen", "et", "al.", "1997", ";", "Coller", "et", "al.", "2009", ")", ",", "and", "others", "have", "suggested", "that", "it", "may", "be", "associated", "with", "drug", "dependence", "in", "some", "populations", "but", "protective", "in", "others", "(", "Schwantes-An", "et", "al.", "2016", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "A118G", "is", "the", "most", "common", "coding", "region", "variant", "in", "the", "OPRM1", "gene", "." ]
+  }, {
+    "sentence_tokens" : [ "Its", "overall", "allelic", "frequency", "is", "estimated", "to", "be", "22", "%", ",", "although", "its", "distribution", "shows", "significant", "variation", "by", "ancestry", ":", "1", "%", "in", "Africans", ",", "20", "%", "in", "indigenous", "Americans", ",", "39", "%", "in", "East", "Asians", ",", "42", "%", "in", "South", "Asians", ",", "and", "16", "%", "in", "Europeans", "(", "Aken", "et", "al.", "2016", ";", "LaForge", "et", "al.", "2000", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "G118", "allele", "is", "associated", "with", "greater", "daily", "drug", "intake", "in", "heroin", "users", "(", "Shi", "et", "al.", "2002", ")", ",", "greater", "automatic", "approach", "tendencies", "for", "alcohol", "and", "appetitive", "cues", "(", "Wiers", "et", "al.", "2009", ")", ",", "and", "increased", "neuronal", "activity", "in", "response", "to", "alcohol", "cues", "in", "cortical", "and", "striatal", "regions", "as", "shown", "by", "BOLD", "(", "blood", "oxygenation", "level", "dependent", ")", "imaging", "(", "Filbey", "et", "al.", "2008", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "G118", "allele", "also", "significantly", "alters", "stress", "responsivity", "and", "HPA", "axis", "regulation", "in", "healthy", "humans", "." ]
+  }, {
+    "sentence_tokens" : [ "G118", "carriers", "show", "genotype", "dependent", "differences", "in", "response", "to", "endocrine", "challenge", "by", "metyrapone", "(", "Ducat", "et", "al.", "2013", ")", "as", "well", "as", "reductions", "in", "cortisol", "response", "to", "acute", "psychological", "stressors", "and", "MOR", "blockade", "by", "naltrexone", "or", "naloxone", "(", "Chong", "et", "al.", "2006", ";", "Hernandez-Avila", "et", "al.", "2003", ";", "Lovallo", "et", "al.", "2015", ";", "Wand", "et", "al.", "2002", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "OPRM1", "A118G", "has", "been", "demonstrated", "to", "produce", "a", "number", "of", "biochemical", "and", "molecular", "alterations", "(", "Kroslak", "et", "al.", "2007", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "vitro", "studies", "in", "AV12", "cells", "expressing", "the", "G118", "MOR", "variant", "revealed", "a", "three-fold", "increase", "in", "beta-endorphin", "binding", "affinity", "as", "well", "as", "a", "three-fold", "increase", "in", "beta-endorphin", "potency", "as", "measured", "by", "activation", "of", "G", "protein", "coupled", "inward", "rectifying", "potassium", "channels", "(", "Bond", "et", "al.", "1998", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Mice", "bearing", "an", "equivalent", "SNP", ",", "A112G", ",", "in", "the", "mouse", "MOR", "gene", "(", "Oprm1", ")", "were", "generated", ",", "characterized", ",", "and", "studied", "(", "Mague", "et", "al.", "2009", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "Oprm1", "A112G", "mouse", "exhibits", "genotype", "dependent", "molecular", "alterations", ",", "including", "reductions", "in", "MOR", "mRNA", "and", "protein", "expression", "(", "Huang", "et", "al.", "2012", ";", "Mague", "et", "al.", "2009", ";", "Wang", "et", "al.", "2014", ")", "as", "well", "as", "behavioral", "alterations", ",", "including", "reduced", "morphine", "(", "Huang", "et", "al.", "2012", ";", "Mague", "et", "al.", "2009", ";", "Wang", "et", "al.", "2014", ")", "and", "buprenorphine", "(", "Browne", "et", "al.", "2017", ")", "analgesia", ",", "and", "increased", "opioid", "self", "administration", "(", "Zhang", "et", "al.", "2015", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "MOR", "activation", "leads", "to", "a", "series", "of", "downstream", "cellular", "effects", "(", "Al-Hasani", "and", "Bruchas", "2011", ")", ",", "which", "may", "include", "changes", "in", "gene", "expression", "." ]
+  }, {
+    "sentence_tokens" : [ "Many", "of", "the", "long-term", "changes", "in", "brain", "and", "behavior", "that", "characterize", "addiction", "are", "likely", "underpinned", "by", "changes", "in", "gene", "expression", "(", "Nestler", "2004a", ";", "Nestler", "and", "Aghajanian", "1997", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "current", "study", ",", "we", "have", "profiled", "the", "expression", "of", "an", "array", "genes", "that", "(", "1", ")", "are", "associated", "with", "mu", "opioid", "dependence", "in", "humans", "(", "Bart", "et", "al.", "2004", ";", "Levran", "et", "al.", "2008", ")", "or", "(", "2", ")", "have", "been", "demonstrated", "to", "be", "related", "to", "responses", "to", "stress", "or", "drugs", "of", "abuse", "in", "rodents", "(", "Bale", "et", "al.", "2000", ";", "Caputi", "et", "al.", "2014", ";", "Deroche-Gamonet", "et", "al.", "2003", ";", "Edwards", "et", "al.", "2012", ";", "McClung", "et", "al.", "2005", ";", "Spangler", "et", "al.", "1993", ";", "Uhl", "et", "al.", "1988", ";", "Valenza", "et", "al.", "2016", ";", "Zhou", "et", "al.", "2001", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Animal", "and", "human", "studies", "show", "that", "addiction", "involves", "diverse", "circuits", "widely", "distributed", "across", "the", "brain", "including", "striatal", ",", "limbic", ",", "and", "hypothalamic", "regions", "(", "Koob", "and", "Volkow", "2010", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Here", ",", "we", "measure", "the", "baseline", "mRNA", "expression", "of", "these", "genes", "in", "the", "caudoputamen", ",", "nucleus", "accumbens", ",", "hypothalamus", ",", "hippocampus", ",", "and", "amygdala", "in", "minimally", "handled", ",", "drug-na", "i", "ve", ",", "male", ",", "and", "female", "mice", "homozygous", "for", "either", "the", "A112", "(", "AA", ")", "or", "G112", "(", "GG", ")", "allele", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "is", "the", "first", "measurement", "of", "the", "concurrent", "expression", "of", "multiple", "genes", "in", "multiple", "brain", "regions", "in", "this", "mouse", "model", ",", "and", ",", "to", "our", "knowledge", ",", "one", "of", "very", "few", "studies", "examining", "the", "effects", "of", "a", "single", "human", "SNP", "--", "successfully", "translated", "into", "a", "rodent", "model", "--", "on", "the", "expression", "of", "multiple", "genes", "in", "multiple", "brain", "regions", "." ]
+  }, {
+    "sentence_tokens" : [ "Materials", "and", "methods", "." ]
+  }, {
+    "sentence_tokens" : [ "Animals", "." ]
+  }, {
+    "sentence_tokens" : [ "Heterozygous", "A112G", "mice", "(", "Mague", "et", "al.", "2009", ")", "were", "mated", "to", "obtain", "homozygous", "(", "112AA", "or", "112GG", ";", "AA", "or", "GG", ")", "offspring", "." ]
+  }, {
+    "sentence_tokens" : [ "Heterozygous", "mice", "(", "112AG", ")", "were", "also", "produced", ",", "but", "only", "homozygous", "mice", "of", "both", "sexes", "are", "examined", "in", "the", "present", "study", "." ]
+  }, {
+    "sentence_tokens" : [ "Mice", "were", "genotyped", "by", "PCR", "using", "genomic", "DNA", "obtained", "by", "tail", "biopsy", "(", "forward", "primer", ",", "5", "'-GCTCCA", "TCTTGGATCCCCTTT-3", "'", ";", "reverse", "primer", ",", "5", "'-GAGCTACCCAGCAATTCCAGA-3", "'", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Ten-", "to", "twelve-week-old", "mice", "were", "housed", "in", "groups", "of", "four", "to", "five", "with", "free", "access", "to", "food", "and", "water", "in", "a", "light-", "(", "12:12", "h", "light", "and", "dark", "cycle", ",", "lights", "on", "at", "0900", ",", "lights", "off", "at", "2100", ")", "and", "temperature-", "(", "25", "degrees", "C", ")", "controlled", "room", "." ]
+  }, {
+    "sentence_tokens" : [ "Animal", "care", "and", "experimental", "procedures", "were", "conducted", "according", "to", "the", "Guide", "for", "the", "Care", "and", "Use", "of", "Laboratory", "Animals", "(", "National", "Research", "Council", "(", "US", ")", "Committee", "for", "the", "Update", "of", "the", "Guide", "for", "the", "Care", "and", "Use", "of", "Laboratory", "Animals", ",", "2011", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "experimental", "protocols", "used", "were", "approved", "by", "the", "Institutional", "Animal", "Care", "and", "Use", "Committee", "of", "The", "Rockefeller", "University", "." ]
+  }, {
+    "sentence_tokens" : [ "RNA", "extraction", "and", "cDNA", "synthesis", "." ]
+  }, {
+    "sentence_tokens" : [ "Mice", "were", "sacrificed", "by", "rapid", "decapitation", "between", "2", "and", "3", "h", "following", "lights", "on", "(", "1100", "-", "1200", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Whole", "brains", "were", "removed", "and", "the", "caudoputamen", ",", "nucleus", "accumbens", ",", "hypothalamus", ",", "hippocampus", ",", "and", "amygdala", "from", "each", "were", "dissected", "." ]
+  }, {
+    "sentence_tokens" : [ "Tissues", "were", "homogenized", "in", "QIAzol", "(", "Qiagen", ",", "Valencia", ",", "CA", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Total", "RNA", "was", "isolated", "from", "homogenates", "using", "miRNeasy", "kits", "(", "Qiagen", ",", "Valencia", ",", "CA", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "RNA", "quality", "and", "quantity", "for", "each", "sample", "were", "determined", "using", "an", "Agilent", "2100", "Bioanalyzer", "(", "Agilent", "Technologies", ",", "Santa", "Clara", ",", "CA", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Genomic", "DNA", "was", "removed", "and", "cDNA", "was", "synthesized", "from", "500", "ng", "of", "total", "RNA", "using", "RT", "HT", "First", "Strand", "kits", "(", "Qiagen", ",", "Valencia", ",", "CA", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Custom", "RT", "2", "ProfilerTM", "PCR", "Array", "." ]
+  }, {
+    "sentence_tokens" : [ "Our", "custom", "RT", "Profiler", "TM", "PCR", "Array", "(", "plate", "build", "CAPM13405E", ",", "Qiagen", ")", "used", "for", "the", "present", "study", "measures", "the", "expression", "of", "24", "genes", "related", "to", "drug", "and", "stress", "responsivity", "(", "for", "complete", "list", ",", "see", "Table", "1", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Real-time", "PCR", "was", "performed", "by", "the", "SYBR", "Green", "detection", "method", "." ]
+  }, {
+    "sentence_tokens" : [ "Individual", "reactions", "had", "a", "total", "volume", "of", "10", "mu", "L", "and", "comprised", "cDNA", "diluted", "in", "2", "x", "SuperArray", "RT", "Real-Time", "TM", "SYBR", "Green", "PCR", "Master", "Mix", "(", "Qiagen", ")", "and", "ultrapure", "water.The", "real-time", "PCR", "reactions", "were", "carried", "out", "in", "an", "ABI", "Prism", "7900", "HT", "Sequence", "Detection", "System", "using", "the", "following", "program", ":", "10", "min", "at", "95", "degrees", "C", "(", "15", "s", "at", "95", "degrees", "C", "and", "1", "min", "at", "60", "degrees", "C", ")", "x", "40", "cycles", ",", "15", "s", "at", "95", "degrees", "C", ",", "15", "s", "at", "60", "degrees", "C", ",", "and", "15", "s", "at", "95", "degrees", "C." ]
+  }, {
+    "sentence_tokens" : [ "The", "ABI", "Prism", "7900", "Sequence", "Detection", "System", "was", "used", "to", "calculate", "the", "Ct", "value", "for", "each", "well", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "profiler", "array", "includes", "five", "reference", "genes", "(", "glyceraldehyde", "3-phosphate", "dehydrogenase", ",", "Gapdh", ";", "beta-glucuronidase", ",", "Gusb", ";", "heat", "shock", "protein", "90", "alpha", "(", "cytosolic", ")", ",", "class", "B", "member", "1", ",", "Hsp90ab1", ";", "peptidylprolyl", "isomerase", "A", ",", "Ppia", ";", "TATA", "binding", "protein", ",", "Tbp", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Of", "these", "five", "reference", "genes", ",", "Gusb", "was", "stably", "expressed", "across", "groups", "in", "caudoputamen", "and", "Tbp", "was", "stably", "expressed", "across", "groups", "in", "nucleus", "accumbens", ",", "hypothalamus", ",", "hippocampus", ",", "and", "amygdala", "." ]
+  }, {
+    "sentence_tokens" : [ "Ct", "values", "were", "normalized", "by", "calculating", "the", "difference", "between", "the", "target", "gene", "and", "the", "most", "stable", "reference", "gene", "according", "to", "brain", "region", "." ]
+  }, {
+    "sentence_tokens" : [ "Statistical", "analysis", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "statistical", "analysis", "focused", "on", "effects", "of", "sex", "and", "genotype", "on", "the", "expression", "of", "genes", "of", "interest", "in", "each", "brain", "region", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "sample", "of", "n", "=", "20", "mice", "(", "representing", "approximately", "9", "litters", ")", "was", "allocated", "in", "four", "different", "groups", "(", "male", "AA", ",", "male", "GG", ",", "female", "AA", ",", "female", "GG", ";", "N", "=", "5/group", ")", "according", "to", "a", "2", "x", "2", "factorial", "design", "." ]
+  }, {
+    "sentence_tokens" : [ "Normalized", "RT-PCR", "gene", "expressions", "were", "analyzed", "by", "two-way", "ANOVA", "with", "main", "effects", "of", "sex", "and", "genotype", "as", "well", "as", "their", "interaction", "." ]
+  }, {
+    "sentence_tokens" : [ "Whenever", "the", "interaction", "was", "found", "to", "be", "significant", ",", "post", "hoc", "nested", "comparisons", "were", "carried", "out", "(", "e.g", ".,", "difference", "between", "females", "and", "males", "within", "genotype", "or", "difference", "between", "genotypes", "within", "sex", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "If", "no", "interaction", "was", "found", "to", "be", "significant", ",", "significant", "differences", "on", "the", "main", "effects", "were", "reported", "." ]
+  }, {
+    "sentence_tokens" : [ "Genes", "showing", "significant", "effects", "with", "nominal", "p", "values", "are", "reported", "in", "Tables", "2", ",", "3", ",", "and", "4", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "Benjamini-Hochberg", "method", "(", "false", "discovery", "rate", ";", "5", "%", ")", "was", "used", "to", "identify", "differences", "in", "gene", "expression", "remaining", "significant", "after", "correction", "for", "multiple", "hypothesis", "testing", "(", "see", "Tables", "2", ",", "3", ",", "and", "4", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Results", "." ]
+  }, {
+    "sentence_tokens" : [ "Oprm1", "A112G", "mice", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "have", "observed", "no", "differences", "in", "size", ",", "health", ",", "or", "mortality", "between", "AA", "and", "GG", "mice", "of", "either", "sex", "(", "data", "not", "shown", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "GG", "mouse", "birth", "rates", "are", "slightly", "lower", "than", "the", "expected", "Mendelian", "rates", "as", "has", "been", "previously", "described", "(", "Mague", "et", "al.", "2009", ")", ";", "however", ",", "mice", "carrying", "the", "112G", "allele", "are", "fertile", "and", "produce", "litters", "of", "normal", "size", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "used", "both", "male", "and", "female", "homozygous", "mice", "(", "AA", "or", "GG", ")", "in", "the", "current", "study.Our", "primary", "aim", "was", "to", "identify", "genes", "that", "were", "differentially", "expressed", "in", "GG", "versus", "AA", "mice", "in", "each", "brain", "region", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "also", "sought", "to", "identify", "genes", "included", "in", "our", "array", "that", "are", "differentially", "expressed", "in", "females", "and", "males", ",", "as", "the", "expression", "of", "some", "of", "the", "target", "genes", "included", "in", "our", "custom", "array", "might", "differ", "by", "sex", ",", "and", "because", "some", "studies", "have", "found", "sex", "dependent", "differences", "in", "behavioral", "and", "molecular", "measures", "in", "Oprm1", "A112G", "mice", "(", "Mague", "et", "al.", "2009", ";", "Wang", "et", "al.", "2014", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Finally", ",", "we", "examined", "the", "interaction", "of", "sex", "and", "genotype", "." ]
+  }, {
+    "sentence_tokens" : [ "Findings", "are", "summarized", "in", "Tables", "2", ",", "3", ",", "and", "4", "." ]
+  }, {
+    "sentence_tokens" : [ "Basal", "gene", "expression", "in", "Oprm1", "A112G", "mice", "." ]
+  }, {
+    "sentence_tokens" : [ "Our", "initial", "analyses", "detected", "genotype-", "and", "sex", "dependent", "differences", "in", "the", "expression", "of", "multiple", "genes", "in", "the", "brain", "regions", "examined", "." ]
+  }, {
+    "sentence_tokens" : [ "Many", "of", "these", "findings", "did", "not", "survive", "correction", "for", "multiplicity", "of", "testing", ";", "however", ",", "we", "report", "them", "here", "for", "exploratory", "purposes", "." ]
+  }, {
+    "sentence_tokens" : [ "Differences", "in", "expression", "remaining", "significant", "after", "correction", "for", "multiple", "testing", "(", "FDR", ";", "5", "%", ")", "are", "reported", "below", "." ]
+  }, {
+    "sentence_tokens" : [ "Effect", "of", "genotype", "on", "basal", "gene", "expression", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "detected", "nominally", "significant", "genotype", "dependent", "differences", "in", "expression", "of", "two", "genes", "in", "caudoputamen", ",", "one", "gene", "in", "nucleus", "accumbens", ",", "six", "genes", "in", "hypothalamus", ",", "and", "four", "genes", "in", "hippocampus", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "amygdala", ",", "we", "did", "not", "observe", "any", "significant", "differences", "in", "gene", "expression", "between", "AA", "and", "GG", "mice", "." ]
+  }, {
+    "sentence_tokens" : [ "Following", "correction", "for", "multiple", "testing", ",", "two", "genes", "differing", "by", "genotype", "in", "hypothalamus", ",", "Avp", "and", "Gal", ",", "and", "two", "genes", "differing", "by", "genotype", "in", "hippocampus", ",", "Cnr1", "and", "Opr1", ",", "remained", "significantly", "different", "between", "AA", "and", "GG", "mice", "(", "Table", "2", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Effect", "of", "sex", "on", "basal", "gene", "expression", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "detected", "nominally", "significant", "sex", "dependent", "differences", "in", "the", "expression", "of", "five", "genes", "in", "caudoputamen", ",", "one", "gene", "in", "hypothalamus", ",", "and", "one", "gene", "in", "hippocampus", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "did", "not", "observe", "any", "significant", "main", "effects", "of", "sex", "on", "the", "expression", "of", "any", "genes", "in", "nucleus", "accumbens", "or", "amygdala", "." ]
+  }, {
+    "sentence_tokens" : [ "None", "of", "these", "sex", "dependent", "differences", "in", "gene", "expression", "survived", "correction", "for", "multiple", "testing", ";", "however", ",", "the", "nominally", "significant", "findings", "are", "reported", "in", "Table", "3", "." ]
+  }, {
+    "sentence_tokens" : [ "Interaction", "of", "genotype", "and", "sex", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "observed", "nominally", "significant", "interaction", "effects", "of", "genotype", "and", "sex", "on", "the", "expression", "of", "three", "genes", "in", "caudoputamen", ",", "one", "gene", "in", "nucleus", "accumbens", ",", "two", "genes", "in", "hypothalamus", ",", "and", "one", "gene", "in", "amygdala", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "did", "not", "observe", "any", "interaction", "effects", "in", "gene", "expression", "in", "hippocampus", "." ]
+  }, {
+    "sentence_tokens" : [ "None", "of", "these", "nominally", "significant", "interactions", "survived", "correction", "for", "multiplicity", "of", "testing", ";", "however", ",", "we", "report", "them", "in", "gene", "(", "Table", "4", ")", "in", "amygdala", "." ]
+  }, {
+    "sentence_tokens" : [ "Discussion", "." ]
+  }, {
+    "sentence_tokens" : [ "Alterations", "in", "gene", "expression", "likely", "contribute", "to", "long-term", ",", "stable", "changes", "and", "variability", "in", "drug-", "and", "stress", "mediated", "behavior", "(", "Gray", "et", "al.", "2014", ";", "Kreek", "et", "al.", "2005", ",", "2012", ";", "Nestler", "2004b", ";", "Nestler", "and", "Aghajanian", "1997", ")", ";", "these", "differences", "in", "gene", "expression", "may", "then", "contribute", "to", "alterations", "in", "drug-", "and", "stress", "related", "behaviors", "in", "Oprm1", "A112G", "mice", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "current", "study", ",", "we", "examined", "the", "basal", "expression", "of", "24", "genes", "that", "have", "been", "demonstrated", "to", "be", "regulated", "by", "exposure", "to", "major", "drugs", "of", "abuse", "or", "stress", "(", "by", "our", "own", "group", "or", "others", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Although", "we", "found", "nominally", "significant", "genotype-", "and", "sex", "dependent", "differences", "in", "the", "basal", "expression", "of", "a", "number", "of", "these", "genes", "in", "multiple", "regions", ",", "only", "genotype", "dependent", "differences", "in", "the", "expression", "of", "Avp", "and", "Gal", "in", "the", "hypothalamus", ",", "as", "well", "as", "Oprl1", "and", "Cnr1", "in", "the", "hippocampus", "survived", "corrections", "for", "multiplicity", "of", "testing", "(", "Tables", "2", ",", "3", ",", "and", "4", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "is", "likely", "due", "to", "the", "relatively", "small", "sample", "size", "used", "in", "this", "study", "." ]
+  }, {
+    "sentence_tokens" : [ "Future", "studies", "with", "greater", "statistical", "power", "may", "reveal", "other", "genotype", "dependent", "differences", "as", "well", "as", "sex", "dependent", "differences", "in", "gene", "expression", "in", "male", "and", "female", "AA", "and", "GG", "mice.The", "hypothalamus", "plays", "a", "large", "role", "in", "feeding", ",", "stress", ",", "and", "homeostatic", "behavior", ",", "but", "it", "may", "also", "modulate", "reward", "related", "behaviors", "(", "DiLeone", "et", "al.", "2003", ";", "Le", "Merrer", "et", "al.", "2009", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "detected", "genotype", "dependent", "differences", "in", "hypothalamic", "expression", "of", "the", "genes", "encoding", "the", "non", "opioid", "neuropeptides", "arginine", "vasopressin", "and", "galanin", "." ]
+  }, {
+    "sentence_tokens" : [ "Avp", "and", "Gal", "expressions", "were", "reduced", "in", "GG", "mice", "." ]
+  }, {
+    "sentence_tokens" : [ "These", "neuropeptides", "are", "involved", "in", "diverse", "functions", "including", "stress", "responsivity", ",", "motivational", "effects", "of", "opioids", "and", "psychostimulants", ",", "processing", "of", "appetitive", "stimuli", ",", "and", "emotional", "regulation", "(", "Bali", "et", "al.", "2015", ";", "Bisagno", "and", "Cadet", "2014", ";", "Zhou", "et", "al.", "2008", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "AVP", "in", "the", "central", "nervous", "system", "is", "involved", "in", "stress", "responsivity", ",", "drug", "dependence", ",", "and", "emotional", "behavior", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "neurohypophyseal", "system", ",", "AVP", "acts", "as", "an", "adrenocorticotropic", "hormone", "(", "ACTH", ")", "secretagogue", "Aguilera", "et", "al.", "1994", ";", "Griebel", "et", "al.", "2002", ";", "Zhou", "et", "al.", "2008", ")", "and", ",", "along", "with", "corticotropin", "releasing", "hormone", ",", "AVP", "is", "involved", "in", "regulating", "hypothalamic-pituitary-adrenal", "(", "HPA", ")", "axis", "function", "." ]
+  }, {
+    "sentence_tokens" : [ "There", "is", "evidence", "that", "AVP", "also", "participates", "in", "the", "effects", "of", "opioids", "on", "HPA", "activity", "." ]
+  }, {
+    "sentence_tokens" : [ "Hypothalamic", "galanin", "is", "implicated", "in", "stress", "resiliency", "(", "Juhasz", "et", "al.", "2014", ";", "Wrenn", "and", "Holmes", "2006", ")", "and", "altered", "galanin", "expression", "in", "this", "region", "has", "been", "associated", "with", "multiple", "pathological", "states", ",", "including", "depression", "and", "alcoholism", "(", "Davidson", "et", "al.", "2011", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Both", "chronic", "morphine", "and", "morphine", "withdrawal", "have", "been", "demonstrated", "to", "alter", "galanin", "gene", "expression", "in", "multiple", "brain", "regions", ",", "implicating", "MORs", "in", "regulation", "of", "Gal", "expression", "(", "McClung", "et", "al.", "2005", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "hippocampus", "is", "critically", "involved", "in", "learning", "and", "memory", ",", "but", "may", "also", "be", "involved", "in", "motivated", "behavior", "and", "drug", "reinforcement", "(", "Ito", "et", "al.", "2008", ";", "Koob", "and", "Volkow", "2010", ";", "Le", "Merrer", "et", "al.", "2009", ";", "Sharifzadeh", "et", "al.", "2006", ";", "Tracy", "et", "al.", "2001", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "found", "reduced", "hippocampal", "expression", "of", "Oprl1", ",", "Cnr1", "in", "GG", "mice", "." ]
+  }, {
+    "sentence_tokens" : [ "There", "is", "evidence", "that", "these", "are", "involved", "in", "hippocampal", "function", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "hippocampus", "plays", "a", "role", "in", "feedback", "inhibition", "of", "the", "HPA", "axis", "(", "Jacobson", "and", "Sapolsky", "1991", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "effect", "is", "attenuated", "in", "GG", "mice", "and", "may", "be", "due", "to", "a", "MOR", "loss", "of", "function", "in", "hippocampus", "(", "Mague", "et", "al.", "2015", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "These", "changes", "may", "result", "from", "a", "reduction", "in", "direct", "effects", "of", "MORs", "on", "hippocampal", "neurons", "as", "well", "as", "indirect", "effects", "through", "nociceptin", "or", "cannabinoid", "signaling.Sex", "differences", "in", "the", "expression", "of", "drug", "of", "abuse-", "and", "stress", "responsive", "genes", "in", "male", "and", "female", "mice", "are", "not", "routinely", "studied", "." ]
+  }, {
+    "sentence_tokens" : [ "Genotype-by-sex", "effects", "on", "behavior", "have", "been", "observed", "in", "A112G", "mice", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "example", ",", "Mague", "and", "colleagues", "found", "that", "female", "GG", "mice", "fail", "to", "develop", "a", "significant", "morphine", "conditioned", "place", "preference", ",", "while", "AA", "males", ",", "AA", "females", ",", "and", "GG", "males", "did", "develop", "a", "significant", "morphine", "conditioned", "place", "preference", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "same", "study", ",", "GG", "females", "also", "showed", "reduced", "naloxone", "precipitated", "morphine", "withdrawal", "compared", "to", "AA", "females", "(", "Mague", "et", "al.", "2009", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Further", ",", "GG", "mice", "also", "show", "brain-region", "and", "sex", "specific", "alterations", "in", "DAMGO", "stimulated", "GTP", "gamma", "S", "binding", "(", "Wang", "et", "al.", "2014", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "observed", "several", "nominally", "significant", "sex", "dependent", "differences", "in", "gene", "expression", "and", "genotype-by-sex", "interactions", ";", "however", ",", "none", "of", "these", "findings", "survived", "correction", "for", "multiple", "testing", "." ]
+  }, {
+    "sentence_tokens" : [ "Interestingly", ",", "for", "all", "of", "these", "nominally", "significant", "sex", "dependent", "differences", "in", "gene", "expression", ",", "female", "mice", "showed", "greater", "expression", "levels", "compared", "to", "males", "regardless", "of", "genotype", "(", "Table", "3", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "It", "is", "unclear", "why", "this", "may", "be", "the", "case", ";", "however", ",", "it", "has", "been", "demonstrated", "that", "mu", "opioid", "effects", "and", "mu", "opioid", "receptor", "signaling", "can", "vary", "between", "male", "and", "female", "rodents", "(", "Craft", "2008", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "To", "date", ",", "there", "have", "been", "no", "studies", "of", "the", "effects", "of", "hormonal", "status", "in", "Oprm1", "A112G", "mice", "." ]
+  }, {
+    "sentence_tokens" : [ "Studies", "involving", "the", "manipulation", "of", "gonadal", "steroids", "in", "these", "mice", "will", "be", "required", "to", "investigate", "their", "involvement", "in", "the", "sex", "dependent", "differences", "observed", "in", "A112G", "mice", "." ]
+  }, {
+    "sentence_tokens" : [ "Potential", "mechanisms", "of", "regulation", "of", "gene", "expression", "by", "MORs", "." ]
+  }, {
+    "sentence_tokens" : [ "MORs", "are", "poised", "to", "regulate", "a", "number", "of", "transcriptional", "pathways", "by", "regulating", "the", "activity", "of", "several", "downstream", "effectors", ",", "including", "adenylate", "cyclase", ",", "ion", "channels", ",", "and", ",", "of", "note", ",", "multiple", "classes", "of", "kinases", "(", "Ho", "et", "al.", "2009", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Many", "of", "the", "signaling", "pathways", "that", "MORs", "modulate", "ultimately", "act", "to", "regulate", "the", "activity", "of", "well", "characterized", "transcriptional", "regulators", "such", "as", "NF-kappa", "B", ",", "CREB", ",", "and", "Fos", "proteins", "(", "Al-Hasani", "and", "Bruchas", "2011", ";", "Deb", "et", "al.", "2010", ";", "Goldsmith", "et", "al.", "2011", ";", "Ho", "et", "al.", "2009", ")", ",", "although", "the", "ultimate", "transcriptional", "consequences", "depend", "upon", "cellular", "context", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "A112G", "mice", ",", "compared", "to", "wild-type", "AA", "homozygotes", ",", "GG", "mice", "show", "increased", "c-Fos", "immunoreactivity", "in", "multiple", "brain", "regions", "in", "following", "social", "stress", "(", "Briand", "et", "al.", "2015", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "suggests", "reduced", "MOR", "dependent", "positive", "transcriptional", "regulation", "by", "MORs", "encoded", "by", "the", "variant", "G112", "allele", "compared", "to", "the", "prototype", "A112", "allele", "." ]
+  }, {
+    "sentence_tokens" : [ "Conclusion", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "have", "demonstrated", "that", "the", "basal", "expression", "of", "genes", "encoding", "key", "components", "of", "drug", "of", "abuse-", "and", "stress", "responsive", "systems", "are", "altered", "in", "male", "and", "female", "Oprm1", "A112G", "mice", "." ]
+  }, {
+    "sentence_tokens" : [ "These", "data", "provide", "evidence", "that", "the", "effects", "of", "the", "A118G", "SNP", "likely", "involve", "differential", "regulation", "of", "multiple", ",", "interacting", "neuropeptide", "systems", "." ]
+  }, {
+    "sentence_tokens" : [ "Future", "investigation", "of", "the", "downstream", "signaling", "consequences", "of", "MORs", "in", "A112G", "mice", "will", "be", "valuable", "to", "understanding", "the", "behavioral", "and", "molecular", "changes", "caused", "by", "the", "G", "allele", "in", "rodent", "models", "and", "in", "humans", "." ]
+  } ]
+}

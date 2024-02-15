@@ -1,1 +1,306 @@
-[ ]
+{
+  "regulations" : [ ],
+  "hardInstances" : [ ],
+  "withoutRegulations" : [ {
+    "sentence_tokens" : [ "We", "therefore", "analyzed", "SMT", "usage", "across", "all", "unique", "SMTs", "using", "one", "instance", "of", "each", "12", "bp", "SMT", "per", "target", "per", "sample", ",", "for", "a", "total", "of", "14,485,830", "unique", "SMTs", "from", "the", "14", "germline", "samples", "that", "used", "a", "12", "bp", "SMT", "." ],
+    "entities_indices" : [ [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "all", "samples", ",", "inclusion", "of", "duplicate", "reads", "increased", "the", "FPR", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "Additionally", ",", "PCR", "duplicates", "alter", "estimates", "of", "subclonal", "heterogeneity", "in", "tumor", "samples", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "Methods", "that", "fragment", "prior", "to", "hybridization", "can", "be", "filtered", "using", "start", "and", "stop", "positions", ",", "but", "can", "also", "contain", "unidentified", "duplicates", "due", "to", "slight", "differences", "in", "alignment", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "Less", "than", "0.1", "%", "of", "SMT", "pairwise", "comparisons", "differed", "by", "1", "bp", ",", "suggesting", "that", "the", "diversity", "is", "robust", "to", "sequencing", "errors", "." ],
+    "entities_indices" : [ [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "To", "obtain", "reads", "with", "SMT", "information", "in", "the", "read", "names", ",", "FASTQ", "files", "were", "generated", "using", "CASAVA", "(", "v1.8.2", ")", "." ],
+    "entities_indices" : [ [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "Reads", "were", "simulated", "similarly", "for", "tumor", "samples", "that", "were", "collected", "from", "the", "same", "patient", "after", "diagnosis", "or", "prior", "to", "treatment", ",", "but", "the", "reads", "were", "not", "split", "into", "two", "groups", "." ],
+    "entities_indices" : [ [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "Random", "oligomers", "are", "incorporated", "into", "a", "template", "prior", "to", "PCR", "amplification", ",", "and", "duplicates", "are", "tracked", "by", "the", "SMT", "oligomer", "." ],
+    "entities_indices" : [ [ 0, 1, 2 ], [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "samples", "with", "low", "duplicate", "rates", ",", "the", "SMT", "duplicate", "cluster", "sizes", "were", "small", ",", "with", "a", "single", "SMT", "not", "generally", "seen", "more", "than", "10", "times", "(", "Figure", "1C", ")", "." ],
+    "entities_indices" : [ [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "Patient", "treatment", "can", "be", "informed", "by", "subclonal", "heterogeneity", "[", "11,12", "]", ",", "and", "deep", "targeted", "sequencing", "can", "be", "used", "to", "track", "recurrence", "and", "evolution", "by", "the", "sequencing", "of", "circulating", "tumor", "DNA", "[", "13", "]", "." ],
+    "entities_indices" : [ [ 21, 22 ], [ 29, 30 ] ]
+  }, {
+    "sentence_tokens" : [ "To", "investigate", "how", "estimation", "of", "clonal", "heterogeneity", "is", "affected", "by", "high", "duplicate", "rates", ",", "we", "modeled", "duplicates", "across", "a", "range", "of", "proportions", "by", "first", "removing", "SMT", "identified", "duplicates", "and", "then", "randomly", "sampling", "from", "the", "unique", "reads", "to", "create", "defined", "proportions", "of", "duplicates", "(", "0", "%", "to", "90", "%", ")", "." ],
+    "entities_indices" : [ [ 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "duplication", "rates", "of", "0", "%", "to", "90", "%", ",", "a", "single", "BAM", "file", "containing", "a", "subset", "of", "the", "unique", "reads", "and", "duplicate", "reads", "to", "make", "up", "the", "remainder", "read", "depth", "was", "generated", "for", "each", "tumor", "sample", "." ],
+    "entities_indices" : [ [ 12, 13 ], [ 35, 36 ] ]
+  }, {
+    "sentence_tokens" : [ "Read", "pairs", "were", "kept", "when", "both", "Read", "1", "and", "Read", "2", "matched", "the", "same", "target", "(", "approximately", "95", "%", "of", "reads", ")", "." ],
+    "entities_indices" : [ [ 6, 7, 8 ], [ 9, 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "Heterozygous", "loci", "were", "identified", "using", "all", "unique", "reads", "for", "each", "sample", "using", "GATK", "." ],
+    "entities_indices" : [ [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "indicates", "that", "our", "method", "effectively", "incorporates", "diverse", "SMT", "oligomers", "into", "the", "library", "preparation", "process", "and", "suggests", "that", "the", "Illumina", "TruSeq", "Custom", "Amplicon", "Kit", "generates", "a", "moderate", "number", "of", "PCR", "duplicate", "reads", "that", "are", "evenly", "distributed", "across", "targeted", "sequences", "." ],
+    "entities_indices" : [ [ 8, 9, 10 ], [ 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "observed", "that", "0.006", "%", "of", "reads", "were", "the", "same", "due", "to", "SMT", "usage", ",", "indicating", "that", "the", "observed", "bias", "is", "not", "relevant", "for", "deep", "sequencing", "at", "this", "depth", "." ],
+    "entities_indices" : [ [ 12, 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "Somatic", "variants", "were", "identified", "by", "genotyping", "tumor", "and", "germline", "samples", "from", "the", "same", "patient", "together", ",", "and", "testing", "for", "differences", "in", "allele", "frequencies", "across", "samples", "using", "a", "2", "x", "3", "Fisher", "'", "s", "exact", "test", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "Overall", ",", "we", "observed", "that", "11.8", "%", "(", "865/7338", ")", "of", "SNPs", "showed", "a", "difference", "(", "P", "<", "0.05", ")", "between", "duplicates", ",", "with", "93", "%", "of", "samples", "showing", "a", "FPR", ">", "5", "%", "(", "range", "0", "-", "30", "%", ",", "Additional", "file", "2", ")", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 30, 31 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "issues", "that", "we", "discuss", "are", "relevant", "to", "these", "approaches", "as", "well", ",", "and", "suggest", "that", "they", "would", "benefit", "from", "the", "incorporation", "of", "SMT", "tagging.Removal", "of", "PCR", "duplicates", "will", "be", "relevant", "for", "a", "number", "of", "applications", "that", "use", "targeted", "sequencing", "." ],
+    "entities_indices" : [ [ 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "Following", "cleanup", ",", "20", "uL", "of", "PCR", "product", ",", "22", "uL", "of", "PMM2", "and", "TDP1", ",", "4", "uL", "of", "the", "same", "i7", "primer", "supplied", "with", "the", "TruSeq", "Custom", "Amplicon", "Index", "Kit", ",", "and", "4", "uL", "of", "a", "6.25", "mu", "M", "custom", "primer", ",", "TruSeqP5", "(", "5", "'", "AATGATACGGCGACCACCGAGATCTACAC", "3", "'", ")", "were", "added", "to", "PCR", "tubes", ",", "and", "PCR", "was", "carried", "out", "using", "the", "following", "conditions", ":", "95", "degrees", "C", "for", "30", "seconds", ";", "22", "cycles", "of", "95", "degrees", "C", "for", "30", "seconds", ",", "66", "degrees", "C", "for", "30", "seconds", ",", "and", "72", "degrees", "C", "for", "60", "seconds", ";", "and", "finally", "72", "degrees", "C", "for", "5", "minutes", "(", "note", "that", "number", "of", "cycles", "is", "specific", "to", "TruSeq", "Custom", "Amplicon", "Design", ")", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 4, 5 ], [ 10, 11 ], [ 12, 13 ], [ 14, 15 ], [ 17, 18 ], [ 30, 31 ], [ 34, 35 ], [ 43, 44 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "then", "examine", "SMT", "sequence", "usage", "patterns", "and", "consistency", "of", "allele", "calls", "to", "determine", "how", "often", "SMT", "identified", "duplicates", "are", "likely", "the", "result", "of", "PCR", "duplicates.To", "test", "whether", "low", "DNA", "input", "was", "associated", "with", "higher", "SMT-duplicates", ",", "we", "analyzed", "two", "tumor", "samples", "at", "three", "different", "dilutions", "and", "then", "sequenced", "each", "to", "approximately", "1,500", "X", "depth", "." ],
+    "entities_indices" : [ [ 16, 17 ], [ 40, 41 ] ]
+  }, {
+    "sentence_tokens" : [ "Under", "an", "alpha", "of", "0.05", ",", "we", "expect", "that", "5", "%", "of", "the", "tests", "would", "be", "significantly", "different", ",", "and", "can", "examine", "if", "the", "FPR", "increases", "relative", "to", "alpha", "as", "a", "function", "of", "duplicate", "rate.To", "examine", "the", "full", "range", "of", "effects", "across", "duplicate", "rates", ",", "we", "initially", "simulated", "duplicates", "." ],
+    "entities_indices" : [ [ 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "show", "that", "the", "presence", "of", "duplicates", "can", "inflate", "the", "FPR", "when", "testing", "for", "changes", "in", "allele", "frequency", "between", "two", "samples", "and", "that", "estimates", "of", "clonal", "heterogeneity", "can", "be", "much", "more", "variable", "in", "the", "presence", "of", "duplicate", "reads", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "Our", "method", "simplifies", "PCR", "duplicate", "identification", "and", "emphasizes", "their", "removal", "in", "studies", "of", "tumor", "heterogeneity", "and", "clonal", "evolution", "." ],
+    "entities_indices" : [ [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "To", "show", "that", "SMT", "identified", "duplicates", "are", "PCR", "duplicates", ",", "we", "first", "examine", "whether", "they", "are", "higher", "under", "conditions", "expected", "to", "produce", "a", "greater", "number", "of", "PCR", "duplicates", ",", "such", "as", "low", "DNA", "input", ",", "high", "GC", "sequence", "content", ",", "and", "in", "targets", "with", "relatively", "higher", "read", "depth", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 36, 37 ] ]
+  }, {
+    "sentence_tokens" : [ "Sequence", "data", "is", "available", "through", "dbGaP", "study", "ID", "phs000767", "[", "36", "]", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "Thus", ",", "even", "at", "low", "levels", ",", "inclusion", "of", "PCR", "duplicates", "inflates", "the", "FPR", ",", "and", "identification", "and", "removal", "of", "PCR", "duplicates", "by", "SMT", "appropriately", "controls", "the", "FPR", "." ],
+    "entities_indices" : [ [ 13, 14 ], [ 23, 24 ], [ 27, 28 ] ]
+  }, {
+    "sentence_tokens" : [ "After", "two", "rounds", ",", "a", "single", "single", "stranded", "product", "that", "has", "both", "P7", "and", "P5", "primer", "sequences", "is", "created", "." ],
+    "entities_indices" : [ [ 12, 13 ], [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "theoretical", "maximum", "number", "of", "times", "we", "could", "observe", "a", "single", "SMT", "sequence", "was", "17,150", "(", "14", "samples", "x", "1,225", "amplicons", ")", "." ],
+    "entities_indices" : [ [ 11, 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "Exome", "sequencing", "studies", "at", "moderate", "(", "approximately", "100X", ")", "depth", "rely", "on", "read", "position", "to", "identify", "potential", "PCR", "duplicates", "[", "17", "]", ",", "but", "amplicon", "based", "(", "molecular", "inversion", "probes", "[", "18", "]", ",", "RainDrop", "Digital", "PCR", "(", "RainDance", "Technologies", ",", "Billerica", ",", "MA", ",", "USA", ")", ",", "TruSeq", "Custom", "Amplicon", "(", "Illumina", ",", "San", "Diego", ",", "CA", ",", "USA", ")", ")", "methods", "commonly", "used", "for", "targeted", "sequencing", "have", "reads", "with", "the", "same", "start", "and", "stop", "positions", "." ],
+    "entities_indices" : [ [ 43, 44 ], [ 54, 55 ], [ 57, 58 ], [ 73, 74 ] ]
+  }, {
+    "sentence_tokens" : [ "Allele", "counts", "were", "calculated", "from", "the", "Allele", "Count", "variable", "(", "AC", ")", "in", "GATK", ",", "divided", "by", "two", "to", "account", "for", "the", "SNP", "being", "sequenced", "twice", "within", "a", "paired", "read", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "Next", ",", "during", "two", "rounds", "of", "synthesis", ",", "two", "different", "index", "primers", "are", "incorporated", ",", "generating", "individual", "double", "stranded", "molecules", "that", "contain", "two", "indexes", "and", "flanking", "amplification", "sequences", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "Genotypes", "were", "called", "using", "GATK", "and", "allele", "counts", "were", "calculated", "from", "AC", ",", "divided", "by", "two", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "Duplicate", "reads", "were", "linked", "to", "unique", "reads", "by", "SMT", "sequence", "and", "allocated", "to", "the", "appropriate", "sample", "." ],
+    "entities_indices" : [ [ 8, 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "To", "clean", "the", "reads", "of", "poor", "quality", "data", "and", "to", "link", "each", "read", "to", "its", "target", ",", "read", "pairs", "were", "assigned", "to", "their", "respective", "targets", "by", "matching", "the", "first", "22", "bp", "of", "Read", "1", "to", "the", "reverse", "complement", "of", "the", "downstream", "locus", "specific", "oligo", "custom", "primer", "sequence", "and", "the", "first", "22", "bp", "of", "the", "Read", "2", "to", "the", "upstream", "locus", "specific", "oligo", "custom", "primer", "sequence", ",", "allowing", "for", "two", "differences", "(", "Levenstein", "distance", ")", "." ],
+    "entities_indices" : [ [ 32, 33, 34 ], [ 54, 55, 56 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "compared", "the", "number", "of", "genetic", "clusters", "estimated", "using", "PyClone", "[", "25", "]", "before", "and", "after", "removing", "SMT", "identified", "duplicates", "and", "observed", "no", "difference", ",", "suggesting", "that", "this", "approach", "may", "be", "robust", "to", "low", "numbers", "of", "duplicates", "." ],
+    "entities_indices" : [ [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "To", "estimate", "the", "proportion", "of", "SMT", "that", "would", "be", "expected", "to", "be", "the", "same", "sequence", "by", "chance", "given", "this", "distribution", "of", "sequence", "bias", ",", "we", "sampled", "SMTs", "from", "the", "observed", "distribution", "of", "SMT", "to", "the", "read", "depth", "of", "unique", "reads", "of", "a", "typical", "sample", "(", "Sample", "Germ05", ",", "average", "unique", "target", "coverage", "1,074", ")", ",", "and", "counted", "the", "number", "of", "times", "that", "the", "same", "SMT", "was", "sampled", "within", "each", "target", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 32, 33 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "each", "sample", ",", "unique", "reads", "were", "identified", "by", "SMT", "sequence", ",", "and", "randomly", "split", "into", "two", "paired", "samples", "." ],
+    "entities_indices" : [ [ 9, 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "technology", "has", "provided", "insights", "into", "subclonal", "phylogenetic", "structures", "in", "cancer", "[", "6", "]", "and", "mutational", "patterns", "that", "occur", "and", "are", "selected", "for", "during", "tumor", "progression", "[", "7", "-", "9", "]", "and", "in", "response", "to", "treatment", "[", "10", "]", "." ],
+    "entities_indices" : [ [ 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "University", "of", "California", "San", "Diego", "Institutional", "Review", "Board", "approved", "the", "study", "and", "all", "participants", "gave", "informed", "consent", "." ],
+    "entities_indices" : [ [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "During", "sequencing", "on", "either", "the", "MiSeq", "or", "HiSeq", ",", "the", "SMT", "oligomer", "is", "sequenced", "as", "an", "index", "read", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 7, 8 ], [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "other", "25", "samples", "were", "retrieved", "from", "the", "University", "of", "California", ",", "San", "Diego", "Biorepository", "at", "Moores", "Cancer", "Center", ",", "and", "processed", "as", "previously", "described", "[", "24", "]", "." ],
+    "entities_indices" : [ [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "Ampure", "bead", "cleanup", "was", "performed", ",", "library", "quality", "was", "assessed", "on", "an", "Agilent", "Bioanalzyer", "(", "Agilent", "Santa", "Clara", ",", "CA", ",", "USA", ")", "using", "a", "DNA", "1000", "chip", ",", "and", "concentration", "determined", "by", "Qubit", "and", "quantitative", "PCR", "using", "the", "KAPA", "Library", "Quantification", "Kit", "(", "Kapa", "Biosystems", ",", "Woburn", ",", "MA", ",", "USA", ")", "." ],
+    "entities_indices" : [ [ 16, 17 ], [ 19, 20 ], [ 27, 28 ], [ 42, 43 ], [ 49, 50 ] ]
+  }, {
+    "sentence_tokens" : [ "Next", ",", "we", "sequenced", "to", "an", "average", "of", "850X", "coverage", "using", "either", "an", "8-", "or", "12-mer", "SMT", "on", "the", "MiSeq", ",", "generating", "150", "bp", "paired-end", "reads", "(", "Additional", "file", "1", ")", "." ],
+    "entities_indices" : [ [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "FASTQ", "files", "from", "the", "87", "breast", "cancer", "and", "germline", "samples", "were", "processed", "using", "the", "same", "pipeline", ",", "except", "for", "the", "SMT", "sequence", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 20, 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "then", "examined", "whether", "the", "proportion", "of", "SMT", "duplicates", "in", "a", "given", "target", "was", "associated", "with", "GC", "content", "or", ",", "as", "a", "general", "indicator", "of", "PCR", "bias", ",", "depth", "of", "sequencing", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "Samples", "were", "pooled", "based", "on", "Qubit", "determined", "concentrations", "and", "12", "samples", "per", "run", "sequenced", "at", "12", "pM", "using", "Illumina", "MiSeq", "V2", "sequencing", "reagents", "and", "the", "following", "run", "set", "up", ":", "Read", "1", ":", "151", "cycles", ";", "Read", "2", ":", "8", "cycles", ";", "Read", "3", ":", "12", "cycles", "(", "or", "8", "cycles", ")", ";", "Read", "4", ":", "151", "cycles", "." ],
+    "entities_indices" : [ [ 16, 17 ], [ 36, 37, 38 ], [ 53, 54, 55 ] ]
+  }, {
+    "sentence_tokens" : [ "To", "determine", "if", "duplicate", "reads", "carried", "the", "same", "allele", ",", "for", "each", "sample", ",", "heterozygous", "SNPs", "were", "identified", "using", "GATK", "and", "all", "unique", "reads", "." ],
+    "entities_indices" : [ [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "Allele", "counts", "were", "calculated", "from", "the", "Allele", "Count", "variable", "(", "AC", ")", "in", "GATK", ",", "divided", "by", "two", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "Hybridization", "based", "methods", ",", "when", "sequenced", "deeply", ",", "can", "result", "in", "reads", "that", "are", "not", "PCR", "duplicates", "but", "have", "the", "same", "start", "stop", "locations", "by", "chance", "[", "19", "]", "." ],
+    "entities_indices" : [ [ 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "generated", "SMT", "tagged", "deep", "targeted", "sequencing", "data", "using", "two", "tumor", "samples", "sequenced", "at", "three", "different", "DNA", "inputs", ",", "and", "18", "germline", "DNA", "samples", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "While", "the", "expected", "complexity", "of", "a", "12", "bp", "random", "oligomer", "is", "high", "(", "4", "combinations", ")", ",", "the", "same", "oligomer", "could", "be", "incorporated", "multiple", "times", "by", "chance", "if", "there", "are", "biases", "in", "how", "the", "oligomer", "was", "generated", "or", "incorporated", "." ],
+    "entities_indices" : [ [ 9, 10 ], [ 19, 20 ], [ 34, 35 ] ]
+  }, {
+    "sentence_tokens" : [ "Using", "both", "experimentally", "derived", "and", "simulated", "duplicates", ",", "we", "test", "how", "the", "presence", "of", "duplicates", "affects", "estimates", "of", "clonal", "evolution", "and", "subclonal", "heterogeneity", "in", "tumor", "samples", "and", "show", "that", "the", "presence", "of", "PCR", "duplicates", "can", "inflate", "the", "false", "positive", "rate", "(", "FPR", ")", "." ],
+    "entities_indices" : [ [ 24, 25 ], [ 41, 42 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "calculated", "the", "number", "of", "times", "we", "would", "expect", "to", "see", "SMT", "sequences", "using", "the", "Poisson", "distribution", "assuming", "4", "(", "16,777,216", ")", "possible", "SMTs", ",", "an", "equal", "probability", "of", "choosing", "each", "one", ",", "and", "14,485,830", "observations", ",", "and", "compared", "this", "to", "our", "observed", "distribution", "(", "Figure", "2C", ")", "." ],
+    "entities_indices" : [ [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "largest", "SMT", "duplicate", "cluster", "contained", "23", "reads", "and", "was", "observed", "in", "the", "sample", "with", "the", "highest", "duplicate", "rate", "(", "Figure", "1C", ")", "." ],
+    "entities_indices" : [ [ 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "first", "round", ",", "we", "used", "the", "i7", "primer", "supplied", "with", "from", "the", "TruSeq", "Custom", "Amplicon", "Index", "Kit", "and", "a", "custom", "primer", ",", "P5-SMT", "(", "5", "'", "AATGATACGGCGACCACCGAGATCTACACNNNNNNNNNNNNACACTCTTTCCCTACACGACGCTCTTCCGATCT3", "'", ")", ",", "in", "place", "of", "the", "i5", "primer", "and", "at", "the", "same", "concentration", "as", "the", "i5", "primer", "." ],
+    "entities_indices" : [ [ 18, 19 ], [ 24, 25, 26, 27, 28, 29, 30 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "observed", "duplicate", "rates", "ranging", "from", "3", "%", "to", "26", "%", "in", "the", "tumor", "samples", "and", "5", "%", "to", "63", "%", "(", "median", "10", "%", ")", "in", "the", "germline", "samples", "(", "Additional", "file", "1", ")", "." ],
+    "entities_indices" : [ [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "To", "determine", "how", "duplicates", "affect", "estimates", "of", "clonal", "evolution", ",", "we", "have", "devised", "an", "approach", "where", "we", "do", "not", "expect", "any", "real", "differences", "between", "two", "samples", ",", "allowing", "us", "to", "study", "how", "the", "addition", "of", "duplicates", "-", "simulated", "or", "experimentally", "derived", "-", "affect", "the", "number", "of", "sites", "that", "look", "different", "between", "the", "two", "samples", "(", "FPR", ")", "." ],
+    "entities_indices" : [ [ 55, 56 ] ]
+  }, {
+    "sentence_tokens" : [ "Within", "a", "given", "target", ",", "unique", "reads", "corresponded", "to", "the", "first", "time", "an", "SMT", "was", "used", "within", "that", "target", "and", "all", "subsequent", "uses", "of", "the", "SMT", "were", "duplicate", "reads", "." ],
+    "entities_indices" : [ [ 13, 14 ], [ 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "Motif", "detection", "suggested", "overrepresented", "SMT", "sequences", "were", "enriched", "for", "a", "stretch", "of", "Ts", "(", "Figure", "2D", ")", "." ],
+    "entities_indices" : [ [ 4, 5, 6 ], [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "then", "remove", "the", "remaining", "P5-SMT", "primer", "from", "the", "reaction", "and", "amplify", "the", "product", "with", "iP7", "and", "P5", "." ],
+    "entities_indices" : [ [ 15, 16 ], [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "These", "results", "indicate", "that", "when", "using", "read", "depth", "to", "test", "for", "changes", "in", "allele", "frequency", "during", "clonal", "evolution", ",", "removal", "of", "PCR", "duplicates", "is", "required", "to", "avoid", "false", "positives.To", "show", "that", "the", "duplicate", "rate", "was", "not", "affected", "by", "the", "SMT", "labeling", "process", ",", "we", "analyzed", "an", "unrelated", "dataset", "that", "was", "generated", "using", "an", "unmodified", "Illumina", "Truseq", "Custom", "Amplicon", "kit", "." ],
+    "entities_indices" : [ [ 39, 40 ] ]
+  }, {
+    "sentence_tokens" : [ "After", "adjusting", "for", "sample", "specific", "effects", "in", "a", "multivariate", "model", ",", "we", "observed", "that", "duplicate", "rate", "was", "associated", "with", "coverage", "(", "Figure", "2B", ",", "0.5", "%", "increase", "in", "duplicate", "rate", "per", "1,000", "X,", "P", "=", "2", "x", "10", ")", ";", "the", "GC", "content", "of", "the", "insert", "(", "0.6", "%", "increase", "in", "duplicate", "rate", "per", "10", "%", "increase", "in", "GC", "content", ",", "P", "=", "7", "x", "10", ")", ";", "and", "GC", "content", "of", "the", "upstream", "targeting", "primer", "(", "0.1", "%", "decrease", "in", "duplicate", "rate", "with", "10", "%", "increase", "in", "GC", "content", ",", "P", "=", "7", "x", "10", ")", "and", "of", "the", "downstream", "targeting", "primer", "(", "0.06", "%", "decrease", "in", "duplicate", "rate", "with", "10", "%", "increase", "in", "GC", "content", ",", "P", "=", "6", "x", "10", ")", "." ],
+    "entities_indices" : [ [ 41, 42 ], [ 58, 59 ], [ 69, 70 ], [ 88, 89 ], [ 115, 116 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "analyzed", "our", "deep", "sequencing", "data", "at", "16", "somatic", "loci", "identified", "through", "exome", "sequencing", "as", "mutated", "in", "this", "tumor", "." ],
+    "entities_indices" : [ [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "DNA", "was", "isolated", "from", "tumor", "samples", "using", "the", "AllPrep", "DNA/RNA", "Mini", "kit", "(", "Qiagen", "(R)", ",", "Valencia", ",", "CA", ",", "USA", ")", "according", "to", "the", "manufacturer", "'", "s", "instructions", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 8, 9, 10, 11, 12 ], [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "Here", "we", "adapted", "the", "Illumina", "TruSeq", "Custom", "Amplicon", "kit", "to", "include", "single", "molecule", "tagging", "(", "SMT", ")", "and", "show", "that", "SMT", "identified", "duplicates", "arise", "from", "PCR", "." ],
+    "entities_indices" : [ [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "These", "results", "indicate", "that", "while", "there", "is", "some", "preferential", "SMT", "usage", "associated", "with", "higher", "usage", "of", "thymidine", "bases", ",", "in", "general", "SMT", "usage", "is", "diverse", "and", "observed", "duplicate", "SMT", "sequences", "for", "a", "given", "target", "within", "a", "sample", "are", "unlikely", "to", "be", "due", "to", "preferential", "use", "of", "specific", "SMT", "sequences", "when", "the", "SMT", "length", "is", "12", "bp.We", "then", "examined", "allele", "calls", "at", "SMT-duplicates", "to", "determine", "if", "they", "carry", "the", "same", "allele", "at", "heterozygous", "SNP", "loci", "." ],
+    "entities_indices" : [ [ 9, 10 ], [ 16, 17 ], [ 28, 29, 30 ], [ 47, 48, 49 ], [ 51, 52, 53 ], [ 72, 73, 74 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "adapted", "this", "kit", "to", "accommodate", "SMT", "by", "co-opting", "the", "second", "index", "sequence", "that", "is", "normally", "used", "for", "additional", "sample", "multiplexing", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "PyClone", "(", "v.0.12.3", ")", "was", "downloaded", "[", "35", "]", "and", "used", "to", "estimate", "the", "number", "of", "clones", "in", "tumor", "samples", "from", "each", "patient", "." ],
+    "entities_indices" : [ [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "Duplicate", "reads", "were", "those", "with", "SMT", "oligomers", "that", "had", "already", "been", "seen", "within", "a", "target", "." ],
+    "entities_indices" : [ [ 5, 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "At", "the", "heterozygous", "SNPs", "identified", "in", "each", "sample", ",", "SMT", "duplicate", "rates", "varied", "by", "4", "%", "to", "53", "%", ",", "with", "most", "showing", "rates", "between", "5", "%", "and", "25", "%", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "number", "of", "genetic", "clusters", "identified", "for", "each", "tumor", "sample", "at", "various", "duplication", "rates", "was", "reported", "." ],
+    "entities_indices" : [ [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "Then", ",", "targets", "were", "identified", "that", "overlapped", "each", "SNP", "and", "the", "corresponding", "reads", "were", "analyzed", "for", "the", "SNP", "alleles", "." ],
+    "entities_indices" : [ [ 17, 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "To", "calculate", "paired", "read", "concordance", ",", "Read", "1", "and", "Read", "2", "of", "the", "paired-end", "read", "were", "compared", "." ],
+    "entities_indices" : [ [ 6, 7, 8 ], [ 9, 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "Illumina", "TruSeq", "Custom", "Amplicon", "Kit", "is", "a", "multiplex", "system", "for", "targeted", "sequencing", "that", "allows", "for", "approximately", "1,500", "amplicons", "to", "be", "sequenced", "at", "the", "same", "time", "." ],
+    "entities_indices" : [ [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "Tumors", "are", "often", "heterogeneous", "with", "multiple", "subclones", ",", "which", "has", "become", "an", "important", "consideration", "in", "monitoring", "cancer", "evolution", "[", "2,3", "]", "and", "in", "choosing", "appropriate", "treatment", "regimens", "[", "4", "]", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "To", "test", "this", "method", ",", "we", "designed", "a", "custom", "amplicon", "library", "of", "1,225", "150-base-pair", "(", "bp", ")", "targets", "focused", "on", "heterozygous", "single", "nucleotide", "polymorphisms", "(", "SNPs", ")", "and", "somatic", "variants", "that", "were", "identified", "in", "Chronic", "Lymphocytic", "Leukemia", "(", "CLL", ")", "samples", "." ],
+    "entities_indices" : [ [ 34, 35, 36, 37 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "observed", "a", "strong", "correlation", "between", "overall", "duplicate", "rate", "and", "the", "FPR", "when", "duplicates", "were", "included", ",", "with", "the", "highest", "duplicate", "rate", "showing", "over", "25", "%", "SNPs", "different", "between", "the", "samples", "(", "Figure", "3C", ")", "." ],
+    "entities_indices" : [ [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "Thus", ",", "the", "SMT", "is", "copied", "into", "each", "subsequent", "PCR", "duplicate", "." ],
+    "entities_indices" : [ [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "ability", "to", "utilize", "SMT", "is", "not", "yet", "available", "in", "commercial", "kits", "for", "deep", "targeted", "sequencing", "that", "are", "easier", "to", "design", "and", "more", "flexible.Here", ",", "we", "adapt", "a", "commercially", "available", "custom", "amplicon", "based", "deep", "sequencing", "kit", "to", "incorporate", "SMT", "and", "show", "that", "the", "SMT", "oligomer", "tags", "PCR", "duplicates", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 38, 39 ], [ 44, 45 ] ]
+  }, {
+    "sentence_tokens" : [ "Within", "targets", ",", "SMT", "sequence", "diversity", "was", "high", ",", "differing", "from", "each", "other", "by", "5", "bp", "on", "average", "for", "8", "bp", "SMTs", "and", "8", "bp", "on", "average", "for", "12", "bp", "SMTs", "." ],
+    "entities_indices" : [ [ 3, 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "would", "not", "have", "expected", "to", "see", "more", "than", "one", "SMT", "sequence", "more", "than", "nine", "times", "if", "there", "was", "no", "sequence", "bias", "." ],
+    "entities_indices" : [ [ 10, 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "Targeted", "microdroplet", "methods", ",", "such", "as", "RainDance", ",", "will", "have", "a", "limited", "number", "of", "original", "fragments", "based", "on", "the", "number", "of", "microdroplets", "and", "the", "number", "of", "targets", ",", "creating", "a", "ceiling", "for", "complexity", "." ],
+    "entities_indices" : [ [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "They", "were", "sequenced", "using", "Illumina", "MiSeq", "V2", "sequencing", "reagents", "with", "a", "different", "set", "up", ":", "Read", "1", ":", "301", "cycles", ";", "Read", "2", ":", "8", "cycles", ";", "Read", "3", ":", "8", "cycles", ";", "Read", "4", ":", "301", "cycles", "." ],
+    "entities_indices" : [ [ 21, 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "incorporate", "a", "random", "8-", "or", "12-mer", "into", "the", "first", "round", "of", "amplification", "using", "a", "custom", "primer", "(", "P5-SMT", ")", "consisting", "of", "P5", ",", "an", "8-", "or", "12-mer", "SMT", "in", "place", "of", "the", "index", ",", "and", "a", "linker", "sequence", "." ],
+    "entities_indices" : [ [ 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "Heterozygous", "SNPs", "were", "identified", "in", "each", "germline", "sample", "separately", ",", "using", "unique", "reads", "only", "." ],
+    "entities_indices" : [ [ 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "Following", "two", "cycles", "of", "PCR", ",", "Ampure", "Bead", "cleanup", "was", "carried", "out", "according", "to", "standard", "protocol", "and", "eluted", "in", "25", "uL", "." ],
+    "entities_indices" : [ [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "Duplicate", "reads", "were", "widely", "distributed", "across", "different", "SMT", "oligomers", "and", "targeted", "sequences", "(", "Figure", "1C", ")", "." ],
+    "entities_indices" : [ [ 7, 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "Each", "pair", "of", "samples", "(", "either", "with", "simulated", "duplicates", "or", "with", "and", "without", "experimental", "duplicates", ")", "was", "genotyped", "at", "these", "loci", "using", "GATK", "UnifiedGenotyper", "(", "-", "-", "genotyping_mode", "GENOTYPE_GIVEN_ALLELES", ")", "." ],
+    "entities_indices" : [ [ 22, 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "Biases", "in", "multi-template", "PCR", "can", "come", "from", "a", "variety", "of", "sources", "[", "14", "]", ",", "including", "GC", "content", "[", "15,16", "]", "." ],
+    "entities_indices" : [ [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "These", "rates", "are", "similar", "to", "those", "observed", "in", "the", "SMT", "labeled", "samples", "and", "suggest", "that", "unaccounted", "duplicates", "are", "present", "using", "the", "unmodified", "TruSeq", "protocol.To", "assess", "how", "quantification", "of", "clonal", "heterogeneity", "is", "affected", "by", "the", "presence", "of", "duplicates", ",", "we", "examined", "two", "chronic", "lymphocytic", "leukemia", "samples", "from", "the", "same", "patient", "collected", "after", "diagnosis", "or", "prior", "to", "treatment", "that", "respectively", "had", "9", "%", "and", "3", "%", "duplicate", "rates", "." ],
+    "entities_indices" : [ [ 22, 23 ], [ 41, 42, 43, 44 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "same", "sample", ",", "if", "we", "restrict", "analysis", "to", "the", "first", "8", "bp", "of", "the", "observed", "SMTs", ",", "we", "see", "1.7", "%", "of", "the", "reads", "within", "a", "given", "target", "shared", "the", "same", "SMT", "by", "chance", ",", "suggesting", "that", "8", "bp", "does", "not", "have", "enough", "complexity", "to", "avoid", "sampling", "the", "same", "SMT", "multiple", "times", "at", "high", "read", "depth", "." ],
+    "entities_indices" : [ [ 51, 52 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "applied", "this", "approach", "to", "experimentally", "identified", "duplicate", "reads", "in", "the", "18", "germline", "DNA", "samples", ",", "and", "compared", "the", "FPR", "when", "only", "unique", "reads", "were", "used", "to", "that", "observed", "when", "duplicates", "were", "included", "." ],
+    "entities_indices" : [ [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "Unique", "reads", "were", "identified", "as", "the", "first", "read", "assigned", "to", "a", "target", "with", "an", "SMT", "that", "had", "not", "been", "seen", "for", "that", "target", "." ],
+    "entities_indices" : [ [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "Variants", "were", "called", "in", "each", "sample", "using", "GATK", "UnifiedGenotyper", "[", "32", "]", "." ],
+    "entities_indices" : [ [ 7, 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "While", "SMT", "usage", "within", "a", "target", "may", "be", "due", "to", "PCR", "duplicates", ",", "SMT", "usage", "across", "targets", "and", "across", "samples", "will", "not", "be", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "both", "tumors", ",", "we", "observed", "that", "lower", "input", "amounts", "of", "DNA", "were", "associated", "with", "higher", "rates", "of", "SMT", "identified", "duplicates", "(", "Figure", "2A", ")", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "Only", "Read", "1", "was", "used", "." ],
+    "entities_indices" : [ [ 1, 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "Metastatic", "cancer", "can", "now", "be", "monitored", "through", "deep", "sequencing", "of", "circulating", "tumor", "DNA", "[", "13", "]", ",", "and", "the", "potential", "for", "poor", "DNA", "quality", "combined", "with", "deep", "sequencing", "requirements", "make", "PCR", "duplicates", "an", "important", "concern", ",", "especially", "if", "the", "results", "impact", "clinical", "decisions", "." ],
+    "entities_indices" : [ [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "When", "duplicates", "were", "removed", ",", "however", ",", "the", "FPR", "dropped", "to", "approximately", "5", "%", "across", "all", "paired", "sample", "comparisons", ",", "effectively", "controlling", "the", "FPR", "to", "the", "alpha", "level", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 23, 24 ] ]
+  } ],
+  "emptySentences" : [ ]
+}

@@ -1,1 +1,99 @@
-[ ]
+{
+  "regulations" : [ ],
+  "hardInstances" : [ ],
+  "withoutRegulations" : [ {
+    "sentence_tokens" : [ "BLAST", "(", "http://blast.ncbi.nlm.nih.gov/Blast.cgi", ")", "was", "used", "for", "similarity", "search", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "raw", "data", "from", "the", "Illumina", "Hiseq2000", "were", "trimmed", "with", "two", "programs", "for", "performing", "quality", "control", "written", "in", "the", "Practical", "Extraction", "and", "Report", "Language", "(", "PERL", ")", "." ],
+    "entities_indices" : [ [ 5, 6, 7 ], [ 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "Selection", "of", "the", "best", "k-mer", "in", "the", "assembly", "step", "greatly", "affects", "the", "construction", "of", "the", "cp", "genome", "." ],
+    "entities_indices" : [ [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "other", "7.19", "%", "was", "gaps", ",", "which", "could", "be", "filled", "in", "with", "Illumina", "reads.We", "also", "tested", "the", "different", "cutoff", "values", "of", "HSP", "length", "from", "150", "to", "300", "base", "pairs", ",", "and", "got", "a", "curved", "surface", "that", "had", "a", "peak", "line", "almost", "horizontal", ",", "and", "the", "k-value", "of", "the", "peak", "was", "about", "81", "(", "Fig.", "4", ")", "." ],
+    "entities_indices" : [ [ 22, 23 ], [ 28, 29 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "reason", "for", "choosing", "150", "as", "the", "HSP", "length", "cutoff", "was", "that", "the", "minimum", "building", "segment", "length", "of", "the", "Q.", "spinosa", "cp", "genome", "should", "be", "around", "150", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "lengths", "of", "HSPs", "of", "the", "reference", "sequence", "(", "Q.", "rubra", "cp", "genome", ")", "with", "Q.", "spinosa", "cp", "contigs", "assembled", "with", "different", "k-mers", "(", "k", "was", "an", "odd", "number", "from", "17", "to", "99", ")", "were", "calculated", "." ],
+    "entities_indices" : [ [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "Choice", "of", "minimum", "read", "length", "did", "not", "affect", "total", "HSP", "length", "." ],
+    "entities_indices" : [ [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "it", "is", "difficult", "to", "use", "traditional", "sequencing", "methods", "to", "get", "cp", "genome", "sequences", "because", "of", "the", "complex", "procedures", "of", "preparing", "templates", "." ],
+    "entities_indices" : [ [ 12, 13, 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "used", "SOAPdenovo2", "(", "http://soap.genomics.org.cn/soapdenovo.html", ")", "to", "align", "the", "trimmed", "Illumina", "fastq", "reads", "to", "obtain", "contigs", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "Only", "the", "best", "HSP", "was", "kept", "for", "each", "query", "sequence", ",", "and", "this", "step", "could", "remove", "the", "redundancy", "of", "the", "HSPs", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 13, 14 ], [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "Using", "the", "cp", "genome", "sequence", "of", "Q.", "rubra", "as", "the", "reference", "sequence", ",", "the", "cp", "genome", "of", "Q.", "spinosa", "could", "be", "constructed", "." ],
+    "entities_indices" : [ [ 2, 3, 4, 5, 6, 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "sequencing", "reads", "of", "Q.", "spinosa", "plants", "used", "to", "build", "the", "cp", "genome", "of", "Q.", "spinosa", "were", "downloaded", "from", "the", "NCBI", "SRA", "database", "under", "the", "accession", "number", "SRP061187", "." ],
+    "entities_indices" : [ [ 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "With", "those", "criteria", ",", "the", "cp", "genome", "sequences", "of", "Q.", "spinosa", "could", "be", "built", "using", "the", "Q.", "rubra", "cp", "genome", "as", "a", "reference", "." ],
+    "entities_indices" : [ [ 5, 6, 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "there", "are", "still", "many", "species", "for", "which", "the", "cp", "genomes", "have", "not", "been", "fully", "sequenced", "." ],
+    "entities_indices" : [ [ 10, 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "Contigs", "shorter", "than", "150", "base", "pairs", "were", "removed", "because", "the", "length", "of", "the", "raw", "read", "was", "100", "base", "pairs", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "Contigs", "with", "HSP", "values", "showing", "identities", "greater", "than", "80", "%", ",", "e-values", "less", "than", "1e-30", "and", "HSP", "lengths", "of", "more", "than", "150", "were", "selected", "for", "the", "construction", "of", "the", "cp", "genome", "of", "Q.", "spinosa.We", "aligned", "the", "Illumina", "reads", "back", "to", "the", "assembled", "contigs", "that", "were", "selected", "for", "building", "the", "cp", "genome", "of", "Q.", "spinosa", ",", "and", "988,357", "pair", "ends", "could", "be", "aligned", "back", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "software", "was", "particularly", "designed", "to", "assemble", "Illumina", "GA", "short", "reads", "." ],
+    "entities_indices" : [ [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "used", "quality", "control", "methods", "in", "dealing", "with", "the", "Illumina", "cp", "sequence", "data", "." ],
+    "entities_indices" : [ [ 9, 10, 11, 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "total", "lengths", "of", "all", "HSPs", "from", "the", "BLAST", "results", "were", "calculated", "for", "each", "BLAST", "process", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 8, 9 ], [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "used", "SOAPdenovo2", "to", "align", "the", "trimmed", "Illumina", "fastq", "reads", "for", "generating", "contigs.For", "the", "similarity", "search", ",", "it", "was", "most", "appropriate", "to", "use", "the", "contigs", "that", "had", "a", "length", ">", "150", "base", "pairs", "as", "the", "input", "for", "BLAST", "as", "the", "length", "of", "the", "best", "HSP", "(", "High", "Score", "Pair", ")", "from", "the", "BLAST", "results", "was", "about", "150", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 7, 8, 9 ], [ 31, 32 ], [ 37, 38 ], [ 44, 45 ], [ 46, 47, 48, 49 ], [ 52, 53 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "second", "program", "was", "used", "to", "delete", "fastq", "reads", "created", "by", "the", "first", "program", "with", "length", "less", "than", "a", "certain", "value", "(", "Supplementary", "Script", "S2", ")", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "total", "number", "of", "base", "pairs", "of", "the", "Q.", "spinosa", "cp", "genome", "constructed", "with", "different", "assembled", "k-mers", "is", "shown", "in", "Supplementary", "Table", "1", "." ],
+    "entities_indices" : [ [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "Our", "results", "indicated", "that", ":", "(", "1", ")", "the", "minimum", "read", "length", "had", "little", "effect", "on", "the", "result", "of", "assembly", ";", "and", "(", "2", ")", "when", "k-mer", "size", "was", "set", "to", "81", "with", "a", "sequence", "read", "length", "of", "100", "base", "pairs", ",", "the", "assembly", "of", "the", "cp", "genome", "of", "Quercus", "spinosa", "was", "most", "complete", "." ],
+    "entities_indices" : [ [ 39, 40 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "efficiency", "of", "the", "pipeline", "makes", "it", "a", "useful", "method", "for", "cp", "genome", "construction", "in", "plants", "." ],
+    "entities_indices" : [ [ 11, 12, 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "the", "crucial", "parameter", "of", "the", "cp", "genome", "assembly", "pipeline", "was", "the", "k-value", "of", "the", "k-mer", "that", "was", "used", "in", "the", "contig", "assembly", "step", "." ],
+    "entities_indices" : [ [ 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "With", "different", "values", "of", "minimum", "read", "length", "and", "k-mer", "length", ",", "different", "genomic", "contigs", "of", "cp", "could", "be", "built", "." ],
+    "entities_indices" : [ [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "constructed", "length", "of", "the", "Q.", "spinosa", "cp", "genome", "after", "our", "pipeline", "was", "149,703", "base", "pairs", "." ],
+    "entities_indices" : [ [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "we", "picked", "the", "aligned", "contigs", "that", "had", "lengths", "greater", "than", "150", "base", "pairs", "from", "the", "results", "of", "SOAPdenovo2", "." ],
+    "entities_indices" : [ [ 13, 14 ], [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "Illumina", "Hiseq2000", "cp", "genomic", "sequence", "data", "in", "fastq", "format", "for", "Q.", "Spinosa", "was", "1.4", "Gigabytes", ",", "and", "it", "had", "561,845,830", "base", "pairs", "." ],
+    "entities_indices" : [ [ 1, 2, 3, 4 ], [ 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "only", "chose", "odd", "numbers", "as", "k-mer", "lengths", "since", "some", "of", "the", "k-mers", "with", "lengths", "being", "even", "numbers", "would", "have", "had", "the", "same", "complementary", "sequence", ",", "and", "thus", "these", "k-mers", "could", "cause", "statistical", "bias.For", "the", "best", "HSPs", ",", "we", "only", "kept", "those", "with", "identity", "greater", "than", "85", "%", "and", "length", "greater", "than", "150", "base", "pairs", "." ],
+    "entities_indices" : [ [ 36, 37 ], [ 53, 54 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "cp", "genome", "of", "Q.", "spinosa", "was", "constructed", "based", "on", "the", "result", "of", "the", "BLAST", "search", ",", "using", "the", "assembled", "contigs", "from", "the", "Illumina", "reads", "of", "the", "cp", "genome", "of", "Q.", "spinosa", "as", "queries", "and", "the", "whole", "genomic", "sequence", "of", "the", "Q.", "rubra", "cp", "as", "the", "database", "." ],
+    "entities_indices" : [ [ 14, 15 ], [ 41, 42, 43, 44 ] ]
+  } ],
+  "emptySentences" : [ ]
+}

@@ -6,7 +6,6 @@ import torch
 import numpy as np
 from tqdm.notebook import tqdm
 from datasets import Dataset, DatasetDict, load_metric
-# from clulab.clu_tokenizer import CluTokenizer
 from transformers import AutoTokenizer
 from torch import nn
 from transformers.modeling_outputs import SequenceClassifierOutput
@@ -20,44 +19,56 @@ from sklearn.metrics import classification_report
 import sklearn.metrics as metrics
 from sklearn.metrics import ConfusionMatrixDisplay
 import matplotlib.pyplot as plt
-import matplotlib.pyplot as plt
 from sklearn.datasets import make_classification
 from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
 from sklearn.model_selection import train_test_split
 from sklearn.svm import SVC
+import copy
 
 transformer_name = 'bert-base-cased'
 tokenizer = AutoTokenizer.from_pretrained(transformer_name)
 
-configuration = 2
+# -1: debug
+
+configuration = 1
+labels = ['Negative_activation', 'Positive_activation', 'No_relation']
 
 def main():
     init()
     data = read_data()
+    x = data.values()
+    data_list = []
+    for e in x:
+       for f in e:
+           data_list.append(f)
+
+    # test_data = read_test_data()
+    data = data_list
     
     # Take the first 60% as train, next 20% as development, last 20% as test (Don't use test for now)
-    train_list, eval_list = train_test_split(data, train_size=0.6)
+    train_df, eval_df = train_test_split(data, train_size=0.6)
+    eval_df, test_df = train_test_split(eval_df, train_size=0.5)
+
+
+    print(f'train rows: {len(train_df):,}')
+    print(f'eval rows: {len(eval_df):,}')
+    print(f'test rows: {len(test_df):,}')
 
     # create train dataset
-    train_df = pd.DataFrame(train_list)
-    eval_df = pd.DataFrame(eval_list)
-    # test_df = pd.DataFrame(test_list)
-
-    # print(f'train rows: {len(train_df.index):,}')
-    # print(f'eval rows: {len(dev_df.index):,}')
-    # print(f'test rows: {len(test_df.index):,}')
+    train_df = pd.DataFrame(train_df)
+    eval_df = pd.DataFrame(eval_df)
+    test_df = pd.DataFrame(test_df)
 
     ds = DatasetDict()
     ds['train'] = Dataset.from_pandas(train_df)
     ds['validation'] = Dataset.from_pandas(eval_df)
-    # ds['test'] = Dataset.from_pandas(test_df)
+    ds['test'] = Dataset.from_pandas(test_df)
 
 
     train_ds = ds['train'].map(
         tokenize, batched=True,
         remove_columns=['event_indices', 'polarity', 'controller_indices', 'controlled_indices', 'trigger_indices']
     )   
-    #maybe add entity markers after tokenization???
 
     eval_ds = ds['validation'].map(
         tokenize,
@@ -83,7 +94,6 @@ def main():
         per_device_eval_batch_size=batch_size,
         evaluation_strategy='epoch',
         weight_decay=weight_decay,
-        # label_names=['input_ids', 'token_type_ids', 'attention_mask', 'label']
     )
     
     # -- [12] -- 
@@ -96,33 +106,33 @@ def main():
         tokenizer=tokenizer,
     )    
     print("\n", train_ds, "\n")
+
     train_output = trainer.train()
-    print("~ Train Output:\n", train_output, "\n")
 
-    # -- [14] --
-    predictions = trainer.predict(eval_ds)
+    print("> Train Output:\n", train_output, "\n")
 
-    print("~ Prediction output for eval_ds:\n", predictions, "\n")
-    y_true = predictions.label_ids
-    y_pred = np.argmax(predictions.predictions, axis=-1)
-    target_names = ['Positive_activation', 'Negative_activation', 'No_relation']
+    test_ds = ds['test'].map(
+        tokenize,
+        batched=True,
+        remove_columns=['event_indices', 'polarity', 'controller_indices', 'controlled_indices', 'trigger_indices']
+    )
+    test_ds.to_pandas()
 
+    output = trainer.predict(test_ds)
+
+    print("test output: ", output)
+
+    y_true = output.label_ids
+    y_pred = np.argmax(output.predictions, axis=-1)
+    target_names = labels
     print(classification_report(y_true, y_pred, target_names=target_names))
 
-    # get confusion matrix
-    print("Confusion Matrix:")
+    print("y_true: ", y_true)
+    print("y_pred: ", y_pred)
+
+    print("\nConfusion Matrix:")
     cm = metrics.multilabel_confusion_matrix(y_true=y_true, y_pred=y_pred, labels=[0,1,2])
-
     print(cm)
-"""
-TN -> [0,0]
-FN -> [1,0]
-TP -> [1,1]
-FP -> [0,1]
-
-In multilabel confusion matrix, the count of true negatives is at 00, 
-false negatives is at 10, true positives is at 11 and false positives is at 01.
-"""
 
     
 def tokenize(examples):
@@ -131,173 +141,107 @@ def tokenize(examples):
 
 
 
-def add_entity_markers(text):
-    print("inside add_entity_markers")
-    for i in range(0, len(text)): 
-        og_sentence = text[i]['sentence_tokens']
-        new_sentence = []
-        if (('controller_indices' in text[i]) & ('controlled_indices' in text[i])):
-            controller_indices = text[i]['controller_indices']
-            controlled_indices = text[i]['controlled_indices']
+def add_entity_markers(data):
+    count = 0
+    for e in data['regulations']:
+        og_sentence = e['sentence_tokens']
+        new_sentence = copy.deepcopy(e['sentence_tokens'])
 
-            controller_start = controller_indices[0]
-            controller_end = controller_indices[len(controller_indices)-1] - 1
+        controller_indices = e['controller_indices']
+        controlled_indices = e['controlled_indices']
 
-            controlled_start = controlled_indices[0]
-            controlled_end = controlled_indices[len(controlled_indices)-1] - 1
+        controller_start = controller_indices[0]
+        controller_end = controller_indices[-1]
 
-            entity_count = 1
-            for j in range(0, len(og_sentence)):
-                if (j == controller_start):
-                    new_sentence.append("[E{}]".format(entity_count))
-                    new_sentence.append(og_sentence[j])
-                    if (j == controller_end):
-                        new_sentence.append("[/E{}]".format(entity_count))
-                        entity_count += 1
-                        continue
-                    continue
+        controlled_start = controlled_indices[0]
+        controlled_end = controlled_indices[-1]
 
-                if (j == controller_end):
-                    new_sentence.append(og_sentence[j])
-                    new_sentence.append("[/E{}]".format(entity_count))
-                    entity_count += 1
-                    continue
-                
-                if (j == controlled_start):
-                    new_sentence.append("[E{}]".format(entity_count))
-                    new_sentence.append(og_sentence[j])
-                    if (j == controlled_end):
-                        new_sentence.append("[/E{}]".format(entity_count))
-                        entity_count += 1
-                        continue
-                    continue
+        if (controller_start < controlled_start):
+            new_sentence.insert(controller_start, "[E1]")
+            new_sentence.insert(controller_end + 1, "[/E1]" )
+            new_sentence.insert(controlled_start+2, "[E2]")
+            new_sentence.insert(controlled_end+3, "[/E2]")
 
-                if (j == controlled_end):
-                    new_sentence.append(og_sentence[j])
-                    new_sentence.append("[/E{}]".format(entity_count))
-                    entity_count += 1
-                    continue
-            
-                if (og_sentence[j].strip() == "."):
-                    new_sentence.append("[SEP]")
-                else:
-                    new_sentence.append(og_sentence[j])
-            
-            text[i]['sentence_tokens'] = new_sentence
+        else:
+            new_sentence.insert(controlled_start, "[E1]")
+            new_sentence.insert(controlled_end + 1, "[/E1]" )
+            new_sentence.insert(controller_start+2, "[E2]")
+            new_sentence.insert(controller_end+3, "[/E2]")
+        e['sentence_tokens'] = new_sentence
+        print("\n--------")
+        print("Regulations")
+        print(controller_indices)
+        print(controlled_indices)
+        print("og sentence: ", og_sentence, "\n")
+        print("new sentence: ", new_sentence, "\n")
+        print()
 
 
-            # print("\n---------------------")
-            # print("CONTROLLER INDICES: ", controller_indices)
-            # print("CONTROLLED INDICES: ", controlled_indices)
-            # label_1 = ""
-            # if (text[i]['label'] == 0):
-            #     label_1 = "Negative_activation"
-            # elif (text[i]['label'] == 1):
-            #     label_1 = "Positive_activation"
-            # print("LABEL: ", label_1)
+    for e in data['hardInstances']:
+        og_sentence = e['sentence_tokens']
+        new_sentence = copy.deepcopy(e['sentence_tokens'])
+        indices = e['entities_indices']
+        num_entities = len(indices)
+        offset = 0
+        for i in range(0, num_entities):
+            if (offset == 0):
+                start = indices[i][0] 
+                end = indices[i][-1]
+                offset += 1 
+            else: 
+                start = indices[i][0] + offset + 1
+                end = indices[i][0] + offset + 2
+                offset += 2
 
-            # print("\nORIGINAL: ", og_sentence)
-            # print("\nNEW:      ", new_sentence)
+            new_sentence.insert(start, "[E{}]".format(i+1))
+            new_sentence.insert(end+1, "[/E{}]".format(i+1))
+        e['sentence_tokens'] = new_sentence
+        print("\n--------")
+        print("Hard Instances")
+        print(indices, "\n")
+        print("og sentence: ", og_sentence, "\n")
+        print("new sentence: ", new_sentence, "\n")
+        print()
 
-        if (('entity_one_indices' in text[i]) & ('entity_two_indices' in text[i])):
-            e1_indices = text[i]['entity_one_indices']
-            e2_indices = text[i]['entity_two_indices']
+    for e in data['withoutRegulations']:
+        og_sentence = e['sentence_tokens']
+        new_sentence = copy.deepcopy(e['sentence_tokens'])
+        indices = e['entities_indices']
+        num_entities = len(indices)
+        offset = 0
+        for i in range(0, num_entities):
+            if (offset == 0):
+                start = indices[i][0] 
+                end = indices[i][-1]
+                offset += 1 
+            else: 
+                start = indices[i][0] + offset + 1
+                end = indices[i][0] + offset + 2
+                offset += 2
 
-            e1_start = e1_indices[0]
-            e1_end = e1_indices[len(e1_indices)-1] - 1
+            new_sentence.insert(start, "[E{}]".format(i+1))
+            new_sentence.insert(end+1, "[/E{}]".format(i+1))
+        e['sentence_tokens'] = new_sentence
 
-            e2_start = e2_indices[0]
-            e2_end = e2_indices[len(e2_indices)-1] - 1
+        print("\n--------")
+        print("Without Regulations")
+        print(indices, "\n")
+        print("og sentence: ", og_sentence, "\n")
+        print("new sentence: ", new_sentence, "\n")
+        print()
 
-            entity_count = 1
-            for j in range(0, len(og_sentence)):
-                if (j == e1_start):
-                    new_sentence.append("[E{}]".format(entity_count))
-                    new_sentence.append(og_sentence[j])
-                    if (j == e1_end):
-                        new_sentence.append("[/E{}]".format(entity_count))
-                        entity_count += 1
-                        continue
-                    continue
-
-                if (j == e1_end):
-                    new_sentence.append(og_sentence[j])
-                    new_sentence.append("[/E{}]".format(entity_count))
-                    entity_count += 1
-                    continue
-                
-                if (j == e2_start):
-                    new_sentence.append("[E{}]".format(entity_count))
-                    new_sentence.append(og_sentence[j])
-                    if (j == e2_end):
-                        new_sentence.append("[/E{}]".format(entity_count))
-                        entity_count += 1
-                        continue
-                    continue
-
-                if (j == e2_end):
-                    new_sentence.append(og_sentence[j])
-                    new_sentence.append("[/E{}]".format(entity_count))
-                    entity_count += 1
-                    continue
-            
-                if (og_sentence[j].strip() == "."):
-                    new_sentence.append("[SEP]")
-                else:
-                    new_sentence.append(og_sentence[j])
-            text[i]['sentence_tokens'] = new_sentence
-            # print("\n---------------------\n")
-            # print("E1 INDICES: ", e1_indices)
-            # print("E2 INDICES: ", e2_indices)
-            # if (text[i]['label'] == 2):
-            #     print("LABEL: No_relation")
-            # else:
-            #     print("LABEL:", text[i]['label'])
-            # print("\nORIGINAL: ", og_sentence)
-            # print("\nNEW:      ", new_sentence)
-                
-    if (configuration == 3):
-        pass
-    return text
+    return data
 
 
 
 
-
-
-def read_data():
-    """ 
-    Read data from sample_training_data folder and remove duplicates.
-    """
+def read_test_data():
     json_data = []
-    directory1 = 'sample_training_data'
-    directory2 = 'negative_training_data'
+    f = open("test_data.json")
+    data = json.load(f)
+    # print(data)
 
-    for filename in os.listdir(directory1):
-        if filename.endswith('.json'):
-            with open(os.path.join(directory1, filename)) as f:
-                data = json.load(f)
-                if (len(data) > 0):
-                    json_data.append(data)
-                    # if (len(json_data) > 5): # for testing
-                    #     break
-
-    for filename in os.listdir(directory2):
-        if filename.endswith('.json'):
-            with open(os.path.join(directory2, filename)) as f:
-                data = json.load(f)
-                if (len(data) > 0):
-                    json_data.append(data)
-                    # if (len(json_data) > 10): # for testing
-                    #     break
-               
-    list_no_dups = remove_duplicates(json_data)
-    random.shuffle(list_no_dups)
-
-    # 0: Negative_activation 
-    # 1: Postive_activation
-    # 2: No_relation
-    for e in list_no_dups:
+    for e in data:
         if (e.get('type')):
             e['label'] = e.pop('type')
             if (e['label'] == "Negative_activation"):
@@ -310,12 +254,105 @@ def read_data():
                 e['label'] = 1
         else:
             e['label'] = 2
-
     if (configuration != 1):
-        data = add_entity_markers(list_no_dups)
-    else:
-        data = list_no_dups
+        add_entity_markers(data)
+    return data
+ 
 
+def read_data():
+    """ 
+    Read data from sample_training_data folder and remove duplicates.
+    """
+    data = {
+        "regulations" : [],
+        "hardInstances": [],
+        "withoutRegulations": [],
+        "emptySentences": []
+        }
+    
+    directory1 = 'sample_training_data'
+    directory2 = 'negative_training_data'
+
+    # directory1 = 'test_sample'
+    # directory2 = 'test_negative'
+
+    negative_count = 0
+    positive_count = 0
+    none_count = 0
+
+    count = 0
+
+    for filename in os.listdir(directory1):
+        if filename.endswith('.json'):
+            with open(os.path.join(directory1, filename)) as f:
+                file = json.load(f)
+                if (len(file) > 0):
+                    for e in file:
+                        if (e['type'] == "Negative_activation" or e['type'] == "Negative_regulation"):
+                                e['label'] = 0
+                                negative_count += 1
+                        elif (e['type'] == "Positive_activation" or e['type'] == "Positive_regulation"):
+                                e['label'] = 1
+                                positive_count += 1
+                
+                        data['regulations'].append(e)
+
+    for filename in os.listdir(directory2):
+        if filename.endswith('.json'):
+            with open(os.path.join(directory2, filename)) as f:
+                file = json.load(f)
+                if (len(file) > 0): 
+                    regulations = file['regulations']
+                    hard_instances = file['hardInstances']
+                    without_regulations = file['withoutRegulations']
+                    empty_sentences = file['emptySentences']
+
+                    for e in regulations:
+                        if (e['type']):
+                            if (e['type'] == "Negative_activation" or e['type'] == "Negative_regulation"):
+                                e['label'] = 0
+                                negative_count += 1
+                            
+                            elif (e['type'] == "Positive_activation" or e['type'] == "Positive_regulation"):
+                                e['label'] = 1
+                                positive_count += 1
+                            
+                            else:
+                                raise Exception("Unknown label in regulations data!")
+                            data['regulations'].append(e)
+                            count += 1
+                        else:
+                            raise Exception("Unknown label in regulations data!")
+
+                    for e in hard_instances:
+                        e['label'] = 0
+                        data['hardInstances'].append(e)
+                        count += 1
+                        negative_count += 1 
+
+                    for e in without_regulations:
+                        e['label'] = 2
+                        none_count += 1
+                        data['withoutRegulations'].append(e)
+                        count += 1
+
+                    for e in empty_sentences:
+                        e['label'] = 2
+                        none_count += 1
+                        data['emptySentences'].append(e)
+                        count += 1 
+                    
+
+    print("Positive: ", positive_count)
+    print("Negative: ", negative_count)
+    print("None: ", none_count)
+    
+    # TODO remove duplicates & shuffle 
+    
+    if (configuration != 1):
+        data = add_entity_markers(data)
+    else:
+        data = data
     return data
 
 def remove_duplicates(list):

@@ -1,279 +1,967 @@
-[ {
-  "sentence_tokens" : [ "We", "hypothesize", "that", "extracellular", "HMGB1", "in", "Sj", "o", "gren", "'", "s", "syndrome", "may", "trigger", "strong", "auto-inflammatory", "cycles", "by", "activating", "an", "adaptive", "immune", "response", "and", "may", "establish", "a", "continuous", "pathological", "condition", "." ],
-  "event_indices" : [ 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 11, 12 ],
-  "controlled_indices" : [ 20, 21, 22, 23 ],
-  "trigger_indices" : [ 13, 14 ],
-  "rule_name" : "Positive_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "We", "hypothesize", "that", "extracellular", "HMGB1", "in", "Sj", "o", "gren", "'", "s", "syndrome", "may", "trigger", "strong", "auto-inflammatory", "cycles", "by", "activating", "an", "adaptive", "immune", "response", "and", "may", "establish", "a", "continuous", "pathological", "condition", "." ],
-  "event_indices" : [ 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 4, 5 ],
-  "controlled_indices" : [ 20, 21, 22, 23 ],
-  "trigger_indices" : [ 13, 14 ],
-  "rule_name" : "Positive_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "In", "addition", ",", "HMGB1", "can", "increase", "Th17", "cells", "by", "upregulating", "IL-6", "or", "IL-23", "[", "21", "-", "23", "]", "." ],
-  "event_indices" : [ 3, 4, 5, 6, 7, 8, 9, 10, 11 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 3, 4 ],
-  "controlled_indices" : [ 10, 11 ],
-  "trigger_indices" : [ 5, 6 ],
-  "rule_name" : "Positive_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "In", "addition", ",", "HMGB1", "can", "increase", "Th17", "cells", "by", "upregulating", "IL-6", "or", "IL-23", "[", "21", "-", "23", "]", "." ],
-  "event_indices" : [ 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 3, 4 ],
-  "controlled_indices" : [ 12, 13 ],
-  "trigger_indices" : [ 5, 6 ],
-  "rule_name" : "Positive_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Extracellular", "HMGB1", ",", "in", "which", "all", "cysteines", "are", "reduced", ",", "binds", "to", "CXCL12", "and", "acts", "through", "CXCR4", "to", "cause", "cellular", "chemotaxis", "(", "Fig", "1", ")", "[", "9", "-", "12", "]", "." ],
-  "event_indices" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21 ],
-  "type" : "Negative_activation",
-  "polarity" : false,
-  "controller_indices" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13 ],
-  "controlled_indices" : [ 20, 21 ],
-  "trigger_indices" : [ 18, 19 ],
-  "rule_name" : "Positive_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Injection", "of", "2", "mug", "or", "0.02", "mug", "anti-HMGB1", "attenuated", "corneal", "epithelial", "erosions", "and", "increased", "tear", "secretion", "(", "p", "<", "0.05", ")", "." ],
-  "event_indices" : [ 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 3, 4 ],
-  "controlled_indices" : [ 14, 15, 16 ],
-  "trigger_indices" : [ 13, 14 ],
-  "rule_name" : "Positive_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Injection", "of", "2", "mug", "or", "0.02", "mug", "anti-HMGB1", "attenuated", "corneal", "epithelial", "erosions", "and", "increased", "tear", "secretion", "(", "p", "<", "0.05", ")", "." ],
-  "event_indices" : [ 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 6, 7 ],
-  "controlled_indices" : [ 14, 15, 16 ],
-  "trigger_indices" : [ 13, 14 ],
-  "rule_name" : "Positive_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Group", "2", "ILCs", "produce", "Th2-type", "cytokines", "IL-4", ",", "IL-5", ",", "or", "IL-13", ",", "and", "express", "the", "transcription", "factors", "ROR-alpha", ",", "Gata3", ",", "and", "T", "cell", "factor", "(", "TCF", ")-1.", "Group", "3", "ILCs", "include", "fetal", "lymphoid", "tissue-inducer", "(", "LTi", ")", "cells", ",", "and", "adult", "ILCs", "that", "either", "express", "or", "lack", "the", "natural", "cytotoxicity", "receptor", "(", "NCR", ",", "NKp46", ")", "(", "NCR", "ILC3s", "and", "NCR", "ILC3s", ",", "respectively", ")", "." ],
-  "event_indices" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 0, 1, 2, 3 ],
-  "controlled_indices" : [ 27, 28 ],
-  "trigger_indices" : [ 3, 4 ],
-  "rule_name" : "Positive_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Group", "2", "ILCs", "produce", "Th2-type", "cytokines", "IL-4", ",", "IL-5", ",", "or", "IL-13", ",", "and", "express", "the", "transcription", "factors", "ROR-alpha", ",", "Gata3", ",", "and", "T", "cell", "factor", "(", "TCF", ")-1.", "Group", "3", "ILCs", "include", "fetal", "lymphoid", "tissue-inducer", "(", "LTi", ")", "cells", ",", "and", "adult", "ILCs", "that", "either", "express", "or", "lack", "the", "natural", "cytotoxicity", "receptor", "(", "NCR", ",", "NKp46", ")", "(", "NCR", "ILC3s", "and", "NCR", "ILC3s", ",", "respectively", ")", "." ],
-  "event_indices" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 0, 1, 2, 3 ],
-  "controlled_indices" : [ 16, 17 ],
-  "trigger_indices" : [ 3, 4 ],
-  "rule_name" : "Positive_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Group", "2", "ILCs", "produce", "Th2-type", "cytokines", "IL-4", ",", "IL-5", ",", "or", "IL-13", ",", "and", "express", "the", "transcription", "factors", "ROR-alpha", ",", "Gata3", ",", "and", "T", "cell", "factor", "(", "TCF", ")-1.", "Group", "3", "ILCs", "include", "fetal", "lymphoid", "tissue-inducer", "(", "LTi", ")", "cells", ",", "and", "adult", "ILCs", "that", "either", "express", "or", "lack", "the", "natural", "cytotoxicity", "receptor", "(", "NCR", ",", "NKp46", ")", "(", "NCR", "ILC3s", "and", "NCR", "ILC3s", ",", "respectively", ")", "." ],
-  "event_indices" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 0, 1, 2, 3 ],
-  "controlled_indices" : [ 8, 9 ],
-  "trigger_indices" : [ 3, 4 ],
-  "rule_name" : "Positive_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Group", "2", "ILCs", "produce", "Th2-type", "cytokines", "IL-4", ",", "IL-5", ",", "or", "IL-13", ",", "and", "express", "the", "transcription", "factors", "ROR-alpha", ",", "Gata3", ",", "and", "T", "cell", "factor", "(", "TCF", ")-1.", "Group", "3", "ILCs", "include", "fetal", "lymphoid", "tissue-inducer", "(", "LTi", ")", "cells", ",", "and", "adult", "ILCs", "that", "either", "express", "or", "lack", "the", "natural", "cytotoxicity", "receptor", "(", "NCR", ",", "NKp46", ")", "(", "NCR", "ILC3s", "and", "NCR", "ILC3s", ",", "respectively", ")", "." ],
-  "event_indices" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 0, 1, 2, 3 ],
-  "controlled_indices" : [ 18, 19 ],
-  "trigger_indices" : [ 3, 4 ],
-  "rule_name" : "Positive_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Group", "2", "ILCs", "produce", "Th2-type", "cytokines", "IL-4", ",", "IL-5", ",", "or", "IL-13", ",", "and", "express", "the", "transcription", "factors", "ROR-alpha", ",", "Gata3", ",", "and", "T", "cell", "factor", "(", "TCF", ")-1.", "Group", "3", "ILCs", "include", "fetal", "lymphoid", "tissue-inducer", "(", "LTi", ")", "cells", ",", "and", "adult", "ILCs", "that", "either", "express", "or", "lack", "the", "natural", "cytotoxicity", "receptor", "(", "NCR", ",", "NKp46", ")", "(", "NCR", "ILC3s", "and", "NCR", "ILC3s", ",", "respectively", ")", "." ],
-  "event_indices" : [ 0, 1, 2, 3, 4, 5, 6, 7 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 0, 1, 2, 3 ],
-  "controlled_indices" : [ 6, 7 ],
-  "trigger_indices" : [ 3, 4 ],
-  "rule_name" : "Positive_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Group", "2", "ILCs", "produce", "Th2-type", "cytokines", "IL-4", ",", "IL-5", ",", "or", "IL-13", ",", "and", "express", "the", "transcription", "factors", "ROR-alpha", ",", "Gata3", ",", "and", "T", "cell", "factor", "(", "TCF", ")-1.", "Group", "3", "ILCs", "include", "fetal", "lymphoid", "tissue-inducer", "(", "LTi", ")", "cells", ",", "and", "adult", "ILCs", "that", "either", "express", "or", "lack", "the", "natural", "cytotoxicity", "receptor", "(", "NCR", ",", "NKp46", ")", "(", "NCR", "ILC3s", "and", "NCR", "ILC3s", ",", "respectively", ")", "." ],
-  "event_indices" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 0, 1, 2, 3 ],
-  "controlled_indices" : [ 11, 12 ],
-  "trigger_indices" : [ 3, 4 ],
-  "rule_name" : "Positive_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Group", "2", "ILCs", "produce", "Th2-type", "cytokines", "IL-4", ",", "IL-5", ",", "or", "IL-13", ",", "and", "express", "the", "transcription", "factors", "ROR-alpha", ",", "Gata3", ",", "and", "T", "cell", "factor", "(", "TCF", ")-1.", "Group", "3", "ILCs", "include", "fetal", "lymphoid", "tissue-inducer", "(", "LTi", ")", "cells", ",", "and", "adult", "ILCs", "that", "either", "express", "or", "lack", "the", "natural", "cytotoxicity", "receptor", "(", "NCR", ",", "NKp46", ")", "(", "NCR", "ILC3s", "and", "NCR", "ILC3s", ",", "respectively", ")", "." ],
-  "event_indices" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 0, 1, 2, 3 ],
-  "controlled_indices" : [ 20, 21 ],
-  "trigger_indices" : [ 3, 4 ],
-  "rule_name" : "Positive_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Group", "2", "ILCs", "produce", "Th2-type", "cytokines", "IL-4", ",", "IL-5", ",", "or", "IL-13", ",", "and", "express", "the", "transcription", "factors", "ROR-alpha", ",", "Gata3", ",", "and", "T", "cell", "factor", "(", "TCF", ")-1.", "Group", "3", "ILCs", "include", "fetal", "lymphoid", "tissue-inducer", "(", "LTi", ")", "cells", ",", "and", "adult", "ILCs", "that", "either", "express", "or", "lack", "the", "natural", "cytotoxicity", "receptor", "(", "NCR", ",", "NKp46", ")", "(", "NCR", "ILC3s", "and", "NCR", "ILC3s", ",", "respectively", ")", "." ],
-  "event_indices" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 0, 1, 2, 3 ],
-  "controlled_indices" : [ 25, 26 ],
-  "trigger_indices" : [ 3, 4 ],
-  "rule_name" : "Positive_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Effects", "of", "subconjunctival", "administration", "of", "anti-high", "mobility", "group", "box", "1", "on", "dry", "eye", "in", "a", "mouse", "model", "of", "Sjogren", "'s", "syndrome", "." ],
-  "entity_one_indices" : [ 18, 19, 20, 21 ],
-  "entity_two_indices" : [ 5, 6, 7, 8, 9, 10 ]
-}, {
-  "sentence_tokens" : [ "The", "aim", "of", "this", "study", "was", "to", "investigate", "the", "effect", "of", "subconjunctival", "administration", "of", "anti-HMGB1", "on", "dry", "eye", "in", "a", "mouse", "model", "of", "Sjogren", "'s", "syndrome", "." ],
-  "entity_one_indices" : [ 23, 24, 25, 26 ],
-  "entity_two_indices" : [ 14, 15 ]
-}, {
-  "sentence_tokens" : [ "Goblet", "cell", "density", "was", "increased", "in", "0.2", "mug", "and", "2", "mug", "anti-HMGB1-treated-mice", "with", "marginal", "significance", "." ],
-  "entity_one_indices" : [ 10, 11 ],
-  "entity_two_indices" : [ 7, 8 ]
-}, {
-  "sentence_tokens" : [ "The", "inflammatory", "foci", "score", ",", "and", "the", "number", "of", "BrdU", "+", "cells", ",", "IL-17-,", "IL-10-,", "IFNgamma", "secreting", "cells", ",", "and", "functional", "B", "cells", "did", "not", "significantly", "change", "following", "anti-HMGB1", "treatment", "." ],
-  "entity_one_indices" : [ 13, 14, 15, 16 ],
-  "entity_two_indices" : [ 9, 10 ]
-}, {
-  "sentence_tokens" : [ "Surprisingly", ",", "the", "percentage", "of", "ILC3s", "was", "significantly", "increased", "in", "the", "draining", "lymph", "nodes", "(", "p", "<", "0.05", ")", ",", "and", "the", "expression", "of", "IL-22", "was", "significantly", "increased", "in", "the", "intraorbital", "glands", "(", "p", "<", "0.05", ")", "after", "administration", "of", "2", "mug", "anti-HMGB1", "." ],
-  "entity_one_indices" : [ 41, 42 ],
-  "entity_two_indices" : [ 24, 25 ]
-}, {
-  "sentence_tokens" : [ "HMGB1", "is", "one", "of", "the", "most", "abundant", "non", "histone", "nuclear", "proteins", "that", "contributes", "to", "chromatin", "stabilization", ",", "and", "contains", "two", "folded", "helical", "DNA", "binding", "motifs", ",", "called", "A", "and", "B", "boxes", "." ],
-  "entity_one_indices" : [ 8, 9 ],
-  "entity_two_indices" : [ 0, 1 ]
-}, {
-  "sentence_tokens" : [ "Conversely", ",", "apoptosis", "induced", "extracellular", "HMGB1", ",", "in", "which", "all", "cysteines", "are", "oxidized", ",", "or", "cysteine", "106", "is", "oxidized", ",", "does", "not", "exhibit", "pro", "inflammatory", "or", "chemotactic", "activities", "[", "7", "]", "." ],
-  "entity_one_indices" : [ 5, 6 ],
-  "entity_two_indices" : [ 2, 3 ]
-}, {
-  "sentence_tokens" : [ "Innate", "lymphoid", "cells", "(", "ILCs", ")", "have", "emerged", "as", "a", "new", "type", "of", "immune", "cell", "with", "important", "functions", "in", "innate", "and", "adaptive", "immunity", "[", "14", ",", "15", "]", "." ],
-  "entity_one_indices" : [ 21, 22, 23 ],
-  "entity_two_indices" : [ 11, 12 ]
-}, {
-  "sentence_tokens" : [ "Therefore", ",", "we", "investigated", "whether", "early", "treatment", "with", "an", "anti-HMGB1", "blocking", "antibody", "could", "(", "1", ")", "improve", "the", "clinical", "manifestations", "of", "dry", "eye", ",", "(", "2", ")", "decrease", "the", "responses", "of", "autoreactive", "B", "cells", "or", "Th17", "cells", ",", "and", "(", "3", ")", "affect", "changes", "in", "ILC3s", "that", "might", "be", "involved", "in", "modification", "of", "epithelial", "wound", "healing", "in", "NOD.B10.H2", "mice", "." ],
-  "entity_one_indices" : [ 58, 59 ],
-  "entity_two_indices" : [ 54, 55, 56 ]
-}, {
-  "sentence_tokens" : [ "Bilateral", "treatment", "was", "justified", "by", "the", "fact", "that", "this", "procedure", "was", "not", "visually", "disabling", "and", "that", "breeding", "of", "NOD.B10.H2", "mice", "was", "limited", ",", "according", "to", "ARVO", "Statement", "for", "the", "Use", "of", "Animals", "in", "Ophthalmic", "and", "Vision", "Research", ",", "and", "was", "approved", "by", "the", "Ethics", "Committee", "." ],
-  "entity_one_indices" : [ 35, 36 ],
-  "entity_two_indices" : [ 19, 20 ]
-}, {
-  "sentence_tokens" : [ "Phenol", "red", "thread", "tests", "and", "corneal", "dye", "staining", "were", "performed", "following", "an", "intraperitoneal", "injection", "of", "zoletil", "(", "10", "mg/kg", ")", "and", "xylazine", "(", "14", "mg/kg", ")", ",", "and", "all", "efforts", "were", "made", "to", "minimize", "suffering", "." ],
-  "entity_one_indices" : [ 21, 22 ],
-  "entity_two_indices" : [ 0, 1, 2 ]
-}, {
-  "sentence_tokens" : [ "To", "investigate", "inhibitory", "effect", "of", "triggering", "by", "HMGB1", "in", "early", "stage", "of", "inflammatory", "cascades", ",", "10", "week-old", "mice", "were", "chosen", "based", "on", "previous", "preliminary", "data", "." ],
-  "entity_one_indices" : [ 17, 18 ],
-  "entity_two_indices" : [ 7, 8 ]
-}, {
-  "sentence_tokens" : [ "Three", "mice", "died", "during", "the", "experiments", "(", "two", "0.02", "mu", "g", "anti-HMGB1-treated", "mice", "and", "one", "0.2", "mu", "g", "anti-HMGB1-treated", "mouse", ")", "probably", "because", "of", "anesthetic", "overdose", "." ],
-  "entity_one_indices" : [ 12, 13 ],
-  "entity_two_indices" : [ 1, 2 ]
-}, {
-  "sentence_tokens" : [ "Thereafter", ",", "we", "reduced", "the", "anesthetic", "dose", "to", "20", "mu", "l.", "BrdU", "proliferation", "analysis", "." ],
-  "entity_one_indices" : [ 12, 13 ],
-  "entity_two_indices" : [ 11, 12 ]
-}, {
-  "sentence_tokens" : [ "To", "evaluate", "tear", "production", ",", "phenol", "red", "impregnated", "cotton", "threads", "(", "FCI", "Ophthalmics", ",", "Pembrooke", ",", "MA", ",", "USA", ")", "were", "applied", "to", "the", "lateral", "canthus", "for", "60", "seconds", ",", "and", "wetting", "of", "the", "thread", "was", "measured", "in", "millimeters", "." ],
-  "entity_one_indices" : [ 16, 17 ],
-  "entity_two_indices" : [ 5, 6, 7 ]
-}, {
-  "sentence_tokens" : [ "Twenty-four", "mice", "were", "included", "in", "the", "corneal", "dye", "staining", "test", "for", "10", "-", "11", "weeks", ",", "and", "21", "mice", "were", "included", "in", "the", "test", "for", "12", "weeks", ",", "and", "in", "the", "final", "analysis", "after", "sacrifice", "." ],
-  "entity_one_indices" : [ 18, 19 ],
-  "entity_two_indices" : [ 1, 2 ]
-}, {
-  "sentence_tokens" : [ "Periodic", "acid", "schiff", "(", "PAS", ")", "staining", "for", "identification", "of", "goblet", "cells", "." ],
-  "entity_one_indices" : [ 4, 5 ],
-  "entity_two_indices" : [ 0, 1, 2 ]
-}, {
-  "sentence_tokens" : [ "Non", "specific", "staining", "was", "blocked", "using", "purified", "2.4G2", "Ab", "(", "BD", "Fc", "Block", ")", "." ],
-  "entity_one_indices" : [ 11, 12, 13 ],
-  "entity_two_indices" : [ 7, 8, 9 ]
-}, {
-  "sentence_tokens" : [ "Data", "were", "analyzed", "using", "Flowjo", "software", "(", "Tree", "Star", ",", "Ashland", ",", "OR", ")", "(", "n", "=", "4", "-", "6", ")", "." ],
-  "entity_one_indices" : [ 12, 13 ],
-  "entity_two_indices" : [ 8, 9 ]
-}, {
-  "sentence_tokens" : [ "During", "the", "acquisition", "preview", ",", "gates", "were", "adjusted", "in", "the", "FSC-A", "vs.", "SSC-A", "plot", ",", "and", "the", "DNA", "7-AAD-A", "voltage", "was", "adjusted", "to", "place", "the", "mean", "of", "the", "singlet", "peak", "(", "G0/G1", ")", "at", "50,000", "on", "the", "histogram", "." ],
-  "entity_one_indices" : [ 19, 20 ],
-  "entity_two_indices" : [ 10, 11, 12, 13, 14 ]
-}, {
-  "sentence_tokens" : [ "Anti-SSA", "in", "the", "plasma", "was", "analyzed", "in", "PBS", "treated", "mice", "(", "n", "=", "6", ")", ",", "in", "anti-HMGB1-treated", "mice", "(", "n", "=", "12", ")", ",", "and", "in", "the", "positive", "control", "provided", "with", "the", "kit", "(", "n", "=", "2", ")", "." ],
-  "entity_one_indices" : [ 18, 19 ],
-  "entity_two_indices" : [ 9, 10 ]
-}, {
-  "sentence_tokens" : [ "The", "supernatant", "was", "collected", "after", "centrifugation", "at", "12,000", "rpm", "for", "20", "minutes", ",", "and", "assayed", "for", "IL-22", "by", "ELISA", ",", "according", "to", "the", "manufacturer", "'", "s", "protocol", "(", "R", "&", "D", "Systems", ",", "Minneapolis", ",", "MN", ")", "." ],
-  "entity_one_indices" : [ 35, 36 ],
-  "entity_two_indices" : [ 16, 17 ]
-}, {
-  "sentence_tokens" : [ "In", "0.2", "mu", "g", "anti-HMGB1-treated", "mice", ",", "ocular", "staining", "tended", "to", "be", "diminished", "and", "tear", "secretion", "tended", "to", "be", "increased", ",", "although", "neither", "were", "statistically", "significant", "." ],
-  "entity_one_indices" : [ 14, 15, 16 ],
-  "entity_two_indices" : [ 5, 6 ]
-}, {
-  "sentence_tokens" : [ "ILC3s", "are", "known", "to", "be", "involved", "in", "epithelial", "wound", "healing", "via", "secretion", "of", "IL-22", "." ],
-  "entity_one_indices" : [ 13, 14 ],
-  "entity_two_indices" : [ 8, 9, 10 ]
-}, {
-  "sentence_tokens" : [ "IL-22", "levels", "were", "significantly", "increased", "in", "the", "intraorbital", "glands", "after", "2", "mu", "g", "anti-HMGB1", "treatment", "(", "Kruskal-Wallis", "test", ",", "PBS", "vs.", "2", "mu", "g", "anti-HMGB1", ",", "p", "=", "0.025", ",", "Fig", "6B", ")", "." ],
-  "entity_one_indices" : [ 19, 20, 21, 22, 23, 24, 25 ],
-  "entity_two_indices" : [ 0, 1 ]
-}, {
-  "sentence_tokens" : [ "There", "are", "three", "major", "populations", "of", "IL-22", "secreting", "cells", ",", "namely", "Th22", "cells", ",", "ILC3s", ",", "and", "gamma", "delta", "T", "cells", "." ],
-  "entity_one_indices" : [ 18, 19 ],
-  "entity_two_indices" : [ 6, 7 ]
-}, {
-  "sentence_tokens" : [ "Considering", "that", "TLR9", "expression", "is", "abundant", "on", "B", "cells", "and", "plasmacytoid", "dendritic", "cells", "[", "20", "]", ",", "we", "proposed", "that", "anti-HMGB1", "treatment", "would", "reduce", "the", "effector", "function", "of", "B", "cells", "in", "these", "mice", "." ],
-  "entity_one_indices" : [ 32, 33 ],
-  "entity_two_indices" : [ 2, 3 ]
-}, {
-  "sentence_tokens" : [ "An", "increase", "in", "goblet", "cell", "density", "could", "indicate", "a", "protective", "effect", "due", "to", "an", "increase", "in", "tear", "secretion", "and", "a", "recovery", "of", "epithelial", "homeostasis", "." ],
-  "entity_one_indices" : [ 23, 24 ],
-  "entity_two_indices" : [ 16, 17, 18 ]
-}, {
-  "sentence_tokens" : [ "This", "is", "based", "on", "the", "fact", "that", "ILC3", "cells", "may", "play", "a", "role", "in", "epithelial", "homeostasis", "and", "wound", "healing", "as", "well", "as", "having", "a", "role", "in", "immune", "modulation", "[", "24", "-", "28", "]", "." ],
-  "entity_one_indices" : [ 17, 18, 19 ],
-  "entity_two_indices" : [ 15, 16 ]
-}, {
-  "sentence_tokens" : [ "The", "circumstances", "that", "determine", "this", "bidirectional", "role", "of", "ILCs", "(", "immune", "regulation", "versus", "inflammation", "and", "autoimmunity", ")", "are", "still", "unclear", "." ],
-  "entity_one_indices" : [ 13, 14 ],
-  "entity_two_indices" : [ 8, 9 ]
-}, {
-  "sentence_tokens" : [ "In", "our", "autoimmune", "dry", "eye", "model", ",", "we", "believe", "that", "the", "level", "of", "extracellular", "HMGB1", "is", "higher", "than", "endogenous", "levels", ",", "which", "then", "provokes", "inflammation", "." ],
-  "entity_one_indices" : [ 24, 25 ],
-  "entity_two_indices" : [ 14, 15 ]
-}, {
-  "sentence_tokens" : [ "Given", "the", "fact", "that", "HMGB1", "can", "interact", "with", "Treg", "cells", "or", "directly", "with", "conventional", "T", "cells", "and", "modulate", "them", "[", "36", "]", ",", "there", "are", "several", "possible", "direct", "or", "indirect", "pathways", "through", "which", "HMGB1", "could", "communicate", "with", "ILCs", ",", "which", "have", "not", "yet", "been", "discovered", "." ],
-  "entity_one_indices" : [ 33, 34 ],
-  "entity_two_indices" : [ 4, 5 ]
-} ]
+{
+  "regulations" : [ {
+    "sentence_tokens" : [ "We", "hypothesize", "that", "extracellular", "HMGB1", "in", "Sj", "o", "gren", "'", "s", "syndrome", "may", "trigger", "strong", "auto-inflammatory", "cycles", "by", "activating", "an", "adaptive", "immune", "response", "and", "may", "establish", "a", "continuous", "pathological", "condition", "." ],
+    "event_indices" : [ 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 11, 12 ],
+    "controlled_indices" : [ 20, 21, 22, 23 ],
+    "trigger_indices" : [ 13, 14 ],
+    "rule_name" : "Positive_activation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "We", "hypothesize", "that", "extracellular", "HMGB1", "in", "Sj", "o", "gren", "'", "s", "syndrome", "may", "trigger", "strong", "auto-inflammatory", "cycles", "by", "activating", "an", "adaptive", "immune", "response", "and", "may", "establish", "a", "continuous", "pathological", "condition", "." ],
+    "event_indices" : [ 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 4, 5 ],
+    "controlled_indices" : [ 20, 21, 22, 23 ],
+    "trigger_indices" : [ 13, 14 ],
+    "rule_name" : "Positive_activation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "In", "addition", ",", "HMGB1", "can", "increase", "Th17", "cells", "by", "upregulating", "IL-6", "or", "IL-23", "[", "21", "-", "23", "]", "." ],
+    "event_indices" : [ 3, 4, 5, 6, 7, 8, 9, 10, 11 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 3, 4 ],
+    "controlled_indices" : [ 10, 11 ],
+    "trigger_indices" : [ 5, 6 ],
+    "rule_name" : "Positive_activation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "In", "addition", ",", "HMGB1", "can", "increase", "Th17", "cells", "by", "upregulating", "IL-6", "or", "IL-23", "[", "21", "-", "23", "]", "." ],
+    "event_indices" : [ 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 3, 4 ],
+    "controlled_indices" : [ 12, 13 ],
+    "trigger_indices" : [ 5, 6 ],
+    "rule_name" : "Positive_activation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "Extracellular", "HMGB1", ",", "in", "which", "all", "cysteines", "are", "reduced", ",", "binds", "to", "CXCL12", "and", "acts", "through", "CXCR4", "to", "cause", "cellular", "chemotaxis", "(", "Fig", "1", ")", "[", "9", "-", "12", "]", "." ],
+    "event_indices" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21 ],
+    "type" : "Negative_activation",
+    "polarity" : false,
+    "controller_indices" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13 ],
+    "controlled_indices" : [ 20, 21 ],
+    "trigger_indices" : [ 18, 19 ],
+    "rule_name" : "Positive_activation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "Injection", "of", "2", "mug", "or", "0.02", "mug", "anti-HMGB1", "attenuated", "corneal", "epithelial", "erosions", "and", "increased", "tear", "secretion", "(", "p", "<", "0.05", ")", "." ],
+    "event_indices" : [ 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 3, 4 ],
+    "controlled_indices" : [ 14, 15, 16 ],
+    "trigger_indices" : [ 13, 14 ],
+    "rule_name" : "Positive_activation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "Injection", "of", "2", "mug", "or", "0.02", "mug", "anti-HMGB1", "attenuated", "corneal", "epithelial", "erosions", "and", "increased", "tear", "secretion", "(", "p", "<", "0.05", ")", "." ],
+    "event_indices" : [ 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 6, 7 ],
+    "controlled_indices" : [ 14, 15, 16 ],
+    "trigger_indices" : [ 13, 14 ],
+    "rule_name" : "Positive_activation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "Group", "2", "ILCs", "produce", "Th2-type", "cytokines", "IL-4", ",", "IL-5", ",", "or", "IL-13", ",", "and", "express", "the", "transcription", "factors", "ROR-alpha", ",", "Gata3", ",", "and", "T", "cell", "factor", "(", "TCF", ")-1.", "Group", "3", "ILCs", "include", "fetal", "lymphoid", "tissue-inducer", "(", "LTi", ")", "cells", ",", "and", "adult", "ILCs", "that", "either", "express", "or", "lack", "the", "natural", "cytotoxicity", "receptor", "(", "NCR", ",", "NKp46", ")", "(", "NCR", "ILC3s", "and", "NCR", "ILC3s", ",", "respectively", ")", "." ],
+    "event_indices" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 0, 1, 2, 3 ],
+    "controlled_indices" : [ 27, 28 ],
+    "trigger_indices" : [ 3, 4 ],
+    "rule_name" : "Positive_activation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "Group", "2", "ILCs", "produce", "Th2-type", "cytokines", "IL-4", ",", "IL-5", ",", "or", "IL-13", ",", "and", "express", "the", "transcription", "factors", "ROR-alpha", ",", "Gata3", ",", "and", "T", "cell", "factor", "(", "TCF", ")-1.", "Group", "3", "ILCs", "include", "fetal", "lymphoid", "tissue-inducer", "(", "LTi", ")", "cells", ",", "and", "adult", "ILCs", "that", "either", "express", "or", "lack", "the", "natural", "cytotoxicity", "receptor", "(", "NCR", ",", "NKp46", ")", "(", "NCR", "ILC3s", "and", "NCR", "ILC3s", ",", "respectively", ")", "." ],
+    "event_indices" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 0, 1, 2, 3 ],
+    "controlled_indices" : [ 16, 17 ],
+    "trigger_indices" : [ 3, 4 ],
+    "rule_name" : "Positive_activation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "Group", "2", "ILCs", "produce", "Th2-type", "cytokines", "IL-4", ",", "IL-5", ",", "or", "IL-13", ",", "and", "express", "the", "transcription", "factors", "ROR-alpha", ",", "Gata3", ",", "and", "T", "cell", "factor", "(", "TCF", ")-1.", "Group", "3", "ILCs", "include", "fetal", "lymphoid", "tissue-inducer", "(", "LTi", ")", "cells", ",", "and", "adult", "ILCs", "that", "either", "express", "or", "lack", "the", "natural", "cytotoxicity", "receptor", "(", "NCR", ",", "NKp46", ")", "(", "NCR", "ILC3s", "and", "NCR", "ILC3s", ",", "respectively", ")", "." ],
+    "event_indices" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 0, 1, 2, 3 ],
+    "controlled_indices" : [ 8, 9 ],
+    "trigger_indices" : [ 3, 4 ],
+    "rule_name" : "Positive_activation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "Group", "2", "ILCs", "produce", "Th2-type", "cytokines", "IL-4", ",", "IL-5", ",", "or", "IL-13", ",", "and", "express", "the", "transcription", "factors", "ROR-alpha", ",", "Gata3", ",", "and", "T", "cell", "factor", "(", "TCF", ")-1.", "Group", "3", "ILCs", "include", "fetal", "lymphoid", "tissue-inducer", "(", "LTi", ")", "cells", ",", "and", "adult", "ILCs", "that", "either", "express", "or", "lack", "the", "natural", "cytotoxicity", "receptor", "(", "NCR", ",", "NKp46", ")", "(", "NCR", "ILC3s", "and", "NCR", "ILC3s", ",", "respectively", ")", "." ],
+    "event_indices" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 0, 1, 2, 3 ],
+    "controlled_indices" : [ 18, 19 ],
+    "trigger_indices" : [ 3, 4 ],
+    "rule_name" : "Positive_activation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "Group", "2", "ILCs", "produce", "Th2-type", "cytokines", "IL-4", ",", "IL-5", ",", "or", "IL-13", ",", "and", "express", "the", "transcription", "factors", "ROR-alpha", ",", "Gata3", ",", "and", "T", "cell", "factor", "(", "TCF", ")-1.", "Group", "3", "ILCs", "include", "fetal", "lymphoid", "tissue-inducer", "(", "LTi", ")", "cells", ",", "and", "adult", "ILCs", "that", "either", "express", "or", "lack", "the", "natural", "cytotoxicity", "receptor", "(", "NCR", ",", "NKp46", ")", "(", "NCR", "ILC3s", "and", "NCR", "ILC3s", ",", "respectively", ")", "." ],
+    "event_indices" : [ 0, 1, 2, 3, 4, 5, 6, 7 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 0, 1, 2, 3 ],
+    "controlled_indices" : [ 6, 7 ],
+    "trigger_indices" : [ 3, 4 ],
+    "rule_name" : "Positive_activation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "Group", "2", "ILCs", "produce", "Th2-type", "cytokines", "IL-4", ",", "IL-5", ",", "or", "IL-13", ",", "and", "express", "the", "transcription", "factors", "ROR-alpha", ",", "Gata3", ",", "and", "T", "cell", "factor", "(", "TCF", ")-1.", "Group", "3", "ILCs", "include", "fetal", "lymphoid", "tissue-inducer", "(", "LTi", ")", "cells", ",", "and", "adult", "ILCs", "that", "either", "express", "or", "lack", "the", "natural", "cytotoxicity", "receptor", "(", "NCR", ",", "NKp46", ")", "(", "NCR", "ILC3s", "and", "NCR", "ILC3s", ",", "respectively", ")", "." ],
+    "event_indices" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 0, 1, 2, 3 ],
+    "controlled_indices" : [ 11, 12 ],
+    "trigger_indices" : [ 3, 4 ],
+    "rule_name" : "Positive_activation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "Group", "2", "ILCs", "produce", "Th2-type", "cytokines", "IL-4", ",", "IL-5", ",", "or", "IL-13", ",", "and", "express", "the", "transcription", "factors", "ROR-alpha", ",", "Gata3", ",", "and", "T", "cell", "factor", "(", "TCF", ")-1.", "Group", "3", "ILCs", "include", "fetal", "lymphoid", "tissue-inducer", "(", "LTi", ")", "cells", ",", "and", "adult", "ILCs", "that", "either", "express", "or", "lack", "the", "natural", "cytotoxicity", "receptor", "(", "NCR", ",", "NKp46", ")", "(", "NCR", "ILC3s", "and", "NCR", "ILC3s", ",", "respectively", ")", "." ],
+    "event_indices" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 0, 1, 2, 3 ],
+    "controlled_indices" : [ 20, 21 ],
+    "trigger_indices" : [ 3, 4 ],
+    "rule_name" : "Positive_activation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "Group", "2", "ILCs", "produce", "Th2-type", "cytokines", "IL-4", ",", "IL-5", ",", "or", "IL-13", ",", "and", "express", "the", "transcription", "factors", "ROR-alpha", ",", "Gata3", ",", "and", "T", "cell", "factor", "(", "TCF", ")-1.", "Group", "3", "ILCs", "include", "fetal", "lymphoid", "tissue-inducer", "(", "LTi", ")", "cells", ",", "and", "adult", "ILCs", "that", "either", "express", "or", "lack", "the", "natural", "cytotoxicity", "receptor", "(", "NCR", ",", "NKp46", ")", "(", "NCR", "ILC3s", "and", "NCR", "ILC3s", ",", "respectively", ")", "." ],
+    "event_indices" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 0, 1, 2, 3 ],
+    "controlled_indices" : [ 25, 26 ],
+    "trigger_indices" : [ 3, 4 ],
+    "rule_name" : "Positive_activation_syntax_1_verb",
+    "rule" : null
+  } ],
+  "hardInstances" : [ {
+    "sentence_tokens" : [ "We", "hypothesize", "that", "extracellular", "HMGB1", "in", "Sj", "o", "gren", "'", "s", "syndrome", "may", "trigger", "strong", "auto-inflammatory", "cycles", "by", "activating", "an", "adaptive", "immune", "response", "and", "may", "establish", "a", "continuous", "pathological", "condition", "." ],
+    "entities_indices" : [ [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "hypothesize", "that", "extracellular", "HMGB1", "in", "Sj", "o", "gren", "'", "s", "syndrome", "may", "trigger", "strong", "auto-inflammatory", "cycles", "by", "activating", "an", "adaptive", "immune", "response", "and", "may", "establish", "a", "continuous", "pathological", "condition", "." ],
+    "entities_indices" : [ [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "addition", ",", "HMGB1", "can", "increase", "Th17", "cells", "by", "upregulating", "IL-6", "or", "IL-23", "[", "21", "-", "23", "]", "." ],
+    "entities_indices" : [ [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "addition", ",", "HMGB1", "can", "increase", "Th17", "cells", "by", "upregulating", "IL-6", "or", "IL-23", "[", "21", "-", "23", "]", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "Extracellular", "HMGB1", ",", "in", "which", "all", "cysteines", "are", "reduced", ",", "binds", "to", "CXCL12", "and", "acts", "through", "CXCR4", "to", "cause", "cellular", "chemotaxis", "(", "Fig", "1", ")", "[", "9", "-", "12", "]", "." ],
+    "entities_indices" : [ [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "Injection", "of", "2", "mug", "or", "0.02", "mug", "anti-HMGB1", "attenuated", "corneal", "epithelial", "erosions", "and", "increased", "tear", "secretion", "(", "p", "<", "0.05", ")", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "Injection", "of", "2", "mug", "or", "0.02", "mug", "anti-HMGB1", "attenuated", "corneal", "epithelial", "erosions", "and", "increased", "tear", "secretion", "(", "p", "<", "0.05", ")", "." ],
+    "entities_indices" : [ [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "Group", "2", "ILCs", "produce", "Th2-type", "cytokines", "IL-4", ",", "IL-5", ",", "or", "IL-13", ",", "and", "express", "the", "transcription", "factors", "ROR-alpha", ",", "Gata3", ",", "and", "T", "cell", "factor", "(", "TCF", ")-1.", "Group", "3", "ILCs", "include", "fetal", "lymphoid", "tissue-inducer", "(", "LTi", ")", "cells", ",", "and", "adult", "ILCs", "that", "either", "express", "or", "lack", "the", "natural", "cytotoxicity", "receptor", "(", "NCR", ",", "NKp46", ")", "(", "NCR", "ILC3s", "and", "NCR", "ILC3s", ",", "respectively", ")", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 8, 9 ], [ 11, 12 ], [ 16, 17 ], [ 18, 19 ], [ 20, 21 ], [ 25, 26 ], [ 56, 57 ] ]
+  }, {
+    "sentence_tokens" : [ "Group", "2", "ILCs", "produce", "Th2-type", "cytokines", "IL-4", ",", "IL-5", ",", "or", "IL-13", ",", "and", "express", "the", "transcription", "factors", "ROR-alpha", ",", "Gata3", ",", "and", "T", "cell", "factor", "(", "TCF", ")-1.", "Group", "3", "ILCs", "include", "fetal", "lymphoid", "tissue-inducer", "(", "LTi", ")", "cells", ",", "and", "adult", "ILCs", "that", "either", "express", "or", "lack", "the", "natural", "cytotoxicity", "receptor", "(", "NCR", ",", "NKp46", ")", "(", "NCR", "ILC3s", "and", "NCR", "ILC3s", ",", "respectively", ")", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 8, 9 ], [ 11, 12 ], [ 18, 19 ], [ 20, 21 ], [ 25, 26 ], [ 27, 28 ], [ 56, 57 ] ]
+  }, {
+    "sentence_tokens" : [ "Group", "2", "ILCs", "produce", "Th2-type", "cytokines", "IL-4", ",", "IL-5", ",", "or", "IL-13", ",", "and", "express", "the", "transcription", "factors", "ROR-alpha", ",", "Gata3", ",", "and", "T", "cell", "factor", "(", "TCF", ")-1.", "Group", "3", "ILCs", "include", "fetal", "lymphoid", "tissue-inducer", "(", "LTi", ")", "cells", ",", "and", "adult", "ILCs", "that", "either", "express", "or", "lack", "the", "natural", "cytotoxicity", "receptor", "(", "NCR", ",", "NKp46", ")", "(", "NCR", "ILC3s", "and", "NCR", "ILC3s", ",", "respectively", ")", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 11, 12 ], [ 16, 17 ], [ 18, 19 ], [ 20, 21 ], [ 25, 26 ], [ 27, 28 ], [ 56, 57 ] ]
+  }, {
+    "sentence_tokens" : [ "Group", "2", "ILCs", "produce", "Th2-type", "cytokines", "IL-4", ",", "IL-5", ",", "or", "IL-13", ",", "and", "express", "the", "transcription", "factors", "ROR-alpha", ",", "Gata3", ",", "and", "T", "cell", "factor", "(", "TCF", ")-1.", "Group", "3", "ILCs", "include", "fetal", "lymphoid", "tissue-inducer", "(", "LTi", ")", "cells", ",", "and", "adult", "ILCs", "that", "either", "express", "or", "lack", "the", "natural", "cytotoxicity", "receptor", "(", "NCR", ",", "NKp46", ")", "(", "NCR", "ILC3s", "and", "NCR", "ILC3s", ",", "respectively", ")", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 8, 9 ], [ 11, 12 ], [ 16, 17 ], [ 20, 21 ], [ 25, 26 ], [ 27, 28 ], [ 56, 57 ] ]
+  }, {
+    "sentence_tokens" : [ "Group", "2", "ILCs", "produce", "Th2-type", "cytokines", "IL-4", ",", "IL-5", ",", "or", "IL-13", ",", "and", "express", "the", "transcription", "factors", "ROR-alpha", ",", "Gata3", ",", "and", "T", "cell", "factor", "(", "TCF", ")-1.", "Group", "3", "ILCs", "include", "fetal", "lymphoid", "tissue-inducer", "(", "LTi", ")", "cells", ",", "and", "adult", "ILCs", "that", "either", "express", "or", "lack", "the", "natural", "cytotoxicity", "receptor", "(", "NCR", ",", "NKp46", ")", "(", "NCR", "ILC3s", "and", "NCR", "ILC3s", ",", "respectively", ")", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 11, 12 ], [ 16, 17 ], [ 18, 19 ], [ 20, 21 ], [ 25, 26 ], [ 27, 28 ], [ 56, 57 ] ]
+  }, {
+    "sentence_tokens" : [ "Group", "2", "ILCs", "produce", "Th2-type", "cytokines", "IL-4", ",", "IL-5", ",", "or", "IL-13", ",", "and", "express", "the", "transcription", "factors", "ROR-alpha", ",", "Gata3", ",", "and", "T", "cell", "factor", "(", "TCF", ")-1.", "Group", "3", "ILCs", "include", "fetal", "lymphoid", "tissue-inducer", "(", "LTi", ")", "cells", ",", "and", "adult", "ILCs", "that", "either", "express", "or", "lack", "the", "natural", "cytotoxicity", "receptor", "(", "NCR", ",", "NKp46", ")", "(", "NCR", "ILC3s", "and", "NCR", "ILC3s", ",", "respectively", ")", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 8, 9 ], [ 16, 17 ], [ 18, 19 ], [ 20, 21 ], [ 25, 26 ], [ 27, 28 ], [ 56, 57 ] ]
+  }, {
+    "sentence_tokens" : [ "Group", "2", "ILCs", "produce", "Th2-type", "cytokines", "IL-4", ",", "IL-5", ",", "or", "IL-13", ",", "and", "express", "the", "transcription", "factors", "ROR-alpha", ",", "Gata3", ",", "and", "T", "cell", "factor", "(", "TCF", ")-1.", "Group", "3", "ILCs", "include", "fetal", "lymphoid", "tissue-inducer", "(", "LTi", ")", "cells", ",", "and", "adult", "ILCs", "that", "either", "express", "or", "lack", "the", "natural", "cytotoxicity", "receptor", "(", "NCR", ",", "NKp46", ")", "(", "NCR", "ILC3s", "and", "NCR", "ILC3s", ",", "respectively", ")", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 8, 9 ], [ 11, 12 ], [ 16, 17 ], [ 18, 19 ], [ 25, 26 ], [ 27, 28 ], [ 56, 57 ] ]
+  }, {
+    "sentence_tokens" : [ "Group", "2", "ILCs", "produce", "Th2-type", "cytokines", "IL-4", ",", "IL-5", ",", "or", "IL-13", ",", "and", "express", "the", "transcription", "factors", "ROR-alpha", ",", "Gata3", ",", "and", "T", "cell", "factor", "(", "TCF", ")-1.", "Group", "3", "ILCs", "include", "fetal", "lymphoid", "tissue-inducer", "(", "LTi", ")", "cells", ",", "and", "adult", "ILCs", "that", "either", "express", "or", "lack", "the", "natural", "cytotoxicity", "receptor", "(", "NCR", ",", "NKp46", ")", "(", "NCR", "ILC3s", "and", "NCR", "ILC3s", ",", "respectively", ")", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 8, 9 ], [ 11, 12 ], [ 16, 17 ], [ 18, 19 ], [ 20, 21 ], [ 27, 28 ], [ 56, 57 ] ]
+  } ],
+  "withoutRegulations" : [ {
+    "sentence_tokens" : [ "Twenty-four", "mice", "were", "included", "in", "the", "phenol", "red", "thread", "test", "for", "10", "-", "11", "weeks", ",", "and", "21", "mice", "were", "included", "in", "the", "test", "for", "12", "weeks", "and", "in", "the", "final", "analysis", "after", "sacrifice", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 6, 7, 8 ], [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "There", "are", "three", "major", "populations", "of", "IL-22", "secreting", "cells", ",", "namely", "Th22", "cells", ",", "ILC3s", ",", "and", "gamma", "delta", "T", "cells", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "Effects", "of", "subconjunctival", "administration", "of", "anti-high", "mobility", "group", "box", "1", "on", "dry", "eye", "in", "a", "mouse", "model", "of", "Sjogren", "'s", "syndrome", "." ],
+    "entities_indices" : [ [ 5, 6, 7, 8, 9, 10 ], [ 18, 19, 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "Draining", "cervical", "lymph", "nodes", "were", "minced", "between", "the", "frosted", "ends", "of", "two", "glass", "slides", "in", "RPMI", "media", "(", "WelGENE", ",", "Daegu", ",", "Korea", ")", "containing", "10", "%", "FBS", "and", "1", "%", "penicillin", "--", "streptomycin", "." ],
+    "entities_indices" : [ [ 27, 28 ], [ 31, 32 ], [ 33, 34 ] ]
+  }, {
+    "sentence_tokens" : [ "Lower", "levels", "of", "endogenous", "HMGB1", "may", "be", "required", "for", "optimal", "wound", "closure", "[", "33", "]", ",", "while", "a", "higher", "level", "of", "HMGB1", "acts", "as", "a", "pro", "inflammatory", "cytokine", "and", "does", "not", "affect", "epithelial", "wound", "healing", "[", "12", ",", "33", "]", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 21, 22 ], [ 33, 34, 35 ] ]
+  }, {
+    "sentence_tokens" : [ "Ten", "weeks-old", "NOD.B10.H2", "b", "mice", "were", "subconjunctivally", "injected", "with", "0.02", "to", "2", "mug", "of", "anti-HMGB1", "antibodies", "or", "PBS", "twice", "a", "week", "for", "two", "consecutive", "weeks", "." ],
+    "entities_indices" : [ [ 2, 3, 4 ], [ 4, 5 ], [ 12, 13 ], [ 14, 15, 16 ], [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "phenol", "red", "thread", "test", "(", "Fig", "2B", ")", "showed", "that", "tear", "secretion", "was", "significantly", "reduced", "over", "time", "in", "PBS", "treated", "control", "mice", "compared", "to", "the", "baseline", "(", "Wilcoxon", "matched-pairs", "signed", "rank", "test", ",", "10", "weeks", "vs.", "12", "weeks", ",", "p", "=", "0.002", ")", "." ],
+    "entities_indices" : [ [ 1, 2, 3 ], [ 11, 12, 13 ], [ 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "time", "course", "of", "clinical", "manifestations", "and", "inflammatory", "changes", "in", "the", "draining", "lymph", "nodes", "and", "intraorbital", "glands", "was", "evaluated", "between", "10", "and", "16", "weeks", "in", "BALB/C", "(", "n", "=", "28", ")", ",", "B6", "(", "n", "=", "32", ")", "and", "NOD.B10.H2", "mice", "(", "n", "=", "34", ")", "." ],
+    "entities_indices" : [ [ 40, 41 ] ]
+  }, {
+    "sentence_tokens" : [ "Furthermore", ",", "the", "data", "also", "suggest", "that", "the", "improvement", "in", "dry", "eye", "in", "NOD.B10.H2", "mice", "may", "involve", "an", "increase", "in", "IL-22-secreting", "ILC3s", ",", "rather", "than", "modulation", "of", "B", "or", "plasma", "cells.The", "specific", "mechanisms", "that", "initiate", "inflammation", "in", "Sj", "o", "gren", "'", "s", "syndrome", "are", "not", "fully", "understood", ",", "but", "we", "considered", "that", "the", "responses", "of", "reactive", "B", "cells", "and", "plasma", "cells", "that", "secrete", "autoantibodies", "could", "be", "key", "to", "maintaining", "the", "pathological", "condition", "[", "1", "]", "." ],
+    "entities_indices" : [ [ 14, 15 ], [ 35, 36 ], [ 42, 43 ] ]
+  }, {
+    "sentence_tokens" : [ "HMGB1", "has", "three", "conserved", "redox", "sensitive", "cysteines", "(", "C23", ",", "C45", ",", "C106", ")", ",", "two", "located", "at", "positions", "23", "and", "45", "in", "the", "A", "box", "and", "one", "at", "position", "106", "in", "the", "B", "box", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "ILC3s", "produce", "the", "Th17-type", "cytokine", ",", "IL-17", "or", "IL-22", ",", "and", "express", "the", "transcription", "factor", "ROR-gamma", "t." ],
+    "entities_indices" : [ [ 6, 7 ], [ 8, 9 ], [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "Modification", "of", "these", "cysteines", "determines", "the", "bioactivity", "of", "extracellular", "HMGB1", "[", "7", "]", "." ],
+    "entities_indices" : [ [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "Mouse", "model", "of", "Sjogren", "'s", "syndrome", "." ],
+    "entities_indices" : [ [ 3, 4, 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "Surprisingly", ",", "the", "percentage", "of", "ILC3s", "was", "significantly", "increased", "in", "the", "draining", "lymph", "nodes", "(", "p", "<", "0.05", ")", ",", "and", "the", "expression", "of", "IL-22", "was", "significantly", "increased", "in", "the", "intraorbital", "glands", "(", "p", "<", "0.05", ")", "after", "administration", "of", "2", "mug", "anti-HMGB1", "." ],
+    "entities_indices" : [ [ 24, 25 ], [ 41, 42 ] ]
+  }, {
+    "sentence_tokens" : [ "GraphPad", "Software", "(", "GraphPad", "Prism", ",", "Inc", ".,", "La", "Jolla", ",", "CA", ",", "USA", ")", "was", "used", "for", "statistical", "tests", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 8, 9 ], [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "Many", "studies", "have", "shown", "the", "importance", "of", "type", "I", "interferon", "secreted", "by", "plasmacytoid", "dendritic", "cells", ",", "B", "cell", "responses", ",", "extracellular", "high-mobility", "group", "box", "1", "(", "HMGB1", ")", "and", "IL-17", "pathways", "in", "Sj", "o", "gren", "'", "s", "syndrome", "[", "1", "-", "3", "]", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 9, 10 ], [ 20, 21, 22, 23, 24, 25 ], [ 26, 27 ], [ 29, 30 ], [ 37, 38 ] ]
+  }, {
+    "sentence_tokens" : [ "Bilateral", "treatment", "was", "justified", "by", "the", "fact", "that", "this", "procedure", "was", "not", "visually", "disabling", "and", "that", "breeding", "of", "NOD.B10.H2", "mice", "was", "limited", ",", "according", "to", "ARVO", "Statement", "for", "the", "Use", "of", "Animals", "in", "Ophthalmic", "and", "Vision", "Research", ",", "and", "was", "approved", "by", "the", "Ethics", "Committee", "." ],
+    "entities_indices" : [ [ 19, 20 ], [ 35, 36 ] ]
+  }, {
+    "sentence_tokens" : [ "Color", "conjugation", "combinations", "and", "gating", "strategies", "were", "as", "follows", ":", "(", "1", ")", "IFN", "gamma", ",", "and", "IL-17A", "secreting", "cells", ";", "CD3-PerCP", "cy5.5", "(", "eBioscience", ",", "145-2C11", ")", ",", "CD4-APC", "(", "eBioscience", ",", "GK1.5", ")", ",", "CD8-PE", "cy7", "(", "eBioscience", ",", "53", "-", "6.7", ")", ",", "B220-APC", "cy7", "(", "eBioscience", ",", "RA3-6B2", ")", ",", "IL-17A-PE", "(", "BD", "Pharmingen", ",", "TC11-18H10", ")", ",", "IFN", "gamma-FITC", "(", "eBioscience", ",", "XMG1.2", ")", ";", "(", "2", ")", "Plasma", "cells", ";", "CD3-PerCP", "cy5.5", "(", "eBioscience", ",", "145-2C11", ")", ",", "B220-APC", "cy7", "(", "eBioscience", ",", "RA3-6B2", ")", ",", "CD138-APC", "(", "BD", "Pharmingen", ",", "281", "-", "2", ")", ";", "(", "3", ")", "IL-10", "secreting", "B", "cells", ";", "CD3-PE", "(", "eBioscience", ",", "145-2C11", ")", ",", "CD19-PerCP", "cy5.5", "(", "eBioscience", ",", "eBio", "1D3", ")", ",", "B220-APC", "cy7", "(", "eBioscience", ",", "RA3-6B2", ")", ",", "IL-10-FITC", "(", "eBioscience", ",", "JES5-16E3", ")", ";", "(", "4", ")", "ILC3s", ";", "CD3-PerCP", "cy5.5", "(", "eBioscience", ",", "145-2C11", ")", ",", "B220-FITC", "(", "eBioscience", ",", "RA3-6B2", ")", ",", "NKp46-APC", "(", "eBioscience", ",", "29A1.4", ")", ",", "CD45-APC", "cy7", "(", "eBioscience", ",", "30-F11", ")", ",", "IL-22-PE", "(", "eBioscience", ",", "1H8PWSR", ")", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 13, 14 ], [ 17, 18 ], [ 21, 22, 23 ], [ 29, 30 ], [ 36, 37, 38 ], [ 46, 47, 48 ], [ 51, 52 ], [ 54, 55 ], [ 57, 58 ], [ 59, 60 ], [ 62, 63 ], [ 76, 77, 78 ], [ 84, 85, 86 ], [ 89, 90 ], [ 92, 93 ], [ 95, 96 ], [ 105, 106 ], [ 110, 111 ], [ 117, 118, 119 ], [ 122, 123, 124 ], [ 126, 127, 128 ], [ 131, 132 ], [ 134, 135 ], [ 146, 147, 148 ], [ 158, 159 ], [ 168, 169, 170 ], [ 176, 177 ] ]
+  }, {
+    "sentence_tokens" : [ "Clinical", "dry", "eye", "and", "early", "inflammation", "was", "confirmed", "to", "have", "begun", "by", "10", "weeks", "(", "S1", "Fig", ")", "." ],
+    "entities_indices" : [ [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "total", "number", "of", "PAS", "stained", "cells", "in", "the", "superior", "and", "inferior", "fornices", "of", "each", "eye", "was", "counted", "by", "two", "observers", "in", "a", "blind", "study", "(", "n", "=", "16", "-", "24", ")", "." ],
+    "entities_indices" : [ [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "addition", ",", "extracellular", "HMGB1", "is", "reported", "to", "be", "involved", "in", "the", "activation", "of", "Th17", "cells", "during", "inflammatory", "disease", "[", "13", "]", ",", "and", "may", "also", "be", "involved", "in", "IL-17", "or", "IL-22", "secretion", "in", "innate", "lymphoid", "cells", "(", "ILCs", ")", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 29, 30 ], [ 31, 32, 33 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "increase", "in", "ILC3", "cells", "in", "the", "draining", "lymph", "nodes", "and", "the", "increased", "IL-22", "expression", "in", "the", "intraorbital", "glands", "after", "anti-HMGB1", "treatment", "suggest", "a", "possible", "role", "for", "ILC3s", "in", "the", "improvement", "of", "dry", "eye", "in", "this", "model", "." ],
+    "entities_indices" : [ [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "further", "studies", "to", "investigate", "the", "exact", "role", "of", "ILCs", "are", "warranted", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "Intraorbital", "glands", "were", "minced", "into", "small", "pieces", ",", "and", "sonicated", "in", "PRO", "PREP", "Protein", "Extraction", "Solution", "(", "Intron", "Biotechnology", ",", "Seongnam", ",", "Korea", ")", "on", "ice", "." ],
+    "entities_indices" : [ [ 11, 12, 13, 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "Anti-rabbit", "IgG", "HRP", "linked", "antibody", "(", "#", "7074", ",", "Cell", "Signaling", "Technology", ",", "Danvers", ",", "MA", ")", "and", "goat", "anti-rat", "IgG", "H", "&", "L", "(", "HRP", ")", "(", "ab97057", ",", "Abcam", ",", "Cambridge", ",", "MA", ")", "were", "used", "as", "secondary", "antibodies", "for", "CD3", "and", "B220", "staining", ",", "respectively", "." ],
+    "entities_indices" : [ [ 1, 2, 3, 4, 5 ], [ 15, 16 ], [ 34, 35 ], [ 42, 43 ], [ 44, 45 ] ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "B", "cell", "proliferation", "and", "the", "proportion", "of", "plasma", "cells", ",", "as", "well", "as", "anti-SSA", "levels", ",", "were", "not", "changed", "in", "the", "draining", "lymph", "nodes", "." ],
+    "entities_indices" : [ [ 2, 3, 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "chicken", "anti-HMGB1", "polyclonal", "blocking", "antibody", "(", "product", "number", ":", "326052233", ",", "SHINO-TEST", "Corporation", ",", "Kanagawa", ",", "Japan", ";", "0.02", ",", "0.2", "and", "2", "mu", "g/0.1", "cc", ",", "n", "=", "6", "for", "each", "concentration", ")", "was", "injected", "subconjunctivally", "into", "both", "eyes", "twice", "a", "week", "for", "2", "weeks", "." ],
+    "entities_indices" : [ [ 24, 25, 26, 27 ] ]
+  }, {
+    "sentence_tokens" : [ "Cell", "suspensions", "were", "collected", "and", "incubated", "for", "30", "minutes", "at", "4", "degrees", "C", "with", "fluorescein", "conjugated", "anti-mouse", "antibodies", ":", "CD3", "(", "T", "cells", ")", ",", "CD4", "(", "T", "helper", "cells", ",", "monocytes", "and", "dendritic", "cells", ")", ",", "CD8", "(", "cytotoxic", "T", "cells", ",", "natural", "killer", ",", "and", "dendritic", "cells", ")", ",", "CD19", "(", "B", "cells", "and", "follicular", "dendritic", "cells", ")", ",", "B220", "(", "B", "cells", ")", ",", "CD138", "(", "plasma", "cells", ")", ",", "Nkp46", "(", "ILCs", "and", "natural", "killer", "cells", ")", ",", "CD45", "(", "all", "leukocytes", ")", "." ],
+    "entities_indices" : [ [ 19, 20 ], [ 25, 26 ], [ 37, 38 ], [ 44, 45 ], [ 51, 52 ], [ 67, 68 ], [ 82, 83 ] ]
+  }, {
+    "sentence_tokens" : [ "ILC3s", "are", "known", "to", "be", "involved", "in", "epithelial", "wound", "healing", "via", "secretion", "of", "IL-22", "." ],
+    "entities_indices" : [ [ 8, 9, 10 ], [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "Twenty-four", "mice", "were", "included", "in", "the", "corneal", "dye", "staining", "test", "for", "10", "-", "11", "weeks", ",", "and", "21", "mice", "were", "included", "in", "the", "test", "for", "12", "weeks", ",", "and", "in", "the", "final", "analysis", "after", "sacrifice", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "Anti-HMGB1", "treatment", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "First", ",", "we", "looked", "at", "the", "effect", "of", "anti-HMGB1", "treatment", "on", "the", "clinical", "manifestations", "of", "dry", "eye", "in", "NOD.B10.H2", "mice", "(", "Fig", "2", ")", "." ],
+    "entities_indices" : [ [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "total", "number", "of", "inflammatory", "foci", "was", "counted", "in", "the", "CD3", "stained", "slides", "(", "n", "=", "7", "-", "9", ")", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "function", "of", "ILCs", "in", "various", "tissues", "is", "described", "in", "Table", "1", ",", "but", "it", "is", "not", "yet", "fully", "understood", "." ],
+    "entities_indices" : [ [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "Emerging", "evidence", "shows", "that", "ILCs", "may", "function", "to", "maintain", "immune", "tolerance", ",", "homeostasis", ",", "or", "to", "inversely", "induce", "a", "T", "cell", "response", "by", "presenting", "foreign", "antigens", "or", "by", "secreting", "pro", "inflammatory", "cytokines", ",", "depending", "on", "environmental", "cues", "and", "ILC", "subtype", "[", "14", ",", "15", ",", "28", ",", "30", ",", "31", "]", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 12, 13 ], [ 38, 39 ] ]
+  }, {
+    "sentence_tokens" : [ "Current", "animal", "studies", "show", "that", "NOD.B10.H2", "mice", "are", "an", "excellent", "model", "of", "primary", "Sj", "o", "gren", "'", "s", "syndrome", ",", "and", "B", "cells", ",", "plasma", "cells", ",", "or", "T", "helper", "17", "(", "Th17", ")", "cells", "are", "involved", "in", "the", "important", "pathogenic", "mechanisms", "in", "this", "mouse", "model", "[", "4", "-", "6", "]", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 18, 19 ], [ 32, 33 ] ]
+  }, {
+    "sentence_tokens" : [ "IL-22", "levels", "were", "significantly", "increased", "in", "the", "intraorbital", "glands", "after", "2", "mu", "g", "anti-HMGB1", "treatment", "(", "Kruskal-Wallis", "test", ",", "PBS", "vs.", "2", "mu", "g", "anti-HMGB1", ",", "p", "=", "0.025", ",", "Fig", "6B", ")", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 19, 20, 21, 22, 23, 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "Although", "we", "could", "not", "discriminate", "between", "changes", "in", "Th22", "and", "changes", "in", "gamma", "delta", "T", "cells", ",", "the", "fact", "that", "the", "changes", "in", "CD3", "IL-22", "cells", ",", "including", "both", "Th22", "and", "gamma", "delta", "T", "cells", ",", "were", "not", "significant", "suggests", "that", "the", "increase", "in", "IL-22", "may", "be", "caused", "mainly", "by", "ILC3s", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 13, 14 ], [ 23, 24 ], [ 24, 25 ], [ 29, 30 ], [ 32, 33 ], [ 44, 45 ] ]
+  }, {
+    "sentence_tokens" : [ "Like", "natural", "killer", "(", "NK", ")", "cells", ",", "ILCs", "belong", "to", "the", "lymphoid", "lineage", ";", "however", ",", "unlike", "T", "and", "B", "cells", ",", "they", "lack", "antigen-receptors", "(", "T", "cell", "receptor", "or", "B", "cell", "receptor", ")", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 29, 30 ], [ 33, 34 ] ]
+  }, {
+    "sentence_tokens" : [ "Non", "specific", "staining", "was", "blocked", "using", "purified", "2.4G2", "Ab", "(", "BD", "Fc", "Block", ")", "." ],
+    "entities_indices" : [ [ 7, 8, 9 ], [ 11, 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "To", "evaluate", "proliferative", "changes", "in", "T", "and", "B", "cells", ",", "mice", "were", "given", "0.8", "mg/ml", "BrdU", "(", "BD", "Pharmingen", ",", "San", "Diego", ",", "CA", ")", "in", "their", "drinking", "water", "for", "10", "days", ",", "and", "the", "water", "was", "changed", "every", "two", "days", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 15, 16 ], [ 20, 21 ], [ 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "During", "the", "acquisition", "preview", ",", "gates", "were", "adjusted", "in", "the", "FSC-A", "vs.", "SSC-A", "plot", ",", "and", "the", "DNA", "7-AAD-A", "voltage", "was", "adjusted", "to", "place", "the", "mean", "of", "the", "singlet", "peak", "(", "G0/G1", ")", "at", "50,000", "on", "the", "histogram", "." ],
+    "entities_indices" : [ [ 10, 11, 12, 13, 14 ], [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "An", "increase", "in", "goblet", "cell", "density", "could", "indicate", "a", "protective", "effect", "due", "to", "an", "increase", "in", "tear", "secretion", "and", "a", "recovery", "of", "epithelial", "homeostasis", "." ],
+    "entities_indices" : [ [ 16, 17, 18 ], [ 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "level", "of", "IL-22", "in", "intraorbital", "glands", "was", "measured", "by", "ELISA", "." ],
+    "entities_indices" : [ [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "Ten", "week-old", "male", "NOD", "." ],
+    "entities_indices" : [ [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "Extracellular", "HMGB1", "also", "appears", "to", "have", "diverse", "effects", "on", "different", "cells", ",", "depending", "on", "the", "concentration", "or", "redox", "status", "of", "cysteine", "." ],
+    "entities_indices" : [ [ 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "study", "indicates", "that", "subconjunctival", "administration", "of", "anti-HMGB1", "attenuates", "the", "clinical", "manifestations", "of", "dry", "eye", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "Goblet", "cell", "density", "was", "increased", "in", "0.2", "mu", "g", "anti-HMGB1-treated", "(", "Mann-Whitney", "test", ",", "p", "=", "0.0066", "vs.", "PBS", ")", "and", "2", "mu", "g", "anti-HMGB1-treated", "mice", "(", "Mann-Whitney", "test", ",", "p", "=", "0.057", "vs.", "PBS", ";", "marginal", "significance", ")", "2", "weeks", "after", "treatment", "(", "Fig", "3", ")", "." ],
+    "entities_indices" : [ [ 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "Tissues", "were", "cut", "into", "4-mu", "m-thick", "sections", "through", "the", "superior", "and", "inferior", "conjunctival", "fornices", ",", "and", "subjected", "to", "PAS", "staining", "." ],
+    "entities_indices" : [ [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "BrdU", "(", "BD", "Pharmingen", ",", "San", "Diego", ",", "CA", ")", "staining", ",", "a", "BrdU", "FITC", "cell", "cycle", "assay", "was", "performed", "(", "n", "=", "4", "-", "6", ")", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 6, 7 ], [ 9, 10 ], [ 14, 15 ], [ 16, 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "could", "explain", "why", "blocking", "HMGB1", "improves", "dry", "eye", ",", "although", "the", "exact", "redox", "status", "of", "cysteine", "is", "not", "known.The", "present", "study", "had", "several", "limitations", "." ],
+    "entities_indices" : [ [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "inflammatory", "foci", "score", ",", "and", "the", "number", "of", "BrdU", "+", "cells", ",", "IL-17-,", "IL-10-,", "IFNgamma", "secreting", "cells", ",", "and", "functional", "B", "cells", "did", "not", "significantly", "change", "following", "anti-HMGB1", "treatment", "." ],
+    "entities_indices" : [ [ 9, 10 ], [ 13, 14, 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "functional", "B", "cell", "responses", ",", "no", "significant", "changes", "were", "found", "in", "the", "percentage", "of", "plasma", "cells", "(", "CD3", "B220", "CD138", "cells", ")", "or", "IL-10-secreting", "B", "regulatory", "cells", "(", "CD3", "CD19", "B220", "IL-10", ")", "in", "the", "draining", "lymph", "nodes", "(", "Fig", "5A", "and", "5B", ")", "." ],
+    "entities_indices" : [ [ 18, 19 ], [ 20, 21 ], [ 29, 30 ], [ 30, 31 ], [ 32, 33 ], [ 43, 44 ] ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "we", "investigated", "whether", "early", "treatment", "with", "an", "anti-HMGB1", "blocking", "antibody", "could", "(", "1", ")", "improve", "the", "clinical", "manifestations", "of", "dry", "eye", ",", "(", "2", ")", "decrease", "the", "responses", "of", "autoreactive", "B", "cells", "or", "Th17", "cells", ",", "and", "(", "3", ")", "affect", "changes", "in", "ILC3s", "that", "might", "be", "involved", "in", "modification", "of", "epithelial", "wound", "healing", "in", "NOD.B10.H2", "mice", "." ],
+    "entities_indices" : [ [ 54, 55, 56 ], [ 58, 59 ] ]
+  }, {
+    "sentence_tokens" : [ "IFN", "gamma-secreting", "T", "cells", "(", "CD3", "CD4", "IFN", "gamma", "or", "CD3", "CD8", "IFN", "gamma", ")", "were", "not", "changed", "following", "treatment", "(", "Fig", "4C", ")", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 5, 6 ], [ 6, 7 ], [ 7, 8 ], [ 10, 11, 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "Anti-SSA", "in", "the", "plasma", "was", "analyzed", "in", "PBS", "treated", "mice", "(", "n", "=", "6", ")", ",", "in", "anti-HMGB1-treated", "mice", "(", "n", "=", "12", ")", ",", "and", "in", "the", "positive", "control", "provided", "with", "the", "kit", "(", "n", "=", "2", ")", "." ],
+    "entities_indices" : [ [ 9, 10 ], [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "Extracellular", "high", "mobility", "group", "box", "1", "(", "HMGB1", ")", "acts", "as", "a", "damage", "associated", "molecular", "pattern", "molecule", "through", "the", "Toll", "like", "receptor", "to", "promote", "autoreactive", "B", "cell", "activation", ",", "which", "may", "be", "involved", "in", "the", "pathogenesis", "of", "Sjogren", "'s", "syndrome", "." ],
+    "entities_indices" : [ [ 1, 2, 3, 4, 5, 6 ], [ 7, 8 ], [ 19, 20, 21, 22 ], [ 25, 26, 27, 28 ], [ 35, 36 ], [ 37, 38, 39, 40 ] ]
+  }, {
+    "sentence_tokens" : [ "Our", "study", "showed", "a", "higher", "distribution", "of", "NCR", "ILC3s", "(", "Nkp46", ")", "and", "an", "increase", "in", "NCR", "ILC3s", "(", "Nkp46", ")", "in", "the", "cervical", "lymph", "nodes", "compared", "to", "NCR", "ILC3s", "(", "Nkp46", ")", "following", "treatment", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 19, 20 ], [ 31, 32 ] ]
+  }, {
+    "sentence_tokens" : [ "Innate", "lymphoid", "cells", "(", "ILCs", ")", "have", "emerged", "as", "a", "new", "type", "of", "immune", "cell", "with", "important", "functions", "in", "innate", "and", "adaptive", "immunity", "[", "14", ",", "15", "]", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 21, 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "ILCs", "are", "found", "in", "various", "tissues", "including", "the", "mucosa", ",", "lymphoid", "tissue", ",", "liver", ",", "skin", ",", "and", "fat", "." ],
+    "entities_indices" : [ [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "experimental", "protocol", "was", "approved", "by", "the", "Ethics", "Committee", "at", "Seoul", "National", "University", "Hospital", "Biomedical", "Research", "Institute", "(", "IACUC", "No.", "13", "-", "0162", ")", "." ],
+    "entities_indices" : [ [ 18, 19, 20, 21, 22, 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "circumstances", "that", "determine", "this", "bidirectional", "role", "of", "ILCs", "(", "immune", "regulation", "versus", "inflammation", "and", "autoimmunity", ")", "are", "still", "unclear", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "Thereafter", ",", "we", "reduced", "the", "anesthetic", "dose", "to", "20", "mu", "l.", "BrdU", "proliferation", "analysis", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "Nevertheless", ",", "to", "our", "knowledge", ",", "this", "is", "the", "first", "study", "to", "report", "an", "improvement", "in", "dry", "eye", "after", "anti-HMGB1", "treatment", "and", "to", "propose", "a", "possible", "role", "for", "ILC3s", "in", "this", "mouse", "model.In", "conclusion", ",", "subconjunctival", "administration", "of", "anti-HMGB1", "improved", "the", "clinical", "manifestations", "of", "dry", "eye", "in", "NOD.B10.H2", "mice", ",", "although", "the", "anti-HMGB1", "treatment", "did", "not", "affect", "B", "or", "plasma", "cells", "." ],
+    "entities_indices" : [ [ 48, 49 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "improvement", "of", "dry", "eye", "may", "involve", "an", "increase", "of", "ILC3s", ",", "rather", "than", "modulation", "of", "B", "or", "plasma", "cells", ",", "as", "shown", "using", "a", "mouse", "model", "of", "Sjogren", "'s", "syndrome", "." ],
+    "entities_indices" : [ [ 28, 29, 30, 31 ] ]
+  }, {
+    "sentence_tokens" : [ "One", "reason", "for", "the", "failure", "to", "observe", "B", "cell", "modulation", "could", "be", "that", "the", "subconjunctival", "injection", "of", "anti-HMGB1", "did", "not", "reach", "the", "spleen", ",", "where", "autoreactive", "B", "cells", "reside", ",", "at", "a", "sufficient", "therapeutic", "level", "to", "affect", "already", "activated", "B", "or", "plasma", "cells", "in", "the", "draining", "lymph", "nodes", "." ],
+    "entities_indices" : [ [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "Given", "the", "fact", "that", "HMGB1", "can", "interact", "with", "Treg", "cells", "or", "directly", "with", "conventional", "T", "cells", "and", "modulate", "them", "[", "36", "]", ",", "there", "are", "several", "possible", "direct", "or", "indirect", "pathways", "through", "which", "HMGB1", "could", "communicate", "with", "ILCs", ",", "which", "have", "not", "yet", "been", "discovered", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 33, 34 ] ]
+  }, {
+    "sentence_tokens" : [ "HMGB1", "is", "a", "dual-function", "protein", "that", "has", "specific", "roles", "both", "inside", "and", "outside", "cells", "(", "Fig", "1", ")", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "All", "procedures", "used", "in", "this", "study", "strictly", "adhered", "to", "the", "ARVO", "statement", "regarding", "the", "Use", "of", "Animals", "in", "Ophthalmic", "and", "Vision", "Research", "." ],
+    "entities_indices" : [ [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "B10.H2", "mice", "were", "divided", "into", "treatment", "(", "n", "=", "18", ")", "and", "control", "groups", "(", "n", "=", "6", ")", "." ],
+    "entities_indices" : [ [ 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "representative", "photos", "in", "panel", "C", "show", "the", "surface", "changes", ",", "and", "the", "ocular", "staining", "score", "was", "significantly", "decreased", "in", "2", "mu", "g", "anti-HMGB1-treated", "mice", "over", "time", ",", "compared", "with", "the", "pre-treatment", "baseline", "level", "(", "Fig", "2A", "and", "2C", ";", "Wilcoxon", "matched-pairs", "signed", "rank", "test", ",", "10", "weeks", "vs.", "11", "weeks", ",", "p", "=", "0.0156", ";", "10", "weeks", "vs.", "12", "weeks", ",", "p", "=", "0.0156", ")", "." ],
+    "entities_indices" : [ [ 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "Necrosis-", "and", "pyroptosis", "induced", "extracellular", "HMGB1", "is", "usually", "in", "a", "disulfide", "bonded", "form", "(", "between", "cysteine", "23", "and", "cysteine", "45", ")", "that", "acts", "as", "a", "damage", "associated", "molecular", "pattern", "(", "DAMP", ")", "molecule", "through", "TLR", "4", ",", "TLR", "2", ",", "RAGE-TLR9", ",", "or", "IL-1R", "to", "promote", "dendritic", "cell", "maturation", "and", "autoreactive", "B", "cell", "activation", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 5, 6 ], [ 10, 11 ], [ 30, 31 ], [ 34, 35, 36 ], [ 37, 38 ], [ 40, 41 ], [ 43, 44 ], [ 51, 52, 53, 54 ] ]
+  }, {
+    "sentence_tokens" : [ "To", "evaluate", "the", "degree", "of", "corneal", "epithelial", "defects", ",", "one", "drop", "of", "3", "%", "Lissamine", "Green", "B", "(", "Sigma-Aldrich", ",", "St.", "Louis", ",", "MO", ",", "USA", ")", "was", "administered", "to", "the", "inferior", "lateral", "conjunctival", "sac", "." ],
+    "entities_indices" : [ [ 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "Goblet", "cell", "density", "was", "increased", "in", "0.2", "mug", "and", "2", "mug", "anti-HMGB1-treated-mice", "with", "marginal", "significance", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "B10.H2", "mice", "were", "used", "as", "an", "autoimmune", "dry", "eye", "model", ",", "because", "NOD.B10.H2", "mice", "serve", "as", "a", "model", "for", "studying", "primary", "Sj", "o", "gren", "'", "s", "syndrome", "without", "development", "of", "diabetes", "[", "5", ",", "6", ",", "16", ",", "17", "]", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 13, 14 ], [ 21, 22, 23, 24, 25, 26 ], [ 26, 27 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "focused", "on", "extracellular", "HMGB1", "because", "we", "believe", "that", "the", "chronic", "epithelial", "cell", "damage", "to", "the", "cornea", "or", "lacrimal", "glands", "may", "trigger", "the", "cycle", "of", "inflammation", "by", "secreting", "danger", "signals", ",", "such", "as", "HMGB1", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 25, 26 ], [ 33, 34 ] ]
+  }, {
+    "sentence_tokens" : [ "Overall", "health", "was", "monitored", "twice", "a", "week", "(", "weight", "and", "hair", "loss", ")", "." ],
+    "entities_indices" : [ [ 10, 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "score", "of", "1", "was", "given", "when", "the", "focus", "contained", "greater", "than", "50", "CD3", "T", "lymphocytes", "[", "19", "]", "." ],
+    "entities_indices" : [ [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "our", "autoimmune", "dry", "eye", "model", ",", "we", "believe", "that", "the", "level", "of", "extracellular", "HMGB1", "is", "higher", "than", "endogenous", "levels", ",", "which", "then", "provokes", "inflammation", "." ],
+    "entities_indices" : [ [ 14, 15 ], [ 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "To", "compare", "changes", "in", "ocular", "staining", "or", "tear", "secretion", "over", "time", "(", "baseline", "vs.", "post-treatment", ")", ",", "which", "can", "be", "observed", "in", "vivo", "in", "living", "animals", ",", "data", "were", "analyzed", "using", "the", "Wilcoxon", "matched-pairs", "signed", "rank", "test", "." ],
+    "entities_indices" : [ [ 7, 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "Goblet", "cell", "density", "was", "counted", "in", "PAS", "stained", "forniceal", "conjunctiva", "and", "inflammatory", "foci", "score", "(", ">", "50", "cells", "and", "focus", ")", "was", "measured", "in", "extraorbital", "glands", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "intestine", ",", "ILC3s", "are", "known", "to", "promote", "epithelial", "wound", "healing", "and", "maintain", "epithelial", "barrier", "function.In", "Sj", "o", "gren", "'", "s", "syndrome", ",", "the", "conjunctival", ",", "corneal", ",", "and", "lacrimal", "epithelial", "cells", "are", "damaged", "during", "inflammation", ",", "and", "some", "of", "them", "may", "undergo", "necrosis", "to", "release", "extracellular", "HMGB1", "." ],
+    "entities_indices" : [ [ 10, 11, 12 ], [ 14, 15, 16, 17, 18, 19, 20, 21, 22 ], [ 22, 23 ], [ 36, 37 ], [ 44, 45 ], [ 48, 49 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "addition", ",", "cell", "cycle", "gates", "were", "adjusted", "as", "needed", "to", "encompass", "the", "G0/G1", ",", "S", ",", "and", "G2/M", "populations", "(", "S2", "Fig", ")", "." ],
+    "entities_indices" : [ [ 3, 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "Blood", "(", "800", "mu", "l", "-", "1", "ml", ")", "was", "obtained", "from", "the", "heart", "at", "the", "time", "of", "sacrifice", "." ],
+    "entities_indices" : [ [ 3, 4, 5, 6, 7, 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "IL-22", "intracellular", "staining", ",", "cells", "were", "stimulated", "for", "5", "hours", "with", "10", "ng/ml", "IL-1", "beta", "and", "10", "ng/ml", "IL-23", "in", "the", "presence", "of", "GolgiStop", "(", "BD", "Pharmingen", ",", "San", "Diego", ",", "CA", ")", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 14, 15, 16 ], [ 19, 20 ], [ 29, 30 ], [ 32, 33 ] ]
+  }, {
+    "sentence_tokens" : [ "Phenol", "red", "thread", "test", "for", "tear", "volume", "measurement", "." ],
+    "entities_indices" : [ [ 0, 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "Fold", "changes", "in", "the", "percentage", "of", "ILC3s", "(", "NCR", "ILC3s", ";", "CD3", "B220", "CD45", "Nkp46", "IL-22", "or", "NCR", "ILC3s", ";", "CD3", "B220", "CD45", "Nkp46", "IL-22", ")", "were", "significantly", "increased", "compared", "to", "controls", "(", "Kruskal-Wallis", "test", ",", "PBS", "vs.", "2", "mu", "g", "anti-HMGB1", ",", "p", "=", "0.025", ")", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 13, 14, 15, 16 ], [ 20, 21 ], [ 22, 23, 24, 25 ], [ 36, 37, 38, 39, 40, 41, 42 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "aim", "of", "this", "study", "was", "to", "investigate", "the", "effect", "of", "subconjunctival", "administration", "of", "anti-HMGB1", "on", "dry", "eye", "in", "a", "mouse", "model", "of", "Sjogren", "'s", "syndrome", "." ],
+    "entities_indices" : [ [ 14, 15 ], [ 23, 24, 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "These", "lineage", "negative", "NCR", "ILC3s", "(", "CD3", "B220", "Nkp46", "CD45", "IL-22", "cells", ")", "are", "a", "subset", "of", "ILC3s", "known", "to", "effectively", "promote", "epithelial", "wound", "healing", "in", "the", "intestine", "[", "29", ",", "32", "]", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 8, 9, 10, 11 ], [ 23, 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "Group", "1", "ILCs", "consist", "of", "conventional", "NK", "cells", "and", "ILCs", "that", "secrete", "T", "helper", "(", "Th", ")", "1-type", "cytokine", "IFN", "gamma", "and", "express", "the", "transcription", "factor", "T-bet", "." ],
+    "entities_indices" : [ [ 15, 16 ], [ 19, 20 ], [ 24, 25 ], [ 26, 27 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "protective", "function", "of", "ILC3", "cells", "on", "epithelial", "homeostasis", "through", "IL-22", "is", "well", "established", "in", "the", "gut", ",", "but", "their", "role", "in", "epithelial", "homeostasis", "in", "the", "eye", "has", "not", "been", "investigated", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 10, 11 ], [ 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "0.2", "mu", "g", "anti-HMGB1-treated", "mice", ",", "ocular", "staining", "tended", "to", "be", "diminished", "and", "tear", "secretion", "tended", "to", "be", "increased", ",", "although", "neither", "were", "statistically", "significant", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 14, 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "It", "is", "plausible", "to", "assume", "that", "extracellular", "HMGB1", "acts", "as", "an", "inflammatory", "cytokine", "through", "TLR9", "signaling", "on", "B", "cells", "in", "this", "mouse", "model", "of", "Sj", "o", "gren", "'", "s", "syndrome", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 14, 15 ], [ 24, 25, 26, 27, 28, 29 ], [ 29, 30 ] ]
+  }, {
+    "sentence_tokens" : [ "All", "mice", "were", "bred", "in", "a", "specific", "pathogen-free", "environment", "and", "maintained", "at", "22", "-", "24", "degrees", "C", ",", "relative", "humidity", "55", "+/-", "5", "%", ",", "with", "alternating", "14/10", "hour", "light", "and", "dark", "cycles", "(", "light-on", "6", "AM", ";", "light-off", "8", "PM", ")", "with", "free", "access", "to", "water", "and", "food", "at", "the", "mouse", "facility", "at", "the", "Biomedical", "Research", "Institute", "of", "Seoul", "National", "University", "Hospital", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 36, 37 ], [ 40, 41 ] ]
+  }, {
+    "sentence_tokens" : [ "Three", "mice", "died", "during", "the", "experiments", "(", "two", "0.02", "mu", "g", "anti-HMGB1-treated", "mice", "and", "one", "0.2", "mu", "g", "anti-HMGB1-treated", "mouse", ")", "probably", "because", "of", "anesthetic", "overdose", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "addition", ",", "B", "cell", "proliferation", "and", "the", "proportion", "of", "plasma", "cells", "were", "not", "affected", "following", "subconjunctival", "anti-HMGB1", "treatment", "in", "the", "spleen", "(", "unpublished", "data", ")", "." ],
+    "entities_indices" : [ [ 3, 4, 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "Data", "were", "analyzed", "using", "Flowjo", "software", "(", "Tree", "Star", ",", "Ashland", ",", "OR", ")", "(", "n", "=", "4", "-", "6", ")", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "Phenol", "red", "thread", "tests", "and", "corneal", "dye", "staining", "were", "performed", "following", "an", "intraperitoneal", "injection", "of", "zoletil", "(", "10", "mg/kg", ")", "and", "xylazine", "(", "14", "mg/kg", ")", ",", "and", "all", "efforts", "were", "made", "to", "minimize", "suffering", "." ],
+    "entities_indices" : [ [ 0, 1, 2 ], [ 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "To", "evaluate", "tear", "production", ",", "phenol", "red", "impregnated", "cotton", "threads", "(", "FCI", "Ophthalmics", ",", "Pembrooke", ",", "MA", ",", "USA", ")", "were", "applied", "to", "the", "lateral", "canthus", "for", "60", "seconds", ",", "and", "wetting", "of", "the", "thread", "was", "measured", "in", "millimeters", "." ],
+    "entities_indices" : [ [ 5, 6, 7 ], [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "study", "shows", "that", "subconjunctival", "administration", "of", "anti-HMGB1", "attenuates", "clinical", "manifestations", "of", "dry", "eye", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "effector", "T", "cell", "responses", ",", "the", "percentage", "of", "Th17", "cells", "(", "CD3", "CD4", "IL-17", ")", "and", "Tc17", "cells", "(", "cytotoxic", "T", "cells", "that", "secrete", "IL-17", ";", "CD3", "CD8", "IL-17", ")", "did", "not", "show", "any", "significant", "changes", "(", "Fig", "4B", ")", "." ],
+    "entities_indices" : [ [ 12, 13 ], [ 13, 14, 15 ], [ 25, 26 ], [ 27, 28, 29 ], [ 29, 30 ] ]
+  }, {
+    "sentence_tokens" : [ "Conversely", ",", "apoptosis", "induced", "extracellular", "HMGB1", ",", "in", "which", "all", "cysteines", "are", "oxidized", ",", "or", "cysteine", "106", "is", "oxidized", ",", "does", "not", "exhibit", "pro", "inflammatory", "or", "chemotactic", "activities", "[", "7", "]", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "Taken", "together", ",", "locally", "administered", "extracellular", "HMGB1", "did", "not", "have", "a", "significant", "effect", "on", "adaptive", "immunity", "associated", "inflammation", "in", "this", "mouse", "model", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 14, 15, 16 ], [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "was", "convenient", "because", "there", "was", "no", "need", "for", "cobalt", "light", "excitation", "[", "18", "]", "." ],
+    "entities_indices" : [ [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "To", "evaluate", "changes", "in", "ILC3s", ",", "cells", "were", "negatively", "gated", "with", "anti-CD3-PerCP", "and", "anti-B220-FITC", "antibodies", ",", "then", "positively", "gated", "with", "anti-CD45-APC", "cy7", "and", "anti-IL-22", "-", "PE", "antibodies", "in", "the", "presence", "of", "anti-Nkp46-APC", "." ],
+    "entities_indices" : [ [ 20, 21, 22 ], [ 25, 26 ], [ 31, 32 ] ]
+  }, {
+    "sentence_tokens" : [ "Plasma", "was", "collected", "after", "centrifugation", "at", "2,500", "rpm", "for", "10", "minutes", ",", "and", "used", "to", "measure", "the", "concentration", "of", "mouse", "anti-SSA", "(", "Ro-60", ",", "Signosis", "Inc.", "Santa", "Clara", ",", "CA", ")", "using", "an", "ELISA", "kit", "(", "Number", "EA-5202", ")", "according", "to", "the", "manufacturer", "'", "s", "protocol", "." ],
+    "entities_indices" : [ [ 20, 21 ], [ 22, 23 ], [ 26, 27 ], [ 29, 30 ] ]
+  }, {
+    "sentence_tokens" : [ "Extracellular", "HMGB1", ",", "which", "is", "passively", "released", "from", "necrotic", "cells", "or", "actively", "secreted", "by", "macrophages", "and", "dendritic", "cells", ",", "is", "a", "crucial", "cytokine", "that", "mediates", "the", "response", "to", "infection", ",", "injury", ",", "and", "inflammation", ",", "including", "autoimmune", "diseases", "such", "as", "Sj", "o", "gren", "'", "s", "syndrome", "[", "2", ",", "3", ",", "8]", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 28, 29 ], [ 33, 34 ], [ 36, 37, 38 ], [ 45, 46 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "is", "based", "on", "the", "fact", "that", "ILC3", "cells", "may", "play", "a", "role", "in", "epithelial", "homeostasis", "and", "wound", "healing", "as", "well", "as", "having", "a", "role", "in", "immune", "modulation", "[", "24", "-", "28", "]", "." ],
+    "entities_indices" : [ [ 15, 16 ], [ 17, 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "To", "investigate", "inhibitory", "effect", "of", "triggering", "by", "HMGB1", "in", "early", "stage", "of", "inflammatory", "cascades", ",", "10", "week-old", "mice", "were", "chosen", "based", "on", "previous", "preliminary", "data", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "Data", "are", "presented", "as", "mean", "+/-", "standard", "error", "(", "SE", ")", "." ],
+    "entities_indices" : [ [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "HMGB1", "with", "disulfide", "bonded-cysteine", "or", "reduced-cysteine", "exhibits", "inflammatory", "activities", "or", "chemotaxis", ",", "while", "HMGB1", "with", "oxidized-cysteine", "exhibits", "tolerogenic", "activities", "[", "7", ",", "34", ",", "35", "]", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 2, 3 ], [ 10, 11 ], [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "percentage", "of", "CD3", "IL-22", "cells", "was", "not", "different", "among", "the", "groups", ",", "suggesting", "that", "the", "increase", "in", "IL-22", "secretion", "is", "not", "related", "to", "Th22", "or", "gamma", "delta", "T", "cells", ",", "which", "express", "CD3", "(", "Fig", "6C", ")", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 4, 5 ], [ 18, 19, 20 ], [ 24, 25 ], [ 27, 28 ], [ 33, 34 ] ]
+  }, {
+    "sentence_tokens" : [ "HMGB1", "is", "one", "of", "the", "most", "abundant", "non", "histone", "nuclear", "proteins", "that", "contributes", "to", "chromatin", "stabilization", ",", "and", "contains", "two", "folded", "helical", "DNA", "binding", "motifs", ",", "called", "A", "and", "B", "boxes", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "Flow", "cytometry", "was", "performed", "to", "evaluate", "the", "changes", "in", "BrdU", "+", "cells", ",", "IL-17-,", "IL-10-,", "or", "IFNgamma", "secreting", "cells", ",", "functional", "B", "cells", ",", "and", "IL-22", "secreting", "innate", "lymphoid", "cells", "(", "ILC3s", ")", "in", "cervical", "lymph", "nodes", "." ],
+    "entities_indices" : [ [ 9, 10 ], [ 13, 14, 15 ], [ 16, 17 ], [ 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "Periodic", "acid", "schiff", "(", "PAS", ")", "staining", "for", "identification", "of", "goblet", "cells", "." ],
+    "entities_indices" : [ [ 0, 1, 2 ], [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "score", "was", "also", "decreased", "in", "0.02", "mu", "g", "anti-HMGB1-treated", "mice", "compared", "to", "the", "pre-treatment", "baseline", "score", "(", "Wilcoxon", "matched-pairs", "signed", "rank", "test", ",", "10", "weeks", "vs.", "12", "weeks", ",", "p", "=", "0.0313", ")", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "the", "current", "study", ",", "24", "male", "NOD", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "Samples", "were", "cut", "into", "4", "mu", "m", "sections", "and", "subjected", "to", "hematoxylin-eosin", ",", "CD3", "(", "for", "T", "cells", ")", ",", "or", "B220", "staining", "(", "an", "isoform", "of", "CD45", "and", "pan", "B", "cell", "maker", ")", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 13, 14 ], [ 21, 22 ], [ 27, 28 ] ]
+  }, {
+    "sentence_tokens" : [ "It", "is", "also", "possible", "that", "early", "treatment", "with", "anti-HMGB1", "did", "not", "have", "a", "measurable", "effect", "on", "inflammation", "because", "the", "epithelial", "damage", "was", "not", "sufficiently", "severe", "to", "secrete", "enough", "extracellular", "HMGB1", "and", "induce", "inflammation", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 16, 17 ], [ 29, 30 ], [ 32, 33 ] ]
+  }, {
+    "sentence_tokens" : [ "Our", "data", "suggest", "that", "NCR", "ILC3s", ",", "rather", "than", "NCR+", "ILC3s", ",", "may", "function", "during", "dry", "eye.Many", "cytokines", "show", "pleiotropic", "effects", "on", "cellular", "homeostasis", "depending", "on", "the", "concentration", "(", "lower", "or", "higher", "than", "normal", "endogenous", "levels", ")", "." ],
+    "entities_indices" : [ [ 22, 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "Considering", "that", "TLR9", "expression", "is", "abundant", "on", "B", "cells", "and", "plasmacytoid", "dendritic", "cells", "[", "20", "]", ",", "we", "proposed", "that", "anti-HMGB1", "treatment", "would", "reduce", "the", "effector", "function", "of", "B", "cells", "in", "these", "mice", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 32, 33 ] ]
+  }, {
+    "sentence_tokens" : [ "ILCs", "are", "known", "to", "coordinate", "or", "limit", "immune", "responses", "during", "autoimmune", "disease", ",", "depending", "on", "environmental", "factors", "[", "14", "]", "." ],
+    "entities_indices" : [ [ 10, 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "Euthanasia", "was", "performed", "using", "compressed", "CO", "gas", ",", "according", "to", "the", "American", "Veterinary", "Medical", "Association", "Guidelines", "for", "the", "Euthanasia", "of", "Animals", ":", "2013", "Edition", "." ],
+    "entities_indices" : [ [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "Sj", "o", "gren", "'", "s", "syndrome", "represents", "one", "of", "the", "most", "devastating", "examples", "of", "autoimmune", "dry", "eye", ",", "which", "is", "involved", "in", "multiple", "pathological", "mechanisms", "and", "causes", "severe", "discomfort", "and", "visual", "disturbance", "." ],
+    "entities_indices" : [ [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "supernatant", "was", "collected", "after", "centrifugation", "at", "12,000", "rpm", "for", "20", "minutes", ",", "and", "assayed", "for", "IL-22", "by", "ELISA", ",", "according", "to", "the", "manufacturer", "'", "s", "protocol", "(", "R", "&", "D", "Systems", ",", "Minneapolis", ",", "MN", ")", "." ],
+    "entities_indices" : [ [ 16, 17 ], [ 35, 36 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "percentage", "and", "number", "of", "BrdU", "CD3", "T", "and", "BrdU", "B220", "B", "cells", "(", "S", "phase", ",", "S2", "Fig", ")", "in", "the", "draining", "lymph", "nodes", "of", "treated", "mice", "were", "not", "significantly", "altered", "compared", "to", "that", "in", "controls", "(", "Fig", "4A", ")", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 6, 7 ], [ 9, 10 ], [ 14, 15, 16 ], [ 27, 28 ] ]
+  }, {
+    "sentence_tokens" : [ "NCR", "ILC3s", "(", "CD3", "B220", "CD45", "Nkp46", "IL-22", ")", "were", "also", "increased", "after", "2", "mu", "g", "anti-HMGB1", "treatment", "(", "Kruskal-Wallis", "test", ",", "PBS", "vs.", "2", "mu", "g", "anti-HMGB1", ",", "p", "=", "0.0142", ")", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 5, 6, 7, 8 ], [ 22, 23, 24, 25, 26, 27, 28 ] ]
+  }, {
+    "sentence_tokens" : [ "Isotype", "controls", "were", "as", "follows", ":", "rat", "IgG2a", ",", "k", "for", "CD138-APC", ";", "rat", "IgG1", ",", "k", "for", "IL-17A-PE", ",", "IFN", "gamma-FITC", "and", "IL-22-PE", ";", "rat", "IgG2b", ",", "k", "for", "IL-10-FITC.Cells", "were", "assayed", "using", "a", "FACSCanto", "flow", "cytometer", "(", "BD", "BioSciences", ",", "Mountain", "View", ",", "CA", ")", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 13, 14, 15 ], [ 18, 19 ], [ 20, 21 ], [ 23, 24 ], [ 25, 26, 27 ], [ 30, 31 ], [ 35, 36, 37, 38 ], [ 45, 46 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "infiltrating", "focus", "of", "CD3", "T", "cells", "was", "very", "similar", "to", "that", "of", "B220", "B", "cells", "(", "S3", "Fig", ")", "." ],
+    "entities_indices" : [ [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "NOD.B10.H2", "mice", "were", "purchased", "from", "Jackson", "Laboratories", "(", "Bar", "Harbor", ",", "ME", ",", "USA", ")", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 8, 9 ], [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "Under", "normal", "conditions", ",", "ILC3", "distribution", "is", "scarce", "in", "the", "cervical", "lymph", "nodes", "(", "unpublished", "data", ")", ",", "while", "inflammatory", "conditions", ",", "such", "as", "the", "mouse", "model", "for", "Sj", "o", "gren", "'", "s", "syndrome", "(", "NOD.B10.H2", ")", "or", "an", "experimental", "uveitis", "model", ",", "show", "a", "large", "number", "of", "ILC3", "cells", "in", "the", "cervical", "lymph", "nodes", "(", "unpublished", "data", ")", "." ],
+    "entities_indices" : [ [ 28, 29, 30, 31, 32, 33 ], [ 33, 34 ], [ 40, 41 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "was", "performed", "under", "anesthesia", "with", "zoletil", "(", "10", "mg/kg", ")", "and", "xylazine", "(", "14", "mg/kg", ")", "(", "n", "=", "10", "-", "12", ")", "." ],
+    "entities_indices" : [ [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "subconjunctival", "injection", "of", "the", "same", "volume", "of", "PBS", "containing", "0.2", "mu", "g", "chicken", "Ig", "Y", "(", "Product", "Code", ":", "326058471", ";", "SHINO-TEST", "Corporation", ",", "Kanagawa", ",", "Japan", ")", "served", "as", "a", "control", "." ],
+    "entities_indices" : [ [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "did", "not", "perform", "adoptive", "transfer", "because", "of", "technical", "difficulties", ",", "since", "the", "number", "of", "ILCs", "was", "very", "small", "." ],
+    "entities_indices" : [ [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "IFN", "gamma", ",", "IL-10", ",", "and", "IL-17A", "intracellular", "staining", ",", "cells", "were", "stimulated", "for", "5", "hours", "with", "50", "ng/ml", "phorbol", "myristate", "acetate", "and", "1", "mu", "g/ml", "ionomycin", "in", "the", "presence", "of", "GolgiPlug", "(", "BD", "Pharmingen", ",", "San", "Diego", ",", "CA", ")", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 4, 5 ], [ 7, 8 ], [ 20, 21 ], [ 21, 22 ], [ 22, 23 ], [ 27, 28 ], [ 37, 38 ], [ 40, 41 ] ]
+  }, {
+    "sentence_tokens" : [ "On", "the", "other", "hand", ",", "tear", "secretion", "was", "significantly", "increased", "in", "0.02", "mu", "g", "anti-HMGB1-treated", "mice", "(", "Wilcoxon", "matched-pairs", "signed", "rank", "test", ",", "10", "weeks", "vs.", "11", "weeks", ",", "p", "=", "0.0273", ";", "10", "weeks", "vs.", "12", "weeks", ",", "p", "=", "0.0078", ")", "and", "in", "2", "mu", "g", "anti-HMGB1-treated", "mice", "(", "Wilcoxon", "matched-pairs", "signed", "rank", "test", ",", "10", "weeks", "vs.", "11", "weeks", ",", "p", "=", "0.0005", ";", "10", "weeks", "vs.", "12", "weeks", ",", "p", "=", "0.0342", ")", "compared", "to", "the", "pre-treatment", "baseline", "." ],
+    "entities_indices" : [ [ 5, 6, 7 ], [ 15, 16 ], [ 49, 50 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "CD3", "and", "B220", "immunohistochemical", "staining", ",", "rabbit", "anti-mouse", "CD3", "(", "ab16669", ",", "Abcam", ",", "Cambridge", ",", "MA", ")", "and", "rat", "anti-mouse", "B220", "(", "ab64100", ",", "Abcam", ",", "Cambridge", ",", "MA", ")", "primary", "antibodies", "were", "used", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 3, 4 ], [ 9, 10 ], [ 17, 18 ], [ 30, 31 ] ]
+  }, {
+    "sentence_tokens" : [ "Subpopulations", "of", "CD3", "B220", "CD45", "Nkp46", "IL-22", "ILC3", "cells", "(", "NCR", "ILC3s", ")", "and", "CD3", "B220", "CD45", "Nkp46", "IL-22", "ILC3s", "cells", "(", "NCR", "ILC3s", ")", "were", "subsequently", "gated", "(", "S2", "Fig", ")", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 4, 5, 6, 7 ], [ 14, 15 ], [ 16, 17, 18, 19 ] ]
+  } ],
+  "emptySentences" : [ {
+    "sentence_tokens" : [ "Effects", "of", "subconjunctival", "administration", "of", "anti-high", "mobility", "group", "box", "1", "on", "dry", "eye", "in", "a", "mouse", "model", "of", "Sjogren", "'s", "syndrome", "." ]
+  }, {
+    "sentence_tokens" : [ "Purpose", "." ]
+  }, {
+    "sentence_tokens" : [ "Extracellular", "high", "mobility", "group", "box", "1", "(", "HMGB1", ")", "acts", "as", "a", "damage", "associated", "molecular", "pattern", "molecule", "through", "the", "Toll", "like", "receptor", "to", "promote", "autoreactive", "B", "cell", "activation", ",", "which", "may", "be", "involved", "in", "the", "pathogenesis", "of", "Sjogren", "'s", "syndrome", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "aim", "of", "this", "study", "was", "to", "investigate", "the", "effect", "of", "subconjunctival", "administration", "of", "anti-HMGB1", "on", "dry", "eye", "in", "a", "mouse", "model", "of", "Sjogren", "'s", "syndrome", "." ]
+  }, {
+    "sentence_tokens" : [ "Methods", "." ]
+  }, {
+    "sentence_tokens" : [ "Ten", "weeks-old", "NOD.B10.H2", "b", "mice", "were", "subconjunctivally", "injected", "with", "0.02", "to", "2", "mug", "of", "anti-HMGB1", "antibodies", "or", "PBS", "twice", "a", "week", "for", "two", "consecutive", "weeks", "." ]
+  }, {
+    "sentence_tokens" : [ "Tear", "volume", "and", "corneal", "staining", "scores", "were", "measured", "and", "compared", "between", "before-", "and", "after-treatment", "." ]
+  }, {
+    "sentence_tokens" : [ "Goblet", "cell", "density", "was", "counted", "in", "PAS", "stained", "forniceal", "conjunctiva", "and", "inflammatory", "foci", "score", "(", ">", "50", "cells", "and", "focus", ")", "was", "measured", "in", "extraorbital", "glands", "." ]
+  }, {
+    "sentence_tokens" : [ "Flow", "cytometry", "was", "performed", "to", "evaluate", "the", "changes", "in", "BrdU", "+", "cells", ",", "IL-17-,", "IL-10-,", "or", "IFNgamma", "secreting", "cells", ",", "functional", "B", "cells", ",", "and", "IL-22", "secreting", "innate", "lymphoid", "cells", "(", "ILC3s", ")", "in", "cervical", "lymph", "nodes", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "level", "of", "IL-22", "in", "intraorbital", "glands", "was", "measured", "by", "ELISA", "." ]
+  }, {
+    "sentence_tokens" : [ "Results", "." ]
+  }, {
+    "sentence_tokens" : [ "Goblet", "cell", "density", "was", "increased", "in", "0.2", "mug", "and", "2", "mug", "anti-HMGB1-treated-mice", "with", "marginal", "significance", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "inflammatory", "foci", "score", ",", "and", "the", "number", "of", "BrdU", "+", "cells", ",", "IL-17-,", "IL-10-,", "IFNgamma", "secreting", "cells", ",", "and", "functional", "B", "cells", "did", "not", "significantly", "change", "following", "anti-HMGB1", "treatment", "." ]
+  }, {
+    "sentence_tokens" : [ "Surprisingly", ",", "the", "percentage", "of", "ILC3s", "was", "significantly", "increased", "in", "the", "draining", "lymph", "nodes", "(", "p", "<", "0.05", ")", ",", "and", "the", "expression", "of", "IL-22", "was", "significantly", "increased", "in", "the", "intraorbital", "glands", "(", "p", "<", "0.05", ")", "after", "administration", "of", "2", "mug", "anti-HMGB1", "." ]
+  }, {
+    "sentence_tokens" : [ "Conclusion", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "study", "shows", "that", "subconjunctival", "administration", "of", "anti-HMGB1", "attenuates", "clinical", "manifestations", "of", "dry", "eye", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "improvement", "of", "dry", "eye", "may", "involve", "an", "increase", "of", "ILC3s", ",", "rather", "than", "modulation", "of", "B", "or", "plasma", "cells", ",", "as", "shown", "using", "a", "mouse", "model", "of", "Sjogren", "'s", "syndrome", "." ]
+  }, {
+    "sentence_tokens" : [ "Introduction", "." ]
+  }, {
+    "sentence_tokens" : [ "Sj", "o", "gren", "'", "s", "syndrome", "represents", "one", "of", "the", "most", "devastating", "examples", "of", "autoimmune", "dry", "eye", ",", "which", "is", "involved", "in", "multiple", "pathological", "mechanisms", "and", "causes", "severe", "discomfort", "and", "visual", "disturbance", "." ]
+  }, {
+    "sentence_tokens" : [ "Many", "studies", "have", "shown", "the", "importance", "of", "type", "I", "interferon", "secreted", "by", "plasmacytoid", "dendritic", "cells", ",", "B", "cell", "responses", ",", "extracellular", "high-mobility", "group", "box", "1", "(", "HMGB1", ")", "and", "IL-17", "pathways", "in", "Sj", "o", "gren", "'", "s", "syndrome", "[", "1", "-", "3", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Current", "animal", "studies", "show", "that", "NOD.B10.H2", "mice", "are", "an", "excellent", "model", "of", "primary", "Sj", "o", "gren", "'", "s", "syndrome", ",", "and", "B", "cells", ",", "plasma", "cells", ",", "or", "T", "helper", "17", "(", "Th17", ")", "cells", "are", "involved", "in", "the", "important", "pathogenic", "mechanisms", "in", "this", "mouse", "model", "[", "4", "-", "6", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "HMGB1", "is", "a", "dual-function", "protein", "that", "has", "specific", "roles", "both", "inside", "and", "outside", "cells", "(", "Fig", "1", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "HMGB1", "is", "one", "of", "the", "most", "abundant", "non", "histone", "nuclear", "proteins", "that", "contributes", "to", "chromatin", "stabilization", ",", "and", "contains", "two", "folded", "helical", "DNA", "binding", "motifs", ",", "called", "A", "and", "B", "boxes", "." ]
+  }, {
+    "sentence_tokens" : [ "HMGB1", "has", "three", "conserved", "redox", "sensitive", "cysteines", "(", "C23", ",", "C45", ",", "C106", ")", ",", "two", "located", "at", "positions", "23", "and", "45", "in", "the", "A", "box", "and", "one", "at", "position", "106", "in", "the", "B", "box", "." ]
+  }, {
+    "sentence_tokens" : [ "Modification", "of", "these", "cysteines", "determines", "the", "bioactivity", "of", "extracellular", "HMGB1", "[", "7", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Extracellular", "HMGB1", ",", "which", "is", "passively", "released", "from", "necrotic", "cells", "or", "actively", "secreted", "by", "macrophages", "and", "dendritic", "cells", ",", "is", "a", "crucial", "cytokine", "that", "mediates", "the", "response", "to", "infection", ",", "injury", ",", "and", "inflammation", ",", "including", "autoimmune", "diseases", "such", "as", "Sj", "o", "gren", "'", "s", "syndrome", "[", "2", ",", "3", ",", "8]", "." ]
+  }, {
+    "sentence_tokens" : [ "Necrosis-", "and", "pyroptosis", "induced", "extracellular", "HMGB1", "is", "usually", "in", "a", "disulfide", "bonded", "form", "(", "between", "cysteine", "23", "and", "cysteine", "45", ")", "that", "acts", "as", "a", "damage", "associated", "molecular", "pattern", "(", "DAMP", ")", "molecule", "through", "TLR", "4", ",", "TLR", "2", ",", "RAGE-TLR9", ",", "or", "IL-1R", "to", "promote", "dendritic", "cell", "maturation", "and", "autoreactive", "B", "cell", "activation", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "addition", ",", "extracellular", "HMGB1", "is", "reported", "to", "be", "involved", "in", "the", "activation", "of", "Th17", "cells", "during", "inflammatory", "disease", "[", "13", "]", ",", "and", "may", "also", "be", "involved", "in", "IL-17", "or", "IL-22", "secretion", "in", "innate", "lymphoid", "cells", "(", "ILCs", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "ILCs", "are", "known", "to", "coordinate", "or", "limit", "immune", "responses", "during", "autoimmune", "disease", ",", "depending", "on", "environmental", "factors", "[", "14", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Conversely", ",", "apoptosis", "induced", "extracellular", "HMGB1", ",", "in", "which", "all", "cysteines", "are", "oxidized", ",", "or", "cysteine", "106", "is", "oxidized", ",", "does", "not", "exhibit", "pro", "inflammatory", "or", "chemotactic", "activities", "[", "7", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Innate", "lymphoid", "cells", "(", "ILCs", ")", "have", "emerged", "as", "a", "new", "type", "of", "immune", "cell", "with", "important", "functions", "in", "innate", "and", "adaptive", "immunity", "[", "14", ",", "15", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Like", "natural", "killer", "(", "NK", ")", "cells", ",", "ILCs", "belong", "to", "the", "lymphoid", "lineage", ";", "however", ",", "unlike", "T", "and", "B", "cells", ",", "they", "lack", "antigen-receptors", "(", "T", "cell", "receptor", "or", "B", "cell", "receptor", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "ILCs", "are", "found", "in", "various", "tissues", "including", "the", "mucosa", ",", "lymphoid", "tissue", ",", "liver", ",", "skin", ",", "and", "fat", "." ]
+  }, {
+    "sentence_tokens" : [ "Group", "1", "ILCs", "consist", "of", "conventional", "NK", "cells", "and", "ILCs", "that", "secrete", "T", "helper", "(", "Th", ")", "1-type", "cytokine", "IFN", "gamma", "and", "express", "the", "transcription", "factor", "T-bet", "." ]
+  }, {
+    "sentence_tokens" : [ "ILC3s", "produce", "the", "Th17-type", "cytokine", ",", "IL-17", "or", "IL-22", ",", "and", "express", "the", "transcription", "factor", "ROR-gamma", "t." ]
+  }, {
+    "sentence_tokens" : [ "The", "function", "of", "ILCs", "in", "various", "tissues", "is", "described", "in", "Table", "1", ",", "but", "it", "is", "not", "yet", "fully", "understood", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "intestine", ",", "ILC3s", "are", "known", "to", "promote", "epithelial", "wound", "healing", "and", "maintain", "epithelial", "barrier", "function.In", "Sj", "o", "gren", "'", "s", "syndrome", ",", "the", "conjunctival", ",", "corneal", ",", "and", "lacrimal", "epithelial", "cells", "are", "damaged", "during", "inflammation", ",", "and", "some", "of", "them", "may", "undergo", "necrosis", "to", "release", "extracellular", "HMGB1", "." ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "we", "investigated", "whether", "early", "treatment", "with", "an", "anti-HMGB1", "blocking", "antibody", "could", "(", "1", ")", "improve", "the", "clinical", "manifestations", "of", "dry", "eye", ",", "(", "2", ")", "decrease", "the", "responses", "of", "autoreactive", "B", "cells", "or", "Th17", "cells", ",", "and", "(", "3", ")", "affect", "changes", "in", "ILC3s", "that", "might", "be", "involved", "in", "modification", "of", "epithelial", "wound", "healing", "in", "NOD.B10.H2", "mice", "." ]
+  }, {
+    "sentence_tokens" : [ "Materials", "and", "methods", "." ]
+  }, {
+    "sentence_tokens" : [ "Animals", "." ]
+  }, {
+    "sentence_tokens" : [ "All", "procedures", "used", "in", "this", "study", "strictly", "adhered", "to", "the", "ARVO", "statement", "regarding", "the", "Use", "of", "Animals", "in", "Ophthalmic", "and", "Vision", "Research", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "experimental", "protocol", "was", "approved", "by", "the", "Ethics", "Committee", "at", "Seoul", "National", "University", "Hospital", "Biomedical", "Research", "Institute", "(", "IACUC", "No.", "13", "-", "0162", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Bilateral", "treatment", "was", "justified", "by", "the", "fact", "that", "this", "procedure", "was", "not", "visually", "disabling", "and", "that", "breeding", "of", "NOD.B10.H2", "mice", "was", "limited", ",", "according", "to", "ARVO", "Statement", "for", "the", "Use", "of", "Animals", "in", "Ophthalmic", "and", "Vision", "Research", ",", "and", "was", "approved", "by", "the", "Ethics", "Committee", "." ]
+  }, {
+    "sentence_tokens" : [ "NOD.B10.H2", "mice", "were", "purchased", "from", "Jackson", "Laboratories", "(", "Bar", "Harbor", ",", "ME", ",", "USA", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "All", "mice", "were", "bred", "in", "a", "specific", "pathogen-free", "environment", "and", "maintained", "at", "22", "-", "24", "degrees", "C", ",", "relative", "humidity", "55", "+/-", "5", "%", ",", "with", "alternating", "14/10", "hour", "light", "and", "dark", "cycles", "(", "light-on", "6", "AM", ";", "light-off", "8", "PM", ")", "with", "free", "access", "to", "water", "and", "food", "at", "the", "mouse", "facility", "at", "the", "Biomedical", "Research", "Institute", "of", "Seoul", "National", "University", "Hospital", "." ]
+  }, {
+    "sentence_tokens" : [ "Overall", "health", "was", "monitored", "twice", "a", "week", "(", "weight", "and", "hair", "loss", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Phenol", "red", "thread", "tests", "and", "corneal", "dye", "staining", "were", "performed", "following", "an", "intraperitoneal", "injection", "of", "zoletil", "(", "10", "mg/kg", ")", "and", "xylazine", "(", "14", "mg/kg", ")", ",", "and", "all", "efforts", "were", "made", "to", "minimize", "suffering", "." ]
+  }, {
+    "sentence_tokens" : [ "Euthanasia", "was", "performed", "using", "compressed", "CO", "gas", ",", "according", "to", "the", "American", "Veterinary", "Medical", "Association", "Guidelines", "for", "the", "Euthanasia", "of", "Animals", ":", "2013", "Edition", "." ]
+  }, {
+    "sentence_tokens" : [ "Mouse", "model", "of", "Sjogren", "'s", "syndrome", "." ]
+  }, {
+    "sentence_tokens" : [ "Ten", "week-old", "male", "NOD", "." ]
+  }, {
+    "sentence_tokens" : [ "B10.H2", "mice", "were", "used", "as", "an", "autoimmune", "dry", "eye", "model", ",", "because", "NOD.B10.H2", "mice", "serve", "as", "a", "model", "for", "studying", "primary", "Sj", "o", "gren", "'", "s", "syndrome", "without", "development", "of", "diabetes", "[", "5", ",", "6", ",", "16", ",", "17", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "To", "investigate", "inhibitory", "effect", "of", "triggering", "by", "HMGB1", "in", "early", "stage", "of", "inflammatory", "cascades", ",", "10", "week-old", "mice", "were", "chosen", "based", "on", "previous", "preliminary", "data", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "time", "course", "of", "clinical", "manifestations", "and", "inflammatory", "changes", "in", "the", "draining", "lymph", "nodes", "and", "intraorbital", "glands", "was", "evaluated", "between", "10", "and", "16", "weeks", "in", "BALB/C", "(", "n", "=", "28", ")", ",", "B6", "(", "n", "=", "32", ")", "and", "NOD.B10.H2", "mice", "(", "n", "=", "34", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Clinical", "dry", "eye", "and", "early", "inflammation", "was", "confirmed", "to", "have", "begun", "by", "10", "weeks", "(", "S1", "Fig", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "the", "current", "study", ",", "24", "male", "NOD", "." ]
+  }, {
+    "sentence_tokens" : [ "B10.H2", "mice", "were", "divided", "into", "treatment", "(", "n", "=", "18", ")", "and", "control", "groups", "(", "n", "=", "6", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Anti-HMGB1", "treatment", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "chicken", "anti-HMGB1", "polyclonal", "blocking", "antibody", "(", "product", "number", ":", "326052233", ",", "SHINO-TEST", "Corporation", ",", "Kanagawa", ",", "Japan", ";", "0.02", ",", "0.2", "and", "2", "mu", "g/0.1", "cc", ",", "n", "=", "6", "for", "each", "concentration", ")", "was", "injected", "subconjunctivally", "into", "both", "eyes", "twice", "a", "week", "for", "2", "weeks", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "subconjunctival", "injection", "of", "the", "same", "volume", "of", "PBS", "containing", "0.2", "mu", "g", "chicken", "Ig", "Y", "(", "Product", "Code", ":", "326058471", ";", "SHINO-TEST", "Corporation", ",", "Kanagawa", ",", "Japan", ")", "served", "as", "a", "control", "." ]
+  }, {
+    "sentence_tokens" : [ "Three", "mice", "died", "during", "the", "experiments", "(", "two", "0.02", "mu", "g", "anti-HMGB1-treated", "mice", "and", "one", "0.2", "mu", "g", "anti-HMGB1-treated", "mouse", ")", "probably", "because", "of", "anesthetic", "overdose", "." ]
+  }, {
+    "sentence_tokens" : [ "Thereafter", ",", "we", "reduced", "the", "anesthetic", "dose", "to", "20", "mu", "l.", "BrdU", "proliferation", "analysis", "." ]
+  }, {
+    "sentence_tokens" : [ "To", "evaluate", "proliferative", "changes", "in", "T", "and", "B", "cells", ",", "mice", "were", "given", "0.8", "mg/ml", "BrdU", "(", "BD", "Pharmingen", ",", "San", "Diego", ",", "CA", ")", "in", "their", "drinking", "water", "for", "10", "days", ",", "and", "the", "water", "was", "changed", "every", "two", "days", "." ]
+  }, {
+    "sentence_tokens" : [ "Phenol", "red", "thread", "test", "for", "tear", "volume", "measurement", "." ]
+  }, {
+    "sentence_tokens" : [ "To", "evaluate", "tear", "production", ",", "phenol", "red", "impregnated", "cotton", "threads", "(", "FCI", "Ophthalmics", ",", "Pembrooke", ",", "MA", ",", "USA", ")", "were", "applied", "to", "the", "lateral", "canthus", "for", "60", "seconds", ",", "and", "wetting", "of", "the", "thread", "was", "measured", "in", "millimeters", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "was", "performed", "under", "anesthesia", "with", "zoletil", "(", "10", "mg/kg", ")", "and", "xylazine", "(", "14", "mg/kg", ")", "(", "n", "=", "10", "-", "12", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Twenty-four", "mice", "were", "included", "in", "the", "phenol", "red", "thread", "test", "for", "10", "-", "11", "weeks", ",", "and", "21", "mice", "were", "included", "in", "the", "test", "for", "12", "weeks", "and", "in", "the", "final", "analysis", "after", "sacrifice", "." ]
+  }, {
+    "sentence_tokens" : [ "Corneal", "dye", "staining", "." ]
+  }, {
+    "sentence_tokens" : [ "To", "evaluate", "the", "degree", "of", "corneal", "epithelial", "defects", ",", "one", "drop", "of", "3", "%", "Lissamine", "Green", "B", "(", "Sigma-Aldrich", ",", "St.", "Louis", ",", "MO", ",", "USA", ")", "was", "administered", "to", "the", "inferior", "lateral", "conjunctival", "sac", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "was", "convenient", "because", "there", "was", "no", "need", "for", "cobalt", "light", "excitation", "[", "18", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "corneal", "surface", "was", "observed", "(", "n", "=", "10", "-", "12", ")", ",", "and", "dye", "staining", "of", "the", "cornea", "was", "scored", "in", "a", "blinded", "assay", "as", "follows", ":", "a", "score", "of", "0", "indicated", "no", "punctuate", "staining", ";", "1", "indicated", "less", "than", "one", "third", "of", "the", "cornea", "was", "stained", ";", "2", "indicated", "two", "thirds", "or", "less", "was", "stained", ";", "and", "3", "indicated", "more", "than", "two", "thirds", "was", "stained", "." ]
+  }, {
+    "sentence_tokens" : [ "Twenty-four", "mice", "were", "included", "in", "the", "corneal", "dye", "staining", "test", "for", "10", "-", "11", "weeks", ",", "and", "21", "mice", "were", "included", "in", "the", "test", "for", "12", "weeks", ",", "and", "in", "the", "final", "analysis", "after", "sacrifice", "." ]
+  }, {
+    "sentence_tokens" : [ "Periodic", "acid", "schiff", "(", "PAS", ")", "staining", "for", "identification", "of", "goblet", "cells", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "whole", "eyeball", "including", "the", "superior", "and", "inferior", "forniceal", "conjunctiva", "was", "excised", "and", "fixed", "in", "formalin", "." ]
+  }, {
+    "sentence_tokens" : [ "Tissues", "were", "cut", "into", "4-mu", "m-thick", "sections", "through", "the", "superior", "and", "inferior", "conjunctival", "fornices", ",", "and", "subjected", "to", "PAS", "staining", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "total", "number", "of", "PAS", "stained", "cells", "in", "the", "superior", "and", "inferior", "fornices", "of", "each", "eye", "was", "counted", "by", "two", "observers", "in", "a", "blind", "study", "(", "n", "=", "16", "-", "24", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Cell", "counts", "were", "averaged", "to", "determine", "goblet", "cell", "density", "in", "each", "group", "." ]
+  }, {
+    "sentence_tokens" : [ "Histopathology", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "extraorbital", "glands", "were", "excised", "and", "fixed", "in", "formalin", "." ]
+  }, {
+    "sentence_tokens" : [ "Samples", "were", "cut", "into", "4", "mu", "m", "sections", "and", "subjected", "to", "hematoxylin-eosin", ",", "CD3", "(", "for", "T", "cells", ")", ",", "or", "B220", "staining", "(", "an", "isoform", "of", "CD45", "and", "pan", "B", "cell", "maker", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "CD3", "and", "B220", "immunohistochemical", "staining", ",", "rabbit", "anti-mouse", "CD3", "(", "ab16669", ",", "Abcam", ",", "Cambridge", ",", "MA", ")", "and", "rat", "anti-mouse", "B220", "(", "ab64100", ",", "Abcam", ",", "Cambridge", ",", "MA", ")", "primary", "antibodies", "were", "used", "." ]
+  }, {
+    "sentence_tokens" : [ "Anti-rabbit", "IgG", "HRP", "linked", "antibody", "(", "#", "7074", ",", "Cell", "Signaling", "Technology", ",", "Danvers", ",", "MA", ")", "and", "goat", "anti-rat", "IgG", "H", "&", "L", "(", "HRP", ")", "(", "ab97057", ",", "Abcam", ",", "Cambridge", ",", "MA", ")", "were", "used", "as", "secondary", "antibodies", "for", "CD3", "and", "B220", "staining", ",", "respectively", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "total", "number", "of", "inflammatory", "foci", "was", "counted", "in", "the", "CD3", "stained", "slides", "(", "n", "=", "7", "-", "9", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "score", "of", "1", "was", "given", "when", "the", "focus", "contained", "greater", "than", "50", "CD3", "T", "lymphocytes", "[", "19", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Flow", "cytometry", "." ]
+  }, {
+    "sentence_tokens" : [ "Draining", "cervical", "lymph", "nodes", "were", "minced", "between", "the", "frosted", "ends", "of", "two", "glass", "slides", "in", "RPMI", "media", "(", "WelGENE", ",", "Daegu", ",", "Korea", ")", "containing", "10", "%", "FBS", "and", "1", "%", "penicillin", "--", "streptomycin", "." ]
+  }, {
+    "sentence_tokens" : [ "Cell", "suspensions", "were", "collected", "and", "incubated", "for", "30", "minutes", "at", "4", "degrees", "C", "with", "fluorescein", "conjugated", "anti-mouse", "antibodies", ":", "CD3", "(", "T", "cells", ")", ",", "CD4", "(", "T", "helper", "cells", ",", "monocytes", "and", "dendritic", "cells", ")", ",", "CD8", "(", "cytotoxic", "T", "cells", ",", "natural", "killer", ",", "and", "dendritic", "cells", ")", ",", "CD19", "(", "B", "cells", "and", "follicular", "dendritic", "cells", ")", ",", "B220", "(", "B", "cells", ")", ",", "CD138", "(", "plasma", "cells", ")", ",", "Nkp46", "(", "ILCs", "and", "natural", "killer", "cells", ")", ",", "CD45", "(", "all", "leukocytes", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "IFN", "gamma", ",", "IL-10", ",", "and", "IL-17A", "intracellular", "staining", ",", "cells", "were", "stimulated", "for", "5", "hours", "with", "50", "ng/ml", "phorbol", "myristate", "acetate", "and", "1", "mu", "g/ml", "ionomycin", "in", "the", "presence", "of", "GolgiPlug", "(", "BD", "Pharmingen", ",", "San", "Diego", ",", "CA", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "IL-22", "intracellular", "staining", ",", "cells", "were", "stimulated", "for", "5", "hours", "with", "10", "ng/ml", "IL-1", "beta", "and", "10", "ng/ml", "IL-23", "in", "the", "presence", "of", "GolgiStop", "(", "BD", "Pharmingen", ",", "San", "Diego", ",", "CA", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Non", "specific", "staining", "was", "blocked", "using", "purified", "2.4G2", "Ab", "(", "BD", "Fc", "Block", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Color", "conjugation", "combinations", "and", "gating", "strategies", "were", "as", "follows", ":", "(", "1", ")", "IFN", "gamma", ",", "and", "IL-17A", "secreting", "cells", ";", "CD3-PerCP", "cy5.5", "(", "eBioscience", ",", "145-2C11", ")", ",", "CD4-APC", "(", "eBioscience", ",", "GK1.5", ")", ",", "CD8-PE", "cy7", "(", "eBioscience", ",", "53", "-", "6.7", ")", ",", "B220-APC", "cy7", "(", "eBioscience", ",", "RA3-6B2", ")", ",", "IL-17A-PE", "(", "BD", "Pharmingen", ",", "TC11-18H10", ")", ",", "IFN", "gamma-FITC", "(", "eBioscience", ",", "XMG1.2", ")", ";", "(", "2", ")", "Plasma", "cells", ";", "CD3-PerCP", "cy5.5", "(", "eBioscience", ",", "145-2C11", ")", ",", "B220-APC", "cy7", "(", "eBioscience", ",", "RA3-6B2", ")", ",", "CD138-APC", "(", "BD", "Pharmingen", ",", "281", "-", "2", ")", ";", "(", "3", ")", "IL-10", "secreting", "B", "cells", ";", "CD3-PE", "(", "eBioscience", ",", "145-2C11", ")", ",", "CD19-PerCP", "cy5.5", "(", "eBioscience", ",", "eBio", "1D3", ")", ",", "B220-APC", "cy7", "(", "eBioscience", ",", "RA3-6B2", ")", ",", "IL-10-FITC", "(", "eBioscience", ",", "JES5-16E3", ")", ";", "(", "4", ")", "ILC3s", ";", "CD3-PerCP", "cy5.5", "(", "eBioscience", ",", "145-2C11", ")", ",", "B220-FITC", "(", "eBioscience", ",", "RA3-6B2", ")", ",", "NKp46-APC", "(", "eBioscience", ",", "29A1.4", ")", ",", "CD45-APC", "cy7", "(", "eBioscience", ",", "30-F11", ")", ",", "IL-22-PE", "(", "eBioscience", ",", "1H8PWSR", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Isotype", "controls", "were", "as", "follows", ":", "rat", "IgG2a", ",", "k", "for", "CD138-APC", ";", "rat", "IgG1", ",", "k", "for", "IL-17A-PE", ",", "IFN", "gamma-FITC", "and", "IL-22-PE", ";", "rat", "IgG2b", ",", "k", "for", "IL-10-FITC.Cells", "were", "assayed", "using", "a", "FACSCanto", "flow", "cytometer", "(", "BD", "BioSciences", ",", "Mountain", "View", ",", "CA", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Data", "were", "analyzed", "using", "Flowjo", "software", "(", "Tree", "Star", ",", "Ashland", ",", "OR", ")", "(", "n", "=", "4", "-", "6", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "BrdU", "(", "BD", "Pharmingen", ",", "San", "Diego", ",", "CA", ")", "staining", ",", "a", "BrdU", "FITC", "cell", "cycle", "assay", "was", "performed", "(", "n", "=", "4", "-", "6", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "During", "the", "acquisition", "preview", ",", "gates", "were", "adjusted", "in", "the", "FSC-A", "vs.", "SSC-A", "plot", ",", "and", "the", "DNA", "7-AAD-A", "voltage", "was", "adjusted", "to", "place", "the", "mean", "of", "the", "singlet", "peak", "(", "G0/G1", ")", "at", "50,000", "on", "the", "histogram", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "addition", ",", "cell", "cycle", "gates", "were", "adjusted", "as", "needed", "to", "encompass", "the", "G0/G1", ",", "S", ",", "and", "G2/M", "populations", "(", "S2", "Fig", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "To", "evaluate", "changes", "in", "ILC3s", ",", "cells", "were", "negatively", "gated", "with", "anti-CD3-PerCP", "and", "anti-B220-FITC", "antibodies", ",", "then", "positively", "gated", "with", "anti-CD45-APC", "cy7", "and", "anti-IL-22", "-", "PE", "antibodies", "in", "the", "presence", "of", "anti-Nkp46-APC", "." ]
+  }, {
+    "sentence_tokens" : [ "Subpopulations", "of", "CD3", "B220", "CD45", "Nkp46", "IL-22", "ILC3", "cells", "(", "NCR", "ILC3s", ")", "and", "CD3", "B220", "CD45", "Nkp46", "IL-22", "ILC3s", "cells", "(", "NCR", "ILC3s", ")", "were", "subsequently", "gated", "(", "S2", "Fig", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Fold", "changes", "in", "ILC3", "percentage", "compared", "to", "controls", "were", "measured", "(", "n", "=", "4", "-", "6", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Enzyme", "linked", "immunosorbent", "assay", "." ]
+  }, {
+    "sentence_tokens" : [ "Blood", "(", "800", "mu", "l", "-", "1", "ml", ")", "was", "obtained", "from", "the", "heart", "at", "the", "time", "of", "sacrifice", "." ]
+  }, {
+    "sentence_tokens" : [ "Plasma", "was", "collected", "after", "centrifugation", "at", "2,500", "rpm", "for", "10", "minutes", ",", "and", "used", "to", "measure", "the", "concentration", "of", "mouse", "anti-SSA", "(", "Ro-60", ",", "Signosis", "Inc.", "Santa", "Clara", ",", "CA", ")", "using", "an", "ELISA", "kit", "(", "Number", "EA-5202", ")", "according", "to", "the", "manufacturer", "'", "s", "protocol", "." ]
+  }, {
+    "sentence_tokens" : [ "Anti-SSA", "in", "the", "plasma", "was", "analyzed", "in", "PBS", "treated", "mice", "(", "n", "=", "6", ")", ",", "in", "anti-HMGB1-treated", "mice", "(", "n", "=", "12", ")", ",", "and", "in", "the", "positive", "control", "provided", "with", "the", "kit", "(", "n", "=", "2", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Intraorbital", "glands", "were", "minced", "into", "small", "pieces", ",", "and", "sonicated", "in", "PRO", "PREP", "Protein", "Extraction", "Solution", "(", "Intron", "Biotechnology", ",", "Seongnam", ",", "Korea", ")", "on", "ice", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "supernatant", "was", "collected", "after", "centrifugation", "at", "12,000", "rpm", "for", "20", "minutes", ",", "and", "assayed", "for", "IL-22", "by", "ELISA", ",", "according", "to", "the", "manufacturer", "'", "s", "protocol", "(", "R", "&", "D", "Systems", ",", "Minneapolis", ",", "MN", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Each", "sample", "was", "assayed", "twice", "(", "n", "=", "8", "-", "12", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Statistical", "analysis", "." ]
+  }, {
+    "sentence_tokens" : [ "GraphPad", "Software", "(", "GraphPad", "Prism", ",", "Inc", ".,", "La", "Jolla", ",", "CA", ",", "USA", ")", "was", "used", "for", "statistical", "tests", "." ]
+  }, {
+    "sentence_tokens" : [ "To", "compare", "means", "from", "more", "than", "two", "groups", ",", "data", "were", "analyzed", "using", "the", "Kruskal-Wallis", "test", "." ]
+  }, {
+    "sentence_tokens" : [ "To", "compare", "means", "of", "two", "groups", ",", "data", "were", "analyzed", "using", "the", "Mann-Whitney", "test", "." ]
+  }, {
+    "sentence_tokens" : [ "To", "compare", "changes", "in", "ocular", "staining", "or", "tear", "secretion", "over", "time", "(", "baseline", "vs.", "post-treatment", ")", ",", "which", "can", "be", "observed", "in", "vivo", "in", "living", "animals", ",", "data", "were", "analyzed", "using", "the", "Wilcoxon", "matched-pairs", "signed", "rank", "test", "." ]
+  }, {
+    "sentence_tokens" : [ "Data", "are", "presented", "as", "mean", "+/-", "standard", "error", "(", "SE", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Differences", "were", "considered", "significant", "at", "p", "<", "0.05", "." ]
+  }, {
+    "sentence_tokens" : [ "Results", "." ]
+  }, {
+    "sentence_tokens" : [ "First", ",", "we", "looked", "at", "the", "effect", "of", "anti-HMGB1", "treatment", "on", "the", "clinical", "manifestations", "of", "dry", "eye", "in", "NOD.B10.H2", "mice", "(", "Fig", "2", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "representative", "photos", "in", "panel", "C", "show", "the", "surface", "changes", ",", "and", "the", "ocular", "staining", "score", "was", "significantly", "decreased", "in", "2", "mu", "g", "anti-HMGB1-treated", "mice", "over", "time", ",", "compared", "with", "the", "pre-treatment", "baseline", "level", "(", "Fig", "2A", "and", "2C", ";", "Wilcoxon", "matched-pairs", "signed", "rank", "test", ",", "10", "weeks", "vs.", "11", "weeks", ",", "p", "=", "0.0156", ";", "10", "weeks", "vs.", "12", "weeks", ",", "p", "=", "0.0156", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "score", "was", "also", "decreased", "in", "0.02", "mu", "g", "anti-HMGB1-treated", "mice", "compared", "to", "the", "pre-treatment", "baseline", "score", "(", "Wilcoxon", "matched-pairs", "signed", "rank", "test", ",", "10", "weeks", "vs.", "12", "weeks", ",", "p", "=", "0.0313", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "phenol", "red", "thread", "test", "(", "Fig", "2B", ")", "showed", "that", "tear", "secretion", "was", "significantly", "reduced", "over", "time", "in", "PBS", "treated", "control", "mice", "compared", "to", "the", "baseline", "(", "Wilcoxon", "matched-pairs", "signed", "rank", "test", ",", "10", "weeks", "vs.", "12", "weeks", ",", "p", "=", "0.002", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "was", "expected", "because", "of", "progression", "of", "the", "disease", "." ]
+  }, {
+    "sentence_tokens" : [ "On", "the", "other", "hand", ",", "tear", "secretion", "was", "significantly", "increased", "in", "0.02", "mu", "g", "anti-HMGB1-treated", "mice", "(", "Wilcoxon", "matched-pairs", "signed", "rank", "test", ",", "10", "weeks", "vs.", "11", "weeks", ",", "p", "=", "0.0273", ";", "10", "weeks", "vs.", "12", "weeks", ",", "p", "=", "0.0078", ")", "and", "in", "2", "mu", "g", "anti-HMGB1-treated", "mice", "(", "Wilcoxon", "matched-pairs", "signed", "rank", "test", ",", "10", "weeks", "vs.", "11", "weeks", ",", "p", "=", "0.0005", ";", "10", "weeks", "vs.", "12", "weeks", ",", "p", "=", "0.0342", ")", "compared", "to", "the", "pre-treatment", "baseline", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "0.2", "mu", "g", "anti-HMGB1-treated", "mice", ",", "ocular", "staining", "tended", "to", "be", "diminished", "and", "tear", "secretion", "tended", "to", "be", "increased", ",", "although", "neither", "were", "statistically", "significant", "." ]
+  }, {
+    "sentence_tokens" : [ "Goblet", "cell", "density", "was", "increased", "in", "0.2", "mu", "g", "anti-HMGB1-treated", "(", "Mann-Whitney", "test", ",", "p", "=", "0.0066", "vs.", "PBS", ")", "and", "2", "mu", "g", "anti-HMGB1-treated", "mice", "(", "Mann-Whitney", "test", ",", "p", "=", "0.057", "vs.", "PBS", ";", "marginal", "significance", ")", "2", "weeks", "after", "treatment", "(", "Fig", "3", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Next", ",", "we", "evaluated", "changes", "in", "immunologic", "responses", "in", "the", "extraorbital", "glands", ",", "plasma", ",", "and", "draining", "lymph", "nodes", "2", "weeks", "after", "treatment", "(", "Figs", "4", "and", "5", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "percentage", "and", "number", "of", "BrdU", "CD3", "T", "and", "BrdU", "B220", "B", "cells", "(", "S", "phase", ",", "S2", "Fig", ")", "in", "the", "draining", "lymph", "nodes", "of", "treated", "mice", "were", "not", "significantly", "altered", "compared", "to", "that", "in", "controls", "(", "Fig", "4A", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "effector", "T", "cell", "responses", ",", "the", "percentage", "of", "Th17", "cells", "(", "CD3", "CD4", "IL-17", ")", "and", "Tc17", "cells", "(", "cytotoxic", "T", "cells", "that", "secrete", "IL-17", ";", "CD3", "CD8", "IL-17", ")", "did", "not", "show", "any", "significant", "changes", "(", "Fig", "4B", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "IFN", "gamma-secreting", "T", "cells", "(", "CD3", "CD4", "IFN", "gamma", "or", "CD3", "CD8", "IFN", "gamma", ")", "were", "not", "changed", "following", "treatment", "(", "Fig", "4C", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "functional", "B", "cell", "responses", ",", "no", "significant", "changes", "were", "found", "in", "the", "percentage", "of", "plasma", "cells", "(", "CD3", "B220", "CD138", "cells", ")", "or", "IL-10-secreting", "B", "regulatory", "cells", "(", "CD3", "CD19", "B220", "IL-10", ")", "in", "the", "draining", "lymph", "nodes", "(", "Fig", "5A", "and", "5B", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Levels", "of", "anti-SSA", "were", "not", "significantly", "decreased", "in", "the", "plasma", "(", "Fig", "5C", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "infiltrating", "focus", "of", "CD3", "T", "cells", "was", "very", "similar", "to", "that", "of", "B220", "B", "cells", "(", "S3", "Fig", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Inflammatory", "foci", "scores", "in", "the", "extraorbital", "glands", "were", "not", "different", "among", "the", "groups", "(", "Fig", "5D", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "ILC3s", "are", "known", "to", "be", "involved", "in", "epithelial", "wound", "healing", "via", "secretion", "of", "IL-22", "." ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "we", "investigated", "changes", "in", "ILC3s", "in", "the", "draining", "lymph", "nodes", "2", "weeks", "after", "treatment", "(", "Fig", "6A", "and", "6D", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Fold", "changes", "in", "the", "percentage", "of", "ILC3s", "(", "NCR", "ILC3s", ";", "CD3", "B220", "CD45", "Nkp46", "IL-22", "or", "NCR", "ILC3s", ";", "CD3", "B220", "CD45", "Nkp46", "IL-22", ")", "were", "significantly", "increased", "compared", "to", "controls", "(", "Kruskal-Wallis", "test", ",", "PBS", "vs.", "2", "mu", "g", "anti-HMGB1", ",", "p", "=", "0.025", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "NCR", "ILC3s", "(", "CD3", "B220", "CD45", "Nkp46", "IL-22", ")", "were", "also", "increased", "after", "2", "mu", "g", "anti-HMGB1", "treatment", "(", "Kruskal-Wallis", "test", ",", "PBS", "vs.", "2", "mu", "g", "anti-HMGB1", ",", "p", "=", "0.0142", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "IL-22", "levels", "were", "significantly", "increased", "in", "the", "intraorbital", "glands", "after", "2", "mu", "g", "anti-HMGB1", "treatment", "(", "Kruskal-Wallis", "test", ",", "PBS", "vs.", "2", "mu", "g", "anti-HMGB1", ",", "p", "=", "0.025", ",", "Fig", "6B", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "There", "are", "three", "major", "populations", "of", "IL-22", "secreting", "cells", ",", "namely", "Th22", "cells", ",", "ILC3s", ",", "and", "gamma", "delta", "T", "cells", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "percentage", "of", "CD3", "IL-22", "cells", "was", "not", "different", "among", "the", "groups", ",", "suggesting", "that", "the", "increase", "in", "IL-22", "secretion", "is", "not", "related", "to", "Th22", "or", "gamma", "delta", "T", "cells", ",", "which", "express", "CD3", "(", "Fig", "6C", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Discussion", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "study", "indicates", "that", "subconjunctival", "administration", "of", "anti-HMGB1", "attenuates", "the", "clinical", "manifestations", "of", "dry", "eye", "." ]
+  }, {
+    "sentence_tokens" : [ "Furthermore", ",", "the", "data", "also", "suggest", "that", "the", "improvement", "in", "dry", "eye", "in", "NOD.B10.H2", "mice", "may", "involve", "an", "increase", "in", "IL-22-secreting", "ILC3s", ",", "rather", "than", "modulation", "of", "B", "or", "plasma", "cells.The", "specific", "mechanisms", "that", "initiate", "inflammation", "in", "Sj", "o", "gren", "'", "s", "syndrome", "are", "not", "fully", "understood", ",", "but", "we", "considered", "that", "the", "responses", "of", "reactive", "B", "cells", "and", "plasma", "cells", "that", "secrete", "autoantibodies", "could", "be", "key", "to", "maintaining", "the", "pathological", "condition", "[", "1", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Mouse", "models", "have", "clearly", "demonstrated", "the", "role", "of", "B", "and", "plasma", "cells", "in", "this", "process", "[", "4", ",", "5", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "focused", "on", "extracellular", "HMGB1", "because", "we", "believe", "that", "the", "chronic", "epithelial", "cell", "damage", "to", "the", "cornea", "or", "lacrimal", "glands", "may", "trigger", "the", "cycle", "of", "inflammation", "by", "secreting", "danger", "signals", ",", "such", "as", "HMGB1", "." ]
+  }, {
+    "sentence_tokens" : [ "It", "is", "plausible", "to", "assume", "that", "extracellular", "HMGB1", "acts", "as", "an", "inflammatory", "cytokine", "through", "TLR9", "signaling", "on", "B", "cells", "in", "this", "mouse", "model", "of", "Sj", "o", "gren", "'", "s", "syndrome", "." ]
+  }, {
+    "sentence_tokens" : [ "Considering", "that", "TLR9", "expression", "is", "abundant", "on", "B", "cells", "and", "plasmacytoid", "dendritic", "cells", "[", "20", "]", ",", "we", "proposed", "that", "anti-HMGB1", "treatment", "would", "reduce", "the", "effector", "function", "of", "B", "cells", "in", "these", "mice", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "B", "cell", "proliferation", "and", "the", "proportion", "of", "plasma", "cells", ",", "as", "well", "as", "anti-SSA", "levels", ",", "were", "not", "changed", "in", "the", "draining", "lymph", "nodes", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "did", "not", "try", "to", "administer", "anti-HMGB1", "systemically", "owing", "to", "the", "high", "cost", "." ]
+  }, {
+    "sentence_tokens" : [ "One", "reason", "for", "the", "failure", "to", "observe", "B", "cell", "modulation", "could", "be", "that", "the", "subconjunctival", "injection", "of", "anti-HMGB1", "did", "not", "reach", "the", "spleen", ",", "where", "autoreactive", "B", "cells", "reside", ",", "at", "a", "sufficient", "therapeutic", "level", "to", "affect", "already", "activated", "B", "or", "plasma", "cells", "in", "the", "draining", "lymph", "nodes", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "addition", ",", "B", "cell", "proliferation", "and", "the", "proportion", "of", "plasma", "cells", "were", "not", "affected", "following", "subconjunctival", "anti-HMGB1", "treatment", "in", "the", "spleen", "(", "unpublished", "data", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "It", "is", "also", "possible", "that", "early", "treatment", "with", "anti-HMGB1", "did", "not", "have", "a", "measurable", "effect", "on", "inflammation", "because", "the", "epithelial", "damage", "was", "not", "sufficiently", "severe", "to", "secrete", "enough", "extracellular", "HMGB1", "and", "induce", "inflammation", "." ]
+  }, {
+    "sentence_tokens" : [ "Our", "study", "showed", "that", "anti-HMGB1", "treatment", "did", "not", "affect", "the", "function", "of", "Th17", "cells", "or", "Tc17", "cells", "." ]
+  }, {
+    "sentence_tokens" : [ "Taken", "together", ",", "locally", "administered", "extracellular", "HMGB1", "did", "not", "have", "a", "significant", "effect", "on", "adaptive", "immunity", "associated", "inflammation", "in", "this", "mouse", "model", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "did", "not", "investigate", "changes", "in", "Treg", "cells", "after", "anti-HMGB1", "treatment", ";", "therefore", ",", "further", "evaluation", "will", "be", "required", "to", "explore", "immune", "modulation", "following", "anti-HMGB1", "treatment", "in", "more", "depth.Despite", "the", "fact", "that", "we", "did", "not", "observe", "modulation", "of", "the", "effector", "function", "of", "B", "cells", ",", "the", "clinical", "manifestations", "of", "dry", "eye", "were", "still", "improved", "in", "this", "model", "." ]
+  }, {
+    "sentence_tokens" : [ "An", "increase", "in", "goblet", "cell", "density", "could", "indicate", "a", "protective", "effect", "due", "to", "an", "increase", "in", "tear", "secretion", "and", "a", "recovery", "of", "epithelial", "homeostasis", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "therefore", "investigated", "the", "effect", "of", "IL-22-secreting", "ILC3", "cells", "on", "epithelial", "damage", "in", "the", "dry", "eye", "model", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "is", "based", "on", "the", "fact", "that", "ILC3", "cells", "may", "play", "a", "role", "in", "epithelial", "homeostasis", "and", "wound", "healing", "as", "well", "as", "having", "a", "role", "in", "immune", "modulation", "[", "24", "-", "28", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "ILCs", "are", "found", "mainly", "in", "mucosal", "tissues", ",", "including", "the", "intestinal", "tract", "(", "ILC3", "and", "ILC2", ")", ",", "lungs", "(", "ILC2", ")", ",", "skin", "(", "ILC2", ")", ",", "and", "tissues", "associated", "with", "lymphoid", "structures", "(", "ILC2", ")", "[", "29", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Emerging", "evidence", "shows", "that", "ILCs", "may", "function", "to", "maintain", "immune", "tolerance", ",", "homeostasis", ",", "or", "to", "inversely", "induce", "a", "T", "cell", "response", "by", "presenting", "foreign", "antigens", "or", "by", "secreting", "pro", "inflammatory", "cytokines", ",", "depending", "on", "environmental", "cues", "and", "ILC", "subtype", "[", "14", ",", "15", ",", "28", ",", "30", ",", "31", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "circumstances", "that", "determine", "this", "bidirectional", "role", "of", "ILCs", "(", "immune", "regulation", "versus", "inflammation", "and", "autoimmunity", ")", "are", "still", "unclear", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "protective", "function", "of", "ILC3", "cells", "on", "epithelial", "homeostasis", "through", "IL-22", "is", "well", "established", "in", "the", "gut", ",", "but", "their", "role", "in", "epithelial", "homeostasis", "in", "the", "eye", "has", "not", "been", "investigated", "." ]
+  }, {
+    "sentence_tokens" : [ "Under", "normal", "conditions", ",", "ILC3", "distribution", "is", "scarce", "in", "the", "cervical", "lymph", "nodes", "(", "unpublished", "data", ")", ",", "while", "inflammatory", "conditions", ",", "such", "as", "the", "mouse", "model", "for", "Sj", "o", "gren", "'", "s", "syndrome", "(", "NOD.B10.H2", ")", "or", "an", "experimental", "uveitis", "model", ",", "show", "a", "large", "number", "of", "ILC3", "cells", "in", "the", "cervical", "lymph", "nodes", "(", "unpublished", "data", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "increase", "in", "ILC3", "cells", "in", "the", "draining", "lymph", "nodes", "and", "the", "increased", "IL-22", "expression", "in", "the", "intraorbital", "glands", "after", "anti-HMGB1", "treatment", "suggest", "a", "possible", "role", "for", "ILC3s", "in", "the", "improvement", "of", "dry", "eye", "in", "this", "model", "." ]
+  }, {
+    "sentence_tokens" : [ "Although", "we", "could", "not", "discriminate", "between", "changes", "in", "Th22", "and", "changes", "in", "gamma", "delta", "T", "cells", ",", "the", "fact", "that", "the", "changes", "in", "CD3", "IL-22", "cells", ",", "including", "both", "Th22", "and", "gamma", "delta", "T", "cells", ",", "were", "not", "significant", "suggests", "that", "the", "increase", "in", "IL-22", "may", "be", "caused", "mainly", "by", "ILC3s", "." ]
+  }, {
+    "sentence_tokens" : [ "Our", "study", "showed", "a", "higher", "distribution", "of", "NCR", "ILC3s", "(", "Nkp46", ")", "and", "an", "increase", "in", "NCR", "ILC3s", "(", "Nkp46", ")", "in", "the", "cervical", "lymph", "nodes", "compared", "to", "NCR", "ILC3s", "(", "Nkp46", ")", "following", "treatment", "." ]
+  }, {
+    "sentence_tokens" : [ "These", "lineage", "negative", "NCR", "ILC3s", "(", "CD3", "B220", "Nkp46", "CD45", "IL-22", "cells", ")", "are", "a", "subset", "of", "ILC3s", "known", "to", "effectively", "promote", "epithelial", "wound", "healing", "in", "the", "intestine", "[", "29", ",", "32", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Our", "data", "suggest", "that", "NCR", "ILC3s", ",", "rather", "than", "NCR+", "ILC3s", ",", "may", "function", "during", "dry", "eye.Many", "cytokines", "show", "pleiotropic", "effects", "on", "cellular", "homeostasis", "depending", "on", "the", "concentration", "(", "lower", "or", "higher", "than", "normal", "endogenous", "levels", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Extracellular", "HMGB1", "also", "appears", "to", "have", "diverse", "effects", "on", "different", "cells", ",", "depending", "on", "the", "concentration", "or", "redox", "status", "of", "cysteine", "." ]
+  }, {
+    "sentence_tokens" : [ "Lower", "levels", "of", "endogenous", "HMGB1", "may", "be", "required", "for", "optimal", "wound", "closure", "[", "33", "]", ",", "while", "a", "higher", "level", "of", "HMGB1", "acts", "as", "a", "pro", "inflammatory", "cytokine", "and", "does", "not", "affect", "epithelial", "wound", "healing", "[", "12", ",", "33", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "HMGB1", "with", "disulfide", "bonded-cysteine", "or", "reduced-cysteine", "exhibits", "inflammatory", "activities", "or", "chemotaxis", ",", "while", "HMGB1", "with", "oxidized-cysteine", "exhibits", "tolerogenic", "activities", "[", "7", ",", "34", ",", "35", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "our", "autoimmune", "dry", "eye", "model", ",", "we", "believe", "that", "the", "level", "of", "extracellular", "HMGB1", "is", "higher", "than", "endogenous", "levels", ",", "which", "then", "provokes", "inflammation", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "could", "explain", "why", "blocking", "HMGB1", "improves", "dry", "eye", ",", "although", "the", "exact", "redox", "status", "of", "cysteine", "is", "not", "known.The", "present", "study", "had", "several", "limitations", "." ]
+  }, {
+    "sentence_tokens" : [ "First", ",", "the", "number", "of", "the", "animals", "was", "small", "owing", "to", "limited", "breeding", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "were", "not", "able", "to", "directly", "reveal", "a", "plausible", "mechanism", "for", "how", "anti-HMGB1", "treatment", "could", "cause", "an", "increase", "in", "ILC3", "." ]
+  }, {
+    "sentence_tokens" : [ "Given", "the", "fact", "that", "HMGB1", "can", "interact", "with", "Treg", "cells", "or", "directly", "with", "conventional", "T", "cells", "and", "modulate", "them", "[", "36", "]", ",", "there", "are", "several", "possible", "direct", "or", "indirect", "pathways", "through", "which", "HMGB1", "could", "communicate", "with", "ILCs", ",", "which", "have", "not", "yet", "been", "discovered", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "study", "was", "also", "unable", "to", "provide", "direct", "evidence", "of", "a", "correlation", "between", "the", "increase", "in", "ILC3s", "and", "clinical", "improvement", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "did", "not", "perform", "adoptive", "transfer", "because", "of", "technical", "difficulties", ",", "since", "the", "number", "of", "ILCs", "was", "very", "small", "." ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "further", "studies", "to", "investigate", "the", "exact", "role", "of", "ILCs", "are", "warranted", "." ]
+  }, {
+    "sentence_tokens" : [ "Nevertheless", ",", "to", "our", "knowledge", ",", "this", "is", "the", "first", "study", "to", "report", "an", "improvement", "in", "dry", "eye", "after", "anti-HMGB1", "treatment", "and", "to", "propose", "a", "possible", "role", "for", "ILC3s", "in", "this", "mouse", "model.In", "conclusion", ",", "subconjunctival", "administration", "of", "anti-HMGB1", "improved", "the", "clinical", "manifestations", "of", "dry", "eye", "in", "NOD.B10.H2", "mice", ",", "although", "the", "anti-HMGB1", "treatment", "did", "not", "affect", "B", "or", "plasma", "cells", "." ]
+  } ]
+}

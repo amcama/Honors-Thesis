@@ -1,241 +1,889 @@
-[ {
-  "sentence_tokens" : [ "Therefore", ",", "for", "current", "smokers", ",", "nicotine", "in", "tobacco", "stimulates", "activation", "of", "NF", "-", "kappa", "B", ",", "induces", "inflammatory", "responses", ",", "and", "is", "relevant", "to", "poor", "patient", "prognosis", "(", "Fig.", "5", ")", "." ],
-  "event_indices" : [ 6, 7, 8, 9, 10, 11, 12, 13 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 6, 7 ],
-  "controlled_indices" : [ 12, 13 ],
-  "trigger_indices" : [ 9, 10 ],
-  "rule_name" : "Positive_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Moreover", ",", "a", "previous", "study", "has", "found", "that", "activation", "of", "Rap1", "serves", "to", "attenuate", "ROS", "production", "(", "Remans", "et", "al", ".,", "2004", ")", "and", "there", "is", "a", "potential", "interrelationship", "between", "Rap1", ",", "ROS", ",", "and", "NF", "-", "kappa", "B", "activation", "(", "Moon", "et", "al", ".,", "2011", ")", "." ],
-  "event_indices" : [ 10, 11, 12, 13, 14, 15 ],
-  "type" : "Negative_activation",
-  "polarity" : false,
-  "controller_indices" : [ 10, 11 ],
-  "controlled_indices" : [ 14, 15 ],
-  "trigger_indices" : [ 13, 14 ],
-  "rule_name" : "Negative_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "NF", "-", "kappa", "B", "is", "induced", "by", "ectopic", "expression", "of", "Rap1", ",", "whereas", "its", "activity", "is", "inhibited", "by", "Rap1", "depletion", "(", "Teo", "et", "al", ".,", "2010", ")", "." ],
-  "event_indices" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 8, 9, 10, 11 ],
-  "controlled_indices" : [ 0, 1 ],
-  "trigger_indices" : [ 5, 6 ],
-  "rule_name" : "Positive_activation_syntax_6_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "GADD45G", "has", "been", "reported", "to", "be", "a", "tumor", "suppressor", "in", "multiple", "cancer", "types", "and", "can", "inhibit", "cell", "growth", "and", "induce", "apoptosis", "(", "Ying", "et", "al", ".,", "2005", ")", "." ],
-  "event_indices" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21 ],
-  "type" : "Negative_activation",
-  "polarity" : false,
-  "controller_indices" : [ 0, 1 ],
-  "controlled_indices" : [ 20, 21 ],
-  "trigger_indices" : [ 19, 20 ],
-  "rule_name" : "Positive_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "GADD45G", "has", "been", "reported", "to", "be", "a", "tumor", "suppressor", "in", "multiple", "cancer", "types", "and", "can", "inhibit", "cell", "growth", "and", "induce", "apoptosis", "(", "Ying", "et", "al", ".,", "2005", ")", "." ],
-  "event_indices" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18 ],
-  "type" : "Negative_activation",
-  "polarity" : false,
-  "controller_indices" : [ 0, 1 ],
-  "controlled_indices" : [ 16, 17, 18 ],
-  "trigger_indices" : [ 15, 16 ],
-  "rule_name" : "Negative_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Moreover", ",", "Rap1", "is", "an", "essential", "modulator", "of", "NF", "-", "kappa", "B", "-", "mediated", "pathways", "." ],
-  "event_indices" : [ 2, 3, 4, 5, 6, 7, 8, 9 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 2, 3 ],
-  "controlled_indices" : [ 8, 9 ],
-  "trigger_indices" : [ 3, 4, 5, 6, 7 ],
-  "rule_name" : "Positive_activation_copula_1",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "In", "vitro", "experiments", "in", "human", "umbilical", "vein", "endothelial", "cells", "demonstrate", "that", "nicotine", "stimulates", "cellular", "inflammatory", "responses", "by", "activating", "the", "NF", "-", "kappa", "B", "transcription", "factor", "axis", "by", "a", "second", "messenger", "pathway", "(", "Ueno", "et", "al", ".,", "2006", ")", "." ],
-  "event_indices" : [ 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 11, 12 ],
-  "controlled_indices" : [ 19, 20 ],
-  "trigger_indices" : [ 12, 13 ],
-  "rule_name" : "Positive_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Selective", "inhibition", "of", "RGS20", "expression", "may", "represent", "an", "alternative", "means", "to", "suppress", "metastasis", "(", "Yang", "et", "al", ".,", "2016", ")", "." ],
-  "event_indices" : [ 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 3, 4, 5 ],
-  "controlled_indices" : [ 12, 13 ],
-  "trigger_indices" : [ 11, 12 ],
-  "rule_name" : "Negative_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "12", "-", "O", "-", "tetradecanoylphorbol", "-", "13", "-", "acetate", "(", "TPA", ")", "is", "an", "effective", "cancer", "therapeutic", "reagent", "for", "myelocytic", "leukemia", "patients", "(", "Han", "et", "al", ".,", "1998", ")", ",", "and", "MTURN", "is", "TPA", "-", "responsive", "and", "may", "promote", "both", "leukemic", "and", "normal", "megakaryocyte", "differentiation", "(", "Sun", "et", "al", ".,", "2014", ")", "." ],
-  "event_indices" : [ 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 31, 32 ],
-  "controlled_indices" : [ 43, 44, 45 ],
-  "trigger_indices" : [ 38, 39 ],
-  "rule_name" : "Positive_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "12", "-", "O", "-", "tetradecanoylphorbol", "-", "13", "-", "acetate", "(", "TPA", ")", "is", "an", "effective", "cancer", "therapeutic", "reagent", "for", "myelocytic", "leukemia", "patients", "(", "Han", "et", "al", ".,", "1998", ")", ",", "and", "MTURN", "is", "TPA", "-", "responsive", "and", "may", "promote", "both", "leukemic", "and", "normal", "megakaryocyte", "differentiation", "(", "Sun", "et", "al", ".,", "2014", ")", "." ],
-  "event_indices" : [ 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 31, 32 ],
-  "controlled_indices" : [ 46, 47 ],
-  "trigger_indices" : [ 38, 39 ],
-  "rule_name" : "Positive_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "However", ",", "potential", "interactions", "between", "smoking", "cessation", "and", "epigenetics", "have", "not", "been", "assessed", "." ],
-  "entity_one_indices" : [ 8, 9 ],
-  "entity_two_indices" : [ 5, 6 ]
-}, {
-  "sentence_tokens" : [ "We", "used", "a", "two-stage", "study", "design", "to", "identify", "DNA", "methylation", "smoking", "cessation", "interactions", "that", "affect", "overall", "survival", "for", "early-stage", "NSCLC", "." ],
-  "entity_one_indices" : [ 10, 11 ],
-  "entity_two_indices" : [ 8, 9, 10 ]
-}, {
-  "sentence_tokens" : [ "Histology", "specific", "interactions", "were", "identified", "by", "stratification", "analysis", "in", "lung", "adenocarcinoma", "(", "LUAD", ")", "and", "lung", "squamous", "cell", "carcinoma", "(", "LUSC", ")", "patients", "." ],
-  "entity_one_indices" : [ 16, 17, 18, 19 ],
-  "entity_two_indices" : [ 9, 10, 11 ]
-}, {
-  "sentence_tokens" : [ "Further", ",", "the", "effect", "of", "smoking", "cessation", "on", "early-stage", "LUAD", "survival", "varied", "across", "patients", "with", "different", "methylation", "levels", "of", "cg02268510", "SIPA", "1L3", "." ],
-  "entity_one_indices" : [ 20, 21 ],
-  "entity_two_indices" : [ 5, 6 ]
-}, {
-  "sentence_tokens" : [ "In", "summary", ",", "smoking", "cessation", "benefited", "survival", "of", "LUAD", "patients", "with", "low", "methylation", "at", "cg02268510", "SIPA", "1L3", "." ],
-  "entity_one_indices" : [ 15, 16 ],
-  "entity_two_indices" : [ 3, 4 ]
-}, {
-  "sentence_tokens" : [ "A", "large", "proportion", "of", "lung", "cancer", "cases", "are", "attributed", "to", "smoking", ",", "a", "well", "-", "known", "risk", "factor", "(", "Flanders", "et", "al", ".,", "2003", ")", ",", "and", "smoking", "cessation", "prolongs", "survival", "and", "decreases", "mortality", "of", "lung", "cancer", "patients", "(", "Balduyck", "et", "al", ".,", "2011", ";", "Parsons", "et", "al", ".,", "2010", ")", "." ],
-  "entity_one_indices" : [ 27, 28 ],
-  "entity_two_indices" : [ 10, 11 ]
-}, {
-  "sentence_tokens" : [ "In", "brief", ",", "tumor", "DNA", "was", "extracted", "from", "fresh", "-", "frozen", "tumor", "specimens", "that", "were", "collected", "by", "surgical", "resection", ",", "and", "the", "median", "clinical", "follow", "-", "up", "was", "7.2", "years", "." ],
-  "entity_one_indices" : [ 11, 12 ],
-  "entity_two_indices" : [ 3, 4 ]
-}, {
-  "sentence_tokens" : [ "Level", "1", "HumanMethylation450", "DNA", "methylation", "data", "(", "image", "data", ")", "for", "each", "patient", "were", "downloaded", "on", "October", "1", ",", "2015.2.2", "Quality", "control", "procedures", "." ],
-  "entity_one_indices" : [ 3, 4, 5 ],
-  "entity_two_indices" : [ 0, 1, 2 ]
-}, {
-  "sentence_tokens" : [ "Unqualified", "probes", "were", "excluded", "if", "they", "met", "any", "one", "of", "the", "following", "QC", "criteria", ":", "(", "a", ")", "failed", "detection", "(", "P", ">", "0.05", ")", "in", ">", "5", "%", "samples", ";", "(", "b", ")", "coefficient", "of", "variance", "of", "<", "5", "%", ";", "(", "c", ")", "methylated", "or", "unmethylated", "in", "all", "samples", ";", "(", "d", ")", "common", "single", "nucleotide", "polymorphisms", "located", "in", "probe", "sequence", "or", "10", "-", "bp", "flanking", "regions", ";", "(", "e", ")", "cross", "-", "reactive", "or", "cross", "-", "hybridizing", "probes", "(", "Chen", "et", "al", ".,", "2013", ")", ";", "or", "(", "f", ")", "did", "not", "pass", "QC", "in", "all", "centers", "." ],
-  "entity_one_indices" : [ 96, 97 ],
-  "entity_two_indices" : [ 12, 13 ]
-}, {
-  "sentence_tokens" : [ "Details", "of", "QC", "processes", "are", "described", "in", "Fig.", "S1.2.3", "Gene", "expression", "data", "." ],
-  "entity_one_indices" : [ 9, 10, 11 ],
-  "entity_two_indices" : [ 2, 3 ]
-}, {
-  "sentence_tokens" : [ "For", "robustly", "significant", "histology", "-", "specific", "prognostic", "CpG", "probes", ",", "we", "also", "performed", "genome", "-", "wide", "methylation", "transcription", "analysis", "using", "mRNA", "sequencing", "data", "from", "TCGA", "." ],
-  "entity_one_indices" : [ 24, 25 ],
-  "entity_two_indices" : [ 17, 18 ]
-}, {
-  "sentence_tokens" : [ "The", "correlation", "between", "DNA", "methylation", "and", "gene", "expression", "was", "tested", "using", "a", "linear", "regression", "model", "adjusted", "for", "the", "same", "covariates", "mentioned", "above", "." ],
-  "entity_one_indices" : [ 6, 7, 8 ],
-  "entity_two_indices" : [ 3, 4, 5 ]
-}, {
-  "sentence_tokens" : [ "Additionally", ",", "we", "tested", "the", "association", "between", "gene", "expression", "and", "overall", "survival", "using", "a", "Cox", "proportional", "hazards", "model", "adjusted", "for", "the", "same", "covariates", "." ],
-  "entity_one_indices" : [ 14, 15 ],
-  "entity_two_indices" : [ 7, 8, 9 ]
-}, {
-  "sentence_tokens" : [ "Genes", "involved", "in", "significant", "associations", "with", "both", "methylation", "and", "NSCLC", "survival", "were", "filtered.2.7", "Statistical", "analysis", "." ],
-  "entity_one_indices" : [ 6, 7 ],
-  "entity_two_indices" : [ 6, 7 ]
-}, {
-  "sentence_tokens" : [ "The", "effect", "of", "smoking", "cessation", "varied", "across", "LUAD", "patients", "with", "different", "DNA", "methylation", "levels", "." ],
-  "entity_one_indices" : [ 11, 12, 13 ],
-  "entity_two_indices" : [ 3, 4 ]
-}, {
-  "sentence_tokens" : [ "The", "results", "also", "indicated", "that", "smoking", "cessation", "was", "quite", "urgent", "for", "LUAD", "patients", "with", "low", "methylation", "of", "cg02268510", "." ],
-  "entity_one_indices" : [ 17, 18 ],
-  "entity_two_indices" : [ 5, 6 ]
-}, {
-  "sentence_tokens" : [ "We", "used", "the", "poorest", "-", "prognosis", "group", "(", "current", "smokers", "with", "low", "methylation", ")", "as", "the", "reference", "to", "evaluate", "effect", "of", "elevated", "methylation", "level", ",", "smoking", "cessation", ",", "and", "their", "interaction", "." ],
-  "entity_one_indices" : [ 29, 30 ],
-  "entity_two_indices" : [ 25, 26 ]
-}, {
-  "sentence_tokens" : [ "However", ",", "the", "joint", "effect", "was", "HR", "=", "0.6268", "(", "95", "%", "CI", ":", "0.43", "-", "0.92", ";", "P", "=", "1.84", "x", "10", ")", ",", "which", "was", "greater", "than", "the", "product", "of", "the", "two", "individual", "protective", "effects", "(", "0.5506", "x", "0.5214", "=", "0.2871", ")", "." ],
-  "entity_one_indices" : [ 12, 13 ],
-  "entity_two_indices" : [ 6, 7 ]
-}, {
-  "sentence_tokens" : [ "A", "growing", "body", "of", "research", "has", "reported", "potential", "associations", "of", "DNA", "methylation", "with", "age", "and", "smoking", "(", "Fraga", "and", "Esteller", ",", "2007", ";", "Wan", "et", "al", ".,", "2012", ";", "Zaghlool", "et", "al", ".,", "2015", ")", "." ],
-  "entity_one_indices" : [ 15, 16 ],
-  "entity_two_indices" : [ 10, 11, 12 ]
-}, {
-  "sentence_tokens" : [ "Moreover", ",", "genome", "-", "wide", "methylation", "transcription", "analysis", "revealed", "that", "expression", "of", "633", "genes", "was", "significantly", "correlated", "with", "methylation", "level", "of", "cg02268510", "(", "Fig.", "S5A", ")", "." ],
-  "entity_one_indices" : [ 21, 22 ],
-  "entity_two_indices" : [ 6, 7 ]
-}, {
-  "sentence_tokens" : [ "In", "this", "study", ",", "we", "systematically", "evaluated", "all", "pairwise", "DNA", "methylation", "-", "smoking", "cessation", "interactions", "on", "an", "epigenome", "-", "wide", "scale", "and", "further", "confirmed", "these", "interactions", "in", "an", "independent", "population", "." ],
-  "entity_one_indices" : [ 12, 13 ],
-  "entity_two_indices" : [ 9, 10, 11 ]
-}, {
-  "sentence_tokens" : [ "Our", "results", "show", "that", "the", "effect", "of", "smoking", "cessation", "on", "early", "-", "stage", "LUAD", "patient", "survival", "varies", "with", "methylation", "level", "of", "cg02268510", "." ],
-  "entity_one_indices" : [ 21, 22 ],
-  "entity_two_indices" : [ 7, 8 ]
-}, {
-  "sentence_tokens" : [ "Smoking", "cessation", "only", "benefits", "LUAD", "patients", "with", "low", "methylation", ",", "rather", "than", "medium", "or", "high", "methylation", ",", "of", "cg02268510", "." ],
-  "entity_one_indices" : [ 18, 19 ],
-  "entity_two_indices" : [ 0, 1 ]
-}, {
-  "sentence_tokens" : [ "Further", ",", "there", "is", "an", "antagonistic", "interaction", "between", "elevated", "methylation", "of", "cg02268510", "and", "smoking", "cessation.We", "found", "that", "in", "LUAD", "patients", "with", "low", "methylation", "of", "cg02268510", ",", "current", "smokers", "with", "more", "accumulative", "exposure", "had", "worse", "survival", "than", "former", "smokers", "." ],
-  "entity_one_indices" : [ 24, 25 ],
-  "entity_two_indices" : [ 13, 14 ]
-}, {
-  "sentence_tokens" : [ "The", "effect", "of", "smoking", "cessation", "is", "therefore", "modified", "by", "DNA", "methylation", "level", ",", "indicating", "opportunities", "for", "epi", "-", "drug", "intervention", "due", "to", "the", "inherent", "reversibility", "of", "epigenetic", "events", "(", "Wright", ",", "2013", ")", "." ],
-  "entity_one_indices" : [ 9, 10, 11 ],
-  "entity_two_indices" : [ 3, 4 ]
-}, {
-  "sentence_tokens" : [ "Up", "to", "50", "%", "of", "lung", "cancer", "patients", "are", "estimated", "to", "keep", "smoking", "after", "diagnosis", "or", "to", "frequently", "relapse", "after", "smoking", "cessation", "(", "Park", "et", "al", ".,", "2012", ";", "Walker", "et", "al", ".,", "2006", ")", "." ],
-  "entity_one_indices" : [ 20, 21 ],
-  "entity_two_indices" : [ 12, 13 ]
-}, {
-  "sentence_tokens" : [ "Our", "results", "indicated", "that", "smoking", "cessation", "was", "urgent", "especially", "for", "LUAD", "patients", "with", "low", "methylation", "of", "cg02268510", "." ],
-  "entity_one_indices" : [ 16, 17 ],
-  "entity_two_indices" : [ 4, 5 ]
-}, {
-  "sentence_tokens" : [ "Because", "the", "effect", "of", "smoking", "cessation", "varies", "across", "populations", "with", "different", "methylation", "levels", "of", "cg02268510", ",", "the", "effect", "could", "be", "neutralized", "in", "a", "population", "of", "patients", "with", "mixed", "cg02268510", "methylation", "levels", "." ],
-  "entity_one_indices" : [ 14, 15 ],
-  "entity_two_indices" : [ 4, 5 ]
-}, {
-  "sentence_tokens" : [ "Additionally", ",", "overexpression", "of", "RAP1", "may", "desensitize", "NSCLC", "cells", "to", "cisplatin", ",", "a", "first", "-", "line", "drug", "to", "treat", "NSCLC", "(", "Besse", "et", "al", ".,", "2014", ")", "." ],
-  "entity_one_indices" : [ 10, 11 ],
-  "entity_two_indices" : [ 4, 5 ]
-}, {
-  "sentence_tokens" : [ "Thus", ",", "positive", "feedback", "mechanisms", "might", "exist", "between", "Rap1", "expression", "and", "NF", "-", "kappa", "B", "activation", "(", "Fig.", "5", ")", "." ],
-  "entity_one_indices" : [ 11, 12 ],
-  "entity_two_indices" : [ 8, 9 ]
-}, {
-  "sentence_tokens" : [ "However", ",", "methylation", "of", "cg02268510", "increased", "with", "the", "cumulative", "amount", "of", "smoking", "." ],
-  "entity_one_indices" : [ 11, 12 ],
-  "entity_two_indices" : [ 4, 5 ]
-}, {
-  "sentence_tokens" : [ "It", "may", "be", "an", "adaptive", "defense", "mechanism", "to", "counteract", "the", "increased", "ROS", "production", "that", "superoxide", "dismutase", "enzyme", "levels", "in", "blood", "and", "salivary", "were", "increased", "in", "smokers", "(", "Jenifer", "et", "al", ".,", "2015", ")", "." ],
-  "entity_one_indices" : [ 14, 15 ],
-  "entity_two_indices" : [ 11, 12 ]
-}, {
-  "sentence_tokens" : [ "MTURN", "is", "a", "neural", "progenitor", "differentiation", "regulator", "homolog", "." ],
-  "entity_one_indices" : [ 5, 6 ],
-  "entity_two_indices" : [ 0, 1 ]
-}, {
-  "sentence_tokens" : [ "Third", ",", "our", "study", "included", "a", "large", "sample", "size", "to", "analyze", "DNA", "methylation", "-", "smoking", "cessation", "interactions", "of", "early", "-", "stage", "NSCLC", "prognosis", ",", "providing", "an", "opportunity", "to", "identify", "complex", "associations", "with", "small", "-", "medium", "effect", "size.Despite", "the", "strengths", "of", "our", "study", ",", "we", "acknowledge", "some", "limitations", "." ],
-  "entity_one_indices" : [ 14, 15 ],
-  "entity_two_indices" : [ 11, 12, 13 ]
-}, {
-  "sentence_tokens" : [ "First", ",", "data", "measured", "categorical", "smoking", "cessation", "rather", "than", "smoking", "pack", "-", "years", ",", "which", "may", "render", "less", "power", "in", "the", "study", "." ],
-  "entity_one_indices" : [ 9, 10 ],
-  "entity_two_indices" : [ 5, 6 ]
-} ]
+{
+  "regulations" : [ {
+    "sentence_tokens" : [ "Therefore", ",", "for", "current", "smokers", ",", "nicotine", "in", "tobacco", "stimulates", "activation", "of", "NF", "-", "kappa", "B", ",", "induces", "inflammatory", "responses", ",", "and", "is", "relevant", "to", "poor", "patient", "prognosis", "(", "Fig.", "5", ")", "." ],
+    "event_indices" : [ 6, 7, 8, 9, 10, 11, 12, 13 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 6, 7 ],
+    "controlled_indices" : [ 12, 13 ],
+    "trigger_indices" : [ 9, 10 ],
+    "rule_name" : "Positive_activation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "Moreover", ",", "a", "previous", "study", "has", "found", "that", "activation", "of", "Rap1", "serves", "to", "attenuate", "ROS", "production", "(", "Remans", "et", "al", ".,", "2004", ")", "and", "there", "is", "a", "potential", "interrelationship", "between", "Rap1", ",", "ROS", ",", "and", "NF", "-", "kappa", "B", "activation", "(", "Moon", "et", "al", ".,", "2011", ")", "." ],
+    "event_indices" : [ 10, 11, 12, 13, 14, 15 ],
+    "type" : "Negative_activation",
+    "polarity" : false,
+    "controller_indices" : [ 10, 11 ],
+    "controlled_indices" : [ 14, 15 ],
+    "trigger_indices" : [ 13, 14 ],
+    "rule_name" : "Negative_activation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "NF", "-", "kappa", "B", "is", "induced", "by", "ectopic", "expression", "of", "Rap1", ",", "whereas", "its", "activity", "is", "inhibited", "by", "Rap1", "depletion", "(", "Teo", "et", "al", ".,", "2010", ")", "." ],
+    "event_indices" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 8, 9, 10, 11 ],
+    "controlled_indices" : [ 0, 1 ],
+    "trigger_indices" : [ 5, 6 ],
+    "rule_name" : "Positive_activation_syntax_6_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "GADD45G", "has", "been", "reported", "to", "be", "a", "tumor", "suppressor", "in", "multiple", "cancer", "types", "and", "can", "inhibit", "cell", "growth", "and", "induce", "apoptosis", "(", "Ying", "et", "al", ".,", "2005", ")", "." ],
+    "event_indices" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21 ],
+    "type" : "Negative_activation",
+    "polarity" : false,
+    "controller_indices" : [ 0, 1 ],
+    "controlled_indices" : [ 20, 21 ],
+    "trigger_indices" : [ 19, 20 ],
+    "rule_name" : "Positive_activation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "GADD45G", "has", "been", "reported", "to", "be", "a", "tumor", "suppressor", "in", "multiple", "cancer", "types", "and", "can", "inhibit", "cell", "growth", "and", "induce", "apoptosis", "(", "Ying", "et", "al", ".,", "2005", ")", "." ],
+    "event_indices" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18 ],
+    "type" : "Negative_activation",
+    "polarity" : false,
+    "controller_indices" : [ 0, 1 ],
+    "controlled_indices" : [ 16, 17, 18 ],
+    "trigger_indices" : [ 15, 16 ],
+    "rule_name" : "Negative_activation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "Moreover", ",", "Rap1", "is", "an", "essential", "modulator", "of", "NF", "-", "kappa", "B", "-", "mediated", "pathways", "." ],
+    "event_indices" : [ 2, 3, 4, 5, 6, 7, 8, 9 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 2, 3 ],
+    "controlled_indices" : [ 8, 9 ],
+    "trigger_indices" : [ 3, 4, 5, 6, 7 ],
+    "rule_name" : "Positive_activation_copula_1",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "In", "vitro", "experiments", "in", "human", "umbilical", "vein", "endothelial", "cells", "demonstrate", "that", "nicotine", "stimulates", "cellular", "inflammatory", "responses", "by", "activating", "the", "NF", "-", "kappa", "B", "transcription", "factor", "axis", "by", "a", "second", "messenger", "pathway", "(", "Ueno", "et", "al", ".,", "2006", ")", "." ],
+    "event_indices" : [ 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 11, 12 ],
+    "controlled_indices" : [ 19, 20 ],
+    "trigger_indices" : [ 12, 13 ],
+    "rule_name" : "Positive_activation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "Selective", "inhibition", "of", "RGS20", "expression", "may", "represent", "an", "alternative", "means", "to", "suppress", "metastasis", "(", "Yang", "et", "al", ".,", "2016", ")", "." ],
+    "event_indices" : [ 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 3, 4, 5 ],
+    "controlled_indices" : [ 12, 13 ],
+    "trigger_indices" : [ 11, 12 ],
+    "rule_name" : "Negative_activation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "12", "-", "O", "-", "tetradecanoylphorbol", "-", "13", "-", "acetate", "(", "TPA", ")", "is", "an", "effective", "cancer", "therapeutic", "reagent", "for", "myelocytic", "leukemia", "patients", "(", "Han", "et", "al", ".,", "1998", ")", ",", "and", "MTURN", "is", "TPA", "-", "responsive", "and", "may", "promote", "both", "leukemic", "and", "normal", "megakaryocyte", "differentiation", "(", "Sun", "et", "al", ".,", "2014", ")", "." ],
+    "event_indices" : [ 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 31, 32 ],
+    "controlled_indices" : [ 43, 44, 45 ],
+    "trigger_indices" : [ 38, 39 ],
+    "rule_name" : "Positive_activation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "12", "-", "O", "-", "tetradecanoylphorbol", "-", "13", "-", "acetate", "(", "TPA", ")", "is", "an", "effective", "cancer", "therapeutic", "reagent", "for", "myelocytic", "leukemia", "patients", "(", "Han", "et", "al", ".,", "1998", ")", ",", "and", "MTURN", "is", "TPA", "-", "responsive", "and", "may", "promote", "both", "leukemic", "and", "normal", "megakaryocyte", "differentiation", "(", "Sun", "et", "al", ".,", "2014", ")", "." ],
+    "event_indices" : [ 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 31, 32 ],
+    "controlled_indices" : [ 46, 47 ],
+    "trigger_indices" : [ 38, 39 ],
+    "rule_name" : "Positive_activation_syntax_1_verb",
+    "rule" : null
+  } ],
+  "hardInstances" : [ {
+    "sentence_tokens" : [ "Moreover", ",", "a", "previous", "study", "has", "found", "that", "activation", "of", "Rap1", "serves", "to", "attenuate", "ROS", "production", "(", "Remans", "et", "al", ".,", "2004", ")", "and", "there", "is", "a", "potential", "interrelationship", "between", "Rap1", ",", "ROS", ",", "and", "NF", "-", "kappa", "B", "activation", "(", "Moon", "et", "al", ".,", "2011", ")", "." ],
+    "entities_indices" : [ [ 30, 31 ], [ 32, 33 ], [ 35, 36 ] ]
+  }, {
+    "sentence_tokens" : [ "NF", "-", "kappa", "B", "is", "induced", "by", "ectopic", "expression", "of", "Rap1", ",", "whereas", "its", "activity", "is", "inhibited", "by", "Rap1", "depletion", "(", "Teo", "et", "al", ".,", "2010", ")", "." ],
+    "entities_indices" : [ [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "GADD45G", "has", "been", "reported", "to", "be", "a", "tumor", "suppressor", "in", "multiple", "cancer", "types", "and", "can", "inhibit", "cell", "growth", "and", "induce", "apoptosis", "(", "Ying", "et", "al", ".,", "2005", ")", "." ],
+    "entities_indices" : [ [ 7, 8, 9 ], [ 16, 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "GADD45G", "has", "been", "reported", "to", "be", "a", "tumor", "suppressor", "in", "multiple", "cancer", "types", "and", "can", "inhibit", "cell", "growth", "and", "induce", "apoptosis", "(", "Ying", "et", "al", ".,", "2005", ")", "." ],
+    "entities_indices" : [ [ 7, 8, 9 ], [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "vitro", "experiments", "in", "human", "umbilical", "vein", "endothelial", "cells", "demonstrate", "that", "nicotine", "stimulates", "cellular", "inflammatory", "responses", "by", "activating", "the", "NF", "-", "kappa", "B", "transcription", "factor", "axis", "by", "a", "second", "messenger", "pathway", "(", "Ueno", "et", "al", ".,", "2006", ")", "." ],
+    "entities_indices" : [ [ 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "12", "-", "O", "-", "tetradecanoylphorbol", "-", "13", "-", "acetate", "(", "TPA", ")", "is", "an", "effective", "cancer", "therapeutic", "reagent", "for", "myelocytic", "leukemia", "patients", "(", "Han", "et", "al", ".,", "1998", ")", ",", "and", "MTURN", "is", "TPA", "-", "responsive", "and", "may", "promote", "both", "leukemic", "and", "normal", "megakaryocyte", "differentiation", "(", "Sun", "et", "al", ".,", "2014", ")", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 10, 11 ], [ 19, 20, 21 ], [ 33, 34 ], [ 46, 47 ] ]
+  }, {
+    "sentence_tokens" : [ "12", "-", "O", "-", "tetradecanoylphorbol", "-", "13", "-", "acetate", "(", "TPA", ")", "is", "an", "effective", "cancer", "therapeutic", "reagent", "for", "myelocytic", "leukemia", "patients", "(", "Han", "et", "al", ".,", "1998", ")", ",", "and", "MTURN", "is", "TPA", "-", "responsive", "and", "may", "promote", "both", "leukemic", "and", "normal", "megakaryocyte", "differentiation", "(", "Sun", "et", "al", ".,", "2014", ")", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 10, 11 ], [ 19, 20, 21 ], [ 33, 34 ], [ 43, 44, 45 ] ]
+  } ],
+  "withoutRegulations" : [ {
+    "sentence_tokens" : [ "A", "histology", "-", "stratified", "Cox", "proportional", "hazards", "model", "was", "used", "to", "test", "the", "interaction", "item", ",", "which", "was", "the", "interaction", "effect", "between", "DNA", "methylation", "of", "each", "CpG", "probe", "and", "smoking", "cessation", "(", "CpG", "probe", "x", "smoking", "cessation", ")", "on", "overall", "survival", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 22, 23, 24 ], [ 29, 30 ], [ 35, 36 ] ]
+  }, {
+    "sentence_tokens" : [ "Many", "of", "the", "deleterious", "effects", "of", "smoking", "are", "due", "to", "induction", "of", "inflammatory", "responses", "that", "contribute", "to", "lung", "cancer", "progression", "(", "Crusz", "and", "Balkwill", ",", "2015", ";", "Walser", "et", "al", ".,", "2008", ")", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "there", "was", "no", "significant", "association", "between", "smoking", "cessation", "and", "survival", "in", "LUAD", "patients", "with", "medium", "-", "high", "methylation", "of", "cg02268510", "(", "HR", "=", "1.12", ";", "95", "%", "CI", ":", "0.67", "-", "1.87", ";", "P", "=", "0.665", ";", "HR", "=", "1.29", ";", "95", "%", "CI", ":", "0.80", "-", "2.07", ";", "P", "=", "0.293", ";", "HR", "=", "1.21", ";", "95", "%", "CI", ":", "0.86", "-", "1.70", ";", "P", "=", "0.266", ")", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 23, 24 ], [ 29, 30 ], [ 39, 40 ], [ 45, 46 ], [ 55, 56 ], [ 61, 62 ] ]
+  }, {
+    "sentence_tokens" : [ "SIPA1L3", "methylation", "modifies", "the", "benefit", "of", "smoking", "cessation", "on", "lung", "adenocarcinoma", "survival", ":", "an", "epigenomic", "smoking", "interaction", "analysis", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 6, 7 ], [ 9, 10, 11 ], [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "Third", ",", "our", "study", "included", "a", "large", "sample", "size", "to", "analyze", "DNA", "methylation", "-", "smoking", "cessation", "interactions", "of", "early", "-", "stage", "NSCLC", "prognosis", ",", "providing", "an", "opportunity", "to", "identify", "complex", "associations", "with", "small", "-", "medium", "effect", "size.Despite", "the", "strengths", "of", "our", "study", ",", "we", "acknowledge", "some", "limitations", "." ],
+    "entities_indices" : [ [ 11, 12, 13 ], [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "There", "was", "no", "significant", "association", "between", "methylation", "of", "cg02268510", "and", "age", "(", "beta", "=", "-", "0.01", ";", "P", "=", "0.521", ")", "or", "years", "of", "smoking", "(", "beta", "=", "0.03", ";", "P", "=", "0.210", ")", ",", "but", "pack", "-", "year", "of", "smoking", "(", "beta", "=", "0.02", ";", "P", "=", "3.42", "x", "10", ")", "as", "well", "as", "years", "of", "smoking", "cessation", "(", "beta", "=", "-", "0.06", ";", "P", "=", "5.08", "x", "10", ")", "in", "former", "smoker", "LUAD", "patients", "(", "Fig.", "S4", ")", "." ],
+    "entities_indices" : [ [ 24, 25 ], [ 40, 41 ], [ 57, 58 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "used", "a", "two-stage", "study", "design", "to", "identify", "DNA", "methylation", "smoking", "cessation", "interactions", "that", "affect", "overall", "survival", "for", "early-stage", "NSCLC", "." ],
+    "entities_indices" : [ [ 8, 9, 10 ], [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "study", ",", "we", "systematically", "evaluated", "all", "pairwise", "DNA", "methylation", "-", "smoking", "cessation", "interactions", "on", "an", "epigenome", "-", "wide", "scale", "and", "further", "confirmed", "these", "interactions", "in", "an", "independent", "population", "." ],
+    "entities_indices" : [ [ 9, 10, 11 ], [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "identified", "one", "CpG", "probe", "(", "cg02268510", "SIPA", "1L3", ")", "that", "significantly", "and", "exclusively", "modified", "the", "effect", "of", "smoking", "cessation", "on", "survival", "in", "LUAD", "patients", "[", "hazard", "ratio", "(", "HR", ")", "interaction", "=", "1.12", ";", "95", "%", "confidence", "interval", "(", "CI", ")", ":", "1.07-1.16", ";", "P", "=", "4.30", "x", "10", "-7", "]", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 18, 19 ], [ 26, 27, 28 ], [ 29, 30 ], [ 40, 41 ] ]
+  }, {
+    "sentence_tokens" : [ "It", "may", "be", "an", "adaptive", "defense", "mechanism", "to", "counteract", "the", "increased", "ROS", "production", "that", "superoxide", "dismutase", "enzyme", "levels", "in", "blood", "and", "salivary", "were", "increased", "in", "smokers", "(", "Jenifer", "et", "al", ".,", "2015", ")", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "Thus", ",", "we", "likely", "underestimated", "the", "benefits", "of", "smoking", "cessation", "." ],
+    "entities_indices" : [ [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "Progression", "of", "complex", "diseases", ",", "such", "as", "cancer", ",", "results", "from", "interactions", "between", "clinical", ",", "environmental", ",", "genetic", ",", "and", "epigenetic", "factors", "(", "Lacombe", "et", "al", ".,", "2016", ";", "Mcnerney", "et", "al", ".,", "2017", ")", "." ],
+    "entities_indices" : [ [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "summary", ",", "smoking", "cessation", "benefited", "survival", "of", "LUAD", "patients", "with", "low", "methylation", "at", "cg02268510", "SIPA", "1L3", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "These", "results", "have", "implications", "for", "not", "only", "smoking", "cessation", "after", "diagnosis", ",", "but", "also", "possible", "methylation", "-", "specific", "drug", "targeting", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "the", "joint", "effect", "was", "HR", "=", "0.6268", "(", "95", "%", "CI", ":", "0.43", "-", "0.92", ";", "P", "=", "1.84", "x", "10", ")", ",", "which", "was", "greater", "than", "the", "product", "of", "the", "two", "individual", "protective", "effects", "(", "0.5506", "x", "0.5214", "=", "0.2871", ")", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "RZ", ",", "SM", ",", "TF", ",", "MMB", ",", "AK", ",", "MP", ",", "JS", ",", "AH", ",", "ME", ",", "AS", ",", "and", "LS", "contributed", "to", "data", "collection", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 2, 3 ], [ 4, 5 ], [ 6, 7 ], [ 8, 9 ], [ 10, 11 ], [ 14, 15 ], [ 16, 17 ], [ 18, 19 ], [ 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "large", "proportion", "of", "lung", "cancer", "cases", "are", "attributed", "to", "smoking", ",", "a", "well", "-", "known", "risk", "factor", "(", "Flanders", "et", "al", ".,", "2003", ")", ",", "and", "smoking", "cessation", "prolongs", "survival", "and", "decreases", "mortality", "of", "lung", "cancer", "patients", "(", "Balduyck", "et", "al", ".,", "2011", ";", "Parsons", "et", "al", ".,", "2010", ")", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 27, 28 ] ]
+  }, {
+    "sentence_tokens" : [ "Tumor", "tissues", "obtained", "during", "surgery", "were", "snap", "-", "frozen", "in", "liquid", "nitrogen", "and", "stored", "at", "-", "80", "degrees", "C", "until", "DNA", "isolation", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 6, 7 ], [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "Further", "histology", "-", "stratified", "analysis", "showed", "that", "cg02268510", "is", "a", "LUAD", "-", "specific", "CpG", "probe", "that", "interacts", "with", "smoking", "cessation", "to", "affect", "patient", "survival", "in", "the", "discovery", "phase", "(", "HR", "=", "1.10", ";", "95", "%", "CI", ":", "1.05", "-", "1.16", ";", "P", "=", "2.95", "x", "10", ")", ",", "the", "validation", "phase", "(", "HR", "=", "1.17", ";", "95", "%", "CI", ":", "1.02", "-", "1.35", ";", "P", "=", "0.0255", ")", ",", "and", "the", "combined", "data", "(", "HR", "=", "1.12", ";", "95", "%", "CI", ":", "1.07", "-", "1.16", ";", "P", "=", "4.30", "x", "10", ")", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 18, 19 ], [ 29, 30 ], [ 35, 36 ], [ 52, 53 ], [ 58, 59 ], [ 74, 75 ], [ 80, 81 ] ]
+  }, {
+    "sentence_tokens" : [ "As", "reported", ",", "smoking", "increases", "reactive", "oxygen", "species", "(", "ROS", ")", "production", "and", "is", "a", "significant", "source", "of", "oxidative", "stress", "(", "Athanasios", "et", "al", ".,", "2013", ")", ",", "but", "in", "vivo", ",", "there", "is", "a", "variety", "of", "antioxidant", "defense", "mechanisms", "existed", "to", "counteract", "the", "detrimental", "effects", "of", "ROS", "by", "regulating", "the", "production", "of", "free", "radicals", "and", "their", "metabolites", "(", "Deponte", ",", "2013", ";", "He", "et", "al", ".,", "2017", ")", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 5, 6, 7, 8 ], [ 9, 10 ], [ 47, 48 ] ]
+  }, {
+    "sentence_tokens" : [ "Unqualified", "probes", "were", "excluded", "if", "they", "met", "any", "one", "of", "the", "following", "QC", "criteria", ":", "(", "a", ")", "failed", "detection", "(", "P", ">", "0.05", ")", "in", ">", "5", "%", "samples", ";", "(", "b", ")", "coefficient", "of", "variance", "of", "<", "5", "%", ";", "(", "c", ")", "methylated", "or", "unmethylated", "in", "all", "samples", ";", "(", "d", ")", "common", "single", "nucleotide", "polymorphisms", "located", "in", "probe", "sequence", "or", "10", "-", "bp", "flanking", "regions", ";", "(", "e", ")", "cross", "-", "reactive", "or", "cross", "-", "hybridizing", "probes", "(", "Chen", "et", "al", ".,", "2013", ")", ";", "or", "(", "f", ")", "did", "not", "pass", "QC", "in", "all", "centers", "." ],
+    "entities_indices" : [ [ 12, 13 ], [ 96, 97 ] ]
+  }, {
+    "sentence_tokens" : [ "Tumor", "purity", "was", "included", "as", "an", "additional", "covariate", "in", "the", "Cox", "regression", "model", "for", "sensitivity", "analysis.2.6", "Genome-wide", "methylation", "transcription", "analysis", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 10, 11 ], [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "results", "also", "indicated", "that", "smoking", "cessation", "was", "quite", "urgent", "for", "LUAD", "patients", "with", "low", "methylation", "of", "cg02268510", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "To", "our", "knowledge", ",", "this", "is", "the", "first", "study", "with", "a", "large", "sample", "size", "to", "investigate", "interactions", "between", "DNA", "methylation", "and", "smoking", "behavior", "on", "lung", "cancer", "survival", ",", "and", "it", "provides", "new", "evidence", "to", "account", "for", "the", "missing", "heritability", "of", "complex", "diseases", "(", "Trerotola", "et", "al", ".,", "2015", ")", "." ],
+    "entities_indices" : [ [ 18, 19, 20 ], [ 21, 22 ], [ 41, 42 ] ]
+  }, {
+    "sentence_tokens" : [ "Continuous", "variables", "were", "summarized", "as", "mean", "+/-", "standard", "deviation", "(", "SD", ")", ",", "and", "categorized", "variables", "were", "described", "by", "frequency", "(", "n", ")", "and", "proportion", "(", "%", ")", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "terms", "of", "cg02268510", "and", "smoking", "cessation", "interaction", ",", "keeping", "smoking", "was", "associated", "with", "poor", "prognosis", "only", "in", "LUAD", "patients", "with", "low", "methylation", ",", "rather", "than", "medium", "or", "high", "methylation", ",", "possibly", "because", "high", "activation", "of", "both", "Rap1", "and", "NF", "-", "kappa", "B", "may", "only", "occur", "in", "patients", "with", "low", "methylation.We", "also", "found", "that", "methylation", "level", "of", "cg02268510", "increased", "along", "with", "long", "pack", "-", "year", "of", "smoking", ",", "but", "decreased", "with", "long", "years", "of", "smoking", "cessation", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 10, 11 ], [ 37, 38 ], [ 39, 40 ], [ 57, 58 ], [ 66, 67 ], [ 74, 75 ] ]
+  }, {
+    "sentence_tokens" : [ "Details", "of", "QC", "processes", "are", "described", "in", "Fig.", "S1.2.3", "Gene", "expression", "data", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 9, 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "Thus", ",", "the", "traditional", "marginal", "test", "for", "association", "between", "smoking", "cessation", "and", "cancer", "survival", "inherently", "loses", "statistical", "power", "to", "report", "significant", "findings", "due", "to", "complex", "association", "patterns", "." ],
+    "entities_indices" : [ [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "SIPA1L3", ",", "the", "gene", "in", "which", "cg02268510", "is", "located", ",", "encodes", "GTPase", "-", "activating", "proteins", "(", "GAPs", ")", "specific", "for", "the", "GTP", "-", "binding", "protein", "Ras", "-", "associated", "protein", "-", "1", "(", "RAP1", ")", ",", "which", "is", "implicated", "in", "regulation", "of", "cell", "adhesion", ",", "cell", "polarity", ",", "and", "cytoskeletal", "organization", "(", "Kooistra", "et", "al", ".,", "2007", ")", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 6, 7 ], [ 11, 12 ], [ 16, 17 ], [ 21, 22 ], [ 25, 26 ], [ 32, 33 ], [ 39, 40, 41, 42, 43 ], [ 44, 45, 46 ] ]
+  }, {
+    "sentence_tokens" : [ "Further", ",", "because", "cg02268510", "maps", "to", "SIPA1L3", ",", "the", "association", "between", "cg02268510", "and", "SIPA1L3", "expression", "was", "evaluated", "using", "the", "TCGA", "dataset", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 6, 7 ], [ 11, 12 ], [ 13, 14 ], [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "Smoking", "cessation", "prolongs", "survival", "and", "decreases", "mortality", "of", "patients", "with", "non-small-cell", "lung", "cancer", "(", "NSCLC", ")", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "performed", "QC", "procedures", "above", "in", "each", "center", "separately", "and", "then", "merged", "all", "data", "together", "before", "association", "analysis", "." ],
+    "entities_indices" : [ [ 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "observed", "a", "significant", "association", "between", "cg02268510", "and", "SIPA1L3", "expression", "(", "beta", "=", "-", "0.02", ";", "P", "=", "0.015", ")", "in", "LUAD", "patients", "(", "Fig.", "4", ")", ",", "indicating", "that", "cg02268510", "cis", "-", "regulates", "gene", "expression", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 8, 9 ], [ 30, 31 ], [ 34, 35, 36 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "observed", "significant", "heterogeneity", "of", "smoking", "cessation", "effect", "across", "the", "three", "groups", "(", "P", "=", "0.014", ";", "Fig.", "2B", ")", ",", "and", "Kaplan", "-", "Meier", "curves", "confirmed", "these", "results", "(", "Fig.", "2C", ")", "." ],
+    "entities_indices" : [ [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "Epigenome", "-", "wide", "DNA", "methylation", "data", "composed", "of", "four", "study", "cohorts", "containing", "lung", "adenocarcinoma", "(", "LUAD", ")", "and", "lung", "squamous", "cell", "carcinoma", "(", "LUSC", ")", "cases", "were", "used", "for", "discovery", ",", "and", "the", "findings", "were", "independently", "validated", "in", "The", "Cancer", "Genome", "Atlas", "(", "TCGA", ")", "data.2", "Materials", "and", "methods", "." ],
+    "entities_indices" : [ [ 3, 4, 5 ], [ 12, 13, 14 ], [ 19, 20, 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "Briefly", ",", "all", "patients", "were", "recruited", "at", "Massachusetts", "General", "Hospital", "(", "MGH", ")", "from", "1992", "to", "present", "and", "had", "newly", "diagnosed", ",", "histologically", "confirmed", "primary", "NSCLC", "." ],
+    "entities_indices" : [ [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "model", "was", "adjusted", "for", "age", ",", "sex", ",", "smoking", "cessation", ",", "clinical", "stage", ",", "and", "study", "center", "." ],
+    "entities_indices" : [ [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "Our", "results", "suggest", "that", "low", "methylation", "at", "cg02268510", "might", "promote", "SIPA1L3", "expression", ",", "further", "leading", "to", "Rap1", "activation", "and", "resulting", "in", "poor", "prognosis", "(", "Fig.", "5", ")", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 10, 11 ], [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "Its", "high", "expression", "is", "significantly", "associated", "with", "progression", "and", "prognosis", "of", "triple", "-", "negative", "breast", "cancer", "(", "Li", "et", "al", ".,", "2017", ")", "." ],
+    "entities_indices" : [ [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "site", ",", "cg02268510", ",", "is", "located", "in", "signal", "-", "induced", "proliferation", "-", "associated", "1", "-", "like", "3", "(", "SIPA1L3", ")", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 11, 12 ], [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "Level", "3", "gene", "quantification", "data", "were", "downloaded", "from", "the", "TCGA", "data", "portal", "(", "https://tcga-data.nci.nih.gov;", "now", "hosted", "at", "https://portal.gdc.cancer.gov", ")", "and", "were", "further", "checked", "for", "quality", "." ],
+    "entities_indices" : [ [ 0, 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "interaction", "P", "-", "value", "was", "still", "significant", "but", "slightly", "inflated", "due", "to", "(", "a", ")", "the", "smaller", "sample", "size", "(", "51", "%", "of", "original", ")", "of", "the", "sensitivity", "analysis", ",", "which", "was", "only", "performed", "in", "TCGA", ";", "and", "(", "b", ")", "low", "tumor", "purity", "(", "~", "60", "%", ")", "for", "NSCLC", "samples", "in", "TCGA", "due", "to", "mixed", "cell", "types", "(", "Zheng", "et", "al", ".,", "2017", ")", "." ],
+    "entities_indices" : [ [ 43, 44 ] ]
+  }, {
+    "sentence_tokens" : [ "GADD45G", "is", "a", "member", "of", "the", "GADD45", "family", ",", "which", "plays", "an", "essential", "role", "in", "cellular", "stress", "response", ",", "survival", ",", "senescence", ",", "and", "apoptosis", "regulation", "(", "Liebermann", "et", "al", ".,", "2011", ")", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 6, 7 ], [ 16, 17, 18 ], [ 21, 22 ], [ 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "Histology", "specific", "interactions", "were", "identified", "by", "stratification", "analysis", "in", "lung", "adenocarcinoma", "(", "LUAD", ")", "and", "lung", "squamous", "cell", "carcinoma", "(", "LUSC", ")", "patients", "." ],
+    "entities_indices" : [ [ 9, 10, 11 ], [ 16, 17, 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "RZ", ",", "LLai", ",", "YW", ",", "and", "FC", "contributed", "to", "the", "study", "design", "." ],
+    "entities_indices" : [ [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "Level", "1", "HumanMethylation450", "DNA", "methylation", "data", "(", "image", "data", ")", "for", "each", "patient", "were", "downloaded", "on", "October", "1", ",", "2015.2.2", "Quality", "control", "procedures", "." ],
+    "entities_indices" : [ [ 0, 1, 2 ], [ 3, 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "Nicotine", "protects", "NSCLC", "cells", "against", "chemotherapy", "-", "induced", "apoptosis", "and", "serum", "deprivation", "-", "induced", "apoptosis", "through", "NF", "-", "kappa", "B", ",", "and", "NF", "-", "kappa", "B", "activity", "is", "also", "directly", "stimulated", "by", "nicotine", "(", "Anto", "et", "al", ".,", "2002", ";", "Tsurutani", "et", "al", ".,", "2005", ")", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 8, 9 ], [ 14, 15 ], [ 16, 17 ], [ 22, 23 ], [ 32, 33 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "combined", "dataset", ",", "the", "effect", "of", "smoking", "cessation", "was", "HR", "=", "0.5506", "(", "95", "%", "CI", ":", "0.36", "-", "0.84", ";", "P", "=", "5.62", "x", "10", ")", "and", "the", "effect", "of", "medium", "-", "high", "methylation", "of", "cg02268510", "was", "HR", "=", "0.5214", "(", "95", "%", "CI", ":", "0.34", "-", "0.81", ";", "P", "=", "3.48", "x", "10", ")", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 11, 12 ], [ 17, 18 ], [ 38, 39 ], [ 40, 41 ], [ 46, 47 ] ]
+  }, {
+    "sentence_tokens" : [ "Further", ",", "there", "is", "an", "antagonistic", "interaction", "between", "elevated", "methylation", "of", "cg02268510", "and", "smoking", "cessation.We", "found", "that", "in", "LUAD", "patients", "with", "low", "methylation", "of", "cg02268510", ",", "current", "smokers", "with", "more", "accumulative", "exposure", "had", "worse", "survival", "than", "former", "smokers", "." ],
+    "entities_indices" : [ [ 13, 14 ], [ 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "Due", "to", "the", "complex", "tumor", "microenvironment", "--", "including", "noncancerous", "components", ",", "which", "might", "alter", "analysis", "of", "tumor", "samples", "(", "Aran", "et", "al", ".,", "2015", ")", "--", "we", "assessed", "tumor", "purity", "with", "InfiniumPurify", "(", "Zhang", "et", "al", ".,", "2015", ")", "using", "methylation", "array", "data", "from", "TCGA", "samples", "." ],
+    "entities_indices" : [ [ 4, 5, 6 ], [ 16, 17 ], [ 28, 29 ] ]
+  }, {
+    "sentence_tokens" : [ "Financial", "support", "and", "study", "supervision", "were", "provided", "by", "RZ", ",", "FC", ",", "and", "DCC", "." ],
+    "entities_indices" : [ [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "Thus", ",", "there", "was", "a", "modification", "effect", "of", "cg02268510", "on", "the", "association", "between", "smoking", "cessation", "and", "survival.After", "including", "tumor", "purity", "as", "an", "additional", "covariate", "in", "sensitivity", "analysis", ",", "DNA", "methylation", "at", "cg02268510", "retained", "a", "significant", "interaction", "with", "smoking", "cessation", "on", "LUAD", "survival", "(", "HR", "=", "1.18", ";", "95", "%", "CI", ":", "1.02", "-", "1.36", ";", "P", "=", "0.024", ")", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 13, 14 ], [ 18, 19 ], [ 28, 29, 30 ], [ 37, 38 ], [ 43, 44 ], [ 49, 50 ] ]
+  }, {
+    "sentence_tokens" : [ "Moreover", ",", "there", "was", "an", "antagonistic", "interaction", "between", "elevated", "methylation", "of", "cg02268510", "SIPA", "1L3", "and", "smoking", "cessation", "(", "HR", "interaction", "=", "2.1835", ";", "95", "%", "CI", ":", "1.27-3.74", ";", "P", "=", "4.46", "x", "10", "-3", ")", "." ],
+    "entities_indices" : [ [ 12, 13 ], [ 15, 16 ], [ 18, 19 ], [ 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "On", "the", "other", "hand", ",", "reduced", "methylation", "of", "cg02268510", "might", "strengthen", "the", "protective", "effect", "of", "smoking", "cessation", "on", "survival.Many", "studies", "have", "reported", "significant", "associations", "between", "smoking", "cessation", "and", "overall", "survival", "(", "Koshiaris", "et", "al", ".,", "2017", ";", "Nia", "et", "al", ".,", "2005", ")", ",", "while", "other", "studies", "have", "reported", "negative", "results", "(", "Baser", "et", "al", ".,", "2006", ";", "Parsons", "et", "al", ".,", "2010", ")", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 15, 16 ], [ 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "study", "protocol", "was", "approved", "by", "the", "Institutional", "Review", "Boards", "at", "Harvard", "School", "of", "Public", "Health", "and", "MGH.2.1.2", "Spain", "." ],
+    "entities_indices" : [ [ 17, 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "SIPA1L3", "is", "a", "member", "of", "the", "SPA1", "family", "of", "RapGAPs", ",", "which", "play", "a", "crucial", "role", "in", "spatiotemporal", "control", "of", "Rap1", "activation", "in", "cells", "(", "Mochizuki", "et", "al", ".,", "2001", ")", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 6, 7 ], [ 9, 10 ], [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "CpG", "probes", "with", "interaction", "FDR", "-", "q", "<=", "0.05", "were", "replicated", "in", "the", "validation", "phase", "using", "the", "TCGA", "dataset", "." ],
+    "entities_indices" : [ [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "Our", "results", "indicated", "that", "smoking", "cessation", "was", "urgent", "especially", "for", "LUAD", "patients", "with", "low", "methylation", "of", "cg02268510", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "Current", "smokers", "were", "defined", "as", "those", "who", "were", "smoking", "within", "1", "year", "of", "diagnosis", "." ],
+    "entities_indices" : [ [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "encoded", "the", "variable", "smoking", "cessation", "as", "'", "yes", "'", "for", "former", "smokers", "and", "'", "no", "'", "for", "current", "smokers", "." ],
+    "entities_indices" : [ [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "As", "presented", "in", "Fig.", "5", ",", "low", "methylation", "and", "keeping", "smoking", "resulted", "in", "the", "worst", "prognosis", ",", "which", "might", "be", "due", "to", "the", "positive", "feedback", "in", "Rap1", "and", "NF", "-", "kappa", "B." ],
+    "entities_indices" : [ [ 10, 11 ], [ 26, 27 ], [ 28, 29 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "Norway", "cohort", "consisted", "of", "116", "LUAD", "patients", "with", "operable", "lung", "cancer", "tumors", "who", "were", "seen", "at", "Oslo", "University", "Hospital", ",", "Rikshospitalet", ",", "Norway", ",", "in", "2006", "-", "2011", "(", "Bjaan", "ae", "s", "et", "al", ".,", "2016", ")", "." ],
+    "entities_indices" : [ [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "Indeed", ",", "differentiation", "therapy", "by", "forced", "differentiation", "of", "cancer", "cells", "has", "been", "successful", "in", "curing", "acute", "promyeloid", "leukemia", "(", "Chen", "et", "al", ".,", "2011", ")", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 6, 7 ], [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "methylation", "of", "cg02268510", "increased", "with", "the", "cumulative", "amount", "of", "smoking", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "XD", ",", "JH", ",", "DY", ",", "CC", ",", "LLin", ",", "YZ", ",", "HH", ",", "SS", ",", "LW", ",", "XC", ",", "YG", ",", "and", "LLiu", "revised", "the", "manuscript", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 2, 3 ], [ 4, 5 ], [ 6, 7 ], [ 8, 9 ], [ 10, 11 ], [ 12, 13 ], [ 14, 15 ], [ 16, 17 ], [ 18, 19 ], [ 20, 21 ], [ 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "DNA", "methylation", ",", "a", "reversible", "epigenetic", "modification", ",", "regulates", "gene", "expression", "and", "provides", "potential", "cancer", "biomarkers", "and", "therapeutic", "targets", "(", "Egger", "et", "al", ".,", "2004", ";", "Feinberg", "and", "Tycko", ",", "2004", ")", ",", "including", "for", "non", "-", "small", "-", "cell", "lung", "cancer", "(", "NSCLC", ")", "(", "Guo", "et", "al", ".,", "2018", ";", "Shen", "et", "al", ".,", "2018", ";", "Wei", "et", "al", ".,", "2018", ")", "." ],
+    "entities_indices" : [ [ 0, 1, 2 ], [ 9, 10, 11 ], [ 46, 47 ] ]
+  }, {
+    "sentence_tokens" : [ "Methylation", "signals", "were", "further", "processed", "for", "quantile", "normalization", ",", "design", "bias", "correction", "for", "type", "I", "and", "II", "probes", ",", "and", "batch", "effect", "adjustment", "using", "ComBat", "correction", "(", "Marabita", "et", "al", ".,", "2013", ")", "." ],
+    "entities_indices" : [ [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "Moreover", ",", "genome", "-", "wide", "methylation", "transcription", "analysis", "revealed", "that", "expression", "of", "633", "genes", "was", "significantly", "correlated", "with", "methylation", "level", "of", "cg02268510", "(", "Fig.", "S5A", ")", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "study", ",", "we", "hypothesized", "that", "epigenetic", "and", "smoking", "cessation", "interactions", "may", "affect", "NSCLC", "survival", "." ],
+    "entities_indices" : [ [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "Hazard", "ratio", "(", "HR", ")", "and", "95", "%", "confidence", "interval", "(", "CI", ")", "were", "described", "per", "1", "%", "methylation", "increment", "." ],
+    "entities_indices" : [ [ 0, 1, 2 ], [ 3, 4 ], [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "Smoking", "cessation", "only", "benefited", "LUAD", "patients", "with", "low", "methylation", "(", "HR", "=", "0.53", ";", "95", "%", "CI", ":", "0.34-0.82", ";", "P", "=", "4.61", "x", "10", "-3", ")", "rather", "than", "medium", "or", "high", "methylation", "(", "HR", "=", "1.21", ";", "95", "%", "CI", ":", "0.86-1.70", ";", "P", "=", "0.266", ")", "of", "cg02268510", "SIPA", "1L3", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 10, 11 ], [ 16, 17 ], [ 34, 35 ], [ 40, 41 ], [ 50, 51 ] ]
+  }, {
+    "sentence_tokens" : [ "DNA", "methylation", "was", "profiled", "using", "Infinium", "HumanMethylation450", "BeadChips", "(", "Illumina", "Inc", ".,", "San", "Diego", ",", "CA", ",", "USA", ")", "for", "all", "patients", "." ],
+    "entities_indices" : [ [ 0, 1, 2 ], [ 12, 13 ], [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "Tumor", "DNA", "was", "collected", "from", "early", "-", "stage", "lung", "cancer", "patients", "who", "underwent", "an", "operation", "at", "the", "Skane", "University", "Hospital", ",", "Lund", ",", "Sweden", "(", "Karlsson", "et", "al", ".,", "2014", ")", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "MTURN", "is", "a", "neural", "progenitor", "differentiation", "regulator", "homolog", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "Second", ",", "smoking", "cessation", "was", "collected", "at", "the", "time", "of", "diagnosis", "and", "was", "not", "reassessed", "during", "follow", "-", "up", "." ],
+    "entities_indices" : [ [ 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "we", "also", "tested", "the", "association", "between", "methylation", "of", "cg02268510", "and", "age", ",", "as", "well", "as", "smoking", "-", "related", "variables", ":", "pack", "-", "year", "of", "smoking", ",", "years", "of", "smoking", ",", "and", "years", "of", "smoking", "cessation", "using", "a", "linear", "regression", "model", "adjusted", "for", "age", ",", "sex", ",", "clinical", "stage", ",", "and", "study", "centers", "." ],
+    "entities_indices" : [ [ 17, 18 ], [ 26, 27 ], [ 30, 31 ], [ 35, 36 ] ]
+  }, {
+    "sentence_tokens" : [ "Finally", ",", "CpG", "probes", "with", "a", "significant", "interaction", "with", "smoking", "cessation", "in", "both", "phases", "were", "identified", "as", "histology", "-", "specific", "probes.2.5", "Sensitivity", "analysis", "for", "significant", "CpG", "probes", "." ],
+    "entities_indices" : [ [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "histology", "stratified", "Cox", "proportional", "hazards", "model", "adjusted", "for", "age", ",", "sex", ",", "clinical", "stage", ",", "and", "study", "center", "was", "used", "to", "test", "DNA", "methylation", "smoking", "cessation", "interaction", "terms", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 23, 24, 25 ], [ 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "To", "better", "illustrate", "the", "interaction", "pattern", "between", "DNA", "methylation", "and", "smoking", "cessation", ",", "patients", "were", "categorized", "into", "low", ",", "medium", ",", "and", "high", "groups", "based", "on", "tertiles", "of", "cg02268510", "methylation", "." ],
+    "entities_indices" : [ [ 7, 8, 9 ], [ 10, 11 ], [ 28, 29 ] ]
+  }, {
+    "sentence_tokens" : [ "These", "results", "also", "indicated", "that", "LUAD", "patients", "who", "did", "not", "quit", "smoking", "(", "current", "smokers", ")", "had", "the", "poorest", "prognosis", "if", "their", "methylation", "of", "cg02268510", "was", "in", "a", "low", "level", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 21, 22 ], [ 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "Activation", "of", "NF", "-", "kappa", "B", ",", "one", "of", "the", "most", "investigated", "transcription", "factors", ",", "controls", "multiple", "cellular", "processes", "in", "cancer", ",", "including", "inflammation", ",", "transformation", ",", "proliferation", ",", "angiogenesis", ",", "invasion", ",", "metastasis", ",", "chemoresistance", ",", "and", "radioresistance", "(", "Chaturvedi", "et", "al", ".,", "2010", ")", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 12, 13 ], [ 23, 24 ], [ 27, 28 ], [ 29, 30 ], [ 31, 32 ], [ 33, 34 ] ]
+  }, {
+    "sentence_tokens" : [ "Gene", "expression", "data", "were", "extracted", "and", "log2", "-", "transformed", "before", "analysis.2.4", "Epigenome-wide", "DNA", "methylation", "smoking", "cessation", "interaction", "analysis", "." ],
+    "entities_indices" : [ [ 0, 1, 2 ], [ 12, 13, 14 ], [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "But", "further", "functional", "studies", "are", "warranted", "to", "elucidate", "the", "mechanism", "of", "cg02268510", "and", "smoking", "cessation", "interaction", "on", "LUAD", "survival.Meanwhile", ",", "we", "observed", "that", "some", "genes", "trans", "-", "regulated", "by", "cg02268510", "are", "involved", "in", "DNA", "damage", "response", "and", "cell", "growth", "(", "GADD45G", ")", "(", "Guo", "et", "al", ".,", "2013", ")", ",", "immune", "cell", "functions", "(", "MTURN", ")", "(", "Sun", "et", "al", ".,", "2014", ")", ",", "tumor", "cell", "migration", "[", "regulator", "of", "G", "protein", "signaling", "20", "(", "RGS20", ")", "]", "(", "Yang", "et", "al", ".,", "2016", ")", ",", "apoptosis", "(", "RELL1", "and", "RIPK2", ")", "(", "Chin", "et", "al", ".,", "2002", ";", "Cusick", "et", "al", ".,", "2010", ")", ",", "and", "innate", "and", "adaptive", "immunity", "(", "RIPK2", ")", "(", "Jaafar", "et", "al", ".,", "2018", ")", "." ],
+    "entities_indices" : [ [ 13, 14 ], [ 29, 30 ], [ 33, 34, 35, 36 ], [ 37, 38, 39 ], [ 40, 41 ], [ 43, 44 ], [ 54, 55 ], [ 57, 58 ], [ 68, 69, 70, 71, 72, 73, 74 ], [ 75, 76 ], [ 86, 87 ], [ 88, 89 ], [ 90, 91 ], [ 109, 110, 111 ], [ 112, 113 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "used", "the", "poorest", "-", "prognosis", "group", "(", "current", "smokers", "with", "low", "methylation", ")", "as", "the", "reference", "to", "evaluate", "effect", "of", "elevated", "methylation", "level", ",", "smoking", "cessation", ",", "and", "their", "interaction", "." ],
+    "entities_indices" : [ [ 25, 26 ], [ 29, 30 ] ]
+  }, {
+    "sentence_tokens" : [ "Rap1", "plays", "many", "roles", "during", "cell", "invasion", "and", "metastasis", "in", "different", "cancers", "(", "Zhang", "et", "al", ".,", "2017", ")", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 6, 7 ], [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "potential", "interactions", "between", "smoking", "cessation", "and", "epigenetics", "have", "not", "been", "assessed", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "correlation", "between", "DNA", "methylation", "and", "gene", "expression", "was", "tested", "using", "a", "linear", "regression", "model", "adjusted", "for", "the", "same", "covariates", "mentioned", "above", "." ],
+    "entities_indices" : [ [ 3, 4, 5 ], [ 6, 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "Though", "there", "is", "a", "lack", "of", "explicit", "evidence", "of", "relevance", "between", "these", "genes", "and", "smoking", ",", "what", "we", "found", "may", "inspire", "functional", "studies", "of", "these", "potential", "genes", "and", "further", "help", "to", "complete", "a", "picture", "of", "the", "mechanism", "pathway", "of", "cg02268510", "and", "smoking", "cessation", "interaction", "on", "LUAD", "survival.Our", "study", "has", "some", "significant", "strengths", "." ],
+    "entities_indices" : [ [ 14, 15 ], [ 29, 30 ], [ 41, 42 ] ]
+  }, {
+    "sentence_tokens" : [ "Data", "were", "harmonized", "from", "five", "international", "study", "centers", ",", "which", "have", "been", "previously", "described", "(", "Guo", "et", "al", ".,", "2018", ";", "Shen", "et", "al", ".,", "2018", ";", "Wei", "et", "al", ".,", "2018", ";", "Zhang", "et", "al", ".,", "2019", ")", "." ],
+    "entities_indices" : [ [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "Similarly", ",", "LUAD", "patients", "with", "high", "MTURN", "expression", "had", "favorable", "survival", "in", "our", "study", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "growing", "body", "of", "research", "has", "reported", "potential", "associations", "of", "DNA", "methylation", "with", "age", "and", "smoking", "(", "Fraga", "and", "Esteller", ",", "2007", ";", "Wan", "et", "al", ".,", "2012", ";", "Zaghlool", "et", "al", ".,", "2015", ")", "." ],
+    "entities_indices" : [ [ 10, 11, 12 ], [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "Smoking", "cessation", "only", "benefits", "LUAD", "patients", "with", "low", "methylation", ",", "rather", "than", "medium", "or", "high", "methylation", ",", "of", "cg02268510", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "Furthermore", ",", "levels", "of", "Rap1", "are", "positively", "regulated", "by", "NF", "-", "kappa", "B", ",", "and", "human", "breast", "cancers", "with", "NF", "-", "kappa", "B", "hyperactivity", "show", "elevated", "levels", "of", "cytoplasmic", "Rap1", "(", "Teo", "et", "al", ".,", "2010", ")", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 9, 10 ], [ 19, 20 ], [ 29, 30 ], [ 31, 32, 33, 34, 35, 36 ] ]
+  }, {
+    "sentence_tokens" : [ "TCGA", "mRNA", "sequencing", "data", "processing", "and", "QC", "were", "done", "by", "the", "TCGA", "workgroup", "." ],
+    "entities_indices" : [ [ 0, 1, 2 ], [ 6, 7 ], [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "But", ",", "high", "methylation", "of", "cg02268510", "resulted", "in", "low", "SIPA1L3", "expression", "that", "was", "hard", "to", "active", "Rap1", "and", "NF", "-", "kappa", "B", ",", "and", "then", "might", "weaken", "the", "harmful", "effect", "of", "smoking", ",", "which", "also", "indicated", "an", "antagonistic", "effect", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 9, 10 ], [ 16, 17 ], [ 18, 19 ], [ 31, 32 ] ]
+  }, {
+    "sentence_tokens" : [ "As", "presented", "in", "Fig.", "2A", ",", "with", "decreased", "methylation", "level", "of", "cg02268510", ",", "there", "was", "an", "elevated", "benefit", "effect", "size", "of", "smoking", "cessation", "on", "LUAD", "survival", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 21, 22 ], [ 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "epigenome", "-", "wide", "DNA", "methylation", "-", "smoking", "cessation", "interaction", "analysis", "of", "early", "-", "stage", "NSCLC", "identified", "one", "LUAD", "-", "specific", "CpG", "probe", ",", "cg02268510", ",", "which", "could", "significantly", "modify", "effects", "of", "smoking", "cessation", "on", "lung", "cancer", "survival", "." ],
+    "entities_indices" : [ [ 4, 5, 6 ], [ 7, 8 ], [ 24, 25 ], [ 32, 33 ] ]
+  }, {
+    "sentence_tokens" : [ "Up", "to", "50", "%", "of", "lung", "cancer", "patients", "are", "estimated", "to", "keep", "smoking", "after", "diagnosis", "or", "to", "frequently", "relapse", "after", "smoking", "cessation", "(", "Park", "et", "al", ".,", "2012", ";", "Walker", "et", "al", ".,", "2006", ")", "." ],
+    "entities_indices" : [ [ 12, 13 ], [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "Further", ",", "the", "effect", "of", "smoking", "cessation", "on", "early-stage", "LUAD", "survival", "varied", "across", "patients", "with", "different", "methylation", "levels", "of", "cg02268510", "SIPA", "1L3", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "Third", ",", "the", "association", "between", "cg02268510", "and", "expression", "of", "several", "genes", "requires", "more", "biological", "evidence", ",", "though", "methylation", "is", "believed", "to", "play", "a", "crucial", "role", "in", "regulating", "gene", "expression", "(", "Bird", ",", "2007", ")", "and", "further", "influence", "disease", "gene", "function", "(", "Sch", "u", "beler", ",", "2015", ")", ",", "cell", "differentiation", ",", "or", "reprogramming", "(", "Khavari", "et", "al", ".,", "2010", ")", "." ],
+    "entities_indices" : [ [ 27, 28, 29 ], [ 41, 42 ], [ 48, 49, 50 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "brief", ",", "tumor", "DNA", "was", "extracted", "from", "fresh", "-", "frozen", "tumor", "specimens", "that", "were", "collected", "by", "surgical", "resection", ",", "and", "the", "median", "clinical", "follow", "-", "up", "was", "7.2", "years", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "effect", "of", "smoking", "cessation", "varied", "across", "LUAD", "patients", "with", "different", "DNA", "methylation", "levels", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 11, 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "After", "QC", ",", "epigenome", "-", "wide", "DNA", "methylation", "data", "including", "311", "891", "CpG", "sites", "from", "1092", "tumor", "samples", "of", "early", "-", "stage", "(", "stage", "I", "-", "II", ")", "NSCLC", "patients", "were", "retained", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 6, 7, 8 ], [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "DNA", "was", "extracted", "from", "tumor", "specimens", "that", "were", "evaluated", "by", "an", "MGH", "pathologist", "for", "amount", "(", "tumor", "cellularity", ">", "70", "%", ")", "and", "quality", "of", "tumor", "cells", "and", "histologically", "classified", "using", "World", "Health", "Organization", "criteria", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 11, 12 ], [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "Patients", "with", "high", "GADD45G", "expression", "had", "a", "better", "prognosis", "in", "our", "study", "." ],
+    "entities_indices" : [ [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "Raw", "image", "data", "were", "imported", "into", "GenomeStudio", "Methylation", "Module", "V1.8", "(", "Illumina", "Inc.", ")", "to", "calculate", "methylation", "signals", "and", "to", "perform", "normalization", ",", "background", "subtraction", ",", "and", "quality", "control", "(", "QC", ")", "." ],
+    "entities_indices" : [ [ 30, 31 ] ]
+  }, {
+    "sentence_tokens" : [ "Smoking", "-", "related", "characteristics", "of", "former", "and", "current", "smokers", "in", "early", "-", "stage", "LUAD", "are", "described", "in", "Table", "S3", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "First", ",", "data", "measured", "categorical", "smoking", "cessation", "rather", "than", "smoking", "pack", "-", "years", ",", "which", "may", "render", "less", "power", "in", "the", "study", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "Furthermore", ",", "as", "a", "potential", "mechanistic", "link", "between", "cigarette", "smoking", "and", "disease", ",", "DNA", "methylation", "changes", "can", "result", "from", "various", "environmental", "exposures", "and", "may", "explain", "part", "of", "the", "association", "between", "smoking", "and", "cancer", "recurrence", "or", "mortality", "(", "Lee", "and", "Pausova", ",", "2013", ";", "Shui", "et", "al", ".,", "2016", ")", "." ],
+    "entities_indices" : [ [ 9, 10 ], [ 13, 14, 15 ], [ 30, 31 ], [ 33, 34 ] ]
+  }, {
+    "sentence_tokens" : [ "Among", "them", ",", "expression", "of", "only", "seven", "genes", "was", "significantly", "associated", "with", "overall", "survival", ":", "growth", "arrest", "and", "DNA", "damage", "-", "inducible", "gamma", "(", "GADD45G", ")", ",", "maturin", "(", "MTURN", ")", ",", "TMEM200B", ",", "RGS20", ",", "RELT", "-", "like", "1", "(", "RELL1", ")", ",", "PGM2", ",", "and", "receptor", "-", "interacting", "serine/threonine", "kinase", "2", "(", "RIPK2", ";", "Fig.", "S5B", "-", "H", ")", ".4", "Discussion", "." ],
+    "entities_indices" : [ [ 18, 19, 20 ], [ 24, 25 ], [ 27, 28 ], [ 29, 30 ], [ 32, 33 ], [ 34, 35 ], [ 36, 37, 38, 39, 40 ], [ 41, 42 ], [ 44, 45 ], [ 50, 51, 52, 53 ], [ 54, 55 ] ]
+  }, {
+    "sentence_tokens" : [ "Additionally", ",", "we", "tested", "the", "association", "between", "gene", "expression", "and", "overall", "survival", "using", "a", "Cox", "proportional", "hazards", "model", "adjusted", "for", "the", "same", "covariates", "." ],
+    "entities_indices" : [ [ 7, 8, 9 ], [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "First", ",", "this", "is", "the", "first", "study", "to", "investigate", "the", "interaction", "between", "DNA", "methylation", "and", "smoking", "cessation", "on", "lung", "cancer", "survival", "on", "an", "epigenome", "-", "wide", "scale", ",", "which", "provides", "new", "evidence", "to", "account", "for", "the", "missing", "heritability", "of", "complex", "diseases", "(", "Trerotola", "et", "al", ".,", "2015", ")", "." ],
+    "entities_indices" : [ [ 12, 13, 14 ], [ 15, 16 ], [ 40, 41 ] ]
+  }, {
+    "sentence_tokens" : [ "Thus", ",", "positive", "feedback", "mechanisms", "might", "exist", "between", "Rap1", "expression", "and", "NF", "-", "kappa", "B", "activation", "(", "Fig.", "5", ")", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "RZ", ",", "LLai", ",", "and", "YW", "performed", "statistical", "analysis", "and", "interpretation", "and", "drafted", "the", "manuscript", "." ],
+    "entities_indices" : [ [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "Smoking", "cessation", "benefited", "survival", "of", "LUAD", "patients", "with", "low", "methylation", "at", "cg02268510", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "addition", ",", "we", "evaluated", "the", "joint", "effect", "of", "CpG", "methylation", "level", "(", "medium", "-", "high", "vs", "low", ")", "and", "smoking", "cessation", "(", "Yes", "vs", "No", ")", "on", "LUAD", "survival", "(", "Table", "2", ")", "." ],
+    "entities_indices" : [ [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "Here", ",", "we", "conducted", "an", "epigenome-wide", "interaction", "analysis", "between", "DNA", "methylation", "and", "smoking", "cessation", "on", "NSCLC", "survival", "." ],
+    "entities_indices" : [ [ 9, 10, 11 ], [ 12, 13 ], [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "effect", "of", "smoking", "cessation", "is", "therefore", "modified", "by", "DNA", "methylation", "level", ",", "indicating", "opportunities", "for", "epi", "-", "drug", "intervention", "due", "to", "the", "inherent", "reversibility", "of", "epigenetic", "events", "(", "Wright", ",", "2013", ")", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 9, 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "Additionally", ",", "overexpression", "of", "RAP1", "may", "desensitize", "NSCLC", "cells", "to", "cisplatin", ",", "a", "first", "-", "line", "drug", "to", "treat", "NSCLC", "(", "Besse", "et", "al", ".,", "2014", ")", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "robustly", "significant", "histology", "-", "specific", "prognostic", "CpG", "probes", ",", "we", "also", "performed", "genome", "-", "wide", "methylation", "transcription", "analysis", "using", "mRNA", "sequencing", "data", "from", "TCGA", "." ],
+    "entities_indices" : [ [ 17, 18 ], [ 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "Moreover", ",", "fixed", "-", "effect", "meta", "-", "analysis", "of", "five", "centers", "also", "remained", "significant", "(", "HR", "=", "1.09", ";", "95", "%", "CI", ":", "1.05", "-", "1.13", ";", "P", "=", "6.66", "x", "10", ";", "Fig.", "S3", ")", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 15, 16 ], [ 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "Because", "the", "effect", "of", "smoking", "cessation", "varies", "across", "populations", "with", "different", "methylation", "levels", "of", "cg02268510", ",", "the", "effect", "could", "be", "neutralized", "in", "a", "population", "of", "patients", "with", "mixed", "cg02268510", "methylation", "levels", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "results", "have", "implications", "for", "not", "only", "smoking", "cessation", "after", "diagnosis", ",", "but", "also", "possible", "methylation", "specific", "drug", "targeting", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "RGS20", "is", "suggested", "to", "promote", "cellular", "characteristics", "that", "contribute", "to", "metastasis", ",", "including", "enhanced", "cell", "aggregation", ",", "motility", ",", "and", "invasion", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 10, 11 ], [ 14, 15, 16 ], [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "Expression", "and", "mRNA", "sequencing", "data", "were", "available", "for", "281", "LUAD", "and", "277", "LUSC", "patients", "of", "the", "TCGA", "dataset", "(", "Table", "S1", ")", "." ],
+    "entities_indices" : [ [ 16, 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "There", "were", "37", "%", "and", "27", "%", "current", "smokers", "in", "the", "discovery", "and", "validation", "phases", ",", "respectively.In", "the", "discovery", "phase", ",", "15", "methylation", "-", "smoking", "cessation", "interactions", "were", "identified", "with", "FDR", "-", "q", "<=", "0.05", "(", "Fig.", "S2A", ")", ",", "and", "the", "Manhattan", "plot", "also", "showed", "the", "results", "for", "main", "effect", "additionally", "(", "Fig.", "S2B", ")", "." ],
+    "entities_indices" : [ [ 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "joint", "effect", "of", "two", "protective", "factors", "was", "less", "protective", "than", "expected", ",", "indicating", "an", "antagonistic", "interaction", "between", "elevated", "methylation", "of", "cg02268510", "and", "smoking", "cessation", "(", "HR", "=", "2.1835", ";", "95", "%", "CI", ":", "1.27", "-", "3.74", ";", "P", "=", "4.46", "x", "10", ")", "." ],
+    "entities_indices" : [ [ 23, 24 ], [ 26, 27 ], [ 32, 33 ] ]
+  }, {
+    "sentence_tokens" : [ "Our", "results", "show", "that", "the", "effect", "of", "smoking", "cessation", "on", "early", "-", "stage", "LUAD", "patient", "survival", "varies", "with", "methylation", "level", "of", "cg02268510", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "Genes", "involved", "in", "significant", "associations", "with", "both", "methylation", "and", "NSCLC", "survival", "were", "filtered.2.7", "Statistical", "analysis", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "Smoking", "cessation", "only", "benefited", "LUAD", "patients", "with", "low", "methylation", "of", "cg02268510", "(", "HR", "=", "0.53", ";", "95", "%", "CI", ":", "0.34", "-", "0.82", ";", "P", "=", "4.61", "x", "10", ")", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 12, 13 ], [ 18, 19 ] ]
+  } ],
+  "emptySentences" : [ {
+    "sentence_tokens" : [ "SIPA1L3", "methylation", "modifies", "the", "benefit", "of", "smoking", "cessation", "on", "lung", "adenocarcinoma", "survival", ":", "an", "epigenomic", "smoking", "interaction", "analysis", "." ]
+  }, {
+    "sentence_tokens" : [ "Smoking", "cessation", "prolongs", "survival", "and", "decreases", "mortality", "of", "patients", "with", "non-small-cell", "lung", "cancer", "(", "NSCLC", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "addition", ",", "epigenetic", "alterations", "of", "some", "genes", "are", "associated", "with", "survival", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "potential", "interactions", "between", "smoking", "cessation", "and", "epigenetics", "have", "not", "been", "assessed", "." ]
+  }, {
+    "sentence_tokens" : [ "Here", ",", "we", "conducted", "an", "epigenome-wide", "interaction", "analysis", "between", "DNA", "methylation", "and", "smoking", "cessation", "on", "NSCLC", "survival", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "used", "a", "two-stage", "study", "design", "to", "identify", "DNA", "methylation", "smoking", "cessation", "interactions", "that", "affect", "overall", "survival", "for", "early-stage", "NSCLC", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "discovery", "phase", "contained", "NSCLC", "patients", "from", "Harvard", ",", "Spain", ",", "Norway", ",", "and", "Sweden", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "histology", "stratified", "Cox", "proportional", "hazards", "model", "adjusted", "for", "age", ",", "sex", ",", "clinical", "stage", ",", "and", "study", "center", "was", "used", "to", "test", "DNA", "methylation", "smoking", "cessation", "interaction", "terms", "." ]
+  }, {
+    "sentence_tokens" : [ "Interactions", "with", "false", "discovery", "rate-q", "<", "=", "0.05", "were", "further", "confirmed", "in", "a", "validation", "phase", "using", "The", "Cancer", "Genome", "Atlas", "database", "." ]
+  }, {
+    "sentence_tokens" : [ "Histology", "specific", "interactions", "were", "identified", "by", "stratification", "analysis", "in", "lung", "adenocarcinoma", "(", "LUAD", ")", "and", "lung", "squamous", "cell", "carcinoma", "(", "LUSC", ")", "patients", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "identified", "one", "CpG", "probe", "(", "cg02268510", "SIPA", "1L3", ")", "that", "significantly", "and", "exclusively", "modified", "the", "effect", "of", "smoking", "cessation", "on", "survival", "in", "LUAD", "patients", "[", "hazard", "ratio", "(", "HR", ")", "interaction", "=", "1.12", ";", "95", "%", "confidence", "interval", "(", "CI", ")", ":", "1.07-1.16", ";", "P", "=", "4.30", "x", "10", "-7", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Further", ",", "the", "effect", "of", "smoking", "cessation", "on", "early-stage", "LUAD", "survival", "varied", "across", "patients", "with", "different", "methylation", "levels", "of", "cg02268510", "SIPA", "1L3", "." ]
+  }, {
+    "sentence_tokens" : [ "Smoking", "cessation", "only", "benefited", "LUAD", "patients", "with", "low", "methylation", "(", "HR", "=", "0.53", ";", "95", "%", "CI", ":", "0.34-0.82", ";", "P", "=", "4.61", "x", "10", "-3", ")", "rather", "than", "medium", "or", "high", "methylation", "(", "HR", "=", "1.21", ";", "95", "%", "CI", ":", "0.86-1.70", ";", "P", "=", "0.266", ")", "of", "cg02268510", "SIPA", "1L3", "." ]
+  }, {
+    "sentence_tokens" : [ "Moreover", ",", "there", "was", "an", "antagonistic", "interaction", "between", "elevated", "methylation", "of", "cg02268510", "SIPA", "1L3", "and", "smoking", "cessation", "(", "HR", "interaction", "=", "2.1835", ";", "95", "%", "CI", ":", "1.27-3.74", ";", "P", "=", "4.46", "x", "10", "-3", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "summary", ",", "smoking", "cessation", "benefited", "survival", "of", "LUAD", "patients", "with", "low", "methylation", "at", "cg02268510", "SIPA", "1L3", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "results", "have", "implications", "for", "not", "only", "smoking", "cessation", "after", "diagnosis", ",", "but", "also", "possible", "methylation", "specific", "drug", "targeting", "." ]
+  }, {
+    "sentence_tokens" : [ "Abbreviations", "." ]
+  }, {
+    "sentence_tokens" : [ "CIconfidence", "intervalFDRfalse", "discovery", "rateHRhazard", "ratioLUADlung", "adenocarcinomaLUSClung", "squamous", "cell", "carcinomaNSCLCnon", "-", "small", "-", "cell", "lung", "cancerQCquality", "controlSDstandard", "deviationTCGAThe", "Cancer", "Genome", "Atlas1", "Introduction", "." ]
+  }, {
+    "sentence_tokens" : [ "Lung", "cancer", "is", "a", "leading", "cause", "of", "cancer", "mortality", "worldwide", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "United", "States", ",", "lung", "cancer", "was", "estimated", "as", "likely", "to", "account", "for", "154", "050", "deaths", "in", "2018", ",", "or", "one", "-", "fourth", "of", "all", "cancer", "deaths", "(", "Siegel", "et", "al", ".,", "2017", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "large", "proportion", "of", "lung", "cancer", "cases", "are", "attributed", "to", "smoking", ",", "a", "well", "-", "known", "risk", "factor", "(", "Flanders", "et", "al", ".,", "2003", ")", ",", "and", "smoking", "cessation", "prolongs", "survival", "and", "decreases", "mortality", "of", "lung", "cancer", "patients", "(", "Balduyck", "et", "al", ".,", "2011", ";", "Parsons", "et", "al", ".,", "2010", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "the", "underlying", "mechanisms", "of", "these", "benefits", "remain", "largely", "unclear", "(", "Bhatt", "et", "al", ".,", "2015", ";", "Parsons", "et", "al", ".,", "2010", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "DNA", "methylation", ",", "a", "reversible", "epigenetic", "modification", ",", "regulates", "gene", "expression", "and", "provides", "potential", "cancer", "biomarkers", "and", "therapeutic", "targets", "(", "Egger", "et", "al", ".,", "2004", ";", "Feinberg", "and", "Tycko", ",", "2004", ")", ",", "including", "for", "non", "-", "small", "-", "cell", "lung", "cancer", "(", "NSCLC", ")", "(", "Guo", "et", "al", ".,", "2018", ";", "Shen", "et", "al", ".,", "2018", ";", "Wei", "et", "al", ".,", "2018", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Furthermore", ",", "as", "a", "potential", "mechanistic", "link", "between", "cigarette", "smoking", "and", "disease", ",", "DNA", "methylation", "changes", "can", "result", "from", "various", "environmental", "exposures", "and", "may", "explain", "part", "of", "the", "association", "between", "smoking", "and", "cancer", "recurrence", "or", "mortality", "(", "Lee", "and", "Pausova", ",", "2013", ";", "Shui", "et", "al", ".,", "2016", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Progression", "of", "complex", "diseases", ",", "such", "as", "cancer", ",", "results", "from", "interactions", "between", "clinical", ",", "environmental", ",", "genetic", ",", "and", "epigenetic", "factors", "(", "Lacombe", "et", "al", ".,", "2016", ";", "Mcnerney", "et", "al", ".,", "2017", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "most", "epigenome", "-", "wide", "association", "studies", "are", "designed", "to", "identify", "main", "effects", "using", "a", "standard", "marginal", "test", "(", "Karlsson", "et", "al", ".,", "2014", ")", "while", "ignoring", "epigenetic", "-", "environment", "interactions", "." ]
+  }, {
+    "sentence_tokens" : [ "These", "traditional", "mining", "procedures", "may", "reduce", "the", "power", "to", "identify", "new", "epigenomic", "biomarkers", "(", "Slade", "and", "Kraft", ",", "2016", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "study", ",", "we", "hypothesized", "that", "epigenetic", "and", "smoking", "cessation", "interactions", "may", "affect", "NSCLC", "survival", "." ]
+  }, {
+    "sentence_tokens" : [ "Epigenome", "-", "wide", "DNA", "methylation", "data", "composed", "of", "four", "study", "cohorts", "containing", "lung", "adenocarcinoma", "(", "LUAD", ")", "and", "lung", "squamous", "cell", "carcinoma", "(", "LUSC", ")", "cases", "were", "used", "for", "discovery", ",", "and", "the", "findings", "were", "independently", "validated", "in", "The", "Cancer", "Genome", "Atlas", "(", "TCGA", ")", "data.2", "Materials", "and", "methods", "." ]
+  }, {
+    "sentence_tokens" : [ "2.1", "Study", "population", "." ]
+  }, {
+    "sentence_tokens" : [ "Early", "-", "stage", "(", "stage", "I", "-", "II", ")", "LUAD", "and", "LUSC", "patients", "who", "were", "former", "or", "current", "smokers", "were", "included", "in", "the", "study", "." ]
+  }, {
+    "sentence_tokens" : [ "Never", "smokers", "were", "defined", "as", "those", "who", "smoked", "<=", "100", "cigarettes", "over", "a", "lifetime", "." ]
+  }, {
+    "sentence_tokens" : [ "Current", "smokers", "were", "defined", "as", "those", "who", "were", "smoking", "within", "1", "year", "of", "diagnosis", "." ]
+  }, {
+    "sentence_tokens" : [ "Former", "smokers", "were", "defined", "as", "smokers", "who", "quit", ">", "1", "year", "before", "diagnosis", "or", "interview", "(", "Suk", "et", "al", ".,", "2006", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "encoded", "the", "variable", "smoking", "cessation", "as", "'", "yes", "'", "for", "former", "smokers", "and", "'", "no", "'", "for", "current", "smokers", "." ]
+  }, {
+    "sentence_tokens" : [ "Data", "were", "harmonized", "from", "five", "international", "study", "centers", ",", "which", "have", "been", "previously", "described", "(", "Guo", "et", "al", ".,", "2018", ";", "Shen", "et", "al", ".,", "2018", ";", "Wei", "et", "al", ".,", "2018", ";", "Zhang", "et", "al", ".,", "2019", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "All", "patients", "provided", "written", "informed", "consent", ",", "and", "the", "study", "methodologies", "conformed", "to", "the", "standards", "set", "by", "the", "Declaration", "of", "Helsinki", "and", "received", "approval", "by", "its", "respective", "institutional", "review", "board.2.1.1", "Harvard", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "Harvard", "Lung", "Cancer", "Study", "cohort", "was", "described", "previously", "(", "Suk", "et", "al", ".,", "2006", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Briefly", ",", "all", "patients", "were", "recruited", "at", "Massachusetts", "General", "Hospital", "(", "MGH", ")", "from", "1992", "to", "present", "and", "had", "newly", "diagnosed", ",", "histologically", "confirmed", "primary", "NSCLC", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "included", "133", "early", "-", "stage", "LUAD", "and", "LUSC", "patients", "who", "were", "former", "or", "current", "smokers", "for", "the", "current", "study", "." ]
+  }, {
+    "sentence_tokens" : [ "DNA", "was", "extracted", "from", "tumor", "specimens", "that", "were", "evaluated", "by", "an", "MGH", "pathologist", "for", "amount", "(", "tumor", "cellularity", ">", "70", "%", ")", "and", "quality", "of", "tumor", "cells", "and", "histologically", "classified", "using", "World", "Health", "Organization", "criteria", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "study", "protocol", "was", "approved", "by", "the", "Institutional", "Review", "Boards", "at", "Harvard", "School", "of", "Public", "Health", "and", "MGH.2.1.2", "Spain", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "Spain", "study", "population", "was", "reported", "previously", "(", "Sandoval", "et", "al", ".,", "2013", ")", "and", "included", "196", "LUAD", "and", "LUSC", "patients", "recruited", "at", "eight", "subcenters", "from", "1991", "to", "2009", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "brief", ",", "tumor", "DNA", "was", "extracted", "from", "fresh", "-", "frozen", "tumor", "specimens", "that", "were", "collected", "by", "surgical", "resection", ",", "and", "the", "median", "clinical", "follow", "-", "up", "was", "7.2", "years", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "study", "was", "approved", "by", "the", "Bellvitge", "Biomedical", "Research", "Institute", "institutional", "review", "board.2.1.3", "Norway", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "Norway", "cohort", "consisted", "of", "116", "LUAD", "patients", "with", "operable", "lung", "cancer", "tumors", "who", "were", "seen", "at", "Oslo", "University", "Hospital", ",", "Rikshospitalet", ",", "Norway", ",", "in", "2006", "-", "2011", "(", "Bjaan", "ae", "s", "et", "al", ".,", "2016", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Tumor", "tissues", "obtained", "during", "surgery", "were", "snap", "-", "frozen", "in", "liquid", "nitrogen", "and", "stored", "at", "-", "80", "degrees", "C", "until", "DNA", "isolation", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "project", "was", "approved", "by", "Oslo", "University", "institutional", "review", "board", "and", "regional", "ethics", "committee", "(", "S", "-", "05307", ")", ".2.1.4", "Sweden", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "Sweden", "cohort", "included", "85", "LUAD", "and", "LUSC", "patients", "." ]
+  }, {
+    "sentence_tokens" : [ "Tumor", "DNA", "was", "collected", "from", "early", "-", "stage", "lung", "cancer", "patients", "who", "underwent", "an", "operation", "at", "the", "Skane", "University", "Hospital", ",", "Lund", ",", "Sweden", "(", "Karlsson", "et", "al", ".,", "2014", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "study", "was", "approved", "by", "the", "Regional", "Ethical", "Review", "Board", "in", "Lund", ",", "Sweden", "(", "Registration", "no", "." ]
+  }, {
+    "sentence_tokens" : [ "2004/762", "and", "2008/702", ")", ".2.1.5", "TCGA", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "TCGA", "database", "contains", "562", "early", "-", "stage", "LUAD", "and", "LUSC", "patients", "who", "have", "full", "information", "of", "survival", "time", "and", "covariates", "." ]
+  }, {
+    "sentence_tokens" : [ "Level", "1", "HumanMethylation450", "DNA", "methylation", "data", "(", "image", "data", ")", "for", "each", "patient", "were", "downloaded", "on", "October", "1", ",", "2015.2.2", "Quality", "control", "procedures", "." ]
+  }, {
+    "sentence_tokens" : [ "DNA", "methylation", "was", "profiled", "using", "Infinium", "HumanMethylation450", "BeadChips", "(", "Illumina", "Inc", ".,", "San", "Diego", ",", "CA", ",", "USA", ")", "for", "all", "patients", "." ]
+  }, {
+    "sentence_tokens" : [ "Raw", "image", "data", "were", "imported", "into", "GenomeStudio", "Methylation", "Module", "V1.8", "(", "Illumina", "Inc.", ")", "to", "calculate", "methylation", "signals", "and", "to", "perform", "normalization", ",", "background", "subtraction", ",", "and", "quality", "control", "(", "QC", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Beta", "values", ",", "which", "range", "from", "0", "%", "(", "unmethylated", ")", "to", "100", "%", "(", "methylated", ")", ",", "were", "used", "to", "measure", "methylation", "level", "of", "each", "probe", "." ]
+  }, {
+    "sentence_tokens" : [ "Unqualified", "probes", "were", "excluded", "if", "they", "met", "any", "one", "of", "the", "following", "QC", "criteria", ":", "(", "a", ")", "failed", "detection", "(", "P", ">", "0.05", ")", "in", ">", "5", "%", "samples", ";", "(", "b", ")", "coefficient", "of", "variance", "of", "<", "5", "%", ";", "(", "c", ")", "methylated", "or", "unmethylated", "in", "all", "samples", ";", "(", "d", ")", "common", "single", "nucleotide", "polymorphisms", "located", "in", "probe", "sequence", "or", "10", "-", "bp", "flanking", "regions", ";", "(", "e", ")", "cross", "-", "reactive", "or", "cross", "-", "hybridizing", "probes", "(", "Chen", "et", "al", ".,", "2013", ")", ";", "or", "(", "f", ")", "did", "not", "pass", "QC", "in", "all", "centers", "." ]
+  }, {
+    "sentence_tokens" : [ "Samples", "with", ">", "5", "%", "undetectable", "probes", "were", "excluded", "." ]
+  }, {
+    "sentence_tokens" : [ "Methylation", "signals", "were", "further", "processed", "for", "quantile", "normalization", ",", "design", "bias", "correction", "for", "type", "I", "and", "II", "probes", ",", "and", "batch", "effect", "adjustment", "using", "ComBat", "correction", "(", "Marabita", "et", "al", ".,", "2013", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "performed", "QC", "procedures", "above", "in", "each", "center", "separately", "and", "then", "merged", "all", "data", "together", "before", "association", "analysis", "." ]
+  }, {
+    "sentence_tokens" : [ "Details", "of", "QC", "processes", "are", "described", "in", "Fig.", "S1.2.3", "Gene", "expression", "data", "." ]
+  }, {
+    "sentence_tokens" : [ "Expression", "and", "mRNA", "sequencing", "data", "were", "available", "for", "281", "LUAD", "and", "277", "LUSC", "patients", "of", "the", "TCGA", "dataset", "(", "Table", "S1", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "TCGA", "mRNA", "sequencing", "data", "processing", "and", "QC", "were", "done", "by", "the", "TCGA", "workgroup", "." ]
+  }, {
+    "sentence_tokens" : [ "Raw", "counts", "were", "normalized", "using", "RNA", "sequencing", "by", "expectation", "maximization", "." ]
+  }, {
+    "sentence_tokens" : [ "Level", "3", "gene", "quantification", "data", "were", "downloaded", "from", "the", "TCGA", "data", "portal", "(", "https://tcga-data.nci.nih.gov;", "now", "hosted", "at", "https://portal.gdc.cancer.gov", ")", "and", "were", "further", "checked", "for", "quality", "." ]
+  }, {
+    "sentence_tokens" : [ "Gene", "expression", "data", "were", "extracted", "and", "log2", "-", "transformed", "before", "analysis.2.4", "Epigenome-wide", "DNA", "methylation", "smoking", "cessation", "interaction", "analysis", "." ]
+  }, {
+    "sentence_tokens" : [ "Analysis", "flow", "is", "described", "in", "Fig.", "1", "." ]
+  }, {
+    "sentence_tokens" : [ "Patients", "from", "the", "first", "four", "study", "centers", "(", "Harvard", ",", "Spain", ",", "Norway", ",", "and", "Sweden", ")", "were", "assigned", "into", "the", "discovery", "phase", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "histology", "-", "stratified", "Cox", "proportional", "hazards", "model", "was", "used", "to", "test", "the", "interaction", "item", ",", "which", "was", "the", "interaction", "effect", "between", "DNA", "methylation", "of", "each", "CpG", "probe", "and", "smoking", "cessation", "(", "CpG", "probe", "x", "smoking", "cessation", ")", "on", "overall", "survival", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "model", "was", "adjusted", "for", "age", ",", "sex", ",", "smoking", "cessation", ",", "clinical", "stage", ",", "and", "study", "center", "." ]
+  }, {
+    "sentence_tokens" : [ "Hazard", "ratio", "(", "HR", ")", "and", "95", "%", "confidence", "interval", "(", "CI", ")", "were", "described", "per", "1", "%", "methylation", "increment", "." ]
+  }, {
+    "sentence_tokens" : [ "Multiple", "testing", "corrections", "were", "performed", "using", "the", "false", "discovery", "rate", "method", "(", "FDR", ",", "measured", "by", "FDR", "-", "q", "value", ")", "by", "the", "Benjamini", "-", "Hochberg", "procedure", "." ]
+  }, {
+    "sentence_tokens" : [ "CpG", "probes", "with", "interaction", "FDR", "-", "q", "<=", "0.05", "were", "replicated", "in", "the", "validation", "phase", "using", "the", "TCGA", "dataset", "." ]
+  }, {
+    "sentence_tokens" : [ "Robustly", "significant", "probes", "were", "retained", "if", "they", "met", "all", "criteria", ":", "(", "a", ")", "interaction", "P", "<=", "0.05", "in", "the", "validation", "phase", ";", "and", "(", "b", ")", "consistent", "effect", "direction", "in", "both", "discovery", "and", "validation", "phases", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "performed", "stratified", "analysis", "for", "robustly", "significant", "CpG", "probes", "in", "LUAD", "and", "LUSC", "patients", "." ]
+  }, {
+    "sentence_tokens" : [ "Finally", ",", "CpG", "probes", "with", "a", "significant", "interaction", "with", "smoking", "cessation", "in", "both", "phases", "were", "identified", "as", "histology", "-", "specific", "probes.2.5", "Sensitivity", "analysis", "for", "significant", "CpG", "probes", "." ]
+  }, {
+    "sentence_tokens" : [ "Due", "to", "the", "complex", "tumor", "microenvironment", "--", "including", "noncancerous", "components", ",", "which", "might", "alter", "analysis", "of", "tumor", "samples", "(", "Aran", "et", "al", ".,", "2015", ")", "--", "we", "assessed", "tumor", "purity", "with", "InfiniumPurify", "(", "Zhang", "et", "al", ".,", "2015", ")", "using", "methylation", "array", "data", "from", "TCGA", "samples", "." ]
+  }, {
+    "sentence_tokens" : [ "Tumor", "purity", "was", "included", "as", "an", "additional", "covariate", "in", "the", "Cox", "regression", "model", "for", "sensitivity", "analysis.2.6", "Genome-wide", "methylation", "transcription", "analysis", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "robustly", "significant", "histology", "-", "specific", "prognostic", "CpG", "probes", ",", "we", "also", "performed", "genome", "-", "wide", "methylation", "transcription", "analysis", "using", "mRNA", "sequencing", "data", "from", "TCGA", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "correlation", "between", "DNA", "methylation", "and", "gene", "expression", "was", "tested", "using", "a", "linear", "regression", "model", "adjusted", "for", "the", "same", "covariates", "mentioned", "above", "." ]
+  }, {
+    "sentence_tokens" : [ "Association", "with", "FDR", "-", "q", "<=", "0.05", "was", "considered", "significant", "." ]
+  }, {
+    "sentence_tokens" : [ "Additionally", ",", "we", "tested", "the", "association", "between", "gene", "expression", "and", "overall", "survival", "using", "a", "Cox", "proportional", "hazards", "model", "adjusted", "for", "the", "same", "covariates", "." ]
+  }, {
+    "sentence_tokens" : [ "Genes", "involved", "in", "significant", "associations", "with", "both", "methylation", "and", "NSCLC", "survival", "were", "filtered.2.7", "Statistical", "analysis", "." ]
+  }, {
+    "sentence_tokens" : [ "Continuous", "variables", "were", "summarized", "as", "mean", "+/-", "standard", "deviation", "(", "SD", ")", ",", "and", "categorized", "variables", "were", "described", "by", "frequency", "(", "n", ")", "and", "proportion", "(", "%", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Kaplan", "-", "Meier", "survival", "curves", "were", "used", "to", "compare", "survival", "difference", "among", "subgroups", "." ]
+  }, {
+    "sentence_tokens" : [ "Statistical", "analyses", "were", "performed", "using", "r", "version", "3.4.4", "(", "The", "R", "Foundation", "for", "Statistical", "Computing", ")", ".3", "Results", "." ]
+  }, {
+    "sentence_tokens" : [ "After", "QC", ",", "epigenome", "-", "wide", "DNA", "methylation", "data", "including", "311", "891", "CpG", "sites", "from", "1092", "tumor", "samples", "of", "early", "-", "stage", "(", "stage", "I", "-", "II", ")", "NSCLC", "patients", "were", "retained", "." ]
+  }, {
+    "sentence_tokens" : [ "There", "were", "530", "patients", "(", "N", "=", "413", "and", "N", "=", "117", ")", "in", "the", "discovery", "phase", "and", "562", "patients", "(", "N", "=", "285", "and", "N", "=", "277", ")", "in", "the", "validation", "phase", "." ]
+  }, {
+    "sentence_tokens" : [ "Table", "1", "details", "demographic", "and", "clinical", "information", "for", "the", "study", "population", "." ]
+  }, {
+    "sentence_tokens" : [ "There", "were", "37", "%", "and", "27", "%", "current", "smokers", "in", "the", "discovery", "and", "validation", "phases", ",", "respectively.In", "the", "discovery", "phase", ",", "15", "methylation", "-", "smoking", "cessation", "interactions", "were", "identified", "with", "FDR", "-", "q", "<=", "0.05", "(", "Fig.", "S2A", ")", ",", "and", "the", "Manhattan", "plot", "also", "showed", "the", "results", "for", "main", "effect", "additionally", "(", "Fig.", "S2B", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Only", "1", "interaction", "remained", "statistically", "significant", "in", "the", "validation", "phase", "under", "the", "most", "stringent", "criteria", "(", "Table", "S2", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "site", ",", "cg02268510", ",", "is", "located", "in", "signal", "-", "induced", "proliferation", "-", "associated", "1", "-", "like", "3", "(", "SIPA1L3", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Further", "histology", "-", "stratified", "analysis", "showed", "that", "cg02268510", "is", "a", "LUAD", "-", "specific", "CpG", "probe", "that", "interacts", "with", "smoking", "cessation", "to", "affect", "patient", "survival", "in", "the", "discovery", "phase", "(", "HR", "=", "1.10", ";", "95", "%", "CI", ":", "1.05", "-", "1.16", ";", "P", "=", "2.95", "x", "10", ")", ",", "the", "validation", "phase", "(", "HR", "=", "1.17", ";", "95", "%", "CI", ":", "1.02", "-", "1.35", ";", "P", "=", "0.0255", ")", ",", "and", "the", "combined", "data", "(", "HR", "=", "1.12", ";", "95", "%", "CI", ":", "1.07", "-", "1.16", ";", "P", "=", "4.30", "x", "10", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Moreover", ",", "fixed", "-", "effect", "meta", "-", "analysis", "of", "five", "centers", "also", "remained", "significant", "(", "HR", "=", "1.09", ";", "95", "%", "CI", ":", "1.05", "-", "1.13", ";", "P", "=", "6.66", "x", "10", ";", "Fig.", "S3", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "As", "presented", "in", "Fig.", "2A", ",", "with", "decreased", "methylation", "level", "of", "cg02268510", ",", "there", "was", "an", "elevated", "benefit", "effect", "size", "of", "smoking", "cessation", "on", "LUAD", "survival", "." ]
+  }, {
+    "sentence_tokens" : [ "Thus", ",", "there", "was", "a", "modification", "effect", "of", "cg02268510", "on", "the", "association", "between", "smoking", "cessation", "and", "survival.After", "including", "tumor", "purity", "as", "an", "additional", "covariate", "in", "sensitivity", "analysis", ",", "DNA", "methylation", "at", "cg02268510", "retained", "a", "significant", "interaction", "with", "smoking", "cessation", "on", "LUAD", "survival", "(", "HR", "=", "1.18", ";", "95", "%", "CI", ":", "1.02", "-", "1.36", ";", "P", "=", "0.024", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "interaction", "P", "-", "value", "was", "still", "significant", "but", "slightly", "inflated", "due", "to", "(", "a", ")", "the", "smaller", "sample", "size", "(", "51", "%", "of", "original", ")", "of", "the", "sensitivity", "analysis", ",", "which", "was", "only", "performed", "in", "TCGA", ";", "and", "(", "b", ")", "low", "tumor", "purity", "(", "~", "60", "%", ")", "for", "NSCLC", "samples", "in", "TCGA", "due", "to", "mixed", "cell", "types", "(", "Zheng", "et", "al", ".,", "2017", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "To", "better", "illustrate", "the", "interaction", "pattern", "between", "DNA", "methylation", "and", "smoking", "cessation", ",", "patients", "were", "categorized", "into", "low", ",", "medium", ",", "and", "high", "groups", "based", "on", "tertiles", "of", "cg02268510", "methylation", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "effect", "of", "smoking", "cessation", "varied", "across", "LUAD", "patients", "with", "different", "DNA", "methylation", "levels", "." ]
+  }, {
+    "sentence_tokens" : [ "Smoking", "cessation", "only", "benefited", "LUAD", "patients", "with", "low", "methylation", "of", "cg02268510", "(", "HR", "=", "0.53", ";", "95", "%", "CI", ":", "0.34", "-", "0.82", ";", "P", "=", "4.61", "x", "10", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "there", "was", "no", "significant", "association", "between", "smoking", "cessation", "and", "survival", "in", "LUAD", "patients", "with", "medium", "-", "high", "methylation", "of", "cg02268510", "(", "HR", "=", "1.12", ";", "95", "%", "CI", ":", "0.67", "-", "1.87", ";", "P", "=", "0.665", ";", "HR", "=", "1.29", ";", "95", "%", "CI", ":", "0.80", "-", "2.07", ";", "P", "=", "0.293", ";", "HR", "=", "1.21", ";", "95", "%", "CI", ":", "0.86", "-", "1.70", ";", "P", "=", "0.266", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "observed", "significant", "heterogeneity", "of", "smoking", "cessation", "effect", "across", "the", "three", "groups", "(", "P", "=", "0.014", ";", "Fig.", "2B", ")", ",", "and", "Kaplan", "-", "Meier", "curves", "confirmed", "these", "results", "(", "Fig.", "2C", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "These", "results", "also", "indicated", "that", "LUAD", "patients", "who", "did", "not", "quit", "smoking", "(", "current", "smokers", ")", "had", "the", "poorest", "prognosis", "if", "their", "methylation", "of", "cg02268510", "was", "in", "a", "low", "level", "." ]
+  }, {
+    "sentence_tokens" : [ "So", "we", "combined", "the", "medium", "and", "high", "methylation", "groups", "and", "performed", "further", "analysis", "." ]
+  }, {
+    "sentence_tokens" : [ "Current", "smokers", "in", "the", "low", "methylation", "group", "had", "1.94", "times", "the", "mortality", "risk", "compared", "with", "the", "medium", "or", "high", "methylation", "group", "(", "Fig.", "3A", ")", ",", "but", "there", "was", "no", "statistically", "significant", "difference", "between", "groups", "for", "former", "smokers", "(", "Fig.", "3B", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "results", "also", "indicated", "that", "smoking", "cessation", "was", "quite", "urgent", "for", "LUAD", "patients", "with", "low", "methylation", "of", "cg02268510", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "addition", ",", "we", "evaluated", "the", "joint", "effect", "of", "CpG", "methylation", "level", "(", "medium", "-", "high", "vs", "low", ")", "and", "smoking", "cessation", "(", "Yes", "vs", "No", ")", "on", "LUAD", "survival", "(", "Table", "2", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "used", "the", "poorest", "-", "prognosis", "group", "(", "current", "smokers", "with", "low", "methylation", ")", "as", "the", "reference", "to", "evaluate", "effect", "of", "elevated", "methylation", "level", ",", "smoking", "cessation", ",", "and", "their", "interaction", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "combined", "dataset", ",", "the", "effect", "of", "smoking", "cessation", "was", "HR", "=", "0.5506", "(", "95", "%", "CI", ":", "0.36", "-", "0.84", ";", "P", "=", "5.62", "x", "10", ")", "and", "the", "effect", "of", "medium", "-", "high", "methylation", "of", "cg02268510", "was", "HR", "=", "0.5214", "(", "95", "%", "CI", ":", "0.34", "-", "0.81", ";", "P", "=", "3.48", "x", "10", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "the", "joint", "effect", "was", "HR", "=", "0.6268", "(", "95", "%", "CI", ":", "0.43", "-", "0.92", ";", "P", "=", "1.84", "x", "10", ")", ",", "which", "was", "greater", "than", "the", "product", "of", "the", "two", "individual", "protective", "effects", "(", "0.5506", "x", "0.5214", "=", "0.2871", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "joint", "effect", "of", "two", "protective", "factors", "was", "less", "protective", "than", "expected", ",", "indicating", "an", "antagonistic", "interaction", "between", "elevated", "methylation", "of", "cg02268510", "and", "smoking", "cessation", "(", "HR", "=", "2.1835", ";", "95", "%", "CI", ":", "1.27", "-", "3.74", ";", "P", "=", "4.46", "x", "10", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "growing", "body", "of", "research", "has", "reported", "potential", "associations", "of", "DNA", "methylation", "with", "age", "and", "smoking", "(", "Fraga", "and", "Esteller", ",", "2007", ";", "Wan", "et", "al", ".,", "2012", ";", "Zaghlool", "et", "al", ".,", "2015", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "we", "also", "tested", "the", "association", "between", "methylation", "of", "cg02268510", "and", "age", ",", "as", "well", "as", "smoking", "-", "related", "variables", ":", "pack", "-", "year", "of", "smoking", ",", "years", "of", "smoking", ",", "and", "years", "of", "smoking", "cessation", "using", "a", "linear", "regression", "model", "adjusted", "for", "age", ",", "sex", ",", "clinical", "stage", ",", "and", "study", "centers", "." ]
+  }, {
+    "sentence_tokens" : [ "Smoking", "-", "related", "characteristics", "of", "former", "and", "current", "smokers", "in", "early", "-", "stage", "LUAD", "are", "described", "in", "Table", "S3", "." ]
+  }, {
+    "sentence_tokens" : [ "There", "was", "no", "significant", "association", "between", "methylation", "of", "cg02268510", "and", "age", "(", "beta", "=", "-", "0.01", ";", "P", "=", "0.521", ")", "or", "years", "of", "smoking", "(", "beta", "=", "0.03", ";", "P", "=", "0.210", ")", ",", "but", "pack", "-", "year", "of", "smoking", "(", "beta", "=", "0.02", ";", "P", "=", "3.42", "x", "10", ")", "as", "well", "as", "years", "of", "smoking", "cessation", "(", "beta", "=", "-", "0.06", ";", "P", "=", "5.08", "x", "10", ")", "in", "former", "smoker", "LUAD", "patients", "(", "Fig.", "S4", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Further", ",", "because", "cg02268510", "maps", "to", "SIPA1L3", ",", "the", "association", "between", "cg02268510", "and", "SIPA1L3", "expression", "was", "evaluated", "using", "the", "TCGA", "dataset", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "observed", "a", "significant", "association", "between", "cg02268510", "and", "SIPA1L3", "expression", "(", "beta", "=", "-", "0.02", ";", "P", "=", "0.015", ")", "in", "LUAD", "patients", "(", "Fig.", "4", ")", ",", "indicating", "that", "cg02268510", "cis", "-", "regulates", "gene", "expression", "." ]
+  }, {
+    "sentence_tokens" : [ "Moreover", ",", "genome", "-", "wide", "methylation", "transcription", "analysis", "revealed", "that", "expression", "of", "633", "genes", "was", "significantly", "correlated", "with", "methylation", "level", "of", "cg02268510", "(", "Fig.", "S5A", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Among", "them", ",", "expression", "of", "only", "seven", "genes", "was", "significantly", "associated", "with", "overall", "survival", ":", "growth", "arrest", "and", "DNA", "damage", "-", "inducible", "gamma", "(", "GADD45G", ")", ",", "maturin", "(", "MTURN", ")", ",", "TMEM200B", ",", "RGS20", ",", "RELT", "-", "like", "1", "(", "RELL1", ")", ",", "PGM2", ",", "and", "receptor", "-", "interacting", "serine/threonine", "kinase", "2", "(", "RIPK2", ";", "Fig.", "S5B", "-", "H", ")", ".4", "Discussion", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "study", ",", "we", "systematically", "evaluated", "all", "pairwise", "DNA", "methylation", "-", "smoking", "cessation", "interactions", "on", "an", "epigenome", "-", "wide", "scale", "and", "further", "confirmed", "these", "interactions", "in", "an", "independent", "population", "." ]
+  }, {
+    "sentence_tokens" : [ "To", "our", "knowledge", ",", "this", "is", "the", "first", "study", "with", "a", "large", "sample", "size", "to", "investigate", "interactions", "between", "DNA", "methylation", "and", "smoking", "behavior", "on", "lung", "cancer", "survival", ",", "and", "it", "provides", "new", "evidence", "to", "account", "for", "the", "missing", "heritability", "of", "complex", "diseases", "(", "Trerotola", "et", "al", ".,", "2015", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Our", "results", "show", "that", "the", "effect", "of", "smoking", "cessation", "on", "early", "-", "stage", "LUAD", "patient", "survival", "varies", "with", "methylation", "level", "of", "cg02268510", "." ]
+  }, {
+    "sentence_tokens" : [ "Smoking", "cessation", "only", "benefits", "LUAD", "patients", "with", "low", "methylation", ",", "rather", "than", "medium", "or", "high", "methylation", ",", "of", "cg02268510", "." ]
+  }, {
+    "sentence_tokens" : [ "Further", ",", "there", "is", "an", "antagonistic", "interaction", "between", "elevated", "methylation", "of", "cg02268510", "and", "smoking", "cessation.We", "found", "that", "in", "LUAD", "patients", "with", "low", "methylation", "of", "cg02268510", ",", "current", "smokers", "with", "more", "accumulative", "exposure", "had", "worse", "survival", "than", "former", "smokers", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "for", "a", "population", "with", "medium", "-", "high", "methylation", ",", "the", "prognosis", "of", "current", "smokers", "was", "similar", "to", "that", "of", "former", "smokers", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "effect", "of", "smoking", "cessation", "is", "therefore", "modified", "by", "DNA", "methylation", "level", ",", "indicating", "opportunities", "for", "epi", "-", "drug", "intervention", "due", "to", "the", "inherent", "reversibility", "of", "epigenetic", "events", "(", "Wright", ",", "2013", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Up", "to", "50", "%", "of", "lung", "cancer", "patients", "are", "estimated", "to", "keep", "smoking", "after", "diagnosis", "or", "to", "frequently", "relapse", "after", "smoking", "cessation", "(", "Park", "et", "al", ".,", "2012", ";", "Walker", "et", "al", ".,", "2006", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Our", "results", "indicated", "that", "smoking", "cessation", "was", "urgent", "especially", "for", "LUAD", "patients", "with", "low", "methylation", "of", "cg02268510", "." ]
+  }, {
+    "sentence_tokens" : [ "On", "the", "other", "hand", ",", "reduced", "methylation", "of", "cg02268510", "might", "strengthen", "the", "protective", "effect", "of", "smoking", "cessation", "on", "survival.Many", "studies", "have", "reported", "significant", "associations", "between", "smoking", "cessation", "and", "overall", "survival", "(", "Koshiaris", "et", "al", ".,", "2017", ";", "Nia", "et", "al", ".,", "2005", ")", ",", "while", "other", "studies", "have", "reported", "negative", "results", "(", "Baser", "et", "al", ".,", "2006", ";", "Parsons", "et", "al", ".,", "2010", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Based", "on", "our", "interaction", "analysis", ",", "we", "suspected", "that", "epigenetic", "modifications", "might", "account", "for", "this", "inconsistent", "phenomenon", "." ]
+  }, {
+    "sentence_tokens" : [ "Because", "the", "effect", "of", "smoking", "cessation", "varies", "across", "populations", "with", "different", "methylation", "levels", "of", "cg02268510", ",", "the", "effect", "could", "be", "neutralized", "in", "a", "population", "of", "patients", "with", "mixed", "cg02268510", "methylation", "levels", "." ]
+  }, {
+    "sentence_tokens" : [ "Thus", ",", "the", "traditional", "marginal", "test", "for", "association", "between", "smoking", "cessation", "and", "cancer", "survival", "inherently", "loses", "statistical", "power", "to", "report", "significant", "findings", "due", "to", "complex", "association", "patterns", "." ]
+  }, {
+    "sentence_tokens" : [ "SIPA1L3", ",", "the", "gene", "in", "which", "cg02268510", "is", "located", ",", "encodes", "GTPase", "-", "activating", "proteins", "(", "GAPs", ")", "specific", "for", "the", "GTP", "-", "binding", "protein", "Ras", "-", "associated", "protein", "-", "1", "(", "RAP1", ")", ",", "which", "is", "implicated", "in", "regulation", "of", "cell", "adhesion", ",", "cell", "polarity", ",", "and", "cytoskeletal", "organization", "(", "Kooistra", "et", "al", ".,", "2007", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "SIPA1L3", "is", "a", "member", "of", "the", "SPA1", "family", "of", "RapGAPs", ",", "which", "play", "a", "crucial", "role", "in", "spatiotemporal", "control", "of", "Rap1", "activation", "in", "cells", "(", "Mochizuki", "et", "al", ".,", "2001", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Rap1", "plays", "many", "roles", "during", "cell", "invasion", "and", "metastasis", "in", "different", "cancers", "(", "Zhang", "et", "al", ".,", "2017", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Additionally", ",", "overexpression", "of", "RAP1", "may", "desensitize", "NSCLC", "cells", "to", "cisplatin", ",", "a", "first", "-", "line", "drug", "to", "treat", "NSCLC", "(", "Besse", "et", "al", ".,", "2014", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Our", "results", "suggest", "that", "low", "methylation", "at", "cg02268510", "might", "promote", "SIPA1L3", "expression", ",", "further", "leading", "to", "Rap1", "activation", "and", "resulting", "in", "poor", "prognosis", "(", "Fig.", "5", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Many", "of", "the", "deleterious", "effects", "of", "smoking", "are", "due", "to", "induction", "of", "inflammatory", "responses", "that", "contribute", "to", "lung", "cancer", "progression", "(", "Crusz", "and", "Balkwill", ",", "2015", ";", "Walser", "et", "al", ".,", "2008", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Activation", "of", "NF", "-", "kappa", "B", ",", "one", "of", "the", "most", "investigated", "transcription", "factors", ",", "controls", "multiple", "cellular", "processes", "in", "cancer", ",", "including", "inflammation", ",", "transformation", ",", "proliferation", ",", "angiogenesis", ",", "invasion", ",", "metastasis", ",", "chemoresistance", ",", "and", "radioresistance", "(", "Chaturvedi", "et", "al", ".,", "2010", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Nicotine", "protects", "NSCLC", "cells", "against", "chemotherapy", "-", "induced", "apoptosis", "and", "serum", "deprivation", "-", "induced", "apoptosis", "through", "NF", "-", "kappa", "B", ",", "and", "NF", "-", "kappa", "B", "activity", "is", "also", "directly", "stimulated", "by", "nicotine", "(", "Anto", "et", "al", ".,", "2002", ";", "Tsurutani", "et", "al", ".,", "2005", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Furthermore", ",", "levels", "of", "Rap1", "are", "positively", "regulated", "by", "NF", "-", "kappa", "B", ",", "and", "human", "breast", "cancers", "with", "NF", "-", "kappa", "B", "hyperactivity", "show", "elevated", "levels", "of", "cytoplasmic", "Rap1", "(", "Teo", "et", "al", ".,", "2010", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Thus", ",", "positive", "feedback", "mechanisms", "might", "exist", "between", "Rap1", "expression", "and", "NF", "-", "kappa", "B", "activation", "(", "Fig.", "5", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "terms", "of", "cg02268510", "and", "smoking", "cessation", "interaction", ",", "keeping", "smoking", "was", "associated", "with", "poor", "prognosis", "only", "in", "LUAD", "patients", "with", "low", "methylation", ",", "rather", "than", "medium", "or", "high", "methylation", ",", "possibly", "because", "high", "activation", "of", "both", "Rap1", "and", "NF", "-", "kappa", "B", "may", "only", "occur", "in", "patients", "with", "low", "methylation.We", "also", "found", "that", "methylation", "level", "of", "cg02268510", "increased", "along", "with", "long", "pack", "-", "year", "of", "smoking", ",", "but", "decreased", "with", "long", "years", "of", "smoking", "cessation", "." ]
+  }, {
+    "sentence_tokens" : [ "As", "presented", "in", "Fig.", "5", ",", "low", "methylation", "and", "keeping", "smoking", "resulted", "in", "the", "worst", "prognosis", ",", "which", "might", "be", "due", "to", "the", "positive", "feedback", "in", "Rap1", "and", "NF", "-", "kappa", "B." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "methylation", "of", "cg02268510", "increased", "with", "the", "cumulative", "amount", "of", "smoking", "." ]
+  }, {
+    "sentence_tokens" : [ "But", ",", "high", "methylation", "of", "cg02268510", "resulted", "in", "low", "SIPA1L3", "expression", "that", "was", "hard", "to", "active", "Rap1", "and", "NF", "-", "kappa", "B", ",", "and", "then", "might", "weaken", "the", "harmful", "effect", "of", "smoking", ",", "which", "also", "indicated", "an", "antagonistic", "effect", "." ]
+  }, {
+    "sentence_tokens" : [ "It", "is", "implied", "that", "there", "might", "be", "a", "self", "-", "protective", "mechanism", "in", "the", "human", "body", "that", "prevents", "the", "body", "from", "receiving", "excessive", "damage", "from", "exposure", "." ]
+  }, {
+    "sentence_tokens" : [ "As", "reported", ",", "smoking", "increases", "reactive", "oxygen", "species", "(", "ROS", ")", "production", "and", "is", "a", "significant", "source", "of", "oxidative", "stress", "(", "Athanasios", "et", "al", ".,", "2013", ")", ",", "but", "in", "vivo", ",", "there", "is", "a", "variety", "of", "antioxidant", "defense", "mechanisms", "existed", "to", "counteract", "the", "detrimental", "effects", "of", "ROS", "by", "regulating", "the", "production", "of", "free", "radicals", "and", "their", "metabolites", "(", "Deponte", ",", "2013", ";", "He", "et", "al", ".,", "2017", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "It", "may", "be", "an", "adaptive", "defense", "mechanism", "to", "counteract", "the", "increased", "ROS", "production", "that", "superoxide", "dismutase", "enzyme", "levels", "in", "blood", "and", "salivary", "were", "increased", "in", "smokers", "(", "Jenifer", "et", "al", ".,", "2015", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "But", "further", "functional", "studies", "are", "warranted", "to", "elucidate", "the", "mechanism", "of", "cg02268510", "and", "smoking", "cessation", "interaction", "on", "LUAD", "survival.Meanwhile", ",", "we", "observed", "that", "some", "genes", "trans", "-", "regulated", "by", "cg02268510", "are", "involved", "in", "DNA", "damage", "response", "and", "cell", "growth", "(", "GADD45G", ")", "(", "Guo", "et", "al", ".,", "2013", ")", ",", "immune", "cell", "functions", "(", "MTURN", ")", "(", "Sun", "et", "al", ".,", "2014", ")", ",", "tumor", "cell", "migration", "[", "regulator", "of", "G", "protein", "signaling", "20", "(", "RGS20", ")", "]", "(", "Yang", "et", "al", ".,", "2016", ")", ",", "apoptosis", "(", "RELL1", "and", "RIPK2", ")", "(", "Chin", "et", "al", ".,", "2002", ";", "Cusick", "et", "al", ".,", "2010", ")", ",", "and", "innate", "and", "adaptive", "immunity", "(", "RIPK2", ")", "(", "Jaafar", "et", "al", ".,", "2018", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "GADD45G", "is", "a", "member", "of", "the", "GADD45", "family", ",", "which", "plays", "an", "essential", "role", "in", "cellular", "stress", "response", ",", "survival", ",", "senescence", ",", "and", "apoptosis", "regulation", "(", "Liebermann", "et", "al", ".,", "2011", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Patients", "with", "high", "GADD45G", "expression", "had", "a", "better", "prognosis", "in", "our", "study", "." ]
+  }, {
+    "sentence_tokens" : [ "MTURN", "is", "a", "neural", "progenitor", "differentiation", "regulator", "homolog", "." ]
+  }, {
+    "sentence_tokens" : [ "Indeed", ",", "differentiation", "therapy", "by", "forced", "differentiation", "of", "cancer", "cells", "has", "been", "successful", "in", "curing", "acute", "promyeloid", "leukemia", "(", "Chen", "et", "al", ".,", "2011", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Similarly", ",", "LUAD", "patients", "with", "high", "MTURN", "expression", "had", "favorable", "survival", "in", "our", "study", "." ]
+  }, {
+    "sentence_tokens" : [ "RGS20", "is", "suggested", "to", "promote", "cellular", "characteristics", "that", "contribute", "to", "metastasis", ",", "including", "enhanced", "cell", "aggregation", ",", "motility", ",", "and", "invasion", "." ]
+  }, {
+    "sentence_tokens" : [ "Its", "high", "expression", "is", "significantly", "associated", "with", "progression", "and", "prognosis", "of", "triple", "-", "negative", "breast", "cancer", "(", "Li", "et", "al", ".,", "2017", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Additionally", ",", "our", "study", "showed", "similar", "results", "in", "LUAD", "patients", "." ]
+  }, {
+    "sentence_tokens" : [ "Though", "there", "is", "a", "lack", "of", "explicit", "evidence", "of", "relevance", "between", "these", "genes", "and", "smoking", ",", "what", "we", "found", "may", "inspire", "functional", "studies", "of", "these", "potential", "genes", "and", "further", "help", "to", "complete", "a", "picture", "of", "the", "mechanism", "pathway", "of", "cg02268510", "and", "smoking", "cessation", "interaction", "on", "LUAD", "survival.Our", "study", "has", "some", "significant", "strengths", "." ]
+  }, {
+    "sentence_tokens" : [ "First", ",", "this", "is", "the", "first", "study", "to", "investigate", "the", "interaction", "between", "DNA", "methylation", "and", "smoking", "cessation", "on", "lung", "cancer", "survival", "on", "an", "epigenome", "-", "wide", "scale", ",", "which", "provides", "new", "evidence", "to", "account", "for", "the", "missing", "heritability", "of", "complex", "diseases", "(", "Trerotola", "et", "al", ".,", "2015", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Second", ",", "the", "two", "-", "stage", "study", "design", "we", "used", "to", "exhaustively", "search", "for", "interactions", ",", "as", "well", "as", "the", "sensitivity", "analysis", ",", "is", "quite", "conservative", "in", "controlling", "for", "false", "positives", "." ]
+  }, {
+    "sentence_tokens" : [ "Third", ",", "our", "study", "included", "a", "large", "sample", "size", "to", "analyze", "DNA", "methylation", "-", "smoking", "cessation", "interactions", "of", "early", "-", "stage", "NSCLC", "prognosis", ",", "providing", "an", "opportunity", "to", "identify", "complex", "associations", "with", "small", "-", "medium", "effect", "size.Despite", "the", "strengths", "of", "our", "study", ",", "we", "acknowledge", "some", "limitations", "." ]
+  }, {
+    "sentence_tokens" : [ "First", ",", "data", "measured", "categorical", "smoking", "cessation", "rather", "than", "smoking", "pack", "-", "years", ",", "which", "may", "render", "less", "power", "in", "the", "study", "." ]
+  }, {
+    "sentence_tokens" : [ "Second", ",", "smoking", "cessation", "was", "collected", "at", "the", "time", "of", "diagnosis", "and", "was", "not", "reassessed", "during", "follow", "-", "up", "." ]
+  }, {
+    "sentence_tokens" : [ "Previous", "studies", "have", "found", "that", "'", "former", "smokers", "'", "might", "more", "accurately", "represent", "a", "mixed", "exposure", "status", ",", "since", "quitters", "are", "more", "likely", "to", "relapse", "(", "Hughes", "et", "al", ".,", "2004", ";", "Walker", "et", "al", ".,", "2006", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Thus", ",", "we", "likely", "underestimated", "the", "benefits", "of", "smoking", "cessation", "." ]
+  }, {
+    "sentence_tokens" : [ "Third", ",", "the", "association", "between", "cg02268510", "and", "expression", "of", "several", "genes", "requires", "more", "biological", "evidence", ",", "though", "methylation", "is", "believed", "to", "play", "a", "crucial", "role", "in", "regulating", "gene", "expression", "(", "Bird", ",", "2007", ")", "and", "further", "influence", "disease", "gene", "function", "(", "Sch", "u", "beler", ",", "2015", ")", ",", "cell", "differentiation", ",", "or", "reprogramming", "(", "Khavari", "et", "al", ".,", "2010", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Thus", ",", "functional", "experiments", "are", "warranted", "to", "confirm", "these", "associations", ",", "so", "our", "findings", "should", "be", "biologically", "interpreted", "with", "caution", "thus", "far", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "addition", ",", "our", "study", "consisted", "mainly", "of", "a", "Caucasian", "population", "(", "89.19", "%", ")", ",", "since", "TCGA", "data", "contained", "only", "~", "10", "%", "non", "-", "Caucasian", "samples", "." ]
+  }, {
+    "sentence_tokens" : [ "Our", "results", "should", "therefore", "be", "translated", "with", "caution", "for", "other", "populations", "." ]
+  }, {
+    "sentence_tokens" : [ "Lastly", ",", "the", "censored", "rate", "of", "survival", "time", "for", "the", "TCGA", "population", "is", "relatively", "high", ",", "since", "early", "-", "stage", "NSCLC", "patients", "need", "longer", "follow", "-", "up", "time", "." ]
+  }, {
+    "sentence_tokens" : [ "Thus", ",", "the", "validation", "phase", "using", "TCGA", "population", "had", "low", "statistical", "power", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "we", "still", "successfully", "replicated", "one", "significant", "interaction", ",", "indicating", "a", "quite", "conservative", "and", "robust", "result", "(", "Leung", "et", "al", ".,", "1997", ";", "Watt", "et", "al", ".,", "1996", ")", ".5", "Conclusion", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "epigenome", "-", "wide", "DNA", "methylation", "-", "smoking", "cessation", "interaction", "analysis", "of", "early", "-", "stage", "NSCLC", "identified", "one", "LUAD", "-", "specific", "CpG", "probe", ",", "cg02268510", ",", "which", "could", "significantly", "modify", "effects", "of", "smoking", "cessation", "on", "lung", "cancer", "survival", "." ]
+  }, {
+    "sentence_tokens" : [ "Smoking", "cessation", "benefited", "survival", "of", "LUAD", "patients", "with", "low", "methylation", "at", "cg02268510", "." ]
+  }, {
+    "sentence_tokens" : [ "These", "results", "have", "implications", "for", "not", "only", "smoking", "cessation", "after", "diagnosis", ",", "but", "also", "possible", "methylation", "-", "specific", "drug", "targeting", "." ]
+  }, {
+    "sentence_tokens" : [ "Conflict", "of", "interest", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "authors", "have", "no", "conflicts", "to", "declare", "." ]
+  }, {
+    "sentence_tokens" : [ "Author", "contributions", "." ]
+  }, {
+    "sentence_tokens" : [ "RZ", ",", "LLai", ",", "YW", ",", "and", "FC", "contributed", "to", "the", "study", "design", "." ]
+  }, {
+    "sentence_tokens" : [ "RZ", ",", "SM", ",", "TF", ",", "MMB", ",", "AK", ",", "MP", ",", "JS", ",", "AH", ",", "ME", ",", "AS", ",", "and", "LS", "contributed", "to", "data", "collection", "." ]
+  }, {
+    "sentence_tokens" : [ "RZ", ",", "LLai", ",", "and", "YW", "performed", "statistical", "analysis", "and", "interpretation", "and", "drafted", "the", "manuscript", "." ]
+  }, {
+    "sentence_tokens" : [ "XD", ",", "JH", ",", "DY", ",", "CC", ",", "LLin", ",", "YZ", ",", "HH", ",", "SS", ",", "LW", ",", "XC", ",", "YG", ",", "and", "LLiu", "revised", "the", "manuscript", "." ]
+  }, {
+    "sentence_tokens" : [ "All", "authors", "contributed", "to", "critical", "revision", "of", "the", "manuscript", "and", "approved", "its", "final", "version", "." ]
+  }, {
+    "sentence_tokens" : [ "Financial", "support", "and", "study", "supervision", "were", "provided", "by", "RZ", ",", "FC", ",", "and", "DCC", "." ]
+  } ]
+}

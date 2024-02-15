@@ -1,1 +1,510 @@
-[ ]
+{
+  "regulations" : [ ],
+  "hardInstances" : [ ],
+  "withoutRegulations" : [ {
+    "sentence_tokens" : [ "Suppose", "there", "is", "a", "unified", "coordinate", "system", "to", "specify", "all", "of", "the", "locations", "on", "the", "given", "floor", "in", "the", "shopping", "mall", "." ],
+    "entities_indices" : [ [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "Here", ",", "LIi", "'", "and", "LIj", "'", "'", "respectively", "represent", "the", "locations", ",", "where", "Ii", "'", "and", "Ij", "'", "'", "are", "observed.The", "physical", "distance", "between", "two", "observing", "locations", "can", "be", "estimated", "from", "the", "Euclidean", "distance", "between", "the", "RSS", "observations", "in", "the", "signal", "space", "[", "9,10", "]", "." ],
+    "entities_indices" : [ [ 2, 3, 4 ], [ 14, 15 ], [ 37, 38 ] ]
+  }, {
+    "sentence_tokens" : [ "Nonetheless", ",", "in", "practice", ",", "the", "results", "at", "convergence", "can", "still", "deviate", "far", "from", "the", "actual", "locations", ",", "even", "if", "the", "coordinate", "system", "is", "converted", "carefully", "through", "a", "stretch", ",", "spin", "or", "flip", "operation", "in", "the", "whole", "area", "." ],
+    "entities_indices" : [ [ 30, 31 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "case", "that", "no", "fingerprint", "database", "and", "only", "insufficient", "RSS", "measurements", "are", "available", ",", "Canoe", "can", "still", "perform", "the", "navigation.On", "the", "hypothesis", "that", "the", "RSS", "measurements", "(", "in", "dBm", ")", "are", "normally", "distributed", "and", "that", "the", "path", "loss", "varies", "exponentially", "with", "distance", ",", "the", "relative", "likelihood", "of", "observing", "an", "RSS", "measurement", "can", "be", "described", "by", "a", "probability", "density", "function", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 25, 26 ], [ 29, 30 ], [ 50, 51 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "experiments", "are", "performed", "on", "Level", "B-1", ",", "which", "is", "the", "only", "floor", "connecting", "both", "buildings", "." ],
+    "entities_indices" : [ [ 5, 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "Missed", "APs", "and", "Failure", "Rate", "." ],
+    "entities_indices" : [ [ 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "define", "the", "process", "of", "location", "estimation", ",", "which", "estimates", "the", "locations", "of", "the", "observations", "and", "the", "APs", "(", "matrices", "P", "and", "Q", ")", "from", "the", "distances", "(", "matrix", "D", ")", "." ],
+    "entities_indices" : [ [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "Then", ",", "Canoe", "modifies", "the", "parameters", "in", "the", "opposite", "direction", "of", "the", "gradient", ",", "yielding", ":", "(", "11", ")", "PiPi", "-", "alpha", "." ],
+    "entities_indices" : [ [ 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "There", "are", "a", "number", "of", "parameters", "(", "i.e", ".,", "all", "elements", "in", "matrices", "P", ",", "Q", "and", "I0", ")", "relative", "to", "the", "number", "of", "observed", "RSS", "measurements", "(", "i.e", ".,", "matrix", "I", ")", "in", "location", "estimation", "." ],
+    "entities_indices" : [ [ 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "Then", ",", "a", "stochastic", "gradient", "descent", "optimization", "technique", "is", "designed", "to", "iteratively", "learn", "the", "values", "of", "these", "parameters", "to", "maximize", "the", "likelihood", "of", "observing", "the", "RSS", "measurements", "with", "respect", "to", "the", "estimated", "locations", "of", "the", "consumer", ",", "the", "shops", "and", "the", "APs", ",", "under", "the", "assumption", "that", "the", "RSS", "measurements", "(", "in", "dBm", ")", "are", "distributed", "through", "Gaussian", "distribution", "and", "that", "the", "path", "loss", "varies", "exponentially", "with", "distance", "." ],
+    "entities_indices" : [ [ 25, 26 ], [ 41, 42 ], [ 48, 49 ], [ 52, 53 ] ]
+  }, {
+    "sentence_tokens" : [ "If", "there", "is", "no", "deployed", "localization", "service", "in", "a", "shopping", "mall", ",", "it", "is", "difficult", "for", "a", "consumer", "to", "acquire", "his", "and", "her", "location", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "is", "because", "we", "do", "not", "want", "to", "use", "any", "AP", ",", "which", "is", "publicly", "deployed", "by", "the", "building", "owner", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "By", "doing", "this", ",", "their", "familiarity", "of", "this", "shop", "or", "to", "this", "shopping", "mall", "could", "be", "omitted", "." ],
+    "entities_indices" : [ [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "Even", "if", "two", "observing", "locations", "are", "close", "to", "each", "other", ",", "the", "observed", "APs", "can", "still", "be", "significantly", "different", ",", "due", "to", "the", "missed", "AP", "phenomenon", "." ],
+    "entities_indices" : [ [ 13, 14 ], [ 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "paper", ",", "we", "introduce", "an", "autonomous", "navigation", "solution", "without", "a", "dedicated", "localization", "service", "or", "infrastructure", "deployed", "." ],
+    "entities_indices" : [ [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "instance", ",", "a", "consumer", "may", "want", "to", "find", "a", "certain", "shop", "in", "a", "shopping", "mall", "to", "optimize", "or", "enhance", "their", "experience", ",", "while", "shop", "owners", "want", "to", "direct", "consumers", "to", "their", "shops", "in", "order", "to", "increase", "business", "." ],
+    "entities_indices" : [ [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "On", "the", "one", "hand", ",", "if", "the", "consumer", "is", "far", "from", "the", "target", "shop", ",", "it", "is", "likely", "no", "APs", "will", "cover", "both", "locations", "." ],
+    "entities_indices" : [ [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "Thus", ",", "combining", "the", "maximum", "likelihood", "estimation", "and", "stochastic", "gradient", "descent", "optimization", "techniques", ",", "we", "solve", "the", "dimension", "mismatch", "problem", ",", "leading", "to", "the", "accurate", "estimation", "of", "the", "locations", "of", "the", "shops", "and", "the", "consumers.Third", ",", "as", "there", "are", "many", "parameters", "to", "consider", "for", "each", "RSS", "observation", ",", "overfitting", "can", "easily", "occur", "as", "a", "consequence", "." ],
+    "entities_indices" : [ [ 45, 46 ] ]
+  }, {
+    "sentence_tokens" : [ "Pi", "-", "Qj2", "(", "12", ")", "QjQj", "-", "alpha", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "Lacking", "sufficient", "RSS", "observations", "to", "control", "the", "extent", "of", "regularizing", "the", "learned", "values", "via", "techniques", "like", "cross", "validation", ",", "we", "instead", "use", "an", "early", "stopping", "strategy", "to", "terminate", "the", "fitting", "process", "." ],
+    "entities_indices" : [ [ 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "floor", "plan", "of", "Level", "B-1", "is", "relatively", "simple", "like", "most", "real", "in", "building", "shopping", "environments", "." ],
+    "entities_indices" : [ [ 4, 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "particular", ",", "Canoe", "loops", "through", "all", "of", "the", "observed", "RSS", "measurements", "in", "I.", "For", "each", "RSS", "measurement", ",", "Canoe", "estimates", "I i", ",", "j", "and", "computes", "the", "associated", "estimation", "error", ":", "Ei", ",", "j", "=", "Ii", ",", "j", "-", "I i", ",", "j", "=(", "Ii", ",", "j", "-", "I0", ",", "j", "+10", "nlgPi", "-", "Qj2", ")", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 16, 17 ], [ 31, 32 ], [ 35, 36 ], [ 43, 44 ], [ 49, 50, 51, 52, 53, 54 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "APs", "deployed", "by", "the", "shopping", "mall", "are", "always", "named", "\"", "DeJiPlaza", "\"", "or", "\"", "DeJiPlaza-POS", "\"", "which", "refers", "to", "the", "name", "or", "the", "points-of-sale", "of", "the", "building", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "following", ",", "we", "briefly", "summarize", "various", "techniques", "in", "this", "field", ",", "which", "are", "close", "to", "our", "study.Indoor", "localization", ":", "A", "number", "of", "existing", "indoor", "localization", "systems", "has", "achieved", "a", "high", "position", "accuracy", "with", "dedicated", "hardware", "deployment", ",", "including", "localization", "based", "on", "ultra-high", "frequency", "(", "UHF", ")", "[", "14", "]", ",", "ultra-wide", "band", "(", "UWB", ")", "[", "15", "]", ",", "dedicated", "sensor", "or", "beacons", "[", "16", "]", "and", "others", "[", "17,18", "]", "." ],
+    "entities_indices" : [ [ 19, 20 ], [ 26, 27 ], [ 40, 41 ] ]
+  }, {
+    "sentence_tokens" : [ "Nonetheless", ",", "additional", "incentive", "mechanisms", "are", "required", "to", "attract", "enough", "participants", ",", "as", "anyone", "uploading", "his", "or", "her", "observed", "RSS", "measurements", "needs", "to", "obtain", "a", "benefit", ",", "like", "positioning", "accuracy", ",", "but", "will", "definitely", "still", "incur", "privacy", "risks", "[", "24", "]", "." ],
+    "entities_indices" : [ [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "reason", "is", "that", "different", "APs", "are", "observed", "in", "different", "records", "at", "different", "locations", "." ],
+    "entities_indices" : [ [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "other", "words", ",", "the", "observed", "RSS", "measurements", "may", "reflect", "the", "relative", "locations", "of", "the", "observations", "and", "the", "APs", ",", "so", "that", "they", "can", "contribute", "to", "estimates", "of", "the", "unobserved", "values.In", "the", "following", ",", "we", "present", "the", "design", "detail", "of", "Canoe", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "I", "'", "=[", "I1", "'", ",", "I2", "'", ",...,", "Ins", "'", "]", "=", "I1", ",", "A1", "'", "..." ],
+    "entities_indices" : [ [ 6, 7 ], [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "If", "the", "user", "makes", "a", "wrong", "turn", ",", "the", "distance", "will", "continue", "to", "increase", ",", "and", "Canoe", "will", "notify", "the", "user", "to", "move", "backward.Third", ",", "the", "performance", "of", "Canoe", "depends", "strongly", "on", "the", "complexity", "of", "the", "environments", "." ],
+    "entities_indices" : [ [ 28, 29 ] ]
+  }, {
+    "sentence_tokens" : [ "Motivated", "Scenario", "." ],
+    "entities_indices" : [ [ 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "case", "study", ",", "we", "select", "10", "locations", "(", "represented", "as", "red", "dots", "in", "Figure", "4", ")", ",", "and", "for", "each", "location", ",", "we", "randomly", "select", "10", "observations", "of", "RSS", "measurements", "." ],
+    "entities_indices" : [ [ 30, 31 ] ]
+  }, {
+    "sentence_tokens" : [ "Notice", "that", "we", "use", "calligraphic", "uppercase", "letters", "to", "denote", "matrices", "and", "normal", "uppercase", "letters", "with", "subscripts", "to", "denote", "the", "elements", "of", "the", "matrices.We", "take", "the", "following", "two", "assumptions", "in", "designing", "Canoe", ":", "(", "i", ")", "the", "Wi-Fi", "RSS", "distribution", ",", "and", "(", "ii", ")", "the", "Wi-Fi", "signal", "propagation", "path", "loss.RSS", "distribution", ":", "One", "common", "assumption", "is", "that", "the", "RSS", "measurements", "(", "in", "dBm", ")", "are", "distributed", "by", "the", "Gaussian", "distribution", "[", "2", "]", "described", "below", ",", "while", "some", "research", "has", "reported", "that", "this", "may", "not", "be", "always", "the", "case", "[", "11", "]", "." ],
+    "entities_indices" : [ [ 37, 38 ], [ 58, 59 ], [ 62, 63 ] ]
+  }, {
+    "sentence_tokens" : [ "Ins", ",", "Am", "'", "As", "the", "consumer-user", "moves", "in", "an", "arbitrary", "direction", ",", "his", "or", "her", "mobile", "device", "obtains", "nc", "observations", "of", "the", "RSS", "measurements", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "Nonetheless", ",", "in", "the", "literature", ",", "it", "is", "hard", "to", "tell", "which", "function", "could", "best", "approximate", "the", "real", "distribution", "of", "RSS", "measurements", "." ],
+    "entities_indices" : [ [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "Canoe", "uses", "the", "maximum", "likelihood", "estimation", "to", "maximize", "this", "likelihood", "(", "with", "respect", "to", "minimizing", "the", "distances", "between", "the", "computed", "values", "and", "the", "real", "values", "of", "the", "observed", "RSS", "measurements", ")", "." ],
+    "entities_indices" : [ [ 28, 29 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "development", "of", "the", "Internet", "of", "Things", "(", "IoT", ")", "has", "accelerated", "research", "in", "indoor", "navigation", "systems", ",", "a", "majority", "of", "which", "rely", "on", "adequate", "wireless", "signals", "and", "sources", "." ],
+    "entities_indices" : [ [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "With", "Canoe", ",", "a", "consumer-user", "with", "a", "smart", "phone", "continuously", "observes", "his", "and", "her", "current", "RSS", "measurements", "to", "compare", "to", "those", "published", "by", "the", "target", "shop", ",", "so", "that", "he", "or", "she", "can", "\"", "paddle", "his", "and", "her", "own", "Canoe", "\"", "to", "direct", "him", "and", "herself", "to", "the", "target", "shop", ",", "without", "disclosing", "his", "or", "her", "information", "and", "without", "requiring", "cooperation", "of", "any", "other", "consumers", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "contrast", ",", "the", "unobserved", "APs", "are", "those", "that", "are", "not", "observed", "in", "the", "record.Unobservable", "APs", ":", "Those", "are", "ones", "that", "cannot", "be", "observed", "at", "the", "observing", "location", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "shop-user", "can", "use", "Canoe", "to", "guide", "consumers", "to", "his", "and", "her", "own", "shop", ",", "by", "uploading", "the", "RSS", "measurements", "he", "or", "she", "collects", "at", "the", "entrance", "of", "the", "shop", ";", "a", "consumer-user", "can", "use", "Canoe", "to", "find", "his", "and", "her", "target", "shop", ",", "by", "continuously", "collecting", "RSS", "measurements", "along", "his", "or", "her", "path", "and", "comparing", "these", "measurements", "with", "those", "published", "by", "the", "shop-user", "." ],
+    "entities_indices" : [ [ 18, 19 ], [ 47, 48 ] ]
+  }, {
+    "sentence_tokens" : [ "Ins", ",", "A1", "'", "..." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "Nonetheless", ",", "since", "I", "'", "and", "I", "'", "'", "are", "sparse", "matrices", ",", "it", "is", "always", "difficult", "to", "compute", "the", "Euclidean", "distance", "between", "two", "elements", "Ii", "'", "in", "I", "'", "and", "Ij", "'", "'", "in", "I", "'", "'", "due", "to", "dimension", "mismatches", "." ],
+    "entities_indices" : [ [ 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "With", "a", "combination", "of", "a", "simulation", "study", "based", "on", "real", "data", "and", "live", "experiments", "on", "a", "real-world", "shopping", "mall", "environment", ",", "our", "experimental", "results", "show", "that", "Canoe", "is", "applicable", "and", "feasible", "in", "real-world", "indoor", "navigation", "environments", "." ],
+    "entities_indices" : [ [ 18, 19 ], [ 26, 27 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "addition", ",", "we", "do", "not", "assume", "other", "knowledge", ",", "including", "the", "floor-plan", ",", "the", "AP", "placement", ",", "power", "settings", ",", "historical", "RSS", "measurements", "or", "fingerprints.In", "any", "indoor", "environment", ",", "like", "that", "of", "a", "shopping", "mall", ",", "the", "accessible", "regions", "for", "personal", "traffic", "are", "limited", "by", "walls", "and", "indoor", "infrastructure", ",", "and", "individuals", "can", "only", "walk", "in", "nearly", "straight", "paths", "through", "the", "hallways", "[", "4", "]", "." ],
+    "entities_indices" : [ [ 15, 16 ], [ 22, 23 ], [ 35, 36 ] ]
+  }, {
+    "sentence_tokens" : [ "Studies", "on", "Wi-Fi", "fingerprinting", "approaches", "in", "[", "5,6,7", "]", "have", "shown", "that", "when", "a", "mobile", "device", "performs", "a", "Wi-Fi", "scan", ",", "some", "of", "the", "APs", "can", "be", "missed", "in", "a", "scanning", "cycle", ",", "causing", "dimensionality", "mismatches", "between", "different", "RSS", "observations", "." ],
+    "entities_indices" : [ [ 24, 25 ], [ 38, 39 ] ]
+  }, {
+    "sentence_tokens" : [ "(", "Pi", "-", "Qj", ")", "Ei", ",", "jln10", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "To", "implement", "Canoe", ",", "we", "have", "simulated", "a", "shopping", "scenario", "based", "on", "a", "public", "dataset", "of", "Wi-Fi", "RSS", "measurements", "." ],
+    "entities_indices" : [ [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "these", "solutions", ",", "users", "are", "required", "to", "continuously", "upload", "RSS", "measurements", "to", "the", "positioning", "server", "as", "training", "data", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "During", "the", "Wi-Fi", "signal", "propagation", ",", "the", "path", "loss", "varies", "exponentially", "with", "distance", ",", "(", "4", ")", "PL", "=", "PL0", "+10", "nlog10dd0+", "Xg.Here", ",", "PL0", "is", "the", "path", "loss", "at", "the", "reference", "distance", "d0", ",", "n", "is", "the", "propagation", "path", "loss", "exponent", ",", "d", "is", "the", "length", "of", "the", "path", ",", "d0", "is", "the", "reference", "distance", "(", "e.g", ".,", "d0", "=", "1m", ")", ",", "and", "Xg", "is", "a", "normal", "(", "or", "Gaussian", ")", "random", "variable", "with", "zero", "mean.For", "the", "sake", "of", "convenience", ",", "we", "use", "I0", ",", "j", "to", "represent", "the", "RSS", "measurement", "from", "the", "j-th", "AP", "at", "d0", "=", "1m", "of", "distance", ";", "we", "have", ":(", "5", ")", "Ii", ",", "j", "=", "-", "10nlgDi", ",", "j+", "I0", ",", "j", ",", "where", "I", "=", "I", "'", "union", "I", "'", "'", "is", "the", "set", "of", "all", "accessible", "RSS", "measurements", "and", "Di", ",", "j", "represents", "the", "physical", "distance", "between", "the", "locations", "of", "the", "i-th", "observation", "and", "the", "j-th", "AP.In", "Canoe", ",", "we", "use", "the", "maximum", "likelihood", "estimation", "to", "estimate", "locations", "." ],
+    "entities_indices" : [ [ 17, 18 ], [ 24, 25 ], [ 65, 66 ], [ 91, 92 ], [ 96, 97 ], [ 109, 110 ], [ 116, 117 ], [ 136, 137 ], [ 139, 140 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "our", "simulation", "and", "experiments", ",", "we", "find", "that", "no", "matter", "which", "value", "we", "set", "to", "n", ",", "the", "localization", "results", "remain", "the", "same", "." ],
+    "entities_indices" : [ [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "Then", ",", "what", "is", "left", "is", "a", "simple", "decision", ":", "if", "the", "distance", "between", "the", "consumer", "'", "s", "latest", "RSS", "observation", "and", "that", "of", "the", "target", "location", "is", "decreasing", ",", "the", "consumer", "should", "move", "forward", "(", "i.e", ".,", "continue", "in", "the", "same", "direction", ")", ";", "otherwise", ",", "he/she", "should", "move", "backward.Nonetheless", ",", "it", "is", "quite", "challenging", "to", "precisely", "estimate", "the", "distance", "between", "RSS", "observations", "." ],
+    "entities_indices" : [ [ 19, 20 ], [ 62, 63 ] ]
+  }, {
+    "sentence_tokens" : [ "I", "'", "nc", ",", "A1", "'", "..." ],
+    "entities_indices" : [ [ 0, 1, 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "is", "because", "the", "RSS", "measurements", "are", "unstable", "in", "real", "Wi-Fi", "environments", "." ],
+    "entities_indices" : [ [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "paper", ",", "we", "have", "presented", "Canoe", ",", "a", "novel", "indoor", "navigation", "system", ",", "which", "does", "not", "require", "the", "deployment", "of", "localization", "services", "and", "prior", "knowledge", "of", "the", "environment", "." ],
+    "entities_indices" : [ [ 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "instance", ",", "Tagoram", "[", "19", "]", ",", "which", "uses", "radio", "frequency", "identification", "devices", "(", "RFID", ")", ",", "can", "achieve", "mm-level", "accuracy.To", "reduce", "the", "cost", "in", "deploying", "an", "indoor", "localization", "system", ",", "a", "number", "of", "research", "efforts", "has", "leveraged", "existing", "Wi-Fi", "infrastructure", "and", "introduced", "location", "fingerprinting", "based", "on", "RSS", "measurements", "of", "the", "Wi-Fi", "signals", "(", "e.g", ".,", "radar", "[", "20", "]", ")", "." ],
+    "entities_indices" : [ [ 29, 30 ], [ 48, 49 ] ]
+  }, {
+    "sentence_tokens" : [ "(", "Pi", "-", "Qj", ")", "Ei", ",", "jln10", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "These", "locations", "give", "expression", "to", "the", "physical", "distances", "and", "relationship", "between", "each", "other", "(", "i.e", ".,", "the", "distribution", "of", "these", "locations", ")", ",", "which", "maximizes", "the", "likelihood", "of", "observing", "the", "known", "RSS", "measurements", "." ],
+    "entities_indices" : [ [ 31, 32 ] ]
+  }, {
+    "sentence_tokens" : [ "Then", ",", "we", "have", ":(", "6", ")", "Di", ",", "j", "=", "Pi", "-", "Qj2.From", "the", "set", "of", "all", "accessible", "RSS", "measurements", "I", ",", "it", "is", "possible", "to", "compute", "the", "distance", "Di", ",", "j", "for", "each", "observation", "and", "for", "each", "observed", "AP", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 11, 12 ], [ 19, 20 ], [ 30, 31 ], [ 40, 41 ] ]
+  }, {
+    "sentence_tokens" : [ "Notice", "that", "it", "is", "quite", "challenging", "to", "precisely", "estimate", "the", "distance", "between", "RSS", "observations", ",", "concerning", "the", "dimensionality", "mismatches", "in", "the", "signal", "space", "as", "various", "RSS", "observations", "can", "observe", "different", "APs", "." ],
+    "entities_indices" : [ [ 12, 13 ], [ 25, 26 ], [ 30, 31 ] ]
+  }, {
+    "sentence_tokens" : [ "After", "nc", "steps", ",", "we", "can", "have", "nc", "RSS", "records", "in", "total", ",", "which", "compose", "the", "matrix", "I", "'", "'", "." ],
+    "entities_indices" : [ [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "First", ",", "related", "to", "estimation", "model", ",", "we", "propose", "a", "novel", "algorithm", "based", "on", "maximum", "likelihood", "estimation.Second", ",", "regarding", "the", "learning", "algorithm", ",", "we", "adopt", "a", "stochastic", "gradient", "descent", "optimization", "technique", ",", "which", "is", "designed", "to", "iteratively", "learn", "the", "values", "of", "these", "parameters", "to", "maximize", "the", "likelihood", "of", "observing", "the", "RSS", "measurements", "with", "respect", "to", "the", "estimated", "locations", "of", "the", "consumer", ",", "the", "shops", "and", "the", "APs", "." ],
+    "entities_indices" : [ [ 50, 51 ], [ 66, 67 ] ]
+  }, {
+    "sentence_tokens" : [ "After", "that", ",", "overfitting", "occurs", ",", "and", "the", "learned", "locations", "start", "to", "describe", "the", "random", "noise", "in", "the", "RSS", "observations", "." ],
+    "entities_indices" : [ [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "consider", "the", "indoor", "navigation", "scenario", "based", "on", "the", "motivated", "scenario", "described", "in", "Section", "2.1", ",", "where", "the", "shop-users", "and", "the", "consumer-user", "observe", "the", "RSS", "measurements", "at", "their", "own", "locations", "from", "m", "APs", "with", "unknown", "locations", ",", "denoted", "as", ":(", "1", ")", "A", "={", "A1", ",", "A2", ",", "..." ],
+    "entities_indices" : [ [ 24, 25 ], [ 32, 33 ] ]
+  }, {
+    "sentence_tokens" : [ "Only", "if", "at", "least", "three", "common", "APs", "are", "shared", "between", "four", "observations", ",", "it", "is", "possible", "to", "compute", "the", "geographical", "relation", "between", "these", "observing", "locations", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "I", "'", "nc", ",", "Am", "'", "At", "each", "observing", "location", ",", "only", "the", "nearby", "APs", "can", "be", "observed", "." ],
+    "entities_indices" : [ [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "Our", "designed", "algorithm", "begins", "with", "assigning", "arbitrary", "initial", "values", "to", "the", "unknown", "parameters", ",", "including", "the", "locations", "of", "the", "consumer", ",", "target", "shops", ",", "APs", "and", "the", "AP", "'", "s", "power", "settings", "." ],
+    "entities_indices" : [ [ 24, 25 ], [ 27, 28 ] ]
+  }, {
+    "sentence_tokens" : [ "Thus", ",", "we", "have", "chosen", "to", "use", "the", "most", "widely", "used", "assumption.Assumption", "1", "(", "RSS", "distribution", ")", "." ],
+    "entities_indices" : [ [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "do", "not", "assume", "the", "prior", "knowledge", "of", "the", "locations", "of", "these", "shops", ",", "a", "floor", "plan", ",", "AP", "placement", "and", "power", "settings", ",", "or", "any", "other", "information", ",", "which", "is", "not", "accessible", "to", "the", "shop-users", "and", "customers", "(", "here", "denoted", "\"", "consumer-users", "\"", ")", "." ],
+    "entities_indices" : [ [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "Although", "the", "locations", "of", "the", "observations", "and", "the", "APs", "are", "unknown", ",", "the", "correlations", "between", "these", "locations", "really", "determine", "the", "RSS", "measurements", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "simulation", ",", "we", "generate", "RSS", "measurements", "observed", "by", "the", "shop-users", "and", "by", "the", "consumer-users", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "have", "conducted", "real-world", "experiments", "in", "a", "real", "shopping", "mall", "to", "evaluate", "the", "feasibility", "of", "Canoe", "in", "real-world", "practice", "." ],
+    "entities_indices" : [ [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "One", "interesting", "finding", "is", "that", "the", "probability", "of", "missing", "an", "AP", "is", "not", "obviously", "related", "to", "the", "averaged", "RSS", "value", "I.", "Observed", "APs", ":", "Those", "are", "observed", "in", "the", "RSS", "record", "(", "of", "one-time", "observation", ")", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 18, 19 ], [ 22, 23 ], [ 29, 30 ] ]
+  }, {
+    "sentence_tokens" : [ "After", "the", "consumer-user", "performs", "nine", "to", "11", "RSS", "observations", "(", "i.e", ".,", "after", "about", "half", "a", "minute", ")", ",", "the", "error", "rate", "is", "below", "10", "%", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "every", "afternoon", ",", "we", "used", "different", "mobile", "devices", "to", "collect", "the", "RSS", "measurements", "at", "each", "observing", "location", ",", "i.e", ".,", "the", "entrance", "of", "each", "shop", "(", "which", "are", "re-collected", "every", "about", "two", "hours", ",", "since", "RSS", "value", "is", "dynamic", ")", "." ],
+    "entities_indices" : [ [ 12, 13 ], [ 36, 37 ] ]
+  }, {
+    "sentence_tokens" : [ "With", "all", "of", "the", "acquired", "RSS", "observations", ",", "including", "those", "collected", "by", "the", "consumer", "'", "s", "mobile", "device", "as", "the", "user", "travels", "and", "those", "published", "at", "the", "target", "location", ",", "where", "each", "can", "be", "represented", "as", "a", "point", "in", "a", "same", "m-dimensional", "signal", "space", "(", "where", "m", "is", "equal", "to", "the", "number", "of", "the", "APs", ")", ",", "the", "physical", "distance", "between", "the", "locations", "of", "different", "RSS", "observations", "can", "be", "computed", "based", "on", "the", "Euclidean", "distance", "of", "these", "observations", "in", "the", "signal", "space", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 54, 55 ], [ 65, 66 ] ]
+  }, {
+    "sentence_tokens" : [ "(", "independent", "and", "identically", "distribution", ")", "assumption", ",", "(", "8)", "L", "(", "P", ",", "Q", ",", "I0", "|", "I", ")", "=", "product", "i", ",", "jfI", "(", "Ii", ",", "j", ")", ",", "is", "equivalent", "to", "minimizing", ":", "(", "9", ")", "F", "(", "I", "|", "|", "I ", ")", "=", "sum", "i", ",", "j", "(", "Ii", ",", "j", "-", "I i", ",", "j", ")", "2", "(", "10", ")", "=", "sum", "i", ",", "j", "(", "Ii", ",", "j", "-", "I0", ",", "j", "+10", "nlgPi", "-", "Qj2", ")", "2Based", "on", "this", "objective", "function", ",", "Canoe", "learns", "the", "location", "estimation", "model", "by", "fitting", "the", "previously", "observed", "RSS", "measurements", "in", "I.", "3.3", "." ],
+    "entities_indices" : [ [ 24, 25 ], [ 26, 27 ], [ 39, 40, 41, 42, 43, 44, 45 ], [ 52, 53 ], [ 70, 71 ], [ 88, 89 ], [ 99, 100 ] ]
+  }, {
+    "sentence_tokens" : [ "As", "a", "result", ",", "overfitting", "can", "easily", "occur", "(", "i.e", ".,", "the", "learned", "parameters", "deviate", "to", "describe", "the", "random", "noises", "of", "the", "RSS", "measurements", ",", "instead", "of", "the", "underlying", "physical", "relationship", "between", "the", "observing", "locations", "and", "those", "of", "the", "APs", ")", "." ],
+    "entities_indices" : [ [ 22, 23 ], [ 39, 40 ] ]
+  }, {
+    "sentence_tokens" : [ "Pi", "-", "Qj2", "(", "13", ")", "I0", ",", "jI0", ",", "j", "-", "alpha", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "Via", "simulations", ",", "we", "find", "that", ",", "in", "the", "iterative", "process", ",", "the", "fitting", "results", "(", "i.e", ".,", "the", "estimated", "locations", "of", "the", "consumer", "and", "the", "shops", "in", "P", ")", "quickly", "follows", "a", "similar", "location", "distribution", "with", "that", "of", "the", "real", "locations", ",", "before", "the", "fitting", "results", "start", "to", "describe", "the", "random", "noises", "of", "the", "RSS", "measurements", ",", "and", "the", "parameters", "are", "learned", "to", "be", "at", "increasingly", "erroneous", "locations", "." ],
+    "entities_indices" : [ [ 55, 56 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "first", "group", "uses", "RSS", "measurements", "of", "ns", "=", "16", "shops", "(", "with", "two", "shops", "in", "between", "neighboring", "observing", "locations", ")", ";", "the", "second", "group", "uses", "RSS", "measurements", "of", "ns", "=", "21", "shops", "(", "with", "three", "shops", "in", "between", "neighboring", "observing", "locations", ")", ",", "while", "the", "third", "group", "uses", "RSS", "measurements", "of", "ns", "=", "32", "random", "shops", "(", "with", "fourshops", "in", "between", "neighboring", "observing", "locations", ")", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 26, 27 ], [ 49, 50 ] ]
+  }, {
+    "sentence_tokens" : [ "Nonetheless", ",", "deploying", "a", "traditional", "LF", "based", "indoor", "positioning", "system", "is", "not", "easy", ",", "since", "the", "positioning", "server", "should", "collect", "the", "location", "fingerprints", "by", "performing", "a", "site-survey", "of", "the", "received", "signal", "strength", "(", "RSS", ")", "from", "multiple", "access", "points", "(", "APs", ")", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 33, 34 ], [ 40, 41 ] ]
+  }, {
+    "sentence_tokens" : [ "Learning", "Algorithm", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "Nonetheless", ",", "this", "can", "raise", "significant", "privacy", "concerns", ",", "and", "incentive", "mechanisms", "need", "to", "be", "in", "place", "to", "guarantee", "the", "number", "of", "voluntary", "participants.It", "is", "worth", "noting", "that", "the", "aforementioned", "crowd", "sourcing", "approaches", "are", "easy", "to", "deploy", ",", "while", "still", "enabling", "localization", "with", "high", "accuracy", "." ],
+    "entities_indices" : [ [ 41, 42 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "doing", "this", ",", "navigation", "errors", "can", "be", "greatly", "reduced", ",", "as", "every", "one", "of", "the", "RSS", "measurements", "can", "contribute", "to", "the", "navigation", ",", "rather", "than", "only", "a", "small", "portion", "of", "the", "measurements", "contributing.Designing", "such", "an", "MLE", "based", "algorithm", "is", "non", "trivial", ",", "as", "there", "are", "many", "parameters", "to", "consider", "for", "each", "RSS", "observation", "." ],
+    "entities_indices" : [ [ 16, 17 ], [ 52, 53 ] ]
+  }, {
+    "sentence_tokens" : [ "Our", "experiments", "are", "performed", "on", "this", "floor.On", "Floor", "B-1", ",", "there", "are", "in", "total", "71", "different", "shops", ",", "where", "55", "of", "these", "shops", "have", "an", "AP", "with", "a", "unique", "Service", "Set", "Identifier", "(", "SSID", ")", "." ],
+    "entities_indices" : [ [ 6, 7, 8, 9 ], [ 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "Thus", ",", "the", "experiment", "results", "may", "offer", "insight", "to", "the", "performance", "of", "Canoe", "in", "other", "buildings", ",", "which", "may", "not", "have", "publicly", "deployed", "APs.Based", "on", "the", "RSS", "measurements", "from", "these", "APs", ",", "Canoe", "provides", "navigation", "service", "to", "both", "the", "shop-users", "and", "the", "consumer-users", "." ],
+    "entities_indices" : [ [ 26, 27 ], [ 30, 31 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "a", "given", "RSS", "measurement", "record", ",", "these", "20", "APs", "can", "be", "classified", "into", "the", "following", "three", "categories", ":", "The", "proportions", "of", "the", "observed", "APs", ",", "the", "unobservable", "APs", ",", "and", "the", "missed", "APs", "are", "shown", "in", "Figure", "3", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 9, 10 ], [ 24, 25 ], [ 28, 29 ], [ 33, 34 ] ]
+  }, {
+    "sentence_tokens" : [ "Notice", "that", "in", "our", "design", ",", "we", "assume", "that", "a", "shop", "owner", "is", "willing", "to", "direct", "consumers", "to", "his", "and", "her", "shop", "by", "publishing", "the", "RSS", "measurements", "observed", "at", "his", "and", "her", "shop", "entrance", ",", "and", "we", "also", "assume", "that", "a", "consumer", "can", "easily", "acquire", "the", "RSS", "measurements", "at", "his", "and", "her", "current", "location", "using", "his", "and", "her", "mobile", "device", "." ],
+    "entities_indices" : [ [ 25, 26 ], [ 46, 47 ] ]
+  }, {
+    "sentence_tokens" : [ "It", "is", "a", "lightweight", "navigation", "system", "with", "no", "prior", "deployment", "of", "dedicated", "localization", "infrastructure", ",", "which", "requires", "only", "minor", "efforts", "of", "the", "shop", "owners", "and", "the", "consumer", "." ],
+    "entities_indices" : [ [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "Section", "5", ",", "we", "show", "live", "experiments", "in", "a", "real", "shopping", "mall", "to", "evaluate", "the", "effectiveness", "of", "Canoe", "." ],
+    "entities_indices" : [ [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "set", "of", "RSS", "measurements", "in", "dBm", "is", "represented", "as", "I", "in", "R", "-", "m", "x", "n", ",", "find", "P", "in", "R+", "m", "x", "2", "(", "or", "R+", "m", "x", "3", "in", "3D", "positioning", ")", "and", "Q", "in", "R+", "m", "x", "2", "(", "or", "R+", "m", "x", "3", ")", ",", "such", "that", "a", "divergence", "function", "F", "(", "I", "|", "|", "I ", ")", "is", "minimized", ",", "where", "a", ")", "I ", "is", "the", "matrix", "transformed", "from", "D ", "by", "Assumption", "2", ";", "and", "b", ")", "D ", "in", "Rm", "x", "n", "is", "the", "reconstructed", "matrix", "by", "Equation", "(", "6", ")", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 6, 7 ], [ 27, 28, 29, 30, 31 ], [ 32, 33 ], [ 38, 39, 40, 41, 42 ], [ 44, 45, 46, 47, 48 ], [ 55, 56, 57, 58, 59, 60, 61 ], [ 74, 75 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "experimental", "results", "show", "that", ",", "if", "50", "%", "of", "the", "shops", "publish", "their", "RSS", "measurements", ",", "Canoe", "can", "direct", "a", "consumer", "to", "any", "of", "these", "shops", "after", "nine", "RSS", "observations", "(", "i.e", ".,", "30", "s", ")", "with", "an", "error", "rate", "of", "only", "9", "%", "." ],
+    "entities_indices" : [ [ 14, 15 ], [ 29, 30 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "then", "introduce", "simulation", "results", "related", "to", "missed", "APs", "and", "the", "failure", "rate", ",", "the", "impact", "of", "overfitting", "and", "the", "effectiveness", "of", "our", "designed", "strategy", ",", "as", "well", "as", "the", "simulation", "results", "." ],
+    "entities_indices" : [ [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "As", "we", "discussed", "in", "Section", "3.4", ",", "overfitting", "is", "a", "key", "challenge", "in", "implementing", "Canoe", ",", "since", "there", "are", "a", "number", "of", "parameters", "relative", "to", "observed", "RSS", "measurements", "." ],
+    "entities_indices" : [ [ 26, 27 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "the", "APs", "that", "cannot", "be", "observed", "in", "an", "RSS", "observation", "(", "e.g", ".,", "when", "the", "APs", "are", "far", "from", "the", "observing", "location", ")", ",", "we", "tag", "the", "values", "in", "the", "corresponding", "dimensions", "as", "\"", "0", "\"", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 9, 10 ], [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "Noise", "in", "the", "RSS", "measurements", "observed", "by", "the", "consumer", "will", "cause", "the", "iteration", "process", "to", "end", "at", "a", "very", "early", "stage.In", "Canoe", ",", "we", "adopt", "a", "strategy", "to", "stop", "the", "iteration", "process", ",", "which", "is", "not", "based", "on", "the", "learned", "locations", ",", "but", "is", "based", "on", "the", "variation", "of", "the", "estimation", "error", "F", "(", "I", "|", "|", "I ", ")", "in", "Equation", "(", "9", ")", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 52, 53, 54, 55, 56, 57, 58 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "deployment", "of", "location", "fingerprinting", "systems", "is", "often", "divided", "into", "two", "phases", ":", "(", "i", ")", "an", "off-line", "phase", ",", "in", "which", "a", "site", "survey", "of", "the", "RSS", "from", "multiple", "APs", "are", "collected", ",", "and", "(", "ii", ")", "an", "on-line", "phase", ",", "in", "which", "a", "location", "can", "be", "computed", "based", "on", "the", "currently", "observed", "RSS", "measurements.The", "site", "survey", "in", "the", "off-line", "phase", "can", "be", "extremely", "time", "consuming", "and", "labor", "intensive", "." ],
+    "entities_indices" : [ [ 27, 28 ], [ 30, 31 ], [ 54, 55 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "addition", ",", "if", "the", "Wi-Fi", "scan", "operation", "is", "performed", "frequently", "(", "e.g", ".,", "every", "three", "seconds", ")", ",", "the", "number", "of", "missed", "APs", "will", "be", "greatly", "increased", "." ],
+    "entities_indices" : [ [ 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "addition", ",", "when", "the", "Wi-Fi", "scan", "operations", "are", "performed", "frequently", ",", "many", "more", "APs", "can", "be", "missed", "in", "the", "RSS", "observations", "." ],
+    "entities_indices" : [ [ 14, 15 ], [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "To", "check", "the", "floor-plan", "of", "Level", "B-1", ",", "one", "should", "choose", "the", "B1F", "tab", "on", "the", "top", "left", "of", "the", "page.Second", ",", "the", "accessible", "regions", "on", "Level", "B-1", "of", "this", "shopping", "mall", "are", "mainly", "composed", "of", "a", "main", "corridor", "and", "several", "small", "passages", "and", "many", "shops", "." ],
+    "entities_indices" : [ [ 5, 6, 7 ], [ 12, 13 ], [ 26, 27, 28 ], [ 31, 32 ] ]
+  }, {
+    "sentence_tokens" : [ "Notice", "that", "the", "unobservable", "APs", "must", "be", "unobserved", "APs", ",", "but", "unobserved", "APs", "may", "be", "observable", "in", "different", "observations", "at", "the", "same", "location.Missed", "APs", ":", "Those", "are", "observable", ",", "but", "unobserved", "in", "this", "record", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 8, 9 ], [ 12, 13 ], [ 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "Canoe", "addresses", "this", "problem", "by", "estimating", "all", "of", "the", "unobserved", "RSS", "values", "from", "all", "of", "the", "APs", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "It", "is", "worth", "noting", "that", "Canoe", "cannot", "provide", "accurate", "localization", ",", "but", "can", "provide", "precise", "navigation", "and", "does", "not", "require", "any", "deployment", "of", "localization", "services.Indoor", "Navigation", ":", "Most", "existing", "indoor", "navigation", "systems", "should", "first", "localize", "the", "users", "[", "25", "]", ",", "while", "in", "some", "approaches", ",", "users", "'", "absolute", "locations", "are", "not", "necessary", "." ],
+    "entities_indices" : [ [ 9, 10 ], [ 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "Then", ",", "the", "distance", "between", "the", "two", "locations", "Di", ",", "j", "is", "relevant", "to", "Pi", "and", "Qj", ",", "as", "shown", "in", "Figure", "2", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 14, 15 ], [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "I", "'", "'", "=[", "I1", "'", "'", ",", "I2", "'", "'", ",...,", "Inc", "'", "'", "]", "=", "I", "'", "1", ",", "A1", "'", "..." ],
+    "entities_indices" : [ [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "every", "step", "at", "a", "fixed", "distance", "d", "=", "3m", "on", "the", "direction", "(", "Different", "mobile", "devices", "can", "perform", "the", "Wi-Fi", "scans", "at", "different", "frequencies", "." ],
+    "entities_indices" : [ [ 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "is", "the", "only", "public", "dataset", "that", "we", "could", "find", "with", "recorded", "traces", "of", "signal", "strength", "of", "802.11", "APs", "." ],
+    "entities_indices" : [ [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "With", "Canoe", ",", "shop-owners", "can", "guide", "consumers", "to", "their", "shops", "by", "only", "publishing", "RSS", "measurements", "collected", "at", "the", "shop", "entrances", ",", "while", "the", "consumer", "can", "be", "guided", "to", "their", "target", "shop", "by", "continuously", "observing", "RSS", "measurements", "along", "their", "path", "." ],
+    "entities_indices" : [ [ 13, 14 ], [ 34, 35 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "RSS", "measurements", "(", "in", "dBm", ")", "are", "distributed", "by", "following", "the", "Gaussian", "distribution", ":", "(", "3", ")", "I", "~", "Gaussian", "(", "I ", ",", "sigma", "2", ")", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 5, 6 ], [ 22, 23 ], [ 24, 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "To", "address", "this", "issue", ",", "in", "this", "paper", "we", "present", "Canoe", ",", "an", "indoor", "navigation", "system", "that", "considers", "shopping", "mall", "scenarios", "." ],
+    "entities_indices" : [ [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "shopping", "mall", "that", "we", "chose", "is", "a", "representative", "indoor", "environment", "for", "navigation.First", ",", "this", "shopping", "mall", "has", "in", "total", "two", "buildings", "in", "operation", "(", "and", "two", "other", "buildings", "under", "construction", ")", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ ",", "IAm", ">", ",", "where", "the", "value", "in", "each", "dimension", "represents", "the", "RSS", "measurement", "from", "a", "unique", "AP", "." ],
+    "entities_indices" : [ [ 12, 13 ], [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "is", "because", "various", "RSS", "observations", "can", "observe", "different", "APs", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "d", "F", "d", "I0", "=", "I0", ",", "j", "+2", "alpha", "Ei", ",", "j", "where", "alpha", "is", "the", "step", "size", "and", "n", "is", "the", "propagation", "path", "loss", "exponent", "." ],
+    "entities_indices" : [ [ 0, 1, 2, 3 ], [ 10, 11 ], [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ ")", ",", "we", "find", "the", "closest", "off-line", "location", "and", "randomly", "select", "one", "record", "as", "the", "RSS", "measurements", "observed", "by", "the", "consumer", "." ],
+    "entities_indices" : [ [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "Because", "some", "records", "at", "this", "location", "observe", "this", "AP", ",", "we", "can", "compute", "an", "averaged", "RSS", "value", "I.In", "the", "dataset", ",", "a", "record", "can", "observe", "seven", "(", "20", "x", "34.29", "%", ")", "APs", "on", "average", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 15, 16 ], [ 32, 33 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "addition", ",", "if", "a", "subset", "of", "RSS", "observations", "that", "share", "a", "few", "common", "APs", "can", "be", "placed", "into", "a", "signal", "space", "with", "reduced", "dimensions", ",", "distance", "estimation", "based", "on", "insufficient", "information", "will", "often", "lead", "to", "significant", "errors.To", "address", "these", "issues", ",", "our", "designed", "system", "consists", "of", "three", "key", "components", ":", "(", "i", ")", "the", "estimation", "model", ",", "(", "ii", ")", "a", "learning", "algorithm", "and", "(", "iii", ")", "a", "mechanism", "to", "deal", "with", "overfitting", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "Then", ",", "we", "have", "implemented", "a", "prototype", "navigation", "application", "and", "conducted", "real-world", "experiments", "in", "an", "actual", "shopping", "mall", ",", "which", "will", "be", "introduced", "in", "Section", "5", "." ],
+    "entities_indices" : [ [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "addition", ",", "to", "further", "evaluate", "the", "effectiveness", "of", "Canoe", ",", "we", "have", "conducted", "live", "experiments", "in", "a", "real", "shopping", "mall", "." ],
+    "entities_indices" : [ [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "is", "even", "more", "likely", "in", "a", "shopping", "mall", ",", "in", "which", "there", "are", "typically", "competing", "shops", "selling", "similar", "or", "even", "the", "same", "commodities", "." ],
+    "entities_indices" : [ [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "With", "these", "fingerprints", ",", "the", "positioning", "server", "is", "able", "to", "localize", "a", "mobile", "device", "based", "on", "its", "RSS", "measurements", "." ],
+    "entities_indices" : [ [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "I", "'", "1", ",", "Am", "'", "..." ],
+    "entities_indices" : [ [ 0, 1, 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "main", "reason", "for", "this", "is", "that", "neither", "a", "shop", "owner", "nor", "a", "consumer", "can", "deploy", "such", "a", "service", "based", "on", "the", "existing", "positioning", "techniques", ",", "as", "these", "techniques", "generally", "rely", "on", "the", "maintenance", "of", "a", "large", "amount", "of", "dynamic", "location", "fingerprints", "and", "knowledge", "of", "the", "whole", "floor", "plan.The", "owner", "of", "the", "mall", "may", "have", "the", "means", ",", "but", "may", "also", "have", "scant", "motivation", "to", "deploy", "such", "an", "in", "building", "navigation", "service", ",", "since", "the", "owner", "cares", "more", "about", "whether", "a", "user", "is", "shopping", "in", "his", "or", "her", "mall", "rather", "than", "at", "whichever", "specific", "shops", "." ],
+    "entities_indices" : [ [ 52, 53 ], [ 88, 89 ] ]
+  }, {
+    "sentence_tokens" : [ "Notice", "that", "a", "Wi-Fi-based", "location", "fingerprinting", "(", "LF", ")", "technique", "is", "\"", "infrastructure-free", "\"", ":", "it", "can", "provide", "value", "added", "localization", "services", "for", "existing", "WLAN", "infrastructures", "without", "the", "need", "for", "any", "specialized", "hardware", "[", "2", "]", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "Our", "basic", "idea", "is", "to", "determine", "whether", "a", "consumer", "is", "approaching", "or", "leaving", "a", "target", "shop", ",", "by", "computing", "the", "distance", "between", "the", "RSS", "measurements", "at", "the", "consumer", "'", "s", "current", "location", "and", "those", "at", "the", "shop", "'", "s", "entrance", "." ],
+    "entities_indices" : [ [ 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "d", "F", "d", "P", "=", "Pi", "-", "2", "alpha", "." ],
+    "entities_indices" : [ [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "Internet", "of", "Things", "(", "IoT", ")", "is", "considered", "to", "be", "the", "next", "generation", "in", "industrial", "evolution", "[", "1", "]", "." ],
+    "entities_indices" : [ [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "assume", "that", "the", "shop", "owners", "(", "here", "denoted", "\"", "shop-users", "\"", ")", "are", "willing", "to", "publish", "the", "RSS", "measurements", "observed", "at", "the", "entrance", "of", "their", "shops", "." ],
+    "entities_indices" : [ [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "Finally", ",", "each", "of", "the", "RSS", "observations", "is", "represented", "as", "a", "point", "in", "a", "linear", "signal", "space", ",", "without", "reducing", "dimensionality", "." ],
+    "entities_indices" : [ [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "To", "generate", "a", "trace", ",", "we", "first", "randomly", "select", "a", "start", "location", "and", "a", "direction", "(", "north", ",", "south", ",", "west", "or", "east", ")", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "When", "the", "value", "of", "F", "(", "I", "|", "|", "I ", ")", "decreases", "with", "iterations", ",", "it", "also", "presents", "violent", "and", "frequent", "fluctuations", "." ],
+    "entities_indices" : [ [ 4, 5, 6, 7, 8, 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "As", "a", "result", ",", "both", "I", "'", "and", "I", "'", "'", "are", "sparse", "matrices.On", "a", "certain", "floor", "in", "a", "shopping", "mall", ",", "where", "the", "accessible", "region", "is", "limited", "and", "the", "path", "finding", "result", "to", "a", "shop", "can", "be", "relatively", "simple", ",", "Canoe", "can", "tell", "whether", "the", "user", "is", "approaching", "or", "leaving", "the", "target", "shop", "based", "on", "the", "distance", "between", "the", "user", "'", "s", "current", "location", "and", "destination", "." ],
+    "entities_indices" : [ [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "There", "are", "in", "total", "20", "APs", "in", "the", "dataset", "." ],
+    "entities_indices" : [ [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "estimation", "is", "based", "on", "the", "theory", "that", "various", "RSS", "measurements", "are", "not", "independent", "of", "each", "other", ",", "but", "are", "strongly", "correlated", "." ],
+    "entities_indices" : [ [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "last", "few", "years", ",", "a", "number", "of", "investigations", "introduced", "crowd-sourcing-based", "systems", "[", "3,9,21,22,23", "]", ",", "which", "require", "the", "users", "to", "continuously", "observe", "their", "RSS", "measurements", "and", "upload", "the", "data", "to", "the", "positioning", "server", "." ],
+    "entities_indices" : [ [ 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "Furthermore", ",", "even", "if", "a", "subset", "of", "RSS", "observations", "that", "share", "a", "few", "common", "APs", "can", "be", "placed", "into", "a", "signal", "space", "with", "reduced", "dimensions", ",", "distance", "estimation", "based", "on", "insufficient", "information", "will", "often", "lead", "to", "significant", "errors", "when", "making", "the", "\"", "forward", "\"", "or", "\"", "backward", "\"", "decisions.To", "address", "these", "challenges", ",", "in", "this", "paper", ",", "we", "propose", "a", "novel", "algorithm", "that", "computes", "the", "RSS", "values", "of", "missed", "APs", "from", "the", "values", "of", "those", "observed", ",", "using", "the", "maximum", "likelihood", "estimation", "(", "MLE", ")", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 14, 15 ], [ 65, 66 ], [ 69, 70 ] ]
+  }, {
+    "sentence_tokens" : [ "Our", "designed", "solution", "only", "utilizes", "the", "published", "RSS", "values", "at", "shop", "entrances", "for", "navigational", "computation", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "When", "an", "offline", "fingerprint", "database", "is", "available", ",", "traditional", "location", "fingerprinting", "techniques", "can", "be", "used", "to", "accurately", "locate", "the", "users", "and", "the", "shops", ";", "or", "when", "there", "are", "sufficient", "online", "RSS", "measurements", ",", "crowd", "sourced", "localization", "techniques", "can", "be", "used", "to", "generate", "fingerprints", "." ],
+    "entities_indices" : [ [ 30, 31 ], [ 35, 36 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "any", "RSS", "measurement", "Ii", ",", "j", "in", "I", ",", "we", "use", "Pi", "to", "denote", "the", "coordinates", "of", "the", "location", "of", "the", "ith", "observation", "and", "Qj", "to", "denote", "the", "coordinates", "of", "the", "location", "of", "the", "j-th", "AP", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 4, 5 ], [ 12, 13 ], [ 36, 37 ] ]
+  }, {
+    "sentence_tokens" : [ "Our", "experiments", "in", "a", "real", "shopping", "mall", "demonstrate", "that", "if", "50", "%", "of", "the", "shops", "publish", "their", "RSS", "values", ",", "Canoe", "can", "precisely", "navigate", "a", "consumer", "within", "30", "s", ",", "with", "an", "error", "rate", "below", "9", "%", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "By", "using", "the", "SSIDs", ",", "we", "choose", "only", "personally", "deployed", "APs", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "An", "AP", "is", "considered", "to", "be", "unobservable", "if", "no", "records", "at", "this", "location", "ever", "observed", "this", "AP", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "shop-users", "each", "continuously", "observe", "the", "RSS", "measurements", "at", "the", "entrance", "of", "their", "own", "shop", "and", "periodically", "publishes", "the", "averaged", "values", "over", "a", "given", "time", "interval", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "Canoe", ",", "since", "the", "RSS", "values", "from", "missed", "APs", "and", "unobservable", "APs", "can", "be", "estimated", ",", "the", "failure", "rate", "is", "always", "zero", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 9, 10 ], [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "Notice", "that", "we", "do", "not", "use", "Media", "Access", "Control", "(", "MAC", ")-addresses", "(", "but", "only", "the", "SSIDs", ")", "to", "distinguish", "the", "APs", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "Because", "the", "stochastic", "gradient", "descent", "optimization", "combines", "implementation", "ease", "with", "a", "relatively", "fast", "running", "time", ",", "we", "choose", "it", "as", "the", "learning", "algorithm", "in", "Canoe", "to", "minimize", "the", "objective", "function", "in", "Equation", "(", "10", ")", "." ],
+    "entities_indices" : [ [ 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "Indoor", "localization", "and", "navigation", "have", "been", "extensively", "studied", "." ],
+    "entities_indices" : [ [ 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "case", "where", "the", "consumer", "is", "far", "from", "the", "target", "shop", ",", "it", "is", "likely", "no", "APs", "will", "cover", "both", "locations", "." ],
+    "entities_indices" : [ [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "It", "only", "requires", "the", "information", "of", "relative", "distance", "between", "locations", "so", "as", "to", "perform", "the", "\"", "forward", "or", "backward", "\"", "navigation.At", "convergence", ",", "in", "theory", ",", "the", "locations", "of", "all", "of", "the", "observations", "and", "the", "APs", "(", "and", "also", "the", "power", "settings", "of", "the", "APs", ")", "can", "be", "estimated", "." ],
+    "entities_indices" : [ [ 35, 36 ], [ 44, 45 ] ]
+  }, {
+    "sentence_tokens" : [ "When", "we", "take", "Assumption", "1", ",", "we", "have", "the", "probability", "density", "function", ",", "(", "7", ")", "fI", "(", "Ii", ",", "j", ")", "=", "12", "pi", "sigma", "exp", "-", "(", "Ii", ",", "j", "-", "I i", ",", "j", ")", "22", "sigma", "2", "." ],
+    "entities_indices" : [ [ 16, 17 ], [ 18, 19 ], [ 29, 30 ] ]
+  }, {
+    "sentence_tokens" : [ "Nonetheless", ",", "the", "site-survey", "is", "extremely", "time", "consuming", "and", "labor", "intensive", ",", "which", "raises", "the", "cost", "of", "initiating", "an", "LF", "based", "localization", "service.Furthermore", ",", "the", "positioning", "server", "should", "perform", "the", "site-survey", "periodically", "to", "update", "the", "fingerprints", ",", "reducing", "errors", "caused", "by", "the", "changing", "Wi-Fi", "environment", ",", "but", "also", "raising", "the", "cost", "of", "maintaining", "the", "service", "." ],
+    "entities_indices" : [ [ 19, 20 ], [ 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "inadequate", "number", "of", "observed", "APs", "will", "always", "result", "in", "navigation", "failures", "(", "i.e", ".,", "no", "results", "can", "be", "computed", "regardless", "of", "accuracy", "or", "precision", ")", "." ],
+    "entities_indices" : [ [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "Unlike", "previous", "approaches", ",", "which", "require", "a", "guide", "to", "record", "various", "features", "along", "the", "path", ",", "and", "require", "the", "followers", "to", "move", "in", "exactly", "the", "same", "path", "as", "the", "guide", ",", "Canoe", "only", "requires", "the", "features", "at", "the", "customer", "and", "destination", "(", "RSS", "observations", "at", "the", "shops", ")", "and", "does", "not", "limit", "the", "paths", "of", "the", "followers", "." ],
+    "entities_indices" : [ [ 42, 43 ] ]
+  }, {
+    "sentence_tokens" : [ "When", "the", "estimation", "error", "increases", "the", "second", "time", ",", "the", "learned", "locations", "are", "distributed", "in", "a", "2D", "space", "and", "start", "to", "describe", "the", "random", "noise", "in", "the", "RSS", "observations", "." ],
+    "entities_indices" : [ [ 27, 28 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "our", "system", ",", "we", "do", "not", "assume", "any", "prior", "knowledge", ",", "such", "as", "floor-plan", "or", "the", "shop", "locations", ",", "access", "point", "placement", "or", "power", "settings", ",", "historical", "RSS", "measurements", "or", "fingerprints", ",", "etc.", "Instead", ",", "Canoe", "requires", "only", "that", "the", "shop", "owners", "collect", "and", "publish", "RSS", "values", "at", "the", "entrances", "of", "their", "shops", "and", "can", "direct", "a", "consumer", "to", "any", "of", "these", "shops", "by", "comparing", "the", "observed", "RSS", "values", "." ],
+    "entities_indices" : [ [ 28, 29 ], [ 46, 47 ], [ 68, 69 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "means", "that", "the", "learned", "parameters", "could", "deviate", "to", "describe", "the", "random", "noises", "of", "the", "RSS", "measurements", ",", "instead", "of", "the", "underlying", "physical", "relationship", "between", "the", "observing", "locations", "and", "those", "of", "the", "APs", "." ],
+    "entities_indices" : [ [ 15, 16 ], [ 32, 33 ] ]
+  }, {
+    "sentence_tokens" : [ "Signal", "propagation", "path", "loss", "model", ":", "The", "path", "loss", "(", "PL", ")", "that", "a", "signal", "encounters", "inside", "a", "building", "can", "be", "predicted", "by", "a", "radio", "propagation", "model.Assumption", "2", "(", "Signal", "propagation", "path", "loss", ")", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "is", "a", "very", "large", "shopping", "area", ",", "so", "that", "consumers", "in", "this", "mall", "may", "be", "confused", "when", "finding", "a", "certain", "shop", ",", "especially", "when", "this", "shop", "is", "new", "or", "recently", "moved", "to", "a", "new", "location", "in", "the", "mall", "." ],
+    "entities_indices" : [ [ 13, 14 ], [ 38, 39 ] ]
+  }, {
+    "sentence_tokens" : [ "Thus", ",", "an", "RSS", "observation", "can", "be", "represented", "as", "an", "m-dimensional", "vector", ":(", "2", ")", "I", "=<", "IA1", ",", "IA2", ",", "..." ],
+    "entities_indices" : [ [ 3, 4 ], [ 17, 18 ], [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "implies", "a", "strong", "need", "for", "a", "navigation", "service", ",", "which", "is", "capable", "of", "determining", "a", "target", "'", "s", "location", "relative", "to", "a", "user", "'", "s", "current", "location.With", "the", "development", "of", "IoT", ",", "navigation", "services", "can", "be", "implemented", "based", "on", "a", "localization", "system", ",", "which", "relies", "on", "users", "'", "mobile", "devices", "and", "adequate", "wireless", "signals", "and", "sources", "in", "the", "environment", ",", "in", "performing", "vector", "subtraction", "between", "two", "absolute", "locations", "." ],
+    "entities_indices" : [ [ 41, 42 ] ]
+  }, {
+    "sentence_tokens" : [ "As", "an", "example", ",", "Google", "'", "s", "Indoor", "Maps", "provides", "localization", "and", "navigation", "services", "based", "on", "publicly", "broadcast", "data", "(", "e.g", ".,", "Global", "Positioning", "System", "(", "GPS", ")", ",", "Wi-Fi", "and", "cell", "tower", "information", ")", ",", "and", "they", "are", "currently", "available", "only", "in", "selected", "locations", ",", "listed", "in", "[", "8]", "(", "i.e", ".,", "unavailable", "in", "all", "other", "locations", ")", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 26, 27 ], [ 32, 33 ] ]
+  }, {
+    "sentence_tokens" : [ "Shop", "owners", "are", "always", "willing", "to", "attract", "more", "consumers", "to", "increase", "sales", "through", "advertising", ",", "typically", "providing", "store", "information", "and", "sales", "and", "the", "corresponding", "locations", "." ],
+    "entities_indices" : [ [ 0, 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "is", "because", "these", "features", "will", "affect", "the", "values", "of", "the", "RSS", "measurements", "in", "I", "in", "the", "physical", "world", ",", "and", "the", "model", "in", "Canoe", "is", "fixed", "if", "Assumptions", "1", "and", "2", "are", "taken", "." ],
+    "entities_indices" : [ [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "use", "an", "m", "x", "nc", "matrix", "I", "'", "'", "to", "denote", "the", "observed", "RSS", "measurements", "." ],
+    "entities_indices" : [ [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "On", "the", "other", "hand", ",", "if", "two", "observing", "locations", "are", "close", "to", "each", "other", ",", "the", "observed", "APs", "can", "be", "significantly", "different", "because", "of", "the", "missed", "AP", "phenomenon", "." ],
+    "entities_indices" : [ [ 17, 18 ], [ 26, 27 ] ]
+  }, {
+    "sentence_tokens" : [ "Unlike", "existing", "indoor", "localization", "systems", ",", "which", "require", "a", "site", "survey", ",", "knowledge", "of", "the", "layout", "or", "floor-plan", ",", "AP", "placement", "and", "power", "settings", "or", "cooperative", "users", ",", "Canoe", "uses", "only", "the", "RSS", "measurements", "of", "the", "positioning", "customer", "and", "the", "participating", "shops", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 19, 20 ], [ 32, 33 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "use", "an", "m", "x", "ns", "matrix", "I", "'", "to", "denote", "the", "averaged", "RSS", "measurements", ",", "where", "ns", "is", "the", "number", "of", "shops", "." ],
+    "entities_indices" : [ [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "It", "is", "worth", "mentioning", "that", "the", "failure", "rate", "increases", "in", "the", "real", "shopping", "mall", "scenario", "via", "our", "real-world", "experiments", "." ],
+    "entities_indices" : [ [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "we", "simplify", "the", "navigation", "problem", "to", "a", "distance", "estimation", "problem", ",", "which", "is", "defined", "as", "follows", ":", "Problem", "1.Given", "I", "'", "and", "I", "'", "'", ",", "for", "an", "arbitrary", "element", "Ii", "'", "in", "I", "'", "as", "the", "target", ",", "and", "for", "each", "Ij", "'", "'", "in", "I", "'", "'", ",", "how", "do", "we", "compute", "the", "distance", "between", "the", "locations", "LIi", "'", "and", "LIj", "'", "'", "?" ],
+    "entities_indices" : [ [ 32, 33 ] ]
+  } ],
+  "emptySentences" : [ ]
+}

@@ -1,597 +1,1332 @@
-[ {
-  "sentence_tokens" : [ "FTY720", "induced", "dephosphorylation", "of", "AKT", "has", "been", "noted", "in", "other", "tumor", "types", "including", "mesothelioma", ",", "prostate", "cancer", "and", "breast", "cancer", "." ],
-  "event_indices" : [ 0, 1, 2, 3, 4, 5 ],
-  "type" : "Positive_regulation",
-  "polarity" : true,
-  "controller_indices" : [ 0, 1 ],
-  "controlled_indices" : [ 2, 3, 4, 5 ],
-  "trigger_indices" : [ 1, 2 ],
-  "rule_name" : "Positive_early_regulation",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "FTY720", "activated", "PP2A", "and", "led", "to", "decreased", "medulloblastoma", "PDX", "cell", "viability", ",", "proliferation", ",", "migration", "and", "invasion", "and", "G1", "cell", "cycle", "arrest", "in", "all", "three", "PDXs", "." ],
-  "event_indices" : [ 0, 1, 2, 3 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 0, 1 ],
-  "controlled_indices" : [ 2, 3 ],
-  "trigger_indices" : [ 1, 2 ],
-  "rule_name" : "Positive_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "In", "addition", ",", "the", "percentage", "of", "cells", "in", "S", "phase", "in", "the", "D425", "and", "D384", "PDXs", "was", "significantly", "decreased", "over", "baseline", "controls", ",", "further", "indicating", "G1", "cell", "cycle", "arrest", "(", "Fig.", "2B", ")", "." ],
-  "event_indices" : [ 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29 ],
-  "type" : "Negative_activation",
-  "polarity" : false,
-  "controller_indices" : [ 8, 9, 10 ],
-  "controlled_indices" : [ 26, 27, 28, 29 ],
-  "trigger_indices" : [ 18, 19 ],
-  "rule_name" : "Negative_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "In", "addition", "to", "reducing", "cell", "viability", ",", "FTY720", "has", "been", "shown", "to", "reduce", "tumor", "cell", "migration", "and", "invasion", "." ],
-  "event_indices" : [ 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18 ],
-  "type" : "Negative_activation",
-  "polarity" : false,
-  "controller_indices" : [ 7, 8 ],
-  "controlled_indices" : [ 17, 18 ],
-  "trigger_indices" : [ 12, 13 ],
-  "rule_name" : "Negative_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "FTY720", "Decreases", "Tumorigenesis", "in", "Group", "3", "Medulloblastoma", "Patient", "Derived", "Xenografts", "." ],
-  "event_indices" : [ 0, 1, 2, 3, 4, 5, 6, 7 ],
-  "type" : "Negative_activation",
-  "polarity" : false,
-  "controller_indices" : [ 0, 1 ],
-  "controlled_indices" : [ 6, 7 ],
-  "trigger_indices" : [ 1, 2 ],
-  "rule_name" : "Negative_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "In", "addition", ",", "FTY720", "treatment", "of", "human", "medulloblastoma", "PDXs", "resulted", "in", "activation", "of", "PP2A", "in", "the", "face", "of", "decreased", "overall", "PP2A", "protein", "expression", ",", "but", "changes", "in", "I2PP2A", "and", "SET", "or", "CIP2A", "expression", "were", "not", "consistently", "seen", "." ],
-  "event_indices" : [ 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 3, 4 ],
-  "controlled_indices" : [ 13, 14 ],
-  "trigger_indices" : [ 11, 12 ],
-  "rule_name" : "Positive_activation_syntax_results_in",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "FTY720", "is", "also", "thought", "to", "induce", "cell", "death", "through", "caspase", "dependent", "apoptosis", "as", "well", "as", "necroptosis", "and", "autophagy", "." ],
-  "event_indices" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 0, 1 ],
-  "controlled_indices" : [ 6, 7, 8 ],
-  "trigger_indices" : [ 5, 6 ],
-  "rule_name" : "Positive_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "In", "this", "study", ",", "we", "demonstrated", "that", "FTY720", "treatment", "led", "to", "decreased", "cell", "viability", ",", "migration", "and", "invasion", ",", "and", "caused", "cell", "cycle", "arrest", "and", "apoptosis", "in", "Group", "3", "medulloblastoma", "patient", "derived", "xenografts", "(", "PDXs", ")", "." ],
-  "event_indices" : [ 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 7, 8 ],
-  "controlled_indices" : [ 25, 26 ],
-  "trigger_indices" : [ 20, 21 ],
-  "rule_name" : "Positive_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "In", "this", "study", ",", "we", "demonstrated", "that", "FTY720", "treatment", "led", "to", "decreased", "cell", "viability", ",", "migration", "and", "invasion", ",", "and", "caused", "cell", "cycle", "arrest", "and", "apoptosis", "in", "Group", "3", "medulloblastoma", "patient", "derived", "xenografts", "(", "PDXs", ")", "." ],
-  "event_indices" : [ 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 7, 8 ],
-  "controlled_indices" : [ 21, 22, 23, 24 ],
-  "trigger_indices" : [ 20, 21 ],
-  "rule_name" : "Positive_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "In", "this", "study", ",", "treatment", "of", "human", "medulloblastoma", "PDX", "cells", "with", "FTY720", "arrested", "the", "cell", "cycle", "at", "G1", "." ],
-  "event_indices" : [ 11, 12, 13, 14, 15, 16 ],
-  "type" : "Negative_activation",
-  "polarity" : false,
-  "controller_indices" : [ 11, 12 ],
-  "controlled_indices" : [ 14, 15, 16 ],
-  "trigger_indices" : [ 12, 13 ],
-  "rule_name" : "Negative_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "In", "this", "study", ",", "treatment", "of", "human", "medulloblastoma", "PDX", "cells", "with", "FTY720", "arrested", "the", "cell", "cycle", "at", "G1", "." ],
-  "event_indices" : [ 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 ],
-  "type" : "Negative_activation",
-  "polarity" : false,
-  "controller_indices" : [ 7, 8 ],
-  "controlled_indices" : [ 14, 15, 16 ],
-  "trigger_indices" : [ 12, 13 ],
-  "rule_name" : "Negative_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "FTY720", "decreased", "viability", ",", "proliferation", ",", "and", "motility", "in", "Group", "3", "medulloblastoma", "PDX", "cells", "and", "significantly", "decreased", "tumor", "growth", "in", "vivo", "." ],
-  "event_indices" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 0, 1 ],
-  "controlled_indices" : [ 17, 18 ],
-  "trigger_indices" : [ 16, 17 ],
-  "rule_name" : "Negative_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "FTY720", "also", "significantly", "decreased", "tumor", "growth", "in", "vivo", "in", "mice", "bearing", "Group", "3", "medulloblastoma", "." ],
-  "event_indices" : [ 0, 1, 2, 3, 4, 5 ],
-  "type" : "Negative_activation",
-  "polarity" : false,
-  "controller_indices" : [ 0, 1 ],
-  "controlled_indices" : [ 4, 5 ],
-  "trigger_indices" : [ 3, 4 ],
-  "rule_name" : "Negative_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "FTY720", "decreased", "medulloblastoma", "tumor", "growth", "in", "vivo", "." ],
-  "event_indices" : [ 0, 1, 2, 3, 4 ],
-  "type" : "Negative_activation",
-  "polarity" : false,
-  "controller_indices" : [ 0, 1 ],
-  "controlled_indices" : [ 3, 4 ],
-  "trigger_indices" : [ 1, 2 ],
-  "rule_name" : "Negative_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "FTY720", "decreased", "medulloblastoma", "tumor", "growth", "in", "vivo", "." ],
-  "event_indices" : [ 0, 1, 2, 3 ],
-  "type" : "Negative_activation",
-  "polarity" : false,
-  "controller_indices" : [ 0, 1 ],
-  "controlled_indices" : [ 2, 3 ],
-  "trigger_indices" : [ 1, 2 ],
-  "rule_name" : "Negative_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "FTY720", "activated", "PP2A", "and", "led", "to", "decreased", "medulloblastoma", "PDX", "cell", "viability", ",", "proliferation", ",", "migration", "and", "invasion", "and", "G1", "cell", "cycle", "arrest", "in", "all", "three", "PDXs", "." ],
-  "event_indices" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 0, 1 ],
-  "controlled_indices" : [ 12, 13 ],
-  "trigger_indices" : [ 4, 5 ],
-  "rule_name" : "Positive_activation_syntax_7_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "FTY720", "activated", "PP2A", "and", "led", "to", "decreased", "medulloblastoma", "PDX", "cell", "viability", ",", "proliferation", ",", "migration", "and", "invasion", "and", "G1", "cell", "cycle", "arrest", "in", "all", "three", "PDXs", "." ],
-  "event_indices" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 0, 1 ],
-  "controlled_indices" : [ 19, 20, 21, 22 ],
-  "trigger_indices" : [ 4, 5 ],
-  "rule_name" : "Positive_activation_syntax_7_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "In", "2001", ",", "Sonoda", "and", "colleagues", "reported", "that", "FTY720", "induced", "apoptosis", "in", "human", "glioma", "cells", "and", "another", "group", "reported", "FTY720", "treatment", "led", "to", "apoptosis", "of", "glioma", "stem", "cells", "." ],
-  "event_indices" : [ 8, 9, 10, 11 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 8, 9 ],
-  "controlled_indices" : [ 10, 11 ],
-  "trigger_indices" : [ 9, 10 ],
-  "rule_name" : "Positive_early_activation",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "In", "2001", ",", "Sonoda", "and", "colleagues", "reported", "that", "FTY720", "induced", "apoptosis", "in", "human", "glioma", "cells", "and", "another", "group", "reported", "FTY720", "treatment", "led", "to", "apoptosis", "of", "glioma", "stem", "cells", "." ],
-  "event_indices" : [ 19, 20, 21, 22, 23, 24 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 19, 20 ],
-  "controlled_indices" : [ 23, 24 ],
-  "trigger_indices" : [ 21, 22 ],
-  "rule_name" : "Positive_activation_syntax_7_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Since", "activation", "of", "the", "tumor", "suppressor", "protein", ",", "PP2A", ",", "has", "been", "proposed", "as", "a", "mechanism", "by", "which", "FTY720", "produces", "its", "anti-tumor", "effects", ",", "the", "ability", "of", "FTY720", "to", "activate", "PP2A", "was", "investigated", "." ],
-  "event_indices" : [ 27, 28, 29, 30, 31 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 27, 28 ],
-  "controlled_indices" : [ 30, 31 ],
-  "trigger_indices" : [ 29, 30 ],
-  "rule_name" : "Positive_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Since", "activation", "of", "the", "tumor", "suppressor", "protein", ",", "PP2A", ",", "has", "been", "proposed", "as", "a", "mechanism", "by", "which", "FTY720", "produces", "its", "anti-tumor", "effects", ",", "the", "ability", "of", "FTY720", "to", "activate", "PP2A", "was", "investigated", "." ],
-  "event_indices" : [ 18, 19, 20, 21 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 18, 19 ],
-  "controlled_indices" : [ 20, 21 ],
-  "trigger_indices" : [ 19, 20 ],
-  "rule_name" : "Positive_activation_token_1_verb, pronominalMatch",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "FTY720", "produces", "these", "effects", "through", "multiple", "proposed", "mechanisms", ",", "including", "activation", "of", "the", "tumor", "suppressor", "protein", "phosphatase", "2A", "(", "PP2A", ")", ",", "down", "regulation", "of", "cyclin", "D1", ",", "inhibition", "of", "sphingosine", "kinase", "1", "(", "SphK1", ")", ",", "and", "generation", "of", "reactive", "oxygen", "species", "(", "ROS", ")", "." ],
-  "event_indices" : [ 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 19, 20 ],
-  "controlled_indices" : [ 16, 17 ],
-  "trigger_indices" : [ 10, 11 ],
-  "rule_name" : "Positive_activation_syntax_3_noun",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "In", "addition", ",", "FTY720", "treatment", "of", "human", "medulloblastoma", "PDXs", "resulted", "in", "activation", "of", "PP2A", "in", "the", "face", "of", "decreased", "overall", "PP2A", "protein", "expression", ",", "but", "changes", "in", "I2PP2A", "and", "SET", "or", "CIP2A", "expression", "were", "not", "consistently", "seen", "." ],
-  "event_indices" : [ 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 3, 4 ],
-  "controlled_indices" : [ 13, 14 ],
-  "trigger_indices" : [ 9, 10, 11, 12 ],
-  "rule_name" : "Positive_activation_syntax_8_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "In", "addition", ",", "FTY720", "treatment", "of", "human", "medulloblastoma", "PDXs", "resulted", "in", "activation", "of", "PP2A", "in", "the", "face", "of", "decreased", "overall", "PP2A", "protein", "expression", ",", "but", "changes", "in", "I2PP2A", "and", "SET", "or", "CIP2A", "expression", "were", "not", "consistently", "seen", "." ],
-  "event_indices" : [ 7, 8, 9, 10, 11, 12, 13, 14 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 7, 8 ],
-  "controlled_indices" : [ 13, 14 ],
-  "trigger_indices" : [ 9, 10, 11, 12 ],
-  "rule_name" : "Positive_activation_syntax_8_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Since", "FTY720", "treatment", "induced", "cancer", "cell", "apoptosis", "in", "other", "cancers", ",", "we", "next", "determined", "whether", "the", "decrease", "in", "cell", "viability", "observed", "with", "FTY720", "in", "medulloblastoma", "PDX", "cells", "may", "be", "secondary", "to", "apoptosis", "." ],
-  "event_indices" : [ 1, 2, 3, 4, 5, 6, 7 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 1, 2 ],
-  "controlled_indices" : [ 6, 7 ],
-  "trigger_indices" : [ 3, 4 ],
-  "rule_name" : "Positive_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "FTY720", "treatment", "increased", "PP2A", "activity", "." ],
-  "event_indices" : [ 0, 1, 2, 3, 4 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 0, 1 ],
-  "controlled_indices" : [ 3, 4 ],
-  "trigger_indices" : [ 2, 3 ],
-  "rule_name" : "Positive_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "FTY720", "treatment", "resulted", "in", "decreased", "viability", "and", "proliferation", "and", "led", "to", "apoptosis", "of", "medulloblastoma", "PDX", "cells", "." ],
-  "event_indices" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 0, 1 ],
-  "controlled_indices" : [ 11, 12 ],
-  "trigger_indices" : [ 9, 10 ],
-  "rule_name" : "Positive_activation_syntax_7_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "It", "has", "been", "hypothesized", "that", "FTY720", "activates", "PP2A", "thereby", "leading", "to", "tumor", "cell", "death", "." ],
-  "event_indices" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 0, 1 ],
-  "controlled_indices" : [ 7, 8 ],
-  "trigger_indices" : [ 6, 7 ],
-  "rule_name" : "Positive_activation_syntax_1_verb, pronominalMatch",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "It", "has", "been", "hypothesized", "that", "FTY720", "activates", "PP2A", "thereby", "leading", "to", "tumor", "cell", "death", "." ],
-  "event_indices" : [ 5, 6, 7, 8 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 5, 6 ],
-  "controlled_indices" : [ 7, 8 ],
-  "trigger_indices" : [ 6, 7 ],
-  "rule_name" : "Positive_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "FTY720", "produces", "these", "effects", "through", "multiple", "proposed", "mechanisms", ",", "including", "activation", "of", "the", "tumor", "suppressor", "protein", "phosphatase", "2A", "(", "PP2A", ")", ",", "down", "regulation", "of", "cyclin", "D1", ",", "inhibition", "of", "sphingosine", "kinase", "1", "(", "SphK1", ")", ",", "and", "generation", "of", "reactive", "oxygen", "species", "(", "ROS", ")", "." ],
-  "event_indices" : [ 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ],
-  "type" : "Negative_activation",
-  "polarity" : false,
-  "controller_indices" : [ 19, 20 ],
-  "controlled_indices" : [ 13, 14, 15, 16 ],
-  "trigger_indices" : [ 10, 11 ],
-  "rule_name" : "Positive_activation_syntax_3_noun",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "In", "this", "study", ",", "we", "demonstrated", "that", "FTY720", "treatment", "led", "to", "decreased", "cell", "viability", ",", "migration", "and", "invasion", ",", "and", "caused", "cell", "cycle", "arrest", "and", "apoptosis", "in", "Group", "3", "medulloblastoma", "patient", "derived", "xenografts", "(", "PDXs", ")", "." ],
-  "event_indices" : [ 7, 8, 9, 10, 11, 12, 13, 14 ],
-  "type" : "Negative_activation",
-  "polarity" : false,
-  "controller_indices" : [ 7, 8 ],
-  "controlled_indices" : [ 12, 13, 14 ],
-  "trigger_indices" : [ 9, 10 ],
-  "rule_name" : "Positive_activation_syntax_7_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Our", "results", "provide", "evidence", "that", "FTY720", "decreased", "medulloblastoma", "cell", "viability", ",", "migration", ",", "invasion", ",", "and", "in", "vivo", "tumor", "growth", "." ],
-  "event_indices" : [ 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 ],
-  "type" : "Negative_activation",
-  "polarity" : false,
-  "controller_indices" : [ 5, 6 ],
-  "controlled_indices" : [ 13, 14 ],
-  "trigger_indices" : [ 6, 7 ],
-  "rule_name" : "Negative_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Our", "results", "provide", "evidence", "that", "FTY720", "decreased", "medulloblastoma", "cell", "viability", ",", "migration", ",", "invasion", ",", "and", "in", "vivo", "tumor", "growth", "." ],
-  "event_indices" : [ 5, 6, 7, 8 ],
-  "type" : "Negative_activation",
-  "polarity" : false,
-  "controller_indices" : [ 5, 6 ],
-  "controlled_indices" : [ 7, 8 ],
-  "trigger_indices" : [ 6, 7 ],
-  "rule_name" : "Negative_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Our", "results", "provide", "evidence", "that", "FTY720", "decreased", "medulloblastoma", "cell", "viability", ",", "migration", ",", "invasion", ",", "and", "in", "vivo", "tumor", "growth", "." ],
-  "event_indices" : [ 5, 6, 7, 8, 9, 10 ],
-  "type" : "Negative_activation",
-  "polarity" : false,
-  "controller_indices" : [ 5, 6 ],
-  "controlled_indices" : [ 8, 9, 10 ],
-  "trigger_indices" : [ 6, 7 ],
-  "rule_name" : "Negative_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Therefore", ",", "we", "investigated", "whether", "FTY720", "treatment", "decreased", "medulloblastoma", "cell", "migration", "and", "invasion", "." ],
-  "event_indices" : [ 5, 6, 7, 8, 9, 10, 11, 12, 13 ],
-  "type" : "Negative_activation",
-  "polarity" : false,
-  "controller_indices" : [ 5, 6 ],
-  "controlled_indices" : [ 12, 13 ],
-  "trigger_indices" : [ 7, 8 ],
-  "rule_name" : "Negative_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Therefore", ",", "we", "investigated", "whether", "FTY720", "treatment", "decreased", "medulloblastoma", "cell", "migration", "and", "invasion", "." ],
-  "event_indices" : [ 5, 6, 7, 8, 9 ],
-  "type" : "Negative_activation",
-  "polarity" : false,
-  "controller_indices" : [ 5, 6 ],
-  "controlled_indices" : [ 8, 9 ],
-  "trigger_indices" : [ 7, 8 ],
-  "rule_name" : "Negative_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Therefore", ",", "we", "investigated", "whether", "FTY720", "treatment", "decreased", "medulloblastoma", "cell", "migration", "and", "invasion", "." ],
-  "event_indices" : [ 5, 6, 7, 8, 9, 10, 11 ],
-  "type" : "Negative_activation",
-  "polarity" : false,
-  "controller_indices" : [ 5, 6 ],
-  "controlled_indices" : [ 9, 10, 11 ],
-  "trigger_indices" : [ 7, 8 ],
-  "rule_name" : "Negative_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "FTY720", "has", "been", "shown", "to", "decrease", "cancer", "cell", "viability", "in", "a", "variety", "of", "tumor", "types", ",", "so", "we", "examined", "whether", "FTY720", "would", "decrease", "cell", "viability", "in", "medulloblastoma", "PDXs", "." ],
-  "event_indices" : [ 20, 21, 22, 23, 24, 25 ],
-  "type" : "Negative_activation",
-  "polarity" : false,
-  "controller_indices" : [ 20, 21 ],
-  "controlled_indices" : [ 23, 24, 25 ],
-  "trigger_indices" : [ 22, 23 ],
-  "rule_name" : "Negative_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "FTY720", "decreased", "viability", ",", "proliferation", ",", "and", "motility", "in", "Group", "3", "medulloblastoma", "PDX", "cells", "and", "significantly", "decreased", "tumor", "growth", "in", "vivo", "." ],
-  "event_indices" : [ 0, 1, 2, 3, 4, 5 ],
-  "type" : "Negative_activation",
-  "polarity" : false,
-  "controller_indices" : [ 0, 1 ],
-  "controlled_indices" : [ 4, 5 ],
-  "trigger_indices" : [ 1, 2 ],
-  "rule_name" : "Negative_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "FTY720", "induced", "PP2A", "activation", "has", "been", "postulated", "to", "occur", "through", "direct", "effects", "or", "through", "targeting", "of", "I2PP2A", "and", "SET", "or", "CIP2A", ",", "the", "endogenous", "inhibitors", "of", "PP2A", "." ],
-  "event_indices" : [ 0, 1, 2, 3 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 0, 1 ],
-  "controlled_indices" : [ 2, 3 ],
-  "trigger_indices" : [ 1, 2 ],
-  "rule_name" : "Positive_early_activation",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "FTY720", "activated", "PP2A", "and", "led", "to", "decreased", "medulloblastoma", "PDX", "cell", "viability", ",", "proliferation", ",", "migration", "and", "invasion", "and", "G1", "cell", "cycle", "arrest", "in", "all", "three", "PDXs", "." ],
-  "event_indices" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 ],
-  "type" : "Negative_activation",
-  "polarity" : false,
-  "controller_indices" : [ 0, 1 ],
-  "controlled_indices" : [ 9, 10, 11 ],
-  "trigger_indices" : [ 4, 5 ],
-  "rule_name" : "Positive_activation_syntax_7_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "In", "this", "study", ",", "we", "demonstrated", "that", "FTY720", "treatment", "led", "to", "decreased", "cell", "viability", ",", "migration", "and", "invasion", ",", "and", "caused", "cell", "cycle", "arrest", "and", "apoptosis", "in", "Group", "3", "medulloblastoma", "patient", "derived", "xenografts", "(", "PDXs", ")", "." ],
-  "event_indices" : [ 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 7, 8 ],
-  "controlled_indices" : [ 17, 18 ],
-  "trigger_indices" : [ 9, 10 ],
-  "rule_name" : "Positive_activation_syntax_7_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Group", "3", "tumors", "account", "for", "28", "%", "of", "medulloblastomas", "and", "have", "the", "worst", "prognosis", "." ],
-  "entity_one_indices" : [ 8, 9 ],
-  "entity_two_indices" : [ 2, 3 ]
-}, {
-  "sentence_tokens" : [ "FTY720", ",", "an", "immunosuppressant", "currently", "approved", "for", "treatment", "of", "multiple", "sclerosis", ",", "has", "shown", "antitumor", "effects", "in", "several", "human", "cancer", "cell", "lines", "." ],
-  "entity_one_indices" : [ 9, 10, 11 ],
-  "entity_two_indices" : [ 0, 1 ]
-}, {
-  "sentence_tokens" : [ "PP2A", "activation", "was", "measured", "via", "phosphatase", "activation", "kit", "." ],
-  "entity_one_indices" : [ 5, 6 ],
-  "entity_two_indices" : [ 0, 1 ]
-}, {
-  "sentence_tokens" : [ "A", "flank", "model", "using", "D425", "human", "medulloblastoma", "PDX", "cells", "was", "used", "to", "assess", "the", "in", "vivo", "effects", "of", "FTY720", "." ],
-  "entity_one_indices" : [ 18, 19 ],
-  "entity_two_indices" : [ 6, 7 ]
-}, {
-  "sentence_tokens" : [ "These", "results", "suggest", "that", "FTY720", "should", "be", "investigated", "further", "as", "a", "potential", "therapeutic", "agent", "for", "medulloblastoma", "." ],
-  "entity_one_indices" : [ 15, 16 ],
-  "entity_two_indices" : [ 4, 5 ]
-}, {
-  "sentence_tokens" : [ "Medulloblastoma", "is", "the", "most", "common", "malignant", "primary", "nervous", "system", "tumor", "in", "children", "." ],
-  "entity_one_indices" : [ 7, 8, 9, 10 ],
-  "entity_two_indices" : [ 0, 1 ]
-}, {
-  "sentence_tokens" : [ "Group", "3", "tumors", "account", "for", "approximately", "25", "-", "30", "%", "of", "medulloblastomas", "and", "have", "the", "worst", "prognosis", "." ],
-  "entity_one_indices" : [ 11, 12 ],
-  "entity_two_indices" : [ 2, 3 ]
-}, {
-  "sentence_tokens" : [ "Over", "the", "past", "decade", ",", "FTY720", "has", "also", "been", "shown", "to", "have", "anti-tumor", "properties", "in", "several", "human", "malignancies", ",", "including", "glioblastoma", "." ],
-  "entity_one_indices" : [ 20, 21 ],
-  "entity_two_indices" : [ 5, 6 ]
-}, {
-  "sentence_tokens" : [ "Because", "of", "the", "anti-tumor", "properties", "of", "FTY720", "seen", "in", "other", "human", "malignancies", ",", "we", "hypothesized", "that", "it", "may", "also", "have", "anti-tumor", "effects", "on", "medulloblastoma", "." ],
-  "entity_one_indices" : [ 23, 24 ],
-  "entity_two_indices" : [ 6, 7 ]
-}, {
-  "sentence_tokens" : [ "H", "&", "E", "staining", "confirmed", "that", "the", "PDXs", "represented", "medulloblastoma", "histologically", "(", "Fig.", "1A", ",", "top", "panel", ")", "." ],
-  "entity_one_indices" : [ 15, 16, 17 ],
-  "entity_two_indices" : [ 9, 10 ]
-}, {
-  "sentence_tokens" : [ "S", "phase", "in", "the", "D341", "PDX", "was", "also", "decreased", ",", "but", "did", "not", "reach", "statistical", "significance", "." ],
-  "entity_one_indices" : [ 5, 6 ],
-  "entity_two_indices" : [ 0, 1, 2 ]
-}, {
-  "sentence_tokens" : [ "FTY720", "significantly", "decreased", "viability", "in", "all", "3", "medulloblastoma", "PDX", "cell", "lines", "(", "Fig.", "3A", ")", "." ],
-  "entity_one_indices" : [ 7, 8 ],
-  "entity_two_indices" : [ 0, 1 ]
-}, {
-  "sentence_tokens" : [ "The", "lethal", "dose", "50", "%", "(", "LD", ")", "for", "FTY720", "was", "7.5", "mu", "M", "in", "D425", ",", "5.5", "mu", "M", "in", "D341", ",", "and", "7.3", "mu", "M", "in", "D384", "cells", "." ],
-  "entity_one_indices" : [ 9, 10 ],
-  "entity_two_indices" : [ 6, 7 ]
-}, {
-  "sentence_tokens" : [ "Cell", "proliferation", "was", "also", "measured", "following", "treatment", "for", "24", "hours", "with", "increasing", "concentrations", "of", "FTY720", "." ],
-  "entity_one_indices" : [ 14, 15 ],
-  "entity_two_indices" : [ 0, 1, 2 ]
-}, {
-  "sentence_tokens" : [ "Cleaved", "PARP", "was", "also", "increased", "in", "the", "D341", "cell", "line", "with", "FTY720", "treatment", "(", "Fig.", "4B", ")", "." ],
-  "entity_one_indices" : [ 11, 12 ],
-  "entity_two_indices" : [ 1, 2 ]
-}, {
-  "sentence_tokens" : [ "Once", "tumors", "were", "palpable", "(", "100", "mm", ")", "animals", "were", "randomized", "to", "receive", "daily", "oral", "doses", "of", "vehicle", "(", "N", "=", "7", ")", "or", "FTY720", "(", "10", "mg/kg/day", ")", "(", "N", "=", "8)", "for", "5", "weeks", "." ],
-  "entity_one_indices" : [ 24, 25 ],
-  "entity_two_indices" : [ 1, 2 ]
-}, {
-  "sentence_tokens" : [ "The", "animals", "treated", "with", "FTY720", "showed", "a", "significant", "decrease", "in", "tumor", "volume", "when", "compared", "to", "vehicle", "treated", "animals", "(", "Fig.", "6A", ")", "." ],
-  "entity_one_indices" : [ 10, 11 ],
-  "entity_two_indices" : [ 4, 5 ]
-}, {
-  "sentence_tokens" : [ "The", "median", "time", "for", "tumor", "doubling", "in", "the", "vehicle", "treated", "group", "was", "4", "days", "(", "range", ":", "2", "-", "8", "days", ")", "compared", "to", "8", "days", "(", "range", ":", "5", "-", "13", "days", ")", "in", "the", "FTY720", "treated", "animals", "." ],
-  "entity_one_indices" : [ 36, 37 ],
-  "entity_two_indices" : [ 4, 5 ]
-}, {
-  "sentence_tokens" : [ "FTY720", ",", "a", "metabolite", "from", "Isaria", "sinclairii", ",", "was", "developed", "as", "an", "immunosuppressant", "for", "use", "in", "transplantation", ",", "and", "is", "currently", "utilized", "in", "the", "treatment", "of", "multiple", "sclerosis", "." ],
-  "entity_one_indices" : [ 26, 27, 28 ],
-  "entity_two_indices" : [ 0, 1 ]
-}, {
-  "sentence_tokens" : [ "These", "promising", "findings", "prompted", "an", "investigation", "of", "the", "potential", "impact", "of", "FTY720", "on", "medulloblastoma.The", "mechanism", "of", "action", "of", "FTY720", "in", "cancer", "cells", "is", "not", "completely", "defined", "." ],
-  "entity_one_indices" : [ 18, 19 ],
-  "entity_two_indices" : [ 11, 12 ]
-}, {
-  "sentence_tokens" : [ "Permpongkosol", "et", "al.", "showed", "an", "increased", "percentage", "of", "DU145", "prostate", "cancer", "cells", "in", "G1", "and", "decreased", "percentage", "in", "S", "phase", "following", "FTY720", ",", "but", "at", "a", "much", "higher", "dose", "(", "20", "mu", "M", ")", "." ],
-  "entity_one_indices" : [ 21, 22 ],
-  "entity_two_indices" : [ 18, 19, 20 ]
-}, {
-  "sentence_tokens" : [ "Increased", "percentages", "of", "cells", "in", "G1", "were", "seen", "with", "FTY720", "treatment", "of", "both", "gastric", "cancer", "cells", "and", "in", "acute", "myeloid", "leukemia", "cells", "in", "concentrations", "similar", "to", "those", "utilized", "in", "the", "current", "study", "(", "5", "mu", "M", ")", "." ],
-  "entity_one_indices" : [ 18, 19, 20, 21 ],
-  "entity_two_indices" : [ 9, 10 ]
-}, {
-  "sentence_tokens" : [ "Another", "study", "in", "human", "prostate", "cancer", "cells", "demonstrated", "a", "decrease", "in", "migration", "and", "invasion", "with", "FTY720", "treatment", "." ],
-  "entity_one_indices" : [ 15, 16 ],
-  "entity_two_indices" : [ 13, 14 ]
-}, {
-  "sentence_tokens" : [ "Other", "investigators", "have", "proposed", "changes", "in", "ERK", "phosphorylation", "as", "a", "potential", "downstream", "target", "of", "FTY720", "." ],
-  "entity_one_indices" : [ 14, 15 ],
-  "entity_two_indices" : [ 6, 7 ]
-}, {
-  "sentence_tokens" : [ "Rincon", "and", "colleagues", "showed", "decreased", "activation", "of", "ERK", "in", "BT-474", "and", "MDA-MB-231", "breast", "cancer", "cells", "following", "treatment", "with", "FTY720", "." ],
-  "entity_one_indices" : [ 18, 19 ],
-  "entity_two_indices" : [ 7, 8 ]
-}, {
-  "sentence_tokens" : [ "When", "these", "cells", "were", "exposed", "to", "10", "mu", "M", "FTY720", ",", "ERK", "phosphorylation", "was", "decreased", "." ],
-  "entity_one_indices" : [ 11, 12 ],
-  "entity_two_indices" : [ 9, 10 ]
-}, {
-  "sentence_tokens" : [ "On", "the", "contrary", ",", "phosphorylation", "of", "ERK", "was", "increased", "in", "the", "D341", "PDX", "cells", "with", "increasing", "doses", "of", "FTY720", "." ],
-  "entity_one_indices" : [ 18, 19 ],
-  "entity_two_indices" : [ 6, 7 ]
-}, {
-  "sentence_tokens" : [ "We", "believe", "that", "FTY720", "would", "be", "applicable", "to", "the", "orthotopic", "location", "as", "it", "has", "been", "documented", "to", "pass", "the", "blood", "brain", "barrier", "and", "have", "effects", "upon", "intracranial", "glioblastoma", "as", "well", "as", "other", "intracranial", "pathologies", "." ],
-  "entity_one_indices" : [ 27, 28 ],
-  "entity_two_indices" : [ 3, 4 ]
-}, {
-  "sentence_tokens" : [ "These", "findings", "are", "novel", "as", "FTY720", "has", "not", "yet", "been", "studied", "as", "a", "therapeutic", "tool", "for", "medulloblastoma", "." ],
-  "entity_one_indices" : [ 16, 17 ],
-  "entity_two_indices" : [ 5, 6 ]
-}, {
-  "sentence_tokens" : [ "Furthermore", ",", "the", "use", "of", "human", "PDX", "medulloblastoma", "cell", "lines", "in", "these", "studies", "is", "also", "important", "as", "it", "provided", "a", "clinically", "relevant", "model", "for", "the", "preclinical", "study", "of", "this", "compound", "in", "medulloblastoma", "." ],
-  "entity_one_indices" : [ 31, 32 ],
-  "entity_two_indices" : [ 7, 8 ]
-}, {
-  "sentence_tokens" : [ "These", "data", "suggest", "that", "FTY720", "may", "be", "a", "novel", "therapeutic", "for", "treating", "medulloblastoma", "and", "further", "clinical", "evaluation", "is", "warranted", "." ],
-  "entity_one_indices" : [ 12, 13 ],
-  "entity_two_indices" : [ 4, 5 ]
-}, {
-  "sentence_tokens" : [ "All", "three", "medulloblastoma", "PDXs", "were", "verified", "within", "the", "last", "12", "months", "using", "short", "tandem", "repeat", "analysis", "(", "Heflin", "Center", "for", "Genomic", "Sciences", ",", "UAB", ",", "Birmingham", ",", "AL", ")", "." ],
-  "entity_one_indices" : [ 27, 28 ],
-  "entity_two_indices" : [ 2, 3 ]
-}, {
-  "sentence_tokens" : [ "FTY720", "was", "purchased", "from", "Cayman", "Chemical", "(", "10006292", ",", "Cayman", "Chemical", ",", "Ann", "Arbor", ",", "MI", ")", "." ],
-  "entity_one_indices" : [ 15, 16 ],
-  "entity_two_indices" : [ 0, 1 ]
-}, {
-  "sentence_tokens" : [ "Negative", "controls", "(", "rabbit", "IgG", ",", "1", "mu", "g/mL", ",", "EMD", "Millipore", ")", "were", "included", "with", "each", "run", "." ],
-  "entity_one_indices" : [ 10, 11 ],
-  "entity_two_indices" : [ 4, 5 ]
-}, {
-  "sentence_tokens" : [ "Routine", "hematoxylin", "and", "eosin", "staining", "was", "performed", "on", "each", "specimen", "." ],
-  "entity_one_indices" : [ 3, 4 ],
-  "entity_two_indices" : [ 1, 2 ]
-}, {
-  "sentence_tokens" : [ "Precision", "Plus", "Protein", "Kaleidoscope", "Standards", "(", "161-0375", ",", "Bio-Rad", ",", "Hercules", ",", "CA", ")", "were", "used", "for", "molecular", "weight", "markers", "to", "confirm", "expected", "size", "of", "target", "proteins", "." ],
-  "entity_one_indices" : [ 12, 13 ],
-  "entity_two_indices" : [ 0, 1, 2, 3, 4, 5 ]
-}, {
-  "sentence_tokens" : [ "ModFit", "LT", "software", "(", "Verity", "Software", "House", "Inc", ".,", "Topsham", ",", "ME", ")", "was", "used", "to", "analyze", "the", "data", "." ],
-  "entity_one_indices" : [ 11, 12 ],
-  "entity_two_indices" : [ 1, 2 ]
-}, {
-  "sentence_tokens" : [ "Cell", "viability", "and", "proliferation", "assays", "." ],
-  "entity_one_indices" : [ 3, 4 ],
-  "entity_two_indices" : [ 0, 1, 2 ]
-}, {
-  "sentence_tokens" : [ "An", "alamarBlue", "(R)", "assay", "(", "Thermo", "Fisher", "Scientific", ")", "was", "performed", "to", "assess", "cell", "viability", "following", "treatment", "with", "FTY720", "." ],
-  "entity_one_indices" : [ 18, 19 ],
-  "entity_two_indices" : [ 13, 14, 15 ]
-}, {
-  "sentence_tokens" : [ "Medulloblastoma", "cells", "(", "5", "x", "10", "cells", ")", "were", "plated", "and", "treated", "with", "FTY720", "at", "increasing", "concentrations", "." ],
-  "entity_one_indices" : [ 13, 14 ],
-  "entity_two_indices" : [ 0, 1 ]
-}, {
-  "sentence_tokens" : [ "Cell", "migration", "and", "invasion", "assays", "." ],
-  "entity_one_indices" : [ 3, 4 ],
-  "entity_two_indices" : [ 0, 1, 2 ]
-}, {
-  "sentence_tokens" : [ "Cell", "migration", "and", "invasion", "assays", "were", "performed", "using", "6.5", "mm", "Transwell", "(R)", "inserts", "with", "8", "mu", "M", "pore", "polycarbonate", "membrane", "(", "Corning", "Inc", ".,", "Corning", ",", "NY", ")", "in", "24-well", "culture", "plates", "." ],
-  "entity_one_indices" : [ 3, 4 ],
-  "entity_two_indices" : [ 0, 1, 2 ]
-}, {
-  "sentence_tokens" : [ "D425", "cells", "(", "2.5", "x", "10", "cells", "in", "25", "%", "Matrigel", "TM", ";", "Corning", "Inc.", ")", "were", "injected", "into", "the", "right", "flank", "of", "6-week-old", ",", "female", ",", "athymic", "nude", "mice", "(", "Envigo", ",", "Pratville", ",", "AL", ")", "." ],
-  "entity_one_indices" : [ 35, 36 ],
-  "entity_two_indices" : [ 11, 12 ]
-}, {
-  "sentence_tokens" : [ "The", "flank", "tumors", "were", "measured", "twice", "weekly", "using", "calipers", "and", "tumor", "volume", "was", "calculated", "using", "the", "formula", "[", "(", "width", "x", "length/2", "]", "with", "length", "being", "the", "largest", "measurement", "." ],
-  "entity_one_indices" : [ 10, 11 ],
-  "entity_two_indices" : [ 2, 3 ]
-} ]
+{
+  "regulations" : [ {
+    "sentence_tokens" : [ "FTY720", "induced", "dephosphorylation", "of", "AKT", "has", "been", "noted", "in", "other", "tumor", "types", "including", "mesothelioma", ",", "prostate", "cancer", "and", "breast", "cancer", "." ],
+    "event_indices" : [ 0, 1, 2, 3, 4, 5 ],
+    "type" : "Positive_regulation",
+    "polarity" : true,
+    "controller_indices" : [ 0, 1 ],
+    "controlled_indices" : [ 2, 3, 4, 5 ],
+    "trigger_indices" : [ 1, 2 ],
+    "rule_name" : "Positive_early_regulation",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "FTY720", "activated", "PP2A", "and", "led", "to", "decreased", "medulloblastoma", "PDX", "cell", "viability", ",", "proliferation", ",", "migration", "and", "invasion", "and", "G1", "cell", "cycle", "arrest", "in", "all", "three", "PDXs", "." ],
+    "event_indices" : [ 0, 1, 2, 3 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 0, 1 ],
+    "controlled_indices" : [ 2, 3 ],
+    "trigger_indices" : [ 1, 2 ],
+    "rule_name" : "Positive_activation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "In", "addition", ",", "the", "percentage", "of", "cells", "in", "S", "phase", "in", "the", "D425", "and", "D384", "PDXs", "was", "significantly", "decreased", "over", "baseline", "controls", ",", "further", "indicating", "G1", "cell", "cycle", "arrest", "(", "Fig.", "2B", ")", "." ],
+    "event_indices" : [ 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29 ],
+    "type" : "Negative_activation",
+    "polarity" : false,
+    "controller_indices" : [ 8, 9, 10 ],
+    "controlled_indices" : [ 26, 27, 28, 29 ],
+    "trigger_indices" : [ 18, 19 ],
+    "rule_name" : "Negative_activation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "In", "addition", "to", "reducing", "cell", "viability", ",", "FTY720", "has", "been", "shown", "to", "reduce", "tumor", "cell", "migration", "and", "invasion", "." ],
+    "event_indices" : [ 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18 ],
+    "type" : "Negative_activation",
+    "polarity" : false,
+    "controller_indices" : [ 7, 8 ],
+    "controlled_indices" : [ 17, 18 ],
+    "trigger_indices" : [ 12, 13 ],
+    "rule_name" : "Negative_activation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "FTY720", "Decreases", "Tumorigenesis", "in", "Group", "3", "Medulloblastoma", "Patient", "Derived", "Xenografts", "." ],
+    "event_indices" : [ 0, 1, 2, 3, 4, 5, 6, 7 ],
+    "type" : "Negative_activation",
+    "polarity" : false,
+    "controller_indices" : [ 0, 1 ],
+    "controlled_indices" : [ 6, 7 ],
+    "trigger_indices" : [ 1, 2 ],
+    "rule_name" : "Negative_activation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "In", "addition", ",", "FTY720", "treatment", "of", "human", "medulloblastoma", "PDXs", "resulted", "in", "activation", "of", "PP2A", "in", "the", "face", "of", "decreased", "overall", "PP2A", "protein", "expression", ",", "but", "changes", "in", "I2PP2A", "and", "SET", "or", "CIP2A", "expression", "were", "not", "consistently", "seen", "." ],
+    "event_indices" : [ 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 3, 4 ],
+    "controlled_indices" : [ 13, 14 ],
+    "trigger_indices" : [ 11, 12 ],
+    "rule_name" : "Positive_activation_syntax_results_in",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "FTY720", "is", "also", "thought", "to", "induce", "cell", "death", "through", "caspase", "dependent", "apoptosis", "as", "well", "as", "necroptosis", "and", "autophagy", "." ],
+    "event_indices" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 0, 1 ],
+    "controlled_indices" : [ 6, 7, 8 ],
+    "trigger_indices" : [ 5, 6 ],
+    "rule_name" : "Positive_activation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "In", "this", "study", ",", "we", "demonstrated", "that", "FTY720", "treatment", "led", "to", "decreased", "cell", "viability", ",", "migration", "and", "invasion", ",", "and", "caused", "cell", "cycle", "arrest", "and", "apoptosis", "in", "Group", "3", "medulloblastoma", "patient", "derived", "xenografts", "(", "PDXs", ")", "." ],
+    "event_indices" : [ 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 7, 8 ],
+    "controlled_indices" : [ 25, 26 ],
+    "trigger_indices" : [ 20, 21 ],
+    "rule_name" : "Positive_activation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "In", "this", "study", ",", "we", "demonstrated", "that", "FTY720", "treatment", "led", "to", "decreased", "cell", "viability", ",", "migration", "and", "invasion", ",", "and", "caused", "cell", "cycle", "arrest", "and", "apoptosis", "in", "Group", "3", "medulloblastoma", "patient", "derived", "xenografts", "(", "PDXs", ")", "." ],
+    "event_indices" : [ 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 7, 8 ],
+    "controlled_indices" : [ 21, 22, 23, 24 ],
+    "trigger_indices" : [ 20, 21 ],
+    "rule_name" : "Positive_activation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "In", "this", "study", ",", "treatment", "of", "human", "medulloblastoma", "PDX", "cells", "with", "FTY720", "arrested", "the", "cell", "cycle", "at", "G1", "." ],
+    "event_indices" : [ 11, 12, 13, 14, 15, 16 ],
+    "type" : "Negative_activation",
+    "polarity" : false,
+    "controller_indices" : [ 11, 12 ],
+    "controlled_indices" : [ 14, 15, 16 ],
+    "trigger_indices" : [ 12, 13 ],
+    "rule_name" : "Negative_activation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "In", "this", "study", ",", "treatment", "of", "human", "medulloblastoma", "PDX", "cells", "with", "FTY720", "arrested", "the", "cell", "cycle", "at", "G1", "." ],
+    "event_indices" : [ 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 ],
+    "type" : "Negative_activation",
+    "polarity" : false,
+    "controller_indices" : [ 7, 8 ],
+    "controlled_indices" : [ 14, 15, 16 ],
+    "trigger_indices" : [ 12, 13 ],
+    "rule_name" : "Negative_activation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "FTY720", "decreased", "viability", ",", "proliferation", ",", "and", "motility", "in", "Group", "3", "medulloblastoma", "PDX", "cells", "and", "significantly", "decreased", "tumor", "growth", "in", "vivo", "." ],
+    "event_indices" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 0, 1 ],
+    "controlled_indices" : [ 17, 18 ],
+    "trigger_indices" : [ 16, 17 ],
+    "rule_name" : "Negative_activation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "FTY720", "also", "significantly", "decreased", "tumor", "growth", "in", "vivo", "in", "mice", "bearing", "Group", "3", "medulloblastoma", "." ],
+    "event_indices" : [ 0, 1, 2, 3, 4, 5 ],
+    "type" : "Negative_activation",
+    "polarity" : false,
+    "controller_indices" : [ 0, 1 ],
+    "controlled_indices" : [ 4, 5 ],
+    "trigger_indices" : [ 3, 4 ],
+    "rule_name" : "Negative_activation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "FTY720", "decreased", "medulloblastoma", "tumor", "growth", "in", "vivo", "." ],
+    "event_indices" : [ 0, 1, 2, 3, 4 ],
+    "type" : "Negative_activation",
+    "polarity" : false,
+    "controller_indices" : [ 0, 1 ],
+    "controlled_indices" : [ 3, 4 ],
+    "trigger_indices" : [ 1, 2 ],
+    "rule_name" : "Negative_activation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "FTY720", "decreased", "medulloblastoma", "tumor", "growth", "in", "vivo", "." ],
+    "event_indices" : [ 0, 1, 2, 3 ],
+    "type" : "Negative_activation",
+    "polarity" : false,
+    "controller_indices" : [ 0, 1 ],
+    "controlled_indices" : [ 2, 3 ],
+    "trigger_indices" : [ 1, 2 ],
+    "rule_name" : "Negative_activation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "FTY720", "activated", "PP2A", "and", "led", "to", "decreased", "medulloblastoma", "PDX", "cell", "viability", ",", "proliferation", ",", "migration", "and", "invasion", "and", "G1", "cell", "cycle", "arrest", "in", "all", "three", "PDXs", "." ],
+    "event_indices" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 0, 1 ],
+    "controlled_indices" : [ 12, 13 ],
+    "trigger_indices" : [ 4, 5 ],
+    "rule_name" : "Positive_activation_syntax_7_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "FTY720", "activated", "PP2A", "and", "led", "to", "decreased", "medulloblastoma", "PDX", "cell", "viability", ",", "proliferation", ",", "migration", "and", "invasion", "and", "G1", "cell", "cycle", "arrest", "in", "all", "three", "PDXs", "." ],
+    "event_indices" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 0, 1 ],
+    "controlled_indices" : [ 19, 20, 21, 22 ],
+    "trigger_indices" : [ 4, 5 ],
+    "rule_name" : "Positive_activation_syntax_7_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "In", "2001", ",", "Sonoda", "and", "colleagues", "reported", "that", "FTY720", "induced", "apoptosis", "in", "human", "glioma", "cells", "and", "another", "group", "reported", "FTY720", "treatment", "led", "to", "apoptosis", "of", "glioma", "stem", "cells", "." ],
+    "event_indices" : [ 8, 9, 10, 11 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 8, 9 ],
+    "controlled_indices" : [ 10, 11 ],
+    "trigger_indices" : [ 9, 10 ],
+    "rule_name" : "Positive_early_activation",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "In", "2001", ",", "Sonoda", "and", "colleagues", "reported", "that", "FTY720", "induced", "apoptosis", "in", "human", "glioma", "cells", "and", "another", "group", "reported", "FTY720", "treatment", "led", "to", "apoptosis", "of", "glioma", "stem", "cells", "." ],
+    "event_indices" : [ 19, 20, 21, 22, 23, 24 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 19, 20 ],
+    "controlled_indices" : [ 23, 24 ],
+    "trigger_indices" : [ 21, 22 ],
+    "rule_name" : "Positive_activation_syntax_7_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "Since", "activation", "of", "the", "tumor", "suppressor", "protein", ",", "PP2A", ",", "has", "been", "proposed", "as", "a", "mechanism", "by", "which", "FTY720", "produces", "its", "anti-tumor", "effects", ",", "the", "ability", "of", "FTY720", "to", "activate", "PP2A", "was", "investigated", "." ],
+    "event_indices" : [ 27, 28, 29, 30, 31 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 27, 28 ],
+    "controlled_indices" : [ 30, 31 ],
+    "trigger_indices" : [ 29, 30 ],
+    "rule_name" : "Positive_activation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "Since", "activation", "of", "the", "tumor", "suppressor", "protein", ",", "PP2A", ",", "has", "been", "proposed", "as", "a", "mechanism", "by", "which", "FTY720", "produces", "its", "anti-tumor", "effects", ",", "the", "ability", "of", "FTY720", "to", "activate", "PP2A", "was", "investigated", "." ],
+    "event_indices" : [ 18, 19, 20, 21 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 18, 19 ],
+    "controlled_indices" : [ 20, 21 ],
+    "trigger_indices" : [ 19, 20 ],
+    "rule_name" : "Positive_activation_token_1_verb, pronominalMatch",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "FTY720", "produces", "these", "effects", "through", "multiple", "proposed", "mechanisms", ",", "including", "activation", "of", "the", "tumor", "suppressor", "protein", "phosphatase", "2A", "(", "PP2A", ")", ",", "down", "regulation", "of", "cyclin", "D1", ",", "inhibition", "of", "sphingosine", "kinase", "1", "(", "SphK1", ")", ",", "and", "generation", "of", "reactive", "oxygen", "species", "(", "ROS", ")", "." ],
+    "event_indices" : [ 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 19, 20 ],
+    "controlled_indices" : [ 16, 17 ],
+    "trigger_indices" : [ 10, 11 ],
+    "rule_name" : "Positive_activation_syntax_3_noun",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "In", "addition", ",", "FTY720", "treatment", "of", "human", "medulloblastoma", "PDXs", "resulted", "in", "activation", "of", "PP2A", "in", "the", "face", "of", "decreased", "overall", "PP2A", "protein", "expression", ",", "but", "changes", "in", "I2PP2A", "and", "SET", "or", "CIP2A", "expression", "were", "not", "consistently", "seen", "." ],
+    "event_indices" : [ 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 3, 4 ],
+    "controlled_indices" : [ 13, 14 ],
+    "trigger_indices" : [ 9, 10, 11, 12 ],
+    "rule_name" : "Positive_activation_syntax_8_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "In", "addition", ",", "FTY720", "treatment", "of", "human", "medulloblastoma", "PDXs", "resulted", "in", "activation", "of", "PP2A", "in", "the", "face", "of", "decreased", "overall", "PP2A", "protein", "expression", ",", "but", "changes", "in", "I2PP2A", "and", "SET", "or", "CIP2A", "expression", "were", "not", "consistently", "seen", "." ],
+    "event_indices" : [ 7, 8, 9, 10, 11, 12, 13, 14 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 7, 8 ],
+    "controlled_indices" : [ 13, 14 ],
+    "trigger_indices" : [ 9, 10, 11, 12 ],
+    "rule_name" : "Positive_activation_syntax_8_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "Since", "FTY720", "treatment", "induced", "cancer", "cell", "apoptosis", "in", "other", "cancers", ",", "we", "next", "determined", "whether", "the", "decrease", "in", "cell", "viability", "observed", "with", "FTY720", "in", "medulloblastoma", "PDX", "cells", "may", "be", "secondary", "to", "apoptosis", "." ],
+    "event_indices" : [ 1, 2, 3, 4, 5, 6, 7 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 1, 2 ],
+    "controlled_indices" : [ 6, 7 ],
+    "trigger_indices" : [ 3, 4 ],
+    "rule_name" : "Positive_activation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "FTY720", "treatment", "increased", "PP2A", "activity", "." ],
+    "event_indices" : [ 0, 1, 2, 3, 4 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 0, 1 ],
+    "controlled_indices" : [ 3, 4 ],
+    "trigger_indices" : [ 2, 3 ],
+    "rule_name" : "Positive_activation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "FTY720", "treatment", "resulted", "in", "decreased", "viability", "and", "proliferation", "and", "led", "to", "apoptosis", "of", "medulloblastoma", "PDX", "cells", "." ],
+    "event_indices" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 0, 1 ],
+    "controlled_indices" : [ 11, 12 ],
+    "trigger_indices" : [ 9, 10 ],
+    "rule_name" : "Positive_activation_syntax_7_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "It", "has", "been", "hypothesized", "that", "FTY720", "activates", "PP2A", "thereby", "leading", "to", "tumor", "cell", "death", "." ],
+    "event_indices" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 0, 1 ],
+    "controlled_indices" : [ 7, 8 ],
+    "trigger_indices" : [ 6, 7 ],
+    "rule_name" : "Positive_activation_syntax_1_verb, pronominalMatch",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "It", "has", "been", "hypothesized", "that", "FTY720", "activates", "PP2A", "thereby", "leading", "to", "tumor", "cell", "death", "." ],
+    "event_indices" : [ 5, 6, 7, 8 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 5, 6 ],
+    "controlled_indices" : [ 7, 8 ],
+    "trigger_indices" : [ 6, 7 ],
+    "rule_name" : "Positive_activation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "FTY720", "produces", "these", "effects", "through", "multiple", "proposed", "mechanisms", ",", "including", "activation", "of", "the", "tumor", "suppressor", "protein", "phosphatase", "2A", "(", "PP2A", ")", ",", "down", "regulation", "of", "cyclin", "D1", ",", "inhibition", "of", "sphingosine", "kinase", "1", "(", "SphK1", ")", ",", "and", "generation", "of", "reactive", "oxygen", "species", "(", "ROS", ")", "." ],
+    "event_indices" : [ 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ],
+    "type" : "Negative_activation",
+    "polarity" : false,
+    "controller_indices" : [ 19, 20 ],
+    "controlled_indices" : [ 13, 14, 15, 16 ],
+    "trigger_indices" : [ 10, 11 ],
+    "rule_name" : "Positive_activation_syntax_3_noun",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "In", "this", "study", ",", "we", "demonstrated", "that", "FTY720", "treatment", "led", "to", "decreased", "cell", "viability", ",", "migration", "and", "invasion", ",", "and", "caused", "cell", "cycle", "arrest", "and", "apoptosis", "in", "Group", "3", "medulloblastoma", "patient", "derived", "xenografts", "(", "PDXs", ")", "." ],
+    "event_indices" : [ 7, 8, 9, 10, 11, 12, 13, 14 ],
+    "type" : "Negative_activation",
+    "polarity" : false,
+    "controller_indices" : [ 7, 8 ],
+    "controlled_indices" : [ 12, 13, 14 ],
+    "trigger_indices" : [ 9, 10 ],
+    "rule_name" : "Positive_activation_syntax_7_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "Our", "results", "provide", "evidence", "that", "FTY720", "decreased", "medulloblastoma", "cell", "viability", ",", "migration", ",", "invasion", ",", "and", "in", "vivo", "tumor", "growth", "." ],
+    "event_indices" : [ 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 ],
+    "type" : "Negative_activation",
+    "polarity" : false,
+    "controller_indices" : [ 5, 6 ],
+    "controlled_indices" : [ 13, 14 ],
+    "trigger_indices" : [ 6, 7 ],
+    "rule_name" : "Negative_activation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "Our", "results", "provide", "evidence", "that", "FTY720", "decreased", "medulloblastoma", "cell", "viability", ",", "migration", ",", "invasion", ",", "and", "in", "vivo", "tumor", "growth", "." ],
+    "event_indices" : [ 5, 6, 7, 8 ],
+    "type" : "Negative_activation",
+    "polarity" : false,
+    "controller_indices" : [ 5, 6 ],
+    "controlled_indices" : [ 7, 8 ],
+    "trigger_indices" : [ 6, 7 ],
+    "rule_name" : "Negative_activation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "Our", "results", "provide", "evidence", "that", "FTY720", "decreased", "medulloblastoma", "cell", "viability", ",", "migration", ",", "invasion", ",", "and", "in", "vivo", "tumor", "growth", "." ],
+    "event_indices" : [ 5, 6, 7, 8, 9, 10 ],
+    "type" : "Negative_activation",
+    "polarity" : false,
+    "controller_indices" : [ 5, 6 ],
+    "controlled_indices" : [ 8, 9, 10 ],
+    "trigger_indices" : [ 6, 7 ],
+    "rule_name" : "Negative_activation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "we", "investigated", "whether", "FTY720", "treatment", "decreased", "medulloblastoma", "cell", "migration", "and", "invasion", "." ],
+    "event_indices" : [ 5, 6, 7, 8, 9, 10, 11, 12, 13 ],
+    "type" : "Negative_activation",
+    "polarity" : false,
+    "controller_indices" : [ 5, 6 ],
+    "controlled_indices" : [ 12, 13 ],
+    "trigger_indices" : [ 7, 8 ],
+    "rule_name" : "Negative_activation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "we", "investigated", "whether", "FTY720", "treatment", "decreased", "medulloblastoma", "cell", "migration", "and", "invasion", "." ],
+    "event_indices" : [ 5, 6, 7, 8, 9 ],
+    "type" : "Negative_activation",
+    "polarity" : false,
+    "controller_indices" : [ 5, 6 ],
+    "controlled_indices" : [ 8, 9 ],
+    "trigger_indices" : [ 7, 8 ],
+    "rule_name" : "Negative_activation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "we", "investigated", "whether", "FTY720", "treatment", "decreased", "medulloblastoma", "cell", "migration", "and", "invasion", "." ],
+    "event_indices" : [ 5, 6, 7, 8, 9, 10, 11 ],
+    "type" : "Negative_activation",
+    "polarity" : false,
+    "controller_indices" : [ 5, 6 ],
+    "controlled_indices" : [ 9, 10, 11 ],
+    "trigger_indices" : [ 7, 8 ],
+    "rule_name" : "Negative_activation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "FTY720", "has", "been", "shown", "to", "decrease", "cancer", "cell", "viability", "in", "a", "variety", "of", "tumor", "types", ",", "so", "we", "examined", "whether", "FTY720", "would", "decrease", "cell", "viability", "in", "medulloblastoma", "PDXs", "." ],
+    "event_indices" : [ 20, 21, 22, 23, 24, 25 ],
+    "type" : "Negative_activation",
+    "polarity" : false,
+    "controller_indices" : [ 20, 21 ],
+    "controlled_indices" : [ 23, 24, 25 ],
+    "trigger_indices" : [ 22, 23 ],
+    "rule_name" : "Negative_activation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "FTY720", "decreased", "viability", ",", "proliferation", ",", "and", "motility", "in", "Group", "3", "medulloblastoma", "PDX", "cells", "and", "significantly", "decreased", "tumor", "growth", "in", "vivo", "." ],
+    "event_indices" : [ 0, 1, 2, 3, 4, 5 ],
+    "type" : "Negative_activation",
+    "polarity" : false,
+    "controller_indices" : [ 0, 1 ],
+    "controlled_indices" : [ 4, 5 ],
+    "trigger_indices" : [ 1, 2 ],
+    "rule_name" : "Negative_activation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "FTY720", "induced", "PP2A", "activation", "has", "been", "postulated", "to", "occur", "through", "direct", "effects", "or", "through", "targeting", "of", "I2PP2A", "and", "SET", "or", "CIP2A", ",", "the", "endogenous", "inhibitors", "of", "PP2A", "." ],
+    "event_indices" : [ 0, 1, 2, 3 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 0, 1 ],
+    "controlled_indices" : [ 2, 3 ],
+    "trigger_indices" : [ 1, 2 ],
+    "rule_name" : "Positive_early_activation",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "FTY720", "activated", "PP2A", "and", "led", "to", "decreased", "medulloblastoma", "PDX", "cell", "viability", ",", "proliferation", ",", "migration", "and", "invasion", "and", "G1", "cell", "cycle", "arrest", "in", "all", "three", "PDXs", "." ],
+    "event_indices" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 ],
+    "type" : "Negative_activation",
+    "polarity" : false,
+    "controller_indices" : [ 0, 1 ],
+    "controlled_indices" : [ 9, 10, 11 ],
+    "trigger_indices" : [ 4, 5 ],
+    "rule_name" : "Positive_activation_syntax_7_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "In", "this", "study", ",", "we", "demonstrated", "that", "FTY720", "treatment", "led", "to", "decreased", "cell", "viability", ",", "migration", "and", "invasion", ",", "and", "caused", "cell", "cycle", "arrest", "and", "apoptosis", "in", "Group", "3", "medulloblastoma", "patient", "derived", "xenografts", "(", "PDXs", ")", "." ],
+    "event_indices" : [ 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 7, 8 ],
+    "controlled_indices" : [ 17, 18 ],
+    "trigger_indices" : [ 9, 10 ],
+    "rule_name" : "Positive_activation_syntax_7_verb",
+    "rule" : null
+  } ],
+  "hardInstances" : [ {
+    "sentence_tokens" : [ "FTY720", "induced", "dephosphorylation", "of", "AKT", "has", "been", "noted", "in", "other", "tumor", "types", "including", "mesothelioma", ",", "prostate", "cancer", "and", "breast", "cancer", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "FTY720", "activated", "PP2A", "and", "led", "to", "decreased", "medulloblastoma", "PDX", "cell", "viability", ",", "proliferation", ",", "migration", "and", "invasion", "and", "G1", "cell", "cycle", "arrest", "in", "all", "three", "PDXs", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 9, 10, 11 ], [ 12, 13 ], [ 16, 17 ], [ 19, 20, 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "addition", "to", "reducing", "cell", "viability", ",", "FTY720", "has", "been", "shown", "to", "reduce", "tumor", "cell", "migration", "and", "invasion", "." ],
+    "entities_indices" : [ [ 4, 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "FTY720", "Decreases", "Tumorigenesis", "in", "Group", "3", "Medulloblastoma", "Patient", "Derived", "Xenografts", "." ],
+    "entities_indices" : [ [ 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "addition", ",", "FTY720", "treatment", "of", "human", "medulloblastoma", "PDXs", "resulted", "in", "activation", "of", "PP2A", "in", "the", "face", "of", "decreased", "overall", "PP2A", "protein", "expression", ",", "but", "changes", "in", "I2PP2A", "and", "SET", "or", "CIP2A", "expression", "were", "not", "consistently", "seen", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 20, 21 ], [ 27, 28 ], [ 29, 30 ], [ 31, 32 ] ]
+  }, {
+    "sentence_tokens" : [ "FTY720", "is", "also", "thought", "to", "induce", "cell", "death", "through", "caspase", "dependent", "apoptosis", "as", "well", "as", "necroptosis", "and", "autophagy", "." ],
+    "entities_indices" : [ [ 9, 10 ], [ 11, 12 ], [ 15, 16 ], [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "study", ",", "we", "demonstrated", "that", "FTY720", "treatment", "led", "to", "decreased", "cell", "viability", ",", "migration", "and", "invasion", ",", "and", "caused", "cell", "cycle", "arrest", "and", "apoptosis", "in", "Group", "3", "medulloblastoma", "patient", "derived", "xenografts", "(", "PDXs", ")", "." ],
+    "entities_indices" : [ [ 12, 13, 14 ], [ 17, 18 ], [ 21, 22, 23, 24 ], [ 29, 30 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "study", ",", "we", "demonstrated", "that", "FTY720", "treatment", "led", "to", "decreased", "cell", "viability", ",", "migration", "and", "invasion", ",", "and", "caused", "cell", "cycle", "arrest", "and", "apoptosis", "in", "Group", "3", "medulloblastoma", "patient", "derived", "xenografts", "(", "PDXs", ")", "." ],
+    "entities_indices" : [ [ 12, 13, 14 ], [ 17, 18 ], [ 25, 26 ], [ 29, 30 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "study", ",", "treatment", "of", "human", "medulloblastoma", "PDX", "cells", "with", "FTY720", "arrested", "the", "cell", "cycle", "at", "G1", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "study", ",", "treatment", "of", "human", "medulloblastoma", "PDX", "cells", "with", "FTY720", "arrested", "the", "cell", "cycle", "at", "G1", "." ],
+    "entities_indices" : [ [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "FTY720", "decreased", "viability", ",", "proliferation", ",", "and", "motility", "in", "Group", "3", "medulloblastoma", "PDX", "cells", "and", "significantly", "decreased", "tumor", "growth", "in", "vivo", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "FTY720", "also", "significantly", "decreased", "tumor", "growth", "in", "vivo", "in", "mice", "bearing", "Group", "3", "medulloblastoma", "." ],
+    "entities_indices" : [ [ 9, 10 ], [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "FTY720", "decreased", "medulloblastoma", "tumor", "growth", "in", "vivo", "." ],
+    "entities_indices" : [ [ 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "FTY720", "decreased", "medulloblastoma", "tumor", "growth", "in", "vivo", "." ],
+    "entities_indices" : [ [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "FTY720", "activated", "PP2A", "and", "led", "to", "decreased", "medulloblastoma", "PDX", "cell", "viability", ",", "proliferation", ",", "migration", "and", "invasion", "and", "G1", "cell", "cycle", "arrest", "in", "all", "three", "PDXs", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 7, 8 ], [ 9, 10, 11 ], [ 16, 17 ], [ 19, 20, 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "FTY720", "activated", "PP2A", "and", "led", "to", "decreased", "medulloblastoma", "PDX", "cell", "viability", ",", "proliferation", ",", "migration", "and", "invasion", "and", "G1", "cell", "cycle", "arrest", "in", "all", "three", "PDXs", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 7, 8 ], [ 9, 10, 11 ], [ 12, 13 ], [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "2001", ",", "Sonoda", "and", "colleagues", "reported", "that", "FTY720", "induced", "apoptosis", "in", "human", "glioma", "cells", "and", "another", "group", "reported", "FTY720", "treatment", "led", "to", "apoptosis", "of", "glioma", "stem", "cells", "." ],
+    "entities_indices" : [ [ 13, 14 ], [ 19, 20 ], [ 23, 24 ], [ 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "2001", ",", "Sonoda", "and", "colleagues", "reported", "that", "FTY720", "induced", "apoptosis", "in", "human", "glioma", "cells", "and", "another", "group", "reported", "FTY720", "treatment", "led", "to", "apoptosis", "of", "glioma", "stem", "cells", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 10, 11 ], [ 13, 14 ], [ 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "Since", "activation", "of", "the", "tumor", "suppressor", "protein", ",", "PP2A", ",", "has", "been", "proposed", "as", "a", "mechanism", "by", "which", "FTY720", "produces", "its", "anti-tumor", "effects", ",", "the", "ability", "of", "FTY720", "to", "activate", "PP2A", "was", "investigated", "." ],
+    "entities_indices" : [ [ 4, 5, 6, 7 ], [ 8, 9 ], [ 18, 19 ], [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "Since", "activation", "of", "the", "tumor", "suppressor", "protein", ",", "PP2A", ",", "has", "been", "proposed", "as", "a", "mechanism", "by", "which", "FTY720", "produces", "its", "anti-tumor", "effects", ",", "the", "ability", "of", "FTY720", "to", "activate", "PP2A", "was", "investigated", "." ],
+    "entities_indices" : [ [ 4, 5, 6, 7 ], [ 8, 9 ], [ 27, 28 ], [ 30, 31 ] ]
+  }, {
+    "sentence_tokens" : [ "FTY720", "produces", "these", "effects", "through", "multiple", "proposed", "mechanisms", ",", "including", "activation", "of", "the", "tumor", "suppressor", "protein", "phosphatase", "2A", "(", "PP2A", ")", ",", "down", "regulation", "of", "cyclin", "D1", ",", "inhibition", "of", "sphingosine", "kinase", "1", "(", "SphK1", ")", ",", "and", "generation", "of", "reactive", "oxygen", "species", "(", "ROS", ")", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 13, 14, 15, 16 ], [ 25, 26 ], [ 30, 31, 32, 33 ], [ 34, 35 ], [ 40, 41, 42, 43 ], [ 44, 45 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "addition", ",", "FTY720", "treatment", "of", "human", "medulloblastoma", "PDXs", "resulted", "in", "activation", "of", "PP2A", "in", "the", "face", "of", "decreased", "overall", "PP2A", "protein", "expression", ",", "but", "changes", "in", "I2PP2A", "and", "SET", "or", "CIP2A", "expression", "were", "not", "consistently", "seen", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 20, 21 ], [ 27, 28 ], [ 29, 30 ], [ 31, 32 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "addition", ",", "FTY720", "treatment", "of", "human", "medulloblastoma", "PDXs", "resulted", "in", "activation", "of", "PP2A", "in", "the", "face", "of", "decreased", "overall", "PP2A", "protein", "expression", ",", "but", "changes", "in", "I2PP2A", "and", "SET", "or", "CIP2A", "expression", "were", "not", "consistently", "seen", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 20, 21 ], [ 27, 28 ], [ 29, 30 ], [ 31, 32 ] ]
+  }, {
+    "sentence_tokens" : [ "Since", "FTY720", "treatment", "induced", "cancer", "cell", "apoptosis", "in", "other", "cancers", ",", "we", "next", "determined", "whether", "the", "decrease", "in", "cell", "viability", "observed", "with", "FTY720", "in", "medulloblastoma", "PDX", "cells", "may", "be", "secondary", "to", "apoptosis", "." ],
+    "entities_indices" : [ [ 18, 19, 20 ], [ 22, 23 ], [ 24, 25 ], [ 31, 32 ] ]
+  }, {
+    "sentence_tokens" : [ "FTY720", "treatment", "resulted", "in", "decreased", "viability", "and", "proliferation", "and", "led", "to", "apoptosis", "of", "medulloblastoma", "PDX", "cells", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "It", "has", "been", "hypothesized", "that", "FTY720", "activates", "PP2A", "thereby", "leading", "to", "tumor", "cell", "death", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "It", "has", "been", "hypothesized", "that", "FTY720", "activates", "PP2A", "thereby", "leading", "to", "tumor", "cell", "death", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "FTY720", "produces", "these", "effects", "through", "multiple", "proposed", "mechanisms", ",", "including", "activation", "of", "the", "tumor", "suppressor", "protein", "phosphatase", "2A", "(", "PP2A", ")", ",", "down", "regulation", "of", "cyclin", "D1", ",", "inhibition", "of", "sphingosine", "kinase", "1", "(", "SphK1", ")", ",", "and", "generation", "of", "reactive", "oxygen", "species", "(", "ROS", ")", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 16, 17 ], [ 25, 26 ], [ 30, 31, 32, 33 ], [ 34, 35 ], [ 40, 41, 42, 43 ], [ 44, 45 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "study", ",", "we", "demonstrated", "that", "FTY720", "treatment", "led", "to", "decreased", "cell", "viability", ",", "migration", "and", "invasion", ",", "and", "caused", "cell", "cycle", "arrest", "and", "apoptosis", "in", "Group", "3", "medulloblastoma", "patient", "derived", "xenografts", "(", "PDXs", ")", "." ],
+    "entities_indices" : [ [ 17, 18 ], [ 21, 22, 23, 24 ], [ 25, 26 ], [ 29, 30 ] ]
+  }, {
+    "sentence_tokens" : [ "Our", "results", "provide", "evidence", "that", "FTY720", "decreased", "medulloblastoma", "cell", "viability", ",", "migration", ",", "invasion", ",", "and", "in", "vivo", "tumor", "growth", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 8, 9, 10 ], [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "Our", "results", "provide", "evidence", "that", "FTY720", "decreased", "medulloblastoma", "cell", "viability", ",", "migration", ",", "invasion", ",", "and", "in", "vivo", "tumor", "growth", "." ],
+    "entities_indices" : [ [ 8, 9, 10 ], [ 13, 14 ], [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "Our", "results", "provide", "evidence", "that", "FTY720", "decreased", "medulloblastoma", "cell", "viability", ",", "migration", ",", "invasion", ",", "and", "in", "vivo", "tumor", "growth", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 13, 14 ], [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "we", "investigated", "whether", "FTY720", "treatment", "decreased", "medulloblastoma", "cell", "migration", "and", "invasion", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 9, 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "we", "investigated", "whether", "FTY720", "treatment", "decreased", "medulloblastoma", "cell", "migration", "and", "invasion", "." ],
+    "entities_indices" : [ [ 9, 10, 11 ], [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "we", "investigated", "whether", "FTY720", "treatment", "decreased", "medulloblastoma", "cell", "migration", "and", "invasion", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "FTY720", "has", "been", "shown", "to", "decrease", "cancer", "cell", "viability", "in", "a", "variety", "of", "tumor", "types", ",", "so", "we", "examined", "whether", "FTY720", "would", "decrease", "cell", "viability", "in", "medulloblastoma", "PDXs", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 13, 14 ], [ 26, 27 ] ]
+  }, {
+    "sentence_tokens" : [ "FTY720", "decreased", "viability", ",", "proliferation", ",", "and", "motility", "in", "Group", "3", "medulloblastoma", "PDX", "cells", "and", "significantly", "decreased", "tumor", "growth", "in", "vivo", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "FTY720", "induced", "PP2A", "activation", "has", "been", "postulated", "to", "occur", "through", "direct", "effects", "or", "through", "targeting", "of", "I2PP2A", "and", "SET", "or", "CIP2A", ",", "the", "endogenous", "inhibitors", "of", "PP2A", "." ],
+    "entities_indices" : [ [ 16, 17 ], [ 18, 19 ], [ 20, 21 ], [ 26, 27 ] ]
+  }, {
+    "sentence_tokens" : [ "FTY720", "activated", "PP2A", "and", "led", "to", "decreased", "medulloblastoma", "PDX", "cell", "viability", ",", "proliferation", ",", "migration", "and", "invasion", "and", "G1", "cell", "cycle", "arrest", "in", "all", "three", "PDXs", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 7, 8 ], [ 12, 13 ], [ 16, 17 ], [ 19, 20, 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "study", ",", "we", "demonstrated", "that", "FTY720", "treatment", "led", "to", "decreased", "cell", "viability", ",", "migration", "and", "invasion", ",", "and", "caused", "cell", "cycle", "arrest", "and", "apoptosis", "in", "Group", "3", "medulloblastoma", "patient", "derived", "xenografts", "(", "PDXs", ")", "." ],
+    "entities_indices" : [ [ 12, 13, 14 ], [ 21, 22, 23, 24 ], [ 25, 26 ], [ 29, 30 ] ]
+  } ],
+  "withoutRegulations" : [ {
+    "sentence_tokens" : [ "Once", "tumors", "were", "palpable", "(", "100", "mm", ")", "animals", "were", "randomized", "to", "receive", "daily", "oral", "doses", "of", "vehicle", "(", "N", "=", "7", ")", "or", "FTY720", "(", "10", "mg/kg/day", ")", "(", "N", "=", "8)", "for", "5", "weeks", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "Negative", "controls", "(", "rabbit", "IgG", ",", "1", "mu", "g/mL", ",", "EMD", "Millipore", ")", "were", "included", "with", "each", "run", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "Another", "study", "in", "human", "prostate", "cancer", "cells", "demonstrated", "a", "decrease", "in", "migration", "and", "invasion", "with", "FTY720", "treatment", "." ],
+    "entities_indices" : [ [ 13, 14 ], [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "After", "24", "hours", ",", "10", "mu", "L", "CellTiter96", "(R)", "dye", "was", "added", "to", "each", "well", "and", "the", "absorbance", "was", "measured", "at", "490", "nm", "using", "a", "microplate", "reader", "(", "Epoch", "Microplate", "Spectrophotometer", ")", "." ],
+    "entities_indices" : [ [ 5, 6, 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "These", "findings", "are", "novel", "as", "FTY720", "has", "not", "yet", "been", "studied", "as", "a", "therapeutic", "tool", "for", "medulloblastoma", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "Expression", "of", "PP2A", "and", "its", "endogenous", "inhibitors", "I2PP2A", "and", "CIP2A", "was", "detected", "by", "immunohistochemistry", "and", "immunoblotting", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 7, 8 ], [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "Three", "Group", "3", "medulloblastoma", "xenografts", "established", "from", "pediatric", "patients", "were", "used", "for", "experiments", ":", "D341", "Med", "(", "D341", ")", ",", "D384", "Med", "(", "D384", ")", ",", "and", "D425", "Med", "(", "D425", ")", "." ],
+    "entities_indices" : [ [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "Apoptosis", "was", "measured", "by", "immunoblotting", "for", "either", "loss", "of", "total", "PARP", ",", "or", "an", "increase", "in", "cleaved", "PARP", "or", "an", "increase", "in", "cleaved", "caspase", "3", ",", "all", "of", "which", "are", "known", "to", "be", "indicative", "of", "apoptosis", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 10, 11 ], [ 17, 18 ], [ 23, 24, 25 ], [ 35, 36 ] ]
+  }, {
+    "sentence_tokens" : [ "PP2A", "activity", "was", "measured", "using", "a", "PP2A", "Immunoprecipitation", "Phosphatase", "Assay", "Kit", "(", "17", "-", "313", ",", "EMD", "Millipore", ")", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 6, 7 ], [ 8, 9 ], [ 10, 11 ], [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "Samples", "were", "visualized", "by", "enhanced", "chemiluminescence", "(", "ECL", ")", "using", "Luminata", "Classico", "and", "Luminata", "Crescendo", "Western", "horseradish", "peroxidase", "(", "HPR", ")", "substrates", "(", "EMD", "Millipore", ")", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 17, 18 ], [ 19, 20 ], [ 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "bottoms", "of", "the", "inserts", "were", "coated", "with", "laminin", "(", "10", "mu", "g/mL", ")", "." ],
+    "entities_indices" : [ [ 8, 9, 10, 11, 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "D425", "cells", "(", "2.5", "x", "10", "cells", "in", "25", "%", "Matrigel", "TM", ";", "Corning", "Inc.", ")", "were", "injected", "into", "the", "right", "flank", "of", "6-week-old", ",", "female", ",", "athymic", "nude", "mice", "(", "Envigo", ",", "Pratville", ",", "AL", ")", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 35, 36 ] ]
+  }, {
+    "sentence_tokens" : [ "Because", "of", "the", "anti-tumor", "properties", "of", "FTY720", "seen", "in", "other", "human", "malignancies", ",", "we", "hypothesized", "that", "it", "may", "also", "have", "anti-tumor", "effects", "on", "medulloblastoma", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "CIP2A", "levels", "were", "diminished", "in", "the", "D341", "and", "D384", "MB", "PDXs", "(", "Fig.", "1D", ",", "top", "left", "and", "middle", "panels", ")", ",", "but", "was", "not", "changed", "in", "the", "D425", "MB", "PDX", "(", "Fig.", "1D", ",", "top", "right", "panel", ")", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 9, 10 ], [ 29, 30 ], [ 35, 36, 37, 38 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "lethal", "dose", "50", "%", "(", "LD", ")", "for", "FTY720", "was", "7.5", "mu", "M", "in", "D425", ",", "5.5", "mu", "M", "in", "D341", ",", "and", "7.3", "mu", "M", "in", "D384", "cells", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "vivo", "tumor", "growth", "." ],
+    "entities_indices" : [ [ 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "On", "the", "contrary", ",", "phosphorylation", "of", "ERK", "was", "increased", "in", "the", "D341", "PDX", "cells", "with", "increasing", "doses", "of", "FTY720", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "cells", "were", "kept", "under", "standard", "conditions", "at", "37", "degrees", "C", "and", "5", "%", "CO", "." ],
+    "entities_indices" : [ [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "Cells", "(", "1", "x", "10", "cells", ")", "were", "plated", "and", "treated", "with", "FTY720", "(", "5", "mu", "M", ")", "." ],
+    "entities_indices" : [ [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "mice", "remaining", "at", "the", "end", "of", "the", "treatment", "period", "were", "humanely", "euthanized", "." ],
+    "entities_indices" : [ [ 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "Novel", "therapeutic", "strategies", "to", "effectively", "treat", "this", "challenging", "malignancy", "are", "clearly", "needed.FTY720", "(", "2-Amino-2-[", "2-(", "4-octylphenyl", ")", "]", "-1,3-propanediol", ",", "fingolimod", ")", "is", "a", "synthetic", "sphingosine", "immunosuppressant", "that", "was", "approved", "by", "the", "United", "States", "Food", "and", "Drug", "Administration", "(", "FDA", ")", "for", "the", "treatment", "of", "multiple", "sclerosis", "." ],
+    "entities_indices" : [ [ 20, 21 ], [ 25, 26 ], [ 39, 40 ], [ 45, 46, 47 ] ]
+  }, {
+    "sentence_tokens" : [ "These", "findings", "have", "been", "reported", "by", "other", "authors", "who", "have", "noted", "that", "CIP2A", "or", "I2PP2A", "and", "SET", "expression", "was", "not", "altered", "by", "FTY720", "." ],
+    "entities_indices" : [ [ 12, 13 ], [ 14, 15 ], [ 16, 17 ], [ 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "D425", "PDX", ",", "there", "was", "an", "increase", "in", "both", "cleaved", "PARP", "and", "cleaved", "caspase", "3", "with", "increasing", "concentrations", "of", "FTY720", "(", "Fig.", "4A", ",", "upper", "and", "lower", "panels", ")", "." ],
+    "entities_indices" : [ [ 12, 13 ], [ 15, 16, 17 ], [ 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "PP2A", "protein", "expression", "has", "been", "shown", "to", "be", "downregulated", "in", "medulloblastoma", "tumors", "and", "hypothesized", "to", "lead", "to", "upregulation", "of", "tumorigenic", "signaling", "pathways", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 10, 11 ], [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "An", "alamarBlue", "(R)", "assay", "(", "Thermo", "Fisher", "Scientific", ")", "was", "performed", "to", "assess", "cell", "viability", "following", "treatment", "with", "FTY720", "." ],
+    "entities_indices" : [ [ 13, 14, 15 ], [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "inserts", "were", "then", "fixed", "in", "3", "%", "paraformaldehyde", "prior", "to", "staining", "with", "crystal", "violet", "." ],
+    "entities_indices" : [ [ 13, 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "Rincon", "and", "colleagues", "showed", "decreased", "activation", "of", "ERK", "in", "BT-474", "and", "MDA-MB-231", "breast", "cancer", "cells", "following", "treatment", "with", "FTY720", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "These", "tumors", "were", "generously", "provided", "by", "Darell", "D.", "Bigner", ",", "MD", ",", "PhD", ",", "Duke", "Medical", "Center", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 10, 11 ], [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "Experiments", "were", "repeated", "at", "least", "in", "triplicate", "and", "phosphatase", "activity", "was", "reported", "as", "mean", "fold", "change", "+/-", "standard", "error", "of", "the", "mean", "(", "SEM", ")", "from", "the", "untreated", "sample", "for", "each", "cell", "line", "." ],
+    "entities_indices" : [ [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "Migration", "and", "invasion", "of", "medulloblastoma", "PDX", "cells", "was", "decreased", "after", "treatment", "with", "FTY720", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 4, 5 ], [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "Slides", "were", "deparaffinized", ",", "steamed", ",", "quenched", "with", "3", "%", "hydrogen", "peroxide", ",", "and", "blocked", "with", "blocking", "buffer", "[", "bovine", "serum", "albumin", "(", "BSA", ")", ",", "powdered", "milk", ",", "Triton", "X-100", ",", "phosphate", "buffered", "saline", "(", "PBS", ")", "]", "for", "30", "minutes", "at", "4", "degrees", "C." ],
+    "entities_indices" : [ [ 10, 11, 12 ], [ 21, 22 ], [ 23, 24 ], [ 29, 30, 31 ], [ 32, 33 ] ]
+  }, {
+    "sentence_tokens" : [ "PP2A", "is", "a", "known", "tumor", "suppressor", "that", "is", "inactive", "or", "downregulated", "in", "many", "human", "tumors", "either", "through", "upregulation", "of", "its", "endogenous", "inhibitors", ",", "I2PP2A", "and", "SET", "or", "CIP2A", ",", "or", "through", "mutations", "which", "limit", "the", "activity", "of", "PP2A", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 4, 5, 6 ], [ 14, 15 ], [ 23, 24 ], [ 25, 26 ], [ 27, 28 ], [ 37, 38 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "primary", "antibodies", "anti-I2PP2A", "and", "SET", "(", "rabbit", "polyclonal", ",", "1:400", ",", "sc-25564", ",", "Santa", "Cruz", ")", ",", "anti-CIP2A", "(", "rabbit", "polyclonal", ",", "1:200", ",", "ab99518", ",", "Abcam", ")", ",", "and", "anti-PP2A", "(", "rabbit", "monoclonal", ",", "1:200", ",", "ab32104", ",", "Abcam", ")", "were", "added", "and", "incubated", "for", "1", "hour", "in", "a", "humidity", "chamber", "at", "room", "temperature", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 12, 13 ], [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "Furthermore", ",", "the", "use", "of", "human", "PDX", "medulloblastoma", "cell", "lines", "in", "these", "studies", "is", "also", "important", "as", "it", "provided", "a", "clinically", "relevant", "model", "for", "the", "preclinical", "study", "of", "this", "compound", "in", "medulloblastoma", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 31, 32 ] ]
+  }, {
+    "sentence_tokens" : [ "Group", "3", "tumors", "account", "for", "28", "%", "of", "medulloblastomas", "and", "have", "the", "worst", "prognosis", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "At", "5", "weeks", ",", "there", "were", "no", "surviving", "animals", "in", "the", "vehicle", "treated", "group", "and", "3", "in", "the", "FTY720", "treated", "group", "." ],
+    "entities_indices" : [ [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "PP2A", "activation", "was", "measured", "via", "phosphatase", "activation", "kit", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "These", "data", "showed", "that", "FTY720", "treatment", "resulted", "in", "apoptosis", "in", "the", "medulloblastoma", "PDX", "cells", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 8, 9 ], [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "These", "data", "suggest", "that", "FTY720", "may", "be", "a", "novel", "therapeutic", "for", "treating", "medulloblastoma", "and", "further", "clinical", "evaluation", "is", "warranted", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "Subsequent", "studies", "showed", "similar", "effects", "with", "decreased", "viability", "and", "apoptosis", "in", "other", "human", "tumor", "types", "including", "bladder", "cancer", ",", "hepatoma", ",", "pancreatic", "cancer", "and", "leukemia", "." ],
+    "entities_indices" : [ [ 9, 10 ], [ 13, 14 ], [ 19, 20 ], [ 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "Similarly", ",", "in", "the", "current", "study", ",", "FTY720", "in", "doses", "well", "below", "the", "LD", "resulted", "in", "significant", "reductions", "in", "both", "migration", "and", "invasion", "in", "human", "medulloblastoma", "cells", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 13, 14 ], [ 22, 23 ], [ 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "I2PP2A", "levels", "were", "not", "altered", "(", "Fig.", "1D", ",", "middle", "panels", ")", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "cells", "underwent", "a", "second", "PBS", "wash", "and", "were", "stained", "for", "1", "hour", "with", "200", "mu", "L", "of", "staining", "solution", "consisting", "of", "20", "mu", "g/mL", "propidium", "iodide", "[", "(", "PI", ")", ",", "Invitrogen", ",", "Carlsbad", ",", "CA", "]", ",", "0.1", "%", "Triton", "X", "(", "Active", "Motif", ",", "Carlsbad", ",", "CA", ")", "and", "RNAse", "A", "(", "0.1", "mg/mL", ",", "Qiagen", ",", "Valencia", ",", "CA", ")", "." ],
+    "entities_indices" : [ [ 25, 26, 27 ], [ 29, 30 ], [ 36, 37 ], [ 41, 42 ], [ 49, 50 ], [ 52, 53, 54 ], [ 62, 63 ] ]
+  }, {
+    "sentence_tokens" : [ "Over", "the", "past", "decade", ",", "FTY720", "has", "also", "been", "shown", "to", "have", "anti-tumor", "properties", "in", "several", "human", "malignancies", ",", "including", "glioblastoma", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "Slides", "were", "counterstained", "with", "hematoxylin", "." ],
+    "entities_indices" : [ [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "Cells", "(", "1.5", "x", "10", "cells", ")", "were", "plated", "and", "treated", "with", "increasing", "concentrations", "of", "FTY720", "." ],
+    "entities_indices" : [ [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "FTY720", "resulted", "in", "a", "significant", "decrease", "in", "both", "migration", "(", "Fig.", "5A", ",", "B", ")", "and", "invasion", "(", "Fig.", "5C", ",", "D", ")", "in", "all", "3", "medulloblastoma", "PDXs", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 16, 17 ], [ 26, 27 ] ]
+  }, {
+    "sentence_tokens" : [ "Permpongkosol", "et", "al.", "showed", "an", "increased", "percentage", "of", "DU145", "prostate", "cancer", "cells", "in", "G1", "and", "decreased", "percentage", "in", "S", "phase", "following", "FTY720", ",", "but", "at", "a", "much", "higher", "dose", "(", "20", "mu", "M", ")", "." ],
+    "entities_indices" : [ [ 18, 19, 20 ], [ 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "Cell", "cycle", "analysis", "was", "performed", "using", "propidium", "iodine", "(", "PI", ")", "staining", "and", "flow", "cytometric", "evaluation", "." ],
+    "entities_indices" : [ [ 0, 1, 2 ], [ 6, 7 ], [ 7, 8 ], [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "flank", "model", "using", "D425", "human", "medulloblastoma", "PDX", "cells", "was", "used", "to", "assess", "the", "in", "vivo", "effects", "of", "FTY720", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "flank", "tumors", "were", "measured", "twice", "weekly", "using", "calipers", "and", "tumor", "volume", "was", "calculated", "using", "the", "formula", "[", "(", "width", "x", "length/2", "]", "with", "length", "being", "the", "largest", "measurement", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "Cell", "proliferation", "was", "also", "measured", "following", "treatment", "for", "24", "hours", "with", "increasing", "concentrations", "of", "FTY720", "." ],
+    "entities_indices" : [ [ 0, 1, 2 ], [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "Medulloblastoma", "cells", "(", "5", "x", "10", "cells", ")", "were", "plated", "and", "treated", "with", "FTY720", "at", "increasing", "concentrations", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "Cells", "(", "1", "x", "10", "cells", ")", "were", "treated", "with", "FTY720", "(", "5", "mu", "M", ")", "for", "4", "hours", "and", "then", "lysed", "using", "NP-40", "lysis", "buffer", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "current", "study", ",", "D384", "medulloblastoma", "PDX", "cells", "showed", "decreased", "ERK", "phosphorylation", "without", "a", "change", "in", "total", "ERK", "expression", "following", "FTY720", "treatment", "(", "Supplemental", "Data", "Fig.", "2", ")", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 11, 12 ], [ 18, 19 ], [ 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "All", "cell", "lines", "were", "maintained", "in", "neurobasal", "medium", "(", "Life", "Technologies", ",", "Carlsbad", ",", "CA", ")", "supplemented", "with", "B-27", "supplement", "without", "Vitamin", "A", "(", "Life", "Technologies", ")", ",", "N2", "supplement", "(", "Life", "Technologies", ")", ",", "amphotericin", "B", "(", "250", "mu", "g/mL", ")", ",", "gentamicin", "(", "50", "mu", "g/mL", ")", ",", "L-glutamine", "(", "2", "mM", ")", ",", "epidermal", "growth", "factor", "(", "10", "ng/mL", ";", "Miltenyi", "Biotec", ")", "and", "fibroblast", "growth", "factor", "(", "10", "ng/mL", ";", "Miltenyi", "Biotec", ")", "." ],
+    "entities_indices" : [ [ 14, 15 ], [ 21, 22, 23 ], [ 35, 36, 37 ], [ 43, 44, 45, 46, 47, 48 ], [ 50, 51 ], [ 56, 57, 58, 59 ], [ 67, 68, 69, 70 ] ]
+  }, {
+    "sentence_tokens" : [ "FTY720", "did", "not", "significantly", "affect", "the", "weight", "of", "the", "animals", "(", "Fig.", "6B", ")", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "Each", "band", "was", "normalized", "to", "background", ",", "then", "to", "their", "respective", "beta-actin", ",", "and", "finally", "the", "phospho", "band", "was", "normalized", "to", "the", "total", "protein", "expression", "band", "." ],
+    "entities_indices" : [ [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "Cell", "migration", "and", "invasion", "assays", "were", "performed", "using", "6.5", "mm", "Transwell", "(R)", "inserts", "with", "8", "mu", "M", "pore", "polycarbonate", "membrane", "(", "Corning", "Inc", ".,", "Corning", ",", "NY", ")", "in", "24-well", "culture", "plates", "." ],
+    "entities_indices" : [ [ 0, 1, 2 ], [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "These", "results", "suggest", "that", "FTY720", "should", "be", "investigated", "further", "as", "a", "potential", "therapeutic", "agent", "for", "medulloblastoma", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "Primary", "antibodies", "used", "for", "Western", "blotting", "included", "the", "following", ":", "anti-I2PP2A", "(", "H-120", ")", "(", "sc-25564", ")", "from", "Santa", "Cruz", "Biotechnology", "(", "Santa", "Cruz", ",", "CA", ")", ",", "anti-PP2A", "(", "ab32104", ")", "and", "anti-CIP2A", "(", "ab99518", ")", "from", "Abcam", "(", "Cambridge", ",", "MA", ")", ",", "anti-total", "AKT", "(", "9272", ")", ",", "anti-phospho-AKT", "(", "S473", ";", "9271", ")", ",", "p44/42", "MAP", "Kinase", "[", "ERK1/2", "(", "9102", ")", "]", ",", "anti-phospho-p44/42", "MAPK", "[", "phospho-ERK", ",", "T202", "and", "T204", ",", "(", "4377", ")", "]", ",", "anti-total", "PARP", "(", "9542", ")", "and", "anti-cleaved", "Caspase-3", "(", "9661", ")", "from", "Cell", "Signaling", "Technology", "(", "Danvers", ",", "MA", ")", ",", "anti-beta-actin", "from", "Sigma", "(", "A1978", ",", "Sigma", "Aldrich", ",", "St.", "Louis", ",", "MO", ")", ",", "anti-cleaved", "PARP", "(", "MAB3565", ")", "and", "anti-GAPDH", "(", "MAB374", ",", "clone", "6C5", ")", "from", "EMD", "Millipore", "(", "EMD", "Millipore", ",", "Billerica", ",", "MA", ")", "." ],
+    "entities_indices" : [ [ 18, 19 ], [ 22, 23 ], [ 25, 26 ], [ 42, 43 ], [ 46, 47 ], [ 59, 60, 61 ], [ 62, 63 ], [ 69, 70 ], [ 71, 72 ], [ 83, 84 ], [ 89, 90 ], [ 100, 101 ], [ 103, 104, 105, 106 ], [ 115, 116 ], [ 119, 120 ], [ 121, 122 ], [ 132, 133 ], [ 135, 136 ], [ 140, 141 ] ]
+  }, {
+    "sentence_tokens" : [ "D425", ",", "D341", "and", "D384", "cells", "were", "treated", "with", "FTY720", "(", "5", "mu", "M", ")", "for", "24", "hours", "and", "cell", "cycle", "analysis", "performed", "using", "PI", "staining", "." ],
+    "entities_indices" : [ [ 9, 10 ], [ 19, 20, 21 ], [ 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "After", "washing", "with", "PBS", ",", "the", "secondary", "antibody", "for", "rabbit", "(", "R.T.U", "." ],
+    "entities_indices" : [ [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "animals", "treated", "with", "FTY720", "showed", "a", "significant", "decrease", "in", "tumor", "volume", "when", "compared", "to", "vehicle", "treated", "animals", "(", "Fig.", "6A", ")", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "FTY720", "was", "purchased", "from", "Cayman", "Chemical", "(", "10006292", ",", "Cayman", "Chemical", ",", "Ann", "Arbor", ",", "MI", ")", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "Other", "investigators", "have", "proposed", "changes", "in", "ERK", "phosphorylation", "as", "a", "potential", "downstream", "target", "of", "FTY720", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "FTY720", ",", "an", "immunosuppressant", "currently", "approved", "for", "treatment", "of", "multiple", "sclerosis", ",", "has", "shown", "antitumor", "effects", "in", "several", "human", "cancer", "cell", "lines", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 9, 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "Further", ",", "immunoblotting", "confirmed", "expression", "of", "these", "three", "proteins", "in", "whole", "cell", "lysates", "from", "the", "three", "human", "Group", "3", "medulloblastoma", "PDXs", "(", "Fig.", "1B", ")", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 8, 9 ], [ 8, 9 ], [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "Following", "treatment", "of", "D341", ",", "D384", ",", "and", "D425", "cells", "with", "FTY720", "(", "5", "mu", "M", ")", "for", "4", "hours", ",", "the", "activity", "of", "PP2A", "was", "significantly", "increased", "over", "baseline", "relative", "to", "control", "in", "all", "three", "medulloblastoma", "PDX", "cell", "lines", "(", "Fig.", "1C", ")", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 24, 25 ], [ 36, 37 ] ]
+  }, {
+    "sentence_tokens" : [ "S", "phase", "in", "the", "D341", "PDX", "was", "also", "decreased", ",", "but", "did", "not", "reach", "statistical", "significance", "." ],
+    "entities_indices" : [ [ 0, 1, 2 ], [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "samples", "were", "analyzed", "with", "fluorescence", "activated", "cell", "sorting", "(", "FACS", ")", "using", "a", "FACSCalibur", "TM", "Flow", "Cytometer", "(", "BD", "Biosciences", ",", "San", "Jose", ",", "CA", ")", "." ],
+    "entities_indices" : [ [ 15, 16 ], [ 22, 23 ], [ 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "Since", "non", "viable", "cells", "will", "not", "migrate", "or", "invade", ",", "cells", "were", "treated", "with", "concentrations", "of", "FTY720", "(", "0", "or", "3", "mu", "M", ")", "well", "below", "their", "LD", "and", "migration", "and", "invasion", "was", "assessed", "after", "24", "hours", "." ],
+    "entities_indices" : [ [ 16, 17 ], [ 27, 28 ], [ 31, 32 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "imaging", "software", "SPOT", "Basic", "5.2", "(", "Diagnostic", "Instruments", "Inc", ".,", "Sterling", "Heights", ",", "MI", ")", "was", "used", "to", "take", "pictures", "of", "the", "inserts", "at", "predetermined", "locations", "with", "a", "microscope", "at", "100", "x", "and", "then", "the", "cells", "were", "quantified", "using", "ImageJ", "software", "(", "Ver", "1.49", ",", "available", "online", "at", "http://imagej.nih.gov/ij", ")", "." ],
+    "entities_indices" : [ [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "Group", "3", "tumors", "account", "for", "approximately", "25", "-", "30", "%", "of", "medulloblastomas", "and", "have", "the", "worst", "prognosis", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "Briefly", ",", "cells", "were", "lysed", "on", "ice", "for", "30", "minutes", "in", "a", "buffer", "consisting", "of", "50", "mM", "Tris-HCl", "(", "pH", "7.4", ")", ",", "150", "mM", "NaCl", ",", "1", "mM", "EDTA", ",", "1", "%", "Triton", "x-100", ",", "1", "%", "sodium", "deoxcycholate", ",", "0.1", "%", "SDS", ",", "phosphatase", "inhibitor", "(", "P5726", ",", "Sigma", "Aldrich", ")", ",", "protease", "inhibitor", "(", "P8340", ",", "Sigma", "Aldrich", ")", ",", "and", "phenylmethylsulfonyl", "fluoride", "(", "PMSF", ",", "P7626", ",", "Sigma", "Aldrich", ")", "." ],
+    "entities_indices" : [ [ 19, 20 ], [ 25, 26 ], [ 29, 30 ], [ 33, 34, 35 ], [ 38, 39 ], [ 43, 44 ], [ 45, 46, 47 ], [ 54, 55, 56 ], [ 64, 65, 66 ], [ 67, 68 ], [ 69, 70 ], [ 71, 72, 73 ] ]
+  }, {
+    "sentence_tokens" : [ "Cells", "were", "pretreated", "with", "FTY720", "(", "0", ",", "3", "mu", "M", ")", "for", "24", "hours", "and", "then", "1.5", "x", "10", "cells", "plated", "into", "the", "top", "of", "the", "insert", "." ],
+    "entities_indices" : [ [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "D384", "cells", ",", "total", "PARP", "decreased", "(", "Fig.", "4C", ",", "upper", "panels", ")", "and", "cleaved", "caspase", "3", "increased", "(", "Fig.", "4C", ",", "lower", "panels", ")", "with", "increasing", "concentrations", "of", "FTY720", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 17, 18, 19 ], [ 31, 32 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "time", "period", "was", "based", "upon", "prior", "experiments", "in", "our", "laboratory", "showing", "that", "5", "weeks", "was", "the", "usual", "maximal", "survival", "for", "animals", "with", "untreated", "tumors", "." ],
+    "entities_indices" : [ [ 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "There", "was", "a", "significant", "decrease", "in", "proliferation", "seen", "in", "all", "3", "medulloblastoma", "PDXs", "following", "FTY720", "treatment", "(", "Fig.", "3B", ")", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 11, 12 ], [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "Briefly", ",", "protein", "lysates", "were", "incubated", "with", "PP2A", "antibody", "at", "4C", "with", "continuous", "rotation", "for", "2", "hours", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "Experiments", "were", "repeated", "in", "triplicate", "and", "migration", "and", "invasion", "reported", "as", "fold", "change", "+/-", "SEM", "." ],
+    "entities_indices" : [ [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "These", "promising", "findings", "prompted", "an", "investigation", "of", "the", "potential", "impact", "of", "FTY720", "on", "medulloblastoma.The", "mechanism", "of", "action", "of", "FTY720", "in", "cancer", "cells", "is", "not", "completely", "defined", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "cells", "were", "then", "washed", "with", "PBS", "and", "fixed", "in", "1mL", "of", "ice-cold", ",", "100", "%", "ethanol", "overnight", "." ],
+    "entities_indices" : [ [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "FTY720", "dosing", "was", "based", "on", "previous", "animal", "studies", "." ],
+    "entities_indices" : [ [ 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "Cell", "migration", "and", "invasion", "assays", "." ],
+    "entities_indices" : [ [ 0, 1, 2 ], [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "believe", "that", "FTY720", "would", "be", "applicable", "to", "the", "orthotopic", "location", "as", "it", "has", "been", "documented", "to", "pass", "the", "blood", "brain", "barrier", "and", "have", "effects", "upon", "intracranial", "glioblastoma", "as", "well", "as", "other", "intracranial", "pathologies", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 27, 28 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "median", "time", "for", "tumor", "doubling", "in", "the", "vehicle", "treated", "group", "was", "4", "days", "(", "range", ":", "2", "-", "8", "days", ")", "compared", "to", "8", "days", "(", "range", ":", "5", "-", "13", "days", ")", "in", "the", "FTY720", "treated", "animals", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 36, 37 ] ]
+  }, {
+    "sentence_tokens" : [ "Cell", "viability", ",", "proliferation", ",", "migration", "and", "invasion", "assays", "were", "performed", "after", "treatment", "with", "FTY720", "." ],
+    "entities_indices" : [ [ 0, 1, 2 ], [ 3, 4 ], [ 7, 8 ], [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "FTY720", "prevented", "progression", "through", "the", "cell", "cycle", "in", "medulloblastoma", "PDX", "cells", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 5, 6, 7 ], [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "Increased", "percentages", "of", "cells", "in", "G1", "were", "seen", "with", "FTY720", "treatment", "of", "both", "gastric", "cancer", "cells", "and", "in", "acute", "myeloid", "leukemia", "cells", "in", "concentrations", "similar", "to", "those", "utilized", "in", "the", "current", "study", "(", "5", "mu", "M", ")", "." ],
+    "entities_indices" : [ [ 9, 10 ], [ 18, 19, 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "Further", ",", "as", "postulated", "by", "previous", "investigators", ",", "the", "AKT", "pathway", "may", "be", "involved", "in", "these", "findings", "as", "AKT", "phosphorylation", "was", "markedly", "decreased", "in", "D341", "and", "D384", "cells", "with", "increasing", "concentrations", "of", "FTY720", "(", "Supplemental", "Fig.", "2", ")", "." ],
+    "entities_indices" : [ [ 9, 10 ], [ 18, 19 ], [ 32, 33 ] ]
+  }, {
+    "sentence_tokens" : [ "PP2A", "activity", "assay", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "current", "study", ",", "we", "demonstrated", "that", "PP2A", "and", "its", "two", "endogenous", "inhibitors", "I2PP2A", "and", "SET", "and", "CIP2A", "are", "expressed", "in", "medulloblastoma", "PDX", "cells", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 14, 15 ], [ 16, 17 ], [ 18, 19 ], [ 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "Cell", "cycle", "analysis", "." ],
+    "entities_indices" : [ [ 0, 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "When", "these", "cells", "were", "exposed", "to", "10", "mu", "M", "FTY720", ",", "ERK", "phosphorylation", "was", "decreased", "." ],
+    "entities_indices" : [ [ 9, 10 ], [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "biotinylated", "universal", "antibody", ",", "Vector", "Laboratories", ",", "Burlingame", ",", "CA", ")", "was", "added", "for", "1", "hour", "at", "22", "degrees", "C." ],
+    "entities_indices" : [ [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "hypothesized", "that", "treatment", "with", "FTY720", "(", "fingolimod", ")", "would", "decrease", "tumorigenicity", "in", "medulloblastoma", "patient", "derived", "xenografts", "(", "PDXs", ")", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 7, 8 ], [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "It", "has", "been", "proposed", "that", "FTY720", "targets", "the", "endogenous", "PP2A", "inhibitors", ",", "I2PP2A", "and", "SET", "and", "CIP2A", ",", "as", "a", "mechanism", "for", "PP2A", "activation", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 9, 10, 11 ], [ 12, 13 ], [ 14, 15 ], [ 16, 17 ], [ 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "ModFit", "LT", "software", "(", "Verity", "Software", "House", "Inc", ".,", "Topsham", ",", "ME", ")", "was", "used", "to", "analyze", "the", "data", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "flank", "model", "was", "chosen", "to", "allow", "more", "careful", "determination", "of", "tumor", "growth", "over", "the", "time", "period", "of", "study", "and", "to", "adhere", "to", "the", "three", "R", "'", "s", "of", "animal", "use", ";", "reduce", ",", "replace", ",", "and", "refine", "." ],
+    "entities_indices" : [ [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "After", "tumors", "were", "harvested", ",", "the", "cells", "were", "dissociated", "using", "a", "Tumor", "Dissociation", "Kit", "(", "Miltenyi", "Biotec", ",", "San", "Diego", ",", "CA", ")", "per", "manufacturer", "'", "s", "protocol", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 11, 12 ], [ 13, 14 ], [ 18, 19 ], [ 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "Despite", "current", "multimodal", "therapy", "with", "surgery", ",", "chemotherapy", "and", "radiation", ",", "infants", "and", "children", "with", "Group", "3", "tumors", "have", "a", "5-year", "overall", "survival", "of", "45", "and", "58", "%", ",", "respectively", "." ],
+    "entities_indices" : [ [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "lysates", "were", "then", "centrifuged", "at", "14", "000", "rpm", "for", "30", "minutes", "at", "4", "degrees", "C.", "Protein", "concentrations", "were", "determined", "using", "a", "Micro", "BCA", "TM", "Protein", "Assay", "Kit", "(", "Thermo", "Fisher", "Scientific", ",", "Rockford", ",", "IL", ")", ",", "separated", "by", "electrophoresis", "on", "SDS-PAGE", "gels", ",", "and", "transferred", "to", "Immobilon", "(R)-P", "polyvinylidene", "fluoride", "(", "PVDF", ")", "transfer", "membrane", "(", "EMB", "Millipore", ")", "." ],
+    "entities_indices" : [ [ 23, 24, 25 ], [ 27, 28 ], [ 51, 52 ], [ 58, 59 ] ]
+  }, {
+    "sentence_tokens" : [ "These", "effects", "were", "noted", "with", "low", "concentrations", "of", "FTY720", "(", "5", "mu", "M", ")", "." ],
+    "entities_indices" : [ [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "Cells", "were", "treated", "with", "increasing", "concentrations", "of", "FTY720", "for", "24", "hours", "and", "viability", "was", "measured", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "in", "vivo", "testing", "of", "FTY720", "against", "medulloblastoma", "tumor", "growth", ",", "D425", "human", "medulloblastoma", "PDX", "cells", "(", "2.5", "x", "10", "in", "Matrigel", "TM", ")", "were", "injected", "into", "the", "right", "flank", "of", "athymic", "nude", "mice", "(", "n", "=", "15", ")", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 7, 8 ], [ 8, 9 ], [ 13, 14 ], [ 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "insert", "was", "then", "placed", "into", "a", "well", "containing", "300", "mu", "L", "of", "treated", "media", "containing", "10", "%", "fetal", "bovine", "serum", "(", "FBS", ")", "as", "a", "chemo-attractant", "." ],
+    "entities_indices" : [ [ 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "Once", "considered", "a", "singular", "pathology", ",", "medulloblastoma", "is", "now", "more", "appropriately", "classified", "into", "four", "molecular", "subgroups", ",", "each", "having", "unique", "clinical", "and", "molecular", "characteristics", ":", "Wingless", "(", "WNT", ")", ",", "Sonic", "Hedgehog", "(", "SHH", ")", ",", "Group", "3", ",", "and", "Group", "4", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 27, 28 ], [ 31, 32 ], [ 33, 34 ] ]
+  }, {
+    "sentence_tokens" : [ "IHC", "demonstrated", "that", "PP2A", "and", "its", "endogenous", "inhibitors", ",", "PP2A", "inhibitor", "2", "(", "I2PP2A", "and", "SET", ")", "and", "cancerous", "inhibitor", "of", "PP2A", "(", "CIP2A", ")", ",", "were", "present", "in", "all", "three", "medulloblastoma", "PDXs", "(", "Fig.", "1A", ")", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 3, 4 ], [ 9, 10, 11 ], [ 13, 14 ], [ 15, 16 ], [ 18, 19, 20, 21, 22 ], [ 23, 24 ], [ 31, 32 ] ]
+  }, {
+    "sentence_tokens" : [ "Anti-beta-actin", "was", "used", "an", "internal", "control", "to", "ensure", "equal", "protein", "loading", "between", "samples", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "FTY720", "treatment", "of", "mice", "bearing", "D425", "medulloblastoma", "PDX", "tumors", "resulted", "in", "a", "significant", "decrease", "in", "tumor", "growth", "compared", "to", "vehicle", "treated", "animals", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 3, 4 ], [ 6, 7 ], [ 8, 9 ], [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "invasion", "assays", ",", "the", "inside", "of", "the", "inserts", "were", "also", "coated", "with", "Matrigel", "TM", "(", "1", "mg/mL", ",", "50", "mu", "L", ";", "BD", "Biosciences", ")", "overnight", "at", "37", "degrees", "C", "and", "then", "washed", "with", "PBS", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 14, 15 ], [ 20, 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "kit", "measures", "activity", "of", "the", "C", "subunit", "of", "PP2A", "(", "clone", "106", ")", "." ],
+    "entities_indices" : [ [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "There", "was", "a", "significant", "increase", "in", "the", "percentage", "of", "cells", "in", "G1", "phase", "in", "all", "three", "medulloblastoma", "PDX", "cell", "lines", "(", "Fig.", "2B", ")", "indicating", "G1", "cell", "cycle", "arrest", "." ],
+    "entities_indices" : [ [ 11, 12, 13 ], [ 16, 17 ], [ 26, 27, 28, 29 ] ]
+  }, {
+    "sentence_tokens" : [ "FTY720", "is", "also", "known", "to", "affect", "cell", "cycle", "progression", "in", "other", "cancers", ",", "so", "we", "hypothesized", "that", "medulloblastoma", "cells", "treated", "with", "FTY720", "may", "fail", "to", "progress", "through", "the", "cell", "cycle", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 6, 7, 8 ], [ 17, 18 ], [ 21, 22 ], [ 28, 29, 30 ] ]
+  }, {
+    "sentence_tokens" : [ "Once", "tumors", "were", "palpable", "(", "100", "mm", ")", ",", "the", "mice", "were", "randomized", "to", "receive", "either", "50", "mu", "L", "suspension", "vehicle", "(", "ORA-Plus", "(R)", ",", "Perrigo", ",", "Allegan", ",", "MI", ")", "or", "FTY720", "10", "mg/kg/day", "suspended", "in", "50", "mu", "L", "ORA-Plus", "(R)", "once", "daily", "via", "oral", "gavage", "for", "5", "weeks", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 10, 11 ], [ 17, 18, 19, 20, 21 ], [ 29, 30 ], [ 32, 33 ], [ 38, 39, 40, 41 ] ]
+  }, {
+    "sentence_tokens" : [ "Experiments", "were", "repeated", "in", "triplicate", "and", "proliferation", "reported", "as", "fold", "change", "+/-", "SEM", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "Routine", "hematoxylin", "and", "eosin", "staining", "was", "performed", "on", "each", "specimen", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "Cell", "cycle", "analysis", "was", "completed", "using", "flow", "cytometry", "." ],
+    "entities_indices" : [ [ 0, 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "individual", "tumor", "growth", "curves", "were", "also", "markedly", "different", ",", "with", "the", "vehicle", "treated", "tumors", "doubling", "in", "size", "twice", "as", "fast", "as", "the", "FTY720", "treated", "tumors", "(", "Supplemental", "Data", "Fig.", "1", ")", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 14, 15 ], [ 23, 24 ], [ 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "Patient", "derived", "medulloblastoma", "xenografts", "." ],
+    "entities_indices" : [ [ 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "Cleaved", "PARP", "was", "also", "increased", "in", "the", "D341", "cell", "line", "with", "FTY720", "treatment", "(", "Fig.", "4B", ")", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "FTY720", ",", "a", "metabolite", "from", "Isaria", "sinclairii", ",", "was", "developed", "as", "an", "immunosuppressant", "for", "use", "in", "transplantation", ",", "and", "is", "currently", "utilized", "in", "the", "treatment", "of", "multiple", "sclerosis", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 26, 27, 28 ] ]
+  }, {
+    "sentence_tokens" : [ "Precision", "Plus", "Protein", "Kaleidoscope", "Standards", "(", "161-0375", ",", "Bio-Rad", ",", "Hercules", ",", "CA", ")", "were", "used", "for", "molecular", "weight", "markers", "to", "confirm", "expected", "size", "of", "target", "proteins", "." ],
+    "entities_indices" : [ [ 0, 1, 2, 3, 4, 5 ], [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "Protein", "levels", "of", "CIP2A", "and", "I2PP2A", "and", "SET", "were", "measured", "following", "FTY720", "treatment", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 5, 6 ], [ 7, 8 ], [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "Experiments", "were", "completed", "in", "triplicate", "and", "viability", "reported", "as", "fold", "change", "+/-", "SEM.Proliferation", "was", "assessed", "using", "the", "CellTiter", "96", "(R)", "Aqueous", "One", "Solution", "Cell", "Proliferation", "assay", "(", "Promega", ",", "Madison", ",", "WI", ")", "." ],
+    "entities_indices" : [ [ 23, 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "Phosphatase", "activity", "was", "determined", "using", "a", "standard", "curve", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "H", "&", "E", "staining", "confirmed", "that", "the", "PDXs", "represented", "medulloblastoma", "histologically", "(", "Fig.", "1A", ",", "top", "panel", ")", "." ],
+    "entities_indices" : [ [ 9, 10 ], [ 15, 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "FTY720", "significantly", "decreased", "viability", "in", "all", "3", "medulloblastoma", "PDX", "cell", "lines", "(", "Fig.", "3A", ")", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "Crist", "o", "bal", "and", "colleagues", "reported", "similar", "results", "with", "PC-3", "prostate", "cancer", "cells", "." ],
+    "entities_indices" : [ [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "Three", "Group", "3", "medulloblastoma", "PDXs", "(", "D341", ",", "D384", "and", "D425", ")", "were", "utilized", "." ],
+    "entities_indices" : [ [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "All", "three", "medulloblastoma", "PDXs", "were", "verified", "within", "the", "last", "12", "months", "using", "short", "tandem", "repeat", "analysis", "(", "Heflin", "Center", "for", "Genomic", "Sciences", ",", "UAB", ",", "Birmingham", ",", "AL", ")", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 27, 28 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "staining", "reaction", "was", "developed", "with", "VECTASTAIN", "Elite", "ABC", "reagent", "(", "PK-7100", ",", "Vector", "Laboratories", ")", "and", "Metal", "Enhanced", "DAB", "Substrate", "(", "Thermo", "Fisher", "Scientific", ")", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 11, 12 ], [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "Despite", "aggressive", "therapy", "including", "surgery", ",", "multi-agent", "chemotherapy", "and", "craniospinal", "radiation", ",", "outcomes", "for", "children", "with", "Group", "3", "medulloblastoma", "remain", "poor", ",", "and", "survivors", "often", "suffer", "from", "debilitating", "life-long", "toxicities", "related", "to", "these", "interventions", "." ],
+    "entities_indices" : [ [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "Formalin", "fixed", "paraffin", "embedded", "xenograft", "tumor", "specimens", "were", "sectioned", "into", "6", "mu", "m", "sections", "and", "baked", "at", "70", "degrees", "C", "for", "one", "hour", "on", "positive", "slides", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 2, 3 ], [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "These", "data", "indicate", "that", "FTY720", "resulted", "in", "G1", "cell", "cycle", "arrest", "in", "the", "medulloblastoma", "PDXs", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 8, 9, 10, 11 ], [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "Medulloblastoma", "is", "the", "most", "common", "malignant", "primary", "nervous", "system", "tumor", "in", "children", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 7, 8, 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "Cell", "viability", "and", "proliferation", "assays", "." ],
+    "entities_indices" : [ [ 0, 1, 2 ], [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "flank", "model", "was", "chosen", "as", "it", "allowed", "us", "to", "accurately", "measure", "changes", "in", "tumor", "size", "over", "time", "." ],
+    "entities_indices" : [ [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "PP2A", "has", "been", "shown", "to", "be", "downregulated", "in", "medulloblastoma", "tumors", "leading", "to", "upregulation", "of", "tumorigenic", "signaling", "pathways", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 8, 9 ], [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "These", "data", "indicate", "that", "the", "effects", "of", "FTY720", "on", "kinases", "may", "be", "cell", "line", "dependent", ",", "and", "along", "with", "the", "findings", "for", "AKT", ",", "will", "serve", "as", "a", "basis", "for", "further", "mechanistic", "studies", "of", "FTY720", "effects", "in", "medulloblastoma.Using", "an", "in", "vivo", "mouse", "xenograft", "model", "of", "D425", "human", "medulloblastoma", ",", "we", "found", "that", "FTY720", "treatment", "led", "to", "a", "significant", "decrease", "in", "tumor", "growth", "compared", "to", "untreated", "animals", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 22, 23 ], [ 34, 35 ], [ 47, 48 ], [ 52, 53 ], [ 60, 61 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "xenografts", "were", "maintained", "in", "athymic", "nude", "mice", "(", "Envigo", ",", "Pratville", ",", "AL", ")", "." ],
+    "entities_indices" : [ [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "Recently", ",", "FTY720", "was", "found", "to", "have", "an", "inhibitory", "effect", "upon", "human", "cancer", "cells", "." ],
+    "entities_indices" : [ [ 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "Zhang", "and", "others", "showed", "that", "human", "glioma", "cells", "had", "a", "marked", "reduction", "in", "migration", "and", "invasion", "following", "FTY720", "treatment", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 15, 16 ], [ 17, 18 ] ]
+  } ],
+  "emptySentences" : [ {
+    "sentence_tokens" : [ "Group", "3", "tumors", "account", "for", "28", "%", "of", "medulloblastomas", "and", "have", "the", "worst", "prognosis", "." ]
+  }, {
+    "sentence_tokens" : [ "FTY720", ",", "an", "immunosuppressant", "currently", "approved", "for", "treatment", "of", "multiple", "sclerosis", ",", "has", "shown", "antitumor", "effects", "in", "several", "human", "cancer", "cell", "lines", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "hypothesized", "that", "treatment", "with", "FTY720", "(", "fingolimod", ")", "would", "decrease", "tumorigenicity", "in", "medulloblastoma", "patient", "derived", "xenografts", "(", "PDXs", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Three", "Group", "3", "medulloblastoma", "PDXs", "(", "D341", ",", "D384", "and", "D425", ")", "were", "utilized", "." ]
+  }, {
+    "sentence_tokens" : [ "Expression", "of", "PP2A", "and", "its", "endogenous", "inhibitors", "I2PP2A", "and", "CIP2A", "was", "detected", "by", "immunohistochemistry", "and", "immunoblotting", "." ]
+  }, {
+    "sentence_tokens" : [ "PP2A", "activation", "was", "measured", "via", "phosphatase", "activation", "kit", "." ]
+  }, {
+    "sentence_tokens" : [ "Cell", "viability", ",", "proliferation", ",", "migration", "and", "invasion", "assays", "were", "performed", "after", "treatment", "with", "FTY720", "." ]
+  }, {
+    "sentence_tokens" : [ "Cell", "cycle", "analysis", "was", "completed", "using", "flow", "cytometry", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "flank", "model", "using", "D425", "human", "medulloblastoma", "PDX", "cells", "was", "used", "to", "assess", "the", "in", "vivo", "effects", "of", "FTY720", "." ]
+  }, {
+    "sentence_tokens" : [ "FTY720", "treatment", "of", "mice", "bearing", "D425", "medulloblastoma", "PDX", "tumors", "resulted", "in", "a", "significant", "decrease", "in", "tumor", "growth", "compared", "to", "vehicle", "treated", "animals", "." ]
+  }, {
+    "sentence_tokens" : [ "These", "results", "suggest", "that", "FTY720", "should", "be", "investigated", "further", "as", "a", "potential", "therapeutic", "agent", "for", "medulloblastoma", "." ]
+  }, {
+    "sentence_tokens" : [ "Introduction", "." ]
+  }, {
+    "sentence_tokens" : [ "Medulloblastoma", "is", "the", "most", "common", "malignant", "primary", "nervous", "system", "tumor", "in", "children", "." ]
+  }, {
+    "sentence_tokens" : [ "Once", "considered", "a", "singular", "pathology", ",", "medulloblastoma", "is", "now", "more", "appropriately", "classified", "into", "four", "molecular", "subgroups", ",", "each", "having", "unique", "clinical", "and", "molecular", "characteristics", ":", "Wingless", "(", "WNT", ")", ",", "Sonic", "Hedgehog", "(", "SHH", ")", ",", "Group", "3", ",", "and", "Group", "4", "." ]
+  }, {
+    "sentence_tokens" : [ "Group", "3", "tumors", "account", "for", "approximately", "25", "-", "30", "%", "of", "medulloblastomas", "and", "have", "the", "worst", "prognosis", "." ]
+  }, {
+    "sentence_tokens" : [ "Despite", "current", "multimodal", "therapy", "with", "surgery", ",", "chemotherapy", "and", "radiation", ",", "infants", "and", "children", "with", "Group", "3", "tumors", "have", "a", "5-year", "overall", "survival", "of", "45", "and", "58", "%", ",", "respectively", "." ]
+  }, {
+    "sentence_tokens" : [ "Furthermore", ",", "children", "who", "survive", "often", "suffer", "from", "long-term", "motor", ",", "sensory", ",", "endocrine", ",", "and", "neuropsychologic", "sequelae", "." ]
+  }, {
+    "sentence_tokens" : [ "Novel", "therapeutic", "strategies", "to", "effectively", "treat", "this", "challenging", "malignancy", "are", "clearly", "needed.FTY720", "(", "2-Amino-2-[", "2-(", "4-octylphenyl", ")", "]", "-1,3-propanediol", ",", "fingolimod", ")", "is", "a", "synthetic", "sphingosine", "immunosuppressant", "that", "was", "approved", "by", "the", "United", "States", "Food", "and", "Drug", "Administration", "(", "FDA", ")", "for", "the", "treatment", "of", "multiple", "sclerosis", "." ]
+  }, {
+    "sentence_tokens" : [ "Over", "the", "past", "decade", ",", "FTY720", "has", "also", "been", "shown", "to", "have", "anti-tumor", "properties", "in", "several", "human", "malignancies", ",", "including", "glioblastoma", "." ]
+  }, {
+    "sentence_tokens" : [ "Because", "of", "the", "anti-tumor", "properties", "of", "FTY720", "seen", "in", "other", "human", "malignancies", ",", "we", "hypothesized", "that", "it", "may", "also", "have", "anti-tumor", "effects", "on", "medulloblastoma", "." ]
+  }, {
+    "sentence_tokens" : [ "Results", "." ]
+  }, {
+    "sentence_tokens" : [ "PP2A", "protein", "expression", "has", "been", "shown", "to", "be", "downregulated", "in", "medulloblastoma", "tumors", "and", "hypothesized", "to", "lead", "to", "upregulation", "of", "tumorigenic", "signaling", "pathways", "." ]
+  }, {
+    "sentence_tokens" : [ "H", "&", "E", "staining", "confirmed", "that", "the", "PDXs", "represented", "medulloblastoma", "histologically", "(", "Fig.", "1A", ",", "top", "panel", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "IHC", "demonstrated", "that", "PP2A", "and", "its", "endogenous", "inhibitors", ",", "PP2A", "inhibitor", "2", "(", "I2PP2A", "and", "SET", ")", "and", "cancerous", "inhibitor", "of", "PP2A", "(", "CIP2A", ")", ",", "were", "present", "in", "all", "three", "medulloblastoma", "PDXs", "(", "Fig.", "1A", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Further", ",", "immunoblotting", "confirmed", "expression", "of", "these", "three", "proteins", "in", "whole", "cell", "lysates", "from", "the", "three", "human", "Group", "3", "medulloblastoma", "PDXs", "(", "Fig.", "1B", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Following", "treatment", "of", "D341", ",", "D384", ",", "and", "D425", "cells", "with", "FTY720", "(", "5", "mu", "M", ")", "for", "4", "hours", ",", "the", "activity", "of", "PP2A", "was", "significantly", "increased", "over", "baseline", "relative", "to", "control", "in", "all", "three", "medulloblastoma", "PDX", "cell", "lines", "(", "Fig.", "1C", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "It", "has", "been", "proposed", "that", "FTY720", "targets", "the", "endogenous", "PP2A", "inhibitors", ",", "I2PP2A", "and", "SET", "and", "CIP2A", ",", "as", "a", "mechanism", "for", "PP2A", "activation", "." ]
+  }, {
+    "sentence_tokens" : [ "Protein", "levels", "of", "CIP2A", "and", "I2PP2A", "and", "SET", "were", "measured", "following", "FTY720", "treatment", "." ]
+  }, {
+    "sentence_tokens" : [ "CIP2A", "levels", "were", "diminished", "in", "the", "D341", "and", "D384", "MB", "PDXs", "(", "Fig.", "1D", ",", "top", "left", "and", "middle", "panels", ")", ",", "but", "was", "not", "changed", "in", "the", "D425", "MB", "PDX", "(", "Fig.", "1D", ",", "top", "right", "panel", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "I2PP2A", "levels", "were", "not", "altered", "(", "Fig.", "1D", ",", "middle", "panels", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "FTY720", "prevented", "progression", "through", "the", "cell", "cycle", "in", "medulloblastoma", "PDX", "cells", "." ]
+  }, {
+    "sentence_tokens" : [ "FTY720", "is", "also", "known", "to", "affect", "cell", "cycle", "progression", "in", "other", "cancers", ",", "so", "we", "hypothesized", "that", "medulloblastoma", "cells", "treated", "with", "FTY720", "may", "fail", "to", "progress", "through", "the", "cell", "cycle", "." ]
+  }, {
+    "sentence_tokens" : [ "D425", ",", "D341", "and", "D384", "cells", "were", "treated", "with", "FTY720", "(", "5", "mu", "M", ")", "for", "24", "hours", "and", "cell", "cycle", "analysis", "performed", "using", "PI", "staining", "." ]
+  }, {
+    "sentence_tokens" : [ "Representative", "histograms", "from", "all", "three", "PDX", "cell", "lines", "are", "presented", "in", "Fig.", "2A", "." ]
+  }, {
+    "sentence_tokens" : [ "There", "was", "a", "significant", "increase", "in", "the", "percentage", "of", "cells", "in", "G1", "phase", "in", "all", "three", "medulloblastoma", "PDX", "cell", "lines", "(", "Fig.", "2B", ")", "indicating", "G1", "cell", "cycle", "arrest", "." ]
+  }, {
+    "sentence_tokens" : [ "S", "phase", "in", "the", "D341", "PDX", "was", "also", "decreased", ",", "but", "did", "not", "reach", "statistical", "significance", "." ]
+  }, {
+    "sentence_tokens" : [ "Data", "are", "presented", "in", "tabular", "form", "in", "Fig.", "2C", "." ]
+  }, {
+    "sentence_tokens" : [ "These", "data", "indicate", "that", "FTY720", "resulted", "in", "G1", "cell", "cycle", "arrest", "in", "the", "medulloblastoma", "PDXs", "." ]
+  }, {
+    "sentence_tokens" : [ "Cells", "were", "treated", "with", "increasing", "concentrations", "of", "FTY720", "for", "24", "hours", "and", "viability", "was", "measured", "." ]
+  }, {
+    "sentence_tokens" : [ "FTY720", "significantly", "decreased", "viability", "in", "all", "3", "medulloblastoma", "PDX", "cell", "lines", "(", "Fig.", "3A", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "lethal", "dose", "50", "%", "(", "LD", ")", "for", "FTY720", "was", "7.5", "mu", "M", "in", "D425", ",", "5.5", "mu", "M", "in", "D341", ",", "and", "7.3", "mu", "M", "in", "D384", "cells", "." ]
+  }, {
+    "sentence_tokens" : [ "Cell", "proliferation", "was", "also", "measured", "following", "treatment", "for", "24", "hours", "with", "increasing", "concentrations", "of", "FTY720", "." ]
+  }, {
+    "sentence_tokens" : [ "There", "was", "a", "significant", "decrease", "in", "proliferation", "seen", "in", "all", "3", "medulloblastoma", "PDXs", "following", "FTY720", "treatment", "(", "Fig.", "3B", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Apoptosis", "was", "measured", "by", "immunoblotting", "for", "either", "loss", "of", "total", "PARP", ",", "or", "an", "increase", "in", "cleaved", "PARP", "or", "an", "increase", "in", "cleaved", "caspase", "3", ",", "all", "of", "which", "are", "known", "to", "be", "indicative", "of", "apoptosis", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "D425", "PDX", ",", "there", "was", "an", "increase", "in", "both", "cleaved", "PARP", "and", "cleaved", "caspase", "3", "with", "increasing", "concentrations", "of", "FTY720", "(", "Fig.", "4A", ",", "upper", "and", "lower", "panels", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Cleaved", "PARP", "was", "also", "increased", "in", "the", "D341", "cell", "line", "with", "FTY720", "treatment", "(", "Fig.", "4B", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "D384", "cells", ",", "total", "PARP", "decreased", "(", "Fig.", "4C", ",", "upper", "panels", ")", "and", "cleaved", "caspase", "3", "increased", "(", "Fig.", "4C", ",", "lower", "panels", ")", "with", "increasing", "concentrations", "of", "FTY720", "." ]
+  }, {
+    "sentence_tokens" : [ "These", "data", "showed", "that", "FTY720", "treatment", "resulted", "in", "apoptosis", "in", "the", "medulloblastoma", "PDX", "cells", "." ]
+  }, {
+    "sentence_tokens" : [ "Migration", "and", "invasion", "of", "medulloblastoma", "PDX", "cells", "was", "decreased", "after", "treatment", "with", "FTY720", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "ability", "to", "migrate", "and", "invade", "is", "a", "hallmark", "behavior", "of", "cancer", "cells", "." ]
+  }, {
+    "sentence_tokens" : [ "Since", "non", "viable", "cells", "will", "not", "migrate", "or", "invade", ",", "cells", "were", "treated", "with", "concentrations", "of", "FTY720", "(", "0", "or", "3", "mu", "M", ")", "well", "below", "their", "LD", "and", "migration", "and", "invasion", "was", "assessed", "after", "24", "hours", "." ]
+  }, {
+    "sentence_tokens" : [ "FTY720", "resulted", "in", "a", "significant", "decrease", "in", "both", "migration", "(", "Fig.", "5A", ",", "B", ")", "and", "invasion", "(", "Fig.", "5C", ",", "D", ")", "in", "all", "3", "medulloblastoma", "PDXs", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "in", "vivo", "testing", "of", "FTY720", "against", "medulloblastoma", "tumor", "growth", ",", "D425", "human", "medulloblastoma", "PDX", "cells", "(", "2.5", "x", "10", "in", "Matrigel", "TM", ")", "were", "injected", "into", "the", "right", "flank", "of", "athymic", "nude", "mice", "(", "n", "=", "15", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "flank", "model", "was", "chosen", "as", "it", "allowed", "us", "to", "accurately", "measure", "changes", "in", "tumor", "size", "over", "time", "." ]
+  }, {
+    "sentence_tokens" : [ "Once", "tumors", "were", "palpable", "(", "100", "mm", ")", "animals", "were", "randomized", "to", "receive", "daily", "oral", "doses", "of", "vehicle", "(", "N", "=", "7", ")", "or", "FTY720", "(", "10", "mg/kg/day", ")", "(", "N", "=", "8)", "for", "5", "weeks", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "dosage", "was", "chosen", "based", "on", "previous", "literature", "reports", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "time", "period", "was", "based", "upon", "prior", "experiments", "in", "our", "laboratory", "showing", "that", "5", "weeks", "was", "the", "usual", "maximal", "survival", "for", "animals", "with", "untreated", "tumors", "." ]
+  }, {
+    "sentence_tokens" : [ "At", "the", "end", "of", "5", "weeks", "of", "treatment", ",", "all", "surviving", "animals", "were", "euthanized", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "animals", "treated", "with", "FTY720", "showed", "a", "significant", "decrease", "in", "tumor", "volume", "when", "compared", "to", "vehicle", "treated", "animals", "(", "Fig.", "6A", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "At", "5", "weeks", ",", "there", "were", "no", "surviving", "animals", "in", "the", "vehicle", "treated", "group", "and", "3", "in", "the", "FTY720", "treated", "group", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "individual", "tumor", "growth", "curves", "were", "also", "markedly", "different", ",", "with", "the", "vehicle", "treated", "tumors", "doubling", "in", "size", "twice", "as", "fast", "as", "the", "FTY720", "treated", "tumors", "(", "Supplemental", "Data", "Fig.", "1", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "median", "time", "for", "tumor", "doubling", "in", "the", "vehicle", "treated", "group", "was", "4", "days", "(", "range", ":", "2", "-", "8", "days", ")", "compared", "to", "8", "days", "(", "range", ":", "5", "-", "13", "days", ")", "in", "the", "FTY720", "treated", "animals", "." ]
+  }, {
+    "sentence_tokens" : [ "FTY720", "did", "not", "significantly", "affect", "the", "weight", "of", "the", "animals", "(", "Fig.", "6B", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Discussion", "." ]
+  }, {
+    "sentence_tokens" : [ "Despite", "aggressive", "therapy", "including", "surgery", ",", "multi-agent", "chemotherapy", "and", "craniospinal", "radiation", ",", "outcomes", "for", "children", "with", "Group", "3", "medulloblastoma", "remain", "poor", ",", "and", "survivors", "often", "suffer", "from", "debilitating", "life-long", "toxicities", "related", "to", "these", "interventions", "." ]
+  }, {
+    "sentence_tokens" : [ "There", "is", "a", "great", "need", "for", "new", "therapies", "to", "improve", "outcomes", "and", "reduce", "the", "toxicities", "from", "current", "treatments", "." ]
+  }, {
+    "sentence_tokens" : [ "Most", "current", "investigations", "are", "focused", "on", "discovery", "of", "new", "compounds", ",", "the", "repurposing", "of", "previously", "approved", "compounds", ",", "and", "the", "development", "of", "novel", "combinatorial", "therapies.The", "use", "of", "immunosuppressant", "drugs", "to", "fight", "cancer", "is", "not", "a", "new", "concept", "and", "is", "one", "that", "has", "been", "implemented", "with", "a", "number", "of", "compounds", "." ]
+  }, {
+    "sentence_tokens" : [ "FTY720", ",", "a", "metabolite", "from", "Isaria", "sinclairii", ",", "was", "developed", "as", "an", "immunosuppressant", "for", "use", "in", "transplantation", ",", "and", "is", "currently", "utilized", "in", "the", "treatment", "of", "multiple", "sclerosis", "." ]
+  }, {
+    "sentence_tokens" : [ "Recently", ",", "FTY720", "was", "found", "to", "have", "an", "inhibitory", "effect", "upon", "human", "cancer", "cells", "." ]
+  }, {
+    "sentence_tokens" : [ "Subsequent", "studies", "showed", "similar", "effects", "with", "decreased", "viability", "and", "apoptosis", "in", "other", "human", "tumor", "types", "including", "bladder", "cancer", ",", "hepatoma", ",", "pancreatic", "cancer", "and", "leukemia", "." ]
+  }, {
+    "sentence_tokens" : [ "These", "promising", "findings", "prompted", "an", "investigation", "of", "the", "potential", "impact", "of", "FTY720", "on", "medulloblastoma.The", "mechanism", "of", "action", "of", "FTY720", "in", "cancer", "cells", "is", "not", "completely", "defined", "." ]
+  }, {
+    "sentence_tokens" : [ "PP2A", "is", "a", "known", "tumor", "suppressor", "that", "is", "inactive", "or", "downregulated", "in", "many", "human", "tumors", "either", "through", "upregulation", "of", "its", "endogenous", "inhibitors", ",", "I2PP2A", "and", "SET", "or", "CIP2A", ",", "or", "through", "mutations", "which", "limit", "the", "activity", "of", "PP2A", "." ]
+  }, {
+    "sentence_tokens" : [ "PP2A", "has", "been", "shown", "to", "be", "downregulated", "in", "medulloblastoma", "tumors", "leading", "to", "upregulation", "of", "tumorigenic", "signaling", "pathways", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "current", "study", ",", "we", "demonstrated", "that", "PP2A", "and", "its", "two", "endogenous", "inhibitors", "I2PP2A", "and", "SET", "and", "CIP2A", "are", "expressed", "in", "medulloblastoma", "PDX", "cells", "." ]
+  }, {
+    "sentence_tokens" : [ "These", "findings", "have", "been", "reported", "by", "other", "authors", "who", "have", "noted", "that", "CIP2A", "or", "I2PP2A", "and", "SET", "expression", "was", "not", "altered", "by", "FTY720", "." ]
+  }, {
+    "sentence_tokens" : [ "These", "effects", "were", "noted", "with", "low", "concentrations", "of", "FTY720", "(", "5", "mu", "M", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Other", "investigators", "have", "demonstrated", "similar", "findings", "." ]
+  }, {
+    "sentence_tokens" : [ "Permpongkosol", "et", "al.", "showed", "an", "increased", "percentage", "of", "DU145", "prostate", "cancer", "cells", "in", "G1", "and", "decreased", "percentage", "in", "S", "phase", "following", "FTY720", ",", "but", "at", "a", "much", "higher", "dose", "(", "20", "mu", "M", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Increased", "percentages", "of", "cells", "in", "G1", "were", "seen", "with", "FTY720", "treatment", "of", "both", "gastric", "cancer", "cells", "and", "in", "acute", "myeloid", "leukemia", "cells", "in", "concentrations", "similar", "to", "those", "utilized", "in", "the", "current", "study", "(", "5", "mu", "M", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Zhang", "and", "others", "showed", "that", "human", "glioma", "cells", "had", "a", "marked", "reduction", "in", "migration", "and", "invasion", "following", "FTY720", "treatment", "." ]
+  }, {
+    "sentence_tokens" : [ "Another", "study", "in", "human", "prostate", "cancer", "cells", "demonstrated", "a", "decrease", "in", "migration", "and", "invasion", "with", "FTY720", "treatment", "." ]
+  }, {
+    "sentence_tokens" : [ "Similarly", ",", "in", "the", "current", "study", ",", "FTY720", "in", "doses", "well", "below", "the", "LD", "resulted", "in", "significant", "reductions", "in", "both", "migration", "and", "invasion", "in", "human", "medulloblastoma", "cells", "." ]
+  }, {
+    "sentence_tokens" : [ "Further", ",", "as", "postulated", "by", "previous", "investigators", ",", "the", "AKT", "pathway", "may", "be", "involved", "in", "these", "findings", "as", "AKT", "phosphorylation", "was", "markedly", "decreased", "in", "D341", "and", "D384", "cells", "with", "increasing", "concentrations", "of", "FTY720", "(", "Supplemental", "Fig.", "2", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Other", "investigators", "have", "proposed", "changes", "in", "ERK", "phosphorylation", "as", "a", "potential", "downstream", "target", "of", "FTY720", "." ]
+  }, {
+    "sentence_tokens" : [ "Rincon", "and", "colleagues", "showed", "decreased", "activation", "of", "ERK", "in", "BT-474", "and", "MDA-MB-231", "breast", "cancer", "cells", "following", "treatment", "with", "FTY720", "." ]
+  }, {
+    "sentence_tokens" : [ "Crist", "o", "bal", "and", "colleagues", "reported", "similar", "results", "with", "PC-3", "prostate", "cancer", "cells", "." ]
+  }, {
+    "sentence_tokens" : [ "When", "these", "cells", "were", "exposed", "to", "10", "mu", "M", "FTY720", ",", "ERK", "phosphorylation", "was", "decreased", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "current", "study", ",", "D384", "medulloblastoma", "PDX", "cells", "showed", "decreased", "ERK", "phosphorylation", "without", "a", "change", "in", "total", "ERK", "expression", "following", "FTY720", "treatment", "(", "Supplemental", "Data", "Fig.", "2", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "On", "the", "contrary", ",", "phosphorylation", "of", "ERK", "was", "increased", "in", "the", "D341", "PDX", "cells", "with", "increasing", "doses", "of", "FTY720", "." ]
+  }, {
+    "sentence_tokens" : [ "These", "data", "indicate", "that", "the", "effects", "of", "FTY720", "on", "kinases", "may", "be", "cell", "line", "dependent", ",", "and", "along", "with", "the", "findings", "for", "AKT", ",", "will", "serve", "as", "a", "basis", "for", "further", "mechanistic", "studies", "of", "FTY720", "effects", "in", "medulloblastoma.Using", "an", "in", "vivo", "mouse", "xenograft", "model", "of", "D425", "human", "medulloblastoma", ",", "we", "found", "that", "FTY720", "treatment", "led", "to", "a", "significant", "decrease", "in", "tumor", "growth", "compared", "to", "untreated", "animals", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "flank", "model", "was", "chosen", "to", "allow", "more", "careful", "determination", "of", "tumor", "growth", "over", "the", "time", "period", "of", "study", "and", "to", "adhere", "to", "the", "three", "R", "'", "s", "of", "animal", "use", ";", "reduce", ",", "replace", ",", "and", "refine", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "believe", "that", "FTY720", "would", "be", "applicable", "to", "the", "orthotopic", "location", "as", "it", "has", "been", "documented", "to", "pass", "the", "blood", "brain", "barrier", "and", "have", "effects", "upon", "intracranial", "glioblastoma", "as", "well", "as", "other", "intracranial", "pathologies", "." ]
+  }, {
+    "sentence_tokens" : [ "These", "findings", "are", "novel", "as", "FTY720", "has", "not", "yet", "been", "studied", "as", "a", "therapeutic", "tool", "for", "medulloblastoma", "." ]
+  }, {
+    "sentence_tokens" : [ "Furthermore", ",", "the", "use", "of", "human", "PDX", "medulloblastoma", "cell", "lines", "in", "these", "studies", "is", "also", "important", "as", "it", "provided", "a", "clinically", "relevant", "model", "for", "the", "preclinical", "study", "of", "this", "compound", "in", "medulloblastoma", "." ]
+  }, {
+    "sentence_tokens" : [ "These", "data", "suggest", "that", "FTY720", "may", "be", "a", "novel", "therapeutic", "for", "treating", "medulloblastoma", "and", "further", "clinical", "evaluation", "is", "warranted", "." ]
+  }, {
+    "sentence_tokens" : [ "Materials", "and", "Methods", "." ]
+  }, {
+    "sentence_tokens" : [ "Patient", "derived", "medulloblastoma", "xenografts", "." ]
+  }, {
+    "sentence_tokens" : [ "Three", "Group", "3", "medulloblastoma", "xenografts", "established", "from", "pediatric", "patients", "were", "used", "for", "experiments", ":", "D341", "Med", "(", "D341", ")", ",", "D384", "Med", "(", "D384", ")", ",", "and", "D425", "Med", "(", "D425", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "These", "tumors", "were", "generously", "provided", "by", "Darell", "D.", "Bigner", ",", "MD", ",", "PhD", ",", "Duke", "Medical", "Center", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "xenografts", "were", "maintained", "in", "athymic", "nude", "mice", "(", "Envigo", ",", "Pratville", ",", "AL", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "After", "tumors", "were", "harvested", ",", "the", "cells", "were", "dissociated", "using", "a", "Tumor", "Dissociation", "Kit", "(", "Miltenyi", "Biotec", ",", "San", "Diego", ",", "CA", ")", "per", "manufacturer", "'", "s", "protocol", "." ]
+  }, {
+    "sentence_tokens" : [ "All", "cell", "lines", "were", "maintained", "in", "neurobasal", "medium", "(", "Life", "Technologies", ",", "Carlsbad", ",", "CA", ")", "supplemented", "with", "B-27", "supplement", "without", "Vitamin", "A", "(", "Life", "Technologies", ")", ",", "N2", "supplement", "(", "Life", "Technologies", ")", ",", "amphotericin", "B", "(", "250", "mu", "g/mL", ")", ",", "gentamicin", "(", "50", "mu", "g/mL", ")", ",", "L-glutamine", "(", "2", "mM", ")", ",", "epidermal", "growth", "factor", "(", "10", "ng/mL", ";", "Miltenyi", "Biotec", ")", "and", "fibroblast", "growth", "factor", "(", "10", "ng/mL", ";", "Miltenyi", "Biotec", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "cells", "were", "kept", "under", "standard", "conditions", "at", "37", "degrees", "C", "and", "5", "%", "CO", "." ]
+  }, {
+    "sentence_tokens" : [ "All", "three", "medulloblastoma", "PDXs", "were", "verified", "within", "the", "last", "12", "months", "using", "short", "tandem", "repeat", "analysis", "(", "Heflin", "Center", "for", "Genomic", "Sciences", ",", "UAB", ",", "Birmingham", ",", "AL", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Reagents", "and", "antibodies", "." ]
+  }, {
+    "sentence_tokens" : [ "FTY720", "was", "purchased", "from", "Cayman", "Chemical", "(", "10006292", ",", "Cayman", "Chemical", ",", "Ann", "Arbor", ",", "MI", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Primary", "antibodies", "used", "for", "Western", "blotting", "included", "the", "following", ":", "anti-I2PP2A", "(", "H-120", ")", "(", "sc-25564", ")", "from", "Santa", "Cruz", "Biotechnology", "(", "Santa", "Cruz", ",", "CA", ")", ",", "anti-PP2A", "(", "ab32104", ")", "and", "anti-CIP2A", "(", "ab99518", ")", "from", "Abcam", "(", "Cambridge", ",", "MA", ")", ",", "anti-total", "AKT", "(", "9272", ")", ",", "anti-phospho-AKT", "(", "S473", ";", "9271", ")", ",", "p44/42", "MAP", "Kinase", "[", "ERK1/2", "(", "9102", ")", "]", ",", "anti-phospho-p44/42", "MAPK", "[", "phospho-ERK", ",", "T202", "and", "T204", ",", "(", "4377", ")", "]", ",", "anti-total", "PARP", "(", "9542", ")", "and", "anti-cleaved", "Caspase-3", "(", "9661", ")", "from", "Cell", "Signaling", "Technology", "(", "Danvers", ",", "MA", ")", ",", "anti-beta-actin", "from", "Sigma", "(", "A1978", ",", "Sigma", "Aldrich", ",", "St.", "Louis", ",", "MO", ")", ",", "anti-cleaved", "PARP", "(", "MAB3565", ")", "and", "anti-GAPDH", "(", "MAB374", ",", "clone", "6C5", ")", "from", "EMD", "Millipore", "(", "EMD", "Millipore", ",", "Billerica", ",", "MA", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Immunohistochemistry", "." ]
+  }, {
+    "sentence_tokens" : [ "Formalin", "fixed", "paraffin", "embedded", "xenograft", "tumor", "specimens", "were", "sectioned", "into", "6", "mu", "m", "sections", "and", "baked", "at", "70", "degrees", "C", "for", "one", "hour", "on", "positive", "slides", "." ]
+  }, {
+    "sentence_tokens" : [ "Slides", "were", "deparaffinized", ",", "steamed", ",", "quenched", "with", "3", "%", "hydrogen", "peroxide", ",", "and", "blocked", "with", "blocking", "buffer", "[", "bovine", "serum", "albumin", "(", "BSA", ")", ",", "powdered", "milk", ",", "Triton", "X-100", ",", "phosphate", "buffered", "saline", "(", "PBS", ")", "]", "for", "30", "minutes", "at", "4", "degrees", "C." ]
+  }, {
+    "sentence_tokens" : [ "The", "primary", "antibodies", "anti-I2PP2A", "and", "SET", "(", "rabbit", "polyclonal", ",", "1:400", ",", "sc-25564", ",", "Santa", "Cruz", ")", ",", "anti-CIP2A", "(", "rabbit", "polyclonal", ",", "1:200", ",", "ab99518", ",", "Abcam", ")", ",", "and", "anti-PP2A", "(", "rabbit", "monoclonal", ",", "1:200", ",", "ab32104", ",", "Abcam", ")", "were", "added", "and", "incubated", "for", "1", "hour", "in", "a", "humidity", "chamber", "at", "room", "temperature", "." ]
+  }, {
+    "sentence_tokens" : [ "After", "washing", "with", "PBS", ",", "the", "secondary", "antibody", "for", "rabbit", "(", "R.T.U", "." ]
+  }, {
+    "sentence_tokens" : [ "biotinylated", "universal", "antibody", ",", "Vector", "Laboratories", ",", "Burlingame", ",", "CA", ")", "was", "added", "for", "1", "hour", "at", "22", "degrees", "C." ]
+  }, {
+    "sentence_tokens" : [ "The", "staining", "reaction", "was", "developed", "with", "VECTASTAIN", "Elite", "ABC", "reagent", "(", "PK-7100", ",", "Vector", "Laboratories", ")", "and", "Metal", "Enhanced", "DAB", "Substrate", "(", "Thermo", "Fisher", "Scientific", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Slides", "were", "counterstained", "with", "hematoxylin", "." ]
+  }, {
+    "sentence_tokens" : [ "Negative", "controls", "(", "rabbit", "IgG", ",", "1", "mu", "g/mL", ",", "EMD", "Millipore", ")", "were", "included", "with", "each", "run", "." ]
+  }, {
+    "sentence_tokens" : [ "Routine", "hematoxylin", "and", "eosin", "staining", "was", "performed", "on", "each", "specimen", "." ]
+  }, {
+    "sentence_tokens" : [ "PP2A", "activity", "assay", "." ]
+  }, {
+    "sentence_tokens" : [ "Cells", "(", "1", "x", "10", "cells", ")", "were", "treated", "with", "FTY720", "(", "5", "mu", "M", ")", "for", "4", "hours", "and", "then", "lysed", "using", "NP-40", "lysis", "buffer", "." ]
+  }, {
+    "sentence_tokens" : [ "PP2A", "activity", "was", "measured", "using", "a", "PP2A", "Immunoprecipitation", "Phosphatase", "Assay", "Kit", "(", "17", "-", "313", ",", "EMD", "Millipore", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "kit", "measures", "activity", "of", "the", "C", "subunit", "of", "PP2A", "(", "clone", "106", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Briefly", ",", "protein", "lysates", "were", "incubated", "with", "PP2A", "antibody", "at", "4C", "with", "continuous", "rotation", "for", "2", "hours", "." ]
+  }, {
+    "sentence_tokens" : [ "Following", "the", "addition", "of", "assay", "buffers", "and", "malachite", "green", "solution", ",", "the", "plate", "was", "read", "at", "an", "absorbance", "of", "650nm", "using", "a", "microplate", "reader", "(", "Epoch", "Microplate", "Spectrophotometer", ",", "BioTek", "Instruments", ",", "Winooski", ",", "VT", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Phosphatase", "activity", "was", "determined", "using", "a", "standard", "curve", "." ]
+  }, {
+    "sentence_tokens" : [ "Experiments", "were", "repeated", "at", "least", "in", "triplicate", "and", "phosphatase", "activity", "was", "reported", "as", "mean", "fold", "change", "+/-", "standard", "error", "of", "the", "mean", "(", "SEM", ")", "from", "the", "untreated", "sample", "for", "each", "cell", "line", "." ]
+  }, {
+    "sentence_tokens" : [ "Immunoblotting", "." ]
+  }, {
+    "sentence_tokens" : [ "Briefly", ",", "cells", "were", "lysed", "on", "ice", "for", "30", "minutes", "in", "a", "buffer", "consisting", "of", "50", "mM", "Tris-HCl", "(", "pH", "7.4", ")", ",", "150", "mM", "NaCl", ",", "1", "mM", "EDTA", ",", "1", "%", "Triton", "x-100", ",", "1", "%", "sodium", "deoxcycholate", ",", "0.1", "%", "SDS", ",", "phosphatase", "inhibitor", "(", "P5726", ",", "Sigma", "Aldrich", ")", ",", "protease", "inhibitor", "(", "P8340", ",", "Sigma", "Aldrich", ")", ",", "and", "phenylmethylsulfonyl", "fluoride", "(", "PMSF", ",", "P7626", ",", "Sigma", "Aldrich", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "lysates", "were", "then", "centrifuged", "at", "14", "000", "rpm", "for", "30", "minutes", "at", "4", "degrees", "C.", "Protein", "concentrations", "were", "determined", "using", "a", "Micro", "BCA", "TM", "Protein", "Assay", "Kit", "(", "Thermo", "Fisher", "Scientific", ",", "Rockford", ",", "IL", ")", ",", "separated", "by", "electrophoresis", "on", "SDS-PAGE", "gels", ",", "and", "transferred", "to", "Immobilon", "(R)-P", "polyvinylidene", "fluoride", "(", "PVDF", ")", "transfer", "membrane", "(", "EMB", "Millipore", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Precision", "Plus", "Protein", "Kaleidoscope", "Standards", "(", "161-0375", ",", "Bio-Rad", ",", "Hercules", ",", "CA", ")", "were", "used", "for", "molecular", "weight", "markers", "to", "confirm", "expected", "size", "of", "target", "proteins", "." ]
+  }, {
+    "sentence_tokens" : [ "Antibodies", "were", "used", "in", "accordance", "with", "the", "manufacturers", "'", "recommended", "protocol", "." ]
+  }, {
+    "sentence_tokens" : [ "Samples", "were", "visualized", "by", "enhanced", "chemiluminescence", "(", "ECL", ")", "using", "Luminata", "Classico", "and", "Luminata", "Crescendo", "Western", "horseradish", "peroxidase", "(", "HPR", ")", "substrates", "(", "EMD", "Millipore", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Anti-beta-actin", "was", "used", "an", "internal", "control", "to", "ensure", "equal", "protein", "loading", "between", "samples", "." ]
+  }, {
+    "sentence_tokens" : [ "Cell", "cycle", "analysis", "." ]
+  }, {
+    "sentence_tokens" : [ "Cell", "cycle", "analysis", "was", "performed", "using", "propidium", "iodine", "(", "PI", ")", "staining", "and", "flow", "cytometric", "evaluation", "." ]
+  }, {
+    "sentence_tokens" : [ "Cells", "(", "1", "x", "10", "cells", ")", "were", "plated", "and", "treated", "with", "FTY720", "(", "5", "mu", "M", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "After", "24", "hours", ",", "a", "single", "cell", "suspension", "was", "achieved", "using", "Accutase", "(R)", "(", "Sigma", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "cells", "were", "then", "washed", "with", "PBS", "and", "fixed", "in", "1mL", "of", "ice-cold", ",", "100", "%", "ethanol", "overnight", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "cells", "underwent", "a", "second", "PBS", "wash", "and", "were", "stained", "for", "1", "hour", "with", "200", "mu", "L", "of", "staining", "solution", "consisting", "of", "20", "mu", "g/mL", "propidium", "iodide", "[", "(", "PI", ")", ",", "Invitrogen", ",", "Carlsbad", ",", "CA", "]", ",", "0.1", "%", "Triton", "X", "(", "Active", "Motif", ",", "Carlsbad", ",", "CA", ")", "and", "RNAse", "A", "(", "0.1", "mg/mL", ",", "Qiagen", ",", "Valencia", ",", "CA", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "samples", "were", "analyzed", "with", "fluorescence", "activated", "cell", "sorting", "(", "FACS", ")", "using", "a", "FACSCalibur", "TM", "Flow", "Cytometer", "(", "BD", "Biosciences", ",", "San", "Jose", ",", "CA", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "ModFit", "LT", "software", "(", "Verity", "Software", "House", "Inc", ".,", "Topsham", ",", "ME", ")", "was", "used", "to", "analyze", "the", "data", "." ]
+  }, {
+    "sentence_tokens" : [ "Cell", "viability", "and", "proliferation", "assays", "." ]
+  }, {
+    "sentence_tokens" : [ "An", "alamarBlue", "(R)", "assay", "(", "Thermo", "Fisher", "Scientific", ")", "was", "performed", "to", "assess", "cell", "viability", "following", "treatment", "with", "FTY720", "." ]
+  }, {
+    "sentence_tokens" : [ "Cells", "(", "1.5", "x", "10", "cells", ")", "were", "plated", "and", "treated", "with", "increasing", "concentrations", "of", "FTY720", "." ]
+  }, {
+    "sentence_tokens" : [ "After", "24", "hours", ",", "10", "mu", "L", "of", "alamarBlue", "(R)", "dye", "was", "added", "to", "each", "well", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "plates", "were", "read", "at", "using", "a", "microplate", "reader", "(", "Epoch", "Microplate", "Spectrophotometer", ")", "to", "record", "the", "absorbance", "at", "570", "nm", ",", "using", "600", "nm", "as", "a", "reference", "wavelength", "." ]
+  }, {
+    "sentence_tokens" : [ "Experiments", "were", "completed", "in", "triplicate", "and", "viability", "reported", "as", "fold", "change", "+/-", "SEM.Proliferation", "was", "assessed", "using", "the", "CellTiter", "96", "(R)", "Aqueous", "One", "Solution", "Cell", "Proliferation", "assay", "(", "Promega", ",", "Madison", ",", "WI", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Medulloblastoma", "cells", "(", "5", "x", "10", "cells", ")", "were", "plated", "and", "treated", "with", "FTY720", "at", "increasing", "concentrations", "." ]
+  }, {
+    "sentence_tokens" : [ "After", "24", "hours", ",", "10", "mu", "L", "CellTiter96", "(R)", "dye", "was", "added", "to", "each", "well", "and", "the", "absorbance", "was", "measured", "at", "490", "nm", "using", "a", "microplate", "reader", "(", "Epoch", "Microplate", "Spectrophotometer", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Experiments", "were", "repeated", "in", "triplicate", "and", "proliferation", "reported", "as", "fold", "change", "+/-", "SEM", "." ]
+  }, {
+    "sentence_tokens" : [ "Cell", "migration", "and", "invasion", "assays", "." ]
+  }, {
+    "sentence_tokens" : [ "Cell", "migration", "and", "invasion", "assays", "were", "performed", "using", "6.5", "mm", "Transwell", "(R)", "inserts", "with", "8", "mu", "M", "pore", "polycarbonate", "membrane", "(", "Corning", "Inc", ".,", "Corning", ",", "NY", ")", "in", "24-well", "culture", "plates", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "bottoms", "of", "the", "inserts", "were", "coated", "with", "laminin", "(", "10", "mu", "g/mL", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "invasion", "assays", ",", "the", "inside", "of", "the", "inserts", "were", "also", "coated", "with", "Matrigel", "TM", "(", "1", "mg/mL", ",", "50", "mu", "L", ";", "BD", "Biosciences", ")", "overnight", "at", "37", "degrees", "C", "and", "then", "washed", "with", "PBS", "." ]
+  }, {
+    "sentence_tokens" : [ "Cells", "were", "pretreated", "with", "FTY720", "(", "0", ",", "3", "mu", "M", ")", "for", "24", "hours", "and", "then", "1.5", "x", "10", "cells", "plated", "into", "the", "top", "of", "the", "insert", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "insert", "was", "then", "placed", "into", "a", "well", "containing", "300", "mu", "L", "of", "treated", "media", "containing", "10", "%", "fetal", "bovine", "serum", "(", "FBS", ")", "as", "a", "chemo-attractant", "." ]
+  }, {
+    "sentence_tokens" : [ "After", "24", "hours", ",", "the", "cells", "on", "top", "of", "the", "inserts", "were", "removed", "using", "a", "cotton", "swab", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "inserts", "were", "then", "fixed", "in", "3", "%", "paraformaldehyde", "prior", "to", "staining", "with", "crystal", "violet", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "imaging", "software", "SPOT", "Basic", "5.2", "(", "Diagnostic", "Instruments", "Inc", ".,", "Sterling", "Heights", ",", "MI", ")", "was", "used", "to", "take", "pictures", "of", "the", "inserts", "at", "predetermined", "locations", "with", "a", "microscope", "at", "100", "x", "and", "then", "the", "cells", "were", "quantified", "using", "ImageJ", "software", "(", "Ver", "1.49", ",", "available", "online", "at", "http://imagej.nih.gov/ij", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Experiments", "were", "repeated", "in", "triplicate", "and", "migration", "and", "invasion", "reported", "as", "fold", "change", "+/-", "SEM", "." ]
+  }, {
+    "sentence_tokens" : [ "Animal", "statement", "." ]
+  }, {
+    "sentence_tokens" : [ "Animal", "experiments", "were", "approved", "by", "the", "University", "of", "Alabama", ",", "Birmingham", "Institutional", "Animal", "Care", "and", "Use", "Committee", "(", "IACUC-09355", ")", "and", "were", "conducted", "within", "institutional", ",", "national", ",", "and", "NIH", "guidelines", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "vivo", "tumor", "growth", "." ]
+  }, {
+    "sentence_tokens" : [ "D425", "cells", "(", "2.5", "x", "10", "cells", "in", "25", "%", "Matrigel", "TM", ";", "Corning", "Inc.", ")", "were", "injected", "into", "the", "right", "flank", "of", "6-week-old", ",", "female", ",", "athymic", "nude", "mice", "(", "Envigo", ",", "Pratville", ",", "AL", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Once", "tumors", "were", "palpable", "(", "100", "mm", ")", ",", "the", "mice", "were", "randomized", "to", "receive", "either", "50", "mu", "L", "suspension", "vehicle", "(", "ORA-Plus", "(R)", ",", "Perrigo", ",", "Allegan", ",", "MI", ")", "or", "FTY720", "10", "mg/kg/day", "suspended", "in", "50", "mu", "L", "ORA-Plus", "(R)", "once", "daily", "via", "oral", "gavage", "for", "5", "weeks", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "FTY720", "dosing", "was", "based", "on", "previous", "animal", "studies", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "flank", "tumors", "were", "measured", "twice", "weekly", "using", "calipers", "and", "tumor", "volume", "was", "calculated", "using", "the", "formula", "[", "(", "width", "x", "length/2", "]", "with", "length", "being", "the", "largest", "measurement", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "mice", "remaining", "at", "the", "end", "of", "the", "treatment", "period", "were", "humanely", "euthanized", "." ]
+  }, {
+    "sentence_tokens" : [ "Statistical", "analyses", "." ]
+  }, {
+    "sentence_tokens" : [ "Experiments", "were", "performed", "at", "a", "minimum", "of", "triplicate", "." ]
+  }, {
+    "sentence_tokens" : [ "Densitometry", "was", "performed", "utilizing", "Scion", "Image", "Program", "(", "http://www.nist.gov/lispix/imlab/prelim/dnld.html", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Each", "band", "was", "normalized", "to", "background", ",", "then", "to", "their", "respective", "beta-actin", ",", "and", "finally", "the", "phospho", "band", "was", "normalized", "to", "the", "total", "protein", "expression", "band", "." ]
+  }, {
+    "sentence_tokens" : [ "All", "bands", "were", "then", "normalized", "to", "0", "mu", "M", "treatment", "group", "as", "previously", "reported", "." ]
+  }, {
+    "sentence_tokens" : [ "Data", "reported", "as", "the", "mean", "+/-", "standard", "error", "of", "the", "mean", "." ]
+  }, {
+    "sentence_tokens" : [ "Data", "between", "groups", "was", "compared", "using", "an", "analysis", "of", "variance", "or", "Student", "'", "s", "t", "test", "as", "appropriate", "." ]
+  }, {
+    "sentence_tokens" : [ "Statistical", "significance", "was", "defined", "as", "p", "<", "0.05", "." ]
+  }, {
+    "sentence_tokens" : [ "Data", "availability", "statement", "." ]
+  }, {
+    "sentence_tokens" : [ "No", "data", "sets", "were", "generated", "in", "the", "current", "studies", "." ]
+  } ]
+}

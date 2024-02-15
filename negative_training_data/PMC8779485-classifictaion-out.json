@@ -1,113 +1,621 @@
-[ {
-  "sentence_tokens" : [ "Daptomycin", "is", "also", "used", "off-label", "in", "various", "indications", ",", "including", "bloodstream", "infections", "caused", "by", "Gram", "positive", "agents", "others", "than", "S.", "aureus", "and", "bone", "and", "joint", "infections", "(", "BJI", ")", "[", "4", "]", "." ],
-  "event_indices" : [ 11, 12, 13, 14, 15 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 14, 15 ],
-  "controlled_indices" : [ 11, 12 ],
-  "trigger_indices" : [ 12, 13 ],
-  "rule_name" : "Positive_activation_syntax_2_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Daptomycin", "is", "increasingly", "used", "as", "an", "alternative", "to", "vancomycin", "for", "treating", "systemic", "infections", "caused", "by", "Gram", "positive", "bacteria", ",", "including", "BJI", "[", "29", "]", "." ],
-  "event_indices" : [ 12, 13, 14, 15, 16 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 15, 16 ],
-  "controlled_indices" : [ 12, 13 ],
-  "trigger_indices" : [ 13, 14 ],
-  "rule_name" : "Positive_activation_syntax_2_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "A", "nonparametric", "population", "PK", "model", "developed", "from", "patients", "with", "bone", "and", "joint", "infection", "was", "implemented", "into", "the", "BestDose", "software", "." ],
-  "entity_one_indices" : [ 12, 13 ],
-  "entity_two_indices" : [ 3, 4 ]
-}, {
-  "sentence_tokens" : [ "A", "significant", "proportion", "of", "patients", "exhibited", "underexposure", "or", "overexposure", "to", "daptomycin", "after", "the", "initial", "dosage", ",", "which", "supports", "TDM", "." ],
-  "entity_one_indices" : [ 18, 19 ],
-  "entity_two_indices" : [ 10, 11 ]
-}, {
-  "sentence_tokens" : [ "Daptomycin", "use", "in", "patients", "with", "BJI", "is", "supported", "by", "its", "disposition", "in", "bone", "tissue", "." ],
-  "entity_one_indices" : [ 5, 6 ],
-  "entity_two_indices" : [ 0, 1 ]
-}, {
-  "sentence_tokens" : [ "In", "another", "study", "performed", "in", "10", "patients", ",", "the", "average", "ratio", "of", "area", "under", "the", "unbound", "concentration", "time-curve", "of", "daptomycin", "in", "bone", "over", "plasma", "was", "1.08", ",", "which", "suggests", "that", "the", "bone", "exposure", "is", "similar", "to", "that", "of", "daptomycin", "unbound", "fraction", "in", "plasma", "[", "6", "]", "." ],
-  "entity_one_indices" : [ 38, 39 ],
-  "entity_two_indices" : [ 19, 20 ]
-}, {
-  "sentence_tokens" : [ "TDM", "may", "be", "especially", "useful", "in", "patients", "with", "BJI", "who", "often", "receive", "high", "doses", "of", "daptomycin", "in", "order", "to", "control", "drug", "exposure", "." ],
-  "entity_one_indices" : [ 15, 16 ],
-  "entity_two_indices" : [ 0, 1 ]
-}, {
-  "sentence_tokens" : [ "We", "report", "a", "retrospective", "analysis", "of", "data", "from", "patients", "who", "were", "treated", "by", "daptomycin", "for", "BJI", "between", "2012", "and", "2016", "and", "had", "TDM", "in", "our", "reference", "center", "for", "bone", "and", "joint", "infection", "in", "Lyon", ",", "France", "." ],
-  "entity_one_indices" : [ 31, 32 ],
-  "entity_two_indices" : [ 13, 14 ]
-}, {
-  "sentence_tokens" : [ "We", "used", "two", "data", "sets", ":", "a", "learning", "set", "used", "to", "derive", "the", "nonparametric", "population", "model", "of", "daptomycin", "and", "a", "validation", "dataset", "." ],
-  "entity_one_indices" : [ 17, 18 ],
-  "entity_two_indices" : [ 7, 8 ]
-}, {
-  "sentence_tokens" : [ "At", "each", "occasion", ",", "a", "typical", "PK", "profile", "was", "obtained", ",", "including", "three", "plasma", "samples", "collected", "approximately", "pre-dose", "(", "trough", "or", "C", ")", ",", "30", "min", "and", "5", "to", "6", "h", "after", "daptomycin", "administration", "." ],
-  "entity_one_indices" : [ 32, 33 ],
-  "entity_two_indices" : [ 6, 7 ]
-}, {
-  "sentence_tokens" : [ "Building", "of", "Daptomycin", "Nonparametric", "Population", "PK", "Model", "for", "BestDose", "." ],
-  "entity_one_indices" : [ 5, 6 ],
-  "entity_two_indices" : [ 2, 3 ]
-}, {
-  "sentence_tokens" : [ "In", "our", "previous", "work", ",", "the", "final", "population", "PK", "model", "of", "daptomycin", "was", "built", "by", "using", "a", "parametric", "approach", "(", "SAEM", "algorithm", "in", "the", "Monolix", "software", ")", "[", "20", "]", "." ],
-  "entity_one_indices" : [ 11, 12 ],
-  "entity_two_indices" : [ 8, 9 ]
-}, {
-  "sentence_tokens" : [ "The", "final", "nonparametric", "model", "was", "a", "two-compartment", "model", "parameterized", "with", "a", "central", "volume", "of", "distribution", "(", "V", ",", "in", "L/70", "kg", ")", ",", "non", "renal", "elimination", "rate", "constant", "(", "K", ")", ",", "renal", "elimination", "rate", "constant", "(", "K", ",", "to", "be", "multiplied", "by", "creatinine", "clearance", ")", ",", "and", "constants", "of", "rate", "transfer", "from", "the", "central", "to", "the", "peripheral", "compartment", "(", "K", ")", "and", "backward", "(", "K", ")", "." ],
-  "entity_one_indices" : [ 43, 44 ],
-  "entity_two_indices" : [ 19, 20, 21 ]
-}, {
-  "sentence_tokens" : [ "Therefore", ",", "the", "final", "nonparametric", "model", "only", "included", "two", "covariates", ",", "body", "weight", "and", "creatinine", "clearance", "." ],
-  "entity_one_indices" : [ 14, 15 ],
-  "entity_two_indices" : [ 11, 12, 13 ]
-}, {
-  "sentence_tokens" : [ "As", "we", "aimed", "at", "comparing", "our", "nonparametric", "model", "to", "a", "reference", "model", "for", "TDM", "and", "dose", "adjustment", ",", "we", "implemented", "the", "seminal", "daptomycin", "parametric", "model", "developed", "by", "daptomycin", "'", "s", "manufacturer", "[", "25", "]", "into", "the", "Tucuxi", "software", "." ],
-  "entity_one_indices" : [ 27, 28 ],
-  "entity_two_indices" : [ 22, 23 ]
-}, {
-  "sentence_tokens" : [ "It", "offers", "a", "collection", "of", "population", "PK", "models", "and", "also", "allows", "new", "models", "to", "be", "imported.The", "two-compartment", "reference", "model", "from", "Dvorchik", "et", "al.", "[", "25", "]", "was", "imported", "into", "Tucuxi", ",", "including", "its", "error", "model", "and", "all", "its", "covariates", "except", "body", "temperature", ",", "which", "influenced", "daptomycin", "clearance", "in", "the", "original", "model", "." ],
-  "entity_one_indices" : [ 45, 46 ],
-  "entity_two_indices" : [ 6, 7 ]
-}, {
-  "sentence_tokens" : [ "We", "used", "an", "external", "dataset", "from", "94", "patients", "who", "received", "daptomycin", "for", "BJI", "and", "had", "TDM", "to", "validate", "the", "predictive", "performance", "of", "our", "nonparametric", "model", "in", "BestDose", "and", "that", "of", "the", "parametric", "model", "in", "Tucuxi", "." ],
-  "entity_one_indices" : [ 15, 16 ],
-  "entity_two_indices" : [ 10, 11 ]
-}, {
-  "sentence_tokens" : [ "The", "final", "nonparametric", "model", "described", "the", "data", "very", "well", "in", "the", "learning", "dataset", "with", "ME", "of", "-", "0.72", "+/-", "4.3", "mg/L", "and", "MAPE", "of", "6.3", "+/-", "8.1", "%", "." ],
-  "entity_one_indices" : [ 22, 23 ],
-  "entity_two_indices" : [ 14, 15 ]
-}, {
-  "sentence_tokens" : [ "The", "parametric", "model", "implemented", "in", "Tucuxi", "also", "described", "the", "validation", "data", "very", "well", "with", "ME", "=", "-", "2.3", "+/-", "6.0", "mg/L", "and", "MAPE", "=", "9.9", "+/-", "13.3", "%", "." ],
-  "entity_one_indices" : [ 22, 23 ],
-  "entity_two_indices" : [ 14, 15 ]
-}, {
-  "sentence_tokens" : [ "Figure", "2", "shows", "the", "plot", "of", "observations", "versus", "individual", "predictions", "from", "both", "models", ",", "which", "look", "very", "similar.The", "Bayesian", "estimations", "of", "daptomycin", "concentrations", ",", "AUC", ",", "D", ",", "D", ",", "as", "well", "as", "the", "estimates", "of", "the", "main", "PK", "parameters", "(", "V", ",", "half-life", "and", "total", "body", "clearance", ")", "calculated", "with", "both", "programs", "are", "summarized", "in", "Table", "3", "." ],
-  "entity_one_indices" : [ 38, 39 ],
-  "entity_two_indices" : [ 21, 22 ]
-}, {
-  "sentence_tokens" : [ "In", "this", "study", ",", "we", "implemented", "and", "compared", "two", "Bayesian", "dosing", "programs", "for", "daptomycin", "TDM", "based", "on", "data", "from", "patients", "with", "BJI.First", ",", "our", "analysis", "confirmed", "the", "interest", "in", "daptomycin", "TDM", "and", "dosage", "individualization", ",", "as", "the", "achievement", "of", "exposure", "targets", "was", "not", "optimal", "." ],
-  "entity_one_indices" : [ 29, 30 ],
-  "entity_two_indices" : [ 13, 14 ]
-}, {
-  "sentence_tokens" : [ "In", "another", "prospective", "TDM", "study", "in", "patients", "who", "received", "daptomycin", "for", "bacteremia", ",", "9.5", "%", "of", "individuals", "showed", "C", ">", "24.3", "mg/L", "." ],
-  "entity_one_indices" : [ 11, 12 ],
-  "entity_two_indices" : [ 9, 10 ]
-}, {
-  "sentence_tokens" : [ "Despite", "this", "simplification", ",", "the", "model", "performance", "was", "very", "good", ",", "with", "low", "bias", "and", "imprecision", "in", "individual", "predictions", "of", "daptomycin", "concentrations", "in", "both", "the", "learning", "and", "validation", "datasets", "." ],
-  "entity_one_indices" : [ 25, 26 ],
-  "entity_two_indices" : [ 20, 21 ]
-}, {
-  "sentence_tokens" : [ "In", "conclusion", ",", "our", "results", "suggest", "that", "daptomycin", "dosing", "can", "be", "optimized", "in", "patients", "with", "BJI", ",", "as", "significant", "proportions", "of", "underexposure", "and", "overexposure", "were", "observed", "after", "initial", "dosing", "based", "on", "patients", "'", "weight", "." ],
-  "entity_one_indices" : [ 15, 16 ],
-  "entity_two_indices" : [ 7, 8 ]
-}, {
-  "sentence_tokens" : [ "Two", "pharmacometric", "tools", "for", "model", "based", "TDM", "and", "dosage", "adjustment", "of", "daptomycin", "were", "developed", "and", "externally", "validated", "in", "patients", "with", "BJI", "." ],
-  "entity_one_indices" : [ 20, 21 ],
-  "entity_two_indices" : [ 11, 12 ]
-} ]
+{
+  "regulations" : [ {
+    "sentence_tokens" : [ "Daptomycin", "is", "also", "used", "off-label", "in", "various", "indications", ",", "including", "bloodstream", "infections", "caused", "by", "Gram", "positive", "agents", "others", "than", "S.", "aureus", "and", "bone", "and", "joint", "infections", "(", "BJI", ")", "[", "4", "]", "." ],
+    "event_indices" : [ 11, 12, 13, 14, 15 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 14, 15 ],
+    "controlled_indices" : [ 11, 12 ],
+    "trigger_indices" : [ 12, 13 ],
+    "rule_name" : "Positive_activation_syntax_2_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "Daptomycin", "is", "increasingly", "used", "as", "an", "alternative", "to", "vancomycin", "for", "treating", "systemic", "infections", "caused", "by", "Gram", "positive", "bacteria", ",", "including", "BJI", "[", "29", "]", "." ],
+    "event_indices" : [ 12, 13, 14, 15, 16 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 15, 16 ],
+    "controlled_indices" : [ 12, 13 ],
+    "trigger_indices" : [ 13, 14 ],
+    "rule_name" : "Positive_activation_syntax_2_verb",
+    "rule" : null
+  } ],
+  "hardInstances" : [ {
+    "sentence_tokens" : [ "Daptomycin", "is", "also", "used", "off-label", "in", "various", "indications", ",", "including", "bloodstream", "infections", "caused", "by", "Gram", "positive", "agents", "others", "than", "S.", "aureus", "and", "bone", "and", "joint", "infections", "(", "BJI", ")", "[", "4", "]", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "Daptomycin", "is", "increasingly", "used", "as", "an", "alternative", "to", "vancomycin", "for", "treating", "systemic", "infections", "caused", "by", "Gram", "positive", "bacteria", ",", "including", "BJI", "[", "29", "]", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 8, 9 ] ]
+  } ],
+  "withoutRegulations" : [ {
+    "sentence_tokens" : [ "In", "addition", ",", "the", "assay", "method", "was", "the", "same", "in", "the", "learning", "and", "validation", "dataset", "for", "the", "model", "implemented", "in", "BestDose", ",", "which", "was", "not", "the", "case", "for", "the", "model", "in", "Tucuxi", "." ],
+    "entities_indices" : [ [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "Implementation", "and", "Comparison", "of", "Two", "Pharmacometric", "Tools", "for", "Model", "Based", "Therapeutic", "Drug", "Monitoring", "and", "Precision", "Dosing", "of", "Daptomycin", "." ],
+    "entities_indices" : [ [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "compared", "the", "performance", "of", "the", "two", "models", "in", "a", "validation", "dataset", "based", "on", "mean", "error", "(", "ME", ")", "and", "mean", "absolute", "percent", "error", "(", "MAPE", ")", "of", "individual", "predictions", ",", "estimated", "exposure", "and", "predicted", "doses", "necessary", "to", "achieve", "daptomycin", "efficacy", "and", "safety", "PK/PD", "targets", "." ],
+    "entities_indices" : [ [ 17, 18 ], [ 25, 26 ], [ 39, 40 ], [ 43, 44, 45 ] ]
+  }, {
+    "sentence_tokens" : [ "Despite", "those", "technical", "differences", ",", "the", "two", "models", "provided", "overall", "comparable", "performance", "in", "the", "estimation", "of", "daptomycin", "concentrations", "and", "AUC", "and", "in", "the", "calculation", "of", "the", "dose", "required", "to", "achieve", "the", "efficacy", "target.This", "study", "has", "several", "limitations", "." ],
+    "entities_indices" : [ [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "On", "the", "other", "hand", ",", "the", "daptomycin", "antibacterial", "effect", "is", "also", "concentration", "dependent", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "Food", "and", "Drug", "Administration", "(", "FDA", ")", "approved", "its", "use", "in", "2003", "for", "treating", "complicated", "skin", "and", "skin", "structure", "infections", "and", "Staphylococcus", "aureus", "bloodstream", "infections", ",", "including", "those", "with", "right", "sided", "infective", "endocarditis", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 20, 21 ], [ 25, 26 ], [ 33, 34 ] ]
+  }, {
+    "sentence_tokens" : [ "Figure", "2", "shows", "the", "plot", "of", "observations", "versus", "individual", "predictions", "from", "both", "models", ",", "which", "look", "very", "similar.The", "Bayesian", "estimations", "of", "daptomycin", "concentrations", ",", "AUC", ",", "D", ",", "D", ",", "as", "well", "as", "the", "estimates", "of", "the", "main", "PK", "parameters", "(", "V", ",", "half-life", "and", "total", "body", "clearance", ")", "calculated", "with", "both", "programs", "are", "summarized", "in", "Table", "3", "." ],
+    "entities_indices" : [ [ 21, 22 ], [ 38, 39 ] ]
+  }, {
+    "sentence_tokens" : [ "It", "is", "likely", "that", "specific", "models", "would", "be", "required", "for", "daptomycin", "dosing", "in", "unstable", "patients", "such", "as", "critically", "ill", "patients", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "Infectious", "Diseases", "Society", "of", "America", "(", "IDSA", ")", "recognized", "daptomycin", "as", "an", "alternative", "to", "vancomycin", "for", "BJI", ",", "with", "a", "recommended", "dosage", "of", "6", "mg/kg", "[", "7", "]", "." ],
+    "entities_indices" : [ [ 1, 2, 3 ], [ 10, 11 ], [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "total", "of", "841", "plasma", "concentrations", "of", "daptomycin", "collected", "in", "175", "patients", "were", "available", "for", "analysis", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "With", "a", "parametric", "model", ",", "only", "a", "single", "value", "of", "the", "continuous", "Bayesian", "posterior", "distribution", "is", "used", "in", "such", "calculation", ",", "which", "is", "the", "maximum", "a", "posteriori", "(", "MAP", ")", "[", "34", "]", "." ],
+    "entities_indices" : [ [ 28, 29 ] ]
+  }, {
+    "sentence_tokens" : [ "Those", "established", "exposure", "-", "response", "and", "exposure", "-", "toxicity", "relationships", "are", "arguments", "supporting", "therapeutic", "drug", "monitoring", "(", "TDM", ")", "of", "daptomycin", "." ],
+    "entities_indices" : [ [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "AUC", "target", "was", "associated", "with", "the", "bactericidal", "effect", "of", "daptomycin", "in", "an", "animal", "model", "of", "staphylococcal", "infection", "[", "15", "]", ",", "while", "the", "C", "target", "was", "the", "cut-off", "value", "associated", "with", "increased", "risk", "of", "CPK", "elevation", "in", "humans", "[", "14", "]", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 16, 17, 18 ], [ 35, 36 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "illustrates", "the", "relative", "importance", "of", "concentration", "measurements", "and", "covariates", "in", "the", "Bayesian", "estimation", "of", "PK", "parameters", "." ],
+    "entities_indices" : [ [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "As", "shown", "by", "Sheiner", "and", "colleagues", ",", "measured", "drug", "concentrations", "are", "much", "more", "informative", "about", "PK", "parameters", "than", "covariates", "in", "the", "Bayesian", "estimation", "[", "32", "]", "." ],
+    "entities_indices" : [ [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "Daptomycin", "is", "a", "candidate", "for", "therapeutic", "drug", "monitoring", "(", "TDM", ")", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "It", "offers", "a", "collection", "of", "population", "PK", "models", "and", "also", "allows", "new", "models", "to", "be", "imported.The", "two-compartment", "reference", "model", "from", "Dvorchik", "et", "al.", "[", "25", "]", "was", "imported", "into", "Tucuxi", ",", "including", "its", "error", "model", "and", "all", "its", "covariates", "except", "body", "temperature", ",", "which", "influenced", "daptomycin", "clearance", "in", "the", "original", "model", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 45, 46 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "final", "model", "was", "a", "two-compartment", "model", "with", "body", "weight", "and", "P-gp", "genotype", "as", "covariates", "influencing", "the", "central", "volume", "of", "distribution", ",", "while", "daptomycin", "total", "body", "clearance", "was", "influenced", "by", "creatinine", "clearance", "and", "sex", "." ],
+    "entities_indices" : [ [ 8, 9, 10 ], [ 11, 12 ], [ 23, 24 ], [ 30, 31 ] ]
+  }, {
+    "sentence_tokens" : [ "By", "contrast", ",", "the", "maximum", "effective", "doses", "(", "D", ")", "associated", "with", "C", "=", "24.3", "mg/L", "were", "substantially", "different", "(", "p", "=", "0.046", ")", "between", "the", "two", "programs", ",", "with", "higher", "doses", "suggested", "by", "Tucuxi", "on", "average", "." ],
+    "entities_indices" : [ [ 34, 35 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "Mann", "-", "Whitney", "test", "was", "used", "for", "comparisons", "of", "AUC", ",", "half-life", ",", "central", "volume", "of", "distribution", "of", "daptomycin", ",", "as", "well", "as", "predicted", "doses", "between", "the", "two", "programs.In", "addition", ",", "we", "assessed", "the", "concordance", "between", "predicted", "concentrations", ",", "AUC", ",", "D", "and", "D", "by", "performing", "a", "Bland", "-", "Altman", "analysis", "[", "27", "]", "." ],
+    "entities_indices" : [ [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "a", "small", "clinical", "study", ",", "AUC", "/", "MIC", "<", "666", "was", "significantly", "associated", "with", "increased", "mortality", "in", "hospitalized", "patients", "[", "16", "]", "." ],
+    "entities_indices" : [ [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "As", "we", "aimed", "at", "comparing", "our", "nonparametric", "model", "to", "a", "reference", "model", "for", "TDM", "and", "dose", "adjustment", ",", "we", "implemented", "the", "seminal", "daptomycin", "parametric", "model", "developed", "by", "daptomycin", "'", "s", "manufacturer", "[", "25", "]", "into", "the", "Tucuxi", "software", "." ],
+    "entities_indices" : [ [ 22, 23 ], [ 27, 28 ] ]
+  }, {
+    "sentence_tokens" : [ "Other", "studies", "have", "supported", "the", "use", "of", "daptomycin", "in", "patients", "with", "BJI", ",", "with", "higher", "dosages", ",", "up", "to", "10", "mg/kg", "[", "8,9,10", "]", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "may", "be", "due", "to", "the", "population", "used", "in", "model", "building", ",", "as", "our", "model", "was", "built", "in", "a", "similar", "population", "of", "patients", "with", "BJI", ",", "while", "the", "model", "from", "Dvorchik", "et", "al.", "was", "based", "on", "data", "from", "15", "clinical", "studies", "conducted", "in", "healthy", "volunteers", "and", "patients", "without", "BJI", "." ],
+    "entities_indices" : [ [ 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "conclusion", ",", "our", "results", "suggest", "that", "daptomycin", "dosing", "can", "be", "optimized", "in", "patients", "with", "BJI", ",", "as", "significant", "proportions", "of", "underexposure", "and", "overexposure", "were", "observed", "after", "initial", "dosing", "based", "on", "patients", "'", "weight", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "To", "our", "knowledge", ",", "no", "pharmacometric", "tool", "has", "been", "presented", "for", "dosage", "individualization", "of", "daptomycin", "." ],
+    "entities_indices" : [ [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "significant", "proportion", "of", "patients", "exhibited", "underexposure", "or", "overexposure", "to", "daptomycin", "after", "the", "initial", "dosage", ",", "which", "supports", "TDM", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "Daptomycin", "plasma", "concentrations", "were", "measured", "using", "an", "HPLC", "assay", "with", "a", "photodiode", "array", "detector", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "ME", "and", "MAPE", "were", "slightly", "higher", "than", "that", "from", "the", "BestDose", "model", ",", "and", "the", "differences", "were", "significant", "(", "p", "<", "0.001", "and", "p", "=", "0.0022", "for", "ME", "and", "MAPE", ",", "respectively", ")", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 3, 4 ], [ 28, 29 ], [ 30, 31 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "study", ",", "we", "implemented", "and", "compared", "two", "Bayesian", "dosing", "programs", "for", "daptomycin", "TDM", "based", "on", "data", "from", "patients", "with", "BJI.First", ",", "our", "analysis", "confirmed", "the", "interest", "in", "daptomycin", "TDM", "and", "dosage", "individualization", ",", "as", "the", "achievement", "of", "exposure", "targets", "was", "not", "optimal", "." ],
+    "entities_indices" : [ [ 13, 14 ], [ 29, 30 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "mean", "AUC", "estimated", "with", "BestDose", "was", "975", "+/-", "395", "mg.h/L", "on", "the", "first", "TDM", "occasion", ",", "which", "is", "higher", "than", "the", "efficacy", "threshold", "(", "AUC", ">=", "666", "mg.h/L", ")", ",", "for", "a", "putative", "MIC", "of", "1", "mg/L", "." ],
+    "entities_indices" : [ [ 34, 35 ] ]
+  }, {
+    "sentence_tokens" : [ "Daptomycin", "is", "a", "cyclic", "lipopeptide", "antibiotic", "with", "bactericidal", "activity", "on", "Gram", "positive", "bacteria", "discovered", "in", "1980", "[", "1,2", "]", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 4, 5, 6 ], [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "Those", "published", "results", "and", "ours", "confirm", "that", "exposure", "to", "daptomycin", "is", "often", "suboptimal", "and", "that", "dosage", "individualization", "based", "on", "TDM", "is", "desirable.We", "developed", "a", "nonparametric", "PK", "model", "of", "daptomycin", "for", "the", "BestDose", "software", "." ],
+    "entities_indices" : [ [ 9, 10 ], [ 19, 20 ], [ 25, 26 ], [ 28, 29 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "learning", "dataset", "was", "described", "in", "a", "previous", "publication", "from", "our", "group", ",", "which", "focused", "on", "the", "influence", "of", "P-gp", "gene", "polymorphism", "on", "daptomycin", "PK", "(", "n", "=", "81", "patients", ")", "[", "20", "]", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 19, 20, 21 ], [ 23, 24 ], [ 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "models", "to", "be", "used", "for", "TDM", "and", "individual", "Bayesian", "estimation", "do", "not", "necessarily", "require", "many", "covariates", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "Half", "of", "those", "presented", "an", "elevation", "of", "CPK", "[", "30", "]", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "objectives", "of", "this", "work", "were", "to", "implement", "and", "compare", "two", "pharmacometric", "tools", "for", "daptomycin", "TDM", "and", "precision", "dosing", "." ],
+    "entities_indices" : [ [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "Two", "pharmacometric", "tools", "for", "model", "based", "TDM", "and", "dosage", "adjustment", "of", "daptomycin", "were", "developed", "and", "externally", "validated", "in", "patients", "with", "BJI", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "objectives", "of", "this", "work", "were", ":", "(", "i", ")", "To", "implement", "and", "validate", "a", "nonparametric", "PK", "model", "of", "daptomycin", "for", "patients", "with", "BJI", "within", "the", "BestDose", "software", ";", "(", "ii", ")", "To", "compare", "the", "performance", "of", "this", "model", "to", "that", "of", "a", "published", "parametric", "model", "implemented", "in", "the", "Tucuxi", "software", "." ],
+    "entities_indices" : [ [ 16, 17 ], [ 19, 20 ], [ 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "BestDose", "model", "was", "parameterized", "with", "rate", "constants", ",", "as", "required", "by", "the", "program", ",", "while", "the", "model", "implemented", "in", "Tucuxi", "was", "parameterized", "with", "CL", ",", "in", "agreement", "with", "the", "original", "publication", "." ],
+    "entities_indices" : [ [ 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "addition", ",", "patients", "'", "written", "informed", "consent", "was", "obtained", "for", "P-gp", "genotyping", ",", "in", "accordance", "with", "French", "regulation", "." ],
+    "entities_indices" : [ [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "lower", "AUC", "and", "MIC", "ratio", "was", "suggested", "as", "a", "daptomycin", "PK/PD", "target", "for", "enterococcal", "bacteremia", "[", "35", "]", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 10, 11 ], [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "the", "final", "nonparametric", "model", "only", "included", "two", "covariates", ",", "body", "weight", "and", "creatinine", "clearance", "." ],
+    "entities_indices" : [ [ 11, 12, 13 ], [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "Daptomycin", "use", "in", "patients", "with", "BJI", "is", "supported", "by", "its", "disposition", "in", "bone", "tissue", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "increasing", "daptomycin", "doses", "raises", "concerns", "about", "safety", "[", "11,12,13", "]", "." ],
+    "entities_indices" : [ [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "our", "previous", "work", ",", "the", "final", "population", "PK", "model", "of", "daptomycin", "was", "built", "by", "using", "a", "parametric", "approach", "(", "SAEM", "algorithm", "in", "the", "Monolix", "software", ")", "[", "20", "]", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "Staphylococcus", "aureus", ",", "an", "average", "AUC", "/", "MIC", "ratio", "of", "666", "mg/L", "was", "required", "to", "achieve", "a", "bactericidal", "effect", "." ],
+    "entities_indices" : [ [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "most", "patients", ",", "TDM", "was", "performed", "on", "several", "occasions", "to", "control", "drug", "exposure", "throughout", "therapy", "." ],
+    "entities_indices" : [ [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "other", "covariates", "were", "retained", ",", "with", "creatinine", "clearance", "and", "sex", "influencing", "daptomycin", "clearance", "and", "body", "weight", "influencing", "both", "intercompartment", "clearance", "and", "peripheral", "volume", "of", "distribution", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 12, 13 ], [ 15, 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "report", "a", "retrospective", "analysis", "of", "data", "from", "patients", "who", "were", "treated", "by", "daptomycin", "for", "BJI", "between", "2012", "and", "2016", "and", "had", "TDM", "in", "our", "reference", "center", "for", "bone", "and", "joint", "infection", "in", "Lyon", ",", "France", "." ],
+    "entities_indices" : [ [ 13, 14 ], [ 31, 32 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "final", "nonparametric", "model", "described", "the", "data", "very", "well", "in", "the", "learning", "dataset", "with", "ME", "of", "-", "0.72", "+/-", "4.3", "mg/L", "and", "MAPE", "of", "6.3", "+/-", "8.1", "%", "." ],
+    "entities_indices" : [ [ 14, 15 ], [ 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "population", "only", "included", "patients", "with", "BJI", ",", "so", "the", "nonparametric", "model", "developed", "for", "BestDose", "may", "not", "perform", "as", "well", "in", "other", "patients", "'", "groups", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "parametric", "model", "implemented", "in", "Tucuxi", "also", "described", "the", "validation", "data", "very", "well", "with", "ME", "=", "-", "2.3", "+/-", "6.0", "mg/L", "and", "MAPE", "=", "9.9", "+/-", "13.3", "%", "." ],
+    "entities_indices" : [ [ 14, 15 ], [ 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "nonparametric", "population", "PK", "model", "developed", "from", "patients", "with", "bone", "and", "joint", "infection", "was", "implemented", "into", "the", "BestDose", "software", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "evaluation", ",", "we", "only", "used", "the", "daptomycin", "concentrations", "collected", "during", "the", "first", "TDM", "occasion", "in", "each", "patient.The", "dosage", "history", ",", "covariate", "values", ",", "times", "and", "values", "of", "measured", "concentrations", "in", "each", "patient", "were", "entered", "into", "each", "program", "." ],
+    "entities_indices" : [ [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "such", "a", "case", ",", "the", "effective", "dose", "suggested", "by", "the", "PK", "models", "would", "have", "been", "different", "." ],
+    "entities_indices" : [ [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "correlation", "between", "estimates", "from", "the", "two", "programs", "was", "low.Predicted", "daptomycin", "concentrations", "from", "BestDose", "correlated", "well", "with", "those", "from", "Tucuxi", "and", "showed", "a", "good", "agreement", ",", "as", "displayed", "in", "the", "Bland", "-", "Altman", "plot", "(", "Figure", "3", ")", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "Blood", "samples", "for", "daptomycin", "TDM", "were", "obtained", "during", "hospitalization", "or", "follow-up", "visit", "at", "the", "BJI", "center", "." ],
+    "entities_indices" : [ [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "final", "nonparametric", "model", "was", "a", "two-compartment", "model", "parameterized", "with", "a", "central", "volume", "of", "distribution", "(", "V", ",", "in", "L/70", "kg", ")", ",", "non", "renal", "elimination", "rate", "constant", "(", "K", ")", ",", "renal", "elimination", "rate", "constant", "(", "K", ",", "to", "be", "multiplied", "by", "creatinine", "clearance", ")", ",", "and", "constants", "of", "rate", "transfer", "from", "the", "central", "to", "the", "peripheral", "compartment", "(", "K", ")", "and", "backward", "(", "K", ")", "." ],
+    "entities_indices" : [ [ 19, 20, 21 ], [ 43, 44 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "statistical", "feature", "influences", "the", "Bayesian", "estimation", "of", "individual", "PK", "parameters", "and", "the", "computation", "of", "the", "dosage", "for", "a", "given", "target", "." ],
+    "entities_indices" : [ [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "characteristics", "of", "the", "two", "populations", "are", "summarized", "in", "Table", "1.In", "the", "validation", "dataset", ",", "the", "mean", "daptomycin", "dosage", "was", "7.6", "+/-", "1.3", "mg/kg", "per", "day", ",", "which", "is", "consistent", "with", "guidelines", "." ],
+    "entities_indices" : [ [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "At", "each", "occasion", ",", "a", "typical", "PK", "profile", "was", "obtained", ",", "including", "three", "plasma", "samples", "collected", "approximately", "pre-dose", "(", "trough", "or", "C", ")", ",", "30", "min", "and", "5", "to", "6", "h", "after", "daptomycin", "administration", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 32, 33 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "another", "prospective", "TDM", "study", "in", "patients", "who", "received", "daptomycin", "for", "bacteremia", ",", "9.5", "%", "of", "individuals", "showed", "C", ">", "24.3", "mg/L", "." ],
+    "entities_indices" : [ [ 9, 10 ], [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "use", "of", "PK", "models", "implemented", "into", "Bayesian", "dosing", "software", "is", "a", "relevant", "approach", "to", "analyze", "TDM", "results", ",", "estimate", "PK", "quantities", "such", "as", "the", "AUC", ",", "and", "compute", "individualized", "dosages", "for", "achieving", "PK/PD", "targets", "with", "maximum", "precision", "[", "17,18", "]", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 20, 21 ], [ 33, 34, 35 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "used", "two", "data", "sets", ":", "a", "learning", "set", "used", "to", "derive", "the", "nonparametric", "population", "model", "of", "daptomycin", "and", "a", "validation", "dataset", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "a", "mouse", "model", ",", "the", "daptomycin", "killing", "effect", "correlated", "with", "both", "daily", "area", "under", "the", "concentration-time", "curve", "to", "the", "bacterial", "minimal", "inhibitory", "concentration", "(", "AUC", "/", "MIC", ")", "and", "maximal", "concentration", "over", "the", "MIC", "(", "C", "/", "MIC", ")", "ratios", "[", "15", "]", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 27, 28 ], [ 34, 35 ], [ 38, 39 ] ]
+  }, {
+    "sentence_tokens" : [ "Moreover", ",", "the", "estimation", "of", "individual", "PK", "parameters", ",", "AUC", "values", "and", "doses", "depends", "on", "the", "sampling", "design", ",", "which", "was", "quite", "consistent", "in", "our", "patient", "population", ",", "with", "three", "concentrations", "measured", "in", "most", "patients", "at", "similar", "time-points", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "It", "was", "shown", "that", "daptomycin", "muscular", "toxicity", ",", "as", "measured", "by", "elevation", "in", "serum", "creatinine", "phosphokinase", "(", "CPK", ")", ",", "correlated", "with", "plasma", "trough", "concentration", "(", "C", ")", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 14, 15 ], [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "BestDose", "model", "performed", "slightly", "better", "than", "the", "model", "in", "Tucuxi", "(", "ME", "=", "-0.13", "+/-", "5.16", "vs.", "-1.90", "+/-", "6.99", "mg/L", ",", "p", "<", "0.001", ")", ",", "but", "overall", "results", "were", "in", "agreement", "between", "the", "two", "models", "." ],
+    "entities_indices" : [ [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "covariate", "was", "discarded", "because", "it", "is", "not", "measured", "consistently", "in", "all", "patients", "in", "routine", ",", "especially", "in", "outpatients", ",", "and", "its", "value", "may", "be", "altered", "by", "co-treatment", "such", "as", "acetaminophen", "." ],
+    "entities_indices" : [ [ 30, 31 ] ]
+  }, {
+    "sentence_tokens" : [ "Building", "of", "Daptomycin", "Nonparametric", "Population", "PK", "Model", "for", "BestDose", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "After", "estimation", "of", "Bayesian", "posterior", "individual", "PK", "parameters", ",", "the", "estimated", "PK", "profile", "of", "each", "patient", "was", "obtained", ",", "including", "predictions", "of", "measured", "daptomycin", "concentrations.Bias", "and", "precision", "of", "model", "based", "individual", "predictions", "were", "assessed", "by", "computing", "the", "mean", "error", "(", "ME", ")", "and", "mean", "absolute", "percent", "error", "(", "MAPE", ")", "of", "prediction", ",", "respectively", ",", "as", "follows", ":(", "1", ")", "ME", "=", "sum", "i", "=", "1nCpredi", "-", "Cobsin", "(", "2", ")", "MAPE", "=", "sum", "i", "=", "1n", "|", "Cpredi", "-", "CobsiCobsi", "|", "n", "where", "Cpred", "are", "the", "concentrations", "predicted", "by", "the", "model", ",", "Cobs", "are", "the", "observed", "concentrations", ",", "and", "n", "is", "the", "total", "number", "of", "observations.ME", "and", "MAPE", "were", "compared", "between", "BestDose", "and", "Tucuxi", "by", "using", "the", "Wilcoxon", "signed-rank", "test", "for", "paired", "samples", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 11, 12 ], [ 23, 24 ], [ 40, 41 ], [ 48, 49 ], [ 60, 61 ], [ 71, 72 ], [ 93, 94 ], [ 108, 109 ] ]
+  }, {
+    "sentence_tokens" : [ "They", "are", "available", "in", "the", "BestDose", "and", "Tucuxi", "programs", "for", "precision", "dosing", "of", "daptomycin", "." ],
+    "entities_indices" : [ [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "TDM", "may", "be", "especially", "useful", "in", "patients", "with", "BJI", "who", "often", "receive", "high", "doses", "of", "daptomycin", "in", "order", "to", "control", "drug", "exposure", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "another", "study", "performed", "in", "10", "patients", ",", "the", "average", "ratio", "of", "area", "under", "the", "unbound", "concentration", "time-curve", "of", "daptomycin", "in", "bone", "over", "plasma", "was", "1.08", ",", "which", "suggests", "that", "the", "bone", "exposure", "is", "similar", "to", "that", "of", "daptomycin", "unbound", "fraction", "in", "plasma", "[", "6", "]", "." ],
+    "entities_indices" : [ [ 19, 20 ], [ 38, 39 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "model", "predictions", "computed", "with", "BestDose", "in", "the", "validation", "dataset", "were", "as", "good", "as", "in", "the", "learning", "set", ",", "with", "ME", "=", "-", "0.087", "+/-", "5.1", "mg/L", "and", "MAPE", "=", "7.8", "+/-", "34.7", "%", "." ],
+    "entities_indices" : [ [ 16, 17 ], [ 20, 21 ], [ 28, 29 ] ]
+  }, {
+    "sentence_tokens" : [ "Indeed", ",", "the", "BestDose", "model", "performed", "slightly", "better", "than", "the", "Tucuxi", "model", "in", "estimating", "daptomycin", "concentration", "in", "the", "validation", "group", "." ],
+    "entities_indices" : [ [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "used", "an", "external", "dataset", "from", "94", "patients", "who", "received", "daptomycin", "for", "BJI", "and", "had", "TDM", "to", "validate", "the", "predictive", "performance", "of", "our", "nonparametric", "model", "in", "BestDose", "and", "that", "of", "the", "parametric", "model", "in", "Tucuxi", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "learning", "and", "validation", "datasets", "included", "577", "observations", "from", "81", "patients", "and", "264", "observations", "from", "94", "patients", ",", "respectively", "." ],
+    "entities_indices" : [ [ 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "Despite", "this", "simplification", ",", "the", "model", "performance", "was", "very", "good", ",", "with", "low", "bias", "and", "imprecision", "in", "individual", "predictions", "of", "daptomycin", "concentrations", "in", "both", "the", "learning", "and", "validation", "datasets", "." ],
+    "entities_indices" : [ [ 20, 21 ], [ 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "Therapeutic", "Drug", "Monitoring", "of", "Daptomycin", "." ],
+    "entities_indices" : [ [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "Regarding", "PK", "parameters", "estimates", ",", "BestDose", "provided", "higher", "mean", "estimates", "of", "V", "and", "half-life", ",", "while", "the", "mean", "clearances", "were", "similar", "." ],
+    "entities_indices" : [ [ 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "Considering", "the", "established", "exposure", "-", "response", "effect", "described", "for", "both", "antimicrobial", "effect", "and", "muscular", "toxicity", ",", "TDM", "of", "daptomycin", "appears", "to", "be", "a", "relevant", "approach", "for", "evaluating", "and", "optimizing", "drug", "exposure", "[", "30", "]", "." ],
+    "entities_indices" : [ [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "also", "compared", "the", "regression", "of", "predicted", "versus", "observed", "concentrations", "from", "each", "model.Because", "daptomycin", "AUC", "is", "an", "important", "predictor", "of", "its", "antibacterial", "effect", ",", "we", "also", "compared", "the", "estimations", "of", "individual", "daily", "AUC", "(", "AUC", ")", "in", "the", "94", "patients", "provided", "by", "BestDose", "and", "Tucuxi.Finally", ",", "we", "compared", "the", "individual", "daily", "doses", "computed", "by", "the", "two", "programs", "for", "achieving", "two", "targets", "at", "the", "steady-state", "in", "each", "patient", ":", "the", "minimum", "effective", "dose", "(", "D", ")", "necessary", "to", "attain", "AUC", "=", "666", "mg.h/L", "and", "the", "maximum", "effective", "dose", "(", "D", ")", "associated", "with", "C", "=", "24.3", "mg/L", "." ],
+    "entities_indices" : [ [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "Population", "Modeling", "in", "the", "Learning", "Dataset", "." ],
+    "entities_indices" : [ [ 4, 5 ] ]
+  } ],
+  "emptySentences" : [ {
+    "sentence_tokens" : [ "Implementation", "and", "Comparison", "of", "Two", "Pharmacometric", "Tools", "for", "Model", "Based", "Therapeutic", "Drug", "Monitoring", "and", "Precision", "Dosing", "of", "Daptomycin", "." ]
+  }, {
+    "sentence_tokens" : [ "Daptomycin", "is", "a", "candidate", "for", "therapeutic", "drug", "monitoring", "(", "TDM", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "objectives", "of", "this", "work", "were", "to", "implement", "and", "compare", "two", "pharmacometric", "tools", "for", "daptomycin", "TDM", "and", "precision", "dosing", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "nonparametric", "population", "PK", "model", "developed", "from", "patients", "with", "bone", "and", "joint", "infection", "was", "implemented", "into", "the", "BestDose", "software", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "published", "parametric", "model", "was", "imported", "into", "Tucuxi", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "compared", "the", "performance", "of", "the", "two", "models", "in", "a", "validation", "dataset", "based", "on", "mean", "error", "(", "ME", ")", "and", "mean", "absolute", "percent", "error", "(", "MAPE", ")", "of", "individual", "predictions", ",", "estimated", "exposure", "and", "predicted", "doses", "necessary", "to", "achieve", "daptomycin", "efficacy", "and", "safety", "PK/PD", "targets", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "BestDose", "model", "described", "the", "data", "very", "well", "in", "the", "learning", "dataset", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "validation", "dataset", "(", "94", "patients", ",", "264", "concentrations", ")", ",", "21.3", "%", "of", "patients", "were", "underexposed", "(", "AUC", "24h", "<", "666", "mg.h/L", ")", "and", "31.9", "%", "of", "patients", "were", "overexposed", "(", "C", "min", ">", "24.3", "mg/L", ")", "on", "the", "first", "TDM", "occasion", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "BestDose", "model", "performed", "slightly", "better", "than", "the", "model", "in", "Tucuxi", "(", "ME", "=", "-0.13", "+/-", "5.16", "vs.", "-1.90", "+/-", "6.99", "mg/L", ",", "p", "<", "0.001", ")", ",", "but", "overall", "results", "were", "in", "agreement", "between", "the", "two", "models", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "significant", "proportion", "of", "patients", "exhibited", "underexposure", "or", "overexposure", "to", "daptomycin", "after", "the", "initial", "dosage", ",", "which", "supports", "TDM", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "two", "models", "may", "be", "useful", "for", "model", "informed", "precision", "dosing", "." ]
+  }, {
+    "sentence_tokens" : [ "1", "." ]
+  }, {
+    "sentence_tokens" : [ "Introduction", "." ]
+  }, {
+    "sentence_tokens" : [ "Daptomycin", "is", "a", "cyclic", "lipopeptide", "antibiotic", "with", "bactericidal", "activity", "on", "Gram", "positive", "bacteria", "discovered", "in", "1980", "[", "1,2", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "Food", "and", "Drug", "Administration", "(", "FDA", ")", "approved", "its", "use", "in", "2003", "for", "treating", "complicated", "skin", "and", "skin", "structure", "infections", "and", "Staphylococcus", "aureus", "bloodstream", "infections", ",", "including", "those", "with", "right", "sided", "infective", "endocarditis", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "those", "indications", ",", "the", "recommended", "dosing", "regimen", "ranges", "from", "4", "to", "6", "mg/kg", "[", "3", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Daptomycin", "use", "in", "patients", "with", "BJI", "is", "supported", "by", "its", "disposition", "in", "bone", "tissue", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "average", "tissue", "to", "plasma", "concentration", "ratio", "was", "estimated", "at", "54", "%", "and", "14.1", "%", "in", "synovial", "fluid", "and", "bone", ",", "respectively", "[", "5", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "another", "study", "performed", "in", "10", "patients", ",", "the", "average", "ratio", "of", "area", "under", "the", "unbound", "concentration", "time-curve", "of", "daptomycin", "in", "bone", "over", "plasma", "was", "1.08", ",", "which", "suggests", "that", "the", "bone", "exposure", "is", "similar", "to", "that", "of", "daptomycin", "unbound", "fraction", "in", "plasma", "[", "6", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "Infectious", "Diseases", "Society", "of", "America", "(", "IDSA", ")", "recognized", "daptomycin", "as", "an", "alternative", "to", "vancomycin", "for", "BJI", ",", "with", "a", "recommended", "dosage", "of", "6", "mg/kg", "[", "7", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Other", "studies", "have", "supported", "the", "use", "of", "daptomycin", "in", "patients", "with", "BJI", ",", "with", "higher", "dosages", ",", "up", "to", "10", "mg/kg", "[", "8,9,10", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "increasing", "daptomycin", "doses", "raises", "concerns", "about", "safety", "[", "11,12,13", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "It", "was", "shown", "that", "daptomycin", "muscular", "toxicity", ",", "as", "measured", "by", "elevation", "in", "serum", "creatinine", "phosphokinase", "(", "CPK", ")", ",", "correlated", "with", "plasma", "trough", "concentration", "(", "C", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Bhavnani", "et", "al.", "suggested", "an", "upper", "bound", "for", "C", "target", "of", "24.3", "mg/mL", "[", "14", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "On", "the", "other", "hand", ",", "the", "daptomycin", "antibacterial", "effect", "is", "also", "concentration", "dependent", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "a", "mouse", "model", ",", "the", "daptomycin", "killing", "effect", "correlated", "with", "both", "daily", "area", "under", "the", "concentration-time", "curve", "to", "the", "bacterial", "minimal", "inhibitory", "concentration", "(", "AUC", "/", "MIC", ")", "and", "maximal", "concentration", "over", "the", "MIC", "(", "C", "/", "MIC", ")", "ratios", "[", "15", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "Staphylococcus", "aureus", ",", "an", "average", "AUC", "/", "MIC", "ratio", "of", "666", "mg/L", "was", "required", "to", "achieve", "a", "bactericidal", "effect", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "a", "small", "clinical", "study", ",", "AUC", "/", "MIC", "<", "666", "was", "significantly", "associated", "with", "increased", "mortality", "in", "hospitalized", "patients", "[", "16", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Those", "established", "exposure", "-", "response", "and", "exposure", "-", "toxicity", "relationships", "are", "arguments", "supporting", "therapeutic", "drug", "monitoring", "(", "TDM", ")", "of", "daptomycin", "." ]
+  }, {
+    "sentence_tokens" : [ "TDM", "may", "be", "especially", "useful", "in", "patients", "with", "BJI", "who", "often", "receive", "high", "doses", "of", "daptomycin", "in", "order", "to", "control", "drug", "exposure", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "use", "of", "PK", "models", "implemented", "into", "Bayesian", "dosing", "software", "is", "a", "relevant", "approach", "to", "analyze", "TDM", "results", ",", "estimate", "PK", "quantities", "such", "as", "the", "AUC", ",", "and", "compute", "individualized", "dosages", "for", "achieving", "PK/PD", "targets", "with", "maximum", "precision", "[", "17,18", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "number", "of", "programs", "are", "available", ",", "including", "BestDose", "and", "Tucuxi", "[", "19", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "To", "our", "knowledge", ",", "no", "pharmacometric", "tool", "has", "been", "presented", "for", "dosage", "individualization", "of", "daptomycin", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "objectives", "of", "this", "work", "were", ":", "(", "i", ")", "To", "implement", "and", "validate", "a", "nonparametric", "PK", "model", "of", "daptomycin", "for", "patients", "with", "BJI", "within", "the", "BestDose", "software", ";", "(", "ii", ")", "To", "compare", "the", "performance", "of", "this", "model", "to", "that", "of", "a", "published", "parametric", "model", "implemented", "in", "the", "Tucuxi", "software", "." ]
+  }, {
+    "sentence_tokens" : [ "2", "." ]
+  }, {
+    "sentence_tokens" : [ "Material", "and", "Methods", "." ]
+  }, {
+    "sentence_tokens" : [ "2.1", "." ]
+  }, {
+    "sentence_tokens" : [ "Population", "Data", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "report", "a", "retrospective", "analysis", "of", "data", "from", "patients", "who", "were", "treated", "by", "daptomycin", "for", "BJI", "between", "2012", "and", "2016", "and", "had", "TDM", "in", "our", "reference", "center", "for", "bone", "and", "joint", "infection", "in", "Lyon", ",", "France", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "used", "two", "data", "sets", ":", "a", "learning", "set", "used", "to", "derive", "the", "nonparametric", "population", "model", "of", "daptomycin", "and", "a", "validation", "dataset", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "learning", "dataset", "was", "described", "in", "a", "previous", "publication", "from", "our", "group", ",", "which", "focused", "on", "the", "influence", "of", "P-gp", "gene", "polymorphism", "on", "daptomycin", "PK", "(", "n", "=", "81", "patients", ")", "[", "20", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Unpublished", "data", "obtained", "in", "patients", "who", "did", "not", "undergo", "P-gp", "genotyping", "were", "used", "as", "the", "validation", "dataset", "(", "n", "=", "94", "patients", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "All", "patients", "were", "enrolled", "in", "a", "cohort", "study", "after", "information", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "cohort", "study", "was", "subject", "to", "a", "declaration", "to", "the", "local", "Commission", "for", "Data", "Protection", "and", "Liberties", "(", "number", "17-057", ")", "and", "is", "registered", "on", "ClinicalTrial.gov", "(", "number", "NCT03134521", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "addition", ",", "patients", "'", "written", "informed", "consent", "was", "obtained", "for", "P-gp", "genotyping", ",", "in", "accordance", "with", "French", "regulation", "." ]
+  }, {
+    "sentence_tokens" : [ "2.2", "." ]
+  }, {
+    "sentence_tokens" : [ "Therapeutic", "Drug", "Monitoring", "of", "Daptomycin", "." ]
+  }, {
+    "sentence_tokens" : [ "Blood", "samples", "for", "daptomycin", "TDM", "were", "obtained", "during", "hospitalization", "or", "follow-up", "visit", "at", "the", "BJI", "center", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "most", "patients", ",", "TDM", "was", "performed", "on", "several", "occasions", "to", "control", "drug", "exposure", "throughout", "therapy", "." ]
+  }, {
+    "sentence_tokens" : [ "At", "each", "occasion", ",", "a", "typical", "PK", "profile", "was", "obtained", ",", "including", "three", "plasma", "samples", "collected", "approximately", "pre-dose", "(", "trough", "or", "C", ")", ",", "30", "min", "and", "5", "to", "6", "h", "after", "daptomycin", "administration", "." ]
+  }, {
+    "sentence_tokens" : [ "On", "some", "occasions", ",", "only", "one", "or", "two", "samples", "could", "be", "obtained", "." ]
+  }, {
+    "sentence_tokens" : [ "Sampling", "times", "were", "recorded", "precisely", "in", "each", "patient", "." ]
+  }, {
+    "sentence_tokens" : [ "Daptomycin", "plasma", "concentrations", "were", "measured", "using", "an", "HPLC", "assay", "with", "a", "photodiode", "array", "detector", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "method", "was", "adapted", "from", "a", "previous", "publication", "[", "21", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "lower", "limit", "of", "quantification", "was", "2", "mg/L", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "bias", "was", "less", "than", "8", "%", ",", "and", "the", "interday", "precision", "was", "lower", "than", "11", "%", "." ]
+  }, {
+    "sentence_tokens" : [ "2.3", "." ]
+  }, {
+    "sentence_tokens" : [ "Building", "of", "Daptomycin", "Nonparametric", "Population", "PK", "Model", "for", "BestDose", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "our", "previous", "work", ",", "the", "final", "population", "PK", "model", "of", "daptomycin", "was", "built", "by", "using", "a", "parametric", "approach", "(", "SAEM", "algorithm", "in", "the", "Monolix", "software", ")", "[", "20", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "final", "model", "was", "a", "two-compartment", "model", "with", "body", "weight", "and", "P-gp", "genotype", "as", "covariates", "influencing", "the", "central", "volume", "of", "distribution", ",", "while", "daptomycin", "total", "body", "clearance", "was", "influenced", "by", "creatinine", "clearance", "and", "sex", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "reanalyzed", "the", "original", "dataset", "in", "order", "to", "implement", "a", "nonparametric", "model", "into", "the", "BestDose", "software", "[", "22", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "NPAG", "algorithm", "embedded", "into", "the", "Pmetrics", "package", "for", "R", "was", "used", "to", "develop", "the", "nonparametric", "model", "[", "23,24", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "final", "nonparametric", "model", "was", "a", "two-compartment", "model", "parameterized", "with", "a", "central", "volume", "of", "distribution", "(", "V", ",", "in", "L/70", "kg", ")", ",", "non", "renal", "elimination", "rate", "constant", "(", "K", ")", ",", "renal", "elimination", "rate", "constant", "(", "K", ",", "to", "be", "multiplied", "by", "creatinine", "clearance", ")", ",", "and", "constants", "of", "rate", "transfer", "from", "the", "central", "to", "the", "peripheral", "compartment", "(", "K", ")", "and", "backward", "(", "K", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "the", "final", "nonparametric", "model", "only", "included", "two", "covariates", ",", "body", "weight", "and", "creatinine", "clearance", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "error", "model", "was", "based", "on", "the", "assay", "error", "pattern", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "predictive", "performance", "of", "the", "final", "model", "was", "assessed", "by", "computing", "the", "bias", "and", "precision", "of", "model", "based", "individual", "predictions", "(", "see", "below", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "model", "was", "then", "imported", "into", "the", "Windows", "version", "of", "the", "BestDose", "software", "." ]
+  }, {
+    "sentence_tokens" : [ "2.4", "." ]
+  }, {
+    "sentence_tokens" : [ "Implementation", "of", "A", "Parametric", "Model", "in", "Tucuxi", "." ]
+  }, {
+    "sentence_tokens" : [ "As", "we", "aimed", "at", "comparing", "our", "nonparametric", "model", "to", "a", "reference", "model", "for", "TDM", "and", "dose", "adjustment", ",", "we", "implemented", "the", "seminal", "daptomycin", "parametric", "model", "developed", "by", "daptomycin", "'", "s", "manufacturer", "[", "25", "]", "into", "the", "Tucuxi", "software", "." ]
+  }, {
+    "sentence_tokens" : [ "Tucuxi", "is", "a", "new", "software", "dedicated", "to", "the", "analysis", "of", "TDM", "results", "and", "individual", "dose", "adjustment", "(", "http://www.tucuxi.ch/", ",", "accessed", "27", "December", "2021", ")", "[", "26", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "It", "was", "developed", "by", "the", "School", "of", "management", "and", "engineering", "of", "Vaud", "(", "HEIG-VD", ")", "and", "the", "University", "Hospital", "of", "Lausanne", "(", "CHUV", ")", ",", "Switzerland", "." ]
+  }, {
+    "sentence_tokens" : [ "Tucuxi", "only", "runs", "parametric", "models", "." ]
+  }, {
+    "sentence_tokens" : [ "It", "offers", "a", "collection", "of", "population", "PK", "models", "and", "also", "allows", "new", "models", "to", "be", "imported.The", "two-compartment", "reference", "model", "from", "Dvorchik", "et", "al.", "[", "25", "]", "was", "imported", "into", "Tucuxi", ",", "including", "its", "error", "model", "and", "all", "its", "covariates", "except", "body", "temperature", ",", "which", "influenced", "daptomycin", "clearance", "in", "the", "original", "model", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "covariate", "was", "discarded", "because", "it", "is", "not", "measured", "consistently", "in", "all", "patients", "in", "routine", ",", "especially", "in", "outpatients", ",", "and", "its", "value", "may", "be", "altered", "by", "co-treatment", "such", "as", "acetaminophen", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "other", "covariates", "were", "retained", ",", "with", "creatinine", "clearance", "and", "sex", "influencing", "daptomycin", "clearance", "and", "body", "weight", "influencing", "both", "intercompartment", "clearance", "and", "peripheral", "volume", "of", "distribution", "." ]
+  }, {
+    "sentence_tokens" : [ "2.5", "." ]
+  }, {
+    "sentence_tokens" : [ "External", "Validation", "and", "Comparison", "of", "the", "Two", "Models", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "used", "an", "external", "dataset", "from", "94", "patients", "who", "received", "daptomycin", "for", "BJI", "and", "had", "TDM", "to", "validate", "the", "predictive", "performance", "of", "our", "nonparametric", "model", "in", "BestDose", "and", "that", "of", "the", "parametric", "model", "in", "Tucuxi", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "evaluation", ",", "we", "only", "used", "the", "daptomycin", "concentrations", "collected", "during", "the", "first", "TDM", "occasion", "in", "each", "patient.The", "dosage", "history", ",", "covariate", "values", ",", "times", "and", "values", "of", "measured", "concentrations", "in", "each", "patient", "were", "entered", "into", "each", "program", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "population", "model", "was", "fit", "to", "individual", "data", "by", "using", "Bayesian", "regression", "in", "both", "tools", "." ]
+  }, {
+    "sentence_tokens" : [ "After", "estimation", "of", "Bayesian", "posterior", "individual", "PK", "parameters", ",", "the", "estimated", "PK", "profile", "of", "each", "patient", "was", "obtained", ",", "including", "predictions", "of", "measured", "daptomycin", "concentrations.Bias", "and", "precision", "of", "model", "based", "individual", "predictions", "were", "assessed", "by", "computing", "the", "mean", "error", "(", "ME", ")", "and", "mean", "absolute", "percent", "error", "(", "MAPE", ")", "of", "prediction", ",", "respectively", ",", "as", "follows", ":(", "1", ")", "ME", "=", "sum", "i", "=", "1nCpredi", "-", "Cobsin", "(", "2", ")", "MAPE", "=", "sum", "i", "=", "1n", "|", "Cpredi", "-", "CobsiCobsi", "|", "n", "where", "Cpred", "are", "the", "concentrations", "predicted", "by", "the", "model", ",", "Cobs", "are", "the", "observed", "concentrations", ",", "and", "n", "is", "the", "total", "number", "of", "observations.ME", "and", "MAPE", "were", "compared", "between", "BestDose", "and", "Tucuxi", "by", "using", "the", "Wilcoxon", "signed-rank", "test", "for", "paired", "samples", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "also", "compared", "the", "regression", "of", "predicted", "versus", "observed", "concentrations", "from", "each", "model.Because", "daptomycin", "AUC", "is", "an", "important", "predictor", "of", "its", "antibacterial", "effect", ",", "we", "also", "compared", "the", "estimations", "of", "individual", "daily", "AUC", "(", "AUC", ")", "in", "the", "94", "patients", "provided", "by", "BestDose", "and", "Tucuxi.Finally", ",", "we", "compared", "the", "individual", "daily", "doses", "computed", "by", "the", "two", "programs", "for", "achieving", "two", "targets", "at", "the", "steady-state", "in", "each", "patient", ":", "the", "minimum", "effective", "dose", "(", "D", ")", "necessary", "to", "attain", "AUC", "=", "666", "mg.h/L", "and", "the", "maximum", "effective", "dose", "(", "D", ")", "associated", "with", "C", "=", "24.3", "mg/L", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "AUC", "target", "was", "associated", "with", "the", "bactericidal", "effect", "of", "daptomycin", "in", "an", "animal", "model", "of", "staphylococcal", "infection", "[", "15", "]", ",", "while", "the", "C", "target", "was", "the", "cut-off", "value", "associated", "with", "increased", "risk", "of", "CPK", "elevation", "in", "humans", "[", "14", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "Mann", "-", "Whitney", "test", "was", "used", "for", "comparisons", "of", "AUC", ",", "half-life", ",", "central", "volume", "of", "distribution", "of", "daptomycin", ",", "as", "well", "as", "predicted", "doses", "between", "the", "two", "programs.In", "addition", ",", "we", "assessed", "the", "concordance", "between", "predicted", "concentrations", ",", "AUC", ",", "D", "and", "D", "by", "performing", "a", "Bland", "-", "Altman", "analysis", "[", "27", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "each", "pair", "of", "predicted", "concentrations", ",", "AUC", ",", "D", "and", "D", "provided", "by", "BestDose", "and", "Tucuxi", ",", "we", "plotted", "the", "difference", "(", "BestDose", "estimate", "minus", "Tucuxi", "estimate", ")", "versus", "the", "average", "value", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "used", "the", "BA-plotteR", "webtool", "to", "build", "the", "scatterplots", "and", "derive", "the", "mean", "difference", "line", "and", "limits", "of", "agreement", "[", "28", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Regression", "based", "limits", "of", "agreement", "were", "used", "for", "the", "plot", "of", "AUC", "and", "Dmax", "because", "the", "slope", "of", "the", "regression", "line", "was", "significantly", "different", "from", "zero", ",", "suggesting", "a", "proportional", "bias", "." ]
+  }, {
+    "sentence_tokens" : [ "3", "." ]
+  }, {
+    "sentence_tokens" : [ "Results", "." ]
+  }, {
+    "sentence_tokens" : [ "3.1", "." ]
+  }, {
+    "sentence_tokens" : [ "Population", "Data", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "total", "of", "841", "plasma", "concentrations", "of", "daptomycin", "collected", "in", "175", "patients", "were", "available", "for", "analysis", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "learning", "and", "validation", "datasets", "included", "577", "observations", "from", "81", "patients", "and", "264", "observations", "from", "94", "patients", ",", "respectively", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "characteristics", "of", "the", "two", "populations", "are", "summarized", "in", "Table", "1.In", "the", "validation", "dataset", ",", "the", "mean", "daptomycin", "dosage", "was", "7.6", "+/-", "1.3", "mg/kg", "per", "day", ",", "which", "is", "consistent", "with", "guidelines", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "mean", "AUC", "estimated", "with", "BestDose", "was", "975", "+/-", "395", "mg.h/L", "on", "the", "first", "TDM", "occasion", ",", "which", "is", "higher", "than", "the", "efficacy", "threshold", "(", "AUC", ">=", "666", "mg.h/L", ")", ",", "for", "a", "putative", "MIC", "of", "1", "mg/L", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "21.3", "%", "of", "patients", "were", "underexposed", "(", "AUC", "<", "666", "mg.h/L", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "On", "the", "other", "hand", ",", "31.9", "%", "of", "patients", "had", "C", ">", "24.3", "mg/L", "and", "may", "be", "considered", "as", "overexposed", "." ]
+  }, {
+    "sentence_tokens" : [ "3.2", "." ]
+  }, {
+    "sentence_tokens" : [ "Population", "Modeling", "in", "the", "Learning", "Dataset", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "parameter", "values", "of", "the", "nonparametric", "population", "model", "built", "with", "Pmetrics", "in", "the", "learning", "dataset", "are", "shown", "in", "Table", "2", "." ]
+  }, {
+    "sentence_tokens" : [ "Of", "note", ",", "as", "the", "real", "parameter", "distributions", "are", "discrete", ",", "the", "means", "and", "standard", "deviations", "of", "parameters", "cannot", "provide", "a", "complete", "description", "of", "the", "distributions", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "final", "nonparametric", "model", "described", "the", "data", "very", "well", "in", "the", "learning", "dataset", "with", "ME", "of", "-", "0.72", "+/-", "4.3", "mg/L", "and", "MAPE", "of", "6.3", "+/-", "8.1", "%", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "plot", "of", "observed", "concentrations", "versus", "population", "and", "individual", "predictions", "is", "shown", "in", "Figure", "1", "." ]
+  }, {
+    "sentence_tokens" : [ "3.3", "." ]
+  }, {
+    "sentence_tokens" : [ "Comparison", "of", "BestDose", "and", "Tucuxi", "Models", "in", "the", "Validation", "Dataset", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "model", "predictions", "computed", "with", "BestDose", "in", "the", "validation", "dataset", "were", "as", "good", "as", "in", "the", "learning", "set", ",", "with", "ME", "=", "-", "0.087", "+/-", "5.1", "mg/L", "and", "MAPE", "=", "7.8", "+/-", "34.7", "%", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "parametric", "model", "implemented", "in", "Tucuxi", "also", "described", "the", "validation", "data", "very", "well", "with", "ME", "=", "-", "2.3", "+/-", "6.0", "mg/L", "and", "MAPE", "=", "9.9", "+/-", "13.3", "%", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "ME", "and", "MAPE", "were", "slightly", "higher", "than", "that", "from", "the", "BestDose", "model", ",", "and", "the", "differences", "were", "significant", "(", "p", "<", "0.001", "and", "p", "=", "0.0022", "for", "ME", "and", "MAPE", ",", "respectively", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Figure", "2", "shows", "the", "plot", "of", "observations", "versus", "individual", "predictions", "from", "both", "models", ",", "which", "look", "very", "similar.The", "Bayesian", "estimations", "of", "daptomycin", "concentrations", ",", "AUC", ",", "D", ",", "D", ",", "as", "well", "as", "the", "estimates", "of", "the", "main", "PK", "parameters", "(", "V", ",", "half-life", "and", "total", "body", "clearance", ")", "calculated", "with", "both", "programs", "are", "summarized", "in", "Table", "3", "." ]
+  }, {
+    "sentence_tokens" : [ "Regarding", "PK", "parameters", "estimates", ",", "BestDose", "provided", "higher", "mean", "estimates", "of", "V", "and", "half-life", ",", "while", "the", "mean", "clearances", "were", "similar", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "correlation", "between", "estimates", "from", "the", "two", "programs", "was", "low.Predicted", "daptomycin", "concentrations", "from", "BestDose", "correlated", "well", "with", "those", "from", "Tucuxi", "and", "showed", "a", "good", "agreement", ",", "as", "displayed", "in", "the", "Bland", "-", "Altman", "plot", "(", "Figure", "3", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "few", "values", "were", "above", "the", "upper", "limits", "of", "agreement", ",", "those", "corresponding", "to", "underestimation", "of", "observed", "concentrations", "by", "the", "Tucuxi", "model", ",", "as", "one", "can", "observe", "in", "Figure", "2", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "AUC", "estimated", "by", "BestDose", "were", "not", "significantly", "different", "than", "those", "from", "Tucuxi", "." ]
+  }, {
+    "sentence_tokens" : [ "While", "the", "linear", "correlation", "between", "AUC", "estimates", "was", "moderate", ",", "the", "Bland", "-", "Altman", "analysis", "showed", "a", "good", "agreement", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "minimum", "effective", "doses", "(", "D", ")", "required", "to", "achieve", "the", "target", "AUC", "of", "666", "mg.h/L", "were", "not", "significantly", "different", ",", "and", "the", "correlation", "and", "agreement", "were", "acceptable", "." ]
+  }, {
+    "sentence_tokens" : [ "By", "contrast", ",", "the", "maximum", "effective", "doses", "(", "D", ")", "associated", "with", "C", "=", "24.3", "mg/L", "were", "substantially", "different", "(", "p", "=", "0.046", ")", "between", "the", "two", "programs", ",", "with", "higher", "doses", "suggested", "by", "Tucuxi", "on", "average", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "Bland", "-", "Altman", "plot", "(", "Figure", "3", ")", "confirmed", "a", "trend", "to", "an", "increasing", "difference", "between", "Tucuxi", "and", "BestDose", "D", "estimates", "for", "ascending", "doses", "." ]
+  }, {
+    "sentence_tokens" : [ "4", "." ]
+  }, {
+    "sentence_tokens" : [ "Discussion", "." ]
+  }, {
+    "sentence_tokens" : [ "Considering", "the", "established", "exposure", "-", "response", "effect", "described", "for", "both", "antimicrobial", "effect", "and", "muscular", "toxicity", ",", "TDM", "of", "daptomycin", "appears", "to", "be", "a", "relevant", "approach", "for", "evaluating", "and", "optimizing", "drug", "exposure", "[", "30", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "addition", ",", "there", "is", "a", "need", "for", "pharmacometric", "tools", "to", "analyze", "TDM", "results", "and", "perform", "precision", "dosing", "of", "this", "drug", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "study", ",", "we", "implemented", "and", "compared", "two", "Bayesian", "dosing", "programs", "for", "daptomycin", "TDM", "based", "on", "data", "from", "patients", "with", "BJI.First", ",", "our", "analysis", "confirmed", "the", "interest", "in", "daptomycin", "TDM", "and", "dosage", "individualization", ",", "as", "the", "achievement", "of", "exposure", "targets", "was", "not", "optimal", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "validation", "group", ",", "21.3", "%", "of", "patients", "did", "not", "achieve", "the", "AUC", "target", "on", "the", "first", "TDM", "occasion", "after", "initial", "dosing", ",", "and", "31.9", "%", "had", "C", "values", "above", "the", "safety", "target", "." ]
+  }, {
+    "sentence_tokens" : [ "Urakami", "et", "al.", "reported", "a", "low", "rate", "of", "efficacy", "target", "attainment", "(", "40", "%", ")", "in", "patients", "who", "received", "6", "mg/kg", "[", "31", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "another", "prospective", "TDM", "study", "in", "patients", "who", "received", "daptomycin", "for", "bacteremia", ",", "9.5", "%", "of", "individuals", "showed", "C", ">", "24.3", "mg/L", "." ]
+  }, {
+    "sentence_tokens" : [ "Half", "of", "those", "presented", "an", "elevation", "of", "CPK", "[", "30", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Those", "published", "results", "and", "ours", "confirm", "that", "exposure", "to", "daptomycin", "is", "often", "suboptimal", "and", "that", "dosage", "individualization", "based", "on", "TDM", "is", "desirable.We", "developed", "a", "nonparametric", "PK", "model", "of", "daptomycin", "for", "the", "BestDose", "software", "." ]
+  }, {
+    "sentence_tokens" : [ "Compared", "with", "the", "original", "model", "previously", "published", "by", "our", "group", ",", "the", "model", "implemented", "with", "BestDose", "was", "simpler", ",", "with", "only", "two", "covariates", "." ]
+  }, {
+    "sentence_tokens" : [ "Despite", "this", "simplification", ",", "the", "model", "performance", "was", "very", "good", ",", "with", "low", "bias", "and", "imprecision", "in", "individual", "predictions", "of", "daptomycin", "concentrations", "in", "both", "the", "learning", "and", "validation", "datasets", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "illustrates", "the", "relative", "importance", "of", "concentration", "measurements", "and", "covariates", "in", "the", "Bayesian", "estimation", "of", "PK", "parameters", "." ]
+  }, {
+    "sentence_tokens" : [ "As", "shown", "by", "Sheiner", "and", "colleagues", ",", "measured", "drug", "concentrations", "are", "much", "more", "informative", "about", "PK", "parameters", "than", "covariates", "in", "the", "Bayesian", "estimation", "[", "32", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "models", "to", "be", "used", "for", "TDM", "and", "individual", "Bayesian", "estimation", "do", "not", "necessarily", "require", "many", "covariates", "." ]
+  }, {
+    "sentence_tokens" : [ "By", "contrast", ",", "covariates", "are", "more", "important", "for", "population", "predictions", "and", "model", "based", "initial", "dosing.Our", "nonparametric", "model", "implemented", "into", "BestDose", "compared", "well", "with", "the", "reference", "model", "from", "Dvorchik", "et", "al.", "implemented", "in", "Tucuxi", "[", "25", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Indeed", ",", "the", "BestDose", "model", "performed", "slightly", "better", "than", "the", "Tucuxi", "model", "in", "estimating", "daptomycin", "concentration", "in", "the", "validation", "group", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "may", "be", "due", "to", "the", "population", "used", "in", "model", "building", ",", "as", "our", "model", "was", "built", "in", "a", "similar", "population", "of", "patients", "with", "BJI", ",", "while", "the", "model", "from", "Dvorchik", "et", "al.", "was", "based", "on", "data", "from", "15", "clinical", "studies", "conducted", "in", "healthy", "volunteers", "and", "patients", "without", "BJI", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "addition", ",", "the", "assay", "method", "was", "the", "same", "in", "the", "learning", "and", "validation", "dataset", "for", "the", "model", "implemented", "in", "BestDose", ",", "which", "was", "not", "the", "case", "for", "the", "model", "in", "Tucuxi", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "predicted", "concentrations", ",", "D", "and", "estimated", "AUC", ",", "were", "similar", "between", "the", "two", "programs", "and", "showed", "a", "good", "agreement", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "dose", "suggested", "is", "probably", "the", "most", "relevant", "parameter", "to", "be", "compared", "between", "two", "dosing", "programs", ",", "as", "it", "directly", "influences", "dosing", "decisions", "and", "patient", "care", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "doses", "calculated", "by", "the", "two", "programs", "for", "achieving", "the", "target", "AUC", "(", "D", ")", "were", "remarkably", "consistent", "." ]
+  }, {
+    "sentence_tokens" : [ "By", "contrast", ",", "the", "maximal", "effective", "doses", "associated", "with", "C", "still", "below", "the", "safety", "target", "were", "somewhat", "different", ",", "with", "higher", "D", "values", "predicted", "by", "Tucuxi", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "difference", "may", "be", "explained", "by", "differences", "in", "model", "parameterization", ",", "algorithm", "and", "statistical", "distribution", "between", "the", "two", "programs", "." ]
+  }, {
+    "sentence_tokens" : [ "As", "shown", "in", "Table", "3", ",", "the", "BestDose", "model", "tended", "to", "estimate", "longer", "half-life", "values", "than", "the", "Tucuxi", "model", "." ]
+  }, {
+    "sentence_tokens" : [ "As", "a", "result", ",", "the", "BestDose", "model", "would", "predict", "a", "higher", "plasma", "trough", "concentration", "for", "a", "given", "dosage", "than", "the", "Tucuxi", "model", ",", "all", "things", "being", "equal", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "believe", "that", "this", "difference", "is", "unlikely", "to", "be", "an", "issue", "for", "clinical", "use", "of", "the", "two", "programs", ",", "as", "targeting", "such", "a", "high", "C", "would", "not", "be", "the", "primary", "goal", "." ]
+  }, {
+    "sentence_tokens" : [ "Users", "are", "expected", "to", "target", "the", "minimum", "effective", "dose", "(", "D", ")", "necessary", "to", "achieve", "the", "AUC", "efficacy", "target", "and", "could", "adjust", "the", "dosing", "interval", "in", "order", "to", "maintain", "C", "below", "the", "safety", "target", "if", "necessary.Factors", "other", "than", "the", "original", "population", "may", "also", "explain", "the", "differences", "in", "estimates", "and", "parameter", "values", "from", "the", "two", "models", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "BestDose", "model", "was", "parameterized", "with", "rate", "constants", ",", "as", "required", "by", "the", "program", ",", "while", "the", "model", "implemented", "in", "Tucuxi", "was", "parameterized", "with", "CL", ",", "in", "agreement", "with", "the", "original", "publication", "." ]
+  }, {
+    "sentence_tokens" : [ "Moreover", ",", "the", "statistical", "nature", "of", "the", "two", "models", "is", "different", ",", "as", "the", "model", "implemented", "in", "BestDose", "is", "nonparametric", ",", "while", "the", "model", "imported", "into", "Tucuxi", "is", "parametric", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "statistical", "feature", "influences", "the", "Bayesian", "estimation", "of", "individual", "PK", "parameters", "and", "the", "computation", "of", "the", "dosage", "for", "a", "given", "target", "." ]
+  }, {
+    "sentence_tokens" : [ "With", "a", "nonparametric", "model", ",", "the", "entire", "discrete", "Bayesian", "posterior", "distribution", "is", "used", "in", "model", "fitting", "and", "dosage", "calculation", "[", "24,33", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "With", "a", "parametric", "model", ",", "only", "a", "single", "value", "of", "the", "continuous", "Bayesian", "posterior", "distribution", "is", "used", "in", "such", "calculation", ",", "which", "is", "the", "maximum", "a", "posteriori", "(", "MAP", ")", "[", "34", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Despite", "those", "technical", "differences", ",", "the", "two", "models", "provided", "overall", "comparable", "performance", "in", "the", "estimation", "of", "daptomycin", "concentrations", "and", "AUC", "and", "in", "the", "calculation", "of", "the", "dose", "required", "to", "achieve", "the", "efficacy", "target.This", "study", "has", "several", "limitations", "." ]
+  }, {
+    "sentence_tokens" : [ "Data", "were", "collected", "during", "routine", "patient", "care", ",", "so", "errors", "may", "have", "occurred", "in", "the", "collection", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "population", "only", "included", "patients", "with", "BJI", ",", "so", "the", "nonparametric", "model", "developed", "for", "BestDose", "may", "not", "perform", "as", "well", "in", "other", "patients", "'", "groups", "." ]
+  }, {
+    "sentence_tokens" : [ "Based", "on", "the", "relatively", "good", "performance", "of", "the", "model", "implemented", "in", "Tucuxi", "in", "a", "population", "different", "from", "the", "original", ",", "one", "can", "expect", "similar", "robustness", "of", "our", "model", ",", "but", "further", "research", "is", "necessary", "to", "confirm", "this", "." ]
+  }, {
+    "sentence_tokens" : [ "It", "is", "likely", "that", "specific", "models", "would", "be", "required", "for", "daptomycin", "dosing", "in", "unstable", "patients", "such", "as", "critically", "ill", "patients", "." ]
+  }, {
+    "sentence_tokens" : [ "Moreover", ",", "the", "estimation", "of", "individual", "PK", "parameters", ",", "AUC", "values", "and", "doses", "depends", "on", "the", "sampling", "design", ",", "which", "was", "quite", "consistent", "in", "our", "patient", "population", ",", "with", "three", "concentrations", "measured", "in", "most", "patients", "at", "similar", "time-points", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "results", "might", "be", "different", "with", "another", "sampling", "design", "." ]
+  }, {
+    "sentence_tokens" : [ "Finally", ",", "we", "considered", "Staphylococcus", "aureus", "as", "the", "targeted", "pathogen", ",", "and", "the", "target", "AUC", "was", "based", "on", "this", "assumption", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "lower", "AUC", "and", "MIC", "ratio", "was", "suggested", "as", "a", "daptomycin", "PK/PD", "target", "for", "enterococcal", "bacteremia", "[", "35", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "such", "a", "case", ",", "the", "effective", "dose", "suggested", "by", "the", "PK", "models", "would", "have", "been", "different", "." ]
+  }, {
+    "sentence_tokens" : [ "5", "." ]
+  }, {
+    "sentence_tokens" : [ "Conclusions", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "conclusion", ",", "our", "results", "suggest", "that", "daptomycin", "dosing", "can", "be", "optimized", "in", "patients", "with", "BJI", ",", "as", "significant", "proportions", "of", "underexposure", "and", "overexposure", "were", "observed", "after", "initial", "dosing", "based", "on", "patients", "'", "weight", "." ]
+  }, {
+    "sentence_tokens" : [ "Two", "pharmacometric", "tools", "for", "model", "based", "TDM", "and", "dosage", "adjustment", "of", "daptomycin", "were", "developed", "and", "externally", "validated", "in", "patients", "with", "BJI", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "two", "models", "showed", "good", "predictive", "performance", "and", "overall", "comparable", "results", "." ]
+  }, {
+    "sentence_tokens" : [ "They", "are", "available", "in", "the", "BestDose", "and", "Tucuxi", "programs", "for", "precision", "dosing", "of", "daptomycin", "." ]
+  } ]
+}

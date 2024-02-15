@@ -1,27 +1,98 @@
-[ {
-  "sentence_tokens" : [ "Mice", "with", "general", "deletion", "suffer", "from", "increased", "blood", "pressure", ",", "reduced", "bleeding", "time", ",", "erectile", "dysfunction", "and", "die", "prematurely", "due", "to", "gastrointestinal", "dysmotility.Several", "of", "the", "phenotypical", "changes", "caused", "by", "NO-GC", "deficiency", "are", "due", "to", "increased", "smooth", "muscle", "tone", "." ],
-  "event_indices" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 0, 1 ],
-  "controlled_indices" : [ 14, 15, 16 ],
-  "trigger_indices" : [ 10, 11 ],
-  "rule_name" : "Negative_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Deletion", "of", "NO-GC", "in", "mice", "leads", "to", "disturbed", "NO/cGMP", "signaling", "." ],
-  "entity_one_indices" : [ 4, 5 ],
-  "entity_two_indices" : [ 2, 3 ]
-}, {
-  "sentence_tokens" : [ "To", "our", "surprise", ",", "the", "degree", "of", "smooth", "muscle", "dysfunction", "was", "not", "homogeneous", ":", "In", "contrast", "to", "vascular", "or", "urethral", "smooth", "muscle", ",", "gastric", "fundus", "and", "other", "GI", "muscles", "revealed", "an", "only", "a", "partially", "reduced", "NO", "induced", "relaxation", "." ],
-  "entity_one_indices" : [ 35, 36 ],
-  "entity_two_indices" : [ 27, 28 ]
-}, {
-  "sentence_tokens" : [ "Importantly", ",", "in", "addition", "to", "smooth", "muscle", "cells", ",", "many", "tissues", "showed", "NO-GC", "expression", "in", "other", "cell", "types", "such", "as", "endothelial", "cells", ",", "interstitial", "cells", "of", "Cajal", "and", "fibroblast", "like", "cells.We", "have", "generated", "various", "cell", "specific", "KO", "strains", "using", "the", "inducible", "Cre-lox-system", "." ],
-  "entity_one_indices" : [ 36, 37 ],
-  "entity_two_indices" : [ 12, 13 ]
-}, {
-  "sentence_tokens" : [ "In", "the", "GI", "tract", "we", "were", "able", "to", "show", "a", "dual", "mechanism", "of", "NO", "induced", "relaxation", "via", "interstitial", "cell", "of", "Cajal", "and", "smooth", "muscle", "cells", "." ],
-  "entity_one_indices" : [ 13, 14 ],
-  "entity_two_indices" : [ 2, 3 ]
-} ]
+{
+  "regulations" : [ {
+    "sentence_tokens" : [ "Mice", "with", "general", "deletion", "suffer", "from", "increased", "blood", "pressure", ",", "reduced", "bleeding", "time", ",", "erectile", "dysfunction", "and", "die", "prematurely", "due", "to", "gastrointestinal", "dysmotility.Several", "of", "the", "phenotypical", "changes", "caused", "by", "NO-GC", "deficiency", "are", "due", "to", "increased", "smooth", "muscle", "tone", "." ],
+    "event_indices" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 0, 1 ],
+    "controlled_indices" : [ 14, 15, 16 ],
+    "trigger_indices" : [ 10, 11 ],
+    "rule_name" : "Negative_activation_syntax_1_verb",
+    "rule" : null
+  } ],
+  "hardInstances" : [ {
+    "sentence_tokens" : [ "Mice", "with", "general", "deletion", "suffer", "from", "increased", "blood", "pressure", ",", "reduced", "bleeding", "time", ",", "erectile", "dysfunction", "and", "die", "prematurely", "due", "to", "gastrointestinal", "dysmotility.Several", "of", "the", "phenotypical", "changes", "caused", "by", "NO-GC", "deficiency", "are", "due", "to", "increased", "smooth", "muscle", "tone", "." ],
+    "entities_indices" : [ [ 29, 30 ] ]
+  } ],
+  "withoutRegulations" : [ {
+    "sentence_tokens" : [ "Cell", "type", "specific", "knock", "out", "models", "to", "unravel", "NO/cGMP", "signaling", "in", "smooth", "muscle", "." ],
+    "entities_indices" : [ [ 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "Detrusor", "muscle", "of", "the", "bladder", "was", "unresponsive", "towards", "NO", "." ],
+    "entities_indices" : [ [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "addition", ",", "we", "identified", "a", "third", "type", "of", "NO-GC-expressing", "cell", ",", "the", "fibroblast", "like", "cell", ",", "whose", "function", "is", "still", "enigmatic", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "our", "work", "concentrated", "on", "NO/cGMP", "mediated", "regulation", "of", "smooth", "muscle", "contraction", "and", "relaxation", "in", "various", "tissues", "." ],
+    "entities_indices" : [ [ 8, 9, 10, 11, 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "To", "our", "surprise", ",", "the", "degree", "of", "smooth", "muscle", "dysfunction", "was", "not", "homogeneous", ":", "In", "contrast", "to", "vascular", "or", "urethral", "smooth", "muscle", ",", "gastric", "fundus", "and", "other", "GI", "muscles", "revealed", "an", "only", "a", "partially", "reduced", "NO", "induced", "relaxation", "." ],
+    "entities_indices" : [ [ 27, 28 ], [ 35, 36 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "GI", "tract", "we", "were", "able", "to", "show", "a", "dual", "mechanism", "of", "NO", "induced", "relaxation", "via", "interstitial", "cell", "of", "Cajal", "and", "smooth", "muscle", "cells", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "NO", "sensitive", "guanylyl", "cyclase", "(", "NO-GC", ")", "is", "accepted", "to", "be", "the", "major", "receptor", "for", "the", "signaling", "molecule", "NO", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 2, 3, 4 ], [ 5, 6 ], [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "Further", "studies", "using", "double", "or", "triple", "KO", "mutants", "will", "hopefully", "allow", "advising", "cell", "specific", "functions", "of", "NO/cGMP", "signaling", "in", "murine", "smooth", "muscle", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "Importantly", ",", "in", "addition", "to", "smooth", "muscle", "cells", ",", "many", "tissues", "showed", "NO-GC", "expression", "in", "other", "cell", "types", "such", "as", "endothelial", "cells", ",", "interstitial", "cells", "of", "Cajal", "and", "fibroblast", "like", "cells.We", "have", "generated", "various", "cell", "specific", "KO", "strains", "using", "the", "inducible", "Cre-lox-system", "." ],
+    "entities_indices" : [ [ 12, 13 ], [ 36, 37 ] ]
+  }, {
+    "sentence_tokens" : [ "Deletion", "of", "NO-GC", "in", "mice", "leads", "to", "disturbed", "NO/cGMP", "signaling", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "function", "of", "NO-GC", "in", "the", "endothelium", "is", "currently", "being", "investigated", "." ],
+    "entities_indices" : [ [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "Closer", "examination", "of", "the", "tissues", "showed", "variable", "expression", "of", "NO-GC", "in", "the", "different", "smooth", "muscle", "cells", "." ],
+    "entities_indices" : [ [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "NO", "induced", "relaxation", "of", "all", "NO-GC-containing", "smooth", "muscle", "tissues", "was", "influenced", "by", "the", "deletion", "of", "the", "enzyme", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "As", "a", "result", ",", "these", "mice", "show", "abolished", "NO", "dependent", "relaxation", "of", "smooth", "muscle", "containing", "tissues", "in", "the", "cardiovascular", "and", "gastrointestinal", "systems", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 8, 9 ], [ 10, 11, 12, 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "penile", "corpus", "cavernosum", ",", "strong", "NO-GC", "expression", "was", "found", "in", "smooth", "muscle", "cells", "and", ",", "surprisingly", ",", "also", "in", "endothelial", "cells", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  } ],
+  "emptySentences" : [ {
+    "sentence_tokens" : [ "Cell", "type", "specific", "knock", "out", "models", "to", "unravel", "NO/cGMP", "signaling", "in", "smooth", "muscle", "." ]
+  }, {
+    "sentence_tokens" : [ "." ]
+  }, {
+    "sentence_tokens" : [ "NO", "sensitive", "guanylyl", "cyclase", "(", "NO-GC", ")", "is", "accepted", "to", "be", "the", "major", "receptor", "for", "the", "signaling", "molecule", "NO", "." ]
+  }, {
+    "sentence_tokens" : [ "Deletion", "of", "NO-GC", "in", "mice", "leads", "to", "disturbed", "NO/cGMP", "signaling", "." ]
+  }, {
+    "sentence_tokens" : [ "As", "a", "result", ",", "these", "mice", "show", "abolished", "NO", "dependent", "relaxation", "of", "smooth", "muscle", "containing", "tissues", "in", "the", "cardiovascular", "and", "gastrointestinal", "systems", "." ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "our", "work", "concentrated", "on", "NO/cGMP", "mediated", "regulation", "of", "smooth", "muscle", "contraction", "and", "relaxation", "in", "various", "tissues", "." ]
+  }, {
+    "sentence_tokens" : [ "These", "include", "smooth", "muscle", "from", "blood", "vessels", ",", "gut", ",", "corpus", "cavernosum", "and", "lower", "urinary", "tract", "." ]
+  }, {
+    "sentence_tokens" : [ "NO", "induced", "relaxation", "of", "all", "NO-GC-containing", "smooth", "muscle", "tissues", "was", "influenced", "by", "the", "deletion", "of", "the", "enzyme", "." ]
+  }, {
+    "sentence_tokens" : [ "To", "our", "surprise", ",", "the", "degree", "of", "smooth", "muscle", "dysfunction", "was", "not", "homogeneous", ":", "In", "contrast", "to", "vascular", "or", "urethral", "smooth", "muscle", ",", "gastric", "fundus", "and", "other", "GI", "muscles", "revealed", "an", "only", "a", "partially", "reduced", "NO", "induced", "relaxation", "." ]
+  }, {
+    "sentence_tokens" : [ "Detrusor", "muscle", "of", "the", "bladder", "was", "unresponsive", "towards", "NO", "." ]
+  }, {
+    "sentence_tokens" : [ "Closer", "examination", "of", "the", "tissues", "showed", "variable", "expression", "of", "NO-GC", "in", "the", "different", "smooth", "muscle", "cells", "." ]
+  }, {
+    "sentence_tokens" : [ "Importantly", ",", "in", "addition", "to", "smooth", "muscle", "cells", ",", "many", "tissues", "showed", "NO-GC", "expression", "in", "other", "cell", "types", "such", "as", "endothelial", "cells", ",", "interstitial", "cells", "of", "Cajal", "and", "fibroblast", "like", "cells.We", "have", "generated", "various", "cell", "specific", "KO", "strains", "using", "the", "inducible", "Cre-lox-system", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "GI", "tract", "we", "were", "able", "to", "show", "a", "dual", "mechanism", "of", "NO", "induced", "relaxation", "via", "interstitial", "cell", "of", "Cajal", "and", "smooth", "muscle", "cells", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "addition", ",", "we", "identified", "a", "third", "type", "of", "NO-GC-expressing", "cell", ",", "the", "fibroblast", "like", "cell", ",", "whose", "function", "is", "still", "enigmatic", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "penile", "corpus", "cavernosum", ",", "strong", "NO-GC", "expression", "was", "found", "in", "smooth", "muscle", "cells", "and", ",", "surprisingly", ",", "also", "in", "endothelial", "cells", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "function", "of", "NO-GC", "in", "the", "endothelium", "is", "currently", "being", "investigated", "." ]
+  }, {
+    "sentence_tokens" : [ "Further", "studies", "using", "double", "or", "triple", "KO", "mutants", "will", "hopefully", "allow", "advising", "cell", "specific", "functions", "of", "NO/cGMP", "signaling", "in", "murine", "smooth", "muscle", "." ]
+  } ]
+}

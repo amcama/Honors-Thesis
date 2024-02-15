@@ -1,167 +1,893 @@
-[ {
-  "sentence_tokens" : [ "Increased", "(", "1.56-fold", ")", "EXFABP", "expression", "may", "be", "required", "to", "stimulate", "cell", "proliferation", ",", "tissue", "repair", "and", "defense", "against", "bacterial", "infection", "in", "case", "of", "altered", "intestinal", "morphology", "after", "fasting", "." ],
-  "event_indices" : [ 4, 5, 6, 7, 8, 9, 10, 11, 12, 13 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 4, 5, 6 ],
-  "controlled_indices" : [ 11, 12, 13 ],
-  "trigger_indices" : [ 10, 11 ],
-  "rule_name" : "Positive_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Overexpression", "of", "APOA1", "gene", "can", "increase", "the", "reverse", "lipid", "transport", "in", "itself", "(", "Zhang", "et", "al", ".,", "2003", ")", "." ],
-  "event_indices" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ],
-  "type" : "Negative_activation",
-  "polarity" : false,
-  "controller_indices" : [ 0, 1, 2, 3 ],
-  "controlled_indices" : [ 8, 9, 10 ],
-  "trigger_indices" : [ 5, 6 ],
-  "rule_name" : "Positive_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "The", "chicken", "jejunal", "and", "ileal", "HSP70", "and", "HSP90", "levels", "can", "increase", "in", "response", "to", "heat", "stress", "(", "Varasteh", "et", "al", ".,", "2015", ")", "." ],
-  "event_indices" : [ 7, 8, 9, 10, 11, 12, 13, 14, 15 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 7, 8, 9 ],
-  "controlled_indices" : [ 12, 13, 14, 15 ],
-  "trigger_indices" : [ 10, 11 ],
-  "rule_name" : "Positive_activation_syntax_7_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Differential", "proteome", "analyses", "from", "jejunum", "samples", "were", "performed", "using", "two-dimensional", "difference", "gel", "electrophoresis", "followed", "by", "tryptic", "digestion", "and", "protein", "identification", "by", "matrix", "assisted", "laser", "desorption", "and", "ionization", "mass", "spectrometry", "." ],
-  "entity_one_indices" : [ 27, 28 ],
-  "entity_two_indices" : [ 16, 17 ]
-}, {
-  "sentence_tokens" : [ "The", "functions", "of", "the", "differentially", "expressed", "proteins", "indicate", "that", "the", "24", "h", "fasting", "mainly", "affects", "the", "expression", "of", "structural", "proteins", ",", "and", "proteins", "involved", "in", "lipid", "transport", ",", "general", "stress", "response", ",", "and", "intestinal", "defense", "." ],
-  "entity_one_indices" : [ 29, 30, 31 ],
-  "entity_two_indices" : [ 25, 26, 27 ]
-}, {
-  "sentence_tokens" : [ "Glucose", "and", "vitamins", "are", "mainly", "absorbed", "in", "the", "duodenum", ",", "amino", "acids", "in", "the", "jejunum", "and", "fatty", "acids", "in", "the", "distal", "part", "of", "the", "jejunum", "and", "in", "the", "start", "of", "the", "ileum", "(", "Denbow", ",", "2012", ")", "." ],
-  "entity_one_indices" : [ 28, 29 ],
-  "entity_two_indices" : [ 0, 1 ]
-}, {
-  "sentence_tokens" : [ "Decreased", "intestinal", "absorption", "area", "limits", "the", "uptake", "capacity", "of", "essential", "nutrients", "for", "optimal", "growth", ",", "thus", "contributes", "to", "decreased", "body", "weight", "at", "slaughter", "age", "and", "increases", "mortality", "during", "the", "growth", "period", "(", "Geyra", ",", "Uni", "&", "Sklan", ",", "2001", ")", "." ],
-  "entity_one_indices" : [ 19, 20, 21 ],
-  "entity_two_indices" : [ 1, 2, 3 ]
-}, {
-  "sentence_tokens" : [ "Tissue", "sections", "were", "stained", "with", "hematoxylin", "and", "eosin", "according", "to", "Fischer", "et", "al.", "(", "2008", ")", "and", "digitalized", "with", "a", "Leitz", "Diaplan", "microscope", "(", "Spot", "RT-Slider", ";", "Diagnostic", "Instruments", ",", "Sterling", "Heights", ",", "USA", ")", "." ],
-  "entity_one_indices" : [ 7, 8 ],
-  "entity_two_indices" : [ 5, 6 ]
-}, {
-  "sentence_tokens" : [ "Supernatants", "were", "collected", "to", "fresh", "tubes", "and", "the", "protein", "concentration", "was", "determined", "with", "RC", "DC", "Protein", "Assay", "kit", "(", "Bio-Rad", ",", "Hercules", ",", "CA", ",", "USA", ")", "." ],
-  "entity_one_indices" : [ 23, 24 ],
-  "entity_two_indices" : [ 13, 14, 15 ]
-}, {
-  "sentence_tokens" : [ "Bovine", "serum", "albumin", "(", "Sigma-Aldrich", ",", "St.", "Louis", ",", "MO", ",", "USA", ")", "was", "used", "as", "a", "concentration", "standard", "." ],
-  "entity_one_indices" : [ 9, 10 ],
-  "entity_two_indices" : [ 2, 3 ]
-}, {
-  "sentence_tokens" : [ "Prior", "to", "the", "fluorescent", "labeling", "pH", "of", "the", "samples", "were", "checked", "with", "Universal", "Indicator", "paper", "(", "Rota", ";", "VWR", ",", "Poole", ",", "England", ")", "to", "ensure", "that", "all", "are", "in", "the", "range", "of", "pH", ":", "8", "-", "9", "." ],
-  "entity_one_indices" : [ 33, 34 ],
-  "entity_two_indices" : [ 5, 6 ]
-}, {
-  "sentence_tokens" : [ "After", "equilibration", ",", "proteins", "were", "separated", "by", "molecular", "mass", "using", "OmniPAGE", "Mini", "(", "Cleaver", "Scientific", ",", "Rugby", ",", "UK", ")", "vertical", "electrophoresis", "system", "." ],
-  "entity_one_indices" : [ 18, 19 ],
-  "entity_two_indices" : [ 8, 9 ]
-}, {
-  "sentence_tokens" : [ "Preparative", "polyacrylamide", "gels", "for", "spot", "picking", "(", "containing", "500", "mu", "g", "total", "protein", ")", "were", "stained", "with", "colloidal", "Coomassie", "G-250", "(", "Thermo", "Fisher", "Scientific", ",", "Waltham", ",", "MA", ",", "USA", ")", "using", "a", "protocol", "described", "by", "Dyballa", "&", "Metzger", "(", "2009", ")", "." ],
-  "entity_one_indices" : [ 27, 28 ],
-  "entity_two_indices" : [ 1, 2 ]
-}, {
-  "sentence_tokens" : [ "Digested", "samples", "were", "prepared", "to", "mass", "spectrometry", "(", "MS", ")", "in", "the", "same", "way", "as", "described", "by", "Bhide", "et", "al.", "(", "2009", ")", "." ],
-  "entity_one_indices" : [ 8, 9 ],
-  "entity_two_indices" : [ 5, 6 ]
-}, {
-  "sentence_tokens" : [ "Isolated", "RNA", "amounts", "and", "purity", "were", "quantified", "in", "eluent", "using", "a", "NanoDrop", "ND-1000", "spectrophotometer", "(", "Thermo", "Fisher", "Scientific", ",", "Waltham", ",", "MA", ",", "USA", ")", "." ],
-  "entity_one_indices" : [ 21, 22 ],
-  "entity_two_indices" : [ 11, 12, 13, 14 ]
-}, {
-  "sentence_tokens" : [ "The", "alpha-actin", "(", "smooth", "muscle", "type", ")", "is", "the", "building", "element", "of", "thin", "filaments", "." ],
-  "entity_one_indices" : [ 5, 6 ],
-  "entity_two_indices" : [ 1, 2 ]
-}, {
-  "sentence_tokens" : [ "The", "beta-", "and", "gamma-actins", "(", "cytoplasm", "types", ")", "are", "present", "in", "most", "of", "eukaryote", "cells", "and", "takes", "part", "in", "the", "cytoskeleton", "assembly", "." ],
-  "entity_one_indices" : [ 3, 4 ],
-  "entity_two_indices" : [ 1, 2 ]
-}, {
-  "sentence_tokens" : [ "The", "smooth", "muscle", "type", "actin", "can", "be", "found", "in", "the", "chicken", "small", "intestine", "smooth", "muscle", "layer", ",", "where", "it", "is", "responsible", "to", "maintain", "the", "small", "intestine", "motility", "(", "Dehkordi", ",", "Baghai", "&", "Rahimi", ",", "2016", ")", "." ],
-  "entity_one_indices" : [ 4, 5 ],
-  "entity_two_indices" : [ 3, 4 ]
-}, {
-  "sentence_tokens" : [ "In", "our", "experiment", "both", "smooth", "muscle", "and", "cytoplasmic", "type", "actin", "showed", "increased", "expression", "by", "9.97-", "and", "2.05-fold", ",", "respectively", ",", "in", "the", "fasted", "group", "." ],
-  "entity_one_indices" : [ 9, 10 ],
-  "entity_two_indices" : [ 8, 9 ]
-}, {
-  "sentence_tokens" : [ "The", "calcineurin", "homologous", "protein", "1", "(", "CHP1", ")", "has", "calcium-ion", "binding", "properties", "and", "can", "be", "found", "in", "the", "polarized", "cell", "membranes", "(", "like", "the", "intestinal", "epithelium", ")", "." ],
-  "entity_one_indices" : [ 6, 7 ],
-  "entity_two_indices" : [ 1, 2 ]
-}, {
-  "sentence_tokens" : [ "This", "protein", "is", "secreted", "to", "the", "extracellular", "space", "and", "has", "fatty", "acid", "binding", "and", "siderophore", "properties", ",", "which", "suggest", "a", "defensive", "role", "against", "Escherichia", "coli", "and", "Salmonella", "species", "in", "chickens", "(", "Correnti", "et", "al", ".,", "2011", ";", "Rychlik", ",", "Elsheimer-Matulova", "&", "Kyrova", ",", "2014", ")", "." ],
-  "entity_one_indices" : [ 14, 15 ],
-  "entity_two_indices" : [ 10, 11, 12 ]
-}, {
-  "sentence_tokens" : [ "Heat", "shock", "protein", "90", "kDa", "alpha", "class", "A", "member", "1", "." ],
-  "entity_one_indices" : [ 1, 2 ],
-  "entity_two_indices" : [ 0, 1 ]
-}, {
-  "sentence_tokens" : [ "Together", "with", "two", "type", "II", "keratin", "(", "K5", ")", "molecules", ",", "it", "forms", "the", "intermediate", "filaments", "part", "of", "the", "cytoskeleton", "in", "epithelial", "cells", "(", "Hillier", "et", "al", ".,", "2004", ";", "Schweizer", "et", "al", ".,", "2006", ")", "." ],
-  "entity_one_indices" : [ 5, 6 ],
-  "entity_two_indices" : [ 3, 4 ]
-}, {
-  "sentence_tokens" : [ "The", "K14", "was", "already", "identified", "in", "rabbit", "duodenum", "along", "with", "actin", "in", "the", "crypt", "and", "villus", "cells", "and", "seems", "that", "K5/K18", ",", "K7/K17", "and", "the", "K8/K14", "filament", "pairs", "are", "the", "most", "important", "molecules", "forming", "the", "villus", "structure", "(", "Iwatsuki", "&", "Suda", ",", "2005", ",", "2010", ")", "in", "these", "tissues", "." ],
-  "entity_one_indices" : [ 26, 27 ],
-  "entity_two_indices" : [ 10, 11 ]
-}, {
-  "sentence_tokens" : [ "In", "the", "mouse", "kidney", "and", "sheep", "rumen", "epithelial", "cells", "MAGT1", "expression", "is", "known", "to", "be", "altered", "in", "response", "to", "changing", "extracellular", "magnesium", "concentrations", "(", "Goytain", "&", "Quamme", ",", "2005", ")", "." ],
-  "entity_one_indices" : [ 21, 22 ],
-  "entity_two_indices" : [ 9, 10 ]
-}, {
-  "sentence_tokens" : [ "Tropomyosin", "can", "be", "found", "in", "muscle", "and", "non", "muscle", "type", "cells", "." ],
-  "entity_one_indices" : [ 9, 10 ],
-  "entity_two_indices" : [ 0, 1 ]
-}, {
-  "sentence_tokens" : [ "In", "non", "muscle", "cells", ",", "tropomyosin", "is", "implicated", "to", "take", "part", "in", "the", "stabilization", "of", "cytoskeleton", "by", "actin", "binding", "and", "regulating", "the", "microfilament", "arrangement", "." ],
-  "entity_one_indices" : [ 17, 18 ],
-  "entity_two_indices" : [ 5, 6 ]
-}, {
-  "sentence_tokens" : [ "A", "2.36-fold", "increase", "in", "tropomyosin", "alpha-1", "(", "TPM1", ")", "level", "was", "observed", "in", "fasted", "groups", "compared", "to", "ad", "libitum", "group", "." ],
-  "entity_one_indices" : [ 7, 8 ],
-  "entity_two_indices" : [ 4, 5 ]
-}, {
-  "sentence_tokens" : [ "Beta-actin", "protein", "level", "was", "increased", "in", "our", "experiment", ",", "however", ",", "not", "at", "mRNA", "level", "which", "might", "be", "at", "connection", "to", "promote", "villus", "remodeling", "or", "might", "be", "a", "result", "of", "an", "increased", "protein", "anabolism", "caused", "by", "fasting", "." ],
-  "entity_one_indices" : [ 32, 33, 34 ],
-  "entity_two_indices" : [ 0, 1, 2 ]
-}, {
-  "sentence_tokens" : [ "We", "hypothesize", "that", "the", "increased", "expression", "of", "these", "proteins", "are", "in", "connection", "with", "the", "previously", "found", "motility", "changes", "caused", "by", "fasting.Avian", "apolipoproteins", "are", "expressed", "in", "numerous", "tissues", "including", "intestine", "(", "Byrnes", "et", "al", ".,", "1987", ";", "Dichlberger", "et", "al", ".,", "2007", ")", "." ],
-  "entity_one_indices" : [ 21, 22 ],
-  "entity_two_indices" : [ 8, 9 ]
-}, {
-  "sentence_tokens" : [ "The", "APOA1", "is", "the", "main", "protein", "constituent", "of", "the", "HDL", "." ],
-  "entity_one_indices" : [ 9, 10 ],
-  "entity_two_indices" : [ 1, 2 ]
-}, {
-  "sentence_tokens" : [ "Its", "function", "is", "to", "transport", "cholesterol", "from", "tissues", "to", "the", "liver", "(", "reverse", "lipid", "transport", ")", "across", "the", "blood", "." ],
-  "entity_one_indices" : [ 13, 14, 15 ],
-  "entity_two_indices" : [ 5, 6 ]
-}, {
-  "sentence_tokens" : [ "After", "1", "day", "long", "fasting", ",", "cholesterol", "content", "in", "the", "chicken", "HDL", "'", "s", "increases", "(", "Peebles", "et", "al", ".,", "2004", ")", "." ],
-  "entity_one_indices" : [ 11, 12 ],
-  "entity_two_indices" : [ 6, 7 ]
-}, {
-  "sentence_tokens" : [ "In", "our", "experiment", ",", "an", "increased", "expression", "of", "APOA1", "might", "be", "related", "to", "the", "increased", "homeostatic", "need", "for", "reverse", "cholesterol", "transport", "triggered", "by", "24", "h", "fasting", "." ],
-  "entity_one_indices" : [ 18, 19, 20, 21 ],
-  "entity_two_indices" : [ 8, 9 ]
-}, {
-  "sentence_tokens" : [ "The", "role", "of", "APOA5", "in", "small", "intestine", "is", "lipid", "uptake", ",", "lipoprotein", "assembly", "and", "secretion", "as", "suggested", "by", "Dichlberger", "et", "al.", "(", "2007", ")", "." ],
-  "entity_one_indices" : [ 11, 12 ],
-  "entity_two_indices" : [ 3, 4 ]
-}, {
-  "sentence_tokens" : [ "APOA5", "is", "also", "a", "potent", "plasma", "triglyceride", "reducer", "." ],
-  "entity_one_indices" : [ 6, 7 ],
-  "entity_two_indices" : [ 0, 1 ]
-}, {
-  "sentence_tokens" : [ "The", "HSP90", "is", "conserved", "from", "bacteria", "to", "vertebrates", "and", "a", "key", "regulator", "of", "protein", "homeostasis", "under", "both", "physiological", "and", "stress", "conditions", "(", "Schopf", ",", "Biebl", "&", "Buchner", ",", "2017", ")", "." ],
-  "entity_one_indices" : [ 14, 15 ],
-  "entity_two_indices" : [ 1, 2 ]
-} ]
+{
+  "regulations" : [ {
+    "sentence_tokens" : [ "Increased", "(", "1.56-fold", ")", "EXFABP", "expression", "may", "be", "required", "to", "stimulate", "cell", "proliferation", ",", "tissue", "repair", "and", "defense", "against", "bacterial", "infection", "in", "case", "of", "altered", "intestinal", "morphology", "after", "fasting", "." ],
+    "event_indices" : [ 4, 5, 6, 7, 8, 9, 10, 11, 12, 13 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 4, 5, 6 ],
+    "controlled_indices" : [ 11, 12, 13 ],
+    "trigger_indices" : [ 10, 11 ],
+    "rule_name" : "Positive_activation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "Overexpression", "of", "APOA1", "gene", "can", "increase", "the", "reverse", "lipid", "transport", "in", "itself", "(", "Zhang", "et", "al", ".,", "2003", ")", "." ],
+    "event_indices" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ],
+    "type" : "Negative_activation",
+    "polarity" : false,
+    "controller_indices" : [ 0, 1, 2, 3 ],
+    "controlled_indices" : [ 8, 9, 10 ],
+    "trigger_indices" : [ 5, 6 ],
+    "rule_name" : "Positive_activation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "The", "chicken", "jejunal", "and", "ileal", "HSP70", "and", "HSP90", "levels", "can", "increase", "in", "response", "to", "heat", "stress", "(", "Varasteh", "et", "al", ".,", "2015", ")", "." ],
+    "event_indices" : [ 7, 8, 9, 10, 11, 12, 13, 14, 15 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 7, 8, 9 ],
+    "controlled_indices" : [ 12, 13, 14, 15 ],
+    "trigger_indices" : [ 10, 11 ],
+    "rule_name" : "Positive_activation_syntax_7_verb",
+    "rule" : null
+  } ],
+  "hardInstances" : [ {
+    "sentence_tokens" : [ "Increased", "(", "1.56-fold", ")", "EXFABP", "expression", "may", "be", "required", "to", "stimulate", "cell", "proliferation", ",", "tissue", "repair", "and", "defense", "against", "bacterial", "infection", "in", "case", "of", "altered", "intestinal", "morphology", "after", "fasting", "." ],
+    "entities_indices" : [ [ 19, 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "chicken", "jejunal", "and", "ileal", "HSP70", "and", "HSP90", "levels", "can", "increase", "in", "response", "to", "heat", "stress", "(", "Varasteh", "et", "al", ".,", "2015", ")", "." ],
+    "entities_indices" : [ [ 5, 6 ] ]
+  } ],
+  "withoutRegulations" : [ {
+    "sentence_tokens" : [ "Electrophoresis", "was", "performed", "on", "100", "x", "100", "x", "1", "mm", ",", "13", "%", "polyacrylamide", "gels", "(", "37.5:1", "acrylamide", ":", "bis-acrylamide", "ratio", ")", "in", "1X", "TGS", "electrophoresis", "buffer", "containing", "25", "mM", "Tris", ",", "192", "mM", "glycine", "and", "0.1", "%", "(", "w/v", ")", "SDS", "." ],
+    "entities_indices" : [ [ 13, 14 ], [ 17, 18 ], [ 24, 25 ], [ 30, 31 ], [ 41, 42 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "HSP90", "can", "be", "found", "in", "every", "eukaryote", "cell", "and", "represents", "4", "-", "6", "%", "of", "total", "protein", "content", "in", "stressed", "cells", "(", "Zuehlke", "et", "al", ".,", "2015", ")", "." ],
+    "entities_indices" : [ [ 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "Total", "RNA", "was", "isolated", "using", "Direct-zol", "TM", "RNA", "MiniPrep", "(", "Zymo", "Research", ",", "Orange", ",", "CA", ",", "USA", ")", "using", "an", "on-column", "DNase", "I", "digestion", "step", "(", "using", "30", "U", "enzyme", "for", "15", "min", ")", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 15, 16 ], [ 22, 23, 24 ], [ 24, 25 ], [ 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "beta-", "and", "gamma-actins", "(", "cytoplasm", "types", ")", "are", "present", "in", "most", "of", "eukaryote", "cells", "and", "takes", "part", "in", "the", "cytoskeleton", "assembly", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "Apolipoprotein", "A1", "and", "A5", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "protein", "concentrations", "of", "the", "lysates", "ranged", "between", "5.32", "and", "11.11", "mu", "g/mu", "l", "(", "Table", "S1", ")", "." ],
+    "entities_indices" : [ [ 11, 12, 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "intermediate", "filament", "keratin", "14", "(", "K14", ")", "belongs", "to", "the", "cytokeratin", "family", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 3, 4, 5 ], [ 11, 12 ], [ 11, 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "mucins", "are", "large", ",", "highly", "glycosylated", "proteins", "." ],
+    "entities_indices" : [ [ 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "Proteins", "encoded", "by", "the", "ACTA2", "and", "TPM1", "genes", "are", "belonging", "to", "the", "complex", "required", "for", "smooth", "muscle", "contraction", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 6, 7 ], [ 15, 16, 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "Morphometric", "measures", "were", "performed", "using", "Photoshop", "CC", "2015", "1.2", "software", "(", "Adobe", "Systems", "Inc", ".,", "San", "Jose", ",", "CA", ",", "USA", ")", "according", "to", "Applegate", "et", "al.", "(", "1999", ")", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 15, 16 ], [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "After", "the", "protein", "precipitation", "and", "centrifugation", "steps", "the", "supernatant", "was", "decanted", "and", "the", "precipitates", "were", "washed", "twice", "to", "ensure", "detergent", "compatibility", "as", "recommended", "by", "the", "kit", "." ],
+    "entities_indices" : [ [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "Both", "smooth", "muscle", "and", "cytoplasmic", "type", "actin", "and", "tropomyosin", "alpha-1", "chain", "showed", "increased", "expression", "in", "the", "fasted", "group", "in", "our", "experiment", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 6, 7 ], [ 8, 9, 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "After", "setting", "a", "1.5-fold", "change", "cut-off", "value", ",", "seventeen", "spots", "showed", "significant", "difference", "in", "intensity", "between", "the", "two", "groups", "(", "Fig.", "2", ")", "and", "sent", "to", "MS", "." ],
+    "entities_indices" : [ [ 26, 27 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "suggests", "a", "local", "catalytic", "role", "for", "APOA5", "in", "reducing", "blood", "plasma", "triglyceride", "level", "by", "activating", "lipoprotein", "lipase", "instead", "of", "lipid", "transport", "through", "circulation", "(", "Hubacek", ",", "2016", ";", "Nilsson", "et", "al", ".,", "2011", ")", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 12, 13 ], [ 16, 17, 18 ], [ 20, 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "Gene", "expression", "of", "APOA5", "rises", "by", "increasing", "glucose", "concentration", "and", "also", "with", "increasing", "fatty", "acid", "concentration", "(", "Guardiola", "et", "al", ".,", "2012", ")", "." ],
+    "entities_indices" : [ [ 0, 1, 2 ], [ 3, 4 ], [ 7, 8 ], [ 13, 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "-", "1.63-fold", "change", "was", "observed", "in", "MUC6", "level", "compared", "to", "the", "control", "group", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "Its", "function", "is", "to", "transport", "cholesterol", "from", "tissues", "to", "the", "liver", "(", "reverse", "lipid", "transport", ")", "across", "the", "blood", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 13, 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "Frozen", "jejunum", "samples", "(", "n", "=", "8,", "from", "each", "group", ")", "were", "crushed", "to", "fine", "powder", "with", "mortar", "and", "pestle", "in", "liquid", "nitrogen", "." ],
+    "entities_indices" : [ [ 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "Mucin-6", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "Gene", "expression", "analysis", "." ],
+    "entities_indices" : [ [ 0, 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "Beta-actin", "protein", "level", "was", "increased", "in", "our", "experiment", ",", "however", ",", "not", "at", "mRNA", "level", "which", "might", "be", "at", "connection", "to", "promote", "villus", "remodeling", "or", "might", "be", "a", "result", "of", "an", "increased", "protein", "anabolism", "caused", "by", "fasting", "." ],
+    "entities_indices" : [ [ 0, 1, 2 ], [ 32, 33, 34 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "apolipoproteins", "are", "lipid", "binding", "proteins", ",", "which", "are", "responsible", "for", "lipid", "transport", "through", "lymph", "and", "blood", "circulation", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 3, 4, 5, 6 ], [ 11, 12, 13 ], [ 16, 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "MALDI-MS", "and", "MALDI-MS/MS", "data", "were", "combined", "(", "BioTools", ";", "Bruker-Daltonics", ")", "to", "search", "a", "non", "redundant", "protein", "database", "(", "Gallus", "gallus", ",", "NCBInr", ")", "using", "Mascot", "software", "(", "Matrix", "Science", ",", "Boston", ",", "USA", ")", "using", "the", "following", "search", "parameters", ":", "peptide", "mass", "fingerprint", "search", ",", "trypsin", "digestion", ",", "unrestricted", "monoisotopic", "mass", "values", ",", "1+", "peptide", "charge", "state", ",", "+/-", "1.2", "peptide", "mass", "tolerance", "and", "with", "at", "maximum", "one", "missed", "cleavages", "sites", "." ],
+    "entities_indices" : [ [ 41, 42 ], [ 42, 43 ], [ 46, 47 ], [ 47, 48 ], [ 51, 52 ], [ 55, 56 ], [ 61, 62 ], [ 62, 63 ] ]
+  }, {
+    "sentence_tokens" : [ "Magnesium", "transporter", "protein", "1", "." ],
+    "entities_indices" : [ [ 0, 1, 2, 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "Extracellular", "fatty", "acid", "binding", "protein", "." ],
+    "entities_indices" : [ [ 1, 2, 3, 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "Isolated", "RNA", "amounts", "and", "purity", "were", "quantified", "in", "eluent", "using", "a", "NanoDrop", "ND-1000", "spectrophotometer", "(", "Thermo", "Fisher", "Scientific", ",", "Waltham", ",", "MA", ",", "USA", ")", "." ],
+    "entities_indices" : [ [ 11, 12, 13, 14 ], [ 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "protein", "is", "secreted", "to", "the", "extracellular", "space", "and", "has", "fatty", "acid", "binding", "and", "siderophore", "properties", ",", "which", "suggest", "a", "defensive", "role", "against", "Escherichia", "coli", "and", "Salmonella", "species", "in", "chickens", "(", "Correnti", "et", "al", ".,", "2011", ";", "Rychlik", ",", "Elsheimer-Matulova", "&", "Kyrova", ",", "2014", ")", "." ],
+    "entities_indices" : [ [ 10, 11, 12 ], [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "smooth", "muscle", "type", "actin", "can", "be", "found", "in", "the", "chicken", "small", "intestine", "smooth", "muscle", "layer", ",", "where", "it", "is", "responsible", "to", "maintain", "the", "small", "intestine", "motility", "(", "Dehkordi", ",", "Baghai", "&", "Rahimi", ",", "2016", ")", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "images", "were", "analyzed", "with", "Delta2D", "4.3", "software", "(", "Decodon", "TM", "GmbH", ",", "Greifswald", ",", "Germany", ")", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "microvilli", ",", "dense", "bundles", "of", "actin", "filaments", "can", "be", "found", ",", "which", "are", "cross", "linked", "with", "villin", "and", "fimbrin", "proteins", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 18, 19 ], [ 20, 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "RNA", "isolation", ",", "reverse", "transcription", ",", "qPCR", "assays", "." ],
+    "entities_indices" : [ [ 3, 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "decrease", "in", "APOA5", "protein", "level", "was", "found", "in", "case", "of", "fasted", "group", "which", "may", "serve", "to", "prevent", "the", "further", "reduction", "of", "plasma", "triglyceride", "content.The", "MUC6", "protein", "is", "a", "gel", "forming", "mucin", "required", "to", "create", "the", "mucosal", "surface", "of", "the", "gastrointestinal", "tract", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 23, 24 ], [ 25, 26 ], [ 31, 32 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "non", "muscle", "cells", ",", "tropomyosin", "is", "implicated", "to", "take", "part", "in", "the", "stabilization", "of", "cytoskeleton", "by", "actin", "binding", "and", "regulating", "the", "microfilament", "arrangement", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "gels", "were", "run", "by", "applying", "90", "V", "until", "samples", "entered", "from", "the", "stacking", "agarose", "gel", "(", "0.5", "%", "agarose", "in", "1", "x", "TGS", ")", "to", "the", "separation", "gel", "and", "then", "180", "V", "until", "the", "tracking", "dye", "reached", "the", "end", "of", "the", "gels", "." ],
+    "entities_indices" : [ [ 14, 15 ], [ 19, 20 ], [ 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "After", "1", "day", "long", "fasting", ",", "cholesterol", "content", "in", "the", "chicken", "HDL", "'", "s", "increases", "(", "Peebles", "et", "al", ".,", "2004", ")", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "HSP90A", "is", "the", "stress", "inducible", "isoform", "of", "HSP90", ",", "while", "HSP90", "beta", "has", "constant", "expression", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 8, 9 ], [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "All", "the", "differentially", "expressed", "proteins", ",", "identified", "by", "MS", ",", "were", "analyzed", "by", "quantitative", "real-time", "PCR", "for", "mRNA", "expression", "." ],
+    "entities_indices" : [ [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "Briefly", ",", "24", "broiler", "type", "(", "Ross", "308", "line", ",", "all", "28-day-old", ")", ",", "chickens", "were", "allocated", "to", "three", "experimental", "groups", "(", "with", "eight", "bird", "and", "group", ")", ",", "namely", "ad", "libitum", "fed", "(", "ad", "libitum", "group", ")", ";", "fasted", "for", "24", "h", "(", "F24h", "group", ")", ";", "fasted", "for", "24", "h", "then", "refed", "for", "2", "h", "(", "F24hRF2h", "group", ")", "." ],
+    "entities_indices" : [ [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "contrast", "with", "mammals", ",", "in", "case", "of", "chicken", "not", "only", "liver", "but", "peripheral", "organs", "also", "take", "part", "in", "lipoprotein", "synthesis", "." ],
+    "entities_indices" : [ [ 19, 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "Isoelectric", "focusing", "was", "conducted", "in", "Protean", "IEF", "Cell", "(", "Bio-Rad", ",", "Hercules", ",", "CA", ",", "USA", ")", "." ],
+    "entities_indices" : [ [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "chicken", "genome", "encodes", "three", "transmembrane", "type", "mucins", "(", "MUC4", ",", "MUC13", ",", "MUC16", ")", "and", "four", "secreting", ",", "gel", "forming", "type", "(", "MUC2", ",", "MUC5AC", ",", "MUC5B", ",", "Mucin-6", "(", "MUC6", ")", ")", "identified", "by", "Lang", ",", "Hansson", "&", "Samuelsson", "(", "2006", ")", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 9, 10 ], [ 11, 12 ], [ 13, 14 ], [ 21, 22 ], [ 23, 24 ], [ 25, 26 ], [ 27, 28 ], [ 29, 30 ], [ 31, 32 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "APOA1", "is", "the", "main", "protein", "constituent", "of", "the", "HDL", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "Bovine", "serum", "albumin", "(", "Sigma-Aldrich", ",", "St.", "Louis", ",", "MO", ",", "USA", ")", "was", "used", "as", "a", "concentration", "standard", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "chicken", "genome", "has", "threefold", "higher", "keratin", "encoding", "gene", "repertoire", "(", "scales", ",", "claws", "and", "feathers", ")", "compared", "to", "mammals", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "Among", "them", "88", "showed", "statistically", "significant", "difference", "between", "two", "experimental", "groups", "(", "ad", "libitum", "fed", "group", "vs.", "fasted", "for", "24", "h", "group", ")", "." ],
+    "entities_indices" : [ [ 20, 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "apolipoprotein", "A5", "(", "APOA5", ")", "is", "presents", "in", "very", "low", "concentrations", "in", "plasma", "compared", "to", "other", "apolipoproteins", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 4, 5 ], [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "other", "identified", "proteins", "(", "EXFABP", ",", "MAGT1", ",", "APOA1", ",", "APOA5", ",", "MUC6", ",", "HSP90A", ")", "might", "show", "increasing", "protein", "amounts", "in", "the", "fasted", "group", "as", "a", "response", "to", "the", "stress", "produced", "by", "the", "fasting", "and", "most", "probably", "have", "protective", "roles", "maintaining", "the", "homeostasis", "during", "fasting", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 7, 8 ], [ 9, 10 ], [ 11, 12 ], [ 13, 14 ], [ 15, 16 ], [ 44, 45 ] ]
+  }, {
+    "sentence_tokens" : [ "Using", "the", "in-gel", "standard", "warping", "strategy", ",", "first", "the", "sample", "images", "(", "Cy3", "-", "Cy5", "channels", ")", "were", "distorted", "to", "the", "standard", "image", "(", "Cy2", "channel", ")", ",", "then", "all", "the", "standard", "images", "to", "a", "selected", "standard", "image", "." ],
+    "entities_indices" : [ [ 12, 13, 14, 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "Feed", "restriction", "can", "cause", "a", "decrease", "in", "APOA1", "expression", "in", "chicken", "liver", "as", "investigated", "by", "Richards", "et", "al.", "(", "2003", ")", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "ACTA2", "was", "highly", "transcribed", "in", "the", "fasted", "group", "with", "similar", "ratio", "both", "at", "mRNA", "and", "protein", "levels", "(", "9.97-", "and", "8.79-fold", ")", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "small", "intestine", "is", "the", "longest", "part", "of", "the", "chicken", "gastrointestinal", "system", "(", "GIT", ")", "." ],
+    "entities_indices" : [ [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "CHP1", "is", "also", "colocalized", "with", "the", "exocytotic", "vesicles", "and", "proposed", "to", "be", "involved", "in", "controlling", "vesicle", "movement", "along", "microtubules", "by", "interacting", "with", "kinesin", "(", "Matsushita", "et", "al", ".,", "2007", ";", "Di", "Sole", "et", "al", ".,", "2012", ")", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 23, 24 ], [ 25, 26, 27, 28, 29, 30 ], [ 31, 32 ] ]
+  }, {
+    "sentence_tokens" : [ "Tissue", "sections", "were", "stained", "with", "hematoxylin", "and", "eosin", "according", "to", "Fischer", "et", "al.", "(", "2008", ")", "and", "digitalized", "with", "a", "Leitz", "Diaplan", "microscope", "(", "Spot", "RT-Slider", ";", "Diagnostic", "Instruments", ",", "Sterling", "Heights", ",", "USA", ")", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "Without", "extracellular", "fatty", "acid", "binding", "protein", "(", "EXFABP", ")", ",", "chicken", "liver", "cells", "show", "dramatic", "reduction", "in", "viability", "and", "differentiation", "ability", "with", "increased", "apoptosis", "(", "Di", "Marco", "et", "al", ".,", "2003", ")", "." ],
+    "entities_indices" : [ [ 2, 3, 4, 5, 6 ], [ 7, 8 ], [ 19, 20 ], [ 23, 24 ], [ 25, 26, 27 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "calcineurin", "homologous", "protein", "1", "(", "CHP1", ")", "has", "calcium-ion", "binding", "properties", "and", "can", "be", "found", "in", "the", "polarized", "cell", "membranes", "(", "like", "the", "intestinal", "epithelium", ")", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "HSP90", "is", "conserved", "from", "bacteria", "to", "vertebrates", "and", "a", "key", "regulator", "of", "protein", "homeostasis", "under", "both", "physiological", "and", "stress", "conditions", "(", "Schopf", ",", "Biebl", "&", "Buchner", ",", "2017", ")", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "magnesium", "transporter", "protein", "1", "(", "MAGT1", ")", "is", "one", "of", "the", "cell", "membrane", "'", "s", "Mg", "channels", ",", "which", "take", "part", "in", "the", "maintaining", "of", "intracellular", "magnesium", "level", "." ],
+    "entities_indices" : [ [ 1, 2, 3, 4, 5 ], [ 6, 7 ], [ 16, 17 ], [ 27, 28 ] ]
+  }, {
+    "sentence_tokens" : [ "Strips", "were", "rehydrated", "by", "passive", "rehydration", "(", "using", "150", "mu", "g", "of", "labeled", "protein", ")", "dissolved", "in", "125", "mu", "l", "rehydration", "buffer", "(", "2", "M", "thiourea", ",", "8", "M", "urea", ",", "2", "%", "CHAPS", ",", "0.2", "%", "(", "v/v", ")", "Bio-Lyte", "4/6", "and", "6/8", "ampholyte", "at", "a", "ratio", "of", "1:2", ",", "0.002", "%", "(", "w/v", ")", "bromophenol", "blue", ")", "for", "16", "h", "at", "room", "temperature", "." ],
+    "entities_indices" : [ [ 25, 26 ], [ 29, 30 ], [ 33, 34 ], [ 56, 57, 58 ] ]
+  }, {
+    "sentence_tokens" : [ "Kamata", "et", "al.", "(", "2018", ")", "also", "found", "increased", "protein", "levels", "of", "several", "structural", "proteins", "(", "e.g", ".,", "actin", ",", "annexin", ",", "collagen", ",", "keratin", ",", "moesin", ")", "in", "the", "peripheral", "organs", "of", "mice", "fasted", "for", "24", "h.", "Keratins", "are", "important", "proteins", "for", "stress", "protection", "in", "the", "colonic", "epithelium", "(", "Asghar", "et", "al", ".,", "2015", ")", "and", "their", "expression", "is", "upregulated", "after", "different", "stress", "sources", "(", "Helenius", "et", "al", ".,", "2016", ")", "." ],
+    "entities_indices" : [ [ 18, 19 ], [ 20, 21 ], [ 22, 23 ], [ 24, 25 ], [ 26, 27 ], [ 33, 34 ] ]
+  }, {
+    "sentence_tokens" : [ "Currently", "there", "is", "a", "lack", "of", "information", "about", "the", "nature", "of", "MAGT1", "in", "birds", ",", "but", "it", "is", "expressed", "in", "every", "mammalian", "tissue", "type", "(", "Zhou", "&", "Clapham", ",", "2009", ")", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 16, 17 ], [ 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "Decreased", "intestinal", "absorption", "area", "limits", "the", "uptake", "capacity", "of", "essential", "nutrients", "for", "optimal", "growth", ",", "thus", "contributes", "to", "decreased", "body", "weight", "at", "slaughter", "age", "and", "increases", "mortality", "during", "the", "growth", "period", "(", "Geyra", ",", "Uni", "&", "Sklan", ",", "2001", ")", "." ],
+    "entities_indices" : [ [ 1, 2, 3 ], [ 19, 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "each", "gel", "50", "mu", "g", "of", "sample", "pool", "(", "a", "mixture", "of", "all", "sample", ",", "for", "normalization", ")", "was", "labeled", "with", "400", "pmol", "of", "Cyanine2", "NHS", "ester", "minimal", "dye", "(", "Lumiprobe", ",", "Hannover", ",", "Germany", ")", "and", "50", "mu", "g", "from", "ad", "libitum", "and", "50", "mu", "g", "from", "F24h", "group", "with", "each", "of", "400", "pmol", "of", "Cyanine3", "or", "Cyanine5", "using", "dye", "swap", "method", "(", "Table", "1", ")", "." ],
+    "entities_indices" : [ [ 26, 27 ], [ 27, 28 ], [ 57, 58 ], [ 59, 60 ], [ 62, 63 ] ]
+  }, {
+    "sentence_tokens" : [ "These", "bundles", "are", "fixed", "to", "the", "cell", "membrane", "with", "myosin-1", "(", "Fath", "&", "Burgess", ",", "1995", ")", "." ],
+    "entities_indices" : [ [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "our", "experiment", "the", "gel", "forming", "MUC6", "protein", "expression", "decreased", "in", "the", "24", "h", "fasted", "group", "compared", "to", "ad", "libitum", "state", ",", "which", "suggest", "a", "connection", "with", "the", "mentioned", "phenomenon", "and", "a", "possible", "decreased", "intestinal", "defense", "function", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "Preparative", "polyacrylamide", "gels", "for", "spot", "picking", "(", "containing", "500", "mu", "g", "total", "protein", ")", "were", "stained", "with", "colloidal", "Coomassie", "G-250", "(", "Thermo", "Fisher", "Scientific", ",", "Waltham", ",", "MA", ",", "USA", ")", "using", "a", "protocol", "described", "by", "Dyballa", "&", "Metzger", "(", "2009", ")", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 27, 28 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "K14", "was", "already", "identified", "in", "rabbit", "duodenum", "along", "with", "actin", "in", "the", "crypt", "and", "villus", "cells", "and", "seems", "that", "K5/K18", ",", "K7/K17", "and", "the", "K8/K14", "filament", "pairs", "are", "the", "most", "important", "molecules", "forming", "the", "villus", "structure", "(", "Iwatsuki", "&", "Suda", ",", "2005", ",", "2010", ")", "in", "these", "tissues", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 26, 27 ] ]
+  }, {
+    "sentence_tokens" : [ "Increased", "expression", "of", "KRT14", "was", "observed", "in", "our", "experiment", "and", "it", "may", "be", "in", "connection", "with", "the", "increased", "stress", "caused", "by", "fasting", "and", "for", "the", "stress", "protection", "of", "villus", "structure.Besides", "changing", "morphologically", "under", "fasting", ",", "motility", "changes", "of", "chicken", "small", "intestine", "were", "also", "observed", "previously", "." ],
+    "entities_indices" : [ [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "Whole", "jejunum", "samples", "(", "eight", "birds", "per", "group", ")", "were", "ground", "in", "liquid", "nitrogen", "using", "a", "mortar", "and", "pestle", "." ],
+    "entities_indices" : [ [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "Tropomyosin", "can", "be", "found", "in", "muscle", "and", "non", "muscle", "type", "cells", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "hypothesize", "that", "the", "increased", "expression", "of", "these", "proteins", "are", "in", "connection", "with", "the", "previously", "found", "motility", "changes", "caused", "by", "fasting.Avian", "apolipoproteins", "are", "expressed", "in", "numerous", "tissues", "including", "intestine", "(", "Byrnes", "et", "al", ".,", "1987", ";", "Dichlberger", "et", "al", ".,", "2007", ")", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "can", "be", "due", "to", "the", "differences", "in", "hatching", "time", "in", "combination", "with", "other", "treatments", "and", "transport", "until", "to", "the", "broiler", "farm", "(", "Willemsen", "et", "al", ".,", "2010", ")", "." ],
+    "entities_indices" : [ [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "Actin", ",", "cytoplasmic", "and", "smooth", "muscle", "type", "(", "ACTB", ",", "ACTA2", ")", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 6, 7 ], [ 8, 9 ], [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "Differential", "proteome", "analyses", "from", "jejunum", "samples", "were", "performed", "using", "two-dimensional", "difference", "gel", "electrophoresis", "followed", "by", "tryptic", "digestion", "and", "protein", "identification", "by", "matrix", "assisted", "laser", "desorption", "and", "ionization", "mass", "spectrometry", "." ],
+    "entities_indices" : [ [ 16, 17 ], [ 27, 28 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "duodenum", "(", "middle", "part", ")", ",", "jejunum", "and", "ileum", "(", "both", "one", "cm", "from", "Meckel", "'", "s", "diverticulum", ")", "samples", "(", "n", "=", "3", "per", "group", ")", "were", "obtained", "from", "the", "three", "experimental", "group", "(", "ad", "libitum", "fed", ",", "F24h", ",", "F24hRF2h", ")", "." ],
+    "entities_indices" : [ [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "Statistical", "analysis", "of", "protein", "spot", "intensities", "and", "qPCR", "data", "was", "performed", "with", "GraphPad", "Prism", "7", "(", "La", "Jolla", ",", "CA", ",", "USA", ")", "software", "using", "two", "sided", ",", "unpaired", "t-test", "." ],
+    "entities_indices" : [ [ 13, 14 ], [ 16, 17 ], [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "Increased", "expression", "of", "HSP90", "in", "the", "chicken", "jejunum", "can", "indicate", "an", "increased", "stress", "at", "the", "cellular", "level", "caused", "by", "24", "fasting", "in", "our", "experiment", "." ],
+    "entities_indices" : [ [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "Keratin", ",", "type", "I", "cytoskeletal", "14", "." ],
+    "entities_indices" : [ [ 0, 1, 2, 3, 4, 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "gene", "MUC6", "showed", "significant", "decrease", "in", "mRNA", "expression", "." ],
+    "entities_indices" : [ [ 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "Reverse", "transcription", "was", "conducted", "using", "500", "ng", "total", "RNA", "with", "qPCRBIO", "cDNA", "Synthesis", "Kit", "(", "PCR", "Biosystems", ",", "London", ",", "UK", ")", "." ],
+    "entities_indices" : [ [ 0, 1, 2 ], [ 12, 13 ], [ 13, 14 ], [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "Low", "voltage", "(", "250", "V", ")", "was", "applied", "for", "20", "min", "and", "then", ",", "the", "voltage", "was", "gradually", "increased", "to", "4,000", "V", "over", "2.5", "h", "and", "maintained", "at", "that", "level", "until", "a", "total", "of", "15,349", "Vh", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 15, 16 ], [ 35, 36 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "role", "of", "APOA5", "in", "small", "intestine", "is", "lipid", "uptake", ",", "lipoprotein", "assembly", "and", "secretion", "as", "suggested", "by", "Dichlberger", "et", "al.", "(", "2007", ")", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "After", "performing", "the", "2D-DIGE", "experiments", ",", "approximately", "541", "spots", "were", "detected", "on", "each", "polyacrylamide", "gel", "(", "Fig.", "1", ")", "." ],
+    "entities_indices" : [ [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "Currently", "no", "results", "can", "be", "found", "in", "the", "scientific", "literature", "investigating", "a", "connection", "between", "increased", "expression", "of", "CHP1", "and", "the", "effect", "of", "fasting", "." ],
+    "entities_indices" : [ [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "All", "the", "identified", "cytoskeletal", "proteins", "(", "ACTA2", ",", "ACTB", ",", "KRT14", ",", "TPM1", ")", "showed", "increased", "expression", "suggesting", "that", "these", "proteins", "might", "be", "the", "most", "important", "ones", "in", "villus", "remodeling", "and", "the", "motility", "alterations", "caused", "by", "fasting", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 8, 9 ], [ 10, 11 ], [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "Digested", "samples", "were", "prepared", "to", "mass", "spectrometry", "(", "MS", ")", "in", "the", "same", "way", "as", "described", "by", "Bhide", "et", "al.", "(", "2009", ")", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "Among", "the", "investigated", "transcripts", ",", "MUC6", "was", "showed", "lower", "expression", ",", "while", "ACTA2", ",", "Keratin", ",", "type", "I", "cytoskeletal", "14", "(", "KRT14", ")", ",", "MAGT1", ",", "TPM1", "and", "CHP1", "showed", "higher", "expression", "(", "P", "<", "0.05", ")", "in", "the", "fasted", "for", "24", "h", "group", "compared", "to", "the", "ad", "libitum", "fed", "group", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 12, 13 ], [ 14, 15, 16, 17, 18, 19, 20 ], [ 21, 22 ], [ 24, 25 ], [ 26, 27 ], [ 28, 29 ], [ 42, 43, 44 ] ]
+  }, {
+    "sentence_tokens" : [ "Tropomyosin", "isoforms", "in", "the", "gastrointestinal", "tract", "are", "known", "to", "be", "responsible", "for", "the", "polarization", "of", "gastrointestinal", "epithelial", "cells", "and", "for", "stress", "fiber", "formation", "(", "Dalby-Payne", ",", "O", "'", "Loughlin", "&", "Gunning", ",", "2003", ")", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "Gene", "expression", "analysis", "." ],
+    "entities_indices" : [ [ 0, 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "total", "of", "1.57-fold", "increase", "was", "observed", "in", "APOA1", "protein", "level", "compared", "to", "ad", "libitum", "state", "." ],
+    "entities_indices" : [ [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "contrast", ",", "expression", "of", "APOA1", "was", "found", "to", "be", "increased", "after", "48", "h", "fasting", "in", "various", "mouse", "tissues", "(", "Kamata", "et", "al", ".,", "2018", ")", "." ],
+    "entities_indices" : [ [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "case", "of", "domestic", "chicken", ",", "the", "expression", "of", "different", "keratin", "types", "in", "the", "jejunum", "are", "currently", "uncharacterized", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "Then", "500", "mu", "l", "cold", "lysis", "buffer", "(", "7", "M", "urea", ",", "2", "M", "thiourea", ",", "4", "%", "CHAPS", ",", "30", "mM", "Tris", ",", "pH", ":", "8.8", ")", "was", "added", "to", "each", "one", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 14, 15 ], [ 18, 19 ], [ 22, 23 ], [ 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "decided", "to", "use", "pH", "range", "five", "to", "eight", "as", "our", "previous", "tests", "showed", "the", "majority", "of", "proteins", "in", "this", "tissue", "can", "be", "detected", "in", "this", "region", "." ],
+    "entities_indices" : [ [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "intestinal", "mucosa", "'", "s", "epithelium", "contains", "the", "brush", "border", "(", "consisting", "of", "microvilli", ")", ",", "which", "further", "increases", "this", "absorptive", "surface.The", "small", "intestinal", "absorptive", "surface", "is", "known", "to", "be", "either", "positively", "or", "negatively", "affected", "by", "various", "factors", ":", "including", "the", "environment", "(", "Santos", "et", "al", ".,", "2015", ";", "Zhang", "et", "al", ".,", "2015", ")", ",", "feed", "supplements", "from", "various", "sources", "(", "Xu", "et", "al", ".,", "2003", ";", "Laudadio", "et", "al", ".,", "2012", ";", "Yang", "et", "al", ".,", "2017", ")", "pathogenic", "microbiota", "and", "mycotoxin", "feed", "contaminants", "(", "Jayaraman", "et", "al", ".,", "2013", ";", "Yu", "et", "al", ".,", "2018", ")", "." ],
+    "entities_indices" : [ [ 83, 84 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "mouse", "kidney", "and", "sheep", "rumen", "epithelial", "cells", "MAGT1", "expression", "is", "known", "to", "be", "altered", "in", "response", "to", "changing", "extracellular", "magnesium", "concentrations", "(", "Goytain", "&", "Quamme", ",", "2005", ")", "." ],
+    "entities_indices" : [ [ 9, 10 ], [ 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "Reference", "gene", "with", "stable", "expression", "(", "TBP", ")", "was", "revealed", "from", "five", "candidates", "(", "Table", "S2", ")", "and", "used", "for", "normalization", "as", "a", "single", "reference", "gene", "as", "suggested", "by", "the", "reference", "gene", "testing", "method", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "Focused", "IPG", "strips", "were", "equilibrated", "for", "10", "min", "at", "50", "rpm", "on", "orbital", "shaker", "(", "Biosan", ",", "Riga", ",", "Latvia", ")", "in", "6", "M", "urea", ",", "20", "%", "(", "v/v", ")", "glycerol", ",", "2", "%", "(", "w/v", ")", "SDS", ",", "50", "mM", "Tris", "pH", ":", "8.8", "and", "2", "%", "(", "w/v", ")", "DTT", "and", "then", "for", "an", "additional", "10", "min", "in", "the", "same", "buffer", "except", "that", "DTT", "was", "replaced", "by", "2.5", "%", "(", "w/v", ")", "iodoacetamide", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 24, 25 ], [ 31, 32 ], [ 38, 39 ], [ 42, 43, 44 ], [ 52, 53 ], [ 66, 67 ] ]
+  }, {
+    "sentence_tokens" : [ "APOA5", "is", "also", "a", "potent", "plasma", "triglyceride", "reducer", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "Calcineurin", "homologous", "protein", "1", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "functions", "of", "the", "differentially", "expressed", "proteins", "indicate", "that", "the", "24", "h", "fasting", "mainly", "affects", "the", "expression", "of", "structural", "proteins", ",", "and", "proteins", "involved", "in", "lipid", "transport", ",", "general", "stress", "response", ",", "and", "intestinal", "defense", "." ],
+    "entities_indices" : [ [ 25, 26, 27 ], [ 29, 30, 31 ] ]
+  }, {
+    "sentence_tokens" : [ "Gel", "images", "were", "recorded", "using", "PharosFX", "Plus", "(", "Bio-Rad", ",", "Hercules", ",", "CA", ",", "USA", ")", "scanner", "with", "external", "laser", "module", "at", "100", "mu", "m", "resolution", "(", "254", "dpi", ")", "using", "Quantity", "One", "29.0", "(", "Bio-Rad", ",", "Hercules", ",", "CA", ",", "USA", ")", "data", "collector", "software", "and", "exported", "as", "16-bit", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 12, 13 ], [ 39, 40 ] ]
+  }, {
+    "sentence_tokens" : [ "Together", "with", "two", "type", "II", "keratin", "(", "K5", ")", "molecules", ",", "it", "forms", "the", "intermediate", "filaments", "part", "of", "the", "cytoskeleton", "in", "epithelial", "cells", "(", "Hillier", "et", "al", ".,", "2004", ";", "Schweizer", "et", "al", ".,", "2006", ")", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "Morphometric", "data", "was", "analyzed", "with", "one-way", "ANOVA", ",", "followed", "by", "Dunn", "'", "s", "post", "hoc", "test", "to", "compare", "every", "mean", "with", "each", "other", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "Powdered", "tissue", "(", "25", "+/-", "2.5", "mg", ")", "was", "lysed", "in", "TRI", "Reagent", "solution", "(", "Thermo", "Fisher", "Scientific", ",", "Waltham", ",", "MA", ",", "USA", ")", ",", "with", "an", "Ultra-Turrax", "T10", "at", "setting", "five", "for", "1", "min", "." ],
+    "entities_indices" : [ [ 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "Chicken", "fasted", "for", "72", "h", "showed", "a", "significant", "villus", "area", "decrease", "together", "with", "decrease", "in", "mucin", "layer", "thickness", "(", "Smirnov", ",", "Sklan", "&", "Uni", ",", "2004", ")", ",", "which", "may", "affect", "intestinal", "function", "and", "defense", "." ],
+    "entities_indices" : [ [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "Intestinal", "content", "was", "flushed", "out", "with", "1", "x", "PBS", "(", "2.7", "mM", "KCl", ",", "1.8", "mM", "KH", "PO", ",", "10", "mM", "Na", "HPO", ",", "137", "mM", "NaCl", ",", "pH", ":", "7.4", ")", "and", "then", "fixed", "in", "10", "%", "neutral", "buffered", "formalin", "solution", "." ],
+    "entities_indices" : [ [ 12, 13 ], [ 16, 17 ], [ 17, 18 ], [ 21, 22, 23 ], [ 26, 27 ], [ 28, 29 ] ]
+  }, {
+    "sentence_tokens" : [ "Tropomyosin", "alpha-1", "chain", "." ],
+    "entities_indices" : [ [ 0, 1, 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "there", ",", "alpha", "actins", "are", "the", "major", "constituent", "of", "the", "contractile", "apparatus", "and", "tropomyosin", "1", "is", "required", "to", "regulate", "the", "calcium", "dependent", "interaction", "of", "actin", "and", "myosin", "during", "muscle", "contraction", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 14, 15, 16 ], [ 21, 22 ], [ 25, 26 ], [ 27, 28 ], [ 29, 30, 31 ] ]
+  }, {
+    "sentence_tokens" : [ "Sample", "concentrations", "were", "interpolated", "from", "a", "standard", "curve", "using", "MARS", "data", "analysis", "software", "3.10", "(", "BMG", "Labtech", ",", "Ortenberg", ",", "Germany", ")", "." ],
+    "entities_indices" : [ [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "alpha-actin", "(", "smooth", "muscle", "type", ")", "is", "the", "building", "element", "of", "thin", "filaments", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "protein", "level", "of", "HSP90", "alpha", "increased", "by", "1.65-fold", "in", "response", "to", "fasting", "." ],
+    "entities_indices" : [ [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "Spots", "were", "detected", ",", "quantified", "and", "normalized", "according", "to", "the", "volume", "ratio", "of", "corresponding", "spots", "detected", "in", "the", "Cy2", "image", "(", "internal", "standard", ")", "using", "the", "in-gel", "standard", "warping", "strategy", "." ],
+    "entities_indices" : [ [ 18, 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "our", "experiment", "both", "smooth", "muscle", "and", "cytoplasmic", "type", "actin", "showed", "increased", "expression", "by", "9.97-", "and", "2.05-fold", ",", "respectively", ",", "in", "the", "fasted", "group", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "Prior", "to", "the", "fluorescent", "labeling", "pH", "of", "the", "samples", "were", "checked", "with", "Universal", "Indicator", "paper", "(", "Rota", ";", "VWR", ",", "Poole", ",", "England", ")", "to", "ensure", "that", "all", "are", "in", "the", "range", "of", "pH", ":", "8", "-", "9", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 33, 34 ] ]
+  }, {
+    "sentence_tokens" : [ "Increased", "expression", "of", "HPS27", "and", "90", "was", "also", "observable", "along", "the", "GIT", "in", "pigs", "fasted", "for", "36", "h", "(", "Lall", "e", "s", "&", "David", ",", "2011", ")", "or", "days", "after", "weaning", "(", "Grongnet", "&", "David", ",", "2003", ")", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 11, 12 ], [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "case", "of", "APOA5", ",", "HSP90AA", ",", "ACTB", ",", "APOA1", ",", "EXFABP", "no", "significant", "difference", "was", "detected", "in", "mRNA", "expression", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 5, 6 ], [ 7, 8 ], [ 9, 10 ], [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "Increase", "in", "its", "expression", "(", "11.07-fold", ")", "maybe", "in", "connection", "with", "the", "lack", "of", "Mg", "in", "the", "chicken", "intestinal", "lumen", "caused", "by", "fasting", "." ],
+    "entities_indices" : [ [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "experiment", "followed", "the", "European", "Union", "principles", "for", "animal", "care", "and", "experimentation", "(", "EC", "Directive", "86/609/EEC", ")", "and", "it", "was", "approved", "by", "the", "local", "Committee", "of", "Animal", "Welfare", ",", "University", "of", "Debrecen", "(", "registration", "number", ":", "DEMAB/12-7/2015", ")", "." ],
+    "entities_indices" : [ [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "Supernatants", "were", "collected", "to", "fresh", "tubes", "and", "the", "protein", "concentration", "was", "determined", "with", "RC", "DC", "Protein", "Assay", "kit", "(", "Bio-Rad", ",", "Hercules", ",", "CA", ",", "USA", ")", "." ],
+    "entities_indices" : [ [ 13, 14, 15 ], [ 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "significant", "source", "of", "blood", "plasma", "APOA1", "is", "the", "intestines", "(", "Glickman", "&", "Green", ",", "1977", ")", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "All", "the", "differentially", "expressed", "proteins", "identified", "by", "MS", ",", "were", "also", "quantified", "by", "qPCR", "at", "mRNA", "level", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "total", "of", "-", "1.54-fold", "decrease", "in", "APOA5", "protein", "was", "recorded", "after", "24", "h", "fasting", "in", "the", "chicken", "jejunum", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "Heat", "shock", "protein", "90", "kDa", "alpha", "class", "A", "member", "1", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "our", "experiment", ",", "an", "increased", "expression", "of", "APOA1", "might", "be", "related", "to", "the", "increased", "homeostatic", "need", "for", "reverse", "cholesterol", "transport", "triggered", "by", "24", "h", "fasting", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 18, 19, 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "found", "a", "2.77-fold", "increase", "in", "CHP1", "levels", "in", "fasted", "broilers", ",", "compared", "to", "ad", "libitum", "fed", "group", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "Glucose", "and", "vitamins", "are", "mainly", "absorbed", "in", "the", "duodenum", ",", "amino", "acids", "in", "the", "jejunum", "and", "fatty", "acids", "in", "the", "distal", "part", "of", "the", "jejunum", "and", "in", "the", "start", "of", "the", "ileum", "(", "Denbow", ",", "2012", ")", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 28, 29 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "2.36-fold", "increase", "in", "tropomyosin", "alpha-1", "(", "TPM1", ")", "level", "was", "observed", "in", "fasted", "groups", "compared", "to", "ad", "libitum", "group", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "Fasting", "can", "cause", "a", "two-fold", "decrease", "in", "plasma", "triglyceride", "level", "in", "chickens", "(", "Peebles", "et", "al", ".,", "2004", ")", "." ],
+    "entities_indices" : [ [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "After", "equilibration", ",", "proteins", "were", "separated", "by", "molecular", "mass", "using", "OmniPAGE", "Mini", "(", "Cleaver", "Scientific", ",", "Rugby", ",", "UK", ")", "vertical", "electrophoresis", "system", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "the", "first", "dimension", ",", "seven", "cm", "immobilized", "linear", "pH", "gradient", "strips", "(", "pH", ":", "5", "-", "8,", "Bio-Rad", ",", "Hercules", ",", "CA", ",", "USA", ")", "were", "used", "." ],
+    "entities_indices" : [ [ 9, 10 ], [ 13, 14 ], [ 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "Increased", "relative", "protein", "level", "of", "cytoskeletal", "beta-actin", "and", "desmin", "can", "be", "found", "in", "pig", "jejunum", "caused", "by", "intrauterine", "growth", "restriction", "(", "Wang", "et", "al", ".,", "2008", ")", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 8, 9 ], [ 17, 18, 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "RNA", "integrity", "was", "checked", "with", "1", "%", "agarose", "gel", "electrophoresis", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "Avian", "apolipoproteins", "are", "expressed", "in", "numerous", "tissues", "including", "brain", ",", "liver", ",", "skeletal", "muscle", ",", "intestine", "(", "Byrnes", "et", "al", ".,", "1987", ";", "Dichlberger", "et", "al", ".,", "2007", ")", "The", "apolipoprotein", "A1", "(", "APOA1", ")", "is", "the", "main", "protein", "constituent", "of", "the", "high-density", "lipoprotein", "(", "HDL", ")", ",", "which", "transport", "cholesterol", "from", "tissues", "to", "the", "liver", "(", "reverse", "lipid", "transport", ")", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 30, 31 ], [ 33, 34 ], [ 42, 43, 44 ], [ 45, 46 ], [ 50, 51 ], [ 58, 59, 60 ] ]
+  }, {
+    "sentence_tokens" : [ "Automated", "analysis", "of", "mass", "data", "was", "performed", "with", "FlexAnalysis", "software", "(", "Bruker-Daltonics", ")", "." ],
+    "entities_indices" : [ [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "According", "to", "their", "biological", "functions", "these", "proteins", "are", "cytoskeletal", "components", ",", "involved", "in", "fatty", "acid", "binding", "and", "transport", ",", "general", "stress", "response", "and", "ion-", "or", "vesicle", "transport", "." ],
+    "entities_indices" : [ [ 13, 14, 15 ], [ 17, 18 ], [ 20, 21, 22 ], [ 25, 26, 27 ] ]
+  } ],
+  "emptySentences" : [ {
+    "sentence_tokens" : [ "Proteomics", "alterations", "in", "chicken", "jejunum", "caused", "by", "24", "h", "fasting", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "small", "intestine", "is", "the", "longest", "part", "of", "the", "chicken", "(", "Gallus", "gallus", ")", "gastrointestinal", "system", "that", "is", "specialized", "for", "nutrient", "absorption", "." ]
+  }, {
+    "sentence_tokens" : [ "It", "is", "known", "that", "decrease", "in", "intestinal", "villi", "area", "or", "height", "in", "early", "age", "can", "cause", "a", "reduction", "in", "essential", "nutrient", "intake", ",", "which", "may", "lead", "to", "delayed", "growth", "and", "consequently", "poorer", "performance", "of", "broiler", "chickens", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "small", "intestinal", "absorptive", "surface", "is", "known", "to", "be", "affected", "by", "various", "factors", ",", "among", "others", "things", "the", "nutritional", "state", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "our", "experiment", ",", "we", "aimed", "to", "investigate", "the", "possible", "protein", "expression", "alterations", "that", "lie", "behind", "the", "villus", "area", "and", "height", "decrease", "caused", "by", "feed", "deprivation", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "total", "of", "24", "chickens", "were", "divided", "into", "three", "groups", ",", "namely", "ad", "libitum", "fed", ",", "fasted", "for", "24", "h", ",", "fasted", "for", "24", "h", "then", "refed", "for", "2", "h." ]
+  }, {
+    "sentence_tokens" : [ "The", "morphometric", "parameters", "were", "also", "measured", "in", "the", "duodenum", ",", "jejunum", "and", "ileum", "tissue", "sections", "using", "image", "analysis", "." ]
+  }, {
+    "sentence_tokens" : [ "Differential", "proteome", "analyses", "from", "jejunum", "samples", "were", "performed", "using", "two-dimensional", "difference", "gel", "electrophoresis", "followed", "by", "tryptic", "digestion", "and", "protein", "identification", "by", "matrix", "assisted", "laser", "desorption", "and", "ionization", "mass", "spectrometry", "." ]
+  }, {
+    "sentence_tokens" : [ "Overall", "541", "protein", "spots", "were", "detected", "after", "2D", "." ]
+  }, {
+    "sentence_tokens" : [ "Among", "them", ",", "eleven", "showed", "1.5-fold", "or", "higher", "significant", "difference", "in", "expression", "and", "were", "successfully", "identified", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "response", "to", "24", "h", "fasting", ",", "the", "expression", "of", "nine", "proteins", "was", "higher", "and", "that", "of", "two", "proteins", "was", "lower", "compared", "to", "the", "ad", "libitum", "fed", "group", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "functions", "of", "the", "differentially", "expressed", "proteins", "indicate", "that", "the", "24", "h", "fasting", "mainly", "affects", "the", "expression", "of", "structural", "proteins", ",", "and", "proteins", "involved", "in", "lipid", "transport", ",", "general", "stress", "response", ",", "and", "intestinal", "defense", "." ]
+  }, {
+    "sentence_tokens" : [ "Introduction", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "small", "intestine", "is", "the", "longest", "part", "of", "the", "chicken", "gastrointestinal", "system", "(", "GIT", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "It", "is", "specialized", "for", "nutrient", "absorption", "and", "can", "be", "divided", "into", "duodenum", ",", "jejunum", "and", "ileum", "." ]
+  }, {
+    "sentence_tokens" : [ "Glucose", "and", "vitamins", "are", "mainly", "absorbed", "in", "the", "duodenum", ",", "amino", "acids", "in", "the", "jejunum", "and", "fatty", "acids", "in", "the", "distal", "part", "of", "the", "jejunum", "and", "in", "the", "start", "of", "the", "ileum", "(", "Denbow", ",", "2012", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "efficient", "nutrient", "absorption", ",", "intestinal", "villi", "are", "required", "to", "increase", "the", "surface", "area", "of", "the", "intestinal", "wall", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "villus", "is", "a", "finger", "like", "projection", "of", "the", "intestinal", "mucosa", ",", "a", "constantly", "regenerating", "structure", "with", "a", "life", "cycle", "of", "4", "days", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "intestinal", "mucosa", "'", "s", "epithelium", "contains", "the", "brush", "border", "(", "consisting", "of", "microvilli", ")", ",", "which", "further", "increases", "this", "absorptive", "surface.The", "small", "intestinal", "absorptive", "surface", "is", "known", "to", "be", "either", "positively", "or", "negatively", "affected", "by", "various", "factors", ":", "including", "the", "environment", "(", "Santos", "et", "al", ".,", "2015", ";", "Zhang", "et", "al", ".,", "2015", ")", ",", "feed", "supplements", "from", "various", "sources", "(", "Xu", "et", "al", ".,", "2003", ";", "Laudadio", "et", "al", ".,", "2012", ";", "Yang", "et", "al", ".,", "2017", ")", "pathogenic", "microbiota", "and", "mycotoxin", "feed", "contaminants", "(", "Jayaraman", "et", "al", ".,", "2013", ";", "Yu", "et", "al", ".,", "2018", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "It", "is", "already", "known", "to", "be", "altered", "by", "different", "nutritional", "conditions", "(", "Yamauchi", ",", "Kamisoyama", "&", "Isshiki", ",", "1996", ";", "Bhanja", "et", "al", ".,", "2009", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Fasting", "can", "cause", "a", "decrease", "in", "the", "villi", "area", ",", "crypt", "number", "and", "depth", ",", "number", "of", "proliferating", "cells", "and", "reduction", "in", "the", "length", "of", "the", "entire", "small", "intestinal", "segment", "." ]
+  }, {
+    "sentence_tokens" : [ "Reports", "have", "shown", "that", "fasting", "hatched", "chicks", "for", "48", "h", "(", "when", "the", "yolk", "sack", "becomes", "empty", ")", "or", "longer", "causes", "a", "decrease", "in", "performance", "later", "in", "life", "(", "Gonzales", "et", "al", ".,", "2003", ";", "Careghi", "et", "al", ".,", "2005", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Decreased", "intestinal", "absorption", "area", "limits", "the", "uptake", "capacity", "of", "essential", "nutrients", "for", "optimal", "growth", ",", "thus", "contributes", "to", "decreased", "body", "weight", "at", "slaughter", "age", "and", "increases", "mortality", "during", "the", "growth", "period", "(", "Geyra", ",", "Uni", "&", "Sklan", ",", "2001", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "These", "results", "suggest", "a", "maximum", "fasting", "of", "24", "h", "after", "hatching", "in", "order", "to", "preserve", "broiler", "performance", "at", "market", "age", "(", "42", "days", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Day", "long", "fasting", "is", "also", "important", "in", "later", "life", "stages", "in", "case", "of", "broiler", "chickens", "to", "improve", "feed", "efficiency", "and", "to", "reduce", "excessive", "abdominal", "fat", "(", "Oyedeji", "&", "Atteh", ",", "2005", ";", "Leeson", "&", "Summers", ",", "2009", ")", "and", "also", "in", "case", "of", "layer", "chickens", "to", "force", "molting", "(", "Berry", ",", "2003", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "It", "is", "also", "became", "evident", "that", "fasting", "can", "cause", "a", "reduction", "in", "the", "intestinal", "absorptive", "surface", "(", "i.e", ".,", "villus", "area", ")", "in", "later", "life", "too", "(", "45", "days", ")", "which", "can", "be", "reversed", "by", "24", "h", "refeeding", "(", "Shamoto", "&", "Yamauchi", ",", "2000", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Currently", "there", "is", "a", "lack", "of", "information", "on", "the", "alterations", "in", "the", "protein", "expression", "that", "lies", "behind", "the", "already", "observed", "small", "intestinal", "morphometric", "changes", "caused", "by", "fasting", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "aimed", "to", "identify", "these", "using", "two-dimensional", "difference", "gel", "electrophoresis", "(", "2D-DIGE", ")", "under", "ad", "libitum", "fed", "and", "fasted", "conditions", "in", "the", "jejunum", "as", "it", "is", "the", "main", "site", "of", "nutrient", "absorption", "in", "chickens", "(", "Denbow", ",", "2012", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Materials", "and", "Methods", "." ]
+  }, {
+    "sentence_tokens" : [ "Ethical", "approval", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "experiment", "followed", "the", "European", "Union", "principles", "for", "animal", "care", "and", "experimentation", "(", "EC", "Directive", "86/609/EEC", ")", "and", "it", "was", "approved", "by", "the", "local", "Committee", "of", "Animal", "Welfare", ",", "University", "of", "Debrecen", "(", "registration", "number", ":", "DEMAB/12-7/2015", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Birds", "and", "experimental", "conditions", "." ]
+  }, {
+    "sentence_tokens" : [ "Experimental", "setting", "was", "the", "same", "as", "described", "in", "Simon", "et", "al.", "(", "2018", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Briefly", ",", "24", "broiler", "type", "(", "Ross", "308", "line", ",", "all", "28-day-old", ")", ",", "chickens", "were", "allocated", "to", "three", "experimental", "groups", "(", "with", "eight", "bird", "and", "group", ")", ",", "namely", "ad", "libitum", "fed", "(", "ad", "libitum", "group", ")", ";", "fasted", "for", "24", "h", "(", "F24h", "group", ")", ";", "fasted", "for", "24", "h", "then", "refed", "for", "2", "h", "(", "F24hRF2h", "group", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Intestine", "morphometric", "analysis", "." ]
+  }, {
+    "sentence_tokens" : [ "All", "chickens", "were", "terminated", "by", "concussion", "as", "recommended", "in", "40/2013", "." ]
+  }, {
+    "sentence_tokens" : [ "(", "II.", "14", "." ]
+  }, {
+    "sentence_tokens" : [ ")", "Hungarian", "act", "about", "animal", "experiments", "." ]
+  }, {
+    "sentence_tokens" : [ "Intestinal", "samples", "were", "collected", "within", "10", "min", "after", "euthanasia", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "duodenum", "(", "middle", "part", ")", ",", "jejunum", "and", "ileum", "(", "both", "one", "cm", "from", "Meckel", "'", "s", "diverticulum", ")", "samples", "(", "n", "=", "3", "per", "group", ")", "were", "obtained", "from", "the", "three", "experimental", "group", "(", "ad", "libitum", "fed", ",", "F24h", ",", "F24hRF2h", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Intestinal", "content", "was", "flushed", "out", "with", "1", "x", "PBS", "(", "2.7", "mM", "KCl", ",", "1.8", "mM", "KH", "PO", ",", "10", "mM", "Na", "HPO", ",", "137", "mM", "NaCl", ",", "pH", ":", "7.4", ")", "and", "then", "fixed", "in", "10", "%", "neutral", "buffered", "formalin", "solution", "." ]
+  }, {
+    "sentence_tokens" : [ "Tissue", "sections", "were", "stained", "with", "hematoxylin", "and", "eosin", "according", "to", "Fischer", "et", "al.", "(", "2008", ")", "and", "digitalized", "with", "a", "Leitz", "Diaplan", "microscope", "(", "Spot", "RT-Slider", ";", "Diagnostic", "Instruments", ",", "Sterling", "Heights", ",", "USA", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Morphometric", "measures", "were", "performed", "using", "Photoshop", "CC", "2015", "1.2", "software", "(", "Adobe", "Systems", "Inc", ".,", "San", "Jose", ",", "CA", ",", "USA", ")", "according", "to", "Applegate", "et", "al.", "(", "1999", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "First", ",", "we", "measured", "the", "scale", "bar", "with", "the", "ruler", "tool", ",", "then", "we", "set", "a", "custom", "measurement", "scale", "(", "510", "px", "=", "one", "mm", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Finally", ",", "the", "depth", "of", "crypts", "(", "depth", "of", "mucosal", "invaginations", "between", "adjacent", "villi", ")", ",", "the", "width", "of", "muscularis", "externa", "and", "the", "area", "and", "height", "of", "villi", "were", "recorded", "(", "25", "technical", "measurement", "on", "each", "tissue", "section", "image", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Protein", "isolation", "and", "fluorescent", "labeling", "." ]
+  }, {
+    "sentence_tokens" : [ "Frozen", "jejunum", "samples", "(", "n", "=", "8,", "from", "each", "group", ")", "were", "crushed", "to", "fine", "powder", "with", "mortar", "and", "pestle", "in", "liquid", "nitrogen", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "total", "of", "50", "mg", "of", "this", "powdered", "sample", "was", "weighed", "with", "an", "analytical", "balance", "in", "tubes", "with", "low", "protein", "affinity", "(", "Low-bind", ";", "Eppendorf", ",", "Hamburg", ",", "Germany", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Then", "500", "mu", "l", "cold", "lysis", "buffer", "(", "7", "M", "urea", ",", "2", "M", "thiourea", ",", "4", "%", "CHAPS", ",", "30", "mM", "Tris", ",", "pH", ":", "8.8", ")", "was", "added", "to", "each", "one", "." ]
+  }, {
+    "sentence_tokens" : [ "Samples", "were", "placed", "on", "ice", "for", "1", "h", "and", "vortexed", "at", "every", "10", "min", "(", "10", "s", "for", "each", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "After", "lysis", ",", "homogenates", "were", "centrifuged", "at", "16,000", "x", "g", "for", "30", "min", "at", "4", "degrees", "C", "(", "Centrifuge", "5810", "R", ";", "Eppendorf", ",", "Hamburg", ",", "Germany", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Supernatants", "were", "collected", "to", "fresh", "tubes", "and", "the", "protein", "concentration", "was", "determined", "with", "RC", "DC", "Protein", "Assay", "kit", "(", "Bio-Rad", ",", "Hercules", ",", "CA", ",", "USA", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "After", "the", "protein", "precipitation", "and", "centrifugation", "steps", "the", "supernatant", "was", "decanted", "and", "the", "precipitates", "were", "washed", "twice", "to", "ensure", "detergent", "compatibility", "as", "recommended", "by", "the", "kit", "." ]
+  }, {
+    "sentence_tokens" : [ "Bovine", "serum", "albumin", "(", "Sigma-Aldrich", ",", "St.", "Louis", ",", "MO", ",", "USA", ")", "was", "used", "as", "a", "concentration", "standard", "." ]
+  }, {
+    "sentence_tokens" : [ "Absorbance", "data", "were", "collected", "with", "a", "SPECTROstar", "Nano", "(", "BMG", "Labtech", ",", "Ortenberg", ",", "Germany", ")", "microplate", "reader", "at", "650", "nm", "." ]
+  }, {
+    "sentence_tokens" : [ "Sample", "concentrations", "were", "interpolated", "from", "a", "standard", "curve", "using", "MARS", "data", "analysis", "software", "3.10", "(", "BMG", "Labtech", ",", "Ortenberg", ",", "Germany", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "protein", "concentrations", "of", "the", "lysates", "ranged", "between", "5.32", "and", "11.11", "mu", "g/mu", "l", "(", "Table", "S1", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Supernatants", "were", "stored", "at", "-", "70", "degrees", "C", "for", "further", "use", "." ]
+  }, {
+    "sentence_tokens" : [ "Prior", "to", "the", "fluorescent", "labeling", "pH", "of", "the", "samples", "were", "checked", "with", "Universal", "Indicator", "paper", "(", "Rota", ";", "VWR", ",", "Poole", ",", "England", ")", "to", "ensure", "that", "all", "are", "in", "the", "range", "of", "pH", ":", "8", "-", "9", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "each", "gel", "50", "mu", "g", "of", "sample", "pool", "(", "a", "mixture", "of", "all", "sample", ",", "for", "normalization", ")", "was", "labeled", "with", "400", "pmol", "of", "Cyanine2", "NHS", "ester", "minimal", "dye", "(", "Lumiprobe", ",", "Hannover", ",", "Germany", ")", "and", "50", "mu", "g", "from", "ad", "libitum", "and", "50", "mu", "g", "from", "F24h", "group", "with", "each", "of", "400", "pmol", "of", "Cyanine3", "or", "Cyanine5", "using", "dye", "swap", "method", "(", "Table", "1", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Labeling", "reactions", "were", "carried", "out", "on", "ice", "for", "30", "min", "in", "dark", "and", "then", "10", "mM", "lysine", "stop", "solution", "was", "added", "to", "each", "reaction", "and", "incubated", "on", "ice", "for", "10", "min", "." ]
+  }, {
+    "sentence_tokens" : [ "Two-dimensional", "difference", "gel", "electrophoresis", "and", "image", "analysis", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "the", "first", "dimension", ",", "seven", "cm", "immobilized", "linear", "pH", "gradient", "strips", "(", "pH", ":", "5", "-", "8,", "Bio-Rad", ",", "Hercules", ",", "CA", ",", "USA", ")", "were", "used", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "decided", "to", "use", "pH", "range", "five", "to", "eight", "as", "our", "previous", "tests", "showed", "the", "majority", "of", "proteins", "in", "this", "tissue", "can", "be", "detected", "in", "this", "region", "." ]
+  }, {
+    "sentence_tokens" : [ "Strips", "were", "rehydrated", "by", "passive", "rehydration", "(", "using", "150", "mu", "g", "of", "labeled", "protein", ")", "dissolved", "in", "125", "mu", "l", "rehydration", "buffer", "(", "2", "M", "thiourea", ",", "8", "M", "urea", ",", "2", "%", "CHAPS", ",", "0.2", "%", "(", "v/v", ")", "Bio-Lyte", "4/6", "and", "6/8", "ampholyte", "at", "a", "ratio", "of", "1:2", ",", "0.002", "%", "(", "w/v", ")", "bromophenol", "blue", ")", "for", "16", "h", "at", "room", "temperature", "." ]
+  }, {
+    "sentence_tokens" : [ "Isoelectric", "focusing", "was", "conducted", "in", "Protean", "IEF", "Cell", "(", "Bio-Rad", ",", "Hercules", ",", "CA", ",", "USA", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Low", "voltage", "(", "250", "V", ")", "was", "applied", "for", "20", "min", "and", "then", ",", "the", "voltage", "was", "gradually", "increased", "to", "4,000", "V", "over", "2.5", "h", "and", "maintained", "at", "that", "level", "until", "a", "total", "of", "15,349", "Vh", "." ]
+  }, {
+    "sentence_tokens" : [ "Focused", "IPG", "strips", "were", "equilibrated", "for", "10", "min", "at", "50", "rpm", "on", "orbital", "shaker", "(", "Biosan", ",", "Riga", ",", "Latvia", ")", "in", "6", "M", "urea", ",", "20", "%", "(", "v/v", ")", "glycerol", ",", "2", "%", "(", "w/v", ")", "SDS", ",", "50", "mM", "Tris", "pH", ":", "8.8", "and", "2", "%", "(", "w/v", ")", "DTT", "and", "then", "for", "an", "additional", "10", "min", "in", "the", "same", "buffer", "except", "that", "DTT", "was", "replaced", "by", "2.5", "%", "(", "w/v", ")", "iodoacetamide", "." ]
+  }, {
+    "sentence_tokens" : [ "After", "equilibration", ",", "proteins", "were", "separated", "by", "molecular", "mass", "using", "OmniPAGE", "Mini", "(", "Cleaver", "Scientific", ",", "Rugby", ",", "UK", ")", "vertical", "electrophoresis", "system", "." ]
+  }, {
+    "sentence_tokens" : [ "Electrophoresis", "was", "performed", "on", "100", "x", "100", "x", "1", "mm", ",", "13", "%", "polyacrylamide", "gels", "(", "37.5:1", "acrylamide", ":", "bis-acrylamide", "ratio", ")", "in", "1X", "TGS", "electrophoresis", "buffer", "containing", "25", "mM", "Tris", ",", "192", "mM", "glycine", "and", "0.1", "%", "(", "w/v", ")", "SDS", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "gels", "were", "run", "by", "applying", "90", "V", "until", "samples", "entered", "from", "the", "stacking", "agarose", "gel", "(", "0.5", "%", "agarose", "in", "1", "x", "TGS", ")", "to", "the", "separation", "gel", "and", "then", "180", "V", "until", "the", "tracking", "dye", "reached", "the", "end", "of", "the", "gels", "." ]
+  }, {
+    "sentence_tokens" : [ "Preparative", "polyacrylamide", "gels", "for", "spot", "picking", "(", "containing", "500", "mu", "g", "total", "protein", ")", "were", "stained", "with", "colloidal", "Coomassie", "G-250", "(", "Thermo", "Fisher", "Scientific", ",", "Waltham", ",", "MA", ",", "USA", ")", "using", "a", "protocol", "described", "by", "Dyballa", "&", "Metzger", "(", "2009", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Gel", "images", "were", "recorded", "using", "PharosFX", "Plus", "(", "Bio-Rad", ",", "Hercules", ",", "CA", ",", "USA", ")", "scanner", "with", "external", "laser", "module", "at", "100", "mu", "m", "resolution", "(", "254", "dpi", ")", "using", "Quantity", "One", "29.0", "(", "Bio-Rad", ",", "Hercules", ",", "CA", ",", "USA", ")", "data", "collector", "software", "and", "exported", "as", "16-bit", "." ]
+  }, {
+    "sentence_tokens" : [ "tif", "files", "(", "Fig.", "S1", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "images", "were", "analyzed", "with", "Delta2D", "4.3", "software", "(", "Decodon", "TM", "GmbH", ",", "Greifswald", ",", "Germany", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Spots", "were", "detected", ",", "quantified", "and", "normalized", "according", "to", "the", "volume", "ratio", "of", "corresponding", "spots", "detected", "in", "the", "Cy2", "image", "(", "internal", "standard", ")", "using", "the", "in-gel", "standard", "warping", "strategy", "." ]
+  }, {
+    "sentence_tokens" : [ "Warping", "is", "necessary", "to", "eliminate", "the", "distortions", "between", "the", "gels", "caused", "by", "the", "run", "to", "run", "differences", "in", "electrophoresis", "in", "order", "for", "proper", "spot", "detection", "." ]
+  }, {
+    "sentence_tokens" : [ "Using", "the", "in-gel", "standard", "warping", "strategy", ",", "first", "the", "sample", "images", "(", "Cy3", "-", "Cy5", "channels", ")", "were", "distorted", "to", "the", "standard", "image", "(", "Cy2", "channel", ")", ",", "then", "all", "the", "standard", "images", "to", "a", "selected", "standard", "image", "." ]
+  }, {
+    "sentence_tokens" : [ "Protein", "identification", "." ]
+  }, {
+    "sentence_tokens" : [ "Spots", "of", "interest", "were", "cut", "out", "from", "the", "Coomassie", "stained", "preparative", "gels", "and", "digested", "according", "to", "Shevchenko", "et", "al.", "(", "2006", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Digested", "samples", "were", "prepared", "to", "mass", "spectrometry", "(", "MS", ")", "in", "the", "same", "way", "as", "described", "by", "Bhide", "et", "al.", "(", "2009", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Matrix", "assisted", "laser", "desorption", "and", "ionization", "(", "MALDI", ")-MS", "data", "were", "obtained", "in", "an", "automated", "analysis", "loop", "(", "Ultraflex", ";", "Bruker-Daltonics", ",", "Leipzig", ",", "Germany", ")", "equipped", "with", "a", "LIFT-MS/MS", "device", "." ]
+  }, {
+    "sentence_tokens" : [ "Spectra", "were", "acquired", "in", "the", "positive-ion", "mode", "at", "50", "Hz", "laser", "frequency", "and", "100", "-", "1,000", "individual", "spectra", "were", "averaged", "." ]
+  }, {
+    "sentence_tokens" : [ "Automated", "analysis", "of", "mass", "data", "was", "performed", "with", "FlexAnalysis", "software", "(", "Bruker-Daltonics", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "MALDI-MS", "and", "MALDI-MS/MS", "data", "were", "combined", "(", "BioTools", ";", "Bruker-Daltonics", ")", "to", "search", "a", "non", "redundant", "protein", "database", "(", "Gallus", "gallus", ",", "NCBInr", ")", "using", "Mascot", "software", "(", "Matrix", "Science", ",", "Boston", ",", "USA", ")", "using", "the", "following", "search", "parameters", ":", "peptide", "mass", "fingerprint", "search", ",", "trypsin", "digestion", ",", "unrestricted", "monoisotopic", "mass", "values", ",", "1+", "peptide", "charge", "state", ",", "+/-", "1.2", "peptide", "mass", "tolerance", "and", "with", "at", "maximum", "one", "missed", "cleavages", "sites", "." ]
+  }, {
+    "sentence_tokens" : [ "RNA", "isolation", ",", "reverse", "transcription", ",", "qPCR", "assays", "." ]
+  }, {
+    "sentence_tokens" : [ "Whole", "jejunum", "samples", "(", "eight", "birds", "per", "group", ")", "were", "ground", "in", "liquid", "nitrogen", "using", "a", "mortar", "and", "pestle", "." ]
+  }, {
+    "sentence_tokens" : [ "Powdered", "tissue", "(", "25", "+/-", "2.5", "mg", ")", "was", "lysed", "in", "TRI", "Reagent", "solution", "(", "Thermo", "Fisher", "Scientific", ",", "Waltham", ",", "MA", ",", "USA", ")", ",", "with", "an", "Ultra-Turrax", "T10", "at", "setting", "five", "for", "1", "min", "." ]
+  }, {
+    "sentence_tokens" : [ "Total", "RNA", "was", "isolated", "using", "Direct-zol", "TM", "RNA", "MiniPrep", "(", "Zymo", "Research", ",", "Orange", ",", "CA", ",", "USA", ")", "using", "an", "on-column", "DNase", "I", "digestion", "step", "(", "using", "30", "U", "enzyme", "for", "15", "min", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Isolated", "RNA", "amounts", "and", "purity", "were", "quantified", "in", "eluent", "using", "a", "NanoDrop", "ND-1000", "spectrophotometer", "(", "Thermo", "Fisher", "Scientific", ",", "Waltham", ",", "MA", ",", "USA", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "RNA", "integrity", "was", "checked", "with", "1", "%", "agarose", "gel", "electrophoresis", "." ]
+  }, {
+    "sentence_tokens" : [ "Reverse", "transcription", "was", "conducted", "using", "500", "ng", "total", "RNA", "with", "qPCRBIO", "cDNA", "Synthesis", "Kit", "(", "PCR", "Biosystems", ",", "London", ",", "UK", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Reaction", "conditions", "were", "as", "recommended", "by", "the", "kit", "'", "s", "manual", "." ]
+  }, {
+    "sentence_tokens" : [ "Prior", "to", "qPCR", ",", "cDNA", "samples", "were", "diluted", "10-fold", ",", "then", "stored", "in", "-", "20", "degrees", "C", "until", "qPCR", "." ]
+  }, {
+    "sentence_tokens" : [ "Assays", "were", "conducted", "as", "described", "by", "Simon", "et", "al.", "(", "2018", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Reference", "gene", "with", "stable", "expression", "(", "TBP", ")", "was", "revealed", "from", "five", "candidates", "(", "Table", "S2", ")", "and", "used", "for", "normalization", "as", "a", "single", "reference", "gene", "as", "suggested", "by", "the", "reference", "gene", "testing", "method", "." ]
+  }, {
+    "sentence_tokens" : [ "Details", "of", "qPCR", "primers", "were", "specified", "in", "Table", "2", "." ]
+  }, {
+    "sentence_tokens" : [ "Statistical", "analysis", "." ]
+  }, {
+    "sentence_tokens" : [ "Statistical", "analysis", "of", "protein", "spot", "intensities", "and", "qPCR", "data", "was", "performed", "with", "GraphPad", "Prism", "7", "(", "La", "Jolla", ",", "CA", ",", "USA", ")", "software", "using", "two", "sided", ",", "unpaired", "t-test", "." ]
+  }, {
+    "sentence_tokens" : [ "Morphometric", "data", "was", "analyzed", "with", "one-way", "ANOVA", ",", "followed", "by", "Dunn", "'", "s", "post", "hoc", "test", "to", "compare", "every", "mean", "with", "each", "other", "." ]
+  }, {
+    "sentence_tokens" : [ "Data", "from", "qPCR", "analysis", "were", "expressed", "as", "group", "means", "normalized", "to", "mRNA", "levels", "of", "ad", "libitum", "fed", "samples", "." ]
+  }, {
+    "sentence_tokens" : [ "Results", "with", "P", "<", "0.05", "were", "considered", "as", "statistically", "significant", "." ]
+  }, {
+    "sentence_tokens" : [ "Results", "." ]
+  }, {
+    "sentence_tokens" : [ "Small", "intestine", "morphology", "." ]
+  }, {
+    "sentence_tokens" : [ "No", "significant", "change", "was", "observed", "between", "the", "groups", "in", "all", "measured", "parameters", "." ]
+  }, {
+    "sentence_tokens" : [ "One", "exception", "was", "the", "ileal", "villus", "area", "of", "the", "birds", "that", "were", "fasted", "for", "24", "h", "then", "refed", "for", "2", "h." ]
+  }, {
+    "sentence_tokens" : [ "In", "that", "case", "a", "significant", "34", "%", "increase", "was", "observed", "compared", "to", "the", "villus", "area", "of", "the", "birds", "in", "the", "ad", "libitum", "fed", "group", "(", "Table", "S3", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Proteome", "analysis", "." ]
+  }, {
+    "sentence_tokens" : [ "After", "performing", "the", "2D-DIGE", "experiments", ",", "approximately", "541", "spots", "were", "detected", "on", "each", "polyacrylamide", "gel", "(", "Fig.", "1", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Among", "them", "88", "showed", "statistically", "significant", "difference", "between", "two", "experimental", "groups", "(", "ad", "libitum", "fed", "group", "vs.", "fasted", "for", "24", "h", "group", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "After", "setting", "a", "1.5-fold", "change", "cut-off", "value", ",", "seventeen", "spots", "showed", "significant", "difference", "in", "intensity", "between", "the", "two", "groups", "(", "Fig.", "2", ")", "and", "sent", "to", "MS", "." ]
+  }, {
+    "sentence_tokens" : [ "Finally", ",", "11", "proteins", "were", "identified", "successfully", "(", "Table", "3", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "identified", "proteins", "." ]
+  }, {
+    "sentence_tokens" : [ "Actin", ",", "cytoplasmic", "and", "smooth", "muscle", "type", "(", "ACTB", ",", "ACTA2", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "alpha-actin", "(", "smooth", "muscle", "type", ")", "is", "the", "building", "element", "of", "thin", "filaments", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "beta-", "and", "gamma-actins", "(", "cytoplasm", "types", ")", "are", "present", "in", "most", "of", "eukaryote", "cells", "and", "takes", "part", "in", "the", "cytoskeleton", "assembly", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "smooth", "muscle", "type", "actin", "can", "be", "found", "in", "the", "chicken", "small", "intestine", "smooth", "muscle", "layer", ",", "where", "it", "is", "responsible", "to", "maintain", "the", "small", "intestine", "motility", "(", "Dehkordi", ",", "Baghai", "&", "Rahimi", ",", "2016", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "microvilli", ",", "dense", "bundles", "of", "actin", "filaments", "can", "be", "found", ",", "which", "are", "cross", "linked", "with", "villin", "and", "fimbrin", "proteins", "." ]
+  }, {
+    "sentence_tokens" : [ "These", "bundles", "are", "fixed", "to", "the", "cell", "membrane", "with", "myosin-1", "(", "Fath", "&", "Burgess", ",", "1995", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "our", "experiment", "both", "smooth", "muscle", "and", "cytoplasmic", "type", "actin", "showed", "increased", "expression", "by", "9.97-", "and", "2.05-fold", ",", "respectively", ",", "in", "the", "fasted", "group", "." ]
+  }, {
+    "sentence_tokens" : [ "Apolipoprotein", "A1", "and", "A5", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "apolipoproteins", "are", "lipid", "binding", "proteins", ",", "which", "are", "responsible", "for", "lipid", "transport", "through", "lymph", "and", "blood", "circulation", "." ]
+  }, {
+    "sentence_tokens" : [ "Avian", "apolipoproteins", "are", "expressed", "in", "numerous", "tissues", "including", "brain", ",", "liver", ",", "skeletal", "muscle", ",", "intestine", "(", "Byrnes", "et", "al", ".,", "1987", ";", "Dichlberger", "et", "al", ".,", "2007", ")", "The", "apolipoprotein", "A1", "(", "APOA1", ")", "is", "the", "main", "protein", "constituent", "of", "the", "high-density", "lipoprotein", "(", "HDL", ")", ",", "which", "transport", "cholesterol", "from", "tissues", "to", "the", "liver", "(", "reverse", "lipid", "transport", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "total", "of", "1.57-fold", "increase", "was", "observed", "in", "APOA1", "protein", "level", "compared", "to", "ad", "libitum", "state", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "apolipoprotein", "A5", "(", "APOA5", ")", "is", "presents", "in", "very", "low", "concentrations", "in", "plasma", "compared", "to", "other", "apolipoproteins", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "suggests", "a", "local", "catalytic", "role", "for", "APOA5", "in", "reducing", "blood", "plasma", "triglyceride", "level", "by", "activating", "lipoprotein", "lipase", "instead", "of", "lipid", "transport", "through", "circulation", "(", "Hubacek", ",", "2016", ";", "Nilsson", "et", "al", ".,", "2011", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "total", "of", "-", "1.54-fold", "decrease", "in", "APOA5", "protein", "was", "recorded", "after", "24", "h", "fasting", "in", "the", "chicken", "jejunum", "." ]
+  }, {
+    "sentence_tokens" : [ "Calcineurin", "homologous", "protein", "1", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "calcineurin", "homologous", "protein", "1", "(", "CHP1", ")", "has", "calcium-ion", "binding", "properties", "and", "can", "be", "found", "in", "the", "polarized", "cell", "membranes", "(", "like", "the", "intestinal", "epithelium", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "CHP1", "is", "also", "colocalized", "with", "the", "exocytotic", "vesicles", "and", "proposed", "to", "be", "involved", "in", "controlling", "vesicle", "movement", "along", "microtubules", "by", "interacting", "with", "kinesin", "(", "Matsushita", "et", "al", ".,", "2007", ";", "Di", "Sole", "et", "al", ".,", "2012", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Currently", "no", "results", "can", "be", "found", "in", "the", "scientific", "literature", "investigating", "a", "connection", "between", "increased", "expression", "of", "CHP1", "and", "the", "effect", "of", "fasting", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "found", "a", "2.77-fold", "increase", "in", "CHP1", "levels", "in", "fasted", "broilers", ",", "compared", "to", "ad", "libitum", "fed", "group", "." ]
+  }, {
+    "sentence_tokens" : [ "Extracellular", "fatty", "acid", "binding", "protein", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "protein", "is", "secreted", "to", "the", "extracellular", "space", "and", "has", "fatty", "acid", "binding", "and", "siderophore", "properties", ",", "which", "suggest", "a", "defensive", "role", "against", "Escherichia", "coli", "and", "Salmonella", "species", "in", "chickens", "(", "Correnti", "et", "al", ".,", "2011", ";", "Rychlik", ",", "Elsheimer-Matulova", "&", "Kyrova", ",", "2014", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Without", "extracellular", "fatty", "acid", "binding", "protein", "(", "EXFABP", ")", ",", "chicken", "liver", "cells", "show", "dramatic", "reduction", "in", "viability", "and", "differentiation", "ability", "with", "increased", "apoptosis", "(", "Di", "Marco", "et", "al", ".,", "2003", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Heat", "shock", "protein", "90", "kDa", "alpha", "class", "A", "member", "1", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "HSP90A", "is", "the", "stress", "inducible", "isoform", "of", "HSP90", ",", "while", "HSP90", "beta", "has", "constant", "expression", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "HSP90", "can", "be", "found", "in", "every", "eukaryote", "cell", "and", "represents", "4", "-", "6", "%", "of", "total", "protein", "content", "in", "stressed", "cells", "(", "Zuehlke", "et", "al", ".,", "2015", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "protein", "level", "of", "HSP90", "alpha", "increased", "by", "1.65-fold", "in", "response", "to", "fasting", "." ]
+  }, {
+    "sentence_tokens" : [ "Keratin", ",", "type", "I", "cytoskeletal", "14", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "chicken", "genome", "has", "threefold", "higher", "keratin", "encoding", "gene", "repertoire", "(", "scales", ",", "claws", "and", "feathers", ")", "compared", "to", "mammals", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "intermediate", "filament", "keratin", "14", "(", "K14", ")", "belongs", "to", "the", "cytokeratin", "family", "." ]
+  }, {
+    "sentence_tokens" : [ "Together", "with", "two", "type", "II", "keratin", "(", "K5", ")", "molecules", ",", "it", "forms", "the", "intermediate", "filaments", "part", "of", "the", "cytoskeleton", "in", "epithelial", "cells", "(", "Hillier", "et", "al", ".,", "2004", ";", "Schweizer", "et", "al", ".,", "2006", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "K14", "was", "already", "identified", "in", "rabbit", "duodenum", "along", "with", "actin", "in", "the", "crypt", "and", "villus", "cells", "and", "seems", "that", "K5/K18", ",", "K7/K17", "and", "the", "K8/K14", "filament", "pairs", "are", "the", "most", "important", "molecules", "forming", "the", "villus", "structure", "(", "Iwatsuki", "&", "Suda", ",", "2005", ",", "2010", ")", "in", "these", "tissues", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "case", "of", "domestic", "chicken", ",", "the", "expression", "of", "different", "keratin", "types", "in", "the", "jejunum", "are", "currently", "uncharacterized", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "our", "experiment", "we", "measured", "a", "4.32-fold", "increase", "in", "K14", "expression", "in", "the", "fasted", "group", "." ]
+  }, {
+    "sentence_tokens" : [ "Magnesium", "transporter", "protein", "1", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "magnesium", "transporter", "protein", "1", "(", "MAGT1", ")", "is", "one", "of", "the", "cell", "membrane", "'", "s", "Mg", "channels", ",", "which", "take", "part", "in", "the", "maintaining", "of", "intracellular", "magnesium", "level", "." ]
+  }, {
+    "sentence_tokens" : [ "Currently", "there", "is", "a", "lack", "of", "information", "about", "the", "nature", "of", "MAGT1", "in", "birds", ",", "but", "it", "is", "expressed", "in", "every", "mammalian", "tissue", "type", "(", "Zhou", "&", "Clapham", ",", "2009", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "mouse", "kidney", "and", "sheep", "rumen", "epithelial", "cells", "MAGT1", "expression", "is", "known", "to", "be", "altered", "in", "response", "to", "changing", "extracellular", "magnesium", "concentrations", "(", "Goytain", "&", "Quamme", ",", "2005", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Increase", "in", "its", "expression", "(", "11.07-fold", ")", "maybe", "in", "connection", "with", "the", "lack", "of", "Mg", "in", "the", "chicken", "intestinal", "lumen", "caused", "by", "fasting", "." ]
+  }, {
+    "sentence_tokens" : [ "Mucin-6", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "mucins", "are", "large", ",", "highly", "glycosylated", "proteins", "." ]
+  }, {
+    "sentence_tokens" : [ "These", "proteins", "are", "forming", "the", "mucosal", "surface", "of", "the", "gastrointestinal", "tract", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "mucosal", "layer", "protects", "against", "the", "digestive", "enzymes", "and", "pathogens", "and", "also", "helps", "to", "forward", "the", "intestinal", "content", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "chicken", "genome", "encodes", "three", "transmembrane", "type", "mucins", "(", "MUC4", ",", "MUC13", ",", "MUC16", ")", "and", "four", "secreting", ",", "gel", "forming", "type", "(", "MUC2", ",", "MUC5AC", ",", "MUC5B", ",", "Mucin-6", "(", "MUC6", ")", ")", "identified", "by", "Lang", ",", "Hansson", "&", "Samuelsson", "(", "2006", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "-", "1.63-fold", "change", "was", "observed", "in", "MUC6", "level", "compared", "to", "the", "control", "group", "." ]
+  }, {
+    "sentence_tokens" : [ "Tropomyosin", "alpha-1", "chain", "." ]
+  }, {
+    "sentence_tokens" : [ "Tropomyosin", "can", "be", "found", "in", "muscle", "and", "non", "muscle", "type", "cells", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "non", "muscle", "cells", ",", "tropomyosin", "is", "implicated", "to", "take", "part", "in", "the", "stabilization", "of", "cytoskeleton", "by", "actin", "binding", "and", "regulating", "the", "microfilament", "arrangement", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "case", "of", "chicken", ",", "it", "can", "be", "found", "in", "the", "mucous", "membrane", "of", "the", "small", "intestine", "(", "Xie", ",", "Miyazaki", "&", "Hirabayashi", ",", "1991", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Tropomyosin", "isoforms", "in", "the", "gastrointestinal", "tract", "are", "known", "to", "be", "responsible", "for", "the", "polarization", "of", "gastrointestinal", "epithelial", "cells", "and", "for", "stress", "fiber", "formation", "(", "Dalby-Payne", ",", "O", "'", "Loughlin", "&", "Gunning", ",", "2003", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "2.36-fold", "increase", "in", "tropomyosin", "alpha-1", "(", "TPM1", ")", "level", "was", "observed", "in", "fasted", "groups", "compared", "to", "ad", "libitum", "group", "." ]
+  }, {
+    "sentence_tokens" : [ "Gene", "expression", "analysis", "." ]
+  }, {
+    "sentence_tokens" : [ "All", "the", "differentially", "expressed", "proteins", ",", "identified", "by", "MS", ",", "were", "analyzed", "by", "quantitative", "real-time", "PCR", "for", "mRNA", "expression", "." ]
+  }, {
+    "sentence_tokens" : [ "Results", "are", "shown", "in", "Fig.", "3", "." ]
+  }, {
+    "sentence_tokens" : [ "Among", "the", "investigated", "transcripts", ",", "MUC6", "was", "showed", "lower", "expression", ",", "while", "ACTA2", ",", "Keratin", ",", "type", "I", "cytoskeletal", "14", "(", "KRT14", ")", ",", "MAGT1", ",", "TPM1", "and", "CHP1", "showed", "higher", "expression", "(", "P", "<", "0.05", ")", "in", "the", "fasted", "for", "24", "h", "group", "compared", "to", "the", "ad", "libitum", "fed", "group", "." ]
+  }, {
+    "sentence_tokens" : [ "These", "results", "are", "in", "accordance", "with", "the", "observed", "protein", "level", "changes", "(", "looking", "at", "the", "direction", "of", "changes", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "case", "of", "other", "genes", ",", "no", "significant", "difference", "was", "detected", "in", "their", "mRNA", "expression", "." ]
+  }, {
+    "sentence_tokens" : [ "Discussion", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "broiler", "chicken", "raising", "practice", ",", "it", "is", "commonly", "that", "hatched", "chicks", "have", "a", "delayed", "access", "to", "feed", "and", "water", "for", "up", "to", "72", "h." ]
+  }, {
+    "sentence_tokens" : [ "This", "can", "be", "due", "to", "the", "differences", "in", "hatching", "time", "in", "combination", "with", "other", "treatments", "and", "transport", "until", "to", "the", "broiler", "farm", "(", "Willemsen", "et", "al", ".,", "2010", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "It", "has", "already", "been", "extensively", "studied", "that", "early", "feed", "deprivation", "has", "detrimental", "effects", "on", "the", "development", "and", "later", "performance", "of", "the", "chicks", "at", "the", "market", "age", "(", "Gonzales", "et", "al", ".,", "2003", ";", "Careghi", "et", "al", ".,", "2005", ";", "Bhanja", "et", "al", ".,", "2009", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "These", "are", "surely", "due", "to", "the", "effects", "of", "prolonged", "fasting", "." ]
+  }, {
+    "sentence_tokens" : [ "Fasting", "for", "18", "h", "or", "more", "can", "significantly", "decrease", "the", "villus", "height", "(", "which", "through", "the", "nutrient", "absorption", "occurs", ")", "in", "the", "duodenum", ",", "jejunum", "and", "ileum", "of", "broiler", "chickens", "as", "well", "as", "can", "cause", "a", "decrease", "in", "the", "whole", "small", "intestine", "'", "s", "relative", "weight", "and", "length", "(", "Gonzales", "et", "al", ".,", "2003", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "chicken", "small", "intestine", "is", "the", "main", "site", "for", "nutrient", "uptake", "despite", "little", "being", "known", "about", "its", "proteomic", "alteration", "during", "fasting", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "work", ",", "we", "identified", "several", "proteins", "with", "significantly", "altered", "expression", "in", "the", "chicken", "jejunum", "caused", "by", "24", "h", "long", "fasting.Dunel-Erb", "et", "al.", "(", "2001", ")", "found", "that", "cytoskeleton", "of", "microvilli", "consisting", "of", "microfilaments", "was", "disorganized", "and", "the", "microvilli", "lost", "their", "rigidity", "by", "fasting", "." ]
+  }, {
+    "sentence_tokens" : [ "Increased", "relative", "protein", "level", "of", "cytoskeletal", "beta-actin", "and", "desmin", "can", "be", "found", "in", "pig", "jejunum", "caused", "by", "intrauterine", "growth", "restriction", "(", "Wang", "et", "al", ".,", "2008", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Beta-actin", "protein", "level", "was", "increased", "in", "our", "experiment", ",", "however", ",", "not", "at", "mRNA", "level", "which", "might", "be", "at", "connection", "to", "promote", "villus", "remodeling", "or", "might", "be", "a", "result", "of", "an", "increased", "protein", "anabolism", "caused", "by", "fasting", "." ]
+  }, {
+    "sentence_tokens" : [ "Kamata", "et", "al.", "(", "2018", ")", "also", "found", "increased", "protein", "levels", "of", "several", "structural", "proteins", "(", "e.g", ".,", "actin", ",", "annexin", ",", "collagen", ",", "keratin", ",", "moesin", ")", "in", "the", "peripheral", "organs", "of", "mice", "fasted", "for", "24", "h.", "Keratins", "are", "important", "proteins", "for", "stress", "protection", "in", "the", "colonic", "epithelium", "(", "Asghar", "et", "al", ".,", "2015", ")", "and", "their", "expression", "is", "upregulated", "after", "different", "stress", "sources", "(", "Helenius", "et", "al", ".,", "2016", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Increased", "expression", "of", "KRT14", "was", "observed", "in", "our", "experiment", "and", "it", "may", "be", "in", "connection", "with", "the", "increased", "stress", "caused", "by", "fasting", "and", "for", "the", "stress", "protection", "of", "villus", "structure.Besides", "changing", "morphologically", "under", "fasting", ",", "motility", "changes", "of", "chicken", "small", "intestine", "were", "also", "observed", "previously", "." ]
+  }, {
+    "sentence_tokens" : [ "Reversed", "motility", "can", "occur", "to", "recycle", "nutritive", "material", "between", "the", "gastrointestinal", "segments", "(", "Clench", "&", "Mathias", ",", "1992", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Motility", "changes", "of", "the", "gastrointestinal", "tract", "are", "driven", "by", "smooth", "muscle", "contractions", "." ]
+  }, {
+    "sentence_tokens" : [ "Both", "smooth", "muscle", "and", "cytoplasmic", "type", "actin", "and", "tropomyosin", "alpha-1", "chain", "showed", "increased", "expression", "in", "the", "fasted", "group", "in", "our", "experiment", "." ]
+  }, {
+    "sentence_tokens" : [ "Proteins", "encoded", "by", "the", "ACTA2", "and", "TPM1", "genes", "are", "belonging", "to", "the", "complex", "required", "for", "smooth", "muscle", "contraction", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "there", ",", "alpha", "actins", "are", "the", "major", "constituent", "of", "the", "contractile", "apparatus", "and", "tropomyosin", "1", "is", "required", "to", "regulate", "the", "calcium", "dependent", "interaction", "of", "actin", "and", "myosin", "during", "muscle", "contraction", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "hypothesize", "that", "the", "increased", "expression", "of", "these", "proteins", "are", "in", "connection", "with", "the", "previously", "found", "motility", "changes", "caused", "by", "fasting.Avian", "apolipoproteins", "are", "expressed", "in", "numerous", "tissues", "including", "intestine", "(", "Byrnes", "et", "al", ".,", "1987", ";", "Dichlberger", "et", "al", ".,", "2007", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "APOA1", "is", "the", "main", "protein", "constituent", "of", "the", "HDL", "." ]
+  }, {
+    "sentence_tokens" : [ "Its", "function", "is", "to", "transport", "cholesterol", "from", "tissues", "to", "the", "liver", "(", "reverse", "lipid", "transport", ")", "across", "the", "blood", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "significant", "source", "of", "blood", "plasma", "APOA1", "is", "the", "intestines", "(", "Glickman", "&", "Green", ",", "1977", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "After", "1", "day", "long", "fasting", ",", "cholesterol", "content", "in", "the", "chicken", "HDL", "'", "s", "increases", "(", "Peebles", "et", "al", ".,", "2004", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Feed", "restriction", "can", "cause", "a", "decrease", "in", "APOA1", "expression", "in", "chicken", "liver", "as", "investigated", "by", "Richards", "et", "al.", "(", "2003", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "contrast", ",", "expression", "of", "APOA1", "was", "found", "to", "be", "increased", "after", "48", "h", "fasting", "in", "various", "mouse", "tissues", "(", "Kamata", "et", "al", ".,", "2018", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "our", "experiment", ",", "an", "increased", "expression", "of", "APOA1", "might", "be", "related", "to", "the", "increased", "homeostatic", "need", "for", "reverse", "cholesterol", "transport", "triggered", "by", "24", "h", "fasting", "." ]
+  }, {
+    "sentence_tokens" : [ "Gene", "expression", "of", "APOA5", "rises", "by", "increasing", "glucose", "concentration", "and", "also", "with", "increasing", "fatty", "acid", "concentration", "(", "Guardiola", "et", "al", ".,", "2012", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "contrast", "with", "mammals", ",", "in", "case", "of", "chicken", "not", "only", "liver", "but", "peripheral", "organs", "also", "take", "part", "in", "lipoprotein", "synthesis", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "role", "of", "APOA5", "in", "small", "intestine", "is", "lipid", "uptake", ",", "lipoprotein", "assembly", "and", "secretion", "as", "suggested", "by", "Dichlberger", "et", "al.", "(", "2007", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "APOA5", "is", "also", "a", "potent", "plasma", "triglyceride", "reducer", "." ]
+  }, {
+    "sentence_tokens" : [ "Fasting", "can", "cause", "a", "two-fold", "decrease", "in", "plasma", "triglyceride", "level", "in", "chickens", "(", "Peebles", "et", "al", ".,", "2004", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "decrease", "in", "APOA5", "protein", "level", "was", "found", "in", "case", "of", "fasted", "group", "which", "may", "serve", "to", "prevent", "the", "further", "reduction", "of", "plasma", "triglyceride", "content.The", "MUC6", "protein", "is", "a", "gel", "forming", "mucin", "required", "to", "create", "the", "mucosal", "surface", "of", "the", "gastrointestinal", "tract", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "layer", "protects", "against", "the", "digestive", "enzymes", "and", "pathogens", "and", "also", "helps", "to", "forward", "the", "intestinal", "content", "." ]
+  }, {
+    "sentence_tokens" : [ "Chicken", "fasted", "for", "72", "h", "showed", "a", "significant", "villus", "area", "decrease", "together", "with", "decrease", "in", "mucin", "layer", "thickness", "(", "Smirnov", ",", "Sklan", "&", "Uni", ",", "2004", ")", ",", "which", "may", "affect", "intestinal", "function", "and", "defense", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "our", "experiment", "the", "gel", "forming", "MUC6", "protein", "expression", "decreased", "in", "the", "24", "h", "fasted", "group", "compared", "to", "ad", "libitum", "state", ",", "which", "suggest", "a", "connection", "with", "the", "mentioned", "phenomenon", "and", "a", "possible", "decreased", "intestinal", "defense", "function", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "HSP90", "is", "conserved", "from", "bacteria", "to", "vertebrates", "and", "a", "key", "regulator", "of", "protein", "homeostasis", "under", "both", "physiological", "and", "stress", "conditions", "(", "Schopf", ",", "Biebl", "&", "Buchner", ",", "2017", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Increased", "expression", "of", "HPS27", "and", "90", "was", "also", "observable", "along", "the", "GIT", "in", "pigs", "fasted", "for", "36", "h", "(", "Lall", "e", "s", "&", "David", ",", "2011", ")", "or", "days", "after", "weaning", "(", "Grongnet", "&", "David", ",", "2003", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Increased", "expression", "of", "HSP90", "in", "the", "chicken", "jejunum", "can", "indicate", "an", "increased", "stress", "at", "the", "cellular", "level", "caused", "by", "24", "fasting", "in", "our", "experiment", "." ]
+  }, {
+    "sentence_tokens" : [ "Gene", "expression", "analysis", "." ]
+  }, {
+    "sentence_tokens" : [ "All", "the", "differentially", "expressed", "proteins", "identified", "by", "MS", ",", "were", "also", "quantified", "by", "qPCR", "at", "mRNA", "level", "." ]
+  }, {
+    "sentence_tokens" : [ "Among", "them", "six", "also", "showed", "statistically", "significant", "expression", ",", "compared", "to", "2D-DIGE", "." ]
+  }, {
+    "sentence_tokens" : [ "ACTA2", "was", "highly", "transcribed", "in", "the", "fasted", "group", "with", "similar", "ratio", "both", "at", "mRNA", "and", "protein", "levels", "(", "9.97-", "and", "8.79-fold", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "gene", "MUC6", "showed", "significant", "decrease", "in", "mRNA", "expression", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "case", "of", "APOA5", ",", "HSP90AA", ",", "ACTB", ",", "APOA1", ",", "EXFABP", "no", "significant", "difference", "was", "detected", "in", "mRNA", "expression", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "not", "all", "gene", "showed", "significant", "difference", "compared", "to", "protein", "levels", ",", "but", "the", "direction", "of", "expressional", "changes", "are", "the", "same", "as", "in", "case", "of", "protein", "level", "changes", "." ]
+  }, {
+    "sentence_tokens" : [ "Morphometric", "analysis", "." ]
+  }, {
+    "sentence_tokens" : [ "Morphometric", "analysis", "did", "not", "found", "any", "significant", "changes", "in", "case", "of", "jejunum", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "may", "be", "due", "to", "low", "sample", "number", "in", "our", "case", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "previous", "investigation", "using", "higher", "biological", "replicates", "clearly", "showed", "decrease", "in", "villus", "height", "and", "area", "or", "crypt", "number", "in", "multiple", "cases", "(", "Yamauchi", ",", "Kamisoyama", "&", "Isshiki", ",", "1996", ";", "Geyra", ",", "Uni", "&", "Sklan", ",", "2001", ";", "Gonzales", "et", "al", ".,", "2003", ")", "after", "fasting", "." ]
+  }, {
+    "sentence_tokens" : [ "Conclusions", "." ]
+  }, {
+    "sentence_tokens" : [ "All", "together", "we", "found", "that", "the", "24", "h", "long", "fasting", "affects", "mainly", "the", "level", "of", "structural", "and", "secreted", "proteins", "in", "the", "jejunum", "of", "broiler", "chicken", "." ]
+  }, {
+    "sentence_tokens" : [ "According", "to", "their", "biological", "functions", "these", "proteins", "are", "cytoskeletal", "components", ",", "involved", "in", "fatty", "acid", "binding", "and", "transport", ",", "general", "stress", "response", "and", "ion-", "or", "vesicle", "transport", "." ]
+  }, {
+    "sentence_tokens" : [ "All", "the", "identified", "cytoskeletal", "proteins", "(", "ACTA2", ",", "ACTB", ",", "KRT14", ",", "TPM1", ")", "showed", "increased", "expression", "suggesting", "that", "these", "proteins", "might", "be", "the", "most", "important", "ones", "in", "villus", "remodeling", "and", "the", "motility", "alterations", "caused", "by", "fasting", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "some", "significant", "changes", "were", "observable", "in", "case", "of", "small", "intestine", "morphometric", "parameters", ",", "the", "low", "number", "of", "samples", "measured", "does", "not", "allow", "us", "to", "make", "any", "strong", "conclusions", "linking", "morphometric", "changes", "to", "the", "observed", "proteomics", "alterations", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "other", "identified", "proteins", "(", "EXFABP", ",", "MAGT1", ",", "APOA1", ",", "APOA5", ",", "MUC6", ",", "HSP90A", ")", "might", "show", "increasing", "protein", "amounts", "in", "the", "fasted", "group", "as", "a", "response", "to", "the", "stress", "produced", "by", "the", "fasting", "and", "most", "probably", "have", "protective", "roles", "maintaining", "the", "homeostasis", "during", "fasting", "." ]
+  } ]
+}

@@ -1,55 +1,145 @@
-[ {
-  "sentence_tokens" : [ "In", "the", "following", "April", ",", "a", "3D", "topological", "insulator", "(", "TI", ")", "was", "verified", "in", "Bi", "-", "Sb", "alloy", "[", "2", "]", ",", "triggering", "a", "worldwide", "wave", "of", "searching", "for", "more", "3D", "TI", "materials", "." ],
-  "event_indices" : [ 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 17, 18 ],
-  "controlled_indices" : [ 26, 27 ],
-  "trigger_indices" : [ 23, 24 ],
-  "rule_name" : "Positive_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "In", "the", "following", "April", ",", "a", "3D", "topological", "insulator", "(", "TI", ")", "was", "verified", "in", "Bi", "-", "Sb", "alloy", "[", "2", "]", ",", "triggering", "a", "worldwide", "wave", "of", "searching", "for", "more", "3D", "TI", "materials", "." ],
-  "event_indices" : [ 18, 19, 20, 21, 22, 23, 24, 25, 26, 27 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 18, 19 ],
-  "controlled_indices" : [ 26, 27 ],
-  "trigger_indices" : [ 23, 24 ],
-  "rule_name" : "Positive_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "There", "are", "many", "important", "unsolved", "issues", "remaining", "for", "future", "studies", ",", "such", "as", "MBS", "induced", "spin", "selective", "Andreev", "reflection", ",", "quantized", "conductance", "of", "2e", "/", "h", ",", "the", "Majorana", "interference", "pattern", ",", "and", "non", "Abelian", "statistics", "demonstrated", "in", "a", "Majorana", "braiding", "process", "." ],
-  "event_indices" : [ 13, 14, 15, 16 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 13, 14 ],
-  "controlled_indices" : [ 15, 16 ],
-  "trigger_indices" : [ 14, 15 ],
-  "rule_name" : "Positive_early_activation",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Majorana", "gets", "an", "iron", "twist", "." ],
-  "entity_one_indices" : [ 4, 5 ],
-  "entity_two_indices" : [ 3, 4 ]
-}, {
-  "sentence_tokens" : [ "An", "ingenious", "idea", "was", "proposed", "by", "Fu", "and", "Kane", "[", "3", "]", "for", "creating", "self-conjugate", "Majorana", "bound", "states", "(", "MBSs", ")", ",", "a", "condensed-matter", "version", "of", "the", "famous", "Majorana", "fermion", ",", "in", "a", "TI/s-wave", "superconductor", "heterostructure", ",", "which", "is", "much", "easier", "to", "realize", "in", "experiments", "than", "the", "previously", "proposed", "p-wave", "superconductor", "platform", "." ],
-  "entity_one_indices" : [ 29, 30 ],
-  "entity_two_indices" : [ 6, 7 ]
-}, {
-  "sentence_tokens" : [ "Several", "material", "platforms", "were", "proposed", "to", "harbor", "MBSs", "in", "the", "early", "days", ",", "such", "as", "intrinsic", "p-wave", "superconductors", ",", "and", "multiple", "heterostructures", "combining", "strong", "spin", "-", "orbit", "coupling", "(", "SOC", ")", "and", "superconductivity", "." ],
-  "entity_one_indices" : [ 29, 30 ],
-  "entity_two_indices" : [ 24, 25 ]
-}, {
-  "sentence_tokens" : [ "The", "rare", "nature", "and", "heterostructure", "of", "those", "platforms", "caused", "difficult", "conditions", "for", "observing", "and", "manipulating", "MBSs", ",", "such", "as", "complicated", "device", "structure", ",", "low", "T", ",", "and", "strong", "quasiparticle", "poisoning", "largely", "due", "to", "the", "small", "ratio", "between", "the", "superconducting", "gap", "(", "Delta", ")", "and", "the", "Fermi", "energy", "(", "E", ")", "." ],
-  "entity_one_indices" : [ 41, 42 ],
-  "entity_two_indices" : [ 29, 30 ]
-}, {
-  "sentence_tokens" : [ "The", "intensity", "line", "profile", "of", "the", "ZBCPs", "was", "reproduced", "very", "well", "by", "a", "theoretical", "Majorana", "wave", "function", "with", "the", "parameters", "extracted", "from", "the", "experimental", "values", "of", "the", "Dirac", "surface", "state", "." ],
-  "entity_one_indices" : [ 15, 16 ],
-  "entity_two_indices" : [ 6, 7 ]
-}, {
-  "sentence_tokens" : [ "Another", "puzzle", "that", "needs", "to", "be", "resolved", "is", "the", "absence", "of", "MBS", "on", "many", "vortices", "in", "FeTe", "Se", "[", "5", "]", "." ],
-  "entity_one_indices" : [ 17, 18 ],
-  "entity_two_indices" : [ 11, 12 ]
-} ]
+{
+  "regulations" : [ {
+    "sentence_tokens" : [ "In", "the", "following", "April", ",", "a", "3D", "topological", "insulator", "(", "TI", ")", "was", "verified", "in", "Bi", "-", "Sb", "alloy", "[", "2", "]", ",", "triggering", "a", "worldwide", "wave", "of", "searching", "for", "more", "3D", "TI", "materials", "." ],
+    "event_indices" : [ 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 17, 18 ],
+    "controlled_indices" : [ 26, 27 ],
+    "trigger_indices" : [ 23, 24 ],
+    "rule_name" : "Positive_activation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "In", "the", "following", "April", ",", "a", "3D", "topological", "insulator", "(", "TI", ")", "was", "verified", "in", "Bi", "-", "Sb", "alloy", "[", "2", "]", ",", "triggering", "a", "worldwide", "wave", "of", "searching", "for", "more", "3D", "TI", "materials", "." ],
+    "event_indices" : [ 18, 19, 20, 21, 22, 23, 24, 25, 26, 27 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 18, 19 ],
+    "controlled_indices" : [ 26, 27 ],
+    "trigger_indices" : [ 23, 24 ],
+    "rule_name" : "Positive_activation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "There", "are", "many", "important", "unsolved", "issues", "remaining", "for", "future", "studies", ",", "such", "as", "MBS", "induced", "spin", "selective", "Andreev", "reflection", ",", "quantized", "conductance", "of", "2e", "/", "h", ",", "the", "Majorana", "interference", "pattern", ",", "and", "non", "Abelian", "statistics", "demonstrated", "in", "a", "Majorana", "braiding", "process", "." ],
+    "event_indices" : [ 13, 14, 15, 16 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 13, 14 ],
+    "controlled_indices" : [ 15, 16 ],
+    "trigger_indices" : [ 14, 15 ],
+    "rule_name" : "Positive_early_activation",
+    "rule" : null
+  } ],
+  "hardInstances" : [ {
+    "sentence_tokens" : [ "In", "the", "following", "April", ",", "a", "3D", "topological", "insulator", "(", "TI", ")", "was", "verified", "in", "Bi", "-", "Sb", "alloy", "[", "2", "]", ",", "triggering", "a", "worldwide", "wave", "of", "searching", "for", "more", "3D", "TI", "materials", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 6, 7 ], [ 10, 11 ], [ 18, 19 ], [ 31, 32 ], [ 32, 33 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "following", "April", ",", "a", "3D", "topological", "insulator", "(", "TI", ")", "was", "verified", "in", "Bi", "-", "Sb", "alloy", "[", "2", "]", ",", "triggering", "a", "worldwide", "wave", "of", "searching", "for", "more", "3D", "TI", "materials", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 6, 7 ], [ 10, 11 ], [ 17, 18 ], [ 31, 32 ], [ 32, 33 ] ]
+  }, {
+    "sentence_tokens" : [ "There", "are", "many", "important", "unsolved", "issues", "remaining", "for", "future", "studies", ",", "such", "as", "MBS", "induced", "spin", "selective", "Andreev", "reflection", ",", "quantized", "conductance", "of", "2e", "/", "h", ",", "the", "Majorana", "interference", "pattern", ",", "and", "non", "Abelian", "statistics", "demonstrated", "in", "a", "Majorana", "braiding", "process", "." ],
+    "entities_indices" : [ [ 17, 18 ] ]
+  } ],
+  "withoutRegulations" : [ {
+    "sentence_tokens" : [ "Majorana", "gets", "an", "iron", "twist", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "An", "ingenious", "idea", "was", "proposed", "by", "Fu", "and", "Kane", "[", "3", "]", "for", "creating", "self-conjugate", "Majorana", "bound", "states", "(", "MBSs", ")", ",", "a", "condensed-matter", "version", "of", "the", "famous", "Majorana", "fermion", ",", "in", "a", "TI/s-wave", "superconductor", "heterostructure", ",", "which", "is", "much", "easier", "to", "realize", "in", "experiments", "than", "the", "previously", "proposed", "p-wave", "superconductor", "platform", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 29, 30 ] ]
+  }, {
+    "sentence_tokens" : [ "Recently", ",", "two", "papers", "published", "in", "Science", ",", "reporting", "observations", "of", "superconducting", "topological", "surface", "states", "[", "4", "]", "and", "MBSs", "[", "5", "]", "in", "FeTe", "Se", "(", "T", "~", "15", "K", ")", ",", "finally", "realized", "this", "wonder.In", "2014", ",", "the", "novel", "intertwining", "between", "non", "trivial", "band", "topology", "and", "high-T", "superconductivity", "was", "first", "proposed", ",", "although", "not", "verified", "experimentally", ",", "on", "stressed", "monolayer", "FeSe", "[", "6", "]", "." ],
+    "entities_indices" : [ [ 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "successes", "with", "FeTe", "Se", "have", "also", "prompted", "researchers", "to", "pursue", "better", "platforms", "with", "higher", "T", ",", "such", "as", "Fe", "(", "Te", ",", "Se", ")", "monolayer", "[", "10", "]", ",", "Li", "(", "Fe", ",", "Co", ")", "As", "[", "11", "]", ",", "and", "(", "Li", ",", "Fe", ")", "OHFeSe", "[", "12", "]", ",", "further", "strengthening", "the", "miraculous", "marriage", "between", "topology", "and", "high-T", "superconductivity", "in", "FeSCs", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 19, 20 ], [ 21, 22 ], [ 23, 24 ], [ 30, 31 ], [ 32, 33 ], [ 34, 35 ], [ 43, 44 ], [ 45, 46 ] ]
+  }, {
+    "sentence_tokens" : [ "More", "remarkably", ",", "this", "Dirac", "surface", "band", "opens", "a", "reasonably", "sized", "superconducting", "gap", "below", "the", "bulk", "T", ",", "which", "is", "identical", "to", "the", "interfacial", "state", "in", "the", "Fu", "-", "Kane", "model", "[", "3", "]", ",", "but", "with", "a", "clear", "advantage", "that", "Delta/E", "in", "FeTe", "Se", "is", "much", "larger", "than", "the", "one", "in", "an", "ordinary", "Fu", "-", "Kane", "device.This", "advantage", ",", "which", "would", "separate", "the", "non", "topological", "bound", "states", "from", "the", "MBS", "in", "a", "superconducting", "vortex", "core", ",", "immediately", "motivated", "a", "high-resolution", "STM", "study", "on", "FeTe", "Se", "[", "5", "]", "." ],
+    "entities_indices" : [ [ 27, 28 ], [ 44, 45 ], [ 54, 55 ], [ 70, 71 ], [ 74, 75 ], [ 81, 82 ], [ 85, 86 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "definitive", "evidence", "came", "from", "high-resolution", "spin", "resolved", "ARPES", "in", "2018", "that", "observed", "a", "spin", "-", "momentum", "locking", "pattern", "of", "the", "Dirac", "surface", "band", ",", "a", "hallmark", "of", "a", "topological", "insulator", ",", "in", "FeTe", "Se", "[", "4", "]", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 14, 15 ], [ 16, 17 ], [ 34, 35 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "February", "of", "that", "year", ",", "a", "new", "kind", "of", "high-T", "(", "26", "K", ")", "superconductivity", "was", "reported", "in", "the", "fluorine", "doped", "iron", "based", "superconductor", "(", "FeSC", ")", "La", "[", "O", "F", "]", "FeAs", "[", "1", "]", ",", "starting", "the", "'", "Iron", "Age", "'", "of", "superconductivity", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 20, 21 ], [ 22, 23 ], [ 28, 29 ], [ 41, 42 ], [ 42, 43 ] ]
+  }, {
+    "sentence_tokens" : [ "Its", "full", "width", "at", "half", "maximum", "approaches", "the", "STM", "resolution", "limit", ",", "indicating", "a", "single", "peak", "." ],
+    "entities_indices" : [ [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "Another", "puzzle", "that", "needs", "to", "be", "resolved", "is", "the", "absence", "of", "MBS", "on", "many", "vortices", "in", "FeTe", "Se", "[", "5", "]", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "2015", ",", "angle", "resolved", "photoemission", "spectroscopy", "(", "ARPES", ")", "evidence", "of", "p", "-", "d", "orbital", "inversion", "[", "7", "]", "and", "scanning", "tunneling", "spectroscopy", "(", "STS", ")", "evidence", "of", "iron", "impurity", "zero-bias", "conductance", "peaks", "(", "ZBCPs", ")", "were", "found", "on", "bulk", "crystal", "FeTe", "Se", "[", "8]", ",", "propelling", "to", "the", "fore", "the", "idea", "of", "achievable", "topological", "insulating", "band", "structure", "by", "chemical", "substitution", "in", "a", "bulk", "FeSC", "material", "." ],
+    "entities_indices" : [ [ 25, 26 ], [ 29, 30 ], [ 43, 44 ] ]
+  }, {
+    "sentence_tokens" : [ "Several", "material", "platforms", "were", "proposed", "to", "harbor", "MBSs", "in", "the", "early", "days", ",", "such", "as", "intrinsic", "p-wave", "superconductors", ",", "and", "multiple", "heterostructures", "combining", "strong", "spin", "-", "orbit", "coupling", "(", "SOC", ")", "and", "superconductivity", "." ],
+    "entities_indices" : [ [ 24, 25 ], [ 29, 30 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "intensity", "line", "profile", "of", "the", "ZBCPs", "was", "reproduced", "very", "well", "by", "a", "theoretical", "Majorana", "wave", "function", "with", "the", "parameters", "extracted", "from", "the", "experimental", "values", "of", "the", "Dirac", "surface", "state", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "behaviors", "of", "the", "observed", "ZBCPs", "were", "studied", "carefully", "in", "FeTe", "Se", "[", "5", "]", "under", "different", "temperatures", ",", "magnetic", "fields", "and", "tunneling", "barriers", "." ],
+    "entities_indices" : [ [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "topological", "insulator", "phase", "emerges", "around", "the", "zone", "corner", "in", "which", "a", "topological", "bulk", "gap", "is", "induced", "by", "a", "combination", "of", "the", "effects", "of", "SOC", "and", "substrate", "stress", "." ],
+    "entities_indices" : [ [ 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "Although", "the", "MBSs", "in", "the", "vortex", "of", "Fe", "(", "Te", ",", "Se", ")", "are", "purer", "and", "the", "large", "quasiparticle", "gap", "may", "protect", "the", "fermion", "parity", "information", "carried", "by", "a", "pair", "of", "MBSs", "robust", "against", "perturbations", ",", "which", "is", "a", "good", "feature", "required", "by", "fault-tolerant", "quantum", "computing", ",", "a", "realistic", "method", "for", "experimentally", "realizing", "braiding", "for", "MBSs", "in", "vortices", "has", "yet", "to", "be", "proposed.The", "scenario", "of", "MBSs", "in", "a", "vortex", "was", "recently", "put", "forward", "to", "explain", "the", "robust", "ZBCPs", "observed", "on", "iron-impurity", "sites", "of", "FeTe", "Se", ",", "suggesting", "that", "an", "anomalous", "vortex", "core", "is", "induced", "by", "a", "single", "impurity", "without", "an", "extrinsic", "magnetic", "field", "[", "9", "]", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 7, 8 ], [ 9, 10 ], [ 11, 12 ], [ 23, 24 ], [ 68, 69 ], [ 84, 85 ], [ 90, 91 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "rare", "nature", "and", "heterostructure", "of", "those", "platforms", "caused", "difficult", "conditions", "for", "observing", "and", "manipulating", "MBSs", ",", "such", "as", "complicated", "device", "structure", ",", "low", "T", ",", "and", "strong", "quasiparticle", "poisoning", "largely", "due", "to", "the", "small", "ratio", "between", "the", "superconducting", "gap", "(", "Delta", ")", "and", "the", "Fermi", "energy", "(", "E", ")", "." ],
+    "entities_indices" : [ [ 29, 30 ], [ 41, 42 ] ]
+  }, {
+    "sentence_tokens" : [ "An", "additional", "suppression", "mechanism", "of", "the", "ZBCPs", "is", "also", "identified", "by", "temperature", "dependent", "measurements", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "Indeed", ",", "a", "spatial", "non", "split", "ZBCP", "was", "observed", "in", "the", "vortex", "cores", "of", "FeTe", "Se", "[", "5", "]", ",", "which", "is", "a", "fingerprint", "of", "the", "MBS", "(", "Fig.", "1", ")", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 11, 12 ], [ 15, 16 ], [ 26, 27 ] ]
+  } ],
+  "emptySentences" : [ {
+    "sentence_tokens" : [ "Majorana", "gets", "an", "iron", "twist", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "magical", "coincidence", "of", "condensed-matter", "physics", "occurred", "in", "2008", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "February", "of", "that", "year", ",", "a", "new", "kind", "of", "high-T", "(", "26", "K", ")", "superconductivity", "was", "reported", "in", "the", "fluorine", "doped", "iron", "based", "superconductor", "(", "FeSC", ")", "La", "[", "O", "F", "]", "FeAs", "[", "1", "]", ",", "starting", "the", "'", "Iron", "Age", "'", "of", "superconductivity", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "little", "earlier", ",", "in", "that", "March", ",", "a", "new", "hope", "was", "also", "raised", "in", "the", "Majorana", "community", "." ]
+  }, {
+    "sentence_tokens" : [ "An", "ingenious", "idea", "was", "proposed", "by", "Fu", "and", "Kane", "[", "3", "]", "for", "creating", "self-conjugate", "Majorana", "bound", "states", "(", "MBSs", ")", ",", "a", "condensed-matter", "version", "of", "the", "famous", "Majorana", "fermion", ",", "in", "a", "TI/s-wave", "superconductor", "heterostructure", ",", "which", "is", "much", "easier", "to", "realize", "in", "experiments", "than", "the", "previously", "proposed", "p-wave", "superconductor", "platform", "." ]
+  }, {
+    "sentence_tokens" : [ "These", "topics", "soon", "became", "three", "major", "rivers", "in", "condensed-matter", "physics", ",", "and", "they", "come", "together", "with", "the", "recent", "discovery", "of", "topological", "band", "structure", "and", "Majorana", "bound", "states", "in", "a", "simple", "FeSC.This", "new", "development", "was", "partially", "motivated", "by", "the", "perspective", "of", "fault-tolerant", "topological", "quantum", "computing", "based", "on", "non", "Abelian", "statistics", "of", "MBSs", "." ]
+  }, {
+    "sentence_tokens" : [ "Several", "material", "platforms", "were", "proposed", "to", "harbor", "MBSs", "in", "the", "early", "days", ",", "such", "as", "intrinsic", "p-wave", "superconductors", ",", "and", "multiple", "heterostructures", "combining", "strong", "spin", "-", "orbit", "coupling", "(", "SOC", ")", "and", "superconductivity", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "rare", "nature", "and", "heterostructure", "of", "those", "platforms", "caused", "difficult", "conditions", "for", "observing", "and", "manipulating", "MBSs", ",", "such", "as", "complicated", "device", "structure", ",", "low", "T", ",", "and", "strong", "quasiparticle", "poisoning", "largely", "due", "to", "the", "small", "ratio", "between", "the", "superconducting", "gap", "(", "Delta", ")", "and", "the", "Fermi", "energy", "(", "E", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "It", "would", "be", "a", "wonder", "to", "combine", "the", "material", "simplicity", ",", "high", "T", ",", "and", "large", "Delta/E", "ratio", "into", "one", "platform", "." ]
+  }, {
+    "sentence_tokens" : [ "Recently", ",", "two", "papers", "published", "in", "Science", ",", "reporting", "observations", "of", "superconducting", "topological", "surface", "states", "[", "4", "]", "and", "MBSs", "[", "5", "]", "in", "FeTe", "Se", "(", "T", "~", "15", "K", ")", ",", "finally", "realized", "this", "wonder.In", "2014", ",", "the", "novel", "intertwining", "between", "non", "trivial", "band", "topology", "and", "high-T", "superconductivity", "was", "first", "proposed", ",", "although", "not", "verified", "experimentally", ",", "on", "stressed", "monolayer", "FeSe", "[", "6", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "topological", "insulator", "phase", "emerges", "around", "the", "zone", "corner", "in", "which", "a", "topological", "bulk", "gap", "is", "induced", "by", "a", "combination", "of", "the", "effects", "of", "SOC", "and", "substrate", "stress", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "2015", ",", "angle", "resolved", "photoemission", "spectroscopy", "(", "ARPES", ")", "evidence", "of", "p", "-", "d", "orbital", "inversion", "[", "7", "]", "and", "scanning", "tunneling", "spectroscopy", "(", "STS", ")", "evidence", "of", "iron", "impurity", "zero-bias", "conductance", "peaks", "(", "ZBCPs", ")", "were", "found", "on", "bulk", "crystal", "FeTe", "Se", "[", "8]", ",", "propelling", "to", "the", "fore", "the", "idea", "of", "achievable", "topological", "insulating", "band", "structure", "by", "chemical", "substitution", "in", "a", "bulk", "FeSC", "material", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "definitive", "evidence", "came", "from", "high-resolution", "spin", "resolved", "ARPES", "in", "2018", "that", "observed", "a", "spin", "-", "momentum", "locking", "pattern", "of", "the", "Dirac", "surface", "band", ",", "a", "hallmark", "of", "a", "topological", "insulator", ",", "in", "FeTe", "Se", "[", "4", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "More", "remarkably", ",", "this", "Dirac", "surface", "band", "opens", "a", "reasonably", "sized", "superconducting", "gap", "below", "the", "bulk", "T", ",", "which", "is", "identical", "to", "the", "interfacial", "state", "in", "the", "Fu", "-", "Kane", "model", "[", "3", "]", ",", "but", "with", "a", "clear", "advantage", "that", "Delta/E", "in", "FeTe", "Se", "is", "much", "larger", "than", "the", "one", "in", "an", "ordinary", "Fu", "-", "Kane", "device.This", "advantage", ",", "which", "would", "separate", "the", "non", "topological", "bound", "states", "from", "the", "MBS", "in", "a", "superconducting", "vortex", "core", ",", "immediately", "motivated", "a", "high-resolution", "STM", "study", "on", "FeTe", "Se", "[", "5", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Indeed", ",", "a", "spatial", "non", "split", "ZBCP", "was", "observed", "in", "the", "vortex", "cores", "of", "FeTe", "Se", "[", "5", "]", ",", "which", "is", "a", "fingerprint", "of", "the", "MBS", "(", "Fig.", "1", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "behaviors", "of", "the", "observed", "ZBCPs", "were", "studied", "carefully", "in", "FeTe", "Se", "[", "5", "]", "under", "different", "temperatures", ",", "magnetic", "fields", "and", "tunneling", "barriers", "." ]
+  }, {
+    "sentence_tokens" : [ "Its", "full", "width", "at", "half", "maximum", "approaches", "the", "STM", "resolution", "limit", ",", "indicating", "a", "single", "peak", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "intensity", "line", "profile", "of", "the", "ZBCPs", "was", "reproduced", "very", "well", "by", "a", "theoretical", "Majorana", "wave", "function", "with", "the", "parameters", "extracted", "from", "the", "experimental", "values", "of", "the", "Dirac", "surface", "state", "." ]
+  }, {
+    "sentence_tokens" : [ "An", "additional", "suppression", "mechanism", "of", "the", "ZBCPs", "is", "also", "identified", "by", "temperature", "dependent", "measurements", "." ]
+  }, {
+    "sentence_tokens" : [ "Although", "an", "unequivocal", "demonstration", "of", "the", "Majorana", "behavior", "needs", "more", "evidence", ",", "those", "results", "drew", "a", "self-consistent", "picture", "in", "which", "the", "observed", "ZBCPs", "are", "the", "MBSs", "associated", "with", "the", "surface", "Dirac", "electrons.The", "unique", "features", "of", "the", "FeSC", "platform", "for", "Majorana", "research", "have", "attracted", "much", "attention", "from", "the", "community", "." ]
+  }, {
+    "sentence_tokens" : [ "Another", "puzzle", "that", "needs", "to", "be", "resolved", "is", "the", "absence", "of", "MBS", "on", "many", "vortices", "in", "FeTe", "Se", "[", "5", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Although", "the", "MBSs", "in", "the", "vortex", "of", "Fe", "(", "Te", ",", "Se", ")", "are", "purer", "and", "the", "large", "quasiparticle", "gap", "may", "protect", "the", "fermion", "parity", "information", "carried", "by", "a", "pair", "of", "MBSs", "robust", "against", "perturbations", ",", "which", "is", "a", "good", "feature", "required", "by", "fault-tolerant", "quantum", "computing", ",", "a", "realistic", "method", "for", "experimentally", "realizing", "braiding", "for", "MBSs", "in", "vortices", "has", "yet", "to", "be", "proposed.The", "scenario", "of", "MBSs", "in", "a", "vortex", "was", "recently", "put", "forward", "to", "explain", "the", "robust", "ZBCPs", "observed", "on", "iron-impurity", "sites", "of", "FeTe", "Se", ",", "suggesting", "that", "an", "anomalous", "vortex", "core", "is", "induced", "by", "a", "single", "impurity", "without", "an", "extrinsic", "magnetic", "field", "[", "9", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "successes", "with", "FeTe", "Se", "have", "also", "prompted", "researchers", "to", "pursue", "better", "platforms", "with", "higher", "T", ",", "such", "as", "Fe", "(", "Te", ",", "Se", ")", "monolayer", "[", "10", "]", ",", "Li", "(", "Fe", ",", "Co", ")", "As", "[", "11", "]", ",", "and", "(", "Li", ",", "Fe", ")", "OHFeSe", "[", "12", "]", ",", "further", "strengthening", "the", "miraculous", "marriage", "between", "topology", "and", "high-T", "superconductivity", "in", "FeSCs", "." ]
+  } ]
+}

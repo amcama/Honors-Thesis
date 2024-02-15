@@ -1,115 +1,639 @@
-[ {
-  "sentence_tokens" : [ "The", "34", "%", "ethanol", "elution", "fraction", "of", "burdock", "leaf", "significantly", "inhibited", "the", "biofilm", "formation", "of", "Pseudomonas", "aeruginosa", "." ],
-  "event_indices" : [ 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 ],
-  "type" : "Negative_activation",
-  "polarity" : false,
-  "controller_indices" : [ 3, 4 ],
-  "controlled_indices" : [ 12, 13, 14 ],
-  "trigger_indices" : [ 10, 11 ],
-  "rule_name" : "Negative_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "mL", ",", "it", "could", "only", "partly", "inhibit", "biofilm", "formation", "." ],
-  "event_indices" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 ],
-  "type" : "Negative_activation",
-  "polarity" : false,
-  "controller_indices" : [ 0, 1 ],
-  "controlled_indices" : [ 7, 8, 9 ],
-  "trigger_indices" : [ 6, 7 ],
-  "rule_name" : "Negative_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "mL", ",", "it", "could", "only", "partly", "inhibit", "biofilm", "formation", "." ],
-  "event_indices" : [ 2, 3, 4, 5, 6, 7, 8, 9 ],
-  "type" : "Negative_activation",
-  "polarity" : false,
-  "controller_indices" : [ 2, 3 ],
-  "controlled_indices" : [ 7, 8, 9 ],
-  "trigger_indices" : [ 6, 7 ],
-  "rule_name" : "Negative_activation_syntax_1_verb, pronominalMatch",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Honraet", "[", "5", "]", "found", "a", "variety", "of", "plant", "extracts", "significantly", "inhibited", "the", "biofilm", "formation", "of", "Staphylococcus", "aureus", "." ],
-  "event_indices" : [ 8, 9, 10, 11, 12, 13, 14, 15 ],
-  "type" : "Negative_activation",
-  "polarity" : false,
-  "controller_indices" : [ 8, 9, 10 ],
-  "controlled_indices" : [ 13, 14, 15 ],
-  "trigger_indices" : [ 11, 12 ],
-  "rule_name" : "Negative_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "The", "crystal", "violet", "assay", "indicated", "34", "%", "ethanol", "elution", "fraction", "of", "burdock", "leaf", "could", "completely", "inhibit", "biofilm", "formation", "of", "Pseudomonas", "aeruginosa", "at", "1", "mg.mL", "-1", "." ],
-  "event_indices" : [ 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18 ],
-  "type" : "Negative_activation",
-  "polarity" : false,
-  "controller_indices" : [ 7, 8 ],
-  "controlled_indices" : [ 16, 17, 18 ],
-  "trigger_indices" : [ 15, 16 ],
-  "rule_name" : "Negative_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "mL", ",", "the", "formation", "of", "biofilm", "was", "completely", "inhibited", "and", "the", "inhibition", "rate", "on", "biofilm", "formation", "was", "100", "%", "." ],
-  "entity_one_indices" : [ 14, 15, 16 ],
-  "entity_two_indices" : [ 0, 1 ]
-}, {
-  "sentence_tokens" : [ "Peak", "identification", "was", "performed", "by", "comparing", "retention", "times", "(", "t", ")", ",", "UV-Vis", "spectra", "and", "mass", "spectra", "(", "Table", "1", ")", "with", "those", "of", "reference", "standards", "and", "literature", "data.Peak1", "was", "identified", "as", "chlorogenic", "acid", "with", "lambda", "of", "326", "and", "t", "of", "7.62", "." ],
-  "entity_one_indices" : [ 32, 33, 34 ],
-  "entity_two_indices" : [ 15, 16 ]
-}, {
-  "sentence_tokens" : [ "Peak", "2", ",", "with", "the", "t", "of", "8.25", ",", "was", "identified", "as", "caffeic", "acid", "(", "lambda", "324", ")", "and", "the", "[", "M", "-", "H", "]", "peak", "was", "observed", "at", "m/z", "179", "." ],
-  "entity_one_indices" : [ 12, 13, 14 ],
-  "entity_two_indices" : [ 0, 1, 2 ]
-}, {
-  "sentence_tokens" : [ "Peak", "3", "exhibiting", "an", "[", "M", "-", "H", "]", "ion", "at", "m/z", "163", "with", "the", "lambda", "of", "303", "and", "a", "t", "of", "10.90", ",", "was", "identified", "as", "p-coumaric", "acid", "." ],
-  "entity_one_indices" : [ 27, 28, 29 ],
-  "entity_two_indices" : [ 0, 1, 2 ]
-}, {
-  "sentence_tokens" : [ "Peak", "6", ",", "with", "the", "t", "of", "13.51", "and", "lambda", "of", "295", ",", "was", "identified", "as", "cynarin", "and", "the", "[", "M", "-", "H", "]", "peak", "of", "it", "was", "observed", "at", "m/z", "515", "." ],
-  "entity_one_indices" : [ 16, 17 ],
-  "entity_two_indices" : [ 0, 1, 2 ]
-}, {
-  "sentence_tokens" : [ "Peak", "8,", "was", "identified", "as", "quercetin", ",", "with", "the", "t", "of", "14.82", "and", "lambda", "of", "256", ",", "368", "." ],
-  "entity_one_indices" : [ 5, 6 ],
-  "entity_two_indices" : [ 0, 1, 2 ]
-}, {
-  "sentence_tokens" : [ "Peak", "9", ",", "with", "the", "tR", "of", "15.75", ",", "was", "identified", "as", "luteolin", "and", "the", "[", "M", "-", "H", "]", "peak", "was", "observed", "at", "m/z", "285", "." ],
-  "entity_one_indices" : [ 12, 13 ],
-  "entity_two_indices" : [ 5, 6 ]
-}, {
-  "sentence_tokens" : [ "Peak", "11", "yielded", "[", "M", "-", "H", "]", "at", "m/z", "455", ",", "with", "lambda", "of", "210", "and", "t", "of", "21.07", ",", "was", "identified", "as", "ursolic", "acid", "." ],
-  "entity_one_indices" : [ 24, 25, 26 ],
-  "entity_two_indices" : [ 0, 1, 2 ]
-}, {
-  "sentence_tokens" : [ "In", "order", "to", "find", "significant", "differences", "between", "groups", ",", "the", "resulting", "data", "arrays", "were", "used", "afterwards", "for", "multivariate", "statistical", "analysis", ",", "which", "were", "principal", "component", "analysis", "(", "PCA", ")", "and", "Partial", "least", "squares", "discriminant", "analysis", "(", "PLS-DA", ")", "with", "SIMCAP", "+", "11", "software", "package", "[", "27", "]", "." ],
-  "entity_one_indices" : [ 39, 40, 41, 42, 43, 44 ],
-  "entity_two_indices" : [ 27, 28 ]
-}, {
-  "sentence_tokens" : [ "The", "VIP", "value", "of", "each", "variable", "was", "got", "from", "PLS-DA", "score", "plot", ",", "which", "was", "used", "for", "classification", "purposes", "in", "metabolomics", "studies", ",", "and", "to", "indicate", "its", "contribution", "to", "the", "classification", "of", "samples", "." ],
-  "entity_one_indices" : [ 9, 10 ],
-  "entity_two_indices" : [ 1, 2 ]
-}, {
-  "sentence_tokens" : [ "Thus", ",", "PCA", "and", "PLS-DA", "were", "performed", "to", "find", "the", "components", "contributing", "the", "most", "to", "the", "difference", "between", "these", "two", "groups", "of", "samples", "." ],
-  "entity_one_indices" : [ 4, 5 ],
-  "entity_two_indices" : [ 2, 3 ]
-}, {
-  "sentence_tokens" : [ "mL", "was", "prepared", "for", "the", "following", "experiments.The", "main", "composition", "of", "the", "second", "and", "the", "third", "group", "of", "samples", "could", "be", "considered", "as", "the", "composition", "of", "burdock", "leaf", "fraction", "before", "and", "after", "inhibiting", "Pseudomonas", "aeruginosa", "biofilm", ",", "respectively", "." ],
-  "entity_one_indices" : [ 32, 33, 34, 35 ],
-  "entity_two_indices" : [ 0, 1 ]
-}, {
-  "sentence_tokens" : [ "The", "powder", "of", "burdock", "leaf", "was", "extracted", "in", "a", "flask", "containing", "30", "%", "ethanol", "solution", ";", "the", "ratio", "of", "solvent", "to", "solid", "was", "20:1", "(", "mL", "." ],
-  "entity_one_indices" : [ 25, 26 ],
-  "entity_two_indices" : [ 13, 14, 15 ]
-}, {
-  "sentence_tokens" : [ "Once", "the", "wells", "were", "fully", "dried", ",", "1", "mL", "of", "0.1", "%", "crystal", "violet", "stain", "was", "added", "to", "wells", "to", "stain", "for", "15", "min", "." ],
-  "entity_one_indices" : [ 12, 13, 14 ],
-  "entity_two_indices" : [ 8, 9 ]
-}, {
-  "sentence_tokens" : [ "The", "excess", "stain", "was", "rinsed", "off", "with", "tap", "water", "and", "then", "1", "mL", "of", "95", "%", "(", "v/v", ")", "ethanol", "was", "added", "to", "each", "well", "for", "1", "h", "to", "release", "the", "stain", "." ],
-  "entity_one_indices" : [ 19, 20 ],
-  "entity_two_indices" : [ 12, 13 ]
-}, {
-  "sentence_tokens" : [ "The", "chemical", "composition", "of", "the", "34", "%", "ethanol", "elution", "fraction", "of", "burdock", "leaf", "was", "investigated", "by", "ultra-performance", "liquid", "chromatography-tandem", "mass", "spectrometry", "(", "UPLC-MS", ")", "." ],
-  "entity_one_indices" : [ 19, 20 ],
-  "entity_two_indices" : [ 7, 8 ]
-} ]
+{
+  "regulations" : [ {
+    "sentence_tokens" : [ "The", "34", "%", "ethanol", "elution", "fraction", "of", "burdock", "leaf", "significantly", "inhibited", "the", "biofilm", "formation", "of", "Pseudomonas", "aeruginosa", "." ],
+    "event_indices" : [ 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 ],
+    "type" : "Negative_activation",
+    "polarity" : false,
+    "controller_indices" : [ 3, 4 ],
+    "controlled_indices" : [ 12, 13, 14 ],
+    "trigger_indices" : [ 10, 11 ],
+    "rule_name" : "Negative_activation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "mL", ",", "it", "could", "only", "partly", "inhibit", "biofilm", "formation", "." ],
+    "event_indices" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 ],
+    "type" : "Negative_activation",
+    "polarity" : false,
+    "controller_indices" : [ 0, 1 ],
+    "controlled_indices" : [ 7, 8, 9 ],
+    "trigger_indices" : [ 6, 7 ],
+    "rule_name" : "Negative_activation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "mL", ",", "it", "could", "only", "partly", "inhibit", "biofilm", "formation", "." ],
+    "event_indices" : [ 2, 3, 4, 5, 6, 7, 8, 9 ],
+    "type" : "Negative_activation",
+    "polarity" : false,
+    "controller_indices" : [ 2, 3 ],
+    "controlled_indices" : [ 7, 8, 9 ],
+    "trigger_indices" : [ 6, 7 ],
+    "rule_name" : "Negative_activation_syntax_1_verb, pronominalMatch",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "Honraet", "[", "5", "]", "found", "a", "variety", "of", "plant", "extracts", "significantly", "inhibited", "the", "biofilm", "formation", "of", "Staphylococcus", "aureus", "." ],
+    "event_indices" : [ 8, 9, 10, 11, 12, 13, 14, 15 ],
+    "type" : "Negative_activation",
+    "polarity" : false,
+    "controller_indices" : [ 8, 9, 10 ],
+    "controlled_indices" : [ 13, 14, 15 ],
+    "trigger_indices" : [ 11, 12 ],
+    "rule_name" : "Negative_activation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "The", "crystal", "violet", "assay", "indicated", "34", "%", "ethanol", "elution", "fraction", "of", "burdock", "leaf", "could", "completely", "inhibit", "biofilm", "formation", "of", "Pseudomonas", "aeruginosa", "at", "1", "mg.mL", "-1", "." ],
+    "event_indices" : [ 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18 ],
+    "type" : "Negative_activation",
+    "polarity" : false,
+    "controller_indices" : [ 7, 8 ],
+    "controlled_indices" : [ 16, 17, 18 ],
+    "trigger_indices" : [ 15, 16 ],
+    "rule_name" : "Negative_activation_syntax_1_verb",
+    "rule" : null
+  } ],
+  "hardInstances" : [ {
+    "sentence_tokens" : [ "mL", ",", "it", "could", "only", "partly", "inhibit", "biofilm", "formation", "." ],
+    "entities_indices" : [ [ 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "mL", ",", "it", "could", "only", "partly", "inhibit", "biofilm", "formation", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "crystal", "violet", "assay", "indicated", "34", "%", "ethanol", "elution", "fraction", "of", "burdock", "leaf", "could", "completely", "inhibit", "biofilm", "formation", "of", "Pseudomonas", "aeruginosa", "at", "1", "mg.mL", "-1", "." ],
+    "entities_indices" : [ [ 1, 2, 3 ] ]
+  } ],
+  "withoutRegulations" : [ {
+    "sentence_tokens" : [ "In", "order", "to", "treat", "the", "missing", "values", ",", "frequency", "of", "occurrence", "of", "mass", "ion", "(", "nonzero", "value", ")", "less", "than", "80", "%", "was", "removed", "[", "26", "]", "." ],
+    "entities_indices" : [ [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "first", "group", "of", "samples", "was", "the", "solution", "of", "34", "%", "ethanol", "elution", "fraction", "of", "burdock", "leaf", "(", "2", "mg", "." ],
+    "entities_indices" : [ [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "As", "shown", "in", "Table", "2", ",", "the", "lowest", "concentrations", "of", "rutin", ",", "ursolic", "acid", ",", "caffeic", "acid", ",", "p-coumaric", "acid", "and", "quercetin", "that", "could", "completely", "inhibit", "(", "with", "inhibition", "rate", "of", "100", "%", ")", "the", "formation", "of", "biofilm", "of", "Pseudomonas", "aeruginosa", "were", "0.5", ",", "0.5", ",", "0.5", ",", "0.25", "and", "0.5", "mg", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 12, 13, 14 ], [ 15, 16, 17 ], [ 18, 19, 20 ], [ 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "Group", "2", "includes", "samples", "1", "-", "5", "(", "S1", "-", "S5", ")", "and", "Group", "3", "includes", "samples", "6", "-", "10", "(", "S6", "-", "S10", ")", "." ],
+    "entities_indices" : [ [ 0, 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "Its", "characteristic", "fragment", "ions", ",", "such", "as", "m/z", "487", ",", "were", "also", "identical", "with", "those", "of", "the", "standard", "and", "those", "reported", "by", "Kelebek", "[", "23", "]", "." ],
+    "entities_indices" : [ [ 7, 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "mL", ")", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "solution", "of", "34", "%", "ethanol", "elution", "fraction", "of", "burdock", "leaf", "(", "100", "mu", "L", ")", ",", "which", "had", "serial", "dilutions", ",", "were", "added", "to", "the", "wells", "of", "a", "24-well", "culture", "plate", "(", "Sarstedt", ",", "Newton", ",", "NC", ",", "USA", ")", "containing", "800", "mu", "L", "of", "fresh", "broth", "medium", "and", "100", "mu", "L", "bacteria", "suspension", "(", "108", "cfu", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 37, 38 ], [ 51, 52, 53, 54 ] ]
+  }, {
+    "sentence_tokens" : [ "mL", ",", "the", "formation", "of", "biofilm", "was", "completely", "inhibited", "and", "the", "inhibition", "rate", "on", "biofilm", "formation", "was", "100", "%", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 14, 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "fifth", "peak", "yielding", "[", "M", "-", "H", "]", "at", "m/z", "609", "was", "identified", "as", "rutin", "with", "the", "t", "of", "12.22", "and", "lambda", "of", "256", "." ],
+    "entities_indices" : [ [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "Once", "the", "wells", "were", "fully", "dried", ",", "1", "mL", "of", "0.1", "%", "crystal", "violet", "stain", "was", "added", "to", "wells", "to", "stain", "for", "15", "min", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 12, 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "Figueiredo", "et", "al.", "[", "11", "]", "found", "that", "Plectranthus", "barbatus", "and", "Plectranthus", "ecklonii", "leaves", "had", "anti-biofilm", "activity", "on", "Streptococcus", "sobrinus", "and", "Streptococcus", "mutans", ",", "with", "IC", "of", "0.6", "-", "3.1", "mg", "." ],
+    "entities_indices" : [ [ 0, 1, 2, 3, 4, 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "Peak", "2", ",", "with", "the", "t", "of", "8.25", ",", "was", "identified", "as", "caffeic", "acid", "(", "lambda", "324", ")", "and", "the", "[", "M", "-", "H", "]", "peak", "was", "observed", "at", "m/z", "179", "." ],
+    "entities_indices" : [ [ 0, 1, 2 ], [ 12, 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "Anti-biofilm", "activity", "of", "the", "fraction", "of", "burdock", "leaf", "was", "evaluated", "by", "the", "method", "of", "crystal", "violet", "staining", "[", "29", "]", "." ],
+    "entities_indices" : [ [ 14, 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "Peak", "8,", "was", "identified", "as", "quercetin", ",", "with", "the", "t", "of", "14.82", "and", "lambda", "of", "256", ",", "368", "." ],
+    "entities_indices" : [ [ 0, 1, 2 ], [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "Then", ",", "UPLC-MS", "was", "used", "to", "obtain", "the", "metabolic", "fingerprint", "of", "burdock", "leaf", "fractions", "before", "and", "after", "inhibiting", "Pseudomonas", "aeruginosa", ",", "and", "multivariate", "data", "analysis", "was", "applied", "to", "screening", "potential", "anti-biofilm", "ingredients", "." ],
+    "entities_indices" : [ [ 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "Acetonitrile", "precipitation", "[", "28", "]", "was", "applied", "to", "remove", "proteins", "before", "UPLC-MS", "analysis", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "Peak", "11", "yielded", "[", "M", "-", "H", "]", "at", "m/z", "455", ",", "with", "lambda", "of", "210", "and", "t", "of", "21.07", ",", "was", "identified", "as", "ursolic", "acid", "." ],
+    "entities_indices" : [ [ 0, 1, 2 ], [ 24, 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "Then", ",", "the", "34", "%", "ethanol", "solution", "elution", "fraction", "was", "obtained", "and", "used", "for", "the", "following", "experiments", "." ],
+    "entities_indices" : [ [ 5, 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "VIP", "value", "of", "each", "variable", "was", "got", "from", "PLS-DA", "score", "plot", ",", "which", "was", "used", "for", "classification", "purposes", "in", "metabolomics", "studies", ",", "and", "to", "indicate", "its", "contribution", "to", "the", "classification", "of", "samples", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "mL", ",", "respectively", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "mL", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "chemical", "composition", "of", "the", "34", "%", "ethanol", "elution", "fraction", "of", "burdock", "leaf", "was", "investigated", "by", "ultra-performance", "liquid", "chromatography-tandem", "mass", "spectrometry", "(", "UPLC-MS", ")", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "No.", "25", "was", "identified", "as", "rutin", "with", "the", "t", "of", "12.22", "." ],
+    "entities_indices" : [ [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "Peak", "6", ",", "with", "the", "t", "of", "13.51", "and", "lambda", "of", "295", ",", "was", "identified", "as", "cynarin", "and", "the", "[", "M", "-", "H", "]", "peak", "of", "it", "was", "observed", "at", "m/z", "515", "." ],
+    "entities_indices" : [ [ 0, 1, 2 ], [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "injection", "volume", "was", "2", "mu", "L.The", "eluted", "output", "from", "the", "UPLC", "equipment", "was", "directly", "connected", "to", "a", "SYNAPT", "Mass", "Spectrometer", "(", "Waters", ",", "Milford", ",", "MA", ",", "USA", ")", ",", "equipped", "with", "an", "electrospray", "ionization", "source", "operating", "in", "negative", "mode", ",", "using", "the", "following", "instrument", "settings", ":", "nebulizer", "gas", ",", "nitrogen", ",", "capillary", ",", "3000", "V", ",", "Cone", "voltage", "20", "V", ",", "desolvation", "temperature", "400", "degrees", "C", ",", "ion", "source", "temperature", "100", "degrees", "C", ",", "desolvation", "gas", "flow", "500", "L.", "h", ",", "cone", "gas", "flow", "50", "L.", "h", "." ],
+    "entities_indices" : [ [ 19, 20 ], [ 26, 27 ], [ 51, 52 ], [ 59, 60 ] ]
+  }, {
+    "sentence_tokens" : [ "mL", ")", "was", "added", "to", "tubes", "containing", "2.9", "mL", "of", "LB", "broth", "and", "0.1", "mL", "of", "bacteria", "suspension", "(", "108", "cfu", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 8, 9 ], [ 11, 12 ], [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "powder", "of", "burdock", "leaf", "was", "extracted", "in", "a", "flask", "containing", "30", "%", "ethanol", "solution", ";", "the", "ratio", "of", "solvent", "to", "solid", "was", "20:1", "(", "mL", "." ],
+    "entities_indices" : [ [ 13, 14, 15 ], [ 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "According", "to", "the", "VIP", "values", "and", "other", "results", "of", "data", "analysis", ",", "screened", "the", "peaks", "with", "significant", "decrease", "of", "peak", "area", "." ],
+    "entities_indices" : [ [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "As", "shown", "in", "Table", "2", ",", "No.", "6", "was", "identified", "as", "caffeic", "acid", "with", "the", "t", "of", "8.25", "." ],
+    "entities_indices" : [ [ 11, 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "macroporous", "resin", "column", "chromatography", ",", "20", "%", ",", "34", "%", "and", "70", "%", "ethanol", "solutions", "were", "used", "to", "desorb", "targeted", "components", "at", "a", "successively", "flow", "of", "1.5", "BV", "." ],
+    "entities_indices" : [ [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "variable", "importance", "in", "projection", "(", "VIP", ")", "was", "used", "to", "discern", "the", "differences", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "crude", "extracts", "were", "dissolved", "in", "water", ",", "then", "loaded", "into", "a", "glass", "column", "(", "6", "cm", "x", "100", "cm", ")", "filled", "with", "macroporous", "resin", "(", "HPD-100", ",", "Cangzhou", "Bon", "Adsorber", "Technology", "Co", ".,", "Ltd", ".,", "Cangzhou", ",", "China", ")", "." ],
+    "entities_indices" : [ [ 26, 27 ], [ 29, 30 ], [ 32, 33 ], [ 34, 35 ] ]
+  }, {
+    "sentence_tokens" : [ "High", "resolution", "mass", "was", "measured", "for", "metabolites", "after", "UPLC", "separation", "." ],
+    "entities_indices" : [ [ 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "Three", "times", "volume", "of", "acetonitrile", "was", "added", "to", "the", "third", "and", "the", "second", "group", "of", "samples", ",", "standing", "for", "10", "min", ",", "and", "then", "centrifuged", "for", "1", "min", "at", "12,000", "r.", "min", "." ],
+    "entities_indices" : [ [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "[", "M", "-", "H", "]", "peak", "of", "353", "(", "along", "with", "the", "fragment", "ions", "at", "191", ")", "was", "similar", "to", "those", "of", "standard", "chlorogenic", "acid", "and", "those", "reported", "in", "the", "literature", "[", "19", "]", "." ],
+    "entities_indices" : [ [ 24, 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "solution", "obtained", "was", "transferred", "to", "EP", "tubes", "for", "use", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "Peak", "identification", "was", "performed", "by", "comparing", "retention", "times", "(", "t", ")", ",", "UV-Vis", "spectra", "and", "mass", "spectra", "(", "Table", "1", ")", "with", "those", "of", "reference", "standards", "and", "literature", "data.Peak1", "was", "identified", "as", "chlorogenic", "acid", "with", "lambda", "of", "326", "and", "t", "of", "7.62", "." ],
+    "entities_indices" : [ [ 15, 16 ], [ 32, 33, 34 ] ]
+  }, {
+    "sentence_tokens" : [ "Peak", "9", ",", "with", "the", "tR", "of", "15.75", ",", "was", "identified", "as", "luteolin", "and", "the", "[", "M", "-", "H", "]", "peak", "was", "observed", "at", "m/z", "285", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "order", "to", "find", "significant", "differences", "between", "groups", ",", "the", "resulting", "data", "arrays", "were", "used", "afterwards", "for", "multivariate", "statistical", "analysis", ",", "which", "were", "principal", "component", "analysis", "(", "PCA", ")", "and", "Partial", "least", "squares", "discriminant", "analysis", "(", "PLS-DA", ")", "with", "SIMCAP", "+", "11", "software", "package", "[", "27", "]", "." ],
+    "entities_indices" : [ [ 27, 28 ], [ 39, 40, 41, 42, 43, 44 ] ]
+  }, {
+    "sentence_tokens" : [ "Biofilm", "formation", "is", "a", "natural", "tendency", "of", "bacteria", "[", "1", "]", "." ],
+    "entities_indices" : [ [ 0, 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "Identification", "of", "the", "compounds", "from", "burdock", "leaf", "was", "achieved", "by", "comparison", "of", "retention", "times", ",", "MS", "and", "UV", "spectra", "with", "those", "of", "standards", "and", "the", "literature", "." ],
+    "entities_indices" : [ [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "Burdock", "leaf", "was", "provided", "by", "Xuzhou", "Wangda", "Farm", "and", "Sideline", "Products", "Co", ".,", "Ltd.", "(", "Xuzhou", ",", "China", ")", "." ],
+    "entities_indices" : [ [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "metabolites", "with", "a", "larger", "VIP", "value", "represented", "higher", "contribution", "to", "the", "discrimination", "between", "two", "groups", "." ],
+    "entities_indices" : [ [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "Among", "them", ",", "rutin", ",", "ursolic", "acid", ",", "caffeic", "acid", ",", "p-coumaric", "acid", "and", "quercetin", "were", "identified", "and", "confirmed", "as", "the", "main", "anti-biofilm", "compounds", "in", "burdock", "leaf", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 5, 6, 7 ], [ 8, 9, 10 ], [ 11, 12, 13 ], [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "No.", "60", ",", "No.", "65", ",", "No.", "73", ",", "No.", "79", "and", "No.", "81", "were", "identified", "as", "cynarin", ",", "crocin", ",", "p-coumaric", "acid", ",", "quercetin", "and", "ursolic", "acid", ",", "respectively", "." ],
+    "entities_indices" : [ [ 17, 18 ], [ 19, 20 ], [ 21, 22, 23 ], [ 24, 25 ], [ 26, 27, 28 ] ]
+  }, {
+    "sentence_tokens" : [ "Standard", "samples", "(", "chlorogenic", "acid", ",", "caffeic", "acid", ",", "p-coumaric", "acid", ",", "quercetin", ",", "ursolic", "acid", ",", "rutin", ",", "luteolin", ",", "crocin", ",", "benzoic", "acid", "and", "Tenacissoside", "I", ")", "were", "dissolved", "with", "methanol", "(", "HPLC", "grade", ")", ";", "the", "concentration", "of", "each", "standard", "was", "1", "mg", "." ],
+    "entities_indices" : [ [ 3, 4, 5 ], [ 6, 7, 8 ], [ 9, 10, 11 ], [ 12, 13 ], [ 14, 15, 16 ], [ 17, 18 ], [ 19, 20 ], [ 21, 22 ], [ 23, 24, 25 ], [ 32, 33 ] ]
+  }, {
+    "sentence_tokens" : [ "Then", ",", "the", "chemical", "composition", "of", "burdock", "leaf", "fraction", "was", "analyzed", "by", "ultra-performance", "liquid", "chromatography-mass", "spectrometry", "(", "UPLC-MS", ")", "and", "11", "active", "compounds", "(", "chlorogenic", "acid", ",", "caffeic", "acid", ",", "p-coumaric", "acid", ",", "quercetin", ",", "ursolic", "acid", ",", "rutin", ",", "cynarin", ",", "luteolin", ",", "crocin", ",", "benzoic", "acid", ",", "and", "Tenacissoside", "I", ")", "were", "identified", "." ],
+    "entities_indices" : [ [ 24, 25, 26 ], [ 27, 28, 29 ], [ 30, 31, 32 ], [ 33, 34 ], [ 35, 36, 37 ], [ 38, 39 ], [ 40, 41 ], [ 42, 43 ], [ 44, 45 ], [ 46, 47, 48 ], [ 50, 51, 52 ] ]
+  }, {
+    "sentence_tokens" : [ "Chromatographic", "separations", "were", "performed", "on", "an", "Acquity", "UPLC", "system", "(", "Waters", ",", "Milford", ",", "MA", ",", "USA", ")", "equipped", "with", "BEH", "C18", "column", "(", "50", "x", "2.1", "mm", ",", "7", "mu", "m", ",", "Waters", ",", "Milford", ",", "MA", ",", "USA", ")", ",", "applying", "the", "following", "binary", "gradient", "at", "a", "flow", "rate", "of", "0.3", "mL", "." ],
+    "entities_indices" : [ [ 14, 15 ], [ 37, 38 ], [ 53, 54 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "34", "%", "ethanol", "elution", "fraction", "of", "burdock", "leaf", "significantly", "inhibited", "the", "formation", "of", "Pseudomonas", "aeruginosa", "biofilm", "." ],
+    "entities_indices" : [ [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "anti-biofilm", "activity", "of", "rutin", ",", "ursolic", "acid", ",", "caffeic", "acid", ",", "p-coumaric", "acid", ",", "crocin", ",", "cynarin", "and", "quercetin", "was", "also", "evaluated", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 6, 7, 8 ], [ 9, 10, 11 ], [ 12, 13, 14 ], [ 15, 16 ], [ 17, 18 ], [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "Chlorogenic", "acid", "(", "98", "%", ")", ",", "caffeic", "acid", "(", "98", "%", ")", ",", "p-coumaric", "acid", "(", "99", "%", ")", ",", "quercetin", "(", "97", "%", ")", ",", "ursolic", "acid", "(", "98", "%", ")", ",", "rutin", "(", "98", "%", ")", ",", "luteolin", "(", "98", "%", ")", ",", "crocin", "(", "98", "%", ")", ",", "cynarin", "(", "97", "%", ")", ",", "benzoic", "acid", "(", "99", "%", ")", "and", "Tenacissoside", "I", "(", "97", "%", ")", "were", "purchased", "from", "Aladdin", "(", "Shanghai", ",", "China", ")", "and", "Sigma", "(", "Shanghai", ",", "China", ")", "." ],
+    "entities_indices" : [ [ 0, 1, 2 ], [ 7, 8, 9 ], [ 14, 15, 16 ], [ 21, 22 ], [ 27, 28, 29 ], [ 34, 35 ], [ 40, 41 ], [ 46, 47 ], [ 52, 53 ], [ 58, 59, 60 ] ]
+  }, {
+    "sentence_tokens" : [ "Peak", "3", "exhibiting", "an", "[", "M", "-", "H", "]", "ion", "at", "m/z", "163", "with", "the", "lambda", "of", "303", "and", "a", "t", "of", "10.90", ",", "was", "identified", "as", "p-coumaric", "acid", "." ],
+    "entities_indices" : [ [ 0, 1, 2 ], [ 27, 28, 29 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "data", "array", "composed", "of", "the", "variables", "of", "samples", ",", "retention", "time", "t", ",", "m/z", "values", "(", "molecular", "features", ")", ",", "and", "normalized", "signal", "intensity", "of", "the", "m/z", "value", "was", "generated", "after", "UPLC-MS", "data", "were", "processed", "by", "MarkerLynx", "software", "(", "4.1", ";", "WATERS", ":", "Manchester", ",", "UK", ")", "[", "25", "]", "." ],
+    "entities_indices" : [ [ 46, 47 ] ]
+  }, {
+    "sentence_tokens" : [ "Chlorogenic", "acid", ",", "caffeic", "acid", ",", "p-coumaric", "acid", ",", "quercetin", ",", "ursolic", "acid", ",", "rutin", ",", "cynarin", ",", "luteolin", ",", "crocin", ",", "benzoic", "acid", "and", "Tenacissoside", "I", "were", "identified", "in", "the", "fraction", "through", "UPLC-MS", "analysis", "." ],
+    "entities_indices" : [ [ 0, 1, 2 ], [ 3, 4, 5 ], [ 6, 7, 8 ], [ 9, 10 ], [ 11, 12, 13 ], [ 14, 15 ], [ 16, 17 ], [ 18, 19 ], [ 20, 21 ], [ 22, 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "mL", ")", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "Cross", "validation", "was", "conducted", "to", "verify", "whether", "PLS-DA", "was", "a", "good", "model", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "Meanwhile", ",", "combing", "the", "database", "(", "HMDB", ",", "METLIN", ",", "Massbank", ",", "etc.", ")", "as", "references", ",", "other", "potential", "anti-biofilm", "compounds", "are", "being", "identified", "on", "the", "basis", "of", "relevant", "literature", ",", "database", "and", "the", "fragmentation", "patterns", "of", "mass", "spectrometry", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 8, 9 ], [ 10, 11 ], [ 37, 38 ] ]
+  }, {
+    "sentence_tokens" : [ "Thus", ",", "PCA", "and", "PLS-DA", "were", "performed", "to", "find", "the", "components", "contributing", "the", "most", "to", "the", "difference", "between", "these", "two", "groups", "of", "samples", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "excess", "stain", "was", "rinsed", "off", "with", "tap", "water", "and", "then", "1", "mL", "of", "95", "%", "(", "v/v", ")", "ethanol", "was", "added", "to", "each", "well", "for", "1", "h", "to", "release", "the", "stain", "." ],
+    "entities_indices" : [ [ 12, 13 ], [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "Peak", "7", ",", "with", "the", "tR", "of", "13.67", ",", "was", "identified", "as", "crocin", "(", "lambda", "442", ")", "and", "the", "[", "M", "-", "H", "]", "peak", "of", "crocin", "was", "observed", "at", "m/z", "976", "." ],
+    "entities_indices" : [ [ 0, 1, 2 ], [ 5, 6 ], [ 12, 13 ], [ 26, 27 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "peak", "belongs", "to", "each", "compound", "was", "determined", "by", "using", "the", "software", "Masslynx", "(", "Waters", ",", "Milford", ",", "MA", ",", "USA", ")", "." ],
+    "entities_indices" : [ [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "mL", ")", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "When", "the", "VIP", "value", "is", "higher", ",", "the", "metabolites", "are", "considered", "important", "for", "discriminating", "between", "different", "groups", "." ],
+    "entities_indices" : [ [ 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "mL", "was", "prepared", "for", "the", "following", "experiments.The", "main", "composition", "of", "the", "second", "and", "the", "third", "group", "of", "samples", "could", "be", "considered", "as", "the", "composition", "of", "burdock", "leaf", "fraction", "before", "and", "after", "inhibiting", "Pseudomonas", "aeruginosa", "biofilm", ",", "respectively", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 32, 33, 34, 35 ] ]
+  }, {
+    "sentence_tokens" : [ "min", ":", "0", "-", "1", "min", ",", "isocratic", "95", "%", "A", "(", "water", "and", "formic", "acid", ",", "99.9/0.1", "(", "v/v", ")", ")", ",", "5", "%", "B", "(", "acetonitrile", "and", "formic", "acid", ",", "99.9/0.1", "(", "v/v", ")", ")", ";", "1", "-", "16", "min", ",", "linear", "from", "5", "%", "to", "95", "%", "B", ";", "16", "-", "18", "min", ",", "isocratic", "95", "%", "B", ";", "18", "-", "20", "min", ",", "isocratic", "5", "%", "B." ],
+    "entities_indices" : [ [ 0, 1, 2, 3, 4, 5, 6 ], [ 14, 15, 16 ], [ 27, 28 ], [ 29, 30, 31 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "main", "composition", "of", "the", "second", "and", "the", "third", "group", "of", "samples", "could", "be", "considered", "to", "be", "the", "composition", "of", "burdock", "leaf", "fraction", "before", "and", "after", "inhibiting", "Pseudomonas", "aeruginosa", "biofilm", ",", "respectively", "." ],
+    "entities_indices" : [ [ 27, 28, 29, 30 ] ]
+  }, {
+    "sentence_tokens" : [ "Compared", "with", "the", "standard", "benzoic", "acid", ",", "Peak", "4", "was", "identified", "as", "benzoic", "acid", "with", "the", "t", "of", "12.04", "and", "lambda", "of", "222", ",", "its", "[", "M", "-", "H", "]", "peak", "was", "observed", "at", "m/z", "121", "." ],
+    "entities_indices" : [ [ 4, 5, 6 ], [ 7, 8, 9 ], [ 12, 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "mL", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "Only", "the", "34", "%", "ethanol", "elution", "fraction", "was", "collected", "and", "dried", "." ],
+    "entities_indices" : [ [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "Its", "characteristic", "fragment", "ions", ",", "such", "as", "m/z", "135", ",", "were", "also", "identical", "with", "those", "of", "the", "standard", "and", "those", "reported", "by", "Tarnawski", "[", "20", "]", "." ],
+    "entities_indices" : [ [ 7, 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "Through", "analyzing", "the", "metabolomics", "changes", "of", "burdock", "leaf", "fraction", "before", "and", "after", "inhibiting", "biofilm", ",", "coupled", "with", "UPLC-MS", "data", "processing", "and", "multivariate", "data", "analysis", ",", "81", "variables", "were", "screened", "as", "potential", "anti-biofilm", "ingredients", ";", "among", "them", ",", "rutin", ",", "ursolic", "acid", ",", "caffeic", "acid", ",", "p-coumaric", "acid", "and", "quercetin", "were", "identified", "and", "confirmed", "as", "the", "main", "anti-biofilm", "compounds", "in", "burdock", "leaf", "fraction", "." ],
+    "entities_indices" : [ [ 37, 38 ], [ 39, 40, 41 ], [ 42, 43, 44 ], [ 45, 46, 47 ], [ 48, 49 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "peaks", "with", "VIP", "value", "greater", "than", "1.15", "were", "obtained", "." ],
+    "entities_indices" : [ [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "After", "data", "processing", "and", "multivariate", "data", "analysis", ",", "the", "data", "were", "displayed", "as", "PLS-DA", "score", "plots", "(", "Figure", "2", ")", "." ],
+    "entities_indices" : [ [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "Referring", "to", "the", "activity", "evaluation", "experiments", ",", "rutin", ",", "ursolic", "acid", ",", "caffeic", "acid", ",", "p-coumaric", "acid", "and", "quercetin", "were", "found", "to", "exhibit", "significant", "biofilm", "inhibitory", "activity", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 9, 10, 11 ], [ 12, 13, 14 ], [ 15, 16, 17 ], [ 18, 19 ] ]
+  } ],
+  "emptySentences" : [ {
+    "sentence_tokens" : [ "Metabolomics", "Based", "Screening", "of", "Biofilm-Inhibitory", "Compounds", "against", "Pseudomonas", "aeruginosa", "from", "Burdock", "Leaf", "." ]
+  }, {
+    "sentence_tokens" : [ "Screening", "of", "anti-biofilm", "compounds", "from", "the", "burdock", "leaf", "based", "on", "metabolomics", "is", "reported", "here", "." ]
+  }, {
+    "sentence_tokens" : [ "Then", ",", "the", "chemical", "composition", "of", "burdock", "leaf", "fraction", "was", "analyzed", "by", "ultra-performance", "liquid", "chromatography-mass", "spectrometry", "(", "UPLC-MS", ")", "and", "11", "active", "compounds", "(", "chlorogenic", "acid", ",", "caffeic", "acid", ",", "p-coumaric", "acid", ",", "quercetin", ",", "ursolic", "acid", ",", "rutin", ",", "cynarin", ",", "luteolin", ",", "crocin", ",", "benzoic", "acid", ",", "and", "Tenacissoside", "I", ")", "were", "identified", "." ]
+  }, {
+    "sentence_tokens" : [ "Lastly", ",", "UPLC-MS", "analysis", "was", "employed", "to", "obtain", "the", "metabolic", "fingerprints", "of", "burdock", "leaf", "fractions", "before", "and", "after", "inhibiting", "the", "biofilm", "of", "Pseudomonas", "aeruginosa", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "metabolic", "fingerprints", "were", "transformed", "to", "data", ",", "analyzed", "with", "PLS-DA", "(", "partial", "least", "squares", "discriminant", "analysis", ")", "and", "the", "peaks", "whose", "area", "was", "significantly", "changed", "were", "found", "out", "." ]
+  }, {
+    "sentence_tokens" : [ "Thus", ",", "81", "compounds", "were", "screened", "as", "potential", "anti-biofilm", "ingredients", "." ]
+  }, {
+    "sentence_tokens" : [ "Among", "them", ",", "rutin", ",", "ursolic", "acid", ",", "caffeic", "acid", ",", "p-coumaric", "acid", "and", "quercetin", "were", "identified", "and", "confirmed", "as", "the", "main", "anti-biofilm", "compounds", "in", "burdock", "leaf", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "study", "provided", "basic", "anti-biofilm", "profile", "data", "for", "the", "compounds", "in", "burdock", "leaf", ",", "as", "well", "as", "provided", "a", "convenient", "method", "for", "fast", "screening", "of", "anti-biofilm", "compounds", "from", "natural", "plants", "." ]
+  }, {
+    "sentence_tokens" : [ "1", "." ]
+  }, {
+    "sentence_tokens" : [ "Introduction", "." ]
+  }, {
+    "sentence_tokens" : [ "As", "a", "unique", "group", "life", "style", "that", "grows", "on", "solid", "surface", ",", "biofilm", "has", "multicellular", "structures", "." ]
+  }, {
+    "sentence_tokens" : [ "Biofilm", "formation", "is", "a", "natural", "tendency", "of", "bacteria", "[", "1", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "food", "industry", "sectors", ",", "such", "as", "fresh", "produce", ",", "dairy", "processing", ",", "poultry", "processing", "and", "red", "meat", "processing", ",", "biofilm", "is", "a", "stubborn", "source", "of", "pollution", "[", "2,3", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "When", "the", "contamination", "of", "food", "occurs", ",", "the", "source", "of", "the", "problem", "is", "often", "biofilm", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "great", "deal", "of", "evidence", "indicates", "that", "biofilm", "mode", "of", "life", "results", "in", "growing", "resistance", "to", "antibacterial", "agents", "[", "4,5", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Compared", "to", "planktonic", "cells", ",", "biofilms", "are", "more", "resistant", "to", "antibacterial", "products", "." ]
+  }, {
+    "sentence_tokens" : [ "Searching", "for", "new", "strategies", "to", "inhibit", "biofilm", "is", "very", "urgent", "[", "6,7", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "recent", "years", ",", "the", "efficiency", "of", "plant", "components", "on", "inhibition", "of", "biofilm", "has", "attracted", "more", "and", "more", "attention", "[", "8,9,10", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Figueiredo", "et", "al.", "[", "11", "]", "found", "that", "Plectranthus", "barbatus", "and", "Plectranthus", "ecklonii", "leaves", "had", "anti-biofilm", "activity", "on", "Streptococcus", "sobrinus", "and", "Streptococcus", "mutans", ",", "with", "IC", "of", "0.6", "-", "3.1", "mg", "." ]
+  }, {
+    "sentence_tokens" : [ "mL", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "the", "material", "basis", "for", "biofilm", "inhibition", "or", "the", "active", "ingredients", "of", "these", "plants", "have", "not", "been", "systemic", "studied", "." ]
+  }, {
+    "sentence_tokens" : [ "Furthermore", ",", "separation", "and", "purification", "are", "commonly", "used", "to", "find", "active", "ingredients", ",", "whereby", "steps", "are", "complex", "and", "the", "functional", "components", "are", "easily", "lost", "." ]
+  }, {
+    "sentence_tokens" : [ "Hence", ",", "it", "is", "urgent", "to", "develop", "a", "new", "and", "selective", "method", "for", "the", "screening", "of", "active", "ingredients.Dynamic", "changes", "of", "all", "small", "molecule", "metabolites", "of", "biological", "systems", "in", "response", "to", "external", "stimuli", "can", "be", "well", "analyzed", "in", "metabolomics", "[", "12,13,14", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Through", "investigating", "the", "changes", "of", "metabolome", "after", "the", "treating", "by", "drugs", "or", "plant", "components", ",", "multidimensional", "data", "of", "the", "whole", "research", "system", "can", "be", "obtained", "." ]
+  }, {
+    "sentence_tokens" : [ "After", "statistical", "analysis", ",", "their", "internal", "relations", "could", "be", "found", ",", "the", "key", "biomarkers", "would", "be", "screened", ",", "and", "the", "effective", "material", "basis", "of", "plant", "components", "could", "be", "obtained", "[", "15,16,17,18", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "metabolomics", "can", "be", "employed", "to", "comprehensively", "and", "accurately", "screen", "active", "compounds", ",", "effectively", "avoiding", "the", "complicated", "separation", "and", "purification", "process", "as", "well", "as", "the", "complex", "process", "of", "activity", "evaluation", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "present", "paper", ",", "a", "method", "for", "screening", "of", "anti-biofilm", "compounds", "from", "plants", "based", "on", "metabolomics", "has", "been", "proposed.In", "this", "study", ",", "the", "anti-biofilm", "activity", "of", "burdock", "(", "Arctium", "lappa", ")", "leaves", "against", "Pseudomonas", "aeruginosa", "was", "evaluated", "." ]
+  }, {
+    "sentence_tokens" : [ "Then", ",", "UPLC-MS", "was", "used", "to", "obtain", "the", "metabolic", "fingerprint", "of", "burdock", "leaf", "fractions", "before", "and", "after", "inhibiting", "Pseudomonas", "aeruginosa", ",", "and", "multivariate", "data", "analysis", "was", "applied", "to", "screening", "potential", "anti-biofilm", "ingredients", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "method", "demonstrates", "the", "first", "use", "of", "metabolomics", "analysis", "as", "an", "effective", "approach", "for", "fast", "screening", "of", "anti-biofilm", "compounds", "from", "plants", "." ]
+  }, {
+    "sentence_tokens" : [ "2", "." ]
+  }, {
+    "sentence_tokens" : [ "Results", "and", "Discussion", "." ]
+  }, {
+    "sentence_tokens" : [ "2.1", "." ]
+  }, {
+    "sentence_tokens" : [ "Anti-Biofilm", "Activity", "of", "Burdock", "Leaf", "Fraction", "against", "Pseudomonas", "aeruginosa", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "34", "%", "ethanol", "elution", "fraction", "of", "burdock", "leaf", "significantly", "inhibited", "the", "formation", "of", "Pseudomonas", "aeruginosa", "biofilm", "." ]
+  }, {
+    "sentence_tokens" : [ "When", "the", "concentration", "of", "burdock", "leaf", "fraction", "was", "1", "mg", "." ]
+  }, {
+    "sentence_tokens" : [ "mL", ",", "the", "formation", "of", "biofilm", "was", "completely", "inhibited", "and", "the", "inhibition", "rate", "on", "biofilm", "formation", "was", "100", "%", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "when", "the", "concentration", "was", "less", "than", "1", "mg", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "anti-biofilm", "activities", "increased", "with", "increasing", "concentration", "of", "burdock", "leaf", "fraction", "." ]
+  }, {
+    "sentence_tokens" : [ "2.2", "." ]
+  }, {
+    "sentence_tokens" : [ "Chemical", "Composition", "of", "Burdock", "Leaf", "Fraction", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "chromatogram", "of", "the", "fraction", "of", "burdock", "leaf", "is", "shown", "in", "Figure", "1", "." ]
+  }, {
+    "sentence_tokens" : [ "Peak", "identification", "was", "performed", "by", "comparing", "retention", "times", "(", "t", ")", ",", "UV-Vis", "spectra", "and", "mass", "spectra", "(", "Table", "1", ")", "with", "those", "of", "reference", "standards", "and", "literature", "data.Peak1", "was", "identified", "as", "chlorogenic", "acid", "with", "lambda", "of", "326", "and", "t", "of", "7.62", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "[", "M", "-", "H", "]", "peak", "of", "353", "(", "along", "with", "the", "fragment", "ions", "at", "191", ")", "was", "similar", "to", "those", "of", "standard", "chlorogenic", "acid", "and", "those", "reported", "in", "the", "literature", "[", "19", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Peak", "2", ",", "with", "the", "t", "of", "8.25", ",", "was", "identified", "as", "caffeic", "acid", "(", "lambda", "324", ")", "and", "the", "[", "M", "-", "H", "]", "peak", "was", "observed", "at", "m/z", "179", "." ]
+  }, {
+    "sentence_tokens" : [ "Its", "characteristic", "fragment", "ions", ",", "such", "as", "m/z", "135", ",", "were", "also", "identical", "with", "those", "of", "the", "standard", "and", "those", "reported", "by", "Tarnawski", "[", "20", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Peak", "3", "exhibiting", "an", "[", "M", "-", "H", "]", "ion", "at", "m/z", "163", "with", "the", "lambda", "of", "303", "and", "a", "t", "of", "10.90", ",", "was", "identified", "as", "p-coumaric", "acid", "." ]
+  }, {
+    "sentence_tokens" : [ "It", "also", "showed", "the", "release", "of", "predominant", "fragment", "ion", "at", "m/z", "119", "." ]
+  }, {
+    "sentence_tokens" : [ "Its", "characteristics", "were", "identical", "with", "those", "of", "the", "standard", "." ]
+  }, {
+    "sentence_tokens" : [ "Compared", "with", "the", "standard", "benzoic", "acid", ",", "Peak", "4", "was", "identified", "as", "benzoic", "acid", "with", "the", "t", "of", "12.04", "and", "lambda", "of", "222", ",", "its", "[", "M", "-", "H", "]", "peak", "was", "observed", "at", "m/z", "121", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "fifth", "peak", "yielding", "[", "M", "-", "H", "]", "at", "m/z", "609", "was", "identified", "as", "rutin", "with", "the", "t", "of", "12.22", "and", "lambda", "of", "256", "." ]
+  }, {
+    "sentence_tokens" : [ "Peak", "6", ",", "with", "the", "t", "of", "13.51", "and", "lambda", "of", "295", ",", "was", "identified", "as", "cynarin", "and", "the", "[", "M", "-", "H", "]", "peak", "of", "it", "was", "observed", "at", "m/z", "515", "." ]
+  }, {
+    "sentence_tokens" : [ "Its", "characteristic", "fragment", "ions", ",", "such", "as", "m/z", "191", "and", "349", ",", "were", "in", "consistent", "with", "those", "reported", "in", "the", "literature", "[", "21,22", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Peak", "7", ",", "with", "the", "tR", "of", "13.67", ",", "was", "identified", "as", "crocin", "(", "lambda", "442", ")", "and", "the", "[", "M", "-", "H", "]", "peak", "of", "crocin", "was", "observed", "at", "m/z", "976", "." ]
+  }, {
+    "sentence_tokens" : [ "Its", "characteristic", "fragment", "ions", ",", "such", "as", "m/z", "487", ",", "were", "also", "identical", "with", "those", "of", "the", "standard", "and", "those", "reported", "by", "Kelebek", "[", "23", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Peak", "8,", "was", "identified", "as", "quercetin", ",", "with", "the", "t", "of", "14.82", "and", "lambda", "of", "256", ",", "368", "." ]
+  }, {
+    "sentence_tokens" : [ "It", "also", "showed", "the", "release", "of", "predominant", "fragment", "ion", "at", "m/z", "151", ",", "these", "results", "were", "in", "agreement", "with", "those", "reported", "in", "the", "literature", "[", "24", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Peak", "9", ",", "with", "the", "tR", "of", "15.75", ",", "was", "identified", "as", "luteolin", "and", "the", "[", "M", "-", "H", "]", "peak", "was", "observed", "at", "m/z", "285", "." ]
+  }, {
+    "sentence_tokens" : [ "Peak", "10", ",", "with", "the", "t", "of", "16.22", ",", "was", "identified", "as", "Tenacissoside", "I", "(", "lambda", "251", ")", "and", "the", "[", "M", "-", "H", "]", "peak", "was", "observed", "at", "m/z", "814", "." ]
+  }, {
+    "sentence_tokens" : [ "Peak", "11", "yielded", "[", "M", "-", "H", "]", "at", "m/z", "455", ",", "with", "lambda", "of", "210", "and", "t", "of", "21.07", ",", "was", "identified", "as", "ursolic", "acid", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "characteristics", "of", "all", "the", "compounds", "identified", "were", "found", "to", "be", "identical", "with", "those", "of", "standard", "compounds", "." ]
+  }, {
+    "sentence_tokens" : [ "2.3", "." ]
+  }, {
+    "sentence_tokens" : [ "Screening", "of", "Active", "Compounds", "from", "Burdock", "Leaf", "Fraction", "Based", "on", "Metabolomics", "." ]
+  }, {
+    "sentence_tokens" : [ "2.3.1", "." ]
+  }, {
+    "sentence_tokens" : [ "UPLC-MS", "Data", "Processing", "and", "Multivariate", "Data", "Analysis", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "data", "array", "composed", "of", "the", "variables", "of", "samples", ",", "retention", "time", "t", ",", "m/z", "values", "(", "molecular", "features", ")", ",", "and", "normalized", "signal", "intensity", "of", "the", "m/z", "value", "was", "generated", "after", "UPLC-MS", "data", "were", "processed", "by", "MarkerLynx", "software", "(", "4.1", ";", "WATERS", ":", "Manchester", ",", "UK", ")", "[", "25", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Subsequently", ",", "checked", "m/z", "values", "and", "those", "being", "shown", "in", "the", "blank", "samples", "considered", "as", "noise", "or", "contaminants", "were", "moved", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "order", "to", "treat", "the", "missing", "values", ",", "frequency", "of", "occurrence", "of", "mass", "ion", "(", "nonzero", "value", ")", "less", "than", "80", "%", "was", "removed", "[", "26", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Then", "unit", "variance", "method", "was", "used", "for", "preprocessing", "of", "the", "data", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "order", "to", "find", "significant", "differences", "between", "groups", ",", "the", "resulting", "data", "arrays", "were", "used", "afterwards", "for", "multivariate", "statistical", "analysis", ",", "which", "were", "principal", "component", "analysis", "(", "PCA", ")", "and", "Partial", "least", "squares", "discriminant", "analysis", "(", "PLS-DA", ")", "with", "SIMCAP", "+", "11", "software", "package", "[", "27", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Cross", "validation", "was", "conducted", "to", "verify", "whether", "PLS-DA", "was", "a", "good", "model", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "variable", "importance", "in", "projection", "(", "VIP", ")", "was", "used", "to", "discern", "the", "differences", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "VIP", "value", "of", "each", "variable", "was", "got", "from", "PLS-DA", "score", "plot", ",", "which", "was", "used", "for", "classification", "purposes", "in", "metabolomics", "studies", ",", "and", "to", "indicate", "its", "contribution", "to", "the", "classification", "of", "samples", "." ]
+  }, {
+    "sentence_tokens" : [ "When", "the", "VIP", "value", "is", "higher", ",", "the", "metabolites", "are", "considered", "important", "for", "discriminating", "between", "different", "groups", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "metabolites", "with", "a", "larger", "VIP", "value", "represented", "higher", "contribution", "to", "the", "discrimination", "between", "two", "groups", "." ]
+  }, {
+    "sentence_tokens" : [ "According", "to", "the", "VIP", "values", "and", "other", "results", "of", "data", "analysis", ",", "screened", "the", "peaks", "with", "significant", "decrease", "of", "peak", "area", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "selected", "components", "were", "the", "compounds", "with", "biofilm", "inhibition", "potential", "." ]
+  }, {
+    "sentence_tokens" : [ "Then", "further", "identified", "the", "compounds", "corresponding", "to", "the", "peaks", "and", "find", "out", "the", "active", "compounds", "with", "anti-biofilm", "activity", "." ]
+  }, {
+    "sentence_tokens" : [ "2.3.2", "." ]
+  }, {
+    "sentence_tokens" : [ "Screening", "Potential", "Anti-Biofilm", "Compounds", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "results", "of", "UPLC-MS", "chromatograms", "of", "samples", "in", "Groups", "2", "and", "3", "were", "converted", "into", "a", "data", "array", "." ]
+  }, {
+    "sentence_tokens" : [ "After", "data", "processing", "and", "multivariate", "data", "analysis", ",", "the", "data", "were", "displayed", "as", "PLS-DA", "score", "plots", "(", "Figure", "2", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "As", "shown", "in", "Figure", "2", ",", "the", "data", "of", "Groups", "2", "and", "3", "were", "clearly", "clustered", "into", "two", "groups", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "meant", "Groups", "2", "and", "3", "were", "indeed", "different", "in", "the", "levels", "or", "occurrences", "of", "their", "components.There", "were", "area", "reductions", "in", "peaks", "of", "burdock", "leaf", "fractions", "after", "inhibiting", "Pseudomonas", "aeruginosa", ",", "which", "was", "probably", "because", "some", "compounds", "in", "burdock", "leaf", "fractions", "had", "exerted", "inhibition", "effect", "on", "biofilm", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "compounds", "that", "had", "greatest", "impact", "on", "the", "division", "of", "the", "two", "sample", "groups", "were", "found", ",", "so", "as", "to", "find", "the", "compounds", "whose", "peak", "area", "reduced", "significantly", "." ]
+  }, {
+    "sentence_tokens" : [ "Thus", ",", "PCA", "and", "PLS-DA", "were", "performed", "to", "find", "the", "components", "contributing", "the", "most", "to", "the", "difference", "between", "these", "two", "groups", "of", "samples", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "sevenfold", "cross", "validation", "results", "had", "the", "highest", "accuracy", "." ]
+  }, {
+    "sentence_tokens" : [ "All", "samples", "could", "be", "put", "in", "95", "%", "confidence", "intervals", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "peaks", "with", "VIP", "value", "greater", "than", "1.15", "were", "obtained", "." ]
+  }, {
+    "sentence_tokens" : [ "Among", "these", "peaks", ",", "only", "the", "peaks", "with", "reducing", "area", "were", "selected", "." ]
+  }, {
+    "sentence_tokens" : [ "Then", ",", "we", "further", "conducted", "nonparametric", "test", "using", "SPSS", "17.0", ",", "and", "p", "<", "0.05", "was", "considered", "to", "indicate", "statistical", "significance", "." ]
+  }, {
+    "sentence_tokens" : [ "Thus", ",", "81", "ion", "t", "-m/z", "pair", "points", "with", "significant", "reduction", "of", "peak", "area", "were", "screened", "out", "(", "Table", "S1", ")", ",", "and", "the", "81", "compounds", "corresponding", "to", "these", "selected", "ions", "(", "peaks", ")", "were", "potential", "ingredients", "with", "anti-biofilm", "activity", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "results", "of", "these", "components", "provided", "a", "clear", "direction", "for", "the", "screening", "of", "active", "compounds", "with", "anti-biofilm", "activity", ",", "narrowing", "the", "scope", "of", "screening", "." ]
+  }, {
+    "sentence_tokens" : [ "Meanwhile", ",", "the", "results", "provided", "technical", "guidance", "and", "basic", "data", "for", "future", "separation", "of", "these", "anti-biofilm", "compounds", "from", "burdock", "leaf.According", "to", "relevant", "information", "obtained", "in", "Section", "3.2", ",", "similarly", ",", "some", "peaks", "listed", "in", "Table", "S1", "were", "identified", "." ]
+  }, {
+    "sentence_tokens" : [ "As", "shown", "in", "Table", "2", ",", "No.", "6", "was", "identified", "as", "caffeic", "acid", "with", "the", "t", "of", "8.25", "." ]
+  }, {
+    "sentence_tokens" : [ "No.", "25", "was", "identified", "as", "rutin", "with", "the", "t", "of", "12.22", "." ]
+  }, {
+    "sentence_tokens" : [ "No.", "60", ",", "No.", "65", ",", "No.", "73", ",", "No.", "79", "and", "No.", "81", "were", "identified", "as", "cynarin", ",", "crocin", ",", "p-coumaric", "acid", ",", "quercetin", "and", "ursolic", "acid", ",", "respectively", "." ]
+  }, {
+    "sentence_tokens" : [ "Meanwhile", ",", "combing", "the", "database", "(", "HMDB", ",", "METLIN", ",", "Massbank", ",", "etc.", ")", "as", "references", ",", "other", "potential", "anti-biofilm", "compounds", "are", "being", "identified", "on", "the", "basis", "of", "relevant", "literature", ",", "database", "and", "the", "fragmentation", "patterns", "of", "mass", "spectrometry", "." ]
+  }, {
+    "sentence_tokens" : [ "Referring", "to", "the", "activity", "evaluation", "experiments", ",", "rutin", ",", "ursolic", "acid", ",", "caffeic", "acid", ",", "p-coumaric", "acid", "and", "quercetin", "were", "found", "to", "exhibit", "significant", "biofilm", "inhibitory", "activity", "." ]
+  }, {
+    "sentence_tokens" : [ "As", "shown", "in", "Table", "2", ",", "the", "lowest", "concentrations", "of", "rutin", ",", "ursolic", "acid", ",", "caffeic", "acid", ",", "p-coumaric", "acid", "and", "quercetin", "that", "could", "completely", "inhibit", "(", "with", "inhibition", "rate", "of", "100", "%", ")", "the", "formation", "of", "biofilm", "of", "Pseudomonas", "aeruginosa", "were", "0.5", ",", "0.5", ",", "0.5", ",", "0.25", "and", "0.5", "mg", "." ]
+  }, {
+    "sentence_tokens" : [ "mL", ",", "respectively", "." ]
+  }, {
+    "sentence_tokens" : [ "Thus", ",", "these", "five", "compounds", "were", "the", "main", "anti-biofilm", "ingredients", "in", "burdock", "leaf.Through", "analyzing", "the", "changes", "of", "burdock", "leaf", "fraction", "before", "and", "after", "biofilm", "inhibiting", ",", "following", "a", "series", "of", "data", "statistics", "and", "analysis", ",", "as", "well", "as", "structural", "identification", ",", "a", "series", "of", "potential", "active", "compounds", "with", "biofilm", "inhibiting", "activity", "could", "be", "screened", "out", "from", "burdock", "leaves", "." ]
+  }, {
+    "sentence_tokens" : [ "Compared", "to", "the", "conventional", "methods", "for", "active", "compounds", "screening", ",", "this", "approach", "eliminated", "or", "simplified", "the", "process", "of", "gradual", "separation", ",", "purification", "and", "the", "repeated", "activity", "evaluation", "in", "traditional", "screening", "methods", "." ]
+  }, {
+    "sentence_tokens" : [ "It", "greatly", "simplified", "the", "screening", "process", "of", "active", "ingredients", ",", "saved", "a", "lot", "of", "manpower", "and", "material", "resources", ",", "which", "was", "in", "favor", "of", "significantly", "accelerating", "the", "screening", "efficiency", "for", "active", "ingredients", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "proposed", "approach", "in", "this", "study", "might", "provide", "a", "new", "way", "for", "fast", "and", "convenient", "screening", "of", "biofilm", "inhibition", "components", "from", "plants.Next", ",", "this", "screening", "method", "will", "be", "applied", "to", "other", "plants", "for", "screening", "of", "anti-biofilm", "ingredients", ",", "in", "order", "to", "further", "improve", "this", "method", ",", "providing", "the", "basis", "for", "wide", "applications", "of", "the", "proposed", "approach", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "synergy", "effect", "between", "these", "screened", "anti-biofilm", "compounds", "will", "also", "be", "investigated", "." ]
+  }, {
+    "sentence_tokens" : [ "3", "." ]
+  }, {
+    "sentence_tokens" : [ "Experimental", "Section", "." ]
+  }, {
+    "sentence_tokens" : [ "3.1", "." ]
+  }, {
+    "sentence_tokens" : [ "Chemicals", "and", "Reagents", "." ]
+  }, {
+    "sentence_tokens" : [ "Chlorogenic", "acid", "(", "98", "%", ")", ",", "caffeic", "acid", "(", "98", "%", ")", ",", "p-coumaric", "acid", "(", "99", "%", ")", ",", "quercetin", "(", "97", "%", ")", ",", "ursolic", "acid", "(", "98", "%", ")", ",", "rutin", "(", "98", "%", ")", ",", "luteolin", "(", "98", "%", ")", ",", "crocin", "(", "98", "%", ")", ",", "cynarin", "(", "97", "%", ")", ",", "benzoic", "acid", "(", "99", "%", ")", "and", "Tenacissoside", "I", "(", "97", "%", ")", "were", "purchased", "from", "Aladdin", "(", "Shanghai", ",", "China", ")", "and", "Sigma", "(", "Shanghai", ",", "China", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Burdock", "leaf", "was", "provided", "by", "Xuzhou", "Wangda", "Farm", "and", "Sideline", "Products", "Co", ".,", "Ltd.", "(", "Xuzhou", ",", "China", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "3.2", "." ]
+  }, {
+    "sentence_tokens" : [ "Bacteria", "Culture", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "strain", "Pseudomonas", "aeruginosa", "ATCC", "9027", "was", "purchased", "from", "Guangdong", "Microbiological", "Culture", "Collection", "Center", "(", "Guangzhou", ",", "China", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "It", "was", "activated", "and", "inoculated", "into", "fresh", "LB", "broth", ",", "then", "cultivated", "at", "37", "degrees", "C", "for", "12", "h." ]
+  }, {
+    "sentence_tokens" : [ "A", "bacterial", "suspension", "of", "about", "108", "CFU", "." ]
+  }, {
+    "sentence_tokens" : [ "mL", "was", "prepared", "for", "the", "following", "experiments.The", "main", "composition", "of", "the", "second", "and", "the", "third", "group", "of", "samples", "could", "be", "considered", "as", "the", "composition", "of", "burdock", "leaf", "fraction", "before", "and", "after", "inhibiting", "Pseudomonas", "aeruginosa", "biofilm", ",", "respectively", "." ]
+  }, {
+    "sentence_tokens" : [ "Group", "2", "includes", "samples", "1", "-", "5", "(", "S1", "-", "S5", ")", "and", "Group", "3", "includes", "samples", "6", "-", "10", "(", "S6", "-", "S10", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "3.3", "." ]
+  }, {
+    "sentence_tokens" : [ "Burdock", "Leaf", "Fraction", "Preparation", "." ]
+  }, {
+    "sentence_tokens" : [ "Dry", "burdock", "leaf", "was", "pulverized", "into", "powder", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "powder", "of", "burdock", "leaf", "was", "extracted", "in", "a", "flask", "containing", "30", "%", "ethanol", "solution", ";", "the", "ratio", "of", "solvent", "to", "solid", "was", "20:1", "(", "mL", "." ]
+  }, {
+    "sentence_tokens" : [ "g", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "extraction", "was", "carried", "out", "at", "30", "degrees", "C", ",", "250", "rpm", "for", "10", "h." ]
+  }, {
+    "sentence_tokens" : [ "The", "extracts", "were", "filtered", "and", "then", "concentrated", "using", "a", "rotary", "evaporator", "at", "50", "degrees", "C", "under", "vacuum", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "crude", "extracts", "were", "dissolved", "in", "water", ",", "then", "loaded", "into", "a", "glass", "column", "(", "6", "cm", "x", "100", "cm", ")", "filled", "with", "macroporous", "resin", "(", "HPD-100", ",", "Cangzhou", "Bon", "Adsorber", "Technology", "Co", ".,", "Ltd", ".,", "Cangzhou", ",", "China", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "macroporous", "resin", "column", "chromatography", ",", "20", "%", ",", "34", "%", "and", "70", "%", "ethanol", "solutions", "were", "used", "to", "desorb", "targeted", "components", "at", "a", "successively", "flow", "of", "1.5", "BV", "." ]
+  }, {
+    "sentence_tokens" : [ "h", ",", "respectively", "." ]
+  }, {
+    "sentence_tokens" : [ "Only", "the", "34", "%", "ethanol", "elution", "fraction", "was", "collected", "and", "dried", "." ]
+  }, {
+    "sentence_tokens" : [ "Then", ",", "the", "34", "%", "ethanol", "solution", "elution", "fraction", "was", "obtained", "and", "used", "for", "the", "following", "experiments", "." ]
+  }, {
+    "sentence_tokens" : [ "3.4", "." ]
+  }, {
+    "sentence_tokens" : [ "Samples", "Preparation", "." ]
+  }, {
+    "sentence_tokens" : [ "Standard", "samples", "(", "chlorogenic", "acid", ",", "caffeic", "acid", ",", "p-coumaric", "acid", ",", "quercetin", ",", "ursolic", "acid", ",", "rutin", ",", "luteolin", ",", "crocin", ",", "benzoic", "acid", "and", "Tenacissoside", "I", ")", "were", "dissolved", "with", "methanol", "(", "HPLC", "grade", ")", ";", "the", "concentration", "of", "each", "standard", "was", "1", "mg", "." ]
+  }, {
+    "sentence_tokens" : [ "mL", "." ]
+  }, {
+    "sentence_tokens" : [ "All", "of", "the", "standard", "samples", "were", "stored", "at", "4", "degrees", "C", "before", "use.The", "samples", "preparation", "methods", "and", "sample", "groups", "are", "shown", "in", "Figure", "S1", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "first", "group", "of", "samples", "was", "the", "solution", "of", "34", "%", "ethanol", "elution", "fraction", "of", "burdock", "leaf", "(", "2", "mg", "." ]
+  }, {
+    "sentence_tokens" : [ "mL", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "As", "shown", "in", "Figure", "S1", ",", "one", "milliliter", "of", "this", "burdock", "leaf", "fraction", "solution", "(", "2", "mg", "." ]
+  }, {
+    "sentence_tokens" : [ "mL", ")", "was", "added", "to", "tubes", "containing", "2.9", "mL", "of", "LB", "broth", "and", "0.1", "mL", "of", "bacteria", "suspension", "(", "108", "cfu", "." ]
+  }, {
+    "sentence_tokens" : [ "mL", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Then", "the", "mixture", "was", "incubated", "at", "37", "degrees", "C", "for", "24", "h", "and", "centrifuged", "at", "7000", "r.", "min", "for", "5", "min", ",", "and", "the", "supernatant", "obtained", "was", "named", "the", "third", "group", "of", "samples", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "second", "group", "of", "samples", "was", "prepared", "by", "the", "same", "method", "as", "the", "third", "group", "without", "inoculation", "of", "bacteria", "." ]
+  }, {
+    "sentence_tokens" : [ "Each", "group", "had", "five", "samples", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "main", "composition", "of", "the", "second", "and", "the", "third", "group", "of", "samples", "could", "be", "considered", "to", "be", "the", "composition", "of", "burdock", "leaf", "fraction", "before", "and", "after", "inhibiting", "Pseudomonas", "aeruginosa", "biofilm", ",", "respectively", "." ]
+  }, {
+    "sentence_tokens" : [ "Acetonitrile", "precipitation", "[", "28", "]", "was", "applied", "to", "remove", "proteins", "before", "UPLC-MS", "analysis", "." ]
+  }, {
+    "sentence_tokens" : [ "Three", "times", "volume", "of", "acetonitrile", "was", "added", "to", "the", "third", "and", "the", "second", "group", "of", "samples", ",", "standing", "for", "10", "min", ",", "and", "then", "centrifuged", "for", "1", "min", "at", "12,000", "r.", "min", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "solution", "obtained", "was", "transferred", "to", "EP", "tubes", "for", "use", "." ]
+  }, {
+    "sentence_tokens" : [ "3.5", "." ]
+  }, {
+    "sentence_tokens" : [ "Anti-Biofilm", "Activity", "." ]
+  }, {
+    "sentence_tokens" : [ "Anti-biofilm", "activity", "of", "the", "fraction", "of", "burdock", "leaf", "was", "evaluated", "by", "the", "method", "of", "crystal", "violet", "staining", "[", "29", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "solution", "of", "34", "%", "ethanol", "elution", "fraction", "of", "burdock", "leaf", "(", "100", "mu", "L", ")", ",", "which", "had", "serial", "dilutions", ",", "were", "added", "to", "the", "wells", "of", "a", "24-well", "culture", "plate", "(", "Sarstedt", ",", "Newton", ",", "NC", ",", "USA", ")", "containing", "800", "mu", "L", "of", "fresh", "broth", "medium", "and", "100", "mu", "L", "bacteria", "suspension", "(", "108", "cfu", "." ]
+  }, {
+    "sentence_tokens" : [ "mL", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "After", "incubation", "for", "24", "h", ",", "growth", "medium", "was", "removed", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "contents", "of", "the", "wells", "were", "rinsed", "3", "times", "with", "PBS", ",", "fixed", "by", "drying", "for", "3", "h", "in", "a", "37", "degrees", "C", "incubator", "." ]
+  }, {
+    "sentence_tokens" : [ "Once", "the", "wells", "were", "fully", "dried", ",", "1", "mL", "of", "0.1", "%", "crystal", "violet", "stain", "was", "added", "to", "wells", "to", "stain", "for", "15", "min", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "excess", "stain", "was", "rinsed", "off", "with", "tap", "water", "and", "then", "1", "mL", "of", "95", "%", "(", "v/v", ")", "ethanol", "was", "added", "to", "each", "well", "for", "1", "h", "to", "release", "the", "stain", "." ]
+  }, {
+    "sentence_tokens" : [ "One", "hundred", "microliters", "from", "each", "well", "was", "then", "transferred", "to", "a", "new", "plate", "for", "spectrophotometric", "analysis", "(", "Optical", "Density", "(", "OD", ")", "570", "nm", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "all", "the", "assays", ",", "a", "positive", "control", "without", "burdock", "leaf", "fraction", "and", "a", "negative", "control", "without", "inoculation", "were", "prepared", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "procedure", "was", "performed", "in", "triplicate", "and", "the", "means", "were", "calculated", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "anti-biofilm", "activity", "of", "rutin", ",", "ursolic", "acid", ",", "caffeic", "acid", ",", "p-coumaric", "acid", ",", "crocin", ",", "cynarin", "and", "quercetin", "was", "also", "evaluated", "." ]
+  }, {
+    "sentence_tokens" : [ "3.6", "." ]
+  }, {
+    "sentence_tokens" : [ "Chemical", "Composition", "Analysis", "and", "Anti-Biofilm", "Compounds", "Screening", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "chemical", "composition", "of", "the", "34", "%", "ethanol", "elution", "fraction", "of", "burdock", "leaf", "was", "investigated", "by", "ultra-performance", "liquid", "chromatography-tandem", "mass", "spectrometry", "(", "UPLC-MS", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "High", "resolution", "mass", "was", "measured", "for", "metabolites", "after", "UPLC", "separation", "." ]
+  }, {
+    "sentence_tokens" : [ "Chromatographic", "separations", "were", "performed", "on", "an", "Acquity", "UPLC", "system", "(", "Waters", ",", "Milford", ",", "MA", ",", "USA", ")", "equipped", "with", "BEH", "C18", "column", "(", "50", "x", "2.1", "mm", ",", "7", "mu", "m", ",", "Waters", ",", "Milford", ",", "MA", ",", "USA", ")", ",", "applying", "the", "following", "binary", "gradient", "at", "a", "flow", "rate", "of", "0.3", "mL", "." ]
+  }, {
+    "sentence_tokens" : [ "min", ":", "0", "-", "1", "min", ",", "isocratic", "95", "%", "A", "(", "water", "and", "formic", "acid", ",", "99.9/0.1", "(", "v/v", ")", ")", ",", "5", "%", "B", "(", "acetonitrile", "and", "formic", "acid", ",", "99.9/0.1", "(", "v/v", ")", ")", ";", "1", "-", "16", "min", ",", "linear", "from", "5", "%", "to", "95", "%", "B", ";", "16", "-", "18", "min", ",", "isocratic", "95", "%", "B", ";", "18", "-", "20", "min", ",", "isocratic", "5", "%", "B." ]
+  }, {
+    "sentence_tokens" : [ "The", "injection", "volume", "was", "2", "mu", "L.The", "eluted", "output", "from", "the", "UPLC", "equipment", "was", "directly", "connected", "to", "a", "SYNAPT", "Mass", "Spectrometer", "(", "Waters", ",", "Milford", ",", "MA", ",", "USA", ")", ",", "equipped", "with", "an", "electrospray", "ionization", "source", "operating", "in", "negative", "mode", ",", "using", "the", "following", "instrument", "settings", ":", "nebulizer", "gas", ",", "nitrogen", ",", "capillary", ",", "3000", "V", ",", "Cone", "voltage", "20", "V", ",", "desolvation", "temperature", "400", "degrees", "C", ",", "ion", "source", "temperature", "100", "degrees", "C", ",", "desolvation", "gas", "flow", "500", "L.", "h", ",", "cone", "gas", "flow", "50", "L.", "h", "." ]
+  }, {
+    "sentence_tokens" : [ "Standard", "samples", "and", "the", "first", "group", "of", "samples", "were", "used", "for", "chemical", "composition", "analysis", "of", "burdock", "leaf", "fraction", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "peak", "belongs", "to", "each", "compound", "was", "determined", "by", "using", "the", "software", "Masslynx", "(", "Waters", ",", "Milford", ",", "MA", ",", "USA", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Identification", "of", "the", "compounds", "from", "burdock", "leaf", "was", "achieved", "by", "comparison", "of", "retention", "times", ",", "MS", "and", "UV", "spectra", "with", "those", "of", "standards", "and", "the", "literature", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "second", "and", "the", "third", "group", "of", "samples", "were", "used", "for", "screening", "of", "anti-biofilm", "compounds", "in", "burdock", "leaf", "based", "on", "metabolomics", "." ]
+  }, {
+    "sentence_tokens" : [ "4", "." ]
+  }, {
+    "sentence_tokens" : [ "Conclusions", "." ]
+  }, {
+    "sentence_tokens" : [ "Chlorogenic", "acid", ",", "caffeic", "acid", ",", "p-coumaric", "acid", ",", "quercetin", ",", "ursolic", "acid", ",", "rutin", ",", "cynarin", ",", "luteolin", ",", "crocin", ",", "benzoic", "acid", "and", "Tenacissoside", "I", "were", "identified", "in", "the", "fraction", "through", "UPLC-MS", "analysis", "." ]
+  }, {
+    "sentence_tokens" : [ "Through", "analyzing", "the", "metabolomics", "changes", "of", "burdock", "leaf", "fraction", "before", "and", "after", "inhibiting", "biofilm", ",", "coupled", "with", "UPLC-MS", "data", "processing", "and", "multivariate", "data", "analysis", ",", "81", "variables", "were", "screened", "as", "potential", "anti-biofilm", "ingredients", ";", "among", "them", ",", "rutin", ",", "ursolic", "acid", ",", "caffeic", "acid", ",", "p-coumaric", "acid", "and", "quercetin", "were", "identified", "and", "confirmed", "as", "the", "main", "anti-biofilm", "compounds", "in", "burdock", "leaf", "fraction", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "proposed", "method", "simplified", "the", "complex", "purification", "and", "activity", "evaluation", "process", "of", "the", "traditional", "method", "for", "screening", "of", "active", "ingredients", ",", "and", "it", "is", "expected", "to", "become", "a", "convenient", "and", "practical", "method", "for", "fast", "screening", "of", "the", "active", "ingredients", "from", "plants", "." ]
+  } ]
+}

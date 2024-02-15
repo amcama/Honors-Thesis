@@ -1,193 +1,762 @@
-[ {
-  "sentence_tokens" : [ "Rather", ",", "the", "fact", "that", "isoprenaline", "induced", "phosphorylation", "of", "HSL", "and", "perilipin", "located", "at", "droplet", "clusters", "supports", "the", "hypothesis", "that", "surface", "associated", "lipid", "droplets", "function", "as", "an", "intermediate", "site", "for", "lipid", "transfer.Further", ",", "we", "identified", "several", "organelles", ",", "including", "mitochondria", ",", "to", "be", "distributed", "in", "close", "vicinity", "of", "surface", "associated", "lipid", "droplets", "." ],
-  "event_indices" : [ 5, 6, 7, 8, 9, 10 ],
-  "type" : "Positive_regulation",
-  "polarity" : true,
-  "controller_indices" : [ 5, 6 ],
-  "controlled_indices" : [ 7, 8, 9, 10 ],
-  "trigger_indices" : [ 6, 7 ],
-  "rule_name" : "Positive_early_regulation",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Rather", ",", "the", "fact", "that", "isoprenaline", "induced", "phosphorylation", "of", "HSL", "and", "perilipin", "located", "at", "droplet", "clusters", "supports", "the", "hypothesis", "that", "surface", "associated", "lipid", "droplets", "function", "as", "an", "intermediate", "site", "for", "lipid", "transfer.Further", ",", "we", "identified", "several", "organelles", ",", "including", "mitochondria", ",", "to", "be", "distributed", "in", "close", "vicinity", "of", "surface", "associated", "lipid", "droplets", "." ],
-  "event_indices" : [ 5, 6, 7, 8, 9, 10, 11, 12 ],
-  "type" : "Positive_regulation",
-  "polarity" : true,
-  "controller_indices" : [ 5, 6 ],
-  "controlled_indices" : [ 7, 8, 9, 10, 11, 12 ],
-  "trigger_indices" : [ 6, 7 ],
-  "rule_name" : "Positive_early_regulation",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Further", ",", "treatment", "with", "Acipimox", "effectively", "reduced", "basal", "and", "isoprenaline", "induced", "lipolysis", ",", "detected", "as", "decreased", "glycerol", "release", "(", "Figure", "3", "(", "c", ")", ")", "." ],
-  "event_indices" : [ 9, 10, 11, 12 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 9, 10 ],
-  "controlled_indices" : [ 11, 12 ],
-  "trigger_indices" : [ 10, 11 ],
-  "rule_name" : "Positive_early_activation",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "While", "adrenergic", "stimulation", "was", "shown", "to", "generate", "microlipid", "droplets", "(", "mLD", ")", ",", "insulin", "promoted", "lipid", "droplet", "fusion", "in", "cultured", "3T3-L1", "adipocytes", "[", "21", "]", "." ],
-  "event_indices" : [ 10, 11, 12, 13, 14, 15 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 13, 14 ],
-  "controlled_indices" : [ 10, 11 ],
-  "trigger_indices" : [ 14, 15 ],
-  "rule_name" : "Positive_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Both", "acute", "(", "3", "h", ")", "and", "prolonged", "(", "48", "h", ")", "treatment", "with", "Triacsin", "C", "markedly", "abolished", "both", "non-", "and", "insulin", "stimulated", "lipogenesis", "(", "Figure", "3", "(", "a", ")", ")", "as", "expected", "." ],
-  "event_indices" : [ 21, 22, 23, 24 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 21, 22 ],
-  "controlled_indices" : [ 23, 24 ],
-  "trigger_indices" : [ 22, 23 ],
-  "rule_name" : "Positive_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Both", "acute", "(", "3", "h", ")", "and", "prolonged", "(", "48", "h", ")", "treatment", "with", "Triacsin", "C", "markedly", "abolished", "both", "non-", "and", "insulin", "stimulated", "lipogenesis", "(", "Figure", "3", "(", "a", ")", ")", "as", "expected", "." ],
-  "event_indices" : [ 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24 ],
-  "type" : "Negative_activation",
-  "polarity" : false,
-  "controller_indices" : [ 14, 15, 16 ],
-  "controlled_indices" : [ 23, 24 ],
-  "trigger_indices" : [ 17, 18 ],
-  "rule_name" : "Negative_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Neither", "acute", "or", "prolonged", "stimulation", "with", "insulin", "or", "isoprenaline", ",", "or", "pharmacologic", "intervention", "to", "suppress", "lipid", "flux", ",", "affected", "the", "presence", "of", "these", "lipid", "droplets", "." ],
-  "entity_one_indices" : [ 8, 9 ],
-  "entity_two_indices" : [ 6, 7 ]
-}, {
-  "sentence_tokens" : [ "Still", ",", "phosphorylated", "perilipin", "and", "hormone", "sensitive", "lipase", "accumulated", "at", "these", "droplets", "following", "adrenergic", "stimuli", ",", "which", "supports", "metabolic", "activity", "at", "these", "locations", "." ],
-  "entity_one_indices" : [ 5, 6, 7, 8 ],
-  "entity_two_indices" : [ 3, 4 ]
-}, {
-  "sentence_tokens" : [ "In", "times", "of", "plenty", ",", "the", "lipid", "droplet", "rapidly", "grows", "in", "size", ",", "whereas", "lipase", "activity", "liberates", "fatty", "acids", "to", "support", "an", "increased", "energy", "demand", "in", "other", "tissues", ";", "both", "processes", "are", "tightly", "regulated", "by", "insulin", "." ],
-  "entity_one_indices" : [ 35, 36 ],
-  "entity_two_indices" : [ 14, 15 ]
-}, {
-  "sentence_tokens" : [ "The", "presence", "of", "enlarged", ",", "hypertrophic", "adipocytes", "is", "a", "key", "characteristic", "of", "impaired", "adipose", "tissue", "function", "[", "1", "]", ",", "and", "increased", "adipocyte", "size", "correlates", "with", "insulin", "resistance", "and", "type", "2", "diabetes", "[", "2", "]", "." ],
-  "entity_one_indices" : [ 29, 30, 31, 32 ],
-  "entity_two_indices" : [ 26, 27, 28 ]
-}, {
-  "sentence_tokens" : [ "The", "amount", "of", "cholesterol", "correlates", "positively", "with", "cell", "size", ",", "which", "supports", "an", "increased", "need", "for", "cholesterol", "as", "the", "cell", "grows", "larger", "[", "8]", "." ],
-  "entity_one_indices" : [ 16, 17 ],
-  "entity_two_indices" : [ 3, 4 ]
-}, {
-  "sentence_tokens" : [ "Adrenergic", "stimulation", "caused", "an", "accumulation", "of", "phosphorylated", "perilipin", "(", "pS522", ")", "at", "these", "clusters", ",", "supporting", "lipolytic", "activity", "to", "occur", "at", "these", "droplets", "[", "17", "]", "." ],
-  "entity_one_indices" : [ 9, 10 ],
-  "entity_two_indices" : [ 7, 8 ]
-}, {
-  "sentence_tokens" : [ "Lipid", "droplet", "patches", "were", "suggested", "to", "resemble", "sites", "of", "lipolysis", "[", "18", "]", ",", "and", "small", "lipid", "droplets", ",", "decorated", "with", "mitochondria", ",", "was", "proposed", "to", "form", "following", "Rosiglitazone", "treatment", "[", "19,20", "]", "." ],
-  "entity_one_indices" : [ 28, 29 ],
-  "entity_two_indices" : [ 9, 10 ]
-}, {
-  "sentence_tokens" : [ "Acipimox", "(", "A7856", ")", ",", "Triascin", "C", "(", "T4540", ")", "and", "antibodies", "towards", "CIDEC", "(", "HPA020553", ")", "were", "from", "Sigma", "." ],
-  "entity_one_indices" : [ 13, 14 ],
-  "entity_two_indices" : [ 0, 1 ]
-}, {
-  "sentence_tokens" : [ "The", "patients", ",", "all", "female", ",", "were", "without", "known", "diabetes", "(", "type", "1", "or", "type", "2", ")", "or", "thyroid", "gland", "dysfunction", "." ],
-  "entity_one_indices" : [ 14, 15 ],
-  "entity_two_indices" : [ 11, 12 ]
-}, {
-  "sentence_tokens" : [ "Suspension", "of", "small", "tissue", "pieces", "was", "washed", "2", "times", ",", "resuspended", "in", "DMEM", "(", "containing", "PEST", ",", "PIA", "and", "3.5", "%", "BSA", ")", ",", "and", "kept", "at", "37", "degrees", "C", "in", "5", "%", "CO", "for", "the", "indicated", "time", "period", "(", "48", "h", ")", "." ],
-  "entity_one_indices" : [ 33, 34 ],
-  "entity_two_indices" : [ 17, 18 ]
-}, {
-  "sentence_tokens" : [ "In", "short", ",", "isolated", "cells", "were", "incubated", "for", "24", "h", "in", "37", "degrees", "C", "incubator", ",", "followed", "by", "2-h", "treatment", "with", "Bodipy", "558/568", "C12", ",", "washed", "3", "-", "4", "times", "and", "re-suspended", "in", "fresh", "DMEM", "(", "supplemented", "with", "PEST", ",", "PIA", ",", "and", "3.5", "%", "BSA", ")", "." ],
-  "entity_one_indices" : [ 40, 41 ],
-  "entity_two_indices" : [ 23, 24 ]
-}, {
-  "sentence_tokens" : [ "After", "electroporation", ",", "the", "cells", "were", "transferred", "into", "DMEM", "with", "PEST", ",", "PIA", "and", "3.5", "%", "BSA", ",", "and", "cultured", "at", "37", "degrees", "C", "in", "5", "%", "CO", "." ],
-  "entity_one_indices" : [ 27, 28 ],
-  "entity_two_indices" : [ 12, 13 ]
-}, {
-  "sentence_tokens" : [ "Imaging", "was", "performed", "using", "a", "Nikon", "A1", "plus", "confocal", "microscope", "with", "a", "60", "x", "Apo", "DIC", "oil", "immersion", "objective", "with", "a", "NA", "of", "1.40", "(", "Nikon", "Instruments", ")", "and", "appropriate", "filter", "sets", "." ],
-  "entity_one_indices" : [ 21, 22 ],
-  "entity_two_indices" : [ 14, 15, 16 ]
-}, {
-  "sentence_tokens" : [ "Images", "were", "usually", "acquired", "at", "a", "generous", "TIRF", "angle", "to", "allow", "imaging", "of", "protein", "stains", "related", "to", "lipid", "droplets", ",", "such", "as", "phosphorylated", "perilipin-1", "." ],
-  "entity_one_indices" : [ 23, 24 ],
-  "entity_two_indices" : [ 7, 8 ]
-}, {
-  "sentence_tokens" : [ "In", "triplicates", ",", "800", "mu", "l", "of", "the", "5", "%", "(", "v/v", ")", "adipocyte", "cell", "suspension", "was", "added", "to", "each", "tube", "and", "incubated", "for", "3", "h", "at", "37", "degrees", "C", "with", "14", "mu", "l", "of", "22", "mu", "Ci/ml", "tritiated", "D-[", "6-3", "H", "]-glucose", "(", "Perkin", "Elmer", ")", "with", "or", "without", "15", "nM", "insulin", "." ],
-  "entity_one_indices" : [ 52, 53 ],
-  "entity_two_indices" : [ 44, 45, 46 ]
-}, {
-  "sentence_tokens" : [ "The", "assay", "was", "stopped", "by", "adding", "3.5", "ml", "of", "2,5-diphenyloxazole", "(", "Sigma", ")", "and", "1,4-bis", "(", "5-phenloxazol-2-yl", ")", "benzene", "toluene", "based", "scintillation", "liquid", "(", "Sigma", ")", "." ],
-  "entity_one_indices" : [ 19, 20 ],
-  "entity_two_indices" : [ 18, 19 ]
-}, {
-  "sentence_tokens" : [ "A", "zero", "time-point", "sample", "was", "included", "to", "measure", "the", "amount", "of", "glucose", "in", "the", "lipid", "phase", "during", "extraction", "that", "was", "not", "used", "for", "lipid", "synthesis", "." ],
-  "entity_one_indices" : [ 23, 24, 25 ],
-  "entity_two_indices" : [ 11, 12 ]
-}, {
-  "sentence_tokens" : [ "Lipolysis", "was", "determined", "by", "measuring", "glycerol", "release", "as", "described", "[", "27", "]", "." ],
-  "entity_one_indices" : [ 5, 6 ],
-  "entity_two_indices" : [ 0, 1 ]
-}, {
-  "sentence_tokens" : [ "In", "short", ",", "cells", "were", "pre-treated", "with", "Acipimox", "(", "20", "mu", "g/ml", ")", "or", "vehicle", "(", "water", ")", "for", "time", "as", "indicated", "in", "the", "figure", ",", "washed", "in", "KRH", "medium", "with", "1", "%", "BSA", ",", "and", "treated", "with", "or", "without", "isoprenaline", "(", "10", "nM", ")", "for", "30", "min", "." ],
-  "entity_one_indices" : [ 40, 41 ],
-  "entity_two_indices" : [ 10, 11, 12 ]
-}, {
-  "sentence_tokens" : [ "In", "order", "to", "examine", "if", "CIDEC", "was", "associated", "with", "the", "lipid", "droplets", "examined", "herein", ",", "we", "applied", "antibody", "labelling", "and", "CIDEC-GFP", "overexpression", "separately", "." ],
-  "entity_one_indices" : [ 20, 21 ],
-  "entity_two_indices" : [ 5, 6 ]
-}, {
-  "sentence_tokens" : [ "We", "found", "a", "clear", "localization", "of", "native", "and", "overexpressed", "CIDEC", "encircling", "both", "dispersed", "and", "clustered", "lipid", "droplets", "(", "Figure", "2", "(", "a", ",", "b", ")", ")", "." ],
-  "entity_one_indices" : [ 9, 10 ],
-  "entity_two_indices" : [ 4, 5 ]
-}, {
-  "sentence_tokens" : [ "These", "data", "suggest", "that", "CIDEC", "plays", "a", "role", "in", "lipid", "transport", "between", "the", "small", "lipid", "droplets", ",", "and", "possibly", "the", "central", "droplet", "as", "well", "." ],
-  "entity_one_indices" : [ 9, 10, 11 ],
-  "entity_two_indices" : [ 4, 5 ]
-}, {
-  "sentence_tokens" : [ "However", ",", "we", "could", "not", "detect", "any", "clear", "effect", "on", "the", "lipid", "droplet", "formation", "phenotype", "in", "TriC", "treated", "cells", "compared", "to", "control", "(", "Figure", "3", "(", "b", ")", ")", "." ],
-  "entity_one_indices" : [ 16, 17 ],
-  "entity_two_indices" : [ 11, 12, 13, 14 ]
-}, {
-  "sentence_tokens" : [ "However", ",", "long-term", "(", "48", "h", ")", "incubation", "with", "isoprenaline", "or", "insulin", "did", "not", "affect", "the", "overall", "lipid", "droplet", "phenotype", "(", "Figure", "4", "(", "b", ")", ")", "." ],
-  "entity_one_indices" : [ 11, 12 ],
-  "entity_two_indices" : [ 9, 10 ]
-}, {
-  "sentence_tokens" : [ "Note", ",", "in", "a", "subset", "of", "experiments", "(", "Figure", "6", ")", ",", "we", "used", "primary", "adipocytes", "from", "C57Bl/6", "J", "mice", "due", "to", "limited", "access", "to", "human", "tissue", "." ],
-  "entity_one_indices" : [ 19, 20 ],
-  "entity_two_indices" : [ 17, 18, 19 ]
-}, {
-  "sentence_tokens" : [ "Using", "the", "fatty", "acid", "analogue", "Bodipy", "558/568", ",", "we", "found", "evidence", "that", "supports", "fatty", "acids", "can", "be", "metabolized", "in", "mitochondria", "." ],
-  "entity_one_indices" : [ 5, 6 ],
-  "entity_two_indices" : [ 2, 3, 4 ]
-}, {
-  "sentence_tokens" : [ "The", "distribution", "of", "CIDEC", "suggests", "that", "lipid", "transport", "at", "these", "sites", "is", "mechanistically", "regulated", "in", "a", "similar", "fashion", "to", "most", "other", "cell", "types", "exhibiting", "small", "lipid", "droplets", "[", "13,23", "]", "." ],
-  "entity_one_indices" : [ 6, 7, 8 ],
-  "entity_two_indices" : [ 3, 4 ]
-}, {
-  "sentence_tokens" : [ "Numerous", "articles", "have", "reported", "lipid", "droplet", "formation", "to", "occur", "in", "ER", "[", "4", "]", "." ],
-  "entity_one_indices" : [ 10, 11 ],
-  "entity_two_indices" : [ 4, 5, 6, 7 ]
-}, {
-  "sentence_tokens" : [ "Since", "we", "cannot", "fully", "determine", "the", "flow", "of", "lipids", ",", "we", "cannot", "exclude", "that", "ER", "is", "relevant", "for", "the", "transport", "of", "lipids", "and", "lipid", "related", "proteins", "." ],
-  "entity_one_indices" : [ 19, 20 ],
-  "entity_two_indices" : [ 14, 15 ]
-}, {
-  "sentence_tokens" : [ "However", ",", "the", "significance", "of", "these", "interactions", "is", "unclear", "at", "this", "point.The", "fact", "that", "we", "observed", "a", "change", "in", "lipid", "droplet", "organization", "from", "dispersed", "droplets", "to", "a", "droplet", "cluster", "phenotype", "during", "culturing", "could", "reflect", "the", "nutritional", "state", "(", "starvation", ")", ",", "loss", "of", "extracellular", "matrix", ",", "or", "deteriorating", "cell", "function", "." ],
-  "entity_one_indices" : [ 38, 39 ],
-  "entity_two_indices" : [ 19, 20, 21, 22 ]
-}, {
-  "sentence_tokens" : [ "In", "theory", ",", "this", "could", "shift", "the", "lipid", "flux", ",", "since", "EHD2", "is", "known", "to", "affect", "caveolar", "dynamic", "at", "the", "plasma", "membrane", "[", "38", "]", ",", "and", "caveolae", "is", "essential", "for", "preserved", "lipid", "transport", "[", "39", "]", "." ],
-  "entity_one_indices" : [ 32, 33, 34 ],
-  "entity_two_indices" : [ 11, 12 ]
-}, {
-  "sentence_tokens" : [ "Since", "staining", "of", "EHD2", "or", "caveolin-1", "(", "caveolae", "marker", ")", ",", "using", "confocal", "microscopy", "yielded", "a", "uniform", "membrane", "stain", ",", "with", "a", "certain", "focus", "around", "droplet", "clusters", "(", "Supplementary", "S2", ")", ",", "we", "cannot", "exclude", "caveolae", "connection", "to", "organelles", "or", "lipid", "droplets", ",", "even", "though", "this", "is", "difficult", "to", "confirm", "at", "the", "ultrastructural", "level.In", "summary", ",", "in", "this", "study", ",", "we", "provide", "evidence", "of", "a", "novel", "lipid", "droplet", "phenotype", "present", "in", "primary", "adipocytes", ",", "seemingly", "unaffected", "by", "stimulation", "or", "treatment", "." ],
-  "entity_one_indices" : [ 5, 6 ],
-  "entity_two_indices" : [ 3, 4 ]
-}, {
-  "sentence_tokens" : [ "The", "presence", "and", "activation", "of", "proteins", "related", "to", "lipid", "metabolism", ",", "as", "well", "as", "connection", "with", "mitochondria", ",", "lead", "us", "to", "conclude", "that", "these", "droplets", "act", "as", "an", "intermediate", "for", "lipid", "transport", "in", "primary", "adipocytes", "." ],
-  "entity_one_indices" : [ 30, 31, 32 ],
-  "entity_two_indices" : [ 8, 9, 10 ]
-} ]
+{
+  "regulations" : [ {
+    "sentence_tokens" : [ "Rather", ",", "the", "fact", "that", "isoprenaline", "induced", "phosphorylation", "of", "HSL", "and", "perilipin", "located", "at", "droplet", "clusters", "supports", "the", "hypothesis", "that", "surface", "associated", "lipid", "droplets", "function", "as", "an", "intermediate", "site", "for", "lipid", "transfer.Further", ",", "we", "identified", "several", "organelles", ",", "including", "mitochondria", ",", "to", "be", "distributed", "in", "close", "vicinity", "of", "surface", "associated", "lipid", "droplets", "." ],
+    "event_indices" : [ 5, 6, 7, 8, 9, 10 ],
+    "type" : "Positive_regulation",
+    "polarity" : true,
+    "controller_indices" : [ 5, 6 ],
+    "controlled_indices" : [ 7, 8, 9, 10 ],
+    "trigger_indices" : [ 6, 7 ],
+    "rule_name" : "Positive_early_regulation",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "Rather", ",", "the", "fact", "that", "isoprenaline", "induced", "phosphorylation", "of", "HSL", "and", "perilipin", "located", "at", "droplet", "clusters", "supports", "the", "hypothesis", "that", "surface", "associated", "lipid", "droplets", "function", "as", "an", "intermediate", "site", "for", "lipid", "transfer.Further", ",", "we", "identified", "several", "organelles", ",", "including", "mitochondria", ",", "to", "be", "distributed", "in", "close", "vicinity", "of", "surface", "associated", "lipid", "droplets", "." ],
+    "event_indices" : [ 5, 6, 7, 8, 9, 10, 11, 12 ],
+    "type" : "Positive_regulation",
+    "polarity" : true,
+    "controller_indices" : [ 5, 6 ],
+    "controlled_indices" : [ 7, 8, 9, 10, 11, 12 ],
+    "trigger_indices" : [ 6, 7 ],
+    "rule_name" : "Positive_early_regulation",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "Further", ",", "treatment", "with", "Acipimox", "effectively", "reduced", "basal", "and", "isoprenaline", "induced", "lipolysis", ",", "detected", "as", "decreased", "glycerol", "release", "(", "Figure", "3", "(", "c", ")", ")", "." ],
+    "event_indices" : [ 9, 10, 11, 12 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 9, 10 ],
+    "controlled_indices" : [ 11, 12 ],
+    "trigger_indices" : [ 10, 11 ],
+    "rule_name" : "Positive_early_activation",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "While", "adrenergic", "stimulation", "was", "shown", "to", "generate", "microlipid", "droplets", "(", "mLD", ")", ",", "insulin", "promoted", "lipid", "droplet", "fusion", "in", "cultured", "3T3-L1", "adipocytes", "[", "21", "]", "." ],
+    "event_indices" : [ 10, 11, 12, 13, 14, 15 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 13, 14 ],
+    "controlled_indices" : [ 10, 11 ],
+    "trigger_indices" : [ 14, 15 ],
+    "rule_name" : "Positive_activation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "Both", "acute", "(", "3", "h", ")", "and", "prolonged", "(", "48", "h", ")", "treatment", "with", "Triacsin", "C", "markedly", "abolished", "both", "non-", "and", "insulin", "stimulated", "lipogenesis", "(", "Figure", "3", "(", "a", ")", ")", "as", "expected", "." ],
+    "event_indices" : [ 21, 22, 23, 24 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 21, 22 ],
+    "controlled_indices" : [ 23, 24 ],
+    "trigger_indices" : [ 22, 23 ],
+    "rule_name" : "Positive_activation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "Both", "acute", "(", "3", "h", ")", "and", "prolonged", "(", "48", "h", ")", "treatment", "with", "Triacsin", "C", "markedly", "abolished", "both", "non-", "and", "insulin", "stimulated", "lipogenesis", "(", "Figure", "3", "(", "a", ")", ")", "as", "expected", "." ],
+    "event_indices" : [ 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24 ],
+    "type" : "Negative_activation",
+    "polarity" : false,
+    "controller_indices" : [ 14, 15, 16 ],
+    "controlled_indices" : [ 23, 24 ],
+    "trigger_indices" : [ 17, 18 ],
+    "rule_name" : "Negative_activation_syntax_1_verb",
+    "rule" : null
+  } ],
+  "hardInstances" : [ {
+    "sentence_tokens" : [ "Rather", ",", "the", "fact", "that", "isoprenaline", "induced", "phosphorylation", "of", "HSL", "and", "perilipin", "located", "at", "droplet", "clusters", "supports", "the", "hypothesis", "that", "surface", "associated", "lipid", "droplets", "function", "as", "an", "intermediate", "site", "for", "lipid", "transfer.Further", ",", "we", "identified", "several", "organelles", ",", "including", "mitochondria", ",", "to", "be", "distributed", "in", "close", "vicinity", "of", "surface", "associated", "lipid", "droplets", "." ],
+    "entities_indices" : [ [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "Further", ",", "treatment", "with", "Acipimox", "effectively", "reduced", "basal", "and", "isoprenaline", "induced", "lipolysis", ",", "detected", "as", "decreased", "glycerol", "release", "(", "Figure", "3", "(", "c", ")", ")", "." ],
+    "entities_indices" : [ [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "Both", "acute", "(", "3", "h", ")", "and", "prolonged", "(", "48", "h", ")", "treatment", "with", "Triacsin", "C", "markedly", "abolished", "both", "non-", "and", "insulin", "stimulated", "lipogenesis", "(", "Figure", "3", "(", "a", ")", ")", "as", "expected", "." ],
+    "entities_indices" : [ [ 14, 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "Both", "acute", "(", "3", "h", ")", "and", "prolonged", "(", "48", "h", ")", "treatment", "with", "Triacsin", "C", "markedly", "abolished", "both", "non-", "and", "insulin", "stimulated", "lipogenesis", "(", "Figure", "3", "(", "a", ")", ")", "as", "expected", "." ],
+    "entities_indices" : [ [ 21, 22 ] ]
+  } ],
+  "withoutRegulations" : [ {
+    "sentence_tokens" : [ "Lipid", "droplet", "organization", "at", "the", "cell", "surface", "." ],
+    "entities_indices" : [ [ 0, 1, 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "Surface", "associated", "lipid", "droplets", ":", "an", "intermediate", "site", "for", "lipid", "transport", "in", "human", "adipocytes", "?." ],
+    "entities_indices" : [ [ 9, 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "assay", "was", "stopped", "by", "adding", "3.5", "ml", "of", "2,5-diphenyloxazole", "(", "Sigma", ")", "and", "1,4-bis", "(", "5-phenloxazol-2-yl", ")", "benzene", "toluene", "based", "scintillation", "liquid", "(", "Sigma", ")", "." ],
+    "entities_indices" : [ [ 18, 19 ], [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "Note", ",", "CIDEC", "labelling", "was", "also", "detected", "at", "the", "central", "droplet", "as", "well", "." ],
+    "entities_indices" : [ [ 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "Based", "on", "microscopy", "analyses", ",", "we", "illustrate", "the", "distribution", "of", "mitochondria", ",", "endoplasmic", "reticulum", "and", "lysosomes", "in", "the", "vicinity", "of", "these", "specialized", "lipid", "droplets", "." ],
+    "entities_indices" : [ [ 8, 9, 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "As", "an", "attempt", "to", "verify", "the", "formation", "of", "small", "lipid", "droplets", "is", "related", "to", "storage", "or", "release", "of", "fatty", "acids", ",", "cells", "were", "incubated", "with", "compounds", "known", "to", "inhibit", "either", "de", "novo", "triglyceride", "synthesis", "(", "Triacsin", "C", ")", "or", "lipolysis", "(", "Acipimox", ")", "." ],
+    "entities_indices" : [ [ 32, 33, 34 ], [ 35, 36, 37 ], [ 39, 40 ] ]
+  }, {
+    "sentence_tokens" : [ "Altogether", ",", "we", "propose", "these", "lipid", "droplet", "clusters", "represent", "an", "intermediate", "site", "involved", "in", "lipid", "transport", "in", "primary", "adipocytes", "." ],
+    "entities_indices" : [ [ 14, 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "Based", "on", "microscopy", "analyses", ",", "we", "propose", "that", "these", "droplet", "clusters", "represent", "an", "intermediate", "stage", "of", "lipid", "transport", "in", "primary", "adipocytes", "." ],
+    "entities_indices" : [ [ 16, 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "During", "adipocyte", "differentiation", ",", "small", "lipid", "droplets", "are", "formed", "and", "subsequently", "fused", "into", "larger", "droplets", "over", "a", "period", "of", "several", "weeks", ",", "until", "mainly", "one", "large", "central", "droplet", "remains", "[", "11", "]", "." ],
+    "entities_indices" : [ [ 1, 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "CIDEC-GFP", "was", "generously", "provided", "by", "professor", "Peng", "Li", "(", "Fudan", "University", ",", "China", ")", ",", "BFP-Sec61", "beta", "was", "a", "gift", "from", "Gia", "Voeltz", "(", "Addgene", "plasmid", "#", "49,154", ")", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 7, 8 ], [ 15, 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "Thus", ",", "the", "fusion", "process", "is", "a", "slow", ",", "directed", "event", "as", "shown", "by", "long-term", "label-free", "microscopy", "[", "12", "]", ",", "mediated", "via", "the", "CIDE", "family", "of", "proteins", ",", "possibly", "via", "pore", "formation", "[", "13", "]", "." ],
+    "entities_indices" : [ [ 24, 25 ], [ 24, 25, 26 ], [ 31, 32, 33 ] ]
+  }, {
+    "sentence_tokens" : [ "To", "monitor", "lipid", "flux", ",", "we", "used", "the", "fatty", "acid", "Bodipy", "558/568", "C12", "analogue", ",", "in", "line", "with", "a", "previous", "protocol", "[", "23", "]", "." ],
+    "entities_indices" : [ [ 8, 9, 10 ], [ 10, 11 ], [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "size", "of", "the", "lipid", "droplet", ",", "which", "directly", "affects", "adipose", "cell", "size", ",", "is", "known", "to", "correlate", "with", "both", "cellular", "and", "systemic", "insulin", "sensitivity", "." ],
+    "entities_indices" : [ [ 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "line", "with", "our", "previous", "observations", "[", "17", "]", ",", "we", "found", "isoprenaline", "to", "induce", "phosphorylation", "of", "HSL", "(", "pS563", ")", "and", "perilipin-1", "(", "pS522", ")", ",", "both", "targets", "located", "in", "the", "vicinity", "of", "lipid", "droplet", "clusters", "(", "Figure", "4", "(", "a", ")", ")", "." ],
+    "entities_indices" : [ [ 12, 13 ], [ 17, 18 ], [ 19, 20 ], [ 22, 23 ], [ 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "is", "in", "line", "with", "other", "reports", ",", "describing", "a", "close", "association", "of", "mitochondria", "with", "lipid", "droplets", "[", "28", "]", ",", "and", "lipid", "droplet", "formation", "to", "protect", "against", "mitochondrial", "stress", "[", "35", "]", "." ],
+    "entities_indices" : [ [ 22, 23, 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "amount", "of", "cholesterol", "correlates", "positively", "with", "cell", "size", ",", "which", "supports", "an", "increased", "need", "for", "cholesterol", "as", "the", "cell", "grows", "larger", "[", "8]", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "Cells", "kept", "in", "culture", "were", "suspended", "in", "DMEM", "(", "4.5", "g/L", "glucose", ")", "with", "penicillin", "and", "streptomycin", "(", "PEST", ")", "(", "100", "U/ml", "and", "100", "mu", "g/ml", ",", "respectively", ")", ",", "200", "nM", "phenyl-isopropyl-adenosine", "(", "PIA", ")", ",", "and", "3.5", "%", "(", "w/v", ")", "BSA", "and", "cultured", "at", "37", "degrees", "C", "in", "5", "%", "CO", "Adipose", "tissue", "culture", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 14, 15 ], [ 16, 17 ], [ 35, 36 ], [ 54, 55 ] ]
+  }, {
+    "sentence_tokens" : [ "Cell", "medium", "was", "subsequently", "removed", "for", "enzymatic", "determination", "of", "the", "glycerol", "content", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "Note", ",", "in", "a", "subset", "of", "experiments", "(", "Figure", "6", ")", ",", "we", "used", "primary", "adipocytes", "from", "C57Bl/6", "J", "mice", "due", "to", "limited", "access", "to", "human", "tissue", "." ],
+    "entities_indices" : [ [ 17, 18, 19 ], [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "short", ",", "isolated", "adipose", "cells", "were", "suspended", "(", "40", "%", "(", "v/v", ")", ")", "in", "DMEM", "supplemented", "with", "PEST", "and", "PIA", "." ],
+    "entities_indices" : [ [ 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "the", "hypothesis", "of", "small", "lipid", "droplets", "as", "an", "intermediate", "stage", "of", "lipid", "transport", "does", "not", "exclude", "a", "role", "for", "caveolae", "." ],
+    "entities_indices" : [ [ 13, 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "Lipogenesis", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "Imaging", "was", "performed", "using", "a", "Nikon", "A1", "plus", "confocal", "microscope", "with", "a", "60", "x", "Apo", "DIC", "oil", "immersion", "objective", "with", "a", "NA", "of", "1.40", "(", "Nikon", "Instruments", ")", "and", "appropriate", "filter", "sets", "." ],
+    "entities_indices" : [ [ 14, 15, 16 ], [ 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "zero", "time-point", "sample", "was", "included", "to", "measure", "the", "amount", "of", "glucose", "in", "the", "lipid", "phase", "during", "extraction", "that", "was", "not", "used", "for", "lipid", "synthesis", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 23, 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "Further", ",", "we", "performed", "immunogold", "labelling", "of", "CIDEC", "in", "human", "adipocytes", "that", "were", "overexpressing", "EHD2wt", "to", "induce", "lipid", "droplet", "cluster", "formation", "as", "described", "previously", "[", "17", "]", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "line", "with", "observations", "made", "using", "fluorescence", "microscopy", "(", "Figure", "2", "(", "a", ",", "b", ")", ")", ",", "electron", "microscopy", "analysis", "demonstrated", "that", "CIDEC", "was", "distributed", "at", "the", "surface", "of", "small", "lipid", "droplets", "(", "Figure", "2", "(", "c", ")", ")", "." ],
+    "entities_indices" : [ [ 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "Lipogenesis", "was", "measured", "according", "to", "the", "previous", "method", "[", "26", "]", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "Acipimox", "(", "A7856", ")", ",", "Triascin", "C", "(", "T4540", ")", "and", "antibodies", "towards", "CIDEC", "(", "HPA020553", ")", "were", "from", "Sigma", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "Using", "the", "fatty", "acid", "analogue", "Bodipy", "558/568", ",", "we", "found", "evidence", "that", "supports", "fatty", "acids", "can", "be", "metabolized", "in", "mitochondria", "." ],
+    "entities_indices" : [ [ 2, 3, 4 ], [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "standard", "trans", "electron", "microscopy", ",", "human", "tissue", "was", "fixed", "overnight", "using", "1", "%", "paraformaldehyde", "and", "3", "%", "glutaraldehyde", "." ],
+    "entities_indices" : [ [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "droplet", "surface", "is", "decorated", "with", "protein", "involved", "in", "lipid", "metabolism", ",", "where", "the", "perilipins", "belong", "to", "the", "most", "well", "characterized", "family", "[", "6", "]", "." ],
+    "entities_indices" : [ [ 9, 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "Here", ",", "we", "could", "confirm", "that", "ER", "compartments", "(", "detected", "by", "calnexin", "labelling", "and", "BFP-Sec61", "beta", "expression", ")", "were", "associated", "to", ",", "but", "not", "exclusively", ",", "with", "the", "small", "lipid", "droplets", "independent", "of", "droplet", "phenotype", "(", "Figure", "7", "(", "a", ",", "b", ")", ")", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 11, 12 ], [ 14, 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "distribution", "of", "CIDEC", "suggests", "that", "lipid", "transport", "at", "these", "sites", "is", "mechanistically", "regulated", "in", "a", "similar", "fashion", "to", "most", "other", "cell", "types", "exhibiting", "small", "lipid", "droplets", "[", "13,23", "]", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 6, 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "short", ",", "cells", "were", "pre-treated", "with", "Acipimox", "(", "20", "mu", "g/ml", ")", "or", "vehicle", "(", "water", ")", "for", "time", "as", "indicated", "in", "the", "figure", ",", "washed", "in", "KRH", "medium", "with", "1", "%", "BSA", ",", "and", "treated", "with", "or", "without", "isoprenaline", "(", "10", "nM", ")", "for", "30", "min", "." ],
+    "entities_indices" : [ [ 10, 11, 12 ], [ 40, 41 ] ]
+  }, {
+    "sentence_tokens" : [ "Isolated", "cells", "were", "fixed", "using", "4", "%", "paraformaldehyde", "and", "labelled", "with", "antibodies", "in", "a", "buffer", "containing", "1", "%", "BSA", ",", "1", "%", "goat", "serum", ",", "and", "0.05", "%", "saponin", "1", "-", "2", "h", "per", "labelled", "antibody", "." ],
+    "entities_indices" : [ [ 28, 29 ] ]
+  }, {
+    "sentence_tokens" : [ "Still", ",", "phosphorylated", "perilipin", "and", "hormone", "sensitive", "lipase", "accumulated", "at", "these", "droplets", "following", "adrenergic", "stimuli", ",", "which", "supports", "metabolic", "activity", "at", "these", "locations", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 5, 6, 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "short", ",", "isolated", "cells", "were", "incubated", "for", "24", "h", "in", "37", "degrees", "C", "incubator", ",", "followed", "by", "2-h", "treatment", "with", "Bodipy", "558/568", "C12", ",", "washed", "3", "-", "4", "times", "and", "re-suspended", "in", "fresh", "DMEM", "(", "supplemented", "with", "PEST", ",", "PIA", ",", "and", "3.5", "%", "BSA", ")", "." ],
+    "entities_indices" : [ [ 23, 24 ], [ 40, 41 ] ]
+  }, {
+    "sentence_tokens" : [ "Since", "we", "cannot", "fully", "determine", "the", "flow", "of", "lipids", ",", "we", "cannot", "exclude", "that", "ER", "is", "relevant", "for", "the", "transport", "of", "lipids", "and", "lipid", "related", "proteins", "." ],
+    "entities_indices" : [ [ 14, 15 ], [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "times", "of", "plenty", ",", "the", "lipid", "droplet", "rapidly", "grows", "in", "size", ",", "whereas", "lipase", "activity", "liberates", "fatty", "acids", "to", "support", "an", "increased", "energy", "demand", "in", "other", "tissues", ";", "both", "processes", "are", "tightly", "regulated", "by", "insulin", "." ],
+    "entities_indices" : [ [ 14, 15 ], [ 35, 36 ] ]
+  }, {
+    "sentence_tokens" : [ "Recent", "studies", "have", "addressed", "specialized", "mitochondria", "supporting", "triglyceride", "synthesis", "as", "well", "as", "fat", "oxidation", "[", "28", "]", "." ],
+    "entities_indices" : [ [ 7, 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "MitoTracker", "RED", "CMXRos", "(", "M7512", ")", "and", "Mitotracker", "Deep", "Red", "(", "M22426", ")", "were", "from", "ThermoFisher", ",", "10", "nm", "gold", "secondary", "antibodies", "from", "Electron", "Microscopy", "Sciences", "." ],
+    "entities_indices" : [ [ 0, 1, 2 ], [ 2, 3 ], [ 9, 10 ], [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "To", "further", "explore", "a", "possible", "interconnection", "between", "lipid", "droplets", "and", "mitochondria", ",", "we", "used", "a", "fatty", "acid", "analogue", ",", "Bodipy", "558/568", "C12", ",", "as", "a", "marker", "for", "lipid", "metabolism", "[", "23", "]", "." ],
+    "entities_indices" : [ [ 15, 16, 17 ], [ 21, 22 ], [ 27, 28, 29 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "samples", "were", "fixed", "using", "OTO", "(", "osmium-tannic", "acid-osmium", ")", "for", "1", "h", "each", ",", "washed", "in", "KRBH", "without", "BSA", ",", "dehydrated", "using", "ethanol", "series", "and", "embedded", "in", "EPON", "." ],
+    "entities_indices" : [ [ 17, 18 ], [ 19, 20 ], [ 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "Adipose", "tissue", "plays", "a", "major", "role", "in", "regulating", "whole-body", "energy", "metabolism", "." ],
+    "entities_indices" : [ [ 9, 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "By", "staining", "(", "calnexin", ")", "and", "overexpression", "(", "Sec61", "beta", ")", "of", "ER-markers", "we", "observed", "ER", "to", "be", "spread", "all", "over", "the", "cell", ",", "with", "some", "increase", "around", "droplet", "clusters", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 8, 9, 10 ], [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "Lipid", "droplet", "patches", "were", "suggested", "to", "resemble", "sites", "of", "lipolysis", "[", "18", "]", ",", "and", "small", "lipid", "droplets", ",", "decorated", "with", "mitochondria", ",", "was", "proposed", "to", "form", "following", "Rosiglitazone", "treatment", "[", "19,20", "]", "." ],
+    "entities_indices" : [ [ 9, 10 ], [ 28, 29 ] ]
+  }, {
+    "sentence_tokens" : [ "With", "respect", "to", "the", "limited", "number", "of", "studies", "addressing", "lipid", "droplet", "organization", "in", "primary", "adipocytes", ",", "we", "have", "herein", "further", "characterized", "the", "presence", "of", "surface", "associated", "lipid", "droplets", "in", "human", "adipocytes", "." ],
+    "entities_indices" : [ [ 9, 10, 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "Isolated", ",", "primary", "adipocytes", "were", "suspended", "(", "20", "%", "(", "v/v", ")", ")", "in", "Krebs", "Ringer", "Bicarbonate", "HEPES", "(", "KRBH", ")", "buffer", ",", "pH", "7.4", ",", "containing", "200", "nM", "adenosine", "and", "1", "%", "(", "w/v", ")", "bovine", "serum", "albumin", "(", "BSA", ")", "." ],
+    "entities_indices" : [ [ 16, 17 ], [ 23, 24 ], [ 29, 30 ], [ 38, 39 ], [ 40, 41 ] ]
+  }, {
+    "sentence_tokens" : [ "Indeed", ",", "lipid", "droplets", "have", "been", "reported", "to", "connect", "to", "a", "number", "of", "organelles", ",", "including", "ER", ",", "mitochondria", ",", "lysosomes", "and", "peroxisomes", "[", "37", "]", "." ],
+    "entities_indices" : [ [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "Images", "were", "usually", "acquired", "at", "a", "generous", "TIRF", "angle", "to", "allow", "imaging", "of", "protein", "stains", "related", "to", "lipid", "droplets", ",", "such", "as", "phosphorylated", "perilipin-1", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "Triglyceride", "synthesis", "and", "lipid", "droplet", "formation", "are", "believed", "to", "occur", "initially", "at", "the", "endoplasmic", "reticulum", "(", "ER", ")", "membrane", "until", "a", "certain", "size", "is", "reached", "and", "the", "droplet", "is", "released", "[", "4", "]", "." ],
+    "entities_indices" : [ [ 0, 1, 2 ], [ 3, 4, 5, 6 ], [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "Re-esterification", "of", "fatty", "acids", "has", "also", "been", "reported", "to", "increase", "the", "formation", "of", "cytosolic", "mLD", ",", "which", "was", "subjected", "to", "lipolytic", "activity", "[", "32", "]", "." ],
+    "entities_indices" : [ [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "theory", ",", "this", "could", "shift", "the", "lipid", "flux", ",", "since", "EHD2", "is", "known", "to", "affect", "caveolar", "dynamic", "at", "the", "plasma", "membrane", "[", "38", "]", ",", "and", "caveolae", "is", "essential", "for", "preserved", "lipid", "transport", "[", "39", "]", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 32, 33, 34 ] ]
+  }, {
+    "sentence_tokens" : [ "Reports", "suggest", "isolated", "lipid", "droplets", "hold", "a", "modified", "ER", "like", "membrane", "composition", ",", "including", "the", "ER-resident", "proteins", "BiP", "and", "calnexin", "[", "9", "]", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 17, 18 ], [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "patients", ",", "all", "female", ",", "were", "without", "known", "diabetes", "(", "type", "1", "or", "type", "2", ")", "or", "thyroid", "gland", "dysfunction", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "After", "electroporation", ",", "the", "cells", "were", "transferred", "into", "DMEM", "with", "PEST", ",", "PIA", "and", "3.5", "%", "BSA", ",", "and", "cultured", "at", "37", "degrees", "C", "in", "5", "%", "CO", "." ],
+    "entities_indices" : [ [ 12, 13 ], [ 27, 28 ] ]
+  }, {
+    "sentence_tokens" : [ "These", "data", "suggest", "that", "CIDEC", "plays", "a", "role", "in", "lipid", "transport", "between", "the", "small", "lipid", "droplets", ",", "and", "possibly", "the", "central", "droplet", "as", "well", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 9, 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "Followed", "by", "dehydration", "using", "methanol", "series", "(", "20", ",", "40", ",", "60", ",", "80", ",", "100", "%", ")", "30", "min", "each", ",", "de-lipidated", "using", "dichloromethane", "for", "1", "h", ",", "and", "then", "rehydrated", "with", "reverse", "methanol", "series", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 4, 5 ], [ 24, 25 ], [ 34, 35 ] ]
+  }, {
+    "sentence_tokens" : [ "Rather", ",", "the", "findings", "described", "herein", "could", "complement", "previous", "knowledge", "of", "caveolae", "and", "lipid", "transport", "." ],
+    "entities_indices" : [ [ 13, 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "brief", ",", "adipocytes", "were", "pretreated", "with", "Triascin", "C", "(", "10", "mu", "M", ")", "or", "vehicle", "(", "methanol", ")", "for", "time", "as", "indicated", "in", "the", "figure", ",", "re-suspended", "in", "KRBH", "buffer", "containing", "200", "nM", "adenosine", ",", "0.55", "mM", "glucose", "and", "3.5", "%", "BSA", "(", "w/v", ")", "." ],
+    "entities_indices" : [ [ 17, 18 ], [ 34, 35 ], [ 38, 39 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "order", "to", "examine", "if", "CIDEC", "was", "associated", "with", "the", "lipid", "droplets", "examined", "herein", ",", "we", "applied", "antibody", "labelling", "and", "CIDEC-GFP", "overexpression", "separately", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "immunogold", "labelling", ",", "grids", "were", "blocked", "using", "1", "%", "BSA", "and", "labelled", "1", "h", "primary", "antibody", "as", "indicated", ",", "and", "1", "h", "with", "10", "nm", "gold", "particle", "conjugated", "secondary", "." ],
+    "entities_indices" : [ [ 26, 27 ] ]
+  }, {
+    "sentence_tokens" : [ "Further", ",", "CIDEC", ",", "known", "to", "bind", "and", "regulate", "lipid", "droplet", "expansion", ",", "clearly", "localized", "at", "these", "lipid", "droplets", "." ],
+    "entities_indices" : [ [ 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "LAMP1", "(", "ab25630", ")", ",", "and", "EHD2", "(", "154,784", ")", "from", "abcam", ",", "perilipin-1", "pS522", "from", "Vala", "Sciences", ",", "LC3B", "(", "2775S", ")", ",", "hormone", "sensitive", "lipase", "(", "HSL", ")", "pS563", "(", "4139S", ")", ",", "Caveolin-1", "(", "3267", ")", ",", "Rab5", "(", "46,449", ")", ",", "Rab11", "(", "5589", ")", ",", "and", "Calnexin", "(", "2679", ")", "from", "Cell", "Signalling", "Technology", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 6, 7 ], [ 13, 14 ], [ 24, 25, 26, 27 ], [ 28, 29 ], [ 35, 36 ], [ 40, 41 ], [ 45, 46 ], [ 51, 52 ] ]
+  }, {
+    "sentence_tokens" : [ "Lipolysis", "was", "determined", "by", "measuring", "glycerol", "release", "as", "described", "[", "27", "]", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "neutral", "lipid", "staining", ",", "Bodipy", "493/503", "was", "used", "together", "with", "confocal", "imaging", "." ],
+    "entities_indices" : [ [ 5, 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "we", "set", "out", "to", "examine", "the", "distribution", "of", "mitochondria", "in", "relation", "to", "the", "surface", "associated", "lipid", "droplets", "." ],
+    "entities_indices" : [ [ 8, 9, 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "contrast", "to", "Bodipy", "493/503", ",", "which", "stained", "neutral", "lipids", "in", "the", "central", "and", "surface", "associated", "droplets", ",", "the", "fatty", "acid", "analogue", "558/568", "C12", "was", "also", ",", "to", "a", "high", "extent", ",", "located", "in", "mitochondria", "(", "Figure", "6", "(", "a", ",", "b", ")", ")", "." ],
+    "entities_indices" : [ [ 3, 4, 5 ], [ 19, 20, 21 ], [ 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "suggests", "that", ",", "even", "though", "most", "observable", "droplets", "are", "connected", "to", "mitochondria", ",", "there", "also", "exists", "an", "intricate", "connection", "between", "lipid", "droplets", "and", "ER", "." ],
+    "entities_indices" : [ [ 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "addition", "to", "mitochondria", ",", "we", "also", "observed", "an", "increase", "of", "lysosomes", "and", "LC3", "punctae", "around", "cluster", "formations", "." ],
+    "entities_indices" : [ [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "CIDEC", "is", "known", "to", "localize", "at", "lipid", "droplet", "surfaces", "and", "to", "regulate", "lipid", "droplet", "expansion", "[", "13", "]", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "contrast", "to", "our", "observation", ",", "SLDs", "were", "only", "visible", "in", "Rosiglitazone", "treated", "cells", ",", "whereas", "we", "find", "a", "similar", "phenotype", "independent", "of", "treatment", "." ],
+    "entities_indices" : [ [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "Suspension", "of", "small", "tissue", "pieces", "was", "washed", "2", "times", ",", "resuspended", "in", "DMEM", "(", "containing", "PEST", ",", "PIA", "and", "3.5", "%", "BSA", ")", ",", "and", "kept", "at", "37", "degrees", "C", "in", "5", "%", "CO", "for", "the", "indicated", "time", "period", "(", "48", "h", ")", "." ],
+    "entities_indices" : [ [ 17, 18 ], [ 33, 34 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "TIRF", "imaging", ",", "we", "used", "a", "commercial", "TIRF", "system", "based", "on", "a", "Nikon", "Ti-E", "eclipse", "microscope", "equipped", "with", "a", "100", "x", "Apo", "TIRF", "DIC", "oil", "immersion", "objective", "with", "a", "NA", "of", "1.49", "(", "Nikon", "Instruments", ")", ",", "an", "iXon", "Ultra", "DU-897", "EMCCD", "camera", "(", "Andor", "Technology", ")", ",", "and", "four", "main", "laser", "lines", ":", "405", "(", "Cube", ",", "Coherent", ")", ",", "488", "(", "Melles-Griot", ")", ",", "561", "(", "Sapphire", ",", "Coherent", ")", ",", "and", "640", "(", "Cube", ",", "Coherent", ")", "with", "corresponding", "filter", "sets", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 22, 23 ], [ 24, 25 ], [ 30, 31 ], [ 39, 40, 41, 42, 43, 44 ] ]
+  }, {
+    "sentence_tokens" : [ "Uptake", "of", "external", "fatty", "acids", "and", "triglyceride", "synthesis", "has", "also", "been", "reported", "to", "occur", "at", "caveolae", "[", "5", "]", ",", "which", "constitute", "plasma", "membrane", "specific", "domains", "abundantly", "expressed", "in", "adipocytes", ",", "muscle", "and", "endothelial", "cells", "." ],
+    "entities_indices" : [ [ 6, 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "our", "study", ",", "using", "primary", ",", "human", "adipocytes", ",", "we", "observed", "no", "significant", "effect", "on", "lipid", "droplet", "organization", "following", "short-", "or", "long-term", "stimulation", "with", "either", "insulin", "or", "isoprenaline", "." ],
+    "entities_indices" : [ [ 16, 17, 18, 19 ], [ 26, 27 ], [ 28, 29 ] ]
+  }, {
+    "sentence_tokens" : [ "TIRF", "microscopy", "was", "used", "to", "detect", "protein", "stain", "only", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "Since", "staining", "of", "EHD2", "or", "caveolin-1", "(", "caveolae", "marker", ")", ",", "using", "confocal", "microscopy", "yielded", "a", "uniform", "membrane", "stain", ",", "with", "a", "certain", "focus", "around", "droplet", "clusters", "(", "Supplementary", "S2", ")", ",", "we", "cannot", "exclude", "caveolae", "connection", "to", "organelles", "or", "lipid", "droplets", ",", "even", "though", "this", "is", "difficult", "to", "confirm", "at", "the", "ultrastructural", "level.In", "summary", ",", "in", "this", "study", ",", "we", "provide", "evidence", "of", "a", "novel", "lipid", "droplet", "phenotype", "present", "in", "primary", "adipocytes", ",", "seemingly", "unaffected", "by", "stimulation", "or", "treatment", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "Even", "though", "the", "biochemical", "steps", "of", "triglyceride", "synthesis", "and", "hydrolysis", "are", "well", "characterized", ",", "the", "specific", "subcellular", "sites", "for", "esterification", "and", "release", "of", "fatty", "acids", "are", "less", "described", ",", "as", "previously", "reviewed", "[", "3", "]", "." ],
+    "entities_indices" : [ [ 6, 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "long-term", "(", "48", "h", ")", "incubation", "with", "isoprenaline", "or", "insulin", "did", "not", "affect", "the", "overall", "lipid", "droplet", "phenotype", "(", "Figure", "4", "(", "b", ")", ")", "." ],
+    "entities_indices" : [ [ 9, 10 ], [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "Methanol", "was", "diluted", "in", "KRBH", "without", "BSA", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 4, 5 ], [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "a", "subset", "of", "experiments", ",", "we", "used", "overexpression", "of", "EHD2", "to", "drive", "the", "droplet", "cluster", "phenotype", "as", "previously", "described", "[", "17", "]", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "is", "in", "agreement", "with", "previous", "reports", ",", "addressing", "a", "similar", "lipid", "droplet", "phenotype", "to", "represent", "sites", "of", "lipolysis", "[", "18,21", "]", "." ],
+    "entities_indices" : [ [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "triplicates", ",", "800", "mu", "l", "of", "the", "5", "%", "(", "v/v", ")", "adipocyte", "cell", "suspension", "was", "added", "to", "each", "tube", "and", "incubated", "for", "3", "h", "at", "37", "degrees", "C", "with", "14", "mu", "l", "of", "22", "mu", "Ci/ml", "tritiated", "D-[", "6-3", "H", "]-glucose", "(", "Perkin", "Elmer", ")", "with", "or", "without", "15", "nM", "insulin", "." ],
+    "entities_indices" : [ [ 44, 45, 46 ], [ 52, 53 ] ]
+  }, {
+    "sentence_tokens" : [ "Alexa", "fluor", "goat", "alpha-rabbit", "568", "(", "A11036", ")", ",", "647", "(", "A21245", ")", ",", "alpha-mouse", "568", "(", "A11031", ")", ",", "647", "(", "A21236", ")", "secondary", "antibodies", ",", "Bodipy", "493/503", "(", "D3922", ")", ",", "Bodipy", "558/568", "C12", "(", "D3835", ")", ",", "Bodipy", "665/676", "(", "B3932", ")", ",", "and", "Lysotracker", "Deep", "Red", "(", "L12492", ")", "were", "from", "Invitrogen", "." ],
+    "entities_indices" : [ [ 14, 15, 16 ], [ 35, 36 ], [ 49, 50 ] ]
+  }, {
+    "sentence_tokens" : [ "While", "the", "lipid", "droplet", "research", "field", "has", "been", "active", "for", "decades", ",", "the", "exact", "mechanisms", "of", "lipid", "droplet", "biogenesis", ",", "their", "spatial", "organization", ",", "function", "in", "cellular", "processes", ",", "and", "contribution", "to", "disease", "are", "not", "resolved", "[", "14", "]", "." ],
+    "entities_indices" : [ [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "found", "a", "clear", "localization", "of", "native", "and", "overexpressed", "CIDEC", "encircling", "both", "dispersed", "and", "clustered", "lipid", "droplets", "(", "Figure", "2", "(", "a", ",", "b", ")", ")", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "the", "significance", "of", "these", "interactions", "is", "unclear", "at", "this", "point.The", "fact", "that", "we", "observed", "a", "change", "in", "lipid", "droplet", "organization", "from", "dispersed", "droplets", "to", "a", "droplet", "cluster", "phenotype", "during", "culturing", "could", "reflect", "the", "nutritional", "state", "(", "starvation", ")", ",", "loss", "of", "extracellular", "matrix", ",", "or", "deteriorating", "cell", "function", "." ],
+    "entities_indices" : [ [ 19, 20, 21, 22 ], [ 38, 39 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "a", "similar", "fashion", "to", "ER", ",", "we", "found", "lysosomes", "(", "monitored", "using", "either", "LAMP-1", "or", "LC3", "labelling", ")", "to", "be", "concentrated", "at", "dispersed", "droplets", "as", "well", "as", "droplet", "clusters", "(", "Figure", "7", "(", "c", ",", "d", ")", ")", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 14, 15 ], [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "Also", ",", "diglyceride", "acyltransferase", "(", "DGAT", ")", "connected", "to", "the", "lipid", "droplet", "supports", "both", "triglyceride", "synthesis", "and", "droplet", "formation", "[", "10", "]", "." ],
+    "entities_indices" : [ [ 2, 3, 4 ], [ 5, 6 ], [ 14, 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "Neither", "acute", "or", "prolonged", "stimulation", "with", "insulin", "or", "isoprenaline", ",", "or", "pharmacologic", "intervention", "to", "suppress", "lipid", "flux", ",", "affected", "the", "presence", "of", "these", "lipid", "droplets", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "Freeze-substitution", "was", "done", "using", "2", "%", "glutaraldehyde", "and", "0.2", "%", "uranyl", "acetate", "in", "acetone", "for", "3", "d.", "Cells", "were", "embedded", "in", "lowicryl", "HM20", "UV", "polymerized", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 11, 12 ], [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "Appearance", "of", "small", "lipid", "droplets", "independent", "of", "fatty", "acid", "flux", "." ],
+    "entities_indices" : [ [ 7, 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "Numerous", "articles", "have", "reported", "lipid", "droplet", "formation", "to", "occur", "in", "ER", "[", "4", "]", "." ],
+    "entities_indices" : [ [ 4, 5, 6, 7 ], [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "Adrenergic", "stimulation", "caused", "an", "accumulation", "of", "phosphorylated", "perilipin", "(", "pS522", ")", "at", "these", "clusters", ",", "supporting", "lipolytic", "activity", "to", "occur", "at", "these", "droplets", "[", "17", "]", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "Lipid", "metabolism", "assay", "." ],
+    "entities_indices" : [ [ 0, 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "presence", "and", "activation", "of", "proteins", "related", "to", "lipid", "metabolism", ",", "as", "well", "as", "connection", "with", "mitochondria", ",", "lead", "us", "to", "conclude", "that", "these", "droplets", "act", "as", "an", "intermediate", "for", "lipid", "transport", "in", "primary", "adipocytes", "." ],
+    "entities_indices" : [ [ 8, 9, 10 ], [ 30, 31, 32 ] ]
+  }, {
+    "sentence_tokens" : [ "Lipid", "droplets", "are", "encircled", "by", "a", "monolayer", "of", "phospholipids", "and", "cholesterol", "to", "support", "stability", "[", "6,7", "]", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "suggests", "these", "clusters", "are", "subjected", "to", "hydrolysis", "and", "thus", "could", "act", "as", "an", "intermediate", "stage", "of", "fatty", "acid", "release", "." ],
+    "entities_indices" : [ [ 17, 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "While", "this", "observation", "does", "not", "dissect", "the", "direction", "of", "lipid", "transport", ",", "it", "clearly", "demonstrates", "an", "important", "role", "for", "mitochondria", "in", "lipid", "metabolism", "in", "primary", "adipocytes.Further", ",", "lipid", "droplets", "are", "often", "located", "close", "to", "ER", ",", "the", "site", "for", "lipid", "droplet", "formation", "[", "4", "]", "." ],
+    "entities_indices" : [ [ 9, 10, 11 ], [ 21, 22, 23 ], [ 34, 35 ], [ 39, 40, 41, 42 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "short", ",", "100", "mu", "l", "free", "glycerol", "reagent", "was", "added", "to", "30", "mu", "l", "sample", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "Adipose", "tissue", "obtained", "from", "human", "subjects", "or", "mice", "was", "minced", "using", "scissors", "in", "KRBH", "buffer", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "presence", "of", "enlarged", ",", "hypertrophic", "adipocytes", "is", "a", "key", "characteristic", "of", "impaired", "adipose", "tissue", "function", "[", "1", "]", ",", "and", "increased", "adipocyte", "size", "correlates", "with", "insulin", "resistance", "and", "type", "2", "diabetes", "[", "2", "]", "." ],
+    "entities_indices" : [ [ 26, 27, 28 ], [ 29, 30, 31, 32 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "increase", "of", "proteins", "involved", "in", "lipid", "transport", ",", "autophagy", "as", "well", "as", "mitochondrial", "connection", "at", "these", "droplets", "indicate", "that", "they", "serve", "as", "centres", "involved", "in", "metabolism.CIDEC", "is", "connected", "with", "lipid", "transport", "and", "is", "part", "of", "the", "lipid", "droplet", "coat", "." ],
+    "entities_indices" : [ [ 6, 7, 8 ], [ 9, 10 ], [ 30, 31, 32 ] ]
+  }, {
+    "sentence_tokens" : [ "Lipolysis", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "Lipid", "droplets", "are", "decorated", "with", "CIDEC", "protein", "." ],
+    "entities_indices" : [ [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "we", "could", "not", "detect", "any", "clear", "effect", "on", "the", "lipid", "droplet", "formation", "phenotype", "in", "TriC", "treated", "cells", "compared", "to", "control", "(", "Figure", "3", "(", "b", ")", ")", "." ],
+    "entities_indices" : [ [ 11, 12, 13, 14 ], [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "Droplet", "diameter", "was", "plotted", "using", "violin", "plots", "in", "GraphPad", "prism", "." ],
+    "entities_indices" : [ [ 9, 10 ] ]
+  } ],
+  "emptySentences" : [ {
+    "sentence_tokens" : [ "Surface", "associated", "lipid", "droplets", ":", "an", "intermediate", "site", "for", "lipid", "transport", "in", "human", "adipocytes", "?." ]
+  }, {
+    "sentence_tokens" : [ "ABSTRACT", "." ]
+  }, {
+    "sentence_tokens" : [ "Adipose", "tissue", "plays", "a", "major", "role", "in", "regulating", "whole-body", "energy", "metabolism", "." ]
+  }, {
+    "sentence_tokens" : [ "While", "the", "biochemical", "processes", "regulating", "storage", "and", "release", "of", "excess", "energy", "are", "well", "known", ",", "the", "temporal", "organization", "of", "these", "events", "is", "much", "less", "defined", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "study", ",", "we", "have", "characterized", "the", "presence", "of", "small", "surface", "associated", "lipid", "droplets", ",", "distinct", "from", "the", "central", "droplet", ",", "in", "primary", "human", "adipocytes", "." ]
+  }, {
+    "sentence_tokens" : [ "Based", "on", "microscopy", "analyses", ",", "we", "illustrate", "the", "distribution", "of", "mitochondria", ",", "endoplasmic", "reticulum", "and", "lysosomes", "in", "the", "vicinity", "of", "these", "specialized", "lipid", "droplets", "." ]
+  }, {
+    "sentence_tokens" : [ "Ultrastructure", "analysis", "confirmed", "the", "presence", "of", "small", "droplets", "in", "intact", "adipose", "tissue", "." ]
+  }, {
+    "sentence_tokens" : [ "Further", ",", "CIDEC", ",", "known", "to", "bind", "and", "regulate", "lipid", "droplet", "expansion", ",", "clearly", "localized", "at", "these", "lipid", "droplets", "." ]
+  }, {
+    "sentence_tokens" : [ "Neither", "acute", "or", "prolonged", "stimulation", "with", "insulin", "or", "isoprenaline", ",", "or", "pharmacologic", "intervention", "to", "suppress", "lipid", "flux", ",", "affected", "the", "presence", "of", "these", "lipid", "droplets", "." ]
+  }, {
+    "sentence_tokens" : [ "Still", ",", "phosphorylated", "perilipin", "and", "hormone", "sensitive", "lipase", "accumulated", "at", "these", "droplets", "following", "adrenergic", "stimuli", ",", "which", "supports", "metabolic", "activity", "at", "these", "locations", "." ]
+  }, {
+    "sentence_tokens" : [ "Altogether", ",", "we", "propose", "these", "lipid", "droplet", "clusters", "represent", "an", "intermediate", "site", "involved", "in", "lipid", "transport", "in", "primary", "adipocytes", "." ]
+  }, {
+    "sentence_tokens" : [ "Background", "." ]
+  }, {
+    "sentence_tokens" : [ "Adipose", "tissue", "holds", "the", "body", "'", "s", "major", "energy", "reservoir", ",", "where", "excess", "energy", "is", "stored", "as", "triglycerides", "in", "the", "adipocytes", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "times", "of", "plenty", ",", "the", "lipid", "droplet", "rapidly", "grows", "in", "size", ",", "whereas", "lipase", "activity", "liberates", "fatty", "acids", "to", "support", "an", "increased", "energy", "demand", "in", "other", "tissues", ";", "both", "processes", "are", "tightly", "regulated", "by", "insulin", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "size", "of", "the", "lipid", "droplet", ",", "which", "directly", "affects", "adipose", "cell", "size", ",", "is", "known", "to", "correlate", "with", "both", "cellular", "and", "systemic", "insulin", "sensitivity", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "presence", "of", "enlarged", ",", "hypertrophic", "adipocytes", "is", "a", "key", "characteristic", "of", "impaired", "adipose", "tissue", "function", "[", "1", "]", ",", "and", "increased", "adipocyte", "size", "correlates", "with", "insulin", "resistance", "and", "type", "2", "diabetes", "[", "2", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Even", "though", "the", "biochemical", "steps", "of", "triglyceride", "synthesis", "and", "hydrolysis", "are", "well", "characterized", ",", "the", "specific", "subcellular", "sites", "for", "esterification", "and", "release", "of", "fatty", "acids", "are", "less", "described", ",", "as", "previously", "reviewed", "[", "3", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Triglyceride", "synthesis", "and", "lipid", "droplet", "formation", "are", "believed", "to", "occur", "initially", "at", "the", "endoplasmic", "reticulum", "(", "ER", ")", "membrane", "until", "a", "certain", "size", "is", "reached", "and", "the", "droplet", "is", "released", "[", "4", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Uptake", "of", "external", "fatty", "acids", "and", "triglyceride", "synthesis", "has", "also", "been", "reported", "to", "occur", "at", "caveolae", "[", "5", "]", ",", "which", "constitute", "plasma", "membrane", "specific", "domains", "abundantly", "expressed", "in", "adipocytes", ",", "muscle", "and", "endothelial", "cells", "." ]
+  }, {
+    "sentence_tokens" : [ "Lipid", "droplets", "are", "encircled", "by", "a", "monolayer", "of", "phospholipids", "and", "cholesterol", "to", "support", "stability", "[", "6,7", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "amount", "of", "cholesterol", "correlates", "positively", "with", "cell", "size", ",", "which", "supports", "an", "increased", "need", "for", "cholesterol", "as", "the", "cell", "grows", "larger", "[", "8]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "droplet", "surface", "is", "decorated", "with", "protein", "involved", "in", "lipid", "metabolism", ",", "where", "the", "perilipins", "belong", "to", "the", "most", "well", "characterized", "family", "[", "6", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Reports", "suggest", "isolated", "lipid", "droplets", "hold", "a", "modified", "ER", "like", "membrane", "composition", ",", "including", "the", "ER-resident", "proteins", "BiP", "and", "calnexin", "[", "9", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Also", ",", "diglyceride", "acyltransferase", "(", "DGAT", ")", "connected", "to", "the", "lipid", "droplet", "supports", "both", "triglyceride", "synthesis", "and", "droplet", "formation", "[", "10", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "During", "adipocyte", "differentiation", ",", "small", "lipid", "droplets", "are", "formed", "and", "subsequently", "fused", "into", "larger", "droplets", "over", "a", "period", "of", "several", "weeks", ",", "until", "mainly", "one", "large", "central", "droplet", "remains", "[", "11", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Thus", ",", "the", "fusion", "process", "is", "a", "slow", ",", "directed", "event", "as", "shown", "by", "long-term", "label-free", "microscopy", "[", "12", "]", ",", "mediated", "via", "the", "CIDE", "family", "of", "proteins", ",", "possibly", "via", "pore", "formation", "[", "13", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "While", "the", "lipid", "droplet", "research", "field", "has", "been", "active", "for", "decades", ",", "the", "exact", "mechanisms", "of", "lipid", "droplet", "biogenesis", ",", "their", "spatial", "organization", ",", "function", "in", "cellular", "processes", ",", "and", "contribution", "to", "disease", "are", "not", "resolved", "[", "14", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Most", "studies", "reiterate", "the", "belief", "that", "primary", ",", "mature", "adipocytes", "contain", "one", "large", "lipid", "droplet", ",", "most", "likely", "due", "to", "histology", "analysis", "of", "intact", "adipose", "tissue", "with", "limited", "optical", "resolution", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "contrast", "to", "a", "large", ",", "central", "lipid", "droplet", ",", "adipocyte", "cell", "lines", "fully", "differentiated", "in", "vitro", "exhibit", "multiple", "lipid", "droplets", "within", "a", "broad", "size", "range", "[", "15", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "recent", "studies", ",", "we", "identified", "lipid", "droplet", "clusters", "in", "primary", "human", "adipocytes", ",", "dispersed", "close", "to", "the", "cell", "surface", "[", "16,17", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Adrenergic", "stimulation", "caused", "an", "accumulation", "of", "phosphorylated", "perilipin", "(", "pS522", ")", "at", "these", "clusters", ",", "supporting", "lipolytic", "activity", "to", "occur", "at", "these", "droplets", "[", "17", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "To", "our", "knowledge", ",", "only", "few", "reports", "have", "previously", "reported", "a", "similar", "lipid", "droplet", "phenotype", "in", "primary", "adipocytes", "." ]
+  }, {
+    "sentence_tokens" : [ "Lipid", "droplet", "patches", "were", "suggested", "to", "resemble", "sites", "of", "lipolysis", "[", "18", "]", ",", "and", "small", "lipid", "droplets", ",", "decorated", "with", "mitochondria", ",", "was", "proposed", "to", "form", "following", "Rosiglitazone", "treatment", "[", "19,20", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Further", ",", "tiny", "microlipid", "droplets", "(", "<", "1", "mu", "m", "in", "diameter", ")", "were", "formed", "close", "to", "the", "cell", "surface", "following", "acute", "adrenergic", "stimulation", "[", "21", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "With", "respect", "to", "the", "limited", "number", "of", "studies", "addressing", "lipid", "droplet", "organization", "in", "primary", "adipocytes", ",", "we", "have", "herein", "further", "characterized", "the", "presence", "of", "surface", "associated", "lipid", "droplets", "in", "human", "adipocytes", "." ]
+  }, {
+    "sentence_tokens" : [ "Methods", "." ]
+  }, {
+    "sentence_tokens" : [ "Material", "." ]
+  }, {
+    "sentence_tokens" : [ "CIDEC-GFP", "was", "generously", "provided", "by", "professor", "Peng", "Li", "(", "Fudan", "University", ",", "China", ")", ",", "BFP-Sec61", "beta", "was", "a", "gift", "from", "Gia", "Voeltz", "(", "Addgene", "plasmid", "#", "49,154", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Acipimox", "(", "A7856", ")", ",", "Triascin", "C", "(", "T4540", ")", "and", "antibodies", "towards", "CIDEC", "(", "HPA020553", ")", "were", "from", "Sigma", "." ]
+  }, {
+    "sentence_tokens" : [ "LAMP1", "(", "ab25630", ")", ",", "and", "EHD2", "(", "154,784", ")", "from", "abcam", ",", "perilipin-1", "pS522", "from", "Vala", "Sciences", ",", "LC3B", "(", "2775S", ")", ",", "hormone", "sensitive", "lipase", "(", "HSL", ")", "pS563", "(", "4139S", ")", ",", "Caveolin-1", "(", "3267", ")", ",", "Rab5", "(", "46,449", ")", ",", "Rab11", "(", "5589", ")", ",", "and", "Calnexin", "(", "2679", ")", "from", "Cell", "Signalling", "Technology", "." ]
+  }, {
+    "sentence_tokens" : [ "Alexa", "fluor", "goat", "alpha-rabbit", "568", "(", "A11036", ")", ",", "647", "(", "A21245", ")", ",", "alpha-mouse", "568", "(", "A11031", ")", ",", "647", "(", "A21236", ")", "secondary", "antibodies", ",", "Bodipy", "493/503", "(", "D3922", ")", ",", "Bodipy", "558/568", "C12", "(", "D3835", ")", ",", "Bodipy", "665/676", "(", "B3932", ")", ",", "and", "Lysotracker", "Deep", "Red", "(", "L12492", ")", "were", "from", "Invitrogen", "." ]
+  }, {
+    "sentence_tokens" : [ "MitoTracker", "RED", "CMXRos", "(", "M7512", ")", "and", "Mitotracker", "Deep", "Red", "(", "M22426", ")", "were", "from", "ThermoFisher", ",", "10", "nm", "gold", "secondary", "antibodies", "from", "Electron", "Microscopy", "Sciences", "." ]
+  }, {
+    "sentence_tokens" : [ "Adipocyte", "isolation", "." ]
+  }, {
+    "sentence_tokens" : [ "Subcutaneous", "white", "adipose", "tissue", "was", "removed", "during", "reconstructive", "surgery", ",", "and", "primary", "adipocytes", "were", "isolated", "from", "the", "tissue", "using", "an", "established", "protocol", "[", "22", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "patients", ",", "all", "female", ",", "were", "without", "known", "diabetes", "(", "type", "1", "or", "type", "2", ")", "or", "thyroid", "gland", "dysfunction", "." ]
+  }, {
+    "sentence_tokens" : [ "Isolated", ",", "primary", "adipocytes", "were", "suspended", "(", "20", "%", "(", "v/v", ")", ")", "in", "Krebs", "Ringer", "Bicarbonate", "HEPES", "(", "KRBH", ")", "buffer", ",", "pH", "7.4", ",", "containing", "200", "nM", "adenosine", "and", "1", "%", "(", "w/v", ")", "bovine", "serum", "albumin", "(", "BSA", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Cells", "kept", "in", "culture", "were", "suspended", "in", "DMEM", "(", "4.5", "g/L", "glucose", ")", "with", "penicillin", "and", "streptomycin", "(", "PEST", ")", "(", "100", "U/ml", "and", "100", "mu", "g/ml", ",", "respectively", ")", ",", "200", "nM", "phenyl-isopropyl-adenosine", "(", "PIA", ")", ",", "and", "3.5", "%", "(", "w/v", ")", "BSA", "and", "cultured", "at", "37", "degrees", "C", "in", "5", "%", "CO", "Adipose", "tissue", "culture", "." ]
+  }, {
+    "sentence_tokens" : [ "Adipose", "tissue", "obtained", "from", "human", "subjects", "or", "mice", "was", "minced", "using", "scissors", "in", "KRBH", "buffer", "." ]
+  }, {
+    "sentence_tokens" : [ "Suspension", "of", "small", "tissue", "pieces", "was", "washed", "2", "times", ",", "resuspended", "in", "DMEM", "(", "containing", "PEST", ",", "PIA", "and", "3.5", "%", "BSA", ")", ",", "and", "kept", "at", "37", "degrees", "C", "in", "5", "%", "CO", "for", "the", "indicated", "time", "period", "(", "48", "h", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Next", ",", "adipocytes", "were", "isolated", "according", "to", "the", "protocol", "as", "described", "above", "." ]
+  }, {
+    "sentence_tokens" : [ "Cells", "were", "stained", "and", "fixed", "for", "microscopy", "as", "described", "in", "the", "fluorescence", "microscopy", "section", "." ]
+  }, {
+    "sentence_tokens" : [ "Lipid", "metabolism", "assay", "." ]
+  }, {
+    "sentence_tokens" : [ "To", "monitor", "lipid", "flux", ",", "we", "used", "the", "fatty", "acid", "Bodipy", "558/568", "C12", "analogue", ",", "in", "line", "with", "a", "previous", "protocol", "[", "23", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "short", ",", "isolated", "cells", "were", "incubated", "for", "24", "h", "in", "37", "degrees", "C", "incubator", ",", "followed", "by", "2-h", "treatment", "with", "Bodipy", "558/568", "C12", ",", "washed", "3", "-", "4", "times", "and", "re-suspended", "in", "fresh", "DMEM", "(", "supplemented", "with", "PEST", ",", "PIA", ",", "and", "3.5", "%", "BSA", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Cells", "were", "incubated", "for", "another", "24", "h", "and", "labelled", "with", "MitoTracker", "deep", "red", "and", "Bodipy", "493/503", "prior", "fixation", "." ]
+  }, {
+    "sentence_tokens" : [ "Electroporation", "." ]
+  }, {
+    "sentence_tokens" : [ "Adipocytes", "were", "transfected", "as", "previously", "described", "[", "24", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "short", ",", "isolated", "adipose", "cells", "were", "suspended", "(", "40", "%", "(", "v/v", ")", ")", "in", "DMEM", "supplemented", "with", "PEST", "and", "PIA", "." ]
+  }, {
+    "sentence_tokens" : [ "Cells", "were", "electroporated", "using", "a", "square-wave", "pulse", "(", "400", "V", ",", "12", "ms", ",", "1", "pulse", ")", ",", "16", "mu", "g/ml", "DNA", "and", "cuvette", "plasmid", "as", "indicated", "in", "the", "figure", "." ]
+  }, {
+    "sentence_tokens" : [ "After", "electroporation", ",", "the", "cells", "were", "transferred", "into", "DMEM", "with", "PEST", ",", "PIA", "and", "3.5", "%", "BSA", ",", "and", "cultured", "at", "37", "degrees", "C", "in", "5", "%", "CO", "." ]
+  }, {
+    "sentence_tokens" : [ "Fluorescence", "microscopy", "." ]
+  }, {
+    "sentence_tokens" : [ "Imaging", "was", "performed", "using", "a", "Nikon", "A1", "plus", "confocal", "microscope", "with", "a", "60", "x", "Apo", "DIC", "oil", "immersion", "objective", "with", "a", "NA", "of", "1.40", "(", "Nikon", "Instruments", ")", "and", "appropriate", "filter", "sets", "." ]
+  }, {
+    "sentence_tokens" : [ "Images", "were", "acquired", "with", "NIS-Elements", ",", "version", ":", "4.50.02", "(", "Laboratory", "Imaging", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "TIRF", "imaging", ",", "we", "used", "a", "commercial", "TIRF", "system", "based", "on", "a", "Nikon", "Ti-E", "eclipse", "microscope", "equipped", "with", "a", "100", "x", "Apo", "TIRF", "DIC", "oil", "immersion", "objective", "with", "a", "NA", "of", "1.49", "(", "Nikon", "Instruments", ")", ",", "an", "iXon", "Ultra", "DU-897", "EMCCD", "camera", "(", "Andor", "Technology", ")", ",", "and", "four", "main", "laser", "lines", ":", "405", "(", "Cube", ",", "Coherent", ")", ",", "488", "(", "Melles-Griot", ")", ",", "561", "(", "Sapphire", ",", "Coherent", ")", ",", "and", "640", "(", "Cube", ",", "Coherent", ")", "with", "corresponding", "filter", "sets", "." ]
+  }, {
+    "sentence_tokens" : [ "Images", "were", "usually", "acquired", "at", "a", "generous", "TIRF", "angle", "to", "allow", "imaging", "of", "protein", "stains", "related", "to", "lipid", "droplets", ",", "such", "as", "phosphorylated", "perilipin-1", "." ]
+  }, {
+    "sentence_tokens" : [ "Isolated", "cells", "were", "fixed", "using", "4", "%", "paraformaldehyde", "and", "labelled", "with", "antibodies", "in", "a", "buffer", "containing", "1", "%", "BSA", ",", "1", "%", "goat", "serum", ",", "and", "0.05", "%", "saponin", "1", "-", "2", "h", "per", "labelled", "antibody", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "neutral", "lipid", "staining", ",", "Bodipy", "493/503", "was", "used", "together", "with", "confocal", "imaging", "." ]
+  }, {
+    "sentence_tokens" : [ "TIRF", "microscopy", "was", "used", "to", "detect", "protein", "stain", "only", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "imaging", "of", "adipocytes", ",", "we", "used", "previously", "described", "protocol", "[", "25", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Electron", "microscopy", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "standard", "trans", "electron", "microscopy", ",", "human", "tissue", "was", "fixed", "overnight", "using", "1", "%", "paraformaldehyde", "and", "3", "%", "glutaraldehyde", "." ]
+  }, {
+    "sentence_tokens" : [ "Followed", "by", "dehydration", "using", "methanol", "series", "(", "20", ",", "40", ",", "60", ",", "80", ",", "100", "%", ")", "30", "min", "each", ",", "de-lipidated", "using", "dichloromethane", "for", "1", "h", ",", "and", "then", "rehydrated", "with", "reverse", "methanol", "series", "." ]
+  }, {
+    "sentence_tokens" : [ "Methanol", "was", "diluted", "in", "KRBH", "without", "BSA", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "samples", "were", "fixed", "using", "OTO", "(", "osmium-tannic", "acid-osmium", ")", "for", "1", "h", "each", ",", "washed", "in", "KRBH", "without", "BSA", ",", "dehydrated", "using", "ethanol", "series", "and", "embedded", "in", "EPON", "." ]
+  }, {
+    "sentence_tokens" : [ "High-pressure", "freezing", "(", "HPF", ")", "was", "carried", "out", "in", "cells", "overexpressing", "EHD2wt", "to", "drive", "the", "droplet", "cluster", "phenotype", "." ]
+  }, {
+    "sentence_tokens" : [ "Freeze-substitution", "was", "done", "using", "2", "%", "glutaraldehyde", "and", "0.2", "%", "uranyl", "acetate", "in", "acetone", "for", "3", "d.", "Cells", "were", "embedded", "in", "lowicryl", "HM20", "UV", "polymerized", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "immunogold", "labelling", ",", "grids", "were", "blocked", "using", "1", "%", "BSA", "and", "labelled", "1", "h", "primary", "antibody", "as", "indicated", ",", "and", "1", "h", "with", "10", "nm", "gold", "particle", "conjugated", "secondary", "." ]
+  }, {
+    "sentence_tokens" : [ "Quantification", "of", "droplet", "size", "." ]
+  }, {
+    "sentence_tokens" : [ "Images", "were", "acquired", "using", "8x", "averaging", "and", "cells", "with", "minimal", "background", "signal", "coming", "from", "the", "central", "droplet", "was", "chosen", "and", "thresholded", "using", "Fiji", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "threshold", "was", "set", "to", "minimize", "background", "signal", "but", "still", "detect", "as", "much", "as", "possible", "of", "each", "individual", "droplet", "." ]
+  }, {
+    "sentence_tokens" : [ "Binary", "watershed", "was", "used", "to", "separate", "droplets", ",", "and", "uneven", "and", "unseparated", "signal", ",", "including", "background", ",", "was", "removed", "." ]
+  }, {
+    "sentence_tokens" : [ "Droplet", "area", "was", "acquired", "using", "Analyse", "particles", "." ]
+  }, {
+    "sentence_tokens" : [ "Assuming", "circularity", ",", "the", "diameter", "was", "calculated", "using", "the", "formula", "for", "circular", "area", ":", "A", "=", "pi", "x", "r", "-->", "r", "=", "sqrt", "(", "A/pi", ")", "-->", "d", "=", "r", "x", "2", "." ]
+  }, {
+    "sentence_tokens" : [ "Droplet", "diameter", "was", "plotted", "using", "violin", "plots", "in", "GraphPad", "prism", "." ]
+  }, {
+    "sentence_tokens" : [ "Lipogenesis", "." ]
+  }, {
+    "sentence_tokens" : [ "Lipogenesis", "was", "measured", "according", "to", "the", "previous", "method", "[", "26", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "brief", ",", "adipocytes", "were", "pretreated", "with", "Triascin", "C", "(", "10", "mu", "M", ")", "or", "vehicle", "(", "methanol", ")", "for", "time", "as", "indicated", "in", "the", "figure", ",", "re-suspended", "in", "KRBH", "buffer", "containing", "200", "nM", "adenosine", ",", "0.55", "mM", "glucose", "and", "3.5", "%", "BSA", "(", "w/v", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "triplicates", ",", "800", "mu", "l", "of", "the", "5", "%", "(", "v/v", ")", "adipocyte", "cell", "suspension", "was", "added", "to", "each", "tube", "and", "incubated", "for", "3", "h", "at", "37", "degrees", "C", "with", "14", "mu", "l", "of", "22", "mu", "Ci/ml", "tritiated", "D-[", "6-3", "H", "]-glucose", "(", "Perkin", "Elmer", ")", "with", "or", "without", "15", "nM", "insulin", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "assay", "was", "stopped", "by", "adding", "3.5", "ml", "of", "2,5-diphenyloxazole", "(", "Sigma", ")", "and", "1,4-bis", "(", "5-phenloxazol-2-yl", ")", "benzene", "toluene", "based", "scintillation", "liquid", "(", "Sigma", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "zero", "time-point", "sample", "was", "included", "to", "measure", "the", "amount", "of", "glucose", "in", "the", "lipid", "phase", "during", "extraction", "that", "was", "not", "used", "for", "lipid", "synthesis", "." ]
+  }, {
+    "sentence_tokens" : [ "Lipolysis", "." ]
+  }, {
+    "sentence_tokens" : [ "Lipolysis", "was", "determined", "by", "measuring", "glycerol", "release", "as", "described", "[", "27", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "short", ",", "cells", "were", "pre-treated", "with", "Acipimox", "(", "20", "mu", "g/ml", ")", "or", "vehicle", "(", "water", ")", "for", "time", "as", "indicated", "in", "the", "figure", ",", "washed", "in", "KRH", "medium", "with", "1", "%", "BSA", ",", "and", "treated", "with", "or", "without", "isoprenaline", "(", "10", "nM", ")", "for", "30", "min", "." ]
+  }, {
+    "sentence_tokens" : [ "Cell", "medium", "was", "subsequently", "removed", "for", "enzymatic", "determination", "of", "the", "glycerol", "content", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "short", ",", "100", "mu", "l", "free", "glycerol", "reagent", "was", "added", "to", "30", "mu", "l", "sample", "." ]
+  }, {
+    "sentence_tokens" : [ "Absorbance", "at", "540", "nm", "was", "measured", "after", "incubating", "for", "~", "15", "minutes", "at", "room", "temperature", "." ]
+  }, {
+    "sentence_tokens" : [ "Each", "sample", "was", "analysed", "in", "duplicate", "." ]
+  }, {
+    "sentence_tokens" : [ "Ethics", "statements", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "human", "studies", "were", "approved", "by", "the", "local", "ethical", "committee", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "human", "tissue", "was", "collected", "after", "written", "informed", "consent", "from", "the", "patients", "." ]
+  }, {
+    "sentence_tokens" : [ "Results", "." ]
+  }, {
+    "sentence_tokens" : [ "Lipid", "droplet", "organization", "at", "the", "cell", "surface", "." ]
+  }, {
+    "sentence_tokens" : [ "To", "monitor", "the", "distribution", "of", "lipid", "droplets", ",", "we", "applied", "confocal", "microscopy", "in", "primary", "human", "adipocytes", "stained", "for", "neutral", "lipids", "(", "Bodipy", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Adipocytes", "that", "were", "analysed", "immediately", "after", "isolation", "(", "designated", "d1", ")", "displayed", "small", "individual", "lipid", "droplets", "spread", "equally", "around", "the", "cytosol", "(", "dispersed", "droplets", ")", "(", "Figure", "1", "(", "a", ")", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "As", "expected", ",", "also", "the", "large", "central", "droplet", "was", "stained", "for", "neutral", "lipid", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "contrast", ",", "image", "analysis", "of", "adipocytes", "kept", "in", "culture", "for", "2", "d", "after", "isolation", "(", "designated", "d3", ")", ",", "displayed", "the", "formation", "of", "lipid", "droplet", "clusters", "close", "to", "the", "cell", "surface", "(", "Figure", "1", "(", "b", ")", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Most", "likely", ",", "these", "clusters", "represent", "expansion", "and", "aggregation", "of", "the", "individual", "dispersed", "droplets", "that", "were", "visible", "d1.In", "order", "to", "dissect", "whether", "the", "culturing", "itself", "induced", "the", "cluster", "formation", ",", "we", "analysed", "the", "lipid", "phenotype", "in", "adipocytes", "that", "were", "isolated", "after", "the", "adipose", "tissue", "had", "been", "kept", "in", "culture", "~", "2", "d", "(", "designated", "Tissue", "Culture", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "These", "cells", "displayed", "a", "similar", "phenotype", "as", "observed", "in", "cells", "isolated", "immediately", "after", "receiving", "the", "tissue", "biopsy", "(", "Figure", "1", "(", "c", ")", ",", "left", "panel", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Image", "analysis", "of", "both", "phenotypes", "revealed", "a", "wide", "range", "of", "lipid", "droplet", "sizes", "independent", "of", "how", "they", "were", "organized", ",", "even", "though", "there", "was", "a", "shift", "towards", "larger", "sizes", "in", "droplet", "clusters", "compared", "to", "dispersed", "droplets", "(", "average", "size", "0.8", "mu", "m", "compared", "to", "0.6", "mu", "m", "in", "diameter", ")", "(", "Figure", "1", "(", "c", ")", ",", "right", "panel", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "By", "electron", "microscopy", ",", "we", "could", "confirm", "the", "presence", "of", "small", "lipid", "droplets", "in", "intact", "adipose", "tissue", "(", "Figure", "1", "(", "d", ")", ")", ",", "and", "thus", "they", "are", "likely", "not", "a", "result", "of", "the", "adipocyte", "isolation", "procedure", "itself", "." ]
+  }, {
+    "sentence_tokens" : [ "Ultrastructure", "analysis", "also", "confirmed", "the", "presence", "of", "abundant", "caveolae", "domains", ",", "which", "verify", "intact", "adipocyte", "integrity", "(", "Figure", "1", "(", "e", ")", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Lipid", "droplets", "are", "decorated", "with", "CIDEC", "protein", "." ]
+  }, {
+    "sentence_tokens" : [ "CIDEC", "is", "known", "to", "localize", "at", "lipid", "droplet", "surfaces", "and", "to", "regulate", "lipid", "droplet", "expansion", "[", "13", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "order", "to", "examine", "if", "CIDEC", "was", "associated", "with", "the", "lipid", "droplets", "examined", "herein", ",", "we", "applied", "antibody", "labelling", "and", "CIDEC-GFP", "overexpression", "separately", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "found", "a", "clear", "localization", "of", "native", "and", "overexpressed", "CIDEC", "encircling", "both", "dispersed", "and", "clustered", "lipid", "droplets", "(", "Figure", "2", "(", "a", ",", "b", ")", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Note", ",", "CIDEC", "labelling", "was", "also", "detected", "at", "the", "central", "droplet", "as", "well", "." ]
+  }, {
+    "sentence_tokens" : [ "Further", ",", "we", "performed", "immunogold", "labelling", "of", "CIDEC", "in", "human", "adipocytes", "that", "were", "overexpressing", "EHD2wt", "to", "induce", "lipid", "droplet", "cluster", "formation", "as", "described", "previously", "[", "17", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "line", "with", "observations", "made", "using", "fluorescence", "microscopy", "(", "Figure", "2", "(", "a", ",", "b", ")", ")", ",", "electron", "microscopy", "analysis", "demonstrated", "that", "CIDEC", "was", "distributed", "at", "the", "surface", "of", "small", "lipid", "droplets", "(", "Figure", "2", "(", "c", ")", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "These", "data", "suggest", "that", "CIDEC", "plays", "a", "role", "in", "lipid", "transport", "between", "the", "small", "lipid", "droplets", ",", "and", "possibly", "the", "central", "droplet", "as", "well", "." ]
+  }, {
+    "sentence_tokens" : [ "Appearance", "of", "small", "lipid", "droplets", "independent", "of", "fatty", "acid", "flux", "." ]
+  }, {
+    "sentence_tokens" : [ "As", "an", "attempt", "to", "verify", "the", "formation", "of", "small", "lipid", "droplets", "is", "related", "to", "storage", "or", "release", "of", "fatty", "acids", ",", "cells", "were", "incubated", "with", "compounds", "known", "to", "inhibit", "either", "de", "novo", "triglyceride", "synthesis", "(", "Triacsin", "C", ")", "or", "lipolysis", "(", "Acipimox", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "we", "could", "not", "detect", "any", "clear", "effect", "on", "the", "lipid", "droplet", "formation", "phenotype", "in", "TriC", "treated", "cells", "compared", "to", "control", "(", "Figure", "3", "(", "b", ")", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Still", ",", "similar", "to", "Triascin", "C-treatment", ",", "Acipimox", "did", "not", "change", "the", "lipid", "droplet", "phenotype", "(", "Figure", "3", "(", "d", ")", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "line", "with", "our", "previous", "observations", "[", "17", "]", ",", "we", "found", "isoprenaline", "to", "induce", "phosphorylation", "of", "HSL", "(", "pS563", ")", "and", "perilipin-1", "(", "pS522", ")", ",", "both", "targets", "located", "in", "the", "vicinity", "of", "lipid", "droplet", "clusters", "(", "Figure", "4", "(", "a", ")", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "suggests", "these", "clusters", "are", "subjected", "to", "hydrolysis", "and", "thus", "could", "act", "as", "an", "intermediate", "stage", "of", "fatty", "acid", "release", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "long-term", "(", "48", "h", ")", "incubation", "with", "isoprenaline", "or", "insulin", "did", "not", "affect", "the", "overall", "lipid", "droplet", "phenotype", "(", "Figure", "4", "(", "b", ")", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Organization", "of", "cellular", "organelles", "in", "the", "vicinity", "of", "lipid", "droplets", "." ]
+  }, {
+    "sentence_tokens" : [ "Recent", "studies", "have", "addressed", "specialized", "mitochondria", "supporting", "triglyceride", "synthesis", "as", "well", "as", "fat", "oxidation", "[", "28", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "we", "set", "out", "to", "examine", "the", "distribution", "of", "mitochondria", "in", "relation", "to", "the", "surface", "associated", "lipid", "droplets", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "cells", "displaying", "dispersed", "droplets", ",", "mitochondria", "appeared", "as", "a", "highly", "tubular", "network", "evenly", "distributed", "throughout", "the", "cell", "(", "Figure", "5", "(", "a", ")", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Interestingly", ",", "in", "adipocytes", "that", "exhibited", "droplet", "clusters", ",", "mitochondria", "were", "re-distributed", "to", "profoundly", "locate", "around", "the", "droplet", "clusters", "(", "Figure", "5", "(", "b", ")", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Electron", "microscopy", "revealed", "that", "both", "dispersed", "droplets", "and", "droplet", "clusters", "seemed", "to", "be", "intrinsically", "connected", "to", "mitochondria", "which", "could", "assist", "in", "their", "formation", "and", "degradation", "(", "Figure", "5", "(", "c", ")", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "To", "further", "explore", "a", "possible", "interconnection", "between", "lipid", "droplets", "and", "mitochondria", ",", "we", "used", "a", "fatty", "acid", "analogue", ",", "Bodipy", "558/568", "C12", ",", "as", "a", "marker", "for", "lipid", "metabolism", "[", "23", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "contrast", "to", "Bodipy", "493/503", ",", "which", "stained", "neutral", "lipids", "in", "the", "central", "and", "surface", "associated", "droplets", ",", "the", "fatty", "acid", "analogue", "558/568", "C12", "was", "also", ",", "to", "a", "high", "extent", ",", "located", "in", "mitochondria", "(", "Figure", "6", "(", "a", ",", "b", ")", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "While", "this", "observation", "does", "not", "dissect", "the", "direction", "of", "lipid", "transport", ",", "it", "clearly", "demonstrates", "an", "important", "role", "for", "mitochondria", "in", "lipid", "metabolism", "in", "primary", "adipocytes.Further", ",", "lipid", "droplets", "are", "often", "located", "close", "to", "ER", ",", "the", "site", "for", "lipid", "droplet", "formation", "[", "4", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Here", ",", "we", "could", "confirm", "that", "ER", "compartments", "(", "detected", "by", "calnexin", "labelling", "and", "BFP-Sec61", "beta", "expression", ")", "were", "associated", "to", ",", "but", "not", "exclusively", ",", "with", "the", "small", "lipid", "droplets", "independent", "of", "droplet", "phenotype", "(", "Figure", "7", "(", "a", ",", "b", ")", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "While", "lysosomes", "and", "lipid", "droplets", "for", "long", "were", "considered", "to", "represent", "separate", "intracellular", "pathways", ",", "recent", "studies", "have", "addressed", "an", "interplay", "between", "these", "domains", "[", "29", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "a", "similar", "fashion", "to", "ER", ",", "we", "found", "lysosomes", "(", "monitored", "using", "either", "LAMP-1", "or", "LC3", "labelling", ")", "to", "be", "concentrated", "at", "dispersed", "droplets", "as", "well", "as", "droplet", "clusters", "(", "Figure", "7", "(", "c", ",", "d", ")", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Discussion", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "study", ",", "we", "have", "characterized", "the", "presence", "of", "small", "surface", "associated", "lipid", "droplets", ",", "rarely", "recognized", "before", ",", "distinct", "from", "the", "large", "central", "droplet", "which", "accounts", "for", "and", "determines", "the", "cellular", "volume", "[", "30", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Based", "on", "microscopy", "analyses", ",", "we", "propose", "that", "these", "droplet", "clusters", "represent", "an", "intermediate", "stage", "of", "lipid", "transport", "in", "primary", "adipocytes", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "is", "in", "agreement", "with", "previous", "reports", ",", "addressing", "a", "similar", "lipid", "droplet", "phenotype", "to", "represent", "sites", "of", "lipolysis", "[", "18,21", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Also", ",", "the", "significance", "of", "these", "lipid", "droplet", "compartments", "is", "supported", "by", "Lee", "M-J", "et", "al", ".,", "which", "detected", "small", "lipid", "droplets", "(", "SLDs", ")", "in", "human", "adipocytes", "following", "Rosiglitazone-treatment", "[", "19", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "contrast", "to", "our", "observation", ",", "SLDs", "were", "only", "visible", "in", "Rosiglitazone", "treated", "cells", ",", "whereas", "we", "find", "a", "similar", "phenotype", "independent", "of", "treatment", "." ]
+  }, {
+    "sentence_tokens" : [ "Possible", ",", "the", "discrepancy", "is", "due", "to", "the", "detection", "method", "since", "robust", "detection", "using", "light", "microscopy", "requires", "carefully", "optimization", "of", "pinhole", "and", "acquisition", "parameters", ",", "as", "well", "as", "immobilization", "of", "cells", "for", "higher", "magnification", "imaging", "[", "31", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Indeed", ",", "most", "likely", ",", "the", "lack", "of", "studies", "exploring", "this", "subgroup", "of", "lipid", "droplets", "is", "related", "to", "technical", "limitation", "performing", "image", "acquisition", "in", "primary", "adipocytes", "." ]
+  }, {
+    "sentence_tokens" : [ "Re-esterification", "of", "fatty", "acids", "has", "also", "been", "reported", "to", "increase", "the", "formation", "of", "cytosolic", "mLD", ",", "which", "was", "subjected", "to", "lipolytic", "activity", "[", "32", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "our", "study", ",", "using", "primary", ",", "human", "adipocytes", ",", "we", "observed", "no", "significant", "effect", "on", "lipid", "droplet", "organization", "following", "short-", "or", "long-term", "stimulation", "with", "either", "insulin", "or", "isoprenaline", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "believe", "that", "these", "differences", "in", "lipid", "droplet", "dynamic", "in", "part", "are", "related", "to", "the", "distinct", "organization", "of", "droplets", "related", "to", "adipocyte", "models", ",", "where", "differentiated", "3T3-L1", "adipocytes", "hold", "a", "large", "number", "of", "intracellular", "lipid", "droplets", "of", "varying", "sizes", "[", "15", "]", "as", "well", "as", "tight", "interconnection", "with", "mitochondria", ",", "which", "at", "this", "stage", "more", "resembles", "brown", "adipocytes", "than", "white", "adipocytes", "[", "33,34", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Note", ",", "in", "a", "subset", "of", "experiments", "(", "Figure", "6", ")", ",", "we", "used", "primary", "adipocytes", "from", "C57Bl/6", "J", "mice", "due", "to", "limited", "access", "to", "human", "tissue", "." ]
+  }, {
+    "sentence_tokens" : [ "Apparently", ",", "a", "similar", "droplet", "phenotype", "is", "present", "also", "in", "primary", "mouse", "adipocytes", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "emphasizes", "the", "need", "for", "optimized", "image", "acquisition", "to", "detect", "these", "structures", ",", "which", "could", "explain", "the", "limited", "number", "of", "studies", "addressing", "this", "lipid", "domain", "." ]
+  }, {
+    "sentence_tokens" : [ "Even", "though", "we", "could", "not", "induce", "a", "change", "in", "small", "lipid", "droplet", "phenotype", "by", "either", "pharmacologic", "treatment", "or", "hormone", "stimulation", ",", "it", "does", "not", "rule", "out", "the", "metabolic", "activity", "at", "these", "sites", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "is", "in", "line", "with", "other", "reports", ",", "describing", "a", "close", "association", "of", "mitochondria", "with", "lipid", "droplets", "[", "28", "]", ",", "and", "lipid", "droplet", "formation", "to", "protect", "against", "mitochondrial", "stress", "[", "35", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "a", "recent", "review", ",", "the", "role", "of", "mitochondria", "in", "adipocyte", "biology", "was", "discussed", "comparing", "different", "adipocyte", "models", "and", "distinct", "distributions", "of", "cytosolic", "and", "peridroplet", "mitochondria", "and", "their", "discerning", "functions", "[", "36", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "also", "observed", "a", "change", "in", "mitochondria", "phenotype", "dependent", "on", "lipid", "droplet", "clustering", ",", "which", "could", "relate", "to", "a", "re-organization", "in", "metabolic", "flux", "." ]
+  }, {
+    "sentence_tokens" : [ "Using", "the", "fatty", "acid", "analogue", "Bodipy", "558/568", ",", "we", "found", "evidence", "that", "supports", "fatty", "acids", "can", "be", "metabolized", "in", "mitochondria", "." ]
+  }, {
+    "sentence_tokens" : [ "Indeed", ",", "lipid", "droplets", "have", "been", "reported", "to", "connect", "to", "a", "number", "of", "organelles", ",", "including", "ER", ",", "mitochondria", ",", "lysosomes", "and", "peroxisomes", "[", "37", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "addition", "to", "mitochondria", ",", "we", "also", "observed", "an", "increase", "of", "lysosomes", "and", "LC3", "punctae", "around", "cluster", "formations", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "increase", "of", "proteins", "involved", "in", "lipid", "transport", ",", "autophagy", "as", "well", "as", "mitochondrial", "connection", "at", "these", "droplets", "indicate", "that", "they", "serve", "as", "centres", "involved", "in", "metabolism.CIDEC", "is", "connected", "with", "lipid", "transport", "and", "is", "part", "of", "the", "lipid", "droplet", "coat", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "found", "over-expressed", "CIDEC-GFP", "to", "be", "distributed", "on", "and", "adjacent", "to", "small", "droplets", "as", "a", "circular", "coat", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "distribution", "of", "CIDEC", "suggests", "that", "lipid", "transport", "at", "these", "sites", "is", "mechanistically", "regulated", "in", "a", "similar", "fashion", "to", "most", "other", "cell", "types", "exhibiting", "small", "lipid", "droplets", "[", "13,23", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "By", "staining", "(", "calnexin", ")", "and", "overexpression", "(", "Sec61", "beta", ")", "of", "ER-markers", "we", "observed", "ER", "to", "be", "spread", "all", "over", "the", "cell", ",", "with", "some", "increase", "around", "droplet", "clusters", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "suggests", "that", ",", "even", "though", "most", "observable", "droplets", "are", "connected", "to", "mitochondria", ",", "there", "also", "exists", "an", "intricate", "connection", "between", "lipid", "droplets", "and", "ER", "." ]
+  }, {
+    "sentence_tokens" : [ "Numerous", "articles", "have", "reported", "lipid", "droplet", "formation", "to", "occur", "in", "ER", "[", "4", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Since", "we", "cannot", "fully", "determine", "the", "flow", "of", "lipids", ",", "we", "cannot", "exclude", "that", "ER", "is", "relevant", "for", "the", "transport", "of", "lipids", "and", "lipid", "related", "proteins", "." ]
+  }, {
+    "sentence_tokens" : [ "Further", ",", "we", "could", "verify", "some", "minor", "interaction", "between", "lipid", "droplets", "and", "endosomal", "compartments", "(", "Supplementary", "figure", "S1", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "the", "significance", "of", "these", "interactions", "is", "unclear", "at", "this", "point.The", "fact", "that", "we", "observed", "a", "change", "in", "lipid", "droplet", "organization", "from", "dispersed", "droplets", "to", "a", "droplet", "cluster", "phenotype", "during", "culturing", "could", "reflect", "the", "nutritional", "state", "(", "starvation", ")", ",", "loss", "of", "extracellular", "matrix", ",", "or", "deteriorating", "cell", "function", "." ]
+  }, {
+    "sentence_tokens" : [ "Still", ",", "the", "fact", "that", "we", "observed", "dispersed", "droplets", "also", "in", "intact", "adipose", "tissue", "supports", "their", "physiologic", "relevance", "and", "excludes", "their", "presence", "as", "an", "artefact", "due", "to", "cell", "isolation", "." ]
+  }, {
+    "sentence_tokens" : [ "Also", ",", "a", "preserved", "hormonal", "response", "suggests", ",", "at", "least", "partial", ",", "intact", "adipocyte", "function", "after", "cell", "culturing", "of", "human", "adipocytes", "." ]
+  }, {
+    "sentence_tokens" : [ "As", "mentioned", ",", "in", "most", "experiments", ",", "we", "observed", "lipid", "droplet", "cluster", "formation", "following", "cell", "culture", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "a", "subset", "of", "experiments", ",", "we", "used", "overexpression", "of", "EHD2", "to", "drive", "the", "droplet", "cluster", "phenotype", "as", "previously", "described", "[", "17", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "theory", ",", "this", "could", "shift", "the", "lipid", "flux", ",", "since", "EHD2", "is", "known", "to", "affect", "caveolar", "dynamic", "at", "the", "plasma", "membrane", "[", "38", "]", ",", "and", "caveolae", "is", "essential", "for", "preserved", "lipid", "transport", "[", "39", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Still", ",", "we", "could", "not", "observe", "any", "direct", "connection", "of", "caveolae", "bulb", "shapes", "and", "the", "smaller", "droplets", "." ]
+  }, {
+    "sentence_tokens" : [ "Instead", ",", "ultra-structure", "analysis", "demonstrated", "that", "caveolae", "structures", "were", "abundantly", "present", "in", "the", "membrane", "at", "other", "locations", "in", "intact", "adipose", "tissue", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "the", "hypothesis", "of", "small", "lipid", "droplets", "as", "an", "intermediate", "stage", "of", "lipid", "transport", "does", "not", "exclude", "a", "role", "for", "caveolae", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "example", ",", "caveolae", "might", "still", "be", "part", "of", "the", "membrane", "in", "a", "flattened", "shape", "close", "to", "the", "droplet", "formations", "." ]
+  }, {
+    "sentence_tokens" : [ "Rather", ",", "the", "findings", "described", "herein", "could", "complement", "previous", "knowledge", "of", "caveolae", "and", "lipid", "transport", "." ]
+  }, {
+    "sentence_tokens" : [ "Since", "staining", "of", "EHD2", "or", "caveolin-1", "(", "caveolae", "marker", ")", ",", "using", "confocal", "microscopy", "yielded", "a", "uniform", "membrane", "stain", ",", "with", "a", "certain", "focus", "around", "droplet", "clusters", "(", "Supplementary", "S2", ")", ",", "we", "cannot", "exclude", "caveolae", "connection", "to", "organelles", "or", "lipid", "droplets", ",", "even", "though", "this", "is", "difficult", "to", "confirm", "at", "the", "ultrastructural", "level.In", "summary", ",", "in", "this", "study", ",", "we", "provide", "evidence", "of", "a", "novel", "lipid", "droplet", "phenotype", "present", "in", "primary", "adipocytes", ",", "seemingly", "unaffected", "by", "stimulation", "or", "treatment", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "presence", "and", "activation", "of", "proteins", "related", "to", "lipid", "metabolism", ",", "as", "well", "as", "connection", "with", "mitochondria", ",", "lead", "us", "to", "conclude", "that", "these", "droplets", "act", "as", "an", "intermediate", "for", "lipid", "transport", "in", "primary", "adipocytes", "." ]
+  } ]
+}

@@ -1,135 +1,475 @@
-[ {
-  "sentence_tokens" : [ "In", "patients", "2", "and", "3", ",", "the", "tumor", "had", "also", "invaded", "the", "pleural", "space", ",", "and", "had", "caused", "sudden", "dyspnea", "in", "patient", "3", "." ],
-  "event_indices" : [ 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 7, 8 ],
-  "controlled_indices" : [ 19, 20 ],
-  "trigger_indices" : [ 17, 18 ],
-  "rule_name" : "Positive_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Clinicians", "should", "be", "mindful", "that", "mediastinal", "teratoma", "is", "a", "potential", "cause", "of", "hemoptysis", ",", "lung", "lesions", "and", "pleuritis", "." ],
-  "event_indices" : [ 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 6, 7 ],
-  "controlled_indices" : [ 17, 18 ],
-  "trigger_indices" : [ 7, 8, 9, 10, 11 ],
-  "rule_name" : "Positive_activation_copula_1",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Clinicians", "should", "be", "mindful", "that", "mediastinal", "teratoma", "is", "a", "potential", "cause", "of", "hemoptysis", ",", "lung", "lesions", "and", "pleuritis", "." ],
-  "event_indices" : [ 6, 7, 8, 9, 10, 11, 12, 13 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 6, 7 ],
-  "controlled_indices" : [ 12, 13 ],
-  "trigger_indices" : [ 7, 8, 9, 10, 11 ],
-  "rule_name" : "Positive_activation_copula_1",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Hemoptysis", "is", "a", "very", "rare", "symptom", "of", "mediastinal", "teratoma", ",", "and", "is", "usually", "caused", "by", "recurrent", "infection", "due", "to", "lung", "compression", "or", "tumor", "rupture", "into", "the", "lung", "[", "3", "-", "5", "]", "." ],
-  "event_indices" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 16, 17 ],
-  "controlled_indices" : [ 0, 1 ],
-  "trigger_indices" : [ 13, 14 ],
-  "rule_name" : "Positive_activation_syntax_2_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Rarely", ",", "teratoma", "may", "rupture", "into", "adjacent", "structures", "and", "lead", "to", "lung", "lesions", "or", "pleuritis", "." ],
-  "event_indices" : [ 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 2, 3 ],
-  "controlled_indices" : [ 14, 15 ],
-  "trigger_indices" : [ 9, 10 ],
-  "rule_name" : "Positive_activation_syntax_7_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "All", "three", "patients", "were", "initially", "suspected", "to", "have", "tuberculosis", "or", "empyema", ",", "and", "underwent", "relevant", "treatment", ",", "but", "without", "improvement", "." ],
-  "entity_one_indices" : [ 10, 11 ],
-  "entity_two_indices" : [ 8, 9 ]
-}, {
-  "sentence_tokens" : [ "Calcification", "and", "pachypleuritis", "on", "chest", "imaging", "especially", "in", "patients", "without", "fever", "should", "be", "highly", "suspected", "of", "mediastinal", "teratoma", "." ],
-  "entity_one_indices" : [ 17, 18 ],
-  "entity_two_indices" : [ 10, 11 ]
-}, {
-  "sentence_tokens" : [ "A", "5-year-old", "boy", "presented", "with", "a", "9-month", "history", "of", "recurrent", "hemoptysis", "and", "mild", "wet", "cough", "." ],
-  "entity_one_indices" : [ 14, 15 ],
-  "entity_two_indices" : [ 10, 11 ]
-}, {
-  "sentence_tokens" : [ "He", "was", "treated", "for", "tuberculosis", "for", "5", "months", ",", "but", "his", "hemoptysis", "(", "2", "-", "10", "ml", "of", "blood", "each", "time", ")", "became", "worse", "." ],
-  "entity_one_indices" : [ 11, 12 ],
-  "entity_two_indices" : [ 4, 5 ]
-}, {
-  "sentence_tokens" : [ "Consequently", ",", "he", "was", "treated", "for", "tuberculosis", "for", "5", "months", ";", "however", ",", "during", "this", "time", "he", "began", "to", "complain", "of", "right", "sided", "chest", "pain", "." ],
-  "entity_one_indices" : [ 23, 24, 25 ],
-  "entity_two_indices" : [ 6, 7 ]
-}, {
-  "sentence_tokens" : [ "On", "thoracoscopy", ",", "we", "identified", "a", "mass", "tightly", "adherent", "to", "adjacent", "tissue", "in", "the", "base", "of", "the", "thoracic", "cavity", "adjacent", "to", "the", "costospinal", "angle", ",", "and", "severely", "adherent", ",", "thickened", ",", "fibrotic", "pleura", "." ],
-  "entity_one_indices" : [ 14, 15 ],
-  "entity_two_indices" : [ 6, 7 ]
-}, {
-  "sentence_tokens" : [ "A", "9-year-old", "girl", "presented", "with", "a", "3-month", "history", "of", "right", "sided", "chest", "pain", "and", "right", "upper", "limb", "pain", "." ],
-  "entity_one_indices" : [ 17, 18 ],
-  "entity_two_indices" : [ 11, 12, 13 ]
-}, {
-  "sentence_tokens" : [ "Thoracic", "CT", "revealed", "right", "sided", "pulmonary", "consolidation", "and", "massive", "pleural", "effusion", "(", "Fig.", "3a", ")", "." ],
-  "entity_one_indices" : [ 9, 10, 11 ],
-  "entity_two_indices" : [ 1, 2 ]
-}, {
-  "sentence_tokens" : [ "Subsequent", "CT", "revealed", "pachypleuritis", "and", "a", "low", "density", "mass", "(", "Fig.", "3b", ")", "." ],
-  "entity_one_indices" : [ 8, 9 ],
-  "entity_two_indices" : [ 1, 2 ]
-}, {
-  "sentence_tokens" : [ "She", "was", "successively", "treated", "with", "vancomycin", "and", "anti-tuberculosis", "drugs", ";", "however", ",", "CT", "revealed", "an", "encapsulated", "effusion", "." ],
-  "entity_one_indices" : [ 12, 13 ],
-  "entity_two_indices" : [ 5, 6 ]
-}, {
-  "sentence_tokens" : [ "On", "admission", "to", "our", "hospital", ",", "contrast", "enhanced", "CT", "revealed", "a", "right", "sided", "mass", "with", "multiple", "focal", "fatty", "densities", "adjacent", "to", "the", "heart", "(", "Fig.", "3c-d", ")", "." ],
-  "entity_one_indices" : [ 13, 14 ],
-  "entity_two_indices" : [ 8, 9 ]
-}, {
-  "sentence_tokens" : [ "Their", "recoveries", "have", "been", "uneventful", ",", "and", "there", "is", "no", "evidence", "of", "tumor", "recurrence", "." ],
-  "entity_one_indices" : [ 13, 14 ],
-  "entity_two_indices" : [ 12, 13 ]
-}, {
-  "sentence_tokens" : [ "However", "later", "did", "lung", "CT", "reveal", "calcification", ",", "cavitation", "and", "a", "low-density", "focus", "in", "the", "irregular", "mass", "." ],
-  "entity_one_indices" : [ 16, 17 ],
-  "entity_two_indices" : [ 4, 5 ]
-}, {
-  "sentence_tokens" : [ "In", "patient", "2", ",", "chest", "imaging", "initially", "revealed", "a", "large", "lobe", "consolidation", "in", "the", "right", "lung", "and", "right", "sided", "pleuritis", "." ],
-  "entity_one_indices" : [ 19, 20 ],
-  "entity_two_indices" : [ 10, 11 ]
-}, {
-  "sentence_tokens" : [ "In", "the", "context", "of", "extremely", "elevated", "inflammatory", "markers", "in", "serum", "and", "pleural", "effusion", ",", "a", "diagnosis", "of", "empyema", "was", "reasonable", "." ],
-  "entity_one_indices" : [ 17, 18 ],
-  "entity_two_indices" : [ 11, 12, 13 ]
-}, {
-  "sentence_tokens" : [ "Even", "though", "the", "mass", "was", "only", "recognized", "later", ",", "it", "was", "still", "easily", "misdiagnosed", "as", "an", "encapsulated", "effusion", "or", "abscess", "that", "had", "not", "been", "completely", "absorbed", "." ],
-  "entity_one_indices" : [ 19, 20 ],
-  "entity_two_indices" : [ 3, 4 ]
-}, {
-  "sentence_tokens" : [ "The", "tumor", "shape", "on", "chest", "imaging", "was", "extremely", "atypical", "in", "all", "our", "patients", "especially", "patient", "2.Pancreatic", "tissue", "has", "been", "identified", "within", "mediastinal", "teratomas", "before", "[", "10", ",", "11", "]", "." ],
-  "entity_one_indices" : [ 22, 23 ],
-  "entity_two_indices" : [ 1, 2 ]
-}, {
-  "sentence_tokens" : [ "It", "is", "presumed", "that", "pancreatic", "digestive", "enzymes", "are", "the", "main", "cause", "of", "tumor", "rupture", "and", "perforation", "of", "surrounding", "structures", "." ],
-  "entity_one_indices" : [ 13, 14 ],
-  "entity_two_indices" : [ 12, 13 ]
-}, {
-  "sentence_tokens" : [ "In", "patients", "1", "and", "2", ",", "hemoptysis", "was", "the", "chief", "complaint", ";", "the", "lung", "tissue", "adherent", "to", "the", "teratoma", "was", "partially", "eroded", "in", "patient", "1", ",", "and", "severely", "eroded", ",", "necrotic", "in", "patient", "2", "." ],
-  "entity_one_indices" : [ 18, 19 ],
-  "entity_two_indices" : [ 6, 7 ]
-}, {
-  "sentence_tokens" : [ "These", "findings", "suggest", "that", "the", "hemoptysis", "was", "caused", "by", "erosion", "of", "small", "pulmonary", "vessels", "by", "digestive", "enzymes", "released", "by", "the", "teratoma", "." ],
-  "entity_one_indices" : [ 20, 21 ],
-  "entity_two_indices" : [ 5, 6 ]
-}, {
-  "sentence_tokens" : [ "Calcification", "and", "pachypleuritis", "on", "chest", "imaging", "especially", "in", "patients", "without", "fever", "should", "be", "highly", "suspected", "of", "mediastinal", "teratoma", "." ],
-  "entity_one_indices" : [ 17, 18 ],
-  "entity_two_indices" : [ 10, 11 ]
-} ]
+{
+  "regulations" : [ {
+    "sentence_tokens" : [ "In", "patients", "2", "and", "3", ",", "the", "tumor", "had", "also", "invaded", "the", "pleural", "space", ",", "and", "had", "caused", "sudden", "dyspnea", "in", "patient", "3", "." ],
+    "event_indices" : [ 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 7, 8 ],
+    "controlled_indices" : [ 19, 20 ],
+    "trigger_indices" : [ 17, 18 ],
+    "rule_name" : "Positive_activation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "Clinicians", "should", "be", "mindful", "that", "mediastinal", "teratoma", "is", "a", "potential", "cause", "of", "hemoptysis", ",", "lung", "lesions", "and", "pleuritis", "." ],
+    "event_indices" : [ 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 6, 7 ],
+    "controlled_indices" : [ 17, 18 ],
+    "trigger_indices" : [ 7, 8, 9, 10, 11 ],
+    "rule_name" : "Positive_activation_copula_1",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "Clinicians", "should", "be", "mindful", "that", "mediastinal", "teratoma", "is", "a", "potential", "cause", "of", "hemoptysis", ",", "lung", "lesions", "and", "pleuritis", "." ],
+    "event_indices" : [ 6, 7, 8, 9, 10, 11, 12, 13 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 6, 7 ],
+    "controlled_indices" : [ 12, 13 ],
+    "trigger_indices" : [ 7, 8, 9, 10, 11 ],
+    "rule_name" : "Positive_activation_copula_1",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "Hemoptysis", "is", "a", "very", "rare", "symptom", "of", "mediastinal", "teratoma", ",", "and", "is", "usually", "caused", "by", "recurrent", "infection", "due", "to", "lung", "compression", "or", "tumor", "rupture", "into", "the", "lung", "[", "3", "-", "5", "]", "." ],
+    "event_indices" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 16, 17 ],
+    "controlled_indices" : [ 0, 1 ],
+    "trigger_indices" : [ 13, 14 ],
+    "rule_name" : "Positive_activation_syntax_2_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "Rarely", ",", "teratoma", "may", "rupture", "into", "adjacent", "structures", "and", "lead", "to", "lung", "lesions", "or", "pleuritis", "." ],
+    "event_indices" : [ 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 2, 3 ],
+    "controlled_indices" : [ 14, 15 ],
+    "trigger_indices" : [ 9, 10 ],
+    "rule_name" : "Positive_activation_syntax_7_verb",
+    "rule" : null
+  } ],
+  "hardInstances" : [ {
+    "sentence_tokens" : [ "Clinicians", "should", "be", "mindful", "that", "mediastinal", "teratoma", "is", "a", "potential", "cause", "of", "hemoptysis", ",", "lung", "lesions", "and", "pleuritis", "." ],
+    "entities_indices" : [ [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "Clinicians", "should", "be", "mindful", "that", "mediastinal", "teratoma", "is", "a", "potential", "cause", "of", "hemoptysis", ",", "lung", "lesions", "and", "pleuritis", "." ],
+    "entities_indices" : [ [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "Hemoptysis", "is", "a", "very", "rare", "symptom", "of", "mediastinal", "teratoma", ",", "and", "is", "usually", "caused", "by", "recurrent", "infection", "due", "to", "lung", "compression", "or", "tumor", "rupture", "into", "the", "lung", "[", "3", "-", "5", "]", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 22, 23 ], [ 23, 24 ] ]
+  } ],
+  "withoutRegulations" : [ {
+    "sentence_tokens" : [ "In", "each", "of", "these", "cases", ",", "the", "teratoma", "had", "invaded", "adjacent", "tissue", ",", "especially", "the", "lung", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "Mediastinal", "teratoma", "presenting", "with", "hemoptysis", "and", "pleuritis", "misdiagnosed", "as", "tuberculosis", "(", "empyema", ")", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 4, 5 ], [ 6, 7 ], [ 9, 10 ], [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "These", "findings", "suggest", "that", "the", "hemoptysis", "was", "caused", "by", "erosion", "of", "small", "pulmonary", "vessels", "by", "digestive", "enzymes", "released", "by", "the", "teratoma", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "main", "rarity", "of", "our", "reported", "cases", "was", "the", "dynamic", "imaging", "findings", "very", "similar", "to", "the", "developmental", "process", "of", "tuberculosis", "in", "patients", "1", "and", "2", ",", "the", "pachypleuritis", "in", "patients", "2", "and", "3", ",", "the", "extremely", "elevated", "inflammatory", "markers", "very", "similar", "to", "empyema", "in", "patient", "3", ",", "and", "the", "extremely", "atypical", "tumor", "shape", "in", "all", "patients", "." ],
+    "entities_indices" : [ [ 16, 17, 18 ], [ 19, 20 ], [ 42, 43 ], [ 51, 52 ] ]
+  }, {
+    "sentence_tokens" : [ "Patient", "2", "initially", "presented", "with", "right", "sided", "pulmonary", "consolidation", "and", "pleuritis", ",", "and", "subsequently", "developed", "right", "lower", "lobe", "calcification", ",", "pleural", "thickening", ",", "and", "irregular", "soft", "tissue", "in", "the", "right", "inferior", "mediastinum", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "On", "admission", "to", "our", "hospital", ",", "contrast", "enhanced", "CT", "revealed", "a", "right", "sided", "mass", "with", "multiple", "focal", "fatty", "densities", "adjacent", "to", "the", "heart", "(", "Fig.", "3c-d", ")", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "made", "the", "differential", "diagnoses", "of", "mediastinal", "teratoma", "or", "multifocal", "myofibroblastoma", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "All", "these", "patients", "were", "initially", "suspected", "to", "have", "pneumonia", ",", "tuberculosis", "or", "empyema", ",", "and", "underwent", "relevant", "treatment", ",", "but", "without", "improvement", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 10, 11 ], [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "Chest", "X-ray", "revealed", "right", "sided", "pulmonary", "consolidation", "and", "pleuritis", "." ],
+    "entities_indices" : [ [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "main", "rarity", "of", "these", "cases", "was", "the", "dynamic", "imaging", "findings", "similar", "to", "the", "developmental", "process", "of", "tuberculosis", "in", "patients", "1", "and", "2", ",", "the", "pachypleuritis", "in", "the", "patients", "2", "and", "3", ",", "the", "extremely", "elevated", "inflammatory", "markers", "in", "serum", "and", "pleural", "effusion", "similar", "to", "empyema", "in", "patient", "3", ",", "and", "the", "extremely", "atypical", "tumor", "shape", "on", "chest", "imaging", "in", "all", "patients", "especially", "in", "patient", "2", "." ],
+    "entities_indices" : [ [ 14, 15, 16 ], [ 17, 18 ], [ 41, 42, 43 ], [ 45, 46 ], [ 54, 55 ] ]
+  }, {
+    "sentence_tokens" : [ "An", "acid-fast", "stain", "and", "bacterial", ",", "fungal", "and", "mycobacterial", "cultures", "of", "the", "pleural", "effusion", "were", "negative", "." ],
+    "entities_indices" : [ [ 12, 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "Thoracotomy", "and", "thoracoscopy", "revealed", "mediastinal", "teratoma", "in", "each", "case", ",", "all", "of", "which", "were", "completely", "excised", "and", "the", "patients", "made", "uneventful", "recoveries", "." ],
+    "entities_indices" : [ [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "Although", "this", "was", "not", "recognized", "at", "the", "time", ",", "this", "was", "likely", "due", "to", "pancreatic", "tissue", "within", "the", "teratoma", "eroding", "surrounding", "structures", "and", "causing", "chronic", "non", "purulent", "pleural", "inflammation.Surgical", "resection", "is", "the", "only", "effective", "way", "to", "treat", "teratoma", ",", "especially", "for", "mature", "tumors", "." ],
+    "entities_indices" : [ [ 18, 19 ], [ 37, 38 ], [ 42, 43 ] ]
+  }, {
+    "sentence_tokens" : [ "On", "thoracoscopy", ",", "a", "thymic", "mass", "was", "completely", "excised", "." ],
+    "entities_indices" : [ [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "Therefore", "the", "clinical", "courses", "and", "dynamic", "imaging", "findings", "of", "patients", "1", "and", "2", "were", "similar", "to", "the", "developmental", "process", "of", "tuberculosis", ",", "and", "to", "the", "best", "of", "our", "knowledge", "there", "have", "been", "no", "previous", "reports", "of", "mediastinal", "teratoma", "presenting", "in", "these", "ways", "." ],
+    "entities_indices" : [ [ 17, 18, 19 ], [ 20, 21 ], [ 37, 38 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "tumor", "shape", "on", "chest", "imaging", "was", "extremely", "atypical", "in", "all", "our", "patients", "especially", "patient", "2.Pancreatic", "tissue", "has", "been", "identified", "within", "mediastinal", "teratomas", "before", "[", "10", ",", "11", "]", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "All", "patients", "were", "finally", "diagnosed", "with", "mature", "cystic-solid", "mediastinal", "teratoma", "(", "affecting", "the", "left", "upper", "mediastinum", ",", "the", "right", "inferior", "mediastinum", "and", "the", "right", "anterior", "mediastinum", "in", "patients", "1", ",", "2", "and", "3", ",", "respectively", ")", "." ],
+    "entities_indices" : [ [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "Only", "a", "few", "cases", "of", "teratoma", "rupture", "into", "the", "pleural", "space", "have", "been", "reported", ";", "in", "addition", ",", "these", "tumors", "may", "be", "associated", "with", "atelectasis", ",", "and", "post-obstructive", "pneumonia", "[", "13", "-", "17", "]", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 6, 7 ], [ 19, 20 ], [ 24, 25 ], [ 28, 29 ] ]
+  }, {
+    "sentence_tokens" : [ "However", "later", "did", "lung", "CT", "reveal", "calcification", ",", "cavitation", "and", "a", "low-density", "focus", "in", "the", "irregular", "mass", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "Case", "presentation", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "Sommerlad", "et", "al.", "[", "6", ",", "12", "]", "reported", "a", "fistula", "adjacent", "to", "the", "mediastinum", "secondary", "to", "non", "purulent", "inflammation", "caused", "by", "digestive", "enzymes", ",", "however", "inflammatory", "markers", "were", "extremely", "high", "and", "the", "pleural", "effusion", "appeared", "to", "be", "turbid", "in", "patient", "3", ",", "which", "increased", "the", "difficulty", "in", "diagnosis", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 19, 20 ], [ 33, 34, 35 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "5-year-old", "boy", "presented", "with", "a", "9-month", "history", "of", "recurrent", "hemoptysis", "and", "mild", "wet", "cough", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "Mediastinal", "teratoma", "is", "unusual", "in", "children", "." ],
+    "entities_indices" : [ [ 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "Exploration", "revealed", "a", "thymic", "mass", "tightly", "adherent", "to", "the", "left", "lung", ",", "which", "was", "partially", "eroded", "." ],
+    "entities_indices" : [ [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "Mediastinal", "teratoma", "is", "mostly", "seen", "in", "young", "adults", ",", "and", "thymic", "teratoma", "is", "very", "rare", "regardless", "of", "age", ";", "however", ",", "patients", "1", "and", "3", "had", "definitive", "diagnosis", "of", "thymic", "teratoma", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 11, 12 ], [ 30, 31 ] ]
+  }, {
+    "sentence_tokens" : [ "Mediastinal", "teratoma", "should", "be", "considered", "as", "a", "differential", "diagnosis", "in", "patients", "with", "hemoptysis", ",", "lung", "lesions", "and", "pleuritis", "of", "unknown", "origin", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 12, 13 ], [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "Subsequent", "CT", "revealed", "pachypleuritis", "and", "a", "low", "density", "mass", "(", "Fig.", "3b", ")", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "However", "calcification", ",", "cavitation", "and", "pachypleuritis", "were", "the", "important", "features", "of", "tuberculosis", "." ],
+    "entities_indices" : [ [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "describe", "3", "rare", "cases", "of", "mediastinal", "teratoma", "misdiagnosed", "as", "tuberculosis", "or", "empyema", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 10, 11 ], [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "patients", "2", "and", "3", ",", "pleural", "biopsy", "identified", "fibrous", "tissue", "(", "with", "and", "without", "granuloma", ")", "." ],
+    "entities_indices" : [ [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "On", "admission", "to", "our", "hospital", ",", "contrast", "enhanced", "CT", "revealed", "diffuse", "high-density", "opacities", "with", "patchy", "shadowing", "and", "stripes", ",", "many", "small", "areas", "of", "calcification", "and", "cavitation", "in", "the", "lower", "lobe", "of", "right", "lung", ",", "irregular", "soft", "tissue", "of", "mixed", "density", "in", "the", "right", "inferior", "mediastinum", ",", "and", "calcification", "in", "the", "thickened", "pleura", "(", "Fig.", "2a-b", ")", "." ],
+    "entities_indices" : [ [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "patient", "1", "'", "s", "early", "clinical", "course", ",", "the", "small", "irregular", "teratoma", "lacked", "clear", "signs", "of", "extension", "into", "the", "lung", "tissue", ",", "and", "was", "mistaken", "for", "an", "enlarged", "hilar", "lymph", "node", "or", "pulmonary", "consolidation", "." ],
+    "entities_indices" : [ [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "Mediastinal", "teratoma", "is", "uncommon", "in", "children", "." ],
+    "entities_indices" : [ [ 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "considered", "an", "atypical", "intrapulmonary", "tumor", "or", "malformation", ",", "and", "performed", "an", "open", "thoracic", "exploration", "for", "a", "definitive", "diagnosis", "." ],
+    "entities_indices" : [ [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "left", "upper", "lobe", "and", "tumor", "were", "excised", "completely", "." ],
+    "entities_indices" : [ [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "tumor", "and", "necrotic", "tissues", "were", "excised", "completely", ",", "and", "air", "leaks", "repaired", "." ],
+    "entities_indices" : [ [ 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "Interferon-gamma", "release", "assays", "in", "periphery", "blood", ",", "and", "acid-fast", "staining", "in", "histopathologic", "analysis", "were", "negative", "in", "all", "patients", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "Patients", "1", "and", "2", "presented", "mainly", "with", "hemoptysis", ",", "but", "without", "obvious", "evidence", "of", "infection", "(", "especially", "in", "patient", "1", ")", ";", "patients", "2", "and", "3", "presented", "with", "chest", "pain.The", "classic", "CT", "finding", "of", "mediastinal", "teratoma", "is", "a", "round", "or", "ovoid", ",", "cystic", "or", "cystic-solid", "mass", "with", "a", "clear", ",", "smooth", "outline", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 14, 15 ], [ 31, 32 ], [ 35, 36 ], [ 45, 46 ] ]
+  }, {
+    "sentence_tokens" : [ "Pleural", "decortication", "was", "performed", "and", "histopathologic", "analysis", "revealed", "fibrous", "tissue", "with", "granuloma", "." ],
+    "entities_indices" : [ [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "Laboratory", "investigations", "showed", "a", "WBC", "count", "of", "22.65", "x", "10", "/", "l", "with", "77.1", "%", "neutrophils", ",", "and", "a", "serum", "CRP", "concentration", "of", "160", "mg/l", "(", "normal", "range", "<", "8", "mg/l", ")", "." ],
+    "entities_indices" : [ [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "It", "is", "presumed", "that", "pancreatic", "digestive", "enzymes", "are", "the", "main", "cause", "of", "tumor", "rupture", "and", "perforation", "of", "surrounding", "structures", "." ],
+    "entities_indices" : [ [ 12, 13 ], [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "Even", "though", "the", "mass", "was", "only", "recognized", "later", ",", "it", "was", "still", "easily", "misdiagnosed", "as", "an", "encapsulated", "effusion", "or", "abscess", "that", "had", "not", "been", "completely", "absorbed", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "present", "three", "pediatric", "patients", "presenting", "predominantly", "with", "recurrent", "hemoptysis", "and/or", "chest", "pain", "who", "were", "ultimately", "diagnosed", "with", "mediastinal", "teratoma", "containing", "pancreatic", "tissue", "." ],
+    "entities_indices" : [ [ 9, 10 ], [ 11, 12, 13 ], [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "Pleural", "decortication", "was", "performed", "and", "histopathologic", "analysis", "revealed", "fibrous", "tissue", "without", "granuloma", "." ],
+    "entities_indices" : [ [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "Calcification", "and", "pachypleuritis", "on", "chest", "imaging", "especially", "in", "patients", "without", "fever", "should", "be", "highly", "suspected", "of", "mediastinal", "teratoma", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "Patient", "3", "had", "a", "sudden-onset", "massive", "pleural", "effusion", ",", "suggesting", "that", "a", "teratoma", "rich", "in", "sebaceous", "fluid", "had", "ruptured", "into", "the", "pleural", "space", ";", "however", ",", "chest", "imaging", "at", "the", "time", "also", "suggested", "atelectasis", "or", "obstructive", "pneumonia", "." ],
+    "entities_indices" : [ [ 6, 7, 8 ], [ 12, 13 ], [ 33, 34 ], [ 36, 37 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "teratoma", "is", "not", "easy", "to", "detect", "when", "small", "or", "not", "eroding", "other", "organs", "." ],
+    "entities_indices" : [ [ 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "context", "of", "extremely", "elevated", "inflammatory", "markers", "in", "serum", "and", "pleural", "effusion", ",", "a", "diagnosis", "of", "empyema", "was", "reasonable", "." ],
+    "entities_indices" : [ [ 11, 12, 13 ], [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "Their", "recoveries", "have", "been", "uneventful", ",", "and", "there", "is", "no", "evidence", "of", "tumor", "recurrence", "." ],
+    "entities_indices" : [ [ 12, 13 ], [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "Calcification", "and", "pachypleuritis", "on", "chest", "imaging", "especially", "in", "patients", "without", "fever", "should", "be", "highly", "suspected", "of", "mediastinal", "teratoma", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "Thoracic", "CT", "revealed", "right", "sided", "pulmonary", "consolidation", "and", "massive", "pleural", "effusion", "(", "Fig.", "3a", ")", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 9, 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "Mediastinal", "teratoma", "with", "pulmonary", "and", "pleural", "involvement", "is", "rare", ",", "but", "the", "most", "common", "symptoms", "are", "dyspnea", ",", "continuous", "cough", "and", "chest", "pain", "[", "7", ",", "8]", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 16, 17 ], [ 19, 20 ], [ 21, 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "On", "admission", "to", "our", "hospital", ",", "contrast", "enhanced", "computed", "tomography", "(", "CT", ")", "revealed", "high-density", "opacities", "occupying", "the", "left", "upper", "lobe", ",", "and", "consolidation", "with", "cavitation", "and", "calcification", "adjacent", "to", "the", "mediastinum", "(", "Fig.", "1c-d", ")", "." ],
+    "entities_indices" : [ [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "Patient", "3", "was", "initially", "found", "to", "have", "right", "lobe", "consolidation", "accompanied", "by", "a", "massive", "right", "sided", "pleural", "effusion", "with", "extremely", "elevated", "inflammatory", "markers", "in", "serum", "and", "pleural", "effusion", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 16, 17, 18 ], [ 26, 27, 28 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "density", "inside", "the", "teratoma", "is", "heterogeneous", ",", "like", "water", ",", "sebaceous", "fluid", "or", "soft", "tissue", "with", "or", "without", "calcified", "nodules", "[", "8]", "." ],
+    "entities_indices" : [ [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "On", "thoracoscopy", ",", "we", "identified", "a", "mass", "tightly", "adherent", "to", "adjacent", "tissue", "in", "the", "base", "of", "the", "thoracic", "cavity", "adjacent", "to", "the", "costospinal", "angle", ",", "and", "severely", "adherent", ",", "thickened", ",", "fibrotic", "pleura", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "patients", "1", "and", "2", ",", "hemoptysis", "was", "the", "chief", "complaint", ";", "the", "lung", "tissue", "adherent", "to", "the", "teratoma", "was", "partially", "eroded", "in", "patient", "1", ",", "and", "severely", "eroded", ",", "necrotic", "in", "patient", "2", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "Consequently", ",", "he", "was", "treated", "for", "tuberculosis", "for", "5", "months", ";", "however", ",", "during", "this", "time", "he", "began", "to", "complain", "of", "right", "sided", "chest", "pain", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 23, 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "Case", "presentation", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "She", "was", "successively", "treated", "with", "vancomycin", "and", "anti-tuberculosis", "drugs", ";", "however", ",", "CT", "revealed", "an", "encapsulated", "effusion", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "Rarely", ",", "a", "cystic", "teratoma", "may", "rupture", "into", "adjacent", "structures", ",", "such", "as", "the", "pleural", "space", ",", "pericardium", ",", "lung", "parenchyma", "or", "tracheobronchial", "tree", "[", "1", "-", "6", "]", ",", "however", "tumor", "shape", "of", "the", "previous", "reported", "cases", "was", "more", "relatively", "typical", "than", "our", "present", "cases.Here", ",", "we", "report", "a", "series", "of", "three", "children", "with", "recurrent", "hemoptysis", "and", "pleuritis", "attributed", "to", "mediastinal", "teratoma", "containing", "pancreatic", "tissue", "(", "all", "three", "patients", ")", "and", "calcification", "(", "patients", "1", "and", "2", ")", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 31, 32 ], [ 56, 57 ], [ 58, 59 ], [ 62, 63 ] ]
+  }, {
+    "sentence_tokens" : [ "All", "three", "patients", "were", "initially", "suspected", "to", "have", "tuberculosis", "or", "empyema", ",", "and", "underwent", "relevant", "treatment", ",", "but", "without", "improvement", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "patient", "2", ",", "chest", "imaging", "initially", "revealed", "a", "large", "lobe", "consolidation", "in", "the", "right", "lung", "and", "right", "sided", "pleuritis", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "It", "had", "been", "tightly", "adherent", "to", "the", "right", "lung", ",", "pericardium", "and", "diaphragm", ",", "all", "of", "which", "were", "heavily", "eroded.All", "patients", "were", "previously", "healthy", "and", "received", "routine", "BCG", "vaccination", "3", "days", "after", "birth", "." ],
+    "entities_indices" : [ [ 27, 28 ] ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "mediastinal", "teratoma", "can", "be", "very", "difficult", "to", "diagnose.In", "a", "few", "cases", ",", "calcification", "and", "cavitation", "are", "found", "in", "teratomas", "accompanied", "by", "lung", "erosion", ",", "resulting", "in", "a", "misdiagnosis", "of", "tuberculosis", "[", "3", ",", "8]", ",", "especially", "in", "developing", "countries", "with", "a", "high", "tuberculosis", "burden", "such", "as", "China", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 20, 21 ], [ 31, 32 ], [ 44, 45 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "3-year-old", "boy", "presented", "with", "a", "11-month", "history", "of", "hemoptysis", "and", "mild", "wet", "cough", ",", "with", "7", "months", "of", "intermittent", "low", "fever", "and", "right", "thoracic", "collapse", ",", "and", "5", "months", "of", "right", "sided", "chest", "pain", "." ],
+    "entities_indices" : [ [ 9, 10 ], [ 13, 14 ], [ 21, 22 ], [ 33, 34, 35 ] ]
+  }, {
+    "sentence_tokens" : [ "He", "was", "treated", "for", "tuberculosis", "for", "5", "months", ",", "but", "his", "hemoptysis", "(", "2", "-", "10", "ml", "of", "blood", "each", "time", ")", "became", "worse", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "Patient", "3", "initially", "presented", "with", "pulmonary", "consolidation", "and", "a", "massive", "pleural", "effusion", "." ],
+    "entities_indices" : [ [ 10, 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "9-year-old", "girl", "presented", "with", "a", "3-month", "history", "of", "right", "sided", "chest", "pain", "and", "right", "upper", "limb", "pain", "." ],
+    "entities_indices" : [ [ 11, 12, 13 ], [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "Histopathologic", "analysis", "revealed", "mature", "cystic-solid", "teratoma", "containing", "pancreatic", "tissue", "in", "all", "patients", ",", "and", "calcification", "in", "patients", "1", "and", "2", "." ],
+    "entities_indices" : [ [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "Patient", "2", "presented", "with", "atelectasis", "and", "secondary", "collapse", "of", "the", "right", "lung", "." ],
+    "entities_indices" : [ [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "case", "of", "mediastinal", "teratoma", "misdiagnosed", "as", "empyema", "in", "the", "early", "stages", "has", "also", "been", "reported", "before", ",", "and", "pleural", "effusion", "appeared", "to", "be", "purulent", "[", "9", "]", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 7, 8 ], [ 19, 20, 21 ] ]
+  } ],
+  "emptySentences" : [ {
+    "sentence_tokens" : [ "Mediastinal", "teratoma", "presenting", "with", "hemoptysis", "and", "pleuritis", "misdiagnosed", "as", "tuberculosis", "(", "empyema", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Background", "." ]
+  }, {
+    "sentence_tokens" : [ "Mediastinal", "teratoma", "is", "uncommon", "in", "children", "." ]
+  }, {
+    "sentence_tokens" : [ "It", "can", "be", "very", "difficult", "to", "diagnose", "especially", "in", "early", "stage", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "main", "rarity", "of", "our", "reported", "cases", "was", "the", "dynamic", "imaging", "findings", "very", "similar", "to", "the", "developmental", "process", "of", "tuberculosis", "in", "patients", "1", "and", "2", ",", "the", "pachypleuritis", "in", "patients", "2", "and", "3", ",", "the", "extremely", "elevated", "inflammatory", "markers", "very", "similar", "to", "empyema", "in", "patient", "3", ",", "and", "the", "extremely", "atypical", "tumor", "shape", "in", "all", "patients", "." ]
+  }, {
+    "sentence_tokens" : [ "Case", "presentation", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "present", "three", "pediatric", "patients", "presenting", "predominantly", "with", "recurrent", "hemoptysis", "and/or", "chest", "pain", "who", "were", "ultimately", "diagnosed", "with", "mediastinal", "teratoma", "containing", "pancreatic", "tissue", "." ]
+  }, {
+    "sentence_tokens" : [ "All", "three", "patients", "were", "initially", "suspected", "to", "have", "tuberculosis", "or", "empyema", ",", "and", "underwent", "relevant", "treatment", ",", "but", "without", "improvement", "." ]
+  }, {
+    "sentence_tokens" : [ "Patient", "1", "had", "left", "hilar", "enlargement", ",", "and", "subsequently", "an", "enlarging", "calcified", "cavity", "within", "high-density", "consolidation", "was", "identified", "." ]
+  }, {
+    "sentence_tokens" : [ "Patient", "2", "initially", "presented", "with", "right", "sided", "pulmonary", "consolidation", "and", "pleuritis", ",", "and", "subsequently", "developed", "right", "lower", "lobe", "calcification", ",", "pleural", "thickening", ",", "and", "irregular", "soft", "tissue", "in", "the", "right", "inferior", "mediastinum", "." ]
+  }, {
+    "sentence_tokens" : [ "Patient", "3", "was", "initially", "found", "to", "have", "right", "lobe", "consolidation", "accompanied", "by", "a", "massive", "right", "sided", "pleural", "effusion", "with", "extremely", "elevated", "inflammatory", "markers", "in", "serum", "and", "pleural", "effusion", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "effusion", "later", "acquired", "heterogeneous", "density", "and", "appeared", "to", "become", "encapsulated", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "patients", "2", "and", "3", ",", "pleural", "biopsy", "identified", "fibrous", "tissue", "(", "with", "and", "without", "granuloma", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Thoracotomy", "and", "thoracoscopy", "revealed", "mediastinal", "teratoma", "in", "each", "case", ",", "all", "of", "which", "were", "completely", "excised", "and", "the", "patients", "made", "uneventful", "recoveries", "." ]
+  }, {
+    "sentence_tokens" : [ "Histopathologic", "analysis", "revealed", "mature", "cystic-solid", "teratoma", "containing", "pancreatic", "tissue", "in", "all", "patients", ",", "and", "calcification", "in", "patients", "1", "and", "2", "." ]
+  }, {
+    "sentence_tokens" : [ "Conclusions", "." ]
+  }, {
+    "sentence_tokens" : [ "Calcification", "and", "pachypleuritis", "on", "chest", "imaging", "especially", "in", "patients", "without", "fever", "should", "be", "highly", "suspected", "of", "mediastinal", "teratoma", "." ]
+  }, {
+    "sentence_tokens" : [ "Pleural", "biopsy", "sometimes", "fails", "to", "assist", "in", "making", "a", "definitive", "diagnosis", "." ]
+  }, {
+    "sentence_tokens" : [ "Background", "." ]
+  }, {
+    "sentence_tokens" : [ "Mediastinal", "teratoma", "is", "unusual", "in", "children", "." ]
+  }, {
+    "sentence_tokens" : [ "It", "is", "often", "difficult", "to", "diagnose", "because", "of", "its", "few", "early", "symptoms", "." ]
+  }, {
+    "sentence_tokens" : [ "Rarely", ",", "a", "cystic", "teratoma", "may", "rupture", "into", "adjacent", "structures", ",", "such", "as", "the", "pleural", "space", ",", "pericardium", ",", "lung", "parenchyma", "or", "tracheobronchial", "tree", "[", "1", "-", "6", "]", ",", "however", "tumor", "shape", "of", "the", "previous", "reported", "cases", "was", "more", "relatively", "typical", "than", "our", "present", "cases.Here", ",", "we", "report", "a", "series", "of", "three", "children", "with", "recurrent", "hemoptysis", "and", "pleuritis", "attributed", "to", "mediastinal", "teratoma", "containing", "pancreatic", "tissue", "(", "all", "three", "patients", ")", "and", "calcification", "(", "patients", "1", "and", "2", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "All", "these", "patients", "were", "initially", "suspected", "to", "have", "pneumonia", ",", "tuberculosis", "or", "empyema", ",", "and", "underwent", "relevant", "treatment", ",", "but", "without", "improvement", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "main", "rarity", "of", "these", "cases", "was", "the", "dynamic", "imaging", "findings", "similar", "to", "the", "developmental", "process", "of", "tuberculosis", "in", "patients", "1", "and", "2", ",", "the", "pachypleuritis", "in", "the", "patients", "2", "and", "3", ",", "the", "extremely", "elevated", "inflammatory", "markers", "in", "serum", "and", "pleural", "effusion", "similar", "to", "empyema", "in", "patient", "3", ",", "and", "the", "extremely", "atypical", "tumor", "shape", "on", "chest", "imaging", "in", "all", "patients", "especially", "in", "patient", "2", "." ]
+  }, {
+    "sentence_tokens" : [ "Case", "presentation", "." ]
+  }, {
+    "sentence_tokens" : [ "Case", "1", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "5-year-old", "boy", "presented", "with", "a", "9-month", "history", "of", "recurrent", "hemoptysis", "and", "mild", "wet", "cough", "." ]
+  }, {
+    "sentence_tokens" : [ "Chest", "X-ray", "revealed", "left", "hilar", "enlargement", "(", "Fig.", "1a", ")", ",", "and", "subsequently", "an", "emerging", "cavity", "within", "high-density", "consolidation", "(", "Fig.", "1b", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "He", "was", "treated", "for", "tuberculosis", "for", "5", "months", ",", "but", "his", "hemoptysis", "(", "2", "-", "10", "ml", "of", "blood", "each", "time", ")", "became", "worse", "." ]
+  }, {
+    "sentence_tokens" : [ "On", "admission", "to", "our", "hospital", ",", "contrast", "enhanced", "computed", "tomography", "(", "CT", ")", "revealed", "high-density", "opacities", "occupying", "the", "left", "upper", "lobe", ",", "and", "consolidation", "with", "cavitation", "and", "calcification", "adjacent", "to", "the", "mediastinum", "(", "Fig.", "1c-d", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "considered", "an", "atypical", "intrapulmonary", "tumor", "or", "malformation", ",", "and", "performed", "an", "open", "thoracic", "exploration", "for", "a", "definitive", "diagnosis", "." ]
+  }, {
+    "sentence_tokens" : [ "Exploration", "revealed", "a", "thymic", "mass", "tightly", "adherent", "to", "the", "left", "lung", ",", "which", "was", "partially", "eroded", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "left", "upper", "lobe", "and", "tumor", "were", "excised", "completely", "." ]
+  }, {
+    "sentence_tokens" : [ "Case", "2", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "3-year-old", "boy", "presented", "with", "a", "11-month", "history", "of", "hemoptysis", "and", "mild", "wet", "cough", ",", "with", "7", "months", "of", "intermittent", "low", "fever", "and", "right", "thoracic", "collapse", ",", "and", "5", "months", "of", "right", "sided", "chest", "pain", "." ]
+  }, {
+    "sentence_tokens" : [ "Chest", "X-ray", "revealed", "right", "sided", "pulmonary", "consolidation", "and", "pleuritis", "." ]
+  }, {
+    "sentence_tokens" : [ "He", "was", "treated", "with", "antibiotics", ",", "but", "nonetheless", "he", "continued", "to", "expectorate", "bloody", "sputum", "or", "blood", "(", "2", "-", "5", "ml", "on", "each", "occasion", ")", ",", "and", "chest", "imaging", "revealed", "pleural", "thickening", "." ]
+  }, {
+    "sentence_tokens" : [ "Pleural", "decortication", "was", "performed", "and", "histopathologic", "analysis", "revealed", "fibrous", "tissue", "without", "granuloma", "." ]
+  }, {
+    "sentence_tokens" : [ "Consequently", ",", "he", "was", "treated", "for", "tuberculosis", "for", "5", "months", ";", "however", ",", "during", "this", "time", "he", "began", "to", "complain", "of", "right", "sided", "chest", "pain", "." ]
+  }, {
+    "sentence_tokens" : [ "On", "admission", "to", "our", "hospital", ",", "contrast", "enhanced", "CT", "revealed", "diffuse", "high-density", "opacities", "with", "patchy", "shadowing", "and", "stripes", ",", "many", "small", "areas", "of", "calcification", "and", "cavitation", "in", "the", "lower", "lobe", "of", "right", "lung", ",", "irregular", "soft", "tissue", "of", "mixed", "density", "in", "the", "right", "inferior", "mediastinum", ",", "and", "calcification", "in", "the", "thickened", "pleura", "(", "Fig.", "2a-b", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "made", "the", "differential", "diagnoses", "of", "mediastinal", "teratoma", "or", "multifocal", "myofibroblastoma", "." ]
+  }, {
+    "sentence_tokens" : [ "On", "thoracoscopy", ",", "we", "identified", "a", "mass", "tightly", "adherent", "to", "adjacent", "tissue", "in", "the", "base", "of", "the", "thoracic", "cavity", "adjacent", "to", "the", "costospinal", "angle", ",", "and", "severely", "adherent", ",", "thickened", ",", "fibrotic", "pleura", "." ]
+  }, {
+    "sentence_tokens" : [ "Most", "of", "the", "right", "lower", "lobe", "was", "consolidated", ",", "necrotic", "and", "eroded", ",", "while", "most", "of", "the", "upper", "and", "middle", "lobes", "were", "compressed", "and", "atelectatic", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "tumor", "and", "necrotic", "tissues", "were", "excised", "completely", ",", "and", "air", "leaks", "repaired", "." ]
+  }, {
+    "sentence_tokens" : [ "Case", "3", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "9-year-old", "girl", "presented", "with", "a", "3-month", "history", "of", "right", "sided", "chest", "pain", "and", "right", "upper", "limb", "pain", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "early", "stages", ",", "she", "had", "become", "suddenly", "dyspneic", "after", "an", "episode", "of", "strenuous", "exercise", "." ]
+  }, {
+    "sentence_tokens" : [ "Laboratory", "investigations", "showed", "a", "WBC", "count", "of", "22.65", "x", "10", "/", "l", "with", "77.1", "%", "neutrophils", ",", "and", "a", "serum", "CRP", "concentration", "of", "160", "mg/l", "(", "normal", "range", "<", "8", "mg/l", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Thoracic", "CT", "revealed", "right", "sided", "pulmonary", "consolidation", "and", "massive", "pleural", "effusion", "(", "Fig.", "3a", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "On", "closed", "thoracentesis", "a", "turbid", "effusion", "was", "drained", ";", "it", "was", "found", "to", "have", "an", "elevated", "leukocyte", "count", "of", "61,152", "x", "10", "/", "l." ]
+  }, {
+    "sentence_tokens" : [ "An", "acid-fast", "stain", "and", "bacterial", ",", "fungal", "and", "mycobacterial", "cultures", "of", "the", "pleural", "effusion", "were", "negative", "." ]
+  }, {
+    "sentence_tokens" : [ "Subsequent", "CT", "revealed", "pachypleuritis", "and", "a", "low", "density", "mass", "(", "Fig.", "3b", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Pleural", "decortication", "was", "performed", "and", "histopathologic", "analysis", "revealed", "fibrous", "tissue", "with", "granuloma", "." ]
+  }, {
+    "sentence_tokens" : [ "She", "was", "successively", "treated", "with", "vancomycin", "and", "anti-tuberculosis", "drugs", ";", "however", ",", "CT", "revealed", "an", "encapsulated", "effusion", "." ]
+  }, {
+    "sentence_tokens" : [ "On", "admission", "to", "our", "hospital", ",", "contrast", "enhanced", "CT", "revealed", "a", "right", "sided", "mass", "with", "multiple", "focal", "fatty", "densities", "adjacent", "to", "the", "heart", "(", "Fig.", "3c-d", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "On", "thoracoscopy", ",", "a", "thymic", "mass", "was", "completely", "excised", "." ]
+  }, {
+    "sentence_tokens" : [ "It", "had", "been", "tightly", "adherent", "to", "the", "right", "lung", ",", "pericardium", "and", "diaphragm", ",", "all", "of", "which", "were", "heavily", "eroded.All", "patients", "were", "previously", "healthy", "and", "received", "routine", "BCG", "vaccination", "3", "days", "after", "birth", "." ]
+  }, {
+    "sentence_tokens" : [ "Interferon-gamma", "release", "assays", "in", "periphery", "blood", ",", "and", "acid-fast", "staining", "in", "histopathologic", "analysis", "were", "negative", "in", "all", "patients", "." ]
+  }, {
+    "sentence_tokens" : [ "Histopathologic", "analysis", "revealed", "pancreatic", "tissue", "in", "all", "patients", ",", "and", "calcification", "in", "patients", "1", "and", "2", "(", "Fig.", "1e", ",", "Table", "1", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "All", "patients", "were", "finally", "diagnosed", "with", "mature", "cystic-solid", "mediastinal", "teratoma", "(", "affecting", "the", "left", "upper", "mediastinum", ",", "the", "right", "inferior", "mediastinum", "and", "the", "right", "anterior", "mediastinum", "in", "patients", "1", ",", "2", "and", "3", ",", "respectively", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "patients", "have", "been", "followed-up", "for", "between", "2", "years", "and", "6", "years", "." ]
+  }, {
+    "sentence_tokens" : [ "Their", "recoveries", "have", "been", "uneventful", ",", "and", "there", "is", "no", "evidence", "of", "tumor", "recurrence", "." ]
+  }, {
+    "sentence_tokens" : [ "Discussion", "." ]
+  }, {
+    "sentence_tokens" : [ "Mediastinal", "teratoma", "is", "mostly", "seen", "in", "young", "adults", ",", "and", "thymic", "teratoma", "is", "very", "rare", "regardless", "of", "age", ";", "however", ",", "patients", "1", "and", "3", "had", "definitive", "diagnosis", "of", "thymic", "teratoma", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "teratoma", "is", "not", "easy", "to", "detect", "when", "small", "or", "not", "eroding", "other", "organs", "." ]
+  }, {
+    "sentence_tokens" : [ "Mediastinal", "teratoma", "with", "pulmonary", "and", "pleural", "involvement", "is", "rare", ",", "but", "the", "most", "common", "symptoms", "are", "dyspnea", ",", "continuous", "cough", "and", "chest", "pain", "[", "7", ",", "8]", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "each", "of", "these", "cases", ",", "the", "teratoma", "had", "invaded", "adjacent", "tissue", ",", "especially", "the", "lung", "." ]
+  }, {
+    "sentence_tokens" : [ "Patients", "1", "and", "2", "presented", "mainly", "with", "hemoptysis", ",", "but", "without", "obvious", "evidence", "of", "infection", "(", "especially", "in", "patient", "1", ")", ";", "patients", "2", "and", "3", "presented", "with", "chest", "pain.The", "classic", "CT", "finding", "of", "mediastinal", "teratoma", "is", "a", "round", "or", "ovoid", ",", "cystic", "or", "cystic-solid", "mass", "with", "a", "clear", ",", "smooth", "outline", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "density", "inside", "the", "teratoma", "is", "heterogeneous", ",", "like", "water", ",", "sebaceous", "fluid", "or", "soft", "tissue", "with", "or", "without", "calcified", "nodules", "[", "8]", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "patient", "1", "'", "s", "early", "clinical", "course", ",", "the", "small", "irregular", "teratoma", "lacked", "clear", "signs", "of", "extension", "into", "the", "lung", "tissue", ",", "and", "was", "mistaken", "for", "an", "enlarged", "hilar", "lymph", "node", "or", "pulmonary", "consolidation", "." ]
+  }, {
+    "sentence_tokens" : [ "However", "later", "did", "lung", "CT", "reveal", "calcification", ",", "cavitation", "and", "a", "low-density", "focus", "in", "the", "irregular", "mass", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "patient", "2", ",", "chest", "imaging", "initially", "revealed", "a", "large", "lobe", "consolidation", "in", "the", "right", "lung", "and", "right", "sided", "pleuritis", "." ]
+  }, {
+    "sentence_tokens" : [ "Only", "subsequently", "was", "calcification", "identified", "in", "the", "right", "lower", "lobe", "and", "the", "thickened", "pleura", ",", "and", "irregular", "soft", "tissue", "in", "the", "right", "inferior", "mediastinum", "." ]
+  }, {
+    "sentence_tokens" : [ "However", "calcification", ",", "cavitation", "and", "pachypleuritis", "were", "the", "important", "features", "of", "tuberculosis", "." ]
+  }, {
+    "sentence_tokens" : [ "Therefore", "the", "clinical", "courses", "and", "dynamic", "imaging", "findings", "of", "patients", "1", "and", "2", "were", "similar", "to", "the", "developmental", "process", "of", "tuberculosis", ",", "and", "to", "the", "best", "of", "our", "knowledge", "there", "have", "been", "no", "previous", "reports", "of", "mediastinal", "teratoma", "presenting", "in", "these", "ways", "." ]
+  }, {
+    "sentence_tokens" : [ "Patient", "3", "initially", "presented", "with", "pulmonary", "consolidation", "and", "a", "massive", "pleural", "effusion", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "context", "of", "extremely", "elevated", "inflammatory", "markers", "in", "serum", "and", "pleural", "effusion", ",", "a", "diagnosis", "of", "empyema", "was", "reasonable", "." ]
+  }, {
+    "sentence_tokens" : [ "Even", "though", "the", "mass", "was", "only", "recognized", "later", ",", "it", "was", "still", "easily", "misdiagnosed", "as", "an", "encapsulated", "effusion", "or", "abscess", "that", "had", "not", "been", "completely", "absorbed", "." ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "mediastinal", "teratoma", "can", "be", "very", "difficult", "to", "diagnose.In", "a", "few", "cases", ",", "calcification", "and", "cavitation", "are", "found", "in", "teratomas", "accompanied", "by", "lung", "erosion", ",", "resulting", "in", "a", "misdiagnosis", "of", "tuberculosis", "[", "3", ",", "8]", ",", "especially", "in", "developing", "countries", "with", "a", "high", "tuberculosis", "burden", "such", "as", "China", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "case", "of", "mediastinal", "teratoma", "misdiagnosed", "as", "empyema", "in", "the", "early", "stages", "has", "also", "been", "reported", "before", ",", "and", "pleural", "effusion", "appeared", "to", "be", "purulent", "[", "9", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "tumor", "shape", "on", "chest", "imaging", "was", "extremely", "atypical", "in", "all", "our", "patients", "especially", "patient", "2.Pancreatic", "tissue", "has", "been", "identified", "within", "mediastinal", "teratomas", "before", "[", "10", ",", "11", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Sommerlad", "et", "al.", "[", "6", ",", "12", "]", "reported", "a", "fistula", "adjacent", "to", "the", "mediastinum", "secondary", "to", "non", "purulent", "inflammation", "caused", "by", "digestive", "enzymes", ",", "however", "inflammatory", "markers", "were", "extremely", "high", "and", "the", "pleural", "effusion", "appeared", "to", "be", "turbid", "in", "patient", "3", ",", "which", "increased", "the", "difficulty", "in", "diagnosis", "." ]
+  }, {
+    "sentence_tokens" : [ "It", "is", "presumed", "that", "pancreatic", "digestive", "enzymes", "are", "the", "main", "cause", "of", "tumor", "rupture", "and", "perforation", "of", "surrounding", "structures", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "patients", "1", "and", "2", ",", "hemoptysis", "was", "the", "chief", "complaint", ";", "the", "lung", "tissue", "adherent", "to", "the", "teratoma", "was", "partially", "eroded", "in", "patient", "1", ",", "and", "severely", "eroded", ",", "necrotic", "in", "patient", "2", "." ]
+  }, {
+    "sentence_tokens" : [ "These", "findings", "suggest", "that", "the", "hemoptysis", "was", "caused", "by", "erosion", "of", "small", "pulmonary", "vessels", "by", "digestive", "enzymes", "released", "by", "the", "teratoma", "." ]
+  }, {
+    "sentence_tokens" : [ "Only", "a", "few", "cases", "of", "teratoma", "rupture", "into", "the", "pleural", "space", "have", "been", "reported", ";", "in", "addition", ",", "these", "tumors", "may", "be", "associated", "with", "atelectasis", ",", "and", "post-obstructive", "pneumonia", "[", "13", "-", "17", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Patient", "2", "presented", "with", "atelectasis", "and", "secondary", "collapse", "of", "the", "right", "lung", "." ]
+  }, {
+    "sentence_tokens" : [ "Patient", "3", "had", "a", "sudden-onset", "massive", "pleural", "effusion", ",", "suggesting", "that", "a", "teratoma", "rich", "in", "sebaceous", "fluid", "had", "ruptured", "into", "the", "pleural", "space", ";", "however", ",", "chest", "imaging", "at", "the", "time", "also", "suggested", "atelectasis", "or", "obstructive", "pneumonia", "." ]
+  }, {
+    "sentence_tokens" : [ "Pleural", "biopsies", "had", "been", "performed", "in", "patients", "2", "and", "3", ";", "the", "fibrous", "tissue", "identified", "was", "suggestive", "of", "pachypleuritis", "." ]
+  }, {
+    "sentence_tokens" : [ "Although", "this", "was", "not", "recognized", "at", "the", "time", ",", "this", "was", "likely", "due", "to", "pancreatic", "tissue", "within", "the", "teratoma", "eroding", "surrounding", "structures", "and", "causing", "chronic", "non", "purulent", "pleural", "inflammation.Surgical", "resection", "is", "the", "only", "effective", "way", "to", "treat", "teratoma", ",", "especially", "for", "mature", "tumors", "." ]
+  }, {
+    "sentence_tokens" : [ "All", "our", "patients", "have", "remained", "well", "during", "follow-up", "." ]
+  }, {
+    "sentence_tokens" : [ "Conclusions", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "describe", "3", "rare", "cases", "of", "mediastinal", "teratoma", "misdiagnosed", "as", "tuberculosis", "or", "empyema", "." ]
+  }, {
+    "sentence_tokens" : [ "Mediastinal", "teratoma", "should", "be", "considered", "as", "a", "differential", "diagnosis", "in", "patients", "with", "hemoptysis", ",", "lung", "lesions", "and", "pleuritis", "of", "unknown", "origin", "." ]
+  }, {
+    "sentence_tokens" : [ "Calcification", "and", "pachypleuritis", "on", "chest", "imaging", "especially", "in", "patients", "without", "fever", "should", "be", "highly", "suspected", "of", "mediastinal", "teratoma", "." ]
+  }, {
+    "sentence_tokens" : [ "Pleural", "biopsy", "sometimes", "fails", "to", "assist", "in", "making", "a", "definitive", "diagnosis", "." ]
+  }, {
+    "sentence_tokens" : [ "Prompt", "recognition", ",", "diagnosis", "and", "treatment", "may", "reverse", "not", "only", "lung", "damage", ",", "but", "may", "prevent", "other", "complications", "." ]
+  } ]
+}

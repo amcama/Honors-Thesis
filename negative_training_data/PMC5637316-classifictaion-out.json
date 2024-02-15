@@ -1,47 +1,255 @@
-[ {
-  "sentence_tokens" : [ "Tsukamurella", "pulmonis", "is", "an", "aerobic", "gram", "positive", "and", "rod", "shaped", "organism", "that", "causes", "central", "catheter", "related", "bloodstream", "infections", "in", "immunocompromised", "hosts", "." ],
-  "event_indices" : [ 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 5, 6 ],
-  "controlled_indices" : [ 17, 18 ],
-  "trigger_indices" : [ 12, 13 ],
-  "rule_name" : "Positive_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Five", "days", "after", "the", "last", "chemotherapy", "course", ",", "he", "presented", "with", "a", "high", "fever", "and", "shaking", "chills", "." ],
-  "entity_one_indices" : [ 16, 17 ],
-  "entity_two_indices" : [ 13, 14 ]
-}, {
-  "sentence_tokens" : [ "Although", "infections", "caused", "by", "Tsukamurella", "species", "are", "rare", ",", "these", "species", "can", "cause", "nosocomial", "infections", "in", "immunocompromised", "hosts", "[", "2", "]", "." ],
-  "entity_one_indices" : [ 14, 15 ],
-  "entity_two_indices" : [ 1, 2 ]
-}, {
-  "sentence_tokens" : [ "A", "48-year-old", "Japanese", "man", "presented", "with", "symptoms", "of", "right", "sided", "facial", "asymmetry", "and", "right", "hand", "palsy", "that", "had", "lasted", "for", "10", "days", "." ],
-  "entity_one_indices" : [ 15, 16 ],
-  "entity_two_indices" : [ 10, 11, 12 ]
-}, {
-  "sentence_tokens" : [ "Contrast", "enhanced", "magnetic", "resonance", "imaging", "of", "the", "head", "showed", "three", "mass", "lesions", "in", "the", "brain", ",", "and", "the", "specimen", "biopsy", "from", "these", "lesions", "revealed", "diffuse", "large", "B", "cell", "lymphoma", "." ],
-  "entity_one_indices" : [ 26, 27, 28, 29 ],
-  "entity_two_indices" : [ 10, 11 ]
-}, {
-  "sentence_tokens" : [ "He", "was", "diagnosed", "with", "AIDS", "associated", "primary", "brain", "malignant", "lymphoma", "." ],
-  "entity_one_indices" : [ 8, 9, 10 ],
-  "entity_two_indices" : [ 4, 5 ]
-}, {
-  "sentence_tokens" : [ "Five", "days", "after", "the", "last", "R-CHOP", "chemotherapy", "course", ",", "he", "suddenly", "developed", "a", "fever", "with", "shivering", "chills", "." ],
-  "entity_one_indices" : [ 16, 17 ],
-  "entity_two_indices" : [ 13, 14 ]
-}, {
-  "sentence_tokens" : [ "The", "patient", "'", "s", "condition", "improved", "and", "become", "afebrile", "within", "48", "h", "after", "the", "initiation", "of", "cefozopran", "hydrochloride", "." ],
-  "entity_one_indices" : [ 17, 18 ],
-  "entity_two_indices" : [ 16, 17 ]
-}, {
-  "sentence_tokens" : [ "Cultures", "obtained", "from", "blood", "and", "revealed", "gram", "positive", "rods", ",", "which", "were", "identified", "as", "T.", "pulmonis", "using", "16S", "ribosomal", "RNA", "gene", "sequencing", "." ],
-  "entity_one_indices" : [ 18, 19, 20 ],
-  "entity_two_indices" : [ 6, 7 ]
-}, {
-  "sentence_tokens" : [ "Thus", ",", "he", "was", "diagnosed", "with", "T.", "pulmonis", "bacteremia", "resulting", "from", "a", "PICC", "related", "bloodstream", "infection", "." ],
-  "entity_one_indices" : [ 15, 16 ],
-  "entity_two_indices" : [ 8, 9 ]
-} ]
+{
+  "regulations" : [ {
+    "sentence_tokens" : [ "Tsukamurella", "pulmonis", "is", "an", "aerobic", "gram", "positive", "and", "rod", "shaped", "organism", "that", "causes", "central", "catheter", "related", "bloodstream", "infections", "in", "immunocompromised", "hosts", "." ],
+    "event_indices" : [ 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 5, 6 ],
+    "controlled_indices" : [ 17, 18 ],
+    "trigger_indices" : [ 12, 13 ],
+    "rule_name" : "Positive_activation_syntax_1_verb",
+    "rule" : null
+  } ],
+  "hardInstances" : [ ],
+  "withoutRegulations" : [ {
+    "sentence_tokens" : [ "Peripherally", "inserted", "central", "catheter", "related", "bloodstream", "infection", "due", "to", "Tsukamurella", "pulmonis", ":", "a", "case", "report", "and", "literature", "review", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "describe", "a", "case", "of", "a", "48-year-old", "man", "with", "acquired", "immunodeficiency", "syndrome", "and", "diffuse", "large", "B", "cell", "lymphoma", "who", "received", "five", "courses", "of", "chemotherapy", "including", "rituximab", ",", "cyclophosphamide", ",", "doxorubicin", "hydrochloride", ",", "vincristine", ",", "and", "prednisone", "via", "a", "PICC", "." ],
+    "entities_indices" : [ [ 9, 10, 11, 12 ], [ 15, 16, 17, 18 ], [ 27, 28 ], [ 29, 30, 31 ], [ 32, 33 ], [ 35, 36 ] ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "he", "was", "diagnosed", "with", "T.", "pulmonis", "bacteremia", "resulting", "from", "PICC", "related", "bloodstream", "infection", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 11, 12 ], [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "Three", "patients", "had", "severe", "immunodeficiency", "combined", "with", "bone", "marrow", "transplantation", ",", "IgA", "nephropathy", ",", "or", "metastatic", "breast", "cancer", "as", "the", "underlying", "disease", "[", "7", "]", "." ],
+    "entities_indices" : [ [ 11, 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "Laboratory", "examinations", "revealed", "positivity", "for", "human", "immunodeficiency", "virus", "(", "HIV", ")", "antigen", "and", "antibody", ",", "a", "CD4", "positive", "lymphocyte", "count", "of", "84", "cells/mu", "L", ",", "and", "an", "HIV-1", "RNA", "viral", "load", "of", "180,000", "copies/mL", "." ],
+    "entities_indices" : [ [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "Because", "of", "the", "results", "of", "the", "susceptibility", "test", "(", "Table", "1", ")", ",", "we", "continued", "cefozopran", "hydrochloride", "for", "16", "days", "." ],
+    "entities_indices" : [ [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "Contrast", "enhanced", "magnetic", "resonance", "imaging", "of", "the", "head", "showed", "three", "mass", "lesions", "in", "the", "brain", ",", "and", "the", "specimen", "biopsy", "from", "these", "lesions", "revealed", "diffuse", "large", "B", "cell", "lymphoma", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 26, 27, 28, 29 ] ]
+  }, {
+    "sentence_tokens" : [ "Although", "further", "studies", "are", "needed", "to", "confirm", "the", "standard", "susceptibility", "methods", "and", "optimal", "susceptibility", "interpretations", ",", "fourth", "generation", "cephalosporins", "including", "cefozopran", "hydrochloride", "and", "cefepime", "may", "be", "effective", "against", "T.", "pulmonis", "and", "may", "represent", "appropriate", "treatment", "for", "T.", "pulmonis", "bacteremia.The", "relation", "between", "AIDS", "and", "the", "incidence", "of", "T.", "pulmonis", "bacteremia", "is", "unknown", "." ],
+    "entities_indices" : [ [ 20, 21 ], [ 21, 22 ], [ 23, 24 ], [ 41, 42 ], [ 48, 49 ] ]
+  }, {
+    "sentence_tokens" : [ "Although", "the", "use", "of", "central", "venous", "catheters", "(", "CVCs", ")", "and", "Hickman", "catheters", "is", "a", "reported", "cause", "of", "catheter-line", "associated", "bloodstream", "infection", "(", "CLABSI", ")", "due", "to", "T.", "pulmonis", "[", "7", "]", ",", "PICC", "related", "bloodstream", "infections", "with", "this", "organism", "have", "not", "been", "reported.Here", ",", "we", "present", "the", "case", "of", "48-year-old", "patient", "with", "acquired", "immunodeficiency", "syndrome", "(", "AIDS", ")", "who", "was", "diagnosed", "with", "PICC", "related", "bloodstream", "infection", "due", "to", "T.", "pulmonis", "." ],
+    "entities_indices" : [ [ 21, 22 ], [ 33, 34 ], [ 36, 37 ], [ 53, 54, 55, 56 ], [ 57, 58 ], [ 66, 67 ] ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "a", "relationship", "between", "CVCs", "or", "Hickman-catheters", "and", "the", "presence", "of", "T.", "pulmonis", "bacteremia", "exists", ";", "however", ",", "the", "risk", "of", "T.", "pulmonis", "bacteremia", "has", "not", "been", "reported", "with", "PICCs", "." ],
+    "entities_indices" : [ [ 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "Five", "days", "after", "the", "last", "R-CHOP", "chemotherapy", "course", ",", "he", "suddenly", "developed", "a", "fever", "with", "shivering", "chills", "." ],
+    "entities_indices" : [ [ 13, 14 ], [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "Five", "days", "after", "the", "last", "chemotherapy", "course", ",", "he", "presented", "with", "a", "high", "fever", "and", "shaking", "chills", "." ],
+    "entities_indices" : [ [ 13, 14 ], [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "Atovaquone", "and", "azithromycin", "were", "also", "used", "for", "prophylaxis", "of", "pneumocystis", "pneumonia", "and", "nontuberculous", "mycobacterial", "infections.A", "PICC", "was", "implanted", ",", "and", "he", "received", "five", "courses", "of", "R-CHOP", "chemotherapy", "(", "rituximab", ",", "cyclophosphamide", ",", "doxorubicin", "hydrochloride", ",", "vincristine", ",", "and", "prednisone", ")", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 2, 3 ], [ 9, 10, 11 ], [ 14, 15, 16 ], [ 25, 26 ], [ 30, 31 ], [ 32, 33, 34 ], [ 35, 36 ], [ 38, 39 ] ]
+  }, {
+    "sentence_tokens" : [ "Case", "presentation", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "patient", "'", "s", "condition", "improved", "and", "become", "afebrile", "within", "48", "h", "after", "the", "initiation", "of", "cefozopran", "hydrochloride", "." ],
+    "entities_indices" : [ [ 16, 17 ], [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "T.", "pulmonis", "bacteremia", "has", "not", "been", "previously", "reported", "in", "AIDS", "patients", ",", "although", "an", "advanced-stage", "AIDS", "patient", "with", "Tsukamurella", "spp.", "pneumonia", "was", "reported", "by", "Alcaide", "et", "al.", "[", "16", "]", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 9, 10 ], [ 15, 16 ], [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "PICCs", "can", "be", "associated", "with", "T.", "pulmonis", "bacteremia", ",", "and", "fourth", "generation", "cephalosporins", "may", "be", "effective", "treatment", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "Although", "T.", "pulmonis", "generally", "causes", "CLABSI", "from", "CVCs", "and", "Hickman", "catheters", ",", "we", "report", "a", "case", "of", "PICC", "related", "bloodstream", "infection", "due", "to", "this", "microorganism", "and", "review", "the", "related", "literature.Table", "2", "summarizes", "the", "seven", "reported", "cases", "of", "T.", "pulmonis", "bacteremia", "in", "the", "literature", "[", "2", ",", "7", ",", "11", "-", "14", "]", "." ],
+    "entities_indices" : [ [ 17, 18 ], [ 20, 21 ], [ 39, 40 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "administered", "2", "g", "cefozopran", "hydrochloride", ",", "which", "is", "a", "fourth", "generation", "cephalosporin", ",", "and", "vancomycin", "on", "day", "1", "(", "every", "12", "h", ")", "and", "on", "day", "3", ",", "respectively", ",", "and", "the", "PICC", "was", "removed", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 5, 6 ], [ 12, 13 ], [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "Cultures", "obtained", "from", "blood", "and", "revealed", "gram", "positive", "rods", ",", "which", "were", "identified", "as", "T.", "pulmonis", "using", "16S", "ribosomal", "RNA", "gene", "sequencing", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 18, 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "report", "from", "1996", "described", "isolation", "of", "Tsukamurella", "pulmonis", "from", "the", "sputum", "of", "a", "92-year-old", "woman", "with", "lung", "mycobacterium", "infection", "[", "3", "]", "." ],
+    "entities_indices" : [ [ 18, 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "48-year-old", "Japanese", "man", "presented", "with", "symptoms", "of", "right", "sided", "facial", "asymmetry", "and", "right", "hand", "palsy", "that", "had", "lasted", "for", "10", "days", "." ],
+    "entities_indices" : [ [ 10, 11, 12 ], [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "One", "patient", "had", "an", "intracerebral", "hemorrhage", "and", "CLABSI", "[", "14", "]", "." ],
+    "entities_indices" : [ [ 4, 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "patient", "was", "administered", "emtricitabine", "and", "tenofovir", "disoproxil", "combination", "therapy", "and", "raltegravir", "as", "the", "antiretroviral", "therapy", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 6, 7, 8 ], [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "When", "the", "CD4", "positive", "lymphocyte", "cell", "count", "is", "over", "200", "cells/mu", "L", ",", "the", "defect", "in", "cell", "mediated", "immunity", "is", "mild", "to", "moderate", ",", "not", "severe", ",", "and", "it", "is", "not", "clear", "if", "this", "defect", "is", "sufficient", "to", "explain", "the", "predisposition", "to", "Tsukamurella", "infection.In", "conclusion", ",", "we", "encountered", "a", "case", "of", "PICC", "related", "bloodstream", "infection", "due", "to", "T.", "pulmonis", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 18, 19 ], [ 51, 52 ], [ 54, 55 ] ]
+  }, {
+    "sentence_tokens" : [ "There", "have", "been", "a", "few", "reports", "describing", "various", "treatments", "based", "on", "susceptibility", "methods", "(", "Table", "2", ")", ",", "including", "the", "E-test", "using", "Mueller-Hinton", "agar", "plates", "[", "13", "]", "and", "the", "disk", "diffusion", "technique", "[", "12", "]", "." ],
+    "entities_indices" : [ [ 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "peripherally", "inserted", "central", "catheter", "(", "PICC", ")-related", "bloodstream", "infections", "due", "to", "this", "organism", "have", "not", "been", "reported", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "Thus", ",", "PICCs", "may", "also", "be", "a", "risk", "factor", "for", "CLABSI", "due", "to", "T.", "pulmonis", "bacteremia.The", "appropriate", "treatment", "for", "T.", "pulmonis", "bacteremia", "remains", "unknown", "because", "standard", "susceptibility", "methods", "for", "this", "organism", "have", "not", "been", "established", "." ],
+    "entities_indices" : [ [ 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "T.", "pulmonis", "infections", "are", "associated", "with", "hematological", "and", "immunosuppressed", "patients", ",", "and", "the", "reported", "observations", "of", "the", "infection", "include", "conjunctivitis", "[", "4", "]", ",", "keratitis", "[", "5", "]", ",", "pneumonia", "[", "6", "]", ",", "and", "central", "catheter", "related", "bloodstream", "infections", "[", "7", "]", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 17, 18 ], [ 19, 20 ], [ 24, 25 ], [ 29, 30 ], [ 39, 40 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "present", "case", ",", "minimum", "inhibitory", "concentration", "(", "MIC", ")", "results", "using", "the", "broth", "dilution", "method", "showed", "susceptibility", "to", "vancomycin", "and", "cefozopran", "hydrochloride", "(", "Table", "1", ")", "." ],
+    "entities_indices" : [ [ 9, 10 ], [ 20, 21 ], [ 22, 23 ], [ 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "Although", "infections", "caused", "by", "Tsukamurella", "species", "are", "rare", ",", "these", "species", "can", "cause", "nosocomial", "infections", "in", "immunocompromised", "hosts", "[", "2", "]", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "CD4", "positive", "lymphocyte", "cell", "count", "was", "228", "cells/mu", "L", ",", "and", "the", "HIV-1", "RNA", "viral", "load", "was", "20", "copies/mL", "." ],
+    "entities_indices" : [ [ 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "patient", "'s", "condition", "improved", "and", "he", "became", "afebrile", "within", "48", "h", "after", "intravenous", "administration", "of", "cefozopran", "hydrochloride", ",", "which", "is", "a", "fourth", "generation", "cephalosporin", "." ],
+    "entities_indices" : [ [ 16, 17 ], [ 17, 18 ], [ 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "Another", "three", "cases", "had", "hematological", "malignancy", "." ],
+    "entities_indices" : [ [ 4, 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "He", "was", "diagnosed", "with", "AIDS", "associated", "primary", "brain", "malignant", "lymphoma", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 8, 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "present", "case", "suggests", "that", "PICCs", "may", "be", "a", "risk", "factor", "for", "developing", "T.", "pulmonis", "bacteremia", ",", "and", "fourth", "generation", "cephalosporins", "may", "be", "effective", "treatment", "." ],
+    "entities_indices" : [ [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "He", "had", "a", "past", "medical", "history", "of", "syphilis", ",", "gonorrhea", ",", "varicella", ",", "hepatitis", "B", "viral", "infection", ",", "and", "chronic", "use", "of", "tobacco", "(", "1", "-", "2", "packs", "of", "cigarettes", "per", "day", "for", "28", "years", ")", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 9, 10 ], [ 11, 12 ], [ 13, 14, 15 ], [ 15, 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "Thus", ",", "he", "was", "diagnosed", "with", "T.", "pulmonis", "bacteremia", "resulting", "from", "a", "PICC", "related", "bloodstream", "infection", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "continued", "cefozopran", "hydrochloride", "only", "because", "of", "the", "relatively", "high", "MIC", "for", "vancomycin", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 10, 11 ], [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "Peripherally", "inserted", "central", "catheters", "(", "PICCs", ")", "have", "been", "popular", "because", "of", "their", "safety", ",", "easy", "insertion", ",", "and", "lower", "rates", "of", "infection", "[", "8", "-", "10", "]", "." ],
+    "entities_indices" : [ [ 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "Case", "presentation", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "a", "recent", "systematic", "review", "and", "meta-analysis", "showed", "that", "the", "reduced", "risk", "of", "CLABSI", "with", "PICCs", "in", "comparison", "to", "CVCs", "was", "greatest", "for", "outpatients", "(", "RR", ",", "0.22", ";", "95", "%", "CI", ",", "0.18", "-", "0.27", ")", "than", "for", "hospitalized", "patients", "(", "RR", "0.73", ";", "95", "%", "CI", ",", "0.54", "-", "0.98", ")", "and", "PICC", "associated", "CLABSI", "occurred", "as", "frequently", "as", "CVC", "associated", "CLABSI", "in", "hospitalized", "patients", "(", "incidence", "rate", "ratio", "0.91", ";", "95", "%", "CI", ",", "0.46", "-", "1.79", ")", "[", "15", "]", "." ],
+    "entities_indices" : [ [ 14, 15 ], [ 32, 33 ], [ 48, 49 ], [ 55, 56, 57, 58 ], [ 63, 64, 65 ], [ 76, 77 ] ]
+  }, {
+    "sentence_tokens" : [ "Tsukamurella", "species", "are", "aerobic", "gram", "positive", "and", "rod", "shaped", "organisms", "with", "a", "specific", "cell", "wall", "chemistry", "that", "separates", "them", "from", "aerobic", "actinomycetes", "[", "1", "]", "." ],
+    "entities_indices" : [ [ 4, 5 ] ]
+  } ],
+  "emptySentences" : [ {
+    "sentence_tokens" : [ "Peripherally", "inserted", "central", "catheter", "related", "bloodstream", "infection", "due", "to", "Tsukamurella", "pulmonis", ":", "a", "case", "report", "and", "literature", "review", "." ]
+  }, {
+    "sentence_tokens" : [ "Background", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "peripherally", "inserted", "central", "catheter", "(", "PICC", ")-related", "bloodstream", "infections", "due", "to", "this", "organism", "have", "not", "been", "reported", "." ]
+  }, {
+    "sentence_tokens" : [ "Case", "presentation", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "describe", "a", "case", "of", "a", "48-year-old", "man", "with", "acquired", "immunodeficiency", "syndrome", "and", "diffuse", "large", "B", "cell", "lymphoma", "who", "received", "five", "courses", "of", "chemotherapy", "including", "rituximab", ",", "cyclophosphamide", ",", "doxorubicin", "hydrochloride", ",", "vincristine", ",", "and", "prednisone", "via", "a", "PICC", "." ]
+  }, {
+    "sentence_tokens" : [ "Five", "days", "after", "the", "last", "chemotherapy", "course", ",", "he", "presented", "with", "a", "high", "fever", "and", "shaking", "chills", "." ]
+  }, {
+    "sentence_tokens" : [ "His", "absolute", "neutrophil", "count", "was", "4200/muL", "." ]
+  }, {
+    "sentence_tokens" : [ "Cultures", "obtained", "from", "blood", "and", "PICC", "culture", "revealed", "T.", "pulmonis", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "colony", "count", "of", "T.", "pulmonis", "grown", "from", "PICC", "culture", "was", "10", "3", "colony", "forming", "units", "." ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "he", "was", "diagnosed", "with", "T.", "pulmonis", "bacteremia", "resulting", "from", "PICC", "related", "bloodstream", "infection", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "patient", "'s", "condition", "improved", "and", "he", "became", "afebrile", "within", "48", "h", "after", "intravenous", "administration", "of", "cefozopran", "hydrochloride", ",", "which", "is", "a", "fourth", "generation", "cephalosporin", "." ]
+  }, {
+    "sentence_tokens" : [ "Conclusions", "." ]
+  }, {
+    "sentence_tokens" : [ "PICCs", "can", "be", "associated", "with", "T.", "pulmonis", "bacteremia", ",", "and", "fourth", "generation", "cephalosporins", "may", "be", "effective", "treatment", "." ]
+  }, {
+    "sentence_tokens" : [ "Background", "." ]
+  }, {
+    "sentence_tokens" : [ "Tsukamurella", "species", "are", "aerobic", "gram", "positive", "and", "rod", "shaped", "organisms", "with", "a", "specific", "cell", "wall", "chemistry", "that", "separates", "them", "from", "aerobic", "actinomycetes", "[", "1", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Although", "infections", "caused", "by", "Tsukamurella", "species", "are", "rare", ",", "these", "species", "can", "cause", "nosocomial", "infections", "in", "immunocompromised", "hosts", "[", "2", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "report", "from", "1996", "described", "isolation", "of", "Tsukamurella", "pulmonis", "from", "the", "sputum", "of", "a", "92-year-old", "woman", "with", "lung", "mycobacterium", "infection", "[", "3", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "T.", "pulmonis", "infections", "are", "associated", "with", "hematological", "and", "immunosuppressed", "patients", ",", "and", "the", "reported", "observations", "of", "the", "infection", "include", "conjunctivitis", "[", "4", "]", ",", "keratitis", "[", "5", "]", ",", "pneumonia", "[", "6", "]", ",", "and", "central", "catheter", "related", "bloodstream", "infections", "[", "7", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Peripherally", "inserted", "central", "catheters", "(", "PICCs", ")", "have", "been", "popular", "because", "of", "their", "safety", ",", "easy", "insertion", ",", "and", "lower", "rates", "of", "infection", "[", "8", "-", "10", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Although", "the", "use", "of", "central", "venous", "catheters", "(", "CVCs", ")", "and", "Hickman", "catheters", "is", "a", "reported", "cause", "of", "catheter-line", "associated", "bloodstream", "infection", "(", "CLABSI", ")", "due", "to", "T.", "pulmonis", "[", "7", "]", ",", "PICC", "related", "bloodstream", "infections", "with", "this", "organism", "have", "not", "been", "reported.Here", ",", "we", "present", "the", "case", "of", "48-year-old", "patient", "with", "acquired", "immunodeficiency", "syndrome", "(", "AIDS", ")", "who", "was", "diagnosed", "with", "PICC", "related", "bloodstream", "infection", "due", "to", "T.", "pulmonis", "." ]
+  }, {
+    "sentence_tokens" : [ "Case", "presentation", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "48-year-old", "Japanese", "man", "presented", "with", "symptoms", "of", "right", "sided", "facial", "asymmetry", "and", "right", "hand", "palsy", "that", "had", "lasted", "for", "10", "days", "." ]
+  }, {
+    "sentence_tokens" : [ "He", "had", "a", "past", "medical", "history", "of", "syphilis", ",", "gonorrhea", ",", "varicella", ",", "hepatitis", "B", "viral", "infection", ",", "and", "chronic", "use", "of", "tobacco", "(", "1", "-", "2", "packs", "of", "cigarettes", "per", "day", "for", "28", "years", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Laboratory", "examinations", "revealed", "positivity", "for", "human", "immunodeficiency", "virus", "(", "HIV", ")", "antigen", "and", "antibody", ",", "a", "CD4", "positive", "lymphocyte", "count", "of", "84", "cells/mu", "L", ",", "and", "an", "HIV-1", "RNA", "viral", "load", "of", "180,000", "copies/mL", "." ]
+  }, {
+    "sentence_tokens" : [ "Contrast", "enhanced", "magnetic", "resonance", "imaging", "of", "the", "head", "showed", "three", "mass", "lesions", "in", "the", "brain", ",", "and", "the", "specimen", "biopsy", "from", "these", "lesions", "revealed", "diffuse", "large", "B", "cell", "lymphoma", "." ]
+  }, {
+    "sentence_tokens" : [ "He", "was", "diagnosed", "with", "AIDS", "associated", "primary", "brain", "malignant", "lymphoma", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "patient", "was", "administered", "emtricitabine", "and", "tenofovir", "disoproxil", "combination", "therapy", "and", "raltegravir", "as", "the", "antiretroviral", "therapy", "." ]
+  }, {
+    "sentence_tokens" : [ "Atovaquone", "and", "azithromycin", "were", "also", "used", "for", "prophylaxis", "of", "pneumocystis", "pneumonia", "and", "nontuberculous", "mycobacterial", "infections.A", "PICC", "was", "implanted", ",", "and", "he", "received", "five", "courses", "of", "R-CHOP", "chemotherapy", "(", "rituximab", ",", "cyclophosphamide", ",", "doxorubicin", "hydrochloride", ",", "vincristine", ",", "and", "prednisone", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Five", "days", "after", "the", "last", "R-CHOP", "chemotherapy", "course", ",", "he", "suddenly", "developed", "a", "fever", "with", "shivering", "chills", "." ]
+  }, {
+    "sentence_tokens" : [ "His", "white", "blood", "cell", "count", "was", "4300/mu", "L", ",", "and", "his", "neutrophil", "count", "was", "4200/mu", "L." ]
+  }, {
+    "sentence_tokens" : [ "The", "CD4", "positive", "lymphocyte", "cell", "count", "was", "228", "cells/mu", "L", ",", "and", "the", "HIV-1", "RNA", "viral", "load", "was", "20", "copies/mL", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "administered", "2", "g", "cefozopran", "hydrochloride", ",", "which", "is", "a", "fourth", "generation", "cephalosporin", ",", "and", "vancomycin", "on", "day", "1", "(", "every", "12", "h", ")", "and", "on", "day", "3", ",", "respectively", ",", "and", "the", "PICC", "was", "removed", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "patient", "'", "s", "condition", "improved", "and", "become", "afebrile", "within", "48", "h", "after", "the", "initiation", "of", "cefozopran", "hydrochloride", "." ]
+  }, {
+    "sentence_tokens" : [ "Cultures", "obtained", "from", "blood", "and", "revealed", "gram", "positive", "rods", ",", "which", "were", "identified", "as", "T.", "pulmonis", "using", "16S", "ribosomal", "RNA", "gene", "sequencing", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "colony", "count", "of", "T.", "pulmonis", "grown", "from", "PICC", "culture", "was", "10", "colony", "forming", "units", "." ]
+  }, {
+    "sentence_tokens" : [ "Thus", ",", "he", "was", "diagnosed", "with", "T.", "pulmonis", "bacteremia", "resulting", "from", "a", "PICC", "related", "bloodstream", "infection", "." ]
+  }, {
+    "sentence_tokens" : [ "Because", "of", "the", "results", "of", "the", "susceptibility", "test", "(", "Table", "1", ")", ",", "we", "continued", "cefozopran", "hydrochloride", "for", "16", "days", "." ]
+  }, {
+    "sentence_tokens" : [ "Follow", "up", "blood", "culture", "on", "5", "days", "after", "treatment", "was", "negative", "and", "clinical", "relapse", "was", "not", "observed", "." ]
+  }, {
+    "sentence_tokens" : [ "He", "remains", "in", "complete", "remission", "as", "of", "this", "report", "." ]
+  }, {
+    "sentence_tokens" : [ "Discussion", "and", "conclusions", "." ]
+  }, {
+    "sentence_tokens" : [ "Although", "T.", "pulmonis", "generally", "causes", "CLABSI", "from", "CVCs", "and", "Hickman", "catheters", ",", "we", "report", "a", "case", "of", "PICC", "related", "bloodstream", "infection", "due", "to", "this", "microorganism", "and", "review", "the", "related", "literature.Table", "2", "summarizes", "the", "seven", "reported", "cases", "of", "T.", "pulmonis", "bacteremia", "in", "the", "literature", "[", "2", ",", "7", ",", "11", "-", "14", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Three", "patients", "had", "severe", "immunodeficiency", "combined", "with", "bone", "marrow", "transplantation", ",", "IgA", "nephropathy", ",", "or", "metastatic", "breast", "cancer", "as", "the", "underlying", "disease", "[", "7", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Another", "three", "cases", "had", "hematological", "malignancy", "." ]
+  }, {
+    "sentence_tokens" : [ "One", "patient", "had", "an", "intracerebral", "hemorrhage", "and", "CLABSI", "[", "14", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "CVCs", "or", "Hickman-catheters", "were", "implanted", "in", "all", "of", "these", "cases", "." ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "a", "relationship", "between", "CVCs", "or", "Hickman-catheters", "and", "the", "presence", "of", "T.", "pulmonis", "bacteremia", "exists", ";", "however", ",", "the", "risk", "of", "T.", "pulmonis", "bacteremia", "has", "not", "been", "reported", "with", "PICCs", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "a", "recent", "systematic", "review", "and", "meta-analysis", "showed", "that", "the", "reduced", "risk", "of", "CLABSI", "with", "PICCs", "in", "comparison", "to", "CVCs", "was", "greatest", "for", "outpatients", "(", "RR", ",", "0.22", ";", "95", "%", "CI", ",", "0.18", "-", "0.27", ")", "than", "for", "hospitalized", "patients", "(", "RR", "0.73", ";", "95", "%", "CI", ",", "0.54", "-", "0.98", ")", "and", "PICC", "associated", "CLABSI", "occurred", "as", "frequently", "as", "CVC", "associated", "CLABSI", "in", "hospitalized", "patients", "(", "incidence", "rate", "ratio", "0.91", ";", "95", "%", "CI", ",", "0.46", "-", "1.79", ")", "[", "15", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Thus", ",", "PICCs", "may", "also", "be", "a", "risk", "factor", "for", "CLABSI", "due", "to", "T.", "pulmonis", "bacteremia.The", "appropriate", "treatment", "for", "T.", "pulmonis", "bacteremia", "remains", "unknown", "because", "standard", "susceptibility", "methods", "for", "this", "organism", "have", "not", "been", "established", "." ]
+  }, {
+    "sentence_tokens" : [ "There", "have", "been", "a", "few", "reports", "describing", "various", "treatments", "based", "on", "susceptibility", "methods", "(", "Table", "2", ")", ",", "including", "the", "E-test", "using", "Mueller-Hinton", "agar", "plates", "[", "13", "]", "and", "the", "disk", "diffusion", "technique", "[", "12", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "present", "case", ",", "minimum", "inhibitory", "concentration", "(", "MIC", ")", "results", "using", "the", "broth", "dilution", "method", "showed", "susceptibility", "to", "vancomycin", "and", "cefozopran", "hydrochloride", "(", "Table", "1", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "continued", "cefozopran", "hydrochloride", "only", "because", "of", "the", "relatively", "high", "MIC", "for", "vancomycin", "." ]
+  }, {
+    "sentence_tokens" : [ "Although", "further", "studies", "are", "needed", "to", "confirm", "the", "standard", "susceptibility", "methods", "and", "optimal", "susceptibility", "interpretations", ",", "fourth", "generation", "cephalosporins", "including", "cefozopran", "hydrochloride", "and", "cefepime", "may", "be", "effective", "against", "T.", "pulmonis", "and", "may", "represent", "appropriate", "treatment", "for", "T.", "pulmonis", "bacteremia.The", "relation", "between", "AIDS", "and", "the", "incidence", "of", "T.", "pulmonis", "bacteremia", "is", "unknown", "." ]
+  }, {
+    "sentence_tokens" : [ "T.", "pulmonis", "bacteremia", "has", "not", "been", "previously", "reported", "in", "AIDS", "patients", ",", "although", "an", "advanced-stage", "AIDS", "patient", "with", "Tsukamurella", "spp.", "pneumonia", "was", "reported", "by", "Alcaide", "et", "al.", "[", "16", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "When", "the", "CD4", "positive", "lymphocyte", "cell", "count", "is", "over", "200", "cells/mu", "L", ",", "the", "defect", "in", "cell", "mediated", "immunity", "is", "mild", "to", "moderate", ",", "not", "severe", ",", "and", "it", "is", "not", "clear", "if", "this", "defect", "is", "sufficient", "to", "explain", "the", "predisposition", "to", "Tsukamurella", "infection.In", "conclusion", ",", "we", "encountered", "a", "case", "of", "PICC", "related", "bloodstream", "infection", "due", "to", "T.", "pulmonis", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "present", "case", "suggests", "that", "PICCs", "may", "be", "a", "risk", "factor", "for", "developing", "T.", "pulmonis", "bacteremia", ",", "and", "fourth", "generation", "cephalosporins", "may", "be", "effective", "treatment", "." ]
+  } ]
+}

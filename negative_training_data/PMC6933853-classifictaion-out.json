@@ -1,1 +1,264 @@
-[ ]
+{
+  "regulations" : [ ],
+  "hardInstances" : [ ],
+  "withoutRegulations" : [ {
+    "sentence_tokens" : [ "Cryo-EM", "map", "interpretation", "and", "protein", "model", "building", "using", "iterative", "map", "segmentation", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "Once", "a", "C", "C", "model", "has", "been", "constructed", ",", "we", "use", "the", "reconstruction", "tool", "Pulchra", "35", "to", "create", "all", "-", "atom", "models", "in", "both", "directions", ",", "we", "add", "whichever", "side", "chains", "fit", "the", "density", "best", "with", "the", "Phenix", "36", "tool", "phenix.replace_side_chains", ",37", ",", "38", "and", "we", "refine", "the", "resulting", "model", "with", "the", "phenix.real_space_refine", "algorithm", "." ],
+    "entities_indices" : [ [ 29, 30 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "key", "parameter", "in", "the", "connectivity", "analysis", "is", "the", "choice", "of", "length", "allowed", "for", "a", "branch", "extending", "from", "a", "chain", "." ],
+    "entities_indices" : [ [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "particular", ",", "the", "development", "of", "electron", "-", "counting", "detection", "has", "allowed", "corrections", "for", "time", "-", "dependent", "image", "shifts", "that", "previously", "limited", "the", "effective", "resolution", "of", "cryo", "-", "EM", "and", "further", "improvements", "are", "likely.1", ",", "2", "It", "is", "now", "possible", "for", "cryo", "-", "EM", "to", "be", "readily", "applied", "to", "macromolecular", "structure", "determination", "at", "resolutions", "of", "4", "." ],
+    "entities_indices" : [ [ 33, 34 ] ]
+  }, {
+    "sentence_tokens" : [ "Branching", "typically", "occurs", "when", "the", "contour", "level", "is", "low", "enough", "that", "side", "-", "chain", "density", "for", "one", "chain", "becomes", "connected", "to", "side", "-", "chain", "density", "for", "another", "chain", ",", "yielding", "two", "choices", "for", "the", "path", "of", "the", "chain", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "use", "a", "variant", "of", "Djikstra", "'s", "algorithm46", "in", "which", "the", "path", "between", "two", "grid", "points", "is", "weighted", "based", "on", "the", "density", "at", "the", "second", "grid", "point", "." ],
+    "entities_indices" : [ [ 14, 15 ], [ 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "On", "close", "inspection", ",", "some", "of", "the", "differences", "include", "missing", "density", "at", "positions", "of", "negatively", "charged", "side", "chains", "(", "aspartyl", "and", "glutamyl", "residues", ",", "see", "arrows", "marking", "three", "aspartyl", "residues", "in", "Figure", "1a", ",", "b", ")", "in", "the", "cryo", "-", "EM", "map", "as", "has", "been", "reported.23", ",", "28", "Overall", ",", "it", "might", "be", "expected", "that", "maps", "such", "as", "these", "could", "be", "interpreted", "by", "the", "same", "software", ",", "perhaps", "with", "adjustments", "for", "differing", "appearances", "of", "some", "side", "chains", "between", "the", "two", "methods.The", "contour", "levels", "for", "the", "two", "maps", "in", "Figure", "1a", ",", "b", "have", "been", "adjusted", "to", "be", "the", "values", "that", "just", "keep", "the", "density", "for", "the", "main", "chain", "continuous", "for", "the", "entire", "segments", "shown", "in", "each", "case", "." ],
+    "entities_indices" : [ [ 16, 17 ], [ 75, 76 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "2018", ",", "there", "were", "419", "deposits", "of", "structures", "in", "this", "range", "in", "the", "PDB", ",", "and", "287", "of", "these", "were", "determined", "by", "cryo", "-", "EM.An", "important", "step", "in", "the", "interpretation", "of", "a", "cryo", "-", "EM", "map", "is", "the", "construction", "of", "an", "atomic", "model", "representing", "the", "structure", "of", "the", "macromolecule", "that", "has", "been", "imaged", "." ],
+    "entities_indices" : [ [ 14, 15 ], [ 27, 28 ], [ 49, 50 ] ]
+  }, {
+    "sentence_tokens" : [ "One", "is", "in", "morphing", "the", "path", "of", "the", "chain", "to", "move", "it", "into", "high", "density", ",", "and", "the", "other", "is", "in", "identification", "of", "locations", "of", "side", "chains.3.5", "Identification", "of", "likely", "C", "beta", "positions", "." ],
+    "entities_indices" : [ [ 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "5", "A.", "Figure", "5b", "illustrates", "the", "fraction", "of", "the", "residues", "built", "in", "each", "case", "that", "are", "assigned", "to", "the", "correct", "amino", "acid", "type", "as", "reported", "in", "the", "deposited", "model", "." ],
+    "entities_indices" : [ [ 20, 21, 22 ], [ 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "37", "In", "essence", ",", "the", "procedure", "consists", "of", "using", "the", "coordinate", "of", "the", "main", "-", "chain", "atoms", "at", "a", "particular", "position", "in", "the", "chain", "to", "predict", "the", "location", "of", "the", "side", "chain", ",", "considering", "the", "conformations", "of", "each", "member", "of", "a", "rotamer", "library47", "representing", "likely", "side", "chain", "conformations", "." ],
+    "entities_indices" : [ [ 30, 31 ], [ 45, 46 ] ]
+  }, {
+    "sentence_tokens" : [ "Figure", "1a", "shows", "a", "density", "near", "residues", "10", "-", "170", "for", "a", "crystallographic", "map", "of", "groEL", "at", "a", "resolution", "of", "3", "." ],
+    "entities_indices" : [ [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "length", "of", "a", "branch", "is", "the", "(", "unweighted", ")", "length", "of", "the", "longest", "weighted", "path", "between", "a", "point", "on", "that", "branch", "and", "a", "point", "on", "the", "path", "between", "B", "and", "C.3.4", "Marking", "ridgelines", "of", "density", "in", "a", "map", "with", "marker", "atoms", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "first", "step", ",", "likely", "C", "positions", "are", "identified", "based", "on", "the", "presence", "of", "bones", "points", "extending", "away", "from", "the", "path", "tracing", "(", "Section", "3", ",", "Figure", "3d", ")", "." ],
+    "entities_indices" : [ [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "37", "In", "the", "process", ",", "a", "relative", "probability", ",", "a", "log", "-", "likelihood", "score", "based", "on", "that", "probability", ",", "and", "a", "Z", "-", "score", "based", "on", "the", "distribution", "of", "log", "-", "likelihood", "scores", "are", "calculated", "for", "each", "amino", "acid", "at", "each", "position", "." ],
+    "entities_indices" : [ [ 37, 38, 39 ] ]
+  }, {
+    "sentence_tokens" : [ "39", "The", "chains", "in", "the", "two", "directions", "are", "scored", "based", "on", "H", "-", "bonding", "and", "fit", "of", "the", "model", "(", "including", "side", "chains", ")", "to", "density", ",", "and", "the", "higher", "-", "scoring", "direction", "is", "kept", "(", "see", "Section", "3", ")", "." ],
+    "entities_indices" : [ [ 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "37", "If", "no", "sequence", "information", "is", "available", ",", "the", "most", "likely", "amino", "acid", "is", "chosen", "for", "each", "position", "and", "the", "best", "-", "fitting", "rotamer", "for", "that", "side", "chain", "is", "built", "." ],
+    "entities_indices" : [ [ 11, 12, 13 ], [ 26, 27 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "second", "step", ",", "C", "positions", "are", "chosen", "so", "as", "to", "optimize", "proximity", "to", "C", "positions", "and", "to", "optimize", "distances", "between", "C", "positions", "(", "Section", "3", ")", "." ],
+    "entities_indices" : [ [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "illustrate", "this", "here", "with", "maps", "obtained", "for", "the", "protein", "groEL", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "feature", "in", "common", "for", "these", "two", "maps", "is", "that", "at", "these", "contour", "levels", "the", "path", "of", "the", "main", "chain", "is", "almost", "unambiguous", ",", "with", "no", "obvious", "connections", "through", "side", "chains", "between", "separate", "parts", "of", "the", "chain", "." ],
+    "entities_indices" : [ [ 29, 30 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "symmetry", "was", "used", "with", "the", "phenix.map_box", "tool", "to", "extract", "the", "unique", "part", "of", "the", "map", ",38", "creating", "a", "small", "sharpened", "map", "just", "containing", "this", "unique", "part", "that", "was", "used", "for", "all", "further", "work.The", "model", "corresponding", "to", "each", "map", "was", "obtained", "from", "the", "PDB", "and", "if", "necessary", ",", "the", "symmetry", "obtained", "above", "was", "applied", "to", "generate", "a", "model", "that", "covered", "at", "least", "the", "unique", "part", "of", "the", "map.The", "22", "maps", "and", "corresponding", "Rosetta", "and", "MAINMAST", "models", "in", "Figure", "6", "were", "the", "same", "maps", "and", "models", "used", "in", "the", "analysis", "described", "previously.20", "3.2", "Connectivity", "analysis", "." ],
+    "entities_indices" : [ [ 43, 44 ] ]
+  }, {
+    "sentence_tokens" : [ "Both", "the", "main", "chain", "and", "side", "chains", "are", "visible", "in", "this", "representation", "." ],
+    "entities_indices" : [ [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "first", "step", ",", "a", "starting", "set", "of", "C", "positions", "is", "generated", ",", "and", "in", "the", "second", "step", "the", "positions", "of", "these", "C", "atoms", "are", "refined.The", "starting", "set", "of", "C", "positions", "is", "chosen", "from", "points", "along", "the", "morphed", "path", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "Figure", "7", "the", "phenix.trace_and_build", "model", "-", "building", "procedure", "is", "applied", "to", "the", "human", "endolysosomal", "TRPML3", "channel", "(", "EMD", "7018", ",", "PDB", "entry", "6aye", ")", "at", "a", "resolution", "of", "4", "." ],
+    "entities_indices" : [ [ 15, 16 ], [ 18, 19 ], [ 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "38", "This", "tool", "attempts", "to", "identify", "the", "amino", "acid", "at", "each", "position", "in", "the", "model", "based", "on", "the", "side", "-", "chain", "density", ",", "carries", "out", "a", "sequence", "alignment", "to", "the", "known", "sequence", ",", "and", "creates", "a", "new", "model", "using", "the", "aligned", "sequence", "." ],
+    "entities_indices" : [ [ 7, 8, 9 ], [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "each", "rotamer", "of", "each", "side", "chain", ",", "the", "density", "in", "the", "map", "is", "compared", "(", "by", "correlation", "coefficient", ")", "with", "average", "density", "obtained", "in", "a", "test", "set", "of", "maps", "for", "that", "rotamer", "and", "side", "chain", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 34, 35 ] ]
+  }, {
+    "sentence_tokens" : [ "Finally", ",", "Figure", "2h", "shows", "the", "single", "chain", "that", "is", "identified", "using", "these", "procedures.Note", "that", "although", "in", "this", "example", "secondary", "structure", "was", "identified", "as", "the", "first", "step", "in", "tracing", "the", "chain", ",", "the", "procedure", "could", "begin", "with", "any", "starting", "segments", "of", "density", "." ],
+    "entities_indices" : [ [ 26, 27 ] ]
+  }, {
+    "sentence_tokens" : [ "0", "A", ")", "but", "some", "side", "chains", "are", "in", "different", "positions.2.5", "Integration", "into", "the", "phenix.map_to_model", "procedure", "." ],
+    "entities_indices" : [ [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "fashion", ",", "the", "modified", "bones", "essentially", "represent", "the", "positions", "of", "the", "side", "chains", "." ],
+    "entities_indices" : [ [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "As", "is", "often", "the", "case", ",", "the", "density", "for", "the", "helices", "is", "higher", "than", "the", "density", "in", "most", "regions", "of", "the", "map", ",", "though", "this", "is", "not", "essential", "for", "the", "procedure.The", "key", "next", "step", "is", "to", "gradually", "lower", "the", "contour", "level", "so", "that", "density", "extends", "away", "from", "already", "-", "identified", "density", "." ],
+    "entities_indices" : [ [ 33, 34 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "step", "is", "important", "because", "branching", "is", "usually", "caused", "by", "side", "-", "chain", "density", "merging", "between", "adjacent", "chains", ",", "so", "tracing", "through", "a", "branch", "would", "cause", "errors", "in", "the", "main", "chain", "interpretation", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 10, 11 ], [ 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "It", "is", "the", "number", "of", "positions", "where", "glycine", "is", "the", "most", "likely", ",", "minus", "the", "approximate", "number", "expected", "based", "simply", "on", "amino", "acid", "composition", "(", "about", "7.4", "%", "by", "default", ")", ",", "with", "a", "default", "weight", "of", "-", "1/2", "." ],
+    "entities_indices" : [ [ 21, 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "tool", "phenix.find_ss_from_ca", "is", "used", "to", "find", "secondary", "structure", "elements", "in", "the", "model", "and", "to", "identify", "likely", "hydrogen", "bonds", "in", "the", "model", "." ],
+    "entities_indices" : [ [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "An", "important", "step", "in", "our", "procedure", "is", "tracing", "a", "path", "from", "one", "end", "of", "a", "region", "of", "density", "to", "the", "other", ",", "following", "high", "density", "as", "much", "as", "possible", "." ],
+    "entities_indices" : [ [ 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "0", "A", "in", "the", "PDB", ",", "and", "20", "were", "from", "cryo", "-", "EM", "." ],
+    "entities_indices" : [ [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "3", "A.", "Here", ",", "we", "use", "the", "same", "maps", "and", "Rosetta", "and", "MAINMAST", "models41", "as", "we", "used", "in", "that", "analysis", "and", "compare", "them", "with", "models", "obtained", "using", "version", "2", "of", "phenix.map_to_model", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 12, 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "our", "development", "of", "the", "phenix.trace_and_build", "procedure", ",", "many", "choices", "were", "made", "for", "default", "values", "of", "parameters", "and", "perhaps", "more", "importantly", "for", "whether", "a", "specific", "step", "is", "included", "in", "the", "procedure", "." ],
+    "entities_indices" : [ [ 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "Figure", "1b", "shows", "another", "map", "for", "density", "near", "the", "same", "residues", "10", "-", "170", "of", "groEL", ",", "this", "one", "obtained", "with", "cryo", "-", "EM", "at", "a", "resolution", "of", "3", "." ],
+    "entities_indices" : [ [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "use", "the", "Phenix", "connectivity", "tool45", "to", "identify", "regions", "consisting", "of", "all", "grid", "points", "in", "a", "map", "that", "are", "all", "above", "a", "threshold", "(", "the", "contour", "level", ")", "and", "that", "all", "are", "adjacent", "to", "another", "grid", "point", "in", "the", "same", "region", "." ],
+    "entities_indices" : [ [ 12, 13 ], [ 35, 36 ] ]
+  }, {
+    "sentence_tokens" : [ "Panel", "g", "shows", "the", "automatic", "interpretation", "of", "this", "as", "a", "new", "purple", "segment", "." ],
+    "entities_indices" : [ [ 0, 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "function", "has", "the", "property", "that", "connections", "between", "grid", "points", "that", "have", "values", "of", "density", "close", "to", "the", "maximum", "value", "in", "the", "region", "(", "where", "we", "would", "like", "to", "trace", "the", "chain", ")", "have", "almost", "zero", "weight", "while", "those", "with", "values", "near", "the", "lowest", "in", "the", "region", "(", "which", "we", "would", "like", "to", "avoid", ")", "have", "weight", "near", "unity", "." ],
+    "entities_indices" : [ [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "If", "detected", "in", "the", "current", "approach", ",", "such", "branches", "remain", "as", "separate", "fragments", "." ],
+    "entities_indices" : [ [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "rapid", "increase", "in", "the", "rate", "of", "moderate", "-", "to", "-", "high", "resolution", "structure", "determination", "by", "cryo", "-", "EM", "has", "resulted", ",", "as", "illustrated", "by", "deposits", "to", "the", "Protein", "Data", "Bank", "(", "PDB", ")", ".5", "For", "example", ",", "in", "2014", ",", "there", "were", "192", "deposits", "of", "structures", "in", "the", "resolution", "range", "of", "3.5", "-", "4", "." ],
+    "entities_indices" : [ [ 30, 31 ], [ 32, 33 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "approach", "is", "much", "quicker", "than", "the", "extensive", "testing", "of", "fragments", "as", "possible", "extensions", "of", "a", "helices", "and", "strands", "that", "were", "used", "in", "our", "previous", "methods", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "0", "A", "(", "22", "of", "these", "165", "maps", "used", "to", "generate", "side", "chain", "density", "are", "among", "the", "88", "structures", "analyzed", "in", "Figure", "5", ")", ".3.10", "Options", "for", "quick", ",", "medium", ",", "or", "thorough", "model", "building", "." ],
+    "entities_indices" : [ [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "These", "marker", "atoms", "are", "similar", "to", "the", "\"", "bones", "\"", "used", "for", "many", "years", "as", "indicators", "of", "the", "main", "-", "chain", "with", "side", "-", "chains", "coming", "off", "at", "regular", "intervals", ",31", "except", "that", "the", "atoms", "are", "explicitly", "placed", "at", "the", "highest", "-", "density", "points", "along", "ridgelines", ",", "not", "on", "grid", "points", "." ],
+    "entities_indices" : [ [ 22, 23 ], [ 49, 50 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "third", "step", ",", "any", "parts", "of", "the", "C", "model", "that", "overlap", "with", "a", "helix", "or", "strand", "identified", "in", "the", "initial", "search", "for", "secondary", "structure", "are", "replaced", "with", "that", "helix", "or", "strand", "." ],
+    "entities_indices" : [ [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "use", "a", "cutoff", "of", "10", "A", "as", "the", "maximum", "branching", "length", ",", "chosen", "empirically", "to", "limit", "both", "mis", "-", "tracing", "through", "side", "-", "chains", "and", "fragmentation", "of", "the", "main", "chain", "(", "this", "and", "essentially", "all", "other", "parameters", "are", "user", "-", "adjustable", ")", ".3.3", "Path", "tracing", "." ],
+    "entities_indices" : [ [ 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "Phenix", "tool", "phenix.replace_side_chains", "is", "used", "to", "identify", "the", "side", "chain", "and", "rotamer", "that", "best", "fits", "the", "map", "at", "each", "amino", "acid", "position", "." ],
+    "entities_indices" : [ [ 1, 2, 3, 4 ], [ 9, 10 ], [ 20, 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "Typically", ",", "for", "a", "particular", "point", ",", "that", "point", "and", "5", "points", "on", "either", "side", "are", "considered", "." ],
+    "entities_indices" : [ [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "Although", "such", "a", "clear", "path", "of", "the", "main", "chain", "may", "not", "always", "occur", "in", "cryo", "-", "EM", "or", "X", "-", "ray", "maps", ",", "main", "-", "chain", "density", "is", "often", "present", "at", "a", "higher", "level", "than", "side", "-", "chain", "or", "noise", "density", "." ],
+    "entities_indices" : [ [ 35, 36 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "score", "is", "the", "number", "of", "good", "hydrogen", "bonds", "(", "heavy", "atoms", "within", "3", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "If", "the", "most", "likely", "amino", "acid", "at", "a", "particular", "position", "is", "less", "than", "(", "by", "default", ")", "1", "%", "more", "likely", "than", "the", "least", "likely", ",", "or", "if", "the", "Z", "-", "score", "for", "the", "most", "likely", "amino", "acid", "is", "less", "than", "(", "by", "default", ")", "0.5", ",", "the", "position", "is", "considered", "to", "not", "have", "a", "unique", "identification", "of", "a", "side", "chain", "and", "the", "(", "penalty", ")", "score", "is", "the", "number", "of", "such", "non", "-", "unique", "positions", ",", "with", "a", "default", "weight", "of", "-", "1/4", "." ],
+    "entities_indices" : [ [ 4, 5, 6 ], [ 36, 37, 38 ], [ 59, 60 ] ]
+  }, {
+    "sentence_tokens" : [ "As", "in", "the", "previous", "scoring", "schemes", ",", "each", "of", "these", "five", "terms", "is", "weighted", "by", "an", "empirically", "-", "set", "weight", "that", "is", "user", "-", "adjustable", "and", "has", "not", "been", "extensively", "optimized.3.9", "Side", "chain", "identification", "based", "on", "density", "at", "expected", "side-chain", "positions", "." ],
+    "entities_indices" : [ [ 31, 32 ] ]
+  }, {
+    "sentence_tokens" : [ "5", "A", "EMDB", ",", "(", "Electron", "Microscopy", "Data", "Bank", ",", "entry", "8,750", ",", "PDB", "entry", "5w0s", ")", ".26", ",", "27", "This", "map", "is", "also", "experimentally", "determined", "and", "does", "not", "have", "any", "model", "bias.In", "comparing", "the", "maps", ",", "it", "should", "be", "noted", "that", "the", "resolution", "dependencies", "of", "X", "-", "ray", "maps", "are", "typically", "determined", "by", "the", "resolution", "dependence", "of", "the", "experimental", "data", "(", "the", "maps", "are", "often", "not", "sharpened", "or", "blurred", ")", ",", "while", "those", "of", "cryo", "-", "EM", "maps", "are", "determined", "largely", "by", "the", "resolution", "dependencies", "of", "the", "accuracy", "of", "the", "data", "(", "the", "maps", "are", "typically", "sharpened", "or", "blurred", "based", "on", "agreement", "between", "two", "half", "-", "maps", "or", "other", "measures", "of", "map", "quality", "as", "a", "function", "of", "resolution", ")", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "a", "particular", "contour", "level", ",", "the", "connectivity", "tool", "produces", "a", "list", "of", "regions", ",", "and", "for", "each", "region", ",", "it", "produces", "a", "list", "of", "all", "points", "in", "that", "region", "." ],
+    "entities_indices" : [ [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "is", "done", "by", "identifying", "positions", "along", "the", "helices", "and", "strands", "and", "C", "model", "where", "the", "two", "sets", "of", "C", "atoms", "nearly", "overlap", "(", "typically", "within", "3/4", "of", "the", "target", "C", "-", "C", "distance", ")", "and", "allowing", "a", "crossover", "at", "that", "position.3.8", "Scoring", "models", "based", "on", "hydrogen", "bonding", ",", "overall", "fit", "to", "density", ",", "fit", "of", "side", "chains", "to", "density", ",", "and", "uniqueness", "of", "side", "chain", "fitting", "." ],
+    "entities_indices" : [ [ 46, 47 ], [ 56, 57 ], [ 64, 65 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "example", ",", "the", "analysis", "of", "EMD", "8191", "at", "2.8", "resulted", "in", "3/4", "of", "the", "residues", "built", "in", "the", "forward", "direction", "while", "EMD", "8574", "at", "the", "same", "resolution", "resulted", "in", "only", "1/3", "built", "in", "the", "forward", "direction.The", "methods", "used", "in", "version", "1", "of", "phenix.map_to_model", "are", "all", "available", "as", "well", "in", "version", "2", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "Additionally", ",", "the", "new", "procedure", "has", "many", "steps", "that", "can", "be", "run", "in", "parallel", ",", "so", "the", "use", "of", "multiprocessing", "substantially", "shortens", "the", "clock", "time", "required", "to", "run", "." ],
+    "entities_indices" : [ [ 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "Normally", "a", "researcher", "would", "use", "automated", "tools", "such", "as", "those", "described", "here", "to", "get", "a", "preliminary", "model", ",", "then", "graphical", "tools", "such", "as", "Coot", "would", "be", "used", "to", "build", "additional", "model", "by", "hand", "." ],
+    "entities_indices" : [ [ 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "MIR", "data", "used", "for", "PDB", "entry", "1oeL25", "were", "reanalyzed", "at", "a", "resolution", "of", "3", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "5", "A", "or", "better.3", ",", "4", "At", "these", "resolutions", ",", "structural", "details", "such", "as", "the", "path", "of", "a", "protein", "backbone", "and", "shapes", "of", "side", "-", "chains", "can", "be", "visible", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "weight", "w", "for", "a", "point", "with", "density", "value", "of", "rho", "we", "used", "was", ",", "(", "1", ")", "w", "=", "rho", "max", "-", "rho/rho", "max", "-", "rho", "minawhere", "rho", "and", "rho", "are", "the", "minimum", "and", "maximum", "density", "of", "any", "points", "in", "the", "region", "considered", ",", "and", "the", "exponent", "a", "is", "a", "parameter", "with", "default", "value", "of", "2", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 20, 21, 22, 23, 24, 25, 26, 27, 28, 29 ], [ 30, 31 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "each", "amino", "acid", "type", ",", "the", "rotamer", "with", "the", "highest", "correlation", "between", "expected", "and", "observed", "density", "is", "chosen", "." ],
+    "entities_indices" : [ [ 2, 3, 4 ], [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "These", "additional", "capabilities", "are", "made", "available", "by", "incorporating", "the", "phenix.trace_and_build", "method", "into", "the", "tool", "phenix.map_to_model", "which", "already", "has", "them.20", "For", "example", ",", "the", "phenix.map_to_model", "procedure", "can", "build", "RNA", "and", "protein", "into", "a", "map", "and", "choose", "which", "chain", "type", "best", "fits", "each", "part", "of", "the", "density", "." ],
+    "entities_indices" : [ [ 37, 38 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "favors", "models", "that", "are", "both", "more", "complete", "and", "a", "better", "fit", "to", "density.The", "third", "through", "fifth", "terms", "in", "scoring", "are", "based", "on", "the", "fit", "of", "side", "chains", "to", "density", "." ],
+    "entities_indices" : [ [ 26, 27 ] ]
+  }, {
+    "sentence_tokens" : [ "Figure", "1c", ",", "d", "illustrates", "this", "for", "these", "maps", "by", "showing", "the", "density", "in", "the", "same", "maps", "as", "illustrated", "in", "Figure", "1a", ",", "b", ",", "but", "at", "higher", "contour", "levels", "where", "the", "main", "-", "chain", "density", "remains", "strong", "in", "most", "(", "but", "not", "all", ")", "places", "and", "side", "-", "chain", "and", "noise", "density", "are", "considerably", "reduced.Here", "we", "make", "use", "of", "the", "relatively", "continuous", "density", "present", "for", "the", "main", "chain", "of", "proteins", "to", "develop", "a", "method", "for", "automatic", "interpretation", "of", "cryo", "-", "EM", "maps", "that", "combines", "shape", "information", "in", "cryo", "-", "EM", "maps", "obtained", "at", "varying", "contour", "levels", "to", "trace", "the", "path", "of", "the", "main", "chains", "of", "proteins", "and", "to", "build", "atomic", "models", "representing", "them.2", "RESULTS", "AND", "DISCUSSION", "." ],
+    "entities_indices" : [ [ 47, 48 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "maps", "were", "obtained", "from", "the", "EMDB", "and", "were", "automatically", "sharpened", "using", "the", "phenix.auto_sharpen", "procedure45", "which", "requires", "only", "a", "map", "and", "an", "estimate", "of", "resolution", "(", "taken", "from", "the", "EMDB", "and", "PDB", "meta", "-", "data", ")", "." ],
+    "entities_indices" : [ [ 29, 30 ], [ 31, 32 ], [ 32, 33 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "density", "maps", "of", "proteins", ",", "side", "chains", "extend", "from", "the", "main", "chain", "at", "regular", "intervals", ",", "and", "their", "sizes", "are", "well", "-", "defined", "and", "their", "lengths", "are", "quite", "short", "relative", "to", "the", "length", "of", "the", "main", "-", "chain", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "Figure", "8", "shows", "a", "sharpened", "map", "and", "model", "for", "rotavirus", "VP6", "(", "EMD", "6272", ",", "PDB", "entry", "3j9s", ")", "at", "a", "higher", "resolution", "of", "2", "." ],
+    "entities_indices" : [ [ 9, 10, 11 ], [ 12, 13 ], [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "some", "cases", ",", "a", "true", "branch", "occurs", "(", "such", "as", "disulfide", "bridges", "or", "covalently", "-", "attached", "ligands", ")", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "37", "At", "each", "position", "in", "the", "chain", "the", "amino", "acid", "is", "chosen", "based", "on", "the", "fitted", "sequence", "and", "the", "best", "-", "fitting", "rotamer", "for", "that", "amino", "acid", "at", "that", "position", "is", "built.For", "this", "work", ",", "we", "used", "the", "side", "-", "chain", "rotamer", "library", "previously", "generated", "using", "X", "-", "ray", "structures", ",37", "and", "updated", "the", "expected", "density", "for", "each", "rotamer", "of", "each", "side", "chain", "using", "165", "deposited", "cryo", "-", "EM", "maps", "and", "models", "with", "resolutions", "from", "2.2", "-", "4", "." ],
+    "entities_indices" : [ [ 8, 9, 10 ], [ 25, 26, 27 ], [ 38, 39 ], [ 61, 62 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "combined", "score", "(", "T", ")", "is", "the", "sum", "of", "the", "likelihood", "score", "S", "from", "the", "fit", "of", "sequence", "to", "the", "density38", "and", "a", "map", "correlation", "score", "given", "by", "the", "map", "-", "model", "correlation", "CC", "multiplied", "by", "the", "square", "root", "of", "the", "number", "of", "residues", "built", "(", "N", ")", ":(", "3", ")", "T", "=S+", "CCN", "1/2", "In", "this", "equation", "the", "likelihood", "score", "for", "fit", "of", "sequence", "to", "density", "(", "S", ")", "38", "is", "based", "on", "the", "match", "of", "each", "side", "chain", "to", "density", "using", "the", "chosen", "sequence", "relative", "to", "the", "side", "chain", "match", "to", "density", "for", "all", "other", "possible", "side", "chains", "." ],
+    "entities_indices" : [ [ 34, 35 ], [ 79, 80 ], [ 90, 91 ], [ 99, 100 ] ]
+  }, {
+    "sentence_tokens" : [ "5", "A", ")", "plus", "half", "the", "number", "of", "poor", "ones", "(", "where", "the", "two", "hydrogen", "-", "bonding", "partners", "are", "part", "of", "a", "helical", "or", "beta", "-", "sheet", "arrangement", "but", "further", "than", "3", "." ],
+    "entities_indices" : [ [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "These", "models", "would", "normally", "then", "be", "refined", "and", "used", "as", "input", "for", "additional", "rounds", "of", "manual", "or", "automated", "model", "-", "building", "before", "deposition.Finally", ",", "an", "important", "aspect", "of", "the", "current", "method", "is", "that", "it", "is", "largely", "orthogonal", "to", "previous", "methods", "in", "that", "it", "uses", "a", "direct", "tracing", "of", "the", "density", "as", "the", "main", "approach", "for", "creating", "a", "polypeptide", "chain", "." ],
+    "entities_indices" : [ [ 57, 58 ] ]
+  }, {
+    "sentence_tokens" : [ "8", "A", "using", "experimental", "(", "MIR", ")", "phase", "determination", "followed", "by", "density", "modification", "." ],
+    "entities_indices" : [ [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "first", "step", ",", "helices", "and", "strands", "are", "automatically", "identified", "using", "procedures", "previously", "applied", "to", "crystallographic", "maps.30", "Figure", "2b", "shows", "parts", "of", "two", "helical", "fragments", "that", "are", "found", "in", "this", "way", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "resolution", "range", "side", "chains", "are", "often", "visible", "and", "the", "main", "chain", "can", "be", "relatively", "well", "-", "defined", ",", "so", "that", "automatic", "map", "interpretation", "tools", "can", "be", "effective", "." ],
+    "entities_indices" : [ [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "Overall", ",", "the", "phenix.map_to_model", "procedure", "reproduced", "77", "%", "of", "the", "residues", "in", "these", "models", ",", "MAINMAST", "reproduced", "slightly", "more", "(", "82", "%", ")", ",", "and", "Rosetta", "reproduced", "somewhat", "less", "(", "63", "%", ")", "." ],
+    "entities_indices" : [ [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "many", "cases", ",", "the", "resulting", "path", "through", "the", "density", ",", "which", "can", "be", "thought", "of", "as", "the", "path", "with", "the", "highest", "minimum", "density", ",", "will", "show", "the", "main", "chain", "of", "the", "protein", "between", "those", "secondary", "structure", "elements", "(", "rather", "than", "one", "through", "side", "chains", ")", "." ],
+    "entities_indices" : [ [ 43, 44 ] ]
+  }, {
+    "sentence_tokens" : [ "One", "is", "related", "to", "the", "\"", "bones", "\"", "representations", "that", "have", "been", "used", "for", "many", "years", "in", "crystallographic", "map", "interpretation", ",31", ",", "32", "except", "that", "instead", "of", "the", "points", "being", "on", "map", "grid", "points", ",", "they", "are", "adjusted", "to", "be", "along", "the", "ridgelines", "of", "high", "density", "(", "here", "ridgelines", "of", "high", "density", "are", "curves", "that", "trace", "through", "local", "maxima", "in", "the", "map", "in", "two", "dimensions", "nearly", "perpendicular", "to", "the", "line", ";", "they", "are", "similar", "to", "ridges", "in", "a", "mountain", "range", "connecting", "peaks", ",33", "Methods", ")", "." ],
+    "entities_indices" : [ [ 32, 33 ] ]
+  }, {
+    "sentence_tokens" : [ "Following", "this", ",", "all", "the", "chains", "in", "the", "model", "are", "assembled", "using", "the", "Phenix", "tool", "phenix.combine_models", "38", "which", "ranks", "chains", "based", "on", "their", "length", "and", "fit", "to", "the", "density", "and", "removes", "overlapping", "parts", "of", "lower", "-", "ranked", "chains.Up", "to", "this", "point", ",", "side", "chains", "have", "been", "built", "based", "on", "the", "density", "in", "the", "map", "." ],
+    "entities_indices" : [ [ 42, 43 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "used", "the", "approaches", "developed", "earlier", "for", "interpretation", "of", "side", "chain", "density", "in", "X", "-", "ray", "maps", "to", "obtain", "probabilistic", "estimates", "of", "the", "side", "chain", "present", "at", "each", "position", "along", "a", "model", "built", "into", "a", "cryo", "-", "EM", "map", "." ],
+    "entities_indices" : [ [ 9, 10 ], [ 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "5", "A", "apart", ",", "with", "a", "default", "weight", "of", "unity.The", "second", "scoring", "term", "is", "based", "on", "fit", "of", "the", "model", "to", "the", "density", ",", "and", "is", "given", "by", ",", "(", "2", ")", "U", "=", "10CC", "-", "0.5N", "1/2", "Where", "U", "is", "the", "score", "with", "a", "default", "weight", "of", "unity", ",", "CC", "is", "the", "value", "of", "the", "correlation", "between", "map", "density", "and", "model", "-", "based", "density", "in", "the", "region", "of", "the", "model", ",", "and", "N", "is", "the", "number", "of", "atoms", "in", "the", "model", "." ],
+    "entities_indices" : [ [ 50, 51 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "sum", "of", "the", "log", "-", "likelihood", "scores", "for", "the", "final", "fitted", "amino", "acids", "is", "the", "third", "score", "for", "that", "model", "with", "a", "default", "weight", "of", "unity.The", "fourth", "term", "is", "based", "on", "the", "uniqueness", "of", "the", "fit", "of", "amino", "side", "chains", "to", "the", "density", "." ],
+    "entities_indices" : [ [ 39, 40 ] ]
+  }, {
+    "sentence_tokens" : [ "Then", "the", "various", "amino", "acid", "types", "are", "weighted", "based", "on", "their", "density", "correlations", "." ],
+    "entities_indices" : [ [ 3, 4, 5 ] ]
+  } ],
+  "emptySentences" : [ ]
+}

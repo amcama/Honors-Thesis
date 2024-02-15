@@ -1,125 +1,526 @@
-[ {
-  "sentence_tokens" : [ "Although", "many", "infections", "are", "asymptomatic", ",", "giardiasis", "manifests", "with", "diverse", "symptomology", "and", "may", "contribute", "to", "physical", "and", "cognitive", "stunting", "in", "chronic", "cases", "." ],
-  "event_indices" : [ 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 6, 7 ],
-  "controlled_indices" : [ 18, 19 ],
-  "trigger_indices" : [ 13, 14 ],
-  "rule_name" : "Positive_activation_syntax_7_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Although", "intra-test", "agreement", "is", "higher", "for", "bulk", "stool", "than", "rectal", "swabs", ",", "these", "CIs", "overlap", ",", "and", "rectal", "swab", "reliability", "was", "fair.Low", "fecal", "mass", "may", "explain", "inferior", "detection", "by", "rectal", "swabs", ",", "as", "this", "diminishes", "the", "likelihood", "of", "a", "high", "cyst", "or", "trophozoite", "count", "in", "the", "diagnostic", "sample", "." ],
-  "event_indices" : [ 33, 34, 35, 36, 37, 38, 39, 40, 41 ],
-  "type" : "Negative_activation",
-  "polarity" : false,
-  "controller_indices" : [ 33, 34 ],
-  "controlled_indices" : [ 40, 41 ],
-  "trigger_indices" : [ 34, 35 ],
-  "rule_name" : "Negative_activation_syntax_1_verb, pronominalMatch",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Infection", "was", "detected", "using", "a", "previously", "validated", "real-time", "PCR", "diagnostic", "targeting", "the", "small", "subunit", "ribosomal", "RNA", "gene", "." ],
-  "entity_one_indices" : [ 14, 15, 16 ],
-  "entity_two_indices" : [ 0, 1 ]
-}, {
-  "sentence_tokens" : [ "The", "kappa", "evaluating", "test", "agreement", "was", "0.81", "(", "95", "%", "CI", ":", "0.54-1.00", ")", "among", "duplicate", "stool", "samples", "(", "N", "=", "49", ")", "and", "0.75", "(", "95", "%", "CI", ":", "0.47-1.00", ")", "among", "duplicate", "rectal", "swabs", "(", "N", "=", "48", ")", "." ],
-  "entity_one_indices" : [ 28, 29 ],
-  "entity_two_indices" : [ 10, 11 ]
-}, {
-  "sentence_tokens" : [ "Diagnostic", "sensitivity", "was", "93", "%", "(", "95", "%", "CI", ":", "84-98", ")", "by", "bulk", "stool", "and", "63", "%", "(", "95", "%", "CI", ":", "49-75", ")", "by", "rectal", "swabs", "." ],
-  "entity_one_indices" : [ 21, 22 ],
-  "entity_two_indices" : [ 8, 9 ]
-}, {
-  "sentence_tokens" : [ "The", "life", "cycle", "of", "G.", "duodenalis", "entails", "a", "dormant", "yet", "infectious", "cyst", "phase", "and", "a", "motile", ",", "replicating", "trophozoite", "phase", ",", "with", "its", "morphology", "typified", "by", "an", "adhesive", "disc", "significantly", "implicated", "in", "virulence", "." ],
-  "entity_one_indices" : [ 32, 33 ],
-  "entity_two_indices" : [ 11, 12 ]
-}, {
-  "sentence_tokens" : [ "When", "the", "caregiver", "returned", "the", "stool", "to", "the", "collection", "station", ",", "the", "field", "examiner", "collected", "two", "0.5", "mL", "specimens", "of", "stool", "and", "deposited", "them", "into", "two", "empty", "2", "mL", "tubes", "." ],
-  "entity_one_indices" : [ 28, 29 ],
-  "entity_two_indices" : [ 17, 18 ]
-}, {
-  "sentence_tokens" : [ "Isolation", "of", "total", "DNA", "from", "bulk", "stool", "followed", "a", "widely", "used", "standard", "operating", "procedure", "optimized", "for", "the", "qPCR", "detection", "of", "enteric", "parasites", ",", "modified", "from", "the", "MP", "Biomedicals", "FastDNA", "TM", "Spin", "Kit", "for", "soil", "extraction", "protocol", "(", "Supplemental", "Material", "2", ")", "." ],
-  "entity_one_indices" : [ 29, 30, 31, 32 ],
-  "entity_two_indices" : [ 26, 27 ]
-}, {
-  "sentence_tokens" : [ "Each", "DNA", "isolation", "was", "spiked", "with", "1", "mu", "L", "of", "pDMD801", "plasmid", "at", "a", "stock", "concentration", "of", "100", "pg/mu", "L", ",", "before", "the", "addition", "of", "a", "DNA", "binding", "matrix", "solution", "containing", "silica", "and", "ceramic", "." ],
-  "entity_one_indices" : [ 31, 32 ],
-  "entity_two_indices" : [ 18, 19, 20 ]
-}, {
-  "sentence_tokens" : [ "To", "develop", "this", "amendment", ",", "a", "literature", "review", "was", "performed", "focusing", "on", "existing", "rectal", "swab", "DNA", "isolation", "protocols", "for", "the", "detection", "of", "enteropathogens.Before", "physical", "and", "chemical", "cell", "lyses", ",", "rectal", "swabs", "were", "removed", "from", "the", "15", "mL", "conical", "tubes", "used", "for", "transport", "and", "storage", "by", "grasping", "the", "swab", "stem", "with", "clean", "forceps", "." ],
-  "entity_one_indices" : [ 41, 42 ],
-  "entity_two_indices" : [ 36, 37 ]
-}, {
-  "sentence_tokens" : [ "The", "remainder", "of", "the", "DNA", "isolation", "protocol", "described", "for", "bulk", "stool", "was", "then", "performed", "on", "the", "1", "mL", "of", "sodium", "phosphate", "buffer", "used", "for", "sample", "elution", ",", "and", "swab", "tips", "were", "discarded", "." ],
-  "entity_one_indices" : [ 19, 20, 21 ],
-  "entity_two_indices" : [ 17, 18 ]
-}, {
-  "sentence_tokens" : [ "Cycling", "conditions", "entailed", "an", "initial", "2-minute", "incubation", "at", "50", "degrees", "C", ",", "followed", "by", "a", "10-minute", "incubation", "at", "95", "degrees", "C", "and", "40", "cycles", "of", "1", ")", "a", "15-second", "denaturation", "step", "at", "95", "degrees", "C", "and", "2", ")", "a", "1-minute", "annealing", "and", "extension", "step", "at", "60", "degrees", "C", "for", "the", "G.", "duodenalis", "assay", "and", "at", "59", "degrees", "C", "for", "the", "IAC", "assay", "." ],
-  "entity_one_indices" : [ 43, 44 ],
-  "entity_two_indices" : [ 30, 31 ]
-}, {
-  "sentence_tokens" : [ "All", "code", "is", "available", "on", "GitHub", "(", "San", "Francisco", ",", "CA", ")", "(", "https://github.com/jmaasch", ")", "." ],
-  "entity_one_indices" : [ 10, 11 ],
-  "entity_two_indices" : [ 7, 8 ]
-}, {
-  "sentence_tokens" : [ "Ethical", "committees", "from", "the", "Niger", "Ministry", "of", "Health", "and", "the", "University", "of", "California", "(", "San", "Francisco", ",", "CA", ")", "granted", "approval", "for", "this", "study", "." ],
-  "entity_one_indices" : [ 17, 18 ],
-  "entity_two_indices" : [ 14, 15 ]
-}, {
-  "sentence_tokens" : [ "The", "kappa", "evaluating", "test", "agreement", "was", "0.81", "(", "95", "%", "CI", ":", "0.54", "-", "1.00", ")", "among", "the", "49", "children", "with", "duplicate", "stool", "samples", "and", "0.75", "(", "95", "%", "CI", ":", "0.47", "-", "1.00", ")", "among", "the", "48", "children", "with", "duplicate", "rectal", "swabs", "(", "Supplemental", "Table", "1", ")", "." ],
-  "entity_one_indices" : [ 29, 30 ],
-  "entity_two_indices" : [ 10, 11 ]
-}, {
-  "sentence_tokens" : [ "Among", "the", "31", "observations", "with", "duplicate", "positive", "bulk", "stool", "samples", ",", "the", "mean", "C", "value", "was", "27.33", "(", "SD", "=", "5.60", ")", "in", "replicate", "1", "and", "27.25", "(", "SD", "=", "5.62", ")", "in", "replicate", "2", "(", "P", "=", "0.647", ")", ",", "with", "a", "correlation", "(", "R", ")", "of", "0.966", "." ],
-  "entity_one_indices" : [ 28, 29 ],
-  "entity_two_indices" : [ 18, 19 ]
-}, {
-  "sentence_tokens" : [ "For", "rectal", "swabs", ",", "the", "mean", "C", "value", "among", "the", "22", "observations", "with", "duplicate", "values", "was", "27.54", "(", "SD", "=", "4.00", ")", "in", "replicate", "1", "and", "26.92", "(", "SD", "=", "3.44", ")", "in", "replicate", "2", "(", "P", "=", "0.243", ")", ",", "with", "a", "correlation", "(", "R", ")", "of", "0.627", "(", "Figure", "1", ")", "." ],
-  "entity_one_indices" : [ 28, 29 ],
-  "entity_two_indices" : [ 18, 19 ]
-}, {
-  "sentence_tokens" : [ "Diagnostic", "sensitivity", "for", "the", "first", "replicate", "set", "was", "93", "%", "(", "95", "%", "CI", ":", "84", "-", "98", ")", "by", "bulk", "stool", "and", "63", "%", "(", "95", "%", "CI", ":", "49", "-", "75", ")", "by", "rectal", "swabs", "." ],
-  "entity_one_indices" : [ 28, 29 ],
-  "entity_two_indices" : [ 13, 14 ]
-}, {
-  "sentence_tokens" : [ "However", ",", "if", "considering", "both", "specimen", "duplicates", "to", "simulate", "a", "multi-sample", "collection", "scenario", ",", "then", "bulk", "stool", "sensitivity", "was", "95", "%", "(", "95", "%", "CI", ":", "86", "-", "99", ")", ",", "whereas", "rectal", "swab", "sensitivity", "was", "68", "%", "(", "95", "%", "CI", ":", "54", "-", "79", ")", "." ],
-  "entity_one_indices" : [ 41, 42 ],
-  "entity_two_indices" : [ 24, 25 ]
-}, {
-  "sentence_tokens" : [ "Within", "the", "first", "replicate", ",", "the", "mean", "C", "value", "of", "bulk", "stool", "samples", "was", "31.79", "(", "SD", "=", "3.17", ")", "in", "the", "21", "samples", "with", "negative", "paired", "rectal", "swabs", ",", "compared", "with", "24.26", "(", "SD", "=", "4.33", ")", "in", "the", "34", "samples", "with", "positive", "paired", "rectal", "swabs", "(", "P", "<", "0.0001", ")", "(", "Figure", "3", ")", "." ],
-  "entity_one_indices" : [ 34, 35 ],
-  "entity_two_indices" : [ 16, 17 ]
-}, {
-  "sentence_tokens" : [ "Although", "the", "DNA", "isolation", "protocol", "used", "in", "the", "present", "study", "did", "include", "bead", "beating", ",", "it", "is", "possible", "that", "there", "are", "differential", "impacts", "of", "bead", "beating", "on", "swab", "samples", "versus", "bulk", "stool.Although", "bulk", "stool", "is", "often", "considered", "a", "gold", "standard", "specimen", "type", "in", "molecular", "diagnostics", ",", "four", "individuals", "deemed", "positive", "for", "G.", "duodenalis", "infection", "by", "rectal", "swabs", "were", "deemed", "negative", "in", "the", "first", "bulk", "stool", "replicate", ",", "with", "three", "different", "positive", "samples", "missed", "in", "the", "second", "stool", "replicate", "." ],
-  "entity_one_indices" : [ 53, 54 ],
-  "entity_two_indices" : [ 41, 42 ]
-}, {
-  "sentence_tokens" : [ "However", ",", "with", "just", "12", "of", "84", "samples", "featuring", "visible", "condensation", ",", "we", "were", "underpowered", "to", "evaluate", "the", "effect", "of", "condensation", "on", "diagnostic", "sensitivity", "." ],
-  "entity_one_indices" : [ 20, 21 ],
-  "entity_two_indices" : [ 10, 11 ]
-}, {
-  "sentence_tokens" : [ "Furthermore", ",", "if", "rectal", "swabs", "perform", "differently", "depending", "on", "bulk", "stool", "C", "value", ",", "then", "this", "may", "speak", "to", "the", "utility", "of", "rectal", "swabs", "under", "different", "infection", "intensities.Mean", "C", "values", "for", "bulk", "stool", "and", "rectal", "swabs", "differed", "significantly", ",", "and", "a", "small", "proportion", "of", "variation", "in", "the", "rectal", "swab", "C", "value", "could", "be", "explained", "by", "the", "C", "value", "of", "the", "paired", "bulk", "stool", "sample", ",", "similar", "to", "a", "prior", "study", "." ],
-  "entity_one_indices" : [ 60, 61 ],
-  "entity_two_indices" : [ 26, 27 ]
-}, {
-  "sentence_tokens" : [ "Conversely", ",", "this", "may", "be", "an", "advantage", "for", "studies", "interested", "in", "evaluating", "the", "morbidity", "effects", "of", "higher", "burden", "infections", "on", "growth", ",", "cognitive", "stunting", ",", "or", "other", "significant", "indicators", "in", "childhood", "development", "." ],
-  "entity_one_indices" : [ 23, 24 ],
-  "entity_two_indices" : [ 18, 19 ]
-}, {
-  "sentence_tokens" : [ "Using", "rectal", "swabs", "to", "detect", "higher", "burden", "infections", "may", "also", "be", "useful", "for", "studies", "assessing", "intervention", "effects", "targeted", "at", "higher", "burden", "individuals.Whether", "the", "high-C", "true", "positives", "missed", "by", "rectal", "swabs", "represent", "subclinical", "infections", "or", "nonpathogenic", "colonization", "could", "be", "an", "area", "of", "further", "investigation", "." ],
-  "entity_one_indices" : [ 31, 32, 33 ],
-  "entity_two_indices" : [ 7, 8 ]
-}, {
-  "sentence_tokens" : [ "Given", "the", "differential", "performance", "of", "swabs", "for", "higher", "versus", "lower", "level", "infections", ",", "this", "would", "be", "problematic", "in", "contexts", "where", "low-burden", "infections", "are", "common", "." ],
-  "entity_one_indices" : [ 21, 22 ],
-  "entity_two_indices" : [ 11, 12 ]
-}, {
-  "sentence_tokens" : [ "Poor", "detection", "of", "lower", "level", "infections", "may", "also", "be", "detrimental", "in", "control", "and", "elimination", "scenarios", ",", "where", "undetected", "low-burden", "infections", "may", "still", "contribute", "to", "parasite", "transmission", "and", "recrudescence", "." ],
-  "entity_one_indices" : [ 19, 20 ],
-  "entity_two_indices" : [ 5, 6 ]
-}, {
-  "sentence_tokens" : [ "Conversely", ",", "the", "fair", "sensitivity", "of", "rectal", "swabs", "for", "diagnosing", "higher", "level", "infections", "may", "indicate", "the", "utility", "of", "swabs", "as", "a", "frontline", "sampling", "method", "in", "contexts", "where", "high-burden", "infections", "are", "most", "relevant", ",", "particularly", "when", "bulk", "stool", "collection", "is", "logistically", "or", "financially", "infeasible", "." ],
-  "entity_one_indices" : [ 28, 29 ],
-  "entity_two_indices" : [ 12, 13 ]
-} ]
+{
+  "regulations" : [ {
+    "sentence_tokens" : [ "Although", "many", "infections", "are", "asymptomatic", ",", "giardiasis", "manifests", "with", "diverse", "symptomology", "and", "may", "contribute", "to", "physical", "and", "cognitive", "stunting", "in", "chronic", "cases", "." ],
+    "event_indices" : [ 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 6, 7 ],
+    "controlled_indices" : [ 18, 19 ],
+    "trigger_indices" : [ 13, 14 ],
+    "rule_name" : "Positive_activation_syntax_7_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "Although", "intra-test", "agreement", "is", "higher", "for", "bulk", "stool", "than", "rectal", "swabs", ",", "these", "CIs", "overlap", ",", "and", "rectal", "swab", "reliability", "was", "fair.Low", "fecal", "mass", "may", "explain", "inferior", "detection", "by", "rectal", "swabs", ",", "as", "this", "diminishes", "the", "likelihood", "of", "a", "high", "cyst", "or", "trophozoite", "count", "in", "the", "diagnostic", "sample", "." ],
+    "event_indices" : [ 33, 34, 35, 36, 37, 38, 39, 40, 41 ],
+    "type" : "Negative_activation",
+    "polarity" : false,
+    "controller_indices" : [ 33, 34 ],
+    "controlled_indices" : [ 40, 41 ],
+    "trigger_indices" : [ 34, 35 ],
+    "rule_name" : "Negative_activation_syntax_1_verb, pronominalMatch",
+    "rule" : null
+  } ],
+  "hardInstances" : [ {
+    "sentence_tokens" : [ "Although", "many", "infections", "are", "asymptomatic", ",", "giardiasis", "manifests", "with", "diverse", "symptomology", "and", "may", "contribute", "to", "physical", "and", "cognitive", "stunting", "in", "chronic", "cases", "." ],
+    "entities_indices" : [ [ 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "Although", "intra-test", "agreement", "is", "higher", "for", "bulk", "stool", "than", "rectal", "swabs", ",", "these", "CIs", "overlap", ",", "and", "rectal", "swab", "reliability", "was", "fair.Low", "fecal", "mass", "may", "explain", "inferior", "detection", "by", "rectal", "swabs", ",", "as", "this", "diminishes", "the", "likelihood", "of", "a", "high", "cyst", "or", "trophozoite", "count", "in", "the", "diagnostic", "sample", "." ],
+    "entities_indices" : [ [ 13, 14 ], [ 23, 24 ] ]
+  } ],
+  "withoutRegulations" : [ {
+    "sentence_tokens" : [ "Controlling", "for", "the", "consistency", "of", "the", "matched", "bulk", "stool", "sample", ",", "child", "'", "s", "age", ",", "visible", "condensation", "in", "the", "swab", "storage", "tube", ",", "or", "the", "presence", "of", "visible", "feces", "on", "the", "rectal", "swab", "surface", "did", "not", "significantly", "affect", "diagnostic", "sensitivity", "(", "Supplemental", "Table", "2", ")", "." ],
+    "entities_indices" : [ [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "Infection", "was", "detected", "using", "a", "previously", "validated", "real-time", "PCR", "diagnostic", "targeting", "the", "small", "subunit", "ribosomal", "RNA", "gene", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 14, 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "Based", "on", "previously", "described", "recommendations", ",", "each", "2", "mL", "tube", "was", "then", "subjected", "to", "an", "18-hour", "incubation", "of", "gentle", "and", "continuous", "vortexing", "at", "room", "temperature", "." ],
+    "entities_indices" : [ [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "Among", "a", "random", "subset", "of", "50", "children", ",", "field", "examiners", "collected", "a", "duplicate", "rectal", "swab", "and/or", "a", "duplicate", "aliquot", "from", "the", "bulk", "stool", "sample", ",", "resulting", "in", "50", "duplicates", "of", "each", "specimen", "type", "." ],
+    "entities_indices" : [ [ 32, 33 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "examiner", "first", "cleaned", "the", "rectal", "area", "with", "a", "disinfectant", "wipe", "and", "then", "inserted", "a", "sterile", "swab", "(", "FLOQSwabs", "TM", ",", "Copan", "Diagnostics", ",", "Murrieta", ",", "CA", ")", "of", "1", "-", "3", "cm", "into", "the", "child", "'", "s", "anus", "and", "gently", "turned", "the", "swab", "180", "degrees", "." ],
+    "entities_indices" : [ [ 9, 10 ], [ 19, 20 ], [ 24, 25 ], [ 26, 27 ] ]
+  }, {
+    "sentence_tokens" : [ "Giardia", "intestinalis", "and", "Giardia", "lamblia", ")", "parasitizes", "the", "human", "small", "intestine", "and", "is", "the", "etiological", "agent", "of", "giardiasis", ",", "a", "globally", "prevalent", "diarrheal", "disease", "." ],
+    "entities_indices" : [ [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "When", "restricting", "to", "qPCR", "positives", "with", "bulk", "stool", "C", "values", "less", "than", "or", "equal", "to", "32.37", "(", "the", "lowest", "three", "quartiles", "of", "stool", "C", ")", ",", "rectal", "swab", "sensitivity", "in", "the", "first", "replicate", "group", "increased", "significantly", "to", "78.0", "%", "(", "95", "%", "CI", ":", "64", "-", "89", ",", "P", "<", "0.0001", ")", "." ],
+    "entities_indices" : [ [ 42, 43 ] ]
+  }, {
+    "sentence_tokens" : [ "Poor", "detection", "of", "lower", "level", "infections", "may", "also", "be", "detrimental", "in", "control", "and", "elimination", "scenarios", ",", "where", "undetected", "low-burden", "infections", "may", "still", "contribute", "to", "parasite", "transmission", "and", "recrudescence", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "As", "evidence", "supports", "the", "adoption", "of", "molecular", "pathogen", "detection", "in", "lieu", "of", "microscopy", ",", "bulk", "stool", "remains", "the", "recommended", "specimen", "type", "for", "G.", "duodenalis", "diagnosis", "." ],
+    "entities_indices" : [ [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "remainder", "of", "the", "DNA", "isolation", "protocol", "described", "for", "bulk", "stool", "was", "then", "performed", "on", "the", "1", "mL", "of", "sodium", "phosphate", "buffer", "used", "for", "sample", "elution", ",", "and", "swab", "tips", "were", "discarded", "." ],
+    "entities_indices" : [ [ 17, 18 ], [ 19, 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "Ethical", "committees", "from", "the", "Niger", "Ministry", "of", "Health", "and", "the", "University", "of", "California", "(", "San", "Francisco", ",", "CA", ")", "granted", "approval", "for", "this", "study", "." ],
+    "entities_indices" : [ [ 14, 15 ], [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "a", "study", "targeting", "C.", "difficile", ",", "qPCR", "detection", "by", "dry", "flocked", "swabs", "versus", "bulk", "stool", "was", "100", "%", "concordant", ",", "whereas", "flocked", "swabs", "stored", "in", "liquid", "transport", "medium", "had", "significantly", "lower", "sensitivity", "." ],
+    "entities_indices" : [ [ 27, 28 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "previously", "validated", "assay", "targeting", "the", "small", "subunit", "ribosomal", "RNA", "gene", "was", "used", "for", "the", "detection", "of", "G.", "duodenalis", "." ],
+    "entities_indices" : [ [ 8, 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "Three", "participants", "registered", "positive", "for", "G.", "duodenalis", "infection", "by", "rectal", "swabs", "and", "not", "by", "bulk", "stool", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "examiner", "placed", "the", "swab", "into", "an", "empty", "15", "mL", "sterile", "tube", "and", "put", "the", "tube", "on", "ice", "." ],
+    "entities_indices" : [ [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "All", "samples", "with", "duplicate", "mean", "C", "values", "greater", "than", "two", "SDs", "above", "the", "sample", "set", "mean", "were", "assessed", "as", "suboptimal", "in", "DNA", "isolation", "quality", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "Cycling", "conditions", "entailed", "an", "initial", "2-minute", "incubation", "at", "50", "degrees", "C", ",", "followed", "by", "a", "10-minute", "incubation", "at", "95", "degrees", "C", "and", "40", "cycles", "of", "1", ")", "a", "15-second", "denaturation", "step", "at", "95", "degrees", "C", "and", "2", ")", "a", "1-minute", "annealing", "and", "extension", "step", "at", "60", "degrees", "C", "for", "the", "G.", "duodenalis", "assay", "and", "at", "59", "degrees", "C", "for", "the", "IAC", "assay", "." ],
+    "entities_indices" : [ [ 30, 31 ], [ 43, 44 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "rectal", "swabs", ",", "the", "mean", "C", "value", "among", "the", "22", "observations", "with", "duplicate", "values", "was", "27.54", "(", "SD", "=", "4.00", ")", "in", "replicate", "1", "and", "26.92", "(", "SD", "=", "3.44", ")", "in", "replicate", "2", "(", "P", "=", "0.243", ")", ",", "with", "a", "correlation", "(", "R", ")", "of", "0.627", "(", "Figure", "1", ")", "." ],
+    "entities_indices" : [ [ 18, 19 ], [ 28, 29 ] ]
+  }, {
+    "sentence_tokens" : [ "Given", "the", "differential", "performance", "of", "swabs", "for", "higher", "versus", "lower", "level", "infections", ",", "this", "would", "be", "problematic", "in", "contexts", "where", "low-burden", "infections", "are", "common", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "When", "restricting", "to", "the", "lowest", "three", "quartiles", "of", "bulk", "stool", "quantitation", "cycle", "values", "(", "an", "indication", "of", "relatively", "high", "parasite", "load", ")", ",", "sensitivity", "by", "rectal", "swabs", "increased", "to", "78.0", "%", "(", "95", "%", "CI", ":", "64-89", ",", "P", "<", "0.0001", ")", "." ],
+    "entities_indices" : [ [ 34, 35 ] ]
+  }, {
+    "sentence_tokens" : [ "To", "develop", "this", "amendment", ",", "a", "literature", "review", "was", "performed", "focusing", "on", "existing", "rectal", "swab", "DNA", "isolation", "protocols", "for", "the", "detection", "of", "enteropathogens.Before", "physical", "and", "chemical", "cell", "lyses", ",", "rectal", "swabs", "were", "removed", "from", "the", "15", "mL", "conical", "tubes", "used", "for", "transport", "and", "storage", "by", "grasping", "the", "swab", "stem", "with", "clean", "forceps", "." ],
+    "entities_indices" : [ [ 36, 37 ], [ 41, 42 ] ]
+  }, {
+    "sentence_tokens" : [ "Rectal", "swab", "sensitivity", "by", "parasite", "load", ".." ],
+    "entities_indices" : [ [ 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "Among", "the", "31", "observations", "with", "duplicate", "positive", "bulk", "stool", "samples", ",", "the", "mean", "C", "value", "was", "27.33", "(", "SD", "=", "5.60", ")", "in", "replicate", "1", "and", "27.25", "(", "SD", "=", "5.62", ")", "in", "replicate", "2", "(", "P", "=", "0.647", ")", ",", "with", "a", "correlation", "(", "R", ")", "of", "0.966", "." ],
+    "entities_indices" : [ [ 18, 19 ], [ 28, 29 ] ]
+  }, {
+    "sentence_tokens" : [ "During", "DNA", "isolation", ",", "salient", "rectal", "swab", "characteristics", "were", "noted", "by", "the", "technician", "in", "a", "standardized", "form", ",", "including", "the", "presence", "of", "condensation", "in", "the", "swab", "storage", "tube", "and", "visible", "feces", "on", "the", "swab", "surface", "." ],
+    "entities_indices" : [ [ 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "Although", "the", "DNA", "isolation", "protocol", "used", "in", "the", "present", "study", "did", "include", "bead", "beating", ",", "it", "is", "possible", "that", "there", "are", "differential", "impacts", "of", "bead", "beating", "on", "swab", "samples", "versus", "bulk", "stool.Although", "bulk", "stool", "is", "often", "considered", "a", "gold", "standard", "specimen", "type", "in", "molecular", "diagnostics", ",", "four", "individuals", "deemed", "positive", "for", "G.", "duodenalis", "infection", "by", "rectal", "swabs", "were", "deemed", "negative", "in", "the", "first", "bulk", "stool", "replicate", ",", "with", "three", "different", "positive", "samples", "missed", "in", "the", "second", "stool", "replicate", "." ],
+    "entities_indices" : [ [ 41, 42 ], [ 53, 54 ] ]
+  }, {
+    "sentence_tokens" : [ "Though", "bulk", "stool", "remains", "the", "gold", "standard", "specimen", "type", "for", "enteropathogen", "diagnosis", ",", "rectal", "swabs", "may", "offer", "comparable", "sensitivity", "with", "greater", "ease", "of", "collection", "for", "select", "pathogens", "." ],
+    "entities_indices" : [ [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "weak", "performance", "of", "rectal", "swabs", "in", "lower", "pathogen", "load", "scenarios", "may", "be", "problematic", "in", "population", "based", "studies", "and", "monitoring", "programs", ",", "where", "lower", "level", "infections", "may", "go", "undetected", "while", "still", "contributing", "to", "morbidity", ",", "parasite", "transmission", ",", "and", "recrudescence", "." ],
+    "entities_indices" : [ [ 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "Fluorescently", "labeled", "probes", "featured", "a", "5", "'", "FAM", "(", "fluorescein", ")", "fluorophore", ",", "an", "internal", "ZEN", "TM", "quencher", ",", "and", "a", "3", "'", "3IABkFQ", "quencher", "(", "Integrated", "DNA", "Technologies", ",", "Inc", ".,", "Coralville", ",", "IA", ")", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 9, 10 ], [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "Conversely", ",", "this", "may", "be", "an", "advantage", "for", "studies", "interested", "in", "evaluating", "the", "morbidity", "effects", "of", "higher", "burden", "infections", "on", "growth", ",", "cognitive", "stunting", ",", "or", "other", "significant", "indicators", "in", "childhood", "development", "." ],
+    "entities_indices" : [ [ 18, 19 ], [ 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "Rectal", "swabs", "may", "offer", "greater", "ease", "of", "storage", "and", "transport", "in", "the", "absence", "of", "flammable", "or", "toxic", "preservatives", "commonly", "used", "for", "stool", ",", "reduced", "hazardous", "and", "biohazardous", "waste", "generation", "during", "sample", "collection", "and", "processing", ",", "and", "rapid", "collection", "." ],
+    "entities_indices" : [ [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "Any", "samples", "deemed", "suboptimal", "by", "the", "IAC", "assay", "were", "eliminated", "from", "the", "dataset.For", "the", "G.", "duodenalis", "assay", ",", "a", "dilution", "series", "of", "genomic", "DNA", "was", "run", "as", "a", "positive", "control", "on", "each", "qPCR", "plate", "in", "concentrations", "of", "10", "pg/mu", "L", ",", "1", "pg/mu", "L", ",", "and", "100", "fg/mu", "L.", "Each", "IAC", "assay", "plate", "featured", "a", "dilution", "series", "of", "the", "pDMD801", "IAC", "plasmid", "in", "concentrations", "of", "10", "pg/mu", "L", ",", "100", "fg/mu", "L", ",", "and", "1", "fg/mu", "L.", "Full-plate", "retesting", "was", "required", "of", "any", "qPCR", "plate", "containing", "positive", "control", "duplicates", "with", "a", "mean", "C", "value", "greater", "than", "two", "SDs", "above", "the", "mean", "for", "the", "respective", "plasmid", "concentration.No-template", "controls", "were", "run", "in", "quadruplicate", "7", "mu", "L", "reactions", "on", "every", "plate", "for", "both", "assays", "." ],
+    "entities_indices" : [ [ 38, 39, 40, 41, 42, 43, 44 ], [ 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79 ], [ 97, 98 ], [ 110, 111, 112, 113, 114 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "swab", "stem", "was", "trimmed", "above", "the", "swab", "tip", "using", "clean", "scissors", ",", "simultaneously", "transferring", "each", "tip", "to", "a", "2", "mL", "tube", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 16, 17 ], [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "Furthermore", ",", "if", "rectal", "swabs", "perform", "differently", "depending", "on", "bulk", "stool", "C", "value", ",", "then", "this", "may", "speak", "to", "the", "utility", "of", "rectal", "swabs", "under", "different", "infection", "intensities.Mean", "C", "values", "for", "bulk", "stool", "and", "rectal", "swabs", "differed", "significantly", ",", "and", "a", "small", "proportion", "of", "variation", "in", "the", "rectal", "swab", "C", "value", "could", "be", "explained", "by", "the", "C", "value", "of", "the", "paired", "bulk", "stool", "sample", ",", "similar", "to", "a", "prior", "study", "." ],
+    "entities_indices" : [ [ 26, 27 ], [ 60, 61 ] ]
+  }, {
+    "sentence_tokens" : [ "Each", "DNA", "isolation", "was", "spiked", "with", "1", "mu", "L", "of", "pDMD801", "plasmid", "at", "a", "stock", "concentration", "of", "100", "pg/mu", "L", ",", "before", "the", "addition", "of", "a", "DNA", "binding", "matrix", "solution", "containing", "silica", "and", "ceramic", "." ],
+    "entities_indices" : [ [ 18, 19, 20 ], [ 31, 32 ] ]
+  }, {
+    "sentence_tokens" : [ "All", "analyses", "were", "run", "in", "R", "v3.5.2", "." ],
+    "entities_indices" : [ [ 5, 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "kappa", "evaluating", "test", "agreement", "was", "0.81", "(", "95", "%", "CI", ":", "0.54-1.00", ")", "among", "duplicate", "stool", "samples", "(", "N", "=", "49", ")", "and", "0.75", "(", "95", "%", "CI", ":", "0.47-1.00", ")", "among", "duplicate", "rectal", "swabs", "(", "N", "=", "48", ")", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 28, 29 ] ]
+  }, {
+    "sentence_tokens" : [ "METHOD", "VALIDITY", "." ],
+    "entities_indices" : [ [ 0, 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "Diagnostic", "sensitivity", "for", "the", "first", "replicate", "set", "was", "93", "%", "(", "95", "%", "CI", ":", "84", "-", "98", ")", "by", "bulk", "stool", "and", "63", "%", "(", "95", "%", "CI", ":", "49", "-", "75", ")", "by", "rectal", "swabs", "." ],
+    "entities_indices" : [ [ 13, 14 ], [ 28, 29 ] ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "with", "just", "12", "of", "84", "samples", "featuring", "visible", "condensation", ",", "we", "were", "underpowered", "to", "evaluate", "the", "effect", "of", "condensation", "on", "diagnostic", "sensitivity", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "All", "DNA", "isolations", "used", "the", "MP", "Biomedicals", "FastDNA", "Spin", "Kit", "and", "the", "MP", "Biomedicals", "FastPrep-24", "TM", "5G", "homogenizer", "(", "Santa", "Ana", ",", "CA", ")", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 8, 9, 10 ], [ 12, 13 ], [ 15, 16 ], [ 19, 20 ], [ 20, 21 ], [ 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "Children", "are", "often", "at", "high", "risk", "for", "G.", "duodenalis", "infection", "relative", "to", "other", "age-groups", "." ],
+    "entities_indices" : [ [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "Using", "rectal", "swabs", "to", "detect", "higher", "burden", "infections", "may", "also", "be", "useful", "for", "studies", "assessing", "intervention", "effects", "targeted", "at", "higher", "burden", "individuals.Whether", "the", "high-C", "true", "positives", "missed", "by", "rectal", "swabs", "represent", "subclinical", "infections", "or", "nonpathogenic", "colonization", "could", "be", "an", "area", "of", "further", "investigation", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 31, 32, 33 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "kappa", "evaluating", "test", "agreement", "was", "0.81", "(", "95", "%", "CI", ":", "0.54", "-", "1.00", ")", "among", "the", "49", "children", "with", "duplicate", "stool", "samples", "and", "0.75", "(", "95", "%", "CI", ":", "0.47", "-", "1.00", ")", "among", "the", "48", "children", "with", "duplicate", "rectal", "swabs", "(", "Supplemental", "Table", "1", ")", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 29, 30 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "study", "was", "nested", "within", "a", "cluster", "randomized", "trial", "evaluating", "the", "effects", "of", "azithromycin", "mass", "drug", "administration", "on", "child", "mortality", "in", "rural", "Niger", "(", "Macrolides", "Oraux", "pour", "R", "e", "duire", "les", "D", "e", "c", "e", "s", "avec", "un", "Oeil", "sur", "la", "R", "e", "sistance", "(", "MORDOR", ")", ";", "clinicaltrials.gov", "NCT02048007", ")", "." ],
+    "entities_indices" : [ [ 13, 14 ], [ 14, 15 ], [ 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44 ], [ 45, 46 ], [ 48, 49, 50 ] ]
+  }, {
+    "sentence_tokens" : [ "Relative", "to", "bulk", "stool", ",", "rectal", "swabs", "may", "offer", "greater", "ease", "of", "collection", ",", "storage", ",", "transport", ",", "and", "waste", "disposal", "." ],
+    "entities_indices" : [ [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "their", "fair", "sensitivity", "for", "higher", "parasite", "loads", "suggests", "that", "swabs", "may", "be", "a", "useful", "tool", "for", "detecting", "higher", "burden", "infections", "when", "stool", "collection", "is", "excessively", "expensive", "or", "logistically", "challenging", "." ],
+    "entities_indices" : [ [ 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "Of", "84", "individuals", "tested", ",", "59", "(", "70.2", "%", ")", "registered", "positive", "for", "G.", "duodenalis", "infection", "in", "at", "least", "one", "specimen", "replicate", "by", "either", "sample", "collection", "method", "." ],
+    "entities_indices" : [ [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "if", "considering", "both", "specimen", "duplicates", "to", "simulate", "a", "multi-sample", "collection", "scenario", ",", "then", "bulk", "stool", "sensitivity", "was", "95", "%", "(", "95", "%", "CI", ":", "86", "-", "99", ")", ",", "whereas", "rectal", "swab", "sensitivity", "was", "68", "%", "(", "95", "%", "CI", ":", "54", "-", "79", ")", "." ],
+    "entities_indices" : [ [ 24, 25 ], [ 41, 42 ] ]
+  }, {
+    "sentence_tokens" : [ "When", "the", "caregiver", "returned", "the", "stool", "to", "the", "collection", "station", ",", "the", "field", "examiner", "collected", "two", "0.5", "mL", "specimens", "of", "stool", "and", "deposited", "them", "into", "two", "empty", "2", "mL", "tubes", "." ],
+    "entities_indices" : [ [ 17, 18 ], [ 28, 29 ] ]
+  }, {
+    "sentence_tokens" : [ "Conversely", ",", "the", "fair", "sensitivity", "of", "rectal", "swabs", "for", "diagnosing", "higher", "level", "infections", "may", "indicate", "the", "utility", "of", "swabs", "as", "a", "frontline", "sampling", "method", "in", "contexts", "where", "high-burden", "infections", "are", "most", "relevant", ",", "particularly", "when", "bulk", "stool", "collection", "is", "logistically", "or", "financially", "infeasible", "." ],
+    "entities_indices" : [ [ 12, 13 ], [ 28, 29 ] ]
+  }, {
+    "sentence_tokens" : [ "Subsequently", ",", "1", "mL", "of", "sodium", "phosphate", "buffer", "was", "added", "to", "each", "2", "mL", "tube", "to", "serve", "as", "an", "elution", "buffer", "for", "biological", "material", "on", "the", "swab", "surface", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 5, 6, 7 ], [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "we", "were", "likely", "underpowered", "to", "evaluate", "this", "effect", "with", "24", "of", "86", "rectal", "swabs", "having", "visible", "stool.Whereas", "condensation", "was", "hypothesized", "to", "encourage", "enzymatic", "activity", "in", "media-less", "storage", "tubes", ",", "and", "thus", "to", "negatively", "affect", "diagnostic", "sensitivity", ",", "we", "found", "that", "visible", "moisture", "within", "media-less", "storage", "tubes", "did", "not", "significantly", "affect", "the", "qPCR", "detection", "of", "G.", "duodenalis", "by", "rectal", "swabs", "." ],
+    "entities_indices" : [ [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "Diagnostic", "sensitivity", "was", "93", "%", "(", "95", "%", "CI", ":", "84-98", ")", "by", "bulk", "stool", "and", "63", "%", "(", "95", "%", "CI", ":", "49-75", ")", "by", "rectal", "swabs", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "All", "code", "is", "available", "on", "GitHub", "(", "San", "Francisco", ",", "CA", ")", "(", "https://github.com/jmaasch", ")", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "Although", "microscopic", "assessment", "of", "ova", ",", "cysts", ",", "and", "parasites", "from", "bulk", "stool", "is", "the", "current", "standard", "of", "practice", "for", "enteric", "parasite", "diagnostics", ",", "it", "has", "been", "shown", "to", "be", "insensitive", "and", "subject", "to", "misclassification", "error", "relative", "to", "molecular", "methods", "for", "both", "protozoa", "and", "helminths", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "Given", "standard", "recommendations", "to", "collect", "multiple", "same-patient", "samples", "for", "maximized", "accuracy", "when", "diagnosing", "G.", "duodenalis", ",", "aggregate", "sensitivity", "when", "considering", "both", "duplicate", "specimens", "was", "also", "assessed.To", "evaluate", "whether", "the", "participant", "'", "s", "age", ",", "visible", "presence", "of", "stool", "on", "the", "swab", ",", "visible", "condensation", "in", "the", "swab", "storage", "tube", ",", "or", "matched", "stool", "consistency", "affected", "validity", ",", "we", "included", "these", "variables", "as", "covariates", "in", "multivariate", "logit", "models", "with", "the", "dichotomous", "result", "of", "the", "index", "test", "as", "the", "dependent", "variable", "conditional", "on", "the", "reference", "standard", "being", "positive", "(", "i.e", ".,", "sensitivity", ")", "." ],
+    "entities_indices" : [ [ 43, 44 ] ]
+  }, {
+    "sentence_tokens" : [ "Isolation", "of", "total", "DNA", "from", "bulk", "stool", "followed", "a", "widely", "used", "standard", "operating", "procedure", "optimized", "for", "the", "qPCR", "detection", "of", "enteric", "parasites", ",", "modified", "from", "the", "MP", "Biomedicals", "FastDNA", "TM", "Spin", "Kit", "for", "soil", "extraction", "protocol", "(", "Supplemental", "Material", "2", ")", "." ],
+    "entities_indices" : [ [ 26, 27 ], [ 29, 30, 31, 32 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "life", "cycle", "of", "G.", "duodenalis", "entails", "a", "dormant", "yet", "infectious", "cyst", "phase", "and", "a", "motile", ",", "replicating", "trophozoite", "phase", ",", "with", "its", "morphology", "typified", "by", "an", "adhesive", "disc", "significantly", "implicated", "in", "virulence", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 32, 33 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "study", "used", "TaqPath", "ProAmp", "Master", "Mix", "(", "ThermoFisher", "Scientific", ",", "Waltham", ",", "MA", ")", "and", "the", "Applied", "Biosystems", "TM", "StepOnePlus", "TM", "Real-Time", "PCR", "System", "(", "ThermoFisher", "Scientific", ",", "Waltham", ",", "MA", ")", "." ],
+    "entities_indices" : [ [ 3, 4, 5, 6, 7 ], [ 13, 14 ], [ 19, 20 ], [ 21, 22 ], [ 31, 32 ] ]
+  }, {
+    "sentence_tokens" : [ "Within", "the", "first", "replicate", ",", "the", "mean", "C", "value", "of", "bulk", "stool", "samples", "was", "31.79", "(", "SD", "=", "3.17", ")", "in", "the", "21", "samples", "with", "negative", "paired", "rectal", "swabs", ",", "compared", "with", "24.26", "(", "SD", "=", "4.33", ")", "in", "the", "34", "samples", "with", "positive", "paired", "rectal", "swabs", "(", "P", "<", "0.0001", ")", "(", "Figure", "3", ")", "." ],
+    "entities_indices" : [ [ 16, 17 ], [ 34, 35 ] ]
+  } ],
+  "emptySentences" : [ {
+    "sentence_tokens" : [ "Rectal", "Swabs", "as", "an", "Alternative", "Sample", "Collection", "Method", "to", "Bulk", "Stool", "for", "the", "Real-Time", "PCR", "Detection", "of", "Giardia", "duodenalis", "." ]
+  }, {
+    "sentence_tokens" : [ "Abstract", ".." ]
+  }, {
+    "sentence_tokens" : [ "Though", "bulk", "stool", "remains", "the", "gold", "standard", "specimen", "type", "for", "enteropathogen", "diagnosis", ",", "rectal", "swabs", "may", "offer", "comparable", "sensitivity", "with", "greater", "ease", "of", "collection", "for", "select", "pathogens", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "study", "sought", "to", "evaluate", "the", "validity", "and", "reproducibility", "of", "rectal", "swabs", "as", "a", "sample", "collection", "method", "for", "the", "molecular", "diagnosis", "of", "Giardia", "duodenalis", "." ]
+  }, {
+    "sentence_tokens" : [ "Paired", "rectal", "swab", "and", "bulk", "stool", "samples", "were", "collected", "from", "86", "children", "ages", "0-4", "years", "living", "in", "southwest", "Niger", ",", "with", "duplicate", "samples", "collected", "among", "a", "subset", "of", "50", "children", "." ]
+  }, {
+    "sentence_tokens" : [ "Infection", "was", "detected", "using", "a", "previously", "validated", "real-time", "PCR", "diagnostic", "targeting", "the", "small", "subunit", "ribosomal", "RNA", "gene", "." ]
+  }, {
+    "sentence_tokens" : [ "Giardia", "duodenalis", "was", "detected", "in", "65.5", "%", "(", "55/84", ")", "of", "bulk", "stool", "samples", "and", "44.0", "%", "(", "37/84", ")", "of", "swab", "samples", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "kappa", "evaluating", "test", "agreement", "was", "0.81", "(", "95", "%", "CI", ":", "0.54-1.00", ")", "among", "duplicate", "stool", "samples", "(", "N", "=", "49", ")", "and", "0.75", "(", "95", "%", "CI", ":", "0.47-1.00", ")", "among", "duplicate", "rectal", "swabs", "(", "N", "=", "48", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Diagnostic", "sensitivity", "was", "93", "%", "(", "95", "%", "CI", ":", "84-98", ")", "by", "bulk", "stool", "and", "63", "%", "(", "95", "%", "CI", ":", "49-75", ")", "by", "rectal", "swabs", "." ]
+  }, {
+    "sentence_tokens" : [ "When", "restricting", "to", "the", "lowest", "three", "quartiles", "of", "bulk", "stool", "quantitation", "cycle", "values", "(", "an", "indication", "of", "relatively", "high", "parasite", "load", ")", ",", "sensitivity", "by", "rectal", "swabs", "increased", "to", "78.0", "%", "(", "95", "%", "CI", ":", "64-89", ",", "P", "<", "0.0001", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "These", "findings", "suggest", "that", "rectal", "swabs", "provide", "less", "sensitive", "and", "reproducible", "results", "than", "bulk", "stool", "for", "the", "real-time", "PCR", "diagnosis", "of", "G.", "duodenalis", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "their", "fair", "sensitivity", "for", "higher", "parasite", "loads", "suggests", "that", "swabs", "may", "be", "a", "useful", "tool", "for", "detecting", "higher", "burden", "infections", "when", "stool", "collection", "is", "excessively", "expensive", "or", "logistically", "challenging", "." ]
+  }, {
+    "sentence_tokens" : [ "INTRODUCTION", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "protozoan", "flagellate", "Giardia", "duodenalis", "(", "syn", "." ]
+  }, {
+    "sentence_tokens" : [ "Giardia", "intestinalis", "and", "Giardia", "lamblia", ")", "parasitizes", "the", "human", "small", "intestine", "and", "is", "the", "etiological", "agent", "of", "giardiasis", ",", "a", "globally", "prevalent", "diarrheal", "disease", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "life", "cycle", "of", "G.", "duodenalis", "entails", "a", "dormant", "yet", "infectious", "cyst", "phase", "and", "a", "motile", ",", "replicating", "trophozoite", "phase", ",", "with", "its", "morphology", "typified", "by", "an", "adhesive", "disc", "significantly", "implicated", "in", "virulence", "." ]
+  }, {
+    "sentence_tokens" : [ "Genomic", "analyses", "suggest", "that", "G.", "duodenalis", "is", "a", "species", "complex", "comprised", "of", "eight", "distinct", "groups", ",", "assemblages", "A", "-", "H", ",", "with", "assemblages", "A", "and", "B", "commonly", "associated", "with", "human", "hosts", "." ]
+  }, {
+    "sentence_tokens" : [ "Children", "are", "often", "at", "high", "risk", "for", "G.", "duodenalis", "infection", "relative", "to", "other", "age-groups", "." ]
+  }, {
+    "sentence_tokens" : [ "Although", "microscopic", "assessment", "of", "ova", ",", "cysts", ",", "and", "parasites", "from", "bulk", "stool", "is", "the", "current", "standard", "of", "practice", "for", "enteric", "parasite", "diagnostics", ",", "it", "has", "been", "shown", "to", "be", "insensitive", "and", "subject", "to", "misclassification", "error", "relative", "to", "molecular", "methods", "for", "both", "protozoa", "and", "helminths", "." ]
+  }, {
+    "sentence_tokens" : [ "As", "evidence", "supports", "the", "adoption", "of", "molecular", "pathogen", "detection", "in", "lieu", "of", "microscopy", ",", "bulk", "stool", "remains", "the", "recommended", "specimen", "type", "for", "G.", "duodenalis", "diagnosis", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "some", "enteropathogens", ",", "however", ",", "evidence", "suggests", "that", "rectal", "swabs", "may", "provide", "comparable", "diagnostic", "sensitivity", "with", "multiple", "potential", "benefits", "." ]
+  }, {
+    "sentence_tokens" : [ "Rectal", "swabs", "may", "offer", "greater", "ease", "of", "storage", "and", "transport", "in", "the", "absence", "of", "flammable", "or", "toxic", "preservatives", "commonly", "used", "for", "stool", ",", "reduced", "hazardous", "and", "biohazardous", "waste", "generation", "during", "sample", "collection", "and", "processing", ",", "and", "rapid", "collection", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "latter", "may", "be", "important", "for", "short-stay", "inpatient", "care", ",", "pediatric", "diagnostics", ",", "field", "settings", ",", "or", "other", "contexts", "in", "which", "sample", "collection", "and", "diagnostic", "turnaround", "must", "be", "streamlined", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "addition", ",", "as", "rectal", "swabs", "are", "much", "faster", "and", "easier", "to", "obtain", "from", "young", "children", "than", "bulk", "stool", "while", "remaining", "minimally", "invasive", ",", "their", "use", "could", "facilitate", "greater", "child", "enrollment", "in", "epidemiological", "studies", "targeting", "this", "at-risk", "demographic.The", "utility", "of", "rectal", "swabs", "for", "enteropathogen", "detection", "has", "been", "explored", "in", "the", "context", "of", "bacterial", ",", "viral", ",", "and", "eukaryotic", "disease", "agents", "." ]
+  }, {
+    "sentence_tokens" : [ "Statistically", "insignificant", "differences", "in", "the", "sensitivity", "of", "stool-", "versus", "swab", "based", "PCR", "diagnostics", "have", "been", "observed", "for", "Cryptosporidium", ",", "Norovirus", ",", "Rotavirus", ",", "Clostridium", "difficile", ",", "and", "commensal", "bacteria", "of", "the", "gut", "microbiota", "." ]
+  }, {
+    "sentence_tokens" : [ "Although", "PCR", "sensitivity", "by", "rectal", "swabs", "may", "exceed", "that", "of", "bulk", "stool", "for", "Shigella", "and", "Campylobacter", ",", "swabs", "have", "been", "seen", "to", "underperform", "in", "the", "PCR", "detection", "of", "G.", "duodenalis", "." ]
+  }, {
+    "sentence_tokens" : [ "To", "further", "evaluate", "the", "validity", "of", "rectal", "swabs", "for", "the", "molecular", "detection", "of", "G.", "duodenalis", ",", "we", "subjected", "136", "paired", "rectal", "swab", "and", "bulk", "stool", "specimens", "from", "children", "living", "in", "southwest", "Niger", "to", "DNA", "isolation", "and", "real-time", "PCR", "(", "qPCR", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Unlike", "other", "studies", "comparing", "the", "validity", "of", "rectal", "swab", "and", "bulk", "stool", "sample", "collection", "in", "clinical", "populations", ",", "this", "study", "focused", "on", "a", "population", "based", "representative", "sample", "and", "examined", "reproducibility", "by", "collecting", "duplicate", "samples", "from", "50", "participants", "." ]
+  }, {
+    "sentence_tokens" : [ "METHODS", "." ]
+  }, {
+    "sentence_tokens" : [ "Study", "population", ".." ]
+  }, {
+    "sentence_tokens" : [ "This", "study", "was", "nested", "within", "a", "cluster", "randomized", "trial", "evaluating", "the", "effects", "of", "azithromycin", "mass", "drug", "administration", "on", "child", "mortality", "in", "rural", "Niger", "(", "Macrolides", "Oraux", "pour", "R", "e", "duire", "les", "D", "e", "c", "e", "s", "avec", "un", "Oeil", "sur", "la", "R", "e", "sistance", "(", "MORDOR", ")", ";", "clinicaltrials.gov", "NCT02048007", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Study", "communities", "were", "located", "in", "Boboye", "Department", ",", "Dosso", "Region", "." ]
+  }, {
+    "sentence_tokens" : [ "Within", "nine", "of", "the", "30", "MORDOR", "study", "communities", ",", "447", "children", "aged", "0", "-", "4", "years", "were", "randomly", "selected", "to", "participate", "in", "the", "trial", ",", "of", "whom", "94", "agreed", "to", "participate", "in", "the", "rectal", "swab", "sub-study", "." ]
+  }, {
+    "sentence_tokens" : [ "Sample", "collection", ".." ]
+  }, {
+    "sentence_tokens" : [ "On", "the", "day", "of", "the", "study", "visit", ",", "selected", "children", "and", "their", "accompanying", "caregivers", "convened", "in", "a", "centralized", "location", "in", "each", "community", "." ]
+  }, {
+    "sentence_tokens" : [ "Trained", "field", "examiners", "collected", "a", "rectal", "swab", "and", "a", "stool", "specimen", "from", "each", "child", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "examiner", "first", "cleaned", "the", "rectal", "area", "with", "a", "disinfectant", "wipe", "and", "then", "inserted", "a", "sterile", "swab", "(", "FLOQSwabs", "TM", ",", "Copan", "Diagnostics", ",", "Murrieta", ",", "CA", ")", "of", "1", "-", "3", "cm", "into", "the", "child", "'", "s", "anus", "and", "gently", "turned", "the", "swab", "180", "degrees", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "examiner", "placed", "the", "swab", "into", "an", "empty", "15", "mL", "sterile", "tube", "and", "put", "the", "tube", "on", "ice", "." ]
+  }, {
+    "sentence_tokens" : [ "After", "swab", "collection", ",", "caregivers", "were", "instructed", "to", "have", "their", "children", "defecate", "in", "a", "potty", "chair", "lined", "with", "a", "black", "plastic", "bag", "." ]
+  }, {
+    "sentence_tokens" : [ "When", "the", "caregiver", "returned", "the", "stool", "to", "the", "collection", "station", ",", "the", "field", "examiner", "collected", "two", "0.5", "mL", "specimens", "of", "stool", "and", "deposited", "them", "into", "two", "empty", "2", "mL", "tubes", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "examiner", "also", "graded", "the", "consistency", "of", "the", "stool", "sample", "according", "to", "the", "modified", "Bristol", "stool", "form", "scale", "for", "children", "(", "Supplemental", "Material", "1", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Among", "a", "random", "subset", "of", "50", "children", ",", "field", "examiners", "collected", "a", "duplicate", "rectal", "swab", "and/or", "a", "duplicate", "aliquot", "from", "the", "bulk", "stool", "sample", ",", "resulting", "in", "50", "duplicates", "of", "each", "specimen", "type", "." ]
+  }, {
+    "sentence_tokens" : [ "Both", "rectal", "swabs", "and", "bulk", "stool", "samples", "were", "immediately", "placed", "on", "ice", "and", "transported", "to", "a", "-", "20", "degrees", "C", "freezer", "by", "the", "end", "of", "the", "day", "." ]
+  }, {
+    "sentence_tokens" : [ "As", "in", "prior", "studies", "examining", "rectal", "swabs", "as", "a", "source", "of", "Giardia", "DNA", "for", "qPCR", "diagnosis", ",", "rectal", "swabs", "were", "preserved", "without", "media", ",", "as", "was", "bulk", "stool", "." ]
+  }, {
+    "sentence_tokens" : [ "DNA", "isolation", "from", "paired", "bulk", "stool", "and", "rectal", "swab", "specimens", ".." ]
+  }, {
+    "sentence_tokens" : [ "DNA", "isolation", "from", "bulk", "stool", ".." ]
+  }, {
+    "sentence_tokens" : [ "Isolation", "of", "total", "DNA", "from", "bulk", "stool", "followed", "a", "widely", "used", "standard", "operating", "procedure", "optimized", "for", "the", "qPCR", "detection", "of", "enteric", "parasites", ",", "modified", "from", "the", "MP", "Biomedicals", "FastDNA", "TM", "Spin", "Kit", "for", "soil", "extraction", "protocol", "(", "Supplemental", "Material", "2", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "All", "DNA", "isolations", "used", "the", "MP", "Biomedicals", "FastDNA", "Spin", "Kit", "and", "the", "MP", "Biomedicals", "FastPrep-24", "TM", "5G", "homogenizer", "(", "Santa", "Ana", ",", "CA", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Each", "DNA", "isolation", "was", "spiked", "with", "1", "mu", "L", "of", "pDMD801", "plasmid", "at", "a", "stock", "concentration", "of", "100", "pg/mu", "L", ",", "before", "the", "addition", "of", "a", "DNA", "binding", "matrix", "solution", "containing", "silica", "and", "ceramic", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "plasmid", ",", "synthesized", "at", "Smith", "College", ",", "served", "as", "an", "internal", "amplification", "control", "(", "IAC", ")", "following", "previously", "described", "recommendations", "." ]
+  }, {
+    "sentence_tokens" : [ "After", "isolation", ",", "DNA", "samples", "were", "stored", "at", "-", "20", "degrees", "C.", "DNA", "isolation", "from", "rectal", "swabs", ".." ]
+  }, {
+    "sentence_tokens" : [ "Isolation", "of", "total", "DNA", "from", "rectal", "swabs", "followed", "the", "protocol", "outlined", "for", "bulk", "stool", ",", "with", "the", "exception", "of", "a", "front-end", "amendment", "describing", "swab", "preparation", "and", "incubation", "preceding", "cell", "lysis", "(", "Supplemental", "Material", "2", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "To", "develop", "this", "amendment", ",", "a", "literature", "review", "was", "performed", "focusing", "on", "existing", "rectal", "swab", "DNA", "isolation", "protocols", "for", "the", "detection", "of", "enteropathogens.Before", "physical", "and", "chemical", "cell", "lyses", ",", "rectal", "swabs", "were", "removed", "from", "the", "15", "mL", "conical", "tubes", "used", "for", "transport", "and", "storage", "by", "grasping", "the", "swab", "stem", "with", "clean", "forceps", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "swab", "stem", "was", "trimmed", "above", "the", "swab", "tip", "using", "clean", "scissors", ",", "simultaneously", "transferring", "each", "tip", "to", "a", "2", "mL", "tube", "." ]
+  }, {
+    "sentence_tokens" : [ "Subsequently", ",", "1", "mL", "of", "sodium", "phosphate", "buffer", "was", "added", "to", "each", "2", "mL", "tube", "to", "serve", "as", "an", "elution", "buffer", "for", "biological", "material", "on", "the", "swab", "surface", "." ]
+  }, {
+    "sentence_tokens" : [ "Based", "on", "previously", "described", "recommendations", ",", "each", "2", "mL", "tube", "was", "then", "subjected", "to", "an", "18-hour", "incubation", "of", "gentle", "and", "continuous", "vortexing", "at", "room", "temperature", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "remainder", "of", "the", "DNA", "isolation", "protocol", "described", "for", "bulk", "stool", "was", "then", "performed", "on", "the", "1", "mL", "of", "sodium", "phosphate", "buffer", "used", "for", "sample", "elution", ",", "and", "swab", "tips", "were", "discarded", "." ]
+  }, {
+    "sentence_tokens" : [ "After", "isolation", ",", "DNA", "samples", "were", "stored", "at", "-", "20", "degrees", "C.", "Multi-parallel", "real-time", "PCR", ".." ]
+  }, {
+    "sentence_tokens" : [ "DNA", "isolations", "were", "subjected", "to", "multi-parallel", "qPCR", "for", "the", "detection", "of", "G.", "duodenalis", "and", "for", "IAC", "analysis", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "previously", "validated", "assay", "targeting", "the", "small", "subunit", "ribosomal", "RNA", "gene", "was", "used", "for", "the", "detection", "of", "G.", "duodenalis", "." ]
+  }, {
+    "sentence_tokens" : [ "Stool", "derived", "and", "swab", "derived", "DNA", "extracts", "were", "run", "on", "separate", "96-well", "plates", ",", "with", "each", "sample", "in", "duplicate", "7", "mu", "L", "reactions", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "study", "used", "TaqPath", "ProAmp", "Master", "Mix", "(", "ThermoFisher", "Scientific", ",", "Waltham", ",", "MA", ")", "and", "the", "Applied", "Biosystems", "TM", "StepOnePlus", "TM", "Real-Time", "PCR", "System", "(", "ThermoFisher", "Scientific", ",", "Waltham", ",", "MA", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Primer", "oligonucleotides", "were", "synthesized", "by", "Integrated", "DNA", "Technologies", ",", "Inc.", "(", "Coralville", ",", "IA", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Fluorescently", "labeled", "probes", "featured", "a", "5", "'", "FAM", "(", "fluorescein", ")", "fluorophore", ",", "an", "internal", "ZEN", "TM", "quencher", ",", "and", "a", "3", "'", "3IABkFQ", "quencher", "(", "Integrated", "DNA", "Technologies", ",", "Inc", ".,", "Coralville", ",", "IA", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Cycling", "conditions", "entailed", "an", "initial", "2-minute", "incubation", "at", "50", "degrees", "C", ",", "followed", "by", "a", "10-minute", "incubation", "at", "95", "degrees", "C", "and", "40", "cycles", "of", "1", ")", "a", "15-second", "denaturation", "step", "at", "95", "degrees", "C", "and", "2", ")", "a", "1-minute", "annealing", "and", "extension", "step", "at", "60", "degrees", "C", "for", "the", "G.", "duodenalis", "assay", "and", "at", "59", "degrees", "C", "for", "the", "IAC", "assay", "." ]
+  }, {
+    "sentence_tokens" : [ "PCR", "data", "interpretation", "and", "quality", "control", ".." ]
+  }, {
+    "sentence_tokens" : [ "Samples", "registering", "exponential", "amplification", "curves", "with", "quantitation", "cycle", "(", "C", ")", "values", "less", "than", "or", "equal", "to", "38", "in", "both", "duplicate", "wells", "were", "evaluated", "as", "positive", "for", "the", "respective", "target", "." ]
+  }, {
+    "sentence_tokens" : [ "Samples", "for", "which", "neither", "independent", "reaction", "showed", "amplification", "were", "deemed", "negative", ",", "and", "samples", "with", "discordant", "results", "(", "i.e", ".,", "one", "independent", "reaction", "amplified", ",", "whereas", "the", "other", "did", "not", ")", "were", "subjected", "to", "retesting", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "addition", ",", "for", "the", "IAC", "assay", "only", ",", "C", "values", "for", "experimental", "samples", "were", "averaged", "across", "the", "sample", "set", "." ]
+  }, {
+    "sentence_tokens" : [ "All", "samples", "with", "duplicate", "mean", "C", "values", "greater", "than", "two", "SDs", "above", "the", "sample", "set", "mean", "were", "assessed", "as", "suboptimal", "in", "DNA", "isolation", "quality", "." ]
+  }, {
+    "sentence_tokens" : [ "Any", "samples", "deemed", "suboptimal", "by", "the", "IAC", "assay", "were", "eliminated", "from", "the", "dataset.For", "the", "G.", "duodenalis", "assay", ",", "a", "dilution", "series", "of", "genomic", "DNA", "was", "run", "as", "a", "positive", "control", "on", "each", "qPCR", "plate", "in", "concentrations", "of", "10", "pg/mu", "L", ",", "1", "pg/mu", "L", ",", "and", "100", "fg/mu", "L.", "Each", "IAC", "assay", "plate", "featured", "a", "dilution", "series", "of", "the", "pDMD801", "IAC", "plasmid", "in", "concentrations", "of", "10", "pg/mu", "L", ",", "100", "fg/mu", "L", ",", "and", "1", "fg/mu", "L.", "Full-plate", "retesting", "was", "required", "of", "any", "qPCR", "plate", "containing", "positive", "control", "duplicates", "with", "a", "mean", "C", "value", "greater", "than", "two", "SDs", "above", "the", "mean", "for", "the", "respective", "plasmid", "concentration.No-template", "controls", "were", "run", "in", "quadruplicate", "7", "mu", "L", "reactions", "on", "every", "plate", "for", "both", "assays", "." ]
+  }, {
+    "sentence_tokens" : [ "Negative", "controls", "used", "2", "mu", "L", "of", "molecular", "biology", "grade", "water", "in", "place", "of", "2", "mu", "L", "DNA", "template", ",", "and", "amplification", "in", "any", "of", "the", "four", "wells", "elicited", "full-plate", "retesting.Technicians", "performing", "DNA", "isolations", "and", "qPCR", "data", "management", "were", "masked", "to", "all", "metadata", "associated", "with", "individual", "samples", ",", "including", "identifiers", "linking", "corresponding", "rectal", "swab", "and", "stool", "samples", "or", "specimen", "pair", "duplicates", "." ]
+  }, {
+    "sentence_tokens" : [ "During", "DNA", "isolation", ",", "salient", "rectal", "swab", "characteristics", "were", "noted", "by", "the", "technician", "in", "a", "standardized", "form", ",", "including", "the", "presence", "of", "condensation", "in", "the", "swab", "storage", "tube", "and", "visible", "feces", "on", "the", "swab", "surface", "." ]
+  }, {
+    "sentence_tokens" : [ "Statistical", "methods", ".." ]
+  }, {
+    "sentence_tokens" : [ "We", "used", "an", "unweighted", "kappa", "to", "assess", "the", "reliability", "of", "molecular", "detection", "of", "G.", "duodenalis", "across", "duplicate", "bulk", "stool", "samples", "and", "duplicate", "rectal", "swabs", "." ]
+  }, {
+    "sentence_tokens" : [ "Following", "the", "precedent", "of", "previous", "studies", "comparing", "the", "PCR", "sensitivities", "of", "multiple", "specimen", "types", "or", "same-target", "assays", ",", "we", "considered", "any", "individual", "who", "tested", "qPCR", "positive", "in", "at", "least", "one", "specimen", "replicate", "by", "bulk", "stool", "or", "by", "rectal", "swab", "to", "be", "a", "true", "positive", "." ]
+  }, {
+    "sentence_tokens" : [ "These", "true", "positives", "were", "used", "as", "the", "reference", "standard", "to", "calculate", "the", "sensitivity", "of", "each", "collection", "method", "." ]
+  }, {
+    "sentence_tokens" : [ "As", "the", "collection", "of", "human", "feces", "by", "two", "different", "methods", "would", "have", "no", "bearing", "on", "the", "species", "specificity", "of", "a", "previously", "validated", "qPCR", "assay", ",", "this", "study", "did", "not", "consider", "effects", "on", "diagnostic", "specificity", "." ]
+  }, {
+    "sentence_tokens" : [ "Given", "standard", "recommendations", "to", "collect", "multiple", "same-patient", "samples", "for", "maximized", "accuracy", "when", "diagnosing", "G.", "duodenalis", ",", "aggregate", "sensitivity", "when", "considering", "both", "duplicate", "specimens", "was", "also", "assessed.To", "evaluate", "whether", "the", "participant", "'", "s", "age", ",", "visible", "presence", "of", "stool", "on", "the", "swab", ",", "visible", "condensation", "in", "the", "swab", "storage", "tube", ",", "or", "matched", "stool", "consistency", "affected", "validity", ",", "we", "included", "these", "variables", "as", "covariates", "in", "multivariate", "logit", "models", "with", "the", "dichotomous", "result", "of", "the", "index", "test", "as", "the", "dependent", "variable", "conditional", "on", "the", "reference", "standard", "being", "positive", "(", "i.e", ".,", "sensitivity", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "evaluated", "the", "relationship", "between", "rectal", "swab", "and", "bulk", "stool", "C", "values", "in", "a", "linear", "regression", "and", "compared", "C", "values", "across", "paired", "stool", "samples", ",", "paired", "rectal", "swabs", ",", "and", "the", "first", "rectal", "swab", "with", "the", "first", "stool", "sample", "using", "paired", "t-tests", "." ]
+  }, {
+    "sentence_tokens" : [ "All", "analyses", "were", "run", "in", "R", "v3.5.2", "." ]
+  }, {
+    "sentence_tokens" : [ "All", "code", "is", "available", "on", "GitHub", "(", "San", "Francisco", ",", "CA", ")", "(", "https://github.com/jmaasch", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Ethics", "statement", ".." ]
+  }, {
+    "sentence_tokens" : [ "Ethical", "committees", "from", "the", "Niger", "Ministry", "of", "Health", "and", "the", "University", "of", "California", "(", "San", "Francisco", ",", "CA", ")", "granted", "approval", "for", "this", "study", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "obtained", "verbal", "informed", "consent", "in", "French", "from", "all", "caregivers", "." ]
+  }, {
+    "sentence_tokens" : [ "RESULTS", "." ]
+  }, {
+    "sentence_tokens" : [ "Population", "characteristics", ".." ]
+  }, {
+    "sentence_tokens" : [ "Ninety", "four", "children", "participated", "in", "the", "study", ",", "with", "86", "providing", "paired", "bulk", "stool", "and", "rectal", "swab", "samples", "." ]
+  }, {
+    "sentence_tokens" : [ "Fifty", "provided", "duplicate", "stool", "samples", ",", "and", "50", "provided", "duplicate", "rectal", "swabs", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "median", "age", "was", "2", "years", "(", "interquartile", "range", "1", "-", "4", ")", ",", "and", "58.5", "%", "(", "55/86", ")", "of", "children", "were", "female", "." ]
+  }, {
+    "sentence_tokens" : [ "DNA", "isolation", "and", "real-time", "PCR", "quality", "control", ".." ]
+  }, {
+    "sentence_tokens" : [ "All", "qPCR", "plates", "met", "the", "predefined", "quality", "control", "standards", "(", "i.e", ".,", "C", "values", "of", "plasmid", "and", "gDNA", "positive", "controls", "were", "within", "the", "defined", "acceptable", "range", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "All", "DNA", "isolations", "passed", "IAC", "quality", "control", "standards", "with", "the", "exception", "of", "two", "stool", "samples", ",", "which", "were", "excluded", "from", "further", "data", "analysis", "." ]
+  }, {
+    "sentence_tokens" : [ "Intra-method", "reliability", ".." ]
+  }, {
+    "sentence_tokens" : [ "The", "kappa", "evaluating", "test", "agreement", "was", "0.81", "(", "95", "%", "CI", ":", "0.54", "-", "1.00", ")", "among", "the", "49", "children", "with", "duplicate", "stool", "samples", "and", "0.75", "(", "95", "%", "CI", ":", "0.47", "-", "1.00", ")", "among", "the", "48", "children", "with", "duplicate", "rectal", "swabs", "(", "Supplemental", "Table", "1", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Among", "the", "31", "observations", "with", "duplicate", "positive", "bulk", "stool", "samples", ",", "the", "mean", "C", "value", "was", "27.33", "(", "SD", "=", "5.60", ")", "in", "replicate", "1", "and", "27.25", "(", "SD", "=", "5.62", ")", "in", "replicate", "2", "(", "P", "=", "0.647", ")", ",", "with", "a", "correlation", "(", "R", ")", "of", "0.966", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "rectal", "swabs", ",", "the", "mean", "C", "value", "among", "the", "22", "observations", "with", "duplicate", "values", "was", "27.54", "(", "SD", "=", "4.00", ")", "in", "replicate", "1", "and", "26.92", "(", "SD", "=", "3.44", ")", "in", "replicate", "2", "(", "P", "=", "0.243", ")", ",", "with", "a", "correlation", "(", "R", ")", "of", "0.627", "(", "Figure", "1", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "METHOD", "VALIDITY", "." ]
+  }, {
+    "sentence_tokens" : [ "Of", "84", "individuals", "tested", ",", "59", "(", "70.2", "%", ")", "registered", "positive", "for", "G.", "duodenalis", "infection", "in", "at", "least", "one", "specimen", "replicate", "by", "either", "sample", "collection", "method", "." ]
+  }, {
+    "sentence_tokens" : [ "These", "positives", "were", "classified", "as", "true", "positives", "for", "subsequent", "validity", "assessments.Giardia", "duodenalis", "was", "detected", "in", "65.5", "%", "(", "55/84", ")", "of", "bulk", "stool", "samples", "and", "44.0", "%", "(", "37/84", ")", "of", "rectal", "swab", "samples", "when", "considering", "only", "the", "first", "replicate", "(", "Table", "1", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Of", "the", "55", "samples", "positive", "for", "G.", "duodenalis", "by", "bulk", "stool", ",", "rectal", "swabs", "failed", "to", "detect", "21", "(", "38.2", "%", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Three", "participants", "registered", "positive", "for", "G.", "duodenalis", "infection", "by", "rectal", "swabs", "and", "not", "by", "bulk", "stool", "." ]
+  }, {
+    "sentence_tokens" : [ "Diagnostic", "sensitivity", "for", "the", "first", "replicate", "set", "was", "93", "%", "(", "95", "%", "CI", ":", "84", "-", "98", ")", "by", "bulk", "stool", "and", "63", "%", "(", "95", "%", "CI", ":", "49", "-", "75", ")", "by", "rectal", "swabs", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "if", "considering", "both", "specimen", "duplicates", "to", "simulate", "a", "multi-sample", "collection", "scenario", ",", "then", "bulk", "stool", "sensitivity", "was", "95", "%", "(", "95", "%", "CI", ":", "86", "-", "99", ")", ",", "whereas", "rectal", "swab", "sensitivity", "was", "68", "%", "(", "95", "%", "CI", ":", "54", "-", "79", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Correlation", "between", "paired", "stool", "and", "swab", "C", "values", "was", "low", "(", "R", "=", "0.174", ")", "(", "Figure", "1", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Binning", "positive", "bulk", "stool", "results", "by", "C", "quartile", "revealed", "differential", "rectal", "swab", "performance", "by", "matched", "stool", "C", "range", "(", "Figure", "2", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "the", "first", "quartile", "of", "bulk", "stool", "C", "values", "(", "15.95", "-", "23.51", ")", ",", "rectal", "swabs", "were", "100", "%", "sensitive", "(", "14/14", "true", "positives", "detected", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Within", "the", "second", "and", "third", "quartiles", "(", "C", "23.62", "-", "32.37", ")", ",", "rectal", "swabs", "were", "67.9", "%", "sensitive", "(", "19/28", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Conversely", ",", "for", "bulk", "stool", "positives", "with", "C", "values", "greater", "than", "32.37", "(", "i.e", ".,", "samples", "with", "the", "lowest", "detectable", "infectious", "burden", ")", ",", "rectal", "swab", "sensitivity", "was", "only", "7.7", "%", "(", "1/13", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "When", "restricting", "to", "qPCR", "positives", "with", "bulk", "stool", "C", "values", "less", "than", "or", "equal", "to", "32.37", "(", "the", "lowest", "three", "quartiles", "of", "stool", "C", ")", ",", "rectal", "swab", "sensitivity", "in", "the", "first", "replicate", "group", "increased", "significantly", "to", "78.0", "%", "(", "95", "%", "CI", ":", "64", "-", "89", ",", "P", "<", "0.0001", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Within", "the", "first", "replicate", ",", "the", "mean", "C", "value", "of", "bulk", "stool", "samples", "was", "31.79", "(", "SD", "=", "3.17", ")", "in", "the", "21", "samples", "with", "negative", "paired", "rectal", "swabs", ",", "compared", "with", "24.26", "(", "SD", "=", "4.33", ")", "in", "the", "34", "samples", "with", "positive", "paired", "rectal", "swabs", "(", "P", "<", "0.0001", ")", "(", "Figure", "3", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "notable", "mean", "C", "difference", "of", "7.53", "cycles", "is", "equivalent", "to", "an", "approximate", "184.8-fold", "difference", "in", "target", "DNA", "concentration", "detected", "by", "qPCR", ",", "as", "a", "C", "value", "increase", "of", "1", "corresponds", "to", "a", "doubling", "of", "PCR", "target", "(", "assuming", "100", "%", "efficiency", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "indicates", "that", "target", "copy", "number", "within", "the", "original", "sample", "was", ",", "on", "average", ",", "184.8", "times", "greater", "for", "bulk", "stool", "positives", "with", "positive", "paired", "rectal", "swabs", "than", "for", "those", "with", "negative", "paired", "swabs", "." ]
+  }, {
+    "sentence_tokens" : [ "Effect", "of", "covariates", "on", "rectal", "swab", "validity", ".." ]
+  }, {
+    "sentence_tokens" : [ "Controlling", "for", "the", "consistency", "of", "the", "matched", "bulk", "stool", "sample", ",", "child", "'", "s", "age", ",", "visible", "condensation", "in", "the", "swab", "storage", "tube", ",", "or", "the", "presence", "of", "visible", "feces", "on", "the", "rectal", "swab", "surface", "did", "not", "significantly", "affect", "diagnostic", "sensitivity", "(", "Supplemental", "Table", "2", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Mean", "C", "values", "were", "slightly", "lower", "for", "rectal", "swabs", "with", "visible", "stool", "(", "27.5", ")", "than", "rectal", "swabs", "without", "visible", "stool", "(", "28.5", ")", ";", "however", ",", "the", "difference", "was", "not", "statistically", "significant", "(", "P", "=", "0.54", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "DISCUSSION", "." ]
+  }, {
+    "sentence_tokens" : [ "Validity", "and", "reproducibiity", ".." ]
+  }, {
+    "sentence_tokens" : [ "Rectal", "swabs", "detected", "significantly", "fewer", "true", "positives", "than", "did", "bulk", "stool", "." ]
+  }, {
+    "sentence_tokens" : [ "Sensitivity", "was", "similar", "to", "the", "62.5", "%", "sensitivity", "observed", "in", "a", "prior", "study", "on", "the", "qPCR", "detection", "of", "G.", "duodenalis", "using", "rectal", "swab", "samples", "." ]
+  }, {
+    "sentence_tokens" : [ "Sensitivity", "gains", "from", "duplicate", "specimen", "testing", "were", "greater", "for", "rectal", "swabs", "than", "bulk", "stool", "." ]
+  }, {
+    "sentence_tokens" : [ "Additionally", ",", "the", "morphology", ",", "shedding", "patterns", ",", "or", "intestinal", "niche", "of", "G.", "duodenalis", "may", "not", "lend", "themselves", "to", "rectal", "swab", "detection", "as", "well", "as", "for", "protozoan", "parasites", ",", "such", "as", ",", "Cryptosporidium", ",", "for", "which", "rectal", "swabs", "have", "been", "reported", "to", "perform", "comparably", "to", "bulk", "stool", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "intermittent", "shedding", "of", "G.", "duodenalis", "is", "the", "basis", "for", "recommendations", "to", "collect", "fecal", "samples", "serially", "and", "ideally", "over", "three", "separate", "days", ",", "as", "well", "as", "for", "the", "parasite", "'", "s", "reputation", "as", "challenging", "to", "diagnose", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "present", "study", ",", "rectal", "swab", "sensitivity", "did", "improve", "through", "duplicate", "same-day", "sample", "collection", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "molecular", "diagnostic", "validity", "of", "rectal", "swabs", "collected", "on", "multiple", "separate", "days", "could", "be", "an", "area", "of", "further", "investigation", "." ]
+  }, {
+    "sentence_tokens" : [ "Furthermore", ",", "bead", "beating", "has", "been", "observed", "to", "significantly", "increase", "DNA", "yield", "from", "G.", "duodenalis", "in", "stool", ",", "albeit", "in", "a", "small", "sample", "size", "." ]
+  }, {
+    "sentence_tokens" : [ "Although", "the", "DNA", "isolation", "protocol", "used", "in", "the", "present", "study", "did", "include", "bead", "beating", ",", "it", "is", "possible", "that", "there", "are", "differential", "impacts", "of", "bead", "beating", "on", "swab", "samples", "versus", "bulk", "stool.Although", "bulk", "stool", "is", "often", "considered", "a", "gold", "standard", "specimen", "type", "in", "molecular", "diagnostics", ",", "four", "individuals", "deemed", "positive", "for", "G.", "duodenalis", "infection", "by", "rectal", "swabs", "were", "deemed", "negative", "in", "the", "first", "bulk", "stool", "replicate", ",", "with", "three", "different", "positive", "samples", "missed", "in", "the", "second", "stool", "replicate", "." ]
+  }, {
+    "sentence_tokens" : [ "Although", "the", "present", "study", "demonstrates", "superior", "detection", "by", "bulk", "stool", ",", "it", "may", "also", "suggest", "that", "diagnosis", "by", "stool", "is", "not", "infallible", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "finding", "may", "highlight", "the", "significance", "of", "temporal", "shedding", "patterns", ",", "heterogeneity", "of", "organism", "dispersal", "in", "a", "single", "stool", "specimen", ",", "rigorous", "laboratory", "and", "field", "practices", "(", "e.g", ".,", "stool", "sample", "homogenization", "before", "aliquoting", ")", ",", "and/or", "multiple", "sample", "collection", "for", "accurate", "molecular", "diagnosis", "of", "G.", "duodenalis.Rectal", "swab", "performance", "may", "have", "been", "impacted", "by", "additional", "aspects", "of", "the", "study", "design", ",", "including", "the", "absence", "of", "storage", "media", "." ]
+  }, {
+    "sentence_tokens" : [ "Although", "this", "is", "not", "unprecedented", "among", "similar", "studies", "on", "G.", "duodenalis", "diagnosis", ",", "the", "performance", "of", "swabs", "stored", "with", "versus", "without", "preservative", "could", "be", "interrogated", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "a", "study", "targeting", "C.", "difficile", ",", "qPCR", "detection", "by", "dry", "flocked", "swabs", "versus", "bulk", "stool", "was", "100", "%", "concordant", ",", "whereas", "flocked", "swabs", "stored", "in", "liquid", "transport", "medium", "had", "significantly", "lower", "sensitivity", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "the", "referenced", "study", "simulated", "swab", "collection", "by", "dipping", "swabs", "in", "bulk", "stool", "samples", "." ]
+  }, {
+    "sentence_tokens" : [ "Effect", "of", "covariates", "on", "rectal", "swab", "validity", ".." ]
+  }, {
+    "sentence_tokens" : [ "Clinical", "diagnostic", "guidelines", "generally", "assume", "a", "positive", "relationship", "between", "visible", "soiling", "with", "fecal", "matter", "and", "the", "diagnostic", "utility", "of", "rectal", "swabs", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "recent", "interrogations", "of", "this", "relationship", "have", "concluded", "that", "testing", "rectal", "swabs", "that", "lack", "visible", "feces", "is", "worthwhile", "for", "the", "PCR", "detection", "of", "common", "enteric", "bacteria", "and", "viruses", "." ]
+  }, {
+    "sentence_tokens" : [ "Our", "results", "further", "corroborate", "this", "conclusion", "in", "the", "context", "of", "a", "protozoan", "diagnostic", ",", "as", "we", "observed", "no", "difference", "in", "rectal", "swab", "sensitivity", "when", "controlling", "for", "visible", "feces", "." ]
+  }, {
+    "sentence_tokens" : [ "There", "was", "an", "indication", "that", "C", "values", "were", "slightly", "lower", "in", "rectal", "swabs", "with", "visible", "stool", ",", "although", "the", "difference", "was", "not", "statistically", "significant", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "we", "were", "likely", "underpowered", "to", "evaluate", "this", "effect", "with", "24", "of", "86", "rectal", "swabs", "having", "visible", "stool.Whereas", "condensation", "was", "hypothesized", "to", "encourage", "enzymatic", "activity", "in", "media-less", "storage", "tubes", ",", "and", "thus", "to", "negatively", "affect", "diagnostic", "sensitivity", ",", "we", "found", "that", "visible", "moisture", "within", "media-less", "storage", "tubes", "did", "not", "significantly", "affect", "the", "qPCR", "detection", "of", "G.", "duodenalis", "by", "rectal", "swabs", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "with", "just", "12", "of", "84", "samples", "featuring", "visible", "condensation", ",", "we", "were", "underpowered", "to", "evaluate", "the", "effect", "of", "condensation", "on", "diagnostic", "sensitivity", "." ]
+  }, {
+    "sentence_tokens" : [ "Rectal", "swab", "sensitivity", "by", "parasite", "load", ".." ]
+  }, {
+    "sentence_tokens" : [ "The", "C", "value", "of", "DNA", "derived", "from", "bulk", "stool", "may", "be", "considered", "a", "proxy", "for", "relative", "target", "DNA", "concentration", "and", ",", "thus", ",", "for", "relative", "pathogen", "load", "." ]
+  }, {
+    "sentence_tokens" : [ "By", "extension", ",", "if", "C", "values", "for", "matched", "swab", "and", "stool", "specimens", "correlate", "strongly", ",", "then", "qPCR", "results", "for", "rectal", "swab", "samples", "may", "also", "be", "used", "to", "describe", "relative", "pathogen", "loads", "." ]
+  }, {
+    "sentence_tokens" : [ "Furthermore", ",", "if", "rectal", "swabs", "perform", "differently", "depending", "on", "bulk", "stool", "C", "value", ",", "then", "this", "may", "speak", "to", "the", "utility", "of", "rectal", "swabs", "under", "different", "infection", "intensities.Mean", "C", "values", "for", "bulk", "stool", "and", "rectal", "swabs", "differed", "significantly", ",", "and", "a", "small", "proportion", "of", "variation", "in", "the", "rectal", "swab", "C", "value", "could", "be", "explained", "by", "the", "C", "value", "of", "the", "paired", "bulk", "stool", "sample", ",", "similar", "to", "a", "prior", "study", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "addition", ",", "the", "C", "values", "of", "rectal", "swab", "duplicates", "showed", "a", "less", "strong", "relationship", "than", "did", "stool", "duplicates", "." ]
+  }, {
+    "sentence_tokens" : [ "These", "findings", "suggest", "that", "it", "may", "be", "more", "challenging", "to", "draw", "conclusions", "about", "the", "relative", "pathogen", "load", "of", "G.", "duodenalis", "when", "performing", "qPCR", "on", "swab", "derived", "DNA", "versus", "stool", "derived", "DNA.The", "sensitivity", "of", "rectal", "swabs", "increased", "substantially", "when", "restricting", "by", "paired", "stool", "samples", "with", "low", "C", "values", ",", "an", "indicator", "of", "relatively", "high", "parasite", "burden", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "phenomenon", "has", "previously", "been", "observed", "for", "G.", "duodenalis", ",", "along", "with", "several", "viral", "and", "bacterial", "targets", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "weak", "performance", "of", "rectal", "swabs", "in", "lower", "pathogen", "load", "scenarios", "may", "be", "problematic", "in", "population", "based", "studies", "and", "monitoring", "programs", ",", "where", "lower", "level", "infections", "may", "go", "undetected", "while", "still", "contributing", "to", "morbidity", ",", "parasite", "transmission", ",", "and", "recrudescence", "." ]
+  }, {
+    "sentence_tokens" : [ "Conversely", ",", "this", "may", "be", "an", "advantage", "for", "studies", "interested", "in", "evaluating", "the", "morbidity", "effects", "of", "higher", "burden", "infections", "on", "growth", ",", "cognitive", "stunting", ",", "or", "other", "significant", "indicators", "in", "childhood", "development", "." ]
+  }, {
+    "sentence_tokens" : [ "Using", "rectal", "swabs", "to", "detect", "higher", "burden", "infections", "may", "also", "be", "useful", "for", "studies", "assessing", "intervention", "effects", "targeted", "at", "higher", "burden", "individuals.Whether", "the", "high-C", "true", "positives", "missed", "by", "rectal", "swabs", "represent", "subclinical", "infections", "or", "nonpathogenic", "colonization", "could", "be", "an", "area", "of", "further", "investigation", "." ]
+  }, {
+    "sentence_tokens" : [ "It", "has", "been", "suggested", "that", "this", "may", "be", "the", "case", ",", "as", "organisms", "which", "adhere", "to", "mucosae", "and", "thus", "may", "be", "pathogenic", "are", "more", "likely", "to", "be", "detected", "by", "swabs", "than", "are", "organisms", "within", "the", "intestinal", "lumen", ",", "which", "may", "be", "abundant", "in", "stool", "." ]
+  }, {
+    "sentence_tokens" : [ "CONCLUSION", "." ]
+  }, {
+    "sentence_tokens" : [ "Molecular", "diagnostics", "for", "enteric", "parasites", "like", "G.", "duodenalis", "are", "increasingly", "common", "and", "typically", "require", "bulk", "stool", "specimens", "." ]
+  }, {
+    "sentence_tokens" : [ "Relative", "to", "bulk", "stool", ",", "rectal", "swabs", "may", "offer", "greater", "ease", "of", "collection", ",", "storage", ",", "transport", ",", "and", "waste", "disposal", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "the", "significant", "loss", "of", "diagnostic", "sensitivity", "as", "documented", "in", "this", "study", "could", "lead", "to", "underestimation", "of", "G.", "duodenalis", "prevalence", "when", "using", "rectal", "swabs", "." ]
+  }, {
+    "sentence_tokens" : [ "Given", "the", "differential", "performance", "of", "swabs", "for", "higher", "versus", "lower", "level", "infections", ",", "this", "would", "be", "problematic", "in", "contexts", "where", "low-burden", "infections", "are", "common", "." ]
+  }, {
+    "sentence_tokens" : [ "Poor", "detection", "of", "lower", "level", "infections", "may", "also", "be", "detrimental", "in", "control", "and", "elimination", "scenarios", ",", "where", "undetected", "low-burden", "infections", "may", "still", "contribute", "to", "parasite", "transmission", "and", "recrudescence", "." ]
+  }, {
+    "sentence_tokens" : [ "Conversely", ",", "the", "fair", "sensitivity", "of", "rectal", "swabs", "for", "diagnosing", "higher", "level", "infections", "may", "indicate", "the", "utility", "of", "swabs", "as", "a", "frontline", "sampling", "method", "in", "contexts", "where", "high-burden", "infections", "are", "most", "relevant", ",", "particularly", "when", "bulk", "stool", "collection", "is", "logistically", "or", "financially", "infeasible", "." ]
+  } ]
+}

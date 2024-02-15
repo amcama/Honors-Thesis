@@ -1,1 +1,378 @@
-[ ]
+{
+  "regulations" : [ ],
+  "hardInstances" : [ ],
+  "withoutRegulations" : [ {
+    "sentence_tokens" : [ "Instead", ",", "LUCCK", "classifies", "test", "data", "by", "comparing", "it", "to", "all", "training", "data", ",", "properly", "weighted", "according", "to", "their", "distance", "to", "x,", "which", "is", "determined", "by", "a", "similarity", "function", "." ],
+    "entities_indices" : [ [ 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "Learning", "Using", "Concave", "and", "Convex", "Kernels", ":", "Applications", "in", "Predicting", "Quality", "of", "Sleep", "and", "Level", "of", "Fatigue", "in", "Fibromyalgia", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 12, 13 ], [ 16, 17 ], [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "section", ",", "x", "in", "Rn", "is", "a", "real", "valued", "vector", "of", "features", "such", "that", "x", "=(", "x1", ",", "..." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "consider", "the", "effect", "of", "reweighting", "the", "probabilities", "p k", "(", "x)", ",", "by", "p k", "'", "(", "x)", "=", "omega", "ip ", "(", "x)", "sum", "i", "=", "1d", "omega", "ip i", "(", "x)", "." ],
+    "entities_indices" : [ [ 13, 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "Consequently", ",", "in", "this", "study", ",", "binary", "classification", "of", "extreme", "cases", "of", "fatigue", "and", "poor", "sleep", "is", "investigated", "." ],
+    "entities_indices" : [ [ 12, 13 ], [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "Fibromyalgia", "is", "medical", "condition", "characterized", "by", "widespread", "muscle", "pain", "and", "tenderness", "that", "is", "typically", "accompanied", "by", "a", "constellation", "of", "other", "symptoms", ",", "including", "fatigue", "and", "poor", "sleep", "[", "1,2,3,4,5,6,7,8,9", "]", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 7, 8, 9 ], [ 23, 24 ], [ 26, 27 ] ]
+  }, {
+    "sentence_tokens" : [ "If", "we", "sum", "over", "all", "x", "in", "C", "and", "ensure", "that", "the", "result", "is", "non", "negative", "we", "obtain", "(", "6", ")", "alpha", "i", "=", "max0", ",", "sum", "k", "=", "1d", "sum", "x", "in", "CkRi", "(", "x,", "Ck", "\\", "{", "x}", ")", "mk-1-Ri", "(", "x,", "C", "\\", "{", "x}", ")", "m-1.The", "theta", "1", ",", "..." ],
+    "entities_indices" : [ [ 33, 34 ], [ 36, 37 ] ]
+  }, {
+    "sentence_tokens" : [ ",", "p d", "'", "(", "x)", "}-p k", "'", "(", "x)", "=", "sum", "k", "=", "1d", "sum", "x", "in", "Ckmax", "{", "omega", "1p 1", "(", "x)", ",", "..." ],
+    "entities_indices" : [ [ 17, 18, 19, 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ ",", "z", "(", "m", ")", "under", "the", "constraints", "that", "z", "(", "j", ")", ">=", "omega", "kp ", "(", "x(", "j", ")", ")", "and", "omega", "k", ">=", "1", "for", "all", "k", "and", "j", "with", "1", "<=", "k", "<=", "d", "and", "1", "<=", "j", "<=", "m.", "5", "." ],
+    "entities_indices" : [ [ 9, 10, 11, 12, 13, 14, 15, 16 ], [ 22, 23, 24, 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "These", "data", "are", "labeled", "by", "self", "reported", "quality", "of", "sleep", "(", "1", "to", "10", ",", "1", "being", "the", "worst", ")", "and", "level", "of", "fatigue", "(", "from", "1", "to", "10", ",", "10", "indicating", "the", "highest", "level", "of", "fatigue", ")", "." ],
+    "entities_indices" : [ [ 9, 10 ], [ 23, 24 ], [ 36, 37 ] ]
+  }, {
+    "sentence_tokens" : [ "Psychopathologic", "features", "within", "an", "ADABoost", "classifier", "have", "also", "been", "employed", "for", "classification", "of", "patients", "with", "fibromyalgia", "and", "arthritis", "[", "28", "]", "." ],
+    "entities_indices" : [ [ 15, 16 ], [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "another", "recent", "work", "[", "29", "]", ",", "secondary", "analysis", "of", "gene", "expression", "data", "from", "28", "patients", "with", "fibromyalgia", "and", "19", "healthy", "controls", "was", "used", "to", "distinguish", "between", "these", "two", "groups.In", "this", "study", "our", "immediate", "interest", "is", "to", "predict", "extreme", "cases", "of", "fatigue", "and", "poor", "sleep", "in", "people", "with", "fibromyalgia", "." ],
+    "entities_indices" : [ [ 11, 12, 13 ], [ 18, 19 ], [ 42, 43 ], [ 45, 46 ], [ 49, 50 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "contrast", ",", "polysomnography", "is", "considered", "the", "gold", "standard", "of", "objective", "sleep", "measurement", ";", "however", ",", "it", "is", "expensive", ",", "difficult", "to", "administer", ",", "especially", "on", "a", "large", "scale", ",", "and", "may", "lack", "ecological", "validity", "." ],
+    "entities_indices" : [ [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "vector", "x", "is", "classified", "in", "class", "Ck", ",", "where", "k", "is", "chosen", "such", "that", "R", "(", "x,", "Ck", ")", "is", "maximal", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "UCI", "Machine", "Learning", "Repository", "." ],
+    "entities_indices" : [ [ 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "Previously", ",", "using", "data", "from", "26", "individuals", "(", "14", "individuals", "with", "fibromyalgia", "and", "12", "healthy", "controls", ")", ",", "the", "relative", "performance", "of", "machine", "learning", "methods", "for", "classification", "of", "individuals", "with", "and", "without", "pain", "using", "neuroimaging", "and", "self", "reported", "data", "have", "been", "compared", "[", "24", "]", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 23, 24 ], [ 32, 33 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "value", "measures", "how", "well", "the", "i-th", "feature", "can", "classify", "x", "as", "lying", "in", "Ck", "as", "opposed", "to", "some", "other", "class", "." ],
+    "entities_indices" : [ [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "disparity", "is", "likely", "due", "to", "the", "different", "feature", "spaces", "for", "the", "sleep", "and", "fatigue", "outcomes", "." ],
+    "entities_indices" : [ [ 12, 13 ], [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "Section", "4", "provides", "a", "detailed", "description", "of", "our", "novel", "Learning", "Using", "Concave", "and", "Convex", "Kernels", "(", "LUCCK", ")", "machine", "learning", "method", "." ],
+    "entities_indices" : [ [ 9, 10 ], [ 16, 17 ], [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ ",", "p", "(", "x(", "m", ")", ")", "the", "algorithm", "can", "be", "modified", "so", "that", "it", "yields", "the", "output", "W", "omega", "(", "p", "(", "x(", "1", ")", ")", ")", ",", "..." ],
+    "entities_indices" : [ [ 17, 18, 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ ",", "omega", "dp d", "(", "x)", "}-omega", "kp k", "(", "x)", "=", "sum", "x", "in", "Cmax", "{", "omega", "1p 1", "(", "x)", ",", "..." ],
+    "entities_indices" : [ [ 13, 14, 15, 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "Results", "with", "Conventional", "Machine", "Learning", "Methods", "." ],
+    "entities_indices" : [ [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "similarity", "function", "is", "a", "function", "Q", ":", "Rn", "-->", "R", "that", "measures", "the", "closeness", "of", "x", "to", "the", "origin", ",", "and", "satisfies", "the", "following", "properties", ":", "Q", "(", "x)", ">", "0", "for", "all", "x", "in", "Rn", ";", "Q", "(", "x)", "=", "Q", "(-x)", "for", "all", "x", "in", "Rn", ";", "Q", "(", "lambda", "x)", ">", "Q", "(", "x)", "if", "x", "in", "Rn", "is", "non", "zero", "and", "|", "lambda", "|", "<", "1.The", "value", "Q", "(", "x-y", ")", "measures", "the", "closeness", "between", "the", "vectors", "x", "and", "y.", "Using", "the", "similarity", "function", "Q", "(", "x)", ",", "a", "classification", "algorithm", "can", "be", "created", "as", "follows", ":", "The", "set", "of", "training", "data", "C", "is", "a", "subset", "of", "Rn", "and", "is", "a", "disjoint", "union", "of", "d", "classes", ":", "C", "=", "C1", "union", "C2", "union", "..." ],
+    "entities_indices" : [ [ 8, 9 ], [ 36, 37 ], [ 48, 49 ], [ 61, 62 ], [ 112, 113 ], [ 124, 125 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "study", "we", "primarily", "focused", "on", "prediction", "of", "the", "extreme", "cases", "of", "fatigue", "and", "poor", "sleep", "." ],
+    "entities_indices" : [ [ 13, 14 ], [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "fix", "a", "parameter", "Theta", "that", "will", "be", "the", "average", "value", "of", "theta", "1", ",", "..." ],
+    "entities_indices" : [ [ 12, 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "level", "of", "fatigue", ",", "the", "neural", "network", "was", "the", "best", "performing", "model", "." ],
+    "entities_indices" : [ [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ ",", "xn", ")", ",", "and", "xi", "is", "a", "real", "valued", "(", "scalar", ")", "feature", "." ],
+    "entities_indices" : [ [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ ",", "xn", ")", "in", "Rn", "and", "Qi", "(", "xi", ")", "only", "depends", "on", "the", "i-th", "feature", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "Fibromyalgia", "is", "a", "medical", "condition", "characterized", "by", "widespread", "muscle", "pain", "and", "tenderness", "and", "is", "often", "accompanied", "by", "fatigue", "and", "alteration", "in", "sleep", ",", "mood", ",", "and", "memory", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 8, 9, 10 ], [ 17, 18 ], [ 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "Using", "the", "extracted", "feature", "set", ",", "machine", "learning", "algorithms", "are", "applied", "and", "tested", "using", "10-fold", "cross", "validation", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "As", "such", ",", "LUCCK", "was", "able", "to", "vastly", "outperform", "other", "models", "on", "the", "fatigue", "outcome", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "data", "used", "for", "this", "study", "was", "collected", "from", "patients", "with", "fibromyalgia", "and", "consisted", "of", "blood", "volume", "pulse", "(", "BVP", ")", ",", "3-axis", "accelerometer", ",", "temperature", ",", "and", "electrodermal", "activity", "(", "EDA", ")", ",", "recorded", "by", "an", "Empatica", "E4", "wristband", "over", "the", "courses", "of", "several", "days", ",", "as", "well", "as", "a", "self", "reported", "survey", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 31, 32 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "function", "Qi", "(", "xi", ")", "is", "again", "a", "similarity", "function", "satisfying", "the", "properties", "Qi", "(-xi", ")", "=", "Qi", "(", "xi", ")", ">", "0", "for", "all", "x", "in", "R", ",", "and", "Q", "(", "x)", ">", "Q", "(", "y", ")", "whenever", "|x|", "<", "|", "y", "|", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 14, 15 ], [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "another", "study", "[", "24", "]", ",", "self", "reported", "scores", "were", "found", "to", "be", "reliable", "only", "for", "extreme", "cases", "of", "pain", "and", "fatigue", "." ],
+    "entities_indices" : [ [ 20, 21 ], [ 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "As", "shown", "in", "this", "table", ",", "the", "AdaBoost", "method", "based", "on", "random", "forest", "yielded", "the", "best", "results", "for", "quality", "of", "sleep", "(", "based", "on", "area", "under", "the", "receiver", "operating", "characteristic", "curve", ",", "or", "AUROC", ")", "." ],
+    "entities_indices" : [ [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "One", "major", "difference", "between", "LUCCK", "and", "weighted", "k-nearest", "neighbors", "is", "that", "our", "approach", "is", "based", "on", "a", "similarity", "function", "that", "can", "be", "highly", "non", "convex", "." ],
+    "entities_indices" : [ [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "signal", "is", "then", "shifted", "so", "this", "period", "of", "inactivity", "is", "at", "the", "beginning", ",", "and", "the", "BVP", "signal", "is", "also", "shifted", "to", "ensure", "the", "timestamps", "remain", "aligned", "." ],
+    "entities_indices" : [ [ 17, 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "another", "study", "using", "MRI", "images", "of", "59", "subjects", ",", "support", "vector", "machine", "(", "SVM", ")", "and", "decision", "tree", "models", "were", "used", "to", "first", "distinguish", "healthy", "control", "patients", "from", "those", "with", "fibromyalgia", "or", "chronic", "fatigue", "syndrome", ",", "and", "then", "differentiate", "fibromyalgia", "from", "chronic", "fatigue", "syndrome", "[", "25", "]", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 31, 32 ], [ 33, 34, 35, 36 ], [ 40, 41 ], [ 42, 43, 44, 45 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "value", "of", "log", "(", "Qi", "(", "xi", ")", ")", "=-theta", "ilog", "(", "1+", "lambda", "ix2", ")", "is", "the", "most", "sensitive", "to", "changes", "in", "x", "when", "d", "d", "xlog", "(", "1+", "lambda", "ix2", ")", "=", "2", "lambda", "ix1+", "lambda", "ix2", "is", "maximal", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 10, 11, 12, 13, 14, 15, 16 ], [ 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "general", ",", "the", "feature", "space", "for", "fatigue", "is", "significantly", "more", "dispersed", ",", "due", "to", "there", "being", "more", "samples", "(", "during", "daytime", ")", "and", "also", "that", "daytime", "activity", "negatively", "affects", "the", "signal", "quality", ",", "increasing", "dispersion", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "each", "patient", "and", "day", ",", "the", "awake", "data", "is", "paired", "with", "the", "following", "night", "'", "s", "data", "and", "ensuing", "morning", "'", "s", "self", "assessed", "level", "of", "fatigue", "and", "quality", "of", "sleep.Our", "approach", "to", "preprocessing", "BVP", "signals", "consists", "of", "a", "bandpass", "filter", "(", "to", "remove", "both", "the", "low-frequency", "components", "and", "the", "high-frequency", "noise", ")", ",", "a", "wavelet", "filter", "(", "to", "help", "reduce", "motion", "artifacts", "while", "maintaining", "the", "underlying", "rhythm", ")", ",", "and", "Epsilon", "Tube", "filtering", "." ],
+    "entities_indices" : [ [ 27, 28 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "value", "p k", "(", "x)", "is", "an", "estimate", "for", "the", "probability", "that", "x", "lies", "in", "the", "class", "Ck", ",", "based", "on", "all", "feature", "vectors", "in", "C", "except", "x", "itself", "." ],
+    "entities_indices" : [ [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ ",x(", "m", ")", "}", "subset/equal", "Rn", ",", "where", "x(", "j", ")", "=(", "x1", "(", "j", ")", ",", "..." ],
+    "entities_indices" : [ [ 5, 6 ], [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "One", "could", "choose", "Qi", "(", "xi", ")", "=", "e-gamma", "ix2", ",", "so", "that", "Q", "(", "x)", "=", "e-(", "gamma", "1x12+", "...+", "gamma", "nxn2", ")", "is", "a", "Gaussian", "kernel", "function", "(", "up", "to", "a", "scalar", ")", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 16, 17, 18, 19, 20, 21, 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "Recall", "that", "in", "the", "Learning", "Using", "Concave", "and", "Convex", "Kernels", "algorithm", ",", "test", "data", "is", "classified", "by", "comparing", "it", "to", "all", "training", "data", ",", "properly", "weighted", "according", "to", "information", "extracted", "from", "each", "of", "the", "features", "(", "see", "Section", "4", "for", "further", "details", ")", "." ],
+    "entities_indices" : [ [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "When", "feature", "selection", "is", "performed", "using", "Weka", "'", "s", "information", "gain", "algorithm", "[", "31", "]", "on", "the", "first", "four", "subjects", ",", "the", "only", "feature", "ranked", "consistently", "near", "the", "top", "is", "the", "average", "of", "the", "BVP", "signal", "after", "being", "run", "through", "a", "mid", "band", "bandpass", "filter", "." ],
+    "entities_indices" : [ [ 34, 35 ] ]
+  }, {
+    "sentence_tokens" : [ "While", "easy", "to", "administer", ",", "self", "reported", "measures", "of", "sleep", "demonstrate", "limited", "reliability", "and", "validity", "in", "terms", "of", "their", "correspondence", "with", "objective", "measures", "of", "sleep", "." ],
+    "entities_indices" : [ [ 9, 10 ], [ 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "function", "Qi", "(", "xi", ")", "can", "behave", "similarly", "to", "the", "Cauchy", "distribution", "." ],
+    "entities_indices" : [ [ 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "addition", "to", "these", "recordings", ",", "each", "subject", "self", "reported", "his", "or", "her", "wake", "and", "sleep", "times", ",", "as", "well", "as", "self", "assessed", "his", "or", "her", "level", "of", "fatigue", "and", "quality", "of", "sleep", "every", "morning", "." ],
+    "entities_indices" : [ [ 28, 29 ], [ 32, 33 ] ]
+  }, {
+    "sentence_tokens" : [ "Values", "for", "the", "parameters", "lambda", "1", ",", "lambda", "2", ",", "..." ],
+    "entities_indices" : [ [ 3, 4, 5, 6 ], [ 7, 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "Thus", ",", "if", "x", "is", "a", "test", "vector", "in", "class", "Ck", ",", "there", "may", "not", "be", "a", "training", "vector", "y", "in", "Ck", "for", "which", "Q", "(", "x-y", ")", "is", "not", "small.Consequently", ",", "let", "(", "4", ")", "Qi", "(", "xi", ")", "=(", "1+", "lambda", "ix2", ")-theta", "i", ",", "for", "some", "parameters", "lambda", "i", ",", "theta", "i", ">", "0", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 21, 22 ], [ 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46 ] ]
+  }, {
+    "sentence_tokens" : [ "Methods", "based", "on", "convex", "notions", "of", "similarity", "or", "distance", "(", "such", "as", "the", "Mahalanobis", "distance", ")", "are", "unable", "to", "deal", "adequately", "with", "such", "errors.Suppose", "that", "the", "feature", "space", "is", "comprised", "of", "real", "valued", "vectors", "x", "in", "Rn", "." ],
+    "entities_indices" : [ [ 36, 37 ] ]
+  }, {
+    "sentence_tokens" : [ "Poor", "sleep", "quality", "and", "fatigue", ",", "as", "prominent", "characteristics", "of", "fibromyalgia", ",", "have", "a", "direct", "impact", "on", "patient", "behavior", "and", "quality", "of", "life", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "way", ",", "binary", "classifications", "are", "possible", "(", ">", "8", "vs.", "<8_for_fatigue_and_>", "4", "vs.", "<", "4", "for", "sleep", ")", "." ],
+    "entities_indices" : [ [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "data", "used", "for", "this", "study", "was", "collected", "from", "a", "group", "of", "20", "adults", "with", "fibromyalgia", "and", "consists", "primarily", "of", "a", "set", "of", "signals", "recorded", "by", "an", "Empatica", "E4", "wristband", "over", "the", "course", "of", "seven", "days", "(", "removing", "1", "h/day", "for", "charging", "and", "download", ")", "." ],
+    "entities_indices" : [ [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "schematic", "diagram", "of", "Figure", "1", "represents", "our", "approach", "to", "analyzing", "the", "BVP", "and", "accelerometer", "signals", "in", "the", "fibromyalgia", "dataset", "." ],
+    "entities_indices" : [ [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "Wearable", "devices", "such", "as", "the", "Empatica", "E4", "are", "able", "to", "directly", ",", "continuously", ",", "and", "unobtrusively", "measure", "autonomic", "functioning", "such", "as", "EDA", "and", "HRV", "[", "19,20,21,22", "]", "." ],
+    "entities_indices" : [ [ 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "If", "we", "use", "only", "the", "i-th", "feature", ",", "then", "we", "define", "Ri", "(", "x,", "Y", ")", "=", "sum", "y", "in", "Y", "(", "1+", "lambda", "i", "(", "xi-yi", ")", "2", ")-Theta", "for", "any", "set", "Y", "of", "feature", "vectors", "." ],
+    "entities_indices" : [ [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "[", "26", "]", ",", "an", "SVM", "trained", "on", "fMRI", "images", "was", "used", "to", "distinguish", "fibromyalgia", "patients", "from", "healthy", "controls", "." ],
+    "entities_indices" : [ [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "other", "signals", "(", "temperature", "and", "EDA", ")", "were", "left", "unfiltered", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "As", "such", ",", "the", "values", ">", "8", "are", "chosen", "for", "extreme", "cases", "of", "fatigue", ",", "and", "the", "values", "<", "4", "are", "chosen", "for", "extreme", "cases", "of", "poor", "sleep", "quality", "." ],
+    "entities_indices" : [ [ 13, 14 ], [ 27, 28 ] ]
+  }, {
+    "sentence_tokens" : [ "As", "a", "result", ",", "any", "intervention", "that", "can", "improve", "sleep", "quality", "may", "enhance", "daytime", "functionality", "and", "reduce", "fatigue", "in", "people", "with", "fibromyalgia.Studies", "of", "sleep", "in", "fibromyalgia", "often", "rely", "on", "self", "reported", "measures", "of", "sleep", "or", "polysomnography", "." ],
+    "entities_indices" : [ [ 17, 18 ], [ 23, 24 ], [ 25, 26 ], [ 33, 34 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "order", "to", "least", "perturb", "the", "true", "BVP", "signal", ",", "we", "chose", "the", "Daubechies", "mother", "wavelet", "of", "order", "2", "(", "'", "db2", "'", ")", "as", "it", "closely", "resembles", "the", "periodic", "shape", "of", "the", "BVP", "signal", "." ],
+    "entities_indices" : [ [ 33, 34, 35 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "section", ",", "the", "performance", "of", "LUCCK", "is", "first", "compared", "with", "other", "common", "machine", "learning", "methods", "using", "four", "conventional", "datasets", ",", "after", "which", "its", "performance", "on", "the", "fibromyalgia", "dataset", "is", "evaluated", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 28, 29 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "results", "of", "using", "these", "machine", "learning", "approaches", "for", "prediction", "of", "extreme", "sleep", "quality", "(", "cutoff", "of", "4", ")", "and", "fatigue", "level", "(", "cutoff", "of", "8)", "are", "presented", "in", "Table", "5", "." ],
+    "entities_indices" : [ [ 12, 13 ], [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "As", "detailed", "in", "Section", "5", ",", "in", "addition", "to", "testing", "a", "number", "of", "conventional", "machine", "learning", "methods", ",", "we", "tested", "a", "novel", "supervised", "machine", "learning", "called", "Learning", "Using", "Concave", "and", "Convex", "Kernels", "(", "LUCCK", ")", "." ],
+    "entities_indices" : [ [ 24, 25 ], [ 26, 27 ], [ 33, 34 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "contrast", ",", "signals", "(", "and", "their", "associated", "features", ")", "recorded", "during", "sleep", "are", "of", "better", "quality", "." ],
+    "entities_indices" : [ [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "These", "are", "extracted", "from", "both", "the", "awake", "and", "the", "sleep", "signals", ",", "resulting", "in", "a", "full", "feature", "set", "consisting", "of", "182", "features", "." ],
+    "entities_indices" : [ [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "Experiments", "on", "this", "dataset", "demonstrate", "that", "the", "proposed", "machine", "learning", "method", "outperforms", "conventional", "machine", "learning", "approaches", "in", "detecting", "extreme", "cases", "of", "poor", "sleep", "and", "fatigue", "in", "people", "with", "fibromyalgia", "." ],
+    "entities_indices" : [ [ 9, 10 ], [ 22, 23 ], [ 24, 25 ], [ 28, 29 ] ]
+  }, {
+    "sentence_tokens" : [ "An", "instructive", "model", "for", "comparison", "to", "the", "Learning", "Using", "Concave", "and", "Convex", "Kernels", "method", "is", "the", "k-nearest", "neighbors", "algorithm", "[", "33,34,35", "]", "and", "weighted", "k-nearest", "neighbors", "algorithm", "[", "36", "]", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "Epsilon", "Tube", "filter", "is", "formulated", "as", "a", "constrained", "optimization", "problem", "that", "can", "be", "expressed", "as", "(", "1", ")", "min", "sum", "t", "=", "0N-1", "zeta", "t+", "sum", "t", "=", "0N-1", "zeta", "t", "'-cR", "(", "s", ",", "A", ",", "w", ")", ";", "subject", "to", "bt-yt", "(", "A", ",", "w", ")", "<=", "epsilon+", "zeta", "tt", "=0", ",...,", "N-1", ";", "yt", "(", "A", ",", "w", ")-bt", "<=", "epsilon+", "zeta", "t", "'", "t", "=0", ",...,", "N-1", ";", "zeta", "t", ">=", "0", ",", "zeta", "t", "'", ">=", "0t", "=0", ",...,", "N-1", ";", "where", "N", "is", "the", "length", "of", "BVP", "signal", ",", "zeta", "t", "and", "zeta", "t", "'", "are", "slack", "variables", ",", "R", "(", "s", ",", "A", ",", "w", ")", "is", "the", "regularization", "term", "and", "c", "is", "a", "designated", "parameter", "that", "adjusts", "the", "trade-off", "between", "the", "two", "objectives", "." ],
+    "entities_indices" : [ [ 24, 25 ], [ 30, 31 ], [ 51, 52 ], [ 65, 66 ], [ 73, 74 ], [ 78, 79 ], [ 96, 97 ], [ 99, 100 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "addition", ",", "we", "identified", "a", "set", "of", "mathematical", "features", "that", "are", "important", "in", "extracting", "patterns", "from", "physiological", "signals", "that", "can", "distinguish", "poor", "and", "good", "clinical", "outcomes", "for", "applications", "such", "as", "fibromyalgia", "." ],
+    "entities_indices" : [ [ 31, 32 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "most", "likely", "reason", "for", "this", "failure", "of", "the", "linear", "regression", "model", "is", "the", "nature", "of", "self", "reported", "scores", ",", "especially", "those", "related", "to", "patient", "assessment", "of", "their", "level", "of", "pain", "." ],
+    "entities_indices" : [ [ 30, 31 ] ]
+  }, {
+    "sentence_tokens" : [ "Let", "m", "=|", "C", "|", "be", "the", "cardinality", "of", "C", "and", "define", "mk", "=|", "Ck", "|", "for", "all", "k", "so", "that", "m", "=", "m1+", "...+", "md", "." ],
+    "entities_indices" : [ [ 14, 15 ], [ 21, 22, 23, 24, 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "function", "has", "a", "\"", "fat", "tail", "``", ":", "as", "x", "-->", "infinity", "the", "rate", "that", "Qi", "(", "xi", ")", "goes", "to", "0", "is", "much", "slower", "than", "the", "rate", "at", "which", "e-gamma", "ix2", "goes", "to", "0", "." ],
+    "entities_indices" : [ [ 16, 17 ], [ 31, 32, 33 ] ]
+  }, {
+    "sentence_tokens" : [ "Results", "with", "Our", "Machine", "Learning", "Method", ":", "Machine", "Learning", "Using", "Concave", "and", "Convex", "Kernels", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ ",", "lambda", "n", "and", "theta", "1", ",", "theta", "2", ",", "..." ],
+    "entities_indices" : [ [ 1, 2, 3 ], [ 4, 5, 6 ], [ 7, 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "results", "of", "applying", "our", "method", "to", "fibromyalgia", "are", "presented", "in", "Table", "5", ",", "with", "cutoff", "values", "of", "4", "and", "8", "for", "quality", "of", "sleep", "and", "level", "of", "fatigue", ",", "respectively", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 24, 25 ], [ 28, 29 ] ]
+  }, {
+    "sentence_tokens" : [ "As", "such", ",", "the", "detection", "of", "extreme", "cases", "of", "sleep", "quality", "and", "fatigue", "level", "is", "a", "prerequisite", "for", "any", "intervention", "that", "can", "improve", "sleep", "quality", "and", "reduce", "fatigue", "level", "for", "people", "with", "fibromyalgia", "and", "enhance", "their", "daytime", "functionality", "." ],
+    "entities_indices" : [ [ 9, 10 ], [ 12, 13 ], [ 27, 28 ], [ 32, 33 ] ]
+  }, {
+    "sentence_tokens" : [ "Additionally", ",", "we", "showed", "that", "our", "proposed", "machine", "learning", "method", "outperformed", "the", "standard", "methods", "in", "predicting", "the", "outcomes", "such", "as", "fatigue", "and", "sleep", "quality", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "final", "step", "in", "the", "analysis", "pipeline", "is", "the", "creation", "of", "a", "model", "that", "can", "be", "used", "to", "predict", "the", "extreme", "cases", "of", "quality", "of", "sleep", "or", "level", "of", "fatigue", "for", "people", "with", "fibromyalgia", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 25, 26 ], [ 29, 30 ], [ 33, 34 ] ]
+  }, {
+    "sentence_tokens" : [ "If", "p", "is", "a", "probability", "vector", ",", "then", "we", "can", "reweight", "it", "to", "a", "vector", "W", "omega", "(", "p", ")", "=(", "p1", "'", ",", "..." ],
+    "entities_indices" : [ [ 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "Fibromyalgia", "Dataset", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "Let", "lambda", "i", "=", "Lambda", "si2", "where", "Lambda", "is", "some", "fixed", "parameter.Next", "we", "choose", "the", "parameters", "theta", "1", ",", "..." ],
+    "entities_indices" : [ [ 5, 6 ], [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "method", "uses", "the", "synchronized", "accelerometer", "data", "to", "estimate", "the", "motion", "artifact", "of", "BVP", "signal", "while", "leaving", "the", "periodic", "component", "intact", "." ],
+    "entities_indices" : [ [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "literature", ",", "there", "are", "few", "studies", "in", "which", "machine", "learning", "methods", "are", "used", "for", "classification", "or", "prediction", "of", "conditions", "related", "to", "fibromyalgia", ",", "none", "of", "which", "use", "physiological", "signals", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "x", "in", "the", "class", "Ck", ",", "1mi-1Ri", "(", "x,", "Ck", "\\", "{", "x}", ")", "gives", "the", "average", "value", "of", "(", "1+", "lambda", "i", "(", "xi-yi", ")", "2", ")-Theta", "over", "y", "in", "Ck", "\\", "{", "x}", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 10, 11 ], [ 32, 33 ] ]
+  }, {
+    "sentence_tokens" : [ ",", "mk", "refers", "to", "mk", "<", "m", "samples", "in", "class", "Ck", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "omega", "d", ">=", "1", "." ],
+    "entities_indices" : [ [ 1, 2, 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "ANS", "activity", "can", "be", "assessed", "unobtrusively", "through", "ambulatory", "measures", "of", "heart", "rate", "variability", "(", "HRV", ")", "and", "electrodermal", "activity", "(", "EDA", ")", "[", "17,18", "]", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "believe", "this", "analytical", "framework", "can", "be", "readily", "extended", "to", "outpatient", "monitoring", "of", "daytime", "activity", ",", "with", "applications", "to", "assessing", "extreme", "levels", "of", "fatigue", "and", "pain", ",", "such", "as", "those", "experienced", "by", "patients", "undergoing", "chemotherapy", "." ],
+    "entities_indices" : [ [ 23, 24 ], [ 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "Poor", "sleep", ",", "which", "is", "a", "cardinal", "characteristic", "of", "fibromyalgia", ",", "is", "strongly", "related", "to", "greater", "pain", "and", "fatigue", ",", "and", "lower", "quality", "of", "life", "[", "10,11,12,13,14,15,16", "]", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 9, 10 ], [ 16, 17 ], [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ ",", "sn", ")", ",", "where", "si", "=", "std", "(", "xi", "(", "1", ")", ",", "xi", "(", "2", ")", ",", "..." ],
+    "entities_indices" : [ [ 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "leads", "to", "the", "better", "prediction", "result", "for", "sleep", "in", "all", "methods", "used", "." ],
+    "entities_indices" : [ [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "LUCCK", "method", "allows", "for", "large", "deviations", "in", "a", "few", "of", "the", "features", "with", "only", "a", "moderate", "penalty", "." ],
+    "entities_indices" : [ [ 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "signals", "used", "in", "this", "analysis", "are", "each", "patient", "'", "s", "blood", "volume", "pulse", "(", "BVP", ")", ",", "3-axis", "accelerometer", ",", "temperature", ",", "and", "EDA", "." ],
+    "entities_indices" : [ [ 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "such", "an", "analysis", ",", "we", "use", "self", "reported", "quality", "of", "sleep", "and", "fatigue", "severity", ",", "continuously", "collected", "data", "from", "the", "Empatica", "E4", ",", "to", "measure", "autonomic", "nervous", "system", "activity", "during", "sleep", "(", "Section", "2", ")", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 13, 14 ], [ 31, 32 ] ]
+  }, {
+    "sentence_tokens" : [ "If", "x", "lies", "in", "the", "class", "Ck", ",", "then", "the", "quantity", "max", "{", "p 1", "'", "(", "x)", ",", "..." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "Since", "the", "value", "lambda", "i", "directly", "controls", "the", "wideness", "of", "Qi", "(", "xi", ")", "'", "s", "tail", ",", "it", "is", "reasonable", "to", "choose", "a", "value", "for", "lambda", "i-12", "that", "is", "close", "to", "the", "standard", "deviation", "of", "the", "i-th", "feature", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "combination", "of", "fMRI", "with", "multivariate", "pattern", "analysis", "has", "also", "been", "investigated", "in", "classifying", "fibromyalgia", "patients", ",", "rheumatoid", "arthritis", "patients", "and", "healthy", "controls", "[", "27", "]", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 14, 15 ], [ 17, 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "Utilizing", "this", "filter", "on", "a", "number", "of", "test", "cases", "showed", "that", "the", "threshold", "values", "produced", "consistently", "useful", "results", "regardless", "of", "the", "input", ",", "meaning", "tailored", "interactions", "are", "not", "required", "for", "each", "signal.The", "accelerometer", "data", "was", "upsampled", "from", "32", "Hz", "to", "64", "Hz", "via", "spline", "interpolation", "to", "match", "the", "sampling", "frequency", "of", "the", "BVP", "signal", "." ],
+    "entities_indices" : [ [ 52, 53, 54 ] ]
+  }, {
+    "sentence_tokens" : [ "Additionally", ",", "similar", "to", "k-NN", "and", "its", "weighted", "version", "(", "and", "unlike", "SVM", "and", "neural", "network", "models", ")", ",", "LUCKK", "can", "be", "trained", "even", "with", "few", "samples", ",", "which", "is", "one", "advantage", "of", "the", "proposed", "algorithm", "." ],
+    "entities_indices" : [ [ 12, 13 ], [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "quantity", "1mk-1Ri", "(", "x,", "Ck", "\\", "{", "x}", ")-1m-1Ri", "(", "x,", "C", "\\", "{", "x}", ")", "measures", "how", "much", "closer", "xi", "is", "to", "samples", "in", "the", "class", "Ck", "than", "to", "vectors", "in", "the", "set", "C", "of", "all", "feature", "vectors", "except", "x", "itself", "." ],
+    "entities_indices" : [ [ 1, 2, 3 ], [ 5, 6 ], [ 28, 29 ] ]
+  }, {
+    "sentence_tokens" : [ "Of", "a", "possible", "140", "nights", "of", "sleep", "data", ",", "the", "sample", "had", "data", "for", "119", "(", "85", "%", ")", "nights", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "To", "determine", "how", "well", "a", "training", "vector", "x", "in", "C", "can", "be", "classified", "using", "the", "remaining", "training", "vectors", "in", "C", "\\", "{", "x}", ",", "we", "define", "p k", "(", "x)", "=", "R", "(", "x,", "Ck", "\\", "{", "x}", ")", "R", "(", "x,", "C", "\\", "{", "x}", ")", "." ],
+    "entities_indices" : [ [ 32, 33, 34, 35, 36, 37, 38, 39 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "model", ",", "along", "with", "other", "conventional", "machine", "learning", "methods", ",", "were", "trained", "on", "the", "extracted", "features", "and", "used", "to", "predict", "extreme", "cases", "of", "poor", "sleep", "and", "fatigue", ",", "with", "our", "method", "yielding", "the", "best", "results", "(", "Section", "5", ")", "." ],
+    "entities_indices" : [ [ 25, 26 ], [ 27, 28 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "set", "of", "experiments", ",", "LUCCK", "in", "compared", "to", "some", "well-known", "classification", "methods", "on", "a", "number", "of", "datasets", "downloaded", "from", "the", "University", "of", "California", ",", "Irvine", "(", "UCI", ")", "Machine", "Learning", "Repository", "[", "38", "]", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 31, 32 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "recent", "survey", "paper", "[", "23", "]", "summarizes", "various", "types", "of", "machine", "learning", "methods", "that", "have", "been", "used", "in", "pain", "research", ",", "including", "fibromyalgia", "." ],
+    "entities_indices" : [ [ 12, 13 ], [ 19, 20 ], [ 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "5.2.1", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "union", "Cd", "." ],
+    "entities_indices" : [ [ 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "Generally", ",", "our", "proposed", "framework", "(", "preprocessing", ",", "mathematical", "features", ",", "and", "proposed", "machine", "learning", "method", ")", "can", "be", "employed", "in", "any", "study", "that", "involves", "prediction", "using", "BVP", ",", "HRV", "and", "EDA", "signals.The", "epsilon", "tube", "filter", "is", "covered", "by", "US", "Patent", "10,034,638", ",", "for", "which", "Kayvan", "Najarian", "is", "a", "named", "inventor", "." ],
+    "entities_indices" : [ [ 14, 15 ], [ 31, 32 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "study", ",", "we", "propose", "a", "new", "supervised", "machine", "learning", "method", "called", "Learning", "Using", "Concave", "and", "Convex", "Kernels", "(", "LUCCK", ")", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 13, 14 ], [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "Machine", "Learning", ":", "Learning", "Using", "Concave", "and", "Convex", "Kernels", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "study", ",", "we", "have", "created", "a", "model", "that", "can", "be", "used", "to", "predict", "the", "quality", "of", "sleep", "or", "level", "of", "fatigue", "for", "people", "with", "fibromyalgia", "." ],
+    "entities_indices" : [ [ 18, 19 ], [ 22, 23 ], [ 26, 27 ] ]
+  }, {
+    "sentence_tokens" : [ "Once", "the", "BVP", "and", "accelerometer", "signals", "are", "fully", "processed", ",", "they", "along", "with", "the", "EDA", "and", "temperature", "signals", "can", "then", "be", "analyzed", "and", "features", "can", "be", "extracted", ",", "which", "in", "turn", "leads", "to", "the", "application", "of", "machine", "learning", "." ],
+    "entities_indices" : [ [ 14, 15 ], [ 37, 38 ] ]
+  }, {
+    "sentence_tokens" : [ "Autonomic", "nervous", "system", "(", "ANS", ")", "imbalance", "during", "sleep", "has", "been", "implicated", "as", "a", "mechanism", "underlying", "unrefreshed", "sleep", "in", "fibromyalgia", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 17, 18 ], [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ ",", "pd", "'", ")", "where", "pl", "'", "=", "omega", "lpl", "sum", "k", "=", "1d", "omega", "kpk.If", "the", "output", "of", "the", "algorithm", "consists", "of", "the", "probability", "vectors", "p", "(", "x(", "1", ")", ")", ",", "..." ],
+    "entities_indices" : [ [ 1, 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "previous", "studies", "[", "39,40", "]", ",", "proponents", "of", "neural", "''", "biomarkers", "``", "argued", "that", "self", "reported", "scores", "are", "unreliable", ",", "making", "objective", "markers", "of", "pain", "imperative", "." ],
+    "entities_indices" : [ [ 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "Taking", "both", "the", "BVP", "and", "accelerometer", "signals", "as", "input", ",", "the", "method", "assumes", "periodicity", "in", "the", "BVP", "signal", "and", "looks", "for", "a", "period", "of", "inactivity", "at", "the", "beginning", "of", "the", "data", "to", "use", "as", "a", "template", "for", "the", "rest", "of", "the", "signal", "." ],
+    "entities_indices" : [ [ 38, 39 ] ]
+  }, {
+    "sentence_tokens" : [ "As", "discussed", "in", "[", "30", "]", ",", "since", "the", "BVP", "signal", "(", "and", "generally", "any", "impedance-plethysmography-based", "measurements", ")", "is", "very", "susceptible", "to", "motion", "artifact", ",", "reduction", "of", "this", "noise", "is", "a", "crucial", "part", "of", "the", "filtering", "process", "." ],
+    "entities_indices" : [ [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "As", "this", "is", "a", "highly", "nonlinear", "problem", ",", "making", "optimization", "difficult", ",", "we", "instead", "minimize", "sum", "k", "=", "1d", "sum", "x", "in", "Ckmax", "{", "omega", "1p 1", "(", "x)", ",", "..." ],
+    "entities_indices" : [ [ 22, 23, 24, 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "As", "can", "be", "seen", ",", "LUCCK", "was", "able", "to", "vastly", "outperform", "other", "models", "on", "the", "fatigue", "outcome", ";", "however", ",", "the", "improvement", "on", "sleep", "outcome", "was", "not", "significant", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 15, 16 ], [ 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "LUCCK", "method", "does", "this", "by", "employing", "similarity", "functions", "(", "defined", "below", ")", "to", "capture", "and", "quantify", "a", "model", "for", "each", "of", "the", "features", "separately", "." ],
+    "entities_indices" : [ [ 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "Our", "proposed", "LUCCK", "algorithm", "can", "ameliorate", "the", "nature", "of", "the", "fatigue", "feature", "space", ",", "as", "it", "is", "specifically", "designed", "to", "reduce", "the", "effect", "of", "training", "data", "for", "which", "there", "is", "a", "large", "deviation", "from", "test", "data", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 10, 11 ] ]
+  } ],
+  "emptySentences" : [ ]
+}

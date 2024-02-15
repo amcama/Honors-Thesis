@@ -1,1 +1,222 @@
-[ ]
+{
+  "regulations" : [ ],
+  "hardInstances" : [ ],
+  "withoutRegulations" : [ {
+    "sentence_tokens" : [ "Figure", "2", "shows", "the", "comparisons", "for", "molecular", "weight", ",", "calculated", "logD", ",", "TPSA", "and", "rotatable", "bonds", ";", "the", "distributions", "for", "the", "other", "properties", "are", "provided", "in", "Additional", "file", "1", ":", "Figure", "S4.The", "calculated", "logD", "values", "in", "the", "ChEMBL", "dataset", "show", "Gram", "positive", "and", "Gram", "negative", "active", "compounds", "having", "overlapping", "clogD", "ranges", ",", "with", "the", "Gram-positives", "having", "the", "higher", "mean", "and", "a", "slightly", "smaller", "standard", "deviation", "(", "3.1", "+/-", "2.5", "vs.", "2.0", "+/-", "3.4", ",", "respectively", ")", "." ],
+    "entities_indices" : [ [ 40, 41 ], [ 43, 44 ] ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "it", "is", "likely", "that", "most", "BA", "compounds", "without", "an", "antibacterial", "data", "record", "do", "not", "possess", "antibacterial", "activity", "and", "so", "we", "include", "these", "compounds", "in", "a", "putative", "(", "\"", "BAAI", "\"", ")", "set", "(", "see", "\"", "Methods", "\"", "for", "full", "definitions", ")", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "clogD", "range", "for", "Gram", "negative", "organisms", "was", "slightly", "negative", "(", "range", "between", "-", "1.5", "and", "0", ")", ";", "however", ",", "the", "median", "cLogD", "values", "reported", "for", "seven", "specified", "Gram", "negative", "phenotypic", "screens", "(", "[", "4", "]", ",", "Table", "2", ")", "were", "between", "1.7", "and", "3", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 29, 30 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "DNA-gyrase", "review", "[", "10", "]", "includes", "several", "examples", "of", "improving", "Gram", "positive", "activity", "with", "increasing", "lipophilicity", ",", "with", "several", "programs", "finding", "optimal", "logD", "in", "the", "0", "-", "3", "range", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "greater", "diversity", "of", "the", "AA", "set", "(", "when", "compared", "to", "MAD", ")", "may", "allow", "a", "more", "general", "and", "widely", "applicable", "conclusion", "to", "be", "reached.The", "distributions", "for", "nine", "physicochemical", "and", "related", "properties", "that", "describe", "the", "size", ",", "polarity", ",", "charge", "and", "flexibility", "of", "the", "subsets", "have", "been", "calculated", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "When", "hits", "are", "found", ",", "there", "is", "a", "high", "attrition", "rate", "in", "optimizing", "them", "to", "compounds", "with", "good", "levels", "of", "antibacterial", "activity", ",", "even", "when", "potent", "enzyme", "inhibitors", "are", "obtained.One", "commonly", "cited", "rationalization", "of", "the", "failure", "of", "antibacterial", "drug", "discovery", "projects", "is", "lack", "of", "penetration", "to", "the", "site", "of", "action", "of", "the", "drugs", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 37, 38, 39 ] ]
+  }, {
+    "sentence_tokens" : [ "As", "a", "measure", "of", "diversity", "we", "calculated", "the", "pairwise", "Tanimoto", "similarity", ",", "using", "ECFP", "fingerprints", ",", "of", "the", "AA", ",", "MAD", "and", "MOD", "sets", "(", "see", "Additional", "file", "1", ":", "Figure", "S1", ")", "." ],
+    "entities_indices" : [ [ 18, 19 ], [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "degree", "to", "which", "the", "AZ", "profiles", "reflect", "the", "particular", "set", "of", "targets", "that", "they", "have", "investigated", "historically", "is", "difficult", "to", "assess", "but", "it", "probably", "has", "some", "influence", "." ],
+    "entities_indices" : [ [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "compounds", "tested", "in", "AA", "and", "BA", ",", "an", "active", "is", "defined", "as", ":", "Activecj", ":", "=", "exists", "i", ":", "mij", "=", "A", "^", "not-exists", "i", "'", ":", "mi", "'", "j", "=", "IFor", "compounds", "tested", "in", "AA", "and", "BA", ",", "an", "inactive", "is", "defined", "as", ":", "Inactivecj", ":", "=", "exists", "i", ":", "mij", "=", "I", "^", "not-exists", "i", "'", ":", "mi", "'", "j", "!=", "IThe", "set", "of", "compounds", "which", "are", "both", "active", "in", "AA", "and", "BA", "is", "defined", "as", ":", "AABA", ":", "=x", ":x", "in", "AA", "^", "Activex", "intersection", "y", ":", "y", "in", "BA", "^", "ActiveyThe", "set", "of", "compounds", "which", "are", "active", "in", "BA", "and", "inactive", "in", "AA", ",", "was", "originally", "defined", "as", ":", "AABI", ":", "=x", ":x", "in", "AA", "^", "Inactivex", "intersection", "y", ":", "y", "in", "BA", "^", "ActiveyHowever", "this", "returned", "very", "few", "compounds", ",", "so", "we", "relaxed", "this", "to", "the", "following", "definition", ":", "AABI", ":", "=x", ":x", "not-in", "AA", "^", "x", "in", "BA", "^", "ActivexThese", "rules", "give", "us", "the", "active", "and", "inactive", "compound", "sets", "for", "AA", "and", "BA", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 6, 7 ], [ 36, 37 ], [ 38, 39 ], [ 73, 74 ], [ 75, 76 ], [ 80, 81 ], [ 85, 86 ], [ 93, 94 ], [ 103, 104 ], [ 107, 108 ], [ 114, 115 ], [ 116, 117 ], [ 119, 120 ], [ 127, 128 ], [ 145, 146 ], [ 150, 151 ], [ 154, 155 ], [ 167, 168 ], [ 169, 170 ] ]
+  }, {
+    "sentence_tokens" : [ "Each", "matrix", "is", "labelled", "m", "and", "is", "defined", "as", ":", "Activity", "=", "A", ",", "SA", ",", "Imij", ":", ":", "N", "x", "N", "-->", "ActivityAdditional", "file", "1", ":", "Table", "S6", "describes", "the", "parameter", "filters", "used", "to", "define", "compounds", "which", "have", "been", "approved", "as", "drugs", "into", "two", "distinct", "subsets", ";", "antibacterials", "(", "labelled", "MAD", ")", "and", "non", "antibacterials", "(", "labelled", "MOD", ")", "." ],
+    "entities_indices" : [ [ 14, 15 ], [ 51, 52 ], [ 58, 59 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "example", ",", "a", "review", "of", "industry", "DNA-gyrase", "and", "Topoisomerase", "IV", "programs", "over", "many", "decades", "[", "10", "]", "points", "to", "multiple", "occasions", "were", "the", "focus", "of", "optimization", "of", "the", "inhibitors", "was", "on", "increasing", "solubility", "to", "aid", "intravenous", "administration", "." ],
+    "entities_indices" : [ [ 6, 7, 8 ], [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "While", "some", "antibacterial", "classes", "have", "targets", "in", "the", "bacterial", "cytoplasm", ",", "others", "target", "the", "bacterial", "cell", "wall", ",", "in", "principle", "making", "access", "easier.We", "have", "compared", "the", "physicochemical", "profiles", "of", "a", "variety", "of", "beta-lactam", "containing", "chemotypes", ",", "as", "cell-wall", "targeted", "agents", ",", "with", "fluoroquinolones", "and", "oxazolidinones", "as", "representatives", "of", "compounds", "hitting", "cytoplasmic", "targets", "." ],
+    "entities_indices" : [ [ 32, 33 ] ]
+  }, {
+    "sentence_tokens" : [ "An", "element", "of", "caution", "is", "needed", "in", "any", "broad", "cheminformatics", "study", "of", "this", "type", ",", "for", "example", "a", "proportion", "of", "the", "literature", "antibacterials", "could", "be", "achieving", "their", "effects", "by", "non", "specific", "mechanisms", "such", "as", "membrane", "disruption", "and", "thus", "skewing", "the", "true", "distributions", ";", "however", ",", "given", "the", "size", "and", "diversity", "of", "the", "ChEMBL", "dataset", ",", "our", "cheminfomatics", "analysis", "demonstrates", "that", "the", "MAD", "physicochemical", "property", "profile", "is", "not", "a", "requirement", "and", "that", "\"", "drug", "like", "\"", "physicochemical", "properties", "are", "compatible", "with", "antibacterial", "activity.However", ",", "physicochemical", "properties", "in", "the", "optimal", "ranges", "are", "no", "guarantee", "of", "antibacterial", "activity", "." ],
+    "entities_indices" : [ [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "These", "two", "sets", ",", "BAAA", "and", "BAAI", ",", "are", "not", "significantly", "different", "in", "their", "physical", "property", "profiles.Another", "possibility", "that", "we", "investigated", "is", "whether", "there", "is", "an", "historical", "bias", "in", "the", "data", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "5", "The", "authors", "also", "report", "several", "specific", "examples", "of", "Gram", "negative", "active", "compounds", "discovered", "by", "phenotypic", "screens", "with", "measured", "logD", "values", "between", "1.4", "and", "4.3", "." ],
+    "entities_indices" : [ [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "Active", "compounds", "(", "AA", "and", "BA", ")", "have", "a", "slightly", "higher", "molecular", "mass", "distribution", "than", "inactive", "ones", "(", "AI", "and", "BI", ")", ",", "in", "keeping", "with", "the", "generally", "observed", "trend", "that", "adding", "molecular", "weight", "is", "associated", "with", "higher", "target", "affinity", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 5, 6 ], [ 12, 13 ], [ 18, 19 ], [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "Thus", "the", "logD", "ranges", "observed", "in", "the", "AZ", "examples", "are", "rather", "similar", "to", "the", "range", "of", "the", "ChEMBL", "AA", "compounds", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "averages", "in", "both", "cases", "are", "more", "lipophilic", "than", "those", "obtained", "by", "O", "'", "Shea", "and", "Moser", ",", "with", "the", "ChEMBL", "analysis", "being", "closer", "to", "the", "MOD", "distribution", "." ],
+    "entities_indices" : [ [ 26, 27 ] ]
+  }, {
+    "sentence_tokens" : [ "Indeed", ",", "in", "the", "original", "Rule-of-5", "publication", "[", "5", "]", "it", "was", "noted", "that", "antibacterial", "compounds", "were", "exceptions", "." ],
+    "entities_indices" : [ [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "each", "compound", "set", "Morgan", "(", "ECFP", "like", ")", "fingerprints", "of", "length", "2048", "bits", "with", "diameter", "4", "were", "calculated", ",", "using", "RDKit", "(", "release", "2014_09_2", ")", "." ],
+    "entities_indices" : [ [ 6, 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "As", "the", "second", "step", ",", "where", "molecules", "have", "multiple", "components", ",", "salts", "are", "removed", "using", "a", "list", "of", "known", "salts", "." ],
+    "entities_indices" : [ [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "outer", "membrane", "of", "Gram", "negative", "organisms", "presents", "an", "additional", "barrier", "to", "penetration", ",", "and", "there", "are", "many", "examples", "of", "compounds", "which", "are", "antibacterial", "against", "Gram", "positive", "organisms", "but", "which", "are", "ineffective", "against", "Gram", "negative", "ones", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 25, 26 ], [ 33, 34 ] ]
+  }, {
+    "sentence_tokens" : [ "the", "third", "compound", "in", "Fig.", "3", "may", "be", "represented", "as", ":c3", "=", "A", ",", "A", ",", "SA", ",", "A", ",", "SA", ",-,-We", "define", "activity", "of", "molecules", "over", "two", "cases", "-", "the", "antibacterial", "assays", "(", "denoted", "AA", ")", "and", "the", "biochemical", "assays", "(", "denoted", "BA", ")", "." ],
+    "entities_indices" : [ [ 16, 17 ], [ 20, 21 ], [ 35, 36 ], [ 43, 44 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "collection", "as", "a", "whole", "was", "rather", "similar", "to", "the", "MOD", "profile", "presented", "here", ",", "but", "there", "was", "a", "lower", "proportion", "of", "neutral", "compounds", "in", "their", "Gram", "positive", "antibacterial", "actives", "and", "a", "much", "lower", "proportion", "in", "the", "Gram", "negative", "actives", "." ],
+    "entities_indices" : [ [ 26, 27 ], [ 37, 38 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "cell", "envelopes", "of", "Gram", "positive", "and", "Gram", "negative", "bacteria", "are", "very", "different", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "Following", "a", "detailed", "analysis", "of", "over", "50", "years", "of", "research", "and", "development", "directed", "against", "bacterial", "DNA", "gyrase/Topoisomerase", "IV", "[", "10", "]", "the", "authors", "conclude", "\"", "At", "present", ",", "however", ",", "beyond", "imperfect", "correlations", "of", "logD", "and", "ionic", "charge", "with", "antibacterial", "potency", "in", "Gram", "positive", "bacteria", ",", "there", "is", "disappointingly", "little", "further", "quantifiable", "and", "generalizable", "understanding", "of", "those", "specific", "factors", "that", "facilitate", "(", "or", "hinder", ")", "intracellular", "drug", "accumulation", "." ],
+    "entities_indices" : [ [ 14, 15, 16, 17, 18 ], [ 42, 43 ] ]
+  }, {
+    "sentence_tokens" : [ "If", "there", "are", "still", "multiple", "components", "remaining", "after", "salt", "stripping", ",", "the", "largest", "component", "is", "retained", "." ],
+    "entities_indices" : [ [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "Analysis", "of", "ChEMBL", "antibacterial", "activity", "data", "." ],
+    "entities_indices" : [ [ 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "These", "were", "then", "clustered", "using", "the", "SUBSET", "program", "[", "17", "]", "with", "a", "similarity", "threshold", "of", "0.65", "." ],
+    "entities_indices" : [ [ 6, 7, 8, 9, 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "Only", "75", "%", "of", "marketed", "antibacterials", "have", "molecular", "weight", "below", "500", "Da", ",", "whereas", "for", "marketed", "drugs", "the", "figure", "is", "86.7", "%", "for", "ChEMBL", "antibacterial", "actives", "82.4", "%", "and", "ChEMBL", "biochemical", "actives", "90.3", "%", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "continued", "development", "of", "antibiotic", "resistance", "in", "bacteria", "responsible", "for", "common", "infections", "is", "of", "growing", "worldwide", "concern", "." ],
+    "entities_indices" : [ [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "categorization", "is", "not", "straightforward", "because", "of", "the", "large", "variety", "of", "activity", "units", "and", "the", "fact", "that", "these", "data", "are", "assembled", "from", "a", "great", "many", "individual", "sources", ",", "leading", "inevitably", "to", "a", "degree", "of", "uncertainty", "regarding", "experimental", "protocols", "and", "differences", "in", "the", "reported", "units", "(", "for", "example", ",", "mu", "g/ml", "or", "mu", "M", ")", "." ],
+    "entities_indices" : [ [ 48, 49, 50 ] ]
+  }, {
+    "sentence_tokens" : [ "Average", "molecular", "weight", "is", "higher", "for", "the", "AA", "than", "the", "BA", "class", ",", "but", "not", "greatly", "so", "(", "385", "vs.", "358", "Daltons", ")", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "Recently", "reported", "antibacterial", "pyrazolopyrimidinedione", "inhibitors", "of", "tRNA", "synthetases", "also", "have", "physicochemical", "properties", "in", "the", "typical", "drug", "like", "ranges", "[", "11", "]", "." ],
+    "entities_indices" : [ [ 6, 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "other", "polarity", "related", "properties", "tell", "a", "consistent", "story", ",", "with", "hydrogen-bond", "donor", ",", "hydrogen", "bond", "acceptor", "and", "TPSA", "distributions", "being", "similar", "across", "antibacterial", ",", "biochemical", "and", "marketed", "other", "drugs", "categories", "." ],
+    "entities_indices" : [ [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "AA", "set", "has", "a", "lower", "peak", "(", "0.375", ")", "and", "very", "few", "highly", "similar", "pairs", "." ],
+    "entities_indices" : [ [ 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "combination", "with", "the", "MAD", "and", "MOD", "sets", ",", "this", "provides", "six", "sets", "in", "total.Each", "of", "these", "six", "sets", "is", "clustered", "to", "avoid", "having", "similar", "molecules", "in", "the", "set", ",", "and", "to", "avoid", "chemotype", "bias", "[", "16", "]", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 6, 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "Astra", "Zeneca", "(", "AZ", ")", "[", "4", "]", "reported", "that", "HTS", "compounds", "active", "against", "Gram", "positive", "species", "had", "average", "clogD", "values", "that", "were", "slightly", "positive", "(", "range", "approximately", "0.5", "-", "1.5", ")", "and", "thus", "higher", "than", "the", "Moser", "and", "O", "'", "Shea", "value", "of", "-", "0.2", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 10, 11 ], [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "Additionally", ",", "next", "generation", "sequencing", "is", "providing", "new", "insights", "into", "the", "mechanisms", "of", "compound", "uptake", "that", "take", "a", "step", "towards", "the", "ability", "for", "rational", "design", "of", "antibacterial", "activity", "[", "14", "]", "." ],
+    "entities_indices" : [ [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "It", "is", "possible", "that", "since", "the", "publication", "of", "the", "Rule-of-5", "(", "1997", ")", ",", "medicinal", "chemists", "working", "on", "antibacterial", "drug", "discovery", "projects", "shifted", "the", "physicochemical", "properties", "of", "the", "compounds", "they", "made", "from", "\"", "antibacterial", "space", "\"", "to", "\"", "druglike", "space", "\"", "in", "order", "to", "comply", "." ],
+    "entities_indices" : [ [ 9, 10 ], [ 18, 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "Calculated", "LogD", ",", "calculated", "LogP", ",", "numbers", "of", "hydrogen", "bond", "donor", "and", "acceptors", "and", "TPSA", "distributions", "express", "aspects", "of", "compound", "polarity", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 4, 5 ], [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "\"", "Many", "compounds", "have", "better", "MICs", "against", "efflux", "pump", "mutant", "strains", "than", "against", "the", "wild", "type", "organism", "." ],
+    "entities_indices" : [ [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "final", "step", ",", "the", "ionization", "state", "of", "the", "compounds", "is", "set", "to", "the", "most", "prevalent", "form", "at", "pH", "7.4", ",", "based", "upon", "a", "set", "of", "substructure", "rules", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "results", "from", "the", "ChEMBL", "analysis", "are", "mirrored", "in", "the", "reports", "of", "the", "antibacterial", "drug", "discovery", "experience", "of", "pharmaceutical", "companies", "." ],
+    "entities_indices" : [ [ 13, 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "AZ", "analyzed", "the", "charge", "category", "of", "their", "antibacterial", "project", "actives", "relative", "to", "a", "representative", "sample", "of", "their", "internal", "compound", "collection", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "analysis", "was", "carried", "out", "using", "the", "PostgreSQL", "version", "of", "ChEMBL", "V20", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "Although", "the", "median", "values", "are", "not", "greatly", "different", ",", "the", "means", "show", "greater", "divergence", ",", "because", "of", "the", "large", "number", "of", "high", "molecular", "weight", "antibacterials", "(", "427", "vs.", "345", "Da", ")", "." ],
+    "entities_indices" : [ [ 29, 30 ] ]
+  }, {
+    "sentence_tokens" : [ "Gram", "positive", "and", "Gram", "negative", "active", "compound", "profiles", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "Briefly", ",", "these", "are", ":", "antibacterial", "actives", "(", "AA", ")", ",", "compounds", "active", "in", "at", "least", "one", "antibacterial", "assay", ";", "antibacterial", "inactives", "(", "AI", ")", ",", "compounds", "with", "only", "inactive", "antibacterial", "assay", "records", ";", "biochemical", "actives", "(", "BA", ")", ",", "compounds", "active", "against", "at", "least", "one", "bacterial", "target", "protein", ";", "Biochemical", "Inactives", "(", "BI", ")", ",", "compounds", "with", "only", "inactive", "biochemical", "assay", "records", ";", "Compounds", "with", "both", "biochemical", "and", "antibacterial", "activity", "(", "BAAA", ")", ";", "Compounds", "active", "in", "biochemical", "assays", "but", "no", "reported", "antibacterial", "activity", "(", "BAAI", ")", ";", "marketed", "antibacterial", "drugs", "(", "MAD", ")", ";", "Marketed", "other", ",", "non", "anticbacterial", ",", "drugs", "(", "MOD", ")", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 23, 24 ], [ 37, 38 ], [ 53, 54 ], [ 93, 94 ] ]
+  }, {
+    "sentence_tokens" : [ "Perhaps", "surprisingly", ",", "given", "the", "common", "perception", "that", "antibacterials", "tend", "to", "be", "highly", "polar", ",", "the", "distribution", "for", "these", "properties", "for", "the", "AA", "set", "largely", "fall", "within", "the", "classical", "Rule-of-5", "regions", "." ],
+    "entities_indices" : [ [ 22, 23 ], [ 29, 30 ] ]
+  }, {
+    "sentence_tokens" : [ "Compounds", "with", "low", "efflux", "(", "assessed", "from", "the", "ratio", "of", "MIC", "against", "wild", "type", "and", "efflux", "mutant", ")", "tend", "to", "be", "small", "and", "polar", "or", "large", "and", "zwitterionic", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "Again", "marketed", "antibacterials", "are", "quite", "different", ":", "The", "percentage", "of", "compounds", "with", "TPSA", "less", "than", "120", "A", "for", "the", "AA", ",", "BA", "and", "MOD", "sets", "is", "81.1", ",", "75.8", "and", "84.4", "respectively", ",", "but", "only", "52.6", "%", "for", "marketed", "antibacterials.Thus", ",", "in", "agreement", "with", "the", "previous", "analyses", ",", "the", "marketed", "antibacterial", "drugs", "do", "have", "a", "more", "polar", "distribution", ",", "with", "a", "lower", "median", "calculated", "logP", ",", "elevated", "donor", "and", "acceptor", "counts", "and", "higher", "TPSA", "(", "compare", "the", "MAD", "and", "MOD", "rows", "of", "Table", "2", ")", "." ],
+    "entities_indices" : [ [ 19, 20 ], [ 21, 22 ], [ 77, 78 ], [ 79, 80, 81, 82, 83, 84 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "cheminformatics", "analysis", "represents", "another", "step", "towards", "an", "improved", "understanding", "and", "lays", "a", "foundation", "for", "further", "work", "." ],
+    "entities_indices" : [ [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "Indeed", ",", "the", "O", "'", "Shea", "and", "Moser", "analysis", "indicated", "very", "different", "profiles", "for", "Gram", "positive", "and", "Gram", "negative", "antibacterials.However", ",", "the", "ChEMBL", "analysis", "does", "not", "support", "this", "conclusion", "." ],
+    "entities_indices" : [ [ 14, 15 ], [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "addition", ",", "the", "recent", "reports", "from", "Pharma", "companies", "of", "their", "antibacterial", "discovery", "efforts", "allow", "comparison", "with", "compounds", "arising", "from", "a", "pharmaceutical", "company", "compound", "collection.Here", "we", "report", "our", "cheminformatics", "analysis", "of", "the", "small", "molecule", "antibacterial", "data", "available", "in", "ChEMBL", "." ],
+    "entities_indices" : [ [ 38, 39 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "have", "compounds", "that", "are", "active", "in", "both", "AA", "and", "BA", "(", "labelled", "AABA", ")", "and", "compounds", "which", "are", "active", "in", "BA", ",", "but", "have", "no", "activity", "recorded", "in", "AA", "(", "labelled", "BAAI", ")", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 10, 11 ], [ 13, 14 ], [ 21, 22 ], [ 29, 30 ], [ 32, 33 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "the", "Gram", "positive", "phenotypic", "HTS", "campaign", "discussed", "in", "detail", "the", "average", "clogD", "was", "3.6", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "There", "is", "a", "growing", "understanding", "of", "the", "structural", "biology", "of", "the", "porins", "through", "which", "some", "drugs", "gain", "access", "to", "bacteria", "and", "of", "the", "relationship", "between", "porin", "structure", "and", "antibiotic", "transport", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 25, 26 ], [ 29, 30 ] ]
+  }, {
+    "sentence_tokens" : [ "Large", "scale", "reviews", "of", "the", "antibacterial", "research", "at", "the", "pharmaceutical", "companies", "GSK", "[", "3", "]", ",", "and", ",", "more", "recently", ",", "Astra", "Zeneca", "[", "4", "]", ",", "have", "highlighted", "the", "challenges", "involved", "." ],
+    "entities_indices" : [ [ 21, 22, 23, 24, 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "physicochemical", "properties", "of", "compounds", "with", "a", "recorded", "activity", "in", "an", "antibacterial", "assay", "were", "calculated", "and", "compared", "to", "two", "other", "datasets", "extracted", "from", "ChEMBL", ",", "marketed", "antibacterials", "and", "drugs", "marketed", "for", "other", "therapeutic", "indications", "." ],
+    "entities_indices" : [ [ 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "physical", "property", "distributions", "are", "dominated", "by", "the", "relatively", "few", "chemotypes", "of", "the", "antibacterial", "drug", "classes", "that", "have", "made", "it", "to", "market", ",", "but", "that", "does", "not", "imply", "that", "high", "polarity", "is", "a", "necessary", "property", "of", "antibacterial", "compounds", "per", "se", "." ],
+    "entities_indices" : [ [ 13, 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "They", "found", "that", "antibacterial", "drugs", "occupy", "a", "remarkably", "different", "physicochemical", "property", "space", "--", "to", "take", "just", "two", "example", "properties", ",", "the", "mean", "molecular", "weight", "of", "the", "CMC", "data", "set", "was", "338", ",", "whereas", "for", "Gram", "positive", "compounds", "it", "was", "813", "and", "for", "Gram-negatives", "414", ";", "mean", "calculated", "logD", "(", "7.4", ")", "was", "1.6", "for", "the", "CMC", "set", ",", "but", "-", "0.2", "for", "Gram-positives", "and", "-", "2.8", "for", "Gram-negatives", "." ],
+    "entities_indices" : [ [ 34, 35 ], [ 55, 56, 57 ] ]
+  }, {
+    "sentence_tokens" : [ "It", "is", "estimated", "that", "in", "the", "countries", "of", "the", "European", "Union", "plus", "Iceland", "and", "Norway", "there", "were", "25,000", "deaths", "due", "to", "multi-drug", "resistant", "Staphylococcus", "aureus", ",", "Enterococcus", "spp", ".,", "Escherichia", "coli", ",", "Klebsiella", "spp", ".,", "Enterobacter", "spp.", "or", "Pseudomonas", "aeruginosa", "in", "2007", "[", "1", "]", "." ],
+    "entities_indices" : [ [ 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37 ] ]
+  }, {
+    "sentence_tokens" : [ "Antibacterial", "drug", "discovery", "projects", "often", "succeed", "in", "identifying", "potent", "molecules", "in", "biochemical", "assays", "but", "have", "been", "beset", "by", "difficulties", "in", "obtaining", "antibacterial", "activity", "." ],
+    "entities_indices" : [ [ 0, 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "They", "note", ",", "for", "example", ",", "that", "the", "large", "number", "of", "acidic", "compounds", "in", "their", "Gram", "negative", "organism", "screens", "primarily", "belong", "to", "the", "beta-lactam", "class.The", "AZ", "analysis", "of", "the", "results", "obtained", "with", "efflux", "mutants", "is", "particularly", "interesting", "." ],
+    "entities_indices" : [ [ 15, 16 ], [ 23, 24 ], [ 25, 26 ], [ 32, 33, 34 ] ]
+  }, {
+    "sentence_tokens" : [ "Antibacterial", "classes", "with", "cytosolic", "target", "sites", "are", "also", "known", "to", "use", "active", "transport", "mechanisms", "to", "gain", "access", "to", "the", "cell", "(", "aminoglycosides", "and", "erythromycins", "are", "examples", ")", "and", "Trojan", "Horse", "inhibitors", "such", "as", "microcin", "C", "also", "use", "bacterial", "transporters", "to", "gain", "access", "to", "the", "cell", ",", "a", "mechanism", "that", "can", "also", "be", "exploited", "by", "some", ",", "but", "not", "all", ",", "synthetic", "analogues", "[", "12", ",", "13", "]", "." ],
+    "entities_indices" : [ [ 12, 13 ], [ 23, 24 ], [ 33, 34, 35 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "detailed", "definition", "of", "activity", "is", "provided", "in", "Methods", ",", "but", "broadly", "corresponds", "to", "an", "MIC", "value", "of", "<=", "8", "mu", "g/ml", ",", "which", "has", "commonly", "been", "used", "as", "an", "activity", "cutoff", "in", "the", "literature", "and", "in", "HTS", "campaigns", "." ],
+    "entities_indices" : [ [ 15, 16 ], [ 18, 19, 20, 21, 22 ], [ 37, 38 ] ]
+  }, {
+    "sentence_tokens" : [ "Note", "that", "the", "SUBSET", "algorithm", "is", "non-deterministic.A", "three", "step", "standardization", "procedure", "was", "performed", "before", "calculating", "the", "physicochemical", "property", "distributions", "." ],
+    "entities_indices" : [ [ 3, 4, 5 ], [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "bulk", "of", "antibacterial", "active", "compounds", ",", "70.4", "%", ",", "have", "calculated", "LogP", "values", "lying", "in", "the", "range", "0", "-", "5", ",", "similar", "to", "the", "ranges", "seen", "in", "the", "BA", "and", "MOD", "sets", "(", "70.6", "and", "69.5", "%", "respectively", ")", "." ],
+    "entities_indices" : [ [ 29, 30 ] ]
+  }, {
+    "sentence_tokens" : [ "Polarity", "of", "Gram", "positive", "and", "Gram", "negative", "compounds", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "profile", "of", "the", "MOD", "set", "is", "intermediate", ",", "with", "the", "majority", "being", "neutral", "but", "with", "basic", "compounds", "also", "being", "highly", "represented", "." ],
+    "entities_indices" : [ [ 4, 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "all", "of", "the", "size", ",", "polarity", "and", "flexibility", "properties", "considered", "here", ",", "the", "differences", "between", "the", "distributions", "for", "Gram", "positive", "and", "Gram", "negative", "actives", "are", "unexpectedly", "small", "." ],
+    "entities_indices" : [ [ 19, 20 ], [ 22, 23 ] ]
+  } ],
+  "emptySentences" : [ ]
+}

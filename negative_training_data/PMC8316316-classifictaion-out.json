@@ -1,1 +1,195 @@
-[ ]
+{
+  "regulations" : [ ],
+  "hardInstances" : [ ],
+  "withoutRegulations" : [ {
+    "sentence_tokens" : [ "Based", "on", "the", "NDC", "model", "'", "s", "AUC-PR", "value", ",", "as", "well", "as", "the", "accuracy", "and", "the", "macro-average", "precision", "values", ",", "compared", "to", "the", "color", "and", "shape", "models", ",", "it", "was", "selected", "for", "further", "analysis", "and", "reporting", "in", "this", "paper.The", "NDC", "model", "'", "s", "predicted", "probability", "distributions", "for", "each", "image", "were", "normalized", "using", "a", "softmax", "operator", ",", "such", "that", "the", "sum", "of", "all", "the", "class", "probabilities", "for", "each", "image", "was", "equal", "to", "1", "." ],
+    "entities_indices" : [ [ 54, 55, 56 ] ]
+  }, {
+    "sentence_tokens" : [ "An", "SVM", "classifier", "for", "NDC", "was", "also", "implemented", "but", "was", "not", "reported", "due", "to", "low", "accuracy", "Model", "evaluation", "." ],
+    "entities_indices" : [ [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "NDC", "tablets", "were", "most", "often", "round", "(", "55.4", "%", ")", "and", "oval", "(", "21.5", "%", ")", "." ],
+    "entities_indices" : [ [ 1, 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "due", "to", "the", "limitation", "of", "the", "real-world", "image", "quality", "(", "illumination", ")", ",", "image", "complexity", "(", "overlapping", "pills", ")", ",", "and", "no", "annotation", "to", "help", "image", "segmentation", ",", "extracting", "imprints", "using", "the", "traditional", "OCR", "method", "was", "not", "adopted", "." ],
+    "entities_indices" : [ [ 28, 29 ], [ 35, 36 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "example", ",", "the", "incorrectly", "predicted", "image", "of", "Valsartan", "320", "MG", "Oral", "Tablet", "shown", "in", "Fig.", "4", "may", "be", "due", "to", "the", "different", "background", "of", "the", "prescription", "bottle", "in", "the", "images", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "used", "the", "neural", "network", "called", "ResNet-18", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "process", "described", "to", "obtain", "these", "images", "helps", "ensure", "that", "we", "have", "high-quality", "training", ",", "validation", ",", "and", "test", "data.Within", "the", "dataset", "of", "432,974", "images", "(", "1024", "x", "960", "resolution", ")", ",", "each", "image", "is", "stored", "with", "a", "unique", "image", "ID", "and", "an", "11-digit", "NDC", "." ],
+    "entities_indices" : [ [ 40, 41 ] ]
+  }, {
+    "sentence_tokens" : [ "As", "a", "result", ",", "we", "fine", "tuned", "the", "ResNet-18", "network", "for", "the", "medication", "image", "dataset", ",", "after", "pre-training", "on", "ImageNet", "." ],
+    "entities_indices" : [ [ 8, 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "the", "NDC", "model", "'", "s", "predicted", "probability", "bin", "of", "0.7", "-", "0.8", ",", "we", "would", "expect", "the", "model", "to", "be", "correct", "in", "its", "prediction", "75", "%", "of", "the", "time", "." ],
+    "entities_indices" : [ [ 2, 3, 4, 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "Figure", "1", "shows", "a", "precision-recall", "(", "PR", ")", "curve", "for", "the", "NDC", ",", "shape", ",", "and", "color", "models", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "closer", "the", "points", "fall", "along", "the", "diagonal", "linear", "line", ",", "the", "better", "the", "predicted", "probabilities", "by", "the", "MI", "are", "calibrated", "." ],
+    "entities_indices" : [ [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "Figure", "4", "shows", "examples", "of", "these", "incorrectly", "predicted", "NDC", "." ],
+    "entities_indices" : [ [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "requires", "learning", "models", "from", "a", "pile", "of", "medication", "inside", "a", "prescription", "vial", "where", "image", "segmentation", "from", "the", "background", "is", "impossible", "as", "pills", "are", "piled", "on", "top", "of", "each", "other.In", "this", "paper", ",", "we", "report", "on", "training", "a", "ResNet-18", "deep", "learning", "model", "to", "predict", "the", "labeled", "features", "of", "a", "medication", "product", "using", "an", "image", "showing", "oral", "medication", "inside", "of", "a", "filled", "prescription", "vial", "." ],
+    "entities_indices" : [ [ 15, 16 ], [ 40, 41 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "NDC", "is", "a", "numeric", "code", "registered", "with", "the", "United", "States", "FDA", "for", "all", "prescription", "and", "non", "prescription", "medications", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "Previously", "published", "studies", "of", "pill", "classification", "tasks", ",", "some", "spurred", "by", "the", "United", "States", "National", "Library", "of", "Medicine", "'", "s", "Pill", "Image", "Recognition", "Challenge", ",", "focus", "on", "comparing", "the", "front", "and", "back", "of", "individual", "pills", "between", "consumer", "images", "with", "different", "backgrounds", "and", "industry", "reference", "images", "." ],
+    "entities_indices" : [ [ 31, 32 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "example", ",", "images", "showing", "the", "medication", "Amiodarone", "hydrochloride", "200", "MG", "Oral", "Tablet", "(", "NDC", "=", "68382-0227", ")", ",", "a", "medication", "used", "to", "control", "heart", "rhythm", ",", "were", "predicted", "to", "be", "Allopurinol", "100", "MG", "Oral", "Tablet", "(", "NDC", "=", "53489-0156", ")", ",", "a", "medication", "used", "to", "treat", "gout", ",", "21", "out", "of", "31", "times", "(", "67.7", "%", ")", "by", "the", "model", "." ],
+    "entities_indices" : [ [ 7, 8, 9 ], [ 10, 11 ], [ 31, 32 ], [ 33, 34 ], [ 47, 48 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "diagram", "shows", "the", "percentage", "correctly", "predicted", "NDC", "by", "the", "model", "against", "ten", "equal-size", "bins", "of", "the", "model", "'", "s", "predicted", "probabilities", "(", "i.e", ".,", "0.0", "-", "0.1", ",", "0.1", "-", "0.2", ",", "etc.", ")", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "also", "evaluated", "the", "classification", "results", "using", "a", "PR", "curve", "." ],
+    "entities_indices" : [ [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "Data", "were", "collected", "on", "the", "physical", "appearance", "of", "the", "NDC", "medication", "for", "the", "models", "using", "National", "Institutes", "of", "Health", "PillBox", "Application", "Programming", "Interface", ",", "including", "features", "of", "color", ",", "shape", ",", "size", "(", "in", "mm", ")", "of", "pills", ",", "manufacturer", ",", "tablet", "scoring", ",", "and", "imprint", "." ],
+    "entities_indices" : [ [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "Despite", "the", "large", "number", "of", "images", "and", "range", "of", "NDC", "products", "in", "our", "dataset", ",", "all", "of", "the", "images", "taken", "were", "from", "a", "single", "machine", "." ],
+    "entities_indices" : [ [ 9, 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "More", "research", "is", "needed", "to", "explore", "how", "to", "safely", "and", "effectively", "use", "MI", "models", "to", "alert", "pharmacists", "about", "potential", "medication", "errors", ",", "streamline", "workplace", "processes", ",", "and", "reduce", "cognitive", "demands.Although", "the", "model", "performs", "well", ",", "a", "missed", "incorrectly", "filled", "medication", "that", "is", "missed", "by", "the", "model", "is", "still", "problematic", "." ],
+    "entities_indices" : [ [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "example", ",", "Fig.", "4", "shows", "that", "Paroxetine", "30MG", "Tablets", "are", "round", ",", "blue", "tablets", "with", "the", "imprint", "M", "on", "one", "side", "and", "N3", "on", "the", "other", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "National", "Drug", "Codes", "(", "NDC", ")", "are", "unique", "numeric", "identifiers", "of", "prescription", "drug", "products", "for", "the", "United", "States", "Food", "and", "Drug", "Administration", "." ],
+    "entities_indices" : [ [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "caret", "and", "tidyverse", "packages", "in", "R", "were", "used", "for", "this", "portion", "of", "data", "analysis.Finally", ",", "we", "conducted", "an", "analysis", "of", "the", "images", "for", "all", "incorrectly", "predicted", "NDC", ",", "which", "may", "have", "had", "an", "impact", "on", "the", "performance", "of", "classifiers", ",", "and", "reported", "image", "features", "." ],
+    "entities_indices" : [ [ 27, 28 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "truncated", "the", "last", "two", "digits", "of", "the", "NDC", "number", "as", "it", "refers", "to", "the", "quantity", "of", "the", "medication", "product", "in", "the", "manufacturer", "'", "s", "packaging", "rather", "than", "representing", "a", "distinguishing", "physical", "appearance", "of", "a", "tablet", "or", "capsule", "." ],
+    "entities_indices" : [ [ 8, 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "To", "assist", "humans", "in", "the", "verification", "process", ",", "MI", "models", "could", "perform", "a", "pill", "classification", "task", "using", "images", "taken", "of", "medication", "filled", "inside", "a", "prescription", "bottle", "." ],
+    "entities_indices" : [ [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "During", "the", "modeling", "prediction", "process", ",", "we", "used", "one", "softmax", "layer", "as", "the", "output", "layer", "to", "normalize", "the", "predicted", "probabilities", "and", "the", "category", "corresponding", "to", "the", "maximum", "probability", "was", "selected", "as", "the", "NDC", ",", "shape", ",", "or", "color", "attribute", "categories", "for", "each", "image", "." ],
+    "entities_indices" : [ [ 32, 33 ] ]
+  }, {
+    "sentence_tokens" : [ "As", "an", "alternative", "to", "the", "ROC", "curve", ",", "PR", "curve", "is", "more", "appropriate", "for", "datasets", "with", "uneven", "class", "distributions", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "Missing", "an", "incorrectly", "filled", "medication", "during", "the", "verification", "step", "is", "important", "because", "of", "the", "unnecessary", "patient", "harm", "that", "can", "result", "." ],
+    "entities_indices" : [ [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "NDCs", "included", "in", "the", "dataset", "act", "on", "the", "cardiovascular", "system", "(", "40.9", "%", ")", ",", "nervous", "system", "(", "22.3", "%", ")", ",", "and", "alimentary", "tract", "and", "metabolism", "(", "8.7", "%", ")", "." ],
+    "entities_indices" : [ [ 26, 27 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "overall", "accuracy", "of", "the", "model", "was", "computed", "by", "dividing", "the", "number", "of", "incorrectly", "predicted", "NDC", "by", "the", "total", "number", "of", "images", "predicted", "in", "the", "test", "set", "." ],
+    "entities_indices" : [ [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "then", "identified", "and", "categorized", "key", "features", "of", "NDC", "products", ",", "including", "color", ",", "shape", ",", "and", "imprints", ",", "which", "led", "to", "incorrect", "NDC", "predictions", "by", "comparing", "those", "features", "to", "the", "features", "of", "the", "reference", "NDC", "." ],
+    "entities_indices" : [ [ 8, 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "images", "in", "the", "second", "column", "show", "the", "images", "that", "were", "incorrectly", "predicted", "and", "the", "right", "images", "show", "an", "example", "image", "of", "the", "NDC", "predicted", "by", "the", "model", "." ],
+    "entities_indices" : [ [ 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "As", "a", "measure", "of", "how", "well", "the", "classifier", "distinguishes", "between", "classes", ",", "area", "under", "the", "PR", "curves", "(", "AUC-PR", ")", "for", "each", "of", "the", "three", "models", "are", "reported", "." ],
+    "entities_indices" : [ [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "Paroxetine", "40MG", "Tablets", "made", "by", "the", "same", "manufacturer", "are", "round", ",", "blue", "tablets", "with", "the", "imprint", "M", "on", "one", "side", "and", "N4", "on", "the", "other", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "physical", "form", "of", "the", "medication", ",", "often", "tablets", "and", "capsules", ",", "captures", "the", "unique", "features", "of", "the", "NDC", "product", "to", "help", "ensure", "patients", "receive", "the", "same", "medication", "product", "inside", "their", "prescription", "bottle", "as", "is", "found", "on", "the", "label", "from", "a", "pharmacy", "." ],
+    "entities_indices" : [ [ 18, 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "These", "previous", "studies", "focus", "on", "small-scale", "experimentation", "of", "MI", "models", "on", "individual", "pills", "." ],
+    "entities_indices" : [ [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "prescription", "label", "is", "placed", "on", "the", "side", "of", "the", "vial", ",", "an", "image", "showing", "top-down", "inside", "the", "vial", "is", "taken", ",", "and", "then", "it", "is", "capped", "for", "further", "order", "verification", "by", "a", "pharmacist", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "Relying", "on", "humans", "alone", "to", "verify", "that", "the", "physical", "attributes", "of", "medication", "products", "for", "an", "NDC", "are", "insufficient", "to", "overcome", "high", "workload", ",", "interruptions", ",", "and", "limitations", "of", "human", "cognition", "that", "are", "common", "contributing", "factors", "in", "dispensing", "errors", "." ],
+    "entities_indices" : [ [ 15, 16 ], [ 29, 30 ] ]
+  }, {
+    "sentence_tokens" : [ "Each", "NDC", "medication", "product", "has", "distinct", "physical", "characteristics", ",", "such", "as", "shape", ",", "color", ",", "and", "imprints", "." ],
+    "entities_indices" : [ [ 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "All", "three", "models", "were", "fine", "tuned", "for", "ten", "epoches", "with", "an", "early", "stop", "strategy", "decided", "by", "the", "result", "of", "validation", "set", "to", "prevent", "overfitting", "." ],
+    "entities_indices" : [ [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "only", "the", "first", "identifier", "segment", ",", "the", "manufacturer", ",", "is", "assigned", "by", "the", "United", "States", "Food", "and", "Drug", "Administration", "(", "FDA", ")", "." ],
+    "entities_indices" : [ [ 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "Technology", "assistance", "of", "the", "verification", "task", "through", "the", "use", "of", "machine", "intelligence", "(", "MI", ")", "has", "the", "potential", "to", "detect", "dangerous", "and", "costly", "pharmacy", "dispensing", "errors", "." ],
+    "entities_indices" : [ [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "To", "do", "this", ",", "we", "used", "the", "ResNet-18", "deep", "neural", "network", "model", "proposed", "by", "He", "et", "al.", "for", "visual", "recognition", "related", "tasks", "." ],
+    "entities_indices" : [ [ 7, 8, 9, 10, 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "use", "of", "individual", "pill", "segmentation", "used", "in", "previous", "research", "may", "help", ",", "or", ",", "alternatively", ",", "a", "method", "for", "segmenting", "out", "the", "top", "of", "the", "prescription", "vial", "from", "the", "background", "could", "be", "especially", "helpful", "." ],
+    "entities_indices" : [ [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "Fig.", "3", ",", "we", "report", "the", "proportion", "of", "NDC", "predictions", "made", "by", "the", "machine", "for", "each", "reference", "NDC", "in", "a", "confusion", "matrix", "." ],
+    "entities_indices" : [ [ 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "First", ",", "model", "fitting", "occurred", "by", "pre-training", "a", "ResNet-18", "network", "on", "the", "ImageNet", "dataset", "." ],
+    "entities_indices" : [ [ 8, 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "To", "address", "the", "lack", "of", "MI", "assistance", "for", "the", "pharmacist", "verification", "task", ",", "we", "tested", "a", "model", "to", "predict", "the", "medication", "product", "NDC", "with", "a", "macro-average", "precision", "of", "98.5", "%", "and", "micro-average", "precision", "of", "99.1", "%", "compared", "to", "previously", "published", "research", "reporting", "an", "unaided", "pharmacist", "'", "s", "mean", "accuracy", "rates", "of", "95.7", "-", "99.7", "%", "." ],
+    "entities_indices" : [ [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "example", ",", "a", "patient", "expecting", "an", "anti-anxiety", "medication", ",", "buspirone", ",", "receives", "a", "medication", "for", "high", "blood", "pressure", ",", "metoprolol", ",", "when", "the", "model", "makes", "an", "incorrect", "decision", "to", "approve", "the", "medication", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 16, 17, 18, 19 ], [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "ResNet-18", "has", "experienced", "success", "in", "computer", "vision", "for", "many", "classification", "tasks", "because", "it", "solved", "the", "gradient", "vanishing", "problem", "and", "handled", "the", "increasing", "depth", "of", "neural", "networks", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "step", ",", "we", "removed", "any", "inappropriate", "images", "(", "i.e", ".,", "not", "an", "image", "showing", "a", "top-down", "view", "inside", "a", "prescription", "bottle", ")", "." ],
+    "entities_indices" : [ [ 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "Each", "NDC", "product", "has", "a", "distinct", "physical", "appearance", "(", "e.g", ".,", "a", "yellow", ",", "round", "tablet", "with", "the", "imprint", ",", "M1", ")", "." ],
+    "entities_indices" : [ [ 1, 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "light", "of", "the", "COVID-19", "pandemic", ",", "further", "adoption", "of", "technology", "that", "enables", "remote", "verification", "may", "occur", "." ],
+    "entities_indices" : [ [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "Each", "point", "on", "the", "PR", "curve", "represents", "the", "positive", "predictive", "value", "(", "precision", ")", "and", "the", "true", "positive", "rate", "(", "recall", ")", "at", "a", "particular", "classification", "threshold", "." ],
+    "entities_indices" : [ [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "Other", "methods", "including", "the", "support", "vector", "machines", "(", "SVM", ")", "and", "the", "optical", "character", "recognition", "(", "OCR", ")", "were", "also", "considered", "." ],
+    "entities_indices" : [ [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "reliability", "diagram", "visualizes", "the", "model", "'", "s", "observed", "accuracy", "in", "each", "forecasted", "probability", "bin", "(", "i.e", ".,", "the", "blue", "bars", ")", "and", "its", "deviation", "from", "perfect", "calibration", "(", "i.e", ".,", "red", "bars", ")", "." ],
+    "entities_indices" : [ [ 20, 21 ], [ 32, 33 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "United", "States", "FDA", "requires", "imprinting", "of", "solid", "oral", "dosage", "forms", "on", "drug", "products", "for", "human", "use", "." ],
+    "entities_indices" : [ [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "National", "Drug", "Codes", "(", "NDC", ")", "are", "unique", "10-digit", ",", "three", "segment", "numbers", "assigned", "to", "drugs", "." ],
+    "entities_indices" : [ [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "Compared", "to", "the", "traditional", "receiver", "operating", "characteristics", "(", "ROC", ")", "curve", ",", "the", "PR", "curve", "is", "more", "appropriate", "for", "imbalanced", "datasets", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "deep", "structure", "of", "ResNet", "creates", "a", "large", "number", "of", "parameters", "that", "makes", "it", "hard", "to", "train", "a", "network", "from", "the", "start", "for", "our", "classification", "task", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "White", "space", "indicates", "that", "the", "corresponding", "pair", "of", "reference", "and", "predicted", "NDC", "never", "occurred", "." ],
+    "entities_indices" : [ [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "identified", "44", "out", "of", "the", "536", "(", "8.2", "%", ")", "images", "had", "a", "relatively", "different", "background", "compared", "to", "the", "rest", "of", "images", "in", "the", "incorrectly", "predicted", "image", "set", "." ],
+    "entities_indices" : [ [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "Communicating", "model", "uncertainty", "is", "a", "critical", "factor", "for", "improving", "the", "trustworthiness", "of", "MI", "advice", "." ],
+    "entities_indices" : [ [ 12, 13 ] ]
+  } ],
+  "emptySentences" : [ ]
+}

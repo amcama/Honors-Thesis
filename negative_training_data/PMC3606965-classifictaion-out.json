@@ -1,143 +1,735 @@
-[ {
-  "sentence_tokens" : [ "The", "most", "common", "acute", "secondary", "headaches", "are", "induced", "by", "alcohol", ",", "fever", ",", "hunger", "and", "rhinosinusitis", "and", "are", "usually", "paroxysmal", "[", "5", "]", ",", "but", "secondary", "chronic", "headache", "(", ">=", "15", "days", "per", "month", ">=", "3", "months", "or", ">=", "180", "days", "and", "last", "year", ")", "is", "also", "common", "and", "medication", "overuse", "contributes", "to", "the", "problem", "[", "6,7", "]", "." ],
-  "event_indices" : [ 5, 6, 7, 8, 9, 10 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 9, 10 ],
-  "controlled_indices" : [ 5, 6 ],
-  "trigger_indices" : [ 7, 8 ],
-  "rule_name" : "Positive_activation_syntax_2_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "The", "most", "common", "acute", "secondary", "headaches", "are", "induced", "by", "alcohol", ",", "fever", ",", "hunger", "and", "rhinosinusitis", "and", "are", "usually", "paroxysmal", "[", "5", "]", ",", "but", "secondary", "chronic", "headache", "(", ">=", "15", "days", "per", "month", ">=", "3", "months", "or", ">=", "180", "days", "and", "last", "year", ")", "is", "also", "common", "and", "medication", "overuse", "contributes", "to", "the", "problem", "[", "6,7", "]", "." ],
-  "event_indices" : [ 5, 6, 7, 8, 9, 10, 11, 12 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 11, 12 ],
-  "controlled_indices" : [ 5, 6 ],
-  "trigger_indices" : [ 7, 8 ],
-  "rule_name" : "Positive_activation_syntax_2_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "This", "would", "seem", "to", "support", "the", "presence", "of", "HACRS", "as", "a", "chronic", "headache", "entity", "distinct", "from", "CPTH", "and", "CEH", "and", "that", "a", "focus", "and", "referral", "practice", "reflecting", "this", "by", "traditional", "school", "medicine", "physicians", "may", "give", "a", "hope", "for", "a", "more", "effective", "treatment", "for", "a", "group", "of", "sufferers", "from", "secondary", "chronic", "headache", "." ],
-  "event_indices" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 0, 1 ],
-  "controlled_indices" : [ 8, 9 ],
-  "trigger_indices" : [ 4, 5 ],
-  "rule_name" : "Positive_activation_syntax_1_verb, pronominalMatch",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Management", "of", "secondary", "chronic", "headache", "in", "the", "general", "population", ":", "the", "Akershus", "study", "of", "chronic", "headache", "." ],
-  "entity_one_indices" : [ 15, 16 ],
-  "entity_two_indices" : [ 4, 5 ]
-}, {
-  "sentence_tokens" : [ "Thirty", "%", "had", "never", "consulted", "a", "physician", ",", "70", "%", "had", "consulted", "their", "GP", ",", "35", "%", "had", "consulted", "a", "neurologist", "and", "5", "%", "had", "been", "hospitalised", "due", "to", "their", "secondary", "chronic", "headache", "." ],
-  "entity_one_indices" : [ 32, 33 ],
-  "entity_two_indices" : [ 13, 14 ]
-}, {
-  "sentence_tokens" : [ "The", "WHO", "initiated", "'", "Lifting", "the", "burden", ":", "the", "global", "campaign", "to", "reduce", "the", "burden", "of", "headache", "'", "because", "headache", "is", "common", ",", "under-diagnosed", "and", "undertreated", "[", "1-3", "]", "." ],
-  "entity_one_indices" : [ 19, 20 ],
-  "entity_two_indices" : [ 16, 17 ]
-}, {
-  "sentence_tokens" : [ "The", "International", "Headache", "Society", "'", "s", "classification", "committee", "encourages", "further", "research", "in", "order", "to", "provide", "more", "knowledge", "and", "information", "of", "secondary", "headaches", "[", "4,14", "]", "." ],
-  "entity_one_indices" : [ 21, 22 ],
-  "entity_two_indices" : [ 2, 3 ]
-}, {
-  "sentence_tokens" : [ "All", "headaches", "were", "classified", "according", "to", "explicit", "diagnostic", "criteria", "of", "the", "ICHD-II", "and", "its", "relevant", "revisions", "[", "4,16-18]", "." ],
-  "entity_one_indices" : [ 11, 12 ],
-  "entity_two_indices" : [ 1, 2 ]
-}, {
-  "sentence_tokens" : [ "We", "defined", "four", "levels", "of", "contact", "due", "to", "headache", ",", "i.e.", "none", "(", "no", "physician", "contact", ")", ",", "primary", "(", "GP", ")", ",", "secondary", "(", "neurologist", ")", "and", "tertiary", "(", "hospitalisation", ")", "." ],
-  "entity_one_indices" : [ 20, 21 ],
-  "entity_two_indices" : [ 8, 9 ]
-}, {
-  "sentence_tokens" : [ "In", "Norway", ",", "a", "GP", "referral", "is", "a", "prerequisite", "for", "access", "to", "neurologists", ",", "while", "both", "GPs", "and", "neurologists", "can", "refer", "to", "the", "hospital", "." ],
-  "entity_one_indices" : [ 16, 17 ],
-  "entity_two_indices" : [ 4, 5 ]
-}, {
-  "sentence_tokens" : [ "Medication", "overuse", "was", "defined", "according", "to", "the", "ICHD-II", "criteria", "for", "medication", "overuse", "headache", "(", "i.e.", ">=", "15", "days", "per", "month", "for", "simple", "analgesics", "and", ">=", "10", "days", "per", "months", "for", "triptans", "and", "ergotamines", ")", "[", "4,17", "]", "." ],
-  "entity_one_indices" : [ 12, 13 ],
-  "entity_two_indices" : [ 7, 8 ]
-}, {
-  "sentence_tokens" : [ "To", "assess", "dependency", "like", "behaviour", "in", "relation", "to", "headache", "medication", ",", "we", "used", "the", "SDS", ",", "which", "includes", "five", "questions", "designed", "to", "measure", "psychological", "dependence", "[", "23,24", "]", "." ],
-  "entity_one_indices" : [ 14, 15 ],
-  "entity_two_indices" : [ 8, 9 ]
-}, {
-  "sentence_tokens" : [ "Table", "3", "shows", "that", "73", "%", "(", "82/113", ")", "had", "used", "CAM", "for", "their", "secondary", "chronic", "headache", "." ],
-  "entity_one_indices" : [ 16, 17 ],
-  "entity_two_indices" : [ 11, 12 ]
-}, {
-  "sentence_tokens" : [ "Medication", "use", ",", "medication", "overuse", "and", "high", "SDS", "score", "were", "associated", "with", "more", "physician", "contact", ",", "referral", "and", "use", "of", "CAM", "." ],
-  "entity_one_indices" : [ 20, 21 ],
-  "entity_two_indices" : [ 7, 8 ]
-}, {
-  "sentence_tokens" : [ "The", "age", "range", ",", "though", "it", "may", "exclude", "some", "secondary", "headache", "types", ",", "was", "chosen", "explicitly", "to", "focus", "on", "a", "population", "without", "too", "much", "co-morbidity", "of", "non", "headache", "disorders", "." ],
-  "entity_one_indices" : [ 27, 28, 29 ],
-  "entity_two_indices" : [ 10, 11 ]
-}, {
-  "sentence_tokens" : [ "Headache", "diagnoses", "are", "a", "challenge", "in", "people", "with", "chronic", "headache", "." ],
-  "entity_one_indices" : [ 9, 10 ],
-  "entity_two_indices" : [ 0, 1 ]
-}, {
-  "sentence_tokens" : [ "The", "ICHD-II", "classification", "of", "the", "secondary", "chronic", "headaches", "is", "a", "challenge", "since", "chronicity", "is", "not", "defined", "exhaustively", "[", "4", "]", "." ],
-  "entity_one_indices" : [ 7, 8 ],
-  "entity_two_indices" : [ 1, 2 ]
-}, {
-  "sentence_tokens" : [ "Likewise", ",", "the", "diagnoses", "of", "CEH", "are", "not", "specific", "and", "the", "diagnosis", "HACRS", "is", "not", "part", "of", "the", "ICHD-II", "classification", "[", "20,21", "]", "." ],
-  "entity_one_indices" : [ 18, 19 ],
-  "entity_two_indices" : [ 5, 6 ]
-}, {
-  "sentence_tokens" : [ "This", "may", "be", "due", "to", "low", "expectations", "towards", "traditional", "medicine", "regarding", "secondary", "chronic", "headache", ",", "and/or", "on", "the", "contrary", "that", "secondary", "chronic", "headache", "is", "expected", "to", "be", "self-treatable", "." ],
-  "entity_one_indices" : [ 22, 23 ],
-  "entity_two_indices" : [ 13, 14 ]
-}, {
-  "sentence_tokens" : [ "Another", "possible", "explanation", "might", "be", "that", "the", "secondary", "chronic", "headache", "is", "less", "disabling", "than", "migraine", "." ],
-  "entity_one_indices" : [ 14, 15 ],
-  "entity_two_indices" : [ 9, 10 ]
-}, {
-  "sentence_tokens" : [ "We", "have", "no", "specific", "information", "on", "what", "the", "GPs", "and/or", "neurologists", "have", "done", ",", "but", "it", "is", "likely", "to", "assume", "that", "unsatisfactory", "pharmacological", "treatment", "lead", "to", "higher", "use", "of", "CAM", "." ],
-  "entity_one_indices" : [ 29, 30 ],
-  "entity_two_indices" : [ 8, 9 ]
-}, {
-  "sentence_tokens" : [ "However", ",", "both", "pharmacological", "and", "CAM", "treatment", "followed", "the", "same", "pattern", "i.e.", "more", "medication", "use", "correlated", "with", "more", "CAM", "use", "." ],
-  "entity_one_indices" : [ 18, 19 ],
-  "entity_two_indices" : [ 5, 6 ]
-}, {
-  "sentence_tokens" : [ "In", "relation", "to", "HACRS", ",", "this", "may", "suggest", "that", "this", "entity", "is", "rarely", "recognised", "by", "people", "or", "diagnosed", "by", "either", "physicians", "or", "by", "those", "practicing", "CAM", "." ],
-  "entity_one_indices" : [ 25, 26 ],
-  "entity_two_indices" : [ 3, 4 ]
-}, {
-  "sentence_tokens" : [ "The", "improvement", "among", "participants", "with", "HACRS", "was", "seen", "especially", "in", "those", "who", "had", "interventions", "for", "their", "rhinosinusitis", "and", "who", "had", "reduced", "their", "nasal", "decongestants", "and", "their", "headache", "medication", "overuse", "[", "22", "]", "." ],
-  "entity_one_indices" : [ 26, 27 ],
-  "entity_two_indices" : [ 5, 6 ]
-}, {
-  "sentence_tokens" : [ "Medication", "overuse", "seems", "to", "be", "either", "a", "marker", "of", "a", "complex", "chronic", "headache", "requiring", "increased", "support", "from", "the", "health", "services", "or", "causally", "associated", "with", "a", "worsening", "of", "the", "headache", "." ],
-  "entity_one_indices" : [ 28, 29 ],
-  "entity_two_indices" : [ 12, 13 ]
-}, {
-  "sentence_tokens" : [ "In", "addition", ",", "the", "direction", "of", "a", "possibly", "causal", "association", "between", "medication", "overuse", "and", "the", "underlying", "headache", "becomes", "even", "more", "difficult", "to", "ascertain", "if", "the", "headache", "is", "assumed", "to", "be", "secondary", "to", "another", ",", "defined", "organic", "cause", "." ],
-  "entity_one_indices" : [ 25, 26 ],
-  "entity_two_indices" : [ 16, 17 ]
-}, {
-  "sentence_tokens" : [ "However", ",", "simply", "the", "high", "co-occurrence", "of", "medication", "overuse", "seems", "to", "suggest", "the", "potential", "for", "trying", "detoxification", "also", "in", "the", "case", "of", "secondary", "chronic", "headaches", "." ],
-  "entity_one_indices" : [ 24, 25 ],
-  "entity_two_indices" : [ 16, 17 ]
-}, {
-  "sentence_tokens" : [ "We", "have", "previously", "reported", "that", "reduced", "medication", "overuse", "is", "associated", "with", "improvement", "of", "CPTH", "and", "HACRS", "[", "19,22", "]", "." ],
-  "entity_one_indices" : [ 15, 16 ],
-  "entity_two_indices" : [ 13, 14 ]
-}, {
-  "sentence_tokens" : [ "Secondary", "chronic", "headache", "is", "a", "heterogeneous", "group", "of", "headache", "disorders", "with", "a", "high", "level", "of", "health", "care", "utilisation", "." ],
-  "entity_one_indices" : [ 8, 9, 10 ],
-  "entity_two_indices" : [ 2, 3 ]
-}, {
-  "sentence_tokens" : [ "The", "treatment", "strategy", "should", "be", "focused", "on", "the", "type", "of", "secondary", "chronic", "headache", "." ],
-  "entity_one_indices" : [ 12, 13 ],
-  "entity_two_indices" : [ 8, 9 ]
-}, {
-  "sentence_tokens" : [ "CL", "and", "MBR", "was", "involved", "in", "data", "analysis", "and", "interpretation", "and", "assisted", "in", "preparation", "of", "the", "manuscript", "." ],
-  "entity_one_indices" : [ 2, 3 ],
-  "entity_two_indices" : [ 0, 1 ]
-} ]
+{
+  "regulations" : [ {
+    "sentence_tokens" : [ "The", "most", "common", "acute", "secondary", "headaches", "are", "induced", "by", "alcohol", ",", "fever", ",", "hunger", "and", "rhinosinusitis", "and", "are", "usually", "paroxysmal", "[", "5", "]", ",", "but", "secondary", "chronic", "headache", "(", ">=", "15", "days", "per", "month", ">=", "3", "months", "or", ">=", "180", "days", "and", "last", "year", ")", "is", "also", "common", "and", "medication", "overuse", "contributes", "to", "the", "problem", "[", "6,7", "]", "." ],
+    "event_indices" : [ 5, 6, 7, 8, 9, 10 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 9, 10 ],
+    "controlled_indices" : [ 5, 6 ],
+    "trigger_indices" : [ 7, 8 ],
+    "rule_name" : "Positive_activation_syntax_2_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "The", "most", "common", "acute", "secondary", "headaches", "are", "induced", "by", "alcohol", ",", "fever", ",", "hunger", "and", "rhinosinusitis", "and", "are", "usually", "paroxysmal", "[", "5", "]", ",", "but", "secondary", "chronic", "headache", "(", ">=", "15", "days", "per", "month", ">=", "3", "months", "or", ">=", "180", "days", "and", "last", "year", ")", "is", "also", "common", "and", "medication", "overuse", "contributes", "to", "the", "problem", "[", "6,7", "]", "." ],
+    "event_indices" : [ 5, 6, 7, 8, 9, 10, 11, 12 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 11, 12 ],
+    "controlled_indices" : [ 5, 6 ],
+    "trigger_indices" : [ 7, 8 ],
+    "rule_name" : "Positive_activation_syntax_2_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "This", "would", "seem", "to", "support", "the", "presence", "of", "HACRS", "as", "a", "chronic", "headache", "entity", "distinct", "from", "CPTH", "and", "CEH", "and", "that", "a", "focus", "and", "referral", "practice", "reflecting", "this", "by", "traditional", "school", "medicine", "physicians", "may", "give", "a", "hope", "for", "a", "more", "effective", "treatment", "for", "a", "group", "of", "sufferers", "from", "secondary", "chronic", "headache", "." ],
+    "event_indices" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 0, 1 ],
+    "controlled_indices" : [ 8, 9 ],
+    "trigger_indices" : [ 4, 5 ],
+    "rule_name" : "Positive_activation_syntax_1_verb, pronominalMatch",
+    "rule" : null
+  } ],
+  "hardInstances" : [ {
+    "sentence_tokens" : [ "The", "most", "common", "acute", "secondary", "headaches", "are", "induced", "by", "alcohol", ",", "fever", ",", "hunger", "and", "rhinosinusitis", "and", "are", "usually", "paroxysmal", "[", "5", "]", ",", "but", "secondary", "chronic", "headache", "(", ">=", "15", "days", "per", "month", ">=", "3", "months", "or", ">=", "180", "days", "and", "last", "year", ")", "is", "also", "common", "and", "medication", "overuse", "contributes", "to", "the", "problem", "[", "6,7", "]", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 27, 28 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "most", "common", "acute", "secondary", "headaches", "are", "induced", "by", "alcohol", ",", "fever", ",", "hunger", "and", "rhinosinusitis", "and", "are", "usually", "paroxysmal", "[", "5", "]", ",", "but", "secondary", "chronic", "headache", "(", ">=", "15", "days", "per", "month", ">=", "3", "months", "or", ">=", "180", "days", "and", "last", "year", ")", "is", "also", "common", "and", "medication", "overuse", "contributes", "to", "the", "problem", "[", "6,7", "]", "." ],
+    "entities_indices" : [ [ 9, 10 ], [ 27, 28 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "would", "seem", "to", "support", "the", "presence", "of", "HACRS", "as", "a", "chronic", "headache", "entity", "distinct", "from", "CPTH", "and", "CEH", "and", "that", "a", "focus", "and", "referral", "practice", "reflecting", "this", "by", "traditional", "school", "medicine", "physicians", "may", "give", "a", "hope", "for", "a", "more", "effective", "treatment", "for", "a", "group", "of", "sufferers", "from", "secondary", "chronic", "headache", "." ],
+    "entities_indices" : [ [ 12, 13 ], [ 16, 17 ], [ 18, 19 ], [ 50, 51 ] ]
+  } ],
+  "withoutRegulations" : [ {
+    "sentence_tokens" : [ "Co-occurrence", "of", "migraine", "increased", "physician", "contact", ",", "and", "this", "might", "explain", "why", "some", "of", "those", "without", "co-occurrence", "of", "migraine", "rely", "on", "self-treatment", "for", "their", "secondary", "chronic", "headache.The", "use", "of", "CAM", "was", "high", "in", "our", "population", "with", "secondary", "chronic", "headaches", "and", "the", "use", "of", "CAM", "was", "significantly", "higher", "among", "those", "who", "had", "consulted", "a", "physician", "compared", "to", "those", "who", "had", "not", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 18, 19 ], [ 29, 30 ], [ 38, 39 ], [ 43, 44 ] ]
+  }, {
+    "sentence_tokens" : [ "People", "using", "acute", "medication", "had", "significantly", "more", "CAM", "use", "than", "people", "not", "using", "acute", "medication", "(", "89", "%", "vs.", "71", "%", ",", "p", "=", "0.019", ")", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "Management", "of", "secondary", "chronic", "headache", "in", "the", "general", "population", ":", "the", "Akershus", "study", "of", "chronic", "headache", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "Table", "3", "shows", "the", "physician", "contact", "pattern.Thirty", "%", "(", "34/113", ")", "had", "never", "had", "contact", "with", "the", "health", "care", "system", "for", "their", "secondary", "chronic", "headache", ",", "while", "70", "%", "(", "79/113", ")", "had", "had", "contact", "with", "their", "GP", ",", "35", "%", "(", "40/113", ")", "had", "been", "referred", "to", "a", "neurologist", "and", "5", "%", "(", "6/113", ")", "had", "been", "hospitalised", "for", "their", "secondary", "chronic", "headache", "." ],
+    "entities_indices" : [ [ 24, 25 ], [ 37, 38 ], [ 63, 64 ] ]
+  }, {
+    "sentence_tokens" : [ "Detoxification", "of", "medication", "overuse", "is", "recommended", "and", "prophylactic", "treatment", "might", "also", "be", "effective", ",", "although", "the", "latter", "has", "not", "been", "documented", "in", "clinical", "trials", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "Medication", "use", ",", "medication", "overuse", "and", "high", "SDS", "score", "were", "associated", "with", "more", "physician", "contact", ",", "referral", "and", "use", "of", "CAM", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "age", "range", ",", "though", "it", "may", "exclude", "some", "secondary", "headache", "types", ",", "was", "chosen", "explicitly", "to", "focus", "on", "a", "population", "without", "too", "much", "co-morbidity", "of", "non", "headache", "disorders", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 27, 28, 29 ] ]
+  }, {
+    "sentence_tokens" : [ "Secondary", "chronic", "headache", "exclusively", "due", "to", "medication", "overuse", "was", "excluded", "." ],
+    "entities_indices" : [ [ 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "Pregnancy", "related", "headache", "is", "not", "an", "ICHD-II", "diagnosis", "unless", "it", "is", "associated", "with", "eclampsia", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 6, 7 ], [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "Physiotherapy", "was", "the", "most", "commonly", "used", "strategy", "in", "all", "these", "three", "groups", ",", "but", "to", "a", "much", "higher", "degree", "in", "people", "with", "CPTH", "and", "CEH", "probably", "due", "to", "the", "fact", "that", "these", "people", "have", "more", "neck", "and", "muscular", "pain", "and", "tenderness", "than", "people", "with", "HACRS", "." ],
+    "entities_indices" : [ [ 22, 23 ], [ 24, 25 ], [ 38, 39 ], [ 44, 45 ] ]
+  }, {
+    "sentence_tokens" : [ "MBR", "had", "the", "original", "idea", "for", "the", "study", "and", "planned", "the", "overall", "design", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "Approximately", "20-30", "%", "of", "all", "new", "referrals", "to", "out-patients", "neurological", "departments", "are", "due", "to", "headache", "[", "9-12", "]", "." ],
+    "entities_indices" : [ [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "Apart", "from", "ensuring", "confidentiality", "and", "emphasizing", "the", "importance", "of", "participation", ",", "it", "was", "stated", "that", "the", "object", "was", "to", "study", "headache", "." ],
+    "entities_indices" : [ [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "Headache", "has", "been", "suggested", "to", "be", "the", "most", "common", "new", "neurological", "symptom", "presented", "[", "13", "]", ",", "and", "many", "neurological", "conditions", "include", "headache", "in", "the", "symptomatology", ",", "thus", "it", "also", "represents", "an", "important", "neurological", "differential", "diagnosis", "and", "may", "cause", "high", "use", "of", "health", "care", "services.Epidemiological", "data", "on", "secondary", "headaches", "are", "largely", "lacking", ",", "and", "most", "information", "are", "from", "studies", "that", "have", "not", "had", "a", "main", "focus", "on", "secondary", "chronic", "headache", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 22, 23 ], [ 48, 49 ], [ 69, 70 ] ]
+  }, {
+    "sentence_tokens" : [ "Co-occurrence", "of", "migraine", "or", "medication", "overuse", "increased", "the", "physician", "contact", "." ],
+    "entities_indices" : [ [ 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "Complicated", "headache", "histories", "were", "discussed", "among", "the", "authors", "before", "classification", "." ],
+    "entities_indices" : [ [ 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "concept", "of", "medication", "overuse", "in", "secondary", "headaches", "is", "still", "debatable", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "WHO", "initiated", "'", "Lifting", "the", "burden", ":", "the", "global", "campaign", "to", "reduce", "the", "burden", "of", "headache", "'", "because", "headache", "is", "common", ",", "under-diagnosed", "and", "undertreated", "[", "1-3", "]", "." ],
+    "entities_indices" : [ [ 16, 17 ], [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "Physiotherapy", "was", "most", "commonly", "used", "in", "CPTH", ",", "CEH", "and", "HACRS", ",", "i.e.", "85", "%", ",", "75", "%", "and", "48", "%", ",", "respectively.The", "use", "of", "CAM", "was", "significantly", "higher", "among", "those", "who", "had", "consulted", "a", "physician", "compared", "to", "those", "who", "had", "not", "(", "84", "%", "vs.", "47", "%", ",", "p", "<", "0.001", ")", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 8, 9 ], [ 10, 11 ], [ 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "most", "revised", "version", "of", "the", "headache", "classification", "this", "headache", "should", "be", "classified", "as", "probable", "MOH", "until", "detoxification", "has", "taken", "place", ",", "in", "which", "case", "it", "would", "be", "classified", "either", "as", "MOH", "(", "if", "improvement", "is", "seen", ")", "or", "as", "the", "remaining", "alternative", ",", "secondary", "chronic", "headache", "diagnosis", "(", "if", "no", "improvement", "is", "seen", ")", "[", "4,16-18]", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 10, 11 ], [ 18, 19 ], [ 47, 48 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "included", "4", "women", "who", "experienced", "headache", "exclusively", "during", "pregnancy", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "Which", "prophylactics", "that", "may", "be", "useful", "in", "secondary", "chronic", "headaches", "is", "not", "sufficiently", "described", "and", "should", "be", "addressed", "by", "further", "studies.However", ",", "the", "41", "%", "co-occurrence", "of", "migrainous", "headache", "may", "suggest", "a", "potential", "for", "using", "migraine", "prophylactics", "." ],
+    "entities_indices" : [ [ 9, 10 ], [ 28, 29 ], [ 35, 36 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "improvement", "among", "participants", "with", "HACRS", "was", "seen", "especially", "in", "those", "who", "had", "interventions", "for", "their", "rhinosinusitis", "and", "who", "had", "reduced", "their", "nasal", "decongestants", "and", "their", "headache", "medication", "overuse", "[", "22", "]", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 26, 27 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "Norway", ",", "a", "GP", "referral", "is", "a", "prerequisite", "for", "access", "to", "neurologists", ",", "while", "both", "GPs", "and", "neurologists", "can", "refer", "to", "the", "hospital", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "Since", "there", "is", "no", "systematic", "registration", "of", "CAM", ",", "one", "has", "to", "rely", "on", "self-reports", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "defined", "four", "levels", "of", "contact", "due", "to", "headache", ",", "i.e.", "none", "(", "no", "physician", "contact", ")", ",", "primary", "(", "GP", ")", ",", "secondary", "(", "neurologist", ")", "and", "tertiary", "(", "hospitalisation", ")", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "Whether", "the", "participants", "had", "been", "interviewed", "in", "person", "or", "by", "phone", "made", "no", "difference", "to", "the", "frequency", "of", "the", "various", "headache", "diagnoses", ",", "medication", "use", ",", "medication", "overuse", ",", "physician", "or", "CAM", "contact.A", "total", "of", "113", "participants", "(", "22", "%", "men", "and", "78", "%", "women", ")", "had", "secondary", "chronic", "headaches", "not", "exclusively", "due", "to", "medication", "overuse.Forty-two", "%", "had", "CPTH", ",", "21", "%", "had", "CEH", ",", "41", "%", "HACRS", "and", "8", "%", "had", "other", "secondary", "chronic", "headache", ",", "i.e.", "3", "post-craniotomy", ",", "1", "diving", "related", ",", "4", "pregnancy", "related", ",", "and", "1", "post-meningitis.The", "sum", "exceeds", "100", "%", ",", "since", "the", "diagnoses", "are", "not", "mutually", "exclusive", "." ],
+    "entities_indices" : [ [ 20, 21 ], [ 31, 32 ], [ 40, 41 ], [ 49, 50 ], [ 58, 59 ], [ 63, 64 ], [ 75, 76 ] ]
+  }, {
+    "sentence_tokens" : [ "Our", "aim", "here", "was", "to", "investigate", "secondary", "chronic", "headache", "in", "the", "general", "population", "in", "order", "to", "evaluate", "utility", "of", "health", "services", "and", "medication", "use", "." ],
+    "entities_indices" : [ [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "questions", "'", "How", "many", "days", "during", "the", "last", "month", "have", "you", "had", "headache", "?" ],
+    "entities_indices" : [ [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "simply", "the", "high", "co-occurrence", "of", "medication", "overuse", "seems", "to", "suggest", "the", "potential", "for", "trying", "detoxification", "also", "in", "the", "case", "of", "secondary", "chronic", "headaches", "." ],
+    "entities_indices" : [ [ 16, 17 ], [ 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "International", "Classification", "of", "Headache", "Disorders", "2", "edition", "(", "ICHD-II", ")", "provides", "diagnostic", "criteria", "for", "headaches", "which", "are", "divided", "into", "primary", "and", "secondary", "forms", "[", "4", "]", "." ],
+    "entities_indices" : [ [ 4, 5, 6 ], [ 9, 10 ], [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "Another", "possible", "explanation", "might", "be", "that", "the", "secondary", "chronic", "headache", "is", "less", "disabling", "than", "migraine", "." ],
+    "entities_indices" : [ [ 9, 10 ], [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "It", "is", "suggested", "that", "migraineurs", "are", "undertreated", "and", "a", "substantial", "proportion", "of", "those", "who", "might", "benefit", "from", "migraine", "prevention", "do", "not", "receive", "it", "[", "26,27", "]", "." ],
+    "entities_indices" : [ [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "random", "age", "stratified", "sample", "of", "15", "000", "men", "and", "15", "000", "women", ",", "30", "-", "44", "years", "old", "and", "residing", "in", "the", "20", "eastern", "municipalities", "in", "Akershus", "County", ",", "was", "drawn", "from", "the", "National", "Personal", "Registry", "by", "Statistics", "Norway", "." ],
+    "entities_indices" : [ [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "asked", "about", "current", "medication", "use", ",", "and", "excluded", "medication", "used", "for", "other", "pain", "conditions", "." ],
+    "entities_indices" : [ [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "was", "applied", "along", "with", "supplementary", "definitions", "for", "chronic", "rhinosinusitis", "and", "cervicogenic", "headache", "." ],
+    "entities_indices" : [ [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "Chronic", "post-traumatic", "headache", "(", "CPTH", ")", "included", "head", "and", "whiplash", "traumas.Cervicogenic", "headache", "(", "CEH", ")", "was", "classified", "according", "to", "the", "criteria", "of", "the", "Cervicogenic", "Headache", "International", "Study", "Group", ",", "requiring", "at", "least", "three", "criteria", "to", "be", "fulfilled", "not", "including", "blockade", "of", "the", "neck", "due", "to", "the", "non", "interventional", "nature", "of", "our", "study", "(", "Table", "1", ")", "[", "20", "]", "." ],
+    "entities_indices" : [ [ 1, 2, 3 ], [ 4, 5 ], [ 11, 12 ], [ 13, 14 ], [ 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "treatment", "strategy", "should", "be", "focused", "on", "the", "type", "of", "secondary", "chronic", "headache", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "suggests", "that", "some", "secondary", "chronic", "headache", "sufferers", "will", "try", "many", "treatment", "options", "to", "alleviate", "their", "headache.The", "most", "frequent", "secondary", "chronic", "headaches", "(", "CPTH", ",", "CEH", "and", "HACRS", ")", "had", "surprisingly", "similar", "pattern", "of", "CAM", "use", "despite", "these", "are", "caused", "by", "different", "pathophysiological", "mechanisms", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 21, 22 ], [ 23, 24 ], [ 25, 26 ], [ 27, 28 ], [ 34, 35 ] ]
+  }, {
+    "sentence_tokens" : [ "Prophylactic", "treatment", "was", "used", "by", "11", "%", "(", "12/113", ")", "and", "was", "not", "influenced", "by", "gender", "or", "co-occurrence", "of", "migraine", "." ],
+    "entities_indices" : [ [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "To", "ensure", "precise", "diagnostic", ",", "two", "neurological", "residents", "experienced", "in", "headache", "diagnostics", "conducted", "all", "interviews", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "CI", "and", "probabilities", "are", "not", "given", "when", "n", "<", "5", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "overall", "use", "of", "CAM", "was", "not", "significantly", "influenced", "by", "migraine", ",", "although", "there", "was", "a", "tendency", "for", "a", "higher", "usage", "of", "CAM", "among", "people", "with", "than", "without", "co-occurrence", "of", "migraine", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 10, 11 ], [ 22, 23 ], [ 30, 31 ] ]
+  }, {
+    "sentence_tokens" : [ "Thirty", "%", "had", "never", "consulted", "a", "physician", ",", "70", "%", "had", "consulted", "their", "GP", ",", "35", "%", "had", "consulted", "a", "neurologist", "and", "5", "%", "had", "been", "hospitalised", "due", "to", "their", "secondary", "chronic", "headache", "." ],
+    "entities_indices" : [ [ 13, 14 ], [ 32, 33 ] ]
+  }, {
+    "sentence_tokens" : [ "Likewise", ",", "the", "diagnoses", "of", "CEH", "are", "not", "specific", "and", "the", "diagnosis", "HACRS", "is", "not", "part", "of", "the", "ICHD-II", "classification", "[", "20,21", "]", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "Surprisingly", ",", "even", "though", "high", "levels", "of", "specialist", "contact", ",", "high", "medication", "use", ",", "medication", "overuse", "and", "high", "proportions", "of", "CAM", "contacts", "seem", "to", "suggest", "a", "difficult", "headache", "situation", "for", "many", "of", "our", "participants", ",", "as", "many", "as", "1/3", "had", "no", "physician", "contact", "ever", "due", "to", "their", "headache", "." ],
+    "entities_indices" : [ [ 20, 21 ], [ 27, 28 ], [ 47, 48 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "descriptive", "data", ",", "proportions", ",", "means", "and", "confidence", "intervals", "(", "CI", ")", "are", "given", "." ],
+    "entities_indices" : [ [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "ICHD-II", "classification", "of", "the", "secondary", "chronic", "headaches", "is", "a", "challenge", "since", "chronicity", "is", "not", "defined", "exhaustively", "[", "4", "]", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "Fifty-eight", "%", "overused", "simple", "analgesics", ",", "mainly", "paracetamol", "and/or", "ibuprofen", "and", "31", "%", "overused", "combination", "analgesics", ",", "usually", "a", "combination", "of", "paracetamol", "and", "codeine", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 9, 10 ], [ 21, 22 ], [ 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "prevalence", "of", "secondary", "chronic", "headache", "in", "our", "population", "is", "0.5", "%", "." ],
+    "entities_indices" : [ [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "Self", "reported", "chronic", "headache", "was", "defined", "to", "be", "headache", "occurring", ">=", "15", "days", "within", "the", "last", "month", "and/or", "headache", "occurring", ">=", "180", "days", "within", "the", "last", "year", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 8, 9 ], [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "have", "previously", "reported", "that", "reduced", "medication", "overuse", "is", "associated", "with", "improvement", "of", "CPTH", "and", "HACRS", "[", "19,22", "]", "." ],
+    "entities_indices" : [ [ 13, 14 ], [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "RBG", "and", "KA", "collected", "data", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "Persons", "with", "self", "reported", "chronic", "headache", "who", "also", "consented", "by", "adding", "their", "telephone", "number", "on", "the", "questionnaire", "were", "invited", "to", "a", "clinical", "examination", "." ],
+    "entities_indices" : [ [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "have", "previously", "described", "the", "management", "of", "primary", "chronic", "headaches", "in", "the", "general", "population", "[", "15", "]", "." ],
+    "entities_indices" : [ [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "One", "hundred", "and", "thirteen", "participants", "had", "secondary", "chronic", "headache", "." ],
+    "entities_indices" : [ [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "Headache", "attributed", "to", "chronic", "rhinosinusitis", "(", "HACRS", ")", "was", "defined", "according", "to", "the", "criteria", "established", "by", "the", "American", "Academy", "of", "Otolaryngology", "-", "Head", "and", "Neck", "Surgery", "(", "Table", "2", ")", "[", "21", "]", "adding", "that", "the", "symptoms", "had", "persisted", "12", "weeks", "or", "more", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "relation", "to", "HACRS", ",", "this", "may", "suggest", "that", "this", "entity", "is", "rarely", "recognised", "by", "people", "or", "diagnosed", "by", "either", "physicians", "or", "by", "those", "practicing", "CAM", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "Headache", "classification", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "Forty-one", "%", "had", "co-occurrence", "of", "migraine", "and", "49", "%", "had", "co-occurrence", "of", "medication", "overuse", "." ],
+    "entities_indices" : [ [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "addition", ",", "the", "direction", "of", "a", "possibly", "causal", "association", "between", "medication", "overuse", "and", "the", "underlying", "headache", "becomes", "even", "more", "difficult", "to", "ascertain", "if", "the", "headache", "is", "assumed", "to", "be", "secondary", "to", "another", ",", "defined", "organic", "cause", "." ],
+    "entities_indices" : [ [ 16, 17 ], [ 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "Approximately", "40", "%", "had", "co-occurrence", "of", "migraine", ",", "and", "approximately", "50", "%", "had", "medication", "overuse", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "Significance", "levels", "were", "set", "at", "p", "<", "0.05", "and", "95", "%", "CI", "were", "calculated", "." ],
+    "entities_indices" : [ [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "'", "and", "'", "How", "many", "days", "during", "the", "last", "year", "have", "you", "had", "headache", "?" ],
+    "entities_indices" : [ [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "higher", "proportion", "of", "those", "with", "than", "without", "medication", "overuse", "used", "CAM", "(", "82", "%", "vs.", "64", "%", ",", "p", "=", "0.032", ")", "." ],
+    "entities_indices" : [ [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "both", "pharmacological", "and", "CAM", "treatment", "followed", "the", "same", "pattern", "i.e.", "more", "medication", "use", "correlated", "with", "more", "CAM", "use", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "Table", "3", "shows", "that", "73", "%", "(", "82/113", ")", "had", "used", "CAM", "for", "their", "secondary", "chronic", "headache", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "Medication", "overuse", "was", "defined", "according", "to", "the", "ICHD-II", "criteria", "for", "medication", "overuse", "headache", "(", "i.e.", ">=", "15", "days", "per", "month", "for", "simple", "analgesics", "and", ">=", "10", "days", "per", "months", "for", "triptans", "and", "ergotamines", ")", "[", "4,17", "]", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "Medication", "overuse", "seems", "to", "be", "either", "a", "marker", "of", "a", "complex", "chronic", "headache", "requiring", "increased", "support", "from", "the", "health", "services", "or", "causally", "associated", "with", "a", "worsening", "of", "the", "headache", "." ],
+    "entities_indices" : [ [ 12, 13 ], [ 28, 29 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "SDS", "score", "was", "significantly", "higher", "in", "those", "with", "than", "without", "medication", "overuse", "for", "all", "levels", "of", "physician", "contact", "(", "Figure", "3", ")", "." ],
+    "entities_indices" : [ [ 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "figure", "is", "higher", "than", "the", "corresponding", "figure", "for", "primary", "chronic", "headaches", "where", "only", "20", "%", "had", "no", "such", "contact", "[", "15", "]", "." ],
+    "entities_indices" : [ [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "Data", "is", "sparse", "on", "these", "types", "of", "headache", "and", "information", "about", "utilisation", "of", "health", "care", "and", "medication", "is", "missing", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "Secondary", "chronic", "headache", "is", "a", "heterogeneous", "group", "of", "headache", "disorders", "with", "a", "high", "level", "of", "health", "care", "utilisation", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 8, 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "CEH", "did", "not", "improve", "after", "detoxification", ",", "but", "detoxification", "did", "not", "worsen", "the", "headache", "or", "have", "other", "negative", "effects", "[", "19", "]", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 5, 6 ], [ 8, 9 ], [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "Two-thirds", "of", "those", "with", "secondary", "chronic", "headache", "consulted", "their", "GP", "for", "headache", ",", "and", "half", "of", "these", "had", "also", "consulted", "a", "neurologist", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 9, 10 ], [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "Headache", "diagnoses", "are", "a", "challenge", "in", "people", "with", "chronic", "headache", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "An", "alternative", "may", "be", "that", "rhinosinusitis", "problems", "are", "commonly", "present", "in", "other", "conditions", "with", "secondary", "headache", ",", "either", "by", "coincidence", "or", "by", "interactions", "based", "on", "medication", "use", "or", "other", "causal", "or", "interactive", "relationships", "such", "as", "sensitisation", "processes", "." ],
+    "entities_indices" : [ [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "CAM", "forms", "queried", "were", "acupuncture", ",", "chiropractic", ",", "homeopathy", ",", "naprapathy", ",", "physiotherapy", ",", "psychologist", "and", "psychomotor", "physiotherapy", "." ],
+    "entities_indices" : [ [ 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "pattern", "of", "health", "care", "utilisation", "indicates", "that", "there", "is", "room", "for", "improving", "management", "of", "secondary", "chronic", "headache", "." ],
+    "entities_indices" : [ [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "Use", "of", "acute", "headache", "medication", "is", "associated", "with", "physician", "contact", "and", "CAM", "treatment", ",", "but", "even", "at", "the", "\"", "none", "\"", "contact", "level", "more", "than", "70", "%", "used", "acute", "headache", "medication", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 11, 12 ], [ 29, 30 ] ]
+  }, {
+    "sentence_tokens" : [ "Co-occurrence", "of", "migraine", "increased", "health", "care", "utilisation", "(", "physician", "contact", "(", "p", "=", "0.043", ")", ",", "and", "hospitalisation", "(", "p", "=", "0.04", ")", ")", "." ],
+    "entities_indices" : [ [ 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "All", "headaches", "were", "classified", "according", "to", "explicit", "diagnostic", "criteria", "of", "the", "ICHD-II", "and", "its", "relevant", "revisions", "[", "4,16-18]", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "To", "assess", "dependency", "like", "behaviour", "in", "relation", "to", "headache", "medication", ",", "we", "used", "the", "SDS", ",", "which", "includes", "five", "questions", "designed", "to", "measure", "psychological", "dependence", "[", "23,24", "]", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "CL", "and", "MBR", "was", "involved", "in", "data", "analysis", "and", "interpretation", "and", "assisted", "in", "preparation", "of", "the", "manuscript", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "Medication", "overuse", "as", "well", "as", "SDS", "score", "related", "to", "the", "overuse", "was", "significantly", "associated", "with", "increasing", "contacts", "with", "health", "services", ",", "whether", "CAM", "or", "GPs", "and", "neurologists", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 22, 23 ], [ 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "ESK", "prepared", "the", "initial", "draft", "and", "was", "the", "main", "author", "of", "the", "present", "manuscript", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "higher", "proportion", "of", "participants", "with", "than", "without", "co-occurrence", "of", "migraine", "used", "acute", "medication", "(", "93", "%", "vs.", "78", "%", ",", "p", "=", "0.024", ")", ",", "while", "there", "was", "no", "gender", "difference", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "distribution", "of", "medication", "overuse", "was", "similar", "in", "different", "subtypes", "of", "secondary", "chronic", "headaches", "." ],
+    "entities_indices" : [ [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "'", "were", "used", "to", "screen", "for", "chronic", "headache", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "International", "Headache", "Society", "'", "s", "classification", "committee", "encourages", "further", "research", "in", "order", "to", "provide", "more", "knowledge", "and", "information", "of", "secondary", "headaches", "[", "4,14", "]", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "Frequent", "use", "of", "medication", ",", "for", "instance", ",", "could", "be", "fully", "justified", "by", "a", "chronic", "inflammation", "or", "other", "conditions", "." ],
+    "entities_indices" : [ [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "have", "no", "specific", "information", "on", "what", "the", "GPs", "and/or", "neurologists", "have", "done", ",", "but", "it", "is", "likely", "to", "assume", "that", "unsatisfactory", "pharmacological", "treatment", "lead", "to", "higher", "use", "of", "CAM", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 29, 30 ] ]
+  }, {
+    "sentence_tokens" : [ "Most", "headaches", "are", "self", "managed", "[", "8]", ",", "but", "headache", "is", "also", "one", "of", "the", "most", "common", "reasons", "for", "consulting", "a", "general", "practitioner", "(", "GP", ")", "and", "accounts", "for", "4", "%", "of", "all", "GP", "consultations", "in", "the", "UK", "[", "9,10", "]", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 9, 10 ], [ 24, 25 ], [ 33, 34 ], [ 37, 38 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "International", "Classification", "of", "Headache", "Disorders", "2", "nd", "ed", "." ],
+    "entities_indices" : [ [ 4, 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "secondary", "chronic", "headaches", "CPTH", ",", "CEH", "and", "HACRS", "are", "frequent", "enough", "to", "ensure", "accurate", "descriptive", "statistics", ",", "while", "other", "types", "of", "secondary", "chronic", "headache", "are", "too", "infrequent", "for", "statistical", "analyses", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 4, 5 ], [ 6, 7 ], [ 8, 9 ], [ 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "Two", "women", "had", "chronic", "headache", ">", "3", "months", "associated", "with", "pre-eclampsia", ",", "one", "had", "had", "headache", "during", "all", "3", "pregnancies", "and", "one", "had", "headache", "during", "her", "first", "pregnancy", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 10, 11 ], [ 15, 16 ], [ 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "Participants", "and", "headache", "diagnoses", "." ],
+    "entities_indices" : [ [ 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "Altogether", ",", "almost", "50", "%", "overused", "headache", "medication", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "All", "persons", "in", "the", "sample", "received", "a", "mailed", "questionnaire", "with", "a", "standard", "letter", "containing", "information", "about", "the", "project", "." ],
+    "entities_indices" : [ [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "high", "level", "of", "neurologist", "contact", ",", "medication", "use", "and", "overuse", "and", "use", "of", "CAM", "indicate", "that", "this", "might", "be", "a", "complicated", "group", "to", "handle", "both", "in", "primary", "care", "and", "in", "neurologists", "setting", "." ],
+    "entities_indices" : [ [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "have", "previously", "described", "that", "HACRS", "may", "have", "a", "better", "prognosis", "than", "CPTH", "and", "especially", "CEH", "which", "support", "HACRS", "as", "a", "different", "entity", "[", "19,22", "]", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 12, 13 ], [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "Those", "with", "secondary", "chronic", "headache", "exclusively", "due", "to", "medication", "overuse", "were", "excluded.We", "defined", "secondary", "chronic", "headache", "as", "secondary", "headache", ">=", "15", "days", "and", "month", "for", "at", "least", "3", "months", ",", "as", "the", "ICHD-II", "do", "not", "provide", "an", "explicit", "definition", "of", "frequency", "for", "secondary", "headaches", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 15, 16 ], [ 18, 19 ], [ 32, 33 ], [ 43, 44 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "physician", "contact", "level", "was", "not", "influenced", "by", "type", "of", "medication", "overuse", "." ],
+    "entities_indices" : [ [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "Our", "aim", "was", "to", "evaluate", "utility", "of", "health", "service", "services", "and", "medication", "use", "in", "secondary", "chronic", "headache", "in", "the", "general", "population", "." ],
+    "entities_indices" : [ [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "different", "headache", "diagnoses", "were", "equally", "frequently", "by", "the", "two", "interviewers", ",", "suggesting", "that", "inter-observer", "variation", "was", "low", "." ],
+    "entities_indices" : [ [ 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "may", "be", "due", "to", "low", "expectations", "towards", "traditional", "medicine", "regarding", "secondary", "chronic", "headache", ",", "and/or", "on", "the", "contrary", "that", "secondary", "chronic", "headache", "is", "expected", "to", "be", "self-treatable", "." ],
+    "entities_indices" : [ [ 13, 14 ], [ 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "Co-occurrence", "of", "migraine", "." ],
+    "entities_indices" : [ [ 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "Two", "neurological", "residents", "(", "RBG", "and", "KA", ")", "experienced", "in", "headache", "diagnostics", "conducted", "all", "interviews", "and", "the", "physical", "and", "neurological", "examinations", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "Acute", "headache", "medication", "was", "taken", "by", "84", "%", "and", "11", "%", "used", "prophylactic", "medication", "." ],
+    "entities_indices" : [ [ 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "questions", "apply", "to", "the", "headache", "medication", "taken", "within", "the", "last", "month", "." ],
+    "entities_indices" : [ [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "Complementary", "and", "alternative", "medicine", "(", "CAM", ")", "contacts", "." ],
+    "entities_indices" : [ [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "includes", "medication", "used", "for", "high", "blood", "pressure", "and", "pain", "killers", "for", "non", "headache", "pain", "which", "both", "are", "is", "likely", "to", "influence", "the", "headache", "spectrum", ",", "a", "bias", "that", "we", "tried", "to", "avoid", "." ],
+    "entities_indices" : [ [ 5, 6, 7, 8 ], [ 9, 10 ], [ 13, 14 ], [ 14, 15 ], [ 23, 24 ] ]
+  } ],
+  "emptySentences" : [ {
+    "sentence_tokens" : [ "Management", "of", "secondary", "chronic", "headache", "in", "the", "general", "population", ":", "the", "Akershus", "study", "of", "chronic", "headache", "." ]
+  }, {
+    "sentence_tokens" : [ "Background", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "prevalence", "of", "secondary", "chronic", "headache", "in", "our", "population", "is", "0.5", "%", "." ]
+  }, {
+    "sentence_tokens" : [ "Data", "is", "sparse", "on", "these", "types", "of", "headache", "and", "information", "about", "utilisation", "of", "health", "care", "and", "medication", "is", "missing", "." ]
+  }, {
+    "sentence_tokens" : [ "Our", "aim", "was", "to", "evaluate", "utility", "of", "health", "service", "services", "and", "medication", "use", "in", "secondary", "chronic", "headache", "in", "the", "general", "population", "." ]
+  }, {
+    "sentence_tokens" : [ "Methods", "." ]
+  }, {
+    "sentence_tokens" : [ "An", "age", "and", "gender", "stratified", "cross-sectional", "epidemiological", "survey", "included", "30,000", "persons", "30-44", "years", "old", "." ]
+  }, {
+    "sentence_tokens" : [ "Diagnoses", "were", "interview", "based", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "International", "Classification", "of", "Headache", "Disorders", "2", "nd", "ed", "." ]
+  }, {
+    "sentence_tokens" : [ "was", "applied", "along", "with", "supplementary", "definitions", "for", "chronic", "rhinosinusitis", "and", "cervicogenic", "headache", "." ]
+  }, {
+    "sentence_tokens" : [ "Secondary", "chronic", "headache", "exclusively", "due", "to", "medication", "overuse", "was", "excluded", "." ]
+  }, {
+    "sentence_tokens" : [ "Results", "." ]
+  }, {
+    "sentence_tokens" : [ "One", "hundred", "and", "thirteen", "participants", "had", "secondary", "chronic", "headache", "." ]
+  }, {
+    "sentence_tokens" : [ "Thirty", "%", "had", "never", "consulted", "a", "physician", ",", "70", "%", "had", "consulted", "their", "GP", ",", "35", "%", "had", "consulted", "a", "neurologist", "and", "5", "%", "had", "been", "hospitalised", "due", "to", "their", "secondary", "chronic", "headache", "." ]
+  }, {
+    "sentence_tokens" : [ "Co-occurrence", "of", "migraine", "or", "medication", "overuse", "increased", "the", "physician", "contact", "." ]
+  }, {
+    "sentence_tokens" : [ "Acute", "headache", "medication", "was", "taken", "by", "84", "%", "and", "11", "%", "used", "prophylactic", "medication", "." ]
+  }, {
+    "sentence_tokens" : [ "Complementary", "and", "alternative", "medicine", "was", "used", "by", "73", "%", "with", "the", "higher", "frequency", "among", "those", "with", "than", "without", "physician", "contact", "." ]
+  }, {
+    "sentence_tokens" : [ "Conclusion", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "pattern", "of", "health", "care", "utilisation", "indicates", "that", "there", "is", "room", "for", "improving", "management", "of", "secondary", "chronic", "headache", "." ]
+  }, {
+    "sentence_tokens" : [ "Background", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "WHO", "initiated", "'", "Lifting", "the", "burden", ":", "the", "global", "campaign", "to", "reduce", "the", "burden", "of", "headache", "'", "because", "headache", "is", "common", ",", "under-diagnosed", "and", "undertreated", "[", "1-3", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "International", "Classification", "of", "Headache", "Disorders", "2", "edition", "(", "ICHD-II", ")", "provides", "diagnostic", "criteria", "for", "headaches", "which", "are", "divided", "into", "primary", "and", "secondary", "forms", "[", "4", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Most", "headaches", "are", "self", "managed", "[", "8]", ",", "but", "headache", "is", "also", "one", "of", "the", "most", "common", "reasons", "for", "consulting", "a", "general", "practitioner", "(", "GP", ")", "and", "accounts", "for", "4", "%", "of", "all", "GP", "consultations", "in", "the", "UK", "[", "9,10", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Approximately", "20-30", "%", "of", "all", "new", "referrals", "to", "out-patients", "neurological", "departments", "are", "due", "to", "headache", "[", "9-12", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Headache", "has", "been", "suggested", "to", "be", "the", "most", "common", "new", "neurological", "symptom", "presented", "[", "13", "]", ",", "and", "many", "neurological", "conditions", "include", "headache", "in", "the", "symptomatology", ",", "thus", "it", "also", "represents", "an", "important", "neurological", "differential", "diagnosis", "and", "may", "cause", "high", "use", "of", "health", "care", "services.Epidemiological", "data", "on", "secondary", "headaches", "are", "largely", "lacking", ",", "and", "most", "information", "are", "from", "studies", "that", "have", "not", "had", "a", "main", "focus", "on", "secondary", "chronic", "headache", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "International", "Headache", "Society", "'", "s", "classification", "committee", "encourages", "further", "research", "in", "order", "to", "provide", "more", "knowledge", "and", "information", "of", "secondary", "headaches", "[", "4,14", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "have", "previously", "described", "the", "management", "of", "primary", "chronic", "headaches", "in", "the", "general", "population", "[", "15", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Our", "aim", "here", "was", "to", "investigate", "secondary", "chronic", "headache", "in", "the", "general", "population", "in", "order", "to", "evaluate", "utility", "of", "health", "services", "and", "medication", "use", "." ]
+  }, {
+    "sentence_tokens" : [ "Methods", "." ]
+  }, {
+    "sentence_tokens" : [ "Figure", "1", "shows", "a", "flow-chart", "of", "the", "study", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "method", "has", "been", "described", "in", "more", "detail", "elsewhere", "[", "6,15", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Sampling", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "random", "age", "stratified", "sample", "of", "15", "000", "men", "and", "15", "000", "women", ",", "30", "-", "44", "years", "old", "and", "residing", "in", "the", "20", "eastern", "municipalities", "in", "Akershus", "County", ",", "was", "drawn", "from", "the", "National", "Personal", "Registry", "by", "Statistics", "Norway", "." ]
+  }, {
+    "sentence_tokens" : [ "Akershus", "County", "has", "both", "rural", "and", "urban", "areas", "and", "is", "situated", "in", "close", "proximity", "to", "Oslo", "." ]
+  }, {
+    "sentence_tokens" : [ "Questionnaire", "." ]
+  }, {
+    "sentence_tokens" : [ "All", "persons", "in", "the", "sample", "received", "a", "mailed", "questionnaire", "with", "a", "standard", "letter", "containing", "information", "about", "the", "project", "." ]
+  }, {
+    "sentence_tokens" : [ "Apart", "from", "ensuring", "confidentiality", "and", "emphasizing", "the", "importance", "of", "participation", ",", "it", "was", "stated", "that", "the", "object", "was", "to", "study", "headache", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "questions", "'", "How", "many", "days", "during", "the", "last", "month", "have", "you", "had", "headache", "?" ]
+  }, {
+    "sentence_tokens" : [ "'", "and", "'", "How", "many", "days", "during", "the", "last", "year", "have", "you", "had", "headache", "?" ]
+  }, {
+    "sentence_tokens" : [ "'", "were", "used", "to", "screen", "for", "chronic", "headache", "." ]
+  }, {
+    "sentence_tokens" : [ "If", "the", "questionnaire", "evoked", "no", "response", ",", "a", "second", "and", "subsequently", "a", "third", "reminder", "were", "issued", "." ]
+  }, {
+    "sentence_tokens" : [ "Clinical", "interview", ",", "physical", "and", "neurological", "examination", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "study", "took", "place", "at", "the", "Akershus", "University", "Hospital", "in", "2005", "." ]
+  }, {
+    "sentence_tokens" : [ "Persons", "with", "self", "reported", "chronic", "headache", "who", "also", "consented", "by", "adding", "their", "telephone", "number", "on", "the", "questionnaire", "were", "invited", "to", "a", "clinical", "examination", "." ]
+  }, {
+    "sentence_tokens" : [ "Self", "reported", "chronic", "headache", "was", "defined", "to", "be", "headache", "occurring", ">=", "15", "days", "within", "the", "last", "month", "and/or", "headache", "occurring", ">=", "180", "days", "within", "the", "last", "year", "." ]
+  }, {
+    "sentence_tokens" : [ "Inclusion", "required", "Norwegian", "languages", "skills", "." ]
+  }, {
+    "sentence_tokens" : [ "Two", "neurological", "residents", "(", "RBG", "and", "KA", ")", "experienced", "in", "headache", "diagnostics", "conducted", "all", "interviews", "and", "the", "physical", "and", "neurological", "examinations", "." ]
+  }, {
+    "sentence_tokens" : [ "Those", "unable", "to", "meet", "at", "the", "clinic", "were", "interviewed", "by", "telephone", "." ]
+  }, {
+    "sentence_tokens" : [ "Headache", "classification", "." ]
+  }, {
+    "sentence_tokens" : [ "All", "headaches", "were", "classified", "according", "to", "explicit", "diagnostic", "criteria", "of", "the", "ICHD-II", "and", "its", "relevant", "revisions", "[", "4,16-18]", "." ]
+  }, {
+    "sentence_tokens" : [ "Those", "with", "secondary", "chronic", "headache", "exclusively", "due", "to", "medication", "overuse", "were", "excluded.We", "defined", "secondary", "chronic", "headache", "as", "secondary", "headache", ">=", "15", "days", "and", "month", "for", "at", "least", "3", "months", ",", "as", "the", "ICHD-II", "do", "not", "provide", "an", "explicit", "definition", "of", "frequency", "for", "secondary", "headaches", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "more", "detailed", "description", "has", "been", "published", "elsewhere", "[", "6,19", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Chronic", "post-traumatic", "headache", "(", "CPTH", ")", "included", "head", "and", "whiplash", "traumas.Cervicogenic", "headache", "(", "CEH", ")", "was", "classified", "according", "to", "the", "criteria", "of", "the", "Cervicogenic", "Headache", "International", "Study", "Group", ",", "requiring", "at", "least", "three", "criteria", "to", "be", "fulfilled", "not", "including", "blockade", "of", "the", "neck", "due", "to", "the", "non", "interventional", "nature", "of", "our", "study", "(", "Table", "1", ")", "[", "20", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Headache", "attributed", "to", "chronic", "rhinosinusitis", "(", "HACRS", ")", "was", "defined", "according", "to", "the", "criteria", "established", "by", "the", "American", "Academy", "of", "Otolaryngology", "-", "Head", "and", "Neck", "Surgery", "(", "Table", "2", ")", "[", "21", "]", "adding", "that", "the", "symptoms", "had", "persisted", "12", "weeks", "or", "more", "." ]
+  }, {
+    "sentence_tokens" : [ "Those", "with", "suspected", "HACRS", "were", "examined", "with", "anterior", "rhinoscopy", "and", "completed", "the", "Sino-Nasal", "questionnaire", "(", "SNOT-20", ")", "[", "22", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Pregnancy", "related", "headache", "is", "not", "an", "ICHD-II", "diagnosis", "unless", "it", "is", "associated", "with", "eclampsia", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "included", "4", "women", "who", "experienced", "headache", "exclusively", "during", "pregnancy", "." ]
+  }, {
+    "sentence_tokens" : [ "Two", "women", "had", "chronic", "headache", ">", "3", "months", "associated", "with", "pre-eclampsia", ",", "one", "had", "had", "headache", "during", "all", "3", "pregnancies", "and", "one", "had", "headache", "during", "her", "first", "pregnancy", "." ]
+  }, {
+    "sentence_tokens" : [ "Physician", "consultation", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "defined", "four", "levels", "of", "contact", "due", "to", "headache", ",", "i.e.", "none", "(", "no", "physician", "contact", ")", ",", "primary", "(", "GP", ")", ",", "secondary", "(", "neurologist", ")", "and", "tertiary", "(", "hospitalisation", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "Norway", ",", "a", "GP", "referral", "is", "a", "prerequisite", "for", "access", "to", "neurologists", ",", "while", "both", "GPs", "and", "neurologists", "can", "refer", "to", "the", "hospital", "." ]
+  }, {
+    "sentence_tokens" : [ "Complementary", "and", "alternative", "medicine", "(", "CAM", ")", "contacts", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "CAM", "forms", "queried", "were", "acupuncture", ",", "chiropractic", ",", "homeopathy", ",", "naprapathy", ",", "physiotherapy", ",", "psychologist", "and", "psychomotor", "physiotherapy", "." ]
+  }, {
+    "sentence_tokens" : [ "Medication", "use", "and", "dependency", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "asked", "about", "current", "medication", "use", ",", "and", "excluded", "medication", "used", "for", "other", "pain", "conditions", "." ]
+  }, {
+    "sentence_tokens" : [ "Medication", "overuse", "was", "defined", "according", "to", "the", "ICHD-II", "criteria", "for", "medication", "overuse", "headache", "(", "i.e.", ">=", "15", "days", "per", "month", "for", "simple", "analgesics", "and", ">=", "10", "days", "per", "months", "for", "triptans", "and", "ergotamines", ")", "[", "4,17", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "To", "assess", "dependency", "like", "behaviour", "in", "relation", "to", "headache", "medication", ",", "we", "used", "the", "SDS", ",", "which", "includes", "five", "questions", "designed", "to", "measure", "psychological", "dependence", "[", "23,24", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "questions", "apply", "to", "the", "headache", "medication", "taken", "within", "the", "last", "month", "." ]
+  }, {
+    "sentence_tokens" : [ "Each", "item", "is", "scored", "on", "a", "4-point", "scale", "(", "0", "-", "3", ")", ",", "and", "the", "total", "maximum", "score", "is", "15", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "method", "has", "been", "described", "in", "detail", "elsewhere", "[", "24", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Data", "processing", "." ]
+  }, {
+    "sentence_tokens" : [ "Data", "from", "the", "interviews", "were", "directly", "entered", "using", "SPSS", "Data", "Entry", "4.0", "(", "SPSS", "Inc", ".,", "Chicago", ",", "IL", ",", "USA", ")", "and", "statistical", "analyses", "were", "performed", "using", "SPSS", "20.00", "(", "SPSS", "Inc", ".,", "Chicago", ",", "IL", ",", "USA", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "descriptive", "data", ",", "proportions", ",", "means", "and", "confidence", "intervals", "(", "CI", ")", "are", "given", "." ]
+  }, {
+    "sentence_tokens" : [ "Pearson", "chi", "test", "was", "used", "for", "testing", "significance", "of", "group", "differences", "for", "categorical", "data", ",", "Fisher", "'", "s", "exact", "test", "was", "used", "when", "appropriate", "." ]
+  }, {
+    "sentence_tokens" : [ "Student", "'", "s", "T-test", "was", "used", "for", "numerical", "data", "." ]
+  }, {
+    "sentence_tokens" : [ "Significance", "levels", "were", "set", "at", "p", "<", "0.05", "and", "95", "%", "CI", "were", "calculated", "." ]
+  }, {
+    "sentence_tokens" : [ "CI", "and", "probabilities", "are", "not", "given", "when", "n", "<", "5", "." ]
+  }, {
+    "sentence_tokens" : [ "Ethical", "issues", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "Regional", "Committee", "for", "Medical", "Research", "Ethics", "and", "the", "Norwegian", "Social", "Science", "Data", "Services", "approved", "the", "study", "." ]
+  }, {
+    "sentence_tokens" : [ "All", "participants", "gave", "informed", "consent", "." ]
+  }, {
+    "sentence_tokens" : [ "Results", "." ]
+  }, {
+    "sentence_tokens" : [ "Participants", "and", "headache", "diagnoses", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "questionnaire", "response", "rate", "was", "71", "%", "and", "the", "interview", "participation", "rate", "was", "74", "%", "." ]
+  }, {
+    "sentence_tokens" : [ "Among", "the", "participants", ",", "82", "%", "(", "93/113", ")", "had", "an", "interview", "and", "a", "physical", "and", "neurological", "examination", "at", "the", "clinic", ",", "whereas", "18", "%", "(", "20/113", ")", "had", "an", "interview", "by", "telephone", "." ]
+  }, {
+    "sentence_tokens" : [ "Whether", "the", "participants", "had", "been", "interviewed", "in", "person", "or", "by", "phone", "made", "no", "difference", "to", "the", "frequency", "of", "the", "various", "headache", "diagnoses", ",", "medication", "use", ",", "medication", "overuse", ",", "physician", "or", "CAM", "contact.A", "total", "of", "113", "participants", "(", "22", "%", "men", "and", "78", "%", "women", ")", "had", "secondary", "chronic", "headaches", "not", "exclusively", "due", "to", "medication", "overuse.Forty-two", "%", "had", "CPTH", ",", "21", "%", "had", "CEH", ",", "41", "%", "HACRS", "and", "8", "%", "had", "other", "secondary", "chronic", "headache", ",", "i.e.", "3", "post-craniotomy", ",", "1", "diving", "related", ",", "4", "pregnancy", "related", ",", "and", "1", "post-meningitis.The", "sum", "exceeds", "100", "%", ",", "since", "the", "diagnoses", "are", "not", "mutually", "exclusive", "." ]
+  }, {
+    "sentence_tokens" : [ "Forty-one", "%", "had", "co-occurrence", "of", "migraine", "and", "49", "%", "had", "co-occurrence", "of", "medication", "overuse", "." ]
+  }, {
+    "sentence_tokens" : [ "Physician", "consultation", "pattern", "." ]
+  }, {
+    "sentence_tokens" : [ "Table", "3", "shows", "the", "physician", "contact", "pattern.Thirty", "%", "(", "34/113", ")", "had", "never", "had", "contact", "with", "the", "health", "care", "system", "for", "their", "secondary", "chronic", "headache", ",", "while", "70", "%", "(", "79/113", ")", "had", "had", "contact", "with", "their", "GP", ",", "35", "%", "(", "40/113", ")", "had", "been", "referred", "to", "a", "neurologist", "and", "5", "%", "(", "6/113", ")", "had", "been", "hospitalised", "for", "their", "secondary", "chronic", "headache", "." ]
+  }, {
+    "sentence_tokens" : [ "There", "was", "no", "gender", "difference", "in", "the", "physician", "contact", "pattern", "." ]
+  }, {
+    "sentence_tokens" : [ "Complementary", "and", "alternative", "medicine", "." ]
+  }, {
+    "sentence_tokens" : [ "Table", "3", "shows", "that", "73", "%", "(", "82/113", ")", "had", "used", "CAM", "for", "their", "secondary", "chronic", "headache", "." ]
+  }, {
+    "sentence_tokens" : [ "Physiotherapy", ",", "acupuncture", "and", "chiropractic", "were", "most", "frequently", "used", "." ]
+  }, {
+    "sentence_tokens" : [ "Physiotherapy", "was", "most", "commonly", "used", "in", "CPTH", ",", "CEH", "and", "HACRS", ",", "i.e.", "85", "%", ",", "75", "%", "and", "48", "%", ",", "respectively.The", "use", "of", "CAM", "was", "significantly", "higher", "among", "those", "who", "had", "consulted", "a", "physician", "compared", "to", "those", "who", "had", "not", "(", "84", "%", "vs.", "47", "%", ",", "p", "<", "0.001", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Co-occurrence", "of", "migraine", "." ]
+  }, {
+    "sentence_tokens" : [ "Co-occurrence", "of", "migraine", "increased", "health", "care", "utilisation", "(", "physician", "contact", "(", "p", "=", "0.043", ")", ",", "and", "hospitalisation", "(", "p", "=", "0.04", ")", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "overall", "use", "of", "CAM", "was", "not", "significantly", "influenced", "by", "migraine", ",", "although", "there", "was", "a", "tendency", "for", "a", "higher", "usage", "of", "CAM", "among", "people", "with", "than", "without", "co-occurrence", "of", "migraine", "." ]
+  }, {
+    "sentence_tokens" : [ "Use", "of", "medication", "." ]
+  }, {
+    "sentence_tokens" : [ "Acute", "medication", "was", "used", "by", "84", "%", ",", "and", "19", "%", "used", "it", "on", "a", "daily", "basis", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "higher", "proportion", "of", "participants", "with", "than", "without", "co-occurrence", "of", "migraine", "used", "acute", "medication", "(", "93", "%", "vs.", "78", "%", ",", "p", "=", "0.024", ")", ",", "while", "there", "was", "no", "gender", "difference", "." ]
+  }, {
+    "sentence_tokens" : [ "People", "using", "acute", "medication", "had", "significantly", "more", "physician", "contact", "than", "people", "not", "using", "acute", "medication", "(", "89", "%", "vs.", "74", "%", ",", "p", "=", "0.045", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "People", "using", "acute", "medication", "had", "significantly", "more", "CAM", "use", "than", "people", "not", "using", "acute", "medication", "(", "89", "%", "vs.", "71", "%", ",", "p", "=", "0.019", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Contact", "with", "physicians", "was", "significantly", "influenced", "by", "medication", "overuse", "(", "82", "%", "vs.", "59", "%", ",", "p", "=", "0.007", ")", ",", "and", "proportions", "with", "none", ",", "primary", "and", "secondary", "physician", "contact", "level", "was", "also", "different", "for", "those", "with", "compared", "to", "those", "without", "medication", "overuse", "(", "Figure", "2", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "higher", "proportion", "of", "those", "with", "than", "without", "medication", "overuse", "used", "CAM", "(", "82", "%", "vs.", "64", "%", ",", "p", "=", "0.032", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "distribution", "of", "medication", "overuse", "was", "similar", "in", "different", "subtypes", "of", "secondary", "chronic", "headaches", "." ]
+  }, {
+    "sentence_tokens" : [ "Fifty-eight", "%", "overused", "simple", "analgesics", ",", "mainly", "paracetamol", "and/or", "ibuprofen", "and", "31", "%", "overused", "combination", "analgesics", ",", "usually", "a", "combination", "of", "paracetamol", "and", "codeine", "." ]
+  }, {
+    "sentence_tokens" : [ "Of", "the", "latter", "53", "%", "also", "overused", "simple", "analgesics", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "physician", "contact", "level", "was", "not", "influenced", "by", "type", "of", "medication", "overuse", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "SDS", "score", "was", "significantly", "higher", "in", "those", "with", "than", "without", "medication", "overuse", "for", "all", "levels", "of", "physician", "contact", "(", "Figure", "3", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Prophylactic", "treatment", "was", "used", "by", "11", "%", "(", "12/113", ")", "and", "was", "not", "influenced", "by", "gender", "or", "co-occurrence", "of", "migraine", "." ]
+  }, {
+    "sentence_tokens" : [ "Discussion", "." ]
+  }, {
+    "sentence_tokens" : [ "Presentation", "of", "main", "findings", "." ]
+  }, {
+    "sentence_tokens" : [ "Two-thirds", "of", "those", "with", "secondary", "chronic", "headache", "consulted", "their", "GP", "for", "headache", ",", "and", "half", "of", "these", "had", "also", "consulted", "a", "neurologist", "." ]
+  }, {
+    "sentence_tokens" : [ "Approximately", "40", "%", "had", "co-occurrence", "of", "migraine", ",", "and", "approximately", "50", "%", "had", "medication", "overuse", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "majority", "used", "acute", "medication", ",", "while", "prophylactic", "medication", "was", "rarely", "used", "." ]
+  }, {
+    "sentence_tokens" : [ "Medication", "use", ",", "medication", "overuse", "and", "high", "SDS", "score", "were", "associated", "with", "more", "physician", "contact", ",", "referral", "and", "use", "of", "CAM", "." ]
+  }, {
+    "sentence_tokens" : [ "Methodological", "considerations", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "present", "study", "is", "based", "on", "recruitment", "from", "the", "general", "population", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "large", "sample", "and", "high", "response", "rate", "should", "ensure", "representativity", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "secondary", "chronic", "headaches", "CPTH", ",", "CEH", "and", "HACRS", "are", "frequent", "enough", "to", "ensure", "accurate", "descriptive", "statistics", ",", "while", "other", "types", "of", "secondary", "chronic", "headache", "are", "too", "infrequent", "for", "statistical", "analyses", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "age", "range", ",", "though", "it", "may", "exclude", "some", "secondary", "headache", "types", ",", "was", "chosen", "explicitly", "to", "focus", "on", "a", "population", "without", "too", "much", "co-morbidity", "of", "non", "headache", "disorders", "." ]
+  }, {
+    "sentence_tokens" : [ "Data", "from", "the", "Norwegian", "prescription", "registry", "indicate", "a", "high", "increase", "in", "drug", "prescriptions", "among", "people", "above", "50", "years", "[", "25", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "includes", "medication", "used", "for", "high", "blood", "pressure", "and", "pain", "killers", "for", "non", "headache", "pain", "which", "both", "are", "is", "likely", "to", "influence", "the", "headache", "spectrum", ",", "a", "bias", "that", "we", "tried", "to", "avoid", "." ]
+  }, {
+    "sentence_tokens" : [ "Headache", "diagnoses", "are", "a", "challenge", "in", "people", "with", "chronic", "headache", "." ]
+  }, {
+    "sentence_tokens" : [ "To", "ensure", "precise", "diagnostic", ",", "two", "neurological", "residents", "experienced", "in", "headache", "diagnostics", "conducted", "all", "interviews", "." ]
+  }, {
+    "sentence_tokens" : [ "Complicated", "headache", "histories", "were", "discussed", "among", "the", "authors", "before", "classification", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "different", "headache", "diagnoses", "were", "equally", "frequently", "by", "the", "two", "interviewers", ",", "suggesting", "that", "inter-observer", "variation", "was", "low", "." ]
+  }, {
+    "sentence_tokens" : [ "Whether", "the", "participants", "had", "been", "interviewed", "in", "person", "or", "by", "phone", "made", "no", "difference", "to", "the", "various", "outcomes", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "ICHD-II", "classification", "of", "the", "secondary", "chronic", "headaches", "is", "a", "challenge", "since", "chronicity", "is", "not", "defined", "exhaustively", "[", "4", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Likewise", ",", "the", "diagnoses", "of", "CEH", "are", "not", "specific", "and", "the", "diagnosis", "HACRS", "is", "not", "part", "of", "the", "ICHD-II", "classification", "[", "20,21", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "data", "on", "medication", "use", "and", "health", "care", "utilisation", "are", "based", "on", "self-reports", "and", "therefore", "open", "to", "recall", "bias", "." ]
+  }, {
+    "sentence_tokens" : [ "Health", "registry", "data", "are", ",", "however", ",", "often", "incomplete", "and", "not", "necessarily", "more", "precise", "." ]
+  }, {
+    "sentence_tokens" : [ "Since", "there", "is", "no", "systematic", "registration", "of", "CAM", ",", "one", "has", "to", "rely", "on", "self-reports", "." ]
+  }, {
+    "sentence_tokens" : [ "Physician", "contact", "and", "use", "of", "complementary", "and", "alternative", "medicine", "." ]
+  }, {
+    "sentence_tokens" : [ "Surprisingly", ",", "even", "though", "high", "levels", "of", "specialist", "contact", ",", "high", "medication", "use", ",", "medication", "overuse", "and", "high", "proportions", "of", "CAM", "contacts", "seem", "to", "suggest", "a", "difficult", "headache", "situation", "for", "many", "of", "our", "participants", ",", "as", "many", "as", "1/3", "had", "no", "physician", "contact", "ever", "due", "to", "their", "headache", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "figure", "is", "higher", "than", "the", "corresponding", "figure", "for", "primary", "chronic", "headaches", "where", "only", "20", "%", "had", "no", "such", "contact", "[", "15", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "may", "be", "due", "to", "low", "expectations", "towards", "traditional", "medicine", "regarding", "secondary", "chronic", "headache", ",", "and/or", "on", "the", "contrary", "that", "secondary", "chronic", "headache", "is", "expected", "to", "be", "self-treatable", "." ]
+  }, {
+    "sentence_tokens" : [ "Another", "possible", "explanation", "might", "be", "that", "the", "secondary", "chronic", "headache", "is", "less", "disabling", "than", "migraine", "." ]
+  }, {
+    "sentence_tokens" : [ "Co-occurrence", "of", "migraine", "increased", "physician", "contact", ",", "and", "this", "might", "explain", "why", "some", "of", "those", "without", "co-occurrence", "of", "migraine", "rely", "on", "self-treatment", "for", "their", "secondary", "chronic", "headache.The", "use", "of", "CAM", "was", "high", "in", "our", "population", "with", "secondary", "chronic", "headaches", "and", "the", "use", "of", "CAM", "was", "significantly", "higher", "among", "those", "who", "had", "consulted", "a", "physician", "compared", "to", "those", "who", "had", "not", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "have", "no", "specific", "information", "on", "what", "the", "GPs", "and/or", "neurologists", "have", "done", ",", "but", "it", "is", "likely", "to", "assume", "that", "unsatisfactory", "pharmacological", "treatment", "lead", "to", "higher", "use", "of", "CAM", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "both", "pharmacological", "and", "CAM", "treatment", "followed", "the", "same", "pattern", "i.e.", "more", "medication", "use", "correlated", "with", "more", "CAM", "use", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "suggests", "that", "some", "secondary", "chronic", "headache", "sufferers", "will", "try", "many", "treatment", "options", "to", "alleviate", "their", "headache.The", "most", "frequent", "secondary", "chronic", "headaches", "(", "CPTH", ",", "CEH", "and", "HACRS", ")", "had", "surprisingly", "similar", "pattern", "of", "CAM", "use", "despite", "these", "are", "caused", "by", "different", "pathophysiological", "mechanisms", "." ]
+  }, {
+    "sentence_tokens" : [ "Physiotherapy", "was", "the", "most", "commonly", "used", "strategy", "in", "all", "these", "three", "groups", ",", "but", "to", "a", "much", "higher", "degree", "in", "people", "with", "CPTH", "and", "CEH", "probably", "due", "to", "the", "fact", "that", "these", "people", "have", "more", "neck", "and", "muscular", "pain", "and", "tenderness", "than", "people", "with", "HACRS", "." ]
+  }, {
+    "sentence_tokens" : [ "Usage", "of", "acupuncture", ",", "chiropractic", "and", "homeopathy", "was", "remarkably", "similar", "between", "the", "three", "groups", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "relation", "to", "HACRS", ",", "this", "may", "suggest", "that", "this", "entity", "is", "rarely", "recognised", "by", "people", "or", "diagnosed", "by", "either", "physicians", "or", "by", "those", "practicing", "CAM", "." ]
+  }, {
+    "sentence_tokens" : [ "An", "alternative", "may", "be", "that", "rhinosinusitis", "problems", "are", "commonly", "present", "in", "other", "conditions", "with", "secondary", "headache", ",", "either", "by", "coincidence", "or", "by", "interactions", "based", "on", "medication", "use", "or", "other", "causal", "or", "interactive", "relationships", "such", "as", "sensitisation", "processes", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "have", "previously", "described", "that", "HACRS", "may", "have", "a", "better", "prognosis", "than", "CPTH", "and", "especially", "CEH", "which", "support", "HACRS", "as", "a", "different", "entity", "[", "19,22", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "improvement", "among", "participants", "with", "HACRS", "was", "seen", "especially", "in", "those", "who", "had", "interventions", "for", "their", "rhinosinusitis", "and", "who", "had", "reduced", "their", "nasal", "decongestants", "and", "their", "headache", "medication", "overuse", "[", "22", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Use", "of", "medication", "." ]
+  }, {
+    "sentence_tokens" : [ "Use", "of", "acute", "headache", "medication", "is", "associated", "with", "physician", "contact", "and", "CAM", "treatment", ",", "but", "even", "at", "the", "\"", "none", "\"", "contact", "level", "more", "than", "70", "%", "used", "acute", "headache", "medication", "." ]
+  }, {
+    "sentence_tokens" : [ "Altogether", ",", "almost", "50", "%", "overused", "headache", "medication", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "most", "revised", "version", "of", "the", "headache", "classification", "this", "headache", "should", "be", "classified", "as", "probable", "MOH", "until", "detoxification", "has", "taken", "place", ",", "in", "which", "case", "it", "would", "be", "classified", "either", "as", "MOH", "(", "if", "improvement", "is", "seen", ")", "or", "as", "the", "remaining", "alternative", ",", "secondary", "chronic", "headache", "diagnosis", "(", "if", "no", "improvement", "is", "seen", ")", "[", "4,16-18]", "." ]
+  }, {
+    "sentence_tokens" : [ "However", "in", "a", "cross-sectional", "study", "such", "as", "the", "present", "one", ",", "both", "diagnoses", "must", "be", "given", "and", "a", "co-morbid", "situation", "considered", "." ]
+  }, {
+    "sentence_tokens" : [ "Medication", "overuse", "as", "well", "as", "SDS", "score", "related", "to", "the", "overuse", "was", "significantly", "associated", "with", "increasing", "contacts", "with", "health", "services", ",", "whether", "CAM", "or", "GPs", "and", "neurologists", "." ]
+  }, {
+    "sentence_tokens" : [ "Medication", "overuse", "seems", "to", "be", "either", "a", "marker", "of", "a", "complex", "chronic", "headache", "requiring", "increased", "support", "from", "the", "health", "services", "or", "causally", "associated", "with", "a", "worsening", "of", "the", "headache", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "direction", "of", "causality", "of", "these", "associations", "cannot", "be", "determined", "in", "a", "cross-sectional", "study", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "concept", "of", "medication", "overuse", "in", "secondary", "headaches", "is", "still", "debatable", "." ]
+  }, {
+    "sentence_tokens" : [ "Frequent", "use", "of", "medication", ",", "for", "instance", ",", "could", "be", "fully", "justified", "by", "a", "chronic", "inflammation", "or", "other", "conditions", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "addition", ",", "the", "direction", "of", "a", "possibly", "causal", "association", "between", "medication", "overuse", "and", "the", "underlying", "headache", "becomes", "even", "more", "difficult", "to", "ascertain", "if", "the", "headache", "is", "assumed", "to", "be", "secondary", "to", "another", ",", "defined", "organic", "cause", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "simply", "the", "high", "co-occurrence", "of", "medication", "overuse", "seems", "to", "suggest", "the", "potential", "for", "trying", "detoxification", "also", "in", "the", "case", "of", "secondary", "chronic", "headaches", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "have", "previously", "reported", "that", "reduced", "medication", "overuse", "is", "associated", "with", "improvement", "of", "CPTH", "and", "HACRS", "[", "19,22", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "CEH", "did", "not", "improve", "after", "detoxification", ",", "but", "detoxification", "did", "not", "worsen", "the", "headache", "or", "have", "other", "negative", "effects", "[", "19", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "contrast", "to", "the", "high", "level", "of", "acute", "medication", "use", "stands", "the", "low", "level", "use", "of", "prophylactics", "." ]
+  }, {
+    "sentence_tokens" : [ "Which", "prophylactics", "that", "may", "be", "useful", "in", "secondary", "chronic", "headaches", "is", "not", "sufficiently", "described", "and", "should", "be", "addressed", "by", "further", "studies.However", ",", "the", "41", "%", "co-occurrence", "of", "migrainous", "headache", "may", "suggest", "a", "potential", "for", "using", "migraine", "prophylactics", "." ]
+  }, {
+    "sentence_tokens" : [ "It", "is", "suggested", "that", "migraineurs", "are", "undertreated", "and", "a", "substantial", "proportion", "of", "those", "who", "might", "benefit", "from", "migraine", "prevention", "do", "not", "receive", "it", "[", "26,27", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Conclusion", "." ]
+  }, {
+    "sentence_tokens" : [ "Secondary", "chronic", "headache", "is", "a", "heterogeneous", "group", "of", "headache", "disorders", "with", "a", "high", "level", "of", "health", "care", "utilisation", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "high", "level", "of", "neurologist", "contact", ",", "medication", "use", "and", "overuse", "and", "use", "of", "CAM", "indicate", "that", "this", "might", "be", "a", "complicated", "group", "to", "handle", "both", "in", "primary", "care", "and", "in", "neurologists", "setting", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "treatment", "strategy", "should", "be", "focused", "on", "the", "type", "of", "secondary", "chronic", "headache", "." ]
+  }, {
+    "sentence_tokens" : [ "Detoxification", "of", "medication", "overuse", "is", "recommended", "and", "prophylactic", "treatment", "might", "also", "be", "effective", ",", "although", "the", "latter", "has", "not", "been", "documented", "in", "clinical", "trials", "." ]
+  }, {
+    "sentence_tokens" : [ "Competing", "interest", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "authors", "declare", "that", "they", "have", "no", "competing", "interest", "." ]
+  }, {
+    "sentence_tokens" : [ "Authors", "'", "contributions", "." ]
+  }, {
+    "sentence_tokens" : [ "MBR", "had", "the", "original", "idea", "for", "the", "study", "and", "planned", "the", "overall", "design", "." ]
+  }, {
+    "sentence_tokens" : [ "ESK", "prepared", "the", "initial", "draft", "and", "was", "the", "main", "author", "of", "the", "present", "manuscript", "." ]
+  }, {
+    "sentence_tokens" : [ "RBG", "and", "KA", "collected", "data", "." ]
+  }, {
+    "sentence_tokens" : [ "CL", "and", "MBR", "was", "involved", "in", "data", "analysis", "and", "interpretation", "and", "assisted", "in", "preparation", "of", "the", "manuscript", "." ]
+  }, {
+    "sentence_tokens" : [ "All", "authors", "have", "read", ",", "revised", "and", "approved", "the", "final", "manuscript", "." ]
+  } ]
+}

@@ -1,211 +1,694 @@
-[ {
-  "sentence_tokens" : [ "This", "underlines", "the", "importance", "of", "patient", "involvement", "in", "reported", "outcomes", ",", "demonstrating", "that", "minor", "hair", "loss", "should", "be", "considered", "normal", "in", "successful", "SC", "." ],
-  "event_indices" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 0, 1 ],
-  "controlled_indices" : [ 22, 23 ],
-  "trigger_indices" : [ 1, 2 ],
-  "rule_name" : "Positive_activation_syntax_1_verb, pronominalMatch",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Although", "the", "exact", "mechanism", "by", "which", "SC", "prevents", "alopecia", "is", "not", "yet", "fully", "understood", ",", "SC", "presumably", "leads", "to", "protection", "of", "the", "hair", "follicle", "." ],
-  "event_indices" : [ 6, 7, 8, 9 ],
-  "type" : "Negative_activation",
-  "polarity" : false,
-  "controller_indices" : [ 6, 7 ],
-  "controlled_indices" : [ 8, 9 ],
-  "trigger_indices" : [ 7, 8 ],
-  "rule_name" : "Negative_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "SC", "leads", "to", "vasoconstriction", ",", "which", "inhibits", "cellular", "drug", "uptake", "[", "6", "]", ";", "furthermore", ",", "hypothermia", "reduces", "the", "metabolic", "rate", "of", "hair", "follicles", ",", "finally", "lowering", "susceptibility", "to", "chemotherapy", "damage", "." ],
-  "event_indices" : [ 0, 1, 2, 3, 4 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 0, 1 ],
-  "controlled_indices" : [ 3, 4 ],
-  "trigger_indices" : [ 1, 2 ],
-  "rule_name" : "Positive_activation_syntax_7_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Concerns", "that", "SC", "might", "increase", "scalp", "metastases", "have", "limited", "its", "clinical", "use", "in", "the", "past", "." ],
-  "event_indices" : [ 2, 3, 4, 5, 6, 7 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 2, 3 ],
-  "controlled_indices" : [ 6, 7 ],
-  "trigger_indices" : [ 4, 5 ],
-  "rule_name" : "Positive_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "If", "patients", "requested", "discontinuation", "of", "SC", "due", "to", "hair", "loss", ",", "this", "was", "documented", "as", "grade", "2", "alopecia.For", "the", "purpose", "of", "achieving", "a", "blinded", "evaluation", ",", "the", "faces", "of", "the", "patients", "in", "the", "photographs", "were", "blacked", "out", "to", "eliminate", "any", "kind", "of", "bias", "regarding", "factors", "such", "as", "age", ",", "ethnicity", ",", "and", "type", "of", "chemotherapy", "regimen.At", "time", "points", "T3", "and", "T4", ",", "regrowth", "after", "hair", "loss", "was", "also", "analysed", "." ],
-  "event_indices" : [ 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61 ],
-  "type" : "Negative_activation",
-  "polarity" : false,
-  "controller_indices" : [ 60, 61 ],
-  "controlled_indices" : [ 40, 41 ],
-  "trigger_indices" : [ 38, 39 ],
-  "rule_name" : "Negative_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "*", "Scalp", "cooling", "is", "more", "effective", "in", "preventing", "alopecia", "in", "patients", "receiving", "taxane", "monotherapy", "." ],
-  "entity_one_indices" : [ 12, 13 ],
-  "entity_two_indices" : [ 8, 9 ]
-}, {
-  "sentence_tokens" : [ "Currently", ",", "the", "most", "promising", "method", "to", "prevent", "chemotherapy", "induced", "alopecia", "is", "scalp", "cooling", "(", "SC", ")", "." ],
-  "entity_one_indices" : [ 15, 16 ],
-  "entity_two_indices" : [ 10, 11 ]
-}, {
-  "sentence_tokens" : [ "However", ",", "a", "recent", "meta-analysis", "by", "Rugo", "et", "al.", "showed", "no", "association", "of", "scalp", "metastases", "with", "SC", "[", "11", "]", "." ],
-  "entity_one_indices" : [ 16, 17 ],
-  "entity_two_indices" : [ 14, 15 ]
-}, {
-  "sentence_tokens" : [ "Initial", "studies", "on", "SC", "were", "conducted", "primarily", "with", "taxane-", "and", "only", "rarely", "anthracycline", "based", "chemotherapy", "[", "9", "]", "." ],
-  "entity_one_indices" : [ 12, 13 ],
-  "entity_two_indices" : [ 3, 4 ]
-}, {
-  "sentence_tokens" : [ "The", "study", "population", "included", "128", "patients", ";", "88", "individuals", "were", "assigned", "to", "the", "intervention", "group", "(", "CAP", ")", "and", "underwent", "SC", ",", "and", "40", "patients", "were", "allocated", "to", "the", "control", "group", "(", "NCAP", ")", "." ],
-  "entity_one_indices" : [ 20, 21 ],
-  "entity_two_indices" : [ 16, 17 ]
-}, {
-  "sentence_tokens" : [ "Scalp", "cooling", "was", "performed", "using", "the", "Orbis", "Paxman", "Hair", "Loss", "Prevention", "Scalp", "Cooling", "System", "(", "model", ":", "447", "CE", ")", "." ],
-  "entity_one_indices" : [ 18, 19 ],
-  "entity_two_indices" : [ 8, 9, 10 ]
-}, {
-  "sentence_tokens" : [ "The", "primary", "endpoint", "was", "hair", "preservation", "(", "HP", ")", ",", "defined", "as", "grade", "0", "or", "1", "alopecia", "." ],
-  "entity_one_indices" : [ 16, 17 ],
-  "entity_two_indices" : [ 7, 8 ]
-}, {
-  "sentence_tokens" : [ "To", "evaluate", "the", "state", "of", "the", "patients", "'", "hair", "precisely", ",", "five", "standardized", "photographs", "were", "taken", "by", "a", "professional", "photographer", "at", "five", "time", "points", "during", "the", "study", ":", "before", "the", "start", "of", "treatment", "(", "T0", ")", ",", "at", "mid", "treatment", "(", "after", "half", "the", "number", "of", "planned", "cycles", "(", "T1", ")", ")", ",", "at", "the", "time", "of", "the", "last", "chemotherapy", "cycle", "(", "T2", ")", ",", "3", "months", "after", "completion", "of", "treatment", "(", "T3", ")", "and", "6", "-", "9", "months", "after", "treatment", "completion", "(", "T4", ")", "." ],
-  "entity_one_indices" : [ 83, 84 ],
-  "entity_two_indices" : [ 30, 31 ]
-}, {
-  "sentence_tokens" : [ "The", "patient", "reported", "outcomes", "included", "a", "questionnaire", "battery", "composed", "of", "the", "NCI-PRO-CTCAE-ITEMS", "(", "National", "Cancer", "Institute", "Patient", "reported-outcomes", "Common", "Terminology", "Criteria", "for", "Adverse", "Events", ")", ",", "EORTC", "QLQ-C30", "(", "European", "Organisation", "for", "Research", "and", "Treatment", "of", "Cancer", "Quality", "of", "life", "questionnaire", ")", ",", "BR23update", ",", "Body", "Image", "Scale", ",", "Pro", "CTCAEs", "(", "Patient", "reported-outcomes", "Common", "Terminology", "Criteria", "for", "Adverse", "Events", ")", "and", "Hairdex", "questionnaire", "." ],
-  "entity_one_indices" : [ 62, 63 ],
-  "entity_two_indices" : [ 26, 27, 28 ]
-}, {
-  "sentence_tokens" : [ "The", "study", "group", "was", "compared", "with", "the", "reference", "group", "regarding", "alopecia", "and", "quality", "of", "life", "outcome", "using", "linear", "mixed", "models", "with", "adjustment", "for", "age", ",", "chemotherapy", "regimen", ",", "tumour", "type", ",", "and", "baseline", "body", "image", "." ],
-  "entity_one_indices" : [ 29, 30 ],
-  "entity_two_indices" : [ 10, 11 ]
-}, {
-  "sentence_tokens" : [ "The", "median", "age", "in", "the", "CAP", "group", "was", "51", "(", "23", "-", "81", ")", "and", "54.5", "(", "32", "-", "80", ")", "in", "the", "NCAP", "group", "." ],
-  "entity_one_indices" : [ 23, 24 ],
-  "entity_two_indices" : [ 5, 6 ]
-}, {
-  "sentence_tokens" : [ "Eighty-eight", "patients", "who", "met", "the", "inclusion", "criteria", "were", "assigned", "to", "the", "intervention", "group", "(", "CAP", ")", "and", "underwent", "SC", "." ],
-  "entity_one_indices" : [ 18, 19 ],
-  "entity_two_indices" : [ 14, 15 ]
-}, {
-  "sentence_tokens" : [ "Experts", "evaluated", "the", "hair", "loss", "in", "CAP", "group", "members", "as", "grade", "0", "in", "13", "%", ",", "grade", "1", "in", "59", "%", "and", "grade", "2", "in", "28", "%", "." ],
-  "entity_one_indices" : [ 6, 7 ],
-  "entity_two_indices" : [ 3, 4, 5 ]
-}, {
-  "sentence_tokens" : [ "This", "showed", "hair", "preservation", "in", "72", "%", "of", "patients", "using", "SC", ",", "whereas", "hair", "preservation", "was", "0", "%", "in", "the", "NCAP", "group", "(", "P", "<=", "0.001", ")", "(", "Fig.", "3", ")", "." ],
-  "entity_one_indices" : [ 20, 21, 22 ],
-  "entity_two_indices" : [ 10, 11 ]
-}, {
-  "sentence_tokens" : [ "Patients", "as", "well", "as", "experts", "agreed", "on", "the", "evaluation", "in", "the", "NCAP", "group", "(", "100", "%", "alopecia", ")", "." ],
-  "entity_one_indices" : [ 16, 17 ],
-  "entity_two_indices" : [ 11, 12 ]
-}, {
-  "sentence_tokens" : [ "In", "comparison", ",", "the", "experts", "evaluated", "the", "hair", "loss", "of", "patients", "with", "an", "anthracycline-taxane", "CT", "as", "grade", "0", "in", "7.9", "%", "and", "grade", "1", "in", "49", "%", "(", "P", "=", "0.061", ")", "." ],
-  "entity_one_indices" : [ 14, 15 ],
-  "entity_two_indices" : [ 7, 8, 9 ]
-}, {
-  "sentence_tokens" : [ "Regarding", "the", "sequence", "of", "CT", "(", "taxanes", "followed", "by", "anthracyclines", "or", "vice", "versa", ")", ",", "there", "was", "no", "significant", "difference", "in", "hair", "loss", "." ],
-  "entity_one_indices" : [ 21, 22, 23 ],
-  "entity_two_indices" : [ 4, 5 ]
-}, {
-  "sentence_tokens" : [ "Nine", "percent", "of", "patients", "reported", "slight", "headaches", ",", "scalp", "pain", "and", "a", "generalized", "feeling", "of", "cold.3.5", "Patient", "satisfaction", "and", "impact", "of", "scalp", "cooling", "on", "quality", "of", "life", "(", "QoL", ")", "." ],
-  "entity_one_indices" : [ 9, 10 ],
-  "entity_two_indices" : [ 6, 7 ]
-}, {
-  "sentence_tokens" : [ "After", "three", "months", ",", "50", "%", "of", "patients", "in", "the", "CAP", "group", "and", "38", "%", "in", "the", "NCAP", "group", "had", "complete", "regrowth", "of", "their", "hair", "." ],
-  "entity_one_indices" : [ 17, 18 ],
-  "entity_two_indices" : [ 10, 11 ]
-}, {
-  "sentence_tokens" : [ "At", "the", "six-to", "nine-month", "follow-up", ",", "complete", "regrowth", "was", "observed", "in", "85", "%", "of", "patients", "in", "the", "CAP", "group", "and", "90", "%", "of", "patients", "in", "the", "NCAP", "group", "(", "Fig.", "5", ")", "." ],
-  "entity_one_indices" : [ 26, 27, 28 ],
-  "entity_two_indices" : [ 17, 18 ]
-}, {
-  "sentence_tokens" : [ "Concerning", "HR", "three", "and", "six", "to", "nine", "months", "after", "CT", ",", "no", "significant", "differences", "between", "the", "two", "groups", "were", "found.3.7", "Adverse", "events", "." ],
-  "entity_one_indices" : [ 9, 10 ],
-  "entity_two_indices" : [ 1, 2 ]
-}, {
-  "sentence_tokens" : [ "A", "total", "of", "9.1", "%", "(", "n", "=", "5", ")", "of", "the", "patients", "stopped", "using", "SC", "due", "to", "experiencing", "adverse", "events", "such", "as", "scalp", "pain", ",", "extreme", "sensation", "of", "cold", "or", "headaches.4", "Discussion", "." ],
-  "entity_one_indices" : [ 24, 25 ],
-  "entity_two_indices" : [ 15, 16 ]
-}, {
-  "sentence_tokens" : [ "SC", "is", "currently", "the", "most", "promising", "approach", "to", "prevent", "chemotherapy", "induced", "alopecia", "." ],
-  "entity_one_indices" : [ 11, 12 ],
-  "entity_two_indices" : [ 0, 1 ]
-}, {
-  "sentence_tokens" : [ "Discrepancies", "in", "success", "rates", "may", "be", "attributed", "to", "different", "trial", "designs", "and", "patient", "populations", ",", "CT", "regimens", ",", "timeframes", "for", "evaluating", "hair", "loss", "and", "types", "of", "devices", "used", "." ],
-  "entity_one_indices" : [ 21, 22, 23 ],
-  "entity_two_indices" : [ 15, 16 ]
-}, {
-  "sentence_tokens" : [ "In", "the", "NCAP", "group", ",", "there", "was", "no", "difference", "between", "the", "evaluations", "because", "both", "patients", "and", "experts", "assessed", "100", "%", "of", "the", "participants", "as", "having", "grade", "2", "alopecia", "(", ">=", "50", "%", "hair", "loss", ")", "." ],
-  "entity_one_indices" : [ 32, 33, 34 ],
-  "entity_two_indices" : [ 27, 28 ]
-}, {
-  "sentence_tokens" : [ "It", "is", "possible", "that", "the", "first", "instance", "of", "minor", "hair", "loss", "can", "subjectively", "be", "perceived", "as", "grade", "2", "alopecia", "by", "patients", "due", "to", "preconceived", "expectations", "or", "other", "psychological", "aspects", "." ],
-  "entity_one_indices" : [ 18, 19 ],
-  "entity_two_indices" : [ 9, 10, 11 ]
-}, {
-  "sentence_tokens" : [ "This", "could", "explain", "the", "phenomenon", "of", "patients", "perceiving", "their", "hair", "loss", "as", "grade", "2", ",", "whereas", "experts", "evaluated", "it", "as", "grade", "1", "or", "even", "grade", "0.The", "efficacy", "of", "SC", "is", "influenced", "by", "many", "factors", ",", "such", "as", "age", ",", "infusion", "time", ",", "ethnic", "differences", "in", "head", "shape", "and", "scalp", "temperature", "[", "21,22", "]", "." ],
-  "entity_one_indices" : [ 28, 29 ],
-  "entity_two_indices" : [ 9, 10, 11 ]
-}, {
-  "sentence_tokens" : [ "In", "accordance", "with", "previously", "published", "studies", "[", "9", ",", "[", "12", "]", ",", "[", "13", "]", ",", "[", "14", "]", "]", ",", "we", "observed", "that", "SC", "was", "more", "effective", "in", "patients", "receiving", "taxane", "monotherapy", "than", "in", "patients", "receiving", "an", "anthracycline-taxane-based", "regimen", "." ],
-  "entity_one_indices" : [ 32, 33 ],
-  "entity_two_indices" : [ 25, 26 ]
-}, {
-  "sentence_tokens" : [ "Using", "the", "patients", "'", "evaluation", ",", "50", "%", "of", "patients", "with", "taxane", "monotherapy", "had", "grade", "1", "alopecia", "compared", "to", "17.2", "%", "of", "patients", "with", "an", "anthracycline-taxane-based", "regimen", "." ],
-  "entity_one_indices" : [ 16, 17 ],
-  "entity_two_indices" : [ 11, 12 ]
-}, {
-  "sentence_tokens" : [ "Initial", "studies", "on", "SC", "mainly", "included", "patients", "undergoing", "taxane", "monotherapy", "[", "18,23,24", "]", "." ],
-  "entity_one_indices" : [ 8, 9 ],
-  "entity_two_indices" : [ 3, 4 ]
-}, {
-  "sentence_tokens" : [ "These", "studies", "demonstrated", "fairly", "good", "efficacy", "but", "do", "not", "fully", "depict", "the", "clinical", "reality", "where", "patients", "usually", "receive", "CT", "regimens", "containing", "taxanes", "as", "well", "as", "anthracyclines.In", "our", "study", ",", "patients", "'", "and", "experts", "'", "opinions", "matched", "in", "their", "evaluation", "of", "the", "hair", "preservation", "rate", "concerning", "taxane", "monotherapy", "." ],
-  "entity_one_indices" : [ 45, 46 ],
-  "entity_two_indices" : [ 18, 19 ]
-}, {
-  "sentence_tokens" : [ "The", "subjective", "patient", "self", "evaluation", "may", "be", "influenced", "by", "the", "medical", "education", "on", "SC", "that", "patients", "received", ",", "knowing", "that", "hair", "loss", "was", "more", "likely", "to", "happen", "in", "an", "anthracycline-taxane-based", "regimen", "." ],
-  "entity_one_indices" : [ 20, 21, 22 ],
-  "entity_two_indices" : [ 13, 14 ]
-}, {
-  "sentence_tokens" : [ "Regarding", "the", "CT", "regimen", "sequence", ",", "there", "was", "no", "significant", "difference", "in", "hair", "loss", "in", "our", "study", "." ],
-  "entity_one_indices" : [ 12, 13, 14 ],
-  "entity_two_indices" : [ 2, 3 ]
-}, {
-  "sentence_tokens" : [ "Our", "results", "are", "consistent", "with", "the", "findings", "of", "the", "Coolhair", "study", "by", "Smetanay", "et", "al.", "which", "showed", "no", "significant", "difference", "between", "the", "CAP", "and", "NCAP", "groups", "3", "and", "6", "months", "after", "CT", "regarding", "expert", "evaluation", "[", "7", "]", "." ],
-  "entity_one_indices" : [ 31, 32 ],
-  "entity_two_indices" : [ 22, 23 ]
-}, {
-  "sentence_tokens" : [ "Additionally", ",", "it", "remains", "unclear", "whether", "there", "is", "a", "beneficial", "effect", "of", "SC", "on", "the", "prevention", "of", "permanent", "alopecia", "." ],
-  "entity_one_indices" : [ 18, 19 ],
-  "entity_two_indices" : [ 12, 13 ]
-}, {
-  "sentence_tokens" : [ "In", "addition", ",", "our", "study", "examines", "one", "of", "the", "largest", "patient", "populations", "regarding", "SC", "and", "especially", "regrowth", "after", "SC", "." ],
-  "entity_one_indices" : [ 18, 19 ],
-  "entity_two_indices" : [ 13, 14 ]
-}, {
-  "sentence_tokens" : [ "Additionally", ",", "the", "Hair-Safe", "study", "has", "the", "longest", "follow-up", "period", "compared", "to", "previous", "studies.We", "report", "a", "dropout", "rate", "of", "13", "%", "in", "the", "CAP", "group", "and", "5", "%", "in", "the", "NCAP", "group", "." ],
-  "entity_one_indices" : [ 30, 31 ],
-  "entity_two_indices" : [ 23, 24 ]
-}, {
-  "sentence_tokens" : [ "One", "key", "finding", "of", "our", "study", "is", "the", "importance", "of", "extensive", "patient", "education", ",", "especially", "emphasizing", "that", "minor", "hair", "loss", "may", "occur", "even", "during", "successful", "SC", "." ],
-  "entity_one_indices" : [ 25, 26 ],
-  "entity_two_indices" : [ 18, 19, 20 ]
-}, {
-  "sentence_tokens" : [ "Overall", ",", "SC", "is", "the", "most", "promising", "approach", "to", "prevent", "alopecia", "in", "terms", "of", "efficacy", "and", "safety", "." ],
-  "entity_one_indices" : [ 10, 11 ],
-  "entity_two_indices" : [ 2, 3 ]
-}, {
-  "sentence_tokens" : [ "SC", "should", "be", "integrated", "into", "clinical", "practice", "and", "targeted", "towards", "patients", "with", "potentially", "high", "success", "rates", "of", "SC", "selected", "by", "chemotherapy", "regimen", "." ],
-  "entity_one_indices" : [ 17, 18 ],
-  "entity_two_indices" : [ 0, 1 ]
-} ]
+{
+  "regulations" : [ {
+    "sentence_tokens" : [ "This", "underlines", "the", "importance", "of", "patient", "involvement", "in", "reported", "outcomes", ",", "demonstrating", "that", "minor", "hair", "loss", "should", "be", "considered", "normal", "in", "successful", "SC", "." ],
+    "event_indices" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 0, 1 ],
+    "controlled_indices" : [ 22, 23 ],
+    "trigger_indices" : [ 1, 2 ],
+    "rule_name" : "Positive_activation_syntax_1_verb, pronominalMatch",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "Although", "the", "exact", "mechanism", "by", "which", "SC", "prevents", "alopecia", "is", "not", "yet", "fully", "understood", ",", "SC", "presumably", "leads", "to", "protection", "of", "the", "hair", "follicle", "." ],
+    "event_indices" : [ 6, 7, 8, 9 ],
+    "type" : "Negative_activation",
+    "polarity" : false,
+    "controller_indices" : [ 6, 7 ],
+    "controlled_indices" : [ 8, 9 ],
+    "trigger_indices" : [ 7, 8 ],
+    "rule_name" : "Negative_activation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "SC", "leads", "to", "vasoconstriction", ",", "which", "inhibits", "cellular", "drug", "uptake", "[", "6", "]", ";", "furthermore", ",", "hypothermia", "reduces", "the", "metabolic", "rate", "of", "hair", "follicles", ",", "finally", "lowering", "susceptibility", "to", "chemotherapy", "damage", "." ],
+    "event_indices" : [ 0, 1, 2, 3, 4 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 0, 1 ],
+    "controlled_indices" : [ 3, 4 ],
+    "trigger_indices" : [ 1, 2 ],
+    "rule_name" : "Positive_activation_syntax_7_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "Concerns", "that", "SC", "might", "increase", "scalp", "metastases", "have", "limited", "its", "clinical", "use", "in", "the", "past", "." ],
+    "event_indices" : [ 2, 3, 4, 5, 6, 7 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 2, 3 ],
+    "controlled_indices" : [ 6, 7 ],
+    "trigger_indices" : [ 4, 5 ],
+    "rule_name" : "Positive_activation_syntax_1_verb",
+    "rule" : null
+  }, {
+    "sentence_tokens" : [ "If", "patients", "requested", "discontinuation", "of", "SC", "due", "to", "hair", "loss", ",", "this", "was", "documented", "as", "grade", "2", "alopecia.For", "the", "purpose", "of", "achieving", "a", "blinded", "evaluation", ",", "the", "faces", "of", "the", "patients", "in", "the", "photographs", "were", "blacked", "out", "to", "eliminate", "any", "kind", "of", "bias", "regarding", "factors", "such", "as", "age", ",", "ethnicity", ",", "and", "type", "of", "chemotherapy", "regimen.At", "time", "points", "T3", "and", "T4", ",", "regrowth", "after", "hair", "loss", "was", "also", "analysed", "." ],
+    "event_indices" : [ 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61 ],
+    "type" : "Negative_activation",
+    "polarity" : false,
+    "controller_indices" : [ 60, 61 ],
+    "controlled_indices" : [ 40, 41 ],
+    "trigger_indices" : [ 38, 39 ],
+    "rule_name" : "Negative_activation_syntax_1_verb",
+    "rule" : null
+  } ],
+  "hardInstances" : [ {
+    "sentence_tokens" : [ "This", "underlines", "the", "importance", "of", "patient", "involvement", "in", "reported", "outcomes", ",", "demonstrating", "that", "minor", "hair", "loss", "should", "be", "considered", "normal", "in", "successful", "SC", "." ],
+    "entities_indices" : [ [ 14, 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "Although", "the", "exact", "mechanism", "by", "which", "SC", "prevents", "alopecia", "is", "not", "yet", "fully", "understood", ",", "SC", "presumably", "leads", "to", "protection", "of", "the", "hair", "follicle", "." ],
+    "entities_indices" : [ [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "SC", "leads", "to", "vasoconstriction", ",", "which", "inhibits", "cellular", "drug", "uptake", "[", "6", "]", ";", "furthermore", ",", "hypothermia", "reduces", "the", "metabolic", "rate", "of", "hair", "follicles", ",", "finally", "lowering", "susceptibility", "to", "chemotherapy", "damage", "." ],
+    "entities_indices" : [ [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "Concerns", "that", "SC", "might", "increase", "scalp", "metastases", "have", "limited", "its", "clinical", "use", "in", "the", "past", "." ],
+    "entities_indices" : [ [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "If", "patients", "requested", "discontinuation", "of", "SC", "due", "to", "hair", "loss", ",", "this", "was", "documented", "as", "grade", "2", "alopecia.For", "the", "purpose", "of", "achieving", "a", "blinded", "evaluation", ",", "the", "faces", "of", "the", "patients", "in", "the", "photographs", "were", "blacked", "out", "to", "eliminate", "any", "kind", "of", "bias", "regarding", "factors", "such", "as", "age", ",", "ethnicity", ",", "and", "type", "of", "chemotherapy", "regimen.At", "time", "points", "T3", "and", "T4", ",", "regrowth", "after", "hair", "loss", "was", "also", "analysed", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 8, 9, 10 ], [ 52, 53 ], [ 64, 65, 66 ] ]
+  } ],
+  "withoutRegulations" : [ {
+    "sentence_tokens" : [ "Eight", "(", "of", "11", ")", "patients", "discontinued", "the", "trial", "after", "declining", "further", "application", "of", "SC", ",", "and", "three", "(", "of", "11", ")", "patients", "dropped", "out", "due", "to", "exclusion", "criteria", "that", "were", "not", "apparent", "during", "screening", "." ],
+    "entities_indices" : [ [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "Sixteen", "percent", "(", "n", "=", "9", ")", "of", "patients", "stopped", "using", "SC", "for", "reasons", "unrelated", "to", "adverse", "events", "of", "SC", "or", "hair", "loss", "(", "e.g", ".,", "transfer", "of", "care", ",", "discontinuation", "of", "CT", "due", "to", "adverse", "events", "or", "disease", "progression", ")", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 19, 20 ], [ 21, 22, 23 ], [ 32, 33 ], [ 38, 39, 40 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "could", "explain", "the", "phenomenon", "of", "patients", "perceiving", "their", "hair", "loss", "as", "grade", "2", ",", "whereas", "experts", "evaluated", "it", "as", "grade", "1", "or", "even", "grade", "0.The", "efficacy", "of", "SC", "is", "influenced", "by", "many", "factors", ",", "such", "as", "age", ",", "infusion", "time", ",", "ethnic", "differences", "in", "head", "shape", "and", "scalp", "temperature", "[", "21,22", "]", "." ],
+    "entities_indices" : [ [ 9, 10, 11 ], [ 28, 29 ] ]
+  }, {
+    "sentence_tokens" : [ "These", "studies", "demonstrated", "fairly", "good", "efficacy", "but", "do", "not", "fully", "depict", "the", "clinical", "reality", "where", "patients", "usually", "receive", "CT", "regimens", "containing", "taxanes", "as", "well", "as", "anthracyclines.In", "our", "study", ",", "patients", "'", "and", "experts", "'", "opinions", "matched", "in", "their", "evaluation", "of", "the", "hair", "preservation", "rate", "concerning", "taxane", "monotherapy", "." ],
+    "entities_indices" : [ [ 18, 19 ], [ 45, 46 ] ]
+  }, {
+    "sentence_tokens" : [ "Although", "chemotherapy", "induced", "alopecia", "is", "not", "a", "life", "threatening", "side", "effect", ",", "it", "ranks", "amongst", "the", "most", "troublesome", "side", "effects", "concerning", "the", "patients", "'", "quality", "of", "life", "and", "body", "image", "[", "6,7", "]", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 9, 10 ], [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "Adverse", "events", "were", "captured", "using", "the", "case", "report", "form.2.5", "Assessments", "of", "hair", "loss", "." ],
+    "entities_indices" : [ [ 11, 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "clinical", "trial", "registration", "number", "is", "NCT04117815.2.2", "Patients", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "fact", ",", "none", "of", "the", "patients", "in", "the", "CAP", "group", "described", "their", "hair", "loss", "as", "grade", "0", "alopecia", ",", "whereas", "13.1", "%", "were", "evaluated", "as", "grade", "0", "by", "experts", "." ],
+    "entities_indices" : [ [ 9, 10 ], [ 13, 14, 15 ], [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "Regarding", "the", "CT", "regimen", "sequence", ",", "there", "was", "no", "significant", "difference", "in", "hair", "loss", "in", "our", "study", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 12, 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "prospective", "study", "aims", "to", "evaluate", "the", "efficacy", "of", "SC", "in", "different", "chemotherapy", "regimens", "and", "hair", "recovery", "in", "the", "follow-up", "period.2", "Patients", "and", "methods", "." ],
+    "entities_indices" : [ [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "especially", "affected", "the", "first", "3", "months", "after", "CT", "follow-up", "." ],
+    "entities_indices" : [ [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "Interestingly", ",", "a", "significant", "difference", "was", "noted", "between", "evaluation", "by", "experts", "(", "72", "%", ",", "<", "50", "%", "hair", "loss", ")", "and", "patients", "'", "self-assessment", "(", "24", "%", ",", "<", "50", "%", "hair", "loss", ")", "regarding", "HP", "in", "the", "CAP", "group", "(", "Fig.", "4", ")", ".3.3", "Effect", "of", "SC", "specific", "chemotherapy", "regimens", "." ],
+    "entities_indices" : [ [ 18, 19, 20 ], [ 32, 33, 34 ], [ 36, 37 ], [ 39, 40 ], [ 48, 49 ] ]
+  }, {
+    "sentence_tokens" : [ "Interestingly", ",", "varying", "success", "rates", "of", "SC", "between", "30", "and", "80", "%", "have", "been", "described", "[", "6,9,10,18,19", "]", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "Interestingly", ",", "the", "evaluation", "differed", "regarding", "patients", "receiving", "anthracycline-taxane-based", "CT", "." ],
+    "entities_indices" : [ [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "SC", "was", "successful", "in", "39", "%", "of", "patients", "who", "received", "taxanes", "first", "and", "in", "20", "%", "of", "patients", "who", "received", "anthracyclines", "first", "(", "Table", "2", ")", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "Hair", "regrowth", "after", "chemotherapy", "in", "our", "study", "showed", "no", "significant", "differences", "between", "the", "CAP", "and", "NCAP", "groups", "3", "months", "after", "CT", "or", "6", "-", "9", "months", "after", "CT", "." ],
+    "entities_indices" : [ [ 13, 14 ], [ 20, 21 ], [ 27, 28 ] ]
+  }, {
+    "sentence_tokens" : [ "Nine", "percent", "of", "patients", "reported", "slight", "headaches", ",", "scalp", "pain", "and", "a", "generalized", "feeling", "of", "cold.3.5", "Patient", "satisfaction", "and", "impact", "of", "scalp", "cooling", "on", "quality", "of", "life", "(", "QoL", ")", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "Our", "results", "are", "consistent", "with", "the", "findings", "of", "the", "Coolhair", "study", "by", "Smetanay", "et", "al.", "which", "showed", "no", "significant", "difference", "between", "the", "CAP", "and", "NCAP", "groups", "3", "and", "6", "months", "after", "CT", "regarding", "expert", "evaluation", "[", "7", "]", "." ],
+    "entities_indices" : [ [ 22, 23 ], [ 31, 32 ] ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "none", "of", "the", "patients", "graded", "their", "hair", "loss", "as", "grade", "0", "(", "Fig.", "2", ")", "." ],
+    "entities_indices" : [ [ 8, 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "accordance", "with", "previously", "published", "studies", "[", "9", ",", "[", "12", "]", ",", "[", "13", "]", ",", "[", "14", "]", "]", ",", "we", "observed", "that", "SC", "was", "more", "effective", "in", "patients", "receiving", "taxane", "monotherapy", "than", "in", "patients", "receiving", "an", "anthracycline-taxane-based", "regimen", "." ],
+    "entities_indices" : [ [ 25, 26 ], [ 32, 33 ] ]
+  }, {
+    "sentence_tokens" : [ "If", "patients", "requested", "discontinuation", "of", "SC", "due", "to", "hair", "loss", ",", "this", "was", "documented", "as", "grade", "2", "alopecia.3.4", "Discontinuation", "of", "SC", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 8, 9, 10 ], [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "Likewise", ",", "data", "published", "by", "Ohsumi", "et", "al.", "also", "report", "significantly", "better", "regrowth", "in", "their", "CAP", "vs.", "NCAP", "groups", "." ],
+    "entities_indices" : [ [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "Exclusion", "criteria", "were", "migraine", ",", "Raynaud", "syndrome", "or", "cold", "allergy", ",", "haematological", "malignancies", ",", "scalp", "metastases", ",", "preexisting", "alopecia", ",", "overt", "cognitive", "impairment", ",", "and", "insufficient", "knowledge", "of", "the", "German", "language.2.3", "Scalp", "cooling", "procedures", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 6, 7 ], [ 9, 10 ], [ 15, 16 ], [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "More", "than", "two-thirds", "of", "patients", "reported", "alopecia", "as", "the", "primary", "reason", "of", "an", "early", "discontinuation", "of", "scalp", "cooling", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "median", "age", "in", "the", "CAP", "group", "was", "51", "(", "23", "-", "81", ")", "and", "54.5", "(", "32", "-", "80", ")", "in", "the", "NCAP", "group", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "Concerning", "HR", "three", "and", "six", "to", "nine", "months", "after", "CT", ",", "no", "significant", "differences", "between", "the", "two", "groups", "were", "found.3.7", "Adverse", "events", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 9, 10 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "acknowledge", "that", "due", "to", "our", "sample", "size", ",", "it", "was", "impossible", "to", "evaluate", "the", "impact", "of", "each", "regimen", "on", "the", "efficacy", "of", "SC", "individually", "." ],
+    "entities_indices" : [ [ 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "Among", "the", "most", "common", "toxicities", "are", "nausea", ",", "emesis", ",", "premature", "menopause", "and", "hair", "loss", "[", "6", "]", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 8, 9 ], [ 10, 11, 12 ], [ 13, 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "success", "rate", "was", "between", "55", "and", "75", "%", "depending", "on", "the", "device.Remarkably", ",", "our", "study", "shows", "a", "significantly", "worse", "evaluation", "of", "the", "CAP", "group", "regarding", "patient", "evaluation", "in", "comparison", "to", "expert", "evaluation", "." ],
+    "entities_indices" : [ [ 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "primary", "reason", "for", "discontinuation", "of", "SC", "was", "hair", "loss", ",", "which", "is", "consistent", "with", "other", "studies", "where", "hair", "loss", "was", "also", "the", "main", "reason", "for", "SC", "discontinuation", "[", "7,12,25", "]", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 8, 9, 10 ], [ 18, 19, 20 ], [ 26, 27 ] ]
+  }, {
+    "sentence_tokens" : [ "Patients", "as", "well", "as", "experts", "agreed", "on", "the", "evaluation", "in", "the", "NCAP", "group", "(", "100", "%", "alopecia", ")", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "At", "the", "six-to", "nine-month", "follow-up", ",", "complete", "regrowth", "was", "observed", "in", "85", "%", "of", "patients", "in", "the", "CAP", "group", "and", "90", "%", "of", "patients", "in", "the", "NCAP", "group", "(", "Fig.", "5", ")", "." ],
+    "entities_indices" : [ [ 17, 18 ], [ 26, 27, 28 ] ]
+  }, {
+    "sentence_tokens" : [ "Currently", ",", "the", "most", "promising", "method", "to", "prevent", "chemotherapy", "induced", "alopecia", "is", "scalp", "cooling", "(", "SC", ")", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "third", "endpoint", "was", "hair", "regrowth", "(", "HR", ")", "determined", "by", "medical", "experts", "three", "and", "six", "to", "nine", "months", "after", "the", "completion", "of", "chemotherapy", "cycles", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "contrast", ",", "Kinoshita", "et", "al.", "reported", "a", "significant", "difference", "between", "the", "CAP", "and", "NCAP", "groups", "regarding", "patients", "with", "an", "increase", "of", "at", "least", "50", "%", "of", "hair", "after", "12", "weeks", "." ],
+    "entities_indices" : [ [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "Twenty-four", "percent", "of", "patients", "in", "the", "CAP", "group", "and", "0", "%", "in", "the", "NCAP", "group", "evaluated", "their", "hair", "loss", "as", "grade", "1", "(", "<", "50", "%", "hair", "loss", ")", "(", "P", "=", "0.001", ")", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 13, 14 ], [ 17, 18, 19 ], [ 26, 27, 28 ] ]
+  }, {
+    "sentence_tokens" : [ "To", "date", ",", "only", "a", "few", "studies", "have", "observed", "hair", "regrowth", "after", "CT", "[", "6,7,10,12", "]", "." ],
+    "entities_indices" : [ [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "Scalp", "cooling", "was", "performed", "using", "the", "Orbis", "Paxman", "Hair", "Loss", "Prevention", "Scalp", "Cooling", "System", "(", "model", ":", "447", "CE", ")", "." ],
+    "entities_indices" : [ [ 8, 9, 10 ], [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "Hair", "loss", "grading", "was", "carried", "out", "by", "photographing", "the", "participants", "'", "scalps", "in", "both", "groups", "." ],
+    "entities_indices" : [ [ 0, 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "SC", "should", "be", "integrated", "into", "clinical", "practice", "and", "targeted", "towards", "patients", "with", "potentially", "high", "success", "rates", "of", "SC", "selected", "by", "chemotherapy", "regimen", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "a", "recent", "meta-analysis", "by", "Rugo", "et", "al.", "showed", "no", "association", "of", "scalp", "metastases", "with", "SC", "[", "11", "]", "." ],
+    "entities_indices" : [ [ 14, 15 ], [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "addition", ",", "our", "study", "examines", "one", "of", "the", "largest", "patient", "populations", "regarding", "SC", "and", "especially", "regrowth", "after", "SC", "." ],
+    "entities_indices" : [ [ 13, 14 ], [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "Patients", "discontinuing", "scalp", "cooling", "or", "chemotherapy", "for", "any", "reason", "were", "still", "assessed", "as", "planned", "until", "T4", "." ],
+    "entities_indices" : [ [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "Group-by-time", "interactions", "indicated", "different", "courses", "of", "alopecia", "in", "the", "two", "groups", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "Using", "the", "patients", "'", "evaluation", ",", "50", "%", "of", "patients", "with", "taxane", "monotherapy", "had", "grade", "1", "alopecia", "compared", "to", "17.2", "%", "of", "patients", "with", "an", "anthracycline-taxane-based", "regimen", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "Follow-up", "was", "completed", "for", "88.3", "%", "of", "the", "patients", "in", "the", "intervention", "group", "and", "for", "81.6", "%", "in", "the", "control", "group.3.2", "Hair", "loss", "." ],
+    "entities_indices" : [ [ 21, 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "Chemotherapy", "induced", "alopecia", "also", "affects", "psychological", "well", "being", "and", "has", "been", "associated", "with", "depression", "[", "7,8", "]", "." ],
+    "entities_indices" : [ [ 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "study", "group", "was", "compared", "with", "the", "reference", "group", "regarding", "alopecia", "and", "quality", "of", "life", "outcome", "using", "linear", "mixed", "models", "with", "adjustment", "for", "age", ",", "chemotherapy", "regimen", ",", "tumour", "type", ",", "and", "baseline", "body", "image", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 29, 30 ] ]
+  }, {
+    "sentence_tokens" : [ "Eventually", ",", "the", "use", "of", "SC", "mediates", "accelerated", "early", "regrowth", ",", "as", "the", "work", "of", "Kinoshita", "et", "al.", "suggests", ",", "but", "lacks", "maintenance", "of", "this", "benefit", "over", "long-term", "observation", "." ],
+    "entities_indices" : [ [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "Currently", ",", "there", "is", "no", "standardized", "protocol", "or", "established", "grading", "system", "for", "the", "assessment", "of", "regrowth", "after", "chemotherapy", "induced", "alopecia", "." ],
+    "entities_indices" : [ [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "Seventy-one", "percent", "(", "n", "=", "55", ")", "of", "patients", "in", "the", "CAP", "cohort", "did", "not", "use", "SC", "until", "the", "end", "of", "their", "CT", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 16, 17 ], [ 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "Overall", ",", "SC", "is", "the", "most", "promising", "approach", "to", "prevent", "alopecia", "in", "terms", "of", "efficacy", "and", "safety", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "Experts", "evaluated", "17", "%", "of", "patients", "with", "taxane", "monotherapy", "as", "grade", "0", "and", "42", "%", "as", "grade", "1", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "showed", "hair", "preservation", "in", "72", "%", "of", "patients", "using", "SC", ",", "whereas", "hair", "preservation", "was", "0", "%", "in", "the", "NCAP", "group", "(", "P", "<=", "0.001", ")", "(", "Fig.", "3", ")", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 20, 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "primary", "endpoint", "was", "hair", "preservation", "(", "HP", ")", ",", "defined", "as", "grade", "0", "or", "1", "alopecia", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "total", "of", "9.1", "%", "(", "n", "=", "5", ")", "of", "the", "patients", "stopped", "using", "SC", "due", "to", "experiencing", "adverse", "events", "such", "as", "scalp", "pain", ",", "extreme", "sensation", "of", "cold", "or", "headaches.4", "Discussion", "." ],
+    "entities_indices" : [ [ 15, 16 ], [ 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "Coolbrandt", "et", "al.", "also", "published", "self", "reported", "outcomes", "for", "approximately", "82", "%", "of", "their", "breast", "cancer", "patients", "at", "the", "end", "of", "SC", "and", "one", "year", "after", "treatment", "[", "17", "]", "." ],
+    "entities_indices" : [ [ 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "Furthermore", ",", "Bajpai", "et", "al.", "reported", "significantly", "better", "regrowth", "in", "patients", "who", "underwent", "SC", "after", "chemotherapy", "induced", "alopecia", "than", "in", "patients", "who", "did", "not", "undergo", "SC", "[", "6", "]", "." ],
+    "entities_indices" : [ [ 13, 14 ], [ 17, 18 ], [ 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "Eighty-eight", "patients", "who", "met", "the", "inclusion", "criteria", "were", "assigned", "to", "the", "intervention", "group", "(", "CAP", ")", "and", "underwent", "SC", "." ],
+    "entities_indices" : [ [ 14, 15 ], [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "Our", "study", "is", "a", "single-centre", "study", "and", "included", "patients", "with", "14", "different", "CT", "regimens", "." ],
+    "entities_indices" : [ [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "review", "by", "Wang", "et", "al.", "[", "20", "]", ",", "the", "results", "of", "3", "different", "devices", "were", "presented", ",", "and", "the", "effectiveness", "of", "SC", "therapy", "was", "dependent", "on", "different", "cooling", "equipment", "." ],
+    "entities_indices" : [ [ 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "most", "individuals", ",", "chemotherapy", "induced", "alopecia", "is", "a", "reversible", "process", "[", "26", "]", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "Using", "the", "patients", "'", "evaluation", ",", "50", "%", "of", "patients", "with", "taxane", "monotherapy", "had", "grade", "1", "alopecia", "compared", "to", "17", "%", "of", "patients", "with", "anthracycline-taxane", "CT", "(", "50", "%", "vs.", "17.2", "%", ",", "P", "=", "0.018", ")", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 16, 17 ], [ 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "SC", "treatment", "was", "carried", "out", "by", "specially", "trained", "staff", "and", "was", "initiated", "at", "least", "30", "min", "prior", "to", "intravenous", "administration", "of", "chemotherapy", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "possible", "explanation", "could", "be", "that", "patients", "themselves", "seem", "to", "be", "more", "critical", "in", "evaluating", "their", "hair", "loss", "." ],
+    "entities_indices" : [ [ 16, 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "subjective", "patient", "self", "evaluation", "may", "be", "influenced", "by", "the", "medical", "education", "on", "SC", "that", "patients", "received", ",", "knowing", "that", "hair", "loss", "was", "more", "likely", "to", "happen", "in", "an", "anthracycline-taxane-based", "regimen", "." ],
+    "entities_indices" : [ [ 13, 14 ], [ 20, 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "Additionally", ",", "it", "remains", "unclear", "whether", "there", "is", "a", "beneficial", "effect", "of", "SC", "on", "the", "prevention", "of", "permanent", "alopecia", "." ],
+    "entities_indices" : [ [ 12, 13 ], [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "Initial", "studies", "on", "SC", "were", "conducted", "primarily", "with", "taxane-", "and", "only", "rarely", "anthracycline", "based", "chemotherapy", "[", "9", "]", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "Additionally", ",", "the", "Hair-Safe", "study", "has", "the", "longest", "follow-up", "period", "compared", "to", "previous", "studies.We", "report", "a", "dropout", "rate", "of", "13", "%", "in", "the", "CAP", "group", "and", "5", "%", "in", "the", "NCAP", "group", "." ],
+    "entities_indices" : [ [ 23, 24 ], [ 30, 31 ] ]
+  }, {
+    "sentence_tokens" : [ "After", "three", "months", ",", "50", "%", "of", "patients", "in", "the", "CAP", "group", "and", "38", "%", "in", "the", "NCAP", "group", "had", "complete", "regrowth", "of", "their", "hair", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "It", "is", "noteworthy", "that", "the", "CAP", "group", "in", "the", "study", "of", "Bajpai", "et", "al.", "only", "contained", "half", "the", "number", "of", "patients", "compared", "to", "the", "present", "study.This", "study", "additionally", "examined", "the", "potentially", "positive", "effect", "of", "SC", "on", "regrowth", "after", "chemotherapy", "induced", "alopecia", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 34, 35 ], [ 40, 41 ] ]
+  }, {
+    "sentence_tokens" : [ "Alopecia", "was", "evaluated", "by", "the", "patients", "themselves", "and", "by", "an", "expert", "group", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "comparison", "of", "studies", "regarding", "regrowth", "after", "chemotherapy", "induced", "alopecia", "is", "currently", "difficult", "due", "to", "lack", "of", "standardized", "and", "validated", "scales", "and", "widely", "differing", "assessment", "time", "points", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "To", "evaluate", "the", "state", "of", "the", "patients", "'", "hair", "precisely", ",", "five", "standardized", "photographs", "were", "taken", "by", "a", "professional", "photographer", "at", "five", "time", "points", "during", "the", "study", ":", "before", "the", "start", "of", "treatment", "(", "T0", ")", ",", "at", "mid", "treatment", "(", "after", "half", "the", "number", "of", "planned", "cycles", "(", "T1", ")", ")", ",", "at", "the", "time", "of", "the", "last", "chemotherapy", "cycle", "(", "T2", ")", ",", "3", "months", "after", "completion", "of", "treatment", "(", "T3", ")", "and", "6", "-", "9", "months", "after", "treatment", "completion", "(", "T4", ")", "." ],
+    "entities_indices" : [ [ 30, 31 ], [ 83, 84 ] ]
+  }, {
+    "sentence_tokens" : [ "SC", "is", "currently", "the", "most", "promising", "approach", "to", "prevent", "chemotherapy", "induced", "alopecia", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "Reasons", "for", "discontinuation", "of", "SC", "were", "summarized", "in", "three", "different", "scenarios", ":", "first", ",", "hair", "loss", "(", "75", "%", ")", ";", "second", ",", "discontinuation", "for", "logistical", "reasons", "(", "16", "%", ")", ";", "and", "third", ",", "the", "patient", "not", "tolerating", "SC", "(", "9", "%", ")", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 14, 15, 16 ], [ 39, 40 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "our", "study", ",", "hair", "preservation", "was", "significantly", "higher", "in", "the", "group", "undergoing", "SC", "than", "in", "the", "control", "group", "when", "using", "patient", "and", "expert", "evaluations", "." ],
+    "entities_indices" : [ [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "study", "population", "included", "128", "patients", ";", "88", "individuals", "were", "assigned", "to", "the", "intervention", "group", "(", "CAP", ")", "and", "underwent", "SC", ",", "and", "40", "patients", "were", "allocated", "to", "the", "control", "group", "(", "NCAP", ")", "." ],
+    "entities_indices" : [ [ 16, 17 ], [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "One", "key", "finding", "of", "our", "study", "is", "the", "importance", "of", "extensive", "patient", "education", ",", "especially", "emphasizing", "that", "minor", "hair", "loss", "may", "occur", "even", "during", "successful", "SC", "." ],
+    "entities_indices" : [ [ 18, 19, 20 ], [ 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "It", "is", "possible", "that", "the", "first", "instance", "of", "minor", "hair", "loss", "can", "subjectively", "be", "perceived", "as", "grade", "2", "alopecia", "by", "patients", "due", "to", "preconceived", "expectations", "or", "other", "psychological", "aspects", "." ],
+    "entities_indices" : [ [ 9, 10, 11 ], [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "They", "found", "a", "significant", "difference", "regarding", "expert", "evaluation", "at", "all", "time", "points", "and", "at", "four", "and", "seven", "months", "after", "CT", "using", "patients", "'", "questionnaires", "[", "12", "]", "." ],
+    "entities_indices" : [ [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "Experts", "evaluated", "the", "hair", "loss", "in", "CAP", "group", "members", "as", "grade", "0", "in", "13", "%", ",", "grade", "1", "in", "59", "%", "and", "grade", "2", "in", "28", "%", "." ],
+    "entities_indices" : [ [ 3, 4, 5 ], [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "Initial", "studies", "on", "SC", "mainly", "included", "patients", "undergoing", "taxane", "monotherapy", "[", "18,23,24", "]", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "comparison", ",", "the", "experts", "evaluated", "the", "hair", "loss", "of", "patients", "with", "an", "anthracycline-taxane", "CT", "as", "grade", "0", "in", "7.9", "%", "and", "grade", "1", "in", "49", "%", "(", "P", "=", "0.061", ")", "." ],
+    "entities_indices" : [ [ 7, 8, 9 ], [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "our", "study", "took", "place", "during", "the", "COVID-19", "pandemic", "with", "the", "necessity", "of", "postponing", "follow-up", "appointments", "." ],
+    "entities_indices" : [ [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "despite", "the", "long", "follow-up", "in", "our", "study", ",", "no", "cases", "of", "permanent", "alopecia", "were", "noted.SC", "is", "a", "safe", "technique", "with", "no", "serious", "safety", "concerns", "." ],
+    "entities_indices" : [ [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "Chemotherapy", "consisted", "of", "at", "least", "four", "cycles", "of", "a", "taxane-", "or", "anthracycline", "based", "regimen", ",", "and", "up", "to", "two", "lines", "of", "chemotherapy", "were", "allowed", "." ],
+    "entities_indices" : [ [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "patient", "reported", "outcomes", "included", "a", "questionnaire", "battery", "composed", "of", "the", "NCI-PRO-CTCAE-ITEMS", "(", "National", "Cancer", "Institute", "Patient", "reported-outcomes", "Common", "Terminology", "Criteria", "for", "Adverse", "Events", ")", ",", "EORTC", "QLQ-C30", "(", "European", "Organisation", "for", "Research", "and", "Treatment", "of", "Cancer", "Quality", "of", "life", "questionnaire", ")", ",", "BR23update", ",", "Body", "Image", "Scale", ",", "Pro", "CTCAEs", "(", "Patient", "reported-outcomes", "Common", "Terminology", "Criteria", "for", "Adverse", "Events", ")", "and", "Hairdex", "questionnaire", "." ],
+    "entities_indices" : [ [ 26, 27, 28 ], [ 62, 63 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "high", "efficacy", "of", "SC", "was", "previously", "demonstrated", "for", "chemotherapy", "containing", "taxanes", "only", ";", "however", ",", "this", "does", "not", "reflect", "clinical", "reality", "considering", "that", "most", "chemotherapy", "regimens", "contain", "two", "or", "more", "cytostatic", "agents", "[", "9", ",", "[", "12", "]", ",", "[", "13", "]", ",", "[", "14", "]", "]", "." ],
+    "entities_indices" : [ [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "Discrepancies", "in", "success", "rates", "may", "be", "attributed", "to", "different", "trial", "designs", "and", "patient", "populations", ",", "CT", "regimens", ",", "timeframes", "for", "evaluating", "hair", "loss", "and", "types", "of", "devices", "used", "." ],
+    "entities_indices" : [ [ 15, 16 ], [ 21, 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "*", "Scalp", "cooling", "is", "more", "effective", "in", "preventing", "alopecia", "in", "patients", "receiving", "taxane", "monotherapy", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "Bajpai", "et", "al.", "indicated", "in", "their", "study", "that", "in", "patients", "receiving", "taxanes", "followed", "by", "anthracyclines", ",", "SC", "procedures", "were", "more", "effective", "in", "comparison", "to", "those", "receiving", "anthracyclines", "followed", "by", "taxanes", "[", "6", "]", "." ],
+    "entities_indices" : [ [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "addition", ",", "the", "proportion", "of", "patients", "who", "recovered", "from", "grade", "2", "to", "grade", "0", "alopecia", "over", "12", "weeks", "after", "CT", "was", "significantly", "higher", "in", "the", "CAP", "group", "[", "10", "]", "." ],
+    "entities_indices" : [ [ 15, 16 ], [ 20, 21 ], [ 26, 27 ] ]
+  }, {
+    "sentence_tokens" : [ "SC", "was", "more", "effective", "in", "preventing", "alopecia", "in", "patients", "receiving", "taxane", "monotherapy", "than", "in", "patients", "receiving", "an", "anthracycline-taxane-based", "regimen", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 6, 7 ], [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "a", "potential", "impact", "of", "SC", "in", "this", "time", "frame", "may", "lead", "to", "faster", "or", "more", "voluminous", "regrowth", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "Grade", "0", "was", "defined", "as", "no", "hair", "loss", ",", "grade", "1", "was", "defined", "as", "hair", "loss", "up", "to", "50", "%", ",", "and", "grade", "2", "was", "defined", "as", "hair", "loss", "of", "50", "%", "or", "more", "." ],
+    "entities_indices" : [ [ 6, 7, 8 ], [ 14, 15, 16 ], [ 27, 28, 29 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "CAP", "group", ",", "11", "patients", "did", "not", "complete", "the", "study", ",", "which", "was", "a", "dropout", "rate", "of", "12.5", "%", "." ],
+    "entities_indices" : [ [ 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "NCAP", "group", ",", "there", "was", "no", "difference", "between", "the", "evaluations", "because", "both", "patients", "and", "experts", "assessed", "100", "%", "of", "the", "participants", "as", "having", "grade", "2", "alopecia", "(", ">=", "50", "%", "hair", "loss", ")", "." ],
+    "entities_indices" : [ [ 27, 28 ], [ 32, 33, 34 ] ]
+  }, {
+    "sentence_tokens" : [ "Almost", "one-fifth", "(", "17", "%", ")", "of", "patients", "undergoing", "anthracycline-taxane-based", "CT", "evaluated", "their", "hair", "loss", "as", "grade", "1", "compared", "to", "more", "than", "half", "(", "57", "%", ")", "of", "experts", "evaluating", "hair", "loss", "as", "grade", "1", "or", "below", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 13, 14, 15 ], [ 30, 31, 32 ] ]
+  }, {
+    "sentence_tokens" : [ "Regarding", "the", "sequence", "of", "CT", "(", "taxanes", "followed", "by", "anthracyclines", "or", "vice", "versa", ")", ",", "there", "was", "no", "significant", "difference", "in", "hair", "loss", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 21, 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "Hair-Safe", "study", "is", "among", "the", "first", "studies", "evaluating", "hair", "loss", "not", "only", "by", "health", "care", "experts", "but", "also", "by", "patients", "themselves", "." ],
+    "entities_indices" : [ [ 9, 10, 11 ] ]
+  } ],
+  "emptySentences" : [ {
+    "sentence_tokens" : [ "Hair", "safe", "study", ":", "Effects", "of", "scalp", "cooling", "on", "hair", "preservation", "and", "hair", "regrowth", "in", "breast", "cancer", "patients", "receiving", "chemotherapy", "-", "A", "prospective", "interventional", "study", "." ]
+  }, {
+    "sentence_tokens" : [ "Highlights", "." ]
+  }, {
+    "sentence_tokens" : [ "*", "Scalp", "cooling", "significantly", "reduced", "chemotherapy-induced-alopecia", "in", "breast", "cancer", "patients", "." ]
+  }, {
+    "sentence_tokens" : [ "*", "No", "significant", "effect", "regarding", "regrowth", "after", "chemotherapy", "in", "scalp", "cooling", "group", "." ]
+  }, {
+    "sentence_tokens" : [ "*", "Scalp", "cooling", "is", "more", "effective", "in", "preventing", "alopecia", "in", "patients", "receiving", "taxane", "monotherapy", "." ]
+  }, {
+    "sentence_tokens" : [ "1", "Introduction", "." ]
+  }, {
+    "sentence_tokens" : [ "Breast", "cancer", "is", "the", "most", "common", "cancer", "in", "women", "worldwide", "[", "1", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "When", "detected", "early", ",", "the", "chance", "of", "long-term", "survival", "can", "be", "as", "high", "as", "90", "%", "due", "to", "massive", "improvements", "in", "therapeutic", "options", "over", "the", "past", "decades", "[", "2,3", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "substantial", "proportion", "of", "patients", "with", "breast", "cancer", "still", "receive", "chemotherapy", "as", "part", "of", "their", "treatment", ",", "which", ",", "however", ",", "has", "detrimental", "side", "effects", "[", "4,5", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Among", "the", "most", "common", "toxicities", "are", "nausea", ",", "emesis", ",", "premature", "menopause", "and", "hair", "loss", "[", "6", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Although", "chemotherapy", "induced", "alopecia", "is", "not", "a", "life", "threatening", "side", "effect", ",", "it", "ranks", "amongst", "the", "most", "troublesome", "side", "effects", "concerning", "the", "patients", "'", "quality", "of", "life", "and", "body", "image", "[", "6,7", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Due", "to", "the", "high", "chance", "of", "a", "cure", "by", "improved", "systemic", "therapy", ",", "quality", "of", "life", "(", "QoL", ")", "is", "becoming", "an", "increasingly", "important", "aspect", "." ]
+  }, {
+    "sentence_tokens" : [ "Chemotherapy", "induced", "alopecia", "also", "affects", "psychological", "well", "being", "and", "has", "been", "associated", "with", "depression", "[", "7,8", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Currently", ",", "the", "most", "promising", "method", "to", "prevent", "chemotherapy", "induced", "alopecia", "is", "scalp", "cooling", "(", "SC", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "To", "date", ",", "various", "studies", "have", "reported", "its", "efficacy", "in", "small", "patient", "populations", "[", "6,7,10", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "a", "recent", "meta-analysis", "by", "Rugo", "et", "al.", "showed", "no", "association", "of", "scalp", "metastases", "with", "SC", "[", "11", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Initial", "studies", "on", "SC", "were", "conducted", "primarily", "with", "taxane-", "and", "only", "rarely", "anthracycline", "based", "chemotherapy", "[", "9", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "high", "efficacy", "of", "SC", "was", "previously", "demonstrated", "for", "chemotherapy", "containing", "taxanes", "only", ";", "however", ",", "this", "does", "not", "reflect", "clinical", "reality", "considering", "that", "most", "chemotherapy", "regimens", "contain", "two", "or", "more", "cytostatic", "agents", "[", "9", ",", "[", "12", "]", ",", "[", "13", "]", ",", "[", "14", "]", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "prospective", "study", "aims", "to", "evaluate", "the", "efficacy", "of", "SC", "in", "different", "chemotherapy", "regimens", "and", "hair", "recovery", "in", "the", "follow-up", "period.2", "Patients", "and", "methods", "." ]
+  }, {
+    "sentence_tokens" : [ "2.1", "Study", "design", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "study", "is", "a", "prospective", "interventional", "single-centre", "study", "on", "women", "with", "breast", "cancer", "who", "underwent", "chemotherapy", "at", "the", "Department", "of", "Gynaecology", "and", "Obstetrics", ",", "Medical", "University", "of", "Innsbruck", "between", "May", "2018", "and", "February", "2021", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "local", "ethics", "committee", "approved", "the", "study", "." ]
+  }, {
+    "sentence_tokens" : [ "Written", "informed", "consent", "was", "obtained", "from", "all", "individual", "participants", "included", "in", "the", "study", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "clinical", "trial", "registration", "number", "is", "NCT04117815.2.2", "Patients", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "study", "population", "included", "128", "patients", ";", "88", "individuals", "were", "assigned", "to", "the", "intervention", "group", "(", "CAP", ")", "and", "underwent", "SC", ",", "and", "40", "patients", "were", "allocated", "to", "the", "control", "group", "(", "NCAP", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "control", "group", "consisted", "of", "patients", "who", "were", "eligible", "to", "participate", "in", "the", "study", "and", "consented", "for", "data", "collection", "but", "declined", "to", "undergo", "scalp", "cooling", "." ]
+  }, {
+    "sentence_tokens" : [ "Baseline", "clinical", "and", "sociodemographic", "data", "were", "collected", "." ]
+  }, {
+    "sentence_tokens" : [ "Breast", "cancer", "patients", "undergoing", "neoadjuvant", ",", "adjuvant", "or", "palliative", "chemotherapy", "were", "eligible", "." ]
+  }, {
+    "sentence_tokens" : [ "Chemotherapy", "consisted", "of", "at", "least", "four", "cycles", "of", "a", "taxane-", "or", "anthracycline", "based", "regimen", ",", "and", "up", "to", "two", "lines", "of", "chemotherapy", "were", "allowed", "." ]
+  }, {
+    "sentence_tokens" : [ "Patients", "had", "to", "be", "older", "than", "18", "years", "of", "age", "." ]
+  }, {
+    "sentence_tokens" : [ "Written", "informed", "consent", "was", "obtained", "from", "all", "subjects", "." ]
+  }, {
+    "sentence_tokens" : [ "Exclusion", "criteria", "were", "migraine", ",", "Raynaud", "syndrome", "or", "cold", "allergy", ",", "haematological", "malignancies", ",", "scalp", "metastases", ",", "preexisting", "alopecia", ",", "overt", "cognitive", "impairment", ",", "and", "insufficient", "knowledge", "of", "the", "German", "language.2.3", "Scalp", "cooling", "procedures", "." ]
+  }, {
+    "sentence_tokens" : [ "Scalp", "cooling", "was", "performed", "using", "the", "Orbis", "Paxman", "Hair", "Loss", "Prevention", "Scalp", "Cooling", "System", "(", "model", ":", "447", "CE", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "SC", "treatment", "was", "carried", "out", "by", "specially", "trained", "staff", "and", "was", "initiated", "at", "least", "30", "min", "prior", "to", "intravenous", "administration", "of", "chemotherapy", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "cooling", "cap", "was", "fitted", "on", "the", "patients", "'", "heads", "as", "described", "in", "the", "product", "information", "recommendations", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "temperature", "between", "16", "degrees", "C", "and", "20", "degrees", "C", "was", "maintained", "on", "the", "scalp", "of", "the", "participants", "." ]
+  }, {
+    "sentence_tokens" : [ "Cooling", "was", "maintained", "throughout", "the", "administration", "of", "chemotherapy", "and", "was", "stopped", "60", "-", "90", "min", "after", "termination", "of", "infusion", "of", "cytotoxic", "agents.2.4", "Study", "endpoints", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "primary", "endpoint", "was", "hair", "preservation", "(", "HP", ")", ",", "defined", "as", "grade", "0", "or", "1", "alopecia", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "evaluation", "was", "conducted", "by", "the", "patients", "themselves", "as", "well", "as", "by", "an", "expert", "committee.The", "secondary", "endpoint", "included", "patient", "satisfaction", "and", "Quality", "of", "life", "(", "Qol", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "third", "endpoint", "was", "hair", "regrowth", "(", "HR", ")", "determined", "by", "medical", "experts", "three", "and", "six", "to", "nine", "months", "after", "the", "completion", "of", "chemotherapy", "cycles", "." ]
+  }, {
+    "sentence_tokens" : [ "Adverse", "events", "were", "captured", "using", "the", "case", "report", "form.2.5", "Assessments", "of", "hair", "loss", "." ]
+  }, {
+    "sentence_tokens" : [ "To", "evaluate", "the", "state", "of", "the", "patients", "'", "hair", "precisely", ",", "five", "standardized", "photographs", "were", "taken", "by", "a", "professional", "photographer", "at", "five", "time", "points", "during", "the", "study", ":", "before", "the", "start", "of", "treatment", "(", "T0", ")", ",", "at", "mid", "treatment", "(", "after", "half", "the", "number", "of", "planned", "cycles", "(", "T1", ")", ")", ",", "at", "the", "time", "of", "the", "last", "chemotherapy", "cycle", "(", "T2", ")", ",", "3", "months", "after", "completion", "of", "treatment", "(", "T3", ")", "and", "6", "-", "9", "months", "after", "treatment", "completion", "(", "T4", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Patients", "discontinuing", "scalp", "cooling", "or", "chemotherapy", "for", "any", "reason", "were", "still", "assessed", "as", "planned", "until", "T4", "." ]
+  }, {
+    "sentence_tokens" : [ "Hair", "loss", "grading", "was", "carried", "out", "by", "photographing", "the", "participants", "'", "scalps", "in", "both", "groups", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "photo", "evaluation", "was", "blinded", "and", "performed", "by", "three", "health", "care", "experts", "using", "the", "CTCAEv.4.0", "grading", "system", "[", "15", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Grade", "0", "was", "defined", "as", "no", "hair", "loss", ",", "grade", "1", "was", "defined", "as", "hair", "loss", "up", "to", "50", "%", ",", "and", "grade", "2", "was", "defined", "as", "hair", "loss", "of", "50", "%", "or", "more", "." ]
+  }, {
+    "sentence_tokens" : [ "Currently", ",", "there", "is", "no", "standardized", "protocol", "or", "established", "grading", "system", "for", "the", "assessment", "of", "regrowth", "after", "chemotherapy", "induced", "alopecia", "." ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "hair", "regrowth", "was", "assessed", "according", "to", "the", "definition", "of", "therapeutic", "regrowth", "as", "used", "in", "dermatology", "described", "by", "Lee", "et", "al.", "[", "16", "]", ":", "Grade", "1", ",", "which", "is", "any", "regrowth", "(", "<", "10", "%", ")", ",", "grade", "2", ",", "which", "is", "minor", "regrowth", "(", "10", "-", "59", "%", ")", ",", "grade", "3", ",", "which", "is", "major", "regrowth", "(", "60", "-", "89", "%", ")", "and", "grade", "4", ",", "which", "is", "complete", "regrowth", "(", "90", "-", "100", "%", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "patient", "reported", "outcomes", "included", "a", "questionnaire", "battery", "composed", "of", "the", "NCI-PRO-CTCAE-ITEMS", "(", "National", "Cancer", "Institute", "Patient", "reported-outcomes", "Common", "Terminology", "Criteria", "for", "Adverse", "Events", ")", ",", "EORTC", "QLQ-C30", "(", "European", "Organisation", "for", "Research", "and", "Treatment", "of", "Cancer", "Quality", "of", "life", "questionnaire", ")", ",", "BR23update", ",", "Body", "Image", "Scale", ",", "Pro", "CTCAEs", "(", "Patient", "reported-outcomes", "Common", "Terminology", "Criteria", "for", "Adverse", "Events", ")", "and", "Hairdex", "questionnaire", "." ]
+  }, {
+    "sentence_tokens" : [ "QoL", "assessment", "will", "be", "reported", "separately.2.6", "Statistical", "methods", "and", "analysis", "." ]
+  }, {
+    "sentence_tokens" : [ "All", "analyses", "were", "performed", "using", "SPSS", "version", "25", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "study", "group", "was", "compared", "with", "the", "reference", "group", "regarding", "alopecia", "and", "quality", "of", "life", "outcome", "using", "linear", "mixed", "models", "with", "adjustment", "for", "age", ",", "chemotherapy", "regimen", ",", "tumour", "type", ",", "and", "baseline", "body", "image", "." ]
+  }, {
+    "sentence_tokens" : [ "Variance", "estimates", "were", "adjusted", "for", "the", "correlation", "of", "repeated", "observations", "from", "the", "same", "patient", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "comparisons", "between", "the", "two", "groups", ",", "a", "planned", "sample", "size", "of", "88", "patients", "in", "the", "study", "group", "and", "40", "patients", "in", "the", "reference", "group", "was", "sufficient", "to", "detect", "an", "effect", "size", "of", "d", "=", "0.55", "in", "a", "two", "sided", "t-test", "(", "alpha", "=", "0.05", ",", "beta", "=", "0.20", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "As", "the", "statistical", "power", "of", "an", "analysis", "by", "means", "of", "linear", "mixed", "models", "usually", "exceeds", "that", "of", "the", "t-test", ",", "it", "is", "expected", "that", "even", "somewhat", "smaller", "effect", "sizes", "can", "be", "detected", "in", "the", "planned", "analysis", "." ]
+  }, {
+    "sentence_tokens" : [ "Group", "(", "study", "group", "and", "reference", "population", "group", ")", "and", "time", "point", "(", "T0-T4", ")", "were", "included", "as", "main", "effects", "to", "investigate", "changes", "over", "time", "and", "group", "differences", "." ]
+  }, {
+    "sentence_tokens" : [ "Group-by-time", "interactions", "indicated", "different", "courses", "of", "alopecia", "in", "the", "two", "groups", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "baseline", "characteristics", "the", "p", "value", "was", "calculated", "using", "Mann-Whitney-U-Test", ",", "Chi2-Test", "and", "Fishers", "'", "Exact", "test.3", "Results", "." ]
+  }, {
+    "sentence_tokens" : [ "3.1", "Study", "population", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "study", "population", "included", "128", "patients", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "distribution", "of", "patients", "is", "shown", "in", "Fig.", "1", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "baseline", "characteristics", "of", "our", "patients", "are", "shown", "in", "Table", "1", "and", "were", "well", "balanced", "in", "regard", "to", "age", ",", "menopausal", "status", "and", "tumour", "features", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "median", "age", "in", "the", "CAP", "group", "was", "51", "(", "23", "-", "81", ")", "and", "54.5", "(", "32", "-", "80", ")", "in", "the", "NCAP", "group", "." ]
+  }, {
+    "sentence_tokens" : [ "Eighty-eight", "patients", "who", "met", "the", "inclusion", "criteria", "were", "assigned", "to", "the", "intervention", "group", "(", "CAP", ")", "and", "underwent", "SC", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "other", "40", "patients", "were", "allocated", "to", "the", "control", "group", "(", "NCAP", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "CAP", "group", ",", "11", "patients", "did", "not", "complete", "the", "study", ",", "which", "was", "a", "dropout", "rate", "of", "12.5", "%", "." ]
+  }, {
+    "sentence_tokens" : [ "Eight", "(", "of", "11", ")", "patients", "discontinued", "the", "trial", "after", "declining", "further", "application", "of", "SC", ",", "and", "three", "(", "of", "11", ")", "patients", "dropped", "out", "due", "to", "exclusion", "criteria", "that", "were", "not", "apparent", "during", "screening", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "control", "group", ",", "the", "dropout", "rate", "was", "5", "%", ",", "as", "two", "patients", "withdrew", "their", "informed", "consent", "during", "the", "study", "." ]
+  }, {
+    "sentence_tokens" : [ "Follow-up", "was", "completed", "for", "88.3", "%", "of", "the", "patients", "in", "the", "intervention", "group", "and", "for", "81.6", "%", "in", "the", "control", "group.3.2", "Hair", "loss", "." ]
+  }, {
+    "sentence_tokens" : [ "Alopecia", "was", "evaluated", "by", "the", "patients", "themselves", "and", "by", "an", "expert", "group", "." ]
+  }, {
+    "sentence_tokens" : [ "Twenty-four", "percent", "of", "patients", "in", "the", "CAP", "group", "and", "0", "%", "in", "the", "NCAP", "group", "evaluated", "their", "hair", "loss", "as", "grade", "1", "(", "<", "50", "%", "hair", "loss", ")", "(", "P", "=", "0.001", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "none", "of", "the", "patients", "graded", "their", "hair", "loss", "as", "grade", "0", "(", "Fig.", "2", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Experts", "evaluated", "the", "hair", "loss", "in", "CAP", "group", "members", "as", "grade", "0", "in", "13", "%", ",", "grade", "1", "in", "59", "%", "and", "grade", "2", "in", "28", "%", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "showed", "hair", "preservation", "in", "72", "%", "of", "patients", "using", "SC", ",", "whereas", "hair", "preservation", "was", "0", "%", "in", "the", "NCAP", "group", "(", "P", "<=", "0.001", ")", "(", "Fig.", "3", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Patients", "as", "well", "as", "experts", "agreed", "on", "the", "evaluation", "in", "the", "NCAP", "group", "(", "100", "%", "alopecia", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Interestingly", ",", "a", "significant", "difference", "was", "noted", "between", "evaluation", "by", "experts", "(", "72", "%", ",", "<", "50", "%", "hair", "loss", ")", "and", "patients", "'", "self-assessment", "(", "24", "%", ",", "<", "50", "%", "hair", "loss", ")", "regarding", "HP", "in", "the", "CAP", "group", "(", "Fig.", "4", ")", ".3.3", "Effect", "of", "SC", "specific", "chemotherapy", "regimens", "." ]
+  }, {
+    "sentence_tokens" : [ "SC", "was", "more", "effective", "in", "preventing", "alopecia", "in", "patients", "receiving", "taxane", "monotherapy", "than", "in", "patients", "receiving", "an", "anthracycline-taxane-based", "regimen", "." ]
+  }, {
+    "sentence_tokens" : [ "Using", "the", "patients", "'", "evaluation", ",", "50", "%", "of", "patients", "with", "taxane", "monotherapy", "had", "grade", "1", "alopecia", "compared", "to", "17", "%", "of", "patients", "with", "anthracycline-taxane", "CT", "(", "50", "%", "vs.", "17.2", "%", ",", "P", "=", "0.018", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Experts", "evaluated", "17", "%", "of", "patients", "with", "taxane", "monotherapy", "as", "grade", "0", "and", "42", "%", "as", "grade", "1", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "comparison", ",", "the", "experts", "evaluated", "the", "hair", "loss", "of", "patients", "with", "an", "anthracycline-taxane", "CT", "as", "grade", "0", "in", "7.9", "%", "and", "grade", "1", "in", "49", "%", "(", "P", "=", "0.061", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Regarding", "the", "sequence", "of", "CT", "(", "taxanes", "followed", "by", "anthracyclines", "or", "vice", "versa", ")", ",", "there", "was", "no", "significant", "difference", "in", "hair", "loss", "." ]
+  }, {
+    "sentence_tokens" : [ "SC", "was", "successful", "in", "39", "%", "of", "patients", "who", "received", "taxanes", "first", "and", "in", "20", "%", "of", "patients", "who", "received", "anthracyclines", "first", "(", "Table", "2", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "If", "patients", "requested", "discontinuation", "of", "SC", "due", "to", "hair", "loss", ",", "this", "was", "documented", "as", "grade", "2", "alopecia.3.4", "Discontinuation", "of", "SC", "." ]
+  }, {
+    "sentence_tokens" : [ "Seventy-one", "percent", "(", "n", "=", "55", ")", "of", "patients", "in", "the", "CAP", "cohort", "did", "not", "use", "SC", "until", "the", "end", "of", "their", "CT", "." ]
+  }, {
+    "sentence_tokens" : [ "Reasons", "for", "discontinuation", "of", "SC", "were", "summarized", "in", "three", "different", "scenarios", ":", "first", ",", "hair", "loss", "(", "75", "%", ")", ";", "second", ",", "discontinuation", "for", "logistical", "reasons", "(", "16", "%", ")", ";", "and", "third", ",", "the", "patient", "not", "tolerating", "SC", "(", "9", "%", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Sixteen", "percent", "(", "n", "=", "9", ")", "of", "patients", "stopped", "using", "SC", "for", "reasons", "unrelated", "to", "adverse", "events", "of", "SC", "or", "hair", "loss", "(", "e.g", ".,", "transfer", "of", "care", ",", "discontinuation", "of", "CT", "due", "to", "adverse", "events", "or", "disease", "progression", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Nine", "percent", "of", "patients", "reported", "slight", "headaches", ",", "scalp", "pain", "and", "a", "generalized", "feeling", "of", "cold.3.5", "Patient", "satisfaction", "and", "impact", "of", "scalp", "cooling", "on", "quality", "of", "life", "(", "QoL", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "did", "not", "observe", "a", "superiority", "of", "scalp", "cooling", "in", "terms", "of", "QoL", "outcome", "(", "Fig.", "6", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "may", "be", "a", "result", "of", "a", "high", "discontinuation", "rate", "." ]
+  }, {
+    "sentence_tokens" : [ "More", "than", "two-thirds", "of", "patients", "reported", "alopecia", "as", "the", "primary", "reason", "of", "an", "early", "discontinuation", "of", "scalp", "cooling", "." ]
+  }, {
+    "sentence_tokens" : [ "Based", "on", "patient-reports", ",", "the", "application", "of", "scalp", "cooling", "in", "routine", "care", "for", "all", "chemotherapy", "regimens", "hence", "seems", "to", "be", "limited.3.6", "Hair", "regrowth", "." ]
+  }, {
+    "sentence_tokens" : [ "Hair", "regrowth", "was", "evaluated", "by", "experts", "." ]
+  }, {
+    "sentence_tokens" : [ "After", "three", "months", ",", "50", "%", "of", "patients", "in", "the", "CAP", "group", "and", "38", "%", "in", "the", "NCAP", "group", "had", "complete", "regrowth", "of", "their", "hair", "." ]
+  }, {
+    "sentence_tokens" : [ "At", "the", "six-to", "nine-month", "follow-up", ",", "complete", "regrowth", "was", "observed", "in", "85", "%", "of", "patients", "in", "the", "CAP", "group", "and", "90", "%", "of", "patients", "in", "the", "NCAP", "group", "(", "Fig.", "5", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Concerning", "HR", "three", "and", "six", "to", "nine", "months", "after", "CT", ",", "no", "significant", "differences", "between", "the", "two", "groups", "were", "found.3.7", "Adverse", "events", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "total", "of", "9.1", "%", "(", "n", "=", "5", ")", "of", "the", "patients", "stopped", "using", "SC", "due", "to", "experiencing", "adverse", "events", "such", "as", "scalp", "pain", ",", "extreme", "sensation", "of", "cold", "or", "headaches.4", "Discussion", "." ]
+  }, {
+    "sentence_tokens" : [ "SC", "is", "currently", "the", "most", "promising", "approach", "to", "prevent", "chemotherapy", "induced", "alopecia", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "Hair-Safe", "study", "is", "among", "the", "first", "studies", "evaluating", "hair", "loss", "not", "only", "by", "health", "care", "experts", "but", "also", "by", "patients", "themselves", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "assessments", "were", "not", "combined", "but", "examined", "separately", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "addition", ",", "hair", "regrowth", "after", "treatment", "was", "assessed", "." ]
+  }, {
+    "sentence_tokens" : [ "Coolbrandt", "et", "al.", "also", "published", "self", "reported", "outcomes", "for", "approximately", "82", "%", "of", "their", "breast", "cancer", "patients", "at", "the", "end", "of", "SC", "and", "one", "year", "after", "treatment", "[", "17", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "our", "study", ",", "hair", "preservation", "was", "significantly", "higher", "in", "the", "group", "undergoing", "SC", "than", "in", "the", "control", "group", "when", "using", "patient", "and", "expert", "evaluations", "." ]
+  }, {
+    "sentence_tokens" : [ "Previous", "studies", "have", "already", "shown", "the", "high", "efficacy", "and", "safety", "of", "this", "application", "[", "7,10", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Interestingly", ",", "varying", "success", "rates", "of", "SC", "between", "30", "and", "80", "%", "have", "been", "described", "[", "6,9,10,18,19", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Discrepancies", "in", "success", "rates", "may", "be", "attributed", "to", "different", "trial", "designs", "and", "patient", "populations", ",", "CT", "regimens", ",", "timeframes", "for", "evaluating", "hair", "loss", "and", "types", "of", "devices", "used", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "review", "by", "Wang", "et", "al.", "[", "20", "]", ",", "the", "results", "of", "3", "different", "devices", "were", "presented", ",", "and", "the", "effectiveness", "of", "SC", "therapy", "was", "dependent", "on", "different", "cooling", "equipment", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "success", "rate", "was", "between", "55", "and", "75", "%", "depending", "on", "the", "device.Remarkably", ",", "our", "study", "shows", "a", "significantly", "worse", "evaluation", "of", "the", "CAP", "group", "regarding", "patient", "evaluation", "in", "comparison", "to", "expert", "evaluation", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "fact", ",", "none", "of", "the", "patients", "in", "the", "CAP", "group", "described", "their", "hair", "loss", "as", "grade", "0", "alopecia", ",", "whereas", "13.1", "%", "were", "evaluated", "as", "grade", "0", "by", "experts", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "NCAP", "group", ",", "there", "was", "no", "difference", "between", "the", "evaluations", "because", "both", "patients", "and", "experts", "assessed", "100", "%", "of", "the", "participants", "as", "having", "grade", "2", "alopecia", "(", ">=", "50", "%", "hair", "loss", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "possible", "explanation", "could", "be", "that", "patients", "themselves", "seem", "to", "be", "more", "critical", "in", "evaluating", "their", "hair", "loss", "." ]
+  }, {
+    "sentence_tokens" : [ "It", "is", "possible", "that", "the", "first", "instance", "of", "minor", "hair", "loss", "can", "subjectively", "be", "perceived", "as", "grade", "2", "alopecia", "by", "patients", "due", "to", "preconceived", "expectations", "or", "other", "psychological", "aspects", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "could", "explain", "the", "phenomenon", "of", "patients", "perceiving", "their", "hair", "loss", "as", "grade", "2", ",", "whereas", "experts", "evaluated", "it", "as", "grade", "1", "or", "even", "grade", "0.The", "efficacy", "of", "SC", "is", "influenced", "by", "many", "factors", ",", "such", "as", "age", ",", "infusion", "time", ",", "ethnic", "differences", "in", "head", "shape", "and", "scalp", "temperature", "[", "21,22", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "the", "most", "important", "influence", "is", "the", "chemotherapeutic", "agent", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "accordance", "with", "previously", "published", "studies", "[", "9", ",", "[", "12", "]", ",", "[", "13", "]", ",", "[", "14", "]", "]", ",", "we", "observed", "that", "SC", "was", "more", "effective", "in", "patients", "receiving", "taxane", "monotherapy", "than", "in", "patients", "receiving", "an", "anthracycline-taxane-based", "regimen", "." ]
+  }, {
+    "sentence_tokens" : [ "Using", "the", "patients", "'", "evaluation", ",", "50", "%", "of", "patients", "with", "taxane", "monotherapy", "had", "grade", "1", "alopecia", "compared", "to", "17.2", "%", "of", "patients", "with", "an", "anthracycline-taxane-based", "regimen", "." ]
+  }, {
+    "sentence_tokens" : [ "Initial", "studies", "on", "SC", "mainly", "included", "patients", "undergoing", "taxane", "monotherapy", "[", "18,23,24", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "These", "studies", "demonstrated", "fairly", "good", "efficacy", "but", "do", "not", "fully", "depict", "the", "clinical", "reality", "where", "patients", "usually", "receive", "CT", "regimens", "containing", "taxanes", "as", "well", "as", "anthracyclines.In", "our", "study", ",", "patients", "'", "and", "experts", "'", "opinions", "matched", "in", "their", "evaluation", "of", "the", "hair", "preservation", "rate", "concerning", "taxane", "monotherapy", "." ]
+  }, {
+    "sentence_tokens" : [ "Interestingly", ",", "the", "evaluation", "differed", "regarding", "patients", "receiving", "anthracycline-taxane-based", "CT", "." ]
+  }, {
+    "sentence_tokens" : [ "Almost", "one-fifth", "(", "17", "%", ")", "of", "patients", "undergoing", "anthracycline-taxane-based", "CT", "evaluated", "their", "hair", "loss", "as", "grade", "1", "compared", "to", "more", "than", "half", "(", "57", "%", ")", "of", "experts", "evaluating", "hair", "loss", "as", "grade", "1", "or", "below", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "subjective", "patient", "self", "evaluation", "may", "be", "influenced", "by", "the", "medical", "education", "on", "SC", "that", "patients", "received", ",", "knowing", "that", "hair", "loss", "was", "more", "likely", "to", "happen", "in", "an", "anthracycline-taxane-based", "regimen", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "primary", "reason", "for", "discontinuation", "of", "SC", "was", "hair", "loss", ",", "which", "is", "consistent", "with", "other", "studies", "where", "hair", "loss", "was", "also", "the", "main", "reason", "for", "SC", "discontinuation", "[", "7,12,25", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Regarding", "the", "CT", "regimen", "sequence", ",", "there", "was", "no", "significant", "difference", "in", "hair", "loss", "in", "our", "study", "." ]
+  }, {
+    "sentence_tokens" : [ "Bajpai", "et", "al.", "indicated", "in", "their", "study", "that", "in", "patients", "receiving", "taxanes", "followed", "by", "anthracyclines", ",", "SC", "procedures", "were", "more", "effective", "in", "comparison", "to", "those", "receiving", "anthracyclines", "followed", "by", "taxanes", "[", "6", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "It", "is", "noteworthy", "that", "the", "CAP", "group", "in", "the", "study", "of", "Bajpai", "et", "al.", "only", "contained", "half", "the", "number", "of", "patients", "compared", "to", "the", "present", "study.This", "study", "additionally", "examined", "the", "potentially", "positive", "effect", "of", "SC", "on", "regrowth", "after", "chemotherapy", "induced", "alopecia", "." ]
+  }, {
+    "sentence_tokens" : [ "To", "date", ",", "only", "a", "few", "studies", "have", "observed", "hair", "regrowth", "after", "CT", "[", "6,7,10,12", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "most", "individuals", ",", "chemotherapy", "induced", "alopecia", "is", "a", "reversible", "process", "[", "26", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "a", "potential", "impact", "of", "SC", "in", "this", "time", "frame", "may", "lead", "to", "faster", "or", "more", "voluminous", "regrowth", "." ]
+  }, {
+    "sentence_tokens" : [ "Hair", "regrowth", "after", "chemotherapy", "in", "our", "study", "showed", "no", "significant", "differences", "between", "the", "CAP", "and", "NCAP", "groups", "3", "months", "after", "CT", "or", "6", "-", "9", "months", "after", "CT", "." ]
+  }, {
+    "sentence_tokens" : [ "Our", "results", "are", "consistent", "with", "the", "findings", "of", "the", "Coolhair", "study", "by", "Smetanay", "et", "al.", "which", "showed", "no", "significant", "difference", "between", "the", "CAP", "and", "NCAP", "groups", "3", "and", "6", "months", "after", "CT", "regarding", "expert", "evaluation", "[", "7", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "contrast", ",", "Kinoshita", "et", "al.", "reported", "a", "significant", "difference", "between", "the", "CAP", "and", "NCAP", "groups", "regarding", "patients", "with", "an", "increase", "of", "at", "least", "50", "%", "of", "hair", "after", "12", "weeks", "." ]
+  }, {
+    "sentence_tokens" : [ "Regrowth", "was", "judged", "by", "2", "independent", "assessors", "and", "the", "patient", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "addition", ",", "the", "proportion", "of", "patients", "who", "recovered", "from", "grade", "2", "to", "grade", "0", "alopecia", "over", "12", "weeks", "after", "CT", "was", "significantly", "higher", "in", "the", "CAP", "group", "[", "10", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Likewise", ",", "data", "published", "by", "Ohsumi", "et", "al.", "also", "report", "significantly", "better", "regrowth", "in", "their", "CAP", "vs.", "NCAP", "groups", "." ]
+  }, {
+    "sentence_tokens" : [ "Hair", "regrowth", "was", "judged", "at", "five", "time", "points", "by", "two", "experts", "using", "a", "4-step", "score", "and", "by", "patients", "using", "questionnaires", "." ]
+  }, {
+    "sentence_tokens" : [ "They", "found", "a", "significant", "difference", "regarding", "expert", "evaluation", "at", "all", "time", "points", "and", "at", "four", "and", "seven", "months", "after", "CT", "using", "patients", "'", "questionnaires", "[", "12", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Furthermore", ",", "Bajpai", "et", "al.", "reported", "significantly", "better", "regrowth", "in", "patients", "who", "underwent", "SC", "after", "chemotherapy", "induced", "alopecia", "than", "in", "patients", "who", "did", "not", "undergo", "SC", "[", "6", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "All", "the", "abovementioned", "studies", "used", "different", "time", "frames", "and", "scores", "for", "the", "evaluation", "of", "regrowth", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "used", "a", "well", "established", "dermatology", "scale", ",", "and", "the", "evaluation", "was", "performed", "by", "three", "experts", "in", "the", "field", "with", "substantial", "clinical", "experience", "." ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "comparison", "of", "studies", "regarding", "regrowth", "after", "chemotherapy", "induced", "alopecia", "is", "currently", "difficult", "due", "to", "lack", "of", "standardized", "and", "validated", "scales", "and", "widely", "differing", "assessment", "time", "points", "." ]
+  }, {
+    "sentence_tokens" : [ "Eventually", ",", "the", "use", "of", "SC", "mediates", "accelerated", "early", "regrowth", ",", "as", "the", "work", "of", "Kinoshita", "et", "al.", "suggests", ",", "but", "lacks", "maintenance", "of", "this", "benefit", "over", "long-term", "observation", "." ]
+  }, {
+    "sentence_tokens" : [ "Additionally", ",", "it", "remains", "unclear", "whether", "there", "is", "a", "beneficial", "effect", "of", "SC", "on", "the", "prevention", "of", "permanent", "alopecia", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "despite", "the", "long", "follow-up", "in", "our", "study", ",", "no", "cases", "of", "permanent", "alopecia", "were", "noted.SC", "is", "a", "safe", "technique", "with", "no", "serious", "safety", "concerns", "." ]
+  }, {
+    "sentence_tokens" : [ "Our", "study", "confirms", "the", "results", "of", "previous", "studies", "in", "regard", "to", "the", "high", "efficacy", "and", "safety", "of", "this", "application", "[", "6,9,11,12,18,19,21,22", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "major", "strength", "of", "our", "study", "is", "the", "separate", "examination", "of", "expert", "and", "patient", "evaluations", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "addition", ",", "our", "study", "examines", "one", "of", "the", "largest", "patient", "populations", "regarding", "SC", "and", "especially", "regrowth", "after", "SC", "." ]
+  }, {
+    "sentence_tokens" : [ "Additionally", ",", "the", "Hair-Safe", "study", "has", "the", "longest", "follow-up", "period", "compared", "to", "previous", "studies.We", "report", "a", "dropout", "rate", "of", "13", "%", "in", "the", "CAP", "group", "and", "5", "%", "in", "the", "NCAP", "group", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "our", "study", "took", "place", "during", "the", "COVID-19", "pandemic", "with", "the", "necessity", "of", "postponing", "follow-up", "appointments", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "especially", "affected", "the", "first", "3", "months", "after", "CT", "follow-up", "." ]
+  }, {
+    "sentence_tokens" : [ "One", "of", "the", "limitations", "of", "our", "study", "is", "that", "patients", "were", "not", "randomized", "." ]
+  }, {
+    "sentence_tokens" : [ "Additionally", ",", "we", "did", "not", "adjust", "for", "confounders", "that", "may", "have", "potentially", "influenced", "the", "study", "'s", "results", "." ]
+  }, {
+    "sentence_tokens" : [ "Our", "study", "is", "a", "single-centre", "study", "and", "included", "patients", "with", "14", "different", "CT", "regimens", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "acknowledge", "that", "due", "to", "our", "sample", "size", ",", "it", "was", "impossible", "to", "evaluate", "the", "impact", "of", "each", "regimen", "on", "the", "efficacy", "of", "SC", "individually", "." ]
+  }, {
+    "sentence_tokens" : [ "To", "explore", "this", "question", ",", "multicentre", "studies", "with", "larger", "patient", "populations", "are", "needed.5", "Conclusion", "." ]
+  }, {
+    "sentence_tokens" : [ "One", "key", "finding", "of", "our", "study", "is", "the", "importance", "of", "extensive", "patient", "education", ",", "especially", "emphasizing", "that", "minor", "hair", "loss", "may", "occur", "even", "during", "successful", "SC", "." ]
+  }, {
+    "sentence_tokens" : [ "Overall", ",", "SC", "is", "the", "most", "promising", "approach", "to", "prevent", "alopecia", "in", "terms", "of", "efficacy", "and", "safety", "." ]
+  }, {
+    "sentence_tokens" : [ "Patients", "can", "highly", "benefit", "from", "the", "application", "of", "scalp", "cooling", "devices", "." ]
+  }, {
+    "sentence_tokens" : [ "SC", "should", "be", "integrated", "into", "clinical", "practice", "and", "targeted", "towards", "patients", "with", "potentially", "high", "success", "rates", "of", "SC", "selected", "by", "chemotherapy", "regimen", "." ]
+  }, {
+    "sentence_tokens" : [ "Ideally", ",", "health", "insurance", "should", "cover", "the", "costs", "of", "treatment", ",", "and", "it", "should", "be", "made", "broadly", "available", "." ]
+  }, {
+    "sentence_tokens" : [ "Declaration", "of", "competing", "interest", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "authors", "declare", "no", "conflict", "of", "interest", "." ]
+  } ]
+}

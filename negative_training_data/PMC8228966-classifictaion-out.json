@@ -1,1 +1,351 @@
-[ ]
+{
+  "regulations" : [ ],
+  "hardInstances" : [ ],
+  "withoutRegulations" : [ {
+    "sentence_tokens" : [ "Therefore", ",", "we", "iteratively", "enhanced", "the", "brain", "tissue", "segmentation", "labels", "of", "the", "FLAIR", "MRIs", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 12, 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "HighRes3DNet", "tends", "to", "underestimate", "Cerebellum", "GM", "and", "overestimate", "Cerebellum", "WM", "(", "Cerebellum", "GM", "volume", ":", "Reference", ",", "430.8", "+/-", "45.7", ";", "HighRes3DNet", ",", "408.0", "+/-", "34.6", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "Moreover", ",", "as", "shown", "in", "Figure", "3", ",", "we", "used", "histogram", "based", "intensity", "regularization", ",", "min-max", "normalization", "with", "percentile", "cut-offs", "of", "(", "0.05", ",", "99.95", ")", ",", "and", "z", "normalization", "using", "TorchIO", "[", "17", "]", "to", "deal", "with", "the", "differences", "in", "MRI", "intensity", "variance", "." ],
+    "entities_indices" : [ [ 41, 42 ] ]
+  }, {
+    "sentence_tokens" : [ "Semi-Supervised", "Learning", "in", "Medical", "MRI", "Segmentation", ":", "Brain", "Tissue", "with", "White", "Matter", "Hyperintensity", "Segmentation", "Using", "FLAIR", "MRI", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 4, 5 ], [ 5, 6 ], [ 13, 14 ], [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "is", "because", "it", "is", "effectively", "impossible", "to", "obtain", "structural", "information", "from", "these", "MRIs", "without", "the", "paired", "T1w", "MRI", "." ],
+    "entities_indices" : [ [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "addition", ",", "we", "used", "the", "cross-entropy", "loss", "function", "[", "22", "]", "and", "AdamW", "optimizer", "[", "23", "]", "with", "learning", "rate", "=", "0.001", "and", "weight", "decay", "=", "0.01.For", "brain", "tissue", "segmentation", ",", "we", "divided", "68", "subjects", "with", "a", "split", "ratio", "of", "0.8", ";", "54", "subjects", "were", "used", "for", "training", "and", "14", "subjects", "were", "used", "for", "validation", "." ],
+    "entities_indices" : [ [ 30, 31 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "clinical", "settings", ",", "however", ",", "FLAIR", "is", "often", "the", "only", "available", "modality", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "believe", "our", "semi", "supervised", "learning", "method", "has", "a", "great", "potential", "for", "use", "for", "other", "MRI", "sequences", "and", "will", "encourage", "others", "to", "perform", "brain", "tissue", "segmentation", "using", "MRI", "modalities", "other", "than", "T1w", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 15, 16 ], [ 25, 26 ], [ 27, 28 ] ]
+  }, {
+    "sentence_tokens" : [ "(", "C", ")", "Brain", "Tissue", "and", "WMH", "Segmentation", ":", "this", "process", "trains", "the", "brain", "tissue", "and", "WMH", "segmentation", "processes", "individually", "and", "merges", "the", "results", "into", "one", "label", "with", "their", "predictions", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "contrast", ",", "FLAIR", "MRI", "is", "a", "more", "common", "and", "essential", "sequence", "for", "evaluating", "the", "brain", "and", "is", "easy", "to", "obtain", "in", "routine", "practice", ",", "so", "this", "method", "is", "applicable", "to", "more", "patients.As", "it", "is", "shown", "in", "Figure", "7", ",", "the", "result", "of", "brain", "tissue", "segmentation", "enhancement", "suggests", "that", "semi", "supervised", "learning", "was", "able", "to", "process", "the", "direct", "training", "of", "brain", "tissue", "segmentation", "only", "on", "FLAIR", "MRI", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 45, 46 ], [ 51, 52 ], [ 62, 63 ], [ 66, 67 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "introduced", "a", "semi", "supervised", "learning", "method", "for", "brain", "tissue", "segmentation", "using", "only", "FLAIR", "MRI", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 10, 11 ], [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "quantification", "of", "WMH", "is", "essential", "for", "evaluating", "the", "association", "of", "WMH", "burden", "with", "cognitive", "dysfunction", "and", "longitudinal", "changes", "in", "WMH", "volume", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 11, 12, 13 ], [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "Finally", ",", "we", "trained", "a", "deep", "neural", "network", "based", "brain", "segmentation", "model", "for", "FLAIR", "MRI", "." ],
+    "entities_indices" : [ [ 9, 10, 11 ], [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "Hence", ",", "a", "reliable", "automated", "method", "for", "measuring", "WMH", "and", "cortical", "volume", "would", "be", "helpful", "in", "clinical", "practice", "." ],
+    "entities_indices" : [ [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "Our", "goal", "is", "to", "produce", "brain", "tissue", "and", "WMH", "segmentation", "exclusively", "on", "FLAIR", "MRI", "." ],
+    "entities_indices" : [ [ 9, 10 ], [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "Recently", ",", "they", "have", "been", "combined", "with", "other", "MRI", "based", "biomarkers", "such", "as", "white-matter", "hyperintensity", "(", "WMH", ")", "for", "investigation", "in", "Alzheimer", "'", "s", "disease", "(", "AD", ")", "or", "aging", "research", "[", "1,2", "]", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 26, 27 ] ]
+  }, {
+    "sentence_tokens" : [ "Experiment", "Setup", "." ],
+    "entities_indices" : [ [ 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "co-registered", "pseudo-labels", "of", "brain", "tissue", "cannot", "be", "interpreted", "as", "the", "ground", "truth", "due", "to", "noise", ",", "isolated", "regions", ",", "and", "misled", "hole", "results", "from", "using", "the", "co-registration", "method", "." ],
+    "entities_indices" : [ [ 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "Performance", "of", "Brain", "Tissue", "Segmentation", "." ],
+    "entities_indices" : [ [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "Patients", "with", "mild", "cognitive", "impairment", "or", "early", "AD", "had", "concurrent", "WMH", ",", "which", "indicates", "a", "more", "significant", "cognitive", "dysfunction", "than", "those", "with", "a", "low", "WMH", "burden", "[", "5", "]", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "clinical", "practice", ",", "it", "can", "be", "difficult", "to", "obtain", "3D", "T1w", "MRIs", "because", "of", "the", "long", "scan", "time", ",", "magnetic", "resonance", "machine", "performance", ",", "and", "the", "patient", "'", "s", "condition", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "There", "are", "various", "brain", "tissue", "segmentation", "tools", "for", "three-dimensional", "(", "3D", ")", "T1", "weighted", "(", "T1w", ")", "MRIs", ",", "such", "as", "FreeSurfer", "[", "9", "]", ",", "SPM", "[", "10", "]", ",", "and", "FSL", "[", "11", "]", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 10, 11 ], [ 26, 27 ], [ 32, 33, 34, 35, 36 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "the", "T1w", "MRIs", ",", "we", "used", "FreeSurfer", "(", "6.0", ",", "Boston", ",", "MA", ",", "USA", ")", "with", "a", "\"", "recon-all", "\"", "pipeline", ",", "then", "extracted", "the", "brain", "labels", "as", "the", "pseudo-labels", ",", "which", "consist", "of", "cerebral", "gray", "matter", ",", "cerebral", "white", "matter", ",", "cerebellum", "gray", "matter", ",", "cerebellum", "white", "matter", ",", "and", "lateral", "ventricle", "from", "aseg+", "aparc.mgz", "[", "9", "]", "." ],
+    "entities_indices" : [ [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "Precision", "=", "TruePositiveTruePositive+", "FalsePositive", "Recall", "=", "TruePositiveTruePositive+", "FalseNegative", "F1Score", "=", "2", "*", "Precision", "*", "RecallPrecision+", "Recall", "3", "." ],
+    "entities_indices" : [ [ 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "Reference", "segmentation", "of", "the", "WMH", "was", "performed", "by", "manual", "outlining", "on", "the", "FLAIR", "MRIs", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 4, 5 ], [ 12, 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "After", "model", "training", "was", "complete", ",", "we", "used", "grid", "based", "sampling", "and", "aggregation", "to", "perform", "inference", "on", "the", "segmentation", "results.For", "WMH", "segmentation", ",", "we", "distributed", "308", "subjects", ",", "using", "277", "subjects", "for", "training", "and", "31", "subjects", "for", "validation", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 18, 19 ], [ 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "White-matter", "hyperintensity", "(", "WMH", ")", "is", "a", "primary", "biomarker", "for", "small-vessel", "cerebrovascular", "disease", ",", "Alzheimer", "'s", "disease", "(", "AD", ")", ",", "and", "others", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 11, 12, 13 ], [ 14, 15, 16, 17 ], [ 18, 19 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "trained", "a", "convolutional", "neural", "network", "(", "CNN", ")", "with", "the", "FLAIR", "MRI", "and", "co-registered", "pseudo-labels", "of", "the", "brain", "tissue", "as", "shown", "in", "Figure", "2", "." ],
+    "entities_indices" : [ [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "study", ",", "we", "thus", "propose", "a", "semi", "supervised", "learning", "method", "for", "full", "brain", "segmentation", "using", "FLAIR", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 14, 15, 16 ], [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "Pseudo", "Labeling", "from", "T1w", "MRI", "." ],
+    "entities_indices" : [ [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "No", "medical", "MRI", "based", "augmentation", "technique", "was", "used", "to", "process", "the", "WMH", "segmentation", "to", "avoid", "confusing", "any", "of", "the", "information", "on", "the", "already", "sensitive", "object", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "Thus", ",", "brain", "structural", "analysis", ",", "especially", "volumetric", "analysis", ",", "combined", "with", "WMH", "could", "provide", "more", "descriptive", "information", "to", "reveal", "the", "relationship", "between", "cognitive", "performance", "and", "MRI", "based", "biomarkers", "." ],
+    "entities_indices" : [ [ 12, 13 ], [ 26, 27 ] ]
+  }, {
+    "sentence_tokens" : [ "Considering", "that", "a", "relative", "difference", "of", "3.4", "%", "already", "existed", "in", "the", "pseudo-labels", "for", "FLAIR", "MRI", ",", "we", "conclude", "that", "our", "method", "is", "sufficient", "for", "FLAIR", "MRI", "segmentation.However", ",", "we", "noticed", "that", "our", "segmentation", "method", "has", "a", "limitation", "due", "to", "the", "absence", "of", "ground", "truth", "." ],
+    "entities_indices" : [ [ 15, 16 ], [ 26, 27 ], [ 33, 34 ] ]
+  }, {
+    "sentence_tokens" : [ "WMH", "predicts", "conversion", "from", "mild", "cognitive", "impairment", "to", "AD", "[", "6", "]", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "By", "comparing", "each", "model", "'", "s", "predicted", "label", "with", "its", "pseudo-label", ",", "we", "can", "observe", "that", "all", "three", "models", "(", "U-Net+", "+", ",", "U-Net", ",", "and", "HighRes3DNet", ")", "have", "made", "changes", "in", "initially", "empty", "regions.By", "comparing", "the", "volume", "obtained", "by", "each", "model", "to", "the", "volume", "obtained", "by", "FreeSurfer", "from", "the", "T1w", "MRI", ",", "we", "can", "measure", "the", "average", "relative", "volume", "difference", "(", "U-Net+", "+", ",", "4.8", "+/-", "2.0", ";", "U-Net", ",", "4.8", "+/-", "1.7", ")", "." ],
+    "entities_indices" : [ [ 51, 52 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "figured", "U-Net", ",", "with", "a", "Dice", "overlap", "score", "of", "0.81", "+/-", "0.07", ",", "a", "precision", "of", "0.88", "+/-", "0.05", ",", "a", "recall", "of", "0.80", "+/-", "0.08", ",", "and", "an", "F1", "score", "of", "0.83", "+/-", "0.05", ",", "is", "the", "most", "balanced", "segmentation", "architecture", "of", "the", "comparison", "models.Even", "though", "U-Net+", "+", "and", "HighRes3DNet", "had", "lower", "dice", "overlap", "scores", "compared", "to", "U-Net", ",", "as", "shown", "in", "Figure", "6", ",", "we", "could", "still", "demonstrate", "that", "any", "convolutional", "network", "based", "segmentation", "architecture", "is", "qualified", "for", "WMH", "segmentation", "." ],
+    "entities_indices" : [ [ 41, 42 ], [ 76, 77 ], [ 81, 82 ], [ 82, 83 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "reality", ",", "it", "is", "rare", "for", "clinicians", "to", "obtain", "both", "T1w", "and", "FLAIR", "MRIs", "because", "of", "the", "burden", "of", "scanning", "time", "." ],
+    "entities_indices" : [ [ 13, 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "Oh", ",", "and", "M.K", "." ],
+    "entities_indices" : [ [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "our", "case", ",", "this", "is", "used", "to", "align", "the", "T1w", "MRI", "with", "the", "FLAIR", "MRI", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "further", "evaluated", "our", "proposed", "WMH", "segmentation", "by", "comparing", "the", "Dice", "similarity", "coefficients", "of", "the", "reference", "and", "the", "results", "of", "our", "proposed", "method", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "it", "is", "impractical", "to", "generate", "the", "ground", "truth", "using", "FLAIR", "MRI", "because", "it", "lacks", "structural", "information", "when", "compared", "with", "T1w", "MRI", "." ],
+    "entities_indices" : [ [ 12, 13 ], [ 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "will", "be", "beneficial", "because", "it", "is", "difficult", "to", "obtain", "3D", "T1", "volume", "MRIs", "in", "the", "elderly", "because", "of", "the", "long", "scan", "time", "and", "need", "for", "a", "high-performance", "magnetic", "resonance", "machine", "to", "obtain", "good", "quality", "data.T2", ",", "SWI", ",", "and", "GRE", "are", "also", "known", "for", "the", "difficulty", "of", "obtaining", "brain", "tissue", "labels", "from", "these", "modalities", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 37, 38 ] ]
+  }, {
+    "sentence_tokens" : [ "Evaluation", "for", "Brain", "Tissue", "Segmentation", "." ],
+    "entities_indices" : [ [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "used", "medical", "MRI", "based", "augmentation", "techniques", "to", "improve", "the", "robustness", "of", "the", "CNN", "based", "segmentation", "architecture", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "Chronic", "infarcts", "were", "hypointense", "with", "hyperintense", "rim", "lesions", "on", "the", "FLAIR", "MRI", "and", "were", "excluded", "from", "WMH", "labeling", "." ],
+    "entities_indices" : [ [ 11, 12 ], [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "Automated", "quantitative", "metrics", "of", "structural", "magnetic", "resonance", "imaging", "(", "MRI", ")", ",", "such", "as", "cortical", "volume", "or", "thickness", ",", "have", "commonly", "been", "used", "as", "objective", "indicators", "of", "neurodegeneration", "related", "to", "aging", ",", "stroke", ",", "and", "dementia", "." ],
+    "entities_indices" : [ [ 9, 10 ], [ 30, 31 ], [ 32, 33 ], [ 35, 36 ] ]
+  }, {
+    "sentence_tokens" : [ "To", "evaluate", "the", "performance", "of", "WMH", "segmentation", ",", "we", "measured", "the", "Dice", "overlap", "score", "[", "25", "]", ",", "which", "measures", "the", "similarity", "between", "the", "ground", "truth", "label", "and", "the", "prediction", "label", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "Deep", "Learning", "Based", "Initial", "Segmentation", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "Evaluation", "for", "WMH", "Segmentation", "." ],
+    "entities_indices" : [ [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "association", "of", "WMH", "with", "brain", "structural", "changes", "has", "also", "recently", "been", "reported", "." ],
+    "entities_indices" : [ [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "Ultimately", ",", "this", "situation", "hinders", "approaches", "that", "perform", "brain", "tissue", "segmentation", "on", "non", "T1w", "sequences.In", "this", "study", ",", "we", "propose", "a", "brain", "tissue", "segmentation", "method", "that", "enables", "us", "to", "obtain", "trainable", "brain", "labels", "on", "FLAIR", "MRIs", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 23, 24 ], [ 34, 35, 36 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "dataset", "for", "WMH", "segmentation", "is", "approved", "under", "IRB", "No.", "PC20EISI0094", "as", "confirmed", "by", "Dr.", "JeeYoung", "Kim", "on", "2", "July", "2020.For", "brain", "tissue", "segmentation", ",", "a", "total", "of", "68", "subjects", "with", "paired", "T1w", "MRIs", "and", "FLAIR", "MRIs", "were", "obtained", "from", "Yeouido", "St.", "Mary", "'", "s", "Hospital", "and", "Eunpyeong", "St.", "Mary", "'", "s", "Hospital", "from", "2017", "to", "2019", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 8, 9, 10, 11 ], [ 23, 24 ], [ 31, 32 ], [ 35, 36, 37 ] ]
+  }, {
+    "sentence_tokens" : [ "WMH", "represent", "increased", "blood", "-", "brain", "barrier", "permeability", ",", "plasma", "leakage", ",", "and", "the", "degeneration", "of", "axons", "and", "myelin", "[", "3", "]", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "moreover", "showed", "that", "brain", "tissue", "segmentation", "and", "WMH", "segmentation", "could", "be", "performed", "from", "a", "single", "FLAIR", "MRI", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 9, 10 ], [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "addition", ",", "WMH", "has", "been", "reported", "to", "have", "a", "relationship", "with", "structural", "changes", "and", "cognitive", "performance", ",", "especially", "with", "respect", "to", "processing", "speed", ",", "even", "in", "cognitively", "unimpaired", "participants", "[", "7", "]", "." ],
+    "entities_indices" : [ [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "dataset", "for", "brain", "segmentation", "is", "approved", "under", "IRB", "No.", "SC20RISI0198", "as", "confirmed", "by", "Dr.", "Hyun", "Kook", "Lim", "on", "31", "December", "2020", "." ],
+    "entities_indices" : [ [ 3, 4, 5 ], [ 8, 9, 10, 11 ], [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "remainder", "of", "the", "experiment", "setup", "was", "the", "same", "as", "that", "of", "brain", "tissue", "segmentation", "." ],
+    "entities_indices" : [ [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "automatic", "measurement", "methods", "for", "WMH", "burden", "and", "cortical", "volume", "measurement", "on", "FLAIR", "MRI", "would", "be", "clinically", "valuable", "for", "tracing", "the", "longitudinal", "change", "in", "patients", "with", "cognitive", "impairment", "[", "8]", "." ],
+    "entities_indices" : [ [ 6, 7, 8 ], [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "Brain", "Tissue", "Segmentation", "Enhancement", "." ],
+    "entities_indices" : [ [ 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "we", "suggest", "the", "following", "steps", ",", "as", "shown", "in", "Figure", "1", ":", "(", "A", ")", "Brain", "Tissue", "Segmentation", "from", "FLAIR", "MRI", ":", "T1w", "MRI", "brain", "tissue", "labels", "are", "generated", "using", "FreeSurfer", "and", "the", "labels", "are", "co-registered", "with", "the", "FLAIR", "MRI", "." ],
+    "entities_indices" : [ [ 19, 20 ], [ 22, 23 ], [ 25, 26 ], [ 41, 42 ] ]
+  }, {
+    "sentence_tokens" : [ "Figure", "5", "shows", "the", "results", "of", "WMH", "segmentation", "from", "each", "model", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "because", "of", "the", "various", "levels", "of", "WMH", "in", "the", "dataset", ",", "we", "excluded", "the", "FLAIR", "MRIs", "with", "neglectable", "WMH", "regions", "along", "with", "mislabeled", "cases", ",", "obtaining", "a", "final", "total", "of", "308", "FLAIR", "MRIs", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 16, 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "WMH", "Segmentation", ":", "Supervised", "Learning", "Based", "Segmentation", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 4, 5 ], [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "brain", "tissue", "segmentation", "enhancement", "(", "Figure", "1B", ")", ",", "we", "trained", "the", "CNN", "based", "segmentation", "model", "using", "patches", "that", "consist", "of", "128", "samples", "per", "FLAIR", "MRI", "cropped", "from", "randomly", "selected", "locations", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 15, 16 ], [ 26, 27 ] ]
+  }, {
+    "sentence_tokens" : [ "After", "training", "on", "the", "brain", "tissue", "segmentation", "in", "the", "FLAIR", "MRIs", ",", "there", "remains", "some", "noise", "that", "makes", "the", "training", "label", "data", "incomplete", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 9, 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "preprocessing", "step", ",", "the", "histogram", "based", "intensity", "regularization", ",", "min-max", "normalization", "with", "percentile", "cut-offs", "of", "(", "0.05", ",", "99.95", ")", ",", "and", "z-score", "normalization", "were", "performed", ",", "and", "the", "input", "shape", "was", "set", "as", "196", "x", "196", "." ],
+    "entities_indices" : [ [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "results", "of", "our", "proposed", "method", "were", "compared", "with", "the", "reference", "labels", ",", "which", "were", "obtained", "by", "FreeSurfer", "segmentation", "on", "T1w", "MRI", "." ],
+    "entities_indices" : [ [ 18, 19 ], [ 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "manual", "segmentation", "process", "was", "performed", "through", "the", "consensus", "of", "three", "certified", "radiologists", "(", "J.Y.", "Kim", ",", "S.W", "." ],
+    "entities_indices" : [ [ 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "Because", "the", "primary", "purpose", "of", "the", "first", "step", "of", "our", "process", "is", "to", "generate", "initial", "brain", "tissue", "labels", "on", "the", "FLAIR", "MRI", ",", "we", "calculated", "the", "transform", "matrix", "from", "the", "T1w", "MRI", "to", "FLAIR", "MRI", "using", "a", "spatial", "co-registration", "method", "with", "rigid", "transformation", "from", "the", "SimpleITK", "library", "[", "14", "]", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 21, 22 ], [ 31, 32 ], [ 34, 35 ], [ 45, 46 ] ]
+  }, {
+    "sentence_tokens" : [ "As", "we", "intended", ",", "our", "method", "was", "able", "to", "measure", "the", "volume", "of", "brain", "tissue", "and", "WMH", "using", "only", "FLAIR", "MRI", "." ],
+    "entities_indices" : [ [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "RandomAffine", ",", "which", "has", "a", "scale", "parameter", "in", "the", "range", "of", "0.85", "-", "1.15.RandomMotion", ",", "with", "a", "degree", "value", "up", "to", "10", "and", "a", "translation", "value", "up", "to", "10", "mm.RandomBiasField", ",", "with", "a", "magnitude", "coefficient", "parameter", "ranging", "between", "-", "0.5", "and", "0.5.RandomNoise", ",", "which", "has", "a", "mean", "value", "of", "Gaussian", "distribution", "in", "range", "of", "0", "to", "0.025.RandomFlip", ",", "with", "a", "spatial", "transform", "value", "up", "to", "2", ",", "which", "inverts", "the", "Z", "axis.For", "WMH", "segmentation", ",", "we", "did", "not", "include", "data", "augmentation", "in", "our", "method", "so", "that", "we", "could", "focus", "on", "the", "actual", "intensity", "range", "of", "the", "WMH", "regions", "." ],
+    "entities_indices" : [ [ 24, 25 ], [ 73, 74 ] ]
+  }, {
+    "sentence_tokens" : [ "DiceOverlapScore", "(", "A", ",", "B", ")", "=", "2A", "intersection", "BA+", "BBecause", "of", "the", "variance", "in", "size", "in", "the", "WMH", "segmentation", ",", "we", "expect", "several", "false", "positives", "and", "false", "negatives", "in", "the", "predicted", "segmentation", "of", "WMH", "." ],
+    "entities_indices" : [ [ 19, 20 ], [ 32, 33 ], [ 34, 35 ] ]
+  }, {
+    "sentence_tokens" : [ "Measured", "Volume", "Comparisons", ":", "Brain", "Tissue", "Segmentation", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "Although", "fluid", "attenuated", "inversion", "recovery", "(", "FLAIR", ")", "magnetic", "resonance", "imaging", "(", "MRI", ")", "provide", "valuable", "information", "about", "WMH", ",", "FLAIR", "does", "not", "provide", "other", "normal", "tissue", "information", "." ],
+    "entities_indices" : [ [ 12, 13 ], [ 18, 19 ], [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "Morphological", "Label", "Correction", "." ],
+    "entities_indices" : [ [ 1, 2 ] ]
+  }, {
+    "sentence_tokens" : [ "With", "given", "T1w", "MRI", "and", "FLAIR", "MRI", "paired", "datasets", ",", "we", "initially", "generated", "the", "brain", "labels", "on", "the", "T1w", "MRIs", "and", "aligned", "the", "label", "to", "FLAIR", "MRIs", "using", "the", "co-registration", "method", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 6, 7 ], [ 25, 26, 27 ] ]
+  }, {
+    "sentence_tokens" : [ "Larger", "WMH", "regions", "are", "associated", "with", "an", "accelerated", "cognitive", "decline", "and", "increased", "risk", "for", "AD", "[", "4", "]", "." ],
+    "entities_indices" : [ [ 1, 2, 3 ], [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "Manual", "segmentation", "was", "performed", "independently", ",", "and", "the", "segmentation", "results", "were", "then", "exchanged", "for", "confirmation", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "transformed", "the", "pseudo-labels", "to", "the", "FLAIR", "MRI", "using", "the", "registered", "transform", "matrix", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "Furthermore", ",", "the", "results", "indicate", "that", "our", "semi", "supervised", "learning", "method", "is", "not", "limited", "to", "FLAIR", "MRI", "but", "could", "also", "be", "applied", "to", "T2", ",", "SWI", ",", "and", "GRE", "MRIs", "without", "the", "need", "to", "obtain", "brain", "tissue", "labels", "from", "paired", "T1w", "MRIs", "." ],
+    "entities_indices" : [ [ 9, 10 ], [ 16, 17 ], [ 25, 26 ], [ 39, 40 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "etiologies", "of", "WMH", "are", "diverse", ",", "and", "it", "is", "considered", "primarily", "a", "marker", "of", "small-vessel", "cerebrovascular", "disease", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 16, 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "accuracy", "and", "reproducibility", "of", "automatic", "segmentation", "methods", "for", "WMH", "have", "not", "been", "achieved", "because", "the", "gold", "standard", "of", "manual", "segmentation", "is", "time", "consuming", "to", "create", "." ],
+    "entities_indices" : [ [ 7, 8 ], [ 10, 11 ], [ 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "By", "following", "the", "procedure", "shown", "in", "Figure", "1", ",", "the", "transformation", "between", "two", "different", "MRI", "modalities", "(", "T1w", "and", "FLAIR", ")", "could", "be", "made", "with", "improvements", "to", "the", "labeling", "quality", "." ],
+    "entities_indices" : [ [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "With", "our", "brain", "segmentation", "results", ",", "we", "demonstrated", "that", "our", "FLAIR", "MRI", "segmentation", "is", "just", "as", "reliable", "as", "segmentation", "using", "its", "paired", "T1w", "MRI", "." ],
+    "entities_indices" : [ [ 2, 3, 4 ], [ 11, 12 ], [ 12, 13 ], [ 18, 19 ], [ 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "Dice", "Overlap", "Scores", ":", "WMH", "Segmentation", "." ],
+    "entities_indices" : [ [ 1, 2, 3 ], [ 4, 5 ], [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "As", "shown", "in", "Table", "1", ",", "our", "dataset", "was", "taken", "from", "the", "Catholic", "Aging", "Brain", "Imaging", "(", "CABI", ")", "database", ",", "which", "holds", "brain", "MRI", "scans", "of", "outpatients", "at", "the", "Catholic", "Brain", "Health", "Center", ",", "Yeouido", "St.", "Mary", "'", "s", "Hospital", ",", "and", "Eunpyeong", "St.", "Mary", "'", "s", "Hospital", "at", "the", "Catholic", "University", "of", "Korea", "." ],
+    "entities_indices" : [ [ 13, 14 ], [ 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "performed", "the", "resampling", "into", "a", "1", "mm2", "isometric", "space", "(", "z-direction", "was", "excluded", "from", "this", "process", "because", "our", "training", "process", "requires", "a", "2D", "slice", "MRI", ")", "." ],
+    "entities_indices" : [ [ 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "compared", "three", "well-known", "segmentation", "architectures", "for", "the", "brain", "tissue", "segmentation", "and", "WMH", "segmentation", ":", "U-Net", "[", "15", "]", ",", "U-Net+", "+", "[", "15", "]", ",", "and", "HighRes3DNet", "[", "20", "]", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 10, 11 ], [ 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "Recently", ",", "it", "was", "reported", "that", "WMH", "progression", "is", "associated", "with", "changes", "in", "cortical", "thinning", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "evaluated", "the", "performance", "of", "the", "segmentation", "by", "comparing", "the", "relative", "difference", "in", "volume", "of", "the", "results", "obtained", "using", "T1w", "MRI", "and", "its", "paired", "FLAIR", "MRI", "." ],
+    "entities_indices" : [ [ 6, 7 ], [ 20, 21 ], [ 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "(", "B", ")", "Brain", "Tissue", "Segmentation", "Enhancement", ":", "the", "co-registered", "pseudo-labels", "are", "enhanced", "with", "an", "initial", "semi", "supervised", "learning", "method", "using", "a", "deep", "learning", "segmentation", "architecture", "followed", "by", "a", "morphological", "correction", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 18, 19 ], [ 23, 24 ], [ 24, 25 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "size", "of", "the", "cropped", "MRI", "patches", "is", "128", "x", "128", "." ],
+    "entities_indices" : [ [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "As", "mentioned", "before", ",", "there", "are", "many", "medical", "segmentation", "studies", "based", "on", "deep", "learning", ",", "but", "few", "considered", "obtaining", "the", "structural", "information", "from", "any", "single", "modality", "other", "than", "T1w", "MRI", "." ],
+    "entities_indices" : [ [ 8, 9 ], [ 13, 14 ], [ 29, 30 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "clinical", "practice", ",", "WMH", "burden", "is", "usually", "estimated", "using", "a", "visual", "scale", "such", "as", "the", "Fazekas", "scale", ",", "but", "this", "cannot", "be", "used", "as", "an", "objective", "indicator", "without", "analyzing", "the", "volumetric", "ratio", "between", "WMH", "and", "white", "matter", "(", "WM", ")", "." ],
+    "entities_indices" : [ [ 4, 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "the", "initial", "segmentation", "model", ",", "we", "used", "U-Net", "[", "15", "]", "with", "an", "evolving", "normalization", "(", "EvoNorm", ")", "activation", "layer", "[", "16", "]", "." ],
+    "entities_indices" : [ [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "Brain", "Tissue", "Segmentation", "from", "FLAIR", "MRI", ":", "Pseudo-Labeling-Based", "Segmentation", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 5, 6 ], [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "this", "study", ",", "we", "developed", "a", "reliable", "automated", "segmentation", "method", "using", "FLAIR", "for", "WMH", "and", "cortical", "volume", "without", "the", "need", "for", "3D", "T1w", "MRIs", "." ],
+    "entities_indices" : [ [ 9, 10 ], [ 14, 15 ], [ 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "Then", ",", "the", "label", "quality", "was", "improved", "using", "a", "semi", "supervised", "learning", "method", "[", "13", "]", "." ],
+    "entities_indices" : [ [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "clinical", "practice", ",", "the", "proposed", "algorithm", "will", "be", "a", "useful", "screening", "tool", "for", "the", "quantification", "of", "cortical", "volume", "and", "WMH", "burden", "in", "the", "elderly", "with", "cognitive", "impairment", "using", "only", "2D", "FLAIR", "MRIs", "and", "without", "the", "need", "for", "3D", "T1", "volume", "MRIs", "." ],
+    "entities_indices" : [ [ 38, 39 ] ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "many", "false", "positives", "and", "false", "negatives", "were", "found", "in", "small", "WMH", "regions.As", "shown", "in", "Table", "4", ",", "U-Net", "performed", "best", "on", "the", "dice", "overlap", "score", "with", "0.81", "+/-", "0.07", ",", "and", "f1", "score", "with", "0.84", "+/-", "0.04", "." ],
+    "entities_indices" : [ [ 11, 12, 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "brain", "tissue", "segmentation", "tools", "for", "other", "magnetic", "resonance", "sequences", "(", "such", "as", "FLAIR", ",", "susceptibility", "weighted", "imaging", "(", "SWI", ")", ",", "and", "gradient", "echo", "(", "GRE", ")", "sequences", ")", "are", "rarely", "developed", "because", "their", "aim", "is", "not", "to", "measure", "brain", "volume", "or", "analyze", "brain", "morphology", "precisely.A", "deep", "learning", "based", "automatic", "segmentation", "algorithm", "was", "first", "used", "to", "diagnose", "brain", "tumors", "and", "showed", "a", "high", "automatic", "detection", "rate", "and", "high", "accuracy", "[", "12", "]", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 20, 21 ], [ 49, 50 ], [ 52, 53 ], [ 59, 60, 61 ] ]
+  }, {
+    "sentence_tokens" : [ "Recent", "studies", "suggest", "that", "WMH", "plays", "a", "role", "in", "AD", "'", "s", "clinical", "symptoms", "and", "there", "is", "synergistic", "contribution", "of", "both", "medial", "temporal", "lobe", "atrophy", "and", "WMH", "on", "cognitive", "impairment", "and", "dementia", "severity", "[", "5", "]", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 9, 10 ], [ 23, 24 ], [ 24, 25 ], [ 31, 32 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "only", "difference", "between", "the", "training", "processes", "of", "brain", "tissue", "segmentation", "and", "WMH", "segmentation", "is", "the", "data", "augmentation.For", "brain", "tissue", "segmentation", ",", "we", "used", "the", "following", "TorchIO", "augmentation", "methods", "[", "17", "]", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 13, 14 ], [ 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "multi-modal", "analysis", "of", "FLAIR", "and", "T1", "weighted", "(", "T1w", ")", "MRI", "is", "thus", "desirable", "for", "WMH", "related", "brain", "aging", "studies", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 11, 12 ], [ 16, 17 ], [ 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "we", "measured", "the", "relative", "volume", "difference", "between", "the", "labels", "from", "T1w", "MRI", "using", "FreeSurfer", "and", "the", "labels", "predicted", "from", "FLAIR", "MRI", "using", "our", "proposed", "method", "." ],
+    "entities_indices" : [ [ 13, 14 ], [ 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "Figure", "4", "presents", "the", "result", "of", "brain", "tissue", "segmentation", "from", "each", "model", "." ],
+    "entities_indices" : [ [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "the", "process", "of", "consensus", ",", "two", "radiologists", "discussed", "the", "criteria", "used", "for", "defining", "manual", "segmentation", "and", "had", "training", "sessions", "to", "standardize", "their", "visual", "skills", "." ],
+    "entities_indices" : [ [ 15, 16 ] ]
+  }, {
+    "sentence_tokens" : [ "Moreover", ",", "the", "paired", "FLAIR", "MRIs", "have", "a", "consistent", "matrix", "size", "of", "348", "x", "384", "x", "28", "along", "with", "a", "pixel", "spacing", "of", "0.57", "x", "0.57", "x", "6", "mm3.For", "WMH", "segmentation", ",", "a", "total", "of", "396", "FLAIR", "MRIs", "with", "clinically", "confirmed", "WMH", "regions", "and", "annotated", "labels", "were", "initially", "obtained", "from", "Eunpyeong", "St.", "Mary", "'", "s", "Hospital", "from", "2020", "to", "2021", "." ],
+    "entities_indices" : [ [ 3, 4, 5, 6 ], [ 30, 31 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "WMH", "biomarker", "indicates", "bright", "areas", "appear", "in", "the", "white", "matter", "on", "T2", "fluid", "attenuated", "inversion", "recovery", "(", "FLAIR", ")", "sequences", "." ],
+    "entities_indices" : [ [ 2, 3 ] ]
+  }, {
+    "sentence_tokens" : [ "Performance", "of", "WMH", "Segmentation", "." ],
+    "entities_indices" : [ [ 3, 4 ] ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "because", "of", "differences", "in", "the", "MRI", "spacings", "and", "dimensions", ",", "the", "result", "did", "not", "delineate", "brain", "tissue", "structure", "accurately", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "believe", "our", "semi", "supervised", "learning", "method", "has", "the", "clinical", "potential", "of", "being", "a", "key", "solution", "for", "quantifying", "cortical", "volume", "and", "WMH", "burden", "for", "WMH", "analysis", "using", "FLAIR", "MRI", "exclusively", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 28, 29 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "total", "of", "308", "FLAIR", "MRI", "datasets", "were", "manually", "segmented", ",", "producing", "binary", "masks", "with", "a", "value", "of", "0", "(", "non", "WMH", "class", ")", "or", "1", "(", "WMH", "class", ")", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "used", "the", "PyTorch", "deep", "learning", "library", "[", "21", "]", "for", "our", "main", "framework", "on", "a", "workstation", "with", "an", "Intel", "i9-9900X", "3.5", "GHz", "CPU", ",", "128G", "RAM", ",", "and", "two", "NVIDIA", "RTX", "2080", "11", "GB", "GPUs", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 23, 24 ], [ 26, 27 ], [ 31, 32 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "WMH", "segmentation", ",", "we", "used", "the", "skull", "stripping", "method", "with", "HD-BET", "[", "19", "]", "on", "the", "FLAIR", "MRIs", "of", "the", "WMH", "dataset", "to", "focus", "the", "regions", "corresponding", "to", "our", "training", "on", "the", "white-matter", "regions", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 17, 18, 19 ], [ 21, 22, 23 ] ]
+  } ],
+  "emptySentences" : [ ]
+}

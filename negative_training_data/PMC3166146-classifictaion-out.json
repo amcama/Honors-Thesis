@@ -1,87 +1,495 @@
-[ {
-  "sentence_tokens" : [ "Understanding", "the", "power", "laws", "that", "govern", "the", "number", "and", "specificity", "of", "eQTLs", "detected", "in", "different", "tissues", ",", "will", "allow", "a", "better", "utilization", "of", "genetics", "of", "gene", "expression", "to", "inform", "the", "molecular", "mechanism", "underlying", "complex", "disease", "traits", "." ],
-  "event_indices" : [ 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36 ],
-  "type" : "Positive_activation",
-  "polarity" : true,
-  "controller_indices" : [ 35, 36 ],
-  "controlled_indices" : [ 25, 26, 27 ],
-  "trigger_indices" : [ 18, 19 ],
-  "rule_name" : "Positive_activation_syntax_1_verb",
-  "rule" : null
-}, {
-  "sentence_tokens" : [ "Dissecting", "Cis", "Regulation", "of", "Gene", "Expression", "in", "Human", "Metabolic", "Tissues", "." ],
-  "entity_one_indices" : [ 2, 3, 4, 5, 6 ],
-  "entity_two_indices" : [ 1, 2 ]
-}, {
-  "sentence_tokens" : [ "Studying", "the", "genetics", "of", "gene", "expression", "in", "tissues", "that", "are", "involved", "in", "the", "development", "of", "these", "diseases", "can", "provide", "insights", "into", "how", "these", "tissues", "interact", "within", "the", "context", "of", "disease", "." ],
-  "entity_one_indices" : [ 16, 17 ],
-  "entity_two_indices" : [ 4, 5, 6 ]
-}, {
-  "sentence_tokens" : [ "The", "development", "of", "high", "throughput", "technologies", "that", "allow", "for", "whole-genome", "profiling", "of", "genotypes", ",", "gene", "expression", "traits", ",", "proteins", "and", "metabolites", "in", "multiple", "tissues", "and", "samples", "from", "a", "single", "individual", ",", "can", "provide", "important", "clues", "to", "disease", "mechanisms", "." ],
-  "entity_one_indices" : [ 16, 17 ],
-  "entity_two_indices" : [ 14, 15, 16 ]
-}, {
-  "sentence_tokens" : [ "In", "order", "to", "avoid", "any", "confusion", "we", "will", "refer", "to", "the", "eQTLs", "as", "the", "transcript", "rather", "than", "the", "SNP-transcript", "pair", ",", "while", "an", "expression", "(", "e", ")", "SNP", "is", "the", "selected", "SNP", "associated", "with", "the", "mRNA", "profile", "of", "a", "transcript.We", "generated", "20", "sub-samples", "N", "i", "=", "1", ":", "20", "equally", "spaced", "in", "the", "ln", "(", "n", ")", "space", "(", "where", "n", "=", "|", "N", "|", "is", "the", "size", "of", "sample", "N", ")", "by", "randomly", "removing", "individuals", "from", "the", "largest", "sample", "N", "of", "size", "n", "=", "393", "until", "we", "reached", "a", "sample", "of", "size", "n", "=", "50", "(", "see", "Figure", "1a", "for", "the", "study", "design", "and", "Table", "S1", ")", "." ],
-  "entity_one_indices" : [ 53, 54 ],
-  "entity_two_indices" : [ 5, 6 ]
-}, {
-  "sentence_tokens" : [ "For", "example", ",", "the", "percentages", "of", "cis", "eQTL", "specific", "to", "OA", ",", "SA", ",", "and", "liver", "when", "the", "sample", "size", "is", "n", "=", "50", ",", "which", "is", "the", "minimum", "sample", "size", "we", "tested", ",", "are", "42.8", "%", ",", "38.4", "%", "and", "55.9", "%", ",", "respectively", "." ],
-  "entity_one_indices" : [ 12, 13 ],
-  "entity_two_indices" : [ 10, 11 ]
-}, {
-  "sentence_tokens" : [ "In", "contrast", "the", "number", "of", "cis", "eQTLs", "overlapping", "all", "three", "tissues", "increased", "from", "22.25", "%", ",", "24.52", "%", "32.19", "%", "in", "N", "to", "40.77", "%", ",", "42.86", "%", ",", "48.95", "%", "in", "N", "in", "OA", ",", "SA", "and", "liver", "respectively", "." ],
-  "entity_one_indices" : [ 36, 37 ],
-  "entity_two_indices" : [ 34, 35 ]
-}, {
-  "sentence_tokens" : [ "As", "additional", "evidence", "approximately", "70", "%", "of", "cis", "eQTL", "and", "50", "%", "of", "eSNPs", "identified", "at", "N", "were", "also", "identified", "in", "the", "largest", "population", "available", "(", "n", "=", "569", "liver", ",", "n", "=", "744", "OA", ",", "n", "=", "612", "SA", ")", "." ],
-  "entity_one_indices" : [ 39, 40 ],
-  "entity_two_indices" : [ 34, 35 ]
-}, {
-  "sentence_tokens" : [ "However", "if", "one", "looks", "at", "the", "strength", "of", "the", "association", "we", "find", "that", "unique", "cis", "eSNP", "are", "more", "weakly", "associated", "(", "higher", "p", "values", ")", "to", "gene", "expression", "traits", "than", "conserved", "cis", "eQTLs", "(", "Figure", "1c", ")", "leading", "to", "a", "contradictory", "conclusion", ",", "as", "we", "would", "anticipate", "that", "the", "weaker", "unique", "cis", "eQTLs", "should", "contain", "a", "larger", "number", "of", "false", "positives", "compared", "to", "the", "set", "of", "universal", "and", "more", "strongly", "associated", "cis", "eQTLs", "." ],
-  "entity_one_indices" : [ 28, 29 ],
-  "entity_two_indices" : [ 26, 27, 28 ]
-}, {
-  "sentence_tokens" : [ "In", "order", "to", "obtain", "a", "qualitative", "description", "of", "the", "cis", "eQTL", "dynamics", "we", "introduced", "four", "rates", "relative", "to", "change", "in", "sample", "size", "between", "consecutive", "steps", ":", "creation", "rate", "defined", "as", "the", "number", "of", "new", "cis", "eQTLs", "identified", "between", "steps", "(", "also", "not", "identified", "in", "any", "tissue", "in", "a", "previous", "step", ")", ",", "deletion", "rate", "defined", "as", "the", "number", "of", "cis", "eQTLs", "lost", "between", "consecutive", "steps", "(", "no", "longer", "detected", "in", "any", "tissue", ")", ",", "move", "OUT", "rate", "defined", "as", "the", "number", "of", "cis", "eQTLs", "detected", "in", "a", "particular", "combination", "of", "tissues", "that", "do", "not", "satisfy", "the", "requirement", "anymore", "and", "move", "IN", "rate", ",", "that", "is", "the", "opposite", "to", "move", "OUT", "rate", "and", "describes", "the", "dynamic", "of", "cis", "eQTLs", "that", "now", "satisfy", "a", "new", "requirement", "." ],
-  "entity_one_indices" : [ 109, 110 ],
-  "entity_two_indices" : [ 49, 50 ]
-}, {
-  "sentence_tokens" : [ "In", "Figure", "3b", "-", "e", "we", "plot", "these", "rates", "for", "cis", "eQTLs", "identified", "in", "OA", "tissue", "(", "similar", "results", "were", "observed", "for", "all", "3", "tissues", ")", ",", "for", "the", "set", "of", "cis", "eQTLs", "detected", "in", "all", "3", "tissues", "(", "Figure", "3b", ")", ",", "unique", "to", "OA", "(", "Figure", "3c", ")", ",", "detected", "in", "both", "OA-SA", "(", "Figure", "3d", ")", "and", "detected", "in", "both", "liver-OA", "(", "Figure", "3e", ")", "." ],
-  "entity_one_indices" : [ 45, 46 ],
-  "entity_two_indices" : [ 14, 15 ]
-}, {
-  "sentence_tokens" : [ "The", "plateauing", "observed", "in", "Figure", "1b", "for", "the", "number", "of", "unique", "cis", "eQTLs", "in", "OA", "correlates", "with", "the", "fact", "that", "overall", "creation", "rate", "approximates", "the", "sum", "of", "deletion", "and", "move", "OUT", "rates", "(", "the", "move", "IN", "rate", "is", "negligible", ")", "that", "leads", "to", "an", "overall", "unchanged", "number", "of", "unique", "cis", "eQTLs", "but", "with", "a", "different", "composition", "in", "the", "set", "." ],
-  "entity_one_indices" : [ 30, 31 ],
-  "entity_two_indices" : [ 14, 15 ]
-}, {
-  "sentence_tokens" : [ "Looking", "at", "similar", "quantities", "as", "in", "Figure", "2a", ",", "in", "consecutive", "steps", "we", "see", "an", "almost", "100", "%", "overlap", "between", "cis", "eQTLs", "common", "to", "all", "3", "tissues", ",", "a", "60", "%", "overlap", "for", "unique", "cis", "eQTLs", "in", "OA", "or", "SA", "and", "80", "%", "overlap", "for", "cis", "eQTLs", "in", "liver", "(", "Figure", "S2", ")", "." ],
-  "entity_one_indices" : [ 39, 40 ],
-  "entity_two_indices" : [ 37, 38 ]
-}, {
-  "sentence_tokens" : [ "OA", "specific", "eQTLs", "were", "enriched", "for", "cell-cell", "adhesion", "(", "FET", "p", "=", "6.3", "x", "10", ")", "." ],
-  "entity_one_indices" : [ 6, 7, 8 ],
-  "entity_two_indices" : [ 0, 1 ]
-}, {
-  "sentence_tokens" : [ "The", "gene", "ontologies", "identified", "for", "eQTLs", "from", "a", "given", "tissue", ",", "without", "taking", "into", "account", "tissue", "specificity", "were", "more", "representative", "of", "tissue", "type", ",", "for", "example", "liver", "eQTLs", "were", "found", "to", "be", "enriched", "for", "lipid", "metabolic", "process", "(", "FET", "p", "=", "1.5", "x", "10", ")", "." ],
-  "entity_one_indices" : [ 34, 35, 36, 37 ],
-  "entity_two_indices" : [ 22, 23 ]
-}, {
-  "sentence_tokens" : [ "In", "contrast", ",", "unique", "cis", "eQTLs", "are", "the", "most", "unstable", ",", "dominated", "by", "a", "very", "high", "false", "discovery", "rate", ",", "~", "40", "%", "of", "unique", "cis", "eQTLs", "in", "OA", "or", "SA", "are", "lost", "in", "consecutive", "steps", "." ],
-  "entity_one_indices" : [ 30, 31 ],
-  "entity_two_indices" : [ 28, 29 ]
-}, {
-  "sentence_tokens" : [ "The", "two", "related", "tissues", "(", "OA", "and", "SA", ")", "share", "more", "cis", "eQTLs", ",", "with", "a", "weaker", "overlap", "with", "liver", "." ],
-  "entity_one_indices" : [ 7, 8 ],
-  "entity_two_indices" : [ 5, 6 ]
-}, {
-  "sentence_tokens" : [ "The", "similarity", "between", "OA", "and", "SA", "tissues", "is", "responsible", "for", "the", "very", "large", "set", "of", "cis", "eQTLs", "found", "in", "common", "to", "both", "these", "tissues", "(", "that", "excludes", "cis", "eQTLs", "common", "to", "all", "3", "tissues", ")", "." ],
-  "entity_one_indices" : [ 5, 6 ],
-  "entity_two_indices" : [ 3, 4 ]
-}, {
-  "sentence_tokens" : [ "Genomic", "DNA", "was", "extracted", "from", "liver", "tissues", ",", "total", "RNA", "was", "extracted", "from", "liver", ",", "SA", "and", "OA", "." ],
-  "entity_one_indices" : [ 17, 18 ],
-  "entity_two_indices" : [ 15, 16 ]
-}, {
-  "sentence_tokens" : [ "Sex", "was", "confirmed", "using", "PLINK", "[", "24", "]", "." ],
-  "entity_one_indices" : [ 4, 5 ],
-  "entity_two_indices" : [ 0, 1 ]
-} ]
+{
+  "regulations" : [ {
+    "sentence_tokens" : [ "Understanding", "the", "power", "laws", "that", "govern", "the", "number", "and", "specificity", "of", "eQTLs", "detected", "in", "different", "tissues", ",", "will", "allow", "a", "better", "utilization", "of", "genetics", "of", "gene", "expression", "to", "inform", "the", "molecular", "mechanism", "underlying", "complex", "disease", "traits", "." ],
+    "event_indices" : [ 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36 ],
+    "type" : "Positive_activation",
+    "polarity" : true,
+    "controller_indices" : [ 35, 36 ],
+    "controlled_indices" : [ 25, 26, 27 ],
+    "trigger_indices" : [ 18, 19 ],
+    "rule_name" : "Positive_activation_syntax_1_verb",
+    "rule" : null
+  } ],
+  "hardInstances" : [ ],
+  "withoutRegulations" : [ {
+    "sentence_tokens" : [ "As", "additional", "evidence", "approximately", "70", "%", "of", "cis", "eQTL", "and", "50", "%", "of", "eSNPs", "identified", "at", "N", "were", "also", "identified", "in", "the", "largest", "population", "available", "(", "n", "=", "569", "liver", ",", "n", "=", "744", "OA", ",", "n", "=", "612", "SA", ")", "." ],
+    "entities_indices" : [ [ 34, 35 ], [ 39, 40 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "cis", "eQTL", "occurs", "if", "the", "SNP", "and", "the", "transcript", "are", "within", "1", "Mb", "from", "each", "other", "regardless", "of", "the", "transcriptional", "start", "or", "stop", "of", "the", "transcript", "." ],
+    "entities_indices" : [ [ 13, 14 ], [ 21, 22 ], [ 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "Using", "sub-samples", "from", "a", "cohort", "of", "obese", "individuals", "that", "underwent", "RYGB", "we", "were", "able", "to", "derive", "scaling", "laws", "for", "the", "number", "of", "cis", "eQTLs", "detected", "as", "a", "function", "of", "sample", "size", "in", "three", "tissues", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "Dissecting", "Cis", "Regulation", "of", "Gene", "Expression", "in", "Human", "Metabolic", "Tissues", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 2, 3, 4, 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "As", "with", "cis", "eQTLs", "common", "to", "all", "3", "tissues", "the", "ones", "common", "to", "a", "pair", "of", "tissues", "(", "Figure", "4d", "-", "e", ")", "have", "approximate", "zero", "deletion", "rate", ",", "however", "move", "IN", "and", "move", "OUT", "rates", "are", "becoming", "close", "in", "value", "as", "we", "increase", "sample", "size", "that", "again", "signals", "a", "plateauing", "in", "their", "numbers", "as", "observed", "in", "Figure", "1b", "." ],
+    "entities_indices" : [ [ 34, 35 ] ]
+  }, {
+    "sentence_tokens" : [ "Unique", "cis", "eQTLs", "show", "a", "weak", "replication", "and", "also", "weak", "GO", "enrichment", ",", "possibly", "due", "to", "large", "false", "positive", "rates", "." ],
+    "entities_indices" : [ [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "Briefly", ",", "tissues", "were", "collected", "from", "patients", "at", "the", "time", "of", "RYGB", "surgery", "at", "Massachusetts", "General", "Hospital", "between", "2000", "and", "2007", "as", "described", "previously", "[", "1", "]", "." ],
+    "entities_indices" : [ [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "FDR", "was", "estimated", "by", "permuting", "expression", "data", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "393", "subjects", ",", "which", "are", "self", "reported", "Caucasians", ",", "were", "included", "in", "our", "analysis", "for", "which", "genotyping", "and", "gene", "expression", "data", "were", "available", "from", "all", "three", "tissues", "[", "1", "]", "." ],
+    "entities_indices" : [ [ 18, 19, 20 ] ]
+  }, {
+    "sentence_tokens" : [ "Cis", "eQTLs", "were", "identified", "using", "the", "Kruskal-Wallis", "non", "parametric", "test", "described", "previously", "[", "2", "]", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "It", "has", "been", "reported", "that", "54", "%", ",", "50", "%", "and", "54", "%", "of", "cis", "eQTLs", "in", "fibroblasts", ",", "LCLs", "and", "T", "cells", "respectively", "will", "be", "cell", "type", "specific", "[", "5", "]", "." ],
+    "entities_indices" : [ [ 27, 28 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "recent", "years", ",", "numerous", "genome-scale", "technologies", "have", "been", "employed", "to", "explore", "the", "genetics", "of", "gene", "expression", "in", "human", "cell", "lines", "and", "primary", "tissues", "[", "2", "]", ",", "[", "5", "]", ",", "[", "6", "]", ",", "[", "7", "]", "." ],
+    "entities_indices" : [ [ 15, 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "key", "element", "in", "the", "analysis", "is", "tissue", "type", "." ],
+    "entities_indices" : [ [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "Sex", "was", "confirmed", "using", "PLINK", "[", "24", "]", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 4, 5 ] ]
+  }, {
+    "sentence_tokens" : [ "Understanding", "these", "relationships", "will", "allow", "us", "to", "better", "utilize", "the", "genetics", "of", "gene", "expression", "to", "inform", "on", "the", "molecular", "mechanism", "underlying", "complex", "disease", "." ],
+    "entities_indices" : [ [ 12, 13, 14 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "contrast", "we", "did", "not", "detect", "any", "saturation", "for", "the", "cis", "eQTLs", "overlapping", "in", "all", "three", "tissues", ",", "instead", "an", "even", "faster", "rise", "in", "their", "numbers", "as", "the", "slope", "increases", "with", "an", "increase", "in", "sample", "size", "(", "Figure", "1b", ",", "ABC", ")", "." ],
+    "entities_indices" : [ [ 40, 41 ] ]
+  }, {
+    "sentence_tokens" : [ "Using", "Gene", "Ontology", "Biological", "Processes", "(", "GOBP", ")", "we", "find", "that", "the", "ubiquitous", "eQTL", "subset", "was", "enriched", "for", "oxidative", "reduction", "(", "FET", "p", "=", "3", "x", "10", ")", "and", "antigen", "processing", "and", "presentation", "(", "FET", "p", "=", "3.4", "x", "10", ")", "." ],
+    "entities_indices" : [ [ 29, 30, 31, 32, 33 ] ]
+  }, {
+    "sentence_tokens" : [ "However", "if", "one", "looks", "at", "the", "strength", "of", "the", "association", "we", "find", "that", "unique", "cis", "eSNP", "are", "more", "weakly", "associated", "(", "higher", "p", "values", ")", "to", "gene", "expression", "traits", "than", "conserved", "cis", "eQTLs", "(", "Figure", "1c", ")", "leading", "to", "a", "contradictory", "conclusion", ",", "as", "we", "would", "anticipate", "that", "the", "weaker", "unique", "cis", "eQTLs", "should", "contain", "a", "larger", "number", "of", "false", "positives", "compared", "to", "the", "set", "of", "universal", "and", "more", "strongly", "associated", "cis", "eQTLs", "." ],
+    "entities_indices" : [ [ 26, 27, 28 ], [ 28, 29 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "each", "sub", "sample", "we", "removed", "all", "SNPs", "that", "did", "not", "exceed", "a", "minor", "allele", "frequency", "(", "MAF", ")", "of", "5", "%", "(", "the", "number", "of", "SNPs", "removed", "from", "the", "analysis", "for", "each", "sub", "sample", "is", "summarized", "in", "the", "Table", "S1", ")", "." ],
+    "entities_indices" : [ [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "Genomic", "DNA", "was", "extracted", "from", "liver", "tissues", ",", "total", "RNA", "was", "extracted", "from", "liver", ",", "SA", "and", "OA", "." ],
+    "entities_indices" : [ [ 15, 16 ], [ 17, 18 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "Figure", "3b", "-", "e", "we", "plot", "these", "rates", "for", "cis", "eQTLs", "identified", "in", "OA", "tissue", "(", "similar", "results", "were", "observed", "for", "all", "3", "tissues", ")", ",", "for", "the", "set", "of", "cis", "eQTLs", "detected", "in", "all", "3", "tissues", "(", "Figure", "3b", ")", ",", "unique", "to", "OA", "(", "Figure", "3c", ")", ",", "detected", "in", "both", "OA-SA", "(", "Figure", "3d", ")", "and", "detected", "in", "both", "liver-OA", "(", "Figure", "3e", ")", "." ],
+    "entities_indices" : [ [ 14, 15 ], [ 45, 46 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "expression", "data", "is", "publicly", "available", "at", "GEO", "super", "series", "Accession", "ID", "GSE24335", "and", "was", "previously", "described", "in", "[", "1", "]", "." ],
+    "entities_indices" : [ [ 11, 12 ] ]
+  }, {
+    "sentence_tokens" : [ "Looking", "at", "similar", "quantities", "as", "in", "Figure", "2a", ",", "in", "consecutive", "steps", "we", "see", "an", "almost", "100", "%", "overlap", "between", "cis", "eQTLs", "common", "to", "all", "3", "tissues", ",", "a", "60", "%", "overlap", "for", "unique", "cis", "eQTLs", "in", "OA", "or", "SA", "and", "80", "%", "overlap", "for", "cis", "eQTLs", "in", "liver", "(", "Figure", "S2", ")", "." ],
+    "entities_indices" : [ [ 37, 38 ], [ 39, 40 ] ]
+  }, {
+    "sentence_tokens" : [ "Complex", "diseases", "such", "as", "obesity", "and", "type", "II", "diabetes", "can", "result", "from", "a", "failure", "in", "multiple", "organ", "systems", "including", "the", "central", "nervous", "system", "and", "tissues", "involved", "in", "partitioning", "and", "disposal", "of", "nutrients", "." ],
+    "entities_indices" : [ [ 1, 2 ], [ 4, 5 ], [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "believe", "that", "this", "phenomenon", "should", "not", "have", "a", "damaging", "effect", "on", "eQTL", "identification", "overall", ",", "but", "should", "be", "considered", "when", "interpreting", "lead", "eSNP", "data", "for", "gene", "expression", "traits.We", "have", "shown", "that", "the", "detection", "of", "cis", "acting", "eQTLs", "obeys", "precise", "scaling", "laws", "in", "each", "tissue", "investigated", "." ],
+    "entities_indices" : [ [ 26, 27, 28 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "set", "of", "cis", "eQTLs", "common", "to", "all", "3", "tissues", "(", "Figure", "3b", ")", "have", "a", "zero", "creation", "rate", ",", "indicating", "that", "a", "cis", "eQTL", "has", "to", "be", "detected", "first", "in", "a", "tissue", "then", "detected", "in", "a", "pair", "of", "tissues", "before", "becomes", "detected", "in", "all", "3", "tissues", ",", "zero", "deletion", "rate", "indicating", "that", "these", "cis", "eQTLs", "were", "detected", "in", "at", "least", "one", "tissue", "at", "a", "prior", "step", ",", "and", "a", "move", "IN", "rate", "~", "4", "x", "larger", "than", "move", "OUT", "rate", ",", "indicating", "a", "further", "accumulation", "of", "cis", "eQTLs", "common", "to", "all", "3", "tissues", "as", "we", "increase", "sample", "size", "." ],
+    "entities_indices" : [ [ 66, 67 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "order", "to", "avoid", "any", "confusion", "we", "will", "refer", "to", "the", "eQTLs", "as", "the", "transcript", "rather", "than", "the", "SNP-transcript", "pair", ",", "while", "an", "expression", "(", "e", ")", "SNP", "is", "the", "selected", "SNP", "associated", "with", "the", "mRNA", "profile", "of", "a", "transcript.We", "generated", "20", "sub-samples", "N", "i", "=", "1", ":", "20", "equally", "spaced", "in", "the", "ln", "(", "n", ")", "space", "(", "where", "n", "=", "|", "N", "|", "is", "the", "size", "of", "sample", "N", ")", "by", "randomly", "removing", "individuals", "from", "the", "largest", "sample", "N", "of", "size", "n", "=", "393", "until", "we", "reached", "a", "sample", "of", "size", "n", "=", "50", "(", "see", "Figure", "1a", "for", "the", "study", "design", "and", "Table", "S1", ")", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 53, 54 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "anticipate", "that", "these", "results", "could", "reflect", "strong", "correlation", "between", "different", "SNPs", ",", "each", "of", "which", "can", "equally", "well", "act", "as", "a", "surrogate", "measure", "for", "the", "true", "causal", "cis", "acting", "effect", "within", "the", "linkage", "disequilibrium", "(", "LD", ")", "block", "." ],
+    "entities_indices" : [ [ 36, 37 ] ]
+  }, {
+    "sentence_tokens" : [ "Briefly", ",", "eQTLs", "for", "gene", "expression", "traits", "were", "determined", "by", "identifying", "the", "SNP", "most", "strongly", "associated", "with", "each", "expression", "trait", "profiled", "on", "the", "array", "over", "all", "genotyped", "SNPs", "." ],
+    "entities_indices" : [ [ 4, 5, 6 ], [ 6, 7 ], [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "Liver", "specific", "eQTLs", "were", "enriched", "for", "regulation", "of", "response", "to", "stimulus", "(", "FET", "p", "=", "0.00017", ")", "and", "blood", "coagulation", "(", "FET", "p", "=", "0.00078", ")", ",", "while", "SA", "specific", "eQTLs", "were", "enriched", "for", "metal", "ion", "transport", "(", "FET", "p", "=", "0.00029", ")", "and", "feeding", "behavior", "(", "FET", "p", "=", "0.00042", ")", "." ],
+    "entities_indices" : [ [ 6, 7, 8, 9, 10, 11 ], [ 18, 19, 20 ], [ 28, 29 ], [ 34, 35, 36, 37 ], [ 44, 45, 46 ] ]
+  }, {
+    "sentence_tokens" : [ "Creation", ",", "destruction", ",", "move", "IN", "and", "move", "OUT", "rates", "explain", "the", "plateauing", "in", "the", "number", "of", "partially", "overlapping", "and", "unique", "cis", "eQTLs", "and", "the", "continuous", "rise", "in", "the", "number", "of", "common", "cis", "eQTLs", "." ],
+    "entities_indices" : [ [ 8, 9 ] ]
+  }, {
+    "sentence_tokens" : [ "These", "pathways", "have", "been", "associated", "with", "adipose", "tissue", "remodeling", ",", "vascularization", "and", "metabolism", "(", "mainly", "insulin", "sensitivity", ")", "through", "changes", "in", "body", "weight", "[", "18", "]", ",", "[", "19", "]", "." ],
+    "entities_indices" : [ [ 12, 13 ], [ 15, 16 ], [ 21, 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "Similar", "approaches", "in", "all", "realms", "of", "biology", "from", "diabetes", ",", "obesity", ",", "cardiovascular", "disease", ",", "to", "asthma", "and", "Crohn", "'s", "disease", "have", "proved", "to", "be", "very", "successful", "in", "identifying", "new", "therapeutic", "targets", "[", "2", "]", ",", "[", "3", "]", ",", "[", "4", "]", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 12, 13, 14 ], [ 16, 17 ], [ 18, 19, 20, 21 ] ]
+  }, {
+    "sentence_tokens" : [ "393", "subjects", ",", "which", "are", "self", "reported", "Caucasians", ",", "were", "included", "in", "our", "analysis", "for", "which", "genotyping", "and", "gene", "expression", "data", "was", "available", "from", "all", "three", "tissues.Demographic", "information", "including", "age", ",", "race", ",", "gender", ",", "height", ",", "type", "of", "surgery", "and", "year", "of", "surgery", "were", "collected", "for", "each", "patient", "." ],
+    "entities_indices" : [ [ 18, 19, 20 ], [ 31, 32 ], [ 37, 38 ] ]
+  }, {
+    "sentence_tokens" : [ "By", "looking", "at", "the", "plots", "in", "Figure", "1b", "we", "identified", "2", "qualitatively", "different", "behaviors", "for", "their", "set", "size", "as", "a", "function", "of", "sample", "size", ":", "set", "sizes", "for", "partially", "overlapping", "and", "nonoverlapping", "cis", "eQTLs", "(", "Only", "A", ",", "Only", "B", ",", "Only", "C", ",", "AB", ",", "BC", "and", "CA", ")", "show", "a", "tendency", "to", "plateau", "as", "we", "increase", "the", "sample", "size", ",", "while", "the", "number", "of", "overlapping", "cis", "eQTLs", "continues", "its", "steady", "increase", "at", "a", "rate", "that", "will", "approach", "identified", "for", "single", "tissues", "as", "sample", "size", "increases", "." ],
+    "entities_indices" : [ [ 44, 45 ], [ 46, 47 ], [ 48, 49 ] ]
+  }, {
+    "sentence_tokens" : [ "Studying", "the", "genetics", "of", "gene", "expression", "in", "tissues", "that", "are", "involved", "in", "the", "development", "of", "these", "diseases", "can", "provide", "insights", "into", "how", "these", "tissues", "interact", "within", "the", "context", "of", "disease", "." ],
+    "entities_indices" : [ [ 4, 5, 6 ], [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "A", "cis", "eQTL", "is", "thus", "the", "association", "between", "a", "SNP", "and", "the", "expression", "levels", "of", "a", "transcript", ",", "where", "the", "SNP", "is", "located", "within", "the", "genomic", "region", "that", "spans", "1", "Mb", "upstream", "and", "downstream", "of", "the", "transcript", "'s", "start", "site", ",", "and", "with", "a", "p", "value", "below", "the", "p", "value", "threshold", "selected", "to", "maintain", "a", "10", "%", "FDR", "." ],
+    "entities_indices" : [ [ 20, 21 ], [ 30, 31 ], [ 38, 39 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "have", "recently", "shown", "the", "ability", "to", "associate", "genetic", "changes", "to", "variations", "in", "mRNA", "levels", "in", "an", "obese", "population", "undergoing", "Roux", "en", "Y", "Gastric", "bypass", "surgery", "(", "RYGB", ")", "[", "1", "]", "." ],
+    "entities_indices" : [ [ 27, 28 ] ]
+  }, {
+    "sentence_tokens" : [ "Unique", "cis", "eQTLs", "detected", "in", "OA", "tissue", "display", "the", "largest", "creation", "rate", ",", "and", "a", "very", "small", "move", "IN", "rate", "." ],
+    "entities_indices" : [ [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "OA", "specific", "eQTLs", "were", "enriched", "for", "cell-cell", "adhesion", "(", "FET", "p", "=", "6.3", "x", "10", ")", "." ],
+    "entities_indices" : [ [ 0, 1 ], [ 6, 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "Association", "was", "tested", "to", "all", "expression", "traits", "measured", "on", "the", "array", "." ],
+    "entities_indices" : [ [ 6, 7 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "contrast", ",", "unique", "cis", "eQTLs", "are", "the", "most", "unstable", ",", "dominated", "by", "a", "very", "high", "false", "discovery", "rate", ",", "~", "40", "%", "of", "unique", "cis", "eQTLs", "in", "OA", "or", "SA", "are", "lost", "in", "consecutive", "steps", "." ],
+    "entities_indices" : [ [ 28, 29 ], [ 30, 31 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "similarity", "between", "OA", "and", "SA", "tissues", "is", "responsible", "for", "the", "very", "large", "set", "of", "cis", "eQTLs", "found", "in", "common", "to", "both", "these", "tissues", "(", "that", "excludes", "cis", "eQTLs", "common", "to", "all", "3", "tissues", ")", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 5, 6 ] ]
+  }, {
+    "sentence_tokens" : [ "On", "average", ",", "the", "cis", "eQTLs", "overlapping", "all", "three", "tissues", "had", "mean", "distance", "(", "the", "average", "is", "performed", "over", "all", "cis", "eQTLs", "in", "the", "set", ")", "<delta>", "significantly", "smaller", "than", "in", "any", "other", "set", "of", "cis", "eQTLs", "(", "see", "Figure", "S4", "for", "box-plots", "of", "delta", ")", ",", "while", "the", "tissue", "specific", "cis", "eQTLs", "displayed", "the", "largest", "average", "distance", "(", "the", "Mann", "-", "Whitney", "U", "test", "p", "values", "testing", "the", "difference", "between", "these", "2", "sets", "approximates", "0", "for", "any", "i", ")", "." ],
+    "entities_indices" : [ [ 44, 45 ] ]
+  }, {
+    "sentence_tokens" : [ "Given", "the", "size", "of", "the", "cohort", "and", "the", "availability", "of", "multiple", "tissues", "from", "the", "same", "subject", "we", "were", "able", "to", "analyze", "the", "genetics", "of", "gene", "expression", "in", "each", "tissue", "in", "an", "attempt", "to", "understand", "the", "laws", "governing", "the", "number", "and", "tissue", "specificity", "of", "cis", "eQTLs", "detected", "." ],
+    "entities_indices" : [ [ 24, 25, 26 ] ]
+  }, {
+    "sentence_tokens" : [ "This", "is", "of", "interest", "given", "the", "extreme", "obesity", "of", "the", "study", "populations", "." ],
+    "entities_indices" : [ [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "percentage", "of", "eSNPs", "identified", "in", "the", "N", "also", "identified", "in", "N", ",", "(", "Figure", "2f", ")", ",", "increases", "at", "a", "slower", "pace", "overall", "at", "the", "same", "sample", "size", "as", "shown", "for", "cis", "eQTLs", "." ],
+    "entities_indices" : [ [ 22, 23 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "present", "study", ",", "we", "explored", "37,585", "gene", "expression", "traits", "in", "744", "omental", "adipose", "(", "OA", ")", ",", "612", "subcutaneous", "adipose", "(", "SA", ")", "and", "569", "liver", "samples", "collected", "from", "self", "reported", "Caucasian", "subjects", "undergoing", "RYGB", "where", "each", "subject", "was", "genotyped", "for", "650,000", "SNPs", "." ],
+    "entities_indices" : [ [ 8, 9, 10 ], [ 10, 11 ], [ 16, 17 ], [ 23, 24 ], [ 36, 37 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "development", "of", "high", "throughput", "technologies", "that", "allow", "for", "whole-genome", "profiling", "of", "genotypes", ",", "gene", "expression", "traits", ",", "proteins", "and", "metabolites", "in", "multiple", "tissues", "and", "samples", "from", "a", "single", "individual", ",", "can", "provide", "important", "clues", "to", "disease", "mechanisms", "." ],
+    "entities_indices" : [ [ 14, 15, 16 ], [ 16, 17 ] ]
+  }, {
+    "sentence_tokens" : [ "We", "used", "ADRA2B", "in", "OA", "(", "Figure", "S6a", ")", "and", "ARNT", "in", "liver", "as", "examples", "(", "Figure", "S6b", ")", "to", "demonstrate", "the", "change", "in", "lead", "eSNP", "between", "different", "consecutive", "analysis", "steps", "." ],
+    "entities_indices" : [ [ 2, 3 ], [ 4, 5 ], [ 10, 11 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "gene", "ontologies", "identified", "for", "eQTLs", "from", "a", "given", "tissue", ",", "without", "taking", "into", "account", "tissue", "specificity", "were", "more", "representative", "of", "tissue", "type", ",", "for", "example", "liver", "eQTLs", "were", "found", "to", "be", "enriched", "for", "lipid", "metabolic", "process", "(", "FET", "p", "=", "1.5", "x", "10", ")", "." ],
+    "entities_indices" : [ [ 22, 23 ], [ 34, 35, 36, 37 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "plateauing", "observed", "in", "Figure", "1b", "for", "the", "number", "of", "unique", "cis", "eQTLs", "in", "OA", "correlates", "with", "the", "fact", "that", "overall", "creation", "rate", "approximates", "the", "sum", "of", "deletion", "and", "move", "OUT", "rates", "(", "the", "move", "IN", "rate", "is", "negligible", ")", "that", "leads", "to", "an", "overall", "unchanged", "number", "of", "unique", "cis", "eQTLs", "but", "with", "a", "different", "composition", "in", "the", "set", "." ],
+    "entities_indices" : [ [ 14, 15 ], [ 30, 31 ] ]
+  }, {
+    "sentence_tokens" : [ "If", "A", "denotes", "OA", "tissue", ",", "B", "-", "SA", "tissue", "and", "C", "-", "liver", "then", "\"", "Only", "A", "\"", ",", "\"", "Only", "B", "\"", ",", "\"", "Only", "C", "\"", "represent", "cis", "eQTLs", "unique", "(", "i.e.", "nonoverlapping", ")", "in", "OA", ",", "SA", "and", "liver", "tissues", ",", "\"", "AB", "\"", ",", "\"", "BC", "\"", ",", "\"", "CA", "\"", "represent", "the", "sets", "of", "cis", "eQTLs", "overlapping", "in", "pair", "of", "tissues", "such", "as", "OA-SA", ",", "SA-liver", "and", "liver-OA", ",", "and", "\"", "ABC", "\"", "represents", "the", "set", "of", "cis", "eQTLs", "detected", "in", "all", "three", "tissues", "." ],
+    "entities_indices" : [ [ 3, 4 ], [ 8, 9 ], [ 38, 39 ], [ 40, 41 ], [ 54, 55 ], [ 77, 78 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "order", "to", "reduce", "the", "number", "of", "hypotheses", "tested", ",", "i.e.", "the", "pair", "SNP-mRNAs", ",", "only", "the", "pair", "with", "the", "smallest", "p", "value", "in", "a", "2", "Megabase", "(", "Mb", ")", "window", "was", "retained", ",", "similar", "to", "the", "method", "used", "in", "previously", "published", "studies", "[", "2", "]", ",", "[", "5", "]", "." ],
+    "entities_indices" : [ [ 28, 29 ] ]
+  }, {
+    "sentence_tokens" : [ "For", "example", ",", "the", "percentages", "of", "cis", "eQTL", "specific", "to", "OA", ",", "SA", ",", "and", "liver", "when", "the", "sample", "size", "is", "n", "=", "50", ",", "which", "is", "the", "minimum", "sample", "size", "we", "tested", ",", "are", "42.8", "%", ",", "38.4", "%", "and", "55.9", "%", ",", "respectively", "." ],
+    "entities_indices" : [ [ 10, 11 ], [ 12, 13 ] ]
+  }, {
+    "sentence_tokens" : [ "RNA", "was", "extracted", "from", "OA", ",", "SA", "and", "liver", "samples", "and", "profiled", "on", "custom", "Agilent", "expression", "arrays", "containing", "37,585", "probes", "for", "gene", "expression", "traits", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 6, 7 ], [ 21, 22, 23 ], [ 23, 24 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "contrast", "the", "number", "of", "cis", "eQTLs", "overlapping", "all", "three", "tissues", "increased", "from", "22.25", "%", ",", "24.52", "%", "32.19", "%", "in", "N", "to", "40.77", "%", ",", "42.86", "%", ",", "48.95", "%", "in", "N", "in", "OA", ",", "SA", "and", "liver", "respectively", "." ],
+    "entities_indices" : [ [ 34, 35 ], [ 36, 37 ] ]
+  }, {
+    "sentence_tokens" : [ "One", "argument", "for", "this", "observed", "behavior", "[", "5", "]", "is", "that", "it", "'s", "related", "to", "the", "intrinsic", "biology", ",", "with", "distal", "regulatory", "elements", "(", "regulatory", "enhancers", ")", "being", "more", "cell", "type", "specific", "than", "basic", "regulatory", "elements", "(", "characterized", "by", "those", "eQTLs", "detected", "in", "all", "tissues", ")", "." ],
+    "entities_indices" : [ [ 30, 31 ] ]
+  }, {
+    "sentence_tokens" : [ "Cis", "and", "trans", "acting", "expression", "quantitative", "trait", "loci", "(", "eQTLs", ")", "were", "identified", "using", "a", "method", "similar", "to", "that", "previously", "described", "[", "3", "]", "." ],
+    "entities_indices" : [ [ 0, 1 ] ]
+  }, {
+    "sentence_tokens" : [ "eQTLs", "found", "in", "both", "OA", "and", "SA", "where", "enriched", "for", "cell-cell", "adhesion", "(", "FET", "p", "=", "2.3", "x", "10", ")", "and", "glycosphingolipid", "biosynthetic", "processes", "(", "FET", "p", "=", "0.00043", ")", "." ],
+    "entities_indices" : [ [ 4, 5 ], [ 6, 7 ], [ 10, 11, 12 ], [ 21, 22 ] ]
+  }, {
+    "sentence_tokens" : [ "Since", "only", "the", "number", "of", "cis", "eQTLs", "detected", "in", "all", "three", "tissues", "continues", "to", "increase", "with", "an", "increase", "in", "sample", "size", "while", "partially", "overlapping", "and", "non", "overlapping", "cis", "eQTLs", "reached", "steady", "numbers", ",", "the", "slope", "for", "ABC", "will", "eventually", "reach", "a", "maximum", "value", "bound", "by", "identified", "for", "a", "single", "tissue", ",", "as", "evident", "in", "Figure", "1b.For", "each", "set", "of", "cis", "eQTLs", "we", "then", "investigated", "if", "delta", "(", "the", "eSNP", "position", "relative", "to", "the", "start", "site", "of", "the", "transcript", ")", "was", "significantly", "changed", "with", "sample", "size", "(", "Figure", "1c", ")", "." ],
+    "entities_indices" : [ [ 36, 37 ], [ 65, 66 ], [ 73, 74 ] ]
+  }, {
+    "sentence_tokens" : [ "eSNPs", "have", "not", "been", "identified", "for", "every", "known", "transcript", "or", "different", "transcript", "isoform", ",", "and", "beyond", "tissue", "specific", "expression", "it", "is", "not", "known", "why", "an", "eSNP", "present", "in", "one", "tissue", "(", "cell", "type", ")", "may", "not", "be", "detected", "in", "another", "tissue", "." ],
+    "entities_indices" : [ [ 32, 33 ] ]
+  }, {
+    "sentence_tokens" : [ "The", "two", "related", "tissues", "(", "OA", "and", "SA", ")", "share", "more", "cis", "eQTLs", ",", "with", "a", "weaker", "overlap", "with", "liver", "." ],
+    "entities_indices" : [ [ 5, 6 ], [ 7, 8 ] ]
+  }, {
+    "sentence_tokens" : [ "RNA", "was", "converted", "to", "fluorescently", "labeled", "cRNA", "that", "was", "hybridized", "to", "custom", "44K", "DNA", "oligonucleotide", "microarrays", "manufactured", "by", "Agilent", "Technologies", "as", "described", "previously", "[", "2", "]", ",", "[", "23", "]", "." ],
+    "entities_indices" : [ [ 14, 15 ] ]
+  }, {
+    "sentence_tokens" : [ "In", "order", "to", "obtain", "a", "qualitative", "description", "of", "the", "cis", "eQTL", "dynamics", "we", "introduced", "four", "rates", "relative", "to", "change", "in", "sample", "size", "between", "consecutive", "steps", ":", "creation", "rate", "defined", "as", "the", "number", "of", "new", "cis", "eQTLs", "identified", "between", "steps", "(", "also", "not", "identified", "in", "any", "tissue", "in", "a", "previous", "step", ")", ",", "deletion", "rate", "defined", "as", "the", "number", "of", "cis", "eQTLs", "lost", "between", "consecutive", "steps", "(", "no", "longer", "detected", "in", "any", "tissue", ")", ",", "move", "OUT", "rate", "defined", "as", "the", "number", "of", "cis", "eQTLs", "detected", "in", "a", "particular", "combination", "of", "tissues", "that", "do", "not", "satisfy", "the", "requirement", "anymore", "and", "move", "IN", "rate", ",", "that", "is", "the", "opposite", "to", "move", "OUT", "rate", "and", "describes", "the", "dynamic", "of", "cis", "eQTLs", "that", "now", "satisfy", "a", "new", "requirement", "." ],
+    "entities_indices" : [ [ 49, 50 ], [ 109, 110 ] ]
+  } ],
+  "emptySentences" : [ {
+    "sentence_tokens" : [ "Dissecting", "Cis", "Regulation", "of", "Gene", "Expression", "in", "Human", "Metabolic", "Tissues", "." ]
+  }, {
+    "sentence_tokens" : [ "Complex", "diseases", "such", "as", "obesity", "and", "type", "II", "diabetes", "can", "result", "from", "a", "failure", "in", "multiple", "organ", "systems", "including", "the", "central", "nervous", "system", "and", "tissues", "involved", "in", "partitioning", "and", "disposal", "of", "nutrients", "." ]
+  }, {
+    "sentence_tokens" : [ "Studying", "the", "genetics", "of", "gene", "expression", "in", "tissues", "that", "are", "involved", "in", "the", "development", "of", "these", "diseases", "can", "provide", "insights", "into", "how", "these", "tissues", "interact", "within", "the", "context", "of", "disease", "." ]
+  }, {
+    "sentence_tokens" : [ "Expression", "quantitative", "trait", "locus", "(", "eQTL", ")", "studies", "identify", "mRNA", "expression", "changes", "linked", "to", "proximal", "genetic", "signals", "(", "cis", "eQTLs", ")", "that", "have", "been", "shown", "to", "affect", "disease", "." ]
+  }, {
+    "sentence_tokens" : [ "Given", "the", "high", "impact", "of", "recent", "eQTL", "studies", ",", "it", "is", "important", "to", "understand", "what", "role", "sample", "size", "and", "environment", "plays", "in", "identification", "of", "cis", "eQTLs", "." ]
+  }, {
+    "sentence_tokens" : [ "Here", "we", "show", "in", "a", "genotyped", "obese", "human", "population", "that", "the", "number", "of", "cis", "eQTLs", "obey", "precise", "scaling", "laws", "as", "a", "function", "of", "sample", "size", "in", "three", "profiled", "tissues", ",", "i.e.", "omental", "adipose", ",", "subcutaneous", "adipose", "and", "liver", "." ]
+  }, {
+    "sentence_tokens" : [ "Also", ",", "we", "show", "that", "genes", "(", "or", "transcripts", ")", "with", "cis", "eQTL", "associations", "detected", "in", "a", "small", "population", "are", "detected", "at", "approximately", "90", "%", "rate", "in", "the", "largest", "population", "available", "for", "our", "study", ",", "indicating", "that", "genes", "with", "strong", "cis", "acting", "regulatory", "elements", "can", "be", "identified", "with", "relatively", "high", "confidence", "in", "smaller", "populations", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "by", "increasing", "the", "sample", "size", "we", "allow", "for", "better", "detection", "of", "weaker", "and", "more", "distantly", "located", "cis-regulatory", "elements", "." ]
+  }, {
+    "sentence_tokens" : [ "Yet", ",", "we", "determined", "that", "the", "number", "of", "tissue", "specific", "cis", "eQTLs", "saturates", "in", "a", "modestly", "sized", "cohort", "while", "the", "number", "of", "cis", "eQTLs", "common", "to", "all", "tissues", "fails", "to", "reach", "a", "maximum", "value", "." ]
+  }, {
+    "sentence_tokens" : [ "Introduction", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "development", "of", "high", "throughput", "technologies", "that", "allow", "for", "whole-genome", "profiling", "of", "genotypes", ",", "gene", "expression", "traits", ",", "proteins", "and", "metabolites", "in", "multiple", "tissues", "and", "samples", "from", "a", "single", "individual", ",", "can", "provide", "important", "clues", "to", "disease", "mechanisms", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "have", "recently", "shown", "the", "ability", "to", "associate", "genetic", "changes", "to", "variations", "in", "mRNA", "levels", "in", "an", "obese", "population", "undergoing", "Roux", "en", "Y", "Gastric", "bypass", "surgery", "(", "RYGB", ")", "[", "1", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Similar", "approaches", "in", "all", "realms", "of", "biology", "from", "diabetes", ",", "obesity", ",", "cardiovascular", "disease", ",", "to", "asthma", "and", "Crohn", "'s", "disease", "have", "proved", "to", "be", "very", "successful", "in", "identifying", "new", "therapeutic", "targets", "[", "2", "]", ",", "[", "3", "]", ",", "[", "4", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "recent", "years", ",", "numerous", "genome-scale", "technologies", "have", "been", "employed", "to", "explore", "the", "genetics", "of", "gene", "expression", "in", "human", "cell", "lines", "and", "primary", "tissues", "[", "2", "]", ",", "[", "5", "]", ",", "[", "6", "]", ",", "[", "7", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "These", "studies", "have", "generated", "a", "vast", "amount", "of", "quantitative", "data", ",", "providing", "us", "with", "a", "systems", "view", "of", "disease", "mechanisms", "[", "4", "]", ",", "[", "8]", ",", "[", "9", "]", ",", "[", "10", "]", ",", "[", "11", "]", ",", "[", "12", "]", ",", "[", "13", "]", ",", "[", "14", "]", ",", "[", "15", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "the", "present", "study", ",", "we", "explored", "37,585", "gene", "expression", "traits", "in", "744", "omental", "adipose", "(", "OA", ")", ",", "612", "subcutaneous", "adipose", "(", "SA", ")", "and", "569", "liver", "samples", "collected", "from", "self", "reported", "Caucasian", "subjects", "undergoing", "RYGB", "where", "each", "subject", "was", "genotyped", "for", "650,000", "SNPs", "." ]
+  }, {
+    "sentence_tokens" : [ "Only", "393", "subjects", "had", "genotyping", "and", "expression", "profiling", "data", "available", "for", "all", "three", "tissues", "and", "were", "used", "in", "this", "analysis", "." ]
+  }, {
+    "sentence_tokens" : [ "Given", "the", "size", "of", "the", "cohort", "and", "the", "availability", "of", "multiple", "tissues", "from", "the", "same", "subject", "we", "were", "able", "to", "analyze", "the", "genetics", "of", "gene", "expression", "in", "each", "tissue", "in", "an", "attempt", "to", "understand", "the", "laws", "governing", "the", "number", "and", "tissue", "specificity", "of", "cis", "eQTLs", "detected", "." ]
+  }, {
+    "sentence_tokens" : [ "Our", "main", "goal", "was", "to", "identify", "the", "power", "laws", "relating", "to", "the", "number", "and", "specificity", "of", "cis", "eQTLs", "detected", "as", "a", "function", "of", "sample", "size", "." ]
+  }, {
+    "sentence_tokens" : [ "Understanding", "these", "relationships", "will", "allow", "us", "to", "better", "utilize", "the", "genetics", "of", "gene", "expression", "to", "inform", "on", "the", "molecular", "mechanism", "underlying", "complex", "disease", "." ]
+  }, {
+    "sentence_tokens" : [ "Results", "." ]
+  }, {
+    "sentence_tokens" : [ "DNA", "was", "extracted", "from", "liver", "samples", "and", "genotyped", "on", "Illumina", "650Y", "genotyping", "arrays", "." ]
+  }, {
+    "sentence_tokens" : [ "RNA", "was", "extracted", "from", "OA", ",", "SA", "and", "liver", "samples", "and", "profiled", "on", "custom", "Agilent", "expression", "arrays", "containing", "37,585", "probes", "for", "gene", "expression", "traits", "." ]
+  }, {
+    "sentence_tokens" : [ "393", "subjects", ",", "which", "are", "self", "reported", "Caucasians", ",", "were", "included", "in", "our", "analysis", "for", "which", "genotyping", "and", "gene", "expression", "data", "were", "available", "from", "all", "three", "tissues", "[", "1", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Cis", "eQTLs", "were", "identified", "using", "the", "Kruskal-Wallis", "non", "parametric", "test", "described", "previously", "[", "2", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "order", "to", "reduce", "the", "number", "of", "hypotheses", "tested", ",", "i.e.", "the", "pair", "SNP-mRNAs", ",", "only", "the", "pair", "with", "the", "smallest", "p", "value", "in", "a", "2", "Megabase", "(", "Mb", ")", "window", "was", "retained", ",", "similar", "to", "the", "method", "used", "in", "previously", "published", "studies", "[", "2", "]", ",", "[", "5", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "cis", "eQTL", "is", "thus", "the", "association", "between", "a", "SNP", "and", "the", "expression", "levels", "of", "a", "transcript", ",", "where", "the", "SNP", "is", "located", "within", "the", "genomic", "region", "that", "spans", "1", "Mb", "upstream", "and", "downstream", "of", "the", "transcript", "'s", "start", "site", ",", "and", "with", "a", "p", "value", "below", "the", "p", "value", "threshold", "selected", "to", "maintain", "a", "10", "%", "FDR", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "order", "to", "avoid", "any", "confusion", "we", "will", "refer", "to", "the", "eQTLs", "as", "the", "transcript", "rather", "than", "the", "SNP-transcript", "pair", ",", "while", "an", "expression", "(", "e", ")", "SNP", "is", "the", "selected", "SNP", "associated", "with", "the", "mRNA", "profile", "of", "a", "transcript.We", "generated", "20", "sub-samples", "N", "i", "=", "1", ":", "20", "equally", "spaced", "in", "the", "ln", "(", "n", ")", "space", "(", "where", "n", "=", "|", "N", "|", "is", "the", "size", "of", "sample", "N", ")", "by", "randomly", "removing", "individuals", "from", "the", "largest", "sample", "N", "of", "size", "n", "=", "393", "until", "we", "reached", "a", "sample", "of", "size", "n", "=", "50", "(", "see", "Figure", "1a", "for", "the", "study", "design", "and", "Table", "S1", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "each", "sub", "sample", "we", "removed", "all", "SNPs", "that", "did", "not", "exceed", "a", "minor", "allele", "frequency", "(", "MAF", ")", "of", "5", "%", "(", "the", "number", "of", "SNPs", "removed", "from", "the", "analysis", "for", "each", "sub", "sample", "is", "summarized", "in", "the", "Table", "S1", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "each", "tissue", "and", "each", "sub-sample", "we", "then", "proceeded", "to", "identify", "the", "cis", "eQTLs", "and", "eSNPs", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "sub", "sample", "generating", "procedure", "and", "subsequent", "analysis", "was", "repeated", "five", "times", "(", "see", "Figure", "S5", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Let", "Q", "and", "S", "be", "the", "set", "of", "cis", "eQTLs", "and", "eSNPs", "respectively", "identified", "using", "the", "population", "sub-sample", "N", "with", "q", "=", "|", "Q", "|", "and", "s", "=", "|", "S", "|", "the", "number", "of", "unique", "cis", "eQTLs", "and", "eSNPs", "in", "each", "set", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "found", "that", "the", "number", "of", "cis", "eQTLs", "precisely", "obeys", "(", "Figure", "1b", ")", "for", "each", "tissue", "in", "the", "analysis", "(", "see", "Figure", "S1", "for", "a", "comparison", "of", "plots", "in", "normal", "and", "log-normal", "space", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "slopes", "and", "intercepts", "for", "each", "tissue", "are", "summarized", "in", "Table", "1", "." ]
+  }, {
+    "sentence_tokens" : [ "Slopes", "for", "changes", "in", "total", "number", "of", "cis", "eQTLs", "as", "a", "function", "of", "sample", "size", "in", "each", "tissue", "are", "very", "close", "in", "value", "thus", "we", "hypothesize", "that", "the", "scaling", "laws", "will", "hold", "in", "any", "analysis", "of", "tissues", "collected", "from", "this", "cohort", "however", "we", "believe", "that", "slope", "could", "change", "if", "tissue", "samples", "were", "collected", "from", "a", "different", "cohort", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "observed", "intercept", "change", "when", "analyzing", "this", "particular", "cohort", ",", "with", "is", "most", "likely", "a", "consequence", "of", "tissue", "heterogeneity", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "believe", "that", "the", "number", "of", "cis", "eQTLs", "detected", "in", "cellular", "homogenous", "tissues", "(", "such", "as", "adipose", ")", "is", "larger", "than", "in", "a", "more", "heterogeneous", "tissue", "(", "such", "as", "liver", ")", "explaining", "the", "differences", "between", "the", "intercepts", "in", "each", "tissue", "." ]
+  }, {
+    "sentence_tokens" : [ "Similar", "behavior", "was", "previously", "noted", "in", "an", "Icelandic", "population", "[", "2", "]", ",", "[", "16", "]", "with", "3,048", "cis", "eQTLs", "detected", "in", "adipose", "tissue", "and", "2,417", "in", "whole", "blood", "from", "the", "same", "individuals.While", "the", "number", "of", "cis", "eQTLs", "in", "each", "tissue", "obeys", "the", "same", "scaling", "law", "as", "described", "above", ",", "by", "looking", "at", "overlaps", "between", "cis", "eQTLs", "across", "the", "3", "tissue", "we", "identified", "subsets", "of", "cis", "eQTLs", "that", "behaved", "dramatically", "differently", "as", "a", "function", "of", "sample", "size", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "classified", "cis", "eQTLs", "in", "seven", "groups", "." ]
+  }, {
+    "sentence_tokens" : [ "If", "A", "denotes", "OA", "tissue", ",", "B", "-", "SA", "tissue", "and", "C", "-", "liver", "then", "\"", "Only", "A", "\"", ",", "\"", "Only", "B", "\"", ",", "\"", "Only", "C", "\"", "represent", "cis", "eQTLs", "unique", "(", "i.e.", "nonoverlapping", ")", "in", "OA", ",", "SA", "and", "liver", "tissues", ",", "\"", "AB", "\"", ",", "\"", "BC", "\"", ",", "\"", "CA", "\"", "represent", "the", "sets", "of", "cis", "eQTLs", "overlapping", "in", "pair", "of", "tissues", "such", "as", "OA-SA", ",", "SA-liver", "and", "liver-OA", ",", "and", "\"", "ABC", "\"", "represents", "the", "set", "of", "cis", "eQTLs", "detected", "in", "all", "three", "tissues", "." ]
+  }, {
+    "sentence_tokens" : [ "By", "looking", "at", "the", "plots", "in", "Figure", "1b", "we", "identified", "2", "qualitatively", "different", "behaviors", "for", "their", "set", "size", "as", "a", "function", "of", "sample", "size", ":", "set", "sizes", "for", "partially", "overlapping", "and", "nonoverlapping", "cis", "eQTLs", "(", "Only", "A", ",", "Only", "B", ",", "Only", "C", ",", "AB", ",", "BC", "and", "CA", ")", "show", "a", "tendency", "to", "plateau", "as", "we", "increase", "the", "sample", "size", ",", "while", "the", "number", "of", "overlapping", "cis", "eQTLs", "continues", "its", "steady", "increase", "at", "a", "rate", "that", "will", "approach", "identified", "for", "single", "tissues", "as", "sample", "size", "increases", "." ]
+  }, {
+    "sentence_tokens" : [ "Using", "a", "sliding", "window", "containing", "consecutive", "data", "points", "a", "more", "qualitative", "picture", "can", "be", "obtained", "(", "see", "Figure", "S2", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "decrease", "in", "slope", "(", "as", "we", "slide", "the", "window", "from", "the", "beginning", "of", "the", "plot", "to", "the", "end", ")", "signals", "a", "saturation", "tendency", "for", "the", "number", "of", "cis", "eQTLs", "in", "the", "set", "while", "an", "increase", "in", "slope", "signals", "a", "further", "acceleration", "." ]
+  }, {
+    "sentence_tokens" : [ "Using", "this", "approach", "we", "again", "see", "the", "2", "different", "trends", "observed", "in", "Figure", "1b", ",", "saturation", "in", "the", "number", "cis", "eQTLs", "that", "are", "not", "detected", "(", "tissue", "specific", ")", "in", "all", "three", "tissues", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "trend", "is", "more", "pronounced", "for", "cis", "eQTLs", "overlapping", "across", "less", "related", "tissues", ",", "such", "as", "OA-liver", "or", "SA-liver", ",", "while", "cis", "eQTLs", "overlapping", "in", "OA-SA", "reached", "saturation", "at", "a", "much", "slower", "rate", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "contrast", "we", "did", "not", "detect", "any", "saturation", "for", "the", "cis", "eQTLs", "overlapping", "in", "all", "three", "tissues", ",", "instead", "an", "even", "faster", "rise", "in", "their", "numbers", "as", "the", "slope", "increases", "with", "an", "increase", "in", "sample", "size", "(", "Figure", "1b", ",", "ABC", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Since", "only", "the", "number", "of", "cis", "eQTLs", "detected", "in", "all", "three", "tissues", "continues", "to", "increase", "with", "an", "increase", "in", "sample", "size", "while", "partially", "overlapping", "and", "non", "overlapping", "cis", "eQTLs", "reached", "steady", "numbers", ",", "the", "slope", "for", "ABC", "will", "eventually", "reach", "a", "maximum", "value", "bound", "by", "identified", "for", "a", "single", "tissue", ",", "as", "evident", "in", "Figure", "1b.For", "each", "set", "of", "cis", "eQTLs", "we", "then", "investigated", "if", "delta", "(", "the", "eSNP", "position", "relative", "to", "the", "start", "site", "of", "the", "transcript", ")", "was", "significantly", "changed", "with", "sample", "size", "(", "Figure", "1c", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "On", "average", ",", "the", "cis", "eQTLs", "overlapping", "all", "three", "tissues", "had", "mean", "distance", "(", "the", "average", "is", "performed", "over", "all", "cis", "eQTLs", "in", "the", "set", ")", "<delta>", "significantly", "smaller", "than", "in", "any", "other", "set", "of", "cis", "eQTLs", "(", "see", "Figure", "S4", "for", "box-plots", "of", "delta", ")", ",", "while", "the", "tissue", "specific", "cis", "eQTLs", "displayed", "the", "largest", "average", "distance", "(", "the", "Mann", "-", "Whitney", "U", "test", "p", "values", "testing", "the", "difference", "between", "these", "2", "sets", "approximates", "0", "for", "any", "i", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "At", "the", "same", "time", "the", "average", "association", "strength", "measured", "as", "for", "each", "set", "is", "always", "highest", "for", "the", "overlapping", "cis", "eQTLs", "when", "compared", "to", "unique", "cis", "eQTLs", "(", "Figure", "1d", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "behavior", "has", "been", "observed", "previously", "in", "both", "mouse", "[", "17", "]", "and", "human", "studies", "[", "5", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "One", "argument", "for", "this", "observed", "behavior", "[", "5", "]", "is", "that", "it", "'s", "related", "to", "the", "intrinsic", "biology", ",", "with", "distal", "regulatory", "elements", "(", "regulatory", "enhancers", ")", "being", "more", "cell", "type", "specific", "than", "basic", "regulatory", "elements", "(", "characterized", "by", "those", "eQTLs", "detected", "in", "all", "tissues", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "It", "has", "been", "reported", "that", "54", "%", ",", "50", "%", "and", "54", "%", "of", "cis", "eQTLs", "in", "fibroblasts", ",", "LCLs", "and", "T", "cells", "respectively", "will", "be", "cell", "type", "specific", "[", "5", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "However", ",", "our", "analysis", "using", "tissues", "collected", "from", "a", "human", "cohort", "shows", "that", "the", "number", "of", "unique", "cis", "eQTLs", "detected", "saturates", "quite", "rapidly", "as", "a", "function", "of", "sample", "size", ",", "while", "the", "total", "number", "of", "cis", "eQTLs", "common", "to", "all", "tissues", "continues", "to", "increase", "." ]
+  }, {
+    "sentence_tokens" : [ "Therefore", ",", "the", "percentage", "of", "common", "cis", "eQTLs", "is", "strongly", "dependent", "on", "the", "sample", "size", "." ]
+  }, {
+    "sentence_tokens" : [ "For", "example", ",", "the", "percentages", "of", "cis", "eQTL", "specific", "to", "OA", ",", "SA", ",", "and", "liver", "when", "the", "sample", "size", "is", "n", "=", "50", ",", "which", "is", "the", "minimum", "sample", "size", "we", "tested", ",", "are", "42.8", "%", ",", "38.4", "%", "and", "55.9", "%", ",", "respectively", "." ]
+  }, {
+    "sentence_tokens" : [ "These", "percentages", "dramatically", "decrease", "to", "23.5", "%", ",", "21.1", "%", "and", "35.6", "%", ",", "respectively", ",", "when", "the", "maximum", "sample", "size", "was", "tested", ",", "N", "=", "393", "." ]
+  }, {
+    "sentence_tokens" : [ "Because", "the", "cis", "eQTL", "common", "to", "all", "tissues", "show", "no", "sign", "of", "saturating", ",", "we", "expect", "these", "percentages", "to", "further", "decrease", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "contrast", "the", "number", "of", "cis", "eQTLs", "overlapping", "all", "three", "tissues", "increased", "from", "22.25", "%", ",", "24.52", "%", "32.19", "%", "in", "N", "to", "40.77", "%", ",", "42.86", "%", ",", "48.95", "%", "in", "N", "in", "OA", ",", "SA", "and", "liver", "respectively", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "opposite", "conclusion", "was", "reached", "in", "a", "previous", "report", "on", "fibroblasts", ",", "LCLs", ",", "and", "T", "cells", "likely", "due", "to", "three", "factors", ":", "1", ")", "sample", "size", ",", "2", ")", "homogenous", "cell", "population", "and", "3", ")", "similarities", "and", "dissimilarities", "between", "the", "samples", "(", "tissues", "versus", "cells", ")", "compared.Although", "we", "have", "already", "characterized", "the", "number", "of", "cis", "eQTLs", "detected", "as", "a", "function", "of", "sample", "size", ",", "a", "key", "question", "to", "address", "is", "whether", "the", "set", "of", "cis", "eQTLs", "and", "eSNPs", "identified", "in", "a", "specific", "tissue", "in", "smaller", "samples", "continue", "to", "be", "present", "in", "subsequent", "analysis", "as", "the", "cohort", "size", "is", "increased", "." ]
+  }, {
+    "sentence_tokens" : [ "To", "address", "this", "question", "we", "looked", "at", "the", "relative", "overlap", "between", "consecutive", "steps", "and", "plotted", "the", "percentage", "of", "cis", "eQTLs", "overlapping", "in", "2", "consecutive", "steps", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "very", "high", "rate", "of", "90", "%", ",", "with", "approximately", "same", "value", "between", "any", "consecutive", "steps", "was", "observed", "(", "Figure", "2a", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Overlaps", "between", "cis", "eQTL", "sets", "relative", "to", "the", "largest", "sub", "sample", "N", "defined", "as", "(", "Figure", "2b", ")", "shows", "that", "more", "than", "90", "%", "of", "the", "cis", "eQTLs", "identified", "in", "any", "sub-sample", "will", "be", "detected", "in", "the", "largest", "population", "." ]
+  }, {
+    "sentence_tokens" : [ "To", "gauge", "how", "many", "of", "the", "cis", "eQTLs", "identified", "in", "N", "were", "also", "identified", "in", "sub", "sample", "N", "we", "plotted", "(", "Figure", "2c", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "found", "that", "approximately", "10", "%", "of", "all", "cis", "eQTLs", "detected", "from", "N", "were", "also", "detected", "in", "N", "increasing", "to", "~", "90", "%", "in", "N", "(", "similar", "plots", "as", "in", "Figure", "2a", "-", "c", "for", "the", "sets", "of", "cis", "eQTLs", "previously", "described", "in", "Figure", "1", "can", "be", "found", "in", "Figure", "S3", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Similar", "results", "for", "eSNPs", "are", "plotted", "in", "Figure", "2d", "-", "f." ]
+  }, {
+    "sentence_tokens" : [ "We", "observed", "an", "approximate", "80", "%", "overlap", "between", "eSNPs", "in", "consecutive", "steps", "(", "Figure", "2d", ")", ",", "and", "an", "increase", "from", "~", "50", "%", "at", "(", "i", "=", "1", ")", "to", "~", "80", "%", "at", "(", "i", "=", "19", ")", "in", "overlapping", "eSNPs", "to", "the", "N", ",", "(", "Figure", "2e", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "percentage", "of", "eSNPs", "identified", "in", "the", "N", "also", "identified", "in", "N", ",", "(", "Figure", "2f", ")", ",", "increases", "at", "a", "slower", "pace", "overall", "at", "the", "same", "sample", "size", "as", "shown", "for", "cis", "eQTLs", "." ]
+  }, {
+    "sentence_tokens" : [ "Overall", ",", "detection", "of", "cis", "eQTLs", "is", "much", "more", "robust", "than", "eSNP", "identification", "with", "about", "90", "%", "overlap", "between", "consecutive", "steps", "for", "cis", "eQTLs", "and", "~", "80", "%", "for", "the", "eSNP", "." ]
+  }, {
+    "sentence_tokens" : [ "As", "additional", "evidence", "approximately", "70", "%", "of", "cis", "eQTL", "and", "50", "%", "of", "eSNPs", "identified", "at", "N", "were", "also", "identified", "in", "the", "largest", "population", "available", "(", "n", "=", "569", "liver", ",", "n", "=", "744", "OA", ",", "n", "=", "612", "SA", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "anticipate", "that", "these", "results", "could", "reflect", "strong", "correlation", "between", "different", "SNPs", ",", "each", "of", "which", "can", "equally", "well", "act", "as", "a", "surrogate", "measure", "for", "the", "true", "causal", "cis", "acting", "effect", "within", "the", "linkage", "disequilibrium", "(", "LD", ")", "block", "." ]
+  }, {
+    "sentence_tokens" : [ "While", "this", "behaviour", "might", "be", "considered", "problematic", ",", "we", "see", "that", "in", "our", "study", "a", "maximum", "of", "eight", "different", "SNPs", "were", "associated", "to", "the", "same", "transcript", "in", "the", "20", "different", "sample", "subsets", "from", "each", "tissue", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "used", "ADRA2B", "in", "OA", "(", "Figure", "S6a", ")", "and", "ARNT", "in", "liver", "as", "examples", "(", "Figure", "S6b", ")", "to", "demonstrate", "the", "change", "in", "lead", "eSNP", "between", "different", "consecutive", "analysis", "steps", "." ]
+  }, {
+    "sentence_tokens" : [ "These", "two", "genes", "were", "found", "to", "have", "the", "largest", "number", "of", "lead", "eSNPs", "in", "our", "analysis", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "believe", "that", "this", "phenomenon", "should", "not", "have", "a", "damaging", "effect", "on", "eQTL", "identification", "overall", ",", "but", "should", "be", "considered", "when", "interpreting", "lead", "eSNP", "data", "for", "gene", "expression", "traits.We", "have", "shown", "that", "the", "detection", "of", "cis", "acting", "eQTLs", "obeys", "precise", "scaling", "laws", "in", "each", "tissue", "investigated", "." ]
+  }, {
+    "sentence_tokens" : [ "One", "important", "observation", "regarding", "replication", "of", "this", "effect", "is", "that", "the", "number", "of", "cis", "eQTLs", "present", "in", "all", "three", "tissues", "continues", "to", "grow", "with", "an", "increase", "in", "samples", "size", "while", "the", "number", "of", "tissue", "specific", "cis", "eQTLs", "starts", "to", "plateau", "with", "increasing", "sample", "size", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "result", "is", "in", "contradiction", "to", "recent", "observations", "that", "approximately", "50", "%", "of", "all", "cis", "eQTLs", "are", "tissue", "specific", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "fact", "that", "the", "numbers", "of", "unique", "cis", "eQTLs", "are", "reaching", "a", "plateau", "could", "imply", "that", "we", "have", "already", "found", "a", "robust", "(", "i.e.", "that", "does", "not", "change", "with", "sample", "size", ")", "set", "of", "unique", "cis", "eQTLs", "." ]
+  }, {
+    "sentence_tokens" : [ "However", "if", "one", "looks", "at", "the", "strength", "of", "the", "association", "we", "find", "that", "unique", "cis", "eSNP", "are", "more", "weakly", "associated", "(", "higher", "p", "values", ")", "to", "gene", "expression", "traits", "than", "conserved", "cis", "eQTLs", "(", "Figure", "1c", ")", "leading", "to", "a", "contradictory", "conclusion", ",", "as", "we", "would", "anticipate", "that", "the", "weaker", "unique", "cis", "eQTLs", "should", "contain", "a", "larger", "number", "of", "false", "positives", "compared", "to", "the", "set", "of", "universal", "and", "more", "strongly", "associated", "cis", "eQTLs", "." ]
+  }, {
+    "sentence_tokens" : [ "If", "we", "regard", "the", "increase", "in", "sample", "size", "as", "a", "dynamic", "change", "in", "the", "genetic", "information", ",", "a", "cis", "eQTL", "can", "be", "thought", "of", "as", "being", "created", "and", "then", "moving", "in", "the", "space", "between", "the", "3", "tissues", ",", "i.e.", "becoming", "detected", "in", "a", "pair", "of", "tissues", "or", "detected", "in", "all", "3", "tissues", "as", "well", "as", "being", "destroyed", "in", "the", "process", "of", "increasing", "sample", "size", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "Figure", "3a", "we", "plot", "a", "cis", "eQTL", "as", "it", "progresses", "from", "sub", "sample", "to", "sub", "sample", "." ]
+  }, {
+    "sentence_tokens" : [ "It", "is", "evident", "that", "an", "eQTLs", "can", "be", "viewed", "as", "a", "\"", "dynamic", "\"", "entity", "that", "undergoes", "transitions", "with", "regard", "to", "its", "tissue", "of", "origin", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "hypothesize", "that", "an", "eQTL", "'s", "first", "occurrence", "is", "likely", "as", "a", "unique", "cis", "eQTLs", "that", "can", "either", "disappear", "completely", "or", "more", "likely", "as", "we", "increase", "sample", "size", "becomes", "common", "to", "a", "pair", "of", "tissues", "then", "progresses", "to", "become", "detected", "in", "all", "tissues", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "order", "to", "obtain", "a", "qualitative", "description", "of", "the", "cis", "eQTL", "dynamics", "we", "introduced", "four", "rates", "relative", "to", "change", "in", "sample", "size", "between", "consecutive", "steps", ":", "creation", "rate", "defined", "as", "the", "number", "of", "new", "cis", "eQTLs", "identified", "between", "steps", "(", "also", "not", "identified", "in", "any", "tissue", "in", "a", "previous", "step", ")", ",", "deletion", "rate", "defined", "as", "the", "number", "of", "cis", "eQTLs", "lost", "between", "consecutive", "steps", "(", "no", "longer", "detected", "in", "any", "tissue", ")", ",", "move", "OUT", "rate", "defined", "as", "the", "number", "of", "cis", "eQTLs", "detected", "in", "a", "particular", "combination", "of", "tissues", "that", "do", "not", "satisfy", "the", "requirement", "anymore", "and", "move", "IN", "rate", ",", "that", "is", "the", "opposite", "to", "move", "OUT", "rate", "and", "describes", "the", "dynamic", "of", "cis", "eQTLs", "that", "now", "satisfy", "a", "new", "requirement", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "Figure", "3b", "-", "e", "we", "plot", "these", "rates", "for", "cis", "eQTLs", "identified", "in", "OA", "tissue", "(", "similar", "results", "were", "observed", "for", "all", "3", "tissues", ")", ",", "for", "the", "set", "of", "cis", "eQTLs", "detected", "in", "all", "3", "tissues", "(", "Figure", "3b", ")", ",", "unique", "to", "OA", "(", "Figure", "3c", ")", ",", "detected", "in", "both", "OA-SA", "(", "Figure", "3d", ")", "and", "detected", "in", "both", "liver-OA", "(", "Figure", "3e", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "set", "of", "cis", "eQTLs", "common", "to", "all", "3", "tissues", "(", "Figure", "3b", ")", "have", "a", "zero", "creation", "rate", ",", "indicating", "that", "a", "cis", "eQTL", "has", "to", "be", "detected", "first", "in", "a", "tissue", "then", "detected", "in", "a", "pair", "of", "tissues", "before", "becomes", "detected", "in", "all", "3", "tissues", ",", "zero", "deletion", "rate", "indicating", "that", "these", "cis", "eQTLs", "were", "detected", "in", "at", "least", "one", "tissue", "at", "a", "prior", "step", ",", "and", "a", "move", "IN", "rate", "~", "4", "x", "larger", "than", "move", "OUT", "rate", ",", "indicating", "a", "further", "accumulation", "of", "cis", "eQTLs", "common", "to", "all", "3", "tissues", "as", "we", "increase", "sample", "size", "." ]
+  }, {
+    "sentence_tokens" : [ "Unique", "cis", "eQTLs", "detected", "in", "OA", "tissue", "display", "the", "largest", "creation", "rate", ",", "and", "a", "very", "small", "move", "IN", "rate", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "plateauing", "observed", "in", "Figure", "1b", "for", "the", "number", "of", "unique", "cis", "eQTLs", "in", "OA", "correlates", "with", "the", "fact", "that", "overall", "creation", "rate", "approximates", "the", "sum", "of", "deletion", "and", "move", "OUT", "rates", "(", "the", "move", "IN", "rate", "is", "negligible", ")", "that", "leads", "to", "an", "overall", "unchanged", "number", "of", "unique", "cis", "eQTLs", "but", "with", "a", "different", "composition", "in", "the", "set", "." ]
+  }, {
+    "sentence_tokens" : [ "As", "with", "cis", "eQTLs", "common", "to", "all", "3", "tissues", "the", "ones", "common", "to", "a", "pair", "of", "tissues", "(", "Figure", "4d", "-", "e", ")", "have", "approximate", "zero", "deletion", "rate", ",", "however", "move", "IN", "and", "move", "OUT", "rates", "are", "becoming", "close", "in", "value", "as", "we", "increase", "sample", "size", "that", "again", "signals", "a", "plateauing", "in", "their", "numbers", "as", "observed", "in", "Figure", "1b", "." ]
+  }, {
+    "sentence_tokens" : [ "Looking", "at", "similar", "quantities", "as", "in", "Figure", "2a", ",", "in", "consecutive", "steps", "we", "see", "an", "almost", "100", "%", "overlap", "between", "cis", "eQTLs", "common", "to", "all", "3", "tissues", ",", "a", "60", "%", "overlap", "for", "unique", "cis", "eQTLs", "in", "OA", "or", "SA", "and", "80", "%", "overlap", "for", "cis", "eQTLs", "in", "liver", "(", "Figure", "S2", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "eSNPs", "have", "not", "been", "identified", "for", "every", "known", "transcript", "or", "different", "transcript", "isoform", ",", "and", "beyond", "tissue", "specific", "expression", "it", "is", "not", "known", "why", "an", "eSNP", "present", "in", "one", "tissue", "(", "cell", "type", ")", "may", "not", "be", "detected", "in", "another", "tissue", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "performed", "gene", "ontology", "analysis", "on", "the", "tissue", "specific", "eQTLs", "and", "the", "ubiquitous", "(", "found", "in", "many", "tissues", ")", "eQTLs", "to", "determine", "if", "we", "could", "identify", "any", "relevant", "biology", "specific", "to", "each", "of", "the", "eQTL", "subsets", "(", "Figure", "4c", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "note", "that", "the", "cohort", "used", "in", "the", "present", "study", "was", "predominantly", "morbidly", "obese", "subjects", ",", "which", "may", "affect", "both", "the", "anatomical", "and", "physiological", "state", "of", "the", "adipose", "tissue", "and", "the", "liver", "." ]
+  }, {
+    "sentence_tokens" : [ "Using", "Gene", "Ontology", "Biological", "Processes", "(", "GOBP", ")", "we", "find", "that", "the", "ubiquitous", "eQTL", "subset", "was", "enriched", "for", "oxidative", "reduction", "(", "FET", "p", "=", "3", "x", "10", ")", "and", "antigen", "processing", "and", "presentation", "(", "FET", "p", "=", "3.4", "x", "10", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "eQTLs", "found", "in", "both", "OA", "and", "SA", "where", "enriched", "for", "cell-cell", "adhesion", "(", "FET", "p", "=", "2.3", "x", "10", ")", "and", "glycosphingolipid", "biosynthetic", "processes", "(", "FET", "p", "=", "0.00043", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "This", "is", "of", "interest", "given", "the", "extreme", "obesity", "of", "the", "study", "populations", "." ]
+  }, {
+    "sentence_tokens" : [ "These", "pathways", "have", "been", "associated", "with", "adipose", "tissue", "remodeling", ",", "vascularization", "and", "metabolism", "(", "mainly", "insulin", "sensitivity", ")", "through", "changes", "in", "body", "weight", "[", "18", "]", ",", "[", "19", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Liver", "specific", "eQTLs", "were", "enriched", "for", "regulation", "of", "response", "to", "stimulus", "(", "FET", "p", "=", "0.00017", ")", "and", "blood", "coagulation", "(", "FET", "p", "=", "0.00078", ")", ",", "while", "SA", "specific", "eQTLs", "were", "enriched", "for", "metal", "ion", "transport", "(", "FET", "p", "=", "0.00029", ")", "and", "feeding", "behavior", "(", "FET", "p", "=", "0.00042", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "OA", "specific", "eQTLs", "were", "enriched", "for", "cell-cell", "adhesion", "(", "FET", "p", "=", "6.3", "x", "10", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "gene", "ontologies", "identified", "for", "eQTLs", "from", "a", "given", "tissue", ",", "without", "taking", "into", "account", "tissue", "specificity", "were", "more", "representative", "of", "tissue", "type", ",", "for", "example", "liver", "eQTLs", "were", "found", "to", "be", "enriched", "for", "lipid", "metabolic", "process", "(", "FET", "p", "=", "1.5", "x", "10", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Discussion", "." ]
+  }, {
+    "sentence_tokens" : [ "Using", "sub-samples", "from", "a", "cohort", "of", "obese", "individuals", "that", "underwent", "RYGB", "we", "were", "able", "to", "derive", "scaling", "laws", "for", "the", "number", "of", "cis", "eQTLs", "detected", "as", "a", "function", "of", "sample", "size", "in", "three", "tissues", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "show", "that", "saturation", "for", "eSNP", "identification", "in", "the", "largest", "population", "analyzed", "was", "not", "achieved", "." ]
+  }, {
+    "sentence_tokens" : [ "We", "predict", "that", "given", "a", "sufficiently", "large", "population", "it", "is", "likely", "that", "for", "each", "transcript", "and", "transcript", "isoform", "variation", "we", "will", "be", "able", "to", "identify", "a", "corresponding", "regulatory", "variant", "(", "eSNP", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Such", "a", "behavior", "is", "observed", "for", "the", "cis", "eQTLs", "overlapping", "all", "three", "tissues", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "contrast", ",", "the", "cis", "eQTLs", "that", "overlap", "any", "two", "pairs", "of", "tissues", "or", "are", "unique", "to", "a", "tissue", "as", "they", "start", "to", "saturate", "for", "a", "given", "sample", "size", "." ]
+  }, {
+    "sentence_tokens" : [ "However", "the", "saturation", "seems", "to", "be", "on", "different", "scales", "in", "the", "two-tissue", "overlaps", "versus", "single", "tissue", "specific", "cases", "." ]
+  }, {
+    "sentence_tokens" : [ "Overall", "we", "show", "that", "while", "there", "is", "no", "apparent", "slow", "down", "in", "the", "number", "of", "cis", "eQTLs", "detected", "in", "each", "tissue", "we", "observed", "that", "the", "detection", "of", "unique", "cis", "eQTLs", "for", "each", "tissue", "or", "found", "in", "pairs", "of", "tissues", "can", "be", "achieved", "much", "sooner.As", "a", "dynamic", "quantity", "the", "cis", "eQTLs", "can", "become", "very", "stable", "if", "it", "becomes", "common", "to", "all", "3", "tissues", ",", "i.e.", "these", "cis", "eQTLs", "have", "zero", "deletion", "and", "creation", "rates", "." ]
+  }, {
+    "sentence_tokens" : [ "In", "contrast", ",", "unique", "cis", "eQTLs", "are", "the", "most", "unstable", ",", "dominated", "by", "a", "very", "high", "false", "discovery", "rate", ",", "~", "40", "%", "of", "unique", "cis", "eQTLs", "in", "OA", "or", "SA", "are", "lost", "in", "consecutive", "steps", "." ]
+  }, {
+    "sentence_tokens" : [ "Creation", ",", "destruction", ",", "move", "IN", "and", "move", "OUT", "rates", "explain", "the", "plateauing", "in", "the", "number", "of", "partially", "overlapping", "and", "unique", "cis", "eQTLs", "and", "the", "continuous", "rise", "in", "the", "number", "of", "common", "cis", "eQTLs", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "key", "element", "in", "the", "analysis", "is", "tissue", "type", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "two", "related", "tissues", "(", "OA", "and", "SA", ")", "share", "more", "cis", "eQTLs", ",", "with", "a", "weaker", "overlap", "with", "liver", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "similarity", "between", "OA", "and", "SA", "tissues", "is", "responsible", "for", "the", "very", "large", "set", "of", "cis", "eQTLs", "found", "in", "common", "to", "both", "these", "tissues", "(", "that", "excludes", "cis", "eQTLs", "common", "to", "all", "3", "tissues", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Gene", "set", "analysis", "and", "replication", "efforts", "in", "existing", "studies", "help", "us", "understand", "and", "hypothesize", "the", "molecular", "mechanisms", "represented", "by", "different", "sets", "of", "eSNPs", "." ]
+  }, {
+    "sentence_tokens" : [ "cis", "eQTLs", "identified", "in", "all", "3", "tissues", "in", "our", "analysis", "prove", "to", "be", "the", "most", "stable", ",", "as", "the", "majority", "of", "them", "have", "been", "now", "replicated", "in", "four", "different", "studies", "[", "6", "]", ",", "[", "20", "]", ",", "[", "21", "]", ",", "[", "22", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Unique", "cis", "eQTLs", "show", "a", "weak", "replication", "and", "also", "weak", "GO", "enrichment", ",", "possibly", "due", "to", "large", "false", "positive", "rates", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "changes", "in", "enrichment", "with", "the", "increase", "in", "sample", "size", "did", "not", "provide", "additional", "information", "." ]
+  }, {
+    "sentence_tokens" : [ "Materials", "and", "Methods", "." ]
+  }, {
+    "sentence_tokens" : [ "Data", "set", "description", "." ]
+  }, {
+    "sentence_tokens" : [ "Detailed", "information", "about", "the", "sample", "collection", "and", "data", "generation", "can", "be", "found", "here", "[", "1", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Briefly", ",", "tissues", "were", "collected", "from", "patients", "at", "the", "time", "of", "RYGB", "surgery", "at", "Massachusetts", "General", "Hospital", "between", "2000", "and", "2007", "as", "described", "previously", "[", "1", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Genomic", "DNA", "was", "extracted", "from", "liver", "tissues", ",", "total", "RNA", "was", "extracted", "from", "liver", ",", "SA", "and", "OA", "." ]
+  }, {
+    "sentence_tokens" : [ "RNA", "was", "converted", "to", "fluorescently", "labeled", "cRNA", "that", "was", "hybridized", "to", "custom", "44K", "DNA", "oligonucleotide", "microarrays", "manufactured", "by", "Agilent", "Technologies", "as", "described", "previously", "[", "2", "]", ",", "[", "23", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "custom", "array", "consists", "of", "4,720", "control", "probes", "and", "39,820", "non", "control", "oligonucleotides", "." ]
+  }, {
+    "sentence_tokens" : [ "Each", "DNA", "sample", "was", "genotyped", "on", "the", "Illumina", "650Y", "BeadChip", "array", "." ]
+  }, {
+    "sentence_tokens" : [ "Sex", "was", "confirmed", "using", "PLINK", "[", "24", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Identity", "by", "state", "(", "IBS", ")", "analysis", "was", "performed", "to", "identify", "related", "individuals", "." ]
+  }, {
+    "sentence_tokens" : [ "Eighteen", "parent", "offspring", ",", "6", "sibling", "and", "8", "second", "degree", "relatives", "were", "identified", ",", "4", "of", "these", "were", "related", "trios", "." ]
+  }, {
+    "sentence_tokens" : [ "28", "individuals", "were", "removed", "to", "eliminate", "IBS", "in", "the", "dataset", "." ]
+  }, {
+    "sentence_tokens" : [ "393", "subjects", ",", "which", "are", "self", "reported", "Caucasians", ",", "were", "included", "in", "our", "analysis", "for", "which", "genotyping", "and", "gene", "expression", "data", "was", "available", "from", "all", "three", "tissues.Demographic", "information", "including", "age", ",", "race", ",", "gender", ",", "height", ",", "type", "of", "surgery", "and", "year", "of", "surgery", "were", "collected", "for", "each", "patient", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "cohort", "was", "predominantly", "(", "88", "%", ")", "self", "reported", "'", "white", "'", "and", "female", "(", "75", "%", ")", "." ]
+  }, {
+    "sentence_tokens" : [ "Microarray", "Data", "." ]
+  }, {
+    "sentence_tokens" : [ "The", "expression", "data", "is", "publicly", "available", "at", "GEO", "super", "series", "Accession", "ID", "GSE24335", "and", "was", "previously", "described", "in", "[", "1", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "All", "microarray", "data", "utilized", "in", "this", "study", "is", "MIAME", "compliant", "." ]
+  }, {
+    "sentence_tokens" : [ "Genotyping", "data", "is", "available", "at", "dbGAP", "(", "https://dbgap.ncbi.nlm.nih.gov/", ")", "and", "all", "data", "is", "available", "upon", "request", "from", "Massachusetts", "General", "Hospital", "at", "http://www.samscores.org", "." ]
+  }, {
+    "sentence_tokens" : [ "eSNP", "identification", "." ]
+  }, {
+    "sentence_tokens" : [ "Cis", "and", "trans", "acting", "expression", "quantitative", "trait", "loci", "(", "eQTLs", ")", "were", "identified", "using", "a", "method", "similar", "to", "that", "previously", "described", "[", "3", "]", "." ]
+  }, {
+    "sentence_tokens" : [ "Briefly", ",", "eQTLs", "for", "gene", "expression", "traits", "were", "determined", "by", "identifying", "the", "SNP", "most", "strongly", "associated", "with", "each", "expression", "trait", "profiled", "on", "the", "array", "over", "all", "genotyped", "SNPs", "." ]
+  }, {
+    "sentence_tokens" : [ "A", "cis", "eQTL", "occurs", "if", "the", "SNP", "and", "the", "transcript", "are", "within", "1", "Mb", "from", "each", "other", "regardless", "of", "the", "transcriptional", "start", "or", "stop", "of", "the", "transcript", "." ]
+  }, {
+    "sentence_tokens" : [ "All", "other", "eQTLs", "that", "are", "not", "cis-", "are", "trans-eQTLs", "." ]
+  }, {
+    "sentence_tokens" : [ "Association", "was", "tested", "to", "all", "expression", "traits", "measured", "on", "the", "array", "." ]
+  }, {
+    "sentence_tokens" : [ "Only", "associations", "that", "exceed", "10", "%", "FDR", "are", "reported", "." ]
+  }, {
+    "sentence_tokens" : [ "FDR", "was", "estimated", "by", "permuting", "expression", "data", "." ]
+  } ]
+}
