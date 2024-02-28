@@ -30,7 +30,7 @@ tokenizer = AutoTokenizer.from_pretrained(transformer_name)
 
 # -1: debug
 
-configuration = 1
+configuration = 3
 labels = ['Negative_activation', 'Positive_activation', 'No_relation']
 
 def main():
@@ -44,15 +44,15 @@ def main():
 
     # test_data = read_test_data()
     data = data_list
-    
+    # data = maxpool(data)
     # Take the first 60% as train, next 20% as development, last 20% as test (Don't use test for now)
     train_df, eval_df = train_test_split(data, train_size=0.6)
     eval_df, test_df = train_test_split(eval_df, train_size=0.5)
 
 
-    print(f'train rows: {len(train_df):,}')
-    print(f'eval rows: {len(eval_df):,}')
-    print(f'test rows: {len(test_df):,}')
+    # print(f'train rows: {len(train_df):,}')
+    # print(f'eval rows: {len(eval_df):,}')
+    # print(f'test rows: {len(test_df):,}')
 
     # create train dataset
     train_df = pd.DataFrame(train_df)
@@ -69,6 +69,9 @@ def main():
         tokenize, batched=True,
         remove_columns=['event_indices', 'polarity', 'controller_indices', 'controlled_indices', 'trigger_indices']
     )   
+    
+    # TODO add condition for configuration 
+    maxpool(train_ds)
 
     eval_ds = ds['validation'].map(
         tokenize,
@@ -81,7 +84,6 @@ def main():
     config = AutoConfig.from_pretrained(transformer_name, num_labels = num_labels)
     model = (BertForSequenceClassification.from_pretrained(transformer_name, config=config))
     
-    # -- [10] --
     num_epochs = 2
     batch_size = 24 # change this for smaller data sets
     weight_decay = 0.01
@@ -96,7 +98,6 @@ def main():
         weight_decay=weight_decay,
     )
     
-    # -- [12] -- 
     trainer = Trainer(
         model=model,
         args=training_args,
@@ -105,6 +106,7 @@ def main():
         eval_dataset=eval_ds,
         tokenizer=tokenizer,
     )    
+
     print("\n", train_ds, "\n")
 
     train_output = trainer.train()
@@ -167,14 +169,14 @@ def add_entity_markers(data):
             new_sentence.insert(controlled_end + 1, "[/E1]" )
             new_sentence.insert(controller_start+2, "[E2]")
             new_sentence.insert(controller_end+3, "[/E2]")
-        e['sentence_tokens'] = new_sentence
-        print("\n--------")
-        print("Regulations")
-        print(controller_indices)
-        print(controlled_indices)
-        print("og sentence: ", og_sentence, "\n")
-        print("new sentence: ", new_sentence, "\n")
-        print()
+        # e['sentence_tokens'] = new_sentence
+        # print("\n--------")
+        # print("Regulations")
+        # print(controller_indices)
+        # print(controlled_indices)
+        # print("og sentence: ", og_sentence, "\n")
+        # print("new sentence: ", new_sentence, "\n")
+        # print()
 
 
     for e in data['hardInstances']:
@@ -195,13 +197,13 @@ def add_entity_markers(data):
 
             new_sentence.insert(start, "[E{}]".format(i+1))
             new_sentence.insert(end+1, "[/E{}]".format(i+1))
-        e['sentence_tokens'] = new_sentence
-        print("\n--------")
-        print("Hard Instances")
-        print(indices, "\n")
-        print("og sentence: ", og_sentence, "\n")
-        print("new sentence: ", new_sentence, "\n")
-        print()
+        # e['sentence_tokens'] = new_sentence
+        # print("\n--------")
+        # print("Hard Instances")
+        # print(indices, "\n")
+        # print("og sentence: ", og_sentence, "\n")
+        # print("new sentence: ", new_sentence, "\n")
+        # print()
 
     for e in data['withoutRegulations']:
         og_sentence = e['sentence_tokens']
@@ -223,15 +225,35 @@ def add_entity_markers(data):
             new_sentence.insert(end+1, "[/E{}]".format(i+1))
         e['sentence_tokens'] = new_sentence
 
-        print("\n--------")
-        print("Without Regulations")
-        print(indices, "\n")
-        print("og sentence: ", og_sentence, "\n")
-        print("new sentence: ", new_sentence, "\n")
-        print()
+        # print("\n--------")
+        # print("Without Regulations")
+        # print(indices, "\n")
+        # print("og sentence: ", og_sentence, "\n")
+        # print("new sentence: ", new_sentence, "\n")
+        # print()
+
 
     return data
 
+def maxpool(data):
+    config = AutoConfig.from_pretrained(transformer_name, num_labels = 3)
+    model = (BertForSequenceClassification.from_pretrained(transformer_name, config=config))
+
+    for item in data:
+        sentence =item['sentence_tokens']
+        for token in sentence: 
+            tokenized_token = tokenizer(token, return_tensors='pt')
+            print(tokenized_token) 
+            print()
+            x = model.forward(input_ids=tokenized_token['input_ids'])
+       
+
+
+
+
+
+    exit(0)
+        
 
 
 
@@ -270,11 +292,11 @@ def read_data():
         "emptySentences": []
         }
     
-    directory1 = 'sample_training_data'
-    directory2 = 'negative_training_data'
+    # directory1 = 'sample_training_data'
+    # directory2 = 'negative_training_data'
 
-    # directory1 = 'test_sample'
-    # directory2 = 'test_negative'
+    directory1 = 'test_sample'
+    directory2 = 'test_negative'
 
     negative_count = 0
     positive_count = 0
@@ -343,9 +365,9 @@ def read_data():
                         count += 1 
                     
 
-    print("Positive: ", positive_count)
-    print("Negative: ", negative_count)
-    print("None: ", none_count)
+    # print("Positive: ", positive_count)
+    # print("Negative: ", negative_count)
+    # print("None: ", none_count)
     
     # TODO remove duplicates & shuffle 
     
@@ -355,23 +377,6 @@ def read_data():
         data = data
     return data
 
-def remove_duplicates(list):
-    # concatenate all nested items into single list
-    single_list = []
-    for e1 in list:
-        for e2 in e1:
-            single_list.append(e2)
-
-    list_no_duplicates = []
-    seen = set()
-
-    for e in single_list:
-        joined_string = ''.join(e['sentence_tokens'])
-        if (joined_string not in seen):
-            list_no_duplicates.append(e)
-
-        seen.add(joined_string)
-    return list_no_duplicates
 
 def pretty_print(list):
     for e in list:
