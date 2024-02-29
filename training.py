@@ -24,6 +24,7 @@ from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
 from sklearn.model_selection import train_test_split
 from sklearn.svm import SVC
 import copy
+from sklearn import preprocessing
 
 transformer_name = 'bert-base-cased'
 tokenizer = AutoTokenizer.from_pretrained(transformer_name)
@@ -236,21 +237,40 @@ def add_entity_markers(data):
     return data
 
 def maxpool(data):
-    config = AutoConfig.from_pretrained(transformer_name, num_labels = 3)
-    model = (BertForSequenceClassification.from_pretrained(transformer_name, config=config))
-
+    config = AutoConfig.from_pretrained(transformer_name, num_labels = 3, output_hidden_states=True)
+    
+    model = BertForSequenceClassification.from_pretrained(transformer_name, config=config)
+    count = 0
     for item in data:
-        sentence =item['sentence_tokens']
-        for token in sentence: 
-            tokenized_token = tokenizer(token, return_tensors='pt')
-            print(tokenized_token) 
-            print()
-            x = model.forward(input_ids=tokenized_token['input_ids'])
-       
+        count += 1
+        sentence = item['sentence_tokens']
+        tokens = tokenizer(sentence, padding='longest', return_tensors='pt')
+        output = model.forward(input_ids=tokens['input_ids'], 
+                               attention_mask=tokens['attention_mask'], 
+                               token_type_ids=tokens['token_type_ids']
+                               )
+        hidden_states = output.hidden_states
+        print(output)
+        
+ 
 
+        if (count > 3):
+            break
+        # for token in sentence: 
+        #     tokenized = tokenizer(token, return_tensors='pt')
+        #     print(tokenized)
+        #     input_ids = tokenized['input_ids']
+        #     attention_mask = tokenized['attention_mask']
+        #     token_type_ids = tokenized['token_type_ids']
 
+        #     print(input_ids)
+        #     print(attention_mask)
+        #     print(token_type_ids)
 
-
+        #     output = model.forward(
+        #         input_ids=input_ids
+        #     )
+     
 
     exit(0)
         
