@@ -28,7 +28,9 @@ transformer_name = 'bert-base-cased'
 tokenizer = AutoTokenizer.from_pretrained(transformer_name)
 
 configuration = 3
-labels = ['Negative_activation', 'Positive_activation', 'No_relation']
+ignore_index = -100
+
+relation_types = ['Negative_activation', 'Positive_activation', 'No_relation']
 
 def main():
     init()
@@ -64,9 +66,16 @@ def main():
         tokenize, batched=True,
         remove_columns=['event_indices', 'polarity', 'controller_indices', 'controlled_indices', 'trigger_indices']
     )   
+    if configuration == 3:
+        maxpool(train_ds)
+    # train_ds = ds['train'].map(
+    #     tokenize_and_align_labels,
+    #     batched=True,
+    # )
+    # print(train_ds)
+    exit(0)
     
     # TODO add condition for configuration 
-    maxpool(train_ds)
 
     eval_ds = ds['validation'].map(
         tokenize,
@@ -75,7 +84,7 @@ def main():
     )
     eval_ds.to_pandas()
 
-    num_labels = len(labels)
+    num_labels = len(relation_types)
     config = AutoConfig.from_pretrained(transformer_name, num_labels = num_labels)
     model = (BertForSequenceClassification.from_pretrained(transformer_name, config=config))
     
@@ -121,7 +130,7 @@ def main():
 
     y_true = output.label_ids
     y_pred = np.argmax(output.predictions, axis=-1)
-    target_names = labels
+    target_names = relation_types
     print(classification_report(y_true, y_pred, target_names=target_names))
 
     print("y_true: ", y_true)
@@ -135,6 +144,43 @@ def main():
 def tokenize(examples):
     output = tokenizer(examples['sentence_tokens'], is_split_into_words=True, truncation=True)
     return output
+
+# def tokenize_and_align_labels(batch):
+    pad_tag = '<pad>'
+    # index_to_tag = batch['tags']
+    pretty_print(batch)
+    ignore_index = -100
+    labels = []
+    tokenized_inputs = tokenizer(
+        batch['sentence_tokens'],
+        truncation=True,
+        is_split_into_words=True,
+    )
+    for i, tags in enumerate(batch['tags']):
+        print(i)
+    #     label_ids = []
+    #     previous_word_id = None
+    #     #get word ids for current batch element
+    #     word_ids = tokenized_inputs.word_ids(batch_index=i)
+    #     #iterate over tokens in batch element
+    #     for word_id in word_ids:
+    #         if word_id is None or word_id == previous_word_id:
+    #             # ignore seen word ids
+    #             label_ids.append(ignore_index)
+    #         else:
+    #             # get tag id for corresponding word
+    #             tag_to_index = {t:i for i,t in enumerate(tags)}
+
+    #             tag_id = tag_to_index[tags[word_id]]
+    #             label_ids.append(tag_id)
+    #         previous_word_id = word_id
+    #     # save label ids for current batch element
+    #     labels.append(label_ids)
+    # # store labels together with the tokenizer output
+    # tokenized_inputs['labels'] = labels
+    # return tokenized_inputs
+            
+
 
 
 def add_entity_markers(data):
@@ -376,31 +422,48 @@ class BertForSequenceClassification(BertPreTrainedModel):
             token_type_ids=token_type_ids,
             **kwargs,
         )
-        indexes = dict()
-        for i in range(0,len(input_ids)):
-            tokens = tokenizer.convert_ids_to_tokens(input_ids[i])
-            if "[E1]" in tokens:
-                indexes["[E1]"] = i
-            if "[/E1]" in tokens:
-                indexes["[/E1]"] = i
-            if "[E2]" in tokens:
-                indexes["[E2]"] = i
-            if "[/E2]" in tokens:
-                indexes["[/E2]"] = i
 
-        # cls_outputs = outputs.last_hidden_state[:, 0, :] # concatenated outputs here
-        # cls_outputs = self.dropout(cls_outputs)
-        # logits = self.classifier(cls_outputs)
-        # add concatenation in here
-        sequence_output = self.dropout(outputs[0])
-        logits = self.classifier(sequence_output)
-        print(len(sequence_output))
-   
+        embeddings = outputs.last_hidden_state
+        print(len(embeddings))
+        # for e in embeddings:
+            # print(e)
+            # print()
+        # indexes = dict()
+        # for i in range(0,len(input_ids)):
+        #     tokens = tokenizer.convert_ids_to_tokens(input_ids[i])
+        #     if "[E1]" in tokens:
+        #         indexes["[E1]"] = i
+        #     if "[/E1]" in tokens:
+        #         indexes["[/E1]"] = i
+        #     if "[E2]" in tokens:
+        #         indexes["[E2]"] = i
+        #     if "[/E2]" in tokens:
+        #         indexes["[/E2]"] = i
+    
+        cls_outputs = outputs.last_hidden_state # concatenated outputs here # remove this
+        # iterate over all last hidden states - look for beginning e1, e2 etc
+        cls_outputs = self.dropout(cls_outputs) 
+        # logits = self.classifier(cls_outputs) # linear layer ?
+
+        # add concatenation in here   
+        # definitely a way more efficient way of doing this...
+        # e1start = cls_outputs[indexes.get("[E1]")]
+        # e1end = cls_outputs[indexes.get("[/E1]")]
+        # e2start = cls_outputs[indexes.get("[E2]")]
+        # e2end = cls_outputs[indexes.get("[/E2]")]
+        # ^^^ move this to above cls_outputs
+        # dont need cls outputs
+
+        # concatenated = torch.concatenate((e1start, e1end, e2start, e2end))
+        # concateneated is equivalent of cls outputs
+        
+        # labels = concatenated
 
         loss = None
         if labels is not None:
             loss_fn = nn.CrossEntropyLoss()
             loss = loss_fn(logits, labels)
+            print(loss)
         return SequenceClassifierOutput(
             loss=loss,
             logits=logits,
@@ -418,12 +481,12 @@ def maxpool(data):
     count = 0
     # token classification chapter in book (chapter 13.3)
     for item in data:
+        label = item['type']
+        print(label)
+        exit()
         count += 1
         sentence = item['sentence_tokens']
         tokens = tokenizer(sentence, padding=True, return_tensors='pt')
-        # print(sentence)
-
-        
 
         output = model.forward(input_ids=tokens['input_ids'], 
                                attention_mask=tokens['attention_mask'], 
