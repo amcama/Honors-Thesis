@@ -4,7 +4,7 @@ import random
 import torch
 import numpy as np
 from tqdm.notebook import tqdm
-from datasets import Dataset, DatasetDict, load_metric
+from datasets import Dataset, DatasetDict
 from transformers import AutoTokenizer
 from torch import nn
 from transformers.modeling_outputs import SequenceClassifierOutput
@@ -16,26 +16,34 @@ from transformers import Trainer
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report
 import sklearn.metrics as metrics
-from sklearn.metrics import ConfusionMatrixDisplay
-import matplotlib.pyplot as plt
-from sklearn.datasets import make_classification
-from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
 from sklearn.model_selection import train_test_split
-from sklearn.svm import SVC
 import copy
-import tensorflow as tf
+import os
+from transformers import DataCollatorForTokenClassification
+
 
 transformer_name = 'bert-base-cased'
 tokenizer = AutoTokenizer.from_pretrained(transformer_name)
 
 configuration = 3
 ignore_index = -100
+classes = ['Negative_activation', 'Positive_activation', 'No_relation']
 
-relation_types = ['Negative_activation', 'Positive_activation', 'No_relation']
+TOKENIZERS_PARALLELISM=False
+os.environ["TOKENIZERS_PARALLELISM"] = "false"
 
 def main():
     init()
+    config = AutoConfig.from_pretrained(transformer_name, num_labels = len(classes), output_hidden_states=True)
+    global model
+    model = (BertForSequenceClassification.from_pretrained(transformer_name, config=config))
+    tokenizer.add_special_tokens({'additional_special_tokens': ['[E1]','[/E1]', '[E2]', '[/E2]']})
+    model.resize_token_embeddings(len(tokenizer))
+
     data = read_data()
+    maxpool(data['regulations']) # should i be doing this as well for data without entity markers/multiple entity markers? 
+
+
     x = data.values()
     data_list = []
     for e in x:
@@ -48,9 +56,9 @@ def main():
     train_df, eval_df = train_test_split(data, train_size=0.6)
     eval_df, test_df = train_test_split(eval_df, train_size=0.5)
 
-    # print(f'train rows: {len(train_df):,}')
-    # print(f'eval rows: {len(eval_df):,}')
-    # print(f'test rows: {len(test_df):,}')
+    print(f'train rows: {len(train_df):,}')
+    print(f'eval rows: {len(eval_df):,}')
+    print(f'test rows: {len(test_df):,}')
 
     # create train dataset
     train_df = pd.DataFrame(train_df)
@@ -62,15 +70,15 @@ def main():
     ds['validation'] = Dataset.from_pandas(eval_df)
     ds['test'] = Dataset.from_pandas(test_df)
 
+    
 
     train_ds = ds['train'].map(
         tokenize, batched=True,
         remove_columns=['event_indices', 'polarity', 'controller_indices', 'controlled_indices', 'trigger_indices']
     )   
-    if configuration == 3:
-        maxpool(train_ds)
-
-    exit(0)
+    # if configuration == 3:
+    #     maxpool(train_ds)
+    # exit(0)
     
     # TODO add condition for configuration 
 
@@ -81,9 +89,6 @@ def main():
     )
     eval_ds.to_pandas()
 
-    num_labels = len(relation_types)
-    config = AutoConfig.from_pretrained(transformer_name, num_labels = num_labels)
-    model = (BertForSequenceClassification.from_pretrained(transformer_name, config=config))
     
     num_epochs = 2
     batch_size = 24 # change this for smaller data sets
@@ -98,10 +103,12 @@ def main():
         evaluation_strategy='epoch',
         weight_decay=weight_decay,
     )
-    
+
+    # data_collator = DataCollatorForTokenClassification(tokenizer)
     trainer = Trainer(
         model=model,
         args=training_args,
+        # data_collator=data_collator,
         compute_metrics=compute_metrics,
         train_dataset=train_ds,
         eval_dataset=eval_ds,
@@ -109,9 +116,9 @@ def main():
     )    
 
     print("\n", train_ds, "\n")
-
+    # exit(0)
     train_output = trainer.train()
-
+    exit(0)
     print("> Train Output:\n", train_output, "\n")
 
     test_ds = ds['test'].map(
@@ -127,7 +134,7 @@ def main():
 
     y_true = output.label_ids
     y_pred = np.argmax(output.predictions, axis=-1)
-    target_names = relation_types
+    target_names = classes
     print(classification_report(y_true, y_pred, target_names=target_names))
 
     print("y_true: ", y_true)
@@ -375,6 +382,7 @@ class BertForSequenceClassification(BertPreTrainedModel):
         self.init_weights()
         
     def forward(self, input_ids=None, attention_mask=None, token_type_ids=None, labels=None, **kwargs):
+        print("FORWARDING")
         outputs = self.bert(
             input_ids,
             attention_mask=attention_mask,
@@ -399,8 +407,14 @@ class BertForSequenceClassification(BertPreTrainedModel):
         e1end = embeddings[entity_indexes.get("[/E1]")]
         e2start = embeddings[entity_indexes.get("[E2]")]
         e2end = embeddings[entity_indexes.get("[/E2]")]
-     
+
+        # error here
+        print(labels)
+        print(type(labels[0]))
+        # error here when running trainer.train()
         labels = torch.FloatTensor(labels)
+        print(labels)
+
         concatenated = torch.concat((e1start, e1end, e2start, e2end))
         sequence_output = self.dropout(concatenated) 
         logits = self.classifier(sequence_output) # linear layer? 
@@ -409,9 +423,13 @@ class BertForSequenceClassification(BertPreTrainedModel):
         if labels is not None:
             loss_fn = nn.CrossEntropyLoss()
             inputs = logits.view(-1, self.num_labels)
-            targets = labels.repeat(logits.size(0), 1) # fill tensor with labels 
-            # print("inputs shape: ", inputs.shape)
-            # print("targets shape: ", targets.shape)
+
+            # print(inputs.size(0))
+            targets = labels.repeat(inputs.size(0), 1) # fill tensor with labels 
+           
+            # print("inputs shape: ", inputs.dtype)
+            # print("targets shape: ", targets.dtype)
+            # print()
             loss = loss_fn(inputs, targets)
         return SequenceClassifierOutput(
             loss=loss,
@@ -423,32 +441,19 @@ class BertForSequenceClassification(BertPreTrainedModel):
     
 
 def maxpool(data):
-    config = AutoConfig.from_pretrained(transformer_name, num_labels = 3, output_hidden_states=True)
-    tokenizer.add_special_tokens({'additional_special_tokens': ['[E1]','[/E1]', '[E2]', '[/E2]']})
-    model = BertForSequenceClassification.from_pretrained(transformer_name, config=config)
-    model.resize_token_embeddings(len(tokenizer))
-
-    count = 0
     for item in data:
         label = item['label']
-        count += 1
         sentence = item['sentence_tokens']
         tokens = tokenizer(sentence, padding=True, return_tensors='pt')
-
         output = model.forward(input_ids=tokens['input_ids'], 
                                attention_mask=tokens['attention_mask'], 
                                token_type_ids=tokens['token_type_ids'],
                                labels=[0,1,2]
                                )
-        hidden_states = output.hidden_states
-        print(hidden_states)
-
-        if (count > 1):
-            break
-        exit(0)
-
+        hidden_states = output.hidden_states 
 
 def compute_metrics(eval_pred):
+    print("COMPUTING METRICS")
     y_true = eval_pred.label_ids
     y_pred = np.argmax(eval_pred.predictions, axis=-1)
     return {'accuracy': accuracy_score(y_true, y_pred)}
