@@ -369,7 +369,7 @@ class BertForSequenceClassification(BertPreTrainedModel):
     def __init__(self, config):
         super().__init__(config)
         self.num_labels = config.num_labels
-        self.bert = BertModel(config, add_pooling_layer=False) # what should add_pooling_layer be?
+        self.bert = BertModel(config, add_pooling_layer=False)
         self.dropout = nn.Dropout(config.hidden_dropout_prob)
         self.classifier = nn.Linear(config.hidden_size, config.num_labels)
         self.init_weights()
@@ -401,20 +401,24 @@ class BertForSequenceClassification(BertPreTrainedModel):
         e2end = embeddings[entity_indexes.get("[/E2]")]
      
         labels = torch.FloatTensor(labels)
-
         concatenated = torch.concat((e1start, e1end, e2start, e2end))
-        concatenated = self.dropout(concatenated) 
-        logits = self.classifier(concatenated) # linear layer? 
-        # print(labels)
+        sequence_output = self.dropout(concatenated) 
+        logits = self.classifier(sequence_output) # linear layer? 
+
         loss = None
         if labels is not None:
             loss_fn = nn.CrossEntropyLoss()
-            inputs = logits
-            targets = concatenated
-            print(inputs.shape)
-            print(targets.shape)
-            loss = loss_fn(logits, targets)
-            
+            inputs = logits.view(-1, self.num_labels)
+            targets = labels.repeat(logits.size(0), 1) # fill tensor with labels 
+            # print("inputs shape: ", inputs.shape)
+            # print("targets shape: ", targets.shape)
+            loss = loss_fn(inputs, targets)
+        return SequenceClassifierOutput(
+            loss=loss,
+            logits=logits,
+            hidden_states=outputs.hidden_states,
+            attentions=outputs.attentions
+        )
 
     
 
@@ -434,9 +438,10 @@ def maxpool(data):
         output = model.forward(input_ids=tokens['input_ids'], 
                                attention_mask=tokens['attention_mask'], 
                                token_type_ids=tokens['token_type_ids'],
-                               labels=label
+                               labels=[0,1,2]
                                )
-        # hidden_states = output.hidden_states
+        hidden_states = output.hidden_states
+        print(hidden_states)
 
         if (count > 1):
             break
