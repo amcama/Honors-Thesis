@@ -41,7 +41,7 @@ def main():
     model.resize_token_embeddings(len(tokenizer))
 
     data = read_data()
-    maxpool(data['regulations']) # should i be doing this as well for data without entity markers/multiple entity markers? 
+    # maxpool(data['regulations']) # should i be doing this as well for data without entity markers/multiple entity markers? 
 
 
     x = data.values()
@@ -76,9 +76,7 @@ def main():
         tokenize, batched=True,
         remove_columns=['event_indices', 'polarity', 'controller_indices', 'controlled_indices', 'trigger_indices']
     )   
-    # if configuration == 3:
-    #     maxpool(train_ds)
-    # exit(0)
+
     
     # TODO add condition for configuration 
 
@@ -103,7 +101,6 @@ def main():
         evaluation_strategy='epoch',
         weight_decay=weight_decay,
     )
-
     # data_collator = DataCollatorForTokenClassification(tokenizer)
     trainer = Trainer(
         model=model,
@@ -149,7 +146,6 @@ def tokenize(examples):
     output = tokenizer(examples['sentence_tokens'], is_split_into_words=True, truncation=True)
     return output
             
-
 
 def add_entity_markers(data):
     count = 0
@@ -371,6 +367,40 @@ def pretty_print(list):
     for e in list:
         print(e, "\n")
 
+def maxpool(e1, e2, e3, e4):
+    # replace concat with a function that does max pooling of the four
+    # combine embeddings in 3 dif ways : could do max pooling and have an embedding thats the size of each individual one
+    # could also do an average
+    # reduce the size of the linear layer input because now its 4 times the size of hidden state and needs to be og size
+    v = 1
+    if (v == 0):
+        print("-- max pool function --")
+        print("individual embedding shape: ", e1.shape)  # x.shape = [92, 768]
+        
+        # concatenate the 4 embeddings 
+        x = torch.cat((e1, e2, e3, e4))  # x.shape = [368, 768]
+        print(x.shape) 
+        
+        # transpose / switch axises bc I want to maxpool along the 2nd dimension (368)
+        x = torch.transpose(x, 0, 1)  # x.shape = [768, 368]
+        print(x.shape)
+
+        x = torch.max_pool1d(x, kernel_size=4)  # x.shape = [768, 92]
+        print(x.shape)
+
+        # un-transpose
+        x = torch.transpose(x, 0, 1)  # x.shape = [92, 768]
+        print(x.shape)
+        return x
+
+    if (v == 1):
+        stacked_embeddings = torch.stack([e1,e2,e3,e4], dim=0)  # size = [4, 92, 768])
+        # maxpool along 0 dimension
+        maxpooled,_ = torch.max(stacked_embeddings, dim=0) # shape = [92, 768]
+        return maxpooled
+     
+
+
 # https://github.com/huggingface/transformers/blob/65659a29cf5a079842e61a63d57fa24474288998/src/transformers/models/bert/modeling_bert.py#L1486
 class BertForSequenceClassification(BertPreTrainedModel):
     def __init__(self, config):
@@ -382,13 +412,13 @@ class BertForSequenceClassification(BertPreTrainedModel):
         self.init_weights()
         
     def forward(self, input_ids=None, attention_mask=None, token_type_ids=None, labels=None, **kwargs):
-        print("FORWARDING")
         outputs = self.bert(
             input_ids,
             attention_mask=attention_mask,
             token_type_ids=token_type_ids,
             **kwargs,
         )
+
         entity_indexes = dict()
         for i in range(0,len(input_ids)):
             tokens = tokenizer.convert_ids_to_tokens(input_ids[i])
@@ -402,35 +432,36 @@ class BertForSequenceClassification(BertPreTrainedModel):
                 entity_indexes["[/E2]"] = i
 
         embeddings = outputs.last_hidden_state
-
         e1start = embeddings[entity_indexes.get("[E1]")]
         e1end = embeddings[entity_indexes.get("[/E1]")]
         e2start = embeddings[entity_indexes.get("[E2]")]
         e2end = embeddings[entity_indexes.get("[/E2]")]
+        
+        # replace concat with a function that does max pooling of the four
+        # combine embeddings in 3 dif ways : could do max pooling and have an embedding thats the size of each indiidual one
+        # could also do an average
+        # reduce the size of the linear layer input because now its 4 times the size of hidden state and needs to be og size
+          
+        maxpooled = maxpool(e1start, e1end, e2start, e2end)
+        print(maxpooled.shape)
 
-        # error here
-        print(labels)
-        print(type(labels[0]))
-        # error here when running trainer.train()
-        labels = torch.FloatTensor(labels)
-        print(labels)
-
-        concatenated = torch.concat((e1start, e1end, e2start, e2end))
-        sequence_output = self.dropout(concatenated) 
+        sequence_output = self.dropout(maxpooled) 
         logits = self.classifier(sequence_output) # linear layer? 
+
+        print(logits.shape)
 
         loss = None
         if labels is not None:
             loss_fn = nn.CrossEntropyLoss()
-            inputs = logits.view(-1, self.num_labels)
+            inputs = logits.view(-1)
+            targets = labels.view(-1)
+            # inputs = logits.view(-1, self.num_labels)
+            # targets = labels.view(-1)
 
-            # print(inputs.size(0))
-            targets = labels.repeat(inputs.size(0), 1) # fill tensor with labels 
-           
-            # print("inputs shape: ", inputs.dtype)
-            # print("targets shape: ", targets.dtype)
-            # print()
-            loss = loss_fn(inputs, targets)
+            print("Inputs Shape: ", inputs.shape)
+            print("Targets Shape: ", targets.shape)
+            print()
+            loss = loss_fn(inputs, targets)            
         return SequenceClassifierOutput(
             loss=loss,
             logits=logits,
@@ -438,19 +469,6 @@ class BertForSequenceClassification(BertPreTrainedModel):
             attentions=outputs.attentions
         )
 
-    
-
-def maxpool(data):
-    for item in data:
-        label = item['label']
-        sentence = item['sentence_tokens']
-        tokens = tokenizer(sentence, padding=True, return_tensors='pt')
-        output = model.forward(input_ids=tokens['input_ids'], 
-                               attention_mask=tokens['attention_mask'], 
-                               token_type_ids=tokens['token_type_ids'],
-                               labels=[0,1,2]
-                               )
-        hidden_states = output.hidden_states 
 
 def compute_metrics(eval_pred):
     print("COMPUTING METRICS")
