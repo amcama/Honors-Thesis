@@ -101,11 +101,10 @@ def main():
         evaluation_strategy='epoch',
         weight_decay=weight_decay,
     )
-    # data_collator = DataCollatorForTokenClassification(tokenizer)
     trainer = Trainer(
         model=model,
         args=training_args,
-        # data_collator=data_collator,
+        # data_collator=,
         compute_metrics=compute_metrics,
         train_dataset=train_ds,
         eval_dataset=eval_ds,
@@ -372,32 +371,14 @@ def maxpool(e1, e2, e3, e4):
     # combine embeddings in 3 dif ways : could do max pooling and have an embedding thats the size of each individual one
     # could also do an average
     # reduce the size of the linear layer input because now its 4 times the size of hidden state and needs to be og size
-    v = 1
-    if (v == 0):
-        print("-- max pool function --")
-        print("individual embedding shape: ", e1.shape)  # x.shape = [92, 768]
-        
-        # concatenate the 4 embeddings 
-        x = torch.cat((e1, e2, e3, e4))  # x.shape = [368, 768]
-        print(x.shape) 
-        
-        # transpose / switch axises bc I want to maxpool along the 2nd dimension (368)
-        x = torch.transpose(x, 0, 1)  # x.shape = [768, 368]
-        print(x.shape)
-
-        x = torch.max_pool1d(x, kernel_size=4)  # x.shape = [768, 92]
-        print(x.shape)
-
-        # un-transpose
-        x = torch.transpose(x, 0, 1)  # x.shape = [92, 768]
-        print(x.shape)
-        return x
-
-    if (v == 1):
-        stacked_embeddings = torch.stack([e1,e2,e3,e4], dim=0)  # size = [4, 92, 768])
-        # maxpool along 0 dimension
-        maxpooled,_ = torch.max(stacked_embeddings, dim=0) # shape = [92, 768]
-        return maxpooled
+    # print("individual embeddings shape: ", e1.shape)
+    
+    # combine embeddings
+    concatenated = torch.stack((e1,e2,e3,e4))
+    maxpooled = torch.max_pool1d(concatenated, kernel_size=1) # what should kernel size be?
+    print(maxpooled.shape)
+    return maxpooled
+    
      
 
 
@@ -418,49 +399,57 @@ class BertForSequenceClassification(BertPreTrainedModel):
             token_type_ids=token_type_ids,
             **kwargs,
         )
-
-        entity_indexes = dict()
-        for i in range(0,len(input_ids)):
-            tokens = tokenizer.convert_ids_to_tokens(input_ids[i])
-            if "[E1]" in tokens:
-                entity_indexes["[E1]"] = i
-            if "[/E1]" in tokens:
-                entity_indexes["[/E1]"] = i
-            if "[E2]" in tokens:
-                entity_indexes["[E2]"] = i
-            if "[/E2]" in tokens:
-                entity_indexes["[/E2]"] = i
-
         embeddings = outputs.last_hidden_state
-        e1start = embeddings[entity_indexes.get("[E1]")]
-        e1end = embeddings[entity_indexes.get("[/E1]")]
-        e2start = embeddings[entity_indexes.get("[E2]")]
-        e2end = embeddings[entity_indexes.get("[/E2]")]
         
+        final_vector = torch.Tensor()
+        
+        for i in range(0, len(input_ids)):
+            tokens = tokenizer.convert_ids_to_tokens(input_ids[i])
+            # print()
+            # print(tokens)
+            entity_indexes = dict()
+            for j in range(0, len(tokens)):
+                if (tokens[j] == "[E1]"):
+                    entity_indexes["[E1]"] = j
+                if (tokens[j] == "[/E1]"):
+                    entity_indexes["[/E1]"] = j
+                if (tokens[j] == "[E2]"):
+                    entity_indexes["[E2]"] = j
+                if (tokens[j] == "[/E2]"):
+                    entity_indexes["[/E2]"] = j
+            if len(entity_indexes) < 4:
+                pass # TODO 
+            else:
+                e1 = embeddings[i][entity_indexes.get("[E1]")]
+                e2 = embeddings[i][entity_indexes.get("[/E1]")]
+                e3 = embeddings[i][entity_indexes.get("[E2]")]
+                e4 = embeddings[i][entity_indexes.get("[/E2]")] 
+                returned = maxpool(e1, e2, e3, e4)
+                final_vector = torch.concat((final_vector, returned))
+                # print(final_vector.shape)                
+
         # replace concat with a function that does max pooling of the four
         # combine embeddings in 3 dif ways : could do max pooling and have an embedding thats the size of each indiidual one
         # could also do an average
         # reduce the size of the linear layer input because now its 4 times the size of hidden state and needs to be og size
-          
-        maxpooled = maxpool(e1start, e1end, e2start, e2end)
-        print(maxpooled.shape)
-
-        sequence_output = self.dropout(maxpooled) 
+        
+        sequence_output = self.dropout(final_vector) 
         logits = self.classifier(sequence_output) # linear layer? 
-
-        print(logits.shape)
 
         loss = None
         if labels is not None:
             loss_fn = nn.CrossEntropyLoss()
+
+            print("logits shape: ", logits.shape)
+            print("labels shape: ", labels.shape)
+
             inputs = logits.view(-1)
             targets = labels.view(-1)
-            # inputs = logits.view(-1, self.num_labels)
-            # targets = labels.view(-1)
 
             print("Inputs Shape: ", inputs.shape)
             print("Targets Shape: ", targets.shape)
             print()
+
             loss = loss_fn(inputs, targets)            
         return SequenceClassifierOutput(
             loss=loss,
