@@ -29,8 +29,8 @@ configuration = 3
 ignore_index = -100
 classes = ['Negative_activation', 'Positive_activation', 'No_relation']
 
-TOKENIZERS_PARALLELISM=False
-os.environ["TOKENIZERS_PARALLELISM"] = "false"
+# TOKENIZERS_PARALLELISM=False
+# os.environ["TOKENIZERS_PARALLELISM"] = "false"
 
 def main():
     init()
@@ -173,6 +173,7 @@ def add_entity_markers(data):
             new_sentence.insert(controller_start+2, "[E2]")
             new_sentence.insert(controller_end+3, "[/E2]")
         e['sentence_tokens'] = new_sentence
+
         # print("\n--------")
         # print("Regulations")
         # print(controller_indices)
@@ -236,7 +237,6 @@ def add_entity_markers(data):
         # print("new sentence: ", new_sentence, "\n")
         # print()
 
-
     return data
 
 
@@ -296,10 +296,8 @@ def read_data():
                     for e in file:
                         if (e['type'] == "Negative_activation" or e['type'] == "Negative_regulation"):
                                 e['label'] = 0
-                                negative_count += 1
                         elif (e['type'] == "Positive_activation" or e['type'] == "Positive_regulation"):
                                 e['label'] = 1
-                                positive_count += 1
                 
                         data['regulations'].append(e)
 
@@ -311,50 +309,59 @@ def read_data():
                     regulations = file['regulations']
                     hard_instances = file['hardInstances']
                     without_regulations = file['withoutRegulations']
-                    empty_sentences = file['emptySentences']
+                    # ignore empty sentences
+                    # empty_sentences = file['emptySentences'] 
 
                     for e in regulations:
                         if (e['type']):
                             if (e['type'] == "Negative_activation" or e['type'] == "Negative_regulation"):
                                 e['label'] = 0
-                                negative_count += 1
-                            
                             elif (e['type'] == "Positive_activation" or e['type'] == "Positive_regulation"):
                                 e['label'] = 1
-                                positive_count += 1
-                            
                             else:
                                 raise Exception("Unknown label in regulations data!")
                             data['regulations'].append(e)
-                            count += 1
                         else:
                             raise Exception("Unknown label in regulations data!")
 
                     for e in hard_instances:
-                        e['label'] = 0
-                        data['hardInstances'].append(e)
-                        count += 1
-                        negative_count += 1 
+                        entity_indices = e['entities_indices']
+                        if (len(entity_indices) <= 1):
+                            pass
+                        elif (len(entity_indices) > 2):
+                            for i in range(0, len(e['entities_indices']) - 1):
+                                new_entry = {
+                                    "sentence_tokens": e['sentence_tokens'], 
+                                    "entities_indices": [e['entities_indices'][i], e['entities_indices'][i+1]]}
+                                new_entry['label'] = 0
+                                data['hardInstances'].append(new_entry)
+                        else: 
+                            e['label'] = 0
+                            data['hardInstances'].append(e)
 
                     for e in without_regulations:
-                        e['label'] = 2
-                        none_count += 1
-                        data['withoutRegulations'].append(e)
-                        count += 1
-
-                    for e in empty_sentences:
-                        e['label'] = 2
-                        none_count += 1
-                        data['emptySentences'].append(e)
-                        count += 1 
-                    
-
-    # print("Positive: ", positive_count)
-    # print("Negative: ", negative_count)
-    # print("None: ", none_count)
+                        entity_indices = e['entities_indices']
+                        if (len(entity_indices) <= 1):
+                            pass
+                        elif (len(entity_indices) > 2):
+                            for i in range(0, len(e['entities_indices'])-1):
+                                new_entry = {
+                                    "sentence_tokens": e['sentence_tokens'], 
+                                    "entities_indices": [e['entities_indices'][i], e['entities_indices'][i+1]]}
+                                new_entry['label'] = 2
+                                data['withoutRegulations'].append(new_entry)
+                        else: # 2 entities
+                            e['label'] = 2
+                            data['withoutRegulations'].append(e)
+                            count += 1
+                        
+                    # for e in empty_sentences:
+                    #     e['label'] = 2
+                    #     none_count += 1
+                    #     data['emptySentences'].append(e)
+                    #     count += 1 
     
-    # TODO remove duplicates & shuffle 
-    
+    # pretty_print(hard_instances)
     if (configuration != 1):
         data = add_entity_markers(data)
     else:
@@ -366,17 +373,22 @@ def pretty_print(list):
     for e in list:
         print(e, "\n")
 
+
 def maxpool(e1, e2, e3, e4):
     # replace concat with a function that does max pooling of the four
     # combine embeddings in 3 dif ways : could do max pooling and have an embedding thats the size of each individual one
     # could also do an average
     # reduce the size of the linear layer input because now its 4 times the size of hidden state and needs to be og size
-    # print("individual embeddings shape: ", e1.shape)
+    # print("e1 shape: ", e1.shape)
+    # print("e2 shape: ", e2.shape)
+    # print("e3 shape: ", e3.shape)
+    # print("e4 shape: ", e4.shape)
     
     # combine embeddings
-    concatenated = torch.stack((e1,e2,e3,e4))
-    maxpooled = torch.max_pool1d(concatenated, kernel_size=1) # what should kernel size be?
-    print(maxpooled.shape)
+    concatenated = torch.stack((e1, e2, e3, e4))
+
+    maxpooled = torch.max_pool1d(concatenated, kernel_size=4) # what should kernel size be?
+    maxpooled = maxpooled.view(-1)
     return maxpooled
     
      
@@ -399,14 +411,20 @@ class BertForSequenceClassification(BertPreTrainedModel):
             token_type_ids=token_type_ids,
             **kwargs,
         )
+        print("\n\n--- FORWARDING ---")
+        print(len(input_ids))
+        print("inputs_ids shape: ", input_ids.shape)
+
         embeddings = outputs.last_hidden_state
+        print("embeddings shape: ", embeddings.shape)
         
-        final_vector = torch.Tensor()
-        
+        final_vector = torch.empty(0)
+
         for i in range(0, len(input_ids)):
             tokens = tokenizer.convert_ids_to_tokens(input_ids[i])
             # print()
             # print(tokens)
+            # print(len(tokens))
             entity_indexes = dict()
             for j in range(0, len(tokens)):
                 if (tokens[j] == "[E1]"):
@@ -417,16 +435,19 @@ class BertForSequenceClassification(BertPreTrainedModel):
                     entity_indexes["[E2]"] = j
                 if (tokens[j] == "[/E2]"):
                     entity_indexes["[/E2]"] = j
-            if len(entity_indexes) < 4:
-                pass # TODO 
-            else:
-                e1 = embeddings[i][entity_indexes.get("[E1]")]
-                e2 = embeddings[i][entity_indexes.get("[/E1]")]
-                e3 = embeddings[i][entity_indexes.get("[E2]")]
-                e4 = embeddings[i][entity_indexes.get("[/E2]")] 
-                returned = maxpool(e1, e2, e3, e4)
-                final_vector = torch.concat((final_vector, returned))
-                # print(final_vector.shape)                
+
+            e1 = embeddings[i][entity_indexes.get("[E1]")]
+            e2 = embeddings[i][entity_indexes.get("[/E1]")]
+            e3 = embeddings[i][entity_indexes.get("[E2]")]
+            e4 = embeddings[i][entity_indexes.get("[/E2]")] 
+
+            returned = maxpool(e1, e2, e3, e4)
+            # print("after maxpooling shape: ", returned.shape)
+            final_vector = torch.cat((returned, final_vector))
+            # print("final_vector shape: ", final_vector.shape)    
+        final_vector = final_vector.view(len(input_ids), -1)   
+        print("\n\nfinal_vector shape: ", final_vector.shape)         
+        # exit(0)       
 
         # replace concat with a function that does max pooling of the four
         # combine embeddings in 3 dif ways : could do max pooling and have an embedding thats the size of each indiidual one
@@ -435,22 +456,25 @@ class BertForSequenceClassification(BertPreTrainedModel):
         
         sequence_output = self.dropout(final_vector) 
         logits = self.classifier(sequence_output) # linear layer? 
-
+        print(logits)
         loss = None
         if labels is not None:
             loss_fn = nn.CrossEntropyLoss()
 
-            print("logits shape: ", logits.shape)
-            print("labels shape: ", labels.shape)
+            # print("logits shape: ", logits.shape)
+            # print("labels shape: ", labels.shape, "\n")
 
-            inputs = logits.view(-1)
+            inputs = logits.view(-1, self.num_labels)
             targets = labels.view(-1)
+            # inputs = logits.view(-1)
+            # targets = labels.view(-1)
 
             print("Inputs Shape: ", inputs.shape)
             print("Targets Shape: ", targets.shape)
             print()
 
             loss = loss_fn(inputs, targets)            
+            print("loss = ", loss)
         return SequenceClassifierOutput(
             loss=loss,
             logits=logits,
