@@ -3,6 +3,7 @@ import pandas as pd
 import random
 import torch
 import numpy as np
+import torch.utils
 from tqdm.notebook import tqdm
 from datasets import Dataset, DatasetDict
 from transformers import AutoTokenizer
@@ -25,8 +26,7 @@ from transformers import DataCollatorForTokenClassification
 transformer_name = 'bert-base-cased'
 tokenizer = AutoTokenizer.from_pretrained(transformer_name)
 
-configuration = 3
-ignore_index = -100
+configuration = 3 # configuration for maxpooling
 classes = ['Negative_activation', 'Positive_activation', 'No_relation']
 
 # TOKENIZERS_PARALLELISM=False
@@ -41,7 +41,6 @@ def main():
     model.resize_token_embeddings(len(tokenizer))
 
     data = read_data()
-    # maxpool(data['regulations']) # should i be doing this as well for data without entity markers/multiple entity markers? 
 
 
     x = data.values()
@@ -71,13 +70,12 @@ def main():
     ds['test'] = Dataset.from_pandas(test_df)
 
     
-
     train_ds = ds['train'].map(
         tokenize, batched=True,
         remove_columns=['event_indices', 'polarity', 'controller_indices', 'controlled_indices', 'trigger_indices']
     )   
 
-    
+
     # TODO add condition for configuration 
 
     eval_ds = ds['validation'].map(
@@ -101,20 +99,23 @@ def main():
         evaluation_strategy='epoch',
         weight_decay=weight_decay,
     )
+
+    data_collator = DataCollatorForTokenClassification(tokenizer)
+
     trainer = Trainer(
         model=model,
         args=training_args,
-        # data_collator=,
+        # data_collator=data_collator,
         compute_metrics=compute_metrics,
         train_dataset=train_ds,
         eval_dataset=eval_ds,
         tokenizer=tokenizer,
     )    
-
+    
     print("\n", train_ds, "\n")
     # exit(0)
     train_output = trainer.train()
-    exit(0)
+    exit(0) # stop here for debugging
     print("> Train Output:\n", train_output, "\n")
 
     test_ds = ds['test'].map(
@@ -383,11 +384,10 @@ def maxpool(e1, e2, e3, e4):
     # print("e2 shape: ", e2.shape)
     # print("e3 shape: ", e3.shape)
     # print("e4 shape: ", e4.shape)
-    
+
     # combine embeddings
     concatenated = torch.stack((e1, e2, e3, e4))
-
-    maxpooled = torch.max_pool1d(concatenated, kernel_size=4) # what should kernel size be?
+    maxpooled = torch.max_pool1d(concatenated, kernel_size=4)
     maxpooled = maxpooled.view(-1)
     return maxpooled
     
@@ -411,12 +411,12 @@ class BertForSequenceClassification(BertPreTrainedModel):
             token_type_ids=token_type_ids,
             **kwargs,
         )
-        print("\n\n--- FORWARDING ---")
-        print(len(input_ids))
-        print("inputs_ids shape: ", input_ids.shape)
+        # print("\n\n--- FORWARDING ---")
+
+        # print("inputs_ids shape: ", input_ids.shape)
 
         embeddings = outputs.last_hidden_state
-        print("embeddings shape: ", embeddings.shape)
+        # print("embeddings shape: ", embeddings.shape)
         
         final_vector = torch.empty(0)
 
@@ -436,17 +436,19 @@ class BertForSequenceClassification(BertPreTrainedModel):
                 if (tokens[j] == "[/E2]"):
                     entity_indexes["[/E2]"] = j
 
+            # get each embedding for each entity marker
             e1 = embeddings[i][entity_indexes.get("[E1]")]
             e2 = embeddings[i][entity_indexes.get("[/E1]")]
             e3 = embeddings[i][entity_indexes.get("[E2]")]
             e4 = embeddings[i][entity_indexes.get("[/E2]")] 
 
-            returned = maxpool(e1, e2, e3, e4)
+            returned = maxpool(e1, e2, e3, e4) 
             # print("after maxpooling shape: ", returned.shape)
             final_vector = torch.cat((returned, final_vector))
             # print("final_vector shape: ", final_vector.shape)    
+
         final_vector = final_vector.view(len(input_ids), -1)   
-        print("\n\nfinal_vector shape: ", final_vector.shape)         
+        # print("\n\nfinal_vector shape: ", final_vector.shape)         
         # exit(0)       
 
         # replace concat with a function that does max pooling of the four
@@ -455,26 +457,22 @@ class BertForSequenceClassification(BertPreTrainedModel):
         # reduce the size of the linear layer input because now its 4 times the size of hidden state and needs to be og size
         
         sequence_output = self.dropout(final_vector) 
-        logits = self.classifier(sequence_output) # linear layer? 
-        print(logits)
+        logits = self.classifier(sequence_output)
+
         loss = None
         if labels is not None:
             loss_fn = nn.CrossEntropyLoss()
-
             # print("logits shape: ", logits.shape)
             # print("labels shape: ", labels.shape, "\n")
 
             inputs = logits.view(-1, self.num_labels)
             targets = labels.view(-1)
-            # inputs = logits.view(-1)
-            # targets = labels.view(-1)
-
-            print("Inputs Shape: ", inputs.shape)
-            print("Targets Shape: ", targets.shape)
-            print()
+            # print("Inputs Shape: ", inputs.shape)
+            # print("Targets Shape: ", targets.shape)
+            # print()
 
             loss = loss_fn(inputs, targets)            
-            print("loss = ", loss)
+            # print("loss = ", loss)
         return SequenceClassifierOutput(
             loss=loss,
             logits=logits,
@@ -484,10 +482,11 @@ class BertForSequenceClassification(BertPreTrainedModel):
 
 
 def compute_metrics(eval_pred):
-    print("COMPUTING METRICS")
+    print("\n\nCOMPUTING METRICS")
     y_true = eval_pred.label_ids
     y_pred = np.argmax(eval_pred.predictions, axis=-1)
     return {'accuracy': accuracy_score(y_true, y_pred)}
+
 
 def init():
     tqdm.pandas()
