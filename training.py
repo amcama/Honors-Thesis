@@ -29,27 +29,30 @@ tokenizer = AutoTokenizer.from_pretrained(transformer_name)
 configuration = 3 # configuration for maxpooling
 classes = ['Negative_activation', 'Positive_activation', 'No_relation']
 
-# TOKENIZERS_PARALLELISM=False
-# os.environ["TOKENIZERS_PARALLELISM"] = "false"
+TOKENIZERS_PARALLELISM=False
+os.environ["TOKENIZERS_PARALLELISM"] = "false"
 
 def main():
     init()
-    config = AutoConfig.from_pretrained(transformer_name, num_labels = len(classes), output_hidden_states=True)
-    global model
-    model = (BertForSequenceClassification.from_pretrained(transformer_name, config=config))
     tokenizer.add_special_tokens({'additional_special_tokens': ['[E1]','[/E1]', '[E2]', '[/E2]']})
-    model.resize_token_embeddings(len(tokenizer))
-
+    
+    count = 0
     data = read_data()
-
-
-    x = data.values()
+    values = data.values()
+    print(values)
     data_list = []
-    for e in x:
-       for f in e:
-           data_list.append(f)
-
+    for e in values:
+        for f in e:
+            # print(f['sentence_tokens'],'\n\n')
+            data_list.append(f)
+            count += 1
+            if (len(data_list) > 100):
+                break
     data = data_list
+    # data.
+
+    
+    random.shuffle(data)
 
     # Take the first 60% as train, next 20% as development, last 20% as test 
     train_df, eval_df = train_test_split(data, train_size=0.6)
@@ -71,21 +74,27 @@ def main():
 
     
     train_ds = ds['train'].map(
-        tokenize, batched=True,
-        remove_columns=['event_indices', 'polarity', 'controller_indices', 'controlled_indices', 'trigger_indices']
+        tokenize, batched=True, 
+        remove_columns=['event_indices', 'polarity', 'controller_indices', 'controlled_indices', 
+                        'trigger_indices', 'type', 'sentence_tokens']
     )   
-
-
-    # TODO add condition for configuration 
+    print("\ntrain_ds: ", train_ds)
 
     eval_ds = ds['validation'].map(
         tokenize,
         batched=True,
-        remove_columns=['event_indices', 'polarity', 'controller_indices', 'controlled_indices', 'trigger_indices']
+        remove_columns=['event_indices', 'polarity', 'controller_indices', 'controlled_indices', 
+                        'trigger_indices', 'type', 'sentence_tokens']
     )
     eval_ds.to_pandas()
 
-    
+    print("\neval_ds: ", eval_ds)
+
+    config = AutoConfig.from_pretrained(transformer_name, num_labels = len(classes))
+
+    model = (BertForSequenceClassification.from_pretrained(transformer_name, config=config))
+    model.resize_token_embeddings(len(tokenizer))
+
     num_epochs = 2
     batch_size = 24 # change this for smaller data sets
     weight_decay = 0.01
@@ -98,10 +107,8 @@ def main():
         per_device_eval_batch_size=batch_size,
         evaluation_strategy='epoch',
         weight_decay=weight_decay,
-    )
-
-    data_collator = DataCollatorForTokenClassification(tokenizer)
-
+    ) 
+    
     trainer = Trainer(
         model=model,
         args=training_args,
@@ -110,13 +117,12 @@ def main():
         train_dataset=train_ds,
         eval_dataset=eval_ds,
         tokenizer=tokenizer,
-    )    
-    
-    print("\n", train_ds, "\n")
-    # exit(0)
+    )  
+
+
     train_output = trainer.train()
-    exit(0) # stop here for debugging
     print("> Train Output:\n", train_output, "\n")
+
 
     test_ds = ds['test'].map(
         tokenize,
@@ -131,8 +137,7 @@ def main():
 
     y_true = output.label_ids
     y_pred = np.argmax(output.predictions, axis=-1)
-    target_names = classes
-    print(classification_report(y_true, y_pred, target_names=target_names))
+    print(classification_report(y_true, y_pred, target_names=classes, labels=[0,1,2]))
 
     print("y_true: ", y_true)
     print("y_pred: ", y_pred)
@@ -141,6 +146,20 @@ def main():
     cm = metrics.multilabel_confusion_matrix(y_true=y_true, y_pred=y_pred, labels=[0,1,2])
     print(cm)
 
+def prune_ds(ds):
+    # remove tokenized sequences that are too long in dataset
+    indexes_to_delete = []
+    for i in range(0, len(ds)):
+        e = ds[i]
+        if (len(e['input_ids']) >= 512):
+            indexes_to_delete.append(i)
+
+    indexes_to_delete.reverse()
+    for index in indexes_to_delete:
+        ds = np.delete(ds, index)
+    return ds
+    
+    
     
 def tokenize(examples):
     output = tokenizer(examples['sentence_tokens'], is_split_into_words=True, truncation=True)
@@ -183,7 +202,6 @@ def add_entity_markers(data):
         # print("new sentence: ", new_sentence, "\n")
         # print()
 
-
     for e in data['hardInstances']:
         og_sentence = e['sentence_tokens']
         new_sentence = copy.deepcopy(e['sentence_tokens'])
@@ -203,7 +221,7 @@ def add_entity_markers(data):
             new_sentence.insert(start, "[E{}]".format(i+1))
             new_sentence.insert(end+1, "[/E{}]".format(i+1))
         e['sentence_tokens'] = new_sentence
-
+        # del e['entities_indices']
         # print("\n--------")
         # print("Hard Instances")
         # print(indices, "\n")
@@ -230,6 +248,7 @@ def add_entity_markers(data):
             new_sentence.insert(start, "[E{}]".format(i+1))
             new_sentence.insert(end+1, "[/E{}]".format(i+1))
         e['sentence_tokens'] = new_sentence
+        # del e['entities_indices']
 
         # print("\n--------")
         # print("Without Regulations")
@@ -242,28 +261,6 @@ def add_entity_markers(data):
 
 
 
-def read_test_data():
-    json_data = []
-    f = open("test_data.json")
-    data = json.load(f)
-    # print(data)
-
-    for e in data:
-        if (e.get('type')):
-            e['label'] = e.pop('type')
-            if (e['label'] == "Negative_activation"):
-                e['label'] = 0
-            elif (e['label'] == "Positive_activation"):
-                e['label'] = 1
-            elif (e['label'] == "Negative_regulation"):
-                e['label'] = 0
-            elif (e['label'] == "Positive_regulation"):
-                e['label'] = 1
-        else:
-            e['label'] = 2
-    if (configuration != 1):
-        add_entity_markers(data)
-    return data
  
 
 def read_data():
@@ -277,15 +274,11 @@ def read_data():
         "emptySentences": []
         }
     
-    # directory1 = 'sample_training_data'
-    # directory2 = 'negative_training_data'
+    directory1 = 'sample_training_data'
+    directory2 = 'negative_training_data'
 
-    directory1 = 'test_sample'
-    directory2 = 'test_negative'
-
-    negative_count = 0
-    positive_count = 0
-    none_count = 0
+    # directory1 = 'test_sample'
+    # directory2 = 'test_negative'
 
     count = 0
 
@@ -299,7 +292,6 @@ def read_data():
                                 e['label'] = 0
                         elif (e['type'] == "Positive_activation" or e['type'] == "Positive_regulation"):
                                 e['label'] = 1
-                
                         data['regulations'].append(e)
 
     for filename in os.listdir(directory2):
@@ -310,6 +302,7 @@ def read_data():
                     regulations = file['regulations']
                     hard_instances = file['hardInstances']
                     without_regulations = file['withoutRegulations']
+                    # print(len(without_regulations))
                     # ignore empty sentences
                     # empty_sentences = file['emptySentences'] 
 
@@ -327,34 +320,30 @@ def read_data():
 
                     for e in hard_instances:
                         entity_indices = e['entities_indices']
-                        if (len(entity_indices) <= 1):
-                            pass
-                        elif (len(entity_indices) > 2):
+                        if (len(entity_indices) <= 2):
+                            e['label'] = 0
+                            data['hardInstances'].append(e)
+                        else:
                             for i in range(0, len(e['entities_indices']) - 1):
                                 new_entry = {
                                     "sentence_tokens": e['sentence_tokens'], 
                                     "entities_indices": [e['entities_indices'][i], e['entities_indices'][i+1]]}
                                 new_entry['label'] = 0
                                 data['hardInstances'].append(new_entry)
-                        else: 
-                            e['label'] = 0
-                            data['hardInstances'].append(e)
+                            
 
                     for e in without_regulations:
                         entity_indices = e['entities_indices']
-                        if (len(entity_indices) <= 1):
-                            pass
-                        elif (len(entity_indices) > 2):
+                        if (len(entity_indices) <= 2): # 2 entities
+                            e['label'] = 2
+                            data['withoutRegulations'].append(e)
+                        else:
                             for i in range(0, len(e['entities_indices'])-1):
                                 new_entry = {
                                     "sentence_tokens": e['sentence_tokens'], 
                                     "entities_indices": [e['entities_indices'][i], e['entities_indices'][i+1]]}
                                 new_entry['label'] = 2
                                 data['withoutRegulations'].append(new_entry)
-                        else: # 2 entities
-                            e['label'] = 2
-                            data['withoutRegulations'].append(e)
-                            count += 1
                         
                     # for e in empty_sentences:
                     #     e['label'] = 2
@@ -362,29 +351,58 @@ def read_data():
                     #     data['emptySentences'].append(e)
                     #     count += 1 
     
-    # pretty_print(hard_instances)
     if (configuration != 1):
         data = add_entity_markers(data)
     else:
         data = data
+    data = prune_data(data)
     return data
 
 
-def pretty_print(list):
-    for e in list:
-        print(e, "\n")
 
+def prune_data(data):
+    # print("\nREGULATIONS")
+    newRegulations = []
+    for i in range(0, len(data['regulations'])):
+        e = data['regulations'][i]
+        # print(e,"\n")
+        tokens = tokenizer.tokenize(e['sentence_tokens'], is_split_into_words=True, truncation=True) 
+        # print(tokens) 
+    
+        if (len(tokens) < 512):
+            newRegulations.append(e)
+    data['regulations'] = newRegulations
+    # print(data['regulations'])
+    
+
+    # print("\nHARD INSTANCES")
+    newHardInstances = []
+    for i in range(0, len(data['hardInstances'])):
+        e = data['hardInstances'][i]
+        # print(e,"\n")
+        tokens = tokenizer.tokenize(e['sentence_tokens'], is_split_into_words=True, truncation=True) 
+        del e['entities_indices']
+        if (len(tokens) < 512):
+            newHardInstances.append(e)
+        # print(e,"\n")
+    data['hardInstances'] = newHardInstances
+    
+    # print("\nWITHOUT REGULATIONS")    
+    newWithoutRegulations = []
+    for i in range(0, len(data['withoutRegulations'])):
+        e = data['withoutRegulations'][i]
+        tokens = tokenizer.tokenize(e['sentence_tokens'], is_split_into_words=True, truncation=True) 
+        del e['entities_indices'] 
+        if (len(tokens) < 512):
+            newWithoutRegulations.append(e)   
+    data['withoutRegulations'] = newWithoutRegulations
+    
+    return data
+
+
+    
 
 def maxpool(e1, e2, e3, e4):
-    # replace concat with a function that does max pooling of the four
-    # combine embeddings in 3 dif ways : could do max pooling and have an embedding thats the size of each individual one
-    # could also do an average
-    # reduce the size of the linear layer input because now its 4 times the size of hidden state and needs to be og size
-    # print("e1 shape: ", e1.shape)
-    # print("e2 shape: ", e2.shape)
-    # print("e3 shape: ", e3.shape)
-    # print("e4 shape: ", e4.shape)
-
     # combine embeddings
     concatenated = torch.stack((e1, e2, e3, e4))
     maxpooled = torch.max_pool1d(concatenated, kernel_size=4)
@@ -399,90 +417,83 @@ class BertForSequenceClassification(BertPreTrainedModel):
     def __init__(self, config):
         super().__init__(config)
         self.num_labels = config.num_labels
-        self.bert = BertModel(config, add_pooling_layer=False)
+        self.bert = BertModel(config)
         self.dropout = nn.Dropout(config.hidden_dropout_prob)
         self.classifier = nn.Linear(config.hidden_size, config.num_labels)
         self.init_weights()
         
     def forward(self, input_ids=None, attention_mask=None, token_type_ids=None, labels=None, **kwargs):
+        print("\n\n--- FORWARDING ---")
         outputs = self.bert(
             input_ids,
             attention_mask=attention_mask,
             token_type_ids=token_type_ids,
             **kwargs,
         )
-        # print("\n\n--- FORWARDING ---")
 
-        # print("inputs_ids shape: ", input_ids.shape)
+        if (configuration  == 3):
+            embeddings = outputs.last_hidden_state
+            final_vector = torch.empty(0)
+            for i in range(0, len(input_ids)):
+                tokens = tokenizer.convert_ids_to_tokens(input_ids[i])
+                entity_indexes = dict()
+                for j in range(0, len(tokens)):
+                    if (tokens[j] == "[E1]"):
+                        entity_indexes["[E1]"] = j
+                    if (tokens[j] == "[/E1]"):
+                        entity_indexes["[/E1]"] = j
+                    if (tokens[j] == "[E2]"):
+                        entity_indexes["[E2]"] = j
+                    if (tokens[j] == "[/E2]"):
+                        entity_indexes["[/E2]"] = j
 
-        embeddings = outputs.last_hidden_state
-        # print("embeddings shape: ", embeddings.shape)
-        
-        final_vector = torch.empty(0)
+                if (entity_indexes.get("[E2]") == None or entity_indexes.get("[/E2]") == None):
+                    entity_indexes["[E2]"] = entity_indexes.get("[E1]")
+                    entity_indexes["[/E2]"] = entity_indexes.get("[/E1]")
+                
+                # get each embedding for each entity marker
+                e1 = embeddings[i][entity_indexes.get("[E1]")]
+                e2 = embeddings[i][entity_indexes.get("[/E1]")]
+                e3 = embeddings[i][entity_indexes.get("[E2]")]
+                e4 = embeddings[i][entity_indexes.get("[/E2]")] 
 
-        for i in range(0, len(input_ids)):
-            tokens = tokenizer.convert_ids_to_tokens(input_ids[i])
-            # print()
-            # print(tokens)
-            # print(len(tokens))
-            entity_indexes = dict()
-            for j in range(0, len(tokens)):
-                if (tokens[j] == "[E1]"):
-                    entity_indexes["[E1]"] = j
-                if (tokens[j] == "[/E1]"):
-                    entity_indexes["[/E1]"] = j
-                if (tokens[j] == "[E2]"):
-                    entity_indexes["[E2]"] = j
-                if (tokens[j] == "[/E2]"):
-                    entity_indexes["[/E2]"] = j
+                returned = maxpool(e1, e2, e3, e4) 
+                final_vector = torch.cat((returned, final_vector))
 
-            # get each embedding for each entity marker
-            e1 = embeddings[i][entity_indexes.get("[E1]")]
-            e2 = embeddings[i][entity_indexes.get("[/E1]")]
-            e3 = embeddings[i][entity_indexes.get("[E2]")]
-            e4 = embeddings[i][entity_indexes.get("[/E2]")] 
+            final_vector = final_vector.view(len(input_ids), -1)   
+            sequence_output = self.dropout(final_vector)
+            logits = self.classifier(sequence_output)
 
-            returned = maxpool(e1, e2, e3, e4) 
-            # print("after maxpooling shape: ", returned.shape)
-            final_vector = torch.cat((returned, final_vector))
-            # print("final_vector shape: ", final_vector.shape)    
+            loss = None
+            if labels is not None:
+                loss_fn = nn.CrossEntropyLoss()
+                inputs = logits.view(-1, self.num_labels)
+                targets = labels.view(-1)
+                loss = loss_fn(inputs, targets)            
+            return SequenceClassifierOutput(
+                loss=loss,
+                logits=logits,
+                hidden_states=outputs.hidden_states,
+                attentions=outputs.attentions
+            )
+        else:
+            cls_outputs = outputs.last_hidden_state[:, 0, :]
+            cls_outputs = self.dropout(cls_outputs)
+            logits = self.classifier(cls_outputs)
+            loss = None
+            if labels is not None:
+                loss_fn = nn.CrossEntropyLoss()
+                loss = loss_fn(logits, labels)
+            return SequenceClassifierOutput(
+                loss=loss,
+                logits=logits,
+                hidden_states=outputs.hidden_states,
+                attentions=outputs.attentions,
+            )
 
-        final_vector = final_vector.view(len(input_ids), -1)   
-        # print("\n\nfinal_vector shape: ", final_vector.shape)         
-        # exit(0)       
-
-        # replace concat with a function that does max pooling of the four
-        # combine embeddings in 3 dif ways : could do max pooling and have an embedding thats the size of each indiidual one
-        # could also do an average
-        # reduce the size of the linear layer input because now its 4 times the size of hidden state and needs to be og size
-        
-        sequence_output = self.dropout(final_vector) 
-        logits = self.classifier(sequence_output)
-
-        loss = None
-        if labels is not None:
-            loss_fn = nn.CrossEntropyLoss()
-            # print("logits shape: ", logits.shape)
-            # print("labels shape: ", labels.shape, "\n")
-
-            inputs = logits.view(-1, self.num_labels)
-            targets = labels.view(-1)
-            # print("Inputs Shape: ", inputs.shape)
-            # print("Targets Shape: ", targets.shape)
-            # print()
-
-            loss = loss_fn(inputs, targets)            
-            # print("loss = ", loss)
-        return SequenceClassifierOutput(
-            loss=loss,
-            logits=logits,
-            hidden_states=outputs.hidden_states,
-            attentions=outputs.attentions
-        )
 
 
 def compute_metrics(eval_pred):
-    print("\n\nCOMPUTING METRICS")
     y_true = eval_pred.label_ids
     y_pred = np.argmax(eval_pred.predictions, axis=-1)
     return {'accuracy': accuracy_score(y_true, y_pred)}
