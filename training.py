@@ -22,11 +22,19 @@ import copy
 import os
 from transformers import DataCollatorForTokenClassification
 
-
+'''
+Configurations: 
+Configuration 1: Classifies the sentences using the [CLS] embedding
+Configuration 2: Classifies the sentences using the [CLS] embedding and adds 4 entitity markers:
+    begin controller [E1], end controller [/E1], begin controlled [E2], end controlled [/E2]
+Configuration 3: Classifies the sentences using the [CLS] embedding and adds 4 entitity markers. 
+    This configuration max pools the data in the forward function.
+'''
 transformer_name = 'bert-base-cased'
 tokenizer = AutoTokenizer.from_pretrained(transformer_name)
 
-configuration = 3 # configuration for maxpooling
+# TODO make configuration a command line option
+configuration = 2
 classes = ['Negative_activation', 'Positive_activation', 'No_relation']
 
 TOKENIZERS_PARALLELISM=False
@@ -36,21 +44,30 @@ def main():
     init()
     tokenizer.add_special_tokens({'additional_special_tokens': ['[E1]','[/E1]', '[E2]', '[/E2]']})
     
-    count = 0
     data = read_data("training_data")
     values = data.values()
     data_list = []
     for e in values:
         for f in e:
-            # print(f['sentence_tokens'],'\n\n')
             data_list.append(f)
-            count += 1
-            # if (len(data_list) > 300):
-            #     break
     data = data_list
     random.shuffle(data) 
-    # data = generate_random_dataset(data, 100) # for testing with smaller datasets
+    data = generate_random_dataset(data, 100) # for testing with smaller datasets
+    label_0 = 0
+    label_1 = 0
+    label_2 = 0
 
+    for e in data:
+        if (e['label'] == 0):
+            label_0 += 1
+        elif (e['label'] == 1):
+            label_1 += 1
+        else: 
+            label_2 += 1
+
+    print("label 0: ", label_0)
+    print("label 1: ", label_1)
+    print("label 2: ", label_2)
     # Take the first 60% as train, next 20% as development, last 20% as test 
     train_df, eval_df = train_test_split(data, train_size=0.6)
     eval_df, test_df = train_test_split(eval_df, train_size=0.5)
@@ -59,7 +76,6 @@ def main():
     print(f'eval rows: {len(eval_df):,}')
     print(f'test rows: {len(test_df):,}')
 
-    # create train dataset
     train_df = pd.DataFrame(train_df)
     eval_df = pd.DataFrame(eval_df)
     test_df = pd.DataFrame(test_df)
@@ -68,7 +84,6 @@ def main():
     ds['train'] = Dataset.from_pandas(train_df)
     ds['validation'] = Dataset.from_pandas(eval_df)
     ds['test'] = Dataset.from_pandas(test_df)
-
     
     train_ds = ds['train'].map(
         tokenize, batched=True, 
@@ -84,18 +99,17 @@ def main():
                         'trigger_indices', 'type', 'sentence_tokens', 'rule', 'rule_name']
     )
     eval_ds.to_pandas()
-
     print("\neval_ds: ", eval_ds)
 
     config = AutoConfig.from_pretrained(transformer_name, num_labels = len(classes))
-
     model = (BertForSequenceClassification.from_pretrained(transformer_name, config=config))
-    model.resize_token_embeddings(len(tokenizer))
+    model.resize_token_embeddings(len(tokenizer))  # adjust for entity markers being added to tokenizer dictionary
 
     num_epochs = 2
-    batch_size = 24 # change this for smaller data sets
+    batch_size = 24
     weight_decay = 0.01
     model_name = f'{transformer_name}-sequence-classification'
+
     training_args = TrainingArguments(
         output_dir=model_name,
         log_level='error',
@@ -109,14 +123,13 @@ def main():
     trainer = Trainer(
         model=model,
         args=training_args,
-        # data_collator=data_collator,
         compute_metrics=compute_metrics,
         train_dataset=train_ds,
         eval_dataset=eval_ds,
         tokenizer=tokenizer,
     )  
     train_output = trainer.train()
-    print("> Train Output:\n", train_output, "\n")
+    # print("Train Output:\n", train_output, "\n")
 
     test_ds = ds['test'].map(
         tokenize,
@@ -126,8 +139,7 @@ def main():
     test_ds.to_pandas()
 
     output = trainer.predict(test_ds)
-
-    print("test output: ", output)
+    # print("test output: ", output)
 
     y_true = output.label_ids
     y_pred = np.argmax(output.predictions, axis=-1)
@@ -140,19 +152,26 @@ def main():
     cm = metrics.multilabel_confusion_matrix(y_true=y_true, y_pred=y_pred, labels=[0,1,2])
     print(cm)
 
+'''
+This function deletes sentences that are too long when tokenized from the dataset.
+When a tokenized sentence array has a size >= 512, it breaks the forward function when training.
+'''
 def prune_ds(ds):
-    # remove tokenized sequences that are too long in dataset
     indexes_to_delete = []
     for i in range(0, len(ds)):
         e = ds[i]
         if (len(e['input_ids']) >= 512):
             indexes_to_delete.append(i)
-
     indexes_to_delete.reverse()
     for index in indexes_to_delete:
         ds = np.delete(ds, index)
     return ds
     
+
+'''
+Generates a random dataset from training data to be used for testing.
+new_size: the size of the new dataset to be generated
+'''
 def generate_random_dataset(ds, new_size):
     ds_size = len(ds)
     start = random.randint(0, ds_size-new_size)
@@ -162,14 +181,15 @@ def generate_random_dataset(ds, new_size):
     return new_ds
 
 
-    
 def tokenize(examples):
     output = tokenizer(examples['sentence_tokens'], is_split_into_words=True, truncation=True)
     return output
-            
 
+
+'''
+Add entity markers to the sentence tokens.
+'''
 def add_entity_markers(data):
-    count = 0
     for e in data['regulations']:
         og_sentence = e['sentence_tokens']
         new_sentence = copy.deepcopy(e['sentence_tokens'])
@@ -186,23 +206,14 @@ def add_entity_markers(data):
         if (controller_start < controlled_start):
             new_sentence.insert(controller_start, "[E1]")
             new_sentence.insert(controller_end + 1, "[/E1]" )
-            new_sentence.insert(controlled_start+2, "[E2]")
-            new_sentence.insert(controlled_end+3, "[/E2]")
-
+            new_sentence.insert(controlled_start + 2, "[E2]")
+            new_sentence.insert(controlled_end + 3, "[/E2]")
         else:
             new_sentence.insert(controlled_start, "[E1]")
             new_sentence.insert(controlled_end + 1, "[/E1]" )
-            new_sentence.insert(controller_start+2, "[E2]")
-            new_sentence.insert(controller_end+3, "[/E2]")
+            new_sentence.insert(controller_start + 2, "[E2]")
+            new_sentence.insert(controller_end + 3, "[/E2]")
         e['sentence_tokens'] = new_sentence
-
-        # print("\n--------")
-        # print("Regulations")
-        # print(controller_indices)
-        # print(controlled_indices)
-        # print("og sentence: ", og_sentence, "\n")
-        # print("new sentence: ", new_sentence, "\n")
-        # print()
 
     for e in data['hardInstances']:
         og_sentence = e['sentence_tokens']
@@ -219,18 +230,10 @@ def add_entity_markers(data):
                 start = indices[i][0] + offset + 1
                 end = indices[i][0] + offset + 2
                 offset += 2
-
             new_sentence.insert(start, "[E{}]".format(i+1))
             new_sentence.insert(end+1, "[/E{}]".format(i+1))
         e['sentence_tokens'] = new_sentence
-        # del e['entities_indices']
-        # print("\n--------")
-        # print("Hard Instances")
-        # print(indices, "\n")
-        # print("og sentence: ", og_sentence, "\n")
-        # print("new sentence: ", new_sentence, "\n")
-        # print()
-
+        
     for e in data['withoutRegulations']:
         og_sentence = e['sentence_tokens']
         new_sentence = copy.deepcopy(e['sentence_tokens'])
@@ -246,28 +249,22 @@ def add_entity_markers(data):
                 start = indices[i][0] + offset + 1
                 end = indices[i][0] + offset + 2
                 offset += 2
-
             new_sentence.insert(start, "[E{}]".format(i+1))
             new_sentence.insert(end+1, "[/E{}]".format(i+1))
         e['sentence_tokens'] = new_sentence
-        # del e['entities_indices']
-
-        # print("\n--------")
-        # print("Without Regulations")
-        # print(indices, "\n")
-        # print("og sentence: ", og_sentence, "\n")
-        # print("new sentence: ", new_sentence, "\n")
-        # print()
 
     return data
 
 
-
- 
-
 def read_data(directory_name):
     """ 
-    Read data from sample_training_data folder and remove duplicates.
+    Read data from training_data and add the appropiate labels.
+
+    regulations: Sentences that have a regulation. 
+        The entities in here are the particpants of a regulation event.
+    hardInstances: Sentences that have a regulation, but the entities provided are 
+        not participants in the regulation event. These are all negatives. 
+    withoutRegulations: Sentences that contain entities but no regulation events. 
     """
     data = {
         "regulations" : [],
@@ -278,10 +275,6 @@ def read_data(directory_name):
     
     # directory_name = 'sample_training_data'
 
-    wrNone = 0
-    wr2 = 0
-    hiCount=0
-    hi2 = 0
     for filename in os.listdir(directory_name):
         if filename.endswith('.json'):
             with open(os.path.join(directory_name, filename)) as f:
@@ -309,15 +302,13 @@ def read_data(directory_name):
                     for e in hard_instances:
                         entity_indices = e['entities_indices']
                         if (len(entity_indices) < 2):
-                            # discard sentences with only one entity 
-                            hiCount += 1
+                            # ignore sentences with only one entity
                             pass
                         elif (len(entity_indices) == 2):
-                            hi2+= 1
                             e['label'] = 0
                             data['hardInstances'].append(e)
                         else:
-                            hi2+=1
+                            # There are multiple entities, so create all possible pairs and classify them individually
                             for i in range(0, len(e['entities_indices']) - 1):
                                 new_entry = {
                                     "sentence_tokens": e['sentence_tokens'], 
@@ -325,36 +316,23 @@ def read_data(directory_name):
                                 new_entry['label'] = 0
                                 data['hardInstances'].append(new_entry)
                             
-                    
                     for e in without_regulations:
                         entity_indices = e['entities_indices']
                         if (len(entity_indices) < 2):
-                            pass # discard sentences with only one entity
-                            wrNone += 1
-                        elif (len(entity_indices) == 2): # 2 entities
-                            wr2+=1
+                            # ignore sentences with only one entity
+                            pass 
+                        elif (len(entity_indices) == 2):
                             e['label'] = 2
                             data['withoutRegulations'].append(e)
                         else:
-                            wr2 += 1
+                            # There are multiple entities, so create all possible pairs and classify them individually
                             for i in range(0, len(e['entities_indices'])-1):
                                 new_entry = {
                                     "sentence_tokens": e['sentence_tokens'], 
                                     "entities_indices": [e['entities_indices'][i], e['entities_indices'][i+1]]}
                                 new_entry['label'] = 2
                                 data['withoutRegulations'].append(new_entry)
-                        
-                    # for e in empty_sentences:
-                    #     e['label'] = 2
-                    #     none_count += 1
-                    #     data['emptySentences'].append(e)
-                    #     count += 1 
-    # print("Without Regulations")
-    # print("No Entities: ", wrNone)
-    # print("Has entities: ", wr2)
-    # print("Hard Instances")
-    # print("No Entities: ", hiCount)
-    # print("Has entities: ", hi2)
+
     if (configuration != 1):
         data = add_entity_markers(data)
     else:
@@ -363,35 +341,40 @@ def read_data(directory_name):
     return data
 
 
-
 def prune_data(data):
-    # print("\nREGULATIONS")
+    label_0 = 0 
+    label_1 = 0
+    label_2 = 0
+
     newRegulations = []
     for i in range(0, len(data['regulations'])):
         e = data['regulations'][i]
-        # print(e,"\n")
-        tokens = tokenizer.tokenize(e['sentence_tokens'], is_split_into_words=True, truncation=True) 
-        # print(tokens) 
-    
+        tokens = tokenizer.tokenize(e['sentence_tokens'], is_split_into_words=True, truncation=True)     
         if (len(tokens) < 512):
             newRegulations.append(e)
+        if (e['label'] == 0):
+            label_0 += 1
+        elif (e['label'] == 1):
+            label_1 += 1
+        else: 
+            label_2 += 1
     data['regulations'] = newRegulations
-    # print(data['regulations'])
     
-
-    # print("\nHARD INSTANCES")
     newHardInstances = []
     for i in range(0, len(data['hardInstances'])):
         e = data['hardInstances'][i]
-        # print(e,"\n")
         tokens = tokenizer.tokenize(e['sentence_tokens'], is_split_into_words=True, truncation=True) 
         del e['entities_indices']
         if (len(tokens) < 512):
             newHardInstances.append(e)
-        # print(e,"\n")
+        if (e['label'] == 0):
+            label_0 += 1
+        elif (e['label'] == 1):
+            label_1 += 1
+        else: 
+            label_2 += 1
     data['hardInstances'] = newHardInstances
     
-    # print("\nWITHOUT REGULATIONS")    
     newWithoutRegulations = []
     for i in range(0, len(data['withoutRegulations'])):
         e = data['withoutRegulations'][i]
@@ -399,13 +382,21 @@ def prune_data(data):
         del e['entities_indices'] 
         if (len(tokens) < 512):
             newWithoutRegulations.append(e)   
+        if (e['label'] == 0):
+            label_0 += 1
+        elif (e['label'] == 1):
+            label_1 += 1
+        else: 
+            label_2 += 1
     data['withoutRegulations'] = newWithoutRegulations
     
+    # print("label 0: ", label_0)
+    # print("label 1: ", label_1)
+    # print("label 2: ", label_2)
     return data
 
 
     
-
 def maxpool(e1, e2, e3, e4):
     # combine embeddings
     concatenated = torch.stack((e1, e2, e3, e4))
