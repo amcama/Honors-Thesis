@@ -1,3 +1,4 @@
+import hashlib
 import os, json
 import pandas as pd
 import random
@@ -34,11 +35,24 @@ transformer_name = 'bert-base-cased'
 tokenizer = AutoTokenizer.from_pretrained(transformer_name)
 
 # TODO make configuration a command line option
-configuration = 2
+configuration = 1
 classes = ['Negative_activation', 'Positive_activation', 'No_relation']
 
-TOKENIZERS_PARALLELISM=False
-os.environ["TOKENIZERS_PARALLELISM"] = "false"
+# TOKENIZERS_PARALLELISM=False
+# os.environ["TOKENIZERS_PARALLELISM"] = "false"
+
+def remove_duplicates(data):
+    print(len(data))
+    seen = set()
+    unique_data = []
+    for item in data:
+        item_str = json.dumps(item, sort_keys=True)
+        if item_str not in seen:
+            seen.add(item_str)
+            unique_data.append(item)
+
+    print(len(unique_data))
+    return unique_data
 
 def main():
     init()
@@ -50,9 +64,12 @@ def main():
     for e in values:
         for f in e:
             data_list.append(f)
+            # if (len(data_list) > 200):
+            #     break
     data = data_list
+    data = remove_duplicates(data)
     random.shuffle(data) 
-    data = generate_random_dataset(data, 100) # for testing with smaller datasets
+    # data = generate_random_dataset(data, 400) # for testing with smaller datasets
     label_0 = 0
     label_1 = 0
     label_2 = 0
@@ -62,7 +79,8 @@ def main():
             label_0 += 1
         elif (e['label'] == 1):
             label_1 += 1
-        else: 
+            # print(e,"\n")
+        elif (e['label'] == 2):
             label_2 += 1
 
     print("label 0: ", label_0)
@@ -75,7 +93,7 @@ def main():
     print(f'train rows: {len(train_df):,}')
     print(f'eval rows: {len(eval_df):,}')
     print(f'test rows: {len(test_df):,}')
-
+    # print("test: ", test_df)
     train_df = pd.DataFrame(train_df)
     eval_df = pd.DataFrame(eval_df)
     test_df = pd.DataFrame(test_df)
@@ -88,7 +106,9 @@ def main():
     train_ds = ds['train'].map(
         tokenize, batched=True, 
         remove_columns=['event_indices', 'polarity', 'controller_indices', 'controlled_indices', 
-                        'trigger_indices', 'type', 'sentence_tokens', 'rule', 'rule_name']
+                        'trigger_indices', 'type', 'sentence_tokens']
+        # remove_columns=['event_indices', 'polarity', 'controller_indices', 'controlled_indices', 
+        #                 'trigger_indices', 'type', 'sentence_tokens', 'rule', 'rule_name']
     )   
     print("\ntrain_ds: ", train_ds)
 
@@ -96,7 +116,7 @@ def main():
         tokenize,
         batched=True,
         remove_columns=['event_indices', 'polarity', 'controller_indices', 'controlled_indices', 
-                        'trigger_indices', 'type', 'sentence_tokens', 'rule', 'rule_name']
+                        'trigger_indices', 'type', 'sentence_tokens']
     )
     eval_ds.to_pandas()
     print("\neval_ds: ", eval_ds)
@@ -134,7 +154,8 @@ def main():
     test_ds = ds['test'].map(
         tokenize,
         batched=True,
-        remove_columns=['event_indices', 'polarity', 'controller_indices', 'controlled_indices', 'trigger_indices']
+        remove_columns=['event_indices', 'polarity', 'controller_indices', 'controlled_indices', 
+                        'trigger_indices', 'type', 'sentence_tokens']
     )
     test_ds.to_pandas()
 
@@ -256,7 +277,7 @@ def add_entity_markers(data):
     return data
 
 
-def read_data(directory_name):
+def read_data(directory2):
     """ 
     Read data from training_data and add the appropiate labels.
 
@@ -272,12 +293,11 @@ def read_data(directory_name):
         "withoutRegulations": [],
         "emptySentences": []
         }
-    
-    # directory_name = 'sample_training_data'
 
-    for filename in os.listdir(directory_name):
+
+    for filename in os.listdir(directory2):
         if filename.endswith('.json'):
-            with open(os.path.join(directory_name, filename)) as f:
+            with open(os.path.join(directory2, filename)) as f:
                 file = json.load(f)
                 if (len(file) > 0): 
                     regulations = file['regulations']
@@ -300,44 +320,47 @@ def read_data(directory_name):
                             raise Exception("Unknown label in regulations data!")
    
                     for e in hard_instances:
-                        entity_indices = e['entities_indices']
-                        if (len(entity_indices) < 2):
-                            # ignore sentences with only one entity
-                            pass
-                        elif (len(entity_indices) == 2):
+                        # if (len(entity_indices) < 2):
+                        #     # ignore sentences with only one entity
+                        #     pass
+                        if (len(e['entities_indices']) == 2):
                             e['label'] = 0
                             data['hardInstances'].append(e)
-                        else:
+                        # else:
                             # There are multiple entities, so create all possible pairs and classify them individually
-                            for i in range(0, len(e['entities_indices']) - 1):
-                                new_entry = {
-                                    "sentence_tokens": e['sentence_tokens'], 
-                                    "entities_indices": [e['entities_indices'][i], e['entities_indices'][i+1]]}
-                                new_entry['label'] = 0
-                                data['hardInstances'].append(new_entry)
+                            # for i in range(0, len(e['entities_indices']) - 1):
+                            #     new_entry = {
+                            #         "sentence_tokens": e['sentence_tokens'], 
+                            #         "entities_indices": [e['entities_indices'][i], e['entities_indices'][i+1]]}
+                            #     new_entry['label'] = 0
+                            #     data['hardInstances'].append(new_entry)
                             
                     for e in without_regulations:
-                        entity_indices = e['entities_indices']
-                        if (len(entity_indices) < 2):
-                            # ignore sentences with only one entity
-                            pass 
-                        elif (len(entity_indices) == 2):
+                    
+                        # if (len(entity_indices) < 2):
+                        #     # ignore sentences with only one entity
+                        #     pass 
+                        if (len(e['entities_indices']) == 2):
+                            # print(e['sentence_tokens'])
                             e['label'] = 2
                             data['withoutRegulations'].append(e)
-                        else:
-                            # There are multiple entities, so create all possible pairs and classify them individually
-                            for i in range(0, len(e['entities_indices'])-1):
-                                new_entry = {
-                                    "sentence_tokens": e['sentence_tokens'], 
-                                    "entities_indices": [e['entities_indices'][i], e['entities_indices'][i+1]]}
-                                new_entry['label'] = 2
-                                data['withoutRegulations'].append(new_entry)
-
+                        # else:
+                        #     # There are multiple entities, so create all possible pairs and classify them individually
+                        #     for i in range(0, len(e['entities_indices'])-1):
+                        #         new_entry = {
+                        #             "sentence_tokens": e['sentence_tokens'], 
+                        #             "entities_indices": [e['entities_indices'][i], e['entities_indices'][i+1]]}
+                        #         new_entry['label'] = 2
+                        #         data['withoutRegulations'].append(new_entry)
+    # print()
+    # for e in data:
+    #     print(e, "\n")
+    # print()
     if (configuration != 1):
         data = add_entity_markers(data)
     else:
         data = data
-    data = prune_data(data)
+    # data = prune_data(data)
     return data
 
 
@@ -426,7 +449,7 @@ class BertForSequenceClassification(BertPreTrainedModel):
             **kwargs,
         )
 
-        if (configuration  == 3):
+        if (configuration == 3):
             embeddings = outputs.last_hidden_state
             final_vector = torch.empty(0)
             for i in range(0, len(input_ids)):
