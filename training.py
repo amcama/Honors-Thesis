@@ -34,7 +34,7 @@ transformer_name = 'bert-base-cased'
 tokenizer = AutoTokenizer.from_pretrained(transformer_name)
 
 # TODO make configuration a command line option
-configuration = 1
+configuration = 3
 classes = ['Negative_activation', 'Positive_activation', 'No_relation']
 
 # TOKENIZERS_PARALLELISM=False
@@ -63,12 +63,12 @@ def main():
     for e in values:
         for f in e:
             data_list.append(f)
-            if (len(data_list) > 20):
-                break
+            # if (len(data_list) > 400): # just for testing
+            #     break
     data = data_list
     data = remove_duplicates(data)
     random.shuffle(data) 
-    # data = generate_random_dataset(data, 50) # for testing with smaller datasets
+    # data = generate_random_dataset(data, 300) # for testing with smaller datasets
     label_0 = 0
     label_1 = 0
     label_2 = 0
@@ -181,7 +181,6 @@ def main():
     y_true = output.label_ids
     y_pred = np.argmax(output.predictions, axis=-1)
     print(classification_report(y_true, y_pred, target_names=classes, labels=[0,1,2]))
-
     print("y_true: ", y_true)
     print("y_pred: ", y_pred)
 
@@ -293,7 +292,7 @@ def add_entity_markers(data):
     return data
 
 
-def read_data(directory2):
+def read_data(directory):
     """ 
     Read data from training_data and add the appropiate labels.
 
@@ -311,9 +310,9 @@ def read_data(directory2):
         }
 
 
-    for filename in os.listdir(directory2):
+    for filename in os.listdir(directory):
         if filename.endswith('.json'):
-            with open(os.path.join(directory2, filename)) as f:
+            with open(os.path.join(directory, filename)) as f:
                 file = json.load(f)
                 if (len(file) > 0): 
                     regulations = file['regulations']
@@ -438,6 +437,7 @@ def prune_data(data):
     
 def maxpool(e1, e2, e3, e4):
     # combine embeddings
+    # print("individual embedding shape: ", e1.shape)
     concatenated = torch.stack((e1, e2, e3, e4))
     maxpooled = torch.max_pool1d(concatenated, kernel_size=4)
     maxpooled = maxpooled.view(-1)
@@ -457,7 +457,7 @@ class BertForSequenceClassification(BertPreTrainedModel):
         self.init_weights()
         
     def forward(self, input_ids=None, attention_mask=None, token_type_ids=None, labels=None, **kwargs):
-        print("\n\n--- FORWARDING ---")
+        # print("\n\n--- FORWARDING ---")
         outputs = self.bert(
             input_ids,
             attention_mask=attention_mask,
@@ -465,7 +465,6 @@ class BertForSequenceClassification(BertPreTrainedModel):
             **kwargs,
         )
         if (configuration == 3):
-            print("CONFIG 3")
             embeddings = outputs.last_hidden_state
             final_vector = torch.empty(0)
             for i in range(0, len(input_ids)):
@@ -491,9 +490,14 @@ class BertForSequenceClassification(BertPreTrainedModel):
                 e4 = embeddings[i][entity_indexes.get("[/E2]")] 
 
                 returned = maxpool(e1, e2, e3, e4) 
+                # print("returned shape: ", returned.shape)
                 final_vector = torch.cat((returned, final_vector))
+                # print("final_vec shape rn: ", final_vector.shape)
+                # print()
 
-            final_vector = final_vector.view(len(input_ids), -1)   
+            final_vector = final_vector.view(len(input_ids), -1)  
+            # print("final vector shape: ", final_vector.shape)
+ 
             sequence_output = self.dropout(final_vector)
             logits = self.classifier(sequence_output)
 
@@ -510,14 +514,14 @@ class BertForSequenceClassification(BertPreTrainedModel):
                 attentions=outputs.attentions
             )
         else:
-            print("CONFIG 1 or 2")
+            # print("CONFIG 1 or 2")
             cls_outputs = outputs.last_hidden_state[:, 0, :]
-            print("cls_outputs shape: ", cls_outputs.shape)
+            # print("cls_outputs shape: ", cls_outputs.shape)
             cls_outputs = self.dropout(cls_outputs)
-            print("cls_outputs shape (after dropout): ", cls_outputs.shape)
+            # print("cls_outputs shape (after dropout): ", cls_outputs.shape)
 
             logits = self.classifier(cls_outputs)
-            print("logits shape: ", logits.shape)
+            # print("logits shape: ", logits.shape)
             loss = None
             if labels is not None:
                 loss_fn = nn.CrossEntropyLoss()
