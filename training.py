@@ -1,4 +1,3 @@
-import hashlib
 import os, json
 import pandas as pd
 import random
@@ -21,7 +20,7 @@ import sklearn.metrics as metrics
 from sklearn.model_selection import train_test_split
 import copy
 import os
-from transformers import DataCollatorForTokenClassification
+# from transformers import DataCollatorForTokenClassification
 
 '''
 Configurations: 
@@ -42,7 +41,6 @@ classes = ['Negative_activation', 'Positive_activation', 'No_relation']
 # os.environ["TOKENIZERS_PARALLELISM"] = "false"
 
 def remove_duplicates(data):
-    print(len(data))
     seen = set()
     unique_data = []
     for item in data:
@@ -51,7 +49,6 @@ def remove_duplicates(data):
             seen.add(item_str)
             unique_data.append(item)
 
-    print(len(unique_data))
     return unique_data
 
 def main():
@@ -59,22 +56,40 @@ def main():
     tokenizer.add_special_tokens({'additional_special_tokens': ['[E1]','[/E1]', '[E2]', '[/E2]']})
     
     data = read_data("training_data")
+    # data = read_data("test_data")
+
     values = data.values()
     data_list = []
     for e in values:
         for f in e:
             data_list.append(f)
-            # if (len(data_list) > 200):
-            #     break
+            if (len(data_list) > 20):
+                break
     data = data_list
     data = remove_duplicates(data)
     random.shuffle(data) 
-    # data = generate_random_dataset(data, 400) # for testing with smaller datasets
+    # data = generate_random_dataset(data, 50) # for testing with smaller datasets
     label_0 = 0
     label_1 = 0
     label_2 = 0
 
     for e in data:
+        # print("---")
+        # print(e['sentence_tokens'])
+        # try:
+        #     if (e['controller_indices']):
+        #         print("controller: ", e['controller_indices'])
+        #     if (e['controlled_indices']):
+        #         print("controlled: ", e['controlled_indices'])
+            
+        #     if (e['entities_indices']):
+        #         print("entitites: ", e['entities_indices'])
+        #     print("\n")
+        # except KeyError:
+        #     pass
+        
+
+
         if (e['label'] == 0):
             label_0 += 1
         elif (e['label'] == 1):
@@ -83,9 +98,10 @@ def main():
         elif (e['label'] == 2):
             label_2 += 1
 
-    print("label 0: ", label_0)
+    print("\nlabel 0: ", label_0)
     print("label 1: ", label_1)
-    print("label 2: ", label_2)
+    print("label 2: ", label_2, "\n")
+    # exit(0)
     # Take the first 60% as train, next 20% as development, last 20% as test 
     train_df, eval_df = train_test_split(data, train_size=0.6)
     eval_df, test_df = train_test_split(eval_df, train_size=0.5)
@@ -441,15 +457,15 @@ class BertForSequenceClassification(BertPreTrainedModel):
         self.init_weights()
         
     def forward(self, input_ids=None, attention_mask=None, token_type_ids=None, labels=None, **kwargs):
-        # print("\n\n--- FORWARDING ---")
+        print("\n\n--- FORWARDING ---")
         outputs = self.bert(
             input_ids,
             attention_mask=attention_mask,
             token_type_ids=token_type_ids,
             **kwargs,
         )
-
         if (configuration == 3):
+            print("CONFIG 3")
             embeddings = outputs.last_hidden_state
             final_vector = torch.empty(0)
             for i in range(0, len(input_ids)):
@@ -494,9 +510,14 @@ class BertForSequenceClassification(BertPreTrainedModel):
                 attentions=outputs.attentions
             )
         else:
+            print("CONFIG 1 or 2")
             cls_outputs = outputs.last_hidden_state[:, 0, :]
+            print("cls_outputs shape: ", cls_outputs.shape)
             cls_outputs = self.dropout(cls_outputs)
+            print("cls_outputs shape (after dropout): ", cls_outputs.shape)
+
             logits = self.classifier(cls_outputs)
+            print("logits shape: ", logits.shape)
             loss = None
             if labels is not None:
                 loss_fn = nn.CrossEntropyLoss()
