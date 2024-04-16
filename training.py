@@ -63,12 +63,13 @@ def main():
     for e in values:
         for f in e:
             data_list.append(f)
-            # if (len(data_list) > 400): # just for testing
+            # if (len(data_list) > 5000): # just for testing
             #     break
     data = data_list
     data = remove_duplicates(data)
     random.shuffle(data) 
-    # data = generate_random_dataset(data, 300) # for testing with smaller datasets
+    # data = generate_even_dataset(data, 200)
+    # data = generate_random_dataset(data, 20) # for testing with smaller datasets
     label_0 = 0
     label_1 = 0
     label_2 = 0
@@ -188,20 +189,6 @@ def main():
     cm = metrics.multilabel_confusion_matrix(y_true=y_true, y_pred=y_pred, labels=[0,1,2])
     print(cm)
 
-'''
-This function deletes sentences that are too long when tokenized from the dataset.
-When a tokenized sentence array has a size >= 512, it breaks the forward function when training.
-'''
-def prune_ds(ds):
-    indexes_to_delete = []
-    for i in range(0, len(ds)):
-        e = ds[i]
-        if (len(e['input_ids']) >= 512):
-            indexes_to_delete.append(i)
-    indexes_to_delete.reverse()
-    for index in indexes_to_delete:
-        ds = np.delete(ds, index)
-    return ds
     
 
 '''
@@ -216,6 +203,42 @@ def generate_random_dataset(ds, new_size):
         new_ds.append(ds[i])
     return new_ds
 
+def generate_even_dataset(ds, new_size):
+    new_ds = []
+    stop = round(new_size / 3)
+    print(stop)
+    label_0 = 0
+    label_1 = 0
+    label_2 = 0
+    
+    i = 0
+    while (label_0 <= stop):
+        curr = ds[i]
+        if (curr['label'] == 0):
+            new_ds.append(curr)
+            label_0 += 1
+        i += 1
+
+    i = 0
+    while (label_1 <= stop):
+        curr = ds[i]
+        if (curr['label'] == 1):
+            new_ds.append(curr)
+            label_1 += 1
+        i += 1
+
+    i = 0
+    while (label_2 <= stop):
+        curr = ds[i]
+        if (curr['label'] == 2):
+            new_ds.append(curr)
+            label_2 += 1
+        i += 1
+    
+    # for e in new_ds: 
+    #     print(e, "\n")
+    # print(len(new_ds))
+    return new_ds
 
 def tokenize(examples):
     output = tokenizer(examples['sentence_tokens'], is_split_into_words=True, truncation=True)
@@ -491,7 +514,11 @@ class BertForSequenceClassification(BertPreTrainedModel):
 
                 returned = maxpool(e1, e2, e3, e4) 
                 # print("returned shape: ", returned.shape)
-                final_vector = torch.cat((returned, final_vector))
+                # if (len(final_vector) > 0):
+                #     print("vec before: ", final_vector[0])
+                final_vector = torch.cat((final_vector, returned))
+                # print("vec after: ", final_vector[0])
+                # print("\n\n")
                 # print("final_vec shape rn: ", final_vector.shape)
                 # print()
 
