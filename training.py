@@ -34,11 +34,8 @@ transformer_name = 'bert-base-cased'
 tokenizer = AutoTokenizer.from_pretrained(transformer_name)
 
 # TODO make configuration a command line option
-configuration = 3
+configuration = 1
 classes = ['Negative_activation', 'Positive_activation', 'No_relation']
-
-# TOKENIZERS_PARALLELISM=False
-# os.environ["TOKENIZERS_PARALLELISM"] = "false"
 
 def remove_duplicates(data):
     seen = set()
@@ -52,6 +49,8 @@ def remove_duplicates(data):
     return unique_data
 
 def main():
+    if (configuration < 1 or configuration > 3):
+        raise Exception("Invalid configuration! Must be 1, 2, or 3.")
     init()
     tokenizer.add_special_tokens({'additional_special_tokens': ['[E1]','[/E1]', '[E2]', '[/E2]']})
     
@@ -63,46 +62,10 @@ def main():
     for e in values:
         for f in e:
             data_list.append(f)
-            # if (len(data_list) > 5000): # just for testing
-            #     break
     data = data_list
     data = remove_duplicates(data)
     random.shuffle(data) 
-    # data = generate_even_dataset(data, 200)
-    # data = generate_random_dataset(data, 20) # for testing with smaller datasets
-    label_0 = 0
-    label_1 = 0
-    label_2 = 0
 
-    for e in data:
-        # print("---")
-        # print(e['sentence_tokens'])
-        # try:
-        #     if (e['controller_indices']):
-        #         print("controller: ", e['controller_indices'])
-        #     if (e['controlled_indices']):
-        #         print("controlled: ", e['controlled_indices'])
-            
-        #     if (e['entities_indices']):
-        #         print("entitites: ", e['entities_indices'])
-        #     print("\n")
-        # except KeyError:
-        #     pass
-        
-
-
-        if (e['label'] == 0):
-            label_0 += 1
-        elif (e['label'] == 1):
-            label_1 += 1
-            # print(e,"\n")
-        elif (e['label'] == 2):
-            label_2 += 1
-
-    print("\nlabel 0: ", label_0)
-    print("label 1: ", label_1)
-    print("label 2: ", label_2, "\n")
-    # exit(0)
     # Take the first 60% as train, next 20% as development, last 20% as test 
     train_df, eval_df = train_test_split(data, train_size=0.6)
     eval_df, test_df = train_test_split(eval_df, train_size=0.5)
@@ -110,7 +73,7 @@ def main():
     print(f'train rows: {len(train_df):,}')
     print(f'eval rows: {len(eval_df):,}')
     print(f'test rows: {len(test_df):,}')
-    # print("test: ", test_df)
+
     train_df = pd.DataFrame(train_df)
     eval_df = pd.DataFrame(eval_df)
     test_df = pd.DataFrame(test_df)
@@ -124,8 +87,6 @@ def main():
         tokenize, batched=True, 
         remove_columns=['event_indices', 'polarity', 'controller_indices', 'controlled_indices', 
                         'trigger_indices', 'type', 'sentence_tokens']
-        # remove_columns=['event_indices', 'polarity', 'controller_indices', 'controlled_indices', 
-        #                 'trigger_indices', 'type', 'sentence_tokens', 'rule', 'rule_name']
     )   
     print("\ntrain_ds: ", train_ds)
 
@@ -166,7 +127,6 @@ def main():
         tokenizer=tokenizer,
     )  
     train_output = trainer.train()
-    # print("Train Output:\n", train_output, "\n")
 
     test_ds = ds['test'].map(
         tokenize,
@@ -177,7 +137,6 @@ def main():
     test_ds.to_pandas()
 
     output = trainer.predict(test_ds)
-    # print("test output: ", output)
 
     y_true = output.label_ids
     y_pred = np.argmax(output.predictions, axis=-1)
@@ -203,42 +162,6 @@ def generate_random_dataset(ds, new_size):
         new_ds.append(ds[i])
     return new_ds
 
-def generate_even_dataset(ds, new_size):
-    new_ds = []
-    stop = round(new_size / 3)
-    print(stop)
-    label_0 = 0
-    label_1 = 0
-    label_2 = 0
-    
-    i = 0
-    while (label_0 <= stop):
-        curr = ds[i]
-        if (curr['label'] == 0):
-            new_ds.append(curr)
-            label_0 += 1
-        i += 1
-
-    i = 0
-    while (label_1 <= stop):
-        curr = ds[i]
-        if (curr['label'] == 1):
-            new_ds.append(curr)
-            label_1 += 1
-        i += 1
-
-    i = 0
-    while (label_2 <= stop):
-        curr = ds[i]
-        if (curr['label'] == 2):
-            new_ds.append(curr)
-            label_2 += 1
-        i += 1
-    
-    # for e in new_ds: 
-    #     print(e, "\n")
-    # print(len(new_ds))
-    return new_ds
 
 def tokenize(examples):
     output = tokenizer(examples['sentence_tokens'], is_split_into_words=True, truncation=True)
@@ -358,47 +281,18 @@ def read_data(directory):
                             raise Exception("Unknown label in regulations data!")
    
                     for e in hard_instances:
-                        # if (len(entity_indices) < 2):
-                        #     # ignore sentences with only one entity
-                        #     pass
                         if (len(e['entities_indices']) == 2):
                             e['label'] = 0
                             data['hardInstances'].append(e)
-                        # else:
-                            # There are multiple entities, so create all possible pairs and classify them individually
-                            # for i in range(0, len(e['entities_indices']) - 1):
-                            #     new_entry = {
-                            #         "sentence_tokens": e['sentence_tokens'], 
-                            #         "entities_indices": [e['entities_indices'][i], e['entities_indices'][i+1]]}
-                            #     new_entry['label'] = 0
-                            #     data['hardInstances'].append(new_entry)
                             
                     for e in without_regulations:
-                    
-                        # if (len(entity_indices) < 2):
-                        #     # ignore sentences with only one entity
-                        #     pass 
                         if (len(e['entities_indices']) == 2):
-                            # print(e['sentence_tokens'])
                             e['label'] = 2
                             data['withoutRegulations'].append(e)
-                        # else:
-                        #     # There are multiple entities, so create all possible pairs and classify them individually
-                        #     for i in range(0, len(e['entities_indices'])-1):
-                        #         new_entry = {
-                        #             "sentence_tokens": e['sentence_tokens'], 
-                        #             "entities_indices": [e['entities_indices'][i], e['entities_indices'][i+1]]}
-                        #         new_entry['label'] = 2
-                        #         data['withoutRegulations'].append(new_entry)
-    # print()
-    # for e in data:
-    #     print(e, "\n")
-    # print()
     if (configuration != 1):
         data = add_entity_markers(data)
     else:
         data = data
-    # data = prune_data(data)
     return data
 
 
@@ -450,17 +344,12 @@ def prune_data(data):
         else: 
             label_2 += 1
     data['withoutRegulations'] = newWithoutRegulations
-    
-    # print("label 0: ", label_0)
-    # print("label 1: ", label_1)
-    # print("label 2: ", label_2)
+
     return data
 
 
     
 def maxpool(e1, e2, e3, e4):
-    # combine embeddings
-    # print("individual embedding shape: ", e1.shape)
     concatenated = torch.stack((e1, e2, e3, e4))
     maxpooled = torch.max_pool1d(concatenated, kernel_size=4)
     maxpooled = maxpooled.view(-1)
@@ -480,7 +369,6 @@ class BertForSequenceClassification(BertPreTrainedModel):
         self.init_weights()
         
     def forward(self, input_ids=None, attention_mask=None, token_type_ids=None, labels=None, **kwargs):
-        # print("\n\n--- FORWARDING ---")
         outputs = self.bert(
             input_ids,
             attention_mask=attention_mask,
@@ -513,17 +401,9 @@ class BertForSequenceClassification(BertPreTrainedModel):
                 e4 = embeddings[i][entity_indexes.get("[/E2]")] 
 
                 returned = maxpool(e1, e2, e3, e4) 
-                # print("returned shape: ", returned.shape)
-                # if (len(final_vector) > 0):
-                #     print("vec before: ", final_vector[0])
                 final_vector = torch.cat((final_vector, returned))
-                # print("vec after: ", final_vector[0])
-                # print("\n\n")
-                # print("final_vec shape rn: ", final_vector.shape)
-                # print()
 
             final_vector = final_vector.view(len(input_ids), -1)  
-            # print("final vector shape: ", final_vector.shape)
  
             sequence_output = self.dropout(final_vector)
             logits = self.classifier(sequence_output)
@@ -541,14 +421,10 @@ class BertForSequenceClassification(BertPreTrainedModel):
                 attentions=outputs.attentions
             )
         else:
-            # print("CONFIG 1 or 2")
             cls_outputs = outputs.last_hidden_state[:, 0, :]
-            # print("cls_outputs shape: ", cls_outputs.shape)
             cls_outputs = self.dropout(cls_outputs)
-            # print("cls_outputs shape (after dropout): ", cls_outputs.shape)
 
             logits = self.classifier(cls_outputs)
-            # print("logits shape: ", logits.shape)
             loss = None
             if labels is not None:
                 loss_fn = nn.CrossEntropyLoss()
