@@ -20,7 +20,7 @@ import sklearn.metrics as metrics
 from sklearn.model_selection import train_test_split
 import copy
 import os
-# from transformers import DataCollatorForTokenClassification
+import sys
 
 '''
 Configurations: 
@@ -33,20 +33,22 @@ Configuration 3: Classifies the sentences using the [CLS] embedding and adds 4 e
 transformer_name = 'bert-base-cased'
 tokenizer = AutoTokenizer.from_pretrained(transformer_name)
 
-# TODO make configuration a command line option
-configuration = 1
+arg = sys.argv[1]
+if (arg == "1"):
+    configuration = 1
+    print("Configuration 1")
+elif (arg == "2"):
+    configuration = 2
+    print("Configuration 2")
+elif (arg == "3"):
+    configuration = 3
+    print("Configuration 3")
+else:
+    raise Exception("Invalid configuration! Must be 1, 2, or 3.")
+
 classes = ['Negative_activation', 'Positive_activation', 'No_relation']
 
-def remove_duplicates(data):
-    seen = set()
-    unique_data = []
-    for item in data:
-        item_str = json.dumps(item, sort_keys=True)
-        if item_str not in seen:
-            seen.add(item_str)
-            unique_data.append(item)
 
-    return unique_data
 
 def main():
     if (configuration < 1 or configuration > 3):
@@ -55,7 +57,6 @@ def main():
     tokenizer.add_special_tokens({'additional_special_tokens': ['[E1]','[/E1]', '[E2]', '[/E2]']})
     
     data = read_data("training_data")
-    # data = read_data("test_data")
 
     values = data.values()
     data_list = []
@@ -64,7 +65,23 @@ def main():
             data_list.append(f)
     data = data_list
     data = remove_duplicates(data)
+
     random.shuffle(data) 
+    label0 = 0
+    label1 = 0
+    label2 = 0
+    for e in data:
+        label = e['label']
+        if (label == 0):
+            label0 += 1
+        elif (label == 1):
+            label1 += 1
+        elif (label == 2):
+            label2 += 1
+    
+    print("\nlabel 0 : " , label0)
+    print("label 1 : ", label1)
+    print("label 2 : ", label2)
 
     # Take the first 60% as train, next 20% as development, last 20% as test 
     train_df, eval_df = train_test_split(data, train_size=0.6)
@@ -82,13 +99,12 @@ def main():
     ds['train'] = Dataset.from_pandas(train_df)
     ds['validation'] = Dataset.from_pandas(eval_df)
     ds['test'] = Dataset.from_pandas(test_df)
-    
+
     train_ds = ds['train'].map(
         tokenize, batched=True, 
         remove_columns=['event_indices', 'polarity', 'controller_indices', 'controlled_indices', 
                         'trigger_indices', 'type', 'sentence_tokens']
     )   
-    print("\ntrain_ds: ", train_ds)
 
     eval_ds = ds['validation'].map(
         tokenize,
@@ -126,7 +142,7 @@ def main():
         eval_dataset=eval_ds,
         tokenizer=tokenizer,
     )  
-    train_output = trainer.train()
+    trainer.train()
 
     test_ds = ds['test'].map(
         tokenize,
@@ -147,8 +163,6 @@ def main():
     print("\nConfusion Matrix:")
     cm = metrics.multilabel_confusion_matrix(y_true=y_true, y_pred=y_pred, labels=[0,1,2])
     print(cm)
-
-    
 
 '''
 Generates a random dataset from training data to be used for testing.
@@ -173,7 +187,6 @@ Add entity markers to the sentence tokens.
 '''
 def add_entity_markers(data):
     for e in data['regulations']:
-        og_sentence = e['sentence_tokens']
         new_sentence = copy.deepcopy(e['sentence_tokens'])
 
         controller_indices = e['controller_indices']
@@ -181,7 +194,6 @@ def add_entity_markers(data):
 
         controller_start = controller_indices[0]
         controller_end = controller_indices[-1]
-
         controlled_start = controlled_indices[0]
         controlled_end = controlled_indices[-1]
 
@@ -198,7 +210,6 @@ def add_entity_markers(data):
         e['sentence_tokens'] = new_sentence
 
     for e in data['hardInstances']:
-        og_sentence = e['sentence_tokens']
         new_sentence = copy.deepcopy(e['sentence_tokens'])
         indices = e['entities_indices']
         num_entities = len(indices)
@@ -217,7 +228,6 @@ def add_entity_markers(data):
         e['sentence_tokens'] = new_sentence
         
     for e in data['withoutRegulations']:
-        og_sentence = e['sentence_tokens']
         new_sentence = copy.deepcopy(e['sentence_tokens'])
         indices = e['entities_indices']
         num_entities = len(indices)
@@ -234,7 +244,6 @@ def add_entity_markers(data):
             new_sentence.insert(start, "[E{}]".format(i+1))
             new_sentence.insert(end+1, "[/E{}]".format(i+1))
         e['sentence_tokens'] = new_sentence
-
     return data
 
 
@@ -254,7 +263,6 @@ def read_data(directory):
         "withoutRegulations": [],
         "emptySentences": []
         }
-
 
     for filename in os.listdir(directory):
         if filename.endswith('.json'):
@@ -289,64 +297,12 @@ def read_data(directory):
                         if (len(e['entities_indices']) == 2):
                             e['label'] = 2
                             data['withoutRegulations'].append(e)
+
     if (configuration != 1):
         data = add_entity_markers(data)
     else:
         data = data
     return data
-
-
-def prune_data(data):
-    label_0 = 0 
-    label_1 = 0
-    label_2 = 0
-
-    newRegulations = []
-    for i in range(0, len(data['regulations'])):
-        e = data['regulations'][i]
-        tokens = tokenizer.tokenize(e['sentence_tokens'], is_split_into_words=True, truncation=True)     
-        if (len(tokens) < 512):
-            newRegulations.append(e)
-        if (e['label'] == 0):
-            label_0 += 1
-        elif (e['label'] == 1):
-            label_1 += 1
-        else: 
-            label_2 += 1
-    data['regulations'] = newRegulations
-    
-    newHardInstances = []
-    for i in range(0, len(data['hardInstances'])):
-        e = data['hardInstances'][i]
-        tokens = tokenizer.tokenize(e['sentence_tokens'], is_split_into_words=True, truncation=True) 
-        del e['entities_indices']
-        if (len(tokens) < 512):
-            newHardInstances.append(e)
-        if (e['label'] == 0):
-            label_0 += 1
-        elif (e['label'] == 1):
-            label_1 += 1
-        else: 
-            label_2 += 1
-    data['hardInstances'] = newHardInstances
-    
-    newWithoutRegulations = []
-    for i in range(0, len(data['withoutRegulations'])):
-        e = data['withoutRegulations'][i]
-        tokens = tokenizer.tokenize(e['sentence_tokens'], is_split_into_words=True, truncation=True) 
-        del e['entities_indices'] 
-        if (len(tokens) < 512):
-            newWithoutRegulations.append(e)   
-        if (e['label'] == 0):
-            label_0 += 1
-        elif (e['label'] == 1):
-            label_1 += 1
-        else: 
-            label_2 += 1
-    data['withoutRegulations'] = newWithoutRegulations
-
-    return data
-
 
     
 def maxpool(e1, e2, e3, e4):
@@ -390,9 +346,6 @@ class BertForSequenceClassification(BertPreTrainedModel):
                         entity_indexes["[E2]"] = j
                     if (tokens[j] == "[/E2]"):
                         entity_indexes["[/E2]"] = j
-
-                if (entity_indexes.get("[E2]") == None or entity_indexes.get("[/E2]") == None):
-                    raise Exception("Input is missing one or more entities.")
                 
                 # get each embedding for each entity marker
                 e1 = embeddings[i][entity_indexes.get("[E1]")]
@@ -404,10 +357,8 @@ class BertForSequenceClassification(BertPreTrainedModel):
                 final_vector = torch.cat((final_vector, returned))
 
             final_vector = final_vector.view(len(input_ids), -1)  
- 
             sequence_output = self.dropout(final_vector)
             logits = self.classifier(sequence_output)
-
             loss = None
             if labels is not None:
                 loss_fn = nn.CrossEntropyLoss()
@@ -437,21 +388,27 @@ class BertForSequenceClassification(BertPreTrainedModel):
             )
 
 
-
 def compute_metrics(eval_pred):
     y_true = eval_pred.label_ids
     y_pred = np.argmax(eval_pred.predictions, axis=-1)
     return {'accuracy': accuracy_score(y_true, y_pred)}
 
+def remove_duplicates(data):
+    seen = set()
+    unique_data = []
+    for item in data:
+        item_str = json.dumps(item, sort_keys=True)
+        if item_str not in seen:
+            seen.add(item_str)
+            unique_data.append(item)
+    return unique_data
 
 def init():
     tqdm.pandas()
     use_gpu = True
     device = torch.device('cuda' if use_gpu and torch.cuda.is_available() else 'cpu')
-    # print(f'device: {device.type}')
     seed = 1234
     if seed is not None:
-        # print(f'random seed: {seed}')
         random.seed(seed)
         np.random.seed(seed)
         torch.manual_seed(seed)
