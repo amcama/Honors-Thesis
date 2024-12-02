@@ -1,9 +1,7 @@
 # Teaching a neural network to replicate a rule-based approach for biomedical information extraction
 
 ## Description
-
-This project involves training the BERT model using different approaches for . ...
-
+https://docs.google.com/document/d/14Qa9wazT0xB0mPEdH74i0eb8pmr5WZ_fsmKPp5hFBdM/edit?usp=sharing
 
 ## Configurations
 
