@@ -1,7 +1,7 @@
 # Teaching a neural network to replicate a rule-based approach for biomedical information extraction
 
 ## Description
-https://docs.google.com/document/d/14Qa9wazT0xB0mPEdH74i0eb8pmr5WZ_fsmKPp5hFBdM/edit?usp=sharing
+https://docs.google.com/document/d/1CZy_OZ3R-6NdCksB-43lXFrOZayoZdGx_elEyCdS_j8/edit?usp=sharing
 
 ## Configurations
 
